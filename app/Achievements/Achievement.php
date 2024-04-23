@@ -2,9 +2,9 @@
 
 namespace App\Achievements;
 
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Achievement extends Model
 {

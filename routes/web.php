@@ -50,10 +50,10 @@ use App\Http\Controllers\ToolkitsController;
 use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VolunteerController;
-use Illuminate\Support\Facades\Route;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 //Auth::loginUsingId(268354);
 
@@ -513,10 +513,10 @@ Route::middleware('role:super admin|ambassador')->group(function () {
 });
 
 Route::middleware('auth', 'role:super admin|leading teacher|leading teacher admin')->group(function () {
-        Route::get('/my/badges', [BadgesController::class, 'my'])->name('my-badges')->middleware('auth');
-        Route::get('/badges/user/{user}/{year?}', [BadgesController::class, 'user'])->name('badges-user');
-        Route::get('/badges/leaderboard/{year?}', [BadgesController::class, 'leaderboard'])->name('badges-leaderboard-year');
-    });
+    Route::get('/my/badges', [BadgesController::class, 'my'])->name('my-badges')->middleware('auth');
+    Route::get('/badges/user/{user}/{year?}', [BadgesController::class, 'user'])->name('badges-user');
+    Route::get('/badges/leaderboard/{year?}', [BadgesController::class, 'leaderboard'])->name('badges-leaderboard-year');
+});
 
 Route::get(
     '/codeweek4all/{code}/detail',
@@ -551,18 +551,18 @@ Route::post('/leading-teachers/signup', [LeadingTeachersSignup::class, 'store'])
     ->middleware('auth');
 
 Route::middleware('role:super admin|leading teacher admin')->group(function () {
-        Route::get('/leading-teachers/list', [LeadingTeachersList::class, 'index'])
-            ->name('leading_teachers_list')
-            ->middleware('auth');
-    }
+    Route::get('/leading-teachers/list', [LeadingTeachersList::class, 'index'])
+        ->name('leading_teachers_list')
+        ->middleware('auth');
+}
 );
 
 Route::middleware('role:leading teacher|super admin|leading teacher admin')->group(function () {
-        Route::get(
-            '/leading-teachers/report',
-            [LeadingTeachersReport::class, 'index']
-        )->name('LT.report');
-    }
+    Route::get(
+        '/leading-teachers/report',
+        [LeadingTeachersReport::class, 'index']
+    )->name('LT.report');
+}
 );
 
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\View\View;
 use App\Country;
 use App\Filters\UserFilters;
 use App\Helpers\AmbassadorHelper;
 use App\User;
+use Illuminate\View\View;
 
 class AmbassadorController extends Controller
 {

@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api;
 
 //define("DEFAULT_AVATAR_PATH","avatars/default.png");
 
-use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
