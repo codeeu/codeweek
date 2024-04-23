@@ -116,8 +116,6 @@ class User extends Authenticatable
 
     protected $appends = ['fullName'];
 
-    protected $dates = ['deleted_at'];
-
     public function getName()
     {
         if (! empty($this->username)) {
