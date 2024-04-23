@@ -1,4 +1,5 @@
-window._ = require('lodash');
+import _ from 'lodash';
+window._ = _;
 
 
 
@@ -19,7 +20,8 @@ try {
  * and simple, leaving you to focus on building your next great project.
  */
 
-window.Vue = require('vue');
+import Vue from 'vue';
+window.Vue = Vue;
 
 
 
@@ -31,7 +33,8 @@ window.Vue = require('vue');
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
+import axios from 'axios';
+window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
