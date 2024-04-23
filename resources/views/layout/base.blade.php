@@ -26,7 +26,7 @@
     @yield('extra-css')
 
 
-    <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
+    @vite('resources/css/app.css')
 
 
 
@@ -99,7 +99,7 @@
 @endif
 
 
-<script src="{{mix('js/app.js')}}"></script>
+@vite('resources/js/app.js')
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
