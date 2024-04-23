@@ -27,7 +27,7 @@ class NotifyAdministrator extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
             ->subject($this->notifications_count.' Activities to be added to the Calendar')

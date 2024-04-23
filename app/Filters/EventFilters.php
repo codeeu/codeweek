@@ -2,6 +2,7 @@
 
 namespace App\Filters;
 
+use Illuminate\Database\Eloquent\Builder;
 use App\Tag;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -34,7 +35,7 @@ class EventFilters extends Filters
      * @param  string  $country_iso
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function countries($countries)
+    protected function countries($countries): Builder
     {
         if (empty($countries)) {
             return;

@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class MapController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request): View
     {
         $years = range(Carbon::now()->year, 2014, -1);
 

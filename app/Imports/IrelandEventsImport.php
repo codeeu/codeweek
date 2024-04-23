@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use Illuminate\Database\Eloquent\Model;
 use App\Event;
 use App\User;
 use Carbon\Carbon;
@@ -46,7 +47,7 @@ class IrelandEventsImport extends DefaultValueBinder implements ToModel, WithCus
     /**
      * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function model(array $row)
+    public function model(array $row): ?Model
     {
         $event = new Event([
             'creator_id' => $this->loadUser($row['organizer_email'])->id,

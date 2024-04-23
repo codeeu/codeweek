@@ -32,7 +32,7 @@ class EventRegistered extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
 
         $locale = session('locale');

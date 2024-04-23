@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\RedirectResponse;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Carbon;
@@ -47,7 +48,7 @@ class LoginController extends Controller
      *
      * @return Response
      */
-    public function redirectToProvider($provider)
+    public function redirectToProvider($provider): Response
     {
 
         return Socialite::driver($provider)->redirect();
@@ -58,7 +59,7 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function handleProviderCallback($provider)
+    public function handleProviderCallback($provider): RedirectResponse
     {
         //        if ('twitter' == $provider){
         $socialUser = Socialite::driver($provider)->user();

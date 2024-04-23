@@ -28,7 +28,7 @@ class LeadingTeachingActionAdded extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
             ->subject('A new action has been created by a Leading Teacher')

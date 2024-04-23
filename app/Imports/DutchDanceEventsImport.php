@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use Illuminate\Database\Eloquent\Model;
 use App\Event;
 use App\User;
 use Illuminate\Support\Facades\Log;
@@ -37,7 +38,7 @@ class DutchDanceEventsImport extends DefaultValueBinder implements ToModel, With
     /**
      * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function model(array $row)
+    public function model(array $row): ?Model
     {
         //dd($row);
         $event = new Event([

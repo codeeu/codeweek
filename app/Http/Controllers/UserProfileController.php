@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\User;
 
 class UserProfileController extends Controller
 {
-    public function index(User $user)
+    public function index(User $user): View
     {
 
         $achievements = app('achievements');

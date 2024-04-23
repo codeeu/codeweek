@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Queries\ExcellenceQuery;
 use App\Queries\ReportableEventsQuery;
 use App\Queries\SuperOrganiserQuery;
@@ -9,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class CertificateController extends Controller
 {
-    public function list()
+    public function list(): View
     {
         $reported_events = ReportableEventsQuery::reported();
         $excellence = ExcellenceQuery::mine()->get();

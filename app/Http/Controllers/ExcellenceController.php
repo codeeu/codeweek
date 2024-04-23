@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use App\CertificateExcellence;
 use App\Excellence;
 use App\Queries\ExcellenceQuery;
@@ -10,7 +12,7 @@ use Illuminate\Http\Request;
 
 class ExcellenceController extends Controller
 {
-    public function report($edition)
+    public function report($edition): View
     {
 
         // Check if user is a winner for this edition
@@ -24,7 +26,7 @@ class ExcellenceController extends Controller
 
     }
 
-    public function generate($edition, Request $request)
+    public function generate($edition, Request $request): RedirectResponse
     {
 
         if (Gate::denies('report-excellence', $edition)) {

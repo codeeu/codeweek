@@ -30,7 +30,7 @@ class EventCreatedNoAmbassador extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
             ->subject('No Ambassador for '.$this->event->country->name.' - A new event on codeweek.eu needs your attention')

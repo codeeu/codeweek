@@ -23,7 +23,7 @@ class MeetCodeTrend extends Trend
      *
      * @return array
      */
-    public function ranges()
+    public function ranges(): array
     {
         return [
             30 => __('30 Days'),
@@ -49,7 +49,7 @@ class MeetCodeTrend extends Trend
      *
      * @return string
      */
-    public function uriKey()
+    public function uriKey(): string
     {
         return 'meet-code-trend';
     }

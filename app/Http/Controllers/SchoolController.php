@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\School;
 use Illuminate\Http\Request;
 
@@ -20,7 +21,7 @@ class SchoolController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): View
     {
         $schools = School::paginate(10);
 
@@ -32,7 +33,7 @@ class SchoolController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(): View
     {
         return view('school.create');
     }
@@ -42,7 +43,7 @@ class SchoolController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request): View
     {
 
         $this->validate($request, [
@@ -65,7 +66,7 @@ class SchoolController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show(School $school)
+    public function show(School $school): View
     {
         return view('school.show', compact('school'));
     }

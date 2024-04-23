@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Certificate;
 use App\Event;
 use App\Queries\ReportableEventsQuery;
@@ -10,21 +11,21 @@ use Illuminate\Http\Request;
 
 class ReportController extends Controller
 {
-    public function list()
+    public function list(): View
     {
         $reportable_events = ReportableEventsQuery::reportable();
 
         return view('report.list', ['events' => $reportable_events]);
     }
 
-    public function index(Event $event)
+    public function index(Event $event): View
     {
         $this->authorize('report', $event);
 
         return view('report.index', compact('event'));
     }
 
-    public function store(Event $event, Request $request)
+    public function store(Event $event, Request $request): View
     {
 
         $this->authorize('report', $event);

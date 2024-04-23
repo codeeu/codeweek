@@ -28,7 +28,7 @@ class ResourceSuggested extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
             ->subject('[CodeWeek] A new resource has been suggested')

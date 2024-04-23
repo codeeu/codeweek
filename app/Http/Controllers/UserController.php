@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\RedirectResponse;
 use App\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -33,7 +34,7 @@ class UserController extends Controller
         return back()->with('flash', 'Your profile has been modified!');
     }
 
-    public function delete()
+    public function delete(): RedirectResponse
     {
         $user = auth()->user();
         $user->delete();

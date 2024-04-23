@@ -25,7 +25,7 @@ class MailingInactive extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this->subject('Pin activities for EU Code Week 2021')->markdown(
             'emails.en.mailing-inactive'

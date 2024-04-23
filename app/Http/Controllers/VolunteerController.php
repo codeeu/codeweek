@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use App\Volunteer;
 use Illuminate\Http\Request;
 
@@ -12,7 +14,7 @@ class VolunteerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): View
     {
         $volunteers = Volunteer::all();
 
@@ -24,7 +26,7 @@ class VolunteerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(): View
     {
         return view('volunteer.create');
     }
@@ -34,7 +36,7 @@ class VolunteerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
 
         Volunteer::firstOrCreate(['user_id' => auth()->user()->id]);
@@ -82,7 +84,7 @@ class VolunteerController extends Controller
         //
     }
 
-    public function approve(Volunteer $volunteer)
+    public function approve(Volunteer $volunteer): RedirectResponse
     {
 
         $volunteer->user->removeRole('ambassador');
@@ -95,7 +97,7 @@ class VolunteerController extends Controller
 
     }
 
-    public function reject(Volunteer $volunteer)
+    public function reject(Volunteer $volunteer): RedirectResponse
     {
         $volunteer->user->removeRole('ambassador');
 

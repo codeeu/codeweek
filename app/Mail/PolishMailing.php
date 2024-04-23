@@ -30,7 +30,7 @@ class PolishMailing extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this->subject('Dziękujemy za udział w CodeWeek2022- weź udział w konkursie 1000 pierwszych organizatorów')->markdown(
             'emails.pl.contest'

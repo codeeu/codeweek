@@ -30,7 +30,7 @@ class ItalianMailing extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this->subject('EU CodeWeek - Invito personale alla festa online del 9 novembre')->markdown(
             'emails.it.italian-mailing'

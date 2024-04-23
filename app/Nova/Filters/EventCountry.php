@@ -2,6 +2,7 @@
 
 namespace App\Nova\Filters;
 
+use Illuminate\Database\Eloquent\Builder;
 use App\Country;
 use Illuminate\Http\Request;
 use Laravel\Nova\Filters\Filter;
@@ -15,7 +16,7 @@ class EventCountry extends Filter
      * @param  mixed  $value
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function apply(Request $request, $query, $value)
+    public function apply(Request $request, Builder $query, $value): Builder
     {
         return $query->where('country_iso', $value);
     }
@@ -25,7 +26,7 @@ class EventCountry extends Filter
      *
      * @return array
      */
-    public function options(Request $request)
+    public function options(Request $request): array
     {
         return Country::withEvents()->pluck('iso', 'name');
     }

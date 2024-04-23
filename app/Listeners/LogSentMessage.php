@@ -22,7 +22,7 @@ class LogSentMessage
      * @param  object  $event
      * @return void
      */
-    public function handle($event): void
+    public function handle(object $event): void
     {
         Log::channel('mails_sent')->info(
             $event->message->getSubject().

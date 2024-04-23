@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Excellence;
 use App\Exports\ExcellenceExport;
 use App\Helpers\ExcellenceWinnersHelper;
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Log;
 
 class ExcellenceWinnersController extends Controller
 {
-    public function list(Request $request, $edition = 2024)
+    public function list(Request $request, $edition = 2024): View
     {
 
         //        $ttl = 1;

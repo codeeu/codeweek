@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use Illuminate\Database\Eloquent\Model;
 use App\Event;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Concerns\ToModel;
@@ -20,7 +21,7 @@ class DutchMoorlagEventsImport extends DefaultValueBinder implements ToModel, Wi
     /**
      * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function model(array $row)
+    public function model(array $row): ?Model
     {
         //        dd($this->parseDate($row['start_date']));
         //        dd($row);

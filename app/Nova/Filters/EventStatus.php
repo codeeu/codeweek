@@ -2,6 +2,7 @@
 
 namespace App\Nova\Filters;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Laravel\Nova\Filters\Filter;
 
@@ -14,7 +15,7 @@ class EventStatus extends Filter
      * @param  mixed  $value
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function apply(Request $request, $query, $value)
+    public function apply(Request $request, Builder $query, $value): Builder
     {
         return $query->where('status', $value);
     }
@@ -24,7 +25,7 @@ class EventStatus extends Filter
      *
      * @return array
      */
-    public function options(Request $request)
+    public function options(Request $request): array
     {
         return [
             'Approved' => 'APPROVED',

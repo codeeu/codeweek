@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Country;
 use App\Queries\CountriesQuery;
 use Illuminate\Http\Request;
 
 class ReviewController extends Controller
 {
-    public function index(Request $request, ?Country $country = null)
+    public function index(Request $request, ?Country $country = null): View
     {
 
         $countries = CountriesQuery::withPendingEvents();
