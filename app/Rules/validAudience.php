@@ -3,41 +3,21 @@
 namespace App\Rules;
 
 use App\Audience;
+use Closure;
 use Illuminate\Contracts\Validation\Rule;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class validAudience implements Rule
+class validAudience implements ValidationRule
 {
-    /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
 
-    /**
-     * Determine if the validation rule passes.
-     *
-     * @param  mixed  $value
-     */
-    public function passes(string $attribute, $value): bool
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         foreach (explode(',', $value) as $audience_id) {
             if (is_null(Audience::firstWhere('id', $audience_id))) {
-                return false;
+                $fail('No Valid Audience');
             }
         }
 
-        return true;
-    }
 
-    /**
-     * Get the validation error message.
-     */
-    public function message(): string
-    {
-        return 'The audience is invalid';
     }
 }

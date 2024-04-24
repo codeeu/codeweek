@@ -17,8 +17,8 @@ class FooterTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $this->france = create(\App\Country::class, ['iso' => 'FR']);
-        $this->ambassador_fr = create(\App\User::class, ['country_iso' => $this->france->iso])->assignRole('ambassador');
+        $this->france = \App\Country::factory()->create(['iso' => 'FR']);
+        $this->ambassador_fr = \App\User::factory()->create(['country_iso' => $this->france->iso])->assignRole('ambassador');
 
     }
 

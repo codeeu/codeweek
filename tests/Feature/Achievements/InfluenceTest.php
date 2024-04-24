@@ -2,9 +2,10 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Event;
+use App\Event;
 use Tests\TestCase;
 
 class InfluenceTest extends TestCase
@@ -15,12 +16,12 @@ class InfluenceTest extends TestCase
     public function user_influence_should_be_counted(): void
     {
 
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
 
-        $LT1 = create(\App\User::class, ['id' => 100, 'tag' => 'BE-TESTME-123']);
+        $LT1 = \App\User::factory()->create(['id' => 100, 'tag' => 'BE-TESTME-123']);
 
-        $events2020 = create(\App\Event::class, ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2020)], 10);
-        $events2021 = create(\App\Event::class, ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2021)], 20);
+        $events2020 = \App\Event::factory()->count(10)->create(['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2020)]);
+        $events2021 = \App\Event::factory()->count(20)->create(['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2021)]);
 
         $InfluenceCount2020 = $LT1->influence(2020);
         $InfluenceCount2021 = $LT1->influence(2021);
@@ -40,9 +41,9 @@ class InfluenceTest extends TestCase
 
         //        $tag = create('App\Tag', ['name' => 'TI-testme-234']);
 
-        $leading_teacher = create(\App\User::class, ['tag' => 'IT-TESTME-123']);
+        $leading_teacher = \App\User::factory()->create(['tag' => 'IT-TESTME-123']);
 
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'status' => 'PENDING',
             'leading_teacher_tag' => 'IT-TESTME-123',
             'created_at' => Carbon::now()->setYear(2022),

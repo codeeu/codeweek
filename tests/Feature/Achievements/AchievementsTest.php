@@ -3,6 +3,7 @@
 namespace Tests\Feature\Achievements\Achievements;
 
 use App\Achievements\Achievement;
+use App\Event;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -17,7 +18,7 @@ class AchievementsTest extends TestCase
     public function a_user_can_be_assigned_any_achievement_badge(): void
     {
         // Given we have a user
-        $user = factory(User::class)->create();
+        $user = \App\User::factory()->create();
 
         // As well as a badge
         $achievement = factory(Achievement::class)->create();
@@ -44,7 +45,7 @@ class AchievementsTest extends TestCase
 
         $user = auth()->user();
 
-        $events = create(\App\Event::class, ['creator_id' => $user->id, 'reported_at' => null, 'status' => 'APPROVED', 'start_date' => Carbon::now()], 5);
+        $events = \App\Event::factory()->count(5)->create(['creator_id' => $user->id, 'reported_at' => null, 'status' => 'APPROVED', 'start_date' => Carbon::now()]);
 
         $year = Carbon::now()->year;
 
@@ -62,7 +63,7 @@ class AchievementsTest extends TestCase
 
         $this->assertEquals("Active Organiser {$year}", $user->fresh()->achievements[0]->name);
 
-        $more_events = create(\App\Event::class, ['creator_id' => $user->id, 'reported_at' => null, 'status' => 'APPROVED', 'start_date' => Carbon::now(), 'end_date' => Carbon::now()], 5);
+        $more_events = \App\Event::factory()->count(5)->create(['creator_id' => $user->id, 'reported_at' => null, 'status' => 'APPROVED', 'start_date' => Carbon::now(), 'end_date' => Carbon::now()]);
 
         foreach ($more_events as $event) {
             $this->reportEvent($event);

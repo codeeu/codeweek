@@ -37,7 +37,7 @@ class MeetAndCodeLinkToUsers extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
 
         $this->info('The command was successful!');

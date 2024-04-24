@@ -37,7 +37,7 @@ class NotifyAdministrators extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
 
         //Get Number of activities that need to be featured

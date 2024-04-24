@@ -26,12 +26,12 @@ class DeleteEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $superadmin = create(\App\User::class);
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create(\App\Event::class, ['title' => 'foobar']);
+        $event = \App\Event::factory()->create(['title' => 'foobar']);
 
         $this->post(route('event.delete', $event));
 
@@ -48,11 +48,11 @@ class DeleteEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
 
-        $event = create(\App\Event::class, ['creator_id' => $user->id]);
+        $event = \App\Event::factory()->create(['creator_id' => $user->id]);
 
         $this->post(route('event.delete', $event));
 
@@ -69,12 +69,12 @@ class DeleteEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'country_iso' => 'FR']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'FR']);
 
         $this->post(route('event.delete', $event));
 
@@ -88,12 +88,12 @@ class DeleteEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'country_iso' => 'BE']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'BE']);
 
         $this->post(route('event.delete', $event));
 
@@ -107,11 +107,11 @@ class DeleteEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
 
-        $event = create(\App\Event::class, ['title' => 'foobar']);
+        $event = \App\Event::factory()->create(['title' => 'foobar']);
 
         $this->post(route('event.delete', $event));
 

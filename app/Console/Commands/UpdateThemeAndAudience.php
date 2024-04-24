@@ -35,7 +35,7 @@ class UpdateThemeAndAudience extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
         $events = Event::where('event_url', 'like', 'https://meet-and-code.org/%')->get();
 

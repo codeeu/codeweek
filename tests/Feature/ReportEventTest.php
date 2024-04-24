@@ -21,7 +21,7 @@ class ReportEventTest extends TestCase
         parent::setUp();
 
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create(\App\Event::class, ['status' => 'APPROVED', 'start_date' => Carbon::now()->subMonth(1)]);
+        $this->event = \App\Event::factory()->create(['status' => 'APPROVED', 'start_date' => Carbon::now()->subMonth(1)]);
 
     }
 
@@ -55,7 +55,7 @@ class ReportEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $future_event = create(\App\Event::class, ['start_date' => Carbon::now()->addMonth(1)]);
+        $future_event = \App\Event::factory()->create(['start_date' => Carbon::now()->addMonth(1)]);
         $this->signIn($future_event->owner);
 
         $this->get('/view/'.$future_event->id.'/random')
@@ -127,14 +127,14 @@ class ReportEventTest extends TestCase
     /** @test */
     public function user_should_see_list_of_his_reportable_events(): void
     {
-        $this->signIn(create(\App\User::class));
+        $this->signIn(User::factory()->create());
 
-        $myReportableEvent = create(\App\Event::class, ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->subDay()]);
-        $futureEvent = create(\App\Event::class, ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(1)]);
-        $alreadyReportedEvent = create(\App\Event::class, ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'reported_at' => Carbon::now(), 'certificate_url' => 'foobar.xyz']);
-        $faultyReportedEvent = create(\App\Event::class, ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'reported_at' => Carbon::now(), 'certificate_url' => null]);
-        $myNonReportableEvent = create(\App\Event::class, ['creator_id' => auth()->id(), 'status' => 'PENDING']);
-        $notMyEvent = create(\App\Event::class, ['status' => 'APPROVED']);
+        $myReportableEvent = \App\Event::factory()->create(['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->subDay()]);
+        $futureEvent = \App\Event::factory()->create(['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(1)]);
+        $alreadyReportedEvent = \App\Event::factory()->create(['creator_id' => auth()->id(), 'status' => 'APPROVED', 'reported_at' => Carbon::now(), 'certificate_url' => 'foobar.xyz']);
+        $faultyReportedEvent = \App\Event::factory()->create(['creator_id' => auth()->id(), 'status' => 'APPROVED', 'reported_at' => Carbon::now(), 'certificate_url' => null]);
+        $myNonReportableEvent = \App\Event::factory()->create(['creator_id' => auth()->id(), 'status' => 'PENDING']);
+        $notMyEvent = \App\Event::factory()->create(['status' => 'APPROVED']);
 
         $this->get('/events_to_report')
             ->assertSee($myReportableEvent->title)

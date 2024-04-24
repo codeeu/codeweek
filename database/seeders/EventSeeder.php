@@ -12,7 +12,7 @@ class EventSeeder extends Seeder
      */
     public function run(): void
     {
-        create(\App\Event::class, [
+        Event::factory()->create([
             'status' => 'APPROVED',
             'title' => 'Boitsfort Coding',
             'geoposition' => '50.8093378,4.4088449',
@@ -23,7 +23,7 @@ class EventSeeder extends Seeder
 
         ]);
 
-        create(\App\Event::class, [
+        Event::factory()->create([
             'status' => 'APPROVED',
             'title' => 'Eiffel',
             'geoposition' => '48.85589859999999,2.298087500000065',
@@ -35,7 +35,7 @@ class EventSeeder extends Seeder
             'country_iso' => 'FR',
         ]);
 
-        create(\App\Event::class, [
+        Event::factory()->create([
             'status' => 'APPROVED',
             'title' => 'Arc de Triomphe',
             'geoposition' => '48.8737793,2.2950155999999424',

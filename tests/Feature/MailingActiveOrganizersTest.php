@@ -14,11 +14,11 @@ class MailingActiveOrganizersTest extends TestCase
     /** @test */
     public function it_should_select_only_active_organizers(): void
     {
-        $active = create(\App\User::class, ['email' => 'active@gmail.com', 'magic_key' => 131313]);
-        $active2 = create(\App\User::class, ['email' => 'active2@gmail.com', 'magic_key' => 252525]);
-        $inactive = create(\App\User::class, ['email' => 'inactive@gmail.com']);
-        $inactive2 = create(\App\User::class, ['email' => 'inactive2@gmail.com', 'receive_emails' => false]);
-        $deleted = create(\App\User::class, ['email' => 'deleted@gmail.com', 'deleted_at' => now()]);
+        $active = \App\User::factory()->create(['email' => 'active@gmail.com', 'magic_key' => 131313]);
+        $active2 = \App\User::factory()->create(['email' => 'active2@gmail.com', 'magic_key' => 252525]);
+        $inactive = \App\User::factory()->create(['email' => 'inactive@gmail.com']);
+        $inactive2 = \App\User::factory()->create(['email' => 'inactive2@gmail.com', 'receive_emails' => false]);
+        $deleted = \App\User::factory()->create(['email' => 'deleted@gmail.com', 'deleted_at' => now()]);
 
         create(
             \App\Event::class,

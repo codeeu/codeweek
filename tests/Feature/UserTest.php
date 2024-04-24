@@ -14,9 +14,9 @@ class UserTest extends TestCase
     {
 
         //$this->withExceptionHandling();
-        $country = create(\App\Country::class);
+        $country = \App\Country::factory()->create();
 
-        $user = create(\App\User::class, ['country_iso' => $country->iso]);
+        $user = \App\User::factory()->create(['country_iso' => $country->iso]);
 
         $this->assertEquals($user->country->name, $country->name);
 
@@ -26,7 +26,7 @@ class UserTest extends TestCase
     public function a_user_should_have_right_avatar_path(): void
     {
 
-        $user = create(\App\User::class, ['avatar_path' => 'avatars/foo/bar.png']);
+        $user = \App\User::factory()->create(['avatar_path' => 'avatars/foo/bar.png']);
 
         $this->assertEquals(config('codeweek.aws_url').'avatars/foo/bar.png', $user->avatar);
 
@@ -36,7 +36,7 @@ class UserTest extends TestCase
     public function a_user_with_null_avatar_should_have_default_avatar(): void
     {
 
-        $user = create(\App\User::class, ['avatar_path' => null]);
+        $user = \App\User::factory()->create(['avatar_path' => null]);
 
         $this->assertEquals(config('codeweek.aws_url').'avatars/default_avatar.png', $user->avatar);
 
@@ -46,7 +46,7 @@ class UserTest extends TestCase
     public function a_user_should_readable_name(): void
     {
 
-        $user = create(\App\User::class, ['firstname' => 'foo', 'lastname' => '', 'username' => '']);
+        $user = \App\User::factory()->create(['firstname' => 'foo', 'lastname' => '', 'username' => '']);
 
         $this->assertEquals('foo', $user->getName());
 
@@ -56,7 +56,7 @@ class UserTest extends TestCase
     public function a_user_should_readable_name_with_first_and_lastname(): void
     {
 
-        $user = create(\App\User::class, ['firstname' => 'foo', 'lastname' => 'bar', 'username' => '']);
+        $user = \App\User::factory()->create(['firstname' => 'foo', 'lastname' => 'bar', 'username' => '']);
 
         $this->assertEquals('foo bar', $user->getName());
 
@@ -66,7 +66,7 @@ class UserTest extends TestCase
     public function a_user_should_readable_name_with_username(): void
     {
 
-        $user = create(\App\User::class, ['firstname' => 'foo', 'lastname' => 'bar', 'username' => 'woody']);
+        $user = \App\User::factory()->create(['firstname' => 'foo', 'lastname' => 'bar', 'username' => 'woody']);
 
         $this->assertEquals('woody', $user->getName());
 
@@ -76,7 +76,7 @@ class UserTest extends TestCase
     public function a_user_should_readable_name_without_personal_info(): void
     {
 
-        $user = create(\App\User::class, ['firstname' => '', 'lastname' => '', 'username' => '', 'email' => 'foo@bar.com']);
+        $user = \App\User::factory()->create(['firstname' => '', 'lastname' => '', 'username' => '', 'email' => 'foo@bar.com']);
 
         $this->assertEquals('foo@bar.com', $user->getName());
 
@@ -88,7 +88,7 @@ class UserTest extends TestCase
 
         $this->seed('RolesAndPermissionsSeeder');
 
-        $user = create(\App\User::class)->assignRole('ambassador');
+        $user = \App\User::factory()->create()->assignRole('ambassador');
 
         $this->assertTrue($user->ambassador);
 

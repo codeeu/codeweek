@@ -13,10 +13,10 @@ class ScoreboardTest extends TestCase
     /** @test */
     public function scoreboard_should_show_upcoming_events(): void
     {
-        $belgium = create(\App\Country::class, ['iso' => 'BE', 'name' => 'Belgium']);
-        $luxembourg = create(\App\Country::class, ['iso' => 'LU', 'name' => 'Luxembourg']);
-        $eventsInBelgium = create(\App\Event::class, ['country_iso' => 'BE', 'end_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 7);
-        $eventsInLuxembourg = create(\App\Event::class, ['country_iso' => 'LU', 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED'], 1);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE', 'name' => 'Belgium']);
+        $luxembourg = \App\Country::factory()->create(['iso' => 'LU', 'name' => 'Luxembourg']);
+        $eventsInBelgium = \App\Event::factory()->create(['country_iso' => 'BE', 'end_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 7);
+        $eventsInLuxembourg = \App\Event::factory()->create(['country_iso' => 'LU', 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED'], 1);
 
         $this->get('scoreboard')
             ->assertSee('Belgium')
@@ -30,15 +30,15 @@ class ScoreboardTest extends TestCase
     /** @test */
     public function scoreboard_should_not_count_dependencies(): void
     {
-        $belgium = create(\App\Country::class, ['iso' => 'BE', 'name' => 'Belgium', 'population' => 1000]);
-        $france = create(\App\Country::class, ['iso' => 'FR', 'name' => 'France', 'population' => 1000]);
-        $guadeloupe = create(\App\Country::class, ['iso' => 'GP', 'name' => 'Guadeloupe', 'parent' => 'FR', 'population' => 1000]);
-        $martinique = create(\App\Country::class, ['iso' => 'MQ', 'name' => 'Martinique', 'parent' => 'FR', 'population' => 1000]);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE', 'name' => 'Belgium', 'population' => 1000]);
+        $france = \App\Country::factory()->create(['iso' => 'FR', 'name' => 'France', 'population' => 1000]);
+        $guadeloupe = \App\Country::factory()->create(['iso' => 'GP', 'name' => 'Guadeloupe', 'parent' => 'FR', 'population' => 1000]);
+        $martinique = \App\Country::factory()->create(['iso' => 'MQ', 'name' => 'Martinique', 'parent' => 'FR', 'population' => 1000]);
 
-        $eventsInBelgium = create(\App\Event::class, ['country_iso' => 'BE', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 10);
-        $eventsInFrance = create(\App\Event::class, ['country_iso' => 'FR', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 10);
-        $eventsInGuadeloupe = create(\App\Event::class, ['country_iso' => 'GP', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 20);
-        $eventsInMartinique = create(\App\Event::class, ['country_iso' => 'MQ', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 30);
+        $eventsInBelgium = \App\Event::factory()->create(['country_iso' => 'BE', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 10);
+        $eventsInFrance = \App\Event::factory()->create(['country_iso' => 'FR', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 10);
+        $eventsInGuadeloupe = \App\Event::factory()->create(['country_iso' => 'GP', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 20);
+        $eventsInMartinique = \App\Event::factory()->create(['country_iso' => 'MQ', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED'], 30);
 
         $this->get('scoreboard')
             ->assertSee('Belgium')

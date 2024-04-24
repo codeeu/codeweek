@@ -3,11 +3,11 @@
 use App\Achievements\Achievement;
 use Faker\Generator as Faker;
 
-$factory->define(Achievement::class, function (Faker $faker) {
+$factory->define(Achievement::class, function () {
     return [
-        'name' => $faker->word(),
-        'description' => $faker->sentence(),
+        'name' => $this->faker->word(),
+        'description' => $this->faker->sentence(),
         'icon' => 'foo.svg',
-        'edition' => $faker->year(),
+        'edition' => $this->faker->year(),
     ];
 });

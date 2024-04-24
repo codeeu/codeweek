@@ -16,11 +16,11 @@ class CleanImportsTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        create(\App\Event::class, ['id' => 1000]);
-        create(\App\Event::class, [], 9);
+        \App\Event::factory()->create(['id' => 1000]);
+        \App\Event::factory()->count(9)->create();
 
-        create(\App\Importer::class, ['website' => 'same', 'seen_at' => Carbon::now()], 9);
-        create(\App\Importer::class, ['website' => 'same', 'event_id' => 1000, 'seen_at' => Carbon::now()->subDays(1)], 1);
+        \App\Importer::factory()->count(9)->create(['website' => 'same', 'seen_at' => Carbon::now()]);
+        \App\Importer::factory()->create(['website' => 'same', 'event_id' => 1000, 'seen_at' => Carbon::now()->subDays(1)]);
 
     }
 

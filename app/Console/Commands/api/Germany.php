@@ -34,7 +34,7 @@ class Germany extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): void
+    public function handle(): int
     {
 
         dump('Loading German events');

@@ -18,14 +18,14 @@ class SuperOrganisersTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $user1 = create(\App\User::class);
-        $user2 = create(\App\User::class);
-        $user3 = create(\App\User::class);
+        $user1 = \App\User::factory()->create();
+        $user2 = \App\User::factory()->create();
+        $user3 = \App\User::factory()->create();
 
-        create(\App\Event::class, ['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 22);
-        create(\App\Event::class, ['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subYear()], 28);
-        create(\App\Event::class, ['creator_id' => $user2->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 8);
-        create(\App\Event::class, ['creator_id' => $user3->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 33);
+        \App\Event::factory()->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 22);
+        \App\Event::factory()->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subYear()], 28);
+        \App\Event::factory()->create(['creator_id' => $user2->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 8);
+        \App\Event::factory()->create(['creator_id' => $user3->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 33);
 
     }
 
@@ -48,9 +48,9 @@ class SuperOrganisersTest extends TestCase
 
         // We create two users
 
-        $userA = create(\App\User::class);
-        $userB = create(\App\User::class);
-        $userC = create(\App\User::class);
+        $userA = \App\User::factory()->create();
+        $userB = \App\User::factory()->create();
+        $userC = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
         create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
@@ -84,7 +84,7 @@ class SuperOrganisersTest extends TestCase
 
         // We create the user
 
-        $userA = create(\App\User::class);
+        $userA = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
         create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);

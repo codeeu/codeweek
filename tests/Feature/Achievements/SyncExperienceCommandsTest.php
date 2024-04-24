@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use App\Event;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -17,14 +18,14 @@ class SyncExperienceCommandsTest extends TestCase
 
         $this->seed('LeadingTeacherRoleSeeder');
 
-        $user = factory(User::class)->create()->assignRole('leading teacher');
+        $user = \App\User::factory()->create()->assignRole('leading teacher');
 
-        create(\App\Event::class, [
+        \App\Event::factory()->count(5)->create([
             'creator_id' => $user->id,
             'created_at' => Carbon::now()->setYear(2021),
             'status' => 'APPROVED',
             'reported_at' => Carbon::now()->setYear(2021),
-        ], 5);
+        ]);
 
         $this->assertCount(0, $user->fresh()->achievements);
 

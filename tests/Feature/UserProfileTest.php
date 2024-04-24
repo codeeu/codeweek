@@ -17,12 +17,12 @@ class UserProfileTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $superadmin = create(\App\User::class);
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $this->user = create(\App\User::class, ['id' => 222]);
+        $this->user = \App\User::factory()->create(['id' => 222]);
 
     }
 

@@ -1,10 +1,21 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\Theme::class, function (Faker $faker) {
-    return [
-        'name' => $faker->slug(2),
-        'order' => $faker->numberBetween(1, 20),
-    ];
-});
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class ThemeFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => $this->faker->slug(2),
+            'order' => $this->faker->numberBetween(1, 20),
+        ];
+    }
+}

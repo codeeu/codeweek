@@ -15,8 +15,8 @@ class EventsTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create(\App\Event::class, [
-            'country_iso' => create(\App\Country::class)->iso,
+        $this->event = \App\Event::factory()->create([
+            'country_iso' => \App\Country::factory()->create()->iso,
             'status' => 'APPROVED',
         ]);
 
@@ -90,9 +90,9 @@ class EventsTest extends TestCase
     /** @test */
     public function visitors_cant_see_the_user_email(): void
     {
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'user_email' => 'foo@bar.com',
-            'country_iso' => create(\App\Country::class)->iso,
+            'country_iso' => \App\Country::factory()->create()->iso,
             'status' => 'APPROVED',
         ]);
 
@@ -104,12 +104,12 @@ class EventsTest extends TestCase
     /** @test */
     public function ambassadors_from_other_countries_cant_see_the_user_email(): void
     {
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole(
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole(
             'ambassador'
         );
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'user_email' => 'foo@bar.com',
             'country_iso' => 'BE',
             'status' => 'APPROVED',
@@ -123,12 +123,12 @@ class EventsTest extends TestCase
     /** @test */
     public function ambassadors_from_same_country_can_see_the_user_email(): void
     {
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole(
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole(
             'ambassador'
         );
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'user_email' => 'foo@bar.com',
             'country_iso' => 'FR',
             'status' => 'APPROVED',
@@ -140,10 +140,10 @@ class EventsTest extends TestCase
     /** @test */
     public function admins_can_see_the_user_email(): void
     {
-        $admin = create(\App\User::class)->assignRole('super admin');
+        $admin = \App\User::factory()->create()->assignRole('super admin');
         $this->signIn($admin);
 
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'user_email' => 'foo@bar.com',
             'status' => 'APPROVED',
         ]);
@@ -154,7 +154,7 @@ class EventsTest extends TestCase
     /** @test */
     public function user_see_detail_picture_if_available(): void
     {
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'picture_detail' => 'foobar.png',
             'status' => 'APPROVED',
         ]);
@@ -165,7 +165,7 @@ class EventsTest extends TestCase
     /** @test */
     public function user_see_normal_picture_if_detail_is_not_available(): void
     {
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'picture' => 'normal.png',
             'status' => 'APPROVED',
         ]);

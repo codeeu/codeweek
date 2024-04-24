@@ -19,15 +19,15 @@ class EventsHelperTest extends TestCase
     public function it_should_get_upcoming_online_events(): void
     {
         //Good ones
-        create(\App\Event::class, ['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(), 'highlighted_status' => 'FEATURED']);
-        create(\App\Event::class, ['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
+        \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(), 'highlighted_status' => 'FEATURED']);
+        \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
 
         //Bad ones
-        create(\App\Event::class, ['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->subDays(10)]);
-        create(\App\Event::class, ['activity_type' => 'open-closed', 'status' => 'APPROVED']);
-        create(\App\Event::class, ['activity_type' => 'open-online', 'status' => 'PENDING']);
-        create(\App\Event::class, ['activity_type' => 'open-offline', 'status' => 'APPROVED']);
-        create(\App\Event::class, ['activity_type' => 'invite -online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
+        \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->subDays(10)]);
+        \App\Event::factory()->create(['activity_type' => 'open-closed', 'status' => 'APPROVED']);
+        \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'PENDING']);
+        \App\Event::factory()->create(['activity_type' => 'open-offline', 'status' => 'APPROVED']);
+        \App\Event::factory()->create(['activity_type' => 'invite -online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
 
         $events = EventHelper::getOnlineEvents();
         $this->assertCount(2, $events);
@@ -38,7 +38,7 @@ class EventsHelperTest extends TestCase
     {
 
         //Bad ones
-        $event = create(\App\Event::class, ['latitude' => (float) 7.123456798, 'longitude' => (float) 8.987654321]);
+        $event = \App\Event::factory()->create(['latitude' => (float) 7.123456798, 'longitude' => (float) 8.987654321]);
 
         $trimmed = EventHelper::trimGeoposition($event->latitude, $event->longitude);
         $expected = '7.12,8.99';

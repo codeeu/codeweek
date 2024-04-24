@@ -14,15 +14,15 @@ class CleanTagsTest extends TestCase
     /** @test */
     public function duplicates_should_be_removed(): void
     {
-        $event = create(\App\Event::class, ['country_iso' => create(\App\Country::class)->iso, 'status' => 'APPROVED']);
-        $event2 = create(\App\Event::class, ['country_iso' => create(\App\Country::class)->iso, 'status' => 'APPROVED']);
+        $event = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'APPROVED']);
+        $event2 = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'APPROVED']);
 
-        $single = create(\App\Tag::class, ['name' => 'single']);
+        $single = \App\Tag::factory()->create(['name' => 'single']);
 
-        $tag = create(\App\Tag::class, ['name' => 'foo']);
-        $tag2 = create(\App\Tag::class, ['name' => 'foo']);
-        $tag3 = create(\App\Tag::class, ['name' => 'bar']);
-        $tag4 = create(\App\Tag::class, ['name' => 'bar']);
+        $tag = \App\Tag::factory()->create(['name' => 'foo']);
+        $tag2 = \App\Tag::factory()->create(['name' => 'foo']);
+        $tag3 = \App\Tag::factory()->create(['name' => 'bar']);
+        $tag4 = \App\Tag::factory()->create(['name' => 'bar']);
 
         $event->tags()->save($single);
         $event->tags()->save($tag);
@@ -67,9 +67,10 @@ class CleanTagsTest extends TestCase
 
     public function createEvent()
     {
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event = \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
+
 
         $event->theme = '1';
         $event->tags = 'tag:foo';

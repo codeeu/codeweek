@@ -26,12 +26,12 @@ class ApproveEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $superadmin = create(\App\User::class);
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -50,12 +50,12 @@ class ApproveEventTest extends TestCase
 
         Mail::fake();
 
-        $superadmin = create(\App\User::class);
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
 
         $event->approve();
 
@@ -74,12 +74,12 @@ class ApproveEventTest extends TestCase
 
         Mail::fake();
 
-        $superadmin = create(\App\User::class, ['email' => 'test@boo.com']);
+        $superadmin = \App\User::factory()->create(['email' => 'test@boo.com']);
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
 
         $event->approve();
 
@@ -99,12 +99,12 @@ class ApproveEventTest extends TestCase
 
         Mail::fake();
 
-        $superadmin = create(\App\User::class, ['email' => null]);
+        $superadmin = \App\User::factory()->create(['email' => null]);
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
 
         $event->approve();
 
@@ -119,12 +119,12 @@ class ApproveEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'country_iso' => 'BE']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'BE']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -142,12 +142,12 @@ class ApproveEventTest extends TestCase
 
         Mail::fake();
 
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'country_iso' => 'FR']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'FR']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -161,7 +161,7 @@ class ApproveEventTest extends TestCase
     public function visitors_cant_see_the_approve_banner(): void
     {
 
-        $event = create(\App\Event::class);
+        $event = \App\Event::factory()->create();
 
         $this->get('/view/'.$event->id.'/random')
             ->assertDontSee('moderate-event');
@@ -171,10 +171,10 @@ class ApproveEventTest extends TestCase
     /** @test */
     public function ambassadors_of_other_countries_cant_see_the_approve_banner(): void
     {
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole('ambassador');
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, ['country_iso' => 'BE']);
+        $event = \App\Event::factory()->create(['country_iso' => 'BE']);
 
         $this->get('/view/'.$event->id.'/random')
             ->assertDontSee('moderate-event');
@@ -184,10 +184,10 @@ class ApproveEventTest extends TestCase
     /** @test */
     public function ambassadors_of_right_country_can_see_the_approve_banner(): void
     {
-        $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole('ambassador');
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
 
-        $event = create(\App\Event::class, ['country_iso' => 'FR']);
+        $event = \App\Event::factory()->create(['country_iso' => 'FR']);
 
         $this->get('/view/'.$event->id.'/random')
             ->assertSee('moderate-event');

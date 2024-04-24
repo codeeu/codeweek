@@ -22,9 +22,9 @@ class NotifyExcellenceWinnersTest extends TestCase
 
         // We create two users
 
-        $userA = create(\App\User::class);
-        $userB = create(\App\User::class);
-        $userC = create(\App\User::class);
+        $userA = \App\User::factory()->create();
+        $userB = \App\User::factory()->create();
+        $userC = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
         create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
@@ -49,7 +49,7 @@ class NotifyExcellenceWinnersTest extends TestCase
 
         // We create two users
 
-        $userA = create(\App\User::class, ['deleted_at' => Carbon::now()]);
+        $userA = \App\User::factory()->create(['deleted_at' => Carbon::now()]);
 
         // A winner and a loser for specific edition
         create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
@@ -72,7 +72,7 @@ class NotifyExcellenceWinnersTest extends TestCase
 
         // We create two users
 
-        $userA = create(\App\User::class, ['receive_emails' => 0]);
+        $userA = \App\User::factory()->create(['receive_emails' => 0]);
 
         // A winner and a loser for specific edition
         create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);

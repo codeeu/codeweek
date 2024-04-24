@@ -13,9 +13,9 @@ class MyEventsTest extends TestCase
     /** @test */
     public function a_user_can_see_his_events(): void
     {
-        $this->signIn(create(\App\User::class));
+        $this->signIn(User::factory()->create());
 
-        $myEvent = create(\App\Event::class, ['creator_id' => auth()->id()]);
+        $myEvent = \App\Event::factory()->create(['creator_id' => auth()->id()]);
         $anotherEventNotByMe = create(\App\Event::class);
 
         $this->get('/my')
@@ -27,10 +27,10 @@ class MyEventsTest extends TestCase
     public function user_count_of_activities(): void
     {
 
-        $this->signIn(create(\App\User::class));
+        $this->signIn(User::factory()->create());
 
-        $myEvents = create(\App\Event::class, ['status' => 'APPROVED', 'end_date' => Carbon::now(), 'creator_id' => auth()->id()], 4);
-        $myPastEvents = create(\App\Event::class, ['status' => 'APPROVED', 'end_date' => Carbon::now()->subYear(), 'creator_id' => auth()->id()], 6);
+        $myEvents = \App\Event::factory()->create(['status' => 'APPROVED', 'end_date' => Carbon::now(), 'creator_id' => auth()->id()], 4);
+        $myPastEvents = \App\Event::factory()->create(['status' => 'APPROVED', 'end_date' => Carbon::now()->subYear(), 'creator_id' => auth()->id()], 6);
         $anotherEventNotByMe = create(\App\Event::class);
 
         $this->assertEquals(4, auth()->user()->activities(Carbon::now()->year));

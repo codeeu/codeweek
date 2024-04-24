@@ -18,9 +18,9 @@ class UpdateEventTest extends TestCase
         $this->signIn();
         $this->withoutExceptionHandling();
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -56,13 +56,13 @@ class UpdateEventTest extends TestCase
     public function event_can_be_updated_by_its_owner_when_approved(): void
     {
 
-        $user = create(\App\User::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $user = \App\User::factory()->create();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $this->signIn($user);
 
-        $event = create(\App\Event::class, ['creator_id' => $user->id, 'status' => 'APPROVED']);
+        $event = \App\Event::factory()->create(['creator_id' => $user->id, 'status' => 'APPROVED']);
 
         $event->title = 'Initial Title';
         $event->description = 'Initial description.';
@@ -93,8 +93,8 @@ class UpdateEventTest extends TestCase
         $this->signIn();
 
         $event = make(\App\Event::class, ['creator_id' => auth()->id()]);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -103,7 +103,7 @@ class UpdateEventTest extends TestCase
 
         $this->post('/events', $event->toArray());
 
-        $otherUser = create(\App\User::class);
+        $otherUser = \App\User::factory()->create();
         $this->signIn($otherUser);
 
         $event = Event::where('title', $event->title)->first();

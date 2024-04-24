@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -43,6 +44,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Importer extends Model
 {
     use SoftDeletes;
+    use HasFactory;
 
     protected $guarded = [];
 

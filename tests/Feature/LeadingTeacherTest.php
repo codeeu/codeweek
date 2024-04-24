@@ -19,8 +19,8 @@ class LeadingTeacherTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
 
-        $this->leading_teacher = create(\App\Country::class, ['iso' => 'FR']);
-        $this->leading_teacher = create(\App\User::class)->assignRole('leading teacher');
+        $this->leading_teacher = \App\Country::factory()->create(['iso' => 'FR']);
+        $this->leading_teacher = \App\User::factory()->create()->assignRole('leading teacher');
 
     }
 
@@ -41,7 +41,7 @@ class LeadingTeacherTest extends TestCase
 
         $this->get(route('LT.signup'))->assertStatus(302);
 
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
         $this->signIn($user);
 
         $this->assertFalse($user->leadingTeacher);
