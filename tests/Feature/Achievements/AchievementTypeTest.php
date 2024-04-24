@@ -4,13 +4,10 @@ namespace Tests\Feature\Achievements\Achievements;
 
 use App\Achievements\Types\AchievementType;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Carbon;
 use Tests\TestCase;
 
 class AchievementTypeTest extends TestCase
 {
-
     use RefreshDatabase;
 
     /** @test */
@@ -21,14 +18,12 @@ class AchievementTypeTest extends TestCase
         $this->assertEquals('Fake Achievement Type', $type->name());
 
     }
-
-
 }
 
 class FakeAchievementType extends AchievementType
 {
-
     public $icon = 'icon.svg';
+
     public $edition = 2022;
 
     public function description()
@@ -40,6 +35,4 @@ class FakeAchievementType extends AchievementType
     {
         return true;
     }
-
-
 }

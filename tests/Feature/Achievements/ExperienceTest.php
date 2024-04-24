@@ -5,13 +5,11 @@ namespace Tests\Feature\Achievements\Achievements;
 use App\Achievements\Events\UserEarnedExperience;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Event;
 use Tests\TestCase;
 
 class ExperienceTest extends TestCase
 {
-
     use RefreshDatabase;
 
     /** @test */
@@ -22,11 +20,9 @@ class ExperienceTest extends TestCase
         $user = create('App\User');
         $user->getExperience()->awardExperience(100);
 
-
-        Event::assertDispatched(UserEarnedExperience::class, function($event) use ($user) {
+        Event::assertDispatched(UserEarnedExperience::class, function ($event) use ($user) {
             return $user->is($event->user) && $event->points == 100 && $event->totalPoints == 100;
         });
-
 
     }
 
@@ -87,34 +83,33 @@ class ExperienceTest extends TestCase
 
     }
 
-//    /** @test */
-//    public function a_user_earns_experience_when_an_activity_has_been_approved()
-//    {
-//
-//
-//        $user = create('App\User');
-//
-//        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id]);
-//
-//        $event->update([
-//            'status' => "APPROVED"
-//        ]);
-//
-//        $this->assertEquals(100, $user->getPoints());
-//
-//    }
+    //    /** @test */
+    //    public function a_user_earns_experience_when_an_activity_has_been_approved()
+    //    {
+    //
+    //
+    //        $user = create('App\User');
+    //
+    //        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id]);
+    //
+    //        $event->update([
+    //            'status' => "APPROVED"
+    //        ]);
+    //
+    //        $this->assertEquals(100, $user->getPoints());
+    //
+    //    }
 
     /** @test */
     public function a_user_earns_experience_when_an_activity_has_been_reported()
     {
-
 
         $user = create('App\User');
 
         $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null]);
 
         $event->update([
-            'reported_at' => Carbon::now()
+            'reported_at' => Carbon::now(),
         ]);
 
         $this->assertEquals(2, $user->getPoints());
@@ -125,17 +120,16 @@ class ExperienceTest extends TestCase
     public function a_leading_teacher_earns_experience_when_an_activity_has_been_approved_with_his_tag()
     {
 
-
         $user = create('App\User');
 
         $LT1 = create('App\User', ['tag' => 'FOO-TEST123-BAR']);
 
-        $event = create('App\Event', ['leading_teacher_tag'=>'FOO-TEST123-BAR','status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null]);
+        $event = create('App\Event', ['leading_teacher_tag' => 'FOO-TEST123-BAR', 'status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null]);
 
         $this->assertEquals(0, $LT1->getPoints());
 
         $event->update([
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
         $this->assertEquals(2, $LT1->fresh()->getPoints());

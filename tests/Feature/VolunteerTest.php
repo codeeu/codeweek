@@ -2,28 +2,21 @@
 
 namespace Tests\Feature;
 
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Torann\GeoIP\Facades\GeoIP;
 
 class VolunteerTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     private $admin;
 
-
-    public function setup():void
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
         $this->admin = create('App\User')->assignRole('super admin');
-
 
     }
 
@@ -40,9 +33,8 @@ class VolunteerTest extends TestCase
         $this->post('/volunteer');
 
         $this->assertDatabaseHas('volunteers', [
-            'user_id' => auth()->user()->id
+            'user_id' => auth()->user()->id,
         ]);
-
 
     }
 
@@ -68,10 +60,10 @@ class VolunteerTest extends TestCase
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 
-        $this->get('/volunteer/' . $volunteer->id . '/approve');
+        $this->get('/volunteer/'.$volunteer->id.'/approve');
 
         $this->assertTrue($volunteer->fresh()->user->hasRole('ambassador'));
-        $this->assertEquals($volunteer->fresh()->status,'APPROVED');
+        $this->assertEquals($volunteer->fresh()->status, 'APPROVED');
 
     }
 
@@ -85,15 +77,10 @@ class VolunteerTest extends TestCase
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 
-        $this->get('/volunteer/' . $volunteer->id . '/reject');
+        $this->get('/volunteer/'.$volunteer->id.'/reject');
 
         $this->assertFalse($volunteer->fresh()->user->hasRole('ambassador'));
-        $this->assertEquals('REJECTED',$volunteer->fresh()->status);
-
+        $this->assertEquals('REJECTED', $volunteer->fresh()->status);
 
     }
-
-
 }
-
-
