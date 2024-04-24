@@ -26,7 +26,7 @@ class LinkLeadingTeachersToActivities extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
         //Get the leading teachers
         $leading_teachers = User::role('leading teacher')

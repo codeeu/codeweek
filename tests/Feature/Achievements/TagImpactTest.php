@@ -3,6 +3,7 @@
 namespace Tests\Feature\Achievements\Achievements;
 
 use App\Event;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -21,9 +22,9 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $LT1 = create(\App\User::class, ['tag' => 'foo-TEST123-bar']);
+        $LT1 = \App\User::factory()->create(['tag' => 'foo-TEST123-bar']);
 
-        $fifty_events = create(\App\Event::class, ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 50);
+        $fifty_events = \App\Event::factory()->count(50)->create(['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar']);
 
         $this->assertCount(0, $user->achievements);
 
@@ -51,9 +52,9 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $LT1 = create(\App\User::class, ['tag' => 'foo-TEST123-bar']);
+        $LT1 = \App\User::factory()->create(['tag' => 'foo-TEST123-bar']);
 
-        $ten_events = create(\App\Event::class, ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 5);
+        $ten_events = \App\Event::factory()->count(5)->create(['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar']);
 
         $this->assertCount(0, $user->achievements);
 

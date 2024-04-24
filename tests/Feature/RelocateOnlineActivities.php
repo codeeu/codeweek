@@ -15,12 +15,12 @@ class RelocateOnlineActivities extends TestCase
     public function it_should_relocate_event(): void
     {
 
-        $france = create(\App\Country::class, ['iso' => 'FR', 'longitude' => 2.824354, 'latitude' => 46.980252]);
+        $france = \App\Country::factory()->create(['iso' => 'FR', 'longitude' => 2.824354, 'latitude' => 46.980252]);
 
-        $this->signIn(create(\App\User::class));
+        $this->signIn(User::factory()->create());
 
-        $badPosition = create(\App\Event::class, ['country_iso' => 'FR', 'geoposition' => '0,0']);
-        $goodPosition = create(\App\Event::class, ['country_iso' => 'FR', 'geoposition' => '3,47']);
+        $badPosition = \App\Event::factory()->create(['country_iso' => 'FR', 'geoposition' => '0,0']);
+        $goodPosition = \App\Event::factory()->create(['country_iso' => 'FR', 'geoposition' => '3,47']);
 
         $this->artisan('relocate');
 
@@ -36,16 +36,16 @@ class RelocateOnlineActivities extends TestCase
         Mail::fake();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $france = create(\App\Country::class, ['iso' => 'FR', 'longitude' => 2.824354, 'latitude' => 46.980252]);
+        $france = \App\Country::factory()->create(['iso' => 'FR', 'longitude' => 2.824354, 'latitude' => 46.980252]);
 
-        $this->signIn(create(\App\User::class));
+        $this->signIn(User::factory()->create());
 
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';

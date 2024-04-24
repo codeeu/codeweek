@@ -1,18 +1,25 @@
 <?php
 
-/* @var $factory \Illuminate\Database\Eloquent\Factory */
+namespace Database\Factories;
 
-use App\Importer;
-use Faker\Generator as Faker;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(Importer::class, function (Faker $faker) {
-    return [
-        'original_id' => $faker->numberBetween(10, 1000),
-        'website' => $faker->safeEmailDomain(),
-        'event_id' => $faker->randomNumber(),
-        'original_updated_at' => $faker->dateTime(),
-        'seen_at' => $faker->dateTime(),
-        'status' => 'ADDED',
-    ];
-
-});
+class ImporterFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'original_id' => $this->faker->numberBetween(10, 1000),
+            'website' => $this->faker->safeEmailDomain(),
+            'event_id' => $this->faker->randomNumber(),
+            'original_updated_at' => $this->faker->dateTime(),
+            'seen_at' => $this->faker->dateTime(),
+            'status' => 'ADDED',
+        ];
+    }
+}

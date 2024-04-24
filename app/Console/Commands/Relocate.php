@@ -34,7 +34,7 @@ class Relocate extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
 
         $misplaced_events = Event::where('geoposition', '=', '0,0')->get();

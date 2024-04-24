@@ -25,19 +25,19 @@ class RouteProtectionTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
 
-        $this->admin = create(\App\User::class);
+        $this->admin = \App\User::factory()->create();
         $this->admin->assignRole('super admin');
 
-        $this->ambassador = create(\App\User::class);
+        $this->ambassador = \App\User::factory()->create();
         $this->ambassador->assignRole('ambassador');
 
-        $this->school_manager = create(\App\User::class);
+        $this->school_manager = \App\User::factory()->create();
         $this->school_manager->assignRole('school manager');
 
-        $this->event_owner = create(\App\User::class);
+        $this->event_owner = \App\User::factory()->create();
         $this->event_owner->assignRole('event owner');
 
-        $this->leading_teacher = create(\App\User::class);
+        $this->leading_teacher = \App\User::factory()->create();
         $this->leading_teacher->assignRole('leading teacher');
 
     }
@@ -74,7 +74,7 @@ class RouteProtectionTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $country = create(\App\Country::class);
+        $country = \App\Country::factory()->create();
 
         $rejected = [$this->event_owner, $this->school_manager,  $this->ambassador];
         $allowed = [$this->admin];

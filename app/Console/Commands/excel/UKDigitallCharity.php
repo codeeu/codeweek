@@ -36,7 +36,7 @@ class UKDigitallCharity extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
         Log::info('Loading UK Digitall Charity');
 

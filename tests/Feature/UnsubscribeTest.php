@@ -14,7 +14,7 @@ class UnsubscribeTest extends TestCase
     {
         $this->withoutExceptionHandling();
         //Create user
-        $user = create(\App\User::class, ['email' => 'dummy@foo.bar']);
+        $user = \App\User::factory()->create(['email' => 'dummy@foo.bar']);
 
         $this->assertEquals(1, $user->receive_emails);
 
@@ -31,7 +31,7 @@ class UnsubscribeTest extends TestCase
     {
         //        $this->withoutExceptionHandling();
         //Create user
-        $user = create(\App\User::class, ['email' => 'dummy@foo.bar']);
+        $user = \App\User::factory()->create(['email' => 'dummy@foo.bar']);
 
         $this->assertTrue($user->receive_emails);
 

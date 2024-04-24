@@ -18,7 +18,7 @@ class CertificateGenerationTest extends TestCase
         parent::setUp();
 
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create(\App\Event::class, ['status' => 'APPROVED', 'start_date' => Carbon::now()->subMonth(1)]);
+        $this->event = \App\Event::factory()->create(['status' => 'APPROVED', 'start_date' => Carbon::now()->subMonth(1)]);
 
     }
 

@@ -28,10 +28,10 @@ class CountriesTest extends TestCase
     public function get_countries_with_events(): void
     {
 
-        $country_without_event = create(\App\Country::class);
-        $country_with_event = create(\App\Country::class);
+        $country_without_event = \App\Country::factory()->create();
+        $country_with_event = \App\Country::factory()->create();
         Log::info($country_with_event->iso);
-        create(\App\Event::class, ['country_iso' => $country_with_event->iso, 'status' => 'APPROVED']);
+        \App\Event::factory()->create(['country_iso' => $country_with_event->iso, 'status' => 'APPROVED']);
 
         $this->assertCount(1, Country::withEvents());
         $this->assertEquals(Country::withEvents()[0]->name, $country_with_event->name);
@@ -45,12 +45,12 @@ class CountriesTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
         //        $countries = create('App\Country',[], 10);
-        $france = create(\App\Country::class, ['iso' => 'FR']);
-        $belgium = create(\App\Country::class, ['iso' => 'BE']);
+        $france = \App\Country::factory()->create(['iso' => 'FR']);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
 
-        $ambassador_fr = create(\App\User::class, ['country_iso' => $france->iso])->assignRole('ambassador');
-        $ambassador_be = create(\App\User::class, ['country_iso' => $belgium->iso])->assignRole('ambassador');
-        $leading_teacher_be = create(\App\User::class, ['country_iso' => $belgium->iso])->assignRole('leading teacher');
+        $ambassador_fr = \App\User::factory()->create(['country_iso' => $france->iso])->assignRole('ambassador');
+        $ambassador_be = \App\User::factory()->create(['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $leading_teacher_be = \App\User::factory()->create(['country_iso' => $belgium->iso])->assignRole('leading teacher');
 
         $this->assertCount(2, Country::withCoordinators());
 

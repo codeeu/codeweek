@@ -32,9 +32,9 @@ class CreateEventTest extends TestCase
 
         $this->expectException(AuthenticationException::class);
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -54,9 +54,9 @@ class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -86,9 +86,9 @@ class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The audience is invalid');
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -111,9 +111,9 @@ class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The theme is invalid');
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '111';
         $event->tags = 'tag:foo,tag:bar';
@@ -136,9 +136,9 @@ class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The selected language is invalid');
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '111';
         $event->tags = 'tag:foo,tag:bar';
@@ -158,9 +158,9 @@ class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -180,9 +180,9 @@ class CreateEventTest extends TestCase
     {
         $this->signIn();
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
 
@@ -222,8 +222,8 @@ class CreateEventTest extends TestCase
         $this->signIn();
 
         $event = make(\App\Event::class, ['title' => '-----']);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
 
@@ -244,13 +244,13 @@ class CreateEventTest extends TestCase
 
         Mail::fake();
 
-        $belgium = create(\App\Country::class, ['iso' => 'BE']);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
-        $ambassador_be = create(\App\User::class, ['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $ambassador_be = \App\User::factory()->create(['country_iso' => $belgium->iso])->assignRole('ambassador');
 
-        $event = make(\App\Event::class);
+        $event =  \App\Event::factory()->make();
 
         $event->country_iso = $belgium->iso;
         $event->theme = '1';
@@ -273,15 +273,15 @@ class CreateEventTest extends TestCase
 
         Mail::fake();
 
-        $belgium = create(\App\Country::class, ['iso' => 'BE']);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
-        $ambassador_be = create(\App\User::class, ['country_iso' => $belgium->iso])->assignRole('ambassador');
-        $leading_teacher = create(\App\User::class, ['country_iso' => $belgium->iso, 'tag' => 'my-tag'])->assignRole('leading teacher');
+        $ambassador_be = \App\User::factory()->create(['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $leading_teacher = \App\User::factory()->create(['country_iso' => $belgium->iso, 'tag' => 'my-tag'])->assignRole('leading teacher');
 
         $this->assertCount(0, $leading_teacher->taggedActivities);
-        $event = make(\App\Event::class);
+        $event =  \App\Event::factory()->make();
 
         $event->country_iso = $belgium->iso;
         $event->theme = '1';
@@ -304,9 +304,9 @@ class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make(\App\Event::class);
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        $event =  \App\Event::factory()->make();
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';

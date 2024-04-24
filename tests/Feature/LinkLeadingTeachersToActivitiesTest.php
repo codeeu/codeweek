@@ -18,13 +18,13 @@ class LinkLeadingTeachersToActivitiesTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
 
-        $leading_teacher = create(\App\User::class, ['tag' => 'BE-ASL-123'])->assignRole('leading teacher');
+        $leading_teacher = \App\User::factory()->create(['tag' => 'BE-ASL-123'])->assignRole('leading teacher');
 
         //Create an activity without leading teacher tag
-        $event = create(\App\Event::class, ['status' => 'APPROVED']);
+        $event = \App\Event::factory()->create(['status' => 'APPROVED']);
 
         //Create a tag and link it to the activity
-        $single = create(\App\Tag::class, ['name' => 'BE-ASL-123']);
+        $single = \App\Tag::factory()->create(['name' => 'BE-ASL-123']);
         $event->tags()->save($single);
 
         $this->assertCount(0, $leading_teacher->taggedActivities);

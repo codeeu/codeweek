@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\API;
 
+use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Validation\ValidationException;
@@ -14,29 +15,30 @@ class EventsAPITest extends TestCase
     /** @test */
     public function it_should_return_events_in_hamburg(): void
     {
+        Event::factory()->count(3)->
         create(
-            \App\Event::class,
+
             [
                 'longitude' => 46.60675,
                 'latitude' => 13.84246,
                 'status' => 'APPROVED',
-            ],
-            3
+            ]
+
         );
 
-        $badLatitudeEvent = create(\App\Event::class, [
+        $badLatitudeEvent = \App\Event::factory()->create([
             'longitude' => 9.87985,
             'latitude' => 55.5311,
             'status' => 'APPROVED',
         ]);
 
-        $badLongitudeEvent = create(\App\Event::class, [
+        $badLongitudeEvent = \App\Event::factory()->create([
             'longitude' => 19.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
         ]);
 
-        $hamburgEvent = create(\App\Event::class, [
+        $hamburgEvent = \App\Event::factory()->create([
             'title' => 'Good Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
@@ -64,28 +66,31 @@ class EventsAPITest extends TestCase
     /** @test */
     public function it_should_return_events_geolocalized_for_specific_year(): void
     {
+
+
+        Event::factory()->count(3)->
         create(
-            \App\Event::class,
+
             [
                 'longitude' => 46.60675,
-                'latitude' => 13.84246,
-            ],
-            3
+                'latitude' => 13.84246
+            ]
+
         );
 
-        $badLatitudeEvent = create(\App\Event::class, [
+        $badLatitudeEvent = \App\Event::factory()->create([
             'longitude' => 9.87985,
             'latitude' => 55.5311,
             'status' => 'APPROVED',
         ]);
 
-        $badLongitudeEvent = create(\App\Event::class, [
+        $badLongitudeEvent = \App\Event::factory()->create([
             'longitude' => 19.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
         ]);
 
-        $pastEvent = create(\App\Event::class, [
+        $pastEvent = \App\Event::factory()->create([
             'title' => '2020 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
@@ -93,7 +98,7 @@ class EventsAPITest extends TestCase
             'end_date' => Carbon::now()->setYear(2020),
         ]);
 
-        $goodEvent = create(\App\Event::class, [
+        $goodEvent = \App\Event::factory()->create([
             'title' => '2021 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
@@ -115,7 +120,7 @@ class EventsAPITest extends TestCase
     /** @test */
     public function it_should_return_events_geolocalized_for_current_year_by_default(): void
     {
-        $pastEvent = create(\App\Event::class, [
+        $pastEvent = \App\Event::factory()->create([
             'title' => '2020 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
@@ -123,7 +128,7 @@ class EventsAPITest extends TestCase
             'end_date' => Carbon::now()->setYear(2020),
         ]);
 
-        $currentYearEvent = create(\App\Event::class, [
+        $currentYearEvent = \App\Event::factory()->create([
             'title' => 'Current Year Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
@@ -153,7 +158,7 @@ class EventsAPITest extends TestCase
             );
         } catch (ValidationException $e) {
             $this->assertEquals(
-                'The year must be a number.',
+                'The year field must be a number.',
                 $e->getMessage()
             );
         }
@@ -162,14 +167,14 @@ class EventsAPITest extends TestCase
     /** @test */
     public function it_should_not_return_non_approved_events(): void
     {
-        $pendingEvent = create(\App\Event::class, [
+        $pendingEvent = \App\Event::factory()->create([
             'title' => 'Pending Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'PENDING',
         ]);
 
-        $approvedEvent = create(\App\Event::class, [
+        $approvedEvent = \App\Event::factory()->create([
             'title' => 'Approved Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
@@ -224,20 +229,20 @@ class EventsAPITest extends TestCase
     public function it_should_return_german_events(): void
     {
 
-        $frenchEvent = create(\App\Event::class, [
+        $frenchEvent = \App\Event::factory()->create([
             'country_iso' => 'FR',
             'status' => 'APPROVED',
             'end_date' => Carbon::now()->setYear(2022),
         ]);
 
-        $germanEvent = create(\App\Event::class, [
+        $germanEvent = \App\Event::factory()->create([
             'title' => 'Good Event',
             'status' => 'APPROVED',
             'country_iso' => 'DE',
             'end_date' => Carbon::now()->setYear(2022),
         ]);
 
-        $importedGermanEvent = create(\App\Event::class, [
+        $importedGermanEvent = \App\Event::factory()->create([
             'title' => 'Imported Event',
             'status' => 'APPROVED',
             'country_iso' => 'DE',
@@ -265,7 +270,7 @@ class EventsAPITest extends TestCase
     public function it_should_get_one_event_details(): void
     {
 
-        $event = create(\App\Event::class, [
+        $event = \App\Event::factory()->create([
             'id' => 1456,
             'status' => 'APPROVED',
             'title' => 'foobar',

@@ -21,9 +21,9 @@ class BadgesTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
-        $this->leading_teacher = factory(User::class)->create()->assignRole('leading teacher');
-        $this->leading_teacher_2 = factory(User::class)->create()->assignRole('leading teacher');
-        $this->leading_teacher_admin = factory(User::class)->create()->assignRole('leading teacher admin');
+        $this->leading_teacher = \App\User::factory()->create()->assignRole('leading teacher');
+        $this->leading_teacher_2 = \App\User::factory()->create()->assignRole('leading teacher');
+        $this->leading_teacher_admin = \App\User::factory()->create()->assignRole('leading teacher admin');
     }
 
     /** @test */

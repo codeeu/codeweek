@@ -22,7 +22,7 @@ class ResourceItemTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $this->admin = create(\App\User::class);
+        $this->admin = \App\User::factory()->create();
         $this->admin->assignRole('super admin');
 
     }

@@ -16,7 +16,7 @@ class VolunteerTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $this->admin = create(\App\User::class)->assignRole('super admin');
+        $this->admin = \App\User::factory()->create()->assignRole('super admin');
 
     }
 

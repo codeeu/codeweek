@@ -25,7 +25,7 @@ class DeleteUnactiveUsers extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
         $deletedUsers = UserHelper::deleteInactiveUsers(5);
         $admin = config('codeweek.administrator');

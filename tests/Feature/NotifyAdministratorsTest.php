@@ -28,16 +28,16 @@ class NotifyAdministratorsTest extends TestCase
         create(\App\Notification::class, [], 3);
 
         //Create two administrators
-        $superadmin = create(\App\User::class);
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
-        $superadmin2 = create(\App\User::class);
+        $superadmin2 = \App\User::factory()->create();
         $superadmin2->assignRole('super admin');
 
-        $activitiesadmin = create(\App\User::class)->assignRole('activities admin');
-        $activitiesadmin2 = create(\App\User::class)->assignRole('activities admin');
-        $activitiesadmin3 = create(\App\User::class)->assignRole('activities admin');
-        $activitiesadmin4 = create(\App\User::class)->assignRole('activities admin');
+        $activitiesadmin = \App\User::factory()->create()->assignRole('activities admin');
+        $activitiesadmin2 = \App\User::factory()->create()->assignRole('activities admin');
+        $activitiesadmin3 = \App\User::factory()->create()->assignRole('activities admin');
+        $activitiesadmin4 = \App\User::factory()->create()->assignRole('activities admin');
 
         $this->assertEquals(3, Notification::whereNull('sent_at')->count());
 

@@ -24,7 +24,7 @@ class SyncUsersAchievements extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle(): void
     {
         User::role('leading teacher')
             ->chunk(100, function ($users, $index) {

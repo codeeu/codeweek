@@ -15,18 +15,18 @@ class SearchEventTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        create(\App\Country::class, [], 20);
+        \App\Country::factory()->create([], 20);
 
     }
 
     /** @test */
     public function a_user_can_search_for_all_events(): void
     {
-        $belgium = create(\App\Country::class, ['iso' => 'BE']);
-        $france = create(\App\Country::class, ['iso' => 'FR']);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
+        $france = \App\Country::factory()->create(['iso' => 'FR']);
         //Given that we select a country
-        $eventInBelgium = create(\App\Event::class, ['country_iso' => $belgium->iso, 'status' => 'APPROVED']);
-        $eventNotInBelgium = create(\App\Event::class, ['country_iso' => $france->iso, 'status' => 'APPROVED']);
+        $eventInBelgium = \App\Event::factory()->create(['country_iso' => $belgium->iso, 'status' => 'APPROVED']);
+        $eventNotInBelgium = \App\Event::factory()->create(['country_iso' => $france->iso, 'status' => 'APPROVED']);
 
         //We should return the events filtered for this country
         $this->post('search', [])
@@ -38,11 +38,11 @@ class SearchEventTest extends TestCase
     /** @test */
     public function a_user_can_search_events_by_country(): void
     {
-        $belgium = create(\App\Country::class, ['iso' => 'BE']);
-        $france = create(\App\Country::class, ['iso' => 'FR']);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
+        $france = \App\Country::factory()->create(['iso' => 'FR']);
         //Given that we select a country
-        $eventInBelgium = create(\App\Event::class, ['country_iso' => $belgium->iso, 'status' => 'APPROVED']);
-        $eventNotInBelgium = create(\App\Event::class, ['country_iso' => $france->iso, 'status' => 'APPROVED']);
+        $eventInBelgium = \App\Event::factory()->create(['country_iso' => $belgium->iso, 'status' => 'APPROVED']);
+        $eventNotInBelgium = \App\Event::factory()->create(['country_iso' => $france->iso, 'status' => 'APPROVED']);
 
         //We should return the events filtered for this country
         $countryArr[] = (array) ['iso' => 'BE'];
@@ -58,8 +58,8 @@ class SearchEventTest extends TestCase
     /** @test */
     public function a_user_can_search_only_this_year_events(): void
     {
-        $eventLastYear = create(\App\Event::class, ['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
-        $eventThisYear = create(\App\Event::class, ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
+        $eventLastYear = \App\Event::factory()->create(['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
+        $eventThisYear = \App\Event::factory()->create(['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
         $this->post('search', ['year' => Carbon::now()->year])
             ->assertDontSee($eventLastYear->title)
             ->assertSee($eventThisYear->title);
@@ -68,8 +68,8 @@ class SearchEventTest extends TestCase
     /** @test */
     public function a_user_can_search_previous_years_events(): void
     {
-        $eventLastYear = create(\App\Event::class, ['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
-        $eventThisYear = create(\App\Event::class, ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
+        $eventLastYear = \App\Event::factory()->create(['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
+        $eventThisYear = \App\Event::factory()->create(['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
 
         //$this->post('search',['years'=>[Carbon::now()->year]])
         $this->post('search', ['query' => '', 'year' => Carbon::now()->subYear(1)->year])
@@ -81,8 +81,8 @@ class SearchEventTest extends TestCase
     /** @test */
     public function bug_fix_laravel58(): void
     {
-        $eventLastYear = create(\App\Event::class, ['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
-        $eventThisYear = create(\App\Event::class, ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
+        $eventLastYear = \App\Event::factory()->create(['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
+        $eventThisYear = \App\Event::factory()->create(['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
 
         //$this->post('search',['years'=>[Carbon::now()->year]])
         $this->post('search', ['query' => '', 'year' => Carbon::now()->subYear(1)->year])
@@ -94,8 +94,8 @@ class SearchEventTest extends TestCase
     /** @test */
     public function a_user_can_search_on_all_events(): void
     {
-        $eventInThePast = create(\App\Event::class, ['end_date' => new Carbon('yesterday'), 'status' => 'APPROVED']);
-        $eventInTheFuture = create(\App\Event::class, ['end_date' => new Carbon('tomorrow'), 'status' => 'APPROVED']);
+        $eventInThePast = \App\Event::factory()->create(['end_date' => new Carbon('yesterday'), 'status' => 'APPROVED']);
+        $eventInTheFuture = \App\Event::factory()->create(['end_date' => new Carbon('tomorrow'), 'status' => 'APPROVED']);
         $this->post('search', ['past' => 'yes'])
             ->assertSee($eventInTheFuture->title)
             ->assertSee($eventInThePast->title);
@@ -108,8 +108,8 @@ class SearchEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $eventWithPython = create(\App\Event::class, ['title' => 'Learn Python with us', 'status' => 'APPROVED']);
-        $eventWithoutPython = create(\App\Event::class, ['title' => 'Learn JAVA with us', 'status' => 'APPROVED']);
+        $eventWithPython = \App\Event::factory()->create(['title' => 'Learn Python with us', 'status' => 'APPROVED']);
+        $eventWithoutPython = \App\Event::factory()->create(['title' => 'Learn JAVA with us', 'status' => 'APPROVED']);
 
         $this->post('search', ['query' => 'python'])
             ->assertSee($eventWithPython->title)
@@ -123,8 +123,8 @@ class SearchEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $eventWithCodeweek4AllCode = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'foobar', 'status' => 'APPROVED']);
-        $eventWithoutCodeweek4AllCode = create(\App\Event::class, ['title' => 'Learn JAVA with us', 'status' => 'APPROVED']);
+        $eventWithCodeweek4AllCode = \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'foobar', 'status' => 'APPROVED']);
+        $eventWithoutCodeweek4AllCode = \App\Event::factory()->create(['title' => 'Learn JAVA with us', 'status' => 'APPROVED']);
 
         $this->post('search', ['query' => 'foobar'])
             ->assertSee($eventWithCodeweek4AllCode->title)
@@ -136,20 +136,20 @@ class SearchEventTest extends TestCase
     public function a_user_can_search_by_theme(): void
     {
 
-        create(\App\Theme::class, [], 3);
-        $eventWithTheme = create(\App\Event::class, ['status' => 'APPROVED']);
+        \App\Theme::factory()->count(3)->create();
+        $eventWithTheme = \App\Event::factory()->create(['status' => 'APPROVED']);
         $theme = Theme::find(1);
         $eventWithTheme->themes()->save($theme);
 
-        $eventWithTheme2 = create(\App\Event::class, ['status' => 'APPROVED']);
+        $eventWithTheme2 = \App\Event::factory()->create(['status' => 'APPROVED']);
         $theme2 = Theme::find(2);
         $eventWithTheme2->themes()->save($theme2);
 
-        $eventWithTheme3 = create(\App\Event::class, ['status' => 'APPROVED']);
+        $eventWithTheme3 = \App\Event::factory()->create(['status' => 'APPROVED']);
         $theme3 = Theme::find(3);
         $eventWithTheme3->themes()->save($theme3);
 
-        $eventWithoutTheme = create(\App\Event::class, ['status' => 'APPROVED']);
+        $eventWithoutTheme = \App\Event::factory()->create(['status' => 'APPROVED']);
 
         $themes = [$theme, $theme2];
 
@@ -164,20 +164,20 @@ class SearchEventTest extends TestCase
     /** @test */
     public function a_user_can_search_by_audience(): void
     {
-        create(\App\Audience::class, [], 3);
-        $eventWithAudience = create(\App\Event::class, ['status' => 'APPROVED']);
+        \App\Audience::factory()->count(3)->create();
+        $eventWithAudience = \App\Event::factory()->create(['status' => 'APPROVED']);
         $audience = Audience::find(1);
         $eventWithAudience->audiences()->save($audience);
 
-        $eventWithAudience2 = create(\App\Event::class, ['status' => 'APPROVED']);
+        $eventWithAudience2 = \App\Event::factory()->create(['status' => 'APPROVED']);
         $audience2 = Audience::find(2);
         $eventWithAudience2->audiences()->save($audience2);
 
-        $eventWithAudience3 = create(\App\Event::class, ['status' => 'APPROVED']);
+        $eventWithAudience3 = \App\Event::factory()->create(['status' => 'APPROVED']);
         $audience3 = Audience::find(3);
         $eventWithAudience3->audiences()->save($audience3);
 
-        $eventWithoutAudience = create(\App\Event::class, ['status' => 'APPROVED']);
+        $eventWithoutAudience = \App\Event::factory()->create(['status' => 'APPROVED']);
 
         $audiences = [$audience, $audience2];
 
@@ -193,8 +193,8 @@ class SearchEventTest extends TestCase
     public function a_user_can_search_by_codeweek_4_all_tag(): void
     {
 
-        $good = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);
-        $bad = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-bad', 'status' => 'APPROVED']);
+        $good = \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);
+        $bad = \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw22-bad', 'status' => 'APPROVED']);
 
         $this->post('search', ['query' => 'cw22-foobar'])
             ->assertSee($good->title)
@@ -206,8 +206,8 @@ class SearchEventTest extends TestCase
     public function a_user_can_search_by_codeweek_4_all_tag_in_the_tag_field(): void
     {
 
-        $good = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);
-        $bad = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-bad', 'status' => 'APPROVED']);
+        $good = \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);
+        $bad = \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw22-bad', 'status' => 'APPROVED']);
 
         $this->post('search', ['tag' => 'cw22-foobar'])
             ->assertSee($good->title)

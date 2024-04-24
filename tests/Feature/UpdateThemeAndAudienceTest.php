@@ -16,7 +16,7 @@ class UpdateThemeAndAudienceTest extends TestCase
         create(\App\Audience::class, [], 10);
 
         // Create Event with event_url from meet and code
-        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
+        $myEvent = \App\Event::factory()->create(['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
         $myEvent->audiences()->attach(8);
 
         //          $this->assertEquals(1,$myEvent->audiences()->get()->count());
@@ -36,7 +36,7 @@ class UpdateThemeAndAudienceTest extends TestCase
         create(\App\Audience::class, [], 10);
 
         // Create Event with event_url from meet and code
-        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
+        $myEvent = \App\Event::factory()->create(['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
 
         $this->assertFalse($myEvent->audiences()->exists());
 
@@ -54,7 +54,7 @@ class UpdateThemeAndAudienceTest extends TestCase
         create(\App\Theme::class, [], 10);
 
         // Create Event with event_url from meet and code
-        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
+        $myEvent = \App\Event::factory()->create(['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
 
         $this->assertFalse($myEvent->themes()->exists());
 

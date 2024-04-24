@@ -12,10 +12,10 @@ class UpdateUserTest extends TestCase
     /** @test */
     public function a_user_can_be_updated_by_its_owner(): void
     {
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
-        $belgium = create(\App\Country::class, ['iso' => 'BE']);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
 
         $this->patch('user', [
             'firstname' => 'Changed firstname',
@@ -64,7 +64,7 @@ class UpdateUserTest extends TestCase
     /** @test */
     public function a_user_cant_update_its_email(): void
     {
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
 

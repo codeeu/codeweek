@@ -1,18 +1,28 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\Country::class, function (Faker $faker, $country) {
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-    return [
-        'iso' => $country['iso'] ?? $faker->countryCode(),
-        'name' => $country['name'] ?? $faker->country(),
-        'parent' => '',
-        'population' => $faker->numberBetween(1000, 100000),
-        'continent' => 'EU',
-        'facebook' => $faker->url(),
-        'website' => $faker->url(),
-        'longitude' => $faker->longitude(10, 40),
-        'latitude' => $faker->latitude(20, 60),
-    ];
-});
+class CountryFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'iso' => $country['iso'] ?? $this->faker->countryCode(),
+            'name' => $country['name'] ?? $this->faker->country(),
+            'parent' => '',
+            'population' => $this->faker->numberBetween(1000, 100000),
+            'continent' => 'EU',
+            'facebook' => $this->faker->url(),
+            'website' => $this->faker->url(),
+            'longitude' => $this->faker->longitude(10, 40),
+            'latitude' => $this->faker->latitude(20, 60),
+        ];
+    }
+}

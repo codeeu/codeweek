@@ -27,12 +27,12 @@ class RejectEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $superadmin = create(\App\User::class);
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -123,8 +123,8 @@ class RejectEventTest extends TestCase
 
         $event = Event::where('title', $eventA->title)->first();
 
-        create(\App\Audience::class, [], 3);
-        create(\App\Theme::class, [], 3);
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
         $event->title = 'Changed';
         $event->description = 'Changed description.';
         $event->theme = '1,2';
@@ -151,12 +151,12 @@ class RejectEventTest extends TestCase
 
         Mail::fake();
 
-        $superadmin = create(\App\User::class);
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create(\App\Event::class, ['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
 
         return $event;
     }
