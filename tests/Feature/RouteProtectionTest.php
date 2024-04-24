@@ -2,24 +2,24 @@
 
 namespace Tests\Feature;
 
-use App\Audience;
-use App\Theme;
-use Carbon\Carbon;
-use Spatie\Permission\Exceptions\UnauthorizedException;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class RouteProtectionTest extends TestCase
 {
     use DatabaseMigrations;
 
     private $admin;
+
     private $ambassador;
+
     private $school_manager;
+
     private $event_owner;
+
     private $leading_teacher;
 
-    public function setup():void
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
@@ -40,10 +40,7 @@ class RouteProtectionTest extends TestCase
         $this->leading_teacher = create('App\User');
         $this->leading_teacher->assignRole('leading teacher');
 
-
-
     }
-
 
     /** @test */
     public function only_admin_can_access_activities()
@@ -82,7 +79,7 @@ class RouteProtectionTest extends TestCase
         $rejected = [$this->event_owner, $this->school_manager,  $this->ambassador];
         $allowed = [$this->admin];
 
-        $this->check_route('/pending/' . $country->iso, $allowed, $rejected);
+        $this->check_route('/pending/'.$country->iso, $allowed, $rejected);
 
     }
 
@@ -112,12 +109,5 @@ class RouteProtectionTest extends TestCase
             $this->get($route)->assertStatus(200);
         }
 
-
-
-
     }
-
-
 }
-
-

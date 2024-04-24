@@ -2,18 +2,16 @@
 
 namespace Tests\Feature;
 
-use App\User;
-use \App\Mail\DeletedUsers;
 use App\Helpers\UserHelper;
+use App\Mail\DeletedUsers;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class DeleteUnactiveUsersTest extends TestCase
 {
     use DatabaseMigrations;
+
     /** @test */
     public function delete_user_unactive_more_than_5_years_ago()
     {
@@ -66,6 +64,4 @@ class DeleteUnactiveUsersTest extends TestCase
         $this->artisan('delete:unactiveusers');
         Mail::assertQueued(DeletedUsers::class, 1);
     }
-
-    
 }

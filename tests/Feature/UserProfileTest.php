@@ -4,16 +4,15 @@ namespace Tests\Feature;
 
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class UserProfileTest extends TestCase
 {
     use RefreshDatabase;
 
-
     public $user;
-    public function setup() :void
+
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
@@ -23,8 +22,7 @@ class UserProfileTest extends TestCase
 
         $this->signIn($superadmin);
 
-        $this->user = create('App\User', ['id'=>222]);
-
+        $this->user = create('App\User', ['id' => 222]);
 
     }
 
@@ -44,7 +42,7 @@ class UserProfileTest extends TestCase
 
         $this->withoutExceptionHandling();
         $response = $this->get('/badges/user/222');
-        $response->assertSee('Active Organiser ' . Carbon::now()->year);
+        $response->assertSee('Active Organiser '.Carbon::now()->year);
 
     }
 }

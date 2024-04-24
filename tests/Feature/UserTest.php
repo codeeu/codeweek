@@ -2,15 +2,11 @@
 
 namespace Tests\Feature;
 
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class UserTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     /** @test */
@@ -24,19 +20,15 @@ class UserTest extends TestCase
 
         $this->assertEquals($user->country->name, $country->name);
 
-
     }
 
     /** @test */
     public function a_user_should_have_right_avatar_path()
     {
 
+        $user = create('App\User', ['avatar_path' => 'avatars/foo/bar.png']);
 
-        $user = create('App\User', ["avatar_path" => "avatars/foo/bar.png"]);
-
-
-        $this->assertEquals(config("codeweek.aws_url") . "avatars/foo/bar.png", $user->avatar);
-
+        $this->assertEquals(config('codeweek.aws_url').'avatars/foo/bar.png', $user->avatar);
 
     }
 
@@ -44,12 +36,9 @@ class UserTest extends TestCase
     public function a_user_with_null_avatar_should_have_default_avatar()
     {
 
+        $user = create('App\User', ['avatar_path' => null]);
 
-        $user = create('App\User', ["avatar_path" => null]);
-
-
-        $this->assertEquals(config("codeweek.aws_url") . "avatars/default_avatar.png", $user->avatar);
-
+        $this->assertEquals(config('codeweek.aws_url').'avatars/default_avatar.png', $user->avatar);
 
     }
 
@@ -57,12 +46,9 @@ class UserTest extends TestCase
     public function a_user_should_readable_name()
     {
 
+        $user = create('App\User', ['firstname' => 'foo', 'lastname' => '', 'username' => '']);
 
-        $user = create('App\User', ["firstname" => "foo","lastname" => "","username" => ""]);
-
-
-        $this->assertEquals("foo", $user->getName());
-
+        $this->assertEquals('foo', $user->getName());
 
     }
 
@@ -70,12 +56,9 @@ class UserTest extends TestCase
     public function a_user_should_readable_name_with_first_and_lastname()
     {
 
+        $user = create('App\User', ['firstname' => 'foo', 'lastname' => 'bar', 'username' => '']);
 
-        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => ""]);
-
-
-        $this->assertEquals("foo bar", $user->getName());
-
+        $this->assertEquals('foo bar', $user->getName());
 
     }
 
@@ -83,12 +66,9 @@ class UserTest extends TestCase
     public function a_user_should_readable_name_with_username()
     {
 
+        $user = create('App\User', ['firstname' => 'foo', 'lastname' => 'bar', 'username' => 'woody']);
 
-        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => "woody"]);
-
-
-        $this->assertEquals("woody", $user->getName());
-
+        $this->assertEquals('woody', $user->getName());
 
     }
 
@@ -96,12 +76,9 @@ class UserTest extends TestCase
     public function a_user_should_readable_name_without_personal_info()
     {
 
+        $user = create('App\User', ['firstname' => '', 'lastname' => '', 'username' => '', 'email' => 'foo@bar.com']);
 
-        $user = create('App\User', ["firstname" => "","lastname" => "","username" => "", "email" => "foo@bar.com"]);
-
-
-        $this->assertEquals("foo@bar.com", $user->getName());
-
+        $this->assertEquals('foo@bar.com', $user->getName());
 
     }
 
@@ -115,14 +92,5 @@ class UserTest extends TestCase
 
         $this->assertTrue($user->ambassador);
 
-
     }
-
-
-
-
-
-
 }
-
-
