@@ -16,8 +16,8 @@ class SearchResourceTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->item = create(\App\ResourceItem::class);
-        $this->item2 = create(\App\ResourceItem::class);
+        $this->item = \App\ResourceItem::factory()->create();
+        $this->item2 = \App\ResourceItem::factory()->create();
 
     }
 
@@ -33,8 +33,8 @@ class SearchResourceTest extends TestCase
     /** @test */
     public function user_can_display_teach_resources(): void
     {
-        $teachItem = create(\App\ResourceItem::class, ['teach' => 1, 'learn' => 0]);
-        $learnItem = create(\App\ResourceItem::class, ['teach' => 0, 'learn' => 1]);
+        $teachItem = \App\ResourceItem::factory()->create(['teach' => 1, 'learn' => 0]);
+        $learnItem = \App\ResourceItem::factory()->create(['teach' => 0, 'learn' => 1]);
 
         $this->post('/resources/search', ['selectedSection' => 'teach'])
             ->assertSee($teachItem->name)
@@ -56,8 +56,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_name(): void
     {
 
-        $item = create(\App\ResourceItem::class, ['name' => 'foobar']);
-        $item2 = create(\App\ResourceItem::class, ['name' => 'rrrghrgrhrgh']);
+        $item = \App\ResourceItem::factory()->create(['name' => 'foobar']);
+        $item2 = \App\ResourceItem::factory()->create(['name' => 'rrrghrgrhrgh']);
 
         $this->post('/resources/search', ['searchInput' => 'foo'])
             ->assertSee($item->name)
@@ -85,8 +85,8 @@ class SearchResourceTest extends TestCase
     /** @test */
     public function a_user_can_search_resource_by_types(): void
     {
-        $type = create(\App\ResourceType::class, ['id' => 1]);
-        $type2 = create(\App\ResourceType::class);
+        $type = \App\ResourceType::factory()->create(['id' => 1]);
+        $type2 = \App\ResourceType::factory()->create();
 
         $this->item->types()->attach($type);
         $this->item2->types()->attach($type2);
@@ -103,8 +103,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_subject(): void
     {
 
-        $subject = create(\App\ResourceSubject::class, ['id' => 1]);
-        $subject2 = create(\App\ResourceSubject::class);
+        $subject = \App\ResourceSubject::factory()->create(['id' => 1]);
+        $subject2 = \App\ResourceSubject::factory()->create();
 
         $this->item->subjects()->attach($subject);
         $this->item2->subjects()->attach($subject2);
@@ -175,8 +175,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_types_and_language(): void
     {
 
-        $type = create(\App\ResourceType::class, ['id' => 1]);
-        $type2 = create(\App\ResourceType::class);
+        $type = \App\ResourceType::factory()->create(['id' => 1]);
+        $type2 = \App\ResourceType::factory()->create();
         $language = create(\App\ResourceLanguage::class, ['id' => 1]);
         $language2 = create(\App\ResourceLanguage::class);
 
@@ -197,9 +197,9 @@ class SearchResourceTest extends TestCase
     /** @test */
     public function no_duplicates_allowed(): void
     {
-        $type = create(\App\ResourceType::class, ['id' => 1]);
-        $type2 = create(\App\ResourceType::class);
-        $type3 = create(\App\ResourceType::class);
+        $type = \App\ResourceType::factory()->create(['id' => 1]);
+        $type2 = \App\ResourceType::factory()->create();
+        $type3 = \App\ResourceType::factory()->create();
 
         $this->item->types()->attach($type);
         $this->item->types()->attach($type2);

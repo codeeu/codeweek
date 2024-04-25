@@ -37,8 +37,8 @@ class ExcellenceWinnersTest extends TestCase
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-no', 'status' => 'APPROVED', 'participants_count' => 50, 'end_date' => Carbon::now()->year(2019)]);
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-rejected', 'status' => 'REJECTED', 'participants_count' => 5000, 'end_date' => Carbon::now()->year(2019)]);
 
-        \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-10-organisers', 'status' => 'APPROVED', 'participants_count' => 60, 'end_date' => Carbon::now()->year(2019)], 10);
-        \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-10-events-one-organiser', 'status' => 'APPROVED', 'creator_id' => 1, 'participants_count' => 20, 'end_date' => Carbon::now()->year(2019)], 20);
+        \App\Event::factory()->count(10)->create(['codeweek_for_all_participation_code' => 'cw19-10-organisers', 'status' => 'APPROVED', 'participants_count' => 60, 'end_date' => Carbon::now()->year(2019)]);
+        \App\Event::factory()->count(20)->create(['codeweek_for_all_participation_code' => 'cw19-10-events-one-organiser', 'status' => 'APPROVED', 'creator_id' => 1, 'participants_count' => 20, 'end_date' => Carbon::now()->year(2019)]);
 
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-10-3-countries', 'status' => 'APPROVED', 'country_iso' => 'FR', 'end_date' => Carbon::now()->year(2019)]);
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-10-3-countries', 'status' => 'APPROVED', 'country_iso' => 'BE', 'end_date' => Carbon::now()->year(2019)]);
@@ -48,7 +48,7 @@ class ExcellenceWinnersTest extends TestCase
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-10-2-countries', 'status' => 'REJECTED', 'country_iso' => 'LU', 'end_date' => Carbon::now()->year(2019)]);
 
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-not-reported', 'status' => 'APPROVED', 'participants_count' => null, 'end_date' => Carbon::now()->year(2019)]);
-        \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-not-reported', 'status' => 'APPROVED', 'participants_count' => null, 'end_date' => Carbon::now()->year(2019)], 20);
+        \App\Event::factory()->count(20)->create(['codeweek_for_all_participation_code' => 'cw19-not-reported', 'status' => 'APPROVED', 'participants_count' => null, 'end_date' => Carbon::now()->year(2019)]);
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-not-reported', 'status' => 'APPROVED', 'country_iso' => 'FR', 'participants_count' => null, 'end_date' => Carbon::now()->year(2019)]);
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-not-reported', 'status' => 'APPROVED', 'country_iso' => 'BE', 'participants_count' => null, 'end_date' => Carbon::now()->year(2019)]);
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-not-reported', 'status' => 'APPROVED', 'country_iso' => 'LU', 'participants_count' => null, 'end_date' => Carbon::now()->year(2019)]);
@@ -60,9 +60,9 @@ class ExcellenceWinnersTest extends TestCase
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw18-previous-year', 'status' => 'APPROVED', 'country_iso' => 'BE', 'end_date' => Carbon::now()->year(2018)]);
         \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw18-previous-year', 'status' => 'APPROVED', 'country_iso' => 'LU', 'end_date' => Carbon::now()->year(2018)]);
 
-        \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-everything', 'status' => 'APPROVED', 'participants_count' => 50, 'country_iso' => 'LU', 'end_date' => Carbon::now()->year(2019)], 10);
-        \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-everything', 'status' => 'APPROVED', 'participants_count' => 50, 'country_iso' => 'BE', 'end_date' => Carbon::now()->year(2019)], 10);
-        \App\Event::factory()->create(['codeweek_for_all_participation_code' => 'cw19-everything', 'status' => 'APPROVED', 'participants_count' => 50, 'country_iso' => 'FR', 'end_date' => Carbon::now()->year(2019)], 10);
+        \App\Event::factory()->count(10)->create(['codeweek_for_all_participation_code' => 'cw19-everything', 'status' => 'APPROVED', 'participants_count' => 50, 'country_iso' => 'LU', 'end_date' => Carbon::now()->year(2019)]);
+        \App\Event::factory()->count(10)->create(['codeweek_for_all_participation_code' => 'cw19-everything', 'status' => 'APPROVED', 'participants_count' => 50, 'country_iso' => 'BE', 'end_date' => Carbon::now()->year(2019)]);
+        \App\Event::factory()->count(10)->create(['codeweek_for_all_participation_code' => 'cw19-everything', 'status' => 'APPROVED', 'participants_count' => 50, 'country_iso' => 'FR', 'end_date' => Carbon::now()->year(2019)]);
 
     }
 

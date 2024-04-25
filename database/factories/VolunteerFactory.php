@@ -1,11 +1,22 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\Volunteer::class, function () {
-    return [
-        'user_id' => function () {
-            return factory(\App\User::class)->create()->id;
-        },
-    ];
-});
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class VolunteerFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'user_id' => function () {
+                return \App\User::factory()->create()->id;
+            },
+        ];
+    }
+}

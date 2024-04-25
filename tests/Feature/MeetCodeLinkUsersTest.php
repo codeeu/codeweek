@@ -24,8 +24,8 @@ class MeetCodeLinkUsersTest extends TestCase
         $technicalUser = ImporterHelper::getTechnicalUser('meetandcode-technical');
 
         //We got activity imported from Meet&Code
-        \App\Event::factory()->create(['creator_id' => $technicalUser->id, 'user_email' => $user->email, 'event_url' => 'https://meet-and-code.org/1'], 3);
-        \App\Event::factory()->create(['creator_id' => $technicalUser->id, 'user_email' => $user2->email, 'event_url' => 'https://meet-and-code.org/2'], 2);
+        \App\Event::factory()->count(3)->create(['creator_id' => $technicalUser->id, 'user_email' => $user->email, 'event_url' => 'https://meet-and-code.org/1']);
+        \App\Event::factory()->count(2)->create(['creator_id' => $technicalUser->id, 'user_email' => $user2->email, 'event_url' => 'https://meet-and-code.org/2']);
 
         $this->assertCount(5, $technicalUser->events);
         $this->assertCount(0, $user->events);

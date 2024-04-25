@@ -1,10 +1,21 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\ResourceSubject::class, function () {
-    return [
-        'name' => $this->faker->text(40),
-        'position' => $this->faker->numberBetween(1, 20),
-    ];
-});
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class ResourceSubjectFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => $this->faker->text(40),
+            'position' => $this->faker->numberBetween(1, 20),
+        ];
+    }
+}

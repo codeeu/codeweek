@@ -52,6 +52,7 @@ class MeetAndCodeHelper
 
     public static function updateThemeAndAudience($event)
     {
+
         if (! $event->audiences()->exists()) {
             $event->audiences()->attach(8);
         }

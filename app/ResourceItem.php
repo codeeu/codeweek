@@ -4,6 +4,7 @@ namespace App;
 
 use App\Filters\ResourceFilters;
 use Exception;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
@@ -56,6 +57,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  */
 class ResourceItem extends Model
 {
+    use HasFactory;
+
     protected $guarded = [];
 
     protected $attributes = [

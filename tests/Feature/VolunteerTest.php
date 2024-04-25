@@ -44,7 +44,7 @@ class VolunteerTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $volunteer = create(\App\Volunteer::class);
+        $volunteer = \App\Volunteer::factory()->create();
 
         $this->get('/volunteers')->assertSee($volunteer->user->lastname);
 
@@ -56,7 +56,7 @@ class VolunteerTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $volunteer = create(\App\Volunteer::class);
+        $volunteer = \App\Volunteer::factory()->create();
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 
@@ -73,7 +73,7 @@ class VolunteerTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $volunteer = create(\App\Volunteer::class);
+        $volunteer = \App\Volunteer::factory()->create();
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 

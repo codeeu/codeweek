@@ -127,7 +127,7 @@ class ReportEventTest extends TestCase
     /** @test */
     public function user_should_see_list_of_his_reportable_events(): void
     {
-        $this->signIn(User::factory()->create());
+        $this->signIn(\App\User::factory()->create());
 
         $myReportableEvent = \App\Event::factory()->create(['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->subDay()]);
         $futureEvent = \App\Event::factory()->create(['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(1)]);

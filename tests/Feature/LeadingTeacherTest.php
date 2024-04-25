@@ -49,9 +49,9 @@ class LeadingTeacherTest extends TestCase
         $city = create(\App\City::class, ['id' => 1004436363, 'city' => 'FooBarCity']);
         $level1 = create(\App\ResourceLevel::class, ['id' => 80, 'teach' => true]);
         $level2 = create(\App\ResourceLevel::class, ['id' => 85, 'teach' => true]);
-        $subject1 = create(\App\ResourceSubject::class, ['id' => 511]);
-        $subject2 = create(\App\ResourceSubject::class, ['id' => 512]);
-        $subject3 = create(\App\ResourceSubject::class, ['id' => 400]);
+        $subject1 = \App\ResourceSubject::factory()->create(['id' => 511]);
+        $subject2 = \App\ResourceSubject::factory()->create(['id' => 512]);
+        $subject3 = \App\ResourceSubject::factory()->create(['id' => 400]);
         $expertise1 = create(\App\LeadingTeacherExpertise::class, ['id' => 101]);
         $expertise2 = create(\App\LeadingTeacherExpertise::class, ['id' => 102]);
 

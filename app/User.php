@@ -326,8 +326,9 @@ class User extends Authenticatable
     /**
      * Get the path to the user's avatar.
      */
-    public function getAvatarPathAttribute(string $avatar): string
+    public function getAvatarPathAttribute(string $avatar = null): string
     {
+
         if (is_null($avatar)) {
             $avatar = 'avatars/default_avatar.png';
         }

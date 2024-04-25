@@ -62,7 +62,7 @@ class PendingEventsTest extends TestCase
 
         $this->signIn($ambassador);
 
-        $eventsPendingInCountry = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING'], 4);
+        $eventsPendingInCountry = \App\Event::factory()->count(4)->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING']);
         $eventPendingInAnotherCountry = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'PENDING', 'title' => 'foobar title 2']);
         $eventApprovedInCountry = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
 
@@ -82,8 +82,8 @@ class PendingEventsTest extends TestCase
 
         $this->signIn($superadmin);
 
-        $eventsPendingInCountry = \App\Event::factory()->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING'], 6);
-        $eventPendingInAnotherCountry = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'PENDING'], 4);
+        $eventsPendingInCountry = \App\Event::factory()->count(6)->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
+        $eventPendingInAnotherCountry = \App\Event::factory()->count(4)->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'PENDING']);
         $eventApprovedInCountry = \App\Event::factory()->create(['country_iso' => $superadmin->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
 
         $this->assertCount(10, EventHelper::getPendingEvents());
@@ -124,7 +124,7 @@ class PendingEventsTest extends TestCase
 
         $this->signIn($superadmin);
 
-        $eventsPendingInCountry = \App\Event::factory()->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING'], 10);
+        $eventsPendingInCountry = \App\Event::factory()->count(10)->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
 
         $this->assertEquals($eventsPendingInCountry[1]->id, EventHelper::getNextPendingEvent($eventsPendingInCountry[0])->id ?? null);
 
@@ -158,7 +158,7 @@ class PendingEventsTest extends TestCase
 
         $this->signIn($superadmin);
 
-        $eventsPendingInCountry = \App\Event::factory()->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING'], 10);
+        $eventsPendingInCountry = \App\Event::factory()->count(10)->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
 
         $this->assertNull(EventHelper::getNextPendingEvent($eventsPendingInCountry[9])->id ?? null);
 

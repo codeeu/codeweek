@@ -54,9 +54,9 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
-        $item->subjects()->attach(create(\App\ResourceSubject::class, [], 2));
+        $item->subjects()->attach(\App\ResourceSubject::factory()->count(2)->create());
 
         $this->assertEquals(2, count($item->fresh()->subjects));
 
@@ -69,7 +69,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->categories()->attach(create(\App\ResourceCategory::class, [], 3));
 
@@ -84,7 +84,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->levels()->attach(create(\App\ResourceLevel::class, [], 3));
 
@@ -99,9 +99,9 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
-        $item->types()->attach(create(\App\ResourceType::class, [], 4));
+        $item->types()->attach(\App\ResourceType::factory()->count(4)->create());
 
         $this->assertEquals(4, count($item->fresh()->types));
 
@@ -114,7 +114,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->programmingLanguages()->attach(create(\App\ResourceProgrammingLanguage::class, [], 5));
 
@@ -129,7 +129,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->languages()->attach(create(\App\ResourceLanguage::class, [], 7));
 
@@ -146,7 +146,7 @@ class ResourceItemTest extends TestCase
 
         $this->seed(TypeSeeder::class);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->attachTypes('Tutorial; Website; Presentation; Other; Application; Online course; Video; Game; Graphic material; Audio; Toolkit; Lesson Plan');
 
@@ -168,7 +168,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->attachCategories('Coding; Programming; Computational thinking; Robotics; Making; Tinkering; Unplugged activities; Other');
 
@@ -190,7 +190,7 @@ class ResourceItemTest extends TestCase
 
         $this->seed(ProgrammingLanguageSeeder::class);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->attachProgrammingLanguages('C++; CSS; HTML; HTML5; Java; JavaScript; Python; Raspberry Pi; Swift; Visual Programming; All targeted programming languages; Other');
 
@@ -210,7 +210,7 @@ class ResourceItemTest extends TestCase
 
         $this->seed(LevelSeeder::class);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->attachLevels('Beginner; Intermediate; Advanced;');
 
@@ -230,7 +230,7 @@ class ResourceItemTest extends TestCase
 
         $this->seed(LanguageSeeder::class);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->attachLanguages('English; French; Russian; Portuguese; Spanish; Norwegian; Slovenian; Romanian; German; Polish; Danish; Croatian; Dutch; Slovak; Czech; Greek; Italian; Swedish; Finnish; Hungarian; Turkish; Mandarin; Estonian;');
 
@@ -250,7 +250,7 @@ class ResourceItemTest extends TestCase
 
         $this->seed(LanguageSeeder::class);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->attachLanguages('All targeted languages;');
 
@@ -268,7 +268,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $this->expectException(Exception::class);
 
@@ -285,7 +285,7 @@ class ResourceItemTest extends TestCase
 
         $this->seed(LanguageSeeder::class);
 
-        $item = create(\App\ResourceItem::class);
+        $item = \App\ResourceItem::factory()->create();
 
         $item->attachLanguages('English; French; English;');
 

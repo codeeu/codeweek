@@ -21,7 +21,7 @@ class ReviewEventTest extends TestCase
         $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
 
-        $event = \App\Event::factory()->create(['country_iso' => 'FR', 'status' => 'PENDING'], 33);
+        $event = \App\Event::factory()->count(33)->create(['country_iso' => 'FR', 'status' => 'PENDING']);
 
         $this->get('/view/'.$event[30]->id.'/random')
             ->assertSee('moderate-event');

@@ -27,10 +27,10 @@ class NotifyExcellenceWinnersTest extends TestCase
         $userC = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
-        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
-        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $userA->id]);
-        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $userB->id]);
-        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $userC->id, 'notified_at' => Carbon::now()]);
+        \App\Excellence::factory()->create(['edition' => 2018, 'user_id' => $userA->id]);
+        \App\Excellence::factory()->create(['edition' => 2019, 'user_id' => $userA->id]);
+        \App\Excellence::factory()->create(['edition' => 2019, 'user_id' => $userB->id]);
+        \App\Excellence::factory()->create(['edition' => 2019, 'user_id' => $userC->id, 'notified_at' => Carbon::now()]);
 
         // We send the email
         $this->artisan('notify:winners', ['edition' => 2019]);
@@ -52,7 +52,7 @@ class NotifyExcellenceWinnersTest extends TestCase
         $userA = \App\User::factory()->create(['deleted_at' => Carbon::now()]);
 
         // A winner and a loser for specific edition
-        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
+        \App\Excellence::factory()->create(['edition' => 2018, 'user_id' => $userA->id]);
 
         // We send the email
         $this->artisan('notify:winners', ['edition' => 2018]);
@@ -75,7 +75,7 @@ class NotifyExcellenceWinnersTest extends TestCase
         $userA = \App\User::factory()->create(['receive_emails' => 0]);
 
         // A winner and a loser for specific edition
-        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
+        \App\Excellence::factory()->create(['edition' => 2018, 'user_id' => $userA->id]);
 
         // We send the email
         $this->artisan('notify:winners', ['edition' => 2018]);

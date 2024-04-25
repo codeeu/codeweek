@@ -26,9 +26,9 @@ class MapTest extends TestCase
 
         $this->withExceptionHandling();
 
-        \App\Event::factory()->create(['start_date' => Carbon::now(), 'end_date' => Carbon::now()->addDay(), 'status' => 'APPROVED', 'country_iso' => 'BE'], 7);
-        \App\Event::factory()->create(['start_date' => Carbon::now(), 'end_date' => Carbon::now()->addDay(), 'status' => 'PENDING', 'country_iso' => 'BE'], 6);
-        \App\Event::factory()->create(['start_date' => Carbon::now()->subyear(), 'status' => 'APPROVED'], 3);
+        \App\Event::factory()->count(7)->create(['start_date' => Carbon::now(), 'end_date' => Carbon::now()->addDay(), 'status' => 'APPROVED', 'country_iso' => 'BE']);
+        \App\Event::factory()->count(6)->create(['start_date' => Carbon::now(), 'end_date' => Carbon::now()->addDay(), 'status' => 'PENDING', 'country_iso' => 'BE']);
+        \App\Event::factory()->count(3)->create(['start_date' => Carbon::now()->subyear(), 'status' => 'APPROVED']);
 
         $results = $this->json('GET', '/api/event/list');
 
@@ -42,9 +42,9 @@ class MapTest extends TestCase
 
         $this->withExceptionHandling();
 
-        \App\Event::factory()->create(['start_date' => Carbon::now(), 'status' => 'APPROVED', 'country_iso' => 'BE'], 7);
-        \App\Event::factory()->create(['start_date' => Carbon::now(), 'status' => 'PENDING', 'country_iso' => 'BE'], 6);
-        \App\Event::factory()->create(['start_date' => Carbon::now()->subyear(), 'end_date' => Carbon::now()->subyear(), 'status' => 'APPROVED', 'country_iso' => 'BE'], 3);
+        \App\Event::factory()->count(7)->create(['start_date' => Carbon::now(), 'status' => 'APPROVED', 'country_iso' => 'BE']);
+        \App\Event::factory()->count(6)->create(['start_date' => Carbon::now(), 'status' => 'PENDING', 'country_iso' => 'BE']);
+        \App\Event::factory()->count(3)->create(['start_date' => Carbon::now()->subyear(), 'end_date' => Carbon::now()->subyear(), 'status' => 'APPROVED', 'country_iso' => 'BE']);
 
         $results = $this->json('GET', '/api/event/list?year='.Carbon::now()->subyear()->year);
 
@@ -56,9 +56,9 @@ class MapTest extends TestCase
     public function structure_event(): void
     {
 
-        \App\Event::factory()->create(['start_date' => Carbon::now(), 'status' => 'APPROVED', 'country_iso' => 'BE'], 7);
-        \App\Event::factory()->create(['start_date' => Carbon::now(), 'status' => 'PENDING', 'country_iso' => 'BE'], 6);
-        \App\Event::factory()->create(['start_date' => Carbon::now()->subyear(), 'status' => 'APPROVED', 'country_iso' => 'BE'], 3);
+        \App\Event::factory()->count(7)->create(['start_date' => Carbon::now(), 'status' => 'APPROVED', 'country_iso' => 'BE']);
+        \App\Event::factory()->count(6)->create(['start_date' => Carbon::now(), 'status' => 'PENDING', 'country_iso' => 'BE']);
+        \App\Event::factory()->count(3)->create(['start_date' => Carbon::now()->subyear(), 'status' => 'APPROVED', 'country_iso' => 'BE']);
 
         $result = $this->getJson('/api/event/list');
 

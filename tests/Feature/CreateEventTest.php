@@ -221,7 +221,7 @@ class CreateEventTest extends TestCase
         $this->withExceptionHandling();
         $this->signIn();
 
-        $event = make(\App\Event::class, ['title' => '-----']);
+        $event = \App\Event::factory()->make(['title' => '-----']);
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -329,7 +329,7 @@ class CreateEventTest extends TestCase
     public function publishEvent($overrides = [])
     {
         $this->withExceptionHandling()->signIn();
-        $event = make(\App\Event::class, $overrides);
+        $event = \App\Event::factory()->make($overrides);
 
         return $this->post('/events', $event->toArray());
 

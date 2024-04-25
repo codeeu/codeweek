@@ -14,7 +14,7 @@ class validAudience implements ValidationRule
     {
         foreach (explode(',', $value) as $audience_id) {
             if (is_null(Audience::firstWhere('id', $audience_id))) {
-                $fail('No Valid Audience');
+                $fail('The audience is invalid');
             }
         }
 

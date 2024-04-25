@@ -19,54 +19,55 @@ class MailingInactiveOrganizersTest extends TestCase
         $inactive = \App\User::factory()->create(['email' => 'inactive@gmail.com']);
         $inactive2 = \App\User::factory()->create(['email' => 'inactive2@gmail.com']);
 
+        \App\Event::factory()->count(5)->
         create(
-            \App\Event::class,
+
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now(),
                 'creator_id' => $active->id,
             ],
-            5
         );
 
+        \App\Event::factory()->count(2)->
         create(
-            \App\Event::class,
+
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now(),
                 'creator_id' => $active2->id,
-            ],
-            2
+            ]
+
         );
 
+        \App\Event::factory()->count(7)->
         create(
-            \App\Event::class,
+
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now()->subYear(),
                 'creator_id' => $active->id,
-            ],
-            7
+            ]
         );
 
+        \App\Event::factory()->count(4)->
         create(
-            \App\Event::class,
+
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now()->subYear(),
                 'creator_id' => $inactive->id,
             ],
-            4
         );
 
+        \App\Event::factory()->count(8)->
         create(
-            \App\Event::class,
+
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now()->subYears(2),
                 'creator_id' => $inactive2->id,
             ],
-            8
         );
 
         $inactive = ReminderHelper::getInactiveCreators(Carbon::now()->year);

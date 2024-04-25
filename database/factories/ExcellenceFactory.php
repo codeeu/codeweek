@@ -1,12 +1,23 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\Excellence::class, function () {
-    return [
-        'user_id' => function () {
-            return factory(\App\User::class)->create()->id;
-        },
-        'edition' => $this->faker->numberBetween(2018, 2021),
-    ];
-});
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class ExcellenceFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'user_id' => function () {
+                return \App\User::factory()->create()->id;
+            },
+            'edition' => $this->faker->numberBetween(2018, 2021),
+        ];
+    }
+}
