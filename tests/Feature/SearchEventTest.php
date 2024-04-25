@@ -15,7 +15,7 @@ class SearchEventTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        \App\Country::factory()->create([], 20);
+        \App\Country::factory()->count(20)->create();
 
     }
 

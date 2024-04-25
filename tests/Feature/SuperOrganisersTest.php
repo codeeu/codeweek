@@ -22,10 +22,10 @@ class SuperOrganisersTest extends TestCase
         $user2 = \App\User::factory()->create();
         $user3 = \App\User::factory()->create();
 
-        \App\Event::factory()->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 22);
-        \App\Event::factory()->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subYear()], 28);
-        \App\Event::factory()->create(['creator_id' => $user2->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 8);
-        \App\Event::factory()->create(['creator_id' => $user3->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 33);
+        \App\Event::factory()->count(22)->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()]);
+        \App\Event::factory()->count(28)->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subYear()]);
+        \App\Event::factory()->count(8)->create(['creator_id' => $user2->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()]);
+        \App\Event::factory()->count(33)->create(['creator_id' => $user3->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()]);
 
     }
 
@@ -53,11 +53,11 @@ class SuperOrganisersTest extends TestCase
         $userC = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
-        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
-        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create(\App\Excellence::class, ['edition' => Carbon::now()->subYear()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userB->id, 'type' => 'SuperOrganiser']);
-        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userC->id, 'type' => 'SuperOrganiser', 'notified_at' => \Carbon\Carbon::now()]);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->subYear()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userB->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userC->id, 'type' => 'SuperOrganiser', 'notified_at' => \Carbon\Carbon::now()]);
 
         // We send the email
         $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
@@ -87,8 +87,8 @@ class SuperOrganisersTest extends TestCase
         $userA = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
-        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
 
         $this->assertCount(1, $userA->superOrganisers->whereNull('notified_at'));
         $this->assertCount(1, $userA->excellences->whereNull('notified_at'));

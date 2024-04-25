@@ -50,7 +50,7 @@ class ParticipationTest extends TestCase
         $user = \App\User::factory()->create();
         $this->signIn($user);
 
-        $participation = create(\App\Participation::class);
+        $participation = \App\Participation::factory()->create();
         $myParticipation = \App\Participation::factory()->create(['user_id' => $user->id]);
 
         $this->get(route('certificates'))->assertSee($myParticipation->participation_url);

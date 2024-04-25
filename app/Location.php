@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -11,6 +12,7 @@ class Location extends Model
     protected $guarded = [];
 
     use SoftDeletes;
+    use HasFactory;
 
     public function user(): BelongsTo
     {

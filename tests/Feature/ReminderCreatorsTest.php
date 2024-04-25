@@ -39,8 +39,8 @@ class ReminderCreatorsTest extends TestCase
         $notifiedLately = \App\Event::factory()->create(['creator_id' => $userE->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDay(1), 'end_date' => Carbon::now()->subDay(1)]);
         $today = \App\Event::factory()->create(['creator_id' => $userF->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now(), 'end_date' => Carbon::now()->subDay(1)]);
 
-        $reportableevents = \App\Event::factory()->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)], 3);
-        $reportableevents2 = \App\Event::factory()->create(['creator_id' => $userB->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)], 3);
+        $reportableevents = \App\Event::factory()->count(3)->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevents2 = \App\Event::factory()->count(3)->create(['creator_id' => $userB->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
         $notifiedMoreThanAWeek = \App\Event::factory()->create(['creator_id' => $userD->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDays(8), 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->assertCount(3, ReminderHelper::getCreatorsWithReportableEvents());
@@ -82,7 +82,7 @@ class ReminderCreatorsTest extends TestCase
 
         $userA = \App\User::factory()->create();
 
-        $reportableevent = \App\Event::factory()->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)], 2);
+        $reportableevent = \App\Event::factory()->count(2)->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
         $this->artisan('remind:creators');
@@ -105,7 +105,7 @@ class ReminderCreatorsTest extends TestCase
 
         $userA = \App\User::factory()->create();
 
-        $reportableevent = \App\Event::factory()->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)], 20);
+        $reportableevent = \App\Event::factory()->count(20)->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->assertEquals(20, ReminderHelper::getReportableEvents()->count());
 

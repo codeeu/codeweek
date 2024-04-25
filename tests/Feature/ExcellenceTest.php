@@ -33,9 +33,9 @@ class ExcellenceTest extends TestCase
     {
         $user = \App\User::factory()->create();
 
-        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $user->id]);
-        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create(['edition' => 2018, 'user_id' => $user->id]);
+        \App\Excellence::factory()->create(['edition' => 2019, 'user_id' => $user->id]);
+        \App\Excellence::factory()->create([
             'edition' => 2019,
             'user_id' => $user->id,
             'type' => 'SuperOrganiser',
@@ -49,9 +49,9 @@ class ExcellenceTest extends TestCase
     {
         $user = \App\User::factory()->create();
 
-        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $user->id]);
-        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create(['edition' => 2018, 'user_id' => $user->id]);
+        \App\Excellence::factory()->create(['edition' => 2019, 'user_id' => $user->id]);
+        \App\Excellence::factory()->create([
             'edition' => 2019,
             'user_id' => $user->id,
             'type' => 'SuperOrganiser',
@@ -63,8 +63,8 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function should_get_all_users_with_excellence_for_specific_edition(): void
     {
-        create(\App\Excellence::class, ['edition' => 2018], 10);
-        create(\App\Excellence::class, ['edition' => 2019], 20);
+        \App\Excellence::factory()->count(10)->create(['edition' => 2018]);
+        \App\Excellence::factory()->count(20)->create(['edition' => 2019]);
 
         $filtered = Excellence::byYear(2018);
 
@@ -76,7 +76,7 @@ class ExcellenceTest extends TestCase
     {
         $user = \App\User::factory()->create();
 
-        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
+        \App\Excellence::factory()->create(['edition' => 2019, 'user_id' => $user->id]);
 
         $excellences = $user->excellences;
 
@@ -91,7 +91,7 @@ class ExcellenceTest extends TestCase
     public function winner_can_report_for_Excellence(): void
     {
         $user = \App\User::factory()->create();
-        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
+        \App\Excellence::factory()->create(['edition' => 2019, 'user_id' => $user->id]);
 
         $this->signIn($user);
 
@@ -102,7 +102,7 @@ class ExcellenceTest extends TestCase
     public function winner_can_report_for_super_organiser(): void
     {
         $user = \App\User::factory()->create();
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create([
             'edition' => 2020,
             'user_id' => $user->id,
             'type' => 'SuperOrganiser',
@@ -145,7 +145,7 @@ class ExcellenceTest extends TestCase
         $this->signIn($user);
         $name = 'Tintin et Milou';
 
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create([
             'edition' => 2018,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
@@ -162,7 +162,7 @@ class ExcellenceTest extends TestCase
         $this->signIn($user);
         $name = 'Bob et Bobette';
 
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create([
             'edition' => 2020,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
@@ -182,12 +182,12 @@ class ExcellenceTest extends TestCase
         $this->signIn($user);
         $name = null;
 
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create([
             'edition' => 2017,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
         ]);
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create([
             'edition' => 2018,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
@@ -207,7 +207,7 @@ class ExcellenceTest extends TestCase
         $this->signIn($user);
         $name = null;
 
-        create(\App\Excellence::class, [
+        \App\Excellence::factory()->create([
             'edition' => 2020,
             'user_id' => $user->id,
             'name_for_certificate' => $name,

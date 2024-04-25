@@ -53,7 +53,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedLevels
      */
-    protected function selectedLevels(string $selectedLevels): Builder
+    protected function selectedLevels(array $selectedLevels): Builder
     {
         if (count($selectedLevels) == 0) {
             return $this->builder;
@@ -70,7 +70,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedTypes
      */
-    protected function selectedTypes(string $selectedTypes): Builder
+    protected function selectedTypes(array $selectedTypes): Builder
     {
         if (count($selectedTypes) == 0) {
             return $this->builder;
@@ -87,7 +87,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedSubjects
      */
-    protected function selectedSubjects(string $selectedSubjects): Builder
+    protected function selectedSubjects(array $selectedSubjects): Builder
     {
         if (count($selectedSubjects) == 0) {
             return $this->builder;
@@ -104,7 +104,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedCategories
      */
-    protected function selectedCategories(string $selectedCategories): Builder
+    protected function selectedCategories(array $selectedCategories): Builder
     {
         if (count($selectedCategories) == 0) {
             return $this->builder;
@@ -121,7 +121,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedLanguages
      */
-    protected function selectedLanguages(string $selectedLanguages): Builder
+    protected function selectedLanguages(array $selectedLanguages): Builder
     {
 
         if (count($selectedLanguages) == 0) {
@@ -139,7 +139,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedProgrammingLanguages
      */
-    protected function selectedProgrammingLanguages(string $selectedProgrammingLanguages): Builder
+    protected function selectedProgrammingLanguages(array $selectedProgrammingLanguages): Builder
     {
         if (count($selectedProgrammingLanguages) == 0) {
             return $this->builder;

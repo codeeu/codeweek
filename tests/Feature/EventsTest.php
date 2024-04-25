@@ -20,9 +20,9 @@ class EventsTest extends TestCase
             'status' => 'APPROVED',
         ]);
 
-        $this->event->audiences()->saveMany(factory(\App\Audience::class, 3)->make());
-        $this->event->themes()->saveMany(factory(\App\Theme::class, 3)->make());
-        $this->event->tags()->saveMany(factory(\App\Tag::class, 3)->make());
+        $this->event->audiences()->saveMany(\App\Audience::factory()->count(3)->make());
+        $this->event->themes()->saveMany(\App\Theme::factory()->count(3)->make());
+        $this->event->tags()->saveMany(\App\Tag::factory()->count(3)->make());
     }
 
     /** @test */

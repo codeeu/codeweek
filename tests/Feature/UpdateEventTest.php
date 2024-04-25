@@ -92,7 +92,7 @@ class UpdateEventTest extends TestCase
 
         $this->signIn();
 
-        $event = make(\App\Event::class, ['creator_id' => auth()->id()]);
+        $event = \App\Event::factory()->make(['creator_id' => auth()->id()]);
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 

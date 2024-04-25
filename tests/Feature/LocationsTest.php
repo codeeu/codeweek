@@ -26,7 +26,7 @@ class LocationsTest extends TestCase
 
         $user = \App\User::factory()->create();
 
-        create(\App\Location::class, ['user_id' => $user->id], 3);
+        \App\Location::factory()->count(3)->create(['user_id' => $user->id]);
 
         $this->assertCount(3, $user->locations);
 
@@ -58,8 +58,8 @@ class LocationsTest extends TestCase
 
         $user = \App\User::factory()->create();
 
-        \App\Event::factory()->create(['status' => 'APPROVED', 'creator_id' => $user->id, 'latitude' => '11.123456789', 'longitude' => '22.987654321'], 3);
-        $sameLocationFromOtherUsers = \App\Event::factory()->create(['status' => 'APPROVED', 'latitude' => '11.123456789', 'longitude' => '22.987654321'], 10);
+        \App\Event::factory()->count(3)->create(['status' => 'APPROVED', 'creator_id' => $user->id, 'latitude' => '11.123456789', 'longitude' => '22.987654321']);
+        $sameLocationFromOtherUsers = \App\Event::factory()->count(10)->create(['status' => 'APPROVED', 'latitude' => '11.123456789', 'longitude' => '22.987654321']);
 
         $this->assertDatabaseCount(Event::class, 13);
 
@@ -78,7 +78,7 @@ class LocationsTest extends TestCase
 
         $user = \App\User::factory()->create();
 
-        \App\Event::factory()->create(['creator_id' => $user->id, 'latitude' => '11.11', 'longitude' => '22.22', 'status' => 'APPROVED'], 30);
+        \App\Event::factory()->count(30)->create(['creator_id' => $user->id, 'latitude' => '11.11', 'longitude' => '22.22', 'status' => 'APPROVED']);
 
         $this->artisan('location:extraction');
 
@@ -95,7 +95,7 @@ class LocationsTest extends TestCase
 
         $user = \App\User::factory()->create();
 
-        create(\App\Location::class, ['user_id' => $user->id], 3);
+        \App\Location::factory()->count(3)->create(['user_id' => $user->id]);
 
         $this->assertCount(3, $user->locations);
 
@@ -120,7 +120,7 @@ class LocationsTest extends TestCase
 
         $user = \App\User::factory()->create();
 
-        create(\App\Location::class, ['user_id' => $user->id], 3);
+        \App\Location::factory()->count(3)->create(['user_id' => $user->id]);
 
         $this->signIn($user);
 
@@ -137,7 +137,7 @@ class LocationsTest extends TestCase
 
         $user = \App\User::factory()->create();
 
-        create(\App\Location::class, ['user_id' => $user->id], 3);
+        \App\Location::factory()->count(3)->create(['user_id' => $user->id]);
 
         $this->signIn($user);
 
