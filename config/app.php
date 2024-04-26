@@ -11,6 +11,6 @@ return [
         'Feeds' => willvincent\Feeds\Facades\FeedsFacade::class,
         'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
         'Image' => Intervention\Image\Facades\Image::class,
-    ])->toArray(),
+    ])->toArray()
 
 ];

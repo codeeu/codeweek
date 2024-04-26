@@ -40,8 +40,8 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->alias([
             'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
-            'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+            'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,
+            'role' => \Spatie\Permission\Middleware\RoleMiddleware::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

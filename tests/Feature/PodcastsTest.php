@@ -4,14 +4,14 @@ namespace Tests\Feature;
 
 use App\PodcastGuest;
 use App\PodcastResource;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Carbon;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class PodcastsTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     #[Test]
     public function it_should_list_active_podcasts_in_rss(): void

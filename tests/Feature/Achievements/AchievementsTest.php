@@ -5,14 +5,14 @@ namespace Tests\Feature\Achievements\Achievements;
 use App\Achievements\Achievement;
 use App\User;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Storage;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class AchievementsTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     #[Test]
     public function a_user_can_be_assigned_any_achievement_badge(): void

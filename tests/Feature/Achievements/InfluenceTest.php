@@ -4,13 +4,13 @@ namespace Tests\Feature\Achievements\Achievements;
 
 use App\Event;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class InfluenceTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     #[Test]
     public function user_influence_should_be_counted(): void

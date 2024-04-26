@@ -636,9 +636,9 @@ Route::view('/online-courses', 'online-courses')->name('online-courses');
 Route::get('mailing/test', function () {
 
     //$email = ['alainvd@gmail.com'];
-    $user = User::where('id', '19588')->first();
+    //$user = User::where('id', '19588')->first();
 
-    return new App\Mail\UserCreated($user);
+    //return new App\Mail\UserCreated($user);
 });
 
 Route::get('/hackathons', [HackathonsController::class, 'index'])->name('hackathons');
