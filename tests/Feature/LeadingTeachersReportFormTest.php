@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Mail;
 use Livewire;
 use Tests\TestCase;
 
-class LeadingTeachersReportFormTest extends TestCase
+final class LeadingTeachersReportFormTest extends TestCase
 {
     use RefreshDatabase;
 

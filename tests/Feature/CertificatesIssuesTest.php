@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class CertificatesIssuesTest extends TestCase
+final class CertificatesIssuesTest extends TestCase
 {
     use DatabaseMigrations;
 

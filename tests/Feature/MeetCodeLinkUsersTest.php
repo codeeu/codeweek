@@ -7,7 +7,7 @@ use App\Helpers\ImporterHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class MeetCodeLinkUsersTest extends TestCase
+final class MeetCodeLinkUsersTest extends TestCase
 {
     use DatabaseMigrations;
 

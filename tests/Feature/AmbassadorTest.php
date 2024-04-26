@@ -10,7 +10,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Torann\GeoIP\Facades\GeoIP;
 
-class AmbassadorTest extends TestCase
+final class AmbassadorTest extends TestCase
 {
     use DatabaseMigrations;
 

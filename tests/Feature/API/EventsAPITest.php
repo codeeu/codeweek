@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
-class EventsAPITest extends TestCase
+final class EventsAPITest extends TestCase
 {
     use DatabaseMigrations;
 

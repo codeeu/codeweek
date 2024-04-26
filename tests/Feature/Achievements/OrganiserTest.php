@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class OrganiserTest extends TestCase
+final class OrganiserTest extends TestCase
 {
     use RefreshDatabase;
 

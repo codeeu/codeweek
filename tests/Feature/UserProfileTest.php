@@ -7,7 +7,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class UserProfileTest extends TestCase
+final class UserProfileTest extends TestCase
 {
     use RefreshDatabase;
 

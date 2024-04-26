@@ -7,7 +7,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class OnlineEventsWorkflowTest extends TestCase
+final class OnlineEventsWorkflowTest extends TestCase
 {
     use DatabaseMigrations;
 

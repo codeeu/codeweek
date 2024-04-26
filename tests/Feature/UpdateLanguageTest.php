@@ -7,7 +7,7 @@ use App\Helpers\MeetAndCodeHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class UpdateLanguageTest extends TestCase
+final class UpdateLanguageTest extends TestCase
 {
     use DatabaseMigrations;
 

@@ -7,7 +7,7 @@ use App\Excellence;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class ExcellenceTest extends TestCase
+final class ExcellenceTest extends TestCase
 {
     use DatabaseMigrations;
 

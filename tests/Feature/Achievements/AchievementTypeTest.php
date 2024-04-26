@@ -7,7 +7,7 @@ use App\Achievements\Types\AchievementType;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class AchievementTypeTest extends TestCase
+final class AchievementTypeTest extends TestCase
 {
     use RefreshDatabase;
 

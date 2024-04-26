@@ -7,7 +7,7 @@ use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class BadgesTest extends TestCase
+final class BadgesTest extends TestCase
 {
     use DatabaseMigrations;
 

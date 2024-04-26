@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Carbon;
 use Tests\TestCase;
 
-class ExcellenceWinnersTest extends TestCase
+final class ExcellenceWinnersTest extends TestCase
 {
     use DatabaseMigrations;
 

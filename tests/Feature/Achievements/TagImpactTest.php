@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class TagImpactTest extends TestCase
+final class TagImpactTest extends TestCase
 {
     use RefreshDatabase;
 

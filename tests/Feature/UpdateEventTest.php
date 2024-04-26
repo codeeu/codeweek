@@ -7,7 +7,7 @@ use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class UpdateEventTest extends TestCase
+final class UpdateEventTest extends TestCase
 {
     use DatabaseMigrations;
 

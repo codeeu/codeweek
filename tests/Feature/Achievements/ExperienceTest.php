@@ -10,7 +10,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Event;
 use Tests\TestCase;
 
-class ExperienceTest extends TestCase
+final class ExperienceTest extends TestCase
 {
     use RefreshDatabase;
 

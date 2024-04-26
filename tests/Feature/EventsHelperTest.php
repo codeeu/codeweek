@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class EventsHelperTest extends TestCase
+final class EventsHelperTest extends TestCase
 {
     /*
      * This tests have to use MySQL because of date functions.

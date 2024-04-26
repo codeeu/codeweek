@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class SearchResourceTest extends TestCase
+final class SearchResourceTest extends TestCase
 {
     use DatabaseMigrations;
 

@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class RouteProtectionTest extends TestCase
+final class RouteProtectionTest extends TestCase
 {
     use DatabaseMigrations;
 

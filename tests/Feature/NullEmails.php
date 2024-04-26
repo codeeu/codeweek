@@ -11,7 +11,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class NullEmails extends TestCase
+final class NullEmails extends TestCase
 {
     use DatabaseMigrations;
 

@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class SearchEventTest extends TestCase
+final class SearchEventTest extends TestCase
 {
     use DatabaseMigrations;
 

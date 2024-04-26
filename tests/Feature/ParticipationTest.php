@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class ParticipationTest extends TestCase
+final class ParticipationTest extends TestCase
 {
     use DatabaseMigrations;
 

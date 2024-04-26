@@ -10,7 +10,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class NotifyExcellenceWinnersTest extends TestCase
+final class NotifyExcellenceWinnersTest extends TestCase
 {
     use DatabaseMigrations;
 
