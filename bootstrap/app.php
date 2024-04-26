@@ -5,7 +5,14 @@ use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 
 return Application::configure(basePath: dirname(__DIR__))
-    ->withProviders()
+    ->withProviders([
+        \Intervention\Image\ImageServiceProvider::class,
+        \Torann\GeoIP\GeoIPServiceProvider::class,
+        \MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
+        \willvincent\Feeds\FeedsServiceProvider::class,
+        \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        \SocialiteProviders\Manager\ServiceProvider::class,
+    ])
     ->withRouting(
         web: __DIR__.'/../routes/web.php',
         // api: __DIR__.'/../routes/api.php',
