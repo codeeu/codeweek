@@ -2,15 +2,11 @@
 
 namespace App\Nova;
 
-use Laravel\Nova\Fields\BelongsTo;
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\HasMany;
-use Laravel\Nova\Fields\HasOne;
-use Laravel\Nova\Fields\ID;
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\Password;
+use Laravel\Nova\Fields\Text;
 
 class User extends Resource
 {
@@ -19,7 +15,7 @@ class User extends Resource
      *
      * @var string
      */
-    public static $model = 'App\\User';
+    public static $model = \App\User::class;
 
     //public static $title = 'email';
 
@@ -44,18 +40,14 @@ class User extends Resource
 
     /**
      * Get the fields displayed by the resource.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return array
      */
-    public function fields(Request $request)
+    public function fields(Request $request): array
     {
         return [
 
-
             Boolean::make('ambassador'),
 
-            Boolean::make('Receive Email Notifications','receive_emails')
+            Boolean::make('Receive Email Notifications', 'receive_emails')
                 ->hideFromIndex(),
 
             Text::make('Email', 'email')
@@ -81,28 +73,21 @@ class User extends Resource
                 ->creationRules('required', 'string', 'min:6')
                 ->updateRules('nullable', 'string', 'min:6'),
 
-
         ];
     }
 
     /**
      * Get the cards available for the request.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return array
      */
-    public function cards(Request $request)
+    public function cards(Request $request): array
     {
         return [];
     }
 
     /**
      * Get the filters available for the resource.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return array
      */
-    public function filters(Request $request)
+    public function filters(Request $request): array
     {
         return [
             new Filters\UserStatus,
@@ -111,22 +96,16 @@ class User extends Resource
 
     /**
      * Get the lenses available for the resource.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return array
      */
-    public function lenses(Request $request)
+    public function lenses(Request $request): array
     {
         return [];
     }
 
     /**
      * Get the actions available for the resource.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @return array
      */
-    public function actions(Request $request)
+    public function actions(Request $request): array
     {
         return [];
     }

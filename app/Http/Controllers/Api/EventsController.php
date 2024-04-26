@@ -5,14 +5,12 @@ namespace App\Http\Controllers\Api;
 use App\Certificate;
 use App\Event;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\Event as EventResource;
 use App\Http\Transformers\EventTransformer;
 use App\Importer;
-use App\Importers\Eeducation;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use App\Http\Resources\Event as EventResource;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Log;
 
 class EventsController extends Controller
 {
@@ -20,7 +18,6 @@ class EventsController extends Controller
 
     /**
      * EventController constructor.
-     * @param $eventTransformer
      */
     public function __construct(EventTransformer $eventTransformer)
     {
@@ -40,8 +37,8 @@ class EventsController extends Controller
             ? $request->input('year')
             : Carbon::now()->year;
 
-        if (Cache::has('events' . $year)) {
-            $events = Cache::get('events' . $year);
+        if (Cache::has('events'.$year)) {
+            $events = Cache::get('events'.$year);
         } else {
             $events = Event::getByYear($year);
 
@@ -51,12 +48,12 @@ class EventsController extends Controller
 
             if ($year == Carbon::now()->year) {
                 Cache::add(
-                    'events' . $year,
+                    'events'.$year,
                     $events,
                     300
                 );
             } else {
-                Cache::forever('events' . $year, $events);
+                Cache::forever('events'.$year, $events);
             }
         }
 
@@ -87,6 +84,7 @@ class EventsController extends Controller
 
         $event = Event::where('id', $event_id)->first();
         $events = $event->getClosest();
+
         return $events;
 
         //return new EventResource($event);
@@ -123,7 +121,7 @@ class EventsController extends Controller
             'long1' => 'required|numeric',
             'lat2' => 'required|numeric',
             'long2' => 'required|numeric',
-            'year' => 'nullable|sometimes|numeric'
+            'year' => 'nullable|sometimes|numeric',
         ]);
 
         $lat1 = $validated['lat1'];
@@ -136,7 +134,7 @@ class EventsController extends Controller
         }
 
         if (isset($validated['year'])) {
-            $year = (int)$validated['year'];
+            $year = (int) $validated['year'];
         } else {
             $year = Carbon::now()->year;
         }

@@ -17,6 +17,6 @@ return [
     'reset' => 'Salasanasi on nollattu!',
     'sent' => 'Olemme lähettäneet sähköpostitse salasanan nollauslinkin!',
     'token' => 'Salasanan nollauslinkki on vanhentunut.',
-    'user' => "Käyttäjää ei löydy kyseisellä sähköpostiosoitteella.",
+    'user' => 'Käyttäjää ei löydy kyseisellä sähköpostiosoitteella.',
 
 ];

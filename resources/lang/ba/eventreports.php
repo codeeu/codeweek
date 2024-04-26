@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Nema još događaja o kojima treba izvještavati.',
     'report' => 'Dolje navedeni događaji su otpočeli ili skoro završeni. Popunite par brojeva za
     statističke svrhe za događaj i preuzmite svoj učesnički certifikat Sedmice kodiranja. Vi
-    ćete dobiti jedan certifikat po događaju.'
+    ćete dobiti jedan certifikat po događaju.',
 ];

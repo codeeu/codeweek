@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Ambasadori Europskog tjedna programiranja',
-    'your_current_country'=>'Vaša trenutačna zemlja',
-    'visit_the'=> 'Posjeti',
-    'local_facebook_page'=>'lokalnu Facebook stranicu',
-    'local_website'=>'Lokalno web-mjesto',
-    'ambassadors'=>'Ambasadori',
-    'no_ambassadors'=>'Još nema ambasadora',
-    'countries_with_ambassadors'=>'Zemlje s ambasadorima',
-    'why_dont_you_volunteer'=>'Zašto ne biste volontirali?'
+    'your_current_country' => 'Vaša trenutačna zemlja',
+    'visit_the' => 'Posjeti',
+    'local_facebook_page' => 'lokalnu Facebook stranicu',
+    'local_website' => 'Lokalno web-mjesto',
+    'ambassadors' => 'Ambasadori',
+    'no_ambassadors' => 'Još nema ambasadora',
+    'countries_with_ambassadors' => 'Zemlje s ambasadorima',
+    'why_dont_you_volunteer' => 'Zašto ne biste volontirali?',
 
 ];

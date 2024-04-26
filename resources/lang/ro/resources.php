@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Cum să organizezi o activitate?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Rusă',
-            'Norwegian'=>'Norvegiană',
-            'Mandarin'=>'Mandarină',
-            'Japanese'=>'Japoneză',
-            'All targeted languages' => 'Toate limbile vizate'
+            'Russian' => 'Rusă',
+            'Norwegian' => 'Norvegiană',
+            'Mandarin' => 'Mandarină',
+            'Japanese' => 'Japoneză',
+            'All targeted languages' => 'Toate limbile vizate',
         ],
         'levels' => [
             'Beginner' => 'Începător',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Învățământ gimnazial (12-16)',
             'Upper secondary school (16-18)' => 'Învățământ liceal (16-18)',
             'Higher Education' => 'Învățământul superior',
-            'Other' => 'Altele'
+            'Other' => 'Altele',
         ],
         'subjects' => [
             'Art' => 'Artă',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fizică',
             'Coding' => 'Programare',
             'Special Education Needs' => 'Nevoi speciale pentru învățământ',
-            'Other' => 'Altele'
+            'Other' => 'Altele',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Set de instrumente',
             'Other' => 'Altele',
             'Lesson Plan' => 'Plan de lecție',
-            'Guide' => 'Ghid'
+            'Guide' => 'Ghid',
         ],
         'categories' => [
             'Coding' => 'Programare',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Elaborare',
             'Tinkering' => 'Ajustare',
             'Unplugged Activities' => 'Activități fără calculator',
-            'Other' => 'Altele'
-        ]
-    ]
+            'Other' => 'Altele',
+        ],
+    ],
 
 ];

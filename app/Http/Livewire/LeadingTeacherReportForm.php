@@ -10,10 +10,12 @@ use Livewire\Component;
 
 class LeadingTeacherReportForm extends Component
 {
-
     public $action_title;
+
     public $action_type;
+
     public $action_date;
+
     public $action_comment;
 
     public function mount()
@@ -39,13 +41,12 @@ class LeadingTeacherReportForm extends Component
 
         $this->validate();
 
-
         $action = LeadingTeacherAction::create([
-            "title" => $this->action_title,
-            "type" => $this->action_type,
-            "comment" => $this->action_comment,
-            "completion_date" => $this->action_date,
-            "user_id" => auth()->user()->id
+            'title' => $this->action_title,
+            'type' => $this->action_type,
+            'comment' => $this->action_comment,
+            'completion_date' => $this->action_date,
+            'user_id' => auth()->user()->id,
         ]);
 
         //Get Leading Teachers Admin

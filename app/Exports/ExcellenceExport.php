@@ -8,7 +8,6 @@ use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 
-
 class ExcellenceExport implements FromCollection, WithHeadings
 {
     use Exportable;
@@ -16,6 +15,7 @@ class ExcellenceExport implements FromCollection, WithHeadings
     public function collection()
     {
         $results = ExcellenceWinnersHelper::query(Carbon::now()->year(2021), true);
+
         return $results;
     }
 
@@ -30,7 +30,7 @@ class ExcellenceExport implements FromCollection, WithHeadings
             'Reporting Percentage',
             'Super Winner',
             'Initiator Email',
-            'Countries detail'
+            'Countries detail',
 
         ];
     }

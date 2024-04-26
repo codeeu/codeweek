@@ -22,8 +22,7 @@ class EventPolicy
     public function approve(User $user, Event $event)
     {
 
-//        Log::info("can approve ?" . $user->hasRole('super admin'));
-
+        //        Log::info("can approve ?" . $user->hasRole('super admin'));
 
         if ($user->hasRole('ambassador')) {
             return $event->country_iso === $user->country_iso;
@@ -32,18 +31,16 @@ class EventPolicy
         return false;
     }
 
-
     public function report(User $user, Event $event)
     {
 
-
-        if ($event->status !== "APPROVED") {
+        if ($event->status !== 'APPROVED') {
             return false;
         }
 
-        if (!Carbon::parse($event->start_date)->isPast()) {
+        if (! Carbon::parse($event->start_date)->isPast()) {
             return false;
-        };
+        }
 
         if ($user->email === $event->owner->email) {
             return true;
@@ -52,16 +49,14 @@ class EventPolicy
         return false;
     }
 
-    public function view(User $user, Event $event)
+    public function view(User $user, Event $event): bool
     {
 
-        if(!is_null($event->owner)){
+        if (! is_null($event->owner)) {
             Log::info("Trying to view event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
         }
 
-
-
-        if ($event->status == "APPROVED") {
+        if ($event->status == 'APPROVED') {
             return true;
         }
 
@@ -69,11 +64,9 @@ class EventPolicy
             return true;
         }
 
-
         if ($user->hasRole('ambassador')) {
             return $event->country_iso === $user->country_iso;
         }
-
 
         return false;
     }
@@ -81,32 +74,35 @@ class EventPolicy
     public function edit(User $user, Event $event)
     {
 
-
-
         if ($user->hasRole('ambassador')) {
-            if ($event->country_iso === $user->country_iso) return true;
+            if ($event->country_iso === $user->country_iso) {
+                return true;
+            }
         }
 
-        if (!is_null($event->reported_at)) return false;
+        if (! is_null($event->reported_at)) {
+            return false;
+        }
 
         if ($user->email === $event->owner->email) {
             return true;
         }
 
-
         return false;
     }
 
-    public function update(User $user, Event $event)
+    public function update(User $user, Event $event): bool
     {
-        return $this->edit($user,$event);
+        return $this->edit($user, $event);
     }
 
-    public function delete(User $user, Event $event)
+    public function delete(User $user, Event $event): bool
     {
 
         if ($user->hasRole('ambassador')) {
-            if ($event->country_iso === $user->country_iso) return true;
+            if ($event->country_iso === $user->country_iso) {
+                return true;
+            }
         }
 
         if ($user->email === $event->owner->email) {
@@ -120,7 +116,9 @@ class EventPolicy
     {
 
         if ($user->hasRole('ambassador')) {
-            if ($event->country_iso === $user->country_iso) return true;
+            if ($event->country_iso === $user->country_iso) {
+                return true;
+            }
         }
 
         return false;
@@ -131,6 +129,4 @@ class EventPolicy
 
         return false;
     }
-
-
 }

@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Comment organiser une activité?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Russe',
-            'Norwegian'=>'Norvégien',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japonais',
-            'All targeted languages' => 'Toutes les langues cibles'
+            'Russian' => 'Russe',
+            'Norwegian' => 'Norvégien',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japonais',
+            'All targeted languages' => 'Toutes les langues cibles',
         ],
         'levels' => [
             'Beginner' => 'Débutant',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'École secondaire de 1er cycle (12-16)',
             'Upper secondary school (16-18)' => 'École secondaire de 2e cycle (16-18)',
             'Higher Education' => 'Enseignement supérieur',
-            'Other' => 'Autre'
+            'Other' => 'Autre',
         ],
         'subjects' => [
             'Art' => 'Art',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Physique',
             'Coding' => 'Codage',
             'Special Education Needs' => 'Besoins éducatifs spéciaux',
-            'Other' => 'Autre'
+            'Other' => 'Autre',
         ],
         'types' => [
             'Tutorial' => 'Tutoriel',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Boîte à outils',
             'Other' => 'Autre',
             'Lesson Plan' => 'Plan de cours',
-            'Guide' => 'Guide'
+            'Guide' => 'Guide',
         ],
         'categories' => [
             'Coding' => 'Codage',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Fabrication',
             'Tinkering' => 'Bricolage',
             'Unplugged Activities' => 'Activités non connectées',
-            'Other' => 'Autre'
-        ]
-    ]
+            'Other' => 'Autre',
+        ],
+    ],
 
 ];

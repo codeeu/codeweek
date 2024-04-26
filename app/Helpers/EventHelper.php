@@ -4,9 +4,9 @@ namespace App\Helpers;
 
 use App\Country;
 use App\Event;
+use App\User;
 use Arr;
 use Carbon\Carbon;
-use App\User;
 use DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
@@ -79,7 +79,6 @@ class EventHelper
         return $events;
     }
 
-
     private static function getPendingEventsForCountry($country)
     {
 
@@ -133,7 +132,6 @@ class EventHelper
             return self::getPendingEventsCountForCountry($country);
         }
 
-
     }
 
     public static function getNextPendingEvent(Event $event, ?string $country = null)
@@ -148,18 +146,16 @@ class EventHelper
                 ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
                 ->where('id', '<>', $event->id)->limit(1)->first();
 
-
         }
 
     }
-
 
     public static function getOnlineEvents()
     {
         $events = Event::where([
             'activity_type' => 'open-online',
             'status' => 'APPROVED',
-            'highlighted_status' => 'FEATURED'
+            'highlighted_status' => 'FEATURED',
         ])
             ->where('start_date', '>=', \Carbon\Carbon::now()->subDays(15))->where('end_date', '>=', \Illuminate\Support\Carbon::now())
 //            ->where('start_date', '>=', Carbon::now()->subDays(30))
@@ -183,7 +179,7 @@ class EventHelper
             'longitude' => number_format($country->longitude, 6),
             'latitude' => number_format($country->latitude, 6),
             'relocated' => false,
-            ['location', '<>', 'online']
+            ['location', '<>', 'online'],
         ])
             ->orderBy('created_at', 'desc')
             ->limit(30)
@@ -195,8 +191,9 @@ class EventHelper
     public static function trimGeoposition($latitude, $longitude, $precision = 2)
     {
 
-        $result = round($latitude, $precision, PHP_ROUND_HALF_DOWN) . "," . round($longitude, $precision, PHP_ROUND_HALF_DOWN);
+        $result = round($latitude, $precision, PHP_ROUND_HALF_DOWN).','.round($longitude, $precision, PHP_ROUND_HALF_DOWN);
         Log::info($result);
+
         return $result;
     }
 
@@ -207,63 +204,62 @@ class EventHelper
             ->join('users', 'events.creator_id', '=', 'users.id')
             ->whereNull('users.email');
 
-//        dd($query->toSql());
+        //        dd($query->toSql());
         $records = $query->get()->toArray();
 
-//        dd($records);
+        //        dd($records);
         return Arr::pluck($records, 'user_email');
-
 
     }
 
-//    public static function getActivitiesWithUsersHavingNullEmail()
-//    {
-//
-//        $query = DB::table('events')
-//            ->join('users', 'events.creator_id', '=', 'users.id')
-//            ->whereNull('users.email')
-//            ->select(['events.id']);
-//
-////        dd($query->toSql());
-//        return $query->get();
-//    }
+    //    public static function getActivitiesWithUsersHavingNullEmail()
+    //    {
+    //
+    //        $query = DB::table('events')
+    //            ->join('users', 'events.creator_id', '=', 'users.id')
+    //            ->whereNull('users.email')
+    //            ->select(['events.id']);
+    //
+    ////        dd($query->toSql());
+    //        return $query->get();
+    //    }
 
-//    public static function reassignUser($activity_id)
-//    {
-//        Log::info('Activity with null email user: ' . $activity_id);
-//        //Get user email
-//        $event = Event::withTrashed()->where('id', '=', $activity_id)->first();
-//        $email = $event->user_email;
-//
-//
-//        //Deactivate all users with the email
-//        DB::table('users')->where('email', $email)->delete();
-//
-//        $user = User::withTrashed()->where('email', $email)
-//            ->orderByDesc('created_at')
-//            ->firstOrCreate(
-//                [
-//                    'firstname' => 'John',
-//                    'lastname' => 'Doe',
-//                    'username' => 'John Doe',
-//                    'password' => bcrypt(Str::random()),
-//                    'email_display' => $email,
-//                    'email' => $email
-//                ]
-//            );
-//
-//        $user->restore();
-//
-//        Log::info('Assigning user: ' . $user->id);
-//
-//        // Link activity to active user
-//        DB::table('events')->where('id', $activity_id)->update(['creator_id' => $user->id]);
-//
-//
-//    }
+    //    public static function reassignUser($activity_id)
+    //    {
+    //        Log::info('Activity with null email user: ' . $activity_id);
+    //        //Get user email
+    //        $event = Event::withTrashed()->where('id', '=', $activity_id)->first();
+    //        $email = $event->user_email;
+    //
+    //
+    //        //Deactivate all users with the email
+    //        DB::table('users')->where('email', $email)->delete();
+    //
+    //        $user = User::withTrashed()->where('email', $email)
+    //            ->orderByDesc('created_at')
+    //            ->firstOrCreate(
+    //                [
+    //                    'firstname' => 'John',
+    //                    'lastname' => 'Doe',
+    //                    'username' => 'John Doe',
+    //                    'password' => bcrypt(Str::random()),
+    //                    'email_display' => $email,
+    //                    'email' => $email
+    //                ]
+    //            );
+    //
+    //        $user->restore();
+    //
+    //        Log::info('Assigning user: ' . $user->id);
+    //
+    //        // Link activity to active user
+    //        DB::table('events')->where('id', $activity_id)->update(['creator_id' => $user->id]);
+    //
+    //
+    //    }
 
     public static function reassignActivities(User $user)
     {
-        Event::withTrashed()->where('user_email','=', $user->email)->update(['creator_id'=>$user->id]);
+        Event::withTrashed()->where('user_email', '=', $user->email)->update(['creator_id' => $user->id]);
     }
 }

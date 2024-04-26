@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Api\Resource;
 
+use App\Http\Controllers\Controller;
 use App\ResourceLevel;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class LevelController extends Controller
 {
@@ -31,13 +31,12 @@ class LevelController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         request()->validate([
-            'label' => ['required']
+            'label' => ['required'],
         ]);
 
         return ResourceLevel::create($request->toArray());
@@ -46,7 +45,6 @@ class LevelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ResourceLevel  $resourceLevel
      * @return \Illuminate\Http\Response
      */
     public function show(ResourceLevel $resourceLevel)
@@ -57,7 +55,6 @@ class LevelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ResourceLevel  $resourceLevel
      * @return \Illuminate\Http\Response
      */
     public function edit(ResourceLevel $resourceLevel)
@@ -68,8 +65,6 @@ class LevelController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ResourceLevel  $resourceLevel
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, ResourceLevel $resourceLevel)
@@ -80,7 +75,6 @@ class LevelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ResourceLevel  $resourceLevel
      * @return \Illuminate\Http\Response
      */
     public function destroy(ResourceLevel $resourceLevel)

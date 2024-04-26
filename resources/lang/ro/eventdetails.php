@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 return [
 
@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Organizat de: ',
+    'organised_by' => 'Organizat de: ',
     'contact_email' => 'E-mail de contact: ',
     'happening_at' => 'Are loc la: ',
     'from' => 'De la ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Clic pentru a trimite unui prieten pe e-mail',
         'subject' => 'Uitați-vă la acest eveniment minunat de programare',
         'body_1' => 'Bună, iată un ',
-        'body_2' => 'eveniment la '
+        'body_2' => 'eveniment la ',
     ],
     'edit' => 'Editare eveniment',
     'note' => 'NOTĂ: ',
     'pending_warning' => 'Acest eveniment este încă revizuit de ',
     'pending_link' => 'moderatori',
-    'nearby_upcoming_events' => 'Evenimente viitoare în apropiere:'
+    'nearby_upcoming_events' => 'Evenimente viitoare în apropiere:',
 ];

@@ -25,27 +25,25 @@ return [
         'label' => 'Teilnehmerzählung',
     ],
     'average_participant_age' => [
-        'label'=>'Durchschnittliches Alter der Teilnehmerinnen und Teilnehmer',
+        'label' => 'Durchschnittliches Alter der Teilnehmerinnen und Teilnehmer',
     ],
     'percentage_of_females' => [
         'label' => 'Frauenanteil',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => '„Code Week für alle“-Teilnehmercode',
-        'help' => 'Sie können hier Ihren „Code Week für alle“-Challenge-Code eingeben, wenn Sie einen haben. Wenn Sie nicht teilnehmen, ignorieren Sie dieses Feld einfach.'
+        'help' => 'Sie können hier Ihren „Code Week für alle“-Challenge-Code eingeben, wenn Sie einen haben. Wenn Sie nicht teilnehmen, ignorieren Sie dieses Feld einfach.',
     ],
     'name_for_certificate' => [
         'label' => 'Name für das Zertifikat',
-        'help' => 'In den Namen des Veranstalters ändern, dem während der Code Week ein Teilnahmezertifikat ausgestellt wird. Verwenden Sie ausschließlich ASCII-Buchstaben (Lateinisch). Buchstaben mit Akzenten, Umlauten und anderen Sonderzeichen werden nicht unterstützt.'
+        'help' => 'In den Namen des Veranstalters ändern, dem während der Code Week ein Teilnahmezertifikat ausgestellt wird. Verwenden Sie ausschließlich ASCII-Buchstaben (Lateinisch). Buchstaben mit Akzenten, Umlauten und anderen Sonderzeichen werden nicht unterstützt.',
     ],
     'submit' => 'Veranstaltungsbericht übermitteln',
-    'thanks_page'=>[
-        'title'=>'Vielen Dank für den Bericht über Ihre Veranstaltung!',
-        'certificate_ready'=>'Ihr Zertifikat ist verfügbar.',
-        'download_button'=>'Zum Herunterladen hier klicken.',
-        'back_events'=>'Zurück zur Veranstaltung'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Vielen Dank für den Bericht über Ihre Veranstaltung!',
+        'certificate_ready' => 'Ihr Zertifikat ist verfügbar.',
+        'download_button' => 'Zum Herunterladen hier klicken.',
+        'back_events' => 'Zurück zur Veranstaltung',
+    ],
 
 ];

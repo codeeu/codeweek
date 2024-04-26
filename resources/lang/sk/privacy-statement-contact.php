@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Toto vyhlásenie o ochrane osobných údajov obsahuje informácie o spracúvaní a ochrane vašich osobných údajov.',
     'processing-operation' => [
         'Spracovateľská operácia',
-        'riadenie ambasádorov Európskeho týždňa programovania, vedúcich učiteľov a registrácie aktivít na webovom sídle'
+        'riadenie ambasádorov Európskeho týždňa programovania, vedúcich učiteľov a registrácie aktivít na webovom sídle',
     ],
     'data-processors' => [
         'Sprostredkovatelia',
-        'GOPA Com. S.A. a EUN Partnership AISBL (Európska školská sieť), info@codeweek.eu'
+        'GOPA Com. S.A. a EUN Partnership AISBL (Európska školská sieť), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informácie v súvislosti so spracúvaním osobných údajov na účely riadenia ambasádorov Európskeho týždňa programovania, vedúcich učiteľov a registrácie aktivít na webovom sídle.'
+        'Informácie v súvislosti so spracúvaním osobných údajov na účely riadenia ambasádorov Európskeho týždňa programovania, vedúcich učiteľov a registrácie aktivít na webovom sídle.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Okrem toho môže oddelenie G.2 zdieľať vaše kontaktné údaje s akoukoľvek osobou alebo zainteresovanou stranou, ktorá by mohla potrebovať kontaktovať sa s vami v súvislosti s Európskym týždňom programovania. Upozornenie pre organizátorov aktivít: Príslušný ambasádor pre vašu krajinu alebo oddelenie G.2 môžu použiť osobné údaje, ktoré ste poskytli pri registrovaní aktivity, s cieľom kontaktovať sa s vami v súvislosti s uvedenou aktivitou.',
     ],
     '8-rights' => [
-        'Súhlasili ste s poskytnutím svojich osobných údajov oddeleniu G.2 na účely tejto spracovateľskej operácie. Svoj súhlas môžete kedykoľvek odvolať tak, že zašlete oznámenie o jeho odvolaní oddeleniu G.2 na adresu CNECT-G2@ec.europa.eu. Odvolanie neovplyvní zákonnosť spracovania vykonaného pred odvolaním vášho súhlasu.'
+        'Súhlasili ste s poskytnutím svojich osobných údajov oddeleniu G.2 na účely tejto spracovateľskej operácie. Svoj súhlas môžete kedykoľvek odvolať tak, že zašlete oznámenie o jeho odvolaní oddeleniu G.2 na adresu CNECT-G2@ec.europa.eu. Odvolanie neovplyvní zákonnosť spracovania vykonaného pred odvolaním vášho súhlasu.',
     ],
 
     '10-detailed-info' => [
-        'Táto konkrétna spracovateľská operácia bola zahrnutá do verejného registra úradníka pre ochranu údajov pod týmto referenčným označením oznámenia: DPR-EC-02631 Riadenie kontaktných miest pre politiky, programy a projekty GR CONNECT.'
-    ]
+        'Táto konkrétna spracovateľská operácia bola zahrnutá do verejného registra úradníka pre ochranu údajov pod týmto referenčným označením oznámenia: DPR-EC-02631 Riadenie kontaktných miest pre politiky, programy a projekty GR CONNECT.',
+    ],
 ];

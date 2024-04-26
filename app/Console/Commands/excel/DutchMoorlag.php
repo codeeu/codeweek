@@ -2,13 +2,13 @@
 
 namespace App\Console\Commands\excel;
 
-use App\Imports\DutchDanceEventsImport;
 use App\Imports\DutchMoorlagEventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class DutchMoorlag extends Command {
+class DutchMoorlag extends Command
+{
     /**
      * The name and signature of the console command.
      *
@@ -28,16 +28,16 @@ class DutchMoorlag extends Command {
      *
      * @return void
      */
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle() {
+    public function handle(): void
+    {
         Log::info('Loading Dutch Moorlag File');
 
         Excel::import(

@@ -19,7 +19,7 @@ return [
         'beginner' => 'Osnovna stopnja',
         'intermediate' => 'Nadaljevalna stopnja',
         'advanced' => 'Izpopolnjevalna stopnja',
-        '1-hour' => '1 ura'
+        '1-hour' => '1 ura',
     ],
     'main' => [
         'Vabimo vas, da med evropskim tednom programiranja, ki bo potekal od 9. do 24. oktobra 2021, opravite enega ali več izzivov evropskega tedna programiranja.',
@@ -35,7 +35,7 @@ return [
         'Delite svoj izziv',
         'Ali bi radi osvojili nekaj darilc tedna programiranja? Če je odgovor pritrdilen, razširite svoj izdelek po spletu!',
         'Ko dokončate izziv, ga delite na Instagramu.',
-        'Zmagovalci bodo izbrani vsak dan med tednom programiranja med 9. in 24. oktobrom in objavljeni na našem Instagram kanalu, zato ne pozabite redno preverjati obvestil.'
+        'Zmagovalci bodo izbrani vsak dan med tednom programiranja med 9. in 24. oktobrom in objavljeni na našem Instagram kanalu, zato ne pozabite redno preverjati obvestil.',
     ],
     'share' => [
         'Kako svoje izzive deliti na Instagramu?',
@@ -52,7 +52,7 @@ return [
         'Facebooku',
         'bo vsak dan objavljena nova objava z izzivom, med komentarji pod objavo pa bo izbran zmagovalec nagrade.',
         'Kako to deluje?',
-        'Preprosto komentirajte objavo s povezavo do svojega izdelka.'
+        'Preprosto komentirajte objavo s povezavo do svojega izdelka.',
     ],
     'share-box' => [
         'Delite povezavo do svojega izdelka v svoj',
@@ -67,18 +67,18 @@ return [
         'na Facebooku bo vsak dan',
         'objavljena nova objava z izzivom',
         'Nato preprosto komentirajte objavo s povezavo do svojega izdelka',
-        'Vsak dan med tednom programiranja med 9. in 24. oktobrom bodo izbrani zmagovalci, katerim bodo ponujena darilca, objavljeni pa bodo tudi na naših kanalih na Instagramu in Facebooku, zato ne pozabite redno preverjati obvestil.'
+        'Vsak dan med tednom programiranja med 9. in 24. oktobrom bodo izbrani zmagovalci, katerim bodo ponujena darilca, objavljeni pa bodo tudi na naših kanalih na Instagramu in Facebooku, zato ne pozabite redno preverjati obvestil.',
     ],
     'take-part' => [
         'Zakaj sodelovati v izzivu evropskega tedna programiranja?',
         'Da sodelujte v dejavnostih reševanja težav in programiranja.',
         'Da sodelujete z vrstniki.',
-        'Da širite glas o pomembnosti programiranja.'
+        'Da širite glas o pomembnosti programiranja.',
     ],
     'download' => [
         'Kliknite',
         'tukaj',
-        'da prenesete ta izziv kot Wordov dokument'
+        'da prenesete ta izziv kot Wordov dokument',
     ],
     'bingo' => [
         'Dokončaj vse izzive',
@@ -88,6 +88,6 @@ return [
         'Delite svoj izziv na družbenih omrežjih in osvojite nekaj odličnih nagrad evropskega tedna programiranja',
         'Preprosto naložite sliko z izpolnjenimi vrsticami, stolpci ali še bolje: celoten bingo (tombolo) na ',
         'Facebook, Instagram ali Twitter',
-        'Ne pozabite uporabiti'
-    ]
+        'Ne pozabite uporabiti',
+    ],
 ];

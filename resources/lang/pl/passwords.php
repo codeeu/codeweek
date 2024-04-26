@@ -17,6 +17,6 @@ return [
     'reset' => 'Twoje hasło zostało zresetowane!',
     'sent' => 'Wysłaliśmy do Ciebie wiadomość e-mail z łączem do zresetowania hasła!',
     'token' => 'Ten token do zresetowania hasła jest nieprawidłowy.',
-    'user' => "Nie znaleziono użytkownika z tym adresem e-mail.",
+    'user' => 'Nie znaleziono użytkownika z tym adresem e-mail.',
 
 ];

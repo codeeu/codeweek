@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Etkinlik nasıl düzenlenir?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Rusça',
-            'Norwegian'=>'Norveççe',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japonca',
-            'All targeted languages' => 'Tüm hedeflenen diller'
+            'Russian' => 'Rusça',
+            'Norwegian' => 'Norveççe',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japonca',
+            'All targeted languages' => 'Tüm hedeflenen diller',
         ],
         'levels' => [
             'Beginner' => 'Başlangıç',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Ortaokul (12-16)',
             'Upper secondary school (16-18)' => 'Lise (16-18)',
             'Higher Education' => 'Yüksek Öğrenim',
-            'Other' => 'Diğer'
+            'Other' => 'Diğer',
         ],
         'subjects' => [
             'Art' => 'Sanat',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fizik',
             'Coding' => 'Kodlama',
             'Special Education Needs' => 'Özel Eğitim İhtiyaçları',
-            'Other' => 'Diğer'
+            'Other' => 'Diğer',
         ],
         'types' => [
             'Tutorial' => 'Eğitim',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Araç kiti',
             'Other' => 'Diğer',
             'Lesson Plan' => 'Ders Planı',
-            'Guide' => 'Rehber'
+            'Guide' => 'Rehber',
         ],
         'categories' => [
             'Coding' => 'Kodlama',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Yapım',
             'Tinkering' => 'Deneme Uygulaması',
             'Unplugged Activities' => 'Bağlantısız Etkinlikler',
-            'Other' => 'Diğer'
-        ]
-    ]
+            'Other' => 'Diğer',
+        ],
+    ],
 
 ];

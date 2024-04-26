@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * App\Notification
@@ -13,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\Event $event
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Notification newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Notification newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Notification query()
@@ -21,12 +23,13 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Notification whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Notification whereSentAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Notification whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class Notification extends Model
 {
-    public function event()
+    public function event(): BelongsTo
     {
-        return $this->belongsTo('App\Event', 'id','event_id');
+        return $this->belongsTo(\App\Event::class, 'id', 'event_id');
     }
 }

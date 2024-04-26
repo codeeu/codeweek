@@ -5,7 +5,6 @@ namespace App\Console\Commands;
 use App\Helpers\EventHelper;
 use App\Helpers\UserHelper;
 use App\User;
-use DB;
 use Illuminate\Console\Command;
 use Log;
 
@@ -27,25 +26,23 @@ class RelocateEventsForUserWithNullEmails extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         //Get list of emails for events with creators having null emails
         $emails = EventHelper::getDistinctEmailsWithUsersHavingNullEmail();
 
-        $this->info('Number of emails found with creator having null email: '. count($emails));
+        $this->info('Number of emails found with creator having null email: '.count($emails));
 
         //For each email, get the active user ID
         foreach ($emails as $email) {
             $user = UserHelper::getActiveUserByEmail($email);
-            if ($user){
-                Log::info($email . ' -> user: ' . optional($user)->id ?? 'null');
+            if ($user) {
+                Log::info($email.' -> user: '.$user?->id ?? 'null');
                 EventHelper::reassignActivities($user);
             } else {
-                Log::info($email . ' -> no user found ' . optional($user)->id ?? 'null');
+                Log::info($email.' -> no user found '.$user?->id ?? 'null');
             }
 
         }
@@ -53,14 +50,14 @@ class RelocateEventsForUserWithNullEmails extends Command
         // User::withTrashed()->whereNull('email')->delete();
 
         // Get list of activities created by users with null emails
-//        $activities = EventHelper::getActivitiesWithUsersHavingNullEmail();
+        //        $activities = EventHelper::getActivitiesWithUsersHavingNullEmail();
 
-//        Log::info('Number of activities linked to user with null email: '. count($activities));
+        //        Log::info('Number of activities linked to user with null email: '. count($activities));
 
         // Reassign each activity
-//        foreach ($activities as $activity) {
-//            EventHelper::reassignUser($activity->id);
-//        }
+        //        foreach ($activities as $activity) {
+        //            EventHelper::reassignUser($activity->id);
+        //        }
 
         return Command::SUCCESS;
     }

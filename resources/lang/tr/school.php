@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Okulun adı',
-    'location'           => 'Okulun yeri',
-    'description'                => 'Okulun tanımı',
-    'school'                => 'Okul',
-    'add'                => 'Ekle',
-    'list'                => 'Liste',
+    'name' => 'Okulun adı',
+    'location' => 'Okulun yeri',
+    'description' => 'Okulun tanımı',
+    'school' => 'Okul',
+    'add' => 'Ekle',
+    'list' => 'Liste',
     'required' => [
-        'name'=>'Okulun adı gereklidir',
-        'location'=>'Okulun yeri gereklidir',
-    ]
-
+        'name' => 'Okulun adı gereklidir',
+        'location' => 'Okulun yeri gereklidir',
+    ],
 
 ];

@@ -2,17 +2,11 @@
 
 namespace App\Console\Commands\Importers;
 
-
-
 use App\Helpers\ImporterHelper;
-
-
 use App\RSSItems\BerlinRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
-
 
 class Berlin extends Command
 {
@@ -39,33 +33,27 @@ class Berlin extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Loading Berlin API Items in Database");
+        Log::info('Loading Berlin API Items in Database');
 
-        $techicalUser = ImporterHelper::getTechnicalUser("berlin-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser('berlin-technical');
 
         $items = BerlinRSSItem::whereNull('imported_at')->get();
 
-
-
-        foreach ($items as $item){
+        foreach ($items as $item) {
 
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
-
+        Log::info('Activities created from RSS Feed: '.count($items));
 
     }
 }

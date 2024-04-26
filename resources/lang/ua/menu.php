@@ -46,5 +46,5 @@ return [
     'values' => 'Наші цінності',
     'online_events' => 'Онлайн-заходи',
     'featured_activities' => 'Основні заходи',
-    'codeweek2020' => 'Версія 2020'
+    'codeweek2020' => 'Версія 2020',
 ];

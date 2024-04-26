@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Non ci sono ancora eventi da segnalare.',
     'report' => 'Gli eventi elencati di seguito sono iniziati o sono già terminati. Inserisci alcuni numeri per
       scopi statistici per l’evento e richiedi il certificato di partecipazione alla settimana della programmazione. Riceverai
-      un certificato per evento.'
+      un certificato per evento.',
 ];

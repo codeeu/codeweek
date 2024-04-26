@@ -15,7 +15,7 @@ return [
             <p>Bu şekilde, aynı ziyaret esnasında sitede gezinirken bu bilgileri yeniden girmek zorunda kalmazsınız.</p>
 
             <p>Tanımlama bilgileri ayrıca sitelerimizde gezinme deneyimi hakkında anonim istatistikleri tesis etmek için de kullanılabilir.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Tanımlama bilgilerini nasıl kullanıyoruz?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Kullandığımız <strong>3 tür birinci taraf tanımlama bilgisini</strong> şu amaçlarla kullanırız:',
             '1' => 'ziyaretçi tercihlerini depolamak',
             '2' => 'web sitelerimizi operasyonel hâle getirmek',
-            '3' => 'analiz verilerini toplamak (kullanıcı davranışı hakkında)'
+            '3' => 'analiz verilerini toplamak (kullanıcı davranışı hakkında)',
         ],
         'table' => [
-            'name'=>'Ad',
-            'service'=>'Hizmet',
-            'purpose'=>'Amaç',
-            'type_duration'=>'Tanımlama bilgisi ve süresi',
+            'name' => 'Ad',
+            'service' => 'Hizmet',
+            'purpose' => 'Amaç',
+            'type_duration' => 'Tanımlama bilgisi ve süresi',
         ],
         'visitor_preferences' => [
-            'title'=> 'Ziyaretçi tercihleri',
-            'text'=> '<p>Bu tercihler tarafımızdan belirlenir ve bunları yalnızca biz okuyabiliriz. Bunlar şu unsurları hatırlar:</p>',
-            'item'=> 'sitenin tanımlama bilgisi ilkesini kabul edip (veya reddedip) etmediğinizi',
+            'title' => 'Ziyaretçi tercihleri',
+            'text' => '<p>Bu tercihler tarafımızdan belirlenir ve bunları yalnızca biz okuyabiliriz. Bunlar şu unsurları hatırlar:</p>',
+            'item' => 'sitenin tanımlama bilgisi ilkesini kabul edip (veya reddedip) etmediğinizi',
             'table' => [
                 '1' => [
                     'service' => 'Tanımlama bilgisi onay paketi',
                     'purpose' => 'Tanımlama bilgisi tercihlerinizi depolar (böylece sizden tekrar istenmez)',
                     'type_duration' => 'Tarayıcınızdan çıktıktan sonra silinen birinci taraf tanımlama bilgisi',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Operasyonel tanımlama bilgileri',
             'text' => '<p>Belli web sayfalarının çalışması için dâhil etmemiz gereken bazı tanımlama bilgileri bulunmaktadır. Bu sebeple bu bilgiler onayınızı gerektirmez. Özellikle:</p>',
-            'item' => 'belli BT sistemlerinin gerektirdiği teknik tanımlama bilgileri'
+            'item' => 'belli BT sistemlerinin gerektirdiği teknik tanımlama bilgileri',
         ],
         'technical_cookies' => [
             'title' => 'Teknik tanımlama bilgileri',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Kullanıcının tercih ettiği dili depolar',
                     'type_duration' => 'Tarayıcınızdan çıktıktan sonra silinen birinci taraf tanımlama bilgisi',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analiz tanımlama bilgileri',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Matomo açık kaynak yazılımına dayalı web çözümleme hizmeti',
                     'purpose' => 'Aynı ziyaret esnasında aynı kullanıcı tarafından görüntülenen sayfaları belirler. (anonim olarak - kullanıcı ile ilgili kişisel bilgi toplanmaz).',
                     'type_duration' => 'Birinci taraf kalıcı tanımlama bilgisi, 30 dakika',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Üçüncü taraf içeriği görüntülemek için, öncelikle bu sağlayıcılara ait özel hükümleri ve koşulları kabul etmeniz gerekir. Bu, sağlayıcıların, bizim denetimimizde olmayan, tanımlama bilgisi ilkelerini içerir.</p>
 
                 <p>Ancak bu içeriği görüntülemek istemezseniz, cihazınıza hiçbir üçüncü taraf tanımlama bilgisi yüklenmez.</p>Codeweek\'teki üçüncü taraf sağlayıcılar',
-            '2' => 'Bu üçüncü taraf hizmetler Codeweek web sitesinin denetimi dışındadır. Sağlayıcılar herhangi bir zamanda hizmet, amaç, tanımlama bilgisi vb. unsurların hükümlerini değiştirebilir.'
-        ]
+            '2' => 'Bu üçüncü taraf hizmetler Codeweek web sitesinin denetimi dışındadır. Sağlayıcılar herhangi bir zamanda hizmet, amaç, tanımlama bilgisi vb. unsurların hükümlerini değiştirebilir.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Tanımlama bilgilerini nasıl yönetebilirsiniz?',
@@ -109,6 +109,6 @@ return [
 
             <p>Tarayıcınızın göz atma geçmişini temizleyerek, hâlihazırda cihazınızda bulunan tüm tanımlama bilgilerini silebilirsiniz. Bu işlem, tanımlama bilgilerinin tümünü ziyaret ettiğiniz web sitelerinin hepsinden kaldırır.</p>
 
-            <p>Bazı kayıtlı bilgilerinizi de kaybedebileceğinizi göz önünde bulundurun (ör. kayıtlı oturum açma ayrıntıları, site tercihleri).</p><strong>Siteye özel tanımlama bilgilerinin yönetimi</strong><p>Siteye özel tanımlama bilgileri hakkında daha fazla ayrıntı için, tercih ettiğiniz tarayıcıda gizlilik ve tanımlama bilgisi ayarlarını kontrol edin</p><strong>Tanımlama bilgilerinin engellenmesi</strong><p>Çoğu modern tarayıcıyı, tanımlama bilgilerinin cihazınıza yerleştirilmesini önlemek üzere ayarlayabilirsiniz ancak bir siteyi/sayfayı her ziyaret edişinizde bazı tercihleri manuel olarak ayarlamak zorunda kalabilirsiniz. Ve bazı hizmetler ve işlevler düzgün şekilde çalışmayabilir (ör. profil oturum açma).</p><strong>Analiz tanımlama bilgilerimizin yönetimi</strong><p>Tanımlama bilgileri ile ilgili tercihlerinizi <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">özel sayfadaki</a> Analytics uygulamasından yönetebilirsiniz.</p>'
-    ]
+            <p>Bazı kayıtlı bilgilerinizi de kaybedebileceğinizi göz önünde bulundurun (ör. kayıtlı oturum açma ayrıntıları, site tercihleri).</p><strong>Siteye özel tanımlama bilgilerinin yönetimi</strong><p>Siteye özel tanımlama bilgileri hakkında daha fazla ayrıntı için, tercih ettiğiniz tarayıcıda gizlilik ve tanımlama bilgisi ayarlarını kontrol edin</p><strong>Tanımlama bilgilerinin engellenmesi</strong><p>Çoğu modern tarayıcıyı, tanımlama bilgilerinin cihazınıza yerleştirilmesini önlemek üzere ayarlayabilirsiniz ancak bir siteyi/sayfayı her ziyaret edişinizde bazı tercihleri manuel olarak ayarlamak zorunda kalabilirsiniz. Ve bazı hizmetler ve işlevler düzgün şekilde çalışmayabilir (ör. profil oturum açma).</p><strong>Analiz tanımlama bilgilerimizin yönetimi</strong><p>Tanımlama bilgileri ile ilgili tercihlerinizi <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">özel sayfadaki</a> Analytics uygulamasından yönetebilirsiniz.</p>',
+    ],
 ];

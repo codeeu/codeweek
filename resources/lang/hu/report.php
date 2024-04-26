@@ -25,27 +25,25 @@ return [
         'label' => 'Résztvevõk száma',
     ],
     'average_participant_age' => [
-        'label'=>'Résztvevõk átlagéletkora',
+        'label' => 'Résztvevõk átlagéletkora',
     ],
     'percentage_of_females' => [
         'label' => 'Nõnemû résztvevõk aránya',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => '„Programozási hét mindenkinek” részvételi kód',
-        'help' => 'Itt adhatja meg „programozási hét mindenkinek” kódját, amennyiben rendelkezik ilyennel. Ha nem vesz részt, hagyja figyelmen kívül ezt a mezõt.'
+        'help' => 'Itt adhatja meg „programozási hét mindenkinek” kódját, amennyiben rendelkezik ilyennel. Ha nem vesz részt, hagyja figyelmen kívül ezt a mezõt.',
     ],
     'name_for_certificate' => [
         'label' => 'A tanúsítványon feltüntetendõ név',
-        'help' => 'Írja át az esemény szervezõje nevére, aki részére a programozási héten való részvételrõl szóló tanúsítvány kiállításra kerül. Kizárólag ASCII (Latin) betûk használata engedélyezett. Az ékezetes, umlautos és hasonló betûk használata nem támogatott.'
+        'help' => 'Írja át az esemény szervezõje nevére, aki részére a programozási héten való részvételrõl szóló tanúsítvány kiállításra kerül. Kizárólag ASCII (Latin) betûk használata engedélyezett. Az ékezetes, umlautos és hasonló betûk használata nem támogatott.',
     ],
     'submit' => 'Eseményjelentés beküldése',
-    'thanks_page'=>[
-        'title'=>'Köszönjük, hogy jelentette eseményét!',
-        'certificate_ready'=>'Az ön tanúsítványa kész.',
-        'download_button'=>'A letöltéshez kattintson ide.',
-        'back_events'=>'Vissza az eseményéhez'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Köszönjük, hogy jelentette eseményét!',
+        'certificate_ready' => 'Az ön tanúsítványa kész.',
+        'download_button' => 'A letöltéshez kattintson ide.',
+        'back_events' => 'Vissza az eseményéhez',
+    ],
 
 ];

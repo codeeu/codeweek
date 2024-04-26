@@ -3,12 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class LeadingTeacherAction extends Model
 {
-    protected $guarded=[];
+    protected $guarded = [];
 
-    public function user(){
-        return $this->belongsTo('App\User','user_id','id');
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(\App\User::class, 'user_id', 'id');
     }
 }

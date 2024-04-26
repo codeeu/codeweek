@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -14,30 +14,24 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         'App\Model' => 'App\Policies\ModelPolicy',
-        'App\Event' => 'App\Policies\EventPolicy',
-        'App\User' => 'App\Policies\UserPolicy',
+        \App\Event::class => \App\Policies\EventPolicy::class,
+        \App\User::class => \App\Policies\UserPolicy::class,
     ];
 
     /**
      * Register any authentication / authorization services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        $this->registerPolicies();
-
         Gate::define('report-excellence', function ($user, $edition) {
 
             $excellences = $user->excellences;
 
-
             $collection = $excellences->filter(
-                function($value,$key) use ($edition) {
+                function ($value, $key) use ($edition) {
                     return $value->edition == $edition;
                 }
             );
-
 
             return $collection->count() > 0;
         });
@@ -47,11 +41,10 @@ class AuthServiceProvider extends ServiceProvider
             $superOrganisers = $user->superOrganisers;
 
             $collection = $superOrganisers->filter(
-                function($value,$key) use ($edition) {
+                function ($value, $key) use ($edition) {
                     return $value->edition == $edition;
                 }
             );
-
 
             return $collection->count() > 0;
         });

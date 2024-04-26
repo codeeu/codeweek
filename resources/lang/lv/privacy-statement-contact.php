@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Šajā paziņojumā par privātumu ir sniegta informācija par jūsu persondatu apstrādi un aizsardzību.',
     'processing-operation' => [
         'Apstrādes darbība',
-        'Programmēšanas nedēļas vēstnieku, vadošo skolotāju pārvaldība un darbību reģistrācija tīmekļvietnē'
+        'Programmēšanas nedēļas vēstnieku, vadošo skolotāju pārvaldība un darbību reģistrācija tīmekļvietnē',
     ],
     'data-processors' => [
         'Datu apstrādātāji',
-        'GOPA Com. S.A. un EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. un EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informācija par persondatu apstrādi Programmēšanas nedēļas vēstnieku, vadošo skolotāju pārvaldībai un darbību reģistrācijai tīmekļvietnē.'
+        'Informācija par persondatu apstrādi Programmēšanas nedēļas vēstnieku, vadošo skolotāju pārvaldībai un darbību reģistrācijai tīmekļvietnē.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Turklāt G.2. nodaļa var nodot jūsu kontaktinformāciju jebkuram sabiedrības loceklim vai ieinteresētajai personai, kam ar jums jāsazinās saistībā ar Programmēšanas nedēļu. Darbību organizētājus lūdzam ņemt vērā, ka jūsu valsts attiecīgais vēstnieks vai G.2. nodaļa var izmantot persondatus, ko sniedzāt darbības reģistrēšanai, lai sazinātos ar jums par minēto darbību.',
     ],
     '8-rights' => [
-        'Jūs esat piekritis sniegt savus persondatus G.2. nodaļai šīs apstrādes darbības vajadzībām. Jebkurā laikā piekrišanu varat atsaukt, par to informējot G.2. nodaļu, izmantojot e-pasta adresi CNECT-G2@ec.europa.eu. Atsaukums neietekmēs tās datu apstrādes likumību, kas veikta pirms piekrišanas atsaukšanas.'
+        'Jūs esat piekritis sniegt savus persondatus G.2. nodaļai šīs apstrādes darbības vajadzībām. Jebkurā laikā piekrišanu varat atsaukt, par to informējot G.2. nodaļu, izmantojot e-pasta adresi CNECT-G2@ec.europa.eu. Atsaukums neietekmēs tās datu apstrādes likumību, kas veikta pirms piekrišanas atsaukšanas.',
     ],
 
     '10-detailed-info' => [
-        'Šī konkrētā apstrādes darbība ir iekļauta datu aizsardzības speciālista publiskajā reģistrā ar šādu iepriekš izstrādātu paziņojuma numuru: DPR-EC-02631 (“CNECT ĢD politikas, programmu un projektu kontaktpunktu pārvaldība”).'
-    ]
+        'Šī konkrētā apstrādes darbība ir iekļauta datu aizsardzības speciālista publiskajā reģistrā ar šādu iepriekš izstrādātu paziņojuma numuru: DPR-EC-02631 (“CNECT ĢD politikas, programmu un projektu kontaktpunktu pārvaldība”).',
+    ],
 ];

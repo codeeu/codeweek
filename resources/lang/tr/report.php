@@ -25,27 +25,25 @@ return [
         'label' => 'Katılımcı sayısı',
     ],
     'average_participant_age' => [
-        'label'=>'Ortalama katılımcı yaşı',
+        'label' => 'Ortalama katılımcı yaşı',
     ],
     'percentage_of_females' => [
         'label' => 'Kadınların yüzdelik oranı',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Herkes için kod haftası katılım kodu',
-        'help' => 'Varsa, Herkes için Kod Haftası mücadele kodunuzu buraya girebilirsiniz. Katılmıyorsanız bu alanı boş bırakın.'
+        'help' => 'Varsa, Herkes için Kod Haftası mücadele kodunuzu buraya girebilirsiniz. Katılmıyorsanız bu alanı boş bırakın.',
     ],
     'name_for_certificate' => [
         'label' => 'Sertifika adı',
-        'help' => 'Buraya, Kod Haftası katılım sertifikası verilecek olan etkinlik organizatörünün adını girin. Yalnızca ASCII (Latince) karakterler kullanın. Şapkalı, çift noktalı vb. karakterler desteklenmemektedir.'
+        'help' => 'Buraya, Kod Haftası katılım sertifikası verilecek olan etkinlik organizatörünün adını girin. Yalnızca ASCII (Latince) karakterler kullanın. Şapkalı, çift noktalı vb. karakterler desteklenmemektedir.',
     ],
     'submit' => 'Etkinlik Raporunu Gönder',
-    'thanks_page'=>[
-        'title'=>'Etkinlik raporunuzu gönderdiğiniz için teşekkürler!',
-        'certificate_ready'=>'Sertifikanız hazırdır.',
-        'download_button'=>'İndirmek için buraya tıklayın.',
-        'back_events'=>'Etkinliğe geri dön'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Etkinlik raporunuzu gönderdiğiniz için teşekkürler!',
+        'certificate_ready' => 'Sertifikanız hazırdır.',
+        'download_button' => 'İndirmek için buraya tıklayın.',
+        'back_events' => 'Etkinliğe geri dön',
+    ],
 
 ];

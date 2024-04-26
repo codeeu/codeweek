@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Här kan du läsa om hur vi behandlar och skyddar dina personuppgifter.',
     'processing-operation' => [
         'Uppgiftsbehandling',
-        'hantering av EU Code Weeks ambassadörer och ledande lärare samt registrering av aktiviteter på webbplatsen'
+        'hantering av EU Code Weeks ambassadörer och ledande lärare samt registrering av aktiviteter på webbplatsen',
     ],
     'data-processors' => [
         'Personuppgiftsbiträden',
-        'GOPA Com. S.A. och EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. och EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Nedan hittar du information om den uppgiftsbehandling som utförs för att hantera EU Code Weeks ambassadörer och ledande lärare samt registrera aktiviteter på webbplatsen.'
+        'Nedan hittar du information om den uppgiftsbehandling som utförs för att hantera EU Code Weeks ambassadörer och ledande lärare samt registrera aktiviteter på webbplatsen.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Därutöver kan enhet G.2 lämna ut dina kontaktuppgifter till enskilda personer eller berörda parter som behöver kontakta dig angående EU Code Week. För dig som anordnar en aktivitet gäller att de personuppgifter som du lämnar när du registrerar aktiviteten kan komma användas av den relevanta ambassadören för ditt land eller av enhet G.2 i syfte att kontakta dig angående aktiviteten.',
     ],
     '8-rights' => [
-        'Du har samtyckt till att lämna dina personuppgifter till enhet G.2 för den aktuella behandlingen. Du kan när som helst återkalla ditt samtycke genom att anmäla detta till enhet G.2 på CNECT-G2@ec.europa.eu. Det påverkar dock inte lagligheten i eventuell behandling som utförts innan du återkallat ditt samtycke.'
+        'Du har samtyckt till att lämna dina personuppgifter till enhet G.2 för den aktuella behandlingen. Du kan när som helst återkalla ditt samtycke genom att anmäla detta till enhet G.2 på CNECT-G2@ec.europa.eu. Det påverkar dock inte lagligheten i eventuell behandling som utförts innan du återkallat ditt samtycke.',
     ],
 
     '10-detailed-info' => [
-        'Den behandling av personuppgifter som avses i det här meddelandet har registrerats hos dataskyddsombudet med följande referensnummer: DPR-EC-02631 GD Kommunikationsnät, innehåll och teknik: hantering av kontaktpersoner för politik, program och projekt.'
-    ]
+        'Den behandling av personuppgifter som avses i det här meddelandet har registrerats hos dataskyddsombudet med följande referensnummer: DPR-EC-02631 GD Kommunikationsnät, innehåll och teknik: hantering av kontaktpersoner för politik, program och projekt.',
+    ],
 ];

@@ -2,22 +2,18 @@
 
 namespace App\Http\Livewire;
 
-
 use App\LeadingTeacherAction;
-use App\User;
-
 use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\DateColumn;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
 
 class LeadingTeacherDashboard extends LivewireDatatable
 {
-
     public $model = LeadingTeacherAction::class;
 
     public function builder()
     {
-        return LeadingTeacherAction::where('user_id',auth()->user()->id);
+        return LeadingTeacherAction::where('user_id', auth()->user()->id);
     }
 
     public function columns()
@@ -27,25 +23,19 @@ class LeadingTeacherDashboard extends LivewireDatatable
             Column::name('title')
                 ->label('Title')
 
-                ->filterable()
-                ,
+                ->filterable(),
 
             Column::name('type')
                 ->label('Type'),
 
             Column::name('comment')
-                ->label('Comments')
-                ,
+                ->label('Comments'),
 
             DateColumn::name('completion_date')
-                ->label('Date')
-                ,
+                ->label('Date'),
 
             Column::name('status'),
 
         ];
     }
-
-
-
 }

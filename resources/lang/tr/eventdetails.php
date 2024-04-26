@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Düzenleyen: ',
+    'organised_by' => 'Düzenleyen: ',
     'contact_email' => 'İrtibat e-posta adresi: ',
     'happening_at' => 'Yer: ',
     'from' => 'Kimden ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Bunu arkadaşına göndermek için tıkla',
         'subject' => 'Bu muhteşem kodlama etkinliğini görmelisin',
         'body_1' => 'Hey, şuna bir göz atmaya ne dersin? ',
-        'body_2' => 'Etkinlik yeri: '
+        'body_2' => 'Etkinlik yeri: ',
     ],
     'edit' => 'Etkinliği düzenle',
     'note' => 'NOT: ',
     'pending_warning' => 'Bu etkinlik şu an ',
     'pending_link' => 'moderatörler tarafından değerlendiriliyor',
-    'nearby_upcoming_events' => 'Yaklaşan etkinlikler:'
+    'nearby_upcoming_events' => 'Yaklaşan etkinlikler:',
 ];

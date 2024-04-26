@@ -6,10 +6,9 @@ return [
         'author' => 'AB Kod Haftası Ekibi',
         'purposes' => [
             'İnteraktif bilmeceler kodlamak',
-            'Kod kullanarak bir sohbet robotu ile bir kullanıcı arasında diyaloglar oluşturmak'
+            'Kod kullanarak bir sohbet robotu ile bir kullanıcı arasında diyaloglar oluşturmak',
         ],
-        'description' =>
-            'Sohbet robotu ile bilmeceyi çözmeye çalışan kullanıcı arasında bir konuşma kodlayın. İnsan gibi konuşabilen bir sohbet robotu yapmaya çalışın. Bilmece yerine, sohbet robotu ile kullanıcı arasında bir diyalog da oluşturabilirsiniz.',
+        'description' => 'Sohbet robotu ile bilmeceyi çözmeye çalışan kullanıcı arasında bir konuşma kodlayın. İnsan gibi konuşabilen bir sohbet robotu yapmaya çalışın. Bilmece yerine, sohbet robotu ile kullanıcı arasında bir diyalog da oluşturabilirsiniz.',
         'instructions' => [
             'Bir bilmece düşünün',
             'Oturum açın',
@@ -18,27 +17,26 @@ return [
             'Bilmecenizi yazmak için blokları veya metin tabanlı modu kullanın',
             'Alternatif olarak',
             'bu kodu kullanabilirsiniz',
-            've bunu bilmecenize uyarlayabilir veya menüden Answering a riddle (Bilmeceyi cevapla) öğesini seçip düzenleyebilirsiniz.'
+            've bunu bilmecenize uyarlayabilir veya menüden Answering a riddle (Bilmeceyi cevapla) öğesini seçip düzenleyebilirsiniz.',
         ],
         'example' => 'Şu bilmece örneğini inceleyin.',
         'more' => [
             'Bu kod Pencil Code aktivitesinden uyarlanmıştır',
-            'Answering the Riddle'
-        ]
+            'Answering the Riddle',
+        ],
     ],
 
     'paper-circuit' => [
-        'title' =>
-            'Fişi çekin ve kodlamaya başlayın: Bir kâğıt devre oluşturun',
+        'title' => 'Fişi çekin ve kodlamaya başlayın: Bir kâğıt devre oluşturun',
         'author' => 'AB Kod Haftası Ekibi',
         'purposes' => [
             'Yaratıcılığı artırmak',
-            'Problem çözme becerilerini geliştirmek'
+            'Problem çözme becerilerini geliştirmek',
         ],
         'description' => [
             'İstediğiniz bir nesneyi çizin. Bu, yıldızlı bir gökyüzü, uğur böceği, robot, yılbaşı ağacı veya aklınıza gelen herhangi bir şey olabilir. Projenizi AB Kod Haftası görselleriyle dilediğiniz gibi kişiselleştirebilirsiniz: ',
             'AB Kod Haftası öğretmenler araç kitini keşfedebilir',
-            've istediğiniz bir logoyu veya görseli indirebilirsiniz. AB Kod Haftası için bir kâğıt devre davetiyesi bile oluşturabilirsiniz. Devrenize motive edici bir mesaj ekleyerek, diğer öğretmenleri Kod Haftasına katılmaya ve/veya okullara özel web sitesini incelemeye teşvik edin.'
+            've istediğiniz bir logoyu veya görseli indirebilirsiniz. AB Kod Haftası için bir kâğıt devre davetiyesi bile oluşturabilirsiniz. Devrenize motive edici bir mesaj ekleyerek, diğer öğretmenleri Kod Haftasına katılmaya ve/veya okullara özel web sitesini incelemeye teşvik edin.',
         ],
         'instructions' => [
             'Bir nesne çizin ve hangi parçaların aydınlatılacağına karar verin (ör. yıldızlar).',
@@ -47,7 +45,7 @@ return [
             'Kâğıdın diğer tarafına + ve-işaretlerini çizin. LED devre çıkartmasının uzun tarafının pilin “+” kısmına, kısa tarafının ise pilin “-” kısmına bağlandığından emin olun.',
             'Bakır bandı işaretlerin üzerine yerleştirin.',
             'Kâğıt, pilin üzerine geldiğinde LED yanacak şekilde bir kat oluşturun. Bakır bant ile iyi temas etmesi için ataş kullanabilirsiniz.',
-            'Kâğıt devrenizin fotoğrafını çekin ve bu girişimde yer almanın önemini açıklayarak Instagram\'da paylaşın.'
+            'Kâğıt devrenizin fotoğrafını çekin ve bu girişimde yer almanın önemini açıklayarak Instagram\'da paylaşın.',
         ],
         'example' => 'Bazı kâğıt devre örneklerini inceleyin',
         'materials' => [
@@ -56,8 +54,8 @@ return [
             'yuvarlak pil',
             'bakır bant',
             'LED devre çıkartmaları',
-            'ataş'
-        ]
+            'ataş',
+        ],
     ],
 
     'dance' => [
@@ -65,10 +63,9 @@ return [
         'author' => 'AB Kod Haftası Ekibi',
         'purposes' => [
             'Temel kodlama kavramlarını öğrenmek',
-            'Karakterleri canlandırmayı öğrenmek'
+            'Karakterleri canlandırmayı öğrenmek',
         ],
-        'description' =>
-            'Bu görevde birlikte dans edecek bir dizi karakter oluşturacaksınız. Karakterleri ve müzik kliplerini seçmek için yerleşik bir ortam kitaplığından faydalanabilir veya kendinizinkini oluşturabilirsiniz. Karakterleri dans edecek ve birbirleriyle konuşacak şekilde canlandıracaksınız.',
+        'description' => 'Bu görevde birlikte dans edecek bir dizi karakter oluşturacaksınız. Karakterleri ve müzik kliplerini seçmek için yerleşik bir ortam kitaplığından faydalanabilir veya kendinizinkini oluşturabilirsiniz. Karakterleri dans edecek ve birbirleriyle konuşacak şekilde canlandıracaksınız.',
         'instructions' => [
             'Oturum açın',
             've öğretmen olarak giriş yapın. Öğrenci hesapları oluşturun ve bunları öğrencilerinizle paylaşın. Alternatif olarak, bir sınıf kodu paylaşabilir ve öğrencilerinizin okul e-posta adresleri ile kaydolmalarını sağlayabilirsiniz. Öğrenciyseniz öğrenci olarak katılabilirsiniz ancak hesabınızı doğrulayabilmeleri için ebeveyninizin e-posta adresini girmeniz istenecektir.',
@@ -81,13 +78,13 @@ return [
             'Her bir oyuncuya tıklayın ve aşağıdaki blokları ekleyerek canlandırın',
             'Bir',
             'say block (konuşma bloğu)',
-            'ekleyin, böylece oyuncular birbirleriyle konuşacaktır. Konuşma balonlarının şeklini, metnin yazı tipini ve boyutunu değiştirin'
+            'ekleyin, böylece oyuncular birbirleriyle konuşacaktır. Konuşma balonlarının şeklini, metnin yazı tipini ve boyutunu değiştirin',
         ],
         'example' => [
             'Dans eden robotlar',
             'örneğini',
-            'inceleyin. Bunu dilediğiniz gibi kullanabilir ve yeniden düzenleyebilirsiniz.'
-        ]
+            'inceleyin. Bunu dilediğiniz gibi kullanabilir ve yeniden düzenleyebilirsiniz.',
+        ],
     ],
 
     'compose-song' => [
@@ -96,10 +93,9 @@ return [
         'purposes' => [
             'Müzik ile kodlama öğrenmek',
             'Müzik tarzlarını ve enstrümanları birbirinden ayırmak',
-            'Ses kliplerini karıştırarak bir şarkı bestelemek'
+            'Ses kliplerini karıştırarak bir şarkı bestelemek',
         ],
-        'description' =>
-            'Bu görevde bir programlama dili kullanarak beste yapacaksınız. Beste yapmak için yerleşik ses kliplerini kullanabilir veya kendinizinkini kaydedip miks yapabilirsiniz. Kodunuzu Digital Audio Workstation (Dijital Ses İş İstasyonu) içerisinde çalıştırın ve kodladığınız müziği dinleyin. Farklı sesler ve efektler kullanarak müzik eserinizi değiştirebilirsiniz.',
+        'description' => 'Bu görevde bir programlama dili kullanarak beste yapacaksınız. Beste yapmak için yerleşik ses kliplerini kullanabilir veya kendinizinkini kaydedip miks yapabilirsiniz. Kodunuzu Digital Audio Workstation (Dijital Ses İş İstasyonu) içerisinde çalıştırın ve kodladığınız müziği dinleyin. Farklı sesler ve efektler kullanarak müzik eserinizi değiştirebilirsiniz.',
         'instructions' => [
             'Oturum açın',
             'Bir komut dizisi oluşturmak için buraya tıklayın',
@@ -126,13 +122,13 @@ return [
             'Şunu yazın',
             'Parantez içerisine kanal sayısını, VOLUME, GAIN, ses seviyesini, ölçünün ne zaman başlayacağını, seviyesini ve ne zaman sonlanacağını yazın.',
             'Bu bir fade-in (güçlenerek başlama) efekti',
-            've fade-out (zayıflayarak bitme) efekti örneğidir'
+            've fade-out (zayıflayarak bitme) efekti örneğidir',
         ],
         'example' => [
             'Earsketch',
             'ile kodlanan bir şarkı örneğini dinleyin',
-            'Kodu içe aktarıp düzenleyebilirsiniz.'
-        ]
+            'Kodu içe aktarıp düzenleyebilirsiniz.',
+        ],
     ],
     'sensing-game' => [
         'title' => 'Bir video algılama oyunu yapın',
@@ -140,10 +136,9 @@ return [
         'purposes' => [
             'Canlandırılmış nesneler kodlamak',
             'Dijital animasyonun fiziksel hareket ile nasıl kontrol edileceğini anlamak',
-            'Ses kliplerini karıştırarak bir şarkı bestelemek'
+            'Ses kliplerini karıştırarak bir şarkı bestelemek',
         ],
-        'description' =>
-            'Bu görevde, hareketi algılamak üzere bir video kameranın sensör olarak kullanıldığı basit bir oyun hazırlayacaksınız. Yani, animasyonunuzu fiziksel hareket ile kontrol edebileceksiniz. Bu oyunda göreviniz, 30 saniyede toplayabildiğiniz kadar AB Kod Haftası baloncuğu toplamaktır. Baloncukları toplamak yerine, bir karakteri kovaladığınız veya ellerinizle balonları patlattığınız bir oyun oluşturabilirsiniz.',
+        'description' => 'Bu görevde, hareketi algılamak üzere bir video kameranın sensör olarak kullanıldığı basit bir oyun hazırlayacaksınız. Yani, animasyonunuzu fiziksel hareket ile kontrol edebileceksiniz. Bu oyunda göreviniz, 30 saniyede toplayabildiğiniz kadar AB Kod Haftası baloncuğu toplamaktır. Baloncukları toplamak yerine, bir karakteri kovaladığınız veya ellerinizle balonları patlattığınız bir oyun oluşturabilirsiniz.',
         'instructions' => [
             'Oturum açın',
             'Eklenti Ekle',
@@ -162,41 +157,38 @@ return [
             '”Zamanlayıcıyı i -1 kadar değiştir” öğesini ekleyin',
             'Yeni bir hareketli grafik olarak',
             'Game Over (Oyun Bitti)',
-            'öğesini ekleyerek oyunu bitirin. Ayrıca, oyun başlığınızla da bir hareketli grafik oluşturabilirsiniz, ör. Tüm AB Kod Haftası Baloncuklarını Topla.'
+            'öğesini ekleyerek oyunu bitirin. Ayrıca, oyun başlığınızla da bir hareketli grafik oluşturabilirsiniz, ör. Tüm AB Kod Haftası Baloncuklarını Topla.',
         ],
         'example' => [
             'Tüm AB Kod Haftası Baloncuklarını Topla video algılama oyununu oynayın. Bu projeyi dilediğiniz gibi',
-            'yeniden düzenleyebilirsiniz'
-        ]
+            'yeniden düzenleyebilirsiniz',
+        ],
     ],
 
     'calming-leds' => [
-        'title' =>
-            'Sakinleştirici LED\'ler: micro:bit ile basit bir aygıt yapın',
+        'title' => 'Sakinleştirici LED\'ler: micro:bit ile basit bir aygıt yapın',
         'author' => 'Micro:bit Educational Foundation (Micro:bit Eğitim Vakfı)',
         'duration' => '20 dakika',
         'materials' => [
             'bir micro:bit aygıtı ve pil takımı (varsa)',
             'Microsoft MakeCode ve Youtube\'u ziyaret edebileceğiniz bir dizüstü bilgisayar veya tablet',
-            'aktivite kaynakları için microbit.org'
+            'aktivite kaynakları için microbit.org',
         ],
-        'description' =>
-            'Öğrenciler, LED\'leri kullanarak nefes alışlarını düzenlemelerine ve daha sakin hissetmelerine yardımcı olabilecek bir dijital aygıt yapacaktır. Kendilerinden bazı basit kodlar yazmaları, animasyonları ve sekansları keşfetmeleri istenecektir.',
+        'description' => 'Öğrenciler, LED\'leri kullanarak nefes alışlarını düzenlemelerine ve daha sakin hissetmelerine yardımcı olabilecek bir dijital aygıt yapacaktır. Kendilerinden bazı basit kodlar yazmaları, animasyonları ve sekansları keşfetmeleri istenecektir.',
         'instructions' => [
             'Amaç, nefes alışınızı düzenlemek için kullanabileceğiniz, çalışan bir Sakinleştirici LED aygıt yapmaktır. Bu aygıt, fiziksel bir micro:bit kart üzerinde veya MakeCode editörde bulunan simülatör üzerinde yapılabilir.',
             'Görev, videoda/ekran görüntüsünde gösterildiği üzere MakeCode editör kullanılarak ve basit bir kod dizisi yazılarak tamamlanabilir.',
             'Öğrenciler, görevi geliştirmek amacıyla farklı animasyonları keşfedebilir ve sakin veya mutlu hissetmelerine yardımcı olmak üzere görmek istedikleri animasyonlarla yaratıcılıklarının sınırlarını zorlayabilirler.',
             'Detaylı bilgiye ve video talimatlarına',
-            'bu bağlantıdan ulaşabilirsiniz'
+            'bu bağlantıdan ulaşabilirsiniz',
         ],
-        'example' =>
-            'Talimatlar ve tamamlanan göreve ait videoların yanı sıra nasıl kodlama yapılacağı konusunda bilgi almak için bu sayfayı ziyaret edin',
+        'example' => 'Talimatlar ve tamamlanan göreve ait videoların yanı sıra nasıl kodlama yapılacağı konusunda bilgi almak için bu sayfayı ziyaret edin',
         'purposes' => [
             'Yardımcı olma amacıyla basit bir dijital eser tasarlamak',
             'Sekanslar ve animasyonlarla birlikte bunların nasıl çalıştığını keşfetmek',
             'Basit kodları test etmek ve hata ayıklaması yapmak',
-            'Animasyonları hızlandırıp yavaşlatarak bir tasarımı yinelemek'
-        ]
+            'Animasyonları hızlandırıp yavaşlatarak bir tasarımı yinelemek',
+        ],
     ],
     'computational-thinking-and-computational-fluency' => [
         'title' => 'ScratchJr ile Sayısal Düşünme ve Sayısal Akıcılık',
@@ -204,25 +196,24 @@ return [
         'purposes' => [
             'Yeni komutları ve arayüzleri kullanmaya alışmak.',
             'Basit sebep-sonuç komutlarıyla basit programlar oluşturmak.',
-            'Deneme yanılma yoluyla basit bir hata ayıklaması yapmak.'
+            'Deneme yanılma yoluyla basit bir hata ayıklaması yapmak.',
         ],
-        'description' =>
-            'Bu görevde çocuklar, hikâyelerini daha ilgi çekici, heyecanlı ve duygusal hale getirmek için ScratchJr uygulamasını kullanarak CT (Sayısal Düşünme) konseptlerini projelerine entegre ediyor.',
+        'description' => 'Bu görevde çocuklar, hikâyelerini daha ilgi çekici, heyecanlı ve duygusal hale getirmek için ScratchJr uygulamasını kullanarak CT (Sayısal Düşünme) konseptlerini projelerine entegre ediyor.',
         'instructions' => [
             'ScratchJr için çocukların okur yazar olmaları gerekli değildir. Tüm talimatlar ve menü seçenekleri simgeler ve renkler yoluyla anlaşılabilir. Görev, sınıfta, laboratuvarda ve hatta internet gerekmediği için açık alanda bile tamamlanabilir.',
-            'Çocuklar şehri arka plan olarak kullanır, aracı şehirde sürmek için ise kodlama bloklarından faydalanır.'
+            'Çocuklar şehri arka plan olarak kullanır, aracı şehirde sürmek için ise kodlama bloklarından faydalanır.',
         ],
         'example' => [
             'Çocuklar ses ve hareket bloklarını kullanabilir ve karakterleri dans ettirmek için blokları yeniden başlatabilir.',
-            'Çocuklar bir arka plan ve karakter seçip, aracı şehirde sürmek için bir hareket bloğu kullanır. Çocuklar bir karakteri hızlandırıp yavaşlatmak için hız bloğunu kullanabilir.'
+            'Çocuklar bir arka plan ve karakter seçip, aracı şehirde sürmek için bir hareket bloğu kullanır. Çocuklar bir karakteri hızlandırıp yavaşlatmak için hız bloğunu kullanabilir.',
         ],
         'materials' => [
             'Bu ücretsiz uygulama',
             'çeşitli işletim sistemlerinde ve akıllı cihaz türlerinde çalışmaktadır',
             'Ayrıca',
-            'web sitesinde çok sayıda ücretsiz eğitim materyali de bulunmaktadır.'
+            'web sitesinde çok sayıda ücretsiz eğitim materyali de bulunmaktadır.',
         ],
-        'duration' => '90 dakika'
+        'duration' => '90 dakika',
     ],
     'ai-hour-of-code' => [
         'title' => 'Yapay Zekâ (AI) Kod Saati',
@@ -230,87 +221,77 @@ return [
         'purposes' => [
             'Dizgeleri, olayları, döngüleri ve şart kiplerini içeren kodlama çözümleri oluşturmak',
             'Bir problemi çözmek için gereken adımları, net talimatlar dizisine dönüştürmek.',
-            'Kodlama kavramlarını keşfetmek.'
+            'Kodlama kavramlarını keşfetmek.',
         ],
-        'description' =>
-            'Bir köy yangın tehdidi altında ve senin bir çözüm kodlaman gerekiyor! Kodlama yardımcın Minecraft Agent (Ajanı) ile buluş ve ardından Ajanı ormanı gezip veri toplaması için programla. Bu veriler Ajanın yangınların nerede olduğunu tahmin etmesine yardımcı olacak. Daha sonra Ajanı kodlayarak yangının yayılmasını önlemesini, köyü kurtarmasını ve ormana yeniden hayat vermesini sağla. Kodlamanın temellerini öğrenin ve yapay zekânın (AI) gerçek dünyadaki bir örneğini keşfedin.',
+        'description' => 'Bir köy yangın tehdidi altında ve senin bir çözüm kodlaman gerekiyor! Kodlama yardımcın Minecraft Agent (Ajanı) ile buluş ve ardından Ajanı ormanı gezip veri toplaması için programla. Bu veriler Ajanın yangınların nerede olduğunu tahmin etmesine yardımcı olacak. Daha sonra Ajanı kodlayarak yangının yayılmasını önlemesini, köyü kurtarmasını ve ormana yeniden hayat vermesini sağla. Kodlamanın temellerini öğrenin ve yapay zekânın (AI) gerçek dünyadaki bir örneğini keşfedin.',
         'instructions' => 'Ders planını buradan indirin',
         'materials' => [
             'Minecraft: Education Edition kurun',
             'Minecraft Eğitim Sürümünü kurduktan sonra göreve',
-            'bu web sitesinden ulaşabilirsiniz'
-        ]
+            'bu web sitesinden ulaşabilirsiniz',
+        ],
     ],
     'create-a-dance' => [
         'title' => 'Ode to Code ile bir dans yaratın!',
-        'purposes' =>
-            'Kodlamayı eğlenceli bir hale getirerek kendinizi AB Kod Haftası topluluğunun bir parçası olarak hissetmek.',
+        'purposes' => 'Kodlamayı eğlenceli bir hale getirerek kendinizi AB Kod Haftası topluluğunun bir parçası olarak hissetmek.',
         'description' => [
             'Ode to Code ile bir dans yaratın! Ode to Code',
             'için bir dans kodlamak',
-            'üzere Dans Partisi eğitiminden faydalanın. Resmi AB Kod Haftası marşı, Dans Partisindeki parçalardan biri olarak seçildi.'
+            'üzere Dans Partisi eğitiminden faydalanın. Resmi AB Kod Haftası marşı, Dans Partisindeki parçalardan biri olarak seçildi.',
         ],
         'instructions' => [
             'Talimatlar video olarak eğitim içerisinde',
             'yer almakta',
-            've her seviyenin en üst kısmında gösterilmektedir.'
+            've her seviyenin en üst kısmında gösterilmektedir.',
         ],
-        'example' =>
-            'Öğrencilerin yaptığı öne çıkan çalışmalara şu sayfadan ulaşabilirsiniz:',
-        'materials' => 'Code.org eğitimi'
+        'example' => 'Öğrencilerin yaptığı öne çıkan çalışmalara şu sayfadan ulaşabilirsiniz:',
+        'materials' => 'Code.org eğitimi',
     ],
     'create-a-simulation' => [
         'title' => 'Bir simülasyon oluşturun!',
         'purposes' => [
             'Kitle oluşturma, iyileşme oranları, maske takma ve aşılar gibi değişkenleri tanıtırken simülasyonlar hakkında da bilgi sahibi olmak.',
-            'Hayali bir senaryoya uygulamak üzere, gerçek dünyadaki virüs salgınları hakkında ön bilgi edinmek.'
+            'Hayali bir senaryoya uygulamak üzere, gerçek dünyadaki virüs salgınları hakkında ön bilgi edinmek.',
         ],
-        'description' =>
-            'Canavar Şehri\'nde(Monster Town) kendi virüs salgını simülasyonunuzu oluşturup çalıştırmak üzere kod yazın. Kodlamayı öğrenin ve Canavar Şehri\'nin komşularına ne olacağı hakkında tahminlerde bulunun.',
+        'description' => 'Canavar Şehri\'nde(Monster Town) kendi virüs salgını simülasyonunuzu oluşturup çalıştırmak üzere kod yazın. Kodlamayı öğrenin ve Canavar Şehri\'nin komşularına ne olacağı hakkında tahminlerde bulunun.',
         'instructions' => [
             'Talimatlar video olarak eğitim içerisinde',
             'yer almakta',
-            've her seviyenin en üst kısmında gösterilmektedir.'
+            've her seviyenin en üst kısmında gösterilmektedir.',
         ],
-        'example' =>
-            'Çalışmayı bitirdiğinizde, simülasyonunuzu başkalarıyla paylaşabilirsiniz. Şehre bir virüs geldiğinde başkalarının sağlığını korumak için ne yapabileceğimiz hakkındaki düşüncelerinizi paylaşın.',
-        'materials' => 'Code.org eğitimi'
+        'example' => 'Çalışmayı bitirdiğinizde, simülasyonunuzu başkalarıyla paylaşabilirsiniz. Şehre bir virüs geldiğinde başkalarının sağlığını korumak için ne yapabileceğimiz hakkındaki düşüncelerinizi paylaşın.',
+        'materials' => 'Code.org eğitimi',
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Kendi şaheserinizi yaratın!',
         'audience' => 'Her yaşa uygundur',
-        'purpose' =>
-            'Bilgisayar bilimi kavramlarını görsel yollarla tanıtmak ve yaratıcılığı körüklemek',
-        'description' =>
-            'Sanatçı ile birlikte kendi şaheserinizi yaratın! Sanatçınızın benzersiz bir sanat eseri yaratması için kod bloklarını kullanın.',
-        'instructions' =>
-            'Talimatlar her seviyenin en üst kısmında gösterilmektedir',
-        'example' =>
-            'Sanatçıya ait örneklere bu sayfadaki çizimin altından ulaşabilirsiniz',
-        'materials' => ['Eğitimin ilk seviyesi için', 'BURAYA TIKLAYIN']
+        'purpose' => 'Bilgisayar bilimi kavramlarını görsel yollarla tanıtmak ve yaratıcılığı körüklemek',
+        'description' => 'Sanatçı ile birlikte kendi şaheserinizi yaratın! Sanatçınızın benzersiz bir sanat eseri yaratması için kod bloklarını kullanın.',
+        'instructions' => 'Talimatlar her seviyenin en üst kısmında gösterilmektedir',
+        'example' => 'Sanatçıya ait örneklere bu sayfadaki çizimin altından ulaşabilirsiniz',
+        'materials' => ['Eğitimin ilk seviyesi için', 'BURAYA TIKLAYIN'],
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'CS First Unplugged aktiviteler',
         'purposes' => [
             'Evden öğrenim gören öğrencileri desteklemek',
-            'Herkesi ekranlardan bir süre uzak tutmak'
+            'Herkesi ekranlardan bir süre uzak tutmak',
         ],
-        'description' =>
-            'CS First Unplugged, bilgisayar olmadan öğrencilere CS (Bilgisayar Bilimi) kavramlarını tanıtan bir dizi aktivitedir. Bu dersi, Bilgisayar Biliminin yalnızca kodlardan ibaret olmadığını göstermek için tasarladık.',
+        'description' => 'CS First Unplugged, bilgisayar olmadan öğrencilere CS (Bilgisayar Bilimi) kavramlarını tanıtan bir dizi aktivitedir. Bu dersi, Bilgisayar Biliminin yalnızca kodlardan ibaret olmadığını göstermek için tasarladık.',
         'instructions' => [
             'Tüm aktivitelerin yer aldığı İngilizce kitapçık için bu',
             'bağlantıya tıklayın',
             'İngilizce Ders Planı için ise bu bağlantıya tıklayın',
             'Bu dersteki etkinlikler ayrı ayrı olarak ve istenilen sırayla tamamlanabilir.',
-            'Öğretmen, öğrenim sürecini fotoğraflayıp #EUCodeWeekChallengeGoogle #GrowWithGoogle etiketiyle Instagram\'da paylaşabilir.'
+            'Öğretmen, öğrenim sürecini fotoğraflayıp #EUCodeWeekChallengeGoogle #GrowWithGoogle etiketiyle Instagram\'da paylaşabilir.',
         ],
         'materials' => [
             'Aktivite kitapçığına ek olarak, bazı aktivitelerde ek materyal kullanımı gerekebilir veya faydalı olabilir. ',
             'Network a Neighborhood(Mahalle ağı oluşturma) haritasında kullanmak üzere küçük sayaçlar(kuru fasulye gibi).',
             'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini kesmek için makas. ',
             'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini güçlendirmek için karton ve yapıştırıcı. ',
-            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini bağlamak için raptiye, kürdan veya düz hale getirilmiş ataş. '
-        ]
+            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini bağlamak için raptiye, kürdan veya düz hale getirilmiş ataş. ',
+        ],
     ],
     'family-care' => [
         'title' => 'Aileyle İlgilenmek',
@@ -322,14 +303,14 @@ return [
             'Sorunları fırsat olarak görmek ve yaratıcı çözümler üretmek;',
             'Çözümleri yenilikçi bir şekilde hayata geçirmek için kodlardan faydalanmak;',
             'Afişler tasarlamak ve bulduğunuz çözümleri başkalarına sunmak;',
-            'Projelerinizin etki yaratması için sosyal medyayı kullanmak. '
+            'Projelerinizin etki yaratması için sosyal medyayı kullanmak. ',
         ],
         'description' => [
             'Evimizden bahsederken aklınıza ne geliyor ? Güzel bir daire ? Anne babanızın hazırladığı büyük bir akşam yemeği ? Sadece sizin bildiğiniz gizli bir alan ? Sıcak bir ev, bedenimizi ve ruhumuzu bir benzin istasyonu gibi yeniden yakıtla doldurur. Modern hayatın koşuşturmacası içerisinde, ebeveynler çalıştıkları için her zaman meşgul durumda. Arkadaşlarınızla vakit geçirirken, kedilerinizi arkanızda bırakamazsınız. Peki siz uzaktayken arkadaşınızla nasıl ilgileneceksiniz ? Bu görevin teması',
             'Aileyle İlgilenmek',
             'Bu temaya göre, öğrenciler kodlama ve donanım yoluyla sevgi ve ilgi gösterebilecekleri bir fikir geliştirmeye teşvik ediliyor. Size üzerinde düşünmeniz için birkaç soru:',
             'Evinizde kaç kişi yaşıyor ? Bunlar kim ? Onlarla yaşarken herhangi bir sorunla karşılaştınız mı ? Ne tür bir ilgiye muhtaçlar ? ',
-            'Çevrenizde başkalarına kıyasla daha fazla aile ilgisinden yoksun kişiler var mı ? Bu kişilere nasıl yardımcı olabilirsiniz ? '
+            'Çevrenizde başkalarına kıyasla daha fazla aile ilgisinden yoksun kişiler var mı ? Bu kişilere nasıl yardımcı olabilirsiniz ? ',
         ],
         'instructions' => [
             'Aileyle ilgilenme teması üzerinde beyin fırtınası ve araştırma yapın',
@@ -338,7 +319,7 @@ return [
             'Bir çözüm seçin',
             'Yapıyı programlayıp oluşturun',
             'Projenizi göstereceğiniz bir afiş tasarlayın',
-            'Bunu öğretmenlerinize ve aile üyelerinize sunun'
+            'Bunu öğretmenlerinize ve aile üyelerinize sunun',
         ],
         'example' => ['Lütfen bazı örnekler için buraya:', 've'],
         'materials' => [
@@ -350,23 +331,21 @@ return [
             'Katılımcı ekibin özel bir tema üzerine odaklanması, yazılım programlama ve donanım oluşturma yoluyla bir çözüm bulması gerekecektir. ',
             'Öğrenciler bu görevi Codeweek üzerinde tamamlamaya ve diğer öğrencilerle iletişime geçip ödüller kazanmak üzere bunu uluslararası seviyeye taşımaya teşvik edilir. ',
             'Daha fazla bilgi için burayı inceleyebilir:',
-            'veya bizimle iletişime geçebilirsiniz'
-        ]
+            'veya bizimle iletişime geçebilirsiniz',
+        ],
     ],
     'virtual-flower-field' => [
         'title' => 'Sanal çiçek bahçenizi oluşturun',
-        'author' =>
-            'Jadga Huegle-Meet and Code koçu ve SAP Snap!ekibinin bir parçası',
+        'author' => 'Jadga Huegle-Meet and Code koçu ve SAP Snap!ekibinin bir parçası',
         'duration' => '30-60 dakika',
         'purposes' => [
             'Basit ama etkili bir proje ile programlamayı tanımak. ',
             'Kodlamanın sanatsal bir yönünün olduğunu ve güzel sonuçlar doğurabileceğini öğrenmek. ',
             'Renkli çiçekler ve AB Kod Haftası ile sonbaharı daha ışıltılı bir hale getirmek. ',
             'Dünya üzerinde bulunan çiçeklerin çeşitliliğini göstermek. ',
-            'İklim değişikliği eğitimi konusu hakkında farkındalık yaratıp bu eğitim sürecini iyileştiren kodlama etkinlikleri oluşturarak, Sürdürülebilir Kalkınma Hedeflerine(SKH\'ler) ve özellikle SKA13-İklim Değişikliğine katkıda bulunmak.'
+            'İklim değişikliği eğitimi konusu hakkında farkındalık yaratıp bu eğitim sürecini iyileştiren kodlama etkinlikleri oluşturarak, Sürdürülebilir Kalkınma Hedeflerine(SKH\'ler) ve özellikle SKA13-İklim Değişikliğine katkıda bulunmak.',
         ],
-        'description' =>
-            'Snap!içerisinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları ile sanal bir çiçek bahçesi oluşturabileceğiniz bir program geliştirin. ',
+        'description' => 'Snap!içerisinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları ile sanal bir çiçek bahçesi oluşturabileceğiniz bir program geliştirin. ',
         'instructions' => [
             'Göreve başlamak için ilhama ihtiyacınız varsa, bu videoyu',
             'izleyin',
@@ -375,25 +354,23 @@ return [
             'süreci adım adım takip edin. ',
             'Görev, Snap!(veya Scratch) içerisinde sanal bir çiçek bahçesi programlayarak ve ekran görüntüsünü veya çalışma sonucunun fotoğrafını çevrimiçi olarak göndererek tamamlanabilir. ',
             'Çiçek bahçesinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları bulunmalıdır. Tercihen çiçekler programlanır, yani çiçek yaprakları tekrar tekrar yerleştirilip döndürülerek(veya çizilip döndürülerek) oluşturulur. ',
-            'Sanal çiçek bahçenizin resmini #MeetandCode etiketiyle paylaşın.'
+            'Sanal çiçek bahçenizin resmini #MeetandCode etiketiyle paylaşın.',
         ],
         'materials' => [
             'Şunu kullanmanızı öneririz',
-            'ancak, proje burada da çalışmaktadır:'
-        ]
+            'ancak, proje burada da çalışmaktadır:',
+        ],
     ],
     'haunted-house' => [
         'title' => 'Hedy\'deki Perili Ev',
-        'author' =>
-            'Felienne Hermans, Leiden Üniversitesi-Ramon Moorlag, I & I-Kod Haftası Hollanda',
+        'author' => 'Felienne Hermans, Leiden Üniversitesi-Ramon Moorlag, I & I-Kod Haftası Hollanda',
         'audience' => 'Öğretmenler ve eğitmenler',
         'duration' => 'Ön bilgiye bağlı olarak 1 veya 2 saat',
         'purposes' => [
             'İnteraktif bir Perili Ev hikâyesi oluşturmak. ',
-            'Hedy ile programlamayı öğrenmek. '
+            'Hedy ile programlamayı öğrenmek. ',
         ],
-        'description' =>
-            'Hedy ile interaktif öğeler kullanarak bir Perili Ev hikâyesi oluşturacaksınız. Kod her çalıştığında yeni bir hikâye oluşturulacak. Hikâye aynı zamanda bilgisayar tarafından sesli olarak okunabilir ve çevrimiçi olarak paylaşılabilir. ',
+        'description' => 'Hedy ile interaktif öğeler kullanarak bir Perili Ev hikâyesi oluşturacaksınız. Kod her çalıştığında yeni bir hikâye oluşturulacak. Hikâye aynı zamanda bilgisayar tarafından sesli olarak okunabilir ve çevrimiçi olarak paylaşılabilir. ',
         'instructions' => [
             'Bir tarayıcıyı açıp hedycode. com adresine giderek göreve başlayabilirsiniz. ',
             'Seviye 1-4 için talimatları izleyin. ‘Level’(Seviye) ve ‘Haunted house(Perili ev) sekmelerini kullanın. ’',
@@ -401,20 +378,19 @@ return [
             'Öğretmenler, Hedy ders planı için',
             'buraya tıklayın',
             'Felienne Hermans\'ın Hedy sunumuna',
-            'bu bağlantıdan ulaşabilirsiniz'
+            'bu bağlantıdan ulaşabilirsiniz',
         ],
         'example' => 'Perili ev örneği seviye',
-        'materials' => ['Hedy internet adresi', 'seviye 1-4']
+        'materials' => ['Hedy internet adresi', 'seviye 1-4'],
     ],
     'inclusive-app-design' => [
         'title' => 'Kapsamlı Uygulama Tasarımı',
         'author' => 'Apple Eğitim',
         'duration' => '60 dakika + isteğe bağlı ilave aktiviteler',
         'purposes' => [
-            'Herkesin erişim sağlayıp anlayabileceği bir uygulama fikri üzerinde beyin fırtınası yapmak, bu fikri planlamak, prototipini belirlemek ve paylaşmak. '
+            'Herkesin erişim sağlayıp anlayabileceği bir uygulama fikri üzerinde beyin fırtınası yapmak, bu fikri planlamak, prototipini belirlemek ve paylaşmak. ',
         ],
-        'description' =>
-            'Harika uygulamalar harika fikirlerle başlar. Bu aktivitede, öğrenciler ilgilendikleri bir konu hakkında uygulama fikirleri sunacaklar, ardından ise kapsam ve erişilebilirliği göz önünde bulundurarak uygulamaların nasıl tasarlandığını keşfedecekler. ',
+        'description' => 'Harika uygulamalar harika fikirlerle başlar. Bu aktivitede, öğrenciler ilgilendikleri bir konu hakkında uygulama fikirleri sunacaklar, ardından ise kapsam ve erişilebilirliği göz önünde bulundurarak uygulamaların nasıl tasarlandığını keşfedecekler. ',
         'instructions' => [
             'Tüm talimatlara bu bağlantıdan ulaşabilirsiniz:',
             'Bu bir saatlik ders planıyla, eğitmenler aşağıdaki konular hakkında öğrencilere yol gösterebilir',
@@ -422,12 +398,12 @@ return [
             'Bir uygulama fikri bulmak için, ilgilenilen konularda beyin fırtınası yapmak',
             'Uygulama fikirlerini belirlemek ve kullanıcı aktivitelerini planlamak',
             'Uygulamaların bir parçasının prototipini Keynote içerisinde oluşturmak',
-            'Prototipleri tanıtmak ve kullanıcıları çeşitli arka plan ve becerilerle nasıl desteklediklerini açıklamak'
+            'Prototipleri tanıtmak ve kullanıcıları çeşitli arka plan ve becerilerle nasıl desteklediklerini açıklamak',
         ],
         'materials' => [
             'Inclusive App Design Activity\'yi (Kapsamlı Uygulama Tasarımı Aktivitesi) Apple Teacher Learning Center\'da(Apple Öğretmen Öğrenim Merkezi) keşfedin',
-            'iPad veya Mac\'te Keynote kullanılması önerilir ancak gerekli değildir.'
-        ]
+            'iPad veya Mac\'te Keynote kullanılması önerilir ancak gerekli değildir.',
+        ],
     ],
     'silly-eyes' => [
         'title' => 'Komik gözler',
@@ -436,33 +412,28 @@ return [
         'purposes' => [
             'Kullanıcı etkileşimli bir proje yapmak.',
             'Bir projeyi renk ve grafik efektleriyle kişiselleştirmek.',
-            'Dijital üretimde tasarım hakkında bilgi sahibi olmak.'
+            'Dijital üretimde tasarım hakkında bilgi sahibi olmak.',
         ],
-        'description' =>
-            'Bu projede, komik gözlü bir karakter tasarlayıp oluşturacaksınız. Karakterin büyük ve komik gözleri, fare imlecini takip ederek karakterinize hayat verecek.',
-        'instructions' =>
-            'Proje açıklamasının tamamına buradan ulaşabilirsiniz',
-        'example' =>
-            'Gobo, Under the sea (Denizler altında) ve Don\'t eat donut (Donut yemeyin) örneklerini inceleyin'
+        'description' => 'Bu projede, komik gözlü bir karakter tasarlayıp oluşturacaksınız. Karakterin büyük ve komik gözleri, fare imlecini takip ederek karakterinize hayat verecek.',
+        'instructions' => 'Proje açıklamasının tamamına buradan ulaşabilirsiniz',
+        'example' => 'Gobo, Under the sea (Denizler altında) ve Don\'t eat donut (Donut yemeyin) örneklerini inceleyin',
     ],
     'train-ai-bot' => [
         'title' => 'Bir Yapay Zekâ (AI) botunu eğitin!',
-        'purposes' =>
-            'Etik meseleleri ve dünya problemlerini ele almada yapay zekânın (AI) nasıl kullanılabildiğini keşfederken, yapay zekâ, makine öğrenimi, eğitim verileri ve yanlılık hakkında bilgi sahibi olmak.',
-        'description' =>
-            'Okyanuslar için bir yapay zekâ botunu yapay zekâ ile eğitin. Bu aktivitede, yapay zekâyı (AI) balığı ve çöpü birbirinden ayıracak şekilde programlayacak veya eğiteceksiniz. Haydi okyanusu temizleyelim!',
+        'purposes' => 'Etik meseleleri ve dünya problemlerini ele almada yapay zekânın (AI) nasıl kullanılabildiğini keşfederken, yapay zekâ, makine öğrenimi, eğitim verileri ve yanlılık hakkında bilgi sahibi olmak.',
+        'description' => 'Okyanuslar için bir yapay zekâ botunu yapay zekâ ile eğitin. Bu aktivitede, yapay zekâyı (AI) balığı ve çöpü birbirinden ayıracak şekilde programlayacak veya eğiteceksiniz. Haydi okyanusu temizleyelim!',
         'instructions' => [
             'Talimatlar video olarak eğitim içerisinde yer almakta',
-            've her seviyenin en üst kısmında gösterilmektedir.'
+            've her seviyenin en üst kısmında gösterilmektedir.',
         ],
         'materials' => [
             'Eğitime buradan ulaşabilirsiniz:',
-            'Bu eğitim 25\'i aşkın dilde mevcuttur'
+            'Bu eğitim 25\'i aşkın dilde mevcuttur',
         ],
-        'more' => ['']
+        'more' => [''],
     ],
     'build-calliope' => [
-        'title' =>    'Kendi Calliope mini fitness eğitmeninizi oluşturun',
+        'title' => 'Kendi Calliope mini fitness eğitmeninizi oluşturun',
         'author' => 'Amazon Future Engineer |  Calliope gGmbH ile tanışın ve kodlamaya başlayın',
         'purposes' => [
             'Dizi, animasyon, tekrar ve değişkenleri eğlenceli şekilde öğrenmek için.',
@@ -471,8 +442,7 @@ return [
             'Kullanılabilirliği kontrol edip düzenleyerek, deneme-yanılma yolu ile bir program optimize etmek için.',
         ],
         'duration' => '20-30 dakika',
-        'description' =>
-            'Katılımcılar, önceden tasarlanan 10 üniteli bir fitness egzersizini yeniden oluşturmak üzere dijital olarak kontrol edilen ve renkli LED ışığı kullanılan bir prototip geliştirecekler.',
+        'description' => 'Katılımcılar, önceden tasarlanan 10 üniteli bir fitness egzersizini yeniden oluşturmak üzere dijital olarak kontrol edilen ve renkli LED ışığı kullanılan bir prototip geliştirecekler.',
         'materials' => [
             'Calliope mini StarterBox (mevcut ise)',
             'Aktivite kaynaklarına erişmek için diz üstü bilgisayar ya da tabletinizden Youtube hesabını ve <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> veya <a href="https://calliope.cc">https://calliope.cc</a> sayfalarını ziyaret edebilirsiniz.',
@@ -488,14 +458,13 @@ return [
             '5 farklı renk seçin ve her renge bir fitness egzersizi atayın, ör. squat ya da jumping jacks. Daha sonra renkler istenilen sırada dizilerek egzersiz yapılabilir.',
         ],
 
-    ]
-,    'common' => [
+    ],    'common' => [
         'share' => 'Projenizin bağlantısını veya kare kodunu Instagram\’da ya da Facebook\’ta paylaşın, #EUCodeWeekChallenge hashtag\’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
         'audience' => [
             'Öğretmenler ve eğitmenler',
             'İlkokul öğrencileri (6-12 yaş)',
             'Ortaokul öğrencileri (12-16 yaş)',
-            'Lise öğrencileri (16-18 yaş)'
+            'Lise öğrencileri (16-18 yaş)',
         ],
     ],
     'code-a-dice' => [
@@ -503,10 +472,9 @@ return [
         'author' => 'Fabrizia Agnello',
         'purposes' => [
             'İnteraktif bilmeceler kodlama',
-            'Gerçek nesne mevcut olmadığında kullanılacak olan rastgele hareket eden bir nesne simülasyonu kodlamak'
+            'Gerçek nesne mevcut olmadığında kullanılacak olan rastgele hareket eden bir nesne simülasyonu kodlamak',
         ],
-        'description' =>
-            'Bu mücadelede, komut verdiğinizde rastgele atılacak olan bir zar kodlayacaksınız. Tıpkı rol yapma oyunlarında kullanılanlar gibi dilediğiniz sayıda yüze sahip herhangi türde bir zar seçebilir ve ses ekleyebilirsiniz. ',
+        'description' => 'Bu mücadelede, komut verdiğinizde rastgele atılacak olan bir zar kodlayacaksınız. Tıpkı rol yapma oyunlarında kullanılanlar gibi dilediğiniz sayıda yüze sahip herhangi türde bir zar seçebilir ve ses ekleyebilirsiniz. ',
         'instructions' => [
             'Scratch üzerinde oturum açın',
             'Bir arka fon seçin',
@@ -516,7 +484,7 @@ return [
             'Zar atıldıktan sonra kostüm rastgele değişecek şekilde kuklayı kodlayın',
             'Ses efektleri ekleyin',
         ],
-        'example' => '20 yüzlü zar atma'
+        'example' => '20 yüzlü zar atma',
     ],
     'personal-trainer' => [
         'title' => 'micro:bit ile kişisel antrenör',
@@ -526,15 +494,13 @@ return [
             'Fiziksel aktiviteleri kontrol etmek üzere kişisel bir cihaz oluşturmak',
             'Spor yaparak sağlıklı olmak amacıyla micro:bit kodlamak',
         ],
-        'description' =>
-            'Bu mücadelede, dinlenme süresiyle birlikte fiziksel egzersiz tekrar sayılarını kontrol etmek üzere micro:bit kodlayacaksınız. Bu sayede okulda, evde veya parkta fiziksel aktivitelerinizi takip edebilirsiniz.'
-        ,
+        'description' => 'Bu mücadelede, dinlenme süresiyle birlikte fiziksel egzersiz tekrar sayılarını kontrol etmek üzere micro:bit kodlayacaksınız. Bu sayede okulda, evde veya parkta fiziksel aktivitelerinizi takip edebilirsiniz.',
         'instructions' => [
             'A+B olduğunda, her saniyede bir ses çıkaracak ve ardından ekranda BAŞLA! yazısı gösterilecek şekilde 3 saniyelik geri sayım sayacı oluşturun',
             'İlk egzersizde, 20 saniye boyunca yanıp sönen 2x2 boyutlarında bir kare gösterin. Ardından ses çalsın ve kare yanıp sönmeyi durdursun. Kalan zamanda 10 saniye boyunca yanıp sönen başka bir görüntü gösterin. Süre dolduğunda ses çalsın.',
             'Ardından aynı işlemi tekrarlayın, fakat bu kez egzersiz süresi boyunca 3x3 boyutlarında bir panel gösterin. 5x5 panel gösterilene dek bu işlemleri tekrarlayın.',
         ],
-        'duration' => '30-40 dakika'
+        'duration' => '30-40 dakika',
     ],
     'create-a-spiral' => [
         'title' => 'Sarmal oluşturma',
@@ -586,7 +552,7 @@ return [
             'Pictoblox aracını kullanmayı öğrenmek ve oluşturulan modeli projeye aktarmak',
             'Pictoblox içerisinde sahneyi ve karakterleri ayarlamak ve değişkenler oluşturup başlatmak',
             'oyunu başlatmak, oyuncu hareketlerini tanımlamak, rastgele yapay zeka hareketlerini programlamak',
-            'Taş, Kağıt, Makas oyununda rakibin yapay zeka olduğu bir oyun oluşturup test etmek.'
+            'Taş, Kağıt, Makas oyununda rakibin yapay zeka olduğu bir oyun oluşturup test etmek.',
 
         ],
         'description' => 'Görüntüler doğrultusunda Öğretilebilir Makine işlevini uygulayarak bir model oluşturmak için şu üç sınıfı kullanacağız: Taş, Kağıt, Makas. Bu modeli Pictoblox üzerine yükleyeceğiz ve bunu yapay zekaya karşı oynayacağımız bir oyun oluşturmada kullanacağız.',
@@ -609,7 +575,7 @@ return [
             'Raunt berabere bitecekse işaretleyin.',
             'Blokları programlayın.',
             'Taş Kağıt Makas Kuklası',
-        ]
+        ],
     ],
     'air-drawing-with-AI' => [
         'title' => 'Yapay zeka ile havaya çizim yapma',
@@ -617,7 +583,7 @@ return [
         'purposes' => [
             'kamera önündeki parmak hareketlerini tespit eden vücut algılama eklentisini kullanarak bir program yazmak.',
             'birkaç kod satırı ve basit bloklarla kodlama yapmak.',
-            'yapay zeka kullanımı örneğini incelemek'
+            'yapay zeka kullanımı örneğini incelemek',
         ],
         'description' => 'Kullanıcının kamera önünde eliyle (işaret parmağıyla) havaya çizim yapmasını ve yaptığı çizimin otomatik olarak Pictoblox sahnesinde gösterilmesini sağlayan bir program oluşturma.',
         'instructions' => [
@@ -633,8 +599,8 @@ return [
             'Kameralı bir dizüstü veya masaüstü bilgisayar',
             'PictoBlox’un en güncel sürümünü indirebilir (önerilir) veya Pictoblox’u çevrim içi olarak (ücretsiz) kullanabilirsiniz',
             'Pictoblox hesabı (ücretsiz)',
-            'İyi bir internet bağlantısı'
-        ]
+            'İyi bir internet bağlantısı',
+        ],
     ],
     'emobot-kliki' => [
         'title' => 'Emobot Kliki',
@@ -643,7 +609,7 @@ return [
             'Makine öğrenimi ve metin tanıma süreçlerine ilişkin temel kavramları öğrenmek.',
             'İletişimde duyguların rolünü anlamak.',
             'Kod kullanarak sohbet robotu ile kullanıcı arasında diyaloglar oluşturmak.',
-            'Bilgisayarların metin analizi yoluyla duygusal farklılıkları nasıl algılayıp buna göre yanıt verdiğini anlamak.'
+            'Bilgisayarların metin analizi yoluyla duygusal farklılıkları nasıl algılayıp buna göre yanıt verdiğini anlamak.',
         ],
         'description' => [
             'Scratch üzerinde olumlu mesajlar için (güzel şeyler söylediğinizde) mutlu ifadeli, olumsuz mesajlar için (kötü ve kaba şeyler söylediğinizde) kızgın ifadeli, anlaşılamayan mesajlar için ise kafası karışmış ifadeli bir Duygu Robotu oluşturun.',
@@ -655,8 +621,7 @@ return [
             '3 yeni etiket ekleyerek yeni bir makine öğrenimi modeli hazırlayın; bunlardan birincisini “güzel”, ikincisini ise “kötü” olarak adlandırın, modelin isminizi de bilmesini istiyorsanız “isim” adlı üçüncü bir etiket oluşturun.',
             'Yeni makine öğrenimi modelini eğitip test edin ve bunu Scratch üzerinde Emobot oluşturmada kullanın.',
             'Scratch 3 editörünü çalıştırın, kedi kuklasını silin, Microsoft Bing Görüntü Oluşturucu tarafından oluşturulmuş 3 yeni kuklayı (mutlu, kızgın ve kafası karışmış bilgisayar simgesi) ekleyin veya Resim simgesine tıklayıp mutlu, kızgın ve kafası karışmış ifadeler için üç farklı kostüm çizerek yeni bir kukla oluşturun.',
-            '“Kod” sekmesine tıklayın ve alttaki komut dizisini girin.']
-        ,
+            '“Kod” sekmesine tıklayın ve alttaki komut dizisini girin.'],
         'example' => [
             'Oluşturduğunuz Emobot Kliki\’yi arkadaşlarınızla paylaşın ve yapay zeka ile duygular hakkında daha fazla bilgi edinin!',
             'Bilgisayar simgesi yerine hayvan gibi başka bir simge de kullanabilirsiniz. Karakteri, kibar ve kaba ifadeler yerine farklı türde mesajları algılayacak şekilde eğitebilirsiniz.',
@@ -673,11 +638,11 @@ return [
             'Yapay zeka kavramlarının (özellikle de yapay zekanın, el hareketlerinin bilgisayarlar tarafından algılanıp yorumlanmasını nasıl mümkün kıldığının) anlaşılmasını sağlamak.',
             'Engelli bireyler için teknolojinin önemine ilişkin farkındalık yaratmak.',
             'Öğrenciler arasında iş birliğine dayalı problem çözmeyi ve ekip çalışmasını teşvik ederek, el hareketi programlarını geliştirmek üzere birlikte çalışmalarını sağlamak.',
-            'Kodlama ve sayısal düşünme becerilerini gerçek hayattaki uygulamalarla bağlantılı hâle getirerek teknolojinin insan hayatı üzerindeki anlamlı etkisini vurgulamak ve Sürdürülebilir Kalkınma Hedefleri (SDG’ler) ile uyumlu hâle gelmek.'
+            'Kodlama ve sayısal düşünme becerilerini gerçek hayattaki uygulamalarla bağlantılı hâle getirerek teknolojinin insan hayatı üzerindeki anlamlı etkisini vurgulamak ve Sürdürülebilir Kalkınma Hedefleri (SDG’ler) ile uyumlu hâle gelmek.',
         ],
         'duration' => [
             '10-12 yaş arası öğrenciler için 90 dakika',
-            '12-15 yaş arası öğrenciler için 45 dakika'
+            '12-15 yaş arası öğrenciler için 45 dakika',
         ],
         'description' => 'Fare veya dokunmatik ekran kullanmaya gerek kalmadan ekran üzerinde çizim yapabilmek amacıyla, yapay zeka “Vücut” eklentisini yaratıcı ve ilgi çekici bir biçimde kullanan blok tabanlı bir Scratch programı oluşturun.',
         'instructions' => [
@@ -695,7 +660,7 @@ return [
             'öğrenci hesabı (ücretsiz)',
             'Kameralı bilgisayar',
             'İnternet bağlantısı',
-        ]
+        ],
     ],
     'circle-of-dots' => [
         'title' => 'Noktalı daire',
@@ -713,7 +678,7 @@ return [
             'Çizgi bloku oluşturma.',
             'Noktalardan oluşan bir daire yapma.',
             'Çizgilerden oluşan bir daire yapma.',
-        ]
+        ],
     ],
     'coding-escape-room' => [
         'title' => 'Kodlama kaçış odası oluşturma',
@@ -721,19 +686,17 @@ return [
         'purposes' => [
             'Kodlama kavramlarını öğretmek/öğrenmek ve bu kavramlar üzerinde düşünmek.',
             'Basit kodlama araçlarını kullanmak.',
-            'Sayısal düşünme ve problem çözme becerilerini geliştirmek.'
+            'Sayısal düşünme ve problem çözme becerilerini geliştirmek.',
         ], 'description' => [
             'Şunun gibi bir kodlama kaçış deneyimi oluşturun:',
-            'Kodlama üzerine bir hikâye yaratmak için Google formlar, Genially veya Google slaytlar gibi herhangi bir aracı kullanabilirsiniz ;).'
+            'Kodlama üzerine bir hikâye yaratmak için Google formlar, Genially veya Google slaytlar gibi herhangi bir aracı kullanabilirsiniz ;).',
 
         ],
         'duration' => '90 dakika',
-        'instructions' =>
-            'Öğrencilerinizi küçük gruplara ayırıp oyun oynamalarını ve ardından bu şablonu kullanarak başka bir mücadele hazırlamalarını sağlayabilirsiniz: '
-        ,
+        'instructions' => 'Öğrencilerinizi küçük gruplara ayırıp oyun oynamalarını ve ardından bu şablonu kullanarak başka bir mücadele hazırlamalarını sağlayabilirsiniz: ',
 
         'materials' => [
-            'Herhangi bir araç (belge, sunum ve sayfa oluşturup paylaşmak üzere Google ve Microsoft platformları) kullanılabilir. BİT ve kodlamayla bağlantılı her türlü kodlama yapısı, aracı veya karakteri kullanılabilir.'
+            'Herhangi bir araç (belge, sunum ve sayfa oluşturup paylaşmak üzere Google ve Microsoft platformları) kullanılabilir. BİT ve kodlamayla bağlantılı her türlü kodlama yapısı, aracı veya karakteri kullanılabilir.',
         ],
         'example' => [
             'BİT geçmişinde önemli rolü olan bazı karakterler ile temel kodlama ve programlama kavramları, oyun yoluyla tanıtılır. Öğrenmenin ve aktif bir biçimde katılım göstermenin en iyi yolu budur. Bu oyun, tıpkı bir mücadele veya yarışma gibi ekipler hâlinde ya da tek başına oynanabilir. Ardından öğrenciler buna benzer bir şey hazırlayarak yaratıcılık ve kodlama becerisi gibi yetkinliklerini geliştirebilirler.',
@@ -746,7 +709,7 @@ return [
         'author' => 'Ágota Klacsákné Tóth',
         'purposes' => [
             'micro:bit üzerinde yılan hareketlerini kodlamak.',
-            'Ortak hareket etmek üzere doğru yerleşim ve zamanlamayı ayarlamak.'
+            'Ortak hareket etmek üzere doğru yerleşim ve zamanlamayı ayarlamak.',
         ],
         'description' => 'Öğrenciler yılanı micro:bit üzerinden birbirlerine doğru yönlendirecek şekilde kod yazmalıdır. Yılan bir micro:bit’ten diğerine kaçıyor gibi görünmelidir.',
         'duration' => '30 dakika',
@@ -757,7 +720,7 @@ return [
             'Zamanlamayı ve yerleşimi göz önünde bulundurun: Yılan bir micro:bit’ten çıkıp yanındaki diğer micro:bit’e gitmelidir.',
             'Daha fazla mücadele: micro:bit v2 ile yılan kendi bilgisayarınızdan çıkana dek müzik çalmasını sağlayın.',
             'Işıkların parlaklığını değiştirerek yılanı tasarlayın.',
-            'Yılanın uzunluğunu veya yılan sayısını artırın.'
+            'Yılanın uzunluğunu veya yılan sayısını artırın.',
         ],
         'example' => [
             'Bu örnekte, 2x2 boyutlarında bir kare kullanılarak 4 micro:bit ile oluşturulmuş 6 piksel uzunluğunda bir yılan bulunmaktadır: ',
@@ -770,8 +733,8 @@ return [
             'İki evre arasındaki zaman, yılanın hızını belirler.',
         ], 'materials' => [
             'micro:bit’ler (mümkünse her öğrenci için)',
-            'makecode.microbit.org editörü için dizüstü veya masaüstü bilgisayar'
-        ]
+            'makecode.microbit.org editörü için dizüstü veya masaüstü bilgisayar',
+        ],
     ],
     'illustrate-a-joke' => [
         'title' => 'Bitsy ile şaka hazırlama',
@@ -786,10 +749,10 @@ return [
             'avatarınızın gitmesi gereken nesne',
             'bir oda, yani programınızın arka zemini',
             'iki mesaj: bir soru ve bir cevap',
-            'Bitmiş oyun, html dosyası olarak indirilebilir.'
+            'Bitmiş oyun, html dosyası olarak indirilebilir.',
         ],
         'example' => 'Bu web sitesinde, bir şaka örneği ve dijital yazı tahtası bağlantısı bulunmaktadır:',
-        'materials' => 'bitsy, tarayıcı üzerinde çalışır'
+        'materials' => 'bitsy, tarayıcı üzerinde çalışır',
     ],
     'app-that-counts-in-several-languages' => [
         'title' => 'Farklı dillerde sayı sayma uygulaması',
@@ -798,7 +761,7 @@ return [
             'Basit bir uygulama oluşturmayı öğrenmek.',
             'Bloklar aracılığıyla programlama yapmayı öğrenmek.',
             'Etiket, düğme, görüntü, algılayıcı ve ortam dosyası eklemeyi öğrenmek.',
-            'Uygulama ekranında ögeleri düzenlemeyi öğrenmek.'
+            'Uygulama ekranında ögeleri düzenlemeyi öğrenmek.',
         ],
         'description' => 'Uygulama, tek bir düğmeye basarak birden fazla dilde sayı saymayı sağlar. Kullanıcı akıllı telefonunu her salladığında sayaç sıfırlanır. Buradaki mücadele, başka bir dil eklemektir.',
         'instructions' => [
@@ -810,61 +773,60 @@ return [
         'materials' => [
             'Bir uygulama geliştirmek için internet erişimi olan bir masaüstü veya dizüstü bilgisayarınız olmalıdır.',
             '<a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a> üzerinden erişilebilen MIT APP Inventor platformunda bir hesap açın',
-            'Geliştirdiğiniz uygulamayı test etmek için akıllı telefonunuza MIT AI2 Companion uygulamasını kurmanız gerekmektedir.'
-        ]
+            'Geliştirdiğiniz uygulamayı test etmek için akıllı telefonunuza MIT AI2 Companion uygulamasını kurmanız gerekmektedir.',
+        ],
     ],
     'coding-with-art-through-storytelling' => [
-    'title' => 'Hikâye anlatarak kodlama sanatı',
-    'author' => 'Maria Tsapara ve Anthi Arkouli',
-    'purposes' => [
-        'Sanatla ilgilenerek gözlem, yorumlama ve sorgulama becerilerini geliştirmek.',
-        'Yaratıcı olmak ve başkalarıyla ortak bir hedef için iş birliği yapmak',
-        'Hikâyeyi yeniden anlatabilmek için bir algoritma oluşturmak.',
-    ],
-    'description' => 'Bu mücadelede, öğrenciler sanat eserlerinden ilham alıp bir hikâye oluşturacak ve bu hikâyeyi tasvir edeceklerdir. Ardından, programlanabilir bir robotik kit kullanarak veya bilgisayarsız bir aktivite olarak hikâyeyi yeniden anlatmaya çalışacaklardır.',
-    'materials' => [
-        'Bu aktivite, bilgisayarsız bir aktivite olarak veya beebot/bluebot/robot fare gibi eğitici ve programlanabilir bir robot kullanılarak gerçekleştirilebilir.',
-        'beebot ok kartları veya bilgisayarsız aktivite için ok kartları',
-        'Yunanca',
-        'Project Zero\'s Thinking Routine Toolbox hakkında daha fazla bilgi için şu adresi ziyaret edebilirsiniz:'
+        'title' => 'Hikâye anlatarak kodlama sanatı',
+        'author' => 'Maria Tsapara ve Anthi Arkouli',
+        'purposes' => [
+            'Sanatla ilgilenerek gözlem, yorumlama ve sorgulama becerilerini geliştirmek.',
+            'Yaratıcı olmak ve başkalarıyla ortak bir hedef için iş birliği yapmak',
+            'Hikâyeyi yeniden anlatabilmek için bir algoritma oluşturmak.',
+        ],
+        'description' => 'Bu mücadelede, öğrenciler sanat eserlerinden ilham alıp bir hikâye oluşturacak ve bu hikâyeyi tasvir edeceklerdir. Ardından, programlanabilir bir robotik kit kullanarak veya bilgisayarsız bir aktivite olarak hikâyeyi yeniden anlatmaya çalışacaklardır.',
+        'materials' => [
+            'Bu aktivite, bilgisayarsız bir aktivite olarak veya beebot/bluebot/robot fare gibi eğitici ve programlanabilir bir robot kullanılarak gerçekleştirilebilir.',
+            'beebot ok kartları veya bilgisayarsız aktivite için ok kartları',
+            'Yunanca',
+            'Project Zero\'s Thinking Routine Toolbox hakkında daha fazla bilgi için şu adresi ziyaret edebilirsiniz:',
 
+        ],
+        'example' => [
+            'Öğretmen, hikâyedeki ilk olaya ulaşmak amacıyla Bee-Bot veya başka bir robot için komutlar içeren kartları kullanarak algoritma tasarlamayı modellemek üzere öğrencilerle birlikte mat üzerinde çalışır. Öğrenciler, 3-4 kişilik ekipler hâlinde çalışarak, robotun bir sonraki dizgeye ilerlemesi için bir algoritma tasarlarlar. Öğrenciler, sınıf matı üzerinde algoritmalarını test ederler ve gerekiyorsa hata ayıklama yaparlar.',
+            'Diledikleri kadar hikâye olayı ilave ederek devam ederler',
+            'Bu aktivite, bilgisayarsız bir aktivite olarak da gerçekleştirilebilir.',
+            'Çocuklardan biri robot, diğeri de bilgisayar programcısı olur. Bilgisayar programcısı, robotun bir görüntüden diğerine geçerek hikâyeyi yeniden anlatmasına yardımcı olmak için ok kartlarını kullanarak algoritmik bir yol oluşturur. Robot bir görüntüye ulaştığında, her seferinde kendisinden hikâyenin bir kısmını anlatması istenir.',
+        ],
+        'instructions' => [
+            'Öğretmen, öğrencilerden bir tabloyu/fotoğrafı gözlemlemelerini ister.',
+            'Hikâye oluşturmak için "Giriş, Gelişme, Sonuç" (Project Zero - Harvard School) düşünme rutinini kullanırlar.',
+            'Öğretmen, öğrencilere "Bu sanat eseri, bir hikâyenin girişi/gelişmesi/sonucu ise bunun ardından/hikâye bitmeden önce/en sonda ne olabilir?" sorusunu sorar.',
+            'Öğrenciler hikâyedeki olayları tasvir ederler.',
+            'Öğrenciler hikâyeyi bir araya getirip olayları çalışma ekranına yerleştirirler. Beebot’un hikâyeyi yeniden anlatmasına yardımcı olmak için ok kartlarını kullanarak bir algoritma oluştururlar.',
+        ],
     ],
-    'example' => [
-        'Öğretmen, hikâyedeki ilk olaya ulaşmak amacıyla Bee-Bot veya başka bir robot için komutlar içeren kartları kullanarak algoritma tasarlamayı modellemek üzere öğrencilerle birlikte mat üzerinde çalışır. Öğrenciler, 3-4 kişilik ekipler hâlinde çalışarak, robotun bir sonraki dizgeye ilerlemesi için bir algoritma tasarlarlar. Öğrenciler, sınıf matı üzerinde algoritmalarını test ederler ve gerekiyorsa hata ayıklama yaparlar.',
-        'Diledikleri kadar hikâye olayı ilave ederek devam ederler',
-        'Bu aktivite, bilgisayarsız bir aktivite olarak da gerçekleştirilebilir.',
-        'Çocuklardan biri robot, diğeri de bilgisayar programcısı olur. Bilgisayar programcısı, robotun bir görüntüden diğerine geçerek hikâyeyi yeniden anlatmasına yardımcı olmak için ok kartlarını kullanarak algoritmik bir yol oluşturur. Robot bir görüntüye ulaştığında, her seferinde kendisinden hikâyenin bir kısmını anlatması istenir.',
-    ],
-    'instructions' => [
-        'Öğretmen, öğrencilerden bir tabloyu/fotoğrafı gözlemlemelerini ister.',
-        'Hikâye oluşturmak için "Giriş, Gelişme, Sonuç" (Project Zero - Harvard School) düşünme rutinini kullanırlar.',
-        'Öğretmen, öğrencilere "Bu sanat eseri, bir hikâyenin girişi/gelişmesi/sonucu ise bunun ardından/hikâye bitmeden önce/en sonda ne olabilir?" sorusunu sorar.',
-        'Öğrenciler hikâyedeki olayları tasvir ederler.',
-        'Öğrenciler hikâyeyi bir araya getirip olayları çalışma ekranına yerleştirirler. Beebot’un hikâyeyi yeniden anlatmasına yardımcı olmak için ok kartlarını kullanarak bir algoritma oluştururlar.'
-    ],
-],
     'coding-with-legoboost' => [
-    'title' => 'Scratch eklentisi olan LegoBoost ile kodlama ve programlama',
-    'author' => 'Lidia Ristea',
-    'purposes' => [
-        'LegoBoost kullanarak modeller oluşturmak.',
-        'Scratch üzerinde programlama becerilerini geliştirmek.',
-        'basit veya karmaşık komutlar kullanarak robotları programlamak.'
+        'title' => 'Scratch eklentisi olan LegoBoost ile kodlama ve programlama',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'LegoBoost kullanarak modeller oluşturmak.',
+            'Scratch üzerinde programlama becerilerini geliştirmek.',
+            'basit veya karmaşık komutlar kullanarak robotları programlamak.',
+        ],
+        'description' => 'Bu mücadelede öğrenciler, robotların ileri geri gitmesi, engellerden kaçması ve sesli komut alması için Scratch-LegoBoost eklentisini kullanarak uygulamaya kod gireceklerdir.',
+        'duration' => '120 dakika',
+        'instructions' => [
+            'Scratch.mit.edu uygulamasında oturum açın.',
+            'Scratch Bağlantısını çalıştırın ve Dizüstü Bilgisayarınızda Bluetooth’u etkinleştirin.',
+            'Scratch üzerinde Eklenti Ekle ögesine tıklayın ve LegoBoost’u seçin.',
+            'AB Kod Haftası ile ilgili bir resim ekleyin.',
+            'İki AB motorunu AÇIK konuma getirin, kırmızı renkli bir engelle karşılaştıklarında ise KAPALI konuma getirin.',
+            'Yeşil renkte A motorunu, siyah renkte ise B motorunu AÇIK konuma getirin.',
+            'Yeşil, kırmızı ve siyah engeller bir güzergâh üzerine yerleştirilecektir.',
+            'Bir engelle karşılaşıldığında yazıyı sese çevirme, oklardan dönüş yapma ve hareket etme komutları ekleyin.',
+            'Test edin!',
+        ],
     ],
-    'description' => 'Bu mücadelede öğrenciler, robotların ileri geri gitmesi, engellerden kaçması ve sesli komut alması için Scratch-LegoBoost eklentisini kullanarak uygulamaya kod gireceklerdir.',
-    'duration' => '120 dakika',
-    'instructions' => [
-        'Scratch.mit.edu uygulamasında oturum açın.',
-        'Scratch Bağlantısını çalıştırın ve Dizüstü Bilgisayarınızda Bluetooth’u etkinleştirin.',
-        'Scratch üzerinde Eklenti Ekle ögesine tıklayın ve LegoBoost’u seçin.',
-        'AB Kod Haftası ile ilgili bir resim ekleyin.',
-        'İki AB motorunu AÇIK konuma getirin, kırmızı renkli bir engelle karşılaştıklarında ise KAPALI konuma getirin.',
-        'Yeşil renkte A motorunu, siyah renkte ise B motorunu AÇIK konuma getirin.',
-        'Yeşil, kırmızı ve siyah engeller bir güzergâh üzerine yerleştirilecektir.',
-        'Bir engelle karşılaşıldığında yazıyı sese çevirme, oklardan dönüş yapma ve hareket etme komutları ekleyin.',
-        'Test edin!'
-    ]
-]
-
 
 ];

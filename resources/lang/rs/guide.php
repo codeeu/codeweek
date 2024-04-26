@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Vodič',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Registrujte svoj događaj ovde',
     'what' => [
         'title' => 'Šta je EU nedelja programiranja?',
-        'content' => '<p>EU nedelja programiranja je samonikli pokret koji vode volonteri i koji podržava Evropska komisija. Svako – škole, nastavnici, biblioteke, klubovi programiranja, firme, vladine agencije – može da organizuje događaj #EUCodeWeek i da ga doda na <a href="/events">codeweek.eu</a> mapu.</p>'
+        'content' => '<p>EU nedelja programiranja je samonikli pokret koji vode volonteri i koji podržava Evropska komisija. Svako – škole, nastavnici, biblioteke, klubovi programiranja, firme, vladine agencije – može da organizuje događaj #EUCodeWeek i da ga doda na <a href="/events">codeweek.eu</a> mapu.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Šta vam je potrebno da biste organizovali događaj?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Registrujte učesnike.</strong> Ukoliko raspolažete ograničenim prostorom, možete da koristite onlajn alate kao što su <a href="https://docs.google.com/forms/">Google forms</a> i <a
                         href="https://www.eventbrite.com/">Eventbrite</a> za registrovanje učesnika.',
             '8' => 'Ne zaboravite da <a href="/add">prikačite događaj</a> na <a href="/events">mapu događaja Nedelje programiranja</a>!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Kako organizovati događaj?',
@@ -34,24 +33,24 @@ return [
             '4' => '<strong>Prenesite vesti!</strong> Promovišite i delite šta ste radili tokom događaja na društvenim medijima koristeći heš oznaku #EUCodeWeek. Takođe možete da podelite informacije u <a
                         href="https://www.facebook.com/groups/774720866253044/">grupi nastavnika EU nedelje programiranja</a> i na Twitter-u (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Pričajte o događaju sa prijateljima, kolegama, u lokalnim medijima i napravite saopštenje za javnost!',
             '5' => 'Ne zaboravite da <a href="/add">dodate događaj</a> na <a href="/events">mapu događaja Nedelje programiranja</a>!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Promotivni materijal',
         'text' => '<p>Posetite naš <a href="http://blog.codeweek.eu/">blog</a> za najnovije informacije i slobodno prilagodite najnovije saopštenje za štampu vašim potrebama ili napravite sopstveno:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">U pripremama za proslavu EU nedelje programiranja 2019</a> (dostupno na 29 jezika)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">U pripremama za proslavu EU nedelje programiranja 2019</a> (dostupno na 29 jezika)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Preuzmite sledeći materijal uz koji ćete lako započeti pripreme:',
         'communication_toolkit' => 'Priručnik za komunikaciju',
-        'teachers_toolkit' => 'Materijal za nastavnike'
+        'teachers_toolkit' => 'Materijal za nastavnike',
     ],
     'questions' => [
         'title' => 'Pitanja?',
-        'content' => '<p>Ukoliko imate pitanja u vezi sa organizacijom i promocijom svog #EUCodeWeek događaja, stupite u kontakt sa jednim od <a href="/ambassadors">ambasadora EU nedelje programiranja</a> iz svoje zemlje.</p>'
-    ]
+        'content' => '<p>Ukoliko imate pitanja u vezi sa organizacijom i promocijom svog #EUCodeWeek događaja, stupite u kontakt sa jednim od <a href="/ambassadors">ambasadora EU nedelje programiranja</a> iz svoje zemlje.</p>',
+    ],
 
 ];

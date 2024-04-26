@@ -25,27 +25,25 @@ return [
         'label' => 'Broj učesnika',
     ],
     'average_participant_age' => [
-        'label'=>'Prosečna starost učesnika',
+        'label' => 'Prosečna starost učesnika',
     ],
     'percentage_of_females' => [
         'label' => 'Procenat devojaka',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Promotivni kod „Nedelja programiranja za sve“',
-        'help' => 'Ovde možete uneti svoj kod „Nedelja programiranja za sve“ ukoliko ga imate. Ako ne učestvujete, samo preskočite ovo polje.'
+        'help' => 'Ovde možete uneti svoj kod „Nedelja programiranja za sve“ ukoliko ga imate. Ako ne učestvujete, samo preskočite ovo polje.',
     ],
     'name_for_certificate' => [
         'label' => 'Ime na koje da glasi sertifikat',
-        'help' => 'Promenite naziv u ime organizatora događaja koji će dobiti sertifikat o učešću u Nedelji programiranja. Molimo vas da koristite samo ASCII (latinska) slova Slova sa akcentima, umlautima i slično nisu podržana.'
+        'help' => 'Promenite naziv u ime organizatora događaja koji će dobiti sertifikat o učešću u Nedelji programiranja. Molimo vas da koristite samo ASCII (latinska) slova Slova sa akcentima, umlautima i slično nisu podržana.',
     ],
     'submit' => 'Pošaljite prijavu na događaj',
-    'thanks_page'=>[
-        'title'=>'Hvala što ste prijavili svoj događaj!',
-        'certificate_ready'=>'Vaš sertifikat je spreman.',
-        'download_button'=>'Kliknite ovde za preuzimanje.',
-        'back_events'=>'Vratite se na svoj događaj'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Hvala što ste prijavili svoj događaj!',
+        'certificate_ready' => 'Vaš sertifikat je spreman.',
+        'download_button' => 'Kliknite ovde za preuzimanje.',
+        'back_events' => 'Vratite se na svoj događaj',
+    ],
 
 ];

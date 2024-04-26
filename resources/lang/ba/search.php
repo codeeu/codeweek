@@ -21,7 +21,7 @@ return [
     'last_year_events' => [
         'label' => 'Uključite prošlogodišnja događanja',
         'yes' => 'Da',
-        'no' => 'Ne'
+        'no' => 'Ne',
     ],
     'search_counter' => 'uskladite svoje kriterije pretrage',
     'event' => 'događaj',

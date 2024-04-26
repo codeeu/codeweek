@@ -8,14 +8,12 @@ class PodcastSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
         $this->call([
             PodcastGuestSeeder::class,
-            PodcastResourceSeeder::class
+            PodcastResourceSeeder::class,
         ]);
     }
 }

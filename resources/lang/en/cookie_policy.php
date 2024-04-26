@@ -20,7 +20,7 @@ return [
                 certain period of time.</p>
             <p>That way, you don’t have to re-enter them when browsing around the site during the same visit.</p>
             <p>Cookies can also be used to establish anonymised statistics about the browsing experience on our
-                sites.</p>'
+                sites.</p>',
     ],
     'how' => [
         'title' => 'How do we use cookies?',
@@ -31,31 +31,31 @@ return [
             'title' => 'The <strong>3 types of first-party cookie</strong> we use are to:',
             '1' => 'store visitor preferences',
             '2' => 'make our websites operational',
-            '3' => 'gather analytics data (about user behaviour)'
+            '3' => 'gather analytics data (about user behaviour)',
         ],
         'table' => [
-            'name'=>'Name',
-            'service'=>'Service',
-            'purpose'=>'Purpose',
-            'type_duration'=>'Cookie type and duration',
+            'name' => 'Name',
+            'service' => 'Service',
+            'purpose' => 'Purpose',
+            'type_duration' => 'Cookie type and duration',
         ],
         'visitor_preferences' => [
-            'title'=> 'Visitor preferences',
-            'text'=> '<p>These are set by us and only we can read them. They remember:</p>',
-            'item'=> 'if you have agreed to (or refused) this site’s cookie policy',
+            'title' => 'Visitor preferences',
+            'text' => '<p>These are set by us and only we can read them. They remember:</p>',
+            'item' => 'if you have agreed to (or refused) this site’s cookie policy',
             'table' => [
                 '1' => [
                     'service' => 'Cookie consent kit',
                     'purpose' => 'Stores your cookie preferences (so you won’t be asked again)',
                     'type_duration' => 'First-party session cookie deleted after you quit your browser',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Operational cookies',
             'text' => '<p>There are some cookies that we have to include in order for certain web pages to function. For this
                 reason,they do not require your consent. In particular:</p>',
-            'item' => 'technical cookies required by certain IT systems'
+            'item' => 'technical cookies required by certain IT systems',
         ],
         'technical_cookies' => [
             'title' => 'Technical cookies',
@@ -71,8 +71,8 @@ return [
                 '3' => [
                     'purpose' => 'Stores user\'s preferred language',
                     'type_duration' => 'First-party session cookie, deleted after you quit your browser',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analytics cookies',
@@ -105,9 +105,9 @@ return [
                     'service' => 'Web analytics service, based on Matomo open source software',
                     'purpose' => 'Identifies the pages viewed by the same user during the same visit. (anonymously – no personal information is collected on the user).',
                     'type_duration' => 'First-party persistent cookie, 30 minutes',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -119,8 +119,8 @@ return [
                     <p>But if you do not view this content, no third-party cookies are installed on your device.</p>
                     Third-party providers on Codeweek',
             '2' => 'These third-party services are outside of the control of the Codeweek Website. Providers may, at any time,
-                change their terms of service, purpose and use of cookies, etc.'
-        ]
+                change their terms of service, purpose and use of cookies, etc.',
+        ],
     ],
     'how-manage' => [
         'title' => 'How can you manage cookies?',
@@ -139,6 +139,6 @@ return [
                 have to manually adjust some preferences every time you visit a site/page. And some services and
                 functionalities may not work properly at all (e.g. profile logging-in).</p>
                 <strong>Managing our analytics cookies</strong>
-                <p>You can manage your preferences concerning cookies from our Analytics on the <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">dedicated page.</a></p>'
-    ]
+                <p>You can manage your preferences concerning cookies from our Analytics on the <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">dedicated page.</a></p>',
+    ],
 ];

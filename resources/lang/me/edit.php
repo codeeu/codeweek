@@ -29,12 +29,12 @@ return [
         'header' => 'Vaši kontakt podaci',
         'text_1' => 'Ovi podaci biće dostupni samo ',
         'link_1' => 'Ambasadorima Evropske nedjelje programiranja',
-        'text_2'=> ' i organizatorima Nedjelje
+        'text_2' => ' i organizatorima Nedjelje
     programiranja, koji 
     će provjeriti vaš događaj prije nego se pojavi na mapi i mogu vas kontaktirati ukoliko bude potrebno 
     unijeti izmjene ili 
     kako bi sproveli ankete u statističke svrhe, a po završetku događaja',
-        'contact_email' => 'Vaša email adresa za kontakt'
-    ], 
-    'edit' => 'Urediti događaj'
+        'contact_email' => 'Vaša email adresa za kontakt',
+    ],
+    'edit' => 'Urediti događaj',
 ];

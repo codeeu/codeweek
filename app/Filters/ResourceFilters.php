@@ -2,6 +2,8 @@
 
 namespace App\Filters;
 
+use Illuminate\Database\Eloquent\Builder;
+
 class ResourceFilters extends Filters
 {
     /**
@@ -13,21 +15,17 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by section (teach or learn)
-     *
-     * @param  string $selectedSection
-     * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedSection($selectedSection)
+    protected function selectedSection(string $selectedSection): Builder
     {
-
 
         //if (is_null($selectedSection)) return;
 
-        if ($selectedSection === "learn") {
+        if ($selectedSection === 'learn') {
             return $this->builder->where('learn', '=', true);
         }
 
-        if ($selectedSection === "teach") {
+        if ($selectedSection === 'teach') {
             return $this->builder->where('teach', '=', true);
         }
 
@@ -36,34 +34,34 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by name
      *
-     * @param  string $name
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @param  string  $name
      */
-    protected function searchInput($searchInput)
+    protected function searchInput($searchInput): Builder
     {
-        if (is_null($searchInput)) return;
+        if (is_null($searchInput)) {
+            return $this->builder;
+        }
 
         $result = $this->builder->where(function ($q) use ($searchInput) { // $term is the search term on the query string
-            $q->where('name', 'like', '%' . $searchInput . '%')
-                ->orWhere('description', 'like', '%' . $searchInput . '%');
-    });
+            $q->where('name', 'like', '%'.$searchInput.'%')
+                ->orWhere('description', 'like', '%'.$searchInput.'%');
+        });
 
         return $result;
     }
 
     /**
      * Filter the query by selectedLevels
-     *
-     * @param  string $selectedLevels
-     * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedLevels($selectedLevels)
+    protected function selectedLevels(array $selectedLevels): Builder
     {
-        if (sizeof($selectedLevels) == 0) return;
-        $plucked = collect($selectedLevels)->pluck("id");
+        if (count($selectedLevels) == 0) {
+            return $this->builder;
+        }
+        $plucked = collect($selectedLevels)->pluck('id');
 
         return $this->builder
-            ->leftJoin('resource_item_resource_level', 'resource_items.id', "=", "resource_item_resource_level.resource_item_id")
+            ->leftJoin('resource_item_resource_level', 'resource_items.id', '=', 'resource_item_resource_level.resource_item_id')
             ->whereIn('resource_item_resource_level.resource_level_id', $plucked)
             ->groupBy('resource_items.id');
 
@@ -71,17 +69,16 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedTypes
-     *
-     * @param  string $selectedTypes
-     * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedTypes($selectedTypes)
+    protected function selectedTypes(array $selectedTypes): Builder
     {
-        if (sizeof($selectedTypes) == 0) return;
-        $plucked = collect($selectedTypes)->pluck("id");
+        if (count($selectedTypes) == 0) {
+            return $this->builder;
+        }
+        $plucked = collect($selectedTypes)->pluck('id');
 
         return $this->builder
-            ->leftJoin('resource_item_resource_type', 'resource_items.id', "=", "resource_item_resource_type.resource_item_id")
+            ->leftJoin('resource_item_resource_type', 'resource_items.id', '=', 'resource_item_resource_type.resource_item_id')
             ->whereIn('resource_item_resource_type.resource_type_id', $plucked)
             ->groupBy('resource_items.id');
 
@@ -89,17 +86,16 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedSubjects
-     *
-     * @param  string $selectedSubjects
-     * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedSubjects($selectedSubjects)
+    protected function selectedSubjects(array $selectedSubjects): Builder
     {
-        if (sizeof($selectedSubjects) == 0) return;
-        $plucked = collect($selectedSubjects)->pluck("id");
+        if (count($selectedSubjects) == 0) {
+            return $this->builder;
+        }
+        $plucked = collect($selectedSubjects)->pluck('id');
 
         return $this->builder
-            ->leftJoin('resource_item_resource_subject', 'resource_items.id', "=", "resource_item_resource_subject.resource_item_id")
+            ->leftJoin('resource_item_resource_subject', 'resource_items.id', '=', 'resource_item_resource_subject.resource_item_id')
             ->whereIn('resource_item_resource_subject.resource_subject_id', $plucked)
             ->groupBy('resource_items.id');
 
@@ -107,38 +103,34 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedCategories
-     *
-     * @param  string $selectedCategories
-     * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedCategories($selectedCategories)
+    protected function selectedCategories(array $selectedCategories): Builder
     {
-        if (sizeof($selectedCategories) == 0) return;
-        $plucked = collect($selectedCategories)->pluck("id");
+        if (count($selectedCategories) == 0) {
+            return $this->builder;
+        }
+        $plucked = collect($selectedCategories)->pluck('id');
 
         return $this->builder
-            ->leftJoin('resource_category_resource_item', 'resource_items.id', "=", "resource_category_resource_item.resource_item_id")
+            ->leftJoin('resource_category_resource_item', 'resource_items.id', '=', 'resource_category_resource_item.resource_item_id')
             ->whereIn('resource_category_resource_item.resource_category_id', $plucked)
             ->groupBy('resource_items.id');
 
     }
 
-
     /**
      * Filter the query by selectedLanguages
-     *
-     * @param  string $selectedLanguages
-     * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedLanguages($selectedLanguages)
+    protected function selectedLanguages(array $selectedLanguages): Builder
     {
 
-        if (sizeof($selectedLanguages) == 0) return;
-        $plucked = collect($selectedLanguages)->pluck("id");
-
+        if (count($selectedLanguages) == 0) {
+            return $this->builder;
+        }
+        $plucked = collect($selectedLanguages)->pluck('id');
 
         return $this->builder
-            ->leftJoin('resource_item_resource_language', 'resource_items.id', "=", "resource_item_resource_language.resource_item_id")
+            ->leftJoin('resource_item_resource_language', 'resource_items.id', '=', 'resource_item_resource_language.resource_item_id')
             ->whereIn('resource_item_resource_language.resource_language_id', $plucked)
             ->groupBy('resource_items.id');
 
@@ -146,22 +138,18 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedProgrammingLanguages
-     *
-     * @param  string $selectedProgrammingLanguages
-     * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedProgrammingLanguages($selectedProgrammingLanguages)
+    protected function selectedProgrammingLanguages(array $selectedProgrammingLanguages): Builder
     {
-        if (sizeof($selectedProgrammingLanguages) == 0) return;
-        $plucked = collect($selectedProgrammingLanguages)->pluck("id");
-
+        if (count($selectedProgrammingLanguages) == 0) {
+            return $this->builder;
+        }
+        $plucked = collect($selectedProgrammingLanguages)->pluck('id');
 
         return $this->builder
-            ->leftJoin('res_pl_pivot', 'resource_items.id', "=", "res_pl_pivot.resource_item_id")
+            ->leftJoin('res_pl_pivot', 'resource_items.id', '=', 'res_pl_pivot.resource_item_id')
             ->whereIn('res_pl_pivot.resource_programming_language_id', $plucked)
             ->groupBy('resource_items.id');
 
     }
-
-
 }

@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Organizovano od strane: ',
+    'organised_by' => 'Organizovano od strane: ',
     'contact_email' => 'Email adresa za kontakt: ',
     'happening_at' => 'Događa se u: ',
     'from' => 'Od ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Klikni da pošalješ ovaj email prijatelju',
         'subject' => 'Pogledaj ovaj fenomenalan događaj o programiranju ',
         'body_1' => 'Hej, baci pogled na ',
-        'body_2' => 'Događaj u '
+        'body_2' => 'Događaj u ',
     ],
     'edit' => 'Uredi događaj',
     'note' => 'NAPOMENA: ',
     'pending_warning' => 'Ovaj događaj još uvijek analiziraju ',
     'pending_link' => 'moderatori',
-    'nearby_upcoming_events' => 'Predstojeći događaji u okruženju:'
+    'nearby_upcoming_events' => 'Predstojeći događaji u okruženju:',
 ];

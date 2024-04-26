@@ -6,10 +6,10 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\View\View;
 
 class BadgesController extends Controller
 {
-
     public function my(Request $request)
     {
 
@@ -21,7 +21,7 @@ class BadgesController extends Controller
     public function user(Request $request, User $user)
     {
 
-        if (!($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())) {
+        if (! ($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())) {
             abort(403, 'You are not allowed');
         }
 
@@ -30,15 +30,14 @@ class BadgesController extends Controller
         return $this->buildPage($year, $user);
     }
 
-    public function leaderboard(Request $request)
+    public function leaderboard(Request $request): View
     {
 
         //  $users = User::with('experience')->role('leading teacher')->orderByDesc('experience.points')->paginate(15);
         $year = $request['year'] ?? Carbon::now()->year;
         $page = $request['page'] ?? 1;
 
-        $users = User
-            ::role('leading teacher')
+        $users = User::role('leading teacher')
             ->join('experiences', 'users.id', '=', 'experiences.user_id')
             ->where('experiences.year', '=', $year)
             ->orderByDesc('experiences.points')
@@ -46,22 +45,17 @@ class BadgesController extends Controller
             ->paginate(50)
             ->withQueryString();
 
-
-
         $rank = $users->firstItem();
-
 
         return view('badges.leaderboard', [
             'years' => range(\Carbon\Carbon::now()->year, 2018, -1),
             'users' => $users,
             'rank' => $rank,
-            'year' => $year
+            'year' => $year,
         ]);
     }
 
     /**
-     * @param $year
-     * @param User $user
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function buildPage($year, User $user)
@@ -80,7 +74,6 @@ class BadgesController extends Controller
 
         $userAchievements = $user->achievements;
 
-
         return view('badges.user', [
             'user' => $user,
             'achievements' => $achievements,
@@ -90,6 +83,4 @@ class BadgesController extends Controller
             'influencerBadges' => $influencerBadges,
         ]);
     }
-
-
 }

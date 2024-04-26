@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Táto lokalita používa súbory cookies na zlepšenie funkcií prehliadania',
-    'accept'=>'Povoliť cookies',
-    'refuse'=>'Zakázať cookies',
+    'accept' => 'Povoliť cookies',
+    'refuse' => 'Zakázať cookies',
     'cookies' => 'Súbory cookies',
-    'find_out_more_on'=>'Prečítajte si informácie o tom, ',
+    'find_out_more_on' => 'Prečítajte si informácie o tom, ',
     'how_we_use' => 'ako používame cookies a ako môžete zmeniť tieto nastavenia',
-
 
 ];

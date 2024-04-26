@@ -25,27 +25,25 @@ return [
         'label' => 'Contagem de participantes',
     ],
     'average_participant_age' => [
-        'label'=>'Idade média dos participantes',
+        'label' => 'Idade média dos participantes',
     ],
     'percentage_of_females' => [
         'label' => 'Percentagem de participantes do sexo feminino',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Código de participação «Codeweek4All»',
-        'help' => 'Caso tenha obtido um código para o desafio Codeweek4All, pode introduzi-lo aqui. Se não for participante, ignore este campo.'
+        'help' => 'Caso tenha obtido um código para o desafio Codeweek4All, pode introduzi-lo aqui. Se não for participante, ignore este campo.',
     ],
     'name_for_certificate' => [
         'label' => 'Nome para o certificado',
-        'help' => 'Altere para o nome do organizador do evento que receberá um certificado de participação na Semana da Programação. Utilize apenas carateres ASCII (latim). Não são permitidas letras com acentos, tremas e similares.'
+        'help' => 'Altere para o nome do organizador do evento que receberá um certificado de participação na Semana da Programação. Utilize apenas carateres ASCII (latim). Não são permitidas letras com acentos, tremas e similares.',
     ],
     'submit' => 'Enviar Comunicação de Evento',
-    'thanks_page'=>[
-        'title'=>'Obrigado por comunicar o seu evento!',
-        'certificate_ready'=>'O seu certificado está pronto.',
-        'download_button'=>'Clique aqui para descarregá-lo.',
-        'back_events'=>'Voltar para o seu evento'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Obrigado por comunicar o seu evento!',
+        'certificate_ready' => 'O seu certificado está pronto.',
+        'download_button' => 'Clique aqui para descarregá-lo.',
+        'back_events' => 'Voltar para o seu evento',
+    ],
 
 ];

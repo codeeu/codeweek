@@ -27,5 +27,5 @@ return [
     'reset' => 'Irrisettja l-Password Tiegħek',
     'send_password' => 'Ibgħat il-Link tar-Risettjar tal-Password',
     'confirm_password' => 'Ikkonferma l-Password',
-    'name' => 'isem'
+    'name' => 'isem',
 ];

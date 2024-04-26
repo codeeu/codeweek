@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Quali paesi sono animati da attività di programmazione?',
-    'paragraph'=>'Il tabellone è ordinato in base al numero di eventi di programmazione elencati per popolazione, quindi non sorprenderti se vedrai alcuni dei paesi più piccoli in cima alla lista!',
-    'parcipating_with'=>'partecipa con',
-    'events'=>'eventi'
+    'paragraph' => 'Il tabellone è ordinato in base al numero di eventi di programmazione elencati per popolazione, quindi non sorprenderti se vedrai alcuni dei paesi più piccoli in cima alla lista!',
+    'parcipating_with' => 'partecipa con',
+    'events' => 'eventi',
 
 ];

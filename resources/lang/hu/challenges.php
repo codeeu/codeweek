@@ -19,7 +19,7 @@ return [
         'beginner' => 'Kezdő',
         'intermediate' => 'Középhaladó',
         'advanced' => 'Haladó',
-        '1-hour' => '1 óra'
+        '1-hour' => '1 óra',
     ],
     'main' => [
         '2021. október 9–24. között, az európai programozási hét során arra invitálunk, hogy vegyél Te is részt az európai programozási hét egy vagy több kihívásában.',
@@ -35,7 +35,7 @@ return [
         'Oszd meg a kihívásodat',
         'Szeretnél nyerni a programozási hét ajándékaiból? Ha igen, akkor terjeszd munkádat a neten!',
         'Miután teljesítetted a kihívást, oszd meg az Instagramon!',
-        'Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, akiket az Instagram csatornánkon is bejelentenek. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet!'
+        'Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, akiket az Instagram csatornánkon is bejelentenek. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet!',
     ],
     'share' => [
         'Hogyan tudod megosztani a kihívásaidat az Instagramon?',
@@ -52,7 +52,7 @@ return [
         'facebook oldalán',
         'a díj nyerteseit pedig a bejegyzés alatti hozzászólásokból választja ki.',
         'Hogyan működik?',
-        'Írj egy egyszerű megjegyzést a bejegyzéshez, amelyben szerepel a tevékenységedre mutató link.'
+        'Írj egy egyszerű megjegyzést a bejegyzéshez, amelyben szerepel a tevékenységedre mutató link.',
     ],
     'share-box' => [
         'Oszd meg a tevékenységedre mutató linket az',
@@ -67,18 +67,18 @@ return [
         'új kihívást rögzít majd a',
         'Facebook oldalán',
         'Ezt követően pedig csak hozzászólást kell írnod a bejegyzéshez, amelyben szerepel a tevékenységedre mutató link',
-        'Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, és meglepik őket a programozási hét számos ajándékával, majd pedig bejelentik az Instagramon. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet'
+        'Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, és meglepik őket a programozási hét számos ajándékával, majd pedig bejelentik az Instagramon. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet',
     ],
     'take-part' => [
         'Miért érdemes részt venni az európai programozási hét kihívásaiban?',
         'Hogy belemerülj a problémamegoldás és a programozás tevékenységeibe.',
         'Hogy együttműködhess a társaiddal.',
-        'Hogy terjeszd az üzenetet a programozás fontosságáról.'
+        'Hogy terjeszd az üzenetet a programozás fontosságáról.',
     ],
     'download' => [
         'Kattints',
         'ide',
-        'a kihívás word dokumentumban való letöltésére'
+        'a kihívás word dokumentumban való letöltésére',
     ],
     'bingo' => [
         'Teljesítsd az összes Kihívást',
@@ -88,6 +88,6 @@ return [
         'Oszd meg a kihívásodat a közösségi médián, és nyerd meg a programozási hét menő díjait',
         'Csak tölts fel egy képet a teljesített sor(ok)ról, oszlop(ok)ról – sőt akár a teljes bingóról – a',
         'Facebookra, Instagramra vagy Twitterre',
-        'Mindenképpen használd a'
-    ]
+        'Mindenképpen használd a',
+    ],
 ];

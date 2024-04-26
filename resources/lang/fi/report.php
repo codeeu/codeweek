@@ -25,27 +25,25 @@ return [
         'label' => 'Osallistujamäärä',
     ],
     'average_participant_age' => [
-        'label'=>'Osallistujien keski-ikä',
+        'label' => 'Osallistujien keski-ikä',
     ],
     'percentage_of_females' => [
         'label' => 'Naisten osuus',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Kaikkien koodausviikko -osallistumiskoodi',
-        'help' => 'Voit kirjoittaa tähän mahdollisen Codeweek4All-haastekoodin. Jätä tämä kenttä täyttämättä, jos et aio osallistua.'
+        'help' => 'Voit kirjoittaa tähän mahdollisen Codeweek4All-haastekoodin. Jätä tämä kenttä täyttämättä, jos et aio osallistua.',
     ],
     'name_for_certificate' => [
         'label' => 'Nimi todistusta varten',
-        'help' => 'Muuta tähän tapahtuman järjestäjän nimi, jolle koodausviikon osallistumistodistus kirjoitetaan. Käytä vain ASCII-merkistön kirjaimia (latinalaisia). Ääkkösiä ei tueta.'
+        'help' => 'Muuta tähän tapahtuman järjestäjän nimi, jolle koodausviikon osallistumistodistus kirjoitetaan. Käytä vain ASCII-merkistön kirjaimia (latinalaisia). Ääkkösiä ei tueta.',
     ],
     'submit' => 'Lähetä tapahtumaraportti',
-    'thanks_page'=>[
-        'title'=>'Kiitos raportista!',
-        'certificate_ready'=>'Todistuksesi on valmis.',
-        'download_button'=>'Lataa se napsauttamalla tästä.',
-        'back_events'=>'Palaa tapahtumaan'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Kiitos raportista!',
+        'certificate_ready' => 'Todistuksesi on valmis.',
+        'download_button' => 'Lataa se napsauttamalla tästä.',
+        'back_events' => 'Palaa tapahtumaan',
+    ],
 
 ];

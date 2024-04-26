@@ -8,8 +8,7 @@ return [
         'Lower Secondary' => 'Lower Secondary',
         'Upper Secondary' => 'Upper Secondary',
         'Tertiary' => 'Tertiary',
-        'Other' => 'Other'
+        'Other' => 'Other',
     ],
-
 
 ];

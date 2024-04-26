@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Kad naršymas būtų paprastesnis, šioje svetainėje naudojami slapukai',
-    'accept'=>'Priimu slapukus',
-    'refuse'=>'Atsisakau priimti slapukus',
+    'accept' => 'Priimu slapukus',
+    'refuse' => 'Atsisakau priimti slapukus',
     'cookies' => 'Slapukai',
-    'find_out_more_on'=>'Daugiau informacijos, ',
+    'find_out_more_on' => 'Daugiau informacijos, ',
     'how_we_use' => 'kaip naudojami slapukai ir kaip pakeisti savo nuostatas',
-
 
 ];

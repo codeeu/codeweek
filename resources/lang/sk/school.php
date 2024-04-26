@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Názov školy',
-    'location'           => 'Adresa školy',
-    'description'                => 'Opis školy',
-    'school'                => 'Škola',
-    'add'                => 'Pridať',
-    'list'                => 'Zoznam',
+    'name' => 'Názov školy',
+    'location' => 'Adresa školy',
+    'description' => 'Opis školy',
+    'school' => 'Škola',
+    'add' => 'Pridať',
+    'list' => 'Zoznam',
     'required' => [
-        'name'=>'Názov školy je povinný',
-        'location'=>'Adresa školy je povinná',
-    ]
-
+        'name' => 'Názov školy je povinný',
+        'location' => 'Adresa školy je povinná',
+    ],
 
 ];

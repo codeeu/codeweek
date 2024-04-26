@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Adresaci',
-    'theme_title'=>'Temat',
-    
+    'audience_title' => 'Adresaci',
+    'theme_title' => 'Temat',
+
     'placeholder' => 'Wyszukaj nazwę lub tag wydarzenia',
     'submit' => 'Wyszukaj',
     'label_country' => 'Wybierz kraj',
     'last_year_events' => [
         'label' => 'Uwzględnij wydarzenia z ostatnich lat',
         'yes' => 'Tak',
-        'no' => 'Nie'
+        'no' => 'Nie',
     ],
     'search_counter' => 'pasuje do Twoich kryteriów wyszukiwania',
-    'event'=>'wydarzeniu',
-    'events'=>'wydarzeniach',
+    'event' => 'wydarzeniu',
+    'events' => 'wydarzeniach',
     'year' => 'rok',
-    'audiences'=>'Publiczność','themes'=>'Tematy','countries'=>'Kraje','search_placeholder' => 'Szukaj według tytułu lub opisu',
+    'audiences' => 'Publiczność', 'themes' => 'Tematy', 'countries' => 'Kraje', 'search_placeholder' => 'Szukaj według tytułu lub opisu',
 ];

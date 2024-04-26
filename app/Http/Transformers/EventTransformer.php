@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Http\Transformers;
-
 
 class EventTransformer extends Transformer
 {
@@ -12,7 +10,7 @@ class EventTransformer extends Transformer
         return [
             'id' => $event['id'],
             'geoposition' => $event['geoposition'],
-            'country' => $event['country_iso']
+            'country' => $event['country_iso'],
         ];
 
     }

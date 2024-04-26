@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Ċertifikati għal ',
-    'no_certificates' => 'M’hemm l-ebda ċertifikat s’issa.'
+    'no_certificates' => 'M’hemm l-ebda ċertifikat s’issa.',
 ];

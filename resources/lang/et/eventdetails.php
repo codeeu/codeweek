@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Korraldaja: ',
+    'organised_by' => 'Korraldaja: ',
     'contact_email' => 'E-posti aadress: ',
     'happening_at' => 'Toimumiskoht: ',
     'from' => 'Alates ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Klõpsa, et saata see e-postiga sõbrale',
         'subject' => 'Vaata seda vapustavat programmeerimisüritust',
         'body_1' => 'Tere! Vaata ',
-        'body_2' => 'üritust '
+        'body_2' => 'üritust ',
     ],
     'edit' => 'Muuda üritust',
     'note' => 'MÄRKUS! ',
     'pending_warning' => 'Moderaatorid alles kontrollivad ',
     'pending_link' => 'seda üritust.',
-    'nearby_upcoming_events' => 'Eelseisvad üritused lähikonnas:'
+    'nearby_upcoming_events' => 'Eelseisvad üritused lähikonnas:',
 ];

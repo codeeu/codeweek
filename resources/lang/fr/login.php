@@ -27,5 +27,5 @@ return [
     'reset' => 'Réinitialiser votre mot de passe',
     'send_password' => 'Envoyer le lien permettant de réinitialiser votre mot de passe',
     'confirm_password' => 'Confirmer le mot de passe',
-    'name' => 'prénom'
+    'name' => 'prénom',
 ];

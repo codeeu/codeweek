@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 return [
 
@@ -19,13 +19,13 @@ return [
     'challenges' => 'Provocările',
     'toolkits' => 'Prezentări și instrumente',
     'why' => 'DE CE',
-    'home'  => 'Pagina de pornire',
+    'home' => 'Pagina de pornire',
     'events' => 'Activităţi',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resurse',
     'schools' => 'Școli',
     'about' => 'Despre',
-    'blog' => 'Blog','news' => 'Noutăți',
+    'blog' => 'Blog', 'news' => 'Noutăți',
     'search' => 'Introduceți și apăsați Enter...',
     'map' => 'Hartă',
     'add_event' => 'Adăugare eveniment',
@@ -40,7 +40,7 @@ return [
     'logout' => 'Deconectare',
     'signin' => 'Conectare',
     'privacy' => 'Confidențialitate',
-    'participation'=> 'Certificat de participare',
+    'participation' => 'Certificat de participare',
     'values' => 'Valorile noastre',
 
     'featured_activities' => 'Activități prevăzute',

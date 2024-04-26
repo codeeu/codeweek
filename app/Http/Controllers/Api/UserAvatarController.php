@@ -5,32 +5,26 @@ namespace App\Http\Controllers\Api;
 //define("DEFAULT_AVATAR_PATH","avatars/default.png");
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
-
 class UserAvatarController extends Controller
 {
-
-
     /**
      * Store a new user avatar.
-     *
-     * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(): Response
     {
         request()->validate([
-            'avatar' => ['required', 'image']
+            'avatar' => ['required', 'image'],
         ]);
-
 
         //Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 
-
         $file = request()->file('avatar');
 
-        $imageName = 'avatars/' . auth()->user()->getAuthIdentifier() . '/' . $file->getClientOriginalName();
+        $imageName = 'avatars/'.auth()->user()->getAuthIdentifier().'/'.$file->getClientOriginalName();
 
         $img = Image::make($file);
 
@@ -48,7 +42,7 @@ class UserAvatarController extends Controller
         $resource = $img->stream()->detach();
         $resourceResized = $imgResized->stream()->detach();
 
-        $resizedImageName = 'avatars/' . auth()->user()->getAuthIdentifier() . '/resized/80/' . $file->getClientOriginalName();
+        $resizedImageName = 'avatars/'.auth()->user()->getAuthIdentifier().'/resized/80/'.$file->getClientOriginalName();
 
         Storage::disk('s3')->put(
             $resizedImageName,
@@ -61,20 +55,19 @@ class UserAvatarController extends Controller
         );
 
         auth()->user()->update([
-            'avatar_path' =>  $imageName
+            'avatar_path' => $imageName,
         ]);
 
-
-        return response(["path"=>Storage::disk('s3')->url($imageName)], 200);
+        return response(['path' => Storage::disk('s3')->url($imageName)], 200);
     }
 
-    public function delete()
+    public function delete(): Response
     {
 
         //Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 
         auth()->user()->update([
-            'avatar_path' => "avatars/default.png"
+            'avatar_path' => 'avatars/default.png',
         ]);
 
         return response([], 204);

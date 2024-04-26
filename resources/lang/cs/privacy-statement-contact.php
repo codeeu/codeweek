@@ -4,14 +4,14 @@ return [
     'subtitle' => 'V tomto prohlášení o ochraně soukromí jsou obsaženy informace ohledně zpracování a ochrany vašich osobních údajů.',
     'processing-operation' => [
         'Operace zpracování',
-        'správa ambasadorů Týdne programování, vedoucích učitelů a registrací aktivit na těchto internetových stránkách'
+        'správa ambasadorů Týdne programování, vedoucích učitelů a registrací aktivit na těchto internetových stránkách',
     ],
     'data-processors' => [
         'Zpracovatelé údajů',
-        'GOPA Com. S.A. a EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. a EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informace týkající se zpracování osobních údajů pro účely správy ambasadorů Týdne programování, vedoucích učitelů a registrací aktivit na těchto internetových stránkách.'
+        'Informace týkající se zpracování osobních údajů pro účely správy ambasadorů Týdne programování, vedoucích učitelů a registrací aktivit na těchto internetových stránkách.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Oddělení G.2 může navíc sdílet vaše kontaktní údaje s osobami z řad veřejnosti nebo zúčastněných stran, které vás potřebují kontaktovat v souvislosti s Týdnem programování. Pokud jste organizátorem aktivity, vezměte prosím na vědomí, že příslušný ambasador ve vaší zemi nebo oddělení G.2 mohou použít osobní údaje, které jste poskytli při registraci aktivity, k tomu, aby vás v souvislosti s touto aktivitou kontaktovali.',
     ],
     '8-rights' => [
-        'S poskytnutím svých osobních údajů oddělení G.2 k této operaci zpracování údajů jste udělili souhlas. Svůj souhlas můžete kdykoli odvolat tak, že to oznámíte oddělení G.2 na adresu CNECT-G2@ec.europa.eu. Odvolání souhlasu nijak neovlivní zákonnost zpracování provedeného předtím, než jste souhlas odvolali.'
+        'S poskytnutím svých osobních údajů oddělení G.2 k této operaci zpracování údajů jste udělili souhlas. Svůj souhlas můžete kdykoli odvolat tak, že to oznámíte oddělení G.2 na adresu CNECT-G2@ec.europa.eu. Odvolání souhlasu nijak neovlivní zákonnost zpracování provedeného předtím, než jste souhlas odvolali.',
     ],
 
     '10-detailed-info' => [
-        'Tato konkrétní operace zpracování údajů byla zanesena do veřejného rejstříku pověřence pro ochranu osobních údajů pod tímto referenčním číslem: DPR-EC-02631 Správa kontaktů pro politiky, programy a projekty GŘ CNECT.'
-    ]
+        'Tato konkrétní operace zpracování údajů byla zanesena do veřejného rejstříku pověřence pro ochranu osobních údajů pod tímto referenčním číslem: DPR-EC-02631 Správa kontaktů pro politiky, programy a projekty GŘ CNECT.',
+    ],
 ];

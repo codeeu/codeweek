@@ -2,15 +2,12 @@
 
 namespace App\Http\Controllers;
 
-
-use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
+use Illuminate\View\View;
 
 class CodingAtHomeController extends Controller
 {
-    public function show(){
+    public function show(): View
+    {
         return view('codingathome.codingathome');
     }
-
-
 }

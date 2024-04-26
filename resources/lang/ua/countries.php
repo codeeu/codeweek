@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -266,6 +265,6 @@ return [
     'Mayotte' => 'Майотта',
     'South Africa' => 'Південна Африка',
     'Zambia' => 'Замбія',
-    'Zimbabwe' => 'Зімбабве'
+    'Zimbabwe' => 'Зімбабве',
 
 ];

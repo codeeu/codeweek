@@ -34,13 +34,11 @@ class CleanTags extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Calling Clean Tags");
+        Log::info('Calling Clean Tags');
         TagsHelper::cleanTags();
-        Log::info("Done Calling Clean Tags");
+        Log::info('Done Calling Clean Tags');
     }
 }

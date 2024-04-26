@@ -15,7 +15,7 @@ return [
             <p>Op die manier hoef je deze niet steeds opnieuw in te voeren als je tijdens je bezoek op de website rondbladert.</p>
 
             <p>Cookies kunnen ook worden gebruikt om geanonimiseerde statistieken over de gebruikservaring op onze sites te verzamelen.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Hoe gebruiken we cookies?',
@@ -25,30 +25,30 @@ return [
             'title' => 'De <strong>3 soorten directe cookies</strong> die we gebruiken, dienen om:',
             '1' => 'de voorkeuren van bezoekers op te slaan',
             '2' => 'onze websites operationeel te maken',
-            '3' => 'analysegegevens (over surfgedrag) te verzamelen'
+            '3' => 'analysegegevens (over surfgedrag) te verzamelen',
         ],
         'table' => [
-            'name'=>'Naam',
-            'service'=>'Service',
-            'purpose'=>'Doel',
-            'type_duration'=>'Type cookie en duur',
+            'name' => 'Naam',
+            'service' => 'Service',
+            'purpose' => 'Doel',
+            'type_duration' => 'Type cookie en duur',
         ],
         'visitor_preferences' => [
-            'title'=> 'Bezoekersvoorkeuren',
-            'text'=> '<p>Deze worden door ons geplaatst en alleen wij kunnen ze lezen. Zij onthouden:</p>',
-            'item'=> 'of je het cookiebeleid van deze site hebt geaccepteerd (of geweigerd)',
+            'title' => 'Bezoekersvoorkeuren',
+            'text' => '<p>Deze worden door ons geplaatst en alleen wij kunnen ze lezen. Zij onthouden:</p>',
+            'item' => 'of je het cookiebeleid van deze site hebt geaccepteerd (of geweigerd)',
             'table' => [
                 '1' => [
                     'service' => 'Cookie consent kit',
                     'purpose' => 'Slaat je cookie-voorkeuren op (we stellen je deze vraag dan niet opnieuw).',
                     'type_duration' => 'Direct sessiecookie, gewist zodra je je browser verlaat',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Operationele cookies',
             'text' => '<p>Er zijn enkele cookies die we moeten plaatsen om bepaalde webpagina’s te laten functioneren. Om die reden hoef je hiervoor geen toestemming te verlenen. Het gaat om:</p>',
-            'item' => 'voor bepaalde IT-systemen vereiste technische cookies'
+            'item' => 'voor bepaalde IT-systemen vereiste technische cookies',
         ],
         'technical_cookies' => [
             'title' => 'Technische cookies',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Slaat de voorkeurstaal van de gebruiker op.',
                     'type_duration' => 'Direct sessiecookie, wordt gewist zodra je je browser verlaat',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analysecookies',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Dienst voor webanalyse op basis van de opensourcesoftware Matomo',
                     'purpose' => 'Identificeert de pagina’s die een gebruiker tijdens hetzelfde bezoek bekijkt. (anoniem – er wordt geen persoonlijke informatie over de gebruiker verzameld).',
                     'type_duration' => 'Direct permanent cookie, 30 dagen',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Om deze inhoud van derden te bekijken moet je eerst hun specifieke voorwaarden aanvaarden. Dit omvat ook hun cookiebeleid, waarover wij geen controle hebben.</p>
 
                 <p>Als je deze inhoud niet bekijkt, worden er op je apparaat geen cookies van derden geplaatst.</p>Externe aanbieders op Codeweek',
-            '2' => 'De website van Codeweek heeft geen controle over deze externe diensten. Aanbieders kunnen hun gebruiksvoorwaarden, het doel en gebruik van cookies enz. te allen tijde wijzigen.'
-        ]
+            '2' => 'De website van Codeweek heeft geen controle over deze externe diensten. Aanbieders kunnen hun gebruiksvoorwaarden, het doel en gebruik van cookies enz. te allen tijde wijzigen.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Hoe kun je cookies beheren?',
@@ -109,6 +109,6 @@ return [
 
             <p>Je kunt alle cookies die al op je apparaat staan, wissen door de browsergeschiedenis van je browser te wissen. Hiermee worden alle cookies van alle bezochte websites verwijderd.</p>
 
-            <p>Houd er wel rekening mee dat je zo ook bepaalde opgeslagen informatie kunt verliezen (bijv. inloggegevens, websitevoorkeuren).</p><strong>Beheer van site-specifieke cookies</strong><p>Bekijk de privacy- en cookie-instellingen van je browser voor meer gedetailleerde controle over site-specifieke cookies.</p><strong>Cookies blokkeren</strong><p>Je kunt de meeste moderne browsers zo instellen dat er op je apparaat geen cookies worden geplaatst, maar je moet dan misschien iedere keer wanneer je een site/pagina bezoekt, je voorkeuren instellen. En sommige diensten en functies werken dan niet of niet goed (bv. inloggen bij profiel).</p><strong>Onze analysecookies beheren</strong><p>Je kunt je voorkeuren voor cookies van onze Analytics-dienst beheren op de <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">speciale pagina.</a></p>'
-    ]
+            <p>Houd er wel rekening mee dat je zo ook bepaalde opgeslagen informatie kunt verliezen (bijv. inloggegevens, websitevoorkeuren).</p><strong>Beheer van site-specifieke cookies</strong><p>Bekijk de privacy- en cookie-instellingen van je browser voor meer gedetailleerde controle over site-specifieke cookies.</p><strong>Cookies blokkeren</strong><p>Je kunt de meeste moderne browsers zo instellen dat er op je apparaat geen cookies worden geplaatst, maar je moet dan misschien iedere keer wanneer je een site/pagina bezoekt, je voorkeuren instellen. En sommige diensten en functies werken dan niet of niet goed (bv. inloggen bij profiel).</p><strong>Onze analysecookies beheren</strong><p>Je kunt je voorkeuren voor cookies van onze Analytics-dienst beheren op de <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">speciale pagina.</a></p>',
+    ],
 ];

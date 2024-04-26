@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Cieľová skupina',
-    'theme_title'=>'Téma',
-    
+    'audience_title' => 'Cieľová skupina',
+    'theme_title' => 'Téma',
+
     'placeholder' => 'Vyhľadať názov podujatia alebo značku',
     'submit' => 'Vyhľadať',
     'label_country' => 'Vybrať krajinu',
     'last_year_events' => [
         'label' => 'Zahrnúť podujatia z minulých ročníkov',
         'yes' => 'Áno',
-        'no' => 'Nie'
+        'no' => 'Nie',
     ],
     'search_counter' => 'zhoda s vašimi kritériami vyhľadávania',
-    'event'=>'podujatie',
-    'events'=>'podujatia/podujatí',
+    'event' => 'podujatie',
+    'events' => 'podujatia/podujatí',
     'year' => 'rok',
-    'audiences'=>'Publikum','themes'=>'Témy','countries'=>'Krajina','search_placeholder' => 'Hľadaj podľa nadpisu alebo popisu',
+    'audiences' => 'Publikum', 'themes' => 'Témy', 'countries' => 'Krajina', 'search_placeholder' => 'Hľadaj podľa nadpisu alebo popisu',
 ];

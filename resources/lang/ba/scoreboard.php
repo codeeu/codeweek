@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Koje zemlje su prepune aktivnostima kodiranja?',
-    'paragraph'=>'Tabela s rezultatima je sortirana po broju navedenih događaja kodiranja po broju stanovnika, tako da se ne iznenadite što su neke od manjih zemalja visočije na listi!',
-    'parcipating_with'=>'učestvuje sa',
-    'events'=>'događaji'
+    'paragraph' => 'Tabela s rezultatima je sortirana po broju navedenih događaja kodiranja po broju stanovnika, tako da se ne iznenadite što su neke od manjih zemalja visočije na listi!',
+    'parcipating_with' => 'učestvuje sa',
+    'events' => 'događaji',
 
 ];

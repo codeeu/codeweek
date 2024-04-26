@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'search_resources' => 'Search resources',
@@ -17,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'How to organise an activity ?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Russian',
-            'Norwegian'=>'Norwegian',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japanese',
-            'All targeted languages' => 'All targeted languages'
+            'Russian' => 'Russian',
+            'Norwegian' => 'Norwegian',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japanese',
+            'All targeted languages' => 'All targeted languages',
         ],
         'levels' => [
             'Beginner' => 'Beginner',
@@ -32,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Lower secondary school (12-16)',
             'Upper secondary school (16-18)' => 'Upper secondary school (16-18)',
             'Higher Education' => 'Higher Education',
-            'Other' => 'Other'
+            'Other' => 'Other',
         ],
         'subjects' => [
             'Art' => 'Art',
@@ -52,7 +51,7 @@ return [
             'Physics' => 'Physics',
             'Coding' => 'Coding',
             'Special Education Needs' => 'Special Education Needs',
-            'Other' => 'Other'
+            'Other' => 'Other',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',
@@ -67,7 +66,7 @@ return [
             'Toolkit' => 'Toolkit',
             'Other' => 'Other',
             'Lesson Plan' => 'Lesson Plan',
-            'Guide' => 'Guide'
+            'Guide' => 'Guide',
         ],
         'categories' => [
             'Coding' => 'Coding',
@@ -77,9 +76,9 @@ return [
             'Making' => 'Making',
             'Tinkering' => 'Tinkering',
             'Unplugged Activities' => 'Unplugged Activities',
-            'Other' => 'Other'
+            'Other' => 'Other',
         ],
 
-    ]
+    ],
 
 ];

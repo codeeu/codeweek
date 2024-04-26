@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Как да организирате събитие?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Руски',
-            'Norwegian'=>'Норвежки',
-            'Mandarin'=>'Мандарин',
-            'Japanese'=>'Японски',
-            'All targeted languages' => 'Всички целеви езици'
+            'Russian' => 'Руски',
+            'Norwegian' => 'Норвежки',
+            'Mandarin' => 'Мандарин',
+            'Japanese' => 'Японски',
+            'All targeted languages' => 'Всички целеви езици',
         ],
         'levels' => [
             'Beginner' => 'Начинаещ',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Среден курс (долна степен) на обучение (12 – 16)',
             'Upper secondary school (16-18)' => 'Среден курс (горна степен) на обучение (16 – 18)',
             'Higher Education' => 'Висше образование',
-            'Other' => 'Друго'
+            'Other' => 'Друго',
         ],
         'subjects' => [
             'Art' => 'Изкуство',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Физика',
             'Coding' => 'Кодиране',
             'Special Education Needs' => 'Специални образователни потребности',
-            'Other' => 'Друго'
+            'Other' => 'Друго',
         ],
         'types' => [
             'Tutorial' => 'Самоучител',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Набор с инструменти',
             'Other' => 'Друго',
             'Lesson Plan' => 'План на урок',
-            'Guide' => 'Ръководство'
+            'Guide' => 'Ръководство',
         ],
         'categories' => [
             'Coding' => 'Кодиране',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Занимания по роботика',
             'Tinkering' => 'Ремонтни дейности',
             'Unplugged Activities' => 'Отключени дейности',
-            'Other' => 'Друго'
-        ]
-    ]
+            'Other' => 'Друго',
+        ],
+    ],
 
 ];

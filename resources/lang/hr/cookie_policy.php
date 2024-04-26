@@ -15,7 +15,7 @@ return [
             <p>Tako ih ne morate ponovno unositi kad pregledavate stranice tijekom istog posjeta.</p>
 
             <p>Kolačići se mogu upotrebljavati i za izradu anonimiziranih statističkih podataka o pregledavanju naših stranica.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Kako upotrebljavamo kolačiće?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Mi upotrebljavamo <strong>tri vrste kolačića prve strane</strong>, i to za:',
             '1' => 'pohranjivanje osobnih preferencija posjetitelja',
             '2' => 'funkcioniranje naših stranica',
-            '3' => 'prikupljanje analitičkih podataka (o ponašanju posjetitelja)'
+            '3' => 'prikupljanje analitičkih podataka (o ponašanju posjetitelja)',
         ],
         'table' => [
-            'name'=>'Ime',
-            'service'=>'Usluga',
-            'purpose'=>'Svrha',
-            'type_duration'=>'Vrsta i trajanje kolačića',
+            'name' => 'Ime',
+            'service' => 'Usluga',
+            'purpose' => 'Svrha',
+            'type_duration' => 'Vrsta i trajanje kolačića',
         ],
         'visitor_preferences' => [
-            'title'=> 'Osobne preferencije posjetitelja',
-            'text'=> '<p>Kolačiće za te postavke postavljamo mi i samo mi ih možemo čitati. Oni pamte:</p>',
-            'item'=> 'jeste li prihvatili (ili odbili) pravila o postupanju s kolačićima naših internetskih stranica',
+            'title' => 'Osobne preferencije posjetitelja',
+            'text' => '<p>Kolačiće za te postavke postavljamo mi i samo mi ih možemo čitati. Oni pamte:</p>',
+            'item' => 'jeste li prihvatili (ili odbili) pravila o postupanju s kolačićima naših internetskih stranica',
             'table' => [
                 '1' => [
                     'service' => 'Set kolačića za pristanak',
                     'purpose' => 'Pohranjuje vaše osobne preferencije za kolačiće (tako da vas ne pita ponovno o kolačićima)',
                     'type_duration' => 'Kolačić sesije prve strane, koji se briše nakon zatvaranja preglednika',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Operativni kolačići',
             'text' => '<p>Neke kolačiće moramo uključiti kako bi određene internetske stranice mogle funkcionirati. Stoga se za njih ne traži vaš pristanak. Konkretno:</p>',
-            'item' => 'tehnički kolačići koji su potrebni za određene informatičke sustave'
+            'item' => 'tehnički kolačići koji su potrebni za određene informatičke sustave',
         ],
         'technical_cookies' => [
             'title' => 'Tehnički kolačići',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Pohranjuje preferirani jezik korisnika',
                     'type_duration' => 'Kolačić sesije prve strane, koji se briše nakon zatvaranja preglednika',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analitički kolačići',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Usluga analize korporativnih internetskih stranica, na platformi Matomo, softveru otvorenog koda',
                     'purpose' => 'Identificira sve stranice koje neki korisnik pogleda tijekom jednog posjeta. (anonimno – ne prikupljaju se osobni podatci korisnika).',
                     'type_duration' => 'Trajni kolačić prve strane, 30 minuta',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Kako biste vidjeli te sadržaje trećih strana, prvo morate prihvatiti njihove posebne uvjete. To uključuje njihova pravila o postupanju s kolačićima, koja mi ne kontroliramo.</p>
 
                 <p>Ali ako ne pogledate taj sadržaj, kolačići trećih strana neće biti postavljeni na vaš uređaj.</p>Pružatelji usluga treće strane na internetskim stranicama inicijative Codeweek',
-            '2' => 'Te usluge trećih strana izvan su kontrole internetske stranice inicijative Codeweek. Pružatelji usluga mogu u bilo kojem trenutku promijeniti svoje uvjete pružanja usluge, svrhu i uporabu kolačića itd.'
-        ]
+            '2' => 'Te usluge trećih strana izvan su kontrole internetske stranice inicijative Codeweek. Pružatelji usluga mogu u bilo kojem trenutku promijeniti svoje uvjete pružanja usluge, svrhu i uporabu kolačića itd.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Kako se upravlja kolačićima?',
@@ -109,6 +109,6 @@ return [
 
             <p>Ako izbrišete povijest pretraživanja iz svojeg preglednika, izbrisat ćete sve kolačiće koji su već na vašem uređaju. Tako ćete ukloniti sve kolačiće sa svih internetskih stranica koje ste ikada posjetili.</p>
 
-            <p>Imajte na umu da tako možete izgubiti i neke spremljene podatke (npr. spremljene podatke za prijavu, osobne preferencije na stranicama).</p><strong>Upravljanje kolačićima pojedinačnih stranica</strong><p>Za bolju kontrolu nad kolačićima pojedinačnih stranica provjerite postavke privatnosti i kolačića u vašem glavnom pregledniku.</p><strong>Blokiranje kolačića</strong><p>Većinu današnjih preglednika možete postaviti tako da blokiraju postavljanje kolačića na vaš uređaj, ali onda ćete možda morati ručno namještati neke osobne preferencije svaki put kada posjetite neku stranicu. Također, neke usluge i funkcionalnosti možda neće dobro funkcionirati (npr. prijava s profilom).</p><strong>Upravljanje našim analitičkim kolačićima</strong><p>Možete upravljati svojim osobnim preferencijama za kolačiće koje stavlja Analytics na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">posebnoj stranici</a>.</p>'
-    ]
+            <p>Imajte na umu da tako možete izgubiti i neke spremljene podatke (npr. spremljene podatke za prijavu, osobne preferencije na stranicama).</p><strong>Upravljanje kolačićima pojedinačnih stranica</strong><p>Za bolju kontrolu nad kolačićima pojedinačnih stranica provjerite postavke privatnosti i kolačića u vašem glavnom pregledniku.</p><strong>Blokiranje kolačića</strong><p>Većinu današnjih preglednika možete postaviti tako da blokiraju postavljanje kolačića na vaš uređaj, ali onda ćete možda morati ručno namještati neke osobne preferencije svaki put kada posjetite neku stranicu. Također, neke usluge i funkcionalnosti možda neće dobro funkcionirati (npr. prijava s profilom).</p><strong>Upravljanje našim analitičkim kolačićima</strong><p>Možete upravljati svojim osobnim preferencijama za kolačiće koje stavlja Analytics na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">posebnoj stranici</a>.</p>',
+    ],
 ];

@@ -12,18 +12,18 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'Alla evenemang skapade av ',
-    'no_events'=>[
-        'first_call_to_action' => "Du har inte lagt till några evenemang ännu. Vill du",
+    'created_by' => 'Alla evenemang skapade av ',
+    'no_events' => [
+        'first_call_to_action' => 'Du har inte lagt till några evenemang ännu. Vill du',
         'first_link' => 'lägga till ett nu',
         'second_call_to_action' => 'eller läsa vår ',
-        'second_link' => 'guide för arrangörer?'
+        'second_link' => 'guide för arrangörer?',
     ],
-    'view'=>'Visa',
-    'status'=>[
-        'APPROVED'=>'GODKÄNDA',
-        'REJECTED'=>'AVSLAGNA',
-        'PENDING'=>'BEHANDLAS',
-        'REPORTED' => 'RAPPORTERAT'
-    ]
+    'view' => 'Visa',
+    'status' => [
+        'APPROVED' => 'GODKÄNDA',
+        'REJECTED' => 'AVSLAGNA',
+        'PENDING' => 'BEHANDLAS',
+        'REPORTED' => 'RAPPORTERAT',
+    ],
 ];

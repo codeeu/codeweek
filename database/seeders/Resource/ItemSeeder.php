@@ -8,14 +8,9 @@ class ItemSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-
-
-
 
         /*
 
@@ -34,7 +29,6 @@ class ItemSeeder extends Seeder
         $item->languages()->attach([1]);
 
         */
-
 
     }
 }

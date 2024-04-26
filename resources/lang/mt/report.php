@@ -25,27 +25,25 @@ return [
         'label' => 'Għadd tal-parteċipanti',
     ],
     'average_participant_age' => [
-        'label'=>'Età medja tal-parteċipanti',
+        'label' => 'Età medja tal-parteċipanti',
     ],
     'percentage_of_females' => [
         'label' => 'Perċentwal ta’ nisa',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Kodiċi ta’ parteċipazzjoni għall-Ġimgħa tal-Ikkowdjar għal kulħadd',
-        'help' => 'Hawn tista’ ddaħħal il-kodiċi tal-isfida Ġimgħa tal-Ikkowdjar għal Kulħadd, jekk għandek wieħed. Jekk m’intix tipparteċipa, kemm tinjora dan il-qasam.'
+        'help' => 'Hawn tista’ ddaħħal il-kodiċi tal-isfida Ġimgħa tal-Ikkowdjar għal Kulħadd, jekk għandek wieħed. Jekk m’intix tipparteċipa, kemm tinjora dan il-qasam.',
     ],
     'name_for_certificate' => [
         'label' => 'Isem għaċ-ċertifikat',
-        'help' => 'Ibdel dan għall-isem tal-organizzatur tal-avveniment li ser jinħariġlu ċertifikat ta’ parteċipazzjoni fil-Ġimgħa tal-Ikkowdjar. Jekk jogħġbok uża biss ittri ASCII (Latin). Ittri b’aċċenti, umlauts u l-bqija mhumiex appoġġjati.'
+        'help' => 'Ibdel dan għall-isem tal-organizzatur tal-avveniment li ser jinħariġlu ċertifikat ta’ parteċipazzjoni fil-Ġimgħa tal-Ikkowdjar. Jekk jogħġbok uża biss ittri ASCII (Latin). Ittri b’aċċenti, umlauts u l-bqija mhumiex appoġġjati.',
     ],
     'submit' => 'Issottometti Rapport ta’ Avveniment',
-    'thanks_page'=>[
-        'title'=>'Grazzi talli rrappurtajt l-avveniment tiegħek!',
-        'certificate_ready'=>'Iċ-ċertifikat tiegħek lest.',
-        'download_button'=>'Ikklikkja hawn biex tniżżlu.',
-        'back_events'=>'Mur lura għall-avveniment tiegħek'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Grazzi talli rrappurtajt l-avveniment tiegħek!',
+        'certificate_ready' => 'Iċ-ċertifikat tiegħek lest.',
+        'download_button' => 'Ikklikkja hawn biex tniżżlu.',
+        'back_events' => 'Mur lura għall-avveniment tiegħek',
+    ],
 
 ];

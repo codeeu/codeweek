@@ -8,21 +8,16 @@
 
 namespace App\Queries;
 
-
-use App\Event;
 use App\Excellence;
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Auth;
 
 class ExcellenceQuery
 {
-
     public static function mine()
     {
 
         return Excellence::where([
             'user_id' => auth()->id(),
-            'type' => 'Excellence'
+            'type' => 'Excellence',
         ]);
 
     }
@@ -30,12 +25,8 @@ class ExcellenceQuery
     public static function byYear($edition)
     {
 
-
         return self::mine()
             ->where('edition', $edition);
 
-
     }
-
-
 }

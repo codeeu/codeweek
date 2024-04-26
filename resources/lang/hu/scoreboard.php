@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Mely országokban dübörög a programozás?',
-    'paragraph'=>'Az eseménytábla az egy főre jutó programozási események száma szerint van rendszerezve, így ne lepődjön meg, ha néhány kisebb ország a lista élmezőnyében szerepel!',
-    'parcipating_with'=>'részt vesz a következővel:',
-    'events'=>'esemény'
+    'paragraph' => 'Az eseménytábla az egy főre jutó programozási események száma szerint van rendszerezve, így ne lepődjön meg, ha néhány kisebb ország a lista élmezőnyében szerepel!',
+    'parcipating_with' => 'részt vesz a következővel:',
+    'events' => 'esemény',
 
 ];

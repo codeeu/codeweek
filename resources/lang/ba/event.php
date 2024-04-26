@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Javna e-pošta',
-        'placeholder' => 'Da li biste voljeli prikazati kontakt e-poštu?'
+        'placeholder' => 'Da li biste voljeli prikazati kontakt e-poštu?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresa',
         'placeholder' => 'Gdje će se aktivnost održavati?',
     ],
-
 
     'organizertype' => [
         'label' => 'Vrsta organizacije',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Uvećana realnost',
         'Artificial intelligence' => 'Vještačka inteligencija',
         'Motivation and awareness raising' => 'Motivacija i podizanje svijesti',
-        'Promoting diversity' => 'Promoviranje različitosti'
+        'Promoting diversity' => 'Promoviranje različitosti',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KOD SEDMICE KODIRANJA ZA SVE',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'nacionalnim ambasadorima',
         'phrase5' => 'ili nam pošaljite',
         'phrase6' => 'e-poštu',
-        'phrase7' => 'Možete podijeliti svoj kod Sedmice kodiranja za sve s drugima.'
+        'phrase7' => 'Možete podijeliti svoj kod Sedmice kodiranja za sve s drugima.',
     ],
     'activitytype' => [
         'label' => 'Tip aktivnosti',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Online aktivnost slobodnog učešća',
         'invite-online' => 'Online aktivnost po pozivu',
         'open-in-person' => 'Aktivnost slobodnog učešća',
-        'invite-in-person' => 'Aktivnost po pozivu'
+        'invite-in-person' => 'Aktivnost po pozivu',
 
     ],
 
@@ -148,7 +147,6 @@ return [
     'certificate_ready' => 'Vaš certifikat Sedmice kodiranja je spreman. Slobodno ga preuzmite ili ga direktno podijelite.',
     'view_your_certificate' => 'Pogledajte svoj certifikat ovdje',
     'submit_event_and_report' => 'Podnesite prijavu za ovaj događaj i preuzmite svoj certifikat Sedmice kodiranja.',
-    'report_and_claim' => 'Prijavite događaj i preuzmite certifikat'
-
+    'report_and_claim' => 'Prijavite događaj i preuzmite certifikat',
 
 ];

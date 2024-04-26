@@ -30,7 +30,6 @@ class ResourceCategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,7 +40,6 @@ class ResourceCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ResourceCategory  $resourceCategory
      * @return \Illuminate\Http\Response
      */
     public function show(ResourceCategory $resourceCategory)
@@ -52,7 +50,6 @@ class ResourceCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ResourceCategory  $resourceCategory
      * @return \Illuminate\Http\Response
      */
     public function edit(ResourceCategory $resourceCategory)
@@ -63,8 +60,6 @@ class ResourceCategoryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ResourceCategory  $resourceCategory
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, ResourceCategory $resourceCategory)
@@ -75,7 +70,6 @@ class ResourceCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ResourceCategory  $resourceCategory
      * @return \Illuminate\Http\Response
      */
     public function destroy(ResourceCategory $resourceCategory)

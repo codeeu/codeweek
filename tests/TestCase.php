@@ -2,11 +2,9 @@
 
 namespace Tests;
 
-use App\Exceptions\Handler;
-use Illuminate\Contracts\Debug\ExceptionHandler;
+use App\User;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\Mail;
-use Mockery;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -23,14 +21,15 @@ abstract class TestCase extends BaseTestCase
 
     protected function signIn($user = null)
     {
-        $user = $user ?: create('App\User');
+        $user = $user ?: \App\User::factory()->create();
         $this->actingAs($user);
+
         return $this;
     }
 
     protected function mockLocale(): void
     {
-        $this->mock('App\Http\Middleware\Locale', function ($mock) {
+        $this->mock(\App\Http\Middleware\Locale::class, function ($mock) {
             $mock->shouldReceive('handle')
                 ->andReturnUsing(function ($request, \Closure $next) {
                     return $next($request);
@@ -42,7 +41,7 @@ abstract class TestCase extends BaseTestCase
     protected function mockBrowserCheck(): void
     {
 
-        $this->mock('App\Http\Middleware\CheckBrowser', function ($mock) {
+        $this->mock(\App\Http\Middleware\CheckBrowser::class, function ($mock) {
             $mock->shouldReceive('handle')
                 ->andReturnUsing(function ($request, \Closure $next) {
                     return $next($request);
@@ -50,6 +49,4 @@ abstract class TestCase extends BaseTestCase
         });
 
     }
-
-
 }

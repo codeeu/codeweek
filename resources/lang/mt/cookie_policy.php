@@ -15,7 +15,7 @@ return [
             <p>B’dan il-mod, m’għandekx għalfejn terġa’ tidħol fihom meta tkun qed tfittex fis-sit waqt l-istess żjara.</p>
 
             <p>Il-cookies jistgħu jintużaw ukoll biex jistabbilixxu statistiċi anonimizzati dwar l-esperjenza ta’ tfittxija fuq is-siti tagħna.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Kif nużaw il-cookies?',
@@ -25,30 +25,30 @@ return [
             'title' => 'It-<strong>3 tipi ta’ cookies tal-ewwel parti</strong> li nużaw huma biex:',
             '1' => 'naħżnu l-preferenzi tal-viżitatur',
             '2' => 'nagħmlu s-siti web tagħna operattivi',
-            '3' => 'niġbru data analitika (dwar l-imġieba tal-utent)'
+            '3' => 'niġbru data analitika (dwar l-imġieba tal-utent)',
         ],
         'table' => [
-            'name'=>'Isem',
-            'service'=>'Servizz',
-            'purpose'=>'Għan',
-            'type_duration'=>'Tip u dewmien tal-cookies',
+            'name' => 'Isem',
+            'service' => 'Servizz',
+            'purpose' => 'Għan',
+            'type_duration' => 'Tip u dewmien tal-cookies',
         ],
         'visitor_preferences' => [
-            'title'=> 'Preferenzi tal-viżitatur',
-            'text'=> '<p>Dawn huma stabbiliti minna u aħna biss nistgħu naqrawhom. Huma jiftakru:</p>',
-            'item'=> 'jekk inti aċċettajt (jew irrifjutat) il-politika tal-cookies ta’ dan is-sit',
+            'title' => 'Preferenzi tal-viżitatur',
+            'text' => '<p>Dawn huma stabbiliti minna u aħna biss nistgħu naqrawhom. Huma jiftakru:</p>',
+            'item' => 'jekk inti aċċettajt (jew irrifjutat) il-politika tal-cookies ta’ dan is-sit',
             'table' => [
                 '1' => [
                     'service' => 'Kit tal-kunsens dwar il-cookies',
                     'purpose' => 'Jaħżen il-preferenzi tal-cookies tiegħek (sabiex ma tiġix mitlub mill-ġdid)',
                     'type_duration' => 'Cookie tas-sessjoni tal-ewwel parti mħassar wara li tagħlaq il-brawżer tiegħek',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Cookies operazzjonali',
             'text' => '<p>Hemm xi cookies li rridu ninkludu sabiex jiffunzjonaw ċerti paġni tal-web. Għal din ir-raġuni, ma jeħtiġux il-kunsens tiegħek. B’mod partikolari:</p>',
-            'item' => 'cookies tekniċi meħtieġa minn ċerti sistemi tal-IT'
+            'item' => 'cookies tekniċi meħtieġa minn ċerti sistemi tal-IT',
         ],
         'technical_cookies' => [
             'title' => 'Cookies tekniċi',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Jaħżen il-lingwa preferuta tal-utent',
                     'type_duration' => 'Cookie tas-sessjoni tal-ewwel parti, imħassar wara li tagħlaq il-brawżer tiegħek',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Cookies tal-analitika',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Servizz tal-analitika fuq il-web, ibbażat fuq softwer ta’ sors miftuħ Matomo',
                     'purpose' => 'Jidentifika l-paġni li ra l-istess utent matul l-istess żjara. (anonimament – l-ebda informazzjoni personali ma tinġabar dwar l-utent).',
                     'type_duration' => 'Cookie persistenti tal-ewwel parti, 30 minuta',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Biex tara dan il-kontenut ta’ partijiet terzi, l-ewwel għandek taċċetta t-termini u l-kundizzjonijiet speċifiċi tagħhom. Dan jinkludi l-politiki tagħhom dwar il-cookies, li aħna m’għandna l-ebda kontroll fuqhom.</p>
 
                 <p>Iżda jekk ma tarax dan il-kontenut, l-ebda cookies ta’ partijiet terzi ma jiġu installati fuq it-tagħmir tiegħek.</p>Fornituri ta’ partijiet terzi fuq Codeweek',
-            '2' => 'Dawn is-servizzi ta’ partijiet terzi huma barra mill-kontroll tas-sit web ta’ Codeweek. Il-fornituri jistgħu, f’kull ħin, ibiddlu t-termini tas-servizz, l-iskop u l-użu tal-cookies, eċċ., tagħhom.'
-        ]
+            '2' => 'Dawn is-servizzi ta’ partijiet terzi huma barra mill-kontroll tas-sit web ta’ Codeweek. Il-fornituri jistgħu, f’kull ħin, ibiddlu t-termini tas-servizz, l-iskop u l-użu tal-cookies, eċċ., tagħhom.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Kif tista’ timmaniġġja l-cookies?',
@@ -109,6 +109,6 @@ return [
 
             <p>Tista’ tħassar il-cookies kollha li diġà qegħdin fuq it-tagħmir tiegħek billi tħassar l-istorja tal-ibbrawżjar tal-brawżer tiegħek. Dan ineħħi l-cookies kollha mis-siti web li int tkun żort.</p>
 
-            <p>Madankollu, kun af li tista’ wkoll titlef xi informazzjoni ssejvjata (eż. dettalji ta’ dħul issejvjati, preferenzi tas-sit).</p><strong>Immaniġġjar ta’ cookies speċifiċi għas-sit</strong><p>Għal kontroll aktar dettaljat dwar il-cookies speċifiċi għas-sit, iċċekkja l-privatezza u s-settings tal-cookies fil-brawżer preferut tiegħek</p><strong>Imblokkar tal-cookies</strong><p>Tista’ tissettja brawżers l-aktar moderni biex tevita li xi cookies jitpoġġew fuq it-tagħmir tiegħek, iżda mbagħad jista’ jkollok taġġusta xi preferenzi manwalment kull darba li żżur sit/paġna. U xi wħud mis-servizzi u l-funzjonalitajiet jistgħu ma jaħdmux sew (eż. id-dħul fil-profil).</p><strong>Immaniġġjar tal-cookies tal-analitika tagħna</strong><p>Tista’ timmaniġġja l-preferenzi tiegħek dwar il-cookies mill-Analitika tagħna fuq il-<a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">paġna ddedikata</a>.</p>'
-    ]
+            <p>Madankollu, kun af li tista’ wkoll titlef xi informazzjoni ssejvjata (eż. dettalji ta’ dħul issejvjati, preferenzi tas-sit).</p><strong>Immaniġġjar ta’ cookies speċifiċi għas-sit</strong><p>Għal kontroll aktar dettaljat dwar il-cookies speċifiċi għas-sit, iċċekkja l-privatezza u s-settings tal-cookies fil-brawżer preferut tiegħek</p><strong>Imblokkar tal-cookies</strong><p>Tista’ tissettja brawżers l-aktar moderni biex tevita li xi cookies jitpoġġew fuq it-tagħmir tiegħek, iżda mbagħad jista’ jkollok taġġusta xi preferenzi manwalment kull darba li żżur sit/paġna. U xi wħud mis-servizzi u l-funzjonalitajiet jistgħu ma jaħdmux sew (eż. id-dħul fil-profil).</p><strong>Immaniġġjar tal-cookies tal-analitika tagħna</strong><p>Tista’ timmaniġġja l-preferenzi tiegħek dwar il-cookies mill-Analitika tagħna fuq il-<a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">paġna ddedikata</a>.</p>',
+    ],
 ];

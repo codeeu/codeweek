@@ -19,7 +19,7 @@ return [
         'beginner' => 'Başlangıç',
         'intermediate' => 'Orta',
         'advanced' => 'İleri',
-        '1-hour' => '1 saat'
+        '1-hour' => '1 saat',
     ],
     'main' => [
         '9-24 Ekim 2021 tarihleri arasında, AB Kod Haftası boyunca sizi bir veya daha fazla AB Kod Haftası görevini yapmaya davet ediyoruz.',
@@ -35,7 +35,7 @@ return [
         'Görevinizi paylaşın',
         'Kod Haftası ödülleri kazanmak ister misiniz? Cevabınız evet ise çalışmanızın internette yayılmasını sağlayın!',
         'Görevi tamamladıktan sonra Instagram\'da paylaşın.',
-        'Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek ve Instagram sayfamızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın.'
+        'Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek ve Instagram sayfamızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın.',
     ],
     'share' => [
         'Görev(ler)inizi Instagram\'da nasıl paylaşabilirsiniz?',
@@ -52,7 +52,7 @@ return [
         'Facebook sayfasına',
         'her gün yeni bir Görev gönderisi tutturulacak ve gönderinin altındaki yorumlardan kazananlar seçilecektir.',
         'Bu nasıl olacak?',
-        'Çalışmanızın bağlantısıyla birlikte gönderiye yorum yapmanız yeterlidir.'
+        'Çalışmanızın bağlantısıyla birlikte gönderiye yorum yapmanız yeterlidir.',
     ],
     'share-box' => [
         'Çalışmanızın bağlantısını',
@@ -67,18 +67,18 @@ return [
         'Facebook sayfasına yeni bir Görev gönderisi',
         'tutturulacaktır',
         'Ardından, çalışmanızın bağlantısıyla birlikte gönderiye yorum yapmanız yeterlidir',
-        'Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek olup, kendilerine Kod Haftası ödülleri verilecek ve Instagram ve Facebook sayfalarımızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın'
+        'Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek olup, kendilerine Kod Haftası ödülleri verilecek ve Instagram ve Facebook sayfalarımızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın',
     ],
     'take-part' => [
         'Neden AB Kod Haftası görevinde yer almalısınız?',
         'Problem çözme ve kodlama aktivitelerinde yer almak için.',
         'Meslektaşlarınızla birlikte çalışmak için.',
-        'Kodlamanın önemine ilişkin bir mesaj vermek için.'
+        'Kodlamanın önemine ilişkin bir mesaj vermek için.',
     ],
     'download' => [
         'Buraya',
         'tıklayarak',
-        'bu görevi Word belgesi olarak indirin'
+        'bu görevi Word belgesi olarak indirin',
     ],
     'bingo' => [
         'Tüm Görevleri tamamlayın',
@@ -88,6 +88,6 @@ return [
         'Görevinizi sosyal medyada paylaşın ve Kod Haftası ödüllerini kazanın',
         'Tamamladığınız satırların, sütunların, hatta daha da iyisi, tombala yaptıysanız bunun bir fotoğrafını',
         'Facebook, Instagram veya Twitter\'a yükleyin',
-        'Şu etiketi kullanmayı unutmayın:'
-    ]
+        'Şu etiketi kullanmayı unutmayın:',
+    ],
 ];

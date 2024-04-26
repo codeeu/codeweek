@@ -2,32 +2,27 @@
 
 namespace Database\Seeders;
 
-use App\User;
 use Illuminate\Database\Seeder;
-
 
 class UserSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
 
-        create('App\User', [
+        User::factory()->create([
             'firstname' => 'Super',
             'lastname' => 'Admin',
             'email' => \Config::get('codeweek.administrator'),
-            'password' => bcrypt('secret')
+            'password' => bcrypt('secret'),
         ])->assignRole('super admin');
 
-
-        create('App\Event', ['creator_id' => 1]);
+        Event::factory()->create(['creator_id' => 1]);
 
         for ($i = 1; $i < 60; $i++) {
-            create('App\User')->assignRole('ambassador');
+            create(\App\User::class)->assignRole('ambassador');
         }
 
     }

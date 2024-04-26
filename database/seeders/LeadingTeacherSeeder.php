@@ -8,16 +8,13 @@ class LeadingTeacherSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
 
         $this->call(LeadingTeacherRoleSeeder::class);
         $this->call(CitiesTableSeeder::class);
         $this->call(LeadingTeacherExpertiseSeeder::class);
-
 
     }
 }

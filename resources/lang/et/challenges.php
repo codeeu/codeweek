@@ -19,7 +19,7 @@ return [
         'beginner' => 'Algajad',
         'intermediate' => 'Kesktasemel',
         'advanced' => 'Edasijõudnud',
-        '1-hour' => '1 tund'
+        '1-hour' => '1 tund',
     ],
     'main' => [
         'Kutsume teid üles korraldama ELi programmeerimisnädalal Code Week 9.–24. oktoobril 2021 ühe või mitu ELi programmeerimisnädala Code Week väljakutset.',
@@ -35,7 +35,7 @@ return [
         'Jagage oma väljakutset',
         'Kas tahaksite võita programmeerimisnädala Code Week auhindu? Kui jah, siis pange oma töö kulutulena levima!',
         'Pärast väljakutse lahendamist jagage seda Instagramis.',
-        'Võitjaid valitakse iga päev programmeerimisnädala Code Week jooksul 9.–24. oktoobrini ja kuulutatakse välja meie Instagrami kanalis, seepärast ärge unustage tihti oma teateid lugeda.'
+        'Võitjaid valitakse iga päev programmeerimisnädala Code Week jooksul 9.–24. oktoobrini ja kuulutatakse välja meie Instagrami kanalis, seepärast ärge unustage tihti oma teateid lugeda.',
     ],
     'share' => [
         'Kuidas saab oma väljakutset või väljakutseid Instagramis jagada?',
@@ -52,7 +52,7 @@ return [
         'Facebooki',
         'lehele uue väljakutse ja valib auhinna võitja postituse all olevatest kommentaaridest.',
         'Kuidas see käib?',
-        'Kommenteerige lihtsalt postitust koos oma töö lingiga.'
+        'Kommenteerige lihtsalt postitust koos oma töö lingiga.',
     ],
     'share-box' => [
         'Jagage oma töö linki enda',
@@ -67,18 +67,18 @@ return [
         'uue väljakutse postituse oma',
         'Facebooki lehele',
         'Seejärel tuleb teil vaid kommenteerida postitust koos oma töö lingiga',
-        'Võitjad valitakse Code Weeki jooksul 9.–24. oktoobrini iga päev ja nad saavad Code Weeki auhindu. Võitjad kuulutatakse välja meie Instagrami ja Facebooki kanalis, seepärast ärge unustage tihti oma teateid lugeda.'
+        'Võitjad valitakse Code Weeki jooksul 9.–24. oktoobrini iga päev ja nad saavad Code Weeki auhindu. Võitjad kuulutatakse välja meie Instagrami ja Facebooki kanalis, seepärast ärge unustage tihti oma teateid lugeda.',
     ],
     'take-part' => [
         'Milleks osaleda ELi programmeerimisnädala Code Week väljakutses?',
         'Et osaleda probleemide lahendamisel ja programmeerimistegevustes.',
         'Et oma kaaslastega koos töötada.',
-        'Et levitada sõnumit programmeerimise tähtsusest.'
+        'Et levitada sõnumit programmeerimise tähtsusest.',
     ],
     'download' => [
         'Klõpsake',
         'siin,',
-        'et laadida see väljakutse alla Wordi dokumendina'
+        'et laadida see väljakutse alla Wordi dokumendina',
     ],
     'bingo' => [
         'Lahendage kõik väljakutsete ülesanded',
@@ -88,6 +88,6 @@ return [
         'Jagage oma väljakutset suhtlusmeedias ja võitke lahedaid Code Weeki auhindu',
         'Laadige üles pilt täidetud reast (ridadest), tulbast (tulpadest) või veel parem – kogu bingost –',
         'Facebooki, Instagrami või Twitterisse',
-        'Kasutage kindlasti'
-    ]
+        'Kasutage kindlasti',
+    ],
 ];

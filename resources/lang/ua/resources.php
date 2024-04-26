@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'search_resources' => 'Шукати ресурси',
@@ -17,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Як організувати захід ?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Російська',
-            'Norwegian'=>'Норвезька',
-            'Mandarin'=>'Мандаринська',
-            'Japanese'=>'Японська',
-            'All targeted languages' => 'Усі цільові мови'
+            'Russian' => 'Російська',
+            'Norwegian' => 'Норвезька',
+            'Mandarin' => 'Мандаринська',
+            'Japanese' => 'Японська',
+            'All targeted languages' => 'Усі цільові мови',
         ],
         'levels' => [
             'Beginner' => 'Початковий',
@@ -32,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Нижча середня школа (12‒16)',
             'Upper secondary school (16-18)' => 'Вища середня школа (16‒18)',
             'Higher Education' => 'Вища освіта',
-            'Other' => 'Інше'
+            'Other' => 'Інше',
         ],
         'subjects' => [
             'Art' => 'Мистецтво',
@@ -52,7 +51,7 @@ return [
             'Physics' => 'Фізика',
             'Coding' => 'Кодування',
             'Special Education Needs' => 'Особливі освітні потреби',
-            'Other' => 'Інше'
+            'Other' => 'Інше',
         ],
         'types' => [
             'Tutorial' => 'Посібник',
@@ -67,7 +66,7 @@ return [
             'Toolkit' => 'Набір інструментів',
             'Other' => 'Інше',
             'Lesson Plan' => 'План уроку',
-            'Guide' => 'Інструкція'
+            'Guide' => 'Інструкція',
         ],
         'categories' => [
             'Coding' => 'Кодування',
@@ -77,8 +76,8 @@ return [
             'Making' => 'Створення',
             'Tinkering' => 'Ремонт',
             'Unplugged Activities' => 'Заходи без ґаджетів',
-            'Other' => 'Інше'
-        ]
-    ]
+            'Other' => 'Інше',
+        ],
+    ],
 
 ];

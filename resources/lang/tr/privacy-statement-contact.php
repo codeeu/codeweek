@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Bu gizlilik beyanı, kişisel verilerinizin işlenmesi ve korunmasına dair bilgi verir.',
     'processing-operation' => [
         'İşleme faaliyeti',
-        'Kod Haftası Büyükelçilerinin, Lider Öğretmenlerin ve İnternet sitesindeki etkinliklerin kaydının yönetilmesi'
+        'Kod Haftası Büyükelçilerinin, Lider Öğretmenlerin ve İnternet sitesindeki etkinliklerin kaydının yönetilmesi',
     ],
     'data-processors' => [
         'Veri İşleyenler',
-        'GOPA Com. S.A. ve EUN Partnership AISBL (Avrupa Okul Ağı), info@codeweek.eu'
+        'GOPA Com. S.A. ve EUN Partnership AISBL (Avrupa Okul Ağı), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Kod Haftası Büyükelçilerinin, Lider Öğretmenlerin ve İnternet sitesindeki etkinliklerin kaydının yönetilmesi için kişisel verilen işlenmesine dair bilgiler.'
+        'Kod Haftası Büyükelçilerinin, Lider Öğretmenlerin ve İnternet sitesindeki etkinliklerin kaydının yönetilmesi için kişisel verilen işlenmesine dair bilgiler.',
     ],
 
     '3-legal_process' => [
@@ -45,24 +45,24 @@ return [
         'etkinlik kaydolma sayfası.',
     ],
     '5-how_long' => [
-    'Girişimden çekilmeniz halinde veya girişimin sona ermesinden 5 yıl sonra tüm kişisel veriler veri tabanlarından silinecektir.',
-],
+        'Girişimden çekilmeniz halinde veya girişimin sona ermesinden 5 yıl sonra tüm kişisel veriler veri tabanlarından silinecektir.',
+    ],
 
     '6-protect_data' => [
-    'Elektronik formattaki tüm kişisel veriler (e-postalar, belgeler, veri tabanları, yüklenen veri partileri vs.) ya Avrupa Komisyonunun ya da yüklenicilerinin sunucularında saklanır. Tüm işleme faaliyetleri <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1548093747090&uri=CELEX:32017D0046">(EU, Euratom) 2017/46</a> sayılı 10 Ocak 2017 tarihli Avrupa Komisyonu iletişim ve bilgi sistemlerinin güvenliği konulu Komisyon Kararına istinaden yürütülür.',
-    'Komisyon adına verilerinizin işlenmesi faaliyetleri ile ilgili olarak özel sözleşme maddeleri ve Genel Veri Koruma Tüzüğünün (‘GDPR’ <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">Tüzük (EU) 2016/679</a>) AB’ye Üye Ülkelerde iç hukuka aktarılmasından kaynaklanan gizlilik yükümlülükleri Komisyon yüklenicilerini bağlamaktadır.',
-    'Kişisel verilerinizi korumak için, Komisyon bir dizi teknik ve örgütsel tedbir yürürlüğe koymuştur. İşlemenin teşkil ettiği risk ve işlenmekte olan kişisel verilerin yapısı göz önüne alınarak, teknik önlemlere, çevrimiçi güvenliği, veri kaybı riskini, verinin değiştirilmesini ya da izinsiz erişimi ele almaya yönelik, uygun eylemler dahil edilmiştir. Örgütsel tedbirler arasında ise, kişisel verilere erişimin, sadece söz konusu işleme faaliyeti amacıyla verileri bilmek için meşru bir ihtiyacı olan, yetkili kişilerle sınırlandırılması da bulunmaktadır.',
-],
+        'Elektronik formattaki tüm kişisel veriler (e-postalar, belgeler, veri tabanları, yüklenen veri partileri vs.) ya Avrupa Komisyonunun ya da yüklenicilerinin sunucularında saklanır. Tüm işleme faaliyetleri <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1548093747090&uri=CELEX:32017D0046">(EU, Euratom) 2017/46</a> sayılı 10 Ocak 2017 tarihli Avrupa Komisyonu iletişim ve bilgi sistemlerinin güvenliği konulu Komisyon Kararına istinaden yürütülür.',
+        'Komisyon adına verilerinizin işlenmesi faaliyetleri ile ilgili olarak özel sözleşme maddeleri ve Genel Veri Koruma Tüzüğünün (‘GDPR’ <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">Tüzük (EU) 2016/679</a>) AB’ye Üye Ülkelerde iç hukuka aktarılmasından kaynaklanan gizlilik yükümlülükleri Komisyon yüklenicilerini bağlamaktadır.',
+        'Kişisel verilerinizi korumak için, Komisyon bir dizi teknik ve örgütsel tedbir yürürlüğe koymuştur. İşlemenin teşkil ettiği risk ve işlenmekte olan kişisel verilerin yapısı göz önüne alınarak, teknik önlemlere, çevrimiçi güvenliği, veri kaybı riskini, verinin değiştirilmesini ya da izinsiz erişimi ele almaya yönelik, uygun eylemler dahil edilmiştir. Örgütsel tedbirler arasında ise, kişisel verilere erişimin, sadece söz konusu işleme faaliyeti amacıyla verileri bilmek için meşru bir ihtiyacı olan, yetkili kişilerle sınırlandırılması da bulunmaktadır.',
+    ],
     '7-access_data' => [
-    'Komisyon personeli, tarafınızdan sağlanan tüm kişisel verilere “bilme ihtiyacı” temelinde erişebilir. Ek olarak, yüklenicimize de “bilme ihtiyacı” temelinde kişisel verilerinize erişim sağlanmaktadır.',
-    'Kod Haftası Büyükelçisinin, Lider Öğretmenin ya da kaydolunan etkinliklerin görünürlüğünü arttırmak amacıyla, tüm kişisel verileriniz aşağıdaki <a href="https://codeweek.eu/">İnternet sitesinde</a> yayınlanmaktadır.',
+        'Komisyon personeli, tarafınızdan sağlanan tüm kişisel verilere “bilme ihtiyacı” temelinde erişebilir. Ek olarak, yüklenicimize de “bilme ihtiyacı” temelinde kişisel verilerinize erişim sağlanmaktadır.',
+        'Kod Haftası Büyükelçisinin, Lider Öğretmenin ya da kaydolunan etkinliklerin görünürlüğünü arttırmak amacıyla, tüm kişisel verileriniz aşağıdaki <a href="https://codeweek.eu/">İnternet sitesinde</a> yayınlanmaktadır.',
         'Ayrıca, G.2 Birimi, irtibat ayrıntılarınızı, Kod Haftası ile ilgili olarak sizinle irtibat kurması gerekebilecek olan, kamunun herhangi bir üyesi ile veya herhangi bir paydaş ile paylaşabilir. Etkinlik organizatörlerinin dikkatine: lütfen ülkenizin Büyükelçisinin veya G.2. Biriminin, kaydolurken sağlanan kişisel verileri, anılan etkinlikle ilgili olarak sizinle irtibat kurmak üzere kullanabileceğini unutmayın.',
     ],
     '8-rights' => [
-    'Bu işleme faaliyeti için kişisel verilerinizi G.2. Birimine sağlamayı kabul ettiniz. CNECT-G2@ec.europa.eu adresi üzerinden G.2 Birimini haberdar etmek suretiyle rızanızı herhangi bir anda geri çekebilirsiniz. Geri çekme işlemi, rızanızı geri çekmeden önce yürütülen işleme faaliyetinin kanuniliğini etkilemeyecektir.',
-],
+        'Bu işleme faaliyeti için kişisel verilerinizi G.2. Birimine sağlamayı kabul ettiniz. CNECT-G2@ec.europa.eu adresi üzerinden G.2 Birimini haberdar etmek suretiyle rızanızı herhangi bir anda geri çekebilirsiniz. Geri çekme işlemi, rızanızı geri çekmeden önce yürütülen işleme faaliyetinin kanuniliğini etkilemeyecektir.',
+    ],
 
     '10-detailed-info' => [
-    'Bu özel işleme faaliyeti, belirtilen eski bildirim referansı ile birlikte DPO’nun kamuya açık siciline dahil edilmiştir: DG CONNECT politikaları, programları ve projeleri için DPR-EC-02631 irtibat noktaları Yönetimi.'
-]
+        'Bu özel işleme faaliyeti, belirtilen eski bildirim referansı ile birlikte DPO’nun kamuya açık siciline dahil edilmiştir: DG CONNECT politikaları, programları ve projeleri için DPR-EC-02631 irtibat noktaları Yönetimi.',
+    ],
 ];

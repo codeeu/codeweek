@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizujte ili podržite događaje u svom gradu',
     'or_contact_your' => 'ili kontaktirajte svoje',
     'eu_code_week_ambassadors' => 'ambasadore Evropske Nedjelje programiranja',
-    'show_events_for'=>'Prikaži događaje za ',
+    'show_events_for' => 'Prikaži događaje za ',
     'who' => 'Kome je namijenjen događaj?',
     'tags' => 'Tagovi',
     'image' => 'Slika',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Javna email adresa',
-        'placeholder' => 'Da li želite da objavite email adresu za kontakt?'
+        'placeholder' => 'Da li želite da objavite email adresu za kontakt?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresa',
         'placeholder' => 'Gdje će se aktivnost održati?',
     ],
-
 
     'organizertype' => [
         'label' => 'Vrsta organizacije',
@@ -85,7 +84,7 @@ return [
         'Employed adults' => 'Zaposleni',
         'Unemployed adults' => 'Nezaposleni',
         'Other (see description)' => 'Drugi (vidi opis)',
-          'Teachers' => 'Učitelji',
+        'Teachers' => 'Učitelji',
     ],
     'theme' => [
         'Basic programming concepts' => 'Osnovni koncepti programiranja',
@@ -106,22 +105,22 @@ return [
         'Augmented reality' => 'Uvećana stvarnost',
         'Artificial intelligence' => 'Vještačka inteligencija',
         'Motivation and awareness raising' => 'Motivacija i podizanje svijesti',
-        'Promoting diversity' => 'Promocija raznolikosti'
+        'Promoting diversity' => 'Promocija raznolikosti',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KOD NEDJELJA PROGRAMIRANJA ZA SVE',
         'explanation' => 'Ukoliko ste od kolege iz škole ili prijatelja dobili kod Nedjelja programiranja za sve, zalijepite ga ovdje, a ako nijeste, ostavite prazno mjesto. Više informacija o Nedjelji programiranja za sve dostupno je',
         'link' => 'ovdje',
     ],
-    'thanks_page'=>[
-        'title'=>'Hvala što dodajete svoj događaj!',
-        'phrase1'=>'Jedan od naših lokalnih ambasadora će sada analizirati vaš događaj ',
-        'phrase2'=>'i uvjeriti se da je sve u redu.',
-        'phrase3'=>'Ukoliko imate pitanja, stupite u kontakt sa nekim od naših ',
-        'phrase4'=>'nacionalnih ambasadora',
-        'phrase5'=>'ili nam uputite',
-        'phrase6'=>'email',
-        'phrase7'=>'Možete podijeliti vaš kod Nedjelja programiranja za sve sa drugima:'
+    'thanks_page' => [
+        'title' => 'Hvala što dodajete svoj događaj!',
+        'phrase1' => 'Jedan od naših lokalnih ambasadora će sada analizirati vaš događaj ',
+        'phrase2' => 'i uvjeriti se da je sve u redu.',
+        'phrase3' => 'Ukoliko imate pitanja, stupite u kontakt sa nekim od naših ',
+        'phrase4' => 'nacionalnih ambasadora',
+        'phrase5' => 'ili nam uputite',
+        'phrase6' => 'email',
+        'phrase7' => 'Možete podijeliti vaš kod Nedjelja programiranja za sve sa drugima:',
     ],
     'activitytype' => [
         'label' => 'Tip aktivnosti',
@@ -129,10 +128,10 @@ return [
         'open-online' => 'Online aktivnost slobodnog učešća',
         'invite-online' => 'Online aktivnost po pozivu',
         'open-in-person' => 'Aktivnost slobodnog učešća',
-        'invite-in-person' => 'Aktivnost po pozivu'
+        'invite-in-person' => 'Aktivnost po pozivu',
 
     ],
-    'privacy'=>'Pročitao-la sam i prihvatam uslove u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',
+    'privacy' => 'Pročitao-la sam i prihvatam uslove u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',
     'country' => 'Zemlja',
     'loading' => 'Učitavanje...',
     'add_activity' => 'Dodaj aktivnost',
@@ -148,16 +147,5 @@ return [
     'view_your_certificate' => 'Pogledajte svoj sertiifkat ovdje',
     'submit_event_and_report' => 'Dostavite izvještaj za ovaj događaj i zahtijevajte Vaš sertifikat za Nedjelju programiranja.',
     'report_and_claim' => 'Dostavite izvještaj o događaju i zahtijevajte sertifikat.',
-
-
-
-
-
-
-
-
-
-
-
 
 ];

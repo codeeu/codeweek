@@ -5,57 +5,53 @@ namespace App\Http\Controllers;
 use App\Country;
 use App\Event;
 use App\Filters\EventFilters;
+use App\Http\Transformers\EventTransformer;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Http\Request;
-use App\Http\Transformers\EventTransformer;
 use Illuminate\Support\Facades\Log;
-use stdClass;
+use Illuminate\View\View;
 
 class SearchController extends Controller
 {
-
     protected $eventTransformer;
 
     /**
      * EventController constructor.
-     * @param $eventTransformer
      */
     public function __construct(EventTransformer $eventTransformer)
     {
         $this->eventTransformer = $eventTransformer;
     }
 
-    public function search(Request $request)
+    public function search(Request $request): View
     {
 
-
-        $query = $request->input('q', "");
+        $query = $request->input('q', '');
         $selected_year = $request->input('year', Carbon::now()->year);
 
         $country_iso = $request->input('country_iso', null);
-        $tag = $request->input('tag', "");
+        $tag = $request->input('tag', '');
 
-        $selected_country = array();
+        $selected_country = [];
 
-        if (!is_null($country_iso)) {
+        if (! is_null($country_iso)) {
             $country = Country::where('iso', $country_iso)->first();
             if ($country) {
-                $country->translation = __('countries.' . $country->name);
+                $country->translation = __('countries.'.$country->name);
                 $selected_country[] = $country;
             }
 
         }
 
         $current_year = Carbon::now()->year;
-        $years = array();
+        $years = [];
         for ($year = $current_year; $year >= 2014; $year--) {
             $years[] = $year;
         }
 
-
-        return view('event.search', compact(['query', 'years', 'selected_country', 'selected_year','tag']));
+        return view('event.search', compact(['query', 'years', 'selected_country', 'selected_year', 'tag']));
     }
 
     public function searchPOST(EventFilters $filters, Request $request)
@@ -85,28 +81,28 @@ class SearchController extends Controller
                 if ($event->start_date <= Carbon::today()) {
                     return 'past';
                 }
+
                 return 'future';
             });
 
-        if (is_null($events->get('future')) || is_null($events->get('past'))) return $events->flatten()->paginate(12);
+        if (is_null($events->get('future')) || is_null($events->get('past'))) {
+            return $events->flatten()->paginate(12);
+        }
 
         return $events->get('future')->merge($events->get('past'))->paginate(12);
-
 
     }
 
     protected function getAllEventsToMap(EventFilters $filters)
     {
 
-
         $flattened = Arr::flatten($filters->getFilters());
 
         $composed_key = '';
 
         foreach ($flattened as $value) {
-            $composed_key .= $value . ',';
-        };
-
+            $composed_key .= $value.',';
+        }
 
         $value = Cache::get($composed_key, function () use ($composed_key, $filters) {
             Log::info("Building cache [{$composed_key}]");
@@ -126,7 +122,6 @@ class SearchController extends Controller
         Log::info("Serving from cache [{$composed_key}]");
 
         return $value;
-
 
     }
 }

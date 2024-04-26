@@ -2,17 +2,13 @@
 
 namespace App\Mail;
 
-use App\Event;
-use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class NotifyAdministrator extends Mailable
 {
     use Queueable, SerializesModels;
-
 
     public $notifications_count;
 
@@ -28,13 +24,11 @@ class NotifyAdministrator extends Mailable
 
     /**
      * Build the message.
-     *
-     * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
-            ->subject($this->notifications_count . " Activities to be added to the Calendar")
+            ->subject($this->notifications_count.' Activities to be added to the Calendar')
             ->markdown('emails.en.notify-administrator');
     }
 }

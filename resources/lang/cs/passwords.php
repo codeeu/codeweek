@@ -17,6 +17,6 @@ return [
     'reset' => 'Vaše heslo bylo resetováno!',
     'sent' => 'Na váš e-mail jsme poslali odkaz pro vytvoření nového hesla!',
     'token' => 'Tento token pro vytvoření nového hesla není platný.',
-    'user' => "Nemůžeme najít uživatele s touto e-mailovou adresou.",
+    'user' => 'Nemůžeme najít uživatele s touto e-mailovou adresou.',
 
 ];

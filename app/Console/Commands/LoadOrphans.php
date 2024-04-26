@@ -34,10 +34,8 @@ class LoadOrphans extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
 
         //Set email to dikovicnatalija@gmail.com for user 10358
@@ -45,7 +43,7 @@ class LoadOrphans extends Command
             ->update(['email' => 'dikovicnatalija@gmail.com']);
 
         //Update event 138402 to move from user without email (18952) to user with email (124956)
-        Event::where('id',138402)
+        Event::where('id', 138402)
             ->update(['creator_id' => 124956]);
     }
 }

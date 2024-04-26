@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Herkese açık e-posta adresi',
-        'placeholder' => 'İrtibat e-posta adresini göstermek istiyor musunuz?'
+        'placeholder' => 'İrtibat e-posta adresini göstermek istiyor musunuz?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adres',
         'placeholder' => 'Aktivite nerede gerçekleşecek?',
     ],
-
 
     'organizertype' => [
         'label' => 'Organizasyon türü',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Artırılmış gerçeklik',
         'Artificial intelligence' => 'Yapay zeka',
         'Motivation and awareness raising' => 'Motivasyon ve farkındalığı artırma',
-        'Promoting diversity' => 'Çeşitliliği teşvik etme'
+        'Promoting diversity' => 'Çeşitliliği teşvik etme',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'HERKES İÇİN KOD HAFTASI KODU',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'ulusal elçilerimizden biriyle iletişime geçin',
         'phrase5' => 'veya bize bir',
         'phrase6' => 'e-posta gönderin',
-        'phrase7' => 'Herkes için kod haftası kodunuzu diğer kişilerle paylaşabilirsiniz:'
+        'phrase7' => 'Herkes için kod haftası kodunuzu diğer kişilerle paylaşabilirsiniz:',
     ],
     'activitytype' => [
         'label' => 'Etkinlik türü',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Açık çevrimiçi etkinlik',
         'invite-online' => 'Sadece davet ile çevrimiçi etkinlik',
         'open-in-person' => 'Açık yüz yüze etkinlik',
-        'invite-in-person' => 'Sadece davetiye ile yüz yüze etkinlik'
+        'invite-in-person' => 'Sadece davetiye ile yüz yüze etkinlik',
 
     ],
     'country' => 'Ülke',
@@ -146,7 +145,6 @@ return [
     'certificate_ready' => 'Code Week sertifikanız hazır. İndirebilir veya doğrudan paylaşabilirsiniz.',
     'view_your_certificate' => 'Buradan sertifikanızı görüntüleyebilirsiniz',
     'submit_event_and_report' => 'Bu etkinlik için bir rapor gönderin ve Code Week sertifikanızı isteyin.',
-    'report_and_claim' => 'Etkinliği raporla ve sertifika iste'
-
+    'report_and_claim' => 'Etkinliği raporla ve sertifika iste',
 
 ];

@@ -6,10 +6,9 @@ return [
         'author' => 'EU Code Week Team',
         'purposes' => [
             'Code interactive riddles',
-            'Use code to create dialogues between a chatbot and a user'
+            'Use code to create dialogues between a chatbot and a user',
         ],
-        'description' =>
-            'Code a conversation between a chatbot and a user who is trying to solve a riddle. Try to make a chatbot that can chat like a person. Instead of a riddle you can create a dialogue between a chatbot and a user.',
+        'description' => 'Code a conversation between a chatbot and a user who is trying to solve a riddle. Try to make a chatbot that can chat like a person. Instead of a riddle you can create a dialogue between a chatbot and a user.',
         'instructions' => [
             'Think of a riddle',
             'Log in to',
@@ -18,13 +17,13 @@ return [
             'Use blocks or text-based mode to write your riddle',
             'Alternatively, you can use',
             'this code',
-            'and adapt it to your riddle or you can select Answering a riddle from the menu and edit it'
+            'and adapt it to your riddle or you can select Answering a riddle from the menu and edit it',
         ],
         'example' => 'Check out this example of a riddle.',
         'more' => [
             'This code has been Adapted from Pencil Code activity',
-            'Answering the Riddle'
-        ]
+            'Answering the Riddle',
+        ],
     ],
 
     'paper-circuit' => [
@@ -34,7 +33,7 @@ return [
         'description' => [
             'Draw and object of your choice. It can be a night sky, a ladybird, a robot, a Christmas tree or anything you can think of. Feel free to personalize your project with EU Code Week visuals: you can explore the',
             'EU Code Week teacher toolkit',
-            'and download any logo or visual you wish. You can even create a paper circuit invitation to EU Code Week. Add a motivating message to your circuit to encourage other teachers to join Code Week and/or to check the website dedicated to schools.'
+            'and download any logo or visual you wish. You can even create a paper circuit invitation to EU Code Week. Add a motivating message to your circuit to encourage other teachers to join Code Week and/or to check the website dedicated to schools.',
         ],
         'instructions' => [
             'Draw an object and decide which parts will be illuminated (e.g. stars).',
@@ -43,7 +42,7 @@ return [
             'Draw a + and a - track on the other side of the paper. Make sure that the longer leg of the LED circuit sticker is connected to the “+” side of the battery and the shorter to the “-” side of the battery.',
             'Lay the copper tape on the tracks.',
             'Create a fold so that when the paper covers the battery the LED is illuminated. You can use a paper clip to ensure good contact with the copper tape.',
-            'Take a picture of your paper circuit and share it on Instagram, explaining why you think it is worth it to take part in this initiative.  '
+            'Take a picture of your paper circuit and share it on Instagram, explaining why you think it is worth it to take part in this initiative.  ',
         ],
         'example' => 'See some examples of paper circuits',
         'materials' => [
@@ -52,8 +51,8 @@ return [
             'coin-cell battery',
             'copper tape',
             'LED circuit stickers',
-            'paper clip'
-        ]
+            'paper clip',
+        ],
     ],
 
     'dance' => [
@@ -61,10 +60,9 @@ return [
         'author' => 'EU Code Week Team',
         'purposes' => [
             'To learn basic coding concepts',
-            'To learn how to animate characters'
+            'To learn how to animate characters',
         ],
-        'description' =>
-            'In this challenge you will create a set of characters who will dance together. You will use a built-in media library to select characters and music clips, or you can create your own. You will animate the characters to dance and talk to each other.',
+        'description' => 'In this challenge you will create a set of characters who will dance together. You will use a built-in media library to select characters and music clips, or you can create your own. You will animate the characters to dance and talk to each other.',
         'instructions' => [
             'Log in to',
             'as a teacher. Create student accounts and share them with your students. Alternatively share a class code and have your students register with their school email address. If you are a student, you can join as a student, but you will be asked to provide your parent’s email address so that they can approve your account.',
@@ -77,13 +75,13 @@ return [
             'Click on each actor and animate it by adding the following blocks',
             'Add a',
             'say block',
-            'and have your actors talk to each other. Change the shape of the speech bubbles and the font and the size of your text'
+            'and have your actors talk to each other. Change the shape of the speech bubbles and the font and the size of your text',
         ],
         'example' => [
             'Check out',
             'this example',
-            'of dancing robots. Feel free to use it and remix it.'
-        ]
+            'of dancing robots. Feel free to use it and remix it.',
+        ],
     ],
 
     'compose-song' => [
@@ -92,10 +90,9 @@ return [
         'purposes' => [
             'To learn coding through music',
             'To distinguish music genres and instruments',
-            'To compose a song by mixing sound clips'
+            'To compose a song by mixing sound clips',
         ],
-        'description' =>
-            'In this challenge you will create a musical composition by using a programming language. You can use built-in sound clips or record your own and mix them to create a musical composition. Run your code in the Digital Audio Workstation and listen to the music you have coded. Play with different sounds and effects to modify your piece of music.',
+        'description' => 'In this challenge you will create a musical composition by using a programming language. You can use built-in sound clips or record your own and mix them to create a musical composition. Run your code in the Digital Audio Workstation and listen to the music you have coded. Play with different sounds and effects to modify your piece of music.',
         'instructions' => [
             'Log in to',
             'Click here to make a script',
@@ -122,15 +119,15 @@ return [
             'Write',
             'In the parenthesis, write the number of track, VOLUME, GAIN, level of the volume, the measure when it starts, the level and measure when it ends',
             'This is an example of a fade-in effect',
-            'and a fade-out effect'
+            'and a fade-out effect',
         ],
         'example' => [
             'Listen to',
             'an example of a song coded with Earsketch',
-            'You can import the code and edit it'
+            'You can import the code and edit it',
         ],
         'materials' => [''],
-        'more' => ['']
+        'more' => [''],
     ],
     'sensing-game' => [
         'title' => 'Make a video sensing game',
@@ -138,10 +135,9 @@ return [
         'purposes' => [
             'To code animated objects',
             'To develop understanding of how to control digital animation with physical movement',
-            'To compose a song by mixing sound clips'
+            'To compose a song by mixing sound clips',
         ],
-        'description' =>
-            'In this challenge you will create a simple game that uses a video camera as a sensor to detect motion, which means that you will be able to control your animation with physical movement. In this game, the task is to collect as many EU Code Week bubbles as possible in 30 seconds. Instead of collecting bubbles, you can create a game in which you chase a character or pop balloons with your hands.',
+        'description' => 'In this challenge you will create a simple game that uses a video camera as a sensor to detect motion, which means that you will be able to control your animation with physical movement. In this game, the task is to collect as many EU Code Week bubbles as possible in 30 seconds. Instead of collecting bubbles, you can create a game in which you chase a character or pop balloons with your hands.',
         'instructions' => [
             'Log in to',
             'Click',
@@ -160,12 +156,12 @@ return [
             'Change Timer by -1',
             'Create a new sprite',
             'Game Over',
-            'to finish the game. You can also create a sprite with the title of your game, e.g., Collect all EU Code Week bubbles.'
+            'to finish the game. You can also create a sprite with the title of your game, e.g., Collect all EU Code Week bubbles.',
         ],
         'example' => [
             'Play a video sensing game Collect all EU Code Week Bubbles. Feel free to remix',
-            'this project'
-        ]
+            'this project',
+        ],
     ],
 
     'calming-leds' => [
@@ -175,52 +171,48 @@ return [
         'materials' => [
             'a micro:bit device and battery pack (if available)',
             'a laptop or tablet with which you can visit Microsoft MakeCode and Youtube',
-            'microbit.org for the activity resources'
+            'microbit.org for the activity resources',
         ],
-        'description' =>
-            'Students create a digital device using LEDs that can help them to regulate their breathing and feel calmer. They will be asked to write some simple code, exploring animations and sequences.',
+        'description' => 'Students create a digital device using LEDs that can help them to regulate their breathing and feel calmer. They will be asked to write some simple code, exploring animations and sequences.',
         'instructions' => [
             'The goal is to create a working Calming LED device that you can use to regulate your breathing. This device can be created on a physical micro:bit board, or on the simulator in the MakeCode editor.',
             'The challenge can be completed by using the MakeCode editor and writing a simple sequence of code as shown in the video/screenshot.',
             'To develop the challenge, students can explore different animations and get creative with the animation they would like to see to help them feel calm or happy.',
             'More information and video instructions at',
-            'this link'
+            'this link',
         ],
-        'example' =>
-            'Visit this page for instructions and videos of the completed challenge plus how to code',
+        'example' => 'Visit this page for instructions and videos of the completed challenge plus how to code',
         'purposes' => [
             'To design a simple digital artefact with a helpful purpose',
             'To explore sequences and animations and how they work',
             'To test and debug simple code',
-            'To iterate a design by making the animations faster or slower'
-        ]
+            'To iterate a design by making the animations faster or slower',
+        ],
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' =>
-            'Computational Thinking and Computational Fluency with ScratchJr',
+        'title' => 'Computational Thinking and Computational Fluency with ScratchJr',
         'author' => 'Stamatis Papadakis – EU Code Week Ambassador Greece',
         'purposes' => [
             'To get familiar with new commands and interface.',
             'To create simple programs with simple cause-and-effect commands.',
-            'To perform simple debugging through trial and error.'
+            'To perform simple debugging through trial and error.',
         ],
-        'description' =>
-            'In this challenge children will integrate CT concepts into their projects by using the ScratchJr app to make their stories more engaging, exciting, and emotional.',
+        'description' => 'In this challenge children will integrate CT concepts into their projects by using the ScratchJr app to make their stories more engaging, exciting, and emotional.',
         'instructions' => [
             'ScratchJr does not require children to be literate. All instructions and menu options are identifiable through symbols and colours. The challenge can be completed within the classroom, the lab or even in an open space as no internet is required.',
-            'Children use city as background and use coding blocks to make a car drive across the city.'
+            'Children use city as background and use coding blocks to make a car drive across the city.',
         ],
         'example' => [
             'Children can use sound and motion blocks and start again blocks to make characters dance.',
-            'Children pick a background and a character and use a motion block to make a car drive across the city Children can use the speed block to speed up or slow down a character.'
+            'Children pick a background and a character and use a motion block to make a car drive across the city Children can use the speed block to speed up or slow down a character.',
         ],
         'materials' => [
             'The free app',
             'works on various operating systems and types of smart devices',
             'Also, the',
-            'website offers plenty of free educational material'
+            'website offers plenty of free educational material',
         ],
-        'duration' => '90 minutes'
+        'duration' => '90 minutes',
     ],
     'ai-hour-of-code' => [
         'title' => 'AI hour of Code',
@@ -228,86 +220,78 @@ return [
         'purposes' => [
             'To create coding solutions that include sequences, events, loops, and conditionals',
             'To decompose the steps needed to solve a problem into a precise sequence of instructions',
-            'To explore coding concepts'
+            'To explore coding concepts',
         ],
-        'description' =>
-            'A village is threatened by fire and needs you to code a solution! Meet your coding helper, the Minecraft Agent, then program the Agent to navigate the forest and collect data. This data will help the Agent predict where fires will occur. Then code the Agent to help prevent the spread of fire, save the village, and bring life back into the forest. Learn the basics of coding and explore a real-world example of artificial intelligence (AI).',
+        'description' => 'A village is threatened by fire and needs you to code a solution! Meet your coding helper, the Minecraft Agent, then program the Agent to navigate the forest and collect data. This data will help the Agent predict where fires will occur. Then code the Agent to help prevent the spread of fire, save the village, and bring life back into the forest. Learn the basics of coding and explore a real-world example of artificial intelligence (AI).',
         'instructions' => 'Download the lesson plan here',
         'materials' => [
             'Install Minecraft: Education Edition',
             'After installing Minecraft Education Edition, the challenge is on',
-            'this website'
-        ]
+            'this website',
+        ],
     ],
     'create-a-dance' => [
         'title' => 'Create a dance with the Ode to Code on Dance Party',
-        'purposes' =>
-            'To practice coding in a fun way and feel connected with the EU Code Week community.',
+        'purposes' => 'To practice coding in a fun way and feel connected with the EU Code Week community.',
         'description' => [
             'Create a dance with the Ode to Code! Use the',
             'Dance Party tutorial',
-            'to code a dance to the Ode to Code. The official EU Code Week anthem is listed as a selection in Dance Party.'
+            'to code a dance to the Ode to Code. The official EU Code Week anthem is listed as a selection in Dance Party.',
         ],
         'instructions' => [
             'Instructions are shown as videos within',
             'the tutorial',
-            'and also written at the top of each level'
+            'and also written at the top of each level',
         ],
-        'example' =>
-            'Featured student creations can be found on the following page',
-        'materials' => 'The Code.org tutorial'
+        'example' => 'Featured student creations can be found on the following page',
+        'materials' => 'The Code.org tutorial',
     ],
     'create-a-simulation' => [
         'title' => 'Create a simulation!',
         'purposes' => [
             'To learn about simulations while introducing the following variables: creating a crowd, recovery rates, wearing masks, and vaccines.',
-            'To activate prior knowledge about virus outbreaks in the real world that will apply to a fictitious scenario.'
+            'To activate prior knowledge about virus outbreaks in the real world that will apply to a fictitious scenario.',
         ],
-        'description' =>
-            'Write code to create and run your own simulation of the virus outbreak at Monster Town. Learn to code and make predictions about what will happen to the neighbors of Monster Town.',
+        'description' => 'Write code to create and run your own simulation of the virus outbreak at Monster Town. Learn to code and make predictions about what will happen to the neighbors of Monster Town.',
         'instructions' => [
             'Instructions are shown as videos within',
             'the tutorial',
-            'and also written at the top of each level'
+            'and also written at the top of each level',
         ],
-        'example' =>
-            'When you are finished, you can share your simulation with others. Share your message about what you think we can do to help keep others healthy when a virus comes to town.',
+        'example' => 'When you are finished, you can share your simulation with others. Share your message about what you think we can do to help keep others healthy when a virus comes to town.',
         'materials' => 'The Code.org tutorial',
-        'more' => ['']
+        'more' => [''],
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Create your own masterpiece!',
         'audience' => 'Acceptable for all ages',
-        'purpose' =>
-            'To introduce computer science concepts in a visual way and inspire creativity',
-        'description' =>
-            'Create your own masterpiece with artist! Use code blocks to make your artist create a unique work of art.',
+        'purpose' => 'To introduce computer science concepts in a visual way and inspire creativity',
+        'description' => 'Create your own masterpiece with artist! Use code blocks to make your artist create a unique work of art.',
         'instructions' => 'Instructions are listed at the top of each level',
         'example' => 'Artist examples can be found on this page under drawing',
-        'materials' => ['The first level of the tutorial can be found', 'HERE']
+        'materials' => ['The first level of the tutorial can be found', 'HERE'],
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'CS First Unplugged activities',
         'purposes' => [
             'To support students who are learning from home',
-            'To give everyone a break from their screens'
+            'To give everyone a break from their screens',
         ],
-        'description' =>
-            'CS First Unplugged is a set of activities that introduce students to CS concepts without a computer. We’ve designed this lesson to demonstrate that Computer Science is a lot more than just code.',
+        'description' => 'CS First Unplugged is a set of activities that introduce students to CS concepts without a computer. We’ve designed this lesson to demonstrate that Computer Science is a lot more than just code.',
         'instructions' => [
             'You will find the booklet to all activities in English at this',
             'link',
             'as well as Lesson Plan in English at this',
             'The activities in this lesson can be completed individually and in any order',
-            'Teacher can take a picture of the learning process and share it on Instagram using #EUCodeWeekChallengeGoogle #GrowWithGoogle'
+            'Teacher can take a picture of the learning process and share it on Instagram using #EUCodeWeekChallengeGoogle #GrowWithGoogle',
         ],
         'materials' => [
             'In addition to the activity booklet, some activities require or optionally benefit from additional materials.',
             'Small counters (like dried beans) to use on the Network a Neighborhood map.',
             'Scissors to cut out the Send a Secret Message cipher wheel.',
             'Cardboard and glue to provide additional stiffness to the Send a Secret Message cipher wheel.',
-            'A thumbtack, toothpick, or straightened paper clip to connect the Send a Secret Message cipher wheel.'
-        ]
+            'A thumbtack, toothpick, or straightened paper clip to connect the Send a Secret Message cipher wheel.',
+        ],
     ],
     'family-care' => [
         'title' => 'Family Care',
@@ -319,14 +303,14 @@ return [
             'To see problems as opportunities and generate creative solutions;',
             'To use code to innovatively realize your solutions;',
             'To design posters and present your solutions to others;',
-            'To use social media to create impacts of your projects.'
+            'To use social media to create impacts of your projects.',
         ],
         'description' => [
             'What comes to you when we talk about home? A nice house? A big dinner prepared by parents? A secret space for yourself? A warm home refuels our bodies and spirit like a gas station. Amid the hustle and bustle of modern life, parents are always busy for work. When you hang out with friends, you cannot leave your kitties behind. But how to look after your company when you are apart? The theme of the challenge is',
             'Family Care',
             'Based on this theme, students are encouraged to develop an idea to pass love and care through coding and hardware. Here are some questions for you to think about',
             'How many family members are there in your home? Who are they? Have you met any problems when staying with them? What kinds of care do they need?',
-            'Do you know anyone who lacks family care more than others in your community? How can you help them?'
+            'Do you know anyone who lacks family care more than others in your community? How can you help them?',
         ],
         'instructions' => [
             'Brainstorm and Research on the theme of family care',
@@ -335,7 +319,7 @@ return [
             'Select a solution',
             'Program and build up the structure',
             'Design a poster to layout your project',
-            'Present it to your teachers and family members'
+            'Present it to your teachers and family members',
         ],
         'example' => ['Please find some examples from here', 'and'],
         'materials' => [
@@ -347,24 +331,22 @@ return [
             'The participating team will need to focus on the specific theme and devise a solution through software programming and hardware construction.',
             'Students are encouraged to complete the challenge in Codeweek and take it to the international level to communicate with other students and win prices.',
             'For more information, please check:',
-            'or contact us at'
+            'or contact us at',
         ],
-        'more' => ['']
+        'more' => [''],
     ],
     'virtual-flower-field' => [
         'title' => 'Grow your virtual flower field',
-        'author' =>
-            'Jadga Huegle - Meet and Code coach and part of the SAP Snap! team',
+        'author' => 'Jadga Huegle - Meet and Code coach and part of the SAP Snap! team',
         'duration' => '30-60 minutes',
         'purposes' => [
             'To get to know programming with a simple yet expressive project.',
             'To learn that coding can be artistic and lead to beautiful results.',
             'To make fall brighter with colorful flowers and the EU Code Week.',
             'To show the diversity of flowers on Earth.',
-            'To contribute to Sustainable Development Goals (SDGs), especially SDG13 -Climate Change by creating coding events that improve climate change education through raising awareness on this topic.'
+            'To contribute to Sustainable Development Goals (SDGs), especially SDG13 -Climate Change by creating coding events that improve climate change education through raising awareness on this topic.',
         ],
-        'description' =>
-            'Develop a program in Snap! which grows a virtual flower field with different types of flowers and different numbers of petals.',
+        'description' => 'Develop a program in Snap! which grows a virtual flower field with different types of flowers and different numbers of petals.',
         'instructions' => [
             'If you need inspiration on how to get started with the challenge, check out',
             'this video',
@@ -373,25 +355,23 @@ return [
             'to follow along',
             'The challenge can be completed by programming a virtual flower field in Snap! (or Scratch) and posting a screenshot or photo of the result online.',
             'The flower field should contain different types of flowers with different numbers of petals. Ideally, the flowers are programmed, which means that they are constructed by stamping and turning (or drawing and turning) petals repeatedly.',
-            'Post an image of your virtual flower garden with #MeetandCode.'
+            'Post an image of your virtual flower garden with #MeetandCode.',
         ],
         'materials' => [
             'We recommend using',
-            'however, the project also works in'
-        ]
+            'however, the project also works in',
+        ],
     ],
     'haunted-house' => [
         'title' => 'Haunted House in Hedy',
-        'author' =>
-            'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
+        'author' => 'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
         'audience' => 'Teachers and educators',
         'duration' => '1 hour or 2 hours depending on prior knowledge',
         'purposes' => [
             'To make an interactive Haunted House story.',
-            'To learn programming with Hedy.'
+            'To learn programming with Hedy.',
         ],
-        'description' =>
-            'With Hedy, you will create a Haunted House story with interactive elements. Every time the code is run a new story will be created. The story can also be read aloud by your computer and shared online.',
+        'description' => 'With Hedy, you will create a Haunted House story with interactive elements. Every time the code is run a new story will be created. The story can also be read aloud by your computer and shared online.',
         'instructions' => [
             'Start with opening a browser and go to hedycode.com.',
             'Follow the instructions for levels 1-4. Use the tabs ‘Level’ and ‘Haunted house.’',
@@ -399,21 +379,20 @@ return [
             'Teachers, a lesson plan Hedy can be found',
             'here',
             'You can find a recording of Felienne Hermans presenting Hedy at',
-            'this link'
+            'this link',
         ],
         'example' => 'Haunted house example at level',
         'materials' => ['Hedy on', 'level 1 to 4'],
-        'more' => ['']
+        'more' => [''],
     ],
     'inclusive-app-design' => [
         'title' => 'Inclusive App Design',
         'author' => 'Apple Education',
         'duration' => '60 minutes + optional extension activities',
         'purposes' => [
-            'To brainstorm, plan, prototype, and share an app idea that everyone could access and understand.'
+            'To brainstorm, plan, prototype, and share an app idea that everyone could access and understand.',
         ],
-        'description' =>
-            'Great apps start with great ideas. In this activity, students will come up with an app idea on a topic they care about, then discover how to design apps with inclusion and accessibility in mind.',
+        'description' => 'Great apps start with great ideas. In this activity, students will come up with an app idea on a topic they care about, then discover how to design apps with inclusion and accessibility in mind.',
         'instructions' => [
             'You will find all instructions at this link',
             'With this one-hour lesson plan, educators can guide students to',
@@ -421,12 +400,12 @@ return [
             'Brainstorm topics they care about to find an app idea',
             'Outline their app ideas and plan user activities',
             'Prototype one part of their app in Keynote',
-            'Share demos of their prototypes and describe how they support users with diverse backgrounds and abilities'
+            'Share demos of their prototypes and describe how they support users with diverse backgrounds and abilities',
         ],
         'materials' => [
             'Explore the Inclusive App Design Activity at the Apple Teacher Learning Center',
-            'Keynote on iPad or Mac is recommended, but not required.'
-        ]
+            'Keynote on iPad or Mac is recommended, but not required.',
+        ],
     ],
     'silly-eyes' => [
         'title' => 'Silly eyes',
@@ -435,30 +414,27 @@ return [
         'purposes' => [
             'To make a project with user interaction.',
             'To personalise a project with colour and graphic effects.',
-            'To learn about design in digital making.'
+            'To learn about design in digital making.',
         ],
-        'description' =>
-            'In this project, you will design and create a silly eye character. The character’s large, silly eyes will follow the mouse pointer to bring your character to life.',
+        'description' => 'In this project, you will design and create a silly eye character. The character’s large, silly eyes will follow the mouse pointer to bring your character to life.',
         'instructions' => 'Please access the full project description here',
-        'example' => 'Check out Gobo, Under the sea and Don\'t eat donut'
+        'example' => 'Check out Gobo, Under the sea and Don\'t eat donut',
     ],
     'train-ai-bot' => [
         'title' => 'Train an AI bot!',
         'author' => '',
-        'purposes' =>
-            'To learn about artificial intelligence (AI), machine learning, training data, and bias, while exploring ethical issues and how AI can be used to address world problems.',
-        'description' =>
-            'Train an AI bot with AI for Oceans. In this activity, you will program or train AI (artificial intelligence) to identify fish or trash. Let\'s clean up the ocean!',
+        'purposes' => 'To learn about artificial intelligence (AI), machine learning, training data, and bias, while exploring ethical issues and how AI can be used to address world problems.',
+        'description' => 'Train an AI bot with AI for Oceans. In this activity, you will program or train AI (artificial intelligence) to identify fish or trash. Let\'s clean up the ocean!',
         'instructions' => [
             'Instructions are shown as videos within the tutorial',
-            'and also written at the top of each level'
+            'and also written at the top of each level',
         ],
         'example' => '',
         'materials' => [
             'Tutorial can be found here',
-            'This tutorial is available in over 25 languages'
+            'This tutorial is available in over 25 languages',
         ],
-        'more' => ['']
+        'more' => [''],
     ],
 
     'build-calliope' => [
@@ -468,54 +444,47 @@ return [
             'To playfully get to know sequences, animations, repetitions and variables.',
             'To design a structure chart.',
             'To test and debug code .',
-            'To optimize a program by trial and error, checking and adjusting usability.'
+            'To optimize a program by trial and error, checking and adjusting usability.',
         ],
         'duration' => '20-30 minutes',
-        'description' =>
-            'Participants will develop a digitally controlled prototype that uses a colorful glowing LED to reproduce a preconceived 10-unit fitness exercise.',
+        'description' => 'Participants will develop a digitally controlled prototype that uses a colorful glowing LED to reproduce a preconceived 10-unit fitness exercise.',
         'materials' => [
             'Calliope mini StarterBox (if available)',
-            'Laptop or tablet with which you can visit <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> or <a href="https://calliope.cc">https://calliope.cc</a> and YouTube to access to resources for the activity.'
+            'Laptop or tablet with which you can visit <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> or <a href="https://calliope.cc">https://calliope.cc</a> and YouTube to access to resources for the activity.',
         ],
         'instructions' => [
             'To get started, create a plan and determine the order of the exercise units. Using the schedule, program the RGB LED of the Calliope mini to display one of the 5 colors at the predefined pace. Then create a variable for the pace and program repetitions using loops.',
             "Remember, if you've implemented the program in a way that you like, you can also share it with us at info@calliope.cc - we're excited to see what you make of it! By the way, we're giving away 30 Calliope minis among the submissions!",
-            "Share the QR code of your project on Instagram, add the hashtag #EUCodeWeekChallenge and mention @CodeWeekEU.",
+            'Share the QR code of your project on Instagram, add the hashtag #EUCodeWeekChallenge and mention @CodeWeekEU.',
         ],
         'example' => [
             'While you’re sitting at your computer: you can get sporty too.',
             'Create a fitness prototype with the Calliope mini which can also be tested in the simulator. The challenge is done in the MakeCode editor by programming a simple code sequence (see screenshot).',
-            'Choose 5 different colors and assign a fitness exercise to each of them, e.g. squat or jumping jacks.  Then the colors can be lined up in any order and trained.'
+            'Choose 5 different colors and assign a fitness exercise to each of them, e.g. squat or jumping jacks.  Then the colors can be lined up in any order and trained.',
         ],
 
     ],
     'animate-a-name' => [
         'title' => 'Animate a name',
         'author' => 'Google',
-        'purposes' =>
-            'To use code to bring a name to life!'
-        ,
+        'purposes' => 'To use code to bring a name to life!',
         'duration' => '15-60 minutes',
-        'description' =>
-            'Animate a Name is a one-hour lesson designed to be completed within 15-60 minutes. Students will watch a series of videos and create one coding project.',
+        'description' => 'Animate a Name is a one-hour lesson designed to be completed within 15-60 minutes. Students will watch a series of videos and create one coding project.',
         'materials' => 'This lesson can be completed online or offline, but both options require access to a computer.',
         'instructions' => [
             'Pick a video in one of 21 languages from <a href="https://www.youtube.com/c/CodeweekEu/playlists?view=50&sort=dd&shelf_id=6">this page</a>',
-            "Find a lesson plan in the description. Follow instructions in the video. ",
-        ]
+            'Find a lesson plan in the description. Follow instructions in the video. ',
+        ],
     ],
     'european-astro-pi' => [
         'title' => 'European Astro Pi Challenge - Mission Zero',
         'author' => 'Google',
-        'purposes' =>
-            'To run your python code on board the International Space Station'
-        ,
+        'purposes' => 'To run your python code on board the International Space Station',
 
-        'description' =>[
+        'description' => [
             'You will make a short python program that shows a pixel-art image on board the International Space Station.',
-            'Your image will be displayed using the Astro Pi computer in the European Columbus module.'
-        ]
-            ,
+            'Your image will be displayed using the Astro Pi computer in the European Columbus module.',
+        ],
         'materials' => 'Web browser only',
         'instructions' => [
             'Teacher/mentor go to <a href="https://astro-pi.org/mission-zero/">https://astro-pi.org/mission-zero/</a>',
@@ -535,7 +504,7 @@ return [
             'Teachers and educators',
             'Primary School students (6 to 12 years)',
             'Lower Secondary School students (12 to 16 years)',
-            'Upper Secondary School students (16 to 18 years)'
+            'Upper Secondary School students (16 to 18 years)',
         ],
     ],
     'code-a-dice' => [
@@ -543,10 +512,9 @@ return [
         'author' => 'Fabrizia Agnello',
         'purposes' => [
             'Code interactive riddles',
-            'To code a simulation of a randomly moving object to be used if the real object is not available'
+            'To code a simulation of a randomly moving object to be used if the real object is not available',
         ],
-        'description' =>
-            'In this challenge you will code a dice to randomly roll on your command. You can choose any type of dice with the number of faces you like, as those used in role play games, and add sounds as well. ',
+        'description' => 'In this challenge you will code a dice to randomly roll on your command. You can choose any type of dice with the number of faces you like, as those used in role play games, and add sounds as well. ',
         'instructions' => [
             'Log in to Scratch',
             'Choose a backdrop',
@@ -556,7 +524,7 @@ return [
             'Code the sprite to randomly change costume at the end of the roll',
             'Add sound effects',
         ],
-        'example' => 'Roll a D-20 dice'
+        'example' => 'Roll a D-20 dice',
     ],
     'personal-trainer' => [
         'title' => 'Personal trainer with micro:bit',
@@ -566,15 +534,13 @@ return [
             'To create a personal device to control your physical activity',
             'To code micro:bit to improve your health through sport',
         ],
-        'description' =>
-            'This challenge allows you to code your micro:bit to control the repetition times of physical exercises combined with rest time. You will track your physical activity at school, at home or in the park.'
-        ,
+        'description' => 'This challenge allows you to code your micro:bit to control the repetition times of physical exercises combined with rest time. You will track your physical activity at school, at home or in the park.',
         'instructions' => [
             'When A+B, create a 3-second countdown timer with a musical note sound every second and display the word GO!',
             'During the first exercise, display a flashing 2x2 square for 20 seconds. Then play a sound and keep the square fixed. During the remaining time, another flashing image must be displayed for 10 seconds. When it finished, play a sound.',
             'Then repeat the same action but display a 3x3 panel for the exercise time. Repeat these actions until the 5x5 panel is displayed.',
         ],
-        'duration' => '30-40 minutes'
+        'duration' => '30-40 minutes',
     ],
     'create-a-spiral' => [
         'title' => 'Create a spiral',
@@ -626,7 +592,7 @@ return [
             'to familiarize yourself with the Pictoblox tool and import the created model into the project',
             'to set the stage and characters, create and initialize variables in Pictoblox',
             'to initialize the game, identify player movements, program random AI movements',
-            'to create and test a game that involves artificial intelligence as an opponent in a game of Rock, Paper, Scissors.'
+            'to create and test a game that involves artificial intelligence as an opponent in a game of Rock, Paper, Scissors.',
 
         ],
         'description' => 'We will create a model using Teachable Machine from images using three classes: Rock, Scissors and Paper. Model will be loaded into Pictoblox and used to create game which we can play against AI.',
@@ -649,7 +615,7 @@ return [
             'Check if round is a draw.',
             'Program blocks.',
             'Rock Paper Scissors Sprite',
-        ]
+        ],
     ],
     'air-drawing-with-AI' => [
         'title' => 'Air drawing with AI',
@@ -657,7 +623,7 @@ return [
         'purposes' => [
             'to write a program using the human body detection extension to recognize the movement of fingers in front of the camera.',
             'to code with simple blocks in a few lines of code.',
-            'to see an example of using AI'
+            'to see an example of using AI',
         ],
         'description' => 'Creation of a program that allows the user to draw in the air with their hand (index finger) in front of the camera and everything they draw is automatically displayed on the stage of Pictoblox.',
         'instructions' => [
@@ -673,8 +639,8 @@ return [
             'A laptop or a computer with a camera',
             'The latest version of PictoBlox downloaded (recommended) or online Pictoblox (free)',
             'Pictoblox account (free)',
-            'Good Internet connection'
-        ]
+            'Good Internet connection',
+        ],
     ],
     'emobot-kliki' => [
         'title' => 'Emobot Kliki',
@@ -683,7 +649,7 @@ return [
             'To learn basic concepts of machine learning and text recognition.',
             'To understand the role of emotions in communications.',
             'To use code to create dialogues between chatbot and a user.',
-            'To understand how computers can recognize emotional tones through text analysis and respond accordingly.'
+            'To understand how computers can recognize emotional tones through text analysis and respond accordingly.',
         ],
         'description' => [
             'Create Emotional Bot in Scratch that can display happy face for positive messages (if you say nice things to it), an angry face for negative messages (if you say mean things to it) and confused face if the message is unspecified.',
@@ -695,8 +661,7 @@ return [
             'Make a new machine learning model adding 3 new labels, first call it “nice”, second bucket called “bad” and optional if you want to recognize your name, create third label called “name”.',
             'Train the new machine learning model, test it and use it to make Emobot in Scratch.',
             'Launch the Scratch 3 editor, delete the cat sprite, insert 3 new sprites made by Microsoft Bing Image Creator (happy, angry and not sure computer cartoon) or create a new sprite by clicking on the Paint icon by drawing three copies of the costume for happy, angry and not sure face.',
-            'Click the “Code” tab and enter the following script.']
-        ,
+            'Click the “Code” tab and enter the following script.'],
         'example' => [
             'Share your Emobot Kliki with your friends and learn more about AI and emotions!',
             'Instead of a computer cartoon you can try something different, like an animal. Instead of  kind and mean you could train the character to recognize other types of messages.',
@@ -713,11 +678,11 @@ return [
             'To foster an understanding of AI concepts, particularly how AI enables computers to recognize and interpret hand gestures.',
             'To raise awareness about the significance of technology for individuals with disabilities.',
             'To promote collaborative problem-solving and teamwork among students as they work together to improve their hand gesture programs.',
-            'To connect coding and computational thinking skills to real-world applications, emphasizing the meaningful impact of technology on people\'s lives and aligning with Sustainable Development Goals(SDGs).'
+            'To connect coding and computational thinking skills to real-world applications, emphasizing the meaningful impact of technology on people\'s lives and aligning with Sustainable Development Goals(SDGs).',
         ],
         'duration' => [
             '90 min for students 10-12',
-            '45 min for students 12-15'
+            '45 min for students 12-15',
         ],
         'description' => 'Create a Scratch block-based program using the AI “Human Body” extension in a creative and engaging way, in order to draw on a screen without the need for a traditional mouse or touchscreen.',
         'instructions' => [
@@ -735,7 +700,7 @@ return [
             'student account (free)',
             'Computers with camera',
             'Internet connection',
-        ]
+        ],
     ],
     'circle-of-dots' => [
         'title' => 'A circle of dots',
@@ -752,8 +717,8 @@ return [
             'Building a dot block.',
             'Building a dash block.',
             'Constructing a circle from dot.',
-            'Constructing a circle from dash.'
-        ]
+            'Constructing a circle from dash.',
+        ],
     ],
     'coding-escape-room' => [
         'title' => 'Create a coding escape room',
@@ -761,19 +726,17 @@ return [
         'purposes' => [
             'To teach/learn and reflect about coding concepts.',
             'To use simple coding tools.',
-            'To develop computational thinking and problem solving.'
+            'To develop computational thinking and problem solving.',
         ], 'description' => [
             'Create an escape coding experience like this:',
-            'You can use google form, genially, google presentation, any tool to create a storytelling based on coding ;).'
+            'You can use google form, genially, google presentation, any tool to create a storytelling based on coding ;).',
 
         ],
         'duration' => '90 minutes',
-        'instructions' =>
-            'You can divide your students in small group, they can play and then create another challenge with the template: '
-        ,
+        'instructions' => 'You can divide your students in small group, they can play and then create another challenge with the template: ',
 
         'materials' => [
-            'Any tool can be used (Google and Microsoft platform to create and share documents, presentations and sheets). Any coding construct, tool or character linked to ICT and coding.'
+            'Any tool can be used (Google and Microsoft platform to create and share documents, presentations and sheets). Any coding construct, tool or character linked to ICT and coding.',
         ],
         'example' => [
             'Some characters who had a very important role in the ICT history and basic concepts of coding and programming, are introduced by playing. This is the best way to learn and actively participate. This game can be played in teams or individually, like a challenge or a competition. Students can then create something similar and develop competences such as creativity and coding skills.',
@@ -786,7 +749,7 @@ return [
         'author' => 'Ágota Klacsákné Tóth',
         'purposes' => [
             'To code the snake\'s movement on their own micro:bit.',
-            'To set the correct placing and timing for the joint animation.'
+            'To set the correct placing and timing for the joint animation.',
         ],
         'description' => 'Students must write codes to navigate the snake through micro:bits next to each other. It has to be done in a way that it looks like the snake is running from one micro:bit to the other.',
         'duration' => '30 minutes',
@@ -797,7 +760,7 @@ return [
             'Consider the timing and placement: If the snake goes out of one micro:bit, it will appear on the next micro:bit.',
             'Further challenges: With micro:bit v2, play music until the snake leaves your device.',
             'Design the snake by changing the brightness of the LEDs.',
-            'Try longer, or more snakes.'
+            'Try longer, or more snakes.',
         ],
         'example' => [
             'This is an example for a 6 pixel long snake with4 micro:bits forming a 2x2 square: ',
@@ -810,8 +773,8 @@ return [
             'The time between the two phases determines the speed of the snake.',
         ], 'materials' => [
             'micro:bits (for every student if possible)',
-            'laptop or computer for makecode.microbit.org editor'
-        ]
+            'laptop or computer for makecode.microbit.org editor',
+        ],
     ],
     'illustrate-a-joke' => [
         'title' => 'Illustrate a joke with bitsy',
@@ -826,10 +789,10 @@ return [
             'an object to which your avatar has to go',
             'a room - the background of your program',
             'two messages: a question and an answer',
-            'The finished game can be downloaded as an html file.'
+            'The finished game can be downloaded as an html file.',
         ],
         'example' => 'In this website you see an example of a joke and there is a link to a digital whiteboard:',
-        'materials' => 'bitsy runs in a browser'
+        'materials' => 'bitsy runs in a browser',
     ],
     'app-that-counts-in-several-languages' => [
         'title' => 'App that counts in several languages',
@@ -838,7 +801,7 @@ return [
             'To learn how to create a simple app.',
             'To learn to program through blocks.',
             'To learn how to add Labels, buttons, images, sensors and media.',
-            'To learn how to organize elements on an app screen.'
+            'To learn how to organize elements on an app screen.',
         ],
         'description' => 'The app lets you count in multiple languages at the press of a button. Whenever the user shakes the smartphone, the count goes back to zero. The challenge is to add another language.',
         'instructions' => [
@@ -850,8 +813,8 @@ return [
         'materials' => [
             'To develop an app you need a computer or a laptop with internet access.',
             'Create an account on the MIT APP Inventor platform, accessible through the <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
-            'It is also necessary to install the MIT AI2 Companion app on the smartphone in order to test the developed application.'
-        ]
+            'It is also necessary to install the MIT AI2 Companion app on the smartphone in order to test the developed application.',
+        ],
     ],
     'coding-with-art-through-storytelling' => [
         'title' => 'Coding with art through Storytelling',
@@ -880,7 +843,7 @@ return [
             'They use the thinking routine "Beginning, Middle, End" (Project Zero of Harvard School) in order to create a story.',
             'The teacher asks them "If this artwork is the beginning/middle/end of a story, what might happen next/before/in the end?',
             'Students illustrate the events of the story.',
-            'Students recall the story and put the events in the grid. Using arrow cards, they create an algorithm helping beebot re-narrate the story.'
+            'Students recall the story and put the events in the grid. Using arrow cards, they create an algorithm helping beebot re-narrate the story.',
         ],
     ],
     'coding-with-legoboost' => [
@@ -889,7 +852,7 @@ return [
         'purposes' => [
             'to build models using LegoBoost.',
             'to develop programming skills in Scratch.',
-            'to program robots using commands from simple to complex.'
+            'to program robots using commands from simple to complex.',
         ],
         'description' => 'In this challenge, students will use the Scratch-LegoBoost extension and enter codes in the application for the robots to move forward, backward, obstacle avoidance and voice commands.',
         'duration' => '120 minutes',
@@ -902,7 +865,7 @@ return [
             'In the green color motor A is set ON, in the black color motor B ON.',
             'Green, red and black obstacles will be placed on a route.',
             'Add commands for movement and turns from arrows and text-to-speech when encountering an obstacle.',
-            'Test it!'
+            'Test it!',
         ],
         'example' => [
             'The students will program the robots by rotation and enter commands in the Legoboost android application, to avoid obstacles, to launch with the spring, to stop at the red color and to emit a sound signal. On the Laptop, starting from the example presented and the sequences in the attached file, the students will program the robots where they will introduce:',
@@ -912,6 +875,6 @@ return [
             'text to speech (Scratch extension), when it encounters an obstacle.',
             'if in 30 s the robot avoids the obstacles and it reaches at the end, It add text in speech "I succeeded" else , I have to practice again.',
             'save with the name "LegoBoost extension" and share with the colleagues. ',
-        ]
-    ]
+        ],
+    ],
 ];

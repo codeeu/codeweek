@@ -4,14 +4,12 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBayernRSSItemsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('bayern_r_s_s_items', function (Blueprint $table) {
             $table->id();
@@ -22,7 +20,7 @@ class CreateBayernRSSItemsTable extends Migration
             $table->string('photo')->nullable();
             $table->dateTime('eventEndDate');
             $table->dateTime('eventStartDate');
-            $table->float('latitude', 12,6);
+            $table->float('latitude', 12, 6);
             $table->float('longitude', 12, 6);
             $table->string('location');
             $table->string('user_company');
@@ -38,16 +36,13 @@ class CreateBayernRSSItemsTable extends Migration
             $table->timestamps();
         });
 
-
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('muensterland_r_s_s_items');
     }
-}
+};

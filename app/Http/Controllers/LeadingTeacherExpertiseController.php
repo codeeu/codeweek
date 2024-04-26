@@ -30,7 +30,6 @@ class LeadingTeacherExpertiseController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,7 +40,6 @@ class LeadingTeacherExpertiseController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\LeadingTeacherExpertise  $leadingTeacherExpertise
      * @return \Illuminate\Http\Response
      */
     public function show(LeadingTeacherExpertise $leadingTeacherExpertise)
@@ -52,7 +50,6 @@ class LeadingTeacherExpertiseController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\LeadingTeacherExpertise  $leadingTeacherExpertise
      * @return \Illuminate\Http\Response
      */
     public function edit(LeadingTeacherExpertise $leadingTeacherExpertise)
@@ -63,8 +60,6 @@ class LeadingTeacherExpertiseController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\LeadingTeacherExpertise  $leadingTeacherExpertise
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, LeadingTeacherExpertise $leadingTeacherExpertise)
@@ -75,7 +70,6 @@ class LeadingTeacherExpertiseController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\LeadingTeacherExpertise  $leadingTeacherExpertise
      * @return \Illuminate\Http\Response
      */
     public function destroy(LeadingTeacherExpertise $leadingTeacherExpertise)

@@ -4,14 +4,14 @@ return [
     'subtitle' => 'This privacy statement provides information about the processing and the protection of your personal data.',
     'processing-operation' => [
         'Processing operation',
-        'management of Code Week Ambassadors, Leading Teachers and registration of activities on the website'
+        'management of Code Week Ambassadors, Leading Teachers and registration of activities on the website',
     ],
     'data-processors' => [
         'Data Processors',
-        'GOPA Com. S.A. and EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. and EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'The information in relation to processing of personal data for the management of Code Week Ambassadors, Leading Teachers and registration of activities on the website.'
+        'The information in relation to processing of personal data for the management of Code Week Ambassadors, Leading Teachers and registration of activities on the website.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'In addition, Unit G.2 might share your share your contact details with any member of the public or stakeholder that would need to contact you with regard to Code Week. For activity organisers, please note that the relevant Ambassador for your country or Unit G.2 can use the personal data you provided to register an activity to contact you with regard to said activity.',
     ],
     '8-rights' => [
-        'You have consented to providing your personal data to Unit G.2 for the present processing operation. You can withdraw your consent at any time by notifying Unit G.2 at CNECT-G2@ec.europa.eu. The withdrawal will not affect the lawfulness of the processing carried out before you have withdrawn the consent.'
+        'You have consented to providing your personal data to Unit G.2 for the present processing operation. You can withdraw your consent at any time by notifying Unit G.2 at CNECT-G2@ec.europa.eu. The withdrawal will not affect the lawfulness of the processing carried out before you have withdrawn the consent.',
     ],
 
     '10-detailed-info' => [
-        'This specific processing operation has been included in the DPO’s public register with the following legacy notification reference: DPR-EC-02631 Management of contact points for DG CONNECT policies, programmes and projects.'
-    ]
+        'This specific processing operation has been included in the DPO’s public register with the following legacy notification reference: DPR-EC-02631 Management of contact points for DG CONNECT policies, programmes and projects.',
+    ],
 ];

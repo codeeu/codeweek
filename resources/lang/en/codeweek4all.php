@@ -26,7 +26,7 @@ return [
             '1' => 'Click on Submit.',
             '2' => 'Once your activity has been accepted, you will receive a confirmation email with your unique Code Week 4 All code.',
             '3' => 'Copy the code and share it with your colleagues and others in your network who are also organising a coding activity. Spread the word to encourage others to participate!',
-            '4' => 'After the end of the campaign, all activity organisers will be asked to report back on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!'
+            '4' => 'After the end of the campaign, all activity organisers will be asked to report back on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!',
         ],
         'existing_alliance' => [
             'title' => 'If you are joining an existing alliance:',
@@ -34,7 +34,7 @@ return [
             '2' => 'Click on Submit.',
             '3' => 'Spread the word (and the code!)  to get more organisers to join your alliance.',
             '4' => 'After the end of the campaign, all activity organisers will be asked to report on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!',
-            ]
+        ],
     ],
     'why' => [
         'title' => 'Why join the challenge?',
@@ -42,10 +42,9 @@ return [
         '2' => 'To see a large number of students get involved.',
         '3' => 'To build connections with organisations and/or schools in your community or internationally.',
         '4' => 'To find support from other organisers and teachers.',
-        '5' => 'To gain a <strong>Certificate of Excellence.</strong>'
+        '5' => 'To gain a <strong>Certificate of Excellence.</strong>',
     ],
     'superorganiser-title' => 'Super Organiser Certificate',
-    'superorganiser' => 'You can also earn a Super Organiser Certificate. To do so you need to organise and <a href="https://codeweek.eu/add">register</a> at least 10 separate activities at your school, organisation, or online.'
-
+    'superorganiser' => 'You can also earn a Super Organiser Certificate. To do so you need to organise and <a href="https://codeweek.eu/add">register</a> at least 10 separate activities at your school, organisation, or online.',
 
 ];

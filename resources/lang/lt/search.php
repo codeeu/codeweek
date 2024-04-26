@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Auditorija',
-    'theme_title'=>'Tema',
-    
+    'audience_title' => 'Auditorija',
+    'theme_title' => 'Tema',
+
     'placeholder' => 'Ieškoti renginio pavadinimo arba žymės',
     'submit' => 'Paieška',
     'label_country' => 'Pasirinkite šalį',
     'last_year_events' => [
         'label' => 'Įtraukti praėjusių metų renginius',
         'yes' => 'Taip',
-        'no' => 'Ne'
+        'no' => 'Ne',
     ],
     'search_counter' => 'atitinka jūsų paieškos kriterijus',
-    'event'=>'renginys',
-    'events'=>'renginiai',
+    'event' => 'renginys',
+    'events' => 'renginiai',
     'year' => 'metai',
-    'audiences'=>'Auditorijos','themes'=>'Temos','countries'=>'Šalys','search_placeholder' => 'Ieškoti pagal pavadinimą arba aprašymą',
+    'audiences' => 'Auditorijos', 'themes' => 'Temos', 'countries' => 'Šalys', 'search_placeholder' => 'Ieškoti pagal pavadinimą arba aprašymą',
 ];

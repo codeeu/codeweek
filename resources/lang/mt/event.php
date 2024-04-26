@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Indirizz elettroniku pubbliku',
-        'placeholder' => 'Tixtieq turi indirizz elettroniku ta’ kuntatt?'
+        'placeholder' => 'Tixtieq turi indirizz elettroniku ta’ kuntatt?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Indirizz',
         'placeholder' => 'Fejn ser issir l-attività?',
     ],
-
 
     'organizertype' => [
         'label' => 'Tip ta’ organizzazzjoni',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Realtà awmentata',
         'Artificial intelligence' => 'Intelliġenza artifiċjali',
         'Motivation and awareness raising' => 'Motivazzjoni u sensibilizzazzjoni',
-        'Promoting diversity' => 'Promozzjoni tad-diversità'
+        'Promoting diversity' => 'Promozzjoni tad-diversità',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KODIĊI TAL-ĠIMGĦA TAL-IKKOWDJAR GĦAL KULĦADD',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'ambaxxaturi nazzjonali tagħna',
         'phrase5' => 'jew ibgħatilna',
         'phrase6' => 'ittra elettronika',
-        'phrase7' => 'Tista’ taqsam il-kodiċi tiegħek għall-Ġimga tal-Ikkowdjar għal Kulħadd ma’ persuni oħra:'
+        'phrase7' => 'Tista’ taqsam il-kodiċi tiegħek għall-Ġimga tal-Ikkowdjar għal Kulħadd ma’ persuni oħra:',
     ],
     'activitytype' => [
         'label' => 'Tip ta’ Attività',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Attività miftuħa online',
         'invite-online' => 'Stedina għal attività online biss',
         'open-in-person' => 'Attività miftuħa għal kulħadd',
-        'invite-in-person' => 'Attività għal persuni mistiedna'
+        'invite-in-person' => 'Attività għal persuni mistiedna',
 
     ],
     'country' => 'Pajjiż',
@@ -147,6 +146,5 @@ return [
     'view_your_certificate' => 'Ara ċ-ċertifikat tiegħek hawn',
     'submit_event_and_report' => 'Issottometti rapport għal dan l-avveniment u itlob iċ-ċertifikat tal-Ġimgħa tal-Ikkowdjar tiegħek.',
     'report_and_claim' => 'Irrapporta l-avveniment u itlob iċ-ċertifikat',
-
 
 ];

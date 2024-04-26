@@ -22,15 +22,15 @@ return [
             '1' => 'Klik op Verzenden.',
             '2' => 'Zodra je activiteit is geaccepteerd, krijg je een bevestigingsmail met je unieke Code Week 4 All-code.',
             '3' => 'Kopieer de code en deel deze met je collega\'s en andere mensen in je netwerk die ook een programmeeractiviteit opzetten. Zegt het voort en overtuig anderen om mee te doen!',
-            '4' => 'Na afloop van de campagne vragen we alle organisatoren hoeveel deelnemers zij bij hun activiteit hebben betrokken. Als je de drempel hebt weten te bereiken, krijgen jij en al je collega\'s uit je netwerk het Certificaat van uitmuntendheid!'
+            '4' => 'Na afloop van de campagne vragen we alle organisatoren hoeveel deelnemers zij bij hun activiteit hebben betrokken. Als je de drempel hebt weten te bereiken, krijgen jij en al je collega\'s uit je netwerk het Certificaat van uitmuntendheid!',
         ],
         'existing_alliance' => [
             'title' => 'Als je je aansluit bij een bestaande groep:',
             '1' => 'Plak het wachtwoord dat je van de initiator, dus diegene die de groep heeft opgezet, hebt gekregen in het veldvak CODE WEEK 4 ALL CODE.',
             '2' => 'Klik op Verzenden.',
             '3' => 'Zegt het voort (ook de code!) zodat er meer organisatoren zich bij jullie groep aansluiten.',
-            '4' => 'Na afloop van de campagne vragen we alle organisatoren hoeveel deelnemers zij bij hun activiteit hebben betrokken. Als je de drempel hebt weten te bereiken, krijgen jij en al je collega\'s uit je netwerk het Certificaat van uitmuntendheid!'
-        ]
+            '4' => 'Na afloop van de campagne vragen we alle organisatoren hoeveel deelnemers zij bij hun activiteit hebben betrokken. Als je de drempel hebt weten te bereiken, krijgen jij en al je collega\'s uit je netwerk het Certificaat van uitmuntendheid!',
+        ],
     ],
     'why' => [
         'title' => 'Waarom meedoen aan de uitdaging?',
@@ -38,9 +38,9 @@ return [
         '2' => 'Om een groot aantal studenten betrokken te zien raken.',
         '3' => 'Om contacten te leggen met organisaties en/of scholen in je gemeenschap of het buitenland.',
         '4' => 'Om ondersteuning te vinden bij andere organisatoren en docenten.',
-        '5' => 'Om het <strong>Certificaat van uitmuntendheid</strong> te behalen.'
+        '5' => 'Om het <strong>Certificaat van uitmuntendheid</strong> te behalen.',
     ],
     'superorganiser-title' => 'Certificaat Superorganiser',
-    'superorganiser' => 'Je kunt ook een Certificaat Superorganiser krijgen. Daarvoor moet je ten minste 10 verschillende activiteiten op je school, binnen je organisatie of online organiseren en <a href="https://codeweek.eu/add">registreren</a>.'
+    'superorganiser' => 'Je kunt ook een Certificaat Superorganiser krijgen. Daarvoor moet je ten minste 10 verschillende activiteiten op je school, binnen je organisatie of online organiseren en <a href="https://codeweek.eu/add">registreren</a>.',
 
 ];

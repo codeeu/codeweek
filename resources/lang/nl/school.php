@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Naam van de school',
-    'location'           => 'Locatie van de school',
-    'description'                => 'Beschrijving van de school',
-    'school'                => 'School',
-    'add'                => 'Toevoegen',
-    'list'                => 'Lijst',
+    'name' => 'Naam van de school',
+    'location' => 'Locatie van de school',
+    'description' => 'Beschrijving van de school',
+    'school' => 'School',
+    'add' => 'Toevoegen',
+    'list' => 'Lijst',
     'required' => [
-        'name'=>'Naam van de school is vereist',
-        'location'=>'Locatie van de school is vereist',
-    ]
-
+        'name' => 'Naam van de school is vereist',
+        'location' => 'Locatie van de school is vereist',
+    ],
 
 ];

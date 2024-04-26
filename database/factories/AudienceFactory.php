@@ -1,9 +1,20 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(App\Audience::class, function (Faker $faker) {
-    return [
-        'name' => $faker->slug(2),
-    ];
-});
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class AudienceFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => $this->faker->slug(2),
+        ];
+    }
+}

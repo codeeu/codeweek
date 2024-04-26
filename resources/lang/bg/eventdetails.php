@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Организирано от: ',
+    'organised_by' => 'Организирано от: ',
     'contact_email' => 'Имейл за контакт: ',
     'happening_at' => 'Дата на провеждане: ',
     'from' => 'От ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Щракнете, за да го изпратите на приятел',
         'subject' => 'Вижте това страхотно събитие по програмиране',
         'body_1' => 'Здравейте! Проверете за ',
-        'body_2' => 'събитие на '
+        'body_2' => 'събитие на ',
     ],
     'edit' => 'Редактиране на събитие',
     'note' => 'ЗАБЕЛЕЖКА: ',
     'pending_warning' => 'Това събитие все още се преглежда от ',
     'pending_link' => 'модераторите',
-    'nearby_upcoming_events' => 'Предстоящи събития в близост:'
+    'nearby_upcoming_events' => 'Предстоящи събития в близост:',
 ];

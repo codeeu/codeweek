@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Nazwa szkoły',
-    'location'           => 'Lokalizacja szkoły',
-    'description'                => 'Opis szkoły',
-    'school'                => 'Szkoła',
-    'add'                => 'Dodaj',
-    'list'                => 'Lista',
+    'name' => 'Nazwa szkoły',
+    'location' => 'Lokalizacja szkoły',
+    'description' => 'Opis szkoły',
+    'school' => 'Szkoła',
+    'add' => 'Dodaj',
+    'list' => 'Lista',
     'required' => [
-        'name'=>'Nazwa szkoły jest wymagana',
-        'location'=>'Lokalizacja szkoły jest wymagana',
-    ]
-
+        'name' => 'Nazwa szkoły jest wymagana',
+        'location' => 'Lokalizacja szkoły jest wymagana',
+    ],
 
 ];

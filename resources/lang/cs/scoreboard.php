@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Ve kterých zemích probíhá nejvíc programovacích akcí?',
-    'paragraph'=>'Srovnávací přehled uvádí země podle počtu programovacích akcí na počet obyvatel. Nedivte se proto, že některé menší země jsou v žebříčku výše.',
-    'parcipating_with'=>'se podílí',
-    'events'=>'akcemi'
+    'paragraph' => 'Srovnávací přehled uvádí země podle počtu programovacích akcí na počet obyvatel. Nedivte se proto, že některé menší země jsou v žebříčku výše.',
+    'parcipating_with' => 'se podílí',
+    'events' => 'akcemi',
 
 ];

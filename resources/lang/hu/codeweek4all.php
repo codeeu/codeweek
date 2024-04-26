@@ -22,15 +22,15 @@ return [
             '1' => 'Kattintson a Küldés gombra.',
             '2' => 'Amint tevékenységét elfogadták, egy visszaigazoló e-mailt fog kapni saját egyedi Code Week 4 All kódjával.',
             '3' => 'Másolja le a kódot és ossza meg kollégáival, illetve a hálózatában található más olyan emberekkel is, akik szintén programozási tevékenységet szerveznek. Terjessze a hírt, hogy mások is csatlakozzanak!',
-            '4' => 'A kampány befejeződését követően az összes tevékenységszervezőt arra kérjük majd, hogy számoljon be az általa bevont résztvevők számáról. Ha sikeresen elérték a küszöbértéket, akkor Ön és a saját hálózatában lévő kollégái elnyerik a Kiválósági tanúsítványt!'
+            '4' => 'A kampány befejeződését követően az összes tevékenységszervezőt arra kérjük majd, hogy számoljon be az általa bevont résztvevők számáról. Ha sikeresen elérték a küszöbértéket, akkor Ön és a saját hálózatában lévő kollégái elnyerik a Kiválósági tanúsítványt!',
         ],
         'existing_alliance' => [
             'title' => 'Ha egy már meglévő szövetséghez csatlakozik:',
             '1' => 'Illessze be a szövetséget létrehozó kezdeményezőtől kapott kódot a CODE WEEK 4 ALL CODE mező cellába.',
             '2' => 'Kattintson a Küldés gombra.',
             '3' => 'Terjessze a hírt (és a kódot), hogy még több szervező csatlakozzon szövetségéhez.',
-            '4' => 'A kampány befejeződését követően az összes tevékenységszervezőt arra kérjük majd, hogy számoljon be az általa bevont résztvevők számáról. Ha sikeresen elérték a küszöbértéket, akkor Ön és a saját hálózatában lévő kollégái elnyerik a Kiválósági tanúsítványt!'
-        ]
+            '4' => 'A kampány befejeződését követően az összes tevékenységszervezőt arra kérjük majd, hogy számoljon be az általa bevont résztvevők számáról. Ha sikeresen elérték a küszöbértéket, akkor Ön és a saját hálózatában lévő kollégái elnyerik a Kiválósági tanúsítványt!',
+        ],
     ],
     'why' => [
         'title' => 'Miért érdemes csatlakozni a kihíváshoz?',
@@ -38,10 +38,9 @@ return [
         '2' => 'Azért, hogy sok tanuló bekapcsolódását láthassa.',
         '3' => 'Azért, hogy kapcsolatokat építsen ki szervezetekkel és/vagy iskolákkal saját közösségében vagy nemzetközi szinten.',
         '4' => 'Azért, hogy támogatásra találjon más szervezők és tanárok részéről.',
-        '5' => 'Azért, hogy megszerezze a <strong>Kiválósági tanúsítványt.</strong>'
+        '5' => 'Azért, hogy megszerezze a <strong>Kiválósági tanúsítványt.</strong>',
     ],
     'superorganiser-title' => 'Szuperszervezői tanúsítványt',
-    'superorganiser' => 'Emellett szuperszervezői tanúsítványt is szerezhet. Ehhez szervezzen és <a href="https://codeweek.eu/add">regisztráljon</a> legalább 10 egymástól független tevékenységet iskolájában, szervezetében vagy az online térben.'
-
+    'superorganiser' => 'Emellett szuperszervezői tanúsítványt is szerezhet. Ehhez szervezzen és <a href="https://codeweek.eu/add">regisztráljon</a> legalább 10 egymástól független tevékenységet iskolájában, szervezetében vagy az online térben.',
 
 ];

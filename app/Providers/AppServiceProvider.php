@@ -3,25 +3,22 @@
 namespace App\Providers;
 
 use Carbon\Carbon;
-use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\RateLimiter;
-use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 
-class AppServiceProvider extends ServiceProvider {
+class AppServiceProvider extends ServiceProvider
+{
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot() {
+    public function boot(): void
+    {
 
-//        Model::shouldBeStrict(!$this->app->isProduction());
+        //        Model::shouldBeStrict(!$this->app->isProduction());
 
         Password::defaults(function () {
             return Password::min(10)->letters()
@@ -30,8 +27,6 @@ class AppServiceProvider extends ServiceProvider {
                 ->symbols()
                 ->uncompromised();
         });
-
-
 
         View::share('locales', config('app.locales'));
 
@@ -57,10 +52,10 @@ class AppServiceProvider extends ServiceProvider {
         /**
          * Paginate a standard Laravel Collection.
          *
-         * @param int $perPage
-         * @param int $total
-         * @param int $page
-         * @param string $pageName
+         * @param  int  $perPage
+         * @param  int  $total
+         * @param  int  $page
+         * @param  string  $pageName
          * @return array
          */
         Collection::macro('paginate', function (
@@ -71,6 +66,7 @@ class AppServiceProvider extends ServiceProvider {
         ) {
             $page =
                 $page ?: LengthAwarePaginator::resolveCurrentPage($pageName);
+
             return new LengthAwarePaginator(
                 $this->forPage($page, $perPage),
                 $total ?: $this->count(),
@@ -78,7 +74,7 @@ class AppServiceProvider extends ServiceProvider {
                 $page,
                 [
                     'path' => LengthAwarePaginator::resolveCurrentPath(),
-                    'pageName' => $pageName
+                    'pageName' => $pageName,
                 ]
             );
         });
@@ -86,10 +82,9 @@ class AppServiceProvider extends ServiceProvider {
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register() {
+    public function register(): void
+    {
         if ($this->app->environment() !== 'production') {
             $this->app->register(
                 \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class

@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Ova izjava o privatnosti pruža informacije o obradi i zaštiti vaših ličnih podataka.',
     'processing-operation' => [
         'Postupak obrade',
-        'upravljanje ambasadorima Nedelje programiranja, vodećim nastavnicima i registracija aktivnosti na veb stranici'
+        'upravljanje ambasadorima Nedelje programiranja, vodećim nastavnicima i registracija aktivnosti na veb stranici',
     ],
     'data-processors' => [
         'Uređaji za obradu podataka',
-        'GOPA Com. S.A. i EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. i EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informacije u vezi sa obradom ličnih podataka radi upravljanja ambasadorima Nedelje programiranja, vodećim nastavnicima i registracijom aktivnosti na veb stranici.'
+        'Informacije u vezi sa obradom ličnih podataka radi upravljanja ambasadorima Nedelje programiranja, vodećim nastavnicima i registracijom aktivnosti na veb stranici.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Pored toga, služba G.2 može da podeli vaše podatke za kontakt sa bilo kojim članom javnosti ili zainteresovanim stranama koji bi trebalo da vas kontaktiraju u vezi sa Nedeljom programiranja. Za organizatore aktivnosti, imajte na umu da relevantni ambasador za vašu zemlju ili služba G.2 može koristiti lične podatke koje ste dali da registrujete aktivnost da bi vas kontaktirali u vezi sa navedenom aktivnošću.',
     ],
     '8-rights' => [
-        'Dali ste pristanak da svoje lične podatke date službi G.2 radi tekućeg postupka obrade. Možete povući svoj pristanak u bilo kom trenutku tako što ćete obavestiti službu G.2 na: CNECT-G2@ec.europa.eu. Povlačenje neće uticati na zakonitost obrade koja je izvršena pre nego što ste povukli pristanak.'
+        'Dali ste pristanak da svoje lične podatke date službi G.2 radi tekućeg postupka obrade. Možete povući svoj pristanak u bilo kom trenutku tako što ćete obavestiti službu G.2 na: CNECT-G2@ec.europa.eu. Povlačenje neće uticati na zakonitost obrade koja je izvršena pre nego što ste povukli pristanak.',
     ],
 
     '10-detailed-info' => [
-        'Ovaj specifični postupak obrade je obuhvaćen javnim registrom lica zaduženog za zaštitu podataka (DPO) sa sledećom postojećom referencom za obaveštenja: DPR-EC-02631 Upravljanje licima za kontakt za politike, programe i projekte DG CONNECT.'
-    ]
+        'Ovaj specifični postupak obrade je obuhvaćen javnim registrom lica zaduženog za zaštitu podataka (DPO) sa sledećom postojećom referencom za obaveštenja: DPR-EC-02631 Upravljanje licima za kontakt za politike, programe i projekte DG CONNECT.',
+    ],
 ];

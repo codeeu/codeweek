@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Ez az adatvédelmi nyilatkozat tájékoztatást nyújt az Ön személyes adatainak kezeléséről és védelméről.',
     'processing-operation' => [
         'Adatkezelési művelet',
-        'a programozási hét nagyköveteire, vezető tanáraira vonatkozó adatok kezelése, valamint tevékenységek regisztrálása a honlapon'
+        'a programozási hét nagyköveteire, vezető tanáraira vonatkozó adatok kezelése, valamint tevékenységek regisztrálása a honlapon',
     ],
     'data-processors' => [
         'Adatfeldolgozók',
-        'GOPA Com. S.A. és EUN partnerség AISBL (Európai Iskolahálózat), info@codeweek.eu'
+        'GOPA Com. S.A. és EUN partnerség AISBL (Európai Iskolahálózat), info@codeweek.eu',
     ],
     '1-intro' => [
-        'A személyes adatoknak a programozási hét nagyköveteire, vezető tanáraira vonatkozó adatok feldolgozásával, valamint tevékenységek honlapon történő regisztrálásával kapcsolatos információk.'
+        'A személyes adatoknak a programozási hét nagyköveteire, vezető tanáraira vonatkozó adatok feldolgozásával, valamint tevékenységek honlapon történő regisztrálásával kapcsolatos információk.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Emellett az G.2. egység megoszthatja elérhetőségeit a nyilvánosság bármely tagjával vagy olyan érdekelt felekkel, akiknek a programozási hét tekintetében kapcsolatba kell lépniük Önnel. A tevékenységek szervezőinek figyelembe kell venniük, hogy a tevékenység regisztrálásához megadott személyes adataikat országuk illetékes nagykövete vagy az G.2. egység felhasználhatja az említett tevékenységgel kapcsolatban történő kapcsolatfelvételhez.',
     ],
     '8-rights' => [
-        'Ön hozzájárult ahhoz, hogy személyes adatait az G.2. egység számára ezen adatkezelési művelet céljaira biztosítsa. Hozzájárulását bármikor visszavonhatja úgy, hogy erről értesíti az G.2. egységet az CNECT-G2@ec.europa.eu e-mail címen. A hozzájárulás visszavonása nem érinti a visszavonást megelőzően végrehajtott adatkezelés jogszerűségét.'
+        'Ön hozzájárult ahhoz, hogy személyes adatait az G.2. egység számára ezen adatkezelési művelet céljaira biztosítsa. Hozzájárulását bármikor visszavonhatja úgy, hogy erről értesíti az G.2. egységet az CNECT-G2@ec.europa.eu e-mail címen. A hozzájárulás visszavonása nem érinti a visszavonást megelőzően végrehajtott adatkezelés jogszerűségét.',
     ],
 
     '10-detailed-info' => [
-        'Ez a konkrét adatkezelési művelet a korábbi adatkezelési értesítésre vonatkozó alábbi hivatkozási számmal szerepel az adatvédelmi tisztviselő nyilvántartásában: DPR-EC-02631 A Tartalmak, Technológiák és Kommunikációs Hálózatok Főigazgatósága szakpolitikái, programjai és projektjei kapcsolattartó pontjainak irányítása.'
-    ]
+        'Ez a konkrét adatkezelési művelet a korábbi adatkezelési értesítésre vonatkozó alábbi hivatkozási számmal szerepel az adatvédelmi tisztviselő nyilvántartásában: DPR-EC-02631 A Tartalmak, Technológiák és Kommunikációs Hálózatok Főigazgatósága szakpolitikái, programjai és projektjei kapcsolattartó pontjainak irányítása.',
+    ],
 ];

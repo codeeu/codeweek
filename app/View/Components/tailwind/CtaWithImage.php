@@ -16,9 +16,7 @@ class CtaWithImage extends Component
         public string $title,
         public string $content,
 
-
-    )
-    {
+    ) {
 
     }
 

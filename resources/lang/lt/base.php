@@ -41,7 +41,7 @@ return [
         'me' => 'juodkalniečių',
         'rs' => 'serbų',
         'mt' => 'Maltiečių',
-        'tr' => 'Turkų'
+        'tr' => 'Turkų',
     ],
 
     'resources_local_title' => 'Programavimo iđtekliai iđ',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Dar turite klausimų?',
     'drop_us_a_line' => 'Rašykite mums!',
     'get_in_touch' => 'SUSISIEKTI',
-    'footer_msg' =>
-        'Savanorių vykdoma ir Europos Komisijos remiama visuomeninė iniciatyva.',
+    'footer_msg' => 'Savanorių vykdoma ir Europos Komisijos remiama visuomeninė iniciatyva.',
     'email' => 'El. pašto adresas',
     'display_email' => 'Rodyti el. pašto adresą',
     'first_name' => 'Vardas',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Pasirinkti failą',
     'learning_bits' => 'Mokymosi segmentai',
     'codeweek' => 'Programavimo savaitė',
-    'bring_codeweek_to_your_students' =>
-        'Įtraukite savo moksleivius į Programavimo savaitę',
+    'bring_codeweek_to_your_students' => 'Įtraukite savo moksleivius į Programavimo savaitę',
     'or' => 'arba',
-    'newsletter' => 'Naujienlaiškis'
+    'newsletter' => 'Naujienlaiškis',
 ];

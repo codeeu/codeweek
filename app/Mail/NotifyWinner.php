@@ -2,18 +2,16 @@
 
 namespace App\Mail;
 
-use App\Event;
-use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class NotifyWinner extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $user;
+
     public $edition;
 
     /**
@@ -21,7 +19,7 @@ class NotifyWinner extends Mailable
      *
      * @return void
      */
-    public function __construct ($user, $edition)
+    public function __construct($user, $edition)
     {
         $this->user = $user;
         $this->edition = $edition;
@@ -29,13 +27,11 @@ class NotifyWinner extends Mailable
 
     /**
      * Build the message.
-     *
-     * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
-            ->subject("[EU Code Week] You are a winner !")
+            ->subject('[EU Code Week] You are a winner !')
             ->markdown('emails.en.notify-winner');
     }
 }

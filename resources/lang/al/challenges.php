@@ -19,7 +19,7 @@ return [
         'beginner' => 'Fillestar',
         'intermediate' => 'Mesatar',
         'advanced' => 'I përparuar',
-        '1-hour' => '1 orë'
+        '1-hour' => '1 orë',
     ],
     'main' => [
         'Gjatë EU Code Week, 9-24 tetor 2021, ju ftojmë të zhvilloni një ose më shumë sfida të EU Code Week.',
@@ -35,7 +35,7 @@ return [
         'Shpërndajeni sfidën tuaj',
         'Dëshironi të fitoni disa shpërblime me Code Week? Nëse po, atëherë lëreni punën tuaj të bëhet virale!',
         'Pasi të keni përfunduar sfidën, shpërndajeni atë në Instagram.',
-        'Fituesit do të zgjidhen çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalin tonë në Instagram, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht.'
+        'Fituesit do të zgjidhen çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalin tonë në Instagram, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht.',
     ],
     'share' => [
         'Si t\'i shpërndani sfidat tuaja në Instagram?',
@@ -52,7 +52,7 @@ return [
         'Facebook',
         'çdo ditë dhe do të zgjedhin fituesin për çmimin nga komentet nën postim.',
         'Si funksionon?',
-        'Thjesht komentoni postimin me lidhjen e punës suaj.'
+        'Thjesht komentoni postimin me lidhjen e punës suaj.',
     ],
     'share-box' => [
         'Ndani lidhjen te puna juaj në',
@@ -67,18 +67,18 @@ return [
         'një postim Sfide të re në',
         'faqen në Facebook',
         'Atëherë ju duhet thjesht të komentoni postimin me lidhjen e punës suaj',
-        'Fituesit do të zgjidhen dhe do t’u ofrohen shpërblime të Code Week çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalet tona në Instagram dhe Facebook, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht.'
+        'Fituesit do të zgjidhen dhe do t’u ofrohen shpërblime të Code Week çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalet tona në Instagram dhe Facebook, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht.',
     ],
     'take-part' => [
         'Pse të merrni pjesë në një sfidë të EU Code Week?',
         'Për t’u angazhuar në zgjidhjen e problemeve dhe aktivitetet e kodimit.',
         'Për të punuar së bashku me bashkëmoshatarët.',
-        'Për të përhapur mesazhin mbi rëndësinë e kodimit.'
+        'Për të përhapur mesazhin mbi rëndësinë e kodimit.',
     ],
     'download' => [
         'Klikoni',
         'këtu',
-        'për ta shkarkuar këtë sfidë si një dokument Word'
+        'për ta shkarkuar këtë sfidë si një dokument Word',
     ],
     'bingo' => [
         'Plotësoni të gjitha Sfidat',
@@ -88,6 +88,6 @@ return [
         'Ndani Sfidën tuaj në mediat sociale dhe fitoni disa çmime fantastike të Code Week',
         'Thjesht ngarkoni një fotografi me radhën(t) e përfunduar(a), kolona ose edhe më mirë - të gjithë bingon - në',
         'Facebook, Instagram ose Twitter',
-        'Sigurohuni që të përdorni'
-    ]
+        'Sigurohuni që të përdorni',
+    ],
 ];

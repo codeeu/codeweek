@@ -3,42 +3,35 @@
 namespace Tests\Feature;
 
 use App\Mail\EventApproved;
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ApproveEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-    public function setup() :void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-
     }
 
     /** @test */
-    public function event_can_be_approved_by_admin()
+    public function event_can_be_approved_by_admin(): void
     {
 
         Mail::fake();
 
         $this->withExceptionHandling();
 
-
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create('App\Event', ['status' => 'PENDING']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -50,20 +43,19 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function email_should_be_sent_to_event_email_when_event_is_approved()
+    public function email_should_be_sent_to_event_email_when_event_is_approved(): void
     {
 
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
-
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
 
         $event->approve();
 
@@ -75,23 +67,21 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function email_should_be_sent_to_creator_email_when_event_email_is_blank()
+    public function email_should_be_sent_to_creator_email_when_event_email_is_blank(): void
     {
 
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $superadmin = create('App\User', ['email' => 'test@boo.com']);
+        $superadmin = \App\User::factory()->create(['email' => 'test@boo.com']);
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
-
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
 
         $event->approve();
-
 
         // Assert a message was sent to the given users...
         Mail::assertQueued(EventApproved::class, function ($mail) use ($superadmin) {
@@ -102,43 +92,39 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function email_should_not_be_sent_to_creator_email()
+    public function email_should_not_be_sent_to_creator_email(): void
     {
 
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $superadmin = create('App\User', ['email' => NULL]);
+        $superadmin = \App\User::factory()->create(['email' => null]);
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
-
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
 
         $event->approve();
-
 
         // Assert a message was sent to the given users...
         Mail::assertNotQueued(EventApproved::class);
 
     }
 
-
     /** @test */
-    public function event_cant_be_approved_by_ambassador_of_other_country()
+    public function event_cant_be_approved_by_ambassador_of_other_country(): void
     {
 
         $this->withExceptionHandling();
 
-
-        $ambassador = create('App\User', ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'country_iso' => 'BE']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'BE']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -146,23 +132,22 @@ class ApproveEventTest extends TestCase
 
         //$this->assertEquals($event->fresh()->status, 'PENDING');
 
-
     }
 
     /** @test */
-    public function event_can_be_approved_by_ambassador_of_same_country()
+    public function event_can_be_approved_by_ambassador_of_same_country(): void
     {
 
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $ambassador = create('App\User', ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'country_iso' => 'FR']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'FR']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -170,48 +155,42 @@ class ApproveEventTest extends TestCase
 
         $this->assertEquals($event->fresh()->status, 'APPROVED');
 
-
     }
 
     /** @test */
-    public function visitors_cant_see_the_approve_banner()
+    public function visitors_cant_see_the_approve_banner(): void
     {
 
-        $event = create('App\Event');
+        $event = \App\Event::factory()->create();
 
-        $this->get('/view/' . $event->id . '/random')
-            ->assertDontSee('moderate-event');
-
-
-    }
-
-    /** @test */
-    public function ambassadors_of_other_countries_cant_see_the_approve_banner()
-    {
-        $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole('ambassador');
-        $this->signIn($ambassador);
-
-        $event = create('App\Event', ['country_iso' => 'BE']);
-
-        $this->get('/view/' . $event->id . '/random')
+        $this->get('/view/'.$event->id.'/random')
             ->assertDontSee('moderate-event');
 
     }
 
     /** @test */
-    public function ambassadors_of_right_country_can_see_the_approve_banner()
+    public function ambassadors_of_other_countries_cant_see_the_approve_banner(): void
     {
-        $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole('ambassador');
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
 
-        $event = create('App\Event', ['country_iso' => 'FR']);
+        $event = \App\Event::factory()->create(['country_iso' => 'BE']);
 
-        $this->get('/view/' . $event->id . '/random')
+        $this->get('/view/'.$event->id.'/random')
+            ->assertDontSee('moderate-event');
+
+    }
+
+    /** @test */
+    public function ambassadors_of_right_country_can_see_the_approve_banner(): void
+    {
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole('ambassador');
+        $this->signIn($ambassador);
+
+        $event = \App\Event::factory()->create(['country_iso' => 'FR']);
+
+        $this->get('/view/'.$event->id.'/random')
             ->assertSee('moderate-event');
 
     }
-
-
 }
-
-

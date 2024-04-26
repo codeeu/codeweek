@@ -5,16 +5,14 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreLocationRequest;
 use App\Http\Requests\UpdateLocationRequest;
 use App\Location;
-use App\Podcast;
+use Illuminate\View\View;
 
 class LocationController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): View
     {
         $locations = auth()->user()->locations()->orderBy('location')->get();
 
@@ -23,10 +21,8 @@ class LocationController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(): View
     {
         return view('locations.add');
     }
@@ -34,7 +30,6 @@ class LocationController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreLocationRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreLocationRequest $request)
@@ -45,7 +40,6 @@ class LocationController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Location  $location
      * @return \Illuminate\Http\Response
      */
     public function show(Location $location)
@@ -56,7 +50,6 @@ class LocationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Location  $location
      * @return \Illuminate\Http\Response
      */
     public function edit(Location $location)
@@ -67,8 +60,6 @@ class LocationController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateLocationRequest  $request
-     * @param  \App\Location  $location
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateLocationRequest $request, Location $location)
@@ -79,7 +70,6 @@ class LocationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Location  $location
      * @return \Illuminate\Http\Response
      */
     public function destroy(Location $location)

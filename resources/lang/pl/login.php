@@ -27,5 +27,5 @@ return [
     'reset' => 'Zresetuj hasło',
     'send_password' => 'Prześlij odnośnik resetujący hasło',
     'confirm_password' => 'Potwierdź hasło',
-    'name' => 'imię'
+    'name' => 'imię',
 ];

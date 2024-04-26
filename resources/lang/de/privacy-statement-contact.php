@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Diese Datenschutzerklärung enthält Informationen über die Verarbeitung und den Schutz Ihrer personenbezogenen Daten.',
     'processing-operation' => [
         'Verarbeitungsvorgang',
-        'Verwaltung von Botschafter/innen der Code Week, Leading Teachers und Registrierung von Aktivitäten auf der Website'
+        'Verwaltung von Botschafter/innen der Code Week, Leading Teachers und Registrierung von Aktivitäten auf der Website',
     ],
     'data-processors' => [
         'Auftragsverarbeiter',
-        'GOPA Com. S.A. und EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. und EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informationen im Zusammenhang mit der Verarbeitung personenbezogener Daten für die Verwaltung von Botschafter/innen der Code Week, Leading Teachers und Registrierung von Aktivitäten auf der Website.'
+        'Informationen im Zusammenhang mit der Verarbeitung personenbezogener Daten für die Verwaltung von Botschafter/innen der Code Week, Leading Teachers und Registrierung von Aktivitäten auf der Website.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Außerdem kann das Referat G.2 Ihre Kontaktdaten an alle Bürgerinnen und Bürger oder Interessenträger weitergeben, die Sie im Zusammenhang mit der Code Week kontaktieren möchten. Bitte beachten Sie als Organisator/in einer Aktivität, dass die personenbezogenen Daten, die Sie bei der Registrierung einer Aktivität angegeben haben, von der/dem für Ihr Land zuständigen Botschafter/in oder vom Referat G.2 verwendet werden können, um Sie im Hinblick auf diese Aktivität zu kontaktieren.',
     ],
     '8-rights' => [
-        'Sie haben der Verarbeitung Ihrer personenbezogenen Daten durch das Referat G.2 für die Zwecke dieses Verarbeitungsvorgangs zugestimmt. Sie können diese Zustimmung jederzeit widerrufen, indem Sie das Referat G.2 per E-Mail an CNECT-G2@ec.europa.eu darüber informieren. Die Rechtmäßigkeit der Verarbeitung Ihrer Daten vor Ihrem Widerruf bleibt hiervon unberührt.'
+        'Sie haben der Verarbeitung Ihrer personenbezogenen Daten durch das Referat G.2 für die Zwecke dieses Verarbeitungsvorgangs zugestimmt. Sie können diese Zustimmung jederzeit widerrufen, indem Sie das Referat G.2 per E-Mail an CNECT-G2@ec.europa.eu darüber informieren. Die Rechtmäßigkeit der Verarbeitung Ihrer Daten vor Ihrem Widerruf bleibt hiervon unberührt.',
     ],
 
     '10-detailed-info' => [
-        'Dieser Verarbeitungsvorgang wurde unter folgendem Aktenzeichen in das öffentliche Register der/des Datenschutzbeauftragten aufgenommen: DPR-EC-02631 Verwaltung der Kontaktstellen für politische Maßnahmen, Programme und Projekte der GD CNECT.'
-    ]
+        'Dieser Verarbeitungsvorgang wurde unter folgendem Aktenzeichen in das öffentliche Register der/des Datenschutzbeauftragten aufgenommen: DPR-EC-02631 Verwaltung der Kontaktstellen für politische Maßnahmen, Programme und Projekte der GD CNECT.',
+    ],
 ];

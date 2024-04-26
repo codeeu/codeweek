@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Vēl nav neviena pasākuma, par kuru jāpaziņo.',
     'report' => 'Tālāk norādītie pasākumi ir jau sākušies vai beigušies. Norādiet pāris ciparus
 	pasākuma statistikai un pieprasiet savu programmēšanas nedēļas dalībnieka sertifikātu. Jūs
-    saņemsiet vienu sertifikātu par katru pasākumu.'
+    saņemsiet vienu sertifikātu par katru pasākumu.',
 ];

@@ -34,19 +34,16 @@ class SuperOrganisers extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
         $edition = $this->argument('edition');
 
         $winners = SuperOrganiserQuery::winners($edition);
 
-
         foreach ($winners as $user_id) {
             try {
-                create('App\Excellence', ['edition' => $edition, "user_id" => $user_id, "type"=>"SuperOrganiser"]);
+                create(\App\Excellence::class, ['edition' => $edition, 'user_id' => $user_id, 'type' => 'SuperOrganiser']);
             } catch (\Exception $ex) {
                 Log::info($ex->getMessage());
             }

@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Guide',
@@ -12,7 +11,7 @@ return [
                     et soutenue par la Commission européenne. Tout le monde – écoles, enseignants,
                     bibliothèques, clubs de codage, entreprises, autorités publiques – peut
                     organiser une activité #EUCodeWeek et l’ajouter à la carte <a href="/events">codeweek.eu</a>.
-                </p>'
+                </p>',
     ],
     'what_you_need_organise' => [
         'title' => 'De quoi avez-vous besoin pour organiser une activité?',
@@ -50,7 +49,7 @@ Jetez un coup d’œil à notre section <a
             '8' => 'N’oubliez pas <a href="/add">d’épingler votre activité</a> sur la <a
                         href="/events">carte Code Week</a>!
             ',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Comment organiser votre activité?',
@@ -78,7 +77,7 @@ Jetez un coup d’œil à notre section <a
             '5' => 'N’oubliez pas <a href="/add">d’ajouter votre activité</a> sur la <a
                         href="/events">carte Code Week</a> !
             ',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Matériel de promotion',
@@ -88,19 +87,19 @@ Jetez un coup d’œil à notre section <a
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
             '2' => ' <a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">S’équiper
-                            pour la Semaine européenne du code 2019!</a> (disponible dans 29 langues)'
-        ]
+                            pour la Semaine européenne du code 2019!</a> (disponible dans 29 langues)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Téléchargez les boites à outils suivantes pour vous aider à démarrer:',
         'communication_toolkit' => 'Boite à outils de communication',
-        'teachers_toolkit' => 'Boite à outils pour les enseignants'
+        'teachers_toolkit' => 'Boite à outils pour les enseignants',
     ],
     'questions' => [
         'title' => 'Vous avez des questions?',
         'content' => '<p>Si vous avez des questions sur l’organisation et la promotion de
                 votre événement #EUCodeWeek, contactez l’un des <a href="/ambassadors">ambassadeurs de
-                    la semaine européenne du code</a> de votre pays.</p>'
-    ]
+                    la semaine européenne du code</a> de votre pays.</p>',
+    ],
 
 ];

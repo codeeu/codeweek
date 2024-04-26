@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Attività 1 - CodyRoby per la scuola primaria',
                 '2' => 'Attività 2 - CodyRoby per la scuola secondaria di primo grado',
-                '3' => 'Attività 3 - CodyRoby per la scuola secondaria di secondo grado'
-            ]
+                '3' => 'Attività 3 - CodyRoby per la scuola secondaria di secondo grado',
+            ],
         ],
         '2' => [
             'title' => 'Pensiero computazionale e risoluzione dei problemi',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Attività 1 - Sviluppare il ragionamento matematico per la scuola primaria',
                 '2' => 'Attività 2 - Conoscenza degli algoritmi per la scuola secondaria di primo grado',
-                '3' => 'Attività 3 - Algoritmi per la scuola secondaria di secondo grado'
-            ]
+                '3' => 'Attività 3 - Algoritmi per la scuola secondaria di secondo grado',
+            ],
         ],
         '3' => [
             'title' => 'Programmazione visuale: introduzione a Scratch',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Attività 1 - Scratch: le basi per la scuola primaria',
                 '2' => 'Attività 2 - Scratch: le basi per la scuola secondaria di primo grado',
-                '3' => 'Attività 3 - Scratch: le basi per la scuola secondaria di secondo grado'
-            ]
+                '3' => 'Attività 3 - Scratch: le basi per la scuola secondaria di secondo grado',
+            ],
         ],
         '4' => [
             'title' => 'Creare giochi educativi con Scratch',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Attività 1 - Gioco di domande e risposte con Scratch per la scuola primaria',
                 '2' => 'Attività 2 - Gioco di domande e risposte con Scratch per la scuola secondaria di primo grado',
-                '3' => 'Attività 3 - Gioco di domande e risposte con Scratch per la scuola secondaria di secondo grado'
-            ]
+                '3' => 'Attività 3 - Gioco di domande e risposte con Scratch per la scuola secondaria di secondo grado',
+            ],
         ],
         '5' => [
             'title' => 'Fare robotica e tinkering in classe',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Attività 1 - Come realizzare una mano meccanica, su pannello duro, per la scuola primaria',
                 '2' => 'Attività 2 - Come realizzare una mano meccanica o robotica per la scuola secondaria di primo grado',
-                '3' => 'Attività 3 - Come realizzare una mano meccanica o robotica per la scuola secondaria di secondo grado'
-            ]
+                '3' => 'Attività 3 - Come realizzare una mano meccanica o robotica per la scuola secondaria di secondo grado',
+            ],
         ],
         '6' => [
             'title' => 'App Inventor e sviluppo di app',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Attività 1 – Titolo, per la scuola primaria',
                 '2' => 'Attività 2 – Titolo, per la scuola secondaria di primo grado',
-                '3' => 'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
-            ]
+                '3' => 'Attività 3 – Titolo, per la scuola secondaria di secondo grado',
+            ],
         ],
         '7' => [
             'title' => 'Il tinkering e il making',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Attività 1 – Titolo, per la scuola primaria',
                 '2' => 'Attività 2 – Titolo, per la scuola secondaria di primo grado',
-                '3' => 'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
-            ]
+                '3' => 'Attività 3 – Titolo, per la scuola secondaria di secondo grado',
+            ],
         ],
         '8' => [
             'title' => 'La programmazione in tutte le materie',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Attività 1 – Robotica e inclusione per la primaria nelle STEM',
                 '2' => 'Attività 2 – La musica è programmazione',
                 '3' => 'Attività 3 – Il tinkering e la programmazione con Makey Makey',
-                '4' => 'Attività 4 – Un algoritmo di vita quotidiana per una lezione CLIL'
-            ]
+                '4' => 'Attività 4 – Un algoritmo di vita quotidiana per una lezione CLIL',
+            ],
         ],
         '9' => [
             'title' => 'Creare un automa con un micro:bit',
@@ -136,7 +136,7 @@ In questo video, Pauline Maas, insegnante di informatica al Koninklijke Visio, i
                 '1' => 'Codice Morse con il micro:bit, per la scuola primaria',
                 '2' => 'Escape room con il micro:bit, per la scuola secondaria di primo grado',
                 '3' => 'Creare un automa, per la scuola secondaria di secondo grado',
-            ]
+            ],
         ],
         '10' => [
             'title' => 'Programmazione creativa con Python',
@@ -158,36 +158,36 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
             'links' => [
                 'title' => 'Altre risorse correlate',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Libreria standard Python (in inglese)",
-                    "description" => "Raccolta di codice pre-costruito e moduli (es. modulo tartaruga, modulo di matematica, ecc.).",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Libreria standard Python (in inglese)',
+                    'description' => 'Raccolta di codice pre-costruito e moduli (es. modulo tartaruga, modulo di matematica, ecc.).',
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Videogioco educativo per apprendere i concetti di programmazione.",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' => 'Videogioco educativo per apprendere i concetti di programmazione.',
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/it-IT/codeclub",
-                    "title" => "Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
-                    "description" => "Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
+                    'url' => 'https://projects.raspberrypi.org/it-IT/codeclub',
+                    'title' => 'Progetti graduali di programmazione per bambini, dai principianti agli avanzati.',
+                    'description' => 'Progetti graduali di programmazione per bambini, dai principianti agli avanzati.',
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Inventa i tuoi giochi al computer con Python (in inglese)",
-                    "description" => "Libro che ti insegnerà a programmare i tuoi giochi al computer con Python.",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Inventa i tuoi giochi al computer con Python (in inglese)',
+                    'description' => 'Libro che ti insegnerà a programmare i tuoi giochi al computer con Python.',
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "CodeWars",
-                    "description" => "Community educativa in cui gli studenti e gli insegnanti possono esercitarsi attraverso una serie di sfide.",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'CodeWars',
+                    'description' => 'Community educativa in cui gli studenti e gli insegnanti possono esercitarsi attraverso una serie di sfide.',
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "Hour of Python",
-                    "description" => "Raccolta di lezioni introduttive su Python (sia testuali che a blocchi) utilizzando i Trinket interattivi.",
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'Hour of Python',
+                    'description' => 'Raccolta di lezioni introduttive su Python (sia testuali che a blocchi) utilizzando i Trinket interattivi.',
                 ],
-            ]
+            ],
         ],
         '11' => [
             'title' => 'Programmare per includere',
@@ -201,43 +201,40 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
                 '1' => 'Il portauova analogico',
                 '2' => 'Un mouse molto intelligente',
                 '3' => 'La stella che fa le stelle',
-            ]
+            ],
         ],
 
-        "12" => [
-            "title" => "Programmare per raggiungere obiettivi di sviluppo sostenibile",
-            "author" => "di Francisco Javier Masero, Cristina Nicolaita e Erviola Konomi",
-            "text" => [
-                "1" => "L'istruzione tradizionale offre agli studenti poche opportunità per comprendere e risolvere i problemi del mondo reale, come il cambiamento climatico a livello globale, l'uguaglianza di genere, la fame, la povertà, buone condizioni di salute e benessere. ",
-                "2" => "Gli Obiettivi di Sviluppo Sostenibile (SDG) sono il nucleo dell'Agenda per lo Sviluppo Sostenibile del 2030, adottata da tutti gli Stati membri delle Nazioni Unite come mappa per orientarsi a raggiungere la pace e la prosperità sul pianeta, incoraggiando lo sviluppo globale. Gli insegnanti possono usare gli SDG in classe come strumento per far sviluppare il pensiero critico ai loro studenti, ma anche per aiutarli a trovare la loro identità e i loro obiettivi. La combinazione di elementi di base della codifica e del pensiero computazionale con gli SDG aumenterà la fiducia dei vostri studenti e voi li aiuterete a sviluppare la loro creatività, lo spirito imprenditoriale, la capacità di risolvere problemi o di comunicare. ",
-                "3" => "Nelle attività che seguono, gli studenti applicheranno i principi Scratch, di codifica ASCII e di codifica unplugged ad argomenti attuali di rilevanza globale e sociale. Gli insegnanti sensibilizzeranno gli studenti sugli obiettivi dello sviluppo sostenibile e li aiuteranno a sviluppare empatia, cittadinanza attiva e le competenze prosociali in modo divertente e coinvolgente. ",
-                "4" => "Ciascun piano di lezione si concentra su un SDG:",
-                "5" => "Obiettivo 3 dello sviluppo sostenibile: garantire una vita sana e promuovere il benessere per tutti a tutte le età",
-                "6" => "Obiettivo 5 dello sviluppo sostenibile: raggiungere l'uguaglianza di genere e dare potere a tutte le donne e le ragazze",
-                "7" => "Obiettivo 13 dello sviluppo sostenibile: agire con urgenza per combattere il cambiamento climatico e le sue conseguenze",
+        '12' => [
+            'title' => 'Programmare per raggiungere obiettivi di sviluppo sostenibile',
+            'author' => 'di Francisco Javier Masero, Cristina Nicolaita e Erviola Konomi',
+            'text' => [
+                '1' => "L'istruzione tradizionale offre agli studenti poche opportunità per comprendere e risolvere i problemi del mondo reale, come il cambiamento climatico a livello globale, l'uguaglianza di genere, la fame, la povertà, buone condizioni di salute e benessere. ",
+                '2' => "Gli Obiettivi di Sviluppo Sostenibile (SDG) sono il nucleo dell'Agenda per lo Sviluppo Sostenibile del 2030, adottata da tutti gli Stati membri delle Nazioni Unite come mappa per orientarsi a raggiungere la pace e la prosperità sul pianeta, incoraggiando lo sviluppo globale. Gli insegnanti possono usare gli SDG in classe come strumento per far sviluppare il pensiero critico ai loro studenti, ma anche per aiutarli a trovare la loro identità e i loro obiettivi. La combinazione di elementi di base della codifica e del pensiero computazionale con gli SDG aumenterà la fiducia dei vostri studenti e voi li aiuterete a sviluppare la loro creatività, lo spirito imprenditoriale, la capacità di risolvere problemi o di comunicare. ",
+                '3' => 'Nelle attività che seguono, gli studenti applicheranno i principi Scratch, di codifica ASCII e di codifica unplugged ad argomenti attuali di rilevanza globale e sociale. Gli insegnanti sensibilizzeranno gli studenti sugli obiettivi dello sviluppo sostenibile e li aiuteranno a sviluppare empatia, cittadinanza attiva e le competenze prosociali in modo divertente e coinvolgente. ',
+                '4' => 'Ciascun piano di lezione si concentra su un SDG:',
+                '5' => 'Obiettivo 3 dello sviluppo sostenibile: garantire una vita sana e promuovere il benessere per tutti a tutte le età',
+                '6' => "Obiettivo 5 dello sviluppo sostenibile: raggiungere l'uguaglianza di genere e dare potere a tutte le donne e le ragazze",
+                '7' => 'Obiettivo 13 dello sviluppo sostenibile: agire con urgenza per combattere il cambiamento climatico e le sue conseguenze',
             ],
-            "activities" => [
-                "1" => "Progetto Karateka: conoscere il karate attraverso la programmazione, per scuole elementari, medie e superiori",
-                "2" => "Obiettivi di sviluppo sostenibile e di programmazione per il cambiamento climatico, per la scuola primaria",
-                "3" => "Codifica per l'uguaglianza di genere, per la scuola secondaria superiore",
-            ]
-        ]
-
-        ,
-
-
-        "13" => [
-            "title" => "Introduzione all'intelligenza artificiale a scuola",
-            "author" => "di Artur Coelho e Marjana Prifti Skenduli",
-            "text" => [
-                "1" => "L'Intelligenza Artificiale (IA) ha un impatto su molte aree della vita quotidiana: autocorregge il testo che digiti sul tuo cellulare, sceglie i brani per la tua app musicale preferita e ti suggerisce password quando le hai dimenticate. Per IA si intende una combinazione di apprendimento automatico, robotica e algoritmi, con applicazioni in tutti i campi: dall'informatica alla produzione, dalla medicina alla moda. Perciò essa occupa uno spazio importante nelle nostre vite e nella nostra società e svolge un ruolo chiave nello sviluppo della scienza. E come da ogni altro importante fenomeno nella nostra vita, gli studenti trarranno beneficio dall'apprenderla. Ma come insegnare una cosa così complessa come l'IA? ",
-                "2" => "Questo Bit di apprendimento ti aiuterà a spiegare agli studenti cos'è l'IA e quale ruolo svolge nella loro vita. Queste attività sono pensate per i non esperti, in modo da renderne i contenuti facilmente comprensibili e analizzare efficacemente termini complessi trasformandoli in concetti semplici. Con questi modelli di lezione puoi aiutare gli studenti ad apprendere gli usi dell'IA e alcuni dei meccanismi che stanno dietro ad essa. Le attività sono progettate per consentire ai ragazzi di sviluppare le loro capacità analitiche e di pensiero critico: per esempio, in quella proposta da Marjana gli studenti sviluppano una pipeline di classificazione. Queste proposte aiuteranno anche gli studenti a comprendere le varie applicazioni dell'IA: nell'attività di Artur impareranno il legame tra l'IA e l'arte e come l'IA possa essere usata per migliorare l'espressione visiva. Grazie ad esse, gli alunni rifletteranno anche sui pericoli dell'IA e sul suo impatto. "
+            'activities' => [
+                '1' => 'Progetto Karateka: conoscere il karate attraverso la programmazione, per scuole elementari, medie e superiori',
+                '2' => 'Obiettivi di sviluppo sostenibile e di programmazione per il cambiamento climatico, per la scuola primaria',
+                '3' => "Codifica per l'uguaglianza di genere, per la scuola secondaria superiore",
             ],
-            "activities" => [
-                "1" => "Human-AI- Art, per la scuola elementare",
-                "2" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria inferiore",
-                "3" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria superiore",
-            ]
+        ],
+
+        '13' => [
+            'title' => "Introduzione all'intelligenza artificiale a scuola",
+            'author' => 'di Artur Coelho e Marjana Prifti Skenduli',
+            'text' => [
+                '1' => "L'Intelligenza Artificiale (IA) ha un impatto su molte aree della vita quotidiana: autocorregge il testo che digiti sul tuo cellulare, sceglie i brani per la tua app musicale preferita e ti suggerisce password quando le hai dimenticate. Per IA si intende una combinazione di apprendimento automatico, robotica e algoritmi, con applicazioni in tutti i campi: dall'informatica alla produzione, dalla medicina alla moda. Perciò essa occupa uno spazio importante nelle nostre vite e nella nostra società e svolge un ruolo chiave nello sviluppo della scienza. E come da ogni altro importante fenomeno nella nostra vita, gli studenti trarranno beneficio dall'apprenderla. Ma come insegnare una cosa così complessa come l'IA? ",
+                '2' => "Questo Bit di apprendimento ti aiuterà a spiegare agli studenti cos'è l'IA e quale ruolo svolge nella loro vita. Queste attività sono pensate per i non esperti, in modo da renderne i contenuti facilmente comprensibili e analizzare efficacemente termini complessi trasformandoli in concetti semplici. Con questi modelli di lezione puoi aiutare gli studenti ad apprendere gli usi dell'IA e alcuni dei meccanismi che stanno dietro ad essa. Le attività sono progettate per consentire ai ragazzi di sviluppare le loro capacità analitiche e di pensiero critico: per esempio, in quella proposta da Marjana gli studenti sviluppano una pipeline di classificazione. Queste proposte aiuteranno anche gli studenti a comprendere le varie applicazioni dell'IA: nell'attività di Artur impareranno il legame tra l'IA e l'arte e come l'IA possa essere usata per migliorare l'espressione visiva. Grazie ad esse, gli alunni rifletteranno anche sui pericoli dell'IA e sul suo impatto. ",
+            ],
+            'activities' => [
+                '1' => 'Human-AI- Art, per la scuola elementare',
+                '2' => 'Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria inferiore',
+                '3' => 'Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria superiore',
+            ],
         ],
 
         '14' => [
@@ -245,87 +242,85 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
             'author' => 'di Adil Tugyan, Georgia Lascaris e Marco Neves',
             'text' => [
                 '1' => "L’avanzamento dell’IA negli ultimi anni è stato impressionante grazie ai rapidi progressi della potenza di calcolo e alla disponibilità di grandi quantità di dati. Questo ha portato a ingenti investimenti nella ricerca sull’IA e a una rapida espansione dell'industria stessa, rendendo l’IA la grande rivoluzione tecnologica del nostro tempo. L’IA ci circonda costantemente. È diventata parte della nostra vita quotidiana, tanto che a volte non ce ne accorgiamo nemmeno: usiamo suggerimenti online, assistenti vocali, sistemi di sicurezza e di rilevamento del volto quasi ogni giorno. Ma che dire dell’educazione? ",
-                '2' => 'L’IA ha un enorme potenziale e può favorire l’introduzione di nuove modalità d’insegnamento e migliorare il processo di apprendimento degli studenti. Questa pillola d’apprendimento ti aiuterà a integrare delle attività d’IA nel tuo insegnamento e a preparare i tuoi studenti a una vita e una carriera in un mondo modellato dall’IA. Queste attività sono state progettate per gli studenti per solleticare la loro curiosità, la loro capacità creative e di risoluzione dei problemi: per esempio, nell’attività di Adil, gli studenti capiscono che cosa sono gli algoritmi e le reti neurali e sono incoraggiati a creare la propria rete neurale per visualizzarne la struttura. Georgia guiderà gli studenti nella creazione, passo dopo passo, di un chatbot. Gli studenti costruiranno il proprio chatbot, prepareranno set di dati di domande e risposte e lo addestreranno in modo che possa rispondere a delle domande sul Covid-19. Nell’attività proposta da Marco, gli studenti esploreranno i benefici e le sfide delle macchine intelligenti nella vita quotidiana e nel lavoro. Quali sono i rischi derivanti dall’utilizzo d’IA? Quali impatti avrà l’IA sul futuro del lavoro? Quali lavori esisteranno ancora quando gli studenti entreranno nel mercato del lavoro?'
+                '2' => 'L’IA ha un enorme potenziale e può favorire l’introduzione di nuove modalità d’insegnamento e migliorare il processo di apprendimento degli studenti. Questa pillola d’apprendimento ti aiuterà a integrare delle attività d’IA nel tuo insegnamento e a preparare i tuoi studenti a una vita e una carriera in un mondo modellato dall’IA. Queste attività sono state progettate per gli studenti per solleticare la loro curiosità, la loro capacità creative e di risoluzione dei problemi: per esempio, nell’attività di Adil, gli studenti capiscono che cosa sono gli algoritmi e le reti neurali e sono incoraggiati a creare la propria rete neurale per visualizzarne la struttura. Georgia guiderà gli studenti nella creazione, passo dopo passo, di un chatbot. Gli studenti costruiranno il proprio chatbot, prepareranno set di dati di domande e risposte e lo addestreranno in modo che possa rispondere a delle domande sul Covid-19. Nell’attività proposta da Marco, gli studenti esploreranno i benefici e le sfide delle macchine intelligenti nella vita quotidiana e nel lavoro. Quali sono i rischi derivanti dall’utilizzo d’IA? Quali impatti avrà l’IA sul futuro del lavoro? Quali lavori esisteranno ancora quando gli studenti entreranno nel mercato del lavoro?',
             ],
             'activities' => [
                 'title' => 'Nei programmi successivi gli studenti scopriranno le macchine intelligenti in modo divertente e coinvolgente.',
                 '1' => 'L’intelligenza artificiale (lA) e le sue reti, per la scuola elementare',
                 '2' => 'Il mio chatbot Covid-19, per la scuola media',
                 '3' => 'Vivere nell’era delle “macchine intelligenti”: sfide e opportunità, per la scuola superiore',
-            ]
+            ],
         ],
 
-        "15" => [
-            "title" => "Sfruttamento dell’alfabetizzazione mediatica",
-            "author" => "di Marijana Smolčec, Tea Horvatić e Sanja Božinović",
-            "text" => [
+        '15' => [
+            'title' => 'Sfruttamento dell’alfabetizzazione mediatica',
+            'author' => 'di Marijana Smolčec, Tea Horvatić e Sanja Božinović',
+            'text' => [
                 "L’educazione all'alfabetizzazione mediatica non è mai stata così importante come per gli studenti del giorno d’oggi. Gli studenti di tutte le età hanno bisogno di ottenere abilità, conoscenze e attitudini rilevanti per essere in grado di navigare nel nostro mondo ricco di media. Le abilità di alfabetizzazione mediatica li aiuteranno a usare contenuti online credibili e riconoscere fonti di informazione fuorvianti. Capiranno come verificare le informazioni che trovano online e come interpretarle in modo critico. Miglioreranno la loro consapevolezza dell’uso coretto di lavori creativi e applicheranno le nozioni apprese durante la creazione dei loro contenuti creativi.",
                 "Questo Bit di Apprendimento ti permetterà di implementare varie strategie e tecniche per dare la capacità ai tuoi studenti di comprendere i media. Nell'attività di Marijana, gli studenti imparano come usare i contenuti Web in modo sicuro e responsabile. Gli vengono presentati diversi tipi di licenze e sviluppano una semplice app per dimostrare come condividere lavori creativi in modo appropriato. Nell'attività di Tea, gli studenti si imbarcano in una missione per imparare di più sui clickbait. Attraverso attività coinvolgenti, gli studenti esplorano le strategie per identificare e scoprire i clickbait e imparano come evitarli. Sanja permette agli studenti di esplorare e analizzare in modo critico e valutare contenuti Web, la loro pertinenza, precisione, origine e scopo. Imparano come trovare fonti affidabili online e come riconoscere informazioni false online.",
-                "Nei seguenti piani di lezione, troverai attività stimolanti e coinvolgenti per migliorare le abilità di alfabetizzazione mediatica dello studente:",
+                'Nei seguenti piani di lezione, troverai attività stimolanti e coinvolgenti per migliorare le abilità di alfabetizzazione mediatica dello studente:',
             ],
-            "activities" => [
-                "1" => "È gratuito o è su Internet?",
-                "2" => "Cliccare o non cliccare",
-                "3" => "Verifica dei dati",
-            ]
+            'activities' => [
+                '1' => 'È gratuito o è su Internet?',
+                '2' => 'Cliccare o non cliccare',
+                '3' => 'Verifica dei dati',
+            ],
         ],
 
-        "16" => [
-            "title" => "NARRARE STORIE CON HEDY",
-            "author" => "a cura di Felienne Hermans",
-            "text" => [
-                "Alunni e alunne delle tue classi sanno già padroneggiare un linguaggio di programmazione visuale, ma non si sentono ancora pronti a immergersi più in profondità nel linguaggio di programmazione testuale? Questa pillola di apprendimento fa al caso tuo e delle tue classi poiché le aiuterà a colmare il divario tra il linguaggio di programmazione visuale e quello testuale. La pillola di apprendimento <strong>Narrare storie con Hedy</strong> comprende tre piani di lezione che utilizzano Hedy, un linguaggio di programmazione graduale che insegna a bambini e bambine come programmare.",
+        '16' => [
+            'title' => 'NARRARE STORIE CON HEDY',
+            'author' => 'a cura di Felienne Hermans',
+            'text' => [
+                'Alunni e alunne delle tue classi sanno già padroneggiare un linguaggio di programmazione visuale, ma non si sentono ancora pronti a immergersi più in profondità nel linguaggio di programmazione testuale? Questa pillola di apprendimento fa al caso tuo e delle tue classi poiché le aiuterà a colmare il divario tra il linguaggio di programmazione visuale e quello testuale. La pillola di apprendimento <strong>Narrare storie con Hedy</strong> comprende tre piani di lezione che utilizzano Hedy, un linguaggio di programmazione graduale che insegna a bambini e bambine come programmare.',
 
-                "Hedy si rivolge a bambini e bambine che vogliono cimentarsi con linguaggi di programmazione testuali, ma che pensano che iniziare con Python sia troppo difficile. I linguaggi graduali si avvalgono di diversi livelli di programmazione, per cui ogni livello aggiunge nuovi concetti e complessità sintattica. Al termine della sequenza di livelli di Hedy, alunni e alunne saranno in grado di padroneggiare un sottoinsieme di Python valido dal punto di vista sintattico.",
+                'Hedy si rivolge a bambini e bambine che vogliono cimentarsi con linguaggi di programmazione testuali, ma che pensano che iniziare con Python sia troppo difficile. I linguaggi graduali si avvalgono di diversi livelli di programmazione, per cui ogni livello aggiunge nuovi concetti e complessità sintattica. Al termine della sequenza di livelli di Hedy, alunni e alunne saranno in grado di padroneggiare un sottoinsieme di Python valido dal punto di vista sintattico.',
 
-                "Nel corso di questa pillola di apprendimento avrai modo di trovare attività stimolanti e coinvolgenti per aiutare studenti e studentesse a impiegare efficientemente i linguaggi di programmazione testuali. Tramite la creazione delle proprie storie interattive, impareranno gradualmente a programmare senza dovere imparare tutto subito. Nel piano di lezione per la scuola primaria, ad alunni e alunne vengono presentati i concetti base della programmazione. Il piano di lezione per le scuole secondarie di primo grado introduce ulteriori concetti di programmazione, mentre il piano di lezione per le scuole secondarie di secondo grado permette a studenti e studentesse di programmare storie e attività di complessità superiore.",
+                'Nel corso di questa pillola di apprendimento avrai modo di trovare attività stimolanti e coinvolgenti per aiutare studenti e studentesse a impiegare efficientemente i linguaggi di programmazione testuali. Tramite la creazione delle proprie storie interattive, impareranno gradualmente a programmare senza dovere imparare tutto subito. Nel piano di lezione per la scuola primaria, ad alunni e alunne vengono presentati i concetti base della programmazione. Il piano di lezione per le scuole secondarie di primo grado introduce ulteriori concetti di programmazione, mentre il piano di lezione per le scuole secondarie di secondo grado permette a studenti e studentesse di programmare storie e attività di complessità superiore.',
 
-                "Dai uno sguardo alla storia interattiva di seguito per vedere in che modo lettori e lettrici possono partecipare alla storia, promuovendone il coinvolgimento attivo."
+                'Dai uno sguardo alla storia interattiva di seguito per vedere in che modo lettori e lettrici possono partecipare alla storia, promuovendone il coinvolgimento attivo.',
             ],
-            "activities" => [
-                "1" => "Dai vita alla tua storia interattiva con Hedy per alunni e alunne della scuola primaria",
-                "2" => "Dai vita alla tua storia interattiva con Hedy per studenti e studentesse della scuola secondaria di primo grado",
-                "3" => "Dai vita alla tua storia interattiva con Hedy per studenti e studentesse della scuola secondaria di secondo grado",
-            ]
+            'activities' => [
+                '1' => 'Dai vita alla tua storia interattiva con Hedy per alunni e alunne della scuola primaria',
+                '2' => 'Dai vita alla tua storia interattiva con Hedy per studenti e studentesse della scuola secondaria di primo grado',
+                '3' => 'Dai vita alla tua storia interattiva con Hedy per studenti e studentesse della scuola secondaria di secondo grado',
+            ],
         ],
-        "17" => [
-            "title" => "Percepire la programmazione",
-            "author" => "a cura di Alenka Miljević",
-            "text" => [
-                "Il benessere sociale ed emotivo consiste nella capacità di dimostrare resilienza, sapere come gestire le proprie emozioni, rispondere alle emozioni delle altre persone, intrecciare relazioni importanti con altre persone, generare emozioni che fanno provare sensazioni positive e mettere in piedi la propria rete di sostegno emotivo. Le competenze sociali ed emotive che i giovani apprendono a scuola aiuta loro a sviluppare la resilienza e a stabilire il modo in cui gestiranno la propria salute fisica e mentale nel corso della propria vita. (Consiglio d’Europa)",
-                "La pillola di apprendimento «Percepire la programmazione» ti permetterà di promuovere il benessere sociale ed emotivo della classe tramite il riconoscimento, la spiegazione, la comprensione e la risposta a sensazioni ed emozioni positive e negative al fine di sviluppare l’empatia e la resilienza.  Nel corso di questa pillola di apprendimento avrai modo di trovare attività stimolanti e coinvolgenti per aiutare studenti e studentesse a sviluppare le competenze per gestire emozioni diverse attraverso la programmazione. La tua classe apprenderà come esprimere i propri sentimenti e reagire alle emozioni di compagni e compagne di classe con l’aiuto del robot Bee-Bot.",
-                "La pillola di apprendimento «Percepire la programmazione» è costituita da tre piani di lezione che si avvalgono del robot didattico Bee-Bot per creare attività che incoraggiano studenti e studentesse a parlare delle emozioni e a potenziare l’empatia. Nel piano di lezione per la scuola primaria, alunni e alunne programmano un Bee-Bot per parlare di emozioni, quali tristezza, felicità, paura e rabbia e scoprire i motivi che provocano in loro queste emozioni. Il piano di lezione per la scuola secondaria di primo grado incoraggia studenti e studentesse a programmare un Bee-Bot, a riconoscere le proprie emozioni e quelle di compagni e compagne di classe e a comprendere cosa le ha provocate o come rispondervi. Il piano di lezione per la scuola secondaria di secondo grado permette a studenti e studentesse di pilotare un Bee-Bot e di inventare storie che trattano di sentimenti, resilienza ed empatia.",
-                "Se non disponi di un robot didattico, questa pillola di apprendimento ti fornirà alcune idee per svolgere attività unplugged a favore dello sviluppo delle competenze sociali ed emotive. La storia interattiva di seguito offre una breve panoramica delle attività che è possibile svolgere in aula:"
+        '17' => [
+            'title' => 'Percepire la programmazione',
+            'author' => 'a cura di Alenka Miljević',
+            'text' => [
+                'Il benessere sociale ed emotivo consiste nella capacità di dimostrare resilienza, sapere come gestire le proprie emozioni, rispondere alle emozioni delle altre persone, intrecciare relazioni importanti con altre persone, generare emozioni che fanno provare sensazioni positive e mettere in piedi la propria rete di sostegno emotivo. Le competenze sociali ed emotive che i giovani apprendono a scuola aiuta loro a sviluppare la resilienza e a stabilire il modo in cui gestiranno la propria salute fisica e mentale nel corso della propria vita. (Consiglio d’Europa)',
+                'La pillola di apprendimento «Percepire la programmazione» ti permetterà di promuovere il benessere sociale ed emotivo della classe tramite il riconoscimento, la spiegazione, la comprensione e la risposta a sensazioni ed emozioni positive e negative al fine di sviluppare l’empatia e la resilienza.  Nel corso di questa pillola di apprendimento avrai modo di trovare attività stimolanti e coinvolgenti per aiutare studenti e studentesse a sviluppare le competenze per gestire emozioni diverse attraverso la programmazione. La tua classe apprenderà come esprimere i propri sentimenti e reagire alle emozioni di compagni e compagne di classe con l’aiuto del robot Bee-Bot.',
+                'La pillola di apprendimento «Percepire la programmazione» è costituita da tre piani di lezione che si avvalgono del robot didattico Bee-Bot per creare attività che incoraggiano studenti e studentesse a parlare delle emozioni e a potenziare l’empatia. Nel piano di lezione per la scuola primaria, alunni e alunne programmano un Bee-Bot per parlare di emozioni, quali tristezza, felicità, paura e rabbia e scoprire i motivi che provocano in loro queste emozioni. Il piano di lezione per la scuola secondaria di primo grado incoraggia studenti e studentesse a programmare un Bee-Bot, a riconoscere le proprie emozioni e quelle di compagni e compagne di classe e a comprendere cosa le ha provocate o come rispondervi. Il piano di lezione per la scuola secondaria di secondo grado permette a studenti e studentesse di pilotare un Bee-Bot e di inventare storie che trattano di sentimenti, resilienza ed empatia.',
+                'Se non disponi di un robot didattico, questa pillola di apprendimento ti fornirà alcune idee per svolgere attività unplugged a favore dello sviluppo delle competenze sociali ed emotive. La storia interattiva di seguito offre una breve panoramica delle attività che è possibile svolgere in aula:',
             ],
-            "activities" => [
-                "1" => "programma, senti, impara per classi della scuola primaria;",
-                "2" => "il mio cuore non è fatto di pietra per classi della scuola secondaria di primo grado;",
-                "3" => "programmami in base al tuo umore per classi della scuola secondaria di secondo grado.",
-            ]
-        ],"18" => [
+            'activities' => [
+                '1' => 'programma, senti, impara per classi della scuola primaria;',
+                '2' => 'il mio cuore non è fatto di pietra per classi della scuola secondaria di primo grado;',
+                '3' => 'programmami in base al tuo umore per classi della scuola secondaria di secondo grado.',
+            ],
+        ], '18' => [
 
-            "title" => "SOS Acqua",
-            "author" => "di Francisco Delgado Cecilia",
-            "text" => [
+            'title' => 'SOS Acqua',
+            'author' => 'di Francisco Delgado Cecilia',
+            'text' => [
 
-                "SOS Acqua è una risposta alla necessità di far fronte al problema dell’inquinamento delle acque. Nonostante i tentativi compiuti negli ultimi anni, ci sono ancora due miliardi di persone nel mondo che non hanno accesso ad acqua potabile sicura. Questo vuol dire che l’obiettivo di sviluppo sostenibile (OSS) 6 dell’agenda 2030, in base al quale tutte le persone devono avere accesso ad acqua gestita in modo sicuro e a servizi igienici entro il 2030, è ben lontano dall’essere raggiunto. Lo stesso vale per l’OSS 14 relativo alla vita sott’acqua, che punta a conservare e utilizzare in modo sostenibile oceani, mari e risorse marine per uno sviluppo sostenibile.",
+                'SOS Acqua è una risposta alla necessità di far fronte al problema dell’inquinamento delle acque. Nonostante i tentativi compiuti negli ultimi anni, ci sono ancora due miliardi di persone nel mondo che non hanno accesso ad acqua potabile sicura. Questo vuol dire che l’obiettivo di sviluppo sostenibile (OSS) 6 dell’agenda 2030, in base al quale tutte le persone devono avere accesso ad acqua gestita in modo sicuro e a servizi igienici entro il 2030, è ben lontano dall’essere raggiunto. Lo stesso vale per l’OSS 14 relativo alla vita sott’acqua, che punta a conservare e utilizzare in modo sostenibile oceani, mari e risorse marine per uno sviluppo sostenibile.',
 
-                "Questa pillola di apprendimento si concentra sull’importante e attuale problema della misurazione della qualità dell’acqua e sulle nuove sostanze inquinanti che ne compromettono la qualità. Studenti e studentesse avranno la possibilità di indagare e trovare soluzioni a problemi concreti relativi all’acqua e all’ambiente. Così facendo, potranno sviluppare competenze come eseguire ricerche, affinare il pensiero critico e ottimizzare la risoluzione dei problemi.",
+                'Questa pillola di apprendimento si concentra sull’importante e attuale problema della misurazione della qualità dell’acqua e sulle nuove sostanze inquinanti che ne compromettono la qualità. Studenti e studentesse avranno la possibilità di indagare e trovare soluzioni a problemi concreti relativi all’acqua e all’ambiente. Così facendo, potranno sviluppare competenze come eseguire ricerche, affinare il pensiero critico e ottimizzare la risoluzione dei problemi.',
 
-                "I piani delle lezioni comprendono attività pratiche e creative, tra cui la programmazione in Scratch, l’introduzione all’apprendimento automatico e l’intelligenza artificiale con Learning Machine Learning e la costruzione di veicoli telecomandati con set Lego per il campionamento dell’acqua e l’analisi del suo pH. Queste attività permetteranno a studenti e studentesse di mettere in pratica le proprie competenze e conoscenze in un ambiente interattivo e divertente, rafforzandone la motivazione e l’interesse nel progetto.",
+                'I piani delle lezioni comprendono attività pratiche e creative, tra cui la programmazione in Scratch, l’introduzione all’apprendimento automatico e l’intelligenza artificiale con Learning Machine Learning e la costruzione di veicoli telecomandati con set Lego per il campionamento dell’acqua e l’analisi del suo pH. Queste attività permetteranno a studenti e studentesse di mettere in pratica le proprie competenze e conoscenze in un ambiente interattivo e divertente, rafforzandone la motivazione e l’interesse nel progetto.',
 
-                "Per l’esecuzione di questa pillola di apprendimento, il suggerimento è sviluppare tutte e tre le attività in classe in modo da completare l’intero progetto e realizzare un processo di apprendimento più efficace e stimolante. Tuttavia, è possibile svolgere ogni attività singolarmente."
+                'Per l’esecuzione di questa pillola di apprendimento, il suggerimento è sviluppare tutte e tre le attività in classe in modo da completare l’intero progetto e realizzare un processo di apprendimento più efficace e stimolante. Tuttavia, è possibile svolgere ogni attività singolarmente.',
 
             ],
-            "activities" => [
-                "1" => "SOS Acqua con Scratch",
-                "2" => "SOS Acqua con Learning Machine Learning",
-                "3" => "SOS Acqua con Lego Robotics",
-            ]
+            'activities' => [
+                '1' => 'SOS Acqua con Scratch',
+                '2' => 'SOS Acqua con Learning Machine Learning',
+                '3' => 'SOS Acqua con Lego Robotics',
+            ],
 
         ],
-
-
 
     ],
     'download_video_script' => 'Scarica lo script video',
@@ -335,7 +330,7 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
         'title' => 'Non dimenticare di aggiungere la tua attività sulla mappa della settimana europea della programmazione!',
         'text' => '<p>Organizzare una lezione con la tua classe, una giornata a porte aperte o un evento nella tua scuola è semplice. Trova una data e registra la tua attività sulla <a href="/events">mappa della settimana europea della programmazione</a>. Ogni organizzatore riceverà un certificato di partecipazione per il proprio impegno.</p>
 
-<p>Se desideri entrare in contatto con un gruppo internazionale di insegnanti entusiasti, iscriviti al <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">gruppo Facebook per insegnanti della Settimana europea della programmazione</a>! Per fare un ulteriore passo avanti e collaborare con altre scuole nel tuo paese oppure oltre frontiera, unisciti alla <a href="/codeweek4all">sfida Code Week 4 All</a>.</p>'
-    ]
+<p>Se desideri entrare in contatto con un gruppo internazionale di insegnanti entusiasti, iscriviti al <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">gruppo Facebook per insegnanti della Settimana europea della programmazione</a>! Per fare un ulteriore passo avanti e collaborare con altre scuole nel tuo paese oppure oltre frontiera, unisciti alla <a href="/codeweek4all">sfida Code Week 4 All</a>.</p>',
+    ],
 
 ];

@@ -17,6 +17,6 @@ return [
     'reset' => 'Sinu parool on nüüd muudetud.',
     'sent' => 'Saatsime sulle e-kirja parooli lähtestamise lingiga.',
     'token' => 'See parooli lähtestamisluba on kehtetu.',
-    'user' => "Me ei leia selle e-posti aadressiga kasutajat.",
+    'user' => 'Me ei leia selle e-posti aadressiga kasutajat.',
 
 ];

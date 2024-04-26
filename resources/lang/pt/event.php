@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Endereço eletrónico público',
-        'placeholder' => 'Pretende ter um endereço de contacto visível?'
+        'placeholder' => 'Pretende ter um endereço de contacto visível?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Morada',
         'placeholder' => 'Onde será realizada a atividade?',
     ],
-
 
     'organizertype' => [
         'label' => 'Tipo de organização',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Realidade aumentada',
         'Artificial intelligence' => 'Inteligência artificial',
         'Motivation and awareness raising' => 'Motivação e sensibilização',
-        'Promoting diversity' => 'Promoção da diversidade'
+        'Promoting diversity' => 'Promoção da diversidade',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CÓDIGO CODE WEEK 4 ALL',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'embaixadores nacionais',
         'phrase5' => 'ou envie-nos uma',
         'phrase6' => 'mensagem de correio eletrónico',
-        'phrase7' => 'Pode partilhar o seu código Codeweek4All com outras pessoas:'
+        'phrase7' => 'Pode partilhar o seu código Codeweek4All com outras pessoas:',
     ],
     'activitytype' => [
         'label' => 'Tipo de atividade',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Atividade conectada aberta',
         'invite-online' => 'Atividade privada conectada',
         'open-in-person' => 'Atividade em pessoa aberta',
-        'invite-in-person' => 'Atividade em pessoa privada'
+        'invite-in-person' => 'Atividade em pessoa privada',
 
     ],
     'privacy' => 'Li e concordo com os termos da política de privacidade descritos neste documento.',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Visualize o seu certificado aqui',
     'submit_event_and_report' => 'Apresente um relatório relativo a este evento e solicite o seu certificado de participação na Semana da Programação.',
     'report_and_claim' => 'Apresentar relatório de evento e solicitar certificado',
-
 
 ];

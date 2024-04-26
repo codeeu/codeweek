@@ -6,10 +6,9 @@ return [
         'author' => 'Az európai programozási hét csapata',
         'purposes' => [
             'Interaktív találós kérdések programozása',
-            'A csevegőrobot és a felhasználó közötti párbeszédek létrehozása programozás segítségével'
+            'A csevegőrobot és a felhasználó közötti párbeszédek létrehozása programozás segítségével',
         ],
-        'description' =>
-            'Programozz egy beszélgetést egy csevegőrobot és egy olyan felhasználó között, aki egy találós kérdést próbál megoldani. Próbálj létrehozni egy olyan csevegőrobotot, amelyik úgy beszél, mint egy ember. Találós kérdés helyett létrehozhatsz egy párbeszédet a csevegőrobot és a felhasználó között.',
+        'description' => 'Programozz egy beszélgetést egy csevegőrobot és egy olyan felhasználó között, aki egy találós kérdést próbál megoldani. Próbálj létrehozni egy olyan csevegőrobotot, amelyik úgy beszél, mint egy ember. Találós kérdés helyett létrehozhatsz egy párbeszédet a csevegőrobot és a felhasználó között.',
         'instructions' => [
             'Találj ki egy találós kérdést',
             'Lépj be a következőbe:',
@@ -18,13 +17,13 @@ return [
             'Használj blokkokat vagy szöveg-alapú módot találós kérdésed megírásához',
             'Egy másik lehetőség, hogy',
             'ezt a kódot’ használod',
-            'majd a találós kérdésedhez igazítod, vagy kiválaszthatod az Answering the riddle (Válasz a találós kérdésre) opciót a menüből és szerkesztheted'
+            'majd a találós kérdésedhez igazítod, vagy kiválaszthatod az Answering the riddle (Válasz a találós kérdésre) opciót a menüből és szerkesztheted',
         ],
         'example' => 'Íme egy példa a találós kérdésre.',
         'more' => [
             'Ez a kód a következő Pencil Code tevékenységből származik:',
-            'Answering the Riddle (Válasz a találós kérdésre)'
-        ]
+            'Answering the Riddle (Válasz a találós kérdésre)',
+        ],
     ],
 
     'paper-circuit' => [
@@ -32,12 +31,12 @@ return [
         'author' => 'Az európai programozási hét csapata',
         'purposes' => [
             'Kreativitás ösztönzése',
-            'Problémamegoldó készségek fejlesztése'
+            'Problémamegoldó készségek fejlesztése',
         ],
         'description' => [
             'Rajzolj le egy általad választott bármilyen tárgyat. Ez lehet a csillagos ég, egy katicabogár, egy robot, egy karácsonyfa vagy bármi, ami eszedbe jut. Bátran szabd testre projekted az európai programozási hét vizuális elemeivel: fedezd fel az',
             'európai programozási hét tanári eszköztárát',
-            'és töltsd le valamelyik logót vagy ábrát. Akár egy papíráramkör-meghívót is készíthetsz az európai programozási hétre. Adj hozzá áramkörödhöz egy motiváló üzenetet, és ösztönözd a többi tanárt, hogy csatlakozzon a programozási héthez, és/vagy tekintse meg az iskoláknak szóló weboldalt.'
+            'és töltsd le valamelyik logót vagy ábrát. Akár egy papíráramkör-meghívót is készíthetsz az európai programozási hétre. Adj hozzá áramkörödhöz egy motiváló üzenetet, és ösztönözd a többi tanárt, hogy csatlakozzon a programozási héthez, és/vagy tekintse meg az iskoláknak szóló weboldalt.',
         ],
         'instructions' => [
             'Rajzolj egy tárgyat, és döntsd el, mely részeit szeretnéd kivilágítani (például a csillagokat).',
@@ -46,7 +45,7 @@ return [
             'Rajzolj + és-jelet a papír másik oldalára. Gondoskodj róla, hogy a LED-es áramköri lap hosszabbik fele az elem "+" oldalához, míg a rövidebb a "-" oldalához legyen kötve.',
             'Helyezd a rézszalagot a jelekre.',
             'Hajtsd be úgy, hogy amikor a papír lefedi az elemet, a LED világítson. Gemkapcsot is használhatsz a rézszalaggal való megfelelő kontakt biztosításához.',
-            'Készíts képet papíráramkörödről, oszd meg az Instagramon, és meséld el, hogy szerinted miért érdemes részt venni egy ilyen kezdeményezésben.  '
+            'Készíts képet papíráramkörödről, oszd meg az Instagramon, és meséld el, hogy szerinted miért érdemes részt venni egy ilyen kezdeményezésben.  ',
         ],
         'example' => 'Itt láthatsz néhány példát az áramkörökre',
         'materials' => [
@@ -55,8 +54,8 @@ return [
             'gombelem',
             'rézszalag',
             'LED-es áramköri matricák',
-            'gemkapocs'
-        ]
+            'gemkapocs',
+        ],
     ],
 
     'dance' => [
@@ -64,10 +63,9 @@ return [
         'author' => 'Az európai programozási hét csapata',
         'purposes' => [
             'Alapvető programozási fogalmak elsajátítása',
-            'Szereplők létrehozásának megtanulása'
+            'Szereplők létrehozásának megtanulása',
         ],
-        'description' =>
-            'Ebben a kihívásban olyan szereplőket hozhatsz létre, amelyek együtt táncolnak. Egy beépített médiakönyvtár segítségével kiválaszthatod a szereplőket és a zeneszámokat, vagy akár Te magad is létrehozhatsz egyet. A karaktereket Te fogod táncra perdíteni és beszédre sarkallni.',
+        'description' => 'Ebben a kihívásban olyan szereplőket hozhatsz létre, amelyek együtt táncolnak. Egy beépített médiakönyvtár segítségével kiválaszthatod a szereplőket és a zeneszámokat, vagy akár Te magad is létrehozhatsz egyet. A karaktereket Te fogod táncra perdíteni és beszédre sarkallni.',
         'instructions' => [
             'Lépj be a',
             '-be tanárként. Hozz létre tanulói fiókokat, és oszd meg diákjaiddal. Megoszthatsz egy osztálykódot is, és így a diákok maguk regisztrálhatnak iskolai e-mail-címükkel. Ha tanuló vagy, csatlakozhatsz tanulóként, meg kell adnod azonban szüleid e-mail-címét, hogy jóváhagyhassák fiókodat',
@@ -80,13 +78,13 @@ return [
             'Kattints egy-egy szereplőre, és animáld őket a következő blokkok hozzáadásával',
             'Adj hozzá',
             'say block (egy szövegblokkot)',
-            'hogy szereplőid beszélgethessenek egymással. Változtasd meg a szövegbuborékok formáját, valamint a szöveg betűtípusát és méretét'
+            'hogy szereplőid beszélgethessenek egymással. Változtasd meg a szövegbuborékok formáját, valamint a szöveg betűtípusát és méretét',
         ],
         'example' => [
             'Nézd meg',
             'ezt a példát',
-            'ahol táncolnak a robotok. Kedved szerint használhatod vagy remixelheted.'
-        ]
+            'ahol táncolnak a robotok. Kedved szerint használhatod vagy remixelheted.',
+        ],
     ],
 
     'compose-song' => [
@@ -95,10 +93,9 @@ return [
         'purposes' => [
             'Programozás tanulása a zenén keresztül',
             'Zenei műfajok és hangszerek megkülönböztetése',
-            'Dalszerzés különböző hangfájlok keverésével'
+            'Dalszerzés különböző hangfájlok keverésével',
         ],
-        'description' =>
-            'Ebben a kihívásban egy programozási nyelv felhasználásával szerezhetsz zenét. Beépített hangfájlokat használhatsz, vagy felveheted a saját klipedet, keverheted ezeket és létrehozhatsz egy saját szerzeményt. Futtasd le a kódodat a Digital Audio Workstationön, és hallgasd meg a zenét, amelyet Te programoztál. Játsszad le különféle hangszínekkel és hanghatásokkal, így módosíthatod a zeneművet.',
+        'description' => 'Ebben a kihívásban egy programozási nyelv felhasználásával szerezhetsz zenét. Beépített hangfájlokat használhatsz, vagy felveheted a saját klipedet, keverheted ezeket és létrehozhatsz egy saját szerzeményt. Futtasd le a kódodat a Digital Audio Workstationön, és hallgasd meg a zenét, amelyet Te programoztál. Játsszad le különféle hangszínekkel és hanghatásokkal, így módosíthatod a zeneművet.',
         'instructions' => [
             'Lépj be a következőbe:',
             'Kattints ide, és készíts egy forgatókönyvet',
@@ -125,13 +122,13 @@ return [
             'Írd a következőt:',
             'A zárójeleken belül írd le a következőket: a műsorszám száma, VOLUME, GAIN, a hangerő szintje, az ütem kezdete, a záró hangerőszint és záró ütem',
             'Íme egy példa a fade-in (hangosodó) hanghatásra',
-            'és a fade-out (halkuló) hanghatásra'
+            'és a fade-out (halkuló) hanghatásra',
         ],
         'example' => [
             'Hallgasd meg',
             'az Earsketch segítségével készült következő számot.',
-            'A kódot importálhatod és szerkesztheted'
-        ]
+            'A kódot importálhatod és szerkesztheted',
+        ],
     ],
     'sensing-game' => [
         'title' => 'Készíts videoszenzoros játékot',
@@ -139,10 +136,9 @@ return [
         'purposes' => [
             'Animált objektumok programozása',
             'A digitális animáció fizikai mozgatással való kontrollálásának megértése',
-            'Dalszerzés különböző hangfájlok keverésével'
+            'Dalszerzés különböző hangfájlok keverésével',
         ],
-        'description' =>
-            'Ebben a kihívásban egy egyszerű játékot készíthetsz, amely szenzorként videokamerát használ a mozgás felismerésére, azaz animációdat fizikai mozgatással kontrollálhatod. Feladatod ebben a játékban, hogy 30 másodperc alatt annyi európai programozási hét buborékot összegyűjts, amennyit csak tudsz. A buborékgyűjtés helyett egy olyan játékot is létrehozhatsz, amelyben egy adott karaktert kergetsz vagy léggömböket pukkasztasz ki a kezeiddel.',
+        'description' => 'Ebben a kihívásban egy egyszerű játékot készíthetsz, amely szenzorként videokamerát használ a mozgás felismerésére, azaz animációdat fizikai mozgatással kontrollálhatod. Feladatod ebben a játékban, hogy 30 másodperc alatt annyi európai programozási hét buborékot összegyűjts, amennyit csak tudsz. A buborékgyűjtés helyett egy olyan játékot is létrehozhatsz, amelyben egy adott karaktert kergetsz vagy léggömböket pukkasztasz ki a kezeiddel.',
         'instructions' => [
             'Lépj be a következőbe:',
             'Kattints a következőre:',
@@ -161,69 +157,63 @@ return [
             'Időzítő módosítása -1-gyel',
             'Hozz létre egy új',
             'Game Over (A játék véget ért) sprite-ot',
-            'a játék befejezéséhez. Létrehozhatsz egy sprite-ot a játék nevével, például Gyűjtsd össze az európai programozási hét összes buborékját.'
+            'a játék befejezéséhez. Létrehozhatsz egy sprite-ot a játék nevével, például Gyűjtsd össze az európai programozási hét összes buborékját.',
         ],
         'example' => [
             'Játssz a Gyűjtsd össze az európai programozási hét összes buborékját videoszenzoros játékkal. Bátran használd fel',
-            'ezt a projektet'
-        ]
+            'ezt a projektet',
+        ],
     ],
 
     'calming-leds' => [
-        'title' =>
-            'Megnyugtató LED-ek: hozz létre egy egyszerű eszközt a micro:bittel',
+        'title' => 'Megnyugtató LED-ek: hozz létre egy egyszerű eszközt a micro:bittel',
         'author' => 'Micro:bit Educational Foundation',
         'duration' => '20 perc',
         'materials' => [
             'micro:bit eszköz és akkumulátor (ha rendelkezésre áll)',
             'egy laptop vagy tablet, amelyről elérheted a Microsoft MakeCode-ot és a Youtube-ot',
-            'a tevékenység forrásait tartalmazó microbit.org'
+            'a tevékenység forrásait tartalmazó microbit.org',
         ],
-        'description' =>
-            'A tanulók digitális eszközt hozhatnak létre LED-ek felhasználásával, amely segítheti őket légzésük szabályozásában és abban, hogy nyugodtabbnak érezhessék magukat. Feladatuk néhány egyszerű kód megírása, valamint az animációk és a szekvenciák felfedezése.',
+        'description' => 'A tanulók digitális eszközt hozhatnak létre LED-ek felhasználásával, amely segítheti őket légzésük szabályozásában és abban, hogy nyugodtabbnak érezhessék magukat. Feladatuk néhány egyszerű kód megírása, valamint az animációk és a szekvenciák felfedezése.',
         'instructions' => [
             'A cél egy működőképes Megnyugtató LED-eszköz létrehozása, amelyet légzésed szabályozására használhatsz. Ez az eszköz egy micro:bit alaplapon, vagy a MakeCode editorban található szimulátor segítségével is létrehozható.',
             'A kihívás a MakeCode editor segítségével és egy egyszerű kódsorozat írásával teljesíthető a videófelvételen/képernyőfotón szereplő instrukciók alapján.',
             'A kihívás teljesítésével a tanulók különféle animációkat fedezhetnek fel, kreatívan, tetszés szerint kezelhetik azokat, ez a tevékenység pedig segíthet nekik a nyugodt és boldog életérzés elérésében.',
             'További tájékoztatás és a videós útmutató a következő',
-            'linken található'
+            'linken található',
         ],
-        'example' =>
-            'Látogass el erre az oldalra, és tekintsd meg a teljes kihívás instrukcióit, illetve videóit, és tudj meg többet a programozásáról',
+        'example' => 'Látogass el erre az oldalra, és tekintsd meg a teljes kihívás instrukcióit, illetve videóit, és tudj meg többet a programozásáról',
         'purposes' => [
             'Hasznos célt szolgáló, egyszerű digitális alkotás tervezése',
             'Szekvenciák és animációk, és azok működésének felfedezése',
             'Egy egyszerű kód tesztelése és hibakeresése',
-            'A dizájn iterálása az animációk gyorsításával és lassításával'
-        ]
+            'A dizájn iterálása az animációk gyorsításával és lassításával',
+        ],
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' =>
-            'Számítógépes gondolkodás és számítógépes folyékonyság a ScratchJr-ral',
-        'author' =>
-            'Stamatis Papadakis – az európai programozási hét nagykövete, Görögország',
+        'title' => 'Számítógépes gondolkodás és számítógépes folyékonyság a ScratchJr-ral',
+        'author' => 'Stamatis Papadakis – az európai programozási hét nagykövete, Görögország',
         'purposes' => [
             'Ismerkedés új parancsokkal és az interfésszel.',
             'Egyszerű programok létrehozása egyszerű ok-okozati parancsokkal.',
-            'Egyszerű hibakeresés elvégzése próbálkozásos technikával.'
+            'Egyszerű hibakeresés elvégzése próbálkozásos technikával.',
         ],
-        'description' =>
-            'Ebben a kihívásban a gyerekek a ScratchJr alkalmazás segítségével CT koncepciókat integrálnak projektjeikbe, történeteiket így megnyerőbbé, izgalmasabbá és érzelmesebbé tehetik.',
+        'description' => 'Ebben a kihívásban a gyerekek a ScratchJr alkalmazás segítségével CT koncepciókat integrálnak projektjeikbe, történeteiket így megnyerőbbé, izgalmasabbá és érzelmesebbé tehetik.',
         'instructions' => [
             'A ScratchJr használata nem követeli meg a gyermekek írástudását. Valamennyi utasítás és menüpont szimbólumokkal és színekkel azonosítható. A kihívás teljesíthető az osztályteremben, a laborban vagy akár egy nyílt térben, mivel internetre nincs szükség.',
-            'A gyerekek a várost használják háttérként, és kódblokkok segítségével vezetnek keresztül egy autót a városon.'
+            'A gyerekek a várost használják háttérként, és kódblokkok segítségével vezetnek keresztül egy autót a városon.',
         ],
         'example' => [
             'A gyerekek hang- és mozgásblokkok segítségével táncra perdíthetik karaktereiket',
-            'A gyerekek választanak egy háttért és egy szereplőt, egy mozgásblokk segítségével pedig mozgásba lendítenek egy autót a városon keresztül. A gyerekek a sebességblokk segítségével gyorsíthatják vagy lassíthatják a szereplőt.'
+            'A gyerekek választanak egy háttért és egy szereplőt, egy mozgásblokk segítségével pedig mozgásba lendítenek egy autót a városon keresztül. A gyerekek a sebességblokk segítségével gyorsíthatják vagy lassíthatják a szereplőt.',
         ],
         'materials' => [
             'Az ingyenes alkalmazás',
             'számos operációs rendszeren és okoseszköztípuson működik',
             'Sőt, a',
-            'weboldalon rengeteg ingyenes oktatási anyag áll rendelkezésre.'
+            'weboldalon rengeteg ingyenes oktatási anyag áll rendelkezésre.',
         ],
-        'duration' => '90 perc'
+        'duration' => '90 perc',
     ],
     'ai-hour-of-code' => [
         'title' => 'MI kódolás órája',
@@ -231,85 +221,77 @@ return [
         'purposes' => [
             'Olyan programozási megoldások létrehozása, amelyek szekvenciákat, eseményeket, hurkokat és feltételes utasításokat tartalmaznak',
             'Egy probléma megoldásához szükséges lépések lebontása utasítások precíz szekvenciáira',
-            'Kódolási koncepciók felfedezése'
+            'Kódolási koncepciók felfedezése',
         ],
-        'description' =>
-            'A falut tűzveszély fenyegeti és a Te segítségedre van szüksége: kódolj megoldást! Találkozz programozási segédeddel, a Minecraft Ügynökkel, majd programozd az Ügynököt, hogy navigálja az erdőt és gyűjtsön adatokat. Ezek az adatok segítenek az Ügynöknek, hogy előrejelezze a tűz előfordulási helyét. Ezt követően programozd az Ügynököt úgy, hogy segítsen a tűz megelőzésében és terjedésében, a falu megmentésében és az erdő újjáélesztésében. Tanuld meg a programozás alapjait, és fedezd fel az MI használatának valós életből vett példáját.',
+        'description' => 'A falut tűzveszély fenyegeti és a Te segítségedre van szüksége: kódolj megoldást! Találkozz programozási segédeddel, a Minecraft Ügynökkel, majd programozd az Ügynököt, hogy navigálja az erdőt és gyűjtsön adatokat. Ezek az adatok segítenek az Ügynöknek, hogy előrejelezze a tűz előfordulási helyét. Ezt követően programozd az Ügynököt úgy, hogy segítsen a tűz megelőzésében és terjedésében, a falu megmentésében és az erdő újjáélesztésében. Tanuld meg a programozás alapjait, és fedezd fel az MI használatának valós életből vett példáját.',
         'instructions' => 'Töltsd le az óratervet itt',
         'materials' => [
             'Telepítsd a Minecraft: Education Edition-t (oktatási verzió)',
             'A Minecraft Education Edition telepítését követően a kihívást',
-            'ezen a weboldalon találod'
-        ]
+            'ezen a weboldalon találod',
+        ],
     ],
     'create-a-dance' => [
         'title' => 'Hozz létre egy táncot az Óda a kódoláshoz című dalra!',
-        'purposes' =>
-            'A programozás szórakoztató tanulása és kapcsolatépítés az európai programozási hét közösségével.',
+        'purposes' => 'A programozás szórakoztató tanulása és kapcsolatépítés az európai programozási hét közösségével.',
         'description' => [
             'Hozz létre egy táncot az Óda a kódoláshoz című dalra! Használd a',
             'Tánc party útmutatót',
-            'és programozz egy táncot az Óda a kódoláshoz című dalra. Az európai programozási hét hivatalos himnusza a Tánc party válogatásában is megtalálható.'
+            'és programozz egy táncot az Óda a kódoláshoz című dalra. Az európai programozási hét hivatalos himnusza a Tánc party válogatásában is megtalálható.',
         ],
         'instructions' => [
             'Az utasításokat az útmutatóban szereplő belüli videók',
             'tartalmazzák',
-            'illetve az egyes szintek tetején is olvashatók'
+            'illetve az egyes szintek tetején is olvashatók',
         ],
         'example' => 'Diákok kiváló alkotásai a következő oldalon találhatók',
-        'materials' => 'The Code.org tutorial'
+        'materials' => 'The Code.org tutorial',
     ],
     'create-a-simulation' => [
         'title' => 'Készíts szimulációt!',
         'purposes' => [
             'Szimulációk megismerése és a következő változók bevezetése: tömeg létrehozása, helyreállítási ráta, maszkviselés és oltások.',
-            'Egy fiktív forgatókönyvhöz szükséges, a valós világban kitörő vírusjárványokkal kapcsolatos előzetes tudás aktiválása.'
+            'Egy fiktív forgatókönyvhöz szükséges, a valós világban kitörő vírusjárványokkal kapcsolatos előzetes tudás aktiválása.',
         ],
-        'description' =>
-            'Írj kódot, mellyel létrehozod és lefuttatod saját szimulációdat a Monster Townban kitörő járványról. Tanulj meg programozni, és készíts előrejelzéseket arról, hogy mi fog történni Monster Town szomszédságában.',
+        'description' => 'Írj kódot, mellyel létrehozod és lefuttatod saját szimulációdat a Monster Townban kitörő járványról. Tanulj meg programozni, és készíts előrejelzéseket arról, hogy mi fog történni Monster Town szomszédságában.',
         'instructions' => [
             'Az utasításokat az útmutatóban szereplő videók',
             'tartalmazzák',
-            'illetve az egyes szintek tetején is olvashatók'
+            'illetve az egyes szintek tetején is olvashatók',
         ],
-        'example' =>
-            'Ha elkészültél, másokkal is oszd meg szimulációid. Ossz meg egy üzenetet arról, hogy szerinted mit tehetünk mi azért, hogy megvédjük mások egészségét, ha egy vírus érkezik a városba.',
-        'materials' => 'The Code.org tutorial'
+        'example' => 'Ha elkészültél, másokkal is oszd meg szimulációid. Ossz meg egy üzenetet arról, hogy szerinted mit tehetünk mi azért, hogy megvédjük mások egészségét, ha egy vírus érkezik a városba.',
+        'materials' => 'The Code.org tutorial',
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Készítsd el saját műalkotásod!',
         'audience' => 'Minden korosztály számára',
-        'purpose' =>
-            'Számítástechnikai fogalmak vizuális bevezetése és a kreativitás ösztönzése',
-        'description' =>
-            'Készítsd el saját műalkotásod a Művész segítségével! Használj kódblokkokat, hogy a te Művészed egyedi műalkotást készíthessen.',
+        'purpose' => 'Számítástechnikai fogalmak vizuális bevezetése és a kreativitás ösztönzése',
+        'description' => 'Készítsd el saját műalkotásod a Művész segítségével! Használj kódblokkokat, hogy a te Művészed egyedi műalkotást készíthessen.',
         'instructions' => 'Az utasítások az egyes szintek tetején olvashatók',
-        'example' =>
-            'Példák egy-egy alkotásra ezen az oldalon, a Rajz címszó alatt találhatók',
-        'materials' => ['Az útmutató első szintje', 'ITT található']
+        'example' => 'Példák egy-egy alkotásra ezen az oldalon, a Rajz címszó alatt találhatók',
+        'materials' => ['Az útmutató első szintje', 'ITT található'],
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'Első offline számítástechnikai tevékenységek',
         'purposes' => [
             'Az otthonról tanuló gyermekek támogatása',
-            'Hogy mindenki elszakadhasson a képernyőtől'
+            'Hogy mindenki elszakadhasson a képernyőtől',
         ],
-        'description' =>
-            'CS First Unplugged(Az Első offline) számítástechnikai projekt olyan tevékenységek sorozatát tartalmazza, amelyek számítógép nélkül tanítják meg a tanulóknak az alapvető számítástechnikai fogalmakat. Ezt a leckét azért találtuk ki, hogy bemutassuk: a Számítástechnika jóval több mint maga a programozás. ',
+        'description' => 'CS First Unplugged(Az Első offline) számítástechnikai projekt olyan tevékenységek sorozatát tartalmazza, amelyek számítógép nélkül tanítják meg a tanulóknak az alapvető számítástechnikai fogalmakat. Ezt a leckét azért találtuk ki, hogy bemutassuk: a Számítástechnika jóval több mint maga a programozás. ',
         'instructions' => [
             'A tevékenységek angol leírását tartalmazó tájékoztató füzet a következő',
             'linken',
             'angol nyelvű óravázlatok pedig itt:',
             'E lecke tevékenységei önállóan és bármilyen sorrendben elvégezhetők',
-            'A tanárok képet készíthetnek a tanulási folyamatról, és megoszthatják az Instagramon a #EUCodeWeekChallengeGoogle #GrowWithGoogle hashtag segítségével'
+            'A tanárok képet készíthetnek a tanulási folyamatról, és megoszthatják az Instagramon a #EUCodeWeekChallengeGoogle #GrowWithGoogle hashtag segítségével',
         ],
         'materials' => [
             'A tevékenységekről szóló tájékoztató füzet mellett egyes tevékenységekhez további segédanyagokra lesz vagy lehet szükség.',
             'Kisebb számlálók (például szárazbab) a Szomszédsági hálózatok térkép használatához.',
             'Ollók a Titkos Üzenetek Küldése titkosítókerék kivágásához.',
             'Kartonpapír és ragasztó a Titkos Üzenetek Küldése titkosítókerék stabilabbá tételéhez.',
-            'Egy rajzszög, fogpiszkáló vagy egy kiegyenesített gemkapocs a Titkos Üzenetek Küldése titkosítókerék összekapcsolásához.'
-        ]
+            'Egy rajzszög, fogpiszkáló vagy egy kiegyenesített gemkapocs a Titkos Üzenetek Küldése titkosítókerék összekapcsolásához.',
+        ],
     ],
     'family-care' => [
         'title' => 'Családi gondoskodás',
@@ -321,14 +303,14 @@ return [
             'A probléma lehetőségként történő értelmezése és kreatív megoldások létrehozása;',
             'Kódok alkalmazása megoldásaid innovatív megvalósítása céljából;',
             'Poszterek tervezése és megoldásaid bemutatása másoknak;',
-            'A közösségi média használata a projektjeid hatásának fokozása céljából.'
+            'A közösségi média használata a projektjeid hatásának fokozása céljából.',
         ],
         'description' => [
             'Mi jut eszedbe, amikor az otthonról beszélgetünk? Egy szép ház? Egy finom vacsi, amit a szüleid készítettek? Egy titkos hely, ami csak a tiéd? Az otthon melege feltölti testünket és lelkünket, olyan, mint egy üzemanyag. A modern világ forgatagában a szülők állandóan csak dolgoznak. Amikor a barátokkal lógsz, nem hagyhatod magukra kiscicáidat. De hogyan gondoskodhatsz kis kedvenceidről, amikor nem vagy otthon? A kihívás témája a',
             'Családi gondoskodás',
             'A tanulók a téma alapján olyan ötletet dolgozhatnak ki, amelyben programozással és hardverek segítségével adhatnak szeretetet és gondoskodhatnak másokról. Íme néhány kérdés, gondolkodj el ezeken:',
             'Hány családtag lakik az otthonodban? Kik ők? Felmerült már valamilyen probléma, amikor velük vagy? Mire van szükségük?',
-            'Ismersz olyasvalakit, akiről nem gondoskodnak eléggé otthon, és több segítségre van szüksége, mint másnak a közösségedben? Hogyan segíthetnél nekik?'
+            'Ismersz olyasvalakit, akiről nem gondoskodnak eléggé otthon, és több segítségre van szüksége, mint másnak a közösségedben? Hogyan segíthetnél nekik?',
         ],
         'instructions' => [
             'Ötletelj és végezz kutatást a családi gondoskodás témakörében',
@@ -337,7 +319,7 @@ return [
             'Válassz egy megoldást',
             'Tervezd meg és építsd fel a szerkezetét',
             'Tervezz egy projektbemutató posztert',
-            'Mutasd meg a tanáraidnak és családtagjaidnak'
+            'Mutasd meg a tanáraidnak és családtagjaidnak',
         ],
         'example' => ['Néhány példa itt', 'és'],
         'materials' => [
@@ -349,23 +331,21 @@ return [
             'A részt vevő csapatnak a megadott témára kell összpontosítania és szoftverprogramozás, illetve hardverépítés segítségével kell megoldást kidolgoznia. ',
             'Arra ösztönözzük a tanulókat, hogy teljesítsék ezt a kihívást a programozási héten, sőt más tanulókkal való kommunikáció révén emeljék nemzetközi szintre, és nyerjenek díjakat. ',
             'További információk itt találhatók:',
-            'vagy vegyék fel velünk a kapcsolatot itt:'
-        ]
+            'vagy vegyék fel velünk a kapcsolatot itt:',
+        ],
     ],
     'virtual-flower-field' => [
         'title' => 'Nevelj saját virtuális virágos rétet!',
-        'author' =>
-            'Jadga Huegle-Meet and Code coach és a SAP Snap!csapatának tagja',
+        'author' => 'Jadga Huegle-Meet and Code coach és a SAP Snap!csapatának tagja',
         'duration' => '30–60 perc',
         'purposes' => [
             'A programozás megismerése egy egyszerű, de szemléltető projekttel. ',
             'A programozás művészi oldalának és csodás eredményeinek megismerése. ',
             'Az ősz megszépítése színes virágokkal és az európai programozási héttel. ',
             'A Földön élő virágok sokszínűségének bemutatása. ',
-            'A Fenntartható Fejlődési Célokhoz, különösen az éghajlatváltozásra vonatkozó 13. célhoz való hozzájárulás olyan programozási események létrehozásával, amelyek a témára összpontosító figyelemfelkeltéssel javítják az éghajlatváltozással kapcsolatos oktatást. '
+            'A Fenntartható Fejlődési Célokhoz, különösen az éghajlatváltozásra vonatkozó 13. célhoz való hozzájárulás olyan programozási események létrehozásával, amelyek a témára összpontosító figyelemfelkeltéssel javítják az éghajlatváltozással kapcsolatos oktatást. ',
         ],
-        'description' =>
-            'Fejlessz egy olyan programot a Snap!-ben, amelyben különféle fajtájú és különböző számú szirmú virágokkal virtuális virágmezőt hozhatsz létre. ',
+        'description' => 'Fejlessz egy olyan programot a Snap!-ben, amelyben különféle fajtájú és különböző számú szirmú virágokkal virtuális virágmezőt hozhatsz létre. ',
         'instructions' => [
             'Inspirációért a kihíváshoz, tekintsd meg',
             'ezt a videót',
@@ -374,25 +354,23 @@ return [
             'és kövesd az abban szereplő utasításokat',
             'Ez a kihívás két lépésből teljesíthető: a Snap!(vagy Scratch) programban programozz egy virtuális virágos rétet, majd posztolj egy képernyőfotót vagy fotót az eredményről. ',
             'A virágos réten különféle fajtájú, és különböző számú szirmú virágokat kell nevelni. A virágok ideális esetben úgy vannak programozva, hogy szirmaik folyamatosan ismétlődő újranyomásával és ezt követő elforgatásával(vagy rajzolásával és elforgatásával) jön létre maga a virág. ',
-            'Posztolj egy képet virtuális virágoskertedről a #MeetandCode hashtaggel.'
+            'Posztolj egy képet virtuális virágoskertedről a #MeetandCode hashtaggel.',
         ],
         'materials' => [
             'Javasoljuk, hogy használd a Scratch-et',
-            'de a projekt a Snap!-ben is működhet'
-        ]
+            'de a projekt a Snap!-ben is működhet',
+        ],
     ],
     'haunted-house' => [
         'title' => 'Kísértetház a Hedy-ben',
-        'author' =>
-            'Felienne Hermans, Leideni Egyetem-Ramon Moorlag, I&I-CodeWeek NL',
+        'author' => 'Felienne Hermans, Leideni Egyetem-Ramon Moorlag, I&I-CodeWeek NL',
         'audience' => 'Tanárok és oktatók',
         'duration' => '1 vagy 2 óra az előzetes tudástól függően',
         'purposes' => [
             'Interaktív kísértetház-történet készítése.',
-            'Programozás a Hedy-vel.'
+            'Programozás a Hedy-vel.',
         ],
-        'description' =>
-            'A Hedy-vel kitalálhatsz egy kíséretházas történetet interaktív elemekkel. A kód lefuttatásával minden alkalommal új történet jön létre. A történet hangosan is felolvastatható a számítógépeddel, és online is megosztható.',
+        'description' => 'A Hedy-vel kitalálhatsz egy kíséretházas történetet interaktív elemekkel. A kód lefuttatásával minden alkalommal új történet jön létre. A történet hangosan is felolvastatható a számítógépeddel, és online is megosztható.',
         'instructions' => [
             'Először is nyisd meg a böngésződ, majd keresd fel a hedycode.com-ot.',
             'Kövesd az 1–4. szintre vonatkozó utasításokat. Használd a ‘Szint’ és ‘Kísértetház’ füleket.',
@@ -400,20 +378,19 @@ return [
             'Kedves Tanárok, a Hedy-vel kapcsolatos óratervért kattintsatok',
             'ide',
             'Felienne Hermans felvétele a Hedy-ről',
-            'ezen linken található'
+            'ezen linken található',
         ],
         'example' => 'Kísértetház példa a következő szinthez:',
-        'materials' => ['A Hedy itt', '1–4-es szint']
+        'materials' => ['A Hedy itt', '1–4-es szint'],
     ],
     'inclusive-app-design' => [
         'title' => 'Inkluzív alkalmazás-tervezés',
         'author' => 'Apple Education',
         'duration' => '60 perc + választható extra tevékenységek',
         'purposes' => [
-            'Ötletelés, tervezés, prototípus-készítés, egy olyan alkalmazásötlet megosztása, amelyet mindenki elérhet és megérthet.'
+            'Ötletelés, tervezés, prototípus-készítés, egy olyan alkalmazásötlet megosztása, amelyet mindenki elérhet és megérthet.',
         ],
-        'description' =>
-            'Nagyszerű appek nagyszerű ötletekkel. Ebben a tevékenységben a tanulók kitalálnak egy appötletet egy számukra fontos témában, majd felfedezik, hogyan lehet egy alkalmazást úgy megtervezni, hogy az befogadó és hozzáférhető legyen.',
+        'description' => 'Nagyszerű appek nagyszerű ötletekkel. Ebben a tevékenységben a tanulók kitalálnak egy appötletet egy számukra fontos témában, majd felfedezik, hogyan lehet egy alkalmazást úgy megtervezni, hogy az befogadó és hozzáférhető legyen.',
         'instructions' => [
             'Valamennyi utasítás ezen a linken található',
             'Ezzel a 60 perces óratervvel az oktatók a következőkre taníthatják diákjaikat:',
@@ -421,12 +398,12 @@ return [
             'Ötletelés és appötlet kitalálása olyan témákban, amelyek érdeklik őket',
             'Appötleteik felvázolása és a felhasználói tevékenységek tervezése',
             'Alkalmazásuk egyik része prototípusának elkészítése a Keynote-ban',
-            'A prototípus-demók megosztása és annak bemutatása, hogy hogyan támogatják azok a különböző hátterű és képességű felhasználókat'
+            'A prototípus-demók megosztása és annak bemutatása, hogy hogyan támogatják azok a különböző hátterű és képességű felhasználókat',
         ],
         'materials' => [
             'Fedezd fel az Inclusive App Design Activity (inkluzív alkalmazás-tervezési tevékenységet) az Apple Teacher Learning Center-ben',
-            'A Keynote iPad-en vagy Mac-en ajánlott, de nem kötelező.'
-        ]
+            'A Keynote iPad-en vagy Mac-en ajánlott, de nem kötelező.',
+        ],
     ],
     'silly-eyes' => [
         'title' => 'Bolondos szemek',
@@ -435,28 +412,24 @@ return [
         'purposes' => [
             'Projekt készítése interaktív felhasználóval.',
             'Projekt testre szabása színekkel és grafikus hatásokkal.',
-            'Dizájn tanulása a digitális alkotásban.'
+            'Dizájn tanulása a digitális alkotásban.',
         ],
-        'description' =>
-            'Ebben a projektben bolondos szemű szereplőt tervezhetsz és hozhatsz létre. A szereplőd nagy és bolondos szemei az egér kurzorját követik, életre keltve figurád.',
+        'description' => 'Ebben a projektben bolondos szemű szereplőt tervezhetsz és hozhatsz létre. A szereplőd nagy és bolondos szemei az egér kurzorját követik, életre keltve figurád.',
         'instructions' => 'A projekt teljes leírását itt találod',
-        'example' =>
-            'Nézd meg a következőket: Gobo, Under the sea (A víz alatti élet) és Don\'t eat donut (Ne egyél fánkot)'
+        'example' => 'Nézd meg a következőket: Gobo, Under the sea (A víz alatti élet) és Don\'t eat donut (Ne egyél fánkot)',
     ],
     'train-ai-bot' => [
         'title' => 'Képezz ki egy MI botot!',
-        'purposes' =>
-            'Tanulás a mesterséges intelligenciáról (MI), a gépi tanulásról, a tanító adatbázisról és az elfogultságról, valamint az etikai kérdések és annak megismerése, hogy az MI hogyan használható a világ problémáinak kezelésére.',
-        'description' =>
-            'MI bot kiképzése az MI az Óceánokért segítségével. E tevékenység során egy mesterséges intelligenciát (MI) programozhatsz vagy képezhetsz ki, hogy felismerje a halakat és a szemetet. Takarítsuk ki az óceánt!',
+        'purposes' => 'Tanulás a mesterséges intelligenciáról (MI), a gépi tanulásról, a tanító adatbázisról és az elfogultságról, valamint az etikai kérdések és annak megismerése, hogy az MI hogyan használható a világ problémáinak kezelésére.',
+        'description' => 'MI bot kiképzése az MI az Óceánokért segítségével. E tevékenység során egy mesterséges intelligenciát (MI) programozhatsz vagy képezhetsz ki, hogy felismerje a halakat és a szemetet. Takarítsuk ki az óceánt!',
         'instructions' => [
             'Az utasításokat az útmutatóban szereplő videók tartalmazzák',
-            'illetve az egyes szintek tetején is olvashatók'
+            'illetve az egyes szintek tetején is olvashatók',
         ],
         'materials' => [
             'Az útmutatók itt találhatók:',
-            'Ez az útmutató több mint 25 nyelven érhető el'
-        ]
+            'Ez az útmutató több mint 25 nyelven érhető el',
+        ],
     ],
     'build-calliope' => [
         'title' => 'Építsd meg a saját Calliope mini fitness tréneredet',
@@ -465,198 +438,192 @@ return [
             'A szekvenciák, animációk, ismétlések és változók játékos megismerése.',
             'Szerkezeti diagram tervezése.',
             'Kódok tesztelése és hibakeresés.',
-            'Egy program optimalizálása próba és hiba útján, a használhatóság ellenőrzése és beállítása.'
+            'Egy program optimalizálása próba és hiba útján, a használhatóság ellenőrzése és beállítása.',
         ],
         'duration' => '20-30 perc',
-        'description' =>
-            'A résztvevők egy digitálisan vezérelt prototípust fejlesztenek, amely egy színes, világító LED-et használ egy előre meghatározott 10 egységből álló fitneszgyakorlat reprodukálására.',
+        'description' => 'A résztvevők egy digitálisan vezérelt prototípust fejlesztenek, amely egy színes, világító LED-et használ egy előre meghatározott 10 egységből álló fitneszgyakorlat reprodukálására.',
         'materials' => [
             'Calliope mini StarterBox (amennyiben rendelkezésre áll)',
-            'Laptop vagy tablet, amellyel felkeresheted a <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> vagy a <a href="https://calliope.cc">https://calliope.cc</a> oldalakat, és a YouTube a tevékenységhez szükséges forrásokhoz való hozzáféréshez.'
+            'Laptop vagy tablet, amellyel felkeresheted a <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> vagy a <a href="https://calliope.cc">https://calliope.cc</a> oldalakat, és a YouTube a tevékenységhez szükséges forrásokhoz való hozzáféréshez.',
         ],
         'instructions' => [
             'A kezdéshez készíts tervet, és határozd meg a gyakorlategységek sorrendjét. A terv segítségével programozd be a Calliope mini RGB LED-jét úgy, hogy az előre meghatározott ütemben az 5 szín valamelyikét jelenítse meg. Ezután hozz létre egy változót a tempóhoz, és programozd be az ismétléseket ciklusok segítségével.',
-            "Ne feledd, ha a programot neked tetsző, egyéni módon valósítottad meg, oszd meg velünk a info@calliope.cc címen-kíváncsian várjuk, hogy te mit hozol ki belőle! Apropó, a beküldött pályaművek között 30 Calliope minit sorsolunk ki!",
-            "Oszd meg a projekted QR-kódját az Instagramon, add hozzá a #EUCodeWeekChallenge hashtaget, és említsd meg a @CodeWeekEU-t.",
+            'Ne feledd, ha a programot neked tetsző, egyéni módon valósítottad meg, oszd meg velünk a info@calliope.cc címen-kíváncsian várjuk, hogy te mit hozol ki belőle! Apropó, a beküldött pályaművek között 30 Calliope minit sorsolunk ki!',
+            'Oszd meg a projekted QR-kódját az Instagramon, add hozzá a #EUCodeWeekChallenge hashtaget, és említsd meg a @CodeWeekEU-t.',
         ],
         'example' => [
             'Amíg a számítógép előtt ülsz: sportolhatsz is.',
             'Készíts fitnesz prototípust a Calliope mini segítségével, amely a szimulátorban is tesztelhető. A kihívás a MakeCode szerkesztőprogramban történik egy egyszerű kódsorozat programozásával (lásd a képernyőképet).',
-            'Válassz ki 5 különböző színt, és rendelj mindegyikhez egy-egy fitneszgyakorlatot, például guggolást vagy ugrókötelet.  Ezután a színeket tetszőleges sorrendben felsorakoztathatod és a gyakorlatokat lejátszhatod.'
+            'Válassz ki 5 különböző színt, és rendelj mindegyikhez egy-egy fitneszgyakorlatot, például guggolást vagy ugrókötelet.  Ezután a színeket tetszőleges sorrendben felsorakoztathatod és a gyakorlatokat lejátszhatod.',
         ],
 
-    ]
-    ,
+    ],
     'common' => [
-        'share' => "Ossza meg projektje linkjét vagy QR-kódját az Instagramon vagy a Facebookon, adja hozzá a #EUCodeWeekChallenge hashtaget, és említse meg a @CodeWeekEU-t.",
+        'share' => 'Ossza meg projektje linkjét vagy QR-kódját az Instagramon vagy a Facebookon, adja hozzá a #EUCodeWeekChallenge hashtaget, és említse meg a @CodeWeekEU-t.',
         'audience' => [
-            "Tanárok és oktatók",
-            "Általános iskolai tanulók (6-12 éves korig)",
-            "Alsóbb évfolyamos középiskolás tanulók (12-16 éves korig)",
-            "Felsőbb évfolyamos középiskolás tanulók (16-18 éves korig)",
+            'Tanárok és oktatók',
+            'Általános iskolai tanulók (6-12 éves korig)',
+            'Alsóbb évfolyamos középiskolás tanulók (12-16 éves korig)',
+            'Felsőbb évfolyamos középiskolás tanulók (16-18 éves korig)',
         ],
     ],
     'code-a-dice' => [
         'title' => 'Programozzon egy kockadobást',
         'author' => 'Fabrizia Agnello',
         'purposes' => [
-            "Interaktív rejtvények programozása",
-            "Véletlenszerűen mozgó eszköz szimulációjának programozása, amelyet akkor kell használni, ha a valós eszköz nem elérhető"
+            'Interaktív rejtvények programozása',
+            'Véletlenszerűen mozgó eszköz szimulációjának programozása, amelyet akkor kell használni, ha a valós eszköz nem elérhető',
         ],
-        'description' =>
-            "Ebben a kihívásban egy kockát programoz, amellyel véletlenszerűen dobhat parancsra. Bármilyen olyan típusú tetszőleges lapszámú kockát választhat , mint amiket szerepjátékokban is szoktak, és adhat hozzá hangot is.",
+        'description' => 'Ebben a kihívásban egy kockát programoz, amellyel véletlenszerűen dobhat parancsra. Bármilyen olyan típusú tetszőleges lapszámú kockát választhat , mint amiket szerepjátékokban is szoktak, és adhat hozzá hangot is.',
         'instructions' => [
-            "Lépjen be a Scratch felületére",
-            "Válasszon egy hátteret",
-            "Hozzon létre egy saját, kockához tartozó manót, vagy keressen egyet az interneten, és töltse fel a programjába",
-            "Készítsen annyi viseletet a manó számára, ahány lappal a kiválasztott kocka rendelkezik, és lap más-más számokat mutat",
-            "Válassza ki, hogyan kívánja eldobni a kockát (billentyűnyomásra, a manóra kattintással stb.), és írja meg a kódot",
-            "Programozza a manót úgy, hogy a dobás végén véletlenszerűen váltson viseletet",
-            "Adjon hozzá hangeffektet",
+            'Lépjen be a Scratch felületére',
+            'Válasszon egy hátteret',
+            'Hozzon létre egy saját, kockához tartozó manót, vagy keressen egyet az interneten, és töltse fel a programjába',
+            'Készítsen annyi viseletet a manó számára, ahány lappal a kiválasztott kocka rendelkezik, és lap más-más számokat mutat',
+            'Válassza ki, hogyan kívánja eldobni a kockát (billentyűnyomásra, a manóra kattintással stb.), és írja meg a kódot',
+            'Programozza a manót úgy, hogy a dobás végén véletlenszerűen váltson viseletet',
+            'Adjon hozzá hangeffektet',
         ],
-        'example' => "Dobjon 20-ast a kockával"
+        'example' => 'Dobjon 20-ast a kockával',
     ],
     'personal-trainer' => [
         'title' => 'Személyi edző micro:bittel',
         'author' => '',
         'purposes' => [
-            "A micro:bit programozása a hangjelző és a LED-panel használatához",
-            "Személyes eszköz létrehozása a fizikai aktivitásának szabályozására",
-            "A micro:bit programozása az egészség sportolással való javítása érdekében",
+            'A micro:bit programozása a hangjelző és a LED-panel használatához',
+            'Személyes eszköz létrehozása a fizikai aktivitásának szabályozására',
+            'A micro:bit programozása az egészség sportolással való javítása érdekében',
         ],
-        'description' =>
-            "Ez a kihívás lehetővé teszi a micro:bit programozását a fizikai gyakorlatok pihenőidővel kombinált ismétlési idejének szabályozásához. Követni fogja fizikai aktivitását az iskolában, otthon vagy a parkban."
-        ,
+        'description' => 'Ez a kihívás lehetővé teszi a micro:bit programozását a fizikai gyakorlatok pihenőidővel kombinált ismétlési idejének szabályozásához. Követni fogja fizikai aktivitását az iskolában, otthon vagy a parkban.',
         'instructions' => [
             'Ha A+B igaz, akkor hozzon létre egy 3 másodperces visszaszámlálót, amely másodpercenként hangot ad ki, és megjeleníti a "GO" szót!',
-            "Az első gyakorlat során egy villogó 2x2 négyzetet jelenítsen meg 20 másodpercig. Ezután játsszon le egy hangot, és tartsa rögzítve a négyzetet. A hátralévő idő alatt 10 másodpercig egy másik villogó képnek kell megjelennie. Ha befejezte, játsszon le egy hangot.",
-            "Ezután ismételje meg ugyanazt a műveletet, de jelenítsen meg egy 3x3-as panelt az edzésidőhöz. Ismételje ezeket a műveleteket, amíg az 5x5-ös panel meg nem jelenik.",
+            'Az első gyakorlat során egy villogó 2x2 négyzetet jelenítsen meg 20 másodpercig. Ezután játsszon le egy hangot, és tartsa rögzítve a négyzetet. A hátralévő idő alatt 10 másodpercig egy másik villogó képnek kell megjelennie. Ha befejezte, játsszon le egy hangot.',
+            'Ezután ismételje meg ugyanazt a műveletet, de jelenítsen meg egy 3x3-as panelt az edzésidőhöz. Ismételje ezeket a műveleteket, amíg az 5x5-ös panel meg nem jelenik.',
         ],
-        'duration' => "30-40 perc"
+        'duration' => '30-40 perc',
     ],
     'create-a-spiral' => [
-        'title' => "Hozzon létre egy spirált",
+        'title' => 'Hozzon létre egy spirált',
         'author' => 'Lydie El-Halougi',
         'purposes' => [
-            "A ciklus és a változók tanulása és gyakorlása.",
-            "A kreativitás fejlesztése programozás során."],
-        'description' => "Ebben a kihívásban egy projektet fog írni a Scratch segítségével ahhoz, hogy létrehozzon egy spirált a tollblokkok, valamint egy hurok egy változó segítségével.",
+            'A ciklus és a változók tanulása és gyakorlása.',
+            'A kreativitás fejlesztése programozás során.'],
+        'description' => 'Ebben a kihívásban egy projektet fog írni a Scratch segítségével ahhoz, hogy létrehozzon egy spirált a tollblokkok, valamint egy hurok egy változó segítségével.',
 
         'instructions' => [
-            "A tollblokkok",
-            "Hozzon létre egy új projektet és nevezze el Spirálnak.",
+            'A tollblokkok',
+            'Hozzon létre egy új projektet és nevezze el Spirálnak.',
             'Kattintson az ablak bal alsó részén található "Bővítmény hozzáadása" lila ikonra',
             'Válassza ki a "pen" (toll) lehetőséget: a tollblokkok már elérhetőek projektje számára!',
             'A projekt elindításához húzza át a "when green flag clicked"(amikor a zöld zászlóra kattintott) blokkot:',
             'Egy üres oldallal kell kezdenie: a tollblokkokhoz adja hozzá az "mindent töröl" blokkot:',
-            "A rajzolást a felület közepén kezdje, ami azt jelenti, hogy a manónak a felület közepére kell mennie (0,0):",
-            "A manó mozoghat rajzolás nélkül, vagy mozoghat és rajzolhat:",
-            "Ha rajzoltatni szeretné, használhatja a lefelé mutató tollblokkot",
-            "Ha ezt nem szeretné, használhatja a felfelé mutató tollblokkot",
+            'A rajzolást a felület közepén kezdje, ami azt jelenti, hogy a manónak a felület közepére kell mennie (0,0):',
+            'A manó mozoghat rajzolás nélkül, vagy mozoghat és rajzolhat:',
+            'Ha rajzoltatni szeretné, használhatja a lefelé mutató tollblokkot',
+            'Ha ezt nem szeretné, használhatja a felfelé mutató tollblokkot',
             'Most rajzolhat!  Adja hozzá a "pen down"(lefelé mutató toll) blokkot:',
-            "A hexagon",
-            "Adja hozzá az alábbi blokkokat a projekthez:",
-            "Most megvan a hatszög egyhatod része. Ezt a sorozatot 6-szor kell megismételnie:",
-            "A spirál",
-            "Egy spirál létrehozásához hozzá kell adni 2-t a következő oldalak hosszához.",
-            "Ehhez <strong> változót kell használnia.</strong>",
-            "A változóblokkban kattintson a Változó létrehozása lehetőségre",
-            "Nevezte el a hosszt, majd kattintson az OK gombra:",
-            "A spirál mivel egyre nagyobb lesz, kicsivel kell kezdenie: állítsa az első hosszt 10-re, és illessze be ezt a blokkot a ciklus elé.",
+            'A hexagon',
+            'Adja hozzá az alábbi blokkokat a projekthez:',
+            'Most megvan a hatszög egyhatod része. Ezt a sorozatot 6-szor kell megismételnie:',
+            'A spirál',
+            'Egy spirál létrehozásához hozzá kell adni 2-t a következő oldalak hosszához.',
+            'Ehhez <strong> változót kell használnia.</strong>',
+            'A változóblokkban kattintson a Változó létrehozása lehetőségre',
+            'Nevezte el a hosszt, majd kattintson az OK gombra:',
+            'A spirál mivel egyre nagyobb lesz, kicsivel kell kezdenie: állítsa az első hosszt 10-re, és illessze be ezt a blokkot a ciklus elé.',
             'Szúrja be a "length"(hosszúság) változót a "move … steps" (lépjen ... lépést) blokkba',
-            "A spirál növekedéséhez a hosszt is növelni kell minden ciklusban: adja hozzá az alábbi blokkot a ciklus végéhez:",
-            "Itt található jelenlegi projektje:",
-            "Egy gyönyörű spirál ",
+            'A spirál növekedéséhez a hosszt is növelni kell minden ciklusban: adja hozzá az alábbi blokkot a ciklus végéhez:',
+            'Itt található jelenlegi projektje:',
+            'Egy gyönyörű spirál ',
             'Rajzolt egy spirált! A folytatáshoz cserélje ki a "repeat 6" (ismételje meg hatszor) ciklust a "forever" (végtelen ismétlődés) ciklusra:',
-            "Színes spirál rajzolásához adja hozzá a következő blokkot a ciklushoz:",
+            'Színes spirál rajzolásához adja hozzá a következő blokkot a ciklushoz:',
             'Amikor újrakezdi, a manó egy nem kívánt vonalat húz. Ennek megelőzése érdekében adjon hozzá egy "pen up" (felfelé mutató toll) blokkot a projekt elejéhez.',
-            "Itt a végső projektje:",
-            "Gratulálunk! Egy szép spirált rajzolt!",
+            'Itt a végső projektje:',
+            'Gratulálunk! Egy szép spirált rajzolt!',
         ],
 
     ],
     'play-against-ai' => [
-        'title' => "Készítsen és játszon az MI ellen-Kő, papír, olló játékot",
+        'title' => 'Készítsen és játszon az MI ellen-Kő, papír, olló játékot',
         'author' => 'Kristina Slišurić',
         'purposes' => [
-            "hogy megértse a gépi tanulási ciklus működését.",
-            "hogy tanulási modellt tudjon felépíteni tanítható gép segítségével",
-            "hogy megismerkedjen a Pictoblox eszközzel, és importálja a létrehozott modellt a projektbe",
-            "hogy be tudja állítani a felületet és a karaktereket, változók létrehozása és inicializálása mellett Pictobloxban",
-            "hogy inicializálja játékot, hogy azonosítsa a játékosok mozgását, hogy véletlenszerű mesterséges intelligencia mozgásokat tudjon programozni",
-            "hogy olyan játékot tudjon létrehozni és tesztelni, amelyben egy mesterséges intelligencia az ellenfél ha kő, papír, ollót játszik."
+            'hogy megértse a gépi tanulási ciklus működését.',
+            'hogy tanulási modellt tudjon felépíteni tanítható gép segítségével',
+            'hogy megismerkedjen a Pictoblox eszközzel, és importálja a létrehozott modellt a projektbe',
+            'hogy be tudja állítani a felületet és a karaktereket, változók létrehozása és inicializálása mellett Pictobloxban',
+            'hogy inicializálja játékot, hogy azonosítsa a játékosok mozgását, hogy véletlenszerű mesterséges intelligencia mozgásokat tudjon programozni',
+            'hogy olyan játékot tudjon létrehozni és tesztelni, amelyben egy mesterséges intelligencia az ellenfél ha kő, papír, ollót játszik.',
 
         ],
-        'description' => "Egy modellt fogunk létrehozni egy tanítható gép segítségével három osztályt alkotó képek segítségével: Kő, papír, olló. A modell betöltődik a Pictobloxba, és játék létrehozására használjuk, amelyet egy MI ellen játszhatunk.",
-        'duration' => "90 perc",
+        'description' => 'Egy modellt fogunk létrehozni egy tanítható gép segítségével három osztályt alkotó képek segítségével: Kő, papír, olló. A modell betöltődik a Pictobloxba, és játék létrehozására használjuk, amelyet egy MI ellen játszhatunk.',
+        'duration' => '90 perc',
         'instructions' => [
-            "Hozzon létre egy új kép projektet a tanítható gépen 3 különböző nevű osztállyal: kő, papír és olló. Minden osztályhoz rögzítsen legalább 400 képet kamerával. Győződjön meg arról, hogy világos a háttér. Tanítsa be és exportálja a modellt. Modell feltöltése és link másolása.",
-            "Hozzon létre ingyenes fiókot a Pictoblox profilon. Adjon hozzá egy gépi tanulási bővítményt, és töltsön fel egy modellt. Állítsa be a felületet, a változókat és a manókat. Inicializálja a játékot, azonosítsa a játékos lépéseit és az MI lépéseit, valamint azt, hogy ki nyeri a kört.",
-            "Tanítsa be az adatokat a játékhoz.",
-            "A modell tesztelése.",
-            "Exportálja a modellt.",
-            "Gépi tanulási bővítmény hozzáadása és a modell betöltése.",
-            "Állítsa össze a felületet, a változókat és a manókat.",
-            "Inicializálja a játékot",
-            "A játékos lépéseinek azonosítása.",
-            "Véletlenszerű MI mozgások beállítása",
-            "Véletlenszerű MI mozgások sugárzása.",
-            "Hozzon létre három blokkot. Ki nyeri meg a kört? ",
-            "Ellenőrizze, hogy a játékos nyeri-e a kört.",
-            "Ellenőrizze, hogy az MI nyeri-e a kört.",
-            "Ellenőrizze, hogy döntetlen-e a kör.",
-            "Programblokkok.",
-            "Kő, papír, olló manó",
-        ]
+            'Hozzon létre egy új kép projektet a tanítható gépen 3 különböző nevű osztállyal: kő, papír és olló. Minden osztályhoz rögzítsen legalább 400 képet kamerával. Győződjön meg arról, hogy világos a háttér. Tanítsa be és exportálja a modellt. Modell feltöltése és link másolása.',
+            'Hozzon létre ingyenes fiókot a Pictoblox profilon. Adjon hozzá egy gépi tanulási bővítményt, és töltsön fel egy modellt. Állítsa be a felületet, a változókat és a manókat. Inicializálja a játékot, azonosítsa a játékos lépéseit és az MI lépéseit, valamint azt, hogy ki nyeri a kört.',
+            'Tanítsa be az adatokat a játékhoz.',
+            'A modell tesztelése.',
+            'Exportálja a modellt.',
+            'Gépi tanulási bővítmény hozzáadása és a modell betöltése.',
+            'Állítsa össze a felületet, a változókat és a manókat.',
+            'Inicializálja a játékot',
+            'A játékos lépéseinek azonosítása.',
+            'Véletlenszerű MI mozgások beállítása',
+            'Véletlenszerű MI mozgások sugárzása.',
+            'Hozzon létre három blokkot. Ki nyeri meg a kört? ',
+            'Ellenőrizze, hogy a játékos nyeri-e a kört.',
+            'Ellenőrizze, hogy az MI nyeri-e a kört.',
+            'Ellenőrizze, hogy döntetlen-e a kör.',
+            'Programblokkok.',
+            'Kő, papír, olló manó',
+        ],
     ],
     'air-drawing-with-AI' => [
-        'title' => "Levegőbe rarjzolás MI segítségével",
+        'title' => 'Levegőbe rarjzolás MI segítségével',
         'author' => 'Kristina Slišurić',
         'purposes' => [
-            "hogy emberi testfelismerési bővítmény segítségével olyan programot tudjon írni, amely felismeri az ujjak mozgását a kamera előtt . ",
-            "hogy egyszerű blokkokkal tudjon programozni néhány kódsorban . ",
-            "hogy lásson példát látni az MI használatára"
+            'hogy emberi testfelismerési bővítmény segítségével olyan programot tudjon írni, amely felismeri az ujjak mozgását a kamera előtt . ',
+            'hogy egyszerű blokkokkal tudjon programozni néhány kódsorban . ',
+            'hogy lásson példát látni az MI használatára',
         ],
-        'description' => "Olyan program létrehozása, amely lehetővé teszi a felhasználó számára, hogy kezével(mutatóujjával) a levegőben rajzoljon a kamera előtt, és minden, amit rajzol, automatikusan megjelenik a Pictoblox felületén . ",
+        'description' => 'Olyan program létrehozása, amely lehetővé teszi a felhasználó számára, hogy kezével(mutatóujjával) a levegőben rajzoljon a kamera előtt, és minden, amit rajzol, automatikusan megjelenik a Pictoblox felületén . ',
         'instructions' => [
-            "Hozzon létre egy ingyenes fiókot a Pictoblox profilon" .
-            "kövesse az utasításokat hogy:",
-            "Emberi testfelismerés és toll bővítmények hozzáadása;",
-            "állítsa be a felületet, és adjon hozzá ceruza manót, majd további manókat: Lefelé mutató toll, Felfelé mutató toll, Összes törlése;  ",
-            "írjon kódot a ceruza manó számára, hogy kövesse az ujját",
-            "írjon kódot a gombokhoz: Felfelé mutató toll, lefelé mutató toll, törlés és a tollnak is",
-            "Most már készen áll arra, hogy saját rajzokat készítsen, és különböző színű és méretű tollal játsszon . ",
+            'Hozzon létre egy ingyenes fiókot a Pictoblox profilon'.
+            'kövesse az utasításokat hogy:',
+            'Emberi testfelismerés és toll bővítmények hozzáadása;',
+            'állítsa be a felületet, és adjon hozzá ceruza manót, majd további manókat: Lefelé mutató toll, Felfelé mutató toll, Összes törlése;  ',
+            'írjon kódot a ceruza manó számára, hogy kövesse az ujját',
+            'írjon kódot a gombokhoz: Felfelé mutató toll, lefelé mutató toll, törlés és a tollnak is',
+            'Most már készen áll arra, hogy saját rajzokat készítsen, és különböző színű és méretű tollal játsszon . ',
         ],
         'materials' => [
-            "Laptop vagy számítógép kamerával felszereleve",
-            "A PictoBlox legújabb verziója letöltve(ajánlott) vagy online Pictoblox(ingyenes)",
-            "Pictoblox-fiók(ingyenes)",
-            "Megfelelő internetelérés"
-        ]
+            'Laptop vagy számítógép kamerával felszereleve',
+            'A PictoBlox legújabb verziója letöltve(ajánlott) vagy online Pictoblox(ingyenes)',
+            'Pictoblox-fiók(ingyenes)',
+            'Megfelelő internetelérés',
+        ],
     ],
     'emobot-kliki' => [
-        'title' => "Emobot Kliki",
+        'title' => 'Emobot Kliki',
         'author' => 'Margareta Zajkova',
         'purposes' => [
-            "A gépi tanulás és a szövegfelismerés alapvető fogalmainak elsajátítása . ",
-            "Az érzelmek kommunikációban betöltött szerepének megértése . ",
-            "Kód használata párbeszédek létrehozásához chatbot és egy felhasználó között . ",
-            "Hogy megértsük, hogyan képesek a számítógépek felismerni az érzelmi hangszíneket szövegelemzés révén, és ennek megfelelően reagálni . "
+            'A gépi tanulás és a szövegfelismerés alapvető fogalmainak elsajátítása . ',
+            'Az érzelmek kommunikációban betöltött szerepének megértése . ',
+            'Kód használata párbeszédek létrehozásához chatbot és egy felhasználó között . ',
+            'Hogy megértsük, hogyan képesek a számítógépek felismerni az érzelmi hangszíneket szövegelemzés révén, és ennek megfelelően reagálni . ',
         ],
         'description' => [
-            "Hozzon létre egy érzelmi botot a Scratch programon belül, amely boldog arcok megjelenítésére képes pozitív üzeneteknél(ha kedveseket dolgot mond neki); dühös arcot vág negatív üzeneteknél(ha rossz dolgot mond neki), illetve zavart arcot, ha nem ad meg üzenet . ",
-            "A mi Emobot Klikink felismeri a bókokat és a sértéseket, így feltérképezhetjük, hogyan lehet a számítógépeket megtanítani az érzelmi hangszínek felismerésére . "
+            'Hozzon létre egy érzelmi botot a Scratch programon belül, amely boldog arcok megjelenítésére képes pozitív üzeneteknél(ha kedveseket dolgot mond neki); dühös arcot vág negatív üzeneteknél(ha rossz dolgot mond neki), illetve zavart arcot, ha nem ad meg üzenet . ',
+            'A mi Emobot Klikink felismeri a bókokat és a sértéseket, így feltérképezhetjük, hogyan lehet a számítógépeket megtanítani az érzelmi hangszínek felismerésére . ',
         ],
         'instructions' => [
-            "Kezdésként programozzon be egy szabálylistát arra vonatkozóan, hogy mi a kedves vagy a rendes dolog, és mi a rossz vagy aljas dolog . ",
-            "Lépjen be https://machinelearningforkids.co.uk/ or create a new account. oldalon",
+            'Kezdésként programozzon be egy szabálylistát arra vonatkozóan, hogy mi a kedves vagy a rendes dolog, és mi a rossz vagy aljas dolog . ',
+            'Lépjen be https://machinelearningforkids.co.uk/ or create a new account. oldalon',
             'Készítsen új gépi tanulási modellt 3 új címkével, az elsőt hívja "szép"-nek, a másodikat "rossz"-nak és lehetősége szerint, ha szeretné felismerni a nevét, hozzon létre egy harmadik címkét "név" elnevezéssel.',
-            "Tanítsa be az új gépi tanulási modellt, tesztelje, és használja az Emobot Scratch programon belüli elkészítéséhez.",
-            "Indítsa el a Scratch 3 szerkesztőt, törölje a macska manót, illesszen be 3 új manót a Microsoft Bing Image Creator segítségével (boldog, dühös és bizonytalan számítógépes rajzfilmfigura), vagy hozzon létre egy új manót a Paint ikonra kattintva, majd rajzolja meg as viselet három példányát a boldog, dühös és bizonytalan arcoknak.",
-            'Kattintson a "Kód" fülre, és írja be a következő szkriptet.']
-        ,
+            'Tanítsa be az új gépi tanulási modellt, tesztelje, és használja az Emobot Scratch programon belüli elkészítéséhez.',
+            'Indítsa el a Scratch 3 szerkesztőt, törölje a macska manót, illesszen be 3 új manót a Microsoft Bing Image Creator segítségével (boldog, dühös és bizonytalan számítógépes rajzfilmfigura), vagy hozzon létre egy új manót a Paint ikonra kattintva, majd rajzolja meg as viselet három példányát a boldog, dühös és bizonytalan arcoknak.',
+            'Kattintson a "Kód" fülre, és írja be a következő szkriptet.'],
         'example' => [
-            "Ossza meg Emobot Klikijét barátaival, és tudjon meg többet az MI-ről és az érzelmekről!",
+            'Ossza meg Emobot Klikijét barátaival, és tudjon meg többet az MI-ről és az érzelmekről!',
             'Számítógépes rajzfilmfigura helyett kipróbálhat valami mást, például egy állatot. "A kedvesség és aljasság helyett megtaníthatja a karaktert más típusú üzenetek felismerésére .',
         ],
 
@@ -665,204 +632,201 @@ return [
         'title' => 'Hozzon létre varázslatot mesterséges intelligencia kézmozdulatokkal',
         'author' => 'Georgia Lascaris',
         'purposes' => [
-            "A diákok kódolási készségeinek fejlesztése, lehetővé teszi számukra az alapvető parancsok használatát.",
-            "Az algoritmikus gondolkodási készségek fejlesztése az összetett feladatok kezelhető lépésekre bontásával.",
-            "A kreatív problémamegoldás ösztönzése a kézmozdulatok egyedi alkalmazásainak megtalálása során a rajzoláshoz és az íráshoz.",
-            "Az MI fogalmainak megértésének elősegítése, különös tekintettel arra, hogy az MI hogyan teszi lehetővé a számítógépek számára a kézmozdulatok felismerését és értelmezését.",
-            "Felhívni a figyelmet a technológia jelentőségére a fogyatékkal élők számára.",
-            "Az együttműködésen alapuló problémamegoldás és a csapatmunka előmozdítása a diákok körében, miközben együtt dolgoznak kézmozdulat-programjaik fejlesztésén.",
-            "A kódolási és számítási gondolkodási készségek összekapcsolása a valós alkalmazásokkal, ezzel hangsúlyozva a technológia jelentőségteljes hatását az emberek életére, és igazodva a Fenntartható Fejlődési Célokhoz (SDG)."
+            'A diákok kódolási készségeinek fejlesztése, lehetővé teszi számukra az alapvető parancsok használatát.',
+            'Az algoritmikus gondolkodási készségek fejlesztése az összetett feladatok kezelhető lépésekre bontásával.',
+            'A kreatív problémamegoldás ösztönzése a kézmozdulatok egyedi alkalmazásainak megtalálása során a rajzoláshoz és az íráshoz.',
+            'Az MI fogalmainak megértésének elősegítése, különös tekintettel arra, hogy az MI hogyan teszi lehetővé a számítógépek számára a kézmozdulatok felismerését és értelmezését.',
+            'Felhívni a figyelmet a technológia jelentőségére a fogyatékkal élők számára.',
+            'Az együttműködésen alapuló problémamegoldás és a csapatmunka előmozdítása a diákok körében, miközben együtt dolgoznak kézmozdulat-programjaik fejlesztésén.',
+            'A kódolási és számítási gondolkodási készségek összekapcsolása a valós alkalmazásokkal, ezzel hangsúlyozva a technológia jelentőségteljes hatását az emberek életére, és igazodva a Fenntartható Fejlődési Célokhoz (SDG).',
         ],
         'duration' => [
-            "90 perc a 10–12 éves diákoknak",
-            "45 perc a 12–15 éves diákoknak"
+            '90 perc a 10–12 éves diákoknak',
+            '45 perc a 12–15 éves diákoknak',
         ],
         'description' => 'Hozzon létre egy Scratch blokkalapú programot az MI "Human Body" bővítmény segítségével kreatív és magával ragadó módon, hogy tudjon a képernyőre rajzolni hagyományos egér vagy érintőképernyő használata nélkül.',
         'instructions' => [
-            "Csatlakozzon a https://ai.thestempedia.com webhelyhez, és hozzon létre tanári és tanulói fiókokat.",
+            'Csatlakozzon a https://ai.thestempedia.com webhelyhez, és hozzon létre tanári és tanulói fiókokat.',
             'Importálja a "Human Body Detection", "Pen", "Text to Speech" bővítményeket.',
             'Adja hozzá a ceruza manót a könyvtárból, és hozzon létre 7 manót ("írás", "tiszta", "fekete", "piros", "kék", "zöld", "rózsaszín").',
             'Írjon parancsokat, hogy ellenőrizze, mi történik, ha a "ceruza" manó megérint egy másik manót.',
-            "Írjon parancsokat, hogy a kamera felismerje a kéztartást, és a ceruzát a mutatóujja x és y koordinátáira mozgassa.",
-            "Váltson külsőt a dobás végén.",
-            "Adjon hozzá hangeffektet.",
+            'Írjon parancsokat, hogy a kamera felismerje a kéztartást, és a ceruzát a mutatóujja x és y koordinátáira mozgassa.',
+            'Váltson külsőt a dobás végén.',
+            'Adjon hozzá hangeffektet.',
         ],
         'materials' => [
-            "Programozási platform https://ai.thestempedia.com (ingyenes)",
-            "tanári fiók (ingyenes)",
-            "diák fiók (ingyenes)",
-            "Kamerával felszerelt számítógépek",
-            "Internetelérés"
-        ]
+            'Programozási platform https://ai.thestempedia.com (ingyenes)',
+            'tanári fiók (ingyenes)',
+            'diák fiók (ingyenes)',
+            'Kamerával felszerelt számítógépek',
+            'Internetelérés',
+        ],
     ],
     'circle-of-dots' => [
         'title' => 'Pontokból felépített kör',
         'author' => 'Marin Popov',
         'purposes' => [
-            "Kód írása pontvonal rajzolásához.",
-            "Kód írása szaggatott vonal rajzolásához.",
-            "Kód írásához kör rajzolásához.",
-            "Írjon kódot pontokból (kötőjelekből) álló kör rajzolásához",
+            'Kód írása pontvonal rajzolásához.',
+            'Kód írása szaggatott vonal rajzolásához.',
+            'Kód írásához kör rajzolásához.',
+            'Írjon kódot pontokból (kötőjelekből) álló kör rajzolásához',
         ],
-        'description' => "Kör rajzolása pontokból vagy kötőjelekből.",
-        'duration' => "40 perc",
+        'description' => 'Kör rajzolása pontokból vagy kötőjelekből.',
+        'duration' => '40 perc',
         'instructions' => [
-            "Blokk építése pontokból.",
-            "Blokk építése vonásokból.",
-            "Kör kialakítása pontokból.",
-            "Kör kialakítása vonásokból.",
-        ]
+            'Blokk építése pontokból.',
+            'Blokk építése vonásokból.',
+            'Kör kialakítása pontokból.',
+            'Kör kialakítása vonásokból.',
+        ],
     ],
     'coding-escape-room' => [
-        'title' => "Hozzon létre kódoló szabadulószobát",
-        'author' => " Stefania Altieri és Elisa Baraghini",
+        'title' => 'Hozzon létre kódoló szabadulószobát',
+        'author' => ' Stefania Altieri és Elisa Baraghini',
         'purposes' => [
-            "Kódolási fogalmak tanítása/tanulása és az azokról való gondolkodás.",
-            "Egyszerű kódolóeszközök használata.",
-            "A számítástechnikai gondolkodásmód és problémamegoldás fejlesztése."
+            'Kódolási fogalmak tanítása/tanulása és az azokról való gondolkodás.',
+            'Egyszerű kódolóeszközök használata.',
+            'A számítástechnikai gondolkodásmód és problémamegoldás fejlesztése.',
         ], 'description' => [
-            "Hozzon létre ehhez hasonló, szabadulós kódolási élményt:",
-            "A kódoláson alapuló történetmesélés létrehozásában segítségére lehetnek a Google űrlapok, a Genial.ly, a Google prezentációk vagy bármilyen eszköz is ;)."
+            'Hozzon létre ehhez hasonló, szabadulós kódolási élményt:',
+            'A kódoláson alapuló történetmesélés létrehozásában segítségére lehetnek a Google űrlapok, a Genial.ly, a Google prezentációk vagy bármilyen eszköz is ;).',
 
         ],
-        'duration' => "90 perc",
-        'instructions' =>
-            "A tanulókat kisebb csoportokra oszthatja; azok játszhatnak, majd hozzon létre újabb kihívást a sablonnal: "
-        ,
+        'duration' => '90 perc',
+        'instructions' => 'A tanulókat kisebb csoportokra oszthatja; azok játszhatnak, majd hozzon létre újabb kihívást a sablonnal: ',
 
         'materials' => [
-            "Bármilyen eszköz használható (a dokumentumok, prezentációk és lapok létrehozására, illetve megosztására alkalmas Google és Microsoft platformok). Bármilyen kódolási konstrukció, eszköz vagy karakter, amely az IKT-val és kódolással összefügg."
+            'Bármilyen eszköz használható (a dokumentumok, prezentációk és lapok létrehozására, illetve megosztására alkalmas Google és Microsoft platformok). Bármilyen kódolási konstrukció, eszköz vagy karakter, amely az IKT-val és kódolással összefügg.',
         ],
         'example' => [
-            "Egyes olyan karakterek, amelyeknek rendkívül fontos szerepük volt az IKT történetében, valamint a kódolás és programozás alapfogalmaiban, játékosan mutathatók be. Ez a legjobb mód a tanulásra és az aktív részvételre. Ezt a játékot lehet csapatban vagy egyénileg is játszani, például kihívás vagy verseny formájában. A tanulók ezután valami hasonlót alkothatnak, és olyan kompetenciákban fejlődhetnek, mint a kreativitás és a kódolási készség.",
-            "Ez egy nagyon hasznos, újra és újra felhasználható, illetve könnyen újrateremthető eszköz. A Google űrlapok jelentik az egyik lehetséges eszközt. Google diák, a Genial.ly, az Emaze vagy bármely más eszköz segíthet választási lehetőségekkel bíró történeteket és saját kalandokat létrehozni.",
-            "A szabaduló kihívás munkamenetekre oszlik. Ha úgy gondolja, mehet tovább. A tanulóknak kell elkészíteniük a kódolási rejtvényeket.",
+            'Egyes olyan karakterek, amelyeknek rendkívül fontos szerepük volt az IKT történetében, valamint a kódolás és programozás alapfogalmaiban, játékosan mutathatók be. Ez a legjobb mód a tanulásra és az aktív részvételre. Ezt a játékot lehet csapatban vagy egyénileg is játszani, például kihívás vagy verseny formájában. A tanulók ezután valami hasonlót alkothatnak, és olyan kompetenciákban fejlődhetnek, mint a kreativitás és a kódolási készség.',
+            'Ez egy nagyon hasznos, újra és újra felhasználható, illetve könnyen újrateremthető eszköz. A Google űrlapok jelentik az egyik lehetséges eszközt. Google diák, a Genial.ly, az Emaze vagy bármely más eszköz segíthet választási lehetőségekkel bíró történeteket és saját kalandokat létrehozni.',
+            'A szabaduló kihívás munkamenetekre oszlik. Ha úgy gondolja, mehet tovább. A tanulóknak kell elkészíteniük a kódolási rejtvényeket.',
         ],
     ],
     'let-the-snake-run' => [
-        'title' => "Hadd fusson a kígyó",
+        'title' => 'Hadd fusson a kígyó',
         'author' => 'Ágota Klacsákné Tóth',
         'purposes' => [
-            "A kígyó mozgásának kódolása saját micro:bit szerint.",
-            "A közös animáció megfelelő elhelyezésének és időzítésének beállítása."
+            'A kígyó mozgásának kódolása saját micro:bit szerint.',
+            'A közös animáció megfelelő elhelyezésének és időzítésének beállítása.',
         ],
-        'description' => "A tanulóknak kódokat kell írniuk, hogy a kígyót egymás mellett elhelyezkedő micro:biteken keresztül navigálhassák. Ezt olyan módon kell elvégezni, hogy úgy nézzen ki, mintha a kígyó egyik micro:bitről a másikra futna.",
-        'duration' => "30 perc",
+        'description' => 'A tanulóknak kódokat kell írniuk, hogy a kígyót egymás mellett elhelyezkedő micro:biteken keresztül navigálhassák. Ezt olyan módon kell elvégezni, hogy úgy nézzen ki, mintha a kígyó egyik micro:bitről a másikra futna.',
+        'duration' => '30 perc',
         'instructions' => [
-            "Tervezzen olyan pályát, amely több egymás melletti micro:biten halad keresztül (pl. 2x2-es négyzetet alkot).",
-            "Írjon kódokat, miközben egy kígyó mozog a pályán.",
-            " Dolgozzon a saját eszközén, majd azokat állítsa össze, és futtassa a kódot.",
-            "Mérlegelje az időzítést és az elhelyezést: Ha a kígyó kilép az egyik micro:bitből, akkor a következő micro:biten jelenik meg.",
-            "További kihívások: A micro:bit v2 segítségével játsszon le zenét, amíg a kígyó el nem hagyja az eszközt.",
-            " Tervezze meg a kígyót a LED-ek fényerejének megváltoztatásával.",
-            "Próbálkozzon hosszabban vagy több kígyóval."
+            'Tervezzen olyan pályát, amely több egymás melletti micro:biten halad keresztül (pl. 2x2-es négyzetet alkot).',
+            'Írjon kódokat, miközben egy kígyó mozog a pályán.',
+            ' Dolgozzon a saját eszközén, majd azokat állítsa össze, és futtassa a kódot.',
+            'Mérlegelje az időzítést és az elhelyezést: Ha a kígyó kilép az egyik micro:bitből, akkor a következő micro:biten jelenik meg.',
+            'További kihívások: A micro:bit v2 segítségével játsszon le zenét, amíg a kígyó el nem hagyja az eszközt.',
+            ' Tervezze meg a kígyót a LED-ek fényerejének megváltoztatásával.',
+            'Próbálkozzon hosszabban vagy több kígyóval.',
         ],
         'example' => [
-            "Ez példa egy 6 pixel hosszú kígyóra, 4 mikrobittel, ami egy 2x2-es négyzetet alkot: ",
-            "A kiinduló micro:bit kódolása (a tanár is elvégezheti)",
+            'Ez példa egy 6 pixel hosszú kígyóra, 4 mikrobittel, ami egy 2x2-es négyzetet alkot: ',
+            'A kiinduló micro:bit kódolása (a tanár is elvégezheti)',
             'Minden kódot ez a micro:bit kezdeményez, amely rádiójelet küld a többi micro:bitnek az "A" gomb megnyomásakor.',
-            "A kígyó mozgásának kódolása",
-            "Minden micro:bitnek a kiinduló micro:bittel azonos rádiócsoportban kell lennie.",
-            "Minden animáció elindul a rádiójel vételekor.",
-            "Az első mikrobit animációja azonnal látható, a többiek megvárják, amíg a kígyó odaér.",
-            " A két fázis közötti idő határozza meg a kígyó sebességét.",
+            'A kígyó mozgásának kódolása',
+            'Minden micro:bitnek a kiinduló micro:bittel azonos rádiócsoportban kell lennie.',
+            'Minden animáció elindul a rádiójel vételekor.',
+            'Az első mikrobit animációja azonnal látható, a többiek megvárják, amíg a kígyó odaér.',
+            ' A két fázis közötti idő határozza meg a kígyó sebességét.',
         ], 'materials' => [
-            "micro:bitek (lehetőség szerint minden tanulónak)",
-            "laptop vagy számítógép a makecode.microbit.org szerkesztőjéhez"
-        ]
+            'micro:bitek (lehetőség szerint minden tanulónak)',
+            'laptop vagy számítógép a makecode.microbit.org szerkesztőjéhez',
+        ],
     ],
     'illustrate-a-joke' => [
-        'title' => "Mutasson be egy viccet a bitsy segítségével",
+        'title' => 'Mutasson be egy viccet a bitsy segítségével',
         'author' => 'Margot Schubert',
-        'purposes' => "Apró játék tervezése, ahol a felhasználó megtalálja a választ egy vicces kérdésre.",
-        'description' => "A tanulók játék terveznek, ahol a felhasználó megtalálja a választ egy vicces kérdésre, amikor a figura eltalál egy tárgyat a játékmezőn. A diákok a bitsy alapvető funkcióit használják a kihívás teljesítéséhez.",
+        'purposes' => 'Apró játék tervezése, ahol a felhasználó megtalálja a választ egy vicces kérdésre.',
+        'description' => 'A tanulók játék terveznek, ahol a felhasználó megtalálja a választ egy vicces kérdésre, amikor a figura eltalál egy tárgyat a játékmezőn. A diákok a bitsy alapvető funkcióit használják a kihívás teljesítéséhez.',
         'instructions' => [
-            "Találjon ki egy vicces kérdést. Lépjen a bitsy-re, és indítson új projektet. Amire szükség lesz:",
-            "egy avatár – olyan manó, amely képes körbe sétálni",
-            "Fehér macska lila alapon",
-            "Automatikusan generált leírás",
-            "objektum, amelyhez az avatárjának oda kell mennie",
-            "szoba – a programjának a háttere",
-            "két üzenet: egy kérdés és egy válasz",
-            "A kész játék letölthető html fájlként."
+            'Találjon ki egy vicces kérdést. Lépjen a bitsy-re, és indítson új projektet. Amire szükség lesz:',
+            'egy avatár – olyan manó, amely képes körbe sétálni',
+            'Fehér macska lila alapon',
+            'Automatikusan generált leírás',
+            'objektum, amelyhez az avatárjának oda kell mennie',
+            'szoba – a programjának a háttere',
+            'két üzenet: egy kérdés és egy válasz',
+            'A kész játék letölthető html fájlként.',
         ],
-        'example' => "Ezen a webhelyen példát találhat egy viccre, illetve van egy digitális táblára mutató hivatkozás:",
-        'materials' => "A bitsy egy böngészőben fut"
+        'example' => 'Ezen a webhelyen példát találhat egy viccre, illetve van egy digitális táblára mutató hivatkozás:',
+        'materials' => 'A bitsy egy böngészőben fut',
     ],
     'app-that-counts-in-several-languages' => [
-        'title' => "Alkalmazás, amely több nyelven is számol",
+        'title' => 'Alkalmazás, amely több nyelven is számol',
         'author' => 'Samuel Branco',
         'purposes' => [
-            "Egy egyszerű alkalmazás létrehozásának megtanulása.",
-            "A blokkon keresztüli programozás megtanulása.",
-            "A címkék, gombok, képek, érzékelők és adathordozók hozzáadásának megtanulása.",
-            "Annak megtanulása, hogy az elemek hogy rendszerezhetők az alkalmazás képernyőjén."
+            'Egy egyszerű alkalmazás létrehozásának megtanulása.',
+            'A blokkon keresztüli programozás megtanulása.',
+            'A címkék, gombok, képek, érzékelők és adathordozók hozzáadásának megtanulása.',
+            'Annak megtanulása, hogy az elemek hogy rendszerezhetők az alkalmazás képernyőjén.',
         ],
-        'description' => "Az alkalmazás segítségével egyetlen gombnyomással több nyelven is számolhat. Amikor a felhasználó megrázza az okostelefont, a szám nullára áll vissza. A kihívás egy másik nyelv hozzáadása.",
+        'description' => 'Az alkalmazás segítségével egyetlen gombnyomással több nyelven is számolhat. Amikor a felhasználó megrázza az okostelefont, a szám nullára áll vissza. A kihívás egy másik nyelv hozzáadása.',
         'instructions' => [
-            "A kihívás teljesítéséhez meg kell határoznia azt a másik nyelvet, amelyen szeretné, hogy az alkalmazás számoljon.",
-            "Ezután le kell töltenie az internetről (pl. a Pixabay vagy az Unsplash felületéről) az adott ország zászlaját, és azt fel kell töltenie az MIT APP Inventor platformra a jelző (flag) nevű elemen keresztül, a Picture tulajdonság alatt.",
+            'A kihívás teljesítéséhez meg kell határoznia azt a másik nyelvet, amelyen szeretné, hogy az alkalmazás számoljon.',
+            'Ezután le kell töltenie az internetről (pl. a Pixabay vagy az Unsplash felületéről) az adott ország zászlaját, és azt fel kell töltenie az MIT APP Inventor platformra a jelző (flag) nevű elemen keresztül, a Picture tulajdonság alatt.',
             'Ezután meg kell tudnia, hogyan kell leírni az ország nevét angolul, és hogyan kell azt mondani, hogy "hagyd" és "nyomj meg" az adott ország nyelvén.',
-            "Végül hozzá kell adnia a szükséges blokkokat ahhoz, hogy az alkalmazás az új nyelven működjön.",
+            'Végül hozzá kell adnia a szükséges blokkokat ahhoz, hogy az alkalmazás az új nyelven működjön.',
         ],
         'materials' => [
-            "Egy adott alkalmazás fejlesztéséhez internet-hozzáféréssel rendelkező számítógépre vagy laptopra van szüksége .",
+            'Egy adott alkalmazás fejlesztéséhez internet-hozzáféréssel rendelkező számítógépre vagy laptopra van szüksége .',
             "Hozzon létre egy fiókot az MIT APP Inventor platformon, amely a <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a> oldalon érhető el",
-            "Az MIT AI2 Companion alkalmazást is telepíteni kell az okostelefonra a kifejlesztett alkalmazás teszteléséhez."
-        ]
+            'Az MIT AI2 Companion alkalmazást is telepíteni kell az okostelefonra a kifejlesztett alkalmazás teszteléséhez.',
+        ],
     ],
     'coding-with-art-through-storytelling' => [
-        'title' => "Kódolás művészeti elemekkel, a történetmesélés eszközével",
-        'author' => "Maria Tsapara és Anthi Arkouli",
+        'title' => 'Kódolás művészeti elemekkel, a történetmesélés eszközével',
+        'author' => 'Maria Tsapara és Anthi Arkouli',
         'purposes' => [
-            "A megfigyelés, az értelmezés és a kérdésfeltevés készségeinek fejlesztése a művészetre támaszkodva.",
-            "Kreatívvá válás, valamint együttműködés másokkal egy közös cél érdekében",
-            "Algoritmus létrehozása a történet ismételt elbeszéléséhez.",
+            'A megfigyelés, az értelmezés és a kérdésfeltevés készségeinek fejlesztése a művészetre támaszkodva.',
+            'Kreatívvá válás, valamint együttműködés másokkal egy közös cél érdekében',
+            'Algoritmus létrehozása a történet ismételt elbeszéléséhez.',
         ],
-        'description' => "Ebben a kihívásban a tanulók ihletet kapnak egy-egy műalkotásból, történetet hoznak létre, majd azt illusztrálják. Ezután megpróbálják ismét elmesélni a történetet egy programozható robotkészlet segítségével/vagy olyan tevékenységként, amelyhez csatlakoztatott eszközöket nem használnak.",
+        'description' => 'Ebben a kihívásban a tanulók ihletet kapnak egy-egy műalkotásból, történetet hoznak létre, majd azt illusztrálják. Ezután megpróbálják ismét elmesélni a történetet egy programozható robotkészlet segítségével/vagy olyan tevékenységként, amelyhez csatlakoztatott eszközöket nem használnak.',
         'materials' => [
-            "Ez a tevékenység megvalósítható csatlakoztatott eszközök használata nélkül vagy programozható, oktatási robot segítségével, ami lehet például Bee-Bot/Blue-Bot/egérrobot.",
-            "Bee-Bot nyílkártyák vagy nyílkártyák a csatlakoztatott eszközöket nem alkalmazó tevékenységhez",
-            "görögül",
-            "Ha többet szeretne megtudni a Project Zero Thinking Routine Toolbox eszközkészletéről, azt bátran felkeresheti"
+            'Ez a tevékenység megvalósítható csatlakoztatott eszközök használata nélkül vagy programozható, oktatási robot segítségével, ami lehet például Bee-Bot/Blue-Bot/egérrobot.',
+            'Bee-Bot nyílkártyák vagy nyílkártyák a csatlakoztatott eszközöket nem alkalmazó tevékenységhez',
+            'görögül',
+            'Ha többet szeretne megtudni a Project Zero Thinking Routine Toolbox eszközkészletéről, azt bátran felkeresheti',
 
         ],
         'example' => [
-            "A tanár a tanulókkal együtt modellezi, hogyan kell a kártyákkal egy-egy algoritmust megtervezni, amely utasításokat ad a Bee-Bot vagy más robot számára, hogy eljusson a történet első eseményéhez a szőnyegen. A tanulók 3–4 fős csapatokban dolgoznak, hogy megtervezzenek egy algoritmust, amellyel a robot a következő szekvenciára léphet. A tanulók az osztálytermi szőnyegen tesztelik az algoritmusaikat, és szükség szerint hibakeresést végeznek.",
-            "Továbbra is annyi, a történethez tartozó eseményen haladnak keresztül, amennyin csak tudnak",
-            "Ez a tevékenység megvalósítható csatlakoztatott eszközök használata nélküli tevékenységként.",
-            "Az egyik gyerek a robot, a másik gyerek a programozó. A programozó a nyílkártyák segítségével algoritmikus útvonalat hoz létre, hogy segítse a robot eljutását az egyik képről a másikra, és ezzel ismét elmesélni a történetet. Minden alkalommal, amikor a robot egy képen van, megkérik, hogy mondja el a történet egy részét.",
+            'A tanár a tanulókkal együtt modellezi, hogyan kell a kártyákkal egy-egy algoritmust megtervezni, amely utasításokat ad a Bee-Bot vagy más robot számára, hogy eljusson a történet első eseményéhez a szőnyegen. A tanulók 3–4 fős csapatokban dolgoznak, hogy megtervezzenek egy algoritmust, amellyel a robot a következő szekvenciára léphet. A tanulók az osztálytermi szőnyegen tesztelik az algoritmusaikat, és szükség szerint hibakeresést végeznek.',
+            'Továbbra is annyi, a történethez tartozó eseményen haladnak keresztül, amennyin csak tudnak',
+            'Ez a tevékenység megvalósítható csatlakoztatott eszközök használata nélküli tevékenységként.',
+            'Az egyik gyerek a robot, a másik gyerek a programozó. A programozó a nyílkártyák segítségével algoritmikus útvonalat hoz létre, hogy segítse a robot eljutását az egyik képről a másikra, és ezzel ismét elmesélni a történetet. Minden alkalommal, amikor a robot egy képen van, megkérik, hogy mondja el a történet egy részét.',
         ],
         'instructions' => [
-            "A tanár megkéri a tanulókat, hogy figyeljenek meg egy-egy festményt/fotót.",
-            "A kezdet–közép–vég gondolkodási sort alkalmazzák (Project Zero of Harvard School) egy-egy történet létrehozásához..",
-            "A tanár megkérdezi őket: Ha ez a mű egy történet eleje / közepe / vége, mi történhetett ezután / ezelőtt / a végén ? ",
-            "A tanulók illusztrálják a történet eseményeit . ",
-            "A tanulók felidézik a történetet, és a rácsban elhelyezik az eseményeket . Nyílkártyák segítségével olyan algoritmust hoznak létre, amely segít Bee-Botnak újra elmesélni a történetet . "
+            'A tanár megkéri a tanulókat, hogy figyeljenek meg egy-egy festményt/fotót.',
+            'A kezdet–közép–vég gondolkodási sort alkalmazzák (Project Zero of Harvard School) egy-egy történet létrehozásához..',
+            'A tanár megkérdezi őket: Ha ez a mű egy történet eleje / közepe / vége, mi történhetett ezután / ezelőtt / a végén ? ',
+            'A tanulók illusztrálják a történet eseményeit . ',
+            'A tanulók felidézik a történetet, és a rácsban elhelyezik az eseményeket . Nyílkártyák segítségével olyan algoritmust hoznak létre, amely segít Bee-Botnak újra elmesélni a történetet . ',
         ],
     ],
     'coding-with-legoboost' => [
-        'title' => "Kódolás és programozás LegoBoost segítségével – Scratch bővítmény",
+        'title' => 'Kódolás és programozás LegoBoost segítségével – Scratch bővítmény',
         'author' => 'Lidia Ristea',
         'purposes' => [
-            "modellek építése LegoBoost segítségével . ",
-            "programozási készségek fejlesztése a Scratch-ben . ",
-            "robotok programozása parancsok segítségével az egyszerűtől a bonyolultig . "
+            'modellek építése LegoBoost segítségével . ',
+            'programozási készségek fejlesztése a Scratch-ben . ',
+            'robotok programozása parancsok segítségével az egyszerűtől a bonyolultig . ',
         ],
-        'description' => "Ebben a kihívásban a tanulók a Scratch-LegoBoost bővítményt fogják használni, és kódokat írnak be az alkalmazásba, hogy a robotok előre-hátra mozoghassanak, akadályokat kerüljenek el és hangutasításokat kapjanak . ",
-        'duration' => "120 perc",
+        'description' => 'Ebben a kihívásban a tanulók a Scratch-LegoBoost bővítményt fogják használni, és kódokat írnak be az alkalmazásba, hogy a robotok előre-hátra mozoghassanak, akadályokat kerüljenek el és hangutasításokat kapjanak . ',
+        'duration' => '120 perc',
         'instructions' => [
-            "Jelentkezzen be a Scratch . mit . edu alkalmazásba . ",
-            "Indítsa el a Scratch Linket, és aktiválja a Bluetooth-t a laptopon . ",
-            "Kattintson a Bővítmény hozzáadása Scratch-ből lehetőségre, és válassza a LegoBoost elemet . ",
-            "Adjon hozzá egy képet az európai programozási hétről . ",
-            "Kapcsolja BE a két AB motort, majd amikor valamilyen piros akadállyal találkozik, azt kapcsolja KI . ",
+            'Jelentkezzen be a Scratch . mit . edu alkalmazásba . ',
+            'Indítsa el a Scratch Linket, és aktiválja a Bluetooth-t a laptopon . ',
+            'Kattintson a Bővítmény hozzáadása Scratch-ből lehetőségre, és válassza a LegoBoost elemet . ',
+            'Adjon hozzá egy képet az európai programozási hétről . ',
+            'Kapcsolja BE a két AB motort, majd amikor valamilyen piros akadállyal találkozik, azt kapcsolja KI . ',
             'A zöld színű motornál az "A" BEKAPCSOLT állapotban, a fekete színű "B" motor szintén BE állásban van . ',
-            "Zöld, piros és fekete akadályok kerülnek az útvonalra . ",
-            "Parancsok hozzáadása a mozgáshoz és a nyilaktól való elforduláshoz, valamint és a szövegfelolvasás akadályba ütközéskor . ",
-            "Próbálja ki!"
-        ]
-    ]
-
+            'Zöld, piros és fekete akadályok kerülnek az útvonalra . ',
+            'Parancsok hozzáadása a mozgáshoz és a nyilaktól való elforduláshoz, valamint és a szövegfelolvasás akadályba ütközéskor . ',
+            'Próbálja ki!',
+        ],
+    ],
 
 ];

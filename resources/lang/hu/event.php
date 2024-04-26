@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Szervezzen vagy támogasson eseményeket városában',
     'or_contact_your' => 'vagy vegye fel a kapcsolatot',
     'eu_code_week_ambassadors' => 'az európai programozási hét nagyköveteivel',
-    'show_events_for'=>'Események mutatása itt ',
+    'show_events_for' => 'Események mutatása itt ',
     'who' => 'Kiket céloz meg az esemény?',
     'tags' => 'Tagek',
     'image' => 'Kép',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Nyilvános e-mail cím',
-        'placeholder' => 'Fel szeretne tüntetni egy kapcsolatfelvételi e-mail címet?'
+        'placeholder' => 'Fel szeretne tüntetni egy kapcsolatfelvételi e-mail címet?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Cím',
         'placeholder' => 'Hol kerül sor a tevékenységre?',
     ],
-
 
     'organizertype' => [
         'label' => 'Szervezet típusa',
@@ -85,7 +84,7 @@ return [
         'Employed adults' => 'Foglalkoztatásban levõ felnõttek',
         'Unemployed adults' => 'Munkanélküli felnõttek',
         'Other (see description)' => 'Egyéb (lásd a leírást)',
-          'Teachers' => 'Tanárok',
+        'Teachers' => 'Tanárok',
     ],
     'theme' => [
         'Basic programming concepts' => 'Programozási alapfogalmak',
@@ -106,22 +105,22 @@ return [
         'Augmented reality' => 'Kiterjesztett valóság',
         'Artificial intelligence' => 'Mesterséges intelligencia',
         'Motivation and awareness raising' => 'Motiváció és figyelemfelhívás',
-        'Promoting diversity' => 'A sokszínûség elõmozdítása'
+        'Promoting diversity' => 'A sokszínûség elõmozdítása',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'PROGRAMOZÁSI HÉT MINDENKINEK KÓD',
         'explanation' => 'Amennyiben munkatársától vagy barátjától ön is kaptál egy „programozási hét mindenkinek” (CODE WEEK 4 ALL) kódot, másolja be ide, ellenkezõ esetben pedig hagyja üresen ezt a mezõt. További információk a „programozási hét mindenkinek” programról',
         'link' => 'itt találhatók',
     ],
-    'thanks_page'=>[
-        'title'=>'Köszönjük, hogy hozzáadta eseményét!',
-        'phrase1'=>'Helyi nagyköveteink valamelyike ellenõrzi az eseményét,',
-        'phrase2'=>'és gondoskodik róla, hogy minden rendben legyen.',
-        'phrase3'=>'Amennyiben kérdése van, vegye fel a kapcsolatot négy',
-        'phrase4'=>'helyi nagykövetünk valamelyikével,',
-        'phrase5'=>'vagy pedig küldjön nekünk',
-        'phrase6'=>'e-mailt',
-        'phrase7'=>'„Programozási hét mindenkinek” kódját megoszthatja másokkal is:'
+    'thanks_page' => [
+        'title' => 'Köszönjük, hogy hozzáadta eseményét!',
+        'phrase1' => 'Helyi nagyköveteink valamelyike ellenõrzi az eseményét,',
+        'phrase2' => 'és gondoskodik róla, hogy minden rendben legyen.',
+        'phrase3' => 'Amennyiben kérdése van, vegye fel a kapcsolatot négy',
+        'phrase4' => 'helyi nagykövetünk valamelyikével,',
+        'phrase5' => 'vagy pedig küldjön nekünk',
+        'phrase6' => 'e-mailt',
+        'phrase7' => '„Programozási hét mindenkinek” kódját megoszthatja másokkal is:',
     ],
     'activitytype' => [
         'label' => 'Esemény típusa',
@@ -129,10 +128,10 @@ return [
         'open-online' => 'Nyilt online tevékenység',
         'invite-online' => 'Csak meghívottaknak szóló online tevékenység',
         'open-in-person' => 'Nyilt személyes (offline) tevékenység',
-        'invite-in-person' => 'Csak meghívottaknak szóló személyes (offline) tevékenység'
+        'invite-in-person' => 'Csak meghívottaknak szóló személyes (offline) tevékenység',
 
     ],
-    'privacy'=>'Elolvastam és elfogadom a jelen dokumentumban ismertetett adatvédelmi feltételeket.',
+    'privacy' => 'Elolvastam és elfogadom a jelen dokumentumban ismertetett adatvédelmi feltételeket.',
     'country' => 'Országok',
     'loading' => 'Betöltés...',
     'add_activity' => 'Tevékenység hozzáadása',
@@ -148,9 +147,5 @@ return [
     'view_your_certificate' => 'Tanúsítvány megtekintése itt',
     'submit_event_and_report' => 'Nyújtsa be az eseménnyel kapcsolatos jelentését és igényelje a programozási hétről szóló tanúsítványát!',
     'report_and_claim' => 'Esemény bejelentése és tanúsítvány igénylése',
-
-
-
-
 
 ];

@@ -24,14 +24,12 @@ class BirthdayMailing extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
         $recipients = ReminderHelper::getActiveCreators();
 
-        $this->info(sizeof($recipients));
+        $this->info(count($recipients));
 
         foreach ($recipients as $user) {
             Mail::to($user->email)->queue(new \App\Mail\BirthdayMailing($user->email, $user->magic_key));

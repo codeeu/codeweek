@@ -7,13 +7,13 @@ use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class EventRegistered extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $event;
+
     public $user;
 
     /**
@@ -29,20 +29,18 @@ class EventRegistered extends Mailable
 
     /**
      * Build the message.
-     *
-     * @return $this
      */
-    public function build()
+    public function build(): static
     {
 
         $locale = session('locale');
-        if (empty($locale)){
+        if (empty($locale)) {
             $locale = \Config::get('app.fallback_locale');
         }
         $view = 'emails.'.$locale.'.event-registered';
-        if(!view()->exists($view)){
+        if (! view()->exists($view)) {
             $default_language = \Config::get('app.fallback_locale');
-            $view = 'emails.' . $default_language . '.event-registered';
+            $view = 'emails.'.$default_language.'.event-registered';
         }
 
         $subject = \Lang::get('email.subjects.registered');

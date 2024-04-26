@@ -3,19 +3,20 @@
 namespace App\Helpers;
 
 use App\Event;
-use App\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 
-class ReminderHelper {
-    public static function getInactiveCreators($edition) {
+class ReminderHelper
+{
+    public static function getInactiveCreators($edition)
+    {
         // $active = Event::where('status','APPROVED')->where
         //$result = Event::whereNotIn('creator_id', [100,200])->get(['field_name1','field_name2']);
         $activeIds = DB::table('events')
             ->join('users', 'users.id', '=', 'events.creator_id')
             //->where('creator_id','=',$this->id)
             ->where('status', '=', 'APPROVED')
-            ->where('users.receive_emails',true)
+            ->where('users.receive_emails', true)
             ->whereNull('users.deleted_at')
             ->whereNull('events.deleted_at')
             ->whereYear('events.end_date', '=', $edition)
@@ -42,14 +43,14 @@ class ReminderHelper {
             ->pluck('email');
     }
 
-    public static function getActiveCreators() {
+    public static function getActiveCreators()
+    {
 
         $activeIds = DB::table('events')
             ->join('users', 'users.id', '=', 'events.creator_id')
 
-
             ->where('status', '=', 'APPROVED')
-            ->where('users.receive_emails',true)
+            ->where('users.receive_emails', true)
             ->whereNull('users.deleted_at')
             ->whereNull('events.deleted_at')
             ->groupBy('users.email')
@@ -65,12 +66,13 @@ class ReminderHelper {
             ->whereNull('events.deleted_at')
             ->whereIntegerInRaw('events.creator_id', $activeIds)
             ->groupBy('users.email')
-            ->select(['users.email','users.magic_key'])
+            ->select(['users.email', 'users.magic_key'])
             ->get();
 
     }
 
-    public static function getCreatorsWithReportableEvents() {
+    public static function getCreatorsWithReportableEvents()
+    {
         $result = Event::whereNull('reported_at')
             ->join('users', 'creator_id', '=', 'users.id')
             ->whereStatus('APPROVED')
@@ -98,7 +100,8 @@ class ReminderHelper {
     /**
      * @return mixed
      */
-    public static function getReportableEvents() {
+    public static function getReportableEvents()
+    {
         $result = Event::whereNull('reported_at')
             ->whereStatus('APPROVED')
             ->where('report_notifications_count', '<', 3)

@@ -29,12 +29,12 @@ return [
         'header' => 'Vaše kontakt informacije',
         'text_1' => 'Ove informacije će biti vidljive samo ',
         'link_1' => 'Ambasadorima Sedmice kodiranja EU',
-        'text_2'=> ' i organizatorima 
+        'text_2' => ' i organizatorima 
         Sedmice kodiranja, koji
         će provjeriti vaš događaj prije nego što se on pojavi na mapi i mogu vas kontaktirati ako su uređivanja
         neophodna ili
         u cilju vođenja anketa za statističke svrhe nakon događaja.',
-        'contact_email' => 'Vaša kontakt e-pošta'
-    ], 
-    'edit' => 'Uredite događaj'
+        'contact_email' => 'Vaša kontakt e-pošta',
+    ],
+    'edit' => 'Uredite događaj',
 ];

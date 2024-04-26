@@ -17,6 +17,6 @@ return [
     'reset' => 'Vaše heslo bolo obnovené!',
     'sent' => 'Poslali sme vám e-mail s odkazom na obnovu vášho hesla!',
     'token' => 'Tento token na obnovu hesla je neplatný.',
-    'user' => "Používateľ s uvedenou e-mailovou adresou sa nenašiel.",
+    'user' => 'Používateľ s uvedenou e-mailovou adresou sa nenašiel.',
 
 ];

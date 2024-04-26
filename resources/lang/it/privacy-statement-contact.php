@@ -4,14 +4,14 @@ return [
     'subtitle' => 'La presente informativa riguarda il trattamento e la protezione dei dati personali.',
     'processing-operation' => [
         'Trattamento',
-        'gestione degli ambasciatori della Code Week, dei leading teacher (insegnanti guida) e della registrazione delle attività sul sito web'
+        'gestione degli ambasciatori della Code Week, dei leading teacher (insegnanti guida) e della registrazione delle attività sul sito web',
     ],
     'data-processors' => [
         'Responsabili del trattamento',
-        'GOPA Com. S.A. ed EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. ed EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Le informazioni relative al trattamento dei dati personali per la gestione degli ambasciatori della Code Week, dei leading teacher e della registrazione delle attività sul sito web'
+        'Le informazioni relative al trattamento dei dati personali per la gestione degli ambasciatori della Code Week, dei leading teacher e della registrazione delle attività sul sito web',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Inoltre l\'Unità G.2 potrebbe condividere i Suoi dati di contatto con qualsiasi membro del pubblico o portatore di interessi che abbia necessità di contattarLa in relazione alla Code Week. Per gli organizzatori di attività: l\'ambasciatore competente per il Suo paese o l\'Unità G.2 può servirsi dei Suoi dati personali comunicati nel registrare un\'attività per mettersi in contatto con Lei in relazione a quell\'attività.',
     ],
     '8-rights' => [
-        'Ha acconsentito a fornire i Suoi dati personali all\'Unità G.2 per il presente trattamento. Detto consenso è revocabile in qualsiasi momento tramite notifica all\'Unità G.2 all\'indirizzo CNECT-G2@ec.europa.eu. La revoca del consenso non pregiudicherà la liceità del trattamento effettuato prima della revoca.'
+        'Ha acconsentito a fornire i Suoi dati personali all\'Unità G.2 per il presente trattamento. Detto consenso è revocabile in qualsiasi momento tramite notifica all\'Unità G.2 all\'indirizzo CNECT-G2@ec.europa.eu. La revoca del consenso non pregiudicherà la liceità del trattamento effettuato prima della revoca.',
     ],
 
     '10-detailed-info' => [
-        'Questo specifico trattamento è stato inserito nel registro pubblico del responsabile della protezione dei dati con il numero: DPR - EC - 02631 Gestione dei punti di contatto per le politiche, i programmi e i progetti della DG CONNECT . '
-    ]
+        'Questo specifico trattamento è stato inserito nel registro pubblico del responsabile della protezione dei dati con il numero: DPR - EC - 02631 Gestione dei punti di contatto per le politiche, i programmi e i progetti della DG CONNECT . ',
+    ],
 ];

@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Hur ska en aktivitet organiseras?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Ryska',
-            'Norwegian'=>'Norska',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japanska',
-            'All targeted languages' => 'Alla målspråk'
+            'Russian' => 'Ryska',
+            'Norwegian' => 'Norska',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japanska',
+            'All targeted languages' => 'Alla målspråk',
         ],
         'levels' => [
             'Beginner' => 'Nybörjare',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Högstadiet (12–16)',
             'Upper secondary school (16-18)' => 'Gymnasiet (16–18)',
             'Higher Education' => 'Högre utbildning',
-            'Other' => 'Annat'
+            'Other' => 'Annat',
         ],
         'subjects' => [
             'Art' => 'Bild',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fysik',
             'Coding' => 'Kodning',
             'Special Education Needs' => 'Särskilda utbildningsbehov',
-            'Other' => 'Annat'
+            'Other' => 'Annat',
         ],
         'types' => [
             'Tutorial' => 'Handledning',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Verktygslåda',
             'Other' => 'Annat',
             'Lesson Plan' => 'Lektionsplanering',
-            'Guide' => 'Guide'
+            'Guide' => 'Guide',
         ],
         'categories' => [
             'Coding' => 'Kodning',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Skapande',
             'Tinkering' => 'Mekande',
             'Unplugged Activities' => 'Aktiviteter utan uppkoppling',
-            'Other' => 'Annat'
-        ]
-    ]
+            'Other' => 'Annat',
+        ],
+    ],
 
 ];

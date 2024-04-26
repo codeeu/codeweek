@@ -4,32 +4,30 @@ namespace Tests\Feature;
 
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class UserProfileTest extends TestCase
 {
     use RefreshDatabase;
 
-
     public $user;
-    public function setup() :void
+
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $this->user = create('App\User', ['id'=>222]);
-
+        $this->user = \App\User::factory()->create(['id' => 222]);
 
     }
 
     /** @test */
-    public function it_should_display_user_name()
+    public function it_should_display_user_name(): void
     {
 
         $response = $this->get('/badges/user/222');
@@ -39,12 +37,12 @@ class UserProfileTest extends TestCase
     }
 
     /** @test */
-    public function it_should_display_achievements()
+    public function it_should_display_achievements(): void
     {
 
         $this->withoutExceptionHandling();
         $response = $this->get('/badges/user/222');
-        $response->assertSee('Active Organiser ' . Carbon::now()->year);
+        $response->assertSee('Active Organiser '.Carbon::now()->year);
 
     }
 }

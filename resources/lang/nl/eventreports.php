@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Er zijn nog geen evenementen die moeten worden gemeld.',
     'report' => 'De onderstaande evenementen zijn gestart of zijn al voltooid. Vul een paar cijfers voor
     het evenement in voor statistische doeleinden en vraag je deelnamecertificaat voor de Programmeerweek aan. Je
-   krijgt één certificaat per evenement.'
+   krijgt één certificaat per evenement.',
 ];

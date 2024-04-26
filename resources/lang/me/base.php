@@ -41,7 +41,7 @@ return [
         'mk' => 'makedonski',
         'me' => 'crnogorski',
         'sr' => 'srpski',
-        'tr' => 'turski'
+        'tr' => 'turski',
     ],
 
     'resources_local_title' => 'Materijali za programiranje iz',
@@ -53,8 +53,7 @@ return [
     'still_have_question' => 'Još uvijek imate pitanje?',
     'drop_us_a_line' => 'Jednostavno nam pišite.',
     'get_in_touch' => 'STUPANJE U KONTAKT',
-    'footer_msg' =>
-        'Grassroots inicijativa koju vode volonteri i koju podržava Evropska komisija.',
+    'footer_msg' => 'Grassroots inicijativa koju vode volonteri i koju podržava Evropska komisija.',
     'email' => 'Email pošta',
     'display_email' => 'Prikaži email poštu',
     'first_name' => 'Ime',
@@ -66,8 +65,7 @@ return [
     'choose a file' => 'Odaberi datoteku',
     'learning_bits' => 'Materijali za učenje',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Donesite Nedjelju programiranja vašim učenicima',
+    'bring_codeweek_to_your_students' => 'Donesite Nedjelju programiranja vašim učenicima',
     'or' => 'ili',
-    'newsletter' => 'Newsletter'
+    'newsletter' => 'Newsletter',
 ];

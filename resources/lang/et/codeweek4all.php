@@ -32,7 +32,7 @@ return [
             '4' => 'Kampaania lõpus palutakse kõigil tegevuste korraldajatel teatada, kui
                                     palju oli neil osalejaid. Kui suutsite lävendi edukalt ületada, saate teie
                                     ja teie võrgustikku kuulunud töökaaslased tunnistuse eeskujuliku töö
-                                    eest!'
+                                    eest!',
         ],
         'existing_alliance' => [
             'title' => 'Kui liitute olemasoleva kogukonnaga:',
@@ -44,8 +44,8 @@ return [
             '4' => 'Kampaania lõpus palutakse kõigil tegevuste korraldajatel teatada, kui
                                     palju oli neil osalejaid. Kui suutsite lävendi edukalt ületada, saate teie
                                     ja teie võrgustikku kuulunud töökaaslased tunnistuse eeskujuliku töö
-                                    eest!'
-        ]
+                                    eest!',
+        ],
     ],
     'why' => [
         'title' => 'Miks väljakutsega liituda?',
@@ -54,9 +54,9 @@ return [
         '3' => 'Et luua kontakte organisatsioonide ja/või koolidega oma kogukonnas või
                                     rahvusvaheliselt.',
         '4' => 'Et saada teistelt korraldajatelt ja õpetajatelt tuge.',
-        '5' => 'Et saada <strong>tunnistus eeskujuliku töö eest.</strong>'
+        '5' => 'Et saada <strong>tunnistus eeskujuliku töö eest.</strong>',
     ],
     'superorganiser-title' => 'Superkorraldaja tunnistuse',
-    'superorganiser' => 'Samuti võite saada superkorraldaja tunnistuse. Selleks tuleb oma koolis, organisatsioonis või veebipõhiselt korraldada ja <a href="https://codeweek.eu/add">registreerida</a> vähemalt kümme eraldi tegevust.'
+    'superorganiser' => 'Samuti võite saada superkorraldaja tunnistuse. Selleks tuleb oma koolis, organisatsioonis või veebipõhiselt korraldada ja <a href="https://codeweek.eu/add">registreerida</a> vähemalt kümme eraldi tegevust.',
 
 ];

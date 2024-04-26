@@ -2,20 +2,10 @@
 
 namespace App\Console\Commands\excel;
 
-use App\Helpers\ImporterHelper;
-use App\Imports\AppleEventsImport;
-use App\Imports\CoderDojoEventsImport;
-use App\Imports\EventsImport;
 use App\Imports\HamburgEventsImport;
-use App\Imports\RemoteImporter;
-use Exception;
 use Illuminate\Console\Command;
-use Feeds;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
-
 
 class Hamburg extends Command
 {
@@ -42,20 +32,16 @@ class Hamburg extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Loading Hamburg Excel File");
+        Log::info('Loading Hamburg Excel File');
 
-        Excel::import(new HamburgEventsImport, 'hamburg.xlsx','excel');
-
+        Excel::import(new HamburgEventsImport, 'hamburg.xlsx', 'excel');
 
         // Process the events
 

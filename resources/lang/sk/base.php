@@ -41,7 +41,7 @@ return [
         'mk' => 'macedónčina',
         'me' => 'čiernohorčina',
         'rs' => 'srbčina',
-        'tr' => 'turečtina'
+        'tr' => 'turečtina',
     ],
 
     'resources_local_title' => 'Zdroje o programovaní z',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Máte ďalšie otázky?',
     'drop_us_a_line' => 'Napíšte nám.',
     'get_in_touch' => 'OZVITE SA NÁM',
-    'footer_msg' =>
-        'Iniciatíva na miestnej úrovni organizovaná dobrovoľníkmi s podporou Európskej komisie.',
+    'footer_msg' => 'Iniciatíva na miestnej úrovni organizovaná dobrovoľníkmi s podporou Európskej komisie.',
     'email' => 'E-mail',
     'display_email' => 'Zobraziť e-mail',
     'first_name' => 'Meno',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Vybrať súbor',
     'learning_bits' => 'Hodiny programovania',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Zapojte svojich študentov do Týždňa programovania',
+    'bring_codeweek_to_your_students' => 'Zapojte svojich študentov do Týždňa programovania',
     'or' => 'alebo',
-    'newsletter' => 'Newsletter'
+    'newsletter' => 'Newsletter',
 ];

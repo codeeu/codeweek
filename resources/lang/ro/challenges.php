@@ -15,14 +15,14 @@ return [
         'example' => 'Exemplu',
         'written-by' => [
             'Această provocare a fost scrisă de',
-            'și face parte din categoria'
+            'și face parte din categoria',
         ],
         'teachers' => 'Cadre didactice',
         'students' => 'Elevi',
         'beginner' => 'Începători',
         'intermediate' => 'Intermediari',
         'advanced' => 'Avansați',
-        '1-hour' => '1 oră'
+        '1-hour' => '1 oră',
     ],
     'main' => [
         'Pe parcursul Săptămânii UE a programării, în perioada 9-24 octombrie 2021, vă invităm să parcurgeți una sau mai multe dintre provocările Săptămânii UE a programării.',
@@ -38,7 +38,7 @@ return [
         'Distribuiți-vă provocarea',
         'Doriți să câștigați niște premii în cadrul Săptămânii programării? Dacă da, faceți așa încât lucrarea pe care ați realizat-o să ajungă virală!',
         'După ce ați finalizat provocarea, distribuiți-o pe Instagram.',
-        'Câștigătorii vor fi selectați zilnic pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și anunțați pe canalul nostru de Instagram, așa că nu uitați să vă verificați periodic notificările.'
+        'Câștigătorii vor fi selectați zilnic pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și anunțați pe canalul nostru de Instagram, așa că nu uitați să vă verificați periodic notificările.',
     ],
     'share' => [
         'Cum vă puteți distribui provocarea (provocările) pe Instagram?',
@@ -55,7 +55,7 @@ return [
         'Facebook',
         'o postare nouă cu o provocare și va selecta câștigătorul premiului din comentariile de sub postare.',
         'Cum funcționează?',
-        'Adăugați pur și simplu un comentariu la postare, cu un link la lucrarea pe care ați realizat-o.'
+        'Adăugați pur și simplu un comentariu la postare, cu un link la lucrarea pe care ați realizat-o.',
     ],
     'share-box' => [
         'Distribuiți linkul la lucrarea pe care ați realizat-o în',
@@ -70,18 +70,18 @@ return [
         'o nouă postare cu o provocare pe',
         'pagina sa de Facebook',
         'Apoi trebuie doar să adăugați un comentariu la postare, cu linkul la lucrarea pe care ați realizat-o',
-        'Câștigătorii vor fi selectați și vor primi premii ale Săptămânii programării în fiecare zi pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și vor fi anunțați pe canalele noastre de Instagram și Facebook, așa că nu uitați să vă verificați periodic notificările'
+        'Câștigătorii vor fi selectați și vor primi premii ale Săptămânii programării în fiecare zi pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și vor fi anunțați pe canalele noastre de Instagram și Facebook, așa că nu uitați să vă verificați periodic notificările',
     ],
     'take-part' => [
         'De ce să participați la o provocare a Săptămânii UE a programării?',
         'Pentru a vă implica în activități de rezolvare a problemelor și de programare.',
         'Pentru a lucra alături de colegi.',
-        'Pentru a răspândi mesajul despre importanța programării.'
+        'Pentru a răspândi mesajul despre importanța programării.',
     ],
     'download' => [
         'Faceți clic',
         'aici',
-        'pentru a descărca această provocare ca document Word'
+        'pentru a descărca această provocare ca document Word',
     ],
     'bingo' => [
         'Finalizați toate provocările',
@@ -91,6 +91,6 @@ return [
         'Distribuiți-vă provocarea (provocările) în rețelele sociale și câștigați premii cool ale Săptămânii UE a programării',
         'Trebuie doar să încărcați o fotografie cu rândul (rândurile), coloana (coloanele) – sau, mai bine, cu întregul bingo – pe',
         'Facebook, Instagram sau Twitter',
-        'Nu uitați să folosiți'
-    ]
+        'Nu uitați să folosiți',
+    ],
 ];

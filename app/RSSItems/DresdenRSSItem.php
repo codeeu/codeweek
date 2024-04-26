@@ -5,10 +5,8 @@ namespace App\RSSItems;
 use App\Console\Commands\api\GermanTraits;
 use Illuminate\Database\Eloquent\Model;
 
-
 class DresdenRSSItem extends Model
 {
-
     use GermanTraits;
 
     public function createEvent($technicalUser)
@@ -17,6 +15,4 @@ class DresdenRSSItem extends Model
         $this->createGermanEvent('dresden');
 
     }
-
-
 }

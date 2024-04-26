@@ -29,12 +29,12 @@ return [
         'header' => 'Vaši kontaktni podatki',
         'text_1' => 'Ti podatki bodo vidni samo ',
         'link_1' => 'ambasadorjem tedna programiranja EU',
-        'text_2'=> ' in organizatorjem
+        'text_2' => ' in organizatorjem
         tedna programiranja, ki
         bodo pregledali vaš dogodek, preden se bo pojavil na zemljevidu, in vas bodo morda kontaktirali, če bi bilo dogodek treba
         urediti
         za izvajanje raziskav za statistične namene po dogodku.',
-        'contact_email' => 'Vaš elektronski naslov'
-    ], 
-    'edit' => 'Uredi dogodek'
+        'contact_email' => 'Vaš elektronski naslov',
+    ],
+    'edit' => 'Uredi dogodek',
 ];

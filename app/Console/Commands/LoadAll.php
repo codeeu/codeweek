@@ -33,26 +33,24 @@ class LoadAll extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Start Importing All');
-        exec("php artisan load:countries");
-        exec("php artisan load:tags");
-        exec("php artisan load:users");
-        exec("php artisan load:avatars");
-        exec("php artisan load:providers");
-        exec("php artisan load:events");
-        exec("php artisan load:events:audiences");
-        exec("php artisan load:events:themes");
-        exec("php artisan load:events:tags");
-        exec("php artisan load:ambassadors");
-        exec("php artisan load:admins");
-        exec("php artisan load:orphans");
-        exec("php artisan merge:users");
-        exec("php artisan load:cleanup");
+        exec('php artisan load:countries');
+        exec('php artisan load:tags');
+        exec('php artisan load:users');
+        exec('php artisan load:avatars');
+        exec('php artisan load:providers');
+        exec('php artisan load:events');
+        exec('php artisan load:events:audiences');
+        exec('php artisan load:events:themes');
+        exec('php artisan load:events:tags');
+        exec('php artisan load:ambassadors');
+        exec('php artisan load:admins');
+        exec('php artisan load:orphans');
+        exec('php artisan merge:users');
+        exec('php artisan load:cleanup');
         Log::debug('End Importing All');
 
     }

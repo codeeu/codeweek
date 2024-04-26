@@ -22,15 +22,15 @@ return [
             '1' => 'Klikoni te “Dërgo”.',
             '2' => 'Pasi aktiviteti juaj të jetë pranuar, do të merrni një email konfirmimi me kodin tuaj unik Code Week 4 All.',
             '3' => 'Kopjojeni kodin dhe ndajeni me kolegët tuaj dhe të tjerët në rrjetin tuaj që po organizojnë gjithashtu një aktivitet kodimi. Përhapni fjalën për të inkurajuar të tjerët të marrin pjesë!',
-            '4' => 'Pas përfundimit të fushatës, të gjithë organizatorëve të aktivitetit do t’u kërkohet të raportojnë se sa pjesëmarrës kanë përfshirë. Nëse arrini kufirin me sukses, ju dhe kolegët tuaj që janë pjesë e rrjetit tuaj do të merrni Certifikatën e Përsosmërisë!'
+            '4' => 'Pas përfundimit të fushatës, të gjithë organizatorëve të aktivitetit do t’u kërkohet të raportojnë se sa pjesëmarrës kanë përfshirë. Nëse arrini kufirin me sukses, ju dhe kolegët tuaj që janë pjesë e rrjetit tuaj do të merrni Certifikatën e Përsosmërisë!',
         ],
         'existing_alliance' => [
             'title' => 'Nëse po bashkoheni me një partneritet ekzistues:',
             '1' => 'Ngjisni kodin që keni marrë nga nismëtari, personi i parë që ndërtoi partneritetin, në qelizën e fushës KODI I CODE WEEK 4 ALL.',
             '2' => 'Klikoni te “Dërgo”.',
             '3' => 'Përhapni fjalën (dhe kodin!) që më shumë organizatorë të bashkohen me aleancën tuaj.',
-            '4' => 'Pas përfundimit të fushatës, të gjithë organizatorëve të aktivitetit do t’u kërkohet të raportojnë se sa pjesëmarrës kanë përfshirë. Nëse arrini kufirin me sukses, ju dhe kolegët tuaj që janë pjesë e rrjetit tuaj do të merrni Certifikatën e Përsosmërisë!'
-        ]
+            '4' => 'Pas përfundimit të fushatës, të gjithë organizatorëve të aktivitetit do t’u kërkohet të raportojnë se sa pjesëmarrës kanë përfshirë. Nëse arrini kufirin me sukses, ju dhe kolegët tuaj që janë pjesë e rrjetit tuaj do të merrni Certifikatën e Përsosmërisë!',
+        ],
     ],
     'why' => [
         'title' => 'Pse të bashkoheni me sfidën?',
@@ -38,11 +38,10 @@ return [
         '2' => 'Për të parë një numër të madh studentësh të përfshirë.',
         '3' => 'Për të krijuar lidhje me organizatat dhe/ose shkollat në komunitetin tuaj ose në nivel ndërkombëtar.',
         '4' => 'Për të gjetur mbështetje nga organizatorë dhe mësues të tjerë.',
-        '5' => 'Për të fituar një <strong>Certifikatë Përsosmërie.</strong>'
+        '5' => 'Për të fituar një <strong>Certifikatë Përsosmërie.</strong>',
     ],
 
     'superorganiser-title' => 'Certifikatë si Super-Organizator',
-    'superorganiser' => 'Ju mund të fitoni gjithashtu një Certifikatë si Super-Organizator. Për ta bërë këtë, duhet të organizoni dhe të <a href="https://codeweek.eu/add">regjistroni</a> të paktën 10 aktivitete të veçanta në shkollën ose organizatën tuaj, ose në internet.'
-
+    'superorganiser' => 'Ju mund të fitoni gjithashtu një Certifikatë si Super-Organizator. Për ta bërë këtë, duhet të organizoni dhe të <a href="https://codeweek.eu/add">regjistroni</a> të paktën 10 aktivitete të veçanta në shkollën ose organizatën tuaj, ose në internet.',
 
 ];

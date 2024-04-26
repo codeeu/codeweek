@@ -6,26 +6,25 @@ use App\Achievements\Console\GenerateAchievementCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
-class Kernel extends ConsoleKernel {
+class Kernel extends ConsoleKernel
+{
     /**
      * The Artisan commands provided by your application.
      *
      * @var array
      */
     protected $commands = [
-        GenerateAchievementCommand::class
+        GenerateAchievementCommand::class,
     ];
 
     /**
      * Define the application's command schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
      */
-    protected function schedule(Schedule $schedule) {
+    protected function schedule(Schedule $schedule): void
+    {
 
         $schedule->command('delete:unactiveusers')->weeklyOn(4, '8:00');
-        
+
         $schedule->command('remind:ambassadors')->dailyAt('9:00');
 
         $schedule->command('remind:creators')->dailyAt('10:00');
@@ -53,11 +52,10 @@ class Kernel extends ConsoleKernel {
 
     /**
      * Register the commands for the application.
-     *
-     * @return void
      */
-    protected function commands() {
-        $this->load(__DIR__ . '/Commands');
+    protected function commands(): void
+    {
+        $this->load(__DIR__.'/Commands');
 
         require base_path('routes/console.php');
     }

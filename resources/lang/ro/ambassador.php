@@ -1,5 +1,4 @@
-﻿<?php
-
+<?php
 
 return [
 
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Ambasadori ai Săptămânii UE a programării',
-    'your_current_country'=>'Țara dumneavoastră actuală',
-    'visit_the'=> 'Vizitați',
-    'local_facebook_page'=>'pagina locală de Facebook',
-    'local_website'=>'Site local',
-    'ambassadors'=>'Ambasadori',
-    'no_ambassadors'=>'Încă nu există ambasadori',
-    'countries_with_ambassadors'=>'Țări cu ambasadori',
-    'why_dont_you_volunteer'=>'De ce nu vă oferiți voluntar?'
+    'your_current_country' => 'Țara dumneavoastră actuală',
+    'visit_the' => 'Vizitați',
+    'local_facebook_page' => 'pagina locală de Facebook',
+    'local_website' => 'Site local',
+    'ambassadors' => 'Ambasadori',
+    'no_ambassadors' => 'Încă nu există ambasadori',
+    'countries_with_ambassadors' => 'Țări cu ambasadori',
+    'why_dont_you_volunteer' => 'De ce nu vă oferiți voluntar?',
 
 ];

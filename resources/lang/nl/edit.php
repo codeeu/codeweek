@@ -29,8 +29,8 @@ return [
         'header' => 'Jouw contactgegevens',
         'text_1' => 'Deze informatie is alleen zichtbaar voor ',
         'link_1' => 'Ambassadeurs van de EU-Programmeerweek',
-        'text_2'=> ' en organisatoren van de Programmeerweek. Zij controleren je evenement voordat het op de kaart verschijnt en het is mogelijk dat ze contact met je opnemen als de informatie moet worden gewijzigd of om je een enquęte voor statistische doeleinden te sturen na het evenement.',
-        'contact_email' => 'E-mailadres van je contactpersoon'
-    ], 
-    'edit' => 'Evenement bewerken'
+        'text_2' => ' en organisatoren van de Programmeerweek. Zij controleren je evenement voordat het op de kaart verschijnt en het is mogelijk dat ze contact met je opnemen als de informatie moet worden gewijzigd of om je een enquęte voor statistische doeleinden te sturen na het evenement.',
+        'contact_email' => 'E-mailadres van je contactpersoon',
+    ],
+    'edit' => 'Evenement bewerken',
 ];

@@ -17,6 +17,6 @@ return [
     'reset' => 'Vaša lozinka je resetovana!',
     'sent' => 'Poslali smo vam imejlom link o potvrdi resetovanja lozinke!',
     'token' => 'Ovaj token za resetovanje lozinke je nevažeći.',
-	'user' => "Ne možemo da pronađemo korisnika sa tom imejlom adresom.",
+    'user' => 'Ne možemo da pronađemo korisnika sa tom imejlom adresom.',
 
 ];

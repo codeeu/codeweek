@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Загальна електронна адреса',
-        'placeholder' => 'Ви хотіли б показати контактну електронну адресу ?'
+        'placeholder' => 'Ви хотіли б показати контактну електронну адресу ?',
 
     ],
     'title' => [
@@ -107,7 +107,7 @@ return [
         'Augmented reality' => 'Доповнена реальність',
         'Artificial intelligence' => 'Штучний інтелект',
         'Motivation and awareness raising' => 'Мотивація та підвищення рівня обізнаності',
-        'Promoting diversity' => 'Сприяння розмаїттю'
+        'Promoting diversity' => 'Сприяння розмаїттю',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'КОД ДЛЯ «CODE WEEK 4 ALL»',
@@ -122,7 +122,7 @@ return [
         'phrase4' => 'національних послів',
         'phrase5' => 'або надішліть нам',
         'phrase6' => 'електронний лист',
-        'phrase7' => 'Ви можете поділитися з іншими своїм кодом для «Code Week 4 All» :'
+        'phrase7' => 'Ви можете поділитися з іншими своїм кодом для «Code Week 4 All» :',
     ],
     'activity_type' => [
         'Event' => 'Захід',
@@ -130,7 +130,7 @@ return [
         'Workshop' => 'Семінар',
         'Webinar' => 'Вебінар',
         'Live Streaming Session' => 'Сесія в прямому ефірі',
-        'Other' => 'Інше'
+        'Other' => 'Інше',
     ],
     'activitytype' => [
         'label' => 'Тип заходу',
@@ -138,7 +138,7 @@ return [
         'open-online' => 'Відкритий онлайн-захід',
         'invite-online' => 'Онлайн-захід за запрошенням',
         'open-in-person' => 'Відкритий офлайн-захід',
-        'invite-in-person' => 'Офлайн-захід за запрошенням'
+        'invite-in-person' => 'Офлайн-захід за запрошенням',
 
     ],
 
@@ -160,6 +160,5 @@ return [
     'view_your_certificate' => 'Переглянути свій сертифікат тут',
     'submit_event_and_report' => 'Подати звіт про цей захід та заявку на отримання сертифіката від Тижня кодування.',
     'report_and_claim' => 'Відзвітувати про захід та подати заявку на отримання сертифіката',
-
 
 ];

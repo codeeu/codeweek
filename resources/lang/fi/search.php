@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Yleisö',
-    'theme_title'=>'Aihe',
-    
+    'audience_title' => 'Yleisö',
+    'theme_title' => 'Aihe',
+
     'placeholder' => 'Hae tapahtuman nimellä tai tägillä',
     'submit' => 'Haku',
     'label_country' => 'Valitse maa',
     'last_year_events' => [
         'label' => 'Sisällytä viimeisen vuoden tapahtumat',
         'yes' => 'Kyllä',
-        'no' => 'Ei'
+        'no' => 'Ei',
     ],
     'search_counter' => 'vastaa hakukriteerejäsi',
-    'event'=>'tapahtuma',
-    'events'=>'tapahtumaa',
+    'event' => 'tapahtuma',
+    'events' => 'tapahtumaa',
     'year' => 'vuosi',
-    'audiences'=>'Kohderyhmä ','themes'=>'Teemat','countries'=>'Maat','search_placeholder' => 'Hae otsikon tai kuvauksen mukaan',
+    'audiences' => 'Kohderyhmä ', 'themes' => 'Teemat', 'countries' => 'Maat', 'search_placeholder' => 'Hae otsikon tai kuvauksen mukaan',
 ];

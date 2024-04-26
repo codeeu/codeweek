@@ -2,20 +2,19 @@
 
 namespace App\Nova;
 
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
-use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\Text;
 
 class ResourceCategory extends Resource
 {
-
     public static $group = 'Resources';
 
-    public static function label() {
+    public static function label()
+    {
         return 'Categories';
     }
 
@@ -29,7 +28,7 @@ class ResourceCategory extends Resource
      *
      * @var string
      */
-    public static $model = 'App\ResourceCategory';
+    public static $model = \App\ResourceCategory::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -49,64 +48,49 @@ class ResourceCategory extends Resource
 
     /**
      * Get the fields displayed by the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
      */
-    public function fields(Request $request)
+    public function fields(Request $request): array
     {
         return [
             ID::make()->sortable(),
-            BelongsToMany::make('ResourceItem','items'),
+            BelongsToMany::make('ResourceItem', 'items'),
             Text::make('name')->sortable(),
             Number::make('Position')->sortable(),
             Boolean::make('Teach')->sortable(),
             Boolean::make('Learn')->sortable(),
             Boolean::make('Active')
-            ->hideWhenCreating()->hideFromIndex(),
+                ->hideWhenCreating()->hideFromIndex(),
         ];
     }
 
     /**
      * Get the cards available for the request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
      */
-    public function cards(Request $request)
+    public function cards(Request $request): array
     {
         return [];
     }
 
     /**
      * Get the filters available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
      */
-    public function filters(Request $request)
+    public function filters(Request $request): array
     {
         return [];
     }
 
     /**
      * Get the lenses available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
      */
-    public function lenses(Request $request)
+    public function lenses(Request $request): array
     {
         return [];
     }
 
     /**
      * Get the actions available for the resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
      */
-    public function actions(Request $request)
+    public function actions(Request $request): array
     {
         return [];
     }

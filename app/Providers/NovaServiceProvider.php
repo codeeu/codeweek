@@ -6,59 +6,48 @@ use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
 use App\Nova\Metrics\ImporterTrend;
 use App\Nova\Metrics\MeetCodeTrend;
-use App\Nova\Metrics\NewMeetCode;
 use App\Nova\Metrics\UsersPerDay;
-use Laravel\Nova\Nova;
-use Laravel\Nova\Cards\Help;
-
 use Illuminate\Support\Facades\Gate;
+use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         parent::boot();
     }
 
     /**
      * Register the Nova routes.
-     *
-     * @return void
      */
-    protected function routes()
+    protected function routes(): void
     {
         Nova::routes()
-                ->withAuthenticationRoutes()
-                ->withPasswordResetRoutes()
-                ->register();
+            ->withAuthenticationRoutes()
+            ->withPasswordResetRoutes()
+            ->register();
     }
 
     /**
      * Register the Nova gate.
      *
      * This gate determines who can access Nova in non-local environments.
-     *
-     * @return void
      */
-    protected function gate()
+    protected function gate(): void
     {
         Gate::define('viewNova', function ($user) {
-            return ($user->hasRole('super admin') || $user->hasRole('ambassador') || $user->hasRole('resource editor'));
+            return $user->hasRole('super admin') || $user->hasRole('ambassador') || $user->hasRole('resource editor');
         });
     }
 
     /**
      * Get the cards that should be displayed on the Nova dashboard.
-     *
-     * @return array
      */
-    protected function cards()
+    protected function cards(): array
     {
         return [
             new MeetCodeTrend,
@@ -72,20 +61,16 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
     /**
      * Get the tools that should be listed in the Nova sidebar.
-     *
-     * @return array
      */
-    public function tools()
+    public function tools(): array
     {
         return [];
     }
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }

@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Hvordan afholder jeg en aktivitet?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Russisk',
-            'Norwegian'=>'Norsk',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japansk',
-            'All targeted languages' => 'Alle sprog'
+            'Russian' => 'Russisk',
+            'Norwegian' => 'Norsk',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japansk',
+            'All targeted languages' => 'Alle sprog',
         ],
         'levels' => [
             'Beginner' => 'Begynder',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Udskoling (12-16)',
             'Upper secondary school (16-18)' => 'Ungdomsuddannelse (16-18)',
             'Higher Education' => 'Videregående uddannelse',
-            'Other' => 'Andet'
+            'Other' => 'Andet',
         ],
         'subjects' => [
             'Art' => 'Kunst',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fysik',
             'Coding' => 'Kodning',
             'Special Education Needs' => 'Særlige uddannelsesbehov',
-            'Other' => 'Andet'
+            'Other' => 'Andet',
         ],
         'types' => [
             'Tutorial' => 'Vejledning',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Pakke',
             'Other' => 'Andet',
             'Lesson Plan' => 'Læreplan',
-            'Guide' => 'Guide'
+            'Guide' => 'Guide',
         ],
         'categories' => [
             'Coding' => 'Kodning',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Byggeri',
             'Tinkering' => 'Nørkleri',
             'Unplugged Activities' => 'Aktiviteter uden brug af computer',
-            'Other' => 'Andet'
-        ]
-    ]
+            'Other' => 'Andet',
+        ],
+    ],
 
 ];

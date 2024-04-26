@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Organizátor: ',
+    'organised_by' => 'Organizátor: ',
     'contact_email' => 'Kontaktný e-mail: ',
     'happening_at' => 'Miesto konania: ',
     'from' => 'Od ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Kliknite a pošlite to e-mailom priateľovi',
         'subject' => 'Aha, aké úžasné programátorské podujatie',
         'body_1' => 'Ahoj, pozri si ',
-        'body_2' => 'podujatie na '
+        'body_2' => 'podujatie na ',
     ],
     'edit' => 'Upraviť podujatie',
     'note' => 'POZNÁMKA: ',
     'pending_warning' => 'Toto podujatie ešte hodnotia ',
     'pending_link' => 'moderátori',
-    'nearby_upcoming_events' => 'Nadchádzajúce podujatia v okolí:'
+    'nearby_upcoming_events' => 'Nadchádzajúce podujatia v okolí:',
 ];

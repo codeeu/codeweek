@@ -41,7 +41,7 @@ return [
         'me' => 'Malazisht',
         'rs' => 'Serbisht',
         'mt' => 'Maltezisht',
-        'tr' => 'Turqisht'
+        'tr' => 'Turqisht',
     ],
 
     'resources_local_title' => 'Burimet e kodimit nga',
@@ -53,8 +53,7 @@ return [
     'still_have_question' => 'Keni ende pyetje?',
     'drop_us_a_line' => 'Thjesht na shkruani!',
     'get_in_touch' => 'KONTAKTONI',
-    'footer_msg' =>
-        'Një nismë në terren e organizuar nga vullnetarë dhe e mbështetur nga Komisioni Evropian.',
+    'footer_msg' => 'Një nismë në terren e organizuar nga vullnetarë dhe e mbështetur nga Komisioni Evropian.',
     'email' => 'Email',
     'display_email' => 'Shfaq emailin',
     'first_name' => 'Emri',
@@ -69,5 +68,5 @@ return [
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Sillni Code Week te studentët tuaj',
     'or' => 'ose',
-    'newsletter' => ''
+    'newsletter' => '',
 ];

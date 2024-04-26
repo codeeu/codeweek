@@ -27,6 +27,6 @@ return [
     'reset' => 'Iš naujo nustatyti slaptažodį',
     'send_password' => 'Siųsti slaptažodžio nustatymo iš naujo nuorodą',
     'confirm_password' => 'Patvirtinti slaptažodį',
-    'name' => 'vardas'
+    'name' => 'vardas',
 
 ];

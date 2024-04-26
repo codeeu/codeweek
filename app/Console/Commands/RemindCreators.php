@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
-
 class RemindCreators extends Command
 {
     /**
@@ -39,42 +38,39 @@ class RemindCreators extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Sending email to remind event creators");
+        Log::info('Sending email to remind event creators');
 
         //Get email from creators having at least one event that has less than 3 reminders sent
         $creators = ReminderHelper::getCreatorsWithReportableEvents();
-        Log::info(count($creators) . " emails should be sent");
+        Log::info(count($creators).' emails should be sent');
         //Send one email per creator.
-        $mailsQueued=0;
+        $mailsQueued = 0;
         foreach ($creators as $creator) {
             $user = User::find($creator->creator_id);
             //Skip deleted users && users that do not wish to receive emails
-            if ($user && $user->receive_emails){
+            if ($user && $user->receive_emails) {
                 Mail::to($user->email)->queue(new \App\Mail\RemindCreator($user));
                 $mailsQueued++;
             }
 
         }
-        Log::info($mailsQueued . " emails have been queued");
+        Log::info($mailsQueued.' emails have been queued');
 
         $events = ReminderHelper::getReportableEvents();
         $eventsCount = count($events->get());
-        Log::info($eventsCount . " events will be updated");
+        Log::info($eventsCount.' events will be updated');
         $updated = $events
             ->update([
                 'report_notifications_count' => DB::raw('report_notifications_count+1'),
-                'last_report_notification_sent_at' => Carbon::now()
+                'last_report_notification_sent_at' => Carbon::now(),
             ]);
-        Log::info($updated . " events have been updated with success.");
+        Log::info($updated.' events have been updated with success.');
 
         $admin = config('codeweek.administrator');
         Mail::to($admin)->queue(new \App\Mail\RemindersSummary(count($creators), $eventsCount, $updated, $mailsQueued));
-
 
     }
 }

@@ -14,5 +14,5 @@ return [
     */
     'reports_by' => 'Eventos que aguardam relatório de ',
     'no_reports' => 'Ainda não há eventos comunicados.',
-    'report' => 'Os eventos enumerados abaixo já tiveram início ou já foram concluídos. Introduza alguns números para efeitos estatísticos relativos ao evento e solicite o seu certificado de participação na Semana da Programação. Receberá um certificado por cada evento.'
+    'report' => 'Os eventos enumerados abaixo já tiveram início ou já foram concluídos. Introduza alguns números para efeitos estatísticos relativos ao evento e solicite o seu certificado de participação na Semana da Programação. Receberá um certificado por cada evento.',
 ];

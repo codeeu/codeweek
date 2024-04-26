@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'På den här webbplatsen använder vi kakor för att göra det lättare för dig att söka information',
-    'accept'=>'Jag accepterar kakor',
-    'refuse'=>'Jag accepterar inte kakor',
+    'accept' => 'Jag accepterar kakor',
+    'refuse' => 'Jag accepterar inte kakor',
     'cookies' => 'Kakor (cookies)',
-    'find_out_more_on'=>'Läs mer om ',
+    'find_out_more_on' => 'Läs mer om ',
     'how_we_use' => 'hur vi använder kakor och hur du ändrar dina inställningar',
-
 
 ];

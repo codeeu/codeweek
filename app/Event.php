@@ -7,24 +7,26 @@ use App\Helpers\EventHelper;
 use App\Helpers\ImporterHelper;
 use App\Policies\EventPolicy;
 use Carbon\Carbon;
-use DB;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
 use Spatie\Activitylog\LogOptions;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Laravel\Nova\Actions\Actionable;
 use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
 
 class Event extends Model
 {
-    use Actionable, SoftDeletes;
+    use SoftDeletes;
+    use HasFactory;
 
     protected $table = 'events';
+
     protected $fillable = [
         'status',
         'title',
@@ -64,20 +66,20 @@ class Event extends Model
         'language',
         'location_id',
         'leading_teacher_tag',
-        'mass_added_for'
+        'mass_added_for',
     ];
 
     protected $casts = [
         'description' => PurifyHtmlOnGet::class,
         'title' => PurifyHtmlOnGet::class,
         'location' => PurifyHtmlOnGet::class,
-        'language'=> PurifyHtmlOnGet::class,
+        'language' => PurifyHtmlOnGet::class,
     ];
 
-//    protected $policies = [
-//        'App\Event' => 'App\Policies\EventPolicy',
-//        Event::class => EventPolicy::class
-//    ];
+    //    protected $policies = [
+    //        'App\Event' => 'App\Policies\EventPolicy',
+    //        Event::class => EventPolicy::class
+    //    ];
 
     //protected $appends = ['LatestModeration'];
 
@@ -85,7 +87,6 @@ class Event extends Model
     {
         return $this->only(['geoposition', 'title', 'description']);
     }
-
 
     protected static $logFillable = true;
 
@@ -106,6 +107,7 @@ class Event extends Model
     public function imported()
     {
         $germanCities = ImporterHelper::getGermanCities();
+
         return Str::contains($this->codeweek_for_all_participation_code, $germanCities);
     }
 
@@ -115,6 +117,7 @@ class Event extends Model
             if (Str::startsWith($this->picture, 'http')) {
                 return $this->picture;
             }
+
             return config('codeweek.aws_url') . $this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
@@ -130,38 +133,39 @@ class Event extends Model
         return $this->picture_path();
     }
 
-    public function country()
+    public function country(): BelongsTo
     {
-        return $this->belongsTo('App\Country', 'country_iso', 'iso');
+        return $this->belongsTo(\App\Country::class, 'country_iso', 'iso');
     }
 
-    public function owner()
+    public function owner(): BelongsTo
     {
-        return $this->belongsTo('App\User', 'creator_id');
+        return $this->belongsTo(\App\User::class, 'creator_id');
     }
 
-    public function extractedLocation()
+    public function extractedLocation(): BelongsTo
     {
-        return $this->belongsTo('App\Location', 'location_id');
+        return $this->belongsTo(\App\Location::class, 'location_id');
     }
 
-    public function audiences()
+    public function audiences(): BelongsToMany
     {
-        return $this->belongsToMany('App\Audience');
+        return $this->belongsToMany(\App\Audience::class);
     }
 
-    public function themes()
+    public function themes(): BelongsToMany
     {
-        return $this->belongsToMany('App\Theme');
+        return $this->belongsToMany(\App\Theme::class);
     }
 
-    public function tags()
+    public function tags(): BelongsToMany
     {
-        return $this->belongsToMany('App\Tag')->where('name', '<>', '');
+        return $this->belongsToMany(\App\Tag::class)->where('name', '<>', '');
     }
 
-    public function leadingTeacher(){
-        return $this->belongsTo('App\User',  'leading_teacher_tag','tag');
+    public function leadingTeacher(): BelongsTo
+    {
+        return $this->belongsTo(\App\User::class, 'leading_teacher_tag', 'tag');
     }
 
     public function get_start_date()
@@ -262,7 +266,7 @@ class Event extends Model
         $this->moderations()->create([
             'status' => 'REJECTED',
             'message' => $rejectionText,
-            'status_by' => auth()->id()
+            'status_by' => auth()->id(),
         ]);
 
         $data = ['status' => 'REJECTED', 'approved_by' => auth()->user()->id];
@@ -280,9 +284,9 @@ class Event extends Model
         return $this->update($data);
     }
 
-    public function moderations()
+    public function moderations(): HasMany
     {
-        return $this->hasMany('App\Moderation');
+        return $this->hasMany(\App\Moderation::class);
     }
 
     public function getLatestModerationAttribute()
@@ -322,13 +326,14 @@ class Event extends Model
             $this->highlighted_status == 'FEATURED'
                 ? ($this->highlighted_status = 'PROMOTED')
                 : ($this->highlighted_status = 'FEATURED');
+
             return $this->save();
         }
     }
 
-    public function notification()
+    public function notification(): HasOne
     {
-        return $this->hasOne('App\Notification', 'event_id', 'id');
+        return $this->hasOne(\App\Notification::class, 'event_id', 'id');
     }
 
     public function relocate()
@@ -369,18 +374,16 @@ class Event extends Model
 
     public function createLocation()
     {
-
         Log::info($this->trimmedGeoposition);
         Log::info($this->creator_id);
 
         try {
-
-//            $location = Location::where([
-//                'trimmed_geoposition' => $this->trimmedGeoposition,
-//                'user_id' => $this->creator_id,
-//            ])->first();
-//
-////            dd($location);
+            //            $location = Location::where([
+            //                'trimmed_geoposition' => $this->trimmedGeoposition,
+            //                'user_id' => $this->creator_id,
+            //            ])->first();
+            //
+            ////            dd($location);
 
             $location = Location::firstOrCreate(
                 [
@@ -396,22 +399,18 @@ class Event extends Model
                     'country_iso' => $this->country_iso,
                     'event_id' => $this->id,
                     'activity_type' => $this->activity_type,
-                    'organizer_type' => $this->organizer_type
+                    'organizer_type' => $this->organizer_type,
                 ]);
 
-//            dd($location->id);
+            //            dd($location->id);
 
-//            Log::info($location->id);
+            //            Log::info($location->id);
             $this->update([
-                'location_id' => $location->id
+                'location_id' => $location->id,
             ]);
         } catch (\Exception $exception) {
             //Log::info($location);
             \Illuminate\Support\Facades\Log::info('unique constraint triggered');
         }
     }
-
-
-
-
 }

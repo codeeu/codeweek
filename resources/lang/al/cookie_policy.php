@@ -14,7 +14,7 @@ return [
 
             <p>Në atë mënyrë, nuk do t’ju duhet ti rishkruani kur të kërkoni nëpër faqe gjatë të njëjtës vizitë.</p>
 
-            <p>Kukit gjithashtu mund të përdoren për të vendosur statistika anonimizuese në lidhje me përvojën e shfletimit në faqet tona.</p>'
+            <p>Kukit gjithashtu mund të përdoren për të vendosur statistika anonimizuese në lidhje me përvojën e shfletimit në faqet tona.</p>',
     ],
     'how' => [
         'title' => 'Si i përdorim kukit?',
@@ -24,30 +24,30 @@ return [
             'title' => '<strong>3 llojet e kukive të palës së parë</strong> që ne përdorim janë për:',
             '1' => 'të ruajtur preferencat e vizitorëve të dyqaneve',
             '2' => 't’i bërë funksionale faqet e internetit',
-            '3' => 'të mbledhur të dhëna analitike (në lidhje me sjelljen e përdoruesit)'
+            '3' => 'të mbledhur të dhëna analitike (në lidhje me sjelljen e përdoruesit)',
         ],
         'table' => [
-            'name'=>'Emri',
-            'service'=>'Shërbimi',
-            'purpose'=>'Qëllimi',
-            'type_duration'=>'Lloji dhe kohëzgjatja e kukive',
+            'name' => 'Emri',
+            'service' => 'Shërbimi',
+            'purpose' => 'Qëllimi',
+            'type_duration' => 'Lloji dhe kohëzgjatja e kukive',
         ],
         'visitor_preferences' => [
-            'title'=> 'Preferencat e vizitorëve',
-            'text'=> 'Këto vendosen nga ne dhe vetëm ne mund t\'i lexojmë ato. Ato kujtojnë:',
-            'item'=> 'nëse keni pranuar (ose refuzuar) politikën e kukive të kësaj faqeje',
+            'title' => 'Preferencat e vizitorëve',
+            'text' => 'Këto vendosen nga ne dhe vetëm ne mund t\'i lexojmë ato. Ato kujtojnë:',
+            'item' => 'nëse keni pranuar (ose refuzuar) politikën e kukive të kësaj faqeje',
             'table' => [
                 '1' => [
                     'service' => 'Paketa e pëlqimit të kukive',
                     'purpose' => 'Ruan preferencat tuaja të kukive (kështu që nuk pyeteni përsëri)',
                     'type_duration' => 'Kukit e seancës së palës së parë fshihen pasi mbyllni shfletuesin',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Kuki operative',
             'text' => '<p>Ka disa kuki që duhet t\'i përfshijmë në mënyrë që disa faqe interneti të funksionojnë. Për këtë arsye, ato nuk kërkojnë pëlqimin tuaj. Veçanërisht:</p>',
-            'item' => 'Kuki teknike të kërkuara nga disa sisteme TI'
+            'item' => 'Kuki teknike të kërkuara nga disa sisteme TI',
         ],
         'technical_cookies' => [
             'title' => 'Kuki teknike',
@@ -63,8 +63,8 @@ return [
                 '3' => [
                     'purpose' => 'Ruan gjuhën e preferuar të përdoruesit',
                     'type_duration' => 'Kukit e seancës së palës së parë fshihen pasi mbyllni shfletuesin',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Kuki analitike',
@@ -82,9 +82,9 @@ return [
                     'service' => 'Shërbim analitik interneti, bazuar në softuerin me burim të hapur Matomo',
                     'purpose' => 'Identifikon faqet e shikuara nga i njëjti përdorues gjatë së njëjtës vizitë. (në mënyrë anonime - nuk mblidhet informacion personal nga përdoruesi).',
                     'type_duration' => 'Kuki këmbëngulëse e palës së parë, 30 minuta',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -95,8 +95,8 @@ return [
                 <p>Për të parë këtë përmbajtje të palëve të treta, së pari duhet të pranoni termat dhe kushtet e tyre specifike. Kjo përfshin politikat e tyre të kukive, të cilat nuk i kontrollojmë ne.</p>
 
                 <p>Por nëse nuk e shihni këtë përmbajtje, asnjë kuki e palëve të treta nuk është instaluar në pajisjen tuaj.</p>Ofruesit e palëve të treta në Codeweek<ul>',
-            '2' => 'Këto shërbime të palëve të treta janë jashtë kontrollit të faqes së internetit Codeweek. Ofruesit munden, në çdo kohë, të ndryshojnë kushtet e tyre të shërbimit, qëllimin dhe përdorimin e kukive etj.'
-        ]
+            '2' => 'Këto shërbime të palëve të treta janë jashtë kontrollit të faqes së internetit Codeweek. Ofruesit munden, në çdo kohë, të ndryshojnë kushtet e tyre të shërbimit, qëllimin dhe përdorimin e kukive etj.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Si mund të menaxhoni kukit?',
@@ -105,6 +105,6 @@ return [
 
             <p>Ju mund të fshini të gjitha kukit që ndodhen tashmë në pajisjen tuaj duke pastruar historinë e shfletimit të shfletuesit tuaj. Kjo gjë heq të gjitha kukit nga të gjitha faqet e internetit që keni vizituar.</p>
 
-            <p>Duhet të jini të vetëdijshëm se mund të humbni disa informacione të ruajtura (p.sh. detajet e ruajtura të identifikimit, preferencat e faqes).</p><strong>Menaxhimi i kukive specifike të faqes</strong><p>Për një kontroll më të detajuar të kukive specifike të faqes, kontrolloni cilësimet dhe privatësinë e kukive në shfletuesin tuaj të preferuar</p><strong>Kuki bllokuese</strong><p>Ju mund të caktoni shfletuesit më modernë që të parandalojnë vendosjen e kukive në pajisjen tuaj, por atëherë do t\'ju duhet të rregulloni manualisht disa preferenca çdo herë që vizitoni një sajt/faqe. Dhe disa shërbime e funksionalitete mund të mos funksionojnë siç duhet (p.sh. identifikimi në profil).</p><strong>Menaxhimi i kukive tona analitike</strong><p>Ju mund të menaxhoni preferencat tuaja në lidhje me kukit nga Analitika jonë në <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">faqen e dedikuar.</a></p>'
-    ]
+            <p>Duhet të jini të vetëdijshëm se mund të humbni disa informacione të ruajtura (p.sh. detajet e ruajtura të identifikimit, preferencat e faqes).</p><strong>Menaxhimi i kukive specifike të faqes</strong><p>Për një kontroll më të detajuar të kukive specifike të faqes, kontrolloni cilësimet dhe privatësinë e kukive në shfletuesin tuaj të preferuar</p><strong>Kuki bllokuese</strong><p>Ju mund të caktoni shfletuesit më modernë që të parandalojnë vendosjen e kukive në pajisjen tuaj, por atëherë do t\'ju duhet të rregulloni manualisht disa preferenca çdo herë që vizitoni një sajt/faqe. Dhe disa shërbime e funksionalitete mund të mos funksionojnë siç duhet (p.sh. identifikimi në profil).</p><strong>Menaxhimi i kukive tona analitike</strong><p>Ju mund të menaxhoni preferencat tuaja në lidhje me kukit nga Analitika jonë në <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">faqen e dedikuar.</a></p>',
+    ],
 ];

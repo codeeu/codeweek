@@ -6,7 +6,6 @@ use App\ResourceItem;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class ResourceSuggested extends Mailable
 {
@@ -26,13 +25,11 @@ class ResourceSuggested extends Mailable
 
     /**
      * Build the message.
-     *
-     * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
-            ->subject("[CodeWeek] A new resource has been suggested")
+            ->subject('[CodeWeek] A new resource has been suggested')
             ->markdown('emails.en.resource-suggested');
     }
 }

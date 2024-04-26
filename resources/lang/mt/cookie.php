@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Dan is-sit juża l-cookies biex joffrilek esperjenza aħjar',
-    'accept'=>'Naċċetta l-cookies',
-    'refuse'=>'Nirrifjuta l-cookies',
+    'accept' => 'Naċċetta l-cookies',
+    'refuse' => 'Nirrifjuta l-cookies',
     'cookies' => 'Cookies',
-    'find_out_more_on'=>'Skopri aktar dwar, ',
+    'find_out_more_on' => 'Skopri aktar dwar, ',
     'how_we_use' => 'kif nużaw il-cookies u kif tista\' tibdel is-settings tiegħek',
-
 
 ];

@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Ambassadörer för EU Code Week',
-    'your_current_country'=>'Ditt land',
-    'visit_the'=> 'Besök den',
-    'local_facebook_page'=>'lokala Facebook-sidan',
-    'local_website'=>'Lokal webbplats',
-    'ambassadors'=>'Ambassadörer',
-    'no_ambassadors'=>'Inga ambassadörer ännu',
-    'countries_with_ambassadors'=>'Länder med ambassadörer',
-    'why_dont_you_volunteer'=>'Vill du ställa upp som frivillig?'
+    'your_current_country' => 'Ditt land',
+    'visit_the' => 'Besök den',
+    'local_facebook_page' => 'lokala Facebook-sidan',
+    'local_website' => 'Lokal webbplats',
+    'ambassadors' => 'Ambassadörer',
+    'no_ambassadors' => 'Inga ambassadörer ännu',
+    'countries_with_ambassadors' => 'Länder med ambassadörer',
+    'why_dont_you_volunteer' => 'Vill du ställa upp som frivillig?',
 
 ];

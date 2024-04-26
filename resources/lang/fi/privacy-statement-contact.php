@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Tämä tietosuojaseloste sisältää henkilötietojen käsittelyä ja suojaa koskevia tietoja.',
     'processing-operation' => [
         'Tietojenkäsittely',
-        'koodausviikon lähettiläiden ja johtavien opettajien hallinnointi ja toiminnan rekisteröinti verkkosivustolla'
+        'koodausviikon lähettiläiden ja johtavien opettajien hallinnointi ja toiminnan rekisteröinti verkkosivustolla',
     ],
     'data-processors' => [
         'Tietojen käsittelijät',
-        'GOPA Com. S.A. ja EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. ja EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Tiedot, jotka liittyvät henkilötietojen käsittelyyn koodausviikon lähettiläiden ja johtavien opettajien hallinnoimiseksi ja toiminnan rekisteröimiseksi verkkosivustolla.'
+        'Tiedot, jotka liittyvät henkilötietojen käsittelyyn koodausviikon lähettiläiden ja johtavien opettajien hallinnoimiseksi ja toiminnan rekisteröimiseksi verkkosivustolla.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Lisäksi yksikkö G.2 voi jakaa yhteystietosi kansalaisille tai sidosryhmille, joiden on välttämätöntä ottaa sinuun yhteyttä koodausviikkoon liittyen. Toiminnan järjestäjien osalta on syytä huomata, että maasi lähettiläs tai yksikkö G.2 voi käyttää toiminnan rekisteröimiseksi antamiasi henkilötietoja ottaakseen sinuun yhteyttä kyseiseen toimintaan liittyen.',
     ],
     '8-rights' => [
-        'Olet antanut suostumuksesi siihen, että yksikkö G.2 voi käsitellä henkilötietojasi tässä yhteydessä. Voit perua suostumuksesi milloin tahansa ilmoittamalla asiasta yksikölle G.2 osoitteeseen CNECT-G2@ec.europa.eu. Suostumuksen peruminen ei vaikuta perumista edeltävän tietojen käsittelyn laillisuuteen.'
+        'Olet antanut suostumuksesi siihen, että yksikkö G.2 voi käsitellä henkilötietojasi tässä yhteydessä. Voit perua suostumuksesi milloin tahansa ilmoittamalla asiasta yksikölle G.2 osoitteeseen CNECT-G2@ec.europa.eu. Suostumuksen peruminen ei vaikuta perumista edeltävän tietojen käsittelyn laillisuuteen.',
     ],
 
     '10-detailed-info' => [
-        'Tässä asiakirjassa kuvatut tietojenkäsittelytoimet on kirjattu komission tietosuojavastaavan julkiseen rekisteriin viitteellä: DPR-EC-02631 Yhteyspisteiden hallinnointi viestintäverkkojen, sisältöjen ja teknologian pääosaston politiikkoja, ohjelmia ja hankkeita varten.'
-    ]
+        'Tässä asiakirjassa kuvatut tietojenkäsittelytoimet on kirjattu komission tietosuojavastaavan julkiseen rekisteriin viitteellä: DPR-EC-02631 Yhteyspisteiden hallinnointi viestintäverkkojen, sisältöjen ja teknologian pääosaston politiikkoja, ohjelmia ja hankkeita varten.',
+    ],
 ];

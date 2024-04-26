@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'ΠΡΕΣΒΕΙΣ ΤΗΣ ΕΥΡΩΠΑΪΚΗΣ ΕΒΔΟΜΑΔΑΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ',
-    'your_current_country'=>'Η τρέχουσα χώρα σου',
-    'visit_the'=> 'Επισκεφθείτε την',
-    'local_facebook_page'=>'τοπική σελίδα στο Facebook',
-    'local_website'=>'Τοπικός δικτυακός τόπος',
-    'ambassadors'=>'Πρέσβεις',
-    'no_ambassadors'=>'Δεν υπάρχουν ακόμα πρέσβεις',
-    'countries_with_ambassadors'=>'Χώρες με πρέσβεις',
-    'why_dont_you_volunteer'=>'Γιατί δεν γίνεσαι εθελοντής;'
+    'your_current_country' => 'Η τρέχουσα χώρα σου',
+    'visit_the' => 'Επισκεφθείτε την',
+    'local_facebook_page' => 'τοπική σελίδα στο Facebook',
+    'local_website' => 'Τοπικός δικτυακός τόπος',
+    'ambassadors' => 'Πρέσβεις',
+    'no_ambassadors' => 'Δεν υπάρχουν ακόμα πρέσβεις',
+    'countries_with_ambassadors' => 'Χώρες με πρέσβεις',
+    'why_dont_you_volunteer' => 'Γιατί δεν γίνεσαι εθελοντής;',
 
 ];

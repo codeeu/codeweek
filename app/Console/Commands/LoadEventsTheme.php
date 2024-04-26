@@ -34,10 +34,8 @@ class LoadEventsTheme extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load events Themes');
 
@@ -45,10 +43,8 @@ class LoadEventsTheme extends Command
         DB::table('event_theme')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-
         $old_theme = DB::table('api_event_theme')
             ->get();
-
 
         foreach ($old_theme as $old) {
 

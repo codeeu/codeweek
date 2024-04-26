@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Szervezõ: ',
+    'organised_by' => 'Szervezõ: ',
     'contact_email' => 'Kapcsolatfelvételi e-mail cím: ',
     'happening_at' => 'Helyszín: ',
     'from' => 'Idõpont: ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Kattintson ide az e-mailes megosztáshoz:',
         'subject' => 'Nézd ezt a remek programozási eseményt!',
         'body_1' => 'Szia, nézd csak ezt az ',
-        'body_2' => 'eseményt itt: '
+        'body_2' => 'eseményt itt: ',
     ],
     'edit' => 'Esemény szerkesztése',
     'note' => 'MEGJEGYZÉS: ',
     'pending_warning' => 'Ezt az eseményt még felülvizsgálják ',
     'pending_link' => 'a moderátorok',
-    'nearby_upcoming_events' => 'Közelgõ események a közelben:'
+    'nearby_upcoming_events' => 'Közelgõ események a közelben:',
 ];

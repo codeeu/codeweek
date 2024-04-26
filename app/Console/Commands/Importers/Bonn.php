@@ -3,14 +3,10 @@
 namespace App\Console\Commands\Importers;
 
 use App\Helpers\ImporterHelper;
-
-
 use App\RSSItems\BonnRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
-
 
 class Bonn extends Command
 {
@@ -37,31 +33,25 @@ class Bonn extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Loading Bonn API Items in Database");
+        Log::info('Loading Bonn API Items in Database');
 
-        $techicalUser = ImporterHelper::getTechnicalUser("bonn-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser('bonn-technical');
         $items = BonnRSSItem::whereNull('imported_at')->get();
 
-
-
-        foreach ($items as $item){
+        foreach ($items as $item) {
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
-
+        Log::info('Activities created from RSS Feed: '.count($items));
 
     }
 }

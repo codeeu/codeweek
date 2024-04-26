@@ -35,10 +35,8 @@ class LoadCountries extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load countries');
 
@@ -53,7 +51,7 @@ class LoadCountries extends Command
             $new->name = $old_country->name;
             $new->continent = $old_country->continent;
             $new->iso = $old_country->iso;
-            if ($old_country->population){
+            if ($old_country->population) {
                 $new->population = $old_country->population;
             }
 

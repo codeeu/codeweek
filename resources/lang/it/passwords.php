@@ -17,6 +17,6 @@ return [
     'reset' => 'La tua password č stata reimpostata!',
     'sent' => 'Abbiamo inviato un‘e-mail con il link per la reimpostazione della password!',
     'token' => 'Questo token di reimpostazione della password non č valido.',
-    'user' => "Non esiste un utente con questo indirizzo e-mail.",
+    'user' => 'Non esiste un utente con questo indirizzo e-mail.',
 
 ];

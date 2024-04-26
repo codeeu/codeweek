@@ -9,10 +9,12 @@ class UserEarnedExperience
 {
     use Dispatchable, SerializesModels;
 
-
     public $user;
+
     public $points;
+
     public $totalPoints;
+
     /**
      * Create a new event instance.
      *
@@ -24,6 +26,4 @@ class UserEarnedExperience
         $this->points = $points;
         $this->totalPoints = $totalPoints;
     }
-
-
 }

@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Es gibt noch keine zu meldende Veranstaltungen.',
     'report' => 'Die nachstehend aufgeführten Veranstaltungen haben begonnen oder sind bereits beendet. Füllen Sie ein paar Zahlen zu
     statistischen Zwecken für die Veranstaltung aus und fordern Sie Ihr Teilnahmezertifikat für die Code Week an. Sie
-    erhalten ein Zertifikat pro Veranstaltung.'
+    erhalten ein Zertifikat pro Veranstaltung.',
 ];
