@@ -14,6 +14,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Api;
 // use App\Http\Controllers\Auth;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BadgesController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\Codeweek4AllController;
@@ -298,10 +299,10 @@ Route::post('/volunteer', [VolunteerController::class, 'store'])
     ->name('volunteer_store');
 Route::post('/events', [EventController::class, 'store'])->middleware('auth');
 Route::patch('/events/{event}', [EventController::class, 'update'])->middleware('auth');
-Route::get('login/{provider}', [Auth\LoginController::class, 'redirectToProvider']);
+Route::get('login/{provider}', [LoginController::class, 'redirectToProvider']);
 Route::get(
     'login/{provider}/callback',
-    [Auth\LoginController::class, 'handleProviderCallback']
+    [LoginController::class, 'handleProviderCallback']
 );
 Route::get('/my', [EventController::class, 'my'])
     ->middleware('auth')
