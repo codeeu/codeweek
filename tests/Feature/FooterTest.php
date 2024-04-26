@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -22,7 +23,7 @@ class FooterTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function info_email_should_be_displayed_in_footer_only_on_ambassadors_page(): void
     {
 
@@ -30,7 +31,7 @@ class FooterTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function info_email_should_not_be_displayed_in_footer_on_other_pages(): void
     {
 

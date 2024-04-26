@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Achievements\Events\UserEarnedExperience;
 use App\User;
 use Carbon\Carbon;
@@ -13,7 +14,7 @@ class ExperienceTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function an_announcement_is_made_when_experience_is_earned(): void
     {
         Event::fake();
@@ -27,7 +28,7 @@ class ExperienceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_is_awarded_experience(): void
     {
 
@@ -45,7 +46,7 @@ class ExperienceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_is_awarded_experience_for_specifi_years(): void
     {
 
@@ -64,7 +65,7 @@ class ExperienceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_experience_can_be_stripped(): void
     {
 
@@ -101,7 +102,7 @@ class ExperienceTest extends TestCase
     //
     //    }
 
-    /** @test */
+    #[Test]
     public function a_user_earns_experience_when_an_activity_has_been_reported(): void
     {
 
@@ -117,7 +118,7 @@ class ExperienceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_leading_teacher_earns_experience_when_an_activity_has_been_approved_with_his_tag(): void
     {
 
@@ -137,7 +138,7 @@ class ExperienceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_reset_points(): void
     {
 

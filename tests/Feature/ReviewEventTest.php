@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -15,7 +16,7 @@ class ReviewEventTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_of_right_country_can_see_the_review_section(): void
     {
         $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole('ambassador');
@@ -28,7 +29,7 @@ class ReviewEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function visitors_cant_see_the_review_section(): void
     {
         $visitor = \App\User::factory()->create(['country_iso' => 'FR']);

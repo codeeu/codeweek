@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -25,7 +26,7 @@ class EventsTest extends TestCase
         $this->event->tags()->saveMany(\App\Tag::factory()->count(3)->make());
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_browse_approved_events(): void
     {
         $this->get('/view/'.$this->event->id.'/random')->assertSee(
@@ -33,14 +34,14 @@ class EventsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function a_user_cant_browse_non_approved_events(): void
     {
         $this->event->update(['status' => 'REJECTED']);
         $this->get('/view/'.$this->event->id.'/random')->assertStatus(403);
     }
 
-    /** @test */
+    #[Test]
     public function a_user_should_be_redirected_on_pending_activities(): void
     {
         $this->event->update(['status' => 'PENDING']);
@@ -49,7 +50,7 @@ class EventsTest extends TestCase
         )->assertRedirect('login');
     }
 
-    /** @test */
+    #[Test]
     public function an_event_has_an_organizer(): void
     {
         $this->get('/view/'.$this->event->id.'/random')->assertSee(
@@ -57,7 +58,7 @@ class EventsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_see_audiences_associated_with_events(): void
     {
         foreach ($this->event->audiences()->get() as &$value) {
@@ -67,7 +68,7 @@ class EventsTest extends TestCase
         }
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_see_themes_associated_with_events(): void
     {
         foreach ($this->event->themes()->get() as &$value) {
@@ -77,7 +78,7 @@ class EventsTest extends TestCase
         }
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_see_tags_associated_with_events(): void
     {
         foreach ($this->event->tags()->get() as &$value) {
@@ -87,7 +88,7 @@ class EventsTest extends TestCase
         }
     }
 
-    /** @test */
+    #[Test]
     public function visitors_cant_see_the_user_email(): void
     {
         $event = \App\Event::factory()->create([
@@ -101,7 +102,7 @@ class EventsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_from_other_countries_cant_see_the_user_email(): void
     {
         $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole(
@@ -120,7 +121,7 @@ class EventsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_from_same_country_can_see_the_user_email(): void
     {
         $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole(
@@ -137,7 +138,7 @@ class EventsTest extends TestCase
         $this->get('/view/'.$event->id.'/random')->assertSee('foo@bar.com');
     }
 
-    /** @test */
+    #[Test]
     public function admins_can_see_the_user_email(): void
     {
         $admin = \App\User::factory()->create()->assignRole('super admin');
@@ -151,7 +152,7 @@ class EventsTest extends TestCase
         $this->get('/view/'.$event->id.'/random')->assertSee('foo@bar.com');
     }
 
-    /** @test */
+    #[Test]
     public function user_see_detail_picture_if_available(): void
     {
         $event = \App\Event::factory()->create([
@@ -162,7 +163,7 @@ class EventsTest extends TestCase
         $this->get('/view/'.$event->id.'/random')->assertSee('foobar.png');
     }
 
-    /** @test */
+    #[Test]
     public function user_see_normal_picture_if_detail_is_not_available(): void
     {
         $event = \App\Event::factory()->create([

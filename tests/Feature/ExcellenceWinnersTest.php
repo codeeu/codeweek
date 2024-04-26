@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\Codeweek4AllHelper;
 use App\Helpers\ExcellenceWinnersHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -66,7 +67,7 @@ class ExcellenceWinnersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_codes_with_500_students_or_more(): void
     {
         //Create the Events
@@ -80,7 +81,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertNotContains('cw19-not-reported', $codes);
     }
 
-    /** @test */
+    #[Test]
     public function should_get_codes_with_10_organisers_or_more(): void
     {
 
@@ -94,7 +95,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertNotContains('cw19-not-reported', $codes);
     }
 
-    /** @test */
+    #[Test]
     public function should_get_three_countries_or_more(): void
     {
 
@@ -110,7 +111,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertNotContains('cw19-not-reported', $codes);
     }
 
-    /** @test */
+    #[Test]
     public function should_get_winners_codes(): void
     {
 
@@ -131,7 +132,7 @@ class ExcellenceWinnersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_winners_codes_for_specific_year(): void
     {
 
@@ -150,7 +151,7 @@ class ExcellenceWinnersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_winners_codes_details(): void
     {
 
@@ -164,7 +165,7 @@ class ExcellenceWinnersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_winners_fulfilling_all_criteria(): void
     {
 

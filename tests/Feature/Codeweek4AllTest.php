@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -25,7 +26,7 @@ class Codeweek4AllTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function count_of_activities_should_be_visible(): void
     {
         $this->withoutExceptionHandling();
@@ -34,7 +35,7 @@ class Codeweek4AllTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function count_of_participants_should_be_visible(): void
     {
         //dd(Event::all());
@@ -44,7 +45,7 @@ class Codeweek4AllTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function count_of_unique_members_should_be_visible(): void
     {
         \App\Event::factory()->count(2)->create(['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 1, 'end_date' => Carbon::now()->subYear()]);
@@ -56,7 +57,7 @@ class Codeweek4AllTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function countries_should_be_displayed(): void
     {
         $this->withoutExceptionHandling();
@@ -65,7 +66,7 @@ class Codeweek4AllTest extends TestCase
             ->assertDontSee('Bulgaria');
     }
 
-    /** @test */
+    #[Test]
     public function reporting_percentage_should_be_displayed(): void
     {
         \App\Event::factory()->count(3)->create(['codeweek_for_all_participation_code' => 'cw19-reporting', 'status' => 'APPROVED', 'creator_id' => 1, 'reported_at' => Carbon::now(), 'end_date' => Carbon::now()->subYear()]);

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\PodcastGuest;
 use App\PodcastResource;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -12,7 +13,7 @@ class PodcastsTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function it_should_list_active_podcasts_in_rss(): void
     {
         //        $this->withoutExceptionHandling();
@@ -37,7 +38,7 @@ class PodcastsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_list_active_podcasts_in_html(): void
     {
         create(\App\Podcast::class, ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
@@ -59,7 +60,7 @@ class PodcastsTest extends TestCase
         $response->assertDontSee('pending title');
     }
 
-    /** @test */
+    #[Test]
     public function podcast_can_have_guests(): void
     {
         $podcast = create(\App\Podcast::class);
@@ -71,7 +72,7 @@ class PodcastsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function podcast_should_list_guests(): void
     {
 
@@ -85,7 +86,7 @@ class PodcastsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function podcast_should_list_resources(): void
     {
 
@@ -100,7 +101,7 @@ class PodcastsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function podcast_can_have_resources(): void
     {
         $this->withoutExceptionHandling();

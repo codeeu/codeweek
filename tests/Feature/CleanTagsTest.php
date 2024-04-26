@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Helpers\TagsHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -11,7 +12,7 @@ class CleanTagsTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function duplicates_should_be_removed(): void
     {
         $event = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'APPROVED']);
@@ -52,7 +53,7 @@ class CleanTagsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function tags_should_not_be_duplicated(): void
     {
         //$this->withoutExceptionHandling();

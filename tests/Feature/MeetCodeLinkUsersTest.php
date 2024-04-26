@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\ImporterHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -12,10 +13,8 @@ class MeetCodeLinkUsersTest extends TestCase
 
     /**
      * A basic feature test example.
-     *
-     *
-     * @test
      */
+    #[Test]
     public function it_should_link_activity_to_user(): void
     {
         //We got a user

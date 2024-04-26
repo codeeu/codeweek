@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -21,7 +22,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function type_should_be_seen(): void
     {
 
@@ -30,7 +31,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function user_can_display_teach_resources(): void
     {
         $teachItem = \App\ResourceItem::factory()->create(['teach' => 1, 'learn' => 0]);
@@ -42,7 +43,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function no_filters_should_show_all_resources(): void
     {
 
@@ -52,7 +53,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_name(): void
     {
 
@@ -65,7 +66,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_levels(): void
     {
         $level = create(\App\ResourceLevel::class, ['id' => 1]);
@@ -82,7 +83,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_types(): void
     {
         $type = \App\ResourceType::factory()->create(['id' => 1]);
@@ -99,7 +100,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_subject(): void
     {
 
@@ -117,7 +118,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_category(): void
     {
 
@@ -135,7 +136,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_languages(): void
     {
 
@@ -153,7 +154,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_programming_languages(): void
     {
 
@@ -171,7 +172,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_resource_by_types_and_language(): void
     {
 
@@ -194,7 +195,7 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function no_duplicates_allowed(): void
     {
         $type = \App\ResourceType::factory()->create(['id' => 1]);

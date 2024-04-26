@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -9,7 +10,7 @@ class UpdateUserTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function a_user_can_be_updated_by_its_owner(): void
     {
         $user = \App\User::factory()->create();
@@ -61,7 +62,7 @@ class UpdateUserTest extends TestCase
         });
     }
 
-    /** @test */
+    #[Test]
     public function a_user_cant_update_its_email(): void
     {
         $user = \App\User::factory()->create();

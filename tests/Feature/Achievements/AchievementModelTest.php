@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Achievements\Achievement;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -10,7 +11,7 @@ class AchievementModelTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function it_has_a_name(): void
     {
         $achievement = create(Achievement::class, ['name' => 'some badge']);
@@ -18,7 +19,7 @@ class AchievementModelTest extends TestCase
         self::assertEquals('some badge', $achievement->name);
     }
 
-    /** @test */
+    #[Test]
     public function it_has_a_description(): void
     {
         $achievement = create(Achievement::class, ['description' => 'Foobar']);
@@ -26,7 +27,7 @@ class AchievementModelTest extends TestCase
         self::assertEquals('Foobar', $achievement->description);
     }
 
-    /** @test */
+    #[Test]
     public function it_has_an_icon(): void
     {
         $achievement = create(Achievement::class, ['icon' => 'some-path.svg']);

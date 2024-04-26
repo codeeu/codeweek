@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Helpers\ImporterHelper;
 use App\Importer;
@@ -24,13 +25,13 @@ class CleanImportsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_id_should_be_set_as_to_be_deleted(): void
     {
         $this->assertEquals(1000, ImporterHelper::getDeletedEventsIDs()[0]);
     }
 
-    /** @test */
+    #[Test]
     public function event_should_be_deleted(): void
     {
 

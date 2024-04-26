@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -19,7 +20,7 @@ class UpdateThemeAndAudienceTest extends TestCase
     }
 
 
-    /** @test */
+    #[Test]
     public function it_should_not_create_if_themes_already_exist(): void
     {
 
@@ -37,7 +38,7 @@ class UpdateThemeAndAudienceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_change_the_audience_for_meet_and_code(): void
     {
 
@@ -54,7 +55,7 @@ class UpdateThemeAndAudienceTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_change_the_theme_for_meet_and_code(): void
     {
 

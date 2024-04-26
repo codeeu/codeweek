@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -9,9 +10,7 @@ class LinkLeadingTeachersToActivitiesTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_should_link_activities_to_LT(): void
     {
 

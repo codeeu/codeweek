@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Excellence;
 use App\Mail\NotifyWinner;
 use Carbon\Carbon;
@@ -13,7 +14,7 @@ class NotifyExcellenceWinnersTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function notify_winners_for_specific_edition(): void
     {
         $this->withExceptionHandling();
@@ -40,7 +41,7 @@ class NotifyExcellenceWinnersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function deleted_users_should_not_be_notified(): void
     {
         $this->withExceptionHandling();
@@ -63,7 +64,7 @@ class NotifyExcellenceWinnersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function users_that_dont_receive_mails_should_not_be_notified(): void
     {
         $this->withExceptionHandling();

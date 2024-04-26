@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Audience;
 use App\Theme;
 use Carbon\Carbon;
@@ -19,7 +20,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_for_all_events(): void
     {
         $belgium = \App\Country::factory()->create(['iso' => 'BE']);
@@ -35,7 +36,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_events_by_country(): void
     {
         $belgium = \App\Country::factory()->create(['iso' => 'BE']);
@@ -55,7 +56,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_only_this_year_events(): void
     {
         $eventLastYear = \App\Event::factory()->create(['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
@@ -65,7 +66,7 @@ class SearchEventTest extends TestCase
             ->assertSee($eventThisYear->title);
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_previous_years_events(): void
     {
         $eventLastYear = \App\Event::factory()->create(['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
@@ -78,7 +79,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function bug_fix_laravel58(): void
     {
         $eventLastYear = \App\Event::factory()->create(['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
@@ -91,7 +92,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_on_all_events(): void
     {
         $eventInThePast = \App\Event::factory()->create(['end_date' => new Carbon('yesterday'), 'status' => 'APPROVED']);
@@ -102,7 +103,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_by_query_on_title(): void
     {
 
@@ -117,7 +118,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_by_query_on_codeweek_4_all_code(): void
     {
 
@@ -132,7 +133,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_by_theme(): void
     {
 
@@ -161,7 +162,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_by_audience(): void
     {
         \App\Audience::factory()->count(3)->create();
@@ -189,7 +190,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_by_codeweek_4_all_tag(): void
     {
 
@@ -202,7 +203,7 @@ class SearchEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_can_search_by_codeweek_4_all_tag_in_the_tag_field(): void
     {
 

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Certificate;
 use App\Event;
 use Carbon\Carbon;
@@ -25,7 +26,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_owner_should_see_the_report_banner(): void
     {
 
@@ -38,7 +39,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function visitors_should_not_see_the_report_banner(): void
     {
 
@@ -49,7 +50,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function owners_should_not_see_the_report_banner_if_event_is_not_over_yet(): void
     {
 
@@ -63,7 +64,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function reporting_only_when_logged_in(): void
     {
 
@@ -74,7 +75,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function report_event_status_update(): void
     {
 
@@ -106,7 +107,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function exception_should_be_thrown_while_trying_to_report(): void
     {
 
@@ -124,7 +125,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function user_should_see_list_of_his_reportable_events(): void
     {
         $this->signIn(\App\User::factory()->create());
@@ -145,7 +146,7 @@ class ReportEventTest extends TestCase
             ->assertDontSee($futureEvent->title);
     }
 
-    /** @test */
+    #[Test]
     public function text_should_not_be_detected_as_greek(): void
     {
 
@@ -154,7 +155,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function text_should_be_detected_as_greek(): void
     {
 
@@ -164,7 +165,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function text_should_be_detected_as_greek_with_all_uppercase(): void
     {
 
@@ -174,7 +175,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function text_should_be_detected_as_greek_with_one_greek_char(): void
     {
 
@@ -184,7 +185,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function text_should_not_be_detected_as_greek_with_one_special_char(): void
     {
 
@@ -194,7 +195,7 @@ class ReportEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function text_should_not_be_detected_as_greek_with_several_special_chars(): void
     {
 

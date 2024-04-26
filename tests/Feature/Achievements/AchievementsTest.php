@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Achievements\Achievement;
 use App\Event;
 use App\User;
@@ -14,7 +15,7 @@ class AchievementsTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function a_user_can_be_assigned_any_achievement_badge(): void
     {
         // Given we have a user
@@ -31,7 +32,7 @@ class AchievementsTest extends TestCase
         $this->assertTrue($user->achievements[0]->is($achievement));
     }
 
-    /** @test */
+    #[Test]
     public function achievements_should_be_linked_to_user_when_reporting_events(): void
     {
 

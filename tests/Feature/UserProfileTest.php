@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -26,7 +27,7 @@ class UserProfileTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_display_user_name(): void
     {
 
@@ -36,7 +37,7 @@ class UserProfileTest extends TestCase
         $response->assertSeeText($this->user->lastname);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_display_achievements(): void
     {
 

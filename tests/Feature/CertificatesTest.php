@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\EventHelper;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -27,7 +28,7 @@ class CertificatesTest extends TestCase
         $this->event->tags()->saveMany(\App\Tag::factory()->count(3)->make());
     }
 
-    /** @test */
+    #[Test]
     public function it_should_get_reported_events_without_certificate_url(): void
     {
         $faultyCertificates = \App\Event::factory()->count(10)->create(['status' => 'APPROVED', 'reported_at' => Carbon::now(), 'approved_by' => 100, 'certificate_url' => null]);

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Certificate;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -22,7 +23,7 @@ class CertificateGenerationTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_escape_special_characters(): void
     {
 

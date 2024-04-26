@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Helpers\ReminderHelper;
 use App\Mail\RemindCreator;
@@ -15,7 +16,7 @@ class ReminderCreatorsTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function only_get_creators_with_reportable_events(): void
     {
         Mail::fake();
@@ -58,7 +59,7 @@ class ReminderCreatorsTest extends TestCase
         Mail::assertQueued(RemindCreator::class, 3);
     }
 
-    /** @test */
+    #[Test]
     public function mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
@@ -73,7 +74,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function only_one_mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
@@ -96,7 +97,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_the_reportable_events_list(): void
     {
         $this->withExceptionHandling();
@@ -111,7 +112,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function no_mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
@@ -126,7 +127,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function notification_reports_should_increase(): void
     {
 
@@ -148,7 +149,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function notification_reports_should_increase_up_to_3_times(): void
     {
         $this->withExceptionHandling();
@@ -163,7 +164,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function notification_date_should_be_updated(): void
     {
 
@@ -179,7 +180,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function deleted_users_should_not_receive_emails(): void
     {
 
@@ -199,7 +200,7 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function opted_out_users_should_not_receive_emails(): void
     {
 

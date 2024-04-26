@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Http\Controllers\UserController;
 use App\User;
@@ -22,7 +23,7 @@ class DatabaseMigrationUserTest extends TestCase
 
     private $france;
 
-    /** @test */
+    #[Test]
     public function users_with_same_email_should_be_merged(): void
     {
 
@@ -57,7 +58,7 @@ class DatabaseMigrationUserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_the_main_user_when_user_has_two_roles(): void
     {
 
@@ -74,7 +75,7 @@ class DatabaseMigrationUserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_the_main_user_when_user_is_ambassador(): void
     {
 
@@ -91,7 +92,7 @@ class DatabaseMigrationUserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_get_the_main_user_when_user_is_ambassador_with_more_data(): void
     {
 

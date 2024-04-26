@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\MeetAndCodeHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -10,7 +11,7 @@ class UpdateLanguageTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_change_the_language_for_meet_and_code(): void
     {
         // Create Event with event_url from meet and code
@@ -22,7 +23,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals('hu', $myEvent->fresh()->language);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_change_the_language_for_meet_and_code_with_languages_set(): void
     {
         // Create Event with event_url from meet and code
@@ -34,7 +35,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals('bar', $myEvent->fresh()->language);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_get_language_from_Meet_and_code_URL(): void
     {
         $url = 'https://meet-and-code.org/be/nl/event-show/3959';
@@ -42,7 +43,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals('nl', $result);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_get_language_from_Meet_and_code_first_URLs(): void
     {
         $url = 'https://meet-and-code.org/event/details/216';
@@ -50,7 +51,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals(null, $result);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_get_language_from_Meet_and_code_bad_URLs(): void
     {
         $url = 'https://meet-and-code.org/ro';
@@ -58,7 +59,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals(null, $result);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_get_language_from_Meet_and_code_for_russian(): void
     {
         $url = 'https://meet-and-code.org/be/ru/event-show/3959';
@@ -66,7 +67,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals(null, $result);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_get_language_from_Meet_and_code_for_norwegian(): void
     {
         $url = 'https://meet-and-code.org/be/no/event-show/3959';
@@ -74,7 +75,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals(null, $result);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_get_language_from_Meet_and_code_for_kazakztan(): void
     {
         $url = 'https://meet-and-code.org/be/ks/event-show/3959';
@@ -82,7 +83,7 @@ class UpdateLanguageTest extends TestCase
         $this->assertEquals(null, $result);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_get_language_from_Meet_and_code_for_ireland(): void
     {
         $url = 'https://meet-and-code.org/be/ie/event-show/3959';

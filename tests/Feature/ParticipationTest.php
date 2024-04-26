@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -9,7 +10,7 @@ class ParticipationTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function anonymous_users_cant_create_participation_certificate(): void
     {
 
@@ -17,7 +18,7 @@ class ParticipationTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function user_can_have_a_certificate_of_participation(): void
     {
 
@@ -30,7 +31,7 @@ class ParticipationTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function user_should_be_allowed_to_download_certificate(): void
     {
 
@@ -43,7 +44,7 @@ class ParticipationTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function user_should_only_see_their_certificates(): void
     {
 

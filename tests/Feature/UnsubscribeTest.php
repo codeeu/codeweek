@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -9,7 +10,7 @@ class UnsubscribeTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function should_unsubscribe_user(): void
     {
         $this->withoutExceptionHandling();
@@ -26,7 +27,7 @@ class UnsubscribeTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_not_unsubscribe_user(): void
     {
         //        $this->withoutExceptionHandling();
