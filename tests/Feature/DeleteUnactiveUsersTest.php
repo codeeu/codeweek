@@ -2,11 +2,11 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\UserHelper;
 use App\Mail\DeletedUsers;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class DeleteUnactiveUsersTest extends TestCase

@@ -31,7 +31,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  */
 class Volunteer extends Model
 {
-
     use HasFactory;
 
     protected $guarded = [];

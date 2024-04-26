@@ -2,12 +2,12 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class CreateEventTest extends TestCase
@@ -33,7 +33,7 @@ final class CreateEventTest extends TestCase
 
         $this->expectException(AuthenticationException::class);
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -55,7 +55,7 @@ final class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -87,7 +87,7 @@ final class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The audience is invalid');
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -112,7 +112,7 @@ final class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The theme is invalid');
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -137,7 +137,7 @@ final class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The selected language is invalid');
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -159,7 +159,7 @@ final class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -181,7 +181,7 @@ final class CreateEventTest extends TestCase
     {
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -251,7 +251,7 @@ final class CreateEventTest extends TestCase
 
         $ambassador_be = \App\User::factory()->create(['country_iso' => $belgium->iso])->assignRole('ambassador');
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
 
         $event->country_iso = $belgium->iso;
         $event->theme = '1';
@@ -282,7 +282,7 @@ final class CreateEventTest extends TestCase
         $leading_teacher = \App\User::factory()->create(['country_iso' => $belgium->iso, 'tag' => 'my-tag'])->assignRole('leading teacher');
 
         $this->assertCount(0, $leading_teacher->taggedActivities);
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
 
         $event->country_iso = $belgium->iso;
         $event->theme = '1';
@@ -305,7 +305,7 @@ final class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 

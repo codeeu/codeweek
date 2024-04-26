@@ -2,11 +2,10 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use PHPUnit\Framework\Attributes\Test;
-use App\User;
+use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Event;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class InfluenceTest extends TestCase

@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Http\Livewire\LeadingTeacherReportForm;
 use App\LeadingTeacherAction;
 use App\Mail\LeadingTeachingActionAdded;
@@ -10,6 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Livewire;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class LeadingTeachersReportFormTest extends TestCase

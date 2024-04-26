@@ -16,7 +16,7 @@ class ResourceItemFactory extends Factory
         return [
             'name' => $this->faker->text(40),
             'description' => $this->faker->text(400),
-            'source' => $this->faker->url()
+            'source' => $this->faker->url(),
         ];
     }
 }

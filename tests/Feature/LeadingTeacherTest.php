@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Http\Livewire\LeadingTeacherSignupForm;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Livewire;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class LeadingTeacherTest extends TestCase
