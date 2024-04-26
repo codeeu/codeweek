@@ -2,16 +2,17 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\ReminderHelper;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class MailingActiveOrganizersTest extends TestCase
+final class MailingActiveOrganizersTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_select_only_active_organizers(): void
     {
         $active = \App\User::factory()->create(['email' => 'active@gmail.com', 'magic_key' => 131313]);

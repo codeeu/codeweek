@@ -2,16 +2,17 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
-class CreateOnlineEventTest extends TestCase
+final class CreateOnlineEventTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_can_create_online_event_without_location(): void
     {
         //$this->withoutExceptionHandling();
@@ -42,7 +43,7 @@ class CreateOnlineEventTest extends TestCase
         $this->assertEquals('fi', $event->fresh()->language);
     }
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_can_create_private_online_event_without_location(): void
     {
         //$this->withoutExceptionHandling();
@@ -76,7 +77,7 @@ class CreateOnlineEventTest extends TestCase
         $this->assertNotEquals(0, $event->fresh()->longitude);
     }
 
-    /** @test */
+    #[Test]
     public function online_event_can_have_a_location(): void
     {
         $this->withoutExceptionHandling();

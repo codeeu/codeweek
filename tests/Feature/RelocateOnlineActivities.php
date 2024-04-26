@@ -2,16 +2,17 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class RelocateOnlineActivities extends TestCase
+final class RelocateOnlineActivities extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_relocate_event(): void
     {
 
@@ -30,7 +31,7 @@ class RelocateOnlineActivities extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_relocate_event_on_creation(): void
     {
         Mail::fake();

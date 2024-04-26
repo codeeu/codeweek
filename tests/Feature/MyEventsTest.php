@@ -2,15 +2,16 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class MyEventsTest extends TestCase
+final class MyEventsTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function a_user_can_see_his_events(): void
     {
         $this->signIn(\App\User::factory()->create());
@@ -23,7 +24,7 @@ class MyEventsTest extends TestCase
             ->assertDontSee($anotherEventNotByMe->title);
     }
 
-    /** @test */
+    #[Test]
     public function user_count_of_activities(): void
     {
 

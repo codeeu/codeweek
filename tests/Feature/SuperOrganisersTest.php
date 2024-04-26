@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Mail\NotifySuperOrganiser;
 use App\Mail\NotifyWinner;
 use App\Queries\SuperOrganiserQuery;
@@ -10,7 +11,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class SuperOrganisersTest extends TestCase
+final class SuperOrganisersTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -29,7 +30,7 @@ class SuperOrganisersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_get_super_organiser_winners(): void
     {
 
@@ -39,7 +40,7 @@ class SuperOrganisersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function notify_winners_for_specific_edition(): void
     {
         $this->withExceptionHandling();
@@ -75,7 +76,7 @@ class SuperOrganisersTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function notified_organisers_should_be_flagged_as_notified_with_no_interference(): void
     {
         $this->withExceptionHandling();

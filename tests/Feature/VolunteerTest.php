@@ -2,10 +2,11 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class VolunteerTest extends TestCase
+final class VolunteerTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -20,7 +21,7 @@ class VolunteerTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_create_volunteer(): void
     {
 
@@ -38,7 +39,7 @@ class VolunteerTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_list_pending_volunteers(): void
     {
 
@@ -50,7 +51,7 @@ class VolunteerTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_promote_volunteer_to_ambassador(): void
     {
 
@@ -67,7 +68,7 @@ class VolunteerTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_reject_volunteer(): void
     {
 

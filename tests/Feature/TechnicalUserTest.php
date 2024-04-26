@@ -2,16 +2,17 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\ImporterHelper;
 use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class TechnicalUserTest extends TestCase
+final class TechnicalUserTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_create_a_technical_user(): void
     {
         $key = 'foobar';

@@ -2,15 +2,16 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class UpdateEventTest extends TestCase
+final class UpdateEventTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function event_can_be_updated_by_its_owner(): void
     {
 
@@ -52,7 +53,7 @@ class UpdateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_can_be_updated_by_its_owner_when_approved(): void
     {
 
@@ -86,7 +87,7 @@ class UpdateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_can_not_be_updated_by_visitor(): void
     {
 

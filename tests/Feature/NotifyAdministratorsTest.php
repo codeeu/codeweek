@@ -2,13 +2,14 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Mail\NotifyAdministrator;
 use App\Notification;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class NotifyAdministratorsTest extends TestCase
+final class NotifyAdministratorsTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -20,7 +21,7 @@ class NotifyAdministratorsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function notify_administrators_when_new_events_are_ready_to_be_added_to_the_calendar(): void
     {
         Mail::fake();

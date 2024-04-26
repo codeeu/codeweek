@@ -2,16 +2,17 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class GermanUsersCreation extends TestCase
+final class GermanUsersCreation extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_create_user_and_change_owner(): void
     {
 
@@ -30,7 +31,7 @@ class GermanUsersCreation extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_find_user_and_change_owner(): void
     {
 

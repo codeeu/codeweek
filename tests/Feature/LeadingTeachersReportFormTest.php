@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Http\Livewire\LeadingTeacherReportForm;
 use App\LeadingTeacherAction;
 use App\Mail\LeadingTeachingActionAdded;
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Mail;
 use Livewire;
 use Tests\TestCase;
 
-class LeadingTeachersReportFormTest extends TestCase
+final class LeadingTeachersReportFormTest extends TestCase
 {
     use RefreshDatabase;
 
@@ -33,7 +34,7 @@ class LeadingTeachersReportFormTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function leading_teacher_action_should_be_created(): void
     {
         // Submit the form

@@ -2,17 +2,18 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Helpers\EventHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class RelocateCenteredActivities extends TestCase
+final class RelocateCenteredActivities extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_filter_centered_and_non_relocated_events(): void
     {
         $france = \App\Country::factory()->create([

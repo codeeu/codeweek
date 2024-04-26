@@ -2,17 +2,18 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class SyncExperienceCommandsTest extends TestCase
+final class SyncExperienceCommandsTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function leading_teacher_activity_achievement_command(): void
     {
 
