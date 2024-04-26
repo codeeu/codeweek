@@ -13,9 +13,12 @@ class Podcast extends Model implements Feedable
     //
     protected $guarded = [];
 
-    protected $casts = [
-        'release_date' => 'datetime',
-    ];
+    protected function casts(): array
+    {
+        return [
+            'release_date' => 'datetime',
+        ];
+    }
 
     public function guests(): HasMany
     {
