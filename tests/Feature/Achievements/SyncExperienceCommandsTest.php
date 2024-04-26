@@ -3,13 +3,13 @@
 namespace Tests\Feature\Achievements\Achievements;
 
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class SyncExperienceCommandsTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     #[Test]
     public function leading_teacher_activity_achievement_command(): void

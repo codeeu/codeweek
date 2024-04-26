@@ -5,14 +5,14 @@ namespace Tests\Feature\Achievements\Achievements;
 use App\Achievements\Events\UserEarnedExperience;
 use App\User;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Event;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class ExperienceTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     #[Test]
     public function an_announcement_is_made_when_experience_is_earned(): void

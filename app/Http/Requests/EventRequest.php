@@ -22,7 +22,9 @@ class EventRequest extends FormRequest
      */
     public function rules(): array
     {
-        $languages = array_keys(Lang::get('base.languages'));
+        //dd(Lang::get('base.languages'));
+        //$languages = array_keys(Lang::get('base.languages'));
+        $languages = config('app.locales');
 
         return [
             'activity_type' => 'required',

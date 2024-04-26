@@ -15,7 +15,8 @@ final class CreateOnlineEventTest extends TestCase
     #[Test]
     public function an_authenticated_user_can_create_online_event_without_location(): void
     {
-        //$this->withoutExceptionHandling();
+        $this->withoutExceptionHandling();
+        $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
         $event = \App\Event::factory()->make();
@@ -35,6 +36,8 @@ final class CreateOnlineEventTest extends TestCase
         $event->language = 'fi';
 
         $this->post('/events', $event->toArray());
+
+
 
         $event = Event::where('title', $event->title)->first();
 
