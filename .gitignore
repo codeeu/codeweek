@@ -24,4 +24,4 @@ auth.json
 vue-i18n-locales.generated.js
 /storage/debugbar/
 /phpunit.xml
-/.phpunit.result.cache
+/.phpunit.cache
