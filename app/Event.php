@@ -69,13 +69,6 @@ class Event extends Model
         'mass_added_for',
     ];
 
-    protected $casts = [
-        'description' => PurifyHtmlOnGet::class,
-        'title' => PurifyHtmlOnGet::class,
-        'location' => PurifyHtmlOnGet::class,
-        'language' => PurifyHtmlOnGet::class,
-    ];
-
     //    protected $policies = [
     //        'App\Event' => 'App\Policies\EventPolicy',
     //        Event::class => EventPolicy::class
@@ -89,6 +82,16 @@ class Event extends Model
     }
 
     protected static $logFillable = true;
+
+    protected function casts(): array
+    {
+        return [
+            'description' => PurifyHtmlOnGet::class,
+            'title' => PurifyHtmlOnGet::class,
+            'location' => PurifyHtmlOnGet::class,
+            'language' => PurifyHtmlOnGet::class,
+        ];
+    }
 
     public function getEventUrlAttribute($url)
     {
