@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\ReminderHelper;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -11,7 +12,7 @@ class MailingInactiveOrganizersTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_select_only_inactive_organizers(): void
     {
         $active = \App\User::factory()->create(['email' => 'active@gmail.com']);

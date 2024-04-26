@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Country;
 use App\Event;
 use App\User;
@@ -49,7 +50,7 @@ class AmbassadorTest extends TestCase
     //
     //    }
 
-    /** @test */
+    #[Test]
     public function ambassadors_without_bio_and_avatars_should_not_be_displayed(): void
     {
 
@@ -68,7 +69,7 @@ class AmbassadorTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_without_picture_should_not_be_displayed(): void
     {
 
@@ -79,7 +80,7 @@ class AmbassadorTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_with_picture_should_be_displayed(): void
     {
 
@@ -88,7 +89,7 @@ class AmbassadorTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function get_ambassadors_for_a_country(): void
     {
 
@@ -100,7 +101,7 @@ class AmbassadorTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function display_email_should_be_used_if_present(): void
     {
 
@@ -114,7 +115,7 @@ class AmbassadorTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function signedin_users_should_see_their_community_page(): void
     {
 
@@ -127,7 +128,7 @@ class AmbassadorTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function not_logged_users_should_see_their_country_ambassadors_based_on_geoIP(): void
     {
         GeoIP::shouldReceive('getClientIP')
@@ -136,7 +137,7 @@ class AmbassadorTest extends TestCase
         $this->get('/community');
     }
 
-    /** @test */
+    #[Test]
     public function ambassador_page_for_a_country_should_display_the_facebook_link(): void
     {
 
@@ -146,7 +147,7 @@ class AmbassadorTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function info_email_should_be_displayed_in_footer_only_on_community_page(): void
     {
 

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -18,7 +19,7 @@ class OnlineEventsWorkflowTest extends TestCase
      * admins should receive an email when event is promoted
      */
 
-    /** @test */
+    #[Test]
     public function it_should_not_list_online_events_for_unauthenticated_users(): void
     {
         $response = $this->get('/online/list');
@@ -30,7 +31,7 @@ class OnlineEventsWorkflowTest extends TestCase
      * online events only
      * ambassadors only see online events from their own countries
      */
-    /** @test */
+    #[Test]
     public function it_should_list_online_events_for_ambassadors(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -60,7 +61,7 @@ class OnlineEventsWorkflowTest extends TestCase
  * online events only
  * ambassadors only see online events from their own countries
  */
-    /** @test */
+    #[Test]
     public function it_should_list_online_events_when_month_is_between_start_and_end_and_started_recently(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -84,7 +85,7 @@ class OnlineEventsWorkflowTest extends TestCase
         $response->assertStatus(200);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_list_all_online_events_for_admins(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -110,7 +111,7 @@ class OnlineEventsWorkflowTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_can_promote_events_from_their_countries(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -128,7 +129,7 @@ class OnlineEventsWorkflowTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function visitors_cannot_promote_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -145,7 +146,7 @@ class OnlineEventsWorkflowTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_cannot_feature_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -163,7 +164,7 @@ class OnlineEventsWorkflowTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function promoted_event_creates_notification_for_administrators(): void
     {
         $this->seed('RolesAndPermissionsSeeder');

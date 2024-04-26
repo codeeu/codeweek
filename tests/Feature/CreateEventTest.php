@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -13,7 +14,7 @@ class CreateEventTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function a_guest_can_not_create_event(): void
     {
 
@@ -24,7 +25,7 @@ class CreateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_guest_user_cannot_create_events_with_post(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -47,7 +48,7 @@ class CreateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_can_create_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -76,7 +77,7 @@ class CreateEventTest extends TestCase
         $this->get($event->path())->assertSee('Dutch');
     }
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_cannot_create_event_without_existing_audience(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -101,7 +102,7 @@ class CreateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_cannot_create_event_without_existing_theme(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -126,7 +127,7 @@ class CreateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_cannot_create_event_without_existing_language(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -151,7 +152,7 @@ class CreateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function address_should_be_stored_in_user_address_book(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -175,7 +176,7 @@ class CreateEventTest extends TestCase
         $this->assertCount(1, auth()->user()->fresh()->locations);
     }
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_can_create_events_with_existing_codeweek4all_code(): void
     {
         $this->signIn();
@@ -201,21 +202,21 @@ class CreateEventTest extends TestCase
         $this->get($event->path())->assertSee('my_custom_code');
     }
 
-    /** @test */
+    #[Test]
     public function event_should_have_a_title(): void
     {
         $this->publishEvent(['title' => null])->assertSessionHasErrors('title');
 
     }
 
-    /** @test */
+    #[Test]
     public function event_should_have_a_description(): void
     {
         $this->publishEvent(['description' => null])->assertSessionHasErrors('description');
 
     }
 
-    /** @test */
+    #[Test]
     public function event_should_get_valid_slug(): void
     {
         $this->withExceptionHandling();
@@ -236,7 +237,7 @@ class CreateEventTest extends TestCase
         $response->assertStatus(503);
     }
 
-    /** @test */
+    #[Test]
     public function ambassadors_should_be_notified(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -264,7 +265,7 @@ class CreateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_can_be_linked_to_leading_teacher(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -296,7 +297,7 @@ class CreateEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function an_authenticated_user_can_create_events_without_geoposition(): void
     {
         Mail::fake();

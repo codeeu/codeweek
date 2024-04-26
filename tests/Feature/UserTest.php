@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -9,7 +10,7 @@ class UserTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function a_user_belongs_to_a_country(): void
     {
 
@@ -22,7 +23,7 @@ class UserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_should_have_right_avatar_path(): void
     {
 
@@ -32,7 +33,7 @@ class UserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_with_null_avatar_should_have_default_avatar(): void
     {
 
@@ -42,7 +43,7 @@ class UserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_should_readable_name(): void
     {
 
@@ -52,7 +53,7 @@ class UserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_should_readable_name_with_first_and_lastname(): void
     {
 
@@ -62,7 +63,7 @@ class UserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_should_readable_name_with_username(): void
     {
 
@@ -72,7 +73,7 @@ class UserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_should_readable_name_without_personal_info(): void
     {
 
@@ -82,7 +83,7 @@ class UserTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function a_user_should_be_seen_as_ambassador(): void
     {
 

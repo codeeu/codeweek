@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -42,7 +43,7 @@ class RouteProtectionTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function only_admin_can_access_activities(): void
     {
 
@@ -55,7 +56,7 @@ class RouteProtectionTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function only_admin_an_ambassadors_can_access_pending_events_list(): void
     {
 
@@ -68,7 +69,7 @@ class RouteProtectionTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function only_admin_can_access_pending_events_by_countries(): void
     {
 
@@ -83,7 +84,7 @@ class RouteProtectionTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function only_leading_teacher_can_access_report_form(): void
     {
 

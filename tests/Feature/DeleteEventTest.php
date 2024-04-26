@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Mail\EventDeleted;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
@@ -18,7 +19,7 @@ class DeleteEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_can_be_deleted_by_admin(): void
     {
 
@@ -42,7 +43,7 @@ class DeleteEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_can_be_deleted_by_event_creator(): void
     {
 
@@ -63,7 +64,7 @@ class DeleteEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_can_be_deleted_by_ambassador_of_same_country(): void
     {
 
@@ -82,7 +83,7 @@ class DeleteEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_cant_be_approved_by_ambassador_of_other_country(): void
     {
 
@@ -101,7 +102,7 @@ class DeleteEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_cannot_be_deleted_by_logged_user_that_is_not_creator(): void
     {
 

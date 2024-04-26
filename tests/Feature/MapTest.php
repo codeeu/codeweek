@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -20,7 +21,7 @@ class MapTest extends TestCase
 
     private $france;
 
-    /** @test */
+    #[Test]
     public function get_list_of_approved_upcoming_events(): void
     {
 
@@ -36,7 +37,7 @@ class MapTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function get_list_of_approved_events_for_another_year(): void
     {
 
@@ -52,7 +53,7 @@ class MapTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function structure_event(): void
     {
 
@@ -69,7 +70,7 @@ class MapTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function get_event_detail(): void
     {
 

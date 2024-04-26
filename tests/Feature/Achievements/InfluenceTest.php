@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -12,7 +13,7 @@ class InfluenceTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function user_influence_should_be_counted(): void
     {
 
@@ -33,9 +34,7 @@ class InfluenceTest extends TestCase
 
     // When we create an event with a LT tag, the experience is taken into account
 
-    /**
-     * @test
-     */
+    #[Test]
     public function leading_teacher_receives_experience_when_event_is_approved(): void
     {
 

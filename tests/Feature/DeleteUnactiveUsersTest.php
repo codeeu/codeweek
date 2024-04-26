@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\UserHelper;
 use App\Mail\DeletedUsers;
 use Carbon\Carbon;
@@ -12,7 +13,7 @@ class DeleteUnactiveUsersTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function delete_user_unactive_more_than_5_years_ago(): void
     {
         $user = \App\User::factory()->create(['updated_at' => Carbon::now()->subYear(6)]);
@@ -20,7 +21,7 @@ class DeleteUnactiveUsersTest extends TestCase
         $this->assertTrue($user->fresh()->trashed());
     }
 
-    /** @test */
+    #[Test]
     public function delete_user_unactive_5_years_ago(): void
     {
         $user = \App\User::factory()->create(['updated_at' => Carbon::now()->subYear(5)]);
@@ -28,7 +29,7 @@ class DeleteUnactiveUsersTest extends TestCase
         $this->assertTrue($user->fresh()->trashed());
     }
 
-    /** @test */
+    #[Test]
     public function dont_delete_user_active(): void
     {
         $user = \App\User::factory()->create(['updated_at' => Carbon::now()->subYear(4)]);
@@ -36,7 +37,7 @@ class DeleteUnactiveUsersTest extends TestCase
         $this->assertFalse($user->fresh()->trashed());
     }
 
-    /** @test */
+    #[Test]
     public function delete_only_unactive_users(): void
     {
         $unactive_user1 = \App\User::factory()->create(['updated_at' => Carbon::now()->subYear(6)]);
@@ -48,7 +49,7 @@ class DeleteUnactiveUsersTest extends TestCase
         $this->assertFalse($active_user->fresh()->trashed());
     }
 
-    /** @test */
+    #[Test]
     public function check_report_unactive_user(): void
     {
         $unactive_user1 = \App\User::factory()->create(['updated_at' => Carbon::now()->subYear(6)]);

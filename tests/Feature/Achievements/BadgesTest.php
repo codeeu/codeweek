@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -26,7 +27,7 @@ class BadgesTest extends TestCase
         $this->leading_teacher_admin = \App\User::factory()->create()->assignRole('leading teacher admin');
     }
 
-    /** @test */
+    #[Test]
     public function only_leading_teachers_can_access_their_badges_page(): void
     {
 
@@ -38,7 +39,7 @@ class BadgesTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function only_leading_teachers_admin_can_access_other_badges_pages(): void
     {
 
@@ -59,7 +60,7 @@ class BadgesTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function only_leading_teachers_can_see_my_badges_page(): void
     {
 

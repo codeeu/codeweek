@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Mail\EventRejected;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -19,7 +20,7 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function event_can_be_rejected_by_admin(): void
     {
 
@@ -43,7 +44,7 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function email_should_be_sent_to_event_email_when_event_is_rejected(): void
     {
 
@@ -58,7 +59,7 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function rejection_reasons_should_be_recorded(): void
     {
 
@@ -76,7 +77,7 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function latest_rejection_message_should_be_accessible(): void
     {
 
@@ -97,7 +98,7 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function empty_rejection_should_be_treated(): void
     {
 
@@ -110,7 +111,7 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function updating_rejected_event_should_set_status_back_to_pending(): void
     {
 

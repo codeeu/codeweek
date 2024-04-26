@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\User;
 use Carbon\Carbon;
@@ -12,7 +13,7 @@ class OrganiserTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function user_should_get_reported_events_linked(): void
     {
 

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Http\Livewire\LeadingTeacherSignupForm;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Livewire;
@@ -24,7 +25,7 @@ class LeadingTeacherTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function Leading_teacher_should_be_able_to_access_report_page(): void
     {
 
@@ -35,7 +36,7 @@ class LeadingTeacherTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function should_become_leading_teacher_after_signup_(): void
     {
 

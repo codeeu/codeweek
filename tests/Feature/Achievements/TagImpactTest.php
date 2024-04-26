@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\User;
 use Carbon\Carbon;
@@ -12,7 +13,7 @@ class TagImpactTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
+    #[Test]
     public function tag_impact_badge_should_be_awarded(): void
     {
 
@@ -42,7 +43,7 @@ class TagImpactTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function tag_impact_badge_should_be_removed_when_activity_is_rejected(): void
     {
 

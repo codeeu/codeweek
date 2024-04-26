@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\EventHelper;
 use App\Helpers\UserHelper;
 use App\Mail\UserCreated;
@@ -14,7 +15,7 @@ class NullEmails extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_get_distinct_emails(): void
     {
         $nullUser = \App\User::factory()->create(['email' => null]);
@@ -37,7 +38,7 @@ class NullEmails extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_get_active_user_for_specific_email(): void
     {
 
@@ -54,7 +55,7 @@ class NullEmails extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_assign_activities_to_a_user(): void
     {
 
@@ -71,7 +72,7 @@ class NullEmails extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_create_user(): void
     {
 

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -9,7 +10,7 @@ class GermanImports extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_not_be_listed_as_imported(): void
     {
 
@@ -19,7 +20,7 @@ class GermanImports extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_be_listed_as_imported(): void
     {
         $this->assertTrue(Event::factory()->create(['codeweek_for_all_participation_code' => 'cw22-hamburg'])->imported());

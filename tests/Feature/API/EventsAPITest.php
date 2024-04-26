@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\API;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -12,7 +13,7 @@ class EventsAPITest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_return_events_in_hamburg(): void
     {
         Event::factory()->count(3)->
@@ -63,7 +64,7 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Good Event', $data[0]['title']);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_return_events_geolocalized_for_specific_year(): void
     {
 
@@ -117,7 +118,7 @@ class EventsAPITest extends TestCase
         $this->assertEquals('2020 Event', $data[0]['title']);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_return_events_geolocalized_for_current_year_by_default(): void
     {
         $pastEvent = \App\Event::factory()->create([
@@ -147,7 +148,7 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Current Year Event', $data[0]['title']);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_return_events_with_bad_year(): void
     {
         $this->withoutExceptionHandling();
@@ -164,7 +165,7 @@ class EventsAPITest extends TestCase
         }
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_return_non_approved_events(): void
     {
         $pendingEvent = \App\Event::factory()->create([
@@ -193,7 +194,7 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Approved Event', $data[0]['title']);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_return_events_with_latitude_too_wide(): void
     {
         $this->withoutExceptionHandling();
@@ -209,7 +210,7 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Area is too wide', $errorMessage);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_return_events_with_longitude_too_wide(): void
     {
         $this->withoutExceptionHandling();
@@ -225,7 +226,7 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Area is too wide', $errorMessage);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_return_german_events(): void
     {
 
@@ -266,7 +267,7 @@ class EventsAPITest extends TestCase
         $this->assertTrue($data[1]['imported_from_german_feeds']);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_get_one_event_details(): void
     {
 

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Excellence;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -28,7 +29,7 @@ class ExcellenceTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
     }
 
-    /** @test */
+    #[Test]
     public function user_can_have_a_certificate_of_excellence(): void
     {
         $user = \App\User::factory()->create();
@@ -44,7 +45,7 @@ class ExcellenceTest extends TestCase
         $this->assertCount(2, $user->excellences);
     }
 
-    /** @test */
+    #[Test]
     public function user_can_have_a_super_organiser_certificate(): void
     {
         $user = \App\User::factory()->create();
@@ -60,7 +61,7 @@ class ExcellenceTest extends TestCase
         $this->assertCount(1, $user->superOrganisers);
     }
 
-    /** @test */
+    #[Test]
     public function should_get_all_users_with_excellence_for_specific_edition(): void
     {
         \App\Excellence::factory()->count(10)->create(['edition' => 2018]);
@@ -71,7 +72,7 @@ class ExcellenceTest extends TestCase
         $this->assertCount(10, $filtered);
     }
 
-    /** @test */
+    #[Test]
     public function user_should_not_have_excellence(): void
     {
         $user = \App\User::factory()->create();
@@ -87,7 +88,7 @@ class ExcellenceTest extends TestCase
         $this->assertCount(0, $count);
     }
 
-    /** @test */
+    #[Test]
     public function winner_can_report_for_Excellence(): void
     {
         $user = \App\User::factory()->create();
@@ -98,7 +99,7 @@ class ExcellenceTest extends TestCase
         $this->get('/certificates/excellence/2019')->assertStatus(200);
     }
 
-    /** @test */
+    #[Test]
     public function winner_can_report_for_super_organiser(): void
     {
         $user = \App\User::factory()->create();
@@ -113,7 +114,7 @@ class ExcellenceTest extends TestCase
         $this->get('/certificates/super-organiser/2020')->assertStatus(200);
     }
 
-    /** @test */
+    #[Test]
     public function non_winner_cant_report_for_Excellence(): void
     {
         $user = \App\User::factory()->create();
@@ -125,7 +126,7 @@ class ExcellenceTest extends TestCase
         $this->post('/certificates/excellence/2019')->assertStatus(403);
     }
 
-    /** @test */
+    #[Test]
     public function non_winner_cant_report_for_super_organiser(): void
     {
         $user = \App\User::factory()->create();
@@ -137,7 +138,7 @@ class ExcellenceTest extends TestCase
         $this->post('/certificates/super-organiser/2019')->assertStatus(403);
     }
 
-    /** @test */
+    #[Test]
     public function excellence_certificates_should_be_visible_on_certificates_page(): void
     {
         $user = \App\User::factory()->create();
@@ -154,7 +155,7 @@ class ExcellenceTest extends TestCase
         $this->get('/certificates')->assertSee($name);
     }
 
-    /** @test */
+    #[Test]
     public function super_organiser_certificates_should_be_visible_on_certificates_page(): void
     {
         $user = \App\User::factory()->create();
@@ -174,7 +175,7 @@ class ExcellenceTest extends TestCase
             ->assertSee($name);
     }
 
-    /** @test */
+    #[Test]
     public function excellence_certificates_should_be_visible_on_certificates_page_only_when_reported(): void
     {
         $user = \App\User::factory()->create();
@@ -199,7 +200,7 @@ class ExcellenceTest extends TestCase
             ->assertDontSee('Claim your certificate of excellence for 2020');
     }
 
-    /** @test */
+    #[Test]
     public function super_organiser_certificates_should_be_visible_on_certificates_page_only_when_reported(): void
     {
         $user = \App\User::factory()->create();

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Country;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Log;
@@ -24,7 +25,7 @@ class CountriesTest extends TestCase
 
     }*/
 
-    /** @test */
+    #[Test]
     public function get_countries_with_events(): void
     {
 
@@ -38,7 +39,7 @@ class CountriesTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function get_countries_with_coordinators(): void
     {
 

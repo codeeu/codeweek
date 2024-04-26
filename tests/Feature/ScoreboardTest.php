@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -10,7 +11,7 @@ class ScoreboardTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function scoreboard_should_show_upcoming_events(): void
     {
         $belgium = \App\Country::factory()->create(['iso' => 'BE', 'name' => 'Belgium']);
@@ -27,7 +28,7 @@ class ScoreboardTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function scoreboard_should_not_count_dependencies(): void
     {
         $belgium = \App\Country::factory()->create(['iso' => 'BE', 'name' => 'Belgium', 'population' => 1000]);

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Location;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -19,7 +20,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function user_should_get_locations_linked(): void
     {
         $this->withoutExceptionHandling();
@@ -32,7 +33,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_extract_location_data(): void
     {
         $this->withoutExceptionHandling();
@@ -51,7 +52,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_avoid_duplicates(): void
     {
         $this->withoutExceptionHandling();
@@ -71,7 +72,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_avoid_duplicates_2(): void
     {
         $this->withoutExceptionHandling();
@@ -88,7 +89,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function adding_activity_should_create_location(): void
     {
         $this->withoutExceptionHandling();
@@ -101,7 +102,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_redirect_user_to_add_page_when_user_has_no_locations(): void
     {
         $this->withoutExceptionHandling();
@@ -113,7 +114,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_redirect_user_to_locations_page_when_user_has_stored_locations(): void
     {
         $this->withoutExceptionHandling();
@@ -130,7 +131,7 @@ class LocationsTest extends TestCase
 
     }
 
-    /** @test */
+    #[Test]
     public function it_should_not_redirect_user_to_locations_page_when_user_has_stored_locations_but_clicked_on_skip(): void
     {
         $this->withoutExceptionHandling();

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use PHPUnit\Framework\Attributes\Test;
 use App\Helpers\EventHelper;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -15,7 +16,7 @@ class EventsHelperTest extends TestCase
 
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_should_get_upcoming_online_events(): void
     {
         //Good ones
@@ -33,7 +34,7 @@ class EventsHelperTest extends TestCase
         $this->assertCount(2, $events);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_trim_geoposition(): void
     {
 
