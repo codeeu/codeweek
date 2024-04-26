@@ -2,9 +2,9 @@
 
 namespace Tests\Feature\Achievements;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class BadgesTest extends TestCase

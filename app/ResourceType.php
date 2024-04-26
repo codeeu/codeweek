@@ -36,7 +36,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  */
 class ResourceType extends Model
 {
-
     use HasFactory;
 
     protected $guarded = [];

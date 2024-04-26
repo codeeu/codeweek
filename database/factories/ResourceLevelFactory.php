@@ -1,7 +1,5 @@
 <?php
 
-use Faker\Generator as Faker;
-
 $factory->define(App\ResourceLevel::class, function () {
     return [
         'name' => $this->faker->text(40),

@@ -95,10 +95,10 @@ use Spatie\Permission\Traits\HasRoles;
  */
 class User extends Authenticatable
 {
+    use HasFactory;
     use HasRoles;
     use Notifiable;
     use SoftDeletes;
-    use HasFactory;
     /**
      * The attributes that are mass assignable.
      *
@@ -326,7 +326,7 @@ class User extends Authenticatable
     /**
      * Get the path to the user's avatar.
      */
-    public function getAvatarPathAttribute(string $avatar = null): string
+    public function getAvatarPathAttribute(?string $avatar = null): string
     {
 
         if (is_null($avatar)) {

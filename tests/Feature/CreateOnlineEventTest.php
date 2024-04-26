@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Log;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class CreateOnlineEventTest extends TestCase
@@ -18,8 +18,8 @@ final class CreateOnlineEventTest extends TestCase
         //$this->withoutExceptionHandling();
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
-        
+        $event = \App\Event::factory()->make();
+
         \App\Theme::factory()->count(3)->create();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
@@ -50,7 +50,7 @@ final class CreateOnlineEventTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -84,7 +84,7 @@ final class CreateOnlineEventTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 

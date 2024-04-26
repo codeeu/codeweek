@@ -1,9 +1,6 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-
-use Faker\Generator as Faker;
-
 $factory->define(App\City::class, function () {
     return [
         'id' => $this->faker->numberBetween(1234567890, 9999999999),

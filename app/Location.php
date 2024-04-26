@@ -11,8 +11,8 @@ class Location extends Model
 {
     protected $guarded = [];
 
-    use SoftDeletes;
     use HasFactory;
+    use SoftDeletes;
 
     public function user(): BelongsTo
     {

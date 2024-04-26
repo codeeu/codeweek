@@ -3,7 +3,6 @@
 namespace Database\Factories; /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
 use App\Podcast;
-use Faker\Generator as Faker;
 
 $factory->define(Podcast::class, function () {
     return [

@@ -1,7 +1,6 @@
 <?php
 
 use App\Country;
-use Faker\Generator as Faker;
 
 $factory->define(App\School::class, function () {
     $countries = Country::all()->pluck('iso')->toArray();

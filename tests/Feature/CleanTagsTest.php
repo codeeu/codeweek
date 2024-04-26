@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use App\Helpers\TagsHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class CleanTagsTest extends TestCase
@@ -71,7 +71,6 @@ final class CleanTagsTest extends TestCase
         $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
-
 
         $event->theme = '1';
         $event->tags = 'tag:foo';

@@ -2,12 +2,12 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Achievements\Events\UserEarnedExperience;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Event;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class ExperienceTest extends TestCase

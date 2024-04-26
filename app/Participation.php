@@ -38,6 +38,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Participation extends Model
 {
     use HasFactory;
+
     protected $fillable = ['user_id', 'event_name', 'event_date', 'names', 'participation_url', 'status'];
 
     public function user(): BelongsTo

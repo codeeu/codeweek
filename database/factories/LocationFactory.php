@@ -23,10 +23,10 @@ class LocationFactory extends Factory
             'is_default' => $this->faker->boolean(),
             'is_primary' => $this->faker->boolean(),
             'user_id' => function () {
-                return  \App\User::factory()->create()->id;
+                return \App\User::factory()->create()->id;
             },
             'event_id' => function () {
-                return  \App\Event::factory()->create()->id;
+                return \App\Event::factory()->create()->id;
             },
 
         ];

@@ -1,7 +1,6 @@
 <?php
 
 use App\Achievements\Achievement;
-use Faker\Generator as Faker;
 
 $factory->define(Achievement::class, function () {
     return [

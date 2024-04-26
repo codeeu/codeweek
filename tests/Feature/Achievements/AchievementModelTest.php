@@ -2,9 +2,9 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Achievements\Achievement;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class AchievementModelTest extends TestCase

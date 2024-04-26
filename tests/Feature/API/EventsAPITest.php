@@ -2,11 +2,11 @@
 
 namespace Tests\Feature\API;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Validation\ValidationException;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class EventsAPITest extends TestCase
@@ -68,13 +68,12 @@ final class EventsAPITest extends TestCase
     public function it_should_return_events_geolocalized_for_specific_year(): void
     {
 
-
         Event::factory()->count(3)->
         create(
 
             [
                 'longitude' => 46.60675,
-                'latitude' => 13.84246
+                'latitude' => 13.84246,
             ]
 
         );

@@ -2,9 +2,9 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class UpdateEventTest extends TestCase
@@ -19,7 +19,7 @@ final class UpdateEventTest extends TestCase
         $this->signIn();
         $this->withoutExceptionHandling();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
