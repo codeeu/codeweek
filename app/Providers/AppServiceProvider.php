@@ -96,6 +96,7 @@ class AppServiceProvider extends ServiceProvider
                 \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
             );
         }
+        $this->app->bind(\Illuminate\Contracts\Debug\ExceptionHandler::class, \App\Exceptions\Handler::class);
     }
 
     public function bootAuth(): void
