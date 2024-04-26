@@ -14,7 +14,28 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        $middleware->redirectGuestsTo(fn () => route('login'));
+        $middleware->redirectUsersTo('/');
+
+        $middleware->append([
+            \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+            \Spatie\CookieConsent\CookieConsentMiddleware::class,
+        ]);
+
+        $middleware->web([
+            \App\Http\Middleware\CheckBrowser::class,
+            \App\Http\Middleware\Locale::class,
+        ]);
+
+        $middleware->throttleApi('60,1');
+
+        $middleware->replace(\Illuminate\Http\Middleware\TrustProxies::class, \App\Http\Middleware\TrustProxies::class);
+
+        $middleware->alias([
+            'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+            'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
