@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class DeleteEventTest extends TestCase
+final class DeleteEventTest extends TestCase
 {
     use DatabaseMigrations;
 

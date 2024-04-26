@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Carbon;
 use Tests\TestCase;
 
-class PodcastsTest extends TestCase
+final class PodcastsTest extends TestCase
 {
     use RefreshDatabase;
 

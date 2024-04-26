@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
-class CreateEventTest extends TestCase
+final class CreateEventTest extends TestCase
 {
     use DatabaseMigrations;
 

@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class CertificateGenerationTest extends TestCase
+final class CertificateGenerationTest extends TestCase
 {
     use DatabaseMigrations;
 

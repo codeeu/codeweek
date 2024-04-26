@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
-class CreateOnlineEventTest extends TestCase
+final class CreateOnlineEventTest extends TestCase
 {
     use DatabaseMigrations;
 

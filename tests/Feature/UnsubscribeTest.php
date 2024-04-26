@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class UnsubscribeTest extends TestCase
+final class UnsubscribeTest extends TestCase
 {
     use DatabaseMigrations;
 

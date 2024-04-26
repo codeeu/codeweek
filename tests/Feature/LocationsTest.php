@@ -8,7 +8,7 @@ use App\Location;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class LocationsTest extends TestCase
+final class LocationsTest extends TestCase
 {
     use RefreshDatabase;
 

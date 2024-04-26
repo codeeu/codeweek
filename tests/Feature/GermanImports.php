@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class GermanImports extends TestCase
+final class GermanImports extends TestCase
 {
     use DatabaseMigrations;
 

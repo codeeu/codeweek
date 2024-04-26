@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class MailingActiveOrganizersTest extends TestCase
+final class MailingActiveOrganizersTest extends TestCase
 {
     use DatabaseMigrations;
 

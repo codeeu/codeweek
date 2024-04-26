@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class ApproveEventTest extends TestCase
+final class ApproveEventTest extends TestCase
 {
     use DatabaseMigrations;
 

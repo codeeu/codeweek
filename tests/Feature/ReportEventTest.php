@@ -11,7 +11,7 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
-class ReportEventTest extends TestCase
+final class ReportEventTest extends TestCase
 {
     use DatabaseMigrations;
 

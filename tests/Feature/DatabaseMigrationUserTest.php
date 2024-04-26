@@ -9,7 +9,7 @@ use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class DatabaseMigrationUserTest extends TestCase
+final class DatabaseMigrationUserTest extends TestCase
 {
     use DatabaseMigrations;
 

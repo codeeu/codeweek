@@ -7,7 +7,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class MapTest extends TestCase
+final class MapTest extends TestCase
 {
     use DatabaseMigrations;
 

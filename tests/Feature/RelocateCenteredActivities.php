@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class RelocateCenteredActivities extends TestCase
+final class RelocateCenteredActivities extends TestCase
 {
     use DatabaseMigrations;
 

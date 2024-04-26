@@ -10,7 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class CleanImportsTest extends TestCase
+final class CleanImportsTest extends TestCase
 {
     use DatabaseMigrations;
 

@@ -11,7 +11,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class SuperOrganisersTest extends TestCase
+final class SuperOrganisersTest extends TestCase
 {
     use DatabaseMigrations;
 

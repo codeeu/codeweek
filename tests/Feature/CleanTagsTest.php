@@ -8,7 +8,7 @@ use App\Helpers\TagsHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class CleanTagsTest extends TestCase
+final class CleanTagsTest extends TestCase
 {
     use DatabaseMigrations;
 

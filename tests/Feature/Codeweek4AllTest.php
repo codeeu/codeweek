@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class Codeweek4AllTest extends TestCase
+final class Codeweek4AllTest extends TestCase
 {
     use DatabaseMigrations;
 

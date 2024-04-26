@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class UpdateThemeAndAudienceTest extends TestCase
+final class UpdateThemeAndAudienceTest extends TestCase
 {
     use DatabaseMigrations;
 

@@ -12,7 +12,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class ReminderCreatorsTest extends TestCase
+final class ReminderCreatorsTest extends TestCase
 {
     use DatabaseMigrations;
 

@@ -11,7 +11,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
-class AchievementsTest extends TestCase
+final class AchievementsTest extends TestCase
 {
     use RefreshDatabase;
 

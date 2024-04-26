@@ -6,7 +6,7 @@ use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class FooterTest extends TestCase
+final class FooterTest extends TestCase
 {
     use DatabaseMigrations;
 

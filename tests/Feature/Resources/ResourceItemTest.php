@@ -12,7 +12,7 @@ use Exception;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class ResourceItemTest extends TestCase
+final class ResourceItemTest extends TestCase
 {
     use DatabaseMigrations;
 

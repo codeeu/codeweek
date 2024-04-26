@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Livewire;
 use Tests\TestCase;
 
-class LeadingTeacherTest extends TestCase
+final class LeadingTeacherTest extends TestCase
 {
     use DatabaseMigrations;
 

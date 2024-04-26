@@ -7,7 +7,7 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class ScoreboardTest extends TestCase
+final class ScoreboardTest extends TestCase
 {
     use DatabaseMigrations;
 

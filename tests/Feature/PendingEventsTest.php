@@ -7,7 +7,7 @@ use App\Helpers\EventHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
-class PendingEventsTest extends TestCase
+final class PendingEventsTest extends TestCase
 {
     use DatabaseMigrations;
 

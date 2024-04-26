@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Event;
 use Tests\TestCase;
 
-class InfluenceTest extends TestCase
+final class InfluenceTest extends TestCase
 {
     use RefreshDatabase;
 
