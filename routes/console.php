@@ -8,7 +8,6 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote')->hourly();
 
-
 Schedule::command('delete:unactiveusers')->weeklyOn(4, '8:00');
 
 Schedule::command('remind:ambassadors')->dailyAt('9:00');

@@ -1,12 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
-use Illuminate\Support\ServiceProvider;
 
 return [
 
     'locales' => explode(',', env('LOCALES')),
-
 
     'aliases' => Facade::defaultAliases()->merge([
         'Calendar' => App\Facades\Calendar::class,
