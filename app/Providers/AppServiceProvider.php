@@ -2,10 +2,13 @@
 
 namespace App\Providers;
 
+use App\Event;
+use App\Observers\EventObserver;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
@@ -78,6 +81,9 @@ class AppServiceProvider extends ServiceProvider
                 ]
             );
         });
+
+        $this->bootAuth();
+        $this->bootEvent();
     }
 
     /**
@@ -90,5 +96,41 @@ class AppServiceProvider extends ServiceProvider
                 \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
             );
         }
+    }
+
+    public function bootAuth(): void
+    {
+        Gate::define('report-excellence', function ($user, $edition) {
+
+            $excellences = $user->excellences;
+
+            $collection = $excellences->filter(
+                function ($value, $key) use ($edition) {
+                    return $value->edition == $edition;
+                }
+            );
+
+            return $collection->count() > 0;
+        });
+
+        Gate::define('report-super-organiser', function ($user, $edition) {
+
+            $superOrganisers = $user->superOrganisers;
+
+            $collection = $superOrganisers->filter(
+                function ($value, $key) use ($edition) {
+                    return $value->edition == $edition;
+                }
+            );
+
+            return $collection->count() > 0;
+        });
+
+    }
+
+    public function bootEvent(): void
+    {
+
+        Event::observe(EventObserver::class);
     }
 }
