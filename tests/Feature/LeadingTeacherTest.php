@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Http\Livewire\LeadingTeacherSignupForm;
+use App\Livewire\LeadingTeacherSignupForm;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Livewire;
 use PHPUnit\Framework\Attributes\Test;
