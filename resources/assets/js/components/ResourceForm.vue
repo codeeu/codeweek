@@ -118,8 +118,8 @@
 <script>
     import Multiselect from 'vue-multiselect'
     import _ from 'lodash'
-    import ResourceCard from "./ResourceCard";
-    import Pagination from "./Pagination";
+    import ResourceCard from "./ResourceCard.vue";
+    import Pagination from "./Pagination.vue";
     import VueClipboard from 'vue-clipboard2'
 
     window.multiselect = this;
