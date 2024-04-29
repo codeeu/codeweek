@@ -24,7 +24,7 @@
 
     @yield('extra-css')
 
-    <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
+    @vite('resources/css/app.css')
 
 
     <script>
