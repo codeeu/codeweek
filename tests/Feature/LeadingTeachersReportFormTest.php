@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Http\Livewire\LeadingTeacherReportForm;
+use App\Livewire\LeadingTeacherReportForm;
 use App\LeadingTeacherAction;
 use App\Mail\LeadingTeachingActionAdded;
 use Carbon\Carbon;
