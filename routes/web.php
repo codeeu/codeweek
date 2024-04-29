@@ -633,13 +633,7 @@ Route::middleware('auth')->group(function () {
 //Route::view('/registration', 'registration.add');
 Route::view('/online-courses', 'online-courses')->name('online-courses');
 
-Route::get('mailing/test', function () {
-
-    //$email = ['alainvd@gmail.com'];
-    //$user = User::where('id', '19588')->first();
-
-    //return new App\Mail\UserCreated($user);
-});
+Route::view('/test', 'test');
 
 Route::get('/hackathons', [HackathonsController::class, 'index'])->name('hackathons');
 
