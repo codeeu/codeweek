@@ -1,7 +1,5 @@
 <?php
 
-use Faker\Generator as Faker;
-
 $factory->define(App\ResourceCategory::class, function () {
     return [
         'name' => $this->faker->text(40),

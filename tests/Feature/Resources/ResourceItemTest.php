@@ -2,7 +2,6 @@
 
 namespace Tests\Feature\Achievements\Resources;
 
-use PHPUnit\Framework\Attributes\Test;
 use Database\Seeders\Resource\CategorySeeder;
 use Database\Seeders\Resource\LanguageSeeder;
 use Database\Seeders\Resource\LevelSeeder;
@@ -10,6 +9,7 @@ use Database\Seeders\Resource\ProgrammingLanguageSeeder;
 use Database\Seeders\Resource\TypeSeeder;
 use Exception;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class ResourceItemTest extends TestCase

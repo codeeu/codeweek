@@ -57,7 +57,7 @@
                 }
 
                 this.pagination.current_page = page;
-                this.$emit('paginate');
+                this.$dispatch('paginate');
             }
         },
 

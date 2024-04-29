@@ -2,9 +2,8 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class UpdateThemeAndAudienceTest extends TestCase
@@ -18,7 +17,6 @@ final class UpdateThemeAndAudienceTest extends TestCase
         \App\Theme::factory()->count(10)->create();
 
     }
-
 
     #[Test]
     public function it_should_not_create_if_themes_already_exist(): void
@@ -46,7 +44,6 @@ final class UpdateThemeAndAudienceTest extends TestCase
         $myEvent = \App\Event::factory()->create(['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
 
         $this->assertFalse($myEvent->audiences()->exists());
-
 
         // Call the updater
         $this->artisan('meetandcode:themes');

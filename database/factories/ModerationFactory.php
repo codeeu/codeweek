@@ -3,7 +3,6 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Moderation;
-use Faker\Generator as Faker;
 
 $factory->define(Moderation::class, function () {
     return [

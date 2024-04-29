@@ -1,9 +1,6 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-
-use Faker\Generator as Faker;
-
 $factory->define(App\LeadingTeacherAction::class, function () {
     return [
         'title' => $this->faker->text(40),

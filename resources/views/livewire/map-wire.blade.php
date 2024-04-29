@@ -21,7 +21,7 @@ Total: {{$events->total()}}
         <x-search.fields :years="$years"></x-search.fields>
 
 
-{{--        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" wire:click="$emit('testEvent')">--}}
+{{--        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" wire:click="$dispatch('testEvent')">--}}
 {{--            Zoom--}}
 {{--        </button>--}}
 

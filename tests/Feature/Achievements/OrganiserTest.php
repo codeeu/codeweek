@@ -2,16 +2,14 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use PHPUnit\Framework\Attributes\Test;
-use App\Event;
-use App\User;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class OrganiserTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     #[Test]
     public function user_should_get_reported_events_linked(): void

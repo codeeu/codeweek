@@ -2,13 +2,13 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Mail\NotifySuperOrganiser;
 use App\Mail\NotifyWinner;
 use App\Queries\SuperOrganiserQuery;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class SuperOrganisersTest extends TestCase

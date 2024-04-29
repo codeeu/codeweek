@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Event;
 use Carbon\Carbon;
@@ -68,7 +68,7 @@ class MapWire extends Component
             ];
         })->groupBy('country');
 
-        $this->emit('markersUpdated', $this->markers);
+        $this->dispatch('markersUpdated', $this->markers);
 
         //        $this->markers = [];
         $this->events = $events;
@@ -84,7 +84,7 @@ class MapWire extends Component
 
         Log::info('START - Get All Data for the Map');
 
-        $this->emit('markersLoaded');
+        $this->dispatch('markersLoaded');
 
         Log::info('END - Get All Data for the Map');
 

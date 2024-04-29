@@ -9,19 +9,19 @@
     <div class="flex justify-start px-6 py-6">
 
 
-        <input wire:model.debounce.300ms="search"
+        <input wire:model.live.debounce.300ms="search"
                id="search"
                type="search"
                placeholder="{{__('search.search_placeholder')}}"
                class="p-4 rounded w-2/3 mr-4">
 
-        {{--        <input wire:model.debounce.500ms="year"--}}
+        {{--        <input wire:model.live.debounce.500ms="year"--}}
         {{--               id="search"--}}
         {{--               type="search"--}}
         {{--               placeholder="{{__('search.search_placeholder')}}"--}}
         {{--               class="p-4 rounded">--}}
 
-        <select id="location" wire:model="selectedYear"
+        <select id="location" wire:model.live="selectedYear"
                 class="mt-1 form-select block w-1/3 pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5">
             @foreach($years as $year)
                 <option value="{{$year}}">{{$year}}</option>

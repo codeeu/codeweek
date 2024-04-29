@@ -1,7 +1,7 @@
 <div>
     <form enctype="multipart/form-data" id="reportform" role="form"
           class="codeweek-form"
-          wire:submit.prevent="submit">
+          wire:submit="submit">
 
 
         <div class="codeweek-form-inner-container">
@@ -15,7 +15,7 @@
                         * Type of Action
                     </label>
                     <select id="id_country" name="action_type"
-                            class="codeweek-input-select" wire:model="action_type">
+                            class="codeweek-input-select" wire:model.live="action_type">
                         @if($action_type == '')
                             <option disabled selected value> -- Select an option --</option>
                         @endif
@@ -36,7 +36,7 @@
                     <label for="action_date">
                         * Date of completion
                     </label>
-                    <input type="date" wire:model="action_date" class="codeweek-input-select" style="flex:1;width:200px !important; background-image: none; background-position: right 10em top 50%, 0 0;">
+                    <input type="date" wire:model.live="action_date" class="codeweek-input-select" style="flex:1;width:200px !important; background-image: none; background-position: right 10em top 50%, 0 0;">
                 </div>
                 @if($errors->has('action_date'))
                     <div class="errors">
@@ -50,7 +50,7 @@
                         <label for="action_comment">
                             Additional Comments
                         </label>
-                        <textarea wire:model="action_comment" class="codeweek-input-select" style="flex:1;width:200px; height:200px; !important; background-image: none; background-position: right 10em top 50%, 0 0;" rows="4" cols="50"></textarea>
+                        <textarea wire:model.live="action_comment" class="codeweek-input-select" style="flex:1;width:200px; height:200px; !important; background-image: none; background-position: right 10em top 50%, 0 0;" rows="4" cols="50"></textarea>
                     </div>
                     @if($errors->has('action_comment'))
                         <div class="errors">

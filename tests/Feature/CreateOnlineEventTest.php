@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Log;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class CreateOnlineEventTest extends TestCase
@@ -15,11 +15,12 @@ final class CreateOnlineEventTest extends TestCase
     #[Test]
     public function an_authenticated_user_can_create_online_event_without_location(): void
     {
-        //$this->withoutExceptionHandling();
+        $this->withoutExceptionHandling();
+        $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
-        
+        $event = \App\Event::factory()->make();
+
         \App\Theme::factory()->count(3)->create();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
@@ -36,6 +37,8 @@ final class CreateOnlineEventTest extends TestCase
 
         $this->post('/events', $event->toArray());
 
+
+
         $event = Event::where('title', $event->title)->first();
 
         $this->assertEquals('online', $event->fresh()->location);
@@ -50,7 +53,7 @@ final class CreateOnlineEventTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
@@ -84,7 +87,7 @@ final class CreateOnlineEventTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
-        $event =  \App\Event::factory()->make();
+        $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 

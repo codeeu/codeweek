@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Event;
 use Illuminate\Database\Eloquent\Builder;

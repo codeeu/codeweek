@@ -2,14 +2,14 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 final class UserProfileTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     public $user;
 

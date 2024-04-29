@@ -2,11 +2,9 @@
 
 namespace Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use App\Country;
-use App\Event;
-use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 use Torann\GeoIP\Facades\GeoIP;
 
@@ -31,10 +29,10 @@ final class AmbassadorTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
-        $this->france =  \App\Country::factory()->create(['iso' => 'FR']);
+        $this->france = \App\Country::factory()->create(['iso' => 'FR']);
         $this->belgium = \App\Country::factory()->create(['iso' => 'BE', 'facebook' => 'facebook_url']);
 
-        $this->admin_be =  \App\User::factory()->create(['country_iso' => $this->belgium->iso, 'lastname' => 'foobar_name_1'])->assignRole('super admin');
+        $this->admin_be = \App\User::factory()->create(['country_iso' => $this->belgium->iso, 'lastname' => 'foobar_name_1'])->assignRole('super admin');
         $this->ambassador_be = \App\User::factory()->create(['country_iso' => $this->belgium->iso, 'lastname' => 'foobar_name_2'])->assignRole('ambassador');
         $this->ambassador_fr = \App\User::factory()->create(['country_iso' => $this->france->iso, 'lastname' => 'foobar_name_3'])->assignRole('ambassador');
 

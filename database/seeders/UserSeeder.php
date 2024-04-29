@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Event;
+use App\User;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -21,9 +23,9 @@ class UserSeeder extends Seeder
 
         Event::factory()->create(['creator_id' => 1]);
 
-        for ($i = 1; $i < 60; $i++) {
-            create(\App\User::class)->assignRole('ambassador');
-        }
+
+            \App\User::factory()->count(60)->create()->each->assignRole('ambassador');
+
 
     }
 }
