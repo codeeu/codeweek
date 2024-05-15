@@ -82,7 +82,7 @@
 
     @include('layout.footer')
 
-    <flash message="{{ session('flash') }}"></flash>
+{{--    <flash message="{{ session('flash') }}"></flash>--}}
 </div>
 
 <!-- Scripts -->

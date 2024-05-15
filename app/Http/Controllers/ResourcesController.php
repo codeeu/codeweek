@@ -51,6 +51,7 @@ class ResourcesController extends Controller
         $categories = \App\ResourceCategory::where($section, '=', true)->orderBy('position')->get();
         $subjects = \App\ResourceSubject::where($section, '=', true)->orderBy('position')->get();
 
+
         return view('resources.index', compact(['query', 'selected_subjects', 'selected_programming_languages', 'selected_categories', 'selected_languages', 'selected_levels', 'selected_types', 'programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types', 'section']));
     }
 

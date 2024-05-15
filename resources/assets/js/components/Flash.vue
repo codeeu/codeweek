@@ -1,51 +1,57 @@
 <template>
-    <div class="codeweek-flash-message" role="alert" v-show="show">
-        <div class="content">
-            <div class="level">{{ level }}!</div>
-            <div class="body">{{ body }}</div>
-        </div>
+  <div class="codeweek-flash-message" role="alert" v-show="show">
+    <div class="content">
+      <div class="level">{{ level }}!</div>
+      <div class="body">{{ body }}</div>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        props: ['message'],
+import { ref, onMounted, onUnmounted } from 'vue';
 
-        data() {
-            return {
-                body: '',
-                show: false,
-                level: ''
-            }
-        },
+export default {
+  props: ['message'],
 
-        created() {
-            if (this.message) {
-                this.flash();
-            }
+  setup(props) {
+    const body = ref('');
+    const show = ref(false);
+    const level = ref('');
 
-            window.events.$on(
-                'flash', data => this.flash(data)
-            );
-        },
+    const flash = (data) => {
+      if (data) {
+        body.value = data.message;
+        level.value = data.level.charAt(0).toUpperCase() + data.level.slice(1);
+      }
 
-        methods: {
-            flash(data) {
-                if (data) {
-                    this.body = data.message;
-                    this.level = data.level.charAt(0).toUpperCase() + data.level.slice(1);
-                }
+      show.value = true;
 
-                this.show = true;
-
-                this.hide();
-            },
-
-            hide() {
-                setTimeout(() => {
-                    this.show = false;
-                }, 3000);
-            }
-        }
+      hide();
     };
+
+    const hide = () => {
+      setTimeout(() => {
+        show.value = false;
+      }, 3000);
+    };
+
+    onMounted(() => {
+      if (props.message) {
+        flash();
+      }
+
+      window.events.$on('flash', flash);
+    });
+
+    onUnmounted(() => {
+      window.events.$off('flash', flash);
+    });
+
+    return {
+      body,
+      show,
+      level,
+    };
+  },
+};
 </script>

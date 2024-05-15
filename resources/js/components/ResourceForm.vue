@@ -204,7 +204,7 @@
         },
         methods: {
             onCopy: function (e) {
-                flash('Link has been copied to the clipboard!');
+                alert('Link has been copied to the clipboard!');
             },
             onError: function (e) {
                 alert('Failed to copy texts')
@@ -264,4 +264,4 @@
     };
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>
