@@ -1,4 +1,5 @@
 <template>
+
   <div class="multiselect-wrapper">
     <multiselect
         v-model="values"
@@ -77,7 +78,7 @@ export default {
 }
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.css"></style>
+
 
 <style scoped>
 
