@@ -1,5 +1,6 @@
 @extends('layout.base')
 
+
 @push('scripts')
     <script defer src="{{asset('js/countriesGeoCentroids.js')}}" type="text/javascript"></script>
     <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
@@ -16,15 +17,53 @@
 
     </script>
 
-{{--    <script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js" async></script>--}}
+    <script>
+        document.addEventListener('livewire:init', () => {
+            Livewire.on('load-data', (event) => {
+                console.log('load-data received ... bzzz brrr bggg');
+                console.log(event.year);
+                window.getEvents(event.year)
+            });
+        });
+    </script>
+
+
+
 @endpush
 
 @section('content')
 
+
     {{--        {{dd($tag)}}--}}
     {{--    {{dd($active_countries)}}--}}
 
-    <search-page-component
+    <div class="home-map">
+        <div class="add-button">
+            <a class="codeweek-action-link-button"
+               href="/add">{{__('menu.add_event')}}</a>
+        </div>
+        <div class="landing-wrapper">
+            <div class="events-map-wrapper">
+                <div id="home-map"></div>
+            </div>
+        </div>
+    </div>
+
+    <livewire:activity-map />
+
+{{--    <div class="home-map">--}}
+{{--        <div class="add-button">--}}
+{{--            <a class="codeweek-action-link-button"--}}
+{{--               href="/add">{{__('menu.add_event')}}</a>--}}
+{{--        </div>--}}
+{{--        <div class="landing-wrapper">--}}
+{{--            <div class="events-map-wrapper">--}}
+{{--                <div id="home-map"></div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
+{{--    <search-page-component
             :prp-years={{json_encode($years)}}
                     :prp-query="'{{$query}}'"
             :prp-selected-country="{{json_encode($selected_country)}}"
@@ -36,6 +75,6 @@
             :prp-tag="'{{$tag}}'"
 
     >
-    </search-page-component>
+    </search-page-component>--}}
 
 @endsection

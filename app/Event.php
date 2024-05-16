@@ -205,14 +205,16 @@ class Event extends Model
                 '<',
                 Carbon::createFromDate($year, 12, 31)
             );
-        } else {
+        }
+        /*else {
             $events = $events->where(
                 'end_date',
                 '>=',
                 Carbon::now('Europe/Brussels')->year
             );
-        }
+        }*/
 
+        //dd($events->toRawSql());
         return $events->get();
     }
 

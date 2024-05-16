@@ -273,6 +273,7 @@ Route::view(
 )->name('codingathome-turning-code-into-pictures');
 
 Route::get('/events', [SearchController::class, 'search'])->name('events_map');
+
 Route::get('/add', [EventController::class, 'create'])->name('create_event');
 Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');

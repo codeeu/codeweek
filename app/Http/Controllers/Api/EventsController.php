@@ -11,6 +11,7 @@ use App\Importer;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 class EventsController extends Controller
 {
@@ -26,9 +27,7 @@ class EventsController extends Controller
 
     public function event(Event $event)
     {
-
         return new \App\Http\Resources\EventResource($event);
-
     }
 
     public function list(Request $request)
@@ -37,9 +36,12 @@ class EventsController extends Controller
             ? $request->input('year')
             : Carbon::now()->year;
 
-        if (Cache::has('events'.$year)) {
-            $events = Cache::get('events'.$year);
+        if (Cache::has('events' . $year)) {
+            Log::info('From Cache');
+            $events = Cache::get('events' . $year);
         } else {
+            Log::info('No Cache');
+            Log::info($year);
             $events = Event::getByYear($year);
 
             $events = $this->eventTransformer->transformCollection($events);
@@ -48,12 +50,12 @@ class EventsController extends Controller
 
             if ($year == Carbon::now()->year) {
                 Cache::add(
-                    'events'.$year,
+                    'events' . $year,
                     $events,
                     300
                 );
             } else {
-                Cache::forever('events'.$year, $events);
+                Cache::forever('events' . $year, $events);
             }
         }
 
@@ -86,7 +88,6 @@ class EventsController extends Controller
         $events = $event->getClosest();
 
         return $events;
-
         //return new EventResource($event);
     }
 
@@ -134,7 +135,7 @@ class EventsController extends Controller
         }
 
         if (isset($validated['year'])) {
-            $year = (int) $validated['year'];
+            $year = (int)$validated['year'];
         } else {
             $year = Carbon::now()->year;
         }
