@@ -41,10 +41,13 @@ L.custom = {
                 })
                 markersCountryLayers = [];
             }
+            console.log('pp');
+            console.log(data);
             $.each(data, function (key, country) {
                 var markersListPerCountry = [];
                 $.each(country, function (key, val) {
                     var coordinates = val.geoposition.split(',');
+
                     var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), {id: val.id});
                     marker.on('click', markerOnClick);
                     markersListPerCountry.push(marker);
@@ -95,12 +98,12 @@ L.custom = {
             return (location.search.split(name + '=')[1] || '').split('&')[0];
         }
 
-        if (window.eventsToMap){
-            success(window.eventsToMap);
-            window.eventsToMap = undefined;
-        }
+        // if (window.eventsToMap){
+        //     success(window.eventsToMap);
+        //     window.eventsToMap = undefined;
+        // }
 
-        window.getEvents = success;
+
 
         window.centralizeMap = function(country_iso){
             if (map) {
@@ -125,16 +128,18 @@ L.custom = {
             window.centralizeMap(window.countrySelected);
         }
 
-        /*function getEvents(year) {
+        function getEvents(year) {
             $.ajax({
                 dataType: "json",
                 url: "api/event/list?year="+ year,
                 success: success
             });
-        }*/
+        }
 
-        //var year = param('year') ? param('year') : 2019;
-        //getEvents(year);
+        var year = param('year') ? param('year') : 2024;
+        getEvents(year);
+
+        window.getEvents = getEvents;
 
 
     }

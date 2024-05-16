@@ -62,7 +62,7 @@ class SearchController extends Controller
         if ($request->input('page')) {
             $result = [$events];
         } else {
-            Log::info('no page');
+            //Log::info('no page');
             $eventsMap = $this->getAllEventsToMap($filters);
             $result = [$events, $eventsMap];
         }
