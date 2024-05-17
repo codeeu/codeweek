@@ -10,17 +10,22 @@
 
         @can('approve', $event)
             @if($event->certificate_url)
-                <reported-event :event="{{$event}}"></reported-event>
+                <div class="reported-event">
+                    <div>
+                        Current Status: <strong>Reported </strong>
+                    </div>
+                    &nbsp;-&nbsp;Participants Count:&nbsp;<strong>{{$event->participants_count}}</strong>
+                </div>
             @else
-                <moderate-event :event="{{$event}}" :pending-counter="{{auth()->user()->getEventsToReviewCount()}}"
-                                :next-pending="'{{optional(auth()->user()->getNextPendingEvent($event))->path()}}'"></moderate-event>
+                <livewire:moderate-activity :event="$event" :pendingCounter="auth()->user()->getEventsToReviewCount()" :nextPending="optional(auth()->user()->getNextPendingEvent($event))->path()" />
+
             @endif
         @endcan
 
 
 
         @can('report', $event)
-            <report-event :event="{{$event}}"></report-event>
+                <livewire:report-activity :event="$event"></livewire:report-activity>
         @endcan
 
         @if(Auth::check() &&

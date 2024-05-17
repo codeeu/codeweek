@@ -95,14 +95,6 @@
     },
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        },
-        {
-            "type": "path",
-            "url": "./nova-components/NovaTheme"
-        },
-        {
             "type": "vcs",
             "url": "https://github.com/codeeu/laravel-vue-i18n-generator"
         }
