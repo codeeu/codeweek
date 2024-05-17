@@ -96,7 +96,7 @@ class Event extends Model
     public function getEventUrlAttribute($url)
     {
         if ($url && strpos($url, 'http') !== 0) {
-            return 'http://'.$url;
+            return 'http://' . $url;
         }
 
         return $url;
@@ -104,7 +104,7 @@ class Event extends Model
 
     public function path()
     {
-        return '/view/'.$this->id.'/'.$this->slug;
+        return '/view/' . $this->id . '/' . $this->slug;
     }
 
     public function imported()
@@ -121,7 +121,7 @@ class Event extends Model
                 return $this->picture;
             }
 
-            return config('codeweek.aws_url').$this->picture;
+            return config('codeweek.aws_url') . $this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
         }
@@ -130,7 +130,7 @@ class Event extends Model
     public function picture_detail_path()
     {
         if ($this->picture_detail) {
-            return config('codeweek.aws_url').$this->picture_detail;
+            return config('codeweek.aws_url') . $this->picture_detail;
         }
 
         return $this->picture_path();
@@ -253,11 +253,11 @@ class Event extends Model
 
         $this->update($data);
 
-        if (! empty($this->user_email)) {
+        if (!empty($this->user_email)) {
             Mail::to($this->user_email)->queue(
                 new \App\Mail\EventApproved($this, $this->owner)
             );
-        } elseif (! is_null($this->owner) && ! is_null($this->owner->email)) {
+        } elseif (!is_null($this->owner) && !is_null($this->owner->email)) {
             Mail::to($this->owner->email)->queue(
                 new \App\Mail\EventApproved($this, $this->owner)
             );
@@ -276,11 +276,11 @@ class Event extends Model
 
         $data = ['status' => 'REJECTED', 'approved_by' => auth()->user()->id];
 
-        if (! empty($this->user_email)) {
+        if (!empty($this->user_email)) {
             Mail::to($this->user_email)->queue(
                 new \App\Mail\EventRejected($this, $this->owner, $rejectionText)
             );
-        } elseif (! is_null($this->owner) && ! is_null($this->owner->email)) {
+        } elseif (!is_null($this->owner) && !is_null($this->owner->email)) {
             Mail::to($this->owner->email)->queue(
                 new \App\Mail\EventRejected($this, $this->owner, $rejectionText)
             );
@@ -321,6 +321,35 @@ class Event extends Model
         }
     }
 
+    public function remove()
+    {
+        if (
+            auth()
+                ->user()
+                ->can('delete', $this)
+        ) {
+            $this->sendDeletionEmail();
+            $this->delete();
+        }
+    }
+
+    private function sendDeletionEmail()
+    {
+        if ($this->creator_id == auth()->id()) {
+            return;
+        }
+
+        if (!empty($this->user_email)) {
+            Mail::to($this->user_email)->queue(
+                new \App\Mail\EventDeleted()
+            );
+        } elseif (!is_null($this->owner) && !is_null($this->owner->email)) {
+            Mail::to($this->owner->email)->queue(
+                new \App\Mail\EventDeleted()
+            );
+        }
+    }
+
     public function feature()
     {
         if (
@@ -346,17 +375,17 @@ class Event extends Model
         $this->longitude = $this->country->longitude;
         $this->latitude = $this->country->latitude;
         $this->geoposition =
-            $this->country->latitude.','.$this->country->longitude;
+            $this->country->latitude . ',' . $this->country->longitude;
         $this->save();
     }
 
     public function relocateWithCoordinates($coords)
     {
-        if (! is_null($coords)) {
+        if (!is_null($coords)) {
             $this->latitude = $coords['location']['y'];
             $this->longitude = $coords['location']['x'];
             $this->geoposition =
-                $coords['location']['y'].','.$coords['location']['x'];
+                $coords['location']['y'] . ',' . $coords['location']['x'];
             $this->relocation_status = 'SUCCESS';
         } else {
             $this->relocation_status = 'EMPTY COORDS';
@@ -369,7 +398,7 @@ class Event extends Model
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
-            ->setDescriptionForEvent(fn (string $eventName) => "Event {$this->id} has been {$eventName}");
+            ->setDescriptionForEvent(fn(string $eventName) => "Event {$this->id} has been {$eventName}");
     }
 
     public function getTrimmedGeopositionAttribute()

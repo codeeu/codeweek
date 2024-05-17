@@ -1,7 +1,7 @@
 <template>
     <div v-if="status === 'APPROVED'">
         <div v-if="reported_at == null || certificate_url== null">
-            <div class="report-event">
+            <div class="report-event p-8">
                 <div style="text-align: right;">{{$t('event.submit_event_and_report')}}</div>
                 <div class="actions">
                     <button @click="report" class="codeweek-action-button">{{$t('event.report_and_claim')}}</button>

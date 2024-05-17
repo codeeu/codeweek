@@ -234,12 +234,12 @@ class EventController extends Controller
         //
     }
 
-    public function approve(Event $event)
-    {
-        $this->authorize('approve', $event);
-
-        $event->approve();
-    }
+//    public function approve(Event $event)
+//    {
+//        $this->authorize('approve', $event);
+//
+//        $event->approve();
+//    }
 
     public function approveAll($country): RedirectResponse
     {
@@ -256,36 +256,19 @@ class EventController extends Controller
         return redirect('pending/'.$country);
     }
 
-    public function reject(Request $request, Event $event)
-    {
-        $rejectionText = $request->get('rejectionText', null);
+//    public function reject(Request $request, Event $event)
+//    {
+//        $rejectionText = $request->get('rejectionText', null);
+//
+//        try {
+//            $this->authorize('approve', $event);
+//        } catch (AuthorizationException $e) {
+//        }
+//
+//        $event->reject($rejectionText);
+//    }
 
-        try {
-            $this->authorize('approve', $event);
-        } catch (AuthorizationException $e) {
-        }
 
-        $event->reject($rejectionText);
-    }
-
-    private function sendDeletionEmail($event)
-    {
-
-        if ($event->creator_id == auth()->id()) {
-            return;
-        }
-
-        if (! empty($event->user_email)) {
-            Mail::to($event->user_email)->queue(
-                new \App\Mail\EventDeleted()
-            );
-        } elseif (! is_null($event->owner) && ! is_null($event->owner->email)) {
-            Mail::to($event->owner->email)->queue(
-                new \App\Mail\EventDeleted()
-            );
-        }
-
-    }
 
     public function delete(Request $request, Event $event)
     {
