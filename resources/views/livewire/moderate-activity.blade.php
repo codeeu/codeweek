@@ -37,16 +37,19 @@
                         <button wire:click="toggleModal" class="close-button">×</button>
                     </div>
                     <div class="modal-body">
-                        <p class="text-gray-800 text-lg leading-relaxed">This will help the activity organizer to
+                        <p class="text-orange-800 text-lg leading-relaxed">This will help the activity organizer to
                             improve their submission.</p>
-                        <select wire:model="rejectionOption" wire:change="prefillRejectionText">
+                            <select wire:model="rejectionOption" wire:change="prefillRejectionText" class="mt-2 mr-4 w-10/12 rounded-md border-0 py-1.5 pl-3 pr-10 text-orange-900 ring-1 ring-inset ring-blue-300 focus:ring-2 focus:ring-indigo-600 sm:leading-6">
+
                             <option value="" disabled>Select a rejection reason</option>
                             @foreach($rejectionOptions as $option)
                                 <option value="{{$option['text']}}">{{ $option['title'] }}</option>
                             @endforeach
                         </select>
-                        <textarea wire:model="rejectionText" class="reason-textarea" rows="4" cols="40"
-                                  placeholder="Reason for rejection"></textarea>
+                        <div class="mt-2">
+                            <textarea wire:model="rejectionText" rows="4" placeholder="Reason for rejection" class="block w-full bg-blue-200 text-black rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                        </div>
+
                     </div>
                     <div class="modal-footer">
                         <button wire:click="toggleModal" class="cancel-button">Cancel</button>
@@ -120,6 +123,7 @@
 
         .modal-body {
             margin-bottom: 20px;
+            margin-right: 20px;
         }
 
         .modal-footer {

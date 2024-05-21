@@ -1,6 +1,5 @@
 @extends('layout.base')
 
-<x-tailwind></x-tailwind>
 
 
 

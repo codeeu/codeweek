@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import * as path from "path";
 
 export default defineConfig({
     plugins: [
@@ -24,7 +25,8 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': '/resources/js',
-            'vue': 'vue/dist/vue.esm-bundler.js'
+            'vue': 'vue/dist/vue.esm-bundler.js',
+            '~font' : path.resolve(__dirname,'resources/assets/fonts')
         },
     },
 });

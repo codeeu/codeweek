@@ -26,7 +26,7 @@
     @yield('extra-css')
 
 
-{{--    @vite('resources/css/app.css')--}}
+    @vite('resources/css/app.css')
     @vite(['resources/assets/sass/app.scss', 'resources/js/app.js'])
 {{--    @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
 
