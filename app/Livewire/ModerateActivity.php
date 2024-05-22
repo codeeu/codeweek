@@ -2,15 +2,19 @@
 
 namespace App\Livewire;
 
+use App\Helpers\EventHelper;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
+use TallStackUi\Traits\Interactions;
 
 class ModerateActivity extends Component
 {
+    use Interactions;
+
     public $event;
     public $refresh = false;
     public $pendingCounter;
-    public $nextPending;
+
     public $status;
     public $showModal = false;
     public $showDeleteModal = false;
@@ -18,12 +22,12 @@ class ModerateActivity extends Component
     public $rejectionOption = "";
     public $rejectionOptions = [];
 
-    public function mount($event, $pendingCounter, $nextPending, $refresh = false)
+    public function mount($event, $refresh = false)
     {
         $this->event = $event;
         $this->refresh = $refresh;
-        $this->pendingCounter = $pendingCounter;
-        $this->nextPending = $nextPending;
+        $this->pendingCounter = EventHelper::getPendingEventsCount();
+
         $this->status = __('myevents.status.' . $event['status']);
         $this->rejectionOptions = [
             [
@@ -49,25 +53,18 @@ class ModerateActivity extends Component
     public function approve()
     {
         $this->event->approve();
+        $this->toast()->success('Activity has been approved')->send();
+
+        $this->reRender();
+
     }
 
     public function deleteEvent()
     {
         $this->event->remove();
 
-        $redirectUrl = '/my';
-
-        if (
-            auth()
-                ->user()
-                ->can('approve', $this->event)
-        ) {
-            $redirectUrl = '/pending';
-        }
-
-
         session()->flash('message', 'Event Deleted and email sent!');
-        $this->refresh ? $this->reRender() : redirect()->to($redirectUrl);
+        $this->reRender();
     }
 
     public function toggleModal()
@@ -83,11 +80,9 @@ class ModerateActivity extends Component
     public function reject()
     {
         $this->event->reject($this->rejectionText);
-
-
         $this->toggleModal();
         $this->status = 'REJECTED';
-        session()->flash('message', 'Event Rejected!');
+        $this->toast()->info('Event Rejected!')->send();
         $this->reRender();
     }
 
@@ -101,7 +96,8 @@ class ModerateActivity extends Component
         if ($this->refresh) {
             return redirect(request()->header('Referer'));
         } else {
-            return redirect()->to($this->nextPending);
+
+            return redirect()->to(auth()->user()->getNextPendingEvent($this->event)->path());
         }
     }
 

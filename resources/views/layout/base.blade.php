@@ -21,6 +21,8 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
+    <tallstackui:script />
+
     @stack('extra-css')
 
     @yield('extra-css')
@@ -65,7 +67,7 @@
 
 
 <body>
-
+<x-toast />
 <!-- Document Wrapper -->
 <div id="app">
 

@@ -9,6 +9,7 @@
 namespace App\Queries;
 
 use App\Event;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 
 class PendingEventsQuery
@@ -25,7 +26,7 @@ class PendingEventsQuery
                 $query->where('country_iso', '=', $country->iso);
             }
 
-            $query->Where('status', 'like', 'PENDING');
+            $query->where('status', 'PENDING');
 
         })->orderBy('updated_at', 'asc')->paginate(30);
 

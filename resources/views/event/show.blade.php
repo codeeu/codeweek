@@ -16,7 +16,7 @@
                     &nbsp;-&nbsp;Participants Count:&nbsp;<strong>{{$event->participants_count}}</strong>
                 </div>
             @else
-                <livewire:moderate-activity :event="$event" :pendingCounter="auth()->user()->getEventsToReviewCount()" :nextPending="optional(auth()->user()->getNextPendingEvent($event))->path()" />
+                <livewire:moderate-activity :event="$event"  />
 
             @endif
         @endcan

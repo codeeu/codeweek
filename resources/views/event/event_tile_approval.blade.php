@@ -22,7 +22,7 @@
     </div>
     @can('approve', $event)
         @isset($moderation)
-            <moderate-event :event="{{$event}}" :refresh="true"></moderate-event>
+            <livewire:moderate-activity :event="$event" :refresh="true"></livewire:moderate-activity>
         @endisset
     @endcan
     <div class="card-actions">

@@ -234,12 +234,12 @@ class EventController extends Controller
         //
     }
 
-//    public function approve(Event $event)
-//    {
-//        $this->authorize('approve', $event);
-//
-//        $event->approve();
-//    }
+    public function approve(Event $event)
+    {
+        $this->authorize('approve', $event);
+
+        $event->approve();
+    }
 
     public function approveAll($country): RedirectResponse
     {
@@ -256,25 +256,24 @@ class EventController extends Controller
         return redirect('pending/'.$country);
     }
 
-//    public function reject(Request $request, Event $event)
-//    {
-//        $rejectionText = $request->get('rejectionText', null);
-//
-//        try {
-//            $this->authorize('approve', $event);
-//        } catch (AuthorizationException $e) {
-//        }
-//
-//        $event->reject($rejectionText);
-//    }
+    public function reject(Request $request, Event $event)
+    {
+        $rejectionText = $request->get('rejectionText', null);
+
+        try {
+            $this->authorize('approve', $event);
+        } catch (AuthorizationException $e) {
+        }
+
+        $event->reject($rejectionText);
+    }
 
 
 
     public function delete(Request $request, Event $event)
     {
         $this->authorize('delete', $event);
-        $this->sendDeletionEmail($event);
-        $event->delete();
+        $event->remove();
 
         if ($request->ajax()) {
             $redirectUrl = '/my';

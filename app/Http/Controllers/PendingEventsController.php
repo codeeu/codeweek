@@ -27,7 +27,7 @@ class PendingEventsController extends Controller
                 'country_iso' => is_null($country) ? '' : $country->iso,
                 'country_name' => is_null($country) ? '' : $country->name,
                 'events' => $events,
-                'countries' => $countries,
+                'countries' => $countries->toArray(),
             ])
         );
     }
