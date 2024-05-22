@@ -502,16 +502,16 @@ Route::middleware('role:super admin|ambassador')->group(function () {
     Route::get('/online/list', [OnlineEventsController::class, 'list'])->name(
         'admin.online-events'
     );
-//    Route::post('/api/event/approve/{event}', [EventController::class, 'approve'])->name(
-//        'event.approve'
-//    );
+    Route::post('/api/event/approve/{event}', [EventController::class, 'approve'])->name(
+        'event.approve'
+    );
     Route::get(
         '/api/event/approveAll/{country}',
         [EventController::class, 'approveAll']
     )->name('event.approveAll');
-//    Route::post('/api/event/reject/{event}', [EventController::class, 'reject'])->name(
-//        'event.reject'
-//    );
+    Route::post('/api/event/reject/{event}', [EventController::class, 'reject'])->name(
+        'event.reject'
+    );
 });
 
 Route::middleware('auth', 'role:super admin|leading teacher|leading teacher admin')->group(function () {

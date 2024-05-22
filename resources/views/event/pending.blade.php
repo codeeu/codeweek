@@ -1,7 +1,6 @@
 @extends('layout.base')
 
-<x-tailwind></x-tailwind>
-
+<x-livewire/>
 @section('content')
     <section id="codeweek-pending-events-page" class="codeweek-page">
         <section class="codeweek-content-header">
@@ -18,7 +17,8 @@
                 </div>
             </div>
             @role('super admin')
-            <country-select :target="'pending'" :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
+            <livewire:country-selector :code="$country_iso" :countries="$countries" target="pending" />
+
             @endrole
 
         </section>

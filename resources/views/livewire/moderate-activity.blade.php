@@ -37,7 +37,7 @@
                         <button wire:click="toggleModal" class="close-button">×</button>
                     </div>
                     <div class="modal-body">
-                        <p class="text-orange-800 text-lg leading-relaxed">This will help the activity organizer to
+                        <p class="text-orange-800 text-lg leading-relaxed pr-8">This will help the activity organizer to
                             improve their submission.</p>
                             <select wire:model="rejectionOption" wire:change="prefillRejectionText" class="mt-2 mr-4 w-10/12 rounded-md border-0 py-1.5 pl-3 pr-10 text-orange-900 ring-1 ring-inset ring-blue-300 focus:ring-2 focus:ring-indigo-600 sm:leading-6">
 
@@ -47,13 +47,13 @@
                             @endforeach
                         </select>
                         <div class="mt-2">
-                            <textarea wire:model="rejectionText" rows="4" placeholder="Reason for rejection" class="block w-full bg-blue-200 text-black rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                            <x-textarea resize wire:model="rejectionText" rows="4" placeholder="Reason for rejection"></x-textarea>
                         </div>
 
                     </div>
                     <div class="modal-footer">
-                        <button wire:click="toggleModal" class="cancel-button">Cancel</button>
-                        <button wire:click="reject" class="reject-button">Reject</button>
+                        <x-button wire:click="toggleModal" color="zinc" outline class="mr-2">Cancel</x-button>
+                        <x-button wire:click="reject" color="red">Reject</x-button>
                     </div>
                 </div>
             </div>
@@ -72,8 +72,8 @@
                             event?</p>
                     </div>
                     <div class="modal-footer">
-                        <button wire:click="toggleDeleteModal" class="cancel-button">Cancel</button>
-                        <button wire:click="deleteEvent" class="delete-button">Delete</button>
+                        <x-button wire:click="toggleDeleteModal" color="zinc" outline class="mr-2">Cancel</x-button>
+                        <x-button wire:click="deleteEvent" color="red">Delete</x-button>
                     </div>
                 </div>
             </div>
