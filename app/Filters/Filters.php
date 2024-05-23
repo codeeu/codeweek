@@ -56,6 +56,7 @@ abstract class Filters
         foreach ($this->getFilters() as $filter => $value) {
             if (method_exists($this, $filter)) {
                 //Log::info($filter);
+
                 session([$filter => $value]);
                 $this->$filter($value);
             }
@@ -73,7 +74,6 @@ abstract class Filters
      */
     public function getFilters()
     {
-
         return $this->request->only($this->filters);
     }
 }

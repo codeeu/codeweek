@@ -20,7 +20,8 @@
         </section>
 
         <x-intro-banner>@lang('snippets.'.$section)</x-intro-banner>
-        <resource-form
+        <livewire:resources-section :section="$section"/>
+{{--        <resource-form
                 :prp-query="'{{$query}}'"
                 :prp-levels="{{$selected_levels}}"
                 :prp-types="{{$selected_types}}"
@@ -36,7 +37,7 @@
                 :subjects="{{ $subjects }}"
                 :types="{{ $types }}"
                 :locale="'{{App::getLocale()}}'"
-        ></resource-form>
+        ></resource-form>--}}
 
     </section>
 
