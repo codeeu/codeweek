@@ -296,7 +296,8 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 "2" => "Moje srdce není z kamene pro nižší ročníky střední školy",
                 "3" => "Zakódujte mě do nálady pro vyšší ročníky střední školy",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS voda",
             "author" => "Francisco Delgado Cecilia",
@@ -318,6 +319,23 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
             ]
 
         ],
+        "20" => [
+            "title" => "Kódování prostřednictvím umění",
+            "author" => "od Marie Tsapary",
+            "text" => [
+                "Děti vyrůstají ve složitém světě, který se neustále technologicky vyvíjí, což vyžaduje inovativní vzdělávací přístupy pedagogů již od raného věku dítěte. Mezi tyto přístupy patří aktivity, které podporují informatické myšlení a programování již od útlého věku. Výzkumy naznačují, že cílené aktivity mohou účinně rozvíjet informatické myšlení dětí a jejich schopnosti řešit problémy a zároveň takové aktivity podporují jejich kreativní sebevyjádření prostřednictvím technologií.",
+                "Přestože nejčastější strategie výuky programování zahrnuje využití výukových robotů, existuje také možnost programování bez jejich použití (tzv. \"unplugged\" aktivity). Tento přístup může mít různé podoby a zahrnovat širokou škálu aktivit (pixel art, děti v roli robotů, využití podlahové mřížky atd.). Tyto aktivity jsou díky zážitkovému učení přínosné zejména pro menší děti, které se nejlépe učí hrou.",
+                "<strong> Learning Bit Kódování prostřednictvím umění</strong> sestává ze tří učebních plánů pro pedagogy pracující na nejnižším stupni vzdělávání a představuje aktivity bez nutnosti využití pomůcek, případně s využitím výukového robota Bee-Bot nebo sady Makey Makey. Pomocí stavebnice Makey Makey mají žáci možnost vytvářet hmatatelná rozhraní a zkoušet různá řešení, tvořit, experimentovat a vylepšovat všechny své dovednosti v prostředí společného učení.",
+                "Jak řekl Pablo Picasso: \"Každé dítě je umělec. Problém je jím zůstat, i když vyrostou.\" Umění poskytuje dětem příležitost kreativně ztvárnit a sdělit své myšlenky a pocity. V tomto Learning Bitu najdete inspirativní aktivity, které prostřednictvím umění a kódování rozvíjejí sociální dovednosti a dovednosti 21. století vašich žáků, podporují jejich kreativní sebevyjádření a rozvíjejí jejich představivost. Learning Bit Kódování prostřednictvím umění vám tak umožní rozvíjet kreativitu, spolupráci a řešení problémů vašich žáků prostřednictvím integrace umění a programování."
+            ],
+            "activities" => [
+                "1" => "Umělecké kódování: pro 4–6leté žáky mateřských škol.",
+                "2" => "Laboratoř kreativního kódu: pro 4–6leté žáky mateřských škol.",
+                "3" => "Dotykové plátno: vytváření interaktivních obrazů: pro 4–6leté žáky mateřských škol, s pokročilými dovednostmi."
+
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Stáhnout scénář videa',

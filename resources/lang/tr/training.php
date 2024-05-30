@@ -298,7 +298,8 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 "2" => "Taş kalpli değilim: Ortaokul öğrencileri için",
                 "3" => "Beni ruh halime göre kodla: Lise öğrencileri için",
             ]
-        ],"18" => [
+        ],
+        "18" => [
             "title" => "SOS Water",
             "author" => "Francisco Delgado Cecilia",
             "text" => [
@@ -319,7 +320,21 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
             ]
 
         ],
-
+        "20" => [
+            "title" => "Sanat Yoluyla Kod",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Çocuklar, teknolojik olarak sürekli gelişen karmaşık bir dünyada büyüyor ve bu da erken çocukluk dönemi eğitimcilerinin yenilikçi eğitim yaklaşımları uygulamalarını gerektiriyor. Bu yaklaşımlar arasında, küçük yaşlardan itibaren sayısal düşünmeyi ve programlamayı teşvik eden faaliyetler de yer alıyor. Araştırmalar, hedefli aktivitelerin çocukların sayısal düşünme ve problem çözme becerilerini etkili bir şekilde geliştirebileceğini ve aynı zamanda bu tür aktivitelerin teknoloji yoluyla yaratıcı ifadeyi teşvik ettiğini gösteriyor.",
+                "Programlamayı öğretmek için en yaygın strateji, eğitici robotların kullanımını kapsıyor olsa da, robotik kiti kullanmadan (bilgisayarsız) programlama olanağı da mevcuttur. Bu yaklaşım, çeşitli biçimlerde olabilir ve birbirinden farklı aktiviteleri içerebilir (piksel sanatı, robot rolündeki çocuklar, yer kılavuzu (ızgara) kullanma vb.). Bu aktiviteler, özellikle en iyi oyun yoluyla öğrenebilen küçük çocuklar için deneysel öğrenim avantajları sunar.",
+                "</strong>Sanat Yoluyla Kodlama Learning Bit </strong>’i, erken çocukluk dönemi eğitimcileri için üç ders planından oluşuyor ve bilgisayarsız bir aktivite ile Bee-Bot eğitici robotun ve Makey Makey buluş kitinin kullanılmasını kapsıyor. Öğrenciler, Makey Makey kitini kullanarak fiziksel arayüzler oluşturma ve farklı çözümler deneme, yaratma, deneyimleme ve iş birlikçi bir öğrenim ortamında tüm öğrenim becerilerini güçlendirme fırsatına sahip oluyorlar.",
+                "Pablo Picasso'nun da dediği gibi, \"Her çocuk bir sanatçıdır. Asıl sorun, büyüyünce de sanatçı olarak kalabilmektir.\" Sanat, çocuklara fikirlerini ve duygularını yaratıcı bir şekilde sunma ve aktarma fırsatları sağlar. Bu Learning Bit’te, sanat ve kodlama yoluyla öğrencilerinizin sosyal ve 21. yüzyıl becerilerini geliştirmek, kendilerini yaratıcı bir şekilde ifade etmeye teşvik etmek ve hayal güçlerini geliştirmek üzere ilham verici aktiviteler bulacaksınız. Sanat Yoluyla Kodlama Learning Bit’i, sanat ve kodlamayı entegre ederek öğrencilerinizin yaratıcılığını, aynı zamanda iş birliği kurma ve problem çözme becerilerini geliştirmenizi sağlayacaktır."
+            ],
+            "activities" => [
+                "1" => "Sanatsal Kodlama: 4-6 yaş anaokulu öğrencileri",
+                "2" => "Yaratıcı Kod Laboratuvarı: 4-6 yaş anaokulu öğrencileri",
+                "3" => "Dokunmatik Tuval: İnteraktif tablolar oluşturma: 4-6 yaş anaokulu öğrencileri; ileri seviye."
+            ]
+        ]
 
 
     ],

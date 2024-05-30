@@ -318,6 +318,21 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
             ]
 
         ],
+        "20" => [
+            "title" => "Kodiranje kroz umjetnost",
+            "author" => "autorica: Maria Tsapara",
+            "text" => [
+    "Djeca odrastaju u složenom svijetu koji se stalno razvija u tehnološkom smislu, a što zahtijeva inovativne obrazovne pristupe odgajatelja u tom ranom djetinjstvu. Ti pristupi uključuju aktivnosti koje od rane dobi promiču računalno razmišljanje i programiranje. Istraživanje sugerira da ciljane aktivnosti mogu učinkovito pomoći u razvoju računalnog razmišljanja i vještina rješavanja problema kod djece te da takve aktivnosti istovremeno potiču kreativno izražavanje djece kroz tehnologiju.",
+                "Iako najčešća strategija poučavanja programiranja uključuje upotrebu obrazovnih robota, postoji i mogućnost programiranja bez upotrebe kompleta za robotiku (bez upotrebe računala). Taj pristup može se provoditi u različitim oblicima i uključivati širok raspon aktivnosti (pikselna umjetnost, djeca u ulozi robota, upotreba podne mreže itd.). Te aktivnosti pružaju prednosti kroz iskustveno učenje, a posebno kod male djece koja najbolje uče kroz igru.",
+                "<strong>Learning Bit Kodiranje kroz umjetnost</strong> uključuje tri nastavna plana za odgajatelje u ranoj dobi te obuhvaća aktivnost bez upotrebe računala, upotrebu obrazovnog robota Bee-bota i kompleta za stvaranje Makey Makey. Upotreba kompleta Makey Makey omogućuje polaznicima da stvaraju opipljiva sučelja i isprobavaju različita rješenja, da stvaraju, eksperimentiraju i jačaju svoje sposobnosti učenja u okruženju za suradničko učenje.",
+                "Kao što je Pablo Picasso govorio: \"Svako je dijete umjetnik. Problem je u tome kako da ostane umjetnik jednom kad odraste.\" Umjetnost omogućuje djeci da se kreativno izražavaju i prenose svoje ideje i osjećaje. U ovom Learning Bitu čekaju vas inspirativne aktivnosti zahvaljujući kojima kroz umjetnost i kodiranje možete razvijati društvene vještine svojih učenika te vještine koje su im potrebne u 21. stoljeću. Time ih ohrabrujete da se kreativno izražavaju te potičete njihovu maštu. Learning Bit Kodiranje kroz umjetnost omogućit će vam da potičete kreativnost svojih učenika te njihovu suradnju i vještine rješavanja problema kroz integraciju umjetnosti i kodiranja."
+            ],
+            "activities" => [
+                "1" => "Umjetničko kodiranje: polaznici vrtića u dobi od četiri godine do šest godina.",
+                "2" => "Laboratorij kreativnog kodiranja: polaznici vrtića u dobi od četiri godine do šest godina",
+                "3" => "Dodirni platno: stvaranje interaktivnih slika: polaznici vrtića u dobi od četiri godine do šest godina; napredniji."
+            ]
+        ]
 
 
 

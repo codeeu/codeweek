@@ -335,7 +335,8 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
                 "2" => "Mana sirds nav no akmens pamatskolas skolēniem",
                 "3" => "Ieprogrammē manu garastāvokli vidusskolas skolēniem",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS palīdzība ūdenim",
             "author" => "autors: Francisko Delgado Cecīlija",
@@ -357,6 +358,22 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
             ]
 
         ],
+        "20" => [
+            "title" => "Code Through Art",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Bērni aug sarežģītā pasaulē, kas nepārtraukti attīstās tehnoloģiju ziņā, un tas prasa inovatīvas pieejas no agrīnās pirmsskolas izglītības pedagogiem. Šādas pieejas ietver aktivitātes, kas veicina skaitļošanas domāšanu un programmēšanu jau no mazotnes. Pētījumi liecina, ka mērķtiecīgas aktivitātes var efektīvi attīstīt bērnu skaitļošanas domāšanu un problēmu risināšanas prasmes un vienlaikus šādas aktivitātes veicina viņu radošās izpausmi, izmantojot tehnoloģijas.",
+                "Lai gan visizplatītākā programmēšanas mācīšanas stratēģija ietver izglītojošu robotu izmantošanu, pastāv arī iespēja programmēt, neizmantojot robotikas komplektu (bez datora izmantošanas). Šāda pieeja var izpausties dažādos veidos un ietvert visdažādākās aktivitātes (pikseļu māksla, bērni robotu lomās, izmantojot režģi uz grīdas u. c.). Šīs darbības sniedz uz pieredzi balstītas mācīšanās priekšrocības, jo īpaši maziem bērniem, kuri vislabāk iemācās rotaļājoties. ",
+                "<strong>Learning bit “Uz kodu caur mākslu”</strong> ietver trīs nodarbību plānus agrīnās pirmsskolas izglītības pedagogiem, un tajā tiek īstenota aktivitāte bez datora izmantošanas, izmantots izglītojošais robots bite robots un izgudrojumu komplekts Makey Makey. Izmantojot Makey Makey komplektu, audzēkņiem ir iespēja veidot ar tausti vadāmas saskarnes un izmēģināt dažādus risinājumus, radīt, eksperimentēt un stiprināt visas savas mācīšanās spējas sadarbīgā mācību vidē.",
+                "Kā teica Pablo Pikaso: \"Katrs bērns ir mākslinieks. Problēma ir, kā palikt māksliniekam, kad viņš izaug.\" Māksla sniedz bērniem iespēju radoši attēlot un paust savas idejas un sajūtas. Šajā Learning bit atradīsiet iedvesmojošas aktivitātes, lai ar mākslas un programmēšanas palīdzību attīstītu skolēnu sociālās un 21. gadsimta prasmes, rosinātu viņus radoši izpausties un veicinātu viņu iztēli . Learning Bit ”Uz kodu caur mākslu” ļaus jums veicināt skolēnu radošumu, sadarbību un problēmu risināšanu, integrējot mākslu un programmēšanu."
+            ],
+            "activities" => [
+                "1" => " Mākslas caurvīta programmēšana: 4-6 gadus veci bērnudārza audzēkņi.",
+                "2" => "Radošā koda laboratorija: 4-6 gadus veci bērnudārza audzēkņi",
+                "3" => "Skārienjutīgais audekls: Interaktīvu gleznu radīšana: 4-6 gadus veci bērnudārza audzēkņi; augstākais līmenis."
+            ]
+        ]
+
 
     ],
     'download_video_script' => 'Lejupielādēt video skriptu',

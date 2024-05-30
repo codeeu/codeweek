@@ -319,6 +319,21 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
             ]
 
         ],
+        "20" => [
+            "title" => "Kódovanie prostredníctvom umenia",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Deti vyrastajú v zložitom svete, ktorý sa neustále technologicky vyvíja, čo si vyžaduje inovatívne vzdelávacie prístupy pedagógov v ranom detstve. Tieto prístupy zahŕňajú aktivity, ktoré podporujú informatické myslenie a programovanie už od útleho veku. Z výskumov vyplýva, že cielené aktivity môžu účinne rozvíjať výpočtové myslenie a zručnosti detí pri riešení problémov a zároveň takéto aktivity podporujú ich tvorivé vyjadrenie prostredníctvom technológií.",
+                "Hoci najbežnejšia stratégia výučby programovania zahŕňa používanie vzdelávacích robotov, existuje aj možnosť programovania bez použitia robotickej súpravy (bez pripojenia). Tento prístup môže mať rôzne podoby a zahŕňať širokú škálu aktivít (pixelová grafika, deti v úlohe robotov, používanie mriežky na dlážke atď.) Tieto aktivity ponúkajú prínos zážitkového učenia, najmä pre malé deti, ktoré sa najlepšie učia hrou. ",
+                "<strong> Learning Bit – kódovanie prostredníctvom umenia</strong> obsahuje tri plány vyučovacích hodín pre pedagógov v ranom detstve, v ktorom sa realizuje aktivitu bez pripojenia, používa sa vzdelávací robot-včielka a súprava na vynálezy Makey Makey. Pomocou súpravy Makey Makey majú žiaci možnosť vytvárať hmatateľné rozhrania a skúšať rôzne riešenia, tvoriť, experimentovať a posilňovať všetky svoje schopnosti učiť sa v prostredí kolaboratívneho učenia.",
+                "Ako povedal Pablo Picasso: „Každé dieťa je umelec. Problém je zostať umelcom, aj keď vyrastie.“ Umenie poskytuje deťom príležitosť tvorivo prezentovať a sprostredkúvať svoje myšlienky a pocity. V tomto programe Learning Bit nájdete inšpiratívne aktivity na rozvíjanie sociálnych zručností a zručností žiakov v 21. storočí prostredníctvom umenia a kódovania, na podporu ich tvorivého vyjadrovania a rozvíjania ich predstavivosti . Learning Bit – kódovanie prostredníctvom umenia vám umožní rozvíjať kreativitu, spoluprácu a riešenie problémov vašich žiakov  prostredníctvom integrácie umenia a kódovania."
+            ],
+            "activities" => [
+                "1" => "Umné kódovanie: 4 – 6-roční žiaci materských škôl.",
+                "2" => "Kreatívne laboratórium kódovania: 4-6-roční žiaci materských škôl",
+                "3" => "Dotknúť sa plátna: vytváranie interaktívnych obrazov: 4 – 6 roční žiaci materských škôl; pokročilí."
+            ]
+        ]
 
 
 
