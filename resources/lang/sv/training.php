@@ -311,13 +311,14 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 "2" => "Jag har inte ett hjärta av sten för högstadieelever",
                 "3" => "Koda mig efter humör för gymnasieelever",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS Vatten",
-"author" => "av Francisco Delgado Cecilia",
-"text" => [
+            "author" => "av Francisco Delgado Cecilia",
+            "text" => [
 
-    "SOS Vatten är ett svar på behovet av att lösa problemet med vattenföroreningar. Trots de ansträngningar som har gjorts under de senaste åren finns det fortfarande 2 miljarder människor runt om i världen som inte har tillgång till säkert dricksvatten. Det innebär att det sjätte målet för hållbar utveckling i Agenda 2030, att alla människor ska ha tillgång till säkert förvaltat vatten och sanitet senast 2030, är långt ifrån att uppnås. Samma sak gäller för mål 14, hav och marina resurser, som syftar till att bevara och nyttja haven och de marina resurserna på ett hållbart sätt i syfte att uppnå en hållbar utveckling.",
+                "SOS Vatten är ett svar på behovet av att lösa problemet med vattenföroreningar. Trots de ansträngningar som har gjorts under de senaste åren finns det fortfarande 2 miljarder människor runt om i världen som inte har tillgång till säkert dricksvatten. Det innebär att det sjätte målet för hållbar utveckling i Agenda 2030, att alla människor ska ha tillgång till säkert förvaltat vatten och sanitet senast 2030, är långt ifrån att uppnås. Samma sak gäller för mål 14, hav och marina resurser, som syftar till att bevara och nyttja haven och de marina resurserna på ett hållbart sätt i syfte att uppnå en hållbar utveckling.",
 
                 "Denna infomodul är inriktad på den relevanta och aktuella frågan att mäta vattenkvalitet och nya föroreningar som hotar vattenkvaliteten. Eleverna får möjlighet att undersöka och hitta lösningar på verkliga problem kopplade till vattnet och miljön, och då kan de också utveckla förmågor som insamling av information, kritiskt tänkande och problemlösning.",
 
@@ -325,15 +326,29 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
 
                 "För att genomföra denna infomodul föreslås att man utför alla tre aktiviteterna med eleverna, så man fullföljer hela projektet och det blir en mer meningsfull och motiverande studieprocess. Aktiviteterna kan dock genomföras var och en för sig."
 
-],
-"activities" => [
-    "1" => "SOS Vatten med Scratch",
+            ],
+            "activities" => [
+                "1" => "SOS Vatten med Scratch",
                 "2" => "SOS Vatten med maskininlärning",
                 "3" => "SOS Vatten med robotteknik"
             ]
 
         ],
-
+        "20" => [
+            "title" => "Kod genom konst",
+            "author" => "av Maria Tsapara",
+            "text" => [
+                "Barn växer upp i en komplex värld som ständigt utvecklas tekniskt, vilket kräver innovativa pedagogiska metoder för förskolepedagoger. Dessa metoder inkluderar aktiviteter som främjar datalogiskt tänkande och programmering från en tidig ålder. Forskning tyder på att riktade aktiviteter effektivt kan utveckla barns datalogiska tänkande och problemlösningsförmåga samtidigt som sådana aktiviteter främjar deras kreativa uttryck genom teknik.",
+                "Även om den vanligaste strategin för att lära ut programmering innebär användning av pedagogiska robotar, finns det också möjlighet att programmera utan att använda ett robotkit (unplugged). Detta tillvägagångssätt kan ta olika former och omfatta ett brett spektrum av aktiviteter (pixelkonst, barn i rollen som robotar, användning av ett golvnät etc.). Dessa aktiviteter erbjuder fördelar med erfarenhetsbaserat lärande, särskilt för små barn som lär sig bäst genom lek. ",
+                "<strong>The Learning Bit Kod genom konst</strong> består av tre lektionsplaner för förskolepedagoger och genomför en unplugged-aktivitet, användning av en Bee-bot utbildningsrobot och uppfinningskitet Makey Makey. Genom att använda Makey Makey kit får eleverna möjlighet att skapa konkreta gränssnitt och prova olika lösningar, skapa, experimentera och stärka alla sina inlärningsförmågor i en samarbetsinriktad inlärningsmiljö.",
+                "Som Pablo Picasso sa: \"Varje barn är en konstnär. Problemet är hur man förblir en konstnär när man växer upp.\" Konst ger barn möjligheter att på ett kreativt sätt representera och kommunicera sina idéer och känslor. I denna Learning Bit hittar du inspirerande aktiviteter för att utveckla dina elevers sociala färdigheter och färdigheter för det 21:a århundradet genom konst och kodning, för att uppmuntra dem att uttrycka sig kreativt och främja deras fantasi. Learning Bit Code Through Art gör det möjligt för dig att främja dina elevers kreativitet, samarbete och problemlösning genom att integrera konst och kodning."
+            ],
+            "activities" => [
+                "1" => "Konstfull kodning: 4-6 år gamla förskoleelever.",
+                "2" => "Kreativt kodlab: 4-6 år gamla förskoleelever",
+                "3" => "Touch Canvas: Skapa interaktiva målningar: 4-6 år gamla förskoleelever; avancerad."
+            ]
+        ]
 
 
     ],

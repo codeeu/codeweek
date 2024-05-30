@@ -318,6 +318,21 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
             ]
 
         ],
+        "20" => [
+            "title" => "Code Through Art",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Otroci odraščajo v kompleksnem svetu, ki se nenehno tehnološko razvija, kar od vzgojiteljev predšolskih otrok zahteva inovativne izobraževalne pristope. Ti pristopi vključujejo dejavnosti, ki spodbujajo računalniško razmišljanje in programiranje že od zgodnjega otroštva. Raziskave kažejo, da lahko ciljno usmerjene dejavnosti učinkovito razvijajo otrokovo računalniško mišljenje in spretnosti reševanja problemov, hkrati pa takšne dejavnosti spodbujajo njegovo ustvarjalno izražanje s pomočjo tehnologije.",
+                "Čeprav najpogostejša strategija poučevanja programiranja vključuje uporabo izobraževalnih robotov, obstaja tudi možnost programiranja brez uporabe robotskega kompleta (unplugged). Ta pristop ima lahko različne oblike in vključuje številne dejavnosti (pixel art, otroci v vlogi robotov, uporaba talne mreže itd.) Te dejavnosti prinašajo koristi izkustvenega učenja, zlasti za majhne otroke, ki se najbolje učijo skozi igro. ",
+                "<strong>Learning Bit Code Through Art</strong> obsega tri učne načrte za vzgojitelje v zgodnjem otroštvu in vključuje dejavnost brez priključka, uporabo izobraževalnega robota Bee-bot in izumiteljskega kompleta Makey Makey. Z uporabo kompleta Makey Makey imajo učenci priložnost ustvarjati oprijemljive vmesnike in preizkušati različne rešitve, ustvarjati, eksperimentirati in krepiti vse svoje učne sposobnosti v sodelovalnem učnem okolju.",
+                "Kot je dejal Pablo Picasso: \"Vsak otrok je umetnik. Problem je, kako ostati umetnik, ko le-ta odraste.\" Umetnost otrokom omogoča, da ustvarjalno predstavljajo in sporočajo svoje ideje in občutke. V tem Learning Bit boste našli navdihujoče dejavnosti, s katerimi boste z umetnostjo in kodiranjem razvijali socialne spretnosti in spretnosti 21. Stoletja svojih učencev, jih spodbujali k ustvarjalnemu izražanju in spodbujali njihovo domišljijo . Learning Bit Code Through Art vam bo omogočil, da z vključevanjem umetnosti in kodiranja spodbujate ustvarjalnost, sodelovanje in reševanje problemov pri svojih učencih."
+            ],
+            "activities" => [
+    "1" => "Spretno kodiranje: 4-6-letniučenci v vrtcu.",
+    "2" => "Creative Code Lab: 4-6-letni učenci vrtca",
+    "3" => "Platno na dotik: Canvas Canvas: Ustvarjanje interaktivnih slik: 4 do -6 letni  učenci vrtca; nadaljevalni."
+            ]
+        ]
 
 
 

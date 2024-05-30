@@ -148,6 +148,21 @@ Route::get(
     '/training/sos-water',
     'StaticPageController@static'
 )->name('training.module-18');
+//
+//Route::get(
+//    '/training/creative-scratch-laboratory',
+//    'StaticPageController@static'
+//)->name('training.module-19');
+
+Route::get(
+    '/training/code-through-art',
+    'StaticPageController@static'
+)->name('training.module-20');
+
+//Route::get(
+//    '/training/making-and-coding',
+//    'StaticPageController@static'
+//)->name('training.module-21');
 
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name(
     'coding@home'
@@ -455,10 +470,6 @@ Route::group(['middleware' => ['role:super admin']], function () {
         '/admin/certificates',
         'AdminController@generateCertificates'
     )->name('generate_certificates');
-
-
-
-
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
@@ -480,9 +491,12 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     );
 });
 
-Route::group(['middleware' => [
-    'auth',
-    'role:super admin|leading teacher|leading teacher admin']], function () {
+Route::group([
+    'middleware' => [
+        'auth',
+        'role:super admin|leading teacher|leading teacher admin'
+    ]
+], function () {
     Route::get('/my/badges', 'BadgesController@my')->name('my-badges')->middleware('auth');
     Route::get('/badges/user/{user}/{year?}', 'BadgesController@user')->name('badges-user');
     Route::get('/badges/leaderboard/{year?}', 'BadgesController@leaderboard')->name('badges-leaderboard-year');
@@ -544,7 +558,6 @@ Route::group(
 );
 
 
-
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 Route::view('/teach-day', 'teach-day')->name('teach-day');
 
@@ -554,42 +567,49 @@ Route::view('/challenges', '2021.challenges')->name('challenges');
 Route::view('/challenges/dance', '2021.challenges.dance')->name('challenges.dance');;
 
 
-
-$challenges =  function () {
-    Route::view('compose-song','2021.challenges.compose-song')->name('challenges.compose-song');
-    Route::view('sensing-game','2021.challenges.sensing-game')->name('challenges.sensing-game');
+$challenges = function () {
+    Route::view('compose-song', '2021.challenges.compose-song')->name('challenges.compose-song');
+    Route::view('sensing-game', '2021.challenges.sensing-game')->name('challenges.sensing-game');
     Route::view('chatbot', '2021.challenges.chatbot')->name('challenges.chatbot');
-    Route::view('paper-circuit','2021.challenges.paper-circuit')->name('challenges.paper-circuit');
-    Route::view('ai-hour-of-code','2021.challenges.ai-hour-of-code')->name('challenges.ai-hour-of-code');
-    Route::view('calming-leds','2021.challenges.calming-leds')->name('challenges.calming-leds');
-    Route::view('computational-thinking-and-computational-fluency','2021.challenges.computational-thinking-and-computational-fluency')->name('challenges.computational-thinking-and-computational-fluency');
-    Route::view('create-a-dance','2021.challenges.create-a-dance')->name('challenges.create-a-dance');
-    Route::view('create-a-simulation','2021.challenges.create-a-simulation')->name('challenges.create-a-simulation');
-    Route::view('create-your-own-masterpiece','2021.challenges.create-your-own-masterpiece')->name('challenges.create-your-own-masterpiece');
-    Route::view('cs-first-unplugged-activities','2021.challenges.cs-first-unplugged-activities')->name('challenges.cs-first-unplugged-activities');
+    Route::view('paper-circuit', '2021.challenges.paper-circuit')->name('challenges.paper-circuit');
+    Route::view('ai-hour-of-code', '2021.challenges.ai-hour-of-code')->name('challenges.ai-hour-of-code');
+    Route::view('calming-leds', '2021.challenges.calming-leds')->name('challenges.calming-leds');
+    Route::view('computational-thinking-and-computational-fluency',
+        '2021.challenges.computational-thinking-and-computational-fluency')->name('challenges.computational-thinking-and-computational-fluency');
+    Route::view('create-a-dance', '2021.challenges.create-a-dance')->name('challenges.create-a-dance');
+    Route::view('create-a-simulation', '2021.challenges.create-a-simulation')->name('challenges.create-a-simulation');
+    Route::view('create-your-own-masterpiece',
+        '2021.challenges.create-your-own-masterpiece')->name('challenges.create-your-own-masterpiece');
+    Route::view('cs-first-unplugged-activities',
+        '2021.challenges.cs-first-unplugged-activities')->name('challenges.cs-first-unplugged-activities');
     Route::view('family-care', '2021.challenges.family-care')->name('challenges.family-care');
-    Route::view('virtual-flower-field','2021.challenges.virtual-flower-field')->name('challenges.virtual-flower-field');
-    Route::view('haunted-house','2021.challenges.haunted-house')->name('challenges.haunted-house');
-    Route::view('inclusive-app-design','2021.challenges.inclusive-app-design')->name('challenges.inclusive-app-design');
+    Route::view('virtual-flower-field',
+        '2021.challenges.virtual-flower-field')->name('challenges.virtual-flower-field');
+    Route::view('haunted-house', '2021.challenges.haunted-house')->name('challenges.haunted-house');
+    Route::view('inclusive-app-design',
+        '2021.challenges.inclusive-app-design')->name('challenges.inclusive-app-design');
     Route::view('silly-eyes', '2021.challenges.silly-eyes')->name('challenges.silly-eyes');
-    Route::view('train-ai-bot','2021.challenges.train-ai-bot')->name('challenges.train-ai-bot');
-    Route::view('build-calliope','2021.challenges.build-calliope')->name('challenges.build-calliope');
-    Route::view('animate-a-name','2021.challenges.animate-a-name')->name('challenges.animate-a-name');
-    Route::view('european-astro-pi','2021.challenges.european-astro-pi')->name('challenges.european-astro-pi');
-    Route::view('code-a-dice','2021.challenges.code-a-dice')->name('challenges.code-a-dice');
-    Route::view('personal-trainer','2021.challenges.personal-trainer')->name('challenges.personal-trainer');
-    Route::view('create-a-spiral','2021.challenges.create-a-spiral')->name('challenges.create-a-spiral');
-    Route::view('play-against-ai','2021.challenges.play-against-ai')->name('challenges.play-against-ai');
-    Route::view('emobot-kliki','2021.challenges.emobot-kliki')->name('challenges.emobot-kliki');
-    Route::view('craft-magic','2021.challenges.craft-magic')->name('challenges.craft-magic');
-    Route::view('circle-of-dots','2021.challenges.circle-of-dots')->name('challenges.circle-of-dots');
-    Route::view('coding-escape-room','2021.challenges.coding-escape-room')->name('challenges.coding-escape-room');
-    Route::view('let-the-snake-run','2021.challenges.let-the-snake-run')->name('challenges.let-the-snake-run');
-    Route::view('illustrate-a-joke','2021.challenges.illustrate-a-joke')->name('challenges.illustrate-a-joke');
-    Route::view('app-that-counts-in-several-languages','2021.challenges.app-that-counts-in-several-languages')->name('challenges.app-that-counts-in-several-languages');
-    Route::view('coding-with-art-through-storytelling','2021.challenges.coding-with-art-through-storytelling')->name('challenges.coding-with-art-through-storytelling');
-    Route::view('coding-with-legoboost','2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
-    Route::view('air-drawing-with-AI','2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
+    Route::view('train-ai-bot', '2021.challenges.train-ai-bot')->name('challenges.train-ai-bot');
+    Route::view('build-calliope', '2021.challenges.build-calliope')->name('challenges.build-calliope');
+    Route::view('animate-a-name', '2021.challenges.animate-a-name')->name('challenges.animate-a-name');
+    Route::view('european-astro-pi', '2021.challenges.european-astro-pi')->name('challenges.european-astro-pi');
+    Route::view('code-a-dice', '2021.challenges.code-a-dice')->name('challenges.code-a-dice');
+    Route::view('personal-trainer', '2021.challenges.personal-trainer')->name('challenges.personal-trainer');
+    Route::view('create-a-spiral', '2021.challenges.create-a-spiral')->name('challenges.create-a-spiral');
+    Route::view('play-against-ai', '2021.challenges.play-against-ai')->name('challenges.play-against-ai');
+    Route::view('emobot-kliki', '2021.challenges.emobot-kliki')->name('challenges.emobot-kliki');
+    Route::view('craft-magic', '2021.challenges.craft-magic')->name('challenges.craft-magic');
+    Route::view('circle-of-dots', '2021.challenges.circle-of-dots')->name('challenges.circle-of-dots');
+    Route::view('coding-escape-room', '2021.challenges.coding-escape-room')->name('challenges.coding-escape-room');
+    Route::view('let-the-snake-run', '2021.challenges.let-the-snake-run')->name('challenges.let-the-snake-run');
+    Route::view('illustrate-a-joke', '2021.challenges.illustrate-a-joke')->name('challenges.illustrate-a-joke');
+    Route::view('app-that-counts-in-several-languages',
+        '2021.challenges.app-that-counts-in-several-languages')->name('challenges.app-that-counts-in-several-languages');
+    Route::view('coding-with-art-through-storytelling',
+        '2021.challenges.coding-with-art-through-storytelling')->name('challenges.coding-with-art-through-storytelling');
+    Route::view('coding-with-legoboost',
+        '2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
+    Route::view('air-drawing-with-AI', '2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
 };
 
 Route::group(['prefix' => '2021/challenges'], $challenges);
@@ -607,8 +627,6 @@ Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
 
-
-
 Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
 
 
@@ -619,10 +637,9 @@ Route::group(['middleware' => ['auth']], function () {
 //Route::view('/registration', 'registration.add');
 Route::view('/online-courses', 'online-courses')->name('online-courses');
 
-Route::get('mailing/test', function(){
-
+Route::get('mailing/test', function () {
     //$email = ['alainvd@gmail.com'];
-    $user = User::where("id","19588")->first();
+    $user = User::where("id", "19588")->first();
 
     return new App\Mail\UserCreated($user);
 });

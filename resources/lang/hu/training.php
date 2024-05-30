@@ -320,6 +320,22 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
             ]
 
         ],
+        "20" => [
+            "title" => "Code Through Art",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "A gyermekek egy összetett, technológiailag folyamatosan fejlődő világban nőnek fel, ami innovatív oktatási megközelítéseket igényel a kisgyermeknevelők számára. Ezek a megközelítések kiterjednek a számítási gondolkodásra és a programozást már fiatal korban elősegítő tevékenységekre. A kutatások szerint a célzott tevékenységek hatékonyan fejleszthetik a gyermekek számítási gondolkodását és problémamegoldó készségét, ugyanakkor az ilyen tevékenységek elősegítik a kreatív önkifejezésüket a technológia segítségével.",
+                "Bár a programozás tanításának legelterjedtebb stratégiája az oktatási robotok alkalmazása, lehetőség van robotkészlet használata nélküli (unplugged) programozásra is. Ez a megközelítés különböző formákat ölthet, és a tevékenységek széles skáláját ölelheti fel (pixelart, gyerekek a robotok szerepében, padlórács használata stb.). Ezek a tevékenységek tapasztalati tanulási előnyöket kínálnak, különösen a kisgyermekek számára, akik a játékon keresztül tanulnak a legjobban.",
+                "<strong>A Learning Bit Code Through Art</strong> három óravázlatot tartalmaz kisgyermekeket nevelők számára, valamit egy unplugged tevékenységet, amivel megvalósítható a Bee-bot oktatási robot és a Makey találmányi készlet használata. A Makey Makey készlet alkalmazásával a tanulóknak lehetőségük nyílik kézzelfogható felületeket létrehozni és különböző megoldásokat kipróbálni, alkotni, kísérletezni, valamint együttműködő tanulási környezetben megerősíteni minden tanulási képességüket.",
+                "Ahogy Pablo Picasso mondta: \"Minden gyermek művész. A probléma az, hogyan maradhat művész, amikor felnő.\" A művészet lehetőséget nyújt a gyermekeknek arra, hogy kreatívan ábrázolják és kommunikálják ötleteiket és érzéseiket. Ebben a learning bitben inspiráló tevékenységeket talál, amelyekkel a művészet és a kódolás segítségével fejlesztheti a tanulói szociális és 21. századi készségeit, ösztönözheti őket a kreatív önkifejezésre, és elősegítheti képzelőerejüket. A Learning Bit Code Through Art lehetővé teszi, hogy a művészet és a kódolás egybegyúrásával elősegítse tanulói kreativitását, együttműködését és problémamegoldását."
+            ],
+            "activities" => [
+                "1" => "Művészi kódolás: 4–6 éves óvodások.",
+                "2" => "Kreatív kódlabor: 4–6 éves óvodások",
+                "3" => "Touch Canvas: Interaktív festmények létrehozása: 4–6 éves óvodások; haladó."
+            ]
+        ]
+
 
 
 

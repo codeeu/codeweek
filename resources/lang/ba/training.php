@@ -319,6 +319,21 @@ U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zab
             ]
 
         ],
+        "20" => [
+            "title" => "Kȏd kroz umjetnost",
+            "author" => "Autor Maria Tsapara",
+            "text" => [
+    "Djeca rastu u kompleksnom svijetu koje se stalno tehnološki razvija, što zahtijeva inovativne obrazovne pristupe za edukatore u ranom djetinjstvu. Ti pristupi uključuju aktivnosti koje promovišu računarsko razmišljanje i programiranje počevši od ranog uzrasta. Istraživanje navodi da ciljne aktivnosti mogu efikasno razviti računarsko razmišljanje kod djece i vještine rješavanja problema, a u isto vrijeme takve aktivnosti povećavaju njihovo kreativno izražavanje kroz tehnologiju.",
+                "Iako najčešća strategija za učenje programiranja uključuje upotrebu obrazovnih robota, isto tako postoji mogućnost programiranja bez upotrebe kompleta za robotiku (bez upotrebe računara). Taj pristup može imati različite oblike i uključivati širok opseg aktivnosti (tačkasta umjetnost, djeca u ulozi robota, upotreba mreže na podu i sl). Te aktivnosti nude prednosti eksperimentalnog učenja, naročito za malu djecu koja najbolje uče kroz igru.",
+                "<strong>Learning Bit kȏd kroz umjetnost</strong> sastoji se od tri nastavna plana za edukatore u ranom djetinjstvu i provodi aktivnosti bez upotrebe računara, pomoću obrazovnog robota Bee-bot i kompleta za inovacije Makey Makey. Upotrebom kompleta Makey Makey učenici imaju mogućnost da stvore opipljive interfejse i probaju različita rješenja, za stvaranje, eksperimentisanje i jačanje svoje sposobnosti za učenje u kolaborativnom okruženju za učenje.",
+                "Kao što je rekao Pablo Picasso, “Svako je dijete umjetnik. Problem je kako ostati umjetnik nakon odrastanja.” Umjetnost pruža djeci mogućnost da kreativno predstave i prenesu svoje ideje i osjećanja. U ovom Learning Bitu naći ćete inspirativne aktivnosti za njegovanje društvenih i vještina učenika za 21. stoljeća kroz umjetnost i kodiranje, da biste ih ohrabrili da kreativno izraze sebe i povećali njihovu sposobnost maštanja. Learning Bit kȏd kroz umjetnost će omogućiti da vi povećate kreativnost, saradnju i rješavanje problema učenika tako što ćete integrisati umjetnost i kodiranje."
+            ],
+            "activities" => [
+    "1" => "Umjetničko kodiranje: učenici iz obdaništa uzrasta od 4 do 6 godina.",
+                "2" => "Laboratorija kreativnog koda: učenici iz obdaništa uzrasta od 4 do 6 godina",
+                "3" => "Dodirni platno: Stvaranje interaktivnih slika: učenici iz obdaništa uzrasta od 4 do 6 godina; napredni nivo."
+            ]
+        ],
 
     ],
     'download_video_script' => 'Preuzmite video skriptu',

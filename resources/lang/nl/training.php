@@ -297,7 +297,8 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
                 "2" => "Mijn hart is niet van steen voor de onderbouw voortgezet onderwijs",
                 "3" => "Programmeer mijn gevoelens voor de bovenbouw voortgezet onderwijs",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS Water",
             "author" => "door Francisco Delgado Cecilia",
@@ -319,7 +320,21 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
             ]
 
         ],
-
+        "20" => [
+            "title" => "Code door kunst",
+            "author" => "door Maria Tsapara",
+            "text" => [
+                "Kinderen groeien op in een complexe wereld die zich technologisch voortdurend ontwikkelt, wat vraagt om innovatieve educatieve benaderingen voor opvoeders van jonge kinderen. Deze benaderingen omvatten activiteiten die computationeel denken en programmeren al op jonge leeftijd stimuleren. Onderzoek wijst uit dat gerichte activiteiten het computationeel denken en probleemoplossend vermogen van kinderen effectief kunnen ontwikkelen en tegelijkertijd hun creatieve expressie door middel van technologie bevorderen.",
+                "Hoewel de meest gebruikelijke strategie voor het aanleren van programmeren het gebruik van educatieve robots is, bestaat er ook de mogelijkheid om te programmeren zonder het gebruik van een robotkit (unplugged). Deze aanpak kan verschillende vormen aannemen en een breed scala aan activiteiten omvatten (pixel art, kinderen in de rol van robots, het gebruik van een vloerrooster, enz.) Deze activiteiten bieden voordelen op het gebied van ervaringsleren, vooral voor jonge kinderen die het best spelenderwijs leren. ",
+                "<strong>De Learning Bit Code door kunst</strong> bestaat uit drie lesplannen voor opvoeders van jonge kinderen en implementeert een unplugged activiteit, het gebruik van de educatieve robot Bee-Bot en de Makey Makey Invention Kit. Door het gebruik van de Makey Makey-kit krijgen leerlingen de kans om tastbare interfaces te maken en verschillende oplossingen uit te proberen, te creëren, te experimenteren en al hun leervaardigheden te versterken in een collaboratieve leeromgeving.",
+                "Zoals Pablo Picasso zei: \"Elk kind is een kunstenaar. Het probleem is hoe je een kunstenaar blijft als je eenmaal volwassen bent.\" Kunst biedt kinderen de mogelijkheid om hun ideeën en gevoelens creatief weer te geven en te communiceren. In deze Learning Bit vind je inspirerende activiteiten om de sociale en 21e-eeuwse vaardigheden van je leerlingen te ontwikkelen door middel van kunst en codering, om ze aan te moedigen zich creatief uit te drukken en hun verbeelding te stimuleren. Met de Learning Bit Code door kunst kun je de creativiteit, samenwerking en het probleemoplossend vermogen  van je leerlingen stimuleren door kunst en codering te integreren."
+            ],
+            "activities" => [
+                "1" => "Artful Coding: 4-6 jaar oude kleuterschoolleerlingen.",
+                "2" => "Creative Code Lab: 4-6 jaar oude kleuterschoolleerlingen",
+                "3" => "Touch Canvas: Interactieve schilderijen maken: 4-6 jaar oude kleuters; gevorderden."
+            ]
+        ]
 
 
     ],

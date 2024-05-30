@@ -324,6 +324,22 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
             ]
 
         ],
+        "20" => [
+            "title" => "Il codice attraverso l'arte",
+            "author" => "di Maria Tsapara",
+            "text" => [
+                "I bambini crescono in un mondo complesso e in costante sviluppo tecnologico, che richiede approcci educativi innovativi per gli educatori della prima infanzia. Questi approcci includono attività che promuovono il pensiero computazionale e la programmazione fin dalla più tenera età. Le ricerche suggeriscono che attività mirate possono sviluppare efficacemente il pensiero computazionale e le capacità di risoluzione dei problemi dei bambini e, allo stesso tempo, tali attività favoriscono la loro espressione creativa attraverso la tecnologia.",
+                "Sebbene la strategia più comune per l'insegnamento della programmazione preveda l'uso di robot educativi, esiste anche la possibilità di programmare senza utilizzare alcun kit robotico (coding unplugged). Questo approccio può assumere varie forme e includere un'ampia gamma di attività (pixel art, bambini nel ruolo di robot, utilizzo di una pavimento a griglia, ecc.). Queste attività offrono benefici di apprendimento esperienziale, in particolare a vantaggio dei bambini piccoli, che imparano meglio attraverso il gioco. ",
+                "<strong>Il Learning Bit Il codice attraverso l'arte</strong> comprende tre piani di lezione per gli educatori della prima infanzia e implementa un'attività unplugged, l'uso di un robot educativo Bee-Bot e il kit di invenzione Makey Makey. Utilizzando il kit di Makey Makey, gli studenti hanno l'opportunità di creare interfacce tangibili e provare diverse soluzioni, creare, sperimentare e rafforzare tutte le loro capacità di apprendimento in un ambiente di apprendimento collaborativo.",
+                "Come diceva Pablo Picasso, \"ogni bambino è un artista. Il problema è come rimanere un artista dopo essere cresciuti\". L'arte offre ai bambini l'opportunità di rappresentare e comunicare in modo creativo le loro idee e i propri sentimenti. In questo Learning Bit troverete attività stimolanti per coltivare le competenze sociali e del XXI secolo dei vostri studenti attraverso l'arte e il coding, per incoraggiarli a esprimersi in modo creativo e favorire la loro immaginazione. Il Learning Bit Il codice attraverso l’arte vi permetterà di promuovere la creatività, la collaborazione e la risoluzione dei problemi dei vostri alunni integrando arte e coding"
+            ],
+            "activities" => [
+                "1" => "Codifica artistica: studenti della scuola dell'infanzia di 4-6 anni",
+                "2" => "Laboratorio di codice creativo: studenti della scuola dell'infanzia di 4-6 anni",
+                "3" => "Tela tattile: Creare dipinti interattivi: studenti della scuola dell’infanzia di 4-6 anni; avanzato"
+            ]
+        ]
+
 
 
 

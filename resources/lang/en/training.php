@@ -376,6 +376,51 @@ With Python, students can create quizzes about historical events, solve math pro
                 "3" => "SOS Water with Robotics",
             ]
         ],
+        "19" => [
+            "title" => "Creative Scratch Laboratory",
+            "author" => "by Krzysztof Jaworski",
+            "text" => [
+                "Learning programming today goes beyond preparing for a programming career and extends beyond the boundaries of computer science. It should be approached broadly, embracing an interdisciplinary perspective and utilizing programming as a tool for learning and play to foster the development of future skills.",
+                "For children and young people, it is crucial to understand how to use digital tools safely, responsibly and effectively. They need to comprehend how these tools function and know how to communicate with them through programming. In addition, this experience should involve collaborative interactions with their peers.",
+                "The Learning Bit <strong>Creative Scratch Laboratory</strong> will enhance students' creativity, boost their curiosity and make coding enjoyable and fun.  It consists of three lesson plans for students with varying coding skills. In the beginner’s lesson plan, students create a character on paper, import it into Scratch and animate it using selected blocks. The intermediate level lesson plan teaches students to learn the Video Sprites tool, graphic crafting with paper and markers, and producing a Scratch mosaic with Video Sprites, stamps and artworks. In the advanced lesson plan, students explore the face recognition function in Scratch, experiment with sprite graphics manipulation and create a mini-theatre with dialogues generated in Scratch.",
+            ],
+            "activities" => [
+                "1" => "Draw and animate sprite: for beginners",
+                "2" => "Stamps: for intermediate students",
+                "3" => "Puppet theatre: for advanced students",
+            ]
+        ],
+        "20" => [
+            "title" => "Code Through Art",
+            "author" => "by Maria Tsapara",
+            "text" => [
+                "Children are growing up in a complex world that is constantly developing technologically, which requires innovative educational approaches for early childhood educators. These approaches include activities that promote computational thinking and programming from a young age. Research suggests that targeted activities can effectively develop children’s computational thinking and problem-solving skills and at the same time such activities foster their creative expression through technology.",
+                "Although the most common strategy for teaching programming involves the use of educational robots, there is also the possibility of programming without the use of a robotics kit (unplugged). This approach can take various forms and include a wide range of activities (pixel art, children in the role of robots, using a floor grid, etc.). These activities offer experiential learning benefits, particularly for young children who learn best through play. ",
+                "<strong>The Learning Bit Code Through Art</strong> comprises three lesson plans for early childhood educators and implements an unplugged activity, the use of a Bee-bot educational robot and the invention kit Makey Makey. By using Makey Makey kit students have the opportunity to create tangible interfaces and try different solutions, create, experiment, and strengthen all their learning abilities in a collaborative learning environment.",
+                "As Pablo Picasso said “Every child is an artist. The problem is how to remain an artist once he grows up.” Art provides children with opportunities to creatively represent and communicate their ideas and feelings. In this Learning Bit you will find inspiring activities to cultivate  your students’ social and 21st century skills through art and coding, to encourage them to express themselves creatively and  fostering their imagination . The Learning Bit Code Through Art will enable you to foster your pupils’ creativity, collaboration and problem solving by integrating art and coding."
+            ],
+            "activities" => [
+                "1" => "Artful Coding: 4-6 years old kindergarten students.",
+                "2" => "Creative Code Lab: 4-6 years old kindergarten students",
+                "3" => "Touch Canvas: Creating Interactive paintings: 4-6 years old kindergarten students; advanced."
+            ]
+        ],
+        "21" => [
+            "title" => "Making and coding",
+            "author" => "by Ulla Hauptmann",
+            "text" => [
+                "Makerspaces are vibrant hubs where creativity thrives and hands-on projects come to life. When selecting equipment for a makerspace, the focus is on tools such as Calliope mini, Microbit, or Makey Makey, as they offer a wide range of possibilities suitable for students of different ages and skill levels. These boards support the development of creative projects for younger children thanks to their block-based programming languages are available for these boards. For older students, more complex projects can be generated using these boards.",
+                "Explore the <strong>Learning Bit Making and Coding</strong> to dive into the world of makerspaces and foster interdisciplinary skills like teamwork and social collaboration while sparking innovation and enthusiasm in your students!",
+                "Makey Makey is a circuit board that converts everyday objects into computer keys. By connecting objects to the board with crocodile clips, which then link to the computer via USB cable (or an iPad with a camera adapter), Makey Makey can open and close electrical circuits between a person and an object. This sends electrical signals that the computer receives as keyboard strokes or mouse clicks. This allows pupils to develop creative inventions such as musical instruments, computer games or interactive posters - the possibilities are endless! Makey Makey and the projects presented in this Learning Bit can be used in both primary and secondary schools to teach skills in areas like media education, computer science, science, physics, music, sport and interdisciplinary skills such as teamwork and social skills.",
+                "Step into the exciting world of Makey Makey and unlock boundless creativity in your classroom!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey meets music: for beginners.",
+                "2" => "Talking pictures:  for intermediate students.",
+                "3" => "Create an interactive poster: for advanced students.",
+            ]
+        ]
+
     ],
     'download_video_script' => 'Download the video script',
     'ready_to_share' => 'Ready to share what you learnt with your students?',
