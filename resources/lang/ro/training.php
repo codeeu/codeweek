@@ -319,6 +319,22 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
             ]
 
         ],
+        "20" => [
+            "title" => "Codul prin artă",
+            "autor" => "de Maria Tsapara",
+            "text" => [
+                "Copiii cresc într-o lume complexă, care se dezvoltă constant din punct de vedere tehnologic, ceea ce necesită abordări educaționale inovatoare pentru educatorii din primii ani de viață. Aceste abordări includ activități care promovează gândirea computațională și programarea de la o vârstă fragedă. Cercetările sugerează că activitățile specifice pot dezvolta în mod eficient gândirea computațională și abilitățile copiilor de rezolvare a problemelor și, în același timp, astfel de activități favorizează exprimarea creativă a acestora prin intermediul tehnologiei.",
+                "Deși cea mai frecventă strategie de predare a programării implică utilizarea roboților educaționali, există și posibilitatea programării fără utilizarea unui kit de robotică (deconectat). Această abordare poate lua diverse forme și include o gamă largă de activități (pixel art, copii în rolul unor roboți, utilizarea unei grile de podea etc.). Aceste activități oferă beneficii de învățare experiențială, în special pentru copiii mici, care învață cel mai bine prin joc. ",
+                "<strong>Codul de învățare a biților prin artă</strong> cuprinde trei planuri de lecție pentru educatorii din primii ani de viață și implementează o activitate deconectată, utilizarea unui robot educațional Bee-bot și a kitului de invenții Makey Makey. Prin utilizarea kitului Makey Makey, elevii au ocazia de a crea interfețe tangibile și de a încerca diferite soluții, de a crea, de a experimenta și de a-și consolida toate abilitățile de învățare într-un mediu de învățare colaborativă.",
+                "Așa cum spunea Pablo Picasso: „Fiecare copil este un artist. Problema este cum să rămână artist după ce crește.” Arta le oferă copiilor oportunități de a-și reprezenta și comunica în mod creativ ideile și sentimentele. În acest Learning Bit veți găsi activități inspirate pentru a cultiva abilitățile socialeale  elevilor dvs. și abilitățile secolului XXI prin artă și codare, pentru a-i încuraja să se exprime în mod creativ și pentru a le stimula imaginația. Learning Bit Code Through Art vă va permite săstimulați elevilor dvs. creativitatea, colaborarea și rezolvarea problemelor prin integrarea artei și a codării."
+            ],
+            "activități" => [
+                "1" => "Artful Coding: copii de grădiniță de 4-6 ani.",
+                "2" => " Creative Code Lab: copii de grădiniță de 4-6 ani",
+                "3" => "Touch Canvas: Crearea de picturi interactive: copii de grădiniță de 4-6 ani,; avansat."
+            ]
+        ]
+
 
 
 
