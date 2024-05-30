@@ -302,28 +302,44 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
                 "2" => "Mi corazón no es de piedra para alumnos de primer ciclo de educación secundaria",
                 "3" => "Programa mi estado de ánimo para alumnos de segundo ciclo de secundaria",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS Agua",
-"author" => "por Francisco Delgado Cecilia",
-"text" => [
+            "author" => "por Francisco Delgado Cecilia",
+            "text" => [
 
-    "SOS Agua es una respuesta a la necesidad de abordar el problema de la contaminación del agua. A pesar de los esfuerzos llevados a cabo en los últimos años, todavía quedan 2 000 millones de personas en el mundo que no tienen acceso a agua potable segura. Esto significa que el Objetivo de Desarrollo Sostenible (ODS) 6 de la Agenda 2030, en el que se afirma que todo el mundo debe tener acceso a agua potable y saneamiento para 2030, está lejos de conseguirse. Lo mismo ocurre con el ODS 14 sobre la vida submarina, según el que se pretende preservar y utilizar la sostenibilidad de los océanos, mares y recursos marinos para un desarrollo sostenible",
+                "SOS Agua es una respuesta a la necesidad de abordar el problema de la contaminación del agua. A pesar de los esfuerzos llevados a cabo en los últimos años, todavía quedan 2 000 millones de personas en el mundo que no tienen acceso a agua potable segura. Esto significa que el Objetivo de Desarrollo Sostenible (ODS) 6 de la Agenda 2030, en el que se afirma que todo el mundo debe tener acceso a agua potable y saneamiento para 2030, está lejos de conseguirse. Lo mismo ocurre con el ODS 14 sobre la vida submarina, según el que se pretende preservar y utilizar la sostenibilidad de los océanos, mares y recursos marinos para un desarrollo sostenible",
 
-"Este minicurso se centra en el tema relevante y de actualidad de la medición de la calidad del agua y los nuevos contaminantes que ponen en peligro la calidad del agua. Los alumnos tendrán la oportunidad de investigar y buscar soluciones a problemas relacionados con el agua y el medio ambiente, lo que les permitirá desarrollar capacidades como la investigación, el pensamiento crítico y la resolución de problemas",
+                "Este minicurso se centra en el tema relevante y de actualidad de la medición de la calidad del agua y los nuevos contaminantes que ponen en peligro la calidad del agua. Los alumnos tendrán la oportunidad de investigar y buscar soluciones a problemas relacionados con el agua y el medio ambiente, lo que les permitirá desarrollar capacidades como la investigación, el pensamiento crítico y la resolución de problemas",
 
-"Esta lección prevé incluir actividades prácticas y creativas, como la programación en Scratch, la iniciación al aprendizaje automático y la inteligencia artificial con Learning ML y la construcción de vehículos guiados con sets de LEGO para la recogida de muestras de agua y el análisis de su pH. Estas actividades permitirán que los alumnos pongan en práctica sus capacidades y conocimientos en un entorno interactivo y divertido, lo cual mejorará su motivación e incrementará su interés en el proyecto",
+                "Esta lección prevé incluir actividades prácticas y creativas, como la programación en Scratch, la iniciación al aprendizaje automático y la inteligencia artificial con Learning ML y la construcción de vehículos guiados con sets de LEGO para la recogida de muestras de agua y el análisis de su pH. Estas actividades permitirán que los alumnos pongan en práctica sus capacidades y conocimientos en un entorno interactivo y divertido, lo cual mejorará su motivación e incrementará su interés en el proyecto",
 
-"Para la puesta en práctica de este minicurso, proponemos que se lleven a cabo las tres actividades en el aula, con el fin de completar todo el proyecto y conseguir un proceso de aprendizaje más instructivo y motivador. Sin embargo, cada una de las actividades puede llevarse a cabo de forma aislada"
+                "Para la puesta en práctica de este minicurso, proponemos que se lleven a cabo las tres actividades en el aula, con el fin de completar todo el proyecto y conseguir un proceso de aprendizaje más instructivo y motivador. Sin embargo, cada una de las actividades puede llevarse a cabo de forma aislada"
 
-],
-"activities" => [
-    "1" => "SOS Agua con Scratch",
+            ],
+            "activities" => [
+                "1" => "SOS Agua con Scratch",
                 "2" => "SOS Agua con Learning ML",
                 "3" => "SOS Agua con la robótica de LEGO"
             ]
 
         ],
+        "20" => [
+            "title" => "Código a través del arte",
+            "autor" => "por Maria Tsapara",
+            "text" => [
+                "Los niños crecen en un mundo complejo y en constante desarrollo tecnológico, lo que exige planteamientos educativos innovadores para los educadores de la primera infancia. Estos planteamientos incluyen actividades que fomenten el pensamiento computacional y la programación desde una edad temprana. La investigación sugiere que las actividades dirigidas pueden desarrollar eficazmente el pensamiento computacional y las habilidades de resolución de problemas de los niños y, al mismo tiempo, tales actividades fomentan su expresión creativa a través de la tecnología",
+                "Aunque la estrategia más común para enseñar a programar implica el uso de robots educativos, también existe la posibilidad de programar sin utilizar un kit de robótica (actividades desenchufadas). Este enfoque puede adoptar diversas formas e incluir una amplia gama de actividades (pixel art, niños en el papel de robots, uso de una cuadrícula en el suelo, etc.). Estas actividades ofrecen ventajas de aprendizaje experimental, especialmente para los niños pequeños, que aprenden mejor jugando. ",
+                "<strong>El Learning Bit El código a través del arte</strong> comprende tres planes de clase para educadores de la primera infancia e implementa una actividad desenchufada, el uso de un robot educativo Bee-bot y el kit de invención Makey Makey. Mediante el uso del kit Makey Makey, los alumnos tienen la oportunidad de crear interfaces tangibles y probar diferentes soluciones, crear, experimentar y reforzar todas sus capacidades de aprendizaje en un entorno de aprendizaje colaborativo",
+                "Como dijo Pablo Picasso: \"Todo niño es un artista. El problema es cómo seguir siendo un artista una vez que crece\". El arte proporciona a los niños oportunidades para representar y comunicar creativamente sus ideas y sentimientos. En este Learning Bit encontrará actividades inspiradoras para cultivar las habilidades sociales y del siglo XXI de  sus alumnos a través del arte y la codificación, para animarles a expresarse de forma creativa y fomentando su imaginación. El Learning Bit El código a través del arte le permitirá fomentar la creatividad, la colaboración y la resolución de problemas de sus alumnos  integrando el arte y la codificación"
+            ],
+            "activities" => [
+                "1" => "Codificación artística. Alumnos de educación infantil de 4 a 6 años",
+                "2" => "Laboratorio de código creativo. Alumnos de educación infantil de 4 a 6 años",
+                "3" => "Lienzo táctil: Creación de pinturas interactivas. Alumnoas de educación infantil de 4 a 6 años; avanzado"
+            ]
+        ]
 
 
     ],
