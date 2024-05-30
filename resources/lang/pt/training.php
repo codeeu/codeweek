@@ -297,13 +297,14 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
                 "2" => "O meu coração não é de pedra para alunos do segundo e terceiro ciclos do ensino básico",
                 "3" => "Programar-me para o estado de espírito para alunos do ensino secundário",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS Água",
-"author" => "por Francisco Delgado Cecilia",
-"text" => [
+            "author" => "por Francisco Delgado Cecilia",
+            "text" => [
 
-    "O SOS Água é uma resposta à necessidade de resolver o problema da poluição da água. Apesar dos esforços envidados nos últimos anos, continua a haver 2 mil milhões de pessoas em todo o mundo que não têm acesso a água potável segura. Assim sendo, o Objetivo de Desenvolvimento Sustentável (ODS) n.º 6 da Agenda 2030, que preconiza que todas as pessoas devem ter acesso a água e saneamento geridos de forma segura até 2030, ainda está longe de ser alcançado. Verifica-se o mesmo em relação ao ODS n.º 14, referente à vida subaquática, que visa conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos para o desenvolvimento sustentável.",
+                "O SOS Água é uma resposta à necessidade de resolver o problema da poluição da água. Apesar dos esforços envidados nos últimos anos, continua a haver 2 mil milhões de pessoas em todo o mundo que não têm acesso a água potável segura. Assim sendo, o Objetivo de Desenvolvimento Sustentável (ODS) n.º 6 da Agenda 2030, que preconiza que todas as pessoas devem ter acesso a água e saneamento geridos de forma segura até 2030, ainda está longe de ser alcançado. Verifica-se o mesmo em relação ao ODS n.º 14, referente à vida subaquática, que visa conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos para o desenvolvimento sustentável.",
 
                 "Este bit de aprendizagem centra-se no tema pertinente e atual da gestão da qualidade da água e nos novos poluentes que ameaçam a qualidade da água. Os alunos terão a oportunidade de investigar e procurar soluções para problemas reais relacionados com a água e com o ambiente, que lhes permitirão desenvolver competências como a investigação, o pensamento crítico e a resolução de problemas.",
 
@@ -311,14 +312,29 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
 
                 "Para a implementação deste bit de aprendizagem, propõe-se desenvolver as três atividades na sala de aula, completar todo o projeto e obter um processo de aprendizagem mais significativo e motivador. Contudo, cada atividade pode ser realizada isoladamente."
 
-],
-"activities" => [
-    "1" => "SOS Água com Scratch",
+            ],
+            "activities" => [
+                "1" => "SOS Água com Scratch",
                 "2" => "SOS Água com aprendizagem automática",
                 "3" => "SOS Água com robótica",
             ]
 
         ],
+        "20" => [
+            "title" => "Programação através da arte",
+            "author" => "por Maria Tsapara",
+            "text" => [
+                "As crianças estão a crescer num mundo complexo que está em constante desenvolvimento tecnológico, o que exige abordagens educativas inovadoras para os educadores da primeira infância. Estas abordagens incluem atividades que promovem o pensamento computacional e a programação desde tenra idade. A investigação sugere que atividades específicas podem desenvolver eficazmente o pensamento computacional e as capacidades de resolução de problemas das crianças e, ao mesmo tempo, essas atividades promovem a sua expressão criativa através da tecnologia.",
+                "Embora a estratégia mais comum para o ensino da programação envolva a utilização de robôs educativos, existe também a possibilidade de programar sem a utilização de um kit de robótica (não ligado). Esta abordagem pode assumir várias formas e incluir uma vasta gama de atividades (pixel art, crianças no papel de robôs, utilização de uma grelha de chão, etc.). Estas atividades oferecem benefícios de aprendizagem experimental, em particular para as crianças mais pequenas que aprendem melhor através do jogo.",
+                "<strong>A Aprendizagem do Código Bit através da Arte</strong> inclui três planos de aula para educadores de infância e implementa uma atividade desligada da tomada, a utilização de um robô educativo Bee-bot e o kit de invenção do Makey Makey. Ao utilizar o kit do Makey Makey, os alunos têm a oportunidade de criar interfaces tangíveis e experimentar diferentes soluções, criar, experimentar e reforçar todas as suas capacidades de aprendizagem num ambiente de aprendizagem colaborativa",
+                "Como disse Pablo Picasso: “Todas as crianças são artistas. O problema é como continuar a ser artista depois de crescer.\" A arte dá às crianças a oportunidade de representar e comunicar criativamente as suas ideias e sentimentos. Neste Bit de Aprendizagem encontrará atividades inspiradoras para promover as competências sociais e do século XXI dos seus alunos através da arte e da programação, para os encorajar a expressarem-se de forma criativa e fomentar a sua imaginação. O Bit de Aprendizagem Programar Através da Arte permitir-lhe-á promover a criatividade, a colaboração e a resolução de problemas dos seus alunos através da integração da arte e da programação."
+            ],
+            "activities" => [
+                "1" => "Programação artística: Alunos do jardim de infância com 4-6 anos de idade",
+                "2" => "Laboratório de programação criativa: alunos do jardim de infância com 4-6 anos de idade",
+                "3" => "Tela tátil: Criar pinturas interativas: Alunos do jardim de infância de 4-6 anos; avançado"
+            ]
+        ]
 
 
 

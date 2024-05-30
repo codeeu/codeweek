@@ -300,13 +300,14 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
                 "2" => "Moje srce nije od kamena za učenike nižih razreda srednje škole",
                 "3" => "Programiraj me prema raspoloženju za učenike viših razreda srednje škole",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "Voda zove upomoć",
-"author" => "Francisco Delgado Cecilia",
-"text" => [
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
 
-    "Voda zove upomoć je odgovor na potrebu za rešavanje problema  zagađenja vode. Uprkos naporima proteklih godina, i dalje 2 milijarde ljudi širom sveta neće imati pristup bezbednoj vodi za piće. To znači da smo još daleko od ostvarivanja Cilja održivog razvoja (SDG) 6 Agende 2030, koji navodi da bi svi ljudi trebalo da imaju pristup vodi i sanitarijama kojima se bezbedno upravlja do 2030. godine.  Isto važi za SDG 14, Život pod vodom, koji za cilj ima očuvanje i održivo korišćenje okeana, mora i vodnih resursa za održivi razvoj.",
+                "Voda zove upomoć je odgovor na potrebu za rešavanje problema  zagađenja vode. Uprkos naporima proteklih godina, i dalje 2 milijarde ljudi širom sveta neće imati pristup bezbednoj vodi za piće. To znači da smo još daleko od ostvarivanja Cilja održivog razvoja (SDG) 6 Agende 2030, koji navodi da bi svi ljudi trebalo da imaju pristup vodi i sanitarijama kojima se bezbedno upravlja do 2030. godine.  Isto važi za SDG 14, Život pod vodom, koji za cilj ima očuvanje i održivo korišćenje okeana, mora i vodnih resursa za održivi razvoj.",
 
                 "Ovaj modul za učenje se fokusira na relevantni problem merenja kvaliteta vode i novih zagađivača koji predstavljaju izazov po kvalitet vode. Učenici će imati priliku da istražuju i traže rešenja stvarnih problema u vezi sa vodom i okruženjem, što će im omogućiti da razvijaju veštine, kao što su istraživanje, kritičko razmišljanje i rešavanje problema.",
 
@@ -314,16 +315,29 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
 
                 "Za primenu ovog modula za učenje predlaže se razvijanje tri aktivnosti u razredu, da bi se ceo projekat dovršio i postigao značajniji i motivisaniji proces učenja. Međutim, svaka aktivnost može da se obavi i izolovano."
 
-],
-"activities" => [
-    "1" => "Voda zove upomoć u Scratch-u",
+            ],
+            "activities" => [
+                "1" => "Voda zove upomoć u Scratch-u",
                 "2" => "Voda zove upomoć sa mašinskim učenjem",
                 "3" => "Voda zove upomoć sa robotikom",
             ]
 
         ],
-
-
+        "20" => [
+            "title" => "Kodiranje kroz umetnost",
+            "author" => "autor Maria Tsapara",
+            "text" => [
+    "Deca rastu u složenom svetu koji se stalno tehnološki razvija, što zahteva inovativne obrazovne pristupe od njihovih edukatora u ranom detinjstvu. Ovi pristupi obuhvataju aktivnosti koje podstiču računarsko razmišljanje i programiranje od malih nogu. Istraživanje sugeriše da ciljane aktivnosti mogu efikasno da razviju dečije računarsko razmišljanje i veštine rešavanja problema, dok istovremeno takve aktivnosti podstiču i njihovo kreativno izražavanje kroz tehnologiju.",
+                "Iako najčešća strategija za učenje programiranja obuhvata upotrebu edukativnih robota, takođe postoji mogućnost programiranja bez korišćenja kompleta za robotiku (bez računara). Ovaj pristup može imati različite oblike i obuhvata širok spektar aktivnosti (piksel umetnost, deca u ulozi robota, korišćenje mreže kvadrata iscrtane na podu itd.). Ove aktivnosti nude prednosti eksperimentalnog učenja, posebno za malu decu koja najbolje uče kroz igru.",
+                "<strong>Modul za učenje kodiranja kroz umetnost</strong> se sastoji od tri plana lekcija za edukatore u ranom detinjstvu i podrazumeva primenu aktivnosti bez računara, upotrebu Bee-bot obrazovnog robota i Makey Makey kompleta za izume. Korišćenjem Makey Makey kompleta, učenici imaju priliku da stvaraju opipljive interfejse i isprobavaju različita rešenja, kreiraju, eksperimentišu i unapređuju svoje sposobnosti učenja u sredini usmerenoj ka učenju putem saradnje.",
+                "Kao što je Pablo Pikaso rekao: \"Svako dete je umetnik. Problem je kako da ostane umetnik nakon što odraste.\" Umetnost deci daje mogućnost da kreativno predstave i saopšte svoje ideje i osećanja. U ovom modulu učenja Learning Bit, pronaći ćete aktivnosti koje inspirišu, kako biste pomoću njih negovali društvene veštine i veštine 21. veka vaših učenika kroz umetnost i programiranje, kako biste ih ohrabrili da se kreativno izraze i da neguju svoju maštu. Modul učenja Learning Bit \"Kodiranje kroz umetnost\" omogućiće vam da negujete kreativnost svojih učenika, njihovu saradnju i veštinu rešavanje problema integrisanjem umetnosti i kodiranja."
+            ],
+            "activities" => [
+                "1" => "Umetničko kodiranje: Deca iz vrtića uzrasta 4-6 godina.",
+                "2" => "Kreativna laboratorija za kodiranje: deca iz vrtića uzrasta 4-6 godina",
+                "3" => "Platno osetljivo na dodir: Stvaranje interaktivnih slika: Deca iz vrtića uzrasta 4-6 godina; napredni."
+            ]
+        ]
 
     ],
     'download_video_script' => 'Preuzmite video skriptu',

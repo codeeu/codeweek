@@ -320,6 +320,22 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
             ]
 
         ],
+        "20" => [
+            "title" => "Programavimas pasitelkiant meną",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Vaikai auga sudėtingame pasaulyje, kuris nuolat tobulėja technologiškai. Todėl ankstyvojo ugdymo pedagogams reikia naujoviškų ugdymo metodų, kurie jau nuo mažens skatintų skaitmeninį mąstymą ir programavimą. Tyrimai rodo, kad tikslinga veikla gali veiksmingai ugdyti vaikų skaitmeninio mąstymo ir problemų sprendimo įgūdžius bei skatina jų kūrybinę raišką naudojant technologijas.",
+                "Nors programuoti paprastai mokoma pasitelkiant mokomuosius robotus, galima išsiversti ir be jų. Mokymas gali būti įvairių formų ir apimti įvairią veiklą (pikselių meną, vaikus robotų vaidmenyje, užduotis naudojant grindų tinklelį ir t. t.). Jis turi patyriminio mokymosi naudos, ypač mažiems vaikams, kurie geriausiai mokosi žaisdami.",
+                "<strong>Learning bit „Programavimas pasitelkiant meną“</strong> sudaro trys pamokų planai, skirti ankstyvojo ugdymo pedagogams. Šioms užduotims nereikia interneto, tačiau naudojamas mokomasis robotas „Bee-bot“ ir išradimų rinkinys „Makey Makey“. Naudodami „Makey Makey“ mokiniai turi galimybę kurti apčiuopiamas sąsajas ir išbandyti įvairius sprendimus, taip pat kurti, eksperimentuoti ir stiprinti visus savo mokymosi gebėjimus bendroje mokymosi aplinkoje.",
+                "Kaip sakė Pablas Pikasas: „Kiekvienas vaikas yra menininkas. Didžiausia problema – tokiu ir likti užaugus.“ Menas suteikia vaikams galimybę kūrybiškai išreikti save ir perteikti savo idėjas bei jausmus. Šiame learning bit rasite įkvepiančių užduočių, kaip pasitelkiant meną ir programavimą ugdyti mokinių socialinius ir XXI a. įgūdžius, skatinti juos kūrybiškai išreikšti save ir lavinti vaizduotę. „Programavimas pasitelkiant meną“ padės jums ugdyti mokinių kūrybiškumą, bendradarbiavimą ir problemų sprendimo įgūdžius integruojant meną ir programavimą."
+            ],
+            "activities" => [
+                "1" => "Meniškas programavimas 4–6 metų vaikams",
+                "2" => "Kūrybinio programavimo laboratorija 4–6 metų vaikams",
+                "3" => "„Touch Canvas“: interaktyvių paveikslų kūrimas 4–6 metų vaikams (pažengusiųjų lygis)"
+            ]
+        ]
+
 
 
 

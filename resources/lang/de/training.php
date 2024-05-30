@@ -320,6 +320,22 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
             ]
 
         ],
+        "20" => [
+            "title" => "Künstlerisch programmieren",
+            "author" => "von Maria Tsapara",
+            "text" => [
+                "Kinder wachsen in einer komplexen Welt auf, die sich technologisch ständig weiterentwickelt, was innovative pädagogische Ansätze für Erzieherinnen und Erzieher erfordert. Zu diesen Ansätzen gehören Aktivitäten, die rechnerisches Denken und Programmieren von klein auf fördern. Die Forschung deutet darauf hin, dass gezielte Aktivitäten das rechnerische Denken und die Problemlösungskompetenz von Kindern wirksam entwickeln können und gleichzeitig ihren kreativen Ausdruck durch Technologie fördern.",
+                "Obwohl die gängigste Strategie für den Programmierunterricht die Verwendung von Lernrobotern beinhaltet, gibt es auch die Möglichkeit der Programmierung ohne die Verwendung eines Roboterbausatzes (ohne Computer). Dieser Ansatz kann verschiedene Formen annehmen und eine breite Palette von Aktivitäten umfassen (Pixelkunst, Kinder in der Rolle von Robotern, Verwendung eines Bodengitters usw.). Diese Aktivitäten bieten Vorteile für das Erfahrungslernen, insbesondere für kleine Kinder, die am besten durch Spielen lernen.",
+                "<strong>Der Learning Bit \"Künstlerisch Programmieren\"</strong> umfasst drei Unterrichtspläne für Erzieherinnen und Erzieher und setzt eine Aktivität ohne Computer, den Einsatz eines Bee-Bot-Lernroboters und des Erfindungsbaukastens Makey Makey um. Durch die Verwendung des Makey-Makey-Bausatzeshaben die Schülerinnen und Schüler die Möglichkeit, greifbare Schnittstellen zu schaffen und verschiedene Lösungen auszuprobieren, zu kreieren, zu experimentieren und alle ihre Lernfähigkeiten in einer kollaborativen Lernumgebung zu stärken.",
+                "Wie Pablo Picasso sagte  Jedes Kind ist ein Künstler. \"Die Frage ist nur, ob es einer bleibt, wenn es aufwächst..\" Kunst bietet Kindern die Möglichkeit, ihre Ideen und Gefühle kreativ darzustellen und mitzuteilen. In diesem Learning Bit finden Sie inspirierende Aktivitäten, um  die sozialen Kompetenzen und die Fähigkeiten des 21. Jahrhunderts Ihrer Schülerinnen und Schüler durch Kunst und Programmierung zu kultivieren, sie zu ermutigen, sich kreativ auszudrücken und ihre Fantasie zu fördern. Mit dem Learning Bit \"Künstlerisch programmieren\" können Sie die Kreativität, Zusammenarbeit und Problemlösung Ihrer Schülerinnen und Schüler durch die Integration von Kunst und Programmierung fördern."
+            ],
+            "activities" => [
+                "1" => "Künstlerisch programmieren: 4-6 jährige Kindergartenkinder",
+                "2" => "Kreatives Programmierlabor: 4-6 Jahre alte Kindergartenkinder",
+                "3" => "Touch Canvas: Interaktive Gemälde erstellen: 4-6 Jahre alte Kindergartenkinder; Fortgeschrittene."
+            ]
+        ]
+
 
     ],
     'download_video_script' => 'Das Video-Script herunterladen',
