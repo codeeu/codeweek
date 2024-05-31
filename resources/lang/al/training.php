@@ -299,7 +299,8 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
                 "2" => "Zemra ime nuk është prej guri për nxënësit e ciklit të mesëm të ulët",
                 "3" => "Më kodoni sipas emocioneve për nxënësit e ciklit të mesëm të lartë",
             ]
-        ],        "18" => [
+        ],
+        "18" => [
 
             "title" => "Uji SOS",
             "author" => "nga Francisco Delgado Cecilia",
@@ -321,6 +322,24 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
             ]
 
         ],
+        "19" => [
+            "title" => "Laboratori Krijues Scratch",
+            "author" => "nga Krzysztof Jaworski",
+            "text" => [
+
+                "Mësimi i programimit sot shkon përtej përgatitjes për një karrierë programimi dhe shtrihet përtej kufijve të shkencës kompjuterike. Ai duhet të trajtohet gjerësisht, duke konsideruar një perspektivë ndërdisiplinore dhe duke përdorur programimin si një mjet për të mësuar dhe për të luajtur për të nxitur zhvillimin e aftësive të së ardhmes.",
+
+                "Për fëmijët dhe të rinjtë, është thelbësore të kuptojnë se si të përdorin mjetet digjitale në mënyrë të sigurt, të përgjegjshme dhe efektive. Ata duhet të kuptojnë se si funksionojnë këto mjete dhe të dinë se si të komunikojnë me to përmes programimit. Përveç kësaj, kjo përvojë duhet të përfshijë ndërveprime bashkëpunuese me bashkëmoshatarët e tyre.",
+
+                "Biti Mësimor <strong>Creative Scratch Laboratory</strong> do të përmirësojë kreativitetin e studentëve, do të nxisë kureshtjen e tyre dhe do ta bëjë kodimin të këndshëm dhe argëtues.  Ai përbëhet nga tre plane mësimore për studentët me aftësi të ndryshme kodimi. Në planin mësimor për nivelin fillestar, studentët krijojnë një karakter në letër, e importojnë atë në Scratch dhe e animojnë atë duke përdorur blloqet e përzgjedhura. Plani mësimor i nivelit mesatar i mëson studentët të mësojnë mjetin Video Sprites, të krijojnë grafikë me letër dhe markera dhe të prodhojnë një mozaik Scratch me Video Sprites, pulla dhe vepra arti. Në planin mësimor të nivelit të përparuar, studentët eksplorojnë funksionin e njohjes së fytyrës në Scratch, eksperimentojnë me manipulimin e grafikëve sprite dhe krijojnë një mini-teatër me dialogë të krijuar në Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Vizatimi dhe animimi i spriteve: për fillestarë",
+                "2" => "Pullat: për studentë me nivel mesatar",
+                "3" => "Teatri i kukullave: për studentë me nivel të përparuar",
+            ]
+        ]
 
 
     ],

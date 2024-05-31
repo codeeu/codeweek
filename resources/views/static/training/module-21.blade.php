@@ -41,24 +41,50 @@
                     @lang('training.choose_lessons')
                 </p>
 
+                @php
+                    $missingLocales = ['AL', 'DA', 'ET', 'FI', 'ME', 'MT', 'PL'];
+                    $currentLocale = app()->getLocale();
+                @endphp
 
-                <ol style="list-style-type: decimal;margin-left:40px; margin-top:-4px;">
-                    <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-021-ACTIVITY-01.docx">
-                            @lang('training.lessons.21.activities.1')
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-021-ACTIVITY-02.docx">
-                            @lang('training.lessons.21.activities.2')
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-021-ACTIVITY-03.docx">
-                            @lang('training.lessons.21.activities.3')
-                        </a>
-                    </li>
-                </ol>
+                @if(in_array(strtoupper($currentLocale), $missingLocales))
+                    <ol style="list-style-type: decimal;margin-left:40px; margin-top:-4px;">
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/CODEWEEK-TRAINING-021-ACTIVITY-01.docx">
+                                @lang('training.lessons.21.activities.1')
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/CODEWEEK-TRAINING-021-ACTIVITY-02.docx">
+                                @lang('training.lessons.21.activities.2')
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/CODEWEEK-TRAINING-021-ACTIVITY-03.docx">
+                                @lang('training.lessons.21.activities.3')
+                            </a>
+                        </li>
+                    </ol>
+                @else
+                    <ol style="list-style-type: decimal;margin-left:40px; margin-top:-4px;">
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-021-ACTIVITY-01.docx">
+                                @lang('training.lessons.21.activities.1')
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-021-ACTIVITY-02.docx">
+                                @lang('training.lessons.21.activities.2')
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-021-ACTIVITY-03.docx">
+                                @lang('training.lessons.21.activities.3')
+                            </a>
+                        </li>
+                    </ol>
+                @endif
+
+
 
                 <h2>@lang('training.footer.title')</h2>
                 @lang('training.footer.text')

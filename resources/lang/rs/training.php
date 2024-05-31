@@ -323,11 +323,30 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
             ]
 
         ],
+        "19" => [
+
+            "title" => "Kreativna Scratch laboratorija",
+            "author" => "autor Krzysztof Jaworski",
+            "text" => [
+
+                "Učenje programiranja danas ne predstavlja samo pripremu za karijeru programera i prevazilazi granice računarske nauke. Trebalo bi mu pristupiti široko, zauzimajući interdisciplinarnu perspektivu i koristeći programiranje kao alatku za učenje i igru kako bi se negovalo razvijanje budućih veština.",
+
+                "Za decu i omladinu, presudno je da razumeju kako da bezbedno, odgovorno i efikasno koriste digitalne alatke. Moraju da shvate kako funkcionišu te alatke i da znaju kako da komuniciraju sa njima kroz programiranje. Osim toga, ovo iskustvo bi trebalo da obuhvata i međusobnu saradnju sa svojim vršnjacima.",
+
+                "Modul za učenje <strong>Creative Scratch Laboratory</strong> će poboljšati kreativnost učenika, povećati njihovu radoznalost i od kodiranja napraviti zabavnu stvar u kojoj će uživati.  Sastoji se od tri plana lekcija za učenike, sa različitim veštinama kodiranja. U planu lekcije za početnike, učenici stvaraju lik na papiru, uvoze ga u Scratch i animiraju ga korišćenjem izabranih blokova. Plan lekcije srednjeg nivoa obučava učenike da koriste alatke Video sprajtova, uči ih grafičkim veštinama sa papirom i markerima, kao i da stvaraju Scratch mozaik pomoću Video sprajtova, pečata i crteža. U planu lekcije naprednog nivoa, učenici istražuju funkciju prepoznavanja lica u Scratch-u, eksperimentišu sa manipulisanjem grafikom sprajtova i prave mini pozorište sa dijalozima generisanim u Scratch-u.",
+
+            ],
+            "activities" => [
+                "1" => "Crtanje i animacija sprajta: za početnike",
+                "2" => "Pečati: za učenike srednjeg nivoa",
+                "3" => "Lutkarsko pozorište: za učenike naprednog nivoa",
+            ]
+        ],
         "20" => [
             "title" => "Kodiranje kroz umetnost",
             "author" => "autor Maria Tsapara",
             "text" => [
-    "Deca rastu u složenom svetu koji se stalno tehnološki razvija, što zahteva inovativne obrazovne pristupe od njihovih edukatora u ranom detinjstvu. Ovi pristupi obuhvataju aktivnosti koje podstiču računarsko razmišljanje i programiranje od malih nogu. Istraživanje sugeriše da ciljane aktivnosti mogu efikasno da razviju dečije računarsko razmišljanje i veštine rešavanja problema, dok istovremeno takve aktivnosti podstiču i njihovo kreativno izražavanje kroz tehnologiju.",
+                "Deca rastu u složenom svetu koji se stalno tehnološki razvija, što zahteva inovativne obrazovne pristupe od njihovih edukatora u ranom detinjstvu. Ovi pristupi obuhvataju aktivnosti koje podstiču računarsko razmišljanje i programiranje od malih nogu. Istraživanje sugeriše da ciljane aktivnosti mogu efikasno da razviju dečije računarsko razmišljanje i veštine rešavanja problema, dok istovremeno takve aktivnosti podstiču i njihovo kreativno izražavanje kroz tehnologiju.",
                 "Iako najčešća strategija za učenje programiranja obuhvata upotrebu edukativnih robota, takođe postoji mogućnost programiranja bez korišćenja kompleta za robotiku (bez računara). Ovaj pristup može imati različite oblike i obuhvata širok spektar aktivnosti (piksel umetnost, deca u ulozi robota, korišćenje mreže kvadrata iscrtane na podu itd.). Ove aktivnosti nude prednosti eksperimentalnog učenja, posebno za malu decu koja najbolje uče kroz igru.",
                 "<strong>Modul za učenje kodiranja kroz umetnost</strong> se sastoji od tri plana lekcija za edukatore u ranom detinjstvu i podrazumeva primenu aktivnosti bez računara, upotrebu Bee-bot obrazovnog robota i Makey Makey kompleta za izume. Korišćenjem Makey Makey kompleta, učenici imaju priliku da stvaraju opipljive interfejse i isprobavaju različita rešenja, kreiraju, eksperimentišu i unapređuju svoje sposobnosti učenja u sredini usmerenoj ka učenju putem saradnje.",
                 "Kao što je Pablo Pikaso rekao: \"Svako dete je umetnik. Problem je kako da ostane umetnik nakon što odraste.\" Umetnost deci daje mogućnost da kreativno predstave i saopšte svoje ideje i osećanja. U ovom modulu učenja Learning Bit, pronaći ćete aktivnosti koje inspirišu, kako biste pomoću njih negovali društvene veštine i veštine 21. veka vaših učenika kroz umetnost i programiranje, kako biste ih ohrabrili da se kreativno izraze i da neguju svoju maštu. Modul učenja Learning Bit \"Kodiranje kroz umetnost\" omogućiće vam da negujete kreativnost svojih učenika, njihovu saradnju i veštinu rešavanje problema integrisanjem umetnosti i kodiranja."
@@ -337,7 +356,23 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
                 "2" => "Kreativna laboratorija za kodiranje: deca iz vrtića uzrasta 4-6 godina",
                 "3" => "Platno osetljivo na dodir: Stvaranje interaktivnih slika: Deca iz vrtića uzrasta 4-6 godina; napredni."
             ]
-        ]
+        ],
+        "21" => [
+            "title" => "Izrada i kodiranje",
+            "author" => "autor Ulla Hauptmann",
+            "text" => [
+                "Radionice za kreatore Makerspace su živahna mesta susreta na kojima kreativnost buja, a praktični projekti se oživljavaju. Kada birate opremu za radionicu Makerspace, fokus je na alatima kao što su Calliope mini, Microbit ili Makey Makey, jer nude širok spektar mogućnosti pogodnih za učenike različitih uzrasta i nivoa veština. Ove ploče podržavaju razvoj kreativnih projekata za mlađu decu zahvaljujući tome što su programski jezici zasnovani na blokovima dostupni za njih. Za starije učenike, pomoću ovih ploča možete da stvarate i složenije projekte.",
+                "Istražite <strong>Modul učenja Learning Bit Izrada i kodiranje</strong> da biste zaronili u svet radionica Makerspace i negovali interdisciplinarne veštine poput timskog rada i društvene saradnje, dok istovremeno podstičete inovaciju i entuzijazam kod svojih učenika!",
+                "Makey Makey je štampana ploča koje pretvara svakodnevne predmete u računarske tastere. Povezivanjem predmeta sa pločom pomoću krokodil štipaljki, koje se zatim povezuju s računarom putem USB kabla (ili s iPad-om, sa adapterom za kameru), Makey Makey može da otvara i zatvara strujna kola između osobe i predmeta. Time se šalju električni signali koje računar prima kao pritiske na tastere ili klikove mišem. To omogućava učenicima da razvijaju kreativne izume poput muzičkih instrumenata, računarskih igara ili interaktivnih postera – mogućnosti su beskrajne! Makey Makey i projekti predstavljeni u ovom Modulu učenja mogu da se koriste u osnovnim i srednjim školama za učenje veština u oblastima poput obrazovanja u oblasti medija, računarstva, nauke, fizike, muzike, sporta i interdisciplinarnih veština poput timskog rada i društvenih veština.",
+                "Zakoračite u uzbudljiv svet Makey Makey uređaja i oslobodite bezgraničnu kreativnost u učionici!"
+            ],
+            "activities" => [
+                "1" => "Muzički Makey Makey: za početnike.",
+                "2" => "Slike koje govore: za učenike srednjeg nivoa.",
+                "3" => "Pravljenje interaktivnog postera: za napredne učenike.",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Preuzmite video skriptu',
