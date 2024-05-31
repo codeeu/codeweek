@@ -335,27 +335,47 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
                 "2" => "„Mu süda ei ole kivist“ põhikooli esimese astme õpilastele",
                 "3" => "„Programmeerige mulle meeleolu“ põhikooli teise astme õpilastele",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS vesi",
             "author" => "Francisco Delgado Cecilia",
-"text" => [
+            "text" => [
 
-    "SOS vesi on loodud vastusena vajadusele lahendada veereostuse probleem. Vaatamata viimaste aastate jõupingutustele on maailmas siiski kaks miljardit inimest, kellel ei ole ligipääsu puhtale joogiveele. See tähendab, et me ei ole veel kaugeltki täitnud kestliku arengu tegevuskava 2030 kestliku arengu eesmärki nr 6, mille kohaselt peaks kõigil inimestel olema 2030. aastaks ligipääs kestlikult majandatud veele ja kanalisatsioonile. Sama kehtib kestliku arengu eesmärgi nr 14 kohta, mis käsitleb ookeanide, merede ja mereressursside kaitset ja kestlikku kasutamist.",
+                "SOS vesi on loodud vastusena vajadusele lahendada veereostuse probleem. Vaatamata viimaste aastate jõupingutustele on maailmas siiski kaks miljardit inimest, kellel ei ole ligipääsu puhtale joogiveele. See tähendab, et me ei ole veel kaugeltki täitnud kestliku arengu tegevuskava 2030 kestliku arengu eesmärki nr 6, mille kohaselt peaks kõigil inimestel olema 2030. aastaks ligipääs kestlikult majandatud veele ja kanalisatsioonile. Sama kehtib kestliku arengu eesmärgi nr 14 kohta, mis käsitleb ookeanide, merede ja mereressursside kaitset ja kestlikku kasutamist.",
 
-    "Selle õppevahendi tähelepanu keskmes on vee kvaliteedi mõõtmise ning vee kvaliteeti ohustavate uute saasteainete oluline ja aktuaalne teema. Õpilastel on võimalus uurida ja püüda lahendada vee ja keskkonnaga seotud tegelikke probleeme, arendades selle käigus selliseid oskusi, nagu uurimistöö tegemine, kriitiline mõtlemine ja probleemilahendus.",
+                "Selle õppevahendi tähelepanu keskmes on vee kvaliteedi mõõtmise ning vee kvaliteeti ohustavate uute saasteainete oluline ja aktuaalne teema. Õpilastel on võimalus uurida ja püüda lahendada vee ja keskkonnaga seotud tegelikke probleeme, arendades selle käigus selliseid oskusi, nagu uurimistöö tegemine, kriitiline mõtlemine ja probleemilahendus.",
 
-    "Tunnikavad sisaldavad praktilisi ja loomingulisi tegevusi, nagu Scratchiga programmeerimine, tutvumine masinõppe ja tehisintellektiga rakenduse Learning Machine Learning abil ning juhitavate sõidukite ehitamine Lego komplektidest veeproovide võtmiseks ja vee pH-taseme määramiseks. Need tegevused võimaldavad õpilastel praktiliselt rakendada oma oskusi ja teadmisi interaktiivses ja mängulises keskkonnas, mis suurendab nende motivatsiooni ja huvi projekti vastu.",
+                "Tunnikavad sisaldavad praktilisi ja loomingulisi tegevusi, nagu Scratchiga programmeerimine, tutvumine masinõppe ja tehisintellektiga rakenduse Learning Machine Learning abil ning juhitavate sõidukite ehitamine Lego komplektidest veeproovide võtmiseks ja vee pH-taseme määramiseks. Need tegevused võimaldavad õpilastel praktiliselt rakendada oma oskusi ja teadmisi interaktiivses ja mängulises keskkonnas, mis suurendab nende motivatsiooni ja huvi projekti vastu.",
 
-    "Seda õppevahendit on soovitatav kasutada klassiruumis nende kolme tegevuse kaudu, teha läbi kogu projekt ning saavutada sellega sisukam ja motiveerivam õppeprotsess. Iga tegevust saab siiski kasutada ka eraldi."
+                "Seda õppevahendit on soovitatav kasutada klassiruumis nende kolme tegevuse kaudu, teha läbi kogu projekt ning saavutada sellega sisukam ja motiveerivam õppeprotsess. Iga tegevust saab siiski kasutada ka eraldi."
 
-],
-"activities" => [
-    "1" => "SOS vesi Scratchiga",
-    "2" => "SOS vesi masinõppega",
-    "3" => "SOS vesi robootikaga",
-]
+            ],
+            "activities" => [
+                "1" => "SOS vesi Scratchiga",
+                "2" => "SOS vesi masinõppega",
+                "3" => "SOS vesi robootikaga",
+            ]
 
+        ],
+        "19" => [
+
+            "title" => "Scratchi loominguline laboratoorium",
+            "author" => "Krzysztof Jaworski",
+            "text" => [
+
+                "Programmeerimise õppimine on tänapäeval rohkem kui programmeerimiskarjääriks valmistumine ja ulatub arvutiteaduse piiridest kaugemale. Seda tuleks käsitleda laiemalt, hõlmates interdistsiplinaarset perspektiivi ning kasutades programmeerimist õppimise ja mängimise vahendina, et soodustada tulevikuoskuste arendamist.",
+
+                "Laste ja noorte jaoks on ülimalt oluline mõista, kuidas digitaalseid tööriistu ohutult, vastutustundlikult ja tõhusalt kasutada. Nad peavad mõistma, kuidas need tööriistad toimivad, ja teadma, kuidas nendega programmeerimise kaudu suhelda. Lisaks peaks see kogemus hõlmama koostööd oma eakaaslastega.",
+
+                "Õppevahend <strong>Creative Scratch Laboratory</strong> suurendab õpilaste loovust, tekitab uudishimu ning muudab kodeerimise nauditavaks ja lõbusaks.  See koosneb kolmest tunnikavast erinevate kodeerimisoskustega õpilastele. Algajate tunnikavas loovad õpilased paberil tegelase, impordivad selle Scratchi ja animeerivad seda valitud plokkide abil. Kesktaseme tunnikavas õpetatakse õpilastele video spraitide tööriista, paberi ja markeritega graafilist meisterdamist ning Scratchi mosaiigi koostamist video spraitide, templite ja kunstiteostega. Edasijõudnute tunnikavas uurivad õpilased Scratchis näotuvastusfunktsiooni, katsetavad spraidiga graafika manipuleerimist ja loovad Scratchis loodud dialoogidega miniteatri.",
+
+            ],
+            "activities" => [
+                "1" => "Spraidi joonistamine ja animeerimine: algajatele",
+                "2" => "Templid: kesktaseme õpilastele",
+                "3" => "Nukuteater: edasjõudnud õpilastele",
+            ]
         ],
 
     ],

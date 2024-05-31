@@ -149,13 +149,13 @@
                     </a>
                 </div>
 
-{{--                <div class="codeweek-card-grid">--}}
-{{--                    <a href="/training/creative-scratch-laboratory">--}}
-{{--                        <img src="/img/learning/creative-scratch-laboratory.png">--}}
-{{--                        <div class="title">@lang('training.lessons.19.title')</div>--}}
-{{--                        <div class="author">@lang('training.lessons.19.author')</div>--}}
-{{--                    </a>--}}
-{{--                </div>--}}
+                <div class="codeweek-card-grid">
+                    <a href="/training/creative-scratch-laboratory">
+                        <img src="/img/learning/creative-scratch-laboratory.png">
+                        <div class="title">@lang('training.lessons.19.title')</div>
+                        <div class="author">@lang('training.lessons.19.author')</div>
+                    </a>
+                </div>
 
                 <div class="codeweek-card-grid">
                     <a href="/training/code-through-art">
@@ -165,13 +165,13 @@
                     </a>
                 </div>
 
-{{--                <div class="codeweek-card-grid">--}}
-{{--                    <a href="/training/making-and-coding">--}}
-{{--                        <img src="/img/learning/making-and-coding.png">--}}
-{{--                        <div class="title">@lang('training.lessons.21.title')</div>--}}
-{{--                        <div class="author">@lang('training.lessons.21.author')</div>--}}
-{{--                    </a>--}}
-{{--                </div>--}}
+                <div class="codeweek-card-grid">
+                    <a href="/training/making-and-coding">
+                        <img src="/img/learning/making-and-coding.png">
+                        <div class="title">@lang('training.lessons.21.title')</div>
+                        <div class="author">@lang('training.lessons.21.author')</div>
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">

@@ -154,7 +154,8 @@ Sa Pythonom, učenici mogu kreirati kvizove o historijskim događanjima, rješav
                 '1' => 'Moj prvi kviz, za osnovnu školu',
                 '2' => 'Igra vješanja, za niže razrede srednje škole',
                 '3' => 'Pogodi zastavu!, za više razrede srednje škole',
-            ], 'links' => [
+            ],
+            'links' => [
                 'title' => 'Drugi povezani resursi',
                 '1' => [
                     "url" => "https://docs.python.org/3/library/",
@@ -270,18 +271,18 @@ U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zab
             "text" => [
                 "Jesu li vaši učenici već usvojili neki vizuelni programski jezik, ali se ne osjećaju spremni da prokopaju dublje u neki tekstualni programski jezik? Onda je ovaj segment učenja upravo za vas i vaše učenike, jer će im on pomoći da premoste jaz između vizuelnog i tekstualnog programskog jezika. Segment učenja <strong>Pripovijedanje sa Hedy</strong> sastoji se od tri nastavna plana koji koriste Hedy – postepeni programski jezik kojim se djeca uče programiranju.",
 
-        "Hedy za cilj ima djecu koja žele otpočeti sa tekstualnim programskim jezicima, ali za koju bi početak sa programom Python ipak bio prekompleksan. Postepeni jezici koriste različite jezičke nivoe, gdje kod svakog nivoa dodaju novi koncepti i sintaksička kompleksnost. Na kraju sekvence na nivou Hedy, učenici usvoje podskup sintakstički važećeg programa Python.",
+                "Hedy za cilj ima djecu koja žele otpočeti sa tekstualnim programskim jezicima, ali za koju bi početak sa programom Python ipak bio prekompleksan. Postepeni jezici koriste različite jezičke nivoe, gdje kod svakog nivoa dodaju novi koncepti i sintaksička kompleksnost. Na kraju sekvence na nivou Hedy, učenici usvoje podskup sintakstički važećeg programa Python.",
 
-        "U ovom segmentu učenja naći ćete inspirativne i zanimljive aktivnosti koje će vašim učenicima pomoći u efikasnom korištenju tekstualnih programskih jezika. Kreiranjem svojih interaktivnih priča, oni će postepeno učiti programiranje, a da ne moraju naučiti sve odjednom. U nastavnom planu za osnovne škole, učenici se uvode u osnovne koncepte programiranja. Nastavni plan za nižu srednju školu uvodi daljnje programske koncepte, dok nastavni plan za višu srednu školu omogućuje učenicima da programiraju kompleksnije priče i aktivnosti.",
+                "U ovom segmentu učenja naći ćete inspirativne i zanimljive aktivnosti koje će vašim učenicima pomoći u efikasnom korištenju tekstualnih programskih jezika. Kreiranjem svojih interaktivnih priča, oni će postepeno učiti programiranje, a da ne moraju naučiti sve odjednom. U nastavnom planu za osnovne škole, učenici se uvode u osnovne koncepte programiranja. Nastavni plan za nižu srednju školu uvodi daljnje programske koncepte, dok nastavni plan za višu srednu školu omogućuje učenicima da programiraju kompleksnije priče i aktivnosti.",
 
-        "Pogledajte dolje našu interaktivnu priču da vidite kako čitaoci mogu učestvovati u priči i kako ona potiče njihov aktivni angažman."
-    ],
-    "activities" => [
-        "1" => "Napravite svoju vlastitu interaktivnu priču s Hedy za učenike osnovnih škola",
-        "2" => "Napravite svoju vlastitu interaktivnu priču s Hedy za učenike nižih srednjih škola",
-        "3" => "Napravite svoju vlastitu interaktivnu priču s Hedy za učenike viših škola",
-    ]
-],
+                "Pogledajte dolje našu interaktivnu priču da vidite kako čitaoci mogu učestvovati u priči i kako ona potiče njihov aktivni angažman."
+            ],
+            "activities" => [
+                "1" => "Napravite svoju vlastitu interaktivnu priču s Hedy za učenike osnovnih škola",
+                "2" => "Napravite svoju vlastitu interaktivnu priču s Hedy za učenike nižih srednjih škola",
+                "3" => "Napravite svoju vlastitu interaktivnu priču s Hedy za učenike viših škola",
+            ]
+        ],
         "17" => [
             "title" => "Osjetite kod",
             "author" => "Autorica: Alenka Miljević ",
@@ -323,17 +324,51 @@ U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zab
             "title" => "Kȏd kroz umjetnost",
             "author" => "Autor Maria Tsapara",
             "text" => [
-    "Djeca rastu u kompleksnom svijetu koje se stalno tehnološki razvija, što zahtijeva inovativne obrazovne pristupe za edukatore u ranom djetinjstvu. Ti pristupi uključuju aktivnosti koje promovišu računarsko razmišljanje i programiranje počevši od ranog uzrasta. Istraživanje navodi da ciljne aktivnosti mogu efikasno razviti računarsko razmišljanje kod djece i vještine rješavanja problema, a u isto vrijeme takve aktivnosti povećavaju njihovo kreativno izražavanje kroz tehnologiju.",
+                "Djeca rastu u kompleksnom svijetu koje se stalno tehnološki razvija, što zahtijeva inovativne obrazovne pristupe za edukatore u ranom djetinjstvu. Ti pristupi uključuju aktivnosti koje promovišu računarsko razmišljanje i programiranje počevši od ranog uzrasta. Istraživanje navodi da ciljne aktivnosti mogu efikasno razviti računarsko razmišljanje kod djece i vještine rješavanja problema, a u isto vrijeme takve aktivnosti povećavaju njihovo kreativno izražavanje kroz tehnologiju.",
                 "Iako najčešća strategija za učenje programiranja uključuje upotrebu obrazovnih robota, isto tako postoji mogućnost programiranja bez upotrebe kompleta za robotiku (bez upotrebe računara). Taj pristup može imati različite oblike i uključivati širok opseg aktivnosti (tačkasta umjetnost, djeca u ulozi robota, upotreba mreže na podu i sl). Te aktivnosti nude prednosti eksperimentalnog učenja, naročito za malu djecu koja najbolje uče kroz igru.",
                 "<strong>Learning Bit kȏd kroz umjetnost</strong> sastoji se od tri nastavna plana za edukatore u ranom djetinjstvu i provodi aktivnosti bez upotrebe računara, pomoću obrazovnog robota Bee-bot i kompleta za inovacije Makey Makey. Upotrebom kompleta Makey Makey učenici imaju mogućnost da stvore opipljive interfejse i probaju različita rješenja, za stvaranje, eksperimentisanje i jačanje svoje sposobnosti za učenje u kolaborativnom okruženju za učenje.",
                 "Kao što je rekao Pablo Picasso, “Svako je dijete umjetnik. Problem je kako ostati umjetnik nakon odrastanja.” Umjetnost pruža djeci mogućnost da kreativno predstave i prenesu svoje ideje i osjećanja. U ovom Learning Bitu naći ćete inspirativne aktivnosti za njegovanje društvenih i vještina učenika za 21. stoljeća kroz umjetnost i kodiranje, da biste ih ohrabrili da kreativno izraze sebe i povećali njihovu sposobnost maštanja. Learning Bit kȏd kroz umjetnost će omogućiti da vi povećate kreativnost, saradnju i rješavanje problema učenika tako što ćete integrisati umjetnost i kodiranje."
             ],
             "activities" => [
-    "1" => "Umjetničko kodiranje: učenici iz obdaništa uzrasta od 4 do 6 godina.",
+                "1" => "Umjetničko kodiranje: učenici iz obdaništa uzrasta od 4 do 6 godina.",
                 "2" => "Laboratorija kreativnog koda: učenici iz obdaništa uzrasta od 4 do 6 godina",
                 "3" => "Dodirni platno: Stvaranje interaktivnih slika: učenici iz obdaništa uzrasta od 4 do 6 godina; napredni nivo."
             ]
         ],
+        "19" => [
+            "title" => "Kreativna laboratorija Scratch",
+            "author" => "autor Krzysztof Jaworski",
+            "text" => [
+
+                "Učenje programiranja danas premašuje pripremu za karijeru u programiranju i premašuje granice računarske nauke. Treba mu se široko pristupiti, obuhvatajući jednu interdisciplinarnu perspektivu i koristeći programiranje kao alat za učenje i igru za podsticanje razvoja budućih vještina.",
+
+                "Za djecu i mlade je ključno razumjeti kako sigurno, odgovorno i učinkovito koristiti digitalne alate. Moraju razumjeti kako ovi alati funkcioniraju i znati kako s njima komunicirati kroz programiranje. Uz to, ovo iskustvo bi trebalo uključivati kolaborativne interakcije s njihovim vršnjacima.",
+
+                "Dio za učenje <strong>Creative Scratch Laboratory</strong> će poboljšati kreativnost učenika, potaknuti njihovu znatiželju i učiniti kodiranje ugodnim i zabavnim.  Sastoji se od tri nastavna plana za učenike s različitim vještinama kodiranja. U nastavnom planu za početnike, učenici kreiraju lik na papiru, uvoze ga u Scratch i animiraju ga korištenjem odabranih blokova. Nastavni plan za srednji nivo podučava učenike korištenju alata za video grafičke likove, kreiranje grafike pomoću papira i markera i proizvodnju mozaika u programu Scratch s video grafičkim likovima, markicama i crtežima. U nastavnom planu za napredni nivo, učenici istražuju funkciju prepoznavanja lica u programu Scratch, eksperimentiraju s grafičkom manipulacijom grafičkih likova i kreiraju mini pozorište s dijalozima generiranim u programu Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Nacrtaj i animiraj grafički lik: za početnike",
+                "2" => "Markice: za učenike srednjeg nivoa",
+                "3" => "Lutkarsko pozorište: za učenike naprednog nivoa",
+            ]
+        ],
+
+        "21" => [
+            "title" => "Stvaranje i kodiranje",
+            "author" => "autor Ulla Hauptmann",
+            "text" => [
+                "Prostori za stvaraoce su razdragani centri u kojima se razvija kreativnost, a praktični projekti oživljavaju. Kada birate opremu za prostor za stvaraoce, fokus je na alatkama kao što su Calliope mini, Microbit ili Makey Makey, jer oni nude široki opseg mogućnosti odgovarajućih za učenike različitih uzrasta i vještina. Te ploče podržavaju razvoj kreativnih projekata za mlađu djeci zahvaljujući programskim jezicima baziranim na blokovima koji su dostupni za te ploče. Za starije učenike, upotrebom tih ploča moguće je stvoriti kompleksnije projekte.",
+                "Istražite <strong>Stvaranje i kodiranje pomoću Learning Bita</strong> da biste zaronili u svijet prostora za stvaraoce i njegovali interdisciplinarne vještine kao što su timski rad i društvena saradnja dok povećavate inovativnost i entuzijazam svojih učenika!",
+                "Makey Makey je štampana ploča koja pretvara svakodnevne predmete u tipke računara. Povezivanjem predmeta na ploču krokodil štipaljkama koje se zatim povezuju sa računarom pomoću USB kabla (ili iPadom s adapterom za kameru), uređaj Makey Makey može otvoriti i zatvoriti električna kola između osobe i predmeta. Time se šalju električni signali koje računar prima kao kucanje na tastaturi ili klikove mišem. To omogućava učenicima da razviju kreativne izume kao što su muzički instrumenti, računarske igre ili interaktivni posteri – mogućnosti su beskrajne! Uređaji Makey Makey i projekti koji su predstavljeni u ovom Learning Bitu se mogu upotrebljavati i u osnovnim i u srednjim školama za podučavanje o vještinama u oblastima obrazovanja o medijima, računarske nauke, prirodnih nauka, fizike, muzike, sporta i interdisciplinarnih vještine kao što su timski rad i društvene vještine.",
+                "Zakoračite u uzbudljivi svijet Makey Makey i otključajte neograničenu kreativnost u svojoj učionici!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey upoznaje muziku: za početnike.",
+                "2" => "Slike koje govore: za učenike srednjeg nivoa.",
+                "3" => "Stvorite interaktivni poster: za učenike na naprednom nivou.",
+            ]
+        ]
 
     ],
     'download_video_script' => 'Preuzmite video skriptu',
