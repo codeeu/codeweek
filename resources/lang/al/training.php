@@ -339,6 +339,36 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
                 "2" => "Pullat: për studentë me nivel mesatar",
                 "3" => "Teatri i kukullave: për studentë me nivel të përparuar",
             ]
+        ],
+        "20" => [
+            "title" => "Kodimi përmes artit",
+            "author" => "nga Maria Tsapara",
+            "text" => [
+                "Fëmijët po rriten në një botë komplekse, e cila po zhvillohet vazhdimisht në teknologji, gjë që kërkon qasje arsimore novatore për edukatorët e fëmijërisë së hershme. Këto qasje përfshijnë aktivitete që nxisin mendimin përllogaritës dhe programimin nga një moshë e re. Studimet sugjerojnë që aktivitetet e synuara mund të zhvillojnë në mënyrë të efektshme aftësitë e fëmijëve për mendimin përllogaritëse dhe zgjidhjen e problemeve dhe këto aktivitete zhvillojnë njëkohësisht shprehjen e kreativitetit të tyre përmes teknologjisë.",
+                "Megjithëse strategjia më e zakonshme për mësimin e programimit përfshin përdorimin e robotëve edukativë, ekziston gjithashtu mundësia e programimit pa përdorimin e kompleteve robotike (jashtë linje). Kjo qasje mund të marrë forma të ndryshme dhe të përfshijë një gamë të gjerë aktivitetesh (art me pikselë, fëmijë në rolin e robotëve, përdorimin e kuadrateve në dysheme etj.). Këto aktivitete ofrojnë avantazhe të mësimit duke e bërë vetë, veçanërisht për fëmijët që mësojnë duke luajtur.",
+                "<strong>Biti mësimor Kodimi përmes artit</strong> përfshin tre plane mësimore për edukatorët e fëmijërisë së hershme dhe zbaton një aktivitet jashtë linje, përdorimin e robotit edukativ bleta robot dhe kompletin e shpikjes Makey Makey. Duke përdorur kompletin Makey Makey, nxënësit kanë mundësinë që të krijojnë ndërfaqe të prekshme dhe të provojnë zgjidhje të ndryshme, të krijojnë, të eksperimentojnë dhe të forcojnë aftësitë e tyre të të mësuarit në një ambient mësimor bashkëpunues.",
+                "Siç ka thënë Pablo Picasso, \"Çdo fëmijë është artist. Problemi është si të mbeten artistë kur të rriten.\" Arti u jep fëmijëve mundësi për të përfaqësuar dhe komunikuar me kreativitet idetë dhe ndjenjat e tyre. Në këtë bit mësimor, do të gjeni aktivitete frymëzuese për të kultivuar aftësitë shoqërore dhe ato të shekullit 21 të nxënësve tuaj përmes artit dhe kodimit, për t'i nxitur ata që të shprehen në mënyrë kreative dhe të nxisin imagjinatën. Biti mësimor Kodimi përmes artit do t'ju mundësojë që të nxisni kreativitetin e nxënësve tuaj, bashkëpunimin dhe zgjidhjen e problemeve duke integruar artin dhe kodimin."
+            ],
+            "activities" => [
+                "1" => "Kodimi me art: Nxënës kopshti 4-6 vjeç.",
+                "2" => "Laboratori i kodit kreativ: nxënës kopshti 4-6 vjeç",
+                "3" => "Telajoja me prekje: Krijimi i pikturave interaktive: Nxënës kopshti 4-6 vjeç; të avancuar."
+            ]
+        ],
+        "21" => [
+            "title" => "Krijimi dhe kodimi",
+            "author" => "nga Ulla Hauptmann",
+            "text" => [
+                "Vendet e Makerspace janë qendra plot gjallëri ku kreativiteti lulëzon dhe projektet praktike marrin jetë. Duke zgjedhur pajisjet për një vend Makerspace, fokusi është te mjetet e tilla si Calliope mini, Microbit ose Makey Makey, sepse ato ofrojnë një gamë të gjerë mundësish, të përshtatshme për nxënësit e moshave dhe niveleve të ndryshme të aftësive. Këto panele ndihmojnë zhvillimin e projekteve kreative për fëmijët e vegjël, falë gjuhëve të tyre të programimit me blloqe që disponohen për këto panele. Për nxënësit më të rritur, mund të krijohen projekte më komplekse duke përdoru këto panele.",
+                "Eksploroni <strong>Bitin mësimor Krijimi dhe kodimi</strong> për t'u zhytur në botën e vendeve të Makerspace dhe për të nxitur aftësitë ndërdisiplinore, si puna në ekip dhe bashkëpunimi social ndërkohë që ngjall novacionin dhe entuziazmin te nxënësit!",
+                "Makey Makey është një panel qarku që kthen objektet e përditshme në taste kompjuteri. Duke lidhur objektet në panel me kapëse aligator, të cilat më pas lidhen me kompjuterin përmes kabllos USB (ose me një iPad me adaptor kamere), Makey Makey mund të hapë dhe të mbyllë qarqet elektrike ndërmjet një personi dhe një objekti. Kjo dërgon sinjale elektrike që merr kompjuteri, si prekjet e tastierës ose klikimet e mausit. Kjo i lejon nxënësit që të krijojnë shpikje kreative, të tilla si vegla muzikore, lojëra kompjuterike ose posterë interaktivë; mundësitë janë të pafundme! Makey Makey dhe projektet e paraqitura në këtë bit mësimor mund të përdoren për nxënësit e shkollës fillore dhe 9-vjeçare, për t'u mësuar aftësi në fusha të tilla si edukimi për media, shkenca kompjuterike, shkenca, fizikë, muzikë, sporte dhe aftësi ndërdisiplinore, të tilla si puna në ekip dhe aftësitë sociale.",
+                "Hyni në botën magjepsëse të Makey Makey dhe shpalosni kreativitet të pakufi në klasë!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey takohet me muzikën: për fillstarë.",
+                "2" => "Fotografi që flasin: për nxënësit e nivelit mesatar.",
+                "3" => "Krijimi i një posteri interaktiv: për nxënësit e avancuar.",
+            ]
         ]
 
 

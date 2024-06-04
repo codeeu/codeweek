@@ -42,7 +42,7 @@
                 </p>
 
                 @php
-                    $missingLocales = ['AL', 'DA', 'ET', 'FI', 'ME', 'MT', 'PL'];
+                    $missingLocales = ['DA', 'FI', 'ME', 'MT', 'PL'];
                     $currentLocale = app()->getLocale();
                 @endphp
 
@@ -83,7 +83,6 @@
                         </li>
                     </ol>
                 @endif
-
 
 
                 <h2>@lang('training.footer.title')</h2>
