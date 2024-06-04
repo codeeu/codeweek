@@ -149,13 +149,13 @@
                     </a>
                 </div>
 
-                <div class="codeweek-card-grid">
-                    <a href="/training/creative-scratch-laboratory">
-                        <img src="/img/learning/creative-scratch-laboratory.png">
-                        <div class="title">@lang('training.lessons.19.title')</div>
-                        <div class="author">@lang('training.lessons.19.author')</div>
-                    </a>
-                </div>
+{{--                <div class="codeweek-card-grid">--}}
+{{--                    <a href="/training/creative-scratch-laboratory">--}}
+{{--                        <img src="/img/learning/creative-scratch-laboratory.png">--}}
+{{--                        <div class="title">@lang('training.lessons.19.title')</div>--}}
+{{--                        <div class="author">@lang('training.lessons.19.author')</div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
 
                 <div class="codeweek-card-grid">
                     <a href="/training/code-through-art">
