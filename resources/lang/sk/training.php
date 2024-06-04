@@ -122,7 +122,8 @@ return [
                 '3' => 'Aktivita 3 Manuálne zručnosti a programovanie s Makey',
                 '4' => 'Aktivita 4 Algoritmus každodenného života na hodine vyučovanej metódou CLIL'
             ]
-        ], '9' => [
+        ],
+        '9' => [
             'title' => 'Výroba automatu pomocou mikropočítača micro:bit',
             'author' => 'Autorka: Pauline Maas',
             'text' => '<p>
@@ -297,13 +298,14 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
                 "2" => "Nemám srdce z kameňapre žiakov druhého stupňa základnej školy",
                 "3" => "Naprogramuj mi náladu pre študentov strednej školy",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS voda",
-"author" => "autor Francisco Delgado Cecilia",
-"text" => [
+            "author" => "autor Francisco Delgado Cecilia",
+            "text" => [
 
-    "SOS voda je reakciou na potrebu riešiť problém znečistenia vody. Napriek úsiliu, ktoré sa v posledných rokoch vynaložilo, na svete stále žijú 2 miliardy ľudí, ktorí nemajú prístup k bezpečnej pitnej vode. To znamená, že dosiahnutie cieľa udržateľného rozvoja č. 6 Agendy 2030, ktorý stanovuje, že všetci ľudia by mali mať do roku 2030 prístup k bezpečne spravovanej vode a sanitácii, je ešte ďaleko. To isté platí aj pre cieľ udržateľného rozvoja č. 14 - podmorský život, ktorého cieľom je zachovať a udržateľne využívať oceány, moria a morské zdroje v záujme udržateľného rozvoja.",
+                "SOS voda je reakciou na potrebu riešiť problém znečistenia vody. Napriek úsiliu, ktoré sa v posledných rokoch vynaložilo, na svete stále žijú 2 miliardy ľudí, ktorí nemajú prístup k bezpečnej pitnej vode. To znamená, že dosiahnutie cieľa udržateľného rozvoja č. 6 Agendy 2030, ktorý stanovuje, že všetci ľudia by mali mať do roku 2030 prístup k bezpečne spravovanej vode a sanitácii, je ešte ďaleko. To isté platí aj pre cieľ udržateľného rozvoja č. 14 - podmorský život, ktorého cieľom je zachovať a udržateľne využívať oceány, moria a morské zdroje v záujme udržateľného rozvoja.",
 
                 "Tento vzdelávací blok sa zameriava na relevantnú a aktuálnu problematiku merania kvality vody a nových znečisťujúcich látok, ktoré ohrozujú kvalitu vody. Študenti budú mať príležitosť skúmať a hľadať riešenia skutočných problémov týkajúcich sa vody a životného prostredia, čo im umožní rozvíjať zručnosti, ako je výskum, kritické myslenie a riešenie problémov.",
 
@@ -311,9 +313,9 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
 
                 "Pri realizácii tohto učebného bloku sa navrhuje vypracovať tri aktivity v triede, dokončiť celý projekt a dosiahnuť zmysluplnejší a motivujúcejší proces učenia. Každá činnosť sa však môže vykonávať aj samostatne."
 
-],
-"activities" => [
-    "1" => "SOS voda so Scratch",
+            ],
+            "activities" => [
+                "1" => "SOS voda so Scratch",
                 "2" => "SOS voda so strojovým učením",
                 "3" => "SOS voda s robotikou",
             ]
@@ -333,8 +335,43 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
                 "2" => "Kreatívne laboratórium kódovania: 4-6-roční žiaci materských škôl",
                 "3" => "Dotknúť sa plátna: vytváranie interaktívnych obrazov: 4 – 6 roční žiaci materských škôl; pokročilí."
             ]
+        ],
+        "21" => [
+            "title" => "Tvorba a kódovanie",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace sú živé centrá, kde sa darí kreativite a kde vznikajú praktické projekty. Pri výbere vybavenia pre Makerspace sa zameriavame na nástroje, ako sú Calliope mini, Microbit alebo Makey Makey, pretože ponúkajú širokú škálu možností vhodných pre študentov rôzneho veku a úrovne zručností. Tieto dosky podporujú vývoj kreatívnych projektov pre mladšie deti vďaka tomu, že sú k nim k dispozícii programovacie jazyky založené na blokoch. Pre starších žiakov možno pomocou týchto dosiek vytvárať zložitejšie projekty.",
+                "Preskúmajte <strong>Learning Bit – tvorba a kódovanie</strong>, aby ste sa ponorili do sveta Makerspace a podporili interdisciplinárne zručnosti, ako je tímová práca a sociálna spolupráca, a zároveň podnietili inovácie a nadšenie svojich študentov!",
+                "Makey Makey je doska plošného spoja, ktorá premieňa predmety dennej potreby na počítačové klávesy. Pripojením predmetov k doske pomocou krokosvoriek, ktoré sa potom spoja s počítačom pomocou kábla USB (alebo iPadu s adaptérom na fotoaparát), dokáže Makey Makey otvárať a zatvárať elektrické obvody medzi človekom a predmetom. Tým sa vysielajú elektrické signály, ktoré počítač prijíma ako údery do klávesnice alebo kliknutia myšou. To umožňuje žiakom vyvíjať kreatívne vynálezy, napríklad hudobné nástroje, počítačové hry alebo interaktívne plagáty – možnosti sú nekonečné! Makey Makey a projekty predstavené v tomto programe Learning Bit sa môžu používať na základných aj stredných školách na výučbu zručností v oblastiach, ako je mediálna výchova, informatika, veda, fyzika, hudba, šport a interdisciplinárne zručnosti, napríklad tímová práca a sociálne zručnosti.",
+                "Vstúpte do vzrušujúceho sveta Makey Makey a odomknite vo svojej triede neobmedzenú kreativitu!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey sa stretáva s hudbou: pre začiatočníkov.",
+                "2" => "Hovoriace obrázky: pre stredne pokročilých študentov.",
+                "3" => "Vytvorte interaktívny plagát: pre pokročilých študentov.",
+            ]
         ]
+        ,
+        "19" => [
 
+            "title" => "Kreatívne laboratórium Scratch",
+            "author" => "od Krzysztofa Jaworskeho",
+            "text" => [
+
+                "Učenie sa programovať dnes presahuje rámec prípravy na kariéru programátora a presahuje hranice informatiky. Malo by sa k nemu pristupovať zoširoka, zahŕňať interdisciplinárnu perspektívu a využívať programovanie ako nástroj učenia a hry na podporu rozvoja budúcich zručností.",
+
+                " Pre deti a mladých ľudí je veľmi dôležité pochopiť, ako bezpečne, zodpovedne a efektívne používať digitálne nástroje. Musia pochopiť, ako tieto nástroje fungujú, a vedieť, ako s nimi komunikovať prostredníctvom programovania. Okrem toho by táto skúsenosť mala zahŕňať spoluprácu s ich rovesníkmi.",
+
+                "Učebná časť <strong>Creative Scratch Laboratory</strong> zvýši kreativitu študentov, podporí ich zvedavosť a kódovanie sa stane príjemné a zábavné.  Pozostáva z troch učebných plánov pre študentov s rôznymi zručnosťami v oblasti kódovania. V učebnom pláne pre začiatočníkov študenti vytvoria postavu na papieri, importujú ju do programu Scratch a animujú ju pomocou vybraných blokov. V učebnom pláne pre stredne pokročilých sa študenti naučia používať nástroj Video škriatkovia, grafickú tvorbu s papierom a fixkami a vytvárať mozaiku v programe Scratch pomocou Video škriatkov, pečiatok a umeleckých diel. V učebnom pláne pre pokročilých študenti preskúmajú funkciu rozpoznávania tvárí v Scratchi, experimentujú s manipuláciou so škriatkami a vytvoria minidivadlo s dialógmi vytvorenými v programe Scratch",
+
+            ],
+            "activities" => [
+                "1" => "Nakresliť a animovať škriatka: pre začiatočníkov",
+                "2" => "Pečiatky: pre stredne pokročilých študentov",
+                "3" => "Bábkové divadlo: pre pokročilých študentov",
+            ]
+
+        ],
 
 
     ],

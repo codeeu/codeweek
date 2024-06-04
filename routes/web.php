@@ -148,21 +148,21 @@ Route::get(
     '/training/sos-water',
     'StaticPageController@static'
 )->name('training.module-18');
-//
-//Route::get(
-//    '/training/creative-scratch-laboratory',
-//    'StaticPageController@static'
-//)->name('training.module-19');
+
+Route::get(
+    '/training/creative-scratch-laboratory',
+    'StaticPageController@static'
+)->name('training.module-19');
 
 Route::get(
     '/training/code-through-art',
     'StaticPageController@static'
 )->name('training.module-20');
 
-//Route::get(
-//    '/training/making-and-coding',
-//    'StaticPageController@static'
-//)->name('training.module-21');
+Route::get(
+    '/training/making-and-coding',
+    'StaticPageController@static'
+)->name('training.module-21');
 
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name(
     'coding@home'

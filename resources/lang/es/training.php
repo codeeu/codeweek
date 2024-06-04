@@ -339,6 +339,40 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
                 "2" => "Laboratorio de código creativo. Alumnos de educación infantil de 4 a 6 años",
                 "3" => "Lienzo táctil: Creación de pinturas interactivas. Alumnoas de educación infantil de 4 a 6 años; avanzado"
             ]
+        ],
+        "19" => [
+
+            "title" => "Laboratorio creativo de Scratch",
+            "author" => "por Krzysztof Jaworski",
+            "text" => [
+
+                "Hoy en día, aprender programación va más allá de prepararse para la carrera de programación y se extiende más allá de los límites de la informática. Debería enfocarse de manera general, englobando una perspectiva interdisciplinaria y utilizando la programación como una herramienta para aprender y jugar con el fin de fomentar el desarrollo de futuras competencias",
+
+                "Es fundamental que los niños y jóvenes comprendan cómo se pueden utilizar las herramientas digitales de forma segura, responsable y eficaz. Necesitan comprender cómo funcionan estas herramientas y cómo comunicarse con ellas a través de la programación. Además, esta experiencia debería implicar interacciones colaborativas con sus compañeros.",
+
+                "El minicurso <strong>Creative Scratch Laboratory</strong> mejorará la creatividad de los alumnos, favorecerá su curiosidad y hará que programar sea una actividad agradable y divertida.  Consiste en tres planes de aprendizaje para alumnos con distintas habilidades de programación. En el plan de aprendizaje para principiantes, los alumnos crean un personaje en papel, lo importan a Scratch y lo animan empleando determinados bloques. En el plan de aprendizaje de nivel intermedio, se enseña a los alumnos la herramienta Video Sprites, la elaboración de gráficos con papel y rotuladores, y la creación de un mosaico de Scratch con Video Sprites, sellos y dibujos. En el plan de aprendizaje avanzado, los alumnos exploran la función de reconocimiento facial de Scratch, experimentan con la manipulación de gráficos de objetos y crean un miniteatro con diálogos generados en Scratch"
+
+            ],
+            "activities" => [
+                "1" => "Dibuja y anima un objeto: para principiantes",
+                "2" => "Sellos: para alumnos con nivel intermedio",
+                "3" => "Teatro de marionetas: para alumnos con nivel avanzado",
+            ]
+        ],
+        "21" => [
+            "title" => "Elaboración y codificación",
+            "author" => "por Ulla Hauptmann",
+            "text" => [
+                "Los Makerspaces son centros dinámicos donde la creatividad prospera y los proyectos prácticos cobran vida. A la hora de seleccionar el equipamiento para un Makerspace, hay que centrarse en herramientas como Calliope mini, Microbit o Makey Makey, ya que ofrecen un amplio abanico de posibilidades adecuadas para alumnos de diferentes edades y niveles de habilidad. Estas placas sirven para el desarrollo de proyectos creativos para los niños más pequeños gracias a sus lenguajes de programación basados en bloques. Para los estudiantes de más edad, se pueden crear proyectos más complejos utilizando estas placas",
+                "¡Explore el <strong>Learning Bit Elaboración y codificación</strong> para sumergirse en el mundo de los Makerspaces y fomentar habilidades interdisciplinares como el trabajo en equipo y la colaboración social al tiempo que fomenta la innovación y el entusiasmo entre tus alumnos!",
+                "Makey Makey es una placa de circuitos que convierte objetos cotidianos en teclas de ordenador. Al conectar objetos a la placa con pinzas de cocodrilo, que luego se conectan al ordenador mediante un cable USB (o un iPad con un adaptador de cámara), Makey Makey puede abrir y cerrar circuitos eléctricos entre una persona y un objeto. Esto envía señales eléctricas que el ordenador recibe como pulsaciones del teclado o del ratón. Esto permite a los alumnos desarrollar inventos creativos como instrumentos musicales, juegos de ordenador o carteles interactivos: ¡las posibilidades son infinitas! Makey Makey y los proyectos presentados en este Learning Bit pueden utilizarse tanto en primaria como en secundaria para enseñar habilidades en áreas como la educación sobre medios de comunicación, la informática, las ciencias, la física, la música, el deporte y habilidades interdisciplinares como el trabajo en equipo y las habilidades sociales" ,
+                "Adéntrese en el apasionante mundo de Makey Makey y desate una creatividad sin límites en su aula"
+            ],
+            "activities" => [
+                "1" => "Makey Makey se encuentra con la música: para principiantes",
+                "2" => "Cuadros parlantes: para alumnos de nivel intermedio",
+                "3" => "Crear un póster interactivo: para estudiantes avanzados",
+            ]
         ]
 
 

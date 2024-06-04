@@ -335,28 +335,80 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
                 "2" => "„Mu süda ei ole kivist“ põhikooli esimese astme õpilastele",
                 "3" => "„Programmeerige mulle meeleolu“ põhikooli teise astme õpilastele",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS vesi",
             "author" => "Francisco Delgado Cecilia",
-"text" => [
+            "text" => [
 
-    "SOS vesi on loodud vastusena vajadusele lahendada veereostuse probleem. Vaatamata viimaste aastate jõupingutustele on maailmas siiski kaks miljardit inimest, kellel ei ole ligipääsu puhtale joogiveele. See tähendab, et me ei ole veel kaugeltki täitnud kestliku arengu tegevuskava 2030 kestliku arengu eesmärki nr 6, mille kohaselt peaks kõigil inimestel olema 2030. aastaks ligipääs kestlikult majandatud veele ja kanalisatsioonile. Sama kehtib kestliku arengu eesmärgi nr 14 kohta, mis käsitleb ookeanide, merede ja mereressursside kaitset ja kestlikku kasutamist.",
+                "SOS vesi on loodud vastusena vajadusele lahendada veereostuse probleem. Vaatamata viimaste aastate jõupingutustele on maailmas siiski kaks miljardit inimest, kellel ei ole ligipääsu puhtale joogiveele. See tähendab, et me ei ole veel kaugeltki täitnud kestliku arengu tegevuskava 2030 kestliku arengu eesmärki nr 6, mille kohaselt peaks kõigil inimestel olema 2030. aastaks ligipääs kestlikult majandatud veele ja kanalisatsioonile. Sama kehtib kestliku arengu eesmärgi nr 14 kohta, mis käsitleb ookeanide, merede ja mereressursside kaitset ja kestlikku kasutamist.",
 
-    "Selle õppevahendi tähelepanu keskmes on vee kvaliteedi mõõtmise ning vee kvaliteeti ohustavate uute saasteainete oluline ja aktuaalne teema. Õpilastel on võimalus uurida ja püüda lahendada vee ja keskkonnaga seotud tegelikke probleeme, arendades selle käigus selliseid oskusi, nagu uurimistöö tegemine, kriitiline mõtlemine ja probleemilahendus.",
+                "Selle õppevahendi tähelepanu keskmes on vee kvaliteedi mõõtmise ning vee kvaliteeti ohustavate uute saasteainete oluline ja aktuaalne teema. Õpilastel on võimalus uurida ja püüda lahendada vee ja keskkonnaga seotud tegelikke probleeme, arendades selle käigus selliseid oskusi, nagu uurimistöö tegemine, kriitiline mõtlemine ja probleemilahendus.",
 
-    "Tunnikavad sisaldavad praktilisi ja loomingulisi tegevusi, nagu Scratchiga programmeerimine, tutvumine masinõppe ja tehisintellektiga rakenduse Learning Machine Learning abil ning juhitavate sõidukite ehitamine Lego komplektidest veeproovide võtmiseks ja vee pH-taseme määramiseks. Need tegevused võimaldavad õpilastel praktiliselt rakendada oma oskusi ja teadmisi interaktiivses ja mängulises keskkonnas, mis suurendab nende motivatsiooni ja huvi projekti vastu.",
+                "Tunnikavad sisaldavad praktilisi ja loomingulisi tegevusi, nagu Scratchiga programmeerimine, tutvumine masinõppe ja tehisintellektiga rakenduse Learning Machine Learning abil ning juhitavate sõidukite ehitamine Lego komplektidest veeproovide võtmiseks ja vee pH-taseme määramiseks. Need tegevused võimaldavad õpilastel praktiliselt rakendada oma oskusi ja teadmisi interaktiivses ja mängulises keskkonnas, mis suurendab nende motivatsiooni ja huvi projekti vastu.",
 
-    "Seda õppevahendit on soovitatav kasutada klassiruumis nende kolme tegevuse kaudu, teha läbi kogu projekt ning saavutada sellega sisukam ja motiveerivam õppeprotsess. Iga tegevust saab siiski kasutada ka eraldi."
+                "Seda õppevahendit on soovitatav kasutada klassiruumis nende kolme tegevuse kaudu, teha läbi kogu projekt ning saavutada sellega sisukam ja motiveerivam õppeprotsess. Iga tegevust saab siiski kasutada ka eraldi."
 
-],
-"activities" => [
-    "1" => "SOS vesi Scratchiga",
-    "2" => "SOS vesi masinõppega",
-    "3" => "SOS vesi robootikaga",
-]
+            ],
+            "activities" => [
+                "1" => "SOS vesi Scratchiga",
+                "2" => "SOS vesi masinõppega",
+                "3" => "SOS vesi robootikaga",
+            ]
 
         ],
+        "19" => [
+
+            "title" => "Scratchi loominguline laboratoorium",
+            "author" => "Krzysztof Jaworski",
+            "text" => [
+
+                "Programmeerimise õppimine on tänapäeval rohkem kui programmeerimiskarjääriks valmistumine ja ulatub arvutiteaduse piiridest kaugemale. Seda tuleks käsitleda laiemalt, hõlmates interdistsiplinaarset perspektiivi ning kasutades programmeerimist õppimise ja mängimise vahendina, et soodustada tulevikuoskuste arendamist.",
+
+                "Laste ja noorte jaoks on ülimalt oluline mõista, kuidas digitaalseid tööriistu ohutult, vastutustundlikult ja tõhusalt kasutada. Nad peavad mõistma, kuidas need tööriistad toimivad, ja teadma, kuidas nendega programmeerimise kaudu suhelda. Lisaks peaks see kogemus hõlmama koostööd oma eakaaslastega.",
+
+                "Õppevahend <strong>Creative Scratch Laboratory</strong> suurendab õpilaste loovust, tekitab uudishimu ning muudab kodeerimise nauditavaks ja lõbusaks.  See koosneb kolmest tunnikavast erinevate kodeerimisoskustega õpilastele. Algajate tunnikavas loovad õpilased paberil tegelase, impordivad selle Scratchi ja animeerivad seda valitud plokkide abil. Kesktaseme tunnikavas õpetatakse õpilastele video spraitide tööriista, paberi ja markeritega graafilist meisterdamist ning Scratchi mosaiigi koostamist video spraitide, templite ja kunstiteostega. Edasijõudnute tunnikavas uurivad õpilased Scratchis näotuvastusfunktsiooni, katsetavad spraidiga graafika manipuleerimist ja loovad Scratchis loodud dialoogidega miniteatri.",
+
+            ],
+            "activities" => [
+                "1" => "Spraidi joonistamine ja animeerimine: algajatele",
+                "2" => "Templid: kesktaseme õpilastele",
+                "3" => "Nukuteater: edasjõudnud õpilastele",
+            ]
+        ],
+        "21" => [
+            "title" => "Valmistamine ja kodeerimine",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace'id on elujõulised keskused, kus loovus õitseb ja praktilised projektid ärkavad ellu. Makerspace'i seadmete valikul keskendutakse sellistele vahenditele nagu Calliope Mini, Microbit või Makey Makey, sest need pakuvad laia valikut võimalusi, mis sobivad eri vanuses ja erineva oskustasemega õpilastele. Need tahvlid toetavad loovate projektide arendamist nooremate laste puhul tänu nende tahvlite jaoks saadaval olevateleplokipõhistele programmeerimiskeeltele. Vanematele õpilastele saab nende tahvlite abil luua keerulisemaid projekte.",
+                "Avastage <strong>Learning Bit Making ja Coding</strong>, et sukelduda Makerspaces'i maailma ja edendada interdistsiplinaarseid oskusi, nagu meeskonnatöö ja sotsiaalne koostöö, ning tekitada samaaegselt õpilastes uuendusmeelsust ja entusiasmi!",
+                "Makey Makey on elektriplaat, mis muudab igapäevased esemed arvutiklahvideks. Ühendades esemed tahvli külge krokodilliklambritega, mis seejärel ühendatakse USB-kaabli (või kaameraadapteriga iPadi) kaudu arvutiga, saab Makey Makey avada ja sulgeda inimese ja eseme vahelisi elektriahelaid. See saadab elektrilisi signaale, mida arvuti võtab vastu klaviatuurilöökide või hiireklõpsudena. See võimaldab õpilastel arendada loomingulisi leiutisi, näiteks muusikainstrumente, arvutimänge või interaktiivseid plakateid - võimalused on lõputud! Makey Makey't ja selles Learning Bitis esitatud projekte saab kasutada nii alg- kui ka keskkoolides, et õpetada oskusi sellistes valdkondades nagu meediaõpetus, informaatika, loodusteadused, füüsika, muusika, sport ja interdistsiplinaarsed oskused, nagu meeskonnatöö ja sotsiaalsed oskused.",
+                "Sisenege Makey Makey põnevasse maailma ja avastage oma klassiruumis piiritu loovus!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey kohtub muusikaga: algajatele.",
+                "2" => "Rääkivad pildid: keskastme õpilastele.",
+                "3" => "Loo interaktiivne plakat: edasijõudnutele.",
+            ]
+        ]
+,
+        "20" => [
+            "title" => "Kood läbi kunsti",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Lapsed kasvavad üles keerulises maailmas, mis areneb pidevalt tehnoloogiliselt ja nõuab väikelaste kasvatajatelt uuenduslikke haridusalaseid lähenemisviise. Nende lähenemisviiside hulka kuuluvad tegevused, mis edendavad arvutuslikku mõtlemist ja programmeerimist juba väikesest peale. Uuringud näitavad, et sihipärased tegevused arendavad tõhusalt laste matemaatikaga seotud mõtlemist ja probleemide lahendamise oskusi ning samal ajal soodustavad sellised tegevused nende loomingulist eneseväljendust tehnoloogia abil.",
+                "Kuigi kõige levinum strateegia programmeerimise õpetamiseks hõlmab õpperobotite kasutamist, on võimalik programmeerida ka ilma robootikakomplekti kasutamiseta (unplugged). Selline lähenemine võib võtta erinevaid vorme ja hõlmata mitmesuguseid tegevusi (pikslimaal, lapsed robotite rollis, põrandaruudustiku kasutamine jne). Need tegevused pakuvad kogemuslikust õppimisest tulenevat kasu, eriti väikelaste puhul, kes õpivad kõige paremini läbi mängu.",
+                "<strong>Bit-koodi õppimine kunsti kaudu</strong> sisaldab väikelaste kasvatajatele kolme tunnikava ja kasutab lahtiütlemise tegevust, Bee-bot õpperoboti ja leiutamiskomplekti Makey Makey kasutamist. Makey Makey komplekti kasutades on õpilastel võimalus luua käegakatsutavaid liideseid ja proovida erinevaid lahendusi, luua, eksperimenteerida ja kinnistada kõiki oma õppimisvõimeid üheskoos õppimise keskkonnas.",
+                "Nagu ütles Pablo Picasso \": „Iga laps on kunstnik. Probleem on selles, kuidas jääda kunstnikuks, kui ta kasvab suureks.” Kunst annab lastele võimaluse oma ideid ja tundeid loovalt kujutada ning edastada. Sellest Learning Bitist leiate inspireerivaid tegevusi, et arendada oma õpilaste  sotsiaalseid ja 21. sajandi oskusi kunsti ja kodeerimise kaudu, innustada neid end loovalt väljendama ja arendada nende kujutlusvõimet. Learning Bit Code Through Art võimaldab teil kunsti ja kodeerimist integreerides edendada oma õpilaste loovust, koostööd ja probleemide lahendamist."
+            ],
+            "activities" => [
+                "1" => "Kunstlik kodeerimine: 4-6-aastased lasteaialapsed.",
+                "2" => "Loov koodilabor: 4-6-aastased lasteaialapsed",
+                "3" => "Touch Canvas: interaktiivsete maalide loomine: 4-6 aastased lasteaialapsed; edasijõudnud."
+            ]
+        ]
+
 
     ],
     'download_video_script' => 'Laadi alla video skript',
