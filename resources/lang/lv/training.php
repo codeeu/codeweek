@@ -372,6 +372,40 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
                 "2" => "Radošā koda laboratorija: 4-6 gadus veci bērnudārza audzēkņi",
                 "3" => "Skārienjutīgais audekls: Interaktīvu gleznu radīšana: 4-6 gadus veci bērnudārza audzēkņi; augstākais līmenis."
             ]
+        ],
+        "19" => [
+
+            "title" => "Scratch radošā laboratorija",
+            "author" => "autors: Kšištofs Javorskis",
+            "text" => [
+
+                "Programmēšanu mūsdienās izmanto arī daudz kur citur, nevis tikai gatavojoties programmētāja karjerai, un tā pārsniedz datorzinātnes robežas. Tā ir jāuztver plašākā nozīmē, pievēršoties starpdisciplīnu perspektīvai un izmantojot programmēšanu kā instrumentu, lai mācītos un rotaļātos, veicinot nākotnē noderīgu prasmju attīstību.",
+
+                "Bērniem un jauniešiem ir svarīgi saprast to, kā digitālos instrumentus izmantot droši, atbildīgi un efektīvi. Viņiem nepieciešama izpratne par to, kā šie instrumenti darbojas, un jāpārzina saziņa ar tiem, izmantojot programmēšanu. Turklāt, šajā pieredzē ir jāiekļauj mijiedarbošanās un sadarbība ar klasesbiedriem.",
+
+                "Šis mācību modulis <strong>Creative Scratch Laboratory</strong> palielinās audzēkņu radošumu, veicinās zinātkāri un padarīs programmēšanu patīkamu un jautru.  Tajā ir iekļauti trīs stundu plāni audzēkņiem ar atšķirīgām programmēšanās iemaņām. Iesācēju stundu plānā audzēkņi izveidos personāžu uz papīra, importēs to Scratch un animēs to, izmantojot izvēlētos blokus. Stundu plānā audzēkņiem ar nelielām priekšzināšanām viņi apgūs video gariņu instrumentu, grafiku veidošanu ar papīru un marķieriem un Scratch mozaīkas izveidi ar video gariņiem, spiedogiem un mākslas darbiem. Stundu plānā audzēkņiem ar priekšzināšanām viņi izpētīs Scratch sejas atpazīšanas funkciju, eksperimentēs ar gariņu grafiku modificēšanu un izveidos nelielu teātri ar Scratch ģenerētiem dialogiem.",
+
+            ],
+            "activities" => [
+                "1" => "Gariņu zīmēšana un animēšana: iesācējiem",
+                "2" => "Spiedogi: audzēkņiem ar nelielām priekšzināšanām",
+                "3" => "Leļļu teātris: audzēkņiem ar priekšzināšanām",
+            ]
+        ],
+        "21" => [
+            "title" => "Izgatavošana un programmēšana",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace ir dinamiski centri, kur plaukst radošums un top praktiski projekti. Izvēloties aprīkojumu Makerspace telpai, galvenā uzmanība tiek pievērsta tādiem instrumentiem kā Calliope mini, Microbit vai Makey Makey, jo tie piedāvā plašas iespējas, kas piemērotas dažāda vecuma un prasmju līmeņa skolēniem. Šīs plāksnes atbalsta radošu projektu izstrādi jaunākiem bērniem, pateicoties tam, ka šīm plāksnēm ir pieejamas programmēšanas valodas, kuru pamatā ir bloki. Savukārt vecākiem skolēniem ar šo plašu palīdzību var veidot sarežģītākus projektus.",
+                "Izpētiet <strong>Learning Bit \”Izgatavošana un programmēšana\”</strong>, lai ienirtu Makerspace pasaulē un veicinātu starpdisciplināras prasmes, piemēram, komandas darbu un sociālo sadarbību, vienlaikus rosinot inovācijas un entuziasmu savos audzēkņos!",
+                "Makey Makey ir shēmas plate, kas ikdienā izmantojamus priekšmetus pārvērš datora taustiņos. Pievienojot priekšmetus plāksnei ar \"krokodila\" tipa spailēm, kas pēc tam savienojas ar datoru, izmantojot USB kabeli (vai iPad ar kameras adapteri), Makey Makey var atvērt un aizvērt elektriskās ķēdes starp cilvēku un priekšmetu. Tādējādi tiek nosūtīti elektriskie signāli, kurus dators saņem kā tastatūras taustiņu nospiešanu vai peles klikšķus. Tas ļauj audzēkņiem izveidot radošus izgudrojumus, piemēram, mūzikas instrumentus, datorspēles vai interaktīvus plakātus - iespējas ir bezgalīgas! Makey Makey un šajā Learning bit izklāstītos projektus var izmantot gan pamatskolās, gan vidusskolās, lai mācītu prasmes tādās jomās kā mediju izglītība, datorzinātne, dabaszinātnes, fizika, mūzika, sports un starpdisciplināras prasmes, piemēram, komandas darbs un sociālās prasmes.",
+                "Ienāciet aizraujošajā Makey Makey pasaulē un atraisiet neierobežotu radošumu savā klasē!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey satiekas ar mūziku: iesācējiem.",
+                "2" => "Runājoši attēli: vidēja līmeņa audzēkņiem.",
+                "3" => "Izveidot interaktīvu plakātu: augstākā līmeņa audzēkņiem.",
+            ]
         ]
 
 

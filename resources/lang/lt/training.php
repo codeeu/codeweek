@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'Programėlių kūrimo priemonė „App Inventor“ ir programėlių kūrimas',
-            'author'=>'Parengė Rosanna Kurrer',
-            'text'=>'<p>Pažiūrėkite vaizdo siužetą, kuriame Rosanna Kurrer („CyberWayFinder“ steigėja) aiškina, kas yra „App Inventor“, apžvelgia programėlių kūrimo klasėje naudą ir pateikia keletą praktinių pavyzdžių, kaip mokytojai gali integruoti „App Inventor“ į klasės veiklą ir neaktyvius mokinius paskatinti tapti entuziastingais žaidimų kūrėjais.</p>
+            'title' => 'Programėlių kūrimo priemonė „App Inventor“ ir programėlių kūrimas',
+            'author' => 'Parengė Rosanna Kurrer',
+            'text' => '<p>Pažiūrėkite vaizdo siužetą, kuriame Rosanna Kurrer („CyberWayFinder“ steigėja) aiškina, kas yra „App Inventor“, apžvelgia programėlių kūrimo klasėje naudą ir pateikia keletą praktinių pavyzdžių, kaip mokytojai gali integruoti „App Inventor“ į klasės veiklą ir neaktyvius mokinius paskatinti tapti entuziastingais žaidimų kūrėjais.</p>
 <p>Visi naudojamės taikomosiomis programomis, nes jomis galima patogiai ir greitai koordinuoti savo veiklą. Jos vis plačiau naudojamos ir švietimo srityje, nes leidžia organizuoti prie asmeninių poreikių pritaikytą mokymą, o naudotojams – gauti informacijos, tad kodėl nesuteikus savo mokiniams galimybės sukurti edukacinę programėlę kitiems?</p>',
-            'activities'=>[
-                '1'=>'1 veikla. Pavadinimas, skiriama pradinių mokyklų moksleiviams',
-                '2'=>'2 veikla. Pavadinimas, skiriama jaunesniųjų vidurinės mokyklos klasių mokiniams',
-                '3'=>'3 veikla. Pavadinimas, skiriama vyresniųjų vidurinės mokyklos klasių mokiniams'
+            'activities' => [
+                '1' => '1 veikla. Pavadinimas, skiriama pradinių mokyklų moksleiviams',
+                '2' => '2 veikla. Pavadinimas, skiriama jaunesniųjų vidurinės mokyklos klasių mokiniams',
+                '3' => '3 veikla. Pavadinimas, skiriama vyresniųjų vidurinės mokyklos klasių mokiniams'
             ]
         ],
         '7' => [
-            'title'=>'Meistravimas ir konstravimas',
-            'author'=>'Parengė Diogo da Silva',
-            'text'=>'<p>Darbai ir darbo vietos kinta, o švietimas padeda neatsilikti nuo šios raidos. Rengiant mokinius profesinei veiklai XXI amžiuje, labai svarbūs tampa nauji įgūdžiai – meistravimas, konstravimas ir programavimas, nes jie mažina atotrūkį tarp mokyklos ir tikrovės. Klasėje sukūrus bendradarbiavimo aplinką, orientuotą į problemų sprendimą, mokiniams suteikiama galimybė aktyviai dalyvauti ir tuo džiaugtis. Tokia veikla skatina diskusijas, taigi klasė gali tapti bendravimo centru, kur kiekvieno indėlis svarbus.</p> 
+            'title' => 'Meistravimas ir konstravimas',
+            'author' => 'Parengė Diogo da Silva',
+            'text' => '<p>Darbai ir darbo vietos kinta, o švietimas padeda neatsilikti nuo šios raidos. Rengiant mokinius profesinei veiklai XXI amžiuje, labai svarbūs tampa nauji įgūdžiai – meistravimas, konstravimas ir programavimas, nes jie mažina atotrūkį tarp mokyklos ir tikrovės. Klasėje sukūrus bendradarbiavimo aplinką, orientuotą į problemų sprendimą, mokiniams suteikiama galimybė aktyviai dalyvauti ir tuo džiaugtis. Tokia veikla skatina diskusijas, taigi klasė gali tapti bendravimo centru, kur kiekvieno indėlis svarbus.</p> 
 <p>Pažiūrėkite toliau pateikiamą vaizdo siužetą, kuriame Portugalijos mokyklos „Escola Global“ gamtos mokslų, technologijų, inžinerijos, meno ir matematikos (angl. STEAM) mokytoja Diogo da Silva išsamiai pasakoja, kaip parengti pamoką, kurios metu jūsų mokiniai mokytųsi meistrauti, kurti ir programuoti ieškodami sprendimo.</p>',
-            'activities'=>[
-                '1'=>'1 veikla. Pavadinimas, skiriama pradinių mokyklų moksleiviams',
-                '2'=>'2 veikla. Pavadinimas, skiriama jaunesniųjų vidurinės mokyklos klasių mokiniams',
-                '3'=>'3 veikla. Pavadinimas, skiriama vyresniųjų vidurinės mokyklos klasių mokiniams'
+            'activities' => [
+                '1' => '1 veikla. Pavadinimas, skiriama pradinių mokyklų moksleiviams',
+                '2' => '2 veikla. Pavadinimas, skiriama jaunesniųjų vidurinės mokyklos klasių mokiniams',
+                '3' => '3 veikla. Pavadinimas, skiriama vyresniųjų vidurinės mokyklos klasių mokiniams'
             ]
         ],
         '8' => [
-            'title'=>'Programavimo įtraukimas į visus dalykus',
-            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Kai pagalvojate apie programavimą, pirmiausia, kas jums ateina į galvą, yra kompiuteriai, technologijos, matematika arba mokslas. Tačiau, turint omenyje, kad mokiniai daug kuo domisi ir mokosi įvairių dalykų, kodėl tuo nepasinaudojus ir neįtraukus programavimo į visą mokymo programą?</p> 
+            'title' => 'Programavimo įtraukimas į visus dalykus',
+            'author' => 'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Kai pagalvojate apie programavimą, pirmiausia, kas jums ateina į galvą, yra kompiuteriai, technologijos, matematika arba mokslas. Tačiau, turint omenyje, kad mokiniai daug kuo domisi ir mokosi įvairių dalykų, kodėl tuo nepasinaudojus ir neįtraukus programavimo į visą mokymo programą?</p> 
 <p>Įtraukti programavimą į klasės veiklą naudinga įvairiais aspektais: jis padeda mokiniams lavinti kritinį mąstymą ir problemų sprendimo įgūdžius, tapti aktyviais naudotojais ir valdyti savo pačių mokymosi procesą, o tai mokykloje labai svarbu. Tačiau svarbiausia, kad jūsų mokiniams bus smagu mokytis!</p>
 <p>Kalbos, muzika arba gamtos mokslai, technologijos, inžinerija ir matematika (angl. STEM) – tai tik keletas dalykų, kurių mokytojai gali pasitelkti programavimą, kad išugdytų būsimus mokslininkus, muzikantus, menininkus, o iš esmės – bet kokios srities specialistus! Programavimą ir skaitmeninį mąstymą į klasės veiklą gali įtraukti visi mokytojai. Kasdienio gyvenimo algoritmo paaiškinimas per integruotą dalyko ir užsienio kalbos pamoką, veltinio žaidimų pulto gamyba siekiant suprasti, kas yra mokslas, arba edukacinių robotų naudojimas siekiant paskatinti mokytis matematikos – tik keletas pavyzdžių, kokios veiklos galite imtis klasėje.</p> 
 <p>Norėdami sužinoti, kaip muzikos, mokslo srities dalykų arba kalbų mokytojai gali nesunkiai įtraukti programavimą ir skaitmeninį mąstymą į klasės veiklą net ir neturėdami ankstesnės patirties, pažiūrėkite toliau pateikiamą vaizdo siužetą.</p>',
-            'activities'=>[
-                '1'=>'1 veikla. Robotika ir įtrauktis pradinėse mokyklose mokant gamtos mokslų, technologijų, inžinerijos ir matematikos (angl. STEM) dalykų',
-                '2'=>'2 veikla. Muzika – tai programavimas',
-                '3'=>'3 veikla. Meistravimas ir programavimas naudojant „Makey Makey“',
-                '4'=>'4 veikla. Kasdienio gyvenimo algoritmo naudojimas integruotam dalyko ir užsienio kalbos mokymui'
+            'activities' => [
+                '1' => '1 veikla. Robotika ir įtrauktis pradinėse mokyklose mokant gamtos mokslų, technologijų, inžinerijos ir matematikos (angl. STEM) dalykų',
+                '2' => '2 veikla. Muzika – tai programavimas',
+                '3' => '3 veikla. Meistravimas ir programavimas naudojant „Makey Makey“',
+                '4' => '4 veikla. Kasdienio gyvenimo algoritmo naudojimas integruotam dalyko ir užsienio kalbos mokymui'
             ]
         ],
         '9' => [
-            'title'=>'Roboto gamyba naudojant „micro:bit“',
-            'author'=>'autorius Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Roboto gamyba naudojant „micro:bit“',
+            'author' => 'autorius Pauline Maas',
+            'text' => '<p>
                    Lengvai programuojamo, kišeninio kompiuterio „Micro: bit“ naudojimas gali būti įdomus ir paprastas būdas įdomiems kūriniams – nuo robotų iki muzikos instrumentų – kurti kartu su savo mokiniais, tuo pačiu išmokant juos kodavimo. Juos paprasta ir lengva naudoti net jauniausiems programuotojams, tačiau taip pat pakanka galios labiau pažengusiems mokiniams. Galite juos įtraukti į įvairias pamokas – nuo istorijos iki matematikos ir net gamtos mokslų. Galimybėms ribų nėra. „Micro: bit“ yra patrauklus ir nebrangus būdas mokyti mokinius kodavimo, tuo pačiu formuojant esminius įgūdžius, tokius kaip skaitmeninis mąstymas, problemų sprendimas ir kūrybingumas.
                    </p>
                    <p>
 Šiame vaizdo įraše Pauline Maas, „Koninklijke Visio“ informatikos mokytoja, pristatys „Micro: bit“ ir pateiks keletą praktinių pavyzdžių, kaip mokytojai gali juos integruoti į klasės darbą, pasyvius mokinius paversdami entuziastingais kūrėjais.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Morzės kodas su „micro: bit“ pradinės mokyklos mokiniams',
-                '2'=>'Pabėgimo kambarys su „micro: bit“ pagrindinės mokyklos mokiniams',
-                '3'=>'Roboto gamyba vyresnių klasių vidurinės mokyklos mokiniams',
+            'activities' => [
+                '1' => 'Morzės kodas su „micro: bit“ pradinės mokyklos mokiniams',
+                '2' => 'Pabėgimo kambarys su „micro: bit“ pagrindinės mokyklos mokiniams',
+                '3' => 'Roboto gamyba vyresnių klasių vidurinės mokyklos mokiniams',
             ]
         ],
         '10' => [
-            'title'=>'Kūrybinis programavimas naudojant „Python“ kalbą',
-            'author'=>'Autorius Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kūrybinis programavimas naudojant „Python“ kalbą',
+            'author' => 'Autorius Ivana Vezjak',
+            'text' => '<p>
 Perėjimas nuo vaizdinio programavimo prie tekstinio yra natūrali kodavimo eiga. Nors vaizdinis programavimas dažnai puikiai tinka pradedantiesiems, po kurio laiko studentai gali trokšti naujo iššūkio. Tekstinis programavimas yra kitas žingsnis visiems, norintiems pasinerti giliau į programavimą ir skaičiuojamąjį mąstymą.
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ Perėjimas nuo vaizdinio programavimo prie tekstinio yra natūrali kodavimo eiga
 <p> 
 Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius, spręsti matematikos problemas ir atlikti fizikos simuliacijas, kurti žaidimus, interneto svetaines, atlikti duomenų analizę moksliniams projektams ir dar daugiau. „Python“ turi turtingą ir išsamią standartinę biblioteką, didelę bendruomenę ir daugybę internetinių mokymo programų ir projektų, kuriuos galima naudoti mokymui, mokymuisi ir praktikai. Šifruojant „Python“ programoje, analizuojant programas ir taisant klaidas, studentai ugdo kūrybiškumą ir išmoksta būti nuoseklūs, atkaklūs ir kantrūs. Jie įgauna analitinio mąstymo ir problemų sprendimo įgūdžių, suskaidydami sudėtingas problemas į mažesnius komponentus. Šios žinios padės jiems spręsti problemas visose kitose gyvenimo srityse.
                 </p>',
-            'activities'=>[
-                '1'=>'Mano pirmoji viktorina, pradinės mokyklos mokiniams',
-                '2'=>'„Kartuvės“, jaunesnių klasių vidurinės mokyklos mokiniams',
-                '3'=>'„Atspėk vėliavą!“ Vyresnių klasių vidurinės mokyklos mokiniams',
+            'activities' => [
+                '1' => 'Mano pirmoji viktorina, pradinės mokyklos mokiniams',
+                '2' => '„Kartuvės“, jaunesnių klasių vidurinės mokyklos mokiniams',
+                '3' => '„Atspėk vėliavą!“ Vyresnių klasių vidurinės mokyklos mokiniams',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Kiti susiję ištekliai',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python standartinė biblioteka",
-                    "description"=>"Iš anksto sukurto kodo ir modulių rinkinys (pvz., vėžlio modulis, matematikos modulis ir t. t.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python standartinė biblioteka",
+                    "description" => "Iš anksto sukurto kodo ir modulių rinkinys (pvz., vėžlio modulis, matematikos modulis ir t. t.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Mokomasis vaizdo žaidimas programavimo sąvokoms išmokti.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Mokomasis vaizdo žaidimas programavimo sąvokoms išmokti.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"CodeClub projektai",
-                    "description"=>"Nuo pradedančiųjų iki pažangių, laipsniškų programavimo projektų vaikams.",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "CodeClub projektai",
+                    "description" => "Nuo pradedančiųjų iki pažangių, laipsniškų programavimo projektų vaikams.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Kurkite savo kompiuterinius žaidimus naudodami Python",
-                    "description"=>"Knyga, kurioje mokoma programuoti savo kompiuterinius žaidimus naudojant „Python“.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Kurkite savo kompiuterinius žaidimus naudodami Python",
+                    "description" => "Knyga, kurioje mokoma programuoti savo kompiuterinius žaidimus naudojant „Python“.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Švietimo bendruomenė, kurioje mokiniai ir mokytojai gali mokytis, spręsdami daugybę iššūkių.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Švietimo bendruomenė, kurioje mokiniai ir mokytojai gali mokytis, spręsdami daugybę iššūkių.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"„Python“ įvadinių pamokų (tiek teksto, tiek blokų) kolekcija naudojant interaktyvias figūrėles.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "„Python“ įvadinių pamokų (tiek teksto, tiek blokų) kolekcija naudojant interaktyvias figūrėles.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Įtrauktį skatinantis programavimas',
-            'author'=>'Programavimo savaitės komanda',
-            'text'=>'<p>
+            'title' => 'Įtrauktį skatinantis programavimas',
+            'author' => 'Programavimo savaitės komanda',
+            'text' => '<p>
                    Sudominti klasę programavimu gali būti nelengva, ypač jei yra tam tikrą negalią turinčių mokinių. Tačiau svarbu nepamiršti, kad programuoti gali išmokti visi, nepriklausomai nuo jų gebėjimų. Specialiųjų poreikių turintiems vaikams gali būti labai naudinga mokytis programavimo, nes jis ugdo svarbius gyvenimo įgūdžius, tokius kaip problemų sprendimas, organizuotumas ir savarankiškumas. Bendradarbiaujant ir dirbant komandoje programavimas taip pat gali pagerinti bendravimo ir socialinius įgūdžius – įgūdžius, kurie kelia sunkumų daugeliui neįgalių vaikų. Svarbiausia, kad mokiniai smagiai mokosi kartu su savo bendraamžiais.
                    </p><p>
                    Šiame vaizdo įraše Programavimo savaitės komanda parodys jums keletą praktinių, lengvų ir linksmų programavimo veiklų, kurios yra specialiai pritaikytos regos negalią, Dauno sindromą ar autizmo spektro sutrikimų turintiems mokiniams ir kurias mokytojai gali lengvai pristatyti savo klasei.
                 </p>',
-            'activities'=>[
-                '1'=>'Kiaušinių dėklas: be kompiuterio',
-                '2'=>'Labai išmani pelė',
-                '3'=>'Žvaigždes kurianti žvaigždė',
+            'activities' => [
+                '1' => 'Kiaušinių dėklas: be kompiuterio',
+                '2' => 'Labai išmani pelė',
+                '3' => 'Žvaigždes kurianti žvaigždė',
             ]
         ],
 
@@ -298,7 +298,8 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
                 "2" => "„Mano širdis nėra akmeninė“ pagrindinės mokyklos mokiniams",
                 "3" => "„Nuotaikos programavimas“ vidurinės mokyklos mokiniams",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "„SOS Vanduo“",
             "author" => "Francisco Delgado Cecilia",
@@ -334,10 +335,41 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
                 "2" => "Kūrybinio programavimo laboratorija 4–6 metų vaikams",
                 "3" => "„Touch Canvas“: interaktyvių paveikslų kūrimas 4–6 metų vaikams (pažengusiųjų lygis)"
             ]
+        ],
+        "19" => [
+
+            "title" => "Kūrybiška Scratch laboratorija",
+            "author" => "Krzysztof Jaworski",
+            "text" => [
+
+                "Mokymasis programuoti šiandien neapsiriboja vien pasirengimu programuotojo karjerai ir peržengia informatikos mokslo ribas. Į šią sritį reikėtų žiūrėti plačiai, apimant tarpdisciplininę perspektyvą ir naudojant programavimą kaip mokymosi ir žaidimo priemonę, kad būtų skatinamas būsimų įgūdžių ugdymas.",
+
+                "Vaikams ir jaunimui labai svarbu suprasti, kaip saugiai, atsakingai ir veiksmingai naudotis skaitmeninėmis priemonėmis. Jie turi suprasti, kaip šios priemonės veikia, ir žinoti, kaip jomis naudotis programuojant. Be to, ši veikla turėtų apimti bendradarbiavimą su bendraminčiais.",
+
+                "Mokymosi segmentas <strong>Creative Scratch Laboratory</strong> padidins mokinių kūrybiškumą, paskatins jų smalsumą ir pavers programavimą maloniu bei smagiu.  Jį sudaro trys pamokų planai, skirti skirtingus kodavimo įgūdžius turintiems mokiniams. Pradedantiesiems skirtoje pamokoje mokiniai sukuria personažą popieriuje, importuoja jį į Scratch ir animuoja naudodami pasirinktus blokus. Vidutinio lygio pamokoje mokiniai mokomi naudotis priemone \"Video Sprites\" (spruklių vaizdo įrašai), kurti grafikos darbus naudojant popierių ir flomasterius, kurti Scratch mozaiką su \"Video Sprites\", žymomis ir meno kūriniais. Pažengusiųjų pamokoje mokiniai tyrinėja Scratch veido atpažinimo funkciją, eksperimentuoja su spruklio grafika ir kuria mini teatrą su Scratch svetainėje sukurtais dialogais.",
+
+            ],
+            "activities" => [
+                "1" => "Spruklio piešimas ir animavimas: pradedantiesiems",
+                "2" => "Žymos: vidutinio lygio mokiniams",
+                "3" => "Lėlių teatras: pažengusiesiems mokiniams",
+            ]
+        ],
+        "21" => [
+            "title" => "Kūryba ir programavimas",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Atviros dirbtuvės – tai gyvybės kupini centrai, kuriuose klesti kūrybiškumas ir įgyvendinami praktiniai projektai. Renkantis įrangą, daugiausia dėmesio reikėtų skirti tokioms priemonėms kaip \"Calliope mini\", \"Microbit\" ar \"Makey Makey\", nes jos suteikia daugybę galimybių įvairaus amžiaus ir gebėjimų mokiniams. Šioms plokštėms tinka blokais pagrįstos programavimo kalbos, todėl mažesni vaikai gali įgyvendinti savo kūrybinius projektus, o vyresni mokiniai imtis sudėtingesnių projektų.",
+                "Susipažinę su <strong>learning bit \"Kūryba ir programavimas\"</strong> pasinerkite į kūrybą ir ugdykite tarpdalykinius įgūdžius, tokius kaip komandinis darbas ir socialinis bendradarbiavimas, kartu skatindami mokinių inovacijas ir entuziazmą!",
+                "Makey Makey – tai elektroninė plokštė, kuri kasdienius objektus paverčia kompiuterio klavišais . Prijungus objektus prie plokštės krokodiliniais gnybtais, kurie vėliau USB laidu(arba \"iPad\" su kameros adapteriu) sujungiami su kompiuteriu, \"Makey Makey\" gali atidaryti ir uždaryti elektros grandines tarp žmogaus ir objekto . Taip siunčiami elektriniai signalai, kuriuos kompiuteris priima kaip klaviatūros arba pelės paspaudimus . Tai leidžia mokiniams kurti, pavyzdžiui, muzikos instrumentus, kompiuterinius žaidimus ar interaktyvius plakatus – galimybėms nėra ribų! \"Makey Makey\" ir šiame learning bit pristatomus projektus galima naudoti tiek pradinėse, tiek vidurinėse mokyklose mokant įgūdžių tokiose srityse kaip medijų ugdymas, informatika, gamtos mokslai, fizika, muzika ar sportas, taip pat ugdant tarpdalykinius įgūdžius, tokius kaip komandinis darbas ir socialiniai įgūdžiai . ",
+                "Ženkite į jaudinantį \"Makey Makey\" pasaulį ir išlaisvinkite klasėje beribį kūrybiškumą!"
+            ],
+            "activities" => [
+                "1" => "\"Makey Makey\" ir muzika pradedantiesiems . ",
+                "2" => "Kalbantys paveikslėliai vidutinio lygio mokiniams . ",
+                "3" => "Interaktyvaus plakato kūrimas pažengusiems mokiniams . ",
+            ]
         ]
-
-
-
 
 
     ],
@@ -346,7 +378,7 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
     'choose_lessons' => 'Pasirinkite vieną iš toliau pateiktų pamokos planų ir įgyvendinkite jį su savo mokiniais.',
     'footer' => [
         'title' => 'Nepamirškite įtraukti savo renginio į Programavimo savaitės žemėlapį!',
-        'text' => '<p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href="/events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
+        'text' => '<p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href=" / events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
 
 <p>Jei norite užmegzti ryšį su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės „Facebook“ grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo šalyje ar už jos ribų, prisijunkite prie <a href="/codeweek4all">„CodeWeek4All“ iššūkio</a>.</p>'
     ]

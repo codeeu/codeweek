@@ -338,8 +338,41 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
                 "2" => "Laboratoire de code créatif: Élèves de maternelle âgés de 4 à 6 ans.",
                 "3" => "Toile tactile: Créer des peintures interactives: Élèves de maternelle âgés de 4 à 6 ans; avancé."
             ]
-        ]
+        ],
+        "19" => [
 
+            "title" => "Laboratoire Scratch créatif",
+            "author" => "par Krzysztof Jaworski",
+            "text" => [
+
+                "De nos jours, l’apprentissage de la programmation va au-delà de la préparation à une carrière de programmeur et dépasse les frontières de l’informatique. Il faut l’envisager d’une manière globale, en adoptant une perspective interdisciplinaire et en utilisant la programmation comme un outil d’apprentissage et de jeu pour favoriser le développement de compétences futures.",
+
+                "Il est crucial que les enfants et les jeunes apprennent à utiliser les outils numériques de manière sûre, responsable et efficace. Ils doivent comprendre le fonctionnement de ces outils et savoir comment communiquer avec eux par le biais de la programmation. En outre, cette expérience devrait susciter des interactions avec leurs camarades.",
+
+                "Le module d’apprentissage <strong>Creative Scratch Laboratory</strong> améliorera la créativité des élèves, stimulera leur curiosité et rendra le code agréable et amusant.  Il se compose de trois plans de cours destinés à des élèves présentant différents niveaux de compétence en matière de code. Dans le plan de cours de niveau débutant, les élèves créent un personnage sur papier, l’importent dans Scratch et l’animent à l’aide des blocs sélectionnés. Dans le plan de cours de niveau intermédiaire, les élèves apprennent à utiliser l’outil Video Sprites, à créer des graphiques avec du papier et des feutres, et à produire une mosaïque Scratch avec des sprites vidéo, des tampons et des illustrations. Dans le plan de cours de niveau avancé, les élèves explorent la fonctionnalité de reconnaissance faciale dans Scratch, expérimentent la manipulation graphique des sprites et créent un mini-théâtre avec des dialogues générés dans Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Dessiner et animer un sprite: pour les débutants",
+                "2" => "Tampons: pour les élèves de niveau intermédiaire",
+                "3" => "Théâtre de marionnettes: pour les élèves de niveau avancé",
+            ]
+        ],
+        "21" => [
+            "title" => "Création et codage",
+            "author" => "par Ulla Hauptmann",
+            "text" => [
+                "Les makerspaces sont des lieux dynamiques où la créativité s’épanouit et où les projets pratiques prennent vie. Lors de la sélection de l’équipement d’un makerspace, l’accent est mis sur des outils tels que Calliope mini, Microbit ou Makey Makey, car ils offrent un large éventail de possibilités adaptées à des élèves d’âges et de niveaux de compétences différents. Ces cartes permettent aux jeunes enfants de développer des projets créatifs grâce à leurs langages de programmation basés sur des blocs. Pour les élèves plus âgés, des projets plus complexes peuvent être réalisés à l’aide de ces cartes",
+                "Explorez le <strong>Learning Bit \"Création et codage\"</strong> pour plonger dans le monde des makerspaces et favoriser les compétences interdisciplinaires telles que le travail d’équipe et la collaboration sociale tout en suscitant l’innovation et l’enthousiasme chez vos élèves !",
+                "Makey Makey est un circuit imprimé qui transforme les objets du quotidien en touches d’ordinateur. En connectant des objets à la carte à l’aide de pinces crocodiles, qui sont ensuite reliées à l’ordinateur par un câble USB (ou à un iPad avec un adaptateur pour appareil photo), Makey Makey peut ouvrir et fermer des circuits électriques entre une personne et un objet. Il envoie ainsi des signaux électriques que l’ordinateur reçoit sous la forme de frappes de clavier ou de clics de souris. Cela permet aux élèves de développer des inventions créatives telles que des instruments de musique, des jeux informatiques ou des posters interactifs – les possibilités sont infinies! Makey Makey et les projets présentés dans ce Learning Bit peuvent être utilisés dans les écoles primaires et secondaires pour enseigner des compétences dans des domaines tels que l’éducation aux médias, l’informatique, les sciences, la physique, la musique, le sport et des compétences interdisciplinaires telles que le travail d’équipe et les aptitudes sociales.",
+                "Entrez dans le monde passionnant de Makey Makey et libérez une créativité sans limite dans votre classe !"
+            ],
+            "activities" => [
+                "1" => "Makey Makey rencontre la musique: pour les débutants.",
+                "2" => "Images parlantes: pour les élèves de niveau intermédiaire.",
+                "3" => "Créer un poster interactif: pour les élèves de niveau avancé.",
+            ]
+        ]
 
 
     ],

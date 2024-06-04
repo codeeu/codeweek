@@ -334,7 +334,42 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
                 "2" => "Creative Code Lab: 4-6 jaar oude kleuterschoolleerlingen",
                 "3" => "Touch Canvas: Interactieve schilderijen maken: 4-6 jaar oude kleuters; gevorderden."
             ]
+        ],
+        "19" => [
+
+            "title" => "Creative Scratch Laboratory",
+            "author" => "door Krzysztof Jaworski",
+            "text" => [
+
+                "Leren programmeren gaat tegenwoordig verder dan het voorbereiden op een carrière als programmeur en stopt niet bij de grenzen van de informatica. Het vraagt om een brede benadering, waarbij programmering vanuit een interdisciplinaire invalshoek wordt ingezet als een hulpmiddel voor leren en spelen om de ontwikkeling van toekomstige vaardigheden te stimuleren.",
+
+                "Voor kinderen en jongeren is het van cruciaal belang om te begrijpen hoe ze veilig, verantwoord en effectief gebruik kunnen maken van digitale hulpmiddelen. Ze moeten begrijpen hoe deze tools werken en weten hoe ze ermee moeten communiceren via programmering. Daarnaast is samenwerken met klasgenoten ook een belangrijk aspect van deze ervaring.",
+
+                "De leerbit <strong>Creative Scratch Laboratory</strong> vergroot de creativiteit van leerlingen, prikkelt hun nieuwsgierigheid en maakt coderen leuk.  Deze bestaat uit drie lesplannen voor leerlingen met verschillende coderingsvaardigheden. In het lesplan voor beginners creëren de leerlingen een personage op papier, importeren ze het in Scratch en animeren ze het met geselecteerde blokken. In het lesplan voor een gemiddeld niveau leren de leerlingen de tool Video Sprites, grafisch knutselen met papier en stiften en het maken van een Scratch-mozaïek met Video Sprites, stempels en illustraties. In het lesplan voor gevorderden verkennen leerlingen de gezichtsherkenningsfunctie in Scratch, experimenteren ze met het bewerken van sprite-afbeeldingen en maken ze een minitheater met dialogen gegenereerd in Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Sprite tekenen en animeren: voor beginners",
+                "2" => "Stempels: voor een gemiddeld niveau",
+                "3" => "Poppentheater: voor gevorderden",
+            ]
+        ],
+        "21" => [
+            "title" => "Maken en coderen",
+            "author" => "door Ulla Hauptmann",
+            "text" => [
+                "Makerspaces zijn levendige hubs waar creativiteit bloeit en hands-on projecten tot leven komen. Bij het selecteren van apparatuur voor een Makerspace ligt de focus op tools zoals Calliope mini, Microbit of Makey Makey, omdat deze een breed scala aan mogelijkheden bieden die geschikt zijn voor leerlingen van verschillende leeftijden en vaardigheidsniveaus. Deze printplaten ondersteunen de ontwikkeling van creatieve projecten voor jongere kinderen dankzij de blokgebaseerde programmeertalen die beschikbaar zijn voor deze printplaten. Voor oudere leerlingen kunnen complexere projecten worden gegenereerd met deze borden.",
+                "Verken de <strong>Learning Bit Maken en coderen</strong> om een duik te nemen in de wereld van Makerspaces en interdisciplinaire vaardigheden zoals teamwork en sociale samenwerking te bevorderen, terwijl je innovatie en enthousiasme bij je leerlingen stimuleert!",
+                "Makey Makey is een printplaat dat alledaagse voorwerpen omzet in computertoetsen. Door voorwerpen met krokodillenklemmen op de printplaat aan te sluiten, die vervolgens via een USB-kabel (of een iPad met camera-adapter) met de computer worden verbonden, kan Makey Makey elektrische circuits tussen een persoon en een voorwerp openen en sluiten. Die stuurt elektrische signalen die de computer ontvangt als toetsenbordaanslagen of muisklikken. Hierdoor kunnen leerlingen creatieve uitvindingen ontwikkelen zoals muziekinstrumenten, computerspelletjes of interactieve posters – de mogelijkheden zijn eindeloos! Makey Makey en de projecten die in deze Learning Bit gepresenteerd worden, kunnen zowel in het basisonderwijs als in het voortgezet onderwijs gebruikt worden om vaardigheden aan te leren op het gebied van media-educatie, informatica, wetenschap, natuurkunde, muziek, sport en interdisciplinaire vaardigheden zoals teamwork en sociale vaardigheden.",
+                "Stap in de spannende wereld van Makey Makey en ontgrendel grenzeloze creativiteit in je klas!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey ontmoet muziek: voor beginners.",
+                "2" => "Sprekende afbeeldingen: voor gevorderde leerlingen.",
+                "3" => "Maak een interactieve poster: voor gevorderde leerlingen.",
+            ]
         ]
+
 
 
     ],
