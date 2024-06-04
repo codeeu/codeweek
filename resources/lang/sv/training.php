@@ -348,7 +348,42 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 "2" => "Kreativt kodlab: 4-6 år gamla förskoleelever",
                 "3" => "Touch Canvas: Skapa interaktiva målningar: 4-6 år gamla förskoleelever; avancerad."
             ]
+        ],
+        "21" => [
+            "title" => "Tillverkning och kodning",
+            "author" => "av Ulla Hauptmann",
+            "text" => [
+                "Makerspaces är levande nav där kreativiteten frodas och praktiska projekt kommer till liv. När man väljer utrustning för ett makerspace ligger fokus på verktyg som Calliope mini, Microbit eller Makey Makey, eftersom de erbjuder ett brett utbud av möjligheter som passar elever i olika åldrar och på olika nivåer. Dessa kort stöder utvecklingen av kreativa projekt för yngre barn tack vare deras blockbaserade programmeringsspråk finns tillgängliga för dessa kort. För äldre elever kan mer komplexa projekt skapas med hjälp av dessa kort.",
+                "Utforska <strong>Learning Bit Tillverkning och kodning</strong> för att dyka in i makerspace-världen och främja tvärvetenskapliga färdigheter som lagarbete och socialt samarbete samtidigt som du väcker innovation och entusiasm hos dina elever!",
+                "Makey Makey är ett kretskort som omvandlar vardagsföremål till datorknappar. Genom att ansluta föremål till kortet med krokodilklämmor, som sedan kopplas till datorn via USB-kabel (eller en iPad med en kameraadapter), kan Makey Makey öppna och stänga elektriska kretsar mellan en person och ett föremål. Detta sänder elektriska signaler som datorn tar emot som tangentbordstryckningar eller musklick. Detta gör det möjligt för eleverna att utveckla kreativa uppfinningar som musikinstrument, dataspel eller interaktiva affischer - möjligheterna är oändliga! Makey Makey och de projekt som presenteras i denna Learning Bit kan användas i både grundskolan och gymnasiet för att lära ut färdigheter inom områden som medieutbildning, datavetenskap, naturvetenskap, fysik, musik, sport och tvärvetenskapliga färdigheter som lagarbete och sociala färdigheter.",
+                "Kliv in i Makey Makeys spännande värld och släpp loss den gränslösa kreativiteten i ditt klassrum!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey möter musik: för nybörjare.",
+                "2" => "Talande bilder: för elever på mellannivå.",
+                "3" => "Skapa en interaktiv affisch: för avancerade elever.",
+            ]
         ]
+        ,
+        "19" => [
+
+            "title" => "Kreativt Scratch-laboratorium",
+            "author" => "av Krzysztof Jaworski",
+            "text" => [
+
+                "Att lära sig programmering i dag är mer än att bara förbereda sig för en programmerarkarriär, och det går längre än datavetenskapens gränser. Man bör närma sig det på ett brett sätt, lägga sig till med ett ämnesöverskridande perspektiv och använda programmering som ett verktyg för undervisning och lek, så att det blir lättare att utveckla framtida kompetens.",
+
+                "För barn och unga är det avgörande att de förstår hur de använder digitala verktyg säkert, ansvarsfullt och effektivt. De behöver greppa hur de här verktygen fungerar och veta hur de kommunicerar med dem genom programmering. Dessutom bör den upplevelsen innefatta att de samarbetar med sina jämnåriga.",
+
+                "Learning Bit (En nypa lärdom) <strong>Creative Scratch Laboratory</strong> kommer att främja elevernas kreativitet, öka deras nyfikenhet och göra kodning till något underhållande och kul.  Den består av tre lektionsplaner för elever med varierande kodningskunskaper. I lektionsplanen för nybörjare skapar eleverna en figur på papper, importerar den i Scratch och animerar den med hjälp av valda block. I lektionsplanen på medelnivå får eleverna lära sig verktyget Video Sprites, grafiskt hantverk med papper och tuschpennor samt att ta fram en Scratch-mosaik med videosprajtar, stämplar och konstverk. I den avancerade lektionsplanen utforskar eleverna ansiktsigenkänningsfunktionen i Scratch, experimenterar med manipulering av sprajtgrafik och skapar en miniteater med dialoger som görs i Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Rita och animera sprajt: för nybörjare",
+                "2" => "Stämplar: för elever på medelnivå",
+                "3" => "Dockteater: för elever på avancerad nivå",
+            ]
+        ],
 
 
     ],

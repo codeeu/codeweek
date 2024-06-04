@@ -334,7 +334,42 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 "2" => "Yaratıcı Kod Laboratuvarı: 4-6 yaş anaokulu öğrencileri",
                 "3" => "Dokunmatik Tuval: İnteraktif tablolar oluşturma: 4-6 yaş anaokulu öğrencileri; ileri seviye."
             ]
+        ],
+        "19" => [
+
+            "title" => "Yaratıcı Scratch Laboratuvarı",
+            "author" => "Hazırlayan: Krzysztof Jaworski",
+            "text" => [
+
+                "Günümüzde programlamayı öğrenmek, programcılık kariyerine hazırlanmanın ötesine geçerek bilgisayar biliminin sınırlarını aşan bir hâl almış durumda. Programlama, disiplinler arası bir yaklaşımı benimseyerek ve bunu ilerideki becerilerin gelişimini teşvik edecek bir öğrenme ve oyun aracı olarak kullanarak kapsamlı bir biçimde ele alınmalıdır.",
+
+                "Çocukların ve gençlerin, dijital araçları nasıl güvenli, sorumlu ve verimli bir şekilde kullanabileceklerini anlamaları çok önemlidir. Bu araçların nasıl çalıştığını ve programlama yoluyla bu araçlarla nasıl iletişim kurulacağın kavramaları gerekmektedir. Ayrıca bu deneyim, yaşıtlarıyla iş birliğine dayalı etkileşimlerde bulunmalarını da sağlamalıdır.",
+
+                "Bu Öğrenim Bilgisi, <strong>Creative Scratch Laboratory</strong> öğrencilerin yaratıcılığını artırıp merakını cezbedecek ve kodlamayı keyifli ve eğlenceli bir hâle getirecektir.  Farklı kodlama becerilerine sahip öğrenciler için üç ayrı ders planından oluşmaktadır. Başlangıç seviyesindeki ders planında öğrenciler, kâğıt üzerinde bir karakter oluşturup bunu Scratch’e aktaracak ve seçili blokları kullanarak karakteri hareketli hâle getirecektir. Orta seviyedeki ders planında öğrenciler, Video Sprites aracını kullanmayı, kâğıt ve keçeli kalem kullanarak grafik hazırlamayı ve Video Sprites, damga ve çizim yoluyla Scratch mozaiği oluşturmayı öğrenecektir. İleri seviyedeki ders planında öğrenciler, Scratch içerisindeki yüz tanıma işlevini inceleyip kukla grafikleri üzerinde değişiklikler yapacak ve Scratch içerisinde oluşturdukları diyalogları kullanarak mini bir tiyatro oyunu hazırlayacaktır.",
+
+            ],
+            "activities" => [
+                "1" => "Spite çizme ve hareketli hâle getirme: başlangıç seviyesindeki öğrenciler için",
+                "2" => "Damga: orta seviyedeki öğrenciler için",
+                "3" => "Kukla tiyatrosu: ileri seviye öğrenciler için",
+            ]
+        ],
+        "21" => [
+            "title" => "Yapım ve kodlama",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace'ler, yaratıcılığın geliştiği ve uygulamalı projelerin hayata geçirildiği canlı merkezlerdir. Bir makerspace için ekipman seçerken Calliope mini, Microbit veya Makey Makey gibi araçlara odaklanılmalıdır, çünkü bu araçlar farklı yaşlardaki ve beceri seviyelerindeki öğrencilere uygun pek çok olanak sunar. Bu devre kartları, blok tabanlı programlama dilleri sayesinde küçük çocuklar için yaratıcı projelerin geliştirilmesini destekler. Daha büyük öğrenciler için ise bu devre kartları kullanılarak daha karmaşık projeler oluşturulabilir.",
+                "<strong>Yapım ve Kodlama Learning Bit</strong>’ini keşfederek makerspace dünyasına dalın ve öğrencilerinizi yeniliğe teşvik edip harekete geçirirken bir yandan da takım çalışması ve sosyal iş birliği gibi disiplinler arası becerileri geliştirin!",
+                "Makey Makey, gündelik hayattaki nesneleri bilgisayar tuşlarına dönüştüren bir devre kartıdır. Nesneleri krokodil penslerle devre kartına bağlayıp ardından USB kablosuyla (veya kamera adaptörlü bir iPad ile) bilgisayara bağlanan Makey Makey, kişi ile nesne arasındaki elektrik devrelerini açıp kapatabilir. Bu işlem, bilgisayarın klavye vuruşu veya fare tıklaması olarak algıladığı elektrik sinyalleri gönderir. Bu sayede öğrenciler müzik aletli, bilgisayar oyunu veya interaktif poster gibi yaratıcı buluşlar geliştirebilirler; olanaklar sonsuzdur! Makey Makey ve bu Learning Bit içerisinde sunulan projeler hem ilkokul hem de ortaokullarda medya eğitimi, bilgisayar bilimi, fen, fizik, müzik, sporun yanı sıra takım çalışması ve sosyal beceriler gibi disiplinler arası becerileri öğretmek için de kullanılabilir.",
+                "Makey Makey'in heyecan verici dünyasına adım atın ve sınıfınızda sınırsız yaratıcılığın kilidini açın!",
+            ],
+            "activities" => [
+                "1" => "Makey Makey müzikle buluşuyor: yeni başlayanlar için.",
+                "2" => "Konuşan resimler: orta düzey öğrenciler için.",
+                "3" => "Etkileşimli poster oluşturma: ileri düzey öğrenciler için.",
+            ]
         ]
+
 
 
     ],

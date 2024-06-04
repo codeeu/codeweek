@@ -335,6 +335,40 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
 
             ]
         ],
+        "19" => [
+
+            "title" => "Kreativní laboratoř Scratch",
+            "author" => "Krzysztof Jaworski",
+            "text" => [
+
+                "Výuka programování v současnosti přesahuje rámec přípravy na programátorskou kariéru a překračuje hranice počítačové vědy. Mělo by se k ní přistupovat široce a měla by zahrnovat mezioborovou perspektivu a využívat programování jako nástroj pro učení a hru, který podporuje rozvoj budoucích dovedností.",
+
+                "Pro děti a mladé lidi je zásadní porozumět tomu, jak využívat digitální nástroje bezpečně, zodpovědně a efektivně. Potřebují chápat, jak tyto nástroje fungují, a vědět, jak s nimi komunikovat prostřednictvím programování. Tyto zkušenosti by také měly zahrnovat spolupráci s vrstevníky.",
+
+                "Školicí materiál <strong>Creative Scratch Laboratory</strong> zlepší kreativitu studentů, podpoří jejich zvídavost a z kódování učiní příjemnou zábavu.  Sestává ze tří výukových plánů pro studenty s různými programovacími dovednostmi. V rámci výukového plánu pro začátečníky studenti vytvoří postavu na papíře, importují ji do programu Scratch a animují ji pomocí vybraných bloků. V rámci výukového plánu střední úrovně se studenti naučí používat nástroj pro video postavy, graficky tvořit pomocí papíru a fixů a vytvořit mozaiku ve Scratchi s video postavami, otisky a obrázky. V rámci výukového plánu pro pokročilé studenti prozkoumají funkci rozpoznávání obličeje ve Scratchi, vyzkoušejí si manipulaci s grafikou postav a vytvoří mini divadlo s dialogy generovanými ve Scratchi.",
+
+            ],
+            "activities" => [
+                "1" => "Kreslení a animace postavy: pro začátečníky",
+                "2" => "Otisky: pro středně pokročilé studenty",
+                "3" => "Loutkové divadlo: pro pokročilé studenty",
+            ]
+        ],
+        "21" => [
+            "title" => "Tvorba a kódování",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspaces jsou živá centra, ve kterých se rozvíjí kreativita a vznikají praktické projekty. Při výběru vybavení pro makerspace se zaměřujeme na nástroje, jako jsou stavebnice Calliope mini, Microbit nebo Makey Makey, protože nabízejí širokou škálu možností vhodných pro žáky různého věku i úrovně dovedností. Tyto stavebnice podporují tvorbu kreativních projektů i mladšími dětmi, protože jsou pro ně k dispozici v programovacím jazyce založeném na blocích. Pro starší žáky pak lze pomocí těchto stavebnic vytvářet složitější projekty.",
+                "Prozkoumejte <strong>Learning Bit Tvorba a kódování</strong> , ponořte se do světa makerspaces a podpořte interdisciplinární dovednosti, jako je týmová práce a spolupráce. Zároveň tak podněcujte k inovacím a podporujte nadšení svých studentů!",
+                "Makey Makey je obvodová deska, která přeměňuje předměty každodenní potřeby na počítačové klávesy. Připojením předmětů k desce pomocí krokosvorek, které se pak propojí s počítačem pomocí kabelu USB (nebo iPadu s adaptérem pro fotoaparát), může Makey Makey otevírat a zavírat elektrické obvody mezi člověkem a vybraným předmětem. Tím vysílá elektrické signály, které počítač přijímá jako úhozy na klávesnici nebo kliknutí myší. Žáci tak mohou rozvíjet své kreativní nápady, jako jsou hudební nástroje, počítačové hry nebo interaktivní plakáty – možností je nepočítaně! Makey Makey a projekty představené v tomto Learning Bitu lze využít na základních i středních školách k výuce dovedností v oblastech, jako je mediální výchova, informatika, věda, fyzika, hudba, sport a mezioborové dovednosti, jako je například týmová práce a sociální dovednosti.",
+                "Vstupte do vzrušujícího světa Makey Makey a nechte ve své třídě zazářit kreativitu!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey ve spojení s hudbou: pro začátečníky.",
+                "2" => "Mluvící obrázky: pro středně pokročilé studenty.",
+                "3" => "Tvorba interaktivního plakátu: pro pokročilé studenty.",
+            ]
+        ]
 
 
     ],

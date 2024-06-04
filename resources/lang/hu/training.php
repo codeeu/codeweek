@@ -298,11 +298,12 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 "2" => "Nincs kőből a szívem alsóbb évfolyamos középiskolás diákoknak",
                 "3" => "Programozz a megfelelő hangulatra felsőbb évfolyamos középiskolás diákoknak",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "Az SOS víz projekt",
-"author" => "készítette: Francisco Delgado Cecilia",
-"text" => [
+            "author" => "készítette: Francisco Delgado Cecilia",
+            "text" => [
 
                 "Az SOS víz projekt a vízszennyezés problémájának megoldására adott válasz. Az elmúlt években tett erőfeszítések ellenére a világon még mindig van 2 milliárd ember, akik nem jutnak biztonságos ivóvízhez. Ez azt jelenti, hogy a Világunk 2030 program 6. fenntartható fejlődési célja (SGD) szerint 2030-ra minden embernek hozzáférést kell biztosítani tiszta vízhez és az alapvető köztisztasághoz, még messze van a megvalósulástól. Ugyanez igaz a 14. fenntartható fejlődési célra is, amely a víz alatti életre vonatkozik, és célja az óceánok, tengerek és tengeri erőforrások megőrzése és fenntartható használata a fenntartható fejlődés érdekében.",
 
@@ -312,8 +313,8 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
 
                 "Ennek a tudásmorzsának a megvalósításához javasolt a három tevékenység kidolgozása az osztályban, hogy a teljes projekt befejezhető legyen, és egy tartalmasabb és motiválóbb tanulási folyamatot érjenek el. Azonban minden tevékenység külön is elvégezhető."
 
-],
-"activities" => [
+            ],
+            "activities" => [
                 "1" => "SOS víz projekt a Scratch platformon",
                 "2" => "SOS víz projekt gépi tanulással",
                 "3" => "SOS víz projekt robotika segítségével",
@@ -334,11 +335,40 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 "2" => "Kreatív kódlabor: 4–6 éves óvodások",
                 "3" => "Touch Canvas: Interaktív festmények létrehozása: 4–6 éves óvodások; haladó."
             ]
+        ],
+        "19" => [
+            "title" => "Kreatív Scratch labor",
+            "author" => "készítette: Krzysztof Jaworski",
+            "text" => [
+
+                "A programozás tanulása ma már több, mint a programozói karrierre való felkészülés, és túlmutat az informatika határain is. Széleskörű megközelítést igényel, amely során előtérbe kell helyezni az interdiszciplináris perspektívát, és a programozást a tanulás és a játék eszközének kell tekinteni, így segítve a jövőbeli készségek fejlesztését.",
+
+                "A gyermekek és fiatalok számára kulcsfontosságú, hogy megértsék, hogyan használhatják a digitális eszközöket biztonságosan, felelősségteljesen és hatékonyan. Meg kell érteniük, hogyan működnek ezek az eszközök, és tudniuk kell, hogyan tudnak velük programozással kommunikálni. Emellett az így szerzett tapasztalatoknak a társaikkal való együttműködést is tartalmaznia kell.",
+
+                "A Tudásmorzsa <strong>Creative Scratch Laboratory</strong> program növeli a diákok kreativitását, fokozza kíváncsiságukat, valamint élvezetessé és szórakoztatóvá teszi a kódolást.  Három óratervből áll, amelyek felölelik a különböző kódolási készségekkel rendelkező diákok skáláját. A kezdőknek szóló óraterv szerint a diákok papíron létrehoznak egy szereplőt, importálják azt a Scratch programba, és a kiválasztott blokkok segítségével megelevenítik. A középhaladó szintű óratervben a diákok megtanulják a \"videós szereplők\" (Video Sprites) eszköz használatát, grafika készítésére papíron filctollakkal, valamint Scratch-mozaik elkészítésére Video Sprites, bélyegek és alkotások segítségével. A haladó szintű óratervben a diákok felfedezik a Scratch arcfelismerő funkcióját, kísérleteznek a Sprite grafikák manipulálásával, és egy mini-színházat készítenek a Scratch programban létrehozott párbeszédekkel.",
+
+            ],
+            "activities" => [
+                "1" => "Figura megrajzolása és életre keltése: kezdőknek",
+                "2" => "Bélyegek: középhaladó szintű diákoknak",
+                "3" => "Bábszínház: haladó szintű diákoknak",
+            ]
+        ],
+        "21" => [
+            "title" => "Készítés és kódolás",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "A makerspace terek olyan vibráló központok, ahol a kreativitás virágzik és a gyakorlatias projektek életre kelnek. A makerspace felszerelésének kiválasztásakor a hangsúly az olyan eszközökön van, mint a Calliope mini, a Microbit vagy a Makey Makey, mivel ezek a különböző korú és képességű tanulók számára lehetőségek széles tárházát kínálják. Ezek a kártyák támogatják a kreatív projektek kidolgozását kisebb gyermekek számára, köszönhetően annak, hogy blokkalapú programozási nyelvek állnak rendelkezésre ezekhez a kártyákhoz. Az idősebb tanulók számára összetettebb projektek hozhatók létre az adott kártyákkal. ",
+                "Fedezze fel a <strong>Learning Bit Making és Coding</strong> lehetőségeket, hogy elmerüljön a makerspace terek világában, és támogassa az olyan interdiszciplináris készségeket, mint a csapatmunka és a szociális együttműködés, miközben innovációt és lelkesedést vált ki a tanulóiból! ",
+                "A Makey egy olyan áramköri kártya, amely mindennapi tárgyakat alakít át számítógépes billentyűzetekké. Azáltal, hogy a tárgyakat krokodilcsipeszekkel csatlakoztatja a kártyához, amely aztán USB-kábelen keresztül (vagy egy kameraadapterrel ellátott iPaddel) kapcsolódik a számítógéphez, a Makey Makey képes elektromos áramköröket nyitni és zárni személyek és tárgyak között. Ez elektromos jeleket küld, amelyeket a számítógép billentyűzetleütésként vagy egérkattintásként fogad. Ez lehetővé teszi a tanulók számára, hogy kreatív találmányokat, például hangszereket, számítógépes játékokat vagy interaktív plakátokat dolgozzanak ki – a lehetőségek tárháza végtelen! A Makey Makey és az ebben a learning bitben bemutatott projektek mind az általános, mind a középiskolákban felhasználhatók olyan területek készségeinek tanítására, mint a médiaoktatás, az informatika, a természettudományok, a fizika, a zene, a sport és az olyan interdiszciplináris készségek, mint a csapatmunka és a szociális készségek. ",
+                "Lépjen be a Makey Makey izgalmas világába, és szabadítsa fel a határtalan kreativitást az osztályteremben! "
+            ],
+            "activities" => [
+                "1" => "Makey Makey találkozik a zenével: kezdőknek.",
+                "2" => "Beszélő képek: középhaladó tanulóknak.",
+                "3" => "Interaktív poszter készítése: haladó tanulóknak.",
+            ]
         ]
-
-
-
-
 
 
     ],
@@ -346,10 +376,10 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
     'ready_to_share' => 'Készen áll arra, hogy megossza a tanultakat a diákjaival?',
     'choose_lessons' => 'Válasszon ki egyet az alábbi óravázlatok közül, és szervezzen tevékenységet a diákjaival.',
     'footer' => [
-    'title' => 'Ne felejtse el tevékenységét feltenni a programozási hét térképére!',
-    'text' => '<p>Könnyen szervezhet tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
+        'title' => 'Ne felejtse el tevékenységét feltenni a programozási hét térképére!',
+        'text' => '<p>Könnyen szervezhet tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
 
 <p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="/codeweek4all">Code Week 4 All kihíváshoz</a>.</p>'
-]
+    ]
 
 ];
