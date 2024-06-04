@@ -297,13 +297,14 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 "2" => "Nu am o inimă de piatră pentru elevii de gimnaziu",
                 "3" => "Programează-mi dispoziția pentru elevii de liceu",
             ]
-        ],"18" => [
+        ],
+        "18" => [
 
             "title" => "SOS Apă",
-"author" => "de Francisco Delgado Cecilia",
-"text" => [
+            "author" => "de Francisco Delgado Cecilia",
+            "text" => [
 
-    "SOS Apă este un răspuns la necesitatea de a aborda problema poluării apei. În ciuda eforturilor depuse în ultimii ani, există încă 2 miliarde de oameni în întreaga lume care nu au acces la apă potabilă. Acest lucru înseamnă că Obiectivul de Dezvoltare Durabilă (ODD) 6 din Agenda 2030, care prevede că toți oamenii ar trebui să aibă acces la apă și canalizare gestionate în condiții de siguranță până în 2030, este departe de a fi atins. Același lucru este valabil și pentru ODD 14, privind viața subacvatică, care vizează conservarea și utilizarea durabilă a oceanelor, mărilor și resurselor marine în scopul dezvoltării durabile.",
+                "SOS Apă este un răspuns la necesitatea de a aborda problema poluării apei. În ciuda eforturilor depuse în ultimii ani, există încă 2 miliarde de oameni în întreaga lume care nu au acces la apă potabilă. Acest lucru înseamnă că Obiectivul de Dezvoltare Durabilă (ODD) 6 din Agenda 2030, care prevede că toți oamenii ar trebui să aibă acces la apă și canalizare gestionate în condiții de siguranță până în 2030, este departe de a fi atins. Același lucru este valabil și pentru ODD 14, privind viața subacvatică, care vizează conservarea și utilizarea durabilă a oceanelor, mărilor și resurselor marine în scopul dezvoltării durabile.",
 
                 "Acest modul de învățare se concentrează pe problema relevantă și actuală a măsurării calității apei și pe noii poluanți care pun în pericol calitatea apei. Elevii vor avea ocazia să investigheze și să caute soluții la probleme reale legate de apă și de mediu, ceea ce le va permite să dezvolte abilități precum cercetarea, gândirea critică și rezolvarea de probleme.",
 
@@ -311,13 +312,32 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
 
                 "Pentru implementarea acestui modul de învățare se propune desfășurarea celor trei activități în clasă, pentru a finaliza întregul proiect și a obține un proces de învățare mai relevant și mai motivant. Cu toate acestea, fiecare activitate poate fi desfășurată în mod izolat."
 
-],
-"activities" => [
+            ],
+            "activities" => [
                 "1" => "SOS Apă cu Scratch",
                 "2" => "SOS Apă cu învățare automată",
                 "3" => "SOS Apă cu robotică",
             ]
 
+        ],
+        "19" => [
+
+            "title" => "Laboratorul creativ Scratch",
+            "author" => "de Krzysztof Jaworski",
+            "text" => [
+
+                "Învățarea programării în prezent depășește pregătirea pentru o carieră în programare și se prelungește dincolo de granițele informaticii. Aceasta ar trebui abordată în sens larg, adoptând o perspectivă interdisciplinară și utilizând programarea ca instrument de învățare și de joc, pentru a stimula dezvoltarea competențelor viitoare.",
+
+                "Pentru copii și tineri, este esențial să înțeleagă cum să utilizeze instrumentele digitale în siguranță, în mod responsabil și eficient. Aceștia trebuie să înțeleagă cum funcționează aceste instrumente și să știe cum să comunice cu ele prin programare. În plus, această experiență ar trebui să implice interacțiuni de colaborare cu colegii lor.",
+
+                "Modulul de învățare <strong>Creative Scratch Laboratory</strong> va spori creativitatea elevilor, le va stimula curiozitatea și va face programarea să fie plăcută și distractivă.  Acesta constă în trei planuri de lecție, pentru elevi cu diferite abilități de programare. În planul de lecție pentru începători, elevii creează un personaj pe hârtie, îl importă în Scratch și îl animează cu ajutorul blocurilor selectate. Planul de lecție de nivel intermediar îi învață pe elevi să utilizeze instrumentul Video Sprites, să creeze grafică cu ajutorul hârtiei și al markerelor și să realizeze un mozaic Scratch cu Video Sprites, ștampile și opere de artă. În planul de lecție de nivel avansat, elevii explorează funcția de recunoaștere facială din Scratch, experimentează manipularea graficii sprite și creează un miniteatru cu dialoguri generate în Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Desenăm și animăm un sprite: pentru începători",
+                "2" => "Ștampile: pentru elevi de nivel intermediar",
+                "3" => "Teatru de păpuși: pentru elevi de nivel avansat",
+            ]
         ],
         "20" => [
             "title" => "Codul prin artă",
@@ -333,8 +353,23 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 "2" => " Creative Code Lab: copii de grădiniță de 4-6 ani",
                 "3" => "Touch Canvas: Crearea de picturi interactive: copii de grădiniță de 4-6 ani,; avansat."
             ]
+        ],
+        "21" => [
+            "title" => "Realizare și codificare",
+            "author" => "de Ulla Hauptmann",
+            "text" => [
+                "Makerspaces sunt centre vibrante în care creativitatea prosperă și proiectele practice prind viață. Atunci când se selectează echipamente pentru un makerspace, accentul se pune pe instrumente precum Calliope mini, Microbit sau Makey Makey, deoarece acestea oferă o gamă largă de posibilități potrivite pentru elevi de diferite vârste și niveluri de abilități. Aceste plăci sprijină dezvoltarea de proiecte creative pentru copiii mai mici, datorită limbajelor de programare bazate pe blocuri disponibile pentru aceste plăci. Pentru elevii mai mari, pot fi generate proiecte mai complexe cu ajutorul acestor plăci.",
+                "Explorați <strong>Learning Bit Making and Coding</strong> pentru a pătrunde în lumea makerspaces și pentru a promova abilități interdisciplinare, cum ar fi munca în echipă și colaborarea socială, stimulând în același timp inovația și entuziasmul elevilor dumneavoastră!",
+                "Makey Makey este o placă de circuite care transformă obiectele de zi cu zi în taste de calculator. Prin conectarea obiectelor la placă cu ajutorul unor cleme crocodil, care apoi se leagă la computer prin cablu USB (sau la un iPad cu un adaptor pentru cameră), Makey Makey poate deschide și închide circuite electrice între o persoană și un obiect. Astfel, se trimit semnale electrice pe care computerul le primește sub formă de apăsări de tastatură sau clicuri de mouse. Acest lucru le permite elevilor să dezvolte invenții creative, cum ar fi instrumente muzicale, jocuri pe calculator sau postere interactive – posibilitățile sunt infinite! Makey Makey și proiectele prezentate în acest Learning Bit pot fi utilizate atât în școlile primare, cât și în cele secundare, pentru a preda competențe în domenii precum educația media, informatică, științe, fizică, muzică, sport și competențe interdisciplinare, cum ar fi munca în echipă și abilitățile sociale.",
+                "Pășiți în lumea incitantă a Makey Makey și deblocați creativitatea fără limite în clasa dvs.!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey întâlnește muzica: pentru începători.",
+                "2" => "Imagini vorbitoare: pentru elevii de nivel mediu.",
+                "3" => "Creați un poster interactiv: pentru elevii avansați.",
+            ]
         ]
-
+        ,
 
 
 

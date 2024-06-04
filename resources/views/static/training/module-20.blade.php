@@ -54,7 +54,7 @@
                 </p>
 
                 @php
-                    $missingLocales = ['AL', 'DA', 'ET', 'FI', 'ME', 'MT', 'PL'];
+                    $missingLocales = ['DA', 'FI', 'ME', 'MT', 'PL'];
                     $currentLocale = app()->getLocale();
                 @endphp
 

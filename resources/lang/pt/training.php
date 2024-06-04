@@ -334,8 +334,41 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
                 "2" => "Laboratório de programação criativa: alunos do jardim de infância com 4-6 anos de idade",
                 "3" => "Tela tátil: Criar pinturas interativas: Alunos do jardim de infância de 4-6 anos; avançado"
             ]
-        ]
+        ],
+        "19" => [
 
+            "title" => "Laboratório Criativo do Scratch",
+            "author" => "por Krzysztof Jaworski",
+            "text" => [
+
+                "Atualmente, a aprendizagem da programação vai além da preparação para uma carreira de programação e ultrapassa as fronteiras da ciência informática. Deve ser abordada de forma abrangente, adotando uma perspetiva interdisciplinar e utilizando a programação como uma ferramenta de aprendizagem e de diversão para promover o desenvolvimento de competências futuras.",
+
+                "É fundamental que as crianças e os jovens compreendam como utilizar as ferramentas digitais de forma segura, responsável e eficaz. Devem compreender o funcionamento destas ferramentas e saber como comunicar com as mesmas através da programação. Além disso, esta experiência deve incluir interações colaborativas com os seus pares.",
+
+                "O Bit de Aprendizagem <strong>Creative Scratch Laboratory</strong> irá estimular a criatividade dos alunos, aumentar a sua curiosidade e tornar a programação agradável e divertida.  Inclui três planos de aula para alunos com diferentes competências de programação. No plano de aula para principiantes, os alunos criam uma personagem em papel, importam-na para o Scratch e animam-na através de blocos selecionados. O plano de aula de nível intermédio ensina os alunos a utilizar a ferramenta Atores de Vídeo, a criar gráficos com papel e marcadores, e a produzir um mosaico Scratch com Atores de Vídeo, carimbos e obras de arte. No plano de aula avançado, os alunos exploram a função de reconhecimento facial no Scratch, experimentam a manipulação gráfica de atores e criam uma pequena peça de teatro com diálogos gerados no Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Desenhar e animar atores (sprites): para principiantes",
+                "2" => "Carimbos: para alunos de nível intermédio",
+                "3" => "Teatro de marionetas: para alunos de nível avançado",
+            ]
+        ],
+        "21" => [
+            "title" => "Realização e programação",
+            "author" => "por Ulla Hauptmann",
+            "text" => [
+                "Os espaços Makers são centros dinâmicos onde a criatividade prospera e os projetos práticos ganham vida. Ao selecionar o equipamento para um makerspace, a atenção centra-se em ferramentas como o Calliope mini, o Microbit ou o Makey Makey, uma vez que oferecem uma vasta gama de possibilidades adequadas a alunos de diferentes idades e níveis de competências. Estas placas apoiam o desenvolvimento de projetos criativos para crianças mais novas, graças às linguagens de programação baseadas em blocos que estão disponíveis para estas placas. Para os alunos mais velhos, é possível criar projetos mais complexos utilizando estas placas",
+                "Explore o <strong>Bit de Programação Criar e Programar</strong> para mergulhar no mundo dos makerspaces e fomentar competências interdisciplinares como o trabalho em equipa e a colaboração social, ao mesmo tempo que desperta a inovação e o entusiasmo nos seus alunos!",
+                "O Makey Makey é uma placa de circuitos que converte objetos do quotidiano em teclas de computador. Ao ligar objetos à placa com clipes de crocodilo, que depois se ligam ao computador através de um cabo USB (ou a um iPad com um adaptador de câmara), o Makey Makey pode abrir e fechar circuitos elétricos entre uma pessoa e um objeto. Esta ação envia sinais elétricos que o computador recebe como toques no teclado ou cliques no rato. Isto permite que os alunos desenvolvam invenções criativas, como instrumentos musicais, jogos de computador ou cartazes interativos – as possibilidades são infinitas! O Makey Makey e os projetos apresentados neste Bit de Aprendizagem podem ser utilizados tanto no ensino básico como no secundário para ensinar competências em áreas como a educação para os meios de comunicação social, a informática, a ciência, a física, a música, o desporto, bem como competências interdisciplinares como o trabalho em equipa e as competências sociais.",
+                "Entre no animado mundo do Makey Makey e liberte a criatividade sem limites na sua sala de aula!"
+            ],
+            "activities" => [
+                "1" => "O Makey Makey encontra a música: para principiantes",
+                "2" => "Imagens falantes: para alunos de nível intermédio",
+                "3" => "Criar um cartaz interativo: para alunos de nível avançado",
+            ]
+        ]
 
 
     ],
@@ -344,7 +377,7 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
     'choose_lessons' => 'Selecione um dos planos de aula abaixo e organize uma atividade com seus alunos.',
     'footer' => [
         'title' => 'Não se esqueça de adicionar a sua atividade no mapa da Semana da Programação!',
-        'text' => '<p>Pode organizar facilmente uma aula na sua sala de aula, um dia aberto ou um evento na sua escola. Para isso, basta encontrar uma data e registar a sua atividade no <a href="/events">mapa da Semana da Programação</a>. Cada organizador de atividades receberá um certificado de participação em reconhecimento do seu esforço.</p>
+        'text' => '<p>Pode organizar facilmente uma aula na sua sala de aula, um dia aberto ou um evento na sua escola. Para isso, basta encontrar uma data e registar a sua atividade no <a href=" / events">mapa da Semana da Programação</a>. Cada organizador de atividades receberá um certificado de participação em reconhecimento do seu esforço.</p>
 
 <p>Se desejar fazer parte de um grupo internacional de professores entusiastas, adira ao <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupo de professores da Semana Europeia da Programação no Facebook</a>! Para ir mais longe e colaborar com outras escolas no seu país ou além-fronteiras, participe no <a href="/codeweek4all">desafio Code Week 4 All</a>.</p>'
     ]
