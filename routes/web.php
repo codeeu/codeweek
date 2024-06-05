@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,56 +12,17 @@
 |
 */
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Api;
-// use App\Http\Controllers\Auth;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\BadgesController;
-use App\Http\Controllers\CertificateController;
-use App\Http\Controllers\Codeweek4AllController;
-use App\Http\Controllers\CodingAtHomeController;
-use App\Http\Controllers\CommunityController;
-use App\Http\Controllers\EmailController;
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\ExcellenceController;
-use App\Http\Controllers\ExcellenceWinnersController;
-use App\Http\Controllers\HackathonsController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\LeadingTeacherController;
-use App\Http\Controllers\LeadingTeachersList;
-use App\Http\Controllers\LeadingTeachersReport;
-use App\Http\Controllers\LeadingTeachersSignup;
-use App\Http\Controllers\LocationController;
-use App\Http\Controllers\MailTemplateController;
-use App\Http\Controllers\MapController;
-use App\Http\Controllers\OnlineEventsController;
-use App\Http\Controllers\ParticipationController;
-use App\Http\Controllers\PendingEventsController;
-use App\Http\Controllers\PodcastsController;
-use App\Http\Controllers\RemoteTeachingController;
-use App\Http\Controllers\ReportController;
-use App\Http\Controllers\ResourcesController;
-use App\Http\Controllers\ReviewController;
-use App\Http\Controllers\SchoolsController;
-use App\Http\Controllers\ScoreboardController;
-use App\Http\Controllers\SearchController;
-use App\Http\Controllers\SearchResourcesController;
-use App\Http\Controllers\StaticPageController;
-use App\Http\Controllers\SuperOrganiserController;
-use App\Http\Controllers\ToolkitsController;
-use App\Http\Controllers\UnsubscribeController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\VolunteerController;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 
-//Auth::loginUsingId(268354);
 
-Route::domain('{subdomain}.'.Config::get('app.url'))->group(function () {
+//Auth::loginUsingId(20750);
+
+Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
-        return redirect(Config::get('app.url').'/'.$subdomain);
+        return redirect(Config::get('app.url') . '/' . $subdomain);
     });
 });
 
@@ -71,123 +33,138 @@ Route::get('setlocale', function (Request $request) {
         session(['locale' => $locale]);
         session(['force_lang' => true]);
     }
-
     return back();
 })->name('setlocale');
 
 //Static pages
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/guide', [StaticPageController::class, 'static'])->name('guide');
-Route::get('/privacy', [StaticPageController::class, 'static'])->name('privacy');
-Route::get('/privacy/contact-points', [StaticPageController::class, 'static'])->name('privacy-contact-points');
-Route::get('/cookie', [StaticPageController::class, 'static'])->name('cookie');
-Route::get('/petition', [StaticPageController::class, 'static'])->name('petition');
-Route::get('/beambassador', [StaticPageController::class, 'static'])->name(
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/guide', 'StaticPageController@static')->name('guide');
+Route::get('/privacy', 'StaticPageController@static')->name('privacy');
+Route::get('/privacy/contact-points', 'StaticPageController@static')->name('privacy-contact-points');
+Route::get('/cookie', 'StaticPageController@static')->name('cookie');
+Route::get('/petition', 'StaticPageController@static')->name('petition');
+Route::get('/beambassador', 'StaticPageController@static')->name(
     'beambassador'
 );
-Route::get('/about', [StaticPageController::class, 'static'])->name('about');
-Route::get('/our-values', [StaticPageController::class, 'static'])->name('our-values');
-Route::get('/partners', [StaticPageController::class, 'static'])->name('sponsors');
-Route::get('/codeweek4all', [StaticPageController::class, 'static'])->name(
+Route::get('/about', 'StaticPageController@static')->name('about');
+Route::get('/our-values', 'StaticPageController@static')->name('our-values');
+Route::get('/partners', 'StaticPageController@static')->name('sponsors');
+Route::get('/codeweek4all', 'StaticPageController@static')->name(
     'codeweek4all'
 );
-Route::get('/code-hunting-game', [StaticPageController::class, 'static'])->name(
+Route::get('/code-hunting-game', 'StaticPageController@static')->name(
     'code-hunting-game'
 );
-Route::get('/codeweek2020', [StaticPageController::class, 'static'])->name(
+Route::get('/codeweek2020', 'StaticPageController@static')->name(
     'codeweek2020'
 );
-Route::get('/treasure-hunt', [StaticPageController::class, 'static'])->name(
+Route::get('/treasure-hunt', 'StaticPageController@static')->name(
     'treasure-hunt'
 );
-Route::get('/dance', [StaticPageController::class, 'static'])->name('dance');
-Route::get('/why-coding', [StaticPageController::class, 'static'])->name('why-coding');
+Route::get('/dance', 'StaticPageController@static')->name('dance');
+Route::get('/why-coding', 'StaticPageController@static')->name('why-coding');
 
-Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name(
+Route::get('/remote-teaching', 'RemoteTeachingController@index')->name(
     'remote-teaching'
 );
 
 //Static training pages
-Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
+Route::get('/training', 'StaticPageController@static')->name('training.index');
 Route::get(
     '/training/coding-without-computers',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-1');
 Route::get(
     '/training/computational-thinking-and-problem-solving',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-2');
 Route::get(
     '/training/visual-programming-introduction-to-scratch',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-3');
 Route::get(
     '/training/creating-educational-games-with-scratch',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-4');
 Route::get(
     '/training/making-robotics-and-tinkering-in-the-classroom',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-5');
 Route::get(
     '/training/developing-creative-thinking-through-mobile-app-development',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-6');
 Route::get(
     '/training/tinkering-and-making',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-7');
 Route::get(
     '/training/coding-for-all-subjects',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-8');
 Route::get(
     '/training/making-an-automaton-with-microbit',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-9');
 Route::get(
     '/training/creative-coding-with-python',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-10');
 Route::get(
     '/training/coding-for-inclusion',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-11');
 Route::get(
     '/training/coding-for-sustainable-development-goals',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-12');
 Route::get(
     '/training/introduction-to-artificial-intelligence-in-the-classroom',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-13');
 Route::get(
     '/training/learning-in-the-age-of-intelligent-machines',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-14');
 Route::get(
     '/training/mining-media-literacy',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-15');
 
 Route::get(
     '/training/story-telling-with-hedy',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-16');
 
 Route::get(
     '/training/feel-the-code',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-17');
 
 Route::get(
     '/training/sos-water',
-    [StaticPageController::class, 'static']
+    'StaticPageController@static'
 )->name('training.module-18');
 
-Route::get('/resources/CodingAtHome', [CodingAtHomeController::class, 'show'])->name(
+Route::get(
+    '/training/creative-scratch-laboratory',
+    'StaticPageController@static'
+)->name('training.module-19');
+
+Route::get(
+    '/training/code-through-art',
+    'StaticPageController@static'
+)->name('training.module-20');
+
+Route::get(
+    '/training/making-and-coding',
+    'StaticPageController@static'
+)->name('training.module-21');
+
+Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name(
     'coding@home'
 );
 Route::view(
@@ -272,17 +249,16 @@ Route::view(
     'codingathome.turning-code-into-pictures'
 )->name('codingathome-turning-code-into-pictures');
 
-Route::get('/events', [SearchController::class, 'search'])->name('events_map');
-
-Route::get('/add', [EventController::class, 'create'])->name('create_event');
-Route::get('/map', [MapController::class, 'index'])->name('map');
+Route::get('/events', 'SearchController@search')->name('events_map');
+Route::get('/add', 'EventController@create')->name('create_event');
+Route::get('/map', 'MapController@index')->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
-Route::get('/resources', [ResourcesController::class, 'learn'])->name('resources');
-Route::get('/resources/learn', [ResourcesController::class, 'learn'])->name('resources_learn');
-Route::get('/resources/teach', [ResourcesController::class, 'teach'])->name(
+Route::get('/resources', 'ResourcesController@learn')->name('resources');
+Route::get('/resources/learn', 'ResourcesController@learn')->name('resources_learn');
+Route::get('/resources/teach', 'ResourcesController@teach')->name(
     'resources_teach'
 );
-Route::post('/resources/search', [SearchResourcesController::class, 'search'])->name(
+Route::post('/resources/search', 'SearchResourcesController@search')->name(
     'search_resources'
 );
 
@@ -290,242 +266,249 @@ Route::post('/resources/search', [SearchResourcesController::class, 'search'])->
 //Route::post('/resources/suggest', 'SuggestResourcesController@store')->name('store_suggest_resources')->middleware('auth');
 
 //Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
-Route::get('/ambassadors', [CommunityController::class, 'index'])->name('ambassadors');
-Route::get('/volunteer', [VolunteerController::class, 'create'])
+Route::get('/ambassadors', 'CommunityController@index')->name('ambassadors');
+Route::get('/volunteer', 'VolunteerController@create')
     ->middleware('auth')
     ->name('volunteer');
-Route::post('/volunteer', [VolunteerController::class, 'store'])
+Route::post('/volunteer', 'VolunteerController@store')
     ->middleware('auth')
     ->name('volunteer_store');
-Route::post('/events', [EventController::class, 'store'])->middleware('auth');
-Route::patch('/events/{event}', [EventController::class, 'update'])->middleware('auth');
-Route::get('login/{provider}', [LoginController::class, 'redirectToProvider']);
+Route::post('/events', 'EventController@store')->middleware('auth');
+Route::patch('/events/{event}', 'EventController@update')->middleware('auth');
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get(
     'login/{provider}/callback',
-    [LoginController::class, 'handleProviderCallback']
+    'Auth\LoginController@handleProviderCallback'
 );
-Route::get('/my', [EventController::class, 'my'])
+Route::get('/my', 'EventController@my')
     ->middleware('auth')
     ->name('my_events');
 
-Route::get('/search', [SearchController::class, 'search'])->name('search_event');
-Route::post('/search', [SearchController::class, 'searchPOST'])->name('search_events');
-Route::get('/scoreboard', [ScoreboardController::class, 'index'])->name('scoreboard');
-Route::patch('user', [UserController::class, 'update'])
+Route::get('/search', 'SearchController@search')->name('search_event');
+Route::post('/search', 'SearchController@searchPOST')->name('search_events');
+Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
+Route::patch('user', 'UserController@update')
     ->name('user.update')
     ->middleware('auth');
-Route::get('view/{event}/{slug}', [EventController::class, 'show'])->name('view_event');
+Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
 
-Route::get('/my/reportable', [ReportController::class, 'list'])
+Route::get('/my/reportable', 'ReportController@list')
     ->middleware('auth')
     ->name('my_reportable_events');
-Route::get('events_to_report', [ReportController::class, 'list'])
+Route::get('events_to_report', 'ReportController@list')
     ->name('report_list')
     ->middleware('auth');
 
-Route::get('certificates', [CertificateController::class, 'list'])
+Route::get('certificates', 'CertificateController@list')
     ->name('certificates')
     ->middleware('auth');
 
-Route::get('certificates/excellence/{edition}', [ExcellenceController::class, 'report'])
+Route::get('certificates/excellence/{edition}', 'ExcellenceController@report')
     ->name('certificate_excellence')
     ->middleware('auth');
 Route::post(
     'certificates/excellence/{edition}',
-    [ExcellenceController::class, 'generate']
+    'ExcellenceController@generate'
 )
     ->name('certificate_excellence_report')
     ->middleware('auth');
 
 Route::get(
     'certificates/super-organiser/{edition}',
-    [SuperOrganiserController::class, 'report']
+    'SuperOrganiserController@report'
 )
     ->name('certificate_super_organiser')
     ->middleware('auth');
 Route::post(
     'certificates/super-organiser/{edition}',
-    [SuperOrganiserController::class, 'generate']
+    'SuperOrganiserController@generate'
 )
     ->name('certificate_super_organiser_report')
     ->middleware('auth');
 
-Route::get('participation', [ParticipationController::class, 'show'])
+Route::get('participation', 'ParticipationController@show')
     ->name('participation')
     ->middleware('auth');
-Route::post('participation', [ParticipationController::class, 'generate'])
+Route::post('participation', 'ParticipationController@generate')
     ->name('participation_submit')
     ->middleware('auth');
 
 //Route::get('participation/test', 'ParticipationController@test');
 
-Route::get('event/edit/{event}', [EventController::class, 'edit'])
+Route::get('event/edit/{event}', 'EventController@edit')
     ->name('edit_event')
     ->middleware('auth');
-Route::get('event/report/{event}', [ReportController::class, 'index'])
+Route::get('event/report/{event}', 'ReportController@index')
     ->name('report_event')
     ->middleware('auth');
-Route::post('event/report/{event}', [ReportController::class, 'store']);
+Route::post('event/report/{event}', 'ReportController@store');
 //Route::resource('school', 'SchoolController');
-Route::get('schools', [SchoolsController::class, 'index'])->name('schools');
+Route::get('schools', 'SchoolsController@index')->name('schools');
 
-Route::post('api/users/{user}/avatar', [Api\UserAvatarController::class, 'store'])
+Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')
     ->middleware('auth')
     ->name('avatar');
-Route::post('api/events/picture', [Api\EventPictureController::class, 'store'])
+Route::post('api/events/picture', 'Api\EventPictureController@store')
     ->middleware('auth')
     ->name('event_picture');
 Route::delete(
     'api/users/avatar',
-    [Api\UserAvatarController::class, 'delete']
+    'Api\UserAvatarController@delete'
 )->middleware('auth');
 
-Route::get('api/event/list', [Api\EventsController::class, 'list'])->name('event_list');
-Route::get('api/event/detail', [Api\EventsController::class, 'detail'])->name(
+Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
+Route::get('api/event/detail', 'Api\EventsController@detail')->name(
     'event_list'
 );
-Route::get('api/event/closest', [Api\EventsController::class, 'closest']);
-Route::get('event/delete/{event}', [EventController::class, 'delete'])
+Route::get('api/event/closest', 'Api\EventsController@closest');
+Route::get('event/delete/{event}', 'EventController@delete')
     ->name('delete_event')
     ->middleware('auth');
-Route::post('/api/event/delete/{event}', [EventController::class, 'delete'])
+Route::post('/api/event/delete/{event}', 'EventController@delete')
     ->name('event.delete')
     ->middleware('auth');
 
-Route::get('api/event/list/eeducation', [Api\EventsController::class, 'eeducation']);
+Route::get('api/event/list/eeducation', 'Api\EventsController@eeducation');
 
-Route::get('toolkits', [ToolkitsController::class, 'get'])->name('toolkits');
+Route::get('toolkits', 'ToolkitsController@get')->name('toolkits');
 
-Route::post('api/event/report/{event}', [ReportController::class, 'store'])->middleware(
+Route::post('api/event/report/{event}', 'ReportController@store')->middleware(
     'auth'
 );
 
-Route::middleware('role:super admin')->group(function () {
+Route::group(['middleware' => ['role:super admin']], function () {
     Route::post(
         'api/resource/level/',
-        [Api\Resource\LevelController::class, 'store']
+        'Api\Resource\LevelController@store'
     )->name('resource_level');
     Route::post(
         'api/resource/item/',
-        [Api\Resource\ItemController::class, 'store']
+        'Api\Resource\ItemController@store'
     )->name('resource_item');
 
-    Route::get('podcasts/upcoming', [PodcastsController::class, 'upcoming'])->name(
+    Route::get('podcasts/upcoming', 'PodcastsController@upcoming')->name(
         'podcasts_upcoming'
     );
 });
 
-Route::middleware('role:super admin')->group(function () {
-    Route::get('/activities', [AdminController::class, 'activities'])->name('activities');
-    Route::get('/pending/{country}', [PendingEventsController::class, 'index'])->name(
+
+Route::group(['middleware' => ['role:super admin']], function () {
+    Route::get('/activities', 'AdminController@activities')->name('activities');
+    Route::get('/pending/{country}', 'PendingEventsController@index')->name(
         'pending_by_country'
     );
-    Route::get('/review/{country}', [ReviewController::class, 'index'])->name('review_by_country');
+    Route::get('/review/{country}', 'ReviewController@index')->name('review_by_country');
 
-    Route::get('/online/list/{country}', [OnlineEventsController::class, 'list'])->name(
+
+    Route::get('/online/list/{country}', 'OnlineEventsController@list')->name(
         'online_events_by_country'
     );
-    Route::get('/online/promoted', [OnlineEventsController::class, 'promoted'])->name(
+    Route::get('/online/promoted', 'OnlineEventsController@promoted')->name(
         'promoted_events'
     );
     Route::get(
         '/online/promoted/{country}',
-        [OnlineEventsController::class, 'promoted']
+        'OnlineEventsController@promoted'
     )->name('promoted_events_by_country');
-    Route::get('/online/featured', [OnlineEventsController::class, 'featured'])->name(
+    Route::get('/online/featured', 'OnlineEventsController@featured')->name(
         'featured_events'
     );
     Route::get(
         '/online/featured/{country}',
-        [OnlineEventsController::class, 'featured']
+        'OnlineEventsController@featured'
     )->name('featured_events_by_country');
-    Route::get('/volunteers', [VolunteerController::class, 'index'])
+    Route::get('/volunteers', 'VolunteerController@index')
         ->middleware('auth')
         ->name('volunteers');
-    Route::get('/volunteer/{volunteer}/approve', [VolunteerController::class, 'approve'])
+    Route::get('/volunteer/{volunteer}/approve', 'VolunteerController@approve')
         ->middleware('auth')
         ->name('volunteer_approve');
-    Route::get('/volunteer/{volunteer}/reject', [VolunteerController::class, 'reject'])
+    Route::get('/volunteer/{volunteer}/reject', 'VolunteerController@reject')
         ->middleware('auth')
         ->name('volunteer_reject');
-    Route::get('mail/{event}', [EmailController::class, 'create'])->middleware('auth');
+    Route::get('mail/{event}', 'EmailController@create')->middleware('auth');
 
     Route::get(
         '/mail/template/ambassadors/new',
-        [MailTemplateController::class, 'ambassador']
+        'MailTemplateController@ambassador'
     );
     Route::get(
         '/mail/template/ambassadors/remind_ambassador',
-        [MailTemplateController::class, 'remind_ambassador']
+        'MailTemplateController@remind_ambassador'
     );
     Route::get(
         '/mail/template/creators/registered',
-        [MailTemplateController::class, 'registered']
+        'MailTemplateController@registered'
     );
     Route::get(
         '/mail/template/creators/approved',
-        [MailTemplateController::class, 'approved']
+        'MailTemplateController@approved'
     );
     Route::get(
         '/mail/template/creators/rejected',
-        [MailTemplateController::class, 'rejected']
+        'MailTemplateController@rejected'
     );
 
     Route::get(
         '/admin/excellence/winners',
-        [ExcellenceWinnersController::class, 'list']
+        'ExcellenceWinnersController@list'
     )->name('excellence_winners');
     Route::post(
         '/admin/excellence/excel',
-        [ExcellenceWinnersController::class, 'excel']
+        'ExcellenceWinnersController@excel'
     )->name('excellence_excel');
 
     Route::get(
         '/mail/template/remind/creators',
-        [MailTemplateController::class, 'remindcreators']
+        'MailTemplateController@remindcreators'
     );
 
-    Route::get('/admin/certificates', [AdminController::class, 'certificates'])->name(
+    Route::get('/admin/certificates', 'AdminController@certificates')->name(
         'admin_certificates'
     );
     Route::post(
         '/admin/certificates',
-        [AdminController::class, 'generateCertificates']
+        'AdminController@generateCertificates'
     )->name('generate_certificates');
+
+
+
 
 });
 
-Route::middleware('role:super admin|ambassador')->group(function () {
-    Route::get('/pending', [PendingEventsController::class, 'index'])->name('pending');
-    Route::get('/review', [ReviewController::class, 'index'])->name('review');
+Route::group(['middleware' => ['role:super admin|ambassador']], function () {
+    Route::get('/pending', 'PendingEventsController@index')->name('pending');
+    Route::get('/review', 'ReviewController@index')->name('review');
 
-    Route::get('/online/list', [OnlineEventsController::class, 'list'])->name(
+    Route::get('/online/list', 'OnlineEventsController@list')->name(
         'admin.online-events'
     );
-    Route::post('/api/event/approve/{event}', [EventController::class, 'approve'])->name(
+    Route::post('/api/event/approve/{event}', 'EventController@approve')->name(
         'event.approve'
     );
     Route::get(
         '/api/event/approveAll/{country}',
-        [EventController::class, 'approveAll']
+        'EventController@approveAll'
     )->name('event.approveAll');
-    Route::post('/api/event/reject/{event}', [EventController::class, 'reject'])->name(
+    Route::post('/api/event/reject/{event}', 'EventController@reject')->name(
         'event.reject'
     );
 });
 
-Route::middleware('auth', 'role:super admin|leading teacher|leading teacher admin')->group(function () {
-    Route::get('/my/badges', [BadgesController::class, 'my'])->name('my-badges')->middleware('auth');
-    Route::get('/badges/user/{user}/{year?}', [BadgesController::class, 'user'])->name('badges-user');
-    Route::get('/badges/leaderboard/{year?}', [BadgesController::class, 'leaderboard'])->name('badges-leaderboard-year');
+Route::group(['middleware' => [
+    'auth',
+    'role:super admin|leading teacher|leading teacher admin']], function () {
+    Route::get('/my/badges', 'BadgesController@my')->name('my-badges')->middleware('auth');
+    Route::get('/badges/user/{user}/{year?}', 'BadgesController@user')->name('badges-user');
+    Route::get('/badges/leaderboard/{year?}', 'BadgesController@leaderboard')->name('badges-leaderboard-year');
 });
 
 Route::get(
     '/codeweek4all/{code}/detail',
-    [Codeweek4AllController::class, 'detail']
+    'Codeweek4AllController@detail'
 )->name('codeweek4all_details');
 
-Route::get('/featured-activities', [OnlineEventsController::class, 'calendar'])->name(
+Route::get('/featured-activities', 'OnlineEventsController@calendar')->name(
     'featured_activities'
 );
 
@@ -537,106 +520,131 @@ Route::get('/profile', function () {
     ->name('profile')
     ->middleware('auth');
 
-Route::get('user/delete', [UserController::class, 'delete'])
+Route::get('user/delete', 'UserController@delete')
     ->name('delete_user')
     ->middleware('auth');
 
-Route::get('/leading-teachers/signup', [LeadingTeachersSignup::class, 'index'])
+Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')
     ->name('LT.signup')
     ->middleware('auth');
 Route::view(
     '/leading-teachers/success',
     'leading-teachers.signup-form-success'
 )->middleware('auth');
-Route::post('/leading-teachers/signup', [LeadingTeachersSignup::class, 'store'])
+Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')
     ->name('LT.signup.store')
     ->middleware('auth');
 
-Route::middleware('role:super admin|leading teacher admin')->group(function () {
-    Route::get('/leading-teachers/list', [LeadingTeachersList::class, 'index'])
-        ->name('leading_teachers_list')
-        ->middleware('auth');
-}
+Route::group(
+    ['middleware' => ['role:super admin|leading teacher admin']],
+    function () {
+        Route::get('/leading-teachers/list', 'LeadingTeachersList@index')
+            ->name('leading_teachers_list')
+            ->middleware('auth');
+    }
 );
 
-Route::middleware('role:leading teacher|super admin|leading teacher admin')->group(function () {
-    Route::get(
-        '/leading-teachers/report',
-        [LeadingTeachersReport::class, 'index']
-    )->name('LT.report');
-}
+Route::group(
+    [
+        'middleware' => [
+            'role:leading teacher|super admin|leading teacher admin'
+        ]
+    ],
+    function () {
+        Route::get(
+            '/leading-teachers/report',
+            'LeadingTeachersReport@index'
+        )->name('LT.report');
+    }
 );
+
+
 
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 Route::view('/teach-day', 'teach-day')->name('teach-day');
 
-Route::get('/community', [CommunityController::class, 'index'])->name('community');
+Route::get('/community', 'CommunityController@index')->name('community');
 
 Route::view('/challenges', '2021.challenges')->name('challenges');
-Route::view('/challenges/dance', '2021.challenges.dance')->name('challenges.dance');
+Route::view('/challenges/dance', '2021.challenges.dance')->name('challenges.dance');;
 
-$challenges = function () {
-    Route::view('compose-song', '2021.challenges.compose-song')->name('challenges.compose-song');
-    Route::view('sensing-game', '2021.challenges.sensing-game')->name('challenges.sensing-game');
+
+
+$challenges =  function () {
+    Route::view('compose-song','2021.challenges.compose-song')->name('challenges.compose-song');
+    Route::view('sensing-game','2021.challenges.sensing-game')->name('challenges.sensing-game');
     Route::view('chatbot', '2021.challenges.chatbot')->name('challenges.chatbot');
-    Route::view('paper-circuit', '2021.challenges.paper-circuit')->name('challenges.paper-circuit');
-    Route::view('ai-hour-of-code', '2021.challenges.ai-hour-of-code')->name('challenges.ai-hour-of-code');
-    Route::view('calming-leds', '2021.challenges.calming-leds')->name('challenges.calming-leds');
-    Route::view('computational-thinking-and-computational-fluency', '2021.challenges.computational-thinking-and-computational-fluency')->name('challenges.computational-thinking-and-computational-fluency');
-    Route::view('create-a-dance', '2021.challenges.create-a-dance')->name('challenges.create-a-dance');
-    Route::view('create-a-simulation', '2021.challenges.create-a-simulation')->name('challenges.create-a-simulation');
-    Route::view('create-your-own-masterpiece', '2021.challenges.create-your-own-masterpiece')->name('challenges.create-your-own-masterpiece');
-    Route::view('cs-first-unplugged-activities', '2021.challenges.cs-first-unplugged-activities')->name('challenges.cs-first-unplugged-activities');
+    Route::view('paper-circuit','2021.challenges.paper-circuit')->name('challenges.paper-circuit');
+    Route::view('ai-hour-of-code','2021.challenges.ai-hour-of-code')->name('challenges.ai-hour-of-code');
+    Route::view('calming-leds','2021.challenges.calming-leds')->name('challenges.calming-leds');
+    Route::view('computational-thinking-and-computational-fluency','2021.challenges.computational-thinking-and-computational-fluency')->name('challenges.computational-thinking-and-computational-fluency');
+    Route::view('create-a-dance','2021.challenges.create-a-dance')->name('challenges.create-a-dance');
+    Route::view('create-a-simulation','2021.challenges.create-a-simulation')->name('challenges.create-a-simulation');
+    Route::view('create-your-own-masterpiece','2021.challenges.create-your-own-masterpiece')->name('challenges.create-your-own-masterpiece');
+    Route::view('cs-first-unplugged-activities','2021.challenges.cs-first-unplugged-activities')->name('challenges.cs-first-unplugged-activities');
     Route::view('family-care', '2021.challenges.family-care')->name('challenges.family-care');
-    Route::view('virtual-flower-field', '2021.challenges.virtual-flower-field')->name('challenges.virtual-flower-field');
-    Route::view('haunted-house', '2021.challenges.haunted-house')->name('challenges.haunted-house');
-    Route::view('inclusive-app-design', '2021.challenges.inclusive-app-design')->name('challenges.inclusive-app-design');
+    Route::view('virtual-flower-field','2021.challenges.virtual-flower-field')->name('challenges.virtual-flower-field');
+    Route::view('haunted-house','2021.challenges.haunted-house')->name('challenges.haunted-house');
+    Route::view('inclusive-app-design','2021.challenges.inclusive-app-design')->name('challenges.inclusive-app-design');
     Route::view('silly-eyes', '2021.challenges.silly-eyes')->name('challenges.silly-eyes');
-    Route::view('train-ai-bot', '2021.challenges.train-ai-bot')->name('challenges.train-ai-bot');
-    Route::view('build-calliope', '2021.challenges.build-calliope')->name('challenges.build-calliope');
-    Route::view('animate-a-name', '2021.challenges.animate-a-name')->name('challenges.animate-a-name');
-    Route::view('european-astro-pi', '2021.challenges.european-astro-pi')->name('challenges.european-astro-pi');
-    Route::view('code-a-dice', '2021.challenges.code-a-dice')->name('challenges.code-a-dice');
-    Route::view('personal-trainer', '2021.challenges.personal-trainer')->name('challenges.personal-trainer');
-    Route::view('create-a-spiral', '2021.challenges.create-a-spiral')->name('challenges.create-a-spiral');
-    Route::view('play-against-ai', '2021.challenges.play-against-ai')->name('challenges.play-against-ai');
-    Route::view('emobot-kliki', '2021.challenges.emobot-kliki')->name('challenges.emobot-kliki');
-    Route::view('craft-magic', '2021.challenges.craft-magic')->name('challenges.craft-magic');
-    Route::view('circle-of-dots', '2021.challenges.circle-of-dots')->name('challenges.circle-of-dots');
-    Route::view('coding-escape-room', '2021.challenges.coding-escape-room')->name('challenges.coding-escape-room');
-    Route::view('let-the-snake-run', '2021.challenges.let-the-snake-run')->name('challenges.let-the-snake-run');
-    Route::view('illustrate-a-joke', '2021.challenges.illustrate-a-joke')->name('challenges.illustrate-a-joke');
-    Route::view('app-that-counts-in-several-languages', '2021.challenges.app-that-counts-in-several-languages')->name('challenges.app-that-counts-in-several-languages');
-    Route::view('coding-with-art-through-storytelling', '2021.challenges.coding-with-art-through-storytelling')->name('challenges.coding-with-art-through-storytelling');
-    Route::view('coding-with-legoboost', '2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
-    Route::view('air-drawing-with-AI', '2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
+    Route::view('train-ai-bot','2021.challenges.train-ai-bot')->name('challenges.train-ai-bot');
+    Route::view('build-calliope','2021.challenges.build-calliope')->name('challenges.build-calliope');
+    Route::view('animate-a-name','2021.challenges.animate-a-name')->name('challenges.animate-a-name');
+    Route::view('european-astro-pi','2021.challenges.european-astro-pi')->name('challenges.european-astro-pi');
+    Route::view('code-a-dice','2021.challenges.code-a-dice')->name('challenges.code-a-dice');
+    Route::view('personal-trainer','2021.challenges.personal-trainer')->name('challenges.personal-trainer');
+    Route::view('create-a-spiral','2021.challenges.create-a-spiral')->name('challenges.create-a-spiral');
+    Route::view('play-against-ai','2021.challenges.play-against-ai')->name('challenges.play-against-ai');
+    Route::view('emobot-kliki','2021.challenges.emobot-kliki')->name('challenges.emobot-kliki');
+    Route::view('craft-magic','2021.challenges.craft-magic')->name('challenges.craft-magic');
+    Route::view('circle-of-dots','2021.challenges.circle-of-dots')->name('challenges.circle-of-dots');
+    Route::view('coding-escape-room','2021.challenges.coding-escape-room')->name('challenges.coding-escape-room');
+    Route::view('let-the-snake-run','2021.challenges.let-the-snake-run')->name('challenges.let-the-snake-run');
+    Route::view('illustrate-a-joke','2021.challenges.illustrate-a-joke')->name('challenges.illustrate-a-joke');
+    Route::view('app-that-counts-in-several-languages','2021.challenges.app-that-counts-in-several-languages')->name('challenges.app-that-counts-in-several-languages');
+    Route::view('coding-with-art-through-storytelling','2021.challenges.coding-with-art-through-storytelling')->name('challenges.coding-with-art-through-storytelling');
+    Route::view('coding-with-legoboost','2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
+    Route::view('air-drawing-with-AI','2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
 };
 
-Route::prefix('2021/challenges')->group($challenges);
-Route::prefix('challenges')->group($challenges);
+Route::group(['prefix' => '2021/challenges'], $challenges);
+Route::group(['prefix' => 'challenges'], $challenges);
+
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
 
 Route::get(
     'leading-teachers-document',
-    [LeadingTeacherController::class, 'getCurrentToolkit']
+    'LeadingTeacherController@getCurrentToolkit'
 )->name('leading-teachers-document');
 
-Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
-Route::get('podcast/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
+Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
+Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
-Route::get('/unsubscribe/{email}/{magic}', [UnsubscribeController::class, 'index'])->name('unsubscribe');
 
-Route::middleware('auth')->group(function () {
-    Route::get('activities-locations', [LocationController::class, 'index'])->name('activities-locations');
+
+
+Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('activities-locations', 'LocationController@index')->name('activities-locations');
 });
 
 //Route::view('/registration', 'registration.add');
 Route::view('/online-courses', 'online-courses')->name('online-courses');
 
-Route::view('/test', 'test');
+Route::get('mailing/test', function(){
 
-Route::get('/hackathons', [HackathonsController::class, 'index'])->name('hackathons');
+    //$email = ['alainvd@gmail.com'];
+    $user = User::where("id","19588")->first();
+
+    return new App\Mail\UserCreated($user);
+});
+
+Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
+
 
 Auth::routes();
 Route::feeds();
+

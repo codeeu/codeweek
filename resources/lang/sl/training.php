@@ -318,6 +318,55 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
             ],
 
         ],
+        "20" => [
+            "title" => "Code Through Art",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Otroci odraščajo v kompleksnem svetu, ki se nenehno tehnološko razvija, kar od vzgojiteljev predšolskih otrok zahteva inovativne izobraževalne pristope. Ti pristopi vključujejo dejavnosti, ki spodbujajo računalniško razmišljanje in programiranje že od zgodnjega otroštva. Raziskave kažejo, da lahko ciljno usmerjene dejavnosti učinkovito razvijajo otrokovo računalniško mišljenje in spretnosti reševanja problemov, hkrati pa takšne dejavnosti spodbujajo njegovo ustvarjalno izražanje s pomočjo tehnologije.",
+                "Čeprav najpogostejša strategija poučevanja programiranja vključuje uporabo izobraževalnih robotov, obstaja tudi možnost programiranja brez uporabe robotskega kompleta (unplugged). Ta pristop ima lahko različne oblike in vključuje številne dejavnosti (pixel art, otroci v vlogi robotov, uporaba talne mreže itd.) Te dejavnosti prinašajo koristi izkustvenega učenja, zlasti za majhne otroke, ki se najbolje učijo skozi igro. ",
+                "<strong>Learning Bit Code Through Art</strong> obsega tri učne načrte za vzgojitelje v zgodnjem otroštvu in vključuje dejavnost brez priključka, uporabo izobraževalnega robota Bee-bot in izumiteljskega kompleta Makey Makey. Z uporabo kompleta Makey Makey imajo učenci priložnost ustvarjati oprijemljive vmesnike in preizkušati različne rešitve, ustvarjati, eksperimentirati in krepiti vse svoje učne sposobnosti v sodelovalnem učnem okolju.",
+                "Kot je dejal Pablo Picasso: \"Vsak otrok je umetnik. Problem je, kako ostati umetnik, ko le-ta odraste.\" Umetnost otrokom omogoča, da ustvarjalno predstavljajo in sporočajo svoje ideje in občutke. V tem Learning Bit boste našli navdihujoče dejavnosti, s katerimi boste z umetnostjo in kodiranjem razvijali socialne spretnosti in spretnosti 21. Stoletja svojih učencev, jih spodbujali k ustvarjalnemu izražanju in spodbujali njihovo domišljijo . Learning Bit Code Through Art vam bo omogočil, da z vključevanjem umetnosti in kodiranja spodbujate ustvarjalnost, sodelovanje in reševanje problemov pri svojih učencih."
+            ],
+            "activities" => [
+    "1" => "Spretno kodiranje: 4-6-letniučenci v vrtcu.",
+    "2" => "Creative Code Lab: 4-6-letni učenci vrtca",
+    "3" => "Platno na dotik: Canvas Canvas: Ustvarjanje interaktivnih slik: 4 do -6 letni  učenci vrtca; nadaljevalni."
+            ]
+        ],
+        "19" => [
+
+            "title" => "Laboratorij Creative Scratch",
+            "author" => "avtor Krzysztof Jaworski",
+            "text" => [
+
+                "Učenje programiranja danes presega pripravo na programersko kariero in presega meje računalništva. Pristopati je treba široko, zajeti interdisciplinarno perspektivo in uporabljati programiranje kot orodje za učenje in igro za spodbujanje razvoja prihodnjih spretnosti.",
+
+                "Za otroke in mlade je ključnega pomena, da razumejo, kako varno, odgovorno in učinkovito uporabljati digitalna orodja. Razumeti morajo, kako ta orodja delujejo, in vedeti, kako z njimi komunicirati prek programiranja. Poleg tega bi morala ta izkušnja vključevati interaktivno sodelovanje z vrstniki.",
+
+                "Učni drobec <strong>Creative Scratch Laboratory</strong> bo izboljšal ustvarjalnost učencev, spodbudil njihovo radovednost in naredil kodiranje prijetno in zabavno.  Sestavljen je iz treh učnih načrtov za učence z različnimi spretnostmi kodiranja. V učnem načrtu za začetnike učenci ustvarijo lik na papirju, ga uvozijo v Scratch in animirajo z izbranimi bloki. Načrt učne ure na vmesni stopnji predvideva, da učenci spoznajo orodje Video Sprites (Video figure), grafično izdelovanje s papirjem in markerji ter izdelavo mozaika Scratch z video figurami, štampiljkami in umetniškimi deli. V učnem načrtu za nadaljevalno stopnjo učenci raziskujejo funkcijo prepoznavanja obrazov v programu Scratch, eksperimentirajo z manipulacijo grafike figur in ustvarijo mini gledališče z dialogi, ustvarjenimi v programu Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Nariši in animiraj sprite: za začetnike",
+                "2" => "Štampiljke: za učence na vmesni stopnji",
+                "3" => "Lutkovno gledališče: za učence na nadaljevalni stopnji",
+            ]
+        ],
+        "21" => [
+            "title" => "Izdelava in kodiranje",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspaces so živahna središča, kjer se razvija ustvarjalnost in uresničujejo praktični projekti. Pri izbiri opreme za prostor ustvarjalcev se osredotočimo na orodja, kot so Calliope mini, Microbit ali Makey Makey, saj ponujajo širok nabor možnosti, primernih za učence različnih starosti in ravni znanja. Te tablice podpirajo razvoj ustvarjalnih projektov za mlajše otroke, saj so zanje na voljo programski jeziki, ki temeljijo na blokih. Starejši učenci pa lahko s temi tablicami ustvarijo bolj zapletene projekte.",
+                "Raziščite <strong>Learning Bit ustvarjanja in kodiranja</strong> in se potopite v svet ustvarjalnih prostorov ter spodbujajte interdisciplinarne veščine, kot sta timsko delo in družbeno sodelovanje, hkrati pa v svojih učencih spodbudite inovativnost in navdušenje!",
+                "Makey Makey je tiskano vezje, ki vsakdanje predmete spremeni v računalniške tipke. Makey Makey lahko s priključitvijo predmetov na ploščo s krokodiljimi sponkami, ki se nato prek kabla USB (ali iPada z adapterjem za kamero) povežejo z računalnikom, odpira in zapira električne tokokroge med osebo in predmetom. S tem pošlje električne signale, ki jih računalnik sprejme kot udarce po tipkovnici ali klike z miško. Tako lahko učenci razvijajo ustvarjalne izume, kot so glasbeni instrumenti, računalniške igre ali interaktivni plakati - možnosti so neskončne! Makey Makey in projekte, predstavljene v tem učnem koščku, je mogoče uporabljati tako v osnovnih kot v srednjih šolah za učenje veščin na področjih, kot so medijska vzgoja, računalništvo, znanost, fizika, glasba, šport in interdisciplinarne veščine, kot so timsko delo in socialne veščine.",
+                "Vstopite v vznemirljivi svet Makey Makey in sprostite brezmejno ustvarjalnost v svojem razredu!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey izpolnjuje glasbo: za začetnike.",
+                "2" => "Talking pictures: za srednješolce.",
+                "3" => "Ustvarite interaktivni plakat: za napredne učence.",
+            ]
+        ]
 
     ],
     'download_video_script' => 'Prenos besedila videoposnetka',

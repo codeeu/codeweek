@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Aktivita 1 – CodyRoby pre 1. stupeň základných škôl',
                 '2' => 'Aktivita 2 – CodyRoby pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – CodyRoby pre stredné školy',
-            ],
+                '3' => 'Aktivita 3 – CodyRoby pre stredné školy'
+            ]
         ],
         '2' => [
             'title' => 'Výpočtové myslenie a riešenie problémov',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Aktivita 1 – Rozvoj matematického uvažovania pre 1. stupeň základných škôl',
                 '2' => 'Aktivita 2 – Úvod do algoritmov pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Algoritmy pre stredné školy',
-            ],
+                '3' => 'Aktivita 3 – Algoritmy pre stredné školy'
+            ]
         ],
         '3' => [
             'title' => 'Vizuálne programovanie – úvod do jazyka Scratch',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Aktivita 1 – Základy jazyka Scratch pre 1. stupeň základných škôl',
                 '2' => 'Aktivita 2 – Základy jazyka Scratch pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Základy jazyka Scratch pre stredné školy',
-            ],
+                '3' => 'Aktivita 3 – Základy jazyka Scratch pre stredné školy'
+            ]
         ],
         '4' => [
             'title' => 'Tvorba vzdelávacích hier v jazyku Scratch',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Aktivita 1 – Hra s otázkami a odpoveďami v jazyku Scratch pre 1. stupeň základných škôl',
                 '2' => 'Aktivita 2 – Hra s otázkami a odpoveďami v jazyku Scratch pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Hra s otázkami a odpoveďami v jazyku Scratch pre stredné školy',
-            ],
+                '3' => 'Aktivita 3 – Hra s otázkami a odpoveďami v jazyku Scratch pre stredné školy'
+            ]
         ],
         '5' => [
             'title' => 'Tvorba, robotika a majstrovanie v triede',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Aktivita 1 – Ako vyrobiť mechanickú ruku z HDF dosky pre 1. stupeň základných škôl',
                 '2' => 'Aktivita 2 – Ako vyrobiť mechanickú alebo robotickú ruku pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Ako vyrobiť mechanickú alebo robotickú ruku pre stredné školy',
-            ],
+                '3' => 'Aktivita 3 – Ako vyrobiť mechanickú alebo robotickú ruku pre stredné školy'
+            ]
         ],
         '6' => [
             'title' => 'Prostredie App Inventor a vývoj aplikácií',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Aktivita 1 – Názov, pre prvý stupeň základnej školy',
                 '2' => 'Aktivita 2 – Názov, pre druhý stupeň základnej školy',
-                '3' => 'Aktivita 3 – Názov, pre stredné školy',
-            ],
+                '3' => 'Aktivita 3 – Názov, pre stredné školy'
+            ]
         ],
         '7' => [
             'title' => 'Manuálne zručnosti a vyrábanie rôznych vecí',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Aktivita 1 – Názov, pre prvý stupeň základnej školy',
                 '2' => 'Aktivita 2 – Názov, pre druhý stupeň základnej školy',
-                '3' => 'Aktivita 3 – Názov, pre stredné školy',
-            ],
+                '3' => 'Aktivita 3 – Názov, pre stredné školy'
+            ]
         ],
         '8' => [
             'title' => 'Programovanie pre všetky predmety',
@@ -120,9 +120,10 @@ return [
                 '1' => 'Aktivita 1 Robotika a inklúzia pre základné školy v rámci STEM',
                 '2' => 'Aktivita 2 Hudba je programovanie',
                 '3' => 'Aktivita 3 Manuálne zručnosti a programovanie s Makey',
-                '4' => 'Aktivita 4 Algoritmus každodenného života na hodine vyučovanej metódou CLIL',
-            ],
-        ], '9' => [
+                '4' => 'Aktivita 4 Algoritmus každodenného života na hodine vyučovanej metódou CLIL'
+            ]
+        ],
+        '9' => [
             'title' => 'Výroba automatu pomocou mikropočítača micro:bit',
             'author' => 'Autorka: Pauline Maas',
             'text' => '<p>
@@ -135,7 +136,7 @@ return [
                 '1' => 'Morseova abeceda s mikropočítačom micro:bit pre základné školy',
                 '2' => 'Úniková hra s mikropočítačom micro:bit pre 2. stupeň základných škôl',
                 '3' => 'Výroba automatu pre stredné školy',
-            ],
+            ]
         ],
         '10' => [
             'title' => 'Tvorivé programovanie v jazyku Python',
@@ -157,36 +158,36 @@ Pomocou jazyka Python môžu žiaci vytvárať kvízy o historických udalostiac
             'links' => [
                 'title' => 'Ďalšie súvisiace zdroje',
                 '1' => [
-                    'url' => 'https://docs.python.org/3/library/',
-                    'title' => 'Štandardná knižnica jazyka Python',
-                    'description' => 'Zbierka pripravených kódov a modulov (napr. modul korytnačky, matematický modul atď.).',
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Štandardná knižnica jazyka Python",
+                    "description" => "Zbierka pripravených kódov a modulov (napr. modul korytnačky, matematický modul atď.).",
                 ],
                 '2' => [
-                    'url' => 'https://codecombat.com/',
-                    'title' => 'CodeCombat',
-                    'description' => 'Vzdelávacia video hra na výučbu koncepcií programovania.',
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Vzdelávacia video hra na výučbu koncepcií programovania.",
                 ],
                 '3' => [
-                    'url' => 'https://projects.raspberrypi.org/sk-SK/codeclub',
-                    'title' => 'Projekty CodeClub',
-                    'description' => 'Podrobné projekty programovania pre deti vhodné pre začiatočníkov aj pokročilých.',
+                    "url" => "https://projects.raspberrypi.org/sk-SK/codeclub",
+                    "title" => "Projekty CodeClub",
+                    "description" => "Podrobné projekty programovania pre deti vhodné pre začiatočníkov aj pokročilých.",
                 ],
                 '4' => [
-                    'url' => 'https://inventwithpython.com/invent4thed/',
-                    'title' => 'Vymyslite si vlastnú počítačovú hru s jazykom Python',
-                    'description' => 'Kniha, ktorá vás naučí programovať vlastné počítačové hry pomocou jazyka Python.',
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Vymyslite si vlastnú počítačovú hru s jazykom Python",
+                    "description" => "Kniha, ktorá vás naučí programovať vlastné počítačové hry pomocou jazyka Python.",
                 ],
                 '5' => [
-                    'url' => 'https://www.codewars.com/',
-                    'title' => 'CodeWars',
-                    'description' => 'Vzdelávacia komunita, kde si žiaci aj učitelia môžu precvičovať zručnosti v rámci rôznych výziev.',
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Vzdelávacia komunita, kde si žiaci aj učitelia môžu precvičovať zručnosti v rámci rôznych výziev.",
                 ],
                 '6' => [
-                    'url' => 'https://hourofpython.com/',
-                    'title' => 'Hour of Python',
-                    'description' => 'Zbierka úvodných lekcií jazyka Python (texty aj bloky) s využitím interaktívnych prostredí Trinket.',
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Zbierka úvodných lekcií jazyka Python (texty aj bloky) s využitím interaktívnych prostredí Trinket.",
                 ],
-            ],
+            ]
         ],
         '11' => [
             'title' => 'Programovaním k inklúzii',
@@ -200,39 +201,40 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
                 '1' => 'Kartón na vajíčka bez počítača',
                 '2' => 'Mimoriadne inteligentná myš',
                 '3' => 'Hviezdy vyrábajú hviezdy',
-            ],
+            ]
         ],
 
-        '12' => [
-            'title' => 'Kódovanie pre ciele trvalo udržateľného rozvoja',
-            'author' => 'Francisco Javier Masero, Cristina Nicolaita a Erviola Konomi',
-            'text' => [
-                '1' => 'Tradičné vzdelávanie poskytuje študentom len málo príležitostí chápať a riešiť problémy v reálnom svete ako sú globálne zmeny podnebia, rodová rovnosť, hlad, chudoba alebo dobré zdravie a blahobyt.',
-                '2' => 'Ciele trvalo udržateľného rozvoja (SDGs) sú jadrom agendy 2030 pre trvalo udržateľný rozvoj, prijaté všetkými členskými štátmi OSN ako plán na dosiahnutie mieru a prosperity na planéte podporujúci globálny rozvoj. Učitelia môžu využiť SDGs v triede ako nástroj pre študentov na rozvoj ich kritického myslenia, ale tiež na pomoc hľadania ich identity a účelu. Kombinácia základných prvkov kódovania a výpočtového myslenia s SDGs posilní sebadôveru vašich študentov a vy im pomôžete rozvíjať ich kreativitu, podnikateľského ducha, riešenie problémov alebo komunikačné schopnosti.',
-                '3' => 'V nižšie uvedených cvičeniach budú študenti aplikovať princípy v programe Scratch, kódovanie ASCII a odpojené kódovanie k témam globálneho a sociálneho významu súčasnosti. Učitelia budú zvyšovať povedomie o cieľoch trvalo udržateľného rozvoja zatiaľ čo budú pomáhať rozvíjať empatiu, aktívne občianstvo a prosociálne schopnosti zábavným a pútavým spôsobom.',
-                '4' => 'Tieto učebné plány sa zameriavajú na jeden SDGs každý:',
-                '5' => '3. cieľ trvalo udržateľného rozvoja: Zaistite zdravý život a propagujte blahobyt pre všetkých v každom veku',
-                '6' => '5. cieľ trvalo udržateľného rozvoja: Dosiahnite rodovú rovnosť a posilnite postavenie všetkých žien a dievčat',
-                '7' => '13. cieľ trvalo udržateľného rozvoja: Prijmite neodkladné opatrenia na boj proti zmene podnebia a jeho vplyvu',
+        "12" => [
+            "title" => "Kódovanie pre ciele trvalo udržateľného rozvoja",
+            "author" => "Francisco Javier Masero, Cristina Nicolaita a Erviola Konomi",
+            "text" => [
+                "1" => "Tradičné vzdelávanie poskytuje študentom len málo príležitostí chápať a riešiť problémy v reálnom svete ako sú globálne zmeny podnebia, rodová rovnosť, hlad, chudoba alebo dobré zdravie a blahobyt.",
+                "2" => "Ciele trvalo udržateľného rozvoja (SDGs) sú jadrom agendy 2030 pre trvalo udržateľný rozvoj, prijaté všetkými členskými štátmi OSN ako plán na dosiahnutie mieru a prosperity na planéte podporujúci globálny rozvoj. Učitelia môžu využiť SDGs v triede ako nástroj pre študentov na rozvoj ich kritického myslenia, ale tiež na pomoc hľadania ich identity a účelu. Kombinácia základných prvkov kódovania a výpočtového myslenia s SDGs posilní sebadôveru vašich študentov a vy im pomôžete rozvíjať ich kreativitu, podnikateľského ducha, riešenie problémov alebo komunikačné schopnosti.",
+                "3" => "V nižšie uvedených cvičeniach budú študenti aplikovať princípy v programe Scratch, kódovanie ASCII a odpojené kódovanie k témam globálneho a sociálneho významu súčasnosti. Učitelia budú zvyšovať povedomie o cieľoch trvalo udržateľného rozvoja zatiaľ čo budú pomáhať rozvíjať empatiu, aktívne občianstvo a prosociálne schopnosti zábavným a pútavým spôsobom.",
+                "4" => "Tieto učebné plány sa zameriavajú na jeden SDGs každý:",
+                "5" => "3. cieľ trvalo udržateľného rozvoja: Zaistite zdravý život a propagujte blahobyt pre všetkých v každom veku",
+                "6" => "5. cieľ trvalo udržateľného rozvoja: Dosiahnite rodovú rovnosť a posilnite postavenie všetkých žien a dievčat",
+                "7" => "13. cieľ trvalo udržateľného rozvoja: Prijmite neodkladné opatrenia na boj proti zmene podnebia a jeho vplyvu",
             ],
-            'activities' => [
-                '1' => 'Projekt Karateka: Ovládanie karate cez programovanie pre základnú školu, nižší a vyšší stupeň strednej školy',
-                '2' => 'Ciele trvalo udržateľného rozvoja a kódovanie pre zmenu podnebia pre základnú školu',
-                '3' => 'Kódovanie pre rodovú rovnosť pre vyšší stupeň strednej školy',
+            "activities" => [
+                "1" => "Projekt Karateka: Ovládanie karate cez programovanie pre základnú školu, nižší a vyšší stupeň strednej školy",
+                "2" => "Ciele trvalo udržateľného rozvoja a kódovanie pre zmenu podnebia pre základnú školu",
+                "3" => "Kódovanie pre rodovú rovnosť pre vyšší stupeň strednej školy",
+            ]
+        ]
+        ,
+        "13" => [
+            "title" => "Úvod do umelej inteligencie v triede",
+            "author" => "Artur Coelho a Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Umelá inteligencia (AI) má vplyv na veľa oblastí každodenného života: automaticky opraví text, ktorý napíšete na telefóne, vyberie hudbu, ktorú prehráva vaša obľúbená hudobná aplikácia a pamätá si vaše heslá keď ste ich zabudli. AI odkazuje na kombináciu učenia strojov, robotiky a algoritmov s aplikáciami vo všetkých oblastiach: od informatiky po výrobu a od medicíny po módu. Preto má nesporné miesto v našich životoch a našich spoločnostiach a hrá kľúčovú úlohu pri rozvoji vedy. A ako akýkoľvek iný dôležitý fenomén v našich životoch, študenti budú môcť z učenia o nej profitovať. Ale ako učiť o tak komplexnej veci ako je AI?",
+                "2" => "Táto trocha výuky vám pomôže vysvetliť študentom čo je AI a akú úlohu hrá v živote študentov. Tieto aktivity sú navrhnuté pre laikov, aby ľahko pochopili obsah a aby boli schopný efektívne analyzovať komplexné podmienky do ľahko pochopiteľných nápadov. S týmito učebnými plánmi môžete študentom pomôcť naučiť sa použitie AI a niektorých mechanizmov, za ňou stojacich. Tieto aktivity sú navrhnuté pre rozvoj schopností analytického a kritického myslenia študentov: napríklad, v aktivite Marjany študenti rozvíjajú klasifikačný kanál.  Tieto aktivity tiež pomôžu študentom pochopiť rôznorodé aplikácie AI: v aktivite Artura sa naučia o spojení medzi AI a umením a ako môže byť AI použitá na povznesenie vizuálneho vyjadrenia. Pri týchto aktivitách sa študenti tiež zamyslia na nebezpečenstvom AI a jej dopadom."
             ],
-        ],
-        '13' => [
-            'title' => 'Úvod do umelej inteligencie v triede',
-            'author' => 'Artur Coelho a Marjana Prifti Skenduli',
-            'text' => [
-                '1' => 'Umelá inteligencia (AI) má vplyv na veľa oblastí každodenného života: automaticky opraví text, ktorý napíšete na telefóne, vyberie hudbu, ktorú prehráva vaša obľúbená hudobná aplikácia a pamätá si vaše heslá keď ste ich zabudli. AI odkazuje na kombináciu učenia strojov, robotiky a algoritmov s aplikáciami vo všetkých oblastiach: od informatiky po výrobu a od medicíny po módu. Preto má nesporné miesto v našich životoch a našich spoločnostiach a hrá kľúčovú úlohu pri rozvoji vedy. A ako akýkoľvek iný dôležitý fenomén v našich životoch, študenti budú môcť z učenia o nej profitovať. Ale ako učiť o tak komplexnej veci ako je AI?',
-                '2' => 'Táto trocha výuky vám pomôže vysvetliť študentom čo je AI a akú úlohu hrá v živote študentov. Tieto aktivity sú navrhnuté pre laikov, aby ľahko pochopili obsah a aby boli schopný efektívne analyzovať komplexné podmienky do ľahko pochopiteľných nápadov. S týmito učebnými plánmi môžete študentom pomôcť naučiť sa použitie AI a niektorých mechanizmov, za ňou stojacich. Tieto aktivity sú navrhnuté pre rozvoj schopností analytického a kritického myslenia študentov: napríklad, v aktivite Marjany študenti rozvíjajú klasifikačný kanál.  Tieto aktivity tiež pomôžu študentom pochopiť rôznorodé aplikácie AI: v aktivite Artura sa naučia o spojení medzi AI a umením a ako môže byť AI použitá na povznesenie vizuálneho vyjadrenia. Pri týchto aktivitách sa študenti tiež zamyslia na nebezpečenstvom AI a jej dopadom.',
-            ],
-            'activities' => [
-                '1' => 'Umenie človeka a AI pre základnú školu',
-                '2' => 'Učiť stroje klasifikovať: Úvod do učenia strojov pod dohľadom pre nižší stupeň strednej školy',
-                '3' => 'Učiť stroje klasifikovať: Úvod do učenia strojov pod dohľadom pre vyšší stupeň strednej školy',
-            ],
+            "activities" => [
+                "1" => "Umenie človeka a AI pre základnú školu",
+                "2" => "Učiť stroje klasifikovať: Úvod do učenia strojov pod dohľadom pre nižší stupeň strednej školy",
+                "3" => "Učiť stroje klasifikovať: Úvod do učenia strojov pod dohľadom pre vyšší stupeň strednej školy",
+            ]
         ],
 
         '14' => [
@@ -240,84 +242,137 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
             'author' => 'Adil Tugyan, Georgia Lascaris a Marco Neves',
             'text' => [
                 '1' => 'Pokrok UI v posledných rokoch bol pôsobivý vďaka rýchlemu pokroku v oblasti výpočtového výkonu a dostupnosti veľkého množstva údajov. To viedlo k značným investíciám do výskumu UI a rýchlemu rozšíreniu odvetvia UI, čo z UI urobilo významnú technologickú revolúciu našej doby. UI je všade okolo nás. Stala sa súčasťou našej každodennej rutiny, a to natoľko, že si niekedy neuvedomujeme, že to je UI: takmer každý deň používame online odporúčania, detekciu tváre, bezpečnostné systémy a hlasových asistentov. Ale čo výuka? ',
-                '2' => 'UI má obrovský potenciál umožniť nové spôsoby výučby a učenia sa a zlepšiť učenie študentov. Táto časť výučby vám pomôže integrovať autentické aktivity UI do výučby a pomôže vám pripraviť vašich študentov na život a kariéru vo svete formovanom UI. Tieto aktivity boli navrhnuté pre študentov, aby rozvíjali ich zvedavosť, riešenie problémov a tvorivé schopnosti: napríklad v Adilovej aktivite sa študenti dozvedia o algoritmoch a neurónových sieťach a sú vyzvaný k vytvoreniu vlastnej neurónovej siete na vizualizáciu mozgu UI. Georgia povedie vašich študentov pri vývoji chatbota krok za krokom. Študenti si zostavia vlastného chatbota, pripravia súbory otázok a odpovedí a vycvičia ho, aby mohol odpovedať na otázky o Covid-19. V rámci aktivity Marco budú študenti skúmať výhody a výzvy inteligentných strojov v každodennom živote a práci. Aké sú riziká UI, ktoré musíme brať do úvahy? Aké dopady bude mať AI na budúcnosť práce? Aké pracovné miesta im budú ponúknuté, keď v budúcnosti vstúpia na trh práce?',
+                '2' => 'UI má obrovský potenciál umožniť nové spôsoby výučby a učenia sa a zlepšiť učenie študentov. Táto časť výučby vám pomôže integrovať autentické aktivity UI do výučby a pomôže vám pripraviť vašich študentov na život a kariéru vo svete formovanom UI. Tieto aktivity boli navrhnuté pre študentov, aby rozvíjali ich zvedavosť, riešenie problémov a tvorivé schopnosti: napríklad v Adilovej aktivite sa študenti dozvedia o algoritmoch a neurónových sieťach a sú vyzvaný k vytvoreniu vlastnej neurónovej siete na vizualizáciu mozgu UI. Georgia povedie vašich študentov pri vývoji chatbota krok za krokom. Študenti si zostavia vlastného chatbota, pripravia súbory otázok a odpovedí a vycvičia ho, aby mohol odpovedať na otázky o Covid-19. V rámci aktivity Marco budú študenti skúmať výhody a výzvy inteligentných strojov v každodennom živote a práci. Aké sú riziká UI, ktoré musíme brať do úvahy? Aké dopady bude mať AI na budúcnosť práce? Aké pracovné miesta im budú ponúknuté, keď v budúcnosti vstúpia na trh práce?'
             ],
             'activities' => [
                 'title' => 'V nižšie uvedených učebných plánoch sa študenti naučia zábavným a pútavým spôsobom o inteligentných strojoch.',
                 '1' => 'UI a jej neurónové siete pre základnú školu',
                 '2' => 'Môj Covid-19 Chatbot, pre nižšiu strednú školu',
                 '3' => 'Život vo veku „inteligentných strojov“: Výzvy a príležitosti pre vyššie stredné školy',
-            ],
+            ]
         ],
 
-        '15' => [
-            'title' => 'Ťaženie mediálnej gramotnosti',
-            'author' => 'Marijana Smolčec, Tea Horvatić a Sanja Božinović',
-            'text' => [
-                'Vzdelávanie o mediálnej gramotnosti pre dnešných študentov nikdy nebolo dôležitejšie. Študenti všetkých vekových skupín musia získať príslušné zručnosti, vedomosti a postoje, aby sa dokázali orientovať v našom mediálne bohatom svete. Zručnosti v oblasti mediálnej gramotnosti im pomôžu využívať dôveryhodný online obsah a rozpoznať zavádzajúce zdroje informácií. Pochopia, ako overovať faktické informácie, ktoré nájdu online, a kriticky ich interpretovať. Zvýšia svoje povedomie o správnom využívaní tvorivej práce a svoje učenie uplatnia pri vytváraní vlastného tvorivého obsahu.',
-                'Táto vzdelávacia časť vám umožní implementovať rôzne stratégie a techniky, ktoré vašim študentom umožnia stať sa mediálne gramotnými. V Marijaninej aktivite sa študenti naučia, ako bezpečne a zodpovedne používať webový obsah. Budú im predstavené rôzne typy licencií a vyvinú jednoduchú aplikáciu na demonštráciu spôsobu správneho zdieľania kreatívnej práce. V Teinej aktivite sa študenti vyberú na výpravu po poznatkoch o clickbaitoch. Prostredníctvom pútavých úloh študenti preskúmajú stratégie na identifikáciu a odhalenie clickbaitov a naučia sa im vyhnúť. Sanja umožní študentom skúmať a kriticky analyzovať a hodnotiť webový obsah, jeho relevantnosť, presnosť, pôvod a účel. Naučia sa, ako nájsť spoľahlivé zdroje online a ako rozpoznať nepravdivé online informácie.',
-                'V nižšie uvedených učebných plánoch nájdete inšpiratívne a pútavé aktivity na zlepšenie zručností študentov v oblasti mediálnej gramotnosti:',
+        "15" => [
+            "title" => "Ťaženie mediálnej gramotnosti",
+            "author" => "Marijana Smolčec, Tea Horvatić a Sanja Božinović",
+            "text" => [
+                "Vzdelávanie o mediálnej gramotnosti pre dnešných študentov nikdy nebolo dôležitejšie. Študenti všetkých vekových skupín musia získať príslušné zručnosti, vedomosti a postoje, aby sa dokázali orientovať v našom mediálne bohatom svete. Zručnosti v oblasti mediálnej gramotnosti im pomôžu využívať dôveryhodný online obsah a rozpoznať zavádzajúce zdroje informácií. Pochopia, ako overovať faktické informácie, ktoré nájdu online, a kriticky ich interpretovať. Zvýšia svoje povedomie o správnom využívaní tvorivej práce a svoje učenie uplatnia pri vytváraní vlastného tvorivého obsahu.",
+                "Táto vzdelávacia časť vám umožní implementovať rôzne stratégie a techniky, ktoré vašim študentom umožnia stať sa mediálne gramotnými. V Marijaninej aktivite sa študenti naučia, ako bezpečne a zodpovedne používať webový obsah. Budú im predstavené rôzne typy licencií a vyvinú jednoduchú aplikáciu na demonštráciu spôsobu správneho zdieľania kreatívnej práce. V Teinej aktivite sa študenti vyberú na výpravu po poznatkoch o clickbaitoch. Prostredníctvom pútavých úloh študenti preskúmajú stratégie na identifikáciu a odhalenie clickbaitov a naučia sa im vyhnúť. Sanja umožní študentom skúmať a kriticky analyzovať a hodnotiť webový obsah, jeho relevantnosť, presnosť, pôvod a účel. Naučia sa, ako nájsť spoľahlivé zdroje online a ako rozpoznať nepravdivé online informácie.",
+                "V nižšie uvedených učebných plánoch nájdete inšpiratívne a pútavé aktivity na zlepšenie zručností študentov v oblasti mediálnej gramotnosti:",
             ],
-            'activities' => [
-                '1' => 'Je to voľné, ak je to na internete?',
-                '2' => 'Kliknúť alebo nekliknúť',
-                '3' => 'Overovanie faktov',
-            ],
+            "activities" => [
+                "1" => "Je to voľné, ak je to na internete?",
+                "2" => "Kliknúť alebo nekliknúť",
+                "3" => "Overovanie faktov",
+            ]
         ],
-        '16' => [
-            'title' => 'AKO VYROZPRÁVAŤ PRÍBEH POMOCOU HEDY',
-            'author' => 'Felienne Hermans',
-            'text' => [
-                'Žiaci a žiačky už ovládajú vizuálny programovací jazyk, ale ešte nie sú pripravení zahryznúť sa do textového programovacieho jazyka? V tom prípade vám príde vhod tento učebný plán, ktorý žiačkam a žiakom pomôže prejsť z vizuálneho na textový programovací jazyk. Učebný plán <strong>Ako vyrozprávať príbeh pomocou Hedy</strong> pozostáva z troch vyučovacích hodín, počas ktorých sa používa Hedy – postupný programovací jazyk, ktorým sa deti naučia programovať.',
+        "16" => [
+            "title" => "AKO VYROZPRÁVAŤ PRÍBEH POMOCOU HEDY",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Žiaci a žiačky už ovládajú vizuálny programovací jazyk, ale ešte nie sú pripravení zahryznúť sa do textového programovacieho jazyka? V tom prípade vám príde vhod tento učebný plán, ktorý žiačkam a žiakom pomôže prejsť z vizuálneho na textový programovací jazyk. Učebný plán <strong>Ako vyrozprávať príbeh pomocou Hedy</strong> pozostáva z troch vyučovacích hodín, počas ktorých sa používa Hedy – postupný programovací jazyk, ktorým sa deti naučia programovať.",
 
-                'Jazyk Hedy je určený deťom, ktoré sa chcú pustiť do textových programovacích jazykov, ale jazyk Python môže byť pre ne zatiaľ príliš zložitý. V postupných jazykoch sa uplatňujú rôzne jazykové úrovne, pričom v každej úrovni sa pridávajú nové koncepcie a zložitejšia syntax. Po dokončení úrovňovej sekvencie Hedy žiaci a žiačky ovládajú podsúbor platnej syntaxe jazyka Python.',
+                "Jazyk Hedy je určený deťom, ktoré sa chcú pustiť do textových programovacích jazykov, ale jazyk Python môže byť pre ne zatiaľ príliš zložitý. V postupných jazykoch sa uplatňujú rôzne jazykové úrovne, pričom v každej úrovni sa pridávajú nové koncepcie a zložitejšia syntax. Po dokončení úrovňovej sekvencie Hedy žiaci a žiačky ovládajú podsúbor platnej syntaxe jazyka Python.",
 
-                'V tomto učebnom pláne nájdete podnetné a pútavé aktivity, ktoré žiačkam a žiakom pomôžu účinne používať textové programovacie jazyky. V rámci vytvárania vlastných interaktívnych príbehov sa postupne sa naučia programovať a nebudú sa musieť všetko naučiť naraz. Počas vyučovacej hodiny pre prvý stupeň základnej školy sa žiakom a žiačkam predstavia základné koncepcie programovania. Vyučovacia hodina pre druhý stupeň základnej školy poskytuje úvod do ďalších programovacích koncepcií a vyučovacia hodina pre strednú školu umožňuje žiačkam a žiakom programovať zložitejšie príbehy a aktivity.',
+                "V tomto učebnom pláne nájdete podnetné a pútavé aktivity, ktoré žiačkam a žiakom pomôžu účinne používať textové programovacie jazyky. V rámci vytvárania vlastných interaktívnych príbehov sa postupne sa naučia programovať a nebudú sa musieť všetko naučiť naraz. Počas vyučovacej hodiny pre prvý stupeň základnej školy sa žiakom a žiačkam predstavia základné koncepcie programovania. Vyučovacia hodina pre druhý stupeň základnej školy poskytuje úvod do ďalších programovacích koncepcií a vyučovacia hodina pre strednú školu umožňuje žiačkam a žiakom programovať zložitejšie príbehy a aktivity.",
 
-                'Pozrite si príklad interaktívneho príbehu a zistite, ako doňho čitatelia môžu vstupovať, a ako podporuje ich aktívne zapojenie.',
+                "Pozrite si príklad interaktívneho príbehu a zistite, ako doňho čitatelia môžu vstupovať, a ako podporuje ich aktívne zapojenie."
             ],
-            'activities' => [
-                '1' => 'Vytvor si interaktívny príbeh pomocou Hedy pre prvý stupeň základnej školy',
-                '2' => 'Vytvor si interaktívny príbeh pomocou Hedy pre druhý stupeň základnej školy',
-                '3' => 'Vytvor si interaktívny príbeh pomocou Hedy pre strednú školu',
-            ],
+            "activities" => [
+                "1" => "Vytvor si interaktívny príbeh pomocou Hedy pre prvý stupeň základnej školy",
+                "2" => "Vytvor si interaktívny príbeh pomocou Hedy pre druhý stupeň základnej školy",
+                "3" => "Vytvor si interaktívny príbeh pomocou Hedy pre strednú školu",
+            ]
         ],
-        '17' => [
-            'title' => 'Programovanie s citom',
-            'author' => 'Alenka Miljević',
-            'text' => [
-                'Sociálna a emocionálna pohoda je schopnosť zachovať si odolnosť, ovládať svoje emócie a reagovať na emócie druhých, nadväzovať zmysluplné vzťahy s ostatnými, produkovať emócie, ktoré vedú k dobrým pocitom a vytvárať si vlastnú sieť emocionálnej podpory. Sociálne a emocionálne zručnosti, ktoré sa mladí ľudia naučia v škole, im pomáhajú budovať si odolnosť a nastaviť vzorce, podľa ktorých budú ovládať svoje fyzické a duševné zdravie počas celého života. (Rada Európy)',
-                'Učebný plán Programovanie s citom vám umožní posilniť sociálnu a emocionálnu pohodu žiakov a žiačok. Naučia sa rozpoznávať, vysvetľovať, chápať a reagovať na pozitívne a negatívne pocity a emócie a rozvinú si tak empatiu a odolnosť.  V tomto učebnom pláne nájdete podnetné a pútavé aktivity, ktoré žiačkam a žiakom pomôžu rozvinúť si zručnosti na zvládanie rôznych emócií prostredníctvom programovania. Pomocou robota Bee-bot sa naučia sa, ako vyjadriť svoje pocity a reagovať na emócie spolužiakov a spolužiačok.',
-                'Učebný plán Programovanie s citom pozostáva z plánov na tri vyučovacie hodiny s aktivitami, ktoré pomocou vzdelávacieho robota Bee-bot povzbudzujú deti v triede, aby hovorili o svojich emóciách a rozvinuli si empatiu. Na základe plánu vyučovacej hodiny pre prvý stupeň základnej školy deti naprogramujú Bee-bota a porozprávajú sa o smútku, šťastí, strachu a hneve, aby zistili, prečo ony alebo ich spolužiaci pociťujú tieto emócie. Podľa plánu vyučovacej hodiny pre druhý stupeň základnej školy dostanú deti za úlohu naprogramovať Bee-bota, rozpoznať svoje pocity alebo pocity druhých, pochopiť, čo ich spôsobilo a ako na ne reagovať. Na základe plánu vyučovacej hodiny pre strednú školu sa študenti naučia ovládať Bee-bota a vymýšľať príbehy o pocitoch, odolnosti a empatii.',
-                'Ak v triede nemáte vzdelávacieho robota, tento učebný plán vám poskytne nápady na aktivity bez počítača, ktorými sa posilňuje rozvoj sociálnych a emocionálnych zručností. Uvedený interaktívny diagram vám poskytuje stručný prehľad aktivít, ktoré môžete uplatniť počas vyučovania:',
+        "17" => [
+            "title" => "Programovanie s citom",
+            "author" => "Alenka Miljević",
+            "text" => [
+                "Sociálna a emocionálna pohoda je schopnosť zachovať si odolnosť, ovládať svoje emócie a reagovať na emócie druhých, nadväzovať zmysluplné vzťahy s ostatnými, produkovať emócie, ktoré vedú k dobrým pocitom a vytvárať si vlastnú sieť emocionálnej podpory. Sociálne a emocionálne zručnosti, ktoré sa mladí ľudia naučia v škole, im pomáhajú budovať si odolnosť a nastaviť vzorce, podľa ktorých budú ovládať svoje fyzické a duševné zdravie počas celého života. (Rada Európy)",
+                "Učebný plán Programovanie s citom vám umožní posilniť sociálnu a emocionálnu pohodu žiakov a žiačok. Naučia sa rozpoznávať, vysvetľovať, chápať a reagovať na pozitívne a negatívne pocity a emócie a rozvinú si tak empatiu a odolnosť.  V tomto učebnom pláne nájdete podnetné a pútavé aktivity, ktoré žiačkam a žiakom pomôžu rozvinúť si zručnosti na zvládanie rôznych emócií prostredníctvom programovania. Pomocou robota Bee-bot sa naučia sa, ako vyjadriť svoje pocity a reagovať na emócie spolužiakov a spolužiačok.",
+                "Učebný plán Programovanie s citom pozostáva z plánov na tri vyučovacie hodiny s aktivitami, ktoré pomocou vzdelávacieho robota Bee-bot povzbudzujú deti v triede, aby hovorili o svojich emóciách a rozvinuli si empatiu. Na základe plánu vyučovacej hodiny pre prvý stupeň základnej školy deti naprogramujú Bee-bota a porozprávajú sa o smútku, šťastí, strachu a hneve, aby zistili, prečo ony alebo ich spolužiaci pociťujú tieto emócie. Podľa plánu vyučovacej hodiny pre druhý stupeň základnej školy dostanú deti za úlohu naprogramovať Bee-bota, rozpoznať svoje pocity alebo pocity druhých, pochopiť, čo ich spôsobilo a ako na ne reagovať. Na základe plánu vyučovacej hodiny pre strednú školu sa študenti naučia ovládať Bee-bota a vymýšľať príbehy o pocitoch, odolnosti a empatii.",
+                "Ak v triede nemáte vzdelávacieho robota, tento učebný plán vám poskytne nápady na aktivity bez počítača, ktorými sa posilňuje rozvoj sociálnych a emocionálnych zručností. Uvedený interaktívny diagram vám poskytuje stručný prehľad aktivít, ktoré môžete uplatniť počas vyučovania:"
             ],
-            'activities' => [
-                '1' => 'Programujem, cítim, učím sa pre žiakov prvého stupňa základnej školy',
-                '2' => 'Nemám srdce z kameňapre žiakov druhého stupňa základnej školy',
-                '3' => 'Naprogramuj mi náladu pre študentov strednej školy',
+            "activities" => [
+                "1" => "Programujem, cítim, učím sa pre žiakov prvého stupňa základnej školy",
+                "2" => "Nemám srdce z kameňapre žiakov druhého stupňa základnej školy",
+                "3" => "Naprogramuj mi náladu pre študentov strednej školy",
+            ]
+        ],
+        "18" => [
+
+            "title" => "SOS voda",
+            "author" => "autor Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS voda je reakciou na potrebu riešiť problém znečistenia vody. Napriek úsiliu, ktoré sa v posledných rokoch vynaložilo, na svete stále žijú 2 miliardy ľudí, ktorí nemajú prístup k bezpečnej pitnej vode. To znamená, že dosiahnutie cieľa udržateľného rozvoja č. 6 Agendy 2030, ktorý stanovuje, že všetci ľudia by mali mať do roku 2030 prístup k bezpečne spravovanej vode a sanitácii, je ešte ďaleko. To isté platí aj pre cieľ udržateľného rozvoja č. 14 - podmorský život, ktorého cieľom je zachovať a udržateľne využívať oceány, moria a morské zdroje v záujme udržateľného rozvoja.",
+
+                "Tento vzdelávací blok sa zameriava na relevantnú a aktuálnu problematiku merania kvality vody a nových znečisťujúcich látok, ktoré ohrozujú kvalitu vody. Študenti budú mať príležitosť skúmať a hľadať riešenia skutočných problémov týkajúcich sa vody a životného prostredia, čo im umožní rozvíjať zručnosti, ako je výskum, kritické myslenie a riešenie problémov.",
+
+                " Plány vyučovacích hodín obsahujú praktické a tvorivé aktivity, ako je programovanie v Scratch, zasvätenie do strojového učenia a umelej inteligencie s programom Learning Machine Learning a zostrojenie riadených vozidiel so stavebnicami Lego na odber vzoriek vody a analýzu pH vody. Tieto aktivity umožnia študentom uplatniť svoje zručnosti a vedomosti v interaktívnom a hravom prostredí, čím sa zvýši ich motivácia a záujem o projekt",
+
+                "Pri realizácii tohto učebného bloku sa navrhuje vypracovať tri aktivity v triede, dokončiť celý projekt a dosiahnuť zmysluplnejší a motivujúcejší proces učenia. Každá činnosť sa však môže vykonávať aj samostatne."
+
             ],
-        ], '18' => [
-
-            'title' => 'SOS voda',
-            'author' => 'autor Francisco Delgado Cecilia',
-            'text' => [
-
-                'SOS voda je reakciou na potrebu riešiť problém znečistenia vody. Napriek úsiliu, ktoré sa v posledných rokoch vynaložilo, na svete stále žijú 2 miliardy ľudí, ktorí nemajú prístup k bezpečnej pitnej vode. To znamená, že dosiahnutie cieľa udržateľného rozvoja č. 6 Agendy 2030, ktorý stanovuje, že všetci ľudia by mali mať do roku 2030 prístup k bezpečne spravovanej vode a sanitácii, je ešte ďaleko. To isté platí aj pre cieľ udržateľného rozvoja č. 14 - podmorský život, ktorého cieľom je zachovať a udržateľne využívať oceány, moria a morské zdroje v záujme udržateľného rozvoja.',
-
-                'Tento vzdelávací blok sa zameriava na relevantnú a aktuálnu problematiku merania kvality vody a nových znečisťujúcich látok, ktoré ohrozujú kvalitu vody. Študenti budú mať príležitosť skúmať a hľadať riešenia skutočných problémov týkajúcich sa vody a životného prostredia, čo im umožní rozvíjať zručnosti, ako je výskum, kritické myslenie a riešenie problémov.',
-
-                ' Plány vyučovacích hodín obsahujú praktické a tvorivé aktivity, ako je programovanie v Scratch, zasvätenie do strojového učenia a umelej inteligencie s programom Learning Machine Learning a zostrojenie riadených vozidiel so stavebnicami Lego na odber vzoriek vody a analýzu pH vody. Tieto aktivity umožnia študentom uplatniť svoje zručnosti a vedomosti v interaktívnom a hravom prostredí, čím sa zvýši ich motivácia a záujem o projekt',
-
-                'Pri realizácii tohto učebného bloku sa navrhuje vypracovať tri aktivity v triede, dokončiť celý projekt a dosiahnuť zmysluplnejší a motivujúcejší proces učenia. Každá činnosť sa však môže vykonávať aj samostatne.',
-
-            ],
-            'activities' => [
-                '1' => 'SOS voda so Scratch',
-                '2' => 'SOS voda so strojovým učením',
-                '3' => 'SOS voda s robotikou',
-            ],
+            "activities" => [
+                "1" => "SOS voda so Scratch",
+                "2" => "SOS voda so strojovým učením",
+                "3" => "SOS voda s robotikou",
+            ]
 
         ],
+        "20" => [
+            "title" => "Kódovanie prostredníctvom umenia",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Deti vyrastajú v zložitom svete, ktorý sa neustále technologicky vyvíja, čo si vyžaduje inovatívne vzdelávacie prístupy pedagógov v ranom detstve. Tieto prístupy zahŕňajú aktivity, ktoré podporujú informatické myslenie a programovanie už od útleho veku. Z výskumov vyplýva, že cielené aktivity môžu účinne rozvíjať výpočtové myslenie a zručnosti detí pri riešení problémov a zároveň takéto aktivity podporujú ich tvorivé vyjadrenie prostredníctvom technológií.",
+                "Hoci najbežnejšia stratégia výučby programovania zahŕňa používanie vzdelávacích robotov, existuje aj možnosť programovania bez použitia robotickej súpravy (bez pripojenia). Tento prístup môže mať rôzne podoby a zahŕňať širokú škálu aktivít (pixelová grafika, deti v úlohe robotov, používanie mriežky na dlážke atď.) Tieto aktivity ponúkajú prínos zážitkového učenia, najmä pre malé deti, ktoré sa najlepšie učia hrou. ",
+                "<strong> Learning Bit – kódovanie prostredníctvom umenia</strong> obsahuje tri plány vyučovacích hodín pre pedagógov v ranom detstve, v ktorom sa realizuje aktivitu bez pripojenia, používa sa vzdelávací robot-včielka a súprava na vynálezy Makey Makey. Pomocou súpravy Makey Makey majú žiaci možnosť vytvárať hmatateľné rozhrania a skúšať rôzne riešenia, tvoriť, experimentovať a posilňovať všetky svoje schopnosti učiť sa v prostredí kolaboratívneho učenia.",
+                "Ako povedal Pablo Picasso: „Každé dieťa je umelec. Problém je zostať umelcom, aj keď vyrastie.“ Umenie poskytuje deťom príležitosť tvorivo prezentovať a sprostredkúvať svoje myšlienky a pocity. V tomto programe Learning Bit nájdete inšpiratívne aktivity na rozvíjanie sociálnych zručností a zručností žiakov v 21. storočí prostredníctvom umenia a kódovania, na podporu ich tvorivého vyjadrovania a rozvíjania ich predstavivosti . Learning Bit – kódovanie prostredníctvom umenia vám umožní rozvíjať kreativitu, spoluprácu a riešenie problémov vašich žiakov  prostredníctvom integrácie umenia a kódovania."
+            ],
+            "activities" => [
+                "1" => "Umné kódovanie: 4 – 6-roční žiaci materských škôl.",
+                "2" => "Kreatívne laboratórium kódovania: 4-6-roční žiaci materských škôl",
+                "3" => "Dotknúť sa plátna: vytváranie interaktívnych obrazov: 4 – 6 roční žiaci materských škôl; pokročilí."
+            ]
+        ],
+        "21" => [
+            "title" => "Tvorba a kódovanie",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace sú živé centrá, kde sa darí kreativite a kde vznikajú praktické projekty. Pri výbere vybavenia pre Makerspace sa zameriavame na nástroje, ako sú Calliope mini, Microbit alebo Makey Makey, pretože ponúkajú širokú škálu možností vhodných pre študentov rôzneho veku a úrovne zručností. Tieto dosky podporujú vývoj kreatívnych projektov pre mladšie deti vďaka tomu, že sú k nim k dispozícii programovacie jazyky založené na blokoch. Pre starších žiakov možno pomocou týchto dosiek vytvárať zložitejšie projekty.",
+                "Preskúmajte <strong>Learning Bit – tvorba a kódovanie</strong>, aby ste sa ponorili do sveta Makerspace a podporili interdisciplinárne zručnosti, ako je tímová práca a sociálna spolupráca, a zároveň podnietili inovácie a nadšenie svojich študentov!",
+                "Makey Makey je doska plošného spoja, ktorá premieňa predmety dennej potreby na počítačové klávesy. Pripojením predmetov k doske pomocou krokosvoriek, ktoré sa potom spoja s počítačom pomocou kábla USB (alebo iPadu s adaptérom na fotoaparát), dokáže Makey Makey otvárať a zatvárať elektrické obvody medzi človekom a predmetom. Tým sa vysielajú elektrické signály, ktoré počítač prijíma ako údery do klávesnice alebo kliknutia myšou. To umožňuje žiakom vyvíjať kreatívne vynálezy, napríklad hudobné nástroje, počítačové hry alebo interaktívne plagáty – možnosti sú nekonečné! Makey Makey a projekty predstavené v tomto programe Learning Bit sa môžu používať na základných aj stredných školách na výučbu zručností v oblastiach, ako je mediálna výchova, informatika, veda, fyzika, hudba, šport a interdisciplinárne zručnosti, napríklad tímová práca a sociálne zručnosti.",
+                "Vstúpte do vzrušujúceho sveta Makey Makey a odomknite vo svojej triede neobmedzenú kreativitu!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey sa stretáva s hudbou: pre začiatočníkov.",
+                "2" => "Hovoriace obrázky: pre stredne pokročilých študentov.",
+                "3" => "Vytvorte interaktívny plagát: pre pokročilých študentov.",
+            ]
+        ]
+        ,
+        "19" => [
+
+            "title" => "Kreatívne laboratórium Scratch",
+            "author" => "od Krzysztofa Jaworskeho",
+            "text" => [
+
+                "Učenie sa programovať dnes presahuje rámec prípravy na kariéru programátora a presahuje hranice informatiky. Malo by sa k nemu pristupovať zoširoka, zahŕňať interdisciplinárnu perspektívu a využívať programovanie ako nástroj učenia a hry na podporu rozvoja budúcich zručností.",
+
+                " Pre deti a mladých ľudí je veľmi dôležité pochopiť, ako bezpečne, zodpovedne a efektívne používať digitálne nástroje. Musia pochopiť, ako tieto nástroje fungujú, a vedieť, ako s nimi komunikovať prostredníctvom programovania. Okrem toho by táto skúsenosť mala zahŕňať spoluprácu s ich rovesníkmi.",
+
+                "Učebná časť <strong>Creative Scratch Laboratory</strong> zvýši kreativitu študentov, podporí ich zvedavosť a kódovanie sa stane príjemné a zábavné.  Pozostáva z troch učebných plánov pre študentov s rôznymi zručnosťami v oblasti kódovania. V učebnom pláne pre začiatočníkov študenti vytvoria postavu na papieri, importujú ju do programu Scratch a animujú ju pomocou vybraných blokov. V učebnom pláne pre stredne pokročilých sa študenti naučia používať nástroj Video škriatkovia, grafickú tvorbu s papierom a fixkami a vytvárať mozaiku v programe Scratch pomocou Video škriatkov, pečiatok a umeleckých diel. V učebnom pláne pre pokročilých študenti preskúmajú funkciu rozpoznávania tvárí v Scratchi, experimentujú s manipuláciou so škriatkami a vytvoria minidivadlo s dialógmi vytvorenými v programe Scratch",
+
+            ],
+            "activities" => [
+                "1" => "Nakresliť a animovať škriatka: pre začiatočníkov",
+                "2" => "Pečiatky: pre stredne pokročilých študentov",
+                "3" => "Bábkové divadlo: pre pokročilých študentov",
+            ]
+
+        ],
+
 
     ],
     'download_video_script' => 'Stiahnuť prepis videa',
@@ -327,7 +382,7 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
         'title' => 'Nezabudnite pridať aktivitu na mapu Týždňa programovania!',
         'text' => '<p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
-<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>',
-    ],
+<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
+    ]
 
 ];
