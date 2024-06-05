@@ -321,6 +321,25 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
             ],
 
         ],
+        "19" => [
+
+            "title" => "Kreativt Scratch-laboratorium",
+            "author" => "af Krzysztof Jaworski",
+            "text" => [
+
+                "At lære at programmere i dag handler ikke bare om at forberede sig på en karriere inden for programmering, det bevæger sig også uden for datalogi. Tilgangen bør være bred. Det tværfaglige perspektiv skal inddrages, og programmering skal anvendes som et redskab til læring og leg med henblik på at fremme udviklingen af fremtidige færdigheder.",
+
+                "Det er vigtigt, at børn og unge forstår, hvordan de anvender digitale værktøjer på en sikker, ansvarlig og effektiv måde. De skal forstå, hvordan disse værktøjer fungerer, og hvordan de kommunikerer med dem gennem programmering. Desuden bør denne erfaring omfatte samarbejde med deres kammerater.",
+
+                "Undervisningsbidden <strong>Creative Scratch Laboratory</strong> forbedrer elevernes kreativitet, øger deres nysgerrighed og gør det spændende og sjovt at kode.  Den består af tre læreplaner til elever med forskellige kodefærdigheder. I læreplanen for begyndere laver eleverne en karakter på papir, importerer den i Scratch og animerer den med udvalgte brikker. I læreplanen til øvede lærer eleverne om Video Sprites-værktøjet, udarbejdelse af grafik med papir og tuscher og at lave en Scratch-mosaik med Video Sprites, stempler og kunstværker. I læreplanen til det avancerede niveau udforsker eleverne funktionen ansigtsgenkendelse i Scratch, eksperimenterer med manipulering af sprite-grafikker og opretter små teatre med dialoger lavet i Scratch."
+
+            ],
+            "activities" => [
+                "1" => "Tegn og animer en sprite: for begyndere",
+                "2" => "Stempler: for øvede",
+                "3" => "Dukketeater: for meget øvede",
+            ]
+        ],
 
     ],
     'download_video_script' => 'Download videoscriptet',

@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Zajęcia 1 – CodyRoby dla szkół podstawowych',
                 '2' => 'Zajęcia 2 – CodyRoby dla szkół ponadpodstawowych',
-                '3' => 'Zajęcia 3 – CodyRoby dla szkół średnich',
-            ],
+                '3' => 'Zajęcia 3 – CodyRoby dla szkół średnich'
+            ]
         ],
         '2' => [
             'title' => 'Myślenie obliczeniowe i rozwiązywanie problemów',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Zajęcia 1 – Rozwijanie myślenia matematycznego dla szkół podstawowych',
                 '2' => 'Zajęcia 2 – Pierwsze spotkanie z algorytmami dla szkół ponadpodstawowych',
-                '3' => 'Zajęcia 3 – Algorytmy dla szkół średnich',
-            ],
+                '3' => 'Zajęcia 3 – Algorytmy dla szkół średnich'
+            ]
         ],
         '3' => [
             'title' => 'Programowanie wizualne – wprowadzenie do języka Scratch',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Zajęcia 1 – Podstawy języka Scratch dla szkół podstawowych',
                 '2' => 'Zajęcia 2 – Podstawy języka Scratch dla szkół ponadpodstawowych',
-                '3' => 'Zajęcia 3 – Podstawy języka Scratch dla szkół średnich',
-            ],
+                '3' => 'Zajęcia 3 – Podstawy języka Scratch dla szkół średnich'
+            ]
         ],
         '4' => [
             'title' => 'Tworzenie gier edukacyjnych w języku Scratch',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Zajęcia 1 - Gra w pytania i odpowiedzi w języku Scratch dla szkół podstawowych',
                 '2' => 'Zajęcia 2 - Gra w pytania i odpowiedzi w języku Scratch dla szkół ponadpodstawowych',
-                '3' => 'Zajęcia 3 - Gra w pytania i odpowiedzi w języku Scratch dla szkół średnich',
-            ],
+                '3' => 'Zajęcia 3 - Gra w pytania i odpowiedzi w języku Scratch dla szkół średnich'
+            ]
         ],
         '5' => [
             'title' => 'Majsterkowanie, grzebanie i robotyka w klasie',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Zajęcia 1 – Jak wykonać mechaniczne ramię ze sklejki dla szkół podstawowych',
                 '2' => 'Zajęcia 2 – Jak wykonać mechaniczne ramię ze sklejki dla szkół ponadpodstawowych',
-                '3' => 'Zajęcia 3 – Jak wykonać mechaniczne ramię ze sklejki dla szkół średnich',
-            ],
+                '3' => 'Zajęcia 3 – Jak wykonać mechaniczne ramię ze sklejki dla szkół średnich'
+            ]
         ],
         '6' => [
             'title' => 'Tworzenie aplikacji za pomocą App Inventor',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
                 '2' => 'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
-                '3' => 'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia',
-            ],
+                '3' => 'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
+            ]
         ],
         '7' => [
             'title' => 'Majsterkowanie i kreatywność',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
                 '2' => 'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
-                '3' => 'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia',
-            ],
+                '3' => 'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
+            ]
         ],
         '8' => [
             'title' => 'Kodowanie w ramach wszystkich przedmiotów',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Zajęcia nr 1. Robotyka i integracja na poziomie szkoły podstawowej na zajęciach z nauk przyrodniczych, technologii, inżynierii i matematyki ',
                 '2' => 'Zajęcia nr 2. Muzyka to kodowanie',
                 '3' => 'Zajęcia nr 3. Majsterkowanie i kodowanie z wykorzystaniem Makey Makey',
-                '4' => 'Zajęcia nr 4. Algorytmy w życiu codziennym w zintegrowanym kształceniu przedmiotowo-językowym',
-            ],
+                '4' => 'Zajęcia nr 4. Algorytmy w życiu codziennym w zintegrowanym kształceniu przedmiotowo-językowym'
+            ]
         ],
         '9' => [
             'title' => 'Tworzenie automatu za pomocą urządzenia micro:bit',
@@ -136,7 +136,7 @@ W proponowanym filmiku Pauline Maas, nauczycielka informatyki w szkole Koninklij
                 '1' => 'Kod Morse’a z micro:bit, dla młodszych klas szkoły podstawowej',
                 '2' => 'Pokój zagadek z micro:bit, dla starszych klas szkoły podstawowej',
                 '3' => 'Tworzenie automatu, dla szkół ponadpodstawowych',
-            ],
+            ]
         ],
         '10' => [
             'title' => 'Kreatywne programowanie z Pythonem',
@@ -158,36 +158,36 @@ Za pomocą Pythona uczniowie mogą między innymi przygotowywać quizy historycz
             'links' => [
                 'title' => 'Inne powiązane zasoby',
                 '1' => [
-                    'url' => 'https://docs.python.org/3/library/',
-                    'title' => 'Standardowa biblioteka Pythona',
-                    'description' => 'Kolekcja gotowych fragmentów kodu i modułów (np. moduł turtle, moduł math itd.).',
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Standardowa biblioteka Pythona",
+                    "description" => "Kolekcja gotowych fragmentów kodu i modułów (np. moduł turtle, moduł math itd.).",
                 ],
                 '2' => [
-                    'url' => 'https://codecombat.com/',
-                    'title' => 'CodeCombat',
-                    'description' => 'Edukacyjna gra wideo do nauki pojęć związanych z programowaniem.',
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Edukacyjna gra wideo do nauki pojęć związanych z programowaniem.",
                 ],
                 '3' => [
-                    'url' => 'https://projects.raspberrypi.org/pl-PL/codeclub',
-                    'title' => 'Projekty CodeClub',
-                    'description' => 'Projekty dla dzieci do stopniowej nauki programowania – od poziomu podstawowego do zaawansowanego.',
+                    "url" => "https://projects.raspberrypi.org/pl-PL/codeclub",
+                    "title" => "Projekty CodeClub",
+                    "description" => "Projekty dla dzieci do stopniowej nauki programowania – od poziomu podstawowego do zaawansowanego.",
                 ],
                 '4' => [
-                    'url' => 'https://inventwithpython.com/invent4thed/',
-                    'title' => 'Książka „Invent your own computer games with Python”',
-                    'description' => 'Dzięki tej książce dowiesz się, jak napisać własną grę komputerową w Pythonie.',
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Książka „Invent your own computer games with Python”",
+                    "description" => "Dzięki tej książce dowiesz się, jak napisać własną grę komputerową w Pythonie.",
                 ],
                 '5' => [
-                    'url' => 'https://www.codewars.com/',
-                    'title' => 'CodeWars',
-                    'description' => 'Społeczność edukacyjna, w której uczniowie i nauczyciele mogą ćwiczyć swoje umiejętności, podejmując różne wyzwania.',
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Społeczność edukacyjna, w której uczniowie i nauczyciele mogą ćwiczyć swoje umiejętności, podejmując różne wyzwania.",
                 ],
                 '6' => [
-                    'url' => 'https://hourofpython.com/',
-                    'title' => 'Hour of Python',
-                    'description' => 'Kolekcja lekcji wprowadzających do nauki Pythona (w formie tekstowej i blokowej) przy użyciu interaktywnego edytora Trinket.',
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Kolekcja lekcji wprowadzających do nauki Pythona (w formie tekstowej i blokowej) przy użyciu interaktywnego edytora Trinket.",
                 ],
-            ],
+            ]
         ],
         '11' => [
             'title' => 'Integracja przez kodowanie',
@@ -201,123 +201,145 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
                 '1' => 'Wytłaczanka offline',
                 '2' => 'Bardzo bystra mysz ',
                 '3' => 'Gwiezdna robota',
-            ],
+            ]
         ],
 
-        '12' => [
-            'title' => 'Kodowanie celów zrównoważonego rozwoju',
-            'author' => 'Francisco Javier Masero, Cristina Nicolaita i Erviola Konomi',
-            'text' => [
-                '1' => 'Tradycyjna edukacja daje uczniom niewiele możliwości zrozumienia i rozwiązania rzeczywistych problemów, takich jak globalne zmiany klimatyczne, równość płci, głód, ubóstwo lub dobry stan zdrowia i dobrobyt.',
-                '2' => 'Cele Zrównoważonego Rozwoju (SDG) stanowią trzon Agendy Zrównoważonego Rozwoju do 2030 r., przyjętej przez wszystkie państwa członkowskie ONZ jako mapa drogowa na rzecz osiągnięcia pokoju i dobrobytu na naszej planecie, zachęcająca do globalnego rozwoju. Nauczyciele mogą używać SDG w klasie jako narzędzia dla uczniów do rozwijania ich krytycznego myślenia, ale również do pomocy w odnalezieniu ich tożsamości i celu. Połączenie podstawowych elementów kodowania i myślenia obliczeniowego z SDG zwiększy pewność siebie uczniów i pomoże im rozwinąć kreatywność, ducha przedsiębiorczości, umiejętności rozwiązywania problemów lub komunikacji.',
-                '3' => 'W poniższych działaniach uczniowie będą stosować zasady języka programowania Scratch, ASCII i kodowania bez komputera do tematów o znaczeniu globalnym i społecznym w dzisiejszych czasach. Nauczyciele będą podnosić świadomość na temat celów zrównoważonego rozwoju, jednocześnie pomagając im rozwijać empatię, aktywną postawę obywatelską i umiejętności prospołeczne w zabawny i angażujący sposób.',
-                '4' => 'Każdy z tych planów lekcji koncentruje się na jednym z SDG:',
-                '5' => 'Cel zrównoważonego rozwoju 3: Zapewnić zdrowe życie i promować dobre samopoczucie dla wszystkich w każdym wieku',
-                '6' => 'Cel zrównoważonego rozwoju 5: Osiągnąć równość płci i wzmocnić pozycję wszystkich kobiet i dziewcząt',
-                '7' => 'Cel zrównoważonego rozwoju 13: Podjąć pilne działania w celu przeciwdziałania zmianom klimatycznym i ich skutkom',
+        "12" => [
+            "title" => "Kodowanie celów zrównoważonego rozwoju",
+            "author" => "Francisco Javier Masero, Cristina Nicolaita i Erviola Konomi",
+            "text" => [
+                "1" => "Tradycyjna edukacja daje uczniom niewiele możliwości zrozumienia i rozwiązania rzeczywistych problemów, takich jak globalne zmiany klimatyczne, równość płci, głód, ubóstwo lub dobry stan zdrowia i dobrobyt.",
+                "2" => "Cele Zrównoważonego Rozwoju (SDG) stanowią trzon Agendy Zrównoważonego Rozwoju do 2030 r., przyjętej przez wszystkie państwa członkowskie ONZ jako mapa drogowa na rzecz osiągnięcia pokoju i dobrobytu na naszej planecie, zachęcająca do globalnego rozwoju. Nauczyciele mogą używać SDG w klasie jako narzędzia dla uczniów do rozwijania ich krytycznego myślenia, ale również do pomocy w odnalezieniu ich tożsamości i celu. Połączenie podstawowych elementów kodowania i myślenia obliczeniowego z SDG zwiększy pewność siebie uczniów i pomoże im rozwinąć kreatywność, ducha przedsiębiorczości, umiejętności rozwiązywania problemów lub komunikacji.",
+                "3" => "W poniższych działaniach uczniowie będą stosować zasady języka programowania Scratch, ASCII i kodowania bez komputera do tematów o znaczeniu globalnym i społecznym w dzisiejszych czasach. Nauczyciele będą podnosić świadomość na temat celów zrównoważonego rozwoju, jednocześnie pomagając im rozwijać empatię, aktywną postawę obywatelską i umiejętności prospołeczne w zabawny i angażujący sposób.",
+                "4" => "Każdy z tych planów lekcji koncentruje się na jednym z SDG:",
+                "5" => "Cel zrównoważonego rozwoju 3: Zapewnić zdrowe życie i promować dobre samopoczucie dla wszystkich w każdym wieku",
+                "6" => "Cel zrównoważonego rozwoju 5: Osiągnąć równość płci i wzmocnić pozycję wszystkich kobiet i dziewcząt",
+                "7" => "Cel zrównoważonego rozwoju 13: Podjąć pilne działania w celu przeciwdziałania zmianom klimatycznym i ich skutkom",
             ],
-            'activities' => [
-                '1' => 'Projekt Karateka: Poznanie karate poprzez programowanie, dla szkoły podstawowej, gimnazjum i ponadpodstawowej',
-                '2' => 'Cele zrównoważonego rozwoju i kodowanie zmian klimatycznych, dla szkoły podstawowej',
-                '3' => 'Kodowanie dla równości płci, dla szkoły ponadpodstawowej',
-            ],
+            "activities" => [
+                "1" => "Projekt Karateka: Poznanie karate poprzez programowanie, dla szkoły podstawowej, gimnazjum i ponadpodstawowej",
+                "2" => "Cele zrównoważonego rozwoju i kodowanie zmian klimatycznych, dla szkoły podstawowej",
+                "3" => "Kodowanie dla równości płci, dla szkoły ponadpodstawowej",
+            ]
         ],
 
-        '13' => [
-            'title' => 'Wprowadzenie do sztucznej inteligencji podczas zajęć w klasie',
-            'autor' => 'Artur Coelho i Marjana Prifti Skenduli',
-            'text' => [
-                '1' => 'Sztuczna inteligencja (AI) ma wpływ na wiele dziedzin życia codziennego: autokorektę tekstu, który piszesz w telefonie, wybór muzyki, którą odtwarza twoja ulubiona aplikacja muzyczna i zapamiętuje twoje hasła, gdy o nich zapomniałeś. Sztuczna inteligencja odnosi się do połączenia uczenia maszynowego, robotyki i algorytmów z zastosowaniami we wszystkich dziedzinach: od informatyki do produkcji i od medycyny do mody. Dlatego też ma ona niezaprzeczalne miejsce w naszym życiu i w naszych społeczeństwach i odgrywa kluczową rolę w rozwoju nauki. I jak każde inne ważne zjawisko w naszym życiu, uczniowie skorzystają na tym, że się o nim dowiedzą. Ale jak uczyć o tak złożonej rzeczy jaką jest sztuczna inteligencja?',
-                '2' => 'Ten bit dydaktyczny pomoże Ci wyjaśnić uczniom, czym jest sztuczna inteligencja i jaką rolę odgrywa w ich życiu. Działania te są przeznaczone dla osób nie będących ekspertami, które z łatwością rozumieją treść i są w stanie skutecznie rozbić złożone terminy na łatwo zrozumiałe idee. Dzięki tym planom lekcyjnym możesz pomóc uczniom nauczyć się korzystać ze sztucznej inteligencji i niektórych mechanizmów, które są z nią związane. Zajęcia te mają na celu rozwinięcie u uczniów umiejętności analitycznego i krytycznego myślenia: na przykład, w ramach zajęć, które prowadzi Marjana uczniowie opracowują ciąg klasyfikacyjny. Zajęcia te pomogą również uczniom zrozumieć różne zastosowania sztucznej inteligencji: podczas wszystkich zajęć z Arturem dowiedzą się o związku między sztuczną inteligencją, a sztuką oraz o tym, jak można wykorzystać sztuczną inteligencję do wzmocnienia ekspresji wizualnej. Dzięki tym działaniom uczniowie będą również zastanawiać się nad zagrożeniami związanymi ze sztuczną inteligencją i ich wpływem.',
+        "13" => [
+            "title" => "Wprowadzenie do sztucznej inteligencji podczas zajęć w klasie",
+            "autor" => "Artur Coelho i Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Sztuczna inteligencja (AI) ma wpływ na wiele dziedzin życia codziennego: autokorektę tekstu, który piszesz w telefonie, wybór muzyki, którą odtwarza twoja ulubiona aplikacja muzyczna i zapamiętuje twoje hasła, gdy o nich zapomniałeś. Sztuczna inteligencja odnosi się do połączenia uczenia maszynowego, robotyki i algorytmów z zastosowaniami we wszystkich dziedzinach: od informatyki do produkcji i od medycyny do mody. Dlatego też ma ona niezaprzeczalne miejsce w naszym życiu i w naszych społeczeństwach i odgrywa kluczową rolę w rozwoju nauki. I jak każde inne ważne zjawisko w naszym życiu, uczniowie skorzystają na tym, że się o nim dowiedzą. Ale jak uczyć o tak złożonej rzeczy jaką jest sztuczna inteligencja?",
+                "2" => "Ten bit dydaktyczny pomoże Ci wyjaśnić uczniom, czym jest sztuczna inteligencja i jaką rolę odgrywa w ich życiu. Działania te są przeznaczone dla osób nie będących ekspertami, które z łatwością rozumieją treść i są w stanie skutecznie rozbić złożone terminy na łatwo zrozumiałe idee. Dzięki tym planom lekcyjnym możesz pomóc uczniom nauczyć się korzystać ze sztucznej inteligencji i niektórych mechanizmów, które są z nią związane. Zajęcia te mają na celu rozwinięcie u uczniów umiejętności analitycznego i krytycznego myślenia: na przykład, w ramach zajęć, które prowadzi Marjana uczniowie opracowują ciąg klasyfikacyjny. Zajęcia te pomogą również uczniom zrozumieć różne zastosowania sztucznej inteligencji: podczas wszystkich zajęć z Arturem dowiedzą się o związku między sztuczną inteligencją, a sztuką oraz o tym, jak można wykorzystać sztuczną inteligencję do wzmocnienia ekspresji wizualnej. Dzięki tym działaniom uczniowie będą również zastanawiać się nad zagrożeniami związanymi ze sztuczną inteligencją i ich wpływem."
             ],
-            'activities' => [
-                '1' => 'Człowiek-Sztuczna inteligencja- Sztuka, dla szkoły podstawowej',
-                '2' => 'Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej pierwszego stopnia',
-                '3' => 'Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej drugiego stopnia',
-            ],
+            "activities" => [
+                "1" => "Człowiek-Sztuczna inteligencja- Sztuka, dla szkoły podstawowej",
+                "2" => "Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej pierwszego stopnia",
+                "3" => "Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej drugiego stopnia",
+            ]
         ],
         '14' => [
             'title' => 'Nauczanie w erze inteligentnych maszyn',
             'author' => 'autorzy: Adil Tugyan, Georgia Lascaris i Marco Neves',
             'text' => [
                 '1' => 'Rozwój sztucznej inteligencji w ostatnich latach był imponujący dzięki szybkiemu postępowi w mocy obliczeniowej i dostępności dużej ilości danych. Doprowadziło to do znacznych inwestycji w badania nad sztuczną inteligencją i szybkiego rozwoju dziedziny związanej ze sztuczną inteligencją, czyniąc z niej główną rewolucję technologiczną naszych czasów. Sztuczna inteligencja jest wszędzie wokół nas. Stała się ona częścią naszej codziennej rutyny, do tego stopnia, że czasami nie myślimy o niej jako o sztucznej inteligencji: niemal codziennie korzystamy z rekomendacji online, wykrywania twarzy, systemów bezpieczeństwa i asystentów głosowych. A co z edukacją? ',
-                '2' => 'Sztuczna inteligencja charakteryzuje się ogromnym potencjałem umożliwiającym nowe sposoby nauczania i uczenia się oraz poprawiającym uczenie się uczniów. Ten Bit dydaktyczny pomoże Ci w zintegrowaniu autentycznych działań związanych ze sztuczną inteligencją z Twoim nauczaniem i pomoże Ci w przygotowaniu Twoich uczniów do życia i kariery w świecie kształtowanym przez sztuczną inteligencję. Zajęcia te zostały zaprojektowane tak, aby uczniowie rozwijali swoją ciekawość, umiejętność rozwiązywania problemów i kreatywność: na przykład w ćwiczeniu Adila uczniowie poznają algorytmy i sieci neuronowe oraz są zachęcani do tworzenia własnych sieci neuronowych w celu wizualizacji mózgu sztucznej inteligencji. Georgia przeprowadzi Twoich uczniów krok po kroku przez stworzenie chatbota. Uczniowie zbudują własnego chatbota, przygotują zestawy pytań i odpowiedzi oraz wytrenują go tak, aby mógł odpowiadać na pytania dotyczące Covid-19. Podczas zajęć Marco uczniowie będą badać korzyści i wyzwania związane z inteligentnymi maszynami w życiu codziennym i w pracy. Jakie są zagrożenia związane ze sztuczną inteligencją, które musimy wziąć pod uwagę? Jaki wpływ będzie miała sztuczna inteligencja na przyszłość pracy? Jakie miejsca pracy będą oferowane uczniom, gdy w przyszłości wejdą na rynek pracy?',
+                '2' => 'Sztuczna inteligencja charakteryzuje się ogromnym potencjałem umożliwiającym nowe sposoby nauczania i uczenia się oraz poprawiającym uczenie się uczniów. Ten Bit dydaktyczny pomoże Ci w zintegrowaniu autentycznych działań związanych ze sztuczną inteligencją z Twoim nauczaniem i pomoże Ci w przygotowaniu Twoich uczniów do życia i kariery w świecie kształtowanym przez sztuczną inteligencję. Zajęcia te zostały zaprojektowane tak, aby uczniowie rozwijali swoją ciekawość, umiejętność rozwiązywania problemów i kreatywność: na przykład w ćwiczeniu Adila uczniowie poznają algorytmy i sieci neuronowe oraz są zachęcani do tworzenia własnych sieci neuronowych w celu wizualizacji mózgu sztucznej inteligencji. Georgia przeprowadzi Twoich uczniów krok po kroku przez stworzenie chatbota. Uczniowie zbudują własnego chatbota, przygotują zestawy pytań i odpowiedzi oraz wytrenują go tak, aby mógł odpowiadać na pytania dotyczące Covid-19. Podczas zajęć Marco uczniowie będą badać korzyści i wyzwania związane z inteligentnymi maszynami w życiu codziennym i w pracy. Jakie są zagrożenia związane ze sztuczną inteligencją, które musimy wziąć pod uwagę? Jaki wpływ będzie miała sztuczna inteligencja na przyszłość pracy? Jakie miejsca pracy będą oferowane uczniom, gdy w przyszłości wejdą na rynek pracy?'
             ],
             'activities' => [
                 'title' => 'W ramach lekcji prowadzonych zgodnie z poniższymi scenariuszami, uczniowie w zabawny i wciągający sposób poznają inteligentne maszyny.',
                 '1' => 'Sztuczna inteligencja i jej sieci neuronowe, dla szkoły podstawowej',
                 '2' => 'Mój Chatbot o Covid-19 , dla uczniów gimnazjum',
                 '3' => 'Życie w epoce „inteligentnych maszyn”: wyzwania i szanse, dla uczniów szkoły ponadpodstawowej',
-            ],
+            ]
         ],
-        '15' => [
-            'title' => 'Umiejętność korzystania z mediów',
-            'author' => 'Marijana Smolčec, Tea Horvatić and Sanja Božinović',
-            'text' => [
-                'Nabywanie umiejętności korzystania z mediów nigdy nie była ważniejsza dla uczniów niż dzisiaj. Uczniowie w każdym wieku muszą zdobyć odpowiednie umiejętności, wiedzę i postawy, aby móc poruszać się w naszym bogatym w media świecie. Umiejętności korzystania z mediów pomogą im korzystać z wiarygodnych treści online i rozpoznawać wprowadzające w błąd źródła informacji. Zrozumieją, jak weryfikować informacje znalezione w Internecie i krytycznie je zinterpretować. Podniosą świadomość prawidłowego wykorzystania pracy twórczej i wykorzystają zdobytą wiedzę przy tworzeniu własnych treści twórczych',
-                'Ten bit szkoleniowy pozwoli Ci wdrożyć różne strategie i techniki, aby umożliwić uczniom nabycie umiejętności korzystania z mediów. W działalności Marijany uczniowie uczą się, jak bezpiecznie i odpowiedzialnie korzystać z treści internetowych. Poznają różne rodzaje licencji i opracowują prostą aplikację, aby zademonstrować, jak prawidłowo udostępniać prace twórcze. W ramach aktywności Tea uczniowie wyruszają na poszukiwanie wiedzy o klikbejtach. Poprzez angażujące zadania uczniowie odkrywają strategie identyfikowania i odkrywania klikbejtów oraz uczą się, jak ich unikać. Sanja pozwala uczniom odkrywać i krytycznie analizować i oceniać treści internetowe, ich trafność, dokładność, pochodzenie i cel. Uczą się, jak znajdować wiarygodne źródła w Internecie i jak rozpoznawać fałszywe informacje w Internecie.',
-                'W poniższych scenariuszach lekcji znajdziesz inspirujące i angażujące zajęcia, które poprawią umiejętności uczniów w zakresie umiejętności korzystania z mediów:',
+        "15" => [
+            "title" => "Umiejętność korzystania z mediów",
+            "author" => "Marijana Smolčec, Tea Horvatić and Sanja Božinović",
+            "text" => [
+                "Nabywanie umiejętności korzystania z mediów nigdy nie była ważniejsza dla uczniów niż dzisiaj. Uczniowie w każdym wieku muszą zdobyć odpowiednie umiejętności, wiedzę i postawy, aby móc poruszać się w naszym bogatym w media świecie. Umiejętności korzystania z mediów pomogą im korzystać z wiarygodnych treści online i rozpoznawać wprowadzające w błąd źródła informacji. Zrozumieją, jak weryfikować informacje znalezione w Internecie i krytycznie je zinterpretować. Podniosą świadomość prawidłowego wykorzystania pracy twórczej i wykorzystają zdobytą wiedzę przy tworzeniu własnych treści twórczych",
+                "Ten bit szkoleniowy pozwoli Ci wdrożyć różne strategie i techniki, aby umożliwić uczniom nabycie umiejętności korzystania z mediów. W działalności Marijany uczniowie uczą się, jak bezpiecznie i odpowiedzialnie korzystać z treści internetowych. Poznają różne rodzaje licencji i opracowują prostą aplikację, aby zademonstrować, jak prawidłowo udostępniać prace twórcze. W ramach aktywności Tea uczniowie wyruszają na poszukiwanie wiedzy o klikbejtach. Poprzez angażujące zadania uczniowie odkrywają strategie identyfikowania i odkrywania klikbejtów oraz uczą się, jak ich unikać. Sanja pozwala uczniom odkrywać i krytycznie analizować i oceniać treści internetowe, ich trafność, dokładność, pochodzenie i cel. Uczą się, jak znajdować wiarygodne źródła w Internecie i jak rozpoznawać fałszywe informacje w Internecie.",
+                "W poniższych scenariuszach lekcji znajdziesz inspirujące i angażujące zajęcia, które poprawią umiejętności uczniów w zakresie umiejętności korzystania z mediów:",
             ],
-            'activities' => [
-                '1' => 'Czy jeśli jest coś dostępne Internecie, to jest bezpłatne?',
-                '2' => 'Kliknąć czy nie kliknąć',
-                '3' => 'Sprawdzanie faktów',
-            ],
+            "activities" => [
+                "1" => "Czy jeśli jest coś dostępne Internecie, to jest bezpłatne?",
+                "2" => "Kliknąć czy nie kliknąć",
+                "3" => "Sprawdzanie faktów",
+            ]
         ],
-        '16' => [
-            'title' => 'OPOWIADANIE HISTORII Z HEDY',
-            'author' => 'Felienne Hermans',
-            'text' => [
-                'Czy twoi uczniowie opanowali już wizualny język programowania, ale nie czują się jeszcze gotowi na programowanie w języku opartym na tekście? W takim razie te zajęcia są właśnie dla ciebie i dla twoich uczniów – dzięki nim będą w stanie w prosty sposób przejść od wizualnych do tekstowych języków programowania. Zajęcia <strong>Opowiadanie historii z Hedy</strong> składają się z trzech planów zajęć opartych na stopniowanym języku programowania Hedy, opracowanym w celu uczenia dzieci programowania.',
+        "16" => [
+            "title" => "OPOWIADANIE HISTORII Z HEDY",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Czy twoi uczniowie opanowali już wizualny język programowania, ale nie czują się jeszcze gotowi na programowanie w języku opartym na tekście? W takim razie te zajęcia są właśnie dla ciebie i dla twoich uczniów – dzięki nim będą w stanie w prosty sposób przejść od wizualnych do tekstowych języków programowania. Zajęcia <strong>Opowiadanie historii z Hedy</strong> składają się z trzech planów zajęć opartych na stopniowanym języku programowania Hedy, opracowanym w celu uczenia dzieci programowania.",
 
-                'Język Hedy jest przeznaczony dla dzieci, które chcą rozpocząć przygodę z tekstowymi językami programowania, a dla których Python może być jeszcze zbyt skomplikowany i przytłaczający. Języki stopniowane pozwalają na naukę opartą na kolejnych poziomach – każdy poziom dodaje nowe pojęcia i zwiększa złożoność składni. Po przejściu przez wszystkie poziomy języka Hedy, uczniowie opanowują określony zbiór poleceń języka Python.',
+                "Język Hedy jest przeznaczony dla dzieci, które chcą rozpocząć przygodę z tekstowymi językami programowania, a dla których Python może być jeszcze zbyt skomplikowany i przytłaczający. Języki stopniowane pozwalają na naukę opartą na kolejnych poziomach – każdy poziom dodaje nowe pojęcia i zwiększa złożoność składni. Po przejściu przez wszystkie poziomy języka Hedy, uczniowie opanowują określony zbiór poleceń języka Python.",
 
-                'Materiały dydaktyczne zawierają inspirujące i ciekawe zadania, które pomogą uczniom efektywnie wykorzystywać tekstowe języki programowania. Tworząc własne interaktywne opowieści uczniowie stopniowo uczą się programowania, przy czym nie muszą poznawać wszystkich zagadnień jednocześnie. W scenariuszu zajęć dla uczniów szkół podstawowych uczniowie zapoznają się z podstawowymi pojęciami dotyczącymi programowania. Scenariusz zajęć dla uczniów starszych klas szkoły podstawowej wprowadza kolejne koncepcje, natomiast scenariusz dla uczniów szkół średnich uczy programowania bardziej złożonych opowieści i zadań.',
+                "Materiały dydaktyczne zawierają inspirujące i ciekawe zadania, które pomogą uczniom efektywnie wykorzystywać tekstowe języki programowania. Tworząc własne interaktywne opowieści uczniowie stopniowo uczą się programowania, przy czym nie muszą poznawać wszystkich zagadnień jednocześnie. W scenariuszu zajęć dla uczniów szkół podstawowych uczniowie zapoznają się z podstawowymi pojęciami dotyczącymi programowania. Scenariusz zajęć dla uczniów starszych klas szkoły podstawowej wprowadza kolejne koncepcje, natomiast scenariusz dla uczniów szkół średnich uczy programowania bardziej złożonych opowieści i zadań.",
 
-                'Zobacz interaktywne opowieści poniżej, aby dowiedzieć się, jak czytelnicy mogą w nich uczestniczyć i jak doskonale wpływają na zaangażowanie.',
+                "Zobacz interaktywne opowieści poniżej, aby dowiedzieć się, jak czytelnicy mogą w nich uczestniczyć i jak doskonale wpływają na zaangażowanie."
             ],
-            'activities' => [
-                '1' => 'Stwórz własną interaktywną opowieść z Hedy dla uczniów szkół podstawowych',
-                '2' => 'Stwórz własną interaktywną opowieść z Hedy dla uczniów starszych klas szkół podstawowych',
-                '3' => 'Stwórz własną interaktywną opowieść z Hedy dla uczniów szkół średnich',
-            ],
+            "activities" => [
+                "1" => "Stwórz własną interaktywną opowieść z Hedy dla uczniów szkół podstawowych",
+                "2" => "Stwórz własną interaktywną opowieść z Hedy dla uczniów starszych klas szkół podstawowych",
+                "3" => "Stwórz własną interaktywną opowieść z Hedy dla uczniów szkół średnich",
+            ]
         ],
-        '17' => [
-            'title' => 'Poczuj kod',
-            'author' => 'Autorka: Alenka Miljević',
-            'text' => [
-                'Dobrostan społeczny i emocjonalny oznacza odporność, umiejętność radzenia sobie z własnymi emocjami i reagowania na emocje innych ludzi, nawiązywanie i pielęgnowanie relacji z innymi, odczuwanie emocji prowadzących do pozytywnych uczuć i budowanie własnej sieci wsparcia emocjonalnego. Umiejętności społeczne i emocjonalne zdobywane przez młodzież w szkołach pomagają im w budowaniu odporności i stanowią wzorzec postępowania, przy pomocy którego będą przez całe życie dbać o swoje zdrowie psychiczne i fizyczne. (Rada Europy)',
-                'Lekcja Poczuj kod pozwala zadbać o dobrostan społeczny i emocjonalny dzięki rozpoznaniu, wyjaśnianiu, rozumieniu i reagowaniu na pozytywne i negatywne uczucia i emocje w celu budowania empatii i odporności.  Materiały dydaktyczne zawierają inspirujące i ciekawe zadania, które pomogą uczniom efektywnie rozwijać umiejętności radzenia sobie z różnymi emocjami dzięki programowaniu. W czasie lekcji uczniowie dowiedzą się, w jaki sposób mogą wyrażać swoje uczucia i reagować na emocje rówieśników z pomocą robota Bee-Bot.',
-                'Materiały dydaktyczne do lekcji Poczuj kod obejmują trzy plany zajęć oparte na wykorzystaniu edukacyjnego robota Bee-Bot w celu prowadzenia zabaw zachęcających uczniów do rozmawiania o emocjach i rozwijania empatii. W czasie lekcji dla uczniów młodszych klas szkół podstawowych uczestnicy zaprogramują robota Bee-Bot, by mówić o emocjach takich jak smutek, radość, strach i złość oraz odkrywać powody, dla których oni i ich rówieśnicy odczuwają te emocje. Plan zajęć dla uczniów starszych klas szkół podstawowych zachęca uczestników do programowania robota Bee-Bot, rozpoznawania uczuć – zarówno swoich, jak i rówieśników, a także rozumienia ich przyczyn oraz reagowania na nie. Plan zajęć dla uczniów szkół średnich pozwala uczestnikom na przejęcie kontroli nad robotem Bee-Bot w celu tworzenia własnych historii o uczuciach, odporności i empatii.',
-                'Jeśli szkoła nie dysponuje robotem edukacyjnym, w materiałach dydaktycznych można znaleźć także pomysły na zajęcia bez prądu, które pozwolą na rozwój umiejętności społecznych i emocjonalnych uczniów. Poniżej znajduje się krótkie omówienie ćwiczeń i aktywności, które można przeprowadzić w klasie:',
+        "17" => [
+            "title" => "Poczuj kod",
+            "author" => "Autorka: Alenka Miljević",
+            "text" => [
+                "Dobrostan społeczny i emocjonalny oznacza odporność, umiejętność radzenia sobie z własnymi emocjami i reagowania na emocje innych ludzi, nawiązywanie i pielęgnowanie relacji z innymi, odczuwanie emocji prowadzących do pozytywnych uczuć i budowanie własnej sieci wsparcia emocjonalnego. Umiejętności społeczne i emocjonalne zdobywane przez młodzież w szkołach pomagają im w budowaniu odporności i stanowią wzorzec postępowania, przy pomocy którego będą przez całe życie dbać o swoje zdrowie psychiczne i fizyczne. (Rada Europy)",
+                "Lekcja Poczuj kod pozwala zadbać o dobrostan społeczny i emocjonalny dzięki rozpoznaniu, wyjaśnianiu, rozumieniu i reagowaniu na pozytywne i negatywne uczucia i emocje w celu budowania empatii i odporności.  Materiały dydaktyczne zawierają inspirujące i ciekawe zadania, które pomogą uczniom efektywnie rozwijać umiejętności radzenia sobie z różnymi emocjami dzięki programowaniu. W czasie lekcji uczniowie dowiedzą się, w jaki sposób mogą wyrażać swoje uczucia i reagować na emocje rówieśników z pomocą robota Bee-Bot.",
+                "Materiały dydaktyczne do lekcji Poczuj kod obejmują trzy plany zajęć oparte na wykorzystaniu edukacyjnego robota Bee-Bot w celu prowadzenia zabaw zachęcających uczniów do rozmawiania o emocjach i rozwijania empatii. W czasie lekcji dla uczniów młodszych klas szkół podstawowych uczestnicy zaprogramują robota Bee-Bot, by mówić o emocjach takich jak smutek, radość, strach i złość oraz odkrywać powody, dla których oni i ich rówieśnicy odczuwają te emocje. Plan zajęć dla uczniów starszych klas szkół podstawowych zachęca uczestników do programowania robota Bee-Bot, rozpoznawania uczuć – zarówno swoich, jak i rówieśników, a także rozumienia ich przyczyn oraz reagowania na nie. Plan zajęć dla uczniów szkół średnich pozwala uczestnikom na przejęcie kontroli nad robotem Bee-Bot w celu tworzenia własnych historii o uczuciach, odporności i empatii.",
+                "Jeśli szkoła nie dysponuje robotem edukacyjnym, w materiałach dydaktycznych można znaleźć także pomysły na zajęcia bez prądu, które pozwolą na rozwój umiejętności społecznych i emocjonalnych uczniów. Poniżej znajduje się krótkie omówienie ćwiczeń i aktywności, które można przeprowadzić w klasie:"
             ],
-            'activities' => [
-                '1' => 'Koduj – Czuj – Ucz się dla uczniów młodszych klas szkół podstawowych',
-                '2' => 'Moje serce nie jest z kamienia dla uczniów starszych klas szkół podstawowych',
-                '3' => 'Zaprogramuj uczucia dla uczniów szkół średnich',
+            "activities" => [
+                "1" => "Koduj – Czuj – Ucz się dla uczniów młodszych klas szkół podstawowych",
+                "2" => "Moje serce nie jest z kamienia dla uczniów starszych klas szkół podstawowych",
+                "3" => "Zaprogramuj uczucia dla uczniów szkół średnich",
+            ]
+        ],
+        "18" => [
+
+            "title" => "SOS Water",
+            "author" => "autor: Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water jest odpowiedzią na potrzebę rozwiązania problemu zanieczyszczenia wody. Pomimo wysiłków podejmowanych w ostatnich latach 2 miliardy ludzi na całym świecie wciąż nie mają dostępu do bezpiecznej wody pitnej. W praktyce oznacza to, że realizacja szóstego Celu Zrównoważonego Rozwoju wchodzącego w skład Agendy 2030 ONZ, według którego wszyscy ludzie powinni mieć dostęp do bezpiecznej wody oraz urządzeń sanitarnych do 2030 roku, wciąż pozostaje odległa. To samo można powiedzieć o czternastym Celu Zrównoważonego Rozwoju dotyczącym życia w morzach i oceanach, którego założeniem jest ochrona i zrównoważone wykorzystanie oceanów, mórz i zasobów morskich na rzecz zrównoważonego rozwoju",
+
+                "Zajęcia skupiają się na ważnej i wciąż aktualnej kwestii pomiaru jakości wody i nowych zanieczyszczeń, które wpływają na jakość wody. Uczniowie będą mieli możliwość zbadania i znalezienia rozwiązań rzeczywistych problemów związanych z wodą i środowiskiem, co pozwoli im rozwinąć umiejętności badawcze, a także kompetencje krytycznego myślenia i rozwiązywania problemów",
+
+                "Opracowane plany zajęć obejmują praktyczne i kreatywne zadania, w tym programowanie w języku Scratch, wprowadzenie do uczenia maszynowego i sztucznej inteligencji z platformą Learning Machine Learning oraz budowanie pojazdów do gromadzenia próbek wody i analizy jej pH z zestawów klocków Lego. Wszystkie te działania pozwolą uczniom wykorzystać ich umiejętności i wiedzę w praktyce w interaktywnym i interesującym środowisku, co zwiększy ich motywację i zainteresowanie projektem",
+
+                "Realizacja tego działania zakłada realizację trzech działań w klasach, dzięki którym będzie możliwe ukończenie całego projektu w ramach interesujących i motywujących zajęć. Każde z tych zadań może być jednak zrealizowane oddzielnie"
+
             ],
-        ], '18' => [
-
-            'title' => 'SOS Water',
-            'author' => 'autor: Francisco Delgado Cecilia',
-            'text' => [
-
-                'SOS Water jest odpowiedzią na potrzebę rozwiązania problemu zanieczyszczenia wody. Pomimo wysiłków podejmowanych w ostatnich latach 2 miliardy ludzi na całym świecie wciąż nie mają dostępu do bezpiecznej wody pitnej. W praktyce oznacza to, że realizacja szóstego Celu Zrównoważonego Rozwoju wchodzącego w skład Agendy 2030 ONZ, według którego wszyscy ludzie powinni mieć dostęp do bezpiecznej wody oraz urządzeń sanitarnych do 2030 roku, wciąż pozostaje odległa. To samo można powiedzieć o czternastym Celu Zrównoważonego Rozwoju dotyczącym życia w morzach i oceanach, którego założeniem jest ochrona i zrównoważone wykorzystanie oceanów, mórz i zasobów morskich na rzecz zrównoważonego rozwoju',
-
-                'Zajęcia skupiają się na ważnej i wciąż aktualnej kwestii pomiaru jakości wody i nowych zanieczyszczeń, które wpływają na jakość wody. Uczniowie będą mieli możliwość zbadania i znalezienia rozwiązań rzeczywistych problemów związanych z wodą i środowiskiem, co pozwoli im rozwinąć umiejętności badawcze, a także kompetencje krytycznego myślenia i rozwiązywania problemów',
-
-                'Opracowane plany zajęć obejmują praktyczne i kreatywne zadania, w tym programowanie w języku Scratch, wprowadzenie do uczenia maszynowego i sztucznej inteligencji z platformą Learning Machine Learning oraz budowanie pojazdów do gromadzenia próbek wody i analizy jej pH z zestawów klocków Lego. Wszystkie te działania pozwolą uczniom wykorzystać ich umiejętności i wiedzę w praktyce w interaktywnym i interesującym środowisku, co zwiększy ich motywację i zainteresowanie projektem',
-
-                'Realizacja tego działania zakłada realizację trzech działań w klasach, dzięki którym będzie możliwe ukończenie całego projektu w ramach interesujących i motywujących zajęć. Każde z tych zadań może być jednak zrealizowane oddzielnie',
-
-            ],
-            'activities' => [
-                '1' => 'SOS Water z platformą Scratch',
-                '2' => 'SOS Water z uczeniem maszynowym',
-                '3' => 'SOS Water z LEGO Robotics',
-            ],
+            "activities" => [
+                "1" => "SOS Water z platformą Scratch",
+                "2" => "SOS Water z uczeniem maszynowym",
+                "3" => "SOS Water z LEGO Robotics",
+            ]
 
         ],
+
+        "19" => [
+
+            "title" => "Kreatywne laboratorium Scratch",
+            "author" => "Autor: Krzysztof Jaworski",
+            "text" => [
+
+                "W dzisiejszych czasach nauka programowania to coś więcej niż przygotowanie się do pracy jako programista, to też więcej niż czysta informatyka. Należy do niej podejść w sposób interdyscyplinarny, wykorzystując programowanie jako narzędzie do nauki i zabawy, aby wspierać rozwój przyszłych umiejętności.",
+
+                "Dla dzieci i młodych osób kluczowe jest zrozumienie, jak bezpiecznie, odpowiedzialnie i skutecznie korzystać z cyfrowych narzędzi. Muszą zrozumieć, jak te narzędzia działają i wiedzieć, jak się z nimi komunikować poprzez programowanie. Dodatkowo to doświadczenie powinno obejmować współpracę pomiędzy uczniami.",
+
+                "Zadanie <strong>Creative Scratch Laboratory</strong> zwiększy kreatywność uczniów, roznieci ich ciekawość i sprawi, że kodowanie będzie dobrą zabawą.  Składa się ono z trzech planów zajęć dla uczniów o różnych umiejętnościach w zakresie kodowania. W planie zajęć dla osób początkujących uczniowie tworzą postać na papierze, importują ją do programu Scratch i animują, korzystając z wybranych bloków. Na poziomie średnio zaawansowanym uczą się korzystać z narzędzia Obrazki wideo, tworzą grafikę przy użyciu papieru i markerów oraz przygotowują mozaikę Scratch z Obrazkami wideo, stemplami i pracami artystycznymi. W planie zajęć dla osób zaawansowanych uczniowie poznają funkcję rozpoznawania twarzy w Scratch, eksperymentują z manipulowaniem grafiką obrazka oraz tworzą miniteatrzyk z dialogami generowanymi w Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Narysuj i animuj obrazek: dla początkujących",
+                "2" => "Stemple: dla uczniów średnio zaawansowanych",
+                "3" => "Teatrzyk pacynek: dla uczniów zaawansowanych",
+            ]
+        ],
+
 
     ],
     'download_video_script' => '',
@@ -327,7 +349,7 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
         'title' => 'Nie zapomnij o zaznaczeniu swojego wydarzenia na mapie Tygodnia Kodowania.',
         'text' => '<p>Możesz z łatwością zorganizować lekcję w klasie, dzień otwarty lub wydarzenie w swojej szkole. Wybierz tylko datę i dodaj swoje wydarzenie na <a href=" / events">mapie Tygodnia Kodowania</a>. Każdy organizator wydarzenia otrzyma certyfikat uczestnictwa za udział i włożony wysiłek.</p>
 
-<p>Jeśli chcesz nawiązać kontakty z międzynarodową grupą nauczycieli – entuzjastów, dołącz do <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupy dla nauczycieli poświęconej Europejskiemu Tygodniowi Kodowania na Facebooku</a>! Aby pójść o krok dalej i nawiązać współpracę z innymi szkołami w twoim kraju lub w całej Europie, podejmij <a href="/codeweek4all">wyzwanie Tygodnia Kodowania dla wszystkich „Code Week 4 All”</a>.</p>',
-    ],
+<p>Jeśli chcesz nawiązać kontakty z międzynarodową grupą nauczycieli – entuzjastów, dołącz do <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupy dla nauczycieli poświęconej Europejskiemu Tygodniowi Kodowania na Facebooku</a>! Aby pójść o krok dalej i nawiązać współpracę z innymi szkołami w twoim kraju lub w całej Europie, podejmij <a href="/codeweek4all">wyzwanie Tygodnia Kodowania dla wszystkich „Code Week 4 All”</a>.</p>'
+    ]
 
 ];
