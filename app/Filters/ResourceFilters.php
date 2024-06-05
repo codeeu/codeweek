@@ -19,7 +19,6 @@ class ResourceFilters extends Filters
     protected function selectedSection(string $selectedSection): Builder
     {
 
-        dd('here ???');
         //if (is_null($selectedSection)) return;
 
         if ($selectedSection === 'learn') {
@@ -51,106 +50,106 @@ class ResourceFilters extends Filters
         return $result;
     }
 
-    /**
-     * Filter the query by selectedLevels
-     */
-    protected function selectedLevels(array $selectedLevels): Builder
-    {
-        if (count($selectedLevels) == 0) {
-            return $this->builder;
-        }
-        $plucked = collect($selectedLevels)->pluck('id');
+//    /**
+//     * Filter the query by selectedLevels
+//     */
+//    protected function selectedLevels(array $selectedLevels): Builder
+//    {
+//        if (count($selectedLevels) == 0) {
+//            return $this->builder;
+//        }
+//        $plucked = collect($selectedLevels)->pluck('id');
+//
+//        return $this->builder
+//            ->leftJoin('resource_item_resource_level', 'resource_items.id', '=', 'resource_item_resource_level.resource_item_id')
+//            ->whereIn('resource_item_resource_level.resource_level_id', $plucked)
+//            ->groupBy('resource_items.id');
+//
+//    }
 
-        return $this->builder
-            ->leftJoin('resource_item_resource_level', 'resource_items.id', '=', 'resource_item_resource_level.resource_item_id')
-            ->whereIn('resource_item_resource_level.resource_level_id', $plucked)
-            ->groupBy('resource_items.id');
+//    /**
+//     * Filter the query by selectedTypes
+//     */
+//    protected function selectedTypes(array $selectedTypes): Builder
+//    {
+//        if (count($selectedTypes) == 0) {
+//            return $this->builder;
+//        }
+//        $plucked = collect($selectedTypes)->pluck('id');
+//
+//        return $this->builder
+//            ->leftJoin('resource_item_resource_type', 'resource_items.id', '=', 'resource_item_resource_type.resource_item_id')
+//            ->whereIn('resource_item_resource_type.resource_type_id', $plucked)
+//            ->groupBy('resource_items.id');
+//
+//    }
 
-    }
-
-    /**
-     * Filter the query by selectedTypes
-     */
-    protected function selectedTypes(array $selectedTypes): Builder
-    {
-        if (count($selectedTypes) == 0) {
-            return $this->builder;
-        }
-        $plucked = collect($selectedTypes)->pluck('id');
-
-        return $this->builder
-            ->leftJoin('resource_item_resource_type', 'resource_items.id', '=', 'resource_item_resource_type.resource_item_id')
-            ->whereIn('resource_item_resource_type.resource_type_id', $plucked)
-            ->groupBy('resource_items.id');
-
-    }
-
-    /**
-     * Filter the query by selectedSubjects
-     */
-    protected function selectedSubjects(array $selectedSubjects): Builder
-    {
-        if (count($selectedSubjects) == 0) {
-            return $this->builder;
-        }
-        $plucked = collect($selectedSubjects)->pluck('id');
-
-        return $this->builder
-            ->leftJoin('resource_item_resource_subject', 'resource_items.id', '=', 'resource_item_resource_subject.resource_item_id')
-            ->whereIn('resource_item_resource_subject.resource_subject_id', $plucked)
-            ->groupBy('resource_items.id');
-
-    }
-
-    /**
-     * Filter the query by selectedCategories
-     */
-    protected function selectedCategories(array $selectedCategories): Builder
-    {
-        if (count($selectedCategories) == 0) {
-            return $this->builder;
-        }
-        $plucked = collect($selectedCategories)->pluck('id');
-
-        return $this->builder
-            ->leftJoin('resource_category_resource_item', 'resource_items.id', '=', 'resource_category_resource_item.resource_item_id')
-            ->whereIn('resource_category_resource_item.resource_category_id', $plucked)
-            ->groupBy('resource_items.id');
-
-    }
-
-    /**
-     * Filter the query by selectedLanguages
-     */
-    protected function selectedLanguages(array $selectedLanguages): Builder
-    {
-
-        if (count($selectedLanguages) == 0) {
-            return $this->builder;
-        }
-        $plucked = collect($selectedLanguages)->pluck('id');
-
-        return $this->builder
-            ->leftJoin('resource_item_resource_language', 'resource_items.id', '=', 'resource_item_resource_language.resource_item_id')
-            ->whereIn('resource_item_resource_language.resource_language_id', $plucked)
-            ->groupBy('resource_items.id');
-
-    }
-
-    /**
-     * Filter the query by selectedProgrammingLanguages
-     */
-    protected function selectedProgrammingLanguages(array $selectedProgrammingLanguages): Builder
-    {
-        if (count($selectedProgrammingLanguages) == 0) {
-            return $this->builder;
-        }
-        $plucked = collect($selectedProgrammingLanguages)->pluck('id');
-
-        return $this->builder
-            ->leftJoin('res_pl_pivot', 'resource_items.id', '=', 'res_pl_pivot.resource_item_id')
-            ->whereIn('res_pl_pivot.resource_programming_language_id', $plucked)
-            ->groupBy('resource_items.id');
-
-    }
+//    /**
+//     * Filter the query by selectedSubjects
+//     */
+//    protected function selectedSubjects(array $selectedSubjects): Builder
+//    {
+//        if (count($selectedSubjects) == 0) {
+//            return $this->builder;
+//        }
+//        $plucked = collect($selectedSubjects)->pluck('id');
+//
+//        return $this->builder
+//            ->leftJoin('resource_item_resource_subject', 'resource_items.id', '=', 'resource_item_resource_subject.resource_item_id')
+//            ->whereIn('resource_item_resource_subject.resource_subject_id', $plucked)
+//            ->groupBy('resource_items.id');
+//
+//    }
+//
+//    /**
+//     * Filter the query by selectedCategories
+//     */
+//    protected function selectedCategories(array $selectedCategories): Builder
+//    {
+//        if (count($selectedCategories) == 0) {
+//            return $this->builder;
+//        }
+//        $plucked = collect($selectedCategories)->pluck('id');
+//
+//        return $this->builder
+//            ->leftJoin('resource_category_resource_item', 'resource_items.id', '=', 'resource_category_resource_item.resource_item_id')
+//            ->whereIn('resource_category_resource_item.resource_category_id', $plucked)
+//            ->groupBy('resource_items.id');
+//
+//    }
+//
+//    /**
+//     * Filter the query by selectedLanguages
+//     */
+//    protected function selectedLanguages(array $selectedLanguages): Builder
+//    {
+//
+//        if (count($selectedLanguages) == 0) {
+//            return $this->builder;
+//        }
+//        $plucked = collect($selectedLanguages)->pluck('id');
+//
+//        return $this->builder
+//            ->leftJoin('resource_item_resource_language', 'resource_items.id', '=', 'resource_item_resource_language.resource_item_id')
+//            ->whereIn('resource_item_resource_language.resource_language_id', $plucked)
+//            ->groupBy('resource_items.id');
+//
+//    }
+//
+//    /**
+//     * Filter the query by selectedProgrammingLanguages
+//     */
+//    protected function selectedProgrammingLanguages(array $selectedProgrammingLanguages): Builder
+//    {
+//        if (count($selectedProgrammingLanguages) == 0) {
+//            return $this->builder;
+//        }
+//        $plucked = collect($selectedProgrammingLanguages)->pluck('id');
+//
+//        return $this->builder
+//            ->leftJoin('res_pl_pivot', 'resource_items.id', '=', 'res_pl_pivot.resource_item_id')
+//            ->whereIn('res_pl_pivot.resource_programming_language_id', $plucked)
+//            ->groupBy('resource_items.id');
+//
+//    }
 }
