@@ -1,81 +1,63 @@
 <div class="codeweek-resourceform-component">
+    <div class="flex">
+        <div class="w-1/4 bg-orange-50 ml-8 px-4">
+                <div class="space-y-2">
+                    <div class="my-4 text-center text-xl font-bold text-gray-800">Search Resources</div>
 
-    <div class="codeweek-searchbox">
+                    <div class="min-w-48">
+                        <x-input type="text" wire:model.live="searchInput" placeholder="Keyword Search"/>
+                    </div>
+                    <div class="min-w-48">
+                        <x-select.styled wire:model.live="selectedTypes" :options="$types" multiple
+                                         select="label:name|value:id" placeholder="Types"/>
+                    </div>
+                    <div class="min-w-48">
+                        <x-select.styled wire:model.live="selectedLevels" :options="$levels" multiple
+                                         select="label:name|value:id" placeholder="Levels"/>
+                    </div>
+                    <div class="min-w-48">
+                        <x-select.styled wire:model.live="selectedProgrammingLanguages" :options="$programmingLanguages"
+                                         multiple select="label:name|value:id" placeholder="Programming Languages"/>
+                    </div>
+                    <div class="min-w-48">
+                        <x-select.styled wire:model.live="selectedSubjects" :options="$subjects" multiple
+                                         select="label:name|value:id" placeholder="Subjects"/>
+                    </div>
+                    <div class="min-w-48">
+                        <x-select.styled wire:model.live="selectedCategories" :options="$categories" multiple
+                                         select="label:name|value:id" placeholder="Categories"/>
+                    </div>
+                    <div class="min-w-48">
+                        <x-select.styled wire:model.live="selectedLanguages" :options="$languages" multiple
+                                         select="label:name|value:id" placeholder="Languages"/>
+                    </div>
+                </div>
 
 
-        <div class="basic-fields">
-            <div class="codeweek-search-text">
-                <input type="text" wire:model.live.debounce.50ms="searchInput"
-                       placeholder="Search Resources">
+        </div>
+        <div class="w-3/4 mx-8">
+            <div class="codeweek-grid-layout grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                @foreach ($items as $item)
+
+                    <div class="codeweek-card max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+                        <img src="{{$item->thumbnail}}" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="card-title text-xl font-semibold text-gray-800">{{$item->name}}</div>
+                            <div class="card-description text-gray-600 mt-4 flex-grow">
+                                {{$item->description}}
+                            </div>
+                            <div class="card-actions mt-4">
+                                <a href="https://apple.co/sp4-3pp_DEAT" target="_blank"
+                                   class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">{{__('myevents.view')}}</a>
+                            </div>
+                        </div>
+                    </div>
+
+                @endforeach
             </div>
-
-            {{--                        <div class="codeweek-more-button" @click="toggleFilters()">--}}
-            {{--                                <span>{{showFilters ? '-' : '+'}}</span>--}}
-            {{--                        </div>--}}
-        </div>
-
-
-        <div class="advanced-fields">
-            <div class="grid grid-cols-4 gap-8 codeweek-search-text">
-                <div class="min-w-48">
-                    <x-select.styled wire:model.live="selectedTypes" :options="$types" multiple
-                                     select="label:name|value:id" placeholder="Types"/>
-                </div>
-
-                <div class="min-w-48">
-                    <x-select.styled wire:model.live="selectedLevels" :options="$levels" multiple
-                                     select="label:name|value:id" placeholder="Levels"/>
-                </div>
-
-                <div class="min-w-48">
-                    <x-select.styled wire:model.live="selectedProgrammingLanguages" :options="$programmingLanguages" multiple
-                                     select="label:name|value:id" placeholder="Programming Languages"/>
-                </div>
-
-                <div class="min-w-48">
-                    <x-select.styled wire:model.live="selectedSubjects" :options="$subjects" multiple
-                                     select="label:name|value:id" placeholder="Subjects"/>
-                </div>
-
-                <div class="min-w-48">
-                    <x-select.styled wire:model.live="selectedCategories" :options="$categories" multiple
-                                     select="label:name|value:id" placeholder="Categories"/>
-                </div>
-
-                <div class="min-w-48">
-                    <x-select.styled wire:model.live="selectedLanguages" :options="$languages" multiple
-                                     select="label:name|value:id" placeholder="Languages"/>
-                </div>
+            <div class="mt-4">
+                {{ $items->links(data: ['scrollTo' => false]) }}
             </div>
-
         </div>
-
-
     </div>
-
-
-    <div class="codeweek-content-wrapper">
-
-        {{--                <div class="tools">--}}
-
-        {{--                        <button class="codeweek-blank-button"--}}
-        {{--                                v-clipboard:copy="searchQuery"--}}
-        {{--                                v-clipboard:success="onCopy"--}}
-        {{--                                v-clipboard:error="onError">--}}
-        {{--                                {{$t('resources.share')}}--}}
-        {{--                        </button>--}}
-
-        {{--                </div>--}}
-
-
-        <div class="codeweek-grid-layout">
-            @foreach ($items as $item)
-                <div>{{ $item->name }}</div>
-            @endforeach
-        </div>
-
-        {{ $items->links(data: ['scrollTo' => false]) }}
-
-    </div>
-
 </div>

@@ -7,6 +7,7 @@ use Exception;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Facades\Log;
 
 /**
  * App\ResourceItem
@@ -72,16 +73,20 @@ class ResourceItem extends Model
         return $filters->apply($query);
     }
 
-    public function getThumbnailAttribute($value)
+    function getThumbnailAttribute($value)
     {
+        // Get the config value
+        $baseUrl = config('codeweek.resources_url');
 
-        if (! strncmp($value, 'http', 4) === 0) {
-            return config('codeweek.resources_url') + $value;
+        // Check if the value starts with 'http'
+        if (!preg_match('/^http/', $value)) {
+            // Prepend the base URL if it does not start with 'http'
+            $value = rtrim($baseUrl, '/') . '/' . ltrim($value, '/');
         }
 
         return $value;
-
     }
+
 
     public function levels(): BelongsToMany
     {

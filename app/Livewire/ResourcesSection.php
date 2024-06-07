@@ -133,9 +133,10 @@ class ResourcesSection extends Component
                     ->groupBy('resource_items.id');
             })
             ->whereActive(true)
-            ->orderBy('weight', 'desc')
-            ->orderBy('name', 'asc')
+            //->orderBy('weight', 'desc')
+            //->orderBy('name', 'asc')
             ->distinct()
+            ->inRandomOrder()
             ->paginate(30);
 
         Log::info('loading data');

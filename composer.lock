@@ -108,16 +108,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.310.0",
+            "version": "3.311.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8ac02d36c609c6507136e5996f60cfd5152b4fd7"
+                "reference": "90218b9372469babf294f97bdd764c9d47ec8a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8ac02d36c609c6507136e5996f60cfd5152b4fd7",
-                "reference": "8ac02d36c609c6507136e5996f60cfd5152b4fd7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/90218b9372469babf294f97bdd764c9d47ec8a57",
+                "reference": "90218b9372469babf294f97bdd764c9d47ec8a57",
                 "shasum": ""
             },
             "require": {
@@ -197,9 +197,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.310.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.311.1"
             },
-            "time": "2024-06-04T18:05:36+00:00"
+            "time": "2024-06-06T18:05:50+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -5857,16 +5857,16 @@
         },
         {
             "name": "rappasoft/laravel-livewire-tables",
-            "version": "v3.2.5",
+            "version": "v3.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rappasoft/laravel-livewire-tables.git",
-                "reference": "2bd477ec1d5b10fede53cfa0cbc8ffbb815b3a74"
+                "reference": "cd723c1fcf22898c0620328a8a26493b521ea905"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rappasoft/laravel-livewire-tables/zipball/2bd477ec1d5b10fede53cfa0cbc8ffbb815b3a74",
-                "reference": "2bd477ec1d5b10fede53cfa0cbc8ffbb815b3a74",
+                "url": "https://api.github.com/repos/rappasoft/laravel-livewire-tables/zipball/cd723c1fcf22898c0620328a8a26493b521ea905",
+                "reference": "cd723c1fcf22898c0620328a8a26493b521ea905",
                 "shasum": ""
             },
             "require": {
@@ -5926,7 +5926,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rappasoft/laravel-livewire-tables/issues",
-                "source": "https://github.com/rappasoft/laravel-livewire-tables/tree/v3.2.5"
+                "source": "https://github.com/rappasoft/laravel-livewire-tables/tree/v3.2.7"
             },
             "funding": [
                 {
@@ -5934,7 +5934,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-30T16:07:46+00:00"
+            "time": "2024-06-06T01:19:34+00:00"
         },
         {
             "name": "simplepie/simplepie",
@@ -9482,16 +9482,16 @@
         },
         {
             "name": "tallstackui/tallstackui",
-            "version": "v1.28.0",
+            "version": "v1.28.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tallstackui/tallstackui.git",
-                "reference": "f20cc1dd78ebc5c3b09d1a91de0a67d33399adc8"
+                "reference": "fac7cf35234a5fe49c696046a592085c068f83f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/f20cc1dd78ebc5c3b09d1a91de0a67d33399adc8",
-                "reference": "f20cc1dd78ebc5c3b09d1a91de0a67d33399adc8",
+                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/fac7cf35234a5fe49c696046a592085c068f83f9",
+                "reference": "fac7cf35234a5fe49c696046a592085c068f83f9",
                 "shasum": ""
             },
             "require": {
@@ -9535,7 +9535,7 @@
             "description": "TallStackUI is a powerful suite of Blade components that elevate your workflow of Livewire applications.",
             "support": {
                 "issues": "https://github.com/tallstackui/tallstackui/issues",
-                "source": "https://github.com/tallstackui/tallstackui/tree/v1.28.0"
+                "source": "https://github.com/tallstackui/tallstackui/tree/v1.28.1"
             },
             "funding": [
                 {
@@ -9543,7 +9543,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-03T04:02:16+00:00"
+            "time": "2024-06-06T21:13:26+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
