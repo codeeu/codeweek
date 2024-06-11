@@ -19,10 +19,12 @@
                         <x-select.styled wire:model.live="selectedProgrammingLanguages" :options="$programmingLanguages"
                                          multiple select="label:name|value:id" placeholder="Programming Languages"/>
                     </div>
+                    @if($section === 'teach')
                     <div class="min-w-48">
                         <x-select.styled wire:model.live="selectedSubjects" :options="$subjects" multiple
                                          select="label:name|value:id" placeholder="Subjects"/>
                     </div>
+                    @endif
                     <div class="min-w-48">
                         <x-select.styled wire:model.live="selectedCategories" :options="$categories" multiple
                                          select="label:name|value:id" placeholder="Categories"/>
@@ -41,13 +43,13 @@
 
                     <div class="codeweek-card max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
                         <img src="{{$item->thumbnail}}" class="w-full h-48 object-cover">
-                        <div class="p-6 flex flex-col flex-grow">
+                        <div class="p-4 flex flex-col flex-grow">
                             <div class="card-title text-xl font-semibold text-gray-800">{{$item->name}}</div>
-                            <div class="card-description text-gray-600 mt-4 flex-grow">
+                            <div class="card-description text-gray-600 mt-4">
                                 {{$item->description}}
                             </div>
                             <div class="card-actions mt-4">
-                                <a href="https://apple.co/sp4-3pp_DEAT" target="_blank"
+                                <a href="{{$item->source}}" target="_blank"
                                    class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">{{__('myevents.view')}}</a>
                             </div>
                         </div>
