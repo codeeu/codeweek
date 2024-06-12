@@ -17,7 +17,7 @@
         <section class="codeweek-content-wrapper">
 
             @foreach($questions as $question)
-                <question :question="{{json_encode($question)}}"></question>
+                @livewire('question-component', ['question' => $question])
             @endforeach
 
         </section>
