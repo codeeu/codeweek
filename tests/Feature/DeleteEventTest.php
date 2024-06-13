@@ -7,18 +7,14 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-
 class DeleteEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-    public function setup() :void
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-
 
     }
 
@@ -44,7 +40,6 @@ class DeleteEventTest extends TestCase
 
         $this->assertTrue($event->fresh()->trashed());
 
-
     }
 
     /** @test */
@@ -57,7 +52,7 @@ class DeleteEventTest extends TestCase
 
         $this->signIn($user);
 
-        $event = create('App\Event', ['creator_id'=> $user->id]);
+        $event = create('App\Event', ['creator_id' => $user->id]);
 
         $this->post(route('event.delete', $event));
 
@@ -65,7 +60,6 @@ class DeleteEventTest extends TestCase
         Mail::assertNotQueued(EventDeleted::class);
 
         $this->assertTrue($event->fresh()->trashed());
-
 
     }
 
@@ -86,7 +80,6 @@ class DeleteEventTest extends TestCase
 
         $this->assertTrue($event->fresh()->trashed());
 
-
     }
 
     /** @test */
@@ -94,7 +87,6 @@ class DeleteEventTest extends TestCase
     {
 
         $this->withExceptionHandling();
-
 
         $ambassador = create('App\User', ['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
@@ -106,7 +98,6 @@ class DeleteEventTest extends TestCase
         $this->post(route('event.delete', $event));
 
         $this->assertFalse($event->fresh()->trashed());
-
 
     }
 
@@ -126,12 +117,5 @@ class DeleteEventTest extends TestCase
 
         $this->assertFalse($event->fresh()->trashed());
 
-
     }
-
-
-
-
 }
-
-

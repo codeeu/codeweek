@@ -2,15 +2,9 @@
 
 namespace Tests\Feature;
 
-use App\Event;
-use App\Helpers\ReminderHelper;
-use App\Mail\RemindCreator;
-use App\Mail\RemindersSummary;
 use App\Mail\WarningEmail;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
@@ -23,7 +17,7 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        create('App\Participation', ['participation_url'=>null, 'created_at'=>Carbon::now()->subDay()]);
+        create('App\Participation', ['participation_url' => null, 'created_at' => Carbon::now()->subDay()]);
 
         $this->artisan('certificate:issues');
 
@@ -36,7 +30,7 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        create('App\Participation', ['participation_url'=>'url//', 'created_at'=>Carbon::now()->subDay()]);
+        create('App\Participation', ['participation_url' => 'url//', 'created_at' => Carbon::now()->subDay()]);
 
         $this->artisan('certificate:issues');
 
@@ -49,13 +43,11 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        create('App\Participation', ['participation_url'=>'url//', 'created_at'=>Carbon::now()]);
+        create('App\Participation', ['participation_url' => 'url//', 'created_at' => Carbon::now()]);
 
         $this->artisan('certificate:issues');
 
         Mail::assertNotQueued(WarningEmail::class);
 
     }
-
-
 }

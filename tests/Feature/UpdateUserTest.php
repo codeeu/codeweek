@@ -7,16 +7,15 @@ use Tests\TestCase;
 
 class UpdateUserTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     /** @test */
-    function a_user_can_be_updated_by_its_owner()
+    public function a_user_can_be_updated_by_its_owner()
     {
         $user = create(\App\User::class);
 
         $this->signIn($user);
-        $belgium = create('App\Country',['iso'=>'BE']);
+        $belgium = create('App\Country', ['iso' => 'BE']);
 
         $this->patch('user', [
             'firstname' => 'Changed firstname',
@@ -51,7 +50,7 @@ class UpdateUserTest extends TestCase
             'website' => 'Changed Website',
             'country_iso' => 'BE',
             'privacy' => 0,
-            'receive_emails' => 1
+            'receive_emails' => 1,
         ]);
 
         tap($user->fresh(), function ($user) {
@@ -63,12 +62,11 @@ class UpdateUserTest extends TestCase
     }
 
     /** @test */
-    function a_user_cant_update_its_email()
+    public function a_user_cant_update_its_email()
     {
         $user = create(\App\User::class);
 
         $this->signIn($user);
-
 
         $this->patch('user', [
             'email' => 'newmail@test.com',

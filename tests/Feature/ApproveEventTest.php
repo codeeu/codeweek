@@ -3,24 +3,18 @@
 namespace Tests\Feature;
 
 use App\Mail\EventApproved;
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ApproveEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-    public function setup() :void
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-
 
     }
 
@@ -31,7 +25,6 @@ class ApproveEventTest extends TestCase
         Mail::fake();
 
         $this->withExceptionHandling();
-
 
         $superadmin = create('App\User');
         $superadmin->assignRole('super admin');
@@ -64,7 +57,6 @@ class ApproveEventTest extends TestCase
 
         $event = create('App\Event', ['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
 
-
         $event->approve();
 
         // Assert a message was sent to the given users...
@@ -89,9 +81,7 @@ class ApproveEventTest extends TestCase
 
         $event = create('App\Event', ['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
 
-
         $event->approve();
-
 
         // Assert a message was sent to the given users...
         Mail::assertQueued(EventApproved::class, function ($mail) use ($superadmin) {
@@ -109,29 +99,25 @@ class ApproveEventTest extends TestCase
 
         Mail::fake();
 
-        $superadmin = create('App\User', ['email' => NULL]);
+        $superadmin = create('App\User', ['email' => null]);
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
         $event = create('App\Event', ['status' => 'PENDING', 'user_email' => '', 'creator_id' => $superadmin->id]);
 
-
         $event->approve();
-
 
         // Assert a message was sent to the given users...
         Mail::assertNotQueued(EventApproved::class);
 
     }
 
-
     /** @test */
     public function event_cant_be_approved_by_ambassador_of_other_country()
     {
 
         $this->withExceptionHandling();
-
 
         $ambassador = create('App\User', ['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
@@ -145,7 +131,6 @@ class ApproveEventTest extends TestCase
         $this->post(route('event.approve', $event))->assertStatus(403);
 
         //$this->assertEquals($event->fresh()->status, 'PENDING');
-
 
     }
 
@@ -170,7 +155,6 @@ class ApproveEventTest extends TestCase
 
         $this->assertEquals($event->fresh()->status, 'APPROVED');
 
-
     }
 
     /** @test */
@@ -179,9 +163,8 @@ class ApproveEventTest extends TestCase
 
         $event = create('App\Event');
 
-        $this->get('/view/' . $event->id . '/random')
+        $this->get('/view/'.$event->id.'/random')
             ->assertDontSee('moderate-event');
-
 
     }
 
@@ -193,7 +176,7 @@ class ApproveEventTest extends TestCase
 
         $event = create('App\Event', ['country_iso' => 'BE']);
 
-        $this->get('/view/' . $event->id . '/random')
+        $this->get('/view/'.$event->id.'/random')
             ->assertDontSee('moderate-event');
 
     }
@@ -206,12 +189,8 @@ class ApproveEventTest extends TestCase
 
         $event = create('App\Event', ['country_iso' => 'FR']);
 
-        $this->get('/view/' . $event->id . '/random')
+        $this->get('/view/'.$event->id.'/random')
             ->assertSee('moderate-event');
 
     }
-
-
 }
-
-

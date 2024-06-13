@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+use JMac\Testing\Traits\AdditionalAssertions;
 use App\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
@@ -10,7 +11,7 @@ use Mockery;
 
 abstract class TestCase extends BaseTestCase
 {
-    use CreatesApplication;
+    use CreatesApplication, AdditionalAssertions;
 
     protected function setUp(): void
     {

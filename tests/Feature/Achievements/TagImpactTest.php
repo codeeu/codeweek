@@ -2,18 +2,13 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use App\Achievements\Events\UserEarnedExperience;
 use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-
-use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
 class TagImpactTest extends TestCase
 {
-
     use RefreshDatabase;
 
     /** @test */
@@ -28,13 +23,13 @@ class TagImpactTest extends TestCase
 
         $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
 
-        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null,'leading_teacher_tag'=>'foo-TEST123-bar'], 50);
+        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 50);
 
         $this->assertCount(0, $user->achievements);
 
-        foreach ($fifty_events as $event){
+        foreach ($fifty_events as $event) {
             $event->update([
-                'status' => 'APPROVED'
+                'status' => 'APPROVED',
             ]);
         }
 
@@ -42,7 +37,7 @@ class TagImpactTest extends TestCase
 
         $this->assertCount(5, $LT1->fresh()->achievements);
 
-        $this->assertEquals("Influencer " . Carbon::now()->year, $LT1->fresh()->achievements[0]->name);
+        $this->assertEquals('Influencer '.Carbon::now()->year, $LT1->fresh()->achievements[0]->name);
 
     }
 
@@ -58,13 +53,13 @@ class TagImpactTest extends TestCase
 
         $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
 
-        $ten_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null,'leading_teacher_tag'=>'foo-TEST123-bar'], 5);
+        $ten_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 5);
 
         $this->assertCount(0, $user->achievements);
 
-        foreach ($ten_events as $event){
+        foreach ($ten_events as $event) {
             $event->update([
-                'status' => 'APPROVED'
+                'status' => 'APPROVED',
             ]);
         }
 
@@ -72,18 +67,15 @@ class TagImpactTest extends TestCase
 
         $this->assertCount(1, $LT1->fresh()->achievements);
 
-        $bad_event = Event::firstWhere('id','=',3);
+        $bad_event = Event::firstWhere('id', '=', 3);
 
         $bad_event->update([
-            'status' => 'PENDING'
+            'status' => 'PENDING',
         ]);
 
         $this->assertEquals(8, $LT1->fresh()->getExperience()->points);
 
         $this->assertCount(0, $LT1->fresh()->achievements);
 
-
-
     }
-
 }

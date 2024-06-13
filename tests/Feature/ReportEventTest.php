@@ -12,7 +12,6 @@ use Tests\TestCase;
 
 class ReportEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     protected $event;
@@ -22,8 +21,7 @@ class ReportEventTest extends TestCase
         parent::setUp();
 
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create('App\Event', ["status" => "APPROVED", "start_date" => Carbon::now()->subMonth(1)]);
-
+        $this->event = create('App\Event', ['status' => 'APPROVED', 'start_date' => Carbon::now()->subMonth(1)]);
 
     }
 
@@ -33,12 +31,10 @@ class ReportEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-
         $this->signIn($this->event->owner);
 
-        $this->get('/view/' . $this->event->id . '/random')
-            ->assertSee("report-event");
-
+        $this->get('/view/'.$this->event->id.'/random')
+            ->assertSee('report-event');
 
     }
 
@@ -48,10 +44,8 @@ class ReportEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-
-        $this->get('/view/' . $this->event->id . '/random')
-            ->assertDontSee("report-event");
-
+        $this->get('/view/'.$this->event->id.'/random')
+            ->assertDontSee('report-event');
 
     }
 
@@ -61,13 +55,11 @@ class ReportEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-
-        $future_event = create('App\Event', ["start_date" => Carbon::now()->addMonth(1)]);
+        $future_event = create('App\Event', ['start_date' => Carbon::now()->addMonth(1)]);
         $this->signIn($future_event->owner);
 
-        $this->get('/view/' . $future_event->id . '/random')
-            ->assertDontSee("report-event");
-
+        $this->get('/view/'.$future_event->id.'/random')
+            ->assertDontSee('report-event');
 
     }
 
@@ -77,9 +69,8 @@ class ReportEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $this->post('/api/event/report/' . $this->event->id)
+        $this->post('/api/event/report/'.$this->event->id)
             ->assertRedirect();
-
 
     }
 
@@ -96,14 +87,13 @@ class ReportEventTest extends TestCase
         $this->assertEquals($this->event->reported_at, null);
 
         $request = [
-            "participants_count" => 10,
-            "average_participant_age" => 20,
-            "percentage_of_females" => 30,
-            "codeweek_for_all_participation_code" => "foobar",
-            "name_for_certificate" => "sdsqdsq"
+            'participants_count' => 10,
+            'average_participant_age' => 20,
+            'percentage_of_females' => 30,
+            'codeweek_for_all_participation_code' => 'foobar',
+            'name_for_certificate' => 'sdsqdsq',
         ];
-        $this->post('/event/report/' . $this->event->id, $request);
-
+        $this->post('/event/report/'.$this->event->id, $request);
 
         $event = Event::where('id', $this->event->id)->first();
 
@@ -111,8 +101,8 @@ class ReportEventTest extends TestCase
         $this->assertEquals($event->participants_count, 10);
         $this->assertEquals($event->average_participant_age, 20);
         $this->assertEquals($event->percentage_of_females, 30);
-        $this->assertEquals($event->codeweek_for_all_participation_code, "foobar");
-        $this->assertEquals($event->name_for_certificate, "sdsqdsq");
+        $this->assertEquals($event->codeweek_for_all_participation_code, 'foobar');
+        $this->assertEquals($event->name_for_certificate, 'sdsqdsq');
 
     }
 
@@ -122,17 +112,15 @@ class ReportEventTest extends TestCase
 
         //$this->withExceptionHandling();
 
-
         $request = [
-            "participants_count" => 10,
-            "average_participant_age" => 20,
-            "percentage_of_females" => 30,
-            "codeweek_for_all_participation_code" => "foobar",
-            "name_for_certificate" => "sdsqdsq"
+            'participants_count' => 10,
+            'average_participant_age' => 20,
+            'percentage_of_females' => 30,
+            'codeweek_for_all_participation_code' => 'foobar',
+            'name_for_certificate' => 'sdsqdsq',
         ];
-        $this->post('/event/report/' . $this->event->id, $request)
+        $this->post('/event/report/'.$this->event->id, $request)
             ->assertStatus(Response::HTTP_FORBIDDEN);
-
 
     }
 
@@ -147,7 +135,6 @@ class ReportEventTest extends TestCase
         $faultyReportedEvent = create('App\Event', ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'reported_at' => Carbon::now(), 'certificate_url' => null]);
         $myNonReportableEvent = create('App\Event', ['creator_id' => auth()->id(), 'status' => 'PENDING']);
         $notMyEvent = create('App\Event', ['status' => 'APPROVED']);
-
 
         $this->get('/events_to_report')
             ->assertSee($myReportableEvent->title)
@@ -171,10 +158,9 @@ class ReportEventTest extends TestCase
     public function text_should_be_detected_as_greek()
     {
 
-        $this->event->name_for_certificate = "Λιανού Κυριακή - Lianou Kiriaki 10ο Δημοτικό Σχολείο Αιγάλεω";
+        $this->event->name_for_certificate = 'Λιανού Κυριακή - Lianou Kiriaki 10ο Δημοτικό Σχολείο Αιγάλεω';
         $certificate = new Certificate($this->event);
         $this->asserttrue($certificate->is_greek());
-
 
     }
 
@@ -182,10 +168,9 @@ class ReportEventTest extends TestCase
     public function text_should_be_detected_as_greek_with_all_uppercase()
     {
 
-        $this->event->name_for_certificate = "ΖΑΧΑΡΩΦ ΣΟΝΙΑ";
+        $this->event->name_for_certificate = 'ΖΑΧΑΡΩΦ ΣΟΝΙΑ';
         $certificate = new Certificate($this->event);
         $this->asserttrue($certificate->is_greek());
-
 
     }
 
@@ -193,10 +178,9 @@ class ReportEventTest extends TestCase
     public function text_should_be_detected_as_greek_with_one_greek_char()
     {
 
-        $this->event->name_for_certificate = "This is a Σ";
+        $this->event->name_for_certificate = 'This is a Σ';
         $certificate = new Certificate($this->event);
         $this->asserttrue($certificate->is_greek());
-
 
     }
 
@@ -204,10 +188,9 @@ class ReportEventTest extends TestCase
     public function text_should_not_be_detected_as_greek_with_one_special_char()
     {
 
-        $this->event->name_for_certificate = "Teacher Di Lella Lucia and the 1D con l’evento  “Di Pixel in Pixel.. cosa apparirà?:stuck_out_tongue_winking_eye:";
+        $this->event->name_for_certificate = 'Teacher Di Lella Lucia and the 1D con l’evento  “Di Pixel in Pixel.. cosa apparirà?:stuck_out_tongue_winking_eye:';
         $certificate = new Certificate($this->event);
         $this->assertfalse($certificate->is_greek());
-
 
     }
 
@@ -220,8 +203,4 @@ class ReportEventTest extends TestCase
         $this->assertfalse($certificate->is_greek());
 
     }
-
-
 }
-
-

@@ -5,20 +5,20 @@ namespace Tests\Feature;
 use App\Event;
 use App\Helpers\EventHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
-class RelocateCenteredActivities extends TestCase {
+class RelocateCenteredActivities extends TestCase
+{
     use DatabaseMigrations;
 
     /** @test */
-    function it_should_filter_centered_and_non_relocated_events() {
+    public function it_should_filter_centered_and_non_relocated_events()
+    {
         $france = create('App\Country', [
             'iso' => 'FR',
             'longitude' => 2.824354,
-            'latitude' => 46.980252
+            'latitude' => 46.980252,
         ]);
 
         $this->signIn(create('App\User'));
@@ -28,7 +28,7 @@ class RelocateCenteredActivities extends TestCase {
             'geoposition' => '46.980252,2.824354',
             'title' => 'foobar is love',
             'longitude' => 2.824354,
-            'latitude' => 46.980252
+            'latitude' => 46.980252,
         ]);
 
         $relocated = create('App\Event', [
@@ -36,7 +36,7 @@ class RelocateCenteredActivities extends TestCase {
             'geoposition' => '46.980252,2.824354',
             'longitude' => 2.824354,
             'latitude' => 46.980252,
-            'relocated' => true
+            'relocated' => true,
         ]);
 
         $elsewhere = create('App\Event', [
@@ -44,7 +44,7 @@ class RelocateCenteredActivities extends TestCase {
             'geoposition' => '47.980252,3.824354',
             'longitude' => 3.824354,
             'latitude' => 47.980252,
-            'relocated' => false
+            'relocated' => false,
         ]);
 
         $online = create('App\Event', [
@@ -53,7 +53,7 @@ class RelocateCenteredActivities extends TestCase {
             'longitude' => 2.824354,
             'latitude' => 46.980252,
             'location' => 'online',
-            'relocated' => false
+            'relocated' => false,
         ]);
 
         $events = EventHelper::getCenteredNotRelocatedEvents('FR');
