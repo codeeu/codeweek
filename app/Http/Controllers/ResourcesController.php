@@ -48,6 +48,7 @@ class ResourcesController extends Controller
         $languages = \App\ResourceLanguage::where($section, '=', true)->orderBy('position')->get();
 
         $programmingLanguages = \App\ResourceProgrammingLanguage::where($section, '=', true)->orderBy('position')->get();
+
         $categories = \App\ResourceCategory::where($section, '=', true)->orderBy('position')->get();
         $subjects = \App\ResourceSubject::where($section, '=', true)->orderBy('position')->get();
 

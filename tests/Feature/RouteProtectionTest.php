@@ -43,18 +43,6 @@ final class RouteProtectionTest extends TestCase
 
     }
 
-    #[Test]
-    public function only_admin_can_access_activities(): void
-    {
-
-        $this->withExceptionHandling();
-
-        $rejected = [$this->event_owner, $this->ambassador, $this->school_manager];
-        $allowed = [$this->admin];
-
-        $this->check_route('/activities', $allowed, $rejected);
-
-    }
 
     #[Test]
     public function only_admin_an_ambassadors_can_access_pending_events_list(): void

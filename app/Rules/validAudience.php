@@ -8,13 +8,12 @@ use Illuminate\Contracts\Validation\ValidationRule;
 
 class validAudience implements ValidationRule
 {
-    public function validate(string $attribute, mixed $value, Closure $fail): void
+    public function validate($attribute, mixed $value, Closure $fail): void
     {
-        foreach (explode(',', $value) as $audience_id) {
+        foreach ($value as $audience_id) {
             if (is_null(Audience::firstWhere('id', $audience_id))) {
                 $fail('The audience is invalid');
             }
         }
-
     }
 }
