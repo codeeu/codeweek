@@ -39,7 +39,7 @@ final class UserTest extends TestCase
 
         $user = \App\User::factory()->create(['avatar_path' => null]);
 
-        $this->assertEquals(config('codeweek.aws_url').'avatars/default_avatar.png', $user->avatar);
+        $this->assertEquals(config('codeweek.aws_url').'avatars/default.png', $user->avatar);
 
     }
 

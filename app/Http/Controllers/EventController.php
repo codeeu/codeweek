@@ -98,6 +98,7 @@ class EventController extends Controller
 
         $leading_teachers = $this->getLeadingTeachersTagsArray();
 
+
         if ($request->get('location')) {
             $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
 
@@ -125,6 +126,8 @@ class EventController extends Controller
      */
     public function store(EventRequest $request): View
     {
+        //dd($request->all());
+
         $user = auth()->user();
 
         $user->privacy = true;

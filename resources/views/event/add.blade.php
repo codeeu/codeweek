@@ -113,27 +113,41 @@
                         <h3>@lang('event.who')</h3>
 
 
-                        <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field">
-                                <label for="id_audience">*@lang('event.audience_title')</label>
-                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"
-                                             :multiple="true"
-                                             label="event.audience"></multiselect>
-                            </div>
-                            <div class="errors">
-                                @component('components.validation-errors', ['field'=>'audience'])@endcomponent
+                        <div class="flex items-center space-x-4 mb-4">
+                            <label for="id_audience" class="w-1/5 text-right font-medium text-black">
+                                *@lang('event.audience_title')
+                            </label>
+                            <div class="w-4/5">
+                                <select name="audience" id="audience-multi-select" data-search=false
+                                        data-placeholder="{{__('event.audience_title')}}" search="false"
+                                        multiple="multiple" data-multi-select
+                                        class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                    @foreach($audiences as $audience)
+                                        <option {{ (collect(old('audience'))->contains($audience->id)) ? 'selected':'' }} value="{{ $audience->id }}">{{ __('event.audience.'.$audience->name) }}</option>
+                                    @endforeach
+                                </select>
+                                <div class="mt-1 text-red-600">
+                                    @component('components.validation-errors', ['field' => 'audience'])@endcomponent
+                                </div>
                             </div>
                         </div>
 
-                        <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field">
-                                <label for="id_theme">*@lang('event.theme_title')</label>
-                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme"
-                                             :multiple="true"
-                                             label="event.theme"></multiselect>
-                            </div>
-                            <div class="errors">
-                                @component('components.validation-errors', ['field'=>'theme'])@endcomponent
+                        <div class="flex items-center space-x-4 mb-4">
+                            <label for="id_theme" class="w-1/5 text-right font-medium text-black">
+                                *@lang('event.theme_title')
+                            </label>
+                            <div class="w-4/5">
+                                <select name="theme" id="example-multi-select" data-search=false
+                                        data-placeholder="Select options" search="false" multiple="multiple"
+                                        data-multi-select
+                                        class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                    @foreach($themes as $theme)
+                                        <option {{ (collect(old('theme'))->contains($theme->id)) ? 'selected':'' }} value="{{ $theme->id }}">{{ __('event.theme.'.$theme->name) }}</option>
+                                    @endforeach
+                                </select>
+                                <div class="mt-1 text-red-600">
+                                    @component('components.validation-errors', ['field' => 'theme'])@endcomponent
+                                </div>
                             </div>
                         </div>
 
@@ -189,8 +203,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_start_date">*@lang('event.start.label')</label>
-                                <date-time name="start_date" placeholder="@lang('event.start.placeholder')"
-                                           value="{{old('start_date')}}"></date-time>
+                                <input name="start_date" type="datetime-local" value="{{old('start_date')}}"
+                                       placeholder="@lang('event.start.placeholder')">
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'start_date'])@endcomponent
@@ -200,8 +214,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_end_date">*@lang('event.end.label')</label>
-                                <date-time name="end_date" placeholder="@lang('event.end.placeholder')"
-                                           value="{{old('end_date')}}"></date-time>
+                                <input name="end_date" type="datetime-local" value="{{old('end_date')}}"
+                                       placeholder="@lang('event.end.placeholder')">
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'end_date'])@endcomponent
@@ -233,12 +247,33 @@
                             </div>
                         </div>
 
-                        <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field">
-                                <label for="id_tags">@lang('event.tags')</label>
-                                <input-tags value="{{old('tags')}}"></input-tags>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <label for="id_tags" class="w-1/5 text-right font-medium text-black">
+                                @lang('event.tags')
+                            </label>
+                            <div x-data="tagComponent()" class="w-4/5">
+                                <div class="flex flex-wrap border p-2 rounded-full">
+                                    <template x-for="(tag, index) in tags" :key="index">
+                                        <div class="bg-blue-100 text-blue-700 px-2 py-1 m-1 rounded-full flex items-center">
+                                            <span x-text="tag"></span>
+                                            <button @click.prevent="removeTag(index)" class="ml-2 text-red-500">x</button>
+                                        </div>
+                                    </template>
+                                    <input
+                                            type="text"
+                                            x-model="tagInput"
+                                            @keydown.enter.prevent="addTag()"
+                                            @keydown.tab.prevent="addTag()"
+                                            class="flex-grow p-2 border-none focus:outline-none"
+                                            placeholder="Enter a tag and press Enter or Tab"
+                                    >
+                                </div>
+                                <input type="hidden" name="tags" :value="tags.join(',')">
                             </div>
                         </div>
+
+
+
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field align-flex-start">
@@ -257,24 +292,35 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field-searchable">
                                 <label for="id_leading_teacher_tag_label">@lang('community.titles.2')</label>
-                                <singleselect :options="{{ json_encode($leading_teachers) }}"
-                                              value="{{ old('leading_teacher_tag') }}"
-                                              name="leading_teacher_tag"
-                                              placeholder="{{__('community.titles.2')}}"
-                                              ></singleselect>
+
+                                <select name="leading_teacher_tag" id="id_leading_teacher_tag_label" data-search=true
+                                        data-placeholder="Select Leading Teacher"
+                                        class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                        <option value=""></option>
+                                        @foreach ($leading_teachers as $leading_teacher)
+                                            <option value="{{$leading_teacher}}" {{old('leading_teacher_tag') == $leading_teacher ? 'selected' : ''}}>{{$leading_teacher}}</option>
+                                        @endforeach
+
+                                </select>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'theme'])@endcomponent
                             </div>
                         </div>
 
-                        <div class="codeweek-form-field">
-                            <label for="id_picture">@lang('event.image')</label>
-                            <div data-provides="fileinput" data-name="picture">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <label for="id_picture" class="w-1/5 text-right font-medium text-black">
+                                @lang('event.image')
+                            </label>
+                            <div data-provides="fileinput" data-name="picture" class="w-4/5">
                                 <div class="fileinput-new">
-                                    <div class="fileinput-preview fileinput-exists"></div>
+                                    <div class="fileinput-preview fileinput-exists mb-4">
+                                        <img id="imagePreview" src="" alt="Image Preview" class="hidden w-24 h-24 rounded-md border"/>
+                                    </div>
                                     <div>
-                                        <picture-form></picture-form>
+                                        <!-- file upload -->
+                                        <input type="file" id="imageUpload" accept="image/*" onchange="showPreview(event);" class="hidden">
+                                        <button type="button" class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400" onclick="document.getElementById('imageUpload').click();">Upload Image</button>
                                     </div>
                                 </div>
                             </div>
@@ -295,7 +341,7 @@
                             <input id="id_user_email" name="user_email" type="email"
                                    placeholder="@lang('event.contact.placeholder')"
                                    value="{{old('user_email')}}"
-                            track-by="tag"
+                                   track-by="tag"
                                    label="tag">
                         </div>
                         <div class="errors">
@@ -349,13 +395,6 @@
         }
 
 
-
-
-
-
-
-
-
     </script>
 
     <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
@@ -378,6 +417,39 @@
                 isOnlineActivitySelected() {
                     return (this.selectedActivityType === 'open-online' || this.selectedActivityType === 'invite-online')
                 },
+            }
+        }
+    </script>
+
+    <script>
+        function tagComponent() {
+            return {
+                tagInput: '',
+                tags: [],
+                addTag() {
+                    if (this.tagInput.trim() !== '' && !this.tags.includes(this.tagInput.trim())) {
+                        this.tags.push(this.tagInput.trim());
+                        this.tagInput = '';
+                    }
+                },
+                removeTag(index) {
+                    this.tags.splice(index, 1);
+                }
+            };
+        }
+    </script>
+
+    <script>
+        function showPreview(event) {
+            var file = event.target.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var preview = document.getElementById('imagePreview');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
             }
         }
     </script>

@@ -20,7 +20,7 @@
 
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="{{asset('css/MultiSelect.css')}}">
     <tallstackui:script />
 
     @stack('extra-css')
@@ -67,7 +67,7 @@
 
 
 <body>
-<x-toast />
+
 <!-- Document Wrapper -->
 <div id="app">
 
@@ -113,7 +113,7 @@
 
 <script src="https://unpkg.com/vue-select@latest"></script>
 {{--<script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js?_g=1663162661" async></script>--}}
-
+<script src="{{asset('js/MultiSelect.js')}}"></script>
 @stack('scripts')
 
 @yield('extra-js')
