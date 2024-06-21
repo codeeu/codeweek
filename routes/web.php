@@ -431,7 +431,7 @@ Route::middleware('role:super admin')->group(function () {
 });
 
 Route::middleware('role:super admin')->group(function () {
-    Route::get('/activities', [AdminController::class, 'activities'])->name('activities');
+
     Route::get('/pending/{country}', [PendingEventsController::class, 'index'])->name(
         'pending_by_country'
     );
@@ -500,13 +500,7 @@ Route::middleware('role:super admin')->group(function () {
         [MailTemplateController::class, 'remindcreators']
     );
 
-    Route::get('/admin/certificates', [AdminController::class, 'certificates'])->name(
-        'admin_certificates'
-    );
-    Route::post(
-        '/admin/certificates',
-        [AdminController::class, 'generateCertificates']
-    )->name('generate_certificates');
+
 
 });
 
@@ -629,8 +623,6 @@ $challenges = function () {
 
 Route::prefix('2021/challenges')->group($challenges);
 Route::prefix('challenges')->group($challenges);
-
-Route::view('/leaflet', 'map.leaflet')->name('leaflet');
 
 Route::get(
     'leading-teachers-document',
