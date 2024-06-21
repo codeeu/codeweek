@@ -1,4 +1,4 @@
-@extends('layout.tall')
+@extends('layout.base')
 
 
 @include('components.tailwind')

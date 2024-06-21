@@ -330,11 +330,15 @@ class User extends Authenticatable
     {
 
         if (is_null($avatar)) {
-            $avatar = 'avatars/default_avatar.png';
+            $avatar = 'avatars/default.png';
         }
 
         return Storage::disk('s3')->url($avatar);
 
+    }
+    public function getOriginalAvatarPathAttribute()
+    {
+        return $this->attributes['avatar_path'];
     }
 
     /**
@@ -344,7 +348,6 @@ class User extends Authenticatable
      */
     public function getAvatarAttribute(): string
     {
-
         $arr = explode('/', $this->avatar_path);
         $filename = array_pop($arr);
         array_push($arr, $filename);

@@ -66,7 +66,7 @@
                     })
             },
             remove() {
-                console.log("delete me");
+                console.log("delete me");w
 
                 axios.delete(`/api/users/avatar`)
                     .then(() => flash('Avatar deleted!'));
