@@ -20,7 +20,7 @@
 
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
-
+{{--    @livewireScripts--}}
     <tallstackui:script />
 
     @stack('extra-css')

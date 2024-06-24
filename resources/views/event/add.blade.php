@@ -1,5 +1,6 @@
 @extends('layout.base')
 
+
 @section('content')
 
     <section id="codeweek-events-add-page" class="codeweek-page">
@@ -165,14 +166,18 @@
                                     </a>
 
                                 </label>
+
+
                                 <div>
-                                    <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"
-                                                      value="{{old('location')?:$location->location??''}}"
-                                                      geoposition="{{old('geoposition')?:$location->geoposition??''}}"></autocomplete-geo>
+
+<livewire:address-autocomplete />
+{{--                                    <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"--}}
+{{--                                                      value="{{old('location')?:$location->location??''}}"--}}
+{{--                                                      geoposition="{{old('geoposition')?:$location->geoposition??''}}"></autocomplete-geo>--}}
                                     <div class="errors" style="margin-bottom: 10px; margin-left:0;">
                                         @component('components.validation-errors', ['field'=>'location'])@endcomponent
                                     </div>
-                                    <div id="events-add-map"></div>
+{{--                                    <div id="events-add-map"></div>--}}
                                 </div>
                             </div>
                         </div>
@@ -399,7 +404,7 @@
 
     <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+{{--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>--}}
 
 
     <script>
@@ -453,6 +458,8 @@
             }
         }
     </script>
+
+
 
 @endpush
 
