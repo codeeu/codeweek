@@ -14,6 +14,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Api;
 // use App\Http\Controllers\Auth;
+use App\Http\Controllers\ArcgisController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BadgesController;
 use App\Http\Controllers\CertificateController;
@@ -644,6 +645,9 @@ Route::view('/online-courses', 'online-courses')->name('online-courses');
 Route::view('/test', 'test');
 
 Route::get('/hackathons', [HackathonsController::class, 'index'])->name('hackathons');
+
+Route::get('/arcgis/candidates', [ArcgisController::class,'candidates'])->name('candidates');
+Route::get('/arcgis/selected-address', [ArcgisController::class,'selectedAddress'])->name('selected-address');
 
 Auth::routes();
 Route::feeds();

@@ -155,31 +155,42 @@
 
                     </div>
 
+
                     <div class="codeweek-form-inner-container">
+
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field align-flex-start">
+
+                            <div class="flex items-center space-x-4 mb-4">
                                 <label for="id_location"><span
                                             x-show="!isOnlineActivitySelected()">*</span>@lang('event.address.label')
                                     <br/>
                                     <a href="{{route('activities-locations')}}">
                                         <img src="{{asset('svg/address-book.svg')}}" class="static-image">
                                     </a>
-
                                 </label>
+                                <div class="w-4/5">
+                                    {{--                                        <livewire:address-autocomplete/>--}}
+                                    <input type="text" id="address"
+                                           class="block w-full p-2 border border-gray-300 rounded-md"
+                                           placeholder="Type an address...">
+                                    <ul id="autocomplete-list"
+                                        class="absolute z-10 w-full bg-white border border-gray-300 rounded-md mt-1 hidden"></ul>
 
-
-                                <div>
-
-<livewire:address-autocomplete />
-{{--                                    <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"--}}
-{{--                                                      value="{{old('location')?:$location->location??''}}"--}}
-{{--                                                      geoposition="{{old('geoposition')?:$location->geoposition??''}}"></autocomplete-geo>--}}
-                                    <div class="errors" style="margin-bottom: 10px; margin-left:0;">
+                                    <div class="mt-1 text-red-600">
                                         @component('components.validation-errors', ['field'=>'location'])@endcomponent
                                     </div>
-{{--                                    <div id="events-add-map"></div>--}}
                                 </div>
                             </div>
+
+
+                            {{--                            <div class="max-w-md mx-auto">--}}
+                            {{--                                <label for="address" class="block text-sm font-medium text-gray-700">Enter Address</label>--}}
+                            {{--                                <div class="relative mt-1">--}}
+                            {{--                                    <input type="text" id="address" class="block w-full p-2 border border-gray-300 rounded-md" placeholder="Type an address...">--}}
+                            {{--                                    <ul id="autocomplete-list" class="absolute z-10 w-full bg-white border border-gray-300 rounded-md mt-1 hidden"></ul>--}}
+                            {{--                                </div>--}}
+                            {{--                            </div>--}}
+
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
@@ -261,7 +272,8 @@
                                     <template x-for="(tag, index) in tags" :key="index">
                                         <div class="bg-blue-100 text-blue-700 px-2 py-1 m-1 rounded-full flex items-center">
                                             <span x-text="tag"></span>
-                                            <button @click.prevent="removeTag(index)" class="ml-2 text-red-500">x</button>
+                                            <button @click.prevent="removeTag(index)" class="ml-2 text-red-500">x
+                                            </button>
                                         </div>
                                     </template>
                                     <input
@@ -276,8 +288,6 @@
                                 <input type="hidden" name="tags" :value="tags.join(',')">
                             </div>
                         </div>
-
-
 
 
                         <div class="codeweek-form-field-wrapper">
@@ -301,10 +311,10 @@
                                 <select name="leading_teacher_tag" id="id_leading_teacher_tag_label" data-search=true
                                         data-placeholder="Select Leading Teacher"
                                         class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                        <option value=""></option>
-                                        @foreach ($leading_teachers as $leading_teacher)
-                                            <option value="{{$leading_teacher}}" {{old('leading_teacher_tag') == $leading_teacher ? 'selected' : ''}}>{{$leading_teacher}}</option>
-                                        @endforeach
+                                    <option value=""></option>
+                                    @foreach ($leading_teachers as $leading_teacher)
+                                        <option value="{{$leading_teacher}}" {{old('leading_teacher_tag') == $leading_teacher ? 'selected' : ''}}>{{$leading_teacher}}</option>
+                                    @endforeach
 
                                 </select>
                             </div>
@@ -320,12 +330,17 @@
                             <div data-provides="fileinput" data-name="picture" class="w-4/5">
                                 <div class="fileinput-new">
                                     <div class="fileinput-preview fileinput-exists mb-4">
-                                        <img id="imagePreview" src="" alt="Image Preview" class="hidden w-24 h-24 rounded-md border"/>
+                                        <img id="imagePreview" src="" alt="Image Preview"
+                                             class="hidden w-24 h-24 rounded-md border"/>
                                     </div>
                                     <div>
                                         <!-- file upload -->
-                                        <input type="file" id="imageUpload" accept="image/*" onchange="showPreview(event);" class="hidden">
-                                        <button type="button" class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400" onclick="document.getElementById('imageUpload').click();">Upload Image</button>
+                                        <input type="file" id="imageUpload" accept="image/*"
+                                               onchange="showPreview(event);" class="hidden">
+                                        <button type="button"
+                                                class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                                onclick="document.getElementById('imageUpload').click();">Upload Image
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -404,7 +419,7 @@
 
     <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
 
-{{--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>--}}
+    {{--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>--}}
 
 
     <script>
@@ -449,7 +464,7 @@
             var file = event.target.files[0];
             if (file) {
                 var reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     var preview = document.getElementById('imagePreview');
                     preview.src = e.target.result;
                     preview.style.display = 'block';
@@ -459,7 +474,53 @@
         }
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addressInput = document.getElementById('address');
+            const autocompleteList = document.getElementById('autocomplete-list');
 
+            addressInput.addEventListener('input', async function () {
+                const query = addressInput.value;
+
+                if (query.length > 2) {
+                    try {
+                        const response = await axios.get('/arcgis/candidates', {params: {search: query}});
+                        const suggestions = response.data;
+
+                        autocompleteList.innerHTML = '';
+                        suggestions.forEach(item => {
+                            const listItem = document.createElement('li');
+                            listItem.textContent = item.text;
+                            listItem.className = 'p-2 cursor-pointer hover:bg-gray-200';
+                            listItem.addEventListener('click', () => handleSelect(item));
+                            autocompleteList.appendChild(listItem);
+                        });
+
+                        autocompleteList.classList.remove('hidden');
+                    } catch (error) {
+                        console.error('Error fetching autocomplete suggestions', error);
+                    }
+                } else {
+                    autocompleteList.classList.add('hidden');
+                }
+            });
+
+            async function handleSelect(item) {
+                //const url = `https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?f=json&singleLine=${item.text}&magicKey=${item.magicKey}&outFields=Country`;
+
+                try {
+                    const response = await axios.get('/arcgis/selected-address', {params: item});
+                    console.log('Selected item details:', response.data);
+
+                    // Process the response as needed
+                } catch (error) {
+                    console.error('Error fetching address details', error);
+                }
+
+                autocompleteList.classList.add('hidden');
+            }
+        });
+    </script>
 
 @endpush
 
