@@ -49,7 +49,7 @@ class ExcellenceController extends Controller
 
         $name = $request["name_for_certificate"];
 
-        $certificate_url = (new CertificateExcellence($edition, $name))->generate();
+        $certificate_url = (new CertificateExcellence($edition, $name,'excellence',null))->generate();
 
         ExcellenceQuery::byYear($edition)
             ->update([

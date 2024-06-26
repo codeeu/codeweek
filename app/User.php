@@ -98,9 +98,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-//    protected $fillable = [
-//        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country','provider'
-//    ];
+
 
     protected $guarded = [];
 
@@ -115,7 +113,7 @@ class User extends Authenticatable
 
     protected $appends = ['fullName'];
 
-    protected $dates = ['deleted_at'];
+    protected $dates = ['deleted_at','consent_given_at'];
 
 
     public function getName()
@@ -480,6 +478,19 @@ class User extends Authenticatable
     public function taggedActivities()
     {
         return $this->hasMany('App\Event', 'leading_teacher_tag', 'tag');
+    }
+
+    public function hasGivenConsent()
+    {
+        return $this->consent_given_at !== null;
+    }
+
+    public function giveConsent()
+    {
+        if (!$this->hasGivenConsent()){
+            $this->consent_given_at = Carbon::now();
+            $this->save();
+        }
     }
 
 

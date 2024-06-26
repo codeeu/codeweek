@@ -28,6 +28,7 @@ class CertificateExcellence
 
     public function __construct($edition, $name_for_certificate, $type, $number_of_activities)
     {
+
         $this->edition = $edition;
         $this->name_of_certificate_holder = $name_for_certificate;
         $this->email_of_certificate_holder = auth()->user()->email ?? '';
@@ -129,7 +130,7 @@ class CertificateExcellence
     protected function customize_and_save_latex()
     {
         if ($this->is_greek()) $this->templateName = "{$this->type}_greek-{$this->edition}.tex";
-//        Log::info($this->templateName);
+        Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
@@ -141,6 +142,8 @@ class CertificateExcellence
             $template = str_replace('<CERTIFICATE_DATE>', $this->tex_escape(Carbon::now()->format('d/m/Y')), $template);
             $template = str_replace('<NUMBER_OF_ACTIVITIES>', $this->tex_escape($this->number_of_activities), $template);
         }
+
+        Log::info($template);
 
         //save it locally
         Storage::disk('latex')->put($this->personalized_template_name . ".tex", $template);

@@ -12,6 +12,7 @@
 |
 */
 
+use App\Http\Controllers\ConsentController;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -645,6 +646,12 @@ Route::get('mailing/test', function () {
 });
 
 Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
+
+
+
+Route::get('/consent', [ConsentController::class, 'show'])->name('consent.show');
+Route::post('/consent', [ConsentController::class, 'store'])->name('consent.store');
+Route::post('/consent/logout', [ConsentController::class, 'logout'])->name('consent.logout');
 
 
 Auth::routes();
