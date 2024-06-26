@@ -19,7 +19,6 @@ class ConsentController extends Controller
 
     public function store(Request $request)
     {
-        \Log::info('Consent store method called');
         $user = Auth::user();
         $user->giveConsent();
 
@@ -28,8 +27,7 @@ class ConsentController extends Controller
 
     public function logout()
     {
-        //Auth::logout();
-        \Log::info('Consent logout method called');
+        Auth::logout();
         return redirect('/login');
     }
 }

@@ -94,12 +94,10 @@
     });
 
     document.getElementById('consentButton').addEventListener('click', function() {
-        console.log('Consent button clicked');
         document.getElementById('consentForm').submit();
     });
 
     document.getElementById('logoutButton').addEventListener('click', function() {
-        console.log('Logout button clicked');
         document.getElementById('logoutForm').submit();
     });
 </script>
