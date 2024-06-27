@@ -7,11 +7,6 @@ use Illuminate\Support\Facades\Auth;
 
 class ConsentController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function show()
     {
         return view('consent');
@@ -20,9 +15,19 @@ class ConsentController extends Controller
     public function store(Request $request)
     {
         $user = Auth::user();
-        $user->giveConsent();
 
-        return redirect()->route('home');
+        if ($request->input('consent1') === '1') {
+            //$user->consent_given_at = now();
+            $user->giveConsent();
+            if ($request->input('consent2') === '1') {
+                $user->giveFutureConsent();
+            }
+
+            return redirect()->route('home');
+        }
+
+        Auth::logout();
+        return redirect('/');
     }
 
     public function logout()
@@ -31,3 +36,4 @@ class ConsentController extends Controller
         return redirect('/login');
     }
 }
+
