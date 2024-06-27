@@ -10,6 +10,8 @@ class AddConsentGivenToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->timestamp('consent_given_at')->nullable();
+            $table->timestamp('future_consent_given_at')->nullable();
+
         });
     }
 
@@ -17,6 +19,7 @@ class AddConsentGivenToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('consent_given_at');
+            $table->dropColumn('future_consent_given_at');
         });
     }
 }
