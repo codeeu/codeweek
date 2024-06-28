@@ -10,8 +10,8 @@
                         <div class="button">@lang('base.get_in_touch')</div>
                     </a>
                 @else
-                    <a href="/ambassadors">
-                        <div class="button">@lang('base.get_in_touch')</div>
+                    <a href="{{route('contact-us')}}">
+                    <div class="button">@lang('base.get_in_touch')</div>
                     </a>
                 @endif
 
@@ -34,7 +34,7 @@
         </div>
         <div class="social-media-buttons">
             <div class="social-network">
-                <a href="https://newsletter.gopacom.eu/26/4369/03b9cb464b/subscribe/form.html?_g=1675787239"
+                <a href="https://forms.mailpro.com/matrixinternet/code4europe-website-subscriber-form/OCxYWv-7975.html"
                    target="_blank" rel="noreferer, noopener">
                     <div style="margin-right: 2px">
                         <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" height="24"
