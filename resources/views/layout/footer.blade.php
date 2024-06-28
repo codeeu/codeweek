@@ -10,8 +10,8 @@
                         <div class="button">@lang('base.get_in_touch')</div>
                     </a>
                 @else
-                    <a href="/ambassadors">
-                        <div class="button">@lang('base.get_in_touch')</div>
+                    <a href="{{route('contact-us')}}">
+                    <div class="button">@lang('base.get_in_touch')</div>
                     </a>
                 @endif
 
