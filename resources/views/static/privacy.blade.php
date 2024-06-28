@@ -211,7 +211,7 @@
             <p>This specific processing operation has been included in the Commission Data Protection Officer <a href="https://ec.europa.eu/dpo-register/">public register</a> with the following Record reference: <strong>DPR-EC-09706.</strong></p>
             <footer>
             <p id="footnote1"> <sup>1</sup> The Code4Europe consortium is implementing the Code4Europe project funded via a <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/org-details/999999999/project/101158834/program/43152860/details">Digital Europe Programme grant 101158834</a>.</p>
-            <p id="footnote2"> <sup>2</sup>   The personal data includes the name, profile picture and email address for signing in with a Facebook account; the name, email address, language preference and profile picture for signing in with a Google account; the user name and email address for signing in with a X account; the user name or email address for signing in with a GitHub account..</p>
+            <p id="footnote2"> <sup>2</sup> The personal data includes the name, profile picture and email address for signing in with a Facebook account; the name, email address, language preference and profile picture for signing in with a Google account; the user name and email address for signing in with a X account; the user name or email address for signing in with a GitHub account..</p>
             </footer>
         </section>
 
