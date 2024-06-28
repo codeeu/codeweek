@@ -17,7 +17,8 @@
                     <li>European Commission, Directorate General for Communications Networks, Content and Technology,
                         Unit G.2, and
                     </li>
-                    <li>JA Europe, coordinator for the Code4Europe consortium <sup><a href="#footnote1">1</a></sup> (hereafter referred to as
+                    <li>JA Europe, coordinator for the Code4Europe consortium <sup><a href="#footnote1">1</a></sup>
+                        (hereafter referred to as
                         ‘Code4Europe’).
                     </li>
                 </ul>
@@ -51,7 +52,7 @@
                 Data Protection Authorities.</p>
 
 
-            <h3 id="header-2"><strong>2. @lang('privacy-statement.2-why.title')</strong></h3>
+            <h3 id="header-2"><strong>2. Why and how do we process your personal data?</strong></h3>
             <p><span style="text-decoration: underline">Purpose of the processing operation</span>: The
                 joint-controllers employ an external infrastructure to host the website. The technical setup collects
                 and uses your personal information to be able to provide for the website’s proper operation.</p>
@@ -166,17 +167,19 @@
                 responsible for carrying out this processing operation according to the “need to know” principle.
             </p>
 
-            <h3 id="header-8"><strong>8. @lang('privacy-statement.8-rights.title')</strong></h3>
+            <h3 id="header-8"><strong>8. What are your rights and how can you exercise them?</strong></h3>
             <p>You have specific rights as a ‘data subject’ under Chapters III of Regulation (EU) 2018/1725 and
                 Regulation (EU) 2016/679, in particular the right to access, rectify or erase your personal data and the
                 right to restrict the processing of your personal data. Where applicable, you also have the right to
                 object to the processing or the right to data portability.</p>
 
-            <p>You have the <strong>right to object to the processing of your personal data</strong>, which is lawfully carried out
+            <p>You have the <strong>right to object to the processing of your personal data</strong>, which is lawfully
+                carried out
                 pursuant to Article 5(1)(a) of Regulation (EU) 2018/1725 and Article 6(1)(f) of Regulation (EU)
                 2016/679.</p>
 
-            <p>For those processing activities which require your consent, you have the </strong>right to withdraw your consent
+            <p>For those processing activities which require your consent, you have the </strong>right to withdraw your
+                consent
                 at any time</a> by notifying the joint controllers. The withdrawal will not affect the lawfulness of the
                 processing carried out before you withdrew your consent.</p>
 
@@ -193,25 +196,49 @@
                 <strong>Contact information</strong></h3>
             <h4>The joint controllers</h4>
 
-            <p>If you would like to exercise your rights under Regulation (EU) 2018/1725 or Regulation (EU) 2016/679, or if you have comments, questions, or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the joint controllers:</p>
+            <p>If you would like to exercise your rights under Regulation (EU) 2018/1725 or Regulation (EU) 2016/679, or
+                if you have comments, questions, or concerns, or if you would like to submit a complaint regarding the
+                collection and use of your personal data, please feel free to contact the joint controllers:</p>
             <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                <li><a href="mailto:CNECT-G2@ec.europa.eu">DG CNECT G.2 European Commission at CNECT-G2@ec.europa.eu</a>;</li>
-                <li><a href="mailto:privacy@jaeurope.org">JA Europe at privacy@jaeurope.org</a>.</li>
+                <li>DG CNECT G.2 European Commission at <a href="mailto:CNECT-G2@ec.europa.eu">CNECT-G2@ec.europa.eu</a>;
+                </li>
+                <li>JA Europe at <a href="mailto:privacy@jaeurope.org">privacy@jaeurope.org</a>.</li>
             </ul>
             <h4>The Data Protection Officer (DPO) of the Commission or JA Europe</h4>
-            <p>You may contact the Data Protection Officer of the Commission (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>) with regard to issues related to the processing of your personal data under Regulation (EU) 2018/1725.</p>
-            <p>You may contact the Data Protection Officer of JA Europe (<a href="mailto:privacy@jaeurope.org">privacy@jaeurope.org</a>) with regard to issues related to the processing of your personal data under Regulation (EU) 2016/679.</p>
+            <p>You may contact the Data Protection Officer of the Commission (<a
+                        href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>)
+                with regard to issues related to the processing of your personal data under Regulation (EU) 2018/1725.
+            </p>
+            <p>You may contact the Data Protection Officer of JA Europe (<a href="mailto:privacy@jaeurope.org">privacy@jaeurope.org</a>)
+                with regard to issues related to the processing of your personal data under Regulation (EU) 2016/679.
+            </p>
             <h4>The Data Protection Authorities</h4>
-            <p>You have the right to have recourse (i.e., you can lodge a complaint) to the <strong>European Data Protection Supervisor</strong> (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>) if you consider that your rights under Regulation (EU) 2018/1725 have been infringed as a result of the processing of your personal data by the Commission.</p>
-            <p>You also have the right to have recourse (i.e., you can lodge a complaint) to the national data protection authority in Belgium (<a href="https://dataprotectionauthority.be/citizen/actions/lodge-a-complaint">Autorité de protection des données – Gegevensbeschermingsautoriteit</a>) if you consider that your rights under Regulation (EU) 2016/679 have been infringed as a result of the processing of your personal data by JA Europe.</p>
+            <p>You have the right to have recourse (i.e., you can lodge a complaint) to the <strong>European Data
+                    Protection Supervisor</strong> (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>) if you
+                consider that your rights under Regulation (EU) 2018/1725 have been infringed as a result of the
+                processing of your personal data by the Commission.</p>
+            <p>You also have the right to have recourse (i.e., you can lodge a complaint) to the national data
+                protection authority in Belgium (<a
+                        href="https://dataprotectionauthority.be/citizen/actions/lodge-a-complaint">Autorité de
+                    protection des données – Gegevensbeschermingsautoriteit</a>) if you consider that your rights under
+                Regulation (EU) 2016/679 have been infringed as a result of the processing of your personal data by JA
+                Europe.</p>
 
 
             <h3 id="header-10" style="margin-bottom: 10px;">10.
                 <strong>Where to find more detailed information?</strong></h3>
-            <p>This specific processing operation has been included in the Commission Data Protection Officer <a href="https://ec.europa.eu/dpo-register/">public register</a> with the following Record reference: <strong>DPR-EC-09706.</strong></p>
+            <p>This specific processing operation has been included in the Commission Data Protection Officer <a
+                        href="https://ec.europa.eu/dpo-register/">public register</a> with the following Record
+                reference: <strong>DPR-EC-09706.</strong></p>
             <footer>
-            <p id="footnote1"> <sup>1</sup> The Code4Europe consortium is implementing the Code4Europe project funded via a <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/org-details/999999999/project/101158834/program/43152860/details">Digital Europe Programme grant 101158834</a>.</p>
-            <p id="footnote2"> <sup>2</sup> The personal data includes the name, profile picture and email address for signing in with a Facebook account; the name, email address, language preference and profile picture for signing in with a Google account; the user name and email address for signing in with a X account; the user name or email address for signing in with a GitHub account..</p>
+                <p id="footnote1"><sup>1</sup> The Code4Europe consortium is implementing the Code4Europe project funded
+                    via a <a
+                            href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/org-details/999999999/project/101158834/program/43152860/details">Digital
+                        Europe Programme grant 101158834</a>.</p>
+                <p id="footnote2"><sup>2</sup> The personal data includes the name, profile picture and email address
+                    for signing in with a Facebook account; the name, email address, language preference and profile
+                    picture for signing in with a Google account; the user name and email address for signing in with a
+                    X account; the user name or email address for signing in with a GitHub account..</p>
             </footer>
         </section>
 
