@@ -14,7 +14,7 @@ return [
     'login' => 'Identifikimi',
     'register' => 'Regjistrohuni',
     'github' => 'Identifikohuni me Github',
-    'twitter' => 'Identifikohuni me Twitter',
+    'X' => 'Identifikohuni me X',
     'facebook' => 'Identifikohuni me Facebook',
     'google' => 'Identifikohuni me Google',
     'azure' => 'Identifikohuni me Azure',
