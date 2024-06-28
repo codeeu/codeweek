@@ -14,7 +14,7 @@ return [
     'login' => 'Вход',
     'register' => 'Регистриране',
     'github' => 'Влизане с Github',
-    'twitter' => 'Влизане с Twitter',
+    'X' => 'Влизане с X',
     'facebook' => 'Влизане с Facebook',
     'google' => 'Влизане с Google',
     'azure' => 'Влизане с Azure',
