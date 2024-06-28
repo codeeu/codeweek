@@ -648,10 +648,10 @@ Route::get('mailing/test', function () {
 Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
 
 
+Route::get('/consent', [ConsentController::class, 'show'])->middleware('auth')->name('consent.show');
+Route::post('/consent', [ConsentController::class, 'store'])->middleware('auth')->name('consent.store');
+Route::post('/consent/logout', [ConsentController::class, 'logout'])->middleware('auth')->name('consent.logout');
 
-Route::get('/consent', [ConsentController::class, 'show'])->name('consent.show');
-Route::post('/consent', [ConsentController::class, 'store'])->name('consent.store');
-Route::post('/consent/logout', [ConsentController::class, 'logout'])->name('consent.logout');
 
 
 Auth::routes();
