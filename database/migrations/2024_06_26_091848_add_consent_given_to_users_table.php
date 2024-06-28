@@ -17,10 +17,7 @@ class AddConsentGivenToUsersTable extends Migration
 
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('consent_given_at');
-            $table->dropColumn('future_consent_given_at');
-        });
+
     }
 }
 
