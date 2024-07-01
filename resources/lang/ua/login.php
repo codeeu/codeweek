@@ -14,7 +14,7 @@ return [
     'login' => 'Увійти',
     'register' => 'Зареєструватися',
     'github' => 'Увійти через Github',
-    'twitter' => 'Увійти через Twitter',
+    'X' => 'Увійти через X',
     'facebook' => 'Увійти через Facebook',
     'google' => 'Увійти через Google',
     'azure' => 'Увійти через Azure',

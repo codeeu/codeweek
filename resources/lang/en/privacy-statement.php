@@ -4,7 +4,7 @@ return [
     'title' => 'PROTECTION OF YOUR PERSONAL DATA',
     'processing-operation' => [
         'Processing operation',
-        'Processing of personal data on codeweek.eu, including IP addresses, by visitors of the publicly available websites.'
+        'Processing of personal data on the EU Code Week website at codeweek.eu by its visitors and the users of its contact form'
     ],
 
     'data-controller' => [

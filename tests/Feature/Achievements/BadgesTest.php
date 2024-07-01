@@ -64,6 +64,7 @@ class BadgesTest extends TestCase {
     public function only_leading_teachers_can_see_my_badges_page() {
 
         $this->signIn();
+
         $this->get('/my/badges')->assertStatus(403)->assertDontSeeText('My Badges');
 
 

@@ -14,7 +14,7 @@ return [
     'login' => 'Přihlášení',
     'register' => 'Registrace',
     'github' => 'Přihlaste se přes Github',
-    'twitter' => 'Přihlaste se přes Twitter',
+    'X' => 'Přihlaste se přes X',
     'facebook' => 'Přihlaste se přes Facebook',
     'google' => 'Přihlaste se přes Google',
     'azure' => 'Přihlaste se přes Azure',
