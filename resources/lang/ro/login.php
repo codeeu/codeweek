@@ -14,7 +14,7 @@ return [
     'login' => 'Conectare',
     'register' => 'Înregistrare',
     'github' => 'Conectare cu Github',
-    'twitter' => 'Conectare cu Twitter',
+    'X' => 'Conectare cu X',
     'facebook' => 'Conectare cu Facebook',
     'google' => 'Conectare cu Google',
     'azure' => 'Conectare cu Azure',

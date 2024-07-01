@@ -34,6 +34,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'provider'=>$faker->randomElement(['facebook','google','github']),
         'privacy'=>true,
         'receive_emails'=>true,
+        'consent_given_at'=>\Carbon\Carbon::now(),
         'magic_key'=>$faker->randomNumber(6)
 
     ];

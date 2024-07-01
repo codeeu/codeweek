@@ -98,9 +98,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-//    protected $fillable = [
-//        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country','provider'
-//    ];
+
 
     protected $guarded = [];
 
@@ -110,19 +108,27 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token', 'magic_key'
+        'password',
+        'remember_token',
+        'magic_key'
     ];
 
     protected $appends = ['fullName'];
 
-    protected $dates = ['deleted_at'];
+    protected $dates = ['consent_given_at', 'future_consent_given_at'];
 
 
     public function getName()
     {
-        if (!empty($this->username)) return $this->username;
-        if (!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
-        if (!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
+        if (!empty($this->username)) {
+            return $this->username;
+        }
+        if (!empty($this->firstname) && !empty($this->lastname)) {
+            return $this->firstname . " " . $this->lastname;
+        }
+        if (!empty($this->firstname) && empty($this->lastname)) {
+            return $this->firstname;
+        }
         return $this->email;
     }
 
@@ -139,8 +145,6 @@ class User extends Authenticatable
         } else {
             $this->removeRole('ambassador');
         }
-
-
     }
 
     public function achievements()
@@ -155,19 +159,15 @@ class User extends Authenticatable
 
     public function setLeadingTeacherAttribute($value)
     {
-
         if ($value) {
             $this->assignRole('leading teacher');
         } else {
             $this->removeRole('leading teacher');
         }
-
-
     }
 
     public function isAdmin()
     {
-
         return $this->hasRole("super admin");
     }
 
@@ -218,7 +218,8 @@ class User extends Authenticatable
 
     public function expertises()
     {
-        return $this->belongsToMany(LeadingTeacherExpertise::class, 'leading_teacher_expertise_user', 'user_id', 'lte_id');
+        return $this->belongsToMany(LeadingTeacherExpertise::class, 'leading_teacher_expertise_user', 'user_id',
+            'lte_id');
     }
 
     public function levels()
@@ -259,25 +260,27 @@ class User extends Authenticatable
 
     public function resetExperience($year = null)
     {
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
         $this->getExperience($year)->update(
             ["points" => 0]
         );
-
-
     }
 
     public function getPoints($year = null)
     {
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
         return $this->getExperience($year)->points;
-
-
     }
 
     public function getExperience($year = null)
     {
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
 
         $experience = Experience::firstOrCreate(
             [
@@ -294,17 +297,18 @@ class User extends Authenticatable
 
     public function awardExperience($points, $year = null)
     {
-
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
         $this->getExperience($year)->awardExperience($points);
-
     }
 
     public function stripExperience($points, $year = null)
     {
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
         $this->getExperience($year)->stripExperience($points);
-
     }
 
 
@@ -316,9 +320,10 @@ class User extends Authenticatable
      */
     public function getAvatarPathAttribute($avatar)
     {
-        if (is_null($avatar)) $avatar = 'avatars/default_avatar.png';
+        if (is_null($avatar)) {
+            $avatar = 'avatars/default_avatar.png';
+        }
         return Storage::disk('s3')->url($avatar);
-
     }
 
     /**
@@ -329,14 +334,11 @@ class User extends Authenticatable
      */
     public function getAvatarAttribute()
     {
-
         $arr = explode("/", $this->avatar_path);
         $filename = array_pop($arr);
         array_push($arr, $filename);
         $glued = implode("/", $arr);
         return $glued;
-
-
     }
 
 
@@ -365,7 +367,6 @@ class User extends Authenticatable
 
     public function activities($edition)
     {
-
         return DB::table('events')
             ->where('creator_id', '=', $this->id)
             ->where('status', "=", "APPROVED")
@@ -376,7 +377,6 @@ class User extends Authenticatable
 
     public function reported($edition = null)
     {
-
         $query = DB::table('events')
             ->where('creator_id', '=', $this->id)
             ->where('status', "=", "APPROVED")
@@ -393,9 +393,10 @@ class User extends Authenticatable
 
     public function influence($edition = null)
     {
-
         Log::info("Influence for $this->email for edition $edition");
-        if (is_null($this->tag)) return 0;
+        if (is_null($this->tag)) {
+            return 0;
+        }
 
 //        $nameInTag = TagsHelper::getNameInTag($this->tag);
 
@@ -440,7 +441,6 @@ class User extends Authenticatable
 
     public function getEventsToReviewCount()
     {
-
         if (auth()->user()->isAmbassador()) {
             return EventHelper::getPendingEventsCount($this->country_iso);
         }
@@ -457,7 +457,6 @@ class User extends Authenticatable
 
     public function getNextPendingEvent(Event $event)
     {
-
         if (auth()->user()->isAmbassador()) {
             return EventHelper::getNextPendingEvent($event, $this->country_iso);
         }
@@ -480,6 +479,33 @@ class User extends Authenticatable
     public function taggedActivities()
     {
         return $this->hasMany('App\Event', 'leading_teacher_tag', 'tag');
+    }
+
+
+    public function hasGivenConsent()
+    {
+        return $this->consent_given_at !== null;
+    }
+
+    public function hasGivenFutureConsent()
+    {
+        return $this->future_consent_given_at !== null;
+    }
+
+    public function giveConsent()
+    {
+        if (!$this->hasGivenConsent()) {
+            $this->consent_given_at = now();
+            $this->save();
+        }
+    }
+
+    public function giveFutureConsent()
+    {
+        if (!$this->hasGivenFutureConsent()) {
+            $this->future_consent_given_at = now();
+            $this->save();
+        }
     }
 
 
