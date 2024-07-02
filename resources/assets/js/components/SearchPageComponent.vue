@@ -120,7 +120,7 @@
 
 <script>
     import Multiselect from 'vue-multiselect'
-    import Pagination from "./Pagination";
+    import Pagination from "./Pagination.vue";
 
     export default {
         components: {Multiselect, Pagination},
@@ -246,4 +246,4 @@
     }
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>

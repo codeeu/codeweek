@@ -66,9 +66,11 @@
 <script>
 
 
-    import ResourcePill from "./ResourcePill";
+    import ResourcePill from "./ResourcePill.vue";
 
-    var RESOURCES_URL = process.env.MIX_RESOURCES_URL;
+
+    var RESOURCES_URL = import.meta.env.VITE_RESOURCES_URL;
+    //console.log(RESOURCES_URL);
 
     export default {
         components: {ResourcePill},

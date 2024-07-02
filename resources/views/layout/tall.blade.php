@@ -24,7 +24,7 @@
 
     @yield('extra-css')
 
-    <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
+    @vite('resources/css/app.css')
 
 
     <script>
@@ -67,7 +67,7 @@
 
     @include('layout.footer')
 
-    <flash message="{{ session('flash') }}"></flash>
+{{--    <flash message="{{ session('flash') }}"></flash>--}}
 </div>
 
 <!-- Scripts -->
