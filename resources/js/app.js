@@ -10,9 +10,11 @@ import CountrySelect from "./components/CountrySelect.vue";
 import ModerateEvent from "./components/ModerateEvent.vue";
 import AutocompleteGeo from './components/AutocompleteGeo.vue';
 import DateTime from "./components/DateTime.vue";
+import Question from "./components/Question.vue";
 import { createI18n } from 'vue-i18n';
 
 import Locale from './vue-i18n-locales.generated';
+
 
 
 const lang = document.documentElement.lang.substr(0, 2);
@@ -37,6 +39,7 @@ app.component('CountrySelect', CountrySelect);
 app.component('ModerateEvent', ModerateEvent);
 app.component('AutocompleteGeo', AutocompleteGeo); // Register the component
 app.component('DateTime', DateTime);
+app.component('Question', Question);
 
 app.use(i18n);
 
