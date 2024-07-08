@@ -14,7 +14,7 @@
         :wait=300
     >
     </v-autocomplete>
-    <input type="text" name="geoposition" id="geoposition" :value="localGeoposition">
+    <input type="hidden" name="geoposition" id="geoposition" :value="localGeoposition">
   </div>
 </template>
 
