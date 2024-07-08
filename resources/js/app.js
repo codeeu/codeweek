@@ -11,9 +11,11 @@ import ModerateEvent from "./components/ModerateEvent.vue";
 import AutocompleteGeo from './components/AutocompleteGeo.vue';
 import DateTime from "./components/DateTime.vue";
 import Question from "./components/Question.vue";
-import { createI18n } from 'vue-i18n';
+import PictureForm from "./components/PictureForm.vue";
 
+import { createI18n } from 'vue-i18n';
 import Locale from './vue-i18n-locales.generated';
+import Flash from "./components/Flash.vue";
 
 
 
@@ -40,6 +42,8 @@ app.component('ModerateEvent', ModerateEvent);
 app.component('AutocompleteGeo', AutocompleteGeo); // Register the component
 app.component('DateTime', DateTime);
 app.component('Question', Question);
+app.component('PictureForm', PictureForm);
+app.component('Flash', Flash);
 
 app.use(i18n);
 

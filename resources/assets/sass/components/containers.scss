@@ -120,25 +120,9 @@
   }
 }
 
-.codeweek-flash-message{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
-.codeweek-flash-message .content{
-  padding: 5px 30px;
-  background-color: $main-color2;
-  display: flex;
-  border-radius: 0 0 10px 10px;
-}
 
-.codeweek-flash-message .content .level{
-  font-weight: bold;
-  margin-right: 10px;
-}
+
 .codeweek-cookie-consent-banner {
   padding: 20px 50px;
   border-bottom: 1px solid #e8e8e8;
