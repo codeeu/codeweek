@@ -1,32 +1,32 @@
 <template>
-
   <div class="multiselect-wrapper">
     <multiselect
         v-model="values"
         v-bind:options="options"
+        :multiple="true"
+        :taggable="true"
+        :close-on-select="false"
+        :clear-on-select="false"
+        :searchable="false"
+        :show-labels="false"
+        placeholder=""
+        :preserve-search="true"
         :label="label"
         track-by="id"
-        :multiple=multiple
-        :taggable="true"
-        :show-labels="false"
-        :searchable=searchable
-        :close-on-select=closeOnSelect
+        :preselect-first="false"
+        :custom-label="customLabel"
         @select="select"
         @remove="remove"
-        placeholder=""
-        :custom-label="customLabel">
-    </multiselect>
+    ></multiselect>
     <input :name="name" type="hidden" :value="innerValues.toString()">
   </div>
 </template>
 
 <script>
-import Multiselect from 'vue-multiselect'
-
-window.multiselect = this;
+import Multiselect from 'vue-multiselect';
 
 export default {
-  components: {Multiselect},
+  components: { Multiselect },
   props: {
     name: String,
     value: String,
@@ -38,48 +38,35 @@ export default {
     searchable: Boolean
   },
   data() {
-    var values = null;
-    var innerValues = [];
-    if (this.value) {
-      this.value = this.value.split(',');
-      innerValues = this.value;
-      values = [];
-      for (var i = 0; i < this.value.length; i++) {
-        for (var j = 0; j < this.options.length; j++) {
-          if (this.value[i] == this.options[j].id) {
-            values.push(this.options[j]);
-            break;
-          }
-        }
-      }
+    let initialValues = [];
+    let innerValues = [];
 
+    if (this.value) {
+      const valueArray = this.value.split(',');
+      innerValues = valueArray;
+      initialValues = valueArray.map(val => {
+        return this.options.find(option => option.id == val);
+      }).filter(option => option !== undefined);
     }
+
     return {
-      values: values,
+      values: initialValues,
       innerValues: innerValues
-    }
+    };
   },
   methods: {
-    select(selectedOption, id) {
+    select(selectedOption) {
       this.innerValues.push(selectedOption.id);
     },
-    remove(removedOption, id) {
-      for (var i = 0; i < this.innerValues.length; i++) {
-        if (this.innerValues[i] == removedOption.id) {
-          this.innerValues.splice(i, 1);
-        }
-      }
+    remove(removedOption) {
+      this.innerValues = this.innerValues.filter(id => id != removedOption.id);
     },
     customLabel(obj, label) {
-      return this.$t(label + '.' + obj.name);
+      return this.$t(`${label}.${obj.name}`);
     }
-
   }
-}
+};
 </script>
 
-
-
 <style scoped>
-
 </style>
