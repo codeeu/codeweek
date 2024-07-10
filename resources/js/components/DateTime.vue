@@ -1,7 +1,7 @@
 <template>
   <div class="datepicker-wrapper">
     <!--        <date-picker :input-name="name" width="100%" :placeholder="placeholder" v-model="time1" type="datetime" format="yyyy-MM-dd HH:mm:ss" :time-picker-options="{start: '07:00',step: '00:30',end: '23:30'}" lang="en"></date-picker>-->
-    <VueDatePicker v-model="time1"></VueDatePicker>
+    <VueDatePicker :name="name" v-model="time1" type="datetime" format="yyyy-MM-dd HH:mm" :time-picker-options="{start: '07:00',step: '00:30',end: '23:30'}" lang="en"></VueDatePicker>
   </div>
 </template>
 

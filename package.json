@@ -21,6 +21,7 @@
         "vue-clipboard2": "^0.3.3",
         "vue-i18n": "^9.13.1",
         "vue-loader": "^17.4.2",
-        "vue-multiselect": "^3.0.0"
+        "vue-multiselect": "^3.0.0",
+        "vue3-tags-input": "^1.0.12"
     }
 }

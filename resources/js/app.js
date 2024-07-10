@@ -16,6 +16,7 @@ import PictureForm from "./components/PictureForm.vue";
 import { createI18n } from 'vue-i18n';
 import Locale from './vue-i18n-locales.generated';
 import Flash from "./components/Flash.vue";
+import InputTags from "./components/InputTags.vue";
 
 
 
@@ -44,6 +45,7 @@ app.component('DateTime', DateTime);
 app.component('Question', Question);
 app.component('PictureForm', PictureForm);
 app.component('Flash', Flash);
+app.component('InputTags', InputTags);
 
 app.use(i18n);
 

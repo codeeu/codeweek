@@ -119,7 +119,9 @@
                                 <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"
                                              :multiple="true"
                                              label="event.audience"></multiselect>
+
                             </div>
+
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'audience'])@endcomponent
                             </div>
