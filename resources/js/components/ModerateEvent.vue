@@ -31,8 +31,8 @@
           </div>
           <div class="modal-body">
             <p class="text-gray-800 text-lg leading-relaxed">This will help the activity organizer to improve their submission.</p>
-            <multiselect v-model="rejectionOption" :options="rejectionOptions" track-by="title" label="title" :close-on-select="true" :preserve-search="false" placeholder="Select a rejection reason" :searchable="false" :allowEmpty="false" @input="prefillRejectionText">
-              <template slot="singleLabel" slot-scope="{ option }">{{ option.title }}</template>
+            <multiselect v-model="rejectionOption" :options="rejectionOptions" track-by="title" label="title" :close-on-select="true" :preserve-search="false" placeholder="Select a rejection reason" :searchable="false" :allow-empty="false" @input="prefillRejectionText">
+              <template #singleLabel="{ option }">{{ option.title }}</template>
             </multiselect>
             <textarea v-model="rejectionText" class="reason-textarea" rows="4" cols="40" placeholder="Reason for rejection"></textarea>
           </div>
@@ -66,105 +66,83 @@
 </template>
 
 <script>
-import { ref } from 'vue';
 import Multiselect from 'vue-multiselect';
+import axios from 'axios';
 
 export default {
   components: { Multiselect },
   props: ['event', 'refresh', 'ambassador', 'pendingCounter', 'nextPending'],
-  name: "reject-activity",
-  setup(props) {
-    const status = ref(props.$t('myevents.status.' + props.event.status));
-    const showModal = ref(false);
-    const showDeleteModal = ref(false);
-    const rejectionText = ref('');
-    const rejectionOption = ref(null);
-    const rejectionOptions = ref([
-      {
-        'title': props.$t('moderation.description.title'),
-        'text': props.$t('moderation.description.text')
-      },
-      {
-        'title': props.$t('moderation.missing-details.title'),
-        'text': props.$t('moderation.missing-details.text')
-      },
-      {
-        'title': props.$t('moderation.duplicate.title'),
-        'text': props.$t('moderation.duplicate.text')
-      },
-      {
-        'title': props.$t('moderation.not-related.title'),
-        'text': props.$t('moderation.not-related.text')
-      }
-    ]);
-
-    const reRender = () => {
-      if (props.refresh) {
+  name: "moderate-activity",
+  data() {
+    return {
+      status: this.event.status,
+      showModal: false,
+      showDeleteModal: false,
+      rejectionText: '',
+      rejectionOption: null,
+      rejectionOptions: [
+        {
+          'title': this.$t('moderation.description.title'),
+          'text': this.$t('moderation.description.text')
+        },
+        {
+          'title': this.$t('moderation.missing-details.title'),
+          'text': this.$t('moderation.missing-details.text')
+        },
+        {
+          'title': this.$t('moderation.duplicate.title'),
+          'text': this.$t('moderation.duplicate.text')
+        },
+        {
+          'title': this.$t('moderation.not-related.title'),
+          'text': this.$t('moderation.not-related.text')
+        }
+      ]
+    };
+  },
+  methods: {
+    reRender() {
+      if (this.refresh) {
         window.location.reload(false);
       } else {
-        window.location.assign(props.nextPending);
+        window.location.assign(this.nextPending);
       }
-    };
-
-    const approve = () => {
-      axios.post('/api/event/approve/' + props.event.id)
+    },
+    approve() {
+      axios.post('/api/event/approve/' + this.event.id)
           .then(() => {
-            status.value = "APPROVED";
-            flash('Event Approved!');
-            reRender();
+            this.status = "APPROVED";
+            this.reRender();
           });
-    };
-
-    const deleteEvent = () => {
-      axios.post('/api/event/delete/' + props.event.id)
+    },
+    deleteEvent() {
+      axios.post('/api/event/delete/' + this.event.id)
           .then((res) => {
-            status.value = "DELETED";
-            flash('Event Deleted and email sent!');
-            if (props.refresh) {
-              reRender();
+            this.status = "DELETED";
+            if (this.refresh) {
+              this.reRender();
             } else {
               window.location.assign(res.data.redirectUrl);
             }
           });
-    };
-
-    const toggleModal = () => {
-      showModal.value = !showModal.value;
-    };
-
-    const toggleDeleteModal = () => {
-      showDeleteModal.value = !showDeleteModal.value;
-    };
-
-    const reject = () => {
-      axios.post('/api/event/reject/' + props.event.id, { rejectionText: rejectionText.value })
+    },
+    toggleModal() {
+      this.showModal = !this.showModal;
+    },
+    toggleDeleteModal() {
+      this.showDeleteModal = !this.showDeleteModal;
+    },
+    reject() {
+      axios.post('/api/event/reject/' + this.event.id, { rejectionText: this.rejectionText })
           .then(() => {
-            toggleModal();
-            status.value = "REJECTED";
-            flash('Event Rejected!');
-            reRender();
+            this.toggleModal();
+            this.status = "REJECTED";
+            this.reRender();
           });
-    };
-
-    const prefillRejectionText = () => {
-      rejectionText.value = rejectionOption.value.text;
-    };
-
-    return {
-      status,
-      showModal,
-      showDeleteModal,
-      rejectionText,
-      rejectionOption,
-      rejectionOptions,
-      reRender,
-      approve,
-      deleteEvent,
-      toggleModal,
-      toggleDeleteModal,
-      reject,
-      prefillRejectionText
-    };
+    },
+    prefillRejectionText() {
+      this.rejectionText = this.rejectionOption.text;
+    }
   }
 }
 </script>
