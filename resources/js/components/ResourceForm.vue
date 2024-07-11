@@ -6,7 +6,7 @@
           <input
               type="text"
               v-model="searchInput"
-              @input="debounceSearch"
+              @search-change="debounceSearch"
               @keyup.enter="onSubmit"
               :placeholder="t('resources.search_resources')"
           />
@@ -30,7 +30,7 @@
               :custom-label="customLabel"
               track-by="name"
               :preselect-first="false"
-              @input="onSubmit"
+              @search-change="onSubmit"
           >
             <pre class="language-json"><code>{{ selectedTypes }}</code></pre>
           </multiselect>
@@ -47,7 +47,8 @@
               :custom-label="customLabel"
               track-by="name"
               :preselect-first="false"
-              @input="onSubmit"
+              @select="onSubmit"
+              @remove="onSubmit"
           >
             <pre class="language-json"><code>{{ selectedLevels }}</code></pre>
           </multiselect>
@@ -63,7 +64,8 @@
               label="name"
               track-by="name"
               :preselect-first="false"
-              @input="onSubmit"
+              @select="onSubmit"
+              @remove="onSubmit"
           >
             <pre class="language-json"><code>{{ selectedProgrammingLanguages }}</code></pre>
           </multiselect>
@@ -81,7 +83,9 @@
               :custom-label="customLabel"
               track-by="name"
               :preselect-first="false"
-              @input="onSubmit"
+              @select="onSubmit"
+              @remove="onSubmit"
+
           >
             <pre class="language-json"><code>{{ selectedSubjects }}</code></pre>
           </multiselect>
@@ -100,7 +104,9 @@
               :custom-label="customLabel"
               track-by="name"
               :preselect-first="false"
-              @input="onSubmit"
+              @select="onSubmit"
+              @remove="onSubmit"
+
           >
             <pre class="language-json"><code>{{ selectedCategories }}</code></pre>
           </multiselect>
@@ -116,7 +122,9 @@
               label="name"
               track-by="name"
               :preselect-first="false"
-              @input="onSubmit"
+              @select="onSubmit"
+              @remove="onSubmit"
+
           >
             <pre class="language-json"><code>{{ selectedLanguages }}</code></pre>
           </multiselect>
