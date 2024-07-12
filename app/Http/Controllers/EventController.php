@@ -192,7 +192,6 @@ class EventController extends Controller
             : $event->language;
 
         $languages = Arr::sort(Lang::get('base.languages'));
-        //dd($event);
 
         $leading_teachers = $this->getLeadingTeachersTagsArray();
 

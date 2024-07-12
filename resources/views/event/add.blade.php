@@ -155,6 +155,7 @@
                                 </label>
                                 <div>
                                     <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"
+                                                      location="{{$location->location??''}}"
                                                       value="{{old('location')?:$location->location??''}}"
                                                       geoposition="{{old('geoposition')?:$location->geoposition??''}}"></autocomplete-geo>
                                     <div class="errors" style="margin-bottom: 10px; margin-left:0;">
