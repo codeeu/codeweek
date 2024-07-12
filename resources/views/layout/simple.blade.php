@@ -1,46 +1,38 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en" class="no-js" >
+<html dir="ltr" lang="{{App::getLocale()}}" class="no-js">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    @if(!isset(Request::header()["dnt"]))
+        @if (Cookie::get('codeweek_cookie_consent') == 1)
+            @include('layout.analytics')
+        @endif
+    @else
+        <!-- DO NOT TRACK removed Analytics -->
+    @endif
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <link href="{{asset('css/fonts.css')}}" media="screen" rel="stylesheet"/>
-    <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
-
-        <link rel="stylesheet" href="{{asset('css/ext/cache.css')}}" type="text/css" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
 
-    <!-- Theme stylesheets -->
-    @if (Route::getCurrentRoute() && Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
-        <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
-        @vite('resources/css/app.css')
-    @else
-        <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css" />
-    @endif
-    <link rel="stylesheet" href="{{asset('css/ext/dark.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('css/font-icons.css')}}" type="text/css" />
+    <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css" />
-
-
-
-
-    <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css" />
-
-
-
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
+    @stack('extra-css')
 
     @yield('extra-css')
+
+
+    {{--    @vite('resources/css/app.css')--}}
+{{--    @vite(['resources/assets/sass/app.scss', 'resources/js/app.js'])--}}
+    {{--    @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+
+
+
+
 
 
     <script>
@@ -54,11 +46,19 @@
 
     </script>
 
+
+
     <!-- Title, keywords, description -->
-    <meta name="description" content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
+    <meta name="description"
+          content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
+
+    @hasSection('title')
+        <title>EU Code Week - @yield('title')</title>
+    @else
+        <title>EU Code Week</title>
+    @endif
 
 
-    <title>EU Code Week</title>
 
 
 </head>
@@ -68,35 +68,30 @@
 
 <!-- Document Wrapper -->
 <div id="app">
+    <main>
+        @yield("content")
+    </main>
 
-
-    @yield("content")
-
-
+    @include('layout.footer')
 
 </div>
 
-
-
 <!-- Scripts -->
 
-@vite('resources/js/app.js')
+
+{{--@vite('resources/js/app.js')--}}
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
+{{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
+@include('scripts.countdown')
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
 
-
-
 <script src="https://unpkg.com/vue-select@latest"></script>
-
-
+{{--<script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js?_g=1663162661" async></script>--}}
 
 @stack('scripts')
 
 @yield('extra-js')
-
-
-
 
 
 </body>

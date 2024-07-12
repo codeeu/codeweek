@@ -25,7 +25,8 @@
 
     @yield('extra-css')
 
-    @vite('resources/css/app.css')
+    @vite(['resources/assets/sass/app.scss'])
+{{--    @vite(['resources/assets/sass/app.scss', 'resources/js/app.js'])--}}
 
 
     <script>
@@ -87,6 +88,7 @@
     @endif
 @endif
 
+{{--@vite('resources/js/app.js')--}}
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>

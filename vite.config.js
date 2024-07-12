@@ -21,7 +21,6 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    base: process.env.VITE_APP_BASE_URL || '/',
     resolve: {
         alias: {
             '@': '/resources/js',
