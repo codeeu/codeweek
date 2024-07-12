@@ -19,6 +19,8 @@ import SearchPageComponent from "./components/SearchPageComponent.vue";
 
 import { createI18n } from 'vue-i18n';
 import Locale from './vue-i18n-locales.generated';
+import AvatarForm from "./components/AvatarForm.vue";
+import authorizationPlugin from "./components/authorizationPlugin.js";
 
 
 
@@ -36,7 +38,7 @@ const i18n = createI18n({
 const app = createApp({});
 
 app.use(i18n);
-
+app.use(authorizationPlugin);
 app.component('ResourceForm', ResourceForm);
 app.component('ResourceCard', ResourceCard);
 app.component('ResourcePill', ResourcePill);
@@ -53,6 +55,7 @@ app.component('PictureForm', PictureForm);
 app.component('Flash', Flash);
 app.component('InputTags', InputTags);
 app.component('SearchPageComponent', SearchPageComponent);
+app.component('AvatarForm', AvatarForm);
 
 
 
