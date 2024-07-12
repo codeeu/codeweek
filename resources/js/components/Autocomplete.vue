@@ -40,10 +40,15 @@ export default {
     inputClass: {type: String, default: 'v-autocomplete-input'},
     disabled: {type: Boolean, default: false},
     inputAttrs: {type: Object, default: () => ({})},
-    keepOpen: {type: Boolean, default: false}
+    keepOpen: {type: Boolean, default: false},
+    initialLocation: {type: String, default: null}
   },
   setup(props, {emit}) {
-    const searchText = ref('');
+    let searchText = ref('');
+    if (props.initialLocation) {
+      searchText = ref(props.initialLocation);
+    }
+
     const showList = ref(false);
     const cursor = ref(-1);
     const internalItems = ref(props.items || []);

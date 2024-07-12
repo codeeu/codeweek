@@ -12,6 +12,7 @@
         :auto-select-one-item=false
         :input-attrs="inputAttrs"
         :wait=300
+        :initialLocation="initialLocation"
     >
     </v-autocomplete>
     <input type="hidden" name="geoposition" id="geoposition" :value="localGeoposition">
@@ -33,7 +34,8 @@ export default {
     placeholder: String,
     name: String,
     value: String,
-    geoposition: String
+    geoposition: String,
+    location: String
   },
   setup(props) {
     const item = ref(props.value ? { name: props.value } : null);
@@ -45,6 +47,7 @@ export default {
       autocomplete: "off"
     };
     const localGeoposition = ref(props.geoposition);
+    const initialLocation = props.location;
 
 
     const itemSelected = (selectedItem) => {
@@ -110,7 +113,8 @@ export default {
       getLabel,
       change,
       updateItems,
-      localGeoposition
+      localGeoposition,
+      initialLocation
     };
   }
 };
