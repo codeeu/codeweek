@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-
+    <link href="{{asset('css/fonts.css')}}" media="screen" rel="stylesheet"/>
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
 
         <link rel="stylesheet" href="{{asset('css/ext/cache.css')}}" type="text/css" />
