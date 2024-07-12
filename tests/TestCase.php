@@ -13,6 +13,7 @@ abstract class TestCase extends BaseTestCase
         //$this->withoutExceptionHandling();
         $this->mockLocale();
         $this->mockBrowserCheck();
+        $this->withoutVite();
         Mail::fake();
     }
 
