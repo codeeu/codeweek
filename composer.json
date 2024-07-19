@@ -28,7 +28,7 @@
         "maatwebsite/excel": "^3.1",
         "martinlindhe/laravel-vue-i18n-generator": "dev-l10",
         "predis/predis": "^2.2",
-        "rappasoft/laravel-livewire-tables": "^v3.2.4",
+        "rappasoft/laravel-livewire-tables": "^3.3",
         "socialiteproviders/microsoft-azure": "^4.2",
         "spatie/laravel-activitylog": "^4.8",
         "spatie/laravel-cookie-consent": "^3.3",
