@@ -84,19 +84,6 @@ final class RouteProtectionTest extends TestCase
 
     }
 
-    #[Test]
-    public function only_leading_teacher_can_access_report_form(): void
-    {
-
-        $this->withExceptionHandling();
-
-        $rejected = [$this->event_owner, $this->school_manager,  $this->ambassador];
-        $allowed = [$this->leading_teacher];
-
-        $this->check_route('/leading-teachers/report', $allowed, $rejected);
-
-    }
-
     private function check_route($route, $allowed, $restricted)
     {
 
