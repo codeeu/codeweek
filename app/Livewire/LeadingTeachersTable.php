@@ -82,7 +82,7 @@ class LeadingTeachersTable extends DataTableComponent
     }
     public function builder(): Builder
     {
-        return User::role('leading teacher');
+        return User::role('leading teacher')->orderBy('approved');
     }
 
     public function columns(): array
