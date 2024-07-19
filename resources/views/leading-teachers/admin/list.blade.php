@@ -17,7 +17,6 @@
 
             <section class="codeweek-content-wrapper" style="margin-top:0;">
 
-{{--            <livewire:leading-teachers-list-table per-page="100"  exportable="true"/>--}}
             <livewire:leading-teachers-table/>
         </section>
 
