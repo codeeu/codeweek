@@ -13,7 +13,7 @@ class UserStatus extends Filter
      *
      * @param  mixed  $value
      */
-    public function apply(Request $request, Builder $query, $value): Builder
+    public function apply(Request $request, $query, $value): Builder
     {
         return $query->join('model_has_roles', 'users.id', '=', 'model_has_roles.model_id')
             ->where('model_has_roles.role_id', '=', $value)

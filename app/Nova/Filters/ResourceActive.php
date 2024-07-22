@@ -13,7 +13,7 @@ class ResourceActive extends Filter
      *
      * @param  mixed  $value
      */
-    public function apply(Request $request, Builder $query, $value): Builder
+    public function apply(Request $request, $query, $value): Builder
     {
 
         return $query->where('active', $value);

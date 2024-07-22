@@ -9,6 +9,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
 class ApproveEvent extends Action
 {
@@ -31,7 +32,7 @@ class ApproveEvent extends Action
     /**
      * Get the fields available on the action.
      */
-    public function fields(): array
+    public function fields(NovaRequest $request): array
     {
         return [
 

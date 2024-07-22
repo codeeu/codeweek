@@ -13,6 +13,7 @@ use Laravel\Nova\Fields\Textarea;
 
 class Podcast extends Resource
 {
+    public static $group = 'Podcasts';
     public static $displayInNavigation = true;
 
     /**
@@ -57,7 +58,7 @@ class Podcast extends Resource
             Text::make('Transcript')
                 ->sortable()
                 ->hideFromIndex(),
-            DateTime::make('Release Date')->sortable()->format('DD/MM/Y'),
+            DateTime::make('Release Date')->sortable(),
             HasMany::make('PodcastGuests', 'guests'),
             HasMany::make('PodcastResources', 'resources'),
 
