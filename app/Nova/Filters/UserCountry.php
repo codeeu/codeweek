@@ -14,7 +14,7 @@ class UserCountry extends Filter
      *
      * @param  mixed  $value
      */
-    public function apply(Request $request, Builder $query, $value): Builder
+    public function apply(Request $request, $query, $value): Builder
     {
         return $query->where('country_iso', $value);
     }
@@ -25,6 +25,6 @@ class UserCountry extends Filter
     public function options(Request $request): array
     {
 
-        return Country::withEvents()->pluck('iso', 'name');
+        return Country::withEvents()->pluck('iso', 'name')->toArray();
     }
 }

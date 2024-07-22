@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Text;
 
 class PodcastGuest extends Resource
 {
+    public static $group = 'Podcasts';
     public static $displayInNavigation = true;
 
     /**

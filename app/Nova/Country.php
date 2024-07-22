@@ -8,6 +8,8 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Country extends Resource
 {
+
+    public static $group = 'Community';
     /**
      * The model the resource corresponds to.
      *

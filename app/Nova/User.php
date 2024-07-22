@@ -3,31 +3,29 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\HasMany;
+use Illuminate\Validation\Rules;
+use Laravel\Nova\Fields\Gravatar;
+use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
 class User extends Resource
 {
+    public static $group = 'Community';
     /**
      * The model the resource corresponds to.
      *
-     * @var string
+     * @var class-string<\App\User>
      */
     public static $model = \App\User::class;
-
-    //public static $title = 'email';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public function title()
-    {
-        return $this->getName();
-    }
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -35,84 +33,80 @@ class User extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'firstname', 'lastname', 'username', 'email',
+        'id', 'name', 'email',
     ];
 
     /**
      * Get the fields displayed by the resource.
+     *
+     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @return array
      */
-    public function fields(Request $request): array
+    public function fields(NovaRequest $request)
     {
         return [
+            ID::make()->sortable(),
 
-            Boolean::make('ambassador'),
+            Gravatar::make()->maxWidth(50),
 
-            Boolean::make('Receive Email Notifications', 'receive_emails')
-                ->hideFromIndex(),
-
-            Text::make('Email', 'email')
-                ->onlyOnIndex(),
-
-            Text::make('Name', function () {
-                return $this->getName();
-            })
-                ->rules('required', 'max:255')
-                ->onlyOnIndex(),
+            Text::make('Name')
+                ->sortable()
+                ->rules('required', 'max:255'),
 
             Text::make('Email')
                 ->sortable()
                 ->rules('required', 'email', 'max:254')
                 ->creationRules('unique:users,email')
-                ->updateRules('unique:users,email,{{resourceId}}')
-                ->hideFromIndex(),
-
-            HasMany::make('Events'),
+                ->updateRules('unique:users,email,{{resourceId}}'),
 
             Password::make('Password')
                 ->onlyOnForms()
-                ->creationRules('required', 'string', 'min:6')
-                ->updateRules('nullable', 'string', 'min:6'),
-
+                ->creationRules('required', Rules\Password::defaults())
+                ->updateRules('nullable', Rules\Password::defaults()),
         ];
     }
 
     /**
      * Get the cards available for the request.
+     *
+     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @return array
      */
-    public function cards(Request $request): array
+    public function cards(NovaRequest $request)
     {
         return [];
     }
 
     /**
      * Get the filters available for the resource.
+     *
+     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @return array
      */
-    public function filters(Request $request): array
+    public function filters(NovaRequest $request)
     {
-        return [
-            new Filters\UserStatus,
-        ];
+        return [];
     }
 
     /**
      * Get the lenses available for the resource.
+     *
+     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @return array
      */
-    public function lenses(Request $request): array
+    public function lenses(NovaRequest $request)
     {
         return [];
     }
 
     /**
      * Get the actions available for the resource.
+     *
+     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
+     * @return array
      */
-    public function actions(Request $request): array
+    public function actions(NovaRequest $request)
     {
         return [];
-    }
-
-    public static function availableForNavigation(Request $request)
-    {
-
-        return $request->user()->isAdmin();
     }
 }
