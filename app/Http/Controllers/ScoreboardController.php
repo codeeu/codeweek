@@ -47,7 +47,7 @@ class ScoreboardController extends Controller
                 ->whereYear('end_date', '=', $edition)
                 ->whereNull('deleted_at')
                 ->where('countries.parent', "=", "")
-                ->groupBy('countries.iso')
+                ->groupBy(['countries.iso','countries.name','countries.population'])
                 ->get();
 
 
@@ -60,7 +60,7 @@ class ScoreboardController extends Controller
                 ->whereNull('deleted_at')
                 ->whereYear('end_date', '=', $edition)
                 ->whereNotNull('countries.parent')
-                ->groupBy('countries.iso')
+                ->groupBy(['parent','countries.population'])
                 ->get();
 
 

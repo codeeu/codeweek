@@ -50,7 +50,6 @@ class CountriesQuery
 
     public static function withOnlineEvents($highlighted_status){
 
-        //DB::statement("SET sql_mode=(SELECT CONCAT(@@sql_mode, ',ONLY_FULL_GROUP_BY'));");
         $countries = DB::table('events')
             ->select('events.country_iso as iso', 'countries.name', DB::raw('count(events.id) as total'), DB::raw('MIN(events.start_date) as start_date'))
             ->join('countries', 'events.country_iso', '=', 'countries.iso')
