@@ -3,7 +3,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build-analytics": "cd nova-components/Analytics && npm run dev",
+        "build-analytics-prod": "cd nova-components/Analytics && npm run prod"
     },
     "devDependencies": {
         "axios": "^1.6.4",

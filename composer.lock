@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb8a241aec9aa4e4d917310e9ba8a917",
+    "content-hash": "7a7d4125e79582a9a5d33aee91ae9b49",
     "packages": [
+        {
+            "name": "acme/analytics",
+            "version": "dev-shift-117588",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/Analytics",
+                "reference": "cf6d276a3cb50485207fb1c53f632ccb3d1c2e1e"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Acme\\Analytics\\AssetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acme\\Analytics\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova asset.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "archtechx/enums",
             "version": "v0.3.2",
@@ -13413,7 +13449,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "martinlindhe/laravel-vue-i18n-generator": 20
+        "martinlindhe/laravel-vue-i18n-generator": 20,
+        "acme/analytics": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
