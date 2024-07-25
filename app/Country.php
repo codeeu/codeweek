@@ -87,7 +87,7 @@ class Country extends Model
             return User::role(['ambassador','leading teacher'])
                 ->where("country_iso","<>", "")
                 ->join('countries', 'country_iso', '=', 'countries.iso')
-                ->groupBy('country_iso')
+                ->groupBy(['country_iso','countries.name'])
                 ->select('country_iso as iso', DB::raw('count(*) as total'),'countries.name')
                 ->orderBy("countries.name")
                 ->get()
