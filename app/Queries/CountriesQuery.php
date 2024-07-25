@@ -40,7 +40,7 @@ class CountriesQuery
             ->join('countries','events.country_iso','=','countries.iso')
             ->where('status',"=","PENDING")
             ->whereNull('deleted_at')
-            ->groupBy('country_iso')
+            ->groupBy(['country_iso','countries.name'])
             ->orderBy('countries.name')
             ->get();
 
