@@ -67,7 +67,7 @@ return new class extends Migration
 
             $table->primary(['permission_id', 'role_id']);
 
-            app('cache')->forget('spatie.permission.cache');
+            //app('cache')->forget('spatie.permission.cache');
         });
     }
 
