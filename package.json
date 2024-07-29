@@ -16,6 +16,7 @@
     "dependencies": {
         "@vitejs/plugin-vue": "^5.0.4",
         "@vuepic/vue-datepicker": "^8.8.1",
+        "laravel-vue-i18n": "^2.7.7",
         "lodash": "^4.17.21",
         "mitt": "^3.0.1",
         "v-autocomplete": "^1.8.2",

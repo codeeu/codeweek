@@ -26,15 +26,7 @@ export default {
   data() {
     return {
       values: this.value,
-      option: this.options,
-
-      // options: [
-      //   { name: 'Vue.js', language: 'JavaScript' },
-      //   { name: 'Rails', language: 'Ruby' },
-      //   { name: 'Sinatra', language: 'Ruby' },
-      //   { name: 'Laravel', language: 'PHP', $isDisabled: true },
-      //   { name: 'Phoenix', language: 'Elixir' }
-      // ]
+      option: this.options
     }
 
   }
