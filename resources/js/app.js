@@ -17,28 +17,34 @@ import InputTags from "./components/InputTags.vue";
 import ReportEvent from "./components/ReportEvent.vue";
 import SearchPageComponent from "./components/SearchPageComponent.vue";
 
-import { createI18n } from 'vue-i18n';
-import Locale from './vue-i18n-locales.generated';
+// import { createI18n } from 'vue-i18n';
+// import Locale from './vue-i18n-locales.generated';
 import AvatarForm from "./components/AvatarForm.vue";
 import authorizationPlugin from "./components/authorizationPlugin.js";
 
+import { i18nVue } from 'laravel-vue-i18n';
 
 
 
-const lang = document.documentElement.lang.substr(0, 2);
-
-const i18n = createI18n({
-    legacy: false,
-    globalInjection: true,
-    locale: lang,
-    fallbackLocale: 'en',
-    messages: Locale
-});
+// const lang = document.documentElement.lang.substr(0, 2);
+//
+// const i18n = createI18n({
+//     legacy: false,
+//     globalInjection: true,
+//     locale: lang,
+//     fallbackLocale: 'en',
+//     messages: Locale
+// });
 
 const app = createApp({});
 
-app.use(i18n);
 app.use(authorizationPlugin);
+app.use(i18nVue, {
+    resolve: async lang => {
+        const langs = import.meta.glob('../lang/*.json');
+        return await langs[`../lang/${lang}.json`]();
+    }
+})
 app.component('ResourceForm', ResourceForm);
 app.component('ResourceCard', ResourceCard);
 app.component('ResourcePill', ResourcePill);
