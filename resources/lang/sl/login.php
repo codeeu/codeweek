@@ -14,7 +14,7 @@ return [
     'login' => 'Prijava',
     'register' => 'Registracija',
     'github' => 'Prijava v Github',
-    'twitter' => 'Prijava v Twitter',
+    'X' => 'Prijava v X',
     'facebook' => 'Prijava v Facebook',
     'google' => 'Prijava v Google',
     'azure' => 'Prijava v Azure',

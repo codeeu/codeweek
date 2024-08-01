@@ -49,7 +49,7 @@ class OnlineCalendar extends Component
             ->where($this->whereClause)
 //            ->where('start_date', '>=', Carbon::now())
             ->where('start_date', '>=', \Carbon\Carbon::now()->firstOfMonth())
-            ->groupBy('year', 'month')
+            ->groupBy('year', 'month','monthname')
             ->orderBy('year', 'asc')
             ->orderBy('month', 'asc')
             ->get();

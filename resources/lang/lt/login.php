@@ -14,7 +14,7 @@ return [
     'login' => 'Prisijungti',
     'register' => 'Registruotis',
     'github' => 'Prisijunkite per „Github“',
-    'twitter' => 'Prisijunkite per „Twitter“',
+    'X' => 'Prisijunkite per „X“',
     'facebook' => 'Prisijunkite per „Facebook“',
     'google' => 'Prisijunkite per „Google“',
     'azure' => 'Prisijunkite per „Azure“',

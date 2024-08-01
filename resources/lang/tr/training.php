@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Aktivite 1 - İlkokullar için CodyRoby',
                 '2' => 'Aktivite 2 - İlköğretim Okulları için CodyRoby',
-                '3' => 'Aktivite 3 - Ortaokullar için CodyRoby',
-            ],
+                '3' => 'Aktivite 3 - Ortaokullar için CodyRoby'
+            ]
         ],
         '2' => [
             'title' => 'Sayısal düşünme ve problem çözme',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Aktivite 1 - İlkokullar için Matematiksel Akıl Yürütme',
                 '2' => 'Aktivite 2 - Ortaokullar için Algoritmaya Giriş',
-                '3' => 'Aktivite 3 - Liseler için Algoritma',
-            ],
+                '3' => 'Aktivite 3 - Liseler için Algoritma'
+            ]
         ],
         '3' => [
             'title' => 'Görsel programlama - Scratch’e giriş',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Aktivite 1 - İlkokullar için Temel Scratch',
                 '2' => 'Aktivite 2 - İlköğretim Okulları için Temel Scratch',
-                '3' => 'Aktivite 3 - Ortaokullar için Temel Scratch',
-            ],
+                '3' => 'Aktivite 3 - Ortaokullar için Temel Scratch'
+            ]
         ],
         '4' => [
             'title' => 'Scratch ile eğitici oyunlar hazırlama',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Aktivite 1 - İlkokullar için Scratch ile soru cevap oyunu',
                 '2' => 'Aktivite 2 - İlköğretim Okulları için Scratch ile soru cevap oyunu',
-                '3' => 'Aktivite 3 - Ortaokullar için Scratch ile soru cevap oyunu',
-            ],
+                '3' => 'Aktivite 3 - Ortaokullar için Scratch ile soru cevap oyunu'
+            ]
         ],
         '5' => [
             'title' => 'Sınıflarda robot teknolojisi ve deneme uygulamaları',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Aktivite 1 - İlkokullar için mekanik duralit el yapımı',
                 '2' => 'Aktivite 2 - Ortaokullar için mekanik ya da robotik el yapımı',
-                '3' => 'Aktivite 3 - Liseler için mekanik ya da robotik el yapımı',
-            ],
+                '3' => 'Aktivite 3 - Liseler için mekanik ya da robotik el yapımı'
+            ]
         ],
         '6' => [
             'title' => 'Uygulama Kâşifi (App Inventor) ve Uygulama Geliştirme (App Development)',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Etkinlik 1 - İlkokul Adı',
                 '2' => 'Etkinlik 2 - Ortaokul Adı',
-                '3' => 'Etkinlik 3 - Lise Adı',
-            ],
+                '3' => 'Etkinlik 3 - Lise Adı'
+            ]
         ],
         '7' => [
             'title' => 'Deneme-Yanılma ve Yapma',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Etkinlik 1 - İlkokul Adı',
                 '2' => 'Etkinlik 2 - Ortaokul Adı',
-                '3' => 'Etkinlik 3 - Lise Adı',
-            ],
+                '3' => 'Etkinlik 3 - Lise Adı'
+            ]
         ],
         '8' => [
             'title' => 'Tüm konular için kodlama',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Etkinlik 1 Robotik ve STEM\'de temel için dahil etme',
                 '2' => 'Etkinlik 2 Müzik kodlamaktadır',
                 '3' => 'Etkinlik 3 Makey Makey ile deneme-yanılma ve kodlama',
-                '4' => 'Etkinlik 4 Bir CLIL dersi için günlük yaşam algoritması',
-            ],
+                '4' => 'Etkinlik 4 Bir CLIL dersi için günlük yaşam algoritması'
+            ]
         ],
         '9' => [
             'title' => 'Micro:bit ile modelleme yapımı',
@@ -136,7 +136,7 @@ return [
                 '1' => 'Micro:bit ile Mors Alfabesi, İlkokul',
                 '2' => 'Micro:bit ile odadan kaçış, Ortaokul',
                 '3' => 'Modelleme yapımı, Lise',
-            ],
+            ]
         ],
         '10' => [
             'title' => 'Python ile yaratıcı kodlama',
@@ -158,36 +158,36 @@ Python ile öğrenciler, tarihi olaylar hakkında testler hazırlayabilir, matem
             'links' => [
                 'title' => 'Diğer kaynaklar',
                 '1' => [
-                    'url' => 'https://docs.python.org/3/library/',
-                    'title' => 'Python Standart Kitaplık',
-                    'description' => 'Önceden derlenmiş kod ve modüller (ör. turtle modülü, math modülü vb.).',
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python Standart Kitaplık",
+                    "description" => "Önceden derlenmiş kod ve modüller (ör. turtle modülü, math modülü vb.).",
                 ],
                 '2' => [
-                    'url' => 'https://codecombat.com/',
-                    'title' => 'CodeCombat',
-                    'description' => 'Programlama kavramlarını öğrenmeye yönelik eğitici video oyunu.',
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Programlama kavramlarını öğrenmeye yönelik eğitici video oyunu.",
                 ],
                 '3' => [
-                    'url' => 'https://projects.raspberrypi.org/en/codeclub',
-                    'title' => 'CodeClub projeleri',
-                    'description' => 'Yeni başlayanlardan ileri düzey kullanıcılara kadar tüm çocuklara yönelik adım adım programlama projeleri.',
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "CodeClub projeleri",
+                    "description" => "Yeni başlayanlardan ileri düzey kullanıcılara kadar tüm çocuklara yönelik adım adım programlama projeleri.",
                 ],
                 '4' => [
-                    'url' => 'https://inventwithpython.com/invent4thed/',
-                    'title' => 'Python ile kendi bilgisayar oyununu icat et',
-                    'description' => 'Python ile kendi bilgisayar oyunlarınızı nasıl programlayacağınızı öğreten bir kitap.',
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Python ile kendi bilgisayar oyununu icat et",
+                    "description" => "Python ile kendi bilgisayar oyunlarınızı nasıl programlayacağınızı öğreten bir kitap.",
                 ],
                 '5' => [
-                    'url' => 'https://www.codewars.com/',
-                    'title' => 'CodeWars',
-                    'description' => 'Öğrencilerin ve öğretmenlerin bir dizi mücadele ile kendilerini eğitebileceği öğretici bir topluluk.',
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Öğrencilerin ve öğretmenlerin bir dizi mücadele ile kendilerini eğitebileceği öğretici bir topluluk.",
                 ],
                 '6' => [
-                    'url' => 'https://hourofpython.com/',
-                    'title' => 'Hour of Python',
-                    'description' => 'İnteraktif Trinkets kullanılan Python tanıtım dersleri (metin tabanlı ve blok).',
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "İnteraktif Trinkets kullanılan Python tanıtım dersleri (metin tabanlı ve blok).",
                 ],
-            ],
+            ]
         ],
         '11' => [
             'title' => 'Katılım için Kodlama',
@@ -201,40 +201,40 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 '1' => 'Bağlantısız Yumurta Kutusu',
                 '2' => 'Çok Akıllı Bir Fare',
                 '3' => 'Yıldız Yapan Yıldız',
-            ],
+            ]
         ],
 
-        '12' => [
-            'title' => 'Sürdürülebilir kalkınma hedefleri için kodlama',
-            'author' => 'Hazırlayan: Francisco Javier Masero, Cristina Nicolaita ve Erviola Konomi',
-            'text' => [
-                '1' => 'Geleneksel eğitim, öğrencilere küresel iklim değişikliği, cinsiyet eşitliği, açlık, yoksulluk veya sağlık ve refah gibi gerçek dünyadaki sorunları anlama ve çözme konusunda çok az fırsat sunar.',
-                '2' => "Sürdürülebilir Kalkınma Hedefleri (SKH'ler), Birleşmiş Milletlerin tüm üye devletleri tarafından dünyada barış ve refaha ulaşmak için bir yol haritası olarak kabul edilen ve küresel kalkınmayı teşvik eden 2030 Sürdürülebilir Kalkınma Gündeminin temelini oluşturmaktadır. Öğretmenler, öğrencilerin eleştirel düşüncelerini geliştirmelerinin yanı sıra kimliklerini bulmada ve hedeflerini belirlemelerine yardımcı olmak için sınıfta SDG'leri kullanabilir. Temel kodlama ve sayısal düşünme unsurlarını SKH'lerle birleştirmek, öğrencilerinizin güvenini artıracak ve onların yaratıcılıklarını, girişimcilik ruhlarını, problem çözme veya iletişim becerilerini geliştirmelerine yardımcı olacaksınız.",
-                '3' => 'Aşağıdaki etkinliklerde öğrenciler Scratch, ASCII kodlama ve bağlantısız kodlama ilkelerini bugün küresel ve sosyal ilgisi düzeyindeki konulara uygulayacaklar. Öğretmenler, empati, etkin vatandaşlık ve toplum yanlısı becerilerini eğlenceli ve ilgi çekici bir şekilde geliştirmelerine yardımcı olurken sürdürülebilir kalkınma hedefleri hakkında farkındalık yaratacaklar.',
-                '4' => "Bu ders planlarının her biri, SKH'lerden birine odaklanmaktadır:",
-                '5' => 'Sürdürülebilir Kalkınma Hedefi 3: İnsanların sağlıklarının iyi olmasını sağlamak ve her yaştan herkes için refahı teşvik etmek',
-                '6' => 'Sürdürülebilir Kalkınma Hedefi 5: Cinsiyet eşitliğini sağlamak ve tüm kadınların haklarını savunmak ',
-                '7' => 'Sürdürülebilir Kalkınma Hedefi 13: İklim değişikliği ve etkileriyle mücadele için acil önlem almak',
+        "12" => [
+            "title" => "Sürdürülebilir kalkınma hedefleri için kodlama",
+            "author" => "Hazırlayan: Francisco Javier Masero, Cristina Nicolaita ve Erviola Konomi",
+            "text" => [
+                "1" => "Geleneksel eğitim, öğrencilere küresel iklim değişikliği, cinsiyet eşitliği, açlık, yoksulluk veya sağlık ve refah gibi gerçek dünyadaki sorunları anlama ve çözme konusunda çok az fırsat sunar.",
+                "2" => "Sürdürülebilir Kalkınma Hedefleri (SKH'ler), Birleşmiş Milletlerin tüm üye devletleri tarafından dünyada barış ve refaha ulaşmak için bir yol haritası olarak kabul edilen ve küresel kalkınmayı teşvik eden 2030 Sürdürülebilir Kalkınma Gündeminin temelini oluşturmaktadır. Öğretmenler, öğrencilerin eleştirel düşüncelerini geliştirmelerinin yanı sıra kimliklerini bulmada ve hedeflerini belirlemelerine yardımcı olmak için sınıfta SDG'leri kullanabilir. Temel kodlama ve sayısal düşünme unsurlarını SKH'lerle birleştirmek, öğrencilerinizin güvenini artıracak ve onların yaratıcılıklarını, girişimcilik ruhlarını, problem çözme veya iletişim becerilerini geliştirmelerine yardımcı olacaksınız.",
+                "3" => "Aşağıdaki etkinliklerde öğrenciler Scratch, ASCII kodlama ve bağlantısız kodlama ilkelerini bugün küresel ve sosyal ilgisi düzeyindeki konulara uygulayacaklar. Öğretmenler, empati, etkin vatandaşlık ve toplum yanlısı becerilerini eğlenceli ve ilgi çekici bir şekilde geliştirmelerine yardımcı olurken sürdürülebilir kalkınma hedefleri hakkında farkındalık yaratacaklar.",
+                "4" => "Bu ders planlarının her biri, SKH'lerden birine odaklanmaktadır:",
+                "5" => "Sürdürülebilir Kalkınma Hedefi 3: İnsanların sağlıklarının iyi olmasını sağlamak ve her yaştan herkes için refahı teşvik etmek",
+                "6" => "Sürdürülebilir Kalkınma Hedefi 5: Cinsiyet eşitliğini sağlamak ve tüm kadınların haklarını savunmak ",
+                "7" => "Sürdürülebilir Kalkınma Hedefi 13: İklim değişikliği ve etkileriyle mücadele için acil önlem almak",
             ],
-            'activities' => [
-                '1' => 'Karateka projesi: İlkokul, Ortaokul ve Liseler için programlama yoluyla karateyi öğrenmek',
-                '2' => 'İlkokullar için sürdürülebilir kalkınma hedefleri ve iklim değişikliği kodlaması',
-                '3' => 'Liseler için cinsiyet eşitliği konusunda kodlama',
-            ],
+            "activities" => [
+                "1" => "Karateka projesi: İlkokul, Ortaokul ve Liseler için programlama yoluyla karateyi öğrenmek",
+                "2" => "İlkokullar için sürdürülebilir kalkınma hedefleri ve iklim değişikliği kodlaması",
+                "3" => "Liseler için cinsiyet eşitliği konusunda kodlama",
+            ]
         ],
 
-        '13' => [
-            'title' => 'Sınıfta Yapay Zekaya Giriş',
-            'author' => 'hazırlayan: Artur Coelho ve Marjana Prifti Skenduli',
-            'text' => [
-                '1' => 'Yapay Zeka (AI), günlük yaşamın birçok alanını etkilemektedir: telefonunuza yazdığınız metni otomatik olarak düzeltir, en sevdiğiniz müzik uygulamanızın çaldığı müziği seçer ve unuttuğunuzda parolalarınızı hatırlar. AI, bilgisayar biliminden üretime ve tıptan modaya kadar tüm alanlardaki uygulamalarla birlikte makine öğrenimi, robotik ve algoritmaların bir kombinasyonunu ifade eder. Bu nedenle hayatımızda ve toplumlarımızda yadsınamaz bir yere sahiptir ve bilimin gelişmesinde anahtar rol oynar. Ve hayatımızdaki diğer önemli olaylar gibi, öğrenciler de öğrenerek bundan faydalanacaklardır. Ama yapay zeka gibi karmaşık bir şey onlara nasıl öğretilir?',
-                '2' => "LearningBit, öğrencilere yapay zekanın ne olduğunu ve öğrencilerin yaşamlarında ne gibi bir rol oynadığını açıklamanıza yardımcı olacaktır. Bu faaliyetler, uzman olmayanların içeriği kolayca anlamaları ve karmaşık terimleri kolayca anlaşılabilir fikirlere etkili bir şekilde ayırabilmeleri için tasarlanmıştır. Bu ders planları ile öğrencilerin yapay zekanın kullanımlarını ve arkasındaki bazı mekanizmaları öğrenmelerine yardımcı olabilirsiniz. Bu etkinlikler, öğrencilerin analitik ve eleştirel düşünme becerilerini geliştirmeleri için tasarlanmıştır: örneğin, Marjana'nın etkinliğinde öğrenciler bir sınıflandırma hattı geliştirmektedir. Bu etkinlikler ayrıca öğrencilerin yapay zekanın çeşitli uygulamalarını anlamalarına yardımcı olacaktır: Artur'un aktivitesinde, Yapay Zeka ile Sanat arasındaki bağlantıyı ve yapay zekanın görsel ifadenin geliştirilmesi için nasıl kullanılabileceğini öğrenecekler. Bu etkinliklerle öğrenciler ayrıca yapay zekanın tehlikeleri ve etkileri üzerine düşünecekler.",
+        "13" => [
+            "title" => "Sınıfta Yapay Zekaya Giriş",
+            "author" => "hazırlayan: Artur Coelho ve Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Yapay Zeka (AI), günlük yaşamın birçok alanını etkilemektedir: telefonunuza yazdığınız metni otomatik olarak düzeltir, en sevdiğiniz müzik uygulamanızın çaldığı müziği seçer ve unuttuğunuzda parolalarınızı hatırlar. AI, bilgisayar biliminden üretime ve tıptan modaya kadar tüm alanlardaki uygulamalarla birlikte makine öğrenimi, robotik ve algoritmaların bir kombinasyonunu ifade eder. Bu nedenle hayatımızda ve toplumlarımızda yadsınamaz bir yere sahiptir ve bilimin gelişmesinde anahtar rol oynar. Ve hayatımızdaki diğer önemli olaylar gibi, öğrenciler de öğrenerek bundan faydalanacaklardır. Ama yapay zeka gibi karmaşık bir şey onlara nasıl öğretilir?",
+                "2" => "LearningBit, öğrencilere yapay zekanın ne olduğunu ve öğrencilerin yaşamlarında ne gibi bir rol oynadığını açıklamanıza yardımcı olacaktır. Bu faaliyetler, uzman olmayanların içeriği kolayca anlamaları ve karmaşık terimleri kolayca anlaşılabilir fikirlere etkili bir şekilde ayırabilmeleri için tasarlanmıştır. Bu ders planları ile öğrencilerin yapay zekanın kullanımlarını ve arkasındaki bazı mekanizmaları öğrenmelerine yardımcı olabilirsiniz. Bu etkinlikler, öğrencilerin analitik ve eleştirel düşünme becerilerini geliştirmeleri için tasarlanmıştır: örneğin, Marjana'nın etkinliğinde öğrenciler bir sınıflandırma hattı geliştirmektedir. Bu etkinlikler ayrıca öğrencilerin yapay zekanın çeşitli uygulamalarını anlamalarına yardımcı olacaktır: Artur'un aktivitesinde, Yapay Zeka ile Sanat arasındaki bağlantıyı ve yapay zekanın görsel ifadenin geliştirilmesi için nasıl kullanılabileceğini öğrenecekler. Bu etkinliklerle öğrenciler ayrıca yapay zekanın tehlikeleri ve etkileri üzerine düşünecekler."
             ],
-            'activities' => [
-                '1' => 'İlkokul için İnsan-Yapay Zeka Sanatı',
-                '2' => 'Makinelere Sınıflandırmayı Öğretmek: Ortaokul için Gözetimli Makine Öğrenimine Giriş',
-                '3' => 'Makinelere Sınıflandırmayı Öğretmek: Lise için Denetimli Makine Öğrenimine Giriş',
-            ],
+            "activities" => [
+                "1" => "İlkokul için İnsan-Yapay Zeka Sanatı",
+                "2" => "Makinelere Sınıflandırmayı Öğretmek: Ortaokul için Gözetimli Makine Öğrenimine Giriş",
+                "3" => "Makinelere Sınıflandırmayı Öğretmek: Lise için Denetimli Makine Öğrenimine Giriş",
+            ]
         ],
 
         '14' => [
@@ -242,83 +242,135 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
             'author' => ', Adil Tugyan, Georgia Lascaris ve Marco Neves',
             'text' => [
                 '1' => 'Yapay zekânın son yıllardaki ilerlemesi, bilgi işlem gücündeki hızlı ilerlemeler ve büyük miktarda verinin kullanılabilirliği sayesinde etkileyici oldu. Bu, yapay zekâ araştırmalarına önemli yatırımlara ve yapay zekâ endüstrisinin hızlı genişlemesine yol açarak, yapay zekâyı zamanımızın büyük bir teknolojik devrimi haline getirdi. Yapay zekâ her yerde. Günlük rutininizin bir parçası haline geldi, öyle ki bazen onu bir yapay zekâ olarak düşünmeyiz bile: Neredeyse her gün çevrimiçi öneri, yüz tanıma, güvenlik sistemleri ve ses asistanları kullanıyoruz. Peki ya eğitim?',
-                '2' => 'Yapay zekâ, yeni öğretim ve öğrenim yollarını etkinleştirmek ve öğrencilerin öğrenmesini geliştirmek için büyük bir potansiyele sahiptir. Bu Öğrenme Biti (gem, parça), otantik yapay zekâ etkinliklerini öğretiminize entegre etmenize ve öğrencilerinizi yapay zekâ tarafından şekillendirilen bir dünyada hayata ve kariyere hazırlamanıza yardımcı olacaktır. Bu etkinlikler öğrencilerin merak, problem çözme ve yaratıcılık becerilerini geliştirmeleri için tasarlanmıştır: Örneğin Adil’in etkinliğinde öğrenciler algoritmalar ve sinir ağları hakkında bilgi edinirler ve bir yapay zekâ beynini görselleştirmek için kendi sinir ağlarını oluşturmaları için teşvik edilirler. Georgia, bir sohbet robotunun adım adım geliştirilmesinde öğrencilerinize rehberlik edecek. Öğrenciler kendi sohbet robotlarını oluşturacak, soru ve yanıt veri kümelerini hazırlayacak ve Covid-19 ile ilgili soruları yanıtlayabilmesi için eğitecekler. Marco"nun etkinliğinde öğrenciler, günlük yaşamda ve işte akıllı makinelerin faydalarını ve zorluklarını keşfedecekler. Göz önünde bulundurmamız gereken yapay zekâ riskleri nelerdir? Yapay zekânın iş geleceği üzerinde ne gibi etkileri olacak? Gelecekte iş piyasasına girdiklerinde onlara hangi işler sunulacak?',
+                '2' => "Yapay zekâ, yeni öğretim ve öğrenim yollarını etkinleştirmek ve öğrencilerin öğrenmesini geliştirmek için büyük bir potansiyele sahiptir. Bu Öğrenme Biti (gem, parça), otantik yapay zekâ etkinliklerini öğretiminize entegre etmenize ve öğrencilerinizi yapay zekâ tarafından şekillendirilen bir dünyada hayata ve kariyere hazırlamanıza yardımcı olacaktır. Bu etkinlikler öğrencilerin merak, problem çözme ve yaratıcılık becerilerini geliştirmeleri için tasarlanmıştır: Örneğin Adil’in etkinliğinde öğrenciler algoritmalar ve sinir ağları hakkında bilgi edinirler ve bir yapay zekâ beynini görselleştirmek için kendi sinir ağlarını oluşturmaları için teşvik edilirler. Georgia, bir sohbet robotunun adım adım geliştirilmesinde öğrencilerinize rehberlik edecek. Öğrenciler kendi sohbet robotlarını oluşturacak, soru ve yanıt veri kümelerini hazırlayacak ve Covid-19 ile ilgili soruları yanıtlayabilmesi için eğitecekler. Marco\"nun etkinliğinde öğrenciler, günlük yaşamda ve işte akıllı makinelerin faydalarını ve zorluklarını keşfedecekler. Göz önünde bulundurmamız gereken yapay zekâ riskleri nelerdir? Yapay zekânın iş geleceği üzerinde ne gibi etkileri olacak? Gelecekte iş piyasasına girdiklerinde onlara hangi işler sunulacak?"
             ],
             'activities' => [
                 'title' => 'Aşağıdaki ders planlarında öğrenciler akıllı makineler konusunu eğlenceli ve ilgi çekici bir şekilde öğrenecekler.',
                 '1' => ' İlkokul için Yapay zekâ ve Sinir Ağları',
                 '2' => 'Ortaokul için Covid-19 Sohbet Robotum',
                 '3' => 'Akıllı Makineler Çağında Yaşamak: Ortaokul için Zorluklar ve Fırsatlar',
-            ],
+            ]
         ],
-        '15' => [
-            'title' => 'Medya Okuryazarlığını İnceleme',
-            'author' => 'Marijana Smolčec, Tea Horvatić ve Sanja Božinović tarafından hazırlanmıştır',
-            'text' => [
-                'Medya okuryazarlığı eğitimi, günümüz öğrencileri için hiç bu kadar önemli olmamıştı. Her yaştan öğrencilerin, medya açısından zengin dünyamızda yönlerini bulabilmek için ilgili becerileri, bilgileri ve tutumları kazanması gereklidir. Medya okuryazarlığı becerileri, internet üzerindeki güvenilir içerikleri kullanmalarına ve yanıltıcı bilgi kaynaklarını tanımalarına yardımcı olacaktır. İnternette buldukları bilgilerin gerçek olup olmadığını kontrol etmeyi ve bu bilgileri eleştirel bir şekilde yorumlamayı anlayacaklar. Yaratıcı çalışmaların doğru kullanımı konusundaki farkındalıkları artacak; kendi yaratıcı içeriklerini oluştururken öğrendiklerini uygulayacaklar.',
-                'Bu Öğrenme Dilimi, öğrencilerinizin medya okuryazarlarına dönüşmesini sağlamak için çeşitli stratejiler ve teknikler uygulamanızı sağlayacaktır. Marijana’nın etkinliğinde, öğrenciler web içeriklerini güvenli ve sorumlu bir şekilde kullanmayı öğrenir. Farklı lisans türlerini öğrenirler ve yaratıcı çalışmaların nasıl doğru şekilde paylaşılacağını göstermek için basit bir uygulama geliştirirler. Tea’nın etkinliğinde, öğrenciler tıklama tuzakları hakkında bilgi edinecekleri bir maceraya çıkar. Öğrenciler ilgi çekici görevler aracılığıyla tıklama tuzaklarını tespit etme ve ortaya çıkarmaya yönelik stratejiler keşfeder ve bu tuzaklardan nasıl kaçınacaklarını öğrenir. Sanja, öğrencilerin web içeriklerini, içeriklerin ilgi düzeyini, doğruluğunu, kaynağını ve amacını keşfetmelerini ve eleştirel bir şekilde analiz etmelerini ve değerlendirmelerini sağlar. İnternet üzerinde güvenilir kaynakları nasıl bulacaklarını ve internet üzerindeki yanlış bilgileri nasıl tanıyacaklarını öğrenirler.',
-                'Aşağıdaki ders planlarında, öğrencilerin medya okuryazarlığı becerilerini geliştirmeye yönelik ilham verici ve ilgi çekici etkinlikler bulacaksınız:',
+        "15" => [
+            "title" => "Medya Okuryazarlığını İnceleme",
+            "author" => "Marijana Smolčec, Tea Horvatić ve Sanja Božinović tarafından hazırlanmıştır",
+            "text" => [
+                "Medya okuryazarlığı eğitimi, günümüz öğrencileri için hiç bu kadar önemli olmamıştı. Her yaştan öğrencilerin, medya açısından zengin dünyamızda yönlerini bulabilmek için ilgili becerileri, bilgileri ve tutumları kazanması gereklidir. Medya okuryazarlığı becerileri, internet üzerindeki güvenilir içerikleri kullanmalarına ve yanıltıcı bilgi kaynaklarını tanımalarına yardımcı olacaktır. İnternette buldukları bilgilerin gerçek olup olmadığını kontrol etmeyi ve bu bilgileri eleştirel bir şekilde yorumlamayı anlayacaklar. Yaratıcı çalışmaların doğru kullanımı konusundaki farkındalıkları artacak; kendi yaratıcı içeriklerini oluştururken öğrendiklerini uygulayacaklar.",
+                "Bu Öğrenme Dilimi, öğrencilerinizin medya okuryazarlarına dönüşmesini sağlamak için çeşitli stratejiler ve teknikler uygulamanızı sağlayacaktır. Marijana’nın etkinliğinde, öğrenciler web içeriklerini güvenli ve sorumlu bir şekilde kullanmayı öğrenir. Farklı lisans türlerini öğrenirler ve yaratıcı çalışmaların nasıl doğru şekilde paylaşılacağını göstermek için basit bir uygulama geliştirirler. Tea’nın etkinliğinde, öğrenciler tıklama tuzakları hakkında bilgi edinecekleri bir maceraya çıkar. Öğrenciler ilgi çekici görevler aracılığıyla tıklama tuzaklarını tespit etme ve ortaya çıkarmaya yönelik stratejiler keşfeder ve bu tuzaklardan nasıl kaçınacaklarını öğrenir. Sanja, öğrencilerin web içeriklerini, içeriklerin ilgi düzeyini, doğruluğunu, kaynağını ve amacını keşfetmelerini ve eleştirel bir şekilde analiz etmelerini ve değerlendirmelerini sağlar. İnternet üzerinde güvenilir kaynakları nasıl bulacaklarını ve internet üzerindeki yanlış bilgileri nasıl tanıyacaklarını öğrenirler.",
+                "Aşağıdaki ders planlarında, öğrencilerin medya okuryazarlığı becerilerini geliştirmeye yönelik ilham verici ve ilgi çekici etkinlikler bulacaksınız:",
             ],
-            'activities' => [
-                '1' => 'İnternette ise telifsiz midir?',
-                '2' => 'Tıklamak veya tıklamamak',
-                '3' => 'Gerçek bilgi kontrolü',
-            ],
+            "activities" => [
+                "1" => "İnternette ise telifsiz midir?",
+                "2" => "Tıklamak veya tıklamamak",
+                "3" => "Gerçek bilgi kontrolü",
+            ]
         ],
 
-        '16' => [
-            'title' => 'HEDY İLE HİKÂYE ANLATICILIĞI',
-            'author' => 'Felienne Hermans',
-            'text' => [
-                'Öğrencileriniz görsel bir programlama dilinde ustalaştı ancak metin tabanlı bir programlama diline derinlemesine girme konusunda kendilerini hazır hissetmiyor mu? Öyleyse bu öğrenim bilgisi tam size ve öğrencilerinize göre, çünkü bu bilgiler görsel ve metin tabanlı programlama dilleri arasındaki boşluğu doldurmanıza yardımcı olacak. <strong>Hedy ile Hikâye Anlatıcılığı</strong> öğrenim bilgisi, çocuklara programlamayı öğreten Hedy adlı kademeli bir programlama dilinin kullanıldığı üç ders planından oluşuyor.',
+        "16" => [
+            "title" => "HEDY İLE HİKÂYE ANLATICILIĞI",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Öğrencileriniz görsel bir programlama dilinde ustalaştı ancak metin tabanlı bir programlama diline derinlemesine girme konusunda kendilerini hazır hissetmiyor mu? Öyleyse bu öğrenim bilgisi tam size ve öğrencilerinize göre, çünkü bu bilgiler görsel ve metin tabanlı programlama dilleri arasındaki boşluğu doldurmanıza yardımcı olacak. <strong>Hedy ile Hikâye Anlatıcılığı</strong> öğrenim bilgisi, çocuklara programlamayı öğreten Hedy adlı kademeli bir programlama dilinin kullanıldığı üç ders planından oluşuyor.",
 
-                'Hedy, metinsel programlama dillerini öğrenmek isteyen ancak Python dilinin çok karmaşık gelebileceği çocuklara uygundur. Kademeli dillerde, her seviyede yeni konseptlerin ve sözdizimsel zorlukların ilave edildiği farklı dil seviyeleri kullanılır. Her Hedy seviyesinin sonunda, öğrenciler Python açısından sözdizimsel olarak geçerli bir alt kümede ustalaşırlar.',
+                "Hedy, metinsel programlama dillerini öğrenmek isteyen ancak Python dilinin çok karmaşık gelebileceği çocuklara uygundur. Kademeli dillerde, her seviyede yeni konseptlerin ve sözdizimsel zorlukların ilave edildiği farklı dil seviyeleri kullanılır. Her Hedy seviyesinin sonunda, öğrenciler Python açısından sözdizimsel olarak geçerli bir alt kümede ustalaşırlar.",
 
                 "Bu Öğrenim Bilgisi'nde, öğrencilerinizin metin tabanlı programlama dillerini etkin bir şekilde kullanmalarına yardımcı olacak ilham verici ve ilgi çekici aktiviteler bulacaksınız. Öğrenciler kendi interaktif hikâyelerini oluşturarak, her şeyi tek seferde öğrenmek zorunda kalmadan, programlamayı kademeli olarak öğrenecekler. İlkokul ders planında, öğrencilere programlamanın temel konseptleri tanıtılır. Ortaokul ders planında daha ileri programlama konseptlerine girilirken, lise ders planında öğrencilerin daha karmaşık hikâyeler ve aktiviteler programlamaları sağlanır.",
 
-                'Okuyucuların hikâyeye nasıl katılabileceklerini ve bu durumun okuyucuları aktif katılıma nasıl teşvik ettiğini öğrenmek için aşağıdaki interaktif hikâyeye göz atın.',
+                "Okuyucuların hikâyeye nasıl katılabileceklerini ve bu durumun okuyucuları aktif katılıma nasıl teşvik ettiğini öğrenmek için aşağıdaki interaktif hikâyeye göz atın."
             ],
-            'activities' => [
-                '1' => 'İlkokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun',
-                '2' => 'Ortaokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun',
-                '3' => 'Lise öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun',
-            ],
+            "activities" => [
+                "1" => "İlkokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+                "2" => "Ortaokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+                "3" => "Lise öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+            ]
         ],
-        '17' => [
-            'title' => 'Feel The Code (Kodu Hisset)',
-            'author' => 'Alenka Miljević ',
-            'text' => [
-                'Sosyal ve duygusal refah; dayanıklı olma, kişinin duygularını yönetme ve diğer kişilerin duygularına karşılık verme, diğer kişilerle anlamlı ilişkiler kurma, iyi hislere kapı açan duygular oluşturma ve kişinin kendi duygusal destek ağını oluşturma yeteneğidir. Gençlerin okulda öğrendikleri sosyal ve duygusal beceriler, dayanıklılık kazanmalarına ve hayatları boyunca fiziksel ve zihinsel sağlıklarını yönetme biçimlerine yönelik bir model yaratmalarına yardımcı olur. (Avrupa Konseyi)',
+        "17" => [
+            "title" => "Feel The Code (Kodu Hisset)",
+            "author" => "Alenka Miljević ",
+            "text" => [
+                "Sosyal ve duygusal refah; dayanıklı olma, kişinin duygularını yönetme ve diğer kişilerin duygularına karşılık verme, diğer kişilerle anlamlı ilişkiler kurma, iyi hislere kapı açan duygular oluşturma ve kişinin kendi duygusal destek ağını oluşturma yeteneğidir. Gençlerin okulda öğrendikleri sosyal ve duygusal beceriler, dayanıklılık kazanmalarına ve hayatları boyunca fiziksel ve zihinsel sağlıklarını yönetme biçimlerine yönelik bir model yaratmalarına yardımcı olur. (Avrupa Konseyi)",
                 "Feel the Code (Kodu Hisset) Öğrenim Bilgisi, empati ve dayanıklılık kazanmak amacıyla olumlu ve olumsuz hislerin yanı sıra duyguları tanıyarak, açıklayarak, anlayarak ve bunlara tepki vererek, öğrencilerinizin sosyal ve duygusal refahını geliştirmenize olanak tanıyacaktır.  Bu Öğrenim Bilgisi'nde, öğrencilerinizin kodlama yoluyla farklı duygularla başa çıkmak üzere beceriler geliştirmelerine yardımcı olacak ilham verici ve ilgi çekici aktiviteler bulacaksınız. Öğrencileriniz, bir Bee-Bot robotu yardımıyla hislerini ifade etmeyi ve akranlarının duygularına tepki vermeyi öğreneceklerdir.",
                 "Feel the Code (Kodu Hisset) öğrenim bilgisi, öğrencileri duyguları hakkında konuşmaya ve empati geliştirmelerine teşvik edecek aktiviteler oluşturmak amacıyla bir Bee-Bot eğitim robotunun kullanıldığı üç dersten oluşur. İlkokullar için olan ders planında; öğrenciler üzüntü, mutluluk, korku ve öfke gibi duygular hakkında konuşmak ve kendilerinin ve akranlarının bu duyguları hissetme nedenlerini keşfetmek amacıyla bir Bee-Bot programlar. Ortaokullar için olan ders planı; öğrencileri bir Bee-Bot programlamaları, kendilerinin ve akranlarının hislerini tanımaları, bunların nedenlerini ve bunlara karşı nasıl tepki vermeleri gerektiğini anlamaları hususunda cesaretlendirir. Liseler için olan ders planı; öğrencilerin bir Bee-Bot'u yönlendirmelerini ve hisler, dayanıklılık ve empati hakkında hikâyeler oluşturmalarını sağlar.",
-                'Bu Öğrenim Bilgisi, sınıfınızda bir eğitim robotu yoksa sosyal ve duygusal becerilerin gelişimini sağlayan bilgisayarsız aktivitelere yönelik fikirler sunacaktır. Aşağıdaki interaktif hikâye, sınıfınızda gerçekleştirebileceğiniz aktiviteler hakkında kısa bir genel bilgi sağlamaktadır:',
+                "Bu Öğrenim Bilgisi, sınıfınızda bir eğitim robotu yoksa sosyal ve duygusal becerilerin gelişimini sağlayan bilgisayarsız aktivitelere yönelik fikirler sunacaktır. Aşağıdaki interaktif hikâye, sınıfınızda gerçekleştirebileceğiniz aktiviteler hakkında kısa bir genel bilgi sağlamaktadır:"
             ],
-            'activities' => [
-                '1' => 'Kodla - Hisset - Öğren: İlkokul öğrencileri için',
-                '2' => 'Taş kalpli değilim: Ortaokul öğrencileri için',
-                '3' => 'Beni ruh halime göre kodla: Lise öğrencileri için',
+            "activities" => [
+                "1" => "Kodla - Hisset - Öğren: İlkokul öğrencileri için",
+                "2" => "Taş kalpli değilim: Ortaokul öğrencileri için",
+                "3" => "Beni ruh halime göre kodla: Lise öğrencileri için",
+            ]
+        ],
+        "18" => [
+            "title" => "SOS Water",
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water, su kirliliği sorununun ele alınması ihtiyacını karşılamaya yönelik bir projedir. Son yıllarda yapılan çalışmalara rağmen, tüm dünyada halihazırda güvenli içme suyuna erişimi olmayan 2 milyar insan mevcut. Yani, 2030 Gündeminin tüm insanların 2030 yılına dek güvenli bir şekilde yönetilebilen sulara ve sanitasyona erişiminin olması gerektiğini ifade eden 6 sayılı Sürdürülebilir Kalkınma Hedefi, gerçekleştirilmekten çok uzaktadır. Aynı durum, sürdürülebilir kalkınma açısından okyanusların, denizlerin ve deniz kaynaklarının sürdürülebilir şekilde korunup kullanılmasını amaçlayan 14 sayılı su altı yaşama yönelik Sürdürülebilir Kalkınma Hedefi için de geçerlidir.",
+
+                "Bu Öğrenim Bilgisinde, gündemle alakalı ve güncel bir konu olan su kalitesi ölçümünün yanı sıra, su kalitesini düşüren yeni kirleticiler ele alınmıştır. Öğrenciler, su ve çevreyle ilişkili gerçek sorunları inceleyip bunlara çözüm bulma ve böylece araştırma, eleştirel düşünme ve problem çözme gibi beceriler geliştirme fırsatı elde edeceklerdir.",
+
+                "Ders planları içerisinde; Scratch üzerinde programlama yapma, Learning ML ile makine öğrenimine ve yapay zekaya giriş, su örneği almak ve su pH değeri analizi yapmak üzere Lego setleriyle yönlendirilebilen araçlar oluşturma gibi uygulamalı ve yaratıcı aktiviteler yer almaktadır. Bu aktiviteler, öğrencilerin etkileşimli ve eğlenceli bir ortamda bilgi ve becerilerini uygulamaya dökmelerini ve bu sayede projeye olan ilgilerinin ve motivasyonlarının artmasını sağlayacaktır.",
+
+                "Bu Öğrenim Bilgisinin uygulanabilmesi için üç aktivitenin de sınıfta ders içerisinde geliştirilmesi, tüm projenin tamamlanması ve daha anlamlı ve motive edici bir öğrenim sürecinin benimsenmesi önerilir. Ancak her bir aktivite bireysel olarak da gerçekleştirilebilir."
+
             ],
-        ], '18' => [
-            'title' => 'SOS Water',
-            'author' => 'Francisco Delgado Cecilia',
-            'text' => [
-
-                'SOS Water, su kirliliği sorununun ele alınması ihtiyacını karşılamaya yönelik bir projedir. Son yıllarda yapılan çalışmalara rağmen, tüm dünyada halihazırda güvenli içme suyuna erişimi olmayan 2 milyar insan mevcut. Yani, 2030 Gündeminin tüm insanların 2030 yılına dek güvenli bir şekilde yönetilebilen sulara ve sanitasyona erişiminin olması gerektiğini ifade eden 6 sayılı Sürdürülebilir Kalkınma Hedefi, gerçekleştirilmekten çok uzaktadır. Aynı durum, sürdürülebilir kalkınma açısından okyanusların, denizlerin ve deniz kaynaklarının sürdürülebilir şekilde korunup kullanılmasını amaçlayan 14 sayılı su altı yaşama yönelik Sürdürülebilir Kalkınma Hedefi için de geçerlidir.',
-
-                'Bu Öğrenim Bilgisinde, gündemle alakalı ve güncel bir konu olan su kalitesi ölçümünün yanı sıra, su kalitesini düşüren yeni kirleticiler ele alınmıştır. Öğrenciler, su ve çevreyle ilişkili gerçek sorunları inceleyip bunlara çözüm bulma ve böylece araştırma, eleştirel düşünme ve problem çözme gibi beceriler geliştirme fırsatı elde edeceklerdir.',
-
-                'Ders planları içerisinde; Scratch üzerinde programlama yapma, Learning ML ile makine öğrenimine ve yapay zekaya giriş, su örneği almak ve su pH değeri analizi yapmak üzere Lego setleriyle yönlendirilebilen araçlar oluşturma gibi uygulamalı ve yaratıcı aktiviteler yer almaktadır. Bu aktiviteler, öğrencilerin etkileşimli ve eğlenceli bir ortamda bilgi ve becerilerini uygulamaya dökmelerini ve bu sayede projeye olan ilgilerinin ve motivasyonlarının artmasını sağlayacaktır.',
-
-                'Bu Öğrenim Bilgisinin uygulanabilmesi için üç aktivitenin de sınıfta ders içerisinde geliştirilmesi, tüm projenin tamamlanması ve daha anlamlı ve motive edici bir öğrenim sürecinin benimsenmesi önerilir. Ancak her bir aktivite bireysel olarak da gerçekleştirilebilir.',
-
-            ],
-            'activities' => [
-                '1' => 'Scratch ile SOS Water',
-                '2' => 'Makine Öğrenimi ile SOS Water',
-                '3' => 'Robot Teknolojisi ile SOS Water',
-            ],
+            "activities" => [
+                "1" => "Scratch ile SOS Water",
+                "2" => "Makine Öğrenimi ile SOS Water",
+                "3" => "Robot Teknolojisi ile SOS Water",
+            ]
 
         ],
+        "20" => [
+            "title" => "Sanat Yoluyla Kod",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Çocuklar, teknolojik olarak sürekli gelişen karmaşık bir dünyada büyüyor ve bu da erken çocukluk dönemi eğitimcilerinin yenilikçi eğitim yaklaşımları uygulamalarını gerektiriyor. Bu yaklaşımlar arasında, küçük yaşlardan itibaren sayısal düşünmeyi ve programlamayı teşvik eden faaliyetler de yer alıyor. Araştırmalar, hedefli aktivitelerin çocukların sayısal düşünme ve problem çözme becerilerini etkili bir şekilde geliştirebileceğini ve aynı zamanda bu tür aktivitelerin teknoloji yoluyla yaratıcı ifadeyi teşvik ettiğini gösteriyor.",
+                "Programlamayı öğretmek için en yaygın strateji, eğitici robotların kullanımını kapsıyor olsa da, robotik kiti kullanmadan (bilgisayarsız) programlama olanağı da mevcuttur. Bu yaklaşım, çeşitli biçimlerde olabilir ve birbirinden farklı aktiviteleri içerebilir (piksel sanatı, robot rolündeki çocuklar, yer kılavuzu (ızgara) kullanma vb.). Bu aktiviteler, özellikle en iyi oyun yoluyla öğrenebilen küçük çocuklar için deneysel öğrenim avantajları sunar.",
+                "</strong>Sanat Yoluyla Kodlama Learning Bit </strong>’i, erken çocukluk dönemi eğitimcileri için üç ders planından oluşuyor ve bilgisayarsız bir aktivite ile Bee-Bot eğitici robotun ve Makey Makey buluş kitinin kullanılmasını kapsıyor. Öğrenciler, Makey Makey kitini kullanarak fiziksel arayüzler oluşturma ve farklı çözümler deneme, yaratma, deneyimleme ve iş birlikçi bir öğrenim ortamında tüm öğrenim becerilerini güçlendirme fırsatına sahip oluyorlar.",
+                "Pablo Picasso'nun da dediği gibi, \"Her çocuk bir sanatçıdır. Asıl sorun, büyüyünce de sanatçı olarak kalabilmektir.\" Sanat, çocuklara fikirlerini ve duygularını yaratıcı bir şekilde sunma ve aktarma fırsatları sağlar. Bu Learning Bit’te, sanat ve kodlama yoluyla öğrencilerinizin sosyal ve 21. yüzyıl becerilerini geliştirmek, kendilerini yaratıcı bir şekilde ifade etmeye teşvik etmek ve hayal güçlerini geliştirmek üzere ilham verici aktiviteler bulacaksınız. Sanat Yoluyla Kodlama Learning Bit’i, sanat ve kodlamayı entegre ederek öğrencilerinizin yaratıcılığını, aynı zamanda iş birliği kurma ve problem çözme becerilerini geliştirmenizi sağlayacaktır."
+            ],
+            "activities" => [
+                "1" => "Sanatsal Kodlama: 4-6 yaş anaokulu öğrencileri",
+                "2" => "Yaratıcı Kod Laboratuvarı: 4-6 yaş anaokulu öğrencileri",
+                "3" => "Dokunmatik Tuval: İnteraktif tablolar oluşturma: 4-6 yaş anaokulu öğrencileri; ileri seviye."
+            ]
+        ],
+        "19" => [
+
+            "title" => "Yaratıcı Scratch Laboratuvarı",
+            "author" => "Hazırlayan: Krzysztof Jaworski",
+            "text" => [
+
+                "Günümüzde programlamayı öğrenmek, programcılık kariyerine hazırlanmanın ötesine geçerek bilgisayar biliminin sınırlarını aşan bir hâl almış durumda. Programlama, disiplinler arası bir yaklaşımı benimseyerek ve bunu ilerideki becerilerin gelişimini teşvik edecek bir öğrenme ve oyun aracı olarak kullanarak kapsamlı bir biçimde ele alınmalıdır.",
+
+                "Çocukların ve gençlerin, dijital araçları nasıl güvenli, sorumlu ve verimli bir şekilde kullanabileceklerini anlamaları çok önemlidir. Bu araçların nasıl çalıştığını ve programlama yoluyla bu araçlarla nasıl iletişim kurulacağın kavramaları gerekmektedir. Ayrıca bu deneyim, yaşıtlarıyla iş birliğine dayalı etkileşimlerde bulunmalarını da sağlamalıdır.",
+
+                "Bu Öğrenim Bilgisi, <strong>Creative Scratch Laboratory</strong> öğrencilerin yaratıcılığını artırıp merakını cezbedecek ve kodlamayı keyifli ve eğlenceli bir hâle getirecektir.  Farklı kodlama becerilerine sahip öğrenciler için üç ayrı ders planından oluşmaktadır. Başlangıç seviyesindeki ders planında öğrenciler, kâğıt üzerinde bir karakter oluşturup bunu Scratch’e aktaracak ve seçili blokları kullanarak karakteri hareketli hâle getirecektir. Orta seviyedeki ders planında öğrenciler, Video Sprites aracını kullanmayı, kâğıt ve keçeli kalem kullanarak grafik hazırlamayı ve Video Sprites, damga ve çizim yoluyla Scratch mozaiği oluşturmayı öğrenecektir. İleri seviyedeki ders planında öğrenciler, Scratch içerisindeki yüz tanıma işlevini inceleyip kukla grafikleri üzerinde değişiklikler yapacak ve Scratch içerisinde oluşturdukları diyalogları kullanarak mini bir tiyatro oyunu hazırlayacaktır.",
+
+            ],
+            "activities" => [
+                "1" => "Spite çizme ve hareketli hâle getirme: başlangıç seviyesindeki öğrenciler için",
+                "2" => "Damga: orta seviyedeki öğrenciler için",
+                "3" => "Kukla tiyatrosu: ileri seviye öğrenciler için",
+            ]
+        ],
+        "21" => [
+            "title" => "Yapım ve kodlama",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace'ler, yaratıcılığın geliştiği ve uygulamalı projelerin hayata geçirildiği canlı merkezlerdir. Bir makerspace için ekipman seçerken Calliope mini, Microbit veya Makey Makey gibi araçlara odaklanılmalıdır, çünkü bu araçlar farklı yaşlardaki ve beceri seviyelerindeki öğrencilere uygun pek çok olanak sunar. Bu devre kartları, blok tabanlı programlama dilleri sayesinde küçük çocuklar için yaratıcı projelerin geliştirilmesini destekler. Daha büyük öğrenciler için ise bu devre kartları kullanılarak daha karmaşık projeler oluşturulabilir.",
+                "<strong>Yapım ve Kodlama Learning Bit</strong>’ini keşfederek makerspace dünyasına dalın ve öğrencilerinizi yeniliğe teşvik edip harekete geçirirken bir yandan da takım çalışması ve sosyal iş birliği gibi disiplinler arası becerileri geliştirin!",
+                "Makey Makey, gündelik hayattaki nesneleri bilgisayar tuşlarına dönüştüren bir devre kartıdır. Nesneleri krokodil penslerle devre kartına bağlayıp ardından USB kablosuyla (veya kamera adaptörlü bir iPad ile) bilgisayara bağlanan Makey Makey, kişi ile nesne arasındaki elektrik devrelerini açıp kapatabilir. Bu işlem, bilgisayarın klavye vuruşu veya fare tıklaması olarak algıladığı elektrik sinyalleri gönderir. Bu sayede öğrenciler müzik aletli, bilgisayar oyunu veya interaktif poster gibi yaratıcı buluşlar geliştirebilirler; olanaklar sonsuzdur! Makey Makey ve bu Learning Bit içerisinde sunulan projeler hem ilkokul hem de ortaokullarda medya eğitimi, bilgisayar bilimi, fen, fizik, müzik, sporun yanı sıra takım çalışması ve sosyal beceriler gibi disiplinler arası becerileri öğretmek için de kullanılabilir.",
+                "Makey Makey'in heyecan verici dünyasına adım atın ve sınıfınızda sınırsız yaratıcılığın kilidini açın!",
+            ],
+            "activities" => [
+                "1" => "Makey Makey müzikle buluşuyor: yeni başlayanlar için.",
+                "2" => "Konuşan resimler: orta düzey öğrenciler için.",
+                "3" => "Etkileşimli poster oluşturma: ileri düzey öğrenciler için.",
+            ]
+        ]
+
+
 
     ],
     'download_video_script' => 'Video metnini indirin',
@@ -328,7 +380,7 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
         'title' => 'Aktivitenizi Kod Haftası Haritasına eklemeyi unutmayın!',
         'text' => '<p>Sınıfınızda, halka açık ziyaret günlerinde ya da okulunuzdaki bir etkinlikte kolayca ders organize edebilirsiniz. Uygun bir tarih bulup aktivitenizi <a href="/events">Kod Haftası haritasına</a> eklemeniz yeterli. Tüm aktivite organizatörlerine çabalarından dolayı katılım sertifikası verilecektir.</p>
 
-<p>Birbirinden hevesli öğretmenlerin yer aldığı uluslararası bir grubun parçası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook öğretmenler grubuna</a> katılın! Bunu bir adım daha öteye taşımak ve ülkenizdeki ya da diğer ülkelerdeki okullarla iş birliği yapmak isterseniz - <a href="/codeweek4all">Herkes için Kod Haftası mücadelesine</a> katılın.</p>',
-    ],
+<p>Birbirinden hevesli öğretmenlerin yer aldığı uluslararası bir grubun parçası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook öğretmenler grubuna</a> katılın! Bunu bir adım daha öteye taşımak ve ülkenizdeki ya da diğer ülkelerdeki okullarla iş birliği yapmak isterseniz - <a href="/codeweek4all">Herkes için Kod Haftası mücadelesine</a> katılın.</p>'
+    ]
 
 ];

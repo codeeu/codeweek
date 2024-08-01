@@ -14,7 +14,7 @@ return [
     'login' => 'Bejelentkezés',
     'register' => 'Regisztráció',
     'github' => 'Bejelentkezés Githubbal',
-    'twitter' => 'Bejelentkezés Twitterrel',
+    'X' => 'Bejelentkezés Xrel',
     'facebook' => 'Bejelentkezés Facebookkal',
     'google' => 'Bejelentkezés Google-lel',
     'azure' => 'Bejelentkezés Azure-lel',

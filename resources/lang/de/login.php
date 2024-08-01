@@ -14,7 +14,7 @@ return [
     'login' => 'Anmelden',
     'register' => 'Registrieren',
     'github' => 'Mit Github anmelden',
-    'twitter' => 'Mit Twitter anmelden',
+    'X' => 'Mit X anmelden',
     'facebook' => 'Mit Facebook anmelden',
     'google' => 'Mit Google anmelden',
     'azure' => 'Mit Azure anmelden',

@@ -8,93 +8,94 @@
 
 namespace App\Queries;
 
+
 use App\Country;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 
 class CountriesQuery
 {
-    public static function all()
-    {
+    public static function all() {
         return Country::all();
     }
 
-    //    public static function withPendingEventsCurrentYear(){
-    //        $isos = DB::table('events')
-    //            ->select(['country_iso'])
-    //            ->where('status',"=","PENDING")
-    //            ->whereNull('deleted_at')
-    //            ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
-    //            ->groupBy('country_iso')
-    //            ->get()
-    //            ->pluck('country_iso')
-    //        ;
-    //
-    //        $countries = Country::findMany($isos)->sortBy('name');
-    //        return $countries;
-    //    }
+//    public static function withPendingEventsCurrentYear(){
+//        $isos = DB::table('events')
+//            ->select(['country_iso'])
+//            ->where('status',"=","PENDING")
+//            ->whereNull('deleted_at')
+//            ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
+//            ->groupBy('country_iso')
+//            ->get()
+//            ->pluck('country_iso')
+//        ;
+//
+//        $countries = Country::findMany($isos)->sortBy('name');
+//        return $countries;
+//    }
 
-    public static function withPendingEvents()
-    {
+    public static function withPendingEvents(){
         $countries = DB::table('events')
-            ->select('events.country_iso as iso', 'countries.name', DB::raw('count(id) as total'))
-            ->join('countries', 'events.country_iso', '=', 'countries.iso')
-            ->where('status', '=', 'PENDING')
+            ->select('events.country_iso as iso','countries.name', DB::raw('count(id) as total'))
+            ->join('countries','events.country_iso','=','countries.iso')
+            ->where('status',"=","PENDING")
             ->whereNull('deleted_at')
-            ->groupBy('country_iso')
+            ->groupBy(['country_iso','countries.name'])
             ->orderBy('countries.name')
             ->get();
+
 
         return $countries;
     }
 
-    public static function withOnlineEvents($highlighted_status)
-    {
+    public static function withOnlineEvents($highlighted_status){
 
         $countries = DB::table('events')
-            ->select('events.country_iso as iso', 'countries.name', DB::raw('count(id) as total'))
+            ->select('events.country_iso as iso', 'countries.name', DB::raw('count(events.id) as total'), DB::raw('MIN(events.start_date) as start_date'))
             ->join('countries', 'events.country_iso', '=', 'countries.iso')
-            ->where('status', '=', 'APPROVED')
-            ->where('highlighted_status', '=', $highlighted_status)
-            ->whereNull('deleted_at')
-            ->where('activity_type', 'open-online')
-            ->where('start_date', '>=', \Carbon\Carbon::now()->subDays(15))->where('end_date', '>=', Carbon::now())
-            ->groupBy('country_iso')
+            ->where('events.status', '=', 'APPROVED')
+            ->where('events.highlighted_status', '=', $highlighted_status)
+            ->whereNull('events.deleted_at')
+            ->where('events.activity_type', 'open-online')
+            ->where('events.start_date', '>=', Carbon::now()->subDays(15))
+            ->where('events.end_date', '>=', Carbon::now())
+            ->groupBy('events.country_iso', 'countries.name')
             ->orderBy('countries.name')
             ->get();
 
-        //        return $countries;
-        //
-        //
-        //        $isos = DB::table('events')
-        ////            ->select(['country_iso'])
-        //            ->select('events.country_iso as country_iso', DB::raw('count(id) as total'))
-        //            ->where('activity_type',"=","open-online")
-        //            ->where('status',"<>","REJECTED")
-        //            ->where('highlighted_status',"=",$highlighted_status)
-        //            ->whereNull('deleted_at')
-        //            ->whereDate('start_date', '>=', Carbon::now('Europe/Brussels'))
-        //            ->groupBy('country_iso')
-        //            ->get()
-        //            ->pluck('country_iso')
-        //        ;
-        //
-        //        $countries = Country::findMany($isos)->sortBy('name');
+
+//        return $countries;
+//
+//
+//        $isos = DB::table('events')
+////            ->select(['country_iso'])
+//            ->select('events.country_iso as country_iso', DB::raw('count(id) as total'))
+//            ->where('activity_type',"=","open-online")
+//            ->where('status',"<>","REJECTED")
+//            ->where('highlighted_status',"=",$highlighted_status)
+//            ->whereNull('deleted_at')
+//            ->whereDate('start_date', '>=', Carbon::now('Europe/Brussels'))
+//            ->groupBy('country_iso')
+//            ->get()
+//            ->pluck('country_iso')
+//        ;
+//
+//        $countries = Country::findMany($isos)->sortBy('name');
         return $countries;
     }
 
     public static function getCountryIsoPerName(string $name)
+
     {
 
         //Means we sent the country code already. No need to lookup.
-        if (strlen($name) < 4) {
-            return $name;
-        }
+        if (strlen($name) < 4) return $name;
 
         return DB::table('countries')
             ->select(['iso'])
-            ->where('name', '=', $name)
+            ->where('name',"=",$name)
             ->first()
             ->iso;
     }
+
 }

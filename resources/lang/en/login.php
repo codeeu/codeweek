@@ -14,7 +14,7 @@ return [
     'login' => 'Login',
     'register' => 'Register',
     'github' => 'Sign in with Github',
-    'twitter' => 'Sign in with Twitter',
+    'X' => 'Sign in with X',
     'facebook' => 'Sign in with Facebook',
     'google' => 'Sign in with Google',
     'azure' => 'Sign in with Azure',
