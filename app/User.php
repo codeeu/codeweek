@@ -3,19 +3,24 @@
 namespace App;
 
 use App\Achievements\Achievement;
+use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Helpers\TagsHelper;
 use Attribute;
 use Cache;
 use Carbon\Carbon;
 use DB;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
-use App\Filters\UserFilters;
 
 /**
  * App\User
@@ -89,10 +94,10 @@ use App\Filters\UserFilters;
  */
 class User extends Authenticatable
 {
-    use Notifiable;
+    use HasFactory;
     use HasRoles;
+    use Notifiable;
     use SoftDeletes;
-
     /**
      * The attributes that are mass assignable.
      *
