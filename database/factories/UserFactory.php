@@ -26,22 +26,22 @@ class UserFactory extends Factory
         }
 
         return [
-            'firstname' => $faker->firstName,
-            'lastname' => $faker->firstName,
-            'username' => $faker->firstName,
-            'email' => $faker->unique()->safeEmail,
+            'firstname' => $this->faker->firstName,
+            'lastname' => $this->faker->firstName,
+            'username' => $this->faker->firstName,
+            'email' => $this->faker->unique()->safeEmail,
             'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
             'remember_token' => str_random(10),
-            'country_iso' => $faker->randomElement($countries),
-            'twitter'=>$faker->userName,
-            'website'=>$faker->url,
-            'bio'=>$faker->text,
+            'country_iso' => $this->faker->randomElement($countries),
+            'twitter'=>$this->faker->userName,
+            'website'=>$this->faker->url,
+            'bio'=>$this->faker->text,
             'avatar_path'=>'avatars/default.png',
-            'provider'=>$faker->randomElement(['facebook','google','github']),
+            'provider'=>$this->faker->randomElement(['facebook','google','github']),
             'privacy'=>true,
             'receive_emails'=>true,
             'consent_given_at'=>\Carbon\Carbon::now(),
-            'magic_key'=>$faker->randomNumber(6)
+            'magic_key'=>$this->faker->randomNumber(6)
 
         ];
     }

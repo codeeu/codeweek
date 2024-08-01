@@ -8,7 +8,7 @@
               v-model="searchInput"
               @search-change="debounceSearch"
               @keyup.enter="onSubmit"
-              :placeholder="t('resources.search_resources')"
+              :placeholder="$t('resources.search_resources')"
           />
         </div>
         <div class="codeweek-more-button" @click="toggleFilters">
@@ -25,7 +25,7 @@
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
-              :placeholder="t('resources.types')"
+              :placeholder="$t('resources.types')"
               label="resources.resources.types"
               :custom-label="customLabel"
               track-by="name"
@@ -42,7 +42,7 @@
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
-              :placeholder="t('resources.levels')"
+              :placeholder="$t('resources.levels')"
               label="resources.resources.levels"
               :custom-label="customLabel"
               track-by="name"
@@ -60,7 +60,7 @@
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
-              :placeholder="t('resources.programming_languages')"
+              :placeholder="$t('resources.programming_languages')"
               label="name"
               track-by="name"
               :preselect-first="false"
@@ -78,7 +78,7 @@
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
-              :placeholder="t('resources.Subjects')"
+              :placeholder="$t('resources.Subjects')"
               label="resources.resources.subjects"
               :custom-label="customLabel"
               track-by="name"
@@ -99,7 +99,7 @@
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
-              :placeholder="t('resources.categories')"
+              :placeholder="$t('resources.categories')"
               label="resources.resources.categories"
               :custom-label="customLabel"
               track-by="name"
@@ -118,7 +118,7 @@
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
-              :placeholder="t('resources.Languages')"
+              :placeholder="$t('resources.Languages')"
               label="name"
               track-by="name"
               :preselect-first="false"
@@ -138,7 +138,7 @@
           <button
               class="codeweek-blank-button"
               @click="copy">
-          {{ t('resources.share') }}
+          {{ $t('resources.share') }}
         </button>
       </div>
 
@@ -167,6 +167,7 @@ import ResourceCard from './ResourceCard.vue';
 import Pagination from './Pagination.vue';
 import useClipboard from 'vue-clipboard3'
 import axios from 'axios';
+import { trans } from 'laravel-vue-i18n';
 
 export default {
   components: { ResourceCard, Multiselect, Pagination },
@@ -189,7 +190,7 @@ export default {
     locale: String,
   },
   setup(props) {
-    const {t} = useI18n();
+
     const { toClipboard } = useClipboard()
 
     const query = ref(props.prpQuery);
@@ -299,7 +300,7 @@ export default {
     };
 
     const customLabel = (obj, label) => {
-      return t(label + '.' + obj.name);
+      return trans(label + '.' + obj.name);
     };
 
     onMounted(() => {
@@ -320,7 +321,6 @@ export default {
       pagination,
       resources,
       searchQuery,
-      t,
       toggleFilters,
       debounceSearch,
       paginate,

@@ -31,6 +31,6 @@ class SearchResourcesController extends Controller
 
         //dd($items->distinct()->paginate(10)->items);
 
-        return $items->distinct()->paginate(30);
+        return $items->get()->unique()->paginate(30);
     }
 }

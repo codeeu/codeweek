@@ -202,6 +202,7 @@ final class SearchResourceTest extends TestCase
         $type2 = \App\ResourceType::factory()->create();
         $type3 = \App\ResourceType::factory()->create();
 
+
         $this->item->types()->attach($type);
         $this->item->types()->attach($type2);
         $this->item->types()->attach($type3);

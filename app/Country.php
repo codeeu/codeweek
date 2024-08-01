@@ -2,13 +2,11 @@
 
 namespace App;
 
-use App\Helpers\AmbassadorHelper;
-use App\Helpers\Codeweek4AllHelper;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Log;
 
 /**
  * App\Country
@@ -26,6 +24,7 @@ use Illuminate\Support\Facades\Log;
  * @property float|null $latitude
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Event[] $events
  * @property-read int|null $events_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Country newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Country newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Country query()
@@ -44,12 +43,13 @@ use Illuminate\Support\Facades\Log;
  */
 class Country extends Model
 {
+    use HasFactory;
+
     protected $table = 'countries';
     protected $primaryKey = 'iso';
     public $incrementing = false;
 
     public $guarded = [];
-
 
     public static function withEvents()
     {
