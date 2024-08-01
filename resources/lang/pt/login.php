@@ -14,7 +14,7 @@ return [
     'login' => 'Iniciar sessão',
     'register' => 'Efetuar registo',
     'github' => 'Iniciar sessão com o Github',
-    'twitter' => 'Iniciar sessão com o Twitter',
+    'X' => 'Iniciar sessão com o X',
     'facebook' => 'Iniciar sessão com o Facebook',
     'google' => 'Iniciar sessão com o Google',
     'azure' => 'Iniciar sessão com o Azure',

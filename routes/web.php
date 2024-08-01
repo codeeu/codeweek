@@ -51,6 +51,8 @@ use App\Http\Controllers\ToolkitsController;
 use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VolunteerController;
+use App\Http\Controllers\ConsentController;
+use App\Http\Controllers\ContactController;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -633,9 +635,17 @@ Route::middleware('auth')->group(function () {
 //Route::view('/registration', 'registration.add');
 Route::view('/online-courses', 'online-courses')->name('online-courses');
 
-Route::view('/test', 'test');
-
 Route::get('/hackathons', [HackathonsController::class, 'index'])->name('hackathons');
+
+Route::view('/contact', 'contact')->middleware('auth')->name('contact-us');
+
+Route::get('/consent', [ConsentController::class, 'show'])->middleware('auth')->name('consent.show');
+Route::post('/consent', [ConsentController::class, 'store'])->middleware('auth')->name('consent.store');
+Route::post('/consent/logout', [ConsentController::class, 'logout'])->middleware('auth')->name('consent.logout');
+
 
 Auth::routes();
 Route::feeds();
+
+
+

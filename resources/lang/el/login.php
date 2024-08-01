@@ -14,7 +14,7 @@ return [
     'login' => 'ΣΥΝΔΕΣΗ',
     'register' => 'ΕΓΓΡΑΦΗ',
     'github' => 'Σύνδεση με Github',
-    'twitter' => 'Σύνδεση με Twitter',
+    'X' => 'Σύνδεση με X',
     'facebook' => 'Σύνδεση με Facebook',
     'google' => 'Σύνδεση με Google',
     'azure' => 'Σύνδεση με Azure',

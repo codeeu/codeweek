@@ -2,12 +2,13 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Helpers\AmbassadorHelper;
+use App\Helpers\Codeweek4AllHelper;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Log;
 
 /**
  * App\Country
@@ -25,7 +26,6 @@ use Illuminate\Support\Facades\DB;
  * @property float|null $latitude
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Event[] $events
  * @property-read int|null $events_count
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Country newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Country newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Country query()
@@ -40,68 +40,70 @@ use Illuminate\Support\Facades\DB;
  * @method static \Illuminate\Database\Eloquent\Builder|Country wherePopulation($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Country whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Country whereWebsite($value)
- *
  * @mixin \Eloquent
  */
 class Country extends Model
 {
-    use HasFactory;
-
     protected $table = 'countries';
-
     protected $primaryKey = 'iso';
-
     public $incrementing = false;
 
     public $guarded = [];
 
+
     public static function withEvents()
     {
 
-        $ttl = 60 * 60 * 24;
-        $isos = Cache::remember('isos', $ttl, function () {
+
+        $ttl = 60*60*24;
+        $isos = Cache::remember('isos', $ttl, function ()  {
             return DB::table('events')
                 ->select(['country_iso'])
-                ->where('status', '=', 'APPROVED')
+                ->where('status', "=", "APPROVED")
                 ->groupBy('country_iso')
                 ->get()
                 ->pluck('country_iso');
 
         });
 
-        $countries = Country::whereIn('iso', $isos)->get();
+
+
+        $countries = Country::whereIn('iso',$isos)->get();
+
 
         foreach ($countries as $country) {
-            $country->translation = __('countries.'.$country->name);
+            $country->translation = __('countries.' . $country->name);
         }
 
-        return $countries->sortBy('translation');
+        return $countries->sortBy("translation");
 
     }
 
     public static function withCoordinators()
     {
 
-        $ttl = 60 * 60 * 24;
-        $iso_community = Cache::remember('isos-community', $ttl, function () {
-            return User::role(['ambassador', 'leading teacher'])
-                ->where('country_iso', '<>', '')
+        $ttl = 60*60*24;
+        $iso_community = Cache::remember('isos-community', $ttl, function ()  {
+            return User::role(['ambassador','leading teacher'])
+                ->where("country_iso","<>", "")
                 ->join('countries', 'country_iso', '=', 'countries.iso')
-                ->groupBy('country_iso')
-                ->select('country_iso as iso', DB::raw('count(*) as total'), 'countries.name')
-                ->orderBy('countries.name')
+                ->groupBy(['country_iso','countries.name'])
+                ->select('country_iso as iso', DB::raw('count(*) as total'),'countries.name')
+                ->orderBy("countries.name")
                 ->get()
                 ->pluck('iso');
 
         });
 
-        $countries = Country::whereIn('iso', $iso_community)->get();
+        $countries = Country::whereIn('iso',$iso_community)->get();
+
 
         foreach ($countries as $country) {
-            $country->translation = __('countries.'.$country->name);
+            $country->translation = __('countries.' . $country->name);
         }
 
-        return $countries->sortBy('translation');
+        return $countries->sortBy("translation");
+
 
     }
 
@@ -109,11 +111,12 @@ class Country extends Model
     {
         $countries = Country::all();
 
+
         foreach ($countries as $country) {
-            $country->translation = __('countries.'.$country->name);
+            $country->translation = __('countries.' . $country->name);
         }
 
-        return $countries->sortBy('translation')->values();
+        return $countries->sortBy("translation")->values();
     }
 
     public static function withActualYearEvents()
@@ -121,7 +124,7 @@ class Country extends Model
 
         $isos = DB::table('events')
             ->select(['country_iso'])
-            ->where('status', '=', 'APPROVED')
+            ->where('status', "=", "APPROVED")
             ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
             ->groupBy('country_iso')
             ->get()
@@ -133,15 +136,17 @@ class Country extends Model
 
     }
 
-    public function events(): HasMany
+
+    public function events()
     {
-        return $this->hasMany(\App\Event::class);
+        return $this->hasMany('App\Event');
     }
 
-    public function approvedEvents($year, $operator): HasMany
+    public function approvedEvents($year, $operator)
     {
         return $this->hasMany(Event::class)
             ->where('status', '=', 'APPROVED')
-            ->whereYear('end_date', $operator, $year);
+            ->whereYear('end_date', $operator,  $year);
     }
+
 }

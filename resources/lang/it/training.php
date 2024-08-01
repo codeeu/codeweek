@@ -321,6 +321,57 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
             ],
 
         ],
+        "20" => [
+            "title" => "Il codice attraverso l'arte",
+            "author" => "di Maria Tsapara",
+            "text" => [
+                "I bambini crescono in un mondo complesso e in costante sviluppo tecnologico, che richiede approcci educativi innovativi per gli educatori della prima infanzia. Questi approcci includono attività che promuovono il pensiero computazionale e la programmazione fin dalla più tenera età. Le ricerche suggeriscono che attività mirate possono sviluppare efficacemente il pensiero computazionale e le capacità di risoluzione dei problemi dei bambini e, allo stesso tempo, tali attività favoriscono la loro espressione creativa attraverso la tecnologia.",
+                "Sebbene la strategia più comune per l'insegnamento della programmazione preveda l'uso di robot educativi, esiste anche la possibilità di programmare senza utilizzare alcun kit robotico (coding unplugged). Questo approccio può assumere varie forme e includere un'ampia gamma di attività (pixel art, bambini nel ruolo di robot, utilizzo di una pavimento a griglia, ecc.). Queste attività offrono benefici di apprendimento esperienziale, in particolare a vantaggio dei bambini piccoli, che imparano meglio attraverso il gioco. ",
+                "<strong>Il Learning Bit Il codice attraverso l'arte</strong> comprende tre piani di lezione per gli educatori della prima infanzia e implementa un'attività unplugged, l'uso di un robot educativo Bee-Bot e il kit di invenzione Makey Makey. Utilizzando il kit di Makey Makey, gli studenti hanno l'opportunità di creare interfacce tangibili e provare diverse soluzioni, creare, sperimentare e rafforzare tutte le loro capacità di apprendimento in un ambiente di apprendimento collaborativo.",
+                "Come diceva Pablo Picasso, \"ogni bambino è un artista. Il problema è come rimanere un artista dopo essere cresciuti\". L'arte offre ai bambini l'opportunità di rappresentare e comunicare in modo creativo le loro idee e i propri sentimenti. In questo Learning Bit troverete attività stimolanti per coltivare le competenze sociali e del XXI secolo dei vostri studenti attraverso l'arte e il coding, per incoraggiarli a esprimersi in modo creativo e favorire la loro immaginazione. Il Learning Bit Il codice attraverso l’arte vi permetterà di promuovere la creatività, la collaborazione e la risoluzione dei problemi dei vostri alunni integrando arte e coding"
+            ],
+            "activities" => [
+                "1" => "Codifica artistica: studenti della scuola dell'infanzia di 4-6 anni",
+                "2" => "Laboratorio di codice creativo: studenti della scuola dell'infanzia di 4-6 anni",
+                "3" => "Tela tattile: Creare dipinti interattivi: studenti della scuola dell’infanzia di 4-6 anni; avanzato"
+            ]
+        ],
+        "19" => [
+
+            "title" => "Laboratorio Scratch creativo",
+            "author" => "a cura di Krzysztof Jaworski",
+            "text" => [
+
+                "Oggi, imparare a programmare vuol dire spingersi oltre alla preparazione per una carriera dedicata alla programmazione e superare i confini dell’informatica. La programmazione va affrontata in modo completo, abbracciando una prospettiva interdisciplinare e utilizzandola come strumento ludico e di apprendimento per promuovere lo sviluppo di competenze future.",
+
+                "È fondamentale che bambini e giovani comprendano come impiegare gli strumenti digitali in modo sicuro, responsabile ed efficace. Devono capirne il funzionamento e imparare a comunicare con loro attraverso la programmazione. Inoltre, questa esperienza incoraggia la collaborazione con i propri compagni e compagne.",
+
+                "La pillola di apprendimento <strong>Creative Scratch Laboratory</strong> migliorerà la creatività di studenti e studentesse, aumentandone la curiosità e rendendo la programmazione piacevole e divertente.  La pillola è costituita da tre programmi di lezione per studenti e studentesse con competenze di programmazione diverse. Nella lezione per principianti, gli studenti creano un personaggio su carta, lo importano in Scratch e lo animano utilizzando determinati blocchi. La lezione di livello intermedio insegna loro a utilizzare lo strumento Video Sprite, a creare immagini con carta e pennarelli e a produrre un mosaico in Scratch con video sprite, timbri e disegni. Nella lezione di livello avanzato, gli studenti scopriranno la funzione di riconoscimento facciale di Scratch, si cimenteranno con la manipolazione delle grafiche degli sprite e creeranno un teatro in miniatura con dialoghi generati in Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Disegnare e animare uno sprite: livello principianti",
+                "2" => "Timbri: livello intermedio",
+                "3" => "Il teatro delle marionette: livello avanzato",
+            ]
+        ],
+        "21" => [
+            "title" => "Realizzazione e codifica",
+            "author" => "di Ulla Hauptmann",
+            "text" => [
+                "I makerspace sono centri vibranti dove la creatività prospera e i progetti pratici prendono vita. Quando si scelgono le attrezzature per un makerspace, ci si concentra su strumenti come Calliope mini, Microbit o Makey Makey, in quanto offrono un'ampia gamma di possibilità adatte a studenti di età e livelli di competenza diversi. Queste risorse favoriscono lo sviluppo di progetti creativi per i bambini più piccoli grazie ai linguaggi di programmazione ai blocchi a disposizione. Per gli studenti più grandi, è possibile creare progetti più complessi utilizzando le stesse risorse.",
+                "Esplorate il <strong>Learning Bit Realizzazione e codifica</strong> per immergervi nel mondo dei makerspace e promuovere competenze interdisciplinari come il lavoro di squadra e la collaborazione sociale, stimolando al contempo l'innovazione e l'entusiasmo dei vostri studenti!",
+                "Makey Makey è un circuito stampato che trasforma gli oggetti di uso quotidiano in tasti per computer. Collegando gli oggetti al circuito con dei morsetti a coccodrillo, che poi si collegano al computer tramite un cavo USB (o un iPad con un adattatore per fotocamera), Makey Makey può aprire e chiudere circuiti elettrici tra una persona e un oggetto. In questo modo si inviano segnali elettrici che il computer riceve come pressioni di tasti della tastiera o clic del mouse, il che permette agli alunni di sviluppare invenzioni creative come strumenti musicali, giochi per computer o poster interattivi: le possibilità sono infinite! Makey Makey e i progetti presentati in questo Learning Bit possono essere utilizzati nelle scuole primarie e secondarie per insegnare competenze in svariati ambiti, quali l'educazione ai media, l'informatica, le scienze, la fisica, la musica, lo sport e competenze interdisciplinari come il lavoro di squadra e le abilità sociali.",
+                "Entrate nell'entusiasmante mondo di Makey Makey e liberate la creatività senza limiti nella vostra classe!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey incontra la musica: per principianti",
+                "2" => "Immagini parlanti: per studenti intermedi",
+                "3" => "Creare un poster interattivo: per studenti avanzati",
+            ]
+        ]
+
+
 
     ],
     'download_video_script' => 'Scarica lo script video',

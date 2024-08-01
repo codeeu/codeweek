@@ -14,7 +14,7 @@ return [
     'login' => 'Prijavite se',
     'register' => 'Registrirajte se',
     'github' => 'Upišite se na Github',
-    'twitter' => 'Upišite se na Twitter',
+    'X' => 'Upišite se na X',
     'facebook' => 'Upišite se na Facebook',
     'google' => 'Upišite se na Google',
     'azure' => 'Upišite se na Azure',

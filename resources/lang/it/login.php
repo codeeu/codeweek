@@ -14,7 +14,7 @@ return [
     'login' => 'Accedi',
     'register' => 'Registrati',
     'github' => 'Accedi con Github',
-    'twitter' => 'Accedi con Twitter',
+    'X' => 'Accedi con X',
     'facebook' => 'Accedi con Facebook',
     'google' => 'Accedi con Google',
     'azure' => 'Accedi con Azure',

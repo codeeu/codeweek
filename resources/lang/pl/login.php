@@ -14,7 +14,7 @@ return [
     'login' => 'Zaloguj się',
     'register' => 'Zarejestruj się',
     'github' => 'Zaloguj się poprzez serwis Github',
-    'twitter' => 'Zaloguj się poprzez serwis Twitter',
+    'X' => 'Zaloguj się poprzez serwis X',
     'facebook' => 'Zaloguj się poprzez serwis Facebook',
     'google' => 'Zaloguj się poprzez serwis Google',
     'azure' => 'Zaloguj się poprzez serwis Azure',
