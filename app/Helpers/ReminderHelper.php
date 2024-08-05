@@ -89,10 +89,10 @@ class ReminderHelper
                     );
             })
             ->where('end_date', '<=', Carbon::now())
-            ->groupBy('users.email')
-            ->distinct('users.email')
+            ->groupBy(['users.email','events.id'])
             ->orderBy('users.id')
-            ->get();
+            ->get()
+            ->unique();
 
         return $result;
     }

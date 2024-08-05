@@ -24,7 +24,7 @@ class Codeweek4AllHelper
             ->groupBy('codeweek_for_all_participation_code')
             ->get();
 
-        dd($result);
+
 
         return $result;
 
