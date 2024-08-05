@@ -93,6 +93,7 @@ class LoginController extends Controller
                     //'avatar' => $socialUser->getAvatar(),
                     'firstname' => ($socialUser->getName()) ? $socialUser->getName() : $socialUser->getNickName(),
                     'lastname' => '',
+                    'username' => ($socialUser->getNickName()) ? $socialUser->getNickName() : '',
                     'provider' => $provider,
                     'magic_key' => random_int(1000000, 2000000) * random_int(1000, 2000),
                 ]);
