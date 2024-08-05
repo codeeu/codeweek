@@ -50,14 +50,14 @@ export default {
     const initialLocation = props.location;
 
 
+
     const itemSelected = (selectedItem) => {
       if (selectedItem && selectedItem.name && selectedItem.magicKey) {
-        const baseURL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?f=json";
+        const baseURL = "/api/proxy/geocode"; // Update to your Laravel endpoint
         axios.get(baseURL, {
           params: {
             singleLine: selectedItem.name,
-            magicKey: selectedItem.magicKey,
-            outFields: 'Country'
+            magicKey: selectedItem.magicKey
           }
         }).then(response => {
           const candidate = response.data.candidates[0];
@@ -67,9 +67,12 @@ export default {
           }
           const countryIso2 = findCountry(candidate.attributes.Country).iso2;
           document.getElementById('id_country').value = countryIso2;
+        }).catch(error => {
+          console.error('Error:', error);
         });
       }
     };
+
 
     const findCountry = (iso3) => {
       return allCountries.find(country => country.iso3 === iso3);
@@ -85,14 +88,20 @@ export default {
       }
     };
 
-    const updateItems = (text) => {
-      const baseURL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/suggest?f=json";
-      axios.get(baseURL, { params: { text } }).then(response => {
-        const locations = response.data.suggestions.map(location => ({
-          name: location.text,
-          magicKey: location.magicKey
+    const updateItems = (query) => {
+      const baseURL = "/api/proxy/suggest"; // Update to your Laravel endpoint
+      axios.get(baseURL, {
+        params: {
+          f: 'json',
+          text: query
+        }
+      }).then(response => {
+        items.value = response.data.suggestions.map(suggestion => ({
+          name: suggestion.text,
+          magicKey: suggestion.magicKey
         }));
-        items.value = locations;
+      }).catch(error => {
+        console.error('Error:', error);
       });
     };
 
