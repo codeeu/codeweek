@@ -52,11 +52,11 @@ use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VolunteerController;
 use App\Http\Controllers\ConsentController;
-use App\Http\Controllers\ContactController;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GeocodeController;
 
 //Auth::loginUsingId(268354);
 
@@ -642,6 +642,9 @@ Route::view('/contact', 'contact')->middleware('auth')->name('contact-us');
 Route::get('/consent', [ConsentController::class, 'show'])->middleware('auth')->name('consent.show');
 Route::post('/consent', [ConsentController::class, 'store'])->middleware('auth')->name('consent.store');
 Route::post('/consent/logout', [ConsentController::class, 'logout'])->middleware('auth')->name('consent.logout');
+
+Route::get('/api/proxy/geocode', [GeocodeController::class, 'findAddressCandidates']);
+Route::get('/api/proxy/suggest', [GeocodeController::class, 'suggest']);
 
 
 Auth::routes();
