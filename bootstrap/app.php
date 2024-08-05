@@ -33,6 +33,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->web([
             \App\Http\Middleware\CheckBrowser::class,
             \App\Http\Middleware\Locale::class,
+            \App\Http\Middleware\CheckConsent::class
         ]);
 
         $middleware->throttleApi('60,1');
