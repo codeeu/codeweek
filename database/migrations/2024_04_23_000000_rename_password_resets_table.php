@@ -10,7 +10,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::rename('password_resets', 'password_reset_tokens');
+        if (Schema::hasTable('password_resets')) {
+            Schema::rename('password_resets', 'password_reset_tokens');
+        }
+
     }
 
     /**
