@@ -13,6 +13,9 @@ class Eeducation implements Importers
 
     private $creator;
 
+    private $lat = 47.6964719;
+    private $lng = 13.3457347;
+
     public function __construct($remote_event)
     {
         $this->remote = $remote_event;
@@ -29,7 +32,6 @@ class Eeducation implements Importers
             'username' => '',
             'password' => bcrypt(Str::random()),
         ]);
-
     }
 
     public function getUpdatedTimestamp()
@@ -40,6 +42,7 @@ class Eeducation implements Importers
     public function parse()
     {
         dump('parse event inside eeducation');
+
 
         $event = new Event([
             'status' => 'APPROVED',
@@ -60,21 +63,21 @@ class Eeducation implements Importers
             'codeweek_for_all_participation_code' => null,
             'start_date' => Carbon::parse($this->remote->startdate)->toDateTimeString(),
             'end_date' => Carbon::parse($this->remote->enddate)->toDateTimeString(),
-            'geoposition' => $this->remote->lat.','.$this->remote->lng,
-            'longitude' => $this->remote->lng,
-            'latitude' => $this->remote->lat,
+            'geoposition' => ($this->remote->lat ?? $this->lat) . ',' . ($this->remote->lng ?? $this->lng),
+            'longitude' => $this->remote->lng ?? $this->lng,
+            'latitude' => $this->remote->lat ?? $this->lat,
             'mass_added_for' => 'RSS Eeducation',
+
+
         ]);
 
         $event->save();
 
         return $event;
-
     }
 
     public function update(Event $event)
     {
-
         dump('update eeducation');
 
         $event->title = $this->remote->activity_title;
@@ -87,9 +90,9 @@ class Eeducation implements Importers
         $event->country_iso = $this->remote->country;
         $event->start_date = Carbon::parse($this->remote->starttime)->addHours(2)->toDateTimeString();
         $event->end_date = Carbon::parse($this->remote->endtime)->addHours(2)->toDateTimeString();
-        $event->geoposition = $this->remote->lat.','.$this->remote->lng;
-        $event->longitude = $this->remote->lng;
-        $event->latitude = $this->remote->lat;
+        $event->geoposition = ($this->remote->lat ?? $this->lat) . ',' . ($this->remote->lng ?? $this->lng);
+        $event->longitude = $this->remote->lng ?? $this->lng;
+        $event->latitude = $this->remote->lat ?? $this->lat;
 
         $event->save();
 
