@@ -9,6 +9,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
@@ -91,6 +92,7 @@ class LoginController extends Controller
                 [
                     'email' => $socialUser->getEmail(),
                     //'avatar' => $socialUser->getAvatar(),
+                    'password' => bcrypt(Str::random()),
                     'firstname' => ($socialUser->getName()) ? $socialUser->getName() : $socialUser->getNickName(),
                     'lastname' => '',
                     'username' => ($socialUser->getNickName()) ? $socialUser->getNickName() : '',
