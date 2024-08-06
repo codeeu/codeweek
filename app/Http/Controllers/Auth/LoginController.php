@@ -96,12 +96,14 @@ class LoginController extends Controller
                     'username' => ($socialUser->getNickName()) ? $socialUser->getNickName() : '',
                     'provider' => $provider,
                     'magic_key' => random_int(1000000, 2000000) * random_int(1000, 2000),
+                    'email_verified_at' => Carbon::now()
                 ]);
 
         } else {
             //update user
             $user->provider = $provider;
             $user->updated_at = Carbon::now();
+            $user->email_verified_at = Carbon::now();
             $user->save();
         }
 

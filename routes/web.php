@@ -275,7 +275,7 @@ Route::view(
 )->name('codingathome-turning-code-into-pictures');
 
 Route::get('/events', [SearchController::class, 'search'])->name('events_map');
-Route::get('/add', [EventController::class, 'create'])->name('create_event');
+Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware(['auth','verified']);;
 Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
 Route::get('/resources', [ResourcesController::class, 'learn'])->name('resources');
@@ -353,7 +353,7 @@ Route::post(
 
 Route::get('participation', [ParticipationController::class, 'show'])
     ->name('participation')
-    ->middleware('auth');
+    ->middleware(['auth','verified']);
 Route::post('participation', [ParticipationController::class, 'generate'])
     ->name('participation_submit')
     ->middleware('auth');
@@ -536,7 +536,7 @@ Route::get('/profile', function () {
     return view('profile', $data);
 })
     ->name('profile')
-    ->middleware('auth');
+    ->middleware(['auth','verified']);
 
 Route::get('user/delete', [UserController::class, 'delete'])
     ->name('delete_user')
@@ -646,6 +646,23 @@ Route::post('/consent/logout', [ConsentController::class, 'logout'])->middleware
 Route::get('/api/proxy/geocode', [GeocodeController::class, 'findAddressCandidates']);
 Route::get('/api/proxy/suggest', [GeocodeController::class, 'suggest']);
 
+Route::get('/email/verify', function () {
+    return view('auth.verify-email');
+})->middleware('auth')->name('verification.notice');
+
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
+
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+
+    return redirect('/profile');
+})->middleware(['auth', 'signed'])->name('verification.verify');
+
+Route::post('/email/verification-notification', function (Request $request) {
+    $request->user()->sendEmailVerificationNotification();
+
+    return back()->with('message', 'Verification link sent!');
+})->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
 Auth::routes();
 Route::feeds();
