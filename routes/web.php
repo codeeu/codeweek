@@ -275,7 +275,7 @@ Route::view(
 )->name('codingathome-turning-code-into-pictures');
 
 Route::get('/events', [SearchController::class, 'search'])->name('events_map');
-Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware(['auth','verified']);;
+Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware('auth');
 Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
 Route::get('/resources', [ResourcesController::class, 'learn'])->name('resources');
@@ -651,6 +651,7 @@ Route::get('/email/verify', function () {
 })->middleware('auth')->name('verification.notice');
 
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
     $request->fulfill();
@@ -664,7 +665,9 @@ Route::post('/email/verification-notification', function (Request $request) {
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
-Auth::routes();
+Route::middleware(ProtectAgainstSpam::class)->group(function() {
+    Auth::routes();
+});
 Route::feeds();
 
 
