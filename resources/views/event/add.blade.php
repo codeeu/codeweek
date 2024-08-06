@@ -17,7 +17,6 @@
 
             <form enctype="multipart/form-data" method="post" role="form" class="codeweek-form" action="/events">
                 <p>@lang('event.required')</p>
-
                 {{csrf_field()}}
 
 
