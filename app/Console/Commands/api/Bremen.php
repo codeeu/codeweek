@@ -43,7 +43,7 @@ class Bremen extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle()
     {
 
         $city = 'Bremen';
