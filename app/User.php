@@ -119,7 +119,13 @@ class User extends Authenticatable implements MustVerifyEmail
 
     protected $appends = ['fullName'];
 
-    protected $dates = ['consent_given_at', 'future_consent_given_at'];
+    protected array $dates = ['consent_given_at', 'future_consent_given_at'];
+
+    protected $casts = [
+        'consent_given_at' => 'datetime',
+        'future_consent_given_at' => 'datetime',
+
+    ];
 
 
     public function getName()
