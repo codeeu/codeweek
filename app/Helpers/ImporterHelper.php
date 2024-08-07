@@ -13,8 +13,8 @@ class ImporterHelper
 {
     public static function getGermanCities()
     {
-        //        return ['hamburg', 'baden', 'bonn', 'berlin', 'leipzig', 'dresden', 'thueringen', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
-        return ['hamburg', 'baden', 'bonn', 'berlin', 'leipzig', 'thueringen', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
+
+        return ['niedersachsen','hamburg', 'baden', 'bonn', 'berlin', 'leipzig', 'thueringen', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
     }
 
     //Create or load Technical user based on username
