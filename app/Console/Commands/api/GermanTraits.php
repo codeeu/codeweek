@@ -104,7 +104,7 @@ trait GermanTraits
             'pub_date' => now(),
             'created' => now(),
             'updated' => now(),
-            'codeweek_for_all_participation_code' => "cw23-$city",
+            'codeweek_for_all_participation_code' => "cw-$city",
             'mass_added_for' => 'API codeweek_de',
             'start_date' => $this->eventStartDate,
             'end_date' => $this->eventEndDate,
