@@ -22,7 +22,7 @@
 
         </div>
         <div class="about">
-            <img src="/images/EU_logo.png">t
+            <img src="/images/EU_logo.png">
             <div class="phrase">
                 <div class="text">@lang('base.footer_msg')</div>
                 <div class="text"><a
