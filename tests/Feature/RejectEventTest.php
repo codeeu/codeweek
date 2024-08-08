@@ -3,45 +3,37 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Mail\EventApproved;
 use App\Mail\EventRejected;
-use App\Queries\EventsQuery;
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class RejectEventTest extends TestCase
+final class RejectEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-    public function setup() :void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-
     }
 
-    /** @test */
-    public function event_can_be_rejected_by_admin()
+    #[Test]
+    public function event_can_be_rejected_by_admin(): void
     {
 
         Mail::fake();
 
         $this->withExceptionHandling();
 
-
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create('App\Event', ['status' => 'PENDING']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING']);
 
         $this->assertEquals($event->fresh()->status, 'PENDING');
 
@@ -52,8 +44,8 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
-    public function email_should_be_sent_to_event_email_when_event_is_rejected()
+    #[Test]
+    public function email_should_be_sent_to_event_email_when_event_is_rejected(): void
     {
 
         $event = $this->createEvent();
@@ -65,12 +57,10 @@ class RejectEventTest extends TestCase
             return $mail->hasTo($event->user_email);
         });
 
-
-
     }
 
-    /** @test */
-    public function rejection_reasons_should_be_recorded()
+    #[Test]
+    public function rejection_reasons_should_be_recorded(): void
     {
 
         $event = $this->createEvent();
@@ -85,12 +75,10 @@ class RejectEventTest extends TestCase
 
         $this->assertCount(2, $event->moderations()->get());
 
-
-
     }
 
-    /** @test */
-    public function latest_rejection_message_should_be_accessible()
+    #[Test]
+    public function latest_rejection_message_should_be_accessible(): void
     {
 
         $event = $this->createEvent();
@@ -110,8 +98,8 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
-    public function empty_rejection_should_be_treated()
+    #[Test]
+    public function empty_rejection_should_be_treated(): void
     {
 
         $event = $this->createEvent();
@@ -123,8 +111,8 @@ class RejectEventTest extends TestCase
 
     }
 
-    /** @test */
-    public function updating_rejected_event_should_set_status_back_to_pending()
+    #[Test]
+    public function updating_rejected_event_should_set_status_back_to_pending(): void
     {
 
         $eventA = $this->createEvent();
@@ -136,24 +124,22 @@ class RejectEventTest extends TestCase
 
         $event = Event::where('title', $eventA->title)->first();
 
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        \App\Audience::factory()->count(3)->create();
+        \App\Theme::factory()->count(3)->create();
         $event->title = 'Changed';
         $event->description = 'Changed description.';
-        $event->theme = "1,2";
-        $event->audience = "1,2,3";
-        $event->tags = "foo,bar,joe";
+        $event->theme = '1,2';
+        $event->audience = '1,2,3';
+        $event->tags = 'foo,bar,joe';
         $event->privacy = true;
 
-        $this->patch('/events/' . $event->id, $event->toArray());
-
+        $this->patch('/events/'.$event->id, $event->toArray());
 
         tap($event->fresh(), function ($t) {
             $this->assertEquals('PENDING', $t->status);
             $this->assertEquals('Changed description.', $t->description);
 
         });
-
 
     }
 
@@ -166,15 +152,13 @@ class RejectEventTest extends TestCase
 
         Mail::fake();
 
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
+
         return $event;
     }
-
 }
-
-

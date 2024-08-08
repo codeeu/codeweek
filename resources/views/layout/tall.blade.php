@@ -18,13 +18,15 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
+    <link href="{{asset('css/fonts.css')}}" media="screen" rel="stylesheet"/>
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
     @stack('extra-css')
 
     @yield('extra-css')
 
-    <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
+    @vite(['resources/assets/sass/app.scss'])
+{{--    @vite(['resources/assets/sass/app.scss', 'resources/js/app.js'])--}}
 
 
     <script>
@@ -67,7 +69,7 @@
 
     @include('layout.footer')
 
-    <flash message="{{ session('flash') }}"></flash>
+{{--    <flash message="{{ session('flash') }}"></flash>--}}
 </div>
 
 <!-- Scripts -->
@@ -86,6 +88,7 @@
     @endif
 @endif
 
+{{--@vite('resources/js/app.js')--}}
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>

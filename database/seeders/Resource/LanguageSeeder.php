@@ -8,157 +8,155 @@ class LanguageSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 1,
             'name' => 'English',
             'position' => 10,
-            'teach' => true
+            'teach' => true,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 2,
             'name' => 'French',
-            'position' => 20
+            'position' => 20,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 3,
             'name' => 'Spanish',
-            'position' => 30
+            'position' => 30,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 4,
             'name' => 'Russian',
-            'position' => 40
+            'position' => 40,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 5,
             'name' => 'Portuguese',
-            'position' => 50
+            'position' => 50,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 6,
             'name' => 'Turkish',
-            'position' => 60
+            'position' => 60,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 7,
             'name' => 'Norwegian',
-            'position' => 70
+            'position' => 70,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 8,
             'name' => 'Slovenian',
-            'position' => 80
+            'position' => 80,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 9,
             'name' => 'Romanian',
-            'position' => 90
+            'position' => 90,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 10,
             'name' => 'German',
-            'position' => 100
+            'position' => 100,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 11,
             'name' => 'Polish',
-            'position' => 110
+            'position' => 110,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 12,
             'name' => 'Danish',
-            'position' => 120
+            'position' => 120,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 13,
             'name' => 'Croatian',
-            'position' => 130
+            'position' => 130,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 14,
             'name' => 'Dutch',
-            'position' => 140
+            'position' => 140,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 15,
             'name' => 'Slovak',
-            'position' => 150
+            'position' => 150,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 16,
             'name' => 'Czech',
-            'position' => 160
+            'position' => 160,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 17,
             'name' => 'Greek',
-            'position' => 170
+            'position' => 170,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 18,
             'name' => 'Italian',
-            'position' => 180
+            'position' => 180,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 19,
             'name' => 'Swedish',
-            'position' => 190
+            'position' => 190,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 20,
             'name' => 'Finnish',
-            'position' => 200
+            'position' => 200,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 21,
             'name' => 'Hungarian',
-            'position' => 210
+            'position' => 210,
         ]);
 
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 22,
             'name' => 'Mandarin',
-            'position' => 220
+            'position' => 220,
         ]);
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 23,
             'name' => 'Estonian',
-            'position' => 230
+            'position' => 230,
         ]);
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 24,
             'name' => 'Japanese',
-            'position' => 240
+            'position' => 240,
         ]);
-        create('App\ResourceLanguage', [
+        create(\App\ResourceLanguage::class, [
             'id' => 25,
             'name' => 'Montenegrin',
-            'position' => 250
+            'position' => 250,
         ]);
     }
 }

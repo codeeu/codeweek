@@ -14,7 +14,7 @@ return [
 
             <p>Při opakovaném procházení stránky během jedné návštěvy tak tyto údaje nebudete muset opakovaně zadávat.</p>
 
-            <p>Soubory cookie rovněž umožňují vytváření anonymizovaných statistik o procházení našich stránek.</p>'
+            <p>Soubory cookie rovněž umožňují vytváření anonymizovaných statistik o procházení našich stránek.</p>',
     ],
     'how' => [
         'title' => 'Jak soubory cookie používáme?',
@@ -24,30 +24,30 @@ return [
             'title' => '<strong>3 typy souborů cookie první strany</strong> používáme za účelem:',
             '1' => 'uložení preferencí návštěvníka',
             '2' => 'zajištění správného fungování našich webových stránek',
-            '3' => 'shromažďování analytických dat (o chování uživatele na webové stránce)'
+            '3' => 'shromažďování analytických dat (o chování uživatele na webové stránce)',
         ],
         'table' => [
-            'name'=>'Jméno',
-            'service'=>'Služba',
-            'purpose'=>'Účel',
-            'type_duration'=>'Typ souboru cookie a jeho životnost',
+            'name' => 'Jméno',
+            'service' => 'Služba',
+            'purpose' => 'Účel',
+            'type_duration' => 'Typ souboru cookie a jeho životnost',
         ],
         'visitor_preferences' => [
-            'title'=> 'Preference návštěvníka',
-            'text'=> '<p>Soubory cookie ukládající preference návštěvníka nastavujeme my a pouze my je můžeme číst. Pamatují si:</p>',
-            'item'=> 'zda jste vyjádřili souhlas se zásadami používání souborů cookie na této stránce (nebo tyto zásady odmítli)',
+            'title' => 'Preference návštěvníka',
+            'text' => '<p>Soubory cookie ukládající preference návštěvníka nastavujeme my a pouze my je můžeme číst. Pamatují si:</p>',
+            'item' => 'zda jste vyjádřili souhlas se zásadami používání souborů cookie na této stránce (nebo tyto zásady odmítli)',
             'table' => [
                 '1' => [
                     'service' => 'Sada souborů cookie souvisejících s udělením souhlasu',
                     'purpose' => 'Ukládá vaše preference týkající se souborů cookie (takže už na ně nebudete dotazováni znovu)',
                     'type_duration' => 'Relační soubor cookie první strany, který se smaže po zavření prohlížeče',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Provozní soubory cookie',
             'text' => '<p>Existují soubory cookie, které musíme zahrnout, abychom zajistili správné fungování určitých webových stránek. Z tohoto důvodu nevyžadujeme váš souhlas. Zejména se jedná o:</p>',
-            'item' => 'technické soubory cookie vyžadované určitými IT systémy'
+            'item' => 'technické soubory cookie vyžadované určitými IT systémy',
         ],
         'technical_cookies' => [
             'title' => 'Technické soubory cookie',
@@ -63,8 +63,8 @@ return [
                 '3' => [
                     'purpose' => 'Ukládá upřednostňovaný jazyk uživatele',
                     'type_duration' => 'Relační soubor cookie první strany, který se smaže po zavření prohlížeče',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analytické soubory cookie',
@@ -85,9 +85,9 @@ return [
                     'service' => 'Služba analýzy webu opírající se o open source software Matomo',
                     'purpose' => 'Identifikace stránek navštívených stejným uživatelem během jedné návštěvy (anonymně – nejsou shromažďovány žádné osobní údaje uživatele).',
                     'type_duration' => 'Trvalý soubor cookie první strany, 30 minut',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -98,8 +98,8 @@ return [
                 <p>Pokud chcete tento obsah třetích stran zobrazit, musíte nejprve přijmout jejich vlastní podmínky. Mezi ně patří také jejich vlastní zásady používání souborů cookie, nad nimiž nemáme žádnou kontrolu.</p>
 
                 <p>Pokud však tento obsah zobrazit nechcete, žádné soubory cookie třetích stran do vašeho zařízení instalovány nebudou.</p>Třetí strany – poskytovatelé obsahu na stránce Codeweek',
-            '2' => 'Tyto služby třetích stran jsou mimo kontrolu webové stránky Codeweek. Poskytovatelé mohou podmínky poskytování služby, účel a používání souborů cookie atd. kdykoli změnit.'
-        ]
+            '2' => 'Tyto služby třetích stran jsou mimo kontrolu webové stránky Codeweek. Poskytovatelé mohou podmínky poskytování služby, účel a používání souborů cookie atd. kdykoli změnit.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Jak můžete soubory cookie spravovat?',
@@ -108,6 +108,6 @@ return [
 
             <p>Všechny soubory cookie ve svém zařízení můžete vymazat smazáním historie procházení v prohlížeči. Tím odstraníte všechny soubory cookie ze všech webových stránek, které jste navštívili.</p>
 
-            <p>Mějte však na vědomí, že tak můžete přijít i o některé uložené informace (např. uložené přihlašovací údaje, preference stránky).</p><strong>Správa souborů cookie vlastních pro konkrétní stránku</strong><p>Podrobnější nastavení souborů cookie vlastních pro konkrétní stránku můžete provést v nastavení soukromí a souborů cookie ve vámi upřednostňovaném prohlížeči.</p><strong>Blokování souborů cookie</strong><p>Většinu moderních prohlížečů můžete nastavit tak, aby se žádné soubory cookie ve vašem zařízení neukládaly. Při každé nové návštěvě stránky však může být nutné některé preference opakovaně nastavit ručně. Určité služby a funkce rovněž nemusí fungovat správně, nebo dokonce vůbec (např. přihlášení k profilu).</p><strong>Správa našich analytických souborů cookie</strong><p>Vaše preference týkající se našich analytických souborů cookie můžete spravovat na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">vyhrazené stránce.</a></p>'
-    ]
+            <p>Mějte však na vědomí, že tak můžete přijít i o některé uložené informace (např. uložené přihlašovací údaje, preference stránky).</p><strong>Správa souborů cookie vlastních pro konkrétní stránku</strong><p>Podrobnější nastavení souborů cookie vlastních pro konkrétní stránku můžete provést v nastavení soukromí a souborů cookie ve vámi upřednostňovaném prohlížeči.</p><strong>Blokování souborů cookie</strong><p>Většinu moderních prohlížečů můžete nastavit tak, aby se žádné soubory cookie ve vašem zařízení neukládaly. Při každé nové návštěvě stránky však může být nutné některé preference opakovaně nastavit ručně. Určité služby a funkce rovněž nemusí fungovat správně, nebo dokonce vůbec (např. přihlášení k profilu).</p><strong>Správa našich analytických souborů cookie</strong><p>Vaše preference týkající se našich analytických souborů cookie můžete spravovat na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">vyhrazené stránce.</a></p>',
+    ],
 ];

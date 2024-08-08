@@ -5,7 +5,6 @@ namespace App\Console\Commands\clean;
 use App\Event;
 use App\User;
 use Illuminate\Console\Command;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
@@ -37,21 +36,18 @@ class Germany extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
         $events = Event::whereIn('codeweek_for_all_participation_code', ['cw20-baden', 'cw20-bonn', 'cw20-hamburg'])->get();
 
         $newUsers = [];
         $existingUsers = [];
 
-
         foreach ($events as $event) {
             $user = User::where(['email' => $event->user_email])->first();
 
-            Log::info($event->id . " - " . $event->user_email);
+            Log::info($event->id.' - '.$event->user_email);
             if ($user == null) {
 
                 $newUsers[] = $event->user_email;
@@ -63,12 +59,12 @@ class Germany extends Command
                         'firstname' => $event->organizer,
                         'lastname' => '',
                         'username' => $event->organizer,
-                        "password" => bcrypt(Str::random()),
+                        'password' => bcrypt(Str::random()),
                     ]);
 
             } else {
                 //Add to existing if it has not been created previously by the script.
-                if (!in_array($user->email, $newUsers)) {
+                if (! in_array($user->email, $newUsers)) {
                     $existingUsers[] = $user->email;
                 }
 
@@ -81,26 +77,25 @@ class Germany extends Command
         }
 
         //Log them all
-        Log::info("===  REPORT START ===");
-        Log::info("---------------------");
-        Log::info("---------------------");
-        Log::info("-- Existing Users ---");
-        Log::info("---------------------");
-        Log::info("---------------------");
+        Log::info('===  REPORT START ===');
+        Log::info('---------------------');
+        Log::info('---------------------');
+        Log::info('-- Existing Users ---');
+        Log::info('---------------------');
+        Log::info('---------------------');
         foreach (array_unique($existingUsers) as $existingUser) {
             Log::info($existingUser);
         }
 
-        Log::info("---------------------");
-        Log::info("---------------------");
-        Log::info("--- Created Users ---");
-        Log::info("---------------------");
-        Log::info("---------------------");
+        Log::info('---------------------');
+        Log::info('---------------------');
+        Log::info('--- Created Users ---');
+        Log::info('---------------------');
+        Log::info('---------------------');
         foreach (array_unique($newUsers) as $newUser) {
             Log::info($newUser);
         }
-        Log::info("===  REPORT END ===");
-
+        Log::info('===  REPORT END ===');
 
     }
 }

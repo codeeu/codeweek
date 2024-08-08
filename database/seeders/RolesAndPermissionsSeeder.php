@@ -10,10 +10,8 @@ class RolesAndPermissionsSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
         // Reset cached roles and permissions
         // Reset cached roles and permissions
@@ -34,7 +32,6 @@ class RolesAndPermissionsSeeder extends Seeder
         // create permissions
         Permission::create(['name' => 'moderate resource']);
 
-
         // create roles and assign created permissions
 
         $role = Role::create(['name' => 'resource editor']);
@@ -43,7 +40,7 @@ class RolesAndPermissionsSeeder extends Seeder
         // create roles and assign created permissions
 
         $role = Role::create(['name' => 'member']);
-        $role->givePermissionTo(['create event','create school']);
+        $role->givePermissionTo(['create event', 'create school']);
 
         $role = Role::create(['name' => 'event owner']);
         $role->givePermissionTo(['update event', 'generate certificate']);
@@ -52,7 +49,7 @@ class RolesAndPermissionsSeeder extends Seeder
         $role->givePermissionTo(['moderate event']);
 
         $role = Role::create(['name' => 'school manager']);
-        $role->givePermissionTo(['update school','generate certificate']);
+        $role->givePermissionTo(['update school', 'generate certificate']);
 
         $role = Role::create(['name' => 'super admin']);
         $role->givePermissionTo(Permission::all());

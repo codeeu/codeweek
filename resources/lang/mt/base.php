@@ -40,7 +40,7 @@ return [
         'ba' => 'Bożnijak',
         'mk' => 'Maċedonjan',
         'me' => 'Montenegrin',
-        'rs' => 'Serb'
+        'rs' => 'Serb',
     ],
 
     'resources_local_title' => 'Ikkowdjar ta’ riżorsi minn',
@@ -51,8 +51,7 @@ return [
     'still_have_question' => 'Għad għandek mistoqsija?',
     'drop_us_a_line' => 'Iktbilna!',
     'get_in_touch' => 'IKKUNTATTJANA',
-    'footer_msg' =>
-        'Inizjattiva lokali mmexxija minn voluntiera u appoġġata mill-Kummissjoni Ewropea.',
+    'footer_msg' => 'Inizjattiva lokali mmexxija minn voluntiera u appoġġata mill-Kummissjoni Ewropea.',
     'email' => 'Indirizz elettroniku',
     'display_email' => 'Uri l-indirizz elettroniku',
     'first_name' => 'Isem',
@@ -64,8 +63,7 @@ return [
     'choose a file' => 'Agħżel Fajl',
     'learning_bits' => 'Sezzjonijiet ta’ tagħlim',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Wassal il-Ġimgħa tal-Ikkowdjar lill-istudenti tiegħek',
+    'bring_codeweek_to_your_students' => 'Wassal il-Ġimgħa tal-Ikkowdjar lill-istudenti tiegħek',
     'or' => 'jew',
-    'newsletter' => 'Bullettin'
+    'newsletter' => 'Bullettin',
 ];

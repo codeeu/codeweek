@@ -3,14 +3,12 @@
 namespace App\Console\Commands\mailing;
 
 use App\Helpers\MailingHelper;
-use App\Helpers\ReminderHelper;
 use App\User;
-use Carbon\Carbon;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
-class ItalianMailing extends Command {
+class ItalianMailing extends Command
+{
     /**
      * The name and signature of the console command.
      *
@@ -30,23 +28,21 @@ class ItalianMailing extends Command {
      *
      * @return void
      */
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle() {
+    public function handle(): void
+    {
         $recipients = MailingHelper::getActiveCreators('IT');
 
+        //        $recipients = User::where("id","19588")->get();
 
-//        $recipients = User::where("id","19588")->get();
-
-        $this->info(sizeof($recipients));
-
+        $this->info(count($recipients));
 
         foreach ($recipients as $user) {
             Mail::to($user->email)->queue(new \App\Mail\ItalianMailing($user->email, $user->magic_key));

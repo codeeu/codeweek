@@ -1,4 +1,4 @@
-@extends('layout.base')
+@extends('layout.tall')
 
 
 
@@ -6,8 +6,7 @@
 @section('content')
 
     @include('components.tailwind')
-    @include('components.livewire')
-    @include('components.alpine')
+
 
     <section id="codeweek-participation-report-page" class="codeweek-page">
 
@@ -18,8 +17,7 @@
 
             <section class="codeweek-content-wrapper" style="margin-top:0;">
 
-            <livewire:leading-teachers-list-table per-page="100"  exportable="true"/>
-
+            <livewire:leading-teachers-table/>
         </section>
 
     </section>

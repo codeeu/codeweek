@@ -2,37 +2,31 @@
 
 namespace App\Http\Controllers;
 
-
 use App\CertificateParticipation;
-
-
 use App\Jobs\GenerateCertificatesOfParticipation;
 use App\Participation;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
-use ZipArchive;
+use Illuminate\View\View;
 
 class ParticipationController extends Controller
 {
-    public function show()
+    public function show(): View
     {
         return view('participation.index');
     }
 
     public function test()
     {
-        $name = "Μαρία";
+        $name = 'Μαρία';
         //$event_name = "Learn something with Laravel & PHP & Scratch";
-        $event_name = "(L.I.F.E.) OWL ALERT!! Can you help?";
-        $event_date = "Οκτώβριος 2021";
+        $event_name = '(L.I.F.E.) OWL ALERT!! Can you help?';
+        $event_date = 'Οκτώβριος 2021';
 
         return (new CertificateParticipation($name, $event_name, $event_date))->generate();
     }
 
-
-
-    public function generate(Request $request)
+    public function generate(Request $request): RedirectResponse
     {
 
         $rules = [
@@ -48,11 +42,11 @@ class ParticipationController extends Controller
         $request->validate($rules, $messages);
 
         $participation = new Participation([
-                "user_id" => auth()->id(),
-                "names" => $request["names"],
-                "event_name" => $request["event_name"],
-                "event_date" => $request["event_date"]
-            ]
+            'user_id' => auth()->id(),
+            'names' => $request['names'],
+            'event_name' => $request['event_name'],
+            'event_date' => $request['event_date'],
+        ]
         );
 
         $participation->save();

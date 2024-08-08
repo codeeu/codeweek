@@ -4,7 +4,6 @@ namespace App\Achievements\Types;
 
 class SuperExpert extends AchievementType
 {
-
     public $icon = 'star-orange.svg';
 
     public function description()
@@ -16,5 +15,4 @@ class SuperExpert extends AchievementType
     {
         return $user->getExperience()->points >= 10000;
     }
-
 }

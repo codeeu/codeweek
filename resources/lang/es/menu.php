@@ -15,7 +15,7 @@ return [
 
     'learn' => 'Aprender',
     'teach' => 'Enseñar',
-    'training' => 'Formación', 'toolkits' => 'Presentaciones y paquetes de herramientas', 'why' => '¿POR QUÉ', 'home'  => 'Inicio',
+    'training' => 'Formación', 'toolkits' => 'Presentaciones y paquetes de herramientas', 'why' => '¿POR QUÉ', 'home' => 'Inicio',
     'events' => 'Actividades',
     'ambassadors' => 'Embajadores',
     'resources' => 'Recursos',
@@ -37,7 +37,7 @@ return [
     'logout' => 'Cerrar sesión',
     'signin' => 'Inscripción',
     'privacy' => 'Privacidad',
-    'participation'=> 'Certificado de participación',
+    'participation' => 'Certificado de participación',
     'values' => 'Nuestros valores',
     'featured_activities' => 'Actividades destacadas',
     'codeweek2020' => 'Edición 2020'];

@@ -15,6 +15,7 @@
             <section class="codeweek-content-wrapper-inside">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
+                    @honeypot
 
                     <div class="codeweek-form-field-wrapper">
                         <div class="codeweek-form-field">

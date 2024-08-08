@@ -17,6 +17,6 @@ return [
     'reset' => 'Vaša je lozinka ponovno postavljena!',
     'sent' => 'Poveznicu za ponovno postavljanje lozinke poslali smo na adresu vaše e-pošte!',
     'token' => 'Ovaj token za ponovno postavljanje lozinke nije valjan.',
-    'user' => "Ne možemo pronaći korisnika s tom adresom e-pošte.",
+    'user' => 'Ne možemo pronaći korisnika s tom adresom e-pošte.',
 
 ];

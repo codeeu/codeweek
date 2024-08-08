@@ -8,27 +8,21 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
 
-        Schema::table('tags', function(Blueprint $table)
-        {
+        Schema::table('tags', function (Blueprint $table) {
             $table->index('name');
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::table('tags', function (Blueprint $table)
-        {
+        Schema::table('tags', function (Blueprint $table) {
             $table->dropIndex(['name']);
         });
     }

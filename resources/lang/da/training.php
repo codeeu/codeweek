@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – CodyRoby for indskolingen/mellemtrinnet',
                 '2' => 'Aktivitet 2 – CodyRoby for udskolingen',
-                '3' => 'Aktivitet 3 – CodyRoby for gymnasiale uddannelser'
-            ]
+                '3' => 'Aktivitet 3 – CodyRoby for gymnasiale uddannelser',
+            ],
         ],
         '2' => [
             'title' => 'Datalogisk tænkning og problemløsning',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Udvikling af matematisk tankegang for indskolingen/mellemtrinnet',
                 '2' => 'Aktivitet 2 – Introduktion til algoritmer for udskolingen',
-                '3' => 'Aktivitet 3 – Algoritmer for gymnasiale uddannelser'
-            ]
+                '3' => 'Aktivitet 3 – Algoritmer for gymnasiale uddannelser',
+            ],
         ],
         '3' => [
             'title' => 'Visuel programmering – Introduktion til Scratch',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Grundlæggende Scratch for indskolingen/mellemtrinnet',
                 '2' => 'Aktivitet 2 – Grundlæggende Scratch for udskolingen',
-                '3' => 'Aktivitet 3 – Grundlæggende Scratch for gymnasiale uddannelser'
-            ]
+                '3' => 'Aktivitet 3 – Grundlæggende Scratch for gymnasiale uddannelser',
+            ],
         ],
         '4' => [
             'title' => 'Sådan laver du uddannelsesspil med Scratch',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Spil med spørgsmål og svar med Scratch til indskolingen/mellemtrinnet',
                 '2' => 'Aktivitet 2 – Spil med spørgsmål og svar med Scratch til udskolingen',
-                '3' => 'Aktivitet 3 – Spil med spørgsmål og svar med Scratch til gymnasiale uddannelser'
-            ]
+                '3' => 'Aktivitet 3 – Spil med spørgsmål og svar med Scratch til gymnasiale uddannelser',
+            ],
         ],
         '5' => [
             'title' => 'Robotteknologi og nørkleri i klasseværelset',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Sådan laver man en mekanisk hånd i masonit for indskolingen/mellemtrinnet',
                 '2' => 'Aktivitet 2 – Sådan laver man en mekanisk hånd eller en robothånd for udskolingen',
-                '3' => 'Aktivitet 3 – Sådan laver man en mekanisk hånd eller en robothånd for gymnasiale uddannelser'
-            ]
+                '3' => 'Aktivitet 3 – Sådan laver man en mekanisk hånd eller en robothånd for gymnasiale uddannelser',
+            ],
         ],
         '6' => [
             'title' => 'App Inventor og appudvikling',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Titel, for primærskolen',
                 '2' => 'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
-                '3' => 'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
-            ]
+                '3' => 'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen',
+            ],
         ],
         '7' => [
             'title' => 'Tinkering og making',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Titel, for primærskolen',
                 '2' => 'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
-                '3' => 'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
-            ]
+                '3' => 'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen',
+            ],
         ],
         '8' => [
             'title' => 'Programmering på alle fagområder',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Aktivitet 1 – Robotteknik og inklusion for elever i primærskolen i STEM',
                 '2' => 'Aktivitet 2 – Musik er programmering',
                 '3' => 'Aktivitet 3 – Tinkering og programmering med Makey Makey',
-                '4' => 'Aktivitet 4 – En algoritme til dagligdags ting til en CLIL-lektion'
-            ]
+                '4' => 'Aktivitet 4 – En algoritme til dagligdags ting til en CLIL-lektion',
+            ],
         ],
         '9' => [
             'title' => 'Byg en automat med en micro:bit',
@@ -136,7 +136,7 @@ return [
                 '1' => 'Morsekode med micro:bit, for indskolingen/mellemtrinnet',
                 '2' => 'Escape room med micro:bit, for udskolingen',
                 '3' => 'Byg en automat, for ungdomsuddannelser',
-            ]
+            ],
         ],
         '10' => [
             'title' => 'Kreativ kodning med Python',
@@ -158,36 +158,36 @@ Med Python kan eleverne lave quizzer om historiske begivenheder, løse matematik
             'links' => [
                 'title' => 'Andre relaterede ressourcer',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Python Standard Library",
-                    "description" => "En samling færdige kodestumper og moduler (f.eks. turtle-modul, matematikmodul osv.).",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Python Standard Library',
+                    'description' => 'En samling færdige kodestumper og moduler (f.eks. turtle-modul, matematikmodul osv.).',
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Pædagogisk videospil til at lære programmeringskoncepter med.",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' => 'Pædagogisk videospil til at lære programmeringskoncepter med.',
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/da-DK/codeclub",
-                    "title" => "CodeClub projects",
-                    "description" => "Trinvise programmeringsprojekter til børn, fra begyndere til avancerede brugere.",
+                    'url' => 'https://projects.raspberrypi.org/da-DK/codeclub',
+                    'title' => 'CodeClub projects',
+                    'description' => 'Trinvise programmeringsprojekter til børn, fra begyndere til avancerede brugere.',
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Invent your own computer games with Python",
-                    "description" => "En bog, hvor du kan lære at programmere dine egne computerspil med Python.",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Invent your own computer games with Python',
+                    'description' => 'En bog, hvor du kan lære at programmere dine egne computerspil med Python.',
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "CodeWars",
-                    "description" => "Et pædagogisk fællesskab, hvor elever og lærere kan øve sig via en række udfordringer.",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'CodeWars',
+                    'description' => 'Et pædagogisk fællesskab, hvor elever og lærere kan øve sig via en række udfordringer.',
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "Hour of Python",
-                    "description" => "En samling begynderlektioner i Python (både tekstbaseret og med blokke) vha. det interaktive Trinket.",
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'Hour of Python',
+                    'description' => 'En samling begynderlektioner i Python (både tekstbaseret og med blokke) vha. det interaktive Trinket.',
                 ],
-            ]
+            ],
         ],
         '11' => [
             'title' => 'Kodning med inklusion',
@@ -201,40 +201,40 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
                 '1' => 'Æggebakkelabyrint',
                 '2' => 'En meget klog mus',
                 '3' => 'Stjerner fra stjernen',
-            ]
+            ],
         ],
 
-        "12" => [
-            "title" => "Klassificering for bæredygtige udviklingsmål",
-            "author" => "af Francisco Javier Masero, Cristina Nicolaita og Erviola Konomi",
-            "text" => [
-                "1" => "Traditionel uddannelse giver eleverne få muligheder for at forstå og løse problemer i den virkelige verden såsom globale klimaændringer, ligestilling mellem kønnene, sult, fattigdom eller godt helbred og velvære.",
-                "2" => "Verdensmålene for bæredygtig udvikling (SDG) er kernen i 2030-agendaen for bæredygtig udvikling, vedtaget af alle FN's medlemslande som en køreplan for at opnå fred og velstand på planeten og tilskynde til global udvikling. Lærere kan bruge SDG'erne i klasseværelset som et redskab til eleverne til at udvikle deres evne til at tænke kritisk, men også til at hjælpe dem med at finde deres identitet og formål. Ved at kombinere grundlæggende elementer i kodning og databehandlet tænkning med SDG'erne vil det øge dine elevers selvtillid, og du vil hjælpe dem med at udvikle deres kreativitet, iværksætterånd, problemløsning eller kommunikationsevner.",
-                "3" => "I nedenstående aktiviteter vil elever anvende principperne Scratch, ASCII-kodning og unplugged kodning på emner af global og social relevans i dag. Lærere vil øge bevidstheden om målene for bæredygtig udvikling, samtidigt med at de hjælper dem med at udvikle empati, aktivt medborgerskab og prosociale færdigheder på en sjov og engagerende måde.",
-                "4" => "Disse lektionsplaner fokuserer hver på ét af SDG'erne:",
-                "5" => "Verdensmål for bæredygtig udvikling, mål 3: Vi skal sikre et sundt liv for alle og fremme trivsel for alle aldersgrupper",
-                "6" => "Verdensmål for bæredygtig udvikling, mål 5: Vi skal opnå ligestilling mellem kønnene og styrke kvinders og pigers rettigheder og muligheder",
-                "7" => "Verdensmål for bæredygtig udvikling, mål 13: Vi skal handle hurtigt for at bekæmpe klimaforandringer og deres konsekvenser",
+        '12' => [
+            'title' => 'Klassificering for bæredygtige udviklingsmål',
+            'author' => 'af Francisco Javier Masero, Cristina Nicolaita og Erviola Konomi',
+            'text' => [
+                '1' => 'Traditionel uddannelse giver eleverne få muligheder for at forstå og løse problemer i den virkelige verden såsom globale klimaændringer, ligestilling mellem kønnene, sult, fattigdom eller godt helbred og velvære.',
+                '2' => "Verdensmålene for bæredygtig udvikling (SDG) er kernen i 2030-agendaen for bæredygtig udvikling, vedtaget af alle FN's medlemslande som en køreplan for at opnå fred og velstand på planeten og tilskynde til global udvikling. Lærere kan bruge SDG'erne i klasseværelset som et redskab til eleverne til at udvikle deres evne til at tænke kritisk, men også til at hjælpe dem med at finde deres identitet og formål. Ved at kombinere grundlæggende elementer i kodning og databehandlet tænkning med SDG'erne vil det øge dine elevers selvtillid, og du vil hjælpe dem med at udvikle deres kreativitet, iværksætterånd, problemløsning eller kommunikationsevner.",
+                '3' => 'I nedenstående aktiviteter vil elever anvende principperne Scratch, ASCII-kodning og unplugged kodning på emner af global og social relevans i dag. Lærere vil øge bevidstheden om målene for bæredygtig udvikling, samtidigt med at de hjælper dem med at udvikle empati, aktivt medborgerskab og prosociale færdigheder på en sjov og engagerende måde.',
+                '4' => "Disse lektionsplaner fokuserer hver på ét af SDG'erne:",
+                '5' => 'Verdensmål for bæredygtig udvikling, mål 3: Vi skal sikre et sundt liv for alle og fremme trivsel for alle aldersgrupper',
+                '6' => 'Verdensmål for bæredygtig udvikling, mål 5: Vi skal opnå ligestilling mellem kønnene og styrke kvinders og pigers rettigheder og muligheder',
+                '7' => 'Verdensmål for bæredygtig udvikling, mål 13: Vi skal handle hurtigt for at bekæmpe klimaforandringer og deres konsekvenser',
             ],
-            "activities" => [
-                "1" => "Karateka-projekt: At kende karate gennem programmering, for folkeskolen og for børn og unge op til 18 år",
-                "2" => "Verdensmål for bæredygtig udvikling og klassificering for klimaændringer, for folkeskolen",
-                "3" => "Klassificering for ligestilling mellem kønnene, for børn og unge 14-18 år",
-            ]
+            'activities' => [
+                '1' => 'Karateka-projekt: At kende karate gennem programmering, for folkeskolen og for børn og unge op til 18 år',
+                '2' => 'Verdensmål for bæredygtig udvikling og klassificering for klimaændringer, for folkeskolen',
+                '3' => 'Klassificering for ligestilling mellem kønnene, for børn og unge 14-18 år',
+            ],
         ],
 
-        "13" => [
-            "title" => "Introduktion to kunstig intelligens i klasseværelset",
-            "author" => "af Artur Coelho og Marjana Prifti Skenduli",
-            "text" => [
-                "1" => "Kunstig intelligens (AI) har indflydelse på mange områder i dagligdagen: Den korrigerer automatisk den tekst, du skriver på din telefon, vælger den musik, som din foretrukne musikapp spiller, og den husker dine adgangskoder, når du har glemt dem. AI refererer til en kombination af maskinlæring, robotteknik og algoritmer, med applikationer inden for alle områder: Fra datalogi til fremstilling og fra medicin til mode. Derfor har den en ubestridelig plads i vores liv og i vores samfund, og den spiller en vigtig rolle i videnskabens udvikling. Og som alle andre vigtige fænomener i vores liv vil elever drage fordel af at lære om den. Men hvordan skal man undervise i sådan en kompleks ting som AI?",
-                "2" => "Denne læringsdel vil hjælpe dig med at forklare eleverne, hvad AI er, og hvilken rolle den spiller i elevernes liv. Disse aktiviteter er udviklet sådan, at ikke-eksperter nemt kan forstå indholdet og blive i stand til effektivt at nedbryde komplekse termer til letforståelige ideer. Med disse lektionsplaner kan du hjælpe eleverne med at lære om brugen af AI og nogle af mekanismerne bag den. Disse aktiviteter er udviklet sådan, at eleverne kan udvikle deres færdigheder i analytisk og kritisk tænkning: I Marjanas aktivitet udvikler eleverne for eksempel en klassifikationsudvikler. Disse aktiviteter hjælper også eleverne med at forstå de forskellige anvendelser af AI: I Arturs aktivitet lærer de om forbindelsen mellem AI og kunst, og hvordan AI kan bruges til at forbedre det visuelle udtryk. Med disse aktiviteter vil eleverne også reflektere over farerne ved AI og deres effekt."
+        '13' => [
+            'title' => 'Introduktion to kunstig intelligens i klasseværelset',
+            'author' => 'af Artur Coelho og Marjana Prifti Skenduli',
+            'text' => [
+                '1' => 'Kunstig intelligens (AI) har indflydelse på mange områder i dagligdagen: Den korrigerer automatisk den tekst, du skriver på din telefon, vælger den musik, som din foretrukne musikapp spiller, og den husker dine adgangskoder, når du har glemt dem. AI refererer til en kombination af maskinlæring, robotteknik og algoritmer, med applikationer inden for alle områder: Fra datalogi til fremstilling og fra medicin til mode. Derfor har den en ubestridelig plads i vores liv og i vores samfund, og den spiller en vigtig rolle i videnskabens udvikling. Og som alle andre vigtige fænomener i vores liv vil elever drage fordel af at lære om den. Men hvordan skal man undervise i sådan en kompleks ting som AI?',
+                '2' => 'Denne læringsdel vil hjælpe dig med at forklare eleverne, hvad AI er, og hvilken rolle den spiller i elevernes liv. Disse aktiviteter er udviklet sådan, at ikke-eksperter nemt kan forstå indholdet og blive i stand til effektivt at nedbryde komplekse termer til letforståelige ideer. Med disse lektionsplaner kan du hjælpe eleverne med at lære om brugen af AI og nogle af mekanismerne bag den. Disse aktiviteter er udviklet sådan, at eleverne kan udvikle deres færdigheder i analytisk og kritisk tænkning: I Marjanas aktivitet udvikler eleverne for eksempel en klassifikationsudvikler. Disse aktiviteter hjælper også eleverne med at forstå de forskellige anvendelser af AI: I Arturs aktivitet lærer de om forbindelsen mellem AI og kunst, og hvordan AI kan bruges til at forbedre det visuelle udtryk. Med disse aktiviteter vil eleverne også reflektere over farerne ved AI og deres effekt.',
             ],
-            "activities" => [
-                "1" => "Human AI-kunst, for folkeskolen",
-                "2" => "At lære maskiner at klassificere: Introduktion til superviseret maskinlæring, for elever i alderen 11-14 år",
-                "3" => "At lære maskiner at klassificere: Introduktion til superviseret maskinlæring, for elever i alderen 14-18 år",
-            ]
+            'activities' => [
+                '1' => 'Human AI-kunst, for folkeskolen',
+                '2' => 'At lære maskiner at klassificere: Introduktion til superviseret maskinlæring, for elever i alderen 11-14 år',
+                '3' => 'At lære maskiner at klassificere: Introduktion til superviseret maskinlæring, for elever i alderen 14-18 år',
+            ],
         ],
 
         '14' => [
@@ -242,83 +242,83 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
             'author' => 'af Adil Tugyan, Georgia Lascaris og Marco Neves',
             'text' => [
                 '1' => 'Udviklingen af AI i de senere år har været imponerende takket være hurtige fremskridt inden for computerkraft og tilgængeligheden af store mængder data. Dette har ført til betydelige investeringer i AI-forskning og en hurtig udvidelse af AI-branchen, hvilket gør AI til en stor teknologisk revolution i vor tid. AI er overalt omkring os. Det er blevet en del af vores daglige rutine, så meget, at vi nogle gange ikke tænker på det som AI: Vi bruger online-anbefalinger, ansigtsgenkendelse, sikkerhedssystemer og stemmeassistenter næsten hver dag. Men hvad med uddannelse?',
-                '2' => 'AI har et enormt potentiale til at skabe nye måder at undervise og lære på og forbedre elevernes læring. Denne læringsdel hjælper dig med at integrere autentiske AI-aktiviteter i din undervisning og hjælper dig med at forberede dine elever til livet og karrieren i en verden formet af AI. Disse aktiviteter er designet til, at eleverne kan udvikle deres nysgerrighed, problemløsning og kreativitet: I Adils aktivitet lærer eleverne for eksempel om algoritmer og neurale netværk, og de opfordres til at oprette deres eget neurale netværk for at visualisere en AI-hjerne. Georgia vil guide dine elever i en trinvis udvikling af en chatbot. Eleverne vil bygge deres egen chatbot, forberede datasæt med spørgsmål og svar og træne den, så den kan besvare spørgsmål om Covid-19. I Marcos aktivitet vil eleverne udforske fordelene og udfordringerne ved intelligente maskiner i hverdagen og i arbejdslivet. Hvad er de risici ved AI, som vi er nødt til at overveje? Hvilken indvirkning vil AI have på fremtidens arbejde? Hvilke job vil de kunne få, når de kommer ind på arbejdsmarkedet i fremtiden?'
+                '2' => 'AI har et enormt potentiale til at skabe nye måder at undervise og lære på og forbedre elevernes læring. Denne læringsdel hjælper dig med at integrere autentiske AI-aktiviteter i din undervisning og hjælper dig med at forberede dine elever til livet og karrieren i en verden formet af AI. Disse aktiviteter er designet til, at eleverne kan udvikle deres nysgerrighed, problemløsning og kreativitet: I Adils aktivitet lærer eleverne for eksempel om algoritmer og neurale netværk, og de opfordres til at oprette deres eget neurale netværk for at visualisere en AI-hjerne. Georgia vil guide dine elever i en trinvis udvikling af en chatbot. Eleverne vil bygge deres egen chatbot, forberede datasæt med spørgsmål og svar og træne den, så den kan besvare spørgsmål om Covid-19. I Marcos aktivitet vil eleverne udforske fordelene og udfordringerne ved intelligente maskiner i hverdagen og i arbejdslivet. Hvad er de risici ved AI, som vi er nødt til at overveje? Hvilken indvirkning vil AI have på fremtidens arbejde? Hvilke job vil de kunne få, når de kommer ind på arbejdsmarkedet i fremtiden?',
             ],
             'activities' => [
                 'title' => 'I undervisningsplanerne nedenfor lærer eleverne om intelligente maskiner på en sjov og engagerende måde.',
                 '1' => 'Kunstig intelligens (AI) og dets neurale netværk, til folkeskolen',
                 '2' => 'Min Covid-19-chatbot, til ungdomsuddannelser',
                 '3' => 'Et liv med "smart-maskiner": Udfordringer og muligheder, til ungdomsuddannelser',
-            ]
+            ],
         ],
 
-        "15" => [
-            "title" => "Mining Mediekendskab",
-            "author" => "af Marijana Smolčec, Tea Horvatić og SanjaBožinović",
-            "text" => [
-                "Undervisning i mediekendskab har aldrig været vigtigere for nutidens elever. Elever i alle aldre har brug for at få relevante færdigheder, viden og holdninger for at kunne navigere i vores mediarige verden. Mediekendskab vil hjælpe dem med at bruge troværdigt onlineindhold og genkende vildledende informationskilder. De vil forstå, hvordan de tjekker oplysninger, de finder online, og fortolker dem kritisk. De vil øge deres bevidsthed om korrekt brug af kreativt værk og anvende deres læring, når de skaber deres eget kreative indhold.",
-                "Denne indlærings-bit giver dig mulighed for at implementere forskellige strategier og teknikker for at give dine elever mulighed for at blive mere mediekyndige. I Marijanas aktivitet lærer eleverne, hvordan man bruger webindhold sikkert og ansvarligt. De introduceres til forskellige typer licenser, og de udvikler en simpel app til at demonstrere, hvordan man deler kreative værker korrekt. I Teas aktivitet tager eleverne på en rejse for at lære om clickbaits. Gennem engagerende opgaver undersøger eleverne strategier til at identificere og afdække clickbaits og lære at undgå dem. Sanja giver eleverne mulighed for at udforske og kritisk analysere og evaluere webindhold, dets relevans, nøjagtighed, oprindelse og formål. De lærer, hvordan man finder pålidelige kilder online, og hvordan man genkender falske onlineoplysninger.",
-                "I lektionsplanerne nedenfor finder du inspirerende og engagerende aktiviteter til forbedring af elevernes mediekendskab:",
+        '15' => [
+            'title' => 'Mining Mediekendskab',
+            'author' => 'af Marijana Smolčec, Tea Horvatić og SanjaBožinović',
+            'text' => [
+                'Undervisning i mediekendskab har aldrig været vigtigere for nutidens elever. Elever i alle aldre har brug for at få relevante færdigheder, viden og holdninger for at kunne navigere i vores mediarige verden. Mediekendskab vil hjælpe dem med at bruge troværdigt onlineindhold og genkende vildledende informationskilder. De vil forstå, hvordan de tjekker oplysninger, de finder online, og fortolker dem kritisk. De vil øge deres bevidsthed om korrekt brug af kreativt værk og anvende deres læring, når de skaber deres eget kreative indhold.',
+                'Denne indlærings-bit giver dig mulighed for at implementere forskellige strategier og teknikker for at give dine elever mulighed for at blive mere mediekyndige. I Marijanas aktivitet lærer eleverne, hvordan man bruger webindhold sikkert og ansvarligt. De introduceres til forskellige typer licenser, og de udvikler en simpel app til at demonstrere, hvordan man deler kreative værker korrekt. I Teas aktivitet tager eleverne på en rejse for at lære om clickbaits. Gennem engagerende opgaver undersøger eleverne strategier til at identificere og afdække clickbaits og lære at undgå dem. Sanja giver eleverne mulighed for at udforske og kritisk analysere og evaluere webindhold, dets relevans, nøjagtighed, oprindelse og formål. De lærer, hvordan man finder pålidelige kilder online, og hvordan man genkender falske onlineoplysninger.',
+                'I lektionsplanerne nedenfor finder du inspirerende og engagerende aktiviteter til forbedring af elevernes mediekendskab:',
             ],
-            "activities" => [
-                "1" => "Er det gratis, hvis det er på Internettet?",
-                "2" => "At klikke eller ikke klikke",
-                "3" => "Kontrol af fakta",
-            ]
+            'activities' => [
+                '1' => 'Er det gratis, hvis det er på Internettet?',
+                '2' => 'At klikke eller ikke klikke',
+                '3' => 'Kontrol af fakta',
+            ],
         ],
-        "16" => [
-            "title" => "HISTORIEFORTÆLLING MED HEDY",
-            "author" => "af Felienne Hermans",
-            "text" => [
-                "Har dine elever allerede styr på et visuelt programmeringssprog, men føler sig endnu ikke klar til at dykke dybere ned i et tekstbaseret programmeringssprog? Så er denne undervisningsbid lige noget for dig og dine elever, da det vil hjælpe dem med at bygge bro mellem et visuelt og et tekstbaseret programmeringssprog. Undervisningsbidden <strong>Historiefortælling med Hedy</strong> består af tre læreplaner, som bruger Hedy – et gradueret programmeringssprog, der kan lære børn at programmere.",
+        '16' => [
+            'title' => 'HISTORIEFORTÆLLING MED HEDY',
+            'author' => 'af Felienne Hermans',
+            'text' => [
+                'Har dine elever allerede styr på et visuelt programmeringssprog, men føler sig endnu ikke klar til at dykke dybere ned i et tekstbaseret programmeringssprog? Så er denne undervisningsbid lige noget for dig og dine elever, da det vil hjælpe dem med at bygge bro mellem et visuelt og et tekstbaseret programmeringssprog. Undervisningsbidden <strong>Historiefortælling med Hedy</strong> består af tre læreplaner, som bruger Hedy – et gradueret programmeringssprog, der kan lære børn at programmere.',
 
-                "Hedy er målrettet børn, som gerne vil komme i gang med tekstbaserede programmeringssprog, men for hvem det måske stadig er for komplekst at gå i gang med Python. Graduerede sprog bruger forskellige sprogniveauer, hvor hvert niveau tilføjer nye koncepter og syntaktisk kompleksitet. Når hver niveausekvens i Hedy er gennemført, har eleven lært en delmængde af syntaktisk gyldigt Python.",
+                'Hedy er målrettet børn, som gerne vil komme i gang med tekstbaserede programmeringssprog, men for hvem det måske stadig er for komplekst at gå i gang med Python. Graduerede sprog bruger forskellige sprogniveauer, hvor hvert niveau tilføjer nye koncepter og syntaktisk kompleksitet. Når hver niveausekvens i Hedy er gennemført, har eleven lært en delmængde af syntaktisk gyldigt Python.',
 
-                "I denne undervisningsbid finder du inspirerende og engagerende aktiviteter, som kan hjælpe dine elever med at bruge tekstbaserede programmeringssprog effektivt. Ved at skabe deres egne interaktive historier vil de gradvist lære at programmere, uden at skulle lære det hele på én gang. I læreplanen for mellemtrinnet introduceres eleverne for de grundlæggende koncepter ved programmering. Læreplanen for udskolingen introducerer flere programmeringskoncepter, og læreplanen for ungdomsuddannelser sætter eleverne i stand til at programmere mere komplekse historier og aktiviteter.",
+                'I denne undervisningsbid finder du inspirerende og engagerende aktiviteter, som kan hjælpe dine elever med at bruge tekstbaserede programmeringssprog effektivt. Ved at skabe deres egne interaktive historier vil de gradvist lære at programmere, uden at skulle lære det hele på én gang. I læreplanen for mellemtrinnet introduceres eleverne for de grundlæggende koncepter ved programmering. Læreplanen for udskolingen introducerer flere programmeringskoncepter, og læreplanen for ungdomsuddannelser sætter eleverne i stand til at programmere mere komplekse historier og aktiviteter.',
 
-                "Den interaktive historie nedenfor viser, hvordan læserne kan deltage i historien, og hvordan det fremmer deres aktive engagement."
+                'Den interaktive historie nedenfor viser, hvordan læserne kan deltage i historien, og hvordan det fremmer deres aktive engagement.',
             ],
-            "activities" => [
-                "1" => "Lav din egen interaktive historie med Hedy til elever på mellemtrinnet",
-                "2" => "Lav din egen interaktive historie med Hedy til elever i udskolingen",
-                "3" => "Lav din egen interaktive historie med Hedy til elever på ungdomsuddannelser",
-            ]
+            'activities' => [
+                '1' => 'Lav din egen interaktive historie med Hedy til elever på mellemtrinnet',
+                '2' => 'Lav din egen interaktive historie med Hedy til elever i udskolingen',
+                '3' => 'Lav din egen interaktive historie med Hedy til elever på ungdomsuddannelser',
+            ],
         ],
-        "17" => [
-            "title" => "Føl koden",
-            "author" => "af Alenka Miljević",
-            "text" => [
-                "Socialt og følelsesmæssigt velvære handler om at kunne stå imod, at vide, hvordan man skal håndtere sine følelser og reagere på andre menneskers følelser, at udvikle meningsfulde relationer til andre, at generere følelser der giver velbehag og at skabe sit eget følelsesmæssige støttenetværk. De sociale og følelsesmæssige kompetencer, som unge lærer i skolen, hjælper dem med at opbygge modstandsdygtighed og skabe et mønster for, hvordan de vil håndtere deres fysiske og mentale velvære igennem hele livet. (Europarådet)",
-                "Undervisningsbidden Føl koden vil sætte dig i stand til at styrke elevernes sociale og følelsesmæssige velvære ved at anerkende, forklare, forstå og reagere på positive og negative følelser for at kunne opbygge empati og modstandskraft. I denne undervisningsbid finder du inspirerende og engagerende aktiviteter, som kan hjælpe dine elever med at udvikle kompetencer til at håndtere forskellige følelser gennem kodning. Eleverne lærer at udtrykke deres følelser og hvordan de kan reagere på deres klassekammeraters følelser ved hjælp af Bee-Bot-robotten.",
-                "Undervisningsbidden Føl koden består af tre læreplaner, der bruger en Bee-Bot-undervisningsrobot til at lave aktiviteter, som tilskynder eleverne til at tale om følelser og udvikle empati. I læreplanen til indskolingen og mellemtrinnet programmerer eleverne en Bee-Bot for at tale om følelser såsom at være ked af det, glad, bange og vred og for at finde ud af, hvorfor de og deres klassekammerater har disse følelser. Læreplanen for udskolingen tilskynder eleverne til at programmere en Bee-Bot, anerkende deres egne og deres klassekammeraters følelser og forstå årsagen til dem og hvordan man kan reagere på dem. Læreplanen til elever på ungdomsuddannelser sætter eleverne i stand til at navigere en Bee-Bot og lave historier om følelser, modstandskraft og empati.",
-                "Hvis du ikke har en undervisningsrobot i klasseværelset, giver denne undervisningsbid dig idéer til aktiviteter uden brug af computer, der vil styrke udviklingen af sociale og følelsesmæssige kompetencer. Den interaktive historie herunder giver en kort oversigt over de aktiviteter, I kan lave i klasseværelset:"
+        '17' => [
+            'title' => 'Føl koden',
+            'author' => 'af Alenka Miljević',
+            'text' => [
+                'Socialt og følelsesmæssigt velvære handler om at kunne stå imod, at vide, hvordan man skal håndtere sine følelser og reagere på andre menneskers følelser, at udvikle meningsfulde relationer til andre, at generere følelser der giver velbehag og at skabe sit eget følelsesmæssige støttenetværk. De sociale og følelsesmæssige kompetencer, som unge lærer i skolen, hjælper dem med at opbygge modstandsdygtighed og skabe et mønster for, hvordan de vil håndtere deres fysiske og mentale velvære igennem hele livet. (Europarådet)',
+                'Undervisningsbidden Føl koden vil sætte dig i stand til at styrke elevernes sociale og følelsesmæssige velvære ved at anerkende, forklare, forstå og reagere på positive og negative følelser for at kunne opbygge empati og modstandskraft. I denne undervisningsbid finder du inspirerende og engagerende aktiviteter, som kan hjælpe dine elever med at udvikle kompetencer til at håndtere forskellige følelser gennem kodning. Eleverne lærer at udtrykke deres følelser og hvordan de kan reagere på deres klassekammeraters følelser ved hjælp af Bee-Bot-robotten.',
+                'Undervisningsbidden Føl koden består af tre læreplaner, der bruger en Bee-Bot-undervisningsrobot til at lave aktiviteter, som tilskynder eleverne til at tale om følelser og udvikle empati. I læreplanen til indskolingen og mellemtrinnet programmerer eleverne en Bee-Bot for at tale om følelser såsom at være ked af det, glad, bange og vred og for at finde ud af, hvorfor de og deres klassekammerater har disse følelser. Læreplanen for udskolingen tilskynder eleverne til at programmere en Bee-Bot, anerkende deres egne og deres klassekammeraters følelser og forstå årsagen til dem og hvordan man kan reagere på dem. Læreplanen til elever på ungdomsuddannelser sætter eleverne i stand til at navigere en Bee-Bot og lave historier om følelser, modstandskraft og empati.',
+                'Hvis du ikke har en undervisningsrobot i klasseværelset, giver denne undervisningsbid dig idéer til aktiviteter uden brug af computer, der vil styrke udviklingen af sociale og følelsesmæssige kompetencer. Den interaktive historie herunder giver en kort oversigt over de aktiviteter, I kan lave i klasseværelset:',
             ],
-            "activities" => [
-                "1" => "Kod – Føl – Lær til elever i indskolingen og på mellemtrinnet",
-                "2" => "Mit hjerte er ikke lavet af sten til elever i udskolingen",
-                "3" => "Kod mig i stemning til elever på ungdomsuddannelser",
-            ]
+            'activities' => [
+                '1' => 'Kod – Føl – Lær til elever i indskolingen og på mellemtrinnet',
+                '2' => 'Mit hjerte er ikke lavet af sten til elever i udskolingen',
+                '3' => 'Kod mig i stemning til elever på ungdomsuddannelser',
+            ],
         ],
-        "18" => [
+        '18' => [
 
-            "title" => "SOS vand",
-            "author" => "af Francisco Delgado Cecilia",
-            "text" => [
+            'title' => 'SOS vand',
+            'author' => 'af Francisco Delgado Cecilia',
+            'text' => [
 
-                "SOS vand er et svar på behovet for at tage fat på problemet med vandforurening. På trods af den indsats, der er iværksat gennem de seneste år, er der stadig 2 milliarder mennesker i verden, som ikke har adgang til rent drikkevand. Det betyder, at vi er langt fra at have nået verdensmål for bæredygtig udvikling (SDG) nr. 6 i dagsordenen for 2030, som fastsætter, at alle skal have adgang til rent vand og sanitet senest i 2030. Det samme gælder SDG 14, livet i havet, hvis mål er bæredygtig udvikling med bevaring og bæredygtig brug af havene og havressourcerne.",
+                'SOS vand er et svar på behovet for at tage fat på problemet med vandforurening. På trods af den indsats, der er iværksat gennem de seneste år, er der stadig 2 milliarder mennesker i verden, som ikke har adgang til rent drikkevand. Det betyder, at vi er langt fra at have nået verdensmål for bæredygtig udvikling (SDG) nr. 6 i dagsordenen for 2030, som fastsætter, at alle skal have adgang til rent vand og sanitet senest i 2030. Det samme gælder SDG 14, livet i havet, hvis mål er bæredygtig udvikling med bevaring og bæredygtig brug af havene og havressourcerne.',
 
-                "Denne undervisningsbid fokuserer på det relevante og aktuelle emne måling af vandkvalitet og de nye forurenende stoffer, som ændrer vandkvaliteten. Eleverne vil få mulighed for at undersøge og finde løsninger på faktiske problemer vedrørende vand og miljøet, hvilket vil sætte dem i stand til at udvikle kompetencer inden for forarbejde, kritisk tænkning og problemløsning.",
+                'Denne undervisningsbid fokuserer på det relevante og aktuelle emne måling af vandkvalitet og de nye forurenende stoffer, som ændrer vandkvaliteten. Eleverne vil få mulighed for at undersøge og finde løsninger på faktiske problemer vedrørende vand og miljøet, hvilket vil sætte dem i stand til at udvikle kompetencer inden for forarbejde, kritisk tænkning og problemløsning.',
 
-                "Læreplanerne indeholder praktiske og kreative aktiviteter, som for eksempel programmering i Scratch, introduktion til maskinlæring og kunstig intelligens med Learning Machine Learning og konstruktion af styrede køretøjer med LEGO-sæt, som kan tage vandprøver og analysere vandets pH-værdi. Disse aktiviteter vil give eleverne mulighed for at omsætte deres kompetencer og viden til praksis i et interaktivt og legende miljø, hvilket vil øge motivationen og interessen for projektet.",
+                'Læreplanerne indeholder praktiske og kreative aktiviteter, som for eksempel programmering i Scratch, introduktion til maskinlæring og kunstig intelligens med Learning Machine Learning og konstruktion af styrede køretøjer med LEGO-sæt, som kan tage vandprøver og analysere vandets pH-værdi. Disse aktiviteter vil give eleverne mulighed for at omsætte deres kompetencer og viden til praksis i et interaktivt og legende miljø, hvilket vil øge motivationen og interessen for projektet.',
 
-                "Ved afholdelse af denne undervisningsbid foreslår vi, at de tre aktiviteter foregår i klassen, så hele projektet gennemføres, og læringsprocessen bliver mere meningsfuld og motiverende. De enkelte aktiviteter kan dog afholdes hver for sig."
+                'Ved afholdelse af denne undervisningsbid foreslår vi, at de tre aktiviteter foregår i klassen, så hele projektet gennemføres, og læringsprocessen bliver mere meningsfuld og motiverende. De enkelte aktiviteter kan dog afholdes hver for sig.',
 
             ],
-            "activities" => [
-                "1" => "SOS vand med Scratch",
-                "2" => "SOS vand med maskinlæring",
-                "3" => "SOS vand med robotteknik",
-            ]
+            'activities' => [
+                '1' => 'SOS vand med Scratch',
+                '2' => 'SOS vand med maskinlæring',
+                '3' => 'SOS vand med robotteknik',
+            ],
 
         ],
         "19" => [
@@ -341,7 +341,6 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
             ]
         ],
 
-
     ],
     'download_video_script' => 'Download videoscriptet',
     'ready_to_share' => 'Er du klar til at dele det, du har lært, med dine elever?',
@@ -350,7 +349,7 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
         'title' => 'Glem ikke at tilføje din aktivitet på kodeugekortet!',
         'text' => '<p>Det er let at afholde en lektion i klasseværelset, en åbent hus-dag eller et arrangement på skolen. Du skal bare vælge en dato og registrere aktiviteten på <a href="/events">kodeugekortet</a>. Alle, der afholder en aktivitet, får et certifikat for deltagelse som tak for indsatsen.</p>
 
-<p>Hvis du gerne vil i kontakt med en international gruppe af engagerede lærere, kan du tilmelde dig <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU’s kodeuges Facebookgruppe for lærere</a>! Gå trinnet videre, og samarbejd med andre skoler i dit land eller andre lande – vær med i <a href="/codeweek4all">Code Week 4 All-udfordringen</a>.</p>'
-    ]
+<p>Hvis du gerne vil i kontakt med en international gruppe af engagerede lærere, kan du tilmelde dig <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU’s kodeuges Facebookgruppe for lærere</a>! Gå trinnet videre, og samarbejd med andre skoler i dit land eller andre lande – vær med i <a href="/codeweek4all">Code Week 4 All-udfordringen</a>.</p>',
+    ],
 
 ];

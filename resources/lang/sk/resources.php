@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Ako usporiadať aktivitu?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Ruština',
-            'Norwegian'=>'Nórčina',
-            'Mandarin'=>'Čínština',
-            'Japanese'=>'Japončina',
-            'All targeted languages' => 'Všetky cieľové jazyky'
+            'Russian' => 'Ruština',
+            'Norwegian' => 'Nórčina',
+            'Mandarin' => 'Čínština',
+            'Japanese' => 'Japončina',
+            'All targeted languages' => 'Všetky cieľové jazyky',
         ],
         'levels' => [
             'Beginner' => 'Začiatočník',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Základná škola (12 – 16)',
             'Upper secondary school (16-18)' => 'Stredná škola (16 – 18)',
             'Higher Education' => 'Vyššie vzdelávanie',
-            'Other' => 'Iné'
+            'Other' => 'Iné',
         ],
         'subjects' => [
             'Art' => 'Umenie',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fyzika',
             'Coding' => 'Programovanie',
             'Special Education Needs' => 'Osobitné vzdelávacie potreby',
-            'Other' => 'Iné'
+            'Other' => 'Iné',
         ],
         'types' => [
             'Tutorial' => 'Návod',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Súbor nástrojov',
             'Other' => 'Iné',
             'Lesson Plan' => 'Plán vyučovacej hodiny',
-            'Guide' => 'Príručka'
+            'Guide' => 'Príručka',
         ],
         'categories' => [
             'Coding' => 'Programovanie',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Výroba',
             'Tinkering' => 'Majstrovanie',
             'Unplugged Activities' => 'Aktivity bez počítača',
-            'Other' => 'Iné'
-        ]
-    ]
+            'Other' => 'Iné',
+        ],
+    ],
 
 ];

@@ -7,7 +7,7 @@
         <input id="{{$field_name}}"
                type="{{$type}}"
                name="{{$field_name}}"
-               wire:model="{{$field_name}}"
+               wire:model.live="{{$field_name}}"
         >
     </div>
     @if(!is_null($info ?? ''))

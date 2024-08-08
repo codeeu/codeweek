@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Kā organizēt pasākumu?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Krievu valoda',
-            'Norwegian'=>'Norvēģu valoda',
-            'Mandarin'=>'Mandarīnu valoda',
-            'Japanese'=>'Japāņu valoda',
-            'All targeted languages' => 'Visas mērķa valodas'
+            'Russian' => 'Krievu valoda',
+            'Norwegian' => 'Norvēģu valoda',
+            'Mandarin' => 'Mandarīnu valoda',
+            'Japanese' => 'Japāņu valoda',
+            'All targeted languages' => 'Visas mērķa valodas',
         ],
         'levels' => [
             'Beginner' => 'Iesācēja līmenis',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Pamatskola (12–16 g.)',
             'Upper secondary school (16-18)' => 'Vidusskola (16–18 g.)',
             'Higher Education' => 'Augstākā izglītība',
-            'Other' => 'Cits'
+            'Other' => 'Cits',
         ],
         'subjects' => [
             'Art' => 'Māksla',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fizika',
             'Coding' => 'Programmēšana',
             'Special Education Needs' => 'Īpašas izglītības vajadzības',
-            'Other' => 'Cits'
+            'Other' => 'Cits',
         ],
         'types' => [
             'Tutorial' => 'Pamācība',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Rīkkopa',
             'Other' => 'Cits',
             'Lesson Plan' => 'Stundu plāns',
-            'Guide' => 'Rokasgrāmata'
+            'Guide' => 'Rokasgrāmata',
         ],
         'categories' => [
             'Coding' => 'Kodēšana',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Radošas nodarbības',
             'Tinkering' => 'Eksperimenti',
             'Unplugged Activities' => 'Aktivitātes bez datora',
-            'Other' => 'Cits'
-        ]
-    ]
+            'Other' => 'Cits',
+        ],
+    ],
 
 ];

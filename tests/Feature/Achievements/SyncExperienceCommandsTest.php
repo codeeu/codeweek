@@ -2,36 +2,29 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use App\Achievements\Events\UserEarnedExperience;
-use App\User;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Facades\Event;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class SyncExperienceCommandsTest extends TestCase
+final class SyncExperienceCommandsTest extends TestCase
 {
+    use DatabaseMigrations;
 
-    use RefreshDatabase;
-
-
-    /** @test */
-    public function leading_teacher_activity_achievement_command()
+    #[Test]
+    public function leading_teacher_activity_achievement_command(): void
     {
 
         $this->seed('LeadingTeacherRoleSeeder');
 
+        $user = \App\User::factory()->create()->assignRole('leading teacher');
 
-        $user = factory(User::class)->create()->assignRole('leading teacher');
-
-
-        create('App\Event', [
+        \App\Event::factory()->count(5)->create([
             'creator_id' => $user->id,
             'created_at' => Carbon::now()->setYear(2021),
             'status' => 'APPROVED',
             'reported_at' => Carbon::now()->setYear(2021),
-        ], 5);
+        ]);
 
         $this->assertCount(0, $user->fresh()->achievements);
 
@@ -43,8 +36,5 @@ class SyncExperienceCommandsTest extends TestCase
 
         $this->assertCount(1, $user->fresh()->achievements);
 
-
     }
-
-
 }

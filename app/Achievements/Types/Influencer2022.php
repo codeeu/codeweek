@@ -2,12 +2,12 @@
 
 namespace App\Achievements\Types;
 
-use Illuminate\Support\Facades\Log;
-
 class Influencer2022 extends AchievementType
 {
     public $icon = 'influencer/Influencer_normal_small.png';
+
     public $edition = 2022;
+
     public $name = 'Influencer 2022';
 
     public function description()
@@ -19,6 +19,4 @@ class Influencer2022 extends AchievementType
     {
         return $user->influence($this->edition) >= 10;
     }
-
-
 }

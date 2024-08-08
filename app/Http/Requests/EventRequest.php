@@ -2,55 +2,52 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Statement;
 use App\Rules\validAudience;
 use App\Rules\validTheme;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Lang;
 
 class EventRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
-     *
-     * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
 
     /**
      * Get the validation rules that apply to the request.
-     *
-     * @return array
      */
-    public function rules()
+    public function rules(): array
     {
-        $languages = array_keys(Lang::get('base.languages'));
+        //dd(Lang::get('base.languages'));
+        //$languages = array_keys(Lang::get('base.languages'));
+        $languages = config('app.locales');
+
         return [
             'activity_type' => 'required',
             'title' => 'required|min:5',
             'description' => 'required|min:5',
             'organizer' => 'required',
             'location' => 'required_unless:activity_type,open-online,invite-online',
-            "event_url" => 'required_if:activity_type,open-online,invite-online',
+            'event_url' => 'required_if:activity_type,open-online,invite-online',
             'language' => ['required', $this->in($languages)],
             'start_date' => 'required',
             'end_date' => 'required|after:start_date',
-            'audience' => ['required',new ValidAudience],
-            'theme' => ['required',new ValidTheme],
+            'audience' => ['required', new ValidAudience],
+            'theme' => ['required', new ValidTheme],
             'country_iso' => 'required|exists:countries,iso',
             'user_email' => 'required',
             'organizer_type' => 'required',
             'privacy' => 'required',
-            'leading_teacher_tag' => 'nullable'
+            'leading_teacher_tag' => 'nullable',
 
         ];
     }
 
-    public function messages()
+    public function messages(): array
     {
         return [
             'title.required' => 'Please enter a title for your event.',
@@ -68,9 +65,8 @@ class EventRequest extends FormRequest
         ];
     }
 
-
     private function in($array): string
     {
-        return 'in:' . implode(',', $array);
+        return 'in:'.implode(',', $array);
     }
 }

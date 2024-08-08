@@ -8,11 +8,9 @@ use Laravel\Nova\Metrics\Value;
 
 class EventCount extends Value
 {
-
     /**
      * Calculate the value of the metric.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return mixed
      */
     public function calculate(Request $request)
@@ -22,10 +20,8 @@ class EventCount extends Value
 
     /**
      * Get the ranges available for the metric.
-     *
-     * @return array
      */
-    public function ranges()
+    public function ranges(): array
     {
         return [
             30 => '30 Days',
@@ -40,7 +36,7 @@ class EventCount extends Value
     /**
      * Determine for how many minutes the metric should be cached.
      *
-     * @return  \DateTimeInterface|\DateInterval|float|int
+     * @return \DateTimeInterface|\DateInterval|float|int
      */
     public function cacheFor()
     {
@@ -49,10 +45,8 @@ class EventCount extends Value
 
     /**
      * Get the URI key for the metric.
-     *
-     * @return string
      */
-    public function uriKey()
+    public function uriKey(): string
     {
         return 'event-count';
     }

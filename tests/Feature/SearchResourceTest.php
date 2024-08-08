@@ -2,59 +2,49 @@
 
 namespace Tests\Feature;
 
-use App\Audience;
-use App\Theme;
-use Carbon\Carbon;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
+use Tests\TestCase;
 
-class SearchResourceTest extends TestCase
+final class SearchResourceTest extends TestCase
 {
     use DatabaseMigrations;
 
     private $item;
+
     private $item2;
 
-    public function setup():void
+    protected function setUp(): void
     {
         parent::setUp();
-        $this->item = create('App\ResourceItem');
-        $this->item2 = create('App\ResourceItem');
-
+        $this->item = \App\ResourceItem::factory()->create();
+        $this->item2 = \App\ResourceItem::factory()->create();
 
     }
 
-
-    /** @test */
-    public function type_should_be_seen()
+    #[Test]
+    public function type_should_be_seen(): void
     {
 
         $this->post('/resources/search', [])
             ->assertSee($this->item->name);
 
-
-
-
     }
 
-
-    /** @test */
-    public function user_can_display_teach_resources()
+    #[Test]
+    public function user_can_display_teach_resources(): void
     {
-        $teachItem = create('App\ResourceItem',["teach"=>1,"learn"=>0]);
-        $learnItem = create('App\ResourceItem',["teach"=>0,"learn"=>1]);
+        $teachItem = \App\ResourceItem::factory()->create(['teach' => 1, 'learn' => 0]);
+        $learnItem = \App\ResourceItem::factory()->create(['teach' => 0, 'learn' => 1]);
 
-
-        $this->post('/resources/search',["selectedSection" => "teach"])
+        $this->post('/resources/search', ['selectedSection' => 'teach'])
             ->assertSee($teachItem->name)
             ->assertDontSee($learnItem->name);
 
-
-
     }
 
-    /** @test */
-    public function no_filters_should_show_all_resources()
+    #[Test]
+    public function no_filters_should_show_all_resources(): void
     {
 
         $this->post('/resources/search', [])
@@ -63,204 +53,167 @@ class SearchResourceTest extends TestCase
 
     }
 
-    /** @test */
-    public function a_user_can_search_resource_by_name()
+    #[Test]
+    public function a_user_can_search_resource_by_name(): void
     {
 
-        $item = create('App\ResourceItem', ["name" => "foobar"]);
-        $item2 = create('App\ResourceItem', ["name" => "rrrghrgrhrgh"]);
+        $item = \App\ResourceItem::factory()->create(['name' => 'foobar']);
+        $item2 = \App\ResourceItem::factory()->create(['name' => 'rrrghrgrhrgh']);
 
-
-
-        $this->post('/resources/search', ["searchInput" => "foo"])
+        $this->post('/resources/search', ['searchInput' => 'foo'])
             ->assertSee($item->name)
             ->assertDontSee($item2->name);
 
-
     }
 
-    /** @test */
-    public function a_user_can_search_resource_by_levels()
+    #[Test]
+    public function a_user_can_search_resource_by_levels(): void
     {
-        $level = create('App\ResourceLevel',["id"=>1]);
-        $level2 = create('App\ResourceLevel');
-
+        $level = create(\App\ResourceLevel::class, ['id' => 1]);
+        $level2 = create(\App\ResourceLevel::class);
 
         $this->item->levels()->attach($level);
         $this->item2->levels()->attach($level2);
 
-        $selectedLevels = array($level);
+        $selectedLevels = [$level];
 
-
-
-        $this->post('/resources/search', ["selectedLevels" => $selectedLevels])
+        $this->post('/resources/search', ['selectedLevels' => $selectedLevels])
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
-
-
     }
 
-    /** @test */
-    public function a_user_can_search_resource_by_types()
+    #[Test]
+    public function a_user_can_search_resource_by_types(): void
     {
-        $type = create('App\ResourceType',["id"=>1]);
-        $type2 = create('App\ResourceType');
-
+        $type = \App\ResourceType::factory()->create(['id' => 1]);
+        $type2 = \App\ResourceType::factory()->create();
 
         $this->item->types()->attach($type);
         $this->item2->types()->attach($type2);
 
+        $selectedTypes = [$type];
 
-        $selectedTypes = array($type);
-
-
-
-        $result = $this->post('/resources/search', compact("selectedTypes") )
+        $result = $this->post('/resources/search', compact('selectedTypes'))
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
-
-
-
     }
 
-
-
-    /** @test */
-    public function a_user_can_search_resource_by_subject()
+    #[Test]
+    public function a_user_can_search_resource_by_subject(): void
     {
 
-        $subject = create('App\ResourceSubject',["id"=>1]);
-        $subject2 = create('App\ResourceSubject');
+        $subject = \App\ResourceSubject::factory()->create(['id' => 1]);
+        $subject2 = \App\ResourceSubject::factory()->create();
 
         $this->item->subjects()->attach($subject);
         $this->item2->subjects()->attach($subject2);
 
-        $selectedSubjects = array($subject);
+        $selectedSubjects = [$subject];
 
-
-
-        $this->post('/resources/search', compact("selectedSubjects"))
+        $this->post('/resources/search', compact('selectedSubjects'))
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
     }
 
-    /** @test */
-    public function a_user_can_search_resource_by_category()
+    #[Test]
+    public function a_user_can_search_resource_by_category(): void
     {
 
-        $category = create('App\ResourceCategory',["id"=>1]);
-        $category2 = create('App\ResourceCategory');
+        $category = create(\App\ResourceCategory::class, ['id' => 1]);
+        $category2 = create(\App\ResourceCategory::class);
 
         $this->item->categories()->attach($category);
         $this->item2->categories()->attach($category2);
 
-        $selectedCategories = array($category);
+        $selectedCategories = [$category];
 
-
-
-        $this->post('/resources/search', compact("selectedCategories"))
+        $this->post('/resources/search', compact('selectedCategories'))
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
     }
 
-    /** @test */
-    public function a_user_can_search_resource_by_languages()
+    #[Test]
+    public function a_user_can_search_resource_by_languages(): void
     {
 
-        $language = create('App\ResourceLanguage',["id"=>1]);
-        $language2 = create('App\ResourceLanguage');
+        $language = create(\App\ResourceLanguage::class, ['id' => 1]);
+        $language2 = create(\App\ResourceLanguage::class);
 
         $this->item->languages()->attach($language);
         $this->item2->languages()->attach($language2);
 
-        $selectedLanguages = array($language);
+        $selectedLanguages = [$language];
 
-
-
-        $this->post('/resources/search', compact("selectedLanguages"))
+        $this->post('/resources/search', compact('selectedLanguages'))
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
     }
 
-    /** @test */
-    public function a_user_can_search_resource_by_programming_languages()
+    #[Test]
+    public function a_user_can_search_resource_by_programming_languages(): void
     {
 
-        $programmingLanguage = create('App\ResourceProgrammingLanguage',["id"=>1]);
-        $programmingLanguage2 = create('App\ResourceProgrammingLanguage');
+        $programmingLanguage = create(\App\ResourceProgrammingLanguage::class, ['id' => 1]);
+        $programmingLanguage2 = create(\App\ResourceProgrammingLanguage::class);
 
         $this->item->programmingLanguages()->attach($programmingLanguage);
         $this->item2->programmingLanguages()->attach($programmingLanguage2);
 
-        $selectedProgrammingLanguages = array($programmingLanguage);
+        $selectedProgrammingLanguages = [$programmingLanguage];
 
-
-
-        $this->post('/resources/search', compact("selectedProgrammingLanguages"))
+        $this->post('/resources/search', compact('selectedProgrammingLanguages'))
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
     }
 
-    /** @test */
-    public function a_user_can_search_resource_by_types_and_language()
+    #[Test]
+    public function a_user_can_search_resource_by_types_and_language(): void
     {
 
-        $type = create('App\ResourceType',["id"=>1]);
-        $type2 = create('App\ResourceType');
-        $language = create('App\ResourceLanguage',["id"=>1]);
-        $language2 = create('App\ResourceLanguage');
-
+        $type = \App\ResourceType::factory()->create(['id' => 1]);
+        $type2 = \App\ResourceType::factory()->create();
+        $language = create(\App\ResourceLanguage::class, ['id' => 1]);
+        $language2 = create(\App\ResourceLanguage::class);
 
         $this->item->types()->attach($type);
         $this->item2->types()->attach($type);
         $this->item->languages()->attach($language);
         $this->item2->languages()->attach($language2);
 
-        $selectedTypes = array($type);
-        $selectedLanguages = array($language);
+        $selectedTypes = [$type];
+        $selectedLanguages = [$language];
 
-
-
-        $this->post('/resources/search', compact(["selectedTypes","selectedLanguages"]) )
+        $this->post('/resources/search', compact(['selectedTypes', 'selectedLanguages']))
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
     }
 
-
-    /** @test */
-    public function no_duplicates_allowed()
+    #[Test]
+    public function no_duplicates_allowed(): void
     {
-        $type = create('App\ResourceType',["id"=>1]);
-        $type2 = create('App\ResourceType');
-        $type3 = create('App\ResourceType');
+        $type = \App\ResourceType::factory()->create(['id' => 1]);
+        $type2 = \App\ResourceType::factory()->create();
+        $type3 = \App\ResourceType::factory()->create();
 
 
         $this->item->types()->attach($type);
         $this->item->types()->attach($type2);
         $this->item->types()->attach($type3);
 
+        $selectedTypes = [$type, $type2, $type3];
 
-        $selectedTypes = array($type,$type2,$type3);
-
-
-
-        $result = $this->post('/resources/search', compact("selectedTypes"));
+        $result = $this->post('/resources/search', compact('selectedTypes'));
 
         $data = $result->decodeResponseJson()['data'];
 
-        $this->assertEquals(1, sizeof($data));
-
-
+        $this->assertEquals(1, count($data));
 
     }
-
 }
-
-

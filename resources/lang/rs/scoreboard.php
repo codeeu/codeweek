@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'U kojim zemljama sve vri od programerskih aktivnosti?',
-    'paragraph'=>'Tabla sa rezultatima je sortirana po broju prijavljenih događaja po stanovništvu, tako da nemojte biti iznenađeni ako vidite neke od manjih zemalja na vrhu liste!',
-    'parcipating_with'=>'sarađuje sa',
-    'events'=>'događaji'
+    'paragraph' => 'Tabla sa rezultatima je sortirana po broju prijavljenih događaja po stanovništvu, tako da nemojte biti iznenađeni ako vidite neke od manjih zemalja na vrhu liste!',
+    'parcipating_with' => 'sarađuje sa',
+    'events' => 'događaji',
 
 ];

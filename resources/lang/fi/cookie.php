@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Tällä sivustolla käytetään evästeitä sivujen selaamisen helpottamiseksi',
-    'accept'=>'Sallin evästeet',
-    'refuse'=>'En salli evästeitä',
+    'accept' => 'Sallin evästeet',
+    'refuse' => 'En salli evästeitä',
     'cookies' => 'Evästeet',
-    'find_out_more_on'=>' ',
+    'find_out_more_on' => ' ',
     'how_we_use' => 'Lisätietoja evästeistä ja asetusten muuttamisesta',
-
 
 ];

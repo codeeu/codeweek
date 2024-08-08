@@ -2,90 +2,92 @@
 
 namespace App\Providers;
 
+use App\Nova\Dashboards\Main;
 use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
 use App\Nova\Metrics\ImporterTrend;
 use App\Nova\Metrics\MeetCodeTrend;
-use App\Nova\Metrics\NewMeetCode;
 use App\Nova\Metrics\UsersPerDay;
-use Laravel\Nova\Nova;
-use Laravel\Nova\Cards\Help;
-
 use Illuminate\Support\Facades\Gate;
+use Laravel\Nova\Menu\MenuSection;
+use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Illuminate\Http\Request;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         parent::boot();
+
+
+//        Nova::mainMenu(function (Request $request) {
+//            return [
+//                MenuSection::dashboard(Main::class)->icon('chart-bar'),
+//
+//                MenuSection::make('Customers', [
+//                    MenuItem::resource(User::class),
+//                    MenuItem::resource(License::class),
+//                ])->icon('user')->collapsable(),
+//
+//                MenuSection::make('Content', [
+//                    MenuItem::resource(Series::class),
+//                    MenuItem::resource(Release::class),
+//                ])->icon('document-text')->collapsable(),
+//            ];
+//        });
     }
 
     /**
      * Register the Nova routes.
-     *
-     * @return void
      */
-    protected function routes()
+    protected function routes(): void
     {
         Nova::routes()
-                ->withAuthenticationRoutes()
-                ->withPasswordResetRoutes()
-                ->register();
+            ->withAuthenticationRoutes()
+            ->withPasswordResetRoutes()
+            ->register();
     }
 
     /**
      * Register the Nova gate.
      *
      * This gate determines who can access Nova in non-local environments.
-     *
-     * @return void
      */
-    protected function gate()
+    protected function gate(): void
     {
         Gate::define('viewNova', function ($user) {
-            return ($user->hasRole('super admin') || $user->hasRole('ambassador') || $user->hasRole('resource editor'));
+            return $user->hasRole('super admin') || $user->hasRole('ambassador') || $user->hasRole('resource editor');
         });
     }
 
     /**
-     * Get the cards that should be displayed on the Nova dashboard.
+     * Get the extra dashboards that should be displayed on the Nova dashboard.
      *
      * @return array
      */
-    protected function cards()
+    protected function dashboards()
     {
         return [
-            new MeetCodeTrend,
-            new ImporterTrend,
-            new EventCount,
-            new EventsPerDay,
-            new UsersPerDay,
-
+            new Main,
         ];
     }
 
     /**
      * Get the tools that should be listed in the Nova sidebar.
-     *
-     * @return array
      */
-    public function tools()
+    public function tools(): array
     {
         return [];
     }
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }

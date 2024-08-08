@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Api;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('events/geobox', 'Api\EventsController@geobox');
-Route::get('events/germany', 'Api\EventsController@germany');
-Route::get('event-detail/{event}', 'Api\EventsController@event');
+Route::get('events/geobox', [Api\EventsController::class, 'geobox']);
+Route::get('events/germany', [Api\EventsController::class, 'germany']);
+Route::get('event-detail/{event}', [Api\EventsController::class, 'event']);

@@ -17,6 +17,6 @@ return [
     'reset' => 'Ditt lösenord har återställts!',
     'sent' => 'Vi har skickat e-post med en länk för lösenordsåterställning!',
     'token' => 'Detta token för återställning av lösenord är ogiltigt.',
-    'user' => "Vi kan inte hitta en användare med den e-postadressen.",
+    'user' => 'Vi kan inte hitta en användare med den e-postadressen.',
 
 ];

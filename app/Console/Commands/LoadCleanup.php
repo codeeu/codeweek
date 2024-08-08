@@ -2,8 +2,6 @@
 
 namespace App\Console\Commands;
 
-
-use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -37,10 +35,8 @@ class LoadCleanup extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Cleanup');
 
@@ -73,10 +69,6 @@ class LoadCleanup extends Command
         Schema::drop('taggit_tag');
         Schema::drop('taggit_taggeditem');
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
-
-
-
-
 
     }
 }

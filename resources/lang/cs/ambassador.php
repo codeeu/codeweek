@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Ambasadoři Evropského týdne programování',
-    'your_current_country'=>'Vaše současná země',
-    'visit_the'=> 'Navštivte',
-    'local_facebook_page'=>'místní facebookovou stránku',
-    'local_website'=>'Místní webové stránky',
-    'ambassadors'=>'Ambasadoři',
-    'no_ambassadors'=>'Žádní ambasadoři zatím nejsou',
-    'countries_with_ambassadors'=>'Země s ambasadory',
-    'why_dont_you_volunteer'=>'Proč se nepřihlásit?'
+    'your_current_country' => 'Vaše současná země',
+    'visit_the' => 'Navštivte',
+    'local_facebook_page' => 'místní facebookovou stránku',
+    'local_website' => 'Místní webové stránky',
+    'ambassadors' => 'Ambasadoři',
+    'no_ambassadors' => 'Žádní ambasadoři zatím nejsou',
+    'countries_with_ambassadors' => 'Země s ambasadory',
+    'why_dont_you_volunteer' => 'Proč se nepřihlásit?',
 
 ];

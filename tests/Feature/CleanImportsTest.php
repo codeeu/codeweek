@@ -7,34 +7,32 @@ use App\Helpers\ImporterHelper;
 use App\Importer;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class CleanImportsTest extends TestCase
+final class CleanImportsTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-    public function setup():void
+    protected function setUp(): void
     {
         parent::setUp();
-        create('App\Event', ["id"=>1000]);
-        create('App\Event', [], 9);
+        \App\Event::factory()->create(['id' => 1000]);
+        \App\Event::factory()->count(9)->create();
 
-
-        create('App\Importer', ["website" => "same", "seen_at" => Carbon::now()], 9);
-        create('App\Importer', ["website" => "same", "event_id" => 1000, "seen_at" => Carbon::now()->subDays(1)], 1);
+        \App\Importer::factory()->count(9)->create(['website' => 'same', 'seen_at' => Carbon::now()]);
+        \App\Importer::factory()->create(['website' => 'same', 'event_id' => 1000, 'seen_at' => Carbon::now()->subDays(1)]);
 
     }
 
-
-    /** @test */
-    function event_id_should_be_set_as_to_be_deleted()
+    #[Test]
+    public function event_id_should_be_set_as_to_be_deleted(): void
     {
-        $this->assertEquals(1000,ImporterHelper::getDeletedEventsIDs()[0]);
+        $this->assertEquals(1000, ImporterHelper::getDeletedEventsIDs()[0]);
     }
 
-    /** @test */
-    function event_should_be_deleted()
+    #[Test]
+    public function event_should_be_deleted(): void
     {
 
         $this->assertCount(10, Event::all());
@@ -44,6 +42,4 @@ class CleanImportsTest extends TestCase
         $this->assertCount(9, Event::all());
 
     }
-
-
 }

@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Zertifikate für ',
-    'no_certificates' => 'Sie haben bisher noch keine Zertifikate.'
+    'no_certificates' => 'Sie haben bisher noch keine Zertifikate.',
 ];

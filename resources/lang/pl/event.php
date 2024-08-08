@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizuj lub wspieraj wydarzenia w swoim mieście',
     'or_contact_your' => 'lub skontaktuj się z',
     'eu_code_week_ambassadors' => 'Ambasadorami Europejskiego Tygodnia Kodowania',
-    'show_events_for'=>'Pokaż wydarzenia dla ',
+    'show_events_for' => 'Pokaż wydarzenia dla ',
     'who' => 'Do kogo skierowane jest wydarzenie?',
     'tags' => 'Tagi',
     'image' => 'Grafika',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Publiczny adres e-mail',
-        'placeholder' => 'Czy chcesz, aby adres e-mail do kontaktu był wyświetlany?'
+        'placeholder' => 'Czy chcesz, aby adres e-mail do kontaktu był wyświetlany?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adres',
         'placeholder' => 'Gdzie będzie się odbywać aktywność?',
     ],
-
 
     'organizertype' => [
         'label' => 'Typ organizacji',
@@ -85,7 +84,7 @@ return [
         'Employed adults' => 'Osoby dorosłe aktywne zawodowo',
         'Unemployed adults' => 'Osoby dorosłe nieaktywne zawodowo',
         'Other (see description)' => 'Inne (patrz opis)',
-          'Teachers' => 'Nauczyciele',
+        'Teachers' => 'Nauczyciele',
     ],
     'theme' => [
         'Basic programming concepts' => 'Podstawowe pojęcia związane z programowaniem',
@@ -106,22 +105,22 @@ return [
         'Augmented reality' => 'Rzeczywistość rozszerzona',
         'Artificial intelligence' => 'Sztuczna inteligencja',
         'Motivation and awareness raising' => 'Zwiększanie motywacji i podnoszenie świadomości',
-        'Promoting diversity' => 'Wspieranie różnorodności'
+        'Promoting diversity' => 'Wspieranie różnorodności',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KOD UCZESTNICTWA W TYGODNIU KODOWANIA DLA WSZYSTKICH',
         'explanation' => 'W tym miejscu wklej kod uczestnictwa w Tygodniu kodowania dla wszystkich „Code Week 4 all” otrzymany od kolegi ze szkoły lub przyjaciela. Jeżeli nie posiadasz kodu, pozostaw pole puste. Więcej informacji na temat Tygodnia kodowania dla wszystkich znajdziesz',
         'link' => 'tutaj',
     ],
-    'thanks_page'=>[
-        'title'=>'Dziękujemy za dodanie wydarzenia!',
-        'phrase1'=>'Jeden z naszych lokalnych ambasadorów sprawdzi Twoje wydarzenie,',
-        'phrase2'=>'aby upewnić się, że wszystko jest w porządku.',
-        'phrase3'=>'Jeżeli masz pytania, skontaktuj się z jednym z naszych',
-        'phrase4'=>'krajowych ambasadorów',
-        'phrase5'=>'lub wyślij do nas wiadomość',
-        'phrase6'=>'e-mail',
-        'phrase7'=>'Możesz udostępnić kod uczestnictwa w Tygodniu kodowania dla wszystkich innym osobom:'
+    'thanks_page' => [
+        'title' => 'Dziękujemy za dodanie wydarzenia!',
+        'phrase1' => 'Jeden z naszych lokalnych ambasadorów sprawdzi Twoje wydarzenie,',
+        'phrase2' => 'aby upewnić się, że wszystko jest w porządku.',
+        'phrase3' => 'Jeżeli masz pytania, skontaktuj się z jednym z naszych',
+        'phrase4' => 'krajowych ambasadorów',
+        'phrase5' => 'lub wyślij do nas wiadomość',
+        'phrase6' => 'e-mail',
+        'phrase7' => 'Możesz udostępnić kod uczestnictwa w Tygodniu kodowania dla wszystkich innym osobom:',
     ],
     'activitytype' => [
         'label' => 'Rodzaj sesji',
@@ -129,10 +128,10 @@ return [
         'open-online' => 'Sesja online - ogólnodostępna',
         'invite-online' => 'Sesja online - na zaproszenie',
         'open-in-person' => 'Sesja offline - ogólnodostępna',
-        'invite-in-person' => 'Sesja offline - na zaproszenie'
+        'invite-in-person' => 'Sesja offline - na zaproszenie',
 
     ],
-    'privacy'=>'Przeczytałem /Przeczytałam i zgadzam się z warunkami polityki prywatności opisanymi w tym dokumencie.',
+    'privacy' => 'Przeczytałem /Przeczytałam i zgadzam się z warunkami polityki prywatności opisanymi w tym dokumencie.',
     'country' => 'Kraj',
     'loading' => 'Ładowanie…',
     'add_activity' => 'Dodaj aktywność',
@@ -148,10 +147,5 @@ return [
     'view_your_certificate' => 'Zobacz swój certyfikat',
     'submit_event_and_report' => 'Prześlij sprawozdanie z tego wydarzenia, aby otrzymać certyfikat Tygodnia Kodowania.',
     'report_and_claim' => 'Zgłoś wydarzenie i odbierz certyfikat.',
-
-
-
-
-
 
 ];

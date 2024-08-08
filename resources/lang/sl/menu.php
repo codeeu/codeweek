@@ -42,5 +42,5 @@ return [
     'participation' => 'Certifikat o udeležbi',
     'values' => 'Naše vrednote',
     'featured_activities' => 'Izbrane dejavnosti',
-    'codeweek2020' => 'Izdaja 2020'
+    'codeweek2020' => 'Izdaja 2020',
 ];

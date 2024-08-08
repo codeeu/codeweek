@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 
 class CalendarGenerator
 {
-
     protected $request;
-
 
     public function __construct(Request $request)
     {
@@ -28,6 +26,7 @@ class CalendarGenerator
     {
 
         $dt = Carbon::parse($start_date);
+
         return $dt->startOfMonth()->dayOfWeek;
 
     }
@@ -38,7 +37,7 @@ class CalendarGenerator
         $end_date = Carbon::parse($event->end_date);
 
         $start_day = $start_date->day;
-        if($start_date->month == $end_date->month){
+        if ($start_date->month == $end_date->month) {
             $end_day = $end_date->day;
         } else {
             $end_day = $start_date->lastOfMonth()->day;
@@ -47,15 +46,16 @@ class CalendarGenerator
         $firstDay = $start_date->startOfMonth()->dayOfWeek;
         $lastDay = $start_date->lastOfMonth()->day;
 
-        if ($firstDay == 0) $firstDay = 7;
+        if ($firstDay == 0) {
+            $firstDay = 7;
+        }
 
-        list($row, $j) = $this->get_first_week($firstDay, $start_day, $end_day);
+        [$row, $j] = $this->get_first_week($firstDay, $start_day, $end_day);
 
         do {
-            $row .= $this->get_week($j,$lastDay, $start_day, $end_day);
-            $j=$j+7;
+            $row .= $this->get_week($j, $lastDay, $start_day, $end_day);
+            $j = $j + 7;
         } while ($j <= $lastDay);
-
 
         return $row;
 
@@ -63,35 +63,30 @@ class CalendarGenerator
 
     public function get_week($start, $lastDay, $start_day, $end_day)
     {
-        $row = "<tr>";
+        $row = '<tr>';
         for ($i = $start; $i < $start + 7; $i++) {
-            if($i <= $lastDay){
-                if($i>=$start_day && $i<=$end_day){
-                    $row .= "<td class=\"sat filled\"><span class=\"dayNumberNoEvents\">" . $i . "</span></td>";
+            if ($i <= $lastDay) {
+                if ($i >= $start_day && $i <= $end_day) {
+                    $row .= '<td class="sat filled"><span class="dayNumberNoEvents">'.$i.'</span></td>';
                 } else {
-                    $row .= "<td class=\"sat\"><span class=\"dayNumberNoEvents\">" . $i . "</span></td>";
+                    $row .= '<td class="sat"><span class="dayNumberNoEvents">'.$i.'</span></td>';
                 }
 
             } else {
-                $row .= "<td class=\"noday\">&nbsp;</td>";
+                $row .= '<td class="noday">&nbsp;</td>';
             }
 
         }
-        $row .= "</tr>";
+        $row .= '</tr>';
+
         return $row;
     }
 
-    /**
-     * @param $firstDay
-     * @param $start_day
-     * @param $end_day
-     * @return array
-     */
     public function get_first_week($firstDay, $start_day, $end_day): array
     {
-        $row = "<tr>";
+        $row = '<tr>';
         for ($i = 1; $i < $firstDay; $i++) {
-            $row .= "<td class=\"noday\">&nbsp;</td>";
+            $row .= '<td class="noday">&nbsp;</td>';
         }
 
         for ($j = 1; $j <= 8 - $i; $j++) {
@@ -103,8 +98,8 @@ class CalendarGenerator
 
         }
 
-        $row .= "</tr>";
-        return array($row, $j);
-    }
+        $row .= '</tr>';
 
+        return [$row, $j];
+    }
 }

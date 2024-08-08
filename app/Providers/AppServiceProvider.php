@@ -2,26 +2,26 @@
 
 namespace App\Providers;
 
+use App\Event;
+use App\Observers\EventObserver;
 use Carbon\Carbon;
-use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\RateLimiter;
-use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 
-class AppServiceProvider extends ServiceProvider {
+class AppServiceProvider extends ServiceProvider
+{
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot() {
+    public function boot(): void
+    {
 
-//        Model::shouldBeStrict(!$this->app->isProduction());
+        //        Model::shouldBeStrict(!$this->app->isProduction());
 
         Password::defaults(function () {
             return Password::min(10)->letters()
@@ -30,8 +30,6 @@ class AppServiceProvider extends ServiceProvider {
                 ->symbols()
                 ->uncompromised();
         });
-
-
 
         View::share('locales', config('app.locales'));
 
@@ -57,10 +55,10 @@ class AppServiceProvider extends ServiceProvider {
         /**
          * Paginate a standard Laravel Collection.
          *
-         * @param int $perPage
-         * @param int $total
-         * @param int $page
-         * @param string $pageName
+         * @param  int  $perPage
+         * @param  int  $total
+         * @param  int  $page
+         * @param  string  $pageName
          * @return array
          */
         Collection::macro('paginate', function (
@@ -71,6 +69,7 @@ class AppServiceProvider extends ServiceProvider {
         ) {
             $page =
                 $page ?: LengthAwarePaginator::resolveCurrentPage($pageName);
+
             return new LengthAwarePaginator(
                 $this->forPage($page, $perPage),
                 $total ?: $this->count(),
@@ -78,22 +77,61 @@ class AppServiceProvider extends ServiceProvider {
                 $page,
                 [
                     'path' => LengthAwarePaginator::resolveCurrentPath(),
-                    'pageName' => $pageName
+                    'pageName' => $pageName,
                 ]
             );
         });
+
+        $this->bootAuth();
+        $this->bootEvent();
     }
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register() {
+    public function register(): void
+    {
         if ($this->app->environment() !== 'production') {
             $this->app->register(
                 \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
             );
         }
+        $this->app->bind(\Illuminate\Contracts\Debug\ExceptionHandler::class, \App\Exceptions\Handler::class);
+    }
+
+    public function bootAuth(): void
+    {
+        Gate::define('report-excellence', function ($user, $edition) {
+
+            $excellences = $user->excellences;
+
+            $collection = $excellences->filter(
+                function ($value, $key) use ($edition) {
+                    return $value->edition == $edition;
+                }
+            );
+
+            return $collection->count() > 0;
+        });
+
+        Gate::define('report-super-organiser', function ($user, $edition) {
+
+            $superOrganisers = $user->superOrganisers;
+
+            $collection = $superOrganisers->filter(
+                function ($value, $key) use ($edition) {
+                    return $value->edition == $edition;
+                }
+            );
+
+            return $collection->count() > 0;
+        });
+
+    }
+
+    public function bootEvent(): void
+    {
+
+        Event::observe(EventObserver::class);
     }
 }

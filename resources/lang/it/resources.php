@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Come organizzare un’attività?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Russo',
-            'Norwegian'=>'Norvegese',
-            'Mandarin'=>'Cinese mandarino',
-            'Japanese'=>'Giapponese',
-            'All targeted languages' => 'Tutte le lingue dei paesi interessati'
+            'Russian' => 'Russo',
+            'Norwegian' => 'Norvegese',
+            'Mandarin' => 'Cinese mandarino',
+            'Japanese' => 'Giapponese',
+            'All targeted languages' => 'Tutte le lingue dei paesi interessati',
         ],
         'levels' => [
             'Beginner' => 'Principiante',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Scuola secondaria di primo grado (dai 12 ai 16 anni)',
             'Upper secondary school (16-18)' => 'Scuola secondaria di secondo grado (dai 16 ai 18 anni)',
             'Higher Education' => 'Istruzione superiore',
-            'Other' => 'Altro'
+            'Other' => 'Altro',
         ],
         'subjects' => [
             'Art' => 'Arte',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fisica',
             'Coding' => 'Programmazione',
             'Special Education Needs' => 'Bisogni educativi speciali',
-            'Other' => 'Altro'
+            'Other' => 'Altro',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Toolkit',
             'Other' => 'Altro',
             'Lesson Plan' => 'Piano della lezione',
-            'Guide' => 'Guida'
+            'Guide' => 'Guida',
         ],
         'categories' => [
             'Coding' => 'Programmazione',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Realizzazione',
             'Tinkering' => 'Apprendimento ludico delle materie scientifiche (tinkering)',
             'Unplugged Activities' => 'Attività unplugged',
-            'Other' => 'Altro'
-        ]
-    ]
+            'Other' => 'Altro',
+        ],
+    ],
 
 ];

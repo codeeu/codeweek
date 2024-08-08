@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Api\Resource;
 
+use App\Http\Controllers\Controller;
 use App\ResourceItem;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class ItemController extends Controller
 {
@@ -31,13 +31,12 @@ class ItemController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         request()->validate([
-            'name' => ['required']
+            'name' => ['required'],
         ]);
 
         return ResourceItem::create($request->toArray());
@@ -46,7 +45,6 @@ class ItemController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ResourceItem  $resourceItem
      * @return \Illuminate\Http\Response
      */
     public function show(ResourceItem $resourceItem)
@@ -57,7 +55,6 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ResourceItem  $resourceItem
      * @return \Illuminate\Http\Response
      */
     public function edit(ResourceItem $resourceItem)
@@ -68,8 +65,6 @@ class ItemController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ResourceItem  $resourceItem
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, ResourceItem $resourceItem)
@@ -80,7 +75,6 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ResourceItem  $resourceItem
      * @return \Illuminate\Http\Response
      */
     public function destroy(ResourceItem $resourceItem)

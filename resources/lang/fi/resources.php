@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Miten tapahtuma järjestetään?',
     'resources' => [
         'languages' => [
-            'Russian'=>'venäjä',
-            'Norwegian'=>'norja',
-            'Mandarin'=>'mandariinikiina',
-            'Japanese'=>'japani',
-            'All targeted languages' => 'Kaikki kohteena olevat kielet'
+            'Russian' => 'venäjä',
+            'Norwegian' => 'norja',
+            'Mandarin' => 'mandariinikiina',
+            'Japanese' => 'japani',
+            'All targeted languages' => 'Kaikki kohteena olevat kielet',
         ],
         'levels' => [
             'Beginner' => 'Vasta-alkaja',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Yläluokat (12–16)',
             'Upper secondary school (16-18)' => 'Keskiaste (16–18)',
             'Higher Education' => 'Korkeakoulu',
-            'Other' => 'Muu'
+            'Other' => 'Muu',
         ],
         'subjects' => [
             'Art' => 'Taide',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fysiikka',
             'Coding' => 'Koodaus',
             'Special Education Needs' => 'Erityisryhmät',
-            'Other' => 'Muu'
+            'Other' => 'Muu',
         ],
         'types' => [
             'Tutorial' => 'Opastus',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Työkalupakki',
             'Other' => 'Muu',
             'Lesson Plan' => 'Opetussuunnitelma',
-            'Guide' => 'Opas'
+            'Guide' => 'Opas',
         ],
         'categories' => [
             'Coding' => 'Koodaus',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Valmistaminen',
             'Tinkering' => 'Tee & opi',
             'Unplugged Activities' => 'Koodaus ilman tietokoneita',
-            'Other' => 'Muu'
-        ]
-    ]
+            'Other' => 'Muu',
+        ],
+    ],
 
 ];
