@@ -19,7 +19,7 @@ return [
         'beginner' => 'Početna razina',
         'intermediate' => 'Srednja razina',
         'advanced' => 'Napredna razina',
-        '1-hour' => '1 sat'
+        '1-hour' => '1 sat',
     ],
     'main' => [
         'Pozivamo vas da tijekom Europskog tjedna programiranja, od 9. do 24. listopada 2021., sudjelujete u barem jednom izazovu Europskog tjedna programiranja.',
@@ -35,7 +35,7 @@ return [
         'Podijelite svoj izazov',
         'Želite li osvojiti nagrade Tjedna programiranja? Ako želite, podijelite svoj rad na internetu!',
         'Nakon što dovršite izazov, objavite ga na Instagramu.',
-        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada. Objavljivat ćemo ih na svojem kanalu na Instagramu, stoga obavezno redovito provjeravajte svoje obavijesti.'
+        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada. Objavljivat ćemo ih na svojem kanalu na Instagramu, stoga obavezno redovito provjeravajte svoje obavijesti.',
     ],
     'share' => [
         'Kako podijeliti izazove na Instagramu?',
@@ -52,7 +52,7 @@ return [
         'Facebooku',
         'prikačiti objavu s novim izazovom te će među komentarima ispod objave odabrati dobitnika nagrade.',
         'Kako to funkcionira?',
-        'Jednostavno, samo komentirajte objavu s poveznicom na vaš rad.'
+        'Jednostavno, samo komentirajte objavu s poveznicom na vaš rad.',
     ],
     'share-box' => [
         'Podijelite poveznicu na svoj rad u',
@@ -67,18 +67,18 @@ return [
         'novu objavu o izazovu na svojoj',
         'Facebook stranici',
         'Tada samo morate komentirati objavu s poveznicom na svoj rad',
-        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada i osvojit će nagrade Tjedna programiranja. Objavljivat ćemo ih na svojim kanalima na Instagramu i Facebooku, stoga obavezno redovito provjeravajte svoje obavijesti.'
+        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada i osvojit će nagrade Tjedna programiranja. Objavljivat ćemo ih na svojim kanalima na Instagramu i Facebooku, stoga obavezno redovito provjeravajte svoje obavijesti.',
     ],
     'take-part' => [
         'Zašto sudjelovati u izazovu Europskog tjedna programiranja?',
         'Radi sudjelovanja u aktivnostima rješavanja problema i programiranja.',
         'Radi suradnje s kolegama.',
-        'Radi širenja poruke o važnosti programiranja.'
+        'Radi širenja poruke o važnosti programiranja.',
     ],
     'download' => [
         'Kliknite',
         'ovdje',
-        'da biste ovaj izazov preuzeli u formatu Word dokumenta'
+        'da biste ovaj izazov preuzeli u formatu Word dokumenta',
     ],
     'bingo' => [
         'Dovršite sve izazove',
@@ -88,6 +88,6 @@ return [
         'Podijelite svoj izazov na društvenim mrežama i osvojite cool nagrade Tjedna programiranja',
         'Samo trebate prenijeti sliku s dovršenim recima, stupcima ili, još bolje, cijelu bingo karticu na',
         'Facebook, Instagram ili Twitter',
-        'Obavezno upotrijebite'
-    ]
+        'Obavezno upotrijebite',
+    ],
 ];

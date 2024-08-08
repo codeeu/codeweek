@@ -29,12 +29,12 @@ return [
         'header' => 'Jūsų kontaktinė informacija',
         'text_1' => 'Šią informaciją matys tik ',
         'link_1' => 'ES programavimo savaitės ambasadoriai',
-        'text_2'=> ' ir Programavimo savaitės
+        'text_2' => ' ir Programavimo savaitės
         organizatoriai, kurie
         patikrins jūsų renginį prieš jam atsirandant žemėlapyje ir galbūt norės su jumis susisiekti,
         jei reikėtų redaguoti informaciją,
         arba dėl apklausos po renginio atlikimo statistiniais tikslais.',
-        'contact_email' => 'Jūsų el. pašto adresas'
-    ], 
-    'edit' => 'Redaguoti renginį'
+        'contact_email' => 'Jūsų el. pašto adresas',
+    ],
+    'edit' => 'Redaguoti renginį',
 ];

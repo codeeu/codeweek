@@ -29,12 +29,12 @@ return [
         'header' => 'Jūsu kontaktinformācija',
         'text_1' => 'Šī informācija būs redzama tikai ',
         'link_1' => 'ES programmēšanas nedēļas vēstniekiem',
-        'text_2'=> ' un programmēšanas nedēļas
+        'text_2' => ' un programmēšanas nedēļas
 		organizatoriem, kuri
 		pārbaudīs pasākumu pirms tā parādīšanās kartē un sazināsies ar jums, ja būs	
 		nepieciešama rediģēšana vai
 		aptauja pēc pasākuma statistikas ieguvei.',
-        'contact_email' => 'Jūsu e-pasts saziņai'
-    ], 
-    'edit' => 'Rediģēt pasākumu'
+        'contact_email' => 'Jūsu e-pasts saziņai',
+    ],
+    'edit' => 'Rediģēt pasākumu',
 ];

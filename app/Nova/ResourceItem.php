@@ -2,20 +2,16 @@
 
 namespace App\Nova;
 
-use App\Nova\Filters\EventStatus;
 use Ctessier\NovaAdvancedImageField\AdvancedImage;
-use Laravel\Nova\Fields\BelongsTo;
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
-use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Http\Requests\NovaRequest;
 
 class ResourceItem extends Resource
 {
-
     public static $group = 'Resources';
 
     public static function label()
@@ -30,13 +26,12 @@ class ResourceItem extends Resource
 
     public static $singularLabel = 'Resource Item';
 
-
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'App\ResourceItem';
+    public static $model = \App\ResourceItem::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -51,16 +46,13 @@ class ResourceItem extends Resource
      * @var array
      */
     public static $search = [
-        'name', 'description', 'source'
+        'name', 'description', 'source',
     ];
 
     /**
      * Get the fields displayed by the resource.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return array
      */
-    public function fields(Request $request)
+    public function fields(Request $request): array
     {
         return [
             ID::make()->sortable(),
@@ -84,28 +76,21 @@ class ResourceItem extends Resource
             Text::make('Twitter')->hideFromIndex(),
             Boolean::make('Active'),
 
-
         ];
     }
 
     /**
      * Get the cards available for the request.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return array
      */
-    public function cards(Request $request)
+    public function cards(Request $request): array
     {
         return [];
     }
 
     /**
      * Get the filters available for the resource.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return array
      */
-    public function filters(Request $request)
+    public function filters(Request $request): array
     {
         return [new Filters\ResourceActive];
 
@@ -113,25 +98,17 @@ class ResourceItem extends Resource
 
     /**
      * Get the lenses available for the resource.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return array
      */
-    public function lenses(Request $request)
+    public function lenses(Request $request): array
     {
         return [];
     }
 
     /**
      * Get the actions available for the resource.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return array
      */
-    public function actions(Request $request)
+    public function actions(Request $request): array
     {
         return [];
     }
-
-
 }

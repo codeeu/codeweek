@@ -30,7 +30,6 @@ class ResourceProgrammingLanguageController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,7 +40,6 @@ class ResourceProgrammingLanguageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ResourceProgrammingLanguage  $resourceProgrammingLanguage
      * @return \Illuminate\Http\Response
      */
     public function show(ResourceProgrammingLanguage $resourceProgrammingLanguage)
@@ -52,7 +50,6 @@ class ResourceProgrammingLanguageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ResourceProgrammingLanguage  $resourceProgrammingLanguage
      * @return \Illuminate\Http\Response
      */
     public function edit(ResourceProgrammingLanguage $resourceProgrammingLanguage)
@@ -63,8 +60,6 @@ class ResourceProgrammingLanguageController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ResourceProgrammingLanguage  $resourceProgrammingLanguage
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, ResourceProgrammingLanguage $resourceProgrammingLanguage)
@@ -75,7 +70,6 @@ class ResourceProgrammingLanguageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ResourceProgrammingLanguage  $resourceProgrammingLanguage
      * @return \Illuminate\Http\Response
      */
     public function destroy(ResourceProgrammingLanguage $resourceProgrammingLanguage)

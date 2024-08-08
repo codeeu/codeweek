@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Opas',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Rekisteröi tapahtumasi täällä',
     'what' => [
         'title' => 'Mikä on EU:n koodausviikko?',
-        'content' => '<p>EU:n koodausviikko on vapaaehtoisten pyörittämä, Euroopan komission tukema ruohonjuuritason liike. Kuka tahansa – koulu, opettaja, kirjasto, koodauskerho, yritys, julkisviranomainen – voi järjestää #EUCodeWeek-tapahtuman ja merkitä sen <a href="/events">codeweek.eu</a>-sivuston karttaan.</p>'
+        'content' => '<p>EU:n koodausviikko on vapaaehtoisten pyörittämä, Euroopan komission tukema ruohonjuuritason liike. Kuka tahansa – koulu, opettaja, kirjasto, koodauskerho, yritys, julkisviranomainen – voi järjestää #EUCodeWeek-tapahtuman ja merkitä sen <a href="/events">codeweek.eu</a>-sivuston karttaan.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Mitä tapahtuman järjestämiseen tarvitaan?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Osallistujien ilmoittautuminen.</strong> Jos tilaa on rajallisesti, voit järjestää osallistujien ilmoittautumisen verkkotyökalujen, kuten <a href="https://docs.google.com/forms/">Google-lomakkeiden</a> ja <a
                         href="https://www.eventbrite.com/">Eventbriten</a> avulla.',
             '8' => 'Muista <a href="/add">merkitä tapahtumasi</a> <a href="/events">koodausviikon karttaan</a>!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Miten tapahtuma järjestetään?',
@@ -34,24 +33,24 @@ return [
             '4' => '<strong>Levitä tietoa!</strong> Promotoi ja jaa tapahtumasi tuloksia sosiaalisessa mediassa #EUCodeWeek-aihetunnisteella. Voit myös julkaista tietoja <a
                         href="https://www.facebook.com/groups/774720866253044/">EU:n koodausviikon opettajien ryhmässä</a> ja Twitterissä (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Kerro tapahtumasta ystävillesi, muille kouluttajille ja paikallisille lehdistölle ja laadi lehdistötiedote.',
             '5' => 'Muista <a href="/add">merkitä tapahtumasi</a> <a href="/events">koodausviikkokarttaan</a>!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Mainosmateriaali',
         'text' => '<p>Lue <a href="http://blog.codeweek.eu/">blogistamme</a> uusimmat uutiset ja muokkaa uusin lehdistötiedote tarpeidesi mukaan tai luo täysin oma:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Valmistautuminen EU:n koodausviikon 2019 juhlintaan</a> (saatavana 29 kielellä)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Valmistautuminen EU:n koodausviikon 2019 juhlintaan</a> (saatavana 29 kielellä)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Lataa seuraavat työkalupakit, jotta pääset alkuun:',
         'communication_toolkit' => 'Viestintätyökalut',
-        'teachers_toolkit' => 'Opettajien työkalut'
+        'teachers_toolkit' => 'Opettajien työkalut',
     ],
     'questions' => [
         'title' => 'Onko sinulla kysyttävää?',
-        'content' => '<p>Jos sinulla on kysyttävää #EUCodeWeek-tapahtuman järjestämisestä tai markkinoinnista, ota yhteyttä oman maasi <a href="/ambassadors">EU:n koodausviikkolähettilääseen</a>.</p>'
-    ]
+        'content' => '<p>Jos sinulla on kysyttävää #EUCodeWeek-tapahtuman järjestämisestä tai markkinoinnista, ota yhteyttä oman maasi <a href="/ambassadors">EU:n koodausviikkolähettilääseen</a>.</p>',
+    ],
 
 ];

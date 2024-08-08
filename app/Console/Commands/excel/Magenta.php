@@ -35,13 +35,11 @@ class Magenta extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Loading Magenta Moon Excel File");
+        Log::info('Loading Magenta Moon Excel File');
 
-        Excel::import(new MagentaEventsImport, 'magenta.xlsx','excel');
+        Excel::import(new MagentaEventsImport, 'magenta.xlsx', 'excel');
     }
 }

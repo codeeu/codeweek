@@ -1,18 +1,13 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-
-use Faker\Generator as Faker;
-
-$factory->define(App\City::class, function (Faker $faker) {
+$factory->define(App\City::class, function () {
     return [
-        'id' => $faker->numberBetween(1234567890, 9999999999),
-        'city' => $faker->city,
-        'country' => $faker->country,
-        'country_iso' => $faker->countryCode,
-        'longitude' => $faker->longitude,
-        'latitude' => $faker->latitude
+        'id' => $this->faker->numberBetween(1234567890, 9999999999),
+        'city' => $this->faker->city(),
+        'country' => $this->faker->country(),
+        'country_iso' => $this->faker->countryCode(),
+        'longitude' => $this->faker->longitude(),
+        'latitude' => $this->faker->latitude(),
     ];
 });
-
-

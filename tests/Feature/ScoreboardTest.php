@@ -4,24 +4,20 @@ namespace Tests\Feature;
 
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ScoreboardTest extends TestCase
+final class ScoreboardTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-
-    /** @test */
-    public function scoreboard_should_show_upcoming_events()
+    #[Test]
+    public function scoreboard_should_show_upcoming_events(): void
     {
-        $belgium = create('App\Country', ['iso'=>'BE','name'=>'Belgium']);
-        $luxembourg = create('App\Country', ['iso'=>'LU','name'=>'Luxembourg']);
-        $eventsInBelgium = create('App\Event', ['country_iso'=>'BE','end_date'=>Carbon::tomorrow(), 'status'=>'APPROVED'],7);
-        $eventsInLuxembourg = create('App\Event', ['country_iso'=>'LU','end_date'=>Carbon::now()->subYear(1),'status'=>'APPROVED'],1);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE', 'name' => 'Belgium']);
+        $luxembourg = \App\Country::factory()->create(['iso' => 'LU', 'name' => 'Luxembourg']);
+        $eventsInBelgium = \App\Event::factory()->count(7)->create(['country_iso' => 'BE', 'end_date' => Carbon::tomorrow(), 'status' => 'APPROVED']);
+        $eventsInLuxembourg = \App\Event::factory()->count(1)->create(['country_iso' => 'LU', 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
 
         $this->get('scoreboard')
             ->assertSee('Belgium')
@@ -30,21 +26,20 @@ class ScoreboardTest extends TestCase
         $this->get('scoreboard')
             ->assertDontSee('Luxembourg');
 
-
     }
 
-    /** @test */
-    public function scoreboard_should_not_count_dependencies()
+    #[Test]
+    public function scoreboard_should_not_count_dependencies(): void
     {
-        $belgium = create('App\Country', ['iso'=>'BE','name'=>'Belgium','population'=>1000]);
-        $france = create('App\Country', ['iso'=>'FR','name'=>'France','population'=>1000]);
-        $guadeloupe = create('App\Country', ['iso'=>'GP','name'=>'Guadeloupe', 'parent'=>'FR','population'=>1000]);
-        $martinique = create('App\Country', ['iso'=>'MQ','name'=>'Martinique', 'parent'=>'FR','population'=>1000]);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE', 'name' => 'Belgium', 'population' => 1000]);
+        $france = \App\Country::factory()->create(['iso' => 'FR', 'name' => 'France', 'population' => 1000]);
+        $guadeloupe = \App\Country::factory()->create(['iso' => 'GP', 'name' => 'Guadeloupe', 'parent' => 'FR', 'population' => 1000]);
+        $martinique = \App\Country::factory()->create(['iso' => 'MQ', 'name' => 'Martinique', 'parent' => 'FR', 'population' => 1000]);
 
-        $eventsInBelgium = create('App\Event', ['country_iso'=>'BE','start_date'=>Carbon::tomorrow(), 'status'=>'APPROVED'],10);
-        $eventsInFrance = create('App\Event', ['country_iso'=>'FR','start_date'=>Carbon::tomorrow(),'status'=>'APPROVED'],10);
-        $eventsInGuadeloupe = create('App\Event', ['country_iso'=>'GP','start_date'=>Carbon::tomorrow(),'status'=>'APPROVED'],20);
-        $eventsInMartinique = create('App\Event', ['country_iso'=>'MQ','start_date'=>Carbon::tomorrow(),'status'=>'APPROVED'],30);
+        $eventsInBelgium = \App\Event::factory()->count(10)->create(['country_iso' => 'BE', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED']);
+        $eventsInFrance = \App\Event::factory()->count(10)->create(['country_iso' => 'FR', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED']);
+        $eventsInGuadeloupe = \App\Event::factory()->count(20)->create(['country_iso' => 'GP', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED']);
+        $eventsInMartinique = \App\Event::factory()->count(30)->create(['country_iso' => 'MQ', 'start_date' => Carbon::tomorrow(), 'status' => 'APPROVED']);
 
         $this->get('scoreboard')
             ->assertSee('Belgium')
@@ -58,10 +53,6 @@ class ScoreboardTest extends TestCase
             ->assertDontSee('Guadeloupe')
             ->assertDontSee('Martinique')
             ->assertSee('70');
-
-
-
-
 
     }
 }

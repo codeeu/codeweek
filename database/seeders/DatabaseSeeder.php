@@ -8,14 +8,12 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
 
-        $this->call(CountriesTableSeeder::class);
-        $this->call(CitiesTableSeeder::class);
+        //$this->call(CountriesTableSeeder::class);
+        //$this->call(CitiesTableSeeder::class);
         $this->call(RolesAndPermissionsSeeder::class);
         $this->call(LeadingTeacherRoleSeeder::class);
         $this->call(UserSeeder::class);

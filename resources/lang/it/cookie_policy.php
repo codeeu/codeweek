@@ -15,7 +15,7 @@ return [
             <p>In questo modo, non dovrai reinserirle mentre navighi all’interno del sito durante la  stessa visita.</p>
 
             <p>I cookie possono essere usati anche per elaborare statistiche anonimizzate sull’esperienza di esplorazione dei nostri siti.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Come usiamo i cookie?',
@@ -25,30 +25,30 @@ return [
             'title' => 'I <strong>3 tipi di cookie di terze parti</strong> che impieghiamo servono per:',
             '1' => 'memorizzare le preferenze del visitatore;',
             '2' => 'rendere operativi i nostri siti web;',
-            '3' => 'raccogliere dati analitici (sul comportamento dell’utente).'
+            '3' => 'raccogliere dati analitici (sul comportamento dell’utente).',
         ],
         'table' => [
-            'name'=>'Nome',
-            'service'=>'Servizio',
-            'purpose'=>'Scopo',
-            'type_duration'=>'Tipo e durata dei cookie',
+            'name' => 'Nome',
+            'service' => 'Servizio',
+            'purpose' => 'Scopo',
+            'type_duration' => 'Tipo e durata dei cookie',
         ],
         'visitor_preferences' => [
-            'title'=> 'Preferenze del visitatore',
-            'text'=> '<p>Li trasmettiamo noi e siamo i soli a poterli leggere. Si ricordano:</p>',
-            'item'=> 'se hai accettato (o rifiutato) la politica sui cookie di questo sito',
+            'title' => 'Preferenze del visitatore',
+            'text' => '<p>Li trasmettiamo noi e siamo i soli a poterli leggere. Si ricordano:</p>',
+            'item' => 'se hai accettato (o rifiutato) la politica sui cookie di questo sito',
             'table' => [
                 '1' => [
                     'service' => 'Kit di consenso all’uso dei cookie',
                     'purpose' => 'Memorizzano le tue preferenze relative ai cookie (per evitare di chiedertele di nuovo)',
                     'type_duration' => 'Si tratta di cookie di sessione di prime parti che vengono eliminati alla chiusura del browser',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Cookie operativi',
             'text' => '<p>Alcuni cookie devono essere inseriti per consentire il funzionamento di determinate pagine web. Per questo motivo, non richiedono il tuo consenso. In particolare:</p>',
-            'item' => 'cookie tecnici necessari per alcuni sistemi IT'
+            'item' => 'cookie tecnici necessari per alcuni sistemi IT',
         ],
         'technical_cookies' => [
             'title' => 'Cookie tecnici',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Memorizzano la lingua preferita dall’utente',
                     'type_duration' => 'Si tratta di cookie di sessione di prime parti che vengono eliminati alla chiusura del browser',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Cookie analitici',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Servizio di analisi web basato sul software open source Matomo',
                     'purpose' => 'Identificano le pagine visualizzate dallo stesso utente durante la medesima visita (in maniera anonima e senza raccogliere informazioni personali sull’utente).',
                     'type_duration' => 'Cookie permanenti di prime parti della durata di 30 minuti',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Per visualizzare tali contenuti di soggetti terzi, devi prima accettare i loro termini e le loro condizioni. Tra questi figurano le politiche sull’utilizzo dei cookie, sulle quali non abbiamo alcun controllo.</p>
 
                 <p>Tuttavia, se non visualizzerai questi contenuti, sul tuo dispositivo non verranno installati cookie di terze parti.</p>Fornitori terzi su Codeweek',
-            '2' => 'Questi servizi offerti da fornitori terzi esulano dal controllo del sito web di Codeweek. Tali fornitori possono, in qualsiasi momento, modificare i termini di servizio, lo scopo e l’utilizzo dei cookie e così via.'
-        ]
+            '2' => 'Questi servizi offerti da fornitori terzi esulano dal controllo del sito web di Codeweek. Tali fornitori possono, in qualsiasi momento, modificare i termini di servizio, lo scopo e l’utilizzo dei cookie e così via.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Come puoi gestire i cookie?',
@@ -109,6 +109,6 @@ return [
 
             <p>Puoi eliminare tutti i cookie già presenti sul tuo dispositivo cancellando la cronologia di navigazione del browser. In questo modo rimuoverai tutti i cookie trasmessi dai siti web che hai visitato.</p>
 
-            <p>Tieni presente che potresti perdere anche alcune informazioni salvate (ad es. credenziali di accesso salvate, preferenze relative ai siti ecc.).</p><strong>Gestire i cookie specifici di ciascun sito</strong><p>Per un controllo più dettagliato dei cookie specifici di un sito preciso, controlla le impostazioni relative alla privacy e ai cookie del tuo browser predefinito.</p><strong>Bloccare i cookie</strong><p>Puoi impostare la maggior parte dei browser moderni in maniera tale da evitare l’installazione di qualunque cookie sul tuo dispositivo, ma in questo caso dovrai cambiare manualmente alcune preferenze ogni volta che visiti un sito/una pagina. Inoltre, alcuni servizi e funzionalità potrebbero non funzionare correttamente (ad es. l’accesso a un profilo).</p><strong>Gestire i cookie analitici</strong><p>Puoi gestire le tue preferenze riguardanti i cookie analitici sulla <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">pagina dedicata.</a></p>'
-    ]
+            <p>Tieni presente che potresti perdere anche alcune informazioni salvate (ad es. credenziali di accesso salvate, preferenze relative ai siti ecc.).</p><strong>Gestire i cookie specifici di ciascun sito</strong><p>Per un controllo più dettagliato dei cookie specifici di un sito preciso, controlla le impostazioni relative alla privacy e ai cookie del tuo browser predefinito.</p><strong>Bloccare i cookie</strong><p>Puoi impostare la maggior parte dei browser moderni in maniera tale da evitare l’installazione di qualunque cookie sul tuo dispositivo, ma in questo caso dovrai cambiare manualmente alcune preferenze ogni volta che visiti un sito/una pagina. Inoltre, alcuni servizi e funzionalità potrebbero non funzionare correttamente (ad es. l’accesso a un profilo).</p><strong>Gestire i cookie analitici</strong><p>Puoi gestire le tue preferenze riguardanti i cookie analitici sulla <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">pagina dedicata.</a></p>',
+    ],
 ];

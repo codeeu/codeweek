@@ -19,7 +19,7 @@ return [
         'beginner' => 'Pradedančiųjų lygis',
         'intermediate' => 'Vidutinis lygis',
         'advanced' => 'Pažengusiųjų lygis',
-        '1-hour' => '1 valanda'
+        '1-hour' => '1 valanda',
     ],
     'main' => [
         '2021 m. spalio 9–24 d. vyksiančios ES programavimo savaitės metu kviečiame dalyvauti viename ar keliuose ES programavimo savaitės iššūkiuose.',
@@ -35,7 +35,7 @@ return [
         'Bendrinkite savo iššūkį',
         'Ar norėtumėte laimėti Programavimo savaitės prizų? Jei taip, jūsų darbas turi užkariauti internetą!',
         'Atlikę iššūkio užduotį, bendrinkite ją „Instagram“.',
-        'Spalio 9–24 d. vyksiančios Programavimo savaitės metu laimėtojai bus kasdien renkami ir skelbiami mūsų „Instagram“ kanale, todėl nepamirškite reguliariai tikrinti savo pranešimų.'
+        'Spalio 9–24 d. vyksiančios Programavimo savaitės metu laimėtojai bus kasdien renkami ir skelbiami mūsų „Instagram“ kanale, todėl nepamirškite reguliariai tikrinti savo pranešimų.',
     ],
     'share' => [
         'Kaip bendrinti savo iššūkį (-ius) platformoje „Instagram“?',
@@ -52,7 +52,7 @@ return [
         '„Facebook“ puslapyje',
         'bus kasdien skelbiamas įrašas su nauju iššūkiu, o prizo laimėtojas bus renkamas iš po šiuo įrašu pateiktų komentarų.',
         'Kaip tai veikia?',
-        'Tiesiog pakomentuokite įrašą su nuoroda į savo darbą.'
+        'Tiesiog pakomentuokite įrašą su nuoroda į savo darbą.',
     ],
     'share-box' => [
         'Pasidalykite nuoroda į savo darbą',
@@ -67,18 +67,18 @@ return [
         'įrašą apie naują iššūkį savo',
         '„Facebook“ puslapyje',
         'Tiesiog pakomentuokite įrašą su nuoroda į savo darbą',
-        'Spalio 9–24 d. vyksiančios Programavimo savaitės metu Programavimo savaitės prizų laimėtojai bus kasdien renkami ir skelbiami mūsų „Facebook“ kanaluose, todėl nepamirškite reguliariai tikrinti savo pranešimų'
+        'Spalio 9–24 d. vyksiančios Programavimo savaitės metu Programavimo savaitės prizų laimėtojai bus kasdien renkami ir skelbiami mūsų „Facebook“ kanaluose, todėl nepamirškite reguliariai tikrinti savo pranešimų',
     ],
     'take-part' => [
         'Kodėl verta dalyvauti ES programavimo savaitės iššūkyje?',
         'Kad galėtumėte padėti spręsti problemas ir susipažinti su programavimu.',
         'Kad galėtumėte dirbti kartu su savo bendraamžiais ar kolegomis.',
-        'Kad galėtumėte skleisti žinią apie programavimo svarbą.'
+        'Kad galėtumėte skleisti žinią apie programavimo svarbą.',
     ],
     'download' => [
         'Spustelėkite',
         'čia',
-        'ir šį iššūkį galėsite atsisiųsti „Word“ formatu'
+        'ir šį iššūkį galėsite atsisiųsti „Word“ formatu',
     ],
     'bingo' => [
         'Dalyvaukite visuose iššūkiuose',
@@ -88,6 +88,6 @@ return [
         'Pasidalykite savo iššūkiu socialiniuose tinkluose ir laimėkite šaunių Programavimo savaitės prizų',
         'Tiesiog įkelkite nuotrauką su užbaigta (-omis) eilute (-ėmis), stulpeliu (-iais) arba – dar geriau – visa bingo kortele į',
         '„Facebook“, „Instagram“ or „Twitter“',
-        'Nepamirškite grotažymės'
-    ]
+        'Nepamirškite grotažymės',
+    ],
 ];

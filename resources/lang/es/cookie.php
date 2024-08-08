@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Este sitio web utiliza cookies para mejorar su experiencia de navegación',
-    'accept'=>'Acepto las cookies',
-    'refuse'=>'Rechazo las cookies',
+    'accept' => 'Acepto las cookies',
+    'refuse' => 'Rechazo las cookies',
     'cookies' => 'Cookies',
-    'find_out_more_on'=>'Más información sobre ',
+    'find_out_more_on' => 'Más información sobre ',
     'how_we_use' => 'cómo usamos las cookies y de qué manera puede cambiar su configuración',
-
 
 ];

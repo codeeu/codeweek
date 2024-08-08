@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Viešas el. pašto adresas',
-        'placeholder' => 'Ar norėtumėte, kad jūsų el. pašto adresas būtų matomas?'
+        'placeholder' => 'Ar norėtumėte, kad jūsų el. pašto adresas būtų matomas?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresas',
         'placeholder' => 'Kur veikla vyks?',
     ],
-
 
     'organizertype' => [
         'label' => 'Organizacijos tipas',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Papildyta realybė',
         'Artificial intelligence' => 'Dirbtinis intelektas',
         'Motivation and awareness raising' => 'Motyvacijos ir sąmoningumo ugdymas',
-        'Promoting diversity' => 'Įvairovės skatinimas'
+        'Promoting diversity' => 'Įvairovės skatinimas',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'PROGRAMAVIMO SAVAITËS KODAS „CODEWEEK4ALL“',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'nacionalinių ambasadorių',
         'phrase5' => 'arba atsiųskite mums',
         'phrase6' => 'el. laišką.',
-        'phrase7' => 'Galite pasidalyti savo „CodeWeek4All“ kodu su kitais:'
+        'phrase7' => 'Galite pasidalyti savo „CodeWeek4All“ kodu su kitais:',
     ],
     'activitytype' => [
         'label' => 'Renginio tipas',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Atviras renginys/užsiėmimas internetu',
         'invite-online' => 'Uždaras renginys/užsiėmimas internetu (tik su pakvietimu)',
         'open-in-person' => 'Atviras renginys/užsiėmimas (realybėje, ne internetu)',
-        'invite-in-person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)'
+        'invite-in-person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)',
 
     ],
     'privacy' => 'Perskaičiau ir sutinku su šiame dokumente aprašyta privatumo politika.',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Peržiūrėkite savo pažymėjimą čia',
     'submit_event_and_report' => 'Pateikite šio renginio ataskaitą ir gaukite Programavimo savaitės pažymėjimą',
     'report_and_claim' => 'Pateikti renginio ataskaitą ir gauti pažymėjimą',
-
 
 ];

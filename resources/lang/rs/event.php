@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Javni imejl',
-        'placeholder' => 'Da li želite da prikažete imejl za kontakt?'
+        'placeholder' => 'Da li želite da prikažete imejl za kontakt?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresa',
         'placeholder' => 'Gde će se održati aktivnost?',
     ],
-
 
     'organizertype' => [
         'label' => 'Vrsta organizacije',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Proširena stvarnost',
         'Artificial intelligence' => 'Veštačka inteligencija',
         'Motivation and awareness raising' => 'Podizanje svesti i motivacija',
-        'Promoting diversity' => 'Promovisanje raznolikosti'
+        'Promoting diversity' => 'Promovisanje raznolikosti',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KOD „NEDELJA PROGRAMIRANJA ZA SVE“',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'nacionalnih ambasadora',
         'phrase5' => 'ili nam pošaljite',
         'phrase6' => 'imejl',
-        'phrase7' => 'Možete da delite svoj kod „Nedelja programiranja za sve“ sa drugima:'
+        'phrase7' => 'Možete da delite svoj kod „Nedelja programiranja za sve“ sa drugima:',
     ],
     'activitytype' => [
         'label' => 'Tip aktivnosti',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Online aktivnost slobodnog učešća',
         'invite-online' => 'Online aktivnost po pozivu',
         'open-in-person' => 'Aktivnost slobodnog učešća',
-        'invite-in-person' => 'Aktivnost po pozivu'
+        'invite-in-person' => 'Aktivnost po pozivu',
 
     ],
     'privacy' => 'Прочитао-ла сам сам и слажем се са условима политике приватности описаних у овом документу.',
@@ -147,7 +146,6 @@ return [
     'certificate_ready' => 'Vaš sertifikat Nedelje programiranja je spreman. Slobodno ga preuzmite ili direktno podelite.',
     'view_your_certificate' => 'Pogledajte svoj sertifikat ovde',
     'submit_event_and_report' => 'Pošaljite izveštaj za ovaj događaj i zatražite svoj sertifikat Nedelje programiranja.',
-    'report_and_claim' => 'Podnesite izveštaj o događaju i zatražite sertifikat'
-
+    'report_and_claim' => 'Podnesite izveštaj o događaju i zatražite sertifikat',
 
 ];

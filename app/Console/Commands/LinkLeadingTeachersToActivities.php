@@ -6,7 +6,6 @@ use App\Helpers\TagsHelper;
 use App\Tag;
 use App\User;
 use Illuminate\Console\Command;
-use Log;
 
 class LinkLeadingTeachersToActivities extends Command
 {
@@ -26,10 +25,8 @@ class LinkLeadingTeachersToActivities extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
         //Get the leading teachers
         $leading_teachers = User::role('leading teacher')
@@ -41,7 +38,7 @@ class LinkLeadingTeachersToActivities extends Command
             $nameInTag = TagsHelper::getNameInTag($leading_teacher->tag);
 
             //Find the tags with this name
-            $tags = Tag::where('name', 'LIKE', "%-" . $nameInTag . "-%")->get();
+            $tags = Tag::where('name', 'LIKE', '%-'.$nameInTag.'-%')->get();
 
             //Foreach tag, get the activities and update them
             foreach ($tags as $tag) {
@@ -54,9 +51,7 @@ class LinkLeadingTeachersToActivities extends Command
                 }
             }
 
-
         }
-
 
     }
 }

@@ -36,17 +36,15 @@ class MeetAndCodeLinkToUsers extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
 
         $this->info('The command was successful!');
-        $technicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
+        $technicalUser = ImporterHelper::getTechnicalUser('meetandcode-technical');
         $events = Event::where([
-            ["event_url","like","https://meet-and-code.org/%"],
-            ["creator_id",$technicalUser->id]
+            ['event_url', 'like', 'https://meet-and-code.org/%'],
+            ['creator_id', $technicalUser->id],
         ])->get();
 
         $total = 0;
@@ -55,7 +53,6 @@ class MeetAndCodeLinkToUsers extends Command
             $total += $added;
         }
         Log::info("{$total} Activities have been linked with the users");
-
 
     }
 }

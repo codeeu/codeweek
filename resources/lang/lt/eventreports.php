@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Kol kas nėra renginių, kurių ataskaitas reikia pateikti.',
     'report' => 'Toliau išvardyti renginiai jau prasidėjo arba baigėsi. Įrašykite kelis skaičius
     apie renginį statistikos tikslais ir gaukite Programavimo savaitės dalyvio sertifikatą. Už
-    vieną renginį gausite vieną sertifikatą.'
+    vieną renginį gausite vieną sertifikatą.',
 ];

@@ -2,59 +2,50 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use App\Achievements\Events\UserEarnedExperience;
+use App\Event;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Facades\Event;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class InfluenceTest extends TestCase
+final class InfluenceTest extends TestCase
 {
+    use DatabaseMigrations;
 
-    use RefreshDatabase;
-
-    /** @test */
-    public function user_influence_should_be_counted()
+    #[Test]
+    public function user_influence_should_be_counted(): void
     {
 
+        $user = \App\User::factory()->create();
 
-        $user = create('App\User');
+        $LT1 = \App\User::factory()->create(['id' => 100, 'tag' => 'BE-TESTME-123']);
 
-        $LT1 = create('App\User', ['id' => 100, 'tag' => 'BE-TESTME-123']);
-
-        $events2020 = create('App\Event', ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2020)], 10);
-        $events2021 = create('App\Event', ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2021)], 20);
-
+        $events2020 = \App\Event::factory()->count(10)->create(['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2020)]);
+        $events2021 = \App\Event::factory()->count(20)->create(['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2021)]);
 
         $InfluenceCount2020 = $LT1->influence(2020);
         $InfluenceCount2021 = $LT1->influence(2021);
 
-
         $this->assertEquals(20, $InfluenceCount2020);
         $this->assertEquals(40, $InfluenceCount2021);
-
 
     }
 
     // When we create an event with a LT tag, the experience is taken into account
 
-    /**
-     * @test
-     */
-    public function leading_teacher_receives_experience_when_event_is_approved()
+    #[Test]
+    public function leading_teacher_receives_experience_when_event_is_approved(): void
     {
 
-//        $tag = create('App\Tag', ['name' => 'TI-testme-234']);
+        //        $tag = create('App\Tag', ['name' => 'TI-testme-234']);
 
-        $leading_teacher = create('App\User', ['tag' => 'IT-TESTME-123']);
+        $leading_teacher = \App\User::factory()->create(['tag' => 'IT-TESTME-123']);
 
-        $event = create('App\Event', [
+        $event = \App\Event::factory()->create([
             'status' => 'PENDING',
             'leading_teacher_tag' => 'IT-TESTME-123',
-            'created_at' => Carbon::now()->setYear(2022)
+            'created_at' => Carbon::now()->setYear(2022),
         ]);
-
 
         $this->assertEquals(0, $leading_teacher->influence(2022));
 
@@ -62,8 +53,5 @@ class InfluenceTest extends TestCase
 
         $this->assertEquals(2, $leading_teacher->fresh()->influence(2022));
 
-
     }
-
-
 }

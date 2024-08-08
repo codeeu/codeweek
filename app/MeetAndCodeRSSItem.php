@@ -3,7 +3,6 @@
 namespace App;
 
 use App\Helpers\MeetAndCodeHelper;
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
@@ -31,6 +30,7 @@ use Illuminate\Support\Str;
  * @property string|null $imported_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem query()
@@ -55,11 +55,11 @@ use Illuminate\Support\Str;
  * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereStartDate($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class MeetAndCodeRSSItem extends Model
 {
-
     public function getCountryIso()
     {
 
@@ -79,26 +79,24 @@ class MeetAndCodeRSSItem extends Model
     private function mapOrganisationTypes($organisation_type)
     {
         switch ($organisation_type) {
-            case "Non-Profit Organisation":
-                return "non profit";
+            case 'Non-Profit Organisation':
+                return 'non profit';
             default:
-                return "other";
+                return 'other';
         }
-
 
     }
 
     private function mapActivityTypes($activity_type)
     {
         switch ($activity_type) {
-            case "offline and open":
-                return "open-in-person";
-            case "online and open":
-                return "open-online";
+            case 'offline and open':
+                return 'open-in-person';
+            case 'online and open':
+                return 'open-online';
             default:
-                return "other";
+                return 'other';
         }
-
 
     }
 
@@ -106,7 +104,7 @@ class MeetAndCodeRSSItem extends Model
     {
 
         $event = new Event([
-            'status' => "APPROVED",
+            'status' => 'APPROVED',
             'title' => htmlspecialchars_decode($this->title),
             'slug' => Str::slug($this->title),
             'organizer' => $this->school_name,
@@ -119,17 +117,17 @@ class MeetAndCodeRSSItem extends Model
             'creator_id' => $user->id,
             'country_iso' => $this->getCountryIso(),
             'picture' => $this->image_link,
-            "pub_date" => now(),
-            "created" => now(),
-            "updated" => now(),
-            "codeweek_for_all_participation_code" => 'cw-meetcode',
-            "start_date" => $this->start_date,
-            "end_date" => $this->end_date,
-            "longitude" => $this->lon,
-            "latitude" => $this->lat,
-            "geoposition" => $this->lat . "," . $this->lon,
-            "language" => MeetAndCodeHelper::getLanguage($this->link),
-            'mass_added_for' => "RSS meet_and_code"
+            'pub_date' => now(),
+            'created' => now(),
+            'updated' => now(),
+            'codeweek_for_all_participation_code' => 'cw-meetcode',
+            'start_date' => $this->start_date,
+            'end_date' => $this->end_date,
+            'longitude' => $this->lon,
+            'latitude' => $this->lat,
+            'geoposition' => $this->lat.','.$this->lon,
+            'language' => MeetAndCodeHelper::getLanguage($this->link),
+            'mass_added_for' => 'RSS meet_and_code',
         ]);
 
         $event->save();
@@ -140,9 +138,5 @@ class MeetAndCodeRSSItem extends Model
 
         return $event;
 
-
-
     }
-
-
 }

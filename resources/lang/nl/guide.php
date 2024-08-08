@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Gids',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Meld je activiteit hier aan',
     'what' => [
         'title' => 'Wat is de EU-programmeerweek?',
-        'content' => '<p>De EU-programmeerweek is een burgerinitiatief dat door vrijwilligers georganiseerd wordt met steun van de Europese Commissie. Iedereen - scholen, leerkrachten, bibliotheken, programmeerclubs, bedrijven en overheidsinstellingen - kan een #EUCodeWeek-activiteit organiseren en dit op de kaart van <a href="/events">codeweek.eu</a> zetten.</p>'
+        'content' => '<p>De EU-programmeerweek is een burgerinitiatief dat door vrijwilligers georganiseerd wordt met steun van de Europese Commissie. Iedereen - scholen, leerkrachten, bibliotheken, programmeerclubs, bedrijven en overheidsinstellingen - kan een #EUCodeWeek-activiteit organiseren en dit op de kaart van <a href="/events">codeweek.eu</a> zetten.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Wat heb je nodig om een activiteit te organiseren?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Een methode om deelnemers te registreren.</strong> Als je maar beperkte ruimte tot je beschikking hebt, gebruik dan online tools zoals <a href="https://docs.google.com/forms/">Google Formulieren</a> en <a
                         href="https://www.eventbrite.com/">Eventbrite</a> om deelnemers te registreren.',
             '8' => '<a href="/add">Zet je evenement</a> ook op de <a href="/events">kaart van de programmeerweek</a>!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Hoe organiseer je een activiteit?',
@@ -34,24 +33,24 @@ return [
             '4' => '<strong>Zegt het voort!</strong> Promoot wat je tijdens je activiteit hebt gedaan en deel het op sociale media met behulp van de hashtag #EUCodeWeek. Deel het ook in de <a
                         href="https://www.facebook.com/groups/774720866253044/">lerarengroep van de EU-programmeerweek</a> en op Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Praat met je vrienden, mede-onderwijzers, de lokale pers en maak een persbericht!',
             '5' => 'Vergeet niet je <a href="/add">activiteit toe te voegen</a> aan de <a href="/events">kaart van de programmeerweek</a>!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Promotiemateriaal',
         'text' => '<p>Bekijk onze <a href="http://blog.codeweek.eu/">blog</a> voor de laatste informatie en pas het laatste persbericht naar behoeften aan of schrijf je eigen persbericht:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Voorbereiding van de EU-programmeerweek 2019 gaat van start</a> (beschikbaar in 29 talen)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Voorbereiding van de EU-programmeerweek 2019 gaat van start</a> (beschikbaar in 29 talen)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Download de volgende toolkits om aan de slag te kunnen:',
         'communication_toolkit' => 'Communicatie-toolkit',
-        'teachers_toolkit' => 'Leraren-toolkit'
+        'teachers_toolkit' => 'Leraren-toolkit',
     ],
     'questions' => [
         'title' => 'Vragen?',
-        'content' => '<p>Heb je vragen over het opzetten en promoten van je eigen #EUCodeWeek-evenement? Neem dan contact op met een van de <a href="/ambassadors">ambassadeurs van de EU-programmeerweek</a> in jouw land.</p>'
-    ]
+        'content' => '<p>Heb je vragen over het opzetten en promoten van je eigen #EUCodeWeek-evenement? Neem dan contact op met een van de <a href="/ambassadors">ambassadeurs van de EU-programmeerweek</a> in jouw land.</p>',
+    ],
 
 ];

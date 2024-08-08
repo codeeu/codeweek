@@ -22,15 +22,15 @@ return [
             '1' => 'Ikklikkja fuq Issottometti.',
             '2' => 'Ladarba l-attività tiegħek tkun ġiet aċċettata, se tirċievi email ta’ konferma bil-kodiċi uniku tiegħek għall-Ġimgħa tal-Ikkowdjar għal Kulħadd.',
             '3' => 'Ikkopja l-kodiċi u aqsmu mal-kollegi tiegħek u ma’ oħrajn fin-netwerk tiegħek li qegħdin jorganizzaw ukoll attività tal-ikkowdjar. Xerred il-kelma biex tħeġġeġ lil oħrajn jipparteċipaw!',
-            '4' => 'Wara t-tmiem tal-kampanja, l-organizzaturi tal-attività kollha se jintalbu jirrapportaw lura n-numru ta’ parteċipanti li involvew. Jekk kellkom suċċess u lħaqtu l-limitu, inti u l-kollegi tiegħek li kienu parti min-netwerk tiegħek se tirċievu ċ-Ċertifikat ta’ Eċċellenza!'
+            '4' => 'Wara t-tmiem tal-kampanja, l-organizzaturi tal-attività kollha se jintalbu jirrapportaw lura n-numru ta’ parteċipanti li involvew. Jekk kellkom suċċess u lħaqtu l-limitu, inti u l-kollegi tiegħek li kienu parti min-netwerk tiegħek se tirċievu ċ-Ċertifikat ta’ Eċċellenza!',
         ],
         'existing_alliance' => [
             'title' => 'Jekk qed tingħaqad ma’ alleanza eżistenti:',
             '1' => 'Ippestja l-passcode li rċevejt mill-inizjatur, l-ewwel wieħed li beda jibni l-alleanza, fil-ċellola tal-qasam KODIĊI TAL-ĠIMGĦA TAL-IKKOWDJAR GĦAL KULĦADD.',
             '2' => 'Ikklikkja fuq Issottometti.',
             '3' => 'Xerred il-kelma (u l-kodiċi!) biex tikkonvinċi lil aktar organizzaturi jingħaqdu mal-alleanza tiegħek.',
-            '4' => 'Wara t-tmiem tal-kampanja, l-organizzaturi tal-attività kollha se jintalbu jirrapportaw in-numru ta’ parteċipanti li involvew. Jekk kellkom suċċess u lħaqtu l-limitu, inti u l-kollegi tiegħek li kienu parti min-netwerk tiegħek se tirċievu ċ-Ċertifikat ta’ Eċċellenza!'
-        ]
+            '4' => 'Wara t-tmiem tal-kampanja, l-organizzaturi tal-attività kollha se jintalbu jirrapportaw in-numru ta’ parteċipanti li involvew. Jekk kellkom suċċess u lħaqtu l-limitu, inti u l-kollegi tiegħek li kienu parti min-netwerk tiegħek se tirċievu ċ-Ċertifikat ta’ Eċċellenza!',
+        ],
     ],
     'why' => [
         'title' => 'Għaliex għandek tingħaqad mal-isfida?',
@@ -38,9 +38,9 @@ return [
         '2' => 'Biex tara l-involviment ta’ numru kbir ta’ studenti.',
         '3' => 'Biex tibni konnessjonijiet ma’ organizzazzjonijiet u/jew skejjel fil-komunità tiegħek jew fuq livell internazzjonali.',
         '4' => 'Biex issib appoġġ minn organizzaturi u għalliema oħrajn.',
-        '5' => 'Biex tingħata <strong>Ċertifikat ta’ Eċċellenza.</strong>'
+        '5' => 'Biex tingħata <strong>Ċertifikat ta’ Eċċellenza.</strong>',
     ],
     'superorganiser-title' => 'Ċertifikat ta’ Organizzatur Super',
-    'superorganiser' => 'Tista’ wkoll tikseb Ċertifikat ta’ Organizzatur Super. Biex tagħmel dan għandek bżonn torganizza u <a href="https://codeweek.eu/add">tirreġistra</a> mill-inqas 10 attivitajiet separati fl-iskola jew l-organizzazzjoni tiegħek, jew online.'
+    'superorganiser' => 'Tista’ wkoll tikseb Ċertifikat ta’ Organizzatur Super. Biex tagħmel dan għandek bżonn torganizza u <a href="https://codeweek.eu/add">tirreġistra</a> mill-inqas 10 attivitajiet separati fl-iskola jew l-organizzazzjoni tiegħek, jew online.',
 
 ];

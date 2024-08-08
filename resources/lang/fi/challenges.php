@@ -15,14 +15,14 @@ return [
         'example' => 'Esimerkki',
         'written-by' => [
             'Tämän haasteen on kirjoittanut',
-            'ja se kuuluu kokoelmaan'
+            'ja se kuuluu kokoelmaan',
         ],
         'teachers' => 'Opettajat',
         'students' => 'Oppilaat',
         'beginner' => 'Vasta-alkaja',
         'intermediate' => 'Keskitaso',
         'advanced' => 'Edistynyt',
-        '1-hour' => '1 tunti'
+        '1-hour' => '1 tunti',
     ],
     'main' => [
         'Kutsumme sinut osallistumaan yhteen tai useampaan EU:n koodausviikon haasteeseen EU:n koodausviikolla 9.–24. lokakuuta 2021.',
@@ -38,7 +38,7 @@ return [
         'Jaa oma haasteesi',
         'Haluaisitko voittaa koodausviikon palkintoja? Jos vastasit kyllä, jaa työsi tulokset myös muille!',
         'Kun olet saanut haasteen valmiiksi, jaa se Instagramissa.',
-        'Palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta, ja voittajat julkistetaan Instagram-kanavallamme. Muista siis tarkistaa ilmoituksesi säännöllisesti.'
+        'Palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta, ja voittajat julkistetaan Instagram-kanavallamme. Muista siis tarkistaa ilmoituksesi säännöllisesti.',
     ],
     'share' => [
         'Näin jaat haasteesi Instagramissa',
@@ -55,7 +55,7 @@ return [
         'Facebook-sivulle',
         'lisätään joka päivä uusi haastejulkaisu. Palkinnon voittaja valitaan julkaisua kommentoiden joukosta.',
         'Miten se toimii?',
-        'Kommentoi julkaisua ja lisää linkki omaan haasteeseesi.'
+        'Kommentoi julkaisua ja lisää linkki omaan haasteeseesi.',
     ],
     'share-box' => [
         'Jaa linkki omaan haasteeseesi',
@@ -70,18 +70,18 @@ return [
         'EU:n koodausviikon',
         'Facebook-sivulle',
         'Kommentoi julkaisua ja lisää linkki omaan haasteeseesi',
-        'Koodausviikon palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta. Voittajat julkistetaan Instagram- ja Facebook-kanavillamme. Muista siis tarkistaa ilmoituksesi säännöllisesti.'
+        'Koodausviikon palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta. Voittajat julkistetaan Instagram- ja Facebook-kanavillamme. Muista siis tarkistaa ilmoituksesi säännöllisesti.',
     ],
     'take-part' => [
         'Miksi EU:n koodausviikon haasteeseen kannattaa osallistua?',
         'Saat kokemusta ongelmanratkaisusta ja koodauksesta.',
         'Voit työskennellä yhdessä muiden osallistujien kanssa.',
-        'Pääset jakamaan viestiä koodauksen tärkeydestä.'
+        'Pääset jakamaan viestiä koodauksen tärkeydestä.',
     ],
     'download' => [
         'Napsauta',
         'tästä',
-        'ladataksesi tämän haasteen Word-asiakirjana.'
+        'ladataksesi tämän haasteen Word-asiakirjana.',
     ],
     'bingo' => [
         'Suorita kaikki haasteet',
@@ -91,6 +91,6 @@ return [
         'Jaa haasteesi sosiaalisessa mediassa ja voit voittaa hienoja koodausviikon palkintoja.',
         'Lataa kuva valmiista pysty- tai vaakariveistä tai koko bingokortista',
         'Facebookiin, Instagramiin tai Twitteriin.',
-        'Muista käyttää aihetunnistetta'
-    ]
+        'Muista käyttää aihetunnistetta',
+    ],
 ];

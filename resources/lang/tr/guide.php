@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Rehber',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Aktivitenizi buradan kayıt edin',
     'what' => [
         'title' => 'EU Code Week (Kod Haftası) nedir?',
-        'content' => '<p>EU Code Week, gönüllüler tarafından yürütülen ve Avrupa Komisyonu tarafından desteklenen bir taban hareketidir. Okullar, öğretmenler, kütüphaneler, kod kulüpleri, işletmeler, kamu kuruluşları, kısacası herkes #EUCodeWeek aktivitesi düzenleyip <a href="/events">codeweek.eu</a> haritasına ekleyebilir.</p>'
+        'content' => '<p>EU Code Week, gönüllüler tarafından yürütülen ve Avrupa Komisyonu tarafından desteklenen bir taban hareketidir. Okullar, öğretmenler, kütüphaneler, kod kulüpleri, işletmeler, kamu kuruluşları, kısacası herkes #EUCodeWeek aktivitesi düzenleyip <a href="/events">codeweek.eu</a> haritasına ekleyebilir.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Aktivite düzenleyebilmek için ne gerekiyor?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Katılımcıları kayıt edin.</strong> Kısıtlı alanınız varsa, katılımcıları kayıt etmek için <a href="https://docs.google.com/forms/">Google form</a> ve <a
                         href="https://www.eventbrite.com/">Eventbrite</a> gibi çevrimiçi araçları kullanabilirsiniz.',
             '8' => '<a href="/events">Code Week haritasına</a> <a href="/add">aktivitenizi eklemeyi</a> unutmayın!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Aktivitenizi nasıl düzenleyebilirsiniz?',
@@ -34,24 +33,24 @@ return [
             '4' => '<strong>Herkese haber verin!</strong> Aktivite sırasında yaptıklarınızı, sosyal medyada #EUCodeWeek etiketini kullanarak paylaşın ve duyurun. <a
                         href="https://www.facebook.com/groups/774720866253044/">EU Code Week Öğretmenler Grubu</a> ve Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>) üzerinde de paylaşabilirsiniz. Arkadaşlarınızla, diğer eğitmenlerle ve yerel basınla görüşüp bir basın bülteni yayınlayın.',
             '5' => '<a href="/events">Code Week haritasına</a> <a href="/add">aktivitenizi eklemeyi</a> unutmayın!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Tanıtım materyali',
         'text' => '<p>En güncel bilgiler için <a href="http://blog.codeweek.eu/">blogumuzu</a> inceleyebilir ve mevcut basın bültenini ihtiyaçlarınıza göre adapte edebilir veya aşağıdaki bağlantıdan kendi basın bülteninizi oluşturabilirsiniz:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">EU Code Week 2019’u kutlamaya hazırlanıyoruz</a> (29 dilde mevcuttur).'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">EU Code Week 2019’u kutlamaya hazırlanıyoruz</a> (29 dilde mevcuttur).',
+        ],
     ],
     'toolkits' => [
         'title' => 'Başlamanıza yardımcı olması için aşağıdaki araç kitlerini indirebilirsiniz.',
         'communication_toolkit' => 'İletişim Araç Kiti',
-        'teachers_toolkit' => 'Öğretmen Araç Kiti'
+        'teachers_toolkit' => 'Öğretmen Araç Kiti',
     ],
     'questions' => [
         'title' => 'Sorunuz mu var?',
-        'content' => '<p>Kendi #EUCodeWeek etkinliğinizi düzenleme ve duyurmakla ilgili sorularınız için, ülkenizdeki <a href="/ambassadors">EU Code Week Elçileri</a> ile iletişime geçebilirsiniz.</p>'
-    ]
+        'content' => '<p>Kendi #EUCodeWeek etkinliğinizi düzenleme ve duyurmakla ilgili sorularınız için, ülkenizdeki <a href="/ambassadors">EU Code Week Elçileri</a> ile iletişime geçebilirsiniz.</p>',
+    ],
 
 ];

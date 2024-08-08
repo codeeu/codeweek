@@ -4,14 +4,12 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMeetAndCodeRSSItemsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('meet_and_code_r_s_s_items', function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -30,22 +28,18 @@ class CreateMeetAndCodeRSSItemsTable extends Migration
             $table->string('image_link');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
-            $table->float('lat', 12,6);
+            $table->float('lat', 12, 6);
             $table->float('lon', 12, 6);
             $table->dateTime('imported_at')->nullable();
             $table->timestamps();
         });
     }
 
-
-
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('meet_and_code_r_s_s_items');
     }
-}
+};

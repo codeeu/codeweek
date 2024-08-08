@@ -41,6 +41,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
+            'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
@@ -51,8 +52,13 @@ return [
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'strict' => false,
+            'prefix_indexes' => true,
             'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
         ],
+
         'mysql_testing' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -70,6 +76,7 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
+            'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'forge'),
@@ -78,6 +85,8 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
+            'prefix_indexes' => true,
+            'search_path' => 'public',
             'sslmode' => 'prefer',
         ],
 
@@ -105,7 +114,10 @@ return [
     |
     */
 
-    'migrations' => 'migrations',
+    'migrations' => [
+        'table' => 'migrations',
+        'update_date_on_publish' => false, // disable to preserve original behavior for existing applications
+    ],
 
     /*
     |--------------------------------------------------------------------------

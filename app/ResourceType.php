@@ -2,7 +2,9 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * App\ResourceType
@@ -17,6 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceItem[] $items
  * @property-read int|null $items_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceType newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceType newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceType query()
@@ -28,10 +31,13 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceType wherePosition($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceType whereTeach($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceType whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class ResourceType extends Model
 {
+    use HasFactory;
+
     protected $guarded = [];
 
     protected $attributes = [
@@ -40,8 +46,8 @@ class ResourceType extends Model
         'teach' => false,
     ];
 
-    public function items()
+    public function items(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceItem');
+        return $this->belongsToMany(\App\ResourceItem::class);
     }
 }

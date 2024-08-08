@@ -1,17 +1,15 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-class CreatePermissionTables extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         $tableNames = config('permission.table_names');
 
@@ -69,16 +67,14 @@ class CreatePermissionTables extends Migration
 
             $table->primary(['permission_id', 'role_id']);
 
-            app('cache')->forget('spatie.permission.cache');
+            //app('cache')->forget('spatie.permission.cache');
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         // Commented as it was throwing random errors in unit tests
         //$tableNames = config('permission.table_names');
@@ -89,4 +85,4 @@ class CreatePermissionTables extends Migration
         Schema::drop('roles');
         Schema::drop('permissions');
     }
-}
+};

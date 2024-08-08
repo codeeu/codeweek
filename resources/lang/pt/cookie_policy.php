@@ -15,7 +15,7 @@ return [
             <p>Desta forma, não tem de as voltar a indicar enquanto percorre o sítio durante a mesma visita.</p>
 
             <p>Os <i>cookies</i> também podem ser usados para recolher dados estatísticos anónimos sobre a experiência de navegação nos nossos sítios.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Como usamos os <i>cookies</i>?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Os <strong>três tipos de <i>cookies</i> de origem</strong> que usamos servem para:',
             '1' => 'guardar as preferências dos visitantes',
             '2' => 'garantir o bom funcionamento dos nossos sítios Web',
-            '3' => 'recolher dados analíticos (acerca do comportamento do utilizador)'
+            '3' => 'recolher dados analíticos (acerca do comportamento do utilizador)',
         ],
         'table' => [
-            'name'=>'Nome',
-            'service'=>'Serviço',
-            'purpose'=>'Finalidade',
-            'type_duration'=>'Tipo e duração do <i>cookie</i><',
+            'name' => 'Nome',
+            'service' => 'Serviço',
+            'purpose' => 'Finalidade',
+            'type_duration' => 'Tipo e duração do <i>cookie</i><',
         ],
         'visitor_preferences' => [
-            'title'=> 'Preferências dos visitantes',
-            'text'=> '<p>Estes <i>cookies</i> são instalados por nós e só nós os podemos ler. Estes <i>cookies</i> registam:</p>',
-            'item'=> 'se aceitou (ou recusou) a política de <i>cookies</i> do sítio',
+            'title' => 'Preferências dos visitantes',
+            'text' => '<p>Estes <i>cookies</i> são instalados por nós e só nós os podemos ler. Estes <i>cookies</i> registam:</p>',
+            'item' => 'se aceitou (ou recusou) a política de <i>cookies</i> do sítio',
             'table' => [
                 '1' => [
                     'service' => '<i>Kit</i> de autorização de <i>cookies</i>',
                     'purpose' => 'Guardar as suas preferências em matéria de <i>cookies</i> (para não voltarmos a fazer a mesma pergunta)',
                     'type_duration' => '<i>Cookie</i> de sessão de origem que é apagado quando fecha o navegador',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => '<i>Cookies</i> funcionais',
             'text' => '<p>Há <i>cookies</i> sem os quais determinadas páginas não funcionam, pelo que a sua instalação não está dependente do seu consentimento. Trata-se, nomeadamente, de:</p>',
-            'item' => '<i>cookies</i> técnicos obrigatórios para determinados sistemas informáticos'
+            'item' => '<i>cookies</i> técnicos obrigatórios para determinados sistemas informáticos',
         ],
         'technical_cookies' => [
             'title' => '<i>Cookies </i>técnicos',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Guardar a preferência de língua do utilizador',
                     'type_duration' => '<i>Cookie</i> de sessão de origem que é apagado quando fecha o navegador',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => '<i>Cookies</i> analíticos',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Serviço de análise da Web, com base no <i>software</i> de fonte aberta Matomo',
                     'purpose' => 'Identificar as páginas vistas pelo mesmo utilizador durante a mesma visita (de forma anónima, uma vez que não são recolhidas informações pessoais sobre o utilizador).',
                     'type_duration' => '<i>Cookie</i> persistente de origem, 30 minutos',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Para aceder a estes conteúdos de terceiros, deve começar por aceitar as suas condições específicas, nomeadamente as políticas em matéria de <i>cookies</i>, em relação às quais não temos qualquer controlo.</p>
 
                 <p>Contudo, caso não visualize este tipo de conteúdos, não serão instalados nenhuns <i>cookies</i> de terceiros no seu dispositivo.</p>Prestadores de serviços no sítio Web da Semana Europeia da Programação',
-            '2' => 'Os serviços prestados por terceiros escapam ao controlo do sítio Web da Semana Europeia da Programação. Os prestadores podem, em qualquer momento, alterar as condições do serviço, a utilização e a finalidade dos <i>cookies</i>, etc.'
-        ]
+            '2' => 'Os serviços prestados por terceiros escapam ao controlo do sítio Web da Semana Europeia da Programação. Os prestadores podem, em qualquer momento, alterar as condições do serviço, a utilização e a finalidade dos <i>cookies</i>, etc.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Como gerir os <i>cookies</i>?',
@@ -109,6 +109,6 @@ return [
 
             <p>Para apagar todos os <i>cookies</i> já instalados no seu dispositivo, limpe o histórico de navegação do seu navegador. Esta ação apaga todos os <i>cookies</i> de todos os sítios Web que visitou.</p>
 
-            <p>Tenha em conta que também pode perder algumas informações guardadas (dados de início de sessão, preferências, etc.).</p><strong>Gerir <i>cookies</i> específicos do sítio</strong><p>Para informações mais pormenorizadas sobre como controlar os <i>cookies</i> específicos de um determinado sítio, consulte os parâmetros em matéria de privacidade e de <i>cookies</i> do seu navegador.</p><strong>Bloquear <i>cookies</i></strong><p>A maioria dos navegadores modernos permite-lhe impedir a instalação de <i>cookies</i> no seu dispositivo. Se optar por o fazer, poderá ter de ajustar manualmente algumas preferências sempre que visitar um sítio ou página e alguns serviços e funcionalidades poderão não funcionar corretamente (por exemplo, início de sessão com o seu perfil).</p><strong>Gerir <i>cookies </i>analíticos</strong><p>Para gerir as suas preferências em matéria de <i>cookies</i> analíticos, consulte a <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">página dedicada</a>.</p>'
-    ]
+            <p>Tenha em conta que também pode perder algumas informações guardadas (dados de início de sessão, preferências, etc.).</p><strong>Gerir <i>cookies</i> específicos do sítio</strong><p>Para informações mais pormenorizadas sobre como controlar os <i>cookies</i> específicos de um determinado sítio, consulte os parâmetros em matéria de privacidade e de <i>cookies</i> do seu navegador.</p><strong>Bloquear <i>cookies</i></strong><p>A maioria dos navegadores modernos permite-lhe impedir a instalação de <i>cookies</i> no seu dispositivo. Se optar por o fazer, poderá ter de ajustar manualmente algumas preferências sempre que visitar um sítio ou página e alguns serviços e funcionalidades poderão não funcionar corretamente (por exemplo, início de sessão com o seu perfil).</p><strong>Gerir <i>cookies </i>analíticos</strong><p>Para gerir as suas preferências em matéria de <i>cookies</i> analíticos, consulte a <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">página dedicada</a>.</p>',
+    ],
 ];

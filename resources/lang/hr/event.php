@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Javna adresa e-pošte',
-        'placeholder' => 'Želite li prikazati adresu e-pošte za kontaktiranje?'
+        'placeholder' => 'Želite li prikazati adresu e-pošte za kontaktiranje?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresa',
         'placeholder' => 'Gdje će se održati aktivnost?',
     ],
-
 
     'organizertype' => [
         'label' => 'Vrsta organizacije',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Proširena stvarnost',
         'Artificial intelligence' => 'Umjetna inteligencija',
         'Motivation and awareness raising' => 'Motivacija i podizanje svijesti',
-        'Promoting diversity' => 'Promicanje različitosti'
+        'Promoting diversity' => 'Promicanje različitosti',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KÔD CODE WEEK 4 ALL',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'nacionalnih ambasadora',
         'phrase5' => 'ili nam pošaljite',
         'phrase6' => 'poruku e-pošte',
-        'phrase7' => 'Svoj kôd Code Week 4 all možete podijelit s drugima:'
+        'phrase7' => 'Svoj kôd Code Week 4 all možete podijelit s drugima:',
     ],
     'activitytype' => [
         'label' => 'Tip aktivnosti',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Internetska aktivnost slobodnog sudjelovanja',
         'invite-online' => 'Internetska aktivnost po pozivu',
         'open-in-person' => 'Aktivnost slobodnog sudjelovanja',
-        'invite-in-person' => 'Aktivnost po pozivu'
+        'invite-in-person' => 'Aktivnost po pozivu',
 
     ],
     'privacy' => 'Pročitao-la sam i prihvaćam uvjete u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Ovdje pogledajte svoju potvrdu',
     'submit_event_and_report' => 'Predajte prijavu ovog događanja i zatražite svoju potvrdu za Tjedan programiranja.',
     'report_and_claim' => 'Prijavite događanje i zatražite potvrdu',
-
 
 ];

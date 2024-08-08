@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 return [
 
@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Numele școlii',
-    'location'           => 'Locația școlii',
-    'description'                => 'Descrierea școlii',
-    'school'                => 'Școală',
-    'add'                => 'Adăugare',
-    'list'                => 'Listă',
+    'name' => 'Numele școlii',
+    'location' => 'Locația școlii',
+    'description' => 'Descrierea școlii',
+    'school' => 'Școală',
+    'add' => 'Adăugare',
+    'list' => 'Listă',
     'required' => [
-        'name'=>'Este necesar numele școlii',
-        'location'=>'Este necesară locația școlii',
-    ]
-
+        'name' => 'Este necesar numele școlii',
+        'location' => 'Este necesară locația școlii',
+    ],
 
 ];

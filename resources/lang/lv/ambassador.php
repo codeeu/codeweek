@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'ES programmēšanas nedēļas vēstnieki',
-    'your_current_country'=>'Jūsu pašreizējā valsts',
-    'visit_the'=> 'Apmeklējiet',
-    'local_facebook_page'=>'vietējo Facebook lapu',
-    'local_website'=>'Vietējā vietne',
-    'ambassadors'=>'Vēstnieki',
-    'no_ambassadors'=>'Vēl nav vēstnieku',
-    'countries_with_ambassadors'=>'Valstis, kurās ir vēstnieki',
-    'why_dont_you_volunteer'=>'Vai vēlaties kļūt par brīvprātīgo?'
+    'your_current_country' => 'Jūsu pašreizējā valsts',
+    'visit_the' => 'Apmeklējiet',
+    'local_facebook_page' => 'vietējo Facebook lapu',
+    'local_website' => 'Vietējā vietne',
+    'ambassadors' => 'Vēstnieki',
+    'no_ambassadors' => 'Vēl nav vēstnieku',
+    'countries_with_ambassadors' => 'Valstis, kurās ir vēstnieki',
+    'why_dont_you_volunteer' => 'Vai vēlaties kļūt par brīvprātīgo?',
 
 ];

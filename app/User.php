@@ -3,19 +3,25 @@
 namespace App;
 
 use App\Achievements\Achievement;
+use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Helpers\TagsHelper;
 use Attribute;
 use Cache;
 use Carbon\Carbon;
 use DB;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
-use App\Filters\UserFilters;
 
 /**
  * App\User
@@ -87,12 +93,12 @@ use App\Filters\UserFilters;
  * @method static \Illuminate\Database\Query\Builder|User withoutTrashed()
  * @mixin \Eloquent
  */
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
-    use Notifiable;
+    use HasFactory;
     use HasRoles;
+    use Notifiable;
     use SoftDeletes;
-
     /**
      * The attributes that are mass assignable.
      *
@@ -108,14 +114,18 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
-        'remember_token',
-        'magic_key'
+        'password', 'remember_token', 'magic_key'
     ];
 
     protected $appends = ['fullName'];
 
-    protected $dates = ['consent_given_at', 'future_consent_given_at'];
+    protected array $dates = ['consent_given_at', 'future_consent_given_at'];
+
+    protected $casts = [
+        'consent_given_at' => 'datetime',
+        'future_consent_given_at' => 'datetime',
+
+    ];
 
 
     public function getName()
@@ -159,6 +169,7 @@ class User extends Authenticatable
 
     public function setLeadingTeacherAttribute($value)
     {
+
         if ($value) {
             $this->assignRole('leading teacher');
         } else {
@@ -266,14 +277,16 @@ class User extends Authenticatable
         $this->getExperience($year)->update(
             ["points" => 0]
         );
+
+
     }
 
     public function getPoints($year = null)
     {
-        if (is_null($year)) {
-            $year = Carbon::now()->year;
-        }
+        if (is_null($year)) $year = Carbon::now()->year;
         return $this->getExperience($year)->points;
+
+
     }
 
     public function getExperience($year = null)
@@ -297,10 +310,10 @@ class User extends Authenticatable
 
     public function awardExperience($points, $year = null)
     {
-        if (is_null($year)) {
-            $year = Carbon::now()->year;
-        }
+
+        if (is_null($year)) $year = Carbon::now()->year;
         $this->getExperience($year)->awardExperience($points);
+
     }
 
     public function stripExperience($points, $year = null)
@@ -309,6 +322,7 @@ class User extends Authenticatable
             $year = Carbon::now()->year;
         }
         $this->getExperience($year)->stripExperience($points);
+
     }
 
 
@@ -339,6 +353,8 @@ class User extends Authenticatable
         array_push($arr, $filename);
         $glued = implode("/", $arr);
         return $glued;
+
+
     }
 
 
@@ -367,6 +383,7 @@ class User extends Authenticatable
 
     public function activities($edition)
     {
+
         return DB::table('events')
             ->where('creator_id', '=', $this->id)
             ->where('status', "=", "APPROVED")
@@ -377,6 +394,7 @@ class User extends Authenticatable
 
     public function reported($edition = null)
     {
+
         $query = DB::table('events')
             ->where('creator_id', '=', $this->id)
             ->where('status', "=", "APPROVED")
@@ -441,6 +459,7 @@ class User extends Authenticatable
 
     public function getEventsToReviewCount()
     {
+
         if (auth()->user()->isAmbassador()) {
             return EventHelper::getPendingEventsCount($this->country_iso);
         }
@@ -457,6 +476,7 @@ class User extends Authenticatable
 
     public function getNextPendingEvent(Event $event)
     {
+
         if (auth()->user()->isAmbassador()) {
             return EventHelper::getNextPendingEvent($event, $this->country_iso);
         }
