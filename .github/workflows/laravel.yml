@@ -26,6 +26,7 @@ jobs:
     - name: Install Dependencies
       run: |
           php --version
+          rm -f composer.lock
           composer config http-basic.nova.laravel.com ${{ secrets.NOVA_USERNAME }} ${{ secrets.NOVA_PASSWORD }}
           composer install -n --prefer-dist
     - name: Generate key
