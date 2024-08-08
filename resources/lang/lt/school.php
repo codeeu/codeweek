@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Mokyklos pavadinimas',
-    'location'           => 'Mokyklos adresas',
-    'description'                => 'Mokyklos aprašymas',
-    'school'                => 'Mokykla',
-    'add'                => 'Įtraukti',
-    'list'                => 'Sąrašas',
+    'name' => 'Mokyklos pavadinimas',
+    'location' => 'Mokyklos adresas',
+    'description' => 'Mokyklos aprašymas',
+    'school' => 'Mokykla',
+    'add' => 'Įtraukti',
+    'list' => 'Sąrašas',
     'required' => [
-        'name'=>'Nurodykite mokyklos pavadinimą',
-        'location'=>'Nurodykite mokyklos adresą',
-    ]
-
+        'name' => 'Nurodykite mokyklos pavadinimą',
+        'location' => 'Nurodykite mokyklos adresą',
+    ],
 
 ];

@@ -3,19 +3,17 @@
 namespace App\Helpers;
 
 use App\User;
-use Carbon\Carbon;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Str;
 
 class UserHelper
 {
-
     public static function deleteInactiveUsers($nonActivityYears)
     {
         $deletedUsers = User::whereDate('updated_at', '<=',
             now()->subYear($nonActivityYears))
             ->delete();
+
         return $deletedUsers;
     }
 
@@ -28,14 +26,12 @@ class UserHelper
     {
         $users = User::where('email', '=', $email)->get();
 
-
         if (count($users) == 0) {
             //Create User
             return self::createUser($email);
-        };
+        }
 
         return $users[0];
-
 
     }
 
@@ -49,7 +45,7 @@ class UserHelper
                 'username' => 'Unknown User',
                 'password' => bcrypt(Str::random()),
                 'email_display' => $email,
-                'email' => $email
+                'email' => $email,
             ]
         );
 

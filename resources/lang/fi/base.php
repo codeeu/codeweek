@@ -41,7 +41,7 @@ return [
         'cnr' => 'montenegro',
         'sr' => 'serbia',
         'mt' => 'malta ',
-        'tr' => 'turkki'
+        'tr' => 'turkki',
     ],
 
     'resources_local_title' => 'Koodausaineistoja maasta',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Onko sinulla kysyttävää?',
     'drop_us_a_line' => 'Kirjoita meille!',
     'get_in_touch' => 'OTA YHTEYTTÄ',
-    'footer_msg' =>
-        'Vapaaehtoisvoimin ja Euroopan komission tuella järjestettävä ruohonjuuritason aloite.',
+    'footer_msg' => 'Vapaaehtoisvoimin ja Euroopan komission tuella järjestettävä ruohonjuuritason aloite.',
     'display_email' => 'Näytä sähköposti',
     'first_name' => 'Etunimi',
     'last_name' => 'Sukunimi',
@@ -66,5 +65,5 @@ return [
     'codeweek' => 'Koodausviikko',
     'bring_codeweek_to_your_students' => 'Ota oppilaat mukaan koodausviikkoon',
     'or' => 'tai',
-    'newsletter' => 'Uutiskirje'
+    'newsletter' => 'Uutiskirje',
 ];

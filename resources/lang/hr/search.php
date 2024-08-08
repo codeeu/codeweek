@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Publika',
-    'theme_title'=>'Tema',
-    
+    'audience_title' => 'Publika',
+    'theme_title' => 'Tema',
+
     'placeholder' => 'Traži po nazivu ili oznaci događanja',
     'submit' => 'Traži',
     'label_country' => 'Odaberi zemlju',
     'last_year_events' => [
         'label' => 'Uključi prošlogodišnja događanja',
         'yes' => 'Da',
-        'no' => 'Ne'
+        'no' => 'Ne',
     ],
     'search_counter' => 'odgovara kriterijima vaše pretrage',
-    'event'=>'događanje',
-    'events'=>'događanja',
+    'event' => 'događanje',
+    'events' => 'događanja',
     'year' => 'év',
-    'audiences'=>'Ciljane skupine','themes'=>'Teme','countries'=>'Države','search_placeholder' => 'Pretraživanje po naslovu  ili opisu',
+    'audiences' => 'Ciljane skupine', 'themes' => 'Teme', 'countries' => 'Države', 'search_placeholder' => 'Pretraživanje po naslovu  ili opisu',
 ];

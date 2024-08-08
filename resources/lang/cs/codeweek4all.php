@@ -22,15 +22,15 @@ return [
             '1' => 'Klikněte na Odeslat.',
             '2' => 'Po přijetí vaší aktivity obdržíte e-mail s potvrzením a s jedinečným kódem pro soutěž Code Week 4 All.',
             '3' => 'Kód si zkopírujte a předejte jej kolegům a dalším osobám ve vaší síti, kteří také organizují programovací akci. Informace dále šiřte, aby se zapojili i další!',
-            '4' => 'Na konci kampaně budou všichni organizátoři aktivit požádáni o zprávu o tom, kolik účastníků se jim podařilo zapojit. Pokud se vám podařilo dosáhnout prahové hodnoty, vy a vaši kolegové, kteří byli součástí vaší sítě, obdržíte Certifikát o špičkové úrovni!'
+            '4' => 'Na konci kampaně budou všichni organizátoři aktivit požádáni o zprávu o tom, kolik účastníků se jim podařilo zapojit. Pokud se vám podařilo dosáhnout prahové hodnoty, vy a vaši kolegové, kteří byli součástí vaší sítě, obdržíte Certifikát o špičkové úrovni!',
         ],
         'existing_alliance' => [
             'title' => 'Pokud se chcete přidat ke stávající alianci:',
             '1' => 'Vložte heslo obdržené od iniciátora, který alianci vytvořil, do pole KÓD CODE WEEK 4 ALL.',
             '2' => 'Klikněte na Odeslat.',
             '3' => 'Dejte o akci vědět (a šiřte kód!), aby se do vaší aliance přidali další organizátoři.',
-            '4' => 'Na konci kampaně budou všichni organizátoři aktivit požádáni o zprávu o tom, kolik účastníků se jim podařilo zapojit. Pokud se vám podařilo dosáhnout prahové hodnoty, vy a vaši kolegové, kteří byli součástí vaší sítě, obdržíte Certifikát o špičkové úrovni!'
-        ]
+            '4' => 'Na konci kampaně budou všichni organizátoři aktivit požádáni o zprávu o tom, kolik účastníků se jim podařilo zapojit. Pokud se vám podařilo dosáhnout prahové hodnoty, vy a vaši kolegové, kteří byli součástí vaší sítě, obdržíte Certifikát o špičkové úrovni!',
+        ],
     ],
     'why' => [
         'title' => 'Proč se do soutěže zapojit?',
@@ -38,9 +38,9 @@ return [
         '2' => 'Aby se zapojil větší počet studentů.',
         '3' => 'Aby se vybudovaly vazby mezi organizátory a/nebo školami ve vaší obci nebo na mezinárodní úrovni.',
         '4' => 'Abyste získali podporu dalších organizátorů a učitelů.',
-        '5' => 'Abyste získali <strong>Certifikát o špičkové úrovni.</strong>'
+        '5' => 'Abyste získali <strong>Certifikát o špičkové úrovni.</strong>',
     ],
     'superorganiser-title' => 'Certifikát superorganizátora',
-    'superorganiser' => 'Můžete také získat certifikát superorganizátora. Pokud ho chcete získat, zorganizujte a <a href="https://codeweek.eu/add">zaregistrujte</a> alespoň 10 samostatných aktivit, ať už ve škole, v organizaci nebo online.'
+    'superorganiser' => 'Můžete také získat certifikát superorganizátora. Pokud ho chcete získat, zorganizujte a <a href="https://codeweek.eu/add">zaregistrujte</a> alespoň 10 samostatných aktivit, ať už ve škole, v organizaci nebo online.',
 
 ];

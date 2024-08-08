@@ -142,7 +142,7 @@
 
                 </section>
 
-                <div id="mapid" style="width: 100%; height: 400px;"></div>
+                <div id="mapid" style="width: 100%; height: 400px; z-index: 10000"></div>
 
                 <section class="community_type_section">
                     <h2 class="subtitle">@lang('community.titles.3')</h2>
@@ -211,14 +211,13 @@
 
 @endsection
 
+@push('extra-css')
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+@endpush
 @push('scripts')
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 
     {{--    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>--}}
@@ -233,6 +232,12 @@
 @section('extra-js')
     <script src="{{asset('js/countriesGeoCentroids.js')}}" type="text/javascript"></script>
     <script>
+        // var map = L.map('mapid').setView([51.505, -0.09], 13);
+        //
+        // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //     maxZoom: 19,
+        //     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        // }).addTo(map);
 
         var mymap = L.map('mapid');
 

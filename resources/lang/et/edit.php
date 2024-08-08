@@ -29,12 +29,12 @@ return [
         'header' => 'Sinu kontaktteave',
         'text_1' => 'See teave on nähtav ainult ',
         'link_1' => 'ELi programmeerimisnädala Code Week saadikutele',
-        'text_2'=> ' ja Code Weeki
+        'text_2' => ' ja Code Weeki
         korraldajatele, kes
         vaatavad su ürituse üle, enne kui see kaardile ilmub, ja võivad võtta sinuga ühendust,
         kui on vaja midagi muuta või
         pärast üritust statistika jaoks küsitlust teha.',
-        'contact_email' => 'Sinu e-posti aadress'
-    ], 
-    'edit' => 'Muuda üritust'
+        'contact_email' => 'Sinu e-posti aadress',
+    ],
+    'edit' => 'Muuda üritust',
 ];

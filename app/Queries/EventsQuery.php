@@ -7,12 +7,11 @@ use App\Event;
 use App\Tag;
 use App\Theme;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EventsQuery
 {
-
     private static function getRandomString($n)
     {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -29,13 +28,12 @@ class EventsQuery
     public static function store(Request $request)
     {
 
-
         $request['status'] = 'PENDING';
 
         $request['slug'] = str_slug($request['title'], '-');
 
         if (strlen($request['slug']) == 0) {
-            abort(503,'Title error');
+            abort(503, 'Title error');
         }
 
         $request['pub_date'] = Carbon::now();
@@ -46,37 +44,35 @@ class EventsQuery
         $request['theme'] = explode(',', $request['theme']);
         $request['audience'] = explode(',', $request['audience']);
 
-        if (is_null($request['location']) && ($request['activity_type'] == "open-online" || $request['activity_type'] == "invite-online")) {
-            $request['location'] = "online";
-            $request['geoposition'] = "0,0";
+        if (is_null($request['location']) && ($request['activity_type'] == 'open-online' || $request['activity_type'] == 'invite-online')) {
+            $request['location'] = 'online';
+            $request['geoposition'] = '0,0';
         }
 
         if (is_null($request['geoposition'])) {
-            $request['geoposition'] = "0,0";
+            $request['geoposition'] = '0,0';
         }
 
-        $request['latitude'] = explode(",", $request['geoposition'])[0];
-        $request['longitude'] = explode(",", $request['geoposition'])[1];
+        $request['latitude'] = explode(',', $request['geoposition'])[0];
+        $request['longitude'] = explode(',', $request['geoposition'])[1];
 
         if (empty($request['codeweek_for_all_participation_code'])) {
-            $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
+            $codeweek_4_all_generated_code = 'cw'.Carbon::now()->format('y').'-'.str_random(5);
             $request['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
         }
 
         $event = Event::create($request->toArray());
 
-
-        if (!empty($request['tags'])) {
-            foreach (explode(",", $request['tags']) as $item) {
+        if (! empty($request['tags'])) {
+            foreach (explode(',', $request['tags']) as $item) {
                 $tag = Tag::firstOrCreate([
-                    "name" => trim($item),
-                    "slug" => str_slug(trim($item))
+                    'name' => trim($item),
+                    'slug' => str_slug(trim($item)),
                 ]);
 
                 $event->tags()->save($tag);
             }
         }
-
 
         foreach ($request['theme'] as $theme) {
 
@@ -89,10 +85,9 @@ class EventsQuery
             $event->audiences()->save($audience);
         }
 
-        if ($event->geoposition == "0,0") {
+        if ($event->geoposition == '0,0') {
             $event->relocate();
         }
-
 
         return $event;
     }
@@ -102,12 +97,12 @@ class EventsQuery
 
         //dd($event->status);
 
-        $request['latitude'] = explode(",", $request['geoposition'])[0];
-        $request['longitude'] = explode(",", $request['geoposition'])[1];
+        $request['latitude'] = explode(',', $request['geoposition'])[0];
+        $request['longitude'] = explode(',', $request['geoposition'])[1];
 
         //In order to appear again in the list for the moderators
-        if ($event->status == "REJECTED") {
-            $request['status'] = "PENDING";
+        if ($event->status == 'REJECTED') {
+            $request['status'] = 'PENDING';
         }
 
         $event->update($request->toArray());
@@ -116,10 +111,10 @@ class EventsQuery
         $request['audience'] = explode(',', $request['audience']);
 
         $tagsArray = [];
-        foreach (explode(",", $request['tags']) as $item) {
+        foreach (explode(',', $request['tags']) as $item) {
             $tag = Tag::firstOrCreate([
-                "name" => trim($item),
-                "slug" => str_slug(trim($item))
+                'name' => trim($item),
+                'slug' => str_slug(trim($item)),
             ]);
             array_push($tagsArray, $tag->id);
         }
@@ -130,6 +125,4 @@ class EventsQuery
 
         return $event;
     }
-
-
 }

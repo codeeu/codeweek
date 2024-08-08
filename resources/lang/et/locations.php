@@ -1,10 +1,9 @@
 <?php
 
-
 return [
-    'title' => "Tegevuse toimumiskohad",
+    'title' => 'Tegevuse toimumiskohad',
     'description' => [
-        "Valige oma järgmise tegevuse toimumiskoht allpool olevast loetelust VÕI registreerige uus toimumiskoht",
-        "tegevuse loomises"
-    ]
+        'Valige oma järgmise tegevuse toimumiskoht allpool olevast loetelust VÕI registreerige uus toimumiskoht',
+        'tegevuse loomises',
+    ],
 ];

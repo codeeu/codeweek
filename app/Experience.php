@@ -4,23 +4,27 @@ namespace App;
 
 use App\Achievements\Events\UserEarnedExperience;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Experience extends Model
 {
     protected $guarded = [];
 
-    public function user()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo('App\User', 'user_id', 'id');
+        return $this->belongsTo(\App\User::class, 'user_id', 'id');
     }
 
     public function awardExperience($points)
     {
         $this->increment('points', $points);
 
-        if (app()->runningInConsole() && !app()->runningUnitTests()) return $this;
+        if (app()->runningInConsole() && ! app()->runningUnitTests()) {
+            return $this;
+        }
 
         UserEarnedExperience::dispatch($this->user, $points, $this->points);
+
         return $this;
     }
 
@@ -32,7 +36,7 @@ class Experience extends Model
         }
         $this->update(['points' => $this->points]);
         UserEarnedExperience::dispatch($this->user, $points, $this->points);
+
         return $this;
     }
-
 }

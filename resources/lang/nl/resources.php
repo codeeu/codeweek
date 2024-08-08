@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Hoe organiseer je een activiteit?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Russisch',
-            'Norwegian'=>'Noors',
-            'Mandarin'=>'Mandarijn',
-            'Japanese'=>'Japans',
-            'All targeted languages' => 'Alle beoogde talen'
+            'Russian' => 'Russisch',
+            'Norwegian' => 'Noors',
+            'Mandarin' => 'Mandarijn',
+            'Japanese' => 'Japans',
+            'All targeted languages' => 'Alle beoogde talen',
         ],
         'levels' => [
             'Beginner' => 'Beginner',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Onderbouw middelbare school (12-16)',
             'Upper secondary school (16-18)' => 'Bovenbouw middelbare school (16-18)',
             'Higher Education' => 'Hoger onderwijs',
-            'Other' => 'Overige'
+            'Other' => 'Overige',
         ],
         'subjects' => [
             'Art' => 'Kunst',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Natuurkunde',
             'Coding' => 'Codering',
             'Special Education Needs' => 'Bijzondere onderwijsbehoeften',
-            'Other' => 'Overige'
+            'Other' => 'Overige',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Toolkit',
             'Other' => 'Overige',
             'Lesson Plan' => 'Lesplan',
-            'Guide' => 'Gids'
+            'Guide' => 'Gids',
         ],
         'categories' => [
             'Coding' => 'Codering',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Vervaardiging',
             'Tinkering' => 'Knutselen',
             'Unplugged Activities' => 'Activiteiten zonder computer',
-            'Other' => 'Overige'
-        ]
-    ]
+            'Other' => 'Overige',
+        ],
+    ],
 
 ];

@@ -16,5 +16,5 @@ return [
     'no_reports' => 'M’hemm l-ebda avveniment irrapportat s’issa.',
     'report' => 'L-avvenimenti elenkati hawn taħt bdew jew diġà ntemmu. Imla xi ftit numri għal
     għanijiet statistiċi għall-avveniment u iġbor iċ-ċertifikat tal-parteċipazzjoni tal-Ġimgħa tal-Kodiċi tiegħek. Inti
-    tikseb ċertifikat wieħed għal kull avveniment.'
+    tikseb ċertifikat wieħed għal kull avveniment.',
 ];

@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'E-mail pubblica',
-        'placeholder' => 'Desideri visualizzare un’e-mail di contatto?'
+        'placeholder' => 'Desideri visualizzare un’e-mail di contatto?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Indirizzo',
         'placeholder' => 'Dove avrà luogo l’attività?',
     ],
-
 
     'organizertype' => [
         'label' => 'Tipo di organizzazione',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Realtà aumentata',
         'Artificial intelligence' => 'Intelligenza artificiale',
         'Motivation and awareness raising' => 'Motivazione e sensibilizzazione',
-        'Promoting diversity' => 'Promuovere la diversità'
+        'Promoting diversity' => 'Promuovere la diversità',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CODICE CODE WEEK 4 ALL',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'Ambasciatori nazionali',
         'phrase5' => 'oppure inviaci',
         'phrase6' => 'un’e-mail',
-        'phrase7' => 'Puoi condividere il tuo codice Codeweek for all con altre persone:'
+        'phrase7' => 'Puoi condividere il tuo codice Codeweek for all con altre persone:',
     ],
     'activitytype' => [
         'label' => 'Tipo di attività',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Attività online aperta',
         'invite-online' => 'Attività online privata',
         'open-in-person' => 'Attività presenziale aperta',
-        'invite-in-person' => 'Attività presenziale privata'
+        'invite-in-person' => 'Attività presenziale privata',
 
     ],
     'privacy' => 'Dichiaro di aver letto e accetto l\'informativa sulla privacy descritta nel documento',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Visualizza qui il tuo certificato',
     'submit_event_and_report' => 'Presenta una relazione su quest’evento e chiedi il tuo certificato della settimana della programmazione.',
     'report_and_claim' => 'Segnala l’evento e chiedi il certificato',
-
 
 ];

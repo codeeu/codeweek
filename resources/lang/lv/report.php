@@ -25,27 +25,25 @@ return [
         'label' => 'Dalībnieku skaits',
     ],
     'average_participant_age' => [
-        'label'=>'Vidējais dalībnieku vecums',
+        'label' => 'Vidējais dalībnieku vecums',
     ],
     'percentage_of_females' => [
         'label' => 'Sieviešu procents',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => '“Programmēšanas nedēļa visiem” dalības kods',
-        'help' => 'Ja jums ir Codeweek4All spēku pārbaudes kods, jūs varat to šeit norādīt. Ja jūs nepiedalāties, ignorējiet šo lauku.'
+        'help' => 'Ja jums ir Codeweek4All spēku pārbaudes kods, jūs varat to šeit norādīt. Ja jūs nepiedalāties, ignorējiet šo lauku.',
     ],
     'name_for_certificate' => [
         'label' => 'Uz sertifikāta norādāmais vārds',
-        'help' => 'Nomainiet to, norādot tā pasākuma organizētāja vārdu/nosaukumu, kuram jāizsniedz šis programmēšanas nedēļas dalībnieka sertifikāts. Lūdzu, lietojiet tikai ASCII (latīņu) burtus. Burti ar garumzīmēm, uzsvariem utt. nav atbalstīti.'
+        'help' => 'Nomainiet to, norādot tā pasākuma organizētāja vārdu/nosaukumu, kuram jāizsniedz šis programmēšanas nedēļas dalībnieka sertifikāts. Lūdzu, lietojiet tikai ASCII (latīņu) burtus. Burti ar garumzīmēm, uzsvariem utt. nav atbalstīti.',
     ],
     'submit' => 'Iesniegt paziņojumu par pasākumu',
-    'thanks_page'=>[
-        'title'=>'Paldies par paziņošanu par pasākumu!',
-        'certificate_ready'=>'Jūsu sertifikāts ir gatavs.',
-        'download_button'=>'Noklikšķiniet šeit, lai lejupielādētu to.',
-        'back_events'=>'Atgriezieties pie sava pasākuma'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Paldies par paziņošanu par pasākumu!',
+        'certificate_ready' => 'Jūsu sertifikāts ir gatavs.',
+        'download_button' => 'Noklikšķiniet šeit, lai lejupielādētu to.',
+        'back_events' => 'Atgriezieties pie sava pasākuma',
+    ],
 
 ];

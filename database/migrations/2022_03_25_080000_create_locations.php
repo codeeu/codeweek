@@ -8,15 +8,13 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
 
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
-            $table->float('latitude', 12,6);
+            $table->float('latitude', 12, 6);
             $table->float('longitude', 12, 6);
             $table->string('trimmed_geoposition', 20);
             $table->string('geoposition', 42);
@@ -40,10 +38,8 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('locations');
     }

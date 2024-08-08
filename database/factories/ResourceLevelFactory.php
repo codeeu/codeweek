@@ -1,11 +1,9 @@
 <?php
 
-use Faker\Generator as Faker;
-
-$factory->define(App\ResourceLevel::class, function (Faker $faker) {
+$factory->define(App\ResourceLevel::class, function () {
     return [
-        'name' => $faker->text(40),
-        'position' => $faker->numberBetween(1,20)
+        'name' => $this->faker->text(40),
+        'position' => $this->faker->numberBetween(1, 20),
 
     ];
 });

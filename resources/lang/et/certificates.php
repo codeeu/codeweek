@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Tunnistused: ',
-    'no_certificates' => 'Tunnistusi veel ei ole.'
+    'no_certificates' => 'Tunnistusi veel ei ole.',
 ];

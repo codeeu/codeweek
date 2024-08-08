@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Како да организираш активност?',
     'resources' => [
         'languages' => [
-            'Russian'=>'руски',
-            'Norwegian'=>'норвешки',
-            'Mandarin'=>'мандарински',
-            'Japanese'=>'јапонски',
-            'All targeted languages' => 'Сите целни јазици'
+            'Russian' => 'руски',
+            'Norwegian' => 'норвешки',
+            'Mandarin' => 'мандарински',
+            'Japanese' => 'јапонски',
+            'All targeted languages' => 'Сите целни јазици',
         ],
         'levels' => [
             'Beginner' => 'Почетно ниво',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Повисоки класови во основно и пониски класови во средно училиште (12-16)',
             'Upper secondary school (16-18)' => 'Повисоки класови во седно училиште (16-18)',
             'Higher Education' => 'Високо образование',
-            'Other' => 'Друго'
+            'Other' => 'Друго',
         ],
         'subjects' => [
             'Art' => 'Уметност',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Физика',
             'Coding' => 'Кодирање',
             'Special Education Needs' => 'Посебни образовни потреби',
-            'Other' => 'Друго'
+            'Other' => 'Друго',
         ],
         'types' => [
             'Tutorial' => 'Туторијал',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Комплет',
             'Other' => 'Друго',
             'Lesson Plan' => 'Наставен план',
-            'Guide' => 'Упатство'
+            'Guide' => 'Упатство',
         ],
         'categories' => [
             'Coding' => 'Кодирање',
@@ -76,9 +76,8 @@ return [
             'Making' => 'Конструирање',
             'Tinkering' => 'Поправање',
             'Unplugged Activities' => 'Активности без интернет',
-            'Other' => 'Друго'
-        ]
-    ]
-    
+            'Other' => 'Друго',
+        ],
+    ],
 
 ];

@@ -15,7 +15,7 @@ return [
             <p>Šādi tiek nodrošināts, ka jums nav katru reizi no jauna jāievada šie dati, kad jūs pārlūkojat vietni viena un tā paša apmeklējuma laikā.</p>
 
             <p>Sīkfailus var arī izmantot, lai veidotu anonimizētu statistiku par mūsu vietņu pārlūkošanas paradumiem.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Kā mēs izmantojam sīkfailus?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Mēs izmantojam 3 veidu pirmās puses sīkfailus</strong> šādiem mērķiem:',
             '1' => 'saglabāt apmeklētāju preferences;',
             '2' => 'nodrošināt mūsu tīmekļa vietņu darbību;',
-            '3' => 'vākt analītiskos datus (par lietotāju uzvedību).'
+            '3' => 'vākt analītiskos datus (par lietotāju uzvedību).',
         ],
         'table' => [
-            'name'=>'Nosaukums',
-            'service'=>'Pakalpojums',
-            'purpose'=>'Mērķis',
-            'type_duration'=>'Sīkfailu veids un ilgums',
+            'name' => 'Nosaukums',
+            'service' => 'Pakalpojums',
+            'purpose' => 'Mērķis',
+            'type_duration' => 'Sīkfailu veids un ilgums',
         ],
         'visitor_preferences' => [
-            'title'=> 'Apmeklētāju preferences',
-            'text'=> '<p>Šīs preferences iestatām mēs, un tikai mēs varam tās lasīt. Tās saglabā šādu informāciju:</p>',
-            'item'=> 'vai jūs piekritāt vai nepiekritāt šīs vietnes sīkfailu politikai',
+            'title' => 'Apmeklētāju preferences',
+            'text' => '<p>Šīs preferences iestatām mēs, un tikai mēs varam tās lasīt. Tās saglabā šādu informāciju:</p>',
+            'item' => 'vai jūs piekritāt vai nepiekritāt šīs vietnes sīkfailu politikai',
             'table' => [
                 '1' => [
                     'service' => 'Sīkfailu piekrišanas komplekts',
                     'purpose' => 'Saglabā jūsu sīkfailu preferences (lai jums netiktu jautāts atkārtoti)',
                     'type_duration' => 'Pirmās puses sesijas sīkfaili, kurus izdzēš, kad jūs aizverat pārlūkprogrammu',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Darbības sīkfaili',
             'text' => ' <p>Ir tādi sīkfaili, kas mums jāiekļauj, lai nodrošinātu tīmekļa lapu darbību. Šī iemesla dēļ tiem nav nepieciešama jūsu piekrišana. Jo īpaši:</p>',
-            'item' => 'tehniskie sīkfaili, kurus pieprasa noteiktas IT sistēmas'
+            'item' => 'tehniskie sīkfaili, kurus pieprasa noteiktas IT sistēmas',
         ],
         'technical_cookies' => [
             'title' => 'Tehniskie sīkfaili',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Saglabā lietotāja izvēlēto valodu',
                     'type_duration' => 'Pirmās puses sesijas sīkfaili, kurus izdzēš, kad jūs aizverat pārlūkprogrammu',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analītiskie sīkfaili',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Tīmekļa analītikas pakalpojums, kura pamatā izmantota <i>Matomo</i> atklātā pirmkoda programmatūra',
                     'purpose' => 'Identificē lapas, kuras viens un tas pats lietotājs aplūko viena apmeklējuma laikā. (Anonīmi — netiek vākta personas informācija par lietotāju).',
                     'type_duration' => 'Pirmās puses pastāvīgi sīkfaili, 30 minūtes',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Lai aplūkotu šo trešo pušu saturu, jums vispirms ir jāakceptē to īpašie noteikumi. Tas ietver šo pušu sīkfailu politiku, kuru mēs nekontrolējam.</p>
 
                 <p>Taču, ja jūs neaplūkojat šo saturu, trešās puses sīkfaili jūsu ierīcē netiek instalēti.</p>Trešo pušu pakalpojumu sniedzēji Programmēšanas nedēļas vietnē',
-            '2' => 'Programmēšanas nedēļas tīmekļa vietne nekontrolē šo trešo pušu pakalpojumus. Pakalpojumu sniedzēji var jebkurā laikā mainīt to pakalpojumu sniegšanas noteikumus, mērķi, sīkfailu lietošanas veidu u. tml.'
-        ]
+            '2' => 'Programmēšanas nedēļas tīmekļa vietne nekontrolē šo trešo pušu pakalpojumus. Pakalpojumu sniedzēji var jebkurā laikā mainīt to pakalpojumu sniegšanas noteikumus, mērķi, sīkfailu lietošanas veidu u. tml.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Kā jūs varat pārvaldīt sīkfailus?',
@@ -109,6 +109,6 @@ return [
 
             <p>Jūs varat izdzēst visus jūsu ierīcē esošos sīkfailus, notīrot jūsu pārlūkprogrammas pārlūkošanas vēsturi. Šādi tiek izdzēsti visi sīkfaili no visām jūsu apmeklētajām tīmekļa vietnēm.</p>
 
-            <p>Lūdzam ņemt vērā, ka šādi jūs varat zaudēt arī daļu saglabātās informācijas (piemēram, saglabāto pieteikšanās informāciju, vietņu preferences).</p><strong>Vietnei raksturīgu sīkfailu pārvaldība</strong><p>Lai detalizētāk pārvaldītu vietnei raksturīgus sīkfailus, iepazīstieties ar privātuma un sīkfailu iestatījumiem jūsu izmantotajā pārlūkprogrammā</p><strong>Sīkfailu bloķēšana</strong><p>Lielāko daļu mūsdienu pārlūkprogrammu var iestatīt tā, lai nepieļautu nekādu sīkfailu ievietošanu jūsu ierīcē, bet jums var nākties pēc tam manuāli pielāgot noteiktas preferences ik reizi, kad jūs apmeklējat kādu vietni/lapu. Tāpat ir iespējams, ka daļa pakalpojumu vai funkciju var vispār nedarboties (piemēram, pieteikšanās profilā).</p><strong>Mūsu analītisko sīkfailu pārvaldība</strong><p>Jūs varat pārvaldīt jūsu sīkfailu preferences attiecībā uz mūsu veikto analīzi <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">īpašajā lapā.</a></p>'
-    ]
+            <p>Lūdzam ņemt vērā, ka šādi jūs varat zaudēt arī daļu saglabātās informācijas (piemēram, saglabāto pieteikšanās informāciju, vietņu preferences).</p><strong>Vietnei raksturīgu sīkfailu pārvaldība</strong><p>Lai detalizētāk pārvaldītu vietnei raksturīgus sīkfailus, iepazīstieties ar privātuma un sīkfailu iestatījumiem jūsu izmantotajā pārlūkprogrammā</p><strong>Sīkfailu bloķēšana</strong><p>Lielāko daļu mūsdienu pārlūkprogrammu var iestatīt tā, lai nepieļautu nekādu sīkfailu ievietošanu jūsu ierīcē, bet jums var nākties pēc tam manuāli pielāgot noteiktas preferences ik reizi, kad jūs apmeklējat kādu vietni/lapu. Tāpat ir iespējams, ka daļa pakalpojumu vai funkciju var vispār nedarboties (piemēram, pieteikšanās profilā).</p><strong>Mūsu analītisko sīkfailu pārvaldība</strong><p>Jūs varat pārvaldīt jūsu sīkfailu preferences attiecībā uz mūsu veikto analīzi <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">īpašajā lapā.</a></p>',
+    ],
 ];

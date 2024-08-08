@@ -4,8 +4,9 @@ namespace App;
 
 use App\Filters\ResourceFilters;
 use Exception;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use phpDocumentor\Reflection\Types\String_;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * App\ResourceItem
@@ -34,6 +35,7 @@ use phpDocumentor\Reflection\Types\String_;
  * @property-read int|null $subjects_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceType[] $types
  * @property-read int|null $types_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem filter(\App\Filters\ResourceFilters $filters)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem newQuery()
@@ -50,10 +52,13 @@ use phpDocumentor\Reflection\Types\String_;
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereThumbnail($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereTwitter($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class ResourceItem extends Model
 {
+    use HasFactory;
+
     protected $guarded = [];
 
     protected $attributes = [
@@ -70,8 +75,7 @@ class ResourceItem extends Model
     public function getThumbnailAttribute($value)
     {
 
-
-        if (!strncmp($value, "http", 4) === 0) {
+        if (! strncmp($value, 'http', 4) === 0) {
             return config('codeweek.resources_url') + $value;
         }
 
@@ -79,118 +83,110 @@ class ResourceItem extends Model
 
     }
 
-
-    public function levels()
+    public function levels(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceLevel');
+        return $this->belongsToMany(\App\ResourceLevel::class);
     }
 
-    public function types()
+    public function types(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceType')->select(array('id', 'name', 'position'));
+        return $this->belongsToMany(\App\ResourceType::class)->select(['id', 'name', 'position']);
     }
 
-    public function subjects()
+    public function subjects(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceSubject');
+        return $this->belongsToMany(\App\ResourceSubject::class);
     }
 
-    public function categories()
+    public function categories(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceCategory');
+        return $this->belongsToMany(\App\ResourceCategory::class);
     }
 
-    public function programmingLanguages()
+    public function programmingLanguages(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceProgrammingLanguage', 'res_pl_pivot');
+        return $this->belongsToMany(\App\ResourceProgrammingLanguage::class, 'res_pl_pivot');
     }
 
-    public function languages()
+    public function languages(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceLanguage');
+        return $this->belongsToMany(\App\ResourceLanguage::class);
     }
 
-    public function attachTypes(String $typeNames)
+    public function attachTypes(string $typeNames)
     {
 
-        $typesIds = $this->getIdsFromNames($typeNames, '\App\ResourceType');
+        $typesIds = $this->getIdsFromNames($typeNames, \App\ResourceType::class);
 
         $this->types()->attach($typesIds);
     }
 
-    public function attachCategories(String $categoryNames)
+    public function attachCategories(string $categoryNames)
     {
 
-        $categoriesIds = $this->getIdsFromNames($categoryNames, '\App\ResourceCategory');
+        $categoriesIds = $this->getIdsFromNames($categoryNames, \App\ResourceCategory::class);
 
         $this->categories()->attach($categoriesIds);
     }
 
-    public function attachProgrammingLanguages(String $programmingLanguages)
+    public function attachProgrammingLanguages(string $programmingLanguages)
     {
 
-
-        if ($programmingLanguages === "All targeted programming languagues;") {
+        if ($programmingLanguages === 'All targeted programming languagues;') {
             return $this->programmingLanguages()->attach(ResourceProgrammingLanguage::all()->pluck('id')->toArray());
         } else {
-            $this->programmingLanguages()->attach($this->getIdsFromNames($programmingLanguages, '\App\ResourceProgrammingLanguage'));
+            $this->programmingLanguages()->attach($this->getIdsFromNames($programmingLanguages, \App\ResourceProgrammingLanguage::class));
         }
 
     }
 
-    public function attachLevels(String $levels)
+    public function attachLevels(string $levels)
     {
 
-        $this->levels()->attach($this->getIdsFromNames($levels, '\App\ResourceLevel'));
+        $this->levels()->attach($this->getIdsFromNames($levels, \App\ResourceLevel::class));
     }
 
-    public function attachSubjects(String $subjects)
+    public function attachSubjects(string $subjects)
     {
 
-        $this->subjects()->attach($this->getIdsFromNames($subjects, '\App\ResourceSubject'));
+        $this->subjects()->attach($this->getIdsFromNames($subjects, \App\ResourceSubject::class));
     }
 
-    public function attachLanguages(String $languages)
+    public function attachLanguages(string $languages)
     {
 
-
-        if ($languages === "All targeted languages;" || $languages === "All targeted languages") {
+        if ($languages === 'All targeted languages;' || $languages === 'All targeted languages') {
             return $this->languages()->attach(ResourceLanguage::all()->pluck('id')->toArray());
         }
 
-        return $this->languages()->attach($this->getIdsFromNames($languages, '\App\ResourceLanguage'));
-
+        return $this->languages()->attach($this->getIdsFromNames($languages, \App\ResourceLanguage::class));
 
     }
 
     /**
-     * @param $typesArr
-     * @return array
+     * @param  $typesArr
      */
     protected function getIdsFromNames($types, $resourceObject): array
     {
 
-
-        $typesArr = array_unique(array_map('trim', explode(";", $types)));
+        $typesArr = array_unique(array_map('trim', explode(';', $types)));
 
         $typesIds = [];
 
         foreach ($typesArr as $item) {
             if (strlen(ltrim($item)) > 0) {
 
-                $resourceType = $resourceObject::where("name", "like", ltrim($item));
+                $resourceType = $resourceObject::where('name', 'like', ltrim($item));
                 if (is_null($resourceType->first())) {
-                    throw new Exception("Unknown Resource Type: " . ltrim($item));
-                };
+                    throw new Exception('Unknown Resource Type: '.ltrim($item));
+                }
                 array_push($typesIds, $resourceType->first()->id);
-
 
                 //dump($type->first()->id);
 
             }
 
         }
-
 
         return $typesIds;
     }

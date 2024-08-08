@@ -2,20 +2,15 @@
 
 namespace App\Console\Commands\api;
 
-
-use App\BadenRSSItem;
 use Illuminate\Console\Command;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-
 
 class Muensterland extends Command
 {
-
     use GermanTraits;
+
     /**
      * The name and signature of the console command.
      *
@@ -40,48 +35,39 @@ class Muensterland extends Command
         parent::__construct();
     }
 
-    function parseDate($date)
+    public function parseDate($date)
     {
         return Carbon::parse($date);
     }
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
     public function handle()
     {
 
         $city = 'Muensterland';
 
-        $url = "https://muensterland.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
+        $url = 'https://muensterland.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943';
         dump("Loading $city events");
 
         $json = $this->loadJson($url);
 
-
-
         if (is_null($json)) {
             Log::info("!!! No data in feed from $city API:");
+
             return 0;
         }
 
         $this->createRSSItem($json, $city);
 
-
-
-        return Artisan::call("import:muensterland");
-
-
-
+        return Artisan::call('import:muensterland');
 
     }
 
     public function getCustomTag($item, $tag)
     {
-        return $item->get_item_tags("", $tag)[0]['data'];
+        return $item->get_item_tags('', $tag)[0]['data'];
 
     }
-
 }

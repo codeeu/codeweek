@@ -3,28 +3,35 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 
-class Podcast extends Model implements Feedable {
+class Podcast extends Model implements Feedable
+{
     //
     protected $guarded = [];
 
-    protected $casts = [
-        'release_date' => 'datetime'
-    ];
-
-    public function guests()
+    protected function casts(): array
     {
-        return $this->hasMany('App\PodcastGuest')->orderBy('position');
-    }
-    public function resources()
-    {
-        return $this->hasMany('App\PodcastResource')->orderBy('position');
+        return [
+            'release_date' => 'datetime',
+        ];
     }
 
-    public function scopeActive($query) {
+    public function guests(): HasMany
+    {
+        return $this->hasMany(\App\PodcastGuest::class)->orderBy('position');
+    }
+
+    public function resources(): HasMany
+    {
+        return $this->hasMany(\App\PodcastResource::class)->orderBy('position');
+    }
+
+    public function scopeActive($query)
+    {
         return $query
             ->where('active', true)
             ->where('release_date', '<=', Carbon::now());
@@ -42,7 +49,8 @@ class Podcast extends Model implements Feedable {
         ]);
     }*/
 
-    public function toFeedItem(): FeedItem {
+    public function toFeedItem(): FeedItem
+    {
         return FeedItem::create()
             ->id($this->id)
             ->title($this->title)
@@ -54,10 +62,11 @@ class Podcast extends Model implements Feedable {
             ->enclosureLength($this->filesize)
             ->authorName('EU Code Week')
             ->authorEmail('m.bailey@mcgroup.com')
-            ->image('https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/' . $this->image);
+            ->image('https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/'.$this->image);
     }
 
-    public static function getFeedItems() {
+    public static function getFeedItems()
+    {
         return Podcast::active()
             ->orderBy('release_date', 'DESC')
             ->get();

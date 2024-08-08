@@ -17,6 +17,6 @@ return [
     'reset' => 'Ihr Kennwort wurde zurückgesetzt!',
     'sent' => 'Wir haben Ihnen per E-Mail einen Link zum Zurücksetzen des Kennworts geschickt!',
     'token' => 'Der Token zum Zurücksetzen des Kennworts ist ungültig.',
-    'user' => "Wir finden keine*n Nutzer*in mit dieser E-Mail-Adresse.",
+    'user' => 'Wir finden keine*n Nutzer*in mit dieser E-Mail-Adresse.',
 
 ];

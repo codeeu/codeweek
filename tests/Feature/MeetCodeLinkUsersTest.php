@@ -4,32 +4,27 @@ namespace Tests\Feature;
 
 use App\Helpers\ImporterHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class MeetCodeLinkUsersTest extends TestCase
+final class MeetCodeLinkUsersTest extends TestCase
 {
-
     use DatabaseMigrations;
-
 
     /**
      * A basic feature test example.
-     *
-     * @return void
-     * @test
      */
-    public function it_should_link_activity_to_user()
+    #[Test]
+    public function it_should_link_activity_to_user(): void
     {
         //We got a user
-        $user = create('App\User');
-        $user2 = create('App\User');
-        $technicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
+        $user = \App\User::factory()->create();
+        $user2 = \App\User::factory()->create();
+        $technicalUser = ImporterHelper::getTechnicalUser('meetandcode-technical');
 
         //We got activity imported from Meet&Code
-        create('App\Event', ["creator_id" => $technicalUser->id, "user_email" => $user->email, "event_url" => "https://meet-and-code.org/1"], 3);
-        create('App\Event', ["creator_id" => $technicalUser->id, "user_email" => $user2->email, "event_url" => "https://meet-and-code.org/2"], 2);
+        \App\Event::factory()->count(3)->create(['creator_id' => $technicalUser->id, 'user_email' => $user->email, 'event_url' => 'https://meet-and-code.org/1']);
+        \App\Event::factory()->count(2)->create(['creator_id' => $technicalUser->id, 'user_email' => $user2->email, 'event_url' => 'https://meet-and-code.org/2']);
 
         $this->assertCount(5, $technicalUser->events);
         $this->assertCount(0, $user->events);

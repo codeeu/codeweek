@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class RemoteTeachingController extends Controller
 {
-    public function index()
+    public function index(): View
     {
-        if("en" ==  app()->getLocale()){
+        if (app()->getLocale() == 'en') {
 
             return view('static.remote-teaching-with-links');
         }

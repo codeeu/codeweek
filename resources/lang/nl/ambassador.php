@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Ambassadeurs van de EU-Programmeerweek',
-    'your_current_country'=>'Je huidige land',
-    'visit_the'=> 'Bezoek de',
-    'local_facebook_page'=>'lokale Facebook-pagina',
-    'local_website'=>'Lokale website',
-    'ambassadors'=>'Ambassadeurs',
-    'no_ambassadors'=>'Nog geen ambassadeurs',
-    'countries_with_ambassadors'=>'Landen met ambassadeurs',
-    'why_dont_you_volunteer'=>'Meld je aan als vrijwilliger!'
+    'your_current_country' => 'Je huidige land',
+    'visit_the' => 'Bezoek de',
+    'local_facebook_page' => 'lokale Facebook-pagina',
+    'local_website' => 'Lokale website',
+    'ambassadors' => 'Ambassadeurs',
+    'no_ambassadors' => 'Nog geen ambassadeurs',
+    'countries_with_ambassadors' => 'Landen met ambassadeurs',
+    'why_dont_you_volunteer' => 'Meld je aan als vrijwilliger!',
 
 ];

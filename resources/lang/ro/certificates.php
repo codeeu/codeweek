@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 return [
 
@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Certificate pentru ',
-    'no_certificates' => 'Încă nu există certificate.'
+    'no_certificates' => 'Încă nu există certificate.',
 ];

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * App\ResourceCategory
@@ -17,6 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceItem[] $items
  * @property-read int|null $items_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceCategory newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceCategory newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceCategory query()
@@ -28,6 +30,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceCategory wherePosition($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceCategory whereTeach($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceCategory whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class ResourceCategory extends Model
@@ -40,8 +43,8 @@ class ResourceCategory extends Model
         'teach' => false,
     ];
 
-    public function items()
+    public function items(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceItem');
+        return $this->belongsToMany(\App\ResourceItem::class);
     }
 }

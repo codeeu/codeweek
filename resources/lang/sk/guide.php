@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Príručka',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Tu môžete zaregistrovať svoju aktivitu',
     'what' => [
         'title' => 'Čo je Európsky týždeň programovania?',
-        'content' => '<p>Európsky týždeň programovania predstavuje hnutie na miestnej úrovni organizované dobrovoľníkmi s podporou Európskej komisie. Ktokoľvek môže usporiadať programátorskú aktivitu #EUCodeWeek a pridať ju na mapu na stránke <a href="/events">codeweek.eu</a>, či už školy, učitelia, knižnice, programátorské krúžky, podniky, alebo verejné orgány.</p>'
+        'content' => '<p>Európsky týždeň programovania predstavuje hnutie na miestnej úrovni organizované dobrovoľníkmi s podporou Európskej komisie. Ktokoľvek môže usporiadať programátorskú aktivitu #EUCodeWeek a pridať ju na mapu na stránke <a href="/events">codeweek.eu</a>, či už školy, učitelia, knižnice, programátorské krúžky, podniky, alebo verejné orgány.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Čo treba na zorganizovanie aktivity?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Registrovať účastníkov.</strong> Pri obmedzených priestorových možnostiach môžete na registráciu účastníkov využiť online nástroje, napr. <a href="https://docs.google.com/forms/">formuláre Google</a> či <a
                         href="https://www.eventbrite.com/">Eventbrite</a>.',
             '8' => 'Nezabudnite <a href="/add">poznačiť svoju aktivitu</a> na <a href="/events">mapu Týždňa programovania</a>!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Ako zorganizovať aktivitu?',
@@ -34,24 +33,24 @@ return [
             '4' => '<strong>Hovorte o podujatí!</strong> Propagujte a sprístupňujte výsledky svojej aktivity na sociálnych médiách pod hashtagom #EUCodeWeek. Zverejniť ich môžete aj v <a
                         href="https://www.facebook.com/groups/774720866253044/">skupine učiteľov Európskeho týždňa programovania</a> a na Twitteri (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Povedzte o aktivite priateľom, ďalším školiteľom či miestnej tlači. Vydajte tlačovú správu!',
             '5' => 'Nezabudnite <a href="/add">pridať svoju aktivitu</a> na <a href="/events">mapu týždňa programovania</a>!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Propagačné materiály',
         'text' => '<p>Najnovšie informácie si pozrite na našom <a href="http://blog.codeweek.eu/">blogu</a>. Aktuálne tlačové správy si pokojne prispôsobte svojim požiadavkám alebo si vytvorte svoje vlastné:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Príprava na oslavy Európskeho týždňa programovania 2019</a> (k dispozícii v 29 jazykoch)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Príprava na oslavy Európskeho týždňa programovania 2019</a> (k dispozícii v 29 jazykoch)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Ako pomôcku si na začiatok stiahnite tieto súbory nástrojov:',
         'communication_toolkit' => 'Súbor komunikačných nástrojov',
-        'teachers_toolkit' => 'Súbor nástrojov pre učiteľov'
+        'teachers_toolkit' => 'Súbor nástrojov pre učiteľov',
     ],
     'questions' => [
         'title' => 'Máte otázky?',
-        'content' => '<p>Ak máte otázky o organizovaní a propagácii vášho podujatia #EUCodeWeek, obráťte sa na niektorého z <a href="/ambassadors">veľvyslancov Európskeho týždňa programovania</a> vo vašej krajine.</p>'
-    ]
+        'content' => '<p>Ak máte otázky o organizovaní a propagácii vášho podujatia #EUCodeWeek, obráťte sa na niektorého z <a href="/ambassadors">veľvyslancov Európskeho týždňa programovania</a> vo vašej krajine.</p>',
+    ],
 
 ];

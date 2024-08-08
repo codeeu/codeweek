@@ -29,12 +29,12 @@ return [
         'header' => 'Vaše kontaktne informacije',
         'text_1' => 'Ove informacije vidjet će samo ',
         'link_1' => 'Ambasadori Europskog tjedna programiranja',
-        'text_2'=> ' i organizatori Tjedna programiranja
+        'text_2' => ' i organizatori Tjedna programiranja
         koji će
         provjeriti vaše događanje prije nego što se ono pojavi na karti. Moguće je da će vam se obratiti bude li potrebno
         urediti ili
         kako bi podijelili ankete u statističke svrhe nakon održavanja događanja.',
-        'contact_email' => 'Vaša e-adresa za kontakt'
-    ], 
-    'edit' => 'Uredi događanje'
+        'contact_email' => 'Vaša e-adresa za kontakt',
+    ],
+    'edit' => 'Uredi događanje',
 ];

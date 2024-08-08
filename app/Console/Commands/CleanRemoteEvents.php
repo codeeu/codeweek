@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Helpers\ImporterHelper;
-use App\Helpers\TagsHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 
@@ -35,15 +34,13 @@ class CleanRemoteEvents extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Calling Clean Remote Events");
+        Log::info('Calling Clean Remote Events');
 
         ImporterHelper::clean();
 
-        Log::info("Done Calling Clean Remote Events");
+        Log::info('Done Calling Clean Remote Events');
     }
 }

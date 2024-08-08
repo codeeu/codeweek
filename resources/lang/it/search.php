@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Pubblico',
-    'theme_title'=>'Tema',
-    
+    'audience_title' => 'Pubblico',
+    'theme_title' => 'Tema',
+
     'placeholder' => 'Cerca per nome evento o tag',
     'submit' => 'Cerca',
     'label_country' => 'Seleziona paese',
     'last_year_events' => [
         'label' => 'Includi eventi degli anni precedenti',
         'yes' => 'Sì',
-        'no' => 'No'
+        'no' => 'No',
     ],
     'search_counter' => 'corrisponde ai tuoi criteri di ricerca',
-    'event'=>'evento',
-    'events'=>'eventi',
+    'event' => 'evento',
+    'events' => 'eventi',
     'year' => 'anno',
-    'audiences'=>'Pubblico','themes'=>'Tema','countries'=>'Paese','search_placeholder' => 'Ricerca per titolo o descrizione',
+    'audiences' => 'Pubblico', 'themes' => 'Tema', 'countries' => 'Paese', 'search_placeholder' => 'Ricerca per titolo o descrizione',
 ];

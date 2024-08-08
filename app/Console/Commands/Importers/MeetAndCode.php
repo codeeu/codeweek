@@ -3,15 +3,11 @@
 namespace App\Console\Commands\Importers;
 
 use App\Helpers\ImporterHelper;
-
-use App\HamburgRSSItem;
 use App\Helpers\MeetAndCodeHelper;
 use App\MeetAndCodeRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
-
 
 class MeetAndCode extends Command
 {
@@ -38,29 +34,20 @@ class MeetAndCode extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Loading Meet and Code RSS Items in Database");
+        Log::info('Loading Meet and Code RSS Items in Database');
 
-        $techicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
-
-
-
-
+        $techicalUser = ImporterHelper::getTechnicalUser('meetandcode-technical');
 
         $items = MeetAndCodeRSSItem::whereNull('imported_at')->get();
 
-
-
-        foreach ($items as $item){
+        foreach ($items as $item) {
             $user = ImporterHelper::loadOrCreateUser($item->organiser_email);
             $event = $item->createEvent($user);
             $item->imported_at = Carbon::now();
@@ -70,10 +57,9 @@ class MeetAndCode extends Command
 
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
+        Log::info('Activities created from RSS Feed: '.count($items));
 
         dd('done importing events');
-
 
     }
 }

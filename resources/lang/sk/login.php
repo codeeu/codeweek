@@ -27,5 +27,5 @@ return [
     'reset' => 'Obnoviť heslo',
     'send_password' => 'Poslať odkaz na obnovu hesla',
     'confirm_password' => 'Potvrdiť heslo',
-    'name' => 'názov'
+    'name' => 'názov',
 ];

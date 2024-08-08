@@ -15,7 +15,7 @@ return [
             <p>Nii ei pea te neid uuesti sisestama, kui te sama külastuse ajal eri lehekülgi sirvite.</p>
 
             <p>Küpsiseid võib kasutada ka selleks, et koguda anonüümseks muudetud statistikat meie veebilehtedega seotud sirvimiskogemuse kohta.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Kuidas me küpsiseid kasutame?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Me kasutame <strong>kolme liiki esimese osapoole küpsiseid</strong>, et:',
             '1' => 'salvestada külastajate eelistused',
             '2' => 'muuta veebisaidid toimivaks',
-            '3' => 'koguda analüüsiandmeid (kasutajate käitumise kohta)'
+            '3' => 'koguda analüüsiandmeid (kasutajate käitumise kohta)',
         ],
         'table' => [
-            'name'=>'Nimi',
-            'service'=>'Teenus',
-            'purpose'=>'Otstarve',
-            'type_duration'=>'Küpsise liik ja kehtivusaeg',
+            'name' => 'Nimi',
+            'service' => 'Teenus',
+            'purpose' => 'Otstarve',
+            'type_duration' => 'Küpsise liik ja kehtivusaeg',
         ],
         'visitor_preferences' => [
-            'title'=> 'Külastajate eelistused',
-            'text'=> '<p>Need küpsised on meie seatud ja ainult meie saame neid lugeda. Need jätavad meelde:</p>',
-            'item'=> 'kas te nõustusite (või mitte) selle veebisaidi küpsiste kasutamise põhimõtetega',
+            'title' => 'Külastajate eelistused',
+            'text' => '<p>Need küpsised on meie seatud ja ainult meie saame neid lugeda. Need jätavad meelde:</p>',
+            'item' => 'kas te nõustusite (või mitte) selle veebisaidi küpsiste kasutamise põhimõtetega',
             'table' => [
                 '1' => [
                     'service' => 'Küpsistega nõustumise komplekt',
                     'purpose' => 'Salvestab teie küpsiseid puudutavad eelistused (nii välditakse küsimuse korduvat esitamist)',
                     'type_duration' => 'Esimese osapoole seansiküpsised kustutatakse pärast brauseri sulgemist',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Toimivusküpsised',
             'text' => '<p>Mõned küpsised on lisatud selleks, et teatavad veebilehed toimiksid. Seetõttu ei ole nende kasutamiseks vaja teie nõusolekut. Eelkõige:</p>',
-            'item' => 'teatavate IT-süsteemide nõutavad tehnilised küpsised'
+            'item' => 'teatavate IT-süsteemide nõutavad tehnilised küpsised',
         ],
         'technical_cookies' => [
             'title' => 'Tehnilised küpsised',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Salvestab kasutaja eelistatud keele',
                     'type_duration' => 'Esimese osapoole seansiküpsis, kustutatakse pärast brauseri sulgemist',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analüütilised küpsised',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Veebi analüüsimise teenus, mis põhineb Matomo avatud lähtekoodiga tarkvaral',
                     'purpose' => 'Tuvastab sama kasutaja poolt sama külastuse ajal vaadatud veebilehed (anonüümselt – kasutajate kohta isikuandmeid ei koguta).',
                     'type_duration' => 'Esimese osapoole püsiküpsis, 30 minutit',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Selle kolmandate isikute pakutava sisu nägemiseks peate kõigepealt nõustuma nende eritingimustega. See nõusolek hõlmab nende küpsiste kasutamise põhimõtteid, mille üle meil kontroll puudub.</p>
 
                 <p>Kuid kui te seda sisu ei vaata, ei paigaldata teie seadmesse ühtegi kolmanda osapoole küpsist.</p>Kolmandatest isikutest pakkujad Codeweekil',
-            '2' => 'Need kolmandate isikute teenused ei kuulu Codeweeki veebisaidi kontrolli alla. Teenuseosutajad võivad igal ajal muuta oma kasutustingimusi, küpsiste otstarvet, kasutamist jne.'
-        ]
+            '2' => 'Need kolmandate isikute teenused ei kuulu Codeweeki veebisaidi kontrolli alla. Teenuseosutajad võivad igal ajal muuta oma kasutustingimusi, küpsiste otstarvet, kasutamist jne.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Kuidas te saate küpsiseid hallata?',
@@ -109,6 +109,6 @@ return [
 
             <p>Te saate kustutada kõik juba teie seadmesse salvestatud küpsised, kustutades oma brauseri sirvimisajaloo. See kõrvaldab kõik küpsised kõigist külastatud veebisaitidest.</p>
 
-            <p>Pange tähele, et nii võite kaotada ka osa salvestatud teabest (nt salvestatud sisselogimisandmed, saidi eelistused).</p><strong>Saidipõhiste küpsiste haldamine</strong><p>Et saada täpsem kontroll saidipõhiste küpsiste üle, vaadake üle oma eelistatud brauseri privaatsuse ja küpsiste sätted.</p><strong>Küpsiste blokeerimine</strong><p>Enamiku brausereid saab seadistada nii, et küpsiseid teie seadmesse ei salvestataks, kuid sellisel juhul peate käsitsi kohandama teatavaid eelistusi iga kord, kui veebisaiti/-lehte külastate. Lisaks ei pruugi mõned teenused ja funktsioonid üldse korralikult toimida (nt sisselogimine).</p><strong>Analüütiliste küpsiste haldamine</strong><p>Meie Analyticsis küpsistega seotud eelistusi saate hallata <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">vastaval lehel</a>.</p>'
-    ]
+            <p>Pange tähele, et nii võite kaotada ka osa salvestatud teabest (nt salvestatud sisselogimisandmed, saidi eelistused).</p><strong>Saidipõhiste küpsiste haldamine</strong><p>Et saada täpsem kontroll saidipõhiste küpsiste üle, vaadake üle oma eelistatud brauseri privaatsuse ja küpsiste sätted.</p><strong>Küpsiste blokeerimine</strong><p>Enamiku brausereid saab seadistada nii, et küpsiseid teie seadmesse ei salvestataks, kuid sellisel juhul peate käsitsi kohandama teatavaid eelistusi iga kord, kui veebisaiti/-lehte külastate. Lisaks ei pruugi mõned teenused ja funktsioonid üldse korralikult toimida (nt sisselogimine).</p><strong>Analüütiliste küpsiste haldamine</strong><p>Meie Analyticsis küpsistega seotud eelistusi saate hallata <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">vastaval lehel</a>.</p>',
+    ],
 ];

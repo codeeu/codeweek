@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Udhëzues',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Regjistroni këtu aktivitetin tuaj',
     'what' => [
         'title' => 'Çfarë është EU Code Week?',
-        'content' => '<p>EU Code Week është një lëvizje në terren e organizuar nga vullnetarë dhe e mbështetur nga Komisioni Evropian. Kushdo - shkollat, mësuesit, bibliotekat, klubet e kodimit, bizneset, autoritetet publike - mund të organizojë një aktivitet të #EUCodeWeek dhe ta shtojë atë në hartën e <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>EU Code Week është një lëvizje në terren e organizuar nga vullnetarë dhe e mbështetur nga Komisioni Evropian. Kushdo - shkollat, mësuesit, bibliotekat, klubet e kodimit, bizneset, autoritetet publike - mund të organizojë një aktivitet të #EUCodeWeek dhe ta shtojë atë në hartën e <a href="/events">codeweek.eu</a>.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Çfarë ju nevojitet për të organizuar një aktivitet?',
@@ -22,8 +21,8 @@ return [
                                 href="/resources">faqen e burimeve</a> dhe <a href="/training">mësimet</a> tona me tutorialët me video dhe planet mësimore, dhe rregullojini ato sipas nevojave të grupit tuaj.',
             '7' => '<strong>Regjistroni pjesëmarrësit.</strong> Nëse keni hapësirë të kufizuar të disponueshme, ju mund të përdorni mjetet në linjë siç janë <a href="https://docs.google.com/forms/">formularët e Google</a> dhe <a
                                 href="https://www.eventbrite.com/">Eventbrite</a> për të regjistruar pjesëmarrësit.',
-            '8' => 'Mos harroni të <a href="/add">shtoni aktivitetin tuaj</a> në <a href="/events">hartën e Code Week</a>!'
-        ]
+            '8' => 'Mos harroni të <a href="/add">shtoni aktivitetin tuaj</a> në <a href="/events">hartën e Code Week</a>!',
+        ],
     ],
     'how_to' => [
         'title' => 'Si ta organizoni aktivitetin tuaj?',
@@ -33,25 +32,25 @@ return [
             '3' => 'Inkurajojini pjesëmarrësit në fund të evenimentit <strong>t’i tregojnë dhe t’i prezantojnë</strong> njëri-tjetrit se çfarë kanë krijuar.',
             '4' => '<strong>Përhapni lajmin!</strong> Promovoni dhe ndani çfarë bëtë gjatë aktivitetit tuaj në mediat sociale duke përdorur hashtagun #EUCodeWeek. Gjithashtu mund të ndani në <a
                                 href="https://www.facebook.com/groups/774720866253044/">Grupin e mësuesve të EU Code Week</a> dhe në Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Flisni me miqtë tuaj, kolegët mësues, shtypin vendas, bëni një njoftim për shtyp.',
-            '5' => 'Mos harroni të <a href="/add">shtoni aktivitetin tuaj</a> në <a href="/events">hartën e Code Week</a>!'
-        ]
+            '5' => 'Mos harroni të <a href="/add">shtoni aktivitetin tuaj</a> në <a href="/events">hartën e Code Week</a>!',
+        ],
     ],
     'material' => [
         'title' => 'Materialet promocionale',
         'text' => '<p>Shikoni <a href="http://blog.codeweek.eu/">blogun</a> tonë për informacionin më të fundit dhe mos ngurroni të përshtatni sipas nevojave tuaja njoftimin më të fundit për shtyp, ose krijoni një vetë:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Në përgatitje për të festuar EU Code Week 2019</a> (i disponueshëm në 29 gjuhë)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Në përgatitje për të festuar EU Code Week 2019</a> (i disponueshëm në 29 gjuhë)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Shkarkoni setet e mëposhtme të mjeteve për t’ju ndihmuar të filloni:',
         'communication_toolkit' => 'Seti i mjeteve të komunikimit',
-        'teachers_toolkit' => 'Seti i mjeteve të mësuesve'
+        'teachers_toolkit' => 'Seti i mjeteve të mësuesve',
     ],
     'questions' => [
         'title' => 'Pyetje?',
-        'content' => '<p>Nëse keni pyetje rreth organizimit dhe promovimit të evenimentit tuaj të #EUCodeWeek, kontaktoni me një prej <a href="/ambassadors">ambasadorëve të EU Code Week</a> nga vendi juaj.</p>'
-    ]
+        'content' => '<p>Nëse keni pyetje rreth organizimit dhe promovimit të evenimentit tuaj të #EUCodeWeek, kontaktoni me një prej <a href="/ambassadors">ambasadorëve të EU Code Week</a> nga vendi juaj.</p>',
+    ],
 
 ];

@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Rokasgrāmata',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Reģistrējiet savu pasākumu šeit',
     'what' => [
         'title' => 'Kas ir ES programmēšanas nedēļa?',
-        'content' => '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, ko vada brīvprātīgie un atbalsta Eiropas Komisija. Ikviens — skolas, skolotāji, bibliotēkas, programmēšanas pulciņi, uzņēmumi, valsts iestādes — var noorganizēt #EUCodeWeek pasākumu un pievienot to <a href="/events">codeweek.eu</a> kartē.</p>'
+        'content' => '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, ko vada brīvprātīgie un atbalsta Eiropas Komisija. Ikviens — skolas, skolotāji, bibliotēkas, programmēšanas pulciņi, uzņēmumi, valsts iestādes — var noorganizēt #EUCodeWeek pasākumu un pievienot to <a href="/events">codeweek.eu</a> kartē.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Kas ir vajadzīgs, lai noorganizētu pasākumu?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Reģistrējiet dalībniekus.</strong> Ja pieejamais vietu skaits ir ierobežots, reģistrēšanai var izmantot tiešsaistes rīkus, piemēram, <a href="https://docs.google.com/forms/">Google Forms</a> vai <a
                         href="https://www.eventbrite.com/">Eventbrite</a>.',
             '8' => 'Neaizmirstiet <a href="/add">pievienot savu pasākumu</a> <a href="/events">Programmēšanas nedēļas kartē</a>!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Kā organizēt pasākumu?',
@@ -34,24 +33,24 @@ return [
             '4' => '<strong>Izplatiet informāciju!</strong> Pastāstiet citiem sociālajos medijos, ko paveicāt savā pasākumā, izmantojot atsauces tagu #EUCodeWeek. Jūs arī varat dalīties ar informāciju <a
                         href="https://www.facebook.com/groups/774720866253044/">ES programmēšanas nedēļas grupā skolotājiem</a> un Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Pastāstiet saviem draugiem, citiem pedagogiem, vietējai presei un sagatavojiet paziņojumu presei.',
             '5' => 'Neaizmirstiet <a href="/add">pievienot savu pasākumu</a> <a href="/events">Programmēšanas nedēļas kartē</a>!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Reklāmas materiāli',
         'text' => '<p>Iepazīstieties ar jaunāko informāciju mūsu <a href="http://blog.codeweek.eu/">blogā</a> un droši pielāgojiet jaunāko paziņojumu presei atbilstoši savām vajadzībām vai veidojiet savu:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gatavojamies atzīmēt 2019. gada ES programmēšanas nedēļu</a> (pieejams 29 valodās)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gatavojamies atzīmēt 2019. gada ES programmēšanas nedēļu</a> (pieejams 29 valodās)',
+        ],
     ],
     'toolkits' => [
         'title' => '',
         'communication_toolkit' => 'Komunikācijas rīkkopa',
-        'teachers_toolkit' => 'Rīkkopa skolotājiem'
+        'teachers_toolkit' => 'Rīkkopa skolotājiem',
     ],
     'questions' => [
         'title' => 'Jautājumi?',
-        'content' => '<p>Ja jums ir jautājumi par #EUCodeWeek pasākuma organizēšanu un reklāmu, droši sazinieties ar kādu no <a href="/ambassadors">ES programmēšanas nedēļas vēstniekiem</a> no savas valsts.</p>'
-    ]
+        'content' => '<p>Ja jums ir jautājumi par #EUCodeWeek pasākuma organizēšanu un reklāmu, droši sazinieties ar kādu no <a href="/ambassadors">ES programmēšanas nedēļas vēstniekiem</a> no savas valsts.</p>',
+    ],
 
 ];

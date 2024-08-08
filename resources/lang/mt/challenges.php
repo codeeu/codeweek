@@ -19,7 +19,7 @@ return [
         'beginner' => 'Student ġdid',
         'intermediate' => 'Student intermedju',
         'advanced' => 'Student avvanzat',
-        '1-hour' => 'siegħa'
+        '1-hour' => 'siegħa',
     ],
     'main' => [
         'Matul il-Ġimgħa tal-UE tal-Ikkowdjar, mid-9 sal-24 ta’ Ottubru 2021, nistidnuk tagħmel sfida waħda jew aktar tal-Ġimgħa tal-UE tal-Ikkowdjar.',
@@ -35,7 +35,7 @@ return [
         'Aqsam l-isfida tiegħek',
         'Tixtieq tirbaħ xi affarijiet tajbin tal-Ġimgħa tal-Ikkowdjar? Jekk iva, mela ara li x-xogħol tiegħek isir virali!',
         'Wara li tlesti l-isfida, aqsamha mal-oħrajn fuq Instagram.',
-        "Ir-rebbieħa se jintgħażlu kuljum matul il-Ġimgħa tal-Ikkowdjar bejn id-9 u l-24 ta’ Ottubru u se jiġu mħabbra fuq il-kanal ta' Instagram tagħna, u għalhekk tinsiex tiċċekkja n-notifiki tiegħek regolarment."
+        "Ir-rebbieħa se jintgħażlu kuljum matul il-Ġimgħa tal-Ikkowdjar bejn id-9 u l-24 ta’ Ottubru u se jiġu mħabbra fuq il-kanal ta' Instagram tagħna, u għalhekk tinsiex tiċċekkja n-notifiki tiegħek regolarment.",
     ],
     'share' => [
         'Kif għandek taqsam l-isfida/l-isfidi tiegħek fuq Instagram?',
@@ -52,7 +52,7 @@ return [
         'tal-Facebook tagħha',
         'kuljum u se tagħżel ir-rebbieħ għall-premju mill-kummenti taħt il-post.',
         'Kif taħdem?',
-        'Sempliċement ikkummenta fuq il-post bil-link għax-xogħol tiegħek.'
+        'Sempliċement ikkummenta fuq il-post bil-link għax-xogħol tiegħek.',
     ],
     'share-box' => [
         "Aqsam il-link ma' tax-xogħol tiegħek fuq",
@@ -67,18 +67,18 @@ return [
         'post ġdid ta’ Sfida fuq il-paġna',
         'tal-Facebook tagħhom',
         'Imbagħad kulma għandek bżonn tagħmel huwa li tikkummenta fuq il-post bil-link għax-xogħol tiegħek',
-        "Se jintgħażlu r-rebbieħa u se jiġu offruti affarijiet tajbin tal-Ġimgħa tal-Ikkowdjar kuljum matul il-Ġimgħa tal-Ikkowdjar bejn id-9 u l-24 ta’ Ottubru u se jiġu mħabbra fuq il-kanali ta' Instagram u Facebook tagħna, u għalhekk tinsiex tiċċekkja n-notifiki tiegħek regolarment"
+        "Se jintgħażlu r-rebbieħa u se jiġu offruti affarijiet tajbin tal-Ġimgħa tal-Ikkowdjar kuljum matul il-Ġimgħa tal-Ikkowdjar bejn id-9 u l-24 ta’ Ottubru u se jiġu mħabbra fuq il-kanali ta' Instagram u Facebook tagħna, u għalhekk tinsiex tiċċekkja n-notifiki tiegħek regolarment",
     ],
     'take-part' => [
         'Għaliex għandek tieħu sehem fi sfida tal-Ġimgħa tal-UE tal-Ikkowdjar?',
         'Biex tinvolvi ruħek f’attivitajiet ta’ soluzzjoni tal-problemi u ta’ kkowdjar.',
         'Biex taħdem flimkien mal-pari.',
-        'Biex ixxerred il-messaġġ dwar l-importanza tal-ikkowdjar.'
+        'Biex ixxerred il-messaġġ dwar l-importanza tal-ikkowdjar.',
     ],
     'download' => [
         'Agħfas',
         'hawnhekk',
-        "biex tniżżel din l-isfida bħala dokument ta' word"
+        "biex tniżżel din l-isfida bħala dokument ta' word",
     ],
     'bingo' => [
         'Lesti l-Isfidi kollha',
@@ -88,6 +88,6 @@ return [
         'Aqsam l-Isfida tiegħek fuq il-midja soċjali u irbaħ xi premjijiet tal-ġenn tal-Ġimgħa tal-Ikkowdjar',
         "Kulma għandek tagħmel huwa li ttella' stampa bir-ringiela/ringieli' kolonna/kolonni mimlijin jew saħansitra aħjar - il-bingo kollu - fuq",
         'Facebook, Instagram jew Twitter',
-        'Kun ċert li tuża'
-    ]
+        'Kun ċert li tuża',
+    ],
 ];

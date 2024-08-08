@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Sakārtots pēc: ',
+    'organised_by' => 'Sakārtots pēc: ',
     'contact_email' => 'Kontaktpersonas e-pasts: ',
     'happening_at' => 'Pasākuma vieta: ',
     'from' => 'No ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Noklikšķini, lai nosūtītu to pa e-pastu draugam',
         'subject' => 'Apskati šo lielisko programmēšanas pasākumu',
         'body_1' => 'Sveicināti! Apskatiet ',
-        'body_2' => 'pasākumu '
+        'body_2' => 'pasākumu ',
     ],
     'edit' => 'Rediģēt pasākumu',
     'note' => 'PIEZĪME: ',
     'pending_warning' => 'Šo pasākumu vēl pārskata ',
     'pending_link' => 'moderatori',
-    'nearby_upcoming_events' => 'Nākamie netālu notiekošie pasākumi:'
+    'nearby_upcoming_events' => 'Nākamie netālu notiekošie pasākumi:',
 ];

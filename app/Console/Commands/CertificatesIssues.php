@@ -26,23 +26,21 @@ class CertificatesIssues extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         $issues = Participation::whereNull('participation_url')
-            ->where('status','=','PENDING')
-            ->where('created_at','<', Carbon::now()->subMinutes(5))->get();
+            ->where('status', '=', 'PENDING')
+            ->where('created_at', '<', Carbon::now()->subMinutes(5))->get();
 
-        Log::info('certificate with issues: '. count($issues));
+        Log::info('certificate with issues: '.count($issues));
 
-        if(count($issues) > 0){
+        if (count($issues) > 0) {
             //Send warning Email
             $admin = config('codeweek.administrator');
-            Mail::to($admin)->queue(new \App\Mail\WarningEmail("We have ". count($issues). " certificates of participation that have not been generated"));
-            Log::info('mail queued to ' . $admin);
+            Mail::to($admin)->queue(new \App\Mail\WarningEmail('We have '.count($issues).' certificates of participation that have not been generated'));
+            Log::info('mail queued to '.$admin);
         }
 
         return Command::SUCCESS;
