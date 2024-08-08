@@ -40,10 +40,7 @@
         "spatie/laravel-permission": "^6.2",
         "stevebauman/purify": "^6.2",
         "torann/geoip": "^3.0",
-        "willvincent/feeds": "^2.6",
-
-
-
+        "willvincent/feeds": "^2.6"
 
     },
     "require-dev": {
