@@ -24,10 +24,13 @@ jobs:
     - name: Copy composer.json
       run: php -r "copy('composer-test.json', 'composer.json');"      
     - name: Install Dependencies
+      env:
+        NOVA_USERNAME: ${{ secrets.NOVA_USERNAME }}
+        NOVA_PASSWORD: ${{ secrets.NOVA_PASSWORD }}
       run: |
           php --version
-          rm -f composer.lock
-          composer config http-basic.nova.laravel.com ${{ secrets.NOVA_USERNAME }} ${{ secrets.NOVA_PASSWORD }}
+          echo $NOVA_USERNAME
+          composer config http-basic.nova.laravel.com $NOVA_USERNAME $NOVA_PASSWORD
           composer install -n --prefer-dist
     - name: Generate key
       run: php artisan key:generate
