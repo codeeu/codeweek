@@ -29,13 +29,10 @@ jobs:
         NOVA_PASSWORD: ${{ secrets.NOVA_PASSWORD }}
       run: |
           php --version
-          echo $NOVA_USERNAME
           composer config http-basic.nova.laravel.com $NOVA_USERNAME $NOVA_PASSWORD
           composer install -n --prefer-dist
     - name: Generate key
       run: php artisan key:generate
-    - name: generate vue-i18n
-      run: php artisan vue-i18n:generate
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
     - name: Create Database
