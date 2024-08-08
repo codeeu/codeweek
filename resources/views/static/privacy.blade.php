@@ -122,7 +122,6 @@
                 <li>Any personal data included in the body of the e-mail you sent</li>
             </ul>
 
-
             <h3 id="header-5">5. <strong>How long do we keep your personal data?</strong></h3>
             <p>
                 The joint controllers only keep your personal data for the time necessary to fulfil the purpose of
@@ -230,6 +229,17 @@
             <p>This specific processing operation has been included in the Commission Data Protection Officer <a
                         href="https://ec.europa.eu/dpo-register/">public register</a> with the following Record
                 reference: <strong>DPR-EC-09706.</strong></p>
+
+            <h4 id="header-11" style="margin-top: 40px;margin-bottom: 10px;">
+                <strong>External links disclaimer</strong></h4>
+            <p>
+                This website contains “external links” to other websites, which may not be owned or funded by the European Commission or Code4Europe, over which Commission services or Code4Europe staff have no control and for which the Commission and Code4Europe assume no responsibility.<br/><br/>
+
+                When visitors to this website choose to follow a link to any external website, they leave the official domain of this website, and are subject to the cookie, privacy and legal policies of the external website.<br/><br/>
+
+                Compliance with applicable data protection and accessibility requirements of external websites linked to from Commission websites falls outside the control of the European Commission and Code4Europe and is the explicit responsibility of the external website.”
+            </p>
+
             <footer>
                 <p id="footnote1"><sup>1</sup> The Code4Europe consortium is implementing the Code4Europe project funded
                     via a <a

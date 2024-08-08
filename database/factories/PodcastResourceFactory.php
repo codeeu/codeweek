@@ -14,15 +14,15 @@ class PodcastResourceFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'podcast_id' => function () {
-                return factory('App\Podcast')->create()->id;
+                return factory(\App\Podcast::class)->create()->id;
             },
-            'position' => $this->faker->numberBetween(1,1000),
-            'name' => $this->faker->name,
-            'url' => $this->faker->text,
+            'position' => $this->faker->numberBetween(1, 1000),
+            'name' => $this->faker->name(),
+            'url' => $this->faker->text(),
         ];
     }
 }

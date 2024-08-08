@@ -19,7 +19,7 @@ return [
         'beginner' => 'Principiante',
         'intermediate' => 'Intermedio',
         'advanced' => 'Avanzato',
-        '1-hour' => '1 ora'
+        '1-hour' => '1 ora',
     ],
     'main' => [
         'Durante la settimana europea della programmazione, dal 9 al 24 ottobre 2021, ti invitiamo a partecipare a una o più sfide appositamente concepite.',
@@ -35,7 +35,7 @@ return [
         'Condividi la tua sfida',
         'Ti piacerebbe vincere un premio della settimana della programmazione? Se la risposta è sì, allora fai diventare virale il tuo lavoro!',
         'Dopo aver completato la sfida, condividila su Instagram.',
-        'I vincitori saranno selezionati ogni giorno durante la settimana delle programmazione tra il 9 e il 24 ottobre e verranno annunciati sul nostro canale Instagram, quindi ricordati di controllare regolarmente le notifiche.'
+        'I vincitori saranno selezionati ogni giorno durante la settimana delle programmazione tra il 9 e il 24 ottobre e verranno annunciati sul nostro canale Instagram, quindi ricordati di controllare regolarmente le notifiche.',
     ],
     'share' => [
         'Come condividere le tue sfide su Instagram?',
@@ -52,7 +52,7 @@ return [
         'Facebook',
         'e selezionerà il vincitore del premio dai commenti sotto il post.',
         'Come funziona?',
-        'Basta commentare il post con il link al tuo lavoro.'
+        'Basta commentare il post con il link al tuo lavoro.',
     ],
     'share-box' => [
         'Condividi il link del tuo lavoro nella tua',
@@ -67,18 +67,18 @@ return [
         'un nuovo post sulle sfide sulla sua',
         'pagina Facebook',
         'Ti basterà commentare il post con il link al tuo lavoro',
-        'I vincitori verranno selezionati e premiati ogni giorno durante la settimana della programmazione tra il 9 e il 24 ottobre. I loro nomi saranno annunciati sui nostri canali Instagram e Facebook, quindi ricordati di controllare regolarmente le notifiche'
+        'I vincitori verranno selezionati e premiati ogni giorno durante la settimana della programmazione tra il 9 e il 24 ottobre. I loro nomi saranno annunciati sui nostri canali Instagram e Facebook, quindi ricordati di controllare regolarmente le notifiche',
     ],
     'take-part' => [
         'Perché partecipare a una sfida della settimana europea della programmazione?',
         'Per cimentarsi in attività di risoluzione dei problemi e programmazione.',
         'Per lavorare insieme a coetanei.',
-        'Per diffondere un messaggio sull’importanza della programmazione.'
+        'Per diffondere un messaggio sull’importanza della programmazione.',
     ],
     'download' => [
         'Clicca',
         'qui',
-        'per scaricare questa sfida come documento word'
+        'per scaricare questa sfida come documento word',
     ],
     'bingo' => [
         'Completa tutte le sfide',
@@ -88,6 +88,6 @@ return [
         'Condividi la tua sfida sui social media e vinci i fantastici premi della settimana della programmazione',
         'Carica una foto con le righe, le colonne o meglio ancora l’intera scheda bingo completata su',
         'Facebook, Instagram o Twitter',
-        'Assicurati di usare'
-    ]
+        'Assicurati di usare',
+    ],
 ];

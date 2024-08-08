@@ -4,25 +4,28 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Location extends Model
 {
-    protected $guarded=[];
+    protected $guarded = [];
 
+    use HasFactory;
     use SoftDeletes;
 
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
 
-    public function event()
+    public function event(): BelongsTo
     {
         return $this->belongsTo(Event::class);
     }
 
-    public function getGeopositionAttribute(){
-        return $this->latitude . ',' . $this->longitude;
+    public function getGeopositionAttribute()
+    {
+        return $this->latitude.','.$this->longitude;
     }
 }

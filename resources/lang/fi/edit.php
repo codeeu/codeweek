@@ -29,8 +29,8 @@ return [
         'header' => 'Sinun yhteystietosi',
         'text_1' => 'Tiedot näkyvät vain ',
         'link_1' => 'EU:n koodausviikkolähettiläille',
-        'text_2'=> ' ja koodausviikon järjestäjille, jotka tarkistavat tapahtumasi ennen kuin se näkyy kartalla ja saattavat ottaa yhteyttä, jos muutokset ovat tarpeen tai tilastokyselytarkoituksissa tapahtuman jälkeen.',
-        'contact_email' => 'Sinun sähköpostiosoitteesi'
-    ], 
-    'edit' => 'Muokkaa tapahtumaa'
+        'text_2' => ' ja koodausviikon järjestäjille, jotka tarkistavat tapahtumasi ennen kuin se näkyy kartalla ja saattavat ottaa yhteyttä, jos muutokset ovat tarpeen tai tilastokyselytarkoituksissa tapahtuman jälkeen.',
+        'contact_email' => 'Sinun sähköpostiosoitteesi',
+    ],
+    'edit' => 'Muokkaa tapahtumaa',
 ];

@@ -17,6 +17,6 @@ return [
     'reset' => 'Jūsų slaptažodis atkurtas!',
     'sent' => 'Slaptažodžio atkūrimo nuorodą išsiuntėme jums el. paštu!',
     'token' => 'Šis slaptažodžio atkūrimo raktas negalioja.',
-    'user' => "Nėra vartotojo su tokiu el. pašto adresu.",
+    'user' => 'Nėra vartotojo su tokiu el. pašto adresu.',
 
 ];

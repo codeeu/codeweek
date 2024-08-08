@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 return [
 
@@ -17,6 +17,6 @@ return [
     'reset' => 'Parola dumneavoastră a fost resetată!',
     'sent' => 'V-am trimis prin e-mail linkul de resetare a parolei dumneavoastră!',
     'token' => 'Acest simbol de resetare a parolei este invalid.',
-    'user' => "Nu reușim să găsim un utilizator cu această adresă de e-mail.",
+    'user' => 'Nu reușim să găsim un utilizator cu această adresă de e-mail.',
 
 ];

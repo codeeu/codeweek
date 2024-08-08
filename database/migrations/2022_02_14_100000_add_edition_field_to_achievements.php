@@ -4,13 +4,13 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddEditionFieldToAchievements extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up() {
+    public function up(): void
+    {
         Schema::table('achievements', function (Blueprint $table) {
             $table->integer('edition')->nullable();
         });
@@ -19,13 +19,11 @@ class AddEditionFieldToAchievements extends Migration {
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down() {
-        Schema::table('achievements', function (Blueprint $table)
-        {
+    public function down(): void
+    {
+        Schema::table('achievements', function (Blueprint $table) {
             $table->dropColumn('edition');
         });
     }
-}
+};

@@ -34,23 +34,20 @@ class LoadAdmins extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load Admins');
 
         $old_admins = DB::table('auth_user')
-            ->where('is_staff',"=",1)
+            ->where('is_staff', '=', 1)
             ->get();
 
         foreach ($old_admins as $old) {
 
             DB::table('model_has_roles')->insert(
-                ['role_id' => 5,'model_type'=>'App\User', 'model_id' => $old->id]
+                ['role_id' => 5, 'model_type' => \App\User::class, 'model_id' => $old->id]
             );
-
 
         }
     }

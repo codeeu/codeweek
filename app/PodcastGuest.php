@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class PodcastGuest extends Model
 {
@@ -11,7 +12,8 @@ class PodcastGuest extends Model
 
     protected $table = 'podcast_guests';
 
-    public function podcast(){
-        return $this->belongsTo('App\Podcast');
+    public function podcast(): BelongsTo
+    {
+        return $this->belongsTo(\App\Podcast::class);
     }
 }

@@ -1,17 +1,15 @@
 <?php
 
-
 return [
     'title' => 'Az európai programozási hét értéknyilatkozata',
     'description' => [
-        1 =>
-            [
-                1 => 'Az európai programozási hét mozgalmat önkéntesek vezetik –',
-                2 => 'nagykövetek',
-                3 => ', vezető tanárok és lelkes programozók a világ minden tájáról. A hetet az',
-                4 => 'Európai Bizottság',
-                5 => 'és az Európai Unióban és nyugat-balkáni országokban található oktatási minisztériumok támogatják.',
-            ],
+        1 => [
+            1 => 'Az európai programozási hét mozgalmat önkéntesek vezetik –',
+            2 => 'nagykövetek',
+            3 => ', vezető tanárok és lelkes programozók a világ minden tájáról. A hetet az',
+            4 => 'Európai Bizottság',
+            5 => 'és az Európai Unióban és nyugat-balkáni országokban található oktatási minisztériumok támogatják.',
+        ],
 
         2 => 'Az európai programozási hét középpontjában önkéntes tevékenységszervezők: tanárok, mentorok, programozóklubok, könyvtárak, magánvállalatok, szülők és nem kormányzati szervezetek közössége áll. Arra szenteljük időnket, energiánkat és készségeinket, hogy az algoritmikus gondolkodás, programozás, robotika, hardverbütykölés, számítástechnika és digitális készségek minél több emberhez eljussanak Európában és szerte a világban.',
         3 => 'Az európai programozási hétnek világszerte több millió különböző nemű, korú, hátterű, kultúrájú és képességű résztvevője van.',
@@ -27,39 +25,37 @@ return [
     ],
     '3' => [
         'title' => 'Az európai programozási hét helyi és globális egyben',
-        'content' =>
-            [
-                1 => 'Az európai programozási hét szeretné elérni Önt, függetlenül attól, hogy nagyvárosban, régiós fővárosban vagy távoli faluban él-e. Külön figyelmet szentelünk a helyi szervezők a saját nyelvükön írott',
-                2 => 'anyagokkal',
-                3 => 'való támogatására és az igényeik kielégítésére. Az',
-                4 => 'európai programozási hét térképe',
-                5 => 'az első számú eszköz, ahol minden tevékenység pontos elhelyezkedéssel regisztrálva van. Az európai programozási hét ugyanakkor globális is, és a világ minden tájáról befogadja az embereket a közösségébe. Ezért helyiek és globálisak is vagyunk egyben.',
-            ]
+        'content' => [
+            1 => 'Az európai programozási hét szeretné elérni Önt, függetlenül attól, hogy nagyvárosban, régiós fővárosban vagy távoli faluban él-e. Külön figyelmet szentelünk a helyi szervezők a saját nyelvükön írott',
+            2 => 'anyagokkal',
+            3 => 'való támogatására és az igényeik kielégítésére. Az',
+            4 => 'európai programozási hét térképe',
+            5 => 'az első számú eszköz, ahol minden tevékenység pontos elhelyezkedéssel regisztrálva van. Az európai programozási hét ugyanakkor globális is, és a világ minden tájáról befogadja az embereket a közösségébe. Ezért helyiek és globálisak is vagyunk egyben.',
+        ],
     ],
     '4' => [
         'title' => 'Az európai programozási hét az együttműködésről szól',
         'content' => [
             1 => 'Az európai programozási hét közösség tagja interakcióba lépnek egymással, információt cserélnek, tanulnak egymástól és együtt építik fel tudásukat. Összeköttetésben vagyunk, és támogatjuk egymást. Megosztjuk egymással forrásainkat, ötleteinket és legjobb gyakorlatainkat. Ösztönözzük a partnerségeket és a tudásmegosztást.',
             2 => 'Az európai programozási hét 4 All kihívása',
-            3 => 'határokon átnyúló hidakat és közösségeket épít. Elősegíti a pozitív energia terjesztését, és összeköti azokat az embereket, akik tanulhatnak egymástól.'
-        ]
+            3 => 'határokon átnyúló hidakat és közösségeket épít. Elősegíti a pozitív energia terjesztését, és összeköti azokat az embereket, akik tanulhatnak egymástól.',
+        ],
     ],
     '5' => [
         'title' => 'Az európai programozási hét nonprofit',
-        'content' =>
-            [
-                1 => 'A programozási hét minden tevékenysége nonprofit. Az európai programozási hét weboldalán található minden',
-                2 => 'forrás',
-                3 => 'ingyenesen elérhető. Minden az európai programozási héthez fűződő képzés és online tanfolyam ingyenes.'
-            ]
+        'content' => [
+            1 => 'A programozási hét minden tevékenysége nonprofit. Az európai programozási hét weboldalán található minden',
+            2 => 'forrás',
+            3 => 'ingyenesen elérhető. Minden az európai programozási héthez fűződő képzés és online tanfolyam ingyenes.',
+        ],
     ],
     '6' => [
         'title' => 'Az európai programozási hét ösztönzi a kreativitást és az innovációt',
-        'content' => 'Az európai programozási hét ösztönzi a kreativitást, az innovációt és az előretekintő gondolkodást. Szívesen vesszük és köszönjük a visszajelzéseket és kritikákat, hogy informált döntéseket hozhassunk az európai programozási hét továbbfejlesztéséhez. A hibákból is tanulunk, egyéni és közösségi szinten egyaránt.'
+        'content' => 'Az európai programozási hét ösztönzi a kreativitást, az innovációt és az előretekintő gondolkodást. Szívesen vesszük és köszönjük a visszajelzéseket és kritikákat, hogy informált döntéseket hozhassunk az európai programozási hét továbbfejlesztéséhez. A hibákból is tanulunk, egyéni és közösségi szinten egyaránt.',
     ],
     '7' => [
         'title' => 'Az európai programozási hét hálás a közösségének.',
-        'content' => 'Hálásak vagyunk a tanárok, oktatók és más tevékenységszervezők, diákok, szülők, programozóklubok és minden partnerünk támogatásáért. Mind ugyanazért a célért dolgozunk. Szeretnénk minél több emberrel megismertetni az algoritmikus gondolkodást, a programozást, a robotikát, a hardverbütykölést, a számítástechnikát és a digitális készségeket.'
+        'content' => 'Hálásak vagyunk a tanárok, oktatók és más tevékenységszervezők, diákok, szülők, programozóklubok és minden partnerünk támogatásáért. Mind ugyanazért a célért dolgozunk. Szeretnénk minél több emberrel megismertetni az algoritmikus gondolkodást, a programozást, a robotikát, a hardverbütykölést, a számítástechnikát és a digitális készségeket.',
     ],
 
 ];

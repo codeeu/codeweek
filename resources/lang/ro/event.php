@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 return [
 
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'E-mail public',
-        'placeholder' => 'Doriți să afișați un e-mail de contact?'
+        'placeholder' => 'Doriți să afișați un e-mail de contact?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresă',
         'placeholder' => 'Unde va avea loc activitatea?',
     ],
-
 
     'organizertype' => [
         'label' => 'Tipul organizației',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Realitate augmentată',
         'Artificial intelligence' => 'Inteligență artificială',
         'Motivation and awareness raising' => 'Motivare și sensibilizare',
-        'Promoting diversity' => 'Promovarea diversității'
+        'Promoting diversity' => 'Promovarea diversității',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'COD SĂPTĂMÂNA PROGRAMĂRII PENTRU TOȚI',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'ambasadorii naționali',
         'phrase5' => 'sau trimiteți-ne un',
         'phrase6' => 'e-mail',
-        'phrase7' => 'Puteți distribui codul dumneavoastră Săptămâna programării pentru toți și altora:'
+        'phrase7' => 'Puteți distribui codul dumneavoastră Săptămâna programării pentru toți și altora:',
     ],
     'activitytype' => [
         'label' => 'Tip de activitate',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Activitate on-line',
         'invite-online' => 'Activitate on-line privată',
         'open-in-person' => 'Activitate off-line',
-        'invite-in-person' => 'Activitate off-line privată'
+        'invite-in-person' => 'Activitate off-line privată',
 
     ],
     'privacy' => 'Am citit şi sunt de acord cu termenii politicii de confidenţialitate descrişi în acest document.',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Vizualizează certificatul tău aici',
     'submit_event_and_report' => 'Trimite un raport pentru acest eveniment și solicită certificatul tău de participare la Săptămâna programării.',
     'report_and_claim' => 'Raportează evenimentul și solicită certificatul',
-
 
 ];

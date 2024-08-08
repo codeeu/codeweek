@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 return [
 
@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Public',
-    'theme_title'=>'Temă',
-    
+    'audience_title' => 'Public',
+    'theme_title' => 'Temă',
+
     'placeholder' => 'Căutați numele sau eticheta unui eveniment',
     'submit' => 'Căutare',
     'label_country' => 'Selectare țară',
     'last_year_events' => [
         'label' => 'Include evenimentele de anul trecut',
         'yes' => 'Da',
-        'no' => 'Nu'
+        'no' => 'Nu',
     ],
     'search_counter' => 'corespunde criteriilor dumneavoastră de căutare',
-    'event'=>'eveniment',
-    'events'=>'evenimente',
+    'event' => 'eveniment',
+    'events' => 'evenimente',
     'year' => 'an',
-    'audiences'=>'Public','themes'=>'Teme','countries'=>'Țări','search_placeholder' => 'Căutare după titlu și descriere',
+    'audiences' => 'Public', 'themes' => 'Teme', 'countries' => 'Țări', 'search_placeholder' => 'Căutare după titlu și descriere',
 ];

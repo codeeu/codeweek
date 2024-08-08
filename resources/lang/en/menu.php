@@ -47,5 +47,5 @@ return [
     'values' => 'Our values',
     'online_events' => 'Online Activities',
     'featured_activities' => 'Featured Activities',
-    'codeweek2020' => '2020 Edition'
+    'codeweek2020' => '2020 Edition',
 ];

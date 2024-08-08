@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Kuidas tegevust korraldada?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Vene',
-            'Norwegian'=>'Norra',
-            'Mandarin'=>'Mandariini',
-            'Japanese'=>'Jaapani',
-            'All targeted languages' => 'Kõik sihtkeeled'
+            'Russian' => 'Vene',
+            'Norwegian' => 'Norra',
+            'Mandarin' => 'Mandariini',
+            'Japanese' => 'Jaapani',
+            'All targeted languages' => 'Kõik sihtkeeled',
         ],
         'levels' => [
             'Beginner' => 'Algaja',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Põhikooli esimene aste (12–16)',
             'Upper secondary school (16-18)' => 'Põhikooli teine aste (16–18)',
             'Higher Education' => 'Kõrgharidus',
-            'Other' => 'Muu'
+            'Other' => 'Muu',
         ],
         'subjects' => [
             'Art' => 'Kunst',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Füüsika',
             'Coding' => 'Programmeerimine',
             'Special Education Needs' => 'Hariduslikud erivajadused',
-            'Other' => 'Muu'
+            'Other' => 'Muu',
         ],
         'types' => [
             'Tutorial' => 'Õpetus',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Abivahendite komplekt',
             'Other' => 'Muu',
             'Lesson Plan' => 'Tunnikava',
-            'Guide' => 'Juhend'
+            'Guide' => 'Juhend',
         ],
         'categories' => [
             'Coding' => 'Koodikirjutamine',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Meisterdamine',
             'Tinkering' => 'Nokitsemine',
             'Unplugged Activities' => 'Veebiühenduseta üritused',
-            'Other' => 'Muu'
-        ]
-    ]
+            'Other' => 'Muu',
+        ],
+    ],
 
 ];

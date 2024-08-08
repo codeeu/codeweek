@@ -2,26 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\ActivityType;
 use App\Country;
 use App\Event;
-use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
-use App\Location;
 use App\Queries\EventsQuery;
 use App\Queries\PendingEventsQuery;
-use App\ResourceLanguage;
 use App\User;
 use Carbon\Carbon;
-use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Lang;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\View\View;
 
 class EventController extends Controller
 {
@@ -33,7 +29,7 @@ class EventController extends Controller
         $this->middleware('auth')->except(['index', 'show', 'my']);
     }
 
-    public function my()
+    public function my(): View
     {
         $events = Event::where('creator_id', '=', Auth::user()->id)
             ->orderBy('created_at', 'desc')
@@ -55,10 +51,8 @@ class EventController extends Controller
 
     /**
      * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(Request $request): View
     {
         $years = range(Carbon::now()->year, 2014, -1);
 
@@ -72,26 +66,25 @@ class EventController extends Controller
             ->where('country_iso', '=', $iso_country_of_user)
             ->get();
 
-
         return view('events')->with([
             'events' => $this->eventsNearMe(),
             'years' => $years,
             'selectedYear' => $selectedYear,
             'countries' => Country::withActualYearEvents(),
             'current_country_iso' => $iso_country_of_user,
-            'ambassadors' => $ambassadors
+            'ambassadors' => $ambassadors,
         ]);
     }
 
     private function eventsNearMe()
     {
         $geoip = User::getGeoIPData();
+
         return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
     }
 
     /**
      * Show the form for creating a new resource.
-     *
      */
     public function create(Request $request)
     {
@@ -105,35 +98,32 @@ class EventController extends Controller
 
         $leading_teachers = $this->getLeadingTeachersTagsArray();
 
-
         if ($request->get('location')) {
             $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
+
             return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
         }
 
-        if (!auth()->user()->locations->isEmpty()) {
-            if (!$request->get('skip')) {
+        if (! auth()->user()->locations->isEmpty()) {
+            if (! $request->get('skip')) {
                 return redirect(route('activities-locations'));
             }
         }
 
-
         return view('event.add', compact(['countries', 'themes', 'languages', 'leading_teachers']));
     }
 
-    public function search()
+    public function search(): View
     {
         $events = Event::all();
+
         return view('event.search', compact('events'));
     }
 
     /**
      * Store a newly created resource in storage.
-     *
-     * @param EventRequest $request
-     * @return \Illuminate\Http\Response
      */
-    public function store(EventRequest $request)
+    public function store(EventRequest $request): View
     {
         $user = auth()->user();
 
@@ -157,13 +147,12 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function show(Event $event)
     {
 
-        if ($event->status == 'PENDING' && !Auth::check()) {
+        if ($event->status == 'PENDING' && ! Auth::check()) {
             return redirect(route('login'));
         } elseif ($event->status != 'APPROVED') {
             $this->authorize('view', $event);
@@ -174,11 +163,8 @@ class EventController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
-     * @param \App\Event $event
-     * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
+    public function edit(Event $event): View
     {
         $this->authorize('edit', $event);
 
@@ -206,7 +192,6 @@ class EventController extends Controller
             : $event->language;
 
         $languages = Arr::sort(Lang::get('base.languages'));
-        //dd($event);
 
         $leading_teachers = $this->getLeadingTeachersTagsArray();
 
@@ -221,19 +206,15 @@ class EventController extends Controller
                 'selected_country',
                 'languages',
                 'selected_language',
-                'leading_teachers'
+                'leading_teachers',
             ])
         );
     }
 
     /**
      * Update the specified resource in storage.
-     *
-     * @param EventRequest $request
-     * @param \App\Event $event
-     * @return \Illuminate\Http\Response
      */
-    public function update(EventRequest $request, Event $event)
+    public function update(EventRequest $request, Event $event): View
     {
         $this->authorize('edit', $event);
 
@@ -245,7 +226,6 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function destroy(Event $event)
@@ -260,9 +240,9 @@ class EventController extends Controller
         $event->approve();
     }
 
-    public function approveAll($country)
+    public function approveAll($country): RedirectResponse
     {
-        $object = (object)['iso' => $country];
+        $object = (object) ['iso' => $country];
 
         $events = PendingEventsQuery::trigger($object);
 
@@ -272,7 +252,7 @@ class EventController extends Controller
             $event->approve();
         }
 
-        return redirect('pending/' . $country);
+        return redirect('pending/'.$country);
     }
 
     public function reject(Request $request, Event $event)
@@ -290,13 +270,15 @@ class EventController extends Controller
     private function sendDeletionEmail($event)
     {
 
-        if ($event->creator_id == auth()->id()) return;
+        if ($event->creator_id == auth()->id()) {
+            return;
+        }
 
-        if (!empty($event->user_email)) {
+        if (! empty($event->user_email)) {
             Mail::to($event->user_email)->queue(
                 new \App\Mail\EventDeleted()
             );
-        } elseif (!is_null($event->owner) && !is_null($event->owner->email)) {
+        } elseif (! is_null($event->owner) && ! is_null($event->owner->email)) {
             Mail::to($event->owner->email)->queue(
                 new \App\Mail\EventDeleted()
             );
@@ -329,9 +311,6 @@ class EventController extends Controller
             ->with('flash', 'Your event has been deleted!');
     }
 
-    /**
-     * @return array
-     */
     public function getLeadingTeachersTagsArray(): array
     {
         $leading_teachers = User::role('leading teacher')
@@ -342,6 +321,7 @@ class EventController extends Controller
             ->toArray();
 
         $leading_teachers = Arr::pluck($leading_teachers, 'tag');
+
         return $leading_teachers;
     }
 }

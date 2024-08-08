@@ -2,17 +2,15 @@
 
 namespace App\Http\Resources;
 
+use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class Event extends JsonResource
 {
     /**
      * Transform the resource into an array.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array
      */
-    public function toArray($request)
+    public function toArray(Request $request): array
     {
         //return parent::toArray($request);
 
@@ -20,7 +18,7 @@ class Event extends JsonResource
             'title' => $this->title,
             'description' => $this->description,
             'picture' => $this->picture_path(),
-            'path' => $this->path()
+            'path' => $this->path(),
         ];
     }
 }

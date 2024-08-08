@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Certifikat för ',
-    'no_certificates' => 'Det finns inga certifikat ännu.'
+    'no_certificates' => 'Det finns inga certifikat ännu.',
 ];

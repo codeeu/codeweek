@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Koulun nimi',
-    'location'           => 'Koulun sijainti',
-    'description'                => 'Koulun kuvaus',
-    'school'                => 'Koulu',
-    'add'                => 'Lisää',
-    'list'                => 'Luettelo',
+    'name' => 'Koulun nimi',
+    'location' => 'Koulun sijainti',
+    'description' => 'Koulun kuvaus',
+    'school' => 'Koulu',
+    'add' => 'Lisää',
+    'list' => 'Luettelo',
     'required' => [
-        'name'=>'Koulun nimi on pakollinen tieto.',
-        'location'=>'Koulun sijainti on pakollinen tieto.',
-    ]
-
+        'name' => 'Koulun nimi on pakollinen tieto.',
+        'location' => 'Koulun sijainti on pakollinen tieto.',
+    ],
 
 ];

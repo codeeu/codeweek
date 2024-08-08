@@ -2,12 +2,10 @@
 
 namespace App\Mail;
 
-use App\Event;
 use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class RemindAmbassador extends Mailable
 {
@@ -27,13 +25,11 @@ class RemindAmbassador extends Mailable
 
     /**
      * Build the message.
-     *
-     * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
-            ->subject("There are events still pending that need your attention")
+            ->subject('There are events still pending that need your attention')
             ->markdown('emails.en.remind-ambassador');
     }
 }

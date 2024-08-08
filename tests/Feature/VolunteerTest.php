@@ -2,33 +2,27 @@
 
 namespace Tests\Feature;
 
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Torann\GeoIP\Facades\GeoIP;
 
-class VolunteerTest extends TestCase
+final class VolunteerTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     private $admin;
 
-
-    public function setup():void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $this->admin = create('App\User')->assignRole('super admin');
-
+        $this->admin = \App\User::factory()->create()->assignRole('super admin');
 
     }
 
-    /** @test */
-    public function should_create_volunteer()
+    #[Test]
+    public function should_create_volunteer(): void
     {
 
         $this->withExceptionHandling();
@@ -40,60 +34,54 @@ class VolunteerTest extends TestCase
         $this->post('/volunteer');
 
         $this->assertDatabaseHas('volunteers', [
-            'user_id' => auth()->user()->id
+            'user_id' => auth()->user()->id,
         ]);
-
 
     }
 
-    /** @test */
-    public function should_list_pending_volunteers()
+    #[Test]
+    public function should_list_pending_volunteers(): void
     {
 
         $this->signIn($this->admin);
 
-        $volunteer = create('App\Volunteer');
+        $volunteer = \App\Volunteer::factory()->create();
 
         $this->get('/volunteers')->assertSee($volunteer->user->lastname);
 
     }
 
-    /** @test */
-    public function should_promote_volunteer_to_ambassador()
+    #[Test]
+    public function should_promote_volunteer_to_ambassador(): void
     {
 
         $this->signIn($this->admin);
 
-        $volunteer = create('App\Volunteer');
+        $volunteer = \App\Volunteer::factory()->create();
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 
-        $this->get('/volunteer/' . $volunteer->id . '/approve');
+        $this->get('/volunteer/'.$volunteer->id.'/approve');
 
         $this->assertTrue($volunteer->fresh()->user->hasRole('ambassador'));
-        $this->assertEquals($volunteer->fresh()->status,'APPROVED');
+        $this->assertEquals($volunteer->fresh()->status, 'APPROVED');
 
     }
 
-    /** @test */
-    public function should_reject_volunteer()
+    #[Test]
+    public function should_reject_volunteer(): void
     {
 
         $this->signIn($this->admin);
 
-        $volunteer = create('App\Volunteer');
+        $volunteer = \App\Volunteer::factory()->create();
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 
-        $this->get('/volunteer/' . $volunteer->id . '/reject');
+        $this->get('/volunteer/'.$volunteer->id.'/reject');
 
         $this->assertFalse($volunteer->fresh()->user->hasRole('ambassador'));
-        $this->assertEquals('REJECTED',$volunteer->fresh()->status);
-
+        $this->assertEquals('REJECTED', $volunteer->fresh()->status);
 
     }
-
-
 }
-
-

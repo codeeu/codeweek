@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands;
 
-
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -36,28 +35,22 @@ class LoadAvatars extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load avatars');
 
-
         $avatars = DB::table('avatar_avatar')
             ->get();
-
 
         foreach ($avatars as $avatar) {
 
             if ($avatar->primary == 1) {
 
-
                 User::where('id', $avatar->user_id)
                     ->update(['avatar_path' => $avatar->avatar]);
 
             }
-
 
         }
     }

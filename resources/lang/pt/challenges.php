@@ -19,7 +19,7 @@ return [
         'beginner' => 'Iniciante',
         'intermediate' => 'Intermédio',
         'advanced' => 'Avançado',
-        '1-hour' => '1 hora'
+        '1-hour' => '1 hora',
     ],
     'main' => [
         'Durante a Semana Europeia da Programação, de 9 a 24 de outubro de 2021, convidamo-lo a realizar um ou mais dos desafios da Semana Europeia da Programação.',
@@ -35,7 +35,7 @@ return [
         'Partilhe o seu desafio',
         'Gostaria de ganhar ofertas da Semana da Programação? Se sim, faça com que o seu trabalho se torne viral!',
         'Depois de concluir o desafio, partilhe-o no Instagram.',
-        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados e anunciados vencedores no nosso canal do Instagram. Por isso, não se esqueça de verificar as suas notificações regularmente.'
+        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados e anunciados vencedores no nosso canal do Instagram. Por isso, não se esqueça de verificar as suas notificações regularmente.',
     ],
     'share' => [
         'Como partilhar os seus desafios no Instagram',
@@ -52,7 +52,7 @@ return [
         'Facebook',
         'e selecionará o vencedor do prémio a partir dos comentários da publicação.',
         'Como funciona?',
-        'Basta comentar a publicação com a hiperligação para o seu trabalho.'
+        'Basta comentar a publicação com a hiperligação para o seu trabalho.',
     ],
     'share-box' => [
         'Partilhe a hiperligação para o seu trabalho na sua',
@@ -67,18 +67,18 @@ return [
         'uma nova publicação de desafio na respetiva',
         'página do Facebook',
         'Depois, basta comentar a publicação com a hiperligação para o seu trabalho',
-        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados vencedores para receberem ofertas da Semana da Programação e serão anunciados nos nossos canais do Instagram e Facebook. Por isso, não se esqueça de verificar as suas notificações regularmente'
+        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados vencedores para receberem ofertas da Semana da Programação e serão anunciados nos nossos canais do Instagram e Facebook. Por isso, não se esqueça de verificar as suas notificações regularmente',
     ],
     'take-part' => [
         'Porquê participar num desafio da Semana Europeia da Programação?',
         'Para participar em atividades de resolução de problemas e programação.',
         'Para trabalhar em conjunto com os colegas.',
-        'Para divulgar a importância da programação.'
+        'Para divulgar a importância da programação.',
     ],
     'download' => [
         'Clique',
         'aqui',
-        'para descarregar este desafio como um documento do Word'
+        'para descarregar este desafio como um documento do Word',
     ],
     'bingo' => [
         'Conclua todos os desafios',
@@ -88,6 +88,6 @@ return [
         'Partilhe o seu desafio nas redes sociais e ganhe prémios incríveis da Semana da Programação',
         'Basta carregar uma fotografia da(s) linha(s) ou coluna(s) completa(s) ou, ainda melhor, do bingo completo, no',
         'Facebook, Instagram ou Twitter',
-        'Certifique-se de que utiliza a hashtag'
-    ]
+        'Certifique-se de que utiliza a hashtag',
+    ],
 ];

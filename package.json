@@ -1,40 +1,30 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
-  "dependencies": {
-    "@prettier/plugin-php": "^0.17.3",
-    "axios": "^0.25",
-    "bootstrap": "^4.5.2",
-    "cross-env": "^5.2.1",
-    "cross-spawn": "^6.0.5",
-    "false": "^0.0.4",
-    "in-viewport": "^3.6.0",
-    "jquery": "^3.5.0",
-    "laravel-mix": "^4.1.4",
-    "laravel-mix-tailwind": "^0.1.0",
-    "lodash": "^4.17.21",
-    "popper.js": "^1.16.1",
-    "prettier": "^1.19.1",
-    "resolve-url-loader": "2.3.2",
-    "sass": "^1.26.10",
-    "sass-loader": "^7.3.1",
-    "tar": "^4.4.15",
-    "v-autocomplete": "^1.8.2",
-    "vue": "^2.6.11",
-    "vue-clipboard2": "^0.3.1",
-    "vue-i18n": "^8.21.0",
-    "vue-input-tag": "^2.0.7",
-    "vue-multiselect": "^2.1.3",
-    "vue-select": "^2.6.4",
-    "vue-tables-2": "^1.6.25",
-    "vue-template-compiler": "^2.6.11"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "build-analytics": "cd nova-components/Analytics && npm run dev",
+        "build-analytics-prod": "cd nova-components/Analytics && npm run prod"
+    },
+    "devDependencies": {
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0",
+        "sass": "^1.75.0",
+        "vite": "^5.0"
+    },
+    "dependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "@vuepic/vue-datepicker": "^8.8.1",
+        "laravel-vue-i18n": "^2.7.7",
+        "lodash": "^4.17.21",
+        "mitt": "^3.0.1",
+        "v-autocomplete": "^1.8.2",
+        "vue": "^3.4.26",
+        "vue-clipboard3": "^2.0.0",
+        "vue-i18n": "^9.13.1",
+        "vue-loader": "^17.4.2",
+        "vue-multiselect": "^3.0.0",
+        "vue3-tags-input": "^1.0.12"
+    }
 }

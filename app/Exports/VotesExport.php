@@ -3,14 +3,12 @@
 namespace App\Exports;
 
 use App\Vote;
+use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class VotesExport implements FromCollection
 {
-    /**
-    * @return \Illuminate\Support\Collection
-    */
-    public function collection()
+    public function collection(): Collection
     {
         return Vote::all();
     }

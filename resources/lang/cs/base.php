@@ -41,7 +41,7 @@ return [
         'me' => 'Černohorština',
         'rs' => 'Srbština',
         'mt' => 'Maltština',
-        'tr' => 'Turečtina'
+        'tr' => 'Turečtina',
     ],
 
     'resources_local_title' => 'Programovací zdroje od',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Máte další otázky?',
     'drop_us_a_line' => 'Klidně nám napište.',
     'get_in_touch' => 'KONTAKTUJTE NÁS',
-    'footer_msg' =>
-        'Evropský týden programování je projekt, který spatřil světlo světa díky nadšení dobrovolníků a který podporuje Evropská komise.',
+    'footer_msg' => 'Evropský týden programování je projekt, který spatřil světlo světa díky nadšení dobrovolníků a který podporuje Evropská komise.',
     'email' => 'E-mail',
     'display_email' => 'Zobrazit e-mail',
     'first_name' => 'Jméno',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Vyberte soubor',
     'learning_bits' => 'Školicí materiály',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Přibližte Týden programování svým studentům',
+    'bring_codeweek_to_your_students' => 'Přibližte Týden programování svým studentům',
     'or' => 'nebo',
-    'newsletter' => 'Newsletter'
+    'newsletter' => 'Newsletter',
 ];

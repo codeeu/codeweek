@@ -9,10 +9,8 @@ class LeadingTeacherExpertiseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
         create(LeadingTeacherExpertise::class, [
             'id' => 1,
@@ -57,4 +55,3 @@ class LeadingTeacherExpertiseSeeder extends Seeder
 
     }
 }
-

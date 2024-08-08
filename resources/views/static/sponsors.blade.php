@@ -13,7 +13,7 @@
             </div>
         </section>
 
-        <section class="codeweek-content-wrapper">
+        <section style="display: none;" class="codeweek-content-wrapper">
 
             <ul>
                 <li>

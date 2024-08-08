@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Az európai programozási hét nagykövetei',
-    'your_current_country'=>'Jelenlegi országa',
-    'visit_the'=> 'Látogasson el',
-    'local_facebook_page'=>'a helyi Facebook-oldalra',
-    'local_website'=>'Helyi honlap',
-    'ambassadors'=>'Nagykövetek',
-    'no_ambassadors'=>'Nincs még nagykövet',
-    'countries_with_ambassadors'=>'Országok és nagyköveteik',
-    'why_dont_you_volunteer'=>'Jelentkezzen önkéntesnek!'
+    'your_current_country' => 'Jelenlegi országa',
+    'visit_the' => 'Látogasson el',
+    'local_facebook_page' => 'a helyi Facebook-oldalra',
+    'local_website' => 'Helyi honlap',
+    'ambassadors' => 'Nagykövetek',
+    'no_ambassadors' => 'Nincs még nagykövet',
+    'countries_with_ambassadors' => 'Országok és nagyköveteik',
+    'why_dont_you_volunteer' => 'Jelentkezzen önkéntesnek!',
 
 ];

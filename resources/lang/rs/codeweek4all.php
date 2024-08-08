@@ -34,7 +34,7 @@ return [
             '4' => 'Nakon završetka kampanje, od svih organizatora aktivnosti će biti zatraženo
                                     da podnesu izveštaj o tome koliko je bilo učesnika. Ako ste uspešno
                                     ispunili uslove, vi i vaše kolege koji su bili deo vašeg tima dobićete
-                                    Sertifikat izvrsnosti!'
+                                    Sertifikat izvrsnosti!',
         ],
         'existing_alliance' => [
             'title' => 'Ako se pridružujete već postojećem timu:',
@@ -46,8 +46,8 @@ return [
             '4' => 'Nakon završetka kampanje, od svih organizatora aktivnosti će biti zatraženo
                                     da podnesu izveštaj o tome koliko je bilo učesnika. Ako ste uspešno
                                     ispunili uslove, vi i vaše kolege koji su bili deo vašeg tima dobićete
-                                    Sertifikat izvrsnosti!'
-        ]
+                                    Sertifikat izvrsnosti!',
+        ],
     ],
     'why' => [
         'title' => 'Koji su razlozi da se pridružite izazovu?',
@@ -56,9 +56,9 @@ return [
         '3' => 'Građenje veza sa organizacijama i / ili školama u vašoj zajednici ili
                                     međunarodno.',
         '4' => 'Pronalaženje podrške drugih organizatora i nastavnika.',
-        '5' => 'Osvajanje <strong>Sertifikata izvrsnosti.</strong>'
+        '5' => 'Osvajanje <strong>Sertifikata izvrsnosti.</strong>',
     ],
     'superorganiser-title' => 'Certifikat super organizatora',
-    'superorganiser' => 'Također možete dobiti certifikat super organizatora. Da biste to učinili, trebate organizirati i <a href="https://codeweek.eu/add">registrirati</a> najmanje 10 zasebnih aktivnosti u vašoj školi, organizaciji ili na mreži.'
+    'superorganiser' => 'Također možete dobiti certifikat super organizatora. Da biste to učinili, trebate organizirati i <a href="https://codeweek.eu/add">registrirati</a> najmanje 10 zasebnih aktivnosti u vašoj školi, organizaciji ili na mreži.',
 
 ];

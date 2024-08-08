@@ -16,7 +16,7 @@ return [
     'learn' => 'Za učenike',
     'teach' => 'Za profesore',
     'training' => 'Trening',
-    'toolkits' => 'Prezentacije i alati', 'why' => 'ZAŠTO', 'home'  => 'Početna stranica',
+    'toolkits' => 'Prezentacije i alati', 'why' => 'ZAŠTO', 'home' => 'Početna stranica',
     'events' => 'Aktivnosti',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resursi',
@@ -38,7 +38,7 @@ return [
     'logout' => 'Odjavite se',
     'signin' => 'Upišite se',
     'privacy' => 'Privatnost',
-    'participation'=> 'Certifikat za učesnike',
+    'participation' => 'Certifikat za učesnike',
     'values' => 'Naše vrijednosti',
 
     'featured_activities' => 'Istaknute aktivnosti',

@@ -5,7 +5,7 @@ return [
         'Varför kodning?',
         'Det handlar om att förverkliga idéer',
         'Det handlar också om att utveckla viktiga kompetenser',
-        'Slutligen handlar det om att forma vår framtid'
+        'Slutligen handlar det om att forma vår framtid',
     ],
     'texts' => [
         'Det handlar om Pia, som kände att hon var tvungen att studera juridik, trots att hon alltid gillat matte och datorer. Det handlar om Mark, som har en idé om ett bättre socialt nätverk, men som inte kan bygga det själv. Det handlar om Alice, som drömmer om att tillverka robotar eftersom hon inte får ha en katt för sina föräldrar. Och om dem av er som redan hjälper till att förverkliga dessa drömmar.',
@@ -20,6 +20,6 @@ return [
         'Blev du inspirerad?',
         'Delta i EU:s kodvecka!',
         'Vill du veta mer?',
-        'I vår blogg hittar du mer information.'
-    ]
+        'I vår blogg hittar du mer information.',
+    ],
 ];

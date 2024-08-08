@@ -3,45 +3,17 @@
 namespace App\Rules;
 
 use App\Theme;
-use Illuminate\Contracts\Validation\Rule;
+use Closure;
+use Illuminate\Contracts\Validation\ValidationRule;
 
-class validTheme implements Rule
+class validTheme implements ValidationRule
 {
-    /**
-     * Create a new rule instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
-     * Determine if the validation rule passes.
-     *
-     * @param  string  $attribute
-     * @param  mixed  $value
-     * @return bool
-     */
-    public function passes($attribute, $value)
+    public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         foreach (explode(',', $value) as $theme_id) {
             if (is_null(Theme::firstWhere('id', $theme_id))) {
-                return false;
+                $fail('The theme is invalid');
             }
         }
-
-        return true;
-    }
-
-    /**
-     * Get the validation error message.
-     *
-     * @return string
-     */
-    public function message()
-    {
-        return 'The theme is invalid';
     }
 }

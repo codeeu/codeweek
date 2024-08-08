@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Účast',
-    'theme_title'=>'Téma',
-    
+    'audience_title' => 'Účast',
+    'theme_title' => 'Téma',
+
     'placeholder' => 'Hledat název akce nebo tag',
     'submit' => 'Hledat',
     'label_country' => 'Vyberte zemi',
     'last_year_events' => [
         'label' => 'Zahrnout akce v minulých letech',
         'yes' => 'Ano',
-        'no' => 'Ne'
+        'no' => 'Ne',
     ],
     'search_counter' => 'odpovídá vašim vyhledávacím kritériím',
-    'event'=>'akce',
-    'events'=>'akcí',
+    'event' => 'akce',
+    'events' => 'akcí',
     'year' => 'rok',
-    'audiences'=>'Publikum','themes'=>'Témata','countries'=>'Země','search_placeholder' => 'Hledej podle nadpisu nebo popisu',
+    'audiences' => 'Publikum', 'themes' => 'Témata', 'countries' => 'Země', 'search_placeholder' => 'Hledej podle nadpisu nebo popisu',
 ];

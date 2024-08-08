@@ -3,53 +3,42 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-
-class ReviewEventTest extends TestCase
+final class ReviewEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-    public function setup() :void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
     }
 
-    /** @test */
-    public function ambassadors_of_right_country_can_see_the_review_section()
+    #[Test]
+    public function ambassadors_of_right_country_can_see_the_review_section(): void
     {
-        $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole('ambassador');
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
 
-        $event = create('App\Event', ['country_iso' => 'FR', 'status' => 'PENDING'],33);
+        $event = \App\Event::factory()->count(33)->create(['country_iso' => 'FR', 'status' => 'PENDING']);
 
-        $this->get('/view/' . $event[30]->id . '/random')
+        $this->get('/view/'.$event[30]->id.'/random')
             ->assertSee('moderate-event');
 
     }
 
-    /** @test */
-    public function visitors_cant_see_the_review_section()
+    #[Test]
+    public function visitors_cant_see_the_review_section(): void
     {
-        $visitor = create('App\User', ['country_iso' => 'FR']);
+        $visitor = \App\User::factory()->create(['country_iso' => 'FR']);
         $this->signIn($visitor);
 
-        $event = create('App\Event', ['country_iso' => 'FR', 'status' => 'PENDING']);
+        $event = \App\Event::factory()->create(['country_iso' => 'FR', 'status' => 'PENDING']);
 
-        $this->get('/view/' . $event->id . '/random')
+        $this->get('/view/'.$event->id.'/random')
             ->assertDontSee('moderate-event');
 
     }
-
-
-
-
-
-
-
 }
-
-

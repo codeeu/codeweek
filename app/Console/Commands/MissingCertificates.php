@@ -6,7 +6,6 @@ use App\Event;
 use App\Helpers\EventHelper;
 use App\Jobs\MissingCertificate;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Mail;
 
 class MissingCertificates extends Command
 {
@@ -26,10 +25,8 @@ class MissingCertificates extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         // get all the events with faulty certificate status
@@ -38,7 +35,7 @@ class MissingCertificates extends Command
 
         //$faultyCertificatesEvents = Event::where('id',171675)->get();
 
-        $this->info("Faulty Certificates Found: " . $faultyCertificatesEvents->count());
+        $this->info('Faulty Certificates Found: '.$faultyCertificatesEvents->count());
 
         // Create the Job to
         // - generate certificate

@@ -5,37 +5,34 @@ namespace Tests\Feature;
 use App\Mail\EventDeleted;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-
-class DeleteEventTest extends TestCase
+final class DeleteEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-    public function setup() :void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-
     }
 
-    /** @test */
-    public function event_can_be_deleted_by_admin()
+    #[Test]
+    public function event_can_be_deleted_by_admin(): void
     {
 
         Mail::fake();
 
         $this->withExceptionHandling();
 
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $event = create('App\Event', ['title' => 'foobar']);
+        $event = \App\Event::factory()->create(['title' => 'foobar']);
 
         $this->post(route('event.delete', $event));
 
@@ -44,20 +41,19 @@ class DeleteEventTest extends TestCase
 
         $this->assertTrue($event->fresh()->trashed());
 
-
     }
 
-    /** @test */
-    public function event_can_be_deleted_by_event_creator()
+    #[Test]
+    public function event_can_be_deleted_by_event_creator(): void
     {
 
         $this->withExceptionHandling();
 
-        $user = create('App\User');
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
 
-        $event = create('App\Event', ['creator_id'=> $user->id]);
+        $event = \App\Event::factory()->create(['creator_id' => $user->id]);
 
         $this->post(route('event.delete', $event));
 
@@ -66,72 +62,61 @@ class DeleteEventTest extends TestCase
 
         $this->assertTrue($event->fresh()->trashed());
 
-
     }
 
-    /** @test */
-    public function event_can_be_deleted_by_ambassador_of_same_country()
+    #[Test]
+    public function event_can_be_deleted_by_ambassador_of_same_country(): void
     {
 
         $this->withExceptionHandling();
 
-        $ambassador = create('App\User', ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'country_iso' => 'FR']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'FR']);
 
         $this->post(route('event.delete', $event));
 
         $this->assertTrue($event->fresh()->trashed());
 
-
     }
 
-    /** @test */
-    public function event_cant_be_approved_by_ambassador_of_other_country()
+    #[Test]
+    public function event_cant_be_approved_by_ambassador_of_other_country(): void
     {
 
         $this->withExceptionHandling();
 
-
-        $ambassador = create('App\User', ['country_iso' => 'FR']);
+        $ambassador = \App\User::factory()->create(['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'country_iso' => 'BE']);
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'BE']);
 
         $this->post(route('event.delete', $event));
 
         $this->assertFalse($event->fresh()->trashed());
 
-
     }
 
-    /** @test */
-    public function event_cannot_be_deleted_by_logged_user_that_is_not_creator()
+    #[Test]
+    public function event_cannot_be_deleted_by_logged_user_that_is_not_creator(): void
     {
 
         $this->withExceptionHandling();
 
-        $user = create('App\User');
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
 
-        $event = create('App\Event', ['title' => 'foobar']);
+        $event = \App\Event::factory()->create(['title' => 'foobar']);
 
         $this->post(route('event.delete', $event));
 
         $this->assertFalse($event->fresh()->trashed());
 
-
     }
-
-
-
-
 }
-
-

@@ -1,20 +1,27 @@
 <?php
 
-/* @var $factory \Illuminate\Database\Eloquent\Factory */
+namespace Database\Factories;
 
-use App\Participation;
-use App\User;
-use Faker\Generator as Faker;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(Participation::class, function (Faker $faker) {
-    return [
-        'user_id' => function(){
-            return factory(App\User::class)->create()->id;
-        },
-        'names'=>$faker->firstName,
-        'event_name' => $faker->name(),
-        'event_date' => $faker->name(),
-        'participation_url' => $faker->url
+class ParticipationFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'user_id' => function () {
+                return \App\User::factory()->create()->id;
+            },
+            'names' => $this->faker->firstName(),
+            'event_name' => $this->faker->name(),
+            'event_date' => $this->faker->name(),
+            'participation_url' => $this->faker->url(),
 
-    ];
-});
+        ];
+    }
+}

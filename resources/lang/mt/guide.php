@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'title' => 'Gwida',
@@ -8,7 +7,7 @@ return [
     'register_activity' => 'Irreġistra l-attività tiegħek hawnhekk',
     'what' => [
         'title' => 'X’inhi l-Ġimgħa tal-UE tal-Ikkowdjar?',
-        'content' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar hija moviment fil-livell lokali mmexxi minn voluntiera u appoġġat mill-Kummissjoni Ewropea. Kulħadd – skejjel, għalliema, libreriji, klabbs tal-ikkowdjar, negozji, awtoritajiet pubbliċi – jista’ jorganizza avveniment ta’ #EUCodeWeek u jżidu fuq il-mappa <a href="/events">codeweek.eu</a></p>'
+        'content' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar hija moviment fil-livell lokali mmexxi minn voluntiera u appoġġat mill-Kummissjoni Ewropea. Kulħadd – skejjel, għalliema, libreriji, klabbs tal-ikkowdjar, negozji, awtoritajiet pubbliċi – jista’ jorganizza avveniment ta’ #EUCodeWeek u jżidu fuq il-mappa <a href="/events">codeweek.eu</a></p>',
     ],
     'what_you_need_organise' => [
         'title' => 'X’għandek bżonn sabiex torganizza attività?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Irreġistra l-parteċipanti.</strong> Jekk għandek spazju limitat disponibbli, tista’ tuża għodod online bħal <a href="https://docs.google.com/forms/">formoli ta’ Google</a> u <a
                         href="https://www.eventbrite.com/">Eventbrite</a> biex tirreġistra l-parteċipanti.',
             '8' => 'Ftakar biex <a href="/add">twaħħal l-attività tiegħek</a> fuq il-<a href="/events">mappa tal-Ġimgħa tal-Ikkowdjar</a>!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Kif għandek torganizza l-attività tiegħek?',
@@ -34,24 +33,24 @@ return [
             '4' => '<strong>Xerred l-aħbar!</strong> Ippromwovi u aqsam dak li għamilt matul l-attività tiegħek fuq il-midja soċjali permezz tal-hashtag #EUCodeWeek. Tista’ wkoll taqsam fuq il-<a
                         href="https://www.facebook.com/groups/774720866253044/">grupp tal-Għalliema tal-Ġimgħa tal-UE tal-Ikkowdjar</a> u fuq Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Tkellem ma’ sħabek, edukaturi kollegi, l-istampa lokali, u agħmel stqarrija għall-istampa.',
             '5' => 'Tinsiex <a href="/add">iżżid l-attività tiegħek</a> fuq il-<a href="/events">mappa tal-Ġimgħa tal-Ikkowdjar</a>!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Materjal promozzjonali',
         'text' => '<p>Iċċekkja l-<a href="http://blog.codeweek.eu/">blogg</a> tagħna għall-aħħar informazzjoni u tiddejjaq xejn tadatta l-aktar stqarrijiet għall-istampa riċenti għall-ħtiġijiet tiegħek, jew oħloq tiegħek stess:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">It-tħejjija għaċ-ċelebrazzjoni tal-Ġimgħa tal-UE tal-Ikkowdjar għall-2019</a> (disponibbli f’29 lingwa)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">It-tħejjija għaċ-ċelebrazzjoni tal-Ġimgħa tal-UE tal-Ikkowdjar għall-2019</a> (disponibbli f’29 lingwa)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Niżżel is-sett ta’ għodod li ġejjin biex jgħinuk tibda:',
         'communication_toolkit' => 'Sett ta’ Għodod għall-Komunikazzjonijiet',
-        'teachers_toolkit' => 'Sett ta’ Għodod għall-Għalliema'
+        'teachers_toolkit' => 'Sett ta’ Għodod għall-Għalliema',
     ],
     'questions' => [
         'title' => 'Mistoqsijiet?',
-        'content' => '<p>Jekk għandek mistoqsijiet dwar l-organizzazzjoni u l-promozzjoni tal-avveniment tiegħek ta’ #EUCodeWeek, ikkuntattja wieħed mill-<a href="/ambassadors">Ambaxxaturi tal-Ġimgħa tal-UE tal-Ikkowdjar</a> minn pajjiżek.</p>'
-    ]
+        'content' => '<p>Jekk għandek mistoqsijiet dwar l-organizzazzjoni u l-promozzjoni tal-avveniment tiegħek ta’ #EUCodeWeek, ikkuntattja wieħed mill-<a href="/ambassadors">Ambaxxaturi tal-Ġimgħa tal-UE tal-Ikkowdjar</a> minn pajjiżek.</p>',
+    ],
 
 ];

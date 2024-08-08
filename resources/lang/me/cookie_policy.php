@@ -15,7 +15,7 @@ return [
             <p>Tako ih nećete morati ponovo unijeti kada tokom iste posjete pretražujete internet stranicu.</p>
 
             <p>Kolačići se takođe mogu koristiti za uspostavljanje anonimnih statističkih podataka o pretraživanjima na našoj stranici.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Kako koristimo kolačiće?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Mi koristimo sljedeća <strong>3 tipa kolačića prve strane</strong>:',
             '1' => 'Čuvanje odabira posjetioca',
             '2' => 'Obezbjeđenje funkcionisanja naše internet stranice',
-            '3' => 'Prikupljanje analitičkih podataka (o ponašanju korisnika)'
+            '3' => 'Prikupljanje analitičkih podataka (o ponašanju korisnika)',
         ],
         'table' => [
-            'name'=>'naziv',
-            'service'=>'uslugu',
-            'purpose'=>'svrhu',
-            'type_duration'=>'vrstu i trajanje kolačića',
+            'name' => 'naziv',
+            'service' => 'uslugu',
+            'purpose' => 'svrhu',
+            'type_duration' => 'vrstu i trajanje kolačića',
         ],
         'visitor_preferences' => [
-            'title'=> 'Odabiri posjetioca',
-            'text'=> '<p>Ove kolačiće definišemo mi i samo mi ih možemo čitati. Oni pamte sljedeće:</p>',
-            'item'=> 'da li ste prihvatili (ili odbacili) politiku o kolačićima ove internet stranice',
+            'title' => 'Odabiri posjetioca',
+            'text' => '<p>Ove kolačiće definišemo mi i samo mi ih možemo čitati. Oni pamte sljedeće:</p>',
+            'item' => 'da li ste prihvatili (ili odbacili) politiku o kolačićima ove internet stranice',
             'table' => [
                 '1' => [
                     'service' => 'Alatka za saglasnost za kolačiće',
                     'purpose' => 'Bilježi vaše odabire kolačića (kako ne biste bili ponovo pitani)',
                     'type_duration' => 'Sesijski kolačić prve strane briše se nakon što zatvorite vaš pretraživač.',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Operativni kolačići',
             'text' => '<p>Postoje neki kolačići koje moramo uključiti, kako bi određene internet stranice funkcionisale. Zbog toga, tim stranicama nije potrebna vaša saglasnost. Ovo se naročito odnosi na:</p>',
-            'item' => 'tehničke kolačiće koje zahtijevaju određeni IT sistemi'
+            'item' => 'tehničke kolačiće koje zahtijevaju određeni IT sistemi',
         ],
         'technical_cookies' => [
             'title' => 'tehničke kolačiće',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Čuva odabir jezika korisnika.',
                     'type_duration' => 'Sesijski kolačići prve strane brišu se nakon što zatvorite vaš pretraživač.',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analitički kolačići',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Usluga internet analitike na osnovu otvorenog softvera Matomo',
                     'purpose' => 'Identifikuje stranice koje je tokom iste posjete pregledao isti posjetilac. (anonimno – ne prikupljaju se nikakvi lični podaci korisnika).',
                     'type_duration' => 'Trajni kolačić prve strane, 30 minuta',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Kako biste vidjeli predmetni sadržaj treće strane, obavezni ste prvo prihvatiti njihove posebne uslove i odredbe. Ovo podrazumijeva njihovu politiku kolačića nad kojom mi nemamo kontrolu.</p>
 
                 <p>Međutim, ukoliko ne pregledate ovakav sadržaj, na vašem uređaju neće biti instalirani nikakvi kolačići treće strane.</p>Provajderi treće strane na Nedjelji programiranja',
-            '2' => 'Ove usluge trećih strana su van kontrole internet stranice Nedjelje programiranja. Provajderi mogu u bilo kom trenutku izmijeniti njihove uslove pružanja usluga, svrhu i upotrebu kolačića itd.'
-        ]
+            '2' => 'Ove usluge trećih strana su van kontrole internet stranice Nedjelje programiranja. Provajderi mogu u bilo kom trenutku izmijeniti njihove uslove pružanja usluga, svrhu i upotrebu kolačića itd.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Kako možete upravljati kolačićima?',
@@ -109,6 +109,6 @@ return [
 
             <p>Možete obrisati sve kolačiće koji već postoje na vašem uređaju, tako što ćete obrisati istoriju pretraživanja na vašem pretraživaču. Ovim ćete ukloniti sve kolačiće sa svih internet stranica koje ste posjetili.</p>
 
-            <p>Ipak, budite svjesni činjenice da takođe možete izgubiti i neke sačuvane informacije (na primjer detalje o pristupu, odabire na stranici).</p><strong>Upravljanje kolačićima određene internet stranice</strong><p>Za detaljniju kontrolu kolačića određene internet stranice, informišite se o podešavanjima privatnosti i kolačića na vašem odabranom pretraživaču.</p><strong>Blokiranje kolačića</strong><p>Najnovije pretraživače možete podesiti tako da spriječe postavljanje bilo kakvih kolačića na vaš uređaj, ali postoji mogućnost da tada morate ručno prilagođavati odabire svaki put kada pristupite određenom sajtu/stranici. Takođe postoji mogućnost i da određene usluge i funkcije uopšte ne funkcionišu pravilno (na primjer pristup profilu).</p><strong>Upravljanje našim analitičkim kolačićima</strong><p>Možete upravljati svojim odabirima u vezi sa kolačićima putem naše Analitike koja se nalazi na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">za to predviđenoj stranici.</a></p>'
-    ]
+            <p>Ipak, budite svjesni činjenice da takođe možete izgubiti i neke sačuvane informacije (na primjer detalje o pristupu, odabire na stranici).</p><strong>Upravljanje kolačićima određene internet stranice</strong><p>Za detaljniju kontrolu kolačića određene internet stranice, informišite se o podešavanjima privatnosti i kolačića na vašem odabranom pretraživaču.</p><strong>Blokiranje kolačića</strong><p>Najnovije pretraživače možete podesiti tako da spriječe postavljanje bilo kakvih kolačića na vaš uređaj, ali postoji mogućnost da tada morate ručno prilagođavati odabire svaki put kada pristupite određenom sajtu/stranici. Takođe postoji mogućnost i da određene usluge i funkcije uopšte ne funkcionišu pravilno (na primjer pristup profilu).</p><strong>Upravljanje našim analitičkim kolačićima</strong><p>Možete upravljati svojim odabirima u vezi sa kolačićima putem naše Analitike koja se nalazi na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">za to predviđenoj stranici.</a></p>',
+    ],
 ];

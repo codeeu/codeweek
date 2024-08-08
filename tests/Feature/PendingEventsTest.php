@@ -3,29 +3,27 @@
 namespace Tests\Feature;
 
 use App\Helpers\EventHelper;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
+use Tests\TestCase;
 
-class PendingEventsTest extends TestCase
+final class PendingEventsTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
-    function ambassador_can_see_pending_events_for_his_country()
+    #[Test]
+    public function ambassador_can_see_pending_events_for_his_country(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
-        $ambassador = create('App\User');
+        $ambassador = \App\User::factory()->create();
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-
-        $eventPendingInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'title' => 'foobar title 1']);
-        $eventPendingInAnotherCountry = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'PENDING', 'title' => 'foobar title 2']);
-        $eventApprovedInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
-
+        $eventPendingInCountry = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'title' => 'foobar title 1']);
+        $eventPendingInAnotherCountry = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'PENDING', 'title' => 'foobar title 2']);
+        $eventApprovedInCountry = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
 
         $this->get('/pending')
             ->assertSee($eventPendingInCountry->title)
@@ -34,22 +32,19 @@ class PendingEventsTest extends TestCase
 
     }
 
-    /** @test */
-    function admin_can_see_pending_events_for_all_countries()
+    #[Test]
+    public function admin_can_see_pending_events_for_all_countries(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-
-        $eventPendingInCountry = create('App\Event', ['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
-        $eventPendingInAnotherCountry = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'PENDING']);
-        $eventApprovedInCountry = create('App\Event', ['country_iso' => $superadmin->country->iso, 'status' => 'APPROVED']);
-
+        $eventPendingInCountry = \App\Event::factory()->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
+        $eventPendingInAnotherCountry = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'PENDING']);
+        $eventApprovedInCountry = \App\Event::factory()->create(['country_iso' => $superadmin->country->iso, 'status' => 'APPROVED']);
 
         $this->get('/pending')
             ->assertSee($eventPendingInCountry->title)
@@ -58,71 +53,61 @@ class PendingEventsTest extends TestCase
 
     }
 
-    /** @test */
-    function it_should_get_pending_events_for_ambassador_country()
+    #[Test]
+    public function it_should_get_pending_events_for_ambassador_country(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
-        $ambassador = create('App\User');
+        $ambassador = \App\User::factory()->create();
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-
-        $eventsPendingInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING'], 4);
-        $eventPendingInAnotherCountry = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'PENDING', 'title' => 'foobar title 2']);
-        $eventApprovedInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
-
+        $eventsPendingInCountry = \App\Event::factory()->count(4)->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING']);
+        $eventPendingInAnotherCountry = \App\Event::factory()->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'PENDING', 'title' => 'foobar title 2']);
+        $eventApprovedInCountry = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
 
         $this->assertCount(4, EventHelper::getPendingEvents($ambassador->country->iso));
 
         $this->assertEquals(4, EventHelper::getPendingEventsCount($ambassador->country->iso));
 
+    }
 
-    }    
-    
-    /** @test */
-    function it_should_get_all_pending_events_for_super_admin()
+    #[Test]
+    public function it_should_get_all_pending_events_for_super_admin(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-
-        $eventsPendingInCountry = create('App\Event', ['country_iso' => $superadmin->country->iso, 'status' => 'PENDING'], 6);
-        $eventPendingInAnotherCountry = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'PENDING'], 4);
-        $eventApprovedInCountry = create('App\Event', ['country_iso' => $superadmin->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
-
+        $eventsPendingInCountry = \App\Event::factory()->count(6)->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
+        $eventPendingInAnotherCountry = \App\Event::factory()->count(4)->create(['country_iso' => \App\Country::factory()->create()->iso, 'status' => 'PENDING']);
+        $eventApprovedInCountry = \App\Event::factory()->create(['country_iso' => $superadmin->country->iso, 'status' => 'APPROVED', 'title' => 'foobar title 3']);
 
         $this->assertCount(10, EventHelper::getPendingEvents());
 
         $this->assertEquals(10, EventHelper::getPendingEventsCount());
 
-
     }
 
-    /** @test */
-    function admin_can_see_pending_event_by_country()
+    #[Test]
+    public function admin_can_see_pending_event_by_country(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-
-        $belgium = create('App\Country', ['iso' => 'BE']);
-        $france = create('App\Country', ['iso' => 'FR']);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
+        $france = \App\Country::factory()->create(['iso' => 'FR']);
         //Given that we select a country
-        $eventInBelgium = create('App\Event', ['country_iso' => $belgium->iso, 'status' => 'PENDING']);
-        $eventNotInBelgium = create('App\Event', ['country_iso' => $france->iso, 'status' => 'PENDING']);
+        $eventInBelgium = \App\Event::factory()->create(['country_iso' => $belgium->iso, 'status' => 'PENDING']);
+        $eventNotInBelgium = \App\Event::factory()->create(['country_iso' => $france->iso, 'status' => 'PENDING']);
 
         $this->get('/pending/BE')
             ->assertSee($eventInBelgium->title)
@@ -130,77 +115,71 @@ class PendingEventsTest extends TestCase
 
     }
 
-    /** @test */
-    function it_should_get_next_pending_event_id()
+    #[Test]
+    public function it_should_get_next_pending_event_id(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $eventsPendingInCountry = create('App\Event', ['country_iso' => $superadmin->country->iso, 'status' => 'PENDING'],10);
+        $eventsPendingInCountry = \App\Event::factory()->count(10)->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
 
         $this->assertEquals($eventsPendingInCountry[1]->id, EventHelper::getNextPendingEvent($eventsPendingInCountry[0])->id ?? null);
 
     }
 
-    /** @test */
-    function it_should_get_next_pending_event_for_ambassador()
+    #[Test]
+    public function it_should_get_next_pending_event_for_ambassador(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador = create('App\User');
+        $ambassador = \App\User::factory()->create();
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event1 = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id'=> 100]);
-        $event2 = create('App\Event', ['country_iso' => 'foobar', 'status' => 'PENDING', 'id'=>200]);
-        $event3 = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id'=> 300]);
+        $event1 = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id' => 100]);
+        $event2 = \App\Event::factory()->create(['country_iso' => 'foobar', 'status' => 'PENDING', 'id' => 200]);
+        $event3 = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id' => 300]);
 
         $this->assertEquals(300, auth()->user()->getNextPendingEvent($event1)->id);
 
     }
 
-    /** @test */
-    function it_should_get_next_pending_event_as_null_for_last_event()
+    #[Test]
+    public function it_should_get_next_pending_event_as_null_for_last_event(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $superadmin = create('App\User');
+        $superadmin = \App\User::factory()->create();
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $eventsPendingInCountry = create('App\Event', ['country_iso' => $superadmin->country->iso, 'status' => 'PENDING'],10);
+        $eventsPendingInCountry = \App\Event::factory()->count(10)->create(['country_iso' => $superadmin->country->iso, 'status' => 'PENDING']);
 
         $this->assertNull(EventHelper::getNextPendingEvent($eventsPendingInCountry[9])->id ?? null);
 
-
     }
 
-    /** @test */
-    function it_should_get_next_pending_event_as_not_null_for_last_event_if_there_are_more_events()
+    #[Test]
+    public function it_should_get_next_pending_event_as_not_null_for_last_event_if_there_are_more_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador = create('App\User');
+        $ambassador = \App\User::factory()->create();
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $event1 = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id'=> 100]);
-        $event2 = create('App\Event', ['country_iso' => 'foobar', 'status' => 'PENDING', 'id'=>200]);
-        $event3 = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id'=> 300]);
+        $event1 = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id' => 100]);
+        $event2 = \App\Event::factory()->create(['country_iso' => 'foobar', 'status' => 'PENDING', 'id' => 200]);
+        $event3 = \App\Event::factory()->create(['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id' => 300]);
 
         $this->assertEquals(100, auth()->user()->getNextPendingEvent($event3)->id);
 
-
     }
-
-
 }
-
-

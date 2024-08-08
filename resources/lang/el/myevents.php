@@ -12,18 +12,18 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'Όλες οι εκδηλώσεις που δημιουργήθηκαν από ',
-    'no_events'=>[
-        'first_call_to_action' => "Δεν έχεις προσθέσει ακόμα εκδηλώσεις. Γιατί δεν",
+    'created_by' => 'Όλες οι εκδηλώσεις που δημιουργήθηκαν από ',
+    'no_events' => [
+        'first_call_to_action' => 'Δεν έχεις προσθέσει ακόμα εκδηλώσεις. Γιατί δεν',
         'first_link' => 'πρόσθεσε μια τώρα',
         'second_call_to_action' => 'ή διάβασε τον ',
-        'second_link' => 'οδηγό μας για τους διοργανωτές'
+        'second_link' => 'οδηγό μας για τους διοργανωτές',
     ],
-    'view'=>'Προβολή',
-    'status'=>[
-        'APPROVED'=>'ΕΓΚΡΙΘΗΚΕ',
-        'REJECTED'=>'ΑΠΟΡΡΙΦΘΗΚΕ',
-        'PENDING'=>'ΣΕ ΑΝΑΜΟΝΗ',
-        'REPORTED' => 'ΥΠΟΒΟΛΗ ΑΝΑΦΟΡΑΣ'
-    ]
+    'view' => 'Προβολή',
+    'status' => [
+        'APPROVED' => 'ΕΓΚΡΙΘΗΚΕ',
+        'REJECTED' => 'ΑΠΟΡΡΙΦΘΗΚΕ',
+        'PENDING' => 'ΣΕ ΑΝΑΜΟΝΗ',
+        'REPORTED' => 'ΥΠΟΒΟΛΗ ΑΝΑΦΟΡΑΣ',
+    ],
 ];

@@ -19,7 +19,7 @@ return [
         'beginner' => 'Početni nivo',
         'intermediate' => 'Srednji nivo',
         'advanced' => 'Napredni nivo',
-        '1-hour' => '1 sat'
+        '1-hour' => '1 sat',
     ],
     'main' => [
         'Pozivamo vas da tokom Evropske nedjelje programiranja, od 9. do 24. oktobra 2021. godine učestvujete u jednom ili više izazova Evropske nedjelje programiranja.',
@@ -35,7 +35,7 @@ return [
         'Podijelite vaš izazov',
         'Želite li da osvojite poklone Nedjelje programiranja? Ukoliko želite, neka vaš rad bude viralan!',
         'Nakon što ispunite izazov, podijelite ga na Instagramu.',
-        'Pobjednici će se birati svakog dana tokom Nedjelje programiranja, između 9. i 24. oktobra, i biće objavljeni na našem Instagram nalogu pa ne zaboravite da redovno provjeravate obavještenja. '
+        'Pobjednici će se birati svakog dana tokom Nedjelje programiranja, između 9. i 24. oktobra, i biće objavljeni na našem Instagram nalogu pa ne zaboravite da redovno provjeravate obavještenja. ',
     ],
     'share' => [
         'Kako da podijelite svoj(e) izazov(e) na Instagramu?',
@@ -52,7 +52,7 @@ return [
         'Fejsbuk stranici',
         'svakoga dana i odabraće dobitnika nagrade među komentarima ispod posta.',
         'Kako to funkcioniše?',
-        'Jednostavno ostavite komentar na post koji uključuje i link do vašeg rada.'
+        'Jednostavno ostavite komentar na post koji uključuje i link do vašeg rada.',
     ],
     'share-box' => [
         'Podijelite link ka vašem radu u vašoj',
@@ -67,18 +67,18 @@ return [
         'novi post o izazovu na njenoj',
         'Fejsbuk stranici',
         'Tada je potrebno samo da ostavite komentar na post sa linkom ka vašem radu',
-        'Dobitnici će biti izabrani i ponudiće im se pokloni Nedjelje programiranja svakog dana Nedjelje programiranja od 9. do 24. oktobra, i biće obavljeni na našim Instagram i Fejsbuk stranicama, pa ne zaboravite da redovno provjeravate obavještenja'
+        'Dobitnici će biti izabrani i ponudiće im se pokloni Nedjelje programiranja svakog dana Nedjelje programiranja od 9. do 24. oktobra, i biće obavljeni na našim Instagram i Fejsbuk stranicama, pa ne zaboravite da redovno provjeravate obavještenja',
     ],
     'take-part' => [
         'Zašto učestvovati u izazovu Evropske nedjelje programiranja?',
         'Da biste uzeli učešća u aktivnostima rješavanja problema i programiranja.',
         'Da biste sarađivali sa vršnjacima.',
-        'Da biste prenosili poruku o važnosti programiranja.'
+        'Da biste prenosili poruku o važnosti programiranja.',
     ],
     'download' => [
         'Kliknite',
         'ovdje',
-        'da biste preuzeli ovaj izazov u formatu Word dokumenta'
+        'da biste preuzeli ovaj izazov u formatu Word dokumenta',
     ],
     'bingo' => [
         'Ispunite sve izazove',
@@ -88,6 +88,6 @@ return [
         'Podijelite vaš Izazov na društvenim mrežama i osvojite kul nagrade Nedjelje programiranja',
         'Samo unesite sliku sa ispunjenim redovima, kolonama ili, još bolje, kompletan bingo listić na',
         'Fejsbuk, Instagram ili Tviter',
-        'Obavezno koristite'
-    ]
+        'Obavezno koristite',
+    ],
 ];

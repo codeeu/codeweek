@@ -5,7 +5,6 @@ namespace App\Console\Commands;
 use App\Excellence;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
@@ -37,10 +36,8 @@ class NotifySuperOrganisers extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
 
         $edition = $this->argument('edition');
@@ -51,18 +48,19 @@ class NotifySuperOrganisers extends Command
 
             $user = $winner->user;
 
-            if(!$user) continue;
+            if (! $user) {
+                continue;
+            }
 
-            if ($user->email && $user->receive_emails){
+            if ($user->email && $user->receive_emails) {
                 Mail::to($user->email)->queue(new \App\Mail\NotifySuperOrganiser($user, $edition));
-                $excellence = $user->superOrganisers->where('edition', '=' , $edition)->first();
+                $excellence = $user->superOrganisers->where('edition', '=', $edition)->first();
 
                 $excellence->notified_at = Carbon::now();
                 $excellence->save();
 
-
             } else {
-                Log::info($user->id . " has no valid email address");
+                Log::info($user->id.' has no valid email address');
             }
 
         }

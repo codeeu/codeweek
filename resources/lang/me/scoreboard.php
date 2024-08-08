@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Rang lista #EUCodeWeek događaja',
-    'paragraph'=>'U kojim evropskim zemljama pršti od aktivnosti iz oblasti programiranja? Rang lista je sačinjena na osnovu broja popisanih događaja programiranja po glavi stanovnika, pa ne budite iznenađeni činjenicom da su neke manje zemlje visočije pozicionirane na listi!',
-    'parcipating_with'=>'Učestvuje sa',
-    'events'=>'događajima'
+    'paragraph' => 'U kojim evropskim zemljama pršti od aktivnosti iz oblasti programiranja? Rang lista je sačinjena na osnovu broja popisanih događaja programiranja po glavi stanovnika, pa ne budite iznenađeni činjenicom da su neke manje zemlje visočije pozicionirane na listi!',
+    'parcipating_with' => 'Učestvuje sa',
+    'events' => 'događajima',
 
 ];

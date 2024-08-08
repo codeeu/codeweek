@@ -2,7 +2,9 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
@@ -19,6 +21,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property-read \App\Event|null $event
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Importer newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Importer newQuery()
  * @method static \Illuminate\Database\Query\Builder|Importer onlyTrashed()
@@ -35,18 +38,18 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder|Importer whereWebsite($value)
  * @method static \Illuminate\Database\Query\Builder|Importer withTrashed()
  * @method static \Illuminate\Database\Query\Builder|Importer withoutTrashed()
+ *
  * @mixin \Eloquent
  */
 class Importer extends Model
 {
+    use HasFactory;
     use SoftDeletes;
 
     protected $guarded = [];
 
-    public function event()
+    public function event(): HasOne
     {
-        return $this->hasOne('App\Event', 'id', 'event_id');
+        return $this->hasOne(\App\Event::class, 'id', 'event_id');
     }
-
-
 }

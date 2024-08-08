@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands;
 
-
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -36,10 +35,8 @@ class LoadUsers extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load users');
 
@@ -48,25 +45,24 @@ class LoadUsers extends Command
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
         $old_users = DB::table('auth_user')
-            ->leftJoin('api_userprofile','api_userprofile.user_id',"=","auth_user.id")
+            ->leftJoin('api_userprofile', 'api_userprofile.user_id', '=', 'auth_user.id')
             ->get();
-
 
         foreach ($old_users as $old) {
 
             $new = new User();
             $new->id = $old->user_id;
             $new->password = $old->password;
-            $new->firstname= $old->first_name;
-            $new->lastname= $old->last_name;
-            $new->username= $old->username;
+            $new->firstname = $old->first_name;
+            $new->lastname = $old->last_name;
+            $new->username = $old->username;
 
-            $new->email= $old->email;
+            $new->email = $old->email;
 
-            $new->country_iso= $old->country;
-            $new->twitter= $old->twitter;
-            $new->website= $old->website;
-            $new->bio= $old->bio;
+            $new->country_iso = $old->country;
+            $new->twitter = $old->twitter;
+            $new->website = $old->website;
+            $new->bio = $old->bio;
 
             $new->save();
         }

@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Järjestäjä: ',
+    'organised_by' => 'Järjestäjä: ',
     'contact_email' => 'Sähköpostiosoite: ',
     'happening_at' => 'Tapahtumapaikka: ',
     'from' => 'Alkaa ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Napsauta ja lähetä sähköpostitse ystävällesi',
         'subject' => 'Katso, miten siisti koodaustapahtuma',
         'body_1' => 'Hei, katso mikä ',
-        'body_2' => 'tapahtuma '
+        'body_2' => 'tapahtuma ',
     ],
     'edit' => 'Muokkaa tapahtumaa',
     'note' => 'HUOMAA: ',
     'pending_warning' => 'Tapahtuma odottaa vielä ',
     'pending_link' => 'tarkastusta',
-    'nearby_upcoming_events' => 'Lähialueen tulevat tapahtumat:'
+    'nearby_upcoming_events' => 'Lähialueen tulevat tapahtumat:',
 ];

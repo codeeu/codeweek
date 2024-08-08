@@ -2,127 +2,96 @@
 
 namespace Tests\Feature;
 
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class UserTest extends TestCase
+final class UserTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-    /** @test */
-    public function a_user_belongs_to_a_country()
+    #[Test]
+    public function a_user_belongs_to_a_country(): void
     {
 
         //$this->withExceptionHandling();
-        $country = create('App\Country');
+        $country = \App\Country::factory()->create();
 
-        $user = create('App\User', ['country_iso' => $country->iso]);
+        $user = \App\User::factory()->create(['country_iso' => $country->iso]);
 
         $this->assertEquals($user->country->name, $country->name);
 
-
     }
 
-    /** @test */
-    public function a_user_should_have_right_avatar_path()
+    #[Test]
+    public function a_user_should_have_right_avatar_path(): void
     {
 
+        $user = \App\User::factory()->create(['avatar_path' => 'avatars/foo/bar.png']);
 
-        $user = create('App\User', ["avatar_path" => "avatars/foo/bar.png"]);
-
-
-        $this->assertEquals(config("codeweek.aws_url") . "avatars/foo/bar.png", $user->avatar);
-
+        $this->assertEquals(config('codeweek.aws_url').'avatars/foo/bar.png', $user->avatar);
 
     }
 
-    /** @test */
-    public function a_user_with_null_avatar_should_have_default_avatar()
+    #[Test]
+    public function a_user_with_null_avatar_should_have_default_avatar(): void
     {
 
+        $user = \App\User::factory()->create(['avatar_path' => null]);
 
-        $user = create('App\User', ["avatar_path" => null]);
-
-
-        $this->assertEquals(config("codeweek.aws_url") . "avatars/default_avatar.png", $user->avatar);
-
+        $this->assertEquals(config('codeweek.aws_url').'avatars/default_avatar.png', $user->avatar);
 
     }
 
-    /** @test */
-    public function a_user_should_readable_name()
+    #[Test]
+    public function a_user_should_readable_name(): void
     {
 
+        $user = \App\User::factory()->create(['firstname' => 'foo', 'lastname' => '', 'username' => '']);
 
-        $user = create('App\User', ["firstname" => "foo","lastname" => "","username" => ""]);
-
-
-        $this->assertEquals("foo", $user->getName());
-
+        $this->assertEquals('foo', $user->getName());
 
     }
 
-    /** @test */
-    public function a_user_should_readable_name_with_first_and_lastname()
+    #[Test]
+    public function a_user_should_readable_name_with_first_and_lastname(): void
     {
 
+        $user = \App\User::factory()->create(['firstname' => 'foo', 'lastname' => 'bar', 'username' => '']);
 
-        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => ""]);
-
-
-        $this->assertEquals("foo bar", $user->getName());
-
+        $this->assertEquals('foo bar', $user->getName());
 
     }
 
-    /** @test */
-    public function a_user_should_readable_name_with_username()
+    #[Test]
+    public function a_user_should_readable_name_with_username(): void
     {
 
+        $user = \App\User::factory()->create(['firstname' => 'foo', 'lastname' => 'bar', 'username' => 'woody']);
 
-        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => "woody"]);
-
-
-        $this->assertEquals("woody", $user->getName());
-
+        $this->assertEquals('woody', $user->getName());
 
     }
 
-    /** @test */
-    public function a_user_should_readable_name_without_personal_info()
+    #[Test]
+    public function a_user_should_readable_name_without_personal_info(): void
     {
 
+        $user = \App\User::factory()->create(['firstname' => '', 'lastname' => '', 'username' => '', 'email' => 'foo@bar.com']);
 
-        $user = create('App\User', ["firstname" => "","lastname" => "","username" => "", "email" => "foo@bar.com"]);
-
-
-        $this->assertEquals("foo@bar.com", $user->getName());
-
+        $this->assertEquals('foo@bar.com', $user->getName());
 
     }
 
-    /** @test */
-    public function a_user_should_be_seen_as_ambassador()
+    #[Test]
+    public function a_user_should_be_seen_as_ambassador(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');
 
-        $user = create('App\User')->assignRole('ambassador');
+        $user = \App\User::factory()->create()->assignRole('ambassador');
 
         $this->assertTrue($user->ambassador);
 
-
     }
-
-
-
-
-
-
 }
-
-
