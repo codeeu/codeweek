@@ -11,7 +11,8 @@ return Application::configure(basePath: dirname(__DIR__))
         \Torann\GeoIP\GeoIPServiceProvider::class,
         \MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
         \willvincent\Feeds\FeedsServiceProvider::class,
-        \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
+        \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        \SocialiteProviders\Manager\ServiceProvider::class,
     ])
     ->withRouting(
         web: __DIR__.'/../routes/web.php',
