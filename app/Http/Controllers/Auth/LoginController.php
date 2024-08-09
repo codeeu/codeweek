@@ -58,14 +58,13 @@ class LoginController extends Controller
      */
     public function handleProviderCallback($provider): RedirectResponse
     {
-        //        if ('twitter' == $provider){
-        $socialUser = Socialite::driver($provider)->user();
-        //        } else{
-        //            $socialUser = Socialite::driver($provider)->stateless()->user();
-        //        }
+        $allowed_providers = ['twitter', 'github', 'google', 'facebook'];
 
-        $this->loginUser($provider, $socialUser);
+        if (in_array($provider, $allowed_providers)) {
+            $socialUser = Socialite::driver($provider)->user();
 
+            $this->loginUser($provider, $socialUser);
+        }
         return redirect()->intended('/');
 
     }
