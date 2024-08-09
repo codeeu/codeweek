@@ -59,7 +59,7 @@ class LoginController extends Controller
     public function handleProviderCallback($provider): RedirectResponse
     {
         $allowed_providers = ['twitter', 'github', 'google', 'facebook'];
-
+Log::info('coucou');
         if (in_array($provider, $allowed_providers)) {
             $socialUser = Socialite::driver($provider)->user();
 
