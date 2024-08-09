@@ -49,7 +49,6 @@ class LoginController extends Controller
      */
     public function redirectToProvider($provider): RedirectResponse
     {
-
         return Socialite::driver($provider)->redirect();
     }
 
@@ -58,16 +57,13 @@ class LoginController extends Controller
      */
     public function handleProviderCallback($provider): RedirectResponse
     {
-        //        if ('twitter' == $provider){
-        $socialUser = Socialite::driver($provider)->user();
-        //        } else{
-        //            $socialUser = Socialite::driver($provider)->stateless()->user();
-        //        }
+        $allowed_providers = ['twitter', 'github', 'google', 'facebook'];
+        if (in_array($provider, $allowed_providers)) {
+            $socialUser = Socialite::driver($provider)->user();
 
-        $this->loginUser($provider, $socialUser);
-
+            $this->loginUser($provider, $socialUser);
+        }
         return redirect()->intended('/');
-
     }
 
     /**
@@ -100,7 +96,6 @@ class LoginController extends Controller
                     'magic_key' => random_int(1000000, 2000000) * random_int(1000, 2000),
                     'email_verified_at' => Carbon::now()
                 ]);
-
         } else {
             //update user
             $user->provider = $provider;
