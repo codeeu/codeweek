@@ -16,6 +16,7 @@
         "doctrine/dbal": "^3.5",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
+        "knuckleswtf/scribe": "^4.37",
         "laravel-lang/lang": "^12.18",
         "laravel/framework": "^11.5",
         "laravel/helpers": "^1.7",
