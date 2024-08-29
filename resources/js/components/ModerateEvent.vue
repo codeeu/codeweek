@@ -31,7 +31,7 @@
           </div>
           <div class="modal-body">
             <p class="text-gray-800 text-lg leading-relaxed">This will help the activity organizer to improve their submission.</p>
-            <multiselect v-model="rejectionOption" :options="rejectionOptions" track-by="title" label="title" :close-on-select="true" :preserve-search="false" placeholder="Select a rejection reason" :searchable="false" :allow-empty="false" @input="prefillRejectionText">
+            <multiselect v-model="rejectionOption" :options="displayRejectionOptions" track-by="title" label="title" :close-on-select="true" :preserve-search="false" placeholder="Select a rejection reason" :searchable="false" :allow-empty="false" @input="prefillRejectionText">
               <template #singleLabel="{ option }">{{ option.title }}</template>
             </multiselect>
             <textarea v-model="rejectionText" class="reason-textarea" rows="4" cols="40" placeholder="Reason for rejection"></textarea>
@@ -75,6 +75,11 @@ export default {
   name: "moderate-activity",
   data() {
     return {
+      status: this.event.status,
+      showModal: false,
+      showDeleteModal: false,
+      rejectionText: '',
+      rejectionOption: null,
       rejectionOptions: [
         {
           'title': this.$t('moderation.description.title'),
@@ -94,6 +99,36 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    displayRejectionOptions() {
+      return this.rejectionOptions.map(option => {
+        switch (option.title) {
+          case 'moderation.description.title':
+            return {
+              title: "Missing proper descriptions",
+              text: "Please improve the description and describe in more detail what you will do and how your activity relates to coding and computational thinking. Thanks!"
+            };
+          case 'moderation.missing-details.title':
+            return {
+              title: "Missing important details",
+              text: "Provide more details on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"
+            };
+          case 'moderation.duplicate.title':
+            return {
+              title: "Duplicate",
+              text: "This seems to be a duplication of another activity taking place at the same time. If it is not please change the description and change the title so that it is clear that the activities are separate. Thanks!"
+            };
+          case 'moderation.not-related.title':
+            return {
+              title: "Not programming related",
+              text: "Provide more information on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"
+            };
+          default:
+            return option; // Fallback to the original if no match
+        }
+      });
+    }
   },
   methods: {
     reRender() {
