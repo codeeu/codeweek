@@ -75,27 +75,22 @@ export default {
   name: "moderate-activity",
   data() {
     return {
-      status: this.event.status,
-      showModal: false,
-      showDeleteModal: false,
-      rejectionText: '',
-      rejectionOption: null,
       rejectionOptions: [
         {
-          'title': this.$t('moderation.description.title'),
-          'text': this.$t('moderation.description.text')
+          'title': "Missing proper descriptions",
+          'text': "Please improve the description and describe in more detail what you will do and how your activity relates to coding and computational thinking. Thanks!"
         },
         {
-          'title': this.$t('moderation.missing-details.title'),
-          'text': this.$t('moderation.missing-details.text')
+          'title': "Missing important details",
+          'text': "Provide more details on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"
         },
         {
-          'title': this.$t('moderation.duplicate.title'),
-          'text': this.$t('moderation.duplicate.text')
+          'title': "Duplicate",
+          'text': "This seems to be a duplication of another activity taking place at the same time. If it is not please change the description and change the title so that it is clear that the activities are separate. Thanks!"
         },
         {
-          'title': this.$t('moderation.not-related.title'),
-          'text': this.$t('moderation.not-related.text')
+          'title': "Not programming related",
+          'text': "Provide more information on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"
         }
       ]
     };
