@@ -28,4 +28,5 @@ vue-i18n-locales.generated.js
 /phpunit.xml
 /.phpunit.cache
 /.phpunit.result.cache
-
+public/blog/
+public/blog/*
