@@ -1,0 +1,925 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "49f1cf64-8073-4ee5-aae5-93ad7132e4a8",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/user",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/user"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/events\/geobox",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/events\/geobox",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/events\/geobox"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"lat1\":29866.432,\"long1\":5598.911475,\"lat2\":118592024.77778,\"long2\":4.34,\"year\":3.977}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 500,
+                            "body": "{\"error\":\"Area is too wide\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/events\/germany",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/events\/germany",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/events\/germany"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"year\":83498024.69623}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/event-detail\/{event_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event-detail\/:event_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event-detail\/:event_id",
+                            "variable": [
+                                {
+                                    "id": "event_id",
+                                    "key": "event_id",
+                                    "value": "1",
+                                    "description": "The ID of the event."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":{\"title\":\"Aut hic eveniet ut asperiores.\",\"description\":\"Optio incidunt explicabo praesentium tempora. Tempore cupiditate aut perferendis dolorem voluptatum qui. Et modi laborum ex enim fugit iste. Neque dicta necessitatibus provident velit sit.\",\"start_date\":\"2024-07-25 07:42:21\",\"end_date\":\"2024-07-30 23:42:00\",\"created_at\":\"2024-07-25T11:57:44.000000Z\",\"updated_at\":\"2024-07-25T11:57:44.000000Z\",\"picture\":\"https:\\\/\\\/s3-eu-west-1.amazonaws.com\\\/codeweek-dev\\\/events\\\/pictures\\\/event_default_picture.png\",\"path\":\"\\\/view\\\/1\\\/exercitationem-saepe-dolores\",\"geoposition\":\"53.908017,12.461312\",\"location\":\"10628 Nelson Plaza Suite 668\\nZanefurt, WY 19990-4509\",\"activity_type\":\"offline\",\"organizer\":\"Luettgen-Hermiston\",\"organizer_type\":\"other\",\"event_url\":\"http:\\\/\\\/carter.com\\\/\",\"contact_person\":\"fcremin@gmail.com\",\"language\":\"en\",\"imported_from_german_feeds\":false,\"codeweek_for_all_participation_code\":\"B\",\"themes\":[],\"audiences\":[],\"tags\":[],\"owner\":{\"id\":1,\"email\":\"bernard@matrixinternet.ie\"}}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a new user avatar.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:user\/avatar",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users\/:user\/avatar",
+                            "variable": [
+                                {
+                                    "id": "user",
+                                    "key": "user",
+                                    "value": "1",
+                                    "description": "The user."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a new user avatar.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/events\/picture",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/events\/picture"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/users\/avatar",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/avatar",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users\/avatar"
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/event\/list",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/list",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/list"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6ImluQ0ZHcldqZFZ0OXJ5Z2xMNkQ5Unc9PSIsInZhbHVlIjoieVc0d1IyYnAxZk9aKzA5YTVsMGtLRHJkbE0rRzVEVnZ5ckFXWTRKR0tRV2Y1N0ZwVjQ4RFkwK0JFZmNaTytTN0dNRVB1SDdjbFprRVJnVU1vSGwwS1dIZHdmeFlWbElhREh4YnBjaHk1dUEwSWEyL1Y2bHo2cGJ6OGRpT1pybUUiLCJtYWMiOiJjOWEzM2VlODRiZWZhNWU5MzAxNjgyZjdiYTZlNjVjNGZhZDUxYmI3MzRiNWNjZWRhYTdmOGViNDdmMzU3YzNkIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; laravel_session=eyJpdiI6Im9BWTIzWW5zcVh2OHlnWmlKVDJCaFE9PSIsInZhbHVlIjoidDZWR1ZDUWVTRm80WnpSVUthY1RtYlBnbE5FS2kwaTJhQUpTSG0zNGN2TzJZWG1WbWtUQ21MYnFzbW54UnhMTWFsMGRiM09VOW9oTm5zcHQrRHlUNmlRb01UazlHMkJrMzhVeGlDQjFtR2cwYWY1cFFVVDE0akN5bXBjYSs0aisiLCJtYWMiOiJmM2FjOTVhMTMxNzIzNDhiYzQyY2Q3YmQwOTQxM2QzYjc0YTRmM2FjMjk2NTRkZDc1NjdmZjI2ZGMyNGVlZTZkIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/event\/detail",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/detail",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/detail"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6ImdlbDY3dmlEUkZLVk1pZTRadFVQUVE9PSIsInZhbHVlIjoicG16UHVtdXJaUTV4S2dBTW9LZFlMWURRZzBzbXFGR3NJUTZmZ3dXTnRsdXBRMWxBTzN3WG1WNnNFTVYwY0hSUFFhaStwdFpVei9iWnArcC9JM0YxakxMUllFQnAvVG8rYWkyRXJUTWJuWUVLYk5tbkgvcnhuM3JQaWRvOTNlUksiLCJtYWMiOiJlNDY4ZjEwMDJlMjNhYWU1YjQ0ZDczNzk5NWEwZDMxMTlkOGRiMTgxZDQwODZiMmM3YWQ4NWMyYWM4YTNlMzJjIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; laravel_session=eyJpdiI6IlFQVHVDY05DQ3RBNlN1Ri9TbisrVUE9PSIsInZhbHVlIjoiSjNycnQ3aHZyL1Bid0orY1VTbUJmN00wUlhvQU4zU1RLVjY3YVF4QzVQbmRUTzl2Vmg5VERjd2FMWkFER3NvWXhCVjAzU2VLcENZUlY4L1poQVdNUTEyd1I0TWdFL093UHI2TVFkL1h0dVQxOGZDWTJvM1JTNzNwc2ZaK2UwQVoiLCJtYWMiOiI4MGQ3ZmY0NGE1MDM2ZWNmMmMzOGY1MGJjYzAxMTM2ZGZmZjVmOGQ1YTMzMzRlOWI2NTlhYjlhMDRlYmMwZThkIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 500,
+                            "body": "{\n    \"message\": \"Server Error\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/event\/closest",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/closest",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/closest"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IjFTM3l6RitSdUdPc0h3ak9NSnQ0WXc9PSIsInZhbHVlIjoiWDVPNVFlUWovVHBHbCswN0pQZDVZZkR5NzB0TVBjdGx3emJSWWwrOURHemM2a2Z2YktJVzdmQVB2QW5kZU1ERHpBYXZZbTVoejVUMGxIbkJVVE1IQWZOVG5jaUZ2RE52MDlSRVNmWjF2R0NnbjJ4Yis5UHl3SWQyR05NV29Vek4iLCJtYWMiOiJhNDZmMTczOWU4NDc5ZWM1ZWQ1ZjdmMDQ1YWM1ZGQ3YTA3NWQwM2E0MzMzMWE0YzQ0ZjMwMDE1ZDk5Y2VlNGQzIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; laravel_session=eyJpdiI6IlQ0T09McmVWUjdVc0RlSGE4VXdRM3c9PSIsInZhbHVlIjoicGtkWldjUGU4Wk9XZE1pUEZ2d0xJOUZWT1ZxcStXWjZyUU5QUUlDTHhqc0h0VTJEMi8yQi96dloydjlCZit5RkoyNzVNQi9HcldsSTJFejYrcGxweE1iYThUZVRhME9YUjNWUWRLWGlYNGdPbmFkMFBqZytuR0ZjMmNONWZQNVYiLCJtYWMiOiJkMTMzMGU0N2UwMWJkMTFmYzg4OTEyMTlhOTZjYjQyYWJmYjIzMzliOTEyMTg0ZDhkOTYxY2I4NGM2OGZhYjk5IiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 500,
+                            "body": "{\n    \"message\": \"Server Error\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/event\/delete\/{event_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/delete\/:event_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/delete\/:event_id",
+                            "variable": [
+                                {
+                                    "id": "event_id",
+                                    "key": "event_id",
+                                    "value": "1",
+                                    "description": "The ID of the event."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/event\/list\/eeducation",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/list\/eeducation",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/list\/eeducation"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6Iis5TWZVMTdFR3BWTGRQQzd5N004c2c9PSIsInZhbHVlIjoiL2VhaVYvS0kvUnljc1ZZcmE3eE1SQkVxdXRhSzYrYm5YNFNoM3FkT0VJalpOOGVaSTQrL3Q4T2pZRk9qQWdJOTcrWjBXdkloeW55b2dTUFFScHFURkJRSDFlK0U0Vmd3bFhkS001V2x1TnQ0Qi9KSm1LeURvRmpkbVN0RDlMSm8iLCJtYWMiOiI4OTI1YzkyYmM2NTEzNDM0ZmQ2ZmQxZDE4YmNhZjdmM2VkODI1MmVmYTZiYjEyZGRiNWE2NDFhZmQ1NGFlOTVjIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; laravel_session=eyJpdiI6ImVOU1RrcXpSVEY4dVVIeUpSOHFFcUE9PSIsInZhbHVlIjoiNms1NE1IREJyTngzZ001eTFYY004RThBYWdqd1A1eTdhV3pFbE95bGM0NGVBK25QazVqWXM5WW9qVm9mbm9pK2tnM3VKdFlSQWN4UFk4d2wrTFh3Q1pqQlF0TUtJQkI0UGRKVE52dmRkaDFYbm5OV2s4aVdINHJVOUJDcko3SHYiLCJtYWMiOiI5YTU4MjAyYTlhMzhjNmI0YzkxMGUxZDRhMWNkMjVlODUwZDNjMmIwZGMxNDE2N2ZlOTZjYzhiYmU4YzZlZWFlIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/event\/report\/{event_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/report\/:event_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/report\/:event_id",
+                            "variable": [
+                                {
+                                    "id": "event_id",
+                                    "key": "event_id",
+                                    "value": "1",
+                                    "description": "The ID of the event."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"participants_count\":4,\"average_participant_age\":90,\"percentage_of_females\":1,\"name_for_certificate\":\"sghmayealoekuq\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resource\/level",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resource\/level"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resource\/item",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resource\/item"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/event\/approve\/{event_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/approve\/:event_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/approve\/:event_id",
+                            "variable": [
+                                {
+                                    "id": "event_id",
+                                    "key": "event_id",
+                                    "value": "1",
+                                    "description": "The ID of the event."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/event\/approveAll\/{country}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/approveAll\/:country",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/approveAll\/:country",
+                            "variable": [
+                                {
+                                    "id": "country",
+                                    "key": "country",
+                                    "value": "odit",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6ImpSZGs1d3ZreTF2aVI4aTZQY1ZtbVE9PSIsInZhbHVlIjoiZ2JPdkhjWDNxVjZPTXlnMlhFTjBCOUN2OW95QThvOVJMRkR5bEwrR01yVmtyTE5nSEZ0Y3I0VXpnbzRMQTZXd3gvL29KcjdTTjBzUTBydzl1M1Mxc0o3WGZyRG5XOEZPejA4dkhDeXBXUHR2MkhHZ09LMG5XWDNFN3pNb3BydGwiLCJtYWMiOiJiYzVmOGIwYzc0OTc1NWQwNmNkZWUzMmZlMzhiNjg3NmE5MGRmMTRjM2RlNzYyZTI3MjBjYWJkNjFjNDlhZWE2IiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; laravel_session=eyJpdiI6InJSN0tud0dKK2ZrM1NKZjBOQzY5RWc9PSIsInZhbHVlIjoiSHdNMU9pOHhZeGl1NmJNSldPNkdGSU50TlE0Rm9rUTh6QjZhdndoSXUveWZTOGk5d2JFcVl4SmRVU1JvV24vZ01MU3U3SHlxVGlWMmNBejM0RXJNYUFQK0NRTjNCeVppckZBTlArdnMwejE3QUFQcE85MHdMMnllcU9hZXN3Z2ciLCJtYWMiOiIyNzRkMjU5YTMzZGU3MDEwNmVlMGUwNWI4MTQ4MDZmMTI1YjhhNjBjNDE1MjBkOGYyM2I2Y2EzZmJhOTE4N2YxIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:14 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/event\/reject\/{event_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/event\/reject\/:event_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/event\/reject\/:event_id",
+                            "variable": [
+                                {
+                                    "id": "event_id",
+                                    "key": "event_id",
+                                    "value": "1",
+                                    "description": "The ID of the event."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/proxy\/geocode",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/proxy\/geocode",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/proxy\/geocode"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IlYwTjJDL2FaUTRsajZLOVRPUFllbmc9PSIsInZhbHVlIjoiS0dvUXJiNU95TmtueHZMblMrcC9pWERDOTUvdFM4S1RVNFpEZkFHZ09nUFdYamp0clJyNnRLTk4ySDZTSk9wc3kxcThvd0xJQTlPUnphZHBRQTMvU0FMZTRqbWJvYm9sM0pkTitWS0ljbk5qQWZsNFQycU9lTVkwZG1RVTBlM2UiLCJtYWMiOiI4ZDAzOWE3NGM5YjY2ZTZjMzM2NWM5NWVhNmIyZTA4NGNmNDk2YmIzNTBhYjkyZTM3YzkxOTFlOWJkMjU3YWY3IiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:15 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; laravel_session=eyJpdiI6ImRPNXZIbEpsa2Rkd253cnNKaVZBRnc9PSIsInZhbHVlIjoidDRLQ2dlOU5NeEtWa3NudDZYQk8zK0V0a2hwdSs4K0xoKzA3VFF4Uk1WcUp4bC94dm0randzeXh5NlFMMUM3emNoRUN0dVRzVGFCdjB0anpyOWFPY080ak1TaG5iYW1OK2xYdEl5bW10UVdKM0MxTnRCcWJsdXVPSCtOUXkvYmoiLCJtYWMiOiIzY2I5NGJjMzc3NzE0YTQ4MTMwYTlmZDg0YzUyODNlOWJjYThkZDNlMGQ4ZWZhM2FhMzU4NDlkNjkxZjA2Y2JmIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:15 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"spatialReference\":{\"wkid\":4326,\"latestWkid\":4326},\"candidates\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/proxy\/suggest",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/proxy\/suggest",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/proxy\/suggest"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6Imt6RUJmSGJ3NFVvMzZNSlQ1MkZlOVE9PSIsInZhbHVlIjoiZUNvWXNPblhKNWlvSmswRUFQY25rQnRJelpURW9FOUVRY01veEV1ejdYdnViSnhYMHhLRFZTYWJqZ2NJcWpZbFFqYldETGk5azg3QmUvWXkyV2JxcXNFUGdQSFhhZFFBUTU1TFdNL3BOdjltSjJEVkp0c2ZqNTlXM2xpQndMU08iLCJtYWMiOiI4ZGIzYjQxNTA4YzZmM2MyMGMzNzk0YTIwNDQ5NjhkOWU2OGVjYjc3Zjc4ZWI5YzcwN2MyMGQwODFkNjAyMGRiIiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:16 GMT; Max-Age=7200; path=\/; domain=localhost; samesite=lax; laravel_session=eyJpdiI6ImV4blYzSTBOSHVMOUdBNHdIczRQZnc9PSIsInZhbHVlIjoiU2dzMXR3VndVN3F6TGc5Rmx0a0ZoQnFNanlJdEc4djBvQTBkOEp3bGlMRi9qL3lKdk52TDRpOEdwM25tbkdNT1pJUGZUNGhrWlhuN3hBOHlFeVVUN3gzblF0d25xMTVJOElXb0NwVXZIQis3L3NVMUpzQy9KYmthdEMzMFY3NGUiLCJtYWMiOiIzOTZiMzczNDk5ZTkxYjZkNGZlZGE1NmQ2ODhhMWM5MzE4N2MxNWVmM2QwMWVjNGY2ZjdmZDI4ZGQ4MGJlZWY1IiwidGFnIjoiIn0%3D; expires=Fri, 23 Aug 2024 10:27:16 GMT; Max-Age=7200; path=\/; domain=localhost; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"error\":{\"code\":400,\"extendedCode\":-2147024809,\"message\":\"Invalid or missing input parameters.\",\"details\":[]}}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

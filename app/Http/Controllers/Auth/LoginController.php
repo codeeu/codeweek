@@ -47,27 +47,38 @@ class LoginController extends Controller
     /**
      * Redirect the user to the GitHub authentication page.
      */
-    public function redirectToProvider($provider): RedirectResponse
-    {
+public function redirectToProvider($provider): RedirectResponse
+{
+    if (app()->environment('local')) {
+        // Automatically log in the first user for local environment
+        Auth::login(\App\User::first());
 
-        return Socialite::driver($provider)->redirect();
+        return redirect($this->redirectTo); // Redirect to the home page or dashboard
     }
+
+    return Socialite::driver($provider)->redirect();
+}
 
     /**
      * Obtain the user information from GitHub.
      */
-    public function handleProviderCallback($provider): RedirectResponse
-    {
-        $allowed_providers = ['twitter', 'github', 'google', 'facebook'];
-
-        if (in_array($provider, $allowed_providers)) {
-            $socialUser = Socialite::driver($provider)->user();
-
-            $this->loginUser($provider, $socialUser);
-        }
-        return redirect()->intended('/');
-
+public function handleProviderCallback($provider): RedirectResponse
+{
+    if (app()->environment('local')) {
+        return redirect($this->redirectTo); // Redirect without doing anything else
     }
+
+    // Normal flow for other environments
+    $allowed_providers = ['twitter', 'github', 'google', 'facebook'];
+
+    if (in_array($provider, $allowed_providers)) {
+        $socialUser = Socialite::driver($provider)->user();
+
+        $this->loginUser($provider, $socialUser);
+    }
+
+    return redirect()->intended($this->redirectTo);
+}
 
     /**
      * @return mixed

@@ -1,0 +1,599 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/user:
+    get:
+      summary: ''
+      operationId: getApiUser
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+  /api/events/geobox:
+    get:
+      summary: ''
+      operationId: getApiEventsGeobox
+      description: ''
+      parameters: []
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error: 'Area is too wide'
+                properties:
+                  error:
+                    type: string
+                    example: 'Area is too wide'
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                lat1:
+                  type: number
+                  description: ''
+                  example: 29866.432
+                long1:
+                  type: number
+                  description: ''
+                  example: 5598.911475
+                lat2:
+                  type: number
+                  description: ''
+                  example: 118592024.77778
+                long2:
+                  type: number
+                  description: ''
+                  example: 4.34
+                year:
+                  type: number
+                  description: ''
+                  example: 3.977
+              required:
+                - lat1
+                - long1
+                - lat2
+                - long2
+      security: []
+  /api/events/germany:
+    get:
+      summary: ''
+      operationId: getApiEventsGermany
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data: []
+                properties:
+                  data:
+                    type: array
+                    example: []
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                year:
+                  type: number
+                  description: ''
+                  example: 83498024.69623
+              required:
+                - year
+      security: []
+  '/api/event-detail/{event_id}':
+    get:
+      summary: ''
+      operationId: getApiEventDetailEvent_id
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    title: 'Aut hic eveniet ut asperiores.'
+                    description: 'Optio incidunt explicabo praesentium tempora. Tempore cupiditate aut perferendis dolorem voluptatum qui. Et modi laborum ex enim fugit iste. Neque dicta necessitatibus provident velit sit.'
+                    start_date: '2024-07-25 07:42:21'
+                    end_date: '2024-07-30 23:42:00'
+                    created_at: '2024-07-25T11:57:44.000000Z'
+                    updated_at: '2024-07-25T11:57:44.000000Z'
+                    picture: 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png'
+                    path: /view/1/exercitationem-saepe-dolores
+                    geoposition: '53.908017,12.461312'
+                    location: "10628 Nelson Plaza Suite 668\nZanefurt, WY 19990-4509"
+                    activity_type: offline
+                    organizer: Luettgen-Hermiston
+                    organizer_type: other
+                    event_url: 'http://carter.com/'
+                    contact_person: fcremin@gmail.com
+                    language: en
+                    imported_from_german_feeds: false
+                    codeweek_for_all_participation_code: B
+                    themes: []
+                    audiences: []
+                    tags: []
+                    owner:
+                      id: 1
+                      email: bernard@matrixinternet.ie
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      title:
+                        type: string
+                        example: 'Aut hic eveniet ut asperiores.'
+                      description:
+                        type: string
+                        example: 'Optio incidunt explicabo praesentium tempora. Tempore cupiditate aut perferendis dolorem voluptatum qui. Et modi laborum ex enim fugit iste. Neque dicta necessitatibus provident velit sit.'
+                      start_date:
+                        type: string
+                        example: '2024-07-25 07:42:21'
+                      end_date:
+                        type: string
+                        example: '2024-07-30 23:42:00'
+                      created_at:
+                        type: string
+                        example: '2024-07-25T11:57:44.000000Z'
+                      updated_at:
+                        type: string
+                        example: '2024-07-25T11:57:44.000000Z'
+                      picture:
+                        type: string
+                        example: 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png'
+                      path:
+                        type: string
+                        example: /view/1/exercitationem-saepe-dolores
+                      geoposition:
+                        type: string
+                        example: '53.908017,12.461312'
+                      location:
+                        type: string
+                        example: "10628 Nelson Plaza Suite 668\nZanefurt, WY 19990-4509"
+                      activity_type:
+                        type: string
+                        example: offline
+                      organizer:
+                        type: string
+                        example: Luettgen-Hermiston
+                      organizer_type:
+                        type: string
+                        example: other
+                      event_url:
+                        type: string
+                        example: 'http://carter.com/'
+                      contact_person:
+                        type: string
+                        example: fcremin@gmail.com
+                      language:
+                        type: string
+                        example: en
+                      imported_from_german_feeds:
+                        type: boolean
+                        example: false
+                      codeweek_for_all_participation_code:
+                        type: string
+                        example: B
+                      themes:
+                        type: array
+                        example: []
+                      audiences:
+                        type: array
+                        example: []
+                      tags:
+                        type: array
+                        example: []
+                      owner:
+                        type: object
+                        properties:
+                          id:
+                            type: integer
+                            example: 1
+                          email:
+                            type: string
+                            example: bernard@matrixinternet.ie
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: event_id
+        description: 'The ID of the event.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/users/{user}/avatar':
+    post:
+      summary: 'Store a new user avatar.'
+      operationId: storeANewUserAvatar
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: user
+        description: 'The user.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/events/picture:
+    post:
+      summary: 'Store a new user avatar.'
+      operationId: storeANewUserAvatar
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/users/avatar:
+    delete:
+      summary: ''
+      operationId: deleteApiUsersAvatar
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/event/list:
+    get:
+      summary: ''
+      operationId: getApiEventList
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
+  /api/event/detail:
+    get:
+      summary: ''
+      operationId: getApiEventDetail
+      description: ''
+      parameters: []
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Server Error'
+                properties:
+                  message:
+                    type: string
+                    example: 'Server Error'
+      tags:
+        - Endpoints
+      security: []
+  /api/event/closest:
+    get:
+      summary: ''
+      operationId: getApiEventClosest
+      description: ''
+      parameters: []
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Server Error'
+                properties:
+                  message:
+                    type: string
+                    example: 'Server Error'
+      tags:
+        - Endpoints
+      security: []
+  '/api/event/delete/{event_id}':
+    post:
+      summary: ''
+      operationId: postApiEventDeleteEvent_id
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: event_id
+        description: 'The ID of the event.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/event/list/eeducation:
+    get:
+      summary: ''
+      operationId: getApiEventListEeducation
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
+  '/api/event/report/{event_id}':
+    post:
+      summary: ''
+      operationId: postApiEventReportEvent_id
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                participants_count:
+                  type: number
+                  description: 'Must be at least 1.'
+                  example: 4
+                average_participant_age:
+                  type: number
+                  description: 'Must be at least 1.'
+                  example: 90
+                percentage_of_females:
+                  type: number
+                  description: 'Must be between 0 and 100.'
+                  example: 1
+                name_for_certificate:
+                  type: string
+                  description: 'Must match the regex /^[^ə]*$/u. Must not be greater than 40 characters.'
+                  example: sghmayealoekuq
+              required:
+                - participants_count
+                - average_participant_age
+                - percentage_of_females
+                - name_for_certificate
+      security: []
+    parameters:
+      -
+        in: path
+        name: event_id
+        description: 'The ID of the event.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/resource/level:
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/resource/item:
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/api/event/approve/{event_id}':
+    post:
+      summary: ''
+      operationId: postApiEventApproveEvent_id
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: event_id
+        description: 'The ID of the event.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/event/approveAll/{country}':
+    get:
+      summary: ''
+      operationId: getApiEventApproveAllCountry
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: country
+        description: ''
+        example: odit
+        required: true
+        schema:
+          type: string
+  '/api/event/reject/{event_id}':
+    post:
+      summary: ''
+      operationId: postApiEventRejectEvent_id
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: event_id
+        description: 'The ID of the event.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/proxy/geocode:
+    get:
+      summary: ''
+      operationId: getApiProxyGeocode
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  spatialReference:
+                    wkid: 4326
+                    latestWkid: 4326
+                  candidates: []
+                properties:
+                  spatialReference:
+                    type: object
+                    properties:
+                      wkid:
+                        type: integer
+                        example: 4326
+                      latestWkid:
+                        type: integer
+                        example: 4326
+                  candidates:
+                    type: array
+                    example: []
+      tags:
+        - Endpoints
+      security: []
+  /api/proxy/suggest:
+    get:
+      summary: ''
+      operationId: getApiProxySuggest
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  error:
+                    code: 400
+                    extendedCode: -2147024809
+                    message: 'Invalid or missing input parameters.'
+                    details: []
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: integer
+                        example: 400
+                      extendedCode:
+                        type: integer
+                        example: -2147024809
+                      message:
+                        type: string
+                        example: 'Invalid or missing input parameters.'
+                      details:
+                        type: array
+                        example: []
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''
