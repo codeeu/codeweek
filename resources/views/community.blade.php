@@ -184,8 +184,8 @@
                             <p>
                                 @lang('community.volunteer.7') <a
                                         href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.
-                                @lang('community.volunteer.9') <a
-                                        href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')
+                                <!--@lang('community.volunteer.9') <a
+                                        href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a>--> @lang('community.volunteer.11')
                             </p>
 
                             <p>
