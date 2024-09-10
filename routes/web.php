@@ -568,7 +568,7 @@ Route::middleware('role:leading teacher|super admin|leading teacher admin')->gro
 }
 );
 
-//Route::view('/chatbot', 'static.chatbot')->name('chatbot');
+Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 Route::view('/teach-day', 'teach-day')->name('teach-day');
 
 Route::get('/community', [CommunityController::class, 'index'])->name('community');
