@@ -69,6 +69,6 @@
 @endsection
 
 @push('scripts')
-    @include('static.chatbot')
+    {{-- @include('static.chatbot') --}}
     @include('static.countdown')
 @endpush
