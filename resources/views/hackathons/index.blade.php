@@ -21,57 +21,25 @@
         <section class="codeweek-content-wrapper">
 
             <h1 class="align-center">Hackathons</h1>
-            <p>
-
-                A hackathon is an event where participants collaborate intensively, over 24 hours in up to 3 days, to
-                create software projects or solve challenges. Adapting the traditional hackathon format, the EU Code
-                Week Hackathons take into consideration the age of the participants and cater to the unique skills,
-                insights, and interests of adolescents.<br/><br/>
-
-                Participants form teams to brainstorm, design, and code, aiming to produce a working solution or
-                prototype by the event's conclusion. Beyond fostering innovation and teamwork, teen hackathons offer a
-                platform for young tech enthusiasts to learn, showcase their talents, and connect with like-minded
-                peers.<br/><br/>
-
-                The EU Code Week 2023 Hackathon is open to individuals between 15 and 19 years old, with a specific
-                emphasis on STEM,
-                computer science, design, engineering, ICT, and other related fields. To the extent possible, the teams
-                should encompass both technical and functional competencies.<br/><br/>
-
-                Each year select European countries receive the focus and organize locally the event.
-
+            <p>A hackathon is an event where participants with diverse skills collaborate to tackle global challenges. Participants form teams to brainstorm, design, and code, aiming to produce a working solution or prototype by the event's conclusion. Beyond fostering innovation and teamwork, EU Code Week hackathons offer a platform for young enthusiasts to learn, showcase their talents, and connect with like-minded peers.<br/><br/>
+            Adapting the traditional hackathon format, the EU Code Week Hackathons take into consideration the age of the participants and cater to the unique skills, insights, and interests of adolescents.<br/><br/>
+            The aim of the EU Code Week Hackathons is to inspire young people to develop their coding and problem-solving skills by engaging them in collaborative, creative, and innovative projects.<br/><br/>
             </p>
 
         </section>
 
         <div class="codeweek-content-wrapper">
 
-            <h1 class="align-center">EU Code Week Hackathon 2023</h1>
+            <h1 class="align-center">EU Code Week Hackathon 2024</h1>
 
             <p>
-                The central theme for 2023 has been “Code to problem-solve and give life to your dreams”. The winning team of each of the participating countries challenged themselves with their ideas. EU Code Week Hackathon final has been Friday 24 November<br/><br/></p>
-            <div class="align-center" style="margin-bottom:10px;">
-                <a href="https://eventornado.com/event/final-eu-code-week-hackathon-2023#home">
-                    <img src="/images/hackathons/banner_final.png">
-                </a>
-            </div>
+                EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <strong>Hello, Future! Technical Solutions for a changing world.</strong><br/><br/></p>
             <p>
-                Friday 24 November marked the culmination of the EU Code Week Hackathon Challenge, and we are super excited to share with you that the winning team is the Unyo’s Team from Albania.
-                The official ranking is:
-            </p>
-                <ol style="margin-left:auto; margin-right:auto">
-                <li>Winner – Albania</li>
-                <li>Second Classified – Latvia</li>
-                <li>Third Classified – Greece</li>
-                <li>Fourth Classified – Italy</li>
-                <li>Fifth Classified – Ireland</li>
-            </ol>
-
-<p>
-
-    Read more about the Final <a href="https://blog.codeweek.eu/tech-triumphs-winner-announced-in-eu-code-week-hackathon-finale/">here</a>.
-            </p>
-            <div class="align-center">
+                From October 2024 and March 2025, the EU Code Week 2024 Hackathon invites young innovators, ages 15-19, to join exciting local hackathons. Team up with peers to brainstorm, collaborate and create digital solutions to tackle some of the global challenges!
+            <br/><br/></p>
+            <p>
+            More details on local hackathons, registrations and hackathon platform are coming soon!<br/><br/></p>
+            <!--<div class="align-center">
             <section class="hackathons-content-grid">
 
 
@@ -138,7 +106,7 @@
                 </div>
 
 
-            </section>
+            </section> -->
             </div>
         </div>
     </section>
