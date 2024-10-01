@@ -23,7 +23,7 @@
             <h1 class="align-center">Hackathons</h1>
             <p>A hackathon is an event where participants with diverse skills collaborate to tackle global challenges. Participants form teams to brainstorm, design, and code, aiming to produce a working solution or prototype by the event's conclusion. Beyond fostering innovation and teamwork, EU Code Week hackathons offer a platform for young enthusiasts to learn, showcase their talents, and connect with like-minded peers.<br/><br/>
             Adapting the traditional hackathon format, the EU Code Week Hackathons take into consideration the age of the participants and cater to the unique skills, insights, and interests of adolescents.<br/><br/>
-            The aim of the EU Code Week Hackathons is to inspire young people to develop their coding and problem-solving skills by engaging them in collaborative, creative, and innovative projects.<br/><br/>
+            The aim of the EU Code Week Hackathons is to inspire young people to develop their coding and problem-solving skills by engaging them in collaborative, creative, and innovative projects.
             </p>
 
         </section>
@@ -33,11 +33,9 @@
             <h1 class="align-center">EU Code Week Hackathon 2024</h1>
 
             <p>
-                EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <strong>Hello, Future! Technical Solutions for a changing world.</strong><br/><br/></p>
-            <p>
+                EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <strong>Hello, Future! Technical Solutions for a changing world.</strong><br/><br/>
                 From October 2024 and March 2025, the EU Code Week 2024 Hackathon invites young innovators, ages 15-19, to join exciting local hackathons. Team up with peers to brainstorm, collaborate and create digital solutions to tackle some of the global challenges!
-            <br/><br/></p>
-            <p>
+                <br/><br/>
             More details on local hackathons, registrations and hackathon platform are coming soon!<br/><br/></p>
             <!--<div class="align-center">
             <section class="hackathons-content-grid">
