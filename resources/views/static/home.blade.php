@@ -23,19 +23,11 @@
         </section>
 
         <section id="school-banner">
-            <a href="/schools" style="color:inherit">
+            <a href="/guide" style="color:inherit">
                 <div class="title">
                 @lang('home.school_banner_title')
             </div>
             </a>
-            <a href="/schools" style="color:inherit">
-            <div class="text">
-                @lang('home.school_banner_text')
-            </div>
-            </a>
-            <div class="text">
-                <a href="/schools">@lang('home.school_banner_text2')</a>
-            </div>
         </section>
 
         <section class="sub-section" id="organize-activity">
