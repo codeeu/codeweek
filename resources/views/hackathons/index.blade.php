@@ -27,8 +27,13 @@
             </p>
 
         </section>
+        
+        <section class="codeweek-content-wrapper">
+            <!-- Include the YouTube partial and pass the video ID -->
+            @include('static.youtube', ['video_id' => 'fx0zJCpUTa8'])
+        </section>
 
-        <div class="codeweek-content-wrapper">
+        <div class="pt-0 codeweek-content-wrapper">
 
             <h1 class="align-center">EU Code Week Hackathon 2024</h1>
 
@@ -36,6 +41,8 @@
                 EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <strong>Hello, Future! Technical Solutions for a changing world.</strong><br/><br/>
                 From October 2024 and March 2025, the EU Code Week 2024 Hackathon invites young innovators, ages 15-19, to join exciting local hackathons. Team up with peers to brainstorm, collaborate and create digital solutions to tackle some of the global challenges!
                 <br/><br/>
+            To guide organisers in planning and delivering successful hackathons, <a target="_blank" href="/docs/EU_Code_Week_Hackathons_2024 Toolkit_Final.pdf">here is the EU Code Week Hackathons Toolkit.</a> In this Toolkit, you will find step-by-step instructions and tips for creating engaging and impactful events.  <br/><br/>
+            All hackathons will take place online via <a target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#home">Eventornado.</a> There will be one common online environment for all hackathons.<br/><br/>
             More details on local hackathons, registrations and hackathon platform are coming soon!<br/><br/></p>
             <!--<div class="align-center">
             <section class="hackathons-content-grid">
