@@ -7,14 +7,14 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class AppleEvents extends Command
+class AppleEvents2024 extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'excel:apple';
+    protected $signature = 'excel:apple2024';
 
     /**
      * The console command description.
@@ -42,7 +42,7 @@ class AppleEvents extends Command
 
         Excel::import(
             new AppleEventsImport(),
-            'Apple_events_code_week_2024_BATCH1.xlsx',
+            'apple_2022-2.xlsx',
             'excel'
         );
     }
