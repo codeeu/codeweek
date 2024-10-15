@@ -23,19 +23,11 @@
         </section>
 
         <section id="school-banner">
-            <a href="/schools" style="color:inherit">
+            <a href="/guide" style="color:inherit">
                 <div class="title">
                 @lang('home.school_banner_title')
             </div>
             </a>
-            <a href="/schools" style="color:inherit">
-            <div class="text">
-                @lang('home.school_banner_text')
-            </div>
-            </a>
-            <div class="text">
-                <a href="/schools">@lang('home.school_banner_text2')</a>
-            </div>
         </section>
 
         <section class="sub-section" id="organize-activity">
@@ -64,11 +56,11 @@
             </a>
         </section>
         <div class="mobile-arrow"><img src="/images/arrow_down.svg"></div>
-        <doris-chatbot environment="codeweek"/>
+{{--        <doris-chatbot environment="codeweek"/>--}}
     </section>
 @endsection
 
 @push('scripts')
-    @include('static.chatbot')
+    {{-- @include('static.chatbot') --}}
     @include('static.countdown')
 @endpush
