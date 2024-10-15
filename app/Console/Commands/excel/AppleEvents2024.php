@@ -42,7 +42,7 @@ class AppleEvents2024 extends Command
 
         Excel::import(
             new AppleEventsImport(),
-            'apple_2022-2.xlsx',
+            'Apple_events_code_week_2024_BATCH1.xlsx',
             'excel'
         );
     }
