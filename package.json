@@ -4,24 +4,18 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "serve": "concurrently \"php artisan serve\" \"npm run dev\"",
         "build-analytics": "cd nova-components/Analytics && npm run dev",
         "build-analytics-prod": "cd nova-components/Analytics && npm run prod"
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.20",
         "axios": "^1.6.4",
-        "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.0",
-        "postcss": "^8.4.47",
         "sass": "^1.75.0",
-        "tailwindcss": "^3.4.13",
         "vite": "^5.0"
     },
     "dependencies": {
         "@vitejs/plugin-vue": "^5.0.4",
         "@vuepic/vue-datepicker": "^8.8.1",
-        "alpinejs": "^3.14.1",
         "laravel-vue-i18n": "^2.7.7",
         "lodash": "^4.17.21",
         "mitt": "^3.0.1",
