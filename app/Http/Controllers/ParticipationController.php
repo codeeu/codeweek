@@ -52,7 +52,7 @@ class ParticipationController extends Controller
         $participation->save();
 
         //Dispatch Job
-        GenerateCertificatesOfParticipation::dispatch($participation);
+        GenerateCertificatesOfParticipation::dispatchSync($participation);
 
         return redirect()->route('certificates');
 
