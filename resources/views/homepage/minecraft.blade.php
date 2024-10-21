@@ -23,7 +23,7 @@
         <p class="pt-0 pb-0 text-xl font-bold leading-truly-normal text-secondary">
           Sign up to bring fun, live play-alongs direct to your classroom!
         </p>
-        <a taget="_blank" href=" https://www.codeweekcoders.eu/" class="mt-2 self-start px-6 text-base font-bold text-white uppercase bg-secondary hover:bg-blue-primary leading-truly-normal rounded-lg min-h-[60px] lg:max-w-[263px] flex items-center justify-center max-tablet:px-5 max-tablet:w-full max-tablet:max-w-full max-lg:text-center max-tablet:mx-auto" role="button">
+        <a target="_blank" href=" https://www.codeweekcoders.eu/" class="mt-2 self-start px-6 text-base font-bold text-white uppercase bg-secondary hover:bg-blue-primary leading-truly-normal rounded-lg min-h-[60px] lg:max-w-[263px] flex items-center justify-center max-tablet:px-5 max-tablet:w-full max-tablet:max-w-full max-lg:text-center max-tablet:mx-auto" role="button">
           Start your Minecraft Education Journey HERE
         </a>
       </div>
