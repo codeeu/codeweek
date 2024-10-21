@@ -2,6 +2,8 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 import i18n from 'laravel-vue-i18n/vite';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
     plugins: [
@@ -23,10 +25,19 @@ export default defineConfig({
         }),
         i18n('resources/lang')
     ],
+    css: {
+        postcss: {
+            plugins: [
+                tailwindcss,  // Add Tailwind here
+                autoprefixer, // Add Autoprefixer here
+            ],
+        },
+    },
     resolve: {
         alias: {
             '@': '/resources/js',
-            'vue': 'vue/dist/vue.esm-bundler.js'
+            'vue': 'vue/dist/vue.esm-bundler.js',
         },
     },
 });
+

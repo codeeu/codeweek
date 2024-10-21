@@ -8,6 +8,7 @@
         "build-analytics-prod": "cd nova-components/Analytics && npm run prod"
     },
     "devDependencies": {
+        "autoprefixer": "^10.4.20",
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0",
         "sass": "^1.75.0",
