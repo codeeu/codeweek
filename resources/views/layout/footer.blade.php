@@ -22,9 +22,9 @@
 
         </div>
         <div class="about">
-            <img src="/images/EU_logo.png">
+            <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo.jpg">
             <div class="phrase">
-                <div class="text">@lang('base.footer_msg')</div>
+  
                 <div class="text"><a
                             href="{{route('privacy')}}">{{ucfirst(mb_strtolower(__('privacy-statement.title'),'UTF-8'))}}</a> - <a
                             href="{{route('cookie')}}">@lang('cookie_policy.title')</a></div>
