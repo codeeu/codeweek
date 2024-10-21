@@ -31,7 +31,7 @@
         </section>
 
         {{-- Include the Minecraft section here --}}
-        @include('homepage.minecraft')
+         <x-minecraft />
 
         <section class="sub-section" id="organize-activity">
 
