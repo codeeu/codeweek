@@ -11,7 +11,11 @@
 
       <div class="flex flex-col justify-center tablet:max-w-[322px] max-tablet:w-full max-tablet:min-w-0 max-sm:w-full max-tablet:text-center max-tablet:px-8">
         <div class="flex flex-col w-full max-tablet:pt-[15px]">
-          <img loading="lazy" src="/images/homepage/minecraftlogo.png" alt="Minecraft Education logo" class="max-w-[350px] object-contain mx-auto w-full aspect-[2.4]" />
+          <picture>
+            <source type="image/avif" srcset="/images/avif/homepage/minecraftlogo.avif">
+            <source type="image/webp" srcset="/images/webp/homepage/minecraftlogo.webp">
+            <img loading="lazy" src="/images/homepage/minecraftlogo.png" alt="Minecraft Education logo" class="max-w-[350px] object-contain mx-auto w-full aspect-[2.4]" />
+          </picture>
         </div>
         <p class="text-xl font-bold leading-truly-normal text-secondary">
           Team up with Minecraft Education for EU Code Week! Discover how Minecraft Education can teach coding and AI skills.
