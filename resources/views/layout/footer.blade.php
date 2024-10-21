@@ -22,7 +22,7 @@
 
         </div>
         <div class="about">
-            <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo.jpg">
+            <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg">
             <div class="phrase">
   
                 <div class="text"><a
