@@ -56,7 +56,7 @@
                     <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                 </ul>
             </li>
-            <li><a href="http://blog.codeweek.eu/" target="_blank" rel="noreferer noopener">@lang('menu.blog')</a></li>
+            <li><a href="https://codeweek.eu/blog/" rel="noreferer noopener">@lang('menu.blog')</a></li>
         </ul>
     </nav>
     <div id="right-menu">

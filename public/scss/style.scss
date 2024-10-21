@@ -10,6 +10,9 @@ and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import "bootstrap-social";
 
