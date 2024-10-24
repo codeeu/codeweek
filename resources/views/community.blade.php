@@ -253,7 +253,9 @@
 
         @foreach($teachers->groupBy('city_id') as $cityId => $teachersInCity)
 
-            $marker = L.marker([{{$teachersInCity[0]->city->latitude}}, {{$teachersInCity[0]->city->longitude}}]).addTo(mymap)
+            @if(isset($teachersInCity[0]->city) && $teachersInCity[0]->city->latitude && $teachersInCity[0]->city->longitude)
+                $marker = L.marker([{{$teachersInCity[0]->city->latitude}}, {{$teachersInCity[0]->city->longitude}}]).addTo(mymap)
+            @endif
 
         $teachersList = "";
         @foreach($teachersInCity as $teacher)
