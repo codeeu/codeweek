@@ -189,6 +189,21 @@ Route::get(
     [StaticPageController::class, 'static']
 )->name('training.module-18');
 
+Route::get(
+    '/training/creative-scratch-laboratory',
+    [StaticPageController::class, 'static']
+)->name('training.module-19');
+
+Route::get(
+    '/training/code-through-art',
+    [StaticPageController::class, 'static']
+)->name('training.module-20');
+
+Route::get(
+    '/training/making-and-coding',
+    [StaticPageController::class, 'static']
+)->name('training.module-21');
+
 Route::get('/resources/CodingAtHome', [CodingAtHomeController::class, 'show'])->name(
     'coding@home'
 );
@@ -353,10 +368,14 @@ Route::post(
 
 Route::get('participation', [ParticipationController::class, 'show'])
     ->name('participation')
-    ->middleware(['auth','verified']);
-Route::post('participation', [ParticipationController::class, 'generate'])
-    ->name('participation_submit')
-    ->middleware('auth');
+    ->middleware(['auth']);
+
+Route::get('/profile', function () {
+    $data = ['profileUser' => Auth()->user()];
+    return view('profile', $data);
+})
+    ->name('profile')
+    ->middleware(['auth']);
 
 //Route::get('participation/test', 'ParticipationController@test');
 
