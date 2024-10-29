@@ -373,14 +373,10 @@ Route::post(
 
 Route::get('participation', [ParticipationController::class, 'show'])
     ->name('participation')
-    ->middleware(['auth']);
-
-Route::get('/profile', function () {
-    $data = ['profileUser' => Auth()->user()];
-    return view('profile', $data);
-})
-    ->name('profile')
-    ->middleware(['auth']);
+    ->middleware(['auth','verified']);
+Route::post('participation', [ParticipationController::class, 'generate'])
+    ->name('participation_submit')
+    ->middleware('auth');
 
 //Route::get('participation/test', 'ParticipationController@test');
 
