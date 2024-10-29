@@ -204,6 +204,11 @@ Route::get(
     [StaticPageController::class, 'static']
 )->name('training.module-21');
 
+/*Route::get(
+    '/training/making-and-coding',
+    [StaticPageController::class, 'static']
+)->name('training.module-22'); */
+
 Route::get('/resources/CodingAtHome', [CodingAtHomeController::class, 'show'])->name(
     'coding@home'
 );
