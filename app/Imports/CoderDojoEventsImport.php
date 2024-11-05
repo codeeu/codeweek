@@ -33,6 +33,7 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
             'activity_type' => $row['activity_type'],
             'location' => isset($row['address']) ? $row['address'] : 'online',
             'event_url' => $row['organiser_website'],
+            'contact_person' => !empty($row['contact_email']) ? $row['contact_email'] : '',
             'user_email' => '',
             'creator_id' => 132942,
             'country_iso' => $row['country'],
