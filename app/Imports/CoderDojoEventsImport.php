@@ -23,14 +23,6 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
 
     public function model(array $row): ?Model
     {
-
-        //        dd($row["start_date"]);
-        //dd(implode(",",$arr));
-        (\PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['start_date']));
-        //        dd(Carbon::parse($this->parseDate($row["start_date"]))->toDateTimeString());
-        //dd(Carbon::createFromFormat("d/m/Y",$row["start_date"])->toDateTimeString());
-        Log::info($row);
-
         $event = new Event([
             'status' => 'APPROVED',
             'title' => $row['activity_title'],
@@ -41,10 +33,11 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
             'activity_type' => $row['activity_type'],
             'location' => isset($row['address']) ? $row['address'] : 'online',
             'event_url' => $row['organiser_website'],
+            'contact_person' => !empty($row['contact_email']) ? $row['contact_email'] : '',
             'user_email' => '',
-            'creator_id' => $row['creator_id'],
+            'creator_id' => 132942,
             'country_iso' => $row['country'],
-            'picture' => $row['image_path'],
+            'picture' => isset($row['image_path']) ? $row['image_path'] : '',
             'pub_date' => now(),
             'created' => now(),
             'updated' => now(),
@@ -54,7 +47,7 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
             'geoposition' => $row['latitude'].','.$row['longitude'],
             'longitude' => $row['longitude'],
             'latitude' => $row['latitude'],
-            'language' => 'nl',
+            'language' => isset($row['language']) ? $row['language'] : 'nl',
             'approved_by' => 19588,
             'mass_added_for' => 'Excel',
         ]);
