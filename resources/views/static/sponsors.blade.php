@@ -1,75 +1,37 @@
 @extends('layout.base')
 
 @section('content')
-
     <section id="codeweek-sponsors-page" class="codeweek-page">
-
-        <section class="codeweek-banner about">
-            <div class="text">
-                <h1>@lang('about.partners_and_sponsors')</h1>
+<style>
+    button {
+           border: 2px solid;
+    }
+</style>
+        <!-- Banner Section -->
+        <section 
+            class="relative flex justify-center mx-auto overflow-hidden codeweek-banner about min-h-[366px]" 
+            style="background-image: url('/images/partners/partnerbg.png'); background-size: cover; background-position: center;">
+            <div class="py-12 max-w-[1080px] max-xl:px-8 flex-col w-full h-full flex justify-center mx-auto z-50">
+                <h2 class="max-w-[600px] text-white text-[60px] font-bold font-['PT Sans'] leading-[48px] partner_title">@lang('about.partners_and_sponsors')</h2>
+                <p class="max-w-[600px] text-base font-bold leading-6 text-white max-md:max-w-full partner_text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
             </div>
-            <div class="image">
-                <img src="/images/banner_about.svg" class="static-image">
+            <img src="/images/partners/partnerlg.png" class="relative right-0 w-auto mr-0 max-lg:hidden lg:absolute object-fit">
+            <img src="/images/partners/partnersm.png" class="relative right-0 w-auto mr-0 lg:hidden lg:absolute object-fit">
+        </section>
+
+        <!-- Filter Section -->
+        <section class="flex flex-col justify-center px-24 pt-16 font-bold text-center max-md:px-5">
+            <div class="flex flex-col items-center w-full max-md:max-w-full">
+                <h2 class="text-4xl leading-tight text-orange-500">H2 Lorem ipsum dolor</h2>
+                @livewire('partner-filter-component')
             </div>
         </section>
 
-        <section style="display: none;" class="codeweek-content-wrapper">
-
-            <ul>
-                <li>
-                    <a href="http://www.africacodeweek.org/" target="_blank"><img src="img/partners/colabora_africacodeweek.png" alt="Africa Code Week"></a>
-                </li>
-                <li>
-                    <a href="https://www.apple.com/uk/education/k12/learn-to-code/" target="_blank"><img src="img/partners/apple.png" alt="Apple"></a>
-                </li>
-                <li>
-                    <a href="https://www.amazonfutureengineer.com/global" target="_blank"><img src="img/partners/afe.png" alt="Amazon Future Engineer"></a>
-                </li>
-                <li>
-                    <a href="https://code.org/" target="_blank"><img src="img/partners/code-org.png" alt="Code.org"></a>
-                </li>
-                <li>
-                    <a href="http://coderdojo.org" target="_blank"><img src="img/partners/colabora_coderdojo.png" alt="CoderDojo"></a>
-                </li>
-                <li>
-                    <a href="http://ec.europa.eu/digital-agenda/en/grand-coalition-digital-jobs-0" target="_blank"><img src="img/partners/digital-skills.png" alt="Grote coalitie van digitale banen"></a>
-                </li>
-                <li>
-                    <a href="https://www.e-mma.org/codezchezvous/" target="_blank"><img src="img/partners/emma.png" alt="E-mma"></a>
-                </li>
-                <li>
-                    <a href="http://www.eun.org/" target="_blank"><img src="img/partners/colabora_eun.png" alt="European Schoolnet"></a>
-                </li>
-                <li>
-                    <a href="https://edu.google.com/resources/computerscience" target="_blank"><img src="img/partners/google.png" alt="Google"></a>
-                </li>
-                <li>
-                    <a href="https://education.lego.com/en-us" target="_blank"><img src="img/partners/lego_sponosorboard.jpg" alt="Lego Education"></a>
-                </li>
-                <li>
-                    <a href="https://www.makeblock.com/" target="_blank"><img src="img/partners/makeblock.png" alt="Makeblock"></a>
-                </li>
-                <li>
-                    <a href="https://meet-and-code.org/" target="_blank"><img src="img/partners/meet_and_code_logo.png" alt="Meet & Code"></a>
-                </li>
-                <li>
-                    <a href="https://microbit.org/" target="_blank"><img src="img/partners/microbit.png" alt="Micro:bit"></a>
-                </li>
-                <li>
-                    <a href="https://www.open-roberta.org/" target="_blank"><img src="img/partners/open_roberta.png" alt="Open Roberta"></a>
-                </li>
-                <li>
-                    <a href="https://publiclibraries2030.eu/" target="_blank"><img src="img/partners/colabora_PublicLibraries2030.png" alt="Public Libraries 2030"></a>
-                </li>
-                <li>
-                    <a href="http://scratch.mit.edu/codeweekeu" target="_blank"><img src="img/partners/colabora_scratch.png" alt="Scratch"></a>
-                </li>
-                <li>
-                    <a href="https://mooc.uniurb.it/wp/codeweekmooc/" target="_blank"><img src="img/partners/urbinocarlo.png" alt="CodeWeek in Your Classroom, Now!"></a>
-                </li>
-
-            </ul>
-
+        <!-- Partner Content Section -->
+        <section class="px-6 pt-8 max-lg:pb-12 xl:pt-16 xl:px-24">
+            @livewire('partner-content-component')
         </section>
 
     </section>
