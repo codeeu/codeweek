@@ -121,25 +121,51 @@
                     @empty
                         @lang('ambassador.no_ambassadors') :(<br/>
                     @endforelse
-                </div>
+                </div>                
+
+                 {{-- Display this section only if a country is selected and has specific content --}}
+                    @php
+                        $country = app('request')->input('country_iso');
+                        $supportedCountries = ['GR', 'CY', 'MT', 'IT', 'BG', 'TR', 'UA','PL','IE','FR','LU','NL','BE','SK','CZ','NO','IS','FI','SE','PT','ES','LV','LT','HR','SI','DE','AT','CH','RO','MD'];
+                    @endphp
+
+                    @if(in_array($country, $supportedCountries))
+                        <section class="community_type_section">
+                            <div class="community_type">
+                                <div class="text">
+                                    {{-- Dynamically construct the language keys based on country code --}}                                    
+                                    <h2 class="subtitle">@lang("community.hub_{$country}")</h2>
+                                    <br/><h3>@lang("community.hub_level_{$country}")</h3>
+                                    <p>@lang("community.hub_desc_{$country}")</p>
+                                </div>
+                                <div class="image">
+                                    <img src="{{ asset('/images/hub.png') }}">
+                                </div>
+                            </div>
+                        </section>
+                    @endif
+
+                    {{-- Germany-specific additional section --}}
+                    @if($country === 'DE')
+                        <section class="community_type_section">
+                            <div class="community_type">
+                                <div class="text">@lang('community.codeweek_de')  </div>
+                            </div>
+                        </section>
+                    @endif
 
                 <section class="community_type_section">
                     <h2 class="subtitle">@lang('community.titles.2')</h2>
                     <div class="community_type">
                         <div class="text">
-<p>
-    @lang('community.leading-teachers')</p>
+                                <p> @lang('community.leading-teachers')</p>
                                 <h3>@lang('community.cta')</h3>
-
                         </div>
 
                         <div class="image">
                             <img src="{{asset('/images/leading_teachers.png')}}">
                         </div>
                     </div>
-
-
-
                 </section>
 
                 <div id="mapid" style="width: 100%; height: 400px; z-index: 10000"></div>
