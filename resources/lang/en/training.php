@@ -361,7 +361,8 @@ With Python, students can create quizzes about historical events, solve math pro
                 '2' => 'My heart isn’t made of stone for lower secondary pupils',
                 '3' => 'Code me to the mood for upper school pupils',
             ],
-        ],        '18' => [
+        ],  
+        '18' => [
             'title' => 'SOS Water',
             'author' => 'by Francisco Delgado Cecilia',
             'text' => [
