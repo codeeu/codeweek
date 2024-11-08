@@ -88,24 +88,28 @@ class PartnerContentComponent extends Component
     private function getAllPartners()
     {
         return collect([
-            (object)[
+                (object)[
                 'id' => 1,
+                'name' => 'JA EUROPE',
+                'logo_url' => 'images/partners/JAEurope1.jpg',
+                'categories' => ['Partners'],
+                 'description' => 'JA Europe is coordinating the Code4Europe Project, leading a consortium of 41 partners and 4 Associated Partners from over 20 countries.  
+                <br>
+                JA Europe is the largest and leading organisation in Europe dedicated to inspiring and preparing young people to succeed through hands-on, experiential learning in entrepreneurship, work readiness and financial health. In 2024, JA Worldwide is nominated for the Nobel Peace Prize, the third nomination in three years. JA Europe is a 
+                pan-European network of 42 national Junior Achievement (JA) organisations that aim to teach young people as early as possible about the world of enterprise and entrepreneurship. In the last school year, the JA Europe network provided 6 million learning experiences for youth online, in person and blended formats.  
+                <br>
+                JA Europe’s focus on providing at least one entrepreneurial experience to all youth, especially those in disadvantaged and underserved communities, helping to create a generation of young people ready to innovate and lead in a digital world. JA Europe aims to equip young people with the necessary skills to navigate the digital world and prepare them for the future of work.',
+                'link_url' => 'https://jaeurope.org/',
+                'main_img_url' => 'images/partners/JAEurope.jpg'
+                ],
+            (object)[
+                'id' => 2,
                 'name' => 'CoderDojo Belgium',
                 'logo_url' => 'images/partners/coderdojo.png',
                 'categories' => ['Partners'],
                 'description' => 'CoderDojo Belgium is part of the international CoderDojo Foundation and part of the Raspberry Pi foundation. CoderDojo organizes coding clubs for kids and youngsters from 7 - 17. We have been active in Belgium as CoderDojo Belgium for 11 years. <br>We participate in the consortium as partners and we\'re participating in WP 2 and more specifically on 2.3, 2.5, 2.8. to help organizing Hackathons and new cutting edge content.',
                 'link_url' => 'https://coderdojobelgium.be/fr/',
                 'main_img_url' => 'images/partners/coderdojo.png'
-            ],
-            (object)[
-                'id' => 2,
-                'name' => 'Simplon.co',
-                'logo_url' => 'images/partners/simplon.png',
-                'categories' => ['Partners'],
-                 'description' => 'Simplon.co is a network of social digital factories that offer free, intensive courses in digital professions in France and abroad. As the national hub for France in the Code4Europe Consortium, Simplon enhances digital education by organizing events and supporting schools, teachers, and ambassadors during EU Code Week. Its mission is to build a strong network to foster digital skills among youth and address Europe’s digital skills gap​.
-                Simplon leads initiatives like hackathons and mentorship programs, promoting digital careers and making technology accessible to all, especially underrepresented groups. It plays an important role in mobilizing national ecosystems to strengthen digital education across Europe​..',
-                'link_url' => 'https://simplon.co/',
-                'main_img_url' => 'images/partners/simplon.png'
             ],
             (object)[
                 'id' => 3,
@@ -136,6 +140,21 @@ class PartnerContentComponent extends Component
             ],
             (object)[
                 'id' => 5,
+                'name' => 'Matrix Internet',
+                'logo_url' => 'images/partners/matrix.png',
+                'categories' => ['Partners'],
+                'description' => 'Established in 2000, Matrix is an award-winning European digital agency with offices in Dublin and Brussels. We are a team of 40+ experts from 18 countries, with a global outlook and a deep commitment to driving impactful change through some of the EU’s most vital digital skills initiatives.
+                <br>
+                We specialise in digital transformation, supporting a diverse range of clients including SMEs, startups, government bodies and EU agencies, with a strong focus on design and development, digital marketing, communications and international strategy.
+                <br>
+                As part of the international Code4Europe Consortium, Matrix leads Communication & Event Management, refining the programme’s brand strategy and elevating digital engagement all over Europe. Our work includes delivering EU-wide campaigns, revamping the EU Code Week website, optimising UX/UI, enhancing SEO, and ensuring cohesive messaging in all digital channels. Additionally, we manage social media strategy, content and engagement, supporting a connected, vibrant community through digital skills outreach across Europe.
+                 <br>
+                 At Matrix, we are passionate about making a positive difference for Europe’s future, empowering communities and nurturing digital skills that drive innovation and growth.',
+                'link_url' => 'https://www.matrixinternet.ie/',
+                'main_img_url' => 'images/partners/matrix.png'
+            ],
+            (object)[
+                'id' => 5,
                 'name' => 'eSkills Malta Foundation',
                 'logo_url' => 'images/partners/eskills.jpg',
                  'categories' => ['Partners'],
@@ -161,11 +180,11 @@ class PartnerContentComponent extends Component
             (object)[
                 'id' => 7,
                 'name' => 'JA Ukraine',
-                'logo_url' => 'images/partners/JAUkraine.png',
+                'logo_url' => 'images/partners/JAUkraine1.png',
                 'categories' => ['Partners'],
                 'description' => 'Junior Achievement Ukraine is a non-governmental organization that fosters youth entrepreneurship, financial literacy, and digital skills. As part of the Code4Europe Consortium, we implement initiatives to enhance digital literacy and develop IT talent in Ukraine. Our efforts focus on organizing educational events, hackathons, trainings for educators, and creating opportunities for young people through partnerships with leading IT companies.',
                 'link_url' => 'https://ja-ukraine.org',
-                'main_img_url' => 'images/partners/JAUkraine.png'
+                'main_img_url' => 'images/partners/JAUkraine1.png'
             ],
             (object)[
                 'id' => 8,
@@ -274,22 +293,18 @@ class PartnerContentComponent extends Component
             ],
             (object)[
                 'id' => 18,
-                'name' => 'JA EUROPE',
-                'logo_url' => 'images/partners/JAEurope.jpg',
+                'name' => 'Simplon.co',
+                'logo_url' => 'images/partners/simplon.png',
                 'categories' => ['Partners'],
-                 'description' => 'JA Europe is coordinating the Code4Europe Project, leading a consortium of 41 partners and 4 Associated Partners from over 20 countries.  
-                <br>
-                JA Europe is the largest and leading organisation in Europe dedicated to inspiring and preparing young people to succeed through hands-on, experiential learning in entrepreneurship, work readiness and financial health. In 2024, JA Worldwide is nominated for the Nobel Peace Prize, the third nomination in three years. JA Europe is a 
-                pan-European network of 42 national Junior Achievement (JA) organisations that aim to teach young people as early as possible about the world of enterprise and entrepreneurship. In the last school year, the JA Europe network provided 6 million learning experiences for youth online, in person and blended formats.  
-                <br>
-                JA Europe’s focus on providing at least one entrepreneurial experience to all youth, especially those in disadvantaged and underserved communities, helping to create a generation of young people ready to innovate and lead in a digital world. JA Europe aims to equip young people with the necessary skills to navigate the digital world and prepare them for the future of work.',
-                'link_url' => 'https://jaeurope.org/',
-                'main_img_url' => 'images/partners/JAEurope.jpg'
+                 'description' => 'Simplon.co is a network of social digital factories that offer free, intensive courses in digital professions in France and abroad. As the national hub for France in the Code4Europe Consortium, Simplon enhances digital education by organizing events and supporting schools, teachers, and ambassadors during EU Code Week. Its mission is to build a strong network to foster digital skills among youth and address Europe’s digital skills gap​.
+                Simplon leads initiatives like hackathons and mentorship programs, promoting digital careers and making technology accessible to all, especially underrepresented groups. It plays an important role in mobilizing national ecosystems to strengthen digital education across Europe​..',
+                'link_url' => 'https://simplon.co/',
+                'main_img_url' => 'images/partners/simplon.png'
             ],
             (object)[
                 'id' => 19,
                 'name' => 'Terawe',
-                'logo_url' => 'images/partners/terawe.png',
+                'logo_url' => 'images/partners/terawe1.png',
                 'categories' => ['Partners'],
                  'description' => 'Terawe Technologies Limited is a subsidiary of Terawe Corporation, a Global IT Solutions and Services company. Terawe are leaders in cloud technologies including Data, AI, Predictive Analytics, Machine Learning, Fog and Edge Computing, and IoT. The company also has extensive expertise in new and emergent technologies including Cognitive Services and Mixed Reality.
                 <br>
@@ -354,11 +369,11 @@ class PartnerContentComponent extends Component
              (object)[
                 'id' => 24,
                 'name' => 'Junior Achievement Bulgaria ',
-                'logo_url' => 'images/partners/JABulgaria.png',
+                'logo_url' => 'images/partners/JABulgaria1.png',
                 'categories' => ['Partners'],
                 'description' => 'Junior Achievement (JA) Bulgaria is proud to serve as the national hub for the European Code Week, an initiative that empowers young people to explore and develop their digital skills through coding, programming, and technology. As part of the Code4Europe consortium, JA Bulgaria is committed to fostering digital literacy, innovation, and creativity across the country. With a strong focus on youth education and entrepreneurship, for more than 27 years JA Bulgaria has been providing innovative education experiences and programs to youth around the whole country. As a national hub for Bulgaria, JA Bulgaria will coordinate and support a wide range of coding events, workshops, and activities, ensuring that participants of all ages have the opportunity to experience the power of coding and computational thinking. By collaborating with schools, educators, and partners, JA Bulgaria aims to inspire the next generation of digital creators, contributing through practise-based solutions to a vibrant, tech-savvy future for Europe.',
                 'link_url' => 'https://jabulgaria.org/',
-                'main_img_url' => 'images/partners/JABulgaria.png'
+                'main_img_url' => 'images/partners/JABulgaria1.png'
             ],
              (object)[
                 'id' => 25,
@@ -391,12 +406,97 @@ class PartnerContentComponent extends Component
                 'link_url' => 'https://wide.lu/',
                 'main_img_url' => 'images/partners/WIDE_CO.png'
             ],
+            (object)[
+                'id' => 28,
+                'logo_url' => 'images/partners/africa.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 29,
+                'logo_url' => 'images/partners/apple.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 30,
+                'logo_url' => 'images/partners/amazon.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 31,
+                'logo_url' => 'images/partners/code-org.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 32,
+                'logo_url' => 'images/partners/colabora_coderdojo.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 33,
+                'logo_url' => 'images/partners/digital-skills.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 34,
+                'logo_url' => 'images/partners/emma.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 35,
+                'logo_url' => 'images/partners/colabora_eun.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 36,
+                'logo_url' => 'images/partners/google.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 37,
+                'logo_url' => 'images/partners/lego_sponosorboard.jpg',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 38,
+                'logo_url' => 'images/partners/makeblock.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 39,
+                'logo_url' => 'images/partners/meet_and_code_logo.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 40,
+                'logo_url' => 'images/partners/microbit.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 41,
+                'logo_url' => 'images/partners/open_roberta.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 42,
+                'logo_url' => 'images/partners/colabora_PublicLibraries2030.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 42,
+                'logo_url' => 'images/partners/scratch.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 43,
+                'logo_url' => 'images/partners/urbinocarlo.png',
+                'categories' => ['Sponsor'],
+            ],
         ]);
     }
 
-    public function render()
+public function render()
     {
-       if ($this->filter === 'Council Presidency') {
+        if ($this->filter === 'Council Presidency') {
             // Council Presidency content
             $councilContent = collect([
                 (object)[
@@ -411,7 +511,7 @@ class PartnerContentComponent extends Component
                     communities and inspire the next generation of learners to thrive in an increasingly
                     digital world.',
                     'image' => 'images/council/one.jpg',
-                    ],
+                ],
             ]);
 
             // Render the Council Presidency content view
@@ -419,13 +519,23 @@ class PartnerContentComponent extends Component
                 'councilMembers' => $councilContent
             ]);
         }
-        $partners = $this->getAllPartners()->filter(function ($partner) {
-            return in_array($this->filter, $partner->categories);
-        })->paginate(16);
+
+        // Handle "EU Code Week Supporters" (Sponsors)
+        if ($this->filter === 'EU Code Week Supporters') {
+            $partners = $this->getAllPartners()->filter(function ($partner) {
+                return in_array('Sponsor', $partner->categories);
+            })->paginate(16);
+        } else {
+            // Default handling for Partners
+            $partners = $this->getAllPartners()->filter(function ($partner) {
+                return in_array($this->filter, $partner->categories);
+            })->paginate(16);
+        }
 
         return view('livewire.partner-content-component', [
             'partners' => $partners,
             'selectedPartner' => $this->selectedPartner,
         ]);
     }
+
 }
