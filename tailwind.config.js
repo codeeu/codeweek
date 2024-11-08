@@ -16,6 +16,8 @@ module.exports = {
         'aqua': '#B1E0E5',
         'pearl': '#DBECF0',
         'grey': '#E7EAE3',
+        'grey-2': '#DEDEDE'
+        
       },
       screens: {
         'tablet': '993px',
