@@ -1,4 +1,4 @@
-<section class="flex flex-wrap items-center justify-center gap-8" aria-label="Numbered steps">
+<section class="flex flex-wrap items-center justify-center gap-2 mt-12" aria-label="Numbered steps">
     <button 
         class="flex flex-col justify-center items-center self-stretch my-auto w-8 h-8 bg-primary hover:bg-blue-primary rounded min-h-[32px]" 
         aria-label="Previous step"

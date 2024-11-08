@@ -1,25 +1,25 @@
 <div class="partner-content-container"
-    x-data="{
-        gridColumns: 4,
-        setGridColumns() {
-            if (window.innerWidth >= 1024) {
-                this.gridColumns = 4;
-            } else if (window.innerWidth >= 768) {
-                this.gridColumns = 4;
-            } else if (window.innerWidth >= 640) {
-                this.gridColumns = 2;
-            } else {
-                this.gridColumns = 1;
-            }
-            @this.set('gridColumns', this.gridColumns);
-        }
-    }"
-    x-init="
-        setGridColumns();
-        window.addEventListener('resize', () => {
-            setGridColumns();
-        });
-    "
+     x-data="{
+         gridColumns: 4,
+         setGridColumns() {
+             if (window.innerWidth >= 1024) {
+                 this.gridColumns = 4;
+             } else if (window.innerWidth >= 768) {
+                 this.gridColumns = 4;
+             } else if (window.innerWidth >= 640) {
+                 this.gridColumns = 2;
+             } else {
+                 this.gridColumns = 1;
+             }
+             @this.set('gridColumns', this.gridColumns);
+         }
+     }"
+     x-init="
+         setGridColumns();
+         window.addEventListener('resize', () => {
+             setGridColumns();
+         });
+     "
 >
     @php
         // Initially chunk based on default gridColumns
@@ -39,21 +39,23 @@
 
                     <div 
                         class="relative flex flex-col items-center justify-center border {{ $isSelected ? 'border-blue-500' : 'border-[#DEDEDE]' }} w-full h-[160px] rounded-[5px] cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
-                        wire:click="showPartnerContent({{ $partner->id }})"
+                        @if($filter === 'Partners')
+                            wire:click="showPartnerContent({{ $partner->id }})"
+                            tabindex="0"
+                            role="button"
+                            @keydown.enter.prevent="showPartnerContent({{ $partner->id }})"
+                        @endif
                         wire:key="partner-{{ $partner->id }}" 
-                        tabindex="0"
-                        role="button"
-                        @keydown.enter.prevent="showPartnerContent({{ $partner->id }})"
                     >
                         <img 
                             loading="lazy" 
                             src="{{ $partner->logo_url }}" 
-                            alt="{{ $partner->name }}" 
-                            class="object-contain w-full max-w-[140px] h-auto" 
+                            alt="{{ $partner->name ?? 'Sponsor Logo' }}" 
+                            class="object-contain w-full h-auto max-w-[140px]" 
                         />
                         
-                        <!-- Triangle/Caret (shown if this is the selected partner) -->
-                        @if($isSelected)
+                        @if($isSelected && $filter === 'Partners')
+                            <!-- Triangle/Caret (shown if this is the selected partner) -->
                             <div class="absolute transform -translate-x-1/2 -bottom-6 left-1/2">
                                 <div class="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-aqua mt-[13px]"></div>
                             </div>
@@ -62,8 +64,7 @@
                 @endforeach
             </div>
 
-            <!-- Check if the selected partner is in this chunk -->
-            @if($selectedPartner && $chunk->contains('id', $selectedPartner->id))
+            @if($selectedPartner && $chunk->contains('id', $selectedPartner->id) && $filter === 'Partners')
                 <!-- Display selected partner's content below the grid row -->
                 <section class="flex flex-col">
                     <article class="relative flex flex-col w-full p-10 mb-4 bg-aqua max-md:px-5 max-md:max-w-full">
