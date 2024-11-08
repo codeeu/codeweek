@@ -126,7 +126,7 @@
                  {{-- Display this section only if a country is selected and has specific content --}}
                     @php
                         $country = app('request')->input('country_iso');
-                        $supportedCountries = ['GR', 'CY', 'MT', 'IT', 'BG', 'TR', 'UA','PL','IE','FR','LU','NL','BE','SK','CZ','NO','IS','FI','SE','PT','ES','LV','LT','HR','SI','DE','AT','CH','RO','MD'];
+                        $supportedCountries = ['GR', 'CY', 'MT', 'IT', 'BG', 'TR', 'UA','PL','IE','FR','LU','NL','BE','SK','CZ','NO','IS','FI','SE','PT','ES','LV','LT','HR','SI','DE','AT','CH','RO','MD','DK'];
                     @endphp
 
                     @if(in_array($country, $supportedCountries))
@@ -134,8 +134,8 @@
                             <div class="community_type">
                                 <div class="text">
                                     {{-- Dynamically construct the language keys based on country code --}}                                    
-                                    <h2 class="subtitle">@lang("community.hub_{$country}")</h2>
-                                    <br/><h3>@lang("community.hub_level_{$country}")</h3>
+                                    <h2 class="subtitle">@lang("community.hub_level_{$country}")</h2>
+                                    <br/><h3><b>@lang("community.hub_{$country}")</b></h3>
                                     <p>@lang("community.hub_desc_{$country}")</p>
                                 </div>
                                 <div class="image">
