@@ -491,6 +491,15 @@ class PartnerContentComponent extends Component
                 'logo_url' => 'images/partners/urbinocarlo.png',
                 'categories' => ['Sponsor'],
             ],
+            (object)[
+                'id' => 44,
+                'name' => __('partners.ja_spain_name'),
+                'logo_url' => 'images/partners/jaspain.png',
+                'categories' => ['Partners'],
+                'description' => __('partners.ja_spain_description'),
+                'link_url' => 'https://fundacionjaes.org/',
+                'main_img_url' => 'images/partners/jaspain.png'
+            ],
         ]);
     }
 
