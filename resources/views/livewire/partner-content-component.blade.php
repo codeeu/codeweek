@@ -73,7 +73,7 @@
                             <p class="leading-6">
                                 {!! $selectedPartner->description !!}
                             </p>
-                            <a href="{{ $selectedPartner->link_url }}" class="mt-5 underline text-secondary hover:text-primary">Visit Partner</a>
+                            <a target="_blank" href="{{ $selectedPartner->link_url }}" class="mt-5 underline text-secondary hover:text-primary">Visit Partner</a>
                         </div>
                     </article>
                 </section>
