@@ -7,13 +7,13 @@ use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class EventCreated extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $event;
+
     public $user;
 
     /**
@@ -29,13 +29,11 @@ class EventCreated extends Mailable
 
     /**
      * Build the message.
-     *
-     * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
-            ->subject("A new event on codeweek.eu needs your attention")
+            ->subject('A new event on codeweek.eu needs your attention')
             ->markdown('emails.en.event-created');
     }
 }

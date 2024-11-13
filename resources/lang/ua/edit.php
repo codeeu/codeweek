@@ -12,6 +12,6 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Редагувати свій захід #CodeWeek',
+    'title' => 'Редагувати свій захід #EUCodeWeek',
 
 ];

@@ -14,7 +14,7 @@ return [
     'login' => 'Bejelentkezés',
     'register' => 'Regisztráció',
     'github' => 'Bejelentkezés Githubbal',
-    'twitter' => 'Bejelentkezés Twitterrel',
+    'X' => 'Bejelentkezés Xrel',
     'facebook' => 'Bejelentkezés Facebookkal',
     'google' => 'Bejelentkezés Google-lel',
     'azure' => 'Bejelentkezés Azure-lel',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Jelszó visszaállítása',
     'send_password' => 'Jelszó-visszaállító link',
     'confirm_password' => 'Jelszó megerősítése',
-    'name' => 'név'
+    'name' => 'név',
 ];

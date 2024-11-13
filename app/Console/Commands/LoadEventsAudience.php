@@ -34,10 +34,8 @@ class LoadEventsAudience extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load events Audience');
 
@@ -45,10 +43,8 @@ class LoadEventsAudience extends Command
         DB::table('audience_event')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-
         $old_audience = DB::table('api_event_audience')
             ->get();
-
 
         foreach ($old_audience as $old) {
 

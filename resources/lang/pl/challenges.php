@@ -15,14 +15,14 @@ return [
         'example' => 'Przykład',
         'written-by' => [
             'Autorem tego wyzwania jest',
-            'i jest ono częścią projektu'
+            'i jest ono częścią projektu',
         ],
         'teachers' => 'Nauczyciele',
         'students' => 'Uczniowie',
         'beginner' => 'Początkujący',
         'intermediate' => 'Średnio zaawansowany',
         'advanced' => 'Zaawansowany',
-        '1-hour' => '1 godz.'
+        '1-hour' => '1 godz.',
     ],
     'main' => [
         'Zachęcamy do wzięcia udziału w co najmniej jednym wyzwaniu Europejskiego Tygodnia Kodowania, który odbędzie się między 9 a 24 października 2021 r.',
@@ -31,14 +31,14 @@ return [
         'Wybierz co najmniej jedno wyzwanie i dostosuj je do potrzeb swojej grupy lub klasy. Podziel się efektami Waszej pracy na Instagramie, by zachęcić jeszcze więcej znajomych do wspólnej zabawy podczas Tygodnia Kodowania!',
         'Kliknij wyzwanie, by dowiedzieć się o nim więcej:',
         'Kto może dołączyć?',
-        'Wszyscy (szkoły, nauczyciele, biblioteki, kółka informatyczne, firmy i instytucje publiczne) mogą świętować Europejski Tydzień Kodowania 2021 i wziąć udział w proponowanych wyzwaniach #CodeWeekChallenge.',
+        'Wszyscy (szkoły, nauczyciele, biblioteki, kółka informatyczne, firmy i instytucje publiczne) mogą świętować Europejski Tydzień Kodowania 2021 i wziąć udział w proponowanych wyzwaniach #EUCodeWeekChallenge.',
         'Jak wziąć udział w Wyzwaniu Europejskiego Tygodnia Kodowania 2021?',
         'Wybierz wyzwanie, do którego chcesz przystąpić.',
         'Podziel uczestników na pary lub grupy. Współpraca i praca zespołowa są kluczem do wykonania zadania niezależnie od tego, czy jest ono realizowane w klasie, czy przez internet, na poziomie krajowym, czy międzynarodowym.',
         'Pokaż innym swoją pracę',
         'Chcesz wygrać nagrody Europejskiego Tygodnia Kodowania? W takim razie niech Twoją pracę zobaczy cały świat!',
         'Po wykonaniu zadania podziel się tym doświadczeniem na Instagramie.',
-        'Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszym profilu na Instagramie, dlatego warto sprawdzać powiadomienia regularnie.'
+        'Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszym profilu na Instagramie, dlatego warto sprawdzać powiadomienia regularnie.',
     ],
     'share' => [
         'Jak dzielić się zrealizowanymi wyzwaniami na Instagramie?',
@@ -48,14 +48,14 @@ return [
         'Dodaj zrzut ekranu przedstawiający Twoją pracę',
         'Napisz ciekawy opis',
         'Pamiętaj, żeby dodać zwrot „Link w bio”',
-        'Dodaj hasztag #CodeWeekChallenge',
+        'Dodaj hasztag #EUCodeWeekChallenge',
         'Oznacz profil @CodeWeekEU i wspomnij o nim w opisie',
         'Wolisz podzielić się swoją pracą na Facebooku?',
         'Na stronie Europejskiego Tygodnia Kodowania na portalu',
         'Facebook',
         'codziennie będzie pojawiać się przypięty post z nowym wyzwaniem. Każdego dnia będziemy wybierać komentarz pod postem, którego autor otrzyma od nas nagrodę',
         'Jak to działa?',
-        'Po prostu zostaw pod postem komentarz z łączem do swojej pracy.'
+        'Po prostu zostaw pod postem komentarz z łączem do swojej pracy.',
     ],
     'share-box' => [
         'Udostępnij łącze do swojej pracy w swoim',
@@ -64,24 +64,24 @@ return [
         '”Edytuj profil”',
         'na swoim Instagramie i dodaj łącze do swojej pracy w polu „Witryna internetowa”. Następnie utwórz nowy post ze zrzutem ekranu przedstawiającym Twoją pracę i dodaj zwrot ',
         'Link w bio',
-        'użyj hasztagu #CodeWeekChallenge i wspomnij o koncie @CodeWeekEU',
+        'użyj hasztagu #EUCodeWeekChallenge i wspomnij o koncie @CodeWeekEU',
         'Wolisz podzielić się swoją pracą na',
         'Europejski Tydzień Kodowania:',
         'będzie przypinać post z nowym wyzwaniem',
         'na swoim profilu na Facebooku',
         'Musisz tylko dodać pod tym postem komentarz z łączem do swojej pracy',
-        'Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszych profilach na Instagramie i Facebooku, dlatego warto sprawdzać powiadomienia regularnie.'
+        'Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszych profilach na Instagramie i Facebooku, dlatego warto sprawdzać powiadomienia regularnie.',
     ],
     'take-part' => [
         'Powody, dla których warto wziąć udział w wyzwaniu Europejskiego Tygodnia Kodowania',
         'Udział w zadaniach wymagających rozwiązywania problemów i kodowania.',
         'Współpraca z kolegami i koleżankami.',
-        'Uświadamianie roli, jaką odgrywa kodowanie.'
+        'Uświadamianie roli, jaką odgrywa kodowanie.',
     ],
     'download' => [
         'Kliknij',
         'tutaj',
-        'i pobierz wyzwanie w formie dokumentu programu Word'
+        'i pobierz wyzwanie w formie dokumentu programu Word',
     ],
     'bingo' => [
         'Wykonaj wszystkie wyzwania',
@@ -91,6 +91,6 @@ return [
         'Udostępnij swoją pracę w mediach społecznościowych i wygraj wspaniałe nagrody Tygodnia Kodowania',
         'Wystarczy, że wrzucisz zdjęcie wypełnionego wiersza, kolumny, a najlepiej całego bingo na',
         'Facebook, Instagram lub Twitter',
-        'Nie zapomnij o hasztagu'
-    ]
+        'Nie zapomnij o hasztagu',
+    ],
 ];

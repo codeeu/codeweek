@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Auditorija',
-    'theme_title'=>'Tēma',
-    
+    'audience_title' => 'Auditorija',
+    'theme_title' => 'Tēma',
+
     'placeholder' => 'Meklēt pasākuma nosaukumu vai tagu',
     'submit' => 'Meklēt',
     'label_country' => 'Atlasīt valsti',
     'last_year_events' => [
         'label' => 'Ietvert pagājušā gada pasākumus',
         'yes' => 'Jā',
-        'no' => 'Nē'
+        'no' => 'Nē',
     ],
     'search_counter' => 'saskaņot ar meklēšanas kritērijiem',
-    'event'=>'pasākums',
-    'events'=>'pasākumi',
+    'event' => 'pasākums',
+    'events' => 'pasākumi',
     'year' => 'gads',
-    'audiences'=>'Mērķauditorija','themes'=>'Tēmas','countries'=>'Valstis','search_placeholder' => 'Meklēšana pēc nosaukuma vai apraksta',
+    'audiences' => 'Mērķauditorija', 'themes' => 'Tēmas', 'countries' => 'Valstis', 'search_placeholder' => 'Meklēšana pēc nosaukuma vai apraksta',
 ];

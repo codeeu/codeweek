@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Prijavite svoj dogodek #CodeWeek',
+    'title' => 'Prijavite svoj dogodek #EUCodeWeek',
     'event_title' => 'Naslov dogodka',
     'number_required' => 'Navedite grobo oceno, tudi če nimate natančnih podatkov.',
     'phrase1' => 'Ta obrazec lahko izpolnite samo enkrat! Skrbno preverite svoje podatke. Če se zmotite, ',
@@ -25,27 +25,25 @@ return [
         'label' => 'Število udeležencev',
     ],
     'average_participant_age' => [
-        'label'=>'Povprečna starost udeležencev',
+        'label' => 'Povprečna starost udeležencev',
     ],
     'percentage_of_females' => [
         'label' => 'Delež žensk',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Koda za udeležbo Code Week 4 All',
-        'help' => 'Če imate kodo Code Week 4 All, jo lahko prilepite tukaj. Če se ne boste udeležili, preskočite to polje.'
+        'help' => 'Če imate kodo Code Week 4 All, jo lahko prilepite tukaj. Če se ne boste udeležili, preskočite to polje.',
     ],
     'name_for_certificate' => [
         'label' => 'Ime za certifikat',
-        'help' => 'Vpišite ime organizatorja dogodka, ki bo izdal certifikat o udeležbi v tednu programiranja. Uporabite samo nabor znakov ASCII (latinica). Črke s poudarki, preglasi in podobnimi znaki niso podprte.'
+        'help' => 'Vpišite ime organizatorja dogodka, ki bo izdal certifikat o udeležbi v tednu programiranja. Uporabite samo nabor znakov ASCII (latinica). Črke s poudarki, preglasi in podobnimi znaki niso podprte.',
     ],
     'submit' => 'Pošljite prijavo dogodka',
-    'thanks_page'=>[
-        'title'=>'Hvala, da ste prijavili svoj dogodek!',
-        'certificate_ready'=>'Vaš certifikat je pripravljen.',
-        'download_button'=>'Kliknite tukaj, da ga prenesete.',
-        'back_events'=>'Nazaj na dogodek'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Hvala, da ste prijavili svoj dogodek!',
+        'certificate_ready' => 'Vaš certifikat je pripravljen.',
+        'download_button' => 'Kliknite tukaj, da ga prenesete.',
+        'back_events' => 'Nazaj na dogodek',
+    ],
 
 ];

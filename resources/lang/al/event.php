@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Shtoni evenimentin tuaj të #CodeWeek',
+    'main_title' => 'Shtoni evenimentin tuaj të #EUCodeWeek',
     'button' => 'Shtoni eveniment',
     'howto' => 'Si ta organizoni evenimentin tuaj',
     'required' => 'Fushat e detyrueshme janë të shënuara me yll *. Mos ngurroni të shtoni listën e evenimentit në gjuhën tuaj lokale.',
@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizoni ose mbështetni evenimentet në qytetin tuaj',
     'or_contact_your' => 'ose kontaktoni me',
     'eu_code_week_ambassadors' => 'Ambasadorët e EU Code Week',
-    'show_events_for'=>'Shfaqni evenimentet për ',
+    'show_events_for' => 'Shfaqni evenimentet për ',
     'who' => 'Për kë është evenimenti?',
     'tags' => 'Etiketat',
     'image' => 'Imazhi',
@@ -55,7 +55,7 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
     ],
     'public' => [
         'label' => 'Emaili publik',
-        'placeholder' => 'Dëshironi të shfaqni një email kontakti?'
+        'placeholder' => 'Dëshironi të shfaqni një email kontakti?',
 
     ],
     'title' => [
@@ -66,7 +66,6 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
         'label' => 'Adresa',
         'placeholder' => 'Ku do të zhvillohet aktiviteti?',
     ],
-
 
     'organizertype' => [
         'label' => 'Lloji i aktivitetit',
@@ -107,22 +106,22 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
         'Augmented reality' => 'Realiteti i përmirësuar',
         'Artificial intelligence' => 'Inteligjenca artificiale',
         'Motivation and awareness raising' => 'Motivimi dhe rritja e ndërgjegjësimit',
-        'Promoting diversity' => 'Promovimi i diversitetit'
+        'Promoting diversity' => 'Promovimi i diversitetit',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KODI I CODE WEEK 4 ALL',
         'explanation' => 'Nëse keni marrë një kod të Code Week 4 all nga një koleg i shkollës apo një mik, ngjiteni këtu, ndryshe lëreni bosh. Më shumë informacion rreth Code Week 4 All disponohet',
         'link' => 'këtu',
     ],
-    'thanks_page'=>[
-        'title'=>'Faleminderit që shtuat evenimentin tuaj!',
-        'phrase1'=>'Një prej ambasadorëve tanë lokalë tani do të shqyrtojë evenimentin tuaj',
-        'phrase2'=>'dhe do të sigurohet që gjithçka të duket në rregull.',
-        'phrase3'=>'Nëse keni pyetje, kontaktoni me një prej',
-        'phrase4'=>'ambasadorëve kombëtarë',
-        'phrase5'=>'ose na dërgoni një',
-        'phrase6'=>'email',
-        'phrase7'=>'Ju mund ta ndani kodin e Codeweek for all me persona të tjerë:'
+    'thanks_page' => [
+        'title' => 'Faleminderit që shtuat evenimentin tuaj!',
+        'phrase1' => 'Një prej ambasadorëve tanë lokalë tani do të shqyrtojë evenimentin tuaj',
+        'phrase2' => 'dhe do të sigurohet që gjithçka të duket në rregull.',
+        'phrase3' => 'Nëse keni pyetje, kontaktoni me një prej',
+        'phrase4' => 'ambasadorëve kombëtarë',
+        'phrase5' => 'ose na dërgoni një',
+        'phrase6' => 'email',
+        'phrase7' => 'Ju mund ta ndani kodin e Codeweek for all me persona të tjerë:',
     ],
     'activitytype' => [
         'label' => 'Tipi i Aktivitetit',
@@ -130,11 +129,11 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
         'open-online' => 'Aktivitet i hapur online',
         'invite-online' => 'Aktivitet online me ftesë',
         'open-in-person' => 'Aktivitet i hapur me prani fizike',
-        'invite-in-person' => 'Aktivitet me ftesë për prani fizike'
+        'invite-in-person' => 'Aktivitet me ftesë për prani fizike',
 
     ],
 
-    'privacy'=>'Kam lexuar dhe pranuar termet e politikës së privatësisë, të përshkruara në këtë dokument.',
+    'privacy' => 'Kam lexuar dhe pranuar termet e politikës së privatësisë, të përshkruara në këtë dokument.',
     'country' => 'Shteti',
     'loading' => 'Po ngarkohet...',
     'add_activity' => 'Shto aktivitet',
@@ -150,11 +149,6 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
     'view_your_certificate' => 'Shikoni këtu certifikatën',
     'reported' => 'RAPORTUAR',
     'submit_event_and_report' => 'Dërgoni një raportim për këtë eveniment dhe kërkoni certifikatën tuaj të Code Week.',
-    'report_and_claim' => 'Raportoni evenimentin dhe kërkoni certifikatën'
-
-
-
-
-
+    'report_and_claim' => 'Raportoni evenimentin dhe kërkoni certifikatën',
 
 ];

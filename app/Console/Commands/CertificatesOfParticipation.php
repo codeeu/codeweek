@@ -24,13 +24,11 @@ class CertificatesOfParticipation extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $id = $this->argument('id');
-        $participation = Participation::firstWhere('id',$id);
+        $participation = Participation::firstWhere('id', $id);
 
         //Dispatch Job
         GenerateCertificatesOfParticipation::dispatchSync($participation);

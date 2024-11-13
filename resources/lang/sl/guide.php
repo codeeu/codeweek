@@ -1,14 +1,13 @@
 <?php
 
-
 return [
 
     'title' => 'Navodila',
-    'organise_activity' => 'Organizirajte svojo dejavnost s #CodeWeek',
+    'organise_activity' => 'Organizirajte svojo dejavnost s #EUCodeWeek',
     'register_activity' => 'Registrirajte svojo dejavnost tukaj',
     'what' => [
         'title' => 'Kaj je evropski teden programiranja?',
-        'content' => '<p>Evropski teden programiranja je družbena pobuda, ki jo vodijo prostovoljci in podpira Evropska komisija. Vsak – šole, učitelji, knjižnice, društva, podjetja in javni organi – lahko organizira dejavnost #CodeWeek in jo doda na zemljevid na spletnem mestu <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>Evropski teden programiranja je družbena pobuda, ki jo vodijo prostovoljci in podpira Evropska komisija. Vsak – šole, učitelji, knjižnice, društva, podjetja in javni organi – lahko organizira dejavnost #EUCodeWeek in jo doda na zemljevid na spletnem mestu <a href="/events">codeweek.eu</a>.</p>',
     ],
     'what_you_need_organise' => [
         'title' => 'Kaj potrebujete za organizacijo dejavnosti?',
@@ -23,7 +22,7 @@ return [
             '7' => '<strong>Prijavite udeležence.</strong> Če ste prostorsko omejeni, lahko za prijavo udeležencev uporabite spletna orodja, kot sta <a href="https://docs.google.com/forms/">Google Obrazci</a> in <a
                         href="https://www.eventbrite.com/">Eventbrite</a>.',
             '8' => 'Ne pozabite <a href="/add">postaviti svoje dejavnosti</a> na <a href="/events">zemljevid tedna programiranja</a>!',
-        ]
+        ],
     ],
     'how_to' => [
         'title' => 'Kako organizirati svojo dejavnost?',
@@ -31,27 +30,27 @@ return [
             '1' => 'O obliki svojega programerskega dogodka se odločate sami, priporočamo pa, da namenite nekaj <strong>časa praktičnim vajam</strong>, v okviru katerih bodo udeleženci lahko sami ustvarjali in/ali se poigrali s strojno opremo.',
             '2' => 'Uporabite <strong>orodja in tehnologije</strong>, ki so primerni za vašo ciljno skupino. Priporočamo, da uporabite <a href="http://codeweek.eu/resources/">brezplačno dostopno odprtokodno orodje</a>.',
             '3' => 'Udeležence spodbudite, da na koncu dogodka drug drugemu <strong>pokažejo in predstavijo</strong>, kar so ustvarili.',
-            '4' => '<strong>Širite glas!</strong> Predstavite svojo dejavnost in jo delite na družbenih medijih, pri tem pa uporabite ključno besedo #CodeWeek. Delite lahko tudi v <a
+            '4' => '<strong>Širite glas!</strong> Predstavite svojo dejavnost in jo delite na družbenih medijih, pri tem pa uporabite ključno besedo #EUCodeWeek. Delite lahko tudi v <a
                         href="https://www.facebook.com/groups/774720866253044/">skupini evropskega tedna programiranja za učitelje</a> in na Twitterju (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Pogovorite se s svojimi prijatelji, izvajalci izobraževanj in lokalnimi mediji ter dajte izjavo za medije.',
             '5' => 'Ne pozabite <a href="/add">dodati svoje dejavnosti</a> na <a href="/events">zemljevid tedna programiranja</a>!',
-        ]
+        ],
     ],
     'material' => [
         'title' => 'Promocijsko gradivo',
         'text' => '<p>Za najnovejše informacije si oglejte naš <a href="http://blog.codeweek.eu/">blog</a>, najnovejša sporočila za javnost pa prilagodite svojim potrebam ali ustvarite svoja:</p>',
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
-            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Priprave na obeležitev evropskega tedna programiranja 2019</a> (na voljo v 29 jezikih)'
-        ]
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Priprave na obeležitev evropskega tedna programiranja 2019</a> (na voljo v 29 jezikih)',
+        ],
     ],
     'toolkits' => [
         'title' => 'Prenesite naslednje sklope orodij, ki vam bodo v pomoč pri začetku:',
         'communication_toolkit' => 'Komunikacijsko orodje',
-        'teachers_toolkit' => 'Orodje za učitelje'
+        'teachers_toolkit' => 'Orodje za učitelje',
     ],
     'questions' => [
         'title' => 'Imate vprašanja?',
-        'content' => '<p>Če imate vprašanja v zvezi z organizacijo in predstavitvijo vašega dogodka #CodeWeek, se obrnite na enega od <a href="/ambassadors">ambasadorjev evropskega tedna programiranja</a> v svoji državi.</p>'
-    ]
+        'content' => '<p>Če imate vprašanja v zvezi z organizacijo in predstavitvijo vašega dogodka #EUCodeWeek, se obrnite na enega od <a href="/ambassadors">ambasadorjev evropskega tedna programiranja</a> v svoji državi.</p>',
+    ],
 
 ];

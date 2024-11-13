@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Signalez votre événement #CodeWeek',
+    'title' => 'Signalez votre événement #EUCodeWeek',
     'event_title' => 'Titre de l’événement',
     'number_required' => 'Même si vous ne disposez pas de données exactes, veuillez fournir une estimation approximative.',
     'phrase1' => 'Ce formulaire ne peut être complété qu’une seule fois! Veuillez vérifier soigneusement les données saisies. En cas d’erreur, ',
@@ -25,27 +25,25 @@ return [
         'label' => 'Nombre de participants',
     ],
     'average_participant_age' => [
-        'label'=>'Âge moyen des participants',
+        'label' => 'Âge moyen des participants',
     ],
     'percentage_of_females' => [
         'label' => 'Pourcentage de femmes',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Code de participation Code Week 4 All',
-        'help' => 'Veuillez saisir votre code pour le Codeweek4All challenge, si vous en possédez un. Si vous n’êtes pas un participant, veuillez ignorer ce champ.'
+        'help' => 'Veuillez saisir votre code pour le Codeweek4All challenge, si vous en possédez un. Si vous n’êtes pas un participant, veuillez ignorer ce champ.',
     ],
     'name_for_certificate' => [
         'label' => 'Nom pour le certificat',
-        'help' => 'Remplacez ce nom par celui de l’organisateur de l’événement qui recevra le certificat de participation à la Semaine européenne du code Veuillez n’utiliser que des caractères ASCII (lettres de l’alphabet latin). Les lettres accentuées, les trémas et autres caractères spéciaux ne sont pas pris en charge.'
+        'help' => 'Remplacez ce nom par celui de l’organisateur de l’événement qui recevra le certificat de participation à la Semaine européenne du code Veuillez n’utiliser que des caractères ASCII (lettres de l’alphabet latin). Les lettres accentuées, les trémas et autres caractères spéciaux ne sont pas pris en charge.',
     ],
     'submit' => 'Envoyez le formulaire d\'ajout de votre événement',
-    'thanks_page'=>[
-        'title'=>'Merci d’avoir signalé votre événement!',
-        'certificate_ready'=>'Votre certificat est prêt.',
-        'download_button'=>'Cliquez ici pour le télécharger.',
-        'back_events'=>'Retournez à votre événement.'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Merci d’avoir signalé votre événement!',
+        'certificate_ready' => 'Votre certificat est prêt.',
+        'download_button' => 'Cliquez ici pour le télécharger.',
+        'back_events' => 'Retournez à votre événement.',
+    ],
 
 ];

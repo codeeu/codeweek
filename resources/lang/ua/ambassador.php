@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -14,9 +13,9 @@ return [
     |
     */
 
-    'visit_the'=> 'Відвідайте',
-    'local_facebook_page'=>'локальну сторінку в Facebook',
-    'local_website'=>'Локальний сайт',
-    'no_ambassadors'=>'Поки що відсутній посол',
+    'visit_the' => 'Відвідайте',
+    'local_facebook_page' => 'локальну сторінку в Facebook',
+    'local_website' => 'Локальний сайт',
+    'no_ambassadors' => 'Поки що відсутній посол',
 
 ];

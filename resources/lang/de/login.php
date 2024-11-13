@@ -14,7 +14,7 @@ return [
     'login' => 'Anmelden',
     'register' => 'Registrieren',
     'github' => 'Mit Github anmelden',
-    'twitter' => 'Mit Twitter anmelden',
+    'X' => 'Mit X anmelden',
     'facebook' => 'Mit Facebook anmelden',
     'google' => 'Mit Google anmelden',
     'azure' => 'Mit Azure anmelden',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Kennwort zurücksetzen',
     'send_password' => 'Link zum Zurücksetzen des Kennwortes versenden',
     'confirm_password' => 'Kennwort bestätigen',
-    'name' => 'name'
+    'name' => 'name',
 ];

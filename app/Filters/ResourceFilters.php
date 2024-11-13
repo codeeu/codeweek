@@ -65,7 +65,7 @@ class ResourceFilters extends Filters
         return $this->builder
             ->leftJoin('resource_item_resource_level', 'resource_items.id', "=", "resource_item_resource_level.resource_item_id")
             ->whereIn('resource_item_resource_level.resource_level_id', $plucked)
-            ->groupBy('resource_items.id');
+            ->groupBy(['resource_items.id','resource_item_resource_level.resource_level_id']);
 
     }
 
@@ -83,7 +83,7 @@ class ResourceFilters extends Filters
         return $this->builder
             ->leftJoin('resource_item_resource_type', 'resource_items.id', "=", "resource_item_resource_type.resource_item_id")
             ->whereIn('resource_item_resource_type.resource_type_id', $plucked)
-            ->groupBy('resource_items.id');
+            ->groupBy(['resource_items.id','resource_item_resource_type.resource_type_id']);
 
     }
 
@@ -101,7 +101,8 @@ class ResourceFilters extends Filters
         return $this->builder
             ->leftJoin('resource_item_resource_subject', 'resource_items.id', "=", "resource_item_resource_subject.resource_item_id")
             ->whereIn('resource_item_resource_subject.resource_subject_id', $plucked)
-            ->groupBy('resource_items.id');
+            ->groupBy(['resource_items.id','resource_item_resource_subject.resource_subject_id']);
+
 
     }
 
@@ -119,7 +120,7 @@ class ResourceFilters extends Filters
         return $this->builder
             ->leftJoin('resource_category_resource_item', 'resource_items.id', "=", "resource_category_resource_item.resource_item_id")
             ->whereIn('resource_category_resource_item.resource_category_id', $plucked)
-            ->groupBy('resource_items.id');
+            ->groupBy(['resource_items.id','resource_category_resource_item.resource_category_id']);
 
     }
 
@@ -140,7 +141,8 @@ class ResourceFilters extends Filters
         return $this->builder
             ->leftJoin('resource_item_resource_language', 'resource_items.id', "=", "resource_item_resource_language.resource_item_id")
             ->whereIn('resource_item_resource_language.resource_language_id', $plucked)
-            ->groupBy('resource_items.id');
+            ->groupBy(['resource_items.id','resource_item_resource_language.resource_language_id']);
+
 
     }
 
@@ -155,11 +157,11 @@ class ResourceFilters extends Filters
         if (sizeof($selectedProgrammingLanguages) == 0) return;
         $plucked = collect($selectedProgrammingLanguages)->pluck("id");
 
-
         return $this->builder
             ->leftJoin('res_pl_pivot', 'resource_items.id', "=", "res_pl_pivot.resource_item_id")
             ->whereIn('res_pl_pivot.resource_programming_language_id', $plucked)
-            ->groupBy('resource_items.id');
+            ->groupBy(['resource_items.id','res_pl_pivot.resource_programming_language_id']);
+
 
     }
 

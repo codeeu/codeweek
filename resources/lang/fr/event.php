@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Ajoutez votre événement #CodeWeek',
+    'main_title' => 'Ajoutez votre événement #EUCodeWeek',
     'button' => 'Ajouter un événement',
     'howto' => 'Comment organiser votre propre événement',
     'required' => 'Les champs obligatoires sont indiqués par un astérisque. Vous pouvez ajouter la liste des événements dans votre langue.',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Adresse e-mail publique',
-        'placeholder' => 'Souhaitez-vous afficher votre adresse e-mail?'
+        'placeholder' => 'Souhaitez-vous afficher votre adresse e-mail?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresse',
         'placeholder' => 'Où aura lieu l’activité?',
     ],
-
 
     'organizertype' => [
         'label' => 'Type d’organisation',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Réalité augmentée',
         'Artificial intelligence' => 'Intelligence artificielle',
         'Motivation and awareness raising' => 'Motivation et sensibilisation',
-        'Promoting diversity' => 'Promotion de la diversité'
+        'Promoting diversity' => 'Promotion de la diversité',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CODE «CODE WEEK 4 ALL»',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'ambassadeurs locaux',
         'phrase5' => 'ou envoyez-nous un',
         'phrase6' => 'courrier électronique',
-        'phrase7' => 'Vous pouvez partager votre code «Code Week 4 All» avec d’autres personnes:'
+        'phrase7' => 'Vous pouvez partager votre code «Code Week 4 All» avec d’autres personnes:',
     ],
     'activitytype' => [
         'label' => 'Type d\'activité',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Activité en ligne',
         'invite-online' => 'Activité en ligne privée',
         'open-in-person' => 'Activité hors-ligne',
-        'invite-in-person' => 'Activité hors-ligne privée'
+        'invite-in-person' => 'Activité hors-ligne privée',
 
     ],
     'privacy' => 'J\'ai lu et j\'accepte les conditions de la politique de confidentialité décrites dans ce document',
@@ -147,7 +146,6 @@ return [
     'certificate_ready' => 'Votre certificat Code Week est prêt. N’hésitez pas à le télécharger ou à le partager directement.',
     'view_your_certificate' => 'Visualisez votre certificat ici',
     'submit_event_and_report' => 'Signalez cet événement et demandez votre certificat Code Week.',
-    'report_and_claim' => 'Signaler un événement et demander un certificat'
-
+    'report_and_claim' => 'Signaler un événement et demander un certificat',
 
 ];

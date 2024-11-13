@@ -297,6 +297,79 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 "3" => "Zakódujte mě do nálady pro vyšší ročníky střední školy",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS voda",
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS voda je reakcí na potřebu řešit problém znečištění vody. Navzdory úsilí, které bylo v posledních letech vynaloženo, 2 miliardy lidí na světě stále nemají přístup k nezávadné pitné vodě. To znamená, že zdaleka není splněn 6. cíl udržitelného rozvoje (SDG) Agendy 2030, který stanoví, že všichni lidé by měli mít do roku 2030 přístup k bezpečně spravované vodě a sanitačním zařízením. Totéž platí pro 14. cíl udržitelného rozvoje „Život ve vodě“, jehož cílem je chránit a udržitelně využívat oceány, moře a mořské zdroje pro zajištění udržitelného rozvoje.",
+
+                "Tento školicí materiál se zaměřuje na důležitou a aktuální problematiku měření kvality vody a na nové znečišťující látky, které kvalitu vody ohrožují. Studenti budou mít příležitost zkoumat a hledat řešení skutečných problémů týkajících se vody a životního prostředí, což jim umožní rozvíjet dovednosti, jako je výzkum, kritické myšlení a řešení problémů.",
+
+                "Plány výuky zahrnují praktické a tvůrčí činnosti, jako je programování v jazyce Scratch, zasvěcení do strojového učení a umělé inteligence pomocí Learning Machine Learning a stavba řízených vozidel se stavebnicemi Lego pro odběr vzorků vody a analýzu pH vody. Tyto aktivity umožní studentům uplatnit své dovednosti a znalosti v praxi v interaktivním a hravém prostředí, což zvýší jejich motivaci a zájem o projekt.",
+
+                "Pro realizaci tohoto školicího materiálu navrhujeme vypracovat ve třídě tři aktivity, dokončit celý projekt a získat smysluplnější a motivující proces učení. Každou činnost však lze provádět samostatně."
+
+            ],
+            "activities" => [
+                "1" => "SOS voda s jazykem Scratch",
+                "2" => "SOS voda se strojovým učením",
+                "3" => "SOS voda s robotikou",
+            ]
+
+        ],
+        "20" => [
+            "title" => "Kódování prostřednictvím umění",
+            "author" => "od Marie Tsapary",
+            "text" => [
+                "Děti vyrůstají ve složitém světě, který se neustále technologicky vyvíjí, což vyžaduje inovativní vzdělávací přístupy pedagogů již od raného věku dítěte. Mezi tyto přístupy patří aktivity, které podporují informatické myšlení a programování již od útlého věku. Výzkumy naznačují, že cílené aktivity mohou účinně rozvíjet informatické myšlení dětí a jejich schopnosti řešit problémy a zároveň takové aktivity podporují jejich kreativní sebevyjádření prostřednictvím technologií.",
+                "Přestože nejčastější strategie výuky programování zahrnuje využití výukových robotů, existuje také možnost programování bez jejich použití (tzv. \"unplugged\" aktivity). Tento přístup může mít různé podoby a zahrnovat širokou škálu aktivit (pixel art, děti v roli robotů, využití podlahové mřížky atd.). Tyto aktivity jsou díky zážitkovému učení přínosné zejména pro menší děti, které se nejlépe učí hrou.",
+                "<strong> Learning Bit Kódování prostřednictvím umění</strong> sestává ze tří učebních plánů pro pedagogy pracující na nejnižším stupni vzdělávání a představuje aktivity bez nutnosti využití pomůcek, případně s využitím výukového robota Bee-Bot nebo sady Makey Makey. Pomocí stavebnice Makey Makey mají žáci možnost vytvářet hmatatelná rozhraní a zkoušet různá řešení, tvořit, experimentovat a vylepšovat všechny své dovednosti v prostředí společného učení.",
+                "Jak řekl Pablo Picasso: \"Každé dítě je umělec. Problém je jím zůstat, i když vyrostou.\" Umění poskytuje dětem příležitost kreativně ztvárnit a sdělit své myšlenky a pocity. V tomto Learning Bitu najdete inspirativní aktivity, které prostřednictvím umění a kódování rozvíjejí sociální dovednosti a dovednosti 21. století vašich žáků, podporují jejich kreativní sebevyjádření a rozvíjejí jejich představivost. Learning Bit Kódování prostřednictvím umění vám tak umožní rozvíjet kreativitu, spolupráci a řešení problémů vašich žáků prostřednictvím integrace umění a programování."
+            ],
+            "activities" => [
+                "1" => "Umělecké kódování: pro 4–6leté žáky mateřských škol.",
+                "2" => "Laboratoř kreativního kódu: pro 4–6leté žáky mateřských škol.",
+                "3" => "Dotykové plátno: vytváření interaktivních obrazů: pro 4–6leté žáky mateřských škol, s pokročilými dovednostmi."
+
+            ]
+        ],
+        "19" => [
+
+            "title" => "Kreativní laboratoř Scratch",
+            "author" => "Krzysztof Jaworski",
+            "text" => [
+
+                "Výuka programování v současnosti přesahuje rámec přípravy na programátorskou kariéru a překračuje hranice počítačové vědy. Mělo by se k ní přistupovat široce a měla by zahrnovat mezioborovou perspektivu a využívat programování jako nástroj pro učení a hru, který podporuje rozvoj budoucích dovedností.",
+
+                "Pro děti a mladé lidi je zásadní porozumět tomu, jak využívat digitální nástroje bezpečně, zodpovědně a efektivně. Potřebují chápat, jak tyto nástroje fungují, a vědět, jak s nimi komunikovat prostřednictvím programování. Tyto zkušenosti by také měly zahrnovat spolupráci s vrstevníky.",
+
+                "Školicí materiál <strong>Creative Scratch Laboratory</strong> zlepší kreativitu studentů, podpoří jejich zvídavost a z kódování učiní příjemnou zábavu.  Sestává ze tří výukových plánů pro studenty s různými programovacími dovednostmi. V rámci výukového plánu pro začátečníky studenti vytvoří postavu na papíře, importují ji do programu Scratch a animují ji pomocí vybraných bloků. V rámci výukového plánu střední úrovně se studenti naučí používat nástroj pro video postavy, graficky tvořit pomocí papíru a fixů a vytvořit mozaiku ve Scratchi s video postavami, otisky a obrázky. V rámci výukového plánu pro pokročilé studenti prozkoumají funkci rozpoznávání obličeje ve Scratchi, vyzkoušejí si manipulaci s grafikou postav a vytvoří mini divadlo s dialogy generovanými ve Scratchi.",
+
+            ],
+            "activities" => [
+                "1" => "Kreslení a animace postavy: pro začátečníky",
+                "2" => "Otisky: pro středně pokročilé studenty",
+                "3" => "Loutkové divadlo: pro pokročilé studenty",
+            ]
+        ],
+        "21" => [
+            "title" => "Tvorba a kódování",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspaces jsou živá centra, ve kterých se rozvíjí kreativita a vznikají praktické projekty. Při výběru vybavení pro makerspace se zaměřujeme na nástroje, jako jsou stavebnice Calliope mini, Microbit nebo Makey Makey, protože nabízejí širokou škálu možností vhodných pro žáky různého věku i úrovně dovedností. Tyto stavebnice podporují tvorbu kreativních projektů i mladšími dětmi, protože jsou pro ně k dispozici v programovacím jazyce založeném na blocích. Pro starší žáky pak lze pomocí těchto stavebnic vytvářet složitější projekty.",
+                "Prozkoumejte <strong>Learning Bit Tvorba a kódování</strong> , ponořte se do světa makerspaces a podpořte interdisciplinární dovednosti, jako je týmová práce a spolupráce. Zároveň tak podněcujte k inovacím a podporujte nadšení svých studentů!",
+                "Makey Makey je obvodová deska, která přeměňuje předměty každodenní potřeby na počítačové klávesy. Připojením předmětů k desce pomocí krokosvorek, které se pak propojí s počítačem pomocí kabelu USB (nebo iPadu s adaptérem pro fotoaparát), může Makey Makey otevírat a zavírat elektrické obvody mezi člověkem a vybraným předmětem. Tím vysílá elektrické signály, které počítač přijímá jako úhozy na klávesnici nebo kliknutí myší. Žáci tak mohou rozvíjet své kreativní nápady, jako jsou hudební nástroje, počítačové hry nebo interaktivní plakáty – možností je nepočítaně! Makey Makey a projekty představené v tomto Learning Bitu lze využít na základních i středních školách k výuce dovedností v oblastech, jako je mediální výchova, informatika, věda, fyzika, hudba, sport a mezioborové dovednosti, jako je například týmová práce a sociální dovednosti.",
+                "Vstupte do vzrušujícího světa Makey Makey a nechte ve své třídě zazářit kreativitu!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey ve spojení s hudbou: pro začátečníky.",
+                "2" => "Mluvící obrázky: pro středně pokročilé studenty.",
+                "3" => "Tvorba interaktivního plakátu: pro pokročilé studenty.",
+            ]
+        ]
+
 
     ],
     'download_video_script' => 'Stáhnout scénář videa',

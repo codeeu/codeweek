@@ -2,48 +2,48 @@
 
 namespace Tests\Feature\API;
 
+use App\Event;
 use Carbon\Carbon;
-use Exception;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Validation\ValidationException;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class EventsAPITest extends TestCase
+final class EventsAPITest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
-    public function it_should_return_events_in_hamburg()
+    #[Test]
+    public function it_should_return_events_in_hamburg(): void
     {
+        Event::factory()->count(3)->
         create(
-            'App\Event',
+
             [
                 'longitude' => 46.60675,
                 'latitude' => 13.84246,
-                'status' => 'APPROVED'
-            ],
-            3
+                'status' => 'APPROVED',
+            ]
+
         );
 
-        $badLatitudeEvent = create('App\Event', [
+        $badLatitudeEvent = \App\Event::factory()->create([
             'longitude' => 9.87985,
             'latitude' => 55.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
-        $badLongitudeEvent = create('App\Event', [
+        $badLongitudeEvent = \App\Event::factory()->create([
             'longitude' => 19.87985,
             'latitude' => 53.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
-        $hamburgEvent = create('App\Event', [
+        $hamburgEvent = \App\Event::factory()->create([
             'title' => 'Good Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
         $response = $this->json(
@@ -64,44 +64,46 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Good Event', $data[0]['title']);
     }
 
-    /** @test */
-    public function it_should_return_events_geolocalized_for_specific_year()
+    #[Test]
+    public function it_should_return_events_geolocalized_for_specific_year(): void
     {
+
+        Event::factory()->count(3)->
         create(
-            'App\Event',
+
             [
                 'longitude' => 46.60675,
-                'latitude' => 13.84246
-            ],
-            3
+                'latitude' => 13.84246,
+            ]
+
         );
 
-        $badLatitudeEvent = create('App\Event', [
+        $badLatitudeEvent = \App\Event::factory()->create([
             'longitude' => 9.87985,
             'latitude' => 55.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
-        $badLongitudeEvent = create('App\Event', [
+        $badLongitudeEvent = \App\Event::factory()->create([
             'longitude' => 19.87985,
             'latitude' => 53.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
-        $pastEvent = create('App\Event', [
+        $pastEvent = \App\Event::factory()->create([
             'title' => '2020 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2020)
+            'end_date' => Carbon::now()->setYear(2020),
         ]);
 
-        $goodEvent = create('App\Event', [
+        $goodEvent = \App\Event::factory()->create([
             'title' => '2021 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2021)
+            'end_date' => Carbon::now()->setYear(2021),
         ]);
 
         $response = $this->json(
@@ -115,23 +117,23 @@ class EventsAPITest extends TestCase
         $this->assertEquals('2020 Event', $data[0]['title']);
     }
 
-    /** @test */
-    public function it_should_return_events_geolocalized_for_current_year_by_default()
+    #[Test]
+    public function it_should_return_events_geolocalized_for_current_year_by_default(): void
     {
-        $pastEvent = create('App\Event', [
+        $pastEvent = \App\Event::factory()->create([
             'title' => '2020 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2020)
+            'end_date' => Carbon::now()->setYear(2020),
         ]);
 
-        $currentYearEvent = create('App\Event', [
+        $currentYearEvent = \App\Event::factory()->create([
             'title' => 'Current Year Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()
+            'end_date' => Carbon::now(),
         ]);
 
         $response = $this->json(
@@ -145,8 +147,8 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Current Year Event', $data[0]['title']);
     }
 
-    /** @test */
-    public function it_should_not_return_events_with_bad_year()
+    #[Test]
+    public function it_should_not_return_events_with_bad_year(): void
     {
         $this->withoutExceptionHandling();
         try {
@@ -156,28 +158,28 @@ class EventsAPITest extends TestCase
             );
         } catch (ValidationException $e) {
             $this->assertEquals(
-                'The year must be a number.',
+                'The year field must be a number.',
                 $e->getMessage()
             );
         }
     }
 
-    /** @test */
-    public function it_should_not_return_non_approved_events()
+    #[Test]
+    public function it_should_not_return_non_approved_events(): void
     {
-        $pendingEvent = create('App\Event', [
+        $pendingEvent = \App\Event::factory()->create([
             'title' => 'Pending Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
-            'status' => 'PENDING'
+            'status' => 'PENDING',
         ]);
 
-        $approvedEvent = create('App\Event', [
+        $approvedEvent = \App\Event::factory()->create([
             'title' => 'Approved Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()
+            'end_date' => Carbon::now(),
         ]);
 
         $response = $this->json(
@@ -191,8 +193,8 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Approved Event', $data[0]['title']);
     }
 
-    /** @test */
-    public function it_should_not_return_events_with_latitude_too_wide()
+    #[Test]
+    public function it_should_not_return_events_with_latitude_too_wide(): void
     {
         $this->withoutExceptionHandling();
 
@@ -207,8 +209,8 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Area is too wide', $errorMessage);
     }
 
-    /** @test */
-    public function it_should_not_return_events_with_longitude_too_wide()
+    #[Test]
+    public function it_should_not_return_events_with_longitude_too_wide(): void
     {
         $this->withoutExceptionHandling();
 
@@ -223,29 +225,29 @@ class EventsAPITest extends TestCase
         $this->assertEquals('Area is too wide', $errorMessage);
     }
 
-    /** @test */
-    public function it_should_return_german_events()
+    #[Test]
+    public function it_should_return_german_events(): void
     {
 
-        $frenchEvent = create('App\Event', [
+        $frenchEvent = \App\Event::factory()->create([
             'country_iso' => 'FR',
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2022)
+            'end_date' => Carbon::now()->setYear(2022),
         ]);
 
-        $germanEvent = create('App\Event', [
+        $germanEvent = \App\Event::factory()->create([
             'title' => 'Good Event',
             'status' => 'APPROVED',
             'country_iso' => 'DE',
-            'end_date' => Carbon::now()->setYear(2022)
+            'end_date' => Carbon::now()->setYear(2022),
         ]);
 
-        $importedGermanEvent = create('App\Event', [
+        $importedGermanEvent = \App\Event::factory()->create([
             'title' => 'Imported Event',
             'status' => 'APPROVED',
             'country_iso' => 'DE',
             'codeweek_for_all_participation_code' => 'cw22-bonn',
-            'end_date' => Carbon::now()->setYear(2022)
+            'end_date' => Carbon::now()->setYear(2022),
         ]);
 
         $response = $this->json(
@@ -264,14 +266,14 @@ class EventsAPITest extends TestCase
         $this->assertTrue($data[1]['imported_from_german_feeds']);
     }
 
-    /** @test */
-    public function it_should_get_one_event_details()
+    #[Test]
+    public function it_should_get_one_event_details(): void
     {
 
-        $event = create('App\Event', [
+        $event = \App\Event::factory()->create([
             'id' => 1456,
             'status' => 'APPROVED',
-            'title' => 'foobar'
+            'title' => 'foobar',
         ]);
 
         $response = $this->getJson('/api/event-detail/1456');
@@ -279,7 +281,4 @@ class EventsAPITest extends TestCase
         $this->assertEquals($response['data']['title'], $event->title);
 
     }
-
-
-
 }

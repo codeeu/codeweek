@@ -41,7 +41,7 @@ return [
         'mk' => 'makedonski',
         'me' => 'crnogorski',
         'rs' => 'srpski',
-        'tr' => 'Turski'
+        'tr' => 'Turski',
     ],
 
     'resources_local_title' => 'Programerski resursi iz',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Imate još pitanja?',
     'drop_us_a_line' => 'Pišite nam!',
     'get_in_touch' => 'STUPITE U KONTAKT',
-    'footer_msg' =>
-        'Samonikli pokret koji vode volonteri i koji podržava Evropska komisija.',
+    'footer_msg' => 'Samonikli pokret koji vode volonteri i koji podržava Evropska komisija.',
     'email' => 'Imejl',
     'display_email' => 'Prikaži imejl',
     'first_name' => 'Ime',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Izaberite datoteku',
     'learning_bits' => 'Moduli',
     'codeweek' => 'Nedelja programiranja',
-    'bring_codeweek_to_your_students' =>
-        'Organizujte Nedelju programiranja za svoje učenike',
+    'bring_codeweek_to_your_students' => 'Organizujte Nedelju programiranja za svoje učenike',
     'or' => 'Ili',
-    'newsletter' => 'Mesečne novosti'
+    'newsletter' => 'Mesečne novosti',
 ];

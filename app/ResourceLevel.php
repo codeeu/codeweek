@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * App\ResourceLevel
@@ -17,6 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceItem[] $items
  * @property-read int|null $items_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceLevel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceLevel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceLevel query()
@@ -28,6 +30,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceLevel wherePosition($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceLevel whereTeach($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceLevel whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class ResourceLevel extends Model
@@ -40,13 +43,13 @@ class ResourceLevel extends Model
         'teach' => false,
     ];
 
-    public function items()
+    public function items(): BelongsToMany
     {
-        return $this->belongsToMany('App\ResourceItem');
+        return $this->belongsToMany(\App\ResourceItem::class);
     }
 
-    public function users()
+    public function users(): BelongsToMany
     {
-        return $this->belongsToMany('App\User');
+        return $this->belongsToMany(\App\User::class);
     }
 }

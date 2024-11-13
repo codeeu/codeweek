@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Parema sirvimise võimaldamiseks kasutatakse veebisaidil küpsiseid',
-    'accept'=>'Ma nõustun küpsistega',
-    'refuse'=>'Ma ei nõustu küpsistega',
+    'accept' => 'Ma nõustun küpsistega',
+    'refuse' => 'Ma ei nõustu küpsistega',
     'cookies' => 'Küpsised',
-    'find_out_more_on'=>'Lugege täiendavalt, ',
+    'find_out_more_on' => 'Lugege täiendavalt, ',
     'how_we_use' => 'kuidas me küpsiseid kasutame ning kuidas saate muuta oma seadeid',
-
 
 ];

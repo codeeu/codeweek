@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Uporabnikom želimo omogočiti učinkovito brskanje, zato ta spletna stran uporablja piškotke.',
-    'accept'=>'Sprejmem piškotke',
-    'refuse'=>'Ne sprejmem piškotkov',
+    'accept' => 'Sprejmem piškotke',
+    'refuse' => 'Ne sprejmem piškotkov',
     'cookies' => 'Piškotki',
-    'find_out_more_on'=>'Več o ',
+    'find_out_more_on' => 'Več o ',
     'how_we_use' => 'načinu uporabe piškotkov in kako lahko spremenite svoje nastavitve',
-
 
 ];

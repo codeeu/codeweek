@@ -30,7 +30,7 @@ for your work.
 </p>
 
 <p>
-Share your participation and encourage others to join the movement by downloading the #CodeWeek Participant
+Share your participation and encourage others to join the movement by downloading the #EUCodeWeek Participant
 Badge:
 </p>
 
@@ -49,7 +49,7 @@ know about your involvement in EU Code Week!
 
 <div class="social-media">
 <span>
-Don’t miss the latest updates. Follow #CodeWeek on social media!
+Don’t miss the latest updates. Follow #EUCodeWeek on social media!
 </span>
 <a target="_blank" href="https://www.facebook.com/codeEU"><img src="{{asset('img/facebook_circle.png')}}"></a>
 <a target="_blank" href="https://twitter.com/search?q=%23codeweek&amp;f=realtime"><img

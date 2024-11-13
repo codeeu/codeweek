@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Zgłoś swoje wydarzenie #CodeWeek',
+    'title' => 'Zgłoś swoje wydarzenie #EUCodeWeek',
     'event_title' => 'Tytuł wydarzenia',
     'number_required' => 'Podaj informacje szacunkowe, nawet jeżeli nie masz dokładnych danych.',
     'phrase1' => 'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd, ',
@@ -25,27 +25,25 @@ return [
         'label' => 'Liczba uczestników',
     ],
     'average_participant_age' => [
-        'label'=>'Średni wiek uczestników',
+        'label' => 'Średni wiek uczestników',
     ],
     'percentage_of_females' => [
         'label' => 'Odsetek kobiet',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Kod uczestnictwa w Tygodniu kodowania dla wszystkich',
-        'help' => 'W tym miejscu możesz wprowadzić kod uczestnictwa w wyzwaniu „CodeWeek4All”, jeżeli taki posiadasz. Jeżeli nie bierzesz udziału, zignoruj to pole.'
+        'help' => 'W tym miejscu możesz wprowadzić kod uczestnictwa w wyzwaniu „CodeWeek4All”, jeżeli taki posiadasz. Jeżeli nie bierzesz udziału, zignoruj to pole.',
     ],
     'name_for_certificate' => [
         'label' => 'Imię i nazwisko na certyfikacie',
-        'help' => 'Zmień je na imię i nazwisko organizatora wydarzenia, który otrzyma certyfikat uczestnictwa w Tygodniu Kodowania. Używaj wyłącznie znaków ASCII (alfabetu łacińskiego). Litery zawierające akcenty, umlauty i podobne znaki nie są obsługiwane.'
+        'help' => 'Zmień je na imię i nazwisko organizatora wydarzenia, który otrzyma certyfikat uczestnictwa w Tygodniu Kodowania. Używaj wyłącznie znaków ASCII (alfabetu łacińskiego). Litery zawierające akcenty, umlauty i podobne znaki nie są obsługiwane.',
     ],
     'submit' => 'Prześlij zgłoszenie wydarzenia',
-    'thanks_page'=>[
-        'title'=>'Dziękujemy za zgłoszenie wydarzenia!',
-        'certificate_ready'=>'Twój certyfikat jest gotowy.',
-        'download_button'=>'Kliknij tutaj, aby go pobrać.',
-        'back_events'=>'Powrót do wydarzenia'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Dziękujemy za zgłoszenie wydarzenia!',
+        'certificate_ready' => 'Twój certyfikat jest gotowy.',
+        'download_button' => 'Kliknij tutaj, aby go pobrać.',
+        'back_events' => 'Powrót do wydarzenia',
+    ],
 
 ];

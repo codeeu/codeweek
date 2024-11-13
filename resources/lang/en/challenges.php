@@ -15,14 +15,14 @@ return [
         'example' => 'Example',
         'written-by' => [
             'This challenge has been written by',
-            'and is part of the'
+            'and is part of the',
         ],
         'teachers' => 'Teachers',
         'students' => 'Students',
         'beginner' => 'Beginner',
         'intermediate' => 'Intermediate',
         'advanced' => 'Advanced',
-        '1-hour' => '1 hour'
+        '1-hour' => '1 hour',
     ],
     'main' => [
         'During EU Code Week, 9 - 24 October 2021, we invite you to do one or more of the EU Code Week challenges.',
@@ -31,14 +31,14 @@ return [
         'Choose one or several challenges, adapt it to your group or your classroom, and share the results on Instagram to encourage even more colleagues and friends to engage in the Code Week fun!',
         'Click on the challenge to find out more about it:',
         'Who can join?',
-        'Everyone (schools, teachers, libraries, code clubs, businesses, public authorities) is invited to celebrate EU Code Week 2021 by completing a #CodeWeekChallenge.',
+        'Everyone (schools, teachers, libraries, code clubs, businesses, public authorities) is invited to celebrate EU Code Week 2021 by completing a #EUCodeWeekChallenge.',
         'How to participate in the EU Code Week 2021 Challenge?',
         'Select a challenge you would like to complete.',
         'Team up your participants in pairs or groups. Teamwork and collaboration are key for the  successful completion of a challenge whether you organise your activity in-person or online as a national or international collaborative activity.',
         'Share your challenge',
         'Would you like to win some Code Week goodies? If yes, then let your work go viral!',
         'After you have completed the challenge, share it on Instagram.',
-        "Winners will be selected every day during Code Week between 9 – 24 October and announced on our Instagram channel, so don't forget to check your notifications regularly."
+        "Winners will be selected every day during Code Week between 9 – 24 October and announced on our Instagram channel, so don't forget to check your notifications regularly.",
     ],
     'share' => [
         'How to share your challenge(s) on Instagram?',
@@ -48,14 +48,14 @@ return [
         'Add a screenshot of your work',
         'Write an engaging description',
         'Make sure to specify ‘Link in Bio’',
-        'Add the #CodeWeekChallenge',
+        'Add the #EUCodeWeekChallenge',
         'Mention and tag @CodeWeekEU',
         'You prefer to share your challenge(s) on Facebook?',
         'EU Code Week will pin a new Challenge post on their',
         'Facebook page',
         'every day and will select the winner for the prize from the comments under the  post.',
         'How does it work?',
-        'Simply comment on the post with the link to your work.'
+        'Simply comment on the post with the link to your work.',
     ],
     'share-box' => [
         'Share the link to your work in your',
@@ -64,24 +64,24 @@ return [
         'Edit Profile',
         'button on your Instagram and add the link to your work in the Website field. After that, create a new post, add a screenshot of your work, write ',
         'Link in Bio',
-        'add the hashtag #CodeWeekChallenge and mention @CodeWeekEU',
+        'add the hashtag #EUCodeWeekChallenge and mention @CodeWeekEU',
         'You prefer to share your Challenge(s) on',
         'EU Code Week will pin',
         'a new Challenge post on their',
         'Facebook page',
         'You then just need to comment on the post with the link to your work',
-        "Winners will be selected and offered Code Week goodies every day during Code Week between 9 – 24 October and announced on our Instagram and Facebook channels, so don't forget to check your notifications regularly"
+        "Winners will be selected and offered Code Week goodies every day during Code Week between 9 – 24 October and announced on our Instagram and Facebook channels, so don't forget to check your notifications regularly",
     ],
     'take-part' => [
         'Why take part in an EU Code Week challenge?',
         'To engage in problem solving and coding activities.',
         'To work together with peers.',
-        'To spread the message on the importance of coding.'
+        'To spread the message on the importance of coding.',
     ],
     'download' => [
         'Click',
         'here',
-        'to download this challenge as a word document'
+        'to download this challenge as a word document',
     ],
     'bingo' => [
         'Complete all the Challenges',
@@ -94,6 +94,6 @@ return [
         'Make sure to use the',
         '',
         '',
-        ''
-    ]
+        '',
+    ],
 ];

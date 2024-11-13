@@ -6,10 +6,9 @@ return [
         'author' => 'Tim Europskog tjedna programiranja',
         'purposes' => [
             'Interaktivne zagonetke programiranja',
-            'Programirajući osmislite dijaloge između robota za čavrljanje i korisnika'
+            'Programirajući osmislite dijaloge između robota za čavrljanje i korisnika',
         ],
-        'description' =>
-            'Programirajte razgovor između robota za čavrljanje i korisnika koji pokušava riješiti zagonetku. Pokušajte izraditi robota za čavrljanje koji može čavrljati poput stvarne osobe. Umjesto zagonetke možete osmisliti dijalog između robota za čavrljanje i korisnika.',
+        'description' => 'Programirajte razgovor između robota za čavrljanje i korisnika koji pokušava riješiti zagonetku. Pokušajte izraditi robota za čavrljanje koji može čavrljati poput stvarne osobe. Umjesto zagonetke možete osmisliti dijalog između robota za čavrljanje i korisnika.',
         'instructions' => [
             'Osmislite zagonetku',
             'Prijavite se na',
@@ -18,27 +17,26 @@ return [
             'Za pisanje svoje zagonetke upotrijebite blokove ili tekstni način rada',
             'Umjesto toga možete upotrijebiti',
             'ovaj kôd',
-            'i prilagoditi ga svojoj zagonetki ili u izborniku možete odabrati mogućnost Answering a riddle (Odgovor na zagonetku) i urediti je'
+            'i prilagoditi ga svojoj zagonetki ili u izborniku možete odabrati mogućnost Answering a riddle (Odgovor na zagonetku) i urediti je',
         ],
         'example' => 'Pogledajte ovaj primjer zagonetke.',
         'more' => [
             'Ovaj kôd prilagođen je iz aktivnosti na sučelju Pencil Code',
-            'Answering the Riddle'
-        ]
+            'Answering the Riddle',
+        ],
     ],
 
     'paper-circuit' => [
-        'title' =>
-            'Isključite se i programirajte: Izradite strujni krug na papiru',
+        'title' => 'Isključite se i programirajte: Izradite strujni krug na papiru',
         'author' => 'Tim Europskog tjedna programiranja',
         'purposes' => [
             'Poboljšajte kreativnost',
-            'Razvijte vještine rješavanja problema'
+            'Razvijte vještine rješavanja problema',
         ],
         'description' => [
             'Nacrtajte bilo koji predmet po želji. To može biti noćno nebo, bubamara, robot, božićno drvce ili bilo što čega se sjetite. Svoj projekt slobodno personalizirajte vizualima Europskog tjedna programiranja: možete istražiti ',
             'Komplet alata Europskog tjedna programiranja za nastavnike',
-            'i preuzmite bilo koji željeni logotip ili vizual. Možete čak i osmisliti pozivnicu na Europski tjedan programiranja na temu papirnatog strujnog kruga, Svojem krugu dodajte motivacijsku poruku da biste potaknuli druge nastavnike da se pridruže Tjednu programiranja i/ili da posjete web-mjesto namijenjeno školama.'
+            'i preuzmite bilo koji željeni logotip ili vizual. Možete čak i osmisliti pozivnicu na Europski tjedan programiranja na temu papirnatog strujnog kruga, Svojem krugu dodajte motivacijsku poruku da biste potaknuli druge nastavnike da se pridruže Tjednu programiranja i/ili da posjete web-mjesto namijenjeno školama.',
         ],
         'instructions' => [
             'Nacrtajte predmet i odlučite koji će njegovi dijelovi biti osvijetljeni (npr. zvijezde).',
@@ -47,7 +45,7 @@ return [
             'Na drugoj strani papira nacrtajte a + i a-liniju. Provjerite je li dulji dio LED naljepnice u strujnom krugu povezan s „+” stranom baterije, a kraći s „-” stranom baterije.',
             'Na linije postavite bakrenu vrpcu.',
             'Presavijte papir tako da LED bude osvijetljen kada papir pokrije bateriju. Da biste osigurali dobar kontakt s bakrenom trakom, možete upotrijebiti spajalicu.',
-            'Fotografirajte svoj papirnati strujni krug i podijelite ga na Instagramu. Dodajte objašnjenje zašto mislite da je sudjelovanje u ovoj inicijativi korisno.  '
+            'Fotografirajte svoj papirnati strujni krug i podijelite ga na Instagramu. Dodajte objašnjenje zašto mislite da je sudjelovanje u ovoj inicijativi korisno.  ',
         ],
         'example' => 'Pogledajte neke primjere papirnatih strujnih krugova',
         'materials' => [
@@ -56,8 +54,8 @@ return [
             'gumbasta baterija',
             'bakrena traka',
             'LED naljepnice za strujni krug',
-            'spajalica'
-        ]
+            'spajalica',
+        ],
     ],
 
     'dance' => [
@@ -65,10 +63,9 @@ return [
         'author' => 'Tim Europskog tjedna programiranja',
         'purposes' => [
             'Naučiti osnovne pojmove u programiranju',
-            'Naučiti kako animirati likove'
+            'Naučiti kako animirati likove',
         ],
-        'description' =>
-            'U ovom izazovu osmislit ćete skup likova koji će zajedno plesati. U ugrađenoj biblioteci multimedijskih sadržaja izaberite likove i glazbene isječke ili osmislite svoje. Animirat ćete likove da plešu i međusobno razgovaraju.',
+        'description' => 'U ovom izazovu osmislit ćete skup likova koji će zajedno plesati. U ugrađenoj biblioteci multimedijskih sadržaja izaberite likove i glazbene isječke ili osmislite svoje. Animirat ćete likove da plešu i međusobno razgovaraju.',
         'instructions' => [
             'Prijavite se na',
             'kao nastavnik. Izradite učeničke račune i podijelite ih sa svojim učenicima. Druga je mogućnost da podijelite razredni kôd kako bi se vaši učenici registrirali koristeći se adresama svoje školske e-pošte. Ako si učenik, možeš se pridružiti kao učenik, ali od tebe će se tražiti da navedeš adresu e-pošte svojih roditelja kako bi oni mogli odobriti tvoj račun.',
@@ -81,13 +78,13 @@ return [
             'Kliknite na svakog glumca i animirajte ga dodavanjem sljedećih blokova',
             'Dodajte',
             'blok govora',
-            'da bi vaši glumci mogli međusobno razgovarati. Promijenite oblik govornih oblačića, font i veličinu svojeg teksta'
+            'da bi vaši glumci mogli međusobno razgovarati. Promijenite oblik govornih oblačića, font i veličinu svojeg teksta',
         ],
         'example' => [
             'Pogledajte',
             'ovaj primjer',
-            'robota koji plešu. Slobodno ga iskoristite i kombinirajte.'
-        ]
+            'robota koji plešu. Slobodno ga iskoristite i kombinirajte.',
+        ],
     ],
 
     'compose-song' => [
@@ -96,10 +93,9 @@ return [
         'purposes' => [
             'Naučiti programirati kroz glazbu',
             'Razlikovati glazbene žanrove i instrumente',
-            'Komponirati pjesmu kombiniranjem zvučnih isječaka'
+            'Komponirati pjesmu kombiniranjem zvučnih isječaka',
         ],
-        'description' =>
-            'U ovom ćete izazovu programskim jezikom komponirati glazbenu izvedbu. Možete iskoristiti ugrađene zvučne isječke ili možete snimiti svoj isječak i pomiješati ih da biste komponirali glazbenu izvedbu. Učitajte svoj kôd u radnu stanicu Digital Audio Workstation i poslušajte glazbu koju ste programirali. Igrajte se s različitim zvukovima i efektima da biste mijenjali svoj glazbeni broj.',
+        'description' => 'U ovom ćete izazovu programskim jezikom komponirati glazbenu izvedbu. Možete iskoristiti ugrađene zvučne isječke ili možete snimiti svoj isječak i pomiješati ih da biste komponirali glazbenu izvedbu. Učitajte svoj kôd u radnu stanicu Digital Audio Workstation i poslušajte glazbu koju ste programirali. Igrajte se s različitim zvukovima i efektima da biste mijenjali svoj glazbeni broj.',
         'instructions' => [
             'Prijavite se na',
             'Kliknite ovdje i izradite skriptu',
@@ -126,13 +122,13 @@ return [
             'Write’ (Zapiši)',
             'U zagradama zapišite broj zapisa, VOLUME, GAIN, razinu glasnoće, mjeru u kojoj počinje, razinu i mjeru u kojoj završava',
             'Ovo je primjer učinka postupnog uključivanja',
-            'a ovo postupnog isključivanja'
+            'a ovo postupnog isključivanja',
         ],
         'example' => [
             'Listen to (Poslušaj)',
             'primjer pjesme koja je programirana u okruženju Earsketch',
-            'Možete uvesti kôd i urediti ga'
-        ]
+            'Možete uvesti kôd i urediti ga',
+        ],
     ],
     'sensing-game' => [
         'title' => 'Izradite senzornu videoigricu',
@@ -140,10 +136,9 @@ return [
         'purposes' => [
             'Programirati animirane predmete',
             'Razviti razumijevanje kako se digitalna animacija kontrolira fizičkim pokretom',
-            'Komponirati pjesmu kombiniranjem zvukovnih isječaka'
+            'Komponirati pjesmu kombiniranjem zvukovnih isječaka',
         ],
-        'description' =>
-            'U ovom izazovu kreirat ćete jednostavnu igru u kojoj videokamera služi kao senzor koji otkriva pokrete, što znači da ćete svoju animaciju moći kontrolirati fizičkim pokretom. Zadatak u ovoj igri jest u 30 sekundi skupiti što više balončića Europskog tjedna programiranja. Umjesto da skupljate balončiće, možete kreirati igru u kojoj lovite lik ili rukama bušite balončiće.',
+        'description' => 'U ovom izazovu kreirat ćete jednostavnu igru u kojoj videokamera služi kao senzor koji otkriva pokrete, što znači da ćete svoju animaciju moći kontrolirati fizičkim pokretom. Zadatak u ovoj igri jest u 30 sekundi skupiti što više balončića Europskog tjedna programiranja. Umjesto da skupljate balončiće, možete kreirati igru u kojoj lovite lik ili rukama bušite balončiće.',
         'instructions' => [
             'Prijavite se na',
             'Kliknite',
@@ -162,68 +157,63 @@ return [
             'Change Timer by -1 (Brojač vremena mijenjaj za-1)',
             'Izradite novi grafički prikaz',
             'Game Over (Kraj igre)',
-            'da biste završili igru. Grafički prikaz možete kreirati i s nazivom svoje igre, npr. Skupi sve balončiće Europskog tjedna programiranja.'
+            'da biste završili igru. Grafički prikaz možete kreirati i s nazivom svoje igre, npr. Skupi sve balončiće Europskog tjedna programiranja.',
         ],
         'example' => [
             'Odigrajte senzornu igru Skupi sve balončiće Europskog tjedna programiranja. Slobodno kombinirajte',
-            'ovaj projekt'
-        ]
+            'ovaj projekt',
+        ],
     ],
 
     'calming-leds' => [
-        'title' =>
-            'LED lampice za smirivanje: izradite jednostavan uređaj uz micro:bit',
+        'title' => 'LED lampice za smirivanje: izradite jednostavan uređaj uz micro:bit',
         'author' => 'Obrazovna zaklada Micro:bit',
         'duration' => '20 minuta',
         'materials' => [
             'micro:bit uređaj i baterije (ako su dostupne)',
             'prijenosno računalo ili tablet na kojemu možete otvoriti Microsoft MakeCode i Youtube',
-            'microbit.org za resurse za aktivnosti'
+            'microbit.org za resurse za aktivnosti',
         ],
-        'description' =>
-            'Učenici izrađuju digitalni uređaj s pomoću LED lampica koji im može pomoći da reguliraju svoje disanje i budu smireniji. Od njih će se tražiti da napišu neki jednostavan kôd, pri čemu će istraživati animacije i nizove.',
+        'description' => 'Učenici izrađuju digitalni uređaj s pomoću LED lampica koji im može pomoći da reguliraju svoje disanje i budu smireniji. Od njih će se tražiti da napišu neki jednostavan kôd, pri čemu će istraživati animacije i nizove.',
         'instructions' => [
             'Cilj je izraditi funkcionalan uređaj s LED lampicama koji možete upotrebljavati da biste regulirali disanje. Uređaj se može izraditi na fizičkoj ploči micro:bit ili na simulatoru u programu za uređivanje MakeCode.',
             'Izazov se može dovršiti upotrebom programa za uređivanje MakeCode i zapisivanjem jednostavnog niza kodova, kako je prikazano u videozapisu / na snimci zaslona.',
             'Da bi izazov bio zanimljiviji, učenici mogu istražiti različite animacije i kreativno se izraziti s pomoću animacije za koju bi voljeli da im pomaže da budu mirni ili sretni.',
             'Više informacija i videozapis s uputama na',
-            'ovoj poveznici'
+            'ovoj poveznici',
         ],
-        'example' =>
-            'Posjetite ovu stranicu, pročitajte upute i pogledajte videozapise dovršenih izazova i kako programirati',
+        'example' => 'Posjetite ovu stranicu, pročitajte upute i pogledajte videozapise dovršenih izazova i kako programirati',
         'purposes' => [
             'Dizajnirati jednostavan digitalni artefakt čija je svrha da pomogne',
             'Istražiti nizove i animacije i način njihova rada',
             'Testirati jednostavan kôd i ispraviti pogreške u njemu',
-            'Ponoviti dizajn uz brže ili sporije animacije'
-        ]
+            'Ponoviti dizajn uz brže ili sporije animacije',
+        ],
     ],
     'computational-thinking-and-computational-fluency' => [
         'title' => 'Računalno razmišljanje i računalna fluentnost uz ScratchJr',
-        'author' =>
-            'Stamatis Papadakis – grčki ambasador Europskog tjedna programiranja',
+        'author' => 'Stamatis Papadakis – grčki ambasador Europskog tjedna programiranja',
         'purposes' => [
             'Upoznati se s novim naredbama i sučeljem.',
             'Izraditi jednostavne programe s jednostavnim uzročno-posljedičnim naredbama.',
-            'Provesti postupak jednostavnog ispravljanja pogrešaka metodom pokušaja i pogrešaka.'
+            'Provesti postupak jednostavnog ispravljanja pogrešaka metodom pokušaja i pogrešaka.',
         ],
-        'description' =>
-            'U ovom izazovu djeca će s pomoću aplikacije ScratchJr u svoje projekte integrirati pojmove računalnog razmišljanja da bi njihove priče bile atraktivnije, uzbudljivije i emocionalnije.',
+        'description' => 'U ovom izazovu djeca će s pomoću aplikacije ScratchJr u svoje projekte integrirati pojmove računalnog razmišljanja da bi njihove priče bile atraktivnije, uzbudljivije i emocionalnije.',
         'instructions' => [
             'Djeca ne moraju znati čitati i pisati da bi se koristila aplikacijom ScratchJr. Sve upute i opcije izbornika prikazane su i simbolima i bojama. Izazov se može provoditi u učionici, laboratoriju ili čak na otvorenome jer nije potrebna veza s internetom.',
-            'Grad služi kao pozadina na kojoj djeca upotrebljavaju blokove za programiranje da bi automobil vozio po gradu.'
+            'Grad služi kao pozadina na kojoj djeca upotrebljavaju blokove za programiranje da bi automobil vozio po gradu.',
         ],
         'example' => [
             'Djeca mogu upotrebljavati blokove zvukova i kretanja te blokove ponovnog pokretanja da bi likovi plesali.',
-            'Djeca biraju pozadinu i lika te s pomoću bloka kretanja pokreću automobil koji vozi po gradu. Djeca mogu upotrijebiti blok brzine da ubrzaju ili uspore svoj lik.'
+            'Djeca biraju pozadinu i lika te s pomoću bloka kretanja pokreću automobil koji vozi po gradu. Djeca mogu upotrijebiti blok brzine da ubrzaju ili uspore svoj lik.',
         ],
         'materials' => [
             'Besplatna aplikacija',
             'radi na brojnim operativnim sustavima i na različitim pametnim uređajima',
             'Web-mjesto',
-            'također nudi mnoštvo besplatnog edukativnog materijala'
+            'također nudi mnoštvo besplatnog edukativnog materijala',
         ],
-        'duration' => '90 minuta'
+        'duration' => '90 minuta',
     ],
     'ai-hour-of-code' => [
         'title' => 'Sat programiranja uz umjetnu inteligenciju',
@@ -231,85 +221,77 @@ return [
         'purposes' => [
             'Osmisliti rješenja za programiranje koja uključuju nizove, događaje, petlje i kondicionale',
             'Razložiti korake potrebne za rješavanje problema u precizni niz uputa',
-            'Istražiti pojmove u programiranju'
+            'Istražiti pojmove u programiranju',
         ],
-        'description' =>
-            'Selu prijeti požar, morate programirati rješenje! Upoznajte svojeg pomagača u programiranju, agenta Minecrafta, a potom programirajte agenta da se kreće šumom i prikuplja podatke. Ti će mu podaci pomoći da predvidi gdje će buknuti požari. Potom programirajte agenta da spriječi širenje požara, spasi selo i ponovo oživi šumu. Naučite osnove programiranja i istražite stvaran primjer umjetne inteligencije (UI).',
+        'description' => 'Selu prijeti požar, morate programirati rješenje! Upoznajte svojeg pomagača u programiranju, agenta Minecrafta, a potom programirajte agenta da se kreće šumom i prikuplja podatke. Ti će mu podaci pomoći da predvidi gdje će buknuti požari. Potom programirajte agenta da spriječi širenje požara, spasi selo i ponovo oživi šumu. Naučite osnove programiranja i istražite stvaran primjer umjetne inteligencije (UI).',
         'instructions' => 'Ovdje preuzmite nastavni plan',
         'materials' => [
             'Instalirajte Minecraft: obrazovno izdanje',
             'Nakon što instalirate Minecraft: obrazovno izdanje, izazov vas čeka na',
-            'ovom web-mjestu'
-        ]
+            'ovom web-mjestu',
+        ],
     ],
     'create-a-dance' => [
         'title' => 'Osmislite ples uz Odu kodu!',
-        'purposes' =>
-            'Vježbati programiranje na zabavan način i razviti osjećaj povezanosti sa zajednicom Europskog tjedna programiranja.',
+        'purposes' => 'Vježbati programiranje na zabavan način i razviti osjećaj povezanosti sa zajednicom Europskog tjedna programiranja.',
         'description' => [
             'Osmislite ples uz Odu kodu! S pomoću tutorijala',
             'Dance Party tutorial (Tutorijal za plesnu zabavu)',
-            'programirajte ples uz Odu kodu. Službena himna Europskog tjedna programiranja nalazi se na popisu odabranih pjesama za plesnu zabavu.'
+            'programirajte ples uz Odu kodu. Službena himna Europskog tjedna programiranja nalazi se na popisu odabranih pjesama za plesnu zabavu.',
         ],
         'instructions' => [
             'Upute su prikazane u obliku videozapisa u',
             'tutorijalu',
-            'a napisane su i na početku svake razine'
+            'a napisane su i na početku svake razine',
         ],
         'example' => 'Učenički uradci objavljuju se na sljedećoj stranici ',
-        'materials' => 'Tutorijal Code.org tutorial'
+        'materials' => 'Tutorijal Code.org tutorial',
     ],
     'create-a-simulation' => [
         'title' => 'Izradite simulaciju!',
         'purposes' => [
             'Naučiti o simulacijama uz uvođenje sljedećih varijabli: stvaranje krda, stope oporavka, nošenje maski i cjepiva.',
-            'Aktivirati postojeće znanje o epidemijama virusa u stvarnom svijetu koje će se primijeniti na fiktivan scenarij.'
+            'Aktivirati postojeće znanje o epidemijama virusa u stvarnom svijetu koje će se primijeniti na fiktivan scenarij.',
         ],
-        'description' =>
-            'Napišite kôd za izradu i pokretanje vlastite simulacije epidemije virusa u Čudovišnom gradu. Naučite programirati i predviđati što će se dogoditi susjedima Čudovišnoga grada.',
+        'description' => 'Napišite kôd za izradu i pokretanje vlastite simulacije epidemije virusa u Čudovišnom gradu. Naučite programirati i predviđati što će se dogoditi susjedima Čudovišnoga grada.',
         'instructions' => [
             'Upute su prikazane u obliku videozapisa u',
             'tutorijalu',
-            'a napisane su i na početku svake razine'
+            'a napisane su i na početku svake razine',
         ],
-        'example' =>
-            'Kad završite, svoju simulaciju možete podijeliti s drugima. Podijelite svoju poruku o tome što mislite da možemo učiniti kako bismo drugima pomogli da ostanu zdravi kad virus zahvati grad.',
-        'materials' => 'Tutorijal Code.org tutorial'
+        'example' => 'Kad završite, svoju simulaciju možete podijeliti s drugima. Podijelite svoju poruku o tome što mislite da možemo učiniti kako bismo drugima pomogli da ostanu zdravi kad virus zahvati grad.',
+        'materials' => 'Tutorijal Code.org tutorial',
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Izradite vlastito umjetničko djelo!',
         'audience' => 'Prihvatljivo za sve dobne skupine',
-        'purpose' =>
-            'Vizualno upoznati računalne pojmove i potaknuti kreativnost',
-        'description' =>
-            'Izradite vlastito umjetničko djelo uz umjetnika! Uz blokove koda pomogni svojem umjetniku da izradi jedinstveno umjetničko djelo.',
+        'purpose' => 'Vizualno upoznati računalne pojmove i potaknuti kreativnost',
+        'description' => 'Izradite vlastito umjetničko djelo uz umjetnika! Uz blokove koda pomogni svojem umjetniku da izradi jedinstveno umjetničko djelo.',
         'instructions' => 'Upute su napisane na početku svake razine',
-        'example' =>
-            'Primjeri umjetnika mogu se vidjeti ispod crteža na ovoj stranici',
-        'materials' => ['Prvu razinu tutorijala možete pronaći', 'OVDJE']
+        'example' => 'Primjeri umjetnika mogu se vidjeti ispod crteža na ovoj stranici',
+        'materials' => ['Prvu razinu tutorijala možete pronaći', 'OVDJE'],
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'Prve informatičke aktivnosti izvan mreže',
         'purposes' => [
             'Pružiti podršku učenicima koji uče od kuće',
-            'Svakome omogućiti odmor od ekrana'
+            'Svakome omogućiti odmor od ekrana',
         ],
-        'description' =>
-            'Prve informatičke aktivnosti izvan mreže skup je aktivnosti u kojima se učenici upoznaju s informatičkim pojmovima bez upotrebe računala. Ovu lekciju osmislili smo kako bismo pokazali da informatika podrazumijeva mnogo više od samog koda.',
+        'description' => 'Prve informatičke aktivnosti izvan mreže skup je aktivnosti u kojima se učenici upoznaju s informatičkim pojmovima bez upotrebe računala. Ovu lekciju osmislili smo kako bismo pokazali da informatika podrazumijeva mnogo više od samog koda.',
         'instructions' => [
             'Knjižica sa svim aktivnostima na engleskom jeziku nalazi se na ovoj',
             'poveznici',
             'a nastavni plan na engleskom jeziku nalazi se na ovoj poveznici',
             'Aktivnosti u ovoj lekciji mogu se izvršavati pojedinačno i bilo kojim redoslijedom',
-            'Nastavnik može fotografirati proces učenja i fotografiju podijeliti na Instagramu uz oznaku #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Nastavnik može fotografirati proces učenja i fotografiju podijeliti na Instagramu uz oznaku #EUCodeWeekChallengeGoogle #GrowWithGoogle',
         ],
         'materials' => [
             'Uz knjižicu s aktivnostima za neke aktivnosti bit će potrebni dodatni materijali.',
             'Mali žetoni za brojanje (poput suhog graha) koji će se upotrebljavati na karti Network a Neighborhood (Umreži susjedstvo).',
             'Škare za izrezivanje kola sa šiframa za aktivnost Send a Secret Message (Slanje tajne poruke).',
             'Karton i ljepilo kako bi kolo sa šiframa za aktivnost Send a Secret Message (Slanje tajne poruke) bilo čvršće.',
-            'Čavlić, čačkalica ili izravnana spajalica za spajanje kola sa šiframa za aktivnost Send a Secret Message (Slanje tajne poruke).'
-        ]
+            'Čavlić, čačkalica ili izravnana spajalica za spajanje kola sa šiframa za aktivnost Send a Secret Message (Slanje tajne poruke).',
+        ],
     ],
     'family-care' => [
         'title' => 'Skrb za obitelj',
@@ -321,14 +303,14 @@ return [
             'Doživjeti probleme kao prilike i razviti kreativna rješenja;',
             'Primijeniti programiranje za inovativnu realizaciju svojih rješenja;',
             'Osmisliti plakate i predstaviti svoja rješenja drugima;',
-            'Iskoristiti društvene mreže kako bi vaši projekti imali učinak.'
+            'Iskoristiti društvene mreže kako bi vaši projekti imali učinak.',
         ],
         'description' => [
             'Što vam padne napamet kad razgovaramo o domu? Lijepa kuća? Bogata večera koju su roditelji pripremili? Tajno mjesto samo za vas? Toplina doma daje snagu našem tijelu i duhu i pokreće nas, baš kao što i gorivo pokreće automobil. Uza svu užurbanost i strku modernog doba, roditeljski posao nikad ne staje. Kada se družiš s prijateljima, ne možeš ostaviti svoje mace same. No kako se brinuti o svojem društvu kada ste razdvojeni? Tema je ovog izazova',
             'Skrb za obitelj',
             'U sklopu ove teme učenike se potiče da razviju ideju o tome kako prosljeđivati ljubav i skrb preko programiranja i hardvera. Razmislite o sljedećim pitanjima',
             'Koliko članova obitelji živi u vašem kućanstvu? Tko su oni? Jeste li se u suživotu s njima susreli s problemima? Kakva im je skrb potrebna?',
-            'Poznajete li nekoga kome obiteljska skrb nedostaje više nego drugim članovima vaše zajednice? Kako možete pomoći tim osobama?'
+            'Poznajete li nekoga kome obiteljska skrb nedostaje više nego drugim članovima vaše zajednice? Kako možete pomoći tim osobama?',
         ],
         'instructions' => [
             'Raspravljajte i iznesite što više ideja na temu skrbi za obitelj te istražite tu temu',
@@ -337,7 +319,7 @@ return [
             'Odaberite jedno rješenje',
             'Programirajte i razvijte strukturu',
             'Osmislite plakat za predstavljanje svojeg projekta',
-            'Izložite ga svojim nastavnicima i članovima obitelji'
+            'Izložite ga svojim nastavnicima i članovima obitelji',
         ],
         'example' => ['Ovdje možete pronaći nekoliko primjera, kao', 'i ovdje'],
         'materials' => [
@@ -349,23 +331,21 @@ return [
             'Tim koji sudjeluje mora se usredotočiti na određenu temu i razraditi rješenje kroz programiranje softvera i razvoj hardvera.',
             'Učenike se potiče da izazov dovrše tijekom Tjedna programiranja, da ga predstave na međunarodnoj razini kako bi komunicirali s drugim učenicima i osvojili nagrade.',
             'Više informacija potražite na stranici:',
-            'ili nam se javite'
-        ]
+            'ili nam se javite',
+        ],
     ],
     'virtual-flower-field' => [
         'title' => 'Zasadite svoje virtualno polje cvijeća',
-        'author' =>
-            'Jadga Huegle – trenerica u inicijativi Meet and Code i članica tima SAP Snap! team',
+        'author' => 'Jadga Huegle – trenerica u inicijativi Meet and Code i članica tima SAP Snap! team',
         'duration' => '30 – 60 minuta',
         'purposes' => [
             'Upoznati se s programiranjem na primjeru jednostavnog, ali poticajnog projekta.',
             'Naučiti da programiranje može biti i umjetničko te da programiranjem mogu nastati prekrasni rezultati.',
             'Učiniti jesen ljepšom uz šareno cvijeće i Europski tjedan programiranja',
             'Upoznati se s raznolikošću cvijeća koje postoji. ',
-            'Pridonijeti ciljevima održivog razvoja(COR-ovima), posebno s ciljem održivog razvoja 13 – Očuvanje klime, osmišljavanjem događanja programiranja kojima se unapređuje znanje o očuvanju klime podizanjem svijesti o toj temi. '
+            'Pridonijeti ciljevima održivog razvoja(COR-ovima), posebno s ciljem održivog razvoja 13 – Očuvanje klime, osmišljavanjem događanja programiranja kojima se unapređuje znanje o očuvanju klime podizanjem svijesti o toj temi. ',
         ],
-        'description' =>
-            'Razviti program u Snapu!kojim se na polju virtualnog cvijeća sade različite vrste cvijeća različitog broja latica. ',
+        'description' => 'Razviti program u Snapu!kojim se na polju virtualnog cvijeća sade različite vrste cvijeća različitog broja latica. ',
         'instructions' => [
             'Inspiraciju za ovaj izazov možete pronaći u',
             'ovom videozapisu',
@@ -374,25 +354,23 @@ return [
             '',
             'Izazov se može provesti programiranjem virtualnog polja cvijeća u Snapu!(ili Scratchu) i objavom snimke zaslona ili fotografije s rezultatom na mreži. ',
             'Polje cvijeća treba sadržavati različite vrste cvijeća različitog broja latica. U idealnom slučaju, cvijeće je programirano, što znači da je izrađeno opetovanim utiskivanjem i okretanjem(ili crtanjem i okretanjem) latica. ',
-            'Objavite fotografiju svojeg virtualnog cvjetnog vrta uz oznaku #MeetandCode.'
+            'Objavite fotografiju svojeg virtualnog cvjetnog vrta uz oznaku #MeetandCode.',
         ],
         'materials' => [
             'Preporučujemo da upotrebljavate',
-            'no projekt će funkcionirati i u programu'
-        ]
+            'no projekt će funkcionirati i u programu',
+        ],
     ],
     'haunted-house' => [
         'title' => 'Ukleta kuća u Hedyju',
-        'author' =>
-            'Felienne Hermans, Sveučilište Leiden – Ramon Moorlag, I&I – CodeWeek NL',
+        'author' => 'Felienne Hermans, Sveučilište Leiden – Ramon Moorlag, I&I – CodeWeek NL',
         'audience' => 'Nastavnici i podučavatelji',
         'duration' => 'ovisno o predznanju, 1 sat ili 2 sata',
         'purposes' => [
             'Osmisliti interaktivnu priču Ukleta kuća.',
-            'Naučiti programirati programskim jezikom Hedy.'
+            'Naučiti programirati programskim jezikom Hedy.',
         ],
-        'description' =>
-            'Programski jezik Hedy omogućuje vam da osmislite priču Ukleta kuća s interaktivnim elementima. Pri svakom pokretanu koda stvara se nova priča. Vaše računalo može čitati priču naglas ili je možete podijeliti na mreži.',
+        'description' => 'Programski jezik Hedy omogućuje vam da osmislite priču Ukleta kuća s interaktivnim elementima. Pri svakom pokretanu koda stvara se nova priča. Vaše računalo može čitati priču naglas ili je možete podijeliti na mreži.',
         'instructions' => [
             'Za početak, otvorite preglednik i posjetite stranicu hedycode.com.',
             'Slijedite upute za razine 1. – 4. Upotrijebite kartice ‘Level’ (Razina) i ‘Haunted house’ (Ukleta kuća).’',
@@ -400,20 +378,19 @@ return [
             'Nastavnici, nastavni plan za Hedy možete pronaći',
             'ovdje',
             'Snimku na kojoj Felienne Hermans predstavlja Hedy možete pronaći na',
-            'ovoj poveznici'
+            'ovoj poveznici',
         ],
         'example' => 'Primjer Uklete kuće na razini ',
-        'materials' => ['Hedy na poveznici', ' razine od 1. do 4.']
+        'materials' => ['Hedy na poveznici', ' razine od 1. do 4.'],
     ],
     'inclusive-app-design' => [
         'title' => 'Dizajn inkluzivne aplikacije',
         'author' => 'Apple Education',
         'duration' => '60 minuta + opcionalne aktivnosti za produljenje',
         'purposes' => [
-            'Raspraviti i iznijeti što više ideja, planirati, izraditi prototip i podijeliti ideju o aplikaciji kojoj svi mogu pristupiti i koju svi mogu razumjeti. '
+            'Raspraviti i iznijeti što više ideja, planirati, izraditi prototip i podijeliti ideju o aplikaciji kojoj svi mogu pristupiti i koju svi mogu razumjeti. ',
         ],
-        'description' =>
-            'Sjajne ideje prvi su korak na putu do sjajnih aplikacija. U ovoj aktivnosti učenici će osmisliti ideju aplikacije na temu koja im je važna, potom će otkriti kako dizajnirati aplikacije imajući pritom na umu inkluziju i dostupnost. ',
+        'description' => 'Sjajne ideje prvi su korak na putu do sjajnih aplikacija. U ovoj aktivnosti učenici će osmisliti ideju aplikacije na temu koja im je važna, potom će otkriti kako dizajnirati aplikacije imajući pritom na umu inkluziju i dostupnost. ',
         'instructions' => [
             'Sve upute nalaze se na ovoj poveznici ',
             'Ovaj jednosatni nastavni plan omogućuje podučavateljima da vode učenike kako bi',
@@ -421,12 +398,12 @@ return [
             'raspravili i iznijeli što više tema koje su im važne te došli do ideje za aplikaciju',
             'Naznačili ideje za aplikaciju i planirali korisničke aktivnosti',
             'Izradili prototip jednog dijela aplikacije u Keynoteu',
-            'Podijelili demoverzije svojih prototipova i opisali kako pružaju podršku korisnicima iz različitih krugova i različitih mogućnosti. '
+            'Podijelili demoverzije svojih prototipova i opisali kako pružaju podršku korisnicima iz različitih krugova i različitih mogućnosti. ',
         ],
         'materials' => [
             'Istražite aktivnost Inclusive App Design Activity(Osmišljavanje inkluzivne aplikacije) u Appleovu nastavničkom centru za učenje(Apple Teacher Learning Center)',
-            'Preporučuje se Keynote na iPadu ili Macu, ali nije obavezan. '
-        ]
+            'Preporučuje se Keynote na iPadu ili Macu, ali nije obavezan. ',
+        ],
     ],
     'silly-eyes' => [
         'title' => 'Smiješne oči',
@@ -435,28 +412,24 @@ return [
         'purposes' => [
             'Osmisliti projekt u interakciji s korisnicima. ',
             'Prilagoditi projekt korisnicima s pomoću boja i grafičkih efekata. ',
-            'Učiti o dizajnu u digitalnom okruženju. '
+            'Učiti o dizajnu u digitalnom okruženju. ',
         ],
-        'description' =>
-            'U ovom projektu osmislit ćete i izraditi lik sa smiješnim očima. Velike i smiješne oči lika pratit će pokazivač miša te tako oživjeti vaš lik. ',
+        'description' => 'U ovom projektu osmislit ćete i izraditi lik sa smiješnim očima. Velike i smiješne oči lika pratit će pokazivač miša te tako oživjeti vaš lik. ',
         'instructions' => 'Detaljan opis projekta nalazi se ovdje',
-        'example' =>
-            'Pogledajte primjere u nastavku: Gobo, Under the sea i Don\'t eat donut'
+        'example' => 'Pogledajte primjere u nastavku: Gobo, Under the sea i Don\'t eat donut',
     ],
     'train-ai-bot' => [
         'title' => 'Istrenirajte UI bota!',
-        'purposes' =>
-            'Učiti o umjetnoj inteligenciji (UI), strojnom učenju, podacima o podukama i predrasudama, uz istovremeno proučavanje etičkih problema i načina kako se umjetna inteligencija može iskoristiti u rješavanju svjetskih problema, ',
-        'description' =>
-            'Istrenirajte UI bota uz UI za oceane. U ovoj ćete aktivnosti programirati ili istrenirati UI (umjetnu inteligenciju) da identificira ribe ili smeće. Počistimo ocean!',
+        'purposes' => 'Učiti o umjetnoj inteligenciji (UI), strojnom učenju, podacima o podukama i predrasudama, uz istovremeno proučavanje etičkih problema i načina kako se umjetna inteligencija može iskoristiti u rješavanju svjetskih problema, ',
+        'description' => 'Istrenirajte UI bota uz UI za oceane. U ovoj ćete aktivnosti programirati ili istrenirati UI (umjetnu inteligenciju) da identificira ribe ili smeće. Počistimo ocean!',
         'instructions' => [
             'Upute su prikazane u obliku videozapisa u tutorijalu',
-            'a napisane su i na početku svake razine'
+            'a napisane su i na početku svake razine',
         ],
         'materials' => [
             'Tutorijal se nalazi ovdje',
-            'Ovaj tutorijal dostupan je na više od 25 jezika'
-        ]
+            'Ovaj tutorijal dostupan je na više od 25 jezika',
+        ],
     ],
     'build-calliope' => [
         'title' => 'Napravite vlasititi Calliope mini fitness trener',
@@ -465,25 +438,398 @@ return [
             'Za razigrano upoznavanje sekvenci, animacija, ponavljanja i promenljivih.',
             'Da dizajniramo dijagram strukture.',
             'Da testiramo i otklanjamo greške u kodu .',
-            'Za optimizaciju programa metodom pokušaja i grešaka, provjerom i podešavanjem upotrebljivosti.'
+            'Za optimizaciju programa metodom pokušaja i grešaka, provjerom i podešavanjem upotrebljivosti.',
         ],
         'duration' => '20-30 minuta',
-        'description' =>
-            'Učesnici će razviti digitalno kontrolisan prototip koji koristi šarene svijetleće LED diode da reprodukuje unaprijed zamišljenu fitnes vježbu od 10 jedinica.',
+        'description' => 'Učesnici će razviti digitalno kontrolisan prototip koji koristi šarene svijetleće LED diode da reprodukuje unaprijed zamišljenu fitnes vježbu od 10 jedinica.',
         'materials' => [
             'Calliope mini StarterBox (ukoliko je dostupan)',
-            'Laptop ili tablet pomoću koga možete posjetiti <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> or <a href="https://calliope.cc">https://calliope.cc</a> i YouTube kako biste pristupili materijalima potrebnim za realizovanje aktivnosti.'
+            'Laptop ili tablet pomoću koga možete posjetiti <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> or <a href="https://calliope.cc">https://calliope.cc</a> i YouTube kako biste pristupili materijalima potrebnim za realizovanje aktivnosti.',
         ],
         'instructions' => [
             'Kako biste započeli, napravite plan i odredite redoslijed jedinica za vježbu. Koristeći raspored, programirajte RGB LED na Calliope mini tako da prikazuje jednu od 5 boja unaprijed definisanim tempom. Zatim kreirajte promjenljivu za tempo i programska ponavljanja koristeći petlje.',
-            "Zapamtite, ako ste implementirali program na način koji vam se dopada, možete ga podijeliti i sa nama na info@calliope.cc - uzbuđeni smo da vidimo šta mislite o tome! Usput, poklanjamo 30 Calliope mini među podnesenim zahtjevima!",
-            "Podijelite QR kod vašeg projekta na Instagramu, dodajte hashtag #CodeWeekChallenge i tagujte/pomenite @CodeWeekEU.",
+            'Zapamtite, ako ste implementirali program na način koji vam se dopada, možete ga podijeliti i sa nama na info@calliope.cc - uzbuđeni smo da vidimo šta mislite o tome! Usput, poklanjamo 30 Calliope mini među podnesenim zahtjevima!',
+            'Podijelite QR kod vašeg projekta na Instagramu, dodajte hashtag #EUCodeWeekChallenge i tagujte/pomenite @CodeWeekEU.',
         ],
         'example' => [
             'I vi možete da se bavite sportom dok sjedite za računarom.',
             'Napravite fitnes prototip sa Calliope mini koji se takođe može testirati u simulatoru. Izazov se obavlja u uređivaču, MakeCode programiranjem jednostavne sekvence koda (pogledajte screenshot).',
-            'Izaberite 5 različitih boja i dodijelite fitnes vejžbu svakoj od njih, npr. čučnjevi ili skokovi. Tada se boje mogu poredati bilo kojim redosledom i trenirati.'
+            'Izaberite 5 različitih boja i dodijelite fitnes vejžbu svakoj od njih, npr. čučnjevi ili skokovi. Tada se boje mogu poredati bilo kojim redosledom i trenirati.',
         ],
 
-    ]
+    ],
+
+    'common' => [
+        'share' => 'Podijelite poveznicu ili QR kȏd svojeg projekta na Instagramu ili Facebooku, dodajte oznaku #EUCodeWeekChallenge i navedite @CodeWeekEU.',
+        'audience' => [
+            'nastavnici i odgojitelji',
+            'osnovnoškolci (od 6 do 12 godina)',
+            'učenici nižih razreda srednje škole (od 12 do 16 godina)',
+            'učenici viših razreda srednje škole (od 16 do 18 godina)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Kodirajte kocku za kotrljanje',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Interaktivne zagonetke kodiranja',
+            'Kodirati simulacije predmeta koji se nasumično kreće koji će se upotrebljavati ako stvarni predmet nije dostupan',
+        ],
+        'description' => 'U ovom izazovu kodirat ćete nasumično kotrljanje kocke na vašu zapovijed. Možete izabrati bilo koju vrste kocke s brojem lica koji želite, poput onih koje se upotrebljavaju u igrama uloga, a možete dodati i zvukove.',
+        'instructions' => [
+            'Prijavite se na Scratch',
+            'izaberite pozadinu',
+            'izradite svoj grafički prikaz kocke ili ga potražite na mreži i učitajte na svoj program',
+            'izradite onoliko kostima za grafički prikaz koliko je brojeva lica odabrane kocke, od kojih svaki prikazuje drugi broj',
+            'odaberite kako želite da se kocka počne kotrljati (pritiskom tipke na tipkovnici, klikom na grafički prikaz itd.) i napišite kȏd',
+            'kodirajte grafički prikaz da nasumično promijeni kostim na kraju kotrljanja',
+            'dodajte zvučne efekte',
+        ],
+        'example' => 'Zakotrljajte kocku D-20',
+    ],
+    'personal-trainer' => [
+        'title' => 'Osobni trener s micro:bitom',
+        'author' => '',
+        'purposes' => [
+            'Kodirati micro:bit kako bi se mogla upotrebljavati zujalica i led ploča',
+            'Izraditi osobni uređaj za kontrolu svoje fizičke aktivnosti',
+            'Kodirati micro:bit za poboljšanje zdravlja putem sporta',
+        ],
+        'description' => 'Ovaj izazov omogućuje vam da kodirate svoj micro:bit da kontrolira vremena ponavljanja fizičkih vježbi kombinirana s vremenom za odmor. Pratit ćete svoju fizičku aktivnost u školi, doma ili u parku.',
+
+        'instructions' => [
+            'Kada A + B, izradi brojač vremena od tri sekunda sa zvukom glazbene note svake sekunde i prikaži riječ KRENI!',
+            'Tijekom prve vježbe prikaži trepereći kvadrat 2 x 2 na 20 sekundi. Zatim reproduciraj zvuk i neka kvadrat bude fiksiran. Tijekom preostalog vremena još jedna trepereća slika mora biti prikazana na 10 sekundi. Kada završi, reproduciraj zvuk.',
+            'Zatim ponovi istu akciju, ali prikaži ploču 3 x 3 za vrijeme vježbe. Ponavljaj ove akcije dok se ne prikaže ploča 5 x 5.',
+        ],
+        'duration' => '30 – 40 minuta',
+    ],
+    'create-a-spiral' => [
+        'title' => 'Izradite spiralu',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Učiti i vježbati petlju i varijable.',
+            'Ojačati kreativnost u programiranju.'],
+        'description' => 'U ovom izazovu napisat ćete projekt s jezikom Scratch za izradu spirale, s pomoću blokova olovke, petlje i varijable.',
+
+        'instructions' => [
+            'Značajke blokova Pen (Olovka)',
+            'Izradite novi projekt i nazovite ga Spirala.',
+            'Kliknite na ljubičastu ikonu „Dodaj proširenje” na donjoj lijevoj strani prozora.',
+            'Odaberite „pen” (olovka): blokovi olovke sada su dostupni za vaš projekt!',
+            'Za početak projekta povucite i ispustite blok „when green flag clicked” (kada se klikne zelena zastava):.',
+            'Morate započeti s praznom stranicom: unutar blokova olovke dodajte blok „erase all” (izbriši sve):.',
+            'Želite započeti crtati u središtu pozornice, što znači da vaš grafički prikaz mora ići u središte pozornice (0,0):.',
+            'Vaš grafički prikaz može se kretati bez crtanja ili se može kretati i crtati:',
+            'kada želite da crta, možete upotrebljavati blok olovke dolje,',
+            'kada to ne želite, možete upotrebljavati blok olovke gore,',
+            'Zatim želite crtati! Dodajte blok „pen down” (olovka dolje):,',
+            'heksagon',
+            'Dodajte blokove u nastavku svojem projektu:',
+            'Sada imate šestinu heksagona. Morate ponoviti ovaj niz 6 puta:',
+            'Spirala',
+            'Za izradu spirale morat ćete dodati 2 duljini svake strane.',
+            'Da biste to učinili, upotrijebit ćete <strong>varijablu.</strong>.',
+            'U blokovima varijable kliknite na Make a Variable (Napravi varijablu).',
+            'Imenujte ga duljina, a zatim kliknite OK.',
+            'Spirala će rasti, morat ćete početi malo: postavite prvu duljinu na 10 i umetnite ovaj blok prije petlje.',
+            'Umetnite varijablu „duljina” u blok „move … steps” (pomakni ... korake).',
+            'Da bi spirala rasla, duljina također mora rasti u svakoj petlji: dodajte blok u nastavku na kraju svake petlje.',
+            'Evo vašeg trenutačnog projekta.',
+            'Prekrasna spirala,',
+            'Nacrtali ste spiralu! Da bi išla u nedogled, zamijenite petlju „ponovi 6” petljom „zauvijek”.',
+            'Da biste nacrtali šarenu petlju, dodajte sljedeći blok u petlju.',
+            'Kada započnete iznova, grafički prikaz crta neželjenu liniju. Da biste to spriječili, dodajte blok „pen up” (olovka gore) na početku projekta.',
+            'Evo vašega konačnog projekta.',
+            'Čestitamo! Izradili ste krasnu spiralu!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Izradite i igrajte protiv UI-ja – igru kamen, škare i papir.',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'naučiti kako funkcionira ciklus strojnog učenja',
+            'izraditi model strojnog učenja upotrebljavajući alat Teachable Machine',
+            'upoznati se s alatom Pictoblox i uvezli izrađeni model u projekt',
+            'postaviti pozornicu i likove, izradili i pokrenuli varijable u alatu Pictoblox',
+            'pokrenuti igru, utvrdili pokrete igrača, programirali nasumične kretnje UI-ja',
+            'izraditi i testirati igru koja uključuje umjetnu inteligenciju kao protivnika u igri kamen, škare i papir',
+
+        ],
+        'description' => 'Izradit ćemo model upotrebljavajući alat Teachable Machine iz slika upotrebljavajući tri klase: kamen, škare i papir. Model će se učitati u alat Pictoblox i upotrijebiti za izradu igre koju možemo igrati protiv UI-ja.',
+        'duration' => '90 minuta',
+        'instructions' => [
+            'Izradite novi slikovni projekt na alatu Teachable machine s tri klase naziva kamen, škare i papir. Za svaku klasu snimite putem videokamere barem 400 slika. Pobrinite se da ima čistu pozadinu. Istrenirajte i izvezite model. Učitajte model i kopirajte poveznicu.',
+            'Izradite besplatni račun na stranici Pictoblox Dodajte proširenje za strojno učenje i učitajte model. Postavite pozornicu, varijable i grafičke prikaze. Pokrenite igru, utvrdite pokrete igrača i pokrete UI-ja te tko je pobijedio u rundi.',
+            'Istrenirajte podatke za igru.',
+            'Testiranje modela',
+            'Izvezite model.',
+            'Dodajte proširenje za strojno učenje i učitajte model.',
+            'Postavite pozornicu, varijable i grafički prikaz.',
+            'Pokrenite igru.',
+            'Utvrdite pokrete igrača.',
+            'Postavite nasumične pokrete UI-ja.',
+            'Emitirajte nasumične pokrete UI-ja.',
+            'Napravite tri bloka. Tko je pobijedio u rundi?',
+            'Provjerite je li igrač pobijedio u rundi.',
+            'Provjerite je li UI pobijedio u rundi.',
+            'Provjerite je li runda neriješena.',
+            'Programirajte blokove.',
+            'Grafički prikaz za kamen, škare i papir',
+        ],
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Crtanje u zraku s pomoću UI-ja',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'napisati program koji upotrebljava proširenje za detekciju ljudskog tijela za prepoznavanje kretnje prstiju pred videokamerom',
+            'kodirati s jednostavnim blokovima u nekoliko linija koda',
+            'vidjeti primjer upotrebe UI-ja',
+        ],
+        'description' => 'Izrada programa koji omogućuje korisniku da crta rukom (kažiprstom) po zraku pred videokamerom, a sve što crta automatski se prikazuje na pozornici alata Pictoblox.',
+        'instructions' => [
+            'Izradite račun na stranici Pictoblox',
+            'pratite vizualne upute kako biste mogli:',
+            'dodati proširenje Human Body Detection (Detekcija ljudskog tijela) i Pen (Olovka)',
+            'postaviti pozornicu i dodati grafički prikaz (Olovka) i dodatne grafičke prikaze za sljedeće: Pen Down (Olovka dolje), Pen Up (Olovka gore), Delete all (Izbriši sve);',
+            'napisati kȏd za grafički prikaz Olovke da prati prst,',
+            'napisati kȏd za gumbe: Pen Up (Olovka gore), Pen Down (Olovka dolje) i Delete all (Izbriši sve) te za Pen (Olovka)',
+            'Sada možete napraviti vlastite crteže i igrati se s različitim bojama i veličinama olovke.',
+        ],
+        'materials' => [
+            'Prijenosno računalo ili računalo s videokamerom',
+            'preuzeta najnovija verzija alata PictoBlox (preporučeno) ili alat Pictoblox na mreži (besplatno)',
+            'Pictoblox račun (besplatno)',
+            'dobra internetska veza',
+        ],
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'Naučiti osnovna načela strojnog učenja i prepoznavanja teksta',
+            'Naučiti ulogu emocija u komunikaciji',
+            'Upotrebljavati kȏd za izradu dijaloga između robota za čavrljanje i korisnika',
+            'Razumjeti kako računala mogu prepoznati  emocionalne tonove putem analiza teksta i odgovoriti sukladno',
+        ],
+        'description' => [
+            'Izradite Emocionalnog bota u jeziku Scratch koji može prikazati sretno lice za pozitivne poruke (ako mu kažete lijepe stvari), ljutito lice za negativne poruke (ako mu kažete ružne stvari) i zbunjeno lice ako je poruka neodređena',
+            'Naš Emobot Kliki prepoznat će komplimente i uvrede te ćemo vidjeti kako se računala mogu istrenirati da prepoznaju emocionalni ton.',
+        ],
+        'instructions' => [
+            'Da biste započeli, programirajte popis pravila za ono što je lijepo ili ljubazno i za ono što je ružno ili zlobno.',
+            'Prijavite se na stranici https://machinelearningforkids.co.uk/ ili izradite novi račun.',
+            'Izradite novi model strojnog učenja dodajući tri nove oznake; prvu nazovite lijepo, drugu nazovite „loše” i izborno ako želite prepoznati vaše ime, izradite treću oznaku naziva „ime”.',
+            'Istrenirajte novi model strojnog učenja, testirajte ga i upotrijebite ga za izradu Emobota u jeziku Scratch.',
+            'Pokrenite program za uređivanje Scratch 3, izbrišite grafički prikaz mačke, umetnite tri nova grafička prikaza koje je izradio Microsoft Bing Image Creator (sretni, ljutiti i nesigurni računalni crtež) ili izradite novi grafički prikaz klikom na ikonu Paint (Slikanje) crtanjem triju kopija kostima za sretno, ljutito i nesigurno lice.',
+            'Kliknite karticu „Code” (Kȏd) i unesite sljedeću skriptu.',
+        ],
+        'example' => [
+            'Podijelite svoj Emobot Kliki sa svojim prijateljima i naučite više o UI-ju i emocijama!',
+            'Umjesto računalnog crteža možete pokušati nešto drugačije, poput životinje. Umjesto ljubaznih i ljutitih poruka možete istrenirati lika da prepoznaje druge vrste poruka.',
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => 'Čarolija izrade s UI pokretima ruke',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'njegovati vještine programiranja među studentima, omogućujući im upotrebu osnovnih naredbi',
+            'razviti vještine algoritamskog razmišljanja rastavljajući kompleksne zadatke u izvedive korake',
+            'poticati kreativno rješavanje problema u pronalaženju jedinstvenih primjena gesti rukom za crtanje i pisanje',
+            'poticati razumijevanje koncepata UI-ja, posebice kako UI omogućava računalima da prepoznaju i tumače pokrete rukom',
+            'podići svijest o značaju tehnologije za osobe s invaliditetom',
+            'promicati suradnju u rješavanju problema i timski rad među studentima dok rade zajedno kako bi poboljšali svoje programe za geste rukom',
+            'povezati vještine kodiranja i računalnog razmišljanja za primjene u stvarnom svijetu, stavljajući naglasak na značajan utjecaj tehnologije na živote ljudi i usklađivanje s ciljevima održivog razvoja (COR-ovi)',
+        ],
+        'duration' => [
+            '90 min za studente od 10 do 12',
+            '45 min za studente od 12 do 15',
+        ],
+        'description' => 'Izradite program koji se temelji na blokovima u jeziku Scratch upotrebljavajući proširenje za UI „Human Body” (Ljudsko tijelo) na kreativan i zanimljiv način, kako biste crtali po zaslonu bez potrebe za tradicionalnim mišem ili zaslonom osjetljivim na dodir.',
+        'instructions' => [
+            'Povežite se na stranicu https://ai.thestempedia.com i izradite račune za nastavnika i učenike.',
+            'Uvedite proširenja „Human Body Detection” (Detekcija ljudskog tijela) „Pen” (Olovka) „Text to Speech” (Pretvaranje teksta u govor).',
+            'Dodajte grafički prikaz „Pencil” (Olovka) iz zbirke i izradite sedam grafičkih prikaza („piši,” „očisti’ „crno”, „crveno”, „plavo”, „zeleno”, „ružičasto”).',
+            'Napišite naredbe da biste provjerili što se dogodi kada grafički prikaz „olovka” dotakne jedan od drugih grafičkih prikaza.',
+            'Napišite naredbe da biste omogućili videokameri da prepozna položaj ruke i pomiče olovku na koordinate x i yvašeg kažiprsta.',
+            'Promijenite kostim na kraju kotrljanja.',
+            'Dodajte zvučne efekte.',
+        ],
+        'materials' => [
+            'Platforma za programiranje https://ai.thestempedia.com (free)',
+            'račun za nastavnika (besplatno)',
+            'račun za učenika (besplatno)',
+            'računala s videokamerom',
+            'internetska veza',
+        ],
+    ],
+    'circle-of-dots' => [
+        'title' => 'Krug točkica',
+        'author' => 'Marin Popov',
+        'purposes' => [
+            'Napisati kȏd kojim se crta linija točaka',
+            'Napisati kȏd kojim se crta linija crtica',
+            'Napisati kȏd kojim se crta krug',
+            'Napisati kȏd kojim se crta krug točkica (crtica)',
+        ],
+        'description' => 'Nacrtati krug od točkica ili crtica',
+        'duration' => '40 minuta',
+        'instructions' => [
+            'Izgradnja bloka točkica',
+            'Izgradnja bloka crtica',
+            'Konstrukcija kruga od točkica',
+            'Konstrukcija kruga od crtica',
+        ],
+    ],
+    'coding-escape-room' => [
+        'title' => 'Izrada sobe za bijeg kodiranjem',
+        'author' => 'Stefania Altieri i Elisa Baraghini',
+        'purposes' => [
+            'Učiti/naučiti i promišljati o pojmovima u kodiranju',
+            'Upotrebljavati jednostavne alate za kodiranje',
+            'Razviti računalno razmišljanje i rješavanje problema',
+        ], 'description' => [
+            'Izraditi iskustvo bijega kodiranjem poput ovoga',
+            'Možete upotrebljavati google form, genially, google presentation i bilo koji drugi alat za izradu priče na temelju kodiranja ;).',
+
+        ],
+        'duration' => '90 minuta',
+        'instructions' => 'Možete podijeliti svoje učenike u male skupine, mogu igrati, a zatim izraditi drugi izazov s predloškom:',
+
+        'materials' => [
+            'Može se upotrebljavati bilo koji alat (platforme Google i Microsoft za izradu i dijeljenje dokumenata, prezentacija i listova). Bilo koja konstrukcija kodiranja, alat ili lik povezan s IKT-om i kodiranjem.',
+        ],
+        'example' => [
+            'Igranjem se uvode neki likovi koji su imali jako bitnu ulogu u povijesti IKT-a i osnovnih koncepata kodiranja i programiranja. Ovo je najbolji način za učenje i aktivno sudjelovanje. Ova se igra može igrati u timovima ili pojedinačno, poput izazova ili natjecanja. Učenici zatim mogu izraditi nešto slično i razviti kompetencije poput kreativnosti i vještina kodiranja.',
+            'Ovo je vrlo praktičan resurs koji se može ponovno upotrebljavati i jednostavno preraditi. Google obrasci jedan je od mogućih alata. Također možete upotrebljavati Google prezentacije, Genial.ly, Emaze ili bilo koji drugi alat za izradu priča s raskršćima i vaših vlastitih pustolovina.',
+            'Izazov bijega podijeljen je u epizode. Ako pogodite, možete nastaviti. Učenici trebaju izraditi kvizove o kodiranju.',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Neka zmija trči',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Kodirati pokrete zmije na vlastitom micro:bitu',
+            'Postaviti ispravan položaj i vrijeme za zajedničku animaciju',
+        ],
+        'description' => 'Učenici moraju napisati kodove kako bi navigirali zmiju kroz micro:bitove koji se nalaze jedan do drugoga. To se mora napraviti na način da izgleda kao da zmija bježi od jednog micro:bita do drugoga.',
+        'duration' => '30 minuta',
+        'instructions' => [
+            'Dizajnirate stazu koja prolazi kroz nekoliko micro:bitova koji su jedan do drugoga (npr., stvarajući kvadrat 2 x 2).',
+            'Pišite kodove dok se zmija miče uz traku.',
+            'Radite na vlastitom uređaju, a zatim ih povežite i provedite kȏd.',
+            'Uzmite u obzir vrijeme i položaj: ako zmija izađe iz jednog micro:bita, pojavit će se na sljedećem micro:bitu.',
+            'Dodatni izazovi: S micro:bitom v2 reproducirajte glazbu dok zmija ne napusti vaš uređaj.',
+            'Dizajnirajte zmiju mijenjanjem svjetline LED žaruljica.',
+            'Isprobajte dužu zmiju ili više zmija.',
+        ],
+        'example' => [
+            'Ovo je primjer za zmiju dugu šest piksela s četiri micro:bita koji tvore kvadrat 2 x 2.',
+            'Kodiranje početnog micro:bita (to može učiniti nastavnik).',
+            'Sve kodove pokreće ovaj micro:bit koji šalje radijski signal drugim micro:bitovima kada se pritisne gumb A.',
+            'Kodiranje kretanja zmije',
+            'Svaki micro:bit mora biti u istoj radijskoj skupini kao početni micro:bit.',
+            'Sve animacije započinju kada se primi radijski signal.',
+            'Animacija prvog microbita odmah je vidljiva, drugi čekaju da zmije dođe do njih.',
+            'Vrijeme između dviju faza određuje brzinu zmije.',
+        ], 'materials' => [
+            'micro:bitovi (za svakog učenika ako je moguće)',
+            'prijenosno računalo ili računalo za makecode.microbit.org editor',
+        ],
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Ilustrirajte šalu s alatom bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Dizajnirati malu igru u kojoj korisnik pronalazi odgovor na šaljivo pitanje',
+        'description' => 'Učenici dizajniraju igru u kojoj korisnik pronalazi odgovor na šaljivo pitanje kada se figura sudari s predmetom na igralištu. Učenici upotrebljavaju osnove značajke alata bitsy da bi dovršili izazov.',
+        'instructions' => [
+            'Osmislite šaljivo pitanje. Otvorite bitsy i započnite novi projekt. Što će vam biti potrebno',
+            'avatar - grafički prikaz koji možete pomicati',
+            'Bijela mačka na ljubičastoj pozadini',
+            'Opis je automatski generiran',
+            'predmet do kojeg vaš avatar mora doći',
+            'prostorija - pozadina vašeg programa',
+            'dvije poruke: pitanje i odgovor',
+            'Dovršena igra može se preuzeti kao html datoteka.',
+        ],
+        'example' => 'Na ovoj internetskoj stranici možete vidjeti primjer šale, a postoji i poveznica do digitalne ploče:',
+        'materials' => 'bitsy se pokreće u pregledniku',
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'Aplikacija koja broji u nekoliko jezika',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Naučiti kako izraditi jednostavnu aplikaciju',
+            'Naučiti programirati kroz blokove.',
+            'Naučiti kako dodati oznake, gumbe, slike, senzore i medije.',
+            'Naučiti kako organizirati elemente na zaslonu aplikacije',
+        ],
+        'description' => 'Aplikacija vam omogućuje da pritiskom gumba brojite u više jezika. Kada korisnik protrese pametni telefon, brojčanik se vraća na nulu. Izazov je dodati još jedan jezik.',
+        'instructions' => [
+            'Da biste dovršili izazov, morate definirati drugi jezik u kojem želite da aplikacija broji.',
+            'Zatim morate preuzeti s interneta (npr. s stranice Pixabay ili Unsplash) zastavu te zemlje i učitati je na platformu MIT APP Inventor putem elementa naziva zastava, u svojstvu Picture (Slika).',
+            'Zatim morate naučiti kako se piše naziv te zemlje na engleskom te kako reći Izađi i Pritisni me na jeziku te zemlje.',
+            'Naposljetku morate dodati potrebne blokove kako bi aplikacija radila na novom jeziku.',
+        ],
+        'materials' => [
+            'Za razvoj aplikacije potrebno vam je računalo ili prijenosno računalo s pristupom internetu.',
+            "Izradite račun na platformi MIT APP Inventor kojoj se može pristupiti putem stranice <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>.",
+            'Također je potrebno instalirati aplikaciju MIT AI2 Companion na pametni telefon kako biste testirali razvijenu aplikaciju.',
+        ],
+    ],
+    'coding-with-art-through-storytelling' => [
+        'title' => 'Kodiranje s umjetnošću putem pričanja priče',
+        'author' => 'Maria Tsapara i Anthi Arkouli',
+        'purposes' => [
+            'Razvijati vještine opažanja, interpretacije i ispitivanja putem bavljenja umjetnošću.',
+            'Biti kreativan i surađivati s drugima za zajednički cilj',
+            'Izraditi algoritam sa svrhom prepričavanja priče.',
+        ],
+        'description' => 'U ovom će izazovu učenici biti nadahnuti umjetničkim djelom te će napisati priču i ilustrirati je. Zatim će pokušati prepričati priču upotrebom kompleta za robotiku koji se može programirati ili kao aktivnost bez upotrebe računala.',
+        'materials' => [
+            'Ova se aktivnost može provesti kao aktivnost bez upotrebe računala ili upotrebom obrazovnog robota koji se može programirati, kao što je beebot/bluebot/mouse robot.',
+            'karte sa strelicama beebot ili karte sa strelicama za aktivnost bez upotrebe računala',
+            'na grčkom',
+            "Kako biste naučili više o paketu alata za Project Zero \ Thinking Routine možete posjetiti",
+
+            'example' => [
+                'Nastavnik radi s učenicima kako bi pokazao kako dizajnirati algoritam s kartama koje će pružiti upute za Bee-Bota ili drugog robota za dolazak do prvog događaja priče na podlozi. Učenici rade u timovima od tri do četiri učenika kako bi dizajnirali algoritam za robota za pomicanje do sljedećeg niza. Učenici testiraju algoritme na razrednoj podlozi i prema potrebi ispravljaju pogreške.',
+                'Nastavljaju se pomicati kroz što je više moguće događaja priče.',
+                'Ova se aktivnost može provesti kao aktivnost bez upotrebe računala.',
+                'Jedno je dijete robot, a drugo je programer. Program stvara algoritamski put upotrebom karata sa strelicama kako bi pomogao robotu da se pomiče s jedne slike na drugu i prepriča priču. Svaki put kada je robot na slici, od njega se traži da ispriča dio priče.',
+            ],
+            'instructions' => [
+                'Nastavnik traži od učenika da promotre sliku/fotografiju.',
+                'Upotrebljavaju rutinu razmišljanja „Početak, sredina, kraj” (Project Zero harvardske škole) kako bi stvorili priču.',
+                'Nastavnik ih upita: „Ako je ovo umjetničko djelo početak/sredina/kraj priče, što će se dogoditi sljedeće/prije/na kraju?”',
+                'Učenici ilustriraju događaje iz priče.',
+                'Učenici se prisjećaju priče i stavljaju događaje na mrežu. Upotrebljavajući karte sa strelicama, stvaraju algoritam koji pomaže beebotu da prepriča priču.',
+            ],
+        ],
+    ],
+    'coding-with-legoboost' => [
+        'title' => 'Kodiranje i programiranje s  proširenjem LegoBoost za jezik Scratch,',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'izraditi modele upotrebljavajući LegoBoost,',
+            'razviti vještine programiranja u jeziku Scratch',
+            'programirati robote upotrebljavajući naredbe, od jednostavnih do složenih.',
+        ],
+        'description' => 'U ovom će izazovu učenici upotrebljavati proširenje LegoBoost jezika Scratch i u aplikaciju unijeti kodove za kretanje robota unaprijed, unatrag, oko prepreka te za glasovne naredbe.',
+        'duration' => '120 minuta',
+        'instructions' => [
+            'Prijavite se na aplikaciju Scratch.mit.edu.',
+            'Pokrenite aplikaciju Scratch Link i aktivirajte Bluetooth na prijenosnom računalu.',
+            'Kliknite Add an Extension (Dodajte ekstenziju) u jeziku Scratch i odaberite LegoBoost.',
+            'Dodajte sliku o Europskom tjednu programiranja.',
+            'Postavite dva AB motora na ON (UKLJUČENO), a kada naiđu na crvenu prepreku na OFF (ISKLJUČENO).',
+            'U zelenoj boji motor A je postavljen na ON (UKLJUČENO), a u crnoj boji motor B je postavljen na ON (UKLJUČENO).',
+            'Zelene, crvene i crne prepreke postavit će se na put.',
+            'Dodajte naredbe za kretanje i okrete od strelica i pretvaranja teksta u govor pri susretu s preprekama.',
+            'Testirajte!',
+        ],
+
+    ],
 ];

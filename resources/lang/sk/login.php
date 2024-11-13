@@ -14,7 +14,7 @@ return [
     'login' => 'Prihlásenie',
     'register' => 'Registrácia',
     'github' => 'Prihlásiť sa cez Github',
-    'twitter' => 'Prihlásiť sa cez Twitter',
+    'X' => 'Prihlásiť sa cez X',
     'facebook' => 'Prihlásiť sa cez Facebook',
     'google' => 'Prihlásiť sa cez Google',
     'azure' => 'Prihlásiť sa cez Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Obnoviť heslo',
     'send_password' => 'Poslať odkaz na obnovu hesla',
     'confirm_password' => 'Potvrdiť heslo',
-    'name' => 'názov'
+    'name' => 'názov',
 ];

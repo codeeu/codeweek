@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'U kojim zemljama pršti od aktivnosti iz oblasti programiranja?',
-    'paragraph'=>'Rezultātu pārskats ir sakārtots pēc reģistrēto pasākumu skaita proporcionāli iedzīvotāju skaitam, tādēļ neesiet pārsteigti, ka dažas mazākas valstis ir šīs saraksta augšdaļā!',
-    'parcipating_with'=>'piedalās ar',
-    'events'=>'pasākumiem'
+    'paragraph' => 'Rezultātu pārskats ir sakārtots pēc reģistrēto pasākumu skaita proporcionāli iedzīvotāju skaitam, tādēļ neesiet pārsteigti, ka dažas mazākas valstis ir šīs saraksta augšdaļā!',
+    'parcipating_with' => 'piedalās ar',
+    'events' => 'pasākumiem',
 
 ];

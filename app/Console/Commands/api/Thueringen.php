@@ -2,24 +2,15 @@
 
 namespace App\Console\Commands\api;
 
-
-use App\BerlinRSSItem;
-use App\Event;
-use App\HamburgRSSItem;
-use App\LeipzigRSSItem;
 use Illuminate\Console\Command;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-use App\Console\Commands\api\GermanTraits;
-
 
 class Thueringen extends Command
 {
-
     use GermanTraits;
+
     /**
      * The name and signature of the console command.
      *
@@ -44,22 +35,20 @@ class Thueringen extends Command
         parent::__construct();
     }
 
-    function parseDate($date)
+    public function parseDate($date)
     {
         return Carbon::parse($date);
     }
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
     public function handle()
     {
 
         $city = 'Thueringen';
 
-        $url = "https://thueringen.codeweek.de/?tx_codeweekevents_api%5Baction%5D=listForEu&tx_codeweekevents_api%5Bcontroller%5D=Api&tx_codeweekevents_api%5Bformat%5D=.json&tx_typoscriptrendering%5Bcontext%5D=%7B%22record%22:%22pages_42%22,%22path%22:%22tt_content.list.20.codeweekevents_api%22%7D&cHash=c5952d04181fb05e7d86ef43efcd7f26";
+        $url = 'https://thueringen.codeweek.de/?tx_codeweekevents_api%5Baction%5D=listForEu&tx_codeweekevents_api%5Bcontroller%5D=Api&tx_codeweekevents_api%5Bformat%5D=.json&tx_typoscriptrendering%5Bcontext%5D=%7B%22record%22:%22pages_42%22,%22path%22:%22tt_content.list.20.codeweekevents_api%22%7D&cHash=c5952d04181fb05e7d86ef43efcd7f26';
         dump("Loading $city events");
         $force = $this->option('force');
 
@@ -67,23 +56,19 @@ class Thueringen extends Command
 
         if (is_null($json)) {
             Log::info("!!! No data in feed from $city API:");
+
             return 0;
         }
 
         $this->createRSSItem($json, $city);
 
-        Artisan::call("import:thueringen");
-
+        Artisan::call('import:thueringen');
 
     }
 
     public function getCustomTag($item, $tag)
     {
-        return $item->get_item_tags("", $tag)[0]['data'];
+        return $item->get_item_tags('', $tag)[0]['data'];
 
     }
-
-
-
-
 }

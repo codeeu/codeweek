@@ -297,6 +297,48 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
                 "3" => "Zaprogramuj uczucia dla uczniów szkół średnich",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Water",
+            "author" => "autor: Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water jest odpowiedzią na potrzebę rozwiązania problemu zanieczyszczenia wody. Pomimo wysiłków podejmowanych w ostatnich latach 2 miliardy ludzi na całym świecie wciąż nie mają dostępu do bezpiecznej wody pitnej. W praktyce oznacza to, że realizacja szóstego Celu Zrównoważonego Rozwoju wchodzącego w skład Agendy 2030 ONZ, według którego wszyscy ludzie powinni mieć dostęp do bezpiecznej wody oraz urządzeń sanitarnych do 2030 roku, wciąż pozostaje odległa. To samo można powiedzieć o czternastym Celu Zrównoważonego Rozwoju dotyczącym życia w morzach i oceanach, którego założeniem jest ochrona i zrównoważone wykorzystanie oceanów, mórz i zasobów morskich na rzecz zrównoważonego rozwoju",
+
+                "Zajęcia skupiają się na ważnej i wciąż aktualnej kwestii pomiaru jakości wody i nowych zanieczyszczeń, które wpływają na jakość wody. Uczniowie będą mieli możliwość zbadania i znalezienia rozwiązań rzeczywistych problemów związanych z wodą i środowiskiem, co pozwoli im rozwinąć umiejętności badawcze, a także kompetencje krytycznego myślenia i rozwiązywania problemów",
+
+                "Opracowane plany zajęć obejmują praktyczne i kreatywne zadania, w tym programowanie w języku Scratch, wprowadzenie do uczenia maszynowego i sztucznej inteligencji z platformą Learning Machine Learning oraz budowanie pojazdów do gromadzenia próbek wody i analizy jej pH z zestawów klocków Lego. Wszystkie te działania pozwolą uczniom wykorzystać ich umiejętności i wiedzę w praktyce w interaktywnym i interesującym środowisku, co zwiększy ich motywację i zainteresowanie projektem",
+
+                "Realizacja tego działania zakłada realizację trzech działań w klasach, dzięki którym będzie możliwe ukończenie całego projektu w ramach interesujących i motywujących zajęć. Każde z tych zadań może być jednak zrealizowane oddzielnie"
+
+            ],
+            "activities" => [
+                "1" => "SOS Water z platformą Scratch",
+                "2" => "SOS Water z uczeniem maszynowym",
+                "3" => "SOS Water z LEGO Robotics",
+            ]
+
+        ],
+
+        "19" => [
+
+            "title" => "Kreatywne laboratorium Scratch",
+            "author" => "Autor: Krzysztof Jaworski",
+            "text" => [
+
+                "W dzisiejszych czasach nauka programowania to coś więcej niż przygotowanie się do pracy jako programista, to też więcej niż czysta informatyka. Należy do niej podejść w sposób interdyscyplinarny, wykorzystując programowanie jako narzędzie do nauki i zabawy, aby wspierać rozwój przyszłych umiejętności.",
+
+                "Dla dzieci i młodych osób kluczowe jest zrozumienie, jak bezpiecznie, odpowiedzialnie i skutecznie korzystać z cyfrowych narzędzi. Muszą zrozumieć, jak te narzędzia działają i wiedzieć, jak się z nimi komunikować poprzez programowanie. Dodatkowo to doświadczenie powinno obejmować współpracę pomiędzy uczniami.",
+
+                "Zadanie <strong>Creative Scratch Laboratory</strong> zwiększy kreatywność uczniów, roznieci ich ciekawość i sprawi, że kodowanie będzie dobrą zabawą.  Składa się ono z trzech planów zajęć dla uczniów o różnych umiejętnościach w zakresie kodowania. W planie zajęć dla osób początkujących uczniowie tworzą postać na papierze, importują ją do programu Scratch i animują, korzystając z wybranych bloków. Na poziomie średnio zaawansowanym uczą się korzystać z narzędzia Obrazki wideo, tworzą grafikę przy użyciu papieru i markerów oraz przygotowują mozaikę Scratch z Obrazkami wideo, stemplami i pracami artystycznymi. W planie zajęć dla osób zaawansowanych uczniowie poznają funkcję rozpoznawania twarzy w Scratch, eksperymentują z manipulowaniem grafiką obrazka oraz tworzą miniteatrzyk z dialogami generowanymi w Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Narysuj i animuj obrazek: dla początkujących",
+                "2" => "Stemple: dla uczniów średnio zaawansowanych",
+                "3" => "Teatrzyk pacynek: dla uczniów zaawansowanych",
+            ]
+        ],
 
 
     ],

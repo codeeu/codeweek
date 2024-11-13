@@ -41,7 +41,7 @@ return [
         'me' => 'Montenegrinsk',
         'rs' => 'Serbisk',
         'mt' => 'Maltesisk',
-        'tr' => 'Tyrkisk'
+        'tr' => 'Tyrkisk',
     ],
 
     'resources_local_title' => 'Kodningsressourcer fra',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Har du stadig spørgsmål?',
     'drop_us_a_line' => 'Send os et par ord!',
     'get_in_touch' => 'TAG KONTAKT',
-    'footer_msg' =>
-        'En græsrodsbevægelse, der drives af frivillige og støttes af Europa-Kommissionen.',
+    'footer_msg' => 'En græsrodsbevægelse, der drives af frivillige og støttes af Europa-Kommissionen.',
     'email' => 'E-mail',
     'display_email' => 'Vis e-mail',
     'first_name' => 'Fornavn',
@@ -67,5 +66,5 @@ return [
     'codeweek' => 'Kodeuge',
     'bring_codeweek_to_your_students' => 'Lad kodeugen komme til jeres elever',
     'or' => 'eller',
-    'newsletter' => 'Nyhedsbrev'
+    'newsletter' => 'Nyhedsbrev',
 ];

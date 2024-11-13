@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'A #CodeWeek eseménye szerkesztése',
+    'title' => 'A #EUCodeWeek eseménye szerkesztése',
     'required_fields' => 'A kötelezõ mezõk *-gal vannak jelölve. Nyugodtan adja meg az eseményt a helyi nyelven.',
     'description' => 'Leírás',
     'audience' => 'Célközönség',
@@ -29,12 +29,12 @@ return [
         'header' => 'Elérhetõségei',
         'text_1' => 'Ezt az információt kizárólag az alábbiak láthatják: ',
         'link_1' => 'az európai programozás hét nagykövetei',
-        'text_2'=> ' és a programozási hét
+        'text_2' => ' és a programozási hét
         szervezõi, akik
         leellenõrzik az eseményt még mielõtt a térképen megjelenne, és felvehetik önnel a kapcsolatot, amennyiben az módosításra
         szorul, vagy pedig
         – statisztikák készítése céljából – felmérést végeznek az eseményt követõen.',
-        'contact_email' => 'E-mail címe'
-    ], 
-    'edit' => 'Az ssemény szerkesztése'
+        'contact_email' => 'E-mail címe',
+    ],
+    'edit' => 'Az ssemény szerkesztése',
 ];

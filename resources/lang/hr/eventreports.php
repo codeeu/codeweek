@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Još nema događanja za prijavu.',
     'report' => 'Događanja navedena u nastavku već su počela ili završila. Popunite s nekoliko brojeva u
     statističke svrhe u vezi s događanjem i zatražite svoj svoju potvrdu o sudjelovanju na Tjednu programiranja. Dobit
-    ćete jednu potvrdu za svako događanje.'
+    ćete jednu potvrdu za svako događanje.',
 ];

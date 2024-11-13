@@ -18,27 +18,29 @@
 
             <div class="mb-4">
 
-                    <div class="border-b border-gray-200">
-                        <nav class="-mb-px flex">
-                            @include('online-calendar.admin._tab', [
-    'targetParam'=>'online/list',
-    'route'=>'admin.online-events',
+                <div class="border-b border-gray-200">
+                    <nav class="-mb-px flex">
+                        @role('activities admin')
+                        @include('online-calendar.admin._tab', [
+'targetParam'=>'online/list',
+'route'=>'admin.online-events',
 'title'=>'All Online Activities'
 ])
-                            @include('online-calendar.admin._tab', [
-    'targetParam'=>'online/promoted',
-    'route'=>'promoted_events',
-    'title'=>'Promoted Activities'
+                        @endrole
+                        @include('online-calendar.admin._tab', [
+'targetParam'=>'online/promoted',
+'route'=>'promoted_events',
+'title'=>'Pending Approval Activities'
 ])
-                            @include('online-calendar.admin._tab', [
-    'targetParam'=>'online/featured',
-    'route'=>'featured_events',
-    'title'=>'Activities in Calendar'
+                        @include('online-calendar.admin._tab', [
+'targetParam'=>'online/featured',
+'route'=>'featured_events',
+'title'=>'Featured Activities'
 ])
 
 
-                        </nav>
-                    </div>
+                    </nav>
+                </div>
 
             </div>
 
@@ -72,9 +74,9 @@
                                     <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                         Country
                                     </th>
-                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                        Status
-                                    </th>
+                                    {{--                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">--}}
+                                    {{--                                        Status--}}
+                                    {{--                                    </th>--}}
                                     <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider align-center">
                                         Actions
                                     </th>
@@ -85,8 +87,7 @@
 
                                 @foreach($events as $event)
 
-                                    @livewire('online-event-card', ['event' => $event, 'countryName' =>
-                                    $countryNames[$event->country_iso]])
+                                    @livewire('online-event-card', ['event' => $event, 'countryName' => $countryNames[$event->country_iso]])
 
                                 @endforeach
 
@@ -105,7 +106,7 @@
             {{ $events->links() }}
         </div>
 
-        <span>
+    </div>
 @endsection
 
 

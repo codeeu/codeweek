@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Přidat #CodeWeek akci',
+    'main_title' => 'Přidat #EUCodeWeek akci',
     'button' => 'Přidat akci',
     'howto' => 'Jak svou akci zorganizovat',
     'required' => 'Povinná pole jsou označená * hvězdičkou Bez obav přidejte seznam akcí ve svém jazyce.',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Veřejný e-mail',
-        'placeholder' => 'Chcete zobrazit kontaktní e-mail?'
+        'placeholder' => 'Chcete zobrazit kontaktní e-mail?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresa',
         'placeholder' => 'Kde akce proběhne?',
     ],
-
 
     'organizertype' => [
         'label' => 'Typ organizace',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Rozšířená realita',
         'Artificial intelligence' => 'Umělá inteligence',
         'Motivation and awareness raising' => 'Motivace a zvyšování povědomí',
-        'Promoting diversity' => 'Podpora rozmanitosti'
+        'Promoting diversity' => 'Podpora rozmanitosti',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KÓD CODE WEEK 4 ALL',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'národních ambasadorů',
         'phrase5' => 'nebo nám pošlete',
         'phrase6' => 'e-mail',
-        'phrase7' => 'Svůj kód Codeweek for all můžete sdílet s dalšími lidmi:'
+        'phrase7' => 'Svůj kód Codeweek for all můžete sdílet s dalšími lidmi:',
     ],
     'activitytype' => [
         'label' => 'Typ Aktivity',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Veřejná online aktivita',
         'invite-online' => 'Privátní online aktivita',
         'open-in-person' => 'Veřejná osobní aktivita',
-        'invite-in-person' => 'Privátní osobní aktivita'
+        'invite-in-person' => 'Privátní osobní aktivita',
 
     ],
 
@@ -148,7 +147,6 @@ return [
     'certificate_ready' => 'Váš certifikát za Týden programování je připraven. Můžete si ho stáhnout nebo ho rovnou sdílet.',
     'view_your_certificate' => 'Certifikát můžete zobrazit zde',
     'submit_event_and_report' => 'Pošlete hlášení o této akci a požádejte o certifikát k Týdnu programování.',
-    'report_and_claim' => 'Poslat hlášení a požádat o certifikát'
-
+    'report_and_claim' => 'Poslat hlášení a požádat o certifikát',
 
 ];

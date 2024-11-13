@@ -13,5 +13,5 @@ return [
     |
     */
     'privacy_policy' => 'Privacy Policy',
-    'cookies_policy' => 'Cookies Policy'
+    'cookies_policy' => 'Cookies Policy',
 ];

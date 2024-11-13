@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Upravte svoje podujatie #CodeWeek',
+    'title' => 'Upravte svoje podujatie #EUCodeWeek',
     'required_fields' => 'Povinné polia sú označené hviezdičkou*. Záznam o podujatí môžete uviesť aj vo svojom miestnom jazyku.',
     'description' => 'Opis',
     'audience' => 'Cieľová skupina',
@@ -29,8 +29,8 @@ return [
         'header' => 'Vaše kontaktné údaje',
         'text_1' => 'Tieto údaje budú vidieť len ',
         'link_1' => 'veľvyslanci Európskeho týždňa programovania',
-        'text_2'=> ' a organizátori Týždňa programovania, ktorí skontrolujú vaše podujatie pred tým, ako sa zobrazí na mape, a môžu vás kontaktovať, ak budú nutné úpravy alebo na účely administratívnych prieskumov po podujatí.',
-        'contact_email' => 'Váš kontaktný e-mail'
-    ], 
-    'edit' => 'Upraviť podujatie'
+        'text_2' => ' a organizátori Týždňa programovania, ktorí skontrolujú vaše podujatie pred tým, ako sa zobrazí na mape, a môžu vás kontaktovať, ak budú nutné úpravy alebo na účely administratívnych prieskumov po podujatí.',
+        'contact_email' => 'Váš kontaktný e-mail',
+    ],
+    'edit' => 'Upraviť podujatie',
 ];

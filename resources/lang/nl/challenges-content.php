@@ -6,10 +6,9 @@ return [
         'author' => 'EU-programmeerweek-team',
         'purposes' => [
             'Programmeren van interactieve raadsels',
-            'Programmeren gebruiken voor dialogen tussen een chatbot en een gebruiker'
+            'Programmeren gebruiken voor dialogen tussen een chatbot en een gebruiker',
         ],
-        'description' =>
-            'Programmeer een gesprek tussen een chatbot en een gebruiker die probeert een raadsel op te lossen. Probeer een chatbot te maken die kan praten als een mens. In plaats van een raadsel kun je een dialoog programmeren tussen een chatbot en een gebruiker.',
+        'description' => 'Programmeer een gesprek tussen een chatbot en een gebruiker die probeert een raadsel op te lossen. Probeer een chatbot te maken die kan praten als een mens. In plaats van een raadsel kun je een dialoog programmeren tussen een chatbot en een gebruiker.',
         'instructions' => [
             'Bedenk een raadsel',
             'Log in op',
@@ -18,13 +17,13 @@ return [
             'Gebruik blokken of de tekstmodus om je raadsel te schrijven',
             'Of gebruik in plaats daarvan',
             'deze code',
-            'en pas deze aan aan je raadsel, of selecteer Answering a Riddle (een raadsel oplossen) in het menu en bewerk de code'
+            'en pas deze aan aan je raadsel, of selecteer Answering a Riddle (een raadsel oplossen) in het menu en bewerk de code',
         ],
         'example' => 'Bekijk dit voorbeeld van een raadsel.',
         'more' => [
             'Deze code is een bewerking van de Pencil Code-activiteit',
-            'Answering a Riddle'
-        ]
+            'Answering a Riddle',
+        ],
     ],
 
     'paper-circuit' => [
@@ -32,12 +31,12 @@ return [
         'author' => 'EU-programmeerweek-team',
         'purposes' => [
             'Bevorderen van creativiteit',
-            'Ontwikkelen van probleemoplossende vaardigheden'
+            'Ontwikkelen van probleemoplossende vaardigheden',
         ],
         'description' => [
             'Teken een object naar keuze. Dat kan een sterrenhemel zijn, een lieveheersbeestje, een robot, een kerstboom of wat je maar kunt bedenken. Maak je project persoonlijk met de EU-programmeerweek-visuals: doorzoek de',
             'EU-programmeerweek-toolkit voor leraren',
-            'en download de gewenste logo’s of visuals. Je kunt zelfs een uitnodiging voor de EU-programmeerweek maken in de vorm van een papieren circuit. Neem in je circuit een motiverende boodschap op en stimuleer andere leraren om aan de programmeerweek deel te nemen en/of naar de website voor scholen te gaan.'
+            'en download de gewenste logo’s of visuals. Je kunt zelfs een uitnodiging voor de EU-programmeerweek maken in de vorm van een papieren circuit. Neem in je circuit een motiverende boodschap op en stimuleer andere leraren om aan de programmeerweek deel te nemen en/of naar de website voor scholen te gaan.',
         ],
         'instructions' => [
             'Teken een object en beslis welke onderdelen verlicht moeten worden (bijv. de sterren).',
@@ -46,7 +45,7 @@ return [
             'Teken een “+”- en een “-”-spoor op de achterzijde van het papier. Zorg ervoor dat de lange poot van de led-circuitsticker is verbonden met de “+”-zijde van de batterij en de korte met de “-”-zijde van de batterij.',
             'Leg de kopertape op de sporen.',
             'Maak een vouw zodat wanneer het papier de batterij bedekt, de led wordt verlicht. Je kunt een paperclip gebruiken voor goed contact met de kopertape.',
-            'Maak een foto van je papieren circuit en deel deze op Instagram, waarbij je uitlegt waarom jij denkt dat mensen aan dit initiatief moeten deelnemen.  '
+            'Maak een foto van je papieren circuit en deel deze op Instagram, waarbij je uitlegt waarom jij denkt dat mensen aan dit initiatief moeten deelnemen.  ',
         ],
         'example' => 'Bekijk enkele voorbeelden van papieren circuits',
         'materials' => [
@@ -55,8 +54,8 @@ return [
             'knoopcelbatterij',
             'kopertape',
             'led-circuitstickers',
-            'paperclip'
-        ]
+            'paperclip',
+        ],
     ],
 
     'dance' => [
@@ -64,10 +63,9 @@ return [
         'author' => 'EU-programmeerweek-team',
         'purposes' => [
             'Leren van basisprogrammeerconcepten',
-            'Leren hoe je personages tot leven brengt'
+            'Leren hoe je personages tot leven brengt',
         ],
-        'description' =>
-            'In deze uitdaging creëer je een serie personages die samen gaan dansen. Gebruik de ingebouwde mediabibliotheek voor het selecteren van personages en muziekfragmenten, of creëer deze zelf. Je laat de personages tot leven komen om samen te dansen en met elkaar te praten.',
+        'description' => 'In deze uitdaging creëer je een serie personages die samen gaan dansen. Gebruik de ingebouwde mediabibliotheek voor het selecteren van personages en muziekfragmenten, of creëer deze zelf. Je laat de personages tot leven komen om samen te dansen en met elkaar te praten.',
         'instructions' => [
             'Log in op',
             'als leraar. Maak leerlingaccounts aan en deel deze met je je leerlingen. Je kunt ook een klascode delen waarna je leerlingen zich kunnen registreren met hun e-mailadres van school. Als je leerling bent, kun je als leerling inloggen. Er zal dan worden gevraagd naar het e-mailadres van een van je ouders, zodat zij je account kunnen goedkeuren.',
@@ -80,13 +78,13 @@ return [
             'Klik op elke acteur en breng deze tot leven door de volgende blokken toe te voegen',
             'Kies een',
             'say block (spreekblok)',
-            'en je acteurs kunnen met elkaar praten. Verander de vorm van de tekstballonnen, het lettertype en de lettergrootte'
+            'en je acteurs kunnen met elkaar praten. Verander de vorm van de tekstballonnen, het lettertype en de lettergrootte',
         ],
         'example' => [
             'Bekijk',
             'dit voorbeeld',
-            'van dansende robots. Gebruik het gerust en maak een nieuwe remix.'
-        ]
+            'van dansende robots. Gebruik het gerust en maak een nieuwe remix.',
+        ],
     ],
 
     'compose-song' => [
@@ -95,10 +93,9 @@ return [
         'purposes' => [
             'Leren programmeren door middel van muziek',
             'Muziekgenres en instrumenten onderscheiden',
-            'Een liedje componeren door geluidsfragmenten te mixen'
+            'Een liedje componeren door geluidsfragmenten te mixen',
         ],
-        'description' =>
-            'In deze uitdaging maak je een muzikale compositie met behulp van een programmeertaal. Je kunt ingebouwde geluidsfragmenten gebruiken of je eigen geluidsfragmenten opnemen en mixen om een muzikale compositie te maken. Run je code in het Digital Audio Workstation en luister naar de muziek die je hebt geprogrammeerd. Speel met verschillende geluiden en effecten om je muziekstuk te bewerken.',
+        'description' => 'In deze uitdaging maak je een muzikale compositie met behulp van een programmeertaal. Je kunt ingebouwde geluidsfragmenten gebruiken of je eigen geluidsfragmenten opnemen en mixen om een muzikale compositie te maken. Run je code in het Digital Audio Workstation en luister naar de muziek die je hebt geprogrammeerd. Speel met verschillende geluiden en effecten om je muziekstuk te bewerken.',
         'instructions' => [
             'Log in op',
             'Klik hier om een script te maken',
@@ -125,13 +122,13 @@ return [
             'Write (schrijf)',
             'Schrijf tussen de haakjes het nummer van de track, VOLUME, GAIN, niveau van het volume, de maat waarin dit start, het niveau en de maat wanneer het eindigt',
             'Dit is een voorbeeld van een fade-in-effect',
-            'en een fade-out-effect'
+            'en een fade-out-effect',
         ],
         'example' => [
             'Luister naar',
             'een voorbeeld van een liedje dat is geprogrammeerd met Earsketch',
-            'Je kunt de code importeren en bewerken'
-        ]
+            'Je kunt de code importeren en bewerken',
+        ],
     ],
     'sensing-game' => [
         'title' => 'Maak een videosensing-game',
@@ -139,10 +136,9 @@ return [
         'purposes' => [
             'Programmeren van bewegende objecten',
             'Leren begrijpen hoe je digitale animatie met fysieke bewegingen bestuurt',
-            'Componeren van een liedje door geluidsfragmenten te mixen'
+            'Componeren van een liedje door geluidsfragmenten te mixen',
         ],
-        'description' =>
-            'In deze uitdaging creëer je een eenvoudige game waarbij een videocamera wordt gebruikt als sensor om beweging waar te nemen. Hierdoor kun je je animatie met fysieke bewegingen besturen. In deze game is het de bedoeling om binnen 30 seconden zoveel mogelijk EU-programmeerweek-bubbels te verzamelen. In plaats van bubbels verzamelen kun je een game creëren waarin je een personage achtervolgt of ballonnen laat knallen met je handen.',
+        'description' => 'In deze uitdaging creëer je een eenvoudige game waarbij een videocamera wordt gebruikt als sensor om beweging waar te nemen. Hierdoor kun je je animatie met fysieke bewegingen besturen. In deze game is het de bedoeling om binnen 30 seconden zoveel mogelijk EU-programmeerweek-bubbels te verzamelen. In plaats van bubbels verzamelen kun je een game creëren waarin je een personage achtervolgt of ballonnen laat knallen met je handen.',
         'instructions' => [
             'Log in op',
             'Klik op',
@@ -161,69 +157,63 @@ return [
             'Verander Klok met -1)',
             'Creëer een nieuw sprite',
             'Game Over',
-            'om de game te beëindigen. Je kunt ook een sprite creëren met de naam van je game, bijv. Verzamel alle EU-programmeerweek-bubbels.'
+            'om de game te beëindigen. Je kunt ook een sprite creëren met de naam van je game, bijv. Verzamel alle EU-programmeerweek-bubbels.',
         ],
         'example' => [
             'Speel een videosensing-game Verzamel alle EU-programmeerweek-bubbels. Voel je vrij een remix te maken',
-            'van dit project'
-        ]
+            'van dit project',
+        ],
     ],
 
     'calming-leds' => [
-        'title' =>
-            'Rustgevende leds: creëer een eenvoudig apparaat met micro:bit',
+        'title' => 'Rustgevende leds: creëer een eenvoudig apparaat met micro:bit',
         'author' => 'Micro:bit Educational Foundation',
         'duration' => '20 minuten',
         'materials' => [
             'een micro:bit-apparaat en accu (indien beschikbaar)',
             'een laptop of tablet waarmee je Microsoft MakeCode en Youtube kunt bezoeken',
-            'microbit.org voor de bronnen van de activiteit'
+            'microbit.org voor de bronnen van de activiteit',
         ],
-        'description' =>
-            'Leerlingen creëren een digitaal apparaat met behulp van leds dat hen kan helpen hun ademhaling te reguleren en zich rustiger te voelen. Ze worden gevraagd eenvoudige code te schrijven en animaties en sequenties uit te proberen.',
+        'description' => 'Leerlingen creëren een digitaal apparaat met behulp van leds dat hen kan helpen hun ademhaling te reguleren en zich rustiger te voelen. Ze worden gevraagd eenvoudige code te schrijven en animaties en sequenties uit te proberen.',
         'instructions' => [
             'Het doel is een werkend, rustgevend led-apparaat maken dat je kunt gebruiken om je ademhaling te reguleren. Dit apparaat kan worden gemaakt op een fysiek micro:bit-bord, of op de simulator in de MakeCode-editor.',
             'De uitdaging kan worden uitgevoerd door de MakeCode-editor te gebruiken en een eenvoudige codesequentie te schrijven zoals in de video/het screenshot wordt getoond.',
             'Om de uitdaging te ontwikkelen, kunnen leerlingen verschillende animaties onderzoeken en aan de slag gaan met de animatie waarvan ze willen dat die hen helpt om rustig of vrolijk te worden.',
             'Meer informatie en video-instructies op',
-            'deze link'
+            'deze link',
         ],
-        'example' =>
-            'Ga naar deze pagina voor instructies en video’s van de uitgevoerde uitdaging plus hoe je programmeert',
+        'example' => 'Ga naar deze pagina voor instructies en video’s van de uitgevoerde uitdaging plus hoe je programmeert',
         'purposes' => [
             'Ontwerpen van een eenvoudig digitaal voorwerp dat je kan helpen',
             'Onderzoeken van sequenties en animaties en hoe deze werken',
             'Testen en debuggen van eenvoudige code',
-            'Een ontwerp herhalen door de animaties sneller of langzamer te maken'
-        ]
+            'Een ontwerp herhalen door de animaties sneller of langzamer te maken',
+        ],
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' =>
-            'Computational Thinking en Computational Fluency met ScratchJr',
-        'author' =>
-            'Stamatis Papadakis – EU-programmeerweek-ambassadeur voor Griekenland',
+        'title' => 'Computational Thinking en Computational Fluency met ScratchJr',
+        'author' => 'Stamatis Papadakis – EU-programmeerweek-ambassadeur voor Griekenland',
         'purposes' => [
             'Kennismaken met nieuwe opdrachten en interface.',
             'Creëren van eenvoudige programma’s met eenvoudige oorzaak-en-gevolg-opdrachten.',
-            'Uitvoeren van eenvoudige debugging door uitproberen.'
+            'Uitvoeren van eenvoudige debugging door uitproberen.',
         ],
-        'description' =>
-            'In deze uitdaging integreren kinderen CT-concepten in hun projecten met behulp van de ScratchJr-app om hun verhalen aansprekender, spannender en emotioneler te maken.',
+        'description' => 'In deze uitdaging integreren kinderen CT-concepten in hun projecten met behulp van de ScratchJr-app om hun verhalen aansprekender, spannender en emotioneler te maken.',
         'instructions' => [
             'Voor ScratchJr is het niet nodig dat kinderen kunnen lezen. Alle instructies en menu-opties zijn te vinden door middel van symbolen en kleuren. De uitdaging kan worden uitgevoerd in de klas, practicumruimte of zelfs buiten, omdat geen internet nodig is.',
-            'Kinderen gebruiken de stad als achtergrond en gebruiken programmeerblokken om een auto door de stad te laten rijden.'
+            'Kinderen gebruiken de stad als achtergrond en gebruiken programmeerblokken om een auto door de stad te laten rijden.',
         ],
         'example' => [
             'Kinderen kunnen geluids- en bewegingsblokken en herhaalblokken gebruiken om personages te laten dansen.',
-            'Kinderen kiezen een achtergrond en een personage en gebruiken een bewegingsblok om een auto door de stad te laten rijden. Kinderen kunnen het snelheidsblok gebruiken om een personage sneller of langzamer te laten bewegen.'
+            'Kinderen kiezen een achtergrond en een personage en gebruiken een bewegingsblok om een auto door de stad te laten rijden. Kinderen kunnen het snelheidsblok gebruiken om een personage sneller of langzamer te laten bewegen.',
         ],
         'materials' => [
             'De gratis app',
             'werkt op verschillende besturingssystemen en op verschillende soorten slimme apparaten',
             'En de',
-            'website biedt veel gratis onderwijsmateriaal'
+            'website biedt veel gratis onderwijsmateriaal',
         ],
-        'duration' => '90 minuten'
+        'duration' => '90 minuten',
     ],
     'ai-hour-of-code' => [
         'title' => 'Uurtje AI programmeren',
@@ -231,85 +221,77 @@ return [
         'purposes' => [
             'Creëren van programmeeroplossingen met sequenties, events, loops en conditionals',
             'Ontleden van de stappen die nodig zijn om een probleem op te lossen via een nauwkeurige opeenvolging van instructies (sequentie)',
-            'Uitproberen van programmeerconcepten'
+            'Uitproberen van programmeerconcepten',
         ],
-        'description' =>
-            'Een dorp wordt door brand bedreigd en heeft jou nodig om een oplossing te programmeren! Ontmoet je programmeerassistent, de Minecraft Agent, en programmeer de Agent om het bos te doorzoeken en gegevens te verzamelen. Deze gegevens helpen de Agent te voorspellen waar branden zullen ontstaan. Programmeer de Agent vervolgens om te voorkomen dat het vuur zich verspreidt, levens te redden en het bos weer tot leven te brengen. Leer de basis van het programmeren en werk met een levensecht voorbeeld van kunstmatige intelligentie (AI).',
+        'description' => 'Een dorp wordt door brand bedreigd en heeft jou nodig om een oplossing te programmeren! Ontmoet je programmeerassistent, de Minecraft Agent, en programmeer de Agent om het bos te doorzoeken en gegevens te verzamelen. Deze gegevens helpen de Agent te voorspellen waar branden zullen ontstaan. Programmeer de Agent vervolgens om te voorkomen dat het vuur zich verspreidt, levens te redden en het bos weer tot leven te brengen. Leer de basis van het programmeren en werk met een levensecht voorbeeld van kunstmatige intelligentie (AI).',
         'instructions' => 'Download het lesplan hier',
         'materials' => [
             'Installeer Minecraft: Education Edition',
             'Na installatie van Minecraft Education Edition staat de uitdaging op',
-            'deze website'
-        ]
+            'deze website',
+        ],
     ],
     'create-a-dance' => [
         'title' => 'Creëer een dans op de ‘Ode to Code’!',
-        'purposes' =>
-            'Programmeren op een leuke manier oefenen en je verbonden voelen met de EU-programmeerweek-gemeenschap.',
+        'purposes' => 'Programmeren op een leuke manier oefenen en je verbonden voelen met de EU-programmeerweek-gemeenschap.',
         'description' => [
             'Creëer een dans op de ‘Ode to Code’! Gebruik de ',
             'tutorial Dansfeest',
-            'om een dans te programmeren op de ‘Ode to Code’. Het officiële EU-programmeerweek-lied is een van de opties onder Dansfeest.'
+            'om een dans te programmeren op de ‘Ode to Code’. Het officiële EU-programmeerweek-lied is een van de opties onder Dansfeest.',
         ],
         'instructions' => [
             'Instructies worden in de vorm van video’s getoond binnen',
             'de tutorial',
-            'en zijn ook bovenaan ieder level te vinden'
+            'en zijn ook bovenaan ieder level te vinden',
         ],
-        'example' =>
-            'De mooiste creaties van leerlingen zijn te vinden op de volgende pagina',
-        'materials' => 'De Code.org-tutorial'
+        'example' => 'De mooiste creaties van leerlingen zijn te vinden op de volgende pagina',
+        'materials' => 'De Code.org-tutorial',
     ],
     'create-a-simulation' => [
         'title' => 'Creëer een simulatie!',
         'purposes' => [
             'Meer leren over simulaties waarbij de volgende variabelen worden geïntroduceerd: een menigte creëren, herstelpercentages, dragen van mondmaskers en vaccins.',
-            'Activeren van aanwezige kennis over virusuitbraken in de echte wereld die van toepassing is op een fictief scenario.'
+            'Activeren van aanwezige kennis over virusuitbraken in de echte wereld die van toepassing is op een fictief scenario.',
         ],
-        'description' =>
-            'Schrijf code om je eigen simulatie van de virusuitbraak in Monster Town te creëren en uit te voeren. Leer programmeren en voorspel wat er gaat gebeuren met de buren van Monster Town.',
+        'description' => 'Schrijf code om je eigen simulatie van de virusuitbraak in Monster Town te creëren en uit te voeren. Leer programmeren en voorspel wat er gaat gebeuren met de buren van Monster Town.',
         'instructions' => [
             'Instructies worden in de vorm van video’s getoond binnen',
             'de tutorial',
-            'en zijn ook bovenaan ieder level te vinden'
+            'en zijn ook bovenaan ieder level te vinden',
         ],
-        'example' =>
-            'Wanneer je klaar bent, kun je je simulatie met anderen delen. Deel je ideeën over wat we volgens jou kunnen doen om anderen gezond te houden wanneer we getroffen worden door een virus.',
-        'materials' => 'De Code.org-tutorial'
+        'example' => 'Wanneer je klaar bent, kun je je simulatie met anderen delen. Deel je ideeën over wat we volgens jou kunnen doen om anderen gezond te houden wanneer we getroffen worden door een virus.',
+        'materials' => 'De Code.org-tutorial',
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Creëer je eigen meesterwerk!',
         'audience' => 'Alle leeftijden',
-        'purpose' =>
-            'Kennismaken met concepten van computerwetenschap en creativiteit inspireren',
-        'description' =>
-            'Creëer je eigen meesterwerk met Kunstenaar! Gebruik codeblokken om je kunstenaar een uniek kunstwerk te laten maken.',
+        'purpose' => 'Kennismaken met concepten van computerwetenschap en creativiteit inspireren',
+        'description' => 'Creëer je eigen meesterwerk met Kunstenaar! Gebruik codeblokken om je kunstenaar een uniek kunstwerk te laten maken.',
         'instructions' => 'Instructies zijn bovenaan ieder level te vinden',
         'example' => 'Voorbeelden zijn te vinden op deze pagina onder Tekenen',
-        'materials' => ['Het eerste level van de tutorial vind je', 'HIER']
+        'materials' => ['Het eerste level van de tutorial vind je', 'HIER'],
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'CS First Unplugged-activiteiten',
         'purposes' => [
             'Ondersteunen van leerlingen die onderwijs vanuit huis volgen',
-            'Iedereen even losmaken van het scherm'
+            'Iedereen even losmaken van het scherm',
         ],
-        'description' =>
-            'CS First Unplugged is een reeks activiteiten die leerlingen laten kennismaken met CS-concepten zonder computer. We hebben de les ontwikkeld om te laten zien dat Computer Science veel meer is dan alleen code.',
+        'description' => 'CS First Unplugged is een reeks activiteiten die leerlingen laten kennismaken met CS-concepten zonder computer. We hebben de les ontwikkeld om te laten zien dat Computer Science veel meer is dan alleen code.',
         'instructions' => [
             'Het Engelstalige boekje met alle activiteiten vind je via deze',
             'link',
             'en een Engelstalig lesplan vind je via deze',
             'De activiteiten in deze les kunnen individueel worden uitgevoerd en in willekeurige volgorde',
-            'De leraar kan een foto van het leerproces maken en deze delen op Instagram met #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'De leraar kan een foto van het leerproces maken en deze delen op Instagram met #EUCodeWeekChallengeGoogle #GrowWithGoogle',
         ],
         'materials' => [
             'Naast het boekje met activiteiten zijn voor een aantal activiteiten extra materialen nodig of handig.',
             'Kleine voorwerpen (zoals gedroogde bonen) om te gebruiken op de Network a Neighborhood-kaart.',
             'Een schaar om het Send a Secret Message-codewiel uit te knippen.',
             'Karton en lijm om het Send a Secret Message-codewiel steviger te maken.',
-            'Een punaise, tandenstoker, splitpen of rechtgebogen paperclip om de cirkels van het Send a Secret Message-codewiel aan elkaar vast te maken.'
-        ]
+            'Een punaise, tandenstoker, splitpen of rechtgebogen paperclip om de cirkels van het Send a Secret Message-codewiel aan elkaar vast te maken.',
+        ],
     ],
     'family-care' => [
         'title' => 'Gezinszorg',
@@ -321,14 +303,14 @@ return [
             'Problemen zien als kansen en tot creatieve oplossingen komen;',
             'Programmeren gebruiken om op een innovatieve manier tot oplossingen te komen;',
             'Posters ontwerpen en je oplossingen aan anderen presenteren;',
-            'Sociale media inzetten om je projecten impact te geven. '
+            'Sociale media inzetten om je projecten impact te geven. ',
         ],
         'description' => [
             'Wat komt in je op als we praten over thuis ? Een fijn huis ? Lekker eten dat door je ouders is klaargemaakt ? Een(geheim) plekje voor jezelf ? Een warm thuis zorgt ervoor dat lichaam en geest kunnen bijtanken. Tegenwoordig zijn ouders vaak druk met gezin en werk. Wanneer je bij vrienden bent, kun je je katjes niet alleen laten. Maar hoe zorg je voor je dierbaren als je niet samen bent ? Het thema van deze uitdaging is',
             'Gezinszorg',
             'Op basis van dit thema worden leerlingen gestimuleerd om ideeën te ontwikkelen over hoe je liefde en zorg kunt geven met behulp van programmeren en hardware. Dit zijn enkele vragen waar je over kunt nadenken',
             'Met hoeveel gezinsleden woon je thuis ? Wie zijn zij ? Loop je tegen problemen aan als jullie samen zijn ? Wat voor type zorg hebben zij nodig ? ',
-            'Ken je iemand bij wie het, meer dan bij anderen in je gemeenschap, aan gezinszorg ontbreekt ? Hoe kun je hem of haar helpen ? '
+            'Ken je iemand bij wie het, meer dan bij anderen in je gemeenschap, aan gezinszorg ontbreekt ? Hoe kun je hem of haar helpen ? ',
         ],
         'instructions' => [
             'Brainstorm en doe onderzoek naar het thema gezinszorg',
@@ -337,7 +319,7 @@ return [
             'Selecteer een oplossing',
             'Programmeer en bouw de structuur',
             'Ontwerp een poster waarop je je project uiteenzet',
-            'Presenteer je project aan je leraren en gezinsleden'
+            'Presenteer je project aan je leraren en gezinsleden',
         ],
         'example' => ['Voorbeelden vind je ', 'en'],
         'materials' => [
@@ -349,23 +331,21 @@ return [
             'Het deelnemende team zal over dit thema moeten nadenken en een oplossing uitdenken door software te programmeren en hardware te bouwen. ',
             'Leerlingen worden gestimuleerd om de uitdaging tijdens de Codeweek uit te voeren en het naar internationaal niveau te tillen om met andere leerlingen te communiceren en prijzen te winnen. ',
             'Ga voor meer informatie naar:',
-            'of neem contact met ons op via'
-        ]
+            'of neem contact met ons op via',
+        ],
     ],
     'virtual-flower-field' => [
         'title' => 'Creëer je virtuele bloemenweide',
-        'author' =>
-            'Jadga Huegle – Meet and Code-coach en lid van het SAP Snap!-team',
+        'author' => 'Jadga Huegle – Meet and Code-coach en lid van het SAP Snap!-team',
         'duration' => '30-60 minuten',
         'purposes' => [
             'Kennismaken met programmeren met een eenvoudig maar aansprekend project. ',
             'Leren dat programmeren kunstzinnig kan zijn en tot prachtige resultaten kan leiden. ',
             'De herfst vrolijker maken met kleurige bloemen en de EU-programmeerweek. ',
             'De diversiteit laten zien van de bloemen in de wereld. ',
-            'Bijdragen aan de doelstellingen voor duurzame ontwikkeling, met name doelstelling 13 – Klimaatverandering, door events te programmeren die leiden tot beter onderwijs over klimaatverandering door bewustwording te creëren. '
+            'Bijdragen aan de doelstellingen voor duurzame ontwikkeling, met name doelstelling 13 – Klimaatverandering, door events te programmeren die leiden tot beter onderwijs over klimaatverandering door bewustwording te creëren. ',
         ],
-        'description' =>
-            'Ontwikkel een programma in Snap!waarmee je een virtuele bloemenweide kunt creëren met verschillende soorten bloemen, met verschillende aantallen bloemblaadjes. ',
+        'description' => 'Ontwikkel een programma in Snap!waarmee je een virtuele bloemenweide kunt creëren met verschillende soorten bloemen, met verschillende aantallen bloemblaadjes. ',
         'instructions' => [
             'Heb je inspiratie nodig om met deze uitdaging aan de slag te gaan ? Bekijk',
             'deze video',
@@ -374,25 +354,23 @@ return [
             'om mee te doen',
             'De uitdaging kan worden uitgevoerd door een virtuele bloemenweide te programmeren in Snap!(of Scratch) en een screenshot of foto van het resultaat online te zetten. ',
             'De bloemenweide moet verschillende soorten bloemen bevatten, met verschillende aantallen bloemblaadjes. Het is het best als de bloemen worden geprogrammeerd. Dit betekent dat ze worden gemaakt door de bloemblaadjes steeds te stempelen en te draaien(of te tekenen en te draaien).',
-            'Post een afbeelding van je virtuele bloemenweide met #MeetandCode.'
+            'Post een afbeelding van je virtuele bloemenweide met #MeetandCode.',
         ],
         'materials' => [
             'We adviseren het gebruik van',
-            'maar het project werkt ook in'
-        ]
+            'maar het project werkt ook in',
+        ],
     ],
     'haunted-house' => [
         'title' => 'Spookhuis in Hedy',
-        'author' =>
-            'Felienne Hermans, Universiteit Leiden – Ramon Moorlag, I&I-CodeWeek NL',
+        'author' => 'Felienne Hermans, Universiteit Leiden – Ramon Moorlag, I&I-CodeWeek NL',
         'audience' => 'Leraren en opvoedkundigen',
         'duration' => '1 of 2 uur, afhankelijk van aanwezige kennis',
         'purposes' => [
             'Een interactief spookhuisverhaal maken.',
-            'Leren programmeren met Hedy.'
+            'Leren programmeren met Hedy.',
         ],
-        'description' =>
-            'Met Hedy ga je een spookhuisverhaal maken met interactieve elementen. Iedere keer als de code wordt uitgevoerd, wordt een nieuw verhaal gecreëerd. Het verhaal kan ook hardop worden voorgelezen door je computer en online gedeeld.',
+        'description' => 'Met Hedy ga je een spookhuisverhaal maken met interactieve elementen. Iedere keer als de code wordt uitgevoerd, wordt een nieuw verhaal gecreëerd. Het verhaal kan ook hardop worden voorgelezen door je computer en online gedeeld.',
         'instructions' => [
             'Open een browser en ga naar hedycode.com.',
             'Volg de instructies voor levels 1-4. Gebruik de tabs ‘Level’ en ‘Spookhuis’.',
@@ -400,20 +378,19 @@ return [
             'Leraren vinden hun Hedy-lesplan',
             'hier',
             'Een video waarin Felienne Hermans Hedy toelicht vind je via',
-            'deze link'
+            'deze link',
         ],
         'example' => 'Spookhuis – voorbeeld level',
-        'materials' => ['Hedy op', 'level 1 tot 4']
+        'materials' => ['Hedy op', 'level 1 tot 4'],
     ],
     'inclusive-app-design' => [
         'title' => 'Ontwerp van een inclusieve app',
         'author' => 'Apple Education',
         'duration' => '60 minuten + optionele uitbreidingsactiviteiten',
         'purposes' => [
-            'Brainstormen, plannen, een prototype maken en een idee delen voor een app die voor iedereen toegankelijk is en die iedereen kan begrijpen.'
+            'Brainstormen, plannen, een prototype maken en een idee delen voor een app die voor iedereen toegankelijk is en die iedereen kan begrijpen.',
         ],
-        'description' =>
-            'Geweldige apps beginnen met een geweldig idee. Bij deze activiteit komen leerlingen met een idee voor een app over een onderwerp dat zij belangrijk vinden. Ze ontdekken vervolgens hoe ze een app kunnen ontwerpen die inclusief en toegankelijk is.',
+        'description' => 'Geweldige apps beginnen met een geweldig idee. Bij deze activiteit komen leerlingen met een idee voor een app over een onderwerp dat zij belangrijk vinden. Ze ontdekken vervolgens hoe ze een app kunnen ontwerpen die inclusief en toegankelijk is.',
         'instructions' => [
             'Alle instructies vind je via deze link',
             'Met dit lesplan van één uur kunnen leraren ervoor zorgen dat leerlingen',
@@ -421,12 +398,12 @@ return [
             'brainstormen over onderwerpen die zij belangrijk vinden om te komen tot een idee voor een app',
             'hun app-ideeën uiteenzetten en activiteiten voor gebruikers plannen',
             'een prototype van een deel van hun app maken in Keynote',
-            'demo’s van hun prototypes delen en beschrijven hoe zij gebruikers met verschillende achtergronden en mogelijkheden steunen'
+            'demo’s van hun prototypes delen en beschrijven hoe zij gebruikers met verschillende achtergronden en mogelijkheden steunen',
         ],
         'materials' => [
             'Verken de Inclusive App Design Activity in het Apple Teacher Learning Center',
-            'Keynote op de iPad of Mac wordt aanbevolen, maar is niet vereist.'
-        ]
+            'Keynote op de iPad of Mac wordt aanbevolen, maar is niet vereist.',
+        ],
     ],
     'silly-eyes' => [
         'title' => 'Wiebelogen',
@@ -435,58 +412,423 @@ return [
         'purposes' => [
             'Creëren van een project met gebruikersinteractie.',
             'Personaliseren van een project met kleur- en grafische effecten.',
-            'Leren over ontwerp bij digitaal creëren.'
+            'Leren over ontwerp bij digitaal creëren.',
         ],
-        'description' =>
-            'In dit project ontwerp en maak je een personage met wiebelogen. De grote wiebelogen van het personage volgen de muisaanwijzer en brengen je personage tot leven.',
+        'description' => 'In dit project ontwerp en maak je een personage met wiebelogen. De grote wiebelogen van het personage volgen de muisaanwijzer en brengen je personage tot leven.',
         'instructions' => 'De volledige projectbeschrijving vind je hier',
-        'example' => 'Bekijk Gobo, Under the sea en Don\'t eat donut'
+        'example' => 'Bekijk Gobo, Under the sea en Don\'t eat donut',
     ],
     'train-ai-bot' => [
         'title' => 'Train een AI-bot!',
-        'purposes' =>
-            'Leren over kunstmatige intelligentie (AI), machine learning, trainen van gegevens, en vooringenomenheid, terwijl je je verdiept in ethische kwesties en onderzoekt hoe AI kan worden gebruikt voor het aanpakken van wereldproblemen.',
-        'description' =>
-            'Train een AI-bot met AI for Oceans (AI voor oceanen). Bij deze activiteit programmeer of train je AI (kunstmatige intelligentie) om vis van afval te onderscheiden. Laten we de oceaan schoonmaken!',
+        'purposes' => 'Leren over kunstmatige intelligentie (AI), machine learning, trainen van gegevens, en vooringenomenheid, terwijl je je verdiept in ethische kwesties en onderzoekt hoe AI kan worden gebruikt voor het aanpakken van wereldproblemen.',
+        'description' => 'Train een AI-bot met AI for Oceans (AI voor oceanen). Bij deze activiteit programmeer of train je AI (kunstmatige intelligentie) om vis van afval te onderscheiden. Laten we de oceaan schoonmaken!',
         'instructions' => [
             'Instructies worden in de vorm van video’s getoond binnen de tutorial',
-            'en zijn ook bovenaan ieder level te vinden'
+            'en zijn ook bovenaan ieder level te vinden',
         ],
         'materials' => [
             'De tutorial vind je hier',
-            'Deze tutorial is beschikbaar in meer dan 25 talen'
-        ]
+            'Deze tutorial is beschikbaar in meer dan 25 talen',
+        ],
     ],
 
     'build-calliope' => [
-        'title' => "Bouw je eigen Calliope mini-fitnesstrainer",
-        'author' => "Amazon Future Engineer | Meet and Code feat. Calliope GmbH",
+        'title' => 'Bouw je eigen Calliope mini-fitnesstrainer',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope GmbH',
         'purposes' => [
-            "Leer spelenderwijs meer over reeksen, animaties, herhalingen en variabelen.",
-            "Ontwerp een structuurschema.",
-            "Test en debug code.",
-            "Optimaliseer een programma door middel van trial and error, controle en het aanpassen van gebruiksvriendelijkheid.",
+            'Leer spelenderwijs meer over reeksen, animaties, herhalingen en variabelen.',
+            'Ontwerp een structuurschema.',
+            'Test en debug code.',
+            'Optimaliseer een programma door middel van trial and error, controle en het aanpassen van gebruiksvriendelijkheid.',
         ],
-        'duration' => "20-30 minuten",
-        'description' =>
-            "Deelnemers gaan een digitaal gecontroleerd prototype ontwikkelen dat gekleurde leds gebruikt om vooraf bedachte fitnessoefeningen met 10 onderdelen te reproduceren.",
+        'duration' => '20-30 minuten',
+        'description' => 'Deelnemers gaan een digitaal gecontroleerd prototype ontwikkelen dat gekleurde leds gebruikt om vooraf bedachte fitnessoefeningen met 10 onderdelen te reproduceren.',
         'materials' => [
-            "Calliope mini StarterBox (indien beschikbaar)",
+            'Calliope mini StarterBox (indien beschikbaar)',
             'Een laptop of tablet waarmee je naar <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> of <a href="https://calliope.cc">https://calliope.cc</a> en YouTube kunt gaan om toegang te krijgen tot de bronnen voor deze activiteit.',
         ],
         'instructions' => [
-            "Zet om te beginnen een plan op en bepaal de volgorde van de fitnessonderdelen. Programmeer de RGB-led van de Calliope mini met gebruik van het schema om één van de 5 kleuren weer te geven op het vooraf bepaalde tempo. Creëer daarna een variabele voor het tempo en programmeer herhalingen met behulp van loops.",
+            'Zet om te beginnen een plan op en bepaal de volgorde van de fitnessonderdelen. Programmeer de RGB-led van de Calliope mini met gebruik van het schema om één van de 5 kleuren weer te geven op het vooraf bepaalde tempo. Creëer daarna een variabele voor het tempo en programmeer herhalingen met behulp van loops.',
             "Vergeet niet dat je je programma ook met ons kan delen via info@calliope.cc - we zien graag wat je hebt gemaakt! We verloten trouwens ook 30 Calliope mini's onder de inzendingen!",
-            "Deel de QR-code van jouw project op Instagram, voeg de hashtag #CodeWeekChallenge toe en gebruik @CodeWeekEU.",
+            'Deel de QR-code van jouw project op Instagram, voeg de hashtag #EUCodeWeekChallenge toe en gebruik @CodeWeekEU.',
         ],
         'example' => [
-            "Je kunt ook sporten terwijl je achter de computer zit.",
-            "Creëer een fitnessprototype met de Calliope mini die ook getest kan worden in de simulator. De uitdaging wordt gedaan in de MakeCode-editor door een simpele codereeks te programmeren (zie screenshot).",
-            "Kies 5 verschillende kleuren en wijs aan elk een fitnessoefening toe, bijv. squats of jumping jacks. De kleuren kunnen op elke volgorde worden weergegeven en getraind.",
+            'Je kunt ook sporten terwijl je achter de computer zit.',
+            'Creëer een fitnessprototype met de Calliope mini die ook getest kan worden in de simulator. De uitdaging wordt gedaan in de MakeCode-editor door een simpele codereeks te programmeren (zie screenshot).',
+            'Kies 5 verschillende kleuren en wijs aan elk een fitnessoefening toe, bijv. squats of jumping jacks. De kleuren kunnen op elke volgorde worden weergegeven en getraind.',
         ],
 
-    ]
+    ],
+    'common' => [
+        'share' => 'Deel de link of QR-code van je project op Instagram of Facebook, voeg de hashtag #EUCodeWeekChallenge toe en vermeld @CodeWeekEU.',
+        'audience' => [
+            'Leraren en opvoeders',
+            'basisschool (6 tot 12 jaar)',
+            'onderbouw middelbare school (12 tot 16 jaar)',
+            'bovenbouw middelbare school (16 tot 18 jaar)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Programmeer een dobbelsteen om te rollen',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Programmeren van interactieve raadsels',
+            'Programmeren van een model van een willekeurig bewegend object dat kan worden gebruikt als het echte object niet beschikbaar is',
+        ],
+        'description' => 'In deze uitdaging programmeer je een dobbelsteen om op een willekeurige manier te rollen als jij daarvoor opdracht geeft. Je kunt ieder type dobbelsteen kiezen, met zoveel vlakken als je wilt (zoals de dobbelstenen die in rollenspelen worden gebruikt), en ook geluiden toevoegen.',
+        'instructions' => [
+            'Log in op Scratch',
+            'Kies een achtergrond',
+            'Creëer je dobbelsteen-sprite of zoek een sprite op internet en upload deze naar je programma',
+            'Creëer zoveel kostuums voor de sprite als het aantal vlakken van de gekozen dobbelsteen, elk met een ander getal erop',
+            'Kies hoe je de dobbelsteen wilt laten rollen (door het indrukken van een toets op het toetsenbord, door op de sprite te klikken, enz.) en schrijf de code',
+            'Programmeer de sprite om willekeurig van kostuum te veranderen aan het eind van de rol',
+            'Voeg geluidseffecten toe',
+        ],
+        'example' => 'Rol een D20-dobbelsteen',
+    ],
+    'personal-trainer' => [
+        'title' => 'Personal trainer met een micro:bit',
+        'author' => '',
+        'purposes' => [
+            'Programmeren van een micro:bit om zoemer en ledpaneel te gebruiken',
+            'Creëren van een persoonlijk apparaat om je lichaamsbeweging te monitoren',
+            'Programmeren van een micro:bit om je gezondheid te verbeteren door sport',
+        ],
+        'description' => 'Met deze uitdaging kun je je micro:bit programmeren om oefen- en rusttijden aan te geven tijdens het doen van je lichamelijke oefeningen. Je monitort je lichaamsbeweging op school, thuis of in het park.',
+        'instructions' => [
+            'Wanneer A+B: creëer een timer die in 3 seconden aftelt waarbij elke seconde een muzieknoot klinkt en toon het woord GO!',
+            'Toon tijdens de eerste oefening gedurende 20 seconden een knipperend vierkant van 2x2. Speel vervolgens een geluid af en houd het vierkant stil. Tijdens de resterende tijd moet gedurende 10 seconden een andere knipperende afbeelding worden getoond. Wanneer dit klaar is: speel een geluid af.',
+            'Herhaal vervolgens dezelfde actie maar toon gedurende de oefentijd een vierkant van 3x3. Herhaal deze actie totdat het vierkant van 5x5 wordt getoond.',
+        ],
+        'duration' => '30-40 minuten',
+    ],
+    'create-a-spiral' => [
+        'title' => 'Maak een spiraal',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Kennismaken en oefenen met lussen en variabelen.',
+            'Bevorderen van creativiteit bij programmeren.',
+            'description' => 'In deze uitdaging schrijf je met Scratch een project om een spiraal te creëren met behulp van de pen-blokken, een lus en een variabele.',
+
+            'instructions' => [
+                'De pen-blokken',
+                'Creëer een nieuw project en noem het Spiraal.',
+                'Klik op het paarse icoontje “Voeg een uitbreiding toe” linksonder op het scherm',
+                'Selecteer “pen”: de pen-blokken zijn nu beschikbaar voor je project!',
+                'Om je project te starten, sleep je het blok “wanneer op groene vlag wordt geklikt” naar het programmeerveld:',
+                'Je moet met een lege pagina beginnen: binnen de pen-blokken voeg je het “wis alles”-blok toe:',
+                'Je wilt beginnen met tekenen in het midden van het veld, wat betekent dat je sprite naar het midden van het veld moet gaan (0,0):',
+                'Je sprite kan bewegen zonder te tekenen, of bewegen en tekenen:',
+                'wanneer je wilt dat je sprite tekent, gebruik je het “pen neer”-blok',
+                'wanneer je dat niet wilt, gebruik je het “pen op”-blok',
+                'Nu wil je tekenen! Voeg het “pen neer”-blok toe:',
+                'De zeshoek',
+                'Voeg onderstaande blokken toe aan je project:',
+                'Je hebt nu een zesde van je zeshoek. Deze sequentie moet je 6 keer herhalen:',
+                'De spiraal',
+                'Om een spiraal te creëren, moet je 2 toevoegen aan de lengte van elke volgende zijde.',
+                'Hiervoor gebruik je een <strong>variabele.</strong>',
+                'Klik in het Variabelen-blok op “Maak een variabele”',
+                'Noem deze lengte en klik op OK:',
+                'De spiraal zal gaan groeien, je moet klein beginnen: stel de eerste lengte in op 10 en voeg dit blok in voor de lus.',
+                'Voeg de variabele “lengte” in in het “neem … stappen”-blok',
+                'Om de spiraal te laten groeien, moet je ook in iedere lus de lengte groter maken: voeg het blok onderaan toe aan het eind van de lus:',
+                'Hier is je huidige project:',
+                'Een prachtige spiraal ',
+                'Je hebt een spiraal getekend! Voor een oneindige spiraal vervang je de “herhaal 6”-lus met de lus “oneindig”:',
+                'Voor een kleurrijke spiraal voeg je het volgende blok toe in de lus:',
+                'Wanneer je opnieuw begint, tekent de sprite een ongewenste lijn. Om dit te voorkomen, voeg je een “pen op”-blok toe aan het begin van het project.',
+                'Hier is je eindproject:',
+                'Gefeliciteerd! Je hebt een mooie spiraal gemaakt!',
+            ],
+
+        ],
+    ],
+    'play-against-ai' => [
+        'title' => 'Creëer en speel tegen AI - Steen, Papier, Schaar',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'Begrijpen hoe de cyclus van machine learning werkt.',
+            'Bouwen van een machine learning model met behulp van Teachable Machine',
+            'Bekend worden met de Pictoblox-tool en importeren van het gecreëerde model in het project',
+            'Instellen van het veld en de personages, creëren en initialiseren van variabelen in Pictoblox',
+            'Initialiseren van het spel, identificeren van bewegingen van spelers, programmeren van willekeurige AI-bewegingen',
+            'Creëren en testen van een game met AI als tegenspeler in een spelletje steen, papier, schaar.',
+
+        ],
+        'description' => 'We gaan met behulp van Teachable Machine een model maken met afbeeldingen waarbij we drie klassen gebruiken: Steen, Papier en Schaar. Het model wordt geladen in Pictoblox en gebruikt om een game te maken die we kunnen spelen tegen AI.',
+        'duration' => '90 minuten',
+        'instructions' => [
+            'Creëer een nieuw image project op Teachable Machine met 3 klassen genaamd Steen, Papier en Schaar. Neem voor iedere klasse ten minste 400 foto\'s met een camera. Zorg voor een heldere achtergrond. Train en exporteer het model. Upload het model en kopieer de link.',
+            'Maak een gratis account aan op de Pictoblox-website. Voeg een uitbreiding voor machine learning toe en upload een model. Stel het veld, de variabelen en sprites in. Initialiseer de game, identificeer de bewegingen van de spelers en de bewegingen van AI, en wie de ronde wint.',
+            'Train de data voor het spel.',
+            'Test het model.',
+            'Exporteer het model.',
+            'Voeg de uitbreiding machine learning toe en upload het model.',
+            'Stel veld, variabelen en sprite in.',
+            'Initialiseer de game.',
+            'Identificeer bewegingen van de speler.',
+            'Stel willekeurige AI-bewegingen in.',
+            'Zend willekeurige AI-bewegingen uit.',
+            'Maak drie blokken. Wie wint de ronde?',
+            'Controleer of de speler de ronde wint.',
+            'Controleer of AI de ronde wint.',
+            'Controleer of de ronde in gelijkspel eindigt.',
+            'Programmeerblokken.',
+            'Steen Papier Schaar-sprite',
+        ],
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Luchttekening met AI',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'Schrijven van een programma met behulp van de uitbreiding Human Body Detection om de beweging van vingers voor de camera te herkennen.',
+            'Programmeren met eenvoudige blokken in enkele regels code.',
+            'Zien van een voorbeeld van het gebruik van AI',
+        ],
+        'description' => 'Een programma creëren waarmee gebruikers voor de camera in de lucht kunnen tekenen met hun hand (wijsvinger) en waarbij alles wat zij tekenen automatisch op de Pictoblox-stage wordt weergegeven.',
+        'instructions' => [
+            'Maak een account aan op Pictoblox',
+            'volg de visuele instructies voor het:',
+            'toevoegen van de uitbreidingen Human Body Detection en Pen;',
+            'instellen van de stage en toevoegen van een sprite (Pencil) en extra sprites voor: Pen Down, Pen Up, Delete All;',
+            'schrijf een code voor de sprite Pencil om de vinger te volgen',
+            'schrijf een code voor de knoppen: Pen Up, Pen Down en Delete All en ook voor Pen',
+            'Nu ben je klaar om je eigen tekeningen te maken met verschillende penkleuren en -diktes.',
+        ],
+        'materials' => [
+            'Een laptop of computer met een camera',
+            'De nieuwste versie van PictoBlox gedownload (aanbevolen) of online (gratis)',
+            'Pictoblox-account (gratis)',
+            'Goede internetverbinding',
+        ],
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'De basisconcepten van machine learning en tekstherkenning leren.',
+            'De rol van emoties in communicatie begrijpen.',
+            'Code gebruiken om dialogen te creëren tussen een chatbot en een gebruiker.',
+            'Begrijpen hoe computers emoties kunnen herkennen met behulp van tekstanalyse en passend kunnen reageren.',
+        ],
+        'description' => [
+            'Creëer een Emotional Bot in Scratch die een blij gezicht kan tonen bij positieve boodschappen (als je iets aardigs zegt), een boos gezicht bij negatieve boodschappen (als je gemeen bent) en een beduusd gezicht als de boodschap onduidelijk is.',
+            'Onze Emobot Kliki zal complimenten en beledigingen herkennen zodat we kunnen zien hoe computers kunnen worden getraind om emoties te herkennen.',
+        ],
+        'instructions' => [
+            'Begin met het programmeren van een lijst regels om te bepalen wat aardig of vriendelijk is, en wat onaardig of gemeen is.',
+            'Log in op https://machinelearningforkids.co.uk/ of maak een nieuw account aan.',
+            'Maak een nieuw machine learning model waarbij je 3 nieuwe labels toevoegt, noem het eerste “aardig”, het tweede “onaardig” en – dit is optioneel – als je wilt dat de robot je naam herkent, maak je een derde label “naam”.',
+            'Train het nieuwe machine learning model, test het en gebruik het voor het maken van een Emobot in Scratch.',
+            'Start de Scratch 3-editor, verwijder de Cat-sprite, voeg 3 nieuwe sprites in die zijn gemaakt door Microsoft Bing Image Creator (de computertekeningen blij, boos en onzeker) of creëer een nieuwe sprite door op het Paint-icoontje te klikken en drie exemplaren van het kostuum te tekenen voor de gezichten blij, boos en onzeker.',
+            'Klik op de “Code”-tab en voer het volgende script in.'],
+        'example' => [
+            'Deel je Emobot Kliki met je vrienden en leer meer over AI en emoties!',
+            'In plaats van een computertekening kun je iets anders proberen, zoals een dier. In plaats van aardig en gemeen kun je het personage trainen om andere soorten boodschappen te herkennen.',
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => 'Handgemaakte magie met AI-handgebaren',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'Bevorderen van programmeervaardigheden onder leerlingen waardoor zij basiscommando’s kunnen gebruiken.',
+            'Ontwikkelen van algoritmisch denken door complexe taken op te breken in beheersbare stappen.',
+            'Aanmoedigen van creatieve probleemoplossing bij het vinden van unieke toepassingen van handgebaren voor tekenen en schrijven.',
+            'Bijdragen aan het begrip van AI-concepten, met name hoe AI computers in staat stelt handgebaren te herkennen en uit te leggen.',
+            'Creëren van bewustwording van de betekenis van technologie voor personen met een beperking.',
+            'Stimuleren van gezamenlijke probleemoplossing en teamwerk onder leerlingen als zij samenwerken om hun programma’s voor handgebaren te verbeteren.',
+            'Koppelen van programmeervaardigheden en computationeel denken aan praktische toepassingen, waarbij de belangrijke impact van technologie op mensen\mensenlevens wordt benadrukt en afgestemd op de doelstellingen voor duurzame ontwikkeling (SDGs).',
+        ],
+        'duration' => [
+            '90 min. voor leerlingen van 10-12',
+            '45 min. voor leerlingen van 12-15',
+        ],
+        'description' => 'Creëer op creatieve en boeiende wijze een op Scratch-blokken gebaseerd programma met behulp van de AI-uitbreiding “Human Body Detection” om op een scherm te tekenen zonder dat een muis of aanraakscherm nodig is.',
+        'instructions' => [
+            'Verbind met https://ai.thestempedia.com en maak een leerkrachtaccount en leerlingenaccounts aan.',
+            'Importeer de uitbreidingen ‘Human Body Detection’,’ Pen’,’ Text to Speech’.',
+            'Voeg de sprite ‘potlood’  uit de bibliotheek toe en creëer 7 sprites (‘schrijf’, ‘wis’, ‘zwart’, ‘rood’, ‘blauw’, ‘groen’, ‘roze’).',
+            'Schrijf commando’s om te controleren wat er gebeurt wanneer de sprite ‘potlood’  een van de andere sprites raakt.',
+            'Schrijf commando’s zodat de camera handbewegingen kan herkennen en beweeg het potlood naar de x- en y-coördinaten van je wijsvinger.',
+            'Verander van kostuum aan het eind van de rol.',
+            'Voeg geluidseffecten toe.',
+        ],
+        'materials' => [
+            'Programmeerplatform https://ai.thestempedia.com (gratis)',
+            'leerkrachtaccount (gratis)',
+            'leerlingaccount (gratis)',
+            'Computers met camera',
+            'Internetverbinding',
+        ],
+    ],
+    'circle-of-dots' => [
+        'title' => 'Een cirkel van stippen',
+        'author' => 'Marin Popov',
+        'purposes' => [
+            'Schrijven van een programmeercode voor het tekenen van een lijn met punten.',
+            'Schrijven van een programmeercode voor het tekenen van een lijn met streepjes.',
+            'Schrijven van een programmeercode voor het tekenen van een cirkel.',
+            'Schrijven van een programmeercode voor het tekenen van een cirkel van punten (streepjes).',
+        ],
+        'description' => 'Teken een cirkel van punten of streepjes.',
+        'duration' => '40 minuten',
+        'instructions' => [
+            'Een punt-blok bouwen.',
+            'Een streepjes-blok bouwen.',
+            'Een cirkel van punten maken.',
+            'Een cirkel van streepjes maken.',
+        ],
+    ],
+    'coding-escape-room' => [
+        'title' => 'Maak een escaperoom met code',
+        'author' => 'Stefania Altieri en Elisa Baraghini',
+        'purposes' => [
+            'Onderwijzen/leren van en reflecteren op programmeerconcepten.',
+            'Gebruiken van eenvoudige programmeertools.',
+            'Ontwikkelen van computationeel denken en probleemoplossend vermogen',
+        ], 'description' => [
+            'Zo creëer je een escape-ervaring met code:',
+            'Je kunt gebruikmaken van Google Forms, Genial.ly, Google Slides– iedere tool voor het creëren van storytelling op basis van code;).',
+
+        ],
+        'duration' => '90 minuten',
+        'instructions' => 'Je kunt je leerlingen in kleine groepen verdelen, ze kunnen spelen en vervolgens nog een uitdaging creëren met de template: ',
+
+        'materials' => [
+            'Iedere tool kan worden gebruikt (Google en Microsoft Platform om documenten, presentaties en bladen te creëren en te delen). Ieder(e) programmeerconcept, -tool of -teken gekoppeld aan ICT en programmeren.',
+        ],
+        'example' => [
+            'Spelers maken kennis met een aantal tekens die een zeer belangrijke rol hadden in de geschiedenis van ICT en basisconcepten van coderen en programmeren. Dit is de beste manier om te leren en actief deel te nemen. Deze game kan in teams worden gespeeld of alleen, als uitdaging of als wedstrijd. Leerlingen kunnen daarna iets vergelijkbaars creëren en competenties ontwikkelen als creativiteit en programmeervaardigheden.',
+            'Dit is een zeer praktisch hulpmiddel dat opnieuw kan worden gebruikt en eenvoudig kan worden nagemaakt. Google Forms is een van de mogelijke tools. Je kunt ook gebruikmaken van Google Slides, Genial.ly of Emaze, of iedere andere tool voor het creëren van je eigen verhalen en avonturen.',
+            'De escape-uitdaging is onderverdeeld in sessies. Als je het juiste antwoord weet, kun je verder. Leerlingen moeten zelf de programmeer-quizzen bedenken.',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Laat de slang bewegen',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Programmeren van de slang(-bewegingen) op hun eigen micro:bit.',
+            'Instellen van de juiste plaatsing en timing voor de gezamenlijke animatie.',
+        ],
+        'description' => 'Leerlingen moeten code schrijven om de slang door naast elkaar liggende micro:bits te navigeren. Dit moet zo worden gedaan dat het lijkt alsof de slang van de ene micro:bit naar de andere beweegt.',
+        'duration' => '30 minuten',
+        'instructions' => [
+            'Ontwerp een pad dat loopt door verschillende, naast elkaar liggende micro:bits (bijv. in een vierkant van 2x2).',
+            'Schrijf code als een slang die zich voortbeweegt over een pad.',
+            'Werk op je eigen apparaat en leg de apparaten vervolgens bij elkaar en voer de code uit.',
+            'Houd rekening met timing en plaatsing: als de slang de ene micro:bit verlaat, zal hij in de volgende micro:bit verschijnen.',
+            'Meer uitdagingen: Met micro:bit v2 kun je muziek afspelen totdat de slang je apparaat verlaat.',
+            'Geef je slang vorm door de helderheid van je leds te veranderen.',
+            'Probeer langere of meerdere slangen te maken.',
+        ],
+        'example' => [
+            'Dit is een voorbeeld voor een slang van 6 pixels met 4 micro:bits in een vierkant van 2x2: ',
+            'Programmeer de eerste micro:bit (de leerkracht kan dit doen)',
+            'Alle code wordt geïnitieerd door deze micro:bit, die een radiosignaal zendt naar andere micro:bits wanneer op de A-knop wordt gedrukt.',
+            'Coderen van de beweging van de slang',
+            'Elke micro:bit moet zich in dezelfde radiogroep bevinden als de eerste micro:bit.',
+            'Alle animaties beginnen wanneer het radiosignaal is ontvangen.',
+            'De animatie van de eerste micro:bit is onmiddellijk te zien, de andere wachten tot de slang daar arriveert.',
+            'De tijd tussen de twee fasen bepaalt de snelheid van de slang.',
+        ], 'materials' => [
+            'micro:bits (indien mogelijk voor iedere leerling)',
+            'laptop of computer voor de editor makecode.micro:bit.org',
+        ],
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Illustreer een grap met Bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Ontwerpen van een kleine game waar de gebruiker het antwoord vindt op een grappig raadsel.',
+        'description' => 'De leerlingen ontwerpen een game waarin de gebruiker het antwoord vindt op een grappig raadsel wanneer het personage een object op het speelveld raakt. De leerlingen gebruiken basisfuncties van Bitsy om de uitdaging uit te voeren.',
+        'instructions' => [
+            'Denk aan een grappig raadsel. Ga naar Bitsy en start een nieuw project. Je hebt nodig:',
+            'een avatar - sprite die je kunt laten rondbewegen',
+            'Een witte kat op een paarse achtergrond',
+            'Automatisch gegenereerde beschrijving',
+            'een object waar je avatar heen moet',
+            'een kamer - de achtergrond van je programma',
+            'twee boodschappen: een vraag en een antwoord',
+            'Het voltooide spel kan worden gedownload als html-bestand.',
+        ],
+        'example' => 'Op deze website zie je een voorbeeld van een grap en er is een link naar een digitaal whiteboard:',
+        'materials' => 'Bitsy werkt in een browser',
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'App die in verschillende talen telt',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Leren hoe je een simpele app maakt.',
+            'Leren programmeren met blokken.',
+            'Leren hoe je labels, knoppen, afbeeldingen, sensoren en media toevoegt.',
+            'Leren hoe je elementen op een app-scherm organiseert.',
+        ],
+        'description' => 'De app laat je tellen in meerdere talen zodra je op een knop drukt. Wanneer de gebruiker de smartphone schudt, gaat de teller terug naar nul. De uitdaging is nog een taal toe te voegen.',
+        'instructions' => [
+            'Voor het uitvoeren van de uitdaging moet je de andere taal bepalen waarin je de app wilt laten tellen.',
+            'Vervolgens download je van internet (bijv. van Pixabay of Unsplash) de vlag van dat land en upload je deze naar het platform MIT APP Inventor via het element “flag”, in de eigenschap “Picture”.',
+            'Vervolgens moet je weten hoe je de naam van het land spelt in het Engels en hoe je in de taal van dat land “verlaten” en “indrukken” zegt.',
+            'Tot slot moet je de benodigde blokken invoeren zodat de app in de nieuwe taal kan werken.',
+        ],
+        'materials' => [
+            'Om een app te ontwikkelen heb je een computer of laptop met internettoegang nodig.',
+            'Maak een account aan op het platform MIT APP Inventor, te bereiken via <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
+            'Het is ook nodig om de MIT AI2 Companion-app op de smartphone te installeren om de ontwikkelde applicatie te testen.',
+        ],
+    ],
+    'coding-with-art-through-storytelling' => [
+        'title' => 'Programmeren met kunst via Storytelling',
+        'author' => 'Maria Tsapara en Anthi Arkouli',
+        'purposes' => [
+            'Bevorderen van vaardigheden als observeren, interpreteren en vragen stellen door kunst.',
+            'Creatief zijn en met anderen samenwerken voor een gezamenlijk doel',
+            'Creëren van een algoritme om het verhaal na te vertellen.',
+        ],
+        'description' => 'Bij deze uitdaging worden leerlingen geïnspireerd door een kunstwerk, en gaan ze een verhaal bedenken en illustreren. Vervolgens gaan ze proberen het verhaal na te vertellen met behulp van een programmeerbare robotkit of als activiteit zonder computer.',
+        'materials' => [
+            'Deze activiteit kan worden uitgevoerd als activiteit zonder computer of met behulp van een educatieve programmeerbare robot zoals een Bee-Bot/Blue-Bot/muisrobot.',
+            'Bee-Bot routekaarten of routekaarten voor de activiteit zonder computer',
+            'in het Grieks',
+            'Ga voor meer informatie over (de Thinking Routine Toolbox van) Project Zero naar',
+
+        ],
+        'example' => [
+            'Leerkracht en leerlingen ontwerpen met de routekaarten een algoritme dat de Bee-Bot of andere robot instructies geeft om op de mat naar de eerste gebeurtenis uit het verhaal te gaan. Leerlingen werken in teams van 3-4 om voor de robot een algoritme te ontwerpen om naar de volgende sequentie te gaan. Leerlingen testen hun algoritmen op de mat in de klas en passen deze waar nodig aan.',
+            'Ze proberen langs zoveel mogelijk gebeurtenissen uit het verhaal te bewegen',
+            'Deze activiteit kan ook worden uitgevoerd als activiteit zonder computer.',
+            'Eén kind is de robot - een ander kind de programmeur. Deze programmeur ontwerpt met behulp van de routekaarten een algoritmisch pad om de robot van de ene naar de andere afbeelding te helpen bewegen en het verhaal na te vertellen. Iedere keer als de robot een afbeelding bereikt, wordt deze gevraagd een deel van het verhaal te vertellen.',
+        ],
+        'instructions' => [
+            'De leerkracht vraagt leerlingen een schilderij/foto te bekijken.',
+            'Zij gebruiken de denkroutine "Begin, Midden, Einde" (Project Zero van Harvard School) om een verhaal te bedenken.',
+            'De leerkracht vraagt hen: Als dit kunstwerk het begin/midden/einde van een verhaal is, wat zal er dan later/eerder/aan het einde gebeuren?',
+            'Leerlingen illustreren de gebeurtenissen van het verhaal.',
+            'Aan de hand van het verhaal plaatsen leerlingen de gebeurtenissen in het raster. Met behulp van routekaarten ontwerpen ze een algoritme om de Bee-Bot te helpen het verhaal na te vertellen.',
+        ],
+    ],
+    'coding-with-legoboost' => [
+        'title' => 'Coderen en programmeren met de LegoBoost-uitbreiding in Scratch',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'Bouwen van modellen met behulp van LegoBoost.',
+            'Ontwikkelen van programmeervaardigheden in Scratch.',
+            'Programmeren van robots met behulp van commando\'s variërend van eenvoudig tot complex.',
+        ],
+        'description' => 'In deze uitdaging gebruiken leerlingen de LegoBoost-uitbreiding in Scratch en voeren ze in de applicatie codes in om de robots vooruit en achteruit te laten bewegen, obstakels te laten vermijden en spraakcommando’s op te laten volgen.',
+        'duration' => '120 minuten',
+        'instructions' => [
+            'Log in op de applicatie Scratch.mit.edu.',
+            'Start Scratch Link en activeer Bluetooth op de laptop.',
+            'Klik in Scratch op “Voeg een uitbreiding toe” en kies LegoBoost.',
+            'Voeg een afbeelding toe over de EU CodeWeek.',
+            'Zet de twee motoren A en B AAN, en bij het bereiken van een rood obstakel UIT.',
+            'In de groene kleur staat motor A AAN, in de zwarte kleur staat motor B AAN.',
+            'Er worden groene, rode en zwarte obstakels op een route geplaats.',
+            'Voeg commando’s toe voor bewegen en bochten in de vorm van pijlen en tekst-naar-spraak bij het tegenkomen van een obstakel.',
+            'Test het uit!',
+        ],
+    ],
+
 ];
-
-
-

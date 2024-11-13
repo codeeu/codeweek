@@ -297,6 +297,77 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
                 "3" => "Programiraj me do raspoloženja za učenike viših razreda srednje škole",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS za vodu",
+            "author" => "autora Francisca Delgada Cecilia",
+            "text" => [
+
+                "SOS za vodu odgovor je na potrebu da se bavimo problemom onečišćenja vode. Unatoč naporima koji se proteklih godina ulažu, dvije milijarde ljudi diljem svijeta i dalje nemaju pristup sigurnoj vodi za piće. To znači da smo daleko od postizanja 6. cilja održivog razvoja iz Programa do 2030. u kojem se navodi da do 2030. godine svi ljudi trebaju imati pristup vodi kojom se sigurno upravlja te higijenskim i sanitarnim uvjetima. To vrijedi i za 14. cilj održivog razvoja, život ispod vode, kojim se nastoji očuvati i održivo koristiti oceane, mora i morske resurse za održiv razvoj.",
+
+                "Ovaj odjeljak za učenje naglasak stavlja na važno i aktualno pitanje mjerenja kvalitete vode i novih onečišćivača koji dovode u pitanje kvalitetu vode. Učenici će imati priliku istražiti i tražiti rješenja za stvarne probleme povezane s vodom i okolišem, što će im omogućiti da razviju vještine poput istraživanja, kritičkog razmišljanja i rješavanja problema.",
+
+                "Nastavni planovi uključuju praktične i kreativne aktivnosti poput programiranja u programu Scratch, uvoda u strojno učenje i umjetnu inteligenciju uz platformu Learning Machine Learning te izrade vozila kojima se upravlja s pomoću Lego kompleta radi uzorkovanja vode i analize pH-vrijednosti vode. Te će aktivnosti omogućiti učenicima da praktično primjenjuju svoje vještine i znanja u interaktivnom i zaigranom okruženju, što će ih dodatno motivirati i zainteresirati za projekt.",
+
+                "Za provedbu ovog odjeljka za učenje predlaže se osmišljavanje triju aktivnosti u razredu kako bi se dovršio cijeli projekt te kako bi proces učenja bio smisleniji i više motivirao učenike. Međutim, svaka se aktivnost može provoditi i zasebno."
+
+            ],
+            "activities" => [
+                "1" => "SOS za vodu u alatu Scratch",
+                "2" => "SOS za vodu uz Machine Learning",
+                "3" => "SOS za vodu uz Robotics",
+            ]
+
+        ],
+        "20" => [
+            "title" => "Kodiranje kroz umjetnost",
+            "author" => "autorica: Maria Tsapara",
+            "text" => [
+                "Djeca odrastaju u složenom svijetu koji se stalno razvija u tehnološkom smislu, a što zahtijeva inovativne obrazovne pristupe odgajatelja u tom ranom djetinjstvu. Ti pristupi uključuju aktivnosti koje od rane dobi promiču računalno razmišljanje i programiranje. Istraživanje sugerira da ciljane aktivnosti mogu učinkovito pomoći u razvoju računalnog razmišljanja i vještina rješavanja problema kod djece te da takve aktivnosti istovremeno potiču kreativno izražavanje djece kroz tehnologiju.",
+                "Iako najčešća strategija poučavanja programiranja uključuje upotrebu obrazovnih robota, postoji i mogućnost programiranja bez upotrebe kompleta za robotiku (bez upotrebe računala). Taj pristup može se provoditi u različitim oblicima i uključivati širok raspon aktivnosti (pikselna umjetnost, djeca u ulozi robota, upotreba podne mreže itd.). Te aktivnosti pružaju prednosti kroz iskustveno učenje, a posebno kod male djece koja najbolje uče kroz igru.",
+                "<strong>Learning Bit Kodiranje kroz umjetnost</strong> uključuje tri nastavna plana za odgajatelje u ranoj dobi te obuhvaća aktivnost bez upotrebe računala, upotrebu obrazovnog robota Bee-bota i kompleta za stvaranje Makey Makey. Upotreba kompleta Makey Makey omogućuje polaznicima da stvaraju opipljiva sučelja i isprobavaju različita rješenja, da stvaraju, eksperimentiraju i jačaju svoje sposobnosti učenja u okruženju za suradničko učenje.",
+                "Kao što je Pablo Picasso govorio: \"Svako je dijete umjetnik. Problem je u tome kako da ostane umjetnik jednom kad odraste.\" Umjetnost omogućuje djeci da se kreativno izražavaju i prenose svoje ideje i osjećaje. U ovom Learning Bitu čekaju vas inspirativne aktivnosti zahvaljujući kojima kroz umjetnost i kodiranje možete razvijati društvene vještine svojih učenika te vještine koje su im potrebne u 21. stoljeću. Time ih ohrabrujete da se kreativno izražavaju te potičete njihovu maštu. Learning Bit Kodiranje kroz umjetnost omogućit će vam da potičete kreativnost svojih učenika te njihovu suradnju i vještine rješavanja problema kroz integraciju umjetnosti i kodiranja."
+            ],
+            "activities" => [
+                "1" => "Umjetničko kodiranje: polaznici vrtića u dobi od četiri godine do šest godina.",
+                "2" => "Laboratorij kreativnog kodiranja: polaznici vrtića u dobi od četiri godine do šest godina",
+                "3" => "Dodirni platno: stvaranje interaktivnih slika: polaznici vrtića u dobi od četiri godine do šest godina; napredniji."
+            ]
+        ],
+        "19" => [
+
+            "title" => "Kreativni laboratorij Scratch",
+            "author" => "autor: Krzysztof Jaworski",
+            "text" => [
+
+                "Učenje programiranja danas nadilazi pripreme za karijeru programera te se širi izvan granice računarstva. Pristup programiranju treba biti širok te obuhvatiti interdisciplinarnu perspektivu i iskoristiti programiranje kao alat za učenje i igranje kako bi se potaknuo razvoj budućih vještina.",
+
+                "Za djecu i mlade ključno je da razumiju kako sigurno, odgovorno i učinkovito upotrebljavati digitalne alate. Moraju shvatiti kako ti alati funkcioniraju te moraju znati kako komunicirati s njima kroz programiranje. Usto, to bi iskustvo trebalo uključivati suradnju u interakciji s vršnjacima.",
+
+                "Odjeljak za učenje <strong>Creative Scratch Laboratory</strong> potaknut će kreativnost i radoznalost učenika te će programiranje učiniti zabavnom aktivnosti u kojoj učenici uživaju.  Obuhvaća tri nastavna plana, ovisno o stupnju do kojeg su učenici razvili svoje vještine programiranja. U nastavnom planu za početnike učenici osmišljavaju lik na papiru, uvoze ga u Scratch te animiraju s pomoću odabranih blokova. Nastavni plan za srednji stupanj poučava učenike da se nauče služiti alatom Video Sprites (Grafički prikazi u videozapisu), što podrazumijeva grafičku izradu prikaza markerima na papiru i izradu mozaika u Scratchu s pomoću alata Video Sprites (Grafički prikazi u videozapisu), pečata i crteža. U naprednom nastavnom planu učenici istražuju funkciju prepoznavanja lica u Scratchu, eksperimentiraju s manipulacijom grafičkih prikaza te izrađuju kratku kazališnu predstavu za koju dijaloge generiraju u Scratchu.",
+
+            ],
+            "activities" => [
+                "1" => "Nacrtaj i animiraj grafički prikaz: za početnike",
+                "2" => "Stamps (Pečati): za učenike srednje razine znanja",
+                "3" => "Kazalište lutaka: za napredne učenike",
+            ]
+        ],
+        "21" => [
+            "title" => "Izrada i kodiranje",
+            "author" => "autorica: Ulla Hauptmann",
+            "text" => [
+                "Makerspaces ili prostori za stvaranje živahni su centri u kojima buja kreativnost, a praktični projekti postaju stvarnost. Pri odabiru opreme za makerspace naglasak je na alate kao što su Calliope mini, Mikcrobit ili Makey Makey jer oni nude širok raspon mogućnosti prilagođenih učenicima različitih uzrasta i vještina. Te ploče pružaju potporu u razvoju kreativnih projekata za mlađu djecu zahvaljujući svojim programskim jezicima utemeljenima na blokovima koji su dostupni za te ploče. Stariji učenici mogu generirati složenije projekte s pomoću ovih ploča.",
+                "Istražite <strong>Learning Bit Izrada i kodiranje</strong> te uronite u svijet makerspaceova i potičite razvoj interdisciplinarnih vještina kao što su timski rad i društvena suradnja uz istovremeni razvoj inovativnosti i entuzijazma među učenicima!",
+                "Makey Makey je tiskana pločica koja svakodnevne predmete pretvara u računalne ključeve. Povezivanjem predmeta na ploču s pomoću krokodilskih stezaljki, koje se potom USB kabelom (ili iPadom s adapterom za kameru) povezuju s računalom, Makey Makey može otvarati i zatvarati električne krugove između osobe i predmeta. To šalje električne signale koje računalo prima kao tipkanje po tipkovnici ili klikove miša. To omogućuje učenicima da razviju kreativne izume kao što su glazbeni instrumenti, računalne igre ili interaktivni plakati – mogućnosti su neograničene! Makey Makey i projekti predstavljeni u ovom dijelu Learning Bit mogu se upotrebljavati i u osnovnim i u srednjim školama za učenje vještina u područjima kao što su medijsko obrazovanje, informatika, znanost, fizika, glazba, sport i interdisciplinarne vještine kao što su timski rad i društvene vještine.",
+                "Zakoračite u uzbudljiv svijet kompleta Makey Makey i oslobodite bezgraničnu kreativnost u svojem razredu!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey i glazba: za početnike.",
+                "2" => "Fotografiranje: za učenike srednje razine znanja",
+                "3" => "Izrada interaktivnog plakata: za učenike napredne razine znanja.",
+            ]
+        ]
 
 
     ],

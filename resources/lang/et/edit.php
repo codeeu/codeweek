@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Muuda oma #CodeWeek üritust',
+    'title' => 'Muuda oma #EUCodeWeek üritust',
     'required_fields' => 'Nõutavad väljad on tähistatud tärniga. Ürituse võid lisada oma kohalikus keeles.',
     'description' => 'Kirjeldus',
     'audience' => 'Kuulajad',
@@ -29,12 +29,12 @@ return [
         'header' => 'Sinu kontaktteave',
         'text_1' => 'See teave on nähtav ainult ',
         'link_1' => 'ELi programmeerimisnädala Code Week saadikutele',
-        'text_2'=> ' ja Code Weeki
+        'text_2' => ' ja Code Weeki
         korraldajatele, kes
         vaatavad su ürituse üle, enne kui see kaardile ilmub, ja võivad võtta sinuga ühendust,
         kui on vaja midagi muuta või
         pärast üritust statistika jaoks küsitlust teha.',
-        'contact_email' => 'Sinu e-posti aadress'
-    ], 
-    'edit' => 'Muuda üritust'
+        'contact_email' => 'Sinu e-posti aadress',
+    ],
+    'edit' => 'Muuda üritust',
 ];

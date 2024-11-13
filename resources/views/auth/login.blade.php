@@ -5,7 +5,7 @@
 
         <section class="codeweek-banner simple">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>@lang('login.login')</h1>
             </div>
         </section>
@@ -15,14 +15,7 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <div class="social-media-buttons">
-                    <a href="/login/github" class="codeweek-action-link-button github">
-                        <img src="/images/github_white.svg">
-                        @lang('login.github')
-                    </a>
-                    <a href="/login/twitter" class="codeweek-action-link-button twitter">
-                        <img src="/images/twitter_white.svg">
-                        @lang('login.twitter')
-                    </a>
+
                     <a href="/login/facebook" class="codeweek-action-link-button facebook">
                         <img src="/images/facebook_white.svg">
                         @lang('login.facebook')
@@ -31,9 +24,13 @@
                         <img src="/images/google_white.svg">
                         @lang('login.google')
                     </a>
-                    <a href="/login/azure" class="codeweek-action-link-button azure">
-                        <img src="/img/azure.png">
-                        @lang('login.azure')
+                    <a href="/login/github" class="codeweek-action-link-button github">
+                        <img src="/images/github_white.svg">
+                        @lang('login.github')
+                    </a>
+                    <a href="/login/twitter" class="codeweek-action-link-button twitter">
+                        <img src="/images/x_logo.svg">
+                        @lang('login.X')
                     </a>
                 </div>
 

@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     'search_resources' => 'Αναζήτηση πόρων',
@@ -17,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Πώς να διοργανώσεις μια δραστηριότητα;',
     'resources' => [
         'languages' => [
-            'Russian'=>'Ρωσικά',
-            'Norwegian'=>'Νορβηγικά',
-            'Mandarin'=>'Μανδαρινικά',
-            'Japanese'=>'Ιαπωνικά',
-            'All targeted languages' => 'Όλες οι στοχευμένες γλώσσες'
+            'Russian' => 'Ρωσικά',
+            'Norwegian' => 'Νορβηγικά',
+            'Mandarin' => 'Μανδαρινικά',
+            'Japanese' => 'Ιαπωνικά',
+            'All targeted languages' => 'Όλες οι στοχευμένες γλώσσες',
         ],
         'levels' => [
             'Beginner' => 'Επίπεδο αρχαρίου',
@@ -32,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Δευτεροβάθμια εκπαίδευση/Γυμνάσιο (12-16)',
             'Upper secondary school (16-18)' => 'Δευτεροβάθμια εκπαίδευση/Λύκειο (16-18)',
             'Higher Education' => 'Ανώτατη εκπαίδευση',
-            'Other' => 'Άλλο'
+            'Other' => 'Άλλο',
         ],
         'subjects' => [
             'Art' => 'Τέχνη',
@@ -52,7 +51,7 @@ return [
             'Physics' => 'Φυσική',
             'Coding' => 'Συγγραφή κώδικα',
             'Special Education Needs' => 'Ανάγκες ειδικής εκπαίδευσης',
-            'Other' => 'Άλλο'
+            'Other' => 'Άλλο',
         ],
         'types' => [
             'Tutorial' => 'Μάθημα',
@@ -67,7 +66,7 @@ return [
             'Toolkit' => 'Εργαλειοθήκη',
             'Other' => 'Άλλο',
             'Lesson Plan' => 'Πλάνο μαθήματος',
-            'Guide' => 'Οδηγός'
+            'Guide' => 'Οδηγός',
         ],
         'categories' => [
             'Coding' => 'Συγγραφή κώδικα',
@@ -77,9 +76,8 @@ return [
             'Making' => 'Κατασκευές',
             'Tinkering' => 'Μαστορέματα',
             'Unplugged Activities' => 'Δραστηριότητες χωρίς σύνδεση στο διαδίκτυο',
-            'Other' => 'Άλλο'
-        ]
-    ]
-
+            'Other' => 'Άλλο',
+        ],
+    ],
 
 ];

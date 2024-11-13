@@ -19,7 +19,7 @@ return [
         'beginner' => 'Begyndere',
         'intermediate' => 'Øvede',
         'advanced' => 'Viderekomne',
-        '1-hour' => '1 time'
+        '1-hour' => '1 time',
     ],
     'main' => [
         'I løbet af EU\'s kodeuge, den 9.-24. oktober 2021, opfordrer vi dig til at gennemføre en eller flere af udfordringerne i EU\'s kodeuge.',
@@ -28,14 +28,14 @@ return [
         'Vælg en eller flere udfordringer, tilpas den eller dem til gruppen eller klassen, og del resultaterne på Instagram for at opfordre endnu flere kolleger og venner til at deltage i kodeugens sjov!',
         'Klik på udfordringen for at få mere at vide om den:',
         'Hvem kan deltage?',
-        'Alle (skoler, lærere, biblioteker, kodeklubber, virksomheder, offentlige myndigheder) er inviteret til at fejre EU\'s kodeuge 2021 ved at gennemføre en #CodeWeekChallenge.',
+        'Alle (skoler, lærere, biblioteker, kodeklubber, virksomheder, offentlige myndigheder) er inviteret til at fejre EU\'s kodeuge 2021 ved at gennemføre en #EUCodeWeekChallenge.',
         'Hvordan kan jeg deltage i en udfordring i EU\'s kodeuge 2021?',
         'Vælg en udfordring, du gerne vil gennemføre.',
         'Inddel deltagerne i par eller grupper. Gruppearbejde og samarbejde er nøglen til en vellykket gennemførelse af en udfordring, uanset om du afholder aktiviteten personligt eller online som en national eller international samarbejdsaktivitet.',
         'Del din udfordring',
         'Vil du gerne vinde nogle af kodeugens godter? Hvis svaret er ja, så lad dit arbejde gå viralt!',
         'Når du har gennemført udfordringen, så del den på Instagram.',
-        'Der bliver udpeget vindere hver dag i løbet af kodeugen den 9.-24. oktober, og de bliver offentliggjort på vores Instagram-kanal, så husk at tjekke dine notifikationer regelmæssigt.'
+        'Der bliver udpeget vindere hver dag i løbet af kodeugen den 9.-24. oktober, og de bliver offentliggjort på vores Instagram-kanal, så husk at tjekke dine notifikationer regelmæssigt.',
     ],
     'share' => [
         'Hvordan deler jeg min udfordring/mine udfordringer på Instagram?',
@@ -45,14 +45,14 @@ return [
         'Tilføj et screenshot af dit arbejde',
         'Skriv en fængende beskrivelse',
         'Sørg for at angive \'Link i bio\'',
-        'Tilføj #CodeWeekChallenge',
+        'Tilføj #EUCodeWeekChallenge',
         'Nævn og tag @CodeWeekEU',
         'Vil du hellere dele din udfordring/dine udfordringer på Facebook?',
         'EU\'s kodeuge vil hver dag skrive et nyt opslag om udfordringer på sin',
         'Facebook-side',
         'og udpege vinderen af præmien blandt kommentarerne under opslaget.',
         'Hvordan fungerer det?',
-        'Du skal bare kommentere på opslaget med linket til dit arbejde.'
+        'Du skal bare kommentere på opslaget med linket til dit arbejde.',
     ],
     'share-box' => [
         'Del linket til dit arbejde i din',
@@ -61,24 +61,24 @@ return [
         'Edit Profile (Rediger profil)',
         'på din Instagram, og tilføj linket til dit arbejde i feltet Website. Opret dernæst et nyt indlæg, tilføj et screenshot af dit arbejde, skriv ',
         'Link i bio',
-        'tilføj hashtagget #CodeWeekChallenge, og nævn @CodeWeekEU',
+        'tilføj hashtagget #EUCodeWeekChallenge, og nævn @CodeWeekEU',
         'Vil du hellere dele din udfordring/dine udfordringer på',
         'EU\'s kodeuge vil skrive',
         'et nyt opslag om udfordringer på sin',
         'Facebook-side',
         'Dernæst skal du bare kommentere på opslaget med linket til dit arbejde',
-        'Vinderne udpeges og tilbydes kodeuge-godter hver dag i løbet af kodeugen den 9.-24. oktober, og de bliver offentliggjort på vores Instagram- og Facebook-kanaler, så husk at tjekke dine notifikationer regelmæssigt.'
+        'Vinderne udpeges og tilbydes kodeuge-godter hver dag i løbet af kodeugen den 9.-24. oktober, og de bliver offentliggjort på vores Instagram- og Facebook-kanaler, så husk at tjekke dine notifikationer regelmæssigt.',
     ],
     'take-part' => [
         'Hvorfor skal jeg deltage i en udfordring under EU\'s kodeuge?',
         'For at deltage i aktiviteter vedrørende problemløsning og kodning.',
         'For at arbejde sammen med ligesindede.',
-        'For at sprede budskabet om vigtigheden af at kode.'
+        'For at sprede budskabet om vigtigheden af at kode.',
     ],
     'download' => [
         'Klik',
         'her',
-        'for at downloade denne udfordring som et Word-dokument'
+        'for at downloade denne udfordring som et Word-dokument',
     ],
     'bingo' => [
         'Gennemfør alle udfordringerne',
@@ -88,6 +88,6 @@ return [
         'Del din udfordring på sociale medier, og vind fede kodeugepræmier',
         'Du skal bare uploade et billede med den eller de udfyldte rækker, kolonner eller endnu bedre – hele bingopladen – til',
         'Facebook, Instagram eller Twitter',
-        'Sørg for at bruge'
-    ]
+        'Sørg for at bruge',
+    ],
 ];

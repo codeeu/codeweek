@@ -22,15 +22,15 @@ return [
             '1' => 'Clique em Enviar.',
             '2' => 'Assim que a sua atividade for aceite, receberá uma mensagem de correio eletrónico de confirmação com o seu código "Code Week 4 All" único.',
             '3' => 'Copie o código e partilhe-o com os seus colegas e outras pessoas conhecidas que também estejam a organizar uma atividade de programação. Espalhe a palavra para incentivar outros a participar!',
-            '4' => 'Terminada a campanha, todos os organizadores de atividades serão convidados a declarar o número de participantes que angariaram. Caso tenha conseguido alcançar a meta, receberá o Certificado de Excelência, juntamente com os seus colegas que tenham participado na sua rede!'
+            '4' => 'Terminada a campanha, todos os organizadores de atividades serão convidados a declarar o número de participantes que angariaram. Caso tenha conseguido alcançar a meta, receberá o Certificado de Excelência, juntamente com os seus colegas que tenham participado na sua rede!',
         ],
         'existing_alliance' => [
             'title' => 'Se pretender juntar-se a uma aliança existente:',
             '1' => 'Cole o código que recebeu do iniciador da atividade, o primeiro a criar a aliança, na célula CÓDIGO CODE WEEK 4 ALL.',
             '2' => 'Clique em Enviar.',
             '3' => 'Passe a palavra (e o código!) para que mais organizadores se juntem à sua aliança.',
-            '4' => 'Terminada a campanha, todos os organizadores de atividades serão convidados a declarar o número de participantes que angariaram. Caso tenha conseguido alcançar a meta, receberá o Certificado de Excelência, juntamente com os seus colegas que tenham participado na sua rede!'
-        ]
+            '4' => 'Terminada a campanha, todos os organizadores de atividades serão convidados a declarar o número de participantes que angariaram. Caso tenha conseguido alcançar a meta, receberá o Certificado de Excelência, juntamente com os seus colegas que tenham participado na sua rede!',
+        ],
     ],
     'why' => [
         'title' => 'Porquê aceitar o desafio?',
@@ -38,9 +38,9 @@ return [
         '2' => 'Para envolver um grande número de alunos.',
         '3' => 'Para estabelecer ligações com organizações e/ou escolas, quer na sua comunidade, quer a nível internacional.',
         '4' => 'Para obter apoio de outros organizadores e professores.',
-        '5' => 'Para ganhar um <strong>Certificado de Excelência</strong>.'
+        '5' => 'Para ganhar um <strong>Certificado de Excelência</strong>.',
     ],
     'superorganiser-title' => 'Certificado de Super Organizador',
-    'superorganiser' => 'Também pode obter um Certificado de Super Organizador. Para consegui-lo, tem de organizar e <a href="https://codeweek.eu/add">registar</a>, no mínimo, 10 atividades distintas na sua escola, organização ou em linha.'
+    'superorganiser' => 'Também pode obter um Certificado de Super Organizador. Para consegui-lo, tem de organizar e <a href="https://codeweek.eu/add">registar</a>, no mínimo, 10 atividades distintas na sua escola, organização ou em linha.',
 
 ];

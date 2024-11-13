@@ -14,7 +14,7 @@ return [
     'login' => 'Prisijungti',
     'register' => 'Registruotis',
     'github' => 'Prisijunkite per „Github“',
-    'twitter' => 'Prisijunkite per „Twitter“',
+    'X' => 'Prisijunkite per „X“',
     'facebook' => 'Prisijunkite per „Facebook“',
     'google' => 'Prisijunkite per „Google“',
     'azure' => 'Prisijunkite per „Azure“',
@@ -27,6 +27,6 @@ return [
     'reset' => 'Iš naujo nustatyti slaptažodį',
     'send_password' => 'Siųsti slaptažodžio nustatymo iš naujo nuorodą',
     'confirm_password' => 'Patvirtinti slaptažodį',
-    'name' => 'vardas'
+    'name' => 'vardas',
 
 ];

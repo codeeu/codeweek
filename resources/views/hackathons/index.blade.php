@@ -21,41 +21,30 @@
         <section class="codeweek-content-wrapper">
 
             <h1 class="align-center">Hackathons</h1>
-            <p>
-
-                A hackathon is an event where participants collaborate intensively, over 24 hours in up to 3 days, to
-                create software projects or solve challenges. Adapting the traditional hackathon format, the EU Code
-                Week Hackathons take into consideration the age of the participants and cater to the unique skills,
-                insights, and interests of adolescents.<br/><br/>
-
-                Participants form teams to brainstorm, design, and code, aiming to produce a working solution or
-                prototype by the event's conclusion. Beyond fostering innovation and teamwork, teen hackathons offer a
-                platform for young tech enthusiasts to learn, showcase their talents, and connect with like-minded
-                peers.<br/><br/>
-
-                The EU Code Week 2023 Hackathon is open to individuals between 15 and 19 years old, with a specific emphasis on STEM,
-                computer science, design, engineering, ICT, and other related fields. To the extent possible, the teams
-                should encompass both technical and functional competencies.<br/><br/>
-
-                Each year select European countries receive the focus and organize locally the event.
-
+            <p>A hackathon is an event where participants with diverse skills collaborate to tackle global challenges. Participants form teams to brainstorm, design, and code, aiming to produce a working solution or prototype by the event's conclusion. Beyond fostering innovation and teamwork, EU Code Week hackathons offer a platform for young enthusiasts to learn, showcase their talents, and connect with like-minded peers.<br/><br/>
+            Adapting the traditional hackathon format, the EU Code Week Hackathons take into consideration the age of the participants and cater to the unique skills, insights, and interests of adolescents.<br/><br/>
+            The aim of the EU Code Week Hackathons is to inspire young people to develop their coding and problem-solving skills by engaging them in collaborative, creative, and innovative projects.
             </p>
 
         </section>
-
+        
         <section class="codeweek-content-wrapper">
+            <!-- Include the YouTube partial and pass the video ID -->
+            @include('static.youtube', ['video_id' => 'fx0zJCpUTa8'])
+        </section>
 
-            <h1 class="align-center">EU Code Week Hackathon 2023</h1>
+        <div class="pt-0 codeweek-content-wrapper">
+
+            <h1 class="align-center">EU Code Week Hackathon 2024</h1>
 
             <p>
-                The central theme for 2023 is “Code to problem-solve and give life to your dreams”. The organizers from
-                each country have made concrete challenge areas, concerning, for example, the education system, tourism,
-                transportation and other sectors. The local participants propose solutions to their country's
-                challenges.<br/><br/>
-
-                For 2023, there are six countries in focus. Follow the links for more information on challenge areas,
-                local organizers, and important dates:
-            </p>
+                EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <strong>Hello, Future! Technical Solutions for a changing world.</strong><br/><br/>
+                From October 2024 and March 2025, the EU Code Week 2024 Hackathon invites young innovators, ages 15-19, to join exciting local hackathons. Team up with peers to brainstorm, collaborate and create digital solutions to tackle some of the global challenges!
+                <br/><br/>
+            To guide organisers in planning and delivering successful hackathons, <a target="_blank" href="/docs/EU_Code_Week_Hackathons_2024 Toolkit_Final.pdf">here is the EU Code Week Hackathons Toolkit.</a> In this Toolkit, you will find step-by-step instructions and tips for creating engaging and impactful events.  <br/><br/>
+            All hackathons will take place online via <a target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#home">Eventornado.</a> There will be one common online environment for all hackathons.<br/><br/>
+            More details on local hackathons, registrations and hackathon platform are coming soon!<br/><br/></p>
+            <!--<div class="align-center">
             <section class="hackathons-content-grid">
 
 
@@ -121,24 +110,9 @@
                     </a>
                 </div>
 
-                <div class="codeweek-card-grid">
-                    <a href="https://codeweek.eu/hackathon/2023/france" target="_blank">
-                        <div class="city-image">
-                            <img src="/images/hackathons/flags/europe.jpg">
-                            <div class="transparent"></div>
-                            <div class="text">
-                                <div class="title hackaton">France</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
-
-            </section>
-
-        </section>
-
-
+            </section> -->
+            </div>
+        </div>
     </section>
-
 @endsection

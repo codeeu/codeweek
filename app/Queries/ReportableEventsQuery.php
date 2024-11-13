@@ -8,20 +8,18 @@
 
 namespace App\Queries;
 
-
 use App\Event;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 
 class ReportableEventsQuery
 {
-
     public static function reportable()
     {
 
-        return Event::where('status','APPROVED')
+        return Event::where('status', 'APPROVED')
             ->where('creator_id', '=', Auth::user()->id)
-            ->where(function($query) {
+            ->where(function ($query) {
                 $query->whereNull('reported_at')
                     ->orWhereNull('certificate_url');
             })
@@ -33,8 +31,7 @@ class ReportableEventsQuery
     public static function reported()
     {
 
-
-        return Event::where('status','APPROVED')
+        return Event::where('status', 'APPROVED')
             ->where('creator_id', '=', Auth::user()->id)
             ->where('reported_at', '<>', null)
             ->where('start_date', '<=', Carbon::now())

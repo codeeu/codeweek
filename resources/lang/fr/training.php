@@ -302,6 +302,77 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
                 "3" => "Codez-moi selon l’humeur pour les élèves du 2e cycle du secondaire",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS EAU",
+            "author" => "par Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Eau est une réponse à la nécessité de résoudre le problème de la pollution de l’eau. Malgré les efforts consentis ces dernières années, deux milliards de personnes dans le monde n’ont toujours pas accès à de l’eau potable. En d’autres termes, l’Objectif de développement durable (ODD) 6 de l’Agenda 2030, qui stipule que toutes les personnes devraient pouvoir accéder à des services d’alimentation en eau et d’assainissement gérés en toute sécurité d’ici à 2030, est loin d’être atteint. Il en va de même pour l’ODD 14, relatif à la vie aquatique, qui vise à conserver et à exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable.",
+
+                "Ce Learning Bit est consacré au thème pertinent et d’actualité de la mesure de la qualité de l’eau et des nouveaux polluants qui menacent cette qualité. Les élèves auront l’occasion d’effectuer des recherches et de trouver des solutions aux véritables problèmes liés à l’eau et à l’environnement, ce qui leur permettra de développer des compétences en matière de recherche, de raisonnement critique et de résolution de problèmes.",
+
+                "La leçon inclut des activités pratiques et créatives, comme de la programmation dans Scratch, une initiation à l’apprentissage automatique et à l’intelligence artificielle avec Learning Machine Learning, et la construction de véhicules guidés avec des pièces Lego afin de prélever des échantillons d’eau et procéder à l’analyse du pH. Au cours de ces activités, les élèves pourront mettre en pratique leurs compétences et leurs connaissances dans un environnement interactif et ludique, qui renforcera leur motivation et éveillera leur intérêt pour le projet.",
+
+                "Afin de mettre en œuvre ce Learning Bit, nous vous proposons de développer les trois activités en classe, de terminer le projet et de rendre le processus d’apprentissage plus intéressant et plus motivant. Chaque activité peut toutefois être réalisée individuellement."
+
+            ],
+            "activities" => [
+                "1" => "SOS Eau avec Scratch",
+                "2" => "SOS Eau avec l’apprentissage automatique",
+                "3" => "SOS Eau avec la robotique",
+            ]
+
+        ],
+        "20" => [
+            "title" => "Le code par l’art",
+            "author" => "par Maria Tsapara",
+            "text" => [
+                "Les enfants grandissent dans un monde complexe en constante évolution technologique, ce qui nécessite des approches éducatives innovantes pour les éducateurs de la petite enfance. Ces approches comprennent des activités qui encouragent le raisonnement informatique et la programmation dès le plus jeune âge. La recherche suggère que des activités ciblées peuvent développer efficacement le raisonnement informatique des enfants et leurs compétences en matière de résolution de problèmes, tout en favorisant leur expression créative par le biais de la technologie.",
+                "Bien que la stratégie la plus courante pour enseigner la programmation implique l’utilisation de robots éducatifs, il est également possible de programmer sans utiliser de kit robotique (non connecté). Cette approche peut prendre différentes formes et inclure un large éventail d’activités (pixel art, enfants dans le rôle de robots, utilisation d’une grille au sol, etc.). Ces activités offrent des avantages en termes d’apprentissage par l’expérience, en particulier pour les jeunes enfants qui apprennent mieux par le jeu. ",
+                "<strong>Le Learning Bit «Le code par l’art»</strong> comprend trois plans de cours pour les éducateurs de la petite enfance et met en œuvre une activité non connectée, l’utilisation d’un robot éducatif Bee-bot et le kit d’invention Makey Makey. En utilisant le kit Makey Makey, les élèves ont la possibilité de créer des interfaces tangibles et d’essayer différentes solutions, de créer, d’expérimenter et de renforcer toutes leurs capacités d’apprentissage dans un environnement d’apprentissage collaboratif",
+                "Comme l’a dit Pablo Picasso : «Dans chaque enfant il y a un artiste. Le problème est de savoir comment rester un artiste en grandissant».. L’art offre aux enfants la possibilité de représenter et de communiquer leurs idées et leurs sentiments de manière créative. Dans ce Learning Bit, vous trouverez des activités inspirantes pour cultiver les compétences sociales et les compétences du XXIe siècle de vos élèves à travers l’art et le codage, pour les encourager à s’exprimer de manière créative et à stimuler leur imagination. Le Learning Bit «Le code par l’art» vous permettra de stimuler la créativité, la collaboration et la résolution de problèmes de vos élèves en intégrant l’art et le codage."
+            ],
+            "activities" => [
+                "1" => "Codage artistique: Élèves de maternelle âgés de 4 à 6 ans.",
+                "2" => "Laboratoire de code créatif: Élèves de maternelle âgés de 4 à 6 ans.",
+                "3" => "Toile tactile: Créer des peintures interactives: Élèves de maternelle âgés de 4 à 6 ans; avancé."
+            ]
+        ],
+        "19" => [
+
+            "title" => "Laboratoire Scratch créatif",
+            "author" => "par Krzysztof Jaworski",
+            "text" => [
+
+                "De nos jours, l’apprentissage de la programmation va au-delà de la préparation à une carrière de programmeur et dépasse les frontières de l’informatique. Il faut l’envisager d’une manière globale, en adoptant une perspective interdisciplinaire et en utilisant la programmation comme un outil d’apprentissage et de jeu pour favoriser le développement de compétences futures.",
+
+                "Il est crucial que les enfants et les jeunes apprennent à utiliser les outils numériques de manière sûre, responsable et efficace. Ils doivent comprendre le fonctionnement de ces outils et savoir comment communiquer avec eux par le biais de la programmation. En outre, cette expérience devrait susciter des interactions avec leurs camarades.",
+
+                "Le module d’apprentissage <strong>Creative Scratch Laboratory</strong> améliorera la créativité des élèves, stimulera leur curiosité et rendra le code agréable et amusant.  Il se compose de trois plans de cours destinés à des élèves présentant différents niveaux de compétence en matière de code. Dans le plan de cours de niveau débutant, les élèves créent un personnage sur papier, l’importent dans Scratch et l’animent à l’aide des blocs sélectionnés. Dans le plan de cours de niveau intermédiaire, les élèves apprennent à utiliser l’outil Video Sprites, à créer des graphiques avec du papier et des feutres, et à produire une mosaïque Scratch avec des sprites vidéo, des tampons et des illustrations. Dans le plan de cours de niveau avancé, les élèves explorent la fonctionnalité de reconnaissance faciale dans Scratch, expérimentent la manipulation graphique des sprites et créent un mini-théâtre avec des dialogues générés dans Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Dessiner et animer un sprite: pour les débutants",
+                "2" => "Tampons: pour les élèves de niveau intermédiaire",
+                "3" => "Théâtre de marionnettes: pour les élèves de niveau avancé",
+            ]
+        ],
+        "21" => [
+            "title" => "Création et codage",
+            "author" => "par Ulla Hauptmann",
+            "text" => [
+                "Les makerspaces sont des lieux dynamiques où la créativité s’épanouit et où les projets pratiques prennent vie. Lors de la sélection de l’équipement d’un makerspace, l’accent est mis sur des outils tels que Calliope mini, Microbit ou Makey Makey, car ils offrent un large éventail de possibilités adaptées à des élèves d’âges et de niveaux de compétences différents. Ces cartes permettent aux jeunes enfants de développer des projets créatifs grâce à leurs langages de programmation basés sur des blocs. Pour les élèves plus âgés, des projets plus complexes peuvent être réalisés à l’aide de ces cartes",
+                "Explorez le <strong>Learning Bit \"Création et codage\"</strong> pour plonger dans le monde des makerspaces et favoriser les compétences interdisciplinaires telles que le travail d’équipe et la collaboration sociale tout en suscitant l’innovation et l’enthousiasme chez vos élèves !",
+                "Makey Makey est un circuit imprimé qui transforme les objets du quotidien en touches d’ordinateur. En connectant des objets à la carte à l’aide de pinces crocodiles, qui sont ensuite reliées à l’ordinateur par un câble USB (ou à un iPad avec un adaptateur pour appareil photo), Makey Makey peut ouvrir et fermer des circuits électriques entre une personne et un objet. Il envoie ainsi des signaux électriques que l’ordinateur reçoit sous la forme de frappes de clavier ou de clics de souris. Cela permet aux élèves de développer des inventions créatives telles que des instruments de musique, des jeux informatiques ou des posters interactifs – les possibilités sont infinies! Makey Makey et les projets présentés dans ce Learning Bit peuvent être utilisés dans les écoles primaires et secondaires pour enseigner des compétences dans des domaines tels que l’éducation aux médias, l’informatique, les sciences, la physique, la musique, le sport et des compétences interdisciplinaires telles que le travail d’équipe et les aptitudes sociales.",
+                "Entrez dans le monde passionnant de Makey Makey et libérez une créativité sans limite dans votre classe !"
+            ],
+            "activities" => [
+                "1" => "Makey Makey rencontre la musique: pour les débutants.",
+                "2" => "Images parlantes: pour les élèves de niveau intermédiaire.",
+                "3" => "Créer un poster interactif: pour les élèves de niveau avancé.",
+            ]
+        ]
 
 
     ],

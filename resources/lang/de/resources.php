@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Wie wird eine Aktivität organisiert?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Russisch',
-            'Norwegian'=>'Norwegisch',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japanisch',
-            'All targeted languages' => 'Alle Zielsprachen'
+            'Russian' => 'Russisch',
+            'Norwegian' => 'Norwegisch',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japanisch',
+            'All targeted languages' => 'Alle Zielsprachen',
         ],
         'levels' => [
             'Beginner' => 'Anfänger',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Unterstufe einer weiterführenden Schule (12-16)',
             'Upper secondary school (16-18)' => 'Oberstufe einer weiterführenden Schule (16-18)',
             'Higher Education' => 'Höhere Bildungseinrichtung',
-            'Other' => 'Sonstige'
+            'Other' => 'Sonstige',
         ],
         'subjects' => [
             'Art' => 'Kunst',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Physik',
             'Coding' => 'Coding',
             'Special Education Needs' => 'Sonderpädagogik',
-            'Other' => 'Sonstige'
+            'Other' => 'Sonstige',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Toolkit',
             'Other' => 'Sonstige',
             'Lesson Plan' => 'Lehrplan',
-            'Guide' => 'Leitfaden'
+            'Guide' => 'Leitfaden',
         ],
         'categories' => [
             'Coding' => 'Coding',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Praktische Arbeiten',
             'Tinkering' => 'Tüfteleien',
             'Unplugged Activities' => 'Aktivitäten ohne Computer',
-            'Other' => 'Sonstige'
-        ]
-    ]
+            'Other' => 'Sonstige',
+        ],
+    ],
 
 ];

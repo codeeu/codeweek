@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Még nincsenek lejelentendõ események.',
     'report' => 'Az alább felsorolt események már elkezdõdtek vagy befejezõdtek. Adjon meg néhány adatot
     az eseménnyel kapcsolatban statisztikai célokra, és igényelje a programozási héten való részvételét igazoló tanúsítványát. Önt
-    eseményenként egy-egy tanúsítvány illeti meg.'
+    eseményenként egy-egy tanúsítvány illeti meg.',
 ];

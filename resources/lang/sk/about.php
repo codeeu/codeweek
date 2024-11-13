@@ -1,23 +1,18 @@
 <?php
 
 return [
-    'when-title' =>
-        'V roku 2023 sa Európsky týždeň programovania koná od 7. do 22. októbra.',
-    'when-text' =>
-        '<p>Európsky týždeň programovania je nezávislé hnutie, ktoré oslavuje tvorivosť, riešenie problémov a spoluprácu prostredníctvom programovania a ďalších technologických aktivít. Zámerom je viac zviditeľniť programovanie, ukázať mladým, dospelým a starším ľuďom, ako vdýchnuť život nápadom pomocou programovania, rúcať mýty o týchto zručnostiach a spojiť motivovaných ľudí, aby sa spolu vzdelávali.</p>',
+    'when-title' => 'V roku 2024 sa Európsky týždeň programovania koná od 14. do 27. októbra.',
+    'when-text' => '<p>Európsky týždeň programovania je nezávislé hnutie, ktoré oslavuje tvorivosť, riešenie problémov a spoluprácu prostredníctvom programovania a ďalších technologických aktivít. Zámerom je viac zviditeľniť programovanie, ukázať mladým, dospelým a starším ľuďom, ako vdýchnuť život nápadom pomocou programovania, rúcať mýty o týchto zručnostiach a spojiť motivovaných ľudí, aby sa spolu vzdelávali.</p>',
     'codeweek_in_numbers-title' => 'Týždeň programovania v číslach',
     'codeweek_in_numbers-text' => '<p>V roku 2021 sa Európskeho týždňa programovanie zúčastnilo <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milióna ľudí</a> vo viac ako 80 krajinách celého sveta.</p>
                     <p>Priemerný vek účastníkov bol 11 rokov a v roku 2021 bolo 49 % účastníkov ženského pohlavia. 88 % podujatí Európskeho týždňa programovania sa uskutočnilo na školách, čo dosvedčuje úspešnosť úsilia o vybavenie učiteľov zručnosťami počas kampane v roku 2021.</p>
                     <p>Ktokoľvek môže usporiadať aktivitu alebo sa zapojiť do aktivity. Stačí si vybrať tému a cieľovú skupinu a <a href="/add">pridať aktivitu</a> na <a href="/events">mapu</a></p>',
     'run_by_volunteers-title' => 'Hnutie dobrovoľníkov',
-    'run_by_volunteers-text' =>
-        '<p>Európsky týždeň programovania organizujú dobrovoľníci. Jeden či niekoľkí <a href="/ambassadors">veľvyslanci Týždňa programovania</a> koordinujú iniciatívu vo svojej vlasti, no ktokoľvek môže usporiadať vlastnú programátorskú aktivitu a pridať ju na mapu na stránke <a href="/">codeweek.eu</a>.</p>',
+    'run_by_volunteers-text' => '<p>Európsky týždeň programovania organizujú dobrovoľníci. Jeden či niekoľkí <a href="/ambassadors">veľvyslanci Týždňa programovania</a> koordinujú iniciatívu vo svojej vlasti, no ktokoľvek môže usporiadať vlastnú programátorskú aktivitu a pridať ju na mapu na stránke <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'S podporou Európskej komisie',
-    'supported_by_commission-text' =>
-        '<p>Európsky týždeň programovania rozprúdili v roku 2013 mladí poradcovia pre Digitálnu agendu Európy. Európska komisia podporuje Európsky týždeň programovania v rámci svojej stratégie v oblasti <a href="http://ec.europa.eu/priorities/digital-single-market/">jednotného digitálneho trhu</a>. V <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">akčnom pláne digitálneho vzdelávania</a> Komisia osobitne školy podnecuje, aby sa zapojili do tejto iniciatívy.</p>',
+    'supported_by_commission-text' => '<p>Európsky týždeň programovania rozprúdili v roku 2013 mladí poradcovia pre Digitálnu agendu Európy. Európska komisia podporuje Európsky týždeň programovania v rámci svojej stratégie v oblasti <a href="http://ec.europa.eu/priorities/digital-single-market/">jednotného digitálneho trhu</a>. V <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">akčnom pláne digitálneho vzdelávania</a> Komisia osobitne školy podnecuje, aby sa zapojili do tejto iniciatívy.</p>',
     'schools-title' => 'Školy',
-    'schools-text' =>
-        '<p>Školy na všetkých úrovniach a učitelia všetkých predmetov sú osobitne vyzvaní, aby sa zapojili do Európskeho týždňa programovania, čo umožní ich študentom zoznámiť sa s digitálnou tvorivosťou a programovaním. Ďalšie informácie o iniciatíve a návod na usporiadanie aktivity nájdete na našej webovej stránke pre učiteľov: <a href="/schools">CodeWeek.eu/Schools</a></p>',
+    'schools-text' => '<p>Školy na všetkých úrovniach a učitelia všetkých predmetov sú osobitne vyzvaní, aby sa zapojili do Európskeho týždňa programovania, čo umožní ich študentom zoznámiť sa s digitálnou tvorivosťou a programovaním. Ďalšie informácie o iniciatíve a návod na usporiadanie aktivity nájdete na našej webovej stránke pre učiteľov: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title' => 'Prečo programovanie?',
     'why_coding-text' => '<p>Je to o Pii, ktorá mala pocit, že musí študovať právo, hoci ju vždy bavila matematika a počítače. Je to o Markovi, ktorý má nápad na lepšiu sociálnu sieť, ale nevie ju sám vystavať. Je to o Alice, ktorá sníva o tom, že bude vyrábať roboty, pretože jej rodičia nedovolili mačku.</p>
 
@@ -33,7 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Zapojte sa do Európskeho týždňa programovania',
-    'join_codeweek-text' =>
-        '<p>Zapojte sa do Európskeho týždňa programovania <a href="/guide">usporiadaním programátorskej aktivity</a> vo svojom meste, zapojením do <a href="/codeweek4all">výzvy Code Week 4 All</a> a príbuzných aktivít v rôznych komunitách a krajinách alebo nám pomôžte šíriť víziu Týždňa programovania z pozície <a href="/ambassadors">veľvyslanca Európskeho týždňa programovania</a> vo svojej vlasti!</p>',
-    'partners_and_sponsors' => 'Partneri a sponzori'
+    'join_codeweek-text' => '<p>Zapojte sa do Európskeho týždňa programovania <a href="/guide">usporiadaním programátorskej aktivity</a> vo svojom meste, zapojením do <a href="/codeweek4all">výzvy Code Week 4 All</a> a príbuzných aktivít v rôznych komunitách a krajinách alebo nám pomôžte šíriť víziu Týždňa programovania z pozície <a href="/ambassadors">veľvyslanca Európskeho týždňa programovania</a> vo svojej vlasti!</p>',
+    'partners_and_sponsors' => 'Partneri a sponzori',
 ];

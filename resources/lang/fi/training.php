@@ -300,6 +300,47 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
                 "3" => "Koodaa minut tunteeseen toisen asteen opiskelijoille",
             ]
         ],
+        "18" => [
+
+            "title" => "Vesistöjen SOS-hätätila",
+            "author" => "tekijä Francisco Delgado Cecilia",
+            "text" => [
+
+                "Vesistöjen SOS-hätätila on vastaus tarpeeseen kehittää ratkaisuja vesistöjen saastumiseen. Viime vuosien pyrkimyksistä huolimatta maailmassa on yhä kaksi miljardia ihmistä, joilla ei ole käytettävissään puhdasta juomavettä. Toisin sanoen Agenda 2030 -ohjelman kestävän kehityksen tavoite 6, jonka mukaan vuoteen 2030 mennessä pitäisi varmistaa turvallisen veden ja sanitaation saatavuus kaikille, on vielä kaukana saavutetusta. Sama koskee tavoitetta 14, vedenalainen elämä, jonka tarkoitus on säilyttää meret ja merten tarjoamat luonnonvarat ja edistää niiden kestävää käyttöä.",
+
+                "Tässä oppimismoduulissa keskitytään tärkeään ja ajankohtaiseen aiheeseen eli veden laadun mittaamiseen sekä uusiin saasteisiin, jotka heikentävät veden laatua. Opiskelijat pääsevät tutustumaan ja etsimään ratkaisuja oikeisiin veteen ja ympäristöön liittyviin haasteisiin, minkä myötä heidän tiedonhaun, kriittisen ajattelun ja ongelmanratkaisun taitonsa kehittyvät.",
+
+                "Tuntisuunnitelmissa on käytännöllisiä ja luovia tehtäviä, esimerkiksi ohjelmointia Scratchilla, johdatusta koneoppimiseen ja koneälyn käyttöön Learning Machine Learning -alustalla sekä ohjattujen ajoneuvojen rakentamista Lego-palikoilla veden näytteenottoa ja pH-analyysia varten. Näiden tehtävien avulla opiskelijat pääsevät soveltamaan taitojaan ja tietojaan käytännössä interaktiivisessa ja hauskassa ympäristössä, mikä parantaa heidän motivaatiotaan ja kiinnostustaan projektiin.",
+
+                "Oppimismoduulin toteutukseksi ehdotetaan kolmesta harjoituksesta koostuvan projektin suorittamista luokassa kokonaisuudessaan. Siten saavutetaan merkityksellisempi ja motivoivampi oppimisprosessi. Harjoitukset voidaan kuitenkin tehdä myös erikseen."
+
+            ],
+            "activities" => [
+                "1" => "Vesistöjen SOS-hätätila Scratch-alustalla",
+                "2" => "Vesistöjen SOS-hätätila LearningML-alustalla",
+                "3" => "Vesistöjen SOS-hätätila LEGO-roboteilla",
+            ]
+
+        ],
+        "19" => [
+
+            "title" => "Luova Scratch-laboratorio",
+            "author" => "tekijä Krzysztof Jaworski",
+            "text" => [
+
+                "Ohjelmoinnin opettelu ei nykyisin tarkoita suuntautumista ohjelmointialalle. Ohjelmoinnin vaikutusalue ulottuu paljon tietojenkäsittelytiedettä laajemmalle, ja sitä tulisi tarkastella laaja-alaisesti monitieteisestä näkökulmasta. Ohjelmointia tulisi käyttää oppimisen ja leikkimisen välineenä, jolla edistetään tulevaisuudessa tarvittavien taitojen kehittymistä.",
+
+                "Lasten ja nuorten on tärkeää ymmärtää, miten digitaalisia välineitä käytetään turvallisesti, vastuullisesti ja tehokkaasti. Heidän on myös ymmärrettävä, miten nämä välineet toimivat ja miten niiden kanssa voidaan olla vuorovaikutuksessa ohjelmoinnin avulla. Lisäksi lasten ja nuorten on hyvä tehdä vuorovaikutteisia harjoituksia toistensa kanssa.",
+
+                "Luova Scratch-laboratorio -oppimisaineisto edistää oppilaiden luovuutta, herättää heidän uteliaisuutensa ja tekee koodauksesta hauskaa.  Se sisältää kolme tuntisuunnitelmaa eritasoisille oppilaille. Vasta-alkajien tuntisuunnitelmassa oppilaat luovat paperille hahmon, vievät sen Scratchiin ja animoivat sen käyttämällä valittuja lohkoja. Keskitason tuntisuunnitelmassa oppilaat opettelevat käyttämään Video Sprites -työkalua ja laatimaan kuvia paperilla ja tusseilla. Lopuksi tehdään Scratch-mosaiikki käyttämällä videohahmoja, leimoja ja kuvituksia. Edistyneille oppilaille tarkoitetussa tuntisuunnitelmassa oppilaat tutustuvat Scratchin kasvojentunnistustoimintoon, kokeilevat hahmojen muokkausta ja luovat pienen näytelmän käyttämällä Scratchissa luotuja vuoropuheluita."
+
+            ],
+            "activities" => [
+                "1" => "Vasta-alkajille: piirrä ja animoi hahmo",
+                "2" => "Keskitason oppilaille: leimat",
+                "3" => "Edistyneille oppilaille: nukketeatteri"
+            ]
+        ],
 
 
     ],

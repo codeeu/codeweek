@@ -9,45 +9,40 @@ use App\Mail\RemindersSummary;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ReminderCreatorsTest extends TestCase
+final class ReminderCreatorsTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-    /** @test */
-    public function only_get_creators_with_reportable_events()
+    #[Test]
+    public function only_get_creators_with_reportable_events(): void
     {
         Mail::fake();
 
-        $userA = create('App\User');
-        $userB = create('App\User');
-        $userD = create('App\User');
-
+        $userA = \App\User::factory()->create();
+        $userB = \App\User::factory()->create();
+        $userD = \App\User::factory()->create();
 
         //Setup world
 
+        $userC = \App\User::factory()->create(['email' => '']);
+        $userE = \App\User::factory()->create();
+        $userF = \App\User::factory()->create();
 
-        $userC = create('App\User', ['email' => ""]);
-        $userE = create('App\User');
-        $userF = create('App\User');
+        $alreadyReported = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1), 'reported_at' => Carbon::now()]);
+        $maxNotifications = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1)]);
+        $notFinished = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->addDay(1)]);
+        $lastYear = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subYear(1)]);
+        $pendingEvent = \App\Event::factory()->create(['status' => 'PENDING', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
+        $noemail = \App\Event::factory()->create(['creator_id' => $userC->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
+        $notifiedLately = \App\Event::factory()->create(['creator_id' => $userE->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDay(1), 'end_date' => Carbon::now()->subDay(1)]);
+        $today = \App\Event::factory()->create(['creator_id' => $userF->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now(), 'end_date' => Carbon::now()->subDay(1)]);
 
-        $alreadyReported = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1), 'reported_at' => Carbon::now()]);
-        $maxNotifications = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1)]);
-        $notFinished = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->addDay(1)]);
-        $lastYear = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subYear(1)]);
-        $pendingEvent = create('App\Event', ['status' => 'PENDING', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
-        $noemail = create('App\Event', ['creator_id' => $userC->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
-        $notifiedLately = create('App\Event', ['creator_id' => $userE->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDay(1), 'end_date' => Carbon::now()->subDay(1)]);
-        $today = create('App\Event', ['creator_id' => $userF->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now(), 'end_date' => Carbon::now()->subDay(1)]);
-
-        $reportableevents = create('App\Event', ['creator_id' => $userA->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)], 3);
-        $reportableevents2 = create('App\Event', ['creator_id' => $userB->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)], 3);
-        $notifiedMoreThanAWeek = create('App\Event', ['creator_id' => $userD->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDays(8), 'end_date' => Carbon::now()->subDay(1)]);
-
+        $reportableevents = \App\Event::factory()->count(3)->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevents2 = \App\Event::factory()->count(3)->create(['creator_id' => $userB->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
+        $notifiedMoreThanAWeek = \App\Event::factory()->create(['creator_id' => $userD->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDays(8), 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->assertCount(3, ReminderHelper::getCreatorsWithReportableEvents());
 
@@ -55,7 +50,6 @@ class ReminderCreatorsTest extends TestCase
         $this->assertEquals($userB->email, ReminderHelper::getCreatorsWithReportableEvents()[1]->email);
         $this->assertEquals($userD->email, ReminderHelper::getCreatorsWithReportableEvents()[2]->email);
 
-
         $this->artisan('remind:creators');
 
         Mail::assertQueued(RemindCreator::class, 3);
@@ -65,14 +59,14 @@ class ReminderCreatorsTest extends TestCase
         Mail::assertQueued(RemindCreator::class, 3);
     }
 
-    /** @test */
-    public function mail_should_be_sent()
+    #[Test]
+    public function mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $reportableevent = create('App\Event', ['status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent = \App\Event::factory()->create(['status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
 
@@ -80,16 +74,16 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
-    public function only_one_mail_should_be_sent()
+    #[Test]
+    public function only_one_mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $userA = create('App\User');
+        $userA = \App\User::factory()->create();
 
-        $reportableevent = create('App\Event', ['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)], 2);
+        $reportableevent = \App\Event::factory()->count(2)->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
         $this->artisan('remind:creators');
@@ -103,29 +97,29 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
-    public function should_get_the_reportable_events_list()
+    #[Test]
+    public function should_get_the_reportable_events_list(): void
     {
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $userA = create('App\User');
+        $userA = \App\User::factory()->create();
 
-        $reportableevent = create('App\Event', ['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)], 20);
+        $reportableevent = \App\Event::factory()->count(20)->create(['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
-        $this->assertEquals(20,ReminderHelper::getReportableEvents()->count());
+        $this->assertEquals(20, ReminderHelper::getReportableEvents()->count());
 
     }
 
-    /** @test */
-    public function no_mail_should_be_sent()
+    #[Test]
+    public function no_mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $invalidEvent = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subYear(1)]);
+        $invalidEvent = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subYear(1)]);
 
         $this->artisan('remind:creators');
 
@@ -133,18 +127,18 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
-    public function notification_reports_should_increase()
+    #[Test]
+    public function notification_reports_should_increase(): void
     {
 
         Mail::fake();
 
         $this->withExceptionHandling();
 
-        $reportableevent0 = create('App\Event', ['report_notifications_count' => 0, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
-        $reportableevent1 = create('App\Event', ['report_notifications_count' => 1, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
-        $reportableevent2 = create('App\Event', ['report_notifications_count' => 2, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
-        $reportableevent3 = create('App\Event', ['report_notifications_count' => 3, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent0 = \App\Event::factory()->create(['report_notifications_count' => 0, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent1 = \App\Event::factory()->create(['report_notifications_count' => 1, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent2 = \App\Event::factory()->create(['report_notifications_count' => 2, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent3 = \App\Event::factory()->create(['report_notifications_count' => 3, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
 
@@ -155,32 +149,30 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-
-    /** @test */
-    public function notification_reports_should_increase_up_to_3_times()
+    #[Test]
+    public function notification_reports_should_increase_up_to_3_times(): void
     {
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $reportableevent = create('App\Event', ['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 3, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent = \App\Event::factory()->create(['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 3, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
 
         $this->assertEquals(3, Event::first()->report_notifications_count);
 
-
     }
 
-    /** @test */
-    public function notification_date_should_be_updated()
+    #[Test]
+    public function notification_date_should_be_updated(): void
     {
 
         $this->withExceptionHandling();
 
         Mail::fake();
 
-        $reportableevent = create('App\Event', ['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent = \App\Event::factory()->create(['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
 
@@ -188,39 +180,38 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-    /** @test */
-    public function deleted_users_should_not_receive_emails()
+    #[Test]
+    public function deleted_users_should_not_receive_emails(): void
     {
 
         Mail::fake();
         $this->withExceptionHandling();
 
         //Create a 'deleted' user
-        $userDeleted = create('App\User', ['deleted_at' => Carbon::now()->subDay()]);
+        $userDeleted = \App\User::factory()->create(['deleted_at' => Carbon::now()->subDay()]);
 
         //Create event with a user
-        $reportableevent = create('App\Event', ['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1), 'creator_id' => $userDeleted->id]);
+        $reportableevent = \App\Event::factory()->create(['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1), 'creator_id' => $userDeleted->id]);
 
         //no mails should have been sent
         $this->artisan('remind:creators');
 
         Mail::assertNotQueued(RemindCreator::class);
 
-
     }
 
-    /** @test */
-    public function opted_out_users_should_not_receive_emails()
+    #[Test]
+    public function opted_out_users_should_not_receive_emails(): void
     {
 
         Mail::fake();
         $this->withExceptionHandling();
 
         //Create a 'deleted' user
-        $userOptedout = create('App\User', ['receive_emails' => 0]);
+        $userOptedout = \App\User::factory()->create(['receive_emails' => 0]);
 
         //Create event with a user
-        $reportableevent = create('App\Event', ['report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1), 'creator_id' => $userOptedout->id]);
+        $reportableevent = \App\Event::factory()->create(['report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1), 'creator_id' => $userOptedout->id]);
 
         //no mails should have been sent
         $this->artisan('remind:creators');
@@ -232,15 +223,15 @@ class ReminderCreatorsTest extends TestCase
 
     protected function createNonReportableEvents(): void
     {
-        $userC = create('App\User', ['email' => ""]);
-        $userE = create('App\User');
+        $userC = \App\User::factory()->create(['email' => '']);
+        $userE = \App\User::factory()->create();
 
-        $alreadyReported = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1), 'reported_at' => Carbon::now()]);
-        $maxNotifications = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1)]);
-        $notFinished = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->addDay(1)]);
-        $lastYear = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subYear(1)]);
-        $pendingEvent = create('App\Event', ['status' => 'PENDING', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
-        $noemail = create('App\Event', ['creator_id' => $userC->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
-        $notifiedLately = create('App\Event', ['creator_id' => $userE->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDay(1), 'end_date' => Carbon::now()->subDay(1)]);
+        $alreadyReported = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1), 'reported_at' => Carbon::now()]);
+        $maxNotifications = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1)]);
+        $notFinished = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->addDay(1)]);
+        $lastYear = \App\Event::factory()->create(['status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subYear(1)]);
+        $pendingEvent = \App\Event::factory()->create(['status' => 'PENDING', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
+        $noemail = \App\Event::factory()->create(['creator_id' => $userC->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)]);
+        $notifiedLately = \App\Event::factory()->create(['creator_id' => $userE->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDay(1), 'end_date' => Carbon::now()->subDay(1)]);
     }
 }

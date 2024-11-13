@@ -6,10 +6,9 @@ return [
         'author' => 'Holdet bag EU\'s kodeuge',
         'purposes' => [
             'At kode interaktive gåder',
-            'At bruge kode til at lave dialoger mellem en chatbot og en bruger'
+            'At bruge kode til at lave dialoger mellem en chatbot og en bruger',
         ],
-        'description' =>
-            'Kod en samtale mellem en chatbot og en bruger, som forsøger at løse en gåde. Prøv at lave en chatbot, der kan chatte som et menneske. I stedet for en gåde kan du lave en dialog mellem en chatbot og en bruger.',
+        'description' => 'Kod en samtale mellem en chatbot og en bruger, som forsøger at løse en gåde. Prøv at lave en chatbot, der kan chatte som et menneske. I stedet for en gåde kan du lave en dialog mellem en chatbot og en bruger.',
         'instructions' => [
             'Tænk på en gåde',
             'Log ind på',
@@ -18,13 +17,13 @@ return [
             'Brug blokke eller tekstbaseret tilstand til at skrive din gåde',
             'Alternativt kan du bruge',
             'denne kode',
-            'og tilpasse den til din gåde, eller du kan vælge Answering a Riddle (Løs en gåde) i menuen og redigere den'
+            'og tilpasse den til din gåde, eller du kan vælge Answering a Riddle (Løs en gåde) i menuen og redigere den',
         ],
         'example' => 'Se dette eksempel på en gåde.',
         'more' => [
             'Denne kode er blevet tilpasset fra en Pencil Code-aktivitet',
-            'Answering the Riddle (Løs gåden)'
-        ]
+            'Answering the Riddle (Løs gåden)',
+        ],
     ],
 
     'paper-circuit' => [
@@ -32,12 +31,12 @@ return [
         'author' => 'Holdet bag EU\'s kodeuge',
         'purposes' => [
             'At styrke kreativiteten',
-            'At blive bedre til problemløsning'
+            'At blive bedre til problemløsning',
         ],
         'description' => [
             'Tegn en ting, du selv bestemmer. Det kan være en nattehimmel, en mariehøne, en robot, et juletræ eller noget helt andet. Du er velkommen til at skræddersy dit projekt med visuelle elementer fra EU\'s kodeuge: Du kan udforske',
             'EU\'s kodeuges pakke til lærere',
-            'og download de logoer og visuelle elementer, du vil bruge. Du kan endda lave en papirkredsløbsinvitation til EU\'s kodeuge. Skriv en motiverende meddelelse i dit kredsløb for at opfordre andre lærere til at deltage i kodeugen og/eller tjekke webstedet, der er rettet mod skoler.'
+            'og download de logoer og visuelle elementer, du vil bruge. Du kan endda lave en papirkredsløbsinvitation til EU\'s kodeuge. Skriv en motiverende meddelelse i dit kredsløb for at opfordre andre lærere til at deltage i kodeugen og/eller tjekke webstedet, der er rettet mod skoler.',
         ],
         'instructions' => [
             'Tegn en ting, og beslut, hvilke dele der skal lyse (f.eks. stjerner).',
@@ -46,7 +45,7 @@ return [
             'Tegn et plus (+)- og minus (-)-spor på den anden siden af papiret. Sørg for, at det længste ben af klistermærket med LED-kredsløbet er forbundet til batteriets "+"-side og det korteste ben til batteriets "-"-side.',
             'Læg kobbertapen på sporene.',
             'Lav en fold, så LED\'en lyser, når papiret dækker batteriet. Du kan bruge en papirklips til at sikre god kontakt med kobbertapen.',
-            'Tag et billede af papirkredsløbet, del det på Instagram, og forklar, hvorfor du synes, at andre skal deltage i dette initiativ.  '
+            'Tag et billede af papirkredsløbet, del det på Instagram, og forklar, hvorfor du synes, at andre skal deltage i dette initiativ.  ',
         ],
         'example' => 'Se nogle eksempler på papirkredsløb',
         'materials' => [
@@ -55,8 +54,8 @@ return [
             'knapcellebatteri',
             'kobbertape',
             'klistermærker med LED-kredsløb',
-            'papirklips'
-        ]
+            'papirklips',
+        ],
     ],
 
     'dance' => [
@@ -64,10 +63,9 @@ return [
         'author' => 'Holdet bag EU\'s kodeuge',
         'purposes' => [
             'At lære basale kodekoncepter',
-            'At lære at animere figurer'
+            'At lære at animere figurer',
         ],
-        'description' =>
-            'I denne udfordring skal du skabe et sæt figurer, som skal danse sammen. Du kan bruge et indbygget mediebibliotek til at vælge figurer og musikklip, eller du kan lave dine egne. Du skal animere figurerne, så de danser og snakker sammen.',
+        'description' => 'I denne udfordring skal du skabe et sæt figurer, som skal danse sammen. Du kan bruge et indbygget mediebibliotek til at vælge figurer og musikklip, eller du kan lave dine egne. Du skal animere figurerne, så de danser og snakker sammen.',
         'instructions' => [
             'Log ind på',
             'som lærer. Opret elevkonti, og del dem med eleverne. Du kan også dele en klassekode og få eleverne til at registrere sig med deres e-mailadresse fra skolen. Hvis du er en elev, kan du tilmelde dig som elev, men du vil blive bedt om at oplyse dine forældres e-mailadresse, så de kan godkende din konto.',
@@ -80,13 +78,13 @@ return [
             'Klik på hver aktør, og animer den ved at tilføje de følgende blokke',
             'Tilføj en',
             'taleblok',
-            'og få aktørerne til at tale sammen. Giv taleboblerne ny form, og skift tekstens skrifttype og -størrelse'
+            'og få aktørerne til at tale sammen. Giv taleboblerne ny form, og skift tekstens skrifttype og -størrelse',
         ],
         'example' => [
             'Prøv at se',
             'dette eksempel',
-            'på dansende robotter. Du er velkommen til at bruge det og lave et remix.'
-        ]
+            'på dansende robotter. Du er velkommen til at bruge det og lave et remix.',
+        ],
     ],
 
     'compose-song' => [
@@ -95,10 +93,9 @@ return [
         'purposes' => [
             'At lære at kode gennem musik',
             'At kunne skelne mellem musikgenrer og instrumenter',
-            'At lave en sang ved at mixe lydklip'
+            'At lave en sang ved at mixe lydklip',
         ],
-        'description' =>
-            'I denne udfordring skal du lave en musicalmelodi ved hjælp af et programmeringssprog. Du kan bruge indbyggede lydklip eller optage dit eget og mixe dem for at lave en musicalmelodi. Kør din kode i Digital Audio Workstation (Digital lydarbejdsstation), og lyt til den musik, du har kodet. Leg med forskellige lyde og effekter for at ændre dit musikstykke.',
+        'description' => 'I denne udfordring skal du lave en musicalmelodi ved hjælp af et programmeringssprog. Du kan bruge indbyggede lydklip eller optage dit eget og mixe dem for at lave en musicalmelodi. Kør din kode i Digital Audio Workstation (Digital lydarbejdsstation), og lyt til den musik, du har kodet. Leg med forskellige lyde og effekter for at ændre dit musikstykke.',
         'instructions' => [
             'Log ind på',
             'Klik her for at lave et script',
@@ -125,13 +122,13 @@ return [
             'Skriv',
             'I parentesen skal du angive spor-nummeret, VOLUME, GAIN, volumenniveau, den takt, hvor du vil starte, og det niveau og den takt, hvor du vil slutte',
             'Dette er et eksempel på en fade-ind-effekt',
-            'og en fade-ud-effekt'
+            'og en fade-ud-effekt',
         ],
         'example' => [
             'Lyt til',
             'et eksempel på en sang, der er kodet med Earsketch',
-            'Du kan importere koden og redigere den'
-        ]
+            'Du kan importere koden og redigere den',
+        ],
     ],
     'sensing-game' => [
         'title' => 'Lav et videosansespil',
@@ -139,10 +136,9 @@ return [
         'purposes' => [
             'At kode animerede objekter',
             'At få en bedre forståelse af, hvordan man styrer digital animation med fysisk bevægelse',
-            'At lave en sang ved at mixe lydklip'
+            'At lave en sang ved at mixe lydklip',
         ],
-        'description' =>
-            'I denne udfordring skal du lave et simpelt spil, der bruger et videokamera som sensor til at registrere bevægelse, dvs. at du vil være i stand til at styre animationen med fysisk bevægelse. I dette spil er opgaven at indsamle så mange EU-kodeuge-bobler som muligt på 30 sekunder. I stedet for at indsamle bobler kan du lave et spil, hvor du jager en figur eller sprænger balloner med dine hænder.',
+        'description' => 'I denne udfordring skal du lave et simpelt spil, der bruger et videokamera som sensor til at registrere bevægelse, dvs. at du vil være i stand til at styre animationen med fysisk bevægelse. I dette spil er opgaven at indsamle så mange EU-kodeuge-bobler som muligt på 30 sekunder. I stedet for at indsamle bobler kan du lave et spil, hvor du jager en figur eller sprænger balloner med dine hænder.',
         'instructions' => [
             'Log ind på',
             'Klik på',
@@ -161,12 +157,12 @@ return [
             'Ændre Stopur med -1',
             'Lav en ny sprite',
             'Game Over',
-            'for at afslutte spillet. Du kan også lave en sprite med titlen på dit spil, f.eks. Saml alle EU-kodeuge-boblerne.'
+            'for at afslutte spillet. Du kan også lave en sprite med titlen på dit spil, f.eks. Saml alle EU-kodeuge-boblerne.',
         ],
         'example' => [
             'Spil videosansespillet Saml alle EU-kodeuge-boblerne. Du er velkommen til at remixe',
-            'dette projekt'
-        ]
+            'dette projekt',
+        ],
     ],
 
     'calming-leds' => [
@@ -176,53 +172,48 @@ return [
         'materials' => [
             'en micro:bit-dims og (eventuelt) en batteripakke',
             'en bærbar computer eller tablet, som du kan bruge til at gå ind på Microsoft MakeCode og YouTube',
-            'microbit.org for ressourcer til aktiviteten'
+            'microbit.org for ressourcer til aktiviteten',
         ],
-        'description' =>
-            'Eleverne skal lave en digital dims ved hjælp af LED\'er, der kan hjælpe dem med at regulere deres vejrtrækning og føle sig roligere. De bliver bedt om at skrive simpel kode og udforske animationer og sekvenser.',
+        'description' => 'Eleverne skal lave en digital dims ved hjælp af LED\'er, der kan hjælpe dem med at regulere deres vejrtrækning og føle sig roligere. De bliver bedt om at skrive simpel kode og udforske animationer og sekvenser.',
         'instructions' => [
             'Målet er at lave en beroligende LED-dims, der virker, og som man kan bruge til at regulere sin vejrtrækning. Dimsen kan laves på en fysisk micro:bit-plade eller på simulatoren i MakeCode-editoren.',
             'Udfordringen kan gennemføres med MakeCode-editoren og ved at skrive en simpel kodesekvens, som vist i videoen/på screenshottet.',
             'For at udvide udfordringen kan eleverne udforske forskellige animationer og bruge deres kreativitet til de animationer, de synes bedst kan hjælpe dem med at falde til ro eller live op.',
             'Der er flere oplysninger og videoinstruktioner på',
-            'dette link'
+            'dette link',
         ],
-        'example' =>
-            'På denne side er der instruktioner og videoer af den gennemførte udfordring og oplysninger om, hvordan man koder',
+        'example' => 'På denne side er der instruktioner og videoer af den gennemførte udfordring og oplysninger om, hvordan man koder',
         'purposes' => [
             'At designe en simpel digital genstand med et nyttigt formål',
             'At udforske sekvenser og animationer og hvordan de virker',
             'At teste og finde fejl i (debugge) simpel kode',
-            'At lave flere gennemløb af et design ved at gøre animationerne hurtigere eller langsommere'
-        ]
+            'At lave flere gennemløb af et design ved at gøre animationerne hurtigere eller langsommere',
+        ],
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' =>
-            'Datalogisk tænkning og datalogiske færdigheder med ScratchJr',
-        'author' =>
-            'Stamatis Papadakis – Ambassadør for EU\'s kodeuge i Grækenland',
+        'title' => 'Datalogisk tænkning og datalogiske færdigheder med ScratchJr',
+        'author' => 'Stamatis Papadakis – Ambassadør for EU\'s kodeuge i Grækenland',
         'purposes' => [
             'At lære nye kommandoer og grænseflader godt at kende.',
             'At skabe simple programmer med simple årsag-og-virkning-kommandoer.',
-            'At udføre simpel debugging ved at prøve sig frem.'
+            'At udføre simpel debugging ved at prøve sig frem.',
         ],
-        'description' =>
-            'I denne udfordring skal børn indarbejde koncepter fra datalogisk tænkning i deres projekter ved at bruge ScratchJr-appen til at gøre deres historier mere fængende, spændende og følelsesladede.',
+        'description' => 'I denne udfordring skal børn indarbejde koncepter fra datalogisk tænkning i deres projekter ved at bruge ScratchJr-appen til at gøre deres historier mere fængende, spændende og følelsesladede.',
         'instructions' => [
             'Med ScratchJr behøver børn ikke at kunne læse og skrive. Alle instruktioner og menuindstillinger kan findes ved hjælp af symboler og farver. Udfordringen kan gennemføres i klasseværelset, faglokalet eller endda udendørs, da der ikke er behov for internet.',
-            'Børnene bruger en by som baggrund og kodeblokke til at få en bil til at køre gennem byen.'
+            'Børnene bruger en by som baggrund og kodeblokke til at få en bil til at køre gennem byen.',
         ],
         'example' => [
             'Børnene kan bruge lyd- og bevægelsesblokke og start forfra-blokke til at få figurer til at danse.',
-            'Børnene vælger en baggrund og en figur og bruger en bevægelsesblok til at få en bil til at køre gennem byen. Børnene kan bruge hastighedsblokken til at få en figur til at bevæge sig hurtigere eller langsommere.'
+            'Børnene vælger en baggrund og en figur og bruger en bevægelsesblok til at få en bil til at køre gennem byen. Børnene kan bruge hastighedsblokken til at få en figur til at bevæge sig hurtigere eller langsommere.',
         ],
         'materials' => [
             'Den gratis app',
             'fungerer på forskellige operativsystemer og typer af smart-enheder',
             'Desuden tilbyder webstedet',
-            'masser af gratis uddannelsesmateriale'
+            'masser af gratis uddannelsesmateriale',
         ],
-        'duration' => '90 minutter'
+        'duration' => '90 minutter',
     ],
     'ai-hour-of-code' => [
         'title' => 'AI-time med kode',
@@ -230,85 +221,77 @@ return [
         'purposes' => [
             'At lave kode, der omfatter sekvenser, hændelser, loops og betingelser',
             'At nedbryde de trin, der skal til for at løse et problem, til en nøjagtig sekvens af instruktioner',
-            'At udforske kodekoncepter'
+            'At udforske kodekoncepter',
         ],
-        'description' =>
-            'En landsby er truet af brand og har brug for, at du koder en løsning! Hils på din kodehjælper, Minecraft-agenten (Minecraft Agent), og programmér så agenten til at navigere rundt i skoven og indsamle data. Disse data vil hjælpe agenten med at forudsige, hvor brandene vil opstå. Kod dernæst agenten til at hjælpe med at forhindre, at branden spreder sig, redde landsbyen og gøre skoven sikker for dyrelivet igen. Lær de grundlæggende elementer ved at kode, og udforsk et eksempel på kunstig intelligens (AI) fra den virkelige verden.',
+        'description' => 'En landsby er truet af brand og har brug for, at du koder en løsning! Hils på din kodehjælper, Minecraft-agenten (Minecraft Agent), og programmér så agenten til at navigere rundt i skoven og indsamle data. Disse data vil hjælpe agenten med at forudsige, hvor brandene vil opstå. Kod dernæst agenten til at hjælpe med at forhindre, at branden spreder sig, redde landsbyen og gøre skoven sikker for dyrelivet igen. Lær de grundlæggende elementer ved at kode, og udforsk et eksempel på kunstig intelligens (AI) fra den virkelige verden.',
         'instructions' => 'Download læreplanen her',
         'materials' => [
             'Installér Minecraft: Education Edition',
             'Når Minecraft Education Edition er installeret, kan du finde udfordringen på',
-            'dette websted'
-        ]
+            'dette websted',
+        ],
     ],
     'create-a-dance' => [
         'title' => 'Lav en dans med Ode to Code!',
-        'purposes' =>
-            'At øve sig i at kode på en sjov måde og føle sig som en del af fællesskabet i EU\'s kodeuge.',
+        'purposes' => 'At øve sig i at kode på en sjov måde og føle sig som en del af fællesskabet i EU\'s kodeuge.',
         'description' => [
             'Lav en dans med Ode to Code! Brug',
             'Dance Party-vejledningen',
-            'til at kode en dans til Ode to Code. Den officielle hymne til EU\'s kodeuge er en af valgmulighederne i Dance Party (dansefest).'
+            'til at kode en dans til Ode to Code. Den officielle hymne til EU\'s kodeuge er en af valgmulighederne i Dance Party (dansefest).',
         ],
         'instructions' => [
             'Instruktioner er vist som videoer i',
             'vejledningen',
-            'og desuden skrevet øverst på hvert niveau'
+            'og desuden skrevet øverst på hvert niveau',
         ],
         'example' => 'Du kan finde udvalgte elevkreationer her:',
-        'materials' => 'Code.org-vejledningen'
+        'materials' => 'Code.org-vejledningen',
     ],
     'create-a-simulation' => [
         'title' => 'Lav en simulering!',
         'purposes' => [
             'At lære om simuleringer og samtidig introducere disse variabler: at skabe en mængde, helbredelsesrater, at gå med maske og vacciner.',
-            'At aktivere forudgående kendskab til virusudbrud i den virkelige verden, som kan bruges i et fiktivt scenarie.'
+            'At aktivere forudgående kendskab til virusudbrud i den virkelige verden, som kan bruges i et fiktivt scenarie.',
         ],
-        'description' =>
-            'Skriv kode for at lave og køre din egen simulering af et virusudbrud i Monster Town. Lær at kode og at forudsige, hvad der vil ske med indbyggerne i Monster Town.',
+        'description' => 'Skriv kode for at lave og køre din egen simulering af et virusudbrud i Monster Town. Lær at kode og at forudsige, hvad der vil ske med indbyggerne i Monster Town.',
         'instructions' => [
             'Instruktioner er vist som videoer i',
             'vejledningen',
-            'og desuden skrevet øverst på hvert niveau'
+            'og desuden skrevet øverst på hvert niveau',
         ],
-        'example' =>
-            'Når du er færdig, kan du dele din simulering med andre. Del dit budskab om, hvad du mener, vi kan gøre for at hjælpe andre med ikke at blive syge, når virus kommer til byen.',
-        'materials' => 'Code.org-vejledningen'
+        'example' => 'Når du er færdig, kan du dele din simulering med andre. Del dit budskab om, hvad du mener, vi kan gøre for at hjælpe andre med ikke at blive syge, når virus kommer til byen.',
+        'materials' => 'Code.org-vejledningen',
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Lav dit eget mesterværk!',
         'audience' => 'Kan bruges til alle aldre',
-        'purpose' =>
-            'At introducere begreber inden for datalogi på en visuel måde og anspore til kreativitet',
-        'description' =>
-            'Lav dit eget mesterværk med artist! Brug kodeblokke til at få artist til at lave et enestående kunstværk.',
+        'purpose' => 'At introducere begreber inden for datalogi på en visuel måde og anspore til kreativitet',
+        'description' => 'Lav dit eget mesterværk med artist! Brug kodeblokke til at få artist til at lave et enestående kunstværk.',
         'instructions' => 'Der er instruktioner øverst på hvert niveau',
-        'example' =>
-            'Der er eksempler fra artist på denne side under Drawing (tegning)',
-        'materials' => ['Du kan finde vejledningens første niveau', 'HER']
+        'example' => 'Der er eksempler fra artist på denne side under Drawing (tegning)',
+        'materials' => ['Du kan finde vejledningens første niveau', 'HER'],
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'CS First Unplugged-aktiviteter',
         'purposes' => [
             'At støtte elever, der lærer hjemmefra',
-            'At give alle en pause skærmen'
+            'At give alle en pause skærmen',
         ],
-        'description' =>
-            'CS First Unplugged er et sæt aktiviteter, der præsenterer elever for koncepter inden for datalogisk tænkning uden en computer. Vi har designet denne lektion for at vise, at datalogi er mere end blot kode.',
+        'description' => 'CS First Unplugged er et sæt aktiviteter, der præsenterer elever for koncepter inden for datalogisk tænkning uden en computer. Vi har designet denne lektion for at vise, at datalogi er mere end blot kode.',
         'instructions' => [
             'Du kan finde en brochure med alle aktiviteter på engelsk på dette',
             'link',
             'og en læreplan på engelsk på dette',
             'Aktiviteterne i denne lektion kan gennemføres individuelt og i vilkårlig rækkefølge',
-            'Læreren kan tage billeder af læringsprocessen og dele dem på Instagram med #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Læreren kan tage billeder af læringsprocessen og dele dem på Instagram med #EUCodeWeekChallengeGoogle #GrowWithGoogle',
         ],
         'materials' => [
             'Udover brochuren med aktiviteter er der ved nogle aktiviteter behov for, eller det kan være en fordel med, supplerende materialer.',
             'Små tælleenheder (såsom tørrede bønner) til at bruge på Network a Neighborhood-kortet (Lav området til et netværk).',
             'Sakse til at klippe krypteringshjulet ud i Send a Secret Message (Send en hemmelig meddelelse).',
             'Karton og lim til at afstive krypteringshjulet i Send a Secret Message (Send en hemmelig meddelelse).',
-            'En tegnestift, en tandstik eller en papirklips, der er rettet ud, til at lave krypteringshjulet i Send a Secret Message (Send en hemmelig meddelelse).'
-        ]
+            'En tegnestift, en tandstik eller en papirklips, der er rettet ud, til at lave krypteringshjulet i Send a Secret Message (Send en hemmelig meddelelse).',
+        ],
     ],
     'family-care' => [
         'title' => 'Familieomsorg',
@@ -320,14 +303,14 @@ return [
             'At se problemer som muligheder og skabe kreative løsninger',
             'At bruge kode til at omsætte sine løsninger til virkelighed på nye måder',
             'At designe plakater og fremlægge sine løsninger for andre',
-            'At bruge sociale medier til at give sine projekter gennemslagskraft.'
+            'At bruge sociale medier til at give sine projekter gennemslagskraft.',
         ],
         'description' => [
             'Hvad kommer du til at tænke på, når vi taler om hjem? Et dejligt hus? En stor middag, som dine forældre har tilberedt? Et hemmeligt sted til dig selv? Et varmt hjem giver nyt brændstof til krop og sind, ligesom en benzintank. Midt i det moderne livs travlhed har forældre altid travlt med at arbejde. Når du hænger ud med vennerne, kan du ikke lade dine killinger være alene. Men hvordan skal du holde øje med dem, når du ikke er der? Temaet for udfordringen er',
             'Familieomsorg',
             'Med udgangspunkt i dette tema opfordres eleverne til at udvikle en idé til at give kærlighed og omsorg gennem kode og hardware. Her er nogle spørgsmål, du kan tænke over',
             'Hvor mange familiemedlemmer er I hjemme hos dig? Hvem er de? Er du stødt på problemer ved at bo sammen med dem? Hvilken form for omsorg har de brug for?',
-            'Kender du nogen, som mangler familieomsorg mere end andre i dit lokalsamfund? Hvordan kan du hjælpe dem?'
+            'Kender du nogen, som mangler familieomsorg mere end andre i dit lokalsamfund? Hvordan kan du hjælpe dem?',
         ],
         'instructions' => [
             'Brainstorm og udforsk emnet familieomsorg',
@@ -336,7 +319,7 @@ return [
             'Vælg en løsning',
             'Programmér og opbyg strukturen',
             'Design en plakat til at præsentere dit projekt',
-            'Fremlæg den for dine lærere og familiemedlemmer'
+            'Fremlæg den for dine lærere og familiemedlemmer',
         ],
         'example' => ['Du kan se nogle eksempler her', 'og'],
         'materials' => [
@@ -348,23 +331,21 @@ return [
             'Det deltagende hold skal koncentrere sig om det konkrete tema og lave en løsning ved hjælp af softwareprogrammering og opbygning af hardware.',
             'Eleverne opfordres til at gennemføre udfordringen i kodeugen og gå videre til det internationale niveau for at kommunikere med andre elever og vinde priser.',
             'Du kan finde flere oplysninger på:',
-            'eller ved at kontakte os på'
-        ]
+            'eller ved at kontakte os på',
+        ],
     ],
     'virtual-flower-field' => [
         'title' => 'Lad dit virtuelle blomsterbed vokse',
-        'author' =>
-            'Jadga Huegle, Meet and Code-coach og medlem af SAP Snap!-teamet',
+        'author' => 'Jadga Huegle, Meet and Code-coach og medlem af SAP Snap!-teamet',
         'duration' => '30-60 minutter',
         'purposes' => [
             'At lære programmering med et simpelt og alligevel udtryksfuldt projekt.',
             'At lære, at det at kode kan være kunstnerisk og føre til smukke resultater.',
             'At gøre efteråret lysere med farverige blomster og EU\'s kodeuge.',
             'At vise jordens mangfoldighed af blomster.',
-            'At bidrage til verdensmålene for bæredygtig udvikling (SDG\'erne), især SDG13 – klimaindsats – ved at lave kodearrangementer, der forbedrer undervisningen i klimaforandringer ved at øge opmærksomheden på emnet.'
+            'At bidrage til verdensmålene for bæredygtig udvikling (SDG\'erne), især SDG13 – klimaindsats – ved at lave kodearrangementer, der forbedrer undervisningen i klimaforandringer ved at øge opmærksomheden på emnet.',
         ],
-        'description' =>
-            'Udvikl et program i Snap!, som dyrker et virtuelt blomsterbed med forskellige typer blomster og forskellige antal blomsterblade.',
+        'description' => 'Udvikl et program i Snap!, som dyrker et virtuelt blomsterbed med forskellige typer blomster og forskellige antal blomsterblade.',
         'instructions' => [
             'Hvis du har brug for inspiration til, hvordan du kommer i gang med udfordringen, så tjek',
             'denne video',
@@ -373,25 +354,23 @@ return [
             'til at følge med',
             'Udfordringen kan gennemføres ved at programmere et virtuelt blomsterbed i Snap!(eller Scratch) og poste et skærmbillede eller et billede af resultatet online. ',
             'Blomsterbedet bør omfatte forskellige typer blomster med forskellige antal blomsterblade. Blomsterne skal helst være programmerede, dvs. at de er lavet ved gentagende gange at stemple og dreje(eller tegne og dreje) blomsterbladene. ',
-            'Post et billede af din virtuelle blomsterhave med #MeetandCode.'
+            'Post et billede af din virtuelle blomsterhave med #MeetandCode.',
         ],
         'materials' => [
             'Vi anbefaler, at du bruger',
-            'men projektet fungerer dog også i'
-        ]
+            'men projektet fungerer dog også i',
+        ],
     ],
     'haunted-house' => [
         'title' => 'Spøgelseshus i Hedy',
-        'author' =>
-            'Felienne Hermans, Leiden universitet – Ramon Moorlag, I&I – CodeWeek NL',
+        'author' => 'Felienne Hermans, Leiden universitet – Ramon Moorlag, I&I – CodeWeek NL',
         'audience' => 'Lærere og undervisere',
         'duration' => '1 eller 2 timer afhængigt af forudgående kendskab',
         'purposes' => [
             'At lave en interaktiv historie om et spøgelseshus.',
-            'At lære programmering med Hedy.'
+            'At lære programmering med Hedy.',
         ],
-        'description' =>
-            'Med Hedy kan du lave en historie om et spøgelseshus med interaktive elementer. Hver gang koden køres, bliver der lavet en ny historie. Historien kan også læses højt af computeren og deles online.',
+        'description' => 'Med Hedy kan du lave en historie om et spøgelseshus med interaktive elementer. Hver gang koden køres, bliver der lavet en ny historie. Historien kan også læses højt af computeren og deles online.',
         'instructions' => [
             'Begynd med at åbne en browser, og gå ind på hedycode.com.',
             'Følg instruktionerne for niveau 1-4. Brug fanebladene \'Level\' (Niveau) og \'Haunted house\' (Spøgelseshus).',
@@ -399,20 +378,19 @@ return [
             'Lærerne kan finde en læreplan for Hedy',
             'her',
             'Du kan finde en optagelse af Felienne Hermans, der præsenterer Hedy, på',
-            'dette link'
+            'dette link',
         ],
         'example' => 'Eksempel på spøgelseshus på niveau',
-        'materials' => ['Hedy på', 'niveau 1 til 4']
+        'materials' => ['Hedy på', 'niveau 1 til 4'],
     ],
-    'inclusive - app - design' => [
+    'inclusive-app-design' => [
         'title' => 'Inklusivt appdesign',
         'author' => 'Apple Education',
         'duration' => '60 minutter + valgfrie ekstraaktiviteter',
         'purposes' => [
-            'At brainstorme, planlægge, udvikle en prototype og dele en idé til en app, som alle kan tilgå og forstå. '
+            'At brainstorme, planlægge, udvikle en prototype og dele en idé til en app, som alle kan tilgå og forstå. ',
         ],
-        'description' =>
-            'Gode apps begynder med gode idéer. I denne aktivitet skal eleverne komme på en idé til en app om et emne, de er optaget af, og dernæst finde ud af, hvordan de designer apps med øje for inklusion og tilgængelighed. ',
+        'description' => 'Gode apps begynder med gode idéer. I denne aktivitet skal eleverne komme på en idé til en app om et emne, de er optaget af, og dernæst finde ud af, hvordan de designer apps med øje for inklusion og tilgængelighed. ',
         'instructions' => [
             'Du kan finde alle instruktioner på dette link',
             'Med denne læreplan til en time kan underviserne vejlede eleverne i at',
@@ -420,42 +398,38 @@ return [
             'brainstorme emner, der optager dem, for at finde en idé til en app',
             'beskrive deres idéer og planlægge brugeraktiviteter',
             'udarbejde en prototype af en del af appen i Keynote',
-            'dele demoer af deres prototyper og beskrive, hvordan de støtter brugere med forskellige baggrunde og evner'
+            'dele demoer af deres prototyper og beskrive, hvordan de støtter brugere med forskellige baggrunde og evner',
         ],
         'materials' => [
             'udforske Inclusive App Design Activity i Apple Teacher Learning Center',
-            'Keynote på iPad eller Mac is anbefales, men er ikke et krav. '
-        ]
+            'Keynote på iPad eller Mac is anbefales, men er ikke et krav. ',
+        ],
     ],
-    'silly - eyes' => [
+    'silly-eyes' => [
         'title' => 'Fjollede øjne',
         'author' => 'Raspberry Pi Foundation',
         'duration' => '25 minutter',
         'purposes' => [
             'At lave et projekt med brugerinddragelse. ',
             'At gøre et projekt personligt med farver og grafiske effekter. ',
-            'At lære om design i digital fremstilling. '
+            'At lære om design i digital fremstilling. ',
         ],
-        'description' =>
-            'I dette projekt lærer du at designe og lave en figur med fjollede øjne. Figurens store, fjollede øjne følger musemarkøren, så figuren kommer til live. ',
+        'description' => 'I dette projekt lærer du at designe og lave en figur med fjollede øjne. Figurens store, fjollede øjne følger musemarkøren, så figuren kommer til live. ',
         'instructions' => 'Der er adgang til hele projektbeskrivelsen her',
-        'example' =>
-            'Tjek Gobo, Under the sea(Under vandet) og Don\'t eat donut (Spis ikke donut)'
+        'example' => 'Tjek Gobo, Under the sea(Under vandet) og Don\'t eat donut (Spis ikke donut)',
     ],
     'train-ai-bot' => [
         'title' => 'Træn en AI-bot!',
-        'purposes' =>
-            'At lære om kunstig intelligens (AI), maskinlæring, træning af data og bias og samtidig undersøge etiske spørgsmål samt hvordan AI kan bruges til at løse verdens problemer.',
-        'description' =>
-            'Træn en AI-bot med AI for Oceans (AI til have). I denne aktivitet skal du programmere eller træne AI (kunstig intelligens) til at identificere fisk eller affald. Lad os rense havet!',
+        'purposes' => 'At lære om kunstig intelligens (AI), maskinlæring, træning af data og bias og samtidig undersøge etiske spørgsmål samt hvordan AI kan bruges til at løse verdens problemer.',
+        'description' => 'Træn en AI-bot med AI for Oceans (AI til have). I denne aktivitet skal du programmere eller træne AI (kunstig intelligens) til at identificere fisk eller affald. Lad os rense havet!',
         'instructions' => [
             'Instruktioner er vist som videoer i vejledningen',
-            'og desuden skrevet øverst på hvert niveau'
+            'og desuden skrevet øverst på hvert niveau',
         ],
         'materials' => [
             'Vejledningen findes her',
-            'Denne vejledning findes på over 25 sprog'
-        ]
+            'Denne vejledning findes på over 25 sprog',
+        ],
     ],
     'build-calliope' => [
         'title' => 'Byg din egen Calliope minifitnessinstruktør',
@@ -464,25 +438,396 @@ return [
             'Kendskab til sekvenser, animationer, gentagelser og variabler under leg.',
             'Design af et strukturdiagram.',
             'Test og fejlfinding (debugging) af kode.',
-            'Optimering af et program ved at prøve sig frem, kontrollere og tilpasse anvendeligheden.'
+            'Optimering af et program ved at prøve sig frem, kontrollere og tilpasse anvendeligheden.',
         ],
         'duration' => '20-30 minutter',
-        'description' =>
-            'Deltagerne udvikler en digitalt styret prototype, som bruger en farvet lysdiode til at vise en af 10 på forhånd udvalgte fitnessøvelser.',
+        'description' => 'Deltagerne udvikler en digitalt styret prototype, som bruger en farvet lysdiode til at vise en af 10 på forhånd udvalgte fitnessøvelser.',
         'materials' => [
             'Calliope mini StarterBox (hvis tilgængelig)',
-            'Bærbar computer eller tablet, som kan bruges til at gå til <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> eller <a href="https://calliope.cc">https://calliope.cc</a> og YouTube for at finde ressourcer til aktiviteten.'
+            'Bærbar computer eller tablet, som kan bruges til at gå til <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> eller <a href="https://calliope.cc">https://calliope.cc</a> og YouTube for at finde ressourcer til aktiviteten.',
         ],
         'instructions' => [
             'Start med at lave en plan og fastlægge rækkefølgen af øvelser. Brug skemaet til at programmere Calliope minis RGB-lysdiode til at vise en af de 5 farver med den fastsatte rytme. Opret så variablen for rytmen, og programmer gentagelser med loops.',
-            "Husk, at hvis I har lavet et program, I er godt tilfredse med, må I meget gerne dele det med os på info@calliope.cc – vi glæder os til at se, hvad I finder på! Og forresten – vi forærer 30 Calliope minier til nogle af dem, der sender deres kode ind!",
-            "Del QR-koden til dit projekt på Instagram, brug hashtagget #CodeWeekChallenge, og nævn @CodeWeekEU.",
+            'Husk, at hvis I har lavet et program, I er godt tilfredse med, må I meget gerne dele det med os på info@calliope.cc – vi glæder os til at se, hvad I finder på! Og forresten – vi forærer 30 Calliope minier til nogle af dem, der sender deres kode ind!',
+            'Del QR-koden til dit projekt på Instagram, brug hashtagget #EUCodeWeekChallenge, og nævn @CodeWeekEU.',
         ],
         'example' => [
             'Mens man sidder ved computeren – kan man også være aktiv.',
             'Lav en fitnessprototype med Calliope mini, som også kan testes i simulatoren. Udfordringen foregår i MakeCode-editoren ved at programmere en simpel kodesekvens (se screenshottet).',
-            'Vælg 5 forskellige farver, og tildel en fitnessøvelse til hver af dem, for eksempel squat eller sprællemænd. Derefter kan farverne arrangeres i den ønskede rækkefølge, og så er træningsprogrammet klar.'
+            'Vælg 5 forskellige farver, og tildel en fitnessøvelse til hver af dem, for eksempel squat eller sprællemænd. Derefter kan farverne arrangeres i den ønskede rækkefølge, og så er træningsprogrammet klar.',
         ],
 
-    ]
+    ],
+
+    'common' => [
+        'share' => 'Del linket eller QR-koden til dit projekt på Instagram eller Facebook, tilføj hashtagget #EUCodeWeekChallenge og nævn @CodeWeekEU.',
+        'audience' => [
+            'Lærere og undervisere',
+            'Elever i indskolingen/på mellemtrinnet (6 til 12 år)',
+            'Elever i udskolingen (12 til 16 år)',
+            'Elever på ungdomsuddannelser (16 til 18 år)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Kod en terning, der kan kastes',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Kod interaktive gåder',
+            'At kode en simulering af en genstand, der bevæger sig tilfældigt, som kan bruges, hvis den rigtige genstand ikke er til rådighed',
+        ],
+        'description' => 'I denne udfordring skal du kode en terning, som lander tilfældigt, når du kaster den med en kommando. Du kan vælge en hvilken som helst type terning med så mange sider, du vil, som for eksempel dem, man bruger i rollespil. Du kan også tilføje lyde. ',
+        'instructions' => [
+            'Log ind på Scratch',
+            'Vælg en baggrund',
+            'Skab din terninge-sprite, eller søg efter en på nettet, og upload den til dit program',
+            'Skab så mange kostumer til din sprite som det antal sider, du har valgt, og som alle viser et forskelligt tal',
+            'Vælg, hvad der skal kaste terningen (et tryk på en tast på tastaturet, et klik på spriten osv.), og skriv koden',
+            'Kod spriten til at skifte til et tilfældigt kostume, når terningen er kastet',
+            'Tilføj lydeffekter',
+        ],
+        'example' => 'Kast en 20-sidet terning',
+    ],
+    'personal-trainer' => [
+        'title' => 'Personlig træner med micro:bit',
+        'author' => '',
+        'purposes' => [
+            'At kode en micro:bit, så den bruger summeren og LED-panelet',
+            'At skabe en personlig enhed, der kan dirigere din fysiske aktivitet',
+            'At kode micro:bit til at gøre dig sundere gennem sport',
+        ],
+        'description' => 'Denne udfordring lader dig kode din micro:bit til at dirigere, hvor mange gange du skal gentage fysiske øvelser, og hvor lang tid du skal hvile. Du skal spore din fysiske aktivitet i skolen, derhjemme eller i parken.',
+        'instructions' => [
+            'Når A+B, skabes en 3-sekunders nedtællingstimer med en tone, der lyder hvert sekund, og en visning af ordet START!',
+            'I løbet af den første øvelse skal du vise en blinkende 2x2-firkant i 20 sekunder. Derefter skal du afspille en lyd og holde firkanten fikseret. I resten af tiden skal du vise et andet blinkende billede i 10 sekunder. Afspil en lyd, når programmet er færdigt.',
+            'Gentag derefter den samme handling, men vis et 3x3-panel i øvelsestiden. Gentag disse handlinger, indtil 5x5-panelet vises.',
+        ],
+        'duration' => '30-40 minutter',
+    ],
+    'create-a-spiral' => [
+        'title' => 'Skab en spiral',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'At lære om og øve sig i loops og variabler.',
+            'At styrke kreativitet i kodning.'],
+        'description' => 'I denne udfordring skal du skrive et projekt med Scratch for at skabe en spiral ved hjælp af pen-blokke, et loop og en variabel.',
+
+        'instructions' => [
+            'Pen-blokkene',
+            'Opret et nyt projekt, og kald det Spiral.',
+            'Klik på det lilla ikon “Add extension” (Tilføj udvidelse) nederst til venstre i vinduet',
+            'Vælg “pen”: Pen-blokkene er nu tilgængelige i dit projekt!',
+            'Start projektet ved at trække og slippe blokken “when green flag clicked” (når der klikkes på det grønne flag):',
+            'Du skal starte med en tom side og tilføje blokken “erase all” (slet alt) i pen-blokkene:',
+            'Du skal begynde at tegne i midten af scenen, og det betyder, at din sprite skal være i midten af scenen (0,0):',
+            'Din sprite kan bevæge sig uden at tegne eller bevæge sig og tegne:',
+            'Når den skal tegne, kan du bruge blokken pen down (pen nede)',
+            'Når den ikke skal tegne, kan du bruge blokken pen up (pen oppe)',
+            'Nu skal du tegne! Tilføj blokken “pen down” (pen nede):',
+            'Sekskanten',
+            'Tilføj nedenstående blokke til dit projekt:',
+            'Du har nu en sjettedel af din sekskant. Du skal gentage denne sekvens 6 gange:',
+            'Spiralen',
+            'For at skabe en spiral skal du tilføje 2 til længden, hver gang du tegner en næste side.',
+            'Det gør du med en <strong>variabel.</strong>',
+            'Klik på Make a Variable (Lav en variabel) i variabel-blokkene',
+            'Giv den navnet Længde, og klik på OK:',
+            'Spiralen skal vokse, og du skal starte småt: Indstil den første længde til 10, og indsæt denne blok før loopet.',
+            'Indsæt variablen “længde” i blokken “move … steps” (flyt ... trin)',
+            'For at få spiralen til at vokse skal du også have længden til at vokse i hvert loop: Tilføj blokken nedenfor i slutningen af loopet:',
+            'Her er dit nuværende projekt:',
+            'En flot spiral ',
+            'Du tegnede en spiral! Hvis den skal fortsætte i det uendelige, skal du udskifte loopet “repeat 6” (gentag 6) med loopet “forever” (for evigt):',
+            'For at tegne en farverig spiral skal du tilføje følgende blok i loopet:',
+            'Når du starter forfra, tegner spriten en uønsket streg. For at undgå dette skal du tilføje “pen up”-blokken i begyndelsen af projektet.',
+            'Her er dit færdige projekt:',
+            'Tillykke! Du har tegnet en flot spiral!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Skab et sten, saks, papir-spil, og spil mod AI',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'at forstå, hvordan maskinlæringscyklussen virker.',
+            'at bygge en maskinlæringsmodel med Teachable Machine',
+            'at lære PictoBlox-værktøjet at kende og at importere den model, du har skabt, i projektet',
+            'at indstille scenen og figurerne samt at skabe og initialisere variabler i PictoBlox',
+            'at initialisere spillet, at identificere en spillers træk og at programmere tilfældige AI-træk',
+            'at skabe og teste et spil, der gør brug af kunstig intelligens som en modspiller i et spil sten, saks, papir.',
+
+        ],
+        'description' => 'Vi vil skabe en model med Teachable Machine ud fra billeder med tre klasser: Sten, saks, papir. Modellen indlæses i PictoBlox og bruges til at skabe et spil, som vi kan spille med AI som modspiller.',
+        'duration' => '90 minutter',
+        'instructions' => [
+            'Opret et nyt billedprojekt i Teachable Machine med 3 klasser ved navn Sten, Saks og Papir. Optag mindst 400 billeder med kameraet for hver klasse. Sørg for, at der ikke er noget i baggrunden. Træn og eksportér modellen. Upload modellen, og kopiér linket.',
+            'Opret en gratis konto på PictoBlox-webstedet. Tilføj en maskinlæringsudvidelse, og upload en model. Indstil scenen, variablerne og spriterne. Initialiser spillet, identificer spillernes træk og AI\'s træk samt vinderen af runden . ',
+            'Træn dataene til spillet . ',
+            'Test modellen . ',
+            'Eksportér modellen . ',
+            'Tilføj maskinlæringsudvidelsen, og indlæs modellen . ',
+            'Indstil scenen, variablerne og spriten . ',
+            'Initialiser spillet . ',
+            'Identificer spillerens træk . ',
+            'Indstil tilfældige AI-træk . ',
+            'Broadcast tilfældige AI-træk . ',
+            'Lav tre blokke . Hvem vinder runden ? ',
+            'Kontrollér, om spilleren vinder runden . ',
+            'Kontrollér, om AI vinder runden . ',
+            'Kontrollér, om runden er uafgjort . ',
+            'Programmér blokkene . ',
+            'Sten, saks, papir-sprite',
+        ],
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Luft-tegning med AI',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'at skrive et program med udvidelsen Human Body Detection(Registrering af menneskekroppen), som kan genkende fingre, der bevæger sig foran kameraet . ',
+            'at kode et par linjers kode med enkle blokke . ',
+            'at se et eksempel på brug af AI',
+        ],
+        'description' => 'Skabelse af et program, der lader brugeren tegne i luften med hånden(pegefingeren) foran kameraet, hvor alt, der tegnes, automatisk vises på scenen i PictoBlox . ',
+        'instructions' => [
+            'Opret en konto på PictoBlox',
+            'følg de visuelle instruktioner for at gøre følgende:',
+            'tilføj udvidelserne Human Body Detection(Registrering af menneskekroppen) og Pen',
+            'indstil scenen, og tilføj en sprite(Pencil(Blyant)) og ekstra sprites til: Pen Down(Pen ned), Pen Up(Pen op), Delete all(Slet alt)',
+            'skriv kode for at få spriten Pencil(Blyant) til at følge fingeren',
+            'skriv kode til knapperne: Pen Up(Pen op), Pen Down(Pen ned) og Delete all(Slet alt) samt til Pen',
+            'Nu er du klar til at lave dine egne tegninger og lege med at give pennen forskellige farver og størrelser . ',
+        ],
+        'materials' => [
+            'En bærbar computer eller en computer med et kamera',
+            'Den nyeste version af PictoBlox downloadet(anbefales) eller PictoBlox online(gratis)',
+            'En PictoBlox-konto(gratis)',
+            'En god internetforbindelse',
+        ],
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'At lære grundlæggende koncepter for maskinlæring og tekstgenkendelse . ',
+            'At forstå den rolle, som følelser spiller i kommunikation . ',
+            'At bruge kode til at skabe dialoger mellem en chatbot og en bruger . ',
+            'At forstå, hvordan computere kan genkende emotionelle overtoner gennem tekstanalyse og svare derefter . ',
+        ],
+        'description' => [
+            'Lav en emotionel bot i Scratch, der kan vise en glad smiley ved positive beskeder(hvis du siger noget pænt til den), en vred smiley ved negative beskeder(hvis du siger noget tarveligt til den), og en forvirret smiley, hvis beskeden er hverken eller . ',
+            'Vores Emobot Kliki vil genkende komplimenter og fornærmelser, så vi kan se, hvordan computere kan trænes til at genkende emotionelle overtoner . ',
+        ],
+        'instructions' => [
+            'Kom i gang ved at programmere en liste over regler for, hvad der er pænt eller sødt, og hvad der er skidt eller tarveligt . ',
+            'Log ind på https://machinelearningforkids.co.uk/, eller opret en ny konto.',
+            'Lav en ny maskinlæringsmodel ved at tilføje 3 nye labels. Kald den første “pænt”, den anden “skidt” og tredje – hvis den skal kunne genkende dit navn – “navn”.',
+            'Træn den nye maskinlæringsmodel, test den, og brug den til at lave en Emobot i Scratch.',
+            'Start Scratch 3-editoren, slet kat-spriten, indsæt 3 nye sprites lavet med Microsoft Bing Image Creator (en glad, en vred og en ikke sikker computertegneseriefigur), eller skab en ny sprite ved at klikke på Paint-ikonet og tegne tre udgaver af kostumet for den glade, den vrede og den ikke sikre smiley.',
+            'Klik på fanen “Code” (Kode), og indtast nedenstående script.'],
+        'example' => [
+            'Del din Emobot Kliki med dine venner, og lær mere om AI og følelser!',
+            'I stedet for en computertegneseriefigur kan du prøve noget andet, som for eksempel et dyr. I stedet for pænt og tarveligt kan du træne figuren til at genkende andre typer beskeder.',
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => 'Skab magi med AI-håndtegn',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'At opøve kodefærdigheder hos eleverne, så de kan bruge grundlæggende kommandoer.',
+            'At udvikle færdigheder i algoritme-tænkning ved at nedbryde komplekse opgaver i overskuelige trin.',
+            'At fremme kreativ problemløsning ved at finde på entydige håndtegn til at tegne og skrive med.',
+            'At fremme forståelsen af AI-koncepter, især hvordan AI sætter computerne i stand til at genkende og fortolke håndtegn.',
+            'At skabe opmærksomhed om betydningen af teknologi for personer med handicap.',
+            'At fremme fælles problemløsning og teamwork blandt eleverne ved at lade dem samarbejde for at prøve at forbedre deres håndtegnsprogrammer.',
+            'At skabe en forbindelse mellem færdigheder inden for kodning og datalogisk tænkning og anvendelsesområder i den virkelige verden, med vægt på teknologiens betydning for folks liv og i overensstemmelse med verdensmålene for bæredygtig udvikling (SDG).',
+        ],
+        'duration' => [
+            '90 minutter for elever i alderen 10-12 år',
+            '45 minutter for elever i alderen 12-15 år',
+        ],
+        'description' => 'Lav et blokbaseret program i Scratch med AI-udvidelsen “Human Body Detection” (Registrering af menneskekroppen) på en kreativ og fængende måde, hvor man kan tegne på en skærm uden at bruge en almindelig mus eller touchskærm.',
+        'instructions' => [
+            'Gå ind på https://ai.thestempedia.com, og opret konti til læreren og eleverne.',
+            'Importér udvidelserne ‘Human Body Detection’,’ Pen’,’ Text to Speech’  (Registrering af menneskekroppen, Pen og Tekst til tale).',
+            'Tilføj spriten ‘Pencil’ (Blyant) fra biblioteket, og opret 7 sprites (‘skriv’, ‘ryd’, ‘sort’, ‘rød’, ‘blå’, ‘grøn’, ‘lyserød’).',
+            'Skriv kommandoer, som kontrollerer, hvad der sker, når spriten ‘Pencil’ (Blyant) rører ved en af de andre sprites.',
+            'Skriv kommandoer, som lader kameraet genkende håndtegn og flytte blyanten til din pegefingers x- og y-koordinater.',
+            'Skift kostume ved slutningen af turen.',
+            'Tilføj lydeffekter.',
+        ],
+        'materials' => [
+            'Programmeringsplatform https://ai.thestempedia.com (gratis)',
+            'lærerkonto (gratis)',
+            'elevkonto (gratis',
+            'Computere med kamera',
+            'Internetforbindelse',
+        ],
+    ],
+    'circle-of-dots' => [
+        'title' => 'En cirkel af prikker',
+        'author' => 'Marin Popov',
+        'purposes' => [
+            'At skrive kode, der tegner en linje med punkter.',
+            'At skrive kode, der tegner en linje med streger.',
+            'At skrive kode, der tegner en cirkel.',
+            'At skrive kode, der tegner en cirkel med prikker (streger).',
+        ],
+        'description' => 'Tegn en cirkel af prikker eller streger.',
+        'duration' => '40 minutter',
+        'instructions' => [
+            'Byg en prik-blok.',
+            'Byg en streg-blok.',
+            'Lav en cirkel af prikker.',
+            'Lav en cirkel af streger.',
+        ],
+    ],
+    'coding-escape-room' => [
+        'title' => 'Lav et kode-escaperoom',
+        'author' => 'Stefania Altieri og Elisa Baraghini',
+        'purposes' => [
+            'At lære om og tænke over kodekoncepter.',
+            'At bruge enkle kodeværktøjer.',
+            'At udvikle datalogisk tænkning og problemløsning.',
+        ], 'description' => [
+            'Lav en escape-kodningsoplevelse som denne:',
+            'Du kan bruge Google-formularer, Genially, Google-præsentationer eller et hvilket som helst andet værktøj til at fortælle en historie baseret på kodning ;).',
+
+        ],
+        'duration' => '90 minutter',
+        'instructions' => 'Du kan inddele eleverne i små grupper, hvor de kan spille og derefter lave en ny udfordring med skabelonen: ',
+
+        'materials' => [
+            'Et hvilket som helst værktøj kan bruges (Google- og Microsoft-platformene til at oprette og dele dokumenter, præsentationer og ark). Alle former for kodningsbegreber, værktøjer og personer, der har forbindelse til IKT og kodning.',
+        ],
+        'example' => [
+            'Nogle af de personer, der har spillet en meget vigtig rolle for IKT\'s historie, samt de grundlæggende begreber inden for kodning og programmering introduceres gennem leg . Det er den bedste måde at lære og deltage aktivt på . Dette spil kan spilles i hold eller enkeltvis, som en udfordring eller en konkurrence . Eleverne kan derefter skabe noget lignende og udvikle færdigheder inden for f . eks . kreativitet og kodning . ',
+            'Det er en meget praktisk ressource, der kan genbruges og nemt genskabes . Google-formularer er et muligt værktøj . I kan også bruge Google Slides, Genial . ly eller Emaze eller et hvilket som helst andet værktøj til at skabe historier, der krydser hinanden, og jeres egne eventyr . ',
+            'Escape-udfordringen er inddelt i sessioner . Hvis man gætter rigtigt, kan man fortsætte . Eleverne skal lave kodningsquizzerne . ',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Lad slangen løbe',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'At kode slangens bevægelser på elevernes egne micro:bit . ',
+            'At indstille den korrekte placering og timing, så animationen hænger sammen . ',
+        ],
+        'description' => 'Eleverne skal skrive kode for at lade slangen navigere gennem micro:bits ved siden af hinanden . Det skal gøres på en måde, så det ser ud, som om slangen løber fra den ene micro:bit til den næste . ',
+        'duration' => '30 minutter',
+        'instructions' => [
+            'Design en bane, der går gennem flere micro:bits ved siden af hinanden(f . eks . i en 2x2-firkant).',
+            'Skriv mere kode, efterhånden som slangen bevæger sig langs banen . ',
+            'Arbejd på jeres egne enheder, og sæt dem så sammen og kør koden . ',
+            'Tænk over timing og placering: Hvis slangen går ud af den ene micro:bit, vises den på den næste micro:bit . ',
+            'Ekstraudfordringer: Med micro:bit v2: afspil musik, indtil slangen forlader din enhed . ',
+            'Design slangen ved at ændre LED\'ernes lysstyrke.',
+            'Prøv at gøre slangen længere eller at have flere slanger.',
+        ],
+        'example' => [
+            'Dette er et eksempel på en slange med en længde på 6 pixel og 4 micro:bits i en 2x2-firkant: ',
+            'Kodning af den første micro:bit (det kan læreren gøre)',
+            'Alle koder initieres af denne micro:bit, som sender et radiosignal til de andre micro:bits, når der trykkes på A-knappen.',
+            'Kodning af slangens bevægelser',
+            'Alle micro:bits skal være i den samme radiogruppe som start-micro:bitten.',
+            'Alle animationer starter, når radiosignalet modtages.',
+            'Animationen på den første micro:bit vises med det samme, og de andre venter, indtil slangen når til dem.',
+            'Tiden mellem de to faser bestemmer slangens fart.',
+        ], 'materials' => [
+            'micro:bits (en pr. elev, hvis det er muligt)',
+            'bærbar eller stationær computer til makecode.microbit.org-editoren',
+        ],
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Illustrer en vittighed med bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'At designe et lille spil, hvor brugeren finder svaret på et spørgsmål i en vittighed.',
+        'description' => 'Eleverne designer et spil, hvor brugeren finder svaret på et spørgsmål i en vittighed, når figuren rammer en genstand på banen. Eleverne bruger grundlæggende funktioner i bitsy til at gennemføre udfordringen.',
+        'instructions' => [
+            'Find på en vittighed med et spørgsmål. Gå til bitsy, og start et nyt projekt. I skal bruge følgende:',
+            'en avatar – en sprite, som man kan flytte rundt',
+            'en hvid kat på en lilla baggrund',
+            'automatisk genereret beskrivelse',
+            'en genstand, som avataren skal gå hen til',
+            'et lokale – programmets baggrund',
+            'to beskeder: et spørgsmål og et svar',
+            'Det endelige spil kan downloades som en html-fil.',
+        ],
+        'example' => 'På dette websted kan I se et eksempel på en vittighed, og der er et link til et digitalt whiteboard:',
+        'materials' => 'bitsy kører i en browser',
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'En app, der kan tælle på flere forskellige sprog',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'At lære, hvordan man laver en simpel app.',
+            'At lære at programmere med blokke.',
+            'At lære, hvordan man tilføjer labels, knapper, billeder, sensorer og medier.',
+            'At lære, hvordan man ordner elementer på en app-skærm.',
+        ],
+        'description' => 'Appen kan bruges til at tælle på flere forskellige sprog ved at trykke på en knap. Når brugeren ryster smartphonen, går tælleren tilbage til nul. Udfordringen er at tilføje endnu et sprog.',
+        'instructions' => [
+            'For at gennemføre udfordringen skal man definere det andet sprog, som appen skal kunne tælle på.',
+            'Derefter skal man downloade det pågældende lands flag fra internettet (f.eks. fra Pixabay eller Unsplash) og uploade det til MIT APP Inventor-platformen via flag-elementet i egenskaben Picture (Billede).',
+            'Derefter skal man finde ud af, hvordan landets navn staves på engelsk, og hvordan man siger "Afslut" og "Tryk på mig" på det pågældende lands sprog.',
+            'Til sidst skal man tilføje de nødvendige blokke, så appen virker på det nye sprog.',
+        ],
+        'materials' => [
+            'For at udvikle en app skal man bruge en bærbar eller stationær computer med internetadgang.',
+            'Opret en konto på MIT APP Inventor-platformen på <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
+            'Man skal også installere MIT AI2 Companion-appen på smartphonen, så man kan teste den udviklede applikation.',
+        ],
+    ],
+    'coding-with-art-through-storytelling' => [
+        'title' => 'Kodning med kunst gennem historiefortælling',
+        'author' => 'Maria Tsapara og Anthi Arkouli',
+        'purposes' => [
+            'At opøve færdigheder i at observere, fortolke og stille spørgsmål ved at bruge kunst.',
+            'At være kreativ og samarbejde med andre om et fælles mål',
+            'At lave en algoritme for at fortælle historien om igen.',
+        ],
+        'description' => 'I denne udfordring vil eleverne blive inspireret af et kunstværk, skabe en historie og illustrere den. Derefter vil de forsøge at fortælle historien om igen ved at bruge et programmerbart robotsæt eller via en aktivitet uden brug af computer.',
+        'materials' => [
+            'Denne aktivitet kan gennemføres uden brug af computer eller med en programmerbar robot til undervisningsbrug som f.eks. Bee-Bot/Blue-Bot/muserobot.',
+            'Bee-Bot pilekort eller pilekort til aktiviteten uden brug af computer',
+            'på græsk',
+            'Der er flere oplysninger om Project Zeros Thinking Routine Toolbox på',
+
+        ],
+        'example' => [
+            'Læreren arbejder med eleverne for at lave en model af, hvordan algoritmen skal designes med kortene, så den giver instruktioner til Bee-Bot eller en anden robot om at gå til den første hændelse i historien på måtten . Eleverne arbejder i grupper på 3-4 for at designe en algoritme, som lader robotten gå til den næste sekvens . Eleverne tester deres algoritmer på klassens måtte og fejlsøger, i det omfang det er nødvendigt . ',
+            'De kan fortsætte med at bevæge sig gennem så mange hændelser i historien, som de kan',
+            'Denne aktivitet kan også gennemføres uden brug af computer . ',
+            'Et barn er robotten – et andet barn er programmøren . Programmøren laver en algoritmebane med pilekortene for at hjælpe robotten med at bevæge sig fra et billede til et andet og fortælle historien om igen . Hver gang robotten lander på et billede, skal den fortælle en del af historien . ',
+        ],
+        'instructions' => [
+            'Læreren beder eleverne om at kigge på et maleri eller et foto . ',
+            'De bruger tænkningsrutinen "Begyndelse, midte, slutning" (Project Zero fra Harvard School) til at skabe en historie . ',
+            'Læreren spørger dem: "Hvis dette kunstværk er begyndelsen/midten/slutningen på en historie, hvad mon der så skete før eller sker bagefter eller til sidst?',
+            'Eleverne illustrerer hændelserne i historien.',
+            'Eleverne genfortæller historien og sætter hændelserne ind i skemaet. De laver en algoritme med pilekortene, som hjælper Bee-Bot med at fortælle historien om igen.',
+        ],
+    ],
+    'coding-with-legoboost' => [
+        'title' => 'Kodning og programmering med LegoBoost – Scratch-udvidelse',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'at bygge modeller med LegoBoost.',
+            'at udvikle færdigheder i programmering i Scratch.',
+            'at programmere robotter vha. enkle til komplekse kommandoer.',
+        ],
+        'description' => 'I denne udfordring vil eleverne bruge Scratch-LegoBoost-udvidelsen og indtaste kode i applikationen for at få robotten til at bevæge sig fremad og baglæns, undgå forhindringer og reagere på stemmekommandoer.',
+        'duration' => '120 minutter',
+        'instructions' => [
+            'Log ind på Scratch.mit.edu-applikationen.',
+            'Start Scratch Link, og aktivér Bluetooth på den bærbare computer.',
+            'Klik på Add an Extension (Tilføj en udvidelse) i Scratch, og vælg LegoBoost.',
+            'Tilføj et billede om EU’s kodeuge.',
+            'Indstil de to AB-motorer til at være tændte og til at slukke, når de møder en rød forhindring.',
+            'I den grønne farve indstilles motor A til at være tændt, og i den sorte farve er det motor B.',
+            'Læg grønne, røde og sorte forhindringer på en bane.',
+            'Tilføj kommandoer og sving vha. pile og tekst-til-tale, når der mødes en forhindring.',
+            'Test det!',
+        ],
+    ],
+
 ];

@@ -15,11 +15,10 @@ return [
 
     'title' => 'Generate your super organiser certificate for Codeweek',
     'generate' => 'Generate the Certificate',
-    'required'=>'Required fields are marked with an * asterisk.',
+    'required' => 'Required fields are marked with an * asterisk.',
     'name_for_certificate' => [
         'label' => 'Name for certificate',
-        'help' => 'Change this to the name of the activity organizer who will be issued the super organiser certificate.'
+        'help' => 'Change this to the name of the activity organizer who will be issued the super organiser certificate.',
     ],
-
 
 ];

@@ -336,6 +336,79 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
                 "3" => "Ieprogrammē manu garastāvokli vidusskolas skolēniem",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS palīdzība ūdenim",
+            "author" => "autors: Francisko Delgado Cecīlija",
+            "text" => [
+
+                "SOS palīdzība ūdenim ir atbilde uz nepieciešamību risināt ūdens piesārņojuma problēmu. Neskatoties uz pēdējo gadu laikā pieliktajām pūlēm, pasaulē joprojām ir divi miljardi cilvēku, kuriem nav piekļuves droši izmantojamam dzeramajam ūdenim. Tas nozīmē, ka vēl tāls ceļš ejams, lai sasniegtu 2030. gada Ilgtspējīgas attīstības mērķu 6. punktu, kurā teikts, ka līdz 2030. gadam visiem ir jābūt piekļuvei drošā veidā apsaimniekotam ūdenim un kanalizācijai. Tas pats attiecas arī uz Ilgtspējīgas attīstības mērķu 14. punktu par zemūdens dzīvi, kura mērķis ir saudzēt okeānus, jūras un jūras resursus, izmantojot tos ilgtspējīgi, lai nodrošinātu ilgtspējīgu attīstību.",
+
+                "Šajā mācību modulī galvenā uzmanība pievērsta atbilstošiem un aktuāliem jautājumiem par ūdens kvalitātes mērījumiem un jauniem piesārņotājiem, kas apdraud ūdens kvalitāti. Audzēkņiem būs iespēja izpētīt reālas problēmas, kas saistītas ar ūdeni un apkārtējo vidi, un meklēt tām risinājumu, kas ļaus attīstīt tādas prasmes kā pētniecība, kritiskā domāšana un problēmu risināšana.",
+
+                "Stundu plānos iekļautas praktiskas un radošas aktivitātes, piemēram programmēšana Scratch vidē, ievads mašīnmācīšanas un mākslīgā intelekta apgūšanā ar Learning Machine Learning lietotni un vadāmu spēkratu būvēšana ar Lego komplektiem, lai izmantotu tos ūdens paraugu ņemšanai un pH analizēšanai. Šīs aktivitātes ļaus audzēkņiem izmantot iemaņas un zināšanas praksē interaktīvā un rotaļīgā vidē, kas palielinās viņu motivāciju un interesi par projektu.",
+
+                "Šī mācību modeļa īstenošanai tiek ierosināts izstrādāt trīs aktivitātes klasē, lai pilnībā pabeigtu projektu un iegūtu jēgpilnāku un motivējošāku mācību procesu. Taču katru no aktivitātēm var īstenot atsevišķi."
+
+            ],
+            "activities" => [
+                "1" => "SOS palīdzība ūdenim ar Scratch",
+                "2" => "SOS palīdzība ūdenim ar mašīnmācīšanos",
+                "3" => "SOS palīdzība ūdenim ar robotiku",
+            ]
+
+        ],
+        "20" => [
+            "title" => "Code Through Art",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Bērni aug sarežģītā pasaulē, kas nepārtraukti attīstās tehnoloģiju ziņā, un tas prasa inovatīvas pieejas no agrīnās pirmsskolas izglītības pedagogiem. Šādas pieejas ietver aktivitātes, kas veicina skaitļošanas domāšanu un programmēšanu jau no mazotnes. Pētījumi liecina, ka mērķtiecīgas aktivitātes var efektīvi attīstīt bērnu skaitļošanas domāšanu un problēmu risināšanas prasmes un vienlaikus šādas aktivitātes veicina viņu radošās izpausmi, izmantojot tehnoloģijas.",
+                "Lai gan visizplatītākā programmēšanas mācīšanas stratēģija ietver izglītojošu robotu izmantošanu, pastāv arī iespēja programmēt, neizmantojot robotikas komplektu (bez datora izmantošanas). Šāda pieeja var izpausties dažādos veidos un ietvert visdažādākās aktivitātes (pikseļu māksla, bērni robotu lomās, izmantojot režģi uz grīdas u. c.). Šīs darbības sniedz uz pieredzi balstītas mācīšanās priekšrocības, jo īpaši maziem bērniem, kuri vislabāk iemācās rotaļājoties. ",
+                "<strong>Learning bit “Uz kodu caur mākslu”</strong> ietver trīs nodarbību plānus agrīnās pirmsskolas izglītības pedagogiem, un tajā tiek īstenota aktivitāte bez datora izmantošanas, izmantots izglītojošais robots bite robots un izgudrojumu komplekts Makey Makey. Izmantojot Makey Makey komplektu, audzēkņiem ir iespēja veidot ar tausti vadāmas saskarnes un izmēģināt dažādus risinājumus, radīt, eksperimentēt un stiprināt visas savas mācīšanās spējas sadarbīgā mācību vidē.",
+                "Kā teica Pablo Pikaso: \"Katrs bērns ir mākslinieks. Problēma ir, kā palikt māksliniekam, kad viņš izaug.\" Māksla sniedz bērniem iespēju radoši attēlot un paust savas idejas un sajūtas. Šajā Learning bit atradīsiet iedvesmojošas aktivitātes, lai ar mākslas un programmēšanas palīdzību attīstītu skolēnu sociālās un 21. gadsimta prasmes, rosinātu viņus radoši izpausties un veicinātu viņu iztēli . Learning Bit ”Uz kodu caur mākslu” ļaus jums veicināt skolēnu radošumu, sadarbību un problēmu risināšanu, integrējot mākslu un programmēšanu."
+            ],
+            "activities" => [
+                "1" => " Mākslas caurvīta programmēšana: 4-6 gadus veci bērnudārza audzēkņi.",
+                "2" => "Radošā koda laboratorija: 4-6 gadus veci bērnudārza audzēkņi",
+                "3" => "Skārienjutīgais audekls: Interaktīvu gleznu radīšana: 4-6 gadus veci bērnudārza audzēkņi; augstākais līmenis."
+            ]
+        ],
+        "19" => [
+
+            "title" => "Scratch radošā laboratorija",
+            "author" => "autors: Kšištofs Javorskis",
+            "text" => [
+
+                "Programmēšanu mūsdienās izmanto arī daudz kur citur, nevis tikai gatavojoties programmētāja karjerai, un tā pārsniedz datorzinātnes robežas. Tā ir jāuztver plašākā nozīmē, pievēršoties starpdisciplīnu perspektīvai un izmantojot programmēšanu kā instrumentu, lai mācītos un rotaļātos, veicinot nākotnē noderīgu prasmju attīstību.",
+
+                "Bērniem un jauniešiem ir svarīgi saprast to, kā digitālos instrumentus izmantot droši, atbildīgi un efektīvi. Viņiem nepieciešama izpratne par to, kā šie instrumenti darbojas, un jāpārzina saziņa ar tiem, izmantojot programmēšanu. Turklāt, šajā pieredzē ir jāiekļauj mijiedarbošanās un sadarbība ar klasesbiedriem.",
+
+                "Šis mācību modulis <strong>Creative Scratch Laboratory</strong> palielinās audzēkņu radošumu, veicinās zinātkāri un padarīs programmēšanu patīkamu un jautru.  Tajā ir iekļauti trīs stundu plāni audzēkņiem ar atšķirīgām programmēšanās iemaņām. Iesācēju stundu plānā audzēkņi izveidos personāžu uz papīra, importēs to Scratch un animēs to, izmantojot izvēlētos blokus. Stundu plānā audzēkņiem ar nelielām priekšzināšanām viņi apgūs video gariņu instrumentu, grafiku veidošanu ar papīru un marķieriem un Scratch mozaīkas izveidi ar video gariņiem, spiedogiem un mākslas darbiem. Stundu plānā audzēkņiem ar priekšzināšanām viņi izpētīs Scratch sejas atpazīšanas funkciju, eksperimentēs ar gariņu grafiku modificēšanu un izveidos nelielu teātri ar Scratch ģenerētiem dialogiem.",
+
+            ],
+            "activities" => [
+                "1" => "Gariņu zīmēšana un animēšana: iesācējiem",
+                "2" => "Spiedogi: audzēkņiem ar nelielām priekšzināšanām",
+                "3" => "Leļļu teātris: audzēkņiem ar priekšzināšanām",
+            ]
+        ],
+        "21" => [
+            "title" => "Izgatavošana un programmēšana",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace ir dinamiski centri, kur plaukst radošums un top praktiski projekti. Izvēloties aprīkojumu Makerspace telpai, galvenā uzmanība tiek pievērsta tādiem instrumentiem kā Calliope mini, Microbit vai Makey Makey, jo tie piedāvā plašas iespējas, kas piemērotas dažāda vecuma un prasmju līmeņa skolēniem. Šīs plāksnes atbalsta radošu projektu izstrādi jaunākiem bērniem, pateicoties tam, ka šīm plāksnēm ir pieejamas programmēšanas valodas, kuru pamatā ir bloki. Savukārt vecākiem skolēniem ar šo plašu palīdzību var veidot sarežģītākus projektus.",
+                "Izpētiet <strong>Learning Bit \”Izgatavošana un programmēšana\”</strong>, lai ienirtu Makerspace pasaulē un veicinātu starpdisciplināras prasmes, piemēram, komandas darbu un sociālo sadarbību, vienlaikus rosinot inovācijas un entuziasmu savos audzēkņos!",
+                "Makey Makey ir shēmas plate, kas ikdienā izmantojamus priekšmetus pārvērš datora taustiņos. Pievienojot priekšmetus plāksnei ar \"krokodila\" tipa spailēm, kas pēc tam savienojas ar datoru, izmantojot USB kabeli (vai iPad ar kameras adapteri), Makey Makey var atvērt un aizvērt elektriskās ķēdes starp cilvēku un priekšmetu. Tādējādi tiek nosūtīti elektriskie signāli, kurus dators saņem kā tastatūras taustiņu nospiešanu vai peles klikšķus. Tas ļauj audzēkņiem izveidot radošus izgudrojumus, piemēram, mūzikas instrumentus, datorspēles vai interaktīvus plakātus - iespējas ir bezgalīgas! Makey Makey un šajā Learning bit izklāstītos projektus var izmantot gan pamatskolās, gan vidusskolās, lai mācītu prasmes tādās jomās kā mediju izglītība, datorzinātne, dabaszinātnes, fizika, mūzika, sports un starpdisciplināras prasmes, piemēram, komandas darbs un sociālās prasmes.",
+                "Ienāciet aizraujošajā Makey Makey pasaulē un atraisiet neierobežotu radošumu savā klasē!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey satiekas ar mūziku: iesācējiem.",
+                "2" => "Runājoši attēli: vidēja līmeņa audzēkņiem.",
+                "3" => "Izveidot interaktīvu plakātu: augstākā līmeņa audzēkņiem.",
+            ]
+        ]
+
+
     ],
     'download_video_script' => 'Lejupielādēt video skriptu',
     'ready_to_share' =>

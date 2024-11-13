@@ -37,9 +37,9 @@ return [
     'logout' => 'Dilni',
     'signin' => 'Identifikohuni',
     'privacy' => 'Privatësia',
-    'participation'=> 'Certifikata e pjesëmarrjes',
+    'participation' => 'Certifikata e pjesëmarrjes',
     'values' => 'Vlerat tona',
 
     'featured_activities' => 'Aktivitete tё evidentuara',
-    'codeweek2020' => 'Edicioni 2020'
+    'codeweek2020' => 'Edicioni 2020',
 ];

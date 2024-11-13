@@ -4,7 +4,6 @@ namespace App\Mail;
 
 use App\User;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -15,6 +14,7 @@ class UserCreated extends Mailable
     use Queueable, SerializesModels;
 
     public $user;
+
     /**
      * Create a new message instance.
      *
@@ -27,10 +27,8 @@ class UserCreated extends Mailable
 
     /**
      * Get the message envelope.
-     *
-     * @return \Illuminate\Mail\Mailables\Envelope
      */
-    public function envelope()
+    public function envelope(): Envelope
     {
         return new Envelope(
             subject: 'Code Week: activate your account',
@@ -39,10 +37,8 @@ class UserCreated extends Mailable
 
     /**
      * Get the message content definition.
-     *
-     * @return \Illuminate\Mail\Mailables\Content
      */
-    public function content()
+    public function content(): Content
     {
         return new Content(
             markdown: 'emails.en.user-created',
@@ -51,10 +47,8 @@ class UserCreated extends Mailable
 
     /**
      * Get the attachments for the message.
-     *
-     * @return array
      */
-    public function attachments()
+    public function attachments(): array
     {
         return [];
     }

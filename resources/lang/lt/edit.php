@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Redaguokite savo #CodeWeek renginį',
+    'title' => 'Redaguokite savo #EUCodeWeek renginį',
     'required_fields' => 'Laukeliai, kuriuos reikia užpildyti, pažymėti žvaigždute *. Galite įrašyti renginį savo gimtąja kalba.',
     'description' => 'Pavadinimas',
     'audience' => 'Auditorija',
@@ -29,12 +29,12 @@ return [
         'header' => 'Jūsų kontaktinė informacija',
         'text_1' => 'Šią informaciją matys tik ',
         'link_1' => 'ES programavimo savaitės ambasadoriai',
-        'text_2'=> ' ir Programavimo savaitės
+        'text_2' => ' ir Programavimo savaitės
         organizatoriai, kurie
         patikrins jūsų renginį prieš jam atsirandant žemėlapyje ir galbūt norės su jumis susisiekti,
         jei reikėtų redaguoti informaciją,
         arba dėl apklausos po renginio atlikimo statistiniais tikslais.',
-        'contact_email' => 'Jūsų el. pašto adresas'
-    ], 
-    'edit' => 'Redaguoti renginį'
+        'contact_email' => 'Jūsų el. pašto adresas',
+    ],
+    'edit' => 'Redaguoti renginį',
 ];

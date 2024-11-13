@@ -14,7 +14,7 @@ return [
     'login' => 'Prijavite se',
     'register' => 'Registrirajte se',
     'github' => 'Upišite se na Github',
-    'twitter' => 'Upišite se na Twitter',
+    'X' => 'Upišite se na X',
     'facebook' => 'Upišite se na Facebook',
     'google' => 'Upišite se na Google',
     'azure' => 'Upišite se na Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Resetirajte svoju lozinku',
     'send_password' => 'Poslati link za resetiranje lozinke',
     'confirm_password' => 'Potvrdite lozinku',
-    'name' => 'ime'
+    'name' => 'ime',
 ];

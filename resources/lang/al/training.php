@@ -300,6 +300,76 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
                 "3" => "Më kodoni sipas emocioneve për nxënësit e ciklit të mesëm të lartë",
             ]
         ],
+        "18" => [
+
+            "title" => "Uji SOS",
+            "author" => "nga Francisco Delgado Cecilia",
+            "text" => [
+
+                "Uji SOS është një përgjigje ndaj nevojës për të adresuar problemin e ndotjes së ujit. Pavarësisht përpjekjeve të bëra gjatë viteve të fundit, në mbarë botën ekzistojnë ende 2 miliardë njerëz që nuk kanë qasje në burime të sigurta të ujit të pijshëm. Kjo do të thotë se arritja e Objektivit të Zhvillimit të Qëndrueshëm (SDG) 6 i Axhendës 2030, sipas të cilit të gjithë njerëzit duhet të kenë qasje në ujë dhe kanalizime të menaxhuara në mënyrë të sigurt deri në vitin 2030, është ende larg. E njëjta gjë vlen edhe për objektivin SDG 14 për jetën nënujore, sipas të cilit synohet përdorimi në mënyrë të qëndrueshme i oqeaneve, deteve dhe burimeve detare për zhvillim të qëndrueshëm.",
+
+                "Ky Bit Mësimor përqendrohet në çështjen përkatëse dhe aktuale të matjes së cilësisë së ujit dhe ndotësve të rinj që sfidojnë cilësinë e ujit. Nxënësit do të kenë mundësinë të hetojnë dhe të kërkojnë zgjidhje për problemet reale që lidhen me ujin dhe mjedisin, gjë që do t'u japë atyre mundësinë që zhvillojnë aftësi të ndryshme si hulumtimi, mendimi kritik dhe zgjidhja e problemeve.",
+
+                "Planet e mësimit përfshijnë aktivitete praktike dhe krijuese, si programimi në Scratch, fillimi i të mësuarit me Machine Learning (Makinerinë e të mësuarit) dhe inteligjencë artificiale me Learning Machine Learning (Të mësuarit përmes makinerisë së të mësuarit), si dhe ndërtimin e automjeteve të drejtuara me grupe Lego për marrjen e mostrave të ujit dhe analizimin e pH-it të ujit. Këto aktivitete do t'u japin studentëve mundësinë që të vënë në praktikë aftësitë dhe njohuritë e tyre në një mjedis interaktiv dhe të gjallë, me synimin për të rritur motivimin dhe interesin e tyre për projektin.",
+
+                "Për vënien në zbatim të këtij Bit-i Mësimor propozohet të zhvillohen tre aktivitetet në klasë për të përfunduar të gjithë projektin dhe për të marrë një proces mësimi më kuptimplotë dhe motivues. Megjithatë, çdo aktivitet mund të kryhet veçmas."
+
+            ],
+            "activities" => [
+                "1" => "Uji SOS me Scratch",
+                "2" => "Uji SOS me Makineri të të mësuarit",
+                "3" => "Uji SOS me Robotikë",
+            ]
+
+        ],
+        "19" => [
+            "title" => "Laboratori Krijues Scratch",
+            "author" => "nga Krzysztof Jaworski",
+            "text" => [
+
+                "Mësimi i programimit sot shkon përtej përgatitjes për një karrierë programimi dhe shtrihet përtej kufijve të shkencës kompjuterike. Ai duhet të trajtohet gjerësisht, duke konsideruar një perspektivë ndërdisiplinore dhe duke përdorur programimin si një mjet për të mësuar dhe për të luajtur për të nxitur zhvillimin e aftësive të së ardhmes.",
+
+                "Për fëmijët dhe të rinjtë, është thelbësore të kuptojnë se si të përdorin mjetet digjitale në mënyrë të sigurt, të përgjegjshme dhe efektive. Ata duhet të kuptojnë se si funksionojnë këto mjete dhe të dinë se si të komunikojnë me to përmes programimit. Përveç kësaj, kjo përvojë duhet të përfshijë ndërveprime bashkëpunuese me bashkëmoshatarët e tyre.",
+
+                "Biti Mësimor <strong>Creative Scratch Laboratory</strong> do të përmirësojë kreativitetin e studentëve, do të nxisë kureshtjen e tyre dhe do ta bëjë kodimin të këndshëm dhe argëtues.  Ai përbëhet nga tre plane mësimore për studentët me aftësi të ndryshme kodimi. Në planin mësimor për nivelin fillestar, studentët krijojnë një karakter në letër, e importojnë atë në Scratch dhe e animojnë atë duke përdorur blloqet e përzgjedhura. Plani mësimor i nivelit mesatar i mëson studentët të mësojnë mjetin Video Sprites, të krijojnë grafikë me letër dhe markera dhe të prodhojnë një mozaik Scratch me Video Sprites, pulla dhe vepra arti. Në planin mësimor të nivelit të përparuar, studentët eksplorojnë funksionin e njohjes së fytyrës në Scratch, eksperimentojnë me manipulimin e grafikëve sprite dhe krijojnë një mini-teatër me dialogë të krijuar në Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Vizatimi dhe animimi i spriteve: për fillestarë",
+                "2" => "Pullat: për studentë me nivel mesatar",
+                "3" => "Teatri i kukullave: për studentë me nivel të përparuar",
+            ]
+        ],
+        "20" => [
+            "title" => "Kodimi përmes artit",
+            "author" => "nga Maria Tsapara",
+            "text" => [
+                "Fëmijët po rriten në një botë komplekse, e cila po zhvillohet vazhdimisht në teknologji, gjë që kërkon qasje arsimore novatore për edukatorët e fëmijërisë së hershme. Këto qasje përfshijnë aktivitete që nxisin mendimin përllogaritës dhe programimin nga një moshë e re. Studimet sugjerojnë që aktivitetet e synuara mund të zhvillojnë në mënyrë të efektshme aftësitë e fëmijëve për mendimin përllogaritëse dhe zgjidhjen e problemeve dhe këto aktivitete zhvillojnë njëkohësisht shprehjen e kreativitetit të tyre përmes teknologjisë.",
+                "Megjithëse strategjia më e zakonshme për mësimin e programimit përfshin përdorimin e robotëve edukativë, ekziston gjithashtu mundësia e programimit pa përdorimin e kompleteve robotike (jashtë linje). Kjo qasje mund të marrë forma të ndryshme dhe të përfshijë një gamë të gjerë aktivitetesh (art me pikselë, fëmijë në rolin e robotëve, përdorimin e kuadrateve në dysheme etj.). Këto aktivitete ofrojnë avantazhe të mësimit duke e bërë vetë, veçanërisht për fëmijët që mësojnë duke luajtur.",
+                "<strong>Biti mësimor Kodimi përmes artit</strong> përfshin tre plane mësimore për edukatorët e fëmijërisë së hershme dhe zbaton një aktivitet jashtë linje, përdorimin e robotit edukativ bleta robot dhe kompletin e shpikjes Makey Makey. Duke përdorur kompletin Makey Makey, nxënësit kanë mundësinë që të krijojnë ndërfaqe të prekshme dhe të provojnë zgjidhje të ndryshme, të krijojnë, të eksperimentojnë dhe të forcojnë aftësitë e tyre të të mësuarit në një ambient mësimor bashkëpunues.",
+                "Siç ka thënë Pablo Picasso, \"Çdo fëmijë është artist. Problemi është si të mbeten artistë kur të rriten.\" Arti u jep fëmijëve mundësi për të përfaqësuar dhe komunikuar me kreativitet idetë dhe ndjenjat e tyre. Në këtë bit mësimor, do të gjeni aktivitete frymëzuese për të kultivuar aftësitë shoqërore dhe ato të shekullit 21 të nxënësve tuaj përmes artit dhe kodimit, për t'i nxitur ata që të shprehen në mënyrë kreative dhe të nxisin imagjinatën. Biti mësimor Kodimi përmes artit do t'ju mundësojë që të nxisni kreativitetin e nxënësve tuaj, bashkëpunimin dhe zgjidhjen e problemeve duke integruar artin dhe kodimin."
+            ],
+            "activities" => [
+                "1" => "Kodimi me art: Nxënës kopshti 4-6 vjeç.",
+                "2" => "Laboratori i kodit kreativ: nxënës kopshti 4-6 vjeç",
+                "3" => "Telajoja me prekje: Krijimi i pikturave interaktive: Nxënës kopshti 4-6 vjeç; të avancuar."
+            ]
+        ],
+        "21" => [
+            "title" => "Krijimi dhe kodimi",
+            "author" => "nga Ulla Hauptmann",
+            "text" => [
+                "Vendet e Makerspace janë qendra plot gjallëri ku kreativiteti lulëzon dhe projektet praktike marrin jetë. Duke zgjedhur pajisjet për një vend Makerspace, fokusi është te mjetet e tilla si Calliope mini, Microbit ose Makey Makey, sepse ato ofrojnë një gamë të gjerë mundësish, të përshtatshme për nxënësit e moshave dhe niveleve të ndryshme të aftësive. Këto panele ndihmojnë zhvillimin e projekteve kreative për fëmijët e vegjël, falë gjuhëve të tyre të programimit me blloqe që disponohen për këto panele. Për nxënësit më të rritur, mund të krijohen projekte më komplekse duke përdoru këto panele.",
+                "Eksploroni <strong>Bitin mësimor Krijimi dhe kodimi</strong> për t'u zhytur në botën e vendeve të Makerspace dhe për të nxitur aftësitë ndërdisiplinore, si puna në ekip dhe bashkëpunimi social ndërkohë që ngjall novacionin dhe entuziazmin te nxënësit!",
+                "Makey Makey është një panel qarku që kthen objektet e përditshme në taste kompjuteri. Duke lidhur objektet në panel me kapëse aligator, të cilat më pas lidhen me kompjuterin përmes kabllos USB (ose me një iPad me adaptor kamere), Makey Makey mund të hapë dhe të mbyllë qarqet elektrike ndërmjet një personi dhe një objekti. Kjo dërgon sinjale elektrike që merr kompjuteri, si prekjet e tastierës ose klikimet e mausit. Kjo i lejon nxënësit që të krijojnë shpikje kreative, të tilla si vegla muzikore, lojëra kompjuterike ose posterë interaktivë; mundësitë janë të pafundme! Makey Makey dhe projektet e paraqitura në këtë bit mësimor mund të përdoren për nxënësit e shkollës fillore dhe 9-vjeçare, për t'u mësuar aftësi në fusha të tilla si edukimi për media, shkenca kompjuterike, shkenca, fizikë, muzikë, sporte dhe aftësi ndërdisiplinore, të tilla si puna në ekip dhe aftësitë sociale.",
+                "Hyni në botën magjepsëse të Makey Makey dhe shpalosni kreativitet të pakufi në klasë!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey takohet me muzikën: për fillstarë.",
+                "2" => "Fotografi që flasin: për nxënësit e nivelit mesatar.",
+                "3" => "Krijimi i një posteri interaktiv: për nxënësit e avancuar.",
+            ]
+        ]
 
 
     ],

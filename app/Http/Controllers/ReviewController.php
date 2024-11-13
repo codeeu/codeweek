@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use App\Country;
 use App\Queries\CountriesQuery;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
+use Illuminate\View\View;
 
 class ReviewController extends Controller
 {
-    public function index(Request $request, Country $country = null)
+    public function index(Request $request, ?Country $country = null): View
     {
 
         $countries = CountriesQuery::withPendingEvents();
@@ -19,7 +19,7 @@ class ReviewController extends Controller
             with([
                 'country_iso' => $this->getSelectedCountry($country),
                 'target' => 'review',
-                'countries' => $countries
+                'countries' => $countries,
             ])
         );
 
@@ -28,27 +28,24 @@ class ReviewController extends Controller
     protected function getSelectedCountry($country)
     {
 
-
         if (auth()->user()->isAmbassador()) {
             return auth()->user()->country->iso;
         }
 
-
         if (auth()->user()->isAdmin()) {
 
-            if (!is_null($country)) {
-//                if ($country == '00') {
-//                    return '00';
-//                }
+            if (! is_null($country)) {
+                //                if ($country == '00') {
+                //                    return '00';
+                //                }
                 return $country->iso;
             }
 
-            if (!is_null(auth()->user()->current_country)) {
+            if (! is_null(auth()->user()->current_country)) {
                 return auth()->user()->current_country;
             }
 
             return null;
-
 
         }
 

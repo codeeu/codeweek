@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Pridajte svoje podujatie #CodeWeek',
+    'main_title' => 'Pridajte svoje podujatie #EUCodeWeek',
     'button' => 'Pridať podujatie',
     'howto' => 'Ako zorganizovať vlastné podujatie',
     'required' => 'Povinné polia sú označené hviezdičkou*. Záznam o podujatí môžete uviesť aj vo svojom miestnom jazyku.',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Verejný e-mail',
-        'placeholder' => 'Želáte si zobraziť kontaktný e-mail?'
+        'placeholder' => 'Želáte si zobraziť kontaktný e-mail?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adresa',
         'placeholder' => 'Kde sa bude aktivita konať?',
     ],
-
 
     'organizertype' => [
         'label' => 'Typ organizácie',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Rozšírená realita',
         'Artificial intelligence' => 'Umelá inteligencia',
         'Motivation and awareness raising' => 'Motivácia a zvyšovanie povedomia',
-        'Promoting diversity' => 'Podpora rozmanitosti'
+        'Promoting diversity' => 'Podpora rozmanitosti',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KÓD CODE WEEK 4 ALL',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'národných veľvyslancov',
         'phrase5' => 'alebo nám pošlite',
         'phrase6' => 'e-mail',
-        'phrase7' => 'O svoj kód Codeweek for all sa môžete podeliť aj s inými:'
+        'phrase7' => 'O svoj kód Codeweek for all sa môžete podeliť aj s inými:',
     ],
     'activitytype' => [
         'label' => 'Typ Aktivity',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Verejná online aktivita',
         'invite-online' => 'Privátne online aktivita',
         'open-in-person' => 'Verejná osobné aktivita',
-        'invite-in-person' => 'Privátne osobné aktivita'
+        'invite-in-person' => 'Privátne osobné aktivita',
 
     ],
     'privacy' => 'Prečítal(-a) som si a súhlasím s podmienkami ochrany osobných údajov popísanými v tomto dokumente',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Tu si môžete certifikát zobraziť.',
     'submit_event_and_report' => 'Podajte správu o tomto podujatí a vyžiadajte si certifikát Týždňa programovania.',
     'report_and_claim' => 'Podať správu o podujatí a vyžiadať certifikát',
-
 
 ];

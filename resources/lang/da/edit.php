@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Rediger dit #CodeWeek-arrangement',
+    'title' => 'Rediger dit #EUCodeWeek-arrangement',
     'required_fields' => 'Obligatoriske felter er markeret med en stjerne *. Du må gerne tilføje arrangementet på dit lokale sprog.',
     'description' => 'Beskrivelse',
     'audience' => 'Målgruppe',
@@ -29,8 +29,8 @@ return [
         'header' => 'Dine kontaktoplysninger',
         'text_1' => 'Disse oplysninger vises kun for ',
         'link_1' => 'ambassadører for EU’s kodeuge',
-        'text_2'=> ' og kodeugearrangører, som tjekker dit arrangement, inden det vises på kortet. De vil kontakte dig, hvis der er noget, du skal redigere, eller i forbindelse med spørgeskemaer til statistik efter arrangementet.',
-        'contact_email' => 'Din kontakt-e-mailadresse'
-    ], 
-    'edit' => 'Rediger arrangement'
+        'text_2' => ' og kodeugearrangører, som tjekker dit arrangement, inden det vises på kortet. De vil kontakte dig, hvis der er noget, du skal redigere, eller i forbindelse med spørgeskemaer til statistik efter arrangementet.',
+        'contact_email' => 'Din kontakt-e-mailadresse',
+    ],
+    'edit' => 'Rediger arrangement',
 ];

@@ -34,10 +34,8 @@ class LoadEventsTag extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load events Tags');
 
@@ -45,10 +43,8 @@ class LoadEventsTag extends Command
         DB::table('event_tag')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-
         $old_tagged = DB::table('taggit_taggeditem')
             ->get();
-
 
         foreach ($old_tagged as $old) {
 

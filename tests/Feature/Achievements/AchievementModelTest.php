@@ -3,31 +3,32 @@
 namespace Tests\Feature\Achievements\Achievements;
 
 use App\Achievements\Achievement;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-
-class AchievementModelTest extends TestCase
+final class AchievementModelTest extends TestCase
 {
-    use RefreshDatabase;
-    /** @test */
-    public function it_has_a_name()
+    use DatabaseMigrations;
+
+    #[Test]
+    public function it_has_a_name(): void
     {
         $achievement = create(Achievement::class, ['name' => 'some badge']);
 
         self::assertEquals('some badge', $achievement->name);
     }
 
-    /** @test */
-    public function it_has_a_description()
+    #[Test]
+    public function it_has_a_description(): void
     {
         $achievement = create(Achievement::class, ['description' => 'Foobar']);
 
         self::assertEquals('Foobar', $achievement->description);
     }
 
-    /** @test */
-    public function it_has_an_icon()
+    #[Test]
+    public function it_has_an_icon(): void
     {
         $achievement = create(Achievement::class, ['icon' => 'some-path.svg']);
 

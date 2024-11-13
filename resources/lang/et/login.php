@@ -14,7 +14,7 @@ return [
     'login' => 'Logi sisse',
     'register' => 'Registreeri',
     'github' => 'Logi sisse Githubi kaudu',
-    'twitter' => 'Logi sisse Twitteri kaudu',
+    'X' => 'Logi sisse Xi kaudu',
     'facebook' => 'Logi sisse Facebooki kaudu',
     'google' => 'Logi sisse Google’i kaudu',
     'azure' => 'Logi sisse Azure’i kaudu',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Lähtesta parool',
     'send_password' => 'Saada parooli lähtestamise link',
     'confirm_password' => 'Kinnita parool',
-    'name' => 'nimi'
+    'name' => 'nimi',
 ];

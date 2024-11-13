@@ -1,29 +1,34 @@
 <?php
 
-namespace Database\Factories; /* @var $factory \Illuminate\Database\Eloquent\Factory */
+namespace Database\Factories;
 
-use App\Country;
-use App\Location;
-use Faker\Generator as Faker;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(Location::class, function (Faker $faker) {
+class LocationFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'geoposition' => $this->faker->randomFloat().','.$this->faker->randomFloat(),
+            'trimmed_geoposition' => $this->faker->randomFloat().','.$this->faker->randomFloat(),
+            'latitude' => $this->faker->randomFloat(),
+            'longitude' => $this->faker->randomFloat(),
+            'location' => $this->faker->address(),
+            'country_iso' => $this->faker->randomElement(['BE', 'FR', 'DE', 'NL']),
+            'is_default' => $this->faker->boolean(),
+            'is_primary' => $this->faker->boolean(),
+            'user_id' => function () {
+                return \App\User::factory()->create()->id;
+            },
+            'event_id' => function () {
+                return \App\Event::factory()->create()->id;
+            },
 
-
-    return [
-        'geoposition' => $faker->randomFloat() . ',' . $faker->randomFloat(),
-        'trimmed_geoposition' => $faker->randomFloat() . ',' . $faker->randomFloat(),
-        'latitude' => $faker->randomFloat(),
-        'longitude' => $faker->randomFloat(),
-        'location' => $faker->address,
-        'country_iso' => $faker->randomElement(['BE','FR','DE','NL']),
-        'is_default' => $faker->boolean,
-        'is_primary' => $faker->boolean,
-        'user_id' => function () {
-            return factory('App\User')->create()->id;
-        },
-        'event_id' => function () {
-            return factory('App\Event')->create()->id;
-        },
-
-    ];
-});
+        ];
+    }
+}

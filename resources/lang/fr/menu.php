@@ -15,13 +15,13 @@ return [
 
     'learn' => 'Apprendre',
     'teach' => 'Enseigner',
-    'training' => 'Formation', 'toolkits' => 'Présentations et outils', 'why' => 'Pourquoi', 'home'  => 'Accueil',
+    'training' => 'Formation', 'toolkits' => 'Présentations et outils', 'why' => 'Pourquoi', 'home' => 'Accueil',
     'events' => 'Activités',
     'ambassadors' => 'Ambassadeurs',
     'resources' => 'Ressources',
     'schools' => 'Écoles',
     'about' => 'À propos',
-    'blog' => 'Blog','news' => 'Actualités',
+    'blog' => 'Blog', 'news' => 'Actualités',
     'search' => 'Saisissez votre recherche et appuyez sur «Entrée»',
     'map' => 'Carte',
     'add_event' => 'Ajouter un événement',
@@ -36,9 +36,7 @@ return [
     'logout' => 'Déconnexion',
     'signin' => 'Connexion',
     'privacy' => 'Confidentialité',
-    'participation'=> 'Certificat de participation',
+    'participation' => 'Certificat de participation',
     'values' => 'Nos valeurs',
     'featured_activities' => 'Activités en vedette',
     'codeweek2020' => 'Edition 2020'];
-
-        

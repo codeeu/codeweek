@@ -42,5 +42,5 @@ return [
     'participation' => 'Intyg om deltagande',
     'values' => 'Våra värderingar',
     'featured_activities' => 'Utvalda aktiviteter',
-    'codeweek2020' => '2020-upplagan'
+    'codeweek2020' => '2020-upplagan',
 ];

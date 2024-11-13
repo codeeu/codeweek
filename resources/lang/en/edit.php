@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Edit your #CodeWeek activity',
+    'title' => 'Edit your #EUCodeWeek activity',
     'required_fields' => 'Required fields are marked with an * asterisk. Feel free to add the activity listing in your local language.',
     'description' => 'Description',
     'audience' => 'Audience',
@@ -29,12 +29,12 @@ return [
         'header' => 'Your contact information',
         'text_1' => 'This information will only be visible to ',
         'link_1' => 'EU Code Week Ambassadors',
-        'text_2'=> ' and Code Week
+        'text_2' => ' and Code Week
         organizers, who
         will check your activity before it appears on the map and might contact you if edits are
         necessary or
         for administering surveys for statistical purposes after the activity.',
-        'contact_email' => 'Your contact email'
-    ], 
-    'edit' => 'Edit activity'
+        'contact_email' => 'Your contact email',
+    ],
+    'edit' => 'Edit activity',
 ];

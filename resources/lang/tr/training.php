@@ -299,6 +299,77 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 "3" => "Beni ruh halime göre kodla: Lise öğrencileri için",
             ]
         ],
+        "18" => [
+            "title" => "SOS Water",
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water, su kirliliği sorununun ele alınması ihtiyacını karşılamaya yönelik bir projedir. Son yıllarda yapılan çalışmalara rağmen, tüm dünyada halihazırda güvenli içme suyuna erişimi olmayan 2 milyar insan mevcut. Yani, 2030 Gündeminin tüm insanların 2030 yılına dek güvenli bir şekilde yönetilebilen sulara ve sanitasyona erişiminin olması gerektiğini ifade eden 6 sayılı Sürdürülebilir Kalkınma Hedefi, gerçekleştirilmekten çok uzaktadır. Aynı durum, sürdürülebilir kalkınma açısından okyanusların, denizlerin ve deniz kaynaklarının sürdürülebilir şekilde korunup kullanılmasını amaçlayan 14 sayılı su altı yaşama yönelik Sürdürülebilir Kalkınma Hedefi için de geçerlidir.",
+
+                "Bu Öğrenim Bilgisinde, gündemle alakalı ve güncel bir konu olan su kalitesi ölçümünün yanı sıra, su kalitesini düşüren yeni kirleticiler ele alınmıştır. Öğrenciler, su ve çevreyle ilişkili gerçek sorunları inceleyip bunlara çözüm bulma ve böylece araştırma, eleştirel düşünme ve problem çözme gibi beceriler geliştirme fırsatı elde edeceklerdir.",
+
+                "Ders planları içerisinde; Scratch üzerinde programlama yapma, Learning ML ile makine öğrenimine ve yapay zekaya giriş, su örneği almak ve su pH değeri analizi yapmak üzere Lego setleriyle yönlendirilebilen araçlar oluşturma gibi uygulamalı ve yaratıcı aktiviteler yer almaktadır. Bu aktiviteler, öğrencilerin etkileşimli ve eğlenceli bir ortamda bilgi ve becerilerini uygulamaya dökmelerini ve bu sayede projeye olan ilgilerinin ve motivasyonlarının artmasını sağlayacaktır.",
+
+                "Bu Öğrenim Bilgisinin uygulanabilmesi için üç aktivitenin de sınıfta ders içerisinde geliştirilmesi, tüm projenin tamamlanması ve daha anlamlı ve motive edici bir öğrenim sürecinin benimsenmesi önerilir. Ancak her bir aktivite bireysel olarak da gerçekleştirilebilir."
+
+            ],
+            "activities" => [
+                "1" => "Scratch ile SOS Water",
+                "2" => "Makine Öğrenimi ile SOS Water",
+                "3" => "Robot Teknolojisi ile SOS Water",
+            ]
+
+        ],
+        "20" => [
+            "title" => "Sanat Yoluyla Kod",
+            "author" => "Maria Tsapara",
+            "text" => [
+                "Çocuklar, teknolojik olarak sürekli gelişen karmaşık bir dünyada büyüyor ve bu da erken çocukluk dönemi eğitimcilerinin yenilikçi eğitim yaklaşımları uygulamalarını gerektiriyor. Bu yaklaşımlar arasında, küçük yaşlardan itibaren sayısal düşünmeyi ve programlamayı teşvik eden faaliyetler de yer alıyor. Araştırmalar, hedefli aktivitelerin çocukların sayısal düşünme ve problem çözme becerilerini etkili bir şekilde geliştirebileceğini ve aynı zamanda bu tür aktivitelerin teknoloji yoluyla yaratıcı ifadeyi teşvik ettiğini gösteriyor.",
+                "Programlamayı öğretmek için en yaygın strateji, eğitici robotların kullanımını kapsıyor olsa da, robotik kiti kullanmadan (bilgisayarsız) programlama olanağı da mevcuttur. Bu yaklaşım, çeşitli biçimlerde olabilir ve birbirinden farklı aktiviteleri içerebilir (piksel sanatı, robot rolündeki çocuklar, yer kılavuzu (ızgara) kullanma vb.). Bu aktiviteler, özellikle en iyi oyun yoluyla öğrenebilen küçük çocuklar için deneysel öğrenim avantajları sunar.",
+                "</strong>Sanat Yoluyla Kodlama Learning Bit </strong>’i, erken çocukluk dönemi eğitimcileri için üç ders planından oluşuyor ve bilgisayarsız bir aktivite ile Bee-Bot eğitici robotun ve Makey Makey buluş kitinin kullanılmasını kapsıyor. Öğrenciler, Makey Makey kitini kullanarak fiziksel arayüzler oluşturma ve farklı çözümler deneme, yaratma, deneyimleme ve iş birlikçi bir öğrenim ortamında tüm öğrenim becerilerini güçlendirme fırsatına sahip oluyorlar.",
+                "Pablo Picasso'nun da dediği gibi, \"Her çocuk bir sanatçıdır. Asıl sorun, büyüyünce de sanatçı olarak kalabilmektir.\" Sanat, çocuklara fikirlerini ve duygularını yaratıcı bir şekilde sunma ve aktarma fırsatları sağlar. Bu Learning Bit’te, sanat ve kodlama yoluyla öğrencilerinizin sosyal ve 21. yüzyıl becerilerini geliştirmek, kendilerini yaratıcı bir şekilde ifade etmeye teşvik etmek ve hayal güçlerini geliştirmek üzere ilham verici aktiviteler bulacaksınız. Sanat Yoluyla Kodlama Learning Bit’i, sanat ve kodlamayı entegre ederek öğrencilerinizin yaratıcılığını, aynı zamanda iş birliği kurma ve problem çözme becerilerini geliştirmenizi sağlayacaktır."
+            ],
+            "activities" => [
+                "1" => "Sanatsal Kodlama: 4-6 yaş anaokulu öğrencileri",
+                "2" => "Yaratıcı Kod Laboratuvarı: 4-6 yaş anaokulu öğrencileri",
+                "3" => "Dokunmatik Tuval: İnteraktif tablolar oluşturma: 4-6 yaş anaokulu öğrencileri; ileri seviye."
+            ]
+        ],
+        "19" => [
+
+            "title" => "Yaratıcı Scratch Laboratuvarı",
+            "author" => "Hazırlayan: Krzysztof Jaworski",
+            "text" => [
+
+                "Günümüzde programlamayı öğrenmek, programcılık kariyerine hazırlanmanın ötesine geçerek bilgisayar biliminin sınırlarını aşan bir hâl almış durumda. Programlama, disiplinler arası bir yaklaşımı benimseyerek ve bunu ilerideki becerilerin gelişimini teşvik edecek bir öğrenme ve oyun aracı olarak kullanarak kapsamlı bir biçimde ele alınmalıdır.",
+
+                "Çocukların ve gençlerin, dijital araçları nasıl güvenli, sorumlu ve verimli bir şekilde kullanabileceklerini anlamaları çok önemlidir. Bu araçların nasıl çalıştığını ve programlama yoluyla bu araçlarla nasıl iletişim kurulacağın kavramaları gerekmektedir. Ayrıca bu deneyim, yaşıtlarıyla iş birliğine dayalı etkileşimlerde bulunmalarını da sağlamalıdır.",
+
+                "Bu Öğrenim Bilgisi, <strong>Creative Scratch Laboratory</strong> öğrencilerin yaratıcılığını artırıp merakını cezbedecek ve kodlamayı keyifli ve eğlenceli bir hâle getirecektir.  Farklı kodlama becerilerine sahip öğrenciler için üç ayrı ders planından oluşmaktadır. Başlangıç seviyesindeki ders planında öğrenciler, kâğıt üzerinde bir karakter oluşturup bunu Scratch’e aktaracak ve seçili blokları kullanarak karakteri hareketli hâle getirecektir. Orta seviyedeki ders planında öğrenciler, Video Sprites aracını kullanmayı, kâğıt ve keçeli kalem kullanarak grafik hazırlamayı ve Video Sprites, damga ve çizim yoluyla Scratch mozaiği oluşturmayı öğrenecektir. İleri seviyedeki ders planında öğrenciler, Scratch içerisindeki yüz tanıma işlevini inceleyip kukla grafikleri üzerinde değişiklikler yapacak ve Scratch içerisinde oluşturdukları diyalogları kullanarak mini bir tiyatro oyunu hazırlayacaktır.",
+
+            ],
+            "activities" => [
+                "1" => "Spite çizme ve hareketli hâle getirme: başlangıç seviyesindeki öğrenciler için",
+                "2" => "Damga: orta seviyedeki öğrenciler için",
+                "3" => "Kukla tiyatrosu: ileri seviye öğrenciler için",
+            ]
+        ],
+        "21" => [
+            "title" => "Yapım ve kodlama",
+            "author" => "Ulla Hauptmann",
+            "text" => [
+                "Makerspace'ler, yaratıcılığın geliştiği ve uygulamalı projelerin hayata geçirildiği canlı merkezlerdir. Bir makerspace için ekipman seçerken Calliope mini, Microbit veya Makey Makey gibi araçlara odaklanılmalıdır, çünkü bu araçlar farklı yaşlardaki ve beceri seviyelerindeki öğrencilere uygun pek çok olanak sunar. Bu devre kartları, blok tabanlı programlama dilleri sayesinde küçük çocuklar için yaratıcı projelerin geliştirilmesini destekler. Daha büyük öğrenciler için ise bu devre kartları kullanılarak daha karmaşık projeler oluşturulabilir.",
+                "<strong>Yapım ve Kodlama Learning Bit</strong>’ini keşfederek makerspace dünyasına dalın ve öğrencilerinizi yeniliğe teşvik edip harekete geçirirken bir yandan da takım çalışması ve sosyal iş birliği gibi disiplinler arası becerileri geliştirin!",
+                "Makey Makey, gündelik hayattaki nesneleri bilgisayar tuşlarına dönüştüren bir devre kartıdır. Nesneleri krokodil penslerle devre kartına bağlayıp ardından USB kablosuyla (veya kamera adaptörlü bir iPad ile) bilgisayara bağlanan Makey Makey, kişi ile nesne arasındaki elektrik devrelerini açıp kapatabilir. Bu işlem, bilgisayarın klavye vuruşu veya fare tıklaması olarak algıladığı elektrik sinyalleri gönderir. Bu sayede öğrenciler müzik aletli, bilgisayar oyunu veya interaktif poster gibi yaratıcı buluşlar geliştirebilirler; olanaklar sonsuzdur! Makey Makey ve bu Learning Bit içerisinde sunulan projeler hem ilkokul hem de ortaokullarda medya eğitimi, bilgisayar bilimi, fen, fizik, müzik, sporun yanı sıra takım çalışması ve sosyal beceriler gibi disiplinler arası becerileri öğretmek için de kullanılabilir.",
+                "Makey Makey'in heyecan verici dünyasına adım atın ve sınıfınızda sınırsız yaratıcılığın kilidini açın!",
+            ],
+            "activities" => [
+                "1" => "Makey Makey müzikle buluşuyor: yeni başlayanlar için.",
+                "2" => "Konuşan resimler: orta düzey öğrenciler için.",
+                "3" => "Etkileşimli poster oluşturma: ileri düzey öğrenciler için.",
+            ]
+        ]
+
 
 
     ],

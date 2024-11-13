@@ -19,7 +19,7 @@ return [
         'beginner' => 'Débutant',
         'intermediate' => 'Intermédiaire',
         'advanced' => 'Avancé',
-        '1-hour' => '1 heure'
+        '1-hour' => '1 heure',
     ],
     'main' => [
         'Pendant la Semaine européenne du code, du 9 au 24 octobre 2021, nous vous invitons à relever un ou plusieurs de nos défis.',
@@ -28,14 +28,14 @@ return [
         "Choisissez un ou plusieurs défis, adaptez-les à votre groupe ou à votre classe, et partagez les résultats sur Instagram pour encourager encore plus de collègues et d'amis à participer aux activités ludiques de la Semaine du code!",
         'Cliquez sur un défi pour en savoir plus à son sujet:',
         'Qui peut participer?',
-        'Tout le monde (écoles, enseignants, bibliothèques, clubs de codage, entreprises, autorités publiques) est invité à célébrer la Semaine européenne du code 2021 en relevant un #CodeWeekChallenge.',
+        'Tout le monde (écoles, enseignants, bibliothèques, clubs de codage, entreprises, autorités publiques) est invité à célébrer la Semaine européenne du code 2021 en relevant un #EUCodeWeekChallenge.',
         'Comment participer au Défi de la Semaine européenne du code 2021?',
         'Sélectionnez un défi que vous souhaiteriez relever.',
         "Faites des équipes en répartissant vos participants par deux ou en groupes. Le travail d'équipe et la collaboration sont essentiels pour la réussite d'un défi, que vous organisiez votre activité en personne ou en ligne, dans le cadre d'une collaboration nationale ou internationale.",
         'Partager votre défi',
         "Vous aimeriez gagner des produits dérivés de la Semaine du code? Si c'est le cas, diffusez massivement votre travail !",
         'Une fois le défi relevé, partagez-le sur Instagram.',
-        "Des lauréats seront sélectionnés tous les jours au cours de la Semaine du code qui aura lieu du 9 au 24 octobre et seront annoncés sur notre chaîne Instagram, donc n'oubliez pas de consulter régulièrement vos notifications."
+        "Des lauréats seront sélectionnés tous les jours au cours de la Semaine du code qui aura lieu du 9 au 24 octobre et seront annoncés sur notre chaîne Instagram, donc n'oubliez pas de consulter régulièrement vos notifications.",
     ],
     'share' => [
         'Comment partager votre ou vos défi(s) sur Instagram?',
@@ -45,14 +45,14 @@ return [
         "Ajoutez une capture d'écran de votre travail",
         'Rédigez une description captivante',
         'Veillez à préciser «Lien dans la bio»',
-        'Ajoutez #CodeWeekChallenge',
+        'Ajoutez #EUCodeWeekChallenge',
         'Mentionnez et taguez @CodeWeekEU',
         'Vous préférez partager votre ou vos défi(s) sur Facebook?',
         'La Semaine européenne du code épinglera une nouvelle publication Défi sur sa ',
         'page Facebook',
         'tous les jours et sélectionnera le lauréat du prix en fonction des commentaires de chaque publication.',
         'Comment ça marche?',
-        'Il vous suffit de commenter la publication en mettant un lien vers votre travail.'
+        'Il vous suffit de commenter la publication en mettant un lien vers votre travail.',
     ],
     'share-box' => [
         'Partagez le lien vers votre travail dans votre',
@@ -61,24 +61,24 @@ return [
         'Modifier le profil',
         "de votre compte Instagram et ajoutez un lien vers votre travail dans le champ site web. Puis, créez une nouvelle publication, ajoutez une capture d'écran de votre travail, écrivez ",
         'Lien dans la bio',
-        'ajoutez #CodeWeekChallenge et mentionnez @CodeWeekEU',
+        'ajoutez #EUCodeWeekChallenge et mentionnez @CodeWeekEU',
         'Vous préférez partager votre ou vos défi(s) sur',
         'La Semaine européenne du code épinglera',
         'une nouvelle publication Défi sur sa',
         'page Facebook',
         'Il vous suffit alors de commenter la publication en mettant un lien vers votre travail.',
-        "Les lauréats seront sélectionnés et recevront des produits dérivés de la Semaine du code tous les jours, du 9 au 24 octobre. Ils seront annoncés sur nos chaînes Instagram et Facebook, donc n'oubliez pas de consulter régulièrement vos notifications"
+        "Les lauréats seront sélectionnés et recevront des produits dérivés de la Semaine du code tous les jours, du 9 au 24 octobre. Ils seront annoncés sur nos chaînes Instagram et Facebook, donc n'oubliez pas de consulter régulièrement vos notifications",
     ],
     'take-part' => [
         'Pourquoi participer à un défi de la Semaine européenne du code?',
         'pour prendre part à des activités de résolution de problèmes et de codage.',
         'pour travailler en collaboration avec des pairs.',
-        'pour diffuser le message sur l’importance du codage.'
+        'pour diffuser le message sur l’importance du codage.',
     ],
     'download' => [
         'Cliquez',
         'ici',
-        'pour télécharger ce défi sous forme de document Word'
+        'pour télécharger ce défi sous forme de document Word',
     ],
     'bingo' => [
         'Relevez tous les défis',
@@ -88,6 +88,6 @@ return [
         'Partagez votre défi sur les réseaux sociaux et gagnez de super prix de la Semaine du code',
         'Il vous suffit de télécharger une photo de la ou des ligne(s) et colonne(s) remplie(s), ou encore mieux de toute la carte de bingo remplie, sur',
         'Facebook, Instagram ou Twitter',
-        "Assurez-vous d'ajouter"
-    ]
+        "Assurez-vous d'ajouter",
+    ],
 ];

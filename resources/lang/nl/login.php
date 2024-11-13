@@ -14,7 +14,7 @@ return [
     'login' => 'Aanmelden',
     'register' => 'Registreren',
     'github' => 'Aanmelden met Github',
-    'twitter' => 'Aanmelden met Twitter',
+    'X' => 'Aanmelden met X',
     'facebook' => 'Aanmelden met Facebook',
     'google' => 'Aanmelden met Google',
     'azure' => 'Aanmelden met Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Je wachtwoord opnieuw instellen',
     'send_password' => 'Link voor het opnieuw instellen van wachtwoord verzenden',
     'confirm_password' => 'Wachtwoord bevestigen',
-    'name' => 'naam'
+    'name' => 'naam',
 ];

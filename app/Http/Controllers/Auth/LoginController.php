@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Helpers\UserHelper;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
@@ -45,10 +46,8 @@ class LoginController extends Controller
 
     /**
      * Redirect the user to the GitHub authentication page.
-     *
-     * @return Response
      */
-    public function redirectToProvider($provider)
+    public function redirectToProvider($provider): RedirectResponse
     {
 
         return Socialite::driver($provider)->redirect();
@@ -56,33 +55,29 @@ class LoginController extends Controller
 
     /**
      * Obtain the user information from GitHub.
- * @return \Illuminate\Http\RedirectResponse
      */
-    public function handleProviderCallback($provider)
+    public function handleProviderCallback($provider): RedirectResponse
     {
-//        if ('twitter' == $provider){
+        $allowed_providers = ['twitter', 'github', 'google', 'facebook'];
+
+        if (in_array($provider, $allowed_providers)) {
             $socialUser = Socialite::driver($provider)->user();
-//        } else{
-//            $socialUser = Socialite::driver($provider)->stateless()->user();
-//        }
 
-        $this->loginUser($provider, $socialUser);
-
+            $this->loginUser($provider, $socialUser);
+        }
         return redirect()->intended('/');
 
     }
 
     /**
-     * @param $provider
-     * @param $socialUser
      * @return mixed
      */
     public function loginUser($provider, $socialUser)
     {
         $user = \App\User::where(['email' => $socialUser->getEmail()])->first();
 
-        if (is_null($socialUser->getEmail())){
-//        if ($socialUser->getEmail() == 'alainvd@gmail.com'){
+        if (is_null($socialUser->getEmail())) {
+            //        if ($socialUser->getEmail() == 'alainvd@gmail.com'){
             Log::info('Null email detected');
             Log::info(print_r($socialUser, true));
             $admin = config('codeweek.administrator');
@@ -96,16 +91,20 @@ class LoginController extends Controller
                 [
                     'email' => $socialUser->getEmail(),
                     //'avatar' => $socialUser->getAvatar(),
+                    'password' => bcrypt(Str::random()),
                     'firstname' => ($socialUser->getName()) ? $socialUser->getName() : $socialUser->getNickName(),
                     'lastname' => '',
+                    'username' => ($socialUser->getNickName()) ? $socialUser->getNickName() : '',
                     'provider' => $provider,
-                    'magic_key' =>random_int(1000000,2000000) * random_int(1000,2000)
+                    'magic_key' => random_int(1000000, 2000000) * random_int(1000, 2000),
+                    'email_verified_at' => Carbon::now()
                 ]);
 
         } else {
             //update user
             $user->provider = $provider;
             $user->updated_at = Carbon::now();
+            $user->email_verified_at = Carbon::now();
             $user->save();
         }
 

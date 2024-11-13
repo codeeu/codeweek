@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Kif torganizza attività?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Russu',
-            'Norwegian'=>'Norveġiż',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Ġappuniż',
-            'All targeted languages' => 'Il-lingwi kollha fil-mira'
+            'Russian' => 'Russu',
+            'Norwegian' => 'Norveġiż',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Ġappuniż',
+            'All targeted languages' => 'Il-lingwi kollha fil-mira',
         ],
         'levels' => [
             'Beginner' => 'Prinċipjant',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Skola sekondarja baxxa (12-16)',
             'Upper secondary school (16-18)' => 'Skola sekondarja għolja (16-18)',
             'Higher Education' => 'Edukazzjoni Ogħla',
-            'Other' => 'Oħrajn'
+            'Other' => 'Oħrajn',
         ],
         'subjects' => [
             'Art' => 'Arti',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Il-Fiżika',
             'Coding' => 'Ikkowdjar',
             'Special Education Needs' => 'Edukazzjoni għall-Bżonnijiet Speċjali',
-            'Other' => 'Oħrajn'
+            'Other' => 'Oħrajn',
         ],
         'types' => [
             'Tutorial' => 'Taħriġ',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Sett ta’ għodod',
             'Other' => 'Oħrajn',
             'Lesson Plan' => 'Pjan ta’ Lezzjoni',
-            'Guide' => 'Gwida'
+            'Guide' => 'Gwida',
         ],
         'categories' => [
             'Coding' => 'Ikkowdjar',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Tagħmel',
             'Tinkering' => 'Tilgħab',
             'Unplugged Activities' => 'Attivitajiet Mhux fuq il-Kompjuter',
-            'Other' => 'Oħrajn'
-        ]
-    ]
+            'Other' => 'Oħrajn',
+        ],
+    ],
 
 ];

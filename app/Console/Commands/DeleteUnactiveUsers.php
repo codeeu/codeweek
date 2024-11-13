@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Helpers\UserHelper;
-use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
 
@@ -25,10 +24,8 @@ class DeleteUnactiveUsers extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
         $deletedUsers = UserHelper::deleteInactiveUsers(5);
         $admin = config('codeweek.administrator');

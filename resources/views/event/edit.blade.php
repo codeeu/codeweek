@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner simple">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>@lang('edit.title')</h1>
             </div>
         </section>
@@ -153,6 +153,7 @@
                                 </label>
                                 <div>
                                     <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"
+                                                      location="{{$event->location}}"
                                                       value="{{old('location',$event->location)}}"
                                                       geoposition="{{old('geoposition',$event->geoposition)}}"></autocomplete-geo>
                                     <div class="errors" style="margin-bottom: 10px; margin-left:0;">
