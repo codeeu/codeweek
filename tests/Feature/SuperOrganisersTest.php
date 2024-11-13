@@ -2,40 +2,36 @@
 
 namespace Tests\Feature;
 
-use App\Excellence;
 use App\Mail\NotifySuperOrganiser;
 use App\Mail\NotifyWinner;
 use App\Queries\SuperOrganiserQuery;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class SuperOrganisersTest extends TestCase
+final class SuperOrganisersTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $user1 = create('App\User');
-        $user2 = create('App\User');
-        $user3 = create('App\User');
+        $user1 = \App\User::factory()->create();
+        $user2 = \App\User::factory()->create();
+        $user3 = \App\User::factory()->create();
 
-        create('App\Event', ["creator_id" => $user1->id, "status" => "APPROVED", "end_date" => Carbon::now()], 22);
-        create('App\Event', ["creator_id" => $user1->id, "status" => "APPROVED", "end_date" => Carbon::now()->subYear()], 28);
-        create('App\Event', ["creator_id" => $user2->id, "status" => "APPROVED", "end_date" => Carbon::now()], 8);
-        create('App\Event', ["creator_id" => $user3->id, "status" => "APPROVED", "end_date" => Carbon::now()], 33);
-
+        \App\Event::factory()->count(22)->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()]);
+        \App\Event::factory()->count(28)->create(['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subYear()]);
+        \App\Event::factory()->count(8)->create(['creator_id' => $user2->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()]);
+        \App\Event::factory()->count(33)->create(['creator_id' => $user3->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()]);
 
     }
 
-    /** @test */
-    public function it_should_get_super_organiser_winners()
+    #[Test]
+    public function it_should_get_super_organiser_winners(): void
     {
 
         $winners = SuperOrganiserQuery::winners(Carbon::now()->year);
@@ -44,8 +40,8 @@ class SuperOrganisersTest extends TestCase
 
     }
 
-    /** @test */
-    public function notify_winners_for_specific_edition()
+    #[Test]
+    public function notify_winners_for_specific_edition(): void
     {
         $this->withExceptionHandling();
 
@@ -53,36 +49,35 @@ class SuperOrganisersTest extends TestCase
 
         // We create two users
 
-        $userA = create('App\User');
-        $userB = create('App\User');
-        $userC = create('App\User');
+        $userA = \App\User::factory()->create();
+        $userB = \App\User::factory()->create();
+        $userC = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->subYear()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userB->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userC->id, 'type' => 'SuperOrganiser', 'notified_at' => \Carbon\Carbon::now()]);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->subYear()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userB->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userC->id, 'type' => 'SuperOrganiser', 'notified_at' => \Carbon\Carbon::now()]);
 
         // We send the email
-        $this->artisan('notify:superorganisers', ["edition" => Carbon::now()->year]);
+        $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
 
         // Only super organisers mails should be sent
         Mail::assertQueued(NotifySuperOrganiser::class, 2);
         Mail::assertQueued(NotifyWinner::class, 0);
 
         // We send the email
-        $this->artisan('notify:superorganisers', ["edition" => Carbon::now()->year]);
-        $this->artisan('notify:superorganisers', ["edition" => Carbon::now()->year]);
-        $this->artisan('notify:superorganisers', ["edition" => Carbon::now()->year]);
-        $this->artisan('notify:superorganisers', ["edition" => Carbon::now()->year]);
+        $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
+        $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
+        $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
+        $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
         Mail::assertQueued(NotifySuperOrganiser::class, 2);
-
 
     }
 
-    /** @test */
-    public function notified_organisers_should_be_flagged_as_notified_with_no_interference()
+    #[Test]
+    public function notified_organisers_should_be_flagged_as_notified_with_no_interference(): void
     {
         $this->withExceptionHandling();
 
@@ -90,25 +85,20 @@ class SuperOrganisersTest extends TestCase
 
         // We create the user
 
-        $userA = create('App\User');
-
+        $userA = \App\User::factory()->create();
 
         // A winner and a loser for specific edition
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        \App\Excellence::factory()->create(['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
 
         $this->assertCount(1, $userA->superOrganisers->whereNull('notified_at'));
         $this->assertCount(1, $userA->excellences->whereNull('notified_at'));
 
-
         // We send the email
-        $this->artisan('notify:superorganisers', ["edition" => Carbon::now()->year]);
+        $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
 
         $this->assertCount(0, $userA->superOrganisers->fresh()->whereNull('notified_at'));
         $this->assertCount(1, $userA->excellences->whereNull('notified_at'));
-
-
-
 
     }
 }

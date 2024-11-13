@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /*
    |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
         'me' => 'Montenegro',
         'rs' => 'Serbia',
         'mt' => 'türgi keel',
-        'tr' => 'malta keel'
+        'tr' => 'malta keel',
     ],
 
     'resources_local_title' => 'Programmeerimismaterjale:',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Teil on veel küsimusi?',
     'drop_us_a_line' => 'Kirjutage meile!',
     'get_in_touch' => 'VÕTKE ÜHENDUST',
-    'footer_msg' =>
-        'Rohujuuretasandil vabatahtlike korraldatud liikumine, mida toetab Euroopa Komisjon.',
+    'footer_msg' => 'Rohujuuretasandil vabatahtlike korraldatud liikumine, mida toetab Euroopa Komisjon.',
     'email' => 'E-kiri',
     'display_email' => 'Kuva meiliaadress',
     'first_name' => 'Eesnimi',
@@ -67,5 +66,5 @@ return [
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Viige Code Week oma õpilasteni',
     'or' => 'või',
-    'newsletter' => 'Uudiskiri'
+    'newsletter' => 'Uudiskiri',
 ];

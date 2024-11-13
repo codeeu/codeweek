@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class LeadingTeachersList extends Controller
 {
-    public function index()
+    public function index(): View
     {
 
         return view('leading-teachers.admin.list');

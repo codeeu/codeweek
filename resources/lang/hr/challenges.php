@@ -19,7 +19,7 @@ return [
         'beginner' => 'Početna razina',
         'intermediate' => 'Srednja razina',
         'advanced' => 'Napredna razina',
-        '1-hour' => '1 sat'
+        '1-hour' => '1 sat',
     ],
     'main' => [
         'Pozivamo vas da tijekom Europskog tjedna programiranja, od 9. do 24. listopada 2021., sudjelujete u barem jednom izazovu Europskog tjedna programiranja.',
@@ -28,14 +28,14 @@ return [
         'Odaberite jedan izazov ili nekoliko njih. Prilagodite ih svojoj skupini ili razredu, a rezultate podijelite na Instagramu da biste potaknuli još kolega i prijatelja da sudjeluju u zabavi koju nudi Tjedan programiranja!',
         'Kliknite na izazov i saznajte više o njemu:',
         'Tko se može pridružiti?',
-        'Svi (škole, nastavnici, knjižnice, klubovi za programiranje, poduzeća, javna tijela) su pozvani proslaviti Europski tjedan programiranja 2021. dovršavanjem izazova #CodeWeekChallenge.',
+        'Svi (škole, nastavnici, knjižnice, klubovi za programiranje, poduzeća, javna tijela) su pozvani proslaviti Europski tjedan programiranja 2021. dovršavanjem izazova #EUCodeWeekChallenge.',
         'Kako sudjelovati u izazovu Europskog tjedna programiranja 2021.?',
         'Odaberite izazov u kojemu želite sudjelovati i dovršiti ga.',
         'Organizirajte sudionike u parove ili skupine. Timski rad i suradnja ključni su za uspješno dovršenje izazova, neovisno o tome organizirate li svoju aktivnost uživo ili na internetu, kao nacionalnu ili međunarodnu suradničku aktivnost.',
         'Podijelite svoj izazov',
         'Želite li osvojiti nagrade Tjedna programiranja? Ako želite, podijelite svoj rad na internetu!',
         'Nakon što dovršite izazov, objavite ga na Instagramu.',
-        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada. Objavljivat ćemo ih na svojem kanalu na Instagramu, stoga obavezno redovito provjeravajte svoje obavijesti.'
+        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada. Objavljivat ćemo ih na svojem kanalu na Instagramu, stoga obavezno redovito provjeravajte svoje obavijesti.',
     ],
     'share' => [
         'Kako podijeliti izazove na Instagramu?',
@@ -45,14 +45,14 @@ return [
         'Dodajte snimku svojeg rada',
         'Napišite zanimljiv opis',
         'Obavezno navedite ‘Poveznica u Biografiji’',
-        'Dodajte #CodeWeekChallenge',
+        'Dodajte #EUCodeWeekChallenge',
         'Spomenite i označite @CodeWeekEU',
         'Radije biste svoje izazove podijelili na Facebooku?',
         'Europski tjedan programiranja svaki će dan na svojoj stranici na',
         'Facebooku',
         'prikačiti objavu s novim izazovom te će među komentarima ispod objave odabrati dobitnika nagrade.',
         'Kako to funkcionira?',
-        'Jednostavno, samo komentirajte objavu s poveznicom na vaš rad.'
+        'Jednostavno, samo komentirajte objavu s poveznicom na vaš rad.',
     ],
     'share-box' => [
         'Podijelite poveznicu na svoj rad u',
@@ -61,24 +61,24 @@ return [
         'gumb Uredi profil',
         'na svojem Instagramu i u polju za upis web-mjesta dodajte poveznicu na svoj rad. Potom osmislite novu objavu, dodajte snimku svojeg rada, napišite',
         'Poveznica u Biografiji',
-        'dodajte oznaku #CodeWeekChallenge i navedite @CodeWeekEU',
+        'dodajte oznaku #EUCodeWeekChallenge i navedite @CodeWeekEU',
         'Radije biste svoje izazove podijelili na',
         'Europski tjedan programiranja prikačit će',
         'novu objavu o izazovu na svojoj',
         'Facebook stranici',
         'Tada samo morate komentirati objavu s poveznicom na svoj rad',
-        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada i osvojit će nagrade Tjedna programiranja. Objavljivat ćemo ih na svojim kanalima na Instagramu i Facebooku, stoga obavezno redovito provjeravajte svoje obavijesti.'
+        'Pobjednici će se birati svaki dan tijekom Tjedna programiranja, od 9. do 24. listopada i osvojit će nagrade Tjedna programiranja. Objavljivat ćemo ih na svojim kanalima na Instagramu i Facebooku, stoga obavezno redovito provjeravajte svoje obavijesti.',
     ],
     'take-part' => [
         'Zašto sudjelovati u izazovu Europskog tjedna programiranja?',
         'Radi sudjelovanja u aktivnostima rješavanja problema i programiranja.',
         'Radi suradnje s kolegama.',
-        'Radi širenja poruke o važnosti programiranja.'
+        'Radi širenja poruke o važnosti programiranja.',
     ],
     'download' => [
         'Kliknite',
         'ovdje',
-        'da biste ovaj izazov preuzeli u formatu Word dokumenta'
+        'da biste ovaj izazov preuzeli u formatu Word dokumenta',
     ],
     'bingo' => [
         'Dovršite sve izazove',
@@ -88,6 +88,6 @@ return [
         'Podijelite svoj izazov na društvenim mrežama i osvojite cool nagrade Tjedna programiranja',
         'Samo trebate prenijeti sliku s dovršenim recima, stupcima ili, još bolje, cijelu bingo karticu na',
         'Facebook, Instagram ili Twitter',
-        'Obavezno upotrijebite'
-    ]
+        'Obavezno upotrijebite',
+    ],
 ];

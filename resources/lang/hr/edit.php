@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Uredi svoje #CodeWeek događanje',
+    'title' => 'Uredi svoje #EUCodeWeek događanje',
     'required_fields' => 'Obavezna polja označena su zvjezdicom *. Slobodno dodajte popis događanja na svojem jeziku.',
     'description' => 'Opis',
     'audience' => 'Publika',
@@ -29,12 +29,12 @@ return [
         'header' => 'Vaše kontaktne informacije',
         'text_1' => 'Ove informacije vidjet će samo ',
         'link_1' => 'Ambasadori Europskog tjedna programiranja',
-        'text_2'=> ' i organizatori Tjedna programiranja
+        'text_2' => ' i organizatori Tjedna programiranja
         koji će
         provjeriti vaše događanje prije nego što se ono pojavi na karti. Moguće je da će vam se obratiti bude li potrebno
         urediti ili
         kako bi podijelili ankete u statističke svrhe nakon održavanja događanja.',
-        'contact_email' => 'Vaša e-adresa za kontakt'
-    ], 
-    'edit' => 'Uredi događanje'
+        'contact_email' => 'Vaša e-adresa za kontakt',
+    ],
+    'edit' => 'Uredi događanje',
 ];

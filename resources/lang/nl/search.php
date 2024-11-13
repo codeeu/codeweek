@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Doelgroep',
-    'theme_title'=>'Thema',
-    
+    'audience_title' => 'Doelgroep',
+    'theme_title' => 'Thema',
+
     'placeholder' => 'Zoek naar naam of tag van evenement',
     'submit' => 'Zoek',
     'label_country' => 'Selecteer land',
     'last_year_events' => [
         'label' => 'Evenementen van vorig jaar ook opnemen',
         'yes' => 'Ja',
-        'no' => 'Nee'
+        'no' => 'Nee',
     ],
     'search_counter' => 'stemmen overeen met je zoekcriteria',
-    'event'=>'evenement',
-    'events'=>'evenementen',
+    'event' => 'evenement',
+    'events' => 'evenementen',
     'year' => 'jaar',
-    'audiences'=>'Doelgroepen','themes'=>'themas','countries'=>'Landen','search_placeholder' => 'Zoek op titel of beschrijving',
+    'audiences' => 'Doelgroepen', 'themes' => 'themas', 'countries' => 'Landen', 'search_placeholder' => 'Zoek op titel of beschrijving',
 ];

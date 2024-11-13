@@ -40,7 +40,7 @@ class CountriesQuery
             ->join('countries','events.country_iso','=','countries.iso')
             ->where('status',"=","PENDING")
             ->whereNull('deleted_at')
-            ->groupBy('country_iso')
+            ->groupBy(['country_iso','countries.name'])
             ->orderBy('countries.name')
             ->get();
 
@@ -51,14 +51,15 @@ class CountriesQuery
     public static function withOnlineEvents($highlighted_status){
 
         $countries = DB::table('events')
-            ->select('events.country_iso as iso','countries.name', DB::raw('count(id) as total'))
-            ->join('countries','events.country_iso','=','countries.iso')
-            ->where('status',"=","APPROVED")
-            ->where('highlighted_status',"=",$highlighted_status)
-            ->whereNull('deleted_at')
-            ->where('activity_type', 'open-online')
-            ->where('start_date', '>=', \Carbon\Carbon::now()->subDays(15))->where('end_date', '>=', Carbon::now())
-            ->groupBy('country_iso')
+            ->select('events.country_iso as iso', 'countries.name', DB::raw('count(events.id) as total'), DB::raw('MIN(events.start_date) as start_date'))
+            ->join('countries', 'events.country_iso', '=', 'countries.iso')
+            ->where('events.status', '=', 'APPROVED')
+            ->where('events.highlighted_status', '=', $highlighted_status)
+            ->whereNull('events.deleted_at')
+            ->where('events.activity_type', 'open-online')
+            ->where('events.start_date', '>=', Carbon::now()->subDays(15))
+            ->where('events.end_date', '>=', Carbon::now())
+            ->groupBy('events.country_iso', 'countries.name')
             ->orderBy('countries.name')
             ->get();
 

@@ -312,6 +312,78 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 "3" => "Koda mig efter humör för gymnasieelever",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Vatten",
+            "author" => "av Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Vatten är ett svar på behovet av att lösa problemet med vattenföroreningar. Trots de ansträngningar som har gjorts under de senaste åren finns det fortfarande 2 miljarder människor runt om i världen som inte har tillgång till säkert dricksvatten. Det innebär att det sjätte målet för hållbar utveckling i Agenda 2030, att alla människor ska ha tillgång till säkert förvaltat vatten och sanitet senast 2030, är långt ifrån att uppnås. Samma sak gäller för mål 14, hav och marina resurser, som syftar till att bevara och nyttja haven och de marina resurserna på ett hållbart sätt i syfte att uppnå en hållbar utveckling.",
+
+                "Denna infomodul är inriktad på den relevanta och aktuella frågan att mäta vattenkvalitet och nya föroreningar som hotar vattenkvaliteten. Eleverna får möjlighet att undersöka och hitta lösningar på verkliga problem kopplade till vattnet och miljön, och då kan de också utveckla förmågor som insamling av information, kritiskt tänkande och problemlösning.",
+
+                "Lektionsplanerna innehåller praktiska och kreativa aktiviteter, som programmering i Scratch, introduktion till maskininlärning och artificiell intelligens med LearningML, samt att konstruera styrda fordon med LEGO-satser för insamling av vattenprover och analys av deras pH-värden. Genom dessa aktiviteter kan eleverna tillämpa sina kunskaper och förmågor i praktiken i en interaktiv och lekfull miljö, vilket höjer deras motivation och intresse för projektet.",
+
+                "För att genomföra denna infomodul föreslås att man utför alla tre aktiviteterna med eleverna, så man fullföljer hela projektet och det blir en mer meningsfull och motiverande studieprocess. Aktiviteterna kan dock genomföras var och en för sig."
+
+            ],
+            "activities" => [
+                "1" => "SOS Vatten med Scratch",
+                "2" => "SOS Vatten med maskininlärning",
+                "3" => "SOS Vatten med robotteknik"
+            ]
+
+        ],
+        "20" => [
+            "title" => "Kod genom konst",
+            "author" => "av Maria Tsapara",
+            "text" => [
+                "Barn växer upp i en komplex värld som ständigt utvecklas tekniskt, vilket kräver innovativa pedagogiska metoder för förskolepedagoger. Dessa metoder inkluderar aktiviteter som främjar datalogiskt tänkande och programmering från en tidig ålder. Forskning tyder på att riktade aktiviteter effektivt kan utveckla barns datalogiska tänkande och problemlösningsförmåga samtidigt som sådana aktiviteter främjar deras kreativa uttryck genom teknik.",
+                "Även om den vanligaste strategin för att lära ut programmering innebär användning av pedagogiska robotar, finns det också möjlighet att programmera utan att använda ett robotkit (unplugged). Detta tillvägagångssätt kan ta olika former och omfatta ett brett spektrum av aktiviteter (pixelkonst, barn i rollen som robotar, användning av ett golvnät etc.). Dessa aktiviteter erbjuder fördelar med erfarenhetsbaserat lärande, särskilt för små barn som lär sig bäst genom lek. ",
+                "<strong>The Learning Bit Kod genom konst</strong> består av tre lektionsplaner för förskolepedagoger och genomför en unplugged-aktivitet, användning av en Bee-bot utbildningsrobot och uppfinningskitet Makey Makey. Genom att använda Makey Makey kit får eleverna möjlighet att skapa konkreta gränssnitt och prova olika lösningar, skapa, experimentera och stärka alla sina inlärningsförmågor i en samarbetsinriktad inlärningsmiljö.",
+                "Som Pablo Picasso sa: \"Varje barn är en konstnär. Problemet är hur man förblir en konstnär när man växer upp.\" Konst ger barn möjligheter att på ett kreativt sätt representera och kommunicera sina idéer och känslor. I denna Learning Bit hittar du inspirerande aktiviteter för att utveckla dina elevers sociala färdigheter och färdigheter för det 21:a århundradet genom konst och kodning, för att uppmuntra dem att uttrycka sig kreativt och främja deras fantasi. Learning Bit Code Through Art gör det möjligt för dig att främja dina elevers kreativitet, samarbete och problemlösning genom att integrera konst och kodning."
+            ],
+            "activities" => [
+                "1" => "Konstfull kodning: 4-6 år gamla förskoleelever.",
+                "2" => "Kreativt kodlab: 4-6 år gamla förskoleelever",
+                "3" => "Touch Canvas: Skapa interaktiva målningar: 4-6 år gamla förskoleelever; avancerad."
+            ]
+        ],
+        "21" => [
+            "title" => "Tillverkning och kodning",
+            "author" => "av Ulla Hauptmann",
+            "text" => [
+                "Makerspaces är levande nav där kreativiteten frodas och praktiska projekt kommer till liv. När man väljer utrustning för ett makerspace ligger fokus på verktyg som Calliope mini, Microbit eller Makey Makey, eftersom de erbjuder ett brett utbud av möjligheter som passar elever i olika åldrar och på olika nivåer. Dessa kort stöder utvecklingen av kreativa projekt för yngre barn tack vare deras blockbaserade programmeringsspråk finns tillgängliga för dessa kort. För äldre elever kan mer komplexa projekt skapas med hjälp av dessa kort.",
+                "Utforska <strong>Learning Bit Tillverkning och kodning</strong> för att dyka in i makerspace-världen och främja tvärvetenskapliga färdigheter som lagarbete och socialt samarbete samtidigt som du väcker innovation och entusiasm hos dina elever!",
+                "Makey Makey är ett kretskort som omvandlar vardagsföremål till datorknappar. Genom att ansluta föremål till kortet med krokodilklämmor, som sedan kopplas till datorn via USB-kabel (eller en iPad med en kameraadapter), kan Makey Makey öppna och stänga elektriska kretsar mellan en person och ett föremål. Detta sänder elektriska signaler som datorn tar emot som tangentbordstryckningar eller musklick. Detta gör det möjligt för eleverna att utveckla kreativa uppfinningar som musikinstrument, dataspel eller interaktiva affischer - möjligheterna är oändliga! Makey Makey och de projekt som presenteras i denna Learning Bit kan användas i både grundskolan och gymnasiet för att lära ut färdigheter inom områden som medieutbildning, datavetenskap, naturvetenskap, fysik, musik, sport och tvärvetenskapliga färdigheter som lagarbete och sociala färdigheter.",
+                "Kliv in i Makey Makeys spännande värld och släpp loss den gränslösa kreativiteten i ditt klassrum!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey möter musik: för nybörjare.",
+                "2" => "Talande bilder: för elever på mellannivå.",
+                "3" => "Skapa en interaktiv affisch: för avancerade elever.",
+            ]
+        ]
+        ,
+        "19" => [
+
+            "title" => "Kreativt Scratch-laboratorium",
+            "author" => "av Krzysztof Jaworski",
+            "text" => [
+
+                "Att lära sig programmering i dag är mer än att bara förbereda sig för en programmerarkarriär, och det går längre än datavetenskapens gränser. Man bör närma sig det på ett brett sätt, lägga sig till med ett ämnesöverskridande perspektiv och använda programmering som ett verktyg för undervisning och lek, så att det blir lättare att utveckla framtida kompetens.",
+
+                "För barn och unga är det avgörande att de förstår hur de använder digitala verktyg säkert, ansvarsfullt och effektivt. De behöver greppa hur de här verktygen fungerar och veta hur de kommunicerar med dem genom programmering. Dessutom bör den upplevelsen innefatta att de samarbetar med sina jämnåriga.",
+
+                "Learning Bit (En nypa lärdom) <strong>Creative Scratch Laboratory</strong> kommer att främja elevernas kreativitet, öka deras nyfikenhet och göra kodning till något underhållande och kul.  Den består av tre lektionsplaner för elever med varierande kodningskunskaper. I lektionsplanen för nybörjare skapar eleverna en figur på papper, importerar den i Scratch och animerar den med hjälp av valda block. I lektionsplanen på medelnivå får eleverna lära sig verktyget Video Sprites, grafiskt hantverk med papper och tuschpennor samt att ta fram en Scratch-mosaik med videosprajtar, stämplar och konstverk. I den avancerade lektionsplanen utforskar eleverna ansiktsigenkänningsfunktionen i Scratch, experimenterar med manipulering av sprajtgrafik och skapar en miniteater med dialoger som görs i Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Rita och animera sprajt: för nybörjare",
+                "2" => "Stämplar: för elever på medelnivå",
+                "3" => "Dockteater: för elever på avancerad nivå",
+            ]
+        ],
 
 
     ],

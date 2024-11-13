@@ -3,16 +3,13 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Subfission\Cas\Facades\Cas;
 
-class ExampleTest extends TestCase
+final class ExampleTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
      */
-    public function testBasicTest()
+    public function testBasicTest(): void
     {
 
         $this->assertTrue(true);

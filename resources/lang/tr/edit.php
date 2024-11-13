@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => '#CodeWeek etkinliğinizi düzenleyin',
+    'title' => '#EUCodeWeek etkinliğinizi düzenleyin',
     'required_fields' => 'Gerekli alanlar * işareti ile gösterilmiştir. Etkinliği kendi dilinizde ekleyebilirsiniz.',
     'description' => 'Açıklama',
     'audience' => 'Hedef Kitle',
@@ -29,12 +29,12 @@ return [
         'header' => 'İrtibat bilgileriniz',
         'text_1' => 'Bu bilgi yalnızca şu kişilere görünür olacaktır: ',
         'link_1' => 'AB Kod Haftası Elçileri',
-        'text_2'=> ' ile Kod Haftası
+        'text_2' => ' ile Kod Haftası
         organizatörleri; bu kişiler,
         etkinliğinizi harita üzerinde gösterilmeden önce kontrol edecek ve düzenleme
         gerekmesi hâlinde ya da
         etkinliğin ardından istatistiksel amaçla anketleri yönetmek üzere sizinle irtibat kurabilecektir.',
-        'contact_email' => 'İrtibat e-posta adresiniz'
-    ], 
-    'edit' => 'Etkinliği düzenle'
+        'contact_email' => 'İrtibat e-posta adresiniz',
+    ],
+    'edit' => 'Etkinliği düzenle',
 ];

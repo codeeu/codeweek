@@ -15,7 +15,7 @@ return [
             <p>Näin sinun ei tarvitse antaa samoja tietoja uudelleen, kun siirryt sivustolla sivulta toiselle saman istunnon aikana.</p>
 
             <p>Evästeitä voidaan käyttää myös anonymisoitujen tilastojen laatimiseen kävijöiden selaustoiminnasta verkkosivuillamme.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Miten evästeitä käytetään?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Koodausviikko käyttää <strong>kolmentyyppisiä ensimmäisen osapuolen evästeitä</strong>. Niiden tarkoitus on',
             '1' => 'tallentaa kävijän valinnat',
             '2' => 'mahdollistaa verkkosivustojen toiminta',
-            '3' => 'kerätä analytiikkadataa (käyttäjien toimintamalleista).'
+            '3' => 'kerätä analytiikkadataa (käyttäjien toimintamalleista).',
         ],
         'table' => [
-            'name'=>'Nimi',
-            'service'=>'Käyttö',
-            'purpose'=>'Tarkoitus',
-            'type_duration'=>'Evästeen tyyppi ja säilytysaika',
+            'name' => 'Nimi',
+            'service' => 'Käyttö',
+            'purpose' => 'Tarkoitus',
+            'type_duration' => 'Evästeen tyyppi ja säilytysaika',
         ],
         'visitor_preferences' => [
-            'title'=> 'Kävijän valinnat',
-            'text'=> '<p>Nämä evästeet asettaa komission palvelin, ja ne ovat ainoastaan sen luettavissa. Evästeisiin tallentuu,</p>',
-            'item'=> 'oletko hyväksynyt (vai hylännyt) tämän sivuston evästekäytännöt.',
+            'title' => 'Kävijän valinnat',
+            'text' => '<p>Nämä evästeet asettaa komission palvelin, ja ne ovat ainoastaan sen luettavissa. Evästeisiin tallentuu,</p>',
+            'item' => 'oletko hyväksynyt (vai hylännyt) tämän sivuston evästekäytännöt.',
             'table' => [
                 '1' => [
                     'service' => 'Suostumus evästeiden käyttöön',
                     'purpose' => 'Tallentaa evästeasetuksesi (jotta asiasta ei kysytä uudestaan)',
                     'type_duration' => 'Ensimmäisen osapuolen istuntokohtainen eväste, joka poistetaan, kun suljet selaimen',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Toiminnalliset evästeet',
             'text' => '<p>Jotkin evästeet ovat välttämättömiä, jotta tietyt verkkosivut toimisivat. Tästä syystä ne eivät edellytä suostumustasi. Näitä ovat</p>',
-            'item' => 'tiettyjen IT-järjestelmien edellyttämät tekniset evästeet.'
+            'item' => 'tiettyjen IT-järjestelmien edellyttämät tekniset evästeet.',
         ],
         'technical_cookies' => [
             'title' => 'Tekniset evästeet',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Tallentaa käyttäjän valitseman kielen',
                     'type_duration' => 'Ensimmäisen osapuolen istuntokohtainen eväste, joka poistetaan, kun suljet selaimen',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analytiikkaevästeet',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Verkkoanalytiikkapalvelu, perustuu avoimen lähdekoodin Matomo-ohjelmistoon',
                     'purpose' => 'Tunnistaa sivut, joilla sama käyttäjä käy saman istunnon aikana (anonyymisti – käyttäjästä ei kerätä henkilötietoja).',
                     'type_duration' => 'Ensimmäisen osapuolen pysyvä eväste, 30 minuuttia',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Voidaksesi nähdä tämän kolmansien osapuolten sisällön sinun on ensin hyväksyttävä niiden omat käyttöehdot. Tämä koskee myös niiden evästekäytäntöjä, joita komissio ei voi kontrolloida.</p>
 
                 <p>Jos et kuitenkaan käytä tätä sisältöä, kolmansien osapuolten evästeitä ei tallennu laitteellesi.</p>Koodausviikon ulkopuoliset palveluntarjoajat',
-            '2' => 'Nämä ulkopuoliset palveluntarjoajat eivät ole koodausviikon verkkosivuston valvonnassa. Palveluntarjoajat voivat milloin tahansa muuttaa muun muassa palvelunsa käyttöehtoja tai evästeiden tarkoitusta ja käyttöä.'
-        ]
+            '2' => 'Nämä ulkopuoliset palveluntarjoajat eivät ole koodausviikon verkkosivuston valvonnassa. Palveluntarjoajat voivat milloin tahansa muuttaa muun muassa palvelunsa käyttöehtoja tai evästeiden tarkoitusta ja käyttöä.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Evästeiden hallinta',
@@ -109,6 +109,6 @@ return [
 
             <p>Voit poistaa kaikki jo laitteellasi olevat evästeet tyhjentämällä selaimesi selaushistorian. Näin poistat kaikki evästeet kaikilta verkkosivuilta, joilla olet vieraillut.</p>
 
-            <p>Huomaa kuitenkin, että saatat menettää myös jotain tallentamiasi tietoja (esim. tallennetut sisäänkirjautumistiedot tai sivustojen asetukset).</p><strong>Sivustokohtaisten evästeiden hallinta</strong><p>Sivustokohtaisia evästeitä voit hallita yksityiskohtaisemmin oletusselaimesi yksityisyys- ja evästeasetuksissa.</p><strong>Evästeiden estäminen</strong><p>Useimmissa nykyaikaisissa selaimissa voi estää kaikkien evästeiden asettamisen laitteelle, mutta silloin joudut mahdollisesti mukauttamaan joitakin asetuksia manuaalisesti joka kerta, kun käyt tietyllä sivustolla/sivulla. Tietyt palvelut ja toiminnot eivät välttämättä toimi kunnolla (esim. profiiliin sisäänkirjautuminen).</p><strong>Analytiikkaevästeiden hallinta</strong><p>Voit hallita analytiikkaevästeidemme asetuksia <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">tällä sivulla.</a></p>'
-    ]
+            <p>Huomaa kuitenkin, että saatat menettää myös jotain tallentamiasi tietoja (esim. tallennetut sisäänkirjautumistiedot tai sivustojen asetukset).</p><strong>Sivustokohtaisten evästeiden hallinta</strong><p>Sivustokohtaisia evästeitä voit hallita yksityiskohtaisemmin oletusselaimesi yksityisyys- ja evästeasetuksissa.</p><strong>Evästeiden estäminen</strong><p>Useimmissa nykyaikaisissa selaimissa voi estää kaikkien evästeiden asettamisen laitteelle, mutta silloin joudut mahdollisesti mukauttamaan joitakin asetuksia manuaalisesti joka kerta, kun käyt tietyllä sivustolla/sivulla. Tietyt palvelut ja toiminnot eivät välttämättä toimi kunnolla (esim. profiiliin sisäänkirjautuminen).</p><strong>Analytiikkaevästeiden hallinta</strong><p>Voit hallita analytiikkaevästeidemme asetuksia <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">tällä sivulla.</a></p>',
+    ],
 ];

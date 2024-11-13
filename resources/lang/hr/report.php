@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Prijavi svoje #CodeWeek događanje',
+    'title' => 'Prijavi svoje #EUCodeWeek događanje',
     'event_title' => 'Naziv događanja',
     'number_required' => 'Navedite okvirnu procjenu, čak i ako nemate točne podatke.',
     'phrase1' => 'Ovaj obrazac možete ispuniti samo jednom! Pozorno provjerite svoje podatke. Ako pogriješite, ',
@@ -25,27 +25,25 @@ return [
         'label' => 'Broj sudionika',
     ],
     'average_participant_age' => [
-        'label'=>'Prosječna dob sudionika',
+        'label' => 'Prosječna dob sudionika',
     ],
     'percentage_of_females' => [
         'label' => 'Postotak žena',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Kôd za sudjelovanje u izazovu Codeweek for all',
-        'help' => 'Ako ste ga dobili, ovdje možete staviti svoj kôd za izazov Codeweek4All. Ako ne sudjelujete, zanemarite ovo polje.'
+        'help' => 'Ako ste ga dobili, ovdje možete staviti svoj kôd za izazov Codeweek4All. Ako ne sudjelujete, zanemarite ovo polje.',
     ],
     'name_for_certificate' => [
         'label' => 'Ime za potvrdu',
-        'help' => 'Promijenite ovo ime u naziv organizatora kojemu će biti izdana potvrda o sudjelovanju u Tjednu programiranja. Ovdje upotrebljavajte samo ASCII (latinična) slova. Nisu podržana slova s naglascima, prijeglasima i slično.'
+        'help' => 'Promijenite ovo ime u naziv organizatora kojemu će biti izdana potvrda o sudjelovanju u Tjednu programiranja. Ovdje upotrebljavajte samo ASCII (latinična) slova. Nisu podržana slova s naglascima, prijeglasima i slično.',
     ],
     'submit' => 'Predaj prijavu događanja',
-    'thanks_page'=>[
-        'title'=>'Hvala na prijavi događanja!',
-        'certificate_ready'=>'Vaša je potvrda spremna.',
-        'download_button'=>'Kliknite ovdje i preuzmite je.',
-        'back_events'=>'Vrati se na svoje događanje'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Hvala na prijavi događanja!',
+        'certificate_ready' => 'Vaša je potvrda spremna.',
+        'download_button' => 'Kliknite ovdje i preuzmite je.',
+        'back_events' => 'Vrati se na svoje događanje',
+    ],
 
 ];

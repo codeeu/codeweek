@@ -14,7 +14,7 @@ return [
     'login' => 'Iniciar sesión',
     'register' => 'Inscripción',
     'github' => 'Iniciar sesión con Github',
-    'twitter' => 'Iniciar sesión con Twitter',
+    'X' => 'Iniciar sesión con X',
     'facebook' => 'Iniciar sesión con Facebook',
     'google' => 'Iniciar sesión con Google',
     'azure' => 'Iniciar sesión con Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Restablecer contraseña',
     'send_password' => 'Enviar un enlace para restablecer la contraseña',
     'confirm_password' => 'Confirmar contraseña',
-    'name' => 'nombre'
+    'name' => 'nombre',
 ];

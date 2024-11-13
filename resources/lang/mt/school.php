@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Isem l-iskola',
-    'location'           => 'Il-post tal-iskola',
-    'description'                => 'Deskrizzjoni tal-iskola',
-    'school'                => 'Skola',
-    'add'                => 'Żid',
-    'list'                => 'Lista',
+    'name' => 'Isem l-iskola',
+    'location' => 'Il-post tal-iskola',
+    'description' => 'Deskrizzjoni tal-iskola',
+    'school' => 'Skola',
+    'add' => 'Żid',
+    'list' => 'Lista',
     'required' => [
-        'name'=>'Isem l-iskola huwa meħtieġ',
-        'location'=>'Il-post tal-iskola huwa meħtieġ',
-    ]
-
+        'name' => 'Isem l-iskola huwa meħtieġ',
+        'location' => 'Il-post tal-iskola huwa meħtieġ',
+    ],
 
 ];

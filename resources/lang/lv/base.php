@@ -41,7 +41,7 @@ return [
         'mk' => 'Maķedoniešu',
         'me' => 'Melnkalniešu',
         'rs' => 'Serbu',
-        'tr' => 'turku'
+        'tr' => 'turku',
     ],
 
     'resources_local_title' => 'Programmēšanas resursi no',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Vai jums ir vēl kādi jautājumi?',
     'drop_us_a_line' => 'Gluži vienkārši uzrakstiet mums!',
     'get_in_touch' => 'SAZINIETIES AR MUMS',
-    'footer_msg' =>
-        'Iedzīvotāju kustība, ko vada brīvprātīgie un atbalsta Eiropas Komisija.',
+    'footer_msg' => 'Iedzīvotāju kustība, ko vada brīvprātīgie un atbalsta Eiropas Komisija.',
     'email' => 'E-pasts',
     'display_email' => 'Parādīt e-pasta vēstuli',
     'first_name' => 'Vārds',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Atlasīt failu',
     'learning_bits' => 'Mācību moduļi',
     'codeweek' => 'Programmēšanas nedēļa',
-    'bring_codeweek_to_your_students' =>
-        'Piedāvājiet Programmēšanas nedēļu saviem skolēniem',
+    'bring_codeweek_to_your_students' => 'Piedāvājiet Programmēšanas nedēļu saviem skolēniem',
     'or' => 'vai',
-    'newsletter' => 'Jaunumi'
+    'newsletter' => 'Jaunumi',
 ];

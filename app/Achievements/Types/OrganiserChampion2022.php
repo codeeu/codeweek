@@ -5,7 +5,9 @@ namespace App\Achievements\Types;
 class OrganiserChampion2022 extends AchievementType
 {
     public $icon = 'organiser/organiser_champion_small.png';
+
     public $edition = 2022;
+
     public $name = 'Champion Organiser 2022';
 
     public function description()
@@ -17,6 +19,4 @@ class OrganiserChampion2022 extends AchievementType
     {
         return $user->reported($this->edition) >= 15;
     }
-
-
 }

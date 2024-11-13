@@ -298,6 +298,77 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
                 "3" => "Programar-me para o estado de espírito para alunos do ensino secundário",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Água",
+            "author" => "por Francisco Delgado Cecilia",
+            "text" => [
+
+                "O SOS Água é uma resposta à necessidade de resolver o problema da poluição da água. Apesar dos esforços envidados nos últimos anos, continua a haver 2 mil milhões de pessoas em todo o mundo que não têm acesso a água potável segura. Assim sendo, o Objetivo de Desenvolvimento Sustentável (ODS) n.º 6 da Agenda 2030, que preconiza que todas as pessoas devem ter acesso a água e saneamento geridos de forma segura até 2030, ainda está longe de ser alcançado. Verifica-se o mesmo em relação ao ODS n.º 14, referente à vida subaquática, que visa conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos para o desenvolvimento sustentável.",
+
+                "Este bit de aprendizagem centra-se no tema pertinente e atual da gestão da qualidade da água e nos novos poluentes que ameaçam a qualidade da água. Os alunos terão a oportunidade de investigar e procurar soluções para problemas reais relacionados com a água e com o ambiente, que lhes permitirão desenvolver competências como a investigação, o pensamento crítico e a resolução de problemas.",
+
+                "Os planos de aula incluem atividades práticas e criativas, como a programação no Scratch, a iniciação à aprendizagem automática e à inteligência artificial com Learning Machine Learning e a construção de veículos guiados com conjuntos Lego para a recolha de amostras de água e a análise do pH da água. Estas atividades permitirão aos alunos colocar as suas competências e conhecimentos em prática num ambiente interativo e lúdico, que aumentará a sua motivação e interesse no projeto.",
+
+                "Para a implementação deste bit de aprendizagem, propõe-se desenvolver as três atividades na sala de aula, completar todo o projeto e obter um processo de aprendizagem mais significativo e motivador. Contudo, cada atividade pode ser realizada isoladamente."
+
+            ],
+            "activities" => [
+                "1" => "SOS Água com Scratch",
+                "2" => "SOS Água com aprendizagem automática",
+                "3" => "SOS Água com robótica",
+            ]
+
+        ],
+        "20" => [
+            "title" => "Programação através da arte",
+            "author" => "por Maria Tsapara",
+            "text" => [
+                "As crianças estão a crescer num mundo complexo que está em constante desenvolvimento tecnológico, o que exige abordagens educativas inovadoras para os educadores da primeira infância. Estas abordagens incluem atividades que promovem o pensamento computacional e a programação desde tenra idade. A investigação sugere que atividades específicas podem desenvolver eficazmente o pensamento computacional e as capacidades de resolução de problemas das crianças e, ao mesmo tempo, essas atividades promovem a sua expressão criativa através da tecnologia.",
+                "Embora a estratégia mais comum para o ensino da programação envolva a utilização de robôs educativos, existe também a possibilidade de programar sem a utilização de um kit de robótica (não ligado). Esta abordagem pode assumir várias formas e incluir uma vasta gama de atividades (pixel art, crianças no papel de robôs, utilização de uma grelha de chão, etc.). Estas atividades oferecem benefícios de aprendizagem experimental, em particular para as crianças mais pequenas que aprendem melhor através do jogo.",
+                "<strong>A Aprendizagem do Código Bit através da Arte</strong> inclui três planos de aula para educadores de infância e implementa uma atividade desligada da tomada, a utilização de um robô educativo Bee-bot e o kit de invenção do Makey Makey. Ao utilizar o kit do Makey Makey, os alunos têm a oportunidade de criar interfaces tangíveis e experimentar diferentes soluções, criar, experimentar e reforçar todas as suas capacidades de aprendizagem num ambiente de aprendizagem colaborativa",
+                "Como disse Pablo Picasso: “Todas as crianças são artistas. O problema é como continuar a ser artista depois de crescer.\" A arte dá às crianças a oportunidade de representar e comunicar criativamente as suas ideias e sentimentos. Neste Bit de Aprendizagem encontrará atividades inspiradoras para promover as competências sociais e do século XXI dos seus alunos através da arte e da programação, para os encorajar a expressarem-se de forma criativa e fomentar a sua imaginação. O Bit de Aprendizagem Programar Através da Arte permitir-lhe-á promover a criatividade, a colaboração e a resolução de problemas dos seus alunos através da integração da arte e da programação."
+            ],
+            "activities" => [
+                "1" => "Programação artística: Alunos do jardim de infância com 4-6 anos de idade",
+                "2" => "Laboratório de programação criativa: alunos do jardim de infância com 4-6 anos de idade",
+                "3" => "Tela tátil: Criar pinturas interativas: Alunos do jardim de infância de 4-6 anos; avançado"
+            ]
+        ],
+        "19" => [
+
+            "title" => "Laboratório Criativo do Scratch",
+            "author" => "por Krzysztof Jaworski",
+            "text" => [
+
+                "Atualmente, a aprendizagem da programação vai além da preparação para uma carreira de programação e ultrapassa as fronteiras da ciência informática. Deve ser abordada de forma abrangente, adotando uma perspetiva interdisciplinar e utilizando a programação como uma ferramenta de aprendizagem e de diversão para promover o desenvolvimento de competências futuras.",
+
+                "É fundamental que as crianças e os jovens compreendam como utilizar as ferramentas digitais de forma segura, responsável e eficaz. Devem compreender o funcionamento destas ferramentas e saber como comunicar com as mesmas através da programação. Além disso, esta experiência deve incluir interações colaborativas com os seus pares.",
+
+                "O Bit de Aprendizagem <strong>Creative Scratch Laboratory</strong> irá estimular a criatividade dos alunos, aumentar a sua curiosidade e tornar a programação agradável e divertida.  Inclui três planos de aula para alunos com diferentes competências de programação. No plano de aula para principiantes, os alunos criam uma personagem em papel, importam-na para o Scratch e animam-na através de blocos selecionados. O plano de aula de nível intermédio ensina os alunos a utilizar a ferramenta Atores de Vídeo, a criar gráficos com papel e marcadores, e a produzir um mosaico Scratch com Atores de Vídeo, carimbos e obras de arte. No plano de aula avançado, os alunos exploram a função de reconhecimento facial no Scratch, experimentam a manipulação gráfica de atores e criam uma pequena peça de teatro com diálogos gerados no Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Desenhar e animar atores (sprites): para principiantes",
+                "2" => "Carimbos: para alunos de nível intermédio",
+                "3" => "Teatro de marionetas: para alunos de nível avançado",
+            ]
+        ],
+        "21" => [
+            "title" => "Realização e programação",
+            "author" => "por Ulla Hauptmann",
+            "text" => [
+                "Os espaços Makers são centros dinâmicos onde a criatividade prospera e os projetos práticos ganham vida. Ao selecionar o equipamento para um makerspace, a atenção centra-se em ferramentas como o Calliope mini, o Microbit ou o Makey Makey, uma vez que oferecem uma vasta gama de possibilidades adequadas a alunos de diferentes idades e níveis de competências. Estas placas apoiam o desenvolvimento de projetos criativos para crianças mais novas, graças às linguagens de programação baseadas em blocos que estão disponíveis para estas placas. Para os alunos mais velhos, é possível criar projetos mais complexos utilizando estas placas",
+                "Explore o <strong>Bit de Programação Criar e Programar</strong> para mergulhar no mundo dos makerspaces e fomentar competências interdisciplinares como o trabalho em equipa e a colaboração social, ao mesmo tempo que desperta a inovação e o entusiasmo nos seus alunos!",
+                "O Makey Makey é uma placa de circuitos que converte objetos do quotidiano em teclas de computador. Ao ligar objetos à placa com clipes de crocodilo, que depois se ligam ao computador através de um cabo USB (ou a um iPad com um adaptador de câmara), o Makey Makey pode abrir e fechar circuitos elétricos entre uma pessoa e um objeto. Esta ação envia sinais elétricos que o computador recebe como toques no teclado ou cliques no rato. Isto permite que os alunos desenvolvam invenções criativas, como instrumentos musicais, jogos de computador ou cartazes interativos – as possibilidades são infinitas! O Makey Makey e os projetos apresentados neste Bit de Aprendizagem podem ser utilizados tanto no ensino básico como no secundário para ensinar competências em áreas como a educação para os meios de comunicação social, a informática, a ciência, a física, a música, o desporto, bem como competências interdisciplinares como o trabalho em equipa e as competências sociais.",
+                "Entre no animado mundo do Makey Makey e liberte a criatividade sem limites na sua sala de aula!"
+            ],
+            "activities" => [
+                "1" => "O Makey Makey encontra a música: para principiantes",
+                "2" => "Imagens falantes: para alunos de nível intermédio",
+                "3" => "Criar um cartaz interativo: para alunos de nível avançado",
+            ]
+        ]
 
 
     ],
@@ -306,7 +377,7 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
     'choose_lessons' => 'Selecione um dos planos de aula abaixo e organize uma atividade com seus alunos.',
     'footer' => [
         'title' => 'Não se esqueça de adicionar a sua atividade no mapa da Semana da Programação!',
-        'text' => '<p>Pode organizar facilmente uma aula na sua sala de aula, um dia aberto ou um evento na sua escola. Para isso, basta encontrar uma data e registar a sua atividade no <a href="/events">mapa da Semana da Programação</a>. Cada organizador de atividades receberá um certificado de participação em reconhecimento do seu esforço.</p>
+        'text' => '<p>Pode organizar facilmente uma aula na sua sala de aula, um dia aberto ou um evento na sua escola. Para isso, basta encontrar uma data e registar a sua atividade no <a href=" / events">mapa da Semana da Programação</a>. Cada organizador de atividades receberá um certificado de participação em reconhecimento do seu esforço.</p>
 
 <p>Se desejar fazer parte de um grupo internacional de professores entusiastas, adira ao <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupo de professores da Semana Europeia da Programação no Facebook</a>! Para ir mais longe e colaborar com outras escolas no seu país ou além-fronteiras, participe no <a href="/codeweek4all">desafio Code Week 4 All</a>.</p>'
     ]

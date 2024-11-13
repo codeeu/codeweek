@@ -20,13 +20,17 @@
 
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
+    <link href="{{asset('css/fonts.css')}}" media="screen" rel="stylesheet"/>
 
     @stack('extra-css')
 
     @yield('extra-css')
 
 
-    <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
+{{--    @vite('resources/css/app.css')--}}
+    @vite(['resources/assets/sass/app.scss', 'resources/js/app.js'])
+{{--    @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+
 
 
 
@@ -47,7 +51,7 @@
 
     <!-- Title, keywords, description -->
     <meta name="description"
-          content="October 7 - 22, 2023: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
+          content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
 
     @hasSection('title')
         <title>EU Code Week - @yield('title')</title>
@@ -79,7 +83,7 @@
 
     @include('layout.footer')
 
-    <flash message="{{ session('flash') }}"></flash>
+{{--    <flash message="{{ session('flash') }}"></flash>--}}
 </div>
 
 <!-- Scripts -->
@@ -99,13 +103,13 @@
 @endif
 
 
-<script src="{{mix('js/app.js')}}"></script>
+@vite('resources/js/app.js')
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
 @include('scripts.countdown')
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
-
+@livewireScripts
 <script src="https://unpkg.com/vue-select@latest"></script>
 {{--<script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js?_g=1663162661" async></script>--}}
 

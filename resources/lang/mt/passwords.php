@@ -17,6 +17,6 @@ return [
     'reset' => 'Il-password tiegħek ġiet irrisettjata!',
     'sent' => 'Bgħattnielek link biex tirrisettja l-password tiegħek!',
     'token' => 'Dan it-token biex tirrisettja l-password mhuwiex validu.',
-    'user' => "Ma nistgħux insibu utent b’dan l-indirizz elettroniku.",
+    'user' => 'Ma nistgħux insibu utent b’dan l-indirizz elettroniku.',
 
 ];

@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Voeg jouw #CodeWeek-evenement toe',
+    'main_title' => 'Voeg jouw #EUCodeWeek-evenement toe',
     'button' => 'Evenement toevoegen',
     'howto' => 'Je eigen evenement organiseren',
     'required' => 'Verplichte velden zijn gemarkeerd met een sterretje (*). Je kunt de vermelding van het evenement ook in je lokale taal toevoegen.',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Openbare e-mail',
-        'placeholder' => 'Wil je een e-mailadres van een contactpersoon weergeven?'
+        'placeholder' => 'Wil je een e-mailadres van een contactpersoon weergeven?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adres',
         'placeholder' => 'Waar vindt de activiteit plaats?',
     ],
-
 
     'organizertype' => [
         'label' => 'Type organisatie',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Augmented reality',
         'Artificial intelligence' => 'Kunstmatige intelligentie',
         'Motivation and awareness raising' => 'Motivatie en bewustzijn',
-        'Promoting diversity' => 'Bevordering van diversiteit'
+        'Promoting diversity' => 'Bevordering van diversiteit',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CODE WEEK 4 ALL-CODE',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'nationale ambassadeurs',
         'phrase5' => 'of stuur ons een',
         'phrase6' => 'e-mail',
-        'phrase7' => 'Je kunt je Code Week 4 All-code delen met andere mensen:'
+        'phrase7' => 'Je kunt je Code Week 4 All-code delen met andere mensen:',
     ],
     'activitytype' => [
         'label' => 'Type activiteit',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Online activiteit - open voor iedereen',
         'invite-online' => 'Online activiteit - alleen met uitnodiging',
         'open-in-person' => 'Offline activiteit - open voor iedereen',
-        'invite-in-person' => 'Offline activiteit - alleen met uitnodiging'
+        'invite-in-person' => 'Offline activiteit - alleen met uitnodiging',
 
     ],
     'privacy' => 'Ik heb de privacyverklaring die in dit document beschreven staat gelezen en ga ermee akkoord.',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Je certificaat hier bekijken',
     'submit_event_and_report' => 'Dien een melding voor dit evenement in en vraag je Programmeerweek-certificaat aan.',
     'report_and_claim' => 'Evenement melden en certificaat aanvragen',
-
 
 ];

@@ -10,17 +10,14 @@ class ResourceEditorRoleSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
         // Reset cached roles and permissions
         app()['cache']->forget('spatie.permission.cache');
 
         // create permissions
         Permission::create(['name' => 'moderate resource']);
-
 
         // create roles and assign created permissions
 

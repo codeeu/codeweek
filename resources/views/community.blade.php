@@ -9,7 +9,7 @@
 
         <section class="codeweek-banner ambassadors">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>@lang('community.titles.0')</h1>
             </div>
             <div class="image">
@@ -121,28 +121,54 @@
                     @empty
                         @lang('ambassador.no_ambassadors') :(<br/>
                     @endforelse
-                </div>
+                </div>                
+
+                 {{-- Display this section only if a country is selected and has specific content --}}
+                    @php
+                        $country = app('request')->input('country_iso');
+                        $supportedCountries = ['GR', 'CY', 'MT', 'IT', 'BG', 'TR', 'UA','PL','IE','FR','LU','NL','BE','SK','CZ','NO','IS','FI','SE','PT','ES','LV','LT','HR','SI','DE','AT','CH','RO','MD','DK'];
+                    @endphp
+
+                    @if(in_array($country, $supportedCountries))
+                        <section class="community_type_section">
+                            <div class="community_type">
+                                <div class="text">
+                                    {{-- Dynamically construct the language keys based on country code --}}                                    
+                                    <h2 class="subtitle">@lang("community.hub_level_{$country}")</h2>
+                                    <br/><h3><b>@lang("community.hub_{$country}")</b></h3>
+                                    <p>@lang("community.hub_desc_{$country}")</p>
+                                </div>
+                                <div class="image">
+                                    <img src="{{ asset('/images/hub.png') }}">
+                                </div>
+                            </div>
+                        </section>
+                    @endif
+
+                    {{-- Germany-specific additional section --}}
+                    @if($country === 'DE')
+                        <section class="community_type_section">
+                            <div class="community_type">
+                                <div class="text">@lang('community.codeweek_de')  </div>
+                            </div>
+                        </section>
+                    @endif
 
                 <section class="community_type_section">
                     <h2 class="subtitle">@lang('community.titles.2')</h2>
                     <div class="community_type">
                         <div class="text">
-<p>
-    @lang('community.leading-teachers')</p>
+                                <p> @lang('community.leading-teachers')</p>
                                 <h3>@lang('community.cta')</h3>
-
                         </div>
 
                         <div class="image">
                             <img src="{{asset('/images/leading_teachers.png')}}">
                         </div>
                     </div>
-
-
-
                 </section>
 
-                <div id="mapid" style="width: 100%; height: 400px;"></div>
+                <div id="mapid" style="width: 100%; height: 400px; z-index: 10000"></div>
 
                 <section class="community_type_section">
                     <h2 class="subtitle">@lang('community.titles.3')</h2>
@@ -184,8 +210,8 @@
                             <p>
                                 @lang('community.volunteer.7') <a
                                         href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.
-                                @lang('community.volunteer.9') <a
-                                        href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')
+                                <!--@lang('community.volunteer.9') <a
+                                        href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a>--> @lang('community.volunteer.11')
                             </p>
 
                             <p>
@@ -211,14 +237,13 @@
 
 @endsection
 
+@push('extra-css')
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+@endpush
 @push('scripts')
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 
     {{--    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>--}}
@@ -233,6 +258,12 @@
 @section('extra-js')
     <script src="{{asset('js/countriesGeoCentroids.js')}}" type="text/javascript"></script>
     <script>
+        // var map = L.map('mapid').setView([51.505, -0.09], 13);
+        //
+        // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //     maxZoom: 19,
+        //     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        // }).addTo(map);
 
         var mymap = L.map('mapid');
 

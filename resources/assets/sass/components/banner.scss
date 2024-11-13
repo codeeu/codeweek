@@ -25,6 +25,15 @@
   font-weight: normal;
 }
 
+  .codeweek-banner h2.partner_title {
+    color: #FFF;
+    font-family: "PT Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px
+  }
+
 .codeweek-banner .image{
   margin: 15px 10px;
   flex: 1;
@@ -45,6 +54,15 @@
   .codeweek-banner h2 {
     font-size:30px;
   }
+
+  .codeweek-banner h2.partner_title {
+    color: #FFF;
+    font-family: "PT Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px
+  }
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
@@ -61,6 +79,14 @@
   }
   .codeweek-banner h2 {
     font-size:35px;
+  }
+  .codeweek-banner h2.partner_title {
+        color: #FFF;
+        font-family: "PT Sans";
+        font-size: 60px!important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
   }
   .codeweek-banner .text{
     margin-left: 100px;

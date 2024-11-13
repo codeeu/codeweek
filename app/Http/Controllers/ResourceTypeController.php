@@ -30,7 +30,6 @@ class ResourceTypeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,7 +40,6 @@ class ResourceTypeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ResourceType  $resourceType
      * @return \Illuminate\Http\Response
      */
     public function show(ResourceType $resourceType)
@@ -52,7 +50,6 @@ class ResourceTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ResourceType  $resourceType
      * @return \Illuminate\Http\Response
      */
     public function edit(ResourceType $resourceType)
@@ -63,8 +60,6 @@ class ResourceTypeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ResourceType  $resourceType
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, ResourceType $resourceType)
@@ -75,7 +70,6 @@ class ResourceTypeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ResourceType  $resourceType
      * @return \Illuminate\Http\Response
      */
     public function destroy(ResourceType $resourceType)

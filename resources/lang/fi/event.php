@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Lisää #CodeWeek-tapahtuma.',
+    'main_title' => 'Lisää #EUCodeWeek-tapahtuma.',
     'button' => 'Lisää tapahtuma',
     'howto' => 'Miten järjestän tapahtuman?',
     'required' => 'Pakolliset kentät on merkitty tähdellä *. Voit lisätä tapahtumia luetteloon paikallisella kielellä.',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Julkinen sähköpostiosoite',
-        'placeholder' => 'Haluatko, että sähköpostiosoitteesi näkyy?'
+        'placeholder' => 'Haluatko, että sähköpostiosoitteesi näkyy?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Osoite',
         'placeholder' => 'Missä toiminta tapahtuu?',
     ],
-
 
     'organizertype' => [
         'label' => 'Organisaatiotyyppi',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Laajennettu todellisuus',
         'Artificial intelligence' => 'Tekoäly',
         'Motivation and awareness raising' => 'Motivointi ja valistus',
-        'Promoting diversity' => 'Monimuotoisuuden edistäminen'
+        'Promoting diversity' => 'Monimuotoisuuden edistäminen',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'KAIKKIEN KOODAUSVIIKKO -KOODI',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'oman maasi lähettilääseen',
         'phrase5' => 'tai lähetä meille ',
         'phrase6' => 'sähköpostiviesti.',
-        'phrase7' => 'Voit antaa Kaikkien koodausviikko -koodin myös ystävillesi:'
+        'phrase7' => 'Voit antaa Kaikkien koodausviikko -koodin myös ystävillesi:',
     ],
     'activitytype' => [
         'label' => 'Toiminnan tyyppi',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Avoin online-toiminta',
         'invite-online' => 'Online-toiminta vain kutsutuille',
         'open-in-person' => 'Avoin toiminta',
-        'invite-in-person' => 'Toiminta vain kutsutuille'
+        'invite-in-person' => 'Toiminta vain kutsutuille',
 
     ],
     'privacy' => 'Olen lukenut ja hyväksyn tätä asiakirjaa koskevat tietosuojaperiaatteet',
@@ -147,7 +146,6 @@ return [
     'certificate_ready' => 'Koodausviikon sertifikaattisi on valmis. Voit ladata tai jakaa sen suoraan.',
     'view_your_certificate' => 'Tutustu sertifikaattiisi täältä',
     'submit_event_and_report' => 'Lähetä raportti tapahtumasta ja pyydä koodausviikon sertifikaattia.',
-    'report_and_claim' => 'Ilmoita tapahtumasta ja pyydä sertifikaattia'
-
+    'report_and_claim' => 'Ilmoita tapahtumasta ja pyydä sertifikaattia',
 
 ];

@@ -298,6 +298,79 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 "3" => "Programează-mi dispoziția pentru elevii de liceu",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Apă",
+            "author" => "de Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Apă este un răspuns la necesitatea de a aborda problema poluării apei. În ciuda eforturilor depuse în ultimii ani, există încă 2 miliarde de oameni în întreaga lume care nu au acces la apă potabilă. Acest lucru înseamnă că Obiectivul de Dezvoltare Durabilă (ODD) 6 din Agenda 2030, care prevede că toți oamenii ar trebui să aibă acces la apă și canalizare gestionate în condiții de siguranță până în 2030, este departe de a fi atins. Același lucru este valabil și pentru ODD 14, privind viața subacvatică, care vizează conservarea și utilizarea durabilă a oceanelor, mărilor și resurselor marine în scopul dezvoltării durabile.",
+
+                "Acest modul de învățare se concentrează pe problema relevantă și actuală a măsurării calității apei și pe noii poluanți care pun în pericol calitatea apei. Elevii vor avea ocazia să investigheze și să caute soluții la probleme reale legate de apă și de mediu, ceea ce le va permite să dezvolte abilități precum cercetarea, gândirea critică și rezolvarea de probleme.",
+
+                "Planurile de lecții includ activități practice și creative, cum ar fi programarea în Scratch, inițierea în învățarea automată și inteligența artificială cu Learning Machine Learning și construirea de vehicule ghidate cu ajutorul seturilor Lego pentru prelevarea de probe de apă și analiza pH-ului apei. Aceste activități le vor permite elevilor să își pună în practică abilitățile și cunoștințele într-un mediu interactiv și ludic, ceea ce le va spori motivația și interesul pentru proiect.",
+
+                "Pentru implementarea acestui modul de învățare se propune desfășurarea celor trei activități în clasă, pentru a finaliza întregul proiect și a obține un proces de învățare mai relevant și mai motivant. Cu toate acestea, fiecare activitate poate fi desfășurată în mod izolat."
+
+            ],
+            "activities" => [
+                "1" => "SOS Apă cu Scratch",
+                "2" => "SOS Apă cu învățare automată",
+                "3" => "SOS Apă cu robotică",
+            ]
+
+        ],
+        "19" => [
+
+            "title" => "Laboratorul creativ Scratch",
+            "author" => "de Krzysztof Jaworski",
+            "text" => [
+
+                "Învățarea programării în prezent depășește pregătirea pentru o carieră în programare și se prelungește dincolo de granițele informaticii. Aceasta ar trebui abordată în sens larg, adoptând o perspectivă interdisciplinară și utilizând programarea ca instrument de învățare și de joc, pentru a stimula dezvoltarea competențelor viitoare.",
+
+                "Pentru copii și tineri, este esențial să înțeleagă cum să utilizeze instrumentele digitale în siguranță, în mod responsabil și eficient. Aceștia trebuie să înțeleagă cum funcționează aceste instrumente și să știe cum să comunice cu ele prin programare. În plus, această experiență ar trebui să implice interacțiuni de colaborare cu colegii lor.",
+
+                "Modulul de învățare <strong>Creative Scratch Laboratory</strong> va spori creativitatea elevilor, le va stimula curiozitatea și va face programarea să fie plăcută și distractivă.  Acesta constă în trei planuri de lecție, pentru elevi cu diferite abilități de programare. În planul de lecție pentru începători, elevii creează un personaj pe hârtie, îl importă în Scratch și îl animează cu ajutorul blocurilor selectate. Planul de lecție de nivel intermediar îi învață pe elevi să utilizeze instrumentul Video Sprites, să creeze grafică cu ajutorul hârtiei și al markerelor și să realizeze un mozaic Scratch cu Video Sprites, ștampile și opere de artă. În planul de lecție de nivel avansat, elevii explorează funcția de recunoaștere facială din Scratch, experimentează manipularea graficii sprite și creează un miniteatru cu dialoguri generate în Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Desenăm și animăm un sprite: pentru începători",
+                "2" => "Ștampile: pentru elevi de nivel intermediar",
+                "3" => "Teatru de păpuși: pentru elevi de nivel avansat",
+            ]
+        ],
+        "20" => [
+            "title" => "Codul prin artă",
+            "autor" => "de Maria Tsapara",
+            "text" => [
+                "Copiii cresc într-o lume complexă, care se dezvoltă constant din punct de vedere tehnologic, ceea ce necesită abordări educaționale inovatoare pentru educatorii din primii ani de viață. Aceste abordări includ activități care promovează gândirea computațională și programarea de la o vârstă fragedă. Cercetările sugerează că activitățile specifice pot dezvolta în mod eficient gândirea computațională și abilitățile copiilor de rezolvare a problemelor și, în același timp, astfel de activități favorizează exprimarea creativă a acestora prin intermediul tehnologiei.",
+                "Deși cea mai frecventă strategie de predare a programării implică utilizarea roboților educaționali, există și posibilitatea programării fără utilizarea unui kit de robotică (deconectat). Această abordare poate lua diverse forme și include o gamă largă de activități (pixel art, copii în rolul unor roboți, utilizarea unei grile de podea etc.). Aceste activități oferă beneficii de învățare experiențială, în special pentru copiii mici, care învață cel mai bine prin joc. ",
+                "<strong>Codul de învățare a biților prin artă</strong> cuprinde trei planuri de lecție pentru educatorii din primii ani de viață și implementează o activitate deconectată, utilizarea unui robot educațional Bee-bot și a kitului de invenții Makey Makey. Prin utilizarea kitului Makey Makey, elevii au ocazia de a crea interfețe tangibile și de a încerca diferite soluții, de a crea, de a experimenta și de a-și consolida toate abilitățile de învățare într-un mediu de învățare colaborativă.",
+                "Așa cum spunea Pablo Picasso: „Fiecare copil este un artist. Problema este cum să rămână artist după ce crește.” Arta le oferă copiilor oportunități de a-și reprezenta și comunica în mod creativ ideile și sentimentele. În acest Learning Bit veți găsi activități inspirate pentru a cultiva abilitățile socialeale  elevilor dvs. și abilitățile secolului XXI prin artă și codare, pentru a-i încuraja să se exprime în mod creativ și pentru a le stimula imaginația. Learning Bit Code Through Art vă va permite săstimulați elevilor dvs. creativitatea, colaborarea și rezolvarea problemelor prin integrarea artei și a codării."
+            ],
+            "activități" => [
+                "1" => "Artful Coding: copii de grădiniță de 4-6 ani.",
+                "2" => " Creative Code Lab: copii de grădiniță de 4-6 ani",
+                "3" => "Touch Canvas: Crearea de picturi interactive: copii de grădiniță de 4-6 ani,; avansat."
+            ]
+        ],
+        "21" => [
+            "title" => "Realizare și codificare",
+            "author" => "de Ulla Hauptmann",
+            "text" => [
+                "Makerspaces sunt centre vibrante în care creativitatea prosperă și proiectele practice prind viață. Atunci când se selectează echipamente pentru un makerspace, accentul se pune pe instrumente precum Calliope mini, Microbit sau Makey Makey, deoarece acestea oferă o gamă largă de posibilități potrivite pentru elevi de diferite vârste și niveluri de abilități. Aceste plăci sprijină dezvoltarea de proiecte creative pentru copiii mai mici, datorită limbajelor de programare bazate pe blocuri disponibile pentru aceste plăci. Pentru elevii mai mari, pot fi generate proiecte mai complexe cu ajutorul acestor plăci.",
+                "Explorați <strong>Learning Bit Making and Coding</strong> pentru a pătrunde în lumea makerspaces și pentru a promova abilități interdisciplinare, cum ar fi munca în echipă și colaborarea socială, stimulând în același timp inovația și entuziasmul elevilor dumneavoastră!",
+                "Makey Makey este o placă de circuite care transformă obiectele de zi cu zi în taste de calculator. Prin conectarea obiectelor la placă cu ajutorul unor cleme crocodil, care apoi se leagă la computer prin cablu USB (sau la un iPad cu un adaptor pentru cameră), Makey Makey poate deschide și închide circuite electrice între o persoană și un obiect. Astfel, se trimit semnale electrice pe care computerul le primește sub formă de apăsări de tastatură sau clicuri de mouse. Acest lucru le permite elevilor să dezvolte invenții creative, cum ar fi instrumente muzicale, jocuri pe calculator sau postere interactive – posibilitățile sunt infinite! Makey Makey și proiectele prezentate în acest Learning Bit pot fi utilizate atât în școlile primare, cât și în cele secundare, pentru a preda competențe în domenii precum educația media, informatică, științe, fizică, muzică, sport și competențe interdisciplinare, cum ar fi munca în echipă și abilitățile sociale.",
+                "Pășiți în lumea incitantă a Makey Makey și deblocați creativitatea fără limite în clasa dvs.!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey întâlnește muzica: pentru începători.",
+                "2" => "Imagini vorbitoare: pentru elevii de nivel mediu.",
+                "3" => "Creați un poster interactiv: pentru elevii avansați.",
+            ]
+        ]
+        ,
+
 
 
     ],

@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Organiseras av: ',
+    'organised_by' => 'Organiseras av: ',
     'contact_email' => 'E-postadress: ',
     'happening_at' => 'Plats: ',
     'from' => 'från ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Klicka för att e-posta detta till en vän',
         'subject' => 'Titta på det här fantastiska kodningsevenemanget',
         'body_1' => 'Hej, kolla in  ',
-        'body_2' => 'evenemanget på '
+        'body_2' => 'evenemanget på ',
     ],
     'edit' => 'Redigera evenemang',
     'note' => 'OBS: ',
     'pending_warning' => 'Detta evenemang granskas fortfarande av ',
     'pending_link' => 'moderatorerna',
-    'nearby_upcoming_events' => 'Kommande evenemang i närheten:'
+    'nearby_upcoming_events' => 'Kommande evenemang i närheten:',
 ];

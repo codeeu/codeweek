@@ -3,37 +3,25 @@
 namespace App\Imports;
 
 use App\Event;
-use App\Tag;
-use App\User;
-use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
 use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-class DutchSimoneEventsImport extends DefaultValueBinder implements
-    WithCustomValueBinder,
-    ToModel,
-    WithHeadingRow {
-
-    public function parseDate($date){
+class DutchSimoneEventsImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
+{
+    public function parseDate($date)
+    {
         return Date::excelToDateTimeObject($date);
     }
 
-
-    /**
-     * @param array $row
-     *
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
-    public function model(array $row) {
-//        dd($this->parseDate($row['start_date']));
-//        dd($row);
+    public function model(array $row): ?Model
+    {
+        //        dd($this->parseDate($row['start_date']));
+        //        dd($row);
         $event = new Event([
             'status' => 'APPROVED',
             'title' => $row['activity_title'],
@@ -45,20 +33,21 @@ class DutchSimoneEventsImport extends DefaultValueBinder implements
             'location' => $row['address'],
             'event_url' => $row['organiser_website'],
             'user_email' => '',
-            'creator_id' => 219395,
+            'creator_id' => 190341,
             'contact_person' => $row['contact_email'],
             'country_iso' => $row['country'],
             'picture' => $row['image_path'],
             'pub_date' => now(),
             'created' => now(),
             'updated' => now(),
-            'codeweek_for_all_participation_code' => 'cw22-CodeWeekNL',
+            'codeweek_for_all_participation_code' => 'cw23-CodeWeekNL',
             'start_date' => $this->parseDate($row['start_date']),
             'end_date' => $this->parseDate($row['end_date']),
-            'geoposition' => $row['latitude'] . ',' . $row['longitude'],
+            'geoposition' => $row['latitude'].','.$row['longitude'],
             'longitude' => $row['longitude'],
             'latitude' => $row['latitude'],
-            'language' => strtolower($row['language'])
+            'language' => strtolower($row['language']),
+            'mass_added_for' => 'Excel',
         ]);
 
         $event->save();
@@ -75,6 +64,7 @@ class DutchSimoneEventsImport extends DefaultValueBinder implements
         }
 
         Log::info($event->slug);
+
         return $event;
     }
 }

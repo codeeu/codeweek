@@ -1,19 +1,18 @@
 <?php
 
-
 return [
 
     'title' => 'Guide',
-    'organise_activity' => 'Organise Your Own Activity with #CodeWeek',
+    'organise_activity' => 'Organise Your Own Activity with #EUCodeWeek',
     'register_activity' => 'Register your activity here',
     'what' => [
         'title' => 'What is EU Code Week?',
         'content' => '<p>
                     EU Code Week is a grass-roots movement run by volunteers and supported by the European Commission.
                     Anyone – schools, teachers, libraries, code clubs, businesses, public authorities – can organise a
-                    #CodeWeek activity and add it to the <a href="/events">codeweek.eu</a> map.
+                    #EUCodeWeek activity and add it to the <a href="/events">codeweek.eu</a> map.
 
-                </p>'
+                </p>',
     ],
     'what_you_need_organise' => [
         'title' => 'What do you need in order to organise an activity?',
@@ -40,8 +39,8 @@ return [
             '7' => '<strong>Register participants.</strong> If you have limited space available, you can use online
                         tools such as <a href="https://docs.google.com/forms/">Google forms</a> and <a
                                 href="https://www.eventbrite.com/">Eventbrite</a> to register participants.',
-            '8' => 'Remember to <a href="/add">pin your activity</a> on the <a href="/events">Code Week map</a>!'
-        ]
+            '8' => 'Remember to <a href="/add">pin your activity</a> on the <a href="/events">Code Week map</a>!',
+        ],
     ],
     'how_to' => [
         'title' => 'How to organise your activity?',
@@ -56,14 +55,14 @@ return [
                         at the end of your activity.',
             '4' => '<strong>Spread the news!</strong> Promote and share what you did during your activity on social
                         media by using
-                        the #CodeWeek hashtag. You can also share on the <a
+                        the #EUCodeWeek hashtag. You can also share on the <a
                                 href="https://www.facebook.com/groups/774720866253044/">EU Code Week Teacher’s group</a>
                         and on Twitter
                         (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Talk to your friends, fellow
                         educators, the local press, and make a press
                         release.',
-            '5' => 'Don\'t forget to <a href="/add">add your activity</a> on the <a href="/events">Code Week map</a>!'
-        ]
+            '5' => 'Don\'t forget to <a href="/add">add your activity</a> on the <a href="/events">Code Week map</a>!',
+        ],
     ],
     'material' => [
         'title' => 'Promotional material',
@@ -72,16 +71,16 @@ return [
         'items' => [
             '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
             '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a> (available in 29 languages)',
-        ]
+        ],
     ],
     'toolkits' => [
         'title' => 'Download the following toolkits to help you get started:',
         'communication_toolkit' => 'Communications Toolkit',
-        'teachers_toolkit' => 'Teachers Toolkit'
+        'teachers_toolkit' => 'Teachers Toolkit',
     ],
     'questions' => [
         'title' => 'Questions?',
-        'content' => '<p>If you have questions about organising and promoting your #CodeWeek activity, get in touch with one of the <a href="/ambassadors">EU Code Week Ambassadors</a> from your country.</p>'
-    ]
+        'content' => '<p>If you have questions about organising and promoting your #EUCodeWeek activity, get in touch with one of the <a href="/ambassadors">EU Code Week Ambassadors</a> from your country.</p>',
+    ],
 
 ];

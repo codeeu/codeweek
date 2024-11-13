@@ -3,12 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Event;
-use App\Helpers\MeetAndCodeHelper;
-use App\Location;
-use App\User;
-use Carbon\Carbon;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
 
 class LocationExtraction extends Command
 {
@@ -27,20 +22,17 @@ class LocationExtraction extends Command
     protected $description = 'Extract locations from events and fill the locations table';
 
     private $step = 1000;
+
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
 
-
-        Event::
-            whereNull('deleted_at')->
+        Event::whereNull('deleted_at')->
 //            where('id','=',163373)->
 //        where('creator_id',153701)->
-        where('status', "=", "APPROVED")->
+        where('status', '=', 'APPROVED')->
         whereNull('location_id')->chunkById($this->step, function ($events, $index) {
 
             $this->reportProgress($index);
@@ -53,10 +45,6 @@ class LocationExtraction extends Command
 
     }
 
-
-    /**
-     * @param $index
-     */
     protected function reportProgress($index): void
     {
         $from = ($index - 1) * $this->step;

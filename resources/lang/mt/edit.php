@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Editja l-avveniment tiegħek ta’ #CodeWeek',
+    'title' => 'Editja l-avveniment tiegħek ta’ #EUCodeWeek',
     'required_fields' => 'L-oqsma meħtieġa huma mmarkati b’*asterisk. Ħossok liberu/a li żżid l-elenkar tal-avveniment tiegħek bil-lingwa lokali tiegħek.',
     'description' => 'Deskrizzjoni',
     'audience' => 'Udjenza',
@@ -29,12 +29,12 @@ return [
         'header' => 'Informazzjoni ta’ kuntatt tiegħek',
         'text_1' => 'Din l-informazzjoni ser tkun viżibbli biss għall- ',
         'link_1' => 'Ambaxxaturi tal-Ġimgħa tal-Kodiċi tal-UE',
-        'text_2'=> ' u għall-organizzaturi tal-Ġimgħa 
+        'text_2' => ' u għall-organizzaturi tal-Ġimgħa 
         tal-Kodiċi, li
         sejrin jiċċekkjaw l-avveniment tiegħek qabel jidher fuq il-mappa u jistgħu jikkuntattjawk jekk ikun hemm bżonn ta 
         xi tibdil jew
         għat-twettiq ta’ stħarriġ għal għanijiet statistiċi wara l-avveniment.',
-        'contact_email' => 'L-email ta’ kuntatt tiegħek'
-    ], 
-    'edit' => 'Editja avveniment'
+        'contact_email' => 'L-email ta’ kuntatt tiegħek',
+    ],
+    'edit' => 'Editja avveniment',
 ];

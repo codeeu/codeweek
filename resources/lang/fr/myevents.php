@@ -12,18 +12,18 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'Tous les événements créés par ',
-    'no_events'=>[
+    'created_by' => 'Tous les événements créés par ',
+    'no_events' => [
         'first_call_to_action' => 'Vous n’avez pas encore ajouté d’événement. Pourquoi ne pas vous lancer',
         'first_link' => 'ajoutez-en un maintenant',
         'second_call_to_action' => 'ou consultez notre ',
-        'second_link' => 'guide pour les organisateurs'
+        'second_link' => 'guide pour les organisateurs',
     ],
-    'view'=>'Détails',
-    'status'=>[
-        'APPROVED'=>'APPROUVÉ',
-        'REJECTED'=>'REJETÉ',
-        'PENDING'=>'EN ATTENTE',
-        'REPORTED' => 'SIGNALÉ'
-    ]
+    'view' => 'Détails',
+    'status' => [
+        'APPROVED' => 'APPROUVÉ',
+        'REJECTED' => 'REJETÉ',
+        'PENDING' => 'EN ATTENTE',
+        'REPORTED' => 'SIGNALÉ',
+    ],
 ];

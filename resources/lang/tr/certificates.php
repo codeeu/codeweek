@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Sertifikalar ',
-    'no_certificates' => 'Herhangi bir sertifika mevcut değildir.'
+    'no_certificates' => 'Herhangi bir sertifika mevcut değildir.',
 ];

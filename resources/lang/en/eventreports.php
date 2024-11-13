@@ -16,5 +16,5 @@ return [
     'no_reports' => 'There are no activities to be reported yet.',
     'report' => 'The activities listed below have started or already finished. Fill in a few numbers for
     statistical purposes for the activity and claim your Code Week participation certificate. You
-    will get one certificate per activity.'
+    will get one certificate per activity.',
 ];

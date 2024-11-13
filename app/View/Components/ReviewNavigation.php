@@ -2,15 +2,16 @@
 
 namespace App\View\Components;
 
-use App\Event;
-use App\Helpers\EventHelper;
 use Illuminate\View\Component;
 
 class ReviewNavigation extends Component
 {
     public $event;
+
     public $events;
+
     public $pendingEventsCount;
+
     public $nextPendingEvent;
 
     /**

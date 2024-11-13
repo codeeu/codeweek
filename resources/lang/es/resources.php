@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => '¿Cómo organizar una actividad?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Ruso',
-            'Norwegian'=>'Noruego',
-            'Mandarin'=>'Mandarín',
-            'Japanese'=>'Japonés',
-            'All targeted languages' => 'Todos los idiomas seleccionados'
+            'Russian' => 'Ruso',
+            'Norwegian' => 'Noruego',
+            'Mandarin' => 'Mandarín',
+            'Japanese' => 'Japonés',
+            'All targeted languages' => 'Todos los idiomas seleccionados',
         ],
         'levels' => [
             'Beginner' => 'Principiante',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Primer ciclo de educación secundaria (12-16)',
             'Upper secondary school (16-18)' => 'Segundo ciclo de educación secundaria (16-18)',
             'Higher Education' => 'Educación superior',
-            'Other' => 'Otro'
+            'Other' => 'Otro',
         ],
         'subjects' => [
             'Art' => 'Arte',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Física',
             'Coding' => 'Codificación',
             'Special Education Needs' => 'Necesidades educativas especiales',
-            'Other' => 'Otro'
+            'Other' => 'Otro',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Paquete de herramientas',
             'Other' => 'Otro',
             'Lesson Plan' => 'Planes formativos',
-            'Guide' => 'Guía'
+            'Guide' => 'Guía',
         ],
         'categories' => [
             'Coding' => 'Codificación',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Hacer',
             'Tinkering' => '«Tinkering»',
             'Unplugged Activities' => 'Actividades sin conexión',
-            'Other' => 'Otro'
-        ]
-    ]
+            'Other' => 'Otro',
+        ],
+    ],
 
 ];

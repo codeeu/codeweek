@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor und App-Entwicklung',
-            'author'=>'von Rosanna Kurrervon Rosanna Kurrer',
-            'text'=>'<p>Schauen Sie sich dieses Video an, in dem Rosanna Kurrer (die Gründerin von CyberWayFinder) erklärt, was App Inventor ist, welche Vorteile die App-Entwicklung im Klassenzimmer bietet und in dem sie einige praktische Beispiele gibt, wie Lehrpersonen den App Inventor in den Unterricht integrieren können, um passive Schülerinnen und Schüler in begeisterte Spielemacher zu verwandeln.</p>
+            'title' => 'App Inventor und App-Entwicklung',
+            'author' => 'von Rosanna Kurrervon Rosanna Kurrer',
+            'text' => '<p>Schauen Sie sich dieses Video an, in dem Rosanna Kurrer (die Gründerin von CyberWayFinder) erklärt, was App Inventor ist, welche Vorteile die App-Entwicklung im Klassenzimmer bietet und in dem sie einige praktische Beispiele gibt, wie Lehrpersonen den App Inventor in den Unterricht integrieren können, um passive Schülerinnen und Schüler in begeisterte Spielemacher zu verwandeln.</p>
     <p>Jeder von uns verwendet Apps, da wir so unsere Aktivitäten bequem und schnell koordinieren können. Sie werden auch immer häufiger im Bildungssektor eingesetzt, da sie einen individuell zugeschnittenen Unterricht ermöglichen und es den Nutzern erlauben, Informationen zu erfassen. Warum sollte man seine Schülerinnen und Schüler also nicht in die Lage versetzen, selbst eine App für Bildungszwecke für andere zu entwickeln?</p>',
-            'activities'=>[
-                '1'=>'Aktivität 1 - Titel, für die Grundschule',
-                '2'=>'Aktivität 2 - Titel, für die Sekundarstufe I',
-                '3'=>'Aktivität 3 - Titel, für die Sekundarstufe II'
+            'activities' => [
+                '1' => 'Aktivität 1 - Titel, für die Grundschule',
+                '2' => 'Aktivität 2 - Titel, für die Sekundarstufe I',
+                '3' => 'Aktivität 3 - Titel, für die Sekundarstufe II'
             ]
         ],
         '7' => [
-            'title'=>'Basteln und Bauen',
-            'author'=>'von Diogo da Silva',
-            'text'=>'<p>Berufe und Arbeitsplätze befinden sich im Wandel und auch der Bildungsbereich ändert sich entsprechend. Bei der Vorbereitung der Schülerinnen und Schüler auf ihre berufliche Laufbahn im 21. Jahrhundert werden neue Fähigkeiten wie Tüfteln und Bauen aber auch das Hacking immer wichtiger, da sie die Kluft zwischen der Schule und der Welt draußen verringern. Durch die Verwandlung eines Klassenzimmers in einen Raum der Zusammenarbeit, in dem man sich auf die Problemlösung konzentriert, werden die Schüler und Schülerinnen in die Lage versetzt, sich selbst einzubringen und sich weiterzuentwickeln. Solche Aktivitäten regen die Diskussion an und sorgen dafür, dass das Klassenzimmer zu einem Kommunikationshub wird, in dem jeder Beitrag zählt.</p> 
+            'title' => 'Basteln und Bauen',
+            'author' => 'von Diogo da Silva',
+            'text' => '<p>Berufe und Arbeitsplätze befinden sich im Wandel und auch der Bildungsbereich ändert sich entsprechend. Bei der Vorbereitung der Schülerinnen und Schüler auf ihre berufliche Laufbahn im 21. Jahrhundert werden neue Fähigkeiten wie Tüfteln und Bauen aber auch das Hacking immer wichtiger, da sie die Kluft zwischen der Schule und der Welt draußen verringern. Durch die Verwandlung eines Klassenzimmers in einen Raum der Zusammenarbeit, in dem man sich auf die Problemlösung konzentriert, werden die Schüler und Schülerinnen in die Lage versetzt, sich selbst einzubringen und sich weiterzuentwickeln. Solche Aktivitäten regen die Diskussion an und sorgen dafür, dass das Klassenzimmer zu einem Kommunikationshub wird, in dem jeder Beitrag zählt.</p> 
     <p>Sehen Sie sich das Video unten an, in dem der portugiesische STEAM-Lehrer Diogo da Silva, ein Mitglied der Escola Global, Sie Schritt für Schritt durch die Entwicklung einer Unterrichtseinheit führt, in der Ihre SuS tüfteln, etwas bauen und hacken müssen, um eine Lösung zu finden.</p>',
-            'activities'=>[
-                '1'=>'Aktivität 1 - Titel, für die Grundschule',
-                '2'=>'Aktivität 2 - Titel, für die Sekundarstufe I',
-                '3'=>'Aktivität 3 - Titel, für die Sekundarstufe II'
+            'activities' => [
+                '1' => 'Aktivität 1 - Titel, für die Grundschule',
+                '2' => 'Aktivität 2 - Titel, für die Sekundarstufe I',
+                '3' => 'Aktivität 3 - Titel, für die Sekundarstufe II'
             ]
         ],
         '8' => [
-            'title'=>'Programmieren für alle Fächer',
-            'author'=>'Von M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Wenn man an Programmieren im Unterricht denkt, kommen einem zunächst Computer, Technologie, Mathematik oder Naturwissenschaften in den Sinn. Warum sollte man es sich aber nicht zunutze machen, dass Schülerinnen und Schüler ganz unterschiedliche Interessen und Fächer haben, und folglich das Programmieren im gesamten Lehrplan umsetzen?</p> 
+            'title' => 'Programmieren für alle Fächer',
+            'author' => 'Von M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Wenn man an Programmieren im Unterricht denkt, kommen einem zunächst Computer, Technologie, Mathematik oder Naturwissenschaften in den Sinn. Warum sollte man es sich aber nicht zunutze machen, dass Schülerinnen und Schüler ganz unterschiedliche Interessen und Fächer haben, und folglich das Programmieren im gesamten Lehrplan umsetzen?</p> 
     <p>Die Einbeziehung des Programmierens im Klassenzimmer hat viele Vorteile, da sie den Schülerinnen und Schülern hilft, ihr kritisches Denken und ihre Problemlösungsfähigkeiten zu entwickeln, aktive Nutzer zu werden und ihren eigenen Lernprozess zu steuern, was in Schulen unerlässlich ist. Das Wichtigste ist jedoch, dass Ihre Schülerinnen und Schüler Spaß am Lernen haben.</p>
     <p>Sprachen, Musik oder MINT sind nur einige der Fächer, in denen Lehrkräfte das Programmieren für angehende Wissenschaftler, Musiker, Künstler, aber auch für alle anderen in den Unterricht einbinden können! Jede Lehrkraft kann Programmieren und rechnergestütztes Denken in den Unterricht integrieren. Die Verwendung einer CLIL-Stunde zur Erklärung eines Alltagsalgorithmus, das Herstellen eines Filz-Joysticks, um naturwissenschaftliche Kenntnisse zu vertiefen oder das Nutzen eines Bildungsroboters zur Motivationssteigerung im Mathematikunterricht sind nur einige Beispiele von Unterrichtseinheiten, die Sie in Ihrem Unterricht durchführen können.</p> 
     <p>Schauen Sie sich das Video unten an, um zu sehen, wie Lehrkräfte im Musik-, naturwissenschaftlichen oder Sprachunterricht auf einfache Weise das Programmieren und das informatische Denken in den Unterricht integrieren können, selbst wenn Sie keine einschlägige Erfahrung damit haben.</p>',
-            'activities'=>[
-                '1'=>'Aktivität 1 Robotik und Inklusion in der Grundschule in MINT-Fächern',
-                '2'=>'Aktivität 2 Musik bedeutet Programmieren',
-                '3'=>'Aktivität 3 Basteln und Programmieren mit Makey Makey',
-                '4'=>'Aktivität 4 Ein Alltagsalgorithmus für eine CLIL-Stunde'
+            'activities' => [
+                '1' => 'Aktivität 1 Robotik und Inklusion in der Grundschule in MINT-Fächern',
+                '2' => 'Aktivität 2 Musik bedeutet Programmieren',
+                '3' => 'Aktivität 3 Basteln und Programmieren mit Makey Makey',
+                '4' => 'Aktivität 4 Ein Alltagsalgorithmus für eine CLIL-Stunde'
             ]
         ],
         '9' => [
-            'title'=>'Basteln eines Automaten mit einem micro:bit',
-            'author'=>'von Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Basteln eines Automaten mit einem micro:bit',
+            'author' => 'von Pauline Maas',
+            'text' => '<p>
                    Als leicht programmierbarer, taschengroßer Computer bietet der micro:bit eine unterhaltsame und unkomplizierte Möglichkeit, um mit Schülerinnen und Schülern interessante Dinge vom Roboter bis zum Musikinstrument zu entwickeln und ihnen dabei zugleich Grundkenntnisse im Programmieren zu vermitteln. Er ist auch für die jüngsten Nachwuchsprogrammierer einfach und unkompliziert zu benutzen, zugleich aber so leistungsstark, dass er sich auch für fortgeschrittenere Schülerinnen und Schüler eignet. Sie können ihn in den verschiedensten Unterrichtsstunden verwenden – von Geschichte über Mathematik bis zu den wissenschaftlichen Fächern. Ihren Ideen sind keine Grenzen gesetzt. Mit dem micro:bit können Sie Ihren Schülerinnen und Schülern auf interessante und kostengünstige Weise mehr über das Thema Programmieren beibringen und dabei wichtige Fähigkeiten wie rechnerisches Denken, Problemlösung und Kreativität fördern.
                    </p>
                    <p>
                    In diesem Video wird Ihnen Pauline Maas, Informatiklehrerin bei Koninklijke Visio, den micro:bit vorstellen und an einigen Anwendungsbeispielen aus der Praxis zeigen, wie Lehrkräfte den micro:bit in den Unterricht integrieren und damit passive Schülerinnen und Schüler für die aktive Mitarbeit begeistern können.
                 </p>',
-            'activities'=>[
-                '1'=>'Morsecode mit dem micro:bit, für die Grundschule',
-                '2'=>'Escape Room mit dem micro:bit, für die Unterstufe einer weiterführenden Schule',
-                '3'=>'Basteln eines Automaten, für die Oberstufe einer weiterführenden Schule',
+            'activities' => [
+                '1' => 'Morsecode mit dem micro:bit, für die Grundschule',
+                '2' => 'Escape Room mit dem micro:bit, für die Unterstufe einer weiterführenden Schule',
+                '3' => 'Basteln eines Automaten, für die Oberstufe einer weiterführenden Schule',
             ]
         ],
         '10' => [
-            'title'=>'Kreatives Programmieren mit Python',
-            'author'=>'von Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kreatives Programmieren mit Python',
+            'author' => 'von Ivana Vezjak',
+            'text' => '<p>
 Beim Schreiben von Codes geht man früher oder später ganz automatisch vom visuellen zum textbasierten Programmieren über. Visuelles Programmieren kann für Neulinge zwar eine tolle Sache sein, doch nach einer gewissen Zeit könnten sich Ihre Schülerinnen und Schüler vielleicht eine neue Herausforderung wünschen. Das textbasierte Programmieren wäre dann der nächste Schritt für Lernbegierige, die sich noch eingehender mit Programmierung und rechnerischem Denken befassen möchten. 
                    </p>
                    <p>                   
@@ -150,91 +150,91 @@ Beim Schreiben von Codes geht man früher oder später ganz automatisch vom visu
 <p> 
 Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historischen Ereignissen erstellen, mathematische Probleme lösen und Physik-Simulationen erstellen, Spiele entwickeln, Websites erstellen, Datenanalysen für wissenschaftliche Projekte durchführen. Python verfügt über eine große und umfassende Standardbibliothek, eine große Gemeinschaft sowie zahlreiche online verfügbare Tutorials und Projekte, die zum Unterrichten, Lernen und Üben verwendet werden können. Durch das Programmieren in Python, das Analysieren von Programmen und die Behebung von Fehlern entwickeln die Schülerinnen und Schüler ihre Kreativität und lernen, wie man seine Arbeit mit Konstanz, Durchhaltevermögen und Geduld erledigt. Sie lernen analytisches Denken und erwerben Problemlösungsfähigkeiten, da sie komplexe Probleme in kleinere Teile zerlegen müssen. Diese Kompetenzen werden ihnen auch in allen anderen Bereichen ihres Lebens beim Umgang mit Problemen nützlich sein.
                 </p>',
-            'activities'=>[
-                '1'=>'"Mein erstes Quiz", für die Grundschule',
-                '2'=>'"Galgenmännchen", für die Unterstufe einer weiterführenden Schule',
-                '3'=>'Flaggenraten, für die Oberstufe einer weiterführenden Schule',
+            'activities' => [
+                '1' => '"Mein erstes Quiz", für die Grundschule',
+                '2' => '"Galgenmännchen", für die Unterstufe einer weiterführenden Schule',
+                '3' => 'Flaggenraten, für die Oberstufe einer weiterführenden Schule',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Weitere relevante Quellen',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"•	Python-Standardbibliothek",
-                    "description"=>"Eine Sammlung bereits vorprogrammierter Codes und Module (z. B. Turtle-Modul, Mathematik-Modul usw.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "•	Python-Standardbibliothek",
+                    "description" => "Eine Sammlung bereits vorprogrammierter Codes und Module (z. B. Turtle-Modul, Mathematik-Modul usw.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Pädagogisches Videospiel zum Erlernen von Programmierungskonzepten",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Pädagogisches Videospiel zum Erlernen von Programmierungskonzepten",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/de-DE/codeclub",
-                    "title"=>"CodeClub-Projekte",
-                    "description"=>"Programmierprojekte für Kinder mit und ohne Vorkenntnisse.",
+                    "url" => "https://projects.raspberrypi.org/de-DE/codeclub",
+                    "title" => "CodeClub-Projekte",
+                    "description" => "Programmierprojekte für Kinder mit und ohne Vorkenntnisse.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Mit Python eigene Computerspiele erfinden",
-                    "description"=>"Ein Buch, das Ihnen beibringt, wie man mit Python eigene Computerspiele programmieren kann.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Mit Python eigene Computerspiele erfinden",
+                    "description" => "Ein Buch, das Ihnen beibringt, wie man mit Python eigene Computerspiele programmieren kann.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Eine Bildungsgemeinschaft, die Schülerinnen, Schülern und Lehrkräften die Möglichkeit gibt, ihre Programmierfähigkeiten durch verschiedene Aufgaben zu üben.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Eine Bildungsgemeinschaft, die Schülerinnen, Schülern und Lehrkräften die Möglichkeit gibt, ihre Programmierfähigkeiten durch verschiedene Aufgaben zu üben.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Eine Sammlung verschiedener (text- und blockbasierter) Einführungskurse in Python, die interaktive Trinkets verwenden.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Eine Sammlung verschiedener (text- und blockbasierter) Einführungskurse in Python, die interaktive Trinkets verwenden.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programmieren für eine bessere Inklusion',
-            'author'=>'vom Code Week-Team',
-            'text'=>'<p>
+            'title' => 'Programmieren für eine bessere Inklusion',
+            'author' => 'vom Code Week-Team',
+            'text' => '<p>
                    Programmiertätigkeiten in den eigenen Unterricht einzubauen, kann anspruchsvoll sein, insbesondere, wenn Sie Schülerinnen und Schüler mit bestimmten Behinderungen in Ihrer Klasse haben. Es ist aber wichtig, sich in Erinnerung zu rufen, dass jeder Mensch programmieren lernen kann, unabhängig von seinen Fähigkeiten. Kinder mit besonderen pädagogischen Bedürfnissen können stark von Lernaspekten des Programmierens profitieren, denn es vermittelt ihnen wichtige Lebenskompetenzen wie Problemlösefähigkeiten, Organisation und Unabhängigkeit. Durch Zusammenarbeit und Teamwork beim Programmieren können zudem zwischenmenschliche und soziale Fähigkeiten verbessert werden, die vielen Kindern mit Behinderungen schwerfallen. Was aber besonders wichtig ist: Sie haben Freude beim gemeinsamen Lernen mit ihren Altersgenossen.
                    </p><p>
                    In diesem Video zeigt Ihnen das Code Week-Team einige praktische, einfache und unterhaltsame Programmiertätigkeiten, die speziell für Schülerinnen und Schüler mit Sehbehinderungen, Trisomie 21 und Autismus-Spektrum-Störungen angepasst wurden und die Lehrkräfte ganz einfach in ihren Unterricht einbauen können.
                 </p>',
-            'activities'=>[
-                '1'=>'Analoger Eierkarton',
-                '2'=>'Eine sehr schlaue Maus',
-                '3'=>'Ein Star stellt Sterne her',
+            'activities' => [
+                '1' => 'Analoger Eierkarton',
+                '2' => 'Eine sehr schlaue Maus',
+                '3' => 'Ein Star stellt Sterne her',
             ]
         ],
         "12" => [
             "title" => "Programmieren für die UN-Nachhaltigkeitsziele",
-    "author" => "von Francisco Javier Masero, Cristina Nicolaita und Erviola Konomi",
-    "text" => [
-    "1" => "Traditionelle Bildungsstrukturen bieten den Schülern nur wenige Möglichkeiten, tatsächlich bestehende Probleme wie den globalen Klimawandel, Geschlechtergleichheit, Hunger, Armut oder Gesundheit und Wohlergehen zu verstehen und diese zu lösen.",
-        "2" => "Die Nachhaltigkeitsziele (Englisch: Sustainable Development Goals, kurz SDGs) sind das Herzstück der Agenda 2030 für nachhaltige Entwicklung, die alle Mitgliedstaaten der Vereinten Nationen (Englisch: United Nations, kurz UN) verabschiedet haben. Die Agenda ist ein Fahrplan für Frieden und Wohlstand auf der ganzen Welt und befördert die globale Entwicklung. Lehrer können die SDGs nutzen, um das kritische Denken ihrer Schüler zu unterstützen, aber auch, um ihnen dabei zu helfen, ihre Identität und ihren Lebenssinn zu finden. Grundlegende Elemente des Programmierens und des rechnergestützten Denkens mit den Nachhaltigkeitszielen zu kombinieren, wird das Selbstbewusstsein Ihrer Schüler erheblich verbessern und Sie werden ihnen dabei helfen, Kreativität, einen unternehmerischen Geist sowie problemlösende und kommunikative Fähigkeiten zu entwickeln.",
-        "3" => "Bei den unten aufgeführten Aktivitäten werden die Schüler mit Scratch programmieren, nach ASCII kodieren und ganz ohne Computer arbeiten, und zwar zu Themen von aktueller globaler und sozialer Relevanz. Lehrer werden das Bewusstsein zu den UN-Nachhaltigkeitszielen schärfen und ihren Schülern dabei helfen, Empathie, aktive Bürgerschaft sowie prosoziale Fähigkeiten zu entwickeln – auf eine lustige und einnehmende Art und Weise.",
-        "4" => "Die Unterrichtspläne konzentrieren sich auf je eins der SDGs:",
-        "5" => "SDG 3: Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern",
-        "6" => "SDG 5: Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen",
-        "7" => "SDG 13: Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen"
-    ],
-    "activities" => [
-    "1" => "Karateka-Projekt: Karate durch Programmieren kennenlernen – für die Grundschule, Sekundarstufe I und Sekundarstufe II",
-        "2" => "UN-Nachhaltigkeitsziele und Programmieren für den Klimawandel – für die Grundschule",
-        "3" => "Programmieren für Geschlechtergleichheit – für die Sekundarstufe II"
-    ]
-],
+            "author" => "von Francisco Javier Masero, Cristina Nicolaita und Erviola Konomi",
+            "text" => [
+                "1" => "Traditionelle Bildungsstrukturen bieten den Schülern nur wenige Möglichkeiten, tatsächlich bestehende Probleme wie den globalen Klimawandel, Geschlechtergleichheit, Hunger, Armut oder Gesundheit und Wohlergehen zu verstehen und diese zu lösen.",
+                "2" => "Die Nachhaltigkeitsziele (Englisch: Sustainable Development Goals, kurz SDGs) sind das Herzstück der Agenda 2030 für nachhaltige Entwicklung, die alle Mitgliedstaaten der Vereinten Nationen (Englisch: United Nations, kurz UN) verabschiedet haben. Die Agenda ist ein Fahrplan für Frieden und Wohlstand auf der ganzen Welt und befördert die globale Entwicklung. Lehrer können die SDGs nutzen, um das kritische Denken ihrer Schüler zu unterstützen, aber auch, um ihnen dabei zu helfen, ihre Identität und ihren Lebenssinn zu finden. Grundlegende Elemente des Programmierens und des rechnergestützten Denkens mit den Nachhaltigkeitszielen zu kombinieren, wird das Selbstbewusstsein Ihrer Schüler erheblich verbessern und Sie werden ihnen dabei helfen, Kreativität, einen unternehmerischen Geist sowie problemlösende und kommunikative Fähigkeiten zu entwickeln.",
+                "3" => "Bei den unten aufgeführten Aktivitäten werden die Schüler mit Scratch programmieren, nach ASCII kodieren und ganz ohne Computer arbeiten, und zwar zu Themen von aktueller globaler und sozialer Relevanz. Lehrer werden das Bewusstsein zu den UN-Nachhaltigkeitszielen schärfen und ihren Schülern dabei helfen, Empathie, aktive Bürgerschaft sowie prosoziale Fähigkeiten zu entwickeln – auf eine lustige und einnehmende Art und Weise.",
+                "4" => "Die Unterrichtspläne konzentrieren sich auf je eins der SDGs:",
+                "5" => "SDG 3: Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern",
+                "6" => "SDG 5: Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen",
+                "7" => "SDG 13: Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen"
+            ],
+            "activities" => [
+                "1" => "Karateka-Projekt: Karate durch Programmieren kennenlernen – für die Grundschule, Sekundarstufe I und Sekundarstufe II",
+                "2" => "UN-Nachhaltigkeitsziele und Programmieren für den Klimawandel – für die Grundschule",
+                "3" => "Programmieren für Geschlechtergleichheit – für die Sekundarstufe II"
+            ]
+        ],
 
-    "13" => [
-    "title" => "Künstliche Intelligenz im Klassenzimmer: eine Einführung",
-    "author" => "von Artur Coelho und Marjana Prifti Skenduli",
-    "text" => [
-        "1" => "In unserem Alltag hat die Künstliche Intelligenz (KI) schon in viele Bereiche Einzug gehalten: Sie korrigiert automatisch die Nachrichten, die Sie auf Ihrem Smartphone verfassen, wählt die Musik aus, die Sie in Ihrer Lieblings-Musik-App hören und erinnert sich an Ihre Passwörter, wenn Sie diese vergessen haben. KI ist eine Kombination aus Maschinellem Lernen, Robotik und Algorithmen und wird in sämtlichen Bereichen angewendet: von der Informatik bis hin zur Fertigung, von der Medizin bis hin zur Mode. Somit ist KI schon jetzt nicht mehr aus unserem Leben und unseren Gesellschaften wegzudenken. Außerdem spielt sie eine entscheidende Rolle in der wissenschaftlichen Entwicklung. Wie bei jedem anderen wichtigen Phänomen unserer Zeit profitieren die Schüler davon, mehr darüber zu erfahren. Doch wie kann man ein so komplexes Thema wie KI vermitteln?",
-        "2" => "Dieses Lernhäppchen hilft Ihnen dabei, Ihren Schülern zu erklären, was KI ist und welche Rolle sie in ihrem Leben spielt. Die Aktivitäten wurden für Laien entworfen, damit diese die Inhalte leicht verstehen sowie die komplexen Begriffe wirkungsvoll zu verständlichen Ideen herunterbrechen können. Mit diesen Unterrichtsplänen können Sie Ihren Schülern dabei helfen, die Anwendungsmöglichkeiten von KI sowie einige der zugrunde liegenden Mechanismen zu begreifen. Dabei sind die Aktivitäten so gestaltet, dass das analytische und kritische Denken weiterentwickelt wird; beispielsweise entwerfen die Schüler in der von Marjana Prifti Skenduli entwickelten Aktivität eine Klassifikationspipeline. Darüber hinaus helfen die Aktivitäten den Schülern dabei, die unterschiedlichen Anwendungsmöglichkeiten von KI zu verstehen; bei der Aktivität von Artur Coelho lernen sie die Verbindung zwischen KI und Kunst kennen und wie KI für die Verbesserung des visuelle Ausdrucks genutzt werden kann. Die Schüler werden in diesen Aktivitäten aber auch über die Gefahren der KI sowie deren potenziellen Auswirkungen reflektieren."
-    ],
-    "activities" => [
-        "1" => "Menschliche und KI-Künstler, für die Grundschule",
-        "2" => "Maschinen das Klassifizieren beibringen: Einführung in das Überwachte Maschinelle Lernen, für die Sekundarstufe I ",
-        "3" => "Maschinen das Klassifizieren beibringen: Einführung in das Überwachte Maschinelle Lernen, für die Sekundarstufe II ",
-    ]
-],
+        "13" => [
+            "title" => "Künstliche Intelligenz im Klassenzimmer: eine Einführung",
+            "author" => "von Artur Coelho und Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "In unserem Alltag hat die Künstliche Intelligenz (KI) schon in viele Bereiche Einzug gehalten: Sie korrigiert automatisch die Nachrichten, die Sie auf Ihrem Smartphone verfassen, wählt die Musik aus, die Sie in Ihrer Lieblings-Musik-App hören und erinnert sich an Ihre Passwörter, wenn Sie diese vergessen haben. KI ist eine Kombination aus Maschinellem Lernen, Robotik und Algorithmen und wird in sämtlichen Bereichen angewendet: von der Informatik bis hin zur Fertigung, von der Medizin bis hin zur Mode. Somit ist KI schon jetzt nicht mehr aus unserem Leben und unseren Gesellschaften wegzudenken. Außerdem spielt sie eine entscheidende Rolle in der wissenschaftlichen Entwicklung. Wie bei jedem anderen wichtigen Phänomen unserer Zeit profitieren die Schüler davon, mehr darüber zu erfahren. Doch wie kann man ein so komplexes Thema wie KI vermitteln?",
+                "2" => "Dieses Lernhäppchen hilft Ihnen dabei, Ihren Schülern zu erklären, was KI ist und welche Rolle sie in ihrem Leben spielt. Die Aktivitäten wurden für Laien entworfen, damit diese die Inhalte leicht verstehen sowie die komplexen Begriffe wirkungsvoll zu verständlichen Ideen herunterbrechen können. Mit diesen Unterrichtsplänen können Sie Ihren Schülern dabei helfen, die Anwendungsmöglichkeiten von KI sowie einige der zugrunde liegenden Mechanismen zu begreifen. Dabei sind die Aktivitäten so gestaltet, dass das analytische und kritische Denken weiterentwickelt wird; beispielsweise entwerfen die Schüler in der von Marjana Prifti Skenduli entwickelten Aktivität eine Klassifikationspipeline. Darüber hinaus helfen die Aktivitäten den Schülern dabei, die unterschiedlichen Anwendungsmöglichkeiten von KI zu verstehen; bei der Aktivität von Artur Coelho lernen sie die Verbindung zwischen KI und Kunst kennen und wie KI für die Verbesserung des visuelle Ausdrucks genutzt werden kann. Die Schüler werden in diesen Aktivitäten aber auch über die Gefahren der KI sowie deren potenziellen Auswirkungen reflektieren."
+            ],
+            "activities" => [
+                "1" => "Menschliche und KI-Künstler, für die Grundschule",
+                "2" => "Maschinen das Klassifizieren beibringen: Einführung in das Überwachte Maschinelle Lernen, für die Sekundarstufe I ",
+                "3" => "Maschinen das Klassifizieren beibringen: Einführung in das Überwachte Maschinelle Lernen, für die Sekundarstufe II ",
+            ]
+        ],
 
         '14' => [
             'title' => 'Lernen im Zeitalter der intelligenten Maschinen',
@@ -247,7 +247,7 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
                 'title' => 'In den folgenden Unterrichtseinheiten lernen die Schüler auf unterhaltsame und spannende Weise mehr über intelligente Maschinen.',
                 '1' => 'KI und ihre neuronalen Netze, für die Grundschule',
                 '2' => 'Mein Covid-19-Chatbot, für die Sekundarstufe I',
-                '3' => 'Leben im Zeitalter von „intelligenten Maschinen”: Herausforderungen und Chancen, für die Sekundarstufe II',
+                '3' => 'Leben im Zeitalter von "intelligenten Maschinen”: Herausforderungen und Chancen, für die Sekundarstufe II',
             ]
         ],
 
@@ -269,7 +269,7 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
             "title" => "GESCHICHTENERZÄHLEN MIT HEDY",
             "author" => "von Felienne Hermans",
             "text" => [
-                "Ihre Schülerinnen und Schüler beherrschen bereits eine visuelle Programmiersprache, fühlen sich aber noch nicht bereit dazu, tiefer in eine textbasierte Programmiersprache einzusteigen? Dann ist dieses Lernhäppchen genau das Richtige für Sie und Ihre Schüler*innen, denn es wird allen dabei helfen, die Lücke zwischen einer visuellen und einer textbasierten Programmiersprache zu schließen. Das Lernhäppchen <strong>Geschichtenerzählen mit Hedy</strong> besteht aus drei Unterrichtsplänen auf der Basis von Hedy, einer „mitwachsenden“ Programmiersprache, mit der Kinder das Programmieren lernen können.",
+                "Ihre Schülerinnen und Schüler beherrschen bereits eine visuelle Programmiersprache, fühlen sich aber noch nicht bereit dazu, tiefer in eine textbasierte Programmiersprache einzusteigen? Dann ist dieses Lernhäppchen genau das Richtige für Sie und Ihre Schüler*innen, denn es wird allen dabei helfen, die Lücke zwischen einer visuellen und einer textbasierten Programmiersprache zu schließen. Das Lernhäppchen <strong>Geschichtenerzählen mit Hedy</strong> besteht aus drei Unterrichtsplänen auf der Basis von Hedy, einer \"mitwachsenden\" Programmiersprache, mit der Kinder das Programmieren lernen können.",
 
                 "Hedy richtet sich an Kinder, die mit textuellen Programmiersprachen loslegen möchten, denen jedoch der Einstieg in die Programmiersprache Python vielleicht noch zu kompliziert ist. Bei mitwachsenden Sprachen gibt es verschiedene Sprachlevel, wobei in jedem Level neue Konzepte und syntaktische Komplexität hinzukommen. Haben die Schüler*innen alle Hedy-Level durchlaufen, beherrschen sie eine Teilmenge von syntaktisch gültigem Python.",
 
@@ -298,6 +298,80 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
                 "3" => "Programmier mich in Stimmung für die Oberstufe",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Wasser",
+            "author" => "von Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Wasser ist eine Antwort auf die Notwendigkeit, das Problem der Wasserverschmutzung anzugehen. Trotz der Anstrengungen der letzten Jahre haben immer noch 2 Milliarden Menschen auf der Welt keinen Zugang zu sauberem Trinkwasser. Das bedeutet, dass Ziel 6 der Agenda 2030 für nachhaltige Entwicklung, in dem festgehalten steht, dass alle Menschen einen Zugang zu einwandfreiem und bezahlbarem Trinkwasser und Sanitäreinrichtungen haben sollten, noch lange nicht erreicht ist. Dasselbe gilt für Ziel 14 zu Leben unter Wasser, das darauf abzielt, die Ozeane, Meere und Meeresressourcen im Sinne nachhaltiger Entwicklung zu erhalten und nachhaltig zu nutzen.",
+
+                "Schwerpunkt dieses Lernhäppchens ist das relevante und aktuelle Thema der Wasserqualitätsmessung und der neuen Schadstoffe, die die Wasserqualität verschlechtern. Die Schülerinnen und Schüler erhalten die Möglichkeit, reale Probleme im Zusammenhang mit Wasser und Umwelt zu untersuchen und nach Lösungen zu suchen, wodurch sie Fähigkeiten wie Recherche, kritisches Denken und Problemlösung entwickeln können.",
+
+                "Die Unterrichtspläne umfassen praktische und kreative Aktivitäten, wie z. B. Programmieren in Scratch, Einführung in maschinelles Lernen und künstliche Intelligenz mit Learning Machine Learning und den Bau von ferngesteuerten Fahrzeugen mit Lego-Sets für Wasserproben und pH-Analysen im Wasser. Durch diese Aktivitäten können Schülerinnen und Schüler ihre Fähigkeiten und ihr Wissen in einer interaktiven und spielerischen Umgebung in die Praxis umsetzen, wodurch sich ihre Motivation und ihr Interesse an dem Projekt steigern wird.",
+
+                "Für die Umsetzung dieses Lernhäppchens wird vorgeschlagen, die drei Aktivitäten im Unterricht zu entwickeln, um das gesamte Projekt abzuschließen und einen sinnvolleren und motivierenderen Lernprozess zu erreichen. Dennoch kann jede Aktivität auch für sich genommen durchgeführt werden."
+
+            ],
+            "activities" => [
+                "1" => "SOS Wasser mit Scratch",
+                "2" => "SOS Wasser mit maschinellem Lernen",
+                "3" => "SOS Wasser mit Robotik",
+            ]
+
+        ],
+        "19" => [
+
+            "title" => "Kreatives Scratch-Labor",
+            "author" => "von Krzysztof Jaworski",
+            "text" => [
+
+                "Programmieren lernt man heute nicht mehr nur für eine Programmierkarriere oder für eine Laufbahn in der Informatik. Der Unterricht sollte breit angelegt sein mit einer interdisziplinären Perspektive und Programmieren als Mittel zum Lernen und Spielen, um die Entwicklung künftiger Kompetenzen zu fördern.",
+
+                "Für Kinder und Jugendliche ist es von entscheidender Bedeutung zu wissen, wie sie digitale Werkzeuge sicher, verantwortungsbewusst und wirksam einsetzen können. Sie müssen verstehen, wie diese Werkzeuge funktionieren und wissen, wie sie mit ihnen durch Programmierung kommunizieren können. Außerdem sollte diese Erfahrung die Zusammenarbeit mit Gleichaltrigen beinhalten.",
+
+                "Das Lernhäppchen <strong>Creative Scratch Laboratory</strong> wird die Kreativität der Schülerinnen und Schüler fördern, ihre Neugierde anregen und das Programmieren zum Vergnügen machen.  Es besteht aus drei Lehrplänen für Schülerinnen und Schüler mit unterschiedlichen Programmierkenntnissen. Im Lehrplan für Anfänger ist es die Aufgabe der Schülerinnen und Schüler, eine Figur auf Papier zu erstellen, sie in Scratch zu importieren und sie mit ausgewählten Blöcken zu animieren. Im Lehrplan für den mittleren Kenntnisstand lernen die Schülerinnen und Schüler das Werkzeug \"Video Sprites\", das grafische Gestalten mit Papier und Markern und das Erstellen eines Scratch-Mosaiks mit Video-Figuren, Stempeln und Kunstobjekten kennen. Im Lehrplan für Fortgeschrittene erkunden die Schülerinnen und Schüler die Gesichtserkennungsfunktion in Scratch, experimentieren mit der Manipulation von Figurgrafiken und erstellen ein Mini-Theater mit in Scratch generierten Dialogen.",
+
+            ],
+            "activities" => [
+                "1" => "Figur zeichnen und animieren: für Anfänger",
+                "2" => "Stempel: für Schülerinnen und Schüler mit mittlerem Kenntnisstand",
+                "3" => "Puppentheater: für Fortgeschrittene",
+            ]
+        ],
+        "20" => [
+            "title" => "Künstlerisch programmieren",
+            "author" => "von Maria Tsapara",
+            "text" => [
+                "Kinder wachsen in einer komplexen Welt auf, die sich technologisch ständig weiterentwickelt, was innovative pädagogische Ansätze für Erzieherinnen und Erzieher erfordert. Zu diesen Ansätzen gehören Aktivitäten, die rechnerisches Denken und Programmieren von klein auf fördern. Die Forschung deutet darauf hin, dass gezielte Aktivitäten das rechnerische Denken und die Problemlösungskompetenz von Kindern wirksam entwickeln können und gleichzeitig ihren kreativen Ausdruck durch Technologie fördern.",
+                "Obwohl die gängigste Strategie für den Programmierunterricht die Verwendung von Lernrobotern beinhaltet, gibt es auch die Möglichkeit der Programmierung ohne die Verwendung eines Roboterbausatzes (ohne Computer). Dieser Ansatz kann verschiedene Formen annehmen und eine breite Palette von Aktivitäten umfassen (Pixelkunst, Kinder in der Rolle von Robotern, Verwendung eines Bodengitters usw.). Diese Aktivitäten bieten Vorteile für das Erfahrungslernen, insbesondere für kleine Kinder, die am besten durch Spielen lernen.",
+                "<strong>Der Learning Bit \"Künstlerisch Programmieren\"</strong> umfasst drei Unterrichtspläne für Erzieherinnen und Erzieher und setzt eine Aktivität ohne Computer, den Einsatz eines Bee-Bot-Lernroboters und des Erfindungsbaukastens Makey Makey um. Durch die Verwendung des Makey-Makey-Bausatzeshaben die Schülerinnen und Schüler die Möglichkeit, greifbare Schnittstellen zu schaffen und verschiedene Lösungen auszuprobieren, zu kreieren, zu experimentieren und alle ihre Lernfähigkeiten in einer kollaborativen Lernumgebung zu stärken.",
+                "Wie Pablo Picasso sagte  Jedes Kind ist ein Künstler. \"Die Frage ist nur, ob es einer bleibt, wenn es aufwächst..\" Kunst bietet Kindern die Möglichkeit, ihre Ideen und Gefühle kreativ darzustellen und mitzuteilen. In diesem Learning Bit finden Sie inspirierende Aktivitäten, um  die sozialen Kompetenzen und die Fähigkeiten des 21. Jahrhunderts Ihrer Schülerinnen und Schüler durch Kunst und Programmierung zu kultivieren, sie zu ermutigen, sich kreativ auszudrücken und ihre Fantasie zu fördern. Mit dem Learning Bit \"Künstlerisch programmieren\" können Sie die Kreativität, Zusammenarbeit und Problemlösung Ihrer Schülerinnen und Schüler durch die Integration von Kunst und Programmierung fördern."
+            ],
+            "activities" => [
+                "1" => "Künstlerisch programmieren: 4-6 jährige Kindergartenkinder",
+                "2" => "Kreatives Programmierlabor: 4-6 Jahre alte Kindergartenkinder",
+                "3" => "Touch Canvas: Interaktive Gemälde erstellen: 4-6 Jahre alte Kindergartenkinder; Fortgeschrittene."
+            ]
+        ],
+        "21" => [
+            "title" => "Etwas erschaffen und programmieren",
+            "author" => "von Ulla Hauptmann",
+            "text" => [
+                "Makerspaces sind lebendige Zentren, in denen Kreativität gedeiht und praktische Projekte zum Leben erweckt werden. Bei der Auswahl der Ausrüstung für einen Makerspace liegt der Schwerpunkt auf Werkzeugen wie Calliope mini, Microbit oder Makey Makey, da sie eine breite Palette von Möglichkeiten bieten, die für Schülerinnen und Schüler verschiedener Alters- und Kompetenzstufen geeignet sind. Diese Hilfsmittel unterstützen die Entwicklung kreativer Projekte für jüngere Kinder dank ihrer blockbasierten Programmiersprachen. Ältere Schülerinnen und Schüler können mit ihnen komplexere Projekte entwickeln.",
+                "Entdecken Sie das <strong>Learning Bit \"Erwas erschaffen und programmieren\"</strong>, um in die Welt der Makerspaces einzutauchen und interdisziplinäre Fähigkeiten wie Teamwork und soziale Zusammenarbeit zu fördern und gleichzeitig Innovation und Begeisterung bei Ihren Schülerinnen und Schülern zu wecken!",
+                "Makey Makey ist eine Platine, die Alltagsgegenstände in Computertasten verwandelt. Indem Gegenstände mit Krokodilklemmen an die Platine angeschlossen werden, die dann über ein USB-Kabel (oder ein iPad mit einem Kameraadapter) mit dem Computer verbunden werden, kann Makey Makey elektrische Schaltkreise zwischen einer Person und einem Gegenstand öffnen und schließen. Dadurch werden elektrische Signale gesendet, die der Computer als Tastaturanschläge oder Mausklicks empfängt. So können die Schülerinnen und Schüler kreative Erfindungen wie Musikinstrumente, Computerspiele oder interaktive Poster entwickeln – die Möglichkeiten sind endlos! Makey Makey und die in diesem Learning Bit vorgestellten Projekte können sowohl in Grund- als auch in weiterführenden Schulen eingesetzt werden, um Fähigkeiten in Bereichen wie Medienerziehung, Informatik, Naturwissenschaften, Physik, Musik, Sport und fächerübergreifende Fähigkeiten wie Teamarbeit und soziale Kompetenzen zu vermitteln.",
+                "Treten Sie ein in die aufregende Welt von Makey Makey und setzen Sie grenzenlose Kreativität in Ihrem Klassenzimmer frei!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey trifft Musik: für Anfänger",
+                "2" => "Tonfilme: für Schülerinnen und Schüler der Mittelstufe",
+                "3" => "Ein interaktives Poster erstellen: für fortgeschrittene Schülerinnen und Schüler",
+            ]
+        ]
+        ,
+
+
 
     ],
     'download_video_script' => 'Das Video-Script herunterladen',

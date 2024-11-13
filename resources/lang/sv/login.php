@@ -14,7 +14,7 @@ return [
     'login' => 'Inloggning',
     'register' => 'Registrering',
     'github' => 'Logga in med Github',
-    'twitter' => 'Logga in med Twitter',
+    'X' => 'Logga in med X',
     'facebook' => 'Logga in med Facebook',
     'google' => 'Logga in med Google',
     'azure' => 'Logga in med Azure',
@@ -27,6 +27,6 @@ return [
     'reset' => 'Återställ ditt lösenord',
     'send_password' => 'Skicka en länk för att återställa lösenord',
     'confirm_password' => 'Bekräfta lösenord',
-    'name' => 'namn'
+    'name' => 'namn',
 
 ];

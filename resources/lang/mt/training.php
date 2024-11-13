@@ -241,12 +241,12 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
             'title' => 'It-Tagħlim fl-Era ta’ Magni Intelliġenti',
             'author' => 'minn Adil Tugyan, Georgia Lascaris u Marco Neves',
             'text' => [
-    '1' => 'F’dawn l-aħħar snin, il-progress li għamlet l-IA kien tassew impressjonanti grazzi għall-avvanzi mgħaġġla fil-qawwa komputazzjonali u d-disponibbiltà ta’ ammonti kbar ta’ dejta. Dan wassal għal investimenti sostanzjali fir-riċerka tal-IA u l-espansjoni rapida tal-industrija tal-IA li wasslu biex l-IA saret ir-revoluzzjoni teknoloġika maġġuri ta’ żminijietna. L-IA hija kull fejn inħarsu. Saret parti mir-rutina tagħna ta’ kuljum tant li ġieli, lanqas inqisuha bħala IA: kważi ta’ kuljum nużaw ir-rakkomandazzjoni online, ir-rikonoxximent tal-uċuħ, sistemi ta’ sigurtà u assistenti bil-vuċi. Imma xi ngħidu dwar l-edukazzjoni?',
+                '1' => 'F’dawn l-aħħar snin, il-progress li għamlet l-IA kien tassew impressjonanti grazzi għall-avvanzi mgħaġġla fil-qawwa komputazzjonali u d-disponibbiltà ta’ ammonti kbar ta’ dejta. Dan wassal għal investimenti sostanzjali fir-riċerka tal-IA u l-espansjoni rapida tal-industrija tal-IA li wasslu biex l-IA saret ir-revoluzzjoni teknoloġika maġġuri ta’ żminijietna. L-IA hija kull fejn inħarsu. Saret parti mir-rutina tagħna ta’ kuljum tant li ġieli, lanqas inqisuha bħala IA: kważi ta’ kuljum nużaw ir-rakkomandazzjoni online, ir-rikonoxximent tal-uċuħ, sistemi ta’ sigurtà u assistenti bil-vuċi. Imma xi ngħidu dwar l-edukazzjoni?',
 
                 '2' => 'L-IA għandha l-potenzjal enormi biex tippermetti modi ġodda kif wieħed jgħallem u jitgħallem, u biex ittejjeb it-tagħlim tal-istudenti. Din l-Għajnuna tat-Tagħlim se tgħinek tintegra attivitajiet awtentiċi tal-IA fit-tagħlim tiegħek u se tgħinek tħejji l-istudenti tiegħek għal ħajja u karriera f’dinja msawra mill-IA. Dawn l-attivitajiet tfasslu għall-istudenti sabiex jiżviluppaw il-kurżità tagħhom, u l-ħiliet tagħhom tal-kreattività u ta’ kif isolvu l-problemi: pereżempju, fl-attività ta’ Adil l-istudenti se jitgħallmu dwar l-algoritmi u n-networks newrali u se jiġu mħeġġa biex joħolqu n-network newrali tagħhom stess sabiex jivviżwalizzaw il-moħħ ta’ IA. Georgia se tiggwida l-istudenti tiegħek fl-iżvilupp pass pass ta’ chatbot. L-istudenti se jibnu ċ-chatbot tagħhom stess, jippreparaw settijiet ta’ dejta ta’ mistoqsijiet u tweġibiet u jħarrġuh sabiex ikun jista’ jwieġeb mistoqsijiet relatati mal-Covid-19. Fl-attività ta’ Marco, l-istudenti se jesploraw il-benefiċċji u l-isfidi tal-magni intelliġenti fil-ħajja u fix-xogħol ta’ kuljum. Liem huma r-riskji tal-IA li jeħtieġ nikkunsidraw? X’impatti se tħalli l-IA fuq il-futur tad-dinja tax-xogħol ? X’karrieri se jiġu offruti lilhom meta jidħlu fis-suq tax-xogħol fil-futur ?'
             ],
             'activities' => [
-    'title' => 'Fil-pjanijiet tal-lezzjonijiet t’hawn isfel, l-istudenti se jitgħallmu dwar il-magni intelliġenti b’mod divertenti u interattiv.',
+                'title' => 'Fil-pjanijiet tal-lezzjonijiet t’hawn isfel, l-istudenti se jitgħallmu dwar il-magni intelliġenti b’mod divertenti u interattiv.',
                 '1' => 'L-IA u n-Networks Newrali tagħha, għall-Iskejjel tal-Primarja',
                 '2' => 'Iċ-Chatbot tiegħi ta’ Covid-19, għall-Iskejjel Sekondarji tal-Ewwel Livell',
                 '3' => 'Ngħixu fl-Era ta’ “Magni Intelliġenti”: L-Isfidi u Opportunitajiet, għall-Iskejjel Sekondarji tat-Tieni Livell',
@@ -298,6 +298,47 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
                 "1" => "Kodiċi - Ħoss - Tgħallem għall-istudenti tal-iskola primarja",
                 "2" => "Qalbi mhix iebsa għal studenti tal-iskola sekondarja baxxa",
                 "3" => "Ikkowdjali għall-burdata għal studenti tal-iskola sekonardja għolja",
+            ]
+        ],
+        "18" => [
+
+            "title" => "SOS Ilma",
+            "author" => "minn Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Ilma hu rispons għall-bżonn li nindirizzaw il-problema tat-tniġġis tal-ilma. Minkejja l-isforzi magħmula dawn l-aħħar snin, għad fadal 2 biljun persuna fid-dinja li għad ma għandhomx aċċess għal ilma tax-xorb sikur. Dan ifisser il l-Għan ta' Żvilupp Sostenibbli (SDG) 6 tal-Aġenda 2030, li jgħid li kulħadd għandu jkollu aċċess għal ilma ġestit b'mod sikur u sanitazzjoni sal-2030, għadu 'l bogħod milli jintlaħaq. L-istess jgħodd għal SDG 14, ħajja taħt l-ilma, li għandu l-għan li jikkonserva u juża l-oċeani, l-ibħra u riżorsi tal-baħar b'mod sostenibbli għal żvilupp sostenibbli.",
+
+                "Dan il-Bit tal-Apprendiment jiffoka fuq il-kwistjoni rilevanti u topika ta' miżuri tal-kwalità tal-ilma u n-niġġiesa l-ġodda li jisfidaw il-kawlità tal-ilma. L-istudenti ser ikollhom l-opportunità jinvestigaw u jfittxu soluzzjonijiet għal problemi reali relatati mal-ilma u l-ambjent, li ser iħallihom jiżviluppaw ħiliet bħal riċerka, ħsieb kritiku u soluzzjoni ta' problemi.",
+
+                "Il-pjan tal-lezzjoni jinkludi attivitajiet prattiċi u kreattivi, bħall-ipprogrammar fi Scratch, il-bidu għal tagħlim awtomatiku u intelliġenza artifijali tat-Tagħlim bit-Tagħlim Awtomatiku u l-bini ta' vetturi ggwidati bis-settijiet tal-Lego għal kampjuni tal-ilma u analiżi tal-pH tal-ilma. Dawn l-attivitajiet ser iħallu lill-istudenti jpoġġu l-ħiliet u għarfien tagħhom fil-prattika f'ambjent interattiv u ta' logħob, li ser iżid il-motivazzjoni u l-interess tagħhom fil-proġett.",
+
+                "Għall-implimentazzjoni ta' dan il-Bit tal-Apprendiment, nissuġġerixxu li tiżviluppaw it-tliet attivitajiet fil-klassi, li tispiċċaw il-proġett kollu u tiksbu proċess ta' tagħlim li jkun ifisser aktar u li jimmotiva aktar. Madankollu, kull attivita tista' ssir waħedha."
+
+            ],
+            "activities" => [
+                "1" => "SOS Ilma bi Scratch",
+                "2" => "SOS Ilma b'Tagħlim Awtomatiku",
+                "3" => "SOS Ilma bir-Robotika",
+            ]
+
+        ],
+        "19" => [
+
+            "title" => "Laboratorju Kreattiv Scratch",
+            "author" => "minn Krzysztof Jaworski",
+            "text" => [
+
+                "Li titgħallem l-ipprogrammar illum imur lil hinn milli tipprepara għal karriera fl-ipprogrammar u jestendi lil hinn mill-fruntieri tax-xjenza tal-kompjuters. Dan għandu jkun iffaċċjat b'mod wiesa', billi tħaddan perspettiva interdixxipplinarja u tutilizza l-ipprogrammar bħala għodda għat-tagħlim u logħob biex tippromwovi l-iżvilupp ta' ħiliet futuri.",
+
+                "Għat-tfal u ż-żgħażagħ, hu kruċjali li jifhmu kif jużaw l-għodod diġitali b'mod sikur, responsabbli u effettiv. Huma għandhom bżonn jifhmu kif dawn l-għodod jiffunzjonaw u jkunu jafu kif jikkomunikaw bihom permezz tal-ipprogrammar. Barra minn hekk, din l-esperjenza għandha tinvolvi interazzjonijiet kollaborattivi mal-pari tagħhom.",
+
+                "Il-Bit tat-Tagħlim <strong>Creative Scratch Laboratory</strong> ser issaħħaħ il-kreattività tal-istudenti, iżżid il-kurżità tagħhom u tagħmel l-ikkowdjar pjaċevoli u divertenti.  Dan jikkonsisti minn tliet pjanijiet ta' lezzjonijiet għal studenti b'ħiliet varji tal-ikkowdjar. Fil-pjan tal-lezzjoni tal-istudent prinċipjanti, l-istudenti joħolqu karattru fuq karta, idaħħluh fi Scratch u janimawh billi jużaw blokok magħżula. Il-pjan tal-lezzjoni tal-livell intermedju jgħallem lill-istudenti l-għodda Video Sprites, l-iddisinnjar grafiku bil-karta u markaturi, u kif jipproduċu mużajk Scratch bil-Video Sprites, timbri u xogħolijiet artistiċi. Fil-pjan tal-lezzjoni avvanzat, l-istudenti jesploraw il-funzjoni tar-rikonoxximent tal-wiċċ fi Scratch, jesperimentaw bil-manipulazzjoni tal-grafika ta' sprite u joħolqu teatru żgħir bi djalogi ġġenerati fi Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Pinġi u anima sprite: għall-prinċipjanti",
+                "2" => "Timbri: għal studenti intermedjarji",
+                "3" => "Teatru tal-pupazzi: għal studenti avanzati",
             ]
         ],
 

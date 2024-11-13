@@ -3,49 +3,40 @@
 namespace App\Imports;
 
 use App\Event;
-use App\Tag;
 use App\User;
-use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
 use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-class
-
-DutchDanceEventsImport extends DefaultValueBinder implements
-    WithCustomValueBinder,
-    ToModel,
-    WithHeadingRow {
-    public function parseDate($date) {
+class DutchDanceEventsImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
+{
+    public function parseDate($date)
+    {
         return Date::excelToDateTimeObject($date);
     }
 
-    public function loadUser($email) {
+    public function loadUser($email)
+    {
         return User::firstOrCreate(
             [
-                'email' => $email
+                'email' => $email,
             ],
             [
                 'firstname' => '',
                 'lastname' => '',
                 'username' => '',
-                'password' => bcrypt(Str::random())
+                'password' => bcrypt(Str::random()),
             ]
         );
     }
 
-    /**
-     * @param array $row
-     *
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
-    public function model(array $row) {
+    public function model(array $row): ?Model
+    {
         //dd($row);
         $event = new Event([
             'status' => 'APPROVED',
@@ -68,10 +59,11 @@ DutchDanceEventsImport extends DefaultValueBinder implements
             'codeweek_for_all_participation_code' => 'cw21-CodeWeekNL',
             'start_date' => $this->parseDate($row['start_date']),
             'end_date' => $this->parseDate($row['end_date']),
-            'geoposition' => $row['longitude'] . ',' . $row['latitude'],
+            'geoposition' => $row['longitude'].','.$row['latitude'],
             'longitude' => $row['latitude'],
             'latitude' => $row['longitude'],
-            'language' => strtolower($row['language'])
+            'language' => strtolower($row['language']),
+            'mass_added_for' => 'Excel',
         ]);
 
         $event->save();
@@ -88,6 +80,7 @@ DutchDanceEventsImport extends DefaultValueBinder implements
         }
 
         Log::info($event->slug);
+
         return $event;
     }
 }

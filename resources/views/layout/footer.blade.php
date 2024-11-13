@@ -10,8 +10,8 @@
                         <div class="button">@lang('base.get_in_touch')</div>
                     </a>
                 @else
-                    <a href="/ambassadors">
-                        <div class="button">@lang('base.get_in_touch')</div>
+                    <a href="{{route('contact-us')}}">
+                    <div class="button">@lang('base.get_in_touch')</div>
                     </a>
                 @endif
 
@@ -22,9 +22,9 @@
 
         </div>
         <div class="about">
-            <img src="/images/EU_logo.png">
+            <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg">
             <div class="phrase">
-                <div class="text">@lang('base.footer_msg')</div>
+  
                 <div class="text"><a
                             href="{{route('privacy')}}">{{ucfirst(mb_strtolower(__('privacy-statement.title'),'UTF-8'))}}</a> - <a
                             href="{{route('cookie')}}">@lang('cookie_policy.title')</a></div>
@@ -34,7 +34,7 @@
         </div>
         <div class="social-media-buttons">
             <div class="social-network">
-                <a href="https://newsletter.gopacom.eu/26/4369/03b9cb464b/subscribe/form.html?_g=1675787239"
+                <a href="https://forms.mailpro.com/matrixinternet/code4europe-website-subscriber-form/OCxYWv-7975.html"
                    target="_blank" rel="noreferer, noopener">
                     <div style="margin-right: 2px">
                         <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" height="24"

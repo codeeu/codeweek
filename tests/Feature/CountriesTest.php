@@ -3,17 +3,14 @@
 namespace Tests\Feature;
 
 use App\Country;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Log;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-
-
-class CountriesTest extends TestCase
+final class CountriesTest extends TestCase
 {
     use DatabaseMigrations;
-
 
     private $event;
 
@@ -28,40 +25,35 @@ class CountriesTest extends TestCase
 
     }*/
 
-    /** @test */
-    public function get_countries_with_events()
+    #[Test]
+    public function get_countries_with_events(): void
     {
 
-        $country_without_event = create('App\Country');
-        $country_with_event = create('App\Country');
+        $country_without_event = \App\Country::factory()->create();
+        $country_with_event = \App\Country::factory()->create();
         Log::info($country_with_event->iso);
-        create('App\Event', ["country_iso" => $country_with_event->iso,"status" => "APPROVED"]);
+        \App\Event::factory()->create(['country_iso' => $country_with_event->iso, 'status' => 'APPROVED']);
 
-        $this->assertCount(1,Country::withEvents());
+        $this->assertCount(1, Country::withEvents());
         $this->assertEquals(Country::withEvents()[0]->name, $country_with_event->name);
-
 
     }
 
-    /** @test */
-    public function get_countries_with_coordinators()
+    #[Test]
+    public function get_countries_with_coordinators(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
-//        $countries = create('App\Country',[], 10);
-        $france = create('App\Country',['iso'=>'FR']);
-        $belgium = create('App\Country',['iso'=>'BE']);
+        //        $countries = create('App\Country',[], 10);
+        $france = \App\Country::factory()->create(['iso' => 'FR']);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
 
+        $ambassador_fr = \App\User::factory()->create(['country_iso' => $france->iso])->assignRole('ambassador');
+        $ambassador_be = \App\User::factory()->create(['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $leading_teacher_be = \App\User::factory()->create(['country_iso' => $belgium->iso])->assignRole('leading teacher');
 
-        $ambassador_fr = create('App\User', ['country_iso' => $france->iso])->assignRole('ambassador');
-        $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
-        $leading_teacher_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('leading teacher');
-
-        $this->assertCount(2,Country::withCoordinators());
-
+        $this->assertCount(2, Country::withCoordinators());
 
     }
-
-
 }

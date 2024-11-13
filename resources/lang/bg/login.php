@@ -14,7 +14,7 @@ return [
     'login' => 'Вход',
     'register' => 'Регистриране',
     'github' => 'Влизане с Github',
-    'twitter' => 'Влизане с Twitter',
+    'X' => 'Влизане с X',
     'facebook' => 'Влизане с Facebook',
     'google' => 'Влизане с Google',
     'azure' => 'Влизане с Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Нулирайте своята парола',
     'send_password' => 'Изпращане на връзка за нулиране на парола',
     'confirm_password' => 'Потвърдете паролата',
-    'name' => 'име'
+    'name' => 'име',
 ];

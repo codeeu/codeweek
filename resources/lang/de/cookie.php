@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,14 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Dieses Portal verwendet Cookies zur Optimierung der Browserfunktion',
-    'accept'=>'Cookies akzeptieren',
-    'refuse'=>'Cookies ablehnen',
+    'accept' => 'Cookies akzeptieren',
+    'refuse' => 'Cookies ablehnen',
     'cookies' => 'Cookies',
-    'find_out_more_on'=>'Informieren Sie sich, ',
+    'find_out_more_on' => 'Informieren Sie sich, ',
     'how_we_use' => 'wie wir Cookies verwenden und wie Sie Ihre Einstellungen ändern können',
-
-
-
-
 
 ];

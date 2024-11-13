@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Modifikoni evenimentin tuaj të #CodeWeek',
+    'title' => 'Modifikoni evenimentin tuaj të #EUCodeWeek',
     'required_fields' => 'Fushat e detyrueshme janë të shënuara me yll *. Mos ngurroni të shtoni listën e evenimentit në gjuhën tuaj lokale.',
     'description' => 'Përshkrimi',
     'audience' => 'Audienca',
@@ -29,12 +29,12 @@ return [
         'header' => 'Informacioni juaj i kontaktit',
         'text_1' => 'Ky informacion do të jetë i dukshëm vetëm për ',
         'link_1' => 'Ambasadorët e EU Code Week',
-        'text_2'=> ' dhe organizatorët e Code Week
+        'text_2' => ' dhe organizatorët e Code Week
         të cilët do të kontrollojnë
         evenimentin tuaj përpara se ai të shfaqet në hartë dhe mund t’ju kontaktojnë nëse
         nevojiten modifikime ose
         për anketime për qëllime statistikore pas evenimentit.',
-        'contact_email' => 'Emaili i kontaktit'
-    ], 
-    'edit' => 'Modifikoni evenimentin'
+        'contact_email' => 'Emaili i kontaktit',
+    ],
+    'edit' => 'Modifikoni evenimentin',
 ];

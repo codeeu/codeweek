@@ -2,7 +2,9 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * App\Participation
@@ -17,6 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\User $user
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Participation newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Participation newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Participation query()
@@ -29,14 +32,17 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Participation whereParticipationUrl($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Participation whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Participation whereUserId($value)
+ *
  * @mixin \Eloquent
  */
 class Participation extends Model
 {
-    protected $fillable=['user_id','event_name','event_date','names','participation_url','status'];
+    use HasFactory;
 
-    public function user()
+    protected $fillable = ['user_id', 'event_name', 'event_date', 'names', 'participation_url', 'status'];
+
+    public function user(): BelongsTo
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(\App\User::class);
     }
 }

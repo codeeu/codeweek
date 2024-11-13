@@ -14,7 +14,7 @@ return [
     'login' => 'Iniciar sessão',
     'register' => 'Efetuar registo',
     'github' => 'Iniciar sessão com o Github',
-    'twitter' => 'Iniciar sessão com o Twitter',
+    'X' => 'Iniciar sessão com o X',
     'facebook' => 'Iniciar sessão com o Facebook',
     'google' => 'Iniciar sessão com o Google',
     'azure' => 'Iniciar sessão com o Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Repor a palavra-passe',
     'send_password' => 'Enviar ligação para repor a palavra-passe',
     'confirm_password' => 'Confirmar palavra-passe',
-    'name' => 'nome'
+    'name' => 'nome',
 ];

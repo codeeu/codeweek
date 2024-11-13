@@ -2,7 +2,9 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * App\Volunteer
@@ -14,6 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \App\User $user
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Volunteer newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Volunteer newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Volunteer query()
@@ -23,16 +26,17 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Volunteer whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Volunteer whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Volunteer whereUserId($value)
+ *
  * @mixin \Eloquent
  */
 class Volunteer extends Model
 {
+    use HasFactory;
+
     protected $guarded = [];
 
-
-    public function user()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(\App\User::class);
     }
-
 }

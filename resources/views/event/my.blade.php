@@ -1,5 +1,7 @@
 @extends('layout.base')
 
+<x-tailwind></x-tailwind>
+
 @section('content')
     <section id="codeweek-myevents-page" class="codeweek-page">
 

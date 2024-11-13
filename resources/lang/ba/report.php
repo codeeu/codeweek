@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Izvijestite o svom događaju #CodeWeek',
+    'title' => 'Izvijestite o svom događaju #EUCodeWeek',
     'event_title' => 'Naziv događaja',
     'number_required' => 'Obezbijedite grubu procjenu, čak i ako nemate tačne podatke.',
     'phrase1' => 'Možete popuniti ovaj formular samo jednom! Pažljivo provjerite svoje podatke. Ako napravite grešku, ',
@@ -25,27 +25,25 @@ return [
         'label' => 'Broj učesnika',
     ],
     'average_participant_age' => [
-        'label'=>'Prosječna starosna dob učesnika',
+        'label' => 'Prosječna starosna dob učesnika',
     ],
     'percentage_of_females' => [
         'label' => 'Postoci ženskih učesnika',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Kod za učešće u Sedmici kodiranja za sve',
-        'help' => 'Ovdje možete staviti svoj kod izazova Sedmice kodiranja za sve, ako ga imate. Ako ne učestvujete, samo zanemarite ovo polje.'
+        'help' => 'Ovdje možete staviti svoj kod izazova Sedmice kodiranja za sve, ako ga imate. Ako ne učestvujete, samo zanemarite ovo polje.',
     ],
     'name_for_certificate' => [
         'label' => 'Naziv za certifikat',
-        'help' => 'Izmijenite ovo u naziv organizatora događaja koji će izdavati certifikat za učešće u Sedmici kodiranja. Koristite samo slova ASCII (latinica). Slova sa akcentima, preglasima i slično nisu podržana.'
+        'help' => 'Izmijenite ovo u naziv organizatora događaja koji će izdavati certifikat za učešće u Sedmici kodiranja. Koristite samo slova ASCII (latinica). Slova sa akcentima, preglasima i slično nisu podržana.',
     ],
     'submit' => 'Podnesite Izvještaj o događaju',
-    'thanks_page'=>[
-        'title'=>'Hvala što ste izvijestili o svom događaju!',
-        'certificate_ready'=>'Vaš certifikat je spreman.',
-        'download_button'=>'Kliknite ovdje i preuzmite ga.',
-        'back_events'=>'Vratite se na svoj događaj'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Hvala što ste izvijestili o svom događaju!',
+        'certificate_ready' => 'Vaš certifikat je spreman.',
+        'download_button' => 'Kliknite ovdje i preuzmite ga.',
+        'back_events' => 'Vratite se na svoj događaj',
+    ],
 
 ];

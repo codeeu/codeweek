@@ -94,6 +94,9 @@
   color:$main-color2;
 }
 
+#school-banner a:hover .title {
+  color: #40B5D1;}
+
 .sub-section {
   display: flex;
   flex-direction: column;
@@ -292,7 +295,7 @@
     width: 350px;
   }
   #main-banner .info .when .date{
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 30px;
   }
   #main-banner .info .when .text {

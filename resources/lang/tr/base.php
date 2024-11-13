@@ -41,7 +41,7 @@ return [
         'mk' => 'Makedonca',
         'me' => 'Karadağlıca',
         'rs' => 'Sırpça',
-        'tr' => 'Türkçe'
+        'tr' => 'Türkçe',
     ],
 
     'resources_local_title' => 'Kodlama kaynakları',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Sorularınız mı var?',
     'drop_us_a_line' => 'Bizimle iletişime geçin!',
     'get_in_touch' => 'BİZE ULAŞIN',
-    'footer_msg' =>
-        'Gönüllüler tarafından yürütülen ve Avrupa Komisyonu tarafından desteklenen bir taban inisiyatifidir.',
+    'footer_msg' => 'Gönüllüler tarafından yürütülen ve Avrupa Komisyonu tarafından desteklenen bir taban inisiyatifidir.',
     'email' => 'E-posta',
     'display_email' => 'E-posta Göster',
     'first_name' => 'Adı',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Dosya Seç',
     'learning_bits' => 'Öğrenim bilgileri',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Öğrencilerinizi Code Week ile buluşturun',
+    'bring_codeweek_to_your_students' => 'Öğrencilerinizi Code Week ile buluşturun',
     'or' => 'veya',
-    'newsletter' => 'Bülten'
+    'newsletter' => 'Bülten',
 ];

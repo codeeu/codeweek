@@ -19,7 +19,7 @@ return [
         'beginner' => 'Iniciante',
         'intermediate' => 'Intermédio',
         'advanced' => 'Avançado',
-        '1-hour' => '1 hora'
+        '1-hour' => '1 hora',
     ],
     'main' => [
         'Durante a Semana Europeia da Programação, de 9 a 24 de outubro de 2021, convidamo-lo a realizar um ou mais dos desafios da Semana Europeia da Programação.',
@@ -28,14 +28,14 @@ return [
         'Escolha um ou vários desafios, adapte-os ao seu grupo ou sala de aula e partilhe os resultados no Instagram para incentivar ainda mais colegas e amigos a divertirem-se na Semana da Programação!',
         'Clique nos desafios para obter mais informações:',
         'Quem pode participar?',
-        'Todos (escolas, professores, bibliotecas, grupos de programadores, empresas, autoridades públicas) são convidados a celebrar a Semana Europeia da Programação 2021 através da realização de um #CodeWeekChallenge.',
+        'Todos (escolas, professores, bibliotecas, grupos de programadores, empresas, autoridades públicas) são convidados a celebrar a Semana Europeia da Programação 2021 através da realização de um #EUCodeWeekChallenge.',
         'Como posso participar nos desafios da Semana Europeia da Programação 2021?',
         'Selecione um desafio que gostaria de realizar.',
         'Junte os participantes em pares ou em grupos. O trabalho em equipa e a colaboração são fundamentais para concluir um desafio com sucesso, quer organize a sua atividade presencialmente, quer em linha como uma atividade de colaboração nacional ou internacional.',
         'Partilhe o seu desafio',
         'Gostaria de ganhar ofertas da Semana da Programação? Se sim, faça com que o seu trabalho se torne viral!',
         'Depois de concluir o desafio, partilhe-o no Instagram.',
-        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados e anunciados vencedores no nosso canal do Instagram. Por isso, não se esqueça de verificar as suas notificações regularmente.'
+        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados e anunciados vencedores no nosso canal do Instagram. Por isso, não se esqueça de verificar as suas notificações regularmente.',
     ],
     'share' => [
         'Como partilhar os seus desafios no Instagram',
@@ -45,14 +45,14 @@ return [
         'Adicione uma captura de ecrã do seu trabalho',
         'Escreva uma descrição apelativa',
         'Certifique-se de que especifica "Link na Bio"',
-        'Adicione #CodeWeekChallenge',
+        'Adicione #EUCodeWeekChallenge',
         'Mencione e identifique @CodeWeekEU',
         'Prefere partilhar os seus desafios no Facebook?',
         'Todos os dias, a Semana Europeia da Programação afixará uma nova publicação de desafio na respetiva página do',
         'Facebook',
         'e selecionará o vencedor do prémio a partir dos comentários da publicação.',
         'Como funciona?',
-        'Basta comentar a publicação com a hiperligação para o seu trabalho.'
+        'Basta comentar a publicação com a hiperligação para o seu trabalho.',
     ],
     'share-box' => [
         'Partilhe a hiperligação para o seu trabalho na sua',
@@ -61,24 +61,24 @@ return [
         'Editar perfil',
         'no seu Instagram e adicione a hiperligação para o seu trabalho no campo Site. Em seguida, crie uma nova publicação, adicione uma captura de ecrã do seu trabalho, escreva ',
         'Link na Bio',
-        'adicione a hashtag #CodeWeekChallenge e mencione @CodeWeekEU',
+        'adicione a hashtag #EUCodeWeekChallenge e mencione @CodeWeekEU',
         'Prefere partilhar os seus desafios no',
         'A Semana Europeia da Programação afixará',
         'uma nova publicação de desafio na respetiva',
         'página do Facebook',
         'Depois, basta comentar a publicação com a hiperligação para o seu trabalho',
-        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados vencedores para receberem ofertas da Semana da Programação e serão anunciados nos nossos canais do Instagram e Facebook. Por isso, não se esqueça de verificar as suas notificações regularmente'
+        'Durante todos os dias da Semana da Programação, de 9 a 24 de outubro, serão selecionados vencedores para receberem ofertas da Semana da Programação e serão anunciados nos nossos canais do Instagram e Facebook. Por isso, não se esqueça de verificar as suas notificações regularmente',
     ],
     'take-part' => [
         'Porquê participar num desafio da Semana Europeia da Programação?',
         'Para participar em atividades de resolução de problemas e programação.',
         'Para trabalhar em conjunto com os colegas.',
-        'Para divulgar a importância da programação.'
+        'Para divulgar a importância da programação.',
     ],
     'download' => [
         'Clique',
         'aqui',
-        'para descarregar este desafio como um documento do Word'
+        'para descarregar este desafio como um documento do Word',
     ],
     'bingo' => [
         'Conclua todos os desafios',
@@ -88,6 +88,6 @@ return [
         'Partilhe o seu desafio nas redes sociais e ganhe prémios incríveis da Semana da Programação',
         'Basta carregar uma fotografia da(s) linha(s) ou coluna(s) completa(s) ou, ainda melhor, do bingo completo, no',
         'Facebook, Instagram ou Twitter',
-        'Certifique-se de que utiliza a hashtag'
-    ]
+        'Certifique-se de que utiliza a hashtag',
+    ],
 ];

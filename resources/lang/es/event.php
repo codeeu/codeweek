@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Añade tu evento #CodeWeek',
+    'main_title' => 'Añade tu evento #EUCodeWeek',
     'button' => 'Añadir un Evento',
     'howto' => 'Cómo organizar tu propio evento',
     'required' => 'Los campos requeridos aparecen marcados con un asterisco (*). No dudes en añadir el listado de eventos en tu idioma local.',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Correo electrónico público',
-        'placeholder' => '¿Deseas mostrar un correo electrónico de contacto?'
+        'placeholder' => '¿Deseas mostrar un correo electrónico de contacto?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Dirección',
         'placeholder' => '¿Dónde se celebrará la actividad?',
     ],
-
 
     'organizertype' => [
         'label' => 'Tipo de organización',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Realidad aumentada',
         'Artificial intelligence' => 'Inteligencia artificial',
         'Motivation and awareness raising' => 'Motivación y concienciación',
-        'Promoting diversity' => 'Promoción de la diversidad'
+        'Promoting diversity' => 'Promoción de la diversidad',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CÓDIGO CODEWEEK4ALL (SEMANA DE LA PROGRAMACIÓN PARA TODOS)',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'embajadores nacionales',
         'phrase5' => 'o envíanos un',
         'phrase6' => 'correo electrónico',
-        'phrase7' => 'Puedes compartir tu código CodeWeek4All con otras personas:'
+        'phrase7' => 'Puedes compartir tu código CodeWeek4All con otras personas:',
     ],
     'activitytype' => [
         'label' => 'Tipo de actividad',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Actividad en línea abierta',
         'invite-online' => 'Actividad en línea privada',
         'open-in-person' => 'Actividad presencial abierta',
-        'invite-in-person' => 'Actividad presencial privada'
+        'invite-in-person' => 'Actividad presencial privada',
 
     ],
     'privacy' => 'He leído y estoy de acuerdo con los términos descritos en la política de privacidad descrita en el presente documento.',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Puedes ver tu certificado aquí',
     'submit_event_and_report' => 'Envía un informe sobre este evento y solicita tu certificado de la Semana de la Programación.',
     'report_and_claim' => 'Informar sobre un evento y solicitar certificado',
-
 
 ];

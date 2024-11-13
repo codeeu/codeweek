@@ -3,19 +3,25 @@
 namespace App;
 
 use App\Achievements\Achievement;
+use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Helpers\TagsHelper;
 use Attribute;
 use Cache;
 use Carbon\Carbon;
 use DB;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
-use App\Filters\UserFilters;
 
 /**
  * App\User
@@ -87,20 +93,18 @@ use App\Filters\UserFilters;
  * @method static \Illuminate\Database\Query\Builder|User withoutTrashed()
  * @mixin \Eloquent
  */
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
-    use Notifiable;
+    use HasFactory;
     use HasRoles;
+    use Notifiable;
     use SoftDeletes;
-
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-//    protected $fillable = [
-//        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country','provider'
-//    ];
+
 
     protected $guarded = [];
 
@@ -115,14 +119,26 @@ class User extends Authenticatable
 
     protected $appends = ['fullName'];
 
-    protected $dates = ['deleted_at'];
+    protected array $dates = ['consent_given_at', 'future_consent_given_at'];
+
+    protected $casts = [
+        'consent_given_at' => 'datetime',
+        'future_consent_given_at' => 'datetime',
+
+    ];
 
 
     public function getName()
     {
-        if (!empty($this->username)) return $this->username;
-        if (!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
-        if (!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
+        if (!empty($this->username)) {
+            return $this->username;
+        }
+        if (!empty($this->firstname) && !empty($this->lastname)) {
+            return $this->firstname . " " . $this->lastname;
+        }
+        if (!empty($this->firstname) && empty($this->lastname)) {
+            return $this->firstname;
+        }
         return $this->email;
     }
 
@@ -139,8 +155,6 @@ class User extends Authenticatable
         } else {
             $this->removeRole('ambassador');
         }
-
-
     }
 
     public function achievements()
@@ -161,13 +175,10 @@ class User extends Authenticatable
         } else {
             $this->removeRole('leading teacher');
         }
-
-
     }
 
     public function isAdmin()
     {
-
         return $this->hasRole("super admin");
     }
 
@@ -218,7 +229,8 @@ class User extends Authenticatable
 
     public function expertises()
     {
-        return $this->belongsToMany(LeadingTeacherExpertise::class, 'leading_teacher_expertise_user', 'user_id', 'lte_id');
+        return $this->belongsToMany(LeadingTeacherExpertise::class, 'leading_teacher_expertise_user', 'user_id',
+            'lte_id');
     }
 
     public function levels()
@@ -259,7 +271,9 @@ class User extends Authenticatable
 
     public function resetExperience($year = null)
     {
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
         $this->getExperience($year)->update(
             ["points" => 0]
         );
@@ -277,7 +291,9 @@ class User extends Authenticatable
 
     public function getExperience($year = null)
     {
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
 
         $experience = Experience::firstOrCreate(
             [
@@ -302,7 +318,9 @@ class User extends Authenticatable
 
     public function stripExperience($points, $year = null)
     {
-        if (is_null($year)) $year = Carbon::now()->year;
+        if (is_null($year)) {
+            $year = Carbon::now()->year;
+        }
         $this->getExperience($year)->stripExperience($points);
 
     }
@@ -316,9 +334,10 @@ class User extends Authenticatable
      */
     public function getAvatarPathAttribute($avatar)
     {
-        if (is_null($avatar)) $avatar = 'avatars/default_avatar.png';
+        if (is_null($avatar)) {
+            $avatar = 'avatars/default_avatar.png';
+        }
         return Storage::disk('s3')->url($avatar);
-
     }
 
     /**
@@ -329,7 +348,6 @@ class User extends Authenticatable
      */
     public function getAvatarAttribute()
     {
-
         $arr = explode("/", $this->avatar_path);
         $filename = array_pop($arr);
         array_push($arr, $filename);
@@ -393,9 +411,10 @@ class User extends Authenticatable
 
     public function influence($edition = null)
     {
-
         Log::info("Influence for $this->email for edition $edition");
-        if (is_null($this->tag)) return 0;
+        if (is_null($this->tag)) {
+            return 0;
+        }
 
 //        $nameInTag = TagsHelper::getNameInTag($this->tag);
 
@@ -480,6 +499,33 @@ class User extends Authenticatable
     public function taggedActivities()
     {
         return $this->hasMany('App\Event', 'leading_teacher_tag', 'tag');
+    }
+
+
+    public function hasGivenConsent()
+    {
+        return $this->consent_given_at !== null;
+    }
+
+    public function hasGivenFutureConsent()
+    {
+        return $this->future_consent_given_at !== null;
+    }
+
+    public function giveConsent()
+    {
+        if (!$this->hasGivenConsent()) {
+            $this->consent_given_at = now();
+            $this->save();
+        }
+    }
+
+    public function giveFutureConsent()
+    {
+        if (!$this->hasGivenFutureConsent()) {
+            $this->future_consent_given_at = now();
+            $this->save();
+        }
     }
 
 

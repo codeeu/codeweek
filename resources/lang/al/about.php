@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'when-title' =>
-        'Për vitin 2023, EU Code Week do të zhvillohet mes datave 7 dhe 22 tetor.',
+    'when-title' => 'Për vitin 2024, EU Code Week do të zhvillohet mes datave 14 dhe 27 tetor.',
     'when-text' => '<p>EU Code Week është një lëvizje në terren që feston aftësinë
                         krijuese, zgjidhjen e problemeve dhe bashkëpunimin përmes programimit dhe aktiviteteve
                         të tjera teknologjike. Ideja është që programimi të bëhet më
@@ -80,5 +79,5 @@ return [
                             Code Week 4 All</a> dhe duke u lidhur me aktivitete nëpër komunitete dhe përtej
                         kufijve ose duke na ndihmuar të përhapim vizionin e Code si <a href="/ambassadors">Ambasador
                             i EU Code Week</a> për vendin tuaj!</p>',
-    'partners_and_sponsors' => 'Partnerët dhe sponsorët'
+    'partners_and_sponsors' => 'Partnerët dhe sponsorët',
 ];

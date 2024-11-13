@@ -22,15 +22,15 @@ return [
             '1' => 'Kliknij Dodaj wydarzenie.',
             '2' => 'Gdy twoje wydarzenie zostanie zaakceptowane, otrzymasz potwierdzenie e-mailem wraz z unikatowym kodem wyzwania „Code Week 4 All”.',
             '3' => 'Skopiuj kod i podziel się nim z kolegami oraz pozostałymi kontaktami w sieci, którzy także organizują wydarzenie związanie z kodowaniem. Promuj inicjatywę, aby zachęcić innych do wzięcia udziału w wyzwaniu!',
-            '4' => 'Po zakończeniu kampanii organizatorzy każdego wydarzenia zostaną poproszeni o przedstawienie raportu dotyczącego liczby uczestników, których udało im się zaangażować. Jeśli uda wam się osiągnąć któryś z progów, ty i twoi koledzy, którzy należeli do twojej sieci, otrzymacie Certyfikat Doskonałości!'
+            '4' => 'Po zakończeniu kampanii organizatorzy każdego wydarzenia zostaną poproszeni o przedstawienie raportu dotyczącego liczby uczestników, których udało im się zaangażować. Jeśli uda wam się osiągnąć któryś z progów, ty i twoi koledzy, którzy należeli do twojej sieci, otrzymacie Certyfikat Doskonałości!',
         ],
         'existing_alliance' => [
             'title' => 'Jeśli chcesz dołączyć do istniejącego sojuszu:',
             '1' => 'W pole KOD UCZESTNICTWA W TYGODNIU KODOWANIA DLA WSZYSTKICH wklej kod uczestnictwa otrzymany od organizatora, który stworzył wasz sojusz.',
             '2' => 'Kliknij Dodaj wydarzenie.',
             '3' => 'Promuj inicjatywę (i podziel się kodem!), aby pozyskać większą liczbę organizatorów dla swojego sojuszu.',
-            '4' => 'Po zakończeniu kampanii organizatorzy każdego wydarzenia zostaną poproszeni o przedstawienie raportu dotyczącego liczby uczestników, których udało im się zaangażować. Jeśli uda wam się osiągnąć któryś z progów, ty i twoi koledzy, którzy należeli do twojej sieci, otrzymacie Certyfikat Doskonałości!'
-        ]
+            '4' => 'Po zakończeniu kampanii organizatorzy każdego wydarzenia zostaną poproszeni o przedstawienie raportu dotyczącego liczby uczestników, których udało im się zaangażować. Jeśli uda wam się osiągnąć któryś z progów, ty i twoi koledzy, którzy należeli do twojej sieci, otrzymacie Certyfikat Doskonałości!',
+        ],
     ],
     'why' => [
         'title' => 'Dlaczego warto dołączyć do wyzwania?',
@@ -38,9 +38,9 @@ return [
         '2' => 'By zaangażować dużą liczbę uczniów.',
         '3' => 'By nawiązać znajomości z organizatorami i/lub szkołami z twojej społeczności lub z innych państw.',
         '4' => 'By wesprzeć innych organizatorów i nauczycieli.',
-        '5' => 'By zdobyć <strong>Certyfikat Doskonałości.</strong>'
+        '5' => 'By zdobyć <strong>Certyfikat Doskonałości.</strong>',
     ],
     'superorganiser-title' => 'Dyplom Super Organizatora',
-    'superorganiser' => 'Możesz także zdobyć dyplom Super Organizatora – wystarczy, że zorganizujesz i <a href="https://codeweek.eu/add">zgłosisz</a> co najmniej 10 różnych wydarzeń i działań w swojej szkole, organizacji lub online.'
+    'superorganiser' => 'Możesz także zdobyć dyplom Super Organizatora – wystarczy, że zorganizujesz i <a href="https://codeweek.eu/add">zgłosisz</a> co najmniej 10 różnych wydarzeń i działań w swojej szkole, organizacji lub online.',
 
 ];

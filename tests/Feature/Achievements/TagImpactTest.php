@@ -2,22 +2,18 @@
 
 namespace Tests\Feature\Achievements\Achievements;
 
-use App\Achievements\Events\UserEarnedExperience;
 use App\Event;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class TagImpactTest extends TestCase
+final class TagImpactTest extends TestCase
 {
+    use DatabaseMigrations;
 
-    use RefreshDatabase;
-
-    /** @test */
-    public function tag_impact_badge_should_be_awarded()
+    #[Test]
+    public function tag_impact_badge_should_be_awarded(): void
     {
 
         $this->signIn();
@@ -26,15 +22,15 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
+        $LT1 = \App\User::factory()->create(['tag' => 'foo-TEST123-bar']);
 
-        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null,'leading_teacher_tag'=>'foo-TEST123-bar'], 50);
+        $fifty_events = \App\Event::factory()->count(50)->create(['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar']);
 
         $this->assertCount(0, $user->achievements);
 
-        foreach ($fifty_events as $event){
+        foreach ($fifty_events as $event) {
             $event->update([
-                'status' => 'APPROVED'
+                'status' => 'APPROVED',
             ]);
         }
 
@@ -42,12 +38,12 @@ class TagImpactTest extends TestCase
 
         $this->assertCount(5, $LT1->fresh()->achievements);
 
-        $this->assertEquals("Influencer " . Carbon::now()->year, $LT1->fresh()->achievements[0]->name);
+        $this->assertEquals('Influencer '.Carbon::now()->year, $LT1->fresh()->achievements[0]->name);
 
     }
 
-    /** @test */
-    public function tag_impact_badge_should_be_removed_when_activity_is_rejected()
+    #[Test]
+    public function tag_impact_badge_should_be_removed_when_activity_is_rejected(): void
     {
 
         $this->signIn();
@@ -56,15 +52,15 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
+        $LT1 = \App\User::factory()->create(['tag' => 'foo-TEST123-bar']);
 
-        $ten_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null,'leading_teacher_tag'=>'foo-TEST123-bar'], 5);
+        $ten_events = \App\Event::factory()->count(5)->create(['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar']);
 
         $this->assertCount(0, $user->achievements);
 
-        foreach ($ten_events as $event){
+        foreach ($ten_events as $event) {
             $event->update([
-                'status' => 'APPROVED'
+                'status' => 'APPROVED',
             ]);
         }
 
@@ -72,18 +68,15 @@ class TagImpactTest extends TestCase
 
         $this->assertCount(1, $LT1->fresh()->achievements);
 
-        $bad_event = Event::firstWhere('id','=',3);
+        $bad_event = Event::firstWhere('id', '=', 3);
 
         $bad_event->update([
-            'status' => 'PENDING'
+            'status' => 'PENDING',
         ]);
 
         $this->assertEquals(8, $LT1->fresh()->getExperience()->points);
 
         $this->assertCount(0, $LT1->fresh()->achievements);
 
-
-
     }
-
 }

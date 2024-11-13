@@ -1,17 +1,15 @@
 <?php
 
-
 return [
     'title' => 'EU Code Week - Værdierklæring',
     'description' => [
-        1 =>
-            [
-                1 => 'EU’s kodeuge er en græsrodsbevægelse, der drives af frivillige –',
-                2 => 'ambassadører',
-                3 => 'lærere og kodningsentusiaster verden over. Bevægelsen støttes af',
-                4 => 'Europa-Kommissionen',
-                5 => 'og  undervisningsministerier i den Europæiske Union og på Vestbalkan.',
-            ],
+        1 => [
+            1 => 'EU’s kodeuge er en græsrodsbevægelse, der drives af frivillige –',
+            2 => 'ambassadører',
+            3 => 'lærere og kodningsentusiaster verden over. Bevægelsen støttes af',
+            4 => 'Europa-Kommissionen',
+            5 => 'og  undervisningsministerier i den Europæiske Union og på Vestbalkan.',
+        ],
 
         2 => 'Kernen i EU\'s kode er de frivillige aktivitetsarrangører, dvs lærere, mentorer, kodeklubber, biblioteker, private virksomheder, forældre samt ikke-statslige organisationer. Vi dedikerer vores tid, energi og evner til at udbrede datalogisk tænkning, kodning, robotteknologi, hardwaretilpasning, computervidenskab og digitale færdigheder i det hele taget til så mange som muligt i Europa og resten af verden.',
         3 => 'EU’s kodeuge er også millioner af deltagere; mennesker fra hele verden i alle aldre og af forskellige køn, baggrunde, kulturer og færdigheder.',
@@ -27,39 +25,37 @@ return [
     ],
     '3' => [
         'title' => 'EU’s kodeuge er global',
-        'content' =>
-            [
-                1 => 'Ambitionen med EU\'s kodeuge er at nå ud til alle, uanset om man bor i en storby, en regionshovedstad eller en fjerntliggende landsby. Vi lægger især vægt på at støtte vores lokale organisatorer med',
-                2 => 'materialer',
-                3 => 'på deres eget sprog og tilpasset deres behov.',
-                4 => 'Kodeuge-kortet',
-                5 => 'er et nøgleredskab, hvor aktiviteter registreres med nøjagtig placering. Samtidigt er kodeugen global og byder mennesker fra hele verden velkommen i fællesskabet. Vi er “glokale”.',
-            ]
+        'content' => [
+            1 => 'Ambitionen med EU\'s kodeuge er at nå ud til alle, uanset om man bor i en storby, en regionshovedstad eller en fjerntliggende landsby. Vi lægger især vægt på at støtte vores lokale organisatorer med',
+            2 => 'materialer',
+            3 => 'på deres eget sprog og tilpasset deres behov.',
+            4 => 'Kodeuge-kortet',
+            5 => 'er et nøgleredskab, hvor aktiviteter registreres med nøjagtig placering. Samtidigt er kodeugen global og byder mennesker fra hele verden velkommen i fællesskabet. Vi er “glokale”.',
+        ],
     ],
     '4' => [
         'title' => 'EU’s kodeuge handler om samarbejde',
         'content' => [
             1 => 'Medlemmerne af kodeuge-fællesskabet interagerer, udveksler oplysninger, lærer af hinanden og opbygger viden sammen. Vi er forbundne og vi støtter hinanden. Vi deler ressourcer, idéer og ’best practice’. Vi opmuntrer til partnerskaber og vidensdeling.',
             2 => 'Kodeugens Udfordring for Alle (4 All challenge)',
-            3 => 'sigter på at bygge bro henover grænser og lokalsamfund. Kodeugen hjælper med at sprede den positive energi og forbinde mennesker, der kan lære af hinanden.'
-        ]
+            3 => 'sigter på at bygge bro henover grænser og lokalsamfund. Kodeugen hjælper med at sprede den positive energi og forbinde mennesker, der kan lære af hinanden.',
+        ],
     ],
     '5' => [
         'title' => 'EU’s kodeuge er en non-profit bevægelse',
-        'content' =>
-            [
-                1 => 'Ingen tjener penge på kodeugens aktiviteter. Samtlige',
-                2 => 'ressourcer',
-                3 => 'på kodeugens hjemmeside kan tilgås gratis. Kodeugens undervisning og onlinekurser er alt sammen gratis.'
-            ]
+        'content' => [
+            1 => 'Ingen tjener penge på kodeugens aktiviteter. Samtlige',
+            2 => 'ressourcer',
+            3 => 'på kodeugens hjemmeside kan tilgås gratis. Kodeugens undervisning og onlinekurser er alt sammen gratis.',
+        ],
     ],
     '6' => [
         'title' => 'EU\'s kodeuge fremmer kreativitet og innovation',
-        'content' => 'EU’s kodeuge fremmer kreativitet, innovation og visionær tænkning. For at vi videre kan træffe beslutninger på et informeret grundlag og videreudvikle EU\'s kodeuge, modtager vi meget gerne feedback og kritik. Selv vores fejltrin kan hjælpe os med at vokse, både som mennesker og som fællesskab.'
+        'content' => 'EU’s kodeuge fremmer kreativitet, innovation og visionær tænkning. For at vi videre kan træffe beslutninger på et informeret grundlag og videreudvikle EU\'s kodeuge, modtager vi meget gerne feedback og kritik. Selv vores fejltrin kan hjælpe os med at vokse, både som mennesker og som fællesskab.',
     ],
     '7' => [
         'title' => 'EU\'s kodeuge er taknemmelig for fællesskabet',
-        'content' => 'Vi er taknemmelige for støtten fra lærere, undervisere og andre arrangerer af aktiviteter, elever/studerende, forældre, kodeklubber og alle de partnere vi samarbejder med. Vi deler alle det samme mål. Vi ønsker at udbrede datalogisk tænkning, kodning, computervidenskab og digitale færdigheder til så mange muligt.'
+        'content' => 'Vi er taknemmelige for støtten fra lærere, undervisere og andre arrangerer af aktiviteter, elever/studerende, forældre, kodeklubber og alle de partnere vi samarbejder med. Vi deler alle det samme mål. Vi ønsker at udbrede datalogisk tænkning, kodning, computervidenskab og digitale færdigheder til så mange muligt.',
     ],
 
 ];

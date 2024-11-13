@@ -14,7 +14,7 @@ return [
     'login' => 'Login',
     'register' => 'Registrer',
     'github' => 'Log ind med Github',
-    'twitter' => 'Log ind med Twitter',
+    'X' => 'Log ind med X',
     'facebook' => 'Log ind med Facebook',
     'google' => 'Log ind med Google',
     'azure' => 'Log ind med Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Nulstil din adgangskode',
     'send_password' => 'Send link til nulstilling af adgangskode',
     'confirm_password' => 'Bekræft adgangskode',
-    'name' => 'navn'
+    'name' => 'navn',
 ];

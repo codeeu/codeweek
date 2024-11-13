@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner simple">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>@lang('event.main_title')</h1>
                 <a style="color:black;" href="{{route('guide')}}" target="_blank">@lang('event.howto')?</a>
             </div>
@@ -17,7 +17,6 @@
 
             <form enctype="multipart/form-data" method="post" role="form" class="codeweek-form" action="/events">
                 <p>@lang('event.required')</p>
-
                 {{csrf_field()}}
 
 
@@ -119,7 +118,9 @@
                                 <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"
                                              :multiple="true"
                                              label="event.audience"></multiselect>
+
                             </div>
+
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'audience'])@endcomponent
                             </div>
@@ -153,6 +154,7 @@
                                 </label>
                                 <div>
                                     <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"
+                                                      location="{{$location->location??''}}"
                                                       value="{{old('location')?:$location->location??''}}"
                                                       geoposition="{{old('geoposition')?:$location->geoposition??''}}"></autocomplete-geo>
                                     <div class="errors" style="margin-bottom: 10px; margin-left:0;">

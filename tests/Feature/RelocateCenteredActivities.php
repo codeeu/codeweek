@@ -5,55 +5,56 @@ namespace Tests\Feature;
 use App\Event;
 use App\Helpers\EventHelper;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Mail;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class RelocateCenteredActivities extends TestCase {
+final class RelocateCenteredActivities extends TestCase
+{
     use DatabaseMigrations;
 
-    /** @test */
-    function it_should_filter_centered_and_non_relocated_events() {
-        $france = create('App\Country', [
+    #[Test]
+    public function it_should_filter_centered_and_non_relocated_events(): void
+    {
+        $france = \App\Country::factory()->create([
             'iso' => 'FR',
             'longitude' => 2.824354,
-            'latitude' => 46.980252
+            'latitude' => 46.980252,
         ]);
 
-        $this->signIn(create('App\User'));
+        $this->signIn(User::factory()->create());
 
-        $goodPosition = create('App\Event', [
+        $goodPosition = \App\Event::factory()->create([
             'country_iso' => 'FR',
             'geoposition' => '46.980252,2.824354',
             'title' => 'foobar is love',
             'longitude' => 2.824354,
-            'latitude' => 46.980252
+            'latitude' => 46.980252,
         ]);
 
-        $relocated = create('App\Event', [
+        $relocated = \App\Event::factory()->create([
             'country_iso' => 'FR',
             'geoposition' => '46.980252,2.824354',
             'longitude' => 2.824354,
             'latitude' => 46.980252,
-            'relocated' => true
+            'relocated' => true,
         ]);
 
-        $elsewhere = create('App\Event', [
+        $elsewhere = \App\Event::factory()->create([
             'country_iso' => 'FR',
             'geoposition' => '47.980252,3.824354',
             'longitude' => 3.824354,
             'latitude' => 47.980252,
-            'relocated' => false
+            'relocated' => false,
         ]);
 
-        $online = create('App\Event', [
+        $online = \App\Event::factory()->create([
             'country_iso' => 'FR',
             'geoposition' => '47.980252,3.824354',
             'longitude' => 2.824354,
             'latitude' => 46.980252,
             'location' => 'online',
-            'relocated' => false
+            'relocated' => false,
         ]);
 
         $events = EventHelper::getCenteredNotRelocatedEvents('FR');

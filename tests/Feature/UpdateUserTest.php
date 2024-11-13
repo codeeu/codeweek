@@ -3,20 +3,20 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class UpdateUserTest extends TestCase
+final class UpdateUserTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-    /** @test */
-    function a_user_can_be_updated_by_its_owner()
+    #[Test]
+    public function a_user_can_be_updated_by_its_owner(): void
     {
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
-        $belgium = create('App\Country',['iso'=>'BE']);
+        $belgium = \App\Country::factory()->create(['iso' => 'BE']);
 
         $this->patch('user', [
             'firstname' => 'Changed firstname',
@@ -51,7 +51,7 @@ class UpdateUserTest extends TestCase
             'website' => 'Changed Website',
             'country_iso' => 'BE',
             'privacy' => 0,
-            'receive_emails' => 1
+            'receive_emails' => 1,
         ]);
 
         tap($user->fresh(), function ($user) {
@@ -62,13 +62,12 @@ class UpdateUserTest extends TestCase
         });
     }
 
-    /** @test */
-    function a_user_cant_update_its_email()
+    #[Test]
+    public function a_user_cant_update_its_email(): void
     {
-        $user = create(\App\User::class);
+        $user = \App\User::factory()->create();
 
         $this->signIn($user);
-
 
         $this->patch('user', [
             'email' => 'newmail@test.com',

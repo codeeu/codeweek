@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Que paises estão a fervilhar com atividades de programação? ',
-    'paragraph'=>'O painel está organizado por número de eventos de programação enumerados por população, pelo que não se surpreenda ao ver alguns dos países mais pequenos ocuparem o topo da lista!',
-    'parcipating_with'=>'participa com',
-    'events'=>'eventos'
+    'paragraph' => 'O painel está organizado por número de eventos de programação enumerados por população, pelo que não se surpreenda ao ver alguns dos países mais pequenos ocuparem o topo da lista!',
+    'parcipating_with' => 'participa com',
+    'events' => 'eventos',
 
 ];

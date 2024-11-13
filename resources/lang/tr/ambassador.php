@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'AB Kod Haftası Elçileri',
-    'your_current_country'=>'Bulunduğunuz ülke',
-    'visit_the'=> 'Ziyaret edin',
-    'local_facebook_page'=>'yerel Facebook sayfasını',
-    'local_website'=>'Yerel Web Sitesini',
-    'ambassadors'=>'Elçiler',
-    'no_ambassadors'=>'Herhangi bir elçi mevcut değildir',
-    'countries_with_ambassadors'=>'Elçisi olan ülkeler',
-    'why_dont_you_volunteer'=>'Hemen gönüllü olun!'
+    'your_current_country' => 'Bulunduğunuz ülke',
+    'visit_the' => 'Ziyaret edin',
+    'local_facebook_page' => 'yerel Facebook sayfasını',
+    'local_website' => 'Yerel Web Sitesini',
+    'ambassadors' => 'Elçiler',
+    'no_ambassadors' => 'Herhangi bir elçi mevcut değildir',
+    'countries_with_ambassadors' => 'Elçisi olan ülkeler',
+    'why_dont_you_volunteer' => 'Hemen gönüllü olun!',
 
 ];

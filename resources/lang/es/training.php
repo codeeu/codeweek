@@ -303,6 +303,78 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
                 "3" => "Programa mi estado de ánimo para alumnos de segundo ciclo de secundaria",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Agua",
+            "author" => "por Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Agua es una respuesta a la necesidad de abordar el problema de la contaminación del agua. A pesar de los esfuerzos llevados a cabo en los últimos años, todavía quedan 2 000 millones de personas en el mundo que no tienen acceso a agua potable segura. Esto significa que el Objetivo de Desarrollo Sostenible (ODS) 6 de la Agenda 2030, en el que se afirma que todo el mundo debe tener acceso a agua potable y saneamiento para 2030, está lejos de conseguirse. Lo mismo ocurre con el ODS 14 sobre la vida submarina, según el que se pretende preservar y utilizar la sostenibilidad de los océanos, mares y recursos marinos para un desarrollo sostenible",
+
+                "Este minicurso se centra en el tema relevante y de actualidad de la medición de la calidad del agua y los nuevos contaminantes que ponen en peligro la calidad del agua. Los alumnos tendrán la oportunidad de investigar y buscar soluciones a problemas relacionados con el agua y el medio ambiente, lo que les permitirá desarrollar capacidades como la investigación, el pensamiento crítico y la resolución de problemas",
+
+                "Esta lección prevé incluir actividades prácticas y creativas, como la programación en Scratch, la iniciación al aprendizaje automático y la inteligencia artificial con Learning ML y la construcción de vehículos guiados con sets de LEGO para la recogida de muestras de agua y el análisis de su pH. Estas actividades permitirán que los alumnos pongan en práctica sus capacidades y conocimientos en un entorno interactivo y divertido, lo cual mejorará su motivación e incrementará su interés en el proyecto",
+
+                "Para la puesta en práctica de este minicurso, proponemos que se lleven a cabo las tres actividades en el aula, con el fin de completar todo el proyecto y conseguir un proceso de aprendizaje más instructivo y motivador. Sin embargo, cada una de las actividades puede llevarse a cabo de forma aislada"
+
+            ],
+            "activities" => [
+                "1" => "SOS Agua con Scratch",
+                "2" => "SOS Agua con Learning ML",
+                "3" => "SOS Agua con la robótica de LEGO"
+            ]
+
+        ],
+        "20" => [
+            "title" => "Código a través del arte",
+            "autor" => "por Maria Tsapara",
+            "text" => [
+                "Los niños crecen en un mundo complejo y en constante desarrollo tecnológico, lo que exige planteamientos educativos innovadores para los educadores de la primera infancia. Estos planteamientos incluyen actividades que fomenten el pensamiento computacional y la programación desde una edad temprana. La investigación sugiere que las actividades dirigidas pueden desarrollar eficazmente el pensamiento computacional y las habilidades de resolución de problemas de los niños y, al mismo tiempo, tales actividades fomentan su expresión creativa a través de la tecnología",
+                "Aunque la estrategia más común para enseñar a programar implica el uso de robots educativos, también existe la posibilidad de programar sin utilizar un kit de robótica (actividades desenchufadas). Este enfoque puede adoptar diversas formas e incluir una amplia gama de actividades (pixel art, niños en el papel de robots, uso de una cuadrícula en el suelo, etc.). Estas actividades ofrecen ventajas de aprendizaje experimental, especialmente para los niños pequeños, que aprenden mejor jugando. ",
+                "<strong>El Learning Bit El código a través del arte</strong> comprende tres planes de clase para educadores de la primera infancia e implementa una actividad desenchufada, el uso de un robot educativo Bee-bot y el kit de invención Makey Makey. Mediante el uso del kit Makey Makey, los alumnos tienen la oportunidad de crear interfaces tangibles y probar diferentes soluciones, crear, experimentar y reforzar todas sus capacidades de aprendizaje en un entorno de aprendizaje colaborativo",
+                "Como dijo Pablo Picasso: \"Todo niño es un artista. El problema es cómo seguir siendo un artista una vez que crece\". El arte proporciona a los niños oportunidades para representar y comunicar creativamente sus ideas y sentimientos. En este Learning Bit encontrará actividades inspiradoras para cultivar las habilidades sociales y del siglo XXI de  sus alumnos a través del arte y la codificación, para animarles a expresarse de forma creativa y fomentando su imaginación. El Learning Bit El código a través del arte le permitirá fomentar la creatividad, la colaboración y la resolución de problemas de sus alumnos  integrando el arte y la codificación"
+            ],
+            "activities" => [
+                "1" => "Codificación artística. Alumnos de educación infantil de 4 a 6 años",
+                "2" => "Laboratorio de código creativo. Alumnos de educación infantil de 4 a 6 años",
+                "3" => "Lienzo táctil: Creación de pinturas interactivas. Alumnoas de educación infantil de 4 a 6 años; avanzado"
+            ]
+        ],
+        "19" => [
+
+            "title" => "Laboratorio creativo de Scratch",
+            "author" => "por Krzysztof Jaworski",
+            "text" => [
+
+                "Hoy en día, aprender programación va más allá de prepararse para la carrera de programación y se extiende más allá de los límites de la informática. Debería enfocarse de manera general, englobando una perspectiva interdisciplinaria y utilizando la programación como una herramienta para aprender y jugar con el fin de fomentar el desarrollo de futuras competencias",
+
+                "Es fundamental que los niños y jóvenes comprendan cómo se pueden utilizar las herramientas digitales de forma segura, responsable y eficaz. Necesitan comprender cómo funcionan estas herramientas y cómo comunicarse con ellas a través de la programación. Además, esta experiencia debería implicar interacciones colaborativas con sus compañeros.",
+
+                "El minicurso <strong>Creative Scratch Laboratory</strong> mejorará la creatividad de los alumnos, favorecerá su curiosidad y hará que programar sea una actividad agradable y divertida.  Consiste en tres planes de aprendizaje para alumnos con distintas habilidades de programación. En el plan de aprendizaje para principiantes, los alumnos crean un personaje en papel, lo importan a Scratch y lo animan empleando determinados bloques. En el plan de aprendizaje de nivel intermedio, se enseña a los alumnos la herramienta Video Sprites, la elaboración de gráficos con papel y rotuladores, y la creación de un mosaico de Scratch con Video Sprites, sellos y dibujos. En el plan de aprendizaje avanzado, los alumnos exploran la función de reconocimiento facial de Scratch, experimentan con la manipulación de gráficos de objetos y crean un miniteatro con diálogos generados en Scratch"
+
+            ],
+            "activities" => [
+                "1" => "Dibuja y anima un objeto: para principiantes",
+                "2" => "Sellos: para alumnos con nivel intermedio",
+                "3" => "Teatro de marionetas: para alumnos con nivel avanzado",
+            ]
+        ],
+        "21" => [
+            "title" => "Elaboración y codificación",
+            "author" => "por Ulla Hauptmann",
+            "text" => [
+                "Los Makerspaces son centros dinámicos donde la creatividad prospera y los proyectos prácticos cobran vida. A la hora de seleccionar el equipamiento para un Makerspace, hay que centrarse en herramientas como Calliope mini, Microbit o Makey Makey, ya que ofrecen un amplio abanico de posibilidades adecuadas para alumnos de diferentes edades y niveles de habilidad. Estas placas sirven para el desarrollo de proyectos creativos para los niños más pequeños gracias a sus lenguajes de programación basados en bloques. Para los estudiantes de más edad, se pueden crear proyectos más complejos utilizando estas placas",
+                "¡Explore el <strong>Learning Bit Elaboración y codificación</strong> para sumergirse en el mundo de los Makerspaces y fomentar habilidades interdisciplinares como el trabajo en equipo y la colaboración social al tiempo que fomenta la innovación y el entusiasmo entre tus alumnos!",
+                "Makey Makey es una placa de circuitos que convierte objetos cotidianos en teclas de ordenador. Al conectar objetos a la placa con pinzas de cocodrilo, que luego se conectan al ordenador mediante un cable USB (o un iPad con un adaptador de cámara), Makey Makey puede abrir y cerrar circuitos eléctricos entre una persona y un objeto. Esto envía señales eléctricas que el ordenador recibe como pulsaciones del teclado o del ratón. Esto permite a los alumnos desarrollar inventos creativos como instrumentos musicales, juegos de ordenador o carteles interactivos: ¡las posibilidades son infinitas! Makey Makey y los proyectos presentados en este Learning Bit pueden utilizarse tanto en primaria como en secundaria para enseñar habilidades en áreas como la educación sobre medios de comunicación, la informática, las ciencias, la física, la música, el deporte y habilidades interdisciplinares como el trabajo en equipo y las habilidades sociales" ,
+                "Adéntrese en el apasionante mundo de Makey Makey y desate una creatividad sin límites en su aula"
+            ],
+            "activities" => [
+                "1" => "Makey Makey se encuentra con la música: para principiantes",
+                "2" => "Cuadros parlantes: para alumnos de nivel intermedio",
+                "3" => "Crear un póster interactivo: para estudiantes avanzados",
+            ]
+        ]
+
 
     ],
     'download_video_script' => 'Descargar el guion del vídeo',

@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Organizuar nga: ',
+    'organised_by' => 'Organizuar nga: ',
     'contact_email' => 'Emaili i kontaktit: ',
     'happening_at' => 'Zhvillohet në: ',
     'from' => 'Nga ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Klikoni për t’ia dërguar me email një shoku',
         'subject' => 'Shikoni këtë eveniment fantastik kodimi',
         'body_1' => 'Si je? Shiko pak këtë evenimentin ',
-        'body_2' => 'në '
+        'body_2' => 'në ',
     ],
     'edit' => 'Modifikoni evenimentin',
     'note' => 'SHËNIM: ',
     'pending_warning' => 'Ky eveniment është ende duke u shqyrtuar nga ',
     'pending_link' => 'moderatorët',
-    'nearby_upcoming_events' => 'Evenimentet e ardhshme në afërsi:'
+    'nearby_upcoming_events' => 'Evenimentet e ardhshme në afërsi:',
 ];

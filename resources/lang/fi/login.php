@@ -14,7 +14,7 @@ return [
     'login' => 'Kirjaudu sisään',
     'register' => 'Rekisteröidy',
     'github' => 'Kirjaudu sisään Github-tunnuksilla.',
-    'twitter' => 'Kirjaudu sisään Twitter-tunnuksilla.',
+    'X' => 'Kirjaudu sisään X-tunnuksilla.',
     'facebook' => 'Kirjaudu sisään Facebook-tunnuksilla.',
     'google' => 'Kirjaudu sisään Google-tunnuksilla.',
     'azure' => 'Kirjaudu sisään Azure-tunnuksilla.',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Palauta salasanasi',
     'send_password' => 'Lähetä salasanan palautuslinkki',
     'confirm_password' => 'Vahvista salasana',
-    'name' => 'nimi'
+    'name' => 'nimi',
 ];

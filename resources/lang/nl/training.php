@@ -298,6 +298,78 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
                 "3" => "Programmeer mijn gevoelens voor de bovenbouw voortgezet onderwijs",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Water",
+            "author" => "door Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water is een antwoord op de noodzaak om de problemen op het gebied van watervervuiling aan te pakken. Ondanks de inspanningen van de afgelopen jaren zijn er wereldwijd nog steeds 2 miljard mensen die geen toegang hebben tot veilig drinkwater. Dit betekent dat Duurzame Ontwikkelingsdoelstelling 6 van de Agenda voor 2030, waarin staat dat alle mensen in 2030 toegang moeten hebben tot veilig beheerd water en sanitaire voorzieningen, nog lang niet is bereikt. Hetzelfde geldt voor Duurzame Ontwikkelingsdoelstelling 14, Leven in het water, die gericht is op het behoud en duurzaam gebruik van de oceanen, zeeën en mariene hulpbronnen voor duurzame ontwikkeling.",
+
+                "Deze leerbit richt zich op het relevante en actuele onderwerp waterkwaliteitsmeting en de nieuwe verontreinigende stoffen die een probleem vormen voor de waterkwaliteit. Leerlingen krijgen de kans om echte problemen op het gebied van water en milieu te onderzoeken en er oplossingen voor te zoeken, waardoor ze vaardigheden als onderzoek, kritisch denken en het oplossen van problemen kunnen ontwikkelen.",
+
+                "De lesplannen bevatten praktische en creatieve activiteiten, zoals programmeren in Scratch, een inleiding tot machine learning en kunstmatige intelligentie met Learning ML en het bouwen van een op afstand bestuurbaar voertuig met een LEGO-set dat watermonsters kan nemen en de pH van water kan analyseren. Door deze activiteiten kunnen leerlingen hun vaardigheden en kennis in een interactieve en speelse omgeving in de praktijk brengen, wat hun motivatie en interesse in het project vergroot.",
+
+                "Voor de implementatie van deze leerbit wordt voorgesteld om de drie activiteiten in de les te ontwikkelen, om het hele project te voltooien en zo een zinvoller en motiverender leerproces te realiseren. Elke activiteit kan echter ook afzonderlijk worden uitgevoerd."
+
+            ],
+            "activities" => [
+                "1" => "SOS Water met Scratch",
+                "2" => "SOS Water met machine learning",
+                "3" => "SOS Water met robotica",
+            ]
+
+        ],
+        "20" => [
+            "title" => "Code door kunst",
+            "author" => "door Maria Tsapara",
+            "text" => [
+                "Kinderen groeien op in een complexe wereld die zich technologisch voortdurend ontwikkelt, wat vraagt om innovatieve educatieve benaderingen voor opvoeders van jonge kinderen. Deze benaderingen omvatten activiteiten die computationeel denken en programmeren al op jonge leeftijd stimuleren. Onderzoek wijst uit dat gerichte activiteiten het computationeel denken en probleemoplossend vermogen van kinderen effectief kunnen ontwikkelen en tegelijkertijd hun creatieve expressie door middel van technologie bevorderen.",
+                "Hoewel de meest gebruikelijke strategie voor het aanleren van programmeren het gebruik van educatieve robots is, bestaat er ook de mogelijkheid om te programmeren zonder het gebruik van een robotkit (unplugged). Deze aanpak kan verschillende vormen aannemen en een breed scala aan activiteiten omvatten (pixel art, kinderen in de rol van robots, het gebruik van een vloerrooster, enz.) Deze activiteiten bieden voordelen op het gebied van ervaringsleren, vooral voor jonge kinderen die het best spelenderwijs leren. ",
+                "<strong>De Learning Bit Code door kunst</strong> bestaat uit drie lesplannen voor opvoeders van jonge kinderen en implementeert een unplugged activiteit, het gebruik van de educatieve robot Bee-Bot en de Makey Makey Invention Kit. Door het gebruik van de Makey Makey-kit krijgen leerlingen de kans om tastbare interfaces te maken en verschillende oplossingen uit te proberen, te creëren, te experimenteren en al hun leervaardigheden te versterken in een collaboratieve leeromgeving.",
+                "Zoals Pablo Picasso zei: \"Elk kind is een kunstenaar. Het probleem is hoe je een kunstenaar blijft als je eenmaal volwassen bent.\" Kunst biedt kinderen de mogelijkheid om hun ideeën en gevoelens creatief weer te geven en te communiceren. In deze Learning Bit vind je inspirerende activiteiten om de sociale en 21e-eeuwse vaardigheden van je leerlingen te ontwikkelen door middel van kunst en codering, om ze aan te moedigen zich creatief uit te drukken en hun verbeelding te stimuleren. Met de Learning Bit Code door kunst kun je de creativiteit, samenwerking en het probleemoplossend vermogen  van je leerlingen stimuleren door kunst en codering te integreren."
+            ],
+            "activities" => [
+                "1" => "Artful Coding: 4-6 jaar oude kleuterschoolleerlingen.",
+                "2" => "Creative Code Lab: 4-6 jaar oude kleuterschoolleerlingen",
+                "3" => "Touch Canvas: Interactieve schilderijen maken: 4-6 jaar oude kleuters; gevorderden."
+            ]
+        ],
+        "19" => [
+
+            "title" => "Creative Scratch Laboratory",
+            "author" => "door Krzysztof Jaworski",
+            "text" => [
+
+                "Leren programmeren gaat tegenwoordig verder dan het voorbereiden op een carrière als programmeur en stopt niet bij de grenzen van de informatica. Het vraagt om een brede benadering, waarbij programmering vanuit een interdisciplinaire invalshoek wordt ingezet als een hulpmiddel voor leren en spelen om de ontwikkeling van toekomstige vaardigheden te stimuleren.",
+
+                "Voor kinderen en jongeren is het van cruciaal belang om te begrijpen hoe ze veilig, verantwoord en effectief gebruik kunnen maken van digitale hulpmiddelen. Ze moeten begrijpen hoe deze tools werken en weten hoe ze ermee moeten communiceren via programmering. Daarnaast is samenwerken met klasgenoten ook een belangrijk aspect van deze ervaring.",
+
+                "De leerbit <strong>Creative Scratch Laboratory</strong> vergroot de creativiteit van leerlingen, prikkelt hun nieuwsgierigheid en maakt coderen leuk.  Deze bestaat uit drie lesplannen voor leerlingen met verschillende coderingsvaardigheden. In het lesplan voor beginners creëren de leerlingen een personage op papier, importeren ze het in Scratch en animeren ze het met geselecteerde blokken. In het lesplan voor een gemiddeld niveau leren de leerlingen de tool Video Sprites, grafisch knutselen met papier en stiften en het maken van een Scratch-mozaïek met Video Sprites, stempels en illustraties. In het lesplan voor gevorderden verkennen leerlingen de gezichtsherkenningsfunctie in Scratch, experimenteren ze met het bewerken van sprite-afbeeldingen en maken ze een minitheater met dialogen gegenereerd in Scratch.",
+
+            ],
+            "activities" => [
+                "1" => "Sprite tekenen en animeren: voor beginners",
+                "2" => "Stempels: voor een gemiddeld niveau",
+                "3" => "Poppentheater: voor gevorderden",
+            ]
+        ],
+        "21" => [
+            "title" => "Maken en coderen",
+            "author" => "door Ulla Hauptmann",
+            "text" => [
+                "Makerspaces zijn levendige hubs waar creativiteit bloeit en hands-on projecten tot leven komen. Bij het selecteren van apparatuur voor een Makerspace ligt de focus op tools zoals Calliope mini, Microbit of Makey Makey, omdat deze een breed scala aan mogelijkheden bieden die geschikt zijn voor leerlingen van verschillende leeftijden en vaardigheidsniveaus. Deze printplaten ondersteunen de ontwikkeling van creatieve projecten voor jongere kinderen dankzij de blokgebaseerde programmeertalen die beschikbaar zijn voor deze printplaten. Voor oudere leerlingen kunnen complexere projecten worden gegenereerd met deze borden.",
+                "Verken de <strong>Learning Bit Maken en coderen</strong> om een duik te nemen in de wereld van Makerspaces en interdisciplinaire vaardigheden zoals teamwork en sociale samenwerking te bevorderen, terwijl je innovatie en enthousiasme bij je leerlingen stimuleert!",
+                "Makey Makey is een printplaat dat alledaagse voorwerpen omzet in computertoetsen. Door voorwerpen met krokodillenklemmen op de printplaat aan te sluiten, die vervolgens via een USB-kabel (of een iPad met camera-adapter) met de computer worden verbonden, kan Makey Makey elektrische circuits tussen een persoon en een voorwerp openen en sluiten. Die stuurt elektrische signalen die de computer ontvangt als toetsenbordaanslagen of muisklikken. Hierdoor kunnen leerlingen creatieve uitvindingen ontwikkelen zoals muziekinstrumenten, computerspelletjes of interactieve posters – de mogelijkheden zijn eindeloos! Makey Makey en de projecten die in deze Learning Bit gepresenteerd worden, kunnen zowel in het basisonderwijs als in het voortgezet onderwijs gebruikt worden om vaardigheden aan te leren op het gebied van media-educatie, informatica, wetenschap, natuurkunde, muziek, sport en interdisciplinaire vaardigheden zoals teamwork en sociale vaardigheden.",
+                "Stap in de spannende wereld van Makey Makey en ontgrendel grenzeloze creativiteit in je klas!"
+            ],
+            "activities" => [
+                "1" => "Makey Makey ontmoet muziek: voor beginners.",
+                "2" => "Sprekende afbeeldingen: voor gevorderde leerlingen.",
+                "3" => "Maak een interactieve poster: voor gevorderde leerlingen.",
+            ]
+        ]
+
 
 
     ],

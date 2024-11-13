@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Organizzato da: ',
+    'organised_by' => 'Organizzato da: ',
     'contact_email' => 'E-mail di contatto: ',
     'happening_at' => 'Luogo dell’evento: ',
     'from' => 'Da ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Fai clic per inviare via e-mail a un amico',
         'subject' => 'Guarda questo fantastico evento di programmazione',
         'body_1' => 'Ciao, verifica ',
-        'body_2' => 'evento presso '
+        'body_2' => 'evento presso ',
     ],
     'edit' => 'Modifica evento',
     'note' => 'NOTA: ',
     'pending_warning' => 'Questo evento è ancora in fase di revisione da parte dei ',
     'pending_link' => 'moderatori',
-    'nearby_upcoming_events' => 'Prossimi eventi nelle vicinanze:'
+    'nearby_upcoming_events' => 'Prossimi eventi nelle vicinanze:',
 ];

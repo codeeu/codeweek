@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -11,17 +10,14 @@ class ActivitiesAdministratorRoleSeeder extends Seeder
 {
     /**
      * Run the database seeders.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
         // Reset cached roles and permissions
         app()['cache']->forget('spatie.permission.cache');
 
         // create permissions
         Permission::create(['name' => 'feature event']);
-
 
         // create roles and assign created permissions
 

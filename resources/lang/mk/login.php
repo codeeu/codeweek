@@ -14,7 +14,7 @@ return [
     'login' => 'Пријавување',
     'register' => 'Регистрирање',
     'github' => 'Најави се со Github',
-    'twitter' => 'Најави се со Twitter',
+    'X' => 'Најави се со X',
     'facebook' => 'Најави се со Facebook',
     'google' => 'Најави се со Google',
     'azure' => 'Најави се со Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Ресетирај ја лозинката',
     'send_password' => 'Испрати врска за ресетирање лозинка',
     'confirm_password' => 'Потврди лозинка',
-    'name' => 'име'
+    'name' => 'име',
 ];

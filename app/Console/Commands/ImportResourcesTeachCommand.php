@@ -34,13 +34,11 @@ class ImportResourcesTeachCommand extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         //Read the Excel Sheet
-        Excel::import(new ResourcesTeachImport, 'resources-teach.xlsx','excel');
-//        Excel::import(new ResourcesTeachImport, 'apple-teach-2019.xlsx','excel');
+        Excel::import(new ResourcesTeachImport, 'resources-teach.xlsx', 'excel');
+        //        Excel::import(new ResourcesTeachImport, 'apple-teach-2019.xlsx','excel');
     }
 }

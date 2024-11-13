@@ -17,6 +17,6 @@ return [
     'reset' => 'Fjalëkalimi është rivendosur!',
     'sent' => 'Kemi dërguar lidhjen e rivendosjes së fjalëkalimit!',
     'token' => 'Kjo shenjë për rivendosjen e fjalëkalimit është e pavlefshme.',
-    'user' => "Nuk mund të gjejmë një përdorues me atë adresë emaili.",
+    'user' => 'Nuk mund të gjejmë një përdorues me atë adresë emaili.',
 
 ];

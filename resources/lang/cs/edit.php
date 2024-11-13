@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Upravit svou #CodeWeek akci',
+    'title' => 'Upravit svou #EUCodeWeek akci',
     'required_fields' => 'Povinná pole jsou označená * hvězdičkou. Bez obav přidejte seznam akcí ve svém jazyce.',
     'description' => 'Popis',
     'audience' => 'Účast',
@@ -29,12 +29,12 @@ return [
         'header' => 'Vaše kontaktní informace',
         'text_1' => 'Tyto informace budou viditelné pouze pro ',
         'link_1' => 'Ambasadory Evropského týdne programování',
-        'text_2'=> ' a organizátory
+        'text_2' => ' a organizátory
         Týdne programování, kteří
         vaši akci zkontrolují, než se objeví na mapě, a možná vás zkontaktují, pokud jsou nezbytné
         nějaké úpravy, nebo
         se na vás obrátí po akci kvůli administrativnímu průzkumu pro statistické účely.',
-        'contact_email' => 'Váš kontaktní email'
-    ], 
-    'edit' => 'Upravit akci'
+        'contact_email' => 'Váš kontaktní email',
+    ],
+    'edit' => 'Upravit akci',
 ];

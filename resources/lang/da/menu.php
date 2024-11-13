@@ -15,7 +15,7 @@ return [
 
     'learn' => 'Læring',
     'teach' => 'Undervisning',
-    'training' => 'Træning', 'toolkits' => 'Præsentationer og værktøjssæt', 'why' => 'HVORFOR', 'home'  => 'Startside',
+    'training' => 'Træning', 'toolkits' => 'Præsentationer og værktøjssæt', 'why' => 'HVORFOR', 'home' => 'Startside',
     'events' => 'Aktiviteter',
     'ambassadors' => 'Ambassadører',
     'resources' => 'Ressourcer',
@@ -37,7 +37,7 @@ return [
     'logout' => 'Log ud',
     'signin' => 'Log ind',
     'privacy' => 'Beskyttelse af personoplysninger',
-    'participation'=> 'Deltagerbevis',
+    'participation' => 'Deltagerbevis',
     'values' => 'Vores værdier',
     'featured_activities' => 'Fremhævede aktiviteter',
     'codeweek2020' => '2020 udgaven'];

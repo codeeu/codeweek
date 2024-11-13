@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Raporlanacak herhangi bir etkinlik mevcut değildir.',
     'report' => 'Aşağıdaki etkinlikler başlamış ya da zaten bitmiş. İstatistiksel amaçla bazı sayıları doldurun
     ve Kod Haftası katılım sertifikanızı alın. Etkinlik başına
-    bir sertifika verilecektir.'
+    bir sertifika verilecektir.',
 ];

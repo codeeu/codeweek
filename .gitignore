@@ -1,5 +1,6 @@
 /node_modules
 /public/hot
+/public/build
 /public/storage
 /storage/*.key
 /vendor
@@ -18,10 +19,14 @@ public/css/app.css
 public/mix-manifest.json
 public/vendor/nova/*
 resources/lang/vendor/*
+resources/lang/*.json
 resources/latex/texput.log
 !app/Nova
 auth.json
 vue-i18n-locales.generated.js
 /storage/debugbar/
 /phpunit.xml
+/.phpunit.cache
 /.phpunit.result.cache
+
+.DS_Store

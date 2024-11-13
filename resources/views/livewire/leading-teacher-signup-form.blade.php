@@ -1,7 +1,7 @@
 <div>
     <form enctype="multipart/form-data" id="signupform" role="form"
           class="codeweek-form"
-          wire:submit.prevent="submit">
+          wire:submit="submit">
 
 
         <div class="codeweek-form-inner-container">
@@ -15,7 +15,7 @@
                            name="account_email"
                            type="text"
                            style="background: #dedede"
-                           wire:model="email"
+                           wire:model.live="email"
                            readonly>
                 </div>
 
@@ -30,7 +30,7 @@
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
                     <label for="id_country">* Country</label>
-                    <select id="id_country" name="selectedCountry" class="codeweek-input-select" wire:model="selectedCountry">
+                    <select id="id_country" name="selectedCountry" class="codeweek-input-select" wire:model.live="selectedCountry">
                         <option value="">Choose your country</option>
                         @foreach ($countries as $country)
                             <option value="{{$country->iso}}">{{$country->name}}</option>
@@ -46,7 +46,7 @@
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
                     <label for="id_city">* Closest City</label>
-                    <select id="id_city" name="selectedCity" class="codeweek-input-select" wire:model="selectedCity">
+                    <select id="id_city" name="selectedCity" class="codeweek-input-select" wire:model.live="selectedCity">
                         <option value="">Choose your city</option>
                         @foreach ($cities as $city)
                             <option value="{{$city->id}}">{{$city->city}}</option>
@@ -62,7 +62,7 @@
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
                     <label for="selectedLevels">* What level(s) of students do you teach ?</label>
-                    <select name="selectedLevels" id="selectedLevels" multiple size="6" class="codeweek-input-select" wire:model="selectedLevels" style="height:140px">
+                    <select name="selectedLevels" id="selectedLevels" multiple size="6" class="codeweek-input-select" wire:model.live="selectedLevels" style="height:140px">
                         @foreach($levels as $level)
                             <option value="{{$level['id']}}">{{__("resources.resources.levels.{$level['name']}")}}</option>
                         @endforeach
@@ -79,7 +79,7 @@
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
                     <label for="selectedSubjects">* What subject(s) do you teach ?</label>
-                    <select name="selectedSubjects" id="selectedSubjects" multiple size="6" class="codeweek-input-select" wire:model="selectedSubjects" style="height:140px">
+                    <select name="selectedSubjects" id="selectedSubjects" multiple size="6" class="codeweek-input-select" wire:model.live="selectedSubjects" style="height:140px">
                         @foreach($subjects as $subject)
                             <option value="{{$subject['id']}}">{{$subject['name']}}</option>
                         @endforeach
@@ -96,7 +96,7 @@
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
                     <label for="selectedExpertises">What are your expertise(s)</label>
-                    <select name="selectedExpertises" id="selectedExpertises" multiple size="6" class="codeweek-input-select" wire:model="selectedExpertises" style="height:170px">
+                    <select name="selectedExpertises" id="selectedExpertises" multiple size="6" class="codeweek-input-select" wire:model.live="selectedExpertises" style="height:170px">
                         @foreach($expertises as $expertise)
                             <option value="{{$expertise['id']}}">{{$expertise['name']}}</option>
                         @endforeach
@@ -112,7 +112,7 @@
 
             <div class="codeweek-form-field-privacy">
                 <label>
-                    <input id="isLeadingTeacher" name="isLeadingTeacher" wire:model="isLeadingTeacher"
+                    <input id="isLeadingTeacher" name="isLeadingTeacher" wire:model.live="isLeadingTeacher"
                            type="checkbox">
                     I declare that I am currently a Leading Teacher for EU Code Week.
                     <div style="color: red; margin-top:-20px;">
@@ -126,7 +126,7 @@
 
             <div class="codeweek-form-field-privacy">
                 <label>
-                    <input id="checkPrivacy" name="privacy" wire:model="privacy"
+                    <input id="checkPrivacy" name="privacy" wire:model.live="privacy"
                            type="checkbox">
                     By ticking this box, I confirm that I have read and consent with the <a href="{{route('privacy-contact-points')}}" target="_blank">treatment of the personal information</a>. <br/>
                     I have shared in this form and namely with the publication of that on the codeweek.eu. I understand that this information is shared in order to give better visibility to the Leading Teachers and allow interested teachers and individuals to contact me for specific questions or queries regarding the EU Code Week initiative.

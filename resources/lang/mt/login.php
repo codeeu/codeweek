@@ -14,7 +14,7 @@ return [
     'login' => 'Idħol fis-sistema',
     'register' => 'Irreġistra',
     'github' => 'Idħol bi Github',
-    'twitter' => 'Idħol bi Twitter',
+    'X' => 'Idħol bi X',
     'facebook' => 'Idħol b’Facebook',
     'google' => 'Idħol b’Google',
     'azure' => 'Idħol b’Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Irrisettja l-Password Tiegħek',
     'send_password' => 'Ibgħat il-Link tar-Risettjar tal-Password',
     'confirm_password' => 'Ikkonferma l-Password',
-    'name' => 'isem'
+    'name' => 'isem',
 ];

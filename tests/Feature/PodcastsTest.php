@@ -4,30 +4,30 @@ namespace Tests\Feature;
 
 use App\PodcastGuest;
 use App\PodcastResource;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Carbon;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-class PodcastsTest extends TestCase
+final class PodcastsTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
-    /** @test */
-    public function it_should_list_active_podcasts_in_rss()
+    #[Test]
+    public function it_should_list_active_podcasts_in_rss(): void
     {
-//        $this->withoutExceptionHandling();
+        //        $this->withoutExceptionHandling();
 
-        create('App\Podcast', ['description' => 'active description', 'active' => true, 'release_date' => Carbon::now()->subDay()]);
-        create('App\Podcast', [
+        create(\App\Podcast::class, ['description' => 'active description', 'active' => true, 'release_date' => Carbon::now()->subDay()]);
+        create(\App\Podcast::class, [
             'description' => 'cannot be displayed',
-            'active' => false
+            'active' => false,
         ]);
 
-        create('App\Podcast', [
+        create(\App\Podcast::class, [
             'description' => 'pending podcast',
             'active' => true,
-            'release_date' => Carbon::now()->addDays(10)
+            'release_date' => Carbon::now()->addDays(10),
         ]);
 
         $response = $this->get('feed/podcasts');
@@ -38,22 +38,20 @@ class PodcastsTest extends TestCase
 
     }
 
-    /** @test */
-    public function it_should_list_active_podcasts_in_html()
+    #[Test]
+    public function it_should_list_active_podcasts_in_html(): void
     {
-        create('App\Podcast', ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
-        create('App\Podcast', [
+        create(\App\Podcast::class, ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
+        create(\App\Podcast::class, [
             'title' => 'cannot be displayed',
-            'active' => false
+            'active' => false,
         ]);
 
-        create('App\Podcast', [
+        create(\App\Podcast::class, [
             'title' => 'pending title',
             'active' => true,
-            'release_date' => Carbon::now()->addHour()
+            'release_date' => Carbon::now()->addHour(),
         ]);
-
-
 
         $response = $this->get('/podcasts');
 
@@ -62,10 +60,10 @@ class PodcastsTest extends TestCase
         $response->assertDontSee('pending title');
     }
 
-    /** @test */
-    public function podcast_can_have_guests()
+    #[Test]
+    public function podcast_can_have_guests(): void
     {
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
 
         $podcastGuest = PodcastGuest::factory()->count(3)->for($podcast)->create();
         $otherPodcastGuests = PodcastResource::factory()->count(10)->create();
@@ -74,49 +72,45 @@ class PodcastsTest extends TestCase
 
     }
 
-    /** @test */
-    public function podcast_should_list_guests()
+    #[Test]
+    public function podcast_should_list_guests(): void
     {
 
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
 
         $podcastGuest = PodcastGuest::factory()->for($podcast)->create();
 
-        $response = $this->get('/podcast/' . $podcast->id);
+        $response = $this->get('/podcast/'.$podcast->id);
 
         $response->assertSee($podcastGuest->name);
 
     }
 
-    /** @test */
-    public function podcast_should_list_resources()
+    #[Test]
+    public function podcast_should_list_resources(): void
     {
 
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
 
         $podcastResource = PodcastResource::factory()->for($podcast)->create();
 
-        $response = $this->get('/podcast/' . $podcast->id);
+        $response = $this->get('/podcast/'.$podcast->id);
 
         $response->assertSee($podcastResource->name);
         $response->assertSee($podcastResource->url);
 
     }
 
-    /** @test */
-    public function podcast_can_have_resources()
+    #[Test]
+    public function podcast_can_have_resources(): void
     {
         $this->withoutExceptionHandling();
 
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
         $podcastResource = PodcastResource::factory()->count(3)->for($podcast)->create();
         $otherPodcastResource = PodcastResource::factory()->count(6)->create();
 
-
         $this->assertCount(3, $podcast->resources()->get());
 
-
     }
-
-
 }

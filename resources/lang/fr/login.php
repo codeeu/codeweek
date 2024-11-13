@@ -14,7 +14,7 @@ return [
     'login' => 'Connexion',
     'register' => 'S’enregistrer',
     'github' => 'Se connecter avec Github',
-    'twitter' => 'Se connecter avec Twitter',
+    'X' => 'Se connecter avec X',
     'facebook' => 'Se connecter avec Facebook',
     'google' => 'Se connecter avec Google',
     'azure' => 'Se connecter avec Azure',
@@ -27,5 +27,5 @@ return [
     'reset' => 'Réinitialiser votre mot de passe',
     'send_password' => 'Envoyer le lien permettant de réinitialiser votre mot de passe',
     'confirm_password' => 'Confirmer le mot de passe',
-    'name' => 'prénom'
+    'name' => 'prénom',
 ];

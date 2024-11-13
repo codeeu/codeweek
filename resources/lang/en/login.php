@@ -14,7 +14,7 @@ return [
     'login' => 'Login',
     'register' => 'Register',
     'github' => 'Sign in with Github',
-    'twitter' => 'Sign in with Twitter',
+    'X' => 'Sign in with X',
     'facebook' => 'Sign in with Facebook',
     'google' => 'Sign in with Google',
     'azure' => 'Sign in with Azure',
@@ -28,7 +28,6 @@ return [
     'reset' => 'Reset Your Password',
     'send_password' => 'Send Password Reset Link',
     'confirm_password' => 'Confirm Password',
-    'name' => 'name'
-
+    'name' => 'name',
 
 ];

@@ -3,17 +3,11 @@
 namespace App\Helpers;
 
 use App\Event;
-use App\Tag;
-use App\User;
 use Carbon\Carbon;
-use Exception;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
 
 class Codeweek4AllHelper
 {
-
     public static function kpis($code, $edition = null)
     {
 
@@ -30,7 +24,7 @@ class Codeweek4AllHelper
             ->groupBy('codeweek_for_all_participation_code')
             ->get();
 
-        dd($result);
+
 
         return $result;
 
@@ -45,12 +39,12 @@ class Codeweek4AllHelper
 
         select(DB::raw('count(DISTINCT creator_id) as total_creators, sum(participants_count) as total_participants, codeweek_for_all_participation_code'))
             ->where([
-                ['status', 'like', 'APPROVED']
+                ['status', 'like', 'APPROVED'],
             ])
             ->whereYear('end_date', '=', $edition)
             ->groupBy('codeweek_for_all_participation_code')
-            ->having('total_participants', ">", 0)
-            ->having('total_creators', ">=", 10)
+            ->having('total_participants', '>', 0)
+            ->having('total_creators', '>=', 10)
             ->get()
             ->pluck('codeweek_for_all_participation_code')
             ->toArray();
@@ -75,10 +69,9 @@ class Codeweek4AllHelper
             $edition = Carbon::now()->year;
         }
 
-        return Event::
-        select(DB::raw('codeweek_for_all_participation_code, sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, ((100.0*count(reported_at))/count(*)) as reporting_percentage'))
+        return Event::select(DB::raw('codeweek_for_all_participation_code, sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, ((100.0*count(reported_at))/count(*)) as reporting_percentage'))
             ->where([
-                ['status', 'like', 'APPROVED']
+                ['status', 'like', 'APPROVED'],
             ])
             ->whereYear('end_date', '=', $edition)
             ->whereIn('codeweek_for_all_participation_code', $toArray)
@@ -92,9 +85,7 @@ class Codeweek4AllHelper
             $edition = Carbon::now()->year;
         }
 
-        $result = Event::
-
-        select(DB::raw('countries.name , count(events.id) as event_per_country'))
+        $result = Event::select(DB::raw('countries.name , count(events.id) as event_per_country'))
             ->join('countries', 'events.country_iso', '=', 'countries.iso')
             ->where([
                 ['status', 'like', 'APPROVED'],
@@ -104,15 +95,12 @@ class Codeweek4AllHelper
             ->groupBy('country_iso')
             ->get();
 
-
         return $result;
     }
 
     public static function getInitiatorByCodeweek4All($code)
     {
-        $result = Event::
-
-        select(DB::raw('users.email'))
+        $result = Event::select(DB::raw('users.email'))
             ->join('users', 'events.creator_id', '=', 'users.id')
             ->where([
                 ['status', 'like', 'APPROVED'],
@@ -122,10 +110,7 @@ class Codeweek4AllHelper
             ->first()
             ->email;
 
-
         return $result;
 
     }
-
-
 }

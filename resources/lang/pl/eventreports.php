@@ -14,5 +14,5 @@ return [
     */
     'reports_by' => 'Wydarzenia oczekujące na zgłoszenie przez ',
     'no_reports' => 'Brak wydarzeń do zgłoszenia.',
-    'report' => 'Wydarzenia wymienione poniżej już się rozpoczęły lub zakończyły. Wprowadź dane liczbowe dotyczące wydarzenia, które zostaną wykorzystane w celach statystycznych, a następnie odbierz certyfikat uczestnictwa w Tygodniu Kodowania. Otrzymasz jeden certyfikat za jedno wydarzenie.'
+    'report' => 'Wydarzenia wymienione poniżej już się rozpoczęły lub zakończyły. Wprowadź dane liczbowe dotyczące wydarzenia, które zostaną wykorzystane w celach statystycznych, a następnie odbierz certyfikat uczestnictwa w Tygodniu Kodowania. Otrzymasz jeden certyfikat za jedno wydarzenie.',
 ];

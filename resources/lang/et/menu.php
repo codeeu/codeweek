@@ -15,7 +15,7 @@ return [
 
     'learn' => 'Õpi',
     'teach' => 'Õpeta',
-    'training' => 'Koolitus', 'toolkits' => 'Presentatsioonid ja tööriistad', 'why' => 'MIKS', 'home'  => 'Esileht',
+    'training' => 'Koolitus', 'toolkits' => 'Presentatsioonid ja tööriistad', 'why' => 'MIKS', 'home' => 'Esileht',
     'events' => 'Tegevused',
     'ambassadors' => 'Saadikud',
     'resources' => 'Materjalid',
@@ -37,7 +37,7 @@ return [
     'logout' => 'Logi välja',
     'signin' => 'Logi sisse',
     'privacy' => 'Privaatsus',
-    'participation'=> 'Osalemise tunnistus',
+    'participation' => 'Osalemise tunnistus',
     'values' => 'Meie väärtused',
     'featured_activities' => 'Esiletõstetud üritused',
     'codeweek2020' => '2020. aasta versioon'];

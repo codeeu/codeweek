@@ -120,25 +120,9 @@
   }
 }
 
-.codeweek-flash-message{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
-.codeweek-flash-message .content{
-  padding: 5px 30px;
-  background-color: $main-color2;
-  display: flex;
-  border-radius: 0 0 10px 10px;
-}
 
-.codeweek-flash-message .content .level{
-  font-weight: bold;
-  margin-right: 10px;
-}
+
 .codeweek-cookie-consent-banner {
   padding: 20px 50px;
   border-bottom: 1px solid #e8e8e8;
@@ -235,6 +219,71 @@
     flex-direction: row;
   }
 }
+
+.codeweek-youtube-container {
+  width: 100%;
+  border: none;
+  height: 500px;
+  margin: auto;
+  background-color: #000; // Black background as a placeholder
+  position: relative;
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .container {
+      .content {
+        max-width: 90%;
+      }
+    }
+
+    .info {
+      width: 90%;
+      margin: auto;
+
+      .button {
+        button {
+          background-color: #40B5D1;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+
+          &:hover {
+            background: #FE6824;
+          }
+
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .remember {
+    input {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
   .codeweek-content-grid {

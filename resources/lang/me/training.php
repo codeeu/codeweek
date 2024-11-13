@@ -298,6 +298,25 @@ U ovom video zapisu, tim Nedjelje programiranja pokazaće vam nekoliko praktičn
                 "3" => "Programiraj me prema raspoloženju za učenike viših razreda srednje škole",
             ]
         ],
+        "19" => [
+
+            "title" => "Kreativna Skrač laboratorija",
+            "author" => "pripremio Krzysztof Jaworski",
+            "text" => [
+
+                "Učenje programiranja danas nadilazi pripremu za karijeru programera i izlazi iz okvira informatike. Neophodan je širok pristup, koji obuhvata interdisciplinarnu perspektivu i korišćenje programiranja kao alatke za učenje i igru koji podstiču razvoj budućih vještina.",
+
+                "Za djecu i mlade je veoma važno da razumiju kako koristiti digitalne alatke na bezbjedan, odgovoran i efikasan način. Neophodno je da shvate kako ove alatke funkcionišu i da umiju posredstvom programiranja komunicirati s njima. Osim toga, ovo iskustvo treba da obuhvata saradnju i interakciju s njihovim vršnjacima.",
+
+                "Ovaj modul za učenje <strong>Creative Scratch Laboratory</strong> unaprijediće kreativnost učenika, podstaći njihovu radoznalost i učiniti programiranje prijatnim i zabavnim.  On se sastoji od tri nastavna plana za učenike različitih programerskih vještina. U okviru nastavnog plana za početni nivo, učenici će nacrtati lik na papiru, učitati ga na platformu Skrač i animirati ga pomoću označenih blokova. U okviru nastavnog plana za srednji nivo, učenici će naučiti više o alatki Video Sprites, izradi grafike pomoću papira i markera i o pravljenju Skrač mozaika pomoću alatke Video Sprites, otisaka i crteža. U okviru nastavnog plana za napredni nivo, učenici će istraživati funkciju prepoznavanja lica u editoru Skrač, eksperimentisaće s manipulacijom grafike sprajtova i napraviće minijaturno pozorište s dijalozima generisanim na platformi Skrač.",
+
+            ],
+            "activities" => [
+                "1" => "Crtanje i animiranje sprajta: za početnike",
+                "2" => "Otisci: za učenike srednjeg nivoa",
+                "3" => "Lutkarsko pozorište: za učenike naprednog nivoa",
+            ]
+        ],
 
 
     ],

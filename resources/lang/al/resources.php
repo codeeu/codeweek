@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Si ta organizoni aktivitetin?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Rusisht',
-            'Norwegian'=>'Norvegjisht',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japonisht',
-            'All targeted languages' => 'Të gjitha gjuhët e synuara'
+            'Russian' => 'Rusisht',
+            'Norwegian' => 'Norvegjisht',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japonisht',
+            'All targeted languages' => 'Të gjitha gjuhët e synuara',
         ],
         'levels' => [
             'Beginner' => 'Fillestar',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Ciklit i mesëm i ulët (12-16)',
             'Upper secondary school (16-18)' => 'Cikli i mesëm (16-18)',
             'Higher Education' => 'Cikli i lartë',
-            'Other' => 'Tjetër'
+            'Other' => 'Tjetër',
         ],
         'subjects' => [
             'Art' => 'Art',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fizikë',
             'Coding' => 'Kodimi',
             'Special Education Needs' => 'Nevoja të veçanta arsimore',
-            'Other' => 'Tjetër'
+            'Other' => 'Tjetër',
         ],
         'types' => [
             'Tutorial' => 'Udhëzues',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Seti i mjeteve',
             'Other' => 'Tjetër',
             'Lesson Plan' => 'Plani mësimor',
-            'Guide' => 'Udhëzues'
+            'Guide' => 'Udhëzues',
         ],
         'categories' => [
             'Coding' => 'Kodimi',
@@ -76,9 +76,8 @@ return [
             'Making' => 'Krijimi',
             'Tinkering' => 'Modifikimi',
             'Unplugged Activities' => 'Aktivitetet jashtë linje',
-            'Other' => 'Tjetër'
-        ]
-    ]
-
+            'Other' => 'Tjetër',
+        ],
+    ],
 
 ];

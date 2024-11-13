@@ -2,18 +2,10 @@
 
 namespace App\Console\Commands\Importers;
 
-use App\Helpers\ImporterHelper;
 use App\Imports\CoderDojoEventsImport;
-use App\Imports\EventsImport;
-use App\Imports\RemoteImporter;
-use Exception;
 use Illuminate\Console\Command;
-use Feeds;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
-
 
 class CoderDojo extends Command
 {
@@ -40,20 +32,16 @@ class CoderDojo extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
      * Execute the console command.
-     *
-     * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
-        Log::info("Loading CoderDojo");
+        Log::info('Loading CoderDojo');
 
-        Excel::import(new CoderDojoEventsImport, 'coderdojo2020.xlsx','excel');
-
+        Excel::import(new CoderDojoEventsImport, 'coderdojo2020.xlsx', 'excel');
 
         // Process the events
 

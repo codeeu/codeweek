@@ -14,7 +14,7 @@ return [
     'login' => 'Oturum Aç',
     'register' => 'Kayıt Ol',
     'github' => 'Github ile Oturum Aç',
-    'twitter' => 'Twitter ile Oturum Aç',
+    'X' => 'X ile Oturum Aç',
     'facebook' => 'Facebook ile Oturum Aç',
     'google' => 'Google ile Oturum Aç',
     'azure' => 'Azure ile Oturum Aç',
@@ -27,6 +27,6 @@ return [
     'reset' => 'Parola Sıfırla',
     'send_password' => 'Parola Sıfırlama Bağlantısı Gönder',
     'confirm_password' => 'Parola Onayla',
-    'name' => 'isim'
+    'name' => 'isim',
 
 ];

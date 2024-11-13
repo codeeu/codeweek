@@ -56,7 +56,7 @@
                     <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                 </ul>
             </li>
-            <li><a href="http://blog.codeweek.eu/" target="_blank" rel="noreferer noopener">@lang('menu.blog')</a></li>
+            <li><a href="https://codeweek.eu/blog/" rel="noreferer noopener">@lang('menu.blog')</a></li>
         </ul>
     </nav>
     <div id="right-menu">
@@ -88,10 +88,19 @@
                         </a>
                     </li>
                     @endrole
-                    @role('ambassador|super admin')
+                    @role('ambassador')
                     <li>
                         <img src="/images/user_menu_volunteers.svg" class="icon">
                         <a href="{{route('admin.online-events')}}">
+                            @lang('menu.online_events')
+                        </a>
+                    </li>
+
+                    @endrole
+                    @role('super admin')
+                    <li>
+                        <img src="/images/user_menu_volunteers.svg" class="icon">
+                        <a href="{{route('promoted_events')}}">
                             @lang('menu.online_events')
                         </a>
                     </li>
@@ -215,30 +224,30 @@
                     </ul>
                 </div>
             </div>
-            @if(!isset(Request::header()["dnt"]))
-                @if (Cookie::get('codeweek_cookie_consent') == 1)
-                    <div class="round-button menu-trigger facebook-menu">
-                        <img src="/images/facebook.svg" alt="Facebook" class="button-icon">
-                        <div class="menu-dropdown">
-                            <div class="fb-page" data-width="400"
-                                 data-href="https://www.facebook.com/codeEU" data-tabs="timeline"
-                                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                                 data-show-facepile="true">
-                                <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a
-                                            href="https://www.facebook.com/codeEU">EU Code Week</a></blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="round-button menu-trigger twitter-menu">
-                        <img src="/images/x-twitter.svg" alt="Twitter" class="button-icon">
-                        <div class="menu-dropdown">
-                            <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"
-                               data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"
-                               data-tweet-limit="4"></a>
-                        </div>
-                    </div>
-                @endif
-            @endif
+{{--            @if(!isset(Request::header()["dnt"]))--}}
+{{--                @if (Cookie::get('codeweek_cookie_consent') == 1)--}}
+{{--                    <div class="round-button menu-trigger facebook-menu">--}}
+{{--                        <img src="/images/facebook.svg" alt="Facebook" class="button-icon">--}}
+{{--                        <div class="menu-dropdown">--}}
+{{--                            <div class="fb-page" data-width="400"--}}
+{{--                                 data-href="https://www.facebook.com/codeEU" data-tabs="timeline"--}}
+{{--                                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"--}}
+{{--                                 data-show-facepile="true">--}}
+{{--                                <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a--}}
+{{--                                            href="https://www.facebook.com/codeEU">EU Code Week</a></blockquote>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="round-button menu-trigger twitter-menu">--}}
+{{--                        <img src="/images/x-twitter.svg" alt="Twitter" class="button-icon">--}}
+{{--                        <div class="menu-dropdown">--}}
+{{--                            <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"--}}
+{{--                               data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"--}}
+{{--                               data-tweet-limit="4"></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+{{--            @endif--}}
         </div>
     </div>
 </header>

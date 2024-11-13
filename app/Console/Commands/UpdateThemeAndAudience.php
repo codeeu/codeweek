@@ -5,7 +5,6 @@ namespace App\Console\Commands;
 use App\Event;
 use App\Helpers\MeetAndCodeHelper;
 use Illuminate\Console\Command;
-use Illuminate\Support\Arr;
 
 class UpdateThemeAndAudience extends Command
 {
@@ -35,12 +34,10 @@ class UpdateThemeAndAudience extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): void
     {
-        $events = Event::where("event_url","like","https://meet-and-code.org/%")->get();
+        $events = Event::where('event_url', 'like', 'https://meet-and-code.org/%')->get();
 
         foreach ($events as $event) {
 
@@ -48,13 +45,6 @@ class UpdateThemeAndAudience extends Command
         }
 
         $this->info('Themes and Audiences have been updated');
-
-
-
-
-
-
-
 
     }
 }
