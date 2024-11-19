@@ -213,12 +213,12 @@ class PartnerContentComponent extends Component
             ],
             (object)[
                 'id' => 10,
-                'name' => 'Junior Achievement Spain',
-                'logo_url' => 'images/partners/jas.png',
+                'name' => ' Euractiv',
+                'logo_url' => 'images/partners/Euractiv.png',
                 'categories' => ['Partners'],
-                 'description' => 'DJunior Achievement Spain is an influential organization dedicated to equipping young people with the skills and knowledge necessary for success in their future careers. Its educational programs focus on financial literacy, entrepreneurship, and work readness, providing students with real-world experiences and practical learning opportunities. Through partnerships with businesses and educators, Junior Achievement Spain fosters a culture of innovation and self-discovery, encouraging students to take initiative in their education and career paths. The organization believes in the potential of every young person to contribute positively to society.',
-                'link_url' => 'https://www.fundacionjaes.org',
-                'main_img_url' => 'images/partners/jas.png'
+                 'description' => 'Euractiv is an independent pan-European media network specialised in EU affairs. We cover EU policy processes upstream of decisions, summarising the issues without taking sides. Euractiv’s policy coverage is spread across eight ‘hubs’, Agrifood, Economy, Energy & Environment & Transport, Global Europe, Health, Politics, Technology, and Defence. Our news coverage is complemented by a strong events programme where we bring together the key stakeholders across the breadth of European policy-making for constructive discussion and debate. Euractiv is an experienced communication, dissemination, and exploitation partner in many European projects.',
+                'link_url' => 'https://www.euractiv.com/',
+                'main_img_url' => 'images/partners/Euractiv.png'
             ],
             (object)[
                 'id' => 11,
