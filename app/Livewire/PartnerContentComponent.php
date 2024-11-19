@@ -154,7 +154,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/matrix.png'
             ],
             (object)[
-                'id' => 5,
+                'id' => 6,
                 'name' => 'eSkills Malta Foundation',
                 'logo_url' => 'images/partners/eskills.jpg',
                  'categories' => ['Partners'],
@@ -167,7 +167,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/eskills.jpg'
             ],
             (object)[
-                'id' => 6,
+                'id' => 7,
                 'name' => 'Latvian Information and communications technology association (LIKTA)',
                 'logo_url' => 'images/partners/likta.png',
                  'categories' => ['Partners'],
@@ -178,7 +178,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/likta.png'
             ],
             (object)[
-                'id' => 7,
+                'id' => 8,
                 'name' => 'JA Ukraine',
                 'logo_url' => 'images/partners/JAUkraine1.png',
                 'categories' => ['Partners'],
@@ -187,7 +187,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/JAUkraine1.png'
             ],
             (object)[
-                'id' => 8,
+                'id' => 9,
                 'name' => 'CityLab, STEM Labs (GREECE)',
                 'logo_url' => 'images/partners/citylab.png',
                  'categories' => ['Partners'],
@@ -199,7 +199,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/citylab.png'
             ],
             (object)[
-                'id' => 9,
+                'id' => 10,
                 'name' => 'European Centre for Women in Technology - ECWT',
                 'logo_url' => 'images/partners/ecwt.png',
                 'categories' => ['Partners'],
@@ -212,16 +212,16 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/ecwt.png'
             ],
             (object)[
-                'id' => 10,
-                'name' => 'Junior Achievement Spain',
-                'logo_url' => 'images/partners/jas.png',
+                'id' => 11,
+                'name' => ' Euractiv',
+                'logo_url' => 'images/partners/Euractiv.png',
                 'categories' => ['Partners'],
-                 'description' => 'DJunior Achievement Spain is an influential organization dedicated to equipping young people with the skills and knowledge necessary for success in their future careers. Its educational programs focus on financial literacy, entrepreneurship, and work readness, providing students with real-world experiences and practical learning opportunities. Through partnerships with businesses and educators, Junior Achievement Spain fosters a culture of innovation and self-discovery, encouraging students to take initiative in their education and career paths. The organization believes in the potential of every young person to contribute positively to society.',
-                'link_url' => 'https://www.fundacionjaes.org',
-                'main_img_url' => 'images/partners/jas.png'
+                 'description' => 'Euractiv is an independent pan-European media network specialised in EU affairs. We cover EU policy processes upstream of decisions, summarising the issues without taking sides. Euractiv’s policy coverage is spread across eight ‘hubs’, Agrifood, Economy, Energy & Environment & Transport, Global Europe, Health, Politics, Technology, and Defence. Our news coverage is complemented by a strong events programme where we bring together the key stakeholders across the breadth of European policy-making for constructive discussion and debate. Euractiv is an experienced communication, dissemination, and exploitation partner in many European projects.',
+                'link_url' => 'https://www.euractiv.com/',
+                'main_img_url' => 'images/partners/Euractiv.png'
             ],
             (object)[
-                'id' => 11,
+                'id' => 12,
                 'name' => 'Officina Futuro Fondazione W-Group ETS',
                 'logo_url' => 'images/partners/offwg.jpg',
                 'categories' => ['Partners'],
@@ -232,7 +232,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/offwg.jpg'
             ],
             (object)[
-                'id' => 12,
+                'id' => 13,
                 'name' => 'Charlie Miller Group',
                 'logo_url' => 'images/partners/charliemiller.webp',
                 'categories' => ['Partners'],
@@ -241,7 +241,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/charliemiller.web'
             ],
             (object)[
-                'id' => 13,
+                'id' => 14,
                 'name' => 'CyRIC - Cyprus Research and Innovation Center',
                 'logo_url' => 'images/partners/cyric.png',
                 'categories' => ['Partners'],
@@ -251,7 +251,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/cyric.png'
             ],
             (object)[
-                'id' => 14,
+                'id' => 15,
                 'name' => 'Uni Systems Information Technology Systems Commercial Single Member Societe Anonyme (trading as Uni Systems S.M.S.A.)',
                 'logo_url' => 'images/partners/Unisystems.png',
                 'categories' => ['Partners'], 
@@ -264,7 +264,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/Unisystems.png'
             ],
             (object)[
-                'id' => 15,
+                'id' => 16,
                 'name' => 'Science on Stage Germany',
                 'logo_url' => 'images/partners/sos.jpg',
                 'categories' => ['Partners'],
@@ -273,7 +273,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/sos.jpg'
             ],
             (object)[
-                'id' => 16,
+                'id' => 17,
                 'name' => 'National Collage of Ireland',
                 'logo_url' => 'images/partners/nci.png',
                 'categories' => ['Partners'],
@@ -282,7 +282,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/nci.png'
             ],
             (object)[
-                'id' => 17,
+                'id' => 18,
                 'name' => 'Intel',
                 'logo_url' => 'images/partners/Intel-Logo.png',
                 'categories' => ['Partners'],
@@ -292,7 +292,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/Intel-Logo.png'
             ],
             (object)[
-                'id' => 18,
+                'id' => 19,
                 'name' => 'Simplon.co',
                 'logo_url' => 'images/partners/simplon.png',
                 'categories' => ['Partners'],
@@ -302,7 +302,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/simplon.png'
             ],
             (object)[
-                'id' => 19,
+                'id' => 20,
                 'name' => 'Terawe',
                 'logo_url' => 'images/partners/terawe1.png',
                 'categories' => ['Partners'],
@@ -313,7 +313,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/terawe.png'
             ],
             (object)[
-                'id' => 20,
+                'id' => 21,
                 'name' => 'DIGITALEUROPE',
                 'logo_url' => 'images/partners/DIGITALEUROPE.png',
                 'categories' => ['Partners'],
@@ -326,7 +326,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/DIGITALEUROPE.png'
             ],
             (object)[
-                'id' => 21,
+                'id' => 22,
                 'name' => 'GENÇ BAŞARI EĞİTİM VAKFI - JA TÜRKİYE',
                 'logo_url' => 'images/partners/turkey.png',
                 'categories' => ['Partners'],
@@ -335,7 +335,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/turkey.png'
             ],
             (object)[
-                'id' => 22,
+                'id' => 23,
                 'name' => 'LINKS Foundation',
                 'logo_url' => 'images/partners/links.png',
                 'categories' => ['Partners'],
@@ -346,7 +346,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/links.png'
             ],
             (object)[
-                'id' => 23,
+                'id' => 24,
                 'name' => 'European Parents Association',
                 'logo_url' => 'images/partners/epa.jpg',
                 'categories' => ['Partners'],
@@ -367,7 +367,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/epa.jpg'
             ],
              (object)[
-                'id' => 24,
+                'id' => 25,
                 'name' => 'Junior Achievement Bulgaria ',
                 'logo_url' => 'images/partners/JABulgaria1.png',
                 'categories' => ['Partners'],
@@ -376,7 +376,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/JABulgaria1.png'
             ],
              (object)[
-                'id' => 25,
+                'id' => 26,
                 'name' => 'I. osnovna škola Čakovec',
                 'logo_url' => 'images/partners/IOSCK.png',
                 'categories' => ['Partners'],
@@ -385,7 +385,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/IOSCK.png'
             ],
             (object)[
-                'id' => 26,
+                'id' => 27,
                 'name' => 'Fundacja Koalicji na Rzecz Polskich Innowacji',
                 'logo_url' => 'images/partners/logo_kpi.jpg',
                 'categories' => ['Partners'],
@@ -394,7 +394,7 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/logo_kpi.jpg'
             ],
             (object)[
-                'id' => 27,
+                'id' => 28,
                 'name' => 'WIDE ANDCO',
                 'logo_url' => 'images/partners/WIDE_CO.png',
                 'categories' => ['Partners'],
@@ -407,92 +407,92 @@ class PartnerContentComponent extends Component
                 'main_img_url' => 'images/partners/WIDE_CO.png'
             ],
             (object)[
-                'id' => 28,
+                'id' => 29,
                 'logo_url' => 'images/partners/africa.png',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 29,
+                'id' => 30,
                 'logo_url' => 'images/partners/apple.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 30,
+                'id' => 31,
                 'logo_url' => 'images/partners/amazon.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 31,
+                'id' => 32,
                 'logo_url' => 'images/partners/code-org.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 32,
+                'id' => 33,
                 'logo_url' => 'images/partners/colabora_coderdojo.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 33,
+                'id' => 34,
                 'logo_url' => 'images/partners/digital-skills.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 34,
+                'id' => 35,
                 'logo_url' => 'images/partners/emma.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 35,
+                'id' => 36,
                 'logo_url' => 'images/partners/colabora_eun.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 36,
+                'id' => 37,
                 'logo_url' => 'images/partners/google.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 37,
+                'id' => 38,
                 'logo_url' => 'images/partners/lego_sponosorboard.jpg',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 38,
+                'id' => 39,
                 'logo_url' => 'images/partners/makeblock.png',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 39,
+                'id' => 40,
                 'logo_url' => 'images/partners/meet_and_code_logo.png',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 40,
+                'id' => 41,
                 'logo_url' => 'images/partners/microbit.png',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 41,
+                'id' => 42,
                 'logo_url' => 'images/partners/open_roberta.png',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 42,
+                'id' => 43,
                 'logo_url' => 'images/partners/colabora_PublicLibraries2030.png',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 42,
+                'id' => 44,
                 'logo_url' => 'images/partners/scratch.png',
                 'categories' => ['Sponsor'],
             ],
              (object)[
-                'id' => 43,
+                'id' => 45,
                 'logo_url' => 'images/partners/urbinocarlo.png',
                 'categories' => ['Sponsor'],
             ],
             (object)[
-                'id' => 44,
+                'id' => 46,
                 'name' => __('partners.ja_spain_name'),
                 'logo_url' => 'images/partners/jaspain.png',
                 'categories' => ['Partners'],
