@@ -6,11 +6,9 @@ trait LatexCleaner
 {
     public function tex_escape($string)
     {
-
-        $string = str_replace('"', "''", $string);
-        $string = str_replace('Ȋ', 'Î', $string);
-
         $map = [
+            'ʼ' => "'",  // Replace Unicode apostrophe with standard apostrophe
+            'ə' => '\\textschwa{}', // Handle ə
             '#' => '\\#',
             '$' => '\$',
             '%' => '\\%',
@@ -23,12 +21,13 @@ trait LatexCleaner
             '}' => '\\}',
         ];
 
-        $string = preg_replace_callback("/([\^\%~\\\\#\$%&_\{\}])/",
+        $string = preg_replace_callback(
+            "/([\^\%~\\\\#\$%&_\{\}ʼ])/",
             function ($matches) use ($map) {
-                foreach ($matches as $match) {
-                    return $map[$match];
-                }
-            }, $string);
+                return $map[$matches[0]] ?? $matches[0];
+            },
+            $string
+        );
 
         return $string;
     }
