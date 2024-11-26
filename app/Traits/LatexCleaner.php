@@ -9,8 +9,9 @@ trait LatexCleaner
         $map = [
             'ʼ' => "'",  // Replace Unicode apostrophe with standard apostrophe
             'ə' => '\\textschwa{}', // Handle ə
+            '"' => "''", // Replace double quotes with two single quotes
             '#' => '\\#',
-            '$' => '\$',
+            '$' => '\\$',
             '%' => '\\%',
             '&' => '\\&',
             '~' => '\\~{}',
@@ -21,14 +22,12 @@ trait LatexCleaner
             '}' => '\\}',
         ];
 
-        $string = preg_replace_callback(
-            "/([\^\%~\\\\#\$%&_\{\}ʼ])/",
+        return preg_replace_callback(
+            "/([\#\$%&~_\^\\\\{}ʼ\"])/",
             function ($matches) use ($map) {
                 return $map[$matches[0]] ?? $matches[0];
             },
             $string
         );
-
-        return $string;
     }
 }
