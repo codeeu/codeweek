@@ -38,7 +38,9 @@ class CertificateParticipation
 
     public function __construct($name_for_certificate, $event_name, $event_date)
     {
-        ini_set('max_execution_time', 300); // Set max execution time to 300 seconds
+        ini_set('max_execution_time', 600); // Set max execution time to 600 seconds
+        ini_set('memory_limit', '512M');    // Set memory limit to 512 MB (adjust as needed)
+
         $this->name_of_certificate_holder = $name_for_certificate;
         $this->event_name = $event_name;
         $this->event_date = $event_date;
@@ -127,7 +129,7 @@ class CertificateParticipation
             . escapeshellarg($this->resource_path . '/' . $this->personalized_template_name . '.tex');
 
         $process = Process::fromShellCommandline($command, $this->resource_path);
-        $process->setTimeout(600); // Set 600 seconds timeout
+        $process->setTimeout(600); // Allow up to 600 seconds for execution
         $this->execute_process($process);
 
         if (!$process->isSuccessful()) {
