@@ -42,7 +42,7 @@ class CoderDojoEvents extends Command
 
         Excel::import(
             new CoderDojoEventsImport(),
-            '20241024 CodeWeek activities NOVEMBER CoderDojo Belgium.xlsx',
+            'events-coderdojobelgium.xlsx',
             'excel'
         );
     }
