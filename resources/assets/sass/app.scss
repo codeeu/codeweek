@@ -90,6 +90,15 @@ p {
   padding: 15px 0;
 }
 
+p.partner_text {
+  color: #FFF;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 h1 {
   & + p {
     padding-top: 30px;

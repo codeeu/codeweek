@@ -35,4 +35,6 @@ return [
         'und die Liste der Botschafter/innen der EU Code Week ansehen',
         'Wenn es in Ihrem Land Botschafter/innen gibt, wenden Sie sich bitte direkt an diese, um zu erfahren, wie Sie die Initiative am besten unterstützen können. Gibt es in Ihrem Land niemanden, können Sie sich an info@codeweek.eu wenden.',
     ],
+
+    'codeweek_de' => '<p>In Deutschland wird die Code Week von einem Team aus ehrenamtlichen Botschafter*innen, zahlreichen bundesweiten Regio-Hubs und vielen weiteren Akteur*innen getragen. Das bundesweite Regio-Hub-Netzwerk wird von der Körber-Stiftung koordiniert. Das internationale deutschsprachige Code Week Netzwerk in Deutschland, Österreich, Liechtenstein und Schweiz wird von Science on Stage koordiniert. </p>'
 ];
