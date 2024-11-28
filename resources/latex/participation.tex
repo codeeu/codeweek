@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[greek,russian,english]{babel}
+\usepackage[russian,english]{babel}
 \usepackage{mathpazo}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[landscape,a4paper]{geometry}
@@ -15,12 +15,15 @@
 \usepackage{textcomp}
 \usepackage{paratype}
 \usepackage{tgpagella}
+\usepackage{tipa}
 
-
+% Declare font substitution for Cyrillic encoding
 \DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
 
+% Define custom color
 \definecolor{myorange}{RGB}{226, 83, 48}
 
+% Background image setup
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
@@ -31,31 +34,27 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \vfill
 }}}
 
-
-
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 ~
 \vspace{2.2cm}
 ~
 \begin{center}
-
 \vspace{5.9cm}
 
 {\centering\fontsize{36}{48}\selectfont
 \begin{otherlanguage*}{russian}
-\textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
+\textcolor{myorange}{Білоголова Дар'я} % Replace placeholder here
 \end{otherlanguage*}
 \par}
 
 \begin{table}[h]
 \footnotesize
-
 \begin{center}
 \fontsize{24}{36}\selectfont
 \vspace{1.6cm}
 \begin{otherlanguage*}{russian}
-\textcolor{myorange}{<EVENT_NAME>}
+\textcolor{myorange}{Соціальна інженерія в цифровому просторі} % Event name
 \end{otherlanguage*}
 \end{center}
 \end{table}
@@ -65,9 +64,7 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \begin{center}
 \hspace{-0.5cm}
 \begin{otherlanguage*}{russian}
-\textcolor{black}{<EVENT_DATE>}
+\textcolor{black}{12/11/2026} % Event date
 \end{otherlanguage*}
-%\end{tabular}
-
 \end{center}
 \end{document}
