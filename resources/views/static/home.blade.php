@@ -2,7 +2,8 @@
 
 @section('content')
     <section id="codeweek-homepage" class="codeweek-page">
-        <section id="main-banner">
+        <section class="relative" id="main-banner">
+            <img src="/images/bubbles1.png" class="absolute top-0 right-0 static-image">
             <div class="what">
                 <div class="separator"></div>
                 <div class="text">@lang('home.about')</div>
@@ -11,13 +12,16 @@
                 <div class="countdown">
                     <div id="countdown">
                     </div>
-                    <img src="/images/countdown.svg" class="static-image">
+                    <img src="/images/xmas.svg" class="static-image max-h-[422px]">
                 </div>
                 <div class="when">
-                    <div class="mb-4 title">#EUCodeWeek</div>
-                    <!--<div class="date">@lang('home.when')</div> -->
-                    <div class="text">@lang('home.when_text')</div>
-                    <div class="arrow"><img src="/images/arrow_down.svg"></div>
+                    <div class="title">Coding@Christmas</div>
+                    <div class="date">@lang('home.when')</div> 
+                    <div class="text">@lang('home.xmas_text')</div>
+                   <!-- <div class="arrow"><img src="/images/arrow_down.svg"></div>-->
+                   <a href="/blog/codingchristmas-2024/" class="mt-4 self-start px-6 text-base font-bold text-white uppercase bg-secondary hover:bg-blue-primary leading-truly-normal rounded-lg min-h-[38px] lg:max-w-[168px] flex items-center justify-center max-tablet:px-5 max-tablet:w-full max-tablet:max-w-full max-lg:text-center max-tablet:mx-auto" role="button">
+                    Get involved!
+                    </a>
                 </div>
             </div>
         </section>

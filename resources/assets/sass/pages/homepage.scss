@@ -10,6 +10,7 @@
 #main-banner .what{
   display: flex;
   margin: 50px 10%;
+  margin-bottom: 1rem;
 }
 
 #main-banner .what .separator{
@@ -33,6 +34,22 @@
 
 #main-banner .info .when{
   margin: 40px 0 20px 10%;
+}
+
+@media (max-width: 993px) {
+  #main-banner .info .when {
+    margin: 4rem;
+  }
+}
+
+@media (max-width: 525px) {
+  #main-banner .info .when {
+    margin: 0rem;
+  }
+
+  #main-banner .info {
+    padding: 1rem;
+  }
 }
 
 #main-banner .info .when .arrow{
@@ -60,6 +77,11 @@
   margin-top: 15px;
   text-align: center;
   width: 220px;
+}
+@media (max-width: 993px) {
+  #main-banner .info .when .date {
+    width: 100%;
+  }
 }
 #main-banner .info .countdown {
   margin-bottom: 15px;
@@ -188,7 +210,6 @@
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px)  {
   #main-banner{
-    background-image: url('/images/bubbles.svg');
     background-repeat: no-repeat;
     background-position-x: 112%;
   }
@@ -292,17 +313,19 @@
   }
   #main-banner .info .when{
     margin-right: 50px;
-    width: 350px;
+    width: auto;
+    max-width: 500px;
   }
   #main-banner .info .when .date{
     font-size: 38px;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
   }
   #main-banner .info .when .text {
     font-size: 18px;
   }
   #main-banner .info .countdown {
-    margin-top: 50px;
+  margin-top: 3rem;
+  margin-left: -10px;
   }
   #main-banner .info .when .arrow{
     width: 94px;
