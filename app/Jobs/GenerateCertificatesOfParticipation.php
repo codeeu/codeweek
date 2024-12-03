@@ -17,6 +17,20 @@ class GenerateCertificatesOfParticipation implements ShouldQueue
     protected Participation $participation;
 
     /**
+     * The number of times the job may be attempted.
+     *
+     * @var int
+     */
+    public $tries = 3;
+
+    /**
+     * The number of seconds the job can run before timing out.
+     *
+     * @var int
+     */
+    public $timeout = 300;
+
+    /**
      * Create a new job instance.
      *
      * @return void
@@ -34,14 +48,21 @@ class GenerateCertificatesOfParticipation implements ShouldQueue
         $names = array_map('trim', explode(',', $this->participation->names));
 
         $this->participation['status'] = 'PROCESSING';
-
         $this->participation->save();
 
         $zipUrl = CertificatesHelper::doGenerateCertificatesOfParticipation($names, $this->participation->event_name, $this->participation->event_date);
 
         $this->participation['participation_url'] = $zipUrl;
         $this->participation['status'] = 'DONE';
+        $this->participation->save();
+    }
 
+    /**
+     * Handle a job failure.
+     */
+    public function failed(\Throwable $exception): void
+    {
+        $this->participation['status'] = 'FAILED';
         $this->participation->save();
     }
 }
