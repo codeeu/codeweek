@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[russian,english]{babel}
+\usepackage[greek,russian,english]{babel} % Include required languages
 \usepackage{mathpazo}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[landscape,a4paper]{geometry}
@@ -15,9 +15,8 @@
 \usepackage{textcomp}
 \usepackage{paratype}
 \usepackage{tgpagella}
-\usepackage{tipa}
 
-% Declare font substitution for Cyrillic encoding
+% Font substitution for Cyrillic
 \DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
 
 % Define custom color
@@ -42,20 +41,19 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \begin{center}
 \vspace{5.9cm}
 
+% Placeholder for participant name with dynamic language
 {\centering\fontsize{36}{48}\selectfont
-\begin{otherlanguage*}{russian}
-\textcolor{myorange}{Білоголова Дар'я} % Replace placeholder here
-\end{otherlanguage*}
+\textcolor{myorange}{\foreignlanguage{<LANG>}{<CERTIFICATE_HOLDER_NAME>}}
 \par}
 
 \begin{table}[h]
 \footnotesize
+
 \begin{center}
 \fontsize{24}{36}\selectfont
 \vspace{1.6cm}
-\begin{otherlanguage*}{russian}
-\textcolor{myorange}{Соціальна інженерія в цифровому просторі} % Event name
-\end{otherlanguage*}
+% Placeholder for event name with dynamic language
+\textcolor{myorange}{\foreignlanguage{<LANG>}{<EVENT_NAME>}}
 \end{center}
 \end{table}
 
@@ -63,8 +61,8 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \vspace{2.2cm}
 \begin{center}
 \hspace{-0.5cm}
-\begin{otherlanguage*}{russian}
-\textcolor{black}{12/11/2026} % Event date
-\end{otherlanguage*}
+% Placeholder for event date (typically language-independent)
+\textcolor{black}{<EVENT_DATE>}
 \end{center}
+
 \end{document}
