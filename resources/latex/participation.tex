@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[greek,russian,english]{babel} % Include required languages
+\usepackage[greek,russian,english]{babel}
 \usepackage{mathpazo}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[landscape,a4paper]{geometry}
@@ -16,13 +16,11 @@
 \usepackage{paratype}
 \usepackage{tgpagella}
 
-% Font substitution for Cyrillic
+
 \DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
 
-% Define custom color
 \definecolor{myorange}{RGB}{226, 83, 48}
 
-% Background image setup
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
@@ -33,17 +31,21 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \vfill
 }}}
 
+
+
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 ~
 \vspace{2.2cm}
 ~
 \begin{center}
+
 \vspace{5.9cm}
 
-% Placeholder for participant name with dynamic language
 {\centering\fontsize{36}{48}\selectfont
-\textcolor{myorange}{\foreignlanguage{<LANG>}{<CERTIFICATE_HOLDER_NAME>}}
+\begin{otherlanguage*}{russian}
+\textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
+\end{otherlanguage*}
 \par}
 
 \begin{table}[h]
@@ -52,8 +54,9 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \begin{center}
 \fontsize{24}{36}\selectfont
 \vspace{1.6cm}
-% Placeholder for event name with dynamic language
-\textcolor{myorange}{\foreignlanguage{<LANG>}{<EVENT_NAME>}}
+\begin{otherlanguage*}{russian}
+\textcolor{myorange}{<EVENT_NAME>}
+\end{otherlanguage*}
 \end{center}
 \end{table}
 
@@ -61,8 +64,10 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \vspace{2.2cm}
 \begin{center}
 \hspace{-0.5cm}
-% Placeholder for event date (typically language-independent)
+\begin{otherlanguage*}{russian}
 \textcolor{black}{<EVENT_DATE>}
-\end{center}
+\end{otherlanguage*}
+%\end{tabular}
 
+\end{center}
 \end{document}
