@@ -41,11 +41,11 @@
                                             <img src="/images/download.svg">
                                         </a>
                                     @else
-{{--                                        @if($certificate_of_participation->status == 'ERROR')--}}
-{{--                                            Error with special characters.--}}
-{{--                                        @else--}}
+                                        @if($certificate_of_participation->status == 'FAILED' ||$certificate_of_participation->status == 'ERROR')
+                                            Error with encoding.
+                                        @else
                                             Processing ...
-{{--                                        @endif--}}
+                                        @endif
                                     @endif
                                 </td>
                             </tr>
