@@ -2,8 +2,10 @@
 
 return [
     'about' => 'EU Code Week, czyli Europejski Tydzień Kodowania, to oddolna inicjatywa promująca programowanie i umiejętności cyfrowe wśród uczestników w ciekawy i interesujący sposób.',
-    'when' => '14-27 października 2024 roku',
+    'when' => 'Dołącz do nas na świąteczną zabawę!',
     'when_text' => 'Nauka kodowania pomaga wszystkim zrozumieć otaczający nas świat, który ulega ciągłym zmianom. Dołącz do miliona organizatorów i uczestników. Inspiruj rozwój kodowania, myślenia obliczeniowego by rozwijać nowe pomysły i wprowadzać innowacje na przyszłość.',
+    'xmas_text' => 'Spraw, aby ten świąteczny sezon błyszczał innowacyjnością i kreatywnością! Dołącz do naszej zabawy „Coding@Christmas”, dodając swoją aktywność związaną z kodowaniem do naszej mapy i zyskaj szansę na wygranie zestawu micro:bit dla swoich uczniów. Świętujmy święta, wspierając kolejne pokolenie myślicieli i twórców. Dodaj swoją aktywność już dziś i pomóż zainspirować lepszą przyszłość!',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Weź udział!',
     'school_banner_text' => 'Czy jesteś nauczycielem?',
     'school_banner_text2' => 'Kliknij tutaj, aby dowiedzieć się, jak wziąć udział!',
