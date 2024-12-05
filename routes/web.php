@@ -329,8 +329,9 @@ Route::get('/my', [EventController::class, 'my'])
     ->middleware('auth')
     ->name('my_events');
 
-Route::get('/search', [SearchController::class, 'search'])->name('search_event');
-Route::post('/search', [SearchController::class, 'searchPOST'])->name('search_events');
+// Route::get('/search', [SearchController::class, 'search'])->name('search_event');
+// Route::post('/search', [SearchController::class, 'searchPOST'])->name('search_events');
+Route::get('/search', [SearchController::class, 'index'])->name('search_event');
 Route::get('/scoreboard', [ScoreboardController::class, 'index'])->name('scoreboard');
 Route::patch('user', [UserController::class, 'update'])
     ->name('user.update')
