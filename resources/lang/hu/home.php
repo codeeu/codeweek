@@ -2,8 +2,10 @@
 
 return [
     'about' => 'Az európai programozási hét egy alulról szerveződő kezdeményezés, amelynek célja a programozás és a digitális jártasság szórakoztató és érdekes módon történő bemutatása.',
-    'when' => '2024. október 14-27.',
+    'when' => 'Csatlakozz hozzánk egy kis ünnepi szórakozásra!',
     'when_text' => 'A programozás megtanulásával jobban tájékozódunk a gyorsan változó világban, segít megérteni a különböző technológiák működését, készség- és képességfejlesztő hatásának köszönhetően pedig új ötleteket és innovációkat dolgozhatunk ki.',
+    'xmas_text' => 'Tegye ezt az ünnepi időszakot szikrázóvá innovációval és kreativitással! Csatlakozzon a „Coding@Christmas” mókához azzal, hogy kódolási tevékenységét felteszi a térképünkre, és esélyt kap arra, hogy nyerjen egy micro:bit készletet diákjai számára. Ünnepeljük az ünnepeket a gondolkodók és alkotók következő generációjának megerősítésével. Adja hozzá tevékenységét még ma, és segítsen inspirálni egy szebb jövőt!',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Vegyen részt!',
     'school_banner_text' => 'Ön tanár?',
     'school_banner_text2' => 'Kattintson ide, hogy megtudja, hogyan kapcsolódhat be!',

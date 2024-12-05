@@ -2,8 +2,10 @@
 
 return [
     'about' => 'De EU-programmeerweek is een burgerinitiatief dat erop is gericht om programmeren en digitale vaardigheden op een leuke, aantrekkelijke manier voor iedereen bereikbaar te maken.',
-    'when' => '14 - 27 oktober 2024',
+    'when' => 'Feest met ons mee!',
     'when_text' => 'Leren programmeren helpt ons de snel veranderende wereld om ons heen te begrijpen, ons begrip van de werking van technologie te vergroten en vaardigheden en mogelijkheden te ontwikkelen om nieuwe idee&euml;n te ontdekken en te innoveren.',
+    'xmas_text' => 'Laat deze feestdagen schitteren door innovatie en creativiteit! Doe mee aan onze \'Coding@Christmas\' -actie door uw codeeractiviteit toe te voegen aan onze kaart en maak kans op een micro:bit-kit voor uw leerlingen. Laten we de feestdagen vieren door de volgende generatie denkers en makers te inspireren. Voeg vandaag nog je activiteit toe en help een betere toekomst te inspireren!',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Doe mee!',
     'school_banner_text' => 'Ben je een leraar?',
     'school_banner_text2' => 'Klik hier voor meer informatie over hoe je kunt meedoen!',
