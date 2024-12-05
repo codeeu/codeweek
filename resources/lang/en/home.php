@@ -5,6 +5,7 @@ return [
     'when' => 'Join us for some festive fun!',
     'when_text' => 'Learning to code helps us make sense of the rapidly changing world around us. Join millions of fellow organisers and participants to inspire the development of coding and computational thinking skills in order to explore new ideas and innovate for the future.',
     'xmas_text' => 'Make this festive season sparkle with innovation and creativity! Join  our \'Coding@Christmas\' fun by adding your coding activity to our map,  and be in with a chance to win a micro:bit kit for your students. Let’s  celebrate the holidays by empowering the next generation of thinkers and creators. Add your activity today and help inspire a brighter future!',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Get Involved! Add an Activity!',
     'school_banner_text' => 'Are you a teacher?',
     'school_banner_text2' => 'Find out how to get involved!',
