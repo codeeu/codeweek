@@ -2,8 +2,10 @@
 
 return [
     'about' => 'ELi programmeerimisnädal Code Week on rohujuuretasandi algatus, mille eesmärk on õpetada inimestele lõbusal ja kaasahaaraval viisil programmeerimist ja digitaalset kirjaoskust.',
-    'when' => '14.-27. oktoobril 2024',
+    'when' => 'Liitu meiega pidulikuks lõbutsemiseks!',
     'when_text' => 'Programmeerimise õppimine aitab meil mõista kiiresti muutuvat maailma, täiendada oma teadmisi tehnoloogiast, arendada uusi oskusi ja avastada innovaatilisi ideid.',
+    'xmas_text' => 'Muuda see pühadeaeg uuenduslikkuse ja loovusega säravaks! Liitu meie „Coding@Christmas“ lõbuga, lisades oma kodeerimistegevuse meie kaardile, ja sul on võimalus võita oma õpilastele micro:bit-komplekt. Tähistame pühi, andes mõtlejatele ja loojatele järgmise põlvkonna võimalusi. Lisage oma tegevus juba täna ja aidake kaasa helgemale tulevikule!',
+    'button_text' => 'Liituge!',
     'school_banner_title' => 'Liituge!',
     'school_banner_text' => 'Kas oled õpetaja?',
     'school_banner_text2' => 'Klõpsa siin, et leida teavet, kuidas osaleda!',

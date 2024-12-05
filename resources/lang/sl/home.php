@@ -2,8 +2,10 @@
 
 return [
     'about' => 'Evropski teden programiranja je družbena pobuda, katere cilj je približati programersko in digitalno pismenost vsem na zabaven in vključujoč način.',
-    'when' => '14.-27. oktobra 2024',
+    'when' => 'Pridružite se nam na praznični zabavi!',
     'when_text' => 'Učenje programiranja nam pomaga dojemati hitro spreminjajoči se svet okrog nas, bolje razumeti delovanje tehnologije ter razviti znanja in spretnosti za raziskovanje novih zamisli in inovacije.',
+    'xmas_text' => 'Naj ta praznična sezona zažari z inovativnostjo in ustvarjalnostjo! Pridružite se naši zabavi „Coding@Christmas“, tako da svojo dejavnost kodiranja dodate na naš zemljevid in imate možnost osvojiti komplet micro:bit za svoje učence. Praznujmo praznike z opolnomočenjem naslednje generacije mislecev in ustvarjalcev. Dodajte svojo dejavnost še danes in pomagajte navdihniti svetlejšo prihodnost!',
+    'button_text' => '',
     'school_banner_title' => 'Vključite se!',
     'school_banner_text' => 'Ste učitelj?',
     'school_banner_text2' => 'Kliknite tukaj in si oglejte, kako se lahko vključite!',

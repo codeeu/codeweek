@@ -2,8 +2,10 @@
 
 return [
     'about' => 'EU Code Week är ett gräsrotsinitiativ som verkar för att alla ska få tillgång till kodning och digitala kunskaper på ett roligt och engagerande sätt.',
-    'when' => '14-27 oktober 2024',
+    'when' => 'Följ med oss på lite festligt nöje!',
     'when_text' => 'Genom att lära oss koda kan vi få ut mer av den snabbt föränderliga världen runt omkring oss, utöka våra kunskaper om hur tekniken fungerar samt utveckla vår kompetens och våra färdigheter så att vi kan utforska nya idéer och förnya.',
+    'xmas_text' => 'Få den här högtiden att gnistra av innovation och kreativitet! Delta i vårt ”Coding@Christmas”-skoj genom att lägga till din kodningsaktivitet på vår karta, och ha chansen att vinna ett micro:bit-kit till dina elever. Låt oss fira julhelgen genom att stärka nästa generations tänkare och kreatörer. Lägg till din aktivitet idag och hjälp till att inspirera till en ljusare framtid!',
+    'button_text' => '',
     'school_banner_title' => 'Engagera dig!',
     'school_banner_text' => 'Är du lärare?',
     'school_banner_text2' => 'Klicka här för att få reda på hur du kan engagera dig!',
