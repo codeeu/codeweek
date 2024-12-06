@@ -16,7 +16,8 @@ module.exports = {
         'aqua': '#B1E0E5',
         'pearl': '#DBECF0',
         'grey': '#E7EAE3',
-        'grey-2': '#DEDEDE'
+        'grey-2': '#DEDEDE',
+        'lime': '#99CC28'
         
       },
       screens: {
@@ -30,5 +31,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'), // Add the forms plugin here
+  ],
 };
