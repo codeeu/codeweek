@@ -45,7 +45,7 @@ class ProcessUserDeletion implements ShouldQueue
                 ->update(['approved_by' => $this->legacyUserId]);
 
             // Hard delete the user
-            User::where('id', $this->userId)->delete();
+            User::where('id', $this->userId)->forceDelete();
 
             DB::commit();
             Log::info("Successfully deleted user ID: {$this->userId}");
