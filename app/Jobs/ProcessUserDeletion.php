@@ -1,0 +1,81 @@
+<?php
+
+namespace App\Jobs;
+
+use App\Excellence;
+use App\Participation;
+use App\User;
+use App\Event;
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+
+class ProcessUserDeletion implements ShouldQueue
+{
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+
+    protected $userId;
+    protected $legacyUserId = 1000000;
+
+    public function __construct($userId)
+    {
+        $this->userId = $userId;
+    }
+
+    /**
+     * @throws \Exception
+     */
+    public function handle()
+    {
+        try {
+            DB::beginTransaction();
+
+            Log::info("Processing deletion for user ID: {$this->userId}");
+
+            // Update events creator_id
+            Event::where('creator_id', $this->userId)
+                ->update(['creator_id' => $this->legacyUserId]);
+
+            // Update events approved_by
+            Event::where('approved_by', $this->userId)
+                ->update(['approved_by' => $this->legacyUserId]);
+
+            // Update participations
+            Participation::where('user_id', $this->userId)
+                ->update(['user_id' => $this->legacyUserId]);
+
+            // Update excellences
+            Excellence::where('user_id', $this->userId)
+                ->update(['user_id' => $this->legacyUserId]);
+
+            // Update model_has_roles table directly
+            DB::table('model_has_roles')
+                ->where('model_id', $this->userId)
+                ->where('model_type', User::class)
+                ->update(['model_id' => $this->legacyUserId]);
+
+            // Update leading_teacher_expertise_user table directly
+            DB::table('leading_teacher_expertise_user')
+                ->where('user_id', $this->userId)
+                ->update(['user_id' => $this->legacyUserId]);
+
+            // Hard delete the user
+            User::where('id', $this->userId)->delete();
+
+            DB::commit();
+            Log::info("Successfully deleted user ID: {$this->userId}");
+
+        } catch (\Exception $e) {
+            DB::rollBack();
+            Log::error("Error processing user ID: {$this->userId}", [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
+            ]);
+            throw $e;
+        }
+    }
+}
