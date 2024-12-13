@@ -44,25 +44,6 @@ class ProcessUserDeletion implements ShouldQueue
             Event::where('approved_by', $this->userId)
                 ->update(['approved_by' => $this->legacyUserId]);
 
-            // Update participations
-            Participation::where('user_id', $this->userId)
-                ->update(['user_id' => $this->legacyUserId]);
-
-            // Update excellences
-            Excellence::where('user_id', $this->userId)
-                ->update(['user_id' => $this->legacyUserId]);
-
-            // Update model_has_roles table directly
-            DB::table('model_has_roles')
-                ->where('model_id', $this->userId)
-                ->where('model_type', User::class)
-                ->update(['model_id' => $this->legacyUserId]);
-
-            // Update leading_teacher_expertise_user table directly
-            DB::table('leading_teacher_expertise_user')
-                ->where('user_id', $this->userId)
-                ->update(['user_id' => $this->legacyUserId]);
-
             // Hard delete the user
             User::where('id', $this->userId)->delete();
 
