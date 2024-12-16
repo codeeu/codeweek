@@ -1,4 +1,5 @@
-@section("extra-js")
+{{--
+    @section("extra-js")
     <script>
 
         window.laravelCookieConsent = (function () {
@@ -71,3 +72,5 @@
 
 
 @endif
+
+--}}
