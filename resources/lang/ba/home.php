@@ -5,8 +5,6 @@ return [
     'when' => '14.-27. oktobar 2024.',
     'when_text' => 'Učenje kodiranja pomaže nam da shvatimo svijet oko nas koji doživljava brze promjene, da pro&scaron;irimo svoje shvatanje kako funkcionira tehnologija te da razvijemo vje&scaron;tine i kapacitete u cilju istraživanja novih ideja i inoviranja.',
     'school_banner_title' => 'Angažirajte se!',
-    'xmas_text' => '',
-    'button_text' => 'Get Involved!',
     'school_banner_text' => 'Jeste li vi nastavnik?',
     'school_banner_text2' => 'Kliknite ovdje i saznajte kako da se angažirate!',
     'organize_activity_title' => 'Organizirajte aktivnost ili joj se pridružite',
