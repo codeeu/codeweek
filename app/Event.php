@@ -51,9 +51,12 @@ class Event extends Model
         'report_notifications_count',
         'reported_at',
         'name_for_certificate',
-        'participants_count',
         'average_participant_age',
+        'participants_count',
         'percentage_of_females',
+        'percentage_of_males',
+        'percentage_of_other',
+        'age_group',
         'codeweek_for_all_participation_code',
         'name_for_certificate',
         'organizer_type',
@@ -67,6 +70,9 @@ class Event extends Model
         'location_id',
         'leading_teacher_tag',
         'mass_added_for',
+        'extracurricular_activity',
+        'recurring_event',
+        'frequency',
     ];
 
     //    protected $policies = [

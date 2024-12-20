@@ -1,16 +1,16 @@
 {
   "resources/assets/sass/app.scss": {
-    "file": "assets/app-Bk4IeqgE.css",
+    "file": "assets/app-D7_6FIMk.css",
     "src": "resources/assets/sass/app.scss",
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-CqcMzzla.css",
+    "file": "assets/app-DBlaQtLP.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BYTeXSp6.js",
+    "file": "assets/app-DqTp39kW.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -47,7 +47,7 @@
       "resources/lang/php_ua.json"
     ],
     "css": [
-      "assets/app-B6V_wt1S.css"
+      "assets/app-DOP00nM0.css"
     ]
   },
   "resources/lang/php_al.json": {
@@ -81,7 +81,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_de.json": {
-    "file": "assets/php_de-BzFjuUAc.js",
+    "file": "assets/php_de-BmZdZAyG.js",
     "name": "php_de",
     "src": "resources/lang/php_de.json",
     "isDynamicEntry": true
@@ -93,13 +93,13 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_en.json": {
-    "file": "assets/php_en-L--1S7AX.js",
+    "file": "assets/php_en-Dfcr4x-O.js",
     "name": "php_en",
     "src": "resources/lang/php_en.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_es.json": {
-    "file": "assets/php_es-AQitKYM6.js",
+    "file": "assets/php_es-B7xtIQhi.js",
     "name": "php_es",
     "src": "resources/lang/php_es.json",
     "isDynamicEntry": true
