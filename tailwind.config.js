@@ -17,17 +17,23 @@ module.exports = {
         'pearl': '#DBECF0',
         'grey': '#E7EAE3',
         'grey-2': '#DEDEDE',
-        'lime': '#99CC28'
-        
+        'grey-3': '#F2F2F8',
+        'lime': '#99CC28',
+        'black-light': '#00000080',
       },
       screens: {
+        'xxs': '320px',
+        'sm': '575px',
         'tablet': '993px',
+        'md': '768px',
       },
       fontSize: {
         base: '1.125rem',
+        'default': '16px',
+        '40': '2.5rem',
       },
       lineHeight: {
-        'truly-normal': 'normal',  // Custom class for true line-height: normal
+        'truly-normal': 'normal', // Custom class for true line-height: normal
       },
     },
   },
