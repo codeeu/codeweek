@@ -22,17 +22,18 @@
         </section>
 
         <!-- Filter Section -->
-        <section class="flex flex-col justify-center px-24 pt-16 font-bold text-center max-md:px-5">
-            <div class="flex flex-col items-center w-full max-md:max-w-full">
-                <h2 class="text-4xl leading-tight text-orange-500">@lang('search.search_results_title')</h2>
-                <p class="hidden w-2/3 pt-4 text-base font-light leading-6 text-black"></p>
-                @livewire('partner-filter-component')
+        <section class="flex justify-center pt-16 font-bold text-center">
+            <div class="flex flex-col items-center w-full max-w-6xl px-2.5 md:px-6.5">
+                <h2 class="text-4xl leading-tight text-[#F95C22] pb-4">@lang('search.search_results_title')</h2>
+                @livewire('global-search-filter-component')
             </div>
         </section>
 
-        <!-- Partner Content Section -->
-        <section class="px-6 pt-8 max-lg:pb-12">
-            @livewire('search-content-component')
+        <!-- Search Result Content Section -->
+        <section class="flex justify-center pt-8 max-lg:pt-[50px]">
+            <div class="w-full max-w-6xl px-2.5 md:px-9">
+                @livewire('search-content-component')
+            </div>
         </section>
 
     </section>

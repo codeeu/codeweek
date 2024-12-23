@@ -5,7 +5,6 @@ namespace App\Providers;
 use App\Event;
 use App\Observers\EventObserver;
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Gate;
@@ -13,7 +12,6 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Blade;
-use Livewire\Livewire;
 
 class AppServiceProvider extends ServiceProvider
 {
