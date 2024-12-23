@@ -33,5 +33,5 @@ return [
     'search_placeholder' => 'Search by title or description',
     'search_banner_title' => 'Lorem ipsum dolor sit',
     'search_banner_content' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-    'search_results_title' => 'Search results'
+    'search_results_title' => 'H2 Search results'
 ];

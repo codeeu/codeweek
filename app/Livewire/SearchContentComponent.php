@@ -1,22 +1,46 @@
 <?php
+
 namespace App\Livewire;
+
 use Livewire\Component;
-use App\Podcast;
+use App\Services\GlobalSearchService;
+use Livewire\WithPagination;
+
 class SearchContentComponent extends Component
 {
+    use WithPagination;
+
     public $searchQuery = '';
+    public $selectedFilter = 'All';
+
     protected $queryString = [
         'searchQuery' => ['except' => ''],
+        'selectedFilter' => ['except' => 'All'],
     ];
+
+    protected $listeners = ['filterChanged'];
+
+    public function updatedSearchQuery()
+    {
+        $this->resetPage();
+    }
+
+    public function updatedSelectedFilter()
+    {
+        $this->resetPage();
+    }
+
+    public function filterChanged($filter)
+    {
+        $this->selectedFilter = $filter;
+        $this->resetPage();
+    }
+
     public function render()
     {
-        $results = collect();  // Initialize an empty collection
-        
-        if ($this->searchQuery) {
-            $results = Podcast::active()
-                ->where('title', 'like', '%' . $this->searchQuery . '%')
-                ->get();  // get() returns a collection
-        }
+        $searchService = app(GlobalSearchService::class);
+        $results = $searchService->search($this->selectedFilter, $this->searchQuery);
+
         return view('livewire.search-content-component', [
             'results' => $results,
         ]);
