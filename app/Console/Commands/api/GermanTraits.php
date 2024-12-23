@@ -47,12 +47,12 @@ trait GermanTraits
             $RSSitem->tags = trim(implode(';', Arr::pluck($item['tags'], 'title')));
             $RSSitem->themes = trim(implode(',', Arr::pluck($item['themes'], 'identifier')));
             $RSSitem->audience = trim(implode(',', Arr::pluck($item['audience'], 'identifier')));
-
+            $RSSitem->last_updated_at = $item['last_updated_at'];
+            
             try {
 
                 //Log::info($RSSitem);
-                $RSSitem->save();
-
+                $RSSitem->save();  
                 $new++;
 
             } catch (\PDOException $exception) {
@@ -71,72 +71,109 @@ trait GermanTraits
     private function createGermanEvent($city): void
     {
         $user = User::where(['email' => $this->user_email])->first();
-
+    
         if ($user == null) {
-
-            //Create user
-            $user = User::create(
-                [
-                    'email' => $this->user_email,
-                    'firstname' => $this->organizer,
-                    'lastname' => '',
-                    'username' => $this->organizer,
-                    'password' => bcrypt(Str::random()),
+            // Create a new user
+            $user = User::create([
+                'email' => $this->user_email,
+                'firstname' => $this->organizer,
+                'lastname' => '',
+                'username' => $this->organizer,
+                'password' => bcrypt(Str::random()),
+            ]);
+        }
+    
+        
+        // Check if an event with the same slug exists, slug is most unique.
+        $event = Event::where('slug', Str::slug($this->title))->first();
+        if ($event) {
+            // Update the existing event
+            $rssLastUpdated = $this->last_updated_at; 
+            $updatedAt = $event->updated_at;
+            $formattedUpdatedAt = $event->updated_at->format('Y-m-d H:i:s'); 
+            
+            if ($rssLastUpdated !== null && $rssLastUpdated > $updatedAt) {
+                $event->update([
+                    'status' => 'APPROVED',
+                    'title' => htmlspecialchars_decode($this->title),
+                    'slug' => Str::slug($this->title),
+                    'organizer' => $this->organizer,
+                    'description' => $this->description,
+                    'organizer_type' => $this->user_type,
+                    'activity_type' => $this->activity_type,
+                    'location' => $this->location,
+                    'event_url' => $this->user_website,
+                    'contact_person' => $this->user_publicEmail,
+                    'user_email' => $this->user_email,
+                    'creator_id' => $user->id,
+                    'country_iso' => 'DE',
+                    'picture' => $this->photo,
+                    'updated' => now(),
+                    'start_date' => $this->eventStartDate,
+                    'end_date' => $this->eventEndDate,
+                    'longitude' => $this->longitude,
+                    'latitude' => $this->latitude,
+                    'geoposition' => $this->latitude . ',' . $this->longitude,
                 ]);
+                
+                // dump("updated $this->title");
+            }
+        } else {
+            // Create a new event
+            $event = new Event([
+                'status' => 'APPROVED',
+                'title' => htmlspecialchars_decode($this->title),
+                'slug' => Str::slug($this->title),
+                'organizer' => $this->organizer,
+                'description' => $this->description,
+                'organizer_type' => $this->user_type,
+                'activity_type' => $this->activity_type,
+                'location' => $this->location,
+                'event_url' => $this->user_website,
+                'contact_person' => $this->user_publicEmail,
+                'user_email' => $this->user_email,
+                'creator_id' => $user->id,
+                'country_iso' => 'DE',
+                'picture' => $this->photo,
+                'pub_date' => now(),
+                'created' => now(),
+                'updated' => now(),
+                'codeweek_for_all_participation_code' => "cw-$city",
+                'mass_added_for' => 'API codeweek_de',
+                'start_date' => $this->eventStartDate,
+                'end_date' => $this->eventEndDate,
+                'longitude' => $this->longitude,
+                'latitude' => $this->latitude,
+                'geoposition' => $this->latitude . ',' . $this->longitude,
+                'language' => 'de',
+            ]);
+    
+            $event->save();
 
-        }
-
-        $event = new Event([
-            'status' => 'APPROVED',
-            'title' => htmlspecialchars_decode($this->title),
-            'slug' => Str::slug($this->title),
-            'organizer' => $this->organizer,
-            'description' => $this->description,
-            'organizer_type' => $this->user_type,
-            'activity_type' => $this->activity_type,
-            'location' => $this->location,
-            'event_url' => $this->user_website,
-            'contact_person' => $this->user_publicEmail,
-            'user_email' => $this->user_email,
-            'creator_id' => $user->id,
-            'country_iso' => 'DE',
-            'picture' => $this->photo,
-            'pub_date' => now(),
-            'created' => now(),
-            'updated' => now(),
-            'codeweek_for_all_participation_code' => "cw-$city",
-            'mass_added_for' => 'API codeweek_de',
-            'start_date' => $this->eventStartDate,
-            'end_date' => $this->eventEndDate,
-            'longitude' => $this->longitude,
-            'latitude' => $this->latitude,
-            'geoposition' => $this->latitude.','.$this->longitude,
-            'language' => 'de',
-        ]);
-
-        $event->save();
-
-        //Link Other as theme and audience
-        if ($this->audience) {
-            $event->audiences()->attach(explode(',', $this->audience));
-        }
-        if ($this->themes) {
-            $event->themes()->attach(explode(',', $this->themes));
-        }
-
-        if ($this->tags) {
-            $tagsArray = [];
-
-            foreach (explode(';', $this->tags) as $item) {
-                $tag = Tag::firstOrCreate([
-                    'name' => trim($item),
-                    'slug' => str_slug(trim($item)),
-                ]);
-                array_push($tagsArray, $tag->id);
+           // dump("created $this->title");
+            
+            //Link Other as theme and audience
+            if ($this->audience) {
+                $event->audiences()->attach(explode(',', $this->audience));
+            }
+            if ($this->themes) {
+                $event->themes()->attach(explode(',', $this->themes));
             }
 
-            $event->tags()->sync($tagsArray);
-        }
+            if ($this->tags) {
+                $tagsArray = [];
 
+                foreach (explode(';', $this->tags) as $item) {
+                    $tag = Tag::firstOrCreate([
+                        'name' => trim($item),
+                        'slug' => str_slug(trim($item)),
+                    ]);
+                    array_push($tagsArray, $tag->id);
+                }
+
+                $event->tags()->sync($tagsArray);
+            }
+        }
     }
+    
 }
