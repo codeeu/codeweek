@@ -2,10 +2,8 @@
 
 return [
     'about' => 'EU:n koodausviikko on ruohonjuuritason aloite, jonka tavoitteena on edist&auml;&auml; koodausta ja digitaalista lukutaitoa hauskalla ja osallistavalla tavalla.',
-    'when' => 'Liity seuraamme juhlalliseen hauskanpitoon!',
+    'when' => '14.&ndash;27.10.2024',
     'when_text' => 'Oppimalla koodaamaan opimme j&auml;sent&auml;m&auml;&auml;n ymp&auml;rill&auml;mme nopeasti muuttuvaa maailmaa, ymm&auml;rt&auml;m&auml;&auml;n teknologiaa sek&auml; kehitt&auml;m&auml;&auml;n taitoja ja valmiuksia, joiden avulla voimme keksi&auml; uusia ideoita ja innovaatioita.',
-    'xmas_text' => 'Tee tästä juhlakaudesta innovaatiolla ja luovuudella säihkyvä! Osallistu ”Coding@Christmas”-hauskanpitoon lisäämällä koodausaktiviteettisi kartalle ja voit voittaa micro:bit-paketin oppilaillesi. Juhlitaan joulua antamalla ajattelijoiden ja luovien tekijöiden seuraavalle sukupolvelle voimia. Lisää aktiviteettisi tänään ja auta luomaan valoisampi tulevaisuus!',
-    'button_text' => 'Osallistu!',
     'school_banner_title' => 'Osallistu!',
     'school_banner_text' => 'Oletko opettaja?',
     'school_banner_text2' => 'Napsauta tästä ja lue, miten voit osallistua!',
