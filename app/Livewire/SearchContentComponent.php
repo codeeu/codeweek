@@ -5,6 +5,8 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Services\GlobalSearchService;
 use Livewire\WithPagination;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class SearchContentComponent extends Component
 {
@@ -12,6 +14,7 @@ class SearchContentComponent extends Component
 
     public $searchQuery = '';
     public $selectedFilter = 'All';
+    public $perPage = 10;
 
     protected $queryString = [
         'searchQuery' => ['except' => ''],
@@ -36,13 +39,30 @@ class SearchContentComponent extends Component
         $this->resetPage();
     }
 
-    public function render()
+    public function getPaginatedResults(): LengthAwarePaginator
     {
         $searchService = app(GlobalSearchService::class);
         $results = $searchService->search($this->selectedFilter, $this->searchQuery);
+        $results = collect($results);
+
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $items = $results->slice(($currentPage - 1) * $this->perPage, $this->perPage)->values();
+
+        return new LengthAwarePaginator(
+            $items,
+            $results->count(),
+            $this->perPage,
+            $currentPage,
+            ['path' => request()->url(), 'query' => request()->query()]
+        );
+    }
+
+    public function render()
+    {
+        $paginatedResults = $this->getPaginatedResults();
 
         return view('livewire.search-content-component', [
-            'results' => $results,
+            'results' => $paginatedResults,
         ]);
     }
 }

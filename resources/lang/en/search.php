@@ -31,7 +31,11 @@ return [
     'themes' => 'Themes',
     'countries' => 'Countries',
     'search_placeholder' => 'Search by title or description',
-    'search_banner_title' => 'Lorem ipsum dolor sit',
-    'search_banner_content' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-    'search_results_title' => 'H2 Search results'
+    'search_banner_title' => 'Find what inspires you',
+    'search_banner_content' => 'Browse through a wealth of coding resources, activities, and guides to support your journey into digital creativity and learning',
+    'search_results_title' => 'Search results',
+    'search_input_label' => 'See the results based on your keyword(s) below:',
+    'search_input_placeholder' => 'Search...',
+    'results' => 'Results',
+    'no_results' => 'No results found.',
 ];

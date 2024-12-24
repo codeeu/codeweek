@@ -1,33 +1,35 @@
 <div class="w-full">
     @if(count($results) > 0)
-    <p class="font-bold p-0 mb-5">{{ count($results) }} Results</p>
-    <div class="grid grid-cols-1 gap-5">
-        @foreach($results as $result)
-        <div class="border border-[#F2F2F2] rounded p-4 md:p-10 flex flex-col md:flex-row gap-10 items-start">
-            <a href="{{ $result['path'] }}" target="_blank" class="relative flex-shrink-0 w-full md:max-w-60">
-                <img src="{{ $result['thumbnail'] }}" alt="{{ $result['name'] }}" class="w-full h-auto" />
-                @if(isset($result['date']))
-                <div class="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-50 text-white text-xs">
-                    {{ $result['date'] }}
-                </div>
-                @endif
-              </a>
-            <div class="flex-grow">
-                <p class="font-bold uppercase p-0 mb-3">{{ $result['category'] }}</p>
-                <a href="{{ $result['path'] }}" target="_blank" class="mb-3 inline-block text-[#F95C22] hover:underline">
-                    <h3 class="text-2xl font-bold m-0">{{ $result['name'] }}</h3>
-                </a>
-                <p class="p-0 leading-6">{{ $result['description'] }}</p>
-            </div>
+    <p class="font-bold p-0">{{ count($results) }} @lang('search.results')</p>
+
+    @foreach($results as $result)
+    <div class="border-b border-[#D6D8DA] py-6 md:py-10 flex flex-col md:flex-row items-start gap-6 md:gap-16">
+        <a href="{{ $result['path'] }}" target="_blank" class="relative flex-shrink-0 w-full md:max-w-60">
+            <img src="{{ $result['thumbnail'] }}" alt="{{ $result['name'] }}" class="w-full h-auto rounded-md" />
+        </a>
+        <div class="flex-grow">
+            <p class="font-bold uppercase p-0 mb-3">
+              <span>{{ $result['category'] }}</span>
+              @if(isset($result['date']))
+                <span class="ml-1.5">|</span>
+                <span class="ml-1.5">{{ $result['date'] }}</span>
+              @endif
+            </p>
+            <a href="{{ $result['path'] }}" target="_blank" class="mb-3 inline-block text-[#1C4DA1] hover:underline">
+                <h3 class="text-[22px] md:text-[30px] leading-7 md:leading-9 font-medium m-0 font-['Montserrat']">
+                    {{ $result['name'] }}
+                </h3>
+            </a>
+            <p class="p-0 text-lg md:text-xl leading-7 text-[#333E48]">{{ $result['description'] }}</p>
         </div>
-        @endforeach
     </div>
+    @endforeach
 
-    <div class="mb-5">
-        {{-- {{ $results->links('vendor.livewire.pagination') }} --}}
+    <!-- Pagination Links -->
+    <div class="py-12">
+        {{ $results->links('vendor.livewire.pagination') }}
     </div>
-
     @else
-    <p>No results found.</p>
+    <p>@lang('search.no_results')</p>
     @endif
 </div>
