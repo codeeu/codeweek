@@ -35,4 +35,8 @@ return [
         "e dai un'occhiata all'elenco degli ambasciatori della settimana europea della programmazione",
         "Se nel tuo paese vi sono già ambasciatori, ti invitiamo a metterti direttamente in contatto con loro per scoprire come sostenere al meglio l'iniziativa. Se non c'è nessun ambasciatore nel tuo paese, puoi rivolgerti all'indirizzo info@codeweek.eu",
     ],
+
+    'hub_IT' => 'Fondazione LINKS - Leading Innovation and Knowledge for Society',
+    'hub_level_IT' => 'National Hub',
+    'hub_desc_IT' => 'Fondazione LINKS è una fondazione privata senza scopo di lucro nata per promuovere l\'innovazione, facilitare il trasferimento di conoscenze e migliorare la crescita della società, in particolare in Italia. Con le sue attività Fondazione LINKS mira a colmare il divario tra il mondo accademico, l\'industria e la pubblica amministrazione, promuovendo progetti di ricerca e sviluppo in collaborazione con questi attori.  FondazionE LINKS si propone di affrontare sfide sociali come il cambiamento climatico, la salute e la trasformazione digitale, con una particolare attenzione al settore educativo. All\'interno della fondazione, l\'unità di ricerca EdTech esplora la relazione tra tecnologie emergenti e apprendimento, assicurando che l\'innovazione sia al servizio di una comunità educativa sempre più ampia. POC: edtech@linksfoundation.com'
 ];

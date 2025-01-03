@@ -35,4 +35,13 @@ return [
         'in si na hitro oglejte seznam ambasadorjev evropskega tedna programiranja.',
         'Če so v vaši državi ambasadorji, se obrnite neposredno nanje in ugotovite, kako lahko najbolje podprete pobudo. Če v vaši državi ni ambasadorja, nam lahko pišete na info@codeweek.eu.',
     ],
+
+
+    'hub_HR' => 'Profil Klett D.o.o.',
+    'hub_level_HR' => 'Regionalni Hub',
+    'hub_desc_HR' => 'Podjetje Profil Klett, d. o. o., je vodilni izobraževalni založnik, ki ustvarja kakovostna gradiva za poučevanje in učenje na različnih stopnjah izobraževalnega sistema. Ponuja širok nabor učbenikov, digitalnih gradiv in izobraževalnih orodij za podporo učenju in spodbujanje aktivnega sodelovanja učencev. Profil Klett sodeluje s številnimi učitelji, raziskovalci in inštitucijami ter s tem zagotavlja, da učna gradiva ustrezajo potrebam izobraževalnega sistema. Poslanstvo podjetja je negovanje ljubezni do učenja, s čimer navdihujejo tako učence kot učitelje.',
+        
+    'hub_SI' => 'Profil Klett D.o.o.',
+    'hub_level_SI' => 'Regionalni Hub',
+    'hub_desc_SI' => 'Podjetje Profil Klett, d. o. o., je vodilni izobraževalni založnik, ki ustvarja kakovostna gradiva za poučevanje in učenje na različnih stopnjah izobraževalnega sistema. Ponuja širok nabor učbenikov, digitalnih gradiv in izobraževalnih orodij za podporo učenju in spodbujanje aktivnega sodelovanja učencev. Profil Klett sodeluje s številnimi učitelji, raziskovalci in inštitucijami ter s tem zagotavlja, da učna gradiva ustrezajo potrebam izobraževalnega sistema. Poslanstvo podjetja je negovanje ljubezni do učenja, s čimer navdihujejo tako učence kot učitelje.'
 ];
