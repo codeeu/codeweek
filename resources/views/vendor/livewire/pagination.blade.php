@@ -1,28 +1,29 @@
-<section class="flex flex-wrap items-center justify-center gap-2 mt-12" aria-label="Numbered steps">
-    <button 
-        class="flex flex-col justify-center items-center self-stretch my-auto w-8 h-8 bg-primary hover:bg-blue-primary rounded min-h-[32px]" 
+<section class="flex flex-wrap items-center justify-center gap-2 font-['Blinker']" aria-label="Numbered steps">
+    <button
+        class="p-4 rounded-full bg-[#FFD700] hover:bg-primary/50 cursor-pointer"
         aria-label="Previous step"
         @if (!$paginator->onFirstPage())
             wire:click="previousPage('{{ $paginator->getPageName() }}')"
             dusk="previousPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.after"
         @endif
         {{ $paginator->onFirstPage() ? 'disabled' : '' }}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
-            <path d="M8 14L2 8L8 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25.8335 16H7.16683" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.5 6.66663L7.16667 16L16.5 25.3333" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </button>
 
     {{-- Page Buttons --}}
-    <nav class="flex gap-2.5 items-center self-stretch my-auto text-base font-bold text-center text-black whitespace-nowrap" aria-label="Step navigation">
+    <nav class="flex gap-1 items-center whitespace-nowrap" aria-label="Step navigation">
         @foreach ($elements as $element)
             @if (is_string($element))
-                <span class="text-gray-500">{{ $element }}</span>
+                <span class="text-black mx-1">{{ $element }}</span>
             @endif
 
             @if (is_array($element))
                 @foreach ($element as $page => $url)
                     <button 
-                        class="self-stretch my-auto w-8 rounded min-h-[32px] {{ $page == $paginator->currentPage() ? 'h-8 text-primary border-2 border-solid border-[#f95c22] flex-col justify-center items-center gap-2.5 inline-flex hover:bg-blue-primary hover:border-blue-primary hover:text-white' : 'border border-neutral-200 border-solid hover:bg-blue-primary hover:border-blue-primary hover:text-white' }}" 
+                        class="w-8 h-8 text-xl hover:bg-[#1C4DA1]/10 rounded {{ $page == $paginator->currentPage() ? 'font-normal text-[#333E48]' : 'font-bold text-[#1C4DA1] underline' }} {{ $loop->index >= 3 ? 'max-md:hidden' : '' }}"
                         aria-current="{{ $page == $paginator->currentPage() ? 'step' : '' }}" 
                         aria-label="Step {{ $page }}"
                         wire:click="gotoPage({{ $page }}, '{{ $paginator->getPageName() }}')">
@@ -32,18 +33,26 @@
             @endif
         @endforeach
     </nav>
+    <script>
+      // Pass the PHP variable to JavaScript
+      const elements = @json($elements);
+  
+      // Log it to the console
+      console.log(elements);
+  </script>
 
     {{-- Next Button --}}
-    <button 
-        class="flex flex-col justify-center items-center self-stretch hover:bg-blue-primary my-auto w-8 h-8 bg-primary rounded min-h-[32px]" 
+    <button
+        class="p-4 rounded-full bg-[#FFD700] hover:bg-primary/50 cursor-pointer"
         aria-label="Next step"
         @if ($paginator->hasMorePages())
             wire:click="nextPage('{{ $paginator->getPageName() }}')"
             dusk="nextPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.after"
         @endif
         {{ !$paginator->hasMorePages() ? 'disabled' : '' }}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
-        <path d="M2 14L8 8L2 2" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.16699 16H25.8337" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.5 6.66663L25.8333 16L16.5 25.3333" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </button>
 </section>
