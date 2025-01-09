@@ -33,6 +33,10 @@ class GenerateCertificatesOfParticipation implements ShouldQueue
     {
         $names = array_map('trim', explode(',', $this->participation->names));
 
+        $this->participation['status'] = 'PROCESSING';
+
+        $this->participation->save();
+
         $zipUrl = CertificatesHelper::doGenerateCertificatesOfParticipation($names, $this->participation->event_name, $this->participation->event_date);
 
         $this->participation['participation_url'] = $zipUrl;

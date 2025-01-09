@@ -30,6 +30,9 @@
             </a>
         </section>
 
+        {{-- Include the Minecraft section here --}}
+         <x-minecraft />
+
         <section class="sub-section" id="organize-activity">
 
             <div class="text">@lang('home.organize_activity_text')</div>

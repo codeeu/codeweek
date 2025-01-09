@@ -35,6 +35,9 @@
 @import "langs";
 
 // General classes
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html{
   line-height: 1.15;
@@ -87,14 +90,30 @@ p {
   padding: 15px 0;
 }
 
+.thank_you p {
+  padding: 0px 0;
+}
+
+p.partner_text {
+  color: #FFF;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 h1 {
   & + p {
     padding-top: 30px;
   }
 }
+/*
 *, ::before, ::after {
-  box-sizing: inherit;
+  box-sizing: inherit; //DISABLED AS SEEMS TO CAUSE OVERHANG
 }
+  */
+
 main{
   margin-left:auto;
   margin-right:auto;

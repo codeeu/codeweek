@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
+use Illuminate\Support\Facades\Blade;
+use Livewire\Livewire;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -81,6 +83,11 @@ class AppServiceProvider extends ServiceProvider
                 ]
             );
         });
+
+         // Register the Minecraft Blade component
+        Blade::component('homepage.minecraft', 'minecraft');
+
+         //Livewire::paginationView('vendor.livewire.pagination');
 
         $this->bootAuth();
         $this->bootEvent();
