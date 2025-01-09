@@ -83,6 +83,10 @@ class Event extends Model
         ]);
     }
 
+    public function getPicturePathAttribute() {
+        return $this->picture_path();
+    }
+
     public function getJavascriptData()
     {
         return $this->only(['geoposition', 'title', 'description']);

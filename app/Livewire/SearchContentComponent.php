@@ -6,7 +6,6 @@ use Livewire\Component;
 use App\Services\GlobalSearchService;
 use Livewire\WithPagination;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Collection;
 
 class SearchContentComponent extends Component
 {
@@ -21,7 +20,7 @@ class SearchContentComponent extends Component
         'selectedFilter' => ['except' => 'All'],
     ];
 
-    protected $listeners = ['filterChanged'];
+    protected $listeners = ['filterChanged', 'searchQueryChanged'];
 
     public function updatedSearchQuery()
     {
@@ -36,6 +35,12 @@ class SearchContentComponent extends Component
     public function filterChanged($filter)
     {
         $this->selectedFilter = $filter;
+        $this->resetPage();
+    }
+
+    public function searchQueryChanged($term)
+    {
+        $this->searchQuery = $term;
         $this->resetPage();
     }
 

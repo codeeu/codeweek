@@ -109,7 +109,7 @@ class GlobalSearchService
             foreach ($mapFields as $key => $mapping) {
                 if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
                     $field = $matches[1];
-                    $mappedResult[$key] = $item->{$field} ?? '';
+                    $mappedResult[$key] = isset($item->{$field}) ? $this->formatString($item->{$field}) : '';
                 } else {
                     $mappedResult[$key] = $mapping;
                 }
@@ -168,7 +168,7 @@ class GlobalSearchService
             foreach ($mapFields as $key => $mapping) {
                 if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
                     $field = $matches[1];
-                    $mappedResult[$key] = $item->{$field} ?? '';
+                    $mappedResult[$key] = isset($item->{$field}) ? $this->formatString($item->{$field}) : '';
                 } else {
                     $mappedResult[$key] = $mapping;
                 }
@@ -196,7 +196,7 @@ class GlobalSearchService
 
             if ($meta['type_search'] === 'model') {
                 $modelResults = $this->searchModel($meta['model'], $meta['search_fields'], $meta['map_fields'], $query);
-                $results = $results->merge($modelResults);
+                $results = $results->merge($modelResults)->unique('path');
             }
 
             if ($meta['type_search'] === 'function') {
@@ -245,7 +245,7 @@ class GlobalSearchService
                 $result = [
                     'name' => data_get($item, 'title.rendered', ''),
                     'category' => 'Blog',
-                    'description' => strip_tags(data_get($item, 'excerpt.rendered', '')),
+                    'description' => $this->formatString(data_get($item, 'excerpt.rendered', '')),
                     'thumbnail' => '',
                     'path' => data_get($item, 'link', ''),
                     'link_type' => 'external',
@@ -273,5 +273,9 @@ class GlobalSearchService
             Log::error("Error fetching API data: {$e->getMessage()}");
             return [];
         }
+    }
+
+    private function formatString(string $str, $limit = 400) {
+        return mb_substr(strip_tags($str), 0, $limit);
     }
 }
