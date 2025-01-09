@@ -21,20 +21,9 @@ import SearchPageComponent from "./components/SearchPageComponent.vue";
 // import Locale from './vue-i18n-locales.generated';
 import AvatarForm from "./components/AvatarForm.vue";
 import authorizationPlugin from "./components/authorizationPlugin.js";
+import PartnerGallery from './components/PartnerGallery.vue';
 
 import { i18nVue } from 'laravel-vue-i18n';
-
-
-
-// const lang = document.documentElement.lang.substr(0, 2);
-//
-// const i18n = createI18n({
-//     legacy: false,
-//     globalInjection: true,
-//     locale: lang,
-//     fallbackLocale: 'en',
-//     messages: Locale
-// });
 
 const app = createApp({});
 
@@ -62,7 +51,5 @@ app.component('Flash', Flash);
 app.component('InputTags', InputTags);
 app.component('SearchPageComponent', SearchPageComponent);
 app.component('AvatarForm', AvatarForm);
-
-
-
+app.component('PartnerGallery', PartnerGallery);
 app.mount("#app");

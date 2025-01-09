@@ -42,16 +42,16 @@
 
         @foreach($languages as $lang)
             @if($lang === $locale)
-                <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2023/codeweek-leaflet-2023-{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
+                <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/leaflet/2024/codeweek-leaflet-2024-{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
             @endif
         @endforeach
 
         @if($locale !== 'en')
             -
-            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2023/codeweek-leaflet-2023-EN.pdf">@lang('base.languages.en')</a>
+            <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/leaflet/2024/codeweek-leaflet-2024-EN.pdf">@lang('base.languages.en')</a>
         @endif
 
-{{--                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2023/codeweek-leaflet-2023-EN.pdf">@lang('base.languages.en')</a>--}}
+{{--                    <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/leaflet/2024/codeweek-leaflet-2024-EN.pdf">@lang('base.languages.en')</a>--}}
     )
     </li>
 

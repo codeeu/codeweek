@@ -1,4 +1,3 @@
-<!-- YouTube Video Embed with Conditional Locale -->
 <div class="codeweek-youtube-container">
     @if(App::getLocale() == 'en')
         <iframe
@@ -36,7 +35,9 @@
         </div>
     </div>
 </div>
+
 <script>
+// Keep the same JavaScript code as provided
 document.addEventListener("DOMContentLoaded", function() {
     // Check if cookies are already consented for third-party content
     if (!getCookie('third_party_content_accepted')) {
