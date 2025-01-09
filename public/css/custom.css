@@ -25,18 +25,6 @@ body .cweu-submenu {
     font-size: 11px;
 }
 
-footer i:not(.fa-inverse) {
-    color: #555;
-}
-
-footer a {
-    color: #08a0c4;
-}
-
-footer {
-    padding-top: 0px;
-}
-
 .list-style-none {
     list-style: none;
 }

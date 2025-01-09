@@ -1,99 +1,124 @@
 <footer>
-    <div class="content">
-        <div class="question">
-            <div class="text">
-                @lang('base.still_have_question') @lang('base.drop_us_a_line')
-            </div>
-            <div class="get-in-touch">
-                @if(Route::current() && (Route::current()->getName() == 'community' || Route::current()->getName() == 'ambassadors'))
-                    <a href="mailto:info@codeweek.eu">
-                        <div class="button">@lang('base.get_in_touch')</div>
-                    </a>
-                @else
-                    <a href="{{route('contact-us')}}">
-                    <div class="button">@lang('base.get_in_touch')</div>
-                    </a>
-                @endif
-
+    <div class="py-10 md:py-16 border-b">
+        <div class="codeweek-container-lg mx-auto flex flex-col lg:flex-row lg:justify-between">
+            <div class="flex flex-col justify-between">
                 <div>
-                    <img src="/images/get_in_touch.svg" class="static-image">
+                    <div class="mb-6">
+                        <a href="/">
+                            <img src="/images/footer_logo.svg" class="w-[248px] lg:w-full" alt="CodeWeek">
+                        </a>
+                    </div>
+                    <div class="flex gap-[22px] mb-6 lg:mb-0">
+                        <a href="https://www.linkedin.com/company/codeweek/" target="_blank" rel="noreferer, noopener">
+                            <img src="/images/social/linkedin.svg" alt="LinkedIn" />
+                        </a>
+                        <a href="https://twitter.com/CodeWeekEU" target="_blank" rel="noreferer, noopener">
+                            <img src="/images/social/twitter.svg" alt="X" />
+                        </a>
+                        <a href="https://www.instagram.com/codeweekeu/" target="_blank" rel="noreferer, noopener">
+                            <img src="/images/social/instagram.svg" alt="Instagram" />
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA" target="_blank" rel="noreferer, noopener">
+                            <img src="/images/social/youtube.svg" alt="Youtube" />
+                        </a>
+                        <a href="https://www.facebook.com/codeEU/" target="_blank" rel="noreferer, noopener">
+                            <img src="/images/social/facebook.svg" alt="Facebook" />
+                        </a>
+                    </div>
+                </div>
+                <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg" class="mb-16 lg:mb-0">
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-[120px]">
+                <div>
+                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">About us</p>
+                    <ul class="m-0 p-0 font-['Montserrat'] font-semibold text-base">
+                        <li class="mb-4">
+                            <a href="/about" class="text-dark-blue">About Code Week</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/our-values" class="text-dark-blue">Our Values</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/" class="text-dark-blue">Statistics</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/partners" class="text-dark-blue">Partners & Sponsors</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/community" class="text-dark-blue">Community</a>
+                        </li>
+                        <li>
+                            <a href="/" class="text-dark-blue">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">Quick links</p>
+                    <ul class="m-0 p-0 font-['Montserrat'] font-semibold text-base">
+                        <li class="mb-4">
+                            <a href="/" class="text-dark-blue">Register</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/" class="text-dark-blue">Activities & Events</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/resources/learn" class="text-dark-blue">Learn & Teach</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/blog" class="text-dark-blue">News</a>
+                        </li>
+                        <li>
+                            <a href="/" class="text-dark-blue">Content migration</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">Educational Resources</p>
+                    <ul class="m-0 p-0 font-['Montserrat'] font-semibold text-base">
+                        <li class="mb-4">
+                            <a href="/resources/CodingAtHome" class="text-dark-blue">Coding @ Home</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/podcasts" class="text-dark-blue">Podcast</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/" class="text-dark-blue">Webinars</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/" class="text-dark-blue">Careers in Digital</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/challenges" class="text-dark-blue">Challenges</a>
+                        </li>
+                        <li>
+                            <a href="/hackathons" class="text-dark-blue">Hackathons</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </div>
-        <div class="about">
-            <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg">
-            <div class="phrase">
-  
-                <div class="text"><a
-                            href="{{route('privacy')}}">{{ucfirst(mb_strtolower(__('privacy-statement.title'),'UTF-8'))}}</a> - <a
-                            href="{{route('cookie')}}">@lang('cookie_policy.title')</a></div>
-            </div>
-            <img src="/images/logo.svg" class="logo_footer">
-            <img src="/images/bubbles_footer.svg" class="static-image bubbles_footer">
-        </div>
-        <div class="social-media-buttons">
-            <div class="social-network">
-                <a href="https://forms.mailpro.com/matrixinternet/code4europe-website-subscriber-form/OCxYWv-7975.html"
-                   target="_blank" rel="noreferer, noopener">
-                    <div style="margin-right: 2px">
-                        <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" height="24"
-                             viewBox="0 0 24 24" width="24">
-                            <path d="M0 0h24v24H0V0z" fill="none"/>
-                            <path fill="#a2a2a2"
-                                  d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z"/>
-                        </svg>
-                    </div>
-                    @lang('base.newsletter')
-                </a>
-            </div>
-            <div class="social-network">
-                <a href="https://www.facebook.com/codeEU/" target="_blank" rel="noreferer, noopener">
-                    <div style="margin-right: 2px"><img src="/images/facebook.svg" alt="Facebook" class="button-icon">
-                    </div>
-                    Facebook
-                </a>
-            </div>
-            <div class="social-network">
-                <a href="https://twitter.com/CodeWeekEU" target="_blank" rel="noreferer, noopener">
-                    <div style="margin-right: 4px"><img src="/images/x-twitter.svg" alt="X" class="button-icon">
-                    </div>
-                    X
-                </a>
-            </div>
-            <div class="social-network">
-                <a href="https://www.instagram.com/codeweekeu/" target="_blank" rel="noreferer, noopener">
-                    <div style="margin-right: 4px"><img src="/images/instagram.svg" alt="Instagram" class="button-icon">
-                    </div>
-                    Instagram
-                </a>
-            </div>
-
-            <div class="social-network">
-                <a href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA" target="_blank"
-                   rel="noreferer, noopener">
-                    <div style="margin-right: 4px"><img src="/images/youtube.svg" alt="Youtube" class="button-icon">
-                    </div>
-                    Youtube
-                </a>
-            </div>
-
-            <div class="social-network">
-                <a href="https://github.com/codeeu/codeweek" target="_blank" rel="noreferer, noopener">
-                    <div style="margin-right: 4px"><img src="/images/github.svg" alt="Github" class="button-icon">
-                    </div>
-                    Github
-                </a>
-            </div>
-
-            <div class="social-network">
-                <a href="https://www.linkedin.com/company/codeweek/" target="_blank" rel="noreferer, noopener">
-                    <div style="margin-right: 4px"><img src="/images/linkedin.svg" alt="LinkedIn" class="button-icon">
-                    </div>
-                    LinkedIn
-                </a>
-            </div>
-        </div>
-
+    </div>
+    <div class="codeweek-container-lg mx-auto py-8 md:py-4 flex flex-col lg:flex-row gap-8 justify-between">
+        <ul class="m-0 p-0 flex flex-col items-start md:items-center md:flex-row gap-4 md:gap-10 font-['Montserrat'] font-semibold text-base md:text-sm">
+            <li>
+                <a href="/" class="text-dark-blue">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="/" class="text-dark-blue">Cookie Policy</a>
+            </li>
+            <li>
+                <a href="/" class="text-dark-blue">Accessibility</a>
+            </li>
+            <li>
+                <a href="/" class="text-dark-blue">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="/" class="text-dark-blue">Sitemap</a>
+            </li>
+        </ul>
+        <p class="p-0 text-slate font-['Montserrat'] font-medium text-sm mb-8 md:mb-0">
+            ©CodeWeek 2025 | Designed and developed by <a href="/" class="text-dark-blue font-semibold">Matrix Internet</a> . All Rights Reserved
+        </p>
     </div>
 </footer>
