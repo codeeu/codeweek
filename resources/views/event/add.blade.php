@@ -67,15 +67,15 @@
 
                 <div class="flex flex-col w-full mt-10 max-md:max-w-full">
                     <h2 class="text-4xl font-bold leading-tight text-orange-500 max-md:max-w-full">
-                        <span x-show="currentStep === 1">Add your activity</span>
-                        <span x-show="currentStep === 2">Add your organisation's information</span>
+                        <span x-show="currentStep === 1">Join the community</span>
+                        <span x-show="currentStep === 2">Tell us about your organisation</span>
                     </h2>
                     <p class="mb-4 leading-6 text-black text-form max-md:max-w-full">
                         <span x-show="currentStep === 1">Ready to inspire the next generation of
                             coders? Share your event details to promote it to a wider audience. Who knows — your event might be
                             featured on our official Code Week channels!</span>
-                        <span x-show="currentStep === 2">Tell us more about your organisation. This information helps us
-                            understand who's contributing to Code Week and ensures we can provide the right support.</span>
+                        <span x-show="currentStep === 2">Help us get to know your organisation better! By giving us these
+                            details, you’re making it easier for EU Code Week to support and promote your activity.</span>
                     </p>
                 </div>
 
@@ -277,24 +277,28 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="flex flex-wrap mt-4 codeweek-form-field-wrapper">
+                            <div class="flex flex-wrap mt-4 codeweek-form-field-wrapper" x-data="{
+                                totalCount: 0,
+                                femaleCount: 0,
+                                maleCount: 0,
+                                otherCount: 0,
+                                sumOfGenderCounts() {
+                                    return this.femaleCount + this.maleCount + this.otherCount;
+                                }
+                            }">
                                 <div
                                     class="flex items-start justify-between w-full codeweek-form-field max-sm:flex-col max-sm:items-start">
                                     <label class="text-form leading-6 pt-2 text-black w-[147px] whitespace-nowrap max-sm:mb-2"
                                         for="id_participants_count">Number of Participants*</label>
                                     <div class="flex flex-col w-full md:max-w-[472px]">
                                         <input type="number" id="id_participants_count" name="participants_count"
+                                            min="0" onkeydown="return event.keyCode !== 189"
+                                            oninput="this.value = this.value.replace('-', '')" x-model.number="totalCount"
                                             class="w-full px-6 py-3 text-black-light md:max-w-[472px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full"
-                                            placeholder="Enter number of participants"
-                                            value="{{ old('participants_count') }}" />
+                                            placeholder="Enter number of participants" />
 
                                         <div class="flex flex-col p-4 mt-4 rounded-2xl bg-pearl max-w-[472px]"
-                                            aria-labelledby="gender-count-title" x-data="{
-                                                femaleCount: {{ old('percentage_of_females', 0) }},
-                                                maleCount: {{ old('percentage_of_males', 0) }},
-                                                otherCount: {{ old('percentage_of_other', 0) }}
-                                            }">
+                                            :class="{ '': totalCount < 1 }" aria-labelledby="gender-count-title">
                                             <label id="gender-count-title" class="mb-2 font-normal text-black text-form">
                                                 Of this number of participants, how many are:
                                             </label>
@@ -307,8 +311,8 @@
                                                     <input type="number" id="percentage_of_females"
                                                         name="percentage_of_females" placeholder="Enter number"
                                                         min="0" x-model.number="femaleCount"
-                                                        class="text-center py-3 text-form w-[141px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full"
-                                                        value="{{ old('percentage_of_females') }}" />
+                                                        :disabled="totalCount < 1"
+                                                        class="text-center py-3 text-form w-[145px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full disabled:bg-gray-100 disabled:cursor-not-allowed" />
                                                 </div>
 
                                                 <!-- Male Participants -->
@@ -317,8 +321,8 @@
                                                         class="flex items-center self-stretch w-[61px]">Males</label>
                                                     <input type="number" id="percentage_of_males" name="percentage_of_males"
                                                         placeholder="Enter number" min="0" x-model.number="maleCount"
-                                                        class="text-center py-3 text-form w-[141px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full"
-                                                        value="{{ old('percentage_of_males') }}" />
+                                                        :disabled="totalCount < 1"
+                                                        class="text-center py-3 text-form w-[145px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full disabled:bg-gray-100 disabled:cursor-not-allowed" />
                                                 </div>
                                             </div>
 
@@ -329,26 +333,19 @@
                                                         class="flex items-center self-stretch w-[61px] xl:mr-[15px]">Other</label>
                                                     <input type="number" id="percentage_of_other" name="percentage_of_other"
                                                         placeholder="Enter number" min="0" x-model.number="otherCount"
-                                                        class="text-center py-3 text-form w-[141px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full"
-                                                        value="{{ old('percentage_of_other') }}" />
+                                                        :disabled="totalCount < 1"
+                                                        class="text-center py-3 text-form w-[145px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full disabled:bg-gray-100 disabled:cursor-not-allowed" />
                                                 </div>
                                             </div>
+
+                                            <!-- Validation message -->
+                                            <div x-show="sumOfGenderCounts() > totalCount" class="mt-2 text-sm text-red-600">
+                                                The sum of gender counts cannot exceed the total number of participants.
+                                            </div>
                                         </div>
-
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="flex flex-row items-center justify-between w-full codeweek-form-field max-sm:flex-col max-sm:items-start">
-                                    <label class="text-form leading-6 text-black w-[147px] whitespace-nowrap"
-                                        for="id_participants_count"></label>
-                                    <div class="flex flex-col w-full md:max-w-[472px] errors">
-                                        @component('components.validation-errors', ['field' => 'participants_count'])
-                                        @endcomponent
                                     </div>
                                 </div>
                             </div>
-
                             <div class="flex flex-wrap mt-4 codeweek-form-field-wrapper">
                                 <div
                                     class="flex items-start justify-between w-full codeweek-form-field max-sm:flex-col max-sm:items-start">
@@ -516,9 +513,11 @@
                                     <label class="text-form leading-6 text-black w-[147px]"
                                         for="id_codeweek_forall_code_label">@lang('event.codeweek_for_all_participation_code.title')</label>
                                     <div class="w-full group-fields max-w-[472px]">
+
+
                                         <input
                                             class="w-full px-6 py-3 text-form md:max-w-[472px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full"
-                                            id="id_codeweek_forall_code" maxlength="75"
+                                            id="id_codeweek_forall_code" maxlength="12"
                                             name="codeweek_for_all_participation_code"
                                             value="{{ old('codeweek_for_all_participation_code') }}"
                                             placeholder="XXX-XXX-XXX">
@@ -551,7 +550,7 @@
                                     <div class="fileinput-new">
                                         <div class="fileinput-preview fileinput-exists"></div>
                                         <div class="w-full max-w-[478px]">
-                     <picture-form></picture-form>                       
+                                            <picture-form></picture-form>
                                         </div>
                                     </div>
                                 </div>
@@ -559,12 +558,8 @@
 
                         </div>
                         <div class="flex justify-end w-full relative mt-6 -left-[4px]">
-                            <button type="button" x-on:click="nextStep()" x-bind:disabled="hasErrors"
-                                class="flex justify-center items-center leading-none px-2.5 py-3 border-2 border-solid rounded-3xl w-[160px] h-[48px] text-base font-bold whitespace-nowrap transition-colors duration-200"
-                                x-bind:class="{
-                                    'bg-gray-300 text-gray-500 cursor-not-allowed border-gray-300': hasErrors,
-                                    'bg-primary text-black border-primary hover:bg-white': !hasErrors
-                                }">
+                            <button type="button" x-on:click="nextStep()"
+                                class="flex justify-center items-center leading-none px-2.5 py-3 border-2 border-solid rounded-3xl w-[160px] h-[48px] text-base font-bold whitespace-nowrap transition-colors duration-200 bg-primary text-black border-primary hover:bg-white">
                                 Next Step
                             </button>
                         </div>
@@ -1062,10 +1057,32 @@
                         }
                     },
 
+                   /* nextStep() {
+                        // Create a hidden submit button and click it to trigger Laravel validation
+                        const form = document.querySelector('form.codeweek-form');
+                        const tempButton = document.createElement('button');
+                        tempButton.type = 'submit';
+                        tempButton.style.display = 'none';
+                        form.appendChild(tempButton);
+                        tempButton.click();
+                        form.removeChild(tempButton);
+
+                        // The form submission will handle showing all validation errors
+                        // If there are no errors, the page will refresh with the next step
+                    }, */
+
                     nextStep() {
-                        this.checkErrors();
-                        if (!this.hasErrors && this.currentStep < this.totalSteps) {
-                            this.currentStep++;
+                        // Check if there are any validation error messages visible
+                        const errorMessages = document.querySelectorAll('.errorlist:not([style*="display: none"])');
+                        
+                        if (errorMessages.length === 0) {
+                            // No validation errors, proceed to step 2
+                            if (this.currentStep < this.totalSteps) {
+                                this.currentStep++;
+                            }
+                        } else {
+                            // Validation errors exist, stay on step 1
+                            this.currentStep = 1;
                         }
                     },
 
