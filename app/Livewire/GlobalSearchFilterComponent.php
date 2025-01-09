@@ -9,11 +9,13 @@ use App\Services\GlobalSearchService;
 class GlobalSearchFilterComponent extends Component
 {
     public $selectedFilter = GlobalSearchFiltersEnum::ALL->value;
+    public $searchQuery = '';
     
     protected $globalSearchService;
 
     protected $queryString = [
         'selectedFilter' => ['except' => GlobalSearchFiltersEnum::ALL->value],
+        'searchQuery' => ['except' => ''],
     ];
 
     public function __construct()
@@ -31,9 +33,14 @@ class GlobalSearchFilterComponent extends Component
         $this->dispatch('filterChanged', filter: $filter);
     }
 
+    public function updatedSearchQuery()
+    {
+        $this->dispatch('searchQueryChanged', term: $this->searchQuery);
+    }
+
     public function render()
     {
-        return view('livewire.filter-component', [
+        return view('livewire.global-filter-component', [
             'filters' => GlobalSearchFiltersEnum::values(),
         ]);
     }

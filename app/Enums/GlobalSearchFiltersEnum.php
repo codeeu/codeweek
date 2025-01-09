@@ -55,6 +55,7 @@ enum GlobalSearchFiltersEnum: string
                 'type_search' => 'model',
                 'model' => StaticPage::class,
                 'search_fields' => [
+                    'name',
                     'description',
                     'keywords'
                 ],
@@ -107,7 +108,7 @@ enum GlobalSearchFiltersEnum: string
                     'name' => '{title}',
                     'category' => 'Activities',
                     'description' => '{description}',
-                    'thumbnail' => '{picture}',
+                    'thumbnail' => '{picture_path}',
                     'path' => '{url}',
                     'link_type' => 'internal',
                     'language' => 'en',
