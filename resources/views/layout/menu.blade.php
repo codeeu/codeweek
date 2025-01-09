@@ -1,15 +1,51 @@
-<header>
+<header class="codeweek-container-lg mx-auto relative flex items-center gap-6 pt-12 pb-5">
     <div id="logo-wrapper">
-        <a id="primary-menu-trigger" href="/"><img class="menu" src="/images/menu.svg"><img class="close hide"
-                                                                                            src="/images/close_menu.svg"></a>
-        <a id="logo" href="/"><img src="/images/logo.svg" alt="CodeWeek"></a>
+        <a id="primary-menu-trigger" class="absolute sm:static sm:pr-6 left-5 top-12" href="/">
+          <img class="menu" src="/images/menu.svg">
+          <img class="close hide" src="/images/close_menu.svg">
+        </a>
+        <a id="logo" href="/">
+          <img src="/images/logo.svg" alt="CodeWeek">
+        </a>
     </div>
-    <nav id="primary-menu">
-        <ul>
+    <nav id="primary-menu" class="flex-grow font-['Montserrat']">
+        <ul class="max-xl:flex max-xl:flex-col max-xl:overflow-auto main-menu">
+            <li class="relative flex justify-center pt-12 pb-5 xl:hidden">
+              <a id="primary-menu-trigger" class="absolute left-0 top-12" href="/">
+                <img class="close hide" src="/images/close_menu.svg">
+              </a>
+              <a id="logo" href="/">
+                <img src="/images/logo.svg" alt="CodeWeek">
+              </a>
+            </li>
+
+            <li class="xl:hidden">
+                <a
+                  class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                  href="javascript:void(null);"
+                >
+                  @lang('menu.select_language')
+                  <img src="/images/chevron-down-icon.svg" alt="">
+                </a>
+                      
+                <ul class="sub-menu lang-list">
+                    @foreach ($locales as $key => $value)
+                        <li class="w-40">
+                            <a href="/setlocale/?locale={{$value}}">@lang('base.languages_menu.' . $value)</a>
+                        </li>
+                    @endforeach
+                </ul>
+          </li>
+
             <li>
-                <a href="javascript:void(null);">@lang('menu.events')</a>
-                <ul>
-                    {{--                    <li><a href="{{route('codeweek2020')}}">Codeweek 2020</a></li>--}}
+                <a
+                  class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                  href="javascript:void(null);"
+                >
+                  @lang('menu.events')
+                  <img src="/images/chevron-down-icon.svg" alt="">
+                </a>
+                <ul class="sub-menu">
                     <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
                     <li><a href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
                     <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
@@ -18,8 +54,14 @@
             </li>
 
             <li>
-                <a href="javascript:void(null);">@lang('menu.resources')</a>
-                <ul>
+              <a
+                class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                href="javascript:void(null);"
+              >
+                @lang('menu.resources')
+                <img src="/images/chevron-down-icon.svg" alt="">
+              </a>
+                <ul class="sub-menu">
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
                     <li><a href="/podcasts">Podcasts</a></li>
                     <li><a href="{{route('hackathons')}}">Hackathons</a></li>
@@ -34,19 +76,34 @@
                 </ul>
             </li>
 
-            {{--            <li><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>--}}
-            <li><a href="{{route('community')}}">@lang('community.titles.0')</a></li>
+            <li>
+              <a class="!text-[#1C4DA1] !text-base font-semibold" href="{{route('community')}}">
+                @lang('community.titles.0')
+              </a>
+            </li>
 
             <li>
-                <a href="javascript:void(null);">@lang('menu.schools')</a>
-                <ul class="dropdown-menu">
+                <a
+                  class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                  href="javascript:void(null);"
+                >
+                  @lang('menu.schools')
+                  <img src="/images/chevron-down-icon.svg" alt="">
+                </a>
+                <ul class="dropdown-menu sub-menu">
                     <li><a href="{{route('schools')}}">@lang('menu.why')?</a></li>
                     <li><a href="/remote-teaching">@lang('remote-teaching.remote-teaching')</a></li>
                 </ul>
             </li>
             <li>
-                <a href="javascript:void(null);">@lang('menu.about')</a>
-                <ul>
+                <a
+                  class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                  href="javascript:void(null);"
+                >
+                  @lang('menu.about')
+                  <img src="/images/chevron-down-icon.svg" alt="">
+                </a>
+                <ul class="sub-menu">
                     <li><a href="/about">Code Week</a></li>
 
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
@@ -56,14 +113,45 @@
                     <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                 </ul>
             </li>
-            <li><a href="https://codeweek.eu/blog/" rel="noreferer noopener">@lang('menu.blog')</a></li>
+            <li>
+              <a
+                class="!text-[#1C4DA1] !text-base font-semibold"
+                href="https://codeweek.eu/blog/"
+                rel="noreferer noopener"
+              >
+                @lang('menu.blog')
+              </a>
+            </li>
+            <li class="flex-grow flex h-full items-end xl:hidden">
+              <div class="flex flex-col gap-4 items-center w-full pb-12 pt-5">
+                <a class="border-2 border-[#1C4DA1] bg-[#1C4DA1] text-white rounded-full px-6 py-[7px]" href="/search">
+                  <span class="text-base leading-[30px] font-semibold">
+                    @lang('menu.search_site')
+                  </span>
+                </a>
+                @if (Auth::check())
+                  <a class="bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker']" href="/add">
+                    <span class="text-base leading-7 font-semibold">@lang('menu.register_activity')</span>
+                  </a>
+                @else
+                  <a class="border-2 border-[#1C4DA1] text-[#1C4DA1] rounded-full px-6 py-[7px]" href="/login">
+                    <span class="text-base leading-[30px] font-semibold">
+                      @lang('menu.login') / @lang('menu.signup')
+                    </span>
+                  </a>
+                @endif
+              </div>
+            </li>
         </ul>
     </nav>
-    <div id="right-menu">
+    <div id="right-menu" class="flex gap-2">
+        <a class="border bg-[#1C4DA1] text-[#1C4DA1] rounded-full p-[13px] font-['Blinker']" href="/search">
+          <img class="text-white" src="/images/search-icon.svg" alt="">
+        </a>
         @if (Auth::check())
             <div class="round-button-user-menu menu-trigger user-menu">
                 <a href="javascript:void(null);">
-                    <img src="/images/user.svg" class="button-icon">
+                    <img src="/images/user.svg" class="text-white">
                 </a>
                 <ul class="menu-dropdown">
                     <li>
@@ -106,15 +194,6 @@
                     </li>
 
                     @endrole
-
-{{--                    @role('super admin')--}}
-{{--                    <li>--}}
-{{--                        <img src="/images/user_menu_pending_events.svg" class="icon">--}}
-{{--                        <a href="{{route('pending')}}">--}}
-{{--                            @lang('menu.pending') v1--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    @endrole--}}
 
                     @role('ambassador|super admin')
                     <li>
@@ -210,10 +289,19 @@
             </div>
         @endif
 
-        <div id="tools">
-            <div class="round-button menu-trigger lang-menu">
-                <a href="javascript:void(null);">{{App::getLocale()}}</a>
-                <div class="menu-dropdown">
+        <a class="max-xl:hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker']" href="/add">
+          <span class="text-base leading-7 font-semibold text-black normal-case">
+            @lang('menu.register_activity')
+          </span>
+        </a>
+
+        <div id="tools" class="h-[50px]">
+            <div class="menu-trigger lang-menu relative flex items-center gap-1 cursor-pointer px-2 h-full">
+                <a class="!text-[#1C4DA1] !text-base" href="javascript:void(null);">{{App::getLocale()}}</a>
+                <img class="text-[#1C4DA1]" src="/images/chevron-down-icon.svg" alt="">
+                
+                  
+                <div class="menu-dropdown absolute top-14">
                     <ul>
                         @foreach ($locales as $key => $value)
                             <li>
@@ -224,30 +312,6 @@
                     </ul>
                 </div>
             </div>
-{{--            @if(!isset(Request::header()["dnt"]))--}}
-{{--                @if (Cookie::get('codeweek_cookie_consent') == 1)--}}
-{{--                    <div class="round-button menu-trigger facebook-menu">--}}
-{{--                        <img src="/images/facebook.svg" alt="Facebook" class="button-icon">--}}
-{{--                        <div class="menu-dropdown">--}}
-{{--                            <div class="fb-page" data-width="400"--}}
-{{--                                 data-href="https://www.facebook.com/codeEU" data-tabs="timeline"--}}
-{{--                                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"--}}
-{{--                                 data-show-facepile="true">--}}
-{{--                                <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a--}}
-{{--                                            href="https://www.facebook.com/codeEU">EU Code Week</a></blockquote>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="round-button menu-trigger twitter-menu">--}}
-{{--                        <img src="/images/x-twitter.svg" alt="Twitter" class="button-icon">--}}
-{{--                        <div class="menu-dropdown">--}}
-{{--                            <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"--}}
-{{--                               data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"--}}
-{{--                               data-tweet-limit="4"></a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                @endif--}}
-{{--            @endif--}}
         </div>
     </div>
 </header>
