@@ -44,7 +44,7 @@ class Berlin extends Command
 
         $techicalUser = ImporterHelper::getTechnicalUser('berlin-technical');
 
-        $items = BerlinRSSItem::whereNull('imported_at')->get();
+        $items = BerlinRSSItem::all();
 
         foreach ($items as $item) {
 
