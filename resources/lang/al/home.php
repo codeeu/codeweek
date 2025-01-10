@@ -1,15 +1,16 @@
 <?php
 
 return [
-    'about' => 'EU Code Week është një nismë në terren që synon të sjellë
-                            kodimin dhe “alfabetizmin” dixhital te të gjithë në një mënyrë
-                            argëtuese dhe angazhuese.',
-    'when' => '14-27 tetor 2024',
-    'when_text' => 'Mësimi i kodimit na ndihmon të kuptojmë logjikisht botën rrotull nesh që
-                            ndryshon shpejt, të zgjerojmë të kuptuarin tonë rreth mënyrës
-                            se si funksionon teknologjia, si dhe të zhvillojmë aftësi dhe kapacitete për
-                            të eksploruar ide të reja dhe për të sjellë inovacion.',
+    'about' =>
+    'EU Code Week është një nismë në terren që synon të sjellë
+    kodimin dhe “alfabetizmin” dixhital te të gjithë në një mënyrë
+    argëtuese dhe angazhuese.',
+    'when' => 'Pievienojieties mums svētku priekam!',
+    'when_text' =>
+    'Programmēšanas apguve palīdz mums izprast strauji mainīgo pasauli apkārt. Pievienojieties miljoniem citu organizatoru un dalībnieku, lai iedvesmotu programmēšanas un datoriskās domāšanas prasmju attīstību, izpētītu jaunas idejas un radītu inovācijas nākotnei.',
+    'xmas_text' => 'Padariet šo svētku sezonu mirdzošu ar inovācijām un radošumu! Pievienojieties mūsu "Coding@Christmas" jautrībai, pievienojot savu programmēšanas aktivitāti mūsu kartei, un iegūstiet iespēju laimēt micro:bit komplektu saviem skolēniem. Svinēsim svētkus, dodot spēku nākamajai domātāju un radītāju paaudzei. Pievienojiet savu aktivitāti jau šodien un palīdziet iedvesmot gaišāku nākotni!',
     'school_banner_title' => 'Përfshihu!',
+    'button_text' => 'Iesaisties!',
     'school_banner_text' => 'Jeni mësues?',
     'school_banner_text2' => 'Klikoni këtu për të mësuar si të përfshiheni!',
     'organize_activity_title' => 'Organizoni ose merrni pjesë në një aktivitet',

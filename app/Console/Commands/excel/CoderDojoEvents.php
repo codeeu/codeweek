@@ -42,7 +42,7 @@ class CoderDojoEvents extends Command
 
         Excel::import(
             new CoderDojoEventsImport(),
-            'events.xlsx',
+            'events-coderdojobelgium.xlsx',
             'excel'
         );
     }

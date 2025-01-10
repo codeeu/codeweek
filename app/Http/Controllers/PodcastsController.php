@@ -19,6 +19,7 @@ class PodcastsController extends Controller
 
     public function show(Podcast $podcast): View
     {
+
         return view('podcast', compact('podcast'));
     }
 

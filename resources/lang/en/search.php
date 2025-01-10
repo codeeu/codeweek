@@ -31,11 +31,4 @@ return [
     'themes' => 'Themes',
     'countries' => 'Countries',
     'search_placeholder' => 'Search by title or description',
-    'search_banner_title' => 'Find what inspires you',
-    'search_banner_content' => 'Browse through a wealth of coding resources, activities, and guides to support your journey into digital creativity and learning',
-    'search_results_title' => 'Search results',
-    'search_input_label' => 'See the results based on your keyword(s) below:',
-    'search_input_placeholder' => 'Search...',
-    'results' => 'Results',
-    'no_results' => 'No results found.',
 ];
