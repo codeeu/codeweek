@@ -15,6 +15,7 @@
                 </div>
                 <div class="when">
                     <div class="mb-4 title fortest">#EUCodeWeek</div>
+
                     <!--<div class="date">@lang('home.when')</div> -->
                     <div class="text">@lang('home.when_text')</div>
                     <div class="arrow"><img src="/images/arrow_down.svg"></div>
