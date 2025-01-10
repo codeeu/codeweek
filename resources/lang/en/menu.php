@@ -39,7 +39,9 @@ return [
     'report' => 'Report my activities',
     'volunteers' => 'Volunteers',
     'logout' => 'Logout',
+    'login' => 'Login',
     'signin' => 'Sign in',
+    'signup' => 'Sign up',
     'privacy' => 'Privacy',
     'stats' => 'Statistics',
     'participation' => 'Participation Certificate',
@@ -48,4 +50,7 @@ return [
     'online_events' => 'Online Activities',
     'featured_activities' => 'Featured Activities',
     'codeweek2020' => '2020 Edition',
+    'register_activity' => 'Register activity',
+    'select_language' => 'Select language',
+    'search_site' => 'Search site',
 ];
