@@ -11,7 +11,7 @@
                 <div class="countdown">
                     <div id="countdown">
                     </div>
-                    <img src="/images/countdown.svg" class="static-image">
+                    <img src="/images/countdown.svg" class="static-imag test">
                 </div>
                 <div class="when">
                     <div class="mb-4 title testfour ">#EUCodeWeek</div>
