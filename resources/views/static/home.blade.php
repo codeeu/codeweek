@@ -14,7 +14,7 @@
                     <img src="/images/countdown.svg" class="static-image">
                 </div>
                 <div class="when">
-                    <div class="mb-4 title test testtwo testthree">#EUCodeWeek</div>
+                    <div class="mb-4 title testfour ">#EUCodeWeek</div>
                     <!--<div class="date">@lang('home.when')</div> -->
                     <div class="text">@lang('home.when_text')</div>
                     <div class="arrow"><img src="/images/arrow_down.svg"></div>
