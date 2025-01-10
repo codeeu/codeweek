@@ -2,8 +2,10 @@
 
 return [
     'about' => 'EU’s kodeuge er et græsrodsinitiativ, som har til formål at gøre kodning og digitale færdigheder tilgængelige for alle på en sjov og medrivende måde.',
-    'when' => '14.-27. oktober 2024',
+    'when' => 'Kom og vær med til noget festligt sjov!',
     'when_text' => 'At lære at kode hjælper os med at finde mening i den hastigt skiftende verden omkring os, udvide vores forståelse af hvordan teknologi virker og udvikle evner og færdigheder, så vi kan udforske nye idéer og skabe nyt.',
+    'xmas_text' => 'Få julen til at funkle af innovation og kreativitet! Deltag i vores »Coding@Christmas«-sjov ved at tilføje din kodningsaktivitet til vores kort, og få chancen for at vinde et micro:bit-sæt til dine elever. Lad os fejre julen ved at styrke den næste generation af tænkere og skabere. Tilføj din aktivitet i dag, og vær med til at inspirere til en lysere fremtid!',
+    'button_text' => 'Vær med!',
     'school_banner_title' => 'Vær med!',
     'school_banner_text' => 'Er du lærer?',
     'school_banner_text2' => 'Klik her for at se, hvordan du kan være med!',

@@ -18,7 +18,7 @@ class PartnerFilterComponent extends Component
 
     public function render()
     {
-        return view('livewire.filter-component', [
+        return view('livewire.partner-filter-component', [
             'filters' => ['Partners', 'Council Presidency', 'EU Code Week Supporters'] // Available filters
         ]);
     }

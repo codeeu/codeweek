@@ -13,10 +13,6 @@ class Podcast extends Model implements Feedable
     //
     protected $guarded = [];
 
-    public function getUrlAttribute() {
-        return route('podcast', ['podcast' => $this->id]);
-    }
-
     protected function casts(): array
     {
         return [

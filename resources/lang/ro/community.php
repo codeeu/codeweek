@@ -36,16 +36,4 @@ return [
         'și consultați lista Ambasadorilor Săptămânii UE a programării.',
         'Dacă există ambasadori în țara dumneavoastră, vă rugăm să îi contactați direct pentru a vedea cum puteți sprijini cel mai bine inițiativa. Dacă nu există niciun ambasador în țara dumneavoastră, contactați-ne la adresa info@codeweek.eu.',
     ],
-
-    'hub_RO' => 'University Politehnica of Bucharest.',
-    'hub_level_RO' => 'Regional Hub',
-    'hub_desc_RO' => 'Renumită ca una dintre cele mai importante instituții tehnice din România, Universitatea Națională de Știință și Tehnologie Politehnica București se remarcă drept un lider în educația și cercetarea din domeniul ingineriei și tehnologiei. Universitatea oferă o gamă variată de programe, pregătind studenții cu abilitățile necesare pentru a reuși într-o piață globală competitivă.
-Angajată în cercetare și inovație, universitatea colaborează cu parteneri din industrie pentru a stimula progresul tehnologic și a aborda provocările din viața reală. De asemenea, promovează antreprenoriatul și învățarea continuă, pregătind viitorii lideri în domeniile lor.
-În calitate de Hub Național Code Week pentru România și Moldova, Politehnica București organizează parteneriate, workshop-uri, hackathoane și evenimente tehnice pentru a promova programarea și competențele digitale în rândul tinerilor și al profesorilor. Aceste activități îi inspiră pe participanți să exploreze tehnologia și evidențiază rolul universității în dezvoltarea inovatorilor de mâine.',
-
-    'hub_MD' => 'University Politehnica of Bucharest.',
-    'hub_level_MD' => 'Regional Hub',
-    'hub_desc_MD' => 'Renumită ca una dintre cele mai importante instituții tehnice din România, Universitatea Națională de Știință și Tehnologie Politehnica București se remarcă drept un lider în educația și cercetarea din domeniul ingineriei și tehnologiei. Universitatea oferă o gamă variată de programe, pregătind studenții cu abilitățile necesare pentru a reuși într-o piață globală competitivă.
-Angajată în cercetare și inovație, universitatea colaborează cu parteneri din industrie pentru a stimula progresul tehnologic și a aborda provocările din viața reală. De asemenea, promovează antreprenoriatul și învățarea continuă, pregătind viitorii lideri în domeniile lor.
-În calitate de Hub Național Code Week pentru România și Moldova, Politehnica București organizează parteneriate, workshop-uri, hackathoane și evenimente tehnice pentru a promova programarea și competențele digitale în rândul tinerilor și al profesorilor. Aceste activități îi inspiră pe participanți să exploreze tehnologia și evidențiază rolul universității în dezvoltarea inovatorilor de mâine.'
 ];

@@ -76,13 +76,6 @@ class Event extends Model
 
     //protected $appends = ['LatestModeration'];
 
-    public function getUrlAttribute() {
-        return route('view_event', [
-            'event' => $this->id,
-            'slug' => $this->slug
-        ]);
-    }
-
     public function getJavascriptData()
     {
         return $this->only(['geoposition', 'title', 'description']);
