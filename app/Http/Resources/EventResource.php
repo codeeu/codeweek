@@ -35,6 +35,7 @@ class EventResource extends JsonResource
             'audiences' => ThemeResource::collection($this->audiences),
             'tags' => ThemeResource::collection($this->tags),
             'owner' => new UserResource($this->owner),
+            'url' => $this->url,
         ];
     }
 }
