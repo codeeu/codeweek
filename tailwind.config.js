@@ -16,6 +16,7 @@ module.exports = {
         'primary': '#F95C22',
         'light-orange': '#f15d22',
         'dark-orange': '#B63100',
+        'hover-orange': '#FB9D7A',
         'secondary': '#164194',
         'blue-primary': '#40B5D1',
         'aqua': '#B1E0E5',
@@ -25,13 +26,11 @@ module.exports = {
         'yellow': '#FFD700',
         'yellow-2': '#FFF7CC',
         'dark-blue': '#1C4DA1',
+        'hover-blue': '#0A42A1',
         'slate': '#5C656D'
       },
       screens: {
         'tablet': '993px',
-      },
-      fontSize: {
-        base: '1.125rem',
       },
       lineHeight: {
         'truly-normal': 'normal',  // Custom class for true line-height: normal

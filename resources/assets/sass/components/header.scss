@@ -254,22 +254,21 @@ header .user-menu .menu-dropdown li:hover a{
 
 header .lang-menu .menu-dropdown ul{
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 375px;
+  flex-direction: column;
+  max-height: calc(100dvh - 300px);
+  overflow: auto;
   margin: 0px !important;
   padding: 0px;
   list-style: none;
 }
 
 header .lang-menu .menu-dropdown ul li{
-  width: 125px;
   text-align: center;
 }
 
 header .lang-menu .menu-dropdown ul li a{
   color: $main-color3 !important;
-  padding: 15px;
+  padding: 15px 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -521,4 +520,39 @@ header .lang-menu .menu-dropdown ul li:hover a{
     margin-right: 18px;
   }
 
+}
+
+@media (min-width: 768px) {
+  li.sub-menu, li.menu-item, div.menu-item {
+    svg {
+      transition-duration: 300ms;
+    }
+
+    > a {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #1C4DA1;
+        bottom: 0;
+        left: 0;
+        transition-duration: 300ms;
+      }
+    }
+
+    &:hover {
+      svg {
+        transform: scale(-1);
+      }
+
+      > a {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
