@@ -99,7 +99,7 @@
             </div>
         </section>
 
-        <section class="relative bg-yellow-2">
+        <section class="relative bg-yellow-2 fade-scale-animation">
             <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center py-16 md:py-[186px] gap-12">
                 <div class="flex-1">
                     <img loading="lazy" src="/images/homepage/minecraftlogo.png" />
@@ -118,7 +118,7 @@
                     </a>
                 </div>
                 <div class="flex-1">
-                    <img loading="lazy" src="/images/homepage/minecraft1.png" />
+                    <img id="section-image" loading="lazy" src="/images/homepage/minecraft1.png" />
                 </div>
             </div>
         </section>
@@ -200,6 +200,26 @@
 @push('scripts')
     {{-- @include('static.chatbot') --}}
     @include('static.countdown')
+@endpush
+
+@push('scripts')
+<script type="text/javascript">
+// FadeScale animation
+  const scaleAnimationSections = document.querySelectorAll(".fade-scale-animation") || [];
+
+  scaleAnimationSections.forEach(section => {
+    const sectionImage = section.querySelector('#section-image');
+    sectionImage.classList.add('scale-0', 'opacity-0', 'translate-x-1/2', 'duration-500');
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { 
+        sectionImage.classList.remove('scale-0', 'opacity-0', 'translate-x-1/2');
+        sectionImage.classList.add('scale-100', 'opacity-100', 'translate-x-0');
+      }
+
+    }, { threshold: 0.3 });
+    observer.observe(section);
+  })
+</script>
 @endpush
 
 @push('scripts')
