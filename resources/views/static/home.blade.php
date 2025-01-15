@@ -157,7 +157,7 @@
             <div class="absolute z-0 bottom-12 right-20 w-28 h-28 hidden md:block bg-[#99E1F4] rounded-full"></div>
         </section>
 
-        <section class="relative">
+        <section class="relative fade-resource-animation">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(170% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden md:block" style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
             <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center pt-28 md:pt-48 pb-16 gap-12">
@@ -170,29 +170,35 @@
                     </p>
                     <div class="flex flex-col lg:flex-row gap-4">
                         <a
-                          class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-[#1C4DA1]"
+                          class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#061b45] hover:text-white group"
                           href="/resources/CodingAtHome"
                         >
                             <span>@lang('home.resouce_button1')</span>
-                            <img src="/images/arrow-right-icon.svg" />
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                            </div>
                         </a>
                         <a
-                          class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-[#1C4DA1]"
+                          class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#061b45] hover:text-white group"
                           href="/training"
                         >
-                          <span>@lang('home.resouce_button2')</span>
-                            <img src="/images/arrow-right-icon.svg" />
+                            <span>@lang('home.resouce_button2')</span>
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div class="flex-1 flex justify-center">
-                    <img class="max-w-96 w-full" loading="lazy" src="/images/homepage/resource-training.png" />
+                <div class="flex-1 flex justify-center relative">
+                    <img class="w-full z-10 resource-image" loading="lazy" src="/images/homepage/resource-training.png" />
+                    <img
+                        class="resource-image absolute z-0 bottom-0 right-0 translate-x-3/4 translate-y-16"
+                        src="/images/homepage/resource-training-icon.png"
+                    />
                 </div>
             </div>
-            <img
-              class="absolute z-0 bottom-6 right-0"
-              src="/images/homepage/resource-training-icon.svg"
-            />
         </section>
     </section>
 @endsection
@@ -204,7 +210,7 @@
 
 @push('scripts')
 <script type="text/javascript">
-// FadeScale animation
+  // Minecraft animation
   const scaleAnimationSections = document.querySelectorAll(".fade-scale-animation") || [];
 
   scaleAnimationSections.forEach(section => {
@@ -218,6 +224,25 @@
 
     }, { threshold: 0.3 });
     observer.observe(section);
+  })
+
+  // Resources and training animation
+  const fadeResourceAnimationSections = document.querySelectorAll(".fade-resource-animation") || [];
+
+  fadeResourceAnimationSections.forEach(section => {
+    const sectionImages = section.querySelectorAll('.resource-image');
+    sectionImages.forEach(sectionImage => {
+      sectionImage.classList.add('scale-0', 'opacity-0', 'duration-700');
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          sectionImage.classList.remove('scale-0', 'opacity-0');
+          sectionImage.classList.add('scale-100', 'opacity-100');
+        }
+
+      }, { threshold: 0.3 });
+
+      observer.observe(section);
+    })
   })
 </script>
 @endpush
