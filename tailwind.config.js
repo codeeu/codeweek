@@ -32,6 +32,9 @@ module.exports = {
       screens: {
         'tablet': '993px',
       },
+      fontSize: {
+        base: '1.125rem',
+      },
       lineHeight: {
         'truly-normal': 'normal',  // Custom class for true line-height: normal
       },

@@ -66,7 +66,7 @@
 </head>
 
 
-<body>
+<body class="new-layout">
 
     <!-- Document Wrapper -->
     <div id="app">

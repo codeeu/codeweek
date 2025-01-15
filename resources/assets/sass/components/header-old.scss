@@ -1,5 +1,11 @@
-.new-layout {
+body:not(.new-layout) {
   header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+    height: 156px;
+    display: flex;
+    align-items: center;
     background-color: $main-color4;
   }
 
@@ -8,9 +14,14 @@
     align-items: center;
   }
 
+  header #logo {
+    margin-left:40px;
+  }
+
   header nav{
     flex: 1;
     height: 50px;
+    max-width: 753px;
   }
 
   header nav ul {
@@ -23,7 +34,8 @@
   }
 
   header nav ul li{
-    padding: 0 8px;
+    //display: inline;
+    padding-left: 46px;
     position: relative;
   }
 
@@ -97,24 +109,28 @@
     color: $main-color;
   }
 
+  header #right-menu{
+    display: flex;
+    align-items: flex-end;
+    padding-right: 25px;
+  }
+
   header #right-menu .round-button,
   header #right-menu .round-button-sign,
   header #right-menu .round-button-user-menu{
     width: 50px;
     height: 50px;
-    border-radius: 100%;
+    border: 1px solid #BBBBBB;
+    border-radius: 7px;
+    margin-left: 7px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#FFFFFF;
+    color:#A2A2A2;
     text-align: center;
     font-size: 12px;
     cursor: pointer;
-  }
-
-  header #right-menu .round-button-user-menu{
-    background-color: #1C4DA1;
   }
 
   header .round-button:hover,
@@ -255,21 +271,22 @@
 
   header .lang-menu .menu-dropdown ul{
     display:flex;
-    flex-direction: column;
-    max-height: calc(100dvh - 300px);
-    overflow: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 375px;
     margin: 0px !important;
     padding: 0px;
     list-style: none;
   }
 
   header .lang-menu .menu-dropdown ul li{
+    width: 125px;
     text-align: center;
   }
 
   header .lang-menu .menu-dropdown ul li a{
     color: $main-color3 !important;
-    padding: 15px 25px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -342,7 +359,7 @@
 
   /*MOBILE VERSION*/
 
-  @media (max-width:640px) {
+  @media (max-width:580px) {
 
     #primary-menu {
       width: 100%;
@@ -398,9 +415,19 @@
       padding-right: 0px;
     }
 
+    header #logo-wrapper {
+      height: 100px;
+    }
+
     header nav ul li {
       display: block;
+      text-align: center;
       padding: 20px 0px;
+      border-top: 1px solid #E0E0E0;
+    }
+
+    header nav ul li:last-child {
+      border-bottom: 1px solid #E0E0E0;
     }
 
     header #primary-menu-trigger {
@@ -433,65 +460,15 @@
   }
 
   /*TABLET VERSION*/
-  @media (max-width: 1280px) {
+  @media (min-width: 580px) and (max-width: 1280px) {
 
     #primary-menu {
       width: 100%;
       position: absolute;
       top: 100px;
-      top: 0;
-      left: 0;
       background-color: white;
+      margin-left: -25px;
       z-index: 1;
-    }
-
-    .main-menu.show {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-color: #fff;
-      padding: 0 20px;
-      display: flex !important;
-      align-items: stretch;
-
-      .sub-menu {
-        .lang-list.show {
-          display: flex !important;
-          flex-wrap: wrap;
-          max-height: fit-content;
-        }
-
-        background-color: transparent;
-        box-shadow: none;
-        margin: 0;
-        padding: 8px 0;
-
-        &::before, &::before {
-          display: none;
-        }
-
-        li {
-          padding: 0;
-          a {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            display: block;
-            width: 100%;
-            margin: 0;
-            border: 0;
-            text-align: left;
-            padding: 4px 16px;
-            font-size: 16px;
-            text-transform: none;
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
     }
 
     #primary-menu > ul {
@@ -506,9 +483,15 @@
       padding-left: 25px;
     }
 
+    header #logo-wrapper {
+      height: 100px;
+    }
+
     header nav ul li {
       display: block;
-      padding: 12px 0px;
+      text-align: center;
+      padding: 20px 0px;
+      border-top: 1px solid #E0E0E0;
     }
 
     header #primary-menu-trigger {
@@ -521,40 +504,5 @@
       margin-right: 18px;
     }
 
-  }
-
-  @media (min-width: 768px) {
-    li.sub-menu, li.menu-item, div.menu-item {
-      svg {
-        transition-duration: 300ms;
-      }
-
-      > a {
-        position: relative;
-
-        &::after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 2px;
-          background-color: #1C4DA1;
-          bottom: 0;
-          left: 0;
-          transition-duration: 300ms;
-        }
-      }
-
-      &:hover {
-        svg {
-          transform: scale(-1);
-        }
-
-        > a {
-          &::after {
-            width: 100%;
-          }
-        }
-      }
-    }
   }
 }

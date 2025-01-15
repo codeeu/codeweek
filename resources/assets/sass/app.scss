@@ -2,6 +2,8 @@
 @import "variables";
 
 // Import components
+@import "components/header-old";
+@import "components/footer-old";
 @import "components/header";
 @import "components/footer";
 @import "components/banner";
@@ -115,6 +117,13 @@ main{
   margin-right:auto;
   background-color: $main-color4;
 }
+
+
+body:not(.new-layout) {
+  main {
+    max-width: 1280px;
+  }
+}
 ul{
   list-style: none;
   line-height: 1.5;
@@ -127,6 +136,13 @@ ul{
   margin-right: auto;
   margin-left: auto;
 }
+
+body:not(.new-layout) {
+  #app {
+    max-width: 1280px;
+  }
+}
+
 .show {
   display: block!important;
 }
