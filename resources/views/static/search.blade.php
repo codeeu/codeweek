@@ -8,11 +8,11 @@
             style="background: linear-gradient(36.92deg, #33C2E9 20.32%, #00B3E3 28.24%);"
         >
             <div class="codeweek-container-lg">
-              <div class="relative flex flex-col justify-center w-full max-w-[640px] max-md:mx-auto z-50 bg-white px-6 md:px-14 py-10 md:py-[72px] rounded-[32px]">
-                <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat']">
+              <div class="relative flex flex-col justify-center w-full md:max-w-[400px] xl:max-w-[640px] max-md:mx-auto z-50 bg-white px-6 md:px-14 py-10 md:py-[72px] rounded-[32px]">
+                <h2 class="text-[#1C4DA1] text-[30px] md:text-[48px] xl:text-[60px] leading-9 md:leading-[58px] xl:leading-[72px] font-normal font-['Montserrat']">
                   @lang('search.search_banner_title')
                 </h2>
-                <p class="text-xl md:text-2xl leading-8 text-[#333E48]">
+                <p class="text-xl md:text-2xl leading-8 text-[#333E48] !pb-0">
                     @lang('search.search_banner_content')
                 </p>
               </div>
@@ -23,7 +23,7 @@
               style="clip-path: ellipse(71% 73% at 40% 20%);"
             >
             <img
-              class="absolute top-0 right-0 h-full hidden md:block"
+              class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
               src="images/search/search_bg_lg.png"
               style="clip-path: ellipse(70% 140% at 70% 25%);"
             >

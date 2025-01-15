@@ -39,7 +39,7 @@
                         style="clip-path: ellipse(71% 73% at 40% 20%);"
                       />
                       <img
-                        class="absolute top-0 right-0 h-full hidden md:block"
+                        class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
                         loading="lazy"
                         src="{{ $activity->picture_path() }}"
                         style="clip-path: ellipse(70% 140% at 70% 25%);"
@@ -53,24 +53,32 @@
 
             <button
               id="slider-prev-btn"
-              class="absolute top-40 md:top-1/2 -translate-y-1/2 left-0 bg-white hover:bg-white/70 p-4 rounded-r-full hidden"
+              class="absolute top-40 md:top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 hidden"
             >
               <img class="rotate-180 w-8 h-8" src="/images/arrow-right-icon.svg" />
             </button>
             <button
               id="slider-next-btn"
-              class="absolute top-40 md:top-1/2 -translate-y-1/2 right-0 bg-white hover:bg-white/70 p-4 rounded-l-full hidden"
+              class="absolute top-40 md:top-1/2 -translate-y-1/2 -right-2 hover:right-0 bg-white hover:bg-[#F95C22] p-4 pr-6 rounded-l-full duration-300 hidden"
             >
               <img class="w-8 h-8" src="/images/arrow-right-icon.svg" />
             </button>
         </section>
 
-        <section class="relative bg-yellow-2">
+        <section class="animation-section relative bg-yellow-2">
             <div class="absolute w-full h-full bg-white md:hidden" style="clip-path: ellipse(100% 58% at 38% 39%)"></div>
             <div class="absolute w-full h-full bg-white hidden md:block" style="clip-path: ellipse(70% 60% at 50% 40%);"></div>
             <div class="relative z-10 codeweek-container-lg flex flex-col-reverse md:flex-row items-center py-16 pb-32 md:pb-48 gap-12">
                 <div class="flex-1">
-                  <img loading="lazy" src="/images/homepage/toolkits.png" />
+                  <div class="inline-block observer-element relative">
+                    <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/homepage/toolkits.png" />
+                    <img
+                      class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
+                      loading="lazy"
+                      src="/images/homepage/shape.png"
+                      style="transform: translate(-16px, -24px)"
+                    />
+                  </div>
                 </div>
                 <div class="flex-1">
                     <h2 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
@@ -99,7 +107,7 @@
             </div>
         </section>
 
-        <section class="section-animation relative bg-yellow-2">
+        <section class="relative bg-yellow-2">
             <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center py-16 md:py-[186px] gap-12">
                 <div class="flex-1">
                     <img loading="lazy" src="/images/homepage/minecraftlogo.png" />
@@ -117,16 +125,24 @@
                         <img src="/images/arrow-right-icon.svg" />
                     </a>
                 </div>
-                <div class="flex-1">
-                    <img class="animation-element fade-scale-right" loading="lazy" src="/images/homepage/minecraft1.png" />
+                <div class="observer-element flex-1">
+                    <img class="animation-element fade-scale-right duration-700" loading="lazy" src="/images/homepage/minecraft1.png" />
                 </div>
             </div>
         </section>
 
-        <section class="relative overflow-hidden">
+        <section class="animation-section relative overflow-hidden">
             <div class="relative z-10 codeweek-container-lg flex flex-col-reverse md:flex-row items-center py-16 gap-12">
                 <div class="flex-1">
-                  <img loading="lazy" src="/images/homepage/activity.png" />
+                  <div class="inline-block observer-element relative">
+                    <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/homepage/activity.png" />
+                    <img
+                      class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
+                      loading="lazy"
+                      src="/images/homepage/shape.png"
+                      style="transform: translate(-16px, -24px)"
+                    />
+                  </div>
                 </div>
                 <div class="flex-1">
                     <h2 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
@@ -153,11 +169,17 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute z-0 bottom-10 md:bottom-auto md:top-1/3 right-0 translate-x-1/2 w-28 md:w-72 h-28 md:h-72 bg-[#99E1F4] rounded-full"></div>
-            <div class="absolute z-0 bottom-12 right-20 w-28 h-28 hidden md:block bg-[#99E1F4] rounded-full"></div>
+            <div
+              class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-36 w-28 md:w-72 h-28 md:h-72 bg-[#99E1F4] rounded-full"
+              style="transform: translate(-16px, -24px)"
+            ></div>
+            <div
+              class="animation-element move-background duration-[1.5s] absolute z-0 bottom-12 right-20 w-28 h-28 hidden md:block bg-[#99E1F4] rounded-full"
+              style="transform: translate(-16px, -24px)"
+            ></div>
         </section>
 
-        <section class="section-animation relative overflow-hidden">
+        <section class="relative overflow-hidden">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(170% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden md:block" style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
             <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center pt-28 md:pt-48 pb-16 gap-12">
@@ -191,14 +213,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex-1 flex justify-center relative">
+                <div class="observer-element flex-1 flex justify-center relative">
                     <img
-                        class="animation-element fade-scale-bottom w-full z-10"
+                        class="animation-element fade-scale-bottom duration-700 w-full z-10"
                         loading="lazy"
                         src="/images/homepage/resource-training.png"
                     />
                     <img
-                        class="animation-element fade-scale-bottom absolute z-0 -bottom-10 sm:-bottom-16 -right-16 sm:-right-60 w-[184px] sm:w-[324px]"
+                        class="animation-element fade-scale-bottom duration-700 absolute z-0 -bottom-10 sm:-bottom-16 -right-16 sm:-right-60 w-[184px] sm:w-[324px]"
                         src="/images/homepage/resource-training-icon.png"
                     />
                 </div>
@@ -214,17 +236,16 @@
 
 @push('scripts')
 <script type="text/javascript">
-  const threshold = 0.3;
   // Animation
-  const sections = document.querySelectorAll('.section-animation');
+  const observerElements = document.querySelectorAll('.observer-element');
 
-  sections?.forEach(section => {
-    const animationElements = section.querySelectorAll(".animation-element");
+  observerElements?.forEach(observerElement => {
+    const animationElements = observerElement.querySelectorAll(".animation-element");
 
+    // Fade Scale animation
     animationElements?.forEach(element => {
       let classList = [];
 
-      // Fade Scale animation
       if (element.classList.contains('fade-scale-right')) {
         classList = ['scale-0', 'opacity-0', 'translate-x-1/2'];
       }
@@ -232,17 +253,61 @@
         classList = ['scale-0', 'opacity-0', 'translate-y-1/2'];
       }
 
-      element.classList.add(...classList, 'duration-700');
+      element.classList.add(...classList);
 
       const observer = new IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
           element.classList.remove(...classList);
         }
-      }, { threshold });
+      }, { threshold: 0 });
+
+      observer.observe(observerElement);
+    });
+  });
+
+  const sectionElements = document.querySelectorAll('.animation-section');
+
+  sectionElements?.forEach(section => {
+    const animationElements = section.querySelectorAll(".animation-element");
+
+    // Move Background animation
+    animationElements?.forEach(element => {
+      if (!element.classList.contains('move-background')) return;
+
+      let placementX = 'left';
+      let placementY = 'bottom';
+
+      const handleMoveShape = () => {
+        if (placementX === 'left' && placementY === 'top') {
+          element.style.transform = 'translate(-16px, -24px)';
+        }
+        if (placementX === 'left' && placementY === 'bottom') {
+          element.style.transform = 'translate(-32px, 16px)';
+        }
+        if (placementX === 'right' && placementY === 'top') {
+          element.style.transform = 'translate(32px, -16px)';
+        }
+        if (placementX === 'right' && placementY === 'bottom') {
+          element.style.transform = 'translate(16px, 32px)';
+        }
+      }
+
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) handleMoveShape();
+      }, { threshold: 0 });
 
       observer.observe(section);
+
+      section.addEventListener('mousemove', (event) => {
+        const { top, left, height, width } = section.getBoundingClientRect();
+        const isOnLeft = (width / 2) > (event.clientX - left);
+        const isOnTop = (height / 2) > (event.clientY - top);
+        placementX = isOnLeft ? 'right' : 'left';
+        placementY = isOnTop ? 'bottom' : 'top';
+        handleMoveShape();
+      });
     });
-  })
+  });
 </script>
 @endpush
 

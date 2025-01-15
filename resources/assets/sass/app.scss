@@ -183,4 +183,32 @@ ul{
 
 }
 
+.cookweek-link {
+  font-family: 'Montserrat';
+  color: #1C4DA1;
+  font-size: 16px;
+  font-weight: 600;
+
+  &.hover-underline {
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #1C4DA1;
+      bottom: 0;
+      left: 0;
+      transition-duration: 300ms;
+    }
+    
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @import "pages/cookie";
