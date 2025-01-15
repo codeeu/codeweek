@@ -79,7 +79,7 @@
                     <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 mb-10">
                       @lang('home.toolkits_description')
                     </p>
-                    <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="flex flex-col xl:flex-row gap-4">
                         <a
                           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#1C4DA1] hover:text-white"
                           href="/toolkits"
@@ -135,7 +135,7 @@
                     <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 mb-10">
                       @lang('home.activity_description')
                     </p>
-                    <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="flex flex-col xl:flex-row gap-4">
                         <a
                           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#1C4DA1] hover:text-white"
                           href="/add"
@@ -168,7 +168,7 @@
                     <p class="text-white text-lg md:text-xl leading-7 p-0 mb-10">
                       @lang('home.resouce_description')
                     </p>
-                    <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="flex flex-col xl:flex-row gap-4">
                         <a
                           class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#061b45] hover:text-white group"
                           href="/resources/CodingAtHome"
