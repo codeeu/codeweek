@@ -121,4 +121,21 @@
             ©CodeWeek 2025 | Designed and developed by <a href="/" class="text-dark-blue font-semibold">Matrix Internet</a> . All Rights Reserved
         </p>
     </div>
+    <div
+      id="scroll-top-btn"
+      class="fixed z-[100] -bottom-2 hover:bottom-0 right-[50px] bg-[#FFD700] hover:bg-[#F95C22] p-4 pb-6 rounded-t-full duration-300 cursor-pointer"
+    >
+      <img class="icon-rotate-270" src="/images/arrow-up-icon.svg" />
+    </div>
 </footer>
+
+@push('scripts')
+<script type="text/javascript">
+// Scroll Top
+  const scrollTopBtn = document.getElementById("scroll-top-btn");
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+@endpush
