@@ -102,19 +102,19 @@
     <div class="codeweek-container-lg py-8 xl:py-4 flex flex-col xl:flex-row gap-8 justify-between">
         <ul class="m-0 p-0 flex-shrink-0 flex flex-col items-start xl:items-center xl:flex-row gap-4 xl:gap-10">
             <li>
-                <a href="/" class="cookweek-link hover-underline">Privacy Policy</a>
+                <a href="/" class="cookweek-link hover-underline !text-sm">Privacy Policy</a>
             </li>
             <li>
-                <a href="/" class="cookweek-link hover-underline">Cookie Policy</a>
+                <a href="/" class="cookweek-link hover-underline !text-sm">Cookie Policy</a>
             </li>
             <li>
-                <a href="/" class="cookweek-link hover-underline">Accessibility</a>
+                <a href="/" class="cookweek-link hover-underline !text-sm">Accessibility</a>
             </li>
             <li>
-                <a href="/" class="cookweek-link hover-underline">Terms & Conditions</a>
+                <a href="/" class="cookweek-link hover-underline !text-sm">Terms & Conditions</a>
             </li>
             <li>
-                <a href="/" class="cookweek-link hover-underline">Sitemap</a>
+                <a href="/" class="cookweek-link hover-underline !text-sm">Sitemap</a>
             </li>
         </ul>
         <p class="p-0 text-slate font-['Montserrat'] font-medium text-sm mb-8 md:mb-0">

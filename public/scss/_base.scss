@@ -245,6 +245,12 @@ FOOTER STYLES
 *********************/
 
 footer {
+	width: 100%;
+	background-color: $dark-blue;
+	color: $silver;
+	padding-top: 20px;
+	margin-top: 20px;
+
 	a {
 		color: $white;
 		&:hover {

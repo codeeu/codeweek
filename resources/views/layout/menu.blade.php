@@ -2,29 +2,29 @@
     <div class="codeweek-container-lg flex items-center gap-6">
         <div id="logo-wrapper" class="relative w-full flex justify-center sm:block sm:w-auto">
             <a id="primary-menu-trigger" class="absolute sm:static sm:pr-6 -left-6 top-1/2 -translate-y-1/2 sm:translate-y-0" href="/">
-                <img class="menu" src="/images/menu.svg">
-                <img class="close hide" src="/images/close_menu.svg">
+                <img class="menu" src="/images/menu_icon.svg">
+                <img class="close hide" src="/images/close_menu_icon.svg">
             </a>
             <a id="logo" href="/">
-                <img src="/images/logo.svg" alt="CodeWeek">
+                <img src="/images/logo_icon.svg" alt="CodeWeek">
             </a>
         </div>
         <nav id="primary-menu" class="flex-grow font-['Montserrat']">
-            <ul class="max-xl:flex max-xl:flex-col max-xl:overflow-auto main-menu">
-                <li class="pt-16 md:pt-12 pb-5 xl:hidden">
+            <ul class="max-xl:flex max-xl:flex-col max-xl:!items-start max-xl:overflow-auto main-menu">
+                <li class="!pt-16 md:!pt-12 pb-5 xl:hidden max-xl:w-full">
                     <div class="relative flex justify-center">
                       <a id="primary-menu-trigger" class="absolute xl:static left-0 sm:left-5 top-1/2 sm:top-2 -translate-y-1/2 sm:translate-y-0" href="/">
-                          <img class="close hide" src="/images/close_menu.svg">
+                          <img class="close hide" src="/images/close_menu_icon.svg">
                       </a>
                       <a id="logo" href="/">
-                          <img src="/images/logo.svg" alt="CodeWeek">
+                          <img src="/images/logo_icon.svg" alt="CodeWeek">
                       </a>
                     </div>
                 </li>
 
                 <li class="xl:hidden">
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
                         href="javascript:void(null);"
                     >
                         @lang('menu.select_language')
@@ -42,7 +42,7 @@
 
                 <li>
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
                         href="javascript:void(null);"
                     >
                         @lang('menu.events')
@@ -58,7 +58,7 @@
 
                 <li>
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
                         href="javascript:void(null);"
                     >
                         @lang('menu.resources')
@@ -80,14 +80,14 @@
                 </li>
 
                 <li class="menu-item">
-                    <a class="!text-[#1C4DA1] !text-base font-semibold" href="{{route('community')}}">
+                    <a class="!text-[#1C4DA1] !text-[16px] font-semibold" href="{{route('community')}}">
                         @lang('community.titles.0')
                     </a>
                 </li>
 
                 <li>
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
                         href="javascript:void(null);"
                     >
                         @lang('menu.schools')
@@ -100,7 +100,7 @@
                 </li>
                 <li>
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold"
+                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
                         href="javascript:void(null);"
                     >
                         @lang('menu.about')
@@ -118,27 +118,27 @@
                 </li>
                 <li class="menu-item">
                     <a
-                        class="!text-[#1C4DA1] !text-base font-semibold"
+                        class="!text-[#1C4DA1] !text-[16px] font-semibold"
                         href="https://codeweek.eu/blog/"
                         rel="noreferer noopener"
                     >
                         @lang('menu.blog')
                     </a>
                 </li>
-                <li class="flex-grow flex h-full items-end xl:hidden">
+                <li class="flex-grow flex h-full items-end xl:hidden max-xl:w-full">
                     <div class="flex flex-col gap-4 items-center w-full pb-12 pt-5">
-                        <a class="border-2 border-[#1C4DA1] bg-[#1C4DA1] text-white rounded-full px-6 py-[7px]" href="/search">
-                            <span class="text-base leading-[30px] font-semibold">
+                        <a class="border-2 border-[#1C4DA1] bg-[#1C4DA1] !text-white rounded-full px-6 py-[7px]" href="/search">
+                            <span class="text-[16px] leading-[30px] font-semibold">
                                 @lang('menu.search_site')
                             </span>
                         </a>
                         @if (Auth::check())
                             <a class="bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/add">
-                                <span class="text-base leading-7 font-semibold">@lang('menu.register_activity')</span>
+                                <span class="text-[16px] leading-7 font-semibold">@lang('menu.register_activity')</span>
                             </a>
                         @else
-                            <a class="border-2 border-[#1C4DA1] text-[#1C4DA1] rounded-full px-6 py-[7px]" href="/login">
-                                <span class="text-base leading-[30px] font-semibold">
+                            <a class="border-2 border-[#1C4DA1] !text-[#1C4DA1] rounded-full px-6 py-[7px]" href="/login">
+                                <span class="text-[16px] leading-[30px] font-semibold">
                                     @lang('menu.login') / @lang('menu.signup')
                                 </span>
                             </a>
@@ -154,7 +154,7 @@
             @if (Auth::check())
                 <div class="bg-[#1C4DA1] rounded-full p-[13px] font-['Blinker'] hover:bg-hover-blue duration-300 round-button-user-menu menu-trigger user-menu">
                     <a href="javascript:void(null);">
-                        <img src="/images/user.svg" class="text-white">
+                        <img src="/images/user_icon.svg" class="text-white">
                     </a>
                     <ul class="menu-dropdown">
                         <li>
@@ -286,7 +286,7 @@
                 </div>
             @else
                 <a class="bg-[#1C4DA1] rounded-full p-[13px] font-['Blinker'] hover:bg-[#001E52] duration-300"  href="/login">
-                    <img src="/images/user.svg" alt="Sign-in" class="text-white">
+                    <img src="/images/user_icon.svg" alt="Sign-in" class="text-white">
                 </a>
             @endif
 
@@ -298,7 +298,7 @@
 
             <div id="tools" class="h-[50px]">
                 <div class="menu-trigger lang-menu relative flex items-center gap-1 cursor-pointer px-2 h-full menu-item">
-                    <a class="flex items-center gap-1 !text-[#1C4DA1] !text-base font-semibold font-['Montserrat']" href="javascript:void(null);">
+                    <a class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold font-['Montserrat']" href="javascript:void(null);">
                       {{App::getLocale()}}
                       <img class="text-[#1C4DA1]" src="/images/chevron-down-icon.svg" alt="">
                     </a>

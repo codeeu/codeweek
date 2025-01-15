@@ -1,4 +1,4 @@
-@extends('layout.base')
+@extends('layout.new_base')
 
 @section('content')
     <section id="codeweek-search-page" class="codeweek-page md:pb-16 font-['Blinker']">
@@ -41,6 +41,26 @@
             </div>
         </section>
 
+        {{-- <section class="question">
+          <div class="text">
+              @lang('base.still_have_question') @lang('base.drop_us_a_line')
+          </div>
+          <div class="get-in-touch">
+              @if(Route::current() && (Route::current()->getName() == 'community' || Route::current()->getName() == 'ambassadors'))
+                  <a href="mailto:info@codeweek.eu">
+                      <div class="button">@lang('base.get_in_touch')</div>
+                  </a>
+              @else
+                  <a href="{{route('contact-us')}}">
+                  <div class="button">@lang('base.get_in_touch')</div>
+                  </a>
+              @endif
+
+              <div>
+                  <img src="/images/get_in_touch.svg" class="static-image">
+              </div>
+          </div>
+      </section> --}}
     </section>
 
 @endsection

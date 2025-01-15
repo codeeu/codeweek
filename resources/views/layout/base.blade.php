@@ -74,7 +74,7 @@
     @if((Request::is('hackathons/*')))
         @yield('hackathons.header')
     @else
-        @include('layout.menu')
+        @include('layout.menu-old')
     @endif
 
     <main>
@@ -82,7 +82,7 @@
         @yield("content")
     </main>
 
-    @include('layout.footer')
+    @include('layout.footer-old')
 
 {{--    <flash message="{{ session('flash') }}"></flash>--}}
 </div>
