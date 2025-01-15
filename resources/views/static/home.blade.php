@@ -99,7 +99,7 @@
             </div>
         </section>
 
-        <section class="relative bg-yellow-2 fade-scale-animation">
+        <section class="section-animation relative bg-yellow-2">
             <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center py-16 md:py-[186px] gap-12">
                 <div class="flex-1">
                     <img loading="lazy" src="/images/homepage/minecraftlogo.png" />
@@ -118,7 +118,7 @@
                     </a>
                 </div>
                 <div class="flex-1">
-                    <img id="section-image" loading="lazy" src="/images/homepage/minecraft1.png" />
+                    <img class="animation-element fade-scale-right" loading="lazy" src="/images/homepage/minecraft1.png" />
                 </div>
             </div>
         </section>
@@ -157,7 +157,7 @@
             <div class="absolute z-0 bottom-12 right-20 w-28 h-28 hidden md:block bg-[#99E1F4] rounded-full"></div>
         </section>
 
-        <section class="relative fade-resource-animation">
+        <section class="section-animation relative overflow-hidden">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(170% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden md:block" style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
             <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center pt-28 md:pt-48 pb-16 gap-12">
@@ -192,9 +192,13 @@
                     </div>
                 </div>
                 <div class="flex-1 flex justify-center relative">
-                    <img class="w-full z-10 resource-image" loading="lazy" src="/images/homepage/resource-training.png" />
                     <img
-                        class="resource-image absolute z-0 bottom-0 right-0 translate-x-3/4 translate-y-16"
+                        class="animation-element fade-scale-bottom w-full z-10"
+                        loading="lazy"
+                        src="/images/homepage/resource-training.png"
+                    />
+                    <img
+                        class="animation-element fade-scale-bottom absolute z-0 -bottom-10 sm:-bottom-16 -right-16 sm:-right-60 w-[184px] sm:w-[324px]"
                         src="/images/homepage/resource-training-icon.png"
                     />
                 </div>
@@ -210,39 +214,34 @@
 
 @push('scripts')
 <script type="text/javascript">
-  // Minecraft animation
-  const scaleAnimationSections = document.querySelectorAll(".fade-scale-animation") || [];
+  const threshold = 0.3;
+  // Animation
+  const sections = document.querySelectorAll('.section-animation');
 
-  scaleAnimationSections.forEach(section => {
-    const sectionImage = section.querySelector('#section-image');
-    sectionImage.classList.add('scale-0', 'opacity-0', 'translate-x-1/2', 'duration-500');
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) { 
-        sectionImage.classList.remove('scale-0', 'opacity-0', 'translate-x-1/2');
-        sectionImage.classList.add('scale-100', 'opacity-100', 'translate-x-0');
+  sections?.forEach(section => {
+    const animationElements = section.querySelectorAll(".animation-element");
+
+    animationElements?.forEach(element => {
+      let classList = [];
+
+      // Fade Scale animation
+      if (element.classList.contains('fade-scale-right')) {
+        classList = ['scale-0', 'opacity-0', 'translate-x-1/2'];
+      }
+      if (element.classList.contains('fade-scale-bottom')) {
+        classList = ['scale-0', 'opacity-0', 'translate-y-1/2'];
       }
 
-    }, { threshold: 0.3 });
-    observer.observe(section);
-  })
+      element.classList.add(...classList, 'duration-700');
 
-  // Resources and training animation
-  const fadeResourceAnimationSections = document.querySelectorAll(".fade-resource-animation") || [];
-
-  fadeResourceAnimationSections.forEach(section => {
-    const sectionImages = section.querySelectorAll('.resource-image');
-    sectionImages.forEach(sectionImage => {
-      sectionImage.classList.add('scale-0', 'opacity-0', 'duration-700');
       const observer = new IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
-          sectionImage.classList.remove('scale-0', 'opacity-0');
-          sectionImage.classList.add('scale-100', 'opacity-100');
+          element.classList.remove(...classList);
         }
-
-      }, { threshold: 0.3 });
+      }, { threshold });
 
       observer.observe(section);
-    })
+    });
   })
 </script>
 @endpush
