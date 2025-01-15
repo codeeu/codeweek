@@ -1,6 +1,6 @@
 <section class="flex flex-wrap items-center justify-center gap-2 font-['Blinker']" aria-label="Numbered steps">
     <button
-        class="p-4 rounded-full bg-[#FFD700] hover:bg-primary/50 cursor-pointer"
+        class="p-4 rounded-full bg-yellow hover:bg-primary duration-300 cursor-pointer"
         aria-label="Previous step"
         @if (!$paginator->onFirstPage())
             wire:click="previousPage('{{ $paginator->getPageName() }}')"
@@ -43,7 +43,7 @@
 
     {{-- Next Button --}}
     <button
-        class="p-4 rounded-full bg-[#FFD700] hover:bg-primary/50 cursor-pointer"
+        class="p-4 rounded-full bg-yellow hover:bg-primary duration-300 cursor-pointer"
         aria-label="Next step"
         @if ($paginator->hasMorePages())
             wire:click="nextPage('{{ $paginator->getPageName() }}')"

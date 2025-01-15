@@ -1,7 +1,7 @@
-<header class="relative pt-12 pb-5 z-[1000] border-b-3 border-primary">
+<header class="sticky top-0 pt-16 md:pt-12 !px-5 md:!px-0 pb-5 z-[1000] border-b-[3px] border-primary">
     <div class="codeweek-container-lg flex items-center gap-6">
-        <div id="logo-wrapper" class="w-full flex justify-center sm:block sm:w-auto">
-            <a id="primary-menu-trigger" class="absolute sm:static sm:pr-6 left-5 top-12" href="/">
+        <div id="logo-wrapper" class="relative w-full flex justify-center sm:block sm:w-auto">
+            <a id="primary-menu-trigger" class="absolute sm:static sm:pr-6 -left-6 top-1/2 -translate-y-1/2 sm:translate-y-0" href="/">
                 <img class="menu" src="/images/menu.svg">
                 <img class="close hide" src="/images/close_menu.svg">
             </a>
@@ -11,13 +11,15 @@
         </div>
         <nav id="primary-menu" class="flex-grow font-['Montserrat']">
             <ul class="max-xl:flex max-xl:flex-col max-xl:overflow-auto main-menu">
-                <li class="relative flex justify-center pt-12 pb-5 xl:hidden">
-                    <a id="primary-menu-trigger" class="absolute left-0 top-12" href="/">
-                        <img class="close hide" src="/images/close_menu.svg">
-                    </a>
-                    <a id="logo" href="/">
-                        <img src="/images/logo.svg" alt="CodeWeek">
-                    </a>
+                <li class="pt-16 md:pt-12 pb-5 xl:hidden">
+                    <div class="relative flex justify-center">
+                      <a id="primary-menu-trigger" class="absolute xl:static left-0 sm:left-5 top-1/2 sm:top-2 -translate-y-1/2 sm:translate-y-0" href="/">
+                          <img class="close hide" src="/images/close_menu.svg">
+                      </a>
+                      <a id="logo" href="/">
+                          <img src="/images/logo.svg" alt="CodeWeek">
+                      </a>
+                    </div>
                 </li>
 
                 <li class="xl:hidden">
