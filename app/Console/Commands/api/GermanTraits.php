@@ -51,7 +51,7 @@ trait GermanTraits
                 $RSSitem->user_email = $item['user']['email'] ?? '';
                 $RSSitem->user_publicEmail = $item['user']['publicEmail'] ?? '';
                 $RSSitem->user_type = $item['user']['type']['identifier'] ??
-                ($item['user']['type'] ?? 'invite-in-person');
+                    ($item['user']['type'] ?? 'invite-in-person');
                 $RSSitem->user_website = $item['user']['www'] ?? '';
 
                 // Safely get type data
@@ -95,8 +95,8 @@ trait GermanTraits
                     'lastname' => '',
                     'username' => $this->organizer,
                     'password' => bcrypt(Str::random()),
-                ]);
-
+                ]
+            );
         }
 
         $event = new Event([
@@ -123,7 +123,7 @@ trait GermanTraits
             'end_date' => $this->eventEndDate,
             'longitude' => $this->longitude,
             'latitude' => $this->latitude,
-            'geoposition' => $this->latitude.','.$this->longitude,
+            'geoposition' => $this->latitude . ',' . $this->longitude,
             'language' => 'de',
         ]);
 
@@ -150,6 +150,5 @@ trait GermanTraits
 
             $event->tags()->sync($tagsArray);
         }
-
     }
 }
