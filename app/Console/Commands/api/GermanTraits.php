@@ -15,7 +15,6 @@ trait GermanTraits
     {
         $client = new \GuzzleHttp\Client();
         $guzzle = $client->request('get', $url);
-
         return json_decode($guzzle->getBody(), true);
     }
 
