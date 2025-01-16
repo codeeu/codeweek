@@ -35,4 +35,9 @@ return [
         'et parcourez brièvement la liste des ambassadeurs de la Semaine européenne du code. ',
         'S’il y a des ambassadeurs dans votre pays, contactez-les directement et discutez avec eux des meilleures manières dont vous pouvez contribuer à l’initiative. S’il n’y a aucun ambassadeur dans votre pays, veuillez nous contacter à l’adresse info@codeweek.eu.',
     ],
+
+    'hub_FR' => 'Simplon.Co, France',
+    'hub_level_FR' => 'National Hub',
+    'hub_desc_FR' => 'Simplon.co est une entreprise sociale et solidaire et un organisme de formation certifié dont l\'objectif est de proposer des formations aux compétences numériques afin de favoriser l’employabilité de nos apprenants dans une économie en pleine transformation digitale. Nos formations sans coût pour les participants sont destinées à des personnes issues de tous horizons, y compris des groupes sous-représentés dans le domaine de la technologie. Simplon.co met l\'accent sur l\'apprentissage pratique et l’acquisition des compétences fortement demandées par les employeurs afin de préparer les participants à des carrières stimulantes. Nous collaborons fortement avec les entreprises du secteur numérique pour faciliter l\'accès au marché du travail pour nos apprenants..
+    En tant que Code Week National Hub pour la France, Simplon a pour mission, en étroite coopération avec le Ministère de l\'Education et l\'éco-système du numérique éducatif, d\'encourager l\'organisation d\'événements d\'initiation au code et à la culture numérique (pendant la Code Week mais aussi tout le reste de l\'année), de promouvoir les activités organisées partout en France, de valoriser toutes les ressources et initiatives partenaires et d\'être un point de contact pour les organisations, académies, écoles et entreprises qui souhaitent s\'engager dans cette initiative.'
 ];
