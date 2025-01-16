@@ -277,23 +277,17 @@
         }).addTo(mymap);
 
 
-        @foreach($teachers->groupBy('city_id') as $cityId => $teachersInCity)
+    @foreach($teachers->groupBy('city_id') as $cityId => $teachersInCity)
             @if($teachersInCity[0]->city && $teachersInCity[0]->city->latitude && $teachersInCity[0]->city->longitude)
-        $marker = L.marker([{{$teachersInCity[0]->city->latitude}}, {{$teachersInCity[0]->city->longitude}}]).addTo(mymap)
+                var marker = L.marker([{{$teachersInCity[0]->city->latitude}}, {{$teachersInCity[0]->city->longitude}}]).addTo(mymap);
 
-        $teachersList = "";
-        @foreach($teachersInCity as $teacher)
-            $teachersList = $teachersList + "&#9679;&nbsp;<b><a href=\"mailto:{{$teacher->email}}\">{{$teacher->firstname}} {{$teacher->lastname}}</a></b> ({{$teacher->city ? $teacher->city->city : 'Unknown Location'}}) <br/>{{implode(", ",$teacher->expertises->pluck('name')->toArray())}}<br/><br/>"
-        @endforeach
+                var teachersList = "";
+                @foreach($teachersInCity as $teacher)
+                    teachersList += "&#9679;&nbsp;<b><a href=\"mailto:{{$teacher->email}}\">{{$teacher->firstname}} {{$teacher->lastname}}</a></b> ({{$teacher->city->city}}) <br/>{{implode(", ",$teacher->expertises->pluck('name')->toArray())}}<br/><br/>";
+                @endforeach
 
-        $marker.bindPopup($teachersList).openPopup();
-    @endif
-        @endforeach
-
-
-        $marker.bindPopup($teachersList).openPopup();
-
-
+                marker.bindPopup(teachersList).openPopup();
+            @endif
         @endforeach
 
         var popup = L.popup();

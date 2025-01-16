@@ -36,5 +36,17 @@ return [
         'Wenn es in Ihrem Land Botschafter/innen gibt, wenden Sie sich bitte direkt an diese, um zu erfahren, wie Sie die Initiative am besten unterstützen können. Gibt es in Ihrem Land niemanden, können Sie sich an info@codeweek.eu wenden.',
     ],
 
+    'hub_DE' => 'Science on Stage Deutschland e.V.',
+    'hub_level_DE' => 'Regional Hub',
+    'hub_desc_DE' => 'Science on Stage Deutschland e.V. rückt als gemeinnütziger Verein die naturwissenschaftliche Bildung ins schulische und öffentliche Rampenlicht und       fördert die Zusammenarbeit von MINT-Lehrkräften in ganz Europa. Durch Bildungsfestivals, Workshops und Fortbildungen für Lehrkräfte verfolgt die Organisation das Ziel, den Unterricht in den Bereichen Naturwissenschaften, Technik und Ingenieurwesen an Schulen zu verbessern. Zusätzlich bietet der Verein Lehrkräften eine Plattform, um bewährte Praktiken, innovative Lehrmethoden und praxisorientierte Experimente auszutauschen, die das Interesse von Schüler*innen an MINT-Fächern wecken. Die Mission von Science on Stage besteht darin, ein Netzwerk leidenschaftlicher Lehrkräfte zu schaffen, die die nächste Generation von Wissenschaftler*innen und Ingenieur*innen in ganz Europa inspirieren.',
+    
+    'hub_AT' => 'Science on Stage Deutschland e.V.',
+    'hub_level_AT' => 'Regional Hub',
+    'hub_desc_AT' => 'Science on Stage Deutschland e.V. rückt als gemeinnütziger Verein die naturwissenschaftliche Bildung ins schulische und öffentliche Rampenlicht und fördert die Zusammenarbeit von MINT-Lehrkräften in ganz Europa. Durch Bildungsfestivals, Workshops und Fortbildungen für Lehrkräfte verfolgt die Organisation das Ziel, den Unterricht in den Bereichen Naturwissenschaften, Technik und Ingenieurwesen an Schulen zu verbessern. Zusätzlich bietet der Verein Lehrkräften eine Plattform, um bewährte Praktiken, innovative Lehrmethoden und praxisorientierte Experimente auszutauschen, die das Interesse von Schüler*innen an MINT-Fächern wecken. Die Mission von Science on Stage besteht darin, ein Netzwerk leidenschaftlicher Lehrkräfte zu schaffen, die die nächste Generation von Wissenschaftler*innen und Ingenieur*innen in ganz Europa inspirieren.',
+
+    'hub_CH' => 'Science on Stage Deutschland e.V.',
+    'hub_level_CH' => 'Regional Hub',
+    'hub_desc_CH' => 'Science on Stage Deutschland e.V. rückt als gemeinnütziger Verein die naturwissenschaftliche Bildung ins schulische und öffentliche Rampenlicht und fördert die Zusammenarbeit von MINT-Lehrkräften in ganz Europa. Durch Bildungsfestivals, Workshops und Fortbildungen für Lehrkräfte verfolgt die Organisation das Ziel, den Unterricht in den Bereichen Naturwissenschaften, Technik und Ingenieurwesen an Schulen zu verbessern. Zusätzlich bietet der Verein Lehrkräften eine Plattform, um bewährte Praktiken, innovative Lehrmethoden und praxisorientierte Experimente auszutauschen, die das Interesse von Schüler*innen an MINT-Fächern wecken. Die Mission von Science on Stage besteht darin, ein Netzwerk leidenschaftlicher Lehrkräfte zu schaffen, die die nächste Generation von Wissenschaftler*innen und Ingenieur*innen in ganz Europa inspirieren.',
+
     'codeweek_de' => '<p>In Deutschland wird die Code Week von einem Team aus ehrenamtlichen Botschafter*innen, zahlreichen bundesweiten Regio-Hubs und vielen weiteren Akteur*innen getragen. Das bundesweite Regio-Hub-Netzwerk wird von der Körber-Stiftung koordiniert. Das internationale deutschsprachige Code Week Netzwerk in Deutschland, Österreich, Liechtenstein und Schweiz wird von Science on Stage koordiniert. </p>'
 ];
