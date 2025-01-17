@@ -200,6 +200,9 @@ body:not(.new-layout) {
 }
 
 .cookweek-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-family: 'Montserrat';
   color: #1C4DA1;
   font-size: 16px;
@@ -207,6 +210,21 @@ body:not(.new-layout) {
 
   &.hover-underline {
     position: relative;
+
+    .arrow-icon {
+      color: #1C4DA1;
+      transition-duration: 300ms;
+    }
+    
+    &:hover {
+      .arrow-icon {
+        transform: scale(-1);
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
     
     &::after {
       content: '';
@@ -217,12 +235,6 @@ body:not(.new-layout) {
       bottom: 0;
       left: 0;
       transition-duration: 300ms;
-    }
-    
-    &:hover {
-      &::after {
-        width: 100%;
-      }
     }
   }
 }

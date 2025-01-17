@@ -33,7 +33,7 @@ class GlobalSearchFilterComponent extends Component
         $this->dispatch('filterChanged', filter: $filter);
     }
 
-    public function updatedSearchQuery()
+    public function search()
     {
         $this->dispatch('searchQueryChanged', term: $this->searchQuery);
     }

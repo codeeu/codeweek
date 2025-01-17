@@ -9,7 +9,7 @@
 
     <div wire:loading.remove>
         @if(count($results) > 0)
-        <p class="font-bold p-0">{{ count($results) }} @lang('search.results')</p>
+        <p class="font-bold p-0">{{ $results->total() }} @lang('search.results')</p>
 
         @foreach($results as $result)
             <div wire:key="result-{{ $loop->index }}" class="border-b border-[#D6D8DA] py-6 md:py-10 flex flex-col md:flex-row items-start gap-6 md:gap-16">

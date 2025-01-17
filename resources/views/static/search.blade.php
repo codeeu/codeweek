@@ -1,7 +1,7 @@
 @extends('layout.new_base')
 
 @section('content')
-    <section id="codeweek-search-page" class="codeweek-page md:pb-16 font-['Blinker']">
+    <section id="codeweek-search-page" class="codeweek-page font-['Blinker']">
         <!-- Banner Section -->
         <section 
             class="relative flex items-end md:item-center min-h-[560px] w-full py-5 md:py-[84px]" 
@@ -35,32 +35,13 @@
         </section>
 
         <!-- Search Result Content Section -->
-        <section class="flex justify-center pt-8 max-lg:pt-[50px]">
+        <section class="flex justify-center pt-8 md:pb-16 max-lg:pt-[50px]">
             <div class="codeweek-container">
                 @livewire('search-content-component')
             </div>
         </section>
 
-        {{-- <section class="question">
-          <div class="text">
-              @lang('base.still_have_question') @lang('base.drop_us_a_line')
-          </div>
-          <div class="get-in-touch">
-              @if(Route::current() && (Route::current()->getName() == 'community' || Route::current()->getName() == 'ambassadors'))
-                  <a href="mailto:info@codeweek.eu">
-                      <div class="button">@lang('base.get_in_touch')</div>
-                  </a>
-              @else
-                  <a href="{{route('contact-us')}}">
-                  <div class="button">@lang('base.get_in_touch')</div>
-                  </a>
-              @endif
-
-              <div>
-                  <img src="/images/get_in_touch.svg" class="static-image">
-              </div>
-          </div>
-      </section> --}}
+        @livewire('still-have-question-section')
     </section>
 
 @endsection

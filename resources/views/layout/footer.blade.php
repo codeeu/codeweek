@@ -57,19 +57,16 @@
                     <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">Quick links</p>
                     <ul class="m-0 p-0">
                         <li class="mb-4">
-                            <a href="/" class="cookweek-link hover-underline">Register</a>
+                            <a class="cookweek-link hover-underline">Register</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/" class="cookweek-link hover-underline">Activities & Events</a>
+                            <a class="cookweek-link hover-underline">Activities & Events</a>
                         </li>
                         <li class="mb-4">
                             <a href="/resources/learn" class="cookweek-link hover-underline">Learn & Teach</a>
                         </li>
                         <li class="mb-4">
                             <a href="/blog" class="cookweek-link hover-underline">News</a>
-                        </li>
-                        <li>
-                            <a href="/" class="cookweek-link hover-underline">Content migration</a>
                         </li>
                     </ul>
                 </div>
@@ -83,9 +80,9 @@
                             <a href="/podcasts" class="cookweek-link hover-underline">Podcast</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/" class="cookweek-link hover-underline">Webinars</a>
+                            <a class="cookweek-link hover-underline">Webinars</a>
                         </li>
-                        <li class="mb-4">
+                        <li class="mb-4 hidden">
                             <a href="/" class="cookweek-link hover-underline">Careers in Digital</a>
                         </li>
                         <li class="mb-4">
@@ -105,7 +102,7 @@
                 <a href="/" class="cookweek-link hover-underline !text-sm">Privacy Policy</a>
             </li>
             <li>
-                <a href="/" class="cookweek-link hover-underline !text-sm">Cookie Policy</a>
+                <a href="/privacy" class="cookweek-link hover-underline !text-sm">Cookie Policy</a>
             </li>
             <li>
                 <a href="/" class="cookweek-link hover-underline !text-sm">Accessibility</a>
