@@ -50,10 +50,6 @@ class GlobalSearchService
             );
         }
 
-        if ($meta['type_search'] === 'blog') {
-            return $this->searchBlog($query);
-        }
-
         // Add more cases for other type_search in the future
         Log::warning("Unsupported type_search: {$meta['type_search']}");
         return [];
@@ -208,74 +204,13 @@ class GlobalSearchService
                 );
                 $results = $results->merge($functionResults);
             }
-
-            if ($meta['type_search'] === 'blog') {
-                $blogResults = $this->searchBlog($query);
-                $results = $results->merge($blogResults);
-            }
         }
 
         return $results->toArray();
     }
 
-    /**
-     * Search data Blog Wordpress.
-     *
-     * @param string|null $query
-     * 
-     * @return array
-     */
-    protected function searchBlog(?string $query): array
+    private function formatString(string $str, $limit = 400)
     {
-        $endpoint = config('codeweek.blog_url') . '/wp-json/wp/v2/posts';
-
-        $url = $query ? "{$endpoint}?search=" . urlencode($query) : $endpoint;
-
-        try {
-            $response = Http::get($url);
-
-            if (!$response->successful()) {
-                Log::error("Failed to fetch data from API: $url");
-                return [];
-            }
-
-            $data = $response->json();
-
-            return collect($data)->map(function ($item) {
-                $result = [
-                    'name' => data_get($item, 'title.rendered', ''),
-                    'category' => 'Blog',
-                    'description' => $this->formatString(data_get($item, 'excerpt.rendered', '')),
-                    'thumbnail' => '',
-                    'path' => data_get($item, 'link', ''),
-                    'link_type' => 'external',
-                    'language' => 'en',
-                ];
-
-                $mediaLinks = data_get($item, '_links.wp:featuredmedia', []);
-                if (!empty($mediaLinks) && isset($mediaLinks[0]['href'])) {
-                    $mediaUrl = $mediaLinks[0]['href'];
-
-                    try {
-                        $mediaResponse = Http::get($mediaUrl);
-                        if ($mediaResponse->successful()) {
-                            $mediaData = $mediaResponse->json();
-                            $result['thumbnail'] = data_get($mediaData, 'source_url', '');
-                        }
-                    } catch (\Exception $e) {
-                        Log::error("Failed to fetch media data: {$e->getMessage()}");
-                    }
-                }
-
-                return $result;
-            })->toArray();
-        } catch (\Exception $e) {
-            Log::error("Error fetching API data: {$e->getMessage()}");
-            return [];
-        }
-    }
-
-    private function formatString(string $str, $limit = 400) {
         return mb_substr(strip_tags($str), 0, $limit);
     }
 }

@@ -10,10 +10,10 @@
             </a>
         </div>
         <nav id="primary-menu" class="flex-grow font-['Montserrat']">
-            <ul class="max-xl:flex max-xl:flex-col max-xl:!items-start max-xl:overflow-auto main-menu">
-                <li class="!pt-16 md:!pt-12 pb-5 xl:hidden max-xl:w-full">
+            <ul class="max-xl:flex max-xl:flex-col max-xl:!items-start max-xl:overflow-auto max-xl:pt-6 main-menu">
+                <li class="!pt-16 md:!pt-12 !pb-8 xl:hidden max-xl:w-full">
                     <div class="relative flex justify-center">
-                      <a id="primary-menu-trigger" class="absolute xl:static left-0 sm:left-5 top-1/2 sm:top-2 -translate-y-1/2 sm:translate-y-0" href="/">
+                      <a id="primary-menu-trigger" class="absolute xl:static left-0 sm:left-3 top-1/2 sm:top-2 -translate-y-1/2 sm:translate-y-0" href="/">
                           <img class="close hide" src="/images/close_menu_icon.svg">
                       </a>
                       <a id="logo" href="/">
@@ -22,31 +22,56 @@
                     </div>
                 </li>
 
-                <li class="xl:hidden">
+              {{-- language --}}
+                <li class="main-menu-item xl:hidden">
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
+                        class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
                         href="javascript:void(null);"
                     >
-                        @lang('menu.select_language')
-                        <img src="/images/chevron-down-icon.svg" alt="">
+                        <span class="lang-value">{{App::getLocale()}}</span>
+                        <span class="lang-title">@lang('menu.select_language')</span>
+                        <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
 
                     <ul class="sub-menu lang-list">
                         @foreach ($locales as $key => $value)
-                            <li class="w-40">
-                                <a href="/setlocale/?locale={{$value}}">@lang('base.languages_menu.' . $value)</a>
+                            <li class="lang-menu-item {{ App::getLocale() === $value ? 'selected' : '' }}">
+                                <a class="relative" href="/setlocale/?locale={{$value}}">
+                                  @lang('base.languages_menu.' . $value)
+                                  @if(App::getLocale() === $value)
+                                    <img
+                                      class="absolute right-4 top-1/2 -translate-y-1/2"
+                                      src="/images/check.svg"
+                                      alt=""
+                                    >
+                                  @endif
+                                </a>
                             </li>
                         @endforeach
                     </ul>
                 </li>
 
-                <li>
+                {{-- search side --}}
+                <li class="main-menu-item xl:hidden w-full">
+                  <div class="relative w-full">
+                    <input 
+                        class="pl-6 pr-14 py-3 w-full rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48]" 
+                        placeholder="@lang('menu.search_site')" 
+                    />
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 p-2 duration-300 hover:bg-[#E8EDF6] rounded-full">
+                      <img class="text-dark-blue" src="/images/search-icon.svg" alt="">
+                    </button>
+                </div>
+                </li>
+
+                {{-- activities --}}
+                <li class="main-menu-item">
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
+                        class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
                         href="javascript:void(null);"
                     >
                         @lang('menu.events')
-                        <img src="/images/chevron-down-icon.svg" alt="">
+                        <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="sub-menu">
                         <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
@@ -56,13 +81,14 @@
                     </ul>
                 </li>
 
-                <li>
+                {{-- resources --}}
+                <li class="main-menu-item">
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
+                        class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
                         href="javascript:void(null);"
                     >
                         @lang('menu.resources')
-                        <img src="/images/chevron-down-icon.svg" alt="">
+                        <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="sub-menu">
                         <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
@@ -79,32 +105,36 @@
                     </ul>
                 </li>
 
-                <li class="menu-item">
-                    <a class="!text-[#1C4DA1] !text-[16px] font-semibold" href="{{route('community')}}">
+                {{-- commnity --}}
+                <li class="main-menu-item menu-item">
+                    <a class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]" href="{{route('community')}}">
                         @lang('community.titles.0')
                     </a>
                 </li>
 
-                <li>
+                {{-- schools --}}
+                <li class="main-menu-item">
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
+                        class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
                         href="javascript:void(null);"
                     >
                         @lang('menu.schools')
-                        <img src="/images/chevron-down-icon.svg" alt="">
+                        <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="dropdown-menu sub-menu">
                         <li><a href="{{route('schools')}}">@lang('menu.why')?</a></li>
                         <li><a href="/remote-teaching">@lang('remote-teaching.remote-teaching')</a></li>
                     </ul>
                 </li>
-                <li>
+
+                {{-- about --}}
+                <li class="main-menu-item">
                     <a
-                        class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold"
+                        class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
                         href="javascript:void(null);"
                     >
                         @lang('menu.about')
-                        <img src="/images/chevron-down-icon.svg" alt="">
+                        <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="sub-menu">
                         <li><a href="/about">Code Week</a></li>
@@ -116,28 +146,27 @@
                         <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                     </ul>
                 </li>
-                <li class="menu-item">
+
+                {{-- blog --}}
+                <li class="main-menu-item menu-item">
                     <a
-                        class="!text-[#1C4DA1] !text-[16px] font-semibold"
+                        class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
                         href="https://codeweek.eu/blog/"
                         rel="noreferer noopener"
                     >
                         @lang('menu.blog')
                     </a>
                 </li>
-                <li class="flex-grow flex h-full items-end xl:hidden max-xl:w-full">
+
+                {{-- actions --}}
+                <li class="main-menu-item flex-grow flex h-full items-end xl:hidden max-xl:w-full">
                     <div class="flex flex-col gap-4 items-center w-full pb-12 pt-5">
-                        <a class="border-2 border-[#1C4DA1] bg-[#1C4DA1] !text-white rounded-full px-6 py-[7px]" href="/search">
-                            <span class="text-[16px] leading-[30px] font-semibold">
-                                @lang('menu.search_site')
-                            </span>
-                        </a>
                         @if (Auth::check())
-                            <a class="bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/add">
+                            <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="/add">
                                 <span class="text-[16px] leading-7 font-semibold">@lang('menu.register_activity')</span>
                             </a>
                         @else
-                            <a class="border-2 border-[#1C4DA1] !text-[#1C4DA1] rounded-full px-6 py-[7px]" href="/login">
+                            <a class="border-2 border-[#1C4DA1] hover:bg-[#E8EDF6] duration-300 !text-[#1C4DA1] rounded-full px-6 py-[7px] w-full text-center" href="/login">
                                 <span class="text-[16px] leading-[30px] font-semibold">
                                     @lang('menu.login') / @lang('menu.signup')
                                 </span>
@@ -285,7 +314,7 @@
                     </ul>
                 </div>
             @else
-                <a class="bg-[#1C4DA1] rounded-full p-[13px] font-['Blinker'] hover:bg-[#001E52] duration-300"  href="/login">
+                <a class="bg-[#1C4DA1] hover:bg-[#001E52] rounded-full p-[13px] font-['Blinker'] duration-300"  href="/login">
                     <img src="/images/user_icon.svg" alt="Sign-in" class="text-white">
                 </a>
             @endif
@@ -298,9 +327,9 @@
 
             <div id="tools" class="h-[50px]">
                 <div class="menu-trigger lang-menu relative flex items-center gap-1 cursor-pointer px-2 h-full menu-item">
-                    <a class="flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold font-['Montserrat']" href="javascript:void(null);">
+                    <a class="cookweek-link hover-underline flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold font-['Montserrat']" href="javascript:void(null);">
                       {{App::getLocale()}}
-                      <img class="text-[#1C4DA1]" src="/images/chevron-down-icon.svg" alt="">
+                      <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
 
 

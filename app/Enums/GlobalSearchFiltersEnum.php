@@ -2,6 +2,7 @@
 
 namespace App\Enums;
 
+use App\Blog;
 use App\Event;
 use App\StaticPage;
 use App\Podcast;
@@ -98,7 +99,18 @@ enum GlobalSearchFiltersEnum: string
                 ]
             ],
             self::BLOGS => [
-                'type_search' => 'blog'
+                'type_search' => 'model',
+                'model' => Blog::class,
+                'search_fields' => ['name'],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => 'Blog',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{path}',
+                    'link_type' => 'external',
+                    'language' => 'en',
+                ]
             ],
             self::ACTIVITIES => [
                 'type_search' => 'model',
