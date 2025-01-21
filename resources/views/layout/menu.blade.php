@@ -61,7 +61,7 @@
                     <button class="absolute right-2 top-1/2 -translate-y-1/2 p-2 duration-300 hover:bg-[#E8EDF6] rounded-full">
                       <img class="text-dark-blue" src="/images/search-icon.svg" alt="">
                     </button>
-                </div>
+                  </div>
                 </li>
 
                 {{-- activities --}}
@@ -177,9 +177,9 @@
             </ul>
         </nav>
         <div id="right-menu" class="flex gap-2">
-            <a class="border-2 border-[#1C4DA1] hover:bg-[#E8EDF6] duration-300 rounded-full p-[13px] font-['Blinker']" href="/search">
+            <span id="search-menu-trigger-show" class="border-2 border-[#1C4DA1] hover:bg-[#E8EDF6] duration-300 rounded-full p-[13px] font-['Blinker'] cursor-pointer">
                 <img class="text-dark-blue" src="/images/search-icon.svg" alt="">
-            </a>
+            </span>
             @if (Auth::check())
                 <div class="bg-[#1C4DA1] rounded-full p-[13px] font-['Blinker'] hover:bg-hover-blue duration-300 round-button-user-menu menu-trigger user-menu">
                     <a href="javascript:void(null);">
@@ -345,6 +345,39 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div
+          id="search-menu"
+          class="fixed left-0 top-0 z-50 flex flex-col items-center justify-center w-full p-6 h-[100dvh] bg-white font-['Montserrat'] duration-300"
+          style="display: none;"
+        >
+          <div class="flex-shrink-0 flex justify-end w-full">
+            <button
+              id="search-menu-trigger-hide"
+              class="block bg-[#FFD700] hover:bg-[#F95C22] rounded-full p-4 duration-300"
+            >
+              <img class="w-6 h-6" src="/images/close_menu_icon.svg">
+            </button>
+          </div>
+          <div class="flex-grow flex flex-col justify-center max-w-[720px] w-full mx-auto pb-14">
+            <div class="text-4xl text-[#1C4DA1] font-medium mb-10">
+              @lang('menu.what_you_looking_for')
+            </div>
+            <div class="relative w-full">
+              <input
+                id="search-menu-input"
+                class="pl-6 pr-48 py-4 w-full text-[16px] rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48] font-semibold" 
+                placeholder="@lang('menu.type_to_search')" 
+              />
+              <button
+                class="absolute right-1.5 top-1/2 text-[18px] -translate-y-1/2 px-[60px] py-3 bg-[#F95C22] hover:bg-[#FB9D7A] rounded-full font-semibold font-['Blinker'] duration-300"
+                onclick="window.location.href = `/search?searchQuery=${document.getElementById('search-menu-input')?.value || ''}`"
+              >
+                @lang('menu.search')
+              </button>
+            </div>
+          </div>
         </div>
     </div>
 </header>

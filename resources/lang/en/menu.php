@@ -54,4 +54,7 @@ return [
     'register_activity' => 'Register activity',
     'select_language' => 'Select language',
     'search_site' => 'Search site',
+    'what_you_looking_for' => 'What are you looking for?',
+    'type_to_search' => 'Type to search...',
+    'search' => 'Search',
 ];

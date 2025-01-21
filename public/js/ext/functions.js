@@ -2201,6 +2201,16 @@ var SEMICOLON = SEMICOLON || {};
         extras: function(){
             $('[data-toggle="tooltip"]').tooltip({container: 'body'});
 
+            /* SEARCH MENU */
+            $('#search-menu-trigger-show').click(function() {
+              const searchMenu = document.getElementById("search-menu");
+              if (searchMenu) searchMenu.style.display = '';
+            });
+            $('#search-menu-trigger-hide').click(function() {
+              const searchMenu = document.getElementById("search-menu");
+              if (searchMenu) searchMenu.style.display = 'none';
+            });
+
             /* PRIMARY MENU */
             $('#primary-menu-trigger,#overlay-menu-close').click(function() {
                 if ($( '#primary-menu-trigger .menu' ).attr('class').indexOf('hide') !== -1){
