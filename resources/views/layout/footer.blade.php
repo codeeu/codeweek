@@ -1,4 +1,4 @@
-<footer class="border-t-[3px] border-primary">
+<footer class="border-t-[3px] border-primary bg-white">
     <div class="py-10 md:py-16 border-b">
         <div class="codeweek-container-lg flex flex-col xl:flex-row xl:justify-between">
             <div class="flex flex-col justify-between">
@@ -82,9 +82,9 @@
                         <li class="mb-4">
                             <a href="/" class="cookweek-link hover-underline">Webinars</a>
                         </li>
-                        <li class="mb-4 hidden">
+                        {{-- <li class="mb-4">
                             <a href="/" class="cookweek-link hover-underline">Careers in Digital</a>
-                        </li>
+                        </li> --}}
                         <li class="mb-4">
                             <a href="/challenges" class="cookweek-link hover-underline">Challenges</a>
                         </li>

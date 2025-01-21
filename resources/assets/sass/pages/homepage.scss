@@ -340,3 +340,35 @@
     cursor: pointer;
   }
 }
+
+// New layout
+.homepage-robot {
+  .robot-word {
+    position: absolute;
+    top: 0;
+    right: 60%;
+    transform: scale(0.5) translateY(-100%);
+    opacity: 0;
+    animation: robotWordAnimation 2s forwards;
+  }
+
+  .robot-land {
+    transform: translateY(20%);
+    animation: robotLandAnimation 2s forwards;
+  }
+}
+
+@keyframes robotWordAnimation {
+  to {
+    top: 15%;
+    right: 70%;
+    transform: scale(1) translateY(-100%);
+    opacity: 1;
+  }
+}
+
+@keyframes robotLandAnimation {
+  to {
+    transform: translateY(0);
+  }
+}

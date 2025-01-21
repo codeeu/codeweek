@@ -63,8 +63,13 @@
                         src="images/search/search_bg_lg.png"
                         style="clip-path: ellipse(70% 140% at 70% 25%);"
                       >
-                      <img src="/images/homepage/robot.png" class="absolute right-0 bottom-0 hidden md:block" />
-
+                      <div class="homepage-robot absolute right-0 bottom-0 hidden md:block">
+                        <img class="robot-land" src="/images/homepage/robot-land.png" />
+                        <div class="absolute bottom-10 right-10">
+                          <img src="/images/homepage/robot.png" />
+                          <img class="robot-word" src="/images/homepage/robot-word.svg" />
+                        <div>
+                    </div>
                     </div>
                 </div>
               @endforeach
@@ -110,7 +115,7 @@
                     </p>
                     <div class="flex flex-col xl:flex-row gap-4">
                         <a
-                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#1C4DA1] hover:text-white group"
+                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                           href="/toolkits"
                         >
                             <span>@lang('home.toolkits_button1')</span>
@@ -120,7 +125,7 @@
                             </div>
                         </a>
                         <a
-                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#1C4DA1] hover:text-white group"
+                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                           href="/toolkits"
                         >
                           <span>@lang('home.toolkits_button2')</span>
@@ -145,7 +150,7 @@
                         @lang('home.minecraft_description2')
                     </p>
                     <a
-                      class="inline-flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#1C4DA1] hover:text-white group"
+                      class="inline-flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#FFEF99] group"
                       href="https://www.codeweekcoders.eu/"
                     >
                         <span>@lang('home.minecraft_button')</span>
@@ -183,7 +188,7 @@
                     </p>
                     <div class="flex flex-col xl:flex-row gap-4">
                         <a
-                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#1C4DA1] hover:text-white group"
+                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                           href="/add"
                         >
                             <span>@lang('home.activity_button1')</span>
@@ -193,7 +198,7 @@
                             </div>
                         </a>
                         <a
-                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#1C4DA1] hover:text-white group"
+                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                           href="/events"
                         >
                             <span>@lang('home.activity_button2')</span>
@@ -206,11 +211,11 @@
                 </div>
             </div>
             <div
-              class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-36 w-28 md:w-72 h-28 md:h-72 bg-[#99E1F4] rounded-full"
+              class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-36 w-28 md:w-72 h-28 md:h-72 bg-[#99E1F4] rounded-full lg:hidden xl:block"
               style="transform: translate(-16px, -24px)"
             ></div>
             <div
-              class="animation-element move-background duration-[1.5s] absolute z-0 bottom-12 right-20 w-28 h-28 hidden md:block bg-[#99E1F4] rounded-full"
+              class="animation-element move-background duration-[1.5s] absolute z-0 bottom-12 right-20 w-28 h-28 hidden xl:block bg-[#99E1F4] rounded-full"
               style="transform: translate(-16px, -24px)"
             ></div>
         </section>
