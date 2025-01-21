@@ -20,6 +20,7 @@ return [
     'toolkits' => 'Presentations and Toolkits',
     'why' => 'Why',
     'home' => 'Home',
+    'search_result' => 'Search results',
     'events' => 'Activities',
     'ambassadors' => 'Ambassadors',
     'resources' => 'Resources',

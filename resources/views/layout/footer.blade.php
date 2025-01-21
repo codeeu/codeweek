@@ -40,7 +40,7 @@
                             <a href="/our-values" class="cookweek-link hover-underline">Our Values</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/" class="cookweek-link hover-underline">Statistics</a>
+                            <a href="/scoreboard" class="cookweek-link hover-underline">Statistics</a>
                         </li>
                         <li class="mb-4">
                             <a href="/partners" class="cookweek-link hover-underline">Partners & Sponsors</a>
@@ -48,19 +48,19 @@
                         <li class="mb-4">
                             <a href="/community" class="cookweek-link hover-underline">Community</a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="/" class="cookweek-link hover-underline">Contact us</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
                 <div>
                     <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">Quick links</p>
                     <ul class="m-0 p-0">
                         <li class="mb-4">
-                            <a class="cookweek-link hover-underline">Register</a>
+                            <a href="/register" class="cookweek-link hover-underline">Register</a>
                         </li>
                         <li class="mb-4">
-                            <a class="cookweek-link hover-underline">Activities & Events</a>
+                            <a href="/events" class="cookweek-link hover-underline">Activities & Events</a>
                         </li>
                         <li class="mb-4">
                             <a href="/resources/learn" class="cookweek-link hover-underline">Learn & Teach</a>
@@ -80,7 +80,7 @@
                             <a href="/podcasts" class="cookweek-link hover-underline">Podcast</a>
                         </li>
                         <li class="mb-4">
-                            <a class="cookweek-link hover-underline">Webinars</a>
+                            <a href="/" class="cookweek-link hover-underline">Webinars</a>
                         </li>
                         <li class="mb-4 hidden">
                             <a href="/" class="cookweek-link hover-underline">Careers in Digital</a>
@@ -99,20 +99,20 @@
     <div class="codeweek-container-lg py-8 xl:py-4 flex flex-col xl:flex-row gap-8 justify-between">
         <ul class="m-0 p-0 flex-shrink-0 flex flex-col items-start xl:items-center xl:flex-row gap-4 xl:gap-10">
             <li>
-                <a href="/" class="cookweek-link hover-underline !text-sm">Privacy Policy</a>
+                <a href="/privacy" class="cookweek-link hover-underline !text-sm">Privacy Policy</a>
             </li>
             <li>
                 <a href="/privacy" class="cookweek-link hover-underline !text-sm">Cookie Policy</a>
             </li>
-            <li>
+            {{-- <li>
                 <a href="/" class="cookweek-link hover-underline !text-sm">Accessibility</a>
-            </li>
-            <li>
+            </li> --}}
+            {{-- <li>
                 <a href="/" class="cookweek-link hover-underline !text-sm">Terms & Conditions</a>
-            </li>
-            <li>
+            </li> --}}
+            {{-- <li>
                 <a href="/" class="cookweek-link hover-underline !text-sm">Sitemap</a>
-            </li>
+            </li> --}}
         </ul>
         <p class="p-0 text-slate font-['Montserrat'] font-medium text-sm mb-8 md:mb-0">
             ©CodeWeek 2025 | Designed and developed by <a href="/" class="cookweek-link hover-underline !text-sm">Matrix Internet</a> . All Rights Reserved

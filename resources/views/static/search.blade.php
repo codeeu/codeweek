@@ -1,5 +1,14 @@
 @extends('layout.new_base')
 
+@php
+    $list = [
+      (object) ['label' => __('menu.search_result'), 'href' => ''],
+    ];
+@endphp
+@section('layout.breadcrumb')
+  @include('layout.breadcrumb', ['list' => $list])
+@endsection 
+
 @section('content')
     <section id="codeweek-search-page" class="codeweek-page font-['Blinker']">
         <!-- Banner Section -->
