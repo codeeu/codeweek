@@ -1,16 +1,32 @@
 @extends('layout.new_base')
 
-@section('content')
+@section('non-vue-content')
     <section id="codeweek-homepage" class="codeweek-page font-['Blinker']">
       <section class="relative flex overflow-hidden">
-          <div id="slider-wrapper" class="flex relative transition-all w-full h-[760px] bg-secondary-gradient">
+          <div id="slider-wrapper" class="flex relative transition-all w-full bg-secondary-gradient">
             @foreach ($activities as $index => $activity)
-              <div
-                  id="activity-{{ $index }}"
-                  class="home-activity absolute top-0 left-0 w-full h-full overflow-hidden md:px-16 pb-10 md:p-0 flex items-end md:items-center flex-shrink-0 duration-1000"
-                  style="opacity: {{ $index === 0 ? 1 : 0 }}"
-              >
-                  <div class="codeweek-container-lg flex items-end md:items-center">
+              <div class="absolute top-0 left-0 w-full h-full overflow-hidden md:px-16 pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                  <div class="relative flex-grow-1 h-full">
+                    <button
+                      id="slider-prev-small-btn"
+                      class="absolute z-10 top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 block md:hidden"
+                      style="display: none;"
+                    >
+                      <img class="rotate-180 w-8 h-8" src="/images/arrow-right-icon.svg" />
+                    </button>
+                    <button
+                      id="slider-next-small-btn"
+                      class="absolute z-10 top-1/2 -translate-y-1/2 -right-2 hover:right-0 bg-white hover:bg-[#F95C22] p-4 pr-6 rounded-l-full duration-300 block md:hidden"
+                      style="display: none;"
+                    >
+                      <img class="w-8 h-8" src="/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div
+                    id="activity-{{ $index }}"
+                    class="home-activity codeweek-container-lg flex items-end md:items-center duration-1000"
+                    style="opacity: {{ $index === 0 ? 1 : 0 }}"
+                  >
                       <div class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                           <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
                               {{ $activity->title }}
@@ -56,13 +72,15 @@
 
             <button
               id="slider-prev-btn"
-              class="absolute top-40 md:top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 hidden"
+              class="absolute top-28 md:top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 hidden md:block"
+              style="display: none;"
             >
               <img class="rotate-180 w-8 h-8" src="/images/arrow-right-icon.svg" />
             </button>
             <button
               id="slider-next-btn"
-              class="absolute top-40 md:top-1/2 -translate-y-1/2 -right-2 hover:right-0 bg-white hover:bg-[#F95C22] p-4 pr-6 rounded-l-full duration-300 hidden"
+              class="absolute top-28 md:top-1/2 -translate-y-1/2 -right-2 hover:right-0 bg-white hover:bg-[#F95C22] p-4 pr-6 rounded-l-full duration-300 hidden md:block"
+              style="display: none;"
             >
               <img class="w-8 h-8" src="/images/arrow-right-icon.svg" />
             </button>
@@ -275,38 +293,51 @@
 
       const activities = @json($activities);
       console.log('activities', activities);
-      const scrollBarWidth = Math.max(window.innerWidth - document.body.clientWidth, 0);
+      const sliderWraper = document.getElementById('slider-wrapper');
 
-      // Slider
-      let currentIndex = 0;
-      const prevButton = document.getElementById('slider-prev-btn');
-      const nextButton = document.getElementById('slider-next-btn');
-
-      if (activities.length > 1) {
-        nextButton?.classList.remove('hidden');
+      if (activities?.length && sliderWraper) {
+        sliderWraper.style.height = '760px';
       }
 
-      const handleMove = (idx) => {
-        const slider = document.getElementById('slider-wrapper');
-        const activityElements = slider.querySelectorAll('.home-activity');
-        activityElements?.forEach((element, index) => {
-            element.style.opacity = index === idx ? 1 : 0;
-        })
-        if (idx === 0) prevButton?.classList.add('hidden');
-        else prevButton?.classList.remove('hidden');
+      const handleSlider = ({ prevBtnId, nextBtnId }) => {
+        const scrollBarWidth = Math.max(window.innerWidth - document.body.clientWidth, 0);
 
-        if (idx === activities.length - 1) nextButton?.classList.add('hidden');
-        else nextButton?.classList.remove('hidden');
+        // Slider
+        let currentIndex = 0;
+        const prevButton = document.getElementById(prevBtnId);
+        const nextButton = document.getElementById(nextBtnId);
+
+        if (!prevButton || !nextButton) return;
+        
+        if (activities.length > 1) {
+          nextButton.style.display = '';
+        }
+
+        const handleMove = (idx) => {
+          const slider = document.getElementById('slider-wrapper');
+          const activityElements = slider.querySelectorAll('.home-activity');
+          activityElements?.forEach((element, index) => {
+              element.style.opacity = index === idx ? 1 : 0;
+          })
+          if (idx === 0) prevButton.style.display = 'none';
+          else prevButton.style.display = '';
+
+          if (idx === activities.length - 1) nextButton.style.display = 'none';
+          else nextButton.style.display = '';
+        }
+
+        prevButton.addEventListener('click', () => {
+          currentIndex = Math.max(currentIndex - 1 , 0);
+          handleMove(currentIndex);
+        });
+        nextButton.addEventListener('click', () => {
+          currentIndex = Math.min(currentIndex + 1 , activities.length - 1);
+          handleMove(currentIndex);
+        });
       }
 
-      prevButton.addEventListener('click', () => {
-        currentIndex = Math.max(currentIndex - 1 , 0);
-        handleMove(currentIndex);
-      });
-      nextButton.addEventListener('click', () => {
-        currentIndex = Math.min(currentIndex + 1 , activities.length - 1);
-        handleMove(currentIndex);
-      });
+      handleSlider({ prevBtnId: 'slider-prev-small-btn', nextBtnId: 'slider-next-small-btn' });
+      handleSlider({ prevBtnId: 'slider-prev-btn', nextBtnId: 'slider-next-btn' });
 
       // Count down
       const daysText = @json(__('home.days'));

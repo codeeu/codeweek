@@ -55,11 +55,15 @@
 <body class="new-layout">
 
     <!-- Document Wrapper -->
-    <div id="app">
+    <div>
         @include('layout.menu')
+        @yield('layout.breadcrumb')
 
-        <main>
+        <main id="app">
             @yield("content")
+        </main>
+        <main id="non-vue">
+            @yield("non-vue-content")
         </main>
 
         @include('layout.footer')
