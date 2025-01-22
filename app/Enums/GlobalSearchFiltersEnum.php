@@ -73,28 +73,40 @@ enum GlobalSearchFiltersEnum: string
             self::LEARN => [
                 'type_search' => 'function',
                 'function' => 'searchResources',
-                'params' => ['section' => 'learn'],
+                'params' => [
+                    'section' => 'learn',
+                    'search_fields' => [
+                        'name',
+                        'description'
+                    ],
+                ],
                 'map_fields' => [
                     'name' => '{name}',
                     'category' => 'Learn',
-                    'description' => '',
-                    'thumbnail' => '/img/event_default_picture.png',
-                    'path' => '#',
-                    'link_type' => 'internal',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{source}',
+                    'link_type' => 'external',
                     'language' => 'en',
                 ]
             ],
             self::TEACH => [
                 'type_search' => 'function',
                 'function' => 'searchResources',
-                'params' => ['section' => 'teach'],
+                'params' => [
+                    'section' => 'teach',
+                    'search_fields' => [
+                        'name',
+                        'description'
+                    ],
+                ],
                 'map_fields' => [
                     'name' => '{name}',
-                    'category' => 'Teach',
-                    'description' => '',
-                    'thumbnail' => '/img/event_default_picture.png',
-                    'path' => '#',
-                    'link_type' => 'internal',
+                    'category' => 'Learn',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{source}',
+                    'link_type' => 'external',
                     'language' => 'en',
                 ]
             ],

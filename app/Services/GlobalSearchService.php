@@ -4,6 +4,7 @@ namespace App\Services;
 
 use Illuminate\Support\Facades\Log;
 use App\Enums\GlobalSearchFiltersEnum;
+use App\ResourceItem;
 use Illuminate\Support\Facades\Http;
 
 class GlobalSearchService
@@ -137,29 +138,17 @@ class GlobalSearchService
             return [];
         }
 
-        $levels = \App\ResourceLevel::where($section, '=', true)->orderBy('position')->get();
-        $types = \App\ResourceType::where($section, '=', true)->orderBy('position')->get();
-        $languages = \App\ResourceLanguage::where($section, '=', true)->orderBy('position')->get();
-        $programmingLanguages = \App\ResourceProgrammingLanguage::where($section, '=', true)->orderBy('position')->get();
-        $categories = \App\ResourceCategory::where($section, '=', true)->orderBy('position')->get();
-        $subjects = \App\ResourceSubject::where($section, '=', true)->orderBy('position')->get();
+        $resources = ResourceItem::where(strtolower($section), '=', true);
 
-        $resources = collect()
-            ->merge($levels)
-            ->merge($types)
-            ->merge($languages)
-            ->merge($programmingLanguages)
-            ->merge($categories)
-            ->merge($subjects);
-
-        if ($query) {
-            $resources = $resources->filter(function ($item) use ($query) {
-                return stripos($item->name ?? '', $query) !== false ||
-                    stripos($item->description ?? '', $query) !== false;
+        if ($query && isset($params['search_fields']) && is_array($params['search_fields'])) {
+            $resources = $resources->where(function ($queryBuilder) use ($params, $query) {
+                foreach ($params['search_fields'] as $field) {
+                    $queryBuilder->orWhere($field, 'like', '%' . $query . '%');
+                }
             });
         }
 
-        return $resources->map(function ($item) use ($mapFields) {
+        return $resources->get()->map(function ($item) use ($mapFields) {
             $mappedResult = [];
             foreach ($mapFields as $key => $mapping) {
                 if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
