@@ -42,8 +42,7 @@ class CoderDojoEvents extends Command
 
         Excel::import(
             new CoderDojoEventsImport(),
-            'events.xlsx',
-            'excel'
+            resource_path('excel/20250113 Events CoderDojo Belgium January - February 2025.xlsx')
         );
     }
 }
