@@ -349,7 +349,7 @@
 
         <div
           id="search-menu"
-          class="fixed left-0 top-0 z-50 flex flex-col items-center justify-center w-full p-6 h-[100dvh] bg-white font-['Montserrat'] duration-300"
+          class="fixed left-0 top-[139px] md:top-[123px] z-50 flex flex-col items-center justify-center w-full p-6 h-[calc(100dvh-139px)] md:h-[calc(100dvh-123px)] bg-white font-['Montserrat'] duration-300"
           style="display: none;"
         >
           <div class="flex-shrink-0 flex justify-end w-full">

@@ -79,9 +79,9 @@
                         <li class="mb-4">
                             <a href="/podcasts" class="cookweek-link hover-underline">Podcast</a>
                         </li>
-                        <li class="mb-4">
+                        {{-- <li class="mb-4">
                             <a href="/" class="cookweek-link hover-underline">Webinars</a>
-                        </li>
+                        </li> --}}
                         {{-- <li class="mb-4">
                             <a href="/" class="cookweek-link hover-underline">Careers in Digital</a>
                         </li> --}}
@@ -115,7 +115,7 @@
             </li> --}}
         </ul>
         <p class="p-0 text-slate font-['Montserrat'] font-medium text-sm mb-8 md:mb-0">
-            ©CodeWeek 2025 | Designed and developed by <a href="/" class="cookweek-link hover-underline !text-sm">Matrix Internet</a> . All Rights Reserved
+            ©CodeWeek 2025 | Designed and developed by <a href="https://www.matrixinternet.ie/" target="_blank" class="cookweek-link hover-underline !text-sm">Matrix Internet</a> . All Rights Reserved
         </p>
     </div>
     <div
