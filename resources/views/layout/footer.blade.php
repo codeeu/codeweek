@@ -102,7 +102,7 @@
                 <a href="/privacy" class="cookweek-link hover-underline !text-sm">Privacy Policy</a>
             </li>
             <li>
-                <a href="/privacy" class="cookweek-link hover-underline !text-sm">Cookie Policy</a>
+                <a href="/cookie" class="cookweek-link hover-underline !text-sm">Cookie Policy</a>
             </li>
             {{-- <li>
                 <a href="/" class="cookweek-link hover-underline !text-sm">Accessibility</a>
