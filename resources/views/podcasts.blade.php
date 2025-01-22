@@ -17,15 +17,15 @@
         {{--        </section>--}}
 
         <section class="flex flex-row justify-between codeweek-banner training" style="background-color: #FDAF31">
-            <div class="flex justify-center items-center w-full">
-                <div class="text-center m-12">
-                    <div class="text-xl text-white w-full uppercase">
+            <div class="flex items-center justify-center w-full">
+                <div class="m-12 text-center">
+                    <div class="w-full text-xl text-white uppercase">
                         <h1>EU Code Week Podcasts</h1>
                     </div>
                 </div>
             </div>
 
-            <div class="md:w-full md:flex hidden">
+            <div class="hidden md:w-full md:flex">
                 <img src="{{asset('images/banner_podcast.png')}}">
 
             </div>
@@ -50,8 +50,6 @@
                 <div class="mb-4">
                     You can listen to the podcasts here or on <a
                             href="https://open.spotify.com/show/5AHSuZvjLSdbaO381lv3Qk" target="_blank" rel="noreferer noopener">Spotify</a>, <a
-                            href="https://podcasts.google.com/feed/aHR0cHM6Ly9jb2Rld2Vlay5ldS9mZWVkL3BvZGNhc3Rz"
-                            target="_blank" rel="noreferer noopener">Google podcasts</a> or <a
                             href="https://podcasts.apple.com/us/podcast/eu-code-week-podcast-series/id1592076780"
                             target="_blank" rel="noreferer noopener">Apple podcasts</a>.
                 </div>
