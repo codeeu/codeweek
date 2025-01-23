@@ -102,7 +102,7 @@ enum GlobalSearchFiltersEnum: string
                 ],
                 'map_fields' => [
                     'name' => '{name}',
-                    'category' => 'Learn',
+                    'category' => 'Teach',
                     'description' => '{description}',
                     'thumbnail' => '{thumbnail}',
                     'path' => '{source}',
