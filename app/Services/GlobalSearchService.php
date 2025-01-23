@@ -5,6 +5,7 @@ namespace App\Services;
 use Illuminate\Support\Facades\Log;
 use App\Enums\GlobalSearchFiltersEnum;
 use App\ResourceItem;
+use App\StaticPage;
 use Illuminate\Support\Facades\Http;
 
 class GlobalSearchService
@@ -101,7 +102,7 @@ class GlobalSearchService
             ->get();
 
         // Format the results
-        return $results->map(function ($item) use ($mapFields) {
+        $data = $results->map(function ($item) use ($mapFields) {
             $mappedResult = [];
             foreach ($mapFields as $key => $mapping) {
                 if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
@@ -113,6 +114,35 @@ class GlobalSearchService
             }
             return $mappedResult;
         })->toArray();
+
+        if($filterKey == GlobalSearchFiltersEnum::PODCASTS->value) {
+            if ($query) {
+                $staticPageObj = StaticPage::where('unique_identifier', 'podcasts')
+                    ->where(function ($q) use ($query) {
+                        $q->where('name', 'like', "%$query%")
+                          ->orWhere('description', 'like', "%$query%");
+                    })->first();
+            } else {
+                $staticPageObj = StaticPage::where('unique_identifier', 'podcasts')->first();
+            }
+        
+            if ($staticPageObj) {
+                $staticPage = [
+                    [
+                        'name' => $staticPageObj->name,
+                        'category' => $staticPageObj->category,
+                        'description' => $staticPageObj->description,
+                        'thumbnail' => $staticPageObj->thumbnail,
+                        'path' => $staticPageObj->path,
+                        'link_type' => $staticPageObj->link_type,
+                        'language' => 'en'
+                    ]
+                ];
+                $data = collect($staticPage)->merge($data)->unique('path')->toArray();
+            }
+        }
+
+        return $data;
     }
 
     /**
