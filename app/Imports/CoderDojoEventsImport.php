@@ -22,7 +22,6 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
 
     public function model(array $row): ?Model
     {
-        // Validate required fields
         if (
             empty($row['activity_title']) ||
             empty($row['name_of_organisation']) ||
@@ -38,7 +37,16 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
         }
 
         try {
-            $event = new Event([
+            $latitude = !empty($row['latitude']) ? trim($row['latitude']) : '';
+            $longitude = !empty($row['longitude']) ? trim($row['longitude']) : '';
+            $start_date = \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['start_date']);
+
+            // Check for existing event
+            $existingEvent = Event::where('title', trim($row['activity_title']))
+                ->where('start_date', $start_date)
+                ->first();
+
+            $eventData = [
                 'status' => 'APPROVED',
                 'title' => trim($row['activity_title']),
                 'slug' => str_slug(trim($row['activity_title'])),
@@ -54,20 +62,27 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
                 'country_iso' => trim($row['country']),
                 'picture' => !empty($row['image_path']) ? trim($row['image_path']) : '',
                 'pub_date' => now(),
-                'created' => now(),
                 'updated' => now(),
                 'codeweek_for_all_participation_code' => 'cw20-coderdojo-eu',
-                'start_date' => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['start_date']),
+                'start_date' => $start_date,
                 'end_date' => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['end_date']),
-                'geoposition' => (!empty($row['latitude']) && !empty($row['longitude'])) ? $row['latitude'] . ',' . $row['longitude'] : '',
-                'longitude' => !empty($row['longitude']) ? trim($row['longitude']) : '',
-                'latitude' => !empty($row['latitude']) ? trim($row['latitude']) : '',
+                'geoposition' => ($latitude && $longitude) ? "$longitude,$latitude" : '',
+                'longitude' => $longitude,
+                'latitude' => $latitude,
                 'language' => !empty($row['language']) ? trim($row['language']) : 'nl',
                 'approved_by' => 19588,
                 'mass_added_for' => 'Excel',
-            ]);
+            ];
 
-            $event->save();
+            if ($existingEvent) {
+                Log::info('Updating existing event: ' . $existingEvent->id);
+                $existingEvent->update($eventData);
+                $event = $existingEvent;
+            } else {
+                $eventData['created'] = now();
+                $event = new Event($eventData);
+                $event->save();
+            }
 
             if (!empty($row['audience_comma_separated_ids'])) {
                 $audiences = array_unique(array_map('trim', explode(',', $row['audience_comma_separated_ids'])));
@@ -75,7 +90,7 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
                     return is_numeric($id) && $id > 0 && $id <= 100;
                 });
                 if (!empty($audiences)) {
-                    $event->audiences()->attach($audiences);
+                    $event->audiences()->sync($audiences);
                 }
             }
 
@@ -85,7 +100,7 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
                     return is_numeric($id) && $id > 0 && $id <= 100;
                 });
                 if (!empty($themes)) {
-                    $event->themes()->attach($themes);
+                    $event->themes()->sync($themes);
                 }
             }
 
