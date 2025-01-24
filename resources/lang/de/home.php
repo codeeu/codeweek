@@ -2,10 +2,8 @@
 
 return [
     'about' => 'Die EU Code Week ist eine Breiteninitiative, die der Bevölkerung das Programmieren und digitale Kompetenzen auf spaßige und ansprechende Weise näherbringen soll.',
-    'when' => 'Kommen Sie zu uns und erleben Sie ein fröhliches Fest!',
+    'when' => '14.-27. Oktober 2024',
     'when_text' => '>Programmieren zu lernen, hilft uns, den Sinn der sich schnell verändernden Welt um uns herum zu verstehen, unser Verständnis für die Technologie zu erweitern und Kompetenzen und Fähigkeiten zu entwickeln, um neue Ideen und Innovationen umzusetzen.',
-    'xmas_text' => 'Bringen Sie die Weihnachtszeit mit Innovation und Kreativität zum Funkeln! Machen Sie mit bei unserem „Coding@Christmas“-Spaß, indem Sie Ihre Coding-Aktivität zu unserer Karte hinzufügen und die Chance haben, ein micro:bit Kit für Ihre Schüler zu gewinnen. Lassen Sie uns die Feiertage feiern, indem wir die nächste Generation von Denkern und Schöpfern fördern. Fügen Sie Ihre Aktivität noch heute hinzu und helfen Sie, eine bessere Zukunft zu inspirieren!',
-    'button_text' => 'Beteiligen Sie sich!',
     'school_banner_title' => 'Beteiligen Sie sich!',
     'school_banner_text' => 'Sind Sie Lehrerin oder Lehrer?',
     'school_banner_text2' => 'Klicken Sie hier, um herauszufinden, wie Sie sich beteiligen können!',
