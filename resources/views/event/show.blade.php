@@ -244,8 +244,8 @@
             <div class="codeweek-display-field">
                 <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0">Location Coordinates</label>
                 <p>
-                    Latitude: {{ $event->latitude }}<br>
                     Longitude: {{ $event->longitude }}<br>
+                    Latitude: {{ $event->latitude }}<br>
                     Geoposition: {{ $event->geoposition }}
                 </p>
             </div>
