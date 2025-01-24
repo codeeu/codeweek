@@ -66,7 +66,7 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
                 'codeweek_for_all_participation_code' => 'cw20-coderdojo-eu',
                 'start_date' => $start_date,
                 'end_date' => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['end_date']),
-                'geoposition' => ($latitude && $longitude) ? "$latitude,$longitude" : '',
+                'geoposition' => ($latitude && $longitude) ? "$longitude,$latitude" : '',
                 'longitude' => $longitude,
                 'latitude' => $latitude,
                 'language' => !empty($row['language']) ? trim($row['language']) : 'nl',
