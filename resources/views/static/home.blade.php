@@ -5,81 +5,68 @@
       <section class="relative flex overflow-hidden">
           <div id="slider-wrapper" class="flex relative transition-all w-full bg-secondary-gradient">
             @foreach ($activities as $index => $activity)
-              <div class="absolute top-0 left-0 w-full h-full overflow-hidden md:px-16 pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                  <div class="relative flex-grow-1 h-full">
-                    <button
-                      id="slider-prev-small-btn"
-                      class="absolute z-10 top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 block md:hidden"
-                      style="display: none;"
-                    >
-                      <img class="rotate-180 w-8 h-8" src="/images/arrow-right-icon.svg" />
-                    </button>
-                    <button
-                      id="slider-next-small-btn"
-                      class="absolute z-10 top-1/2 -translate-y-1/2 -right-2 hover:right-0 bg-white hover:bg-[#F95C22] p-4 pr-6 rounded-l-full duration-300 block md:hidden"
-                      style="display: none;"
-                    >
-                      <img class="w-8 h-8" src="/images/arrow-right-icon.svg" />
-                    </button>
-                  </div>
-                  <div
-                    id="activity-{{ $index }}"
-                    class="home-activity codeweek-container-lg flex items-end md:items-center duration-1000"
-                    style="opacity: {{ $index === 0 ? 1 : 0 }}"
-                  >
-                      <div class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                          <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
-                              {{ $activity->title }}
-                          </h2>
-                          <span
-                            id="activity-countdown-link"
-                            class="inline-block rounded-full py-4 px-6 md:px-10 text-white mb-4 font-semibold text-[16px] w-full md:w-auto bg-gray-200 text-center"
-                            style="display:none;" {!-- Temp Hide --!}
-                          >
-                            <span>@lang('home.count_down'):</span>
-                            <span class="ml-1" id="activity-countdown-text">0 @lang('home.mins')</span>
-                          </span>
-                          <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                              {{ mb_substr(strip_tags($activity->description), 0, 200) }}
-                          </p>
-                          <a
-                            class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
-                            href="{{ $activity->url }}"
-                          >
-                            @if($index == 0)
-                              @lang('home.get_involved')
-                            @elseif($index == 1)
-                              @lang('home.meet_our_community')
-                            @else
-                              @lang('home.explore_event')
-                            @endif
-                          </a>
-                          <div class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] m:dtext-base">
-                              #EUCodeWeek
-                          </div>
-                      </div>
-                      <img
-                        class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
-                        loading="lazy"
-                        src="images/search/search_bg_lg_{{ ($index % 2) === 0 ? 1 : 2 }}.jpeg"
-                        style="clip-path: ellipse(71% 73% at 40% 20%);"
-                      />
-                      <img
-                        class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
-                        loading="lazy"
-                        src="images/search/search_bg_lg_{{ ($index % 2) === 0 ? 1 : 2 }}.jpeg"
-                        style="clip-path: ellipse(70% 140% at 70% 25%);"
+                <div class="absolute top-0 left-0 w-full h-full overflow-hidden md:px-16 pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                    <div class="relative flex-grow-1 h-full">
+                      <button
+                        id="slider-prev-small-btn"
+                        class="absolute z-10 top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 block md:hidden"
+                        style="display: none;"
                       >
-                      <div class="homepage-robot absolute right-0 bottom-0 hidden md:block">
-                        <img class="robot-land" src="/images/homepage/robot-land.png" />
-                        <div class="absolute bottom-10 right-10">
-                          <img src="/images/homepage/robot.png" />
-                          <img class="robot-word" src="/images/homepage/robot-word.svg" />
-                        <div>
+                        <img class="rotate-180 w-8 h-8" src="/images/arrow-right-icon.svg" />
+                      </button>
+                      <button
+                        id="slider-next-small-btn"
+                        class="absolute z-10 top-1/2 -translate-y-1/2 -right-2 hover:right-0 bg-white hover:bg-[#F95C22] p-4 pr-6 rounded-l-full duration-300 block md:hidden"
+                        style="display: none;"
+                      >
+                        <img class="w-8 h-8" src="/images/arrow-right-icon.svg" />
+                      </button>
                     </div>
-                    </div>
+                    <div
+                      id="activity-{{ $index }}"
+                      class="home-activity codeweek-container-lg flex items-end md:items-center duration-1000"
+                      style="opacity: {{ $index === 0 ? 1 : 0 }}"
+                    >
+                        <div class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
+                            <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
+                                {{ $activity['title'] }}
+                            </h2>
+                            <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
+                                {{ mb_substr(strip_tags($activity['description']), 0, 200) }}
+                            </p>
+                            <a
+                              class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
+                              href="{{ $activity['url'] }}"
+                            >
+                              @lang($activity['btn_lang'])
+                            </a>
+                            <div class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] m:dtext-base">
+                                #EUCodeWeek
+                            </div>
+                        </div>
+                        <img
+                          class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
+                          loading="lazy"
+                          src="images/search/search_bg_lg_{{ ($index % 2) === 0 ? 1 : 2 }}.jpeg"
+                          style="clip-path: ellipse(71% 73% at 40% 20%);"
+                        />
+                        <img
+                          class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
+                          loading="lazy"
+                          src="images/search/search_bg_lg_{{ ($index % 2) === 0 ? 1 : 2 }}.jpeg"
+                          style="clip-path: ellipse(70% 140% at 70% 25%);"
+                        >
+                        <div class="homepage-robot absolute right-0 bottom-0 hidden md:block">
+                          <img class="robot-land" src="/images/homepage/robot-land.png" />
+                          <div class="absolute bottom-10 right-10">
+                            <img src="/images/homepage/robot.png" />
+                            <img class="robot-word" src="/images/homepage/robot-word.svg" />
+                          <div>
+                      </div>
+                      </div>
+                  </div>
                 </div>
-            </div>
+              </div>
             @endforeach
 
             <button
@@ -349,61 +336,6 @@
 
       handleSlider({ prevBtnId: 'slider-prev-small-btn', nextBtnId: 'slider-next-small-btn' });
       handleSlider({ prevBtnId: 'slider-prev-btn', nextBtnId: 'slider-next-btn' });
-
-      // Count down
-      const daysText = @json(__('home.days'));
-      const hoursText = @json(__('home.hours'));
-      const minsText = @json(__('home.mins'));
-
-      const formatCountDown = (timeLeft) => {
-          let left = Math.max(timeLeft, 0);
-          const days = Math.floor(left / (24 * 60 * 60 * 1000));
-
-          left -= days * (24 * 60 * 60 * 1000);
-          const hours = Math.floor(left / (60 * 60 * 1000));
-
-          left -= hours * (60 * 60 * 1000);
-          const mins = Math.floor(left / (60 * 1000));
-
-          left -= mins * (60 * 1000);
-          const secs = Math.floor(left / 1000);
-
-          const list = [];
-          if (days > 0) list.push(`${days} ${daysText}`);
-          if (hours > 0) list.push(`${hours} ${hoursText}`);
-          list.push(`${mins} ${minsText}`);
-
-          return list.join(', ');
-      }
-
-      activities.forEach((activity, index) => {
-        const countDonwLinkEl = document.querySelector(`#activity-${index} #activity-countdown-link`);
-        const countDownTextEl = countDonwLinkEl?.querySelector('#activity-countdown-text');
-        if (!countDownTextEl) return;
-        
-        let timeLeft = new Date(activity.end_date).getTime() - Date.now();
-        if (!activity.end_date) timeLeft = 0;
-
-        if (timeLeft <= 0) {
-          countDonwLinkEl.removeAttribute('href');
-          countDonwLinkEl.classList.remove('bg-count-gradient');
-          countDonwLinkEl.classList.add('bg-gray-200');
-        } else {
-          countDonwLinkEl.classList.add('bg-count-gradient');
-          countDonwLinkEl.classList.remove('bg-gray-200');
-        }
-        countDownTextEl.textContent = formatCountDown(timeLeft);
-
-        setInterval(() => {
-          timeLeft -= 1000;
-          if (timeLeft <= 0) {
-            countDonwLinkEl.removeAttribute('href');
-            countDonwLinkEl.classList.remove('bg-count-gradient');
-            countDonwLinkEl.classList.add('bg-gray-200');
-          }
-          countDownTextEl.textContent = formatCountDown(timeLeft);
-        }, 60* 1000);
-      });
     });
 </script>
 @endpush
