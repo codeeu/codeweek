@@ -34,6 +34,7 @@
                           <span
                             id="activity-countdown-link"
                             class="inline-block rounded-full py-4 px-6 md:px-10 text-white mb-4 font-semibold text-[16px] w-full md:w-auto bg-gray-200 text-center"
+                            style="display:none;" {!-- Temp Hide --!}
                           >
                             <span>@lang('home.count_down'):</span>
                             <span class="ml-1" id="activity-countdown-text">0 @lang('home.mins')</span>
@@ -45,7 +46,13 @@
                             class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                             href="{{ $activity->url }}"
                           >
+                            @if($index == 0)
+                              @lang('home.get_involved')
+                            @elseif($index == 1)
+                              @lang('home.meet_our_community')
+                            @else
                               @lang('home.explore_event')
+                            @endif
                           </a>
                           <div class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] m:dtext-base">
                               #EUCodeWeek
@@ -54,13 +61,13 @@
                       <img
                         class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                         loading="lazy"
-                        src="images/search/search_bg_lg.png"
+                        src="images/search/search_bg_lg_{{ ($index % 2) === 0 ? 1 : 2 }}.jpeg"
                         style="clip-path: ellipse(71% 73% at 40% 20%);"
                       />
                       <img
                         class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
                         loading="lazy"
-                        src="images/search/search_bg_lg.png"
+                        src="images/search/search_bg_lg_{{ ($index % 2) === 0 ? 1 : 2 }}.jpeg"
                         style="clip-path: ellipse(70% 140% at 70% 25%);"
                       >
                       <div class="homepage-robot absolute right-0 bottom-0 hidden md:block">
@@ -72,8 +79,8 @@
                     </div>
                     </div>
                 </div>
-              @endforeach
             </div>
+            @endforeach
 
             <button
               id="slider-prev-btn"
@@ -297,7 +304,6 @@
       triggerAnimations(target);
 
       const activities = @json($activities);
-      console.log('activities', activities);
       const sliderWraper = document.getElementById('slider-wrapper');
 
       if (activities?.length && sliderWraper) {

@@ -38,4 +38,6 @@ return [
     'resouce_description' => 'If you are not sure how to organise an activity, visit our teaching resources page and learning bits training materials for guidance and tailored lesson plans.',
     'resouce_button1' => 'Access resources',
     'resouce_button2' => 'Access trainings',
+    'get_involved' => 'Get involved',
+    'meet_our_community' => 'Meet our community'
 ];
