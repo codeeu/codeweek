@@ -44,7 +44,7 @@ class Muensterland extends Command
 
         $techicalUser = ImporterHelper::getTechnicalUser('muensterland-technical');
 
-        $items = MuensterlandRSSItem::whereNull('imported_at')->get();
+        $items = MuensterlandRSSItem::all();
 
         foreach ($items as $item) {
 

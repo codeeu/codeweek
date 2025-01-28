@@ -9,19 +9,18 @@ use Arr;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Str;
 
 class EventHelper
 {
-    public static function getCloseEvents($longitude, $latitude, $id = 0)
+    public static function getCloseEvents($longitude, $latitude, $id = 0, $num = 3)
     {
         //acos is not known with sqlite that is used for testing.
         if (config('codeweek.db_connection') == 'sqlite') {
-            return Event::take(4)->get();
+            return Event::take($num)->get();
         }
 
         $events = Event::selectRaw(
-            'id, title, slug, start_date, description, picture, creator_id, 
+            'id, title, slug, start_date, end_date, picture, description, picture, creator_id, 
         ( 6371 *
          acos( cos( radians(?) ) *
          cos( radians( latitude ) ) *
@@ -36,7 +35,7 @@ class EventHelper
             ->where('id', '<>', $id)
             ->where('end_date', '>', Carbon::now())
             ->orderBy('distance')
-            ->take(3)
+            ->take($num)
             ->get();
 
         return $events;
