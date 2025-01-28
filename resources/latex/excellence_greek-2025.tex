@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[T2A,T1]{fontenc}
+\usepackage[T1,LGR,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[greek,russian,english]{babel}
 \usepackage{mathpazo}
@@ -18,8 +18,7 @@
 
 
 \DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
-
-\definecolor{myorange}{RGB}{226, 83, 48}
+\DeclareFontFamilySubstitution{LGR}{\rmdefault}{udidot}
 
 \newcommand\BackgroundPic{%
 \put(0,0){%
@@ -27,46 +26,45 @@
 \vfill
 \centering
 \includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{images/participation-certificate-2025.png}%
+keepaspectratio]{images/excellence-2025.png}%
 \vfill
 }}}
-
 
 
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 ~
-\vspace{2.2cm}
+\vspace{2.4cm}
 ~
 \begin{center}
 
-\vspace{5.9cm}
+\vspace{6.3cm}
 
-{\centering\fontsize{36}{48}\selectfont
-\begin{otherlanguage*}{russian}
-\textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
+{\centering\Huge\
+\begin{otherlanguage*}{greek}
+\textbf{<CERTIFICATE_HOLDER_NAME>}
 \end{otherlanguage*}
 \par}
 
 \begin{table}[h]
 \footnotesize
-
 \begin{center}
-\fontsize{24}{36}\selectfont
-\vspace{1.6cm}
-\begin{otherlanguage*}{russian}
-\textcolor{myorange}{<EVENT_NAME>}
-\end{otherlanguage*}
+
 \end{center}
 \end{table}
 
+\vspace{-3cm}
 \end{center}
-\vspace{2.2cm}
+\begin{table}[h]
+\footnotesize
 \begin{center}
-\hspace{-0.5cm}
-\begin{otherlanguage*}{russian}
-\textcolor{black}{<EVENT_DATE>}
-\end{otherlanguage*}
+\begin{tabular}{lr}
+%~\hspace{0.7cm}
+\end{tabular}
+\end{center}
+\end{table}
+\vspace{-2.2cm}
+\begin{center}
 %\end{tabular}
 
 \end{center}
