@@ -25,19 +25,19 @@ body .cweu-submenu {
     font-size: 11px;
 }
 
-footer i:not(.fa-inverse) {
+body:not(.new-layout) footer i:not(.fa-inverse) {
     color: #555;
 }
 
-footer a {
+body:not(.new-layout) footer a {
     color: #08a0c4;
 }
 
-footer {
+body:not(.new-layout) footer {
     padding-top: 0px;
 }
 
-.list-style-none {
+body:not(.new-layout) .list-style-none {
     list-style: none;
 }
 

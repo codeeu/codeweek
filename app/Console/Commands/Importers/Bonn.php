@@ -43,7 +43,7 @@ class Bonn extends Command
         Log::info('Loading Bonn API Items in Database');
 
         $techicalUser = ImporterHelper::getTechnicalUser('bonn-technical');
-        $items = BonnRSSItem::whereNull('imported_at')->get();
+        $items = BonnRSSItem::all();
 
         foreach ($items as $item) {
             $item->createEvent($techicalUser);

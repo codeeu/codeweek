@@ -12,5 +12,5 @@ return [
     'MAP_TILES' => env('MAP_TILES', ''),
     'EEDUCATION_CLIENTID' => env('EEDUCATION_CLIENTID', null),
     'LOCALES' => env('LOCALES', null),
-
+    'blog_url' => env('BLOG_URL', 'https://codeweek.eu/blog'),
 ];
