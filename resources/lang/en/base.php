@@ -92,6 +92,7 @@ return [
 
     'still_have_question' => 'Still have a question?',
     'drop_us_a_line' => 'Just drop us a line!',
+    'drop_a_line' => 'Drop us a line',
     'get_in_touch' => 'GET IN TOUCH',
     'footer_msg' => '',
 

@@ -25,6 +25,11 @@ class SearchController extends Controller
         $this->eventTransformer = $eventTransformer;
     }
 
+    public function index()
+    {
+        return view('static.search');
+    }
+
     public function search(Request $request): View
     {
 
