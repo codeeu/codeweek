@@ -44,7 +44,7 @@ class Bayern extends Command
 
         $techicalUser = ImporterHelper::getTechnicalUser('bayern-technical');
 
-        $items = BayernRSSItem::whereNull('imported_at')->get();
+        $items = BayernRSSItem::all();
 
         foreach ($items as $item) {
 

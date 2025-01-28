@@ -84,7 +84,7 @@ trait GermanTraits
     private function createGermanEvent($city): void
     {
         $user = User::where(['email' => $this->user_email])->first();
-
+    
         if ($user == null) {
 
             //Create user
@@ -151,4 +151,5 @@ trait GermanTraits
             $event->tags()->sync($tagsArray);
         }
     }
+    
 }
