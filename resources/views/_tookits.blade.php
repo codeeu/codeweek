@@ -16,7 +16,9 @@
 {{--            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2023/communications-toolkit-2023-EN.zip">@lang('base.languages.en')</a>--}}
 {{--        @endif--}}
 
-        <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2025/communications-toolkit-2025-{{strtoupper($lang)}}.zip">@lang('base.languages.en')</a>
+       {{--  <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2025/communications-toolkit-2025-{{strtoupper($lang)}}.zip">@lang('base.languages.en')</a>--}}
+
+        <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2025/communications-toolkit-2025.zip">@lang('base.languages.en')</a>
     )
     </li>
 
