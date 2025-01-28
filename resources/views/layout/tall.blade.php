@@ -60,14 +60,14 @@
 <div id="app">
 
 
-    @include('layout.menu-old')
+    @include('layout.menu')
 
 
     <main>
         @yield("content")
     </main>
 
-    @include('layout.footer-old')
+    @include('layout.footer')
 
 {{--    <flash message="{{ session('flash') }}"></flash>--}}
 </div>
