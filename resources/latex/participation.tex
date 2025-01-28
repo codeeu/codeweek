@@ -16,58 +16,55 @@
 \usepackage{paratype}
 \usepackage{tgpagella}
 
-
 \DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
-
 \definecolor{myorange}{RGB}{226, 83, 48}
 
 \newcommand\BackgroundPic{%
-\put(0,0){%
-\parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-\includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{images/participation-certificate-2025.png}%
-\vfill
+  \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering
+      \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/participation-certificate-2025.png}%
+      \vfill
 }}}
-
-
 
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 ~
-\vspace{2.2cm}
+\vspace{3.5cm}
 ~
 \begin{center}
-
-\vspace{5.9cm}
-
+\vspace{2cm}
 {\centering\fontsize{36}{48}\selectfont
 \begin{otherlanguage*}{russian}
 \textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
 \end{otherlanguage*}
 \par}
-
 \begin{table}[h]
 \footnotesize
-
 \begin{center}
-\fontsize{24}{36}\selectfont
+\fontsize{24}{31}\selectfont
 \vspace{1.6cm}
 \begin{otherlanguage*}{russian}
-\textcolor{myorange}{<EVENT_NAME>}
 \end{otherlanguage*}
 \end{center}
 \end{table}
-
-\end{center}
-\vspace{2.2cm}
+\begin{table}[h]
+\vspace{1.6cm}
 \begin{center}
+\fontsize{24}{31}\selectfont
+\textcolor{myorange}{<EVENT_NAME>}
+\end{center}
+\end{table}
+\end{center}
+\vspace{0cm}
+\begin{center}
+ 
 \hspace{-0.5cm}
 \begin{otherlanguage*}{russian}
+\vspace{0cm}
 \textcolor{black}{<EVENT_DATE>}
 \end{otherlanguage*}
-%\end{tabular}
-
 \end{center}
+
 \end{document}
