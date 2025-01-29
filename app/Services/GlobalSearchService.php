@@ -3,13 +3,27 @@
 namespace App\Services;
 
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 use App\Enums\GlobalSearchFiltersEnum;
-use App\ResourceItem;
-use App\StaticPage;
-use Illuminate\Support\Facades\Http;
 
 class GlobalSearchService
 {
+    protected string $jsonFile = 'data.json';
+
+    protected array $jsonData = [];
+
+    public function __construct()
+    {
+        $this->initData();
+    }
+
+    private function initData()
+    {
+        if (count($this->jsonData) == 0 && Storage::disk('storage')->exists($this->jsonFile)) {
+            $this->jsonData = json_decode(Storage::disk('storage')->get($this->jsonFile), true) ?? [];
+        };
+    }
+
     /**
      * Perform search based on filter string.
      *
@@ -19,6 +33,8 @@ class GlobalSearchService
      */
     public function search(string $filterKey, ?string $query = null): array
     {
+        $this->initData();
+
         $filter = GlobalSearchFiltersEnum::tryFrom($filterKey);
 
         if (!$filter) {
@@ -31,165 +47,67 @@ class GlobalSearchService
         }
 
         $meta = $filter->meta();
-
-        // Handle 'model' type search
-        if ($meta['type_search'] === 'model') {
-            return $this->searchModel(
-                $meta['model'],
-                $meta['search_fields'],
-                $meta['map_fields'],
-                $query,
-                $filterKey
-            );
-        }
-
-        if ($meta['type_search'] === 'function') {
-            return $this->{$meta['function']}(
-                $meta['params'],
-                $filterKey,
-                $meta['map_fields'],
-                $query
-            );
-        }
-
-        // Add more cases for other type_search in the future
-        Log::warning("Unsupported type_search: {$meta['type_search']}");
-        return [];
+        return $this->searchFromJson(
+            $meta['model'],
+            $meta['search_fields'],
+            $query,
+            $filterKey
+        );
     }
 
     /**
-     * Search in a model based on fields and query.
+     * Search in JSON data based on fields and query.
      *
      * @param string $modelClass
      * @param array $fields
-     * @param array $mapFields
      * @param string|null $query
      * @param ?string $filterKey
      * @return array
      */
-    protected function searchModel(
+    protected function searchFromJson(
         string $modelClass,
         array $fields,
-        array $mapFields,
         ?string $query,
         ?string $filterKey = null
     ): array {
-        if (!class_exists($modelClass)) {
-            Log::error("Model class does not exist: $modelClass");
-            return [];
-        }
-
-        // Perform the search
-        $results = $modelClass::query();
+        $results = collect($this->jsonData)
+            ->where('model', class_basename($modelClass));
 
         if ($filterKey == GlobalSearchFiltersEnum::OTHERS->value) {
             $results = $results->whereIn('category', ['General', 'Others']);
-        } else {
-            // Special case with StaticPage
-            if ($modelClass == "App\StaticPage" && $filterKey != null) {
-                $results = $results->where('unique_identifier', str_slug($filterKey))
-                    ->orWhere('category', $filterKey);
-            }
+        } else if ($filterKey == GlobalSearchFiltersEnum::LEARN->value) {
+            $results = $results->where('category', GlobalSearchFiltersEnum::LEARN->value);
+        } else if ($filterKey == GlobalSearchFiltersEnum::TEACH->value) {
+            $results = $results->where('category', GlobalSearchFiltersEnum::TEACH->value);
+        } elseif ($modelClass == "App\StaticPage" && $filterKey !== null) {
+            $results = $results->filter(function ($item) use ($filterKey) {
+                return str_slug($item['unique_identifier']) === str_slug($filterKey)
+                    || $item['category'] === $filterKey;
+            });
         }
 
-        $results = $results->when($query, function ($queryBuilder) use ($fields, $query) {
-            $queryBuilder->where(function ($q) use ($fields, $query) {
+        if ($query) {
+            $results = $results->filter(function ($item) use ($fields, $query) {
                 foreach ($fields as $field) {
-                    $q->orWhere($field, 'like', "%$query%");
+                    if (stripos($item[$field] ?? '', $query) !== false) {
+                        return true;
+                    }
                 }
-            });
-        })
-            ->get();
-
-        // Format the results
-        $data = $results->map(function ($item) use ($mapFields) {
-            $mappedResult = [];
-            foreach ($mapFields as $key => $mapping) {
-                if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
-                    $field = $matches[1];
-                    $mappedResult[$key] = isset($item->{$field}) ? $this->formatString($item->{$field}) : '';
-                } else {
-                    $mappedResult[$key] = $mapping;
-                }
-            }
-            return $mappedResult;
-        })->toArray();
-
-        if($filterKey == GlobalSearchFiltersEnum::PODCASTS->value) {
-            if ($query) {
-                $staticPageObj = StaticPage::where('unique_identifier', 'podcasts')
-                    ->where(function ($q) use ($query) {
-                        $q->where('name', 'like', "%$query%")
-                          ->orWhere('description', 'like', "%$query%");
-                    })->first();
-            } else {
-                $staticPageObj = StaticPage::where('unique_identifier', 'podcasts')->first();
-            }
-        
-            if ($staticPageObj) {
-                $staticPage = [
-                    [
-                        'name' => $staticPageObj->name,
-                        'category' => $staticPageObj->category,
-                        'description' => $staticPageObj->description,
-                        'thumbnail' => $staticPageObj->thumbnail,
-                        'path' => $staticPageObj->path,
-                        'link_type' => $staticPageObj->link_type,
-                        'language' => 'en'
-                    ]
-                ];
-                $data = collect($staticPage)->merge($data)->unique('path')->toArray();
-            }
-        }
-
-        return $data;
-    }
-
-    /**
-     * Search resources dynamically based on section with mapping fields.
-     *
-     * @param array $params
-     * @param string $filterKey
-     * @param array $mapFields
-     * @param string|null $query
-     * 
-     * @return array
-     */
-    protected function searchResources(
-        array $params,
-        string $filterKey,
-        array $mapFields,
-        ?string $query = null
-    ): array {
-        $section = $params['section'] ?? null;
-
-        if (!$section) {
-            Log::error("Missing 'section' in params for searchResources.");
-            return [];
-        }
-
-        $resources = ResourceItem::where(strtolower($section), '=', true);
-
-        if ($query && isset($params['search_fields']) && is_array($params['search_fields'])) {
-            $resources = $resources->where(function ($queryBuilder) use ($params, $query) {
-                foreach ($params['search_fields'] as $field) {
-                    $queryBuilder->orWhere($field, 'like', '%' . $query . '%');
-                }
+                return false;
             });
         }
 
-        return $resources->get()->map(function ($item) use ($mapFields) {
-            $mappedResult = [];
-            foreach ($mapFields as $key => $mapping) {
-                if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
-                    $field = $matches[1];
-                    $mappedResult[$key] = isset($item->{$field}) ? $this->formatString($item->{$field}) : '';
-                } else {
-                    $mappedResult[$key] = $mapping;
-                }
+        if ($filterKey === GlobalSearchFiltersEnum::PODCASTS->value) {
+            $staticPodcast = collect($this->jsonData)->firstWhere('unique_identifier', 'podcasts');
+
+            if ($staticPodcast && (!$query || stripos($staticPodcast['name'] . ' ' . $staticPodcast['description'], $query) !== false)) {
+                $results->prepend($staticPodcast);
             }
-            return $mappedResult;
-        })->toArray();
+        }
+
+        return $results->map(function ($item) {
+            return collect($item)->map(fn($value) => is_string($value) ? $this->formatString($value) : $value)->toArray();
+        })->sortByDesc('created_at')->toArray();
     }
 
     /**
@@ -208,21 +126,12 @@ class GlobalSearchService
             }
 
             $meta = $filter->meta();
-
-            if ($meta['type_search'] === 'model') {
-                $modelResults = $this->searchModel($meta['model'], $meta['search_fields'], $meta['map_fields'], $query);
-                $results = $results->merge($modelResults)->unique('path');
-            }
-
-            if ($meta['type_search'] === 'function') {
-                $functionResults = $this->{$meta['function']}(
-                    $meta['params'],
-                    $filter->value,
-                    $meta['map_fields'],
-                    $query
-                );
-                $results = $results->merge($functionResults);
-            }
+            $modelResults = $this->searchFromJson(
+                $meta['model'],
+                $meta['search_fields'],
+                $query
+            );
+            $results = $results->merge($modelResults)->unique('path');
         }
 
         return $results->toArray();
