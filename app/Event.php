@@ -77,10 +77,18 @@ class Event extends Model
     //protected $appends = ['LatestModeration'];
 
     public function getUrlAttribute() {
-        return route('view_event', [
-            'event' => $this->id,
-            'slug' => $this->slug
-        ]);
+        if (!empty($this->slug)) {
+            return route('view_event', [
+                'event' => $this->id,
+                'slug' => $this->slug
+            ]);
+        }
+
+        if (!empty($this->event_url)) {
+            return $this->event_url;
+        }
+
+        return url('/events');
     }
 
     public function getPicturePathAttribute() {
