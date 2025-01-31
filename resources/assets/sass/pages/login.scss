@@ -95,8 +95,6 @@
   height: 100%;
   padding: 80px 150px;
   margin: 0 !important;
-   max-height: 850px;
-  
 }
 
 .codeweek-content-wrapper-inside {
@@ -156,14 +154,17 @@
   align-items: center;
 }
 
-.separator-text{
+.separator-text {
+  color: var(--Slate-500, #333E48);
+  font-family: Blinker;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
 }
 
 .codeweek-form-field-wrapper label {
+  font-family: Blinker;
   color: var(--Slate-500, #333E48);
   font-size: 20px;
   font-style: normal;
@@ -181,6 +182,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  font-family: Blinker;
 }
 
 .errors {
@@ -204,6 +206,7 @@
   display: flex;
   align-items: center;
   text-transform: none;
+  font-family: Blinker;
 }
 
 .codeweek-form-field-checkbox input {
@@ -235,6 +238,7 @@
 .login-other-actions a {
   color: var(--Dark-Blue-500, #1C4DA1);
   text-align: right;
+  font-family: Blinker;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -263,6 +267,27 @@
   font-weight: bold;
   border-bottom: 3px solid #1C4DA1;
 }
+.reset_title {
+  color: var(--Dark-Blue-500, #1C4DA1);
+
+  /* Display md/Montserrat Medium */
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -0.72px;
+}
+.reset_description {
+  color: var(--Slate-500, #333E48);
+
+  /* Text xl/Blinker Regular */
+  font-family: Blinker;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
 
 @media screen and (max-width: 1080px) {
   .reset_title {
@@ -277,6 +302,7 @@
     }
 
   .reset_description {
+    font-family: Blinker;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -296,6 +322,14 @@
     background-color: #fff;
     border-radius: 32px;
   }
+  .codeweek-form-field {
+    display: flex    ;
+    justify-content: center;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .codeweek-form-field, .codeweek-form-field-searchable {
     display: flex;
     justify-content: stretch;
