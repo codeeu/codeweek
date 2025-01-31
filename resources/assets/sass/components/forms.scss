@@ -140,8 +140,9 @@
 .codeweek-form-field{
   display: flex;
   justify-content: stretch;
-  flex:1;
-  align-items: center;
+  flex: 1;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .codeweek-form-field-searchable{
