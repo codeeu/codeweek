@@ -9,18 +9,19 @@
                 <a href="#" id="register-tab" class="tab">@lang('login.register')</a>
             </div>
 
-            <div class="social-icons">
-                    <a href="/login/twitter"><img src="/images/twitter-icon.svg" alt="Twitter"></a>
-                    <a href="/login/github"><img src="/images/github-icon.svg" alt="Google"></a>
-                    <a href="/login/facebook"><img src="/images/facebook-icon.svg" alt="Facebook"></a>
-                    <a href="/login/google"><img src="/images/google-icon.svg" alt="Google"></a>
-                </div>
+            <div class="social-media-buttons">
+                <a href="/login/twitter"><img src="/images/twitter-icon.svg" alt="Twitter"  class="codeweek-action-link-button twitter"></a>
+                <a href="/login/github"><img src="/images/github-icon.svg" alt="Google" class="codeweek-action-link-button github"></a>
+                <a href="/login/facebook"><img src="/images/facebook-icon.svg" alt="Facebook" class="codeweek-action-link-button facebook"></a>
+                <a href="/login/google"><img src="/images/google-icon.svg" alt="Google" class="codeweek-action-link-button google"></a>
+            </div>
 
                 <div class="separator-line">
                     <div class="line"></div>
                     <span class="separator-text">OR</span>
                     <div class="line"></div>
                 </div>
+                
                 
             <!-- Login Form -->
             <div id="login-form">
@@ -58,28 +59,64 @@
 
             <!-- Register Form -->
             <div id="register-form" class="hidden">
-                <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('register') }}">
                     @csrf
                     @honeypot
 
                     <div class="codeweek-form-field-wrapper">
-                        <label for="name">@lang('login.name')</label>
-                        <input id="name" type="text" name="name" value="{{ old('name') }}" required>
+                        <div class="codeweek-form-field">
+                            <label for="name">@lang('login.name')</label>
+                            <input id="name" type="text" name="name"
+                                   value="{{old('name')}}" required>
+                        </div>
+                        <div class="errors">
+                            @component('components.validation-errors', ['field'=>'name'])@endcomponent
+                        </div>
                     </div>
 
                     <div class="codeweek-form-field-wrapper">
-                        <label for="email">@lang('login.email')</label>
-                        <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
+                        <div class="codeweek-form-field">
+                            <label for="email">@lang('login.email')</label>
+                            <input id="email" type="email" name="email"
+                                   value="{{old('email')}}" required autofocus>
+                        </div>
+                        <div class="errors">
+                            @component('components.validation-errors', ['field'=>'email'])@endcomponent
+                        </div>
+                    </div>
+
+
+                    <div class="codeweek-form-field-wrapper">
+                        <div class="codeweek-form-field">
+                            <label for="email">@lang('login.password')</label>
+                            <input id="password" type="password" name="password"
+                                   value="{{old('password')}}" required>
+                        </div>
+                        <div class="errors">
+                            @component('components.validation-errors', ['field'=>'password'])@endcomponent
+                        </div>
                     </div>
 
                     <div class="codeweek-form-field-wrapper">
-                        <label for="password">@lang('login.password')</label>
-                        <input id="password" type="password" name="password" required>
+                        <div class="codeweek-form-field">
+                            <label for="email">@lang('login.confirm_password')</label>
+                            <input id="password-confirm" type="password" name="password_confirmation" required>
+                        </div>
+                        <div class="errors">
+                            @component('components.validation-errors', ['field'=>'password-confirm'])@endcomponent
+                        </div>
                     </div>
 
-                    <div class="codeweek-form-field-wrapper">
-                        <label for="password-confirm">@lang('login.confirm_password')</label>
-                        <input id="password-confirm" type="password" name="password_confirmation" required>
+                    <div class="codeweek-form-field-privacy">
+                        <label>
+                            <input id="checkPrivacy" name="privacy" type="checkbox">
+                            @lang('event.privacy')
+                            <a href="{{route('privacy-contact-points')}}" target="_blank">
+                                <img src="/images/external-link.svg" width="16" class="static-image">
+                            </a>
+                        </label>
+                        @component('components.validation-errors', ['field'=>'privacy'])
+                        @endcomponent
                     </div>
 
                     <div class="codeweek-form-button-container">
@@ -87,6 +124,7 @@
                             <input type="submit" value="@lang('login.register')">
                         </div>
                     </div>
+
                 </form>
             </div>
         </div>

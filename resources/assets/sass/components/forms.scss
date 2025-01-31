@@ -278,8 +278,12 @@
   width: auto;
   text-align: left;
 }
-
-.codeweek-form-field-privacy,
+.codeweek-form-field-privacy{
+  display: flex;
+  justify-content: left;
+  flex: 1;
+  width: 100%;
+}
 .codeweek-form-field-checkbox{
   display: flex;
   justify-content: left;

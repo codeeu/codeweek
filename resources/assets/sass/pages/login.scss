@@ -4,7 +4,9 @@
 }
 #codeweek-login-page .codeweek-content-wrapper-inside .social-media-buttons{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
 }
 #codeweek-login-page .codeweek-content-wrapper-inside .social-media-buttons .codeweek-action-link-button{
   text-transform: none;
@@ -57,35 +59,6 @@
 
 #codeweek-login-page .social-media-buttons .codeweek-action-link-button{
   display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  font-size: 24px;
-  font-weight: normal;
-  height: 80px;
-}
-#codeweek-login-page .social-media-buttons .codeweek-action-link-button svg,
-#codeweek-login-page .social-media-buttons .codeweek-action-link-button img{
-  height: 50px;
-  fill: white;
-  margin-right: 30px;
-  border-right: 1px solid;
-  padding-right: 10px;
-}
-
-#codeweek-login-page .social-media-buttons .codeweek-action-link-button.github{
-  background-color: #8f7ba1;
-}
-#codeweek-login-page .social-media-buttons .codeweek-action-link-button.twitter{
-  background-color: #000000;
-}
-#codeweek-login-page .social-media-buttons .codeweek-action-link-button.facebook{
-  background-color: #4267b2;
-}
-#codeweek-login-page .social-media-buttons .codeweek-action-link-button.google{
-  background-color: #db3236;
-}
-#codeweek-login-page .social-media-buttons .codeweek-action-link-button.azure{
-  background-color: #0072c6;
 }
 
 #codeweek-login-page .login-other-actions{
