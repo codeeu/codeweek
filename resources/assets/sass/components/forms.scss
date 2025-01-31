@@ -199,9 +199,7 @@
 
 .codeweek-form-field label{
   margin-right: 10px;
-  text-transform: uppercase;
-  width: 120px;
-  text-align: right;
+  text-align: left;
 }
 
 .codeweek-form-field.align-flex-start label{
@@ -289,7 +287,7 @@
   justify-content: left;
   flex: 1;
   width: 100%;
-  padding: 20px;
+  padding: 24px 0;
 }
 .codeweek-form-button-container{
   display: flex;
