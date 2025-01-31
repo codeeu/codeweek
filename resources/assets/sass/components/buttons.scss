@@ -18,21 +18,21 @@
   font-weight: bold;
 }
 .codeweek-button input{
-  cursor: pointer;
-  height: 100%;
-  padding: 0 25px;
-  border-radius: 29px;
-  background-color: $main-color;
-  color: $main-color4;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  min-height: 57px;
+  border-radius: 100px;
+  background: var(--Orange-500, #F95C22);
+  color: var(--Slate-600, #20262C);
+  font-family: Blinker;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  gap: 8px;
+  line-height: 28px;
+  text-transform: capitalize;
 }
 .codeweek-button input:hover,
 .codeweek-action-button:hover,
 .codeweek-image-button:hover{
-  background-color: #f15d22;
+  background-color: #FEDED3
 }
 .codeweek-blank-button{
   border: 1px solid #707070;
