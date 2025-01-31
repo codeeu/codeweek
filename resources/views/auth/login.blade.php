@@ -110,10 +110,8 @@
                     <div class="codeweek-form-field-privacy">
                         <label>
                             <input id="checkPrivacy" name="privacy" type="checkbox">
-                            @lang('event.privacy')
-                            <a href="{{route('privacy-contact-points')}}" target="_blank">
-                                <img src="/images/external-link.svg" width="16" class="static-image">
-                            </a>
+                            @lang('event.privacy_login')
+                            <a href="{{route('privacy-contact-points')}}" target="_blank">privacy policy</a>
                         </label>
                         @component('components.validation-errors', ['field'=>'privacy'])
                         @endcomponent

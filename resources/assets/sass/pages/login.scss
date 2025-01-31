@@ -32,6 +32,9 @@
 #codeweek-login-page .codeweek-button{
   display:flex;
   flex:1;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 24px;
 }
 #codeweek-login-page .codeweek-button input{
   flex:1;
