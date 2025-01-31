@@ -1,18 +1,13 @@
 @extends('layout.base')
 
 @section('content')
-    <section id="codeweek-forgotpassword-page" class="codeweek-page">
-
-        <section class="codeweek-banner simple">
-            <div class="text">
-                <h2>#EUCodeWeek</h2>
-                <h1>@lang('login.reset')</h1>
-            </div>
-        </section>
-
+    <section id="codeweek-forgotpassword-page" class="codeweek-page" class="codeweek-page" style="background-image: url('/images/header_background.png'); background-size: cover; background-position: center right; max-height: 200vh; display: flex; justify-content: center; align-items: center;">
         <section class="codeweek-content-wrapper">
 
-            <section class="codeweek-content-wrapper-inside">
+            <section class="codeweek-content-wrapper-inside" >
+
+                <div class="reset_title">@lang('login.resetpage_title')</div>
+                <div class="reset_description">@lang('login.resetpage_description')</div>
                 <form method="POST" action="{{ route('password.email') }}">
                     @csrf
 

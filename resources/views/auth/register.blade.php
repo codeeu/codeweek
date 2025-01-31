@@ -1,16 +1,10 @@
 @extends('layout.base')
 
 @section('content')
-    <section id="codeweek-register-page" class="codeweek-page">
+    <section id="codeweek-register-page" class="codeweek-page" style="background-image: url('/images/header_background.png'); 
+        background-position: center right">
 
-        <section class="codeweek-banner simple">
-            <div class="text">
-                <h2>#EUCodeWeek</h2>
-                <h1>@lang('login.register')</h1>
-            </div>
-        </section>
-
-        <section class="codeweek-content-wrapper">
+            <section class="codeweek-content-wrapper">
 
             <section class="codeweek-content-wrapper-inside">
                 <form method="POST" action="{{ route('register') }}">
