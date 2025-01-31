@@ -3,7 +3,7 @@
 @section('content')
     <section id="codeweek-privacy-page" class="codeweek-page">
 
-        <section class="codeweek-content-wrapper py-12">
+        <section class="py-12 codeweek-content-wrapper">
 
             <h1 id="-protection-of-your-personal-data-"><strong>PROTECTION OF YOUR PERSONAL DATA</strong></h1>
             <p><strong>This privacy statement provides information about the processing and the protection of your personal
@@ -12,8 +12,11 @@
                 Coordinators and handling of registered activities on the website</p>
             <p><strong>Data Controller:</strong> </p>
             <p>JA Europe, coordinator for the Code4Europe consortium[^1] (hereafter referred to as ‘Code4Europe’).</p>
-            <p><strong>Data processor</strong>: Amazon Web Services EMEA SARL (AWS) (38 avenue John F. Kennedy, L-1855
-                Luxembourg, Luxembourg) )</p>
+            <p><strong>Data processors</strong>: 
+                <p>European Commission, Directorate General for Communications Networks, Content and Technology, Unit G.2
+</p>
+                <p>Amazon Web Services EMEA SARL (AWS) (38 avenue John F. Kennedy, L-1855
+        Luxembourg, Luxembourg) )</p>
             <p><strong>Record reference:</strong> DPR-EC-02631</p>
             <p><strong>Table of Contents</strong></p>
                <ol class="pb-6">
