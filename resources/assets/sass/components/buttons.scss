@@ -31,7 +31,6 @@
 }
 .codeweek-button input:hover,
 .codeweek-action-button:hover,
-.codeweek-action-link-button:hover,
 .codeweek-image-button:hover{
   background-color: #f15d22;
 }
@@ -95,15 +94,6 @@
 
 .codeweek-action-link-button{
   cursor: pointer;
-  padding: 9px 25px;
-  border-radius: 10px;
-  background-color: $main-color;
-  color: $main-color4;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  min-height: 40px;
-  z-index: 10;
 }
 
 .codeweek-image-button{
