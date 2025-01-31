@@ -28,8 +28,6 @@
 #codeweek-login-page .codeweek-form-field label{
   width: auto;
   text-align: left;
-  margin-left: 20px;
-  margin-bottom: 10px;
 }
 #codeweek-login-page .codeweek-button{
   display:flex;
@@ -183,6 +181,7 @@
   font-weight: 400;
   line-height: 30px;
   font-family: Blinker;
+  margin-top: 8px;
 }
 
 .errors {
@@ -223,13 +222,16 @@
 }
 
 .codeweek-button input {
-  cursor: pointer;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 24px;
-  background-color: #337ab7;
-  color: white;
+  border-radius: 100px;
+  background: var(--Orange-500, #F95C22);
+  color: var(--Slate-600, #20262C);
+  font-family: Blinker;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  gap: 8px;
+  line-height: 28px;
+  text-transform: capitalize;
 }
 .codeweek-button {
   max-width: 150px;
