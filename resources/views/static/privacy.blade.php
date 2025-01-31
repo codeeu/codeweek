@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('content')
-    <section id="codeweek-privacy-page" class="codeweek-page py-12">
+    <section id="codeweek-privacy-page" class="py-12 codeweek-page">
 
         <section class="codeweek-content-wrapper" style="margin-top: 0;">
             <h1><strong>PROTECTION OF YOUR PERSONAL DATA</strong></h1>
@@ -9,8 +9,10 @@
                 by its visitors and the users of its contact form</p>
             <p><strong>Data Controller:</strong> </p>
             <p>JA Europe, coordinator for the Code4Europe consortium[^1] (hereafter referred to as ‘Code4Europe’).</p>
-            <p><strong>Data processor</strong>: Amazon Web Services EMEA SARL (AWS) (38 avenue John F. Kennedy, L-1855
+            <p><strong>Data processors</strong>: 
+                <p>Amazon Web Services EMEA SARL (AWS) (38 avenue John F. Kennedy, L-1855
                 Luxembourg, Luxembourg). </p>
+            <p>European Commission, Directorate General for Communications Networks, Content and Technology, Unit G.2</p>
             <p><strong>Record reference:</strong> DPR-EC-09706.</p>
             <p><strong>Table of Contents</strong></p>
             <ol class="pb-6">
