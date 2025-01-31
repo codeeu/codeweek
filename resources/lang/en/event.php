@@ -144,7 +144,8 @@ return [
 
     'More' => 'More',
     'country' => 'Country',
-    'privacy' => 'I agree with the handling of my data in accordance with the company privacy policy.',
+    'privacy' => 'I have read and agree with the privacy policy terms described in this document.',
+    'privacy_login' => 'I agree with the handling of my data in accordance with the company privacy policy.',
     'loading' => 'Loading...',
     'add_activity' => 'Add activity',
     'edit_activity' => 'Edit activity',
