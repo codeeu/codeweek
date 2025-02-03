@@ -113,3 +113,11 @@ footer .social-media-buttons .social-network a{
     padding: 0px 50px;
   }
 }
+
+#footer-scroll-activity {
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+#footer-scroll-activity.visible {
+  transform: translateY(0);
+}
