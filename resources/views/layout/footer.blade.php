@@ -96,7 +96,7 @@
             </div>
         </div>
     </div>
-    <div class="codeweek-container-lg py-8 xl:py-4 flex flex-col xl:flex-row gap-8 justify-between">
+    <div class="codeweek-container-lg pt-8 pb-20 md:pb-8 xl:py-4 flex flex-col xl:flex-row gap-8 justify-between">
         <ul class="m-0 p-0 flex-shrink-0 flex flex-col items-start xl:items-center xl:flex-row gap-4 xl:gap-10">
             <li>
                 <a href="/privacy" class="cookweek-link hover-underline !text-sm">Privacy Policy</a>
@@ -124,15 +124,42 @@
     >
       <img class="icon-rotate-270" src="/images/arrow-up-icon.svg" />
     </div>
+
+    <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
+        @if (Auth::check())
+            <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="/add">
+                <span class="text-[16px] leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
+            </a>
+        @else
+            <a class="border-2 border-[#1C4DA1] hover:bg-[#E8EDF6] duration-300 !text-[#1C4DA1] rounded-full px-6 py-[7px] w-full text-center" href="/login">
+                <span class="text-[16px] leading-[30px] font-semibold">
+                    @lang('menu.login') / @lang('menu.signup')
+                </span>
+            </a>
+        @endif
+    </div>
 </footer>
 
 @push('scripts')
 <script type="text/javascript">
-// Scroll Top
+  // Scroll Top
   const scrollTopBtn = document.getElementById("scroll-top-btn");
 
   scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // toggle bottom sticky bar when scroll on mobile
+  const scrollFooterActivity = document.getElementById('footer-scroll-activity');
+
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > 0) {
+      scrollFooterActivity.classList.add('visible');
+    } else {
+      scrollFooterActivity.classList.remove('visible');
+    }
   });
 </script>
 @endpush
