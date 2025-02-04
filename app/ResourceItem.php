@@ -75,8 +75,8 @@ class ResourceItem extends Model
     public function getThumbnailAttribute($value)
     {
 
-        if (! strncmp($value, 'http', 4) === 0) {
-            return config('codeweek.resources_url') + $value;
+        if (strncmp($value, 'http', 4) !== 0) {
+            return config('codeweek.resources_url') . $value;
         }
 
         return $value;
