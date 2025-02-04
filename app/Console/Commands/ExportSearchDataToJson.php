@@ -120,6 +120,9 @@ class ExportSearchDataToJson extends Command
      */
     public function handle()
     {
+        set_time_limit(0);
+        ini_set('memory_limit', '-1');
+        
         $jsonFile = 'data.json';
         $existingData = [];
 
@@ -145,31 +148,33 @@ class ExportSearchDataToJson extends Command
             }
 
             if ($mapFields['category'] == 'Learn' || $mapFields['category'] == 'Teach') {
-                $records = $modelClass::where(strtolower($mapFields['category']), '=', true)->get();
+                $query = $modelClass::where(strtolower($mapFields['category']), '=', true);
             } else {
-                $records = $modelClass::all();
+                $query = $modelClass::query();
             }
 
-            foreach ($records as $record) {
-                $mappedResult = ['model' => class_basename($modelClass)];
-                foreach ($mapFields as $key => $mapping) {
-                    if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
-                        $field = $matches[1];
-                        $mappedResult[$key] = isset($record->{$field}) ? $record->{$field} : '';
+            $query->chunk(100, function ($records) use (&$newDataMapped, $mapFields, $existingDataMapped, $modelClass) {
+                foreach ($records as $record) {
+                    $mappedResult = ['model' => class_basename($modelClass)];
+                    foreach ($mapFields as $key => $mapping) {
+                        if (preg_match('/^{(.+)}$/', $mapping, $matches)) {
+                            $field = $matches[1];
+                            $mappedResult[$key] = isset($record->{$field}) ? $record->{$field} : '';
+                        } else {
+                            $mappedResult[$key] = $mapping;
+                        }
+                    }
+                    $mappedResult['created_at'] = (new Carbon($mappedResult['created_at']))->format('Y-m-d H:i:s');
+
+                    $uniqueKey = $mappedResult['path'] . '_' . $mappedResult['model'] . '_' . $mappedResult['category'];
+
+                    if (isset($existingDataMapped[$uniqueKey])) {
+                        $existingDataMapped[$uniqueKey] = $mappedResult;
                     } else {
-                        $mappedResult[$key] = $mapping;
+                        $newDataMapped[$uniqueKey] = $mappedResult;
                     }
                 }
-                $mappedResult['created_at'] = (new Carbon($mappedResult['created_at']))->format('Y-m-d H:i:s');
-
-                $uniqueKey = $mappedResult['path'] . '_' . $mappedResult['model'] . '_' . $mappedResult['category'];
-
-                if (isset($existingDataMapped[$uniqueKey])) {
-                    $existingDataMapped[$uniqueKey] = $mappedResult;
-                } else {
-                    $newDataMapped[$uniqueKey] = $mappedResult;
-                }
-            }
+            });
         }
 
         $mergedData = array_merge($existingDataMapped, $newDataMapped);
