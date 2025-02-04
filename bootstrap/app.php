@@ -26,7 +26,6 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->append([
             \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-            \Spatie\CookieConsent\CookieConsentMiddleware::class,
         ]);
 
         $middleware->web([
