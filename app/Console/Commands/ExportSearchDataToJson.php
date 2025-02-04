@@ -35,7 +35,7 @@ class ExportSearchDataToJson extends Command
                 'name' => '{title}',
                 'category' => 'Podcast',
                 'description' => '{description}',
-                'thumbnail' => '{image}',
+                'thumbnail' => '{url_image}',
                 'path' => '{url}',
                 'link_type' => 'internal',
                 'language' => 'en',
