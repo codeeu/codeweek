@@ -17,6 +17,10 @@ class Podcast extends Model implements Feedable
         return route('podcast', ['podcast' => $this->id]);
     }
 
+    public function getUrlImageAttribute() {
+        return 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/' . $this->image;
+    }
+
     protected function casts(): array
     {
         return [
