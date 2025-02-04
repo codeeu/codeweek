@@ -19,7 +19,7 @@ enum GlobalSearchFiltersEnum: string
     case LEARN = 'Learn';
     case TEACH = 'Teach';
     case PRESENTATIONS_AND_TOOLKITS = 'Presentations and Toolkits';
-    case ACTIVITIES = 'Activities';
+    // case ACTIVITIES = 'Activities';
     case BLOGS = 'Blogs';
     case OTHERS = 'Others';
 
@@ -82,14 +82,14 @@ enum GlobalSearchFiltersEnum: string
                     'description',
                 ],
             ],
-            self::ACTIVITIES => [
-                'type_search' => 'model',
-                'model' => Event::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
-            ],
+            // self::ACTIVITIES => [
+            //     'type_search' => 'model',
+            //     'model' => Event::class,
+            //     'search_fields' => [
+            //         'name',
+            //         'description',
+            //     ],
+            // ],
         };
     }
 
