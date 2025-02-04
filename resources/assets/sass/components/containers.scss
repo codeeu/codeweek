@@ -213,10 +213,16 @@
     margin: 0px 100px 0 100px;
   }
   .codeweek-content-wrapper-inside{
-    margin: 15px 115px;
+    margin: 15px 55px;
   }
   .community_type {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .codeweek-content-wrapper-inside{
+    margin: 15px 115px;
   }
 }
 

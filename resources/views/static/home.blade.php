@@ -110,7 +110,7 @@
                     <div class="flex flex-col xl:flex-row gap-4">
                         <a
                           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                          href="/toolkits"
+                          href="/guide"
                         >
                             <span>@lang('home.toolkits_button1')</span>
                             <div class="flex gap-2 w-4 overflow-hidden">
