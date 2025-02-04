@@ -99,20 +99,20 @@ class ExportSearchDataToJson extends Command
                 'created_at' => '{date}',
             ]
         ],
-        [
-            'model' => Event::class,
-            'map_fields' => [
-                'name' => '{title}',
-                'category' => 'Activities',
-                'description' => '{description}',
-                'thumbnail' => '{picture_path}',
-                'path' => '{url}',
-                'link_type' => 'internal',
-                'language' => 'en',
-                'unique_identifier' => '',
-                'created_at' => '{created_at}',
-            ]
-        ],
+        // [
+        //     'model' => Event::class,
+        //     'map_fields' => [
+        //         'name' => '{title}',
+        //         'category' => 'Activities',
+        //         'description' => '{description}',
+        //         'thumbnail' => '{picture_path}',
+        //         'path' => '{url}',
+        //         'link_type' => 'internal',
+        //         'language' => 'en',
+        //         'unique_identifier' => '',
+        //         'created_at' => '{created_at}',
+        //     ]
+        // ],
     ];
 
     /**
@@ -122,7 +122,7 @@ class ExportSearchDataToJson extends Command
     {
         set_time_limit(0);
         ini_set('memory_limit', '-1');
-        
+
         $jsonFile = 'data.json';
         $existingData = [];
 
