@@ -26,6 +26,7 @@
                         class="w-12 h-12 text-xl hover:bg-[#1C4DA1]/10 rounded {{ $page == $paginator->currentPage() ? 'font-normal text-[#333E48]' : 'font-bold text-[#1C4DA1] underline' }} {{ $loop->index >= 3 ? 'max-md:hidden' : '' }}"
                         aria-current="{{ $page == $paginator->currentPage() ? 'step' : '' }}" 
                         aria-label="Step {{ $page }}"
+                        onclick="window.scroll(0, 0)"
                         wire:click="gotoPage({{ $page }}, '{{ $paginator->getPageName() }}')">
                         {{ $page }}
                     </button>
