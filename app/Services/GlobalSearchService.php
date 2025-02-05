@@ -21,6 +21,12 @@ class GlobalSearchService
     {
         if (count($this->jsonData) == 0 && Storage::disk('storage')->exists($this->jsonFile)) {
             $this->jsonData = json_decode(Storage::disk('storage')->get($this->jsonFile), true) ?? [];
+            
+            if (empty($this->jsonData)) {
+                Log::warning("JSON file exists but contains no valid data.");
+            } else {
+                Log::info("Loaded JSON data: " . count($this->jsonData) . " records.");
+            }
         };
     }
 
@@ -34,6 +40,16 @@ class GlobalSearchService
     public function search(string $filterKey, ?string $query = null): array
     {
         $this->initData();
+
+        Log::info("Executing search", [
+            'filterKey' => $filterKey,
+            'query' => $query
+        ]);
+
+        if (empty($this->jsonData)) {
+            Log::warning("No data available in JSON for searching.");
+            return [];
+        }
 
         $filter = GlobalSearchFiltersEnum::tryFrom($filterKey);
 
