@@ -46,7 +46,6 @@ class Thueringen extends Command
 
         $items = ThueringenRSSItem::whereNull('imported_at')->get(); 
 
-
         foreach ($items as $item) {
 
             $item->createEvent($techicalUser);
