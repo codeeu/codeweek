@@ -12,16 +12,16 @@
 
 
         <section class="flex flex-row justify-between" style="background-color: #3EB4D0">
-            <div class="flex justify-center items-center w-full">
-                <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-black"
+            <div class="flex items-center justify-center w-full">
+                <div class="m-12 text-center">
+                    <div class="w-full text-xl text-white"><a class="text-black"
                                                               href="{{route('challenges')}}">@lang('challenges.title')</a>
                     </div>
-                    <div class="text-5xl mt-2" style="color: #ffffff">@lang("challenges-content.$slug.title")</div>
+                    <div class="mt-2 text-5xl" style="color: #ffffff">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
-            <div class="md:w-10/12 md:flex hidden">
+            <div class="hidden md:w-10/12 md:flex">
                 <img src="{{asset('img/2021/challenges/thumbnails/'.$slug.'.png')}}">
 
 
@@ -34,12 +34,12 @@
 
                 @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
 
-                <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
+                <section class="grid grid-cols-1 gap-6 mx-6 my-4 md:grid-cols-4">
 
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
-                        <ol class="list-disc ml-5">
+                        <ol class="ml-5 list-disc">
                             <li>@lang('challenges-content.common.audience.1')</li>
                             <li>@lang('challenges-content.common.audience.2')</li>
                         </ol>
@@ -49,7 +49,7 @@
                     <div>
 
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
-                        <ol class="list-disc ml-5">
+                        <ol class="ml-5 list-disc">
                             <li>@lang("challenges-content.$slug.purposes.0")</li>
                             <li>@lang("challenges-content.$slug.purposes.1")</li>
                             <li>@lang("challenges-content.$slug.purposes.2")</li>
@@ -60,30 +60,30 @@
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
-                        <ol class="list-disc ml-5">
+                        <ol class="ml-5 list-disc">
                             <li>@lang("challenges-content.$slug.duration")</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
-                        <ol class="list-disc ml-5">
+                        <ol class="ml-5 list-disc">
                             <li>@lang('challenges.common.intermediate')</li>
                         </ol>
                     </div>
 
                 </section>
 
-                <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
+                <section class="grid grid-cols-1 gap-6 mx-6 my-4 md:grid-cols-4">
 
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
-                        <ol class="list-disc ml-5">
+                        <ol class="ml-5 list-disc">
                             <li><a href="https://scratch.mit.edu/download/scratch-link">Scratch Link</a></li>
                             <li><a href="https://scratch.mit.edu/">Scratch online</a></li>
                             <li>
-                                <a href="https://www.lego.com/en-us/kids/games/boost/lego-boost-03c8a71ab07a428fba9fa3b460b387b2">Android
+                                <a href="https://play.google.com/store/apps/details?id=com.lego.boost.boost&hl=en">Android
                                     App LegoBoost</a></li>
                         </ol>
                     </div>
@@ -92,10 +92,10 @@
                 </section>
 
 
-                <div class="leading-6 text-base text-left">
+                <div class="text-base leading-6 text-left">
 
-                    <section class="bg-blue-100 p-2 mt-6">
-                        <div class="orange text-3xl mt-2">
+                    <section class="p-2 mt-6 bg-blue-100">
+                        <div class="mt-2 text-3xl orange">
                             @lang('challenges.common.description')
                         </div>
 
@@ -108,8 +108,8 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
-                            <ul class="leading-7 ml-2 checklist mt-2">
+                            <div class="mt-6 text-3xl orange">@lang('challenges.common.instructions')</div>
+                            <ul class="mt-2 ml-2 leading-7 checklist">
 
 
                                 <li>@lang("challenges-content.$slug.instructions.0")</li>
@@ -130,7 +130,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
+                        <div class="text-3xl orange">@lang('challenges.common.example')</div>
 
                         <div class="mt-2">
                             <a href="https://scratch.mit.edu/projects/896188895/editor/">https://scratch.mit.edu/projects/896188895/editor/</a>

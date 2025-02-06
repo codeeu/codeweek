@@ -1,6 +1,6 @@
 <section class="flex flex-wrap items-center justify-center gap-2 font-['Blinker']" aria-label="Numbered steps">
     <button
-        class="p-4 rounded-full bg-[#FFD700] hover:bg-primary/50 cursor-pointer"
+        class="p-4 rounded-full bg-yellow hover:bg-primary duration-300 cursor-pointer"
         aria-label="Previous step"
         @if (!$paginator->onFirstPage())
             wire:click="previousPage('{{ $paginator->getPageName() }}')"
@@ -23,9 +23,10 @@
             @if (is_array($element))
                 @foreach ($element as $page => $url)
                     <button 
-                        class="w-8 h-8 text-xl hover:bg-[#1C4DA1]/10 rounded {{ $page == $paginator->currentPage() ? 'font-normal text-[#333E48]' : 'font-bold text-[#1C4DA1] underline' }} {{ $loop->index >= 3 ? 'max-md:hidden' : '' }}"
+                        class="w-12 h-12 text-xl hover:bg-[#1C4DA1]/10 rounded {{ $page == $paginator->currentPage() ? 'font-normal text-[#333E48]' : 'font-bold text-[#1C4DA1] underline' }} {{ $loop->index >= 3 ? 'max-md:hidden' : '' }}"
                         aria-current="{{ $page == $paginator->currentPage() ? 'step' : '' }}" 
                         aria-label="Step {{ $page }}"
+                        onclick="window.scroll(0, 0)"
                         wire:click="gotoPage({{ $page }}, '{{ $paginator->getPageName() }}')">
                         {{ $page }}
                     </button>
@@ -43,7 +44,7 @@
 
     {{-- Next Button --}}
     <button
-        class="p-4 rounded-full bg-[#FFD700] hover:bg-primary/50 cursor-pointer"
+        class="p-4 rounded-full bg-yellow hover:bg-primary duration-300 cursor-pointer"
         aria-label="Next step"
         @if ($paginator->hasMorePages())
             wire:click="nextPage('{{ $paginator->getPageName() }}')"

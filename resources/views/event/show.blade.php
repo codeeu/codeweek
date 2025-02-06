@@ -40,7 +40,7 @@
             <div class="text">
                 <div class="edit-button">
                     @can('edit', $event)
-                        <a class="codeweek-action-link-button mr-2"
+                        <a class="mr-2 codeweek-action-link-button"
                            href="{{route('edit_event',$event->id)}}">@lang('eventdetails.edit')</a>
                     @endcan
 
@@ -77,7 +77,7 @@
 
                 <div class="codeweek-display-field">
 
-                    <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4" for="inline-full-name">
+                    <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0" for="inline-full-name">
                         @lang('eventdetails.organised_by')
                     </label>
                     <p>
@@ -91,7 +91,7 @@
 
 
                 <div class="codeweek-display-field">
-                    <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                    <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                            for="activity_type">@lang('event.activitytype.label')</label>
                     <p>
                         @if($event->activity_type && $event->activity_type !== 'other')
@@ -105,7 +105,7 @@
 
                 @if($event->contact_person)
                     <div class="codeweek-display-field">
-                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                        <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                for="inline-full-name">@lang('eventdetails.contact_email')</label>
                         <p><a href="mailto:{{ $event->contact_person }}">{{ $event->contact_person }}</a></p>
                     </div>
@@ -113,27 +113,27 @@
 
                 @if($event->language)
                     <div class="codeweek-display-field">
-                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                        <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                for="inline-full-name">@lang('resources.Languages')</label>
                         <p>@lang("base.languages.{$event->language}")</p>
                     </div>
                 @endif
 
                 <div class="codeweek-display-field">
-                    <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                    <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                            for="inline-full-name">@lang('eventdetails.happening_at')</label>
                     <p>{!! $event->location !!}</p>
                 </div>
 
                 <div class="codeweek-display-field">
-                    <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                    <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                            for="inline-full-name">@lang('eventdetails.description')</label>
                     <p>{!!   $event->description !!}</p>
                 </div>
 
                 @if($event->event_url)
                     <div class="codeweek-display-field">
-                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                        <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                for="inline-full-name">@lang('eventdetails.more_info')</label>
                         <p><a href="{{ $event->event_url }}" target="_blank">{{ $event->event_url }}</a></p>
                     </div>
@@ -142,7 +142,7 @@
 
                 @if($event->audiences->count())
                     <div class="codeweek-display-field" style="margin-bottom: 0;">
-                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                        <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                for="inline-full-name">@lang('eventdetails.audience')</label>
                         <div class="itens">
                             <ul class="event-list">
@@ -158,7 +158,7 @@
 
                 @if($event->themes->count())
                     <div class="codeweek-display-field" style="margin-bottom: 0;">
-                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                        <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                for="inline-full-name">@lang('eventdetails.themes')</label>
                         <div class="itens">
                             <ul class="event-list">
@@ -174,7 +174,7 @@
 
                 @if($event->tags->count())
                     <div class="codeweek-display-field" style="margin-bottom: 0;">
-                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                        <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                for="inline-full-name">@lang('eventdetails.tags')</label>
                         <div class="itens">
                             <ul class="event-list">
@@ -194,14 +194,14 @@
                 @can('edit', $event)
                     @if($event->codeweek_for_all_participation_code)
                         <div class="codeweek-display-field">
-                            <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                            <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                    for="inline-full-name">@lang('event.codeweek_for_all_participation_code.title')</label>
                             <p>{{ $event->codeweek_for_all_participation_code }}</p>
                         </div>
                     @endif
 
                     <div class="codeweek-display-field">
-                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                        <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                                for="inline-full-name">@lang('event.last_update')</label>
                         <p>
                             {{Carbon\Carbon::parse($event->updated_at)->isoFormat('LLLL')}}
@@ -211,7 +211,7 @@
 
 
                 <div class="codeweek-display-field">
-                    <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                    <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0"
                            for="inline-full-name">@lang('eventdetails.share')</label>
                     <div class="share-event-wrapper">
                         <div class="fb-like"
@@ -240,6 +240,15 @@
             </div>
 
             <div id="events-show-map" style="margin-bottom: 20px;"></div>
+
+            <div class="codeweek-display-field">
+                <label class="block pr-4 mb-1 font-bold text-orange-500 md:mb-0">Location Coordinates</label>
+                <p>
+                    Longitude: {{ $event->longitude }}<br>
+                    Latitude: {{ $event->latitude }}<br>
+                    Geoposition: {{ $event->geoposition }}
+                </p>
+            </div>
 
             <h2 style="margin-top: 40px; margin-bottom: 30px;">@lang('eventdetails.nearby_upcoming_events')</h2>
             <div class="codeweek-grid-layout">

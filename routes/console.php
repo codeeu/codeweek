@@ -33,3 +33,6 @@ Schedule::command('relocate:country')->everyTwoMinutes();
 Schedule::command('certificate:issues')->hourlyAt(33);
 
 //Schedule::command('certificates:fix')->everyFiveMinutes();
+
+Schedule::command('app:sync-blogs')->dailyAt('1:00');
+Schedule::command('app:export-search-data-to-json')->dailyAt('2:00');

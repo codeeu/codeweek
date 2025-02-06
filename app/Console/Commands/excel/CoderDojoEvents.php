@@ -42,8 +42,7 @@ class CoderDojoEvents extends Command
 
         Excel::import(
             new CoderDojoEventsImport(),
-            'events.xlsx',
-            'excel'
+            resource_path('excel/CoderDojo.xlsx')
         );
     }
 }
