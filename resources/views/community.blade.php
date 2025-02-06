@@ -158,7 +158,12 @@
                     <h2 class="subtitle">@lang('community.titles.2')</h2>
                     <div class="community_type">
                         <div class="text">
-                                <p> @lang('community.leading-teachers')</p>
+                                {{-- Belgium-teachers for NL --}}
+                                @if($country === 'BE')
+                                    <p> @lang('community.leading-teachers_be')</p>
+                                @else
+                                    <p> @lang('community.leading-teachers')</p>
+                                @endif
                                 <h3>@lang('community.cta')</h3>
                         </div>
 
