@@ -43,7 +43,7 @@ class Dresden extends Command
         Log::info('Loading Dresden API Items in Database');
 
         $techicalUser = ImporterHelper::getTechnicalUser('dresden-technical');
-        $items = DresdenRSSItem::all();
+        $items = DresdenRSSItem::whereNull('imported_at')->get();        
 
         foreach ($items as $item) {
             $item->createEvent($techicalUser);
