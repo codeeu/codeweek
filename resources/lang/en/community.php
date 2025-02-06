@@ -38,7 +38,7 @@ return [
 
         'hub_GR' => 'CityLab IKE Greece',
         'hub_level_GR' => 'National Hub',
-        'hub_desc_GR' => 'CityLab IKE is an innovative organization based in Greece dedicated to promoting STEM education and fostering a passion for robotics among students. The organization focuses on developing creative problem-solving skills and critical thinking through educational robotics, enabling participants to design, build, and program their own robotic systems. CityLab IKE collaborates with schools, educational institutions, and community organizations to deliver workshops, camps, and training programs that inspire the next generation of innovators and technologists.',
+        'hub_desc_GR' => 'CityLab IKE is an innovative organization based in Greece dedicated to promoting STEM education and fostering a passion for robotics among students. The organization focuses on developing creative problem-solving skills and critical thinking through educational robotics, enabling participants to design, build, and program their own robotic systems. CityLab IKE collaborates with schools, educational institutions, and community organizations to deliver workshops, camps, and training programs that inspire the next generation of innovators and technologists.STEM subjects include Engineering, Robotics, Computer Science, Mechatronics, Industrial Design, Astrophysics, Bioengineering and Financial Engineering workshops.',
 
         'hub_CY' => 'CY.R.I.C Cyprus Research and Innovation Center Ltd',
         'hub_level_CY' => 'National Hub',
