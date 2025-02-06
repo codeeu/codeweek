@@ -46,7 +46,6 @@ class Baden extends Command
 
         $items = BadenRSSItem::whereNull('imported_at')->get();
 
-
         foreach ($items as $item) {
 
             $item->createEvent($techicalUser);
