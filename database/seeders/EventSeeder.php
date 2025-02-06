@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Event;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
@@ -48,6 +49,12 @@ class EventSeeder extends Seeder
 
         ]);
 
-        factory(App\Event::class, 100)->create();
+        $batchSize = 1000;
+        $totalRecords = 20000;
+
+        for ($i = 0; $i < $totalRecords / $batchSize; $i++) {
+            Event::factory()->count($batchSize)->create();
+            echo "Created " . (($i + 1) * $batchSize) . " records...\n";
+        }
     }
 }
