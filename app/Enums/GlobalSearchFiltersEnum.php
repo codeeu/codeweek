@@ -6,7 +6,6 @@ use App\Blog;
 use App\Event;
 use App\StaticPage;
 use App\Podcast;
-use App\ResourceItem;
 
 enum GlobalSearchFiltersEnum: string
 {
@@ -41,54 +40,109 @@ enum GlobalSearchFiltersEnum: string
                 'type_search' => 'model',
                 'model' => Podcast::class,
                 'search_fields' => [
-                    'name',
-                    'description',
+                    'title',
+                    'description'
                 ],
+                'map_fields' => [
+                    'name' => '{title}',
+                    'category' => 'Podcast',
+                    'description' => '{description}',
+                    'thumbnail' => '{url_image}',
+                    'path' => '{url}',
+                    'link_type' => 'internal',
+                    'language' => 'en',
+                ]
             ],
-            self::HACKATHONS,
-            self::ONLINE_COURSES,
-            self::TRAINING,
-            self::CHALLENGES,
-            self::PRESENTATIONS_AND_TOOLKITS,
+            self::HACKATHONS, 
+            self::ONLINE_COURSES, 
+            self::TRAINING, 
+            self::CHALLENGES, 
+            self::PRESENTATIONS_AND_TOOLKITS, 
             self::OTHERS => [
                 'type_search' => 'model',
                 'model' => StaticPage::class,
                 'search_fields' => [
                     'name',
                     'description',
+                    'keywords'
                 ],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => '{category}',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{path}',
+                    'link_type' => '{link_type}',
+                    'language' => '{language}',
+                ]
             ],
             self::LEARN => [
-                'type_search' => 'model',
-                'model' => ResourceItem::class,
-                'search_fields' => [
-                    'name',
-                    'description',
+                'type_search' => 'function',
+                'function' => 'searchResources',
+                'params' => [
+                    'section' => 'learn',
+                    'search_fields' => [
+                        'name',
+                        'description'
+                    ],
                 ],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => 'Learn',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{source}',
+                    'link_type' => 'external',
+                    'language' => 'en',
+                ]
             ],
             self::TEACH => [
-                'type_search' => 'model',
-                'model' => ResourceItem::class,
-                'search_fields' => [
-                    'name',
-                    'description',
+                'type_search' => 'function',
+                'function' => 'searchResources',
+                'params' => [
+                    'section' => 'teach',
+                    'search_fields' => [
+                        'name',
+                        'description'
+                    ],
                 ],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => 'Teach',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{source}',
+                    'link_type' => 'external',
+                    'language' => 'en',
+                ]
             ],
             self::BLOGS => [
                 'type_search' => 'model',
                 'model' => Blog::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
+                'search_fields' => ['name'],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => 'Blog',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{path}',
+                    'link_type' => 'external',
+                    'language' => 'en',
+                ]
             ],
             // self::ACTIVITIES => [
             //     'type_search' => 'model',
             //     'model' => Event::class,
-            //     'search_fields' => [
-            //         'name',
-            //         'description',
-            //     ],
+            //     'search_fields' => ['title'],
+            //     'map_fields' => [
+            //         'name' => '{title}',
+            //         'category' => 'Activities',
+            //         'description' => '{description}',
+            //         'thumbnail' => '{picture_path}',
+            //         'path' => '{url}',
+            //         'link_type' => 'internal',
+            //         'language' => 'en',
+            //     ]
             // ],
         };
     }
