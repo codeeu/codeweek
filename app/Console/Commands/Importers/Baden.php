@@ -44,7 +44,7 @@ class Baden extends Command
 
         $techicalUser = ImporterHelper::getTechnicalUser('baden-technical');
 
-        $items = BadenRSSItem::all();
+        $items = BadenRSSItem::whereNull('imported_at')->get();
 
         foreach ($items as $item) {
 
