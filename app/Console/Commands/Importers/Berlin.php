@@ -46,7 +46,6 @@ class Berlin extends Command
 
         $items = BerlinRSSItem::whereNull('imported_at')->get();
 
-
         foreach ($items as $item) {
 
             $item->createEvent($techicalUser);
