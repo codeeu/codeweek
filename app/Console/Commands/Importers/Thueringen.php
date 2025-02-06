@@ -45,7 +45,6 @@ class Thueringen extends Command
         $techicalUser = ImporterHelper::getTechnicalUser('thueringen-technical');
 
         $items = ThueringenRSSItem::whereNull('imported_at')->get(); 
-        
 
         foreach ($items as $item) {
 
