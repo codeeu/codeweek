@@ -13,23 +13,23 @@
 
         @foreach($results as $result)
             <div wire:key="result-{{ $loop->index }}" class="border-b border-[#D6D8DA] py-6 md:py-10 flex flex-col md:flex-row items-start gap-6 md:gap-16">
-                <a href="{{ $result['path'] }}" target="_blank" class="relative flex-shrink-0 w-full md:max-w-60">
-                    <img src="{{ $result['thumbnail'] }}" alt="{{ $result['name'] }}" class="w-full h-auto rounded-md" />
+                <a href="{{ $result->path }}" target="_blank" class="relative flex-shrink-0 w-full md:max-w-60">
+                    <img src="{{ $result->thumbnail }}" alt="{{ $result->name }}" class="w-full h-auto rounded-md" />
                 </a>
                 <div class="flex-grow">
                     <p class="font-bold uppercase p-0 mb-3">
-                        <span>{{ $result['category'] }}</span>
-                        @if(isset($result['date']))
+                        <span>{{ $result->category }}</span>
+                        @if(isset($result->created_at))
                             <span class="ml-1.5">|</span>
-                            <span class="ml-1.5">{{ $result['date'] }}</span>
+                            <span class="ml-1.5">{{ $result->created_at }}</span>
                         @endif
                     </p>
-                    <a href="{{ $result['path'] }}" target="_blank" class="mb-3 inline-block text-[#1C4DA1] hover:underline">
+                    <a href="{{ $result->path }}" target="_blank" class="mb-3 inline-block text-[#1C4DA1] hover:underline">
                         <h3 class="text-[22px] md:text-[30px] leading-7 md:leading-9 font-medium m-0 font-['Montserrat']">
-                            {{ $result['name'] }}
+                            {{ $result->name }}
                         </h3>
                     </a>
-                    <p class="p-0 text-lg md:text-xl leading-7 text-[#333E48]">{{ $result['description'] }}</p>
+                    <p class="p-0 text-lg md:text-xl leading-7 text-[#333E48]">{{ $result->description }}</p>
                 </div>
             </div>
         @endforeach

@@ -5,20 +5,6 @@ return [
     'cloud' => env('FILESYSTEM_CLOUD', 's3'),
 
     'disks' => [
-        'public' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
-            'visibility' => 'public',
-            'throw' => false,
-        ],
-
-        'storage' => [
-            'driver' => 'local',
-            'root' => storage_path('app'),
-            'throw' => false,
-        ],
-        
         'latex' => [
             'driver' => 'local',
             'root' => resource_path('latex'),
