@@ -6,7 +6,6 @@ use Livewire\Component;
 use App\Services\GlobalSearchService;
 use Livewire\WithPagination;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\Log;
 
 class SearchContentComponent extends Component
 {
@@ -49,22 +48,8 @@ class SearchContentComponent extends Component
     {
         $searchService = app(GlobalSearchService::class);
         $results = $searchService->search($this->selectedFilter, $this->searchQuery);
-        $results = collect($results);
 
-        Log::info("Total results before pagination: " . $results->count());
-
-        $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $items = $results->slice(($currentPage - 1) * $this->perPage, $this->perPage)->values();
-
-        Log::info("Showing page $currentPage with " . count($items) . " records");
-
-        return new LengthAwarePaginator(
-            $items,
-            $results->count(),
-            $this->perPage,
-            $currentPage,
-            ['path' => request()->url(), 'query' => request()->query()]
-        );
+        return $results;
     }
 
     public function render()
