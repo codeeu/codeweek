@@ -1,6 +1,6 @@
-<section class="flex flex-wrap items-center justify-center gap-2 font-['Blinker']" aria-label="Numbered steps">
+<section class="flex flex-wrap items-center justify-center gap-2 py-12 font-['Blinker']" aria-label="Numbered steps">
     <button
-        class="p-4 rounded-full bg-yellow hover:bg-primary duration-300 cursor-pointer"
+        class="p-4 duration-300 rounded-full cursor-pointer bg-yellow hover:bg-primary"
         aria-label="Previous step"
         @if (!$paginator->onFirstPage())
             wire:click="previousPage('{{ $paginator->getPageName() }}')"
@@ -14,10 +14,10 @@
     </button>
 
     {{-- Page Buttons --}}
-    <nav class="flex gap-1 items-center whitespace-nowrap" aria-label="Step navigation">
+    <nav class="flex items-center gap-1 whitespace-nowrap" aria-label="Step navigation">
         @foreach ($elements as $element)
             @if (is_string($element))
-                <span class="text-black mx-1">{{ $element }}</span>
+                <span class="mx-1 text-black">{{ $element }}</span>
             @endif
 
             @if (is_array($element))
@@ -44,7 +44,7 @@
 
     {{-- Next Button --}}
     <button
-        class="p-4 rounded-full bg-yellow hover:bg-primary duration-300 cursor-pointer"
+        class="p-4 duration-300 rounded-full cursor-pointer bg-yellow hover:bg-primary"
         aria-label="Next step"
         @if ($paginator->hasMorePages())
             wire:click="nextPage('{{ $paginator->getPageName() }}')"
