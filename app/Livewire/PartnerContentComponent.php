@@ -500,6 +500,19 @@ class PartnerContentComponent extends Component
                 'link_url' => 'https://fundacionjaes.org/',
                 'main_img_url' => 'images/partners/jaspain.png'
             ],
+            (object)[
+                'id' => 47,
+                'name' => 'Avanade',
+                'logo_url' => 'images/partners/avanade.png',
+                'categories' => ['Partners'],
+                'description' => 'Avanade is the world’s leading expert on Microsoft. Trusted by over 5,000 clients worldwide, we deliver AI-driven solutions that unlock the full potential of people and technology, optimize operations, foster innovation and drive growth.
+                <br>
+                As Microsoft’s Global SI Partner we combine global scale with local expertise in AI, cloud, data analytics, cybersecurity, and ERP to design solutions that prioritize people and drive meaningful impact. We champion diversity, inclusion, and sustainability, ensuring our work benefits society and business.
+                 <br>
+                Avanade have been in partnership with JA Worldwide and JA Europe as our global charity partnership for many years and are leading on Code4Europe WP4 Careers in Digital.',
+                'link_url' => 'https://www.avanade.com/en-gb',
+                'main_img_url' => 'images/partners/avanade.png'
+            ],
         ]);
     }
 
