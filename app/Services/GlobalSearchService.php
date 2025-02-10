@@ -118,6 +118,7 @@ class GlobalSearchService
                     NULL as image
                 ")
                 ->where('status', 'APPROVED')
+                ->whereRaw("YEAR(end_date) IN (YEAR(CURDATE()), YEAR(CURDATE()) - 1)")
                 ->when($keyword, function ($query, $keyword) {
                     $query->where(function ($q) use ($keyword) {
                         $q->where('title', 'like', "%{$keyword}%")
@@ -284,6 +285,7 @@ class GlobalSearchService
                             NULL as image
                         ")
                         ->where('status', 'APPROVED')
+                        ->whereRaw("YEAR(end_date) IN (YEAR(CURDATE()), YEAR(CURDATE()) - 1)")
                         ->when($keyword, function ($query, $keyword) {
                             $query->where(function ($q) use ($keyword) {
                                 $q->where('title', 'like', "%{$keyword}%")
