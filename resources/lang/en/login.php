@@ -19,15 +19,14 @@ return [
     'google' => 'Sign in with Google',
     'azure' => 'Sign in with Azure',
 
-    'email' => 'E-Mail Address',
+    'email' => 'Email address',
     'password' => 'Password',
-    'remember' => 'Remember Me',
-    'forgotten_password' => 'Forgot Your Password ?',
+    'remember' => 'Keep me signed in',
+    'forgotten_password' => 'Forgot Your Password',
     'no_account' => 'Don\'t have an account ?',
     'signup' => 'Sign Up',
     'reset' => 'Reset Your Password',
     'send_password' => 'Send Password Reset Link',
     'confirm_password' => 'Confirm Password',
-    'name' => 'name',
-
+    'name' => 'Full name',
 ];
