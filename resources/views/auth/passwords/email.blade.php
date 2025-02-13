@@ -12,7 +12,7 @@
 
         <section class="codeweek-content-wrapper">
 
-            <section class="codeweek-content-wrapper-inside">
+            <section class="codeweek-content-wrapper-inside login-form">
                 <form method="POST" action="{{ route('password.email') }}">
                     @csrf
 

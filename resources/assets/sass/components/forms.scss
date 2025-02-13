@@ -1,13 +1,18 @@
-.multiselect .multiselect__tags{
+#codeweek-searchpage-component .multiselect .multiselect__tags,
+#codeweek-register-page .multiselect .multiselect__tags, {
   border-radius: 29px;
   min-height: 57px;
 }
-.multiselect .multiselect__select{
+#codeweek-searchpage-component .multiselect .multiselect__select,
+#codeweek-register-page  .multiselect .multiselect__select {
   width: 60px;
   height: 54px;
 }
-.multiselect .multiselect__placeholder,
-.multiselect .multiselect__single{
+#codeweek-searchpage-component .multiselect .multiselect__placeholder,
+#codeweek-searchpage-component .multiselect .multiselect__single,
+#codeweek-register-page .multiselect .multiselect__placeholder,
+#codeweek-register-page .multiselect .multiselect__single
+{
   padding-top: 5px;
   padding-left: 12px;
   font-size: 20px;
@@ -15,22 +20,28 @@
   font-weight: bold;
   color: $main-color;
 }
-.multiselect .multiselect__single {
+#codeweek-searchpage-component .multiselect .multiselect__single,
+#codeweek-register-page .multiselect .multiselect__single  {
   padding-top: 6px;
 }
-.multiselect .multiselect__select:before {
+#codeweek-searchpage-component .multiselect .multiselect__select:before,
+#codeweek-register-page .multiselect .multiselect__select:before {
   border-color: $main-color transparent transparent;
 }
-.multiselect .multiselect__tags-wrap{
+#codeweek-searchpage-component .multiselect .multiselect__tags-wrap,
+#codeweek-register-page .multiselect .multiselect__tags-wrap {
   display: inline-table;
   padding: 5px 0 5px 10px;
 }
-.codeweek-search-text{
+#codeweek-searchpage-component .codeweek-search-text,
+#codeweek-register-page .codeweek-search-text {
   flex:1;
   margin-right: 10px;
 }
 
-.codeweek-search-text input{
+#codeweek-searchpage-component .codeweek-search-text input,
+#codeweek-register-page .codeweek-search-text input
+{
   width:100%;
   border-radius: 29px;
   height:57px;
@@ -41,7 +52,8 @@
 }
 
 
-.codeweek-input-select {
+#codeweek-searchpage-component .codeweek-input-select,
+#codeweek-register-page .codeweek-input-select  {
   display: block;
   font-size: 20px;
   font-weight: bold;
@@ -66,24 +78,32 @@
   background-position: right .7em top 50%, 0 0;
   background-size: .65em auto, 100%;
 }
-.codeweek-input-select::-ms-expand {
+#codeweek-searchpage-component .codeweek-input-select::-ms-expand,
+#codeweek-register-page .codeweek-input-select::-ms-expand  {
   display: none;
 }
-.codeweek-input-select:hover {
+#codeweek-searchpage-component .codeweek-input-select:hover,
+#codeweek-register-page .codeweek-input-select:hover
+{
   border-color: #888;
 }
-.codeweek-input-select:focus {
+#codeweek-searchpage-component .codeweek-input-select:focus,
+#codeweek-register-page .codeweek-input-select:focus {
   border-color: #aaa;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
   outline: none;
 }
-.codeweek-input-select option {
+#codeweek-searchpage-component .codeweek-input-select option,
+#codeweek-register-page .codeweek-input-select option
+{
   font-weight:normal;
   color: $main-color3;
 }
 
-.codeweek-form {
+#codeweek-searchpage-component .codeweek-form,
+#codeweek-register-page .codeweek-form
+ {
   display:flex;
   flex-direction: column;
   justify-content: stretch;
@@ -102,80 +122,110 @@
   }
 }
 
-.codeweek-form-inner-two-columns {
+#codeweek-searchpage-component .codeweek-form-inner-two-columns,
+#codeweek-register-page .codeweek-form-inner-two-columns {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   width:100%;
 }
 
-.codeweek-form-inner-container{
+#codeweek-searchpage-component .codeweek-form-inner-container,
+#codeweek-register-page .codeweek-form-inner-container {
   display: flex;
   flex-direction: column;
   flex:1;
 }
 
-.codeweek-form-inner-container:last-child{
+#codeweek-searchpage-component .codeweek-form-inner-container:last-child,
+#codeweek-register-page .codeweek-form-inner-container:last-child {
   margin-left: 20px;
 }
 
-.codeweek-form-field-wrapper{
+#codeweek-searchpage-component .codeweek-form-field-wrapper,
+#codeweek-register-page .codeweek-form-field-wrapper {
   margin-bottom: 15px;
 }
-.codeweek-form-field-wrapper .errors{
+#codeweek-searchpage-component .codeweek-form-field-wrapper .errors,
+#codeweek-register-page .codeweek-form-field-wrapper .errors  {
   margin-left: 140px;
   font-size: 13px;
   color: red;
 }
-.codeweek-form-field-wrapper .info {
+#codeweek-searchpage-component .codeweek-form-field-wrapper .info {
   margin-left: 140px;
   font-size: 14px;
   color: #40b5d1;
 }
 
-.codeweek-form-field-wrapper .errors .errorlist{
+#codeweek-searchpage-component .codeweek-form-field-wrapper .errors .errorlist{
   margin: 0;
 }
 
-.codeweek-form-field{
+#codeweek-searchpage-component .codeweek-form-field{
   display: flex;
   justify-content: stretch;
   flex:1;
   align-items: center;
 }
 
-.codeweek-form-field-searchable{
+#codeweek-searchpage-component .codeweek-form-field-searchable{
   display: flex;
   justify-content: stretch;
   flex: 1;
   align-items: center;
 }
 
-.codeweek-form-field-searchable.align-flex-start{
+#codeweek-searchpage-component .codeweek-form-field-searchable.align-flex-start{
   align-items: flex-start;
 }
 
-.codeweek-form-field-searchable input {
+#codeweek-searchpage-component .codeweek-form-field-searchable input {
   flex: 1;
   height: 32px;
-  /*border: 1px solid #ffffff;*/
   border-radius: 6px;
-  /*text-indent: 20px;*/
   width: 100%;
 }
 
-.codeweek-form-field-searchable  label {
+#codeweek-searchpage-component .codeweek-form-field-searchable  label {
   margin-right: 10px;
   text-transform: uppercase;
   width: 120px;
   text-align: right;
 }
 
-.codeweek-form-field.align-flex-start{
+#codeweek-searchpage-component .codeweek-form-field.align-flex-start{
   align-items: flex-start;
 }
 
-.codeweek-form-field input{
+#codeweek-searchpage-component .codeweek-form-field-wrapper {
+  margin-bottom: 15px;
+}
+
+#codeweek-searchpage-component .codeweek-form-field-wrapper .errors {
+  margin-left: 140px;
+  font-size: 13px;
+  color: red;
+}
+
+#codeweek-searchpage-component .codeweek-form-field-wrapper .info {
+  margin-left: 140px;
+  font-size: 14px;
+  color: #40b5d1;
+}
+
+#codeweek-searchpage-component .codeweek-form-field-wrapper .errors .errorlist {
+  margin: 0;
+}
+
+#codeweek-searchpage-component .codeweek-form-field {
+  display: flex;
+  justify-content: stretch;
+  flex: 1;
+  align-items: center;
+}
+
+#codeweek-searchpage-component .codeweek-form-field input{
   flex: 1;
   height: 57px;
   border: 1px solid #e8e8e8;
@@ -184,7 +234,7 @@
   width: 100%;
 }
 
-.codeweek-form-field textarea {
+#codeweek-searchpage-component .codeweek-form-field textarea {
   flex: 1;
   border-radius: 29px;
   border: 1px solid #e8e8e8;
@@ -194,18 +244,18 @@
   padding-top: 16px;
 }
 
-.codeweek-form-field label{
+#codeweek-searchpage-component .codeweek-form-field label{
   margin-right: 10px;
   text-transform: uppercase;
   width: 120px;
   text-align: right;
 }
 
-.codeweek-form-field.align-flex-start label{
+#codeweek-searchpage-component .codeweek-form-field.align-flex-start label{
   margin-top: 10px;
 }
 
-.codeweek-form .codeweek-input-select {
+#codeweek-searchpage-component .codeweek-form .codeweek-input-select {
   flex: 1;
   height: 57px;
   width:auto;
@@ -220,26 +270,26 @@
   cursor: pointer;
 }
 
-.codeweek-form .multiselect-wrapper,
-.codeweek-form .datepicker-wrapper,
-.codeweek-form .input-tag-wrapper{
+#codeweek-searchpage-component .codeweek-form .multiselect-wrapper,
+#codeweek-searchpage-component .codeweek-form .datepicker-wrapper,
+#codeweek-searchpage-component .codeweek-form .input-tag-wrapper{
   flex:1;
 }
 
 
-.codeweek-form .mx-datepicker .mx-input-icon{
+#codeweek-searchpage-component .codeweek-form .mx-datepicker .mx-input-icon{
   right: 20px;
 }
 
-.codeweek-form .codeweek-form-inner-container h3 {
+#codeweek-searchpage-component .codeweek-form .codeweek-form-inner-container h3 {
   margin-bottom: 15px;
 }
 
-.codeweek-form .input-tag-wrapper {
+#codeweek-searchpage-component .codeweek-form .input-tag-wrapper {
   border: 1px solid #e8e8e8;
   border-radius: 29px;
 }
-.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper {
+#codeweek-searchpage-component .codeweek-form .input-tag-wrapper .vue-input-tag-wrapper {
   padding: 0;
   border: none;
   display: inline-table;
@@ -249,35 +299,35 @@
   max-width: 90%;
 }
 
-.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
+#codeweek-searchpage-component .codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
   padding: 0;
   margin: 0;
   height: 59px;
   text-indent: 0;
 }
 
-.codeweek-form .group-fields{
+#codeweek-searchpage-component .codeweek-form .group-fields{
   flex:1;
 }
 
-.codeweek-form-message {
+#codeweek-searchpage-component .codeweek-form-message {
   padding: 30px;
   background-color: #e8e8e8;
   border-radius: 20px;
   margin-top: 20px;
 }
 
-.codeweek-form-message .message{
+#codeweek-searchpage-component.codeweek-form-message .message{
   margin-bottom: 30px;
 }
 
-.codeweek-form-message .codeweek-form-field label{
+.login-form .codeweek-form-message .codeweek-form-field label{
   width: auto;
   text-align: left;
 }
 
-.codeweek-form-field-privacy,
-.codeweek-form-field-checkbox{
+.login-form .codeweek-form-field-privacy,
+.login-form .codeweek-form-field-checkbox{
   display: flex;
   justify-content: center;
   flex: 1;
@@ -409,4 +459,202 @@
   .share-event-wrapper{
     margin-top: 5px;
   }
+}
+
+.login-form .codeweek-form-field-wrapper {
+  margin-bottom: 15px;
+}
+
+.login-form .codeweek-form-field-wrapper .errors {
+  margin-left: 140px;
+  font-size: 13px;
+  color: red;
+}
+
+.login-form .codeweek-form-field-wrapper .info {
+  margin-left: 140px;
+  font-size: 14px;
+  color: #40b5d1;
+}
+
+.login-form .codeweek-form-field-wrapper .errors .errorlist {
+  margin: 0;
+}
+
+.login-form .codeweek-form-field {
+  display: flex;
+  justify-content: stretch;
+  flex: 1;
+  align-items: center;
+}
+
+.login-form .codeweek-form-field input {
+  flex: 1;
+  height: 57px;
+  border: 1px solid #e8e8e8;
+  border-radius: 29px;
+  text-indent: 20px;
+  width: 100%;
+}
+
+.login-form .codeweek-form-field textarea {
+  flex: 1;
+  border-radius: 29px;
+  border: 1px solid #e8e8e8;
+  text-indent: 20px;
+  font-family: $font-family-sans-serif;
+  font-size: 14px;
+  padding-top: 16px;
+}
+
+.login-form .codeweek-form-field label {
+  margin-right: 10px;
+  text-transform: uppercase;
+  width: 120px;
+  text-align: right;
+}
+
+.login-form .codeweek-form-field-privacy,
+.login-form .codeweek-form-field-checkbox {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-form .codeweek-form-field-checkbox {
+  text-transform: uppercase;
+  justify-content: flex-start;
+}
+
+.login-form .codeweek-form-field-privacy,
+.login-form .codeweek-form-field-checkbox {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-form  [type="checkbox"],
+.login-form  [type="radio"] {
+  appearance: none;
+  padding: 0px;
+  -webkit-print-color-adjust: exact;
+  display: inline-block;
+  vertical-align: middle;
+  background-origin: border-box;
+  user-select: none;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(107, 114, 128);
+  --tw-shadow: 0 0 #0000;
+}
+
+input {
+  margin: 0px;
+  line-height: 1.15;
+  border: 0px;
+  font-family: inherit;
+  outline: none;
+}
+
+.event select:before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.event .v3ti-new-tag {
+  @apply w-full px-6 py-3  md:max-w-[472px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange max-md:px-5 max-md:max-w-full;
+}
+
+.event .input-tag-wrapper {
+  width: 100%;
+}
+
+.event .v3ti .v3ti-content {
+  justify-content: flex-end;
+}
+
+.event .v3ti .v3ti-new-tag {
+  height: 48px !important;
+}
+
+.event .input-tag-wrapper:focus {
+  all: unset;
+}
+
+.event .v3ti {
+  border: none !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.event input:focus {
+  @apply placeholder-dark-orange;
+}
+
+.event select {
+  background-image: none !important;
+}
+
+.event .tox {
+  max-width: 472px;
+  height: 280px !important;
+  width: 100%;
+  border: 2px solid #e2e2e2;
+  border-radius: 24px !important;
+}
+
+@media (max-width: 640px) {
+  .event .tox {
+    max-width: 100%; /* Let the editor stretch to fill smaller screens */
+  }
+}
+
+#id_description-container {
+  max-width: 460px; /* Maintain a max width */
+  width: 100%; /* Allow responsive behavior */
+}
+
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+  display: none !important;
+}
+
+.event .tox .tox-statusbar {
+  display: none !important;
+}
+
+.event .tox {
+  transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition for focus */
+}
+
+.event .tox:focus {
+  border-color: #b63100; /* Change border color on focus */
+  color: #b63100; /* Change text color on focus */
+}
+
+#id_description:focus-within {
+  border-color: #b63100; /* Change border color when focused */
+  color: #b63100; /* Change text color when focused */
+}
+
+[x-cloak] {
+  display: none;
+}
+
+div[data-lastpass-icon-root] {
+  display: none !important;
+}
+
+.event ul {
+  list-style: none;
+  line-height: 1.5;
+  padding: 0;
+  margin: 10px 0;
 }
