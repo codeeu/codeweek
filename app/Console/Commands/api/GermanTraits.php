@@ -15,7 +15,6 @@ trait GermanTraits
     {
         $client = new \GuzzleHttp\Client();
         $guzzle = $client->request('get', $url);
-
         return json_decode($guzzle->getBody(), true);
     }
 
@@ -23,55 +22,69 @@ trait GermanTraits
     {
         $new = 0;
         $updated = 0;
-
-        foreach ($json as $item) {
-            $className = '\App\RSSItems\\'.$city.'RSSItem';
-            $RSSitem = new $className;
-
-            $RSSitem->uid = $item['uid'];
-            $RSSitem->title = $item['title'];
-            $RSSitem->description = $item['description'];
-            $RSSitem->organizer = $item['organizer'];
-            $RSSitem->photo = $item['photo'];
-            $RSSitem->eventEndDate = $item['eventEndDate'];
-            $RSSitem->eventStartDate = $item['eventStartDate'];
-            $RSSitem->latitude = $item['latitude'];
-            $RSSitem->longitude = $item['longitude'];
-            $RSSitem->location = $item['location'];
-            $RSSitem->user_company = $item['user']['company'];
-            $RSSitem->user_email = $item['user']['email'];
-            $RSSitem->user_publicEmail = $item['user']['publicEmail'];
-            $RSSitem->user_type = $item['user']['type']['identifier'] ?? '';
-            $RSSitem->user_website = $item['user']['www'];
-            $RSSitem->activity_type = $item['type']['identifier'] ?? 'invite-in-person';
-            $RSSitem->tags = trim(implode(';', Arr::pluck($item['tags'], 'title')));
-            $RSSitem->themes = trim(implode(',', Arr::pluck($item['themes'], 'identifier')));
-            $RSSitem->audience = trim(implode(',', Arr::pluck($item['audience'], 'identifier')));
-
+        foreach ($json as $index => $item) {
             try {
+                Log::info("Processing item {$index} from {$city}");
 
-                //Log::info($RSSitem);
-                $RSSitem->save();
-
-                $new++;
-
-            } catch (\PDOException $exception) {
-
-                if ($exception->getCode() !== '23000') {
-                    Log::error($exception->errorInfo);
+                // Validate required data
+                if (!isset($item['user'])) {
+                    Log::warning("Item {$index} in {$city} has no user data - skipping");
+                    continue;
                 }
 
+                $className = '\App\RSSItems\\' . $city . 'RSSItem';
+                $RSSitem = new $className;
+
+                $RSSitem->uid = $item['uid'] ?? null;
+                $RSSitem->title = $item['title'] ?? '';
+                $RSSitem->description = $item['description'] ?? '';
+                $RSSitem->organizer = $item['organizer'] ?? '';
+                $RSSitem->photo = $item['photo'] ?? null;
+                $RSSitem->eventEndDate = $item['eventEndDate'] ?? null;
+                $RSSitem->eventStartDate = $item['eventStartDate'] ?? null;
+                $RSSitem->latitude = $item['latitude'] ?? null;
+                $RSSitem->longitude = $item['longitude'] ?? null;
+                $RSSitem->location = $item['location'] ?? '';
+
+                // Safely get nested user data
+                $RSSitem->user_company = $item['user']['company'] ?? '';
+                $RSSitem->user_email = $item['user']['email'] ?? '';
+                $RSSitem->user_publicEmail = $item['user']['publicEmail'] ?? '';
+                $RSSitem->user_type = $item['user']['type']['identifier'] ??
+                    ($item['user']['type'] ?? 'invite-in-person');
+                $RSSitem->user_website = $item['user']['www'] ?? '';
+
+                // Safely get type data
+                $RSSitem->activity_type = $item['type']['identifier'] ?? 'invite-in-person';
+
+                // Safely handle arrays
+                $RSSitem->tags = trim(implode(';', Arr::pluck($item['tags'] ?? [], 'title')));
+                $RSSitem->themes = trim(implode(',', Arr::pluck($item['themes'] ?? [], 'identifier')));
+                $RSSitem->audience = trim(implode(',', Arr::pluck($item['audience'] ?? [], 'identifier')));
+
+                try {
+                    $RSSitem->save();
+                    $new++;
+                    Log::info("Successfully saved item {$index} from {$city}");
+                } catch (\PDOException $exception) {
+                    if ($exception->getCode() !== '23000') {
+                        Log::error("Database error for item {$index} in {$city}: " . json_encode($exception->errorInfo));
+                    }
+                }
+            } catch (\Exception $e) {
+                Log::error("Error processing item {$index} from {$city}: " . $e->getMessage());
+                Log::error("Item data: " . json_encode($item));
+                continue;
             }
-
         }
-        Log::info("New items imported from $city API: ".$new);
 
+        Log::info("New items imported from $city API: " . $new);
     }
 
     private function createGermanEvent($city): void
     {
         $user = User::where(['email' => $this->user_email])->first();
-
+    
         if ($user == null) {
 
             //Create user
@@ -82,8 +95,8 @@ trait GermanTraits
                     'lastname' => '',
                     'username' => $this->organizer,
                     'password' => bcrypt(Str::random()),
-                ]);
-
+                ]
+            );
         }
 
         $event = new Event([
@@ -110,7 +123,7 @@ trait GermanTraits
             'end_date' => $this->eventEndDate,
             'longitude' => $this->longitude,
             'latitude' => $this->latitude,
-            'geoposition' => $this->latitude.','.$this->longitude,
+            'geoposition' => $this->latitude . ',' . $this->longitude,
             'language' => 'de',
         ]);
 
@@ -137,6 +150,6 @@ trait GermanTraits
 
             $event->tags()->sync($tagsArray);
         }
-
     }
+    
 }

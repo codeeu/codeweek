@@ -2,8 +2,10 @@
 
 return [
     'about' => 'Săptăm&acirc;na UE a programării este o inițiativă de bază care &icirc;și propune să aducă programarea și competențele digitale la &icirc;ndem&acirc;na tuturor &icirc;ntr-un mod distractiv și antrenant.',
-    'when' => '14-27 octombrie 2024',
+    'when' => 'Alăturați-vă nouă pentru o distracție festivă!',
     'when_text' => '&Icirc;nvățarea programării ne ajută să &icirc;nțelegem lumea care se schimbă rapid &icirc;n jurul nostru, să ne extindem &icirc;nțelegerea cu privire la modul &icirc;n care funcționează tehnologia și să dezvoltăm competențe și abilități pentru a explora noi idei și pentru a inova.',
+    'xmas_text' => 'Faceți ca acest sezon festiv să strălucească prin inovație și creativitate! Alăturați-vă distracției „Coding@Christmas” prin adăugarea activității dvs. de codare pe harta noastră și aveți șansa de a câștiga un kit micro:bit pentru elevii dvs. Să sărbătorim sărbătorile prin împuternicirea următoarei generații de gânditori și creatori. Adăugați astăzi activitatea dvs. și contribuiți la inspirarea unui viitor mai luminos!',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Implică-te!',
     'school_banner_text' => 'Sunteți profesor?',
     'school_banner_text2' => 'Clic aici pentru a afla cum vă puteți implica!',

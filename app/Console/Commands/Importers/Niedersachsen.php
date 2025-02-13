@@ -45,7 +45,7 @@ class Niedersachsen extends Command
 
         $technicalUser = ImporterHelper::getTechnicalUser('niedersachsen-technical');
 
-        $items = NiedersachsenRSSItem::whereNull('imported_at')->get();
+        $items = NiedersachsenRSSItem::whereNull('imported_at')->get(); 
 
         foreach ($items as $item) {
 

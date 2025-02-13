@@ -213,10 +213,16 @@
     margin: 0px 100px 0 100px;
   }
   .codeweek-content-wrapper-inside{
-    margin: 15px 115px;
+    margin: 15px 55px;
   }
   .community_type {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .codeweek-content-wrapper-inside{
+    margin: 15px 115px;
   }
 }
 
@@ -324,4 +330,28 @@
 .hackathons-content-grid .author{
   color: $main-color;
   padding: 20px;
+}
+
+.codeweek-container-lg {
+  max-width: 1460px;
+  width: 100%;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
+}
+
+.codeweek-container {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
 }

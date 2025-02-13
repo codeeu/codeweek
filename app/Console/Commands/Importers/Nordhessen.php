@@ -44,7 +44,8 @@ class Nordhessen extends Command
 
         $techicalUser = ImporterHelper::getTechnicalUser('nordhessen-technical');
 
-        $items = NordhessenRSSItem::whereNull('imported_at')->get();
+        $items = NordhessenRSSItem::whereNull('imported_at')->get(); 
+
 
         foreach ($items as $item) {
 

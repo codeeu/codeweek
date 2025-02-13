@@ -43,6 +43,7 @@ class Bremen extends Command
         Log::info('Loading Bremen API Items in Database');
 
         $techicalUser = ImporterHelper::getTechnicalUser('bremen-technical');
+        
         $items = BremenRSSItem::whereNull('imported_at')->get();
 
         foreach ($items as $item) {

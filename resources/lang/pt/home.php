@@ -2,8 +2,10 @@
 
 return [
     'about' => 'A Semana Europeia da Programação é uma iniciativa popular que visa levar a programação e a literacia digital a todos de uma forma divertida e atrativa...',
-    'when' => '14-27 de outubro de 2024',
+    'when' => 'Junte-se a nós para um pouco de diversão festiva!',
     'when_text' => 'Aprender a programar ajuda-nos a entender o mundo em rápida evolução à nossa volta, a expandir o nosso conhecimento sobre o funcionamento da tecnologia e a desenvolver competências e capacidades para explorar novas ideias e inovar.',
+    'xmas_text' => 'Faça esta época festiva brilhar com inovação e criatividade! Junte-se à nossa diversão “Coding@Christmas”, adicionando a sua atividade de codificação ao nosso mapa, e habilite-se a ganhar um kit micro:bit para os seus alunos. Vamos celebrar as festas de fim de ano capacitando a próxima geração de pensadores e criadores. Adicione a sua atividade hoje e ajude a inspirar um futuro mais brilhante!',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Participe!',
     'school_banner_text' => 'É professor(a)?',
     'school_banner_text2' => 'Clique aqui para saber como pode participar!',

@@ -2,8 +2,10 @@
 
 return [
     'about' => 'ES programmēšanas nedēļa ir iedzīvotāju iniciatīva, kuras mērķis ir iepazīstināt ikvienu ar programmēšanu un digitālo pratību interesantā un saistošā veidā.',
-    'when' => '2024. gada 14.-27. oktobrī',
+    'when' => 'Pievienojieties mums, lai izbaudītu svētku jautrību!',
     'when_text' => 'Iemācoties programmēt, mēs spējam labāk izprast strauji mainīgo pasauli ap mums, uzlabot savu izpratni par to, kā darbojas tehnoloģijas, un attīstīt prasmes un spējas, lai izpētītu jaunas idejas un radītu inovācijas.',
+    'xmas_text' => 'Padariet šo svētku sezonu mirdzošu ar inovācijām un radošumu! Pievienojieties mūsu “Coding@Christmas” jautrībai, pievienojot savu kodēšanas aktivitāti mūsu kartei, un iegūstiet iespēju laimēt micro:bit komplektu saviem skolēniem. Atzīmēsim svētkus, dodot iespēju nākamajai domātāju un radītāju paaudzei. Pievienojiet savu aktivitāti šodien un palīdziet iedvesmot gaišāku nākotni!',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Iesaisties!',
     'school_banner_text' => 'Vai esat skolotājs?',
     'school_banner_text2' => 'Noklikšķiniet šeit, lai uzzinātu, kā iesaistīties!',

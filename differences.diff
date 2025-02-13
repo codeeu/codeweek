@@ -1,0 +1,46 @@
+diff --git a/app/Console/Commands/excel/CoderDojoEvents.php b/app/Console/Commands/excel/CoderDojoEvents.php
+index c9fb706d..71787585 100644
+--- a/app/Console/Commands/excel/CoderDojoEvents.php
++++ b/app/Console/Commands/excel/CoderDojoEvents.php
+@@ -42,7 +42,7 @@ class CoderDojoEvents extends Command
+ 
+         Excel::import(
+             new CoderDojoEventsImport(),
+-            'events-coderdojobelgium.xlsx',
++            'events.xlsx',
+             'excel'
+         );
+     }
+diff --git a/app/Imports/IrelandDreamSpaceImport.php b/app/Imports/IrelandDreamSpaceImport.php
+index a6c0b1fe..1dd8ebe2 100644
+--- a/app/Imports/IrelandDreamSpaceImport.php
++++ b/app/Imports/IrelandDreamSpaceImport.php
+@@ -42,7 +42,7 @@ class IrelandDreamSpaceImport extends DefaultValueBinder implements ToModel, Wit
+             'description' => '',
+             'organizer_type' => $row['type_of_organization'],
+             'activity_type' => $row['activity_type'],
+-            'location' => '',
++            'location' => $row['address'],
+             'event_url' => '',
+             'contact_person' => $row['email'],
+             'user_email' => '',
+@@ -55,9 +55,9 @@ class IrelandDreamSpaceImport extends DefaultValueBinder implements ToModel, Wit
+             'codeweek_for_all_participation_code' => '',
+             'start_date' => $this->parseDate($row['date']),
+             'end_date' => $this->parseDate($row['date']),
+-            'geoposition' => '',
+-            'longitude' => '',
+-            'latitude' => '',
++            'geoposition' => $row['latitude'].','.$row['longitude'],
++            'longitude' => $row['latitude'],
++            'latitude' => $row['latitude'],
+             'language' => '',
+             'approved_by' => 19588,
+             'mass_added_for' => 'Excel',
+diff --git a/resources/excel/Code Week Events - Ireland Dream Space .xlsx b/resources/excel/Code Week Events - Ireland Dream Space .xlsx
+index cb2a6484..dfc79c5b 100644
+Binary files a/resources/excel/Code Week Events - Ireland Dream Space .xlsx and b/resources/excel/Code Week Events - Ireland Dream Space .xlsx differ
+diff --git a/resources/excel/events.xlsx b/resources/excel/events.xlsx
+new file mode 100644
+index 00000000..acc5e6b3
+Binary files /dev/null and b/resources/excel/events.xlsx differ
