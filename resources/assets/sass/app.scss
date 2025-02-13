@@ -117,8 +117,14 @@ h1 {
 main{
   margin-left:auto;
   margin-right:auto;
-  max-width: 1280px;
   background-color: $main-color4;
+}
+
+
+body:not(.new-layout) {
+  main {
+    max-width: 1280px;
+  }
 }
 ul{
   list-style: none;
@@ -129,10 +135,16 @@ ul{
 #app{
   position: relative;
   background-color: white;
-  max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
 }
+
+body:not(.new-layout) {
+  #app {
+    max-width: 1280px;
+  }
+}
+
 .show {
   display: block!important;
 }
@@ -187,6 +199,46 @@ ul{
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
 
+}
+
+.cookweek-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Montserrat';
+  color: #1C4DA1;
+  font-size: 16px;
+  font-weight: 600;
+
+  &.hover-underline {
+    position: relative;
+
+    .arrow-icon {
+      color: #1C4DA1;
+      transition-duration: 300ms;
+    }
+    
+    &:hover {
+      .arrow-icon {
+        transform: scale(-1);
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #1C4DA1;
+      bottom: 0;
+      left: 0;
+      transition-duration: 300ms;
+    }
+  }
 }
 
 @import "pages/cookie";

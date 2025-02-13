@@ -4,6 +4,8 @@ return [
     'about' => 'Il-Ġimgħa tal-UE tal-Ikkowdjar hija inizjattiva bażika li timmira li twassal l-ikkowdjar u l-litteriżmu diġitali lil kulħadd b’mod pjaċevoli u interessanti.',
     'when' => '14-27 ta’ Ottubru 2024',
     'when_text' => 'It-tagħlim kif nikkowdjaw jgħinna nifhmu d-dinja ta’ madwarna li qiegħda tinbidel malajr, nespandu l-fehim tagħna ta’ kif taħdem it-teknoloġija, u niżviluppaw ħiliet u kapaċitajiet sabiex nesploraw ideat ġodda u ninnovaw.',
+    'xmas_text' => '',
+    'button_text' => 'Get Involved!',
     'school_banner_title' => 'Involvi ruħek!',
     'school_banner_text' => 'Int għalliem?',
     'school_banner_text2' => 'Ikklikkja hawn biex issir taf kif issir involut/a!',

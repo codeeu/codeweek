@@ -43,7 +43,8 @@ class Hamburg extends Command
         Log::info('Loading Hamburg API Items in Database');
 
         $techicalUser = ImporterHelper::getTechnicalUser('hamburg-technical');
-        $items = HamburgRSSItem::whereNull('imported_at')->get();
+     
+        $items = HamburgRSSItem::whereNull('imported_at')->get(); 
 
         foreach ($items as $item) {
             $item->createEvent($techicalUser);

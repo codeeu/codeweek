@@ -1,8 +1,9 @@
 #codeweek-login-page .codeweek-content-wrapper-inside{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 #codeweek-login-page .codeweek-content-wrapper-inside .social-media-buttons{
+  order: 3;
   display: flex;
   flex-direction: column;
 }
@@ -13,6 +14,7 @@
   flex:1;
   margin-left: 10px;
   margin-top: 30px;
+  order: 1;
 }
 #codeweek-login-page .codeweek-form-field{
   flex-direction: column;
@@ -41,13 +43,15 @@
 
 #codeweek-login-page .separator{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 0 30px;
+  order: 2;
+  gap: 10px;
 }
 
 #codeweek-login-page .separator .line{
-  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   flex: 1;
 }
 
@@ -106,4 +110,33 @@
 #codeweek-login-page .login-other-actions .sign-up{
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  #codeweek-login-page .codeweek-content-wrapper-inside{
+    display: flex;
+    flex-direction: row;
+  }
+  #codeweek-login-page .codeweek-content-wrapper-inside .social-media-buttons{
+    order: 1;
+  }
+  #codeweek-login-page .separator{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    gap: 0;
+  }
+  #codeweek-login-page .login-form{
+    order: 3;
+  }
+  #codeweek-login-page .separator .line{
+    border-right: 1px solid #ccc;
+    flex: 1;
+  }
+}
+
+.help-block .errorlist {
+  margin: 0;
 }
