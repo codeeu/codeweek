@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[T1,LGR,T2A]{fontenc}
+\usepackage[T2A,LGR,T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[greek,russian,english]{babel}
 \usepackage{mathpazo}
@@ -16,31 +16,25 @@
 \usepackage{paratype}
 \usepackage{tgpagella}
 
-
 \DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
-\DeclareFontFamilySubstitution{LGR}{\rmdefault}{udidot}
-
 \definecolor{myorange}{RGB}{226, 83, 48}
 
 \newcommand\BackgroundPic{%
-\put(0,0){%
-\parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-\includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{images/participation-certificate-2024.png}%
-\vfill
+  \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering
+      \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/participation-certificate-2025.png}%
+      \vfill
 }}}
 
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 ~
-\vspace{2.2cm}
+\vspace{3.5cm}
 ~
 \begin{center}
-
-\vspace{5.9cm}
-
+\vspace{2cm}
 {\centering\fontsize{36}{48}\selectfont
 \begin{otherlanguage*}{<CERTIFICATE_HOLDER_NAME_LANG>}
 \textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
@@ -49,9 +43,8 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 
 \begin{table}[h]
 \footnotesize
-
 \begin{center}
-\fontsize{24}{36}\selectfont
+\fontsize{24}{31}\selectfont
 \vspace{1.6cm}
 \begin{otherlanguage*}{<EVENT_NAME_LANG>}
 \textcolor{myorange}{<EVENT_NAME>}
@@ -59,14 +52,15 @@ keepaspectratio]{images/participation-certificate-2024.png}%
 \end{center}
 \end{table}
 
-\end{center}
-\vspace{2.2cm}
+\begin{table}[h]
+\vspace{1.6cm}
 \begin{center}
-\hspace{-0.5cm}
+\fontsize{24}{31}\selectfont
 \begin{otherlanguage*}{<EVENT_DATE_LANG>}
 \textcolor{black}{<EVENT_DATE>}
 \end{otherlanguage*}
-%\end{tabular}
-
 \end{center}
+\end{table}
+\end{center}
+
 \end{document}
