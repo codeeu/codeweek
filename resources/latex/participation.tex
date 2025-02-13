@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
-\usepackage[T2A,T1,LGR]{fontenc}  % Added LGR for Greek
+\usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[greek,russian,english,polish]{babel}  % Added Polish support
+\usepackage[greek,russian,english]{babel}
 \usepackage{mathpazo}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[landscape,a4paper]{geometry}
@@ -16,13 +16,7 @@
 \usepackage{paratype}
 \usepackage{tgpagella}
 
-% Font substitutions
 \DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
-
-% Define fallback characters for unsupported scripts
-\DeclareTextCommandDefault{\textgeorgian}[1]{#1}
-\DeclareTextCompositeCommand{\=}{T1}{e}{ē}
-
 \definecolor{myorange}{RGB}{226, 83, 48}
 
 \newcommand\BackgroundPic{%
@@ -42,9 +36,7 @@
 \begin{center}
 \vspace{2cm}
 {\centering\fontsize{36}{48}\selectfont
-\begin{otherlanguage*}{<CERTIFICATE_HOLDER_NAME_LANG>}
 \textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
-\end{otherlanguage*}
 \par}
 
 \begin{table}[h]
@@ -52,19 +44,15 @@
 \begin{center}
 \fontsize{24}{31}\selectfont
 \vspace{1.6cm}
-\begin{otherlanguage*}{<EVENT_NAME_LANG>}
 \textcolor{myorange}{<EVENT_NAME>}
-\end{otherlanguage*}
 \end{center}
 \end{table}
 
 \vspace{0cm}
 \begin{center}
 \hspace{-0.5cm}
-\begin{otherlanguage*}{<EVENT_DATE_LANG>}
 \vspace{0cm}
 \textcolor{black}{<EVENT_DATE>}
-\end{otherlanguage*}
 \end{center}
 
 \end{document}
