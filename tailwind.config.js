@@ -10,7 +10,8 @@ module.exports = {
       backgroundImage: {
         'secondary-gradient': 'linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%)',
         'blue-gradient': 'linear-gradient(161.75deg, #1254C5 16.95%, #0040AE 31.1%)',
-        'count-gradient': 'linear-gradient(150.73deg, #1254C5 24.55%, #0040AE 68.54%)'
+        'count-gradient': 'linear-gradient(150.73deg, #1254C5 24.55%, #0040AE 68.54%)',
+        'orange-gradient': 'linear-gradient(36.92deg, #F95C22 20.32%, #FF885C 28.24%)',
       },
       colors: {
         'primary': '#F95C22',
@@ -27,7 +28,8 @@ module.exports = {
         'yellow-2': '#FFF7CC',
         'dark-blue': '#1C4DA1',
         'hover-blue': '#0A42A1',
-        'slate': '#5C656D'
+        'slate': '#5C656D',
+        'light-blue': '#F2FBFE',
       },
       screens: {
         'tablet': '993px',
