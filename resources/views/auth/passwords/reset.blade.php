@@ -4,13 +4,6 @@
 
     <section id="codeweek-forgotpassword-page" class="codeweek-page ">
 
-        <section class="codeweek-banner simple">
-            <div class="text">
-                <h2>#EUCodeWeek</h2>
-                <h1>@lang('login.reset')</h1>
-            </div>
-        </section>
-
         <section class="codeweek-content-wrapper">
 
             <section class="codeweek-content-wrapper-inside ">
