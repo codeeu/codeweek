@@ -30,20 +30,19 @@ enum GlobalSearchFiltersEnum: string
     {
         return match ($this) {
             self::ALL => [
-                'type_search' => 'all',
                 'model' => null,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
             ],
             self::PODCASTS => [
-                'type_search' => 'model',
                 'model' => Podcast::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
+                'map_fields' => [
+                    'name' => '{title}',
+                    'category' => 'Podcast',
+                    'description' => '{description}',
+                    'thumbnail' => '{url_image}',
+                    'path' => '{url}',
+                    'link_type' => 'internal',
+                    'language' => 'en',
+                ]
             ],
             self::HACKATHONS,
             self::ONLINE_COURSES,
@@ -51,44 +50,64 @@ enum GlobalSearchFiltersEnum: string
             self::CHALLENGES,
             self::PRESENTATIONS_AND_TOOLKITS,
             self::OTHERS => [
-                'type_search' => 'model',
                 'model' => StaticPage::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => '{category}',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{path}',
+                    'link_type' => '{link_type}',
+                    'language' => '{language}',
+                ]
             ],
             self::LEARN => [
-                'type_search' => 'model',
                 'model' => ResourceItem::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => 'Learn',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{source}',
+                    'link_type' => 'external',
+                    'language' => 'en',
+                ]
             ],
             self::TEACH => [
-                'type_search' => 'model',
                 'model' => ResourceItem::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => 'Teach',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{source}',
+                    'link_type' => 'external',
+                    'language' => 'en',
+                ]
             ],
             self::BLOGS => [
-                'type_search' => 'model',
                 'model' => Blog::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
+                'map_fields' => [
+                    'name' => '{name}',
+                    'category' => 'Blog',
+                    'description' => '{description}',
+                    'thumbnail' => '{thumbnail}',
+                    'path' => '{path}',
+                    'link_type' => 'external',
+                    'language' => 'en',
+                ]
             ],
             self::ACTIVITIES => [
-                'type_search' => 'model',
                 'model' => Event::class,
-                'search_fields' => [
-                    'name',
-                    'description',
-                ],
+                'map_fields' => [
+                    'name' => '{title}',
+                    'category' => 'Activities',
+                    'description' => '{description}',
+                    'thumbnail' => '{picture_path}',
+                    'path' => '{url}',
+                    'link_type' => 'internal',
+                    'language' => 'en',
+                ]
             ],
         };
     }

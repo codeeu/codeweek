@@ -19,7 +19,7 @@ return [
     'google' => 'Sign in with Google',
     'azure' => 'Sign in with Azure',
 
-    'email' => 'E-Mail Address',
+    'email' => 'Email address',
     'password' => 'Password',
     'remember' => 'Keep me signed in',
     'forgotten_password' => 'Forgot Your Password',

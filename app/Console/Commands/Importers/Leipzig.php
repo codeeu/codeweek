@@ -44,7 +44,7 @@ class Leipzig extends Command
 
         $techicalUser = ImporterHelper::getTechnicalUser('leipzig-technical');
 
-        $items = LeipzigRSSItem::all();
+        $items = LeipzigRSSItem::whereNull('imported_at')->get(); 
 
         foreach ($items as $item) {
 

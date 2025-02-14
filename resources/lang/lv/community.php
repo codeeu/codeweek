@@ -35,4 +35,12 @@ return [
         'un aplūkojiet ES programmēšanas nedēļas vēstnieku sarakstu',
         'Ja jūsu valstī jau ir vēstnieki, lūdzu, sazinieties ar viņiem tieši un noskaidrojiet, kā jūs vislabāk varētu atbalstīt šo iniciatīvu. Ja jūsu valstī neviena vēstnieka nav, varat rakstīt uz info@codeweek.eu.',
     ],
+
+    'hub_LT' => 'Latvijas Informācijas un komunikācijas tehnoloģijas asociācija',
+    'hub_level_LT' => 'Regional Hub',
+    'hub_desc_LT' => 'Latvijas Informācijas un komunikācijas tehnoloģiju asociācija (LIKTA) veicina informācijas un komunikācijas tehnoloģiju (IKT) nozares attīstību Latvijā. Organizācija iestājas par politiku, kas sekmē inovācijas, izaugsmi un konkurētspēju, vienlaikus nodrošinot biedriem resursus, kontaktu veidošanas iespējas un zināšanu apmaiņas platformas. LIKTA ciešā sadarbībā ar valsts un izglītības iestādēm strādā pie digitālās pratības veicināšanas sabiedrībā un interešu rosināšanas par karjeras iespējām IKT jomā. Tāpat asociācija organizē konferences, darbnīcas un hakatonus, lai iesaistītu un iedvesmotu nākamās paaudzes tehnoloģiju līderus. LIKTA koordinē arī CodeWeek aktivitātes Latvijā un Lietuvā.',    
+
+    'hub_LV' => 'Latvijas Informācijas un komunikācijas tehnoloģijas asociācija',
+    'hub_level_LV' => 'Regional Hub',
+    'hub_desc_LV' => 'Latvijas Informācijas un komunikācijas tehnoloģiju asociācija (LIKTA) veicina informācijas un komunikācijas tehnoloģiju (IKT) nozares attīstību Latvijā. Organizācija iestājas par politiku, kas sekmē inovācijas, izaugsmi un konkurētspēju, vienlaikus nodrošinot biedriem resursus, kontaktu veidošanas iespējas un zināšanu apmaiņas platformas. LIKTA ciešā sadarbībā ar valsts un izglītības iestādēm strādā pie digitālās pratības veicināšanas sabiedrībā un interešu rosināšanas par karjeras iespējām IKT jomā. Tāpat asociācija organizē konferences, darbnīcas un hakatonus, lai iesaistītu un iedvesmotu nākamās paaudzes tehnoloģiju līderus. LIKTA koordinē arī CodeWeek aktivitātes Latvijā un Lietuvā.',
 ];

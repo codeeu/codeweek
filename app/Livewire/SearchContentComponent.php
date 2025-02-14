@@ -48,18 +48,8 @@ class SearchContentComponent extends Component
     {
         $searchService = app(GlobalSearchService::class);
         $results = $searchService->search($this->selectedFilter, $this->searchQuery);
-        $results = collect($results);
 
-        $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $items = $results->slice(($currentPage - 1) * $this->perPage, $this->perPage)->values();
-
-        return new LengthAwarePaginator(
-            $items,
-            $results->count(),
-            $this->perPage,
-            $currentPage,
-            ['path' => request()->url(), 'query' => request()->query()]
-        );
+        return $results;
     }
 
     public function render()

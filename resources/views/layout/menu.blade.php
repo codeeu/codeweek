@@ -372,7 +372,7 @@
               />
               <button
                 class="absolute right-1.5 top-1/2 text-[18px] -translate-y-1/2 px-[60px] py-3 bg-[#F95C22] hover:bg-[#FB9D7A] rounded-full font-semibold font-['Blinker'] duration-300"
-                onclick="window.location.href = `/search?searchQuery=${document.getElementById('search-menu-input')?.value || ''}`"
+                onclick="const searchValue = document.getElementById('search-menu-input')?.value?.trim() || ''; window.location.href = searchValue ? `/search?searchQuery=${searchValue}` : '/search'"
               >
                 @lang('menu.search')
               </button>

@@ -1,157 +1,133 @@
-@extends('layout.base')
+@extends('layout.new_base')
+
+@php
+    $list = [
+      (object) ['label' => __('menu.signin'), 'href' => ''],
+    ];
+@endphp
+@section('layout.breadcrumb')
+    @include('layout.breadcrumb', ['list' => $list])
+@endsection
+
 
 @section('content')
-<section id="codeweek-login-page" class="codeweek-page">
-    <section class="codeweek-content-wrapper">
-        <div class="codeweek-content-wrapper-inside">
-            <div class="login-tabs">
-                <a href="#" id="login-tab" class="tab active-tab">@lang('login.login')</a>
-                <a href="#" id="register-tab" class="tab">@lang('login.register')</a>
-            </div>
-
-            <div class="social-media-buttons">
-                <a href="/login/twitter"><img src="/images/twitter-icon.svg" alt="Twitter"  class="codeweek-action-link-button twitter"></a>
-                <a href="/login/github"><img src="/images/github-icon.svg" alt="Google" class="codeweek-action-link-button github"></a>
-                <a href="/login/facebook"><img src="/images/facebook-icon.svg" alt="Facebook" class="codeweek-action-link-button facebook"></a>
-                <a href="/login/google"><img src="/images/google-icon.svg" alt="Google" class="codeweek-action-link-button google"></a>
-            </div>
-
-                <div class="separator-line">
-                    <div class="line"></div>
-                    <span class="separator-text">OR</span>
-                    <div class="line"></div>
+    <section id="codeweek-login-page">
+        <section class="py-10 px-5 lg:p-20 bg-secondary-gradient flex justify-center relative overflow-hidden">
+            <div class="bg-white pb-10 pt-6 px-6 lg:p-16 rounded-[2rem] w-full md:max-w-[760px] z-10">
+                <div class="flex">
+                    <a class="flex-1 flex justify-center p-4 border-b-4 border-dark-blue font-['Montserrat'] font-bold text-xl text-dark-blue cursor-pointer">
+                        @lang('login.login')
+                    </a>
+                    <a class="flex-1 flex justify-center p-4 border-b-4 border-dark-blue-300 font-['Montserrat'] font-medium text-xl text-dark-blue-400 cursor-pointer" href="/register">
+                        @lang('login.register')
+                    </a>
                 </div>
-                
-                
-            <!-- Login Form -->
-            <div id="login-form">
-                <form method="POST" action="{{ route('login') }}">
+                <div class="flex justify-center p-6 lg:p-10">
+                    <div class="flex gap-4">
+                        <a href="/login/twitter" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                            <img src="/images/social/prime_twitter.svg">
+                        </a>
+                        <a href="/login/github" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                            <img src="/images/social/fe_github.svg">
+                        </a>
+                        <a href="/login/facebook" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                            <img src="/images/social/logos_facebook.svg">
+                        </a>
+                        <a href="/login/google" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                            <img src="/images/social/devicon_google.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-black relative">
+                    <div class="uppercase px-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white font-['Blinker'] font-bold text-xl">@lang('base.or')</div>
+                </div>
+                <form class="pt-6 lg:pt-10 font-['Blinker']" method="POST" action="{{ route('login') }}">
                     {{ csrf_field() }}
 
-                    <div class="codeweek-form-field-wrapper">
-                        <label for="email">@lang('login.email')</label>
-                        <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
-                    </div>
-
-                    <div class="codeweek-form-field-wrapper">
-                        <label for="password">@lang('login.password')</label>
-                        <input id="password" type="password" name="password" required>
-                    </div>
-
-                    <div class="login-other-actions">
-                        <a href="{{ route('password.request') }}">@lang('login.forgotten_password')</a>
-                    </div>
-
-                    <div class="codeweek-form-field-checkbox">
-                        <label>
-                            <input id="remember" name="remember" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
-                            @lang('login.remember')
-                        </label>
-                    </div>
-
-                    <div class="codeweek-form-button-container">
-                        <div class="codeweek-button">
-                            <input type="submit" value="@lang('login.login')">
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Register Form -->
-            <div id="register-form" class="hidden">
-            <form method="POST" action="{{ route('register') }}">
-                    @csrf
-                    @honeypot
-
-                    <div class="codeweek-form-field-wrapper">
-                        <div class="codeweek-form-field">
-                            <label for="name">@lang('login.name')</label>
-                            <input id="name" type="text" name="name"
-                                   value="{{old('name')}}" required>
-                        </div>
-                        <div class="errors">
-                            @component('components.validation-errors', ['field'=>'name'])@endcomponent
-                        </div>
-                    </div>
-
-                    <div class="codeweek-form-field-wrapper">
-                        <div class="codeweek-form-field">
-                            <label for="email">@lang('login.email')</label>
+                    <div class="mb-6">
+                        <div>
+                            <label for="email" class="font-normal text-xl">@lang('login.email')*</label>
                             <input id="email" type="email" name="email"
+                                   class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 mt-3"
                                    value="{{old('email')}}" required autofocus>
                         </div>
-                        <div class="errors">
+                        <div class="text-error-200 font-semibold mt-2">
                             @component('components.validation-errors', ['field'=>'email'])@endcomponent
                         </div>
                     </div>
-
-
-                    <div class="codeweek-form-field-wrapper">
-                        <div class="codeweek-form-field">
-                            <label for="email">@lang('login.password')</label>
-                            <input id="password" type="password" name="password"
-                                   value="{{old('password')}}" required>
+                    <div class="mb-3">
+                        <div>
+                            <label for="password" class="font-normal text-xl">@lang('login.password')*</label>
+                            <div class="relative mt-3">
+                                <input id="password" type="password" name="password"
+                                       class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4"
+                                       value="{{old('title')}}" required>
+                                <img src="/images/eye.svg" id="password-eye" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
+                                <img src="/images/eye-slash.svg" id="password-eye-slash" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer hidden">
+                            </div>
                         </div>
-                        <div class="errors">
+                        <div class="text-error-200 font-semibold mt-2">
                             @component('components.validation-errors', ['field'=>'password'])@endcomponent
                         </div>
                     </div>
-
-                    <div class="codeweek-form-field-wrapper">
-                        <div class="codeweek-form-field">
-                            <label for="email">@lang('login.confirm_password')</label>
-                            <input id="password-confirm" type="password" name="password_confirmation" required>
-                        </div>
-                        <div class="errors">
-                            @component('components.validation-errors', ['field'=>'password-confirm'])@endcomponent
-                        </div>
+                    <div class="flex justify-end">
+                        <a class="text-dark-blue text-lg font-semibold underline" href="{{ route('password.request') }}">
+                            @lang('login.forgotten_password')
+                        </a>
+                    </div>
+                    <div class="relative flex items-center gap-3">
+                        <input id="remember" name="remember" type="checkbox"
+                               class="peer relative w-8 h-8 border-2 border-solid border-dark-blue-200 rounded-md appearance-none cursor-pointer checked:bg-dark-blue checked:border-0"
+                                {{ old('remember') ? 'checked' : '' }}>
+                        <label for="remember" class="font-normal text-[16px] cursor-pointer">@lang('login.remember')</label>
+                        <svg
+                            class="absolute top-1 w-6 h-6 hidden peer-checked:block ml-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="white"
+                            stroke-width="4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
                     </div>
 
-                    <div class="codeweek-form-field-privacy">
-                        <label>
-                            <input id="checkPrivacy" name="privacy" type="checkbox">
-                            @lang('event.privacy_login')
-                            <a href="{{route('privacy-contact-points')}}" target="_blank">privacy policy</a>
-                        </label>
-                        @component('components.validation-errors', ['field'=>'privacy'])
-                        @endcomponent
+                    <div class="flex justify-center mt-6">
+                        <input class="cursor-pointer bg-primary hover:bg-hover-orange rounded-full py-4 px-20 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300" type="submit" value="@lang('login.login')">
                     </div>
-
-                    <div class="codeweek-form-button-container">
-                        <div class="codeweek-button">
-                            <input type="submit" value="@lang('login.register')">
-                        </div>
-                    </div>
-
                 </form>
             </div>
-        </div>
-    </section>
-</section>
 
+            <img
+                class="absolute top-0 -right-1/4 h-full max-w-[calc(70vw)] object-cover opacity-70 hidden md:block"
+                loading="lazy"
+                src="../images/login_bg.png"
+                style="clip-path: ellipse(70% 140% at 70% 25%);"
+            />
+        </section>
+
+        @livewire('still-have-question-section')
+    </section>
 @endsection
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const loginTab = document.getElementById("login-tab");
-        const registerTab = document.getElementById("register-tab");
-        const loginForm = document.getElementById("login-form");
-        const registerForm = document.getElementById("register-form");
+@push('scripts')
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    const passwordInput = document.getElementById('password');
+    const eyeIcon = document.getElementById('password-eye');
+    const eyeSlashIcon = document.getElementById('password-eye-slash');
 
-        loginTab.addEventListener("click", function (event) {
-            event.preventDefault();
-            loginForm.classList.remove("hidden");
-            registerForm.classList.add("hidden");
-            loginTab.classList.add("active-tab");
-            registerTab.classList.remove("active-tab");
-        });
+    const togglePasswordVisibility = () => {
+      const isPassword = passwordInput.type === 'password';
+      passwordInput.type = isPassword ? 'text' : 'password';
+      eyeIcon.style.display = isPassword ? 'none' : 'block';
+      eyeSlashIcon.style.display = isPassword ? 'block' : 'none';
+    };
 
-        registerTab.addEventListener("click", function (event) {
-            event.preventDefault();
-            registerForm.classList.remove("hidden");
-            loginForm.classList.add("hidden");
-            registerTab.classList.add("active-tab");
-            loginTab.classList.remove("active-tab");
-        });
-    });
+    eyeIcon.addEventListener('click', togglePasswordVisibility);
+    eyeSlashIcon.addEventListener('click', togglePasswordVisibility);
+  });
 </script>
+@endpush
