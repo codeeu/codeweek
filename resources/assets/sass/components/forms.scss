@@ -165,8 +165,9 @@
 #codeweek-searchpage-component .codeweek-form-field{
   display: flex;
   justify-content: stretch;
-  flex:1;
-  align-items: center;
+  flex: 1;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 #codeweek-searchpage-component .codeweek-form-field-searchable{
@@ -227,11 +228,14 @@
 
 #codeweek-searchpage-component .codeweek-form-field input{
   flex: 1;
-  height: 57px;
-  border: 1px solid #e8e8e8;
-  border-radius: 29px;
-  text-indent: 20px;
   width: 100%;
+  border-radius: 24px;
+  border: 2px solid var(--Dark-Blue-200, #A4B8D9);
+  color: var(--Slate-500, #333E48);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 #codeweek-searchpage-component .codeweek-form-field textarea {
@@ -246,9 +250,7 @@
 
 #codeweek-searchpage-component .codeweek-form-field label{
   margin-right: 10px;
-  text-transform: uppercase;
-  width: 120px;
-  text-align: right;
+  text-align: left;
 }
 
 #codeweek-searchpage-component .codeweek-form-field.align-flex-start label{
@@ -325,21 +327,18 @@
   width: auto;
   text-align: left;
 }
-
 .login-form .codeweek-form-field-privacy,
 .login-form .codeweek-form-field-checkbox{
+.codeweek-form-field-privacy{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex: 1;
   width: 100%;
-  padding: 20px;
 }
 .codeweek-form-button-container{
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 
