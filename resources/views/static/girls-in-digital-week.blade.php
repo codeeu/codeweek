@@ -25,7 +25,11 @@
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
+                            <button
+                                id="video-modal-trigger-show"
+                                data-targetId="girls-digital-hero-video-modal"
+                                class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center"
+                            >
                                 <img class="duration-300 ml-2" src="/images/fi_play.svg" />
                             </button>
                         </div>
@@ -45,6 +49,27 @@
                 </div>
             </div>
         </section>
+
+        <div
+          id="girls-digital-hero-video-modal"
+          class="fixed left-0 top-[139px] md:top-[123px] z-[110] flex flex-col gap-6 items-center justify-center w-full p-6 h-[calc(100dvh-139px)] md:h-[calc(100dvh-123px)] bg-white duration-300 overflow-hidden"
+          style="display: none;"
+        >
+          <div class="flex-shrink-0 flex justify-end w-full">
+            <button
+              id="video-modal-trigger-hide"
+              data-targetId="girls-digital-hero-video-modal"
+              class="block bg-[#FFD700] hover:bg-[#F95C22] rounded-full p-4 duration-300"
+            >
+              <img class="w-6 h-6" src="/images/close_menu_icon.svg">
+            </button>
+          </div>
+          <div class="flex-grow flex-shrink flex flex-col justify-center max-h-full w-full overflow-hidden">
+            <video id="video" class="max-h-full max-w-full" controls src="/images/digital-girls/hero-video.mp4">
+              <source src="/images/digital-girls/hero-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
 
         <section class="animation-section relative z-10">
             <div class="relative z-10 codeweek-container-lg flex flex-col-reverse md:flex-row items-center py-20 pb-32 md:pb-48 gap-12">
