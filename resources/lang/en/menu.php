@@ -24,6 +24,7 @@ return [
     'events' => 'Activities',
     'ambassadors' => 'Ambassadors',
     'resources' => 'Resources',
+    'game_and_competitions' => 'Games & Competitions',
     'schools' => 'Schools',
     'about' => 'About',
     'blog' => 'Blog',
