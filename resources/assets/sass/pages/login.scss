@@ -140,3 +140,81 @@
 .help-block .errorlist {
   margin: 0;
 }
+
+.codeweek-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  padding: 80px 150px;
+  margin: 0 !important;
+   max-height: 850px;
+  
+}
+.codeweek-content-wrapper-inside {
+  width: 760px;
+  padding: 64px;
+  flex-direction: column !important;
+  align-items: left;
+  gap: 40px;
+  background-color: #fff;
+  border-radius: 32px;
+}
+
+
+.reset_title {
+  color: var(--Dark-Blue-500, #1C4DA1);
+
+  /* Display md/Montserrat Medium */
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -0.72px;
+  padding-bottom: 40px;
+}
+.reset_description {
+  color: var(--Slate-500, #333E48);
+
+  /* Text xl/Blinker Regular */
+  font-family: Blinker;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  padding-bottom: 40px;
+}
+
+.codeweek-form-field input, .codeweek-form-field-wrapper input {
+  padding: 12px 0px;
+}
+
+#codeweek-login-page .codeweek-form-field{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1080px) {
+  .reset_title {
+    color: var(--Dark-Blue-500, #1C4DA1);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.72px;
+    display: flex;
+    padding-bottom: 24px;
+  }
+
+  .reset_description {
+    font-family: Blinker;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    padding-bottom: 24px;
+  }
+}
+
