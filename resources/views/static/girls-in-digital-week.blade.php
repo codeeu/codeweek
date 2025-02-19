@@ -13,11 +13,11 @@
     <section id="codeweek-digital-girls" class="font-['Blinker'] overflow-hidden">
         <section class="relative flex overflow-hidden">
             <div class="flex relative transition-all w-full bg-orange-gradient pt-32 pb-0 md:py-[7.5rem]">
-                <div class="w-full overflow-hidden md:px-16 pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="order-1 px-6 flex-1 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <img
-                                class="mb-4 w-full"
+                                class="mb-4 max-w-full"
                                 src="/images/digital-girls/digital_girls_logo.svg"
                             />
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0">
@@ -97,7 +97,7 @@
                     <div class="flex flex-col xl:flex-row gap-4">
                         <a
                             class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                            href="/"
+                            href="https://codeweek.eu/blog/girls-in-digital-week"
                         >
                             <span>Read more</span>
                             <div class="flex gap-2 w-4 overflow-hidden">
@@ -119,65 +119,67 @@
         </section>
 
         <section class="relative overflow-hidden">
-            <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(170% 90% at 38% 90%);"></div>
+            <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(270% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden md:block" style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
-            <div class="relative pt-28 md:pt-48 pb-28">
-                <h2 class="text-white text-center text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-16">
-                    Resources
-                </h2>
-                <div class="codeweek-container-lg flex flex-col md:flex-row justify-between gap-20">
-                    <div class="bg-white rounded-2xl p-12 w-full">
-                        <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                            Are you a young person or parent?
-                        </h3>
-                        <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
-                            You are a <span class="font-semibold">young person</span> passionate about technology, coding, or digital creativity; explore activities near you and begin your journey today.
-                            </br>
-                            You are a <span class="font-semibold">parent</span> looking for inclusive activities for your child to participate in a safe and supportive space; discover opportunities that nurture their interest in technology and digital skills.
-                        </p>
-                        <div class="flex flex-wrap gap-4">
-                            <a
-                                class="flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
-                                href="/events"
-                            >
-                                <span>Search an activity</span>
-                            </a>
+            <div class="relative pt-20 pb-12 md:pt-48 md:pb-28">
+                <div class="codeweek-container-lg">
+                    <h2 class="text-white md:text-center text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
+                        Resources
+                    </h2>
+                    <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-20">
+                        <div class="bg-white rounded-2xl px-6 py-8 md:p-12 w-full">
+                            <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
+                                Are you a young person or parent?
+                            </h3>
+                            <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
+                                You are a <span class="font-semibold">young person</span> passionate about technology, coding, or digital creativity; explore activities near you and begin your journey today.
+                                </br>
+                                You are a <span class="font-semibold">parent</span> looking for inclusive activities for your child to participate in a safe and supportive space; discover opportunities that nurture their interest in technology and digital skills.
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <a
+                                    class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
+                                    href="/events"
+                                >
+                                    <span>Search an activity</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-white rounded-2xl p-12 w-full">
-                        <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                            Are you an educator?
-                        </h3>
-                        <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
-                            You are an educator looking to organise an activity to empower youth with digital skills in a safe and inclusive environment, where all feel welcomed to explore the endless opportunities that digital has to offer. Check our resources below for guidance and support in bringing your activity to life.
-                        </p>
-                        <div class="flex flex-wrap gap-4">
-                            <a
-                                class="flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
-                                href="/events"
-                            >
-                                <span>Organise an activity</span>
-                            </a>
-                            <a
-                                class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                href="/"
-                            >
-                                <span>Girls in DIgital Activity Guideline</span>
-                                <div class="flex gap-2 w-4 overflow-hidden">
-                                    <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
-                                    <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
-                                </div>
-                            </a>
-                            <a
-                                class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                href="/"
-                            >
-                                <span>Social Media Kit</span>
-                                <div class="flex gap-2 w-4 overflow-hidden">
-                                    <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
-                                    <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
-                                </div>
-                            </a>
+                        <div class="bg-white rounded-2xl px-6 py-8 md:p-12 w-full">
+                            <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
+                                Are you an educator?
+                            </h3>
+                            <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
+                                You are an educator looking to organise an activity to empower youth with digital skills in a safe and inclusive environment, where all feel welcomed to explore the endless opportunities that digital has to offer. Check our resources below for guidance and support in bringing your activity to life.
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <a
+                                    class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
+                                    href="/events"
+                                >
+                                    <span>Organise an activity</span>
+                                </a>
+                                <a
+                                    class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                                    href="/"
+                                >
+                                    <span>Girls in DIgital Activity Guideline</span>
+                                    <div class="flex gap-2 w-4 overflow-hidden">
+                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                    </div>
+                                </a>
+                                <a
+                                    class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                                    href="/"
+                                >
+                                    <span>Social Media Kit</span>
+                                    <div class="flex gap-2 w-4 overflow-hidden">
+                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,11 +225,12 @@
         </section>
 
         <section class="relative overflow-hidden">
-            <div class="absolute w-full h-full bg-light-blue md:hidden" style="clip-path: ellipse(170% 90% at 38% 90%);"></div>
-            <div class="absolute w-full h-full bg-light-blue hidden md:block" style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
+            <div class="absolute w-full h-full bg-light-blue md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
+            <div class="absolute w-full h-full bg-light-blue hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
+            <div class="absolute w-full h-full bg-light-blue hidden lg:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
             <div class="relative pt-28 md:pt-48 pb-28 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[708px]">
-                    <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-10">
+                    <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
                         FAQ’s
                     </h2>
 
@@ -236,7 +239,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>What is Girls in Digital?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -249,7 +252,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>Who can participate in Girls in Digital activities?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -262,7 +265,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>Why does Girls in Digital focus on girls?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -277,7 +280,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>How can I organise a Girls in Digital activity?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -290,7 +293,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>Do I need prior experience in digital skills to organise an activity?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -303,7 +306,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>What types of activities can I organise?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -316,7 +319,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>Are there any funding opportunities for Girls in Digital events?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -330,7 +333,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>Do I need any prior knowledge of coding or digital skills to join?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -343,7 +346,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>What skills will I gain by participating?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -356,7 +359,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>Can boys or nonbinary students participate in GiD activities?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -370,7 +373,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>How does Girls in Digital promote gender equality?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
@@ -383,7 +386,7 @@
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
                                 <p>What is the long-term goal of the initiative?</p>
-                                <button class="bg-yellow hover:bg-primary rounded-full w-12 h-12 duration-300 flex justify-center items-center">
+                                <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                     <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                 </button>
                             </div>
