@@ -29,13 +29,13 @@
                     </div>
 
                 </form>
+                </section>
                 <img
                     class="absolute top-0 -right-1/4 h-full max-w-[calc(70vw)] object-cover opacity-70 hidden md:block"
                     loading="lazy"
                     src="../images/login_bg.png"
                     style="clip-path: ellipse(70% 140% at 70% 25%);"
                  />
-            </section>
 
         </section>
 
