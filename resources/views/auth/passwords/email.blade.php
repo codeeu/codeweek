@@ -22,10 +22,8 @@
                         </div>
                     </div>
 
-                    <div class="codeweek-form-button-container">
-                        <div class="flex justify-center mt-6">
-                            <input class="cursor-pointer bg-primary hover:bg-hover-orange rounded-full py-4 px-20 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300" type="submit" value="@lang('login.send_password')">
-                        </div>
+                    <div class="flex justify-center mt-6">
+                        <input style="font=-family:Blinker" class="cursor-pointer bg-primary hover:bg-hover-orange rounded-full py-4 px-20 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300" type="submit" value="@lang('login.send_password')">
                     </div>
 
                 </form>
