@@ -115,6 +115,10 @@ Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name
     'remote-teaching'
 );
 
+Route::get('/dream-jobs-in-digital', [StaticPageController::class, 'static'])->name(
+    'dream-jobs-in-digital'
+);
+
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
 Route::get(
