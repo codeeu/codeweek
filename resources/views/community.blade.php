@@ -234,7 +234,7 @@
                     </div>
                 </div>
             @empty
-                @lang('ambassador.no_ambassadors') :(<br />
+              
             @endforelse
         </div>
 
