@@ -105,10 +105,8 @@
                                     @lang('community.titles.0')
                                 </h4>
                                 <p
-                                    class="text-xl hidden md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                                    consequat, vel
-                                    illum dolore eu feugiat nulla facilisis at vero.
+                                    class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
+                                    vibrant network of educators, volunteers and ambassadors driving EU Code Week forward. Connect, collaborate and inspire the next generation of digital innovators in your country — and beyond.
 
                                 </p>
                                 <a class="hidden bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
