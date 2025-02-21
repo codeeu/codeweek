@@ -30,6 +30,11 @@ module.exports = {
         'hover-blue': '#0A42A1',
         'slate': '#5C656D',
         'light-blue': '#F2FBFE',
+        'error-200': '#E30519',
+        'dark-blue-50': '#E8EDF6',
+        'dark-blue-200': '#A4B8D9',
+        'dark-blue-300': '#7794C7',
+        'dark-blue-400': '#4971B4'
       },
       screens: {
         'tablet': '993px',
