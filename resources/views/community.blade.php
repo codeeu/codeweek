@@ -10,6 +10,10 @@
     @endsection
 
     <style>
+
+        .nice-select .option.selected {
+            color: black!important;
+        }
         .leaflet-top.leaflet-left {
             display: none;
         }
@@ -101,7 +105,7 @@
                                     @lang('community.titles.0')
                                 </h4>
                                 <p
-                                    class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
+                                    class="text-xl hidden md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
                                     Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
                                     consequat, vel
                                     illum dolore eu feugiat nulla facilisis at vero.
