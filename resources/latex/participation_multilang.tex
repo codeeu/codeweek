@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
-\usepackage[LGR,T2A,T1]{fontenc} % Force LGR first for Greek
+\usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[greek,russian,english]{babel}
+\usepackage[english,greek,russian,polish,german,french,georgian]{babel} % 
 \usepackage[landscape,a4paper]{geometry}
 \geometry{verbose,tmargin=0cm,bmargin=0cm,lmargin=3cm,rmargin=3cm}
 \usepackage{fancybox}
@@ -63,16 +63,4 @@
     \textcolor{Slate600}{\fontsize{13}{13}\selectfont Which took place on} \\
     \vspace{0.5cm}
 
-    % Event Date in the correct language
-    \begin{otherlanguage*}{greek}
-        \textcolor{Slate600}{\fontsize{24}{28}\selectfont <EVENT_DATE>}
-    \end{otherlanguage*} \\
-
-    % Add a horizontal line centered below EVENT_DATE
-    \vspace{0.3cm} % Adjust vertical spacing
-    \centering
-    \textcolor{GrayLine}{\rule{183pt}{2pt}} % Line: width=183pt (~377px), height=2pt
-
-\end{center}
-
-\end{document}
+    % Event Da

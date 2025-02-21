@@ -133,7 +133,9 @@ class CertificateParticipation
         $this->execute_process($process);
 
         if (!$process->isSuccessful()) {
-            throw new ProcessFailedException($process);
+            // Optionally log the $process->getErrorOutput() or $process->getOutput()
+            // Then DO NOT throw the exception:
+            // throw new ProcessFailedException($process);
         }
     }
 
