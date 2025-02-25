@@ -25,9 +25,10 @@
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
-                              <img class="duration-300 ml-2" src="/images/fi_play.svg" />
-                          </button>
+                            @include('layout.video-player', [
+                                'id' => 'girls-digital-hero',
+                                'src' => 'https://www.youtube.com/embed/z4IkeLRuF9E?si=hLAEtN4PDfbigb5M',
+                            ])
                         </div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
@@ -72,7 +73,8 @@
                     <div class="flex flex-col xl:flex-row gap-4">
                         <a
                             class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                            href="https://codeweek.eu/blog/girls-in-digital-week"
+                            target="_blank"
+                            href="/docs/girls-in-digital/girls-in-digital-about.pdf"
                         >
                             <span>Read more</span>
                             <div class="flex gap-2 w-4 overflow-hidden">
@@ -136,7 +138,8 @@
                                 </a>
                                 <a
                                     class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                    href="/"
+                                    target="_blank"
+                                    href="/docs/girls-in-digital/girls-in-digital-activity-guidelines.pdf"
                                 >
                                     <span>Girls in DIgital Activity Guideline</span>
                                     <div class="flex gap-2 w-4 overflow-hidden">
@@ -146,7 +149,8 @@
                                 </a>
                                 <a
                                     class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                    href="/"
+                                    target="_blank"
+                                    href="/docs/girls-in-digital/girls-in-digital-media-kit.pdf"
                                 >
                                     <span>Social Media Kit</span>
                                     <div class="flex gap-2 w-4 overflow-hidden">
