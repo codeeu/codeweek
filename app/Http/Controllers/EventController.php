@@ -186,7 +186,7 @@ class EventController extends Controller
             ->pluck('id')
             ->toArray();
         $selected_audiences = implode(',', $selected_audiences);
-        $selected_country = $event->country()->first()->iso;
+        $selected_country = $event->country()->first()?->iso ?? '';
         $selected_language = is_null($event->language)
             ? 'en'
             : $event->language;
