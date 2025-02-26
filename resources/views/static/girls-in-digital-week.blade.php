@@ -2,7 +2,7 @@
 
 @php
     $list = [
-      (object) ['label' => 'Seasonal LP', 'href' => ''],
+      (object) ['label' => 'Girls in Digital', 'href' => ''],
     ];
 @endphp
 @section('layout.breadcrumb')
