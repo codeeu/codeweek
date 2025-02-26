@@ -141,6 +141,15 @@
   margin: 0;
 }
 
+
+.codeweek-content-wrapper-add {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  padding: 80px;
+}
+
 .codeweek-content-wrapper {
   display: flex;
   justify-content: center;
@@ -148,7 +157,7 @@
   height: 100%;
   padding: 80px 150px;
   margin: 0 !important;
-   max-height: 850px;
+  max-height: 850px;
   
 }
 .codeweek-content-wrapper-inside {
@@ -203,6 +212,12 @@
   align-items: flex-start;
   flex-direction: column;
   align-content: flex-start;
+}
+.codeweek-form-field-add {  
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
 }
 
 @media screen and (max-width: 1080px) {
