@@ -35,7 +35,6 @@
                     style="clip-path: ellipse(70% 140% at 70% 25%);"
                  />
 
-        </section>
-
-    </section>
-@endsection
+                </section>
+            </section>
+        @endsection
