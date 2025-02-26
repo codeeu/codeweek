@@ -2,7 +2,7 @@
 
 @php
     $list = [
-      (object) ['label' => 'Seasonal LP', 'href' => ''],
+      (object) ['label' => 'Girls in Digital', 'href' => ''],
     ];
 @endphp
 @section('layout.breadcrumb')
@@ -21,7 +21,7 @@
                                 src="/images/digital-girls/digital_girls_logo.svg"
                             />
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0">
-                                Empower, Inspire and Celebrate the next generation of girls and young Europeans!
+                                Empower, inspire and celebrate the next generation of girls and young Europeans!
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">

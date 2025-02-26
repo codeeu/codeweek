@@ -2,7 +2,7 @@
 
 @php
     $list = [
-      (object) ['label' => 'Seasonal LP', 'href' => ''],
+      (object) ['label' => 'Dream jobs in Digital', 'href' => ''],
     ];
 
     $results = [
@@ -226,7 +226,8 @@
                 style="transform: translate(-16px, -24px)"
             ></div>
             <div
-                class="animation-element move-background duration-[1.5s] absolute z-0 -bottom-32 right-40 w-28 h-28 hidden lg:block bg-[#99E1F4] rounded-full"
+
+                class="animation-element move-background duration-[1.5s] absolute z-0 lg:-bottom-20 xl:-bottom-32 right-40 w-28 h-28 hidden lg:block bg-[#99E1F4] rounded-full"
                 style="transform: translate(-16px, -24px)"
             ></div>
         </section>
@@ -234,12 +235,15 @@
         <section class="relative overflow-hidden">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-blue-gradient hidden lg:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
+
+            <div class="absolute w-full h-full bg-blue-gradient hidden lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
+            <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
                 <h2 class="text-white md:text-center text-3xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
                     @lang('dream-jobs-in-digital.resources')
                 </h2>
-                <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-20">
+
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 xl:gap-20">
                     @foreach($resources as $resource)
                         <div class="px-6 py-8 md:p-12 rounded-2xl bg-white gap-4 sm:gap-10 grid grid-cols-1 sm:grid-cols-2">
                             <div class="flex-1 flex flex-col justify-between order-1">
