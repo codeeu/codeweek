@@ -11,7 +11,8 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'landing_header' => 'Empower, Inspire and Celebrate the next generation of girls and young Europeans!',
+
+    'landing_header' => 'Empower, inspire and celebrate the next generation of girls and young Europeans!',
     'about_girls_title' => 'About Girls in Digital',
     'about_girls_description_1' => 'Get ready to celebrate Girls in Digital Week from 24–28 March 2025, as we put a spotlight on inclusion, innovation, and the limitless opportunities digital skills offer to all!',
     'about_girls_description_2' => 'Girls in Digital is part of a larger movement to inspire and empower the next generation of young Europeans—regardless of gender—to thrive in an inclusive digital world. Our purpose? To break down barriers and ensure that every young person—girl, boy, or non-binary—has the confidence to explore STE(A)M fields, embrace tech careers, and drive the future of innovation.',
