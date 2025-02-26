@@ -114,20 +114,33 @@
 
 @push('scripts')
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    const passwordInput = document.getElementById('password');
-    const eyeIcon = document.getElementById('password-eye');
-    const eyeSlashIcon = document.getElementById('password-eye-slash');
+    document.addEventListener('DOMContentLoaded', function() {
+        const passwordInput = document.getElementById('password');
+        const eyeIcon = document.getElementById('password-eye');
+        const eyeSlashIcon = document.getElementById('password-eye-slash');
 
-    const togglePasswordVisibility = () => {
-      const isPassword = passwordInput.type === 'password';
-      passwordInput.type = isPassword ? 'text' : 'password';
-      eyeIcon.style.display = isPassword ? 'none' : 'block';
-      eyeSlashIcon.style.display = isPassword ? 'block' : 'none';
-    };
+        const togglePasswordVisibility = (event) => {
+            event.preventDefault(); // Prevents unintended behavior
 
-    eyeIcon.addEventListener('click', togglePasswordVisibility);
-    eyeSlashIcon.addEventListener('click', togglePasswordVisibility);
-  });
+            if (passwordInput.type === 'password') {
+                passwordInput.setAttribute('type', 'text');
+                eyeIcon.classList.add('hidden');
+                eyeSlashIcon.classList.remove('hidden');
+            } else {
+                passwordInput.setAttribute('type', 'password');
+                eyeIcon.classList.remove('hidden');
+                eyeSlashIcon.classList.add('hidden');
+            }
+
+            // Refocus input after changing type to avoid losing cursor position
+            passwordInput.focus();
+            const val = passwordInput.value;
+            passwordInput.value = ''; // Temporarily clear
+            passwordInput.value = val; // Restore to keep cursor at the end
+        };
+
+        eyeIcon.addEventListener('mousedown', togglePasswordVisibility);
+        eyeSlashIcon.addEventListener('mousedown', togglePasswordVisibility);
+    });
 </script>
 @endpush
