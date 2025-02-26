@@ -28,42 +28,42 @@ return [
     'tags' => 'Tags',
     'image' => 'Image',
     'start' => [
-        'label' => 'Start date',
-        'placeholder' => 'When does the activity start ?',
+        'label' => 'Date',
+        'placeholder' => 'Select start date',
     ],
     'end' => [
         'label' => 'End date',
-        'placeholder' => 'When does the activity end ?',
+        'placeholder' => 'Select end date',
     ],
     'organizer' => [
         'label' => 'Name of organisation',
-        'placeholder' => 'Organisation you work in or volunteer for',
+        'placeholder' => 'Enter Organisation name',
     ],
     'website' => [
-        'label' => 'Organiser\'s Website',
-        'placeholder' => 'Do you have a website with more information ?',
+        'label' => 'Website',
+        'placeholder' => 'Enter URL',
     ],
     'description' => [
-        'label' => 'Description',
+        'label' => 'Activity description',
         'placeholder' => 'Briefly describe the activity planned.',
     ],
     'contact' => [
         'label' => 'Contact email',
-        'placeholder' => 'This email will be used for important EU Code Week correspondence',
+        'placeholder' => 'Enter email',
         'explanation' => 'Your contact email will only be visible to EU Code Week Ambassadors and Code week organisers, who will check your activity before it appears on the map and might contact you if edits are necessary or for administering surveys for statistical purposes after the activity.',
     ],
     'public' => [
         'label' => 'Public email',
-        'placeholder' => 'Would you like to display a contact email ?',
+        'placeholder' => 'Enter email',
 
     ],
     'title' => [
-        'label' => 'Activity Title',
-        'placeholder' => 'What is the name of the activity ?',
+        'label' => 'Activity title',
+        'placeholder' => 'Enter activity title',
     ],
     'address' => [
         'label' => 'Address',
-        'placeholder' => 'Where will the activity be taking place?',
+        'placeholder' => 'Enter Address',
     ],
 
     'organizertype' => [
@@ -110,12 +110,12 @@ return [
         'Promoting diversity' => 'Promoting diversity',
     ],
     'codeweek_for_all_participation_code' => [
-        'title' => 'CODE WEEK 4 ALL CODE',
+        'title' => 'Code Week 4 all code',
         'explanation' => 'If you have received a Code Week 4 all code from a school colleague or a friend paste it here, otherwise please leave it blank. More info about Code Week 4 All are available',
         'link' => 'here',
     ],
     'thanks_page' => [
-        'title' => 'Thanks for adding your activity!',
+        'title' => 'Thank you for adding your activity!',
         'phrase1' => 'One of our local ambassadors will now review your activity',
         'phrase2' => 'and make sure everything looks ok.',
         'phrase3' => 'If you have any questions, get in touch with one of our',
@@ -133,8 +133,8 @@ return [
         'Other' => 'Other',
     ],
     'activitytype' => [
-        'label' => 'Activity Type',
-        'placeholder' => '',
+        'label' => 'Activity type',
+        'placeholder' => 'Select activity type',
         'open-online' => 'Open online activity',
         'invite-online' => 'Invite-only online activity',
         'open-in-person' => 'Open in-person activity',

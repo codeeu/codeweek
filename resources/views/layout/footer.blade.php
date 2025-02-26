@@ -120,9 +120,9 @@
     </div>
     <div
       id="scroll-top-btn"
-      class="fixed z-[100] -bottom-2 hover:bottom-0 right-[50px] bg-yellow hover:bg-primary p-4 pb-6 rounded-t-full duration-300 cursor-pointer"
+      class="fixed z-[100] -bottom-2 hover:bottom-0 right-[20px] bg-yellow hover:bg-primary p-3 pb-4 md:p-4 md:pb-6 rounded-t-full duration-300 cursor-pointer"
     >
-      <img class="icon-rotate-270" src="/images/arrow-up-icon.svg" />
+      <img class="icon-rotate-270 w-6 h-6 md:w-8 md:h-8" src="/images/arrow-up-icon.svg" />
     </div>
 
     <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">

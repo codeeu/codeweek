@@ -11,12 +11,11 @@ trait LanguageDetection
 
         $split = preg_split('/[\p{Greek}]/u', $text);
         if (count($split) > 1) {
-            Log::info('Detected as Greek: '.$text);
+            Log::info('Detected as Greek: ' . $text);
 
             return true;
         }
 
         return false;
-
     }
 }

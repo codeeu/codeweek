@@ -2,8 +2,6 @@
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[greek,russian,english]{babel}
-\usepackage{mathpazo}
-\renewcommand{\familydefault}{\sfdefault}
 \usepackage[landscape,a4paper]{geometry}
 \geometry{verbose,tmargin=0cm,bmargin=0cm,lmargin=3cm,rmargin=3cm}
 \usepackage{fancybox}
@@ -13,11 +11,13 @@
 \usepackage{url}
 \usepackage{eso-pic}
 \usepackage{textcomp}
-\usepackage{paratype}
-\usepackage{tgpagella}
+\usepackage{tgheros} % Use TeX Gyre Heros for a lighter Helvetica
+\renewcommand{\familydefault}{\sfdefault}
 
-\DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
+\usepackage{xcolor}
 \definecolor{myorange}{RGB}{226, 83, 48}
+\definecolor{Slate600}{HTML}{20262C} 
+\definecolor{GrayLine}{HTML}{858B91} % Define gray color for the line
 
 \newcommand\BackgroundPic{%
   \put(0,0){%
@@ -34,37 +34,26 @@
 \vspace{3.5cm}
 ~
 \begin{center}
-\vspace{2cm}
-{\centering\fontsize{36}{48}\selectfont
-\begin{otherlanguage*}{russian}
-\textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
-\end{otherlanguage*}
-\par}
-\begin{table}[h]
-\footnotesize
-\begin{center}
-\fontsize{24}{31}\selectfont
-\vspace{1.6cm}
-\begin{otherlanguage*}{russian}
-\end{otherlanguage*}
-\end{center}
-\end{table}
-\begin{table}[h]
-\vspace{1.6cm}
-\begin{center}
-\fontsize{24}{31}\selectfont
-\textcolor{myorange}{<EVENT_NAME>}
-\end{center}
-\end{table}
-\end{center}
-\vspace{0cm}
-\begin{center}
- 
-\hspace{-0.5cm}
-\begin{otherlanguage*}{russian}
-\vspace{0cm}
-\textcolor{black}{<EVENT_DATE>}
-\end{otherlanguage*}
+    \vspace{1cm} % Adjust spacing for alignment
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont This certificate recognizes that} \\
+    \vspace{0.5cm}
+    \textcolor{myorange}{\fontsize{28}{32}\selectfont <CERTIFICATE_HOLDER_NAME>} \\
+    \vspace{0.5cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Has developed essential computational thinking skills} \\
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont and contributed to the success of} \\
+    \vspace{0.8cm}
+    \textcolor{myorange}{\fontsize{36}{42}\selectfont EU CodeWeek 2025} \\
+    \vspace{0.8cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont by actively participating in the coding event} \\
+    \vspace{0.5cm}
+    \textcolor{myorange}{\fontsize{28}{32}\selectfont <EVENT_NAME>} \\
+    \vspace{0.5cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Which took place on} \\
+    \vspace{0.5cm}
+    \textcolor{Slate600}{\fontsize{24}{28}\selectfont <EVENT_DATE>} \\
+    \centering
+    \textcolor{GrayLine}{\rule{183pt}{2pt}} % Line: width=377px (~283pt), height=2pt
+
 \end{center}
 
 \end{document}
