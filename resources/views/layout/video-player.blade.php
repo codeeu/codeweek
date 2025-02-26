@@ -16,9 +16,16 @@
                     </button>
                 </div>
                 <div class="flex-grow flex-shrink flex flex-col justify-center max-h-full w-full overflow-hidden">
-                    <video id="video" class="max-h-full max-w-full" controls src="{{ $src }}">
-                        <source src="{{ $src }}" type="video/mp4">
-                    </video>
+                    @if ($src && Str::contains($src, ['youtube.com', 'youtu.be']))
+                        <iframe id="youtube-video" class="w-full h-full" src="" data-src="{{ $src }}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    @else
+                        <video id="video" class="max-h-full max-w-full" controls src="{{ $src }}">
+                            <source src="{{ $src }}" type="video/mp4">
+                        </video>
+                    @endif
                 </div>
             </div>
         @endpush
