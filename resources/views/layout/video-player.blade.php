@@ -17,7 +17,8 @@
                 </div>
                 <div class="flex-grow flex-shrink flex flex-col justify-center max-h-full w-full overflow-hidden">
                     @if ($src && Str::contains($src, ['youtube.com', 'youtu.be']))
-                        <iframe class="w-full h-full" src="{{ $src }}" frameborder="0"
+                        <iframe id="youtube-video" class="w-full h-full" src="" data-src="{{ $src }}"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     @else
