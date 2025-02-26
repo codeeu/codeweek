@@ -118,13 +118,13 @@
                                 <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
                             </div>
                             <div class="relative flex-grow hidden xl:flex flex-col gap-4 w-60 mb-2">
-                                <img class="w-full h-auto" src="/images/resource-menu-bg.png" alt="">
+                                <img class="w-full h-auto rounded-lg" src="/images/resource-menu-bg.png" alt="">
                                 <div class="absolute w-full bottom-0 left-0 p-4">
-                                  <div class="text-white text-xl font-semibold mb-1">@lang('menu.featured_activities')</div>
+                                  <div class="text-white text-xl font-semibold mb-1">@lang('menu.girls_in_digital')</div>
                                   <div class="text-white text-[16px] font-medium mb-2">
-                                    Lorem ipsum dolor sit amet duis autem vel eum.
+                                      Celebrating diversity through tech innovation and creativity
                                   </div>
-                                  <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/featured-activities">
+                                  <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('girls-in-digital-week')}}">
                                       <span class="text-base leading-7 font-semibold text-black normal-case">
                                           See more
                                       </span>
