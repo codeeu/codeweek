@@ -26,6 +26,7 @@ module.exports = {
         'grey-2': '#DEDEDE',
         'yellow': '#FFD700',
         'yellow-2': '#FFF7CC',
+        'yellow-50': '#FFFBE5',
         'dark-blue': '#1C4DA1',
         'hover-blue': '#0A42A1',
         'slate': '#5C656D',
