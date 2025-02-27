@@ -409,16 +409,15 @@
   border-top: 1px solid #e8e8e8;
   margin-top: 30px;
   padding-top: 20px;
-}
 
-
-p:first-child {
-  padding-top: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: $main-color;
-  margin-top: -15px;
+  p:first-child {
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $main-color;
+    margin-top: -15px;
+  }
 }
 
 .codeweek-form-inner-two-columns {
@@ -704,7 +703,7 @@ p:first-child {
 
 .codeweek-display-field {
   margin-bottom: 20px;
-}
+
   p {
     padding: 5px;
   }
@@ -731,6 +730,7 @@ p:first-child {
   .share-event-wrapper {
     margin-top: 5px;
   }
+}
 
 .login-form .codeweek-form-field-wrapper {
   margin-bottom: 15px;

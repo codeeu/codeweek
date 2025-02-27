@@ -70,7 +70,7 @@
                     <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6">
                         Girls in Digital is part of a larger movement to inspire and empower the next generation of young Europeans—regardless of gender—to thrive in an inclusive digital world. Our purpose? To break down barriers and ensure that every young person—girl, boy, or non-binary—has the confidence to explore STE(A)M fields, embrace tech careers, and drive the future of innovation.
                     </p>
-                    <div class="flex flex-col xl:flex-row gap-4">
+                    <div class="flex flex-col xl:flex-row gap-4 mb-4 xl:mb-6">
                         <a
                             class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                             href="https://codeweek.eu/blog/girls-in-digital-week"
@@ -81,6 +81,26 @@
                                 <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                             </div>
                         </a>
+                    </div>
+                    <div class="flex flex-col 2xl:flex-row gap-4">
+                        <div class="flex flex-wrap gap-4">
+                            <a
+                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
+                                href="https://www.codeweekcoders.eu/"
+                                target="_blank"
+                            >
+                                <span>Minecraft Play-alongs During GiD Week</span>
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <a
+                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
+                                href="/docs/girls-in-digital/open-call-for-new-code-week-challenges_v2.pdf"
+                                target="_blank"
+                            >
+                                <span>Open Call for GiD Challenges</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,12 +194,14 @@
                         <a
                             class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]"
                             href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Young_people_-_digital_world"
+                            target="_blank"
                         >
                             <img src="/images/digital-girls/fig-1.png" alt="Young people – digital world. Eurostat 2023" />
                         </a>
                         <a
                             class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]"
                             href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=ICT_specialists_in_employment#Explore_further"
+                            target="_blank"
                         >
                             <img src="/images/digital-girls/fig-2.png" alt="ICT specialists in employment. Eurostat 2023" />
                         </a>
@@ -191,6 +213,7 @@
                         <a
                             class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]"
                             href="https://unesdoc.unesco.org/ark:/48223/pf0000253479"
+                            target="_blank"
                         >
                             <img src="/images/digital-girls/fig-3.png" alt="Cracking the code: Girls’ and women’s education in science, technology, engineering and mathematics (STEM). United Nations Educational, Scientific and Cultural Organization (UNESCO), 2017." />
                         </a>
