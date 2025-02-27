@@ -1,7 +1,7 @@
 <section id="still-have-question-section">
     <div class="animation-section relative bg-[#F2FBFE]">
         <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center py-20 gap-12">
-            <div class="flex-1 flex flex-col items-start">
+            <div class="flex-1 flex flex-col items-start w-full">
                 <h2 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-10 md:mb-6">
                     @lang('base.still_have_question')
                 </h2>
