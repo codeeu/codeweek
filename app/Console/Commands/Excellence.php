@@ -63,6 +63,5 @@ class Excellence extends Command
                 Log::info($ex->getMessage());
             }
         }
-
     }
 }
