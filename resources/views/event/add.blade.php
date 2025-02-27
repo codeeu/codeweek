@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section id="codeweek-searchpage-component" class="codeweek-page">
+    <section id="codeweek-events-add-page" class="codeweek-page">
 
         <section class="codeweek-content-wrapper" x-data="addActivity()">
 
