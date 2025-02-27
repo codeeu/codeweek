@@ -121,7 +121,6 @@ export default {
 </script>
 
 <style scoped>
-/* Existing styles remain the same */
 :deep(.dp__input) {
   border: none;
   --tw-ring-color: none;

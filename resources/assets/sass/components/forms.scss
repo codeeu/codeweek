@@ -126,28 +126,24 @@
   }
 }
 
-#codeweek-searchpage-component .codeweek-form-inner-two-columns,
-#codeweek-register-page .codeweek-form-inner-two-columns {
+.codeweek-form-inner-two-columns {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
 }
 
-#codeweek-searchpage-component .codeweek-form-inner-container,
-#codeweek-register-page .codeweek-form-inner-container {
+.codeweek-form-inner-container {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-#codeweek-searchpage-component .codeweek-form-inner-container:last-child,
-#codeweek-register-page .codeweek-form-inner-container:last-child {
+.codeweek-form-inner-container:last-child {
   margin-left: 20px;
 }
 
-#codeweek-searchpage-component .codeweek-form-field-wrapper,
-#codeweek-register-page .codeweek-form-field-wrapper {
+.codeweek-form-field-wrapper {
   margin-bottom: 15px;
 }
 
@@ -212,7 +208,7 @@
   width: 100%;
 }
 
-#codeweek-searchpage-component .codeweek-form-field textarea {
+.codeweek-form-field textarea {
   flex: 1;
   border-radius: 29px;
   border: 1px solid #e8e8e8;
@@ -231,7 +227,7 @@
   margin-top: 10px;
 }
 
-#codeweek-searchpage-component .codeweek-form .codeweek-input-select {
+.codeweek-form .codeweek-input-select {
   flex: 1;
   height: 57px;
   width: auto;
@@ -256,11 +252,11 @@
   right: 20px;
 }
 
-#codeweek-searchpage-component .codeweek-form .codeweek-form-inner-container h3 {
+.codeweek-form .codeweek-form-inner-container h3 {
   margin-bottom: 15px;
 }
 
-#codeweek-searchpage-component .codeweek-form .input-tag-wrapper {
+.codeweek-form .input-tag-wrapper {
   border: 1px solid #e8e8e8;
   border-radius: 29px;
 }
@@ -275,7 +271,7 @@
   max-width: 90%;
 }
 
-#codeweek-searchpage-component .codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
+.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
   padding: 0;
   margin: 0;
   height: 59px;
@@ -286,7 +282,7 @@
   flex: 1;
 }
 
-#codeweek-searchpage-component .codeweek-form-message {
+.codeweek-form-message {
   padding: 30px;
   background-color: #e8e8e8;
   border-radius: 20px;
@@ -440,202 +436,4 @@
   .share-event-wrapper {
     margin-top: 5px;
   }
-}
-
-.login-form .codeweek-form-field-wrapper {
-  margin-bottom: 15px;
-}
-
-.login-form .codeweek-form-field-wrapper .errors {
-  margin-left: 140px;
-  font-size: 13px;
-  color: red;
-}
-
-.login-form .codeweek-form-field-wrapper .info {
-  margin-left: 140px;
-  font-size: 14px;
-  color: #40b5d1;
-}
-
-.login-form .codeweek-form-field-wrapper .errors .errorlist {
-  margin: 0;
-}
-
-.login-form .codeweek-form-field {
-  display: flex;
-  justify-content: stretch;
-  flex: 1;
-  align-items: center;
-}
-
-.login-form .codeweek-form-field input {
-  flex: 1;
-  height: 57px;
-  border: 1px solid #e8e8e8;
-  border-radius: 29px;
-  text-indent: 20px;
-  width: 100%;
-}
-
-.login-form .codeweek-form-field textarea {
-  flex: 1;
-  border-radius: 29px;
-  border: 1px solid #e8e8e8;
-  text-indent: 20px;
-  font-family: $font-family-sans-serif;
-  font-size: 14px;
-  padding-top: 16px;
-}
-
-.login-form .codeweek-form-field label {
-  margin-right: 10px;
-  text-transform: uppercase;
-  width: 120px;
-  text-align: right;
-}
-
-.login-form .codeweek-form-field-privacy,
-.login-form .codeweek-form-field-checkbox {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  width: 100%;
-  padding: 20px;
-}
-
-.login-form .codeweek-form-field-checkbox {
-  text-transform: uppercase;
-  justify-content: flex-start;
-}
-
-.login-form .codeweek-form-field-privacy,
-.login-form .codeweek-form-field-checkbox {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  width: 100%;
-  padding: 20px;
-}
-
-.login-form  [type="checkbox"],
-.login-form  [type="radio"] {
-  appearance: none;
-  padding: 0px;
-  -webkit-print-color-adjust: exact;
-  display: inline-block;
-  vertical-align: middle;
-  background-origin: border-box;
-  user-select: none;
-  flex-shrink: 0;
-  height: 1rem;
-  width: 1rem;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(107, 114, 128);
-  --tw-shadow: 0 0 #0000;
-}
-
-input {
-  margin: 0px;
-  line-height: 1.15;
-  border: 0px;
-  font-family: inherit;
-  outline: none;
-}
-
-.event select:before {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-}
-
-.event .v3ti-new-tag {
-  @apply w-full px-6 py-3  md:max-w-[472px] rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange max-md:px-5 max-md:max-w-full;
-}
-
-.event .input-tag-wrapper {
-  width: 100%;
-}
-
-.event .v3ti .v3ti-content {
-  justify-content: flex-end;
-}
-
-.event .v3ti .v3ti-new-tag {
-  height: 48px !important;
-}
-
-.event .input-tag-wrapper:focus {
-  all: unset;
-}
-
-.event .v3ti {
-  border: none !important;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.event input:focus {
-  @apply placeholder-dark-orange;
-}
-
-.event select {
-  background-image: none !important;
-}
-
-.event .tox {
-  max-width: 472px;
-  height: 280px !important;
-  width: 100%;
-  border: 2px solid #e2e2e2;
-  border-radius: 24px !important;
-}
-
-@media (max-width: 640px) {
-  .event .tox {
-    max-width: 100%; /* Let the editor stretch to fill smaller screens */
-  }
-}
-
-#id_description-container {
-  max-width: 460px; /* Maintain a max width */
-  width: 100%; /* Allow responsive behavior */
-}
-
-.tox:not(.tox-tinymce-inline) .tox-editor-header {
-  display: none !important;
-}
-
-.event .tox .tox-statusbar {
-  display: none !important;
-}
-
-.event .tox {
-  transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition for focus */
-}
-
-.event .tox:focus {
-  border-color: #b63100; /* Change border color on focus */
-  color: #b63100; /* Change text color on focus */
-}
-
-#id_description:focus-within {
-  border-color: #b63100; /* Change border color when focused */
-  color: #b63100; /* Change text color when focused */
-}
-
-[x-cloak] {
-  display: none;
-}
-
-div[data-lastpass-icon-root] {
-  display: none !important;
-}
-
-.event ul {
-  list-style: none;
-  line-height: 1.5;
-  padding: 0;
-  margin: 10px 0;
 }
