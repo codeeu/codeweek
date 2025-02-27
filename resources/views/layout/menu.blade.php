@@ -9,6 +9,7 @@
                 <img src="/images/logo_icon.svg" alt="CodeWeek">
             </a>
         </div>
+
         <nav id="primary-menu" class="flex-grow font-['Montserrat']">
             <ul class="max-xl:flex max-xl:flex-col max-xl:!items-start max-xl:overflow-auto max-xl:pt-6 main-menu">
                 <li class="!pt-16 md:!pt-12 !pb-8 xl:hidden max-xl:w-full">
@@ -22,7 +23,7 @@
                     </div>
                 </li>
 
-              {{-- language --}}
+                {{-- language --}}
                 <li class="main-menu-item xl:hidden">
                     <a
                         class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
@@ -74,10 +75,14 @@
                         <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
-                        <li><a href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
-                        <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
-                        <li><a href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
+                        <li class="menu-title max-xl:hidden">
+                          @lang('menu.events')
+                          <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
+                        </li>
+                        <li><a class="cookweek-link hover-underline" href="{{route('events_map')}}">@lang('menu.map')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
                     </ul>
                 </li>
 
@@ -91,17 +96,42 @@
                         <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
-                        <li><a href="/podcasts">Podcasts</a></li>
-                        <li><a href="{{route('hackathons')}}">Hackathons</a></li>
-                        <li><a href="{{route('online-courses')}}">Online Courses</a></li>
-                        <li><a href="{{route('training.index')}}">@lang('menu.training')</a></li>
-                        <li><a href="{{route('challenges')}}">@lang('menu.challenges')</a></li>
-                        <li><a href="{{route('dance')}}">@lang('snippets.dance.menu')</a></li>
-                        <li><a href="{{route('resources_learn')}}">@lang('menu.learn')</a></li>
-                        <li><a href="{{route('resources_teach')}}">@lang('menu.teach')</a></li>
-                        <li><a href="{{route('toolkits')}}">@lang('menu.toolkits')</a></li>
-
+                        <li class="menu-title max-xl:hidden">
+                          @lang('menu.resources')
+                          <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
+                        </li>
+                        <li class="xl:flex gap-16">
+                            <div class="flex-grow flex flex-col gap-4 mb-4 xl:mb-0">
+                                <div class="hidden xl:block text-[#20262C] font-semibold text-lg">@lang('menu.resources')</div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('coding@home')}}">@lang('menu.coding@home')</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">Podcasts</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('online-courses')}}">Online Courses</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('training.index')}}">@lang('menu.training')</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_learn')}}">@lang('menu.learn')</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_teach')}}">@lang('menu.teach')</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
+                              </div>
+                              <div class="flex-grow flex flex-col gap-4">
+                                <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('challenges')}}">@lang('menu.challenges')</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">Hackathons</a></div>
+                                <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
+                            </div>
+                            <div class="relative flex-grow hidden xl:flex flex-col gap-4 w-60 mb-2">
+                                <img class="w-full h-auto rounded-lg" src="/images/resource-menu-bg.png" alt="">
+                                <div class="absolute w-full bottom-0 left-0 p-4">
+                                  <div class="text-white text-xl font-semibold mb-1">@lang('menu.girls_in_digital')</div>
+                                  <div class="text-white text-[16px] font-medium mb-2">
+                                      Celebrating diversity through tech innovation and creativity
+                                  </div>
+                                  <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('girls-in-digital-week')}}">
+                                      <span class="text-base leading-7 font-semibold text-black normal-case">
+                                          See more
+                                      </span>
+                                  </a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </li>
 
@@ -122,8 +152,12 @@
                         <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="dropdown-menu sub-menu">
-                        <li><a href="{{route('schools')}}">@lang('menu.why')?</a></li>
-                        <li><a href="/remote-teaching">@lang('remote-teaching.remote-teaching')</a></li>
+                        <li class="menu-title max-xl:hidden">
+                          @lang('menu.schools')
+                          <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
+                        </li>
+                        <li><a class="cookweek-link hover-underline" href="{{route('schools')}}">@lang('menu.why')?</a></li>
+                        <li><a class="cookweek-link hover-underline" href="/remote-teaching">@lang('remote-teaching.remote-teaching')</a></li>
                     </ul>
                 </li>
 
@@ -137,13 +171,17 @@
                         <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="/about">Code Week</a></li>
+                        <li class="menu-title max-xl:hidden">
+                          @lang('menu.about')
+                          <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
+                        </li>
+                        <li><a class="cookweek-link hover-underline" href="/about">Code Week</a></li>
 
-                        <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
-                        <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
-                        <li><a href="/why-coding">@lang('why-coding.titles.0')</a></li>
-                        <li><a href="/our-values">@lang('menu.values')</a></li>
-                        <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
+                        <li><a class="cookweek-link hover-underline" href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="/why-coding">@lang('why-coding.titles.0')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="/our-values">@lang('menu.values')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="/partners">@lang('about.partners_and_sponsors')</a></li>
                     </ul>
                 </li>
 
@@ -188,13 +226,13 @@
                     <ul class="menu-dropdown">
                         <li>
                             <img src="/images/user_menu_profile.svg" class="icon">
-                            <a href="{{route('profile')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('profile')}}">
                                 @lang('menu.profile')
                             </a>
                         </li>
                         <li>
                             <img src="{{asset('svg/address-book.svg')}}" class="static-image">
-                            <a href="{{route('activities-locations')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('activities-locations')}}">
                                 Activities Locations
                             </a>
                         </li>
@@ -203,7 +241,7 @@
 
                             <img src="/images/user_menu_badges.svg">
 
-                            <a href="{{route('my-badges')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('my-badges')}}">
                                 My Badges
                             </a>
                         </li>
@@ -211,7 +249,7 @@
                         @role('ambassador')
                         <li>
                             <img src="/images/user_menu_volunteers.svg" class="icon">
-                            <a href="{{route('admin.online-events')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('admin.online-events')}}">
                                 @lang('menu.online_events')
                             </a>
                         </li>
@@ -220,7 +258,7 @@
                         @role('super admin')
                         <li>
                             <img src="/images/user_menu_volunteers.svg" class="icon">
-                            <a href="{{route('promoted_events')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('promoted_events')}}">
                                 @lang('menu.online_events')
                             </a>
                         </li>
@@ -230,7 +268,7 @@
                         @role('ambassador|super admin')
                         <li>
                             <img src="/images/user_menu_pending_events.svg" class="icon">
-                            <a href="{{route('pending')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('pending')}}">
                                 @lang('menu.pending')
                             </a>
                         </li>
@@ -239,32 +277,32 @@
 
                         <li>
                             <img src="/images/user_menu_your_events.svg" class="icon">
-                            <a href="{{route('my_events')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('my_events')}}">
                                 @lang('menu.your_events')
                             </a>
                         </li>
                         <li>
                             <img src="/images/user_menu_certificates.svg" class="icon">
-                            <a href="{{route('certificates')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('certificates')}}">
                                 @lang('menu.your_certificates')
                             </a>
                         </li>
                         <li>
                             <img src="/images/user_menu_report_events.svg" class="icon">
-                            <a href="/events_to_report">
+                            <a class="cookweek-link hover-underline" href="/events_to_report">
                                 @lang('menu.report')
                             </a>
                         </li>
                         <li>
                             <img src="/images/user_menu_certificates.svg" class="icon">
-                            <a href="/participation">
+                            <a class="cookweek-link hover-underline" href="/participation">
                                 @lang('menu.participation')
                             </a>
                         </li>
                         @role('super admin')
                         <li>
                             <img src="/images/user_menu_activities.svg" class="icon">
-                            <a href="{{route('excellence_winners')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('excellence_winners')}}">
                                 Excellence Winners
                             </a>
                         </li>
@@ -279,7 +317,7 @@
                                       fill="#FE6824"/>
                             </svg>
 
-                            <a href="{{route('leading_teachers_list')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('leading_teachers_list')}}">
                                 Leading Teachers
                             </a>
                         </li>
@@ -292,7 +330,7 @@
                                 />
                             </svg>
 
-                            <a href="{{route('badges-leaderboard-year')}}">
+                            <a class="cookweek-link hover-underline" href="{{route('badges-leaderboard-year')}}">
                                 Badges Leaderboard
                             </a>
                         </li>
@@ -301,7 +339,7 @@
 
                         <li>
                             <img src="/images/user_menu_logout.svg" class="icon">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            <a class="cookweek-link hover-underline" class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 {{ __('menu.logout') }}
                             </a>
@@ -333,12 +371,15 @@
                     </a>
 
 
-                    <div class="menu-dropdown absolute top-14">
-                        <ul class="sub-menu">
+                    <div class="menu-dropdown lang-menu-dropdown absolute top-14">
+                        <ul class="lang-sub-menu">
                             @foreach ($locales as $key => $value)
-                                <li>
-                                    <a class="dropdown-item !text-lg font-['Montserrat']"
-                                       href="/setlocale/?locale={{$value}}">@lang('base.languages_menu.' . $value)</a>
+                                <li class="lang-menu-item {{ App::getLocale() === $value ? 'selected' : '' }}">
+                                    <a class="cookweek-link {{ App::getLocale() === $value ? 'cursor-default' : 'hover-underline' }} !capitalize"
+                                       href="/setlocale/?locale={{$value}}">
+                                        @lang('base.languages_menu.' . $value)
+                                        <img class="arrow-icon {{ App::getLocale() === $value ? '' : 'hidden' }}" src="/images/check.svg" alt="">
+                                    </a>
                                 </li>
                             @endforeach
                         </ul>
