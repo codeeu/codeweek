@@ -44,6 +44,9 @@ module.exports = {
         'lime': '#99CC28',
         'black-light': '#00000080',
       },
+      fontFamily: {
+        blinker: ['Blinker', 'sans-serif'],
+      },
       screens: {
         'xxs': '320px',
         'sm': '575px',
