@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section id="codeweek-forgotpassword-page" class="codeweek-page">
+    <section id="codeweek-forgotpassword-page" class="codeweek-page ">
 
         <section class="codeweek-banner simple">
             <div class="text">
@@ -13,7 +13,7 @@
 
         <section class="codeweek-content-wrapper">
 
-            <section class="codeweek-content-wrapper-inside">
+            <section class="codeweek-content-wrapper-inside ">
 
                 <form class="form-horizontal" method="POST" action="{{ route('password.request') }}">
                     @csrf
@@ -26,7 +26,7 @@
 
                         <div style="width:600px">
                             <input id="email" type="email"
-                                   class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                   class="w-full px-6 py-3 text-form md:max-w-[472px]  rounded-3xl shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-dark-orange focus-within:placeholder-dark-orange max-md:px-5 max-md:max-w-full form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                    name="email" value="{{ app('request')->input('email') }}" required autofocus>
 
                             @if ($errors->has('email'))
@@ -87,6 +87,5 @@
         </section>
 
     </section>
-
 
 
