@@ -421,28 +421,24 @@ p:first-child {
   margin-top: -15px;
 }
 
-#codeweek-searchpage-component .codeweek-form-inner-two-columns,
-#codeweek-register-page .codeweek-form-inner-two-columns {
+.codeweek-form-inner-two-columns {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
 }
 
-#codeweek-searchpage-component .codeweek-form-inner-container,
-#codeweek-register-page .codeweek-form-inner-container {
+.codeweek-form-inner-container {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-#codeweek-searchpage-component .codeweek-form-inner-container:last-child,
-#codeweek-register-page .codeweek-form-inner-container:last-child {
+.codeweek-form-inner-container:last-child {
   margin-left: 20px;
 }
 
-#codeweek-searchpage-component .codeweek-form-field-wrapper,
-#codeweek-register-page .codeweek-form-field-wrapper {
+.codeweek-form-field-wrapper {
   margin-bottom: 15px;
 }
 
@@ -507,7 +503,7 @@ p:first-child {
   width: 100%;
 }
 
-#codeweek-searchpage-component .codeweek-form-field textarea {
+.codeweek-form-field textarea {
   flex: 1;
   border-radius: 29px;
   border: 1px solid #e8e8e8;
@@ -526,7 +522,7 @@ p:first-child {
   margin-top: 10px;
 }
 
-#codeweek-searchpage-component .codeweek-form .codeweek-input-select {
+.codeweek-form .codeweek-input-select {
   flex: 1;
   height: 57px;
   width: auto;
@@ -551,11 +547,11 @@ p:first-child {
   right: 20px;
 }
 
-#codeweek-searchpage-component .codeweek-form .codeweek-form-inner-container h3 {
+.codeweek-form .codeweek-form-inner-container h3 {
   margin-bottom: 15px;
 }
 
-#codeweek-searchpage-component .codeweek-form .input-tag-wrapper {
+.codeweek-form .input-tag-wrapper {
   border: 1px solid #e8e8e8;
   border-radius: 29px;
 }
@@ -570,7 +566,7 @@ p:first-child {
   max-width: 90%;
 }
 
-#codeweek-searchpage-component .codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
+.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
   padding: 0;
   margin: 0;
   height: 59px;
@@ -581,7 +577,7 @@ p:first-child {
   flex: 1;
 }
 
-#codeweek-searchpage-component .codeweek-form-message {
+.codeweek-form-message {
   padding: 30px;
   background-color: #e8e8e8;
   border-radius: 20px;
@@ -708,7 +704,7 @@ p:first-child {
 
 .codeweek-display-field {
   margin-bottom: 20px;
-
+}
   p {
     padding: 5px;
   }
@@ -735,7 +731,6 @@ p:first-child {
   .share-event-wrapper {
     margin-top: 5px;
   }
-}
 
 .login-form .codeweek-form-field-wrapper {
   margin-bottom: 15px;
