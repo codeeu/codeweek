@@ -142,35 +142,6 @@
 }
 
 
-.codeweek-content-wrapper-add {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  height: 100%;
-  padding: 80px;
-}
-
-.codeweek-content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  height: 100%;
-  padding: 80px 150px;
-  margin: 0 !important;
-  max-height: 850px;
-  
-}
-.codeweek-content-wrapper-inside {
-  width: 760px;
-  padding: 64px;
-  flex-direction: column !important;
-  align-items: left;
-  gap: 40px;
-  background-color: #fff;
-  border-radius: 32px;
-}
-
-
 .reset_title {
   color: var(--Dark-Blue-500, #1C4DA1);
 
