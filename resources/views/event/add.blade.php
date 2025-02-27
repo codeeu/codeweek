@@ -12,7 +12,7 @@
             </div>
         </section>
 
-        <section class="codeweek-content-wrapper-add" style="margin-top:0px;" x-data="addActivity()">
+        <section class="codeweek-content-wrapper" style="margin-top:0px;" x-data="addActivity()">
 
 
             <form enctype="multipart/form-data" method="post" role="form" class="codeweek-form" action="/events">
@@ -26,7 +26,7 @@
                     <div class="codeweek-form-inner-container">
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
                                 <select id="id_activity_type" name="activity_type" class="codeweek-input-select"
                                         x-model="selectedActivityType">
@@ -43,7 +43,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_title">* @lang('event.title.label')</label>
                                 <input id="id_title" maxlength="255" name="title"
                                        placeholder="@lang('event.title.placeholder')" type="text"
@@ -55,7 +55,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_organizer">* @lang('event.organizer.label')</label>
                                 <input id="id_organizer" maxlength="255"
                                        name="organizer" placeholder="@lang('event.organizer.placeholder')" type="text"
@@ -67,7 +67,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_language">* @lang('resources.Languages')</label>
                                 <select id="id_language" name="language" class="codeweek-input-select">
                                     @foreach($languages as $key => $value)
@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_organizer">* @lang('event.organizertype.label')</label>
                                 <select id="id_organizer_type" name="organizer_type" class="codeweek-input-select">
                                     <option disabled value> ---</option>
@@ -113,7 +113,7 @@
 
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_audience">*@lang('event.audience_title')</label>
                                 <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"
                                              :multiple="true"
@@ -127,7 +127,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_theme">*@lang('event.theme_title')</label>
                                 <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme"
                                              :multiple="true"
@@ -166,7 +166,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_country">* @lang('event.country')</label>
                                 <select id="id_country" name="country_iso" class="codeweek-input-select">
                                     <option value=""></option>
@@ -189,7 +189,7 @@
 
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_start_date">*@lang('event.start.label')</label>
                                 <date-time name="start_date" placeholder="@lang('event.start.placeholder')"
                                            value="{{old('start_date')}}"></date-time>
@@ -200,7 +200,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_end_date">*@lang('event.end.label')</label>
                                 <date-time name="end_date" placeholder="@lang('event.end.placeholder')"
                                            value="{{old('end_date')}}"></date-time>
@@ -211,7 +211,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_event_url"><span
                                             x-show="isOnlineActivitySelected()">*</span>@lang('event.website.label')
                                 </label>
@@ -225,7 +225,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_contact_person">@lang('event.public.label')</label>
                                 <input id="id_contact_person" maxlength="75" name="contact_person"
                                        placeholder="@lang('event.public.placeholder')" type="text">
@@ -236,7 +236,7 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field-add">
+                            <div class="codeweek-form-field">
                                 <label for="id_tags">@lang('event.tags')</label>
                                 <input-tags value="{{old('tags')}}"></input-tags>
                             </div>
@@ -270,7 +270,7 @@
                             </div>
                         </div>
 
-                        <div class="codeweek-form-field-add">
+                        <div class="codeweek-form-field">
                             <label for="id_picture">@lang('event.image')</label>
                             <div data-provides="fileinput" data-name="picture">
                                 <div class="fileinput-new">
@@ -292,7 +292,7 @@
                         @lang('event.contact.explanation')
                     </div>
                     <div class="codeweek-form-field-wrapper">
-                        <div class="codeweek-form-field-add">
+                        <div class="codeweek-form-field">
                             <label for="id_user_email">* @lang('event.contact.label')</label>
                             <input id="id_user_email" name="user_email" type="email"
                                    placeholder="@lang('event.contact.placeholder')"
