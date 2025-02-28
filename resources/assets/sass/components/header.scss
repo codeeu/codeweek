@@ -32,6 +32,27 @@ header nav ul li a{
   color: $main-color3;
 }
 
+header nav ul li ul{
+  display:none;
+  position: absolute;
+  //left:46px;
+  background-color: #F2F2F2;
+  border-radius: 7px;
+  padding: 15px 25px;
+  //right:0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.775);
+  //border-radius: 1px;
+  //align-items: center;
+  margin-top:12px;
+  padding-right: 46px;
+  //max-height: 400px;
+  min-height: 40px;
+  height: auto;
+  z-index: 9999;
+
+
+}
+
 header nav ul li ul:before{
   content: "";
   height: 17px;
@@ -63,9 +84,16 @@ header nav ul li ul li{
 
 header nav ul li ul li a{
   font-size: 18px;
+  margin-top: 20px;
   color: $main-color3;
+  //font-weight: bold;
+  //text-transform: uppercase;
   text-align:center;
   white-space: nowrap;
+}
+
+header nav ul li ul li a:hover{
+  color: $main-color;
 }
 
 header #right-menu .round-button,
@@ -176,11 +204,11 @@ header .menu-dropdown{
   display:none;
   position: absolute;
   top:56px;
-  background-color: #FFFFFF;
-  border: 1px solid #ADB2B6;
+  background-color: #F2F2F2;
   border-radius: 7px;
-  padding: 12px 32px;
+  padding: 15px 25px;
   right:0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
   z-index: 1000;
   margin: 0;
 }
@@ -203,28 +231,25 @@ header .twitter-menu .menu-dropdown{
   justify-content: center;
 }
 
-header .user-menu .menu-dropdown li {
+header .user-menu .menu-dropdown li{
+  list-style: none;
+  padding: 10px 0px;
+  white-space: nowrap;
+  text-align: left;
   display: flex;
   align-items: center;
-  list-style: none;
-  text-align: start;
-  gap: 12px;
-  padding: 8px 0;
+}
 
-  a {
-    white-space: nowrap;
-    text-align: left;
-    text-transform: none !important;
-    font-size: 16px !important;
-    color: #1C4DA1 !important;
-    font-weight: 600 !important;
-    line-height: 22px !important;
-  }
+header .user-menu .menu-dropdown li a{
+  color: $main-color3 !important;
+  text-transform: none !important;
+  font-size: 16px !important;
+  margin-left: 10px;
+}
 
-  svg, img {
-    height: 16px;
-    width: 16px;
-  }
+
+header .user-menu .menu-dropdown li:hover a{
+  color: $main-color !important;
 }
 
 header .lang-menu .menu-dropdown ul{
@@ -242,13 +267,17 @@ header .lang-menu .menu-dropdown ul li{
 }
 
 header .lang-menu .menu-dropdown ul li a{
-  color: $main-color3;
+  color: $main-color3 !important;
   padding: 15px 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100%;
   justify-content: center;
+}
+
+header .lang-menu .menu-dropdown ul li:hover a{
+  color: $main-color !important;
 }
 
 
@@ -302,6 +331,10 @@ header .lang-menu .menu-dropdown ul li a{
 
   header nav ul li ul li:last-child a{
     border-bottom: 0px;
+  }
+
+  header nav ul li ul li a:hover{
+    color: $main-color;
   }
 }
 
@@ -396,100 +429,6 @@ header .lang-menu .menu-dropdown ul li a{
 
 }
 
-@media (min-width: 1281px) {
-  #primary-menu {
-    .main-menu-item {
-      .sub-menu {
-        display:none;
-        position: absolute;
-        border-radius: 7px;
-        margin-top:12px;
-        min-height: 40px;
-        height: auto;
-        z-index: 9999;
-        background: #FFF;
-        border: 1px solid #ADB2B6;
-        padding: 12px 32px;
-        
-        .menu-title {
-          position: relative;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          color: #1C4DA1;
-          font-size: 20px;
-          font-weight: 600;
-          line-height: 28px;
-          margin-bottom: 16px;
-          padding: 12px 0;
-
-          .menu-title-icon {
-            width: 24px;
-            height: 24px;
-          }
-
-          &:after {
-            content: '';
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            height: 4px;
-            width: 32px;
-            background-color: #F95C22;
-          }
-        }
-
-        li {
-          padding: 8px 0;
-          a {
-            font-size: 16px;
-            color: #1C4DA1;
-            font-weight: 600;
-            line-height: 24px;
-          }
-        }
-      }
-    }
-  }
-
-  #right-menu {
-    .lang-menu-dropdown {
-      overflow: hidden;
-      border-radius: 6px;
-    }
-    
-    .lang-sub-menu {
-      background: #FFF;
-      padding: 16px !important;
-
-      .lang-menu-item {
-        cursor: default;
-        display: flex;
-        text-align: start;
-        margin-top: 0 !important;
-        min-width: 200px;
-        > .cookweek-link {
-          color: #1C4DA1 !important;
-          justify-content: space-between;
-          margin: 12px 16px;
-          border-radius: 24px;
-          padding: 0 !important;
-        }
-
-        &.selected {
-          > .cookweek-link {
-            width: 100%;
-            border: 2px solid #1C4DA1;
-            background-color: #E8EDF6;
-            margin: 0;
-            padding: 10px 16px !important;
-          }
-        }
-      }
-    }
-  }
-}
-
 /*TABLET VERSION*/
 @media (max-width: 1280px) {
 
@@ -578,7 +517,6 @@ header .lang-menu .menu-dropdown ul li a{
         .lang-menu-item {
           margin-top: 0 !important;
           > a {
-            width: 100%;
             margin-top: 4px;
             border: 2px solid #E8EDF6;
             border-radius: 24px;
@@ -608,13 +546,17 @@ header .lang-menu .menu-dropdown ul li a{
           font-family: 'Montserrat';
           font-style: normal;
           font-weight: 600;
-          display: inline-block;
+          display: block;
+          width: 100%;
           margin: 0;
           border: 0;
           text-align: left;
           padding: 4px 16px;
           font-size: 16px;
           text-transform: none;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -639,5 +581,6 @@ header .lang-menu .menu-dropdown ul li a{
   header #right-menu {
     justify-content: flex-end;
     flex: 1;
+    margin-right: 18px;
   }
 }
