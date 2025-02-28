@@ -9,12 +9,12 @@
       <button @click="toggleDeleteModal" class="codeweek-action-button red">Delete</button>
     </div>
 
-    <div class="grid items-center w-full h-8 grid-cols-3 gap-4" v-if="!refresh">
+    <div class="h-8 w-full grid grid-cols-3 gap-4 items-center" v-if="!refresh">
       <div class="flex-none">Pending Activities: <a href="/pending">{{ pendingCounter }}</a></div>
       <div class="flex justify-center">
         <div>{{ $t('event.current_status') }}: <strong>{{ status }}</strong> <span v-if="event.LatestModeration">({{ event.LatestModeration.message }})</span></div>
       </div>
-      <div class="flex justify-end gap-2 actions justify-items-end">
+      <div class="actions flex justify-items-end justify-end gap-2">
         <button @click="approve" class="codeweek-action-button green">Approve</button>
         <button @click="toggleModal" class="codeweek-action-button">Reject</button>
         <button @click="toggleDeleteModal" class="codeweek-action-button red">Delete</button>
@@ -30,7 +30,7 @@
             <button @click="toggleModal" class="close-button">×</button>
           </div>
           <div class="modal-body">
-            <p class="text-lg leading-relaxed text-gray-800">This will help the activity organizer to improve their submission.</p>
+            <p class="text-gray-800 text-lg leading-relaxed">This will help the activity organizer to improve their submission.</p>
             <multiselect v-model="rejectionOption" :options="displayRejectionOptions" track-by="title" label="title" :close-on-select="true" :preserve-search="false" placeholder="Select a rejection reason" :searchable="false" :allow-empty="false" @input="prefillRejectionText">
               <template #singleLabel="{ option }">{{ option.title }}</template>
             </multiselect>

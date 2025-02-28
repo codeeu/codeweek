@@ -2211,26 +2211,6 @@ var SEMICOLON = SEMICOLON || {};
               if (searchMenu) searchMenu.style.display = 'none';
             });
 
-            // VIDEO MODAL
-            $('#video-modal-trigger-show').click(function() {
-              const videoModalId = $(this).data('targetid');
-              const videoModal = document.getElementById(videoModalId);
-              if (videoModal) {
-                videoModal.style.display = '';
-                const video = videoModal.querySelector('#video');
-                if (video) video.play();
-              }
-            });
-            $('#video-modal-trigger-hide').click(function() {
-              const videoModalId = $(this).data('targetid');
-              const videoModal = document.getElementById(videoModalId);
-              if (videoModal) {
-                videoModal.style.display = 'none';
-                const video = videoModal.querySelector('#video');
-                if (video) video.pause();
-              }
-            });
-
             /* PRIMARY MENU */
             $('#primary-menu-trigger,#overlay-menu-close').click(function() {
                 if ($( '#primary-menu-trigger .menu' ).attr('class').indexOf('hide') !== -1){
