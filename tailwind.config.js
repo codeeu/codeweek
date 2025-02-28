@@ -5,18 +5,12 @@ module.exports = {
     './resources/**/*.js',
     './resources/**/*.vue',
   ],
-  safelist: [
-    'bg-[url("images/community/mobile-header.png")]',
-    'md:bg-[url("images/community/1.jpg")]'
-  ],
   theme: {
     extend: {
       backgroundImage: {
         'secondary-gradient': 'linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%)',
         'blue-gradient': 'linear-gradient(161.75deg, #1254C5 16.95%, #0040AE 31.1%)',
-        'count-gradient': 'linear-gradient(150.73deg, #1254C5 24.55%, #0040AE 68.54%)',
-        'orange-gradient': 'linear-gradient(36.92deg, #F95C22 20.32%, #FF885C 28.24%)',
-        'violet-gradient': 'linear-gradient(247deg, #410098 22.05%, #6733AD 79.09%)'
+        'count-gradient': 'linear-gradient(150.73deg, #1254C5 24.55%, #0040AE 68.54%)'
       },
       colors: {
         'primary': '#F95C22',
@@ -33,34 +27,18 @@ module.exports = {
         'yellow-2': '#FFF7CC',
         'dark-blue': '#1C4DA1',
         'hover-blue': '#0A42A1',
-        'slate': '#5C656D',
-        'light-blue': '#F2FBFE',
-        'error-200': '#E30519',
-        'dark-blue-50': '#E8EDF6',
-        'dark-blue-200': '#A4B8D9',
-        'dark-blue-300': '#7794C7',
-        'dark-blue-400': '#4971B4',
-        'grey-3': '#F2F2F8',
-        'lime': '#99CC28',
-        'black-light': '#00000080',
+        'slate': '#5C656D'
       },
       screens: {
-        'xxs': '320px',
-        'sm': '575px',
         'tablet': '993px',
-        'md': '768px',
       },
       fontSize: {
         base: '1.125rem',
-        'default': '16px',
-        '40': '2.5rem',
       },
       lineHeight: {
-        'truly-normal': 'normal', // Custom class for true line-height: normal
+        'truly-normal': 'normal',  // Custom class for true line-height: normal
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'), // Add the forms plugin here
-  ],
+  plugins: [],
 };
