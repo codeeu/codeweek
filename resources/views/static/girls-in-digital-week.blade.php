@@ -192,7 +192,7 @@
                 <div class="flex flex-col lg:flex-row justify-between gap-12">
                     <div class="w-full">
                         <a
-                            class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]"
+                            class="block mb-12 p-6 lg:py-10 rounded-lg border-2 border-[#A4B8D9]"
                             href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Young_people_-_digital_world"
                             target="_blank"
                         >
