@@ -59,9 +59,6 @@
         @include('layout.menu')
         @yield('layout.breadcrumb')
 
-        @yield('layout.video-player')
-        @stack('video-layer-stack')
-
         <main id="app">
             @yield("content")
         </main>

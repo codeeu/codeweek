@@ -11,20 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (!Schema::hasTable('countries')) {
-            Schema::create('countries', function (Blueprint $table) {
-                $table->string('iso')->primary();
-                $table->string('name');
-                $table->integer('population')->nullable();
-                $table->string('continent');
-                $table->string('facebook');
-                $table->string('website');
-                $table->string('longitude');
-                $table->string('latitude');
-                $table->string('parent')->nullable();
-                $table->timestamps();
-            });
-        }
+        Schema::create('countries', function (Blueprint $table) {
+
+            $table->string('iso');
+            $table->string('name');
+            $table->integer('population')->nullable();
+            $table->string('continent');
+            $table->string('facebook');
+            $table->string('website');
+            $table->string('longitude');
+            $table->string('latitude');
+            $table->string('parent')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**

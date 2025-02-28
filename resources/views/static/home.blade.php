@@ -3,16 +3,16 @@
 @section('non-vue-content')
     <section id="codeweek-homepage" class="codeweek-page font-['Blinker']">
       <section class="relative flex overflow-hidden">
-          <div id="slider-wrapper" class="relative flex w-full transition-all bg-secondary-gradient">
+          <div id="slider-wrapper" class="flex relative transition-all w-full bg-secondary-gradient">
             @foreach ($activities as $index => $activity)
-                <div class="absolute top-0 left-0 flex flex-col justify-end flex-shrink-0 w-full h-full pb-10 overflow-hidden md:px-16 md:p-0 md:flex-row md:items-center">
-                    <div class="relative h-full flex-grow-1">
+                <div class="absolute top-0 left-0 w-full h-full overflow-hidden md:px-16 pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                    <div class="relative flex-grow-1 h-full">
                       <button
                         id="slider-prev-small-btn"
                         class="absolute z-10 top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 block md:hidden"
                         style="display: none;"
                       >
-                        <img class="w-8 h-8 rotate-180" src="/images/arrow-right-icon.svg" />
+                        <img class="rotate-180 w-8 h-8" src="/images/arrow-right-icon.svg" />
                       </button>
                       <button
                         id="slider-next-small-btn"
@@ -24,7 +24,7 @@
                     </div>
                     <div
                       id="activity-{{ $index }}"
-                      class="flex items-end duration-1000 home-activity codeweek-container-lg md:items-center"
+                      class="home-activity codeweek-container-lg flex items-end md:items-center duration-1000"
                       style="opacity: {{ $index === 0 ? 1 : 0 }}"
                     >
                         <div class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
@@ -56,7 +56,7 @@
                           src="images/search/search_bg_lg_{{ ($index % 2) === 0 ? 1 : 2 }}.jpeg"
                           style="clip-path: ellipse(70% 140% at 70% 25%);"
                         >
-                        <div class="absolute bottom-0 right-0 hidden homepage-robot md:block">
+                        <div class="homepage-robot absolute right-0 bottom-0 hidden md:block">
                           <img class="robot-land" src="/images/homepage/robot-land.png" />
                           <div class="absolute bottom-10 right-10">
                             <img src="/images/homepage/robot.png" />
@@ -74,7 +74,7 @@
               class="absolute top-28 md:top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 hidden md:block"
               style="display: none;"
             >
-              <img class="w-8 h-8 rotate-180" src="/images/arrow-right-icon.svg" />
+              <img class="rotate-180 w-8 h-8" src="/images/arrow-right-icon.svg" />
             </button>
             <button
               id="slider-next-btn"
@@ -85,12 +85,12 @@
             </button>
         </section>
 
-        <section class="relative animation-section bg-yellow-2">
+        <section class="animation-section relative bg-yellow-2">
             <div class="absolute w-full h-full bg-white md:hidden" style="clip-path: ellipse(100% 58% at 38% 39%)"></div>
-            <div class="absolute hidden w-full h-full bg-white md:block" style="clip-path: ellipse(70% 60% at 50% 40%);"></div>
-            <div class="relative z-10 flex flex-col-reverse items-center gap-12 py-16 pb-32 codeweek-container-lg md:flex-row md:pb-48">
+            <div class="absolute w-full h-full bg-white hidden md:block" style="clip-path: ellipse(70% 60% at 50% 40%);"></div>
+            <div class="relative z-10 codeweek-container-lg flex flex-col-reverse md:flex-row items-center py-16 pb-32 md:pb-48 gap-12">
                 <div class="flex-1">
-                  <div class="relative inline-block observer-element">
+                  <div class="inline-block observer-element relative">
                     <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/homepage/toolkits.png" />
                     <img
                       class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
@@ -107,15 +107,15 @@
                     <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 mb-10">
                       @lang('home.toolkits_description')
                     </p>
-                    <div class="flex flex-col gap-4 xl:flex-row">
+                    <div class="flex flex-col xl:flex-row gap-4">
                         <a
                           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                           href="/guide"
                         >
                             <span>@lang('home.toolkits_button1')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                             </div>
                         </a>
                         <a
@@ -123,9 +123,9 @@
                           href="/toolkits"
                         >
                           <span>@lang('home.toolkits_button2')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                             </div>
                         </a>
                     </div>
@@ -148,22 +148,22 @@
                       href="https://www.codeweekcoders.eu/"
                     >
                         <span>@lang('home.minecraft_button')</span>
-                        <div class="flex w-4 gap-2 overflow-hidden">
-                            <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                            <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                        <div class="flex gap-2 w-4 overflow-hidden">
+                            <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                            <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                         </div>
                     </a>
                 </div>
-                <div class="flex-1 observer-element">
-                    <img class="duration-700 animation-element fade-scale-right" loading="lazy" src="/images/homepage/minecraft1.png" />
+                <div class="observer-element flex-1">
+                    <img class="animation-element fade-scale-right duration-700" loading="lazy" src="/images/homepage/minecraft1.png" />
                 </div>
             </div>
         </section>
 
-        <section class="relative overflow-hidden animation-section">
-            <div class="relative z-10 flex flex-col-reverse items-center gap-12 py-16 codeweek-container-lg md:flex-row">
+        <section class="animation-section relative overflow-hidden">
+            <div class="relative z-10 codeweek-container-lg flex flex-col-reverse md:flex-row items-center py-16 gap-12">
                 <div class="flex-1">
-                  <div class="relative inline-block observer-element">
+                  <div class="inline-block observer-element relative">
                     <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/homepage/activity.png" />
                     <img
                       class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
@@ -180,15 +180,15 @@
                     <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 mb-10">
                       @lang('home.activity_description')
                     </p>
-                    <div class="flex flex-col gap-4 xl:flex-row">
+                    <div class="flex flex-col xl:flex-row gap-4">
                         <a
                           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                           href="/add"
                         >
                             <span>@lang('home.activity_button1')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                             </div>
                         </a>
                         <a
@@ -196,9 +196,9 @@
                           href="/events"
                         >
                             <span>@lang('home.activity_button2')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                             </div>
                         </a>
                     </div>
@@ -216,24 +216,24 @@
 
         <section class="relative overflow-hidden">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(170% 90% at 38% 90%);"></div>
-            <div class="absolute hidden w-full h-full bg-blue-gradient md:block" style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
-            <div class="relative z-10 flex flex-col items-center gap-12 pb-16 codeweek-container-lg md:flex-row pt-28 md:pt-48">
+            <div class="absolute w-full h-full bg-blue-gradient hidden md:block" style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
+            <div class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center pt-28 md:pt-48 pb-16 gap-12">
                 <div class="flex-1">
                     <h2 class="text-white text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                       @lang('home.resouce_title')
                     </h2>
-                    <p class="p-0 mb-10 text-lg leading-7 text-white md:text-xl">
+                    <p class="text-white text-lg md:text-xl leading-7 p-0 mb-10">
                       @lang('home.resouce_description')
                     </p>
-                    <div class="flex flex-col gap-4 xl:flex-row">
+                    <div class="flex flex-col xl:flex-row gap-4">
                         <a
                           class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#061b45] hover:text-white group"
                           href="/resources/CodingAtHome"
                         >
                             <span>@lang('home.resouce_button1')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                             </div>
                         </a>
                         <a
@@ -241,16 +241,16 @@
                           href="/training"
                         >
                             <span>@lang('home.resouce_button2')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="relative flex justify-center flex-1 observer-element">
+                <div class="observer-element flex-1 flex justify-center relative">
                     <img
-                        class="z-10 w-full duration-700 animation-element fade-scale-bottom"
+                        class="animation-element fade-scale-bottom duration-700 w-full z-10"
                         loading="lazy"
                         src="/images/homepage/resource-training.png"
                     />

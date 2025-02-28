@@ -74,11 +74,10 @@ class EventsQuery
             }
         }
 
-        foreach ($request['theme'] as $themeId) {
-            $theme = Theme::where('id', $themeId)->first();
-            if ($theme) {
-                $event->themes()->save($theme);
-            }
+        foreach ($request['theme'] as $theme) {
+
+            $theme = Theme::where('id', $theme)->first();
+            $event->themes()->save($theme);
         }
 
         foreach ($request['audience'] as $audience) {

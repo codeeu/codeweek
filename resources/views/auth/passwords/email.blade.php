@@ -1,20 +1,25 @@
-@extends('layout.new_base')
+@extends('layout.base')
 
 @section('content')
-    <section id="codeweek-forgotpassword-page">
-        <section class="py-10 px-5 lg:p-20 bg-secondary-gradient flex justify-center relative overflow-hidden">
+    <section id="codeweek-forgotpassword-page" class="codeweek-page">
 
-            <section class="bg-white pb-10 pt-6 px-6 lg:p-16 rounded-[2rem] w-full md:max-w-[760px] z-10" >
+        <section class="codeweek-banner simple">
+            <div class="text">
+                <h2>#EUCodeWeek</h2>
+                <h1>@lang('login.reset')</h1>
+            </div>
+        </section>
 
-                <div class="reset_title">@lang('login.resetpage_title')</div>
-                <div class="reset_description">@lang('login.resetpage_description')</div>
+        <section class="codeweek-content-wrapper">
+
+            <section class="codeweek-content-wrapper-inside">
                 <form method="POST" action="{{ route('password.email') }}">
                     @csrf
 
                     <div class="codeweek-form-field-wrapper">
                         <div class="codeweek-form-field">
-                            <label for="email" class="font-normal text-xl">@lang('login.email')</label>
-                            <input class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 mt-3" id="email" type="email" name="email"
+                            <label for="email">@lang('login.email')</label>
+                            <input id="email" type="email" name="email"
                                    value="{{old('email')}}" required autofocus>
                         </div>
                         <div class="errors">
@@ -22,19 +27,16 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center mt-6">
-                        <input style="font-family: Blinker;" class="cursor-pointer bg-primary hover:bg-hover-orange rounded-full py-4 px-20 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300" type="submit" value="@lang('login.send_password')">
+                    <div class="codeweek-form-button-container">
+                        <div class="codeweek-button">
+                            <input type="submit" value="@lang('login.send_password')">
+                        </div>
                     </div>
 
                 </form>
-                </section>
-                <img
-                    class="absolute top-0 -right-1/4 h-full max-w-[calc(70vw)] object-cover opacity-70 hidden md:block"
-                    loading="lazy"
-                    src="../images/login_bg.png"
-                    style="clip-path: ellipse(70% 140% at 70% 25%);"
-                 />
-
-                </section>
             </section>
-        @endsection
+
+        </section>
+
+    </section>
+@endsection
