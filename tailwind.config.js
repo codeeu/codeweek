@@ -5,10 +5,6 @@ module.exports = {
     './resources/**/*.js',
     './resources/**/*.vue',
   ],
-  safelist: [
-    'bg-[url("images/community/mobile-header.png")]',
-    'md:bg-[url("images/community/1.jpg")]'
-  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -48,7 +44,6 @@ module.exports = {
         blinker: ['Blinker', 'sans-serif'],
       },
       screens: {
-        'xxs': '320px',
         'sm': '575px',
         'tablet': '993px',
         'md': '768px',
@@ -59,11 +54,9 @@ module.exports = {
         '40': '2.5rem',
       },
       lineHeight: {
-        'truly-normal': 'normal', // Custom class for true line-height: normal
+        'truly-normal': 'normal',  // Custom class for true line-height: normal
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'), // Add the forms plugin here
-  ],
+  plugins: [],
 };

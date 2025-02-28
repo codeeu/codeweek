@@ -43,14 +43,7 @@ class EventRequest extends FormRequest
             'organizer_type' => 'required',
             'privacy' => 'required',
             'leading_teacher_tag' => 'nullable',
-            'participants_count' => 'required|integer|min:1',
-            'percentage_of_females' => 'nullable|integer|min:0',
-            'percentage_of_males' => 'nullable|integer|min:0',
-            'percentage_of_other' => 'nullable|integer|min:0',
-            'age_group' => 'nullable|string|in:0-5,6-18,19-25,Over 25',
-            'extracurricular_activity' => 'required|string|in:yes,no',
-            'recurring_event' => 'required|string|in:yes,no',
-            'frequency' => 'nullable|string|in:daily,weekly,monthly',
+
         ];
     }
 
@@ -69,20 +62,8 @@ class EventRequest extends FormRequest
             'event_url.url' => 'The activity\'s web page address should be a valid URL.',
             'event_url.required' => 'The activity\'s web page is required for online activities.',
             'user_email.required' => 'Please enter a valid email address.',
-            'participants_count.required' => 'Please enter the total number of participants.',
-            'participants_count.integer' => 'The number of participants must be a valid integer.',
-            'percentage_of_females.integer' => 'The number of female participants must be a valid integer.',
-            'percentage_of_males.integer' => 'The number of male participants must be a valid integer.',
-            'percentage_of_other.integer' => 'The number of participants with other genders must be a valid integer.',
-            'age_group.in' => 'Please select a valid age group.',
-            'extracurricular_activity.required' => 'Please specify if this is an extracurricular activity.',
-            'extracurricular_activity.in' => 'Please select a valid option for extracurricular activity.',
-            'recurring_event.required' => 'Please specify if the event is recurring.',
-            'recurring_event.in' => 'Please select a valid option for recurring event.',
-            'frequency.in' => 'Please select a valid frequency.',
         ];
     }
-
 
     private function in($array): string
     {
