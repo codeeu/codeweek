@@ -1,0 +1,278 @@
+@extends('layout.new_base')
+
+@php
+    $list = [
+      (object) ['label' => 'Dream jobs in Digital', 'href' => ''],
+    ];
+
+    $results = [
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ],
+        [
+            'first_name' => 'Jowita',
+            'last_name' => 'Michalska',
+            'role' => 'Role title',
+            'image' => '/images/dream-jobs/jowita-michalska.png',
+        ]
+    ];
+
+    $resources = [
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_1'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_1'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_1'),
+            'button_link' => '/',
+            'image' => '/images/dream-jobs/career-guide.png',
+        ],
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_2'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_2'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_2'),
+            'button_link' => '/',
+            'image' => '/images/dream-jobs/inspiration-day.png',
+        ],
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_3'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_3'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_3'),
+            'button_link' => '/',
+            'image' => '/images/dream-jobs/vet-activities.png',
+        ],
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_4'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_4'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_4'),
+            'button_link' => '/',
+            'image' => '/images/dream-jobs/skills-test.png',
+        ],
+    ];
+@endphp
+@section('layout.breadcrumb')
+    @include('layout.breadcrumb', ['list' => $list])
+@endsection
+
+@section('content')
+    <section id="codeweek-digital-girls" class="font-['Blinker'] overflow-hidden">
+        <section class="relative flex overflow-hidden">
+            <div class="flex relative transition-all w-full bg-orange-gradient pt-48 md:pt-32 pb-0 md:py-[7.5rem]">
+                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                    <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+                        <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
+                            <img
+                                class="mb-4 max-w-full"
+                                src="/images/dream-jobs/dream_jobs_logo.svg"
+                            />
+                            <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
+                                @lang('dream-jobs-in-digital.landing_header')
+                            </p>
+                            <a
+                                class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
+                                href="/"
+                            >
+                                <span>@lang('dream-jobs-in-digital.get_inolved')</span>
+                            </a>
+                        </div>
+                        <img
+                            class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
+                            loading="lazy"
+                            src="/images/dream-jobs/dream_jobs_bg.png"
+                            style="clip-path: ellipse(71% 73% at 40% 20%);"
+                        />
+                        <img
+                            class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
+                            loading="lazy"
+                            src="/images/dream-jobs/dream_jobs_bg.png"
+                            style="clip-path: ellipse(70% 140% at 70% 25%);"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative flex overflow-hidden">
+            <div class="relative pt-10 md:pt-28 codeweek-container-lg">
+                <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
+                    @lang('dream-jobs-in-digital.about_title')
+                </h2>
+                <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
+                    @lang('dream-jobs-in-digital.about_description')
+                </p>
+                <div class="relative">
+                    <img
+                        class="w-full rounded-2xl object-cover object-center h-[calc(80vw-40px)] sm:h-auto"
+                        loading="lazy"
+                        src="/images/dream-jobs/career-about.png"
+                    />
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                        @include('layout.video-player', ['id' => 'carrer-about', 'src' => ''])
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative flex z-10">
+            <div class="relative pt-10 pb-10 md:pt-12 md:pb-28 codeweek-container-lg z-[1]">
+                <h2 class="text-dark-blue text-2xl md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-10">
+                    @lang('dream-jobs-in-digital.our_role_models')
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 lg:gap-8">
+                    @foreach($results as $result)
+                        <div class="p-4 rounded-2xl border-2 border-solid border-[#A4B8D9] flex flex-col gap-4 md:gap-8 bg-white">
+                        <div class="flex gap-4 md:gap-8">
+                            <img
+                                class="w-32 h-32 rounded-lg"
+                                src="{{ $result['image'] }}"
+                            />
+                            <div class="flex flex-col justify-center">
+                                <p class="p-0 font-medium text-dark-blue text-[22px] lg:text-xl font-['Montserrat']">{{ $result['first_name'] }} {{ $result['last_name'] }}</p>
+                                <p class="p-0 font-medium text-[#333E48] text-lg mb-4 font-['Montserrat']">{{ $result['role'] }}</p>
+                                <a
+                                    class="hidden sm:flex text-nowrap justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                                    href="/"
+                                >
+                                    <span>@lang('dream-jobs-in-digital.more_about') {{ $result['first_name'] }}</span>
+                                    <div class="flex gap-2 w-4 overflow-hidden">
+                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a
+                            class="flex sm:hidden text-nowrap justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                            href="/"
+                        >
+                            <span>@lang('dream-jobs-in-digital.more_about') {{ $result['first_name'] }}</span>
+                            <div class="flex gap-2 w-4 overflow-hidden">
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                            </div>
+                        </a>
+                    </div>
+                    @endforeach
+                    
+                    {{-- <div class="mt-6 lg:mt-12">
+                        {{ $results->links('vendor.livewire.pagination') }}
+                    </div> --}}
+                </div>
+            </div>
+            <div
+                class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-2/3 -right-14 md:-right-36 w-28 md:w-72 h-28 md:h-72 bg-[#99E1F4] rounded-full hidden lg:block"
+                style="transform: translate(-16px, -24px)"
+            ></div>
+            <div
+
+                class="animation-element move-background duration-[1.5s] absolute z-0 lg:-bottom-20 xl:-bottom-32 right-40 w-28 h-28 hidden lg:block bg-[#99E1F4] rounded-full"
+                style="transform: translate(-16px, -24px)"
+            ></div>
+        </section>
+
+        <section class="relative overflow-hidden">
+            <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
+            <div class="absolute w-full h-full bg-blue-gradient hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
+
+            <div class="absolute w-full h-full bg-blue-gradient hidden lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
+            <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
+            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
+                <h2 class="text-white md:text-center text-3xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
+                    @lang('dream-jobs-in-digital.resources')
+                </h2>
+
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 xl:gap-20">
+                    @foreach($resources as $resource)
+                        <div class="px-6 py-8 md:p-12 rounded-2xl bg-white gap-4 sm:gap-10 grid grid-cols-1 sm:grid-cols-2">
+                            <div class="flex-1 flex flex-col justify-between order-1">
+                                <div>
+                                    <p class="text-dark-blue text-[22px] md:text-3xl font-medium font-['Montserrat'] mb-4 md:mb-6 p-0">
+                                        {{ $resource->title }}
+                                    </p>
+                                    <p class="text-[#333E48] font-normal text-lg md:text-xl leading-[30px] font-['Blinker'] p-0 mb-6 md:mb-10">
+                                        {{ $resource->description }}
+                                    </p>
+                                </div>
+                                <a
+                                    class="text-nowrap flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
+                                    href="{{ $resource->button_link }}"
+                                >
+                                    <span>{{ $resource->button_text }}</span>
+                                </a>
+                            </div>
+
+                            <div class="order-0 sm:order-2">
+                                <img
+                                    class="w-full flex-1 rounded-lg object-cover object-center max-w-full h-full"
+                                    src="{{ $resource->image }}"
+                                />
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    </section>
+@endsection
