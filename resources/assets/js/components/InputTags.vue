@@ -19,13 +19,3 @@
         }
     }
 </script>
-
-<style scoped>
-/* Updated to use :deep() instead of ::v-deep */
-:deep(.v3ti .v3ti-content) {
-  justify-content: flex-end;
-}
-:deep(.v3ti .v3ti-new-tag) {
-    height: 48px;
-}
-</style>
