@@ -13,7 +13,7 @@ class HomeController extends Controller
             [
                 'title' => 'Girls in Digital',
                 'description' => 'Explore and embrace digital opportunities—empowering a new generation of girls in digital!',
-                'url' => 'https://codeweek.eu/girls-in-digital-week',
+                'url' => 'https://codeweek.eu/blog/girls-in-digital-week/',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
             ],
