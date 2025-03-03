@@ -68,9 +68,6 @@
                         <li class="mb-4">
                             <a href="/blog" class="cookweek-link hover-underline">News</a>
                         </li>
-                        <li class="mb-4">
-                            <a href="https://mailp.ro/f/OCxYWv" target="_blank" class="cookweek-link hover-underline">Newsletter Sign Up</a>
-                        </li>
                     </ul>
                 </div>
                 <div>

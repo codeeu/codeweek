@@ -27,38 +27,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-:deep(.dp__input) {
-  border: none;
-  --tw-ring-color: none;
-  color: #00000080;
-  font-family: "PT Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-:deep(.dp__icon) {
-  stroke: rgb(0 0 0);
-  fill: rgb(0 0 0);
-}
-
-:deep(.dp__menu_inner) {
-  color: #00000080;
-  font-family: "PT Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-:deep(.dp__active_date) {
-  background: #164194;
-}
-
-:deep(.dp__action_buttons .dp__action_select) {
-  background: #164194;
-}
-</style>
