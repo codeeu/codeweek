@@ -8,15 +8,15 @@
 
 
         <section class="flex flex-row justify-between codeweek-banner training" style="background-color: #908CA5">
-            <div class="flex justify-center items-center w-full">
-                <div class="text-center m-12">
-                    <div class="text-xl text-white w-full uppercase">
+            <div class="flex items-center justify-center w-full">
+                <div class="m-12 text-center">
+                    <div class="w-full text-xl text-white uppercase">
                         <h1>@lang('challenges.title')</h1>
                     </div>
                 </div>
             </div>
 
-            <div class="md:w-full md:flex hidden">
+            <div class="hidden md:w-full md:flex">
                 <img src="{{asset('img/2021/challenges/main-banner.png')}}">
 
             </div>
@@ -28,11 +28,11 @@
             <div class="m-6">
 
 
-                <div class="orange text-3xl">
+                <div class="text-3xl orange">
                     @lang('challenges.main.1')
                 </div>
 
-                <div class="leading-6 text-base text-left">
+                <div class="text-base leading-6 text-left">
                     <p>
                         @lang('challenges.main.2')
 
@@ -51,7 +51,7 @@
                             $currentDate = \Carbon\Carbon::now();
                         @endphp
 
-
+                            @include('2021._thumbnail', ['slug' => 'careers-as-constellations', 'author'=>'Kristina Slišurić'])
 
                             @include('2021._thumbnail', ['slug' => 'air-drawing-with-AI', 'author'=>'Kristina Slišurić'])
 
@@ -103,20 +103,20 @@
                 </div>
 
                 {{--                <section>--}}
-                {{--                    <div class="mt-8 orange text-3xl">--}}
+                {{--                    <div class="mt-8 text-3xl orange">--}}
                 {{--                        @lang('challenges.main.5')--}}
                 {{--                    </div>--}}
-                {{--                    <div class="leading-6 text-base text-left mt-2">--}}
+                {{--                    <div class="mt-2 text-base leading-6 text-left">--}}
                 {{--                        @lang('challenges.main.6')--}}
                 {{--                    </div>--}}
                 {{--                </section>--}}
 
                 {{--                <section>--}}
-                {{--                    <div class="mt-6 orange text-3xl">--}}
+                {{--                    <div class="mt-6 text-3xl orange">--}}
                 {{--                        @lang('challenges.main.7')--}}
                 {{--                    </div>--}}
-                {{--                    <div class="leading-6 text-base text-left">--}}
-                {{--                        <ul class="list-decimal ml-6 mt-2">--}}
+                {{--                    <div class="text-base leading-6 text-left">--}}
+                {{--                        <ul class="mt-2 ml-6 list-decimal">--}}
                 {{--                            <li>--}}
                 {{--                                @lang('challenges.main.8')--}}
 
@@ -130,13 +130,13 @@
 
                 {{--                    </div>--}}
 
-                {{--                    <div class="mt-6 orange text-3xl">--}}
+                {{--                    <div class="mt-6 text-3xl orange">--}}
                 {{--                        @lang('challenges.main.10')--}}
 
                 {{--                    </div>--}}
-                {{--                    <div class="leading-6 text-base text-left">--}}
+                {{--                    <div class="text-base leading-6 text-left">--}}
 
-                {{--                        <div class="leading-6 text-base text-left mt-2">--}}
+                {{--                        <div class="mt-2 text-base leading-6 text-left">--}}
                 {{--                            @lang('challenges.main.11')--}}
                 {{--                            <br>--}}
                 {{--                            @lang('challenges.main.12')--}}
@@ -146,14 +146,14 @@
 
                 {{--                        </div>--}}
 
-                {{--                        <div class="leading-6 text-base text-left mt-2">--}}
+                {{--                        <div class="mt-2 text-base leading-6 text-left">--}}
                 {{--                            <strong> @lang('challenges.share.0')</strong>--}}
 
-                {{--                            <ul class="leading-7 ml-2 mt-0 checklist mt-2">--}}
+                {{--                            <ul class="mt-0 mt-2 ml-2 leading-7 checklist">--}}
                 {{--                                <li>@lang('challenges.share.1')</li>--}}
                 {{--                                <li>@lang('challenges.share.2')</li>--}}
                 {{--                                <li>@lang('challenges.share.3')</li>--}}
-                {{--                                <ul class="leading-7 ml-6 mt-0 sub-checklist">--}}
+                {{--                                <ul class="mt-0 ml-6 leading-7 sub-checklist">--}}
                 {{--                                    <ol>--}}
                 {{--                                        <li>@lang('challenges.share.4')</li>--}}
                 {{--                                        <li>@lang('challenges.share.5')</li>--}}
@@ -165,14 +165,14 @@
                 {{--                            </ul>--}}
                 {{--                        </div>--}}
 
-                {{--                        <div class="leading-6 text-base text-left mt-2">--}}
+                {{--                        <div class="mt-2 text-base leading-6 text-left">--}}
 
                 {{--                            <strong>@lang('challenges.share.9')</strong><br/>--}}
                 {{--                            <div class="mt-2">--}}
                 {{--                                @lang('challenges.share.10') <a href="https://www.facebook.com/codeEU">@lang('challenges.share.11')</a> @lang('challenges.share.12')  <br/>--}}
 
                 {{--                                @lang('challenges.share.13')--}}
-                {{--                                <ul class="leading-7 ml-2 mt-0 checklist">--}}
+                {{--                                <ul class="mt-0 ml-2 leading-7 checklist">--}}
                 {{--                                    <li>--}}
                 {{--                                        @lang('challenges.share.14')--}}
                 {{--                                    </li>--}}
@@ -183,7 +183,7 @@
                 {{--                        </div>--}}
 
 
-                {{--                        <div class="leading-6 text-base text-left mt-2">--}}
+                {{--                        <div class="mt-2 text-base leading-6 text-left">--}}
 
                 {{--                            <strong>@lang('challenges.bingo.0')</strong><br/>--}}
                 {{--                            <div class="mt-2">--}}
@@ -193,7 +193,7 @@
                 {{--                            </div>--}}
                 {{--                        </div>--}}
 
-                {{--                        <div class="leading-6 text-base text-left mt-6">--}}
+                {{--                        <div class="mt-6 text-base leading-6 text-left">--}}
 
                 {{--                            <strong>@lang('challenges.bingo.4')</strong><br/>--}}
                 {{--                            <div class="mt-2">--}}
@@ -206,11 +206,11 @@
 
                 {{--                    </div>--}}
 
-                {{--                    <div class="mt-6 orange text-3xl">--}}
+                {{--                    <div class="mt-6 text-3xl orange">--}}
                 {{--                        @lang('challenges.take-part.0')--}}
                 {{--                    </div>--}}
-                {{--                    <div class="leading-6 text-base text-left">--}}
-                {{--                        <ul class="leading-7 ml-2 mt-0 checklist mt-2">--}}
+                {{--                    <div class="text-base leading-6 text-left">--}}
+                {{--                        <ul class="mt-0 mt-2 ml-2 leading-7 checklist">--}}
                 {{--                            <li>--}}
                 {{--                                @lang('challenges.take-part.1')--}}
 
