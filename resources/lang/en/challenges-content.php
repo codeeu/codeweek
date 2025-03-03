@@ -1,6 +1,31 @@
 <?php
 
 return [
+    'careers-as-constellations' => [
+        'title' => 'Careers as Constellations: Mapping Interests to Future Technologies',
+        'author' => 'Linda Liukas',
+        'purposes' => [
+            'Code interactive riddles',
+            'Use code to create dialogues between a chatbot and a user',
+        ],
+        'description' => 'This interactive activity helps students map their personal interests and hobbies to potential careers in technology. By visualizing their skills and passions as constellations, students discover how careers are formed by connecting seemingly unrelated dots. No prior coding experience is required, and the activity fosters creative thinking about the future of work in technology.',
+        'instructions' => [
+            'Think of a riddle',
+            'Log in to',
+            'or create a new account. (When creating a new account keep in mind that real names are not allowed on Pencil Code due to privacy reasons.)',
+            'Click Imagine and Make your own',
+            'Use blocks or text-based mode to write your riddle',
+            'Alternatively, you can use',
+            'this code',
+            'and adapt it to your riddle or you can select Answering a riddle from the menu and edit it',
+        ],
+        'example' => 'Check out this example of a riddle.',
+        'more' => [
+            'This code has been Adapted from Pencil Code activity',
+            'Answering the Riddle',
+        ],
+    ],
+
     'chatbot' => [
         'title' => 'Make a chatbot',
         'author' => 'EU Code Week Team',
