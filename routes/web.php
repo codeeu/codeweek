@@ -107,6 +107,10 @@ Route::get('/treasure-hunt', [StaticPageController::class, 'static'])->name(
 Route::get('/dance', [StaticPageController::class, 'static'])->name('dance');
 Route::get('/why-coding', [StaticPageController::class, 'static'])->name('why-coding');
 
+Route::get('/girls-in-digital-week', [StaticPageController::class, 'static'])->name(
+    'girls-in-digital-week'
+);
+
 Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name(
     'remote-teaching'
 );
