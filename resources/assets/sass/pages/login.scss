@@ -166,11 +166,6 @@
   padding-bottom: 40px;
 }
 
-.codeweek-form-field input, .codeweek-form-field-wrapper input {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 #codeweek-login-page .codeweek-form-field{
   flex-direction: column;
   align-items: flex-start;
@@ -214,52 +209,3 @@
   }
 }
 
-#codeweek-forgotpassword-page .codeweek-form-field label {
-    margin-right: 10px;
-    text-transform: capitalize;
-    width: 100%;
-    text-align: left;
-    font-family: Blinker;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-
-}
-
-#codeweek-forgotpassword-page input#email {
-  border-radius: 24px;
-  border: 2px solid var(--Dark-Blue-200, #A4B8D9);
-  padding: 12px 0;
-  color: var(--Slate-500, #333E48);
-  font-family: Blinker;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-#codeweek-login-page .bg-dark-blue-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 237 246 / var(--tw-bg-opacity, 1));
-}
-
-.text-dark-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(73 113 180 / var(--tw-text-opacity, 1));
-}
-
-.border-dark-blue-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(119 148 199 / var(--tw-border-opacity, 1));
-}
-
-.border-dark-blue-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(164 184 217 / var(--tw-border-opacity, 1));
-}
-
-.border-dark-blue-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(164 184 217 / var(--tw-border-opacity, 1));
-}
