@@ -28,8 +28,8 @@ export default defineConfig({
     css: {
         postcss: {
             plugins: [
-                tailwindcss,  // Tailwind CSS
-                autoprefixer, // Autoprefixer
+                tailwindcss,  // Add Tailwind here
+                autoprefixer, // Add Autoprefixer here
             ],
         },
     },
@@ -39,11 +39,5 @@ export default defineConfig({
             'vue': 'vue/dist/vue.esm-bundler.js',
         },
     },
-    define: {
-        global: 'window',  // Fix `crypto.getRandomValues` issue
-    },
-    esbuild: {
-        jsxFactory: 'h',
-        jsxFragment: 'Fragment',
-    },
 });
+
