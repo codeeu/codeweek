@@ -16,17 +16,14 @@ class LeadingTeacherRoleSeeder extends Seeder
         // Reset cached roles and permissions
         app()['cache']->forget('spatie.permission.cache');
 
-        // Check if permission already exists before creating
-        $permission = Permission::firstOrCreate(['name' => 'submit resource']);
+        // create permissions
+        Permission::create(['name' => 'submit resource']);
 
-        // Check if role already exists before creating
-        $leadingTeacherRole = Role::firstOrCreate(['name' => 'leading teacher']);
-        if (!$leadingTeacherRole->hasPermissionTo($permission)) {
-            $leadingTeacherRole->givePermissionTo($permission);
-        }
+        // create roles and assign created permissions
+        $leadingTeacherRole = Role::create(['name' => 'leading teacher']);
+        $leadingTeacherRole->givePermissionTo(['submit resource']);
 
-        Role::firstOrCreate(['name' => 'leading teacher admin']);
+        $leadingTeacherAdminRole = Role::create(['name' => 'leading teacher admin']);
 
-        $this->command->info("✅ Leading Teacher roles and permissions seeded successfully!");
     }
 }
