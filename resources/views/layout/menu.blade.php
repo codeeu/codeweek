@@ -55,9 +55,9 @@
               {{-- search side --}}
               <li class="main-menu-item xl:hidden w-full">
                 <div class="relative w-full">
-                  <input 
-                      class="pl-6 pr-14 py-3 w-full rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48]" 
-                      placeholder="@lang('menu.search_site')" 
+                  <input
+                      class="pl-6 pr-14 py-3 w-full rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48]"
+                      placeholder="@lang('menu.search_site')"
                   />
                   <button class="absolute right-2 top-1/2 -translate-y-1/2 p-2 duration-300 hover:bg-[#E8EDF6] rounded-full">
                     <img class="text-dark-blue" src="/images/search-icon.svg" alt="">
@@ -408,8 +408,8 @@
           <div class="relative w-full">
             <input
               id="search-menu-input"
-              class="pl-6 pr-48 py-4 w-full text-[16px] rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48] font-semibold" 
-              placeholder="@lang('menu.type_to_search')" 
+              class="pl-6 pr-48 py-4 w-full text-[16px] rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48] font-semibold"
+              placeholder="@lang('menu.type_to_search')"
             />
             <button
               class="absolute right-1.5 top-1/2 text-[18px] -translate-y-1/2 px-[60px] py-3 bg-[#F95C22] hover:bg-[#FB9D7A] rounded-full font-semibold font-['Blinker'] duration-300"
