@@ -16,7 +16,7 @@ You can personalise and download your Super Organiser certificate by clicking on
     Get your Certificate
 @endcomponent
 
-Thank you very much for helping us advance digital skills! We hope to work together again in the 2024 edition of EU Code Week, which will take place from 14-27 October.<br/><br/>
+Thank you very much for helping us advance digital skills! We hope to work together again in the next edition of EU Code Week, which will take place from 14-27 October.<br/><br/>
 
 
 
