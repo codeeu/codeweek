@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Paper Circuit – Create Interactive Art with Code')
+@section('description', 'Design and build interactive paper circuits using coding principles in this creative and hands-on challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

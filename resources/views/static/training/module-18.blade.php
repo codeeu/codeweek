@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'SOS Water – Coding for Environmental Awareness')
+@section('description', 'Discover how coding can address environmental challenges in this EU Code Week training.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

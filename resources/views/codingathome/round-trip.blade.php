@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Round Trip – A Fun Coding at Home Challenge')
+@section('description', 'Program a round-trip journey while learning coding logic and sequencing.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

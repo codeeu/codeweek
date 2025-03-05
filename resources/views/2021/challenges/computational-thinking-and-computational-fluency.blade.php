@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Computational Thinking & Computational Fluency – Challenge')
+@section('description', 'Enhance your problem-solving skills through computational thinking and fluency in this engaging challenge. Learn to break down complex problems with coding techniques.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding for Sustainable Development Goals – Tech for Change')
+@section('description', 'Explore how coding can be used to address global challenges and contribute to achieving the Sustainable Development Goals in this training.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

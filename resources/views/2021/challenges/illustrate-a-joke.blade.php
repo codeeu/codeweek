@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Illustrate a Joke – A Fun Coding Challenge')
+@section('description', 'The students design a game where the user finds the answer to a joke question when the figure hits an object on the playing field.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

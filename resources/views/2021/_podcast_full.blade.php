@@ -1,3 +1,6 @@
+@section('title', $podcast->title)
+@section('description', $podcast->description)
+
 <div class="flex justify-between -mb-4">
     <h1 class="subtitle">EU Code Week Podcast: {{$podcast->title}}</h1>
     @if($podcast->transcript)

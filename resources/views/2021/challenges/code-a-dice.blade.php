@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Code a Dice – Build Your Own Virtual Dice')
+@section('description', 'Learn how to code a virtual dice in this exciting challenge. Practice programming concepts while creating a fun, interactive dice simulator.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Creative Coding with Python – Learn Programming Creatively')
+@section('description', 'Explore Python’s potential for creative projects, from digital art to interactive applications.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">
