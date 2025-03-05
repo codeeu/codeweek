@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Cookie Policy – Manage Your Preferences')
+@section('description', 'Learn how EU Code Week uses cookies to enhance your browsing experience and how you can manage your preferences.')
+
 @section('content')
 
     <section id="codeweek-privacy-page" class="codeweek-page">

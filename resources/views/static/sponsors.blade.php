@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Partners – Join Our Network for Digital Education')
+@section('description', 'Collaborate with EU Code Week as a partner and help spread digital literacy and coding skills across Europe.')
+
 @section('content')
     <section id="codeweek-sponsors-page" class="codeweek-page">
 <style>

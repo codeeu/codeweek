@@ -2,7 +2,7 @@
 
 <x-tailwind></x-tailwind>
 
-
+@section('title', $event->title)
 
 @section('content')
 

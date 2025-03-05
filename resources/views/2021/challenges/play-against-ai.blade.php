@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Play Against AI – Challenge Your Coding Skills')
+@section('description', 'Code a game where you compete against artificial intelligence. Test your coding abilities and learn how to create responsive AI.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

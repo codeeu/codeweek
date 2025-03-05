@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Create Your Own Masterpiece – Code Art and Design')
+@section('description', 'Unleash your creativity by coding your own digital masterpiece. Learn how to design and program interactive art in this fun challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

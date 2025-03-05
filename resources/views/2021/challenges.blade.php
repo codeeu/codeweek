@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding Challenges – Test Your Skills with EU Code Week')
+@section('description', 'Take on exciting coding challenges designed to boost creativity, problem-solving, and programming skills for all ages.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

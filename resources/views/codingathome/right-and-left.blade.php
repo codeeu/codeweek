@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Right and Left – Learn Coding Directions Through Play')
+@section('description', 'Strengthen logical thinking by programming movement with right and left turns in this engaging coding challenge.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

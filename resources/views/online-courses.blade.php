@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Free Online Coding Courses – EU Code Week')
+@section('description', 'Learn coding at your own pace with free online courses from EU Code Week. Ideal for beginners, teachers, and anyone interested in programming.')
+
 @section('title', 'Online Courses')
 
 <x-tailwind></x-tailwind>

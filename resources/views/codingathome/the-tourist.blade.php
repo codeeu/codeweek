@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'The Tourist – A Coding at Home Puzzle')
+@section('description', 'Two teams challenge each other to find, in the shortest time possible, the sequence of instructions that will guide the tourist to the monuments for visit.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Making an Automaton with Microbit – Hands-On Coding with Microbit')
+@section('description', 'Discover how to create a moving automaton using the Microbit in this practical and fun coding workshop for students and teachers alike.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

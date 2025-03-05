@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding with LEGO Boost – Build & Program Robots')
+@section('description', 'Combine coding and creativity by building and programming robots with LEGO Boost in this interactive challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

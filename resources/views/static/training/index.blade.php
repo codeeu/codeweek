@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding Training for Teachers – EU Code Week')
+@section('description', 'Enhance your coding teaching skills with specialized training courses and resources from EU Code Week.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

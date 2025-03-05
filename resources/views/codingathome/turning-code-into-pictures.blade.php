@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Turning Code into Pictures – Creative Coding at Home')
+@section('description', 'Use code to generate digital images and patterns in this engaging activity.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">
