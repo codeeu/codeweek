@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Sensing Game – Explore Sensors Through Coding')
+@section('description', 'Use coding to create a game that interacts with physical sensors. Learn about sensors and data collection in this hands-on challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

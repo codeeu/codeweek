@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Storytelling with Hedy – Learn to Code Through Stories')
+@section('description', 'Hedy is aimed at children who want to get started with textual programming languages, but for whom starting with Python might still be too complex. ')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

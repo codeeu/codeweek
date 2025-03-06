@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding for All Subjects – Integrating Coding in Education')
+@section('description', 'Discover how to incorporate coding across various subjects to enhance learning and engage students in this practical training.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

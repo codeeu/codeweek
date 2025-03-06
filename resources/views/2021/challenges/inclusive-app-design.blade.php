@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Inclusive App Design – Coding for Everyone')
+@section('description', 'In this activity, students will come up with an app idea on a topic they care about, then discover how to design apps with inclusion and accessibility in mind.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

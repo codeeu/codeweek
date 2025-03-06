@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Creative Scratch Laboratory – Explore Coding with Scratch')
+@section('description', 'Unleash creativity with Scratch! Learn how to develop fun and interactive projects in this hands-on coding training.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

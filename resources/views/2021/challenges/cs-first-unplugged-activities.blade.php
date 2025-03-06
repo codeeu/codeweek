@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'CS First Unplugged – Screen-Free Coding Fun')
+@section('description', 'Learn coding concepts through hands-on, unplugged activities from Google CS First.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

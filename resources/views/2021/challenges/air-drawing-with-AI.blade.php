@@ -1,5 +1,9 @@
 @extends('layout.base')
 
+@section('title', 'Air Drawing with AI – Creative Coding Challenge')
+@section('description', 'Explore the power of AI in this fun "Air Drawing with AI" challenge. Create and interact with digital art using AI and coding in an innovative way.')
+
+
 <x-tailwind></x-tailwind>
 
 @section('content')

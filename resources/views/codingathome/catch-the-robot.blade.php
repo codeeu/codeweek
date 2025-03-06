@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Catch the Robot – A Coding at Home Game')
+@section('description', 'Test your coding skills by programming a robot-catching game with logical commands.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

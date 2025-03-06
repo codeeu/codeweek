@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Podcasts – Inspiring Talks on Coding')
+@section('description', 'Listen to expert discussions on coding, education, and digital literacy. Stay inspired with EU Code Week’s podcast series.')
+
 <x-tailwind></x-tailwind>
 <x-alpine></x-alpine>
 

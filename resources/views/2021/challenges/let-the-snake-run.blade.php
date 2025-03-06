@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Let the Snake Run – Code a Fun Game')
+@section('description', 'Create a game where a snake runs through obstacles. Learn coding logic and game mechanics in this exciting challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

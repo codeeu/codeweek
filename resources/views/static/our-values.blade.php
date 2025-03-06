@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Values – Empowering Digital Skills for All')
+@section('description', 'Discover the core values of EU Code Week: inclusion, innovation, collaboration, and digital empowerment for everyone.')
+
 @section('content')
 
     <section id="codeweek-about-page" class="codeweek-page">

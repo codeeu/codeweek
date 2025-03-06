@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Multilingual Counting App – A Coding Challenge')
+@section('description', 'Create an app that counts in multiple languages and enhance your coding skills.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

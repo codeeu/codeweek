@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Train AI Bot – Build and Train Your Own AI')
+@section('description', 'Dive into the world of artificial intelligence by coding and training your own AI bot in this exciting challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

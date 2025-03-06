@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Robotics & Tinkering – EU Code Week Training')
+@section('description', 'The integration of coding, tinkering, robotics, and microelectronics as teaching and learning tools in the school curricula is key in 21st century education.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

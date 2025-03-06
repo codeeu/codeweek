@@ -38,12 +38,18 @@
     </script>
 
     <!-- Title, keywords, description -->
-    <meta name="description" content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
+    @hasSection('description')
+        <meta name="description"
+              content="@yield('description')"/>
+    @else
+        <meta name="description"
+              content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
+    @endif
 
     @hasSection('title')
-    <title>EU Code Week - @yield('title')</title>
+        <title>@yield('title')</title>
     @else
-    <title>EU Code Week</title>
+        <title>EU Code Week</title>
     @endif
 
     <!-- Start - Cookie Bot -->

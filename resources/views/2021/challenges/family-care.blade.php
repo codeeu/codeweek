@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Family Care – Code for a Better Tomorrow')
+@section('description', 'Use coding to create solutions that promote family well-being and care. Explore how technology can support families in this impactful challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

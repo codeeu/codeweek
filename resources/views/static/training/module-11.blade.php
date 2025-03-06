@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding for Inclusion – Promote Diversity in Tech')
+@section('description', 'Learn how to use coding to foster inclusion and diversity in education, ensuring equal opportunities for all students in this training.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

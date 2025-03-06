@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Keep Off My Path – A Coding at Home Challenge')
+@section('description', 'Develop logical thinking with this fun, strategic coding challenge from EU Code Week’s Coding at Home series.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

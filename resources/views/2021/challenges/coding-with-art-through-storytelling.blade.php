@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding with Art & Storytelling – A Creative Challenge')
+@section('description', 'Combine coding and creativity to bring stories to life through interactive digital art.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

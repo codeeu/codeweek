@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'AI Hour of Code – Explore Artificial Intelligence')
+@section('description', 'Dive into the world of AI with the "AI Hour of Code" challenge. Learn how artificial intelligence works and create your own AI projects in this interactive coding experience.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

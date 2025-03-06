@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Meeting Point – A Coding at Home Challenge')
+@section('description', 'Use coding to create a virtual meeting point where different elements interact, enhancing your logical thinking and problem-solving skills.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

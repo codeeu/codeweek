@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Walk as Long as You Can – A Fun Coding at Home Challenge')
+@section('description', 'Develop problem-solving skills with this engaging coding activity that encourages strategic movement and logical thinking.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

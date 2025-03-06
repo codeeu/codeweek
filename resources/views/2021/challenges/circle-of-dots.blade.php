@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Circle of Dots – A Fun Coding Challenge')
+@section('description', 'Create a mesmerizing circle of dots using code in this interactive challenge. Learn about patterns, loops, and geometry in programming.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

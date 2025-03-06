@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Emobot Kliki – Create Your Own Interactive Robot')
+@section('description', 'Design and program Emobot Kliki, an interactive robot, in this fun coding challenge that combines creativity and technology.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

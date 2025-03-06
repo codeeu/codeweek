@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Colour Everything – A Creative Coding at Home Activity')
+@section('description', 'Discover how coding can be used to create colorful patterns and designs in this fun and interactive activity.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

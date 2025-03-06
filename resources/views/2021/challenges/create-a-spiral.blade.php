@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Create a Spiral – Code Your Own Geometric Design')
+@section('description', 'Learn coding concepts while creating a beautiful spiral pattern in this engaging challenge. Explore geometry and creativity through programming!')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Learning in the Age of Intelligent Machines')
+@section('description', 'Explore how AI and intelligent machines are transforming education and learning strategies in this insightful training for educators.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

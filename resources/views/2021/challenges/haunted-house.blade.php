@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Haunted House – A Spooky Coding Challenge')
+@section('description', 'Code your own interactive haunted house and bring spooky surprises to life!  Every time the code is run a new story will be created. ')
+
 <x-tailwind></x-tailwind>
 
 @section('content')
