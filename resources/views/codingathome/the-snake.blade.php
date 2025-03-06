@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('title', 'The Snake – A Coding at Home Activity')
-@section('description', 'Develop computational thinking by coding a snake that moves through a digital space. The snake is a type of solitaire played with CodyRoby cards.')
+@section('description', 'Develop computational thinking by coding a snake that moves through a digital space. The snake is a type of solitaire played with CodyRoby cards. ')
 
 @section('content')
 

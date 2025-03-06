@@ -1,7 +1,7 @@
 @extends('layout.base')
 
-@section('title', 'Computational Thinking & Computational Fluency – Challenge')
-@section('description', 'Enhance your problem-solving skills through computational thinking and fluency in this engaging challenge. Learn to break down complex problems with coding techniques.')
+@section('title', 'Computational Thinking & Fluency – EU Code Week Challenge')
+@section('description', 'Strengthen your problem-solving skills with this computational thinking challenge.')
 
 <x-tailwind></x-tailwind>
 
