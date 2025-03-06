@@ -1,6 +1,6 @@
 @extends('layout.base')
 
-@section('title', 'Intro to Scratch – Learn Visual Programming')
+@section('title', 'ntro to Scratch – Learn Visual Programming')
 @section('description', 'Using Scratch as a digital storytelling tool, students can create stories, illustrate a math problem or play an art contest to learn about cultural heritage.')
 
 @section('content')

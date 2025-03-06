@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('title', 'Two Snakes – Interactive Coding at Home Challenge')
-@section('description', 'Program two snakes to move and interact in this engaging coding activity. The snake is a type of solitaire played with CodyRoby cards.')
+@section('description', 'Program two snakes to move and interact in this engaging coding activity. The snake is a type of solitaire played with CodyRoby cards. ')
 
 @section('content')
 

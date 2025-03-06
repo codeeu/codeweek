@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('title', 'Boring Pixels – Fun with Digital Art & Coding')
-@section('description', 'By giving Roby instructions to form a picture square by square, pixel by pixel, we discover that when many squares in a row have the same colour.')
+@section('description', 'By giving Roby instructions to form a picture square by square, pixel by pixel, we discover that when many squares in a row have the same colour. ')
 
 @section('content')
 
