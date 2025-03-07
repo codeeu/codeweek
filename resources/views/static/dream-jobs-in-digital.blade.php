@@ -2,7 +2,7 @@
 
 @php
     $list = [
-      (object) ['label' => 'Seasonal LP', 'href' => ''],
+      (object) ['label' => 'Careers in Digital', 'href' => ''],
     ];
 
     $results = [

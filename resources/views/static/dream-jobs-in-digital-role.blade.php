@@ -79,8 +79,8 @@
     $item = collect($results)->firstWhere('id', $id);
 
     $list = [
-      (object) ['label' => 'Seasonal LP', 'href' => '/'],
-      (object) ['label' => 'Role model detail', 'href' => ''],
+      (object) ['label' => 'Careers in Digital', 'href' => '/dream-jobs-in-digital'],
+      (object) ['label' => $item['first_name'] . ' ' . $item['last_name'], 'href' => ''],
     ];
 
     $resources = [
