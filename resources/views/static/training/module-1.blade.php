@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding Without Computers – Unplugged Coding Activities')
+@section('description', 'Engage students in coding activities without using computers. Learn fun and effective unplugged methods to teach coding concepts in this training.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

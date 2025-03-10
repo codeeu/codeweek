@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Personal Trainer – Build Your Fitness App')
+@section('description', 'Code your own fitness tracking app in this interactive challenge. Combine programming with health and wellness to create a personal trainer.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

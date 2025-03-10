@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'CodyPlotter & CodyPrinter – Coding for Digital Creativity')
+@section('description', 'Explore how to use coding to design and generate drawings with CodyPlotter and CodyPrinter in this hands-on activity.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

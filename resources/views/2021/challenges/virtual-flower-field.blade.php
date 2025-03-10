@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Virtual Flower Field – Create a Digital Garden with Code')
+@section('description', 'Use coding to create a beautiful virtual flower field. Explore programming and design while building a colorful, interactive garden.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

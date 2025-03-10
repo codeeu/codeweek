@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Creative Thinking through Mobile App Development')
+@section('description', 'Boost creative thinking while learning how to build mobile apps in this engaging training for aspiring developers.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

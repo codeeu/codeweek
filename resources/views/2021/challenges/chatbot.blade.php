@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Chatbot – Build Your Own Interactive Chatbot')
+@section('description', 'Learn how to design and program a chatbot that can interact with users in this engaging coding challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

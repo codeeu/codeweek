@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Follow the Music – A Fun Coding at Home Activity')
+@section('description', 'Learn coding through music! Try this engaging activity to create patterns and sequences using code.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

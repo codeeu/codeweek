@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Hackathons – Innovate, Code & Compete')
+@section('description', 'Join EU Code Week Hackathons, where young minds collaborate to solve real-world challenges through coding and innovation.')
+
 @section('title', 'Hackathons')
 @section('content')
 

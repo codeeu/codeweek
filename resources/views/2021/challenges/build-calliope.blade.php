@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Build Calliope – Hands-On Coding Challenge')
+@section('description', 'This challenge has been written by Amazon Future Engineer | Meet and Code feat. Calliope gGmbH and is part of the EU CODE WEEK CHALLENGES.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')
