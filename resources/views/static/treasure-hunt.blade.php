@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Treasure Hunt – Fun & Interactive Coding Game')
+@section('description', 'Take part in the EU Code Week Treasure Hunt, a digital adventure designed to teach coding in an exciting and interactive way.')
+
 @section('content')
 
     <section id="codeweek-about-page" class="codeweek-page">

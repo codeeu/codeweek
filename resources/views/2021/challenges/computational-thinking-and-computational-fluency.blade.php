@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Computational Thinking & Fluency – EU Code Week Challenge')
+@section('description', 'Strengthen your problem-solving skills with this computational thinking challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

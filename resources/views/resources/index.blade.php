@@ -1,5 +1,20 @@
 @extends('layout.base')
 
+@php
+    $currentUrl = request()->url();
+@endphp
+
+@if(strpos($currentUrl, route('resources_learn')) !== false)
+    @section('title', 'Learn Coding with EU Code Week – Free Educational Resources')
+    @section('description', 'Explore a collection of free resources, courses, and tutorials designed to help students and beginners learn coding at their own pace.')
+@elseif(strpos($currentUrl, route('resources_teach')) !== false)
+    @section('title', 'Teaching Coding – Free EU Code Week Resources for Educators')
+    @section('description', 'Access high-quality resources, lesson plans, and guides to effectively teach coding in classrooms and beyond.')
+@else
+    @section('title', 'Free Coding Resources – EU Code Week')
+    @section('description', 'Access a wide range of free coding resources, including lesson plans, tutorials, and activities for students, teachers, and coding enthusiasts.')
+@endif
+
 @section('content')
 
 

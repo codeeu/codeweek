@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week: Code Your Own Dance Moves')
+@section('description', 'Learn coding through music and movement! Join the EU Code Week Dance Challenge and code your own dance.')
+
 @section('content')
 
     <section id="codeweek-about-page" class="codeweek-page">
