@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Dance – A Creative Coding Challenge')
+@section('description', 'Combine coding and dance in this exciting challenge. Program movements and animations to create a unique digital dance performance.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

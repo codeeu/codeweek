@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Making and Coding – Hands-On Digital Creativity')
+@section('description', 'Explore the intersection of coding and making with creative, practical projects.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

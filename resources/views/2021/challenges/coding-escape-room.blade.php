@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding Escape Room – Solve Puzzles with Code')
+@section('description', 'Use your coding skills to crack puzzles and escape in this fun and interactive challenge.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

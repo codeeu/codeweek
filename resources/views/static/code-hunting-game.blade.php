@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Code Hunting Game – Solve Clues with Coding')
+@section('description', 'Join an exciting code-hunting adventure, solving clues and completing coding challenges.')
+
 @section('content')
 
     <section id="codeweek-code-hunting-game-page" class="codeweek-page">

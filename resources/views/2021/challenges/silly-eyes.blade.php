@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Silly Eyes – A Fun Coding Challenge')
+@section('description', 'You will design and create a silly eye character. The character’s large, silly eyes will follow the mouse pointer to bring your character to life.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

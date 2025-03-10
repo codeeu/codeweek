@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Coding at Home – Fun & Educational Activities for All')
+@section('description', 'Explore EU Code Week’s Coding at Home series—fun, interactive coding activities for kids, families, and educators.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

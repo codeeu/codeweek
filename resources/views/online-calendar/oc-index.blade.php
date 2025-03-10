@@ -1,5 +1,7 @@
 @extends('layout.base')
 
+@section('title', 'Featured Coding Activities – Join Exciting Code Week Events')
+@section('description', 'Discover and participate in featured coding activities from EU Code Week. Find engaging projects and workshops near you!')
 
 
 

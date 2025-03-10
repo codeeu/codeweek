@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Craft Magic – Create Magical Coding Projects')
+@section('description', 'Use coding to create magical, interactive projects in this fun and creative challenge. Bring your imaginative ideas to life through programming!')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

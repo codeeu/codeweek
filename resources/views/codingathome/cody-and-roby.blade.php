@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Cody and Roby – Unplugged Coding for Beginners')
+@section('description', 'Learn the basics of coding with Cody and Roby, a fun unplugged activity that teaches programming concepts without a computer.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

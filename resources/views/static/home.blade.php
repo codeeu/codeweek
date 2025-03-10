@@ -1,5 +1,8 @@
 @extends('layout.new_base')
 
+@section('title', 'Join EU Code Week – Learn, Create, & Have Fun with Coding')
+@section('description', 'EU Code Week is a grassroots initiative bringing coding and digital creativity to everyone in a fun way. Join events & access resources, and start coding!')
+
 @section('non-vue-content')
     <section id="codeweek-homepage" class="codeweek-page font-['Blinker']">
       <section class="relative flex overflow-hidden">

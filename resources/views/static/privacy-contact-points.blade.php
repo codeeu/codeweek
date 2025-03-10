@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Privacy Contact Points')
+@section('description', 'Find official contact points for privacy-related questions and inquiries.')
+
 @section('content')
     <section id="codeweek-privacy-page" class="codeweek-page">
 

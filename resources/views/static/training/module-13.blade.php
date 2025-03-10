@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Introduction to AI in the Classroom – Teaching with AI')
+@section('description', 'Learn how to introduce artificial intelligence concepts in the classroom. This training helps educators bring AI to life in student-friendly ways.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

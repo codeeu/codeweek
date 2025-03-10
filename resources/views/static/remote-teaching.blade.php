@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Remote Teaching Resources for Coding Education')
+@section('description', 'Access tools, guides, and best practices to teach coding remotely. Engage students in online learning with EU Code Week’s curated resources.')
+
 @section('content')
 
     <section id="codeweek-about-page" class="codeweek-page">

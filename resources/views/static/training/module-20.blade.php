@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Code Through Art – Combine Creativity and Coding')
+@section('description', 'Learn how to integrate coding with art in this interactive training. Explore ways to create digital artwork through programming.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">
