@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Tug of War – A Coding at Home Game')
+@section('description', 'Program a fun "Tug of War" game, testing your coding and logical thinking skills while having fun with interactive challenges.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Calming LEDs – Create Relaxing Light Effects with Code')
+@section('description', 'Program soothing LED light patterns in this calming coding challenge. Explore the intersection of coding and creativity to design peaceful light displays.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

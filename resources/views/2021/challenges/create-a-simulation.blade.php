@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Create a Simulation – A Coding Challenge')
+@section('description', 'Write code to create and run your own simulation of the virus outbreak at Monster Town. Learn to code and make predictions.')
+
 <x-tailwind></x-tailwind>
 
 @section('content')

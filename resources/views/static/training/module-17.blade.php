@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Feel the Code – Interactive Coding Training')
+@section('description', 'Discover a hands-on approach to coding with EU Code Week’s ""Feel the Code"" training, designed for an engaging learning experience.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

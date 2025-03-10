@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'The Explorer – Coding at Home Adventure')
+@section('description', 'The explorer is the first Coding@Home activity. Move the explorer around the board to reach the target after visiting as many squares as possible.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

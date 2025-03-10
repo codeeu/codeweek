@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Computational Thinking and Problem-Solving')
+@section('description', 'Strengthen problem-solving skills with computational thinking techniques.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

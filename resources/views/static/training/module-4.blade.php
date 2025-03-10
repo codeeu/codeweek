@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Creating Educational Games with Scratch – Free Training')
+@section('description', 'By creating a questions and answers game in Scratch, the most popular programming language used at schools worldwide. Problem solving, computational thinking.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

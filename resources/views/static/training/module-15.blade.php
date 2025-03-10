@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Mining Media Literacy – Free Training Course')
+@section('description', 'This Learning Bit will enable you to implement various strategies and techniques to empower your students to become media literate. ')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">
