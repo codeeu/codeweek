@@ -21,6 +21,9 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
+    <!-- No index -->
+    <meta name="robots" content="noindex">
+
     @stack('extra-css')
 
     @yield('extra-css')
