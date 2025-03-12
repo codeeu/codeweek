@@ -221,13 +221,13 @@
         </section>
 
         <section class="relative z-10">
-            <div class="relative py-10 md:py-20 codeweek-container-lg flex justify-center">
+            <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                         Coding@home optional section
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        EU Code Week’s Coding@Home series builds on the <a class="underline" href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> initiative of the University of Urbino and the CodeMOOCnet Association in cooperation with Rai Cultura. The author of Coding@Home video is Alessandro Bogliolo, a Professor of Information Processing Systems at the University of Urbino, an <a class="underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italian EU Code Week ambassador</a> and the coordinator of all ambassadors as well as a member of the Governing Board of the Digital Skills and Jobs Coalition.
+                        EU Code Week’s Coding@Home series builds on the <a class="text-dark-blue underline" href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> initiative of the University of Urbino and the CodeMOOCnet Association in cooperation with Rai Cultura. The author of Coding@Home video is Alessandro Bogliolo, a Professor of Information Processing Systems at the University of Urbino, an <a class="text-dark-blue underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italian EU Code Week ambassador</a> and the coordinator of all ambassadors as well as a member of the Governing Board of the Digital Skills and Jobs Coalition.
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
                         You do not need any previous knowledge or electronic devices to do the activities. The activities will stimulate computational thinking and cultivate the skills of pupils, parents and teachers at home or at school
@@ -252,29 +252,24 @@
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
                 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
                     @foreach($results as $result)
-                    <div class="flex flex-col rounded-lg bg-white overflow-hidden">
-                        <div class="relative">
-                            <a href="{{ route($result['link']) }}">
-                                <img src="{{ $result['image'] }}" />
-                            </a>
-                            <div class="bg-white rounded-full w-12 h-12 flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                    <div class="group rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route($result['link']) }}'">
+                        <div class="relative overflow-hidden">
+                            <img src="{{ $result['image'] }}" />
+                            <button class="bg-white rounded-full w-12 h-12 flex justify-center items-center absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:top-1/2 duration-500">
                                 <img class="w-6 ml-1" src="/images/fi_play.svg" />
-                            </div>
-                            <div class="absolute bg-[#1C4DA1CC] px-2 py-1 rounded-md bottom-2.5 right-2.5 text-white font-semibold text-sm pointer-events-none">
+                            </button>
+                            <div class="absolute bg-[#1C4DA1CC] px-2 py-1 rounded-md bottom-2.5 right-2.5 text-white font-semibold text-sm">
                                 {{ $result['time'] }}
                             </div>
-                            <div class="absolute bottom-0 translate-y-1/2 left-6 px-4 py-1 bg-[#FFD700] rounded-full text-[#164194] font-semibold text-[16px] leading-[22px] pointer-events-none">
-                                {{ $result['label'] }}
-                            </div>
                         </div>
-                        <a class="block flex-grow px-6 py-8" href="{{ route($result['link']) }}">
+                        <div class="px-6 py-8">
                             <p class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat']">
                                 @lang($result['title'])
                             </p>
                             <p class="text-[#333E48] font-normal text-[16px] leading-[22px] p-0">
                                 @lang($result['description'])
                             </p>
-                        </a>
+                          </div>
                     </div>
                     @endforeach
                 </div>
