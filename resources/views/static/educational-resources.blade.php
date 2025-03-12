@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('online-courses') }}'"
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('online-courses') }}'">
                         <img src="/images/educational-resources/placeholder.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Online Courses</p>
