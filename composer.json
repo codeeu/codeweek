@@ -17,7 +17,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
         "laravel-lang/lang": "^12.18",
-        "laravel/framework": "^11.5",
+        "laravel/framework": "^11.44",
         "laravel/helpers": "^1.7",
         "laravel/legacy-factories": "^1.4",
         "laravel/nova": "^4.0",
