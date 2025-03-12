@@ -16,11 +16,11 @@
                 <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                            <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[830px]">
-                                Welcome! Here, you'll find a collection of free resources designed to support your learning journey!
+                            <h2 class="text-dark-blue text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[830px]">
+                                Educational Resources
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-slate-500 p-0 mb-0 max-md:max-w-full max-w-[725px]">
-                                Whether you're a beginner or looking to deepen your coding and digital skills, explore a variety of materials to help you grow in the world of coding and technology. Happy learning!
+                                Welcome! Here, you'll find a collection of free resources designed to support your learning journey!
                             </p>
                         </div>
                         <img
@@ -48,107 +48,115 @@
                 <p class="text-slate-500 font-normal leading-7 text-xl p-0 mb-4 w-full md:max-w-[825px] font-['Blinker']">
                     Share them with the EU Code Week community! Submit your free resources using the form below, and we'll feature them on this page to help others learn, create and grow.
                 </p>
-                <a
-                    class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg mb-10 md:mb-16"
-                    href="/"
-                >
-                    <span>Share your resource</span>
-                </a>
+                <div class="flex flex-col md:flex-row gap-4 mb-10 md:mb-16">
+                    <a
+                        class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
+                        href="https://forms.gle/pZz9issG45B9131n9"
+                    >
+                        <span>Share your resource</span>
+                    </a>
+                    <a
+                        class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
+                        href="https://forms.gle/enVmsPvNyYo7yEuT6"
+                    >
+                        <span>Share your feedback</span>
+                    </a>
+                </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-white overflow-hidden">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('coding@home') }}'">
                         <img src="/images/educational-resources/coding_home.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Coding @ Home</p>
-                            <a href="{{route('coding@home')}}" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('podcasts') }}'">
                         <img src="/images/educational-resources/podcasts.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Podcasts</p>
-                            <a href="{{route('podcasts')}}" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='/webinars'">
                         <img src="/images/educational-resources/webinar.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Webinars</p>
-                            <a href="/" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-dark-blue overflow-hidden">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('online-courses') }}'"
                         <img src="/images/educational-resources/placeholder.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-white text-lg p-0 font-semibold">Placeholder title</p>
-                            <a href="/" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <p class="text-white text-lg p-0 font-semibold">Online Courses</p>
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-dark-blue overflow-hidden">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('training.index')}}'">
                         <img src="/images/educational-resources/treasure_hunt.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-white text-lg p-0 font-semibold">Treasure Hunt</p>
-                            <a href="{{route('treasure-hunt')}}" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <p class="text-white text-lg p-0 font-semibold">Training</p>
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-white overflow-hidden">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('resources_learn')}}'">
                         <img src="/images/educational-resources/seasonal_content.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-dark-blue text-lg p-0 font-semibold">Seasonal content</p>
-                            <a href="/" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Learn & Teach</p>
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='dream-jobs-in-digital'">
                         <img src="/images/educational-resources/careers_in_digital.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Careers in Digital</p>
-                            <a href="/dream-jobs-in-digital" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('toolkits')}}'">
                         <img src="/images/educational-resources/placeholder-2.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-dark-blue text-lg p-0 font-semibold">Placeholder title</p>
-                            <a href="/" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Presentations and Toolkits</p>
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10">
-                    <div class="rounded-lg bg-dark-blue overflow-hidden">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('challenges')}}'">
                         <img src="/images/educational-resources/challenges.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Challenges</p>
-                            <a href="{{route('challenges')}}" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-dark-blue overflow-hidden">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('hackathons')}}'">
                         <img src="/images/educational-resources/hackathons.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Hackathons</p>
-                            <a href="{{route('hackathons')}}" class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -162,7 +170,7 @@
                     <div class="text-slate-500">
                         <p class="font-semibold text-xl p-0">Copyright notice ©</p>
                         <p class="font-normal text-xl p-0">
-                            <span class="font-semibold text-xl text-dark-blue underline">The EU Code Week website for schools</span> is a service supported by the European Commission Except where stated otherwise, content made available on this site is licensed under a <span class="font-semibold text-xl text-dark-blue underline">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license</span> Licensing under Creative Commons licenses does not of itself affect the ownership of the copyright Content from third party websites is subject to their own copyright restrictions; please refer to the site of origin for more information.
+                            <span class="font-semibold text-xl text-dark-blue underline">The EU Code Week website</span> is a service supported by the European Commission Except where stated otherwise, content made available on this site is licensed under a <span class="font-semibold text-xl text-dark-blue underline">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license</span> Licensing under Creative Commons licenses does not of itself affect the ownership of the copyright Content from third party websites is subject to their own copyright restrictions; please refer to the site of origin for more information.
                         </p>
                     </div>
                 </div>

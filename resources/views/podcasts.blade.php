@@ -69,7 +69,7 @@
         </section>
 
         <section class="relative z-10">
-            <div class="relative py-10 md:py-20 codeweek-container-lg flex justify-center">
+            <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                         EU Code Week Podcasts
@@ -78,7 +78,7 @@
                         Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and innovation closer to you, your community and your school.
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                        Join Arjana Blazic, Eugenia Casariego and Eirini Symeonidou, from the EU Code Week team, as they explore a range of topics, from media literacy to robotics, with the help of expert guests – to empower you to equip your students with the skills to confront the challenges and opportunities posed by a digital future.
+                        Join Arjana Blazic, Eugenia Casariego and Eirini Symeonidou, as they explore a range of topics, from media literacy to robotics, with the help of expert guests – to empower you to equip your students with the skills to confront the challenges and opportunities posed by a digital future.
                     </p>
                 </div>
             </div>

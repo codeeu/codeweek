@@ -111,7 +111,7 @@
             <x-cards.online-courses
                     title="EU Code Week - Ice-breaker MOOC"
                     url="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2019/about"
-                    description="The course aims to introduce participants to EU Code Week and familiarize with the new EU Code Week website for schools, explore and access free lesson plans to register activities for EU Code Week, discover various classroom support resources, and become acquainted with the toolkit designed for teachers."
+                    description="The course aims to introduce participants to EU Code Week and familiarize with the new EU Code Week website, explore and access free lesson plans to register activities for EU Code Week, discover various classroom support resources, and become acquainted with the toolkit designed for teachers."
                     date="3 – 26 June 2019"
                     img="icebreaker-2019.png"
             >
