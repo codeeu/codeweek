@@ -92,19 +92,19 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('online-courses') }}'"
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='/'">
                         <img src="/images/educational-resources/placeholder.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-white text-lg p-0 font-semibold">Online Courses</p>
+                            <p class="text-white text-lg p-0 font-semibold">Placeholder title</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('training.index')}}'">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('treasure-hunt')}}'">
                         <img src="/images/educational-resources/treasure_hunt.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-white text-lg p-0 font-semibold">Training</p>
+                            <p class="text-white text-lg p-0 font-semibold">Treasure Hunt</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>
@@ -112,10 +112,10 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('resources_learn')}}'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='/'">
                         <img src="/images/educational-resources/seasonal_content.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-dark-blue text-lg p-0 font-semibold">Learn & Teach</p>
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Seasonal content</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>
@@ -130,10 +130,10 @@
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('toolkits')}}'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='/'">
                         <img src="/images/educational-resources/placeholder-2.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-dark-blue text-lg p-0 font-semibold">Presentations and Toolkits</p>
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Placeholder title</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>

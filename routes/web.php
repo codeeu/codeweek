@@ -115,6 +115,10 @@ Route::get('/educational-resources', [StaticPageController::class, 'static'])->n
     'educational-resources'
 );
 
+Route::get('/webinars', [StaticPageController::class, 'static'])->name(
+    'webinars'
+);
+
 Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name(
     'remote-teaching'
 );
