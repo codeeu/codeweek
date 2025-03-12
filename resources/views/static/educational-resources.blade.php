@@ -101,7 +101,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('training.index')}}'">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='/training'">
                         <img src="/images/educational-resources/treasure_hunt.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Training</p>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('resources_learn')}}'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('resources_learn') }}'">
                         <img src="/images/educational-resources/seasonal_content.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Learn & Teach</p>
@@ -130,7 +130,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('toolkits')}}'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('toolkits') }}'">
                         <img src="/images/educational-resources/placeholder-2.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Presentations and Toolkits</p>
@@ -141,7 +141,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10">
-                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('challenges')}}'">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('challenges') }}'">
                         <img src="/images/educational-resources/challenges.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Challenges</p>
@@ -150,7 +150,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('hackathons')}}'">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('hackathons') }}'">
                         <img src="/images/educational-resources/hackathons.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Hackathons</p>
