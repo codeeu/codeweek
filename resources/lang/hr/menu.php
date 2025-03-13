@@ -38,6 +38,12 @@ return [
     'privacy' => 'Privatnost',
     'participation' => 'Potvrda o sudjelovanju',
     'values' => 'Naše vrijednosti',
-
     'featured_activities' => 'Planirana događanja',
-    'codeweek2020' => 'Izdanje 2020.'];
+    'codeweek2020' => 'Izdanje 2020.',
+    'register_activity' => 'Registrirajte aktivnost',
+    'select_language' => 'Odaberite jezik',
+    'search_site' => 'Pretraži mjesto',
+    'what_you_looking_for' => ': Što tražite?',
+    'type_to_search' => 'Upišite za pretraživanje...',
+    'search' => 'pretraživanje'
+];
