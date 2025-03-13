@@ -140,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10">
+                <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10 mb-6 xl:mb-8">
                     <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{route('challenges')}}'">
                         <img src="/images/educational-resources/challenges.png" />
                         <div class="p-6 flex justify-between items-center">
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
+                <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10">
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('toolkits')}}'">
                         <img src="/images/educational-resources/seasonal_content.png" />
                         <div class="p-6 flex justify-between items-center">
