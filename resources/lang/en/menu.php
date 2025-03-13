@@ -13,7 +13,7 @@ return [
     */
 
     'learn' => 'Learn',
-    'teach' => 'Teach',
+    'teach' => 'Teach & Learn',
     'training' => 'Training',
     'challenges' => 'Challenges',
     'online-courses' => 'Online Courses',

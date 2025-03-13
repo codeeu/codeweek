@@ -81,7 +81,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='/webinars'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('webinars') }}'">
                         <img src="/images/educational-resources/webinar.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Webinars</p>
@@ -92,10 +92,10 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='/'">
+                    <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('online-courses') }}'">
                         <img src="/images/educational-resources/placeholder.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-white text-lg p-0 font-semibold">Placeholder title</p>
+                            <p class="text-white text-lg p-0 font-semibold">Online Courses</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>
@@ -112,10 +112,10 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='/'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('training')}}'">
                         <img src="/images/educational-resources/seasonal_content.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-dark-blue text-lg p-0 font-semibold">Seasonal content</p>
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Training</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>
@@ -130,10 +130,10 @@
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='/'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('resources_teach') }}'">
                         <img src="/images/educational-resources/placeholder-2.png" />
                         <div class="p-6 flex justify-between items-center">
-                            <p class="text-dark-blue text-lg p-0 font-semibold">Placeholder title</p>
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Learn & Teach</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>
@@ -154,6 +154,35 @@
                         <img src="/images/educational-resources/hackathons.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Hackathons</p>
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                                <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('toolkits')}}'">
+                        <img src="/images/educational-resources/seasonal_content.png" />
+                        <div class="p-6 flex justify-between items-center">
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Presentations and Toolkits</p>
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                                <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('girls-in-digital-week') }}'">
+                        <img src="/images/educational-resources/careers_in_digital.png" />
+                        <div class="p-6 flex justify-between items-center">
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Girls in Digital</p>
+                            <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
+                                <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('dance') }}'">
+                        <img src="/images/educational-resources/placeholder-2.png" />
+                        <div class="p-6 flex justify-between items-center">
+                            <p class="text-dark-blue text-lg p-0 font-semibold">Dance Challenge</p>
                             <span class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                 <img class="-rotate-90" src="/images/digital-girls/arrow.svg" />
                             </span>
