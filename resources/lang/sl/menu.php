@@ -43,4 +43,10 @@ return [
     'values' => 'Naše vrednote',
     'featured_activities' => 'Izbrane dejavnosti',
     'codeweek2020' => 'Izdaja 2020',
+    'register_activity' => 'Registrirajte aktivnost',
+    'select_language' => 'Izberite jezik',
+    'search_site' => 'Išči stran',
+    'what_you_looking_for' => 'Kaj iščete? ',
+    'type_to_search' => 'Vpišite za iskanje ... ',
+    'search' => 'Iskanje'
 ];
