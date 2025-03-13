@@ -42,4 +42,11 @@ return [
     'participation' => 'Πιστοποιητικό συμμετοχής',
     'values' => 'Oι αξίες μας',
     'featured_activities' => 'Επιλεγμένες Δραστηριότητες',
-    'codeweek2020' => 'Διοργάνωση 2020'];
+    'codeweek2020' => 'Διοργάνωση 2020',
+    'register_activity' => 'Καταχώρηση Δραστηριότητας',
+    'select_language' => 'Επιλέξτε γλώσσα',
+    'search_site' => 'Αναζήτηση ιστότοπου',
+    'what_you_looking_for' => 'Τι ψάχνετε?',
+    'type_to_search' => 'Πληκτρολογήστε για αναζήτηση...',
+    'search' => 'αναζήτηση',
+];

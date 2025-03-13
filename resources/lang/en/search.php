@@ -38,4 +38,18 @@ return [
     'search_input_placeholder' => 'Search...',
     'results' => 'Results',
     'no_results' => 'No results found.',
+    'search_categories' => [
+        'all' => 'All',
+        'podcasts' => 'Podcasts',
+        'hackathons' => 'Hackathons',
+        'online_courses' => 'Online courses',
+        'training' => 'Training',
+        'challenges' => 'Challenges',
+        'learn' => 'Learn',
+        'tech' => 'Tech',
+        'presentations_and_toolkits' => 'Presentations and Toolkits',
+        'activities' => 'Activities',
+        'blogs' => 'Blogs',
+        'others' => 'Others'
+    ]
 ];
