@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('training')}}'">
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{route('training.index')}}'">
                         <img src="/images/educational-resources/seasonal_content.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Training</p>
