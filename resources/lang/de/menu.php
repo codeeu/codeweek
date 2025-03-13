@@ -40,4 +40,11 @@ return [
     'participation' => 'Teilnahmezertifikat',
     'values' => 'Unsere Werte',
     'featured_activities' => 'Hervorgehobene Aktivitäten',
-    'codeweek2020' => 'Ausgabe 2020'];
+    'codeweek2020' => 'Ausgabe 2020',
+    'register_activity' => 'Online-Kurse',
+    'select_language' => 'Sprache auswählen',
+    'search_site' => 'Site durchsuchen',
+    'what_you_looking_for' => 'Wonach suchen Sie?',
+    'type_to_search' => 'Suchbegriff eingeben...',
+    'search' => 'Suchbegriff'
+];

@@ -36,7 +36,15 @@ return [
     'logout' => 'Odhlásenie',
     'signin' => 'Prihlásenie',
     'privacy' => 'Ochrana súkromia',
-    'participation' => 'Certifikát o účasti',
+    'participation' => 'Certifikát oúčasti',
     'values' => 'Naše hodnoty',
     'featured_activities' => 'Vybrané aktivity',
-    'codeweek2020' => 'Ročník 2020'];
+    'codeweek2020' => 'Ročník 2020',
+
+    'register_activity' => 'Registruj aktivitu',
+    'select_language' => 'Vyberte jazyk',
+    'search_site' => 'Vyhľadať stránku',
+    'what_you_looking_for' => 'Čo hľadáte?',
+    'type_to_search' => 'Zadajte pre vyhladávanie...',
+    'search' => 'Vyhľadať'
+];

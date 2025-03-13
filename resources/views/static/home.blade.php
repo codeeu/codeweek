@@ -32,10 +32,10 @@
                     >
                         <div class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
-                                {{ $activity['title'] }}
+                                @lang($activity['title'])
                             </h2>
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                {{ mb_substr(strip_tags($activity['description']), 0, 200) }}
+                                {{ mb_substr(strip_tags(__(''.$activity['description'])), 0, 200) }}
                             </p>
                             <a
                               class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
