@@ -12,8 +12,7 @@ return [
     |
     */
 
-    'learn' => 'Learn',
-    'teach' => 'Teach & Learn',
+    'learn' => 'Learn & Teach',
     'training' => 'Training',
     'challenges' => 'Challenges',
     'online-courses' => 'Online Courses',
