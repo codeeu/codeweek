@@ -42,6 +42,12 @@ return [
     'privacy' => 'Confidențialitate',
     'participation' => 'Certificat de participare',
     'values' => 'Valorile noastre',
-
     'featured_activities' => 'Activități prevăzute',
-    'codeweek2020' => 'Ediția 2020'];
+    'codeweek2020' => 'Ediția 2020',
+    'register_activity' => 'Înregistrează o activitate',
+    'select_language' => 'Selectați limba',
+    'search_site' => 'Caută pe site',
+    'what_you_looking_for' => 'Ce dorești să cauți azi? ',
+    'type_to_search' => 'Tastează pentru a căuta…',
+    'search' => 'Căutare',
+];

@@ -27,5 +27,15 @@ return [
     'event' => 'renginys',
     'events' => 'renginiai',
     'year' => 'metai',
-    'audiences' => 'Auditorijos', 'themes' => 'Temos', 'countries' => 'Šalys', 'search_placeholder' => 'Ieškoti pagal pavadinimą arba aprašymą',
+    'audiences' => 'Auditorijos', 
+    'themes' => 'Temos', 
+    'countries' => 'Šalys', 
+    'search_placeholder' => 'Ieškoti pagal pavadinimą arba aprašymą',
+    'search_banner_title' => 'Suraskite įkvėpimą',
+    'search_banner_content' => 'Peržvelkite daugybę programavimo išteklių, veiklų ir vadovų, kurie padės jums pradėti skaitmeninės kūrybos ir mokymosi kelionę',
+    'search_results_title' => 'Paieškos rezultatai',
+    'search_input_label' => 'Peržiūrėkite rezultatus pagal raktinį žodį (-ius) žemiau:',
+    'search_input_placeholder' => 'Paieško...',
+    'results' => 'rezultatai',
+    'no_results' => 'Rezultatų nerasta.'
 ];
