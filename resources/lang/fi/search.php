@@ -27,5 +27,15 @@ return [
     'event' => 'tapahtuma',
     'events' => 'tapahtumaa',
     'year' => 'vuosi',
-    'audiences' => 'Kohderyhmä ', 'themes' => 'Teemat', 'countries' => 'Maat', 'search_placeholder' => 'Hae otsikon tai kuvauksen mukaan',
+    'audiences' => 'Kohderyhmä ', 
+    'themes' => 'Teemat', 
+    'countries' => 'Maat', 
+    'search_placeholder' => 'Hae otsikon tai kuvauksen mukaan',
+    'search_banner_title' => 'Löydä mikä inspiroi sinua',
+    'search_banner_content' => 'Selaa runsaasti koodausresursseja, aktiviteetteja ja oppaita tukeaksesi matkaasi kohti digitaalista luovuutta ja oppimista',
+    'search_results_title' => 'Hakutulokset',
+    'search_input_label' => 'Katso tulokset avainsanojesi perusteella alta:',
+    'search_input_placeholder' => 'Haku...',
+    'results' => 'Tulokset',
+    'no_results' => 'Tuloksia ei löytynyt.'
 ];
