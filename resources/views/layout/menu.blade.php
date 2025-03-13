@@ -112,6 +112,7 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('webinars')}}">@lang('menu.webinars')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
                             </div>
                             <div class="flex-grow flex flex-col gap-4">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
@@ -121,7 +122,7 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('treasure-hunt')}}">@lang('menu.treasure-hunt')</a></div>
                           </div>
                           <div class="relative flex-grow hidden xl:flex flex-col gap-4 w-60 mb-2">
-                              <img class="w-full h-auto rounded-lg" src="/images/resource-menu-bg.png" alt="">
+                              <img class="w-full h-full rounded-lg object-cover" src="/images/resource-menu-bg.png" alt="">
                               <div class="absolute w-full bottom-0 left-0 p-4">
                                 <div class="text-white text-xl font-semibold mb-1">@lang('menu.girls_in_digital')</div>
                                 <div class="text-white text-[16px] font-medium mb-2">
