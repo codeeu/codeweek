@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * @Author: Bernard Hanna
+ * @Date:   2025-03-03 16:51:10
+ * @Last Modified by:   Bernard Hanna
+ * @Last Modified time: 2025-03-13 12:18:47
+ */
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,6 +66,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeocodeController;
 use Illuminate\Support\Facades\Config;
 
+
+Route::permanentRedirect('/certificates/excellence/Excellence Certificate', '/certificates/excellence/2024');
+Route::permanentRedirect('/certificates/excellence/Excellence%20Certificate', '/certificates/excellence/2024');
 //Auth::loginUsingId(268354);
 
 Route::domain('{subdomain}.'.Config::get('app.url'))->group(function () {
@@ -694,6 +705,4 @@ Route::middleware(ProtectAgainstSpam::class)->group(function() {
     Auth::routes();
 });
 Route::feeds();
-
-
 
