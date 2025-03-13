@@ -41,4 +41,11 @@ return [
     'participation' => 'Сертификат за участие',
     'values' => 'Нашите ценности',
     'featured_activities' => 'Подбрани събития ',
-    'codeweek2020' => 'Издание 2020'];
+    'codeweek2020' => 'Издание 2020',
+    'register_activity' => 'Регистриране на Активност',
+    'select_language' => 'Изберете език',
+    'search_site' => 'Търсене в сайта',
+    'what_you_looking_for' => 'Какво търсите?',
+    'type_to_search' => 'Въведете за търсене...',
+    'search' => 'търсене'
+];

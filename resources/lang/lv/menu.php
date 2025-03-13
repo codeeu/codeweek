@@ -39,4 +39,11 @@ return [
     'participation' => 'Dalības sertifikāts',
     'values' => 'Mūsu vērtības',
     'featured_activities' => 'Rodoma veikla',
-    'codeweek2020' => '2020 m. laida'];
+    'codeweek2020' => '2020 m. laida',
+    'register_activity' => 'Reģistrēt aktivitāti',
+    'select_language' => 'Izvēlieties valodu',
+    'search_site' => 'Meklēt vietni',
+    'what_you_looking_for' => 'Ko tu vēlies atrast?',
+    'type_to_search' => 'Sākt meklēšanu...',
+    'search' => 'meklēšanu'
+];
