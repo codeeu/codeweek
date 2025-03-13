@@ -40,4 +40,12 @@ return [
     'participation' => 'Deltagerbevis',
     'values' => 'Vores værdier',
     'featured_activities' => 'Fremhævede aktiviteter',
-    'codeweek2020' => '2020 udgaven'];
+    'codeweek2020' => '2020 udgaven',
+
+    'register_activity' => 'Registrer aktivitet',
+    'select_language' => 'Vælg sprog',
+    'search_site' => 'Søg på webstedet',
+    'what_you_looking_for' => 'Hvad leder du efter?',
+    'type_to_search' => 'Skriv for at ansøge...',
+    'search' => 'Søg',
+];

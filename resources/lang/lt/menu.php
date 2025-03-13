@@ -40,4 +40,12 @@ return [
     'participation' => 'Dalyvio pažymėjimas',
     'values' => 'Mūsų principai',
     'featured_activities' => 'Rodoma veikla',
-    'codeweek2020' => '2020 m. laida'];
+    'codeweek2020' => '2020 m. laida',
+    'register_activity' => 'Užsiregistruoti veiklą',
+    'select_language' => 'Pasirinkite kalbą',
+    'search_site' => 'Paieškos svetainėje',
+    'what_you_looking_for' => 'Ko ieškote?',
+    'type_to_search' => 'Parašykite, ko ieškote...',
+    'search' => 'paieška'
+
+];

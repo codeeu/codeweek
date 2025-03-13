@@ -43,4 +43,10 @@ return [
     'values' => 'Våra värderingar',
     'featured_activities' => 'Utvalda aktiviteter',
     'codeweek2020' => '2020-upplagan',
+    'register_activity' => 'Registrera aktivitet',
+    'select_language' => 'Välj språk',
+    'search_site' => 'Sök webbplats',
+    'what_you_looking_for' => 'Vad letar du efter?',
+    'type_to_search' => 'Skriv för att söka...',
+    'search' => 'Söka',
 ];

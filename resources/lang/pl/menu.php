@@ -39,4 +39,11 @@ return [
     'participation' => 'Certyfikat uczestnictwa',
     'values' => 'Nasze wartości',
     'featured_activities' => 'Polecane zajęcia',
-    'codeweek2020' => 'Edycja 2020'];
+    'codeweek2020' => 'Edycja 2020',
+    'register_activity' => 'Zarejestruj aktywność',
+    'select_language' => 'Wybierz język',
+    'search_site' => 'Wyszukaj w witrynie',
+    'what_you_looking_for' => "czego_szukasz",
+    'type_to_search' => 'Wpisz, aby wyszukać...',
+    'search' => 'Wyszukaj',
+];
