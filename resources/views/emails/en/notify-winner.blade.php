@@ -1,3 +1,11 @@
+<?php
+/**
+ * @Author: Bernard Hanna
+ * @Date:   2025-01-29 14:25:29
+ * @Last Modified by:   Bernard Hanna
+ * @Last Modified time: 2025-03-14 10:52:43
+ */
+?>
 @component('mail::message')
 Dear EU Code Week 4 All challenge participant,
 
@@ -9,7 +17,7 @@ You can personalise and download your EU Code Week 4 all certificate by clicking
 <br/>
 
 
-@component('mail::button', ['url' => config('codeweek.app_url') . "/certificates/excellence/" . $edition])
+@component('mail::button', ['url' => "https://codeweek.eu/certificates/excellence/2024"])
     Get your Certificate
 @endcomponent
 
