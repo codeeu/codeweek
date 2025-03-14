@@ -122,9 +122,23 @@ Route::get('/girls-in-digital-week', [StaticPageController::class, 'static'])->n
     'girls-in-digital-week'
 );
 
+Route::get('/educational-resources', [StaticPageController::class, 'static'])->name(
+    'educational-resources'
+);
+
+Route::get('/webinars', [StaticPageController::class, 'static'])->name(
+    'webinars'
+);
+
 Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name(
     'remote-teaching'
 );
+
+Route::get('/dream-jobs-in-digital', [StaticPageController::class, 'static'])->name(
+    'dream-jobs-in-digital'
+);
+
+Route::get('dream-jobs-in-digital/{role}', [StaticPageController::class, 'static'])->name('dream-jobs-in-digital-role');
 
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
