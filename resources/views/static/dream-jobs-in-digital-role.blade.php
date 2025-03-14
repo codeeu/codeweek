@@ -160,6 +160,18 @@
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Sarah Mathews/Dream Jobs in Digital video Sarah Mathews.mp4?csf=1&web=1&e=oGpdEK',
             'pathway_map_link' => ''
         ],
+        [
+            'id' => '14',
+            'first_name' => 'Paraskevi',
+            'last_name' => 'Nomikou',
+            'role' => 'Marine Geologist and an Assistant Professor at the Department of Geology and Geoenvironment at the National and Kapodistrian University of Athens',
+            'image' => '/images/dream-jobs/paraskevi-nomikou.png',
+            'description1' => "Paraskevi Nomikou is a marine geologist and an Assistant Professor at the Department of Geology and Geoenvironment at the National and Kapodistrian University of Athens, Greece. She specializes in the study of underwater volcanoes and seafloor processes. With extensive experience in marine volcanic activity, she has participated in over 70 oceanographic cruises, focusing on submarine volcanism, mud volcanoes, landslides, and seafloor mineral deposits",
+            'description2' => "Paraskevi has played a significant role in evaluating potential hazards associated with volcanic activity at the Santorini volcano and has been involved in mapping the seafloor of ocean core complexes and offshore volcanoes. She is also dedicated to educating and inspiring young women to pursue careers in oceanography through her lectures and innovative marine technologies",
+            'link' => 'https://www.linkedin.com/in/paraskevi-nomikou-325393203/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Paraskevi Nomikou/Dream Jobs in Digital Video Paraskevi Nomikou.MP4?csf=1&web=1&e=shyKYZ',
+            'pathway_map_link' => ''
+        ],
     ];
 
     $item = collect($results)->firstWhere('id', $id);
@@ -256,7 +268,7 @@
             <div class="absolute w-full h-full bg-light-blue hidden xl:block" style="clip-path: ellipse(108% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
                 <h2 class="text-dark-blue text-[22px] md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
-                    Explore Career Pathway Map
+                    Explore Career Pathway
                 </h2>
                 <img class="rounded-xl w-full h-60 md:h-auto object-cover object-center mb-6 md:mb-12" src="/images/dream-jobs/pathway-map.png" />
                 @if($item['pathway_map_link'])
