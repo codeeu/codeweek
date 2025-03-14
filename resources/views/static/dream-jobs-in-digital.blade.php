@@ -97,6 +97,13 @@
             'role' => 'Group Responsible AI Manager at The Adecco Group',
             'image' => '/images/dream-jobs/sara-mathews.png',
         ],
+        [
+            'id' => '14',
+            'first_name' => 'Paraskevi',
+            'last_name' => 'Nomikou',
+            'role' => 'Marine Geologist and an Assistant Professor at the Department of Geology and Geoenvironment at the National and Kapodistrian University of Athens',
+            'image' => '/images/dream-jobs/paraskevi-nomikou.png',
+        ],
     ];
 
     $resources = [
