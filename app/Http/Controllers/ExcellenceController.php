@@ -1,11 +1,17 @@
 <?php
 
+/**
+ * @Author: Bernard Hanna
+ * @Date:   2025-01-29 14:25:28
+ * @Last Modified by:   Bernard Hanna
+ * @Last Modified time: 2025-03-13 17:52:44
+ */
+
 namespace App\Http\Controllers;
 
 use App\CertificateExcellence;
 use App\Excellence;
 use App\Queries\ExcellenceQuery;
-use Gate;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -14,27 +20,11 @@ class ExcellenceController extends Controller
 {
     public function report($edition): View
     {
-
-        // Check if user is a winner for this edition
-        if (Gate::denies('report-excellence', $edition)) {
-            // The current user can't report for excellence...
-            abort(403, 'You are not eligible to receive a Codeweek4All Excellence Certificate.');
-
-        }
-
         return view('excellence.report', compact('edition'));
-
     }
 
     public function generate($edition, Request $request): RedirectResponse
     {
-
-        if (Gate::denies('report-excellence', $edition)) {
-            // The current user can't report for excellence...
-            abort(403, 'You are not eligible to receive a Codeweek4All Excellence Certificate.');
-
-        }
-
         $rules = [
             'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u',
         ];
@@ -56,6 +46,5 @@ class ExcellenceController extends Controller
             ]);
 
         return redirect('certificates');
-
     }
 }
