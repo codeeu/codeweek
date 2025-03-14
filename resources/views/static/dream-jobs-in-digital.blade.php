@@ -10,71 +10,92 @@
             'id' => '1',
             'first_name' => 'Anny',
             'last_name' => 'Tubbs',
-            'role' => 'Multimedia producer',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'role' => 'Multimedia producer at First Move Productions',
+            'image' => '/images/dream-jobs/anny-tubbs.png',
         ],
         [
             'id' => '2',
             'first_name' => 'Magda',
             'last_name' => 'Vanzetto',
             'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/magda-vanzetto.png',
         ],
         [
             'id' => '3',
             'first_name' => 'Roxana',
             'last_name' => 'Freusse',
             'role' => 'Team Lead Cloud Solutions & DevOps, Scrum Master at Siemens',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/roxana-freusse.png',
         ],
         [
             'id' => '4',
             'first_name' => 'Vasileios',
             'last_name' => 'Linardos',
             'role' => 'Head of AI at ARCHEIOTHIKI SA',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/vasileios-linardos.png',
         ],
         [
             'id' => '5',
             'first_name' => 'Carole',
             'last_name' => 'Colley',
-            'role' => 'Bid & Proposal Mgmt at Avanade',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'role' => 'Bid & Proposal Management at Avanade',
+            'image' => '/images/dream-jobs/carole-colley.png',
         ],
         [
             'id' => '6',
             'first_name' => 'Christina',
             'last_name' => 'Kiamili',
             'role' => 'Digital Portfolio Manager at Siemens',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/christina-kiamili.png',
         ],
         [
             'id' => '7',
             'first_name' => 'Devon',
             'last_name' => 'Young',
             'role' => 'UX Design at Avanade',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/devon-young.png',
         ],
         [
             'id' => '8',
             'first_name' => 'Katrine',
-            'last_name' => 'Moller',
+            'last_name' => 'Møller-Rahbek',
             'role' => 'Robot Software Engineer at TinyMobile Robots',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/katrine-møller-rahbek.png',
         ],
         [
             'id' => '9',
             'first_name' => 'Paula',
             'last_name' => 'Panarra',
             'role' => 'General Manager at Avanade UK & Ireland',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/paula-panarra.png',
         ],
         [
             'id' => '10',
             'first_name' => 'Ribka',
             'last_name' => 'Balakrishnan',
             'role' => 'Mechanical Design Engineer at WSAudiology',
-            'image' => '/images/dream-jobs/jowita-michalska.png',
+            'image' => '/images/dream-jobs/ribka-balakrishnan.png',
+        ],
+        [
+            'id' => '11',
+            'first_name' => 'Jeevantika',
+            'last_name' => 'Lingalwar',
+            'role' => 'Cloud Solution Architect at Microsoft',
+            'image' => '/images/dream-jobs/jeevantika-lingalwar.png',
+        ],
+        [
+            'id' => '12',
+            'first_name' => 'Dominik',
+            'last_name' => 'Bolerác',
+            'role' => 'Application Developer at Zurich Insurance Company',
+            'image' => '/images/dream-jobs/dominik-bolerác.png',
+        ],
+        [
+            'id' => '13',
+            'first_name' => 'Sara',
+            'last_name' => 'Mathews',
+            'role' => 'Group Responsible AI Manager at The Adecco Group',
+            'image' => '/images/dream-jobs/sara-mathews.png',
         ],
     ];
 
@@ -83,21 +104,21 @@
             'title' =>  __('dream-jobs-in-digital.resource_title_1'),
             'description' =>  __('dream-jobs-in-digital.resource_description_1'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_1'),
-            'button_link' => '/',
+            'button_link' => '/docs/dream-jobs/C4E WP4 Careers in Digital Guide Toolkit.pdf',
             'image' => '/images/dream-jobs/career-guide.png',
         ],
         (object) [
             'title' =>  __('dream-jobs-in-digital.resource_title_2'),
             'description' =>  __('dream-jobs-in-digital.resource_description_2'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_2'),
-            'button_link' => '/',
+            'button_link' => '/docs/dream-jobs/C4E WP4 Career Day Toolkit.pdf',
             'image' => '/images/dream-jobs/inspiration-day.png',
         ],
         (object) [
             'title' =>  __('dream-jobs-in-digital.resource_title_3'),
             'description' =>  __('dream-jobs-in-digital.resource_description_3'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_3'),
-            'button_link' => 'https://jaye.sharepoint.com/:b:/r/sites/Code4EuropeProjectPlanner/Shared%20Documents/4_C4EU%20WP4/D4.4%20VET%20Teachers%20toolkit/VET%20Toolkit/02%20-%20FINAL/QA%20Review%20D4.4%20VET%20Toolkit%20Description%20-%20v17.pdf?csf=1&web=1&e=MtAbvn',
+            'button_link' => '/docs/dream-jobs/QA Review D4.4 VET Toolkit Description - v18.pdf',
             'image' => '/images/dream-jobs/vet-activities.png',
         ],
         (object) [
@@ -129,7 +150,7 @@
                             </p>
                             <a
                                 class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                href="/"
+                                href="#dream-job-resources"
                             >
                                 <span>@lang('dream-jobs-in-digital.get_inolved')</span>
                             </a>
@@ -166,7 +187,7 @@
                         src="/images/dream-jobs/career-about.png"
                     />
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        @include('layout.video-player', ['id' => 'carrer-about', 'src' => ''])
+                        @include('layout.video-player', ['id' => 'carrer-about', 'src' => 'https://youtu.be/pzP-kToeym4'])
                     </div>
                 </div>
             </div>
@@ -182,7 +203,7 @@
                         <div class="p-4 rounded-2xl border-2 border-solid border-[#A4B8D9] flex flex-col gap-4 md:gap-8 bg-white">
                         <div class="flex flex-1 gap-4 md:gap-8">
                             <img
-                                class="w-32 h-32 rounded-lg"
+                                class="w-32 h-full object-cover rounded-lg"
                                 src="{{ $result['image'] }}"
                             />
                             <div class="flex flex-1 flex-col justify-between">
@@ -232,7 +253,7 @@
             ></div>
         </section>
 
-        <section class="relative overflow-hidden">
+        <section class="relative overflow-hidden" id="dream-job-resources">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
@@ -256,6 +277,7 @@
                                 <a
                                     class="text-nowrap flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
                                     href="{{ $resource->button_link }}"
+                                    target="_blank"
                                 >
                                     <span>{{ $resource->button_text }}</span>
                                 </a>

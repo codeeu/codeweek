@@ -4,76 +4,162 @@
     $id = request()->segment(2);
 
     $results = [
-      [
-          'id' => '1',
-          'first_name' => 'Anny',
-          'last_name' => 'Tubbs',
-          'role' => 'Multimedia producer',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '2',
-          'first_name' => 'Magda',
-          'last_name' => 'Vanzetto',
-          'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '3',
-          'first_name' => 'Roxana',
-          'last_name' => 'Freusse',
-          'role' => 'Team Lead Cloud Solutions & DevOps, Scrum Master at Siemens',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '4',
-          'first_name' => 'Vasileios',
-          'last_name' => 'Linardos',
-          'role' => 'Head of AI at ARCHEIOTHIKI SA',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '5',
-          'first_name' => 'Carole',
-          'last_name' => 'Colley',
-          'role' => 'Bid & Proposal Mgmt at Avanade',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '6',
-          'first_name' => 'Christina',
-          'last_name' => 'Kiamili',
-          'role' => 'Digital Portfolio Manager at Siemens',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '7',
-          'first_name' => 'Devon',
-          'last_name' => 'Young',
-          'role' => 'UX Design at Avanade',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '8',
-          'first_name' => 'Katrine',
-          'last_name' => 'Moller',
-          'role' => 'Robot Software Engineer at TinyMobile Robots',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '9',
-          'first_name' => 'Paula',
-          'last_name' => 'Panarra',
-          'role' => 'General Manager at Avanade UK & Ireland',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
-      [
-          'id' => '10',
-          'first_name' => 'Ribka',
-          'last_name' => 'Balakrishnan',
-          'role' => 'Mechanical Design Engineer at WSAudiology',
-          'image' => '/images/dream-jobs/jowita-michalska.png',
-      ],
+        [
+            'id' => '1',
+            'first_name' => 'Anny',
+            'last_name' => 'Tubbs',
+            'role' => 'Multimedia producer at First Move Productions',
+            'image' => '/images/dream-jobs/anny-tubbs.png',
+            'description1' => "Anny Tubbs' professional path began in law and evolved into multinational leadership roles, where she was tasked with delivering large-scale change in complex matrix organisations. Her focus grew from antitrust matters and sales to anti-corruption and the full spectrum of business ethics. This taught her the importance of thoughtful communication and outreach.",
+            'description2' => "Anny has always been inspired by individuals whose values and skills make a positive difference. In today’s hyperconnected world - where digital and real-world issues intertwine - she seeks to leverage digital media to spotlight constructive news and encourage informed dialogue for a better future. To update her skills, Anny attended film school and completed an MSc in Journalism and Media in Europe. She co-founded a production company, directed several short documentaries, and began working with the multimedia team of a European news agency. Today, she is involved in multimedia production, content creation and educational projects that focus on digital and values-driven learning. She enjoys the fact that technology makes it possible to connect with people from all over the world.",
+            'link' => 'https://www.linkedin.com/in/annytubbs/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Anny Tubbs/Dream Jobs in Digital video Anny Tubbs.mp4?csf=1&web=1&e=ATxZaz',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:b:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Anny Tubbs/Career Pathway Map Anny Tubbs.pdf?csf=1&web=1&e=wKoSlg'
+        ],
+        [
+            'id' => '2',
+            'first_name' => 'Magda',
+            'last_name' => 'Vanzetto',
+            'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
+            'image' => '/images/dream-jobs/magda-vanzetto.png',
+            'description1' => "Magda Vanzetto is the Head of Energy Engineers at Siemens Smart Infrastructure in Sustainability Technical Unit. ",
+            'description2' => "She has been active part in projects aimed at improving energy efficiency and reducing carbon footprint of multiple customers facilities. ",
+            'link' => 'https://www.linkedin.com/in/magda-vanzetto-42567034/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Magda Vanzetto/Dream Jobs in Digital Magda Vanzetto.mp4?csf=1&web=1&e=R7g9hd',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Magda Vanzetto/C4E Career Pathway Map_MV.pptx?d=wb11eec9665ac47a2a5cf8185a43d3b52&csf=1&web=1&e=0BCzEX'
+        ],
+        [
+            'id' => '3',
+            'first_name' => 'Roxana',
+            'last_name' => 'Freusse',
+            'role' => 'Team Lead Cloud Solutions & DevOps, Scrum Master at Siemens',
+            'image' => '/images/dream-jobs/roxana-freusse.png',
+            'description1' => "Roxana Freusse is the Team Lead for Cloud Solutions & DevOps and a Scrum Master at Siemens. With extensive experience in cloud technologies and agile methodologies, she excels in leading cross-functional teams to deliver innovative solutions. ",
+            'description2' => "Roxana is known for her expertise in cloud infrastructure, DevOps practices, and her ability to foster collaboration and continuous improvement within her teams. Her leadership and technical skills have been instrumental in driving successful projects and enhancing operational efficiency at Siemens.",
+            'link' => 'https://www.linkedin.com/in/roxanafreusse/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Roxana Freusse/Dream Jobs in Digital Roxana Freusse.mp4?csf=1&web=1&e=xxZhCa',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:b:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Roxana Freusse/C4E Career Pathway Map Roxana.pdf?csf=1&web=1&e=K6u8DC',
+        ],
+        [
+            'id' => '4',
+            'first_name' => 'Vasileios',
+            'last_name' => 'Linardos',
+            'role' => 'Head of AI at ARCHEIOTHIKI SA',
+            'image' => '/images/dream-jobs/vasileios-linardos.png',
+            'description1' => "Vasileios Linardos is Head of AI at Archeiothiki SA and a PhDc at the International Hellenic University in Thessaloniki, Greece, where he focuses on developing AI tools and methodologies for disaster management. ",
+            'description2' => "He holds a Bachelor's degree in Informatics from the Athens University of Economics and Business. His expertise encompasses machine learning and deep learning applications in disaster management, with several publications on the topic. Additionally, Vasileios has expertise in large language models (LLMs), vision-language models (VLLMs), and other emerging technologies, which he applies to design and develop innovative AI solutions.",
+            'link' => 'https://www.linkedin.com/in/vasileios-linardos-a18294195/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Vasileios Linardos/Dream Jobs in Digital video Vasileios Linardos.MOV?csf=1&web=1&e=BWFXxX',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Vasileios Linardos/C4E Career Map Vasileios Linardos.pptx?d=w67edb035c1d44432bd6bff684070132e&csf=1&web=1&e=0v9m5l'
+        ],
+        [
+            'id' => '5',
+            'first_name' => 'Carole',
+            'last_name' => 'Colley',
+            'role' => 'Bid & Proposal Management at Avanade',
+            'image' => '/images/dream-jobs/carole-colley.png',
+            'description1' => "Carole Colley has accumulated over 15 years of experience in IT. Carole's journey into digital transformation has been marked by significant milestones. As a functional consultant, project manager and bid manager (pre-sales), Carole has successfully navigated complex projects and contributed to the growth of the organizations she has worked with.",
+            'description2' => "Carole is committed to seizing every possible opportunity to grow both professionally and personally. This dedication is evident in her focus on people management, participation in the School of Innovation, and continuous efforts to train and get certified. Carole's growth mindset ensures she remains at the forefront of industry developments and best practices. For Carole, commitment is not just about receiving but also about giving back to peers. As an employee network lead and vice secretary to a Work Council, Carole has demonstrated a strong commitment to fostering a supportive and collaborative work environment. Her leadership in these roles underscores the importance of community and mutual support in achieving collective success.",
+            'link' => 'https://www.linkedin.com/in/carole-colley-pmp%C2%AE-a932077b/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Carole Colley/Dream Jobs in Digital video Carole Colley.mp4?csf=1&web=1&e=sF2fDf',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Carole Colley/Career Pathway Map Carole Colley.pptx?d=wb03f14db64fc45c798f46ae1ebf22254&csf=1&web=1&e=i7og8K'
+        ],
+        [
+            'id' => '6',
+            'first_name' => 'Christina',
+            'last_name' => 'Kiamili',
+            'role' => 'Digital Portfolio Manager at Siemens',
+            'image' => '/images/dream-jobs/christina-kiamili.png',
+            'description1' => "Christina Kiamili is the Digital Portfolio Manager at Siemens.",
+            'description2' => "In her role, she oversees the development and management of digital projects, ensuring they align with the company's strategic objectives. Christina is known for her expertise in digital transformation, project management, and her ability to lead cross-functional teams. She focuses on driving innovation and continuous improvement within Siemens, leveraging her strong background in both agile and waterfall methodologies.",
+            'link' => 'https://www.linkedin.com/in/christina-kiamili-23582a114/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Christina Kiamili/Dream Jobs in Digital Christina Kiamili.mp4?csf=1&web=1&e=n9GdzV',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Christina Kiamili/Career Pathway Map Christina Kiamili.pptx?d=wa75be07ea3cb4262a86de550463abf11&csf=1&web=1&e=78NSLg'
+        ],
+        [
+            'id' => '7',
+            'first_name' => 'Devon',
+            'last_name' => 'Young',
+            'role' => 'UX Design at Avanade',
+            'image' => '/images/dream-jobs/devon-young.png',
+            'description1' => "Devon Young is Senior User Experience Manager at Avanade. She has over 20 years of experience in design, with a recent focus on design operations, strategy, recruiting, and nurturing talent. ",
+            'description2' => "She believes that great design outcomes stem from a great team environment. Her passion for design began in high school in Missouri, USA where she created CD covers and T-shirts. Encouraged by her father, she pursued a career in design, studying Graphic Design at university.",
+            'link' => 'https://www.linkedin.com/in/devoneyoung/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Devon Young/Dream Jobs in Digital video Devon Young.mp4?csf=1&web=1&e=hCCvkk',
+            'pathway_map_link' => ''
+        ],
+        [
+            'id' => '8',
+            'first_name' => 'Katrine',
+            'last_name' => 'Møller-Rahbek',
+            'role' => 'Robot Software Engineer at TinyMobile Robots',
+            'image' => '/images/dream-jobs/katrine-møller-rahbek.png',
+            'description1' => "Katrine Møller-Rahbek is a Robot Software Engineer at TinyMobile Robots",
+            'description2' => "She specializes in developing advanced robotic solutions for various applications, including sports field marking and industrial automation. Katrine is known for her expertise in robotics software engineering, particularly in areas such as motion planning, computer vision, and sensor integration. Her work involves creating innovative algorithms and software that enhance the functionality and efficiency of mobile robots.",
+            'link' => 'https://www.linkedin.com/in/katrine-moeller-rahbek/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Katrine Moller/Dream Jobs in Digital video Katrine Moller.MOV?csf=1&web=1&e=shHjY9',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Katrine Moller/Carrer map Katrine M%C3%B8ller-Rahbek.pptx?d=we66e0a79087d47e1ba67278a2830774a&csf=1&web=1&e=kXDn3s'
+        ],
+        [
+            'id' => '9',
+            'first_name' => 'Paula',
+            'last_name' => 'Panarra',
+            'role' => 'General Manager at Avanade UK & Ireland',
+            'image' => '/images/dream-jobs/paula-panarra.png',
+            'description1' => "Paula Panarra is the General Manager at Avanade UK & Ireland. Previously, she served as the Global Business Applications Sales Lead for Retail and Consumer Goods at Microsoft Portugal, where she was the General Director from 2016. In this role, she guided the organization through the digital transformation of the Portuguese economy, empowering people and organizations with technology.",
+            'description2' => "She joined Microsoft in 2010 as the CMO Lead, later becoming the Marketing & Operations Lead in 2013, and the Public Sector Lead in 2016. Before her tenure at Microsoft, Paula spent 15 years at Procter & Gamble Portugal and Iberia, holding various roles in Finance and Marketing, including Corporate Marketing Director, Finance Group Director, and Communication Director. Paula graduated in Chemical Engineering from the Instituto Superior Técnico in 1994. She is known for her optimism, solution-oriented mindset, and commitment to doing the right thing. Outside of her professional life, she is a proud mother of three daughters, an avid reader, a music lover, and an adventurous traveler.",
+            'link' => 'https://www.linkedin.com/in/paulapanarra/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Paula Panarra/Dream Jobs in Digital video Paula Panarra.webm?csf=1&web=1&e=X2ek4w',
+            'pathway_map_link' => ''
+        ],
+        [
+            'id' => '10',
+            'first_name' => 'Ribka',
+            'last_name' => 'Balakrishnan',
+            'role' => 'Mechanical Design Engineer at WSAudiology',
+            'image' => '/images/dream-jobs/ribka-balakrishnan.png',
+            'description1' => "Ribka Balakrishnan is a Mechanical Design Engineer working at WSAudiology. ",
+            'description2' => "She is deeply involved in the research and development of hearing aids, and enjoys the hands-on aspects of her role, including prototyping and testing, which allow her to work closely with the products. She is also passionate about advocating for and supporting girls and women in all parts of society.",
+            'link' => 'https://www.linkedin.com/in/ribka-balakrishnan/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Ribka Balakrishnan/Dream Jobs in Digital video Ribka Balakrishnan.MOV?csf=1&web=1&e=2GaNqY',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Ribka Balakrishnan/Career Pathway Map Ribka Balakrishnan.pptx?d=w9e5ef8666c0e40d387b8c1a2a26baa45&csf=1&web=1&e=TIcDZS'
+        ],
+        [
+            'id' => '11',
+            'first_name' => 'Jeevantika',
+            'last_name' => 'Lingalwar',
+            'role' => 'Cloud Solution Architect at Microsoft',
+            'image' => '/images/dream-jobs/jeevantika-lingalwar.png',
+            'description1' => "Jeevantika Lingalwar is a Partner Solution Architect at Microsoft, TEDx speaker, and founder of International Women in Tech, leading a community of over 7000 members. ",
+            'description2' => "With M.Sc. degree in Cloud Computing and B.E in Computer Science Engineering, she is passionate about Women in Technology and Diversity & Inclusion. Jeevantika mentors' young minds about AI and hosts the podcast &quot;The Unplanned Journey,&quot; celebrating women's resilience. She has been recognized as a Top Voice of the New Era of Leaders 2024, awarded the WomenTech Global Ambassador Award in 2021, and is a finalist for many awards in Ireland.",
+            'link' => 'https://www.linkedin.com/in/jeevantika-lingalwar/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Jeevantika Lingalwar/Dream Jobs in Digital Video Jeevantika Lingalwar.mp4?csf=1&web=1&e=Wweta7',
+            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Jeevantika Lingalwar/Career Pathway Map Jeevantika Lingalwar.pptx?d=w8c7bb53d1d9f41208c4e376746d7e0c6&csf=1&web=1&e=Fagb8Z'
+        ],
+        [
+            'id' => '12',
+            'first_name' => 'Dominik',
+            'last_name' => 'Bolerác',
+            'role' => 'Application Developer at Zurich Insurance Company',
+            'image' => '/images/dream-jobs/dominik-bolerác.png',
+            'description1' => "Dominik’s professional journey began during his university studies at the international company Zurich Insurance. He participated in a rotational internship program, which allowed students to experience working in various departments within the company – including risk management, actuarial services, and pricing & analytics.",
+            'description2' => "Currently, Dominik works full-time as an application developer in the risk management department, where he is responsible for day-to-day production tasks and creating API packages that help automate internal processes. He works with programming languages (R, SQL, DAX) and data visualization tools (Power BI) on a daily basis. Dominik studied mathematics in high school and continued to pursue it at the university level. In his free time, he plays drums in an ABBA tribute band, traveling all over the world thanks to his flexible work. He is also very passionate about running and holds a professional running coaching certificate, which allows him to share his knowledge with colleagues, his athletes, and other passionate runners.",
+            'link' => 'https://www.linkedin.com/in/dominik-boler%C3%A1c-39b333209/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Dominik Boler%C3%A1c/Dream Jobs in Digital video Dominik Boler%C3%A1c.mp4?csf=1&web=1&e=7wfHer',
+            'pathway_map_link' => ''
+        ],
+        [
+            'id' => '13',
+            'first_name' => 'Sara',
+            'last_name' => 'Mathews',
+            'role' => 'Group Responsible AI Manager at The Adecco Group',
+            'image' => '/images/dream-jobs/sara-mathews.png',
+            'description1' => "Sarah Mathews is the Group Responsible AI Manager at The Adecco Group. She is responsible for operationalizing the group’s Responsible AI Principles by establishing governance, guidelines, and change management processes, as well as co-leading the implementation of the AI Act. With a wealth of experience in leading global AI initiatives, she is renowned for her expertise in integrating ethical and inclusive AI practices within the company.",
+            'description2' => "Sarah’s dual background in Human Resources and AI gives her a unique perspective on HR-related AI systems worldwide. She excels at engaging stakeholders and bridging the gap between business and development teams, ensuring AI projects are scaled strategically with a business-driven and human-centric approach. Passionate about fostering knowledge-sharing communities, Sarah actively promotes best practices in AI across The Adecco Group’s brands and countries. Beyond her professional role, Sarah is dedicated to volunteering efforts that encourage women to enter the field of Data Science. She also mentors aspiring female leaders, helping them navigate and build successful careers in tech. ",
+            'link' => 'https://www.linkedin.com/in/sarah-mathews-87b481122/',
+            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Sarah Mathews/Dream Jobs in Digital video Sarah Mathews.mp4?csf=1&web=1&e=oGpdEK',
+            'pathway_map_link' => ''
+        ],
     ];
 
     $item = collect($results)->firstWhere('id', $id);
@@ -88,21 +174,21 @@
             'title' =>  __('dream-jobs-in-digital.resource_title_1'),
             'description' =>  __('dream-jobs-in-digital.resource_description_1'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_1'),
-            'button_link' => '/',
+            'button_link' => '/docs/dream-jobs/C4E WP4 Careers in Digital Guide Toolkit.pdf',
             'image' => '/images/dream-jobs/career-guide.png',
         ],
         (object) [
             'title' =>  __('dream-jobs-in-digital.resource_title_2'),
             'description' =>  __('dream-jobs-in-digital.resource_description_2'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_2'),
-            'button_link' => '/',
+            'button_link' => '/docs/dream-jobs/C4E WP4 Career Day Toolkit.pdf',
             'image' => '/images/dream-jobs/inspiration-day.png',
         ],
         (object) [
             'title' =>  __('dream-jobs-in-digital.resource_title_3'),
             'description' =>  __('dream-jobs-in-digital.resource_description_3'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_3'),
-            'button_link' => 'https://jaye.sharepoint.com/:b:/r/sites/Code4EuropeProjectPlanner/Shared%20Documents/4_C4EU%20WP4/D4.4%20VET%20Teachers%20toolkit/VET%20Toolkit/02%20-%20FINAL/QA%20Review%20D4.4%20VET%20Toolkit%20Description%20-%20v17.pdf?csf=1&web=1&e=MtAbvn',
+            'button_link' => '/docs/dream-jobs/QA Review D4.4 VET Toolkit Description - v18.pdf',
             'image' => '/images/dream-jobs/vet-activities.png',
         ],
         (object) [
@@ -133,20 +219,23 @@
                     <div class="w-full tablet:w-1/3 xl:w-1/3">
                         <img class="rounded-xl mb-6" src="{{ $item['image'] }}" />
                         <p class="font-normal text-2xl p-0 mb-6">
-                            Jowita Michalska Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            {{ $item['description1'] }}
                         </p>
-                        <p class="text-[#333E48] font-normal text-xl p-0">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        <p class="text-[#333E48] font-normal text-xl p-0 mb-6">
+                            {{ $item['description2'] }}
+                        </p>
+                        <p class="text-[#333E48] font-normal text-xl p-0 mb-6">
+                            Check out the career journey here: <a class="text-dark-blue underline" href="{{ $item['link'] }}" target="_blank">{{ $item['first_name'] }} {{ $item['last_name'] }}</a>
                         </p>
                     </div>
                     <div class="w-full tablet:w-2/3 xl:w-2/3">
                         <div class="relative rounded-xl mb-6">
                             <img class="rounded-xl" src="/images/dream-jobs/role-detail-video.png" />
                             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                                @include('layout.video-player', ['id' => 'carrer-about', 'src' => ''])
+                                @include('layout.video-player', ['id' => 'carrer-about', 'src' => $item['video']])
                             </div>
                         </div>
-                        <p class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0">Video title here</p>
+{{--                        <p class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0">Video title here</p>--}}
                     </div>
                 </div>
             </div>
@@ -170,14 +259,9 @@
                     Explore Career Pathway Map
                 </h2>
                 <img class="rounded-xl w-full h-60 md:h-auto object-cover object-center mb-6 md:mb-12" src="/images/dream-jobs/pathway-map.png" />
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 xl:gap-12">
-                    <p class="text-[#333E48] font-normal text-xl p-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                    </p>
-                    <p class="text-[#333E48] font-normal text-xl p-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                    </p>
-                </div>
+                @if($item['pathway_map_link'])
+                    <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="{{ $item['pathway_map_link'] }}">Career Pathway Map</a>
+                @endif
             </div>
         </section>
 
