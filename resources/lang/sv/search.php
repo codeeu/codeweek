@@ -38,4 +38,18 @@ return [
     'search_input_placeholder' => 'Söka...',
     'results' => 'Resultat',
     'no_results' => 'Inga resultat hittades.',
+    'search_categories' => [
+        'all' => 'Alla',
+        'podcasts' => 'Podcasts',
+        'hackathons' => 'Hackathons',
+        'online_courses' => 'Onlinekurser',
+        'training' => 'Utbildning',
+        'challenges' => 'Utmaningar',
+        'learn' => 'Lära sig',
+        'teach' => 'Tech',
+        'presentations_and_toolkits' => 'Presentationer och verktygslåda',
+        'activities' => 'Aktiviteter',
+        'blogs' => 'Bloggar',
+        'others' => 'Andra'
+    ]
 ];
