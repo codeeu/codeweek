@@ -36,4 +36,18 @@ return [
     'search_input_placeholder' => 'Søge...',
     'results' => 'Resultater',
     'no_results' => 'Ingen resultater fundet.',
+    'search_categories' => [
+        'all' => 'Alle',
+        'podcasts' => 'Podcasts',
+        'hackathons' => 'Hackathons',
+        'online_courses' => 'Online kurser',
+        'training' => 'Uddannelse',
+        'challenges' => 'Udfordringer',
+        'learn' => 'Lære',
+        'teach' => 'Undervise',
+        'presentations_and_toolkits' => 'Præsentationer og værktøjssæt',
+        'activities' => 'Aktiviteter',
+        'blogs' => 'Blogs',
+        'others' => 'Andre'
+    ]
 ];

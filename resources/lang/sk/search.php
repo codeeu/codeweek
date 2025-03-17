@@ -35,4 +35,18 @@ return [
     'search_input_placeholder' => 'pretraživanja...',
     'results' => 'Rezultati',
     'no_results' => 'Nenašli sa žiadne výsledky.',
+    'search_categories' => [
+        'all' => 'Všetky',
+        'podcasts' => 'Podcasty',
+        'hackathons' => 'Hackathony',
+        'online_courses' => 'Online kurzy',
+        'training' => 'Školenie',
+        'challenges' => 'Výzvy',
+        'learn' => 'Učte sa',
+        'teach' => 'Tech',
+        'presentations_and_toolkits' => 'Prezentácie a sady nástrojov',
+        'activities' => 'Aktivity',
+        'blogs' => 'Blogy',
+        'others' => 'Ostatné'
+    ]
 ];
