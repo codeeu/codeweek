@@ -37,5 +37,19 @@ return [
     'search_input_label' => 'Katso tulokset avainsanojesi perusteella alta:',
     'search_input_placeholder' => 'Haku...',
     'results' => 'Tulokset',
-    'no_results' => 'Tuloksia ei löytynyt.'
+    'no_results' => 'Tuloksia ei löytynyt.',
+    'search_categories' => [
+        'all' => 'All',
+        'podcasts' => 'Podcastit',
+        'hackathons' => 'Hackathonit',
+        'online_courses' => 'Verkkokurssit',
+        'training' => 'Koulutus',
+        'challenges' => 'Haasteet',
+        'learn' => 'Oppia',
+        'teach' => 'Opettaa',
+        'presentations_and_toolkits' => 'Esitykset ja työkalut',
+        'activities' => 'Aktiviteetit',
+        'blogs' => 'Blogi',
+        'others' => 'Muut'
+    ]
 ];

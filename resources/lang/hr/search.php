@@ -37,6 +37,19 @@ return [
     'search_input_label' => 'Pogledajte rezultate na temelju vaših ključnih riječi u nastavku:',
     'search_input_placeholder' => 'pretraživanj...',
     'results' => 'Rezultati',
-    'no_results' => 'Nema rezultata.'
+    'no_results' => 'Nema rezultata.','search_categories' => [
+        'all' => 'Sve',
+        'podcasts' => 'Podcasti',
+        'hackathons' => 'Hakatoni',
+        'online_courses' => 'Online tečajevi',
+        'training' => 'Edukacije',
+        'challenges' => 'Izazovi',
+        'learn' => 'Učenje',
+        'teach' => 'Poučavanje',
+        'presentations_and_toolkits' => 'Prezentacije i alati',
+        'activities' => 'Aktivnosti',
+        'blogs' => 'Blogovi',
+        'others' => 'Ostalo'
+    ]
 
 ];

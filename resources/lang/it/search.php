@@ -37,6 +37,19 @@ return [
     'search_input_label' => 'Visualizza i risultati in base alle tue parole chiave qui sotto:',
     'search_input_placeholder' => 'Cerca i...',
     'results' => 'risultati',
-    'no_results' => 'Nessun risultato trovato.'
-
+    'no_results' => 'Nessun risultato trovato.',
+    'search_categories' => [
+        'all' => 'Tutto',
+        'podcasts' => 'Podcast',
+        'hackathons' => 'Hackathon',
+        'online_courses' => 'Corsi online',
+        'training' => 'Formazione',
+        'challenges' => 'Sfide',
+        'learn' => 'Impara',
+        'teach' => 'Tech',
+        'presentations_and_toolkits' => 'Toolkit e presentazioni',
+        'activities' => 'Attività',
+        'blogs' => 'Blog',
+        'others' => 'Altro'
+    ]
 ];
