@@ -46,7 +46,7 @@ return [
         'training' => 'Training',
         'challenges' => 'Challenges',
         'learn' => 'Learn',
-        'tech' => 'Tech',
+        'teach' => 'Teach',
         'presentations_and_toolkits' => 'Presentations and Toolkits',
         'activities' => 'Activities',
         'blogs' => 'Blogs',

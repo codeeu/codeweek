@@ -39,4 +39,18 @@ return [
     'search_input_placeholder' => 'Căutare...',
     'results' => 'Rezultate',
     'no_results' => 'Nu s-au găsit rezultate.',
+    'search_categories' => [
+        'all' => 'Toate',
+        'podcasts' => 'Podcasturi',
+        'hackathons' => 'Hackathoane',
+        'online_courses' => 'Cursuri Online',
+        'training' => 'Training',
+        'challenges' => 'Provocări',
+        'learn' => 'Învață',
+        'teach' => 'Tech',
+        'presentations_and_toolkits' => 'Prezentări și seturi de instrumente',
+        'activities' => 'Activități',
+        'blogs' => 'Bloguri',
+        'others' => 'Altele'
+    ]
 ];
