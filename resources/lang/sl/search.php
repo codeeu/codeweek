@@ -38,4 +38,18 @@ return [
     'search_input_placeholder' => 'Iskanje ...',
     'results' => 'Rezultati',
     'no_results' => 'Ni rezultatov.',
+    'search_categories' => [
+        'all' => 'Vse',
+        'podcasts' => 'Podcasti',
+        'hackathons' => 'Hekatoni',
+        'online_courses' => 'Virtualni tečaji',
+        'training' => 'Izobraževanje',
+        'challenges' => 'Izzivi',
+        'learn' => 'Učenje',
+        'teach' => 'Poučevanje',
+        'presentations_and_toolkits' => 'Predstavitve in orodja',
+        'activities' => 'Dejavnosti',
+        'blogs' => 'Blogi',
+        'others' => 'Drugo'
+    ]
 ];
