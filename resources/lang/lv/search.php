@@ -38,4 +38,18 @@ return [
     'search_input_placeholder' => 'Meklēšana...',
     'results' => 'rezultāti',
     'no_results' => 'Nav atrasts neviens rezultāts.',
+    'search_categories' => [
+        'all' => 'Visi',
+        'podcasts' => 'Raidieraksti',
+        'hackathons' => 'Hakatoni',
+        'online_courses' => 'Tiešsaistes kursi',
+        'training' => 'Mācības',
+        'challenges' => 'Izaicinājumi',
+        'learn' => 'Mācies',
+        'teach' => 'Māci',
+        'presentations_and_toolkits' => 'Prezentācijas un rokasgrāmatas',
+        'activities' => 'Darbības',
+        'blogs' => 'Blogi',
+        'others' => 'Citi'
+    ]
 ];

@@ -37,5 +37,19 @@ return [
     'search_input_label' => 'Вижте резултатите въз основа на вашата ключова дума(и) по-долу:',
     'search_input_placeholder' => 'търсене...',
     'results' => 'Резултати',
-    'no_results' => 'Няма намерени резултати.'
+    'no_results' => 'Няма намерени резултати.',
+    'search_categories' => [
+        'all' => 'Всички',
+        'podcasts' => 'Подкасти',
+        'hackathons' => 'Хакатони',
+        'online_courses' => 'Онлайн Курсове',
+        'training' => 'Обучение',
+        'challenges' => 'Предизвикателства',
+        'learn' => 'Научи',
+        'teach' => 'Технологии',
+        'presentations_and_toolkits' => 'Презентации и инструменти',
+        'activities' => 'дейности',
+        'blogs' => 'Блогове',
+        'others' => 'Други'
+    ]
 ];

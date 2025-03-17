@@ -37,5 +37,19 @@ return [
     'search_input_label' => 'Peržiūrėkite rezultatus pagal raktinį žodį (-ius) žemiau:',
     'search_input_placeholder' => 'Paieško...',
     'results' => 'rezultatai',
-    'no_results' => 'Rezultatų nerasta.'
+    'no_results' => 'Rezultatų nerasta.',
+    'search_categories' => [
+        'all' => 'Visi',
+        'podcasts' => 'Transliacijos',
+        'hackathons' => 'Hakatonai',
+        'online_courses' => 'Internetiniai kursai',
+        'training' => 'Mokymai',
+        'challenges' => 'Iššūkiai',
+        'learn' => 'Mokymasis',
+        'teach' => 'Technologijos',
+        'presentations_and_toolkits' => 'Pateiktys ir priemonių rinkiniai',
+        'activities' => 'Veikla',
+        'blogs' => 'Dienoraščiai',
+        'others' => 'Kiti'
+    ]
 ];

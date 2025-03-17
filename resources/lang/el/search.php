@@ -35,4 +35,18 @@ return [
     'search_input_placeholder' => 'Αναζήτησης...',
     'results' => 'Αποτελέσματα',
     'no_results' => 'Δεν βρέθηκαν αποτελέσματα.',
+    'search_categories' => [
+        'all' => 'Όλα',
+        'podcasts' => 'Podcasts',
+        'hackathons' => 'Hackathons',
+        'online_courses' => 'Διαδικτυακά Μαθήματα',
+        'training' => 'Εκπαίδευση',
+        'challenges' => 'Προκλήσεις',
+        'learn' => 'Μάθε',
+        'teach' => 'Τεχνολογία',
+        'presentations_and_toolkits' => 'Παρουσιάσεις και Εργαλεία',
+        'activities' => 'Δραστηριότητες',
+        'blogs' => 'Blogs',
+        'others' => 'Άλλα'
+    ]
 ];
