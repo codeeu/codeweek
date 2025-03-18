@@ -31,22 +31,22 @@
 
             <div class="grid md:grid-cols-3 gap-8 xl:gap-[120px]">
                 <div>
-                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">About us</p>
+                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">@lang('footer.about_us')</p>
                     <ul class="m-0 p-0">
                         <li class="mb-4">
-                            <a href="/about" class="cookweek-link hover-underline">About Code Week</a>
+                            <a href="/about" class="cookweek-link hover-underline">@lang('footer.about_code_week')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/our-values" class="cookweek-link hover-underline">Our Values</a>
+                            <a href="/our-values" class="cookweek-link hover-underline">@lang('footer.our_values')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/scoreboard" class="cookweek-link hover-underline">Statistics</a>
+                            <a href="/scoreboard" class="cookweek-link hover-underline">@lang('footer.statistics')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/partners" class="cookweek-link hover-underline">Partners & Sponsors</a>
+                            <a href="/partners" class="cookweek-link hover-underline">@lang('footer.partners_sponsors')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/community" class="cookweek-link hover-underline">Community</a>
+                            <a href="/community" class="cookweek-link hover-underline">@lang('footer.community')</a>
                         </li>
                         {{-- <li>
                             <a href="/" class="cookweek-link hover-underline">Contact us</a>
@@ -54,30 +54,33 @@
                     </ul>
                 </div>
                 <div>
-                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">Quick links</p>
+                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">@lang('footer.quick_links')</p>
                     <ul class="m-0 p-0">
                         <li class="mb-4">
-                            <a href="/register" class="cookweek-link hover-underline">Register</a>
+                            <a href="/register" class="cookweek-link hover-underline">@lang('footer.register')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/events" class="cookweek-link hover-underline">Activities & Events</a>
+                            <a href="/events" class="cookweek-link hover-underline">@lang('footer.activities_events')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/resources/learn" class="cookweek-link hover-underline">Learn & Teach</a>
+                            <a href="/resources/learn" class="cookweek-link hover-underline">@lang('footer.learn_teach')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/blog" class="cookweek-link hover-underline">News</a>
+                            <a href="/blog" class="cookweek-link hover-underline">@lang('footer.news')</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="https://mailp.ro/f/OCxYWv" target="_blank" class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">Educational Resources</p>
+                    <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">@lang('footer.educational_resources')</p>
                     <ul class="m-0 p-0">
                         <li class="mb-4">
-                            <a href="/resources/CodingAtHome" class="cookweek-link hover-underline">Coding @ Home</a>
+                            <a href="/resources/CodingAtHome" class="cookweek-link hover-underline">@lang('footer.coding_home')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="/podcasts" class="cookweek-link hover-underline">Podcast</a>
+                            <a href="/podcasts" class="cookweek-link hover-underline">@lang('footer.podcast')</a>
                         </li>
                         {{-- <li class="mb-4">
                             <a href="/" class="cookweek-link hover-underline">Webinars</a>
@@ -86,10 +89,10 @@
                             <a href="/" class="cookweek-link hover-underline">Careers in Digital</a>
                         </li> --}}
                         <li class="mb-4">
-                            <a href="/challenges" class="cookweek-link hover-underline">Challenges</a>
+                            <a href="/challenges" class="cookweek-link hover-underline">@lang('footer.challenges')</a>
                         </li>
                         <li>
-                            <a href="/hackathons" class="cookweek-link hover-underline">Hackathons</a>
+                            <a href="/hackathons" class="cookweek-link hover-underline">@lang('footer.hackathons')</a>
                         </li>
                     </ul>
                 </div>
@@ -99,10 +102,10 @@
     <div class="codeweek-container-lg pt-8 pb-20 md:pb-8 xl:py-4 flex flex-col xl:flex-row gap-8 justify-between">
         <ul class="m-0 p-0 flex-shrink-0 flex flex-col items-start xl:items-center xl:flex-row gap-4 xl:gap-10">
             <li>
-                <a href="/privacy" class="cookweek-link hover-underline !text-sm">Privacy Policy</a>
+                <a href="/privacy" class="cookweek-link hover-underline !text-sm">@lang('footer.privacy_policy')</a>
             </li>
             <li>
-                <a href="/cookie" class="cookweek-link hover-underline !text-sm">Cookie Policy</a>
+                <a href="/cookie" class="cookweek-link hover-underline !text-sm">@lang('footer.cookies_policy')</a>
             </li>
             {{-- <li>
                 <a href="/" class="cookweek-link hover-underline !text-sm">Accessibility</a>
@@ -115,7 +118,7 @@
             </li> --}}
         </ul>
         <p class="p-0 text-slate font-['Montserrat'] font-medium text-sm mb-8 md:mb-0">
-            ©CodeWeek 2025 | Designed and developed by <a href="https://www.matrixinternet.ie/" target="_blank" class="cookweek-link hover-underline !text-sm">Matrix Internet</a> . All Rights Reserved
+            ©CodeWeek 2025 | @lang('footer.designed_and_developed_by') <a href="https://www.matrixinternet.ie/" target="_blank" class="cookweek-link hover-underline !text-sm">Matrix Internet</a> . @lang('footer.all_rights_reserved')
         </p>
     </div>
     <div
