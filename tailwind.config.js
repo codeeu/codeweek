@@ -43,6 +43,7 @@ module.exports = {
         'grey-3': '#F2F2F8',
         'lime': '#99CC28',
         'black-light': '#00000080',
+        'light-blue-100': '#CCF0F9'
       },
       fontFamily: {
         blinker: ['Blinker', 'sans-serif'],

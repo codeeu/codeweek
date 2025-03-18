@@ -14,7 +14,8 @@
             'description2' => "Anny has always been inspired by individuals whose values and skills make a positive difference. In today’s hyperconnected world - where digital and real-world issues intertwine - she seeks to leverage digital media to spotlight constructive news and encourage informed dialogue for a better future. To update her skills, Anny attended film school and completed an MSc in Journalism and Media in Europe. She co-founded a production company, directed several short documentaries, and began working with the multimedia team of a European news agency. Today, she is involved in multimedia production, content creation and educational projects that focus on digital and values-driven learning. She enjoys the fact that technology makes it possible to connect with people from all over the world.",
             'link' => 'https://www.linkedin.com/in/annytubbs/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Anny Tubbs/Dream Jobs in Digital video Anny Tubbs.mp4?csf=1&web=1&e=ATxZaz',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:b:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Anny Tubbs/Career Pathway Map Anny Tubbs.pdf?csf=1&web=1&e=wKoSlg'
+            'pathway_map_link' => 'Career Pathway Map Anny Tubbs.pdf',
+            'country' => 'be'
         ],
         [
             'id' => '2',
@@ -26,7 +27,8 @@
             'description2' => "She has been active part in projects aimed at improving energy efficiency and reducing carbon footprint of multiple customers facilities. ",
             'link' => 'https://www.linkedin.com/in/magda-vanzetto-42567034/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Magda Vanzetto/Dream Jobs in Digital Magda Vanzetto.mp4?csf=1&web=1&e=R7g9hd',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Magda Vanzetto/C4E Career Pathway Map_MV.pptx?d=wb11eec9665ac47a2a5cf8185a43d3b52&csf=1&web=1&e=0BCzEX'
+            'pathway_map_link' => 'C4E Career Pathway Map_MV.pdf',
+            'country' => 'sz'
         ],
         [
             'id' => '3',
@@ -38,7 +40,8 @@
             'description2' => "Roxana is known for her expertise in cloud infrastructure, DevOps practices, and her ability to foster collaboration and continuous improvement within her teams. Her leadership and technical skills have been instrumental in driving successful projects and enhancing operational efficiency at Siemens.",
             'link' => 'https://www.linkedin.com/in/roxanafreusse/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Roxana Freusse/Dream Jobs in Digital Roxana Freusse.mp4?csf=1&web=1&e=xxZhCa',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:b:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Roxana Freusse/C4E Career Pathway Map Roxana.pdf?csf=1&web=1&e=K6u8DC',
+            'pathway_map_link' => 'C4E Career Pathway Map Roxana.pdf',
+            'country' => 'sz'
         ],
         [
             'id' => '4',
@@ -50,7 +53,8 @@
             'description2' => "He holds a Bachelor's degree in Informatics from the Athens University of Economics and Business. His expertise encompasses machine learning and deep learning applications in disaster management, with several publications on the topic. Additionally, Vasileios has expertise in large language models (LLMs), vision-language models (VLLMs), and other emerging technologies, which he applies to design and develop innovative AI solutions.",
             'link' => 'https://www.linkedin.com/in/vasileios-linardos-a18294195/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Vasileios Linardos/Dream Jobs in Digital video Vasileios Linardos.MOV?csf=1&web=1&e=BWFXxX',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Vasileios Linardos/C4E Career Map Vasileios Linardos.pptx?d=w67edb035c1d44432bd6bff684070132e&csf=1&web=1&e=0v9m5l'
+            'pathway_map_link' => 'C4E Career Map Vasileios Linardos.pdf',
+            'country' => 'gr'
         ],
         [
             'id' => '5',
@@ -62,7 +66,8 @@
             'description2' => "Carole is committed to seizing every possible opportunity to grow both professionally and personally. This dedication is evident in her focus on people management, participation in the School of Innovation, and continuous efforts to train and get certified. Carole's growth mindset ensures she remains at the forefront of industry developments and best practices. For Carole, commitment is not just about receiving but also about giving back to peers. As an employee network lead and vice secretary to a Work Council, Carole has demonstrated a strong commitment to fostering a supportive and collaborative work environment. Her leadership in these roles underscores the importance of community and mutual support in achieving collective success.",
             'link' => 'https://www.linkedin.com/in/carole-colley-pmp%C2%AE-a932077b/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Carole Colley/Dream Jobs in Digital video Carole Colley.mp4?csf=1&web=1&e=sF2fDf',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Carole Colley/Career Pathway Map Carole Colley.pptx?d=wb03f14db64fc45c798f46ae1ebf22254&csf=1&web=1&e=i7og8K'
+            'pathway_map_link' => 'Career Pathway Map Carole Colley.pdf',
+            'country' => 'fr'
         ],
         [
             'id' => '6',
@@ -74,7 +79,8 @@
             'description2' => "In her role, she oversees the development and management of digital projects, ensuring they align with the company's strategic objectives. Christina is known for her expertise in digital transformation, project management, and her ability to lead cross-functional teams. She focuses on driving innovation and continuous improvement within Siemens, leveraging her strong background in both agile and waterfall methodologies.",
             'link' => 'https://www.linkedin.com/in/christina-kiamili-23582a114/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Christina Kiamili/Dream Jobs in Digital Christina Kiamili.mp4?csf=1&web=1&e=n9GdzV',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Christina Kiamili/Career Pathway Map Christina Kiamili.pptx?d=wa75be07ea3cb4262a86de550463abf11&csf=1&web=1&e=78NSLg'
+            'pathway_map_link' => 'Career Pathway Map Christina Kiamili.pdf',
+            'country' => 'sz'
         ],
         [
             'id' => '7',
@@ -86,19 +92,8 @@
             'description2' => "She believes that great design outcomes stem from a great team environment. Her passion for design began in high school in Missouri, USA where she created CD covers and T-shirts. Encouraged by her father, she pursued a career in design, studying Graphic Design at university.",
             'link' => 'https://www.linkedin.com/in/devoneyoung/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Devon Young/Dream Jobs in Digital video Devon Young.mp4?csf=1&web=1&e=hCCvkk',
-            'pathway_map_link' => ''
-        ],
-        [
-            'id' => '8',
-            'first_name' => 'Katrine',
-            'last_name' => 'Møller-Rahbek',
-            'role' => 'Robot Software Engineer at TinyMobile Robots',
-            'image' => '/images/dream-jobs/katrine-møller-rahbek.png',
-            'description1' => "Katrine Møller-Rahbek is a Robot Software Engineer at TinyMobile Robots",
-            'description2' => "She specializes in developing advanced robotic solutions for various applications, including sports field marking and industrial automation. Katrine is known for her expertise in robotics software engineering, particularly in areas such as motion planning, computer vision, and sensor integration. Her work involves creating innovative algorithms and software that enhance the functionality and efficiency of mobile robots.",
-            'link' => 'https://www.linkedin.com/in/katrine-moeller-rahbek/',
-            'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Katrine Moller/Dream Jobs in Digital video Katrine Moller.MOV?csf=1&web=1&e=shHjY9',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Katrine Moller/Carrer map Katrine M%C3%B8ller-Rahbek.pptx?d=we66e0a79087d47e1ba67278a2830774a&csf=1&web=1&e=kXDn3s'
+            'pathway_map_link' => 'C4E Career Pathway Map - Devon Young.pdf',
+            'country' => 'uk'
         ],
         [
             'id' => '9',
@@ -110,7 +105,8 @@
             'description2' => "She joined Microsoft in 2010 as the CMO Lead, later becoming the Marketing & Operations Lead in 2013, and the Public Sector Lead in 2016. Before her tenure at Microsoft, Paula spent 15 years at Procter & Gamble Portugal and Iberia, holding various roles in Finance and Marketing, including Corporate Marketing Director, Finance Group Director, and Communication Director. Paula graduated in Chemical Engineering from the Instituto Superior Técnico in 1994. She is known for her optimism, solution-oriented mindset, and commitment to doing the right thing. Outside of her professional life, she is a proud mother of three daughters, an avid reader, a music lover, and an adventurous traveler.",
             'link' => 'https://www.linkedin.com/in/paulapanarra/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Paula Panarra/Dream Jobs in Digital video Paula Panarra.webm?csf=1&web=1&e=X2ek4w',
-            'pathway_map_link' => ''
+            'pathway_map_link' => '',
+            'country' => 'sp'
         ],
         [
             'id' => '10',
@@ -122,7 +118,8 @@
             'description2' => "She is deeply involved in the research and development of hearing aids, and enjoys the hands-on aspects of her role, including prototyping and testing, which allow her to work closely with the products. She is also passionate about advocating for and supporting girls and women in all parts of society.",
             'link' => 'https://www.linkedin.com/in/ribka-balakrishnan/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Ribka Balakrishnan/Dream Jobs in Digital video Ribka Balakrishnan.MOV?csf=1&web=1&e=2GaNqY',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Ribka Balakrishnan/Career Pathway Map Ribka Balakrishnan.pptx?d=w9e5ef8666c0e40d387b8c1a2a26baa45&csf=1&web=1&e=TIcDZS'
+            'pathway_map_link' => 'Career Pathway Map Ribka Balakrishnan.pdf',
+            'country' => 'da'
         ],
         [
             'id' => '11',
@@ -134,7 +131,8 @@
             'description2' => "With M.Sc. degree in Cloud Computing and B.E in Computer Science Engineering, she is passionate about Women in Technology and Diversity & Inclusion. Jeevantika mentors' young minds about AI and hosts the podcast &quot;The Unplanned Journey,&quot; celebrating women's resilience. She has been recognized as a Top Voice of the New Era of Leaders 2024, awarded the WomenTech Global Ambassador Award in 2021, and is a finalist for many awards in Ireland.",
             'link' => 'https://www.linkedin.com/in/jeevantika-lingalwar/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Jeevantika Lingalwar/Dream Jobs in Digital Video Jeevantika Lingalwar.mp4?csf=1&web=1&e=Wweta7',
-            'pathway_map_link' => 'https://jaye.sharepoint.com/:p:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Jeevantika Lingalwar/Career Pathway Map Jeevantika Lingalwar.pptx?d=w8c7bb53d1d9f41208c4e376746d7e0c6&csf=1&web=1&e=Fagb8Z'
+            'pathway_map_link' => 'Career Pathway Map Jeevantika Lingalwar.pdf',
+            'country' => 'ei'
         ],
         [
             'id' => '12',
@@ -146,7 +144,8 @@
             'description2' => "Currently, Dominik works full-time as an application developer in the risk management department, where he is responsible for day-to-day production tasks and creating API packages that help automate internal processes. He works with programming languages (R, SQL, DAX) and data visualization tools (Power BI) on a daily basis. Dominik studied mathematics in high school and continued to pursue it at the university level. In his free time, he plays drums in an ABBA tribute band, traveling all over the world thanks to his flexible work. He is also very passionate about running and holds a professional running coaching certificate, which allows him to share his knowledge with colleagues, his athletes, and other passionate runners.",
             'link' => 'https://www.linkedin.com/in/dominik-boler%C3%A1c-39b333209/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Dominik Boler%C3%A1c/Dream Jobs in Digital video Dominik Boler%C3%A1c.mp4?csf=1&web=1&e=7wfHer',
-            'pathway_map_link' => ''
+            'pathway_map_link' => 'C4E Career Pathway Map - Dominik Bolerac.pdf',
+            'country' => 'lo'
         ],
         [
             'id' => '13',
@@ -158,7 +157,8 @@
             'description2' => "Sarah’s dual background in Human Resources and AI gives her a unique perspective on HR-related AI systems worldwide. She excels at engaging stakeholders and bridging the gap between business and development teams, ensuring AI projects are scaled strategically with a business-driven and human-centric approach. Passionate about fostering knowledge-sharing communities, Sarah actively promotes best practices in AI across The Adecco Group’s brands and countries. Beyond her professional role, Sarah is dedicated to volunteering efforts that encourage women to enter the field of Data Science. She also mentors aspiring female leaders, helping them navigate and build successful careers in tech. ",
             'link' => 'https://www.linkedin.com/in/sarah-mathews-87b481122/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Sarah Mathews/Dream Jobs in Digital video Sarah Mathews.mp4?csf=1&web=1&e=oGpdEK',
-            'pathway_map_link' => ''
+            'pathway_map_link' => '',
+            'country' => 'gm'
         ],
         [
             'id' => '14',
@@ -170,7 +170,8 @@
             'description2' => "Paraskevi has played a significant role in evaluating potential hazards associated with volcanic activity at the Santorini volcano and has been involved in mapping the seafloor of ocean core complexes and offshore volcanoes. She is also dedicated to educating and inspiring young women to pursue careers in oceanography through her lectures and innovative marine technologies",
             'link' => 'https://www.linkedin.com/in/paraskevi-nomikou-325393203/',
             'video' => 'https://jaye.sharepoint.com/:v:/r/sites/Code4EuropeProjectPlanner/Shared Documents/4_C4EU WP4/D4.1 Dream Jobs in Digital Campaign Plan/Role models/Paraskevi Nomikou/Dream Jobs in Digital Video Paraskevi Nomikou.MP4?csf=1&web=1&e=shyKYZ',
-            'pathway_map_link' => ''
+            'pathway_map_link' => '',
+            'country' => 'gr'
         ],
     ];
 
@@ -200,7 +201,7 @@
             'title' =>  __('dream-jobs-in-digital.resource_title_3'),
             'description' =>  __('dream-jobs-in-digital.resource_description_3'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_3'),
-            'button_link' => '/docs/dream-jobs/QA Review D4.4 VET Toolkit Description - v18.pdf',
+            'button_link' => '/docs/dream-jobs/Practical Skills – VET Toolkit.pdf',
             'image' => '/images/dream-jobs/vet-activities.png',
         ],
         (object) [
@@ -224,7 +225,7 @@
                     <h2 class="text-dark-blue text-3xl md:text-4xl md:leading-[44px] font-medium font-['Montserrat']">
                         {{ $item['first_name'] }} {{ $item['last_name'] }}
                     </h2>
-                    <img src="/images/flags/flag-pl.png" />
+                    <img class="w-12 h-[30px] shadow-lg rounded" src="/images/flags/{{ $item['country'] }}-flag.gif" />
                 </div>
                 <p class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0 mb-6">{{ $item['role'] }}</p>
                 <div class="flex flex-col tablet:flex-row gap-6 xl:gap-12">
@@ -272,7 +273,7 @@
                 </h2>
                 <img class="rounded-xl w-full h-60 md:h-auto object-cover object-center mb-6 md:mb-12" src="/images/dream-jobs/pathway-map.png" />
                 @if($item['pathway_map_link'])
-                    <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="{{ $item['pathway_map_link'] }}">Career Pathway Map</a>
+                    <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="/docs/dream-jobs/{{ $item['pathway_map_link'] }}">Career Pathway Map</a>
                 @endif
             </div>
         </section>
