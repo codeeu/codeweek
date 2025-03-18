@@ -11,10 +11,10 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'landing_header' => 'Get inspired by the incredible variety of jobs in digital! Download our Dream Jobs guide, check out our role models, test your digital skills, hold a Career in Digital Open Day or arrange a practical session with our VET toolkit.',
-    'get_inolved' => 'Get inolved',
+    'landing_header' => 'Get inspired by the incredible variety of jobs in digital! Download our Dream Jobs guide, check out our role models, test your digital skills, hold a Career in Digital Open Day or arrange a practical session with our Practical skills – VET Toolkit.',
+    'get_involved' => 'Get involved',
     'about_title' => 'About Careers in Digital',
-    'about_description' => 'Careers in Digital is part of EU Code Week and targets 14–18-year-olds and educators to explore exciting and varied digital careers. Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there. If you’re an educator download our new Career Day Toolkit to help organise open day sessions for schools and colleges or try out our new Vocational Education toolkit to hold practical creative sessions, created by Fondazione Links and CISCO. We strive to showcase the diverse opportunities in digital careers beyond coding. Unlock your potential and dive into the world of digital careers today!',
+    'about_description' => 'Careers in Digital is part of EU Code Week targeting 15–18-year-olds and educators to explore exciting and varied digital careers. Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there. If you’re an educator download our new Career Day Toolkit to help organise open day sessions for schools and colleges or try out our new Vocational Education toolkit to hold practical creative sessions, created by Fondazione Links and CISCO. We strive to showcase the diverse opportunities in digital careers beyond coding. Unlock your potential and dive into the world of digital careers today!',
     'our_role_models' => 'Our role models',
     'more_about' => 'More about',
 

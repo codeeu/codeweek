@@ -5,13 +5,14 @@
       (object) ['label' => 'Careers in Digital', 'href' => ''],
     ];
 
-    $results = [
+    $roles = [
         [
             'id' => '1',
             'first_name' => 'Anny',
             'last_name' => 'Tubbs',
             'role' => 'Multimedia producer at First Move Productions',
             'image' => '/images/dream-jobs/anny-tubbs.png',
+            'country' => 'be'
         ],
         [
             'id' => '2',
@@ -19,6 +20,7 @@
             'last_name' => 'Vanzetto',
             'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
             'image' => '/images/dream-jobs/magda-vanzetto.png',
+            'country' => 'sz'
         ],
         [
             'id' => '3',
@@ -26,6 +28,7 @@
             'last_name' => 'Freusse',
             'role' => 'Team Lead Cloud Solutions & DevOps, Scrum Master at Siemens',
             'image' => '/images/dream-jobs/roxana-freusse.png',
+            'country' => 'sz'
         ],
         [
             'id' => '4',
@@ -33,6 +36,7 @@
             'last_name' => 'Linardos',
             'role' => 'Head of AI at ARCHEIOTHIKI SA',
             'image' => '/images/dream-jobs/vasileios-linardos.png',
+            'country' => 'gr'
         ],
         [
             'id' => '5',
@@ -40,6 +44,7 @@
             'last_name' => 'Colley',
             'role' => 'Bid & Proposal Management at Avanade',
             'image' => '/images/dream-jobs/carole-colley.png',
+            'country' => 'fr'
         ],
         [
             'id' => '6',
@@ -47,6 +52,7 @@
             'last_name' => 'Kiamili',
             'role' => 'Digital Portfolio Manager at Siemens',
             'image' => '/images/dream-jobs/christina-kiamili.png',
+            'country' => 'sz'
         ],
         [
             'id' => '7',
@@ -54,13 +60,7 @@
             'last_name' => 'Young',
             'role' => 'UX Design at Avanade',
             'image' => '/images/dream-jobs/devon-young.png',
-        ],
-        [
-            'id' => '8',
-            'first_name' => 'Katrine',
-            'last_name' => 'Møller-Rahbek',
-            'role' => 'Robot Software Engineer at TinyMobile Robots',
-            'image' => '/images/dream-jobs/katrine-møller-rahbek.png',
+            'country' => 'uk'
         ],
         [
             'id' => '9',
@@ -68,6 +68,7 @@
             'last_name' => 'Panarra',
             'role' => 'General Manager at Avanade UK & Ireland',
             'image' => '/images/dream-jobs/paula-panarra.png',
+            'country' => 'sp'
         ],
         [
             'id' => '10',
@@ -75,6 +76,7 @@
             'last_name' => 'Balakrishnan',
             'role' => 'Mechanical Design Engineer at WSAudiology',
             'image' => '/images/dream-jobs/ribka-balakrishnan.png',
+            'country' => 'da'
         ],
         [
             'id' => '11',
@@ -82,6 +84,7 @@
             'last_name' => 'Lingalwar',
             'role' => 'Cloud Solution Architect at Microsoft',
             'image' => '/images/dream-jobs/jeevantika-lingalwar.png',
+            'country' => 'ei'
         ],
         [
             'id' => '12',
@@ -89,6 +92,7 @@
             'last_name' => 'Bolerác',
             'role' => 'Application Developer at Zurich Insurance Company',
             'image' => '/images/dream-jobs/dominik-bolerác.png',
+            'country' => 'lo'
         ],
         [
             'id' => '13',
@@ -96,6 +100,7 @@
             'last_name' => 'Mathews',
             'role' => 'Group Responsible AI Manager at The Adecco Group',
             'image' => '/images/dream-jobs/sara-mathews.png',
+            'country' => 'gm'
         ],
         [
             'id' => '14',
@@ -103,8 +108,12 @@
             'last_name' => 'Nomikou',
             'role' => 'Marine Geologist and an Assistant Professor at the Department of Geology and Geoenvironment at the National and Kapodistrian University of Athens',
             'image' => '/images/dream-jobs/paraskevi-nomikou.png',
+            'country' => 'gr'
         ],
     ];
+
+    $result = collect($roles);
+    $sortedResults = $result->sortBy('first_name');
 
     $resources = [
         (object) [
@@ -125,7 +134,7 @@
             'title' =>  __('dream-jobs-in-digital.resource_title_3'),
             'description' =>  __('dream-jobs-in-digital.resource_description_3'),
             'button_text' =>  __('dream-jobs-in-digital.resource_button_3'),
-            'button_link' => '/docs/dream-jobs/QA Review D4.4 VET Toolkit Description - v18.pdf',
+            'button_link' => '/docs/dream-jobs/Practical Skills – VET Toolkit.pdf',
             'image' => '/images/dream-jobs/vet-activities.png',
         ],
         (object) [
@@ -159,7 +168,7 @@
                                 class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
                                 href="#dream-job-resources"
                             >
-                                <span>@lang('dream-jobs-in-digital.get_inolved')</span>
+                                <span>@lang('dream-jobs-in-digital.get_involved')</span>
                             </a>
                         </div>
                         <img
@@ -181,9 +190,9 @@
 
         <section class="relative flex overflow-hidden">
             <div class="relative pt-10 md:pt-28 codeweek-container-lg">
-                <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
+                <a href="/about" class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block">
                     @lang('dream-jobs-in-digital.about_title')
-                </h2>
+                </a>
                 <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
                     @lang('dream-jobs-in-digital.about_description')
                 </p>
@@ -194,7 +203,7 @@
                         src="/images/dream-jobs/career-about.png"
                     />
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        @include('layout.video-player', ['id' => 'carrer-about', 'src' => 'https://youtu.be/pzP-kToeym4'])
+                        @include('layout.video-player', ['id' => 'careers-about', 'src' => 'https://youtu.be/pzP-kToeym4'])
                     </div>
                 </div>
             </div>
@@ -206,13 +215,16 @@
                     @lang('dream-jobs-in-digital.our_role_models')
                 </h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 lg:gap-8">
-                    @foreach($results as $result)
+                    @foreach($sortedResults as $result)
                         <div class="p-4 rounded-2xl border-2 border-solid border-[#A4B8D9] flex flex-col gap-4 md:gap-8 bg-white">
                         <div class="flex flex-1 gap-4 md:gap-8">
-                            <img
-                                class="w-32 h-full object-cover rounded-lg"
-                                src="{{ $result['image'] }}"
-                            />
+                            <div class="relative">
+                                <img
+                                    class="w-32 h-full object-cover object-center rounded-lg"
+                                    src="{{ $result['image'] }}"
+                                />
+                                <img class="absolute w-[26px] h-[16px] object-center bottom-2.5 right-2.5 shadow-lg rounded" src="/images/flags/{{ $result['country'] }}-flag.gif" />
+                            </div>
                             <div class="flex flex-1 flex-col justify-between">
                                 <div>
                                     <p class="p-0 font-medium text-dark-blue text-[22px] lg:text-xl font-['Montserrat']">{{ $result['first_name'] }} {{ $result['last_name'] }}</p>
