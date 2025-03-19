@@ -55,9 +55,9 @@
               {{-- search side --}}
               <li class="main-menu-item xl:hidden w-full">
                 <div class="relative w-full">
-                  <input 
-                      class="pl-6 pr-14 py-3 w-full rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48]" 
-                      placeholder="@lang('menu.search_site')" 
+                  <input
+                      class="pl-6 pr-14 py-3 w-full rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48]"
+                      placeholder="@lang('menu.search_site')"
                   />
                   <button class="absolute right-2 top-1/2 -translate-y-1/2 p-2 duration-300 hover:bg-[#E8EDF6] rounded-full">
                     <img class="text-dark-blue" src="/images/search-icon.svg" alt="">
@@ -108,8 +108,9 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('online-courses')}}">Online Courses</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('training.index')}}">@lang('menu.training')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_learn')}}">@lang('menu.learn')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_teach')}}">@lang('menu.teach')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('webinars')}}">@lang('menu.webinars')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
                             </div>
                             <div class="flex-grow flex flex-col gap-4">
@@ -117,9 +118,10 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('challenges')}}">@lang('menu.challenges')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">Hackathons</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('treasure-hunt')}}">@lang('menu.treasure-hunt')</a></div>
                           </div>
                           <div class="relative flex-grow hidden xl:flex flex-col gap-4 w-60 mb-2">
-                              <img class="w-full h-auto rounded-lg" src="/images/resource-menu-bg.png" alt="">
+                              <img class="w-full h-full rounded-lg object-cover" src="/images/resource-menu-bg.png" alt="">
                               <div class="absolute w-full bottom-0 left-0 p-4">
                                 <div class="text-white text-xl font-semibold mb-1">@lang('menu.girls_in_digital')</div>
                                 <div class="text-white text-[16px] font-medium mb-2">
@@ -409,8 +411,8 @@
           <div class="relative w-full">
             <input
               id="search-menu-input"
-              class="pl-6 pr-48 py-4 w-full text-[16px] rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48] font-semibold" 
-              placeholder="@lang('menu.type_to_search')" 
+              class="pl-6 pr-48 py-4 w-full text-[16px] rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48] font-semibold"
+              placeholder="@lang('menu.type_to_search')"
             />
             <button
               class="absolute right-1.5 top-1/2 text-[18px] -translate-y-1/2 px-[60px] py-3 bg-[#F95C22] hover:bg-[#FB9D7A] rounded-full font-semibold font-['Blinker'] duration-300"

@@ -1,10 +1,22 @@
 @php
     $author = $author ?? __('challenges-content.'.$slug.'.author')
 @endphp
-<div class="shadow-xl">
-    <a href="{{route('challenges.' . $slug)}}">
-        <img src="{{asset('img/2021/challenges/thumbnails/'.$slug.'.png')}}">
-        <div class="orange pt-2 pl-2 bg-gray-100 text-xl">{{__('challenges-content.'.$slug.'.title')}}</div>
-        <div class="text-black pl-2 pb-2 bg-gray-100 text-base italic">{{$author}}</div>
-    </a>
+
+<div
+  class="flex flex-col rounded-lg bg-white overflow-hidden cursor-pointer"
+  onclick="window.location.href = '{{route('challenges.' . $slug)}}'"
+>
+    <div class="relative">
+        <span class="w-full">
+            <img src="{{asset('img/2021/challenges/thumbnails/'.$slug.'.png')}}" class="w-full" />
+        </span>
+    </div>
+    <div class="block flex-grow p-6 pt-8">
+        <div class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat'] leading-6">
+            {{__('challenges-content.'.$slug.'.title')}}
+        </div>
+        <p class="text-slate-500 text-default p-0 font-bold font-['Blinker']">
+            {{$author}}
+        </p>
+    </div>
 </div>

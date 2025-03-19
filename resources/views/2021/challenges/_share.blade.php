@@ -1,6 +1,6 @@
-<section class="p-2 mb-6" style="background-color: #f5cebc">
+<section class="p-6 my-6 bg-light-blue">
 
-    <div class="leading-6 p-4">
+    <p class="font-normal text-default md:text-xl leading-[22px] md:leading-7 p-0 text-slate-500">
         @lang('challenges.share-box.0') <span class="font-bold">@lang('challenges.share-box.1')</span>: @lang('challenges.share-box.2') <span class="italic font-bold">@lang('challenges.share-box.3')</span> @lang('challenges.share-box.4')“<span class="font-bold">@lang('challenges.share-box.5')</span>”, @lang('challenges.share-box.6').<br/>
 {{--        @lang('challenges.share.9') @lang('challenges.share-box.8') <span class="font-bold">@lang('challenges.share-box.9') <a href="https://www.facebook.com/codeEU/">@lang('challenges.share-box.10')</a></span> . @lang('challenges.share-box.11').<br/>--}}
 {{--        @lang('challenges.share-box.12').--}}
@@ -25,7 +25,7 @@
 
 {{--        </div>--}}
 
-    </div>
+    </p>
 
 
 </section>

@@ -12,14 +12,15 @@ return [
     |
     */
 
-    'learn' => 'Learn',
-    'teach' => 'Teach',
+    'learn' => 'Learn & Teach',
     'training' => 'Training',
     'challenges' => 'Challenges',
     'online-courses' => 'Online Courses',
     'toolkits' => 'Presentations and Toolkits',
     'girls_in_digital' => 'Girls in Digital',
     'careers_in_digital' => 'Careers in Digital',
+    'treasure-hunt' => 'Treasure Hunt',
+    'webinars' => 'Webinars',
     'why' => 'Why',
     'home' => 'Home',
     'search_result' => 'Search results',
