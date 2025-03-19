@@ -190,9 +190,9 @@
 
         <section class="relative flex overflow-hidden">
             <div class="relative pt-10 md:pt-28 codeweek-container-lg">
-                <a href="/about" class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block">
+                <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block">
                     @lang('dream-jobs-in-digital.about_title')
-                </a>
+                </h2>
                 <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
                     @lang('dream-jobs-in-digital.about_description')
                 </p>
@@ -203,7 +203,10 @@
                         src="/images/dream-jobs/career-about.png"
                     />
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        @include('layout.video-player', ['id' => 'careers-about', 'src' => 'https://youtu.be/pzP-kToeym4'])
+                        @include('layout.video-player', [
+                          'id' => 'careers-about',
+                          'src' => 'https://www.youtube.com/embed/pzP-kToeym4?si=FzutCQGW4rO5M_5A',
+                        ])
                     </div>
                 </div>
             </div>
@@ -223,7 +226,7 @@
                                     class="w-32 h-full object-cover object-center rounded-lg"
                                     src="{{ $result['image'] }}"
                                 />
-                                <img class="absolute w-[26px] h-[16px] object-center bottom-2.5 right-2.5 shadow-lg rounded" src="/images/flags/{{ $result['country'] }}-flag.gif" />
+                                <img class="absolute w-[26px] object-center bottom-2.5 right-2.5 shadow-lg rounded" src="/images/flags/{{ $result['country'] }}-flag.gif" />
                             </div>
                             <div class="flex flex-1 flex-col justify-between">
                                 <div>
