@@ -110,6 +110,7 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_learn')}}">@lang('menu.learn')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_teach')}}">@lang('menu.teach')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
                             </div>
                             <div class="flex-grow flex flex-col gap-4">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
