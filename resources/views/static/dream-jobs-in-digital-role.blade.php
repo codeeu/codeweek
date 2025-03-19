@@ -13,7 +13,7 @@
             'description1' => "Anny Tubbs' professional path began in law and evolved into multinational leadership roles, where she was tasked with delivering large-scale change in complex matrix organisations. Her focus grew from antitrust matters and sales to anti-corruption and the full spectrum of business ethics. This taught her the importance of thoughtful communication and outreach.",
             'description2' => "Anny has always been inspired by individuals whose values and skills make a positive difference. In today’s hyperconnected world - where digital and real-world issues intertwine - she seeks to leverage digital media to spotlight constructive news and encourage informed dialogue for a better future. To update her skills, Anny attended film school and completed an MSc in Journalism and Media in Europe. She co-founded a production company, directed several short documentaries, and began working with the multimedia team of a European news agency. Today, she is involved in multimedia production, content creation and educational projects that focus on digital and values-driven learning. She enjoys the fact that technology makes it possible to connect with people from all over the world.",
             'link' => 'https://www.linkedin.com/in/annytubbs/',
-            'video' => 'https://www.youtube.com/embed/QLEm6Qck5s8?si=6GJ0eHDW5f1PrjYY',
+            'video' => 'https://www.youtube.com/embed/MUYkkR45Ky4?si=_achxuxizZ4Fs_OE',
             'pathway_map_link' => 'Career Pathway Map Anny Tubbs.pdf',
             'country' => 'be'
         ],
