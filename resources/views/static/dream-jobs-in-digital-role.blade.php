@@ -262,6 +262,7 @@
             ></div>
         </section>
 
+        @if($item['pathway_map_link'])
         <section class="relative">
             <div class="absolute w-full h-full bg-light-blue md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-light-blue hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
@@ -272,13 +273,12 @@
                     Explore Career Pathway
                 </h2>
                 <img class="rounded-xl w-full h-60 md:h-auto object-cover object-center mb-6 md:mb-12" src="/images/dream-jobs/pathway-map.png" />
-                @if($item['pathway_map_link'])
-                    <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="/docs/dream-jobs/{{ $item['pathway_map_link'] }}">Career Pathway Map</a>
-                @endif
+                <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="/docs/dream-jobs/{{ $item['pathway_map_link'] }}">Career Pathway Map</a>
             </div>
         </section>
+        @endif
 
-        <section class="relative bg-light-blue">
+        <section class="relative {{ !$item['pathway_map_link'] ? '' : 'bg-light-blue'}}">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
             <div class="absolute w-full h-full bg-blue-gradient hidden lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
