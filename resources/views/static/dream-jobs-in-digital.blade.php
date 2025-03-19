@@ -203,7 +203,10 @@
                         src="/images/dream-jobs/career-about.png"
                     />
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        @include('layout.video-player', ['id' => 'careers-about', 'src' => 'https://youtu.be/pzP-kToeym4'])
+                        @include('layout.video-player', [
+                          'id' => 'careers-about',
+                          'src' => 'https://www.youtube.com/embed/pzP-kToeym4?si=FzutCQGW4rO5M_5A',
+                        ])
                     </div>
                 </div>
             </div>
