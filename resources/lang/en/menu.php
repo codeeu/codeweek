@@ -19,6 +19,7 @@ return [
     'online-courses' => 'Online Courses',
     'toolkits' => 'Presentations and Toolkits',
     'girls_in_digital' => 'Girls in Digital',
+    'careers_in_digital' => 'Careers in Digital',
     'why' => 'Why',
     'home' => 'Home',
     'search_result' => 'Search results',
