@@ -3,7 +3,7 @@
  * @Author: Bernard Hanna
  * @Date:   2025-03-20 10:42:36
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2025-03-20 15:40:25
+ * @Last Modified time: 2025-03-20 16:06:02
  */
 ?>
 @extends('layout.new_base')
@@ -121,17 +121,17 @@
          src="{{ asset('images/homepage/slide1.png') }}"
          style="clip-path: ellipse(71% 73% at 40% 20%);" />
 
-    <img class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
+    <img class="absolute top-0 right-0 h-full min-w-[55%] max-w-[calc(70vw)] object-cover hidden md:block"
          loading="lazy"
          src="{{ asset('images/homepage/slide1.png') }}"
          style="clip-path: ellipse(70% 140% at 70% 25%);" />
 @else
-    <img class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
+    <img class="absolute top-0 -left-1/4 min-w-[55%] w-[150vw] !max-w-none md:hidden"
          loading="lazy"
          src="{{ asset('images/search/search_bg_lg_' . ($index % 2 === 0 ? 1 : 2) . '.jpeg') }}"
          style="clip-path: ellipse(71% 73% at 40% 20%);" />
 
-    <img class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
+    <img class="absolute top-0 right-0 h-full min-w-[55%] max-w-[calc(70vw)] object-cover hidden md:block"
          loading="lazy"
          src="{{ asset('images/search/search_bg_lg_' . ($index % 2 === 0 ? 1 : 2) . '.jpeg') }}"
          style="clip-path: ellipse(70% 140% at 70% 25%);" />
