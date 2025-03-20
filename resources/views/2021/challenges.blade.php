@@ -54,7 +54,7 @@
                             $currentDate = \Carbon\Carbon::now();
                         @endphp
 
-                           {{--  @include('2021._thumbnail', ['slug' => 'careers-as-constellations', 'author'=>'Linda Liukas']) --}}
+                            @include('2021._thumbnail', ['slug' => 'careers-as-constellations', 'author'=>'Linda Liukas'])
 
                             @include('2021._thumbnail', ['slug' => 'air-drawing-with-AI', 'author'=>'Kristina Slišurić'])
 

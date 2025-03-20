@@ -32,7 +32,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")]) 
+            <div class ="justify-center bg-blue-200 p-2">@lang('challenges-content.careers-as-constellations.authorcontent')</div>
 
                 <section class="grid grid-cols-1 gap-6 mx-6 my-4 md:grid-cols-3">
 
@@ -48,7 +48,7 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges-content.careers-as-constellations.name-of-org')</div>
                         <ol class="ml-5 list-disc">
-                            <li>Hello Ruby? </li>
+                            <li> Linda Liukas  </li>
 
                         </ol>
                     </div>
@@ -164,11 +164,11 @@
                         <div class="text-3xl orange">@lang('challenges-content.careers-as-constellations.step-by-step-instructions')</div>
 
 
-                        <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.title.one')</div>
+                        <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.titles.one')</div>
 
                          <div class="my-4 text-base leading-6 text-left">@lang('challenges-content.careers-as-constellations.intro')</div>
 
-                         <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.title.two')</div>
+                         <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.titles.two')</div>
                           <ul class="mt-2 ml-2 leading-7 checklist">
                             @lang("challenges-content.careers-as-constellations.content.one")
                                  <li>@lang("challenges-content.careers-as-constellations.content.two")</li>
@@ -176,14 +176,14 @@
                                 <li>@lang("challenges-content.careers-as-constellations.content.four")</li>
                             </ul>
 
-                              <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.title.three')</div>
+                              <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.titles.three')</div>
                           <ul class="mt-2 ml-2 leading-7 checklist">
                                  <li>@lang("challenges-content.careers-as-constellations.content.five")</li>
                                 <li>@lang("challenges-content.careers-as-constellations.content.six")</li>
                                 <li>@lang("challenges-content.careers-as-constellations.content.seven")</li>
                             </ul>
 
-                     <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.title.four')</div>
+                     <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.titles.four')</div>
                           <ul class="mt-2 ml-2 leading-7 checklist">
                                  <li>@lang("challenges-content.careers-as-constellations.content.eight")</li>
                                 <li>@lang("challenges-content.careers-as-constellations.content.nine")</li>
@@ -198,7 +198,7 @@
                             </ul>
 
 
-                        <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.title.five')</div>
+                        <div class="my-4 text-base font-bold leading-6 text-left">@lang('challenges-content.careers-as-constellations.titles.five')</div>
                           <ul class="mt-2 ml-2 leading-7 checklist">
                                  <li>@lang("challenges-content.careers-as-constellations.content.fourteen")</li>
                                 <li>@lang("challenges-content.careers-as-constellations.content.fifteen")</li>
