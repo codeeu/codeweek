@@ -4,7 +4,7 @@
  * @Author: Bernard Hanna
  * @Date:   2025-03-20 10:42:36
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2025-03-20 15:03:48
+ * @Last Modified time: 2025-03-20 16:15:24
  */
 
 
@@ -20,7 +20,7 @@ class HomeController extends Controller
         $activities = collect([
             [
                 'title' => 'October 11-26',
-                'description' => 'Learning to code helps us make sense of the rapidly changing world around us. Join millions of fellow organisers and participants to inspire the development of coding and computational thinking skills in order to explore new ideas and innovate for the future.',
+                'description' => __('home.when_text'),
                 'url' => '/guide',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
