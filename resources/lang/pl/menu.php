@@ -56,6 +56,6 @@ return [
     'register_activity' => 'Zarejestruj aktywność',
     'select_language' => 'Wybierz język',
     'search_site' => 'Wyszukaj w witrynie',
-    'what_you_looking_for' => "czego_szukasz",
+    'what_you_looking_for' => "X'qed tfittex?",
     'type_to_search' => 'Wpisz, aby wyszukać...',
 ];
