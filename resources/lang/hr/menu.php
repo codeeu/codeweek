@@ -52,7 +52,7 @@ return [
     'values' => 'Naše vrijednosti',
     'online_events' => 'Online aktivnosti',
     'featured_activities' => 'Planirana događanja',
-    'codeweek2020' => 'Izdanje 2020.'
+    'codeweek2020' => 'Izdanje 2020.',
     'register_activity' => 'Registrirajte aktivnost',
     'select_language' => 'Odaberite jezik',
     'search_site' => 'Pretraži mjesto',
