@@ -27,15 +27,5 @@ return [
     'event' => 'evento',
     'events' => 'eventos',
     'year' => 'ano',
-    'audiences' => 'Público', 
-    'themes' => 'Temas', 
-    'countries' => 'Países', 
-    'search_placeholder' => 'Busca por título ou descrição',
-    'search_banner_title' => 'Descubra o que o inspira',
-    'search_banner_content' => 'Navegue por uma variedade de recursos de codificação, atividades e guias para apoiar a sua jornada rumo à criatividade e aprendizagem digital',
-    'search_results_title' => 'Resultados da pesquisa',
-    'search_input_label' => 'Veja os resultados com base na(s) sua(s) palavra(s)-chave abaixo:',
-    'search_input_placeholder' => 'Pesquisa...',
-    'results' => 'Resultados',
-    'no_results' => 'Nenhum resultado encontrado.'
+    'audiences' => 'Público', 'themes' => 'Temas', 'countries' => 'Países', 'search_placeholder' => 'Busca por título ou descrição',
 ];
