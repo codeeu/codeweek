@@ -38,4 +38,18 @@ return [
     'search_input_placeholder' => 'Suchen...',
     'results' => 'Suchergebnisse',
     'no_results' => 'Keine Ergebnisse gefunden.',
+    'search_categories' => [
+        'all' => 'Alle',
+        'podcasts' => 'Podcasts',
+        'hackathons' => 'Hackathons',
+        'online_courses' => 'Online-Kurse',
+        'training' => 'Schulungen',
+        'challenges' => 'Herausforderungen',
+        'learn' => 'Lernen',
+        'teach' => 'Lehren',
+        'presentations_and_toolkits' => 'Präsentationen und Toolkits',
+        'activities' => 'Aktivitäten',
+        'blogs' => 'Blogs',
+        'others' => 'Andere'
+    ]
 ];
