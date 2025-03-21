@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * @Author: Bernard Hanna
+ * @Date:   2025-02-13 15:56:27
+ * @Last Modified by:   Bernard Hanna
+ * @Last Modified time: 2025-03-21 16:24:49
+ */
+
+
 namespace App\Http\Controllers;
 
 use App\Country;
@@ -65,14 +73,38 @@ class SearchController extends Controller
 
         //Log::info($request->input('page'));
         if ($request->input('page')) {
-            $result = [$events];
+            $result = [[
+                'data' => $events->items(),
+                'per_page' => $events->perPage(),
+                'current_page' => $events->currentPage(),
+                'from' => $events->firstItem(),
+                'last_page' => $events->lastPage(),
+                'last_page_url' => $events->url($events->lastPage()),
+                'next_page_url' => $events->nextPageUrl(),
+                'prev_page' => $events->currentPage() > 1 ? $events->currentPage() - 1 : null,
+                'prev_page_url' => $events->previousPageUrl(),
+                'to' => $events->lastItem(),
+                'total' => $events->total(),
+            ]];
         } else {
             Log::info('no page');
             $eventsMap = $this->getAllEventsToMap($filters);
-            $result = [$events, $eventsMap];
+            $result = [[
+                'data' => $events->items(),
+                'per_page' => $events->perPage(),
+                'current_page' => $events->currentPage(),
+                'from' => $events->firstItem(),
+                'last_page' => $events->lastPage(),
+                'last_page_url' => $events->url($events->lastPage()),
+                'next_page_url' => $events->nextPageUrl(),
+                'prev_page' => $events->currentPage() > 1 ? $events->currentPage() - 1 : null,
+                'prev_page_url' => $events->previousPageUrl(),
+                'to' => $events->lastItem(),
+                'total' => $events->total(),
+            ], $eventsMap->toArray()];
         }
 
-        return $result;
+        return response()->json($result);
     }
 
     protected function getEvents(EventFilters $filters)
