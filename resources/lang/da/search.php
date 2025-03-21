@@ -28,4 +28,12 @@ return [
     'events' => 'arrangementer',
     'year' => 'år',
     'audiences' => 'Målgrupper', 'themes' => 'Temaer', 'countries' => 'Lande', 'search_placeholder' => 'Søg efter titel eller beskrivelse',
+
+    'search_banner_title' => 'Find det, der inspirerer dig',
+    'search_banner_content' => 'Gennemse et væld af kodningsressourcer, aktiviteter og guider for at støtte din rejse ind i digital kreativitet og læring.',
+    'search_results_title' => 'Søgeresultater',
+    'search_input_label' => 'Se resultaterne baseret på dine søgeord nedenfor:',
+    'search_input_placeholder' => 'Søge...',
+    'results' => 'Resultater',
+    'no_results' => 'Ingen resultater fundet.',
 ];

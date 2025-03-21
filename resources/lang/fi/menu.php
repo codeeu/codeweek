@@ -40,4 +40,11 @@ return [
     'participation' => 'Osallistumissertifikaatti',
     'values' => 'Meidän arvomme',
     'featured_activities' => 'Avoimet aktiviteetit',
-    'codeweek2020' => 'Versio 2020'];
+    'codeweek2020' => 'Versio 2020',
+    'register_activity' => 'Rekisteröi toiminta',
+    'select_language' => 'Valitse kieli',
+    'search_site' => 'Hae sivustoa',
+    'what_you_looking_for' => 'Mitä etsit??',
+    'type_to_search' => 'Hae kirjoittamalla...',
+    'search' => 'Hae',
+];

@@ -40,4 +40,11 @@ return [
     'participation' => 'Účastnický certifikát',
     'values' => 'Naše hodnoty',
     'featured_activities' => 'Vybrané aktivity',
-    'codeweek2020' => 'Ročník 2020'];
+    'codeweek2020' => 'Ročník 2020',
+    'register_activity' => 'Registruj aktivitu',
+    'select_language' => 'Vyberte jazyk',
+    'search_site' => 'Hledat na webu',
+    'what_you_looking_for' => 'Co hledáte?',
+    'type_to_search' => 'Zadejte pro vyhledání',
+    'search' => ' vyhledání'
+];

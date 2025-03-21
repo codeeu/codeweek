@@ -47,4 +47,10 @@ return [
     'online_events' => 'Онлайн-заходи',
     'featured_activities' => 'Основні заходи',
     'codeweek2020' => 'Версія 2020',
+    'register_activity' => 'Зареєструвати захід',
+    'select_language' => 'Виберіть мову',
+    'search_site' => 'Пошук на сайті',
+    'what_you_looking_for' => 'Що ти шукаєш?',
+    'type_to_search' => 'Введіть для пошуку...',
+    'search' => 'Пошук',
 ];
