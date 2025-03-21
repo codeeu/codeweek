@@ -38,4 +38,18 @@ return [
     'search_input_placeholder' => 'пошук...',
     'results' => 'Результати',
     'no_results' => 'Результатів не знайдено.',
+    'search_categories' => [
+        'all' => 'Всі',
+        'podcasts' => 'Подкасти',
+        'hackathons' => 'Хакатони',
+        'online_courses' => 'Онлайн курси',
+        'training' => 'Тренінг',
+        'challenges' => 'Челенджи',
+        'learn' => 'Навчатися',
+        'teach' => 'Навчати',
+        'presentations_and_toolkits' => 'Презентації та інструменти',
+        'activities' => 'Діяльність',
+        'blogs' => 'Блоги',
+        'others' => 'Інші'
+    ]
 ];
