@@ -1,3 +1,9 @@
+/**
+ * @Author: Bernard Hanna
+ * @Date:   2025-01-29 14:25:28
+ * @Last Modified by:   Bernard Hanna
+ * @Last Modified time: 2025-03-21 16:42:34
+ */
 import './bootstrap';
 import { createApp } from 'vue';
 import ResourceForm from './components/ResourceForm.vue';
@@ -26,7 +32,7 @@ import PartnerGallery from './components/PartnerGallery.vue';
 import { i18nVue } from 'laravel-vue-i18n';
 
 const app = createApp({});
-
+console.log("🔥 Vite rebuild triggered: Mar 21");
 app.use(authorizationPlugin);
 app.use(i18nVue, {
     resolve: async lang => {
