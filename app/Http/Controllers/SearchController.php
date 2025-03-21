@@ -4,7 +4,7 @@
  * @Author: Bernard Hanna
  * @Date:   2025-02-13 15:56:27
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2025-03-21 17:31:05
+ * @Last Modified time: 2025-03-21 17:39:36
  */
 
 
@@ -52,10 +52,9 @@ class SearchController extends Controller
         if (! is_null($country_iso)) {
             $country = Country::where('iso', $country_iso)->first();
             if ($country) {
-                $country->translation = __('countries.'.$country->name);
+                $country->translation = __('countries.' . $country->name);
                 $selected_country[] = $country;
             }
-
         }
 
         $current_year = Carbon::now()->year;
@@ -71,13 +70,12 @@ class SearchController extends Controller
     {
         $events = $this->getEvents($filters);
 
-        //Log::info($request->input('page'));
-        if ($request->input('page')) {
-            $result = [$events];
-        } else {
+        $eventsMap = null;
+
+        // Only fetch map data if not paginating
+        if (! $request->input('page')) {
             Log::info('no page');
             $eventsMap = $this->getAllEventsToMap($filters);
-            $result = [$events, $eventsMap];
         }
 
         return response()->json([
@@ -94,7 +92,7 @@ class SearchController extends Controller
                 'to' => $events->lastItem(),
                 'total' => $events->total(),
             ],
-            'map' => isset($eventsMap) ? $eventsMap->toArray() : null
+            'map' => $eventsMap ? $eventsMap->toArray() : null
         ]);
     }
 
@@ -118,7 +116,6 @@ class SearchController extends Controller
         }
 
         return $events->get('future')->merge($events->get('past'))->paginate(12);
-
     }
 
     protected function getAllEventsToMap(EventFilters $filters)
@@ -129,7 +126,7 @@ class SearchController extends Controller
         $composed_key = '';
 
         foreach ($flattened as $value) {
-            $composed_key .= $value.',';
+            $composed_key .= $value . ',';
         }
 
         $value = Cache::get($composed_key, function () use ($composed_key, $filters) {
@@ -150,6 +147,5 @@ class SearchController extends Controller
         Log::info("Serving from cache [{$composed_key}]");
 
         return $value;
-
     }
 }
