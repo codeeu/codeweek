@@ -38,4 +38,18 @@ return [
     'search_input_placeholder' => 'Fittex...',
     'results' => 'Wyniki',
     'no_results' => 'Nie znaleziono wyników.',
+    'search_categories' => [
+        'all' => 'Wszystkie',
+        'podcasts' => 'Podcasty',
+        'hackathons' => 'Hackathony',
+        'online_courses' => 'Kursy online',
+        'training' => 'Szkolenia',
+        'challenges' => 'Wyzwania',
+        'learn' => 'Uczyć się',
+        'teach' => 'Technologie',
+        'presentations_and_toolkits' => 'Prezentacje i zestawy narzędzi',
+        'activities' => 'Aktywności',
+        'blogs' => 'Blogi',
+        'others' => 'Inne'
+    ]
 ];
