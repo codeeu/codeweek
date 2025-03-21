@@ -38,6 +38,12 @@ return [
     'privacy' => 'Privacidade',
     'participation' => 'Certificado de participação',
     'values' => 'Os nossos valores',
-
     'featured_activities' => 'Atividades em destaque ',
-    'codeweek2020' => 'Edição 2020'];
+    'codeweek2020' => 'Edição 2020',
+    'register_activity' => 'Irreaching l-Activity',
+    'select_language' => 'Selecione o idioma',
+    'search_site' => 'Pesquisar site',
+    'what_you_looking_for' => 'O que está a procurar?',
+    'type_to_search' => 'Digite para pesquisar...',
+    'search' => 'pesquisa'
+];
