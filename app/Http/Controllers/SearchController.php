@@ -4,7 +4,7 @@
  * @Author: Bernard Hanna
  * @Date:   2025-02-13 15:56:27
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2025-03-21 16:24:49
+ * @Last Modified time: 2025-03-21 17:31:05
  */
 
 
@@ -73,23 +73,15 @@ class SearchController extends Controller
 
         //Log::info($request->input('page'));
         if ($request->input('page')) {
-            $result = [[
-                'data' => $events->items(),
-                'per_page' => $events->perPage(),
-                'current_page' => $events->currentPage(),
-                'from' => $events->firstItem(),
-                'last_page' => $events->lastPage(),
-                'last_page_url' => $events->url($events->lastPage()),
-                'next_page_url' => $events->nextPageUrl(),
-                'prev_page' => $events->currentPage() > 1 ? $events->currentPage() - 1 : null,
-                'prev_page_url' => $events->previousPageUrl(),
-                'to' => $events->lastItem(),
-                'total' => $events->total(),
-            ]];
+            $result = [$events];
         } else {
             Log::info('no page');
             $eventsMap = $this->getAllEventsToMap($filters);
-            $result = [[
+            $result = [$events, $eventsMap];
+        }
+
+        return response()->json([
+            'events' => [
                 'data' => $events->items(),
                 'per_page' => $events->perPage(),
                 'current_page' => $events->currentPage(),
@@ -101,10 +93,9 @@ class SearchController extends Controller
                 'prev_page_url' => $events->previousPageUrl(),
                 'to' => $events->lastItem(),
                 'total' => $events->total(),
-            ], $eventsMap->toArray()];
-        }
-
-        return response()->json($result);
+            ],
+            'map' => isset($eventsMap) ? $eventsMap->toArray() : null
+        ]);
     }
 
     protected function getEvents(EventFilters $filters)
