@@ -74,6 +74,7 @@ return [
             'fourteen' => 'Digital Challenge: Have students create a digital version of their constellation using Miro, Canva, or Google Jamboard and present their findings.',
             'fifteen' => 'Research Task: Students research a person in tech whose career followed a surprising path, map their constellation and share their story.',
             '16' => 'Download the <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">Template</a> for the activity',
+            '17' => 'OBS! REMEMBER TO ADD YOUR ACTIVITY AND UPLOAD IT <a href="/add">HERE!</a>',
         ],
     ],
     'chatbot' => [
