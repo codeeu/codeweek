@@ -204,7 +204,8 @@
                                 <li>@lang("challenges-content.careers-as-constellations.content.fifteen")</li>
                             </ul>
                     </section>
- @lang("challenges-content.careers-as-constellations.content.16")
+                            @lang("challenges-content.careers-as-constellations.content.16")
+                            <p><b>@lang("challenges-content.careers-as-constellations.content.17")</b></p>
 
                 </div>
 
