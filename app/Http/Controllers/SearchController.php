@@ -131,10 +131,3 @@ class SearchController extends Controller
         return $value;
     }
 }
-        });
-
-        Log::info("Serving from cache [{$composed_key}]");
-
-        return $value;
-    }
-}
