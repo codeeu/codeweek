@@ -52,7 +52,7 @@
             <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        Hackathons optional section
+                        Hackathons
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
                         A hackathon is an event where participants with diverse skills collaborate to tackle global challenges. Participants form teams to brainstorm, design, and code, aiming to produce a working solution or prototype by the event's conclusion. Beyond fostering innovation and teamwork, EU Code Week hackathons offer a platform for young enthusiasts to learn, showcase their talents, and connect with like-minded peers.

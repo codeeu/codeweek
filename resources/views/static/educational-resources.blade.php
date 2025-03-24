@@ -52,12 +52,14 @@
                     <a
                         class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
                         href="https://forms.gle/pZz9issG45B9131n9"
+                        target="_blank"
                     >
                         <span>Share your resource</span>
                     </a>
                     <a
                         class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
                         href="https://forms.gle/enVmsPvNyYo7yEuT6"
+                        target="_blank"
                     >
                         <span>Share your feedback</span>
                     </a>
