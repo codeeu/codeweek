@@ -92,9 +92,9 @@
 
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
-                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />
-                            </button>
+{{--                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">--}}
+{{--                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />--}}
+{{--                            </button>--}}
                         </div>
                         <img
                                 class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
@@ -115,9 +115,9 @@
 
         <section class="relative z-10">
             <div class="relative py-10 md:py-20 codeweek-container-lg flex justify-center">
-                <div class="w-full max-w-[880px] gap-2">
+                <div class="w-full max-w-[880px] gap-2 z-10">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        Webinars optional section
+                        Webinars
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
                         Organised by the EU Code Week team, this webinar series is designed to support the organisation of events and activities. This series brings together experts, educators, and enthusiasts to explore the fascinating intersection of coding and digital creativity.

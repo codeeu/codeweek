@@ -226,7 +226,7 @@
                                     class="w-32 h-full object-cover object-center rounded-lg"
                                     src="{{ $result['image'] }}"
                                 />
-                                <img class="absolute w-[26px] object-center bottom-2.5 right-2.5 shadow-lg rounded" src="/images/flags/{{ $result['country'] }}-flag.gif" />
+                                <img class="absolute w-[26px] h-[16px] object-center bottom-2.5 right-2.5 shadow-lg rounded-sm" src="/images/flags/{{ $result['country'] }}-flag.gif" />
                             </div>
                             <div class="flex flex-1 flex-col justify-between">
                                 <div>
