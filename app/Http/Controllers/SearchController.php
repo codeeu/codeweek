@@ -1,12 +1,5 @@
 <?php
 
-/**
- * @Author: Bernard Hanna
- * @Date:   2025-03-21 19:14:36
- * @Last Modified by:   Bernard Hanna
- */
-
-
 namespace App\Http\Controllers;
 
 use App\Country;
@@ -131,6 +124,13 @@ class SearchController extends Controller
             Cache::put($composed_key, $events, 5 * 60);
 
             return $events;
+        });
+
+        Log::info("Serving from cache [{$composed_key}]");
+
+        return $value;
+    }
+}
         });
 
         Log::info("Serving from cache [{$composed_key}]");
