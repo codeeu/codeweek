@@ -1,12 +1,5 @@
 <?php
 
-/**
- * @Author: Bernard Hanna
- * @Date:   2025-03-21 19:14:36
- * @Last Modified by:   Bernard Hanna
- */
-
-
 namespace App\Http\Controllers;
 
 use App\Country;
