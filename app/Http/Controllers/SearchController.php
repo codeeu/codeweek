@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * @Author: Bernard Hanna
+ * @Date:   2025-03-21 19:14:36
+ * @Last Modified by:   Bernard Hanna
+ * @Last Modified time: 2025-03-24 10:37:09
+ */
+
+
 namespace App\Http\Controllers;
 
 use App\Country;
@@ -102,11 +110,15 @@ class SearchController extends Controller
     {
 
         $flattened = Arr::flatten($filters->getFilters());
+        $filtered = array_filter($flattened, fn($v) => $v !== null && $v !== '');
+        $composed_key = implode(',', $filtered);
 
-        $composed_key = '';
-
-        foreach ($flattened as $value) {
-            $composed_key .= $value.',';
+        if (empty($composed_key)) {
+            Log::info('Skipping cache due to empty composed_key');
+            return Event::where('status', 'APPROVED')
+                ->filter($filters)
+                ->get()
+                ->groupBy('country');
         }
 
         $value = Cache::get($composed_key, function () use ($composed_key, $filters) {
