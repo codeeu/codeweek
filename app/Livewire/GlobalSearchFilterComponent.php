@@ -40,8 +40,14 @@ class GlobalSearchFilterComponent extends Component
 
     public function render()
     {
-        return view('livewire.global-filter-component', [
+        /*return view('livewire.global-filter-component', [
             'filters' => GlobalSearchFiltersEnum::values(),
+        ]);*/
+        return view('livewire.global-filter-component', [
+            'filters' => collect(GlobalSearchFiltersEnum::cases())->map(fn($filter) => [
+                'key' => $filter->value,        //Enum value (e.g.,'year')
+                'label' => $filter->label(),    //Translated text (e.g.,'Année')
+            ]),
         ]);
     }
 }
