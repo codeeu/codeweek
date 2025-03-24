@@ -3,8 +3,10 @@
 return [
 
     'featured-activities' => 'Here are upcoming EU Code Week featured activities that welcome online participants. You can filter by language and month and, by clicking on “view” you’ll access all details on the activity and the contacts of the organisers. Enjoy!',
-    'learn' => 'Coding and programming are key competences which are increasingly demanded in every field, and EU Code Week wants to support you in your learning! Browse our repository and find the perfect resource to start or to continue your coding journey. All of these resources are free of charge. Don’t forget that you can filter your search by type of resource, skill level, programming language, category, and language.',
-    'teach' => 'Coding and programming are key competences which will open new possibilities to your students and children. Do you want to teach coding at home,in the classroom or code club? Browse our repository to find the most suitable resource to bring coding and programming to your teaching practice. All of these resources are free of charge. Don’t forget that you can filter your search by type of resource, skill level, programming language, subject, category, and language.',
+    'learn_1' => 'Coding and programming are key competences which are increasingly demanded in every field, and EU Code Week wants to support you in your learning!',
+    'learn_2' => 'Browse our repository and find the perfect resource to start or to continue your coding journey. All of these resources are free of charge. Don’t forget that you can filter your search by type of resource, skill level, programming language, category, and language.',
+    'teach_1' => 'Coding and programming are key competences which will open new possibilities to your students and children. Do you want to teach coding at home,in the classroom or code club?',
+    'teach_2' => 'Browse our repository to find the most suitable resource to bring coding and programming to your teaching practice. All of these resources are free of charge. Don’t forget that you can filter your search by type of resource, skill level, programming language, subject, category, and language.',
     'toolkits' => [
         'In this section you will find material which will help you organise your EU Code Week activity, and promote the initiative with your community.',
         'Communication toolkit',
