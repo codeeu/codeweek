@@ -35,7 +35,7 @@
                             style="opacity: {{ $index === 0 ? 1 : 0 }}">
                             <div
                                 class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                                @if ($index === 0)
+                                @if ($index === 1)
                                     <div x-data="countdownTimer('2025-10-14T00:00:00')" x-init="startCountdown()"
                                         class="flex gap-2.5 items-start max-md:gap-2 max-sm:gap-1.5 mt-4 mb-4" role="timer"
                                         aria-label="Countdown timer">
@@ -115,37 +115,26 @@
                                 </div>
                             </div>
                             
-@if ($index === 0)
-    <img class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
-         loading="lazy"
-         src="{{ asset('images/homepage/slide1.png') }}"
-         style="clip-path: ellipse(71% 73% at 40% 20%);" />
+                            @php
+                                $backgroundImages = [
+                                    asset('images/search/search_bg_lg_1.jpeg'),
+                                    asset('images/homepage/slide1.png'),
+                                    asset('images/search/search_bg_lg_2.jpeg'),
+                                ];
+                            @endphp
 
-    <img class="absolute top-0 right-0 h-full min-w-[55%] max-w-[calc(70vw)] object-cover hidden md:block"
-         loading="lazy"
-         src="{{ asset('images/homepage/slide1.png') }}"
-         style="clip-path: ellipse(70% 140% at 70% 25%);" />
-@else
-    <img class="absolute top-0 -left-1/4 min-w-[55%] w-[150vw] !max-w-none md:hidden"
-         loading="lazy"
-         src="{{ asset('images/search/search_bg_lg_' . ($index % 2 === 0 ? 1 : 2) . '.jpeg') }}"
-         style="clip-path: ellipse(71% 73% at 40% 20%);" />
+                            @if(isset($backgroundImages[$index]))
+                                <img class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
+                                    loading="lazy"
+                                    src="{{ $backgroundImages[$index] }}"
+                                    style="clip-path: ellipse(71% 73% at 40% 20%);" />
 
-    <img class="absolute top-0 right-0 h-full min-w-[55%] max-w-[calc(70vw)] object-cover hidden md:block"
-         loading="lazy"
-         src="{{ asset('images/search/search_bg_lg_' . ($index % 2 === 0 ? 1 : 2) . '.jpeg') }}"
-         style="clip-path: ellipse(70% 140% at 70% 25%);" />
-@endif
+                                <img class="absolute top-0 right-0 h-full min-w-[55%] max-w-[calc(70vw)] object-cover hidden md:block"
+                                    loading="lazy"
+                                    src="{{ $backgroundImages[$index] }}"
+                                    style="clip-path: ellipse(70% 140% at 70% 25%);" />
+                            @endif
 
-                            <div class="absolute bottom-0 right-0 hidden homepage-robot md:block">
-                                <img class="robot-land" src="/images/homepage/robot-land.png" />
-                                <div class="absolute bottom-10 right-10">
-                                    <img src="/images/homepage/robot.png" />
-                                    <img class="robot-word" src="/images/homepage/robot-word.svg" />
-                                    <div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 @endforeach
