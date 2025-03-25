@@ -19,16 +19,16 @@ class HomeController extends Controller
     {
         $activities = collect([
             [
-                'title' => 'October 11-26',
-                'description' => __('home.when_text'),
-                'url' => '/guide',
+                'title' => 'Girls in Digital',
+                'description' => 'Explore and embrace digital opportunities—empowering a new generation of girls in digital!',
+                'url' => '/girls-in-digital-week',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
             ],
             [
-                'title' => 'Girls in Digital',
-                'description' => 'Explore and embrace digital opportunities—empowering a new generation of girls in digital!',
-                'url' => '/girls-in-digital-week',
+                'title' => 'October 11-26',
+                'description' => __('home.when_text'),
+                'url' => '/guide',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
             ],
