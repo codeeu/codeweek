@@ -174,35 +174,50 @@
                 if (isPagination) {
                     url = "/search?page=" + this.pagination.current_page;
                 }
+
                 axios.post(url, this.$data)
                     .then(result => {
-                        var response = result.data[0];
-                        this.pagination.per_page = response.per_page;
-                        this.pagination.current_page = response.current_page;
-                        this.pagination.from = response.from;
-                        this.pagination.last_page = response.last_page;
-                        this.pagination.last_page_url = response.last_page_url;
-                        this.pagination.next_page_url = response.next_page_url;
-                        this.pagination.prev_page = response.prev_page;
-                        this.pagination.prev_page_url = response.prev_page;
-                        this.pagination.to = response.to;
-                        this.pagination.total = response.total;
+                        console.log("Server response:", result);  // Log the full response to inspect the structure
+                        if (result.data && result.data.length > 0) {
+                            const response = result.data[0];  // Assuming it's an array as you were using result.data[0]
 
-                        this.events = response.data;
+                            // Check if response is not undefined and has the expected properties
+                            if (response && response.data) {
+                                this.pagination.per_page = response.per_page || 0;
+                                this.pagination.current_page = response.current_page || 1;
+                                this.pagination.from = response.from || 0;
+                                this.pagination.last_page = response.last_page || 1;
+                                this.pagination.last_page_url = response.last_page_url || '';
+                                this.pagination.next_page_url = response.next_page_url || '';
+                                this.pagination.prev_page = response.prev_page || 1;
+                                this.pagination.prev_page_url = response.prev_page_url || '';
+                                this.pagination.to = response.to || 0;
+                                this.pagination.total = response.total || 0;
 
-                        if (!isPagination) {
-                            if (window.getEvents) {
-                                window.getEvents(result.data[1]);
+                                this.events = response.data;
+                                if (!isPagination) {
+                                    if (window.getEvents) {
+                                        window.getEvents(result.data[1]);
+                                    } else {
+                                        window.eventsToMap = result.data[1];
+                                    }
+                                }
                             } else {
-                                window.eventsToMap = result.data[1];
+                                console.error("Invalid response structure:", response);
+                                this.errors = "Invalid data format from server";
                             }
+                        } else {
+                            console.error("Unexpected response format:", result.data);
+                            this.errors = "Unexpected response format from server";
                         }
                         this.setSelectedCountryToCenterMap();
                         this.isLoading = false;
                     })
                     .catch(error => {
-                        this.errors = error.response.data
-                    })
+                        console.error("Request failed:", error);
+                        this.errors = error.response ? error.response.data : "Unknown error";
+                        this.isLoading = false;
+                    });
             },
             thumbnail: function (event) {
 
