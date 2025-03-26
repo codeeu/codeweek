@@ -40,7 +40,6 @@ class HomeController extends Controller
                 'btn_lang' => 'home.meet_our_community',
             ]
         ]);
-        
         return view('static.home', compact('activities'));
     }
 }
