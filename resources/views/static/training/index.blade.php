@@ -161,13 +161,13 @@
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"
-                            src="/images/webinars/webinar_bg.png"
+                            src="/images/training/training_bg.png"
                             style="clip-path: ellipse(71% 73% at 40% 20%);"
                         />
                         <img
                             class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
                             loading="lazy"
-                            src="/images/webinars/webinar_bg.png"
+                            src="/images/training/training_bg.png"
                             style="clip-path: ellipse(70% 140% at 70% 25%);"
                         />
                     </div>

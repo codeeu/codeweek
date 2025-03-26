@@ -20,7 +20,7 @@
 @section('content')
     <section id="webinars-page" class="font-['Blinker'] overflow-hidden">
         <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-blue-gradient pt-32 pb-0 md:py-20">
+            <div class="flex relative transition-all w-full bg-blue-gradient pt-32 pb-0 md:py-28">
                 <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
@@ -38,11 +38,7 @@
                             </span>
 
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
-                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />
-                            </button>
-                        </div>
+                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                         <img
                                 class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                                 loading="lazy"

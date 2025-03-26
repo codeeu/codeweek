@@ -12,7 +12,7 @@
 @section('content')
     <section id="educational-resources" class="font-['Blinker'] overflow-hidden">
         <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-orange-gradient pt-60 pb-0 md:py-12">
+            <div class="flex relative transition-all w-full bg-orange-gradient pt-60 pb-0 md:py-32">
                 <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">

@@ -30,11 +30,7 @@
                                 A collection of activities that you can do on your own, in the classroom, with colleagues or friends.
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
-                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />
-                            </button>
-                        </div>
+                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"

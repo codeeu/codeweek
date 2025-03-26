@@ -34,12 +34,7 @@
                                 @lang('snippets.'.$section.'_1')
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            @include('layout.video-player', [
-                                'id' => 'learn-and-teach-hero',
-                                'src' => '',
-                            ])
-                        </div>
+                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"

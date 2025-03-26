@@ -1,6 +1,6 @@
 <section class="relative z-10">
-    <div class="codeweek-container-lg py-20">
-        <div class="grid grid-cols-1 tablet:grid-cols-2 gap-32">
+    <div class="codeweek-container-lg py-10 tablet:py-20">
+        <div class="grid grid-cols-1 tablet:grid-cols-2 gap-10 tablet:gap-32">
             <div class="flex flex-col justify-center">
                 <div class="bg-[#F4F6FA] p-6 rounded-xl">
                     <p class="text-slate-500 font-semibold text-lg p-0 mb-2">

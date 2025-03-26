@@ -1,7 +1,7 @@
 <div class="rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ route('podcast', $podcast) }}'">
     <div class="relative">
         <img alt="Placeholder" class="block w-full rounded" src="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/{{$podcast->image}}" />
-        <span class="bg-white rounded-full w-12 h-12 flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <span class="bg-white hover:bg-primary duration-300 rounded-full w-12 h-12 flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <img class="w-6 ml-1" src="/images/fi_play.svg" />
         </span>
         @if($podcast->time)
