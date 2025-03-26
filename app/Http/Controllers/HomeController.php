@@ -26,7 +26,7 @@ class HomeController extends Controller
                 'btn_lang' => 'home.get_involved',
             ],
             [
-                'title' => 'October 11-26',
+                'title' => 'October 11-26  ',
                 'description' => __('home.when_text'),
                 'url' => '/guide',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
