@@ -1,13 +1,5 @@
 <?php
 
-/**
- * @Author: Bernard Hanna
- * @Date:   2025-03-20 10:42:36
- * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2025-03-20 16:15:24
- */
-
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
