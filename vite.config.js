@@ -4,8 +4,25 @@ import vue from '@vitejs/plugin-vue';
 import i18n from 'laravel-vue-i18n/vite';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
+import fs from 'fs';
+import path from 'path';
 
 export default defineConfig({
+    server: {
+        host: 'codeweek.europa',
+        port: 5173,
+        https: {
+            key: fs.readFileSync(path.resolve(
+                process.env.HOME, '.config/valet/Certificates/codeweek.europa.key'
+            )),
+            cert: fs.readFileSync(path.resolve(
+                process.env.HOME, '.config/valet/Certificates/codeweek.europa.crt'
+            )),
+        },
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+        }
+    },
     plugins: [
         vue({
             template: {
@@ -27,10 +44,7 @@ export default defineConfig({
     ],
     css: {
         postcss: {
-            plugins: [
-                tailwindcss,  // Add Tailwind here
-                autoprefixer, // Add Autoprefixer here
-            ],
+            plugins: [tailwindcss, autoprefixer],
         },
     },
     resolve: {
