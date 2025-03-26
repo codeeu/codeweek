@@ -198,11 +198,7 @@
                                 A collection of short videos, do-it-yourself materials, puzzles, games, and coding challenges for everyday use in the family as well as at school.
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
-                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />
-                            </button>
-                        </div>
+                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"
@@ -224,7 +220,7 @@
             <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        Coding@home optional section
+                        Coding@home
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
                         EU Code Week’s Coding@Home series builds on the <a class="text-dark-blue underline" href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> initiative of the University of Urbino and the CodeMOOCnet Association in cooperation with Rai Cultura. The author of Coding@Home video is Alessandro Bogliolo, a Professor of Information Processing Systems at the University of Urbino, an <a class="text-dark-blue underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italian EU Code Week ambassador</a> and the coordinator of all ambassadors as well as a member of the Governing Board of the Digital Skills and Jobs Coalition.

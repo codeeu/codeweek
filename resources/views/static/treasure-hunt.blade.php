@@ -28,11 +28,7 @@
                                 This challenge has been written by Kristina Slišurić and is part of the EU CODE WEEK CHALLENGES
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
-                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />
-                            </button>
-                        </div>
+                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"
@@ -156,11 +152,11 @@
                         <p class="text-white font-normal leading-7 text-base tablet:text-xl p-0 mb-6">
                             Can’t wait to start coding? If you would like to join the EU Code Week community but don't know where to start, take a look at these resources that will help get you started, just in time for our annual celebration in October.
                         </p>
-                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl" href="https://blog.codeweek.eu/getting-started-with-eu-code-week/">@lang('cw2020.get-involved.content.0')</a></div>
-                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl" href="{{route("guide")}}">@lang('cw2020.get-involved.content.1')</a></div>
-                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl" href="{{route("training.index")}}">@lang('cw2020.get-involved.content.2')</a></div>
-                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl" href="https://bit.ly/DEEPDIVE2020">@lang('cw2020.get-involved.content.3')</a></div>
-                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl" href="{{route("coding@home")}}">@lang('cw2020.get-involved.content.4')</a></div>
+                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="https://blog.codeweek.eu/getting-started-with-eu-code-week/">@lang('cw2020.get-involved.content.0')</a></div>
+                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="{{route("guide")}}">@lang('cw2020.get-involved.content.1')</a></div>
+                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="{{route("training.index")}}">@lang('cw2020.get-involved.content.2')</a></div>
+                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="https://bit.ly/DEEPDIVE2020">@lang('cw2020.get-involved.content.3')</a></div>
+                        <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="{{route("coding@home")}}">@lang('cw2020.get-involved.content.4')</a></div>
                     </div>
                 </div>
             </div>
