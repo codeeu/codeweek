@@ -179,7 +179,7 @@
                 axios.post(url, this.$data)
                     .then(result => {
                         const response = result.data;
-                        console.log("🔥 Full response", response);
+                        console.log("🔥 Full response:", response);
 
                         let eventsData, mapData;
 
@@ -209,16 +209,26 @@
                         this.pagination.to = eventsData.to;
                         this.pagination.total = eventsData.total;
 
-                        // Set events
-                        this.events = eventsData.data;
+                        // Ensure data is an array, even if returned as an object
+                        if (eventsData.data) {
+                            this.events = Array.isArray(eventsData.data)
+                                ? eventsData.data
+                                : Object.values(eventsData.data);
+                        } else {
+                            this.events = [];
+                        }
+
+                        console.log("✅ Events loaded:", this.events.length);
 
                         // Set map data (only on non-pagination call)
-                        if (!isPagination) {
+                        if (!isPagination && mapData) {
                             if (window.getEvents) {
                                 window.getEvents(mapData);
                             } else {
                                 window.eventsToMap = mapData;
                             }
+                        } else if (!mapData) {
+                            console.warn("⚠️ mapData is null, skipping map update");
                         }
 
                         this.setSelectedCountryToCenterMap();
