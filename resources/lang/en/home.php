@@ -38,6 +38,11 @@ return [
     'resouce_description' => 'If you are not sure how to organise an activity, visit our teaching resources page and learning bits training materials for guidance and tailored lesson plans.',
     'resouce_button1' => 'Access resources',
     'resouce_button2' => 'Access trainings',
+    
     'get_involved' => 'Get involved',
-    'meet_our_community' => 'Meet our community'
+    'meet_our_community' => 'Meet our community',
+    'banner1_title' => 'Girls in Digital',
+    'banner1_description' => 'Explore and embrace digital opportunities—empowering a new generation of girls in digital!',
+    'banner2_title' => 'Our Code Week Family',
+    'banner2_description' => 'Discover our vibrant network of ambassadors, teachers, students and hubs—each contributing to our shared passion for digital education.'
 ];
