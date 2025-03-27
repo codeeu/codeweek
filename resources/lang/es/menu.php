@@ -15,7 +15,11 @@ return [
 
     'learn' => 'Aprender',
     'teach' => 'Enseñar',
-    'training' => 'Formación', 'toolkits' => 'Presentaciones y paquetes de herramientas', 'why' => '¿POR QUÉ', 'home' => 'Inicio',
+    'training' => 'Formación', 
+    'toolkits' => 'Presentaciones y paquetes de herramientas', 
+    'why' => '¿POR QUÉ', 
+    'home' => 'Inicio',
+    'search_result' => 'Resultados de Búsqueda',
     'events' => 'Actividades',
     'ambassadors' => 'Embajadores',
     'resources' => 'Recursos',
@@ -40,4 +44,11 @@ return [
     'participation' => 'Certificado de participación',
     'values' => 'Nuestros valores',
     'featured_activities' => 'Actividades destacadas',
-    'codeweek2020' => 'Edición 2020'];
+    'codeweek2020' => 'Edición 2020',
+    'register_activity' => 'Registro de Actividad',
+    'select_language' => 'Seleccionar idioma',
+    'search_site' => 'Buscar en el sitio',
+    'what_you_looking_for' => '¿Qué estás buscando?',
+    'type_to_search' => 'Escribe para buscar...',
+    'search' => 'Búsqueda',
+];
