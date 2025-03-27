@@ -57,7 +57,7 @@
             </div>
         </section>
 
-        @include('2021._podcast_full', ['podcast' => $podcast, 'bg' => 'bg-gray-300'])
+        @include('2021._podcast_full', ['podcast' => $podcast, 'latest_podcasts' => $latest_podcasts, 'bg' => 'bg-gray-300'])
     </section>
 @endsection
 

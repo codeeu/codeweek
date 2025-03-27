@@ -225,7 +225,7 @@
                     <h2 class="text-dark-blue text-3xl md:text-4xl md:leading-[44px] font-medium font-['Montserrat']">
                         {{ $item['first_name'] }} {{ $item['last_name'] }}
                     </h2>
-                    <img class="w-12 h-[30px] shadow-lg rounded" src="/images/flags/{{ $item['country'] }}-flag.gif" />
+                    <img class="w-12 shadow-lg rounded" src="/images/flags/{{ $item['country'] }}-flag.gif" />
                 </div>
                 <p class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0 mb-6">{{ $item['role'] }}</p>
                 <div class="flex flex-col tablet:flex-row gap-6 xl:gap-12">

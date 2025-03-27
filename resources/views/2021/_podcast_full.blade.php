@@ -48,17 +48,17 @@
             <div class="absolute left-0 top-0 bottom-0 w-48 bg-yellow-transparent-gradient z-[8]"></div>
             <div class="absolute right-0 top-0 bottom-0 w-48 bg-yellow-transparent-opposite-gradient z-[8]"></div>
             <div class="slick-slider relative">
-                @foreach($podcast->guests as $guest)
+                @foreach($latest_podcasts as $podcast)
                     <div class="leading-normal mx-5">
-                        <div class="rounded-lg bg-white overflow-hidden">
+                        <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('podcast', $podcast) }}'">
                             <div class="relative">
-                                <img alt="Placeholder" class="block w-full rounded" src="{{$guest->image_path}}" />
-                                <a href="/" class="bg-white rounded-full w-12 h-12 flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <img alt="Placeholder" class="block w-full rounded" src="{{$podcast->image}}" />
+                                <span class="bg-white group-hover:bg-primary duration-300 rounded-full w-12 h-12 flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <img class="w-6 ml-1" src="/images/fi_play.svg" />
-                                </a>
+                                </span>
                             </div>
                             <div class="px-6 py-8">
-                                <a href="/" class="text-dark-blue text-center text-lg p-0 font-semibold mb-2 font-['Montserrat'] block">{{$guest->name}}</a>
+                                <a href="/" class="text-dark-blue text-center text-lg p-0 font-semibold mb-2 font-['Montserrat'] block">{{$podcast->title}}</a>
                             </div>
                         </div>
                     </div>
