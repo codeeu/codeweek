@@ -10,6 +10,7 @@
             'id' => '1',
             'first_name' => 'Anny',
             'last_name' => 'Tubbs',
+            'slug' => 'anny-tubbs',
             'role' => 'Multimedia producer at First Move Productions',
             'image' => '/images/dream-jobs/anny-tubbs.png',
             'country' => 'be'
@@ -18,6 +19,7 @@
             'id' => '2',
             'first_name' => 'Magda',
             'last_name' => 'Vanzetto',
+            'slug' => 'magda-vanzetto',
             'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
             'image' => '/images/dream-jobs/magda-vanzetto.png',
             'country' => 'sz'
@@ -26,6 +28,7 @@
             'id' => '3',
             'first_name' => 'Roxana',
             'last_name' => 'Freusse',
+            'slug' => 'roxana-freusse',
             'role' => 'Team Lead Cloud Solutions & DevOps, Scrum Master at Siemens',
             'image' => '/images/dream-jobs/roxana-freusse.png',
             'country' => 'sz'
@@ -34,6 +37,7 @@
             'id' => '4',
             'first_name' => 'Vasileios',
             'last_name' => 'Linardos',
+            'slug' => 'vasileios-linardos',
             'role' => 'Head of AI at ARCHEIOTHIKI SA',
             'image' => '/images/dream-jobs/vasileios-linardos.png',
             'country' => 'gr'
@@ -42,6 +46,7 @@
             'id' => '5',
             'first_name' => 'Carole',
             'last_name' => 'Colley',
+            'slug' => 'carole-colley',
             'role' => 'Bid & Proposal Management at Avanade',
             'image' => '/images/dream-jobs/carole-colley.png',
             'country' => 'fr'
@@ -50,6 +55,7 @@
             'id' => '6',
             'first_name' => 'Christina',
             'last_name' => 'Kiamili',
+            'slug' => 'christina-kiamili',
             'role' => 'Digital Portfolio Manager at Siemens',
             'image' => '/images/dream-jobs/christina-kiamili.png',
             'country' => 'sz'
@@ -58,6 +64,7 @@
             'id' => '7',
             'first_name' => 'Devon',
             'last_name' => 'Young',
+            'slug' => 'devon-young',
             'role' => 'UX Design at Avanade',
             'image' => '/images/dream-jobs/devon-young.png',
             'country' => 'uk'
@@ -66,6 +73,7 @@
             'id' => '9',
             'first_name' => 'Paula',
             'last_name' => 'Panarra',
+            'slug' => 'paula-panarra',
             'role' => 'General Manager at Avanade UK & Ireland',
             'image' => '/images/dream-jobs/paula-panarra.png',
             'country' => 'sp'
@@ -74,6 +82,7 @@
             'id' => '10',
             'first_name' => 'Ribka',
             'last_name' => 'Balakrishnan',
+            'slug' => 'ribka-balakrishnan',
             'role' => 'Mechanical Design Engineer at WSAudiology',
             'image' => '/images/dream-jobs/ribka-balakrishnan.png',
             'country' => 'da'
@@ -82,6 +91,7 @@
             'id' => '11',
             'first_name' => 'Jeevantika',
             'last_name' => 'Lingalwar',
+            'slug' => 'jeevantika-lingalwar',
             'role' => 'Cloud Solution Architect at Microsoft',
             'image' => '/images/dream-jobs/jeevantika-lingalwar.png',
             'country' => 'ei'
@@ -90,6 +100,7 @@
             'id' => '12',
             'first_name' => 'Dominik',
             'last_name' => 'Bolerác',
+            'slug' => 'dominik-bolerác',
             'role' => 'Application Developer at Zurich Insurance Company',
             'image' => '/images/dream-jobs/dominik-bolerác.png',
             'country' => 'lo'
@@ -98,6 +109,7 @@
             'id' => '13',
             'first_name' => 'Sara',
             'last_name' => 'Mathews',
+            'slug' => 'sara-mathews',
             'role' => 'Group Responsible AI Manager at The Adecco Group',
             'image' => '/images/dream-jobs/sara-mathews.png',
             'country' => 'gm'
@@ -106,6 +118,7 @@
             'id' => '14',
             'first_name' => 'Paraskevi',
             'last_name' => 'Nomikou',
+            'slug' => 'paraskevi-nomikou',
             'role' => 'Marine Geologist and an Assistant Professor at the Department of Geology and Geoenvironment at the National and Kapodistrian University of Athens',
             'image' => '/images/dream-jobs/paraskevi-nomikou.png',
             'country' => 'gr'
@@ -226,7 +239,7 @@
                                     class="block w-32 h-32 object-cover object-center rounded-lg"
                                     src="{{ $result['image'] }}"
                                 />
-                                <img class="absolute w-[26px] h-auto object-center bottom-2.5 right-2.5 shadow-lg rounded-sm" src="/images/flags/{{ $result['country'] }}-flag.gif" />
+                                <img class="absolute w-[26px] h-auto object-center bottom-2.5 right-2.5 shadow-lg rounded-sm" src="/images/flags/{{ $result['country'] }}-flag.svg" />
                             </div>
                             <div class="flex flex-1 flex-col justify-between h-full">
                                 <div class="flex-grow">
@@ -236,7 +249,7 @@
 
                                 <a
                                     class="hidden sm:flex text-nowrap justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                    href="{{route('dream-jobs-in-digital-role', $result['id'])}}"
+                                    href="{{route('dream-jobs-in-digital-role', $result['slug'])}}"
                                 >
                                     <span>@lang('dream-jobs-in-digital.more_about') {{ $result['first_name'] }}</span>
                                     <div class="flex gap-2 w-4 overflow-hidden">
