@@ -310,7 +310,7 @@
 
       <div class="bg-yellow-50">
         <div class="relative z-10 codeweek-container">
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10">
             <template v-for="resource in resources" :key="resource.id">
               <resource-card :resource="resource"></resource-card>
             </template>

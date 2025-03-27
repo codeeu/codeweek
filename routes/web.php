@@ -674,7 +674,7 @@ Route::get(
 )->name('leading-teachers-document');
 
 Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
-Route::get('podcast/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
+Route::get('podcasts/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
 
 Route::get('/unsubscribe/{email}/{magic}', [UnsubscribeController::class, 'index'])->name('unsubscribe');
 

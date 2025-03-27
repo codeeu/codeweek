@@ -220,16 +220,16 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 lg:gap-8">
                     @foreach($sortedResults as $result)
                         <div class="p-4 rounded-2xl border-2 border-solid border-[#A4B8D9] flex flex-col gap-4 md:gap-8 bg-white">
-                        <div class="flex flex-1 gap-4 md:gap-8">
-                            <div class="relative">
+                        <div class="flex flex-1 items-start gap-4 md:gap-8">
+                            <div class="relative w-32 flex-shrink-0">
                                 <img
-                                    class="w-32 h-full object-cover object-center rounded-lg"
+                                    class="block w-32 h-32 object-cover object-center rounded-lg"
                                     src="{{ $result['image'] }}"
                                 />
-                                <img class="absolute w-[26px] h-[16px] object-center bottom-2.5 right-2.5 shadow-lg rounded-sm" src="/images/flags/{{ $result['country'] }}-flag.gif" />
+                                <img class="absolute w-[26px] h-auto object-center bottom-2.5 right-2.5 shadow-lg rounded-sm" src="/images/flags/{{ $result['country'] }}-flag.gif" />
                             </div>
-                            <div class="flex flex-1 flex-col justify-between">
-                                <div>
+                            <div class="flex flex-1 flex-col justify-between h-full">
+                                <div class="flex-grow">
                                     <p class="p-0 font-medium text-dark-blue text-[22px] lg:text-xl font-['Montserrat']">{{ $result['first_name'] }} {{ $result['last_name'] }}</p>
                                     <p class="p-0 font-medium text-[#333E48] text-lg mb-4 font-['Montserrat'] lg:line-clamp-2">{{ $result['role'] }}</p>
                                 </div>
