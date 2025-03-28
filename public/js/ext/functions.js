@@ -1538,6 +1538,7 @@ var SEMICOLON = SEMICOLON || {};
             SEMICOLON.widget.textRotater();
             SEMICOLON.widget.linkScroll();
             SEMICOLON.widget.extras();
+            SEMICOLON.widget.loadPodcastDetailSlider();
 
         },
 
@@ -2033,6 +2034,33 @@ var SEMICOLON = SEMICOLON || {};
                     }
                 });
             }
+        },
+
+        loadPodcastDetailSlider: function() {
+            $('.slick-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '20px',
+                dots: false,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            centerPadding: '10px',
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            centerPadding: '5px',
+                        }
+                    }
+                ]
+            });
         },
 
         dribbbleShots: function(){

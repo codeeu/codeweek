@@ -122,6 +122,14 @@ Route::get('/girls-in-digital-week', [StaticPageController::class, 'static'])->n
     'girls-in-digital-week'
 );
 
+Route::get('/educational-resources', [StaticPageController::class, 'static'])->name(
+    'educational-resources'
+);
+
+Route::get('/webinars', [StaticPageController::class, 'static'])->name(
+    'webinars'
+);
+
 Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name(
     'remote-teaching'
 );
@@ -666,7 +674,7 @@ Route::get(
 )->name('leading-teachers-document');
 
 Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
-Route::get('podcast/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
+Route::get('podcasts/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
 
 Route::get('/unsubscribe/{email}/{magic}', [UnsubscribeController::class, 'index'])->name('unsubscribe');
 
