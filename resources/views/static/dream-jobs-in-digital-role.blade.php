@@ -1,13 +1,14 @@
 @extends('layout.new_base')
 
 @php
-    $id = request()->segment(2);
+    $slug = request()->segment(2);
 
     $results = [
         [
             'id' => '1',
             'first_name' => 'Anny',
             'last_name' => 'Tubbs',
+            'slug' => 'anny-tubbs',
             'role' => 'Multimedia producer at First Move Productions',
             'image' => '/images/dream-jobs/anny-tubbs.png',
             'description1' => "Anny Tubbs' professional path began in law and evolved into multinational leadership roles, where she was tasked with delivering large-scale change in complex matrix organisations. Her focus grew from antitrust matters and sales to anti-corruption and the full spectrum of business ethics. This taught her the importance of thoughtful communication and outreach.",
@@ -21,6 +22,7 @@
             'id' => '2',
             'first_name' => 'Magda',
             'last_name' => 'Vanzetto',
+            'slug' => 'magda-vanzetto',
             'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
             'image' => '/images/dream-jobs/magda-vanzetto.png',
             'description1' => "Magda Vanzetto is the Head of Energy Engineers at Siemens Smart Infrastructure in Sustainability Technical Unit. ",
@@ -34,6 +36,7 @@
             'id' => '3',
             'first_name' => 'Roxana',
             'last_name' => 'Freusse',
+            'slug' => 'roxana-freusse',
             'role' => 'Team Lead Cloud Solutions & DevOps, Scrum Master at Siemens',
             'image' => '/images/dream-jobs/roxana-freusse.png',
             'description1' => "Roxana Freusse is the Team Lead for Cloud Solutions & DevOps and a Scrum Master at Siemens. With extensive experience in cloud technologies and agile methodologies, she excels in leading cross-functional teams to deliver innovative solutions. ",
@@ -47,6 +50,7 @@
             'id' => '4',
             'first_name' => 'Vasileios',
             'last_name' => 'Linardos',
+            'slug' => 'vasileios-linardos',
             'role' => 'Head of AI at ARCHEIOTHIKI SA',
             'image' => '/images/dream-jobs/vasileios-linardos.png',
             'description1' => "Vasileios Linardos is Head of AI at Archeiothiki SA and a PhDc at the International Hellenic University in Thessaloniki, Greece, where he focuses on developing AI tools and methodologies for disaster management. ",
@@ -60,6 +64,7 @@
             'id' => '5',
             'first_name' => 'Carole',
             'last_name' => 'Colley',
+            'slug' => 'carole-colley',
             'role' => 'Bid & Proposal Management at Avanade',
             'image' => '/images/dream-jobs/carole-colley.png',
             'description1' => "Carole Colley has accumulated over 15 years of experience in IT. Carole's journey into digital transformation has been marked by significant milestones. As a functional consultant, project manager and bid manager (pre-sales), Carole has successfully navigated complex projects and contributed to the growth of the organizations she has worked with.",
@@ -73,6 +78,7 @@
             'id' => '6',
             'first_name' => 'Christina',
             'last_name' => 'Kiamili',
+            'slug' => 'christina-kiamili',
             'role' => 'Digital Portfolio Manager at Siemens',
             'image' => '/images/dream-jobs/christina-kiamili.png',
             'description1' => "Christina Kiamili is the Digital Portfolio Manager at Siemens.",
@@ -86,6 +92,7 @@
             'id' => '7',
             'first_name' => 'Devon',
             'last_name' => 'Young',
+            'slug' => 'devon-young',
             'role' => 'UX Design at Avanade',
             'image' => '/images/dream-jobs/devon-young.png',
             'description1' => "Devon Young is Senior User Experience Manager at Avanade. She has over 20 years of experience in design, with a recent focus on design operations, strategy, recruiting, and nurturing talent. ",
@@ -99,6 +106,7 @@
             'id' => '9',
             'first_name' => 'Paula',
             'last_name' => 'Panarra',
+            'slug' => 'paula-panarra',
             'role' => 'General Manager at Avanade UK & Ireland',
             'image' => '/images/dream-jobs/paula-panarra.png',
             'description1' => "Paula Panarra is the General Manager at Avanade UK & Ireland. Previously, she served as the Global Business Applications Sales Lead for Retail and Consumer Goods at Microsoft Portugal, where she was the General Director from 2016. In this role, she guided the organization through the digital transformation of the Portuguese economy, empowering people and organizations with technology.",
@@ -112,6 +120,7 @@
             'id' => '10',
             'first_name' => 'Ribka',
             'last_name' => 'Balakrishnan',
+            'slug' => 'ribka-balakrishnan',
             'role' => 'Mechanical Design Engineer at WSAudiology',
             'image' => '/images/dream-jobs/ribka-balakrishnan.png',
             'description1' => "Ribka Balakrishnan is a Mechanical Design Engineer working at WSAudiology. ",
@@ -125,6 +134,7 @@
             'id' => '11',
             'first_name' => 'Jeevantika',
             'last_name' => 'Lingalwar',
+            'slug' => 'jeevantika-lingalwar',
             'role' => 'Cloud Solution Architect at Microsoft',
             'image' => '/images/dream-jobs/jeevantika-lingalwar.png',
             'description1' => "Jeevantika Lingalwar is a Partner Solution Architect at Microsoft, TEDx speaker, and founder of International Women in Tech, leading a community of over 7000 members. ",
@@ -138,6 +148,7 @@
             'id' => '12',
             'first_name' => 'Dominik',
             'last_name' => 'Bolerác',
+            'slug' => 'dominik-bolerác',
             'role' => 'Application Developer at Zurich Insurance Company',
             'image' => '/images/dream-jobs/dominik-bolerác.png',
             'description1' => "Dominik’s professional journey began during his university studies at the international company Zurich Insurance. He participated in a rotational internship program, which allowed students to experience working in various departments within the company – including risk management, actuarial services, and pricing & analytics.",
@@ -151,6 +162,7 @@
             'id' => '13',
             'first_name' => 'Sara',
             'last_name' => 'Mathews',
+            'slug' => 'sara-mathews',
             'role' => 'Group Responsible AI Manager at The Adecco Group',
             'image' => '/images/dream-jobs/sara-mathews.png',
             'description1' => "Sarah Mathews is the Group Responsible AI Manager at The Adecco Group. She is responsible for operationalizing the group’s Responsible AI Principles by establishing governance, guidelines, and change management processes, as well as co-leading the implementation of the AI Act. With a wealth of experience in leading global AI initiatives, she is renowned for her expertise in integrating ethical and inclusive AI practices within the company.",
@@ -164,6 +176,7 @@
             'id' => '14',
             'first_name' => 'Paraskevi',
             'last_name' => 'Nomikou',
+            'slug' => 'paraskevi-nomikou',
             'role' => 'Marine Geologist and an Assistant Professor at the Department of Geology and Geoenvironment at the National and Kapodistrian University of Athens',
             'image' => '/images/dream-jobs/paraskevi-nomikou.png',
             'description1' => "Paraskevi Nomikou is a marine geologist and an Assistant Professor at the Department of Geology and Geoenvironment at the National and Kapodistrian University of Athens, Greece. She specializes in the study of underwater volcanoes and seafloor processes. With extensive experience in marine volcanic activity, she has participated in over 70 oceanographic cruises, focusing on submarine volcanism, mud volcanoes, landslides, and seafloor mineral deposits",
@@ -175,7 +188,7 @@
         ],
     ];
 
-    $item = collect($results)->firstWhere('id', $id);
+    $item = collect($results)->firstWhere('slug', $slug);
 
     $list = [
       (object) ['label' => 'Careers in Digital', 'href' => '/dream-jobs-in-digital'],
@@ -225,7 +238,7 @@
                     <h2 class="text-dark-blue text-3xl md:text-4xl md:leading-[44px] font-medium font-['Montserrat']">
                         {{ $item['first_name'] }} {{ $item['last_name'] }}
                     </h2>
-                    <img class="w-12 shadow-lg rounded" src="/images/flags/{{ $item['country'] }}-flag.gif" />
+                    <img class="shadow-lg rounded w-12 h-9" width="48" src="/images/flags/{{ $item['country'] }}-flag.svg" />
                 </div>
                 <p class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0 mb-6">{{ $item['role'] }}</p>
                 <div class="flex flex-col tablet:flex-row gap-6 xl:gap-12">
