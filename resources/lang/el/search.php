@@ -28,4 +28,25 @@ return [
     'events' => 'εκδηλώσεις',
     'year' => 'έτος',
     'audiences' => 'Κοινό', 'themes' => 'Θέματα', 'countries' => 'Χώρες', 'search_placeholder' => 'Εύρεση με βάση τον τίτλο ή την περιγραφή',
+    'search_banner_title' => 'Βρείτε τι σας εμπνέει',
+    'search_banner_content' => 'Εξερεύνησε μια μεγάλη γκάμα πόρων για Προγραμματισμό, δραστηριότητες και οδηγούς που θα βοηθήσουν το ταξίδι σου στην ψηφιακή δημιουργικότητα και μάθηση.',
+    'search_results_title' => 'Αποτελέσματα Αναζήτησης',
+    'search_input_label' => 'Δείτε τα αποτελέσματα με βάση τις λέξεις-κλειδιά σας παρακάτω:',
+    'search_input_placeholder' => 'Αναζήτησης...',
+    'results' => 'Αποτελέσματα',
+    'no_results' => 'Δεν βρέθηκαν αποτελέσματα.',
+    'search_categories' => [
+        'all' => 'Όλα',
+        'podcasts' => 'Podcasts',
+        'hackathons' => 'Hackathons',
+        'online_courses' => 'Διαδικτυακά Μαθήματα',
+        'training' => 'Εκπαίδευση',
+        'challenges' => 'Προκλήσεις',
+        'learn' => 'Μάθε',
+        'teach' => 'Τεχνολογία',
+        'presentations_and_toolkits' => 'Παρουσιάσεις και Εργαλεία',
+        'activities' => 'Δραστηριότητες',
+        'blogs' => 'Blogs',
+        'others' => 'Άλλα'
+    ]
 ];
