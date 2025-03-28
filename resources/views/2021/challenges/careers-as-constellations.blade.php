@@ -28,7 +28,7 @@
                                 @lang("challenges-content.$slug.title")
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
-                                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
+                                @lang('challenges-content.careers-as-constellations.authorcontent')
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
@@ -66,7 +66,7 @@
                         <div class="bg-white p-6 rounded-lg">
                             <p class="font-normal text-2xl p-0 mb-4">@lang('challenges-content.careers-as-constellations.name-of-org')</p>
                             <ol class="list-decimal ml-4">
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">Hello Ruby?</li>
+                                <li class="text-slate-500 p-0 text-default font-normal leading-7">Linda Liukas</li>
                             </ol>
                         </div>
                         <div class="bg-white p-6 rounded-lg">
@@ -171,14 +171,14 @@
 
                             <p class="font-semibold text-2xl p-0 mb-2">@lang('challenges-content.careers-as-constellations.step-by-step-instructions')</p>
                             <p class="font-semibold text-default md:text-xl p-0 text-slate-500 mb-2">
-                                @lang('challenges-content.careers-as-constellations.title.one')
+                                @lang('challenges-content.careers-as-constellations.titles.one')
                             </p>
                             <div class="font-normal text-default md:text-xl p-0 text-slate-500">
                                 @lang('challenges-content.careers-as-constellations.intro')
                             </div>
 
                             <p class="font-semibold text-default md:text-xl p-0 text-slate-500 my-2">
-                                @lang('challenges-content.careers-as-constellations.title.two')
+                                @lang('challenges-content.careers-as-constellations.titles.two')
                             </p>
                             <div class="font-normal text-default md:text-xl p-0 text-slate-500">
                                 @lang("challenges-content.careers-as-constellations.content.one")
@@ -197,7 +197,7 @@
                             </ol>
 
                             <p class="font-semibold text-default md:text-xl p-0 text-slate-500 my-2">
-                                @lang('challenges-content.careers-as-constellations.title.three')
+                                @lang('challenges-content.careers-as-constellations.titles.three')
                             </p>
                             <ol class="list-decimal ml-4">
                                 <li class="font-normal text-default md:text-xl p-0 text-slate-500">
@@ -211,7 +211,7 @@
                                 </li>
                             </ol>
                             <p class="font-semibold text-default md:text-xl p-0 text-slate-500 my-2">
-                                @lang('challenges-content.careers-as-constellations.title.four')
+                                @lang('challenges-content.careers-as-constellations.titles.four')
                             </p>
                             <ol class="list-decimal ml-4">
                                 <li class="font-normal text-default md:text-xl p-0 text-slate-500">
@@ -236,7 +236,7 @@
                                 </li>
                             </ol>
                             <p class="font-semibold text-default md:text-xl p-0 text-slate-500 my-2">
-                                @lang('challenges-content.careers-as-constellations.title.five')
+                                @lang('challenges-content.careers-as-constellations.titles.five')
                             </p>
                             <ol class="list-decimal ml-4">
                                 <li class="font-normal text-default md:text-xl p-0 text-slate-500">

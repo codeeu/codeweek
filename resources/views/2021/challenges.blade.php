@@ -79,6 +79,7 @@
             <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(198% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
                 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
+                    @include('2021._thumbnail', ['slug' => 'careers-as-constellations', 'author'=>'Linda Liukas'])
                     @include('2021._thumbnail', ['slug' => 'air-drawing-with-AI', 'author'=>'Kristina Slišurić'])
 
                     @include('2021._thumbnail', ['slug' => 'coding-with-legoboost', 'author'=>'Lidia Ristea'])

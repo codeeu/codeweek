@@ -3,7 +3,8 @@
 return [
     'careers-as-constellations' => [
         'title' => 'Careers as constellations',
-        'author' => 'EU Code Week Team',
+        'authorcontent' => 'This challenge and competition is the initiative of Linda Liukas author, illustrator and entrepreneur in connection with the Code4Europe partnership´s Girls in Digital Campaign 2025 #Webinar 1 livestreamed on Youtube: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">How Code, Creativity and Curiosity form a Career?</a>',
+        'author' => 'Linda Liukas',
         'start-date' => 'Start date',
         'activity-type' => 'Activity type',
         'open-online-activity' => 'Open online activity',
@@ -55,7 +56,7 @@ return [
         ],
         'intro' => '<p>Start by challenging traditional career ideas with a question:</p>
          <p  class="my-8 italic">Do you think careers should follow a straight path?</p>
-         <p> Introduce the idea that successful careers are often built from unexpected connections.</p>',
+         <p> Introduce the idea that successful careers are often built from unexpected connections.</p><p>Watch together the talk by Linda Liukas where she shares her own career path in technology</p>',
         'content' => [
             'one' => '<p>Each student fills out the Careers as Constellations worksheet, adding:</p>',
             'two' => 'Personal interests (hobbies, skills, favorite activities)',
@@ -72,7 +73,8 @@ return [
             'thirteen' => 'How could technology shape your future in unexpected ways?',
             'fourteen' => 'Digital Challenge: Have students create a digital version of their constellation using Miro, Canva, or Google Jamboard and present their findings.',
             'fifteen' => 'Research Task: Students research a person in tech whose career followed a surprising path, map their constellation and share their story.',
-            '16' => '<a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">Download</a> the activity as PDF file',
+            '16' => 'Download the <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">Template</a> for the activity',
+            '17' => 'OBS! REMEMBER TO ADD YOUR ACTIVITY AND UPLOAD IT <a href="/add">HERE!</a>',
         ],
     ],
     'chatbot' => [
