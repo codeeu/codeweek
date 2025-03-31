@@ -117,7 +117,7 @@
                             
                             @php
                                 $backgroundImages = [
-                                    asset('images/search/search_bg_lg_1.jpeg'),
+                                    asset('images/dream-jobs/dream_jobs_bg.png'),
                                     asset('images/homepage/slide1.png'),
                                     asset('images/search/search_bg_lg_2.jpeg'),
                                 ];
@@ -201,15 +201,15 @@
             <div
                 class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center py-16 md:py-[186px] gap-12">
                 <div class="flex-1">
-                    <img loading="lazy" src="/images/homepage/minecraftlogo.png" />
-                    <p class="text-left text-lg md:text-2xl md:leading-8 text-[#20262C] p-0 mb-6">
+                    <img loading="lazy" src="/images/dream-jobs/dream_jobs_logo.svg" />
+                    <p class="text-left text-lg md:text-2xl md:leading-8 text-[#20262C] p-0 my-6">
                         @lang('home.minecraft_description1')
                     </p>
                     <p class="text-[16px] md:text-lg text-[#333E48] p-0 mb-8">
                         @lang('home.minecraft_description2')
                     </p>
                     <a class="inline-flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#FFEF99] group"
-                        href="https://www.codeweekcoders.eu/">
+                        href="{{route('dream-jobs-in-digital')}}">
                         <span>@lang('home.minecraft_button')</span>
                         <div class="flex w-4 gap-2 overflow-hidden">
                             <img src="/images/arrow-right-icon.svg"
@@ -221,7 +221,7 @@
                 </div>
                 <div class="flex-1 observer-element">
                     <img class="duration-700 animation-element fade-scale-right" loading="lazy"
-                        src="/images/homepage/minecraft1.png" />
+                        src="/images/homepage/dream-job.png" />
                 </div>
             </div>
         </section>
