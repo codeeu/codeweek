@@ -110,7 +110,7 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_learn')}}">@lang('menu.learn')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_teach')}}">@lang('menu.teach')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
                             </div>
                             <div class="flex-grow flex flex-col gap-4">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
@@ -119,13 +119,17 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
                           </div>
                           <div class="relative flex-grow hidden xl:flex flex-col gap-4 w-60 mb-2">
-                              <img class="w-full h-auto rounded-lg" src="/images/resource-menu-bg.png" alt="">
+                              <img class="w-full h-full rounded-lg object-cover" src="/images/homepage/dream-job.png" alt="">
+                              <div
+                                  class="absolute w-full h-full top-0 left-0"
+                                  style="background: linear-gradient(180deg, rgba(28, 77, 161, 0) 45.36%, #1C4DA1 66.72%);"
+                              ></div>
                               <div class="absolute w-full bottom-0 left-0 p-4">
-                                <div class="text-white text-xl font-semibold mb-1">@lang('menu.girls_in_digital')</div>
+                                <div class="text-white text-xl font-semibold mb-1">@lang('menu.careers_in_digital')</div>
                                 <div class="text-white text-[16px] font-medium mb-2">
-                                    Celebrating diversity through tech innovation and creativity
+                                    Meet our role models and find your dream job
                                 </div>
-                                <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('girls-in-digital-week')}}">
+                                <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('dream-jobs-in-digital')}}">
                                     <span class="text-base leading-7 font-semibold text-black normal-case">
                                         See more
                                     </span>
