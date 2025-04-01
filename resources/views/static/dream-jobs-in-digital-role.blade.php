@@ -23,7 +23,7 @@
             'first_name' => 'Magda',
             'last_name' => 'Vanzetto',
             'slug' => 'magda-vanzetto',
-            'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
+            'role' => 'Head of Energy Engineers at Siemens',
             'image' => '/images/dream-jobs/magda-vanzetto.png',
             'description1' => "Magda Vanzetto is the Head of Energy Engineers at Siemens Smart Infrastructure in Sustainability Technical Unit. ",
             'description2' => "She has been active part in projects aimed at improving energy efficiency and reducing carbon footprint of multiple customers facilities. ",

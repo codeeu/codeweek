@@ -123,15 +123,15 @@
                           <div class="relative flex-grow hidden xl:flex flex-col gap-4 w-60 mb-2">
                               <img class="w-full h-full rounded-lg object-cover" src="/images/resource-menu-bg.png" alt="">
                               <div class="absolute w-full bottom-0 left-0 p-4">
-                                <div class="text-white text-xl font-semibold mb-1">@lang('menu.girls_in_digital')</div>
-                                <div class="text-white text-[16px] font-medium mb-2">
-                                    Celebrating diversity through tech innovation and creativity
-                                </div>
-                                <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('girls-in-digital-week')}}">
+                                  <div class="text-white text-xl font-semibold mb-1">@lang('menu.girls_in_digital')</div>
+                                  <div class="text-white text-[16px] font-medium mb-2">
+                                      Celebrating diversity through tech innovation and creativity
+                                  </div>
+                                  <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('girls-in-digital-week')}}">
                                     <span class="text-base leading-7 font-semibold text-black normal-case">
                                         See more
                                     </span>
-                                </a>
+                                  </a>
                               </div>
                           </div>
                       </li>
