@@ -13,7 +13,7 @@ class HomeController extends Controller
             [
                 'title' => 'home.banner1_title',
                 'description' => 'home.banner1_description',
-                'url' => '/girls-in-digital-week',
+                'url' => '/dream-jobs-in-digital',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
             ],
