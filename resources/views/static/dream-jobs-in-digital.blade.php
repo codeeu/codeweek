@@ -20,7 +20,7 @@
             'first_name' => 'Magda',
             'last_name' => 'Vanzetto',
             'slug' => 'magda-vanzetto',
-            'role' => 'Head of Project Development and Governance, Energy Performance Services at Siemens',
+            'role' => 'Head of Energy Engineers at Siemens',
             'image' => '/images/dream-jobs/magda-vanzetto.png',
             'country' => 'sz'
         ],
