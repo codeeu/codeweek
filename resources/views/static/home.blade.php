@@ -201,7 +201,7 @@
             <div
                 class="relative z-10 codeweek-container-lg flex flex-col md:flex-row items-center py-16 md:py-[186px] gap-12">
                 <div class="flex-1">
-                    <img loading="lazy" src="/images/dream-jobs/dream_jobs_logo.svg" />
+                    <img class="max-w-full" loading="lazy" src="/images/dream-jobs/dream_jobs_logo.svg" />
                     <p class="text-left text-lg md:text-2xl md:leading-8 text-[#20262C] p-0 my-6">
                         @lang('home.minecraft_description1')
                     </p>
