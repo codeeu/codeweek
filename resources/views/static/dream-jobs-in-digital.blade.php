@@ -262,7 +262,7 @@
 
                             <a
                                 class="flex sm:hidden text-nowrap justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                href="/"
+                                href="{{route('dream-jobs-in-digital-role', $result['slug'])}}"
                             >
                                 <span>@lang('dream-jobs-in-digital.more_about') {{ $result['first_name'] }}</span>
                                 <div class="flex gap-2 w-4 overflow-hidden">
