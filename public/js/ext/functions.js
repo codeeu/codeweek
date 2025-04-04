@@ -1538,6 +1538,7 @@ var SEMICOLON = SEMICOLON || {};
             SEMICOLON.widget.textRotater();
             SEMICOLON.widget.linkScroll();
             SEMICOLON.widget.extras();
+            SEMICOLON.widget.loadPodcastDetailSlider();
 
         },
 
@@ -2035,6 +2036,33 @@ var SEMICOLON = SEMICOLON || {};
             }
         },
 
+        loadPodcastDetailSlider: function() {
+            $('.slick-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '20px',
+                dots: false,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            centerPadding: '10px',
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            centerPadding: '5px',
+                        }
+                    }
+                ]
+            });
+        },
+
         dribbbleShots: function(){
             var $dribbbleShotsEl = $('.dribbble-shots');
             if( $dribbbleShotsEl.length > 0 ){
@@ -2210,6 +2238,47 @@ var SEMICOLON = SEMICOLON || {};
               const searchMenu = document.getElementById("search-menu");
               if (searchMenu) searchMenu.style.display = 'none';
             });
+
+            // AUTO STICKY CHALLENGE LEFT COLUMN
+            const handleChallengeLeftColSticky = () => {
+              const startPositionY = 150;
+
+              const leftCol = document.getElementById('challenge-left-col');
+              if (!leftCol) return;
+
+              // Add new wrapper for Left Column
+              const parent = leftCol.parentNode.closest('div');
+              const leftColWrapper = document.createElement('div');
+              leftColWrapper.append(leftCol);
+              parent.insertBefore(leftColWrapper, parent.firstChild);
+
+              const handleStickLeftColumn = () => {
+                // reset all computed css
+                leftColWrapper.style.paddingTop = '';
+                leftCol.style.height = '';
+                leftCol.style.overflow = '';
+
+                if (window.innerWidth < 1024) return;
+
+                // make left Column fit with screen
+                leftCol.style.maxHeight = `calc(100dvh - ${startPositionY + 20}px)`;
+                leftCol.style.overflow = 'auto';
+
+                // compute padding top for wrapper
+                const wrapperTop = leftColWrapper.getBoundingClientRect().top;
+                const maxPaddingTop = Math.max(parent.clientHeight - leftCol.clientHeight, 0);
+
+                let paddingTop = Math.abs(Math.min(wrapperTop - startPositionY, 0));
+                paddingTop = Math.min(paddingTop, maxPaddingTop);
+
+                leftColWrapper.style.paddingTop = `${paddingTop}px`;
+              }
+
+              handleStickLeftColumn();
+              document.addEventListener('scroll', handleStickLeftColumn);
+              window.addEventListener('resize', handleStickLeftColumn);
+            };
+            handleChallengeLeftColSticky();
 
             // VIDEO MODAL
             $('#video-modal-trigger-show').click(function() {
