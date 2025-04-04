@@ -23,10 +23,10 @@
                     <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
-                                Podcasts and video Tutorials
+                                Podcasts
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-8 max-md:max-w-full max-w-[525px]">
-                                Tune in for expert insights on coding and digital creativity
+                                Tune in for expert insights on coding and digital creativity!
                             </p>
                             <div class="bg-[#F4F6FA] p-6 md:max-w-[386px] rounded-xl">
                               <p class="text-base text-[#333E48] font-semibold mb-4 p-0">Listen on</p>

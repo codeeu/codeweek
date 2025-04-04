@@ -31,7 +31,7 @@
                                 @lang("challenges-content.$slug.title")
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
-                                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
+                                @lang('challenges.common.written-by.0') <span class="italic">@lang("challenges-content.$slug.author")</span> @lang('challenges.common.written-by.1') <a href="{{route('challenges')}}" class="text-dark-blue underline">@lang('challenges.title')</a>.
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
@@ -59,7 +59,7 @@
         <section class="relative bg-yellow-50">
             <div class="relative py-10 md:py-20 codeweek-container-lg">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-16">
-                    <div class="flex flex-col gap-6">
+                    <div id="challenge-left-col" class="flex flex-col gap-6">
                         <div class="bg-white p-6 rounded-lg flex lg:flex-col 2xl:flex-row flex-wrap gap-4 2xl:gap-8">
                             <div>
                                 <p class="font-normal text-2xl p-0 mb-4">@lang('challenges.common.duration')</p>

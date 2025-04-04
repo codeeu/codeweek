@@ -94,12 +94,12 @@
                             EU Code Week Hackathon 2024
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is Hello, Future! Technical Solutions for a changing world.
+                            EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <span class="font-semibold">Hello, Future! Technical Solutions for a changing world</span>.
                             From October 2024 and March 2025, the EU Code Week 2024 Hackathon invites young innovators, ages 15-19, to join exciting local hackathons. Team up with peers to brainstorm, collaborate and create digital solutions to tackle some of the global challenges!
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
                             To guide organisers in planning and delivering successful hackathons, here is the EU Code Week Hackathons Toolkit. In this Toolkit, you will find step-by-step instructions and tips for creating engaging and impactful events.
-                            All hackathons will take place online via Eventornado. There will be one common online environment for all hackathons.
+                            All hackathons will take place online via <a class="text-dark-blue underline" href="https://eventornado.com/event/eu-codeweek-hackathon2024#home" target="_blank">Eventornado</a>. There will be one common online environment for all hackathons.
                             More details on local hackathons, registrations and hackathon platform are coming soon!
                         </p>
                         <div class="flex flex-col tablet:flex-row lg:flex-col 2xl:flex-row gap-x-2 gap-y-4">

@@ -7,54 +7,63 @@
     ];
 
     $results = [
-         [
+        [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar 2024 - Mix Music and Coding: Discover Music Lab',
-            'description' => 'Explore how Music Lab by Code.org combines coding and music creation, with live demos and insights on integrating it into education.',
-            'date' => '17 October 2024',
+            'title' => 'NuGamers: How to foster gender inclusive gaming education?',
+            'description' => "Explore how to foster gender-inclusive gaming education in this CodeWeek 2025 webinar, addressing gender biases in the gaming industry.",
+            'date' => '24 March 2025 - upcoming 14.00 - 14.50 CET',
             'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=MQ-pbnQ5Vm0',
+            'link' => 'https://events.teams.microsoft.com/event/47c8f739-183d-48a1-acae-de3d28cd3b7d@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
+            'link_type' => 'form'
+        ],
+        [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'Empower, Inspire & Celebrate: Girls in Digital Week 2025',
+            'description' => "Explore Girls in Digital, an EU Code Week initiative empowering young Europeans to embrace STE(A)M fields and drive innovation.",
+            'date' => '18 March 2025 – upcoming from 16.00 - 16.45 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://events.teams.microsoft.com/event/964e1126-8038-43bd-8cae-fa000e261e62@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
+            'link_type' => 'form'
+        ],
+        [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'Beyond Code: Empowering generations of innovators',
+            'description' => "Explore the impact of diversity in STEM and how inclusivity drives innovation, with practical examples and strategies.",
+            'date' => '04 March 2025 – 13.00 - 14.00 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://www.youtube.com/watch?v=cMdu9_BSz4k&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky',
+            'link_type' => 'video'
+        ],
+        [
+            'image' => '/images/webinars/Linda_Liukas.jpg',
+            'title' => 'Code Week Mini Series with Linda Liukas - Charting New Constellations: How Code, Creativity and Curiosity form a Caree',
+            'description' => "Author and educator Linda Liukas explored how tech careers can be creatively built by connecting interests and passions.",
+            'date' => '26 February 2025 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://www.youtube.com/watch?v=52LaQA9342k&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky&index=2',
             'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar 2024 - Exploring the Impact of AI on Teaching Coding',
-            'description' => 'Explore how AI is transforming coding education and pedagogy with expert insights from Lidija Kralj.',
-            'date' => '21 October 2024',
+            'title' => 'From Ideas to Businesses opportunities: Empowering the Next Generation and supporting Innovation in Education with AI',
+            'description' => "Explore AI's role in entrepreneurship education, focusing on guiding students in transforming ideas into sustainable businesses.",
+            'date' => '24 February 2025 – 16.00 - 17.00 CET',
             'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=ziNOVfsckRM&t=126s',
+            'link' => 'https://www.youtube.com/watch?v=COeuznAWLEI',
             'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar 2024 - Hackathons - learning from experience',
-            'description' => 'Get ready for the EU Code Week Hackathon 2024 with expert tips and insights on how to prepare, compete, and succeed in coding challenges.',
-            'date' => '24 October 2024',
+            'title' => 'Thinking in the future: activating students towards innovation',
+            'description' => "This webinar explored Future Thinking and Design Thinking to foster student creativity and innovation.",
+            'date' => '18 February 2025 – 13.00 - 14.00 CET',
             'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=wgLetp-Jgrk',
+            'link' => 'https://www.youtube.com/watch?v=pe-mCuVB-Ro',
             'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week webinar series 2024 - Create a Creature with OctoStudio!',
-            'description' => 'Discover how educators and students can create interactive stories, games, and projects by blending physical crafts with digital coding.',
-            'date' => '2 December 2024',
-            'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=1pxlMRl3wec',
-            'link_type' => 'video'
-        ],
-        [
-            'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week webinar series 2024 – DigiEduHack and the Social Dimension of Hackathons ',
-            'description' => 'Discover how DigiEduHack fosters collaboration, creativity, and problem-solving in digital education.',
-            'date' => '5 February 2025 – 16.30 - 17.00',
-            'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=wMK3pfk2G3U&t=647s',
-            'link_type' => 'video'
-        ],
-        [
-            'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar 2024 - Diversity Drives Solutions: How to Make Your Hackathon Count',
+            'title' => 'Diversity Drives Solutions: How to Make Your Hackathon Count',
             'description' => "Explore Clusity, Belgium's largest women-in-tech community, fostering connection, mentorship, and diversity in tech.",
             'date' => '13 February 2025 – 12.00 - 13.00 CET',
             'label' => 'Past Webinar',
@@ -63,57 +72,48 @@
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar 2024 - Thinking in the future: activating students towards innovation',
-            'description' => "This webinar explored Future Thinking and Design Thinking to foster student creativity and innovation",
-            'date' => '18 February 2025 – 13.00 - 14.00',
+            'title' => 'DigiEduHack and the Social Dimension of Hackathons ',
+            'description' => 'Discover how DigiEduHack fosters collaboration, creativity, and problem-solving in digital education.',
+            'date' => '5 February 2025 – 16.30 - 17.00 CET',
             'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=pe-mCuVB-Ro',
+            'link' => 'https://www.youtube.com/watch?v=wMK3pfk2G3U&t=647s',
             'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar 2024 - From Ideas to Businesses opportunities: Empowering the Next Generation and supporting Innovation in Education with AI',
-            'description' => "Explore AI's role in entrepreneurship education, focusing on guiding students in transforming ideas into sustainable businesses.",
-            'date' => '24 February 2025 – 16.00 - 17.00 CET',
+            'title' => 'Create a Creature with OctoStudio!',
+            'description' => 'Discover how educators and students can create interactive stories, games, and projects by blending physical crafts with digital coding.',
+            'date' => '2 December 2024 CET',
             'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=COeuznAWLEI',
-            'link_type' => 'video'
-        ],
-        [
-            'image' => '/images/webinars/Linda_Liukas.jpg',
-            'title' => 'Code Week Mini Series with Linda Liukas - Charting New Constellations: How Code, Creativity and Curiosity form a Caree',
-            'description' => "Author and educator Linda Liukas explored how tech careers can be creatively built by connecting interests and passions.",
-            'date' => '26 February 2025',
-            'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=52LaQA9342k&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky&index=2',
+            'link' => 'https://www.youtube.com/watch?v=1pxlMRl3wec',
             'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar 2024 - Beyond Code: Empowering generations of innovators',
-            'description' => "Explore the impact of diversity in STEM and how inclusivity drives innovation, with practical examples and strategies.",
-            'date' => '04 March 2025 – 13.00 - 14.00',
+            'title' => 'Hackathons - learning from experience',
+            'description' => 'Get ready for the EU Code Week Hackathon 2024 with expert tips and insights on how to prepare, compete, and succeed in coding challenges.',
+            'date' => '24 October 2024 CET',
             'label' => 'Past Webinar',
-            'link' => 'https://www.youtube.com/watch?v=cMdu9_BSz4k&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky',
+            'link' => 'https://www.youtube.com/watch?v=wgLetp-Jgrk',
             'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week webinar - Empower, Inspire & Celebrate: Girls in Digital Week 2025',
-            'description' => "Explore Girls in Digital, an EU Code Week initiative empowering young Europeans to embrace STE(A)M fields and drive innovation.",
-            'date' => '18 March 2025 – upcoming from 16.00 - 16.45 CET',
-            'label' => 'Coming Soon',
-            'link' => 'https://events.teams.microsoft.com/event/964e1126-8038-43bd-8cae-fa000e261e62@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
-            'link_type' => 'form'
+            'title' => 'Exploring the Impact of AI on Teaching Coding',
+            'description' => 'Explore how AI is transforming coding education and pedagogy with expert insights from Lidija Kralj.',
+            'date' => '21 October 2024 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://www.youtube.com/watch?v=ziNOVfsckRM&t=126s',
+            'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'EU Code Week Webinar - NuGamers: How to foster gender inclusive gaming education?',
-            'description' => "Explore how to foster gender-inclusive gaming education in this CodeWeek 2025 webinar, addressing gender biases in the gaming industry.",
-            'date' => '24 March 2025 - upcoming 14.00 - 14.50 CET',
-            'label' => 'Coming Soon',
-            'link' => 'https://events.teams.microsoft.com/event/47c8f739-183d-48a1-acae-de3d28cd3b7d@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
-            'link_type' => 'form'
+            'title' => 'Mix Music and Coding: Discover Music Lab',
+            'description' => 'Explore how Music Lab by Code.org combines coding and music creation, with live demos and insights on integrating it into education.',
+            'date' => '17 October 2024 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://www.youtube.com/watch?v=MQ-pbnQ5Vm0',
+            'link_type' => 'video'
         ],
     ];
 @endphp

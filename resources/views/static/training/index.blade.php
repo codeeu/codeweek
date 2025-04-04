@@ -179,7 +179,7 @@
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28 flex justify-center">
                 <div class="w-full max-w-[907px] gap-2">
                     <h2 class="text-dark-blue tablet:text-center text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6 tablet:mb-8">
-                        Free training materials and online courses
+                        Quick & Practical Tools for Innovative Lessons
                     </h2>
                     <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-8">
                         Discover the essentials of coding and computational thinking through bite-sized, practical activities designed for educators, students, and anyone eager to explore the digital world. Whether you're new to coding or looking for fresh ideas to integrate into your teaching or training sessions, Learning Bits will spark your imagination and provide a solid starting point.

@@ -81,7 +81,7 @@
         <section class="relative bg-yellow-50">
             <div class="relative py-10 md:py-20 codeweek-container-lg">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-16">
-                    <div class="flex flex-col gap-6">
+                    <div id="challenge-left-col" class="flex flex-col gap-6">
                         <div class="bg-white p-6 rounded-lg flex lg:flex-col 2xl:flex-row flex-wrap gap-4 2xl:gap-8">
                             <div>
                                 <p class="font-normal text-2xl p-0 mb-4">@lang('challenges.common.duration')</p>
