@@ -46,7 +46,7 @@
                     Got free and open educational resources?
                 </h2>
                 <p class="text-slate-500 font-normal leading-7 text-xl p-0 mb-4 w-full md:max-w-[825px] font-['Blinker']">
-                    Share them with the EU Code Week community! Submit your free resources using the form below, and we'll feature them on this page to help others learn, create and grow.
+                    Share them with the EU Code Week community! Submit your free resources using the form below, and we'll feature them on this page to help others learn, create and grow OR tell us what you think! Share your feedback on the existing resources – whether you have suggestions for improvement, compliments, or new ideas, we'd love to hear from you!
                 </p>
                 <div class="flex flex-col md:flex-row gap-4 mb-10 md:mb-16">
                     <a

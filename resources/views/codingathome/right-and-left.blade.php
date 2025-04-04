@@ -7,7 +7,7 @@
 
     <section id="codeweek-codingathome-subpage" class="font-['Blinker'] overflow-hidden">
 
-        @include('codingathome.banner')
+        @include('codingathome.banner', ['title' => __('coding-at-home.right-and-left.title')])
 
         <section class="relative z-10">
             <div class="relative z-10 py-10 md:pt-20 md:pb-10 codeweek-container-lg">

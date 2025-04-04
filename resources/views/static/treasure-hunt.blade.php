@@ -25,7 +25,7 @@
                                 Treasure Hunt
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
-                                This challenge has been written by Kristina Slišurić and is part of the EU CODE WEEK CHALLENGES
+                                Simple yet challenging Telegram game – easy for beginners, engaging for experienced players.
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
@@ -119,7 +119,7 @@
                         </div>
                         <div class="flex-1">
                             <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                                After you complete the game, share your your score with your friends using #EUCodeWeek and challenge them to play and learn about the history of coding too. Let's see who scores the top results!
+                                After you complete the game, share your score with your friends using #EUCodeWeek and challenge them to play and learn about the history of coding too. Let's see who scores the top results!
                             </p>
                         </div>
                     </div>

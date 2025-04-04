@@ -220,13 +220,13 @@
             <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        Coding@home
+                        Coding@Home
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
                         EU Code Week’s Coding@Home series builds on the <a class="text-dark-blue underline" href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> initiative of the University of Urbino and the CodeMOOCnet Association in cooperation with Rai Cultura. The author of Coding@Home video is Alessandro Bogliolo, a Professor of Information Processing Systems at the University of Urbino, an <a class="text-dark-blue underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italian EU Code Week ambassador</a> and the coordinator of all ambassadors as well as a member of the Governing Board of the Digital Skills and Jobs Coalition.
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                        You do not need any previous knowledge or electronic devices to do the activities. The activities will stimulate computational thinking and cultivate the skills of pupils, parents and teachers at home or at school
+                        You do not need any previous knowledge or electronic devices to do the activities. The activities will stimulate computational thinking and cultivate the skills of pupils, parents and teachers at home or at school.
                     </p>
                 </div>
             </div>
@@ -244,7 +244,7 @@
             <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(570% 90% at 38% 90%);"></div>
             <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%);"></div>
             <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(288% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
+            <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(208% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
                 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
                     @foreach($results as $result)
@@ -273,6 +273,9 @@
 {{--                <div class="mt-6 lg:mt-10">--}}
 {{--                    {{ $results->links('vendor.livewire.pagination') }}--}}
 {{--                </div>--}}
+                <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mt-8">
+                    @lang('coding-at-home.texts.3')
+                </p>
             </div>
         </section>
     </section>

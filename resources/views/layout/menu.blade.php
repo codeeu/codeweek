@@ -90,15 +90,17 @@
               <li class="main-menu-item">
                   <a
                       class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
-                      href="javascript:void(null);"
+                      href="{{route('educational-resources')}}"
                   >
                       @lang('menu.resources')
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
                       <li class="menu-title max-xl:hidden">
-                        @lang('menu.resources')
-                        <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
+                          <a class="flex items-center gap-2"  href="{{route('educational-resources')}}">
+                              @lang('menu.resources')
+                              <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
+                          </a>
                       </li>
                       <li class="xl:flex gap-16">
                           <div class="flex-grow flex flex-col gap-4 mb-4 xl:mb-0">

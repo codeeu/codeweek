@@ -321,6 +321,6 @@ return [
                             Weeks “Learning Bits”</a> with video
                         tutorials and lesson plans for primary, lower secondary and upper secondary schools. Also have a look 
                         at the <a href="/resources/learn">EU Code Week Learn&Teach resources</a>, 
-                        where you can find free, high-quality resources from around the world for teachers and students',
+                        where you can find free, high-quality resources from around the world for teachers and students.',
     ],
 ];
