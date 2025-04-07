@@ -1,3 +1,7 @@
+@php
+  $author = $author ?? 'By EUCodeWeek';
+@endphp
+
 <section class="relative flex overflow-hidden">
     <div class="flex relative transition-all w-full bg-orange-gradient pt-32 pb-0 md:py-40">
         <div class="w-full pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
@@ -6,9 +10,11 @@
                     <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                         {{$title}}
                     </h2>
-                    <div class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] leading-[22px]">
-                      #EUCodeWeek
-                  </div>
+                    @if ($author)
+                    <div class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] leading-[22px] max-w-[80%]">
+                        {{$author}}
+                    </div>
+                    @endif
                 </div>
                 <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                 <img
