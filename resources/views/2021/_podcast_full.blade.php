@@ -1,5 +1,5 @@
 <section class="relative z-10">
-    <div class="codeweek-container-lg py-10 tablet:py-20">
+    <div class="codeweek-container-lg py-10 tablet:py-20 relative z-[1]">
         <div class="grid grid-cols-1 tablet:grid-cols-2 gap-10 tablet:gap-32">
             <div class="flex flex-col justify-center">
                 <div class="bg-[#F4F6FA] p-6 rounded-xl">
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div
-        class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-40 w-28 md:w-72 h-28 md:h-72 bg-[#FFEF99] rounded-full hidden lg:block"
+        class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-40 w-28 md:w-64 h-28 md:h-64 xl:w-72 x:h-72 bg-[#FFEF99] rounded-full hidden lg:block"
         style="transform: translate(-16px, -24px)"
     ></div>
     <div
@@ -39,9 +39,9 @@
 </section>
 
 <section class="relative overflow-hidden">
-    <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(570% 90% at 38% 90%);"></div>
-    <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%);"></div>
-    <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(288% 90% at 50% 90%);"></div>
+    <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(130% 90% at 38% 90%);"></div>
+    <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(128% 90% at 50% 90%);"></div>
+    <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(108% 90% at 50% 90%);"></div>
     <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
     <div class="relative pt-20 pb-16 md:pt-52 md:pb-28">
         <div class="relative">
