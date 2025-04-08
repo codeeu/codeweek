@@ -107,13 +107,13 @@
                                 class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                 target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#home"
                             >
-                                Register for Hackathon 2025
+                                Register for Hackathon 2024
                             </a>
                             <a
                                 class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                                 target="_blank" href="/docs/EU_Code_Week_Hackathons_2024 Toolkit_Final.pdf"
                             >
-                                <span>Hackathon 2025 Toolkit</span>
+                                <span>Hackathon 2024 Toolkit</span>
                                 <div class="flex gap-2 w-4 overflow-hidden">
                                     <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                                     <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
