@@ -158,12 +158,12 @@
     </section>
 
     <section class="relative overflow-hidden animation-section bg-[#FFFBE5]">
-        <div class="relative z-10 flex flex-col-reverse items-center gap-12 py-16 codeweek-container-lg md:flex-row">
+        <div class="relative z-10 flex flex-col-reverse items-center gap-12 py-20 codeweek-container-lg md:flex-row">
             <div class="flex-1">
                 <div class="relative inline-block observer-element">
                     <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/2.png" />
-                    <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
-                        loading="lazy" src="/images/shape.png" style="transform: translate(-16px, -24px)" />
+                    <img class="animation-element move-background duration-[1.5s] absolute top-3 left-10 w-full max-w-xl"
+                        loading="lazy" src="/images/shape_pink.png" style="transform: translate(-16px, -24px)" />
                 </div>
             </div>
             <div class="flex-1">
@@ -177,7 +177,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-8 mx-auto mb-12 max-lg:grid-cols-1 codeweek-container-lg max-xl:px-5">
+        <div class="grid grid-cols-2 gap-8 mx-auto mb-20 max-lg:grid-cols-1 codeweek-container-lg max-xl:px-5">
             @forelse ($ambassadors as $ambassador)
                 <div class="relative z-50 flex p-4 bg-transparent border-2 border-solid rounded-2xl border-secondary max-sm:w-full "
                     role="article" aria-labelledby="profile-name">
@@ -247,11 +247,10 @@
             style="transform: translate(-16px, -24px)"></div>
     </section>
     <section class="relative overflow-hidden bg-[#FFFBE5]">
-        <div class="absolute w-full h-full bg-blue-gradient md:hidden"
-            style="clip-path: ellipse(170% 90% at 38% 90%);">
-        </div>
-        <div class="absolute hidden w-full h-full bg-blue-gradient md:block"
-            style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
+        <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
+        <div class="absolute w-full h-full bg-blue-gradient hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
+        <div class="absolute w-full h-full bg-blue-gradient hidden lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
+        <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(118% 90% at 50% 90%);"></div>
         <div
             class="relative z-10 flex flex-col items-center gap-12 pb-16 codeweek-container-lg md:flex-row pt-28 md:pt-48">
             <div class="flex-1">
@@ -354,12 +353,12 @@
         <div class="absolute w-full h-full bg-white md:hidden" style="clip-path: ellipse(100% 58% at 38% 39%)"></div>
         <div class="absolute hidden w-full h-full bg-white md:block" style="clip-path: ellipse(70% 60% at 50% 40%);">
         </div>
-        <div class="relative z-10 flex flex-col items-center gap-12 codeweek-container-lg md:flex-row pt-[7rem]">
+        <div class="relative z-10 flex flex-col items-center gap-12 codeweek-container-lg md:flex-row py-16 tablet:py-20">
             <div class="flex-1">
                 <div class="relative inline-block observer-element">
                     <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/4.png" />
-                    <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
-                        loading="lazy" src="/images/shape.png" style="transform: translate(-16px, -24px)" />
+                    <img class="animation-element move-background duration-[1.5s] absolute top-3 left-10 w-full max-w-xl"
+                        loading="lazy" src="/images/shape_pink.png" style="transform: translate(-16px, -24px)" />
                 </div>
             </div>
             <div class="flex-1">
@@ -372,11 +371,6 @@
             </div>
         </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" width="94" height="131" viewBox="0 0 94 131" fill="none"
-        class="absolute right-0 z-50">
-        <circle cx="64.8986" cy="64.8986" r="64.8986"
-            transform="matrix(-0.952889 0.30332 0.30332 0.952889 107.682 -16)" fill="#410098" />
-    </svg>
     {{-- Display this section only if a country is selected and has specific content --}}
     @php
         $country = app('request')->input('country_iso');
@@ -415,6 +409,11 @@
         ];
     @endphp
     @if (in_array($country, $supportedCountries))
+        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="131" viewBox="0 0 94 131" fill="none"
+             class="absolute right-0 z-50">
+            <circle cx="64.8986" cy="64.8986" r="64.8986"
+                    transform="matrix(-0.952889 0.30332 0.30332 0.952889 107.682 -16)" fill="#410098" />
+        </svg>
         <section class="relative bg-white animation-section">
             <div class="absolute w-full h-full bg-white md:hidden" style="clip-path: ellipse(100% 58% at 38% 39%)">
             </div>
@@ -441,7 +440,7 @@
                 <div class="flex-1">
                     <div class="relative inline-block observer-element">
                         <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/5.png" />
-                        <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
+                        <img class="animation-element move-background duration-[1.5s] absolute top-3 left-12 w-full max-w-xl"
                             loading="lazy" src="/images/shape.png" style="transform: translate(-16px, -24px)" />
                     </div>
                 </div>
