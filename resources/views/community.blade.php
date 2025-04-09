@@ -60,6 +60,14 @@
             margin: 0px;
         }
 
+        .nice-select::after {
+            border-color: #1C4DA1;
+            height: 10px;
+            width: 10px;
+            right: 20px;
+            top: 42%;
+        }
+
         /* Style the scrollbar */
         #teacher-details::-webkit-scrollbar {
             border-radius: 8px;
@@ -99,7 +107,7 @@
                         class="flex flex-col-reverse items-center justify-between w-full mx-auto max-md:h-full md:flex-row codeweek-container-lg">
                         <div class="flex items-center justify-center w-full md:w-1/2">
                             <div
-                                class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-full max-w-[40rem] h-fit relative -top-6">
+                                class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-full h-fit relative -top-6">
                                 <h4
                                     class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
                                     @lang('community.titles.0')
@@ -108,9 +116,11 @@
                                     class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
                                     A vibrant network of educators, volunteers and ambassadors driving EU Code Week forward. Connect, collaborate and inspire the next generation of digital innovators in your country — and beyond.
                                 </p>
-                                <a class="hidden bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
-                                    href="#">
-                                    Learn More
+                                <a
+                                    class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
+                                    href="/"
+                                >
+                                    <span>Get in touch</span>
                                 </a>
                             </div>
                         </div>
@@ -128,10 +138,11 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col py-8 text-xl text-gray-700 lg:py-20 px-36 max-md:px-5">
-        <div class="relative w-full mx-auto max-w-[1350px]">
-            <div class="max-w-full mx-auto overflow-hidden leading-8 max-md:max-w-full">
-                @lang('community.intro.0').<br />@lang('community.intro.1')
+
+    <section class="flex flex-col py-8 text-xl text-gray-700 lg:py-20 max-md:px-5">
+        <div class="relative codeweek-container-lg">
+            <div class="max-w-full overflow-hidden leading-8 xl:w-3/4">
+                @lang('community.intro.0'). @lang('community.intro.1')
             </div>
             <div class="flex flex-col w-full mt-10 max-md:max-w-full">
                 <h3 class="font-bold max-md:max-w-full">
@@ -157,32 +168,38 @@
 
     </section>
 
-    <section class="relative overflow-hidden animation-section bg-[#FFFBE5]">
-        <div class="relative z-10 flex flex-col-reverse items-center gap-12 py-20 codeweek-container-lg md:flex-row">
-            <div class="flex-1">
-                <div class="relative inline-block observer-element">
-                    <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/2.png" />
-                    <img class="animation-element move-background duration-[1.5s] absolute top-3 left-10 w-full max-w-xl"
-                        loading="lazy" src="/images/shape_pink.png" style="transform: translate(-16px, -24px)" />
+    <section class="relative overflow-hidden bg-[#FFFBE5]">
+        <div class="relative py-20 animation-section">
+            <div class="relative z-10 flex flex-col-reverse items-center gap-12 codeweek-container-lg md:flex-row">
+                <div class="flex-1">
+                    <div class="relative inline-block observer-element">
+                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/2.png" />
+                        <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
+                             loading="lazy" src="/images/shape_pink.png" style="transform: translate(-16px, -24px)" />
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
+                        @lang('community.titles.1')
+                    </h4>
+                    <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0">
+                        @lang('community.ambassadors')
+                    </p>
                 </div>
             </div>
-            <div class="flex-1">
-                <h4 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
-                    @lang('community.titles.1')
-                </h4>
-                <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 mb-10">
-                    @lang('community.ambassadors')
-                </p>
 
-            </div>
+            <div class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-36 w-28 md:w-72 h-28 md:h-72 bg-[#F95C22] rounded-full lg:hidden xl:block"
+                 style="transform: translate(-16px, -24px)"></div>
+            <div class="animation-element move-background duration-[1.5s] absolute z-0 bottom-12 right-20 w-28 h-28 hidden xl:block bg-[#F95C22] rounded-full"
+                 style="transform: translate(-16px, -24px)"></div>
         </div>
 
         <div class="grid grid-cols-2 gap-8 mx-auto mb-20 max-lg:grid-cols-1 codeweek-container-lg max-xl:px-5">
             @forelse ($ambassadors as $ambassador)
-                <div class="relative z-50 flex p-4 bg-transparent border-2 border-solid rounded-2xl border-secondary max-sm:w-full "
+                <div class="relative z-50 flex flex-col tablet:flex-row p-4 bg-white rounded-2xl max-sm:w-full gap-8"
                     role="article" aria-labelledby="profile-name">
-                    <img class="object-cover w-32 h-32" src="{{ $ambassador->avatar }}" class="card-image-avatar">
-                    <div class="flex flex-col flex-1 ml-8 max-sm:ml-8">
+                    <img class="object-cover w-full tablet:w-32 tablet:h-32" src="{{ $ambassador->avatar }}" class="card-image-avatar">
+                    <div class="flex flex-col flex-1">
                         <div class="flex flex-col gap-1 mt-1">
                             <h4 id="profile-name" class="text-2xl font-medium leading-7 text-blue-800">
                                 {{ $ambassador->fullName() }}</h4>
@@ -238,13 +255,6 @@
               
             @endforelse
         </div>
-
-
-
-        <div class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-36 w-28 md:w-72 h-28 md:h-72 bg-[#F95C22] rounded-full lg:hidden xl:block"
-            style="transform: translate(-16px, -24px)"></div>
-        <div class="animation-element move-background duration-[1.5s] absolute z-0 bottom-12 right-20 w-28 h-28 hidden xl:block bg-[#F95C22] rounded-full"
-            style="transform: translate(-16px, -24px)"></div>
     </section>
     <section class="relative overflow-hidden bg-[#FFFBE5]">
         <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
@@ -273,7 +283,7 @@
             </div>
         </div>
         <div
-            class="flex flex-col md:flex-row w-full max-w-[1428px] h-auto md:h-[642px] items-center  rounded-lg mt-16 mx-auto mb-8 px-0 md:px-5 xl:px-0 md:pl-2">
+            class="codeweek-container-lg flex flex-col md:flex-row w-full h-auto md:h-[642px] items-center  rounded-lg mt-16 mx-auto mb-8">
             <!-- Map Container -->
             <div id="mapid"
                 class="w-full h-full rounded-tl-lg rounded-bl-lg md:rounded-tl-lg max-md:rounded-none max-md:h-[386px] relative">
@@ -345,7 +355,7 @@
     </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" width="119" height="126" viewBox="0 0 119 126" fill="none"
-        class="absolute left-0 z-50">
+        class="absolute left-0 z-50 hidden md:block">
         <circle cx="125.533" cy="125.533" r="125.533"
             transform="matrix(-0.952889 0.30332 0.30332 0.952889 74.2422 -157.995)" fill="#99E1F4" />
     </svg>
@@ -354,14 +364,14 @@
         <div class="absolute hidden w-full h-full bg-white md:block" style="clip-path: ellipse(70% 60% at 50% 40%);">
         </div>
         <div class="relative z-10 flex flex-col items-center gap-12 codeweek-container-lg md:flex-row py-16 tablet:py-20">
-            <div class="flex-1">
+            <div class="flex-1 order-1">
                 <div class="relative inline-block observer-element">
                     <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/4.png" />
-                    <img class="animation-element move-background duration-[1.5s] absolute top-3 left-10 w-full max-w-xl"
+                    <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
                         loading="lazy" src="/images/shape_pink.png" style="transform: translate(-16px, -24px)" />
                 </div>
             </div>
-            <div class="flex-1">
+            <div class="flex-1 order-0 md:order-2">
                 <h4 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                     @lang('community.titles.3')
                 </h4>
@@ -410,7 +420,7 @@
     @endphp
     @if (in_array($country, $supportedCountries))
         <svg xmlns="http://www.w3.org/2000/svg" width="94" height="131" viewBox="0 0 94 131" fill="none"
-             class="absolute right-0 z-50">
+             class="absolute right-0 z-50 hidden md:block">
             <circle cx="64.8986" cy="64.8986" r="64.8986"
                     transform="matrix(-0.952889 0.30332 0.30332 0.952889 107.682 -16)" fill="#410098" />
         </svg>
@@ -420,7 +430,7 @@
             <div class="absolute hidden w-full h-full bg-white md:block"
                 style="clip-path: ellipse(70% 60% at 50% 40%);"></div>
             <div
-                class="relative z-10 flex flex-col-reverse items-center gap-12 py-16 pb-32 codeweek-container-lg md:flex-row md:pb-48">
+                class="relative z-10 flex flex-col items-center gap-12 py-16 pb-32 codeweek-container-lg md:flex-row md:pb-48">
                 <div class="flex-1">
                     <h4
                         class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
@@ -440,7 +450,7 @@
                 <div class="flex-1">
                     <div class="relative inline-block observer-element">
                         <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/5.png" />
-                        <img class="animation-element move-background duration-[1.5s] absolute top-3 left-12 w-full max-w-xl"
+                        <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
                             loading="lazy" src="/images/shape.png" style="transform: translate(-16px, -24px)" />
                     </div>
                 </div>
@@ -741,6 +751,28 @@
         });
     </script>
     <script src="{{ asset('js/countriesGeoCentroids.js') }}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      const waitForDOM = (callback, interval = 100, maxRetries = 50) => {
+        let retries = 0;
+        const checkDOM = () => {
+          const target = document.getElementById('codeweek-ambassadors-page');
+          if (target) {
+            callback(target);
+          } else if (retries < maxRetries) {
+            retries++;
+            setTimeout(checkDOM, interval);
+          } else {
+            console.error('DOM not ready after retries');
+          }
+        };
+        checkDOM();
+      };
+
+      waitForDOM((target) => {
+        triggerAnimations(target);
+      });
+    </script>
 @endsection
 
 </section>
