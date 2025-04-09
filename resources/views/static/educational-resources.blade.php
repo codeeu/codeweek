@@ -46,7 +46,10 @@
                     Got free and open educational resources?
                 </h2>
                 <p class="text-slate-500 font-normal leading-7 text-xl p-0 mb-4 w-full md:max-w-[825px] font-['Blinker']">
-                    Share them with the EU Code Week community! Submit your free resources using the form below, and we'll feature them on this page to help others learn, create and grow OR tell us what you think! Share your feedback on the existing resources – whether you have suggestions for improvement, compliments, or new ideas, we'd love to hear from you!
+                    Share them with the EU Code Week community! Submit your free resources using the form below, and we'll feature them on this page to help others learn, create and grow OR tell us what you think!
+                </p>
+                <p class="text-slate-500 font-normal leading-7 text-xl p-0 mb-4 w-full md:max-w-[825px] font-['Blinker']">
+                    Share your feedback on the existing resources – whether you have suggestions for improvement, compliments, or new ideas, we'd love to hear from you!
                 </p>
                 <div class="flex flex-col md:flex-row gap-4 mb-10 md:mb-16">
                     <a
@@ -66,7 +69,7 @@
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('coding@home') }}'">
-                        <img src="/images/educational-resources/coding_home.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/coding_home.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Coding @ Home</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -75,7 +78,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('podcasts') }}'">
-                        <img src="/images/educational-resources/podcasts.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/podcasts.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Podcasts</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -84,7 +87,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('webinars') }}'">
-                        <img src="/images/educational-resources/webinar.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/webinar.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Webinars</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -95,7 +98,7 @@
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10 mb-6 xl:mb-8">
                     <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('online-courses') }}'">
-                        <img src="/images/educational-resources/placeholder.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/placeholder.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Online Courses</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -104,7 +107,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer group" onclick="window.location.href='{{route('treasure-hunt')}}'">
-                        <img src="/images/educational-resources/treasure_hunt.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/treasure_hunt.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Treasure Hunt</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -115,7 +118,7 @@
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{route('training.index')}}'">
-                        <img src="/images/educational-resources/seasonal_content.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/training/training_bg.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Training</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -124,7 +127,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='dream-jobs-in-digital'">
-                        <img src="/images/educational-resources/careers_in_digital.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/careers_in_digital.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Careers in Digital</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -132,8 +135,8 @@
                             </span>
                         </div>
                     </div>
-                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('resources_teach') }}'">
-                        <img src="/images/educational-resources/placeholder-2.png" />
+                    <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('resources_all') }}'">
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/placeholder-2.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Learn & Teach</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -144,7 +147,7 @@
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-2 gap-6 xl:gap-10 mb-6 xl:mb-8">
                     <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer group" onclick="window.location.href='{{route('challenges')}}'">
-                        <img src="/images/educational-resources/challenges.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/challenges.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Challenges</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -153,7 +156,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-dark-blue overflow-hidden cursor-pointer group" onclick="window.location.href='{{route('hackathons')}}'">
-                        <img src="/images/educational-resources/hackathons.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/hackathons.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-white text-lg p-0 font-semibold">Hackathons</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -164,7 +167,7 @@
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10">
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{route('toolkits')}}'">
-                        <img src="/images/educational-resources/seasonal_content.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/placeholder-2.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Presentations and Toolkits</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -173,7 +176,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('girls-in-digital-week') }}'">
-                        <img src="/images/educational-resources/careers_in_digital.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/digital-girls/banner_bg.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Girls in Digital</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -182,7 +185,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('dance') }}'">
-                        <img src="/images/educational-resources/placeholder-2.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/placeholder-2.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Dance Challenge</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">

@@ -4,12 +4,9 @@
     $currentUrl = request()->url();
 @endphp
 
-@if(strpos($currentUrl, route('resources_learn')) !== false)
+@if(strpos($currentUrl, route('resources_all')) !== false)
     @section('title', 'Learn Coding with EU Code Week – Free Educational Resources')
     @section('description', 'Explore a collection of free resources, courses, and tutorials designed to help students and beginners learn coding at their own pace.')
-@elseif(strpos($currentUrl, route('resources_teach')) !== false)
-    @section('title', 'Teaching Coding – Free EU Code Week Resources for Educators')
-    @section('description', 'Access high-quality resources, lesson plans, and guides to effectively teach coding in classrooms and beyond.')
 @else
     @section('title', 'Free Coding Resources – EU Code Week')
     @section('description', 'Access a wide range of free coding resources, including lesson plans, tutorials, and activities for students, teachers, and coding enthusiasts.')
@@ -31,7 +28,7 @@
                                 @lang('menu.learn')
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
-                                @lang('snippets.'.$section.'_1')
+                                @lang('snippets.learn_and_teach_1')
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
@@ -53,7 +50,7 @@
         </section>
 
         <section class="py-10 px-5 bg-white">
-          <div class="max-w-[880px] mx-auto text-[16px] md:text-xl leading-[22px] md:leading-[30px] text-slate-500">@lang('snippets.'.$section.'_2')</div>
+          <div class="max-w-[880px] mx-auto text-[16px] md:text-xl leading-[22px] md:leading-[30px] text-slate-500">@lang('snippets.learn_and_teach_2')</div>
         </section>
 
         <resource-form
@@ -64,7 +61,6 @@
                 :prp-categories="{{$selected_categories}}"
                 :prp-languages="{{$selected_languages}}"
                 :prp-subjects="{{$selected_subjects}}"
-                :section="'{{ $section }}'"
                 :levels="{{ $levels }}"
                 :programming-languages="{{ $programmingLanguages }}"
                 :languages="{{ $languages }}"

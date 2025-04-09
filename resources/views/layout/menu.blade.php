@@ -109,7 +109,7 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">Podcasts</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('online-courses')}}">Online Courses</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('training.index')}}">@lang('menu.training')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_learn')}}">@lang('menu.learn')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_all')}}">@lang('menu.learn')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('webinars')}}">@lang('menu.webinars')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>

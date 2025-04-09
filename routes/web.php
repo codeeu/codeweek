@@ -326,11 +326,8 @@ Route::view(
 Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware('auth');
 Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
-Route::get('/resources', [ResourcesController::class, 'learn'])->name('resources');
-Route::get('/resources/learn', [ResourcesController::class, 'learn'])->name('resources_learn');
-Route::get('/resources/teach', [ResourcesController::class, 'teach'])->name(
-    'resources_teach'
-);
+Route::get('/resources', [ResourcesController::class, 'all'])->name('resources');
+Route::get('/resources/learn-and-teach', [ResourcesController::class, 'all'])->name('resources_all');
 Route::post('/resources/search', [SearchResourcesController::class, 'search'])->name(
     'search_resources'
 );

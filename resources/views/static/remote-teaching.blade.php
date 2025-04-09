@@ -32,7 +32,7 @@
 
                     </li>
                     <li>
-                        <a href="{{route('resources_teach')}}">@lang('remote-teaching.intro.points.4.0')</a>:
+                        <a href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.0')</a>:
                         @lang('remote-teaching.intro.points.4.1')
 
 

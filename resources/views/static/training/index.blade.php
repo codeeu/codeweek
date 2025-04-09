@@ -3,7 +3,7 @@
 @php
     $list = [
       (object) ['label' => 'Learn & Teach', 'href' => '/learn'],
-      (object) ['label' => 'Coding basics', 'href' => ''],
+      (object) ['label' => 'Training', 'href' => ''],
     ];
 
     $results = [
@@ -151,10 +151,10 @@
                     <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
-                                Coding basics
+                                Training
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
-                                Bite-sized, ready-to-use materials that will help you introduce coding basics and plan your next innovative lesson.
+                                Bite-sized, ready-to-use materials that will help you introduce training and plan your next innovative lesson.
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
@@ -204,7 +204,7 @@
                         <div class="flex-1 pt-1">
                             <p class="font-semibold text-[#20262C] text-xl tablet:text-2xl mb-2 p-0">Get Hands-On</p>
                             <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                                Choose a Learning Bit, watch the instructional video, and explore hands-on activities with the accompanying materials. Whether you’re new to coding or looking for fresh, creative teaching ideas, Coding Basics will equip you with the tools to spark digital curiosity and creativity in your learners.
+                                Choose a Learning Bit, watch the instructional video, and explore hands-on activities with the accompanying materials. Whether you’re new to coding or looking for fresh, creative teaching ideas, Training will equip you with the tools to spark digital curiosity and creativity in your learners.
                             </p>
                         </div>
                     </div>

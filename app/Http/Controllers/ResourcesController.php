@@ -7,7 +7,7 @@ use Illuminate\View\View;
 
 class ResourcesController extends Controller
 {
-    public function index(Request $request, $section = 'learn'): View
+    public function all(Request $request): View
     {
 
         $query = $request->input('q', '');
@@ -42,26 +42,16 @@ class ResourcesController extends Controller
             $selected_subjects = \App\ResourceSubject::find($selected_subjects);
         }
 
-        $levels = \App\ResourceLevel::where($section, '=', true)->orderBy('position')->get();
-        $types = \App\ResourceType::where($section, '=', true)->orderBy('position')->get();
+        $levels = \App\ResourceLevel::orderBy('position')->get();
+        $types = \App\ResourceType::orderBy('position')->get();
         //$languages = \App\ResourceLanguage::all();
-        $languages = \App\ResourceLanguage::where($section, '=', true)->orderBy('position')->get();
+        $languages = \App\ResourceLanguage::orderBy('position')->get();
 
-        $programmingLanguages = \App\ResourceProgrammingLanguage::where($section, '=', true)->orderBy('position')->get();
-        $categories = \App\ResourceCategory::where($section, '=', true)->orderBy('position')->get();
-        $subjects = \App\ResourceSubject::where($section, '=', true)->orderBy('position')->get();
+        $programmingLanguages = \App\ResourceProgrammingLanguage::orderBy('position')->get();
+        $categories = \App\ResourceCategory::orderBy('position')->get();
+        $subjects = \App\ResourceSubject::orderBy('position')->get();
 
 
-        return view('resources.index', compact(['query', 'selected_subjects', 'selected_programming_languages', 'selected_categories', 'selected_languages', 'selected_levels', 'selected_types', 'programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types', 'section']));
-    }
-
-    public function learn(Request $request)
-    {
-        return $this->index($request, 'learn');
-    }
-
-    public function teach(Request $request)
-    {
-        return $this->index($request, 'teach');
+        return view('resources.index', compact(['query', 'selected_subjects', 'selected_programming_languages', 'selected_categories', 'selected_languages', 'selected_levels', 'selected_types', 'programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types']));
     }
 }
