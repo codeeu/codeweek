@@ -14,17 +14,19 @@
                 </div>
             </div>
             <div>
-                @if($podcast->guests->count() == 1)
-                    <p class="text-dark-blue text-4xl font-medium p-0 mb-6">About our guest</p>
+              @if($podcast->guests->count() == 1)
+                    <p class="text-dark-blue text-4xl font-medium p-0">About our guest</p>
                 @else
-                    <p class="text-dark-blue text-4xl font-medium p-0 mb-6">About our guests</p>
+                    <p class="text-dark-blue text-4xl font-medium p-0">About our guests</p>
                 @endif
-                <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                    Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and innovation closer to you, your community and your school.
-                </p>
-                <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                    Join Arjana Blazic, Eugenia Casariego and Eirini Symeonidou, from the EU Code Week team, as they explore a range of topics, from media literacy to robotics, with the help of expert guests – to empower you to equip your students with the skills to confront the challenges and opportunities posed by a digital future.
-                </p>
+                @foreach($podcast->guests as $guest)
+                    <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 my-6">
+                        {{$guest->name}}
+                    </p>
+                    <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
+                        {{$guest->description}}
+                    </p>
+                @endforeach
             </div>
         </div>
     </div>

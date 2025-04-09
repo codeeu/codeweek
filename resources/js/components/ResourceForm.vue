@@ -169,7 +169,7 @@
             </multiselect>
           </div>
 
-          <div v-if="section === 'teach'">
+          <div>
             <label class="block text-[16px] text-slate-500 mb-2">
               {{ $t('resources.Subjects') }}
             </label>
@@ -355,7 +355,6 @@ export default {
     categories: Array,
     subjects: Array,
     types: Array,
-    section: String,
     locale: String,
   },
   setup(props) {
@@ -386,48 +385,6 @@ export default {
         ...selectedCategories.value,
       ];
     });
-
-    const searchQuery = computed(() => {
-      let result =
-        window.location.hostname +
-        '/resources/' +
-        props.section +
-        '?lang=' +
-        props.locale;
-
-      if (searchInput.value) {
-        result += '&q=' + searchInput.value;
-      }
-      selectedLevels.value.forEach((level) => {
-        result += '&levels[]=' + level.id;
-      });
-      selectedTypes.value.forEach((type) => {
-        result += '&types[]=' + type.id;
-      });
-      selectedProgrammingLanguages.value.forEach((language) => {
-        result += '&proglang[]=' + language.id;
-      });
-      selectedCategories.value.forEach((category) => {
-        result += '&categories[]=' + category.id;
-      });
-      selectedLanguages.value.forEach((language) => {
-        result += '&languages[]=' + language.id;
-      });
-      selectedSubjects.value.forEach((subject) => {
-        result += '&subjects[]=' + subject.id;
-      });
-
-      return result;
-    });
-
-    const copy = async () => {
-      try {
-        await toClipboard(searchQuery.value);
-        alert('Link has been copied to the clipboard!');
-      } catch (e) {
-        alert('Failed to copy texts');
-      }
-    };
 
     const removeSelectedItem = (tag) => {
       const filterFn = (item) => item.id !== tag.id;
@@ -519,12 +476,10 @@ export default {
       errors,
       pagination,
       resources,
-      searchQuery,
       debounceSearch,
       paginate,
       onSubmit,
       customLabel,
-      copy,
       showFilterModal,
       tags,
       removeSelectedItem,
