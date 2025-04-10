@@ -66,7 +66,7 @@
 
           <div>
             <label class="block text-[16px] text-slate-500 mb-2">
-              {{ $t('resources.level') }}
+              {{ $t('resources.levels') }}
             </label>
             <multiselect
               v-model="selectedLevels"
