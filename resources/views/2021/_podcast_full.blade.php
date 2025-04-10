@@ -2,6 +2,9 @@
     <div class="codeweek-container-lg py-10 tablet:py-20 relative z-[1]">
         <div class="grid grid-cols-1 tablet:grid-cols-2 gap-10 tablet:gap-32">
             <div class="flex flex-col justify-center">
+                <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6">
+                    {{$podcast->description}}
+                </div>
                 <div class="bg-[#F4F6FA] p-6 rounded-xl">
                     <p class="text-slate-500 font-semibold text-lg p-0 mb-2">
                         Published: {{Carbon\Carbon::parse($podcast->created_at)->isoFormat('DD/M/YY')}} - 25 MIN
@@ -23,9 +26,18 @@
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 my-6">
                         {{$guest->name}}
                     </p>
-                    <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                        {{$guest->description}}
-                    </p>
+                    <div class="flex items-center space-x-4 lg:space-x-6">
+                        @if($guest->image_path)
+                            <img
+                                class="flex-shrink-0 w-16 h-16 rounded-full lg:w-20 lg:h-20"
+                                src="{{$guest->image_path}}"
+                                alt=""
+                            />
+                        @endif
+                        <div class="text-[#333E48] font-normal text-lg md:text-xl p-0">
+                            <x-markdown class="[&_p]:!p-0">{{$guest->description}}</x-markdown>
+                        </div>
+                  </div>
                 @endforeach
             </div>
         </div>

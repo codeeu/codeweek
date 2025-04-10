@@ -4,7 +4,7 @@ return [
 
     'search_resources' => 'Search resources',
     'search_by_title_description' => 'Search by title or description',
-    'resource_type' => 'Resource type',
+    'resource_type' => 'Resource types',
     'resource_type_placeholder' => 'Select type, e.g. audio',
     'types' => 'Types',
     'levels' => 'Levels',
