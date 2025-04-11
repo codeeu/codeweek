@@ -1,125 +1,84 @@
-@section('title', $podcast->title)
-@section('description', $podcast->description)
-
-<div class="flex justify-between -mb-4">
-    <h1 class="subtitle">EU Code Week Podcast: {{$podcast->title}}</h1>
-    @if($podcast->transcript)
-
-        <div class="self-end align-bottom">
-            <a href="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/transcripts/{{$podcast->transcript}}">
-                <button class="background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                        type="button">
-                    Download Transcript
-                </button>
-            </a>
-        </div>
-
-    @endif
-</div>
-
-<div class="shadow-xl flex flex-col ">
-    <div class="flex md:flex-row flex-col">
-        <div class="flex-none max-w-fit float-left w-auto max-w-xs">
-
-            <a href="{{$podcast->filename}}">
-                <img
-                        src="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/{{$podcast->image}}">
-
-            </a>
-        </div>
-
-        <div class="flex flex-col h-full bg-gray-300 justify-between pl-4">
-
-            {{--                <div><h2 class="subtitle">{{$podcast->title}}</h2></div>--}}
-            <div class="text-black pb-2 pr-4 pt-2 text-base leading-5">{{$podcast->description}}</div>
-
-
-            {{--            <div class="text-black pb-2 pr-4 text-base leading-5">{{$podcast->description}}</div>--}}
-
-            <div class="m-2 mb-4">
-                <audio controls="controls" id="podcast">
-                    <source src="{{$podcast->filename}}"
-                            type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+<section class="relative z-10">
+    <div class="codeweek-container-lg py-10 tablet:py-20 relative z-[1]">
+        <div class="grid grid-cols-1 tablet:grid-cols-2 gap-10 tablet:gap-32">
+            <div class="flex flex-col justify-center">
+                <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6">
+                    {{$podcast->description}}
+                </div>
+                <div class="bg-[#F4F6FA] p-6 rounded-xl">
+                    <p class="text-slate-500 font-semibold text-lg p-0 mb-2">
+                        Published: {{Carbon\Carbon::parse($podcast->created_at)->isoFormat('DD/M/YY')}} - 25 MIN
+                    </p>
+                    <audio controls="controls" id="podcast" class="w-full">
+                        <source src="{{$podcast->filename}}"
+                                type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-
-
+            <div>
+              @if($podcast->guests->count() == 1)
+                    <p class="text-dark-blue text-4xl font-medium p-0">About our guest</p>
+                @else
+                    <p class="text-dark-blue text-4xl font-medium p-0">About our guests</p>
+                @endif
+                @foreach($podcast->guests as $guest)
+                    <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 my-6">
+                        {{$guest->name}}
+                    </p>
+                    <div class="flex items-center space-x-4 lg:space-x-6">
+                        @if($guest->image_path)
+                            <img
+                                class="flex-shrink-0 w-16 h-16 rounded-full lg:w-20 lg:h-20"
+                                src="{{$guest->image_path}}"
+                                alt=""
+                            />
+                        @endif
+                        <div class="text-[#333E48] font-normal text-lg md:text-xl p-0">
+                            <x-markdown class="[&_p]:!p-0">{{$guest->description}}</x-markdown>
+                        </div>
+                  </div>
+                @endforeach
+            </div>
         </div>
     </div>
-    <div class="pl-4" style="background-color: #e5f1f6">
-        @if($podcast->guests->count() == 1)
-            <h2 class="subtitle">About our guest</h2>
-        @else
-            <h2 class="subtitle">About our guests</h2>
-        @endif
-        @foreach($podcast->guests as $guest)
-            <div class="leading-normal">
-                <ul class="m-0">
-                    <li>
-                        <div class="-mb-4 font-bold text-xl">{{$guest->name}}</div>
-                        <div class="flex items-center space-x-4 lg:space-x-6">
-                            @if($guest->image_path)
-                                <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="{{$guest->image_path}}" alt="">
-                            @endif
-                            <div class="font-medium text-l leading-6 space-y-1">
-                                <p class="text-indigo-600">
-                                    <x-markdown>{{$guest->description}}</x-markdown>
-                                </p>
+    <div
+        class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-40 w-28 md:w-64 h-28 md:h-64 xl:w-72 x:h-72 bg-[#FFEF99] rounded-full hidden lg:block"
+        style="transform: translate(-16px, -24px)"
+    ></div>
+    <div
+        class="animation-element move-background duration-[1.5s] absolute z-0 lg:-bottom-20 xl:-bottom-28 right-40 w-28 h-28 hidden lg:block bg-[#FFEF99] rounded-full"
+        style="transform: translate(-16px, -24px)"
+    ></div>
+</section>
+
+<section class="relative overflow-hidden">
+    <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(130% 90% at 38% 90%);"></div>
+    <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(128% 90% at 50% 90%);"></div>
+    <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(108% 90% at 50% 90%);"></div>
+    <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
+    <div class="relative pt-20 pb-16 md:pt-52 md:pb-28">
+        <div class="relative">
+            <div class="absolute left-0 top-0 bottom-0 w-48 bg-yellow-transparent-gradient z-[8]"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-48 bg-yellow-transparent-opposite-gradient z-[8]"></div>
+            <div class="slick-slider relative">
+                @foreach($latest_podcasts as $podcast)
+                    <div class="leading-normal mx-5">
+                        <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('podcast', $podcast) }}'">
+                            <div class="relative">
+                                <img alt="Placeholder" class="block w-full rounded" src="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/{{$podcast->image}}" />
+                                <span class="bg-white group-hover:bg-primary duration-300 rounded-full w-12 h-12 flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                    <img class="w-6 ml-1" src="/images/fi_play.svg" />
+                                </span>
+                            </div>
+                            <div class="px-6 py-8">
+                                <a href="/" class="text-dark-blue text-center text-lg p-0 font-semibold mb-2 font-['Montserrat'] block">{{$podcast->title}}</a>
                             </div>
                         </div>
-                    </li>
-
-                    <!-- More people... -->
-                </ul>
-            </div>
-        @endforeach
-        <h2 class="subtitle">Useful Resources</h2>
-        <div class="leading-normal">
-            <strong>Do you want to explore more about the topic? Check out these links:</strong>
-            <ul class="checklist mt-1">
-                @foreach($podcast->resources as $resource)
-                    <li class="text-black pb-2 pr-4 text-base leading-5">
-                        <a class="font-bold" href="{{$resource->url}}">{{$resource->name}}</a>
-                    </li>
+                    </div>
                 @endforeach
-            </ul>
+            </div>
         </div>
-
-        <div class="flex justify-end p-2 text-xs">This podcast has been released
-            on {{$podcast->release_date->format('jS \o\f F Y')}}</div>
     </div>
-
-</div>
-
-@section('extra-css')
-    <style>
-        audio {
-            width: 400px;
-            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-            border-radius: 90px;
-            transform: scale(1.05);
-        }
-
-
-        ul.checklist li:before {
-            content: '• ';
-            color: #ee6a2c;
-            font-weight: bold;
-        }
-
-
-    </style>
-@endsection
-
-@section('extra-js')
-
-    <script>
-        let podcast = document.getElementById("podcast");
-        podcast.volume = 0.5;
-    </script>
-
-@endsection
-
-
+</section>
 

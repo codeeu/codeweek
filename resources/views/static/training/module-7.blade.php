@@ -1,66 +1,64 @@
-@extends('layout.base')
+@extends('layout.new_base')
 
 @section('title', 'Tinkering and Making – Hands-On Coding and Creation')
 @section('description', 'Explore the world of tinkering and making in this hands-on training. Learn how to combine creativity, technology, and coding for innovative projects.')
 
 @section('content')
+    <section id="codeweek-codingathome-subpage" class="font-['Blinker'] overflow-hidden">
 
-    <section id="codeweek-training-page" class="codeweek-page">
+        @include('codingathome.banner', [
+          'author' => __('training.lessons.7.author'),
+          'title' => __('training.lessons.7.title')
+        ])
 
-        @include('static.training.banner')
+        <section class="relative z-10">
+            <div class="relative z-10 py-10 md:pt-20 md:pb-10 codeweek-container-lg">
+                <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6">
+                    @lang('training.lessons.7.text')
+                </div>
 
-        <section class="codeweek-content-wrapper">
+                <div class="mb-10">
+                    @include('static.youtube', ['video_id' => 'BbbLe2g-SLQ'])
+                </div>
 
-            <section class="codeweek-content-wrapper-inside">
+                <a class="text-dark-blue text-lg font-medium font-['Montserrat'] underline block mb-6" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.DOCX">
+                    @lang('training.download_video_script')
+                </a>
 
-                <h1>@lang('training.lessons.7.title')</h1>
-                <span>@lang('training.lessons.7.author')</span>
+                <h2 class="text-dark-blue text-2xl md:text-3xl leading-[44px] font-medium font-['Montserrat'] mb-6">
+                    @lang('training.ready_to_share')
+                </h2>
 
-                @lang('training.lessons.7.text')
-
-            </section>
-
-            @include('static.youtube', ['video_id' => 'BbbLe2g-SLQ'])
-
-            <section class="codeweek-content-wrapper-inside">
-
-                <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.DOCX">
-                        @lang('training.download_video_script')
-                    </a>
-                </p>
-
-                <h2>@lang('training.ready_to_share')</h2>
-
-                <p>
+                <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-4">
                     @lang('training.choose_lessons')
                 </p>
-
-                <ul>
-                    <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
+                <ul class="list-none m-0 mb-6">
+                    <li class="p-0 text-default font-normal leading-7">
+                        <a class="text-dark-blue" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.7.activities.1')
                         </a>
                     </li>
-                    <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
+                    <li class="p-0 text-default font-normal leading-7">
+                        <a class="text-dark-blue" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.7.activities.2')
                         </a>
                     </li>
-                    <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                    <li class="p-0 text-default font-normal leading-7">
+                        <a class="text-dark-blue" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-007-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.7.activities.3')
                         </a>
                     </li>
                 </ul>
+                <h2 class="text-dark-blue text-2xl md:text-3xl leading-[44px] font-medium font-['Montserrat']">
+                    @lang('training.footer.title')
+                </h2>
 
-                <h2>@lang('training.footer.title')</h2>
-                @lang('training.footer.text')
-
-            </section>
-            @include('include.licence')
+                <div class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6">
+                    @lang('training.footer.text')
+                </div>
+            </div>
         </section>
 
+        @include("include.licence")
     </section>
-
 @endsection
