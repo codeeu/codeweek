@@ -66,17 +66,17 @@
 
           <div>
             <label class="block text-[16px] text-slate-500 mb-2">
-              {{ $t('resources.levels') }}
+              {{ $t('resources.target_audience') }}
             </label>
             <multiselect
-              v-model="selectedLevels"
+              v-model="selectedTargetAudiences"
               class="multi-select"
-              :options="levels"
+              :options="targetAudiences"
               :multiple="true"
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
-              :placeholder="$t('resources.level_placeholder')"
+              :placeholder="$t('resources.target_audience_placeholder')"
               label="resources.resources.levels"
               :custom-label="customLabel"
               track-by="name"
@@ -84,7 +84,40 @@
               @select="onSubmit"
               @remove="onSubmit"
             >
-              <pre class="language-json"><code>{{ selectedLevels }}</code></pre>
+              <pre class="language-json"><code>{{ selectedTargetAudiences }}</code></pre>
+              <template #selection="{ values }">
+                <div
+                  v-if="values.length > 0"
+                  class="multiselect--values font-semibold text-[16px] truncate"
+                >
+                  Selected {{ values.length }}
+                  {{ values.length > 1 ? 'targets' : 'target' }}
+                </div>
+              </template>
+            </multiselect>
+          </div>
+
+          <div>
+            <label class="block text-[16px] text-slate-500 mb-2">
+              {{ $t('resources.level_difficulty') }}
+            </label>
+            <multiselect
+              v-model="selectedLevelsDifficulty"
+              class="multi-select"
+              :options="levelsDifficulty"
+              :multiple="true"
+              :close-on-select="false"
+              :clear-on-select="false"
+              :preserve-search="true"
+              :placeholder="$t('resources.level_difficulty_placeholder')"
+              label="resources.resources.levels"
+              :custom-label="customLabel"
+              track-by="name"
+              :preselect-first="false"
+              @select="onSubmit"
+              @remove="onSubmit"
+            >
+              <pre class="language-json"><code>{{ selectedLevelsDifficulty }}</code></pre>
               <template #selection="{ values }">
                 <div
                   v-if="values.length > 0"
@@ -239,22 +272,25 @@
             </multiselect>
           </div>
 
-          <div class="flex items-end">
-            <button
-              class="w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300"
-              @click="
-                () => {
-                  showFilterModal = false;
-                  onSubmit();
-                }
-              "
-            >
-              <span
-                class="text-base leading-7 font-semibold text-black normal-case"
+          <div class="sm:col-span-2 md:col-span-1 lg:col-span-full lg:grid grid-cols-12 mt-3">
+            <div class="hidden lg:block lg:col-span-4" />
+            <div class="w-full flex items-end justify-center lg:col-span-4 h-full">
+              <button
+                class="w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300"
+                @click="
+                  () => {
+                    showFilterModal = false;
+                    onSubmit();
+                  }
+                "
               >
-                {{ $t('resources.search') }}
-              </span>
-            </button>
+                <span
+                  class="text-base leading-7 font-semibold text-black normal-case"
+                >
+                  {{ $t('resources.search') }}
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -310,7 +346,9 @@
 
       <div class="bg-yellow-50">
         <div class="relative z-10 codeweek-container">
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10"
+          >
             <template v-for="resource in resources" :key="resource.id">
               <resource-card :resource="resource"></resource-card>
             </template>
@@ -363,7 +401,8 @@ export default {
     const showFilterModal = ref(false);
     const query = ref(props.prpQuery);
     const searchInput = ref(props.prpQuery);
-    const selectedLevels = ref(props.prpLevels);
+    const selectedTargetAudiences = ref(props.prpLevels.filter((item) => item.teach === 1));
+    const selectedLevelsDifficulty = ref(props.prpLevels.filter((item) => item.learn === 1));
     const selectedTypes = ref(props.prpTypes);
     const selectedProgrammingLanguages = ref(props.prpProgrammingLanguages);
     const selectedCategories = ref(props.prpCategories);
@@ -375,10 +414,19 @@ export default {
     });
     const resources = ref([]);
 
+    const targetAudiences = computed(() => {
+      return props.levels.filter((item) => item.teach === 1);
+    });
+
+    const levelsDifficulty = computed(() => {
+      return props.levels.filter((item) => item.learn === 1);
+    });
+
     const tags = computed(() => {
       return [
         ...selectedTypes.value,
-        ...selectedLevels.value,
+        ...selectedTargetAudiences.value,
+        ...selectedLevelsDifficulty.value,
         ...selectedLanguages.value,
         ...selectedProgrammingLanguages.value,
         ...selectedSubjects.value,
@@ -389,7 +437,8 @@ export default {
     const removeSelectedItem = (tag) => {
       const filterFn = (item) => item.id !== tag.id;
       selectedTypes.value = selectedTypes.value.filter(filterFn);
-      selectedLevels.value = selectedLevels.value.filter(filterFn);
+      selectedTargetAudiences.value = selectedTargetAudiences.value.filter(filterFn);
+      selectedLevelsDifficulty.value = selectedLevelsDifficulty.value.filter(filterFn);
       selectedLanguages.value = selectedLanguages.value.filter(filterFn);
       selectedProgrammingLanguages.value =
         selectedProgrammingLanguages.value.filter(filterFn);
@@ -400,7 +449,8 @@ export default {
 
     const removeAllSelectedItems = () => {
       selectedTypes.value = [];
-      selectedLevels.value = [];
+      selectedTargetAudiences.value = [];
+      selectedLevelsDifficulty.value = [];
       selectedLanguages.value = [];
       selectedProgrammingLanguages.value = [];
       selectedSubjects.value = [];
@@ -430,7 +480,7 @@ export default {
         .post('/resources/search?page=' + pagination.current_page, {
           query: query.value,
           searchInput: searchInput.value,
-          selectedLevels: selectedLevels.value,
+          selectedLevels: [...selectedTargetAudiences.value, ...selectedLevelsDifficulty.value],
           selectedTypes: selectedTypes.value,
           selectedProgrammingLanguages: selectedProgrammingLanguages.value,
           selectedCategories: selectedCategories.value,
@@ -467,7 +517,10 @@ export default {
     return {
       query,
       searchInput,
-      selectedLevels,
+      targetAudiences,
+      levelsDifficulty,
+      selectedTargetAudiences,
+      selectedLevelsDifficulty,
       selectedTypes,
       selectedProgrammingLanguages,
       selectedCategories,
