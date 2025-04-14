@@ -210,7 +210,7 @@
                     </p>
                     <a class="inline-flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#FFEF99] group"
                         href="{{route('dream-jobs-in-digital')}}">
-                        <span>Get Involded</span>
+                        <span>Get involved</span>
                         <div class="flex w-4 gap-2 overflow-hidden">
                             <img src="/images/arrow-right-icon.svg"
                                 class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
