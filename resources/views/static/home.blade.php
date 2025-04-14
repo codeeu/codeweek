@@ -203,14 +203,14 @@
                 <div class="flex-1">
                     <img class="max-w-full" loading="lazy" src="/images/dream-jobs/dream_jobs_logo.svg" />
                     <p class="text-left text-lg md:text-2xl md:leading-8 text-[#20262C] p-0 my-6">
-                        @lang('home.minecraft_description1')
+                        Careers in Digital is part of EU Code Week targeting 15–18-year-olds and educators to explore exciting and varied digital careers.
                     </p>
                     <p class="text-[16px] md:text-lg text-[#333E48] p-0 mb-8">
-                        @lang('home.minecraft_description2')
+                        Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there.
                     </p>
                     <a class="inline-flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#FFEF99] group"
                         href="{{route('dream-jobs-in-digital')}}">
-                        <span>@lang('home.minecraft_button')</span>
+                        <span>Get Involded</span>
                         <div class="flex w-4 gap-2 overflow-hidden">
                             <img src="/images/arrow-right-icon.svg"
                                 class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
