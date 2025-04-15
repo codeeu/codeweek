@@ -167,7 +167,7 @@
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10">
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{route('toolkits')}}'">
-                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/placeholder-2.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/toolkits.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Presentations and Toolkits</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                     <div class="rounded-lg bg-white overflow-hidden cursor-pointer group" onclick="window.location.href='{{ route('dance') }}'">
-                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/placeholder-2.png" />
+                        <img class="object-cover aspect-[3/2]" src="/images/educational-resources/dance_challenges.png" />
                         <div class="p-6 flex justify-between items-center">
                             <p class="text-dark-blue text-lg p-0 font-semibold">Dance Challenge</p>
                             <span class="bg-yellow group-hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
