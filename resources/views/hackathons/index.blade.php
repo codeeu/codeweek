@@ -105,9 +105,9 @@
                         <div class="flex flex-col tablet:flex-row lg:flex-col 2xl:flex-row gap-x-2 gap-y-4">
                             <a
                                 class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
-                                target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#home"
+                                target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024"
                             >
-                                Register for Hackathon 2024
+                                Explore Hackathons Final 2024
                             </a>
                             <a
                                 class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
