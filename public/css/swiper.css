@@ -1,0 +1,41 @@
+.slick-slider .slick-next {
+    background: #FFD700;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+    padding: 2rem 2.5rem 2rem 2rem;
+    cursor: pointer;
+    z-index: 10;
+    right: 0 !important;
+    transition: 300ms;
+}
+
+.slick-slider .slick-arrow:hover, .slick-slider .slick-arrow:focus {
+    background: #F95C22;
+}
+
+.slick-slider .slick-prev {
+    background: #FFD700;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    padding: 2rem 2.5rem 2rem 2rem;
+    cursor: pointer;
+    z-index: 10;
+    left: 0 !important;
+    transition: 300ms;
+}
+
+.slick-slider .slick-next:before {
+    position: absolute;
+    left: 25px;
+    top: 16px;
+    content: url("/images/arrow-up-icon.svg") !important;
+    transform: rotate(90deg);
+}
+
+.slick-slider .slick-prev:before {
+    position: absolute;
+    right: 25px;
+    top: 16px;
+    content: url("/images/arrow-up-icon.svg") !important;
+    transform: rotate(270deg);
+}

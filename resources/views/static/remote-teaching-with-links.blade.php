@@ -35,11 +35,11 @@
                         @lang('remote-teaching.intro.points.3.5')
                     </li>
                     <li>
-                        <a href="{{route('resources_teach')}}">@lang('remote-teaching.intro.points.4.0')</a>:
+                        <a href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.0')</a>:
                         @lang('remote-teaching.intro.points.4.1')
-                        <a href="{{route('resources_teach')}}">@lang('remote-teaching.intro.points.4.2')</a>
+                        <a href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.2')</a>
                         @lang('remote-teaching.intro.points.4.3')
-                        <a href="{{route('resources_learn')}}">@lang('remote-teaching.intro.points.4.4')</a>
+                        <a href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.4')</a>
                         @lang('remote-teaching.intro.points.4.5')
 
                     </li>
