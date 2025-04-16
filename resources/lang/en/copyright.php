@@ -3,7 +3,7 @@
 return [
     'title' => 'Copyright notice',
     'training' => [
-        0 => 'The EU Code Week website for schools',
+        0 => 'The EU Code Week website',
         1 => 'is a service supported by the European Commission',
     ],
     'licence' => [

@@ -52,6 +52,7 @@ return [
             'Coding' => 'Kodning',
             'Special Education Needs' => 'Særlige uddannelsesbehov',
             'Other' => 'Andet',
+            'Programming' => 'Programmering',
         ],
         'types' => [
             'Tutorial' => 'Vejledning',

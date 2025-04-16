@@ -93,7 +93,7 @@
 
                     <div style="margin-top: 5px; margin-bottom: 20px; flex: 1; position: relative">
                         @lang('values.3.content.1') <a
-                                href="{{route('resources_teach')}}">@lang('values.3.content.2')</a> @lang('values.3.content.3')
+                                href="{{route('resources_all')}}">@lang('values.3.content.2')</a> @lang('values.3.content.3')
                         <a href="{{route('events_map')}}">@lang('values.3.content.4')</a> @lang('values.3.content.5')
                     </div>
 
@@ -136,7 +136,7 @@
 
                     <div style="margin-top: 5px; margin-bottom: 20px; flex: 1; position: relative">
                         @lang('values.5.content.1') <a
-                                href="{{route('resources_learn')}}">@lang('values.5.content.2')</a> @lang('values.5.content.3')
+                                href="{{route('resources_all')}}">@lang('values.5.content.2')</a> @lang('values.5.content.3')
                     </div>
 
                     <div style="position: relative; margin-left: 10px;">

@@ -122,6 +122,14 @@ Route::get('/girls-in-digital-week', [StaticPageController::class, 'static'])->n
     'girls-in-digital-week'
 );
 
+Route::get('/educational-resources', [StaticPageController::class, 'static'])->name(
+    'educational-resources'
+);
+
+Route::get('/webinars', [StaticPageController::class, 'static'])->name(
+    'webinars'
+);
+
 Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name(
     'remote-teaching'
 );
@@ -318,11 +326,8 @@ Route::view(
 Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware('auth');
 Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
-Route::get('/resources', [ResourcesController::class, 'learn'])->name('resources');
-Route::get('/resources/learn', [ResourcesController::class, 'learn'])->name('resources_learn');
-Route::get('/resources/teach', [ResourcesController::class, 'teach'])->name(
-    'resources_teach'
-);
+Route::get('/resources', [ResourcesController::class, 'all'])->name('resources');
+Route::get('/resources/learn-and-teach', [ResourcesController::class, 'all'])->name('resources_all');
 Route::post('/resources/search', [SearchResourcesController::class, 'search'])->name(
     'search_resources'
 );
@@ -666,7 +671,7 @@ Route::get(
 )->name('leading-teachers-document');
 
 Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
-Route::get('podcast/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
+Route::get('podcasts/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
 
 Route::get('/unsubscribe/{email}/{magic}', [UnsubscribeController::class, 'index'])->name('unsubscribe');
 

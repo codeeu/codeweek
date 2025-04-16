@@ -52,6 +52,7 @@ return [
             'Coding' => 'Coding',
             'Special Education Needs' => 'Sonderpädagogik',
             'Other' => 'Sonstige',
+            'Programming' => 'Programmierung',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',
