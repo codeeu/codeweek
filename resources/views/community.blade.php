@@ -547,9 +547,10 @@
                     let fullBio = teacher.bio || 'No bio available';
                     teacherDetails += `
                         <li data-city="${teacher.city}" class="flex flex-col-reverse max-md:justify-end justify-between min-w-[353px] md:flex-row flex gap-4 items-start p-6 w-11/12 md:w-full h-full 
-                            md:border-l-[5px] md:border-l-orange-500 hover:md:border-l-[#1C4DA1]
-                            max-md:border-t-[5px] max-md:border-t-orange-500 hover:max-md:border-t-orange-500 hover:max-md:border-t-transparent hover:max-md:bg-primary-[#1C4DA1]
-                            max-md:border-r-2 max-md:border-r-[#D6D8DA] md:border-b-2 md:border-b-[#D6D8DA] hover:cursor-pointer">
+                            border-t-[5px] md:border-t-0 md:border-l-[5px] border-[#1C4DA1] 
+                            hover:border-l-orange-500 
+                            max-md:border-r-2 max-md:border-r-[#D6D8DA] md:border-b-2 md:border-b-[#D6D8DA] 
+                            cursor-pointer">
                             <div class="flex flex-col justify-center">
                                 <div class="flex flex-col justify-center w-full font-semibold">
                                     <h4 class="text-xl leading-snug text-black">${teacher.firstname} ${teacher.lastname}</h4>
@@ -626,6 +627,8 @@
                 // Add click event listener to each teacher list item to highlight the corresponding marker
                 document.querySelectorAll('#teacher-details li').forEach(function(li) {
                     li.addEventListener('click', function() {
+                        document.querySelectorAll('#teacher-details li').forEach(el => el.classList.remove('active'));
+                        li.classList.add('active');
                         const teacherCity = li.getAttribute('data-city');
                         for (const key in markers) {
                             const marker = markers[key];
