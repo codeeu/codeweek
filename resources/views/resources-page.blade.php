@@ -75,7 +75,7 @@
                         All of these resources are free of charge.</p>
                 </div>
                 <div class="mt-5">
-                    <button onclick="location.href='{{route("resources_learn")}}';" type="button"
+                    <button onclick="location.href='{{route("resources_all")}}';" type="button"
                             class="inline-flex items-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
                         View Materials
                     </button>
@@ -92,7 +92,7 @@
                         teacher practice.</p>
                 </div>
                 <div class="mt-5">
-                    <button onclick="location.href='{{route("resources_teach")}}';" type="button"
+                    <button onclick="location.href='{{route("resources_all")}}';" type="button"
                             class="inline-flex items-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
                         View Materials
                     </button>

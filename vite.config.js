@@ -4,27 +4,8 @@ import vue from '@vitejs/plugin-vue';
 import i18n from 'laravel-vue-i18n/vite';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
-import fs from 'fs';
-import path from 'path';
-
-// Optional: detect local environment
-const isLocal = process.env.APP_ENV === 'local' || process.env.NODE_ENV === 'development';
 
 export default defineConfig({
-    server: {
-        host: 'codeweek.europa',
-        port: 5173,
-        ...(isLocal && fs.existsSync(path.resolve(process.env.HOME, '.config/valet/Certificates/codeweek.europa.key')) && {
-            https: {
-                key: fs.readFileSync(path.resolve(process.env.HOME, '.config/valet/Certificates/codeweek.europa.key')),
-                cert: fs.readFileSync(path.resolve(process.env.HOME, '.config/valet/Certificates/codeweek.europa.crt')),
-            },
-        }),
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-        }
-    },
-
     plugins: [
         vue({
             template: {
@@ -44,17 +25,25 @@ export default defineConfig({
         }),
         i18n('resources/lang')
     ],
-
     css: {
         postcss: {
-            plugins: [tailwindcss, autoprefixer],
+            plugins: [
+                tailwindcss,  // Tailwind CSS
+                autoprefixer, // Autoprefixer
+            ],
         },
     },
-
     resolve: {
         alias: {
             '@': '/resources/js',
             'vue': 'vue/dist/vue.esm-bundler.js',
         },
+    },
+    define: {
+        global: 'window',  // Fix `crypto.getRandomValues` issue
+    },
+    esbuild: {
+        jsxFactory: 'h',
+        jsxFragment: 'Fragment',
     },
 });

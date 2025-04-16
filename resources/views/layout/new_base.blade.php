@@ -21,6 +21,9 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
     <link href="{{asset('css/fonts.css')}}" media="screen" rel="stylesheet" />
+    <link href="{{asset('css/swiper.css')}}" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     @stack('extra-css')
 
@@ -36,6 +39,24 @@
             'url' => url('/')
         ]) !!};
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '981788817415269'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" 
+      src="https://www.facebook.com/tr?id=981788817415269&ev=PageView
+      &noscript=1"/>
+    </noscript>
 
     <!-- Title, keywords, description -->
     @hasSection('description')
@@ -181,9 +202,11 @@
     {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
     <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
     @include('scripts.countdown')
+    <script type="text/javascript" src="{{ asset('plugins/slick-slider/slick.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
     @livewireScripts
     <script src="https://unpkg.com/vue-select@latest"></script>
+{{--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>--}}
     {{--<script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js?_g=1663162661" async></script>--}}
 
     @stack('scripts')

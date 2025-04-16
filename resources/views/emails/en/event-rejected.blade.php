@@ -20,7 +20,7 @@ If you have any other questions, do not hesitate to contact the [Ambassador]({{r
 In the meantime, are you interested in learning more about coding or looking for some inspiration for preparing a #EUCodeWeek activity?
 
 
-@component('mail::button', ['url' => route('resources_learn')])
+@component('mail::button', ['url' => route('resources_all')])
     Visit the resources page of the EU Code Week website
 @endcomponent
 
