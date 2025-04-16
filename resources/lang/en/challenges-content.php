@@ -44,14 +44,14 @@ return [
         'step-by-step-instructions' => 'Step by step instructions',
         'materials' => [
             'one' => 'Printed Careers as Constellations worksheet (A3 recommended)',
-            'two' => 'Paper & markers/pens for additional notes',
+            'two' => 'Paper <span class="font-sans">&</span> markers/pens for additional notes',
             'three' => 'Optional: Digital version (students can create constellations using Miro, Canva, or Google Jamboard)',
         ],
         'titles' =>  [
             'one' => 'Warm-up Discussion: What Are Your Dots? (5 min)',
             'two' => 'Mapping Constellations: Connecting Interests to Tech (20 min)',
             'three' => 'Example Connections',
-            'four' => ' Reflection & Sharing: What Patterns Did You Find? (15 min)',
+            'four' => ' Reflection <span class="font-sans">&</span> Sharing: What Patterns Did You Find? (15 min)',
             'five' => 'Extending the Activity',
         ],
         'intro' => '<p>Start by challenging traditional career ideas with a question:</p>
@@ -63,7 +63,7 @@ return [
             'three' => 'Tech-related topics (AI, robotics, game design, digital art, sustainability tech, etc.)',
             'four' => '<strong>Drawing lines</strong> to show connections between their interests and technology',
             'five' => 'Loves music? → Interested in AI? → AI-generated music tools!',
-            'six' => 'Loves drawing? → Interested in game design? → 2D/3D animation & coding',
+            'six' => 'Loves drawing? → Interested in game design? → 2D/3D animation <span class="font-sans">&</span> coding',
             'seven' => 'Passionate about climate change? → Interested in data? → Environmental tech',
             'eight' => 'Invite students to share surprising connections they discovered.',
             'nine' => 'Ask: Which dots felt unrelated at first? How did they connect?',
@@ -440,7 +440,7 @@ return [
     ],
     'haunted-house' => [
         'title' => 'Haunted House in Hedy',
-        'author' => 'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
+        'author' => 'Felienne Hermans, Leiden University - Ramon Moorlag, I <span class="font-sans">&</span>I - CodeWeek NL',
         'audience' => 'Teachers and educators',
         'duration' => '1 hour or 2 hours depending on prior knowledge',
         'purposes' => [
@@ -764,7 +764,7 @@ return [
         ],
         'description' => 'Create a Scratch block-based program using the AI “Human Body” extension in a creative and engaging way, in order to draw on a screen without the need for a traditional mouse or touchscreen.',
         'instructions' => [
-            'Connect to the https://ai.thestempedia.com and create a teacher & students accounts.',
+            'Connect to the https://ai.thestempedia.com and create a teacher <span class="font-sans">&</span> students accounts.',
             'Import the extensions ‘Human Body Detection’,’ Pen’,’ Text to Speech’.',
             'Add the ‘Pencil’ Sprite from the library and create 7 sprites (‘write’, ‘clear’, ‘black’, ‘red’, ‘blue’, ‘green’, ‘pink’).',
             'Write commands to check what happens when the ‘pencil’ sprite touches one of the other sprites.',
