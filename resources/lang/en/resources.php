@@ -101,6 +101,7 @@ return [
             'Special Education Needs' => 'Special Education Needs',
             'Other' => 'Other',
             'Music' => 'Music',
+            'Programming' => 'Programming',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',

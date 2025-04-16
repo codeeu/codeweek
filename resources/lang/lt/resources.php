@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Specialiojo ugdymo poreikiai',
             'Other' => 'Kita',
             'Music' => 'Muzika',
+            'Programming' => 'Programavimas',
         ],
         'types' => [
             'Tutorial' => 'Mokymo vadovas',

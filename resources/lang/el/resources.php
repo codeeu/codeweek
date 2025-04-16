@@ -52,6 +52,7 @@ return [
             'Coding' => 'Συγγραφή κώδικα',
             'Special Education Needs' => 'Ανάγκες ειδικής εκπαίδευσης',
             'Other' => 'Άλλο',
+            'Programming' => 'Προγραμματισμός',
         ],
         'types' => [
             'Tutorial' => 'Μάθημα',

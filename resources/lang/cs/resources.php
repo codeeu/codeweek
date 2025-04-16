@@ -88,6 +88,7 @@ return [
             'Special Education Needs' => 'Zvláštní vzdělávací potřeby',
             'Other' => 'Jiné',
             'Music' => 'Hudba',
+            'Programming' => 'Programování',
         ],
         'types' => [
             'Tutorial' => 'Tutoriál',

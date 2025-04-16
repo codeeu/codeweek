@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Sajátos nevelési igények',
             'Other' => 'Egyéb',
             'Music' => 'Zene',
+            'Programming' => 'Programozás',
         ],
         'types' => [
             'Tutorial' => 'Bemutató',

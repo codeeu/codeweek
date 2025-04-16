@@ -88,6 +88,7 @@ return [
             'Special Education Needs' => 'Специални образователни потребности',
             'Other' => 'Друго',
             'Music' => 'Музика',
+            'Programming' => 'Програмиране',
         ],
         'types' => [
             'Tutorial' => 'Самоучител',

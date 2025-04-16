@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Nevoja të veçanta arsimore',
             'Other' => 'Tjetër',
             'Music' => 'Muzikë',
+            'Programming' => 'Programimi',
         ],
         'types' => [
             'Tutorial' => 'Udhëzues',

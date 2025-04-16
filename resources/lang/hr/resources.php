@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Posebne obrazovne potrebe',
             'Other' => 'Ostalo',
             'Music' => 'Glazba',
+            'Programming' => 'Programiranje',
         ],
         'types' => [
             'Tutorial' => 'Tutorijal',
