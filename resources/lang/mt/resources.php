@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Edukazzjoni għall-Bżonnijiet Speċjali',
             'Other' => 'Oħrajn',
             'Music' => 'Mużika',
+            'Programming' => 'Ipprogrammar',
         ],
         'types' => [
             'Tutorial' => 'Taħriġ',

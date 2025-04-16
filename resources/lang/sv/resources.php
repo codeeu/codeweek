@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Särskilda utbildningsbehov',
             'Other' => 'Annat',
             'Music' => 'Musik',
+            'Programming' => 'Programmering',
         ],
         'types' => [
             'Tutorial' => 'Handledning',

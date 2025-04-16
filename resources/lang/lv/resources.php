@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Īpašas izglītības vajadzības',
             'Other' => 'Cits',
             'Music' => 'Mūzika',
+            'Programming' => 'Programmēšana',
         ],
         'types' => [
             'Tutorial' => 'Pamācība',

@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Bisogni educativi speciali',
             'Other' => 'Altro',
             'Music' => 'Musica',
+            'Programming' => 'Pianificazione',
         ],
         'types' => [
             'Tutorial' => 'Tutorial',

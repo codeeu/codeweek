@@ -88,6 +88,7 @@ return [
             'Special Education Needs' => 'Erityisryhmät',
             'Other' => 'Muu',
             'Music' => 'Musiikki',
+            'Programming' => 'Ohjelmointi',
         ],
         'types' => [
             'Tutorial' => 'Opastus',

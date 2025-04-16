@@ -87,6 +87,7 @@ return [
             'Special Education Needs' => 'Özel Eğitim İhtiyaçları',
             'Other' => 'Diğer',
             'Music' => 'Müzik',
+            'Programming' => 'Programlama',
         ],
         'types' => [
             'Tutorial' => 'Eğitim',
