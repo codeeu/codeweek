@@ -1,7 +1,7 @@
-
+<!-- Analytics - only runs if user accepts statistics cookies -->
 
 <!-- Matomo -->
-<script type="text/javascript">
+<script type="text/plain" data-cookieconsent="statistics">
     var _paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['trackPageView']);
