@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="{{App::getLocale()}}" class="no-js">
 <head>
-    @if(!isset(Request::header()["dnt"]))
-        @if (Cookie::get('codeweek_cookie_consent') == 1)
-            @include('layout.analytics')
-        @endif
-    @else
-        <!-- DO NOT TRACK removed Analytics -->
-    @endif
+    @include('layout.analytics')
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
