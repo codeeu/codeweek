@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="{{App::getLocale()}}" class="no-js">
 <head>
-@if(!isset(Request::header()["dnt"]))
-    @if (Cookie::get('codeweek_cookie_consent') == 1)
-        @include('layout.analytics')
-    @endif
-@else
-    <!-- DO NOT TRACK removed Analytics -->
-    @endif
+    @include('layout.analytics')
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -113,21 +107,17 @@
 </div>
 
 <!-- Scripts -->
-@if(!isset(Request::header()["dnt"]))
-    @if (Cookie::get('codeweek_cookie_consent') == 1)
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script>(function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
-    @endif
-@endif
-
+<script data-cookieconsent="marketing" async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script type="text/plain" data-cookieconsent="marketing">
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 @vite('resources/js/app.js')
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
