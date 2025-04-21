@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => 'U 2024. godini EU nedelja programiranja će se održati između 14. i 27. oktobra.',
+    /*'when-title' => 'U 2024. godini EU nedelja programiranja će se održati između 14. i 27. oktobra.',
     'when-text' => '<p>EU nedelja programiranja je samonikli pokret koji slavi kreativnost, rešavanje problema i saradnju kroz programiranje i druge aktivnosti u vezi sa tehnologijom. Ideja je da se programiranje učini vidljivijim i dostupnijim, da se pokaže mladima, odraslima i starijim osobama kako se ideje realizuju pomoću kodova, da se demistifikuje programiranje i okupe motivisani ljudi da uče zajedno.</p>',
     'codeweek_in_numbers-title' => 'Nedelja programiranja u brojevima',
     'codeweek_in_numbers-text' => '<p>U 2021. godini, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miliona ljudi</a> u više od 80 zemalja širom sveta učestvovalo je u EU nedelji programiranja.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Nikad nije bilo lakše napraviti svoju aplikaciju, svog robota ili možda konačno izmisliti leteće automobile, zašto da ne! Iako učenje programiranja nije lagano, puno je kreativnih izazova, a uz podršku zajednice i veoma je zabavno. Da li ste spremni da prihvatite izazov i postanete stvaralac?</p>
 
-                    <p>Programiranje pomaže u razvijanju kompetencija kao što su računarsko razmišljanje, rešavanje problema, kreativnost i timski rad – veštine koje su neophodne u svim životnim sferama.</p>',
+                    <p>Programiranje pomaže u razvijanju kompetencija kao što su računarsko razmišljanje, rešavanje problema, kreativnost i timski rad – veštine koje su neophodne u svim životnim sferama.</p>',*/
     'why_coding-quote' => '<p>Alesandro Boljolo, koordinator tima ambasadora volontera EU nedelje programiranja, rekao je:<blockquote>
                             <p>‚‚Od početka čovečanstva napravili smo mnoge stvari koje su promenile naše živote koristeći kamen, gvožđe, papir i olovku. Sada živimo u drugačijoj eri gde je naš svet kodiran. Različite ere zahtevaju drugačije poslove i veštine. Tokom Nedelje programiranja želimo da svakom Evropljaninu pružimo priliku da otkrije šta je programiranje i da se zabavi programirajući. Naučimo kako da programiranjem oblikujemo našu budućnost.“</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Pridružite se EU nedelji programiranja',
+    /*'join_codeweek-title' => 'Pridružite se EU nedelji programiranja',
     'join_codeweek-text' => '<p>Pridružite se EU nedelji programiranja <a href="/guide">organizovanjem aktivnosti u vezi sa programiranjem</a> u svom gradu, učestvovanjem u <a href="/codeweek4all">izazovu Nedelja programiranja za sve</a> i povezivanjem aktivnosti sa zajednicama u zemlji i van nje, ili nam pomozite da raširimo viziju Nedelje programiranja kao <a href="/ambassadors">Ambasador EU nedelje programiranja</a> za vašu zemlju!</p>',
-    'partners_and_sponsors' => 'Partneri i sponzori',
+    'partners_and_sponsors' => 'Partneri i sponzori',*/
 ];

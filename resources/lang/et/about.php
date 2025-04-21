@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => '2024. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 14. kuni 27. oktoober.',
+    /*'when-title' => '2024. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 14. kuni 27. oktoober.',
     'when-text' => '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil toimuv liikumine, millega tähistatakse loomingulisust, probleemide lahendamist ja koostööd nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesmärk on muuta programmeerimine nähtavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi õppima.</p>',
     'codeweek_in_numbers-title' => 'Programmeerimisnädal Code Week numbrites',
     'codeweek_in_numbers-text' => '<p>2021. aastal võttis ELi programmeerimisnädalast Code Week osa <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miljonit inimest</a> ja rohkem kui 80 riiki.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Kunagi varem ei ole olnud lihtsam oma rakendust luua, robotit ehitada või kasvõi lendavaid autosid leiutada! Teekond ei ole küll lihtne, kuid see on täis loomingulisi väljakutseid, toetavat kogukonda ja palju rõõmu. Kas olete valmis väljakutse vastu võtma ja tegutsejaks hakkama?</p>
 
-                    <p>Programmeerimine aitab arendada erinevaid oskusi, nagu algoritmiline mõtlemine, probleemide lahendamine, loomingulisus ja tiimitöö – väga kasulikud oskused igas valdkonnas.</p>',
+                    <p>Programmeerimine aitab arendada erinevaid oskusi, nagu algoritmiline mõtlemine, probleemide lahendamine, loomingulisus ja tiimitöö – väga kasulikud oskused igas valdkonnas.</p>',*/
     'why_coding-quote' => '<p>Alessandro Bogliolo, ELi programmeerimisnädala Code Week saadik ja vabatahtlikest koosneva meeskonna eestvedaja ütles:<blockquote>
                             <p>„Algusaegadest saadik on inimkond loonud, kasutades selleks kivi, rauda, paberit ja puitu. See on muutnud meie elu tundmatuseni. Nüüd elame aga teisel ajal, kus maailma voolitakse programmeerimiskeele abil. Erinevad ajad nõuavad erinevaid töökohti ja oskusi. Programmeerimisnädalaga Code Week anname igale eurooplasele võimaluse programmeerimisega tutvuda. Õpime programmeerimist, et kujundada oma tulevikku.“</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Liituge ELi programmeerimisnädalaga Code Week',
+    /*'join_codeweek-title' => 'Liituge ELi programmeerimisnädalaga Code Week',
     'join_codeweek-text' => '<p>Liituge ELi programmeerimisnädalaga Code Week, <a href="/guide">korraldades oma linnas programmeerimistegevusi</a>, liitudes programmeerimisnädala väljakutsega <a href="/codeweek4all">Code Week 4 All</a> ning aidates ühendada erinevaid kogukondi ja rahvuseid või jagades programmeerimisnädala visiooni <a href="/ambassadors">oma riigi saadikuna</a>!</p>',
-    'partners_and_sponsors' => 'Partnerid ja sponsorid',
+    'partners_and_sponsors' => 'Partnerid ja sponsorid',*/
 ];

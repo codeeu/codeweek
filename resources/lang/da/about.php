@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => 'EU’s kodeuge 2024 finder sted mellem den 14. og 27. oktober.',
+    /*'when-title' => 'EU’s kodeuge 2024 finder sted mellem den 14. og 27. oktober.',
     'when-text' => '<p>EU’s kodeuge er en græsrodsbevægelse, der fejrer kreativitet, problemløsning og samarbejde gennem programmering og andre tekniske aktiviteter. Idéen er at gøre programmering mere synligt for at vise unge, voksne og ældre, hvordan man fører sine idéer ud i livet med kode, at afmystificere disse færdigheder og at samle motiverede mennesker i et læringsmiljø.</p>',
     'codeweek_in_numbers-title' => 'Kodeugen i tal',
     'codeweek_in_numbers-text' => '<p>I 2021 deltog <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 millioner mennesker</a> i over 80 lande på tværs af kloden i EU’s kodeuge.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Det har aldrig været lettere at lave sin egen app, bygge sin egen robot eller opfinde flyvende biler – hvorfor ikke! Det er ikke en let rejse, men det er en rejse fuld af kreative udfordringer, et støttende fællesskab og masser af sjov. Er du klar til at tage udfordringen op og blive en skaber?</p>
 
-                    <p>Kodning er også med til at udvikle kompetencer som for eksempel datalogisk tænkning, problemløsning, kreativitet og teamwork – virkelig nyttige færdigheder uanset hvilken vej i livet man vælger.</p>',
+                    <p>Kodning er også med til at udvikle kompetencer som for eksempel datalogisk tænkning, problemløsning, kreativitet og teamwork – virkelig nyttige færdigheder uanset hvilken vej i livet man vælger.</p>',*/
     'why_coding-quote' => '<p>Alessandro Bogliolo, koordinator for EU’s kodeuges team af frivillige ambassadører, sagde:<blockquote>
                             <p>»Fra tidernes morgen har vi gjort mange ting med sten, jern, papir og blyant, som har forandret vores liv. Nu lever vi i en anden tidsalder, hvor vores verden formes i kode. Forskellige tidsaldre har forskellige job og krav til færdigheder. I kodeugen vil vi give europæerne mulighed for at opdage kodning og lege med det. Vi skal lære at kode, så vi kan forme vores fremtid«.</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Vær med i EU’s kodeuge',
+    /*'join_codeweek-title' => 'Vær med i EU’s kodeuge',
     'join_codeweek-text' => '<p>Vær med i EU’s kodeuge ved at <a href="/guide">afholde en kodeaktivitet</a> i din by og deltage i <a href="/codeweek4all">Code Week 4 All-udfordringen</a> og andre aktiviteter på tværs af lokalsamfund og grænser, eller hjælp os med at udbrede budskabet om kodeugen som <a href="/ambassadors">ambassadør for EU’s kodeuge</a> i dit land!</p>',
-    'partners_and_sponsors' => 'Partnere og sponsorer',
+    'partners_and_sponsors' => 'Partnere og sponsorer',*/
 ];
