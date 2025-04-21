@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => 'Tokom 2024, Sedmica kodiranja EU će se odvijati od 14. do 27. oktobra.',
+    /*'when-title' => 'Tokom 2024, Sedmica kodiranja EU će se odvijati od 14. do 27. oktobra.',
     'when-text' => '<p>Sedmica kodirnja EU je pokret širokih masa u kom se slavi kreativnost, rješavanje problema i saradnja putem programiranja i drugih tehnoloških aktivnosti. Zamisao je da se programiranje načini vidljivijim, da se mladima, odraslima i starijima pokaže kako kodiranjem mogu svoje ideje sprovesti u realnost, da se te vještine demistificiraju i da se okupe oni koji su motivirani za učenje.</p>',
     'codeweek_in_numbers-title' => 'Sedmica kodiranja u ciframa',
     'codeweek_in_numbers-text' => '<p>U Sedmici kodiranja EU 2021. učestvovalo je <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miliona ljudi</a> iz preko 80 zemalja širom svijeta.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Nikad nije bilo lakše napraviti svoju vlastitu aplikaciju, sagraditi svog vlastitog robota ili izmisliti leteće automobile, zašto ne! To nije lagano putovanje, ali jest putovanje puno kreativnih izazova, zajednice koja pruža potporu i jako je zabavno. Jeste li spremni prihvatiti izazov i postati stvoritelj?</p>
 
-                    <p>Kodiranje također doprinosi razvijanju sposobnosti poput računarskog razmišljanja, rješavanja problema, kreativnosti i timskog rada - što su stvarno dobre vještine za sva životna usmjerenja.</p>',
+                    <p>Kodiranje također doprinosi razvijanju sposobnosti poput računarskog razmišljanja, rješavanja problema, kreativnosti i timskog rada - što su stvarno dobre vještine za sva životna usmjerenja.</p>',*/
     'why_coding-quote' => '<p>Aleksandro Bogliolo, koordinator tima Sedmice kodiranja EU od ambasadora volontera, izjavio je:<blockquote>
                             <p>\'Od samog početka mi smo uradili mnogo stvari sa kamenom, željezom, papirom i olovkama da smo transformisali svoje živote. Sad živimo u drugom dobu gdje je naš svijet oblikovan u kodiranju. Različita doba imaju različite zahtjeve u smislu poslova i vještina. Tokom Sedmice kodiranja mi želimo svakom Evropljaninu dati šansu da otkrije kodiranje i da se njime zabavi.  Naučimo kodirati kako bismo oblikovali svoju budućnost.\'</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Pridružite se Sedmici kodiranja EU',
+    /*'join_codeweek-title' => 'Pridružite se Sedmici kodiranja EU',
     'join_codeweek-text' => '<p>Pridružite se Sedmici kodiranja EU <a href="/guide">tako što ćete organizirati aktivnosti kodiranja</a> u svom gradu, pridružiti se <a href="/codeweek4all">Izazovu Sedmice kodiranja za sve</a> i povezivati aktivnosti kroz zajednice i preko granica, ili nam pomoći da proširujemo viziju Sedmice kodiranja kao <a href="/ambassadors">ambasador Sedmice kodiranja EU</a> za svoju zemlju!</p>',
-    'partners_and_sponsors' => 'Partneri i sponzori',
+    'partners_and_sponsors' => 'Partneri i sponzori',*/
 ];
