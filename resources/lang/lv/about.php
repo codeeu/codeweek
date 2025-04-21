@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => '2024. gadā ES programmēšanas nedēļa notiks no 14. līdz 27. oktobrim.',
+    /*'when-title' => '2024. gadā ES programmēšanas nedēļa notiks no 14. līdz 27. oktobrim.',
     'when-text' => '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, kas veltīta radošumam, problēmu risināšanai un sadarbībai, izmantojot programmēšanu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmēšanu populārāku, parādīt jauniešiem, pieaugušajiem un vecāka gadagājuma cilvēkiem, kā ar programmēšanas palīdzību īstenot idejas, kliedēt maldīgus priekšstatus par programmēšanas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>',
     'codeweek_in_numbers-title' => 'Programmēšanas nedēļa skaitļos',
     'codeweek_in_numbers-text' => '<p>2021. gadā ES programmēšanas nedēļā piedalījās <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miljoni cilvēku</a> vairāk nekā 80 pasaules valstīs.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Nekad agrāk nav bijis tik viegli izveidot pašam savu lietotni, uzbūvēt savu robotu vai izgudrot lidojošas mašīnas! Kāpēc gan ne? Tas nav vienkāršs, bet radošiem izaicinājumiem pilns ceļš, kurā var doties kopā ar atbalstošu kopienu un gūt daudz prieka. Vai esi gatavs pieņemt izaicinājumu un kļūt par veidotāju?</p>
 
-                    <p>Programmēšana arī palīdz attīstīt tādas kompetences kā skaitļošanas tipa domāšana, problēmu risināšana, radošums un darbs grupā — šādas prasmes lieti noder jebkura gadagājuma cilvēkam.</p>',
+                    <p>Programmēšana arī palīdz attīstīt tādas kompetences kā skaitļošanas tipa domāšana, problēmu risināšana, radošums un darbs grupā — šādas prasmes lieti noder jebkura gadagājuma cilvēkam.</p>',*/
     'why_coding-quote' => '<p>Alesandro Bodžliolo, kurš koordinē ES programmēšanas nedēļas 90 brīvprātīgos, teica:<blockquote>
                             <p>“Jau kopš aizvēsturiskiem laikiem esam darījuši dažādas tādas lietas ar akmeni, dzelzi, papīru un zīmuli, kas ir pārveidojušas mūsu dzīvi. Tagad mēs dzīvojam citādā laikmetā, kur mūsu pasaule ir ietverta programmēšanas kodā. Dažādos laikmetos ir nepieciešami atšķirīgi arodi un prasmes. Programmēšanas nedēļas laikā mēs vēlamies ikvienam eiropietim sniegt iespēju atklāt programmēšanu un gūt prieku no tās. Mācīsimies programmēt, lai veidotu savu nākotni”.</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Pievienojieties ES programmēšanas nedēļai',
+    /*'join_codeweek-title' => 'Pievienojieties ES programmēšanas nedēļai',
     'join_codeweek-text' => '<p>Pievienojieties ES programmēšanas nedēļai, <a href="/guide">organizējot programmēšanas pasākumu</a> savā pilsētā, pievienojoties <a href="/codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a> un veidojot sadarbību starp pasākumiem dažādās kopienās un valstīs vai palīdzot mums popularizēt programmēšana nedēļu, kļūstot par <a href="/ambassadors">ES programmēšanas nedēļas vēstnieku</a> savā valstī!</p>',
-    'partners_and_sponsors' => 'Partneri un sponsori',
+    'partners_and_sponsors' => 'Partneri un sponsori',*/
 ];
