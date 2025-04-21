@@ -1,33 +1,53 @@
 <?php
 
 return [
-    'when-title' => 'V roku 2024 sa Európsky týždeň programovania koná od 14. do 27. októbra.',
-    'when-text' => '<p>Európsky týždeň programovania je nezávislé hnutie, ktoré oslavuje tvorivosť, riešenie problémov a spoluprácu prostredníctvom programovania a ďalších technologických aktivít. Zámerom je viac zviditeľniť programovanie, ukázať mladým, dospelým a starším ľuďom, ako vdýchnuť život nápadom pomocou programovania, rúcať mýty o týchto zručnostiach a spojiť motivovaných ľudí, aby sa spolu vzdelávali.</p>',
-    'codeweek_in_numbers-title' => 'Týždeň programovania v číslach',
-    'codeweek_in_numbers-text' => '<p>V roku 2021 sa Európskeho týždňa programovanie zúčastnilo <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milióna ľudí</a> vo viac ako 80 krajinách celého sveta.</p>
-                    <p>Priemerný vek účastníkov bol 11 rokov a v roku 2021 bolo 49 % účastníkov ženského pohlavia. 88 % podujatí Európskeho týždňa programovania sa uskutočnilo na školách, čo dosvedčuje úspešnosť úsilia o vybavenie učiteľov zručnosťami počas kampane v roku 2021.</p>
-                    <p>Ktokoľvek môže usporiadať aktivitu alebo sa zapojiť do aktivity. Stačí si vybrať tému a cieľovú skupinu a <a href="/add">pridať aktivitu</a> na <a href="/events">mapu</a></p>',
-    'run_by_volunteers-title' => 'Hnutie dobrovoľníkov',
-    'run_by_volunteers-text' => '<p>Európsky týždeň programovania organizujú dobrovoľníci. Jeden či niekoľkí <a href="/ambassadors">veľvyslanci Týždňa programovania</a> koordinujú iniciatívu vo svojej vlasti, no ktokoľvek môže usporiadať vlastnú programátorskú aktivitu a pridať ju na mapu na stránke <a href="/">codeweek.eu</a>.</p>',
+    'when-title' => 'Kreativita, kódovanie a spolupráca bez hraníc',
+    'when-text' =>  '<p> Európsky týždeň kódovania je dynamické hnutie na miestnej úrovni, ktoré umožňuje ľuďom všetkých vekových kategórií preskúmať kódovanie, kreativitu a riešenie problémov. Odstraňuje prekážky digitálnych zručností a robí programovanie dostupnejším, viditeľnejším a inkluzívnejším. Od tried až po komunitné priestory spája pedagógov, študentov a technologických nadšencov, prináša nápady do života prostredníctvom digitálnych inovácií a podporuje spoluprácu v celej Európe.
+                    </p>',
+    'codeweek_in_numbers-title' => 'Od iskry ku hnutiu',
+    'codeweek_in_numbers-text' => '<p>To, čo začalo v roku 2013 ako malá iniciatíva na miestnej úrovni, sa rozrástlo na celoročné hnutie dosahujúce milióny ľudí. Európsky týždeň kódovania je teraz nepretržitou iniciatívou s tisíckami aktivít, ktoré sa počas roka konajú v Európe aj mimo nej. Dvojtýždňové podujatie, ktoré sa koná každý október, je vyvrcholením tohto úsilia – oslavou snahy komunity sprístupniť kódovanie, digitálnu kreativitu a vzdelávanie STEM všetkým.
+                                    </p>
+                                    <p>S desiatkami tisíc aktivitami a neustále rastúcou sieťou učiteľov, študentov a partnerov Code Week naďalej inšpiruje inováciu a vybavuje ďalšiu generáciu zručnosťami, ktoré budú formovať budúcnosť.
+                                    </p>',
+    'run_by_volunteers-title' => 'Poháňané medzinárodným spoločenstvom',
+    'run_by_volunteers-text' => '<p>Európsky týždeň kódovania je riadený zanietenou komunitou pedagógov, ambasádorov a partnerov, ktorí oživujú kódovanie v celej Európe. Ambasádori Code Week koordinujú aktivity vo svojich krajinách, zatiaľ čo Leading Teachers je rastúca komunita viac ako 450 pedagógov z celej Európy, ktorí povzbudzujú školy, učiteľov a študentov, aby organizovali aktivity a registrovali ich na <a href="/community?country_iso=IE">mape Code Week</a>.
+                                </p>
+                                <p>Každý môže prispieť pridaním vlastnej aktivity na mapu. Spoločne môžeme sprístupniť kódovanie všetkým!
+                                </p>',
     'supported_by_commission-title' => 'S podporou Európskej komisie',
-    'supported_by_commission-text' => '<p>Európsky týždeň programovania rozprúdili v roku 2013 mladí poradcovia pre Digitálnu agendu Európy. Európska komisia podporuje Európsky týždeň programovania v rámci svojej stratégie v oblasti <a href="http://ec.europa.eu/priorities/digital-single-market/">jednotného digitálneho trhu</a>. V <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">akčnom pláne digitálneho vzdelávania</a> Komisia osobitne školy podnecuje, aby sa zapojili do tejto iniciatívy.</p>',
-    'schools-title' => 'Školy',
-    'schools-text' => '<p>Školy na všetkých úrovniach a učitelia všetkých predmetov sú osobitne vyzvaní, aby sa zapojili do Európskeho týždňa programovania, čo umožní ich študentom zoznámiť sa s digitálnou tvorivosťou a programovaním. Ďalšie informácie o iniciatíve a návod na usporiadanie aktivity nájdete na našej webovej stránke pre učiteľov: <a href="/schools">CodeWeek.eu/Schools</a></p>',
-    'why_coding-title' => 'Prečo programovanie?',
-    'why_coding-text' => '<p>Je to o Pii, ktorá mala pocit, že musí študovať právo, hoci ju vždy bavila matematika a počítače. Je to o Markovi, ktorý má nápad na lepšiu sociálnu sieť, ale nevie ju sám vystavať. Je to o Alice, ktorá sníva o tom, že bude vyrábať roboty, pretože jej rodičia nedovolili mačku.</p>
-
-                    <p>Je to o všetkých vás, ktorí už pomáhate, aby sa tieto sny stali skutočnosťou.</p>
-
-                    <p>Vlastne je to o nás všetkých. O našej budúcnosti. Technológie formujú naše životy, a pritom len menšinu nechávame rozhodovať o tom, na čo a ako ich využívame. Dokážeme viac než len zdieľať a hodnotiť príspevky. Môžeme vdýchnuť život našim bláznivým nápadom, vybudovať veci, ktoré prinesú radosť ostatným.</p>
-
-                    <p>Nikdy nebolo jednoduchšie vytvoriť vlastnú aplikáciu, vyrobiť si robota, či dokonca vymyslieť lietajúce autá, veď prečo nie! Nie je to jednoduchá cesta, no je to cesta plná tvorivých výziev s komunitou pripravenou pomôcť a kopou zábavy. Ste pripravení prijať výzvu a stať sa tvorcom?</p>
-
-                    <p>Programovanie tiež pomáha rozvíjať schopnosti, ako sú výpočtové myslenie, riešenie problémov, tvorivosť a tímová práca, čo sú výborné zručnosti pre všetky oblasti života.</p>',
+    'supported_by_commission-text' => '<p> Európsky týždeň kódovania odštartovali v roku 2013 mladí poradcovia pre digitálnu agendu Európa. Európska komisia podporuje Európsky týždeň kódovania ako súčasť svojej <a href="http://ec.europa.eu/priorities/digital-single-market/">stratégie pre jednotný digitálny trh</a>. V <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">akčnom pláne digitálneho vzdelávania</a> Komisia osobitne nabáda školy, aby sa k iniciatíve pripojili.
+                                        </p>',
+    'schools-title' => 'Posilnite svoju triedu',
+    'schools-text' =>  '<p>Učitelia všetkých predmetov a škôl na každej úrovni zohrávajú v rámci EU Code Week kľúčovú úlohu. Pripojením môžete inšpirovať svojich študentov, aby preskúmali kódovanie a digitálnu kreativitu pútavým a praktickým spôsobom. Zapojte sa a objavte, ako môžete zorganizovať svoju vlastnú aktivitu na  <a href="/schools">CodeWeek.eu/Schools</a>.
+                        </p>',
+    'why_coding-title' => 'Prečo kódovanie? Pretože budúcnosť je vaša.',
+    'why_coding-text' =>  '<p>Kódovanie nie je len o písaní riadkov kódu – je to o formovaní nápadov, riešení problémov a vytváraní sveta, ktorý chcete vidieť.
+                        </p>
+                        <p>Technológia je všade okolo nás a kódovanie umožňuje každému premeniť predstavivosť na realitu, či už ide o navrhovanie aplikácií, stavbu robotov alebo riešenie skutočných výziev. Rozvíja kreativitu, riešenie problémov a spoluprácu – čiže zručnosti, ktoré otvárajú dvere v každej oblasti.
+                        </p>
+                        <p>Európsky týždeň kódovania je vašou šancou preskúmať, vytvoriť a stať sa súčasťou tejto digitálnej transformácie, ktorá poháňa digitálne vzdelávanie, inovácie a posilnenie postavenia komunity!
+                        </p>
+                        <p>Viceprezident Európskej komisie Viktor Negrescu o pretrvávajúcom vplyve Európskeho týždňa kódovania hovorí: „Som silným zástancom demokratizácie prístupu k technológiám... ak chceme, aby Európa zostala konkurencieschopná, musíme investovať do digitálnych zručností. Som presvedčený, že konzorcium Code4Europe odvedie skvelú prácu – nech sa vám darí a pokračujte v kódovaní!“
+                        </p>',
     'why_coding-quote' => '<p>Alessandro Bogliolo, koordinátor tímu veľvyslancov-dobrovoľníkov Európskeho týždňa programovania, uviedol:<blockquote>
                             <p>„Od nepamäti vytvárame rôzne veci, ktoré zmenili náš život, pomocou kameňa, železa, papiera a ceruzky. Teraz žijeme v inej dobe, v ktorej sa náš svet premieta do programovacích výrazov. V rôznych dobách sa dopyt po jednotlivých pracovných miestach a zručnostiach líši. Počas týždňa programovania chceme dať všetkým Európanom šancu, aby objavili programovanie a zažili pri tom veľa zábavy. Naučme sa programovať a pretvorme našu budúcnosť.“</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Zapojte sa do Európskeho týždňa programovania',
-    'join_codeweek-text' => '<p>Zapojte sa do Európskeho týždňa programovania <a href="/guide">usporiadaním programátorskej aktivity</a> vo svojom meste, zapojením do <a href="/codeweek4all">výzvy Code Week 4 All</a> a príbuzných aktivít v rôznych komunitách a krajinách alebo nám pomôžte šíriť víziu Týždňa programovania z pozície <a href="/ambassadors">veľvyslanca Európskeho týždňa programovania</a> vo svojej vlasti!</p>',
-    'partners_and_sponsors' => 'Partneri a sponzori',
+    'join_codeweek-title' => 'Staňte sa súčasťou hnutia!',
+    'join_codeweek-text' => '<p>Európsky týždeň kódovania je viac ako udalosť – je to revolúcia riadená komunitou! <a href="/guide">Usporiadajte kódovaciu aktivitu vo svojom meste</a>, zapojte sa do<a href="/codeweek4all"> Code Week 4 All Challenge</a> a spojte sa s podobne zmýšľajúcimi inovátormi za hranicami.
+                            </p>
+                            <p>Chcete mať ešte väčší vplyv? Spojte sa so svojím miestnym hubom, <a href="/community?country_iso=IE">nájdite si vlastnú komunitu</a> a pomôžte formovať budúcnosť kódovania vo vašej krajine!
+                            </p>
+                            <p>Prostredníctvom nášho <a href="/blog/">blogu</a> môžete tiež zostať v obraze o iniciatívach miestnej komunity a medzinárodnom vývoji.
+                            </p>',
+    'partners_and_sponsors' => 'Zoznámte sa s našimi partnermi a sponzormi',
+
+    'about_banner_title'=>'Posilnenie Európy digitálnymi zručnosťami',
+    'about_banner_content'=>'Európsky týždeň kódovania (EU Code Week alebo skrátene Code Week) podnecuje kreativitu, riešenie problémov a spoluprácu, vďaka čomu sú kódovanie a digitálne zručnosti dostupné pre každého po celý rok.',
+    'partners_and_sponsors-title' => 'Code4Europe Consortium: Riadenie budúcnosti Týždňa kódovania',
+    'partners_and_sponsors-content'=>
+                                        '<p>Európsky týždeň kódovania je teraz riadený konzorciom Code4Europe, ktoré pozostáva z viac ako 40 partnerov z oblasti vzdelávania a technického priemyslu z 20 krajín. Spoločne zabezpečujeme neustály rast Týždňa kódovania, rozširujeme digitálne vzdelávanie a podporujeme spoluprácu v celej Európe.
+                                        </p>
+                                        <p>So silnou komunitou pedagógov, veľvyslancov a lídrov v tomto odvetví formujeme budúcnosť kódovania – robíme ho prístupnejším, inkluzívnejším a účinnejším.
+                                        </p>', 
 ];
