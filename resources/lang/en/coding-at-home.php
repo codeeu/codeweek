@@ -11,6 +11,7 @@ return [
     ],
     'intro' => [
         'title' => 'Introduction to Coding@Home',
+        'text' => 'Introduction to Coding@Home',
     ],
     'explorer' => [
         'title' => 'The explorer',
@@ -318,8 +319,8 @@ return [
         3 => 'If you are interested in more unplugged activities, or activities in different programming
                         languages, robotics, micro:bit etc., check out the <a href="/training">EU Code
                             Weeks “Learning Bits”</a> with video
-                        tutorials and lesson plans for primary, lower secondary and upper secondary schools. Also have a
-                        look at the EU Code Week resources page for <a href="/resources/learn">learners</a>
-                        and <a href="/resources/teach">teachers</a>.',
+                        tutorials and lesson plans for primary, lower secondary and upper secondary schools. Also have a look 
+                        at the <a href="/resources/learn">EU Code Week Learn&Teach resources</a>, 
+                        where you can find free, high-quality resources from around the world for teachers and students.',
     ],
 ];

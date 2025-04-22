@@ -27,5 +27,30 @@ return [
     'event' => 'eveniment',
     'events' => 'evenimente',
     'year' => 'an',
-    'audiences' => 'Public', 'themes' => 'Teme', 'countries' => 'Țări', 'search_placeholder' => 'Căutare după titlu și descriere',
+    'audiences' => 'Public', 
+    'themes' => 'Teme', 
+    'countries' => 'Țări', 
+    'search_placeholder' => 
+    'Căutare după titlu și descriere',
+    'search_banner_title' => 'Găsiți ceea ce vă inspiră',
+    'search_banner_content' => 'Răsfoiți o multitudine de resurse de codare, activități și ghiduri pentru a vă sprijini călătoria către creativitatea și învățarea digitală',
+    'search_results_title' => 'Rezultatele căutării',
+    'search_input_label' => 'Vedeți mai jos rezultatele pe baza cuvintelor dvs. cheie:',
+    'search_input_placeholder' => 'Căutare...',
+    'results' => 'Rezultate',
+    'no_results' => 'Nu s-au găsit rezultate.',
+    'search_categories' => [
+        'all' => 'Toate',
+        'podcasts' => 'Podcasturi',
+        'hackathons' => 'Hackathoane',
+        'online_courses' => 'Cursuri Online',
+        'training' => 'Training',
+        'challenges' => 'Provocări',
+        'learn' => 'Învață',
+        'teach' => 'Tech',
+        'presentations_and_toolkits' => 'Prezentări și seturi de instrumente',
+        'activities' => 'Activități',
+        'blogs' => 'Bloguri',
+        'others' => 'Altele'
+    ]
 ];

@@ -1,6 +1,5 @@
 /node_modules
 /public/hot
-/public/build
 /public/storage
 /storage/*.key
 /vendor
@@ -28,5 +27,5 @@ vue-i18n-locales.generated.js
 /phpunit.xml
 /.phpunit.cache
 /.phpunit.result.cache
-
+vite.config.js
 .DS_Store

@@ -54,7 +54,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedLevels
      *
-     * @param  string $selectedLevels
+     * @param  array $selectedLevels
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedLevels($selectedLevels)
@@ -72,7 +72,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedTypes
      *
-     * @param  string $selectedTypes
+     * @param array $selectedTypes
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedTypes($selectedTypes)
@@ -90,7 +90,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedSubjects
      *
-     * @param  string $selectedSubjects
+     * @param array $selectedSubjects
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedSubjects($selectedSubjects)
@@ -109,7 +109,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedCategories
      *
-     * @param  string $selectedCategories
+     * @param array $selectedCategories
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedCategories($selectedCategories)
@@ -128,7 +128,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedLanguages
      *
-     * @param  string $selectedLanguages
+     * @param array $selectedLanguages
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedLanguages($selectedLanguages)
@@ -149,7 +149,7 @@ class ResourceFilters extends Filters
     /**
      * Filter the query by selectedProgrammingLanguages
      *
-     * @param  string $selectedProgrammingLanguages
+     * @param array $selectedProgrammingLanguages
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedProgrammingLanguages($selectedProgrammingLanguages)

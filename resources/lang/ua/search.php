@@ -31,4 +31,25 @@ return [
     'themes' => 'Теми',
     'countries' => 'Країни',
     'search_placeholder' => 'Шукати за назвою або описом',
+    'search_banner_title' => 'Знайдіть те, що вас надихає',
+    'search_banner_content' => 'Перегляньте безліч ресурсів, активностей і посібників з програмування, щоб підтримати вашу подорож у світ цифрової творчості та навчання.',
+    'search_results_title' => 'Результати пошуку',
+    'search_input_label' => 'Перегляньте результати на основі ваших ключових слів нижче:',
+    'search_input_placeholder' => 'пошук...',
+    'results' => 'Результати',
+    'no_results' => 'Результатів не знайдено.',
+    'search_categories' => [
+        'all' => 'Всі',
+        'podcasts' => 'Подкасти',
+        'hackathons' => 'Хакатони',
+        'online_courses' => 'Онлайн курси',
+        'training' => 'Тренінг',
+        'challenges' => 'Челенджи',
+        'learn' => 'Навчатися',
+        'teach' => 'Навчати',
+        'presentations_and_toolkits' => 'Презентації та інструменти',
+        'activities' => 'Діяльність',
+        'blogs' => 'Блоги',
+        'others' => 'Інші'
+    ]
 ];

@@ -170,39 +170,75 @@
             onSubmit: function (isPagination) {
                 this.events = [];
                 this.isLoading = true;
-                var url = "/search";
+
+                let url = "/search";
                 if (isPagination) {
                     url = "/search?page=" + this.pagination.current_page;
                 }
+
                 axios.post(url, this.$data)
                     .then(result => {
-                        var response = result.data[0];
-                        this.pagination.per_page = response.per_page;
-                        this.pagination.current_page = response.current_page;
-                        this.pagination.from = response.from;
-                        this.pagination.last_page = response.last_page;
-                        this.pagination.last_page_url = response.last_page_url;
-                        this.pagination.next_page_url = response.next_page_url;
-                        this.pagination.prev_page = response.prev_page;
-                        this.pagination.prev_page_url = response.prev_page;
-                        this.pagination.to = response.to;
-                        this.pagination.total = response.total;
+                        const response = result.data;
+                        console.log("🔥 Full response:", response);
 
-                        this.events = response.data;
+                        let eventsData, mapData;
 
-                        if (!isPagination) {
-                            if (window.getEvents) {
-                                window.getEvents(result.data[1]);
-                            } else {
-                                window.eventsToMap = result.data[1];
-                            }
+                        // Handle both response formats: array OR object
+                        if (Array.isArray(response)) {
+                            eventsData = response[0];
+                            mapData = response[1] || null;
+                        } else if (response.events) {
+                            eventsData = response.events;
+                            mapData = response.map || null;
+                        } else {
+                            console.warn("❌ Unexpected response structure:", response);
+                            this.errors = "Unexpected response format from server.";
+                            this.isLoading = false;
+                            return;
                         }
+
+                        // Set pagination
+                        this.pagination.per_page = eventsData.per_page;
+                        this.pagination.current_page = eventsData.current_page;
+                        this.pagination.from = eventsData.from;
+                        this.pagination.last_page = eventsData.last_page;
+                        this.pagination.last_page_url = eventsData.last_page_url;
+                        this.pagination.next_page_url = eventsData.next_page_url;
+                        this.pagination.prev_page = eventsData.prev_page;
+                        this.pagination.prev_page_url = eventsData.prev_page_url;
+                        this.pagination.to = eventsData.to;
+                        this.pagination.total = eventsData.total;
+
+                        // Ensure data is an array, even if returned as an object
+                        if (eventsData.data) {
+                            this.events = Array.isArray(eventsData.data)
+                                ? eventsData.data
+                                : Object.values(eventsData.data);
+                        } else {
+                            this.events = [];
+                        }
+
+                        console.log("✅ Events loaded:", this.events.length);
+
+                        // Set map data (only on non-pagination call)
+                        if (!isPagination && mapData) {
+                            if (window.getEvents) {
+                                window.getEvents(mapData);
+                            } else {
+                                window.eventsToMap = mapData;
+                            }
+                        } else if (!mapData) {
+                            console.warn("⚠️ mapData is null, skipping map update");
+                        }
+
                         this.setSelectedCountryToCenterMap();
                         this.isLoading = false;
                     })
                     .catch(error => {
-                        this.errors = error.response.data
-                    })
+                        console.error("❌ Request failed:", error);
+                        this.errors = error.response ? error.response.data : "Unknown error";
+                        this.isLoading = false;
+                    });
             },
             thumbnail: function (event) {
 

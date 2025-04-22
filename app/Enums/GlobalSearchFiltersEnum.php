@@ -23,6 +23,25 @@ enum GlobalSearchFiltersEnum: string
     case BLOGS = 'Blogs';
     case OTHERS = 'Others';
 
+    public function label(): string
+    {
+        // Dynamically retrieve the translated label based on the current language
+        return match ($this) {
+            self::ALL => __('search.search_categories.all'),
+            self::PODCASTS => __('search.search_categories.podcasts'),
+            self::HACKATHONS => __('search.search_categories.hackathons'),
+            self::ONLINE_COURSES => __('search.search_categories.online_courses'),
+            self::TRAINING => __('search.search_categories.training'),
+            self::CHALLENGES => __('search.search_categories.challenges'),
+            self::LEARN => __('search.search_categories.learn'),
+            self::TEACH => __('search.search_categories.teach'),
+            self::PRESENTATIONS_AND_TOOLKITS => __('search.search_categories.presentations_and_toolkits'),
+            self::ACTIVITIES => __('search.search_categories.activities'),
+            self::BLOGS => __('search.search_categories.blogs'),
+            self::OTHERS => __('search.search_categories.others'),
+        };
+    }
+
     /**
      * Get additional information for each filter.
      */
