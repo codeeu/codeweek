@@ -69,28 +69,22 @@
         }
 
         /* Style the scrollbar */
-        #teacher-details::-webkit-scrollbar {
+        #teacher-list::-webkit-scrollbar {
+            border-radius: 6px;
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Style the scrollbar track (background) */
+        #teacher-list::-webkit-scrollbar-track {
+            background: #D6D8DA;
             border-radius: 8px;
         }
 
         /* Style the scrollbar thumb (draggable part) */
-        #teacher-details::-webkit-scrollbar-thumb {
+        #teacher-list::-webkit-scrollbar-thumb {
             background: #1C4DA1;
             border-radius: 6px;
-            min-height: 150px !important;
-            /* Increased minimum height */
-        }
-
-        /* Firefox scrollbar styling */
-        #teacher-details {
-            scrollbar-width: auto;
-            scrollbar-color: #1C4DA1 #D6D8DA;
-        }
-
-        /* Style the scrollbar track (background) */
-        #teacher-details::-webkit-scrollbar-track {
-            background: #D6D8DA;
-            border-radius: 8px;
         }
     </style>
 
@@ -194,61 +188,107 @@
                  style="transform: translate(-16px, -24px)"></div>
         </div>
 
-        <div class="grid grid-cols-2 gap-8 mx-auto mb-20 max-lg:grid-cols-1 codeweek-container-lg max-xl:px-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8 mx-auto mb-20 codeweek-container-lg max-xl:px-5">
             @forelse ($ambassadors as $ambassador)
-                <div class="relative z-50 flex flex-col tablet:flex-row p-4 bg-white rounded-2xl max-sm:w-full gap-8"
-                    role="article" aria-labelledby="profile-name">
-                    <img class="object-cover w-full tablet:w-32 tablet:h-32" src="{{ $ambassador->avatar }}" class="card-image-avatar">
-                    <div class="flex flex-col flex-1">
-                        <div class="flex flex-col gap-1 mt-1">
-                            <h4 id="profile-name" class="text-2xl font-medium leading-7 text-blue-800">
-                                {{ $ambassador->fullName() }}</h4>
-                            <p class="text-lg font-medium leading-6 text-gray-700">{{ $ambassador->bio }}</p>
+                <div class="flex flex-col justify-between bg-white rounded-2xl p-4">
+                    <div class="relative z-50 flex max-sm:w-full gap-8 h-full"
+                         role="article" aria-labelledby="profile-name">
+                        <img class="object-cover w-32 h-32" src="{{ $ambassador->avatar }}" class="card-image-avatar">
+                        <div class="flex flex-col justify-between flex-1">
+                            <div class="flex flex-col gap-1 mt-1">
+                                <h4 id="profile-name" class="text-2xl font-medium leading-7 text-blue-800">
+                                    {{ $ambassador->fullName() }}</h4>
+                                <p class="text-lg font-medium leading-6 text-gray-700">{{ $ambassador->bio }}</p>
+                            </div>
+                            <div class="hidden items-center w-full gap-4 mt-4 tablet:flex">
+                                @if ($ambassador->email)
+                                    <a class="group flex gap-2 items-start my-auto text-base font-semibold leading-none text-[#1C4DA1] hover:text-white overflow-hidden px-6 w-auto whitespace-nowrap py-2.5 rounded-3xl border-2 border-[#1C4DA1] border-solid hover:bg-[#1C4DA1]"
+                                       href="mailto:{{ $ambassador->email }}">
+                                        <span class="my-auto">Get in touch</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             viewBox="0 0 16 16" fill="none"
+                                             class="text-[#1C4DA1] group-hover:text-white">
+                                            <path d="M3.11865 8H12.452" stroke="currentColor" stroke-width="1.33333"
+                                                  stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M7.78516 3.33337L12.4518 8.00004L7.78516 12.6667" stroke="currentColor"
+                                                  stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                @endif
+                                @if ($ambassador->twitter)
+                                    <a class="group" target="_blank" href="http://twitter.com/{{ $ambassador->twitter }}">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="40" height="40" rx="20" fill="#E8EDF6"
+                                                  class="group-hover:fill-[#1C4DA1] transition-colors duration-300"></rect>
+                                            <g clip-path="url(#clip0_671_8155)">
+                                                <mask id="mask0_671_8155" style="mask-type:luminance"
+                                                      maskUnits="userSpaceOnUse" x="8" y="8" width="24" height="24">
+                                                    <path d="M8 8H32V32H8V8Z" fill="white"></path>
+                                                </mask>
+                                                <g mask="url(#mask0_671_8155)">
+                                                    <path
+                                                            d="M24.8875 12.0001H27.4946L21.7996 18.7769L28.5 28.0001H23.2543L19.1427 22.4074L14.4434 28.0001H11.8339L17.9248 20.7491L11.5 12.0013H16.8793L20.5901 17.1123L24.8875 12.0001ZM23.9707 26.3758H25.4157L16.09 13.5398H14.5406L23.9707 26.3758Z"
+                                                            class="fill-[#000000] group-hover:fill-[#ffffff]"></path>
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_671_8155">
+                                                    <rect width="24" height="24" fill="white"
+                                                          transform="translate(8 8)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </a>
+                                @endif
+                            </div>
                         </div>
-                        <div class="flex items-center w-full gap-4 mt-4">
-                            @if ($ambassador->email)
-                                <a class="group flex gap-2 items-start my-auto text-base font-semibold leading-none text-[#1C4DA1] hover:text-white overflow-hidden px-6 w-auto whitespace-nowrap py-2.5 rounded-3xl border-2 border-[#1C4DA1] border-solid hover:bg-[#1C4DA1]"
-                                    href="mailto:{{ $ambassador->email }}">
-                                    <span class="my-auto">Get in touch</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 16 16" fill="none"
-                                        class="text-[#1C4DA1] group-hover:text-white">
-                                        <path d="M3.11865 8H12.452" stroke="currentColor" stroke-width="1.33333"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M7.78516 3.33337L12.4518 8.00004L7.78516 12.6667" stroke="currentColor"
-                                            stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round">
-                                        </path>
-                                    </svg>
-                                </a>
-                            @endif
-                            @if ($ambassador->twitter)
-                                <a class="group" target="_blank" href="http://twitter.com/{{ $ambassador->twitter }}">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="40" height="40" rx="20" fill="#E8EDF6"
-                                            class="group-hover:fill-[#1C4DA1] transition-colors duration-300"></rect>
-                                        <g clip-path="url(#clip0_671_8155)">
-                                            <mask id="mask0_671_8155" style="mask-type:luminance"
-                                                maskUnits="userSpaceOnUse" x="8" y="8" width="24" height="24">
-                                                <path d="M8 8H32V32H8V8Z" fill="white"></path>
-                                            </mask>
-                                            <g mask="url(#mask0_671_8155)">
-                                                <path
+                    </div>
+                    <div class="flex items-center w-full gap-4 mt-4 tablet:hidden">
+                        @if ($ambassador->email)
+                            <a class="group flex-1 flex gap-2 items-start my-auto text-base font-semibold leading-none text-[#1C4DA1] hover:text-white overflow-hidden px-6 w-auto whitespace-nowrap py-2.5 rounded-3xl border-2 border-[#1C4DA1] border-solid hover:bg-[#1C4DA1]"
+                               href="mailto:{{ $ambassador->email }}">
+                                <span class="my-auto">Get in touch</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     viewBox="0 0 16 16" fill="none"
+                                     class="text-[#1C4DA1] group-hover:text-white">
+                                    <path d="M3.11865 8H12.452" stroke="currentColor" stroke-width="1.33333"
+                                          stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.78516 3.33337L12.4518 8.00004L7.78516 12.6667" stroke="currentColor"
+                                          stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </svg>
+                            </a>
+                        @endif
+                        @if ($ambassador->twitter)
+                            <a class="group" target="_blank" href="http://twitter.com/{{ $ambassador->twitter }}">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="40" height="40" rx="20" fill="#E8EDF6"
+                                          class="group-hover:fill-[#1C4DA1] transition-colors duration-300"></rect>
+                                    <g clip-path="url(#clip0_671_8155)">
+                                        <mask id="mask0_671_8155" style="mask-type:luminance"
+                                              maskUnits="userSpaceOnUse" x="8" y="8" width="24" height="24">
+                                            <path d="M8 8H32V32H8V8Z" fill="white"></path>
+                                        </mask>
+                                        <g mask="url(#mask0_671_8155)">
+                                            <path
                                                     d="M24.8875 12.0001H27.4946L21.7996 18.7769L28.5 28.0001H23.2543L19.1427 22.4074L14.4434 28.0001H11.8339L17.9248 20.7491L11.5 12.0013H16.8793L20.5901 17.1123L24.8875 12.0001ZM23.9707 26.3758H25.4157L16.09 13.5398H14.5406L23.9707 26.3758Z"
                                                     class="fill-[#000000] group-hover:fill-[#ffffff]"></path>
-                                            </g>
                                         </g>
-                                        <defs>
-                                            <clipPath id="clip0_671_8155">
-                                                <rect width="24" height="24" fill="white"
-                                                    transform="translate(8 8)"></rect>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_671_8155">
+                                            <rect width="24" height="24" fill="white"
+                                                  transform="translate(8 8)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
 
-                                </a>
-                            @endif
-                        </div>
+                            </a>
+                        @endif
                     </div>
                 </div>
             @empty
@@ -328,7 +368,7 @@
 
             </div>
             <div id="teacher-details"
-                class="w-full max-w-full lg:max-w-[429px] md:overflow-y-scroll md:rounded-tr-lg rounded-none md:rounded-br-lg h-full">
+                class="z-10 w-full max-w-full lg:max-w-[429px] md:overflow-y-hidden md:rounded-tr-lg rounded-none md:rounded-br-lg h-full px-5 md:pl-0 md:pr-3 pb-4 md:pt-4 bg-white">
             </div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 16px">
@@ -540,8 +580,8 @@
                         `<button onclick="populateTeacherInfo(allTeachers)" class="hidden text-blue-600 hover:underline">Show All Teachers</button>`;
                 }
                 teacherDetails +=
-                    `<ul class="m-0 relative z-50 list-none bg-white h-auto h-[400px] md:h-[642px] overflow-x-scroll md:overflow-x-hidden overflow-y-hidden md:overflow-y-scroll flex flex-row md:flex-col">`;
-                teachers.forEach(function(teacher) {
+                    `<ul id="teacher-list" class="m-0 relative z-50 list-none bg-white h-auto h-[400px] md:h-full overflow-x-scroll md:overflow-x-hidden overflow-y-hidden md:overflow-y-scroll flex flex-row md:flex-col max-md:pb-4">`;
+                teachers.forEach(function(teacher, index) {
                     let shortBio = teacher.bio ? teacher.bio.split(' ').slice(0, 14).join(' ') :
                         'No bio available';
                     let fullBio = teacher.bio || 'No bio available';
@@ -550,7 +590,7 @@
                             border-t-[5px] md:border-t-0 md:border-l-[5px] border-[#1C4DA1] 
                             hover:border-l-orange-500 
                             max-md:border-r-2 max-md:border-r-[#D6D8DA] md:border-b-2 md:border-b-[#D6D8DA] 
-                            cursor-pointer">
+                            cursor-pointer ${index === teachers.length - 1 ? '!border-r-0 !border-b-0' : ''}">
                             <div class="flex flex-col justify-center">
                                 <div class="flex flex-col justify-center w-full font-semibold">
                                     <h4 class="text-xl leading-snug text-black">${teacher.firstname} ${teacher.lastname}</h4>
