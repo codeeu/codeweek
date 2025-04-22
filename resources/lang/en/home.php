@@ -25,9 +25,9 @@ return [
     'toolkits_button1' => 'Get started',
     'toolkits_button2' => 'Toolkits for organisers',
 
-    'minecraft_description1' => 'Take your coding skills to the next level with Minecraft Education. Discover how Minecraft Education can teach coding and AI literacy skills and explore how to get started today!',
-    'minecraft_description2' => 'Sign up to bring fun, live play-alongs direct to your classroom!',
-    'minecraft_button' => 'Start your Minecraft Education journey here',
+    'minecraft_description1' => 'Careers in Digital is part of EU Code Week targeting 15–18-year-olds and educators to explore exciting and varied digital careers.',
+    'minecraft_description2' => 'Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there.',
+    'minecraft_button' => 'Get Involded',
 
     'activity_title' => 'Organise or join an activity',
     'activity_description' => 'Anyone is welcome to organise or join an activity. Just pick a topic and a target audience and add your activity to the map, or browse for activities in your area.',
@@ -38,6 +38,11 @@ return [
     'resouce_description' => 'If you are not sure how to organise an activity, visit our teaching resources page and learning bits training materials for guidance and tailored lesson plans.',
     'resouce_button1' => 'Access resources',
     'resouce_button2' => 'Access trainings',
+    
     'get_involved' => 'Get involved',
-    'meet_our_community' => 'Meet our community'
+    'meet_our_community' => 'Meet our community',
+    'banner1_title' => 'Careers in Digital',
+    'banner1_description' => 'Get inspired by dream jobs in digital and explore role models, career guides, open day toolkits and more!',
+    'banner2_title' => 'Our Code Week Family',
+    'banner2_description' => 'Discover our vibrant network of ambassadors, teachers, students and hubs—each contributing to our shared passion for digital education.'
 ];
