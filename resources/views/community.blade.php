@@ -403,7 +403,7 @@
         <div class="absolute w-full h-full bg-white md:hidden" style="clip-path: ellipse(100% 58% at 38% 39%)"></div>
         <div class="absolute hidden w-full h-full bg-white md:block" style="clip-path: ellipse(70% 60% at 50% 40%);">
         </div>
-        <div class="relative z-10 flex flex-col items-center gap-12 codeweek-container-lg md:flex-row py-16 tablet:py-20">
+        <div class="relative z-10 flex flex-col items-center gap-12 codeweek-container-lg md:flex-row pt-16 pb-0 tablet:py-20">
             <div class="flex-1 order-1">
                 <div class="relative inline-block observer-element">
                     <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/4.png" />
@@ -415,7 +415,7 @@
                 <h4 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                     @lang('community.titles.3')
                 </h4>
-                <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 mb-10">
+                <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0">
                     @lang('community.edu')
                 </p>
             </div>
@@ -470,14 +470,17 @@
             <div class="absolute hidden w-full h-full bg-white md:block"
                 style="clip-path: ellipse(70% 60% at 50% 40%);"></div>
             <div
-                class="relative z-10 flex flex-col items-center gap-12 py-16 pb-32 codeweek-container-lg md:flex-row md:pb-48">
+                class="relative z-10 flex flex-col items-center gap-12 py-12 pb-20 codeweek-container-lg md:flex-row md:pb-48">
                 <div class="flex-1">
                     <h4
                         class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                         @lang("community.hub_level_{$country}")
                     </h4>
-                    <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 mb-10">
-                        @lang("community.hub_desc_{$country}")
+                    <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0 font-semibold mb-4">
+                        {!! __("community.hub_{$country}") !!}
+                    </p>
+                    <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0">
+                        {!! __("community.hub_desc_{$country}") !!}
                     </p>
                     @if ($country === 'DE')
                         <section class="community_type_section">
