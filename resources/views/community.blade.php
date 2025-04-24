@@ -133,7 +133,7 @@
                         </select>
                         <img
                             src="images/chevron-down-icon.svg"
-                            class="absolute top-3.5 right-3.5 w-6 h-6 pointer-events-none text-secondary bg-white"
+                            class="absolute top-[14px] right-[14px] w-6 h-6 pointer-events-none text-secondary bg-white"
                         >
                       </div>
                     </form>
