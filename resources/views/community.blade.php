@@ -123,7 +123,8 @@
                     <form class="w-full" method="get" action="/community" enctype="multipart/form-data">
                       <div class="relative max-w-[582px]">
                         <select id="country-select" name="country_iso"
-                            class="flex flex-wrap gap-10 justify-between items-center px-6 py-2.5 text-xl text-gray-700 whitespace-nowrap rounded-3xl border-2 border-secondary border-solid w-full max-w-[582px] max-md:px-5 h-[50px] cursor-pointer !pr-10">
+                            class="flex flex-wrap gap-10 justify-between items-center px-6 py-2.5 text-xl text-gray-700 whitespace-nowrap rounded-3xl border-2 border-secondary border-solid w-full max-w-[582px] max-md:px-5 h-[50px] cursor-pointer !pr-10"
+                            onchange="this.form.submit()">
                             @foreach ($countries as $country)
                                 <option value="{{ $country->iso }}"
                                     {{ app('request')->input('country_iso') == $country->iso ? 'selected' : '' }}>
@@ -582,7 +583,7 @@
                         'No bio available';
                     let fullBio = teacher.bio || 'No bio available';
                     teacherDetails += `
-                        <li data-city="${teacher.city}" class="flex flex-col-reverse max-md:justify-end justify-between min-w-[353px] md:flex-row flex gap-4 items-start p-6 w-11/12 md:w-full h-full 
+                        <li data-city="${teacher.city}" class="flex flex-col-reverse max-md:justify-end justify-between min-w-[353px] md:flex-row flex gap-4 items-start p-6 w-11/12 md:w-full 
                             border-t-[5px] md:border-t-0 md:border-l-[5px] border-[#1C4DA1] 
                             hover:border-l-orange-500 
                             max-md:border-r-2 max-md:border-r-[#D6D8DA] md:border-b-2 md:border-b-[#D6D8DA] 
@@ -710,7 +711,7 @@
                         country_iso: "{{ $teacher->country_iso }}",
                         twitter: "{{ $teacher->twitter }}",
                         website: "{{ $teacher->website }}",
-                        bio: "{{ $teacher->bio }}",
+                        bio: @json($teacher->bio),
                         avatar_path: "{{ $teacher->avatar_path }}",
                         city: "{{ $teacher->city->city ?? 'N/A' }}",
                         latitude: "{{ $teacher->city->latitude ?? '' }}",
@@ -755,7 +756,7 @@
                                 country_iso: "{{ $teacher->country_iso }}",
                                 twitter: "{{ $teacher->twitter }}",
                                 website: "{{ $teacher->website }}",
-                                bio: "{{ $teacher->bio }}",
+                                bio: @json($teacher->bio),
                                 avatar_path: "{{ $teacher->avatar_path }}",
                                 city: "{{ $teacher->city->city ?? 'N/A' }}",
                                 expertises: @json($teacher->expertises->pluck('name')->toArray())
