@@ -635,7 +635,7 @@
                                 </div>
                             </div>
                             ${ teacher.avatar_path 
-                                ? `<img src="${teacher.avatar_path}" alt="Avatar" class="object-cover w-[88px] h-[88px] border-2 border-[#DBECF0] border-solid rounded-full">`
+                                ? `<img src="${teacher.avatar_path}" alt="Avatar" class="flex-shrink-0 object-cover w-[88px] h-[88px] border-2 border-[#DBECF0] border-solid rounded-full">`
                                 : '' }
                         </li>
                     `;
