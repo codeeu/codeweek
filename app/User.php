@@ -335,7 +335,7 @@ class User extends Authenticatable implements MustVerifyEmail
     public function getAvatarPathAttribute($avatar)
     {
         if (is_null($avatar)) {
-            $avatar = 'avatars/default_avatar.png';
+            $avatar = 'images/default-avatar.png';
         }
         return Storage::disk('s3')->url($avatar);
     }
