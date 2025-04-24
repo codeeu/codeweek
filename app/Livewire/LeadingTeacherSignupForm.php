@@ -68,6 +68,7 @@ class LeadingTeacherSignupForm extends Component
 
         $expertises = LeadingTeacherExpertise::orderBy('position')->get();
 
+        $this->geoposition =
         $this->countries = $countries;
 
         $this->levels = $levels;
@@ -80,10 +81,8 @@ class LeadingTeacherSignupForm extends Component
 
         if (! is_null($location)) {
             $this->closestCity = City::getClosestCity($location->lon, $location->lat);
-            if ($this->closestCity) {
-                $this->selectedCity = $this->closestCity->id;
-                $this->selectedCountry = $this->closestCity->country_iso;
-            }
+            $this->selectedCity = $this->closestCity->id;
+            $this->selectedCountry = $this->closestCity->country_iso;
         }
 
     }
