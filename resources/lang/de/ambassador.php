@@ -15,9 +15,9 @@ return [
 
     'title' => 'EU Code Week-Botschafter*innen',
     'your_current_country' => 'Ihr ausgewähltes Land',
-    'visit_the' => '“Besuche die',
-    'local_facebook_page' => 'Facebook-Seite',
-    'local_website' => 'Website',
+    'visit_the' => 'Besuchen Sie die',
+    'local_facebook_page' => 'deutsche Facebook-Seite',
+    'local_website' => 'Deutsche Website',
     'ambassadors' => 'Botschafter*innen',
     'no_ambassadors' => 'Bisher keine Botschafter*innen',
     'countries_with_ambassadors' => 'Länder mit Botschafter*innen',
