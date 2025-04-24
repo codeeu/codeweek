@@ -533,10 +533,9 @@
     {{--    <script src="{{asset('js/leaflet.markercluster.js')}}" type="text/javascript"/> --}}
 @endpush
 
-@section('extra-js')
+@push('scripts')
     <script src="https://cdn.jsdelivr.net/npm/nice-select2@2.1.0/dist/js/nice-select2.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
             // Initialize Nice Select for the country select element
             const select = document.getElementById('country-select');
             const niceSelect = NiceSelect.bind(select, {
@@ -809,7 +808,6 @@
                 }
             }
             mymap.setView([centerInfo.latitude, centerInfo.longitude], centerInfo.zoom);
-        });
     </script>
     <script src="{{ asset('js/countriesGeoCentroids.js') }}" type="text/javascript"></script>
 
@@ -834,6 +832,6 @@
         triggerAnimations(target);
       });
     </script>
-@endsection
+@endpush
 
 </section>
