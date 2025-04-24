@@ -179,6 +179,42 @@
                     <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0">
                         @lang('community.ambassadors')
                     </p>
+                    <div class="flex flex-col gap-4 xl:flex-row mt-10">
+                        @if (app('request')->input('country_iso'))
+                            @foreach ($countries as $country)
+                                @if ($country->iso === app('request')->input('country_iso'))
+                                    @if ($country->facebook)
+                                        <a href="{{ $country->facebook }}" class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank">
+                                            <span>
+                                              @lang('ambassador.visit_the')
+                                              <span>@lang('ambassador.local_facebook_page')</span>
+                                            </span>
+                                            <div class="flex w-4 gap-2 overflow-hidden">
+                                                <img src="/images/arrow-right-icon.svg"
+                                                    class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                                <img src="/images/arrow-right-icon.svg"
+                                                    class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                            </div>
+                                        </a>
+                                    @endif
+            
+                                    @if ($country->website)
+                                        <a href="{{ $country->website }}" class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank">
+                                            <span>
+                                              @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
+                                            </span>
+                                            <div class="flex w-4 gap-2 overflow-hidden">
+                                                <img src="/images/arrow-right-icon.svg"
+                                                    class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                                <img src="/images/arrow-right-icon.svg"
+                                                    class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                            </div>
+                                        </a>
+                                    @endif
+                                @endif
+                            @endforeach
+                        @endif
+                    </div>
                 </div>
             </div>
 
@@ -370,27 +406,6 @@
             <div id="teacher-details"
                 class="z-10 w-full max-w-full lg:max-w-[429px] md:overflow-y-hidden md:rounded-tr-lg rounded-none md:rounded-br-lg h-full px-5 md:pl-0 md:pr-3 pb-4 md:pt-4 bg-white">
             </div>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 16px">
-
-            @if (app('request')->input('country_iso'))
-                @foreach ($countries as $country)
-                    @if ($country->iso === app('request')->input('country_iso'))
-                        @if ($country->facebook)
-                            <a href="{{ $country->facebook }}" class="codeweek-orange-button" target="_blank">
-                                @lang('ambassador.visit_the')
-                                <span>@lang('ambassador.local_facebook_page')</span>
-                            </a>
-                        @endif
-
-                        @if ($country->website)
-                            <a href="{{ $country->website }}" class="codeweek-orange-button" target="_blank">
-                                @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
-                            </a>
-                        @endif
-                    @endif
-                @endforeach
-            @endif
         </div>
     </section>
 
