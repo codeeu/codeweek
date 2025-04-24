@@ -33,7 +33,7 @@ return [
     'get_involved' => 'Dalyvaukite',
     'meet_our_community' => 'Susipažinkite su mūsų bendruomene',
     'banner1_title' => 'Merginos skaitmeninėje erdvėje',
-    'banner1_description' => 'Lithuanian: Tyrinėkite ir išnaudokite skaitmenines galimybes – skaitmeninėje srityje įgalinkite naują merginų kartą!',
+    'banner1_description' => 'Tyrinėkite ir išnaudokite skaitmenines galimybes – skaitmeninėje srityje įgalinkite naują merginų kartą!',
     'banner2_title' => 'Mūsų programavimo savaitės šeima',
     'banner2_description' => 'Atraskite dinamišką mūsų atstovų, mokytojų, mokinių ir centrų tinklą – kiekvienas iš jų prisideda prie mūsų bendros skaitmeninio švietimo iniciatyvos.'
 ];
