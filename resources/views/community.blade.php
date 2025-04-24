@@ -131,10 +131,12 @@
                                 </option>
                             @endforeach
                         </select>
-                        <img
-                            src="images/chevron-down-icon.svg"
-                            class="absolute top-[14px] right-[14px] w-6 h-6 pointer-events-none text-secondary bg-white"
-                        >
+                        <div class="absolute" style="top: 14px; right: 14px">
+                            <img
+                                src="images/chevron-down-icon.svg"
+                                class="w-6 h-6 pointer-events-none text-secondary bg-white"
+                            >
+                        </div>
                       </div>
                     </form>
 
