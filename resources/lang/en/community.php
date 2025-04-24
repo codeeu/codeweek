@@ -106,9 +106,9 @@ return [
         'hub_level_IS' => 'Regional Hub',
         'hub_desc_IS' => 'European Centre for Women and Technology (ECWT) is dedicated to promoting gender equality within the tech industry across Europe. This organization focuses on creating opportunities for women in technology through mentorship programs, networking events, and skill-building workshops. By advocating for policy changes and raising awareness about the underrepresentation of women in tech, the center aims to inspire and empower a new generation of female leaders. Additionally, it fosters collaboration between different sectors to drive innovation and inclusivity in technology. ',
 
-        'hub_FI' => 'European Center for Women and Technology - ECWT<br/>on sitoutunut turvaamaan sukupuolinäkökulmaa teknologiateollisuudessa kaikkialla Euroopassa.',
-        'hub_level_FI' => 'Alueellinen hub',
-        'hub_desc_FI' => 'ECWT keskittyy<br/>(i) tukemaan lapsia ja erityisesti tyttöjä koodauksen, luovuuden ja uteliaisuuden yhdistämisessä heidän tulevaisuuden uransa muotoutumiseksi<br/>(ii) luomaan inspiroivan yhteisön, verkostoitumistapahtumia ja mentorointiohjelmia<br/>(iii) tarjoamaan sertifioituja koulutuksia uudelleenkoulutusta ja täydennyskoulutusta varten.<br/><br/>Tukemalla poliittisia muutoksia ja tarjoamalla innovatiivisia työkaluja, jotka on kehitetty yhteistyössä julkisensektorin, yritysten ja tutkimuksenjohtavien edustajien kanssa pohjoismaisten hyvien esimerkkien pohjalta, me voimaannutamme uuden sukupolven naisjohtajia.',
+        'hub_FI' => 'European Center for Women and Technology Forening',
+        'hub_level_FI' => 'Regional Hub',
+        'hub_desc_FI' => 'European Centre for Women and Technology (ECWT) is dedicated to promoting gender equality within the tech industry across Europe. This organization focuses on creating opportunities for women in technology through mentorship programs, networking events, and skill-building workshops. By advocating for policy changes and raising awareness about the underrepresentation of women in tech, the center aims to inspire and empower a new generation of female leaders. Additionally, it fosters collaboration between different sectors to drive innovation and inclusivity in technology. ',
 
         'hub_DK' => 'European Center for Women and Technology Forening',
         'hub_level_DK' => 'Regional Hub',
