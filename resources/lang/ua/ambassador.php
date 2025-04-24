@@ -14,8 +14,8 @@ return [
     */
 
     'visit_the' => 'Відвідайте',
-    'local_facebook_page' => 'локальну сторінку в Facebook',
-    'local_website' => 'Локальний сайт',
+    'local_facebook_page' => 'сторінку в Facebook',
+    'local_website' => 'сайт',
     'no_ambassadors' => 'Поки що відсутній посол',
 
 ];
