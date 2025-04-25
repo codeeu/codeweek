@@ -1,5 +1,8 @@
 @extends('layout.new_base')
 
+@section('title', 'EU Code Week Community Ambassadors, Educators & Volunteers')
+@section('description', 'Connect with local leaders, explore resources, and join the EU Code Week community network to inspire the next generation of digital innovators across Europe.')
+
 @section('non-vue-content')
     <section id="codeweek-ambassadors-page" class="codeweek-page font-['Blinker']">
         @php
@@ -492,7 +495,7 @@
                 </div>
                 <div class="flex-1">
                     <div class="relative inline-block observer-element">
-                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/5.png" />
+                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/6.png" />
                         <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
                             loading="lazy" src="/images/shape.png" style="transform: translate(-16px, -24px)" />
                     </div>
@@ -572,12 +575,16 @@
             function populateTeacherInfo(teachers, city = null) {
                 let teacherDetails =
                     `<h3 class="hidden mb-3 text-lg font-bold">${city ? 'Teachers in ' + city : 'Teachers in Selected Country'}</h3>`;
-                if (city) {
+                if (city || selectedMarker) {
                     teacherDetails +=
-                        `<button onclick="populateTeacherInfo(allTeachers)" class="hidden text-blue-600 hover:underline">Show All Teachers</button>`;
+                        `<div class="sticky top-0 max-md:py-4 md:pb-4 md:px-6 bg-white">
+                          <button onclick="selectedMarker = null; populateTeacherInfo(allTeachers)" class="font-semibold text-[#1C4DA1] underline">
+                            Show All Teachers
+                          </button>
+                        </div>`;
                 }
                 teacherDetails +=
-                    `<ul id="teacher-list" class="m-0 relative z-50 list-none bg-white h-auto h-[400px] md:h-full overflow-x-scroll md:overflow-x-hidden overflow-y-hidden md:overflow-y-scroll flex flex-row md:flex-col max-md:pb-4">`;
+                    `<ul id="teacher-list" class="m-0 relative z-50 list-none bg-white h-auto h-full overflow-x-scroll md:overflow-x-hidden overflow-y-hidden md:overflow-y-scroll flex flex-row md:flex-col max-md:pb-4">`;
                 teachers.forEach(function(teacher, index) {
                     let shortBio = teacher.bio ? teacher.bio.split(' ').slice(0, 14).join(' ') :
                         'No bio available';
