@@ -19,6 +19,7 @@ return [
     'toolkits' => 'Presentaciones y paquetes de herramientas', 
     'why' => '¿POR QUÉ', 
     'home' => 'Inicio',
+    'search_result' => 'Resultados de Búsqueda',
     'events' => 'Actividades',
     'ambassadors' => 'Embajadores',
     'resources' => 'Recursos',
@@ -49,5 +50,5 @@ return [
     'search_site' => 'Buscar en el sitio',
     'what_you_looking_for' => '¿Qué estás buscando?',
     'type_to_search' => 'Escribe para buscar...',
-    'search' => 'Escribe',
+    'search' => 'Búsqueda',
 ];

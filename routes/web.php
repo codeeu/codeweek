@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * @Author: Bernard Hanna
+ * @Date:   2025-03-03 16:51:10
+ * @Last Modified by:   Bernard Hanna
+ * @Last Modified time: 2025-03-13 12:18:47
+ */
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,6 +66,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeocodeController;
 use Illuminate\Support\Facades\Config;
 
+
+Route::permanentRedirect('/certificates/excellence/Excellence Certificate', '/certificates/excellence/2024');
+Route::permanentRedirect('/certificates/excellence/Excellence%20Certificate', '/certificates/excellence/2024');
 //Auth::loginUsingId(268354);
 
 Route::domain('{subdomain}.'.Config::get('app.url'))->group(function () {
@@ -107,9 +118,27 @@ Route::get('/treasure-hunt', [StaticPageController::class, 'static'])->name(
 Route::get('/dance', [StaticPageController::class, 'static'])->name('dance');
 Route::get('/why-coding', [StaticPageController::class, 'static'])->name('why-coding');
 
+Route::get('/girls-in-digital-week', [StaticPageController::class, 'static'])->name(
+    'girls-in-digital-week'
+);
+
+Route::get('/educational-resources', [StaticPageController::class, 'static'])->name(
+    'educational-resources'
+);
+
+Route::get('/webinars', [StaticPageController::class, 'static'])->name(
+    'webinars'
+);
+
 Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name(
     'remote-teaching'
 );
+
+Route::get('/dream-jobs-in-digital', [StaticPageController::class, 'static'])->name(
+    'dream-jobs-in-digital'
+);
+
+Route::get('dream-jobs-in-digital/{role}', [StaticPageController::class, 'static'])->name('dream-jobs-in-digital-role');
 
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
@@ -297,11 +326,8 @@ Route::view(
 Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware('auth');
 Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
-Route::get('/resources', [ResourcesController::class, 'learn'])->name('resources');
-Route::get('/resources/learn', [ResourcesController::class, 'learn'])->name('resources_learn');
-Route::get('/resources/teach', [ResourcesController::class, 'teach'])->name(
-    'resources_teach'
-);
+Route::get('/resources', [ResourcesController::class, 'all'])->name('resources');
+Route::get('/resources/learn-and-teach', [ResourcesController::class, 'all'])->name('resources_all');
 Route::post('/resources/search', [SearchResourcesController::class, 'search'])->name(
     'search_resources'
 );
@@ -631,6 +657,7 @@ $challenges = function () {
     Route::view('coding-with-art-through-storytelling', '2021.challenges.coding-with-art-through-storytelling')->name('challenges.coding-with-art-through-storytelling');
     Route::view('coding-with-legoboost', '2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
     Route::view('air-drawing-with-AI', '2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
+    Route::view('careers-as-constellations', '2021.challenges.careers-as-constellations')->name('challenges.careers-as-constellations');
 };
 
 Route::prefix('2021/challenges')->group($challenges);
@@ -644,7 +671,7 @@ Route::get(
 )->name('leading-teachers-document');
 
 Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
-Route::get('podcast/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
+Route::get('podcasts/{podcast}', [PodcastsController::class, 'show'])->name('podcast');
 
 Route::get('/unsubscribe/{email}/{magic}', [UnsubscribeController::class, 'index'])->name('unsubscribe');
 
@@ -689,6 +716,4 @@ Route::middleware(ProtectAgainstSpam::class)->group(function() {
     Auth::routes();
 });
 Route::feeds();
-
-
 

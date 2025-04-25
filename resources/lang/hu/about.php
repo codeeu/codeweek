@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => '2024-ban az európai programozási hétre október 14. és 27. között kerül sor.',
+    /*'when-title' => '2024-ban az európai programozási hétre október 14. és 27. között kerül sor.',
     'when-text' => '<p>Az európai programozási hét alulról szerveződő kezdeményezés, amely a kreativitást, a problémamegoldást és az együttműködést ünnepli a programozáson és egyéb technológiai tevékenységeken keresztül. Az alapgondolat a programozás láthatóbbá tétele, valamint hogy megmutassa a fiataloknak, a felnőtteknek és az időseknek, hogyan valósíthatók meg az ötletek a programozás révén, továbbá a készségek demisztifikálása, valamint a tanulni vágyó emberek egymással való összekapcsolása.</p>',
     'codeweek_in_numbers-title' => 'A programozási hét számokban',
     'codeweek_in_numbers-text' => '<p>2021-ban világszerte több mint 80 országban <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 millió ember</a> vett részt az európai programozási héten.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Még sosem volt ilyen könnyű egy saját alkalmazás vagy robot létrehozása, vagy akár repülő autók építése. Miért is ne? Az út nem könnyű, de tele van kreatív kihívásokkal és rengeteg szórakozással, amelyet támogató közösség tesz járhatóvá. Elfogadja a kihívást, hogy alkotóvá váljon?</p>
 
-                    <p>A programozás segít az algoritmikus gondolkodás, a problémamegoldás, a kreativitás és a csapatmunka fejlesztésében – ezek a kompetenciák és készségek az élet minden területén hasznosak.</p>',
+                    <p>A programozás segít az algoritmikus gondolkodás, a problémamegoldás, a kreativitás és a csapatmunka fejlesztésében – ezek a kompetenciák és készségek az élet minden területén hasznosak.</p>',*/
     'why_coding-quote' => '<p>Alessandro Bogliolo, az európai programozási hét nagyköveteiként dolgozó önkéntesek koordinátorának szavaival élve:<blockquote>
                             <p>„Az idők kezdete óta sok mindent tettünk kő, vas, papír és írószer felhasználásával, amelyek átalakították az életünket. Ez egy új korszak, amelyben a világunk kódrendszerekből áll. A különböző korszakok eltérő munkahelyeket kínálnak, és eltérő készségekre van kereslet. A programozási héten minden európainak meg akarjuk adni a lehetőséget a programozás felfedezésére és élvezetére. Tanuljunk meg programozni, hogy mi alakítsuk a jövőnket.”</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Csatlakozzon az európai programozási héthez',
+    /*'join_codeweek-title' => 'Csatlakozzon az európai programozási héthez',
     'join_codeweek-text' => '<p>Csatlakozzon az európai programozási héthez azzal, hogy <a href="/guide">programozási eseményt szervez</a> a városában, csatlakozik a <a href="/codeweek4all">Code Week 4 All kihíváshoz</a>, és közösségeken és határokon átívelően kapcsolja össze a tevékenységeket, vagy országa <a href="/ambassadors">európai programozási hétért felelős nagyköveteként</a> segítsen a programozási hét elképzeléseinek népszerűsítésében!</p>',
-    'partners_and_sponsors' => 'Partnerek és szponzorok',
+    'partners_and_sponsors' => 'Partnerek és szponzorok',*/
 ];

@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Guide – How to Get Started')
+@section('description', 'New to EU Code Week? Check out our step-by-step guide on how to organize events, access resources, and engage with the coding community.')
+
 @section('content')
 
     <section id="codeweek-toolkits-page" class="codeweek-page">

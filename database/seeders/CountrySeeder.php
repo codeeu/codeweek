@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use App\Country; // Ensure correct model namespace
 
 class CountrySeeder extends Seeder
 {
@@ -23,11 +25,7 @@ class CountrySeeder extends Seeder
             ['iso' => 'EE', 'name' => 'Estonia', 'longitude' => '1.234', 'latitude' => '5.678'],
             ['iso' => 'FI', 'name' => 'Finland', 'longitude' => '1.234', 'latitude' => '5.678'],
             ['iso' => 'FR', 'name' => 'France', 'longitude' => '1.234', 'latitude' => '5.678'],
-            ['iso' => 'GF', 'name' => 'French Guiana', 'longitude' => '1.234', 'latitude' => '5.678'],
-            ['iso' => 'PF', 'name' => 'French Polynesia', 'longitude' => '1.234', 'latitude' => '5.678'],
-            ['iso' => 'TF', 'name' => 'French Southern Territories', 'longitude' => '1.234', 'latitude' => '5.678'],
             ['iso' => 'DE', 'name' => 'Germany', 'longitude' => '1.234', 'latitude' => '5.678'],
-            ['iso' => 'GI', 'name' => 'Gibraltar', 'longitude' => '1.234', 'latitude' => '5.678'],
             ['iso' => 'GR', 'name' => 'Greece', 'longitude' => '1.234', 'latitude' => '5.678'],
             ['iso' => 'IE', 'name' => 'Ireland', 'longitude' => '1.234', 'latitude' => '5.678'],
             ['iso' => 'IT', 'name' => 'Italy', 'longitude' => '1.234', 'latitude' => '5.678'],
@@ -40,11 +38,13 @@ class CountrySeeder extends Seeder
             ['iso' => 'ES', 'name' => 'Spain', 'longitude' => '1.234', 'latitude' => '5.678'],
         ];
 
-        //dd($countries[0]["iso"]);
-
         foreach ($countries as $country) {
-            factory(App\Country::class)->create($country);
+            Country::updateOrCreate(
+                ['iso' => $country['iso']], // Ensure uniqueness by ISO code
+                $country
+            );
         }
 
+        $this->command->info("✅ Countries seeded successfully!");
     }
 }

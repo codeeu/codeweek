@@ -1,6 +1,82 @@
 <?php
 
 return [
+    'careers-as-constellations' => [
+        'title' => 'Careers as constellations',
+        'authorcontent' => 'This challenge and competition is the initiative of Linda Liukas author, illustrator and entrepreneur in connection with the Code4Europe partnership´s Girls in Digital Campaign 2025 #Webinar 1 livestreamed on Youtube: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">How Code, Creativity and Curiosity form a Career?</a>',
+        'author' => 'Linda Liukas',
+        'start-date' => 'Start date',
+        'activity-type' => 'Activity type',
+        'open-online-activity' => 'Open online activity',
+        'name-of-org' => 'Name of organisation',
+        'language' => 'Language',
+        'description' => 'This interactive activity helps students map their personal interests and hobbies to potential careers in technology. By visualizing their skills and passions as constellations, students discover how careers are formed by connecting seemingly unrelated dots. No prior coding experience is required, and the activity fosters creative thinking about the future of work in technology.',
+        'teachers' => 'Teachers',
+        'english' => 'English',
+        'type-of-org' => 'Type of organisation',
+        'private-business' => 'Private business',
+        'secondary-school' => 'Secondary school',
+        'higher-education' => 'Higher education',
+        'audience' => 'Audience',
+        'theme' => 'Main Themes',
+        'themes' => [
+            'motivation-and-awareness-raising' => 'Motivation and awareness raising',
+            'promoting-diversity' => 'Promoting diversity',
+        ],
+        'age-group' => 'Age group',
+        'age-groups' => [
+            '12' => '12+ (adaptable for middle school, high school, or even university students)',
+            'under-6' => 'Under 6',
+            '7-8' => '7-8',
+            '9-11' => '9-11',
+            '12-14' => '12-14',
+            '15-18' => '15-18',
+            'over-18' => 'Over 18',
+        ],
+        'subjects' => 'Subjects',
+        'time-required' => 'Time required',
+        '45–60' => '45–60 minutes',
+        'group-size' => 'Group size',
+        'group-sizes' => [
+            'small' => 'Can be done individually or in small groups',
+        ],
+        'required-materials' => 'Required materials',
+        'step-by-step-instructions' => 'Step by step instructions',
+        'materials' => [
+            'one' => 'Printed Careers as Constellations worksheet (A3 recommended)',
+            'two' => 'Paper <span class="font-sans">&</span> markers/pens for additional notes',
+            'three' => 'Optional: Digital version (students can create constellations using Miro, Canva, or Google Jamboard)',
+        ],
+        'titles' =>  [
+            'one' => 'Warm-up Discussion: What Are Your Dots? (5 min)',
+            'two' => 'Mapping Constellations: Connecting Interests to Tech (20 min)',
+            'three' => 'Example Connections',
+            'four' => ' Reflection <span class="font-sans">&</span> Sharing: What Patterns Did You Find? (15 min)',
+            'five' => 'Extending the Activity',
+        ],
+        'intro' => '<p>Start by challenging traditional career ideas with a question:</p>
+         <p  class="my-8 italic">Do you think careers should follow a straight path?</p>
+         <p> Introduce the idea that successful careers are often built from unexpected connections.</p><p>Watch together the talk by Linda Liukas where she shares her own career path in technology</p>',
+        'content' => [
+            'one' => '<p>Each student fills out the Careers as Constellations worksheet, adding:</p>',
+            'two' => 'Personal interests (hobbies, skills, favorite activities)',
+            'three' => 'Tech-related topics (AI, robotics, game design, digital art, sustainability tech, etc.)',
+            'four' => '<strong>Drawing lines</strong> to show connections between their interests and technology',
+            'five' => 'Loves music? → Interested in AI? → AI-generated music tools!',
+            'six' => 'Loves drawing? → Interested in game design? → 2D/3D animation <span class="font-sans">&</span> coding',
+            'seven' => 'Passionate about climate change? → Interested in data? → Environmental tech',
+            'eight' => 'Invite students to share surprising connections they discovered.',
+            'nine' => 'Ask: Which dots felt unrelated at first? How did they connect?',
+            'ten' => '<p>Discussion Prompts:</p>',
+            'eleven' => 'What surprised you about your constellation?',
+            'twelve' => 'Did you discover any career paths you hadnt considered before?',
+            'thirteen' => 'How could technology shape your future in unexpected ways?',
+            'fourteen' => 'Digital Challenge: Have students create a digital version of their constellation using Miro, Canva, or Google Jamboard and present their findings.',
+            'fifteen' => 'Research Task: Students research a person in tech whose career followed a surprising path, map their constellation and share their story.',
+            '16' => 'Download the <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">Template</a> for the activity',
+            '17' => 'OBS! REMEMBER TO ADD YOUR ACTIVITY AND UPLOAD IT <a href="/add">HERE!</a>',
+        ],
+    ],
     'chatbot' => [
         'title' => 'Make a chatbot',
         'author' => 'EU Code Week Team',
@@ -364,7 +440,7 @@ return [
     ],
     'haunted-house' => [
         'title' => 'Haunted House in Hedy',
-        'author' => 'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
+        'author' => 'Felienne Hermans, Leiden University - Ramon Moorlag, I <span class="font-sans">&</span>I - CodeWeek NL',
         'audience' => 'Teachers and educators',
         'duration' => '1 hour or 2 hours depending on prior knowledge',
         'purposes' => [
@@ -547,7 +623,8 @@ return [
         'author' => 'Lydie El-Halougi',
         'purposes' => [
             'To learn and practice loop and variables.',
-            'To enhance creativity in coding.'],
+            'To enhance creativity in coding.'
+        ],
         'description' => 'In this challenge you will write a project with Scratch to create a spiral, using the pen blocks, a loop and a variable.',
 
         'instructions' => [
@@ -661,7 +738,8 @@ return [
             'Make a new machine learning model adding 3 new labels, first call it “nice”, second bucket called “bad” and optional if you want to recognize your name, create third label called “name”.',
             'Train the new machine learning model, test it and use it to make Emobot in Scratch.',
             'Launch the Scratch 3 editor, delete the cat sprite, insert 3 new sprites made by Microsoft Bing Image Creator (happy, angry and not sure computer cartoon) or create a new sprite by clicking on the Paint icon by drawing three copies of the costume for happy, angry and not sure face.',
-            'Click the “Code” tab and enter the following script.'],
+            'Click the “Code” tab and enter the following script.'
+        ],
         'example' => [
             'Share your Emobot Kliki with your friends and learn more about AI and emotions!',
             'Instead of a computer cartoon you can try something different, like an animal. Instead of  kind and mean you could train the character to recognize other types of messages.',
@@ -686,7 +764,7 @@ return [
         ],
         'description' => 'Create a Scratch block-based program using the AI “Human Body” extension in a creative and engaging way, in order to draw on a screen without the need for a traditional mouse or touchscreen.',
         'instructions' => [
-            'Connect to the https://ai.thestempedia.com and create a teacher & students accounts.',
+            'Connect to the https://ai.thestempedia.com and create a teacher <span class="font-sans">&</span> students accounts.',
             'Import the extensions ‘Human Body Detection’,’ Pen’,’ Text to Speech’.',
             'Add the ‘Pencil’ Sprite from the library and create 7 sprites (‘write’, ‘clear’, ‘black’, ‘red’, ‘blue’, ‘green’, ‘pink’).',
             'Write commands to check what happens when the ‘pencil’ sprite touches one of the other sprites.',
@@ -727,7 +805,8 @@ return [
             'To teach/learn and reflect about coding concepts.',
             'To use simple coding tools.',
             'To develop computational thinking and problem solving.',
-        ], 'description' => [
+        ],
+        'description' => [
             'Create an escape coding experience like this:',
             'You can use google form, genially, google presentation, any tool to create a storytelling based on coding ;).',
 
@@ -771,7 +850,8 @@ return [
             'Allanimations start when the radio signal is received.',
             'The animation of the first microbit is immediately visible, the others wait until the snake gets there.',
             'The time between the two phases determines the speed of the snake.',
-        ], 'materials' => [
+        ],
+        'materials' => [
             'micro:bits (for every student if possible)',
             'laptop or computer for makecode.microbit.org editor',
         ],

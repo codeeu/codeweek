@@ -1,7 +1,11 @@
+% @Author: Bernard Hanna
+% @Date:   2025-01-29 14:25:29
+% @Last Modified by:   Bernard Hanna
+% @Last Modified time: 2025-03-14 10:32:53
 \documentclass[12pt]{article}
-\usepackage[T1,LGR,T2A]{fontenc}
+\usepackage[T1,LGR]{fontenc}  % Removed T2A encoding
 \usepackage[utf8]{inputenc}
-\usepackage[greek,russian,english]{babel}
+\usepackage[greek,english]{babel} % Keep only Greek and English
 \usepackage{mathpazo}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[landscape,a4paper]{geometry}
@@ -16,10 +20,6 @@
 \usepackage{paratype}
 \usepackage{tgpagella}
 
-
-\DeclareFontFamilySubstitution{T2A}{\rmdefault}{PTSerif-TLF}
-\DeclareFontFamilySubstitution{LGR}{\rmdefault}{udidot}
-
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
@@ -30,7 +30,6 @@ keepaspectratio]{images/excellence-2024.png}%
 \vfill
 }}}
 
-
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
 ~
@@ -38,34 +37,13 @@ keepaspectratio]{images/excellence-2024.png}%
 ~
 \begin{center}
 
-\vspace{6.3cm}
+\vspace{8.3cm}
 
 {\centering\Huge\
-\begin{otherlanguage*}{greek}
+\begin{otherlanguage*}{greek} % Changed from 'russian' to 'greek'
 \textbf{<CERTIFICATE_HOLDER_NAME>}
 \end{otherlanguage*}
 \par}
-
-\begin{table}[h]
-\footnotesize
-\begin{center}
-
-\end{center}
-\end{table}
-
-\vspace{-3cm}
-\end{center}
-\begin{table}[h]
-\footnotesize
-\begin{center}
-\begin{tabular}{lr}
-%~\hspace{0.7cm}
-\end{tabular}
-\end{center}
-\end{table}
-\vspace{-2.2cm}
-\begin{center}
-%\end{tabular}
 
 \end{center}
 \end{document}

@@ -4,7 +4,7 @@
 
     <section id="codeweek-training-page" class="codeweek-page">
 
-        @include('codingathome.banner')
+        @include('codingathome.banner', ['title' => __('coding-at-home.ada-charles-roby.title')])
 
         <section class="codeweek-content-wrapper">
 
