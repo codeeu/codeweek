@@ -25,7 +25,7 @@ class AmbassadorController extends Controller
             return redirect('ambassadors?country_iso='.$country_iso);
         }
 
-        $ambassadors = User::role('ambassador')->filter($filters)->whereNotNull('avatar_path')->whereNotNull('bio')->paginate(10);
+        $ambassadors = User::role('ambassador')->filter($filters)->whereNotNull('avatar_path')->whereNotNull('bio')->get();
 
         return view('ambassadors')->with([
             'ambassadors' => $ambassadors,

@@ -1,33 +1,53 @@
 <?php
 
 return [
-    'when-title' => '2024 AB Kod Haftası <strong> 14 ile 27 Ekim</strong> tarihleri arasında gerçekleşecek.',
-    'when-text' => '<p>AB Kod Haftası, programlama ve diğer teknolojik aktiviteler yoluyla yaratıcılığı, problem çözmeyi ve iş birliğini teşvik eden bir taban hareketidir. Buradaki amaç, programlamayı daha görünür kılmak, gençlere, yetişkinlere ve yaşlılara fikirleri kodlamayla nasıl hayata geçirdiğinizi göstermek, bu becerileri ortaya çıkarmak ve motive olmuş kişileri öğrenme amacıyla bir araya getirmektir.</p>',
-    'codeweek_in_numbers-title' => 'Rakamlarla Kod Haftası',
-    'codeweek_in_numbers-text' => '<p>2021 yılında, dünya genelinde 80\'den fazla ülkede <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milyon</a> insan AB Kod Haftasına katıldı.</p>
-                    <p>Ortalama katılımcı yaşı 11 olurken, 2021’daki katılımcıların %49’u kadınlar veya genç kızlardı. EU Code Week etkinliklerinin %88’si okullarda gerçekleştirildi; bu da 2021 kampanyası sırasında öğretmenleri güçlendirmeye yönelik çabaların başarıya ulaştığı anlamına geliyor.</p>
-                    <p>Herkes bir aktivite düzenleyebilir veya mevcut bir aktiviteye katılabilir. Bir konu seçip hedef kitlenizi belirleyin ve <a href="/add">haritaya aktivitenizi</a> <a href="/events">ekleyin</a>.</p>',
-    'run_by_volunteers-title' => 'Gönüllülüğe dayalı etkinlik',
-    'run_by_volunteers-text' => '<p>AB Kod Haftası gönüllüler tarafından yönetilmektedir. Bir ya da birkaç <a href="/ambassadors">Kod Hafta Elçisi</a> ülkelerindeki girişimi koordine etmektedir, fakat herkes kendi aktivitesini düzenleyebilir ve bunu <a href="/">codeweek.eu</a> haritasına ekleyebilir.</p>',
+    'when-title' => 'Yaratıcılık, kodlama ve sınırsız iş birliği',
+    'when-text' =>  '<p> AB Kod Haftası, her yaştan insanın kodlamayı, yaratıcılığı ve problem çözmeyi keşfetmesini sağlayan dinamik bir taban hareketidir. Dijital becerilere yönelik engelleri ortadan kaldırarak programlamayı daha erişilebilir, görünür ve kapsayıcı hale getirir. Sınıflardan topluluk alanlarına kadar, eğitimcileri, öğrencileri ve teknoloji meraklılarını birbirine bağlayarak dijital inovasyon yoluyla fikirleri hayata geçirir ve Avrupa çapında işbirliğini teşvik eder.
+                    </p>',
+    'codeweek_in_numbers-title' => 'Bir kıvılcımdan bir harekete',
+    'codeweek_in_numbers-text' => '<p>2013\'te küçük, tabandan gelen bir girişim olarak başlayan, milyonlara ulaşan yıl boyu süren bir harekete dönüştü. AB Kod Haftası artık sürekli bir girişim ve yıl boyunca Avrupa\'da ve ötesinde binlerce etkinlik gerçekleşiyor. Her Ekim ayında düzenlenen iki haftalık etkinlik, bu çabaların doruk noktasıdır; kodlamayı, dijital yaratıcılığı ve STEM eğitimini herkes için erişilebilir kılmak için topluluk odaklı bir çabanın kutlanmasıdır.
+                                    </p>
+                                    <p>On binlerce etkinlik ve sürekli büyüyen bir öğretmen, öğrenci ve ortak ağıyla Kod Haftası, yeniliğe ilham vermeye ve gelecek nesli geleceği şekillendirecek becerilerle donatmaya devam ediyor.
+                                    </p>',
+    'run_by_volunteers-title' => 'Uluslararası bir topluluk tarafından desteklenmektedir',
+    'run_by_volunteers-text' =>  '<p>EU Code Week, Avrupa genelinde kodlamayı hayata geçiren tutkulu bir eğitimciler, elçiler ve ortaklar topluluğu tarafından yönetilir. Code Week Elçileri ülkelerindeki etkinlikleri koordine ederken, Leading Teachers, okulları, öğretmenleri ve öğrencileri etkinlikler düzenlemeye ve onları <a href="/community?country_iso=IE">Code Week haritasına</a> kaydetmeye teşvik eden ve Avrupa genelinden 450\'den fazla eğitimcinin oluşturduğu büyüyen bir topluluktur.
+                                </p>
+                                <p>Herkes haritaya kendi etkinliğini ekleyerek katkıda bulunabilir. Birlikte, kodlamayı herkes için erişilebilir hale getirebiliriz!
+                                </p>',
     'supported_by_commission-title' => 'Avrupa Komisyonu tarafından desteklenmektedir',
-    'supported_by_commission-text' => '<p>AB Kod Haftası, 2013 yılında Avrupa Dijital Gündemi Genç Danışmanlar tarafından başlatılmıştır. Avrupa Komisyonu, <a href="http://ec.europa.eu/priorities/digital-single-market/">Dijital Tek Pazar</a> stratejisinin bir parçası olarak AB Kod Haftasını desteklemektedir; bu Komisyon, <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Dijital Eğitim Eylem Planında</a> özellikle okulları girişime katılmaya teşvik etmektedir.</p>',
-    'schools-title' => 'Okullar',
-    'schools-text' => '<p>Her seviyedeki okullar ve tüm branşlardaki öğretmenler, özellikle öğrencilerine dijital yaratıcılığı ve kodlamayı keşfetme fırsatı verebilmeleri için AB Kod Haftasına katılmaya davet edilmektedir. Girişim hakkında daha fazla bilgi edinin ve aktivitelerinizi öğretmenlere ayrılmış web sayfası aracılığıyla nasıl düzenleyebileceğinizi öğrenin: <a href="/schools">CodeWeek.eu/Schools</a></p>',
-    'why_coding-title' => 'Neden kodlama?',
-    'why_coding-text' => '<p>Bu, her zaman matematikten zevk almasına ve bilgisayarlarla oynamasına rağmen, hukuk okumak zorunda olduğunu hisseden Pia ile ilgili. Bu, daha iyi bir sosyal ağ fikri olan, fakat bunu kendi başına yapamayan Mark ile ilgili. Bu, ailesi kedi sahibi olmasına izin vermediği için robot yapma hayalleri olan Alice ile ilgili.</p>
+    'supported_by_commission-text' => '<p>AB Kod Haftası, 2013 yılında Dijital Gündem Avrupa Genç Danışmanları tarafından başlatıldı. Avrupa Komisyonu, <a href="http://ec.europa.eu/priorities/digital-single-market/"> Dijital Tek Pazar</a> stratejisinin bir parçası olarak AB Kod Haftası\'nı destekliyor. Komisyon, <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Dijital Eğitim Eylem Planı</a>\'nda özellikle okulları girişime katılmaya teşvik ediyor.</p>',
 
-                    <p>Bu, hayallerin gerçeğe dönüşmesine yardımcı olan sizlerle ilgili.</p>
+    'schools-title' => 'Sınıfınızı güçlendirme',
+    'schools-text' => '<p>Her seviyedeki tüm derslerin ve okulların öğretmenleri AB Kod Haftası\'nda hayati bir rol oynar. Katılarak, öğrencilerinize ilgi çekici ve uygulamalı bir şekilde kodlamayı ve dijital yaratıcılığı keşfetmeleri için ilham verebilirsiniz. Katılın ve <a href="/schools">CodeWeek.eu/Schools</a> adresinde kendi etkinliğinizi nasıl organize edeceğinizi keşfedin.</p>',
 
-                    <p>Aslında, hepimizle ilgili. Geleceğimizle ilgili. Teknoloji hayatlarımızı şekillendiriyor, fakat bunu ne için ve nasıl kullanacağımıza belli bir azınlığın karar vermesine izin veriyoruz. Sadece paylaşmaktan ve beğenmekten çok daha fazlasını yapabiliriz. Çılgın fikirlerimizi hayata geçirebilir, başkalarına mutluluk getirecek şeyler oluşturabiliriz.</p>
-
-                    <p>Kendi uygulamanızı yapmak, kendi robotunuzu oluşturmak ya da uçan arabalar icat etmek hiç bu kadar kolay olmamıştı, neden olmasın? Bu kolay bir yolculuk değil, aksine yaratıcı mücadelelerle, destekleyici bir toplulukla ve bolca eğlenceyle dolu bir yolculuk. Mücadeleyi kabul etmeye ve bir üretici olmaya hazır mısınız?</p>
-
-                    <p>Kodlama aynı zamanda, her kesimden insan için son derece iyi beceriler olan sayısal düşünme, problem çözme, yaratıcılık ve ekip çalışması gibi yetkinliklerin geliştirilmesine yardımcı olur.</p>',
+    'why_coding-title' => 'Neden Kodlama? Çünkü Gelecek Sizindir.',
+    'why_coding-text' => '<p>Kodlama sadece kod satırları yazmakla ilgili değildir; fikirleri şekillendirmek, sorunları çözmek ve görmek istediğiniz dünyayı yaratmakla ilgilidir.
+                        </p>
+                        <p>Teknoloji her yerimizde ve kodlama, ister uygulama tasarlamak, ister robot yapmak veya gerçek dünyadaki zorluklarla mücadele etmek olsun, herkesin hayal gücünü gerçeğe dönüştürmesini sağlar. Yaratıcılığı, sorun çözmeyi ve iş birliğini geliştirir; her alanda kapılar açan becerilerdir.
+                        </p>
+                        <p>AB Kod Haftası, dijital eğitimi, yeniliği ve topluluk güçlendirmesini yönlendiren bu dijital dönüşümü keşfetme, yaratma ve parçası olma şansınızdır!
+                        </p>
+                        <p>Avrupa Komisyonu Başkan Yardımcısı Viktor Negrescu, AB Kod Haftası\'nın devam eden etkisi hakkında şunları söylüyor: "Teknolojiye erişimin demokratikleştirilmesinin güçlü bir destekçisiyim... Avrupa\'nın rekabetçi kalmasını istiyorsak, dijital becerilere yatırım yapmalıyız. Code4Europe Konsorsiyumunun harika bir iş çıkaracağından eminim; bu yüzden size bol şans ve kodlamaya devam edin!"
+                        </p>',
     'why_coding-quote' => '<p>AB Kod Haftası gönüllü elçiler ekibi koordinatörü Alessandro Bogliolo şunları söyledi:<blockquote>
                             <p>“Zamanın başlangıcından itibaren, taş, demir, kâğıt ve kalem kullanarak hayatımızı değiştiren pek çok şey yaptık. Şimdi dünyamızın kodlarla şekillendiği farklı bir çağda yaşıyoruz. Farklı dönemlerde farklı iş ve becerilere ihtiyaç duyulur. Kod Haftası sırasında, tüm Avrupalılara kodlamayı keşfetme ve bundan keyif alma fırsatı sunmak istiyoruz. Geleceğimizi şekillendirmek için kodlamayı öğrenelim.\'</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'AB Kod Haftasına Katılın',
-    'join_codeweek-text' => '<p>Şehrinizde bir <a href="/guide">kodlama aktivitesi düzenleyerek</a>, <a href="/codeweek4all">Herkes için Kod Haftası Mücadelesine</a> katılarak ve topluluklarla sınırlar arasındaki etkinlikleri birleştirerek ya da ülkenizin <a href="/ambassadors">AB Kod Haftası Elçisi</a> olarak Kod Haftasının vizyonunu yaymamıza yardım ederek AB Kod haftasına katılabilirsiniz!</p>',
-    'partners_and_sponsors' => 'Partnerler ve Sponsorlar',
+    'join_codeweek-title' => 'Hareketin bir parçası olun!',
+    'join_codeweek-text' => "<p>AB Kod Haftası bir etkinlikten daha fazlasıdır — topluluk odaklı bir devrimdir! <a href='/guide'>Şehrinizde bir kodlama etkinliği düzenleyin</a>,<a href='/codeweek4all'> Code Week 4 All Challenge</a>'a katılın ve sınırlar ötesinde benzer düşünen yenilikçilerle bağlantı kurun.
+                            </p>
+                            <p>Daha da büyük bir etki yaratmak mı istiyorsunuz? Kendi <a href='/community?country_iso=IE'>topluluğunuzu bulmak</a> ve ülkenizde kodlamanın geleceğini şekillendirmeye yardımcı olmak için yerel merkezinizle bağlantı kurun!
+                            </p>
+                            <p>Ayrıca <a href='/blog/'>blogumuz</a> aracılığıyla yerel topluluk girişimleri ve uluslararası gelişmeler hakkında güncel kalabilirsiniz.
+                            </p>",
+
+    'partners_and_sponsors' => 'Ortaklarımız ve sponsorlarımızla tanışın',
+
+    'about_banner_title'=> 'Avrupa\'yı dijital becerilerle güçlendirmek',
+    'about_banner_content'=>'AB Kod Haftası, yaratıcılığı, problem çözmeyi ve iş birliğini teşvik ederek, kodlama ve dijital becerilerin yıl boyunca herkes için erişilebilir olmasını sağlar.',
+    'partners_and_sponsors-title' => 'Code4Europe Konsorsiyumu: Code Week\'in geleceğini yönlendiriyor',
+    'partners_and_sponsors-content'=> '<p>AB Code Week artık 20 ülkeden 40\'tan fazla eğitim ve teknoloji sektörü ortağından oluşan Code4Europe Konsorsiyumu tarafından yönetiliyor. Birlikte, Code Week\'in sürekli büyümesini, dijital eğitimi genişletmeyi ve Avrupa genelinde iş birliğini teşvik etmeyi sağlıyoruz.
+                                        </p>
+                                        <p>Eğitimciler, elçiler ve sektör liderlerinden oluşan güçlü bir toplulukla, kodlamanın geleceğini şekillendiriyoruz; onu daha erişilebilir, kapsayıcı ve etkili hale getiriyoruz.
+                                        </p>', 
 ];

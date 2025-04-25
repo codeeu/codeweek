@@ -1,5 +1,8 @@
 @extends('layout.new_base')
 
+@section('title', 'Register for EU Code Week – Join the Movement')
+@section('description', 'Sign up for EU Code Week and become part of a global community promoting coding and digital creativity.')
+
 @php
     $list = [
       (object) ['label' => __('login.register'), 'href' => ''],

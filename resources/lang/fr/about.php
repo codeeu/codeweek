@@ -1,33 +1,52 @@
 <?php
 
 return [
-    'when-title' => 'En 2024, la Semaine européenne du code aura lieu du 14 au 27 octobre.',
-    'when-text' => '<p>La Semaine européenne du code est un mouvement citoyen qui met à l’honneur la créativité, la résolution de problèmes et la collaboration par le biais de la programmation et d’autres activités technologiques. L’idée consiste à rendre la programmation plus visible, à montrer aux jeunes, aux adultes et aux personnes âgées comment concrétiser des idées grâce au code, à démystifier ces compétences et à rassembler un public désireux d’apprendre.</p>',
-    'codeweek_in_numbers-title' => 'La Semaine du code en chiffres',
-    'codeweek_in_numbers-text' => '<p>En 2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 millions de personnes</a> dans plus de 80 pays du monde ont participé à la Semaine européenne du code.</p>
-                    <p>La moyenne d’âge des participants était de 11 ans, et 49 % des participants en 2021 étaient des femmes ou des filles. 88 % des évènements de la Semaine européenne du code ont eu lieu dans des écoles, ce qui montre que les efforts déployés pour responsabiliser les enseignants pendant la campagne de 2021 ont porté leurs fruits.</p>
-                    <p>Tout le monde est invité à organiser ou à rejoindre une activité. Choisissez simplement un thème et un public cible et <a href="/add">ajoutez votre activité</a> à la <a href="/events">carte.</a></p>',
-    'run_by_volunteers-title' => 'Organisée par des bénévoles',
-    'run_by_volunteers-text' => '<p>La Semaine européenne du code est organisée par des bénévoles. Un ou plusieurs <a href="/ambassadors">ambassadeurs Code Week</a> coordonnent l’initiative dans leur pays, mais chacun peut organiser sa propre activité et l’ajouter à la carte <a href="/">codeweek.eu</a>.</p>',
+    'when-title' => 'Créativité, codage et collaboration sans limites',
+    'when-text' => '<p>La Semaine européenne du code est un mouvement citoyen dynamique qui permet aux personnes de tous âges d\'explorer le codage, la créativité et la résolution de problèmes. Elle fait tomber les barrières des compétences numériques, rendant la programmation plus accessible, plus visible et plus inclusive. Des salles de classe aux espaces communautaires, elle met en relation les éducateurs, les étudiants et les passionnés de technologie, en donnant vie aux idées grâce à l\'innovation numérique et en encourageant la collaboration dans toute l\'Europe.</p>',
+    'codeweek_in_numbers-title' => 'D\'une étincelle à un mouvement',
+    'codeweek_in_numbers-text' => '<p>Ce qui a commencé en 2013 comme une petite initiative populaire s\'est transformé en un mouvement qui s\'étend sur toute l\'année et touche des millions de personnes. La Semaine européenne du code est désormais une initiative permanente, avec des milliers d\'activités organisées tout au long de l\'année en Europe et au-delà. L\'événement de deux semaines qui a lieu chaque année en octobre est le point culminant de ces efforts - une célébration d\'une initiative collective visant à rendre le codage, la créativité numérique et l\'enseignement des STIM accessibles à tous. 
+                                    </p>
+                                    <p>Avec des dizaines de milliers d\'activités et un réseau d\'enseignants, d\'étudiants et de partenaires qui ne cesse de s\'agrandir, la Semaine européenne du code continue d\'inspirer l\'innovation et de doter la prochaine génération des compétences qui lui permettront de façonner l\'avenir.
+                                    </p>',
+    'run_by_volunteers-title' => 'Soutenue par une communauté internationale',
+    'run_by_volunteers-text' => '<p>La Semaine européenne du code est animée par une communauté passionnée d\'éducateurs, d\'ambassadeurs et de partenaires qui donnent vie au codage dans toute l\'Europe. Les ambassadeurs de la Semaine du code coordonnent les activités dans leur pays, tandis que les enseignants référents constituent une communauté croissante de plus de 450 éducateurs de toute l\'Europe, qui encouragent les écoles, les enseignants et les élèves à organiser des activités et à les inscrire sur la carte de la Semaine du code..
+                                </p>
+                                <p>Tout le monde peut contribuer en ajoutant sa propre activité sur <a href="/community?country_iso=IE">la carte</a>. Ensemble, nous pouvons rendre le codage accessible à tous !
+                                </p>',
     'supported_by_commission-title' => 'Soutien de la Commission européenne',
-    'supported_by_commission-text' => '<p>La Semaine européenne du code a été lancée en 2013 par les jeunes conseillers pour la «stratégie numérique pour l’Europe». La Commission européenne soutient la Semaine européenne du code, une initiative qui s’inscrit dans le cadre de sa stratégie pour un <a href="http://ec.europa.eu/priorities/digital-single-market/">marché unique numérique</a>. De plus, dans son <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">plan d’action en matière d’éducation numérique</a>, elle encourage en particulier les écoles à participer à cette initiative.</p>',
-    'schools-title' => 'Établissements scolaires',
-    'schools-text' => '<p>Les établissements scolaires à tous les niveaux et les enseignants de toutes les matières sont tout particulièrement invités à participer à la Semaine européenne du code, afin de donner l’occasion à leurs élèves de donner libre cours à leur créativité numérique et de s’adonner à la programmation. Pour en savoir plus sur l’initiative et sur l’organisation de votre activité, consultez la page web réservée aux enseignants: <a href="/schools">CodeWeek.eu/Schools</a></p>',
-    'why_coding-title' => 'Pourquoi ce besoin de coder?',
-    'why_coding-text' => '<p>Il s\'agit de Pia, qui s’est sentie obligée d’étudier le droit alors qu’elle avait toujours préféré les mathématiques et les ordinateurs. Il s\'agit de Mark, avec son idée de développer un meilleur réseau social, mais qui ne peut pas le faire seul. Il s\'agit d\'Alice et son rêve de créer des robots parce que ses parents ne veulent pas qu’elle ait un chat.</p>
-
-                    <p>Il s\'agit de ceux d\'entre vous qui contribuent déjà à réaliser ces rêves.</p>
-
-                    <p>En fait, il s\'agit de nous tous. De notre avenir. La technologie façonne nos vies, mais nous laissons une minorité décider ce qu’il faut en faire et comment l’utiliser. Nous pouvons faire mieux que simplement partager et liker ce que nous voyons. Nous pouvons concrétiser nos rêves les plus fous, créer des choses qui feront la joie des autres.</p>
-
-                    <p>Il n’a jamais été aussi simple de réaliser sa propre application, de créer son propre robot, ou d’inventer des voitures volantes, alors pourquoi pas! Ce défi n’est pas simple, mais il apporte son lot de créativité, il est soutenu par toute une communauté et possède un côté ludique appréciable. Êtes-vous prêt à relever le défi et à apporter votre pierre à l’édifice?</p>
-
-                    <p>Le codage aide également à développer des compétences telles que le raisonnement informatique, la résolution de problèmes, la créativité et le travail d’équipe – des compétences importantes dans tous les domaines de la vie.</p>',
+    'supported_by_commission-text' => '<p> La Semaine européenne du code a été lancée en 2013 par les jeunes conseillers pour la stratégie numérique européenne. La Commission européenne soutient la Semaine du code de l\'UE dans le cadre de sa stratégie pour un <a href="http://ec.europa.eu/priorities/digital-single-market/">marché unique numérique</a>. <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Dans le plan d\'action pour</a> l\'éducation numérique, la Commission encourage tout particulièrement les écoles à se joindre à l\'initiative.
+                                        </p>',
+    'schools-title' => 'Renforcez l\'autonomie de votre classe !',
+    'schools-text' =>  '<p>Les enseignants de toutes les matières et les écoles de tous les niveaux jouent un rôle essentiel dans la Semaine européenne du code. En vous joignant à eux, vous pouvez inciter vos élèves à explorer le codage et la créativité numérique d\'une manière attrayante et pratique. Participez et découvrez comment organiser votre propre activité sur <a href="/schools">CodeWeek.eu/Schools</a>.
+                        </p>',
+    'why_coding-title' => 'Pourquoi coder ? Parce que l\'avenir vous appartient.',
+    'why_coding-text' => '<p>Coder, ce n\'est pas seulement écrire des lignes de code, c\'est aussi façonner des idées, résoudre des problèmes et créer le monde que vous souhaitez voir.
+                        </p>
+                        <p>La technologie nous entoure et le codage permet à chacun de transformer son imagination en réalité, qu\'il s\'agisse de concevoir des applications, de construire des robots ou de relever des défis concrets. Il développe la créativité, la résolution de problèmes et la collaboration - des compétences qui ouvrent des portes dans tous les domaines
+                        </p>
+                        <p>La Semaine européenne du code est l\'occasion d\'explorer, de créer et de participer à cette transformation numérique qui favorise l\'éducation numérique, l\'innovation et l\'autonomisation des communautés !
+                        </p>
+                        <p>Viktor Negrescu, vice-président de la Commission européenne, s\'exprime sur l\'impact continu de la Semaine européenne du code : « Je suis un fervent partisan de la démocratisation de l\'accès à la technologie... si nous voulons que l\'Europe reste compétitive, nous devons investir dans les compétences numériques. Je suis convaincu que le Consortium Code4Europe fera du bon travail - bonne chance à vous, et continuez à coder ! 
+                        </p>',
     'why_coding-quote' => '<p>Alessandro Bogliolo, coordinateur de l’équipe d’ambassadeurs bénévoles de la Semaine européenne du code, a déclaré:<blockquote>
                             <p>«Depuis la nuit des temps, nous avons mis au point de nombreuses innovations en utilisant la pierre, le fer, le papier et le crayon. Aujourd’hui, nous vivons à une époque différente, régie par la programmation. Une époque différente où les emplois sont différents et exigent de nouvelles compétences. Au cours de la Semaine du code, nous voulons donner à chaque Européen l’occasion de découvrir la programmation et de s’amuser en l’utilisant. Apprenons la programmation pour bâtir notre avenir.»</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Participez à la Semaine européenne du code',
-    'join_codeweek-text' => '<p>Participez à la Semaine européenne du Code en <a href="/guide">organisant une activité de codage</a> dans votre ville, en participant au <a href="/codeweek4all">Code Week 4 All Challenge</a> et en participant à des activités transfrontalières et intercommunautaires, ou en nous aidant à diffuser l’initiative de la Semaine européenne du Code en tant qu’<a href="/ambassadors">ambassadeur Code Week de l’UE</a> dans votre pays!</p>',
-    'partners_and_sponsors' => 'Partenaires et sponsors',
+    'join_codeweek-title' => 'Participez au mouvement !',
+    'join_codeweek-text' => '<p>La Semaine européenne du code est plus qu\'un événement : c\'est une révolution menée par la communauté ! <a href="/guide">Organisez une activité </a>de codage dans votre ville, relevez <a href="/codeweek4all">le défi de la Semaine du code</a> pour tous et nouez des liens avec des innovateurs de même sensibilité au-delà des frontières. 
+                            </p>
+                            <p>Vous voulez avoir un impact encore plus important ? Connectez-vous à votre centre local pour <a href="/community?country_iso=IE">trouver votre propre communauté</a> et contribuer à façonner l\'avenir du codage dans votre pays !
+                            </p>
+                            <p>Vous pouvez également vous tenir au courant des initiatives des communautés locales et des développements internationaux grâce à notre <a href="/blog/">blog</a>.
+                            </p>',
+    'partners_and_sponsors' => 'Rencontrer nos partenaires et sponsors',
+
+    'about_banner_title'=>'Renforcer l\'autonomie de l\'Europe grâce aux compétences numériques',
+    'about_banner_content'=>'La Semaine européenne du code stimule la créativité, la résolution de problèmes et la collaboration, en rendant le codage et les compétences numériques accessibles à tous et à toutes, tout au long de l\'année.',
+    'partners_and_sponsors-title' => 'Le consortium Code4Europe : Le moteur de l\'avenir de la Semaine du Code',
+    'partners_and_sponsors-content'=>
+                                        '<p>La Semaine Européenne du Code est désormais guidée par le Consortium Code4Europe, composé de plus de 40 partenaires du secteur de l\'éducation et de la technologie issus de 20 pays. Ensemble, nous assurons la croissance continue de la Semaine du code, en développant l\'éducation numérique et en encourageant la collaboration à travers l\'Europe.
+                                        </p>
+                                        <p>Avec une communauté solide d\'éducateurs, d\'ambassadeurs et de leaders de l\'industrie, nous façonnons l\'avenir du codage - en le rendant plus accessible, plus inclusif et plus percutant.
+                                        </p>',  
 ];

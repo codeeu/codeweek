@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Why Learn to Code? Discover the Benefits with EU Code Week')
+@section('description', 'Coding is a key skill for the future! Learn why coding matters and how it fosters problem-solving, creativity, and digital literacy.')
+
 @section('content')
 
     <section id="codeweek-about-page" class="codeweek-page">

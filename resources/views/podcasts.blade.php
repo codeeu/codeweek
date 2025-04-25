@@ -1,92 +1,113 @@
-@extends('layout.base')
+@extends('layout.new_base')
+
+@section('title', 'EU Code Week Podcasts – Inspiring Talks on Coding')
+@section('description', 'Listen to expert discussions on coding, education, and digital literacy. Stay inspired with EU Code Week’s podcast series.')
 
 <x-tailwind></x-tailwind>
 <x-alpine></x-alpine>
+@php
+    $list = [
+      (object) ['label' => 'Educational Resources', 'href' => '/educational-resources'],
+      (object) ['label' => 'Podcasts', 'href' => ''],
+    ];
+@endphp
+@section('layout.breadcrumb')
+    @include('layout.breadcrumb', ['list' => $list])
+@endsection
 
 @section('content')
-
-    <section id="codeweek-schools-page" class="codeweek-page">
-
-        {{--        <section class="codeweek-banner training" style="background-color: #FDAF31">--}}
-        {{--            <div class="text">--}}
-        {{--                <h1>EU Code Week Podcasts</h1>--}}
-        {{--            </div>--}}
-        {{--            <div class="image">--}}
-        {{--                <img src="{{asset('images/banner_podcast.png')}}" class="static-image">--}}
-        {{--            </div>--}}
-        {{--        </section>--}}
-
-        <section class="flex flex-row justify-between codeweek-banner training" style="background-color: #FDAF31">
-            <div class="flex items-center justify-center w-full">
-                <div class="m-12 text-center">
-                    <div class="w-full text-xl text-white uppercase">
-                        <h1>EU Code Week Podcasts</h1>
+    <section id="coding-at-home-page" class="font-['Blinker'] overflow-hidden">
+        <section class="relative flex overflow-hidden">
+            <div class="flex relative transition-all w-full bg-orange-gradient pt-60 pb-0 md:py-12">
+                <div class="w-full pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                    <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+                        <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
+                            <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
+                                Podcasts
+                            </h2>
+                            <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-8 max-md:max-w-full max-w-[525px]">
+                                Tune in for expert insights on coding and digital creativity!
+                            </p>
+                            <div class="bg-[#F4F6FA] p-6 md:max-w-[386px] rounded-xl">
+                              <p class="text-base text-[#333E48] font-semibold mb-4 p-0">Listen on</p>
+                              <div class="flex gap-6">
+                                <a href="https://open.spotify.com/show/5AHSuZvjLSdbaO381lv3Qk" style="flex-basis: 167px">
+                                  <img
+                                      class="rounded-lg max-w-full"
+                                      loading="lazy"
+                                      src="/images/podcasts/spotify_logo.png"
+                                  />
+                                </a>
+                                <a href="https://podcasts.apple.com/us/podcast/eu-code-week-podcast-series/id1592076780" style="flex-basis: 139px">
+                                  <img
+                                      class="rounded-lg flex-basis-[139px]"
+                                      loading="lazy"
+                                      src="/images/podcasts/apple_podcasts_logo.png"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] leading-[22px]">
+                                #EUCodeWeek
+                            </div>
+                        </div>
+                        <img
+                            class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
+                            loading="lazy"
+                            src="/images/podcasts/podcasts_bg.png"
+                            style="clip-path: ellipse(71% 73% at 40% 20%);"
+                        />
+                        <img
+                            class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
+                            loading="lazy"
+                            src="/images/podcasts/podcasts_bg.png"
+                            style="clip-path: ellipse(70% 140% at 70% 25%);"
+                        />
                     </div>
                 </div>
             </div>
-
-            <div class="hidden md:w-full md:flex">
-                <img src="{{asset('images/banner_podcast.png')}}">
-
-            </div>
-
-
         </section>
 
-        <section class="codeweek-content-wrapper">
-            <div class="m-6">
-
-                <div class="leading-6">
-                    <h2 class="subtitle">EU Code Week Podcasts</h2>
-
+        <section class="relative z-10">
+            <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
+                <div class="w-full max-w-[880px] gap-2">
+                    <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
+                        EU Code Week Podcasts
+                    </h2>
+                    <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
+                        Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and innovation closer to you, your community and your school.
+                    </p>
+                    <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
+                        Join Arjana Blazic, Eugenia Casariego and Eirini Symeonidou, as they explore a range of topics, from media literacy to robotics, with the help of expert guests – to empower you to equip your students with the skills to confront the challenges and opportunities posed by a digital future.
+                    </p>
                 </div>
+            </div>
+            <div
+                    class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-40 w-28 md:w-72 h-28 md:h-72 bg-[#FFEF99] rounded-full hidden lg:block"
+                    style="transform: translate(-16px, -24px)"
+            ></div>
+            <div
+                    class="animation-element move-background duration-[1.5s] absolute z-0 lg:-bottom-20 xl:-bottom-28 right-40 w-28 h-28 hidden lg:block bg-[#FFEF99] rounded-full"
+                    style="transform: translate(-16px, -24px)"
+            ></div>
+        </section>
 
-                <div class="mb-4 leading-7">
-                    Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and
-                    innovation closer to you, your community and your school. Join Arjana Blazic, Eugenia Casariego and Eirini Symeonidou, from the Code Week Team, as they explore a range of topics, from media literacy to robotics, with the help of expert guests –
-                    to empower you to equip your students with the skills to confront the challenges and opportunities
-                    posed by a digital future.
-                </div>
-                <div class="mb-4">
-                    You can listen to the podcasts here or on <a
-                            href="https://open.spotify.com/show/5AHSuZvjLSdbaO381lv3Qk" target="_blank" rel="noreferer noopener">Spotify</a>, <a
-                            href="https://podcasts.apple.com/us/podcast/eu-code-week-podcast-series/id1592076780"
-                            target="_blank" rel="noreferer noopener">Apple podcasts</a>.
-                </div>
-
-
-
-
-
-                    <section class="grid grid-cols-1 gap-6 md:grid-cols-3" x-data="{}">
+        <section class="relative overflow-hidden">
+            <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(570% 90% at 38% 90%);"></div>
+            <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%);"></div>
+            <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(288% 90% at 50% 90%);"></div>
+            <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
+            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
                     @foreach($podcasts as $key => $podcast)
-                        @include('2021._podcast_tile', ['podcast' => $podcast, 'bg' => $key%2 ?'bg-gray-300':'bg-gray-200'])
-
+                        @include('2021._podcast_tile', ['podcast' => $podcast])
                     @endforeach
-                </section>
+                </div>
 
-
-
+                {{--                <div class="mt-6 lg:mt-10">--}}
+                {{--                    {{ $results->links('vendor.livewire.pagination') }}--}}
+                {{--                </div>--}}
             </div>
         </section>
-
-
     </section>
-
-@endsection
-
-@section('extra-css')
-    <style>
-        ul.checklist li:before {
-            content: '• ';
-            color: #ee6a2c;
-            font-weight: bold;
-        }
-
-        ul.sub-checklist li:before {
-            content: '- ';
-            color: #9d5025;
-            font-weight: bold;
-        }
-    </style>
 @endsection

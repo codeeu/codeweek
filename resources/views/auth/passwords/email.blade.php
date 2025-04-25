@@ -1,5 +1,8 @@
 @extends('layout.new_base')
 
+@section('title', 'Reset Your Password – EU Code Week')
+@section('description', 'Forgot your password? Easily reset it to regain access to your EU Code Week account. Follow the simple steps to create a new password.')
+
 @section('content')
     <section id="codeweek-forgotpassword-page">
         <section class="py-10 px-5 lg:p-20 bg-secondary-gradient flex justify-center relative overflow-hidden">

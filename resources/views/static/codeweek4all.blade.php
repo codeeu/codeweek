@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Code Week 4 All – Connect & Grow the Coding Community')
+@section('description', 'Join the Code Week 4 All challenge to link coding events, collaborate across countries, and promote digital skills worldwide.')
+
 @section('content')
 
     <section id="codeweek-training-page" class="codeweek-page">

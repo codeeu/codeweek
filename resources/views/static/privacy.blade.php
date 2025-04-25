@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Privacy Policy – Your Data, Your Rights')
+@section('description', 'Learn how EU Code Week collects, stores, and protects your data. Read our privacy policy to understand your rights and data security measures.')
+
 @section('content')
     <section id="codeweek-privacy-page" class="py-12 codeweek-page">
 

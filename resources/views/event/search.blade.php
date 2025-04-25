@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Find Coding Events Near You – EU Code Week')
+@section('description', 'Search for coding events happening across Europe. Join workshops, hackathons, and coding activities for all skill levels.')
+
 @push('scripts')
     <script defer src="{{asset('js/countriesGeoCentroids.js')}}" type="text/javascript"></script>
     <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>

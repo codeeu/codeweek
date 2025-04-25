@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $notified_at
+ * @property string $type
  * @property-read \App\User $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence newModelQuery()
@@ -30,6 +31,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence whereNotifiedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Excellence whereType($value)
  *
  * @mixin \Eloquent
  */
@@ -37,20 +39,36 @@ class Excellence extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['edition', 'name_for_certificate', 'certificate_url'];
+    /**
+     * Mass assignable fields. 
+     * Including 'user_id', 'type', and 'notified_at' 
+     * so updateOrCreate(...) can set them properly.
+     */
+    protected $fillable = [
+        'user_id',
+        'edition',
+        'type',
+        'name_for_certificate',
+        'certificate_url',
+        'notified_at',
+    ];
 
+    /**
+     * Scope or static method to get winners by year and type
+     * who haven't been notified yet (notified_at=null).
+     */
     public static function byYear($year, $type = 'Excellence')
     {
-        return Excellence::with('user')->where(
-            [
-                ['edition', '=', $year],
-                ['notified_at', '=', null],
-                ['type', '=', $type],
-
-            ]
-        )->get();
+        return self::with('user')
+        ->where('edition', $year)
+            ->whereNull('notified_at')
+            ->where('type', $type)
+            ->get();
     }
 
+    /**
+     * Relationship: each Excellence row belongs to a User.
+     */
     public function user(): BelongsTo
     {
         return $this->belongsTo(\App\User::class);

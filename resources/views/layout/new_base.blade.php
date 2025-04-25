@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="{{App::getLocale()}}" class="no-js">
 <head>
-    @if(!isset(Request::header()["dnt"]))
-      @if (Cookie::get('codeweek_cookie_consent') == 1)
-        @include('layout.analytics')
-      @endif
-    @else
-      <!-- DO NOT TRACK removed Analytics -->
-    @endif
+    @include('layout.analytics')
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -21,6 +15,9 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
     <link href="{{asset('css/fonts.css')}}" media="screen" rel="stylesheet" />
+    <link href="{{asset('css/swiper.css')}}" media="screen" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     @stack('extra-css')
 
@@ -36,14 +33,38 @@
             'url' => url('/')
         ]) !!};
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '981788817415269'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" 
+      src="https://www.facebook.com/tr?id=981788817415269&ev=PageView
+      &noscript=1"/>
+    </noscript>
 
     <!-- Title, keywords, description -->
-    <meta name="description" content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
+    @hasSection('description')
+        <meta name="description"
+              content="@yield('description')"/>
+    @else
+        <meta name="description"
+              content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
+    @endif
 
     @hasSection('title')
-    <title>EU Code Week - @yield('title')</title>
+        <title>@yield('title')</title>
     @else
-    <title>EU Code Week</title>
+        <title>EU Code Week</title>
     @endif
 
     <!-- Start - Cookie Bot -->
@@ -59,6 +80,9 @@
         @include('layout.menu')
         @yield('layout.breadcrumb')
 
+        @yield('layout.video-player')
+        @stack('video-layer-stack')
+
         <main id="app">
             @yield("content")
         </main>
@@ -72,22 +96,17 @@
     </div>
 
     <!-- Scripts -->
-    @if(!isset(Request::header()["dnt"]))
-      @if (Cookie::get('codeweek_cookie_consent') == 1)
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-
-        </script>
-      @endif
-    @endif
+    <script data-cookieconsent="marketing" async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/plain" data-cookieconsent="marketing">
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     {{-- Animation script --}}
     <script type="text/javascript">
@@ -172,9 +191,11 @@
     {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
     <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
     @include('scripts.countdown')
+    <script type="text/javascript" src="{{ asset('plugins/slick-slider/slick.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
     @livewireScripts
     <script src="https://unpkg.com/vue-select@latest"></script>
+{{--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>--}}
     {{--<script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js?_g=1663162661" async></script>--}}
 
     @stack('scripts')

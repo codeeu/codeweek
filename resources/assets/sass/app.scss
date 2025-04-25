@@ -1,6 +1,5 @@
 // Variables
 @import "variables";
-
 // Import components
 @import "components/header";
 @import "components/footer";
@@ -213,7 +212,7 @@ body:not(.new-layout) {
       color: #1C4DA1;
       transition-duration: 300ms;
     }
-    
+
     &:hover {
       .arrow-icon {
         transform: scale(-1);
@@ -223,7 +222,7 @@ body:not(.new-layout) {
         width: 100%;
       }
     }
-    
+
     &::after {
       content: '';
       position: absolute;

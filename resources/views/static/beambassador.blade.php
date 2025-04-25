@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'Become a Code Week Ambassador – Join the Movement')
+@section('description', 'Take the lead in promoting coding and digital literacy as a Code Week Ambassador. Inspire others and help organize exciting events in your community.')
+
 @section('content')
 
 

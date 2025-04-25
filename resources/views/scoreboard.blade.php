@@ -1,5 +1,8 @@
 @extends('layout.base')
 
+@section('title', 'EU Code Week Scoreboard: Track Participation Across Europe')
+@section('description', 'See how different countries and regions are contributing to EU Code Week. Track coding events and engagement on the live scoreboard!')
+
 @section('content')
 
     <section id="codeweek-scoreboard-page" class="codeweek-page">

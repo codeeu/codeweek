@@ -1,5 +1,8 @@
 @extends('layout.new_base')
 
+@section('title', 'EU Code Week Login – Access Your Account')
+@section('description', 'Log in to your EU Code Week account to manage events, track participation, and explore exclusive coding resources.')
+
 @php
     $list = [
       (object) ['label' => __('menu.signin'), 'href' => ''],
