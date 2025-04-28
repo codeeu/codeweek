@@ -95,12 +95,11 @@
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
                             EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <span class="font-semibold">Hello, Future! Technical Solutions for a changing world</span>.
-                            From October 2024 and March 2025, the EU Code Week 2024 Hackathon invites young innovators, ages 15-19, to join exciting local hackathons. Team up with peers to brainstorm, collaborate and create digital solutions to tackle some of the global challenges!
+                            EU Code Week national hackathons, which ran from October 2024 to March 2025, offered a platform for teams of young enthusiasts between 15-19 to learn, showcase their talents and produce a working solution to tackle global challenges.
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            To guide organisers in planning and delivering successful hackathons, here is the EU Code Week Hackathons Toolkit. In this Toolkit, you will find step-by-step instructions and tips for creating engaging and impactful events.
-                            All hackathons will take place online via <a class="text-dark-blue underline" href="https://eventornado.com/event/eu-codeweek-hackathon2024#home" target="_blank">Eventornado</a>. There will be one common online environment for all hackathons.
-                            More details on local hackathons, registrations and hackathon platform are coming soon!
+                            Now it's the time for the European final! Join us online on <span class="font-semibold">30 April 2025 at 14:00 CET</span> to celebrate young minds building tech solutions for a changing world!
+                            Seven international teams will pitch their projects live, and you—the audience—get to vote for your favorites! Expect inspiring ideas, expert jury feedback, and plenty of good vibes. Don’t miss the big moment when we crown the <span class="font-semibold">Audience Winner, Jury Winner</span>, and the ultimate <span class="font-semibold">Super Winner</span>.
                         </p>
                         <div class="flex flex-col tablet:flex-row lg:flex-col 2xl:flex-row gap-x-2 gap-y-4">
                             <a
