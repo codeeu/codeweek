@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => 'Vuonna 2024 EU:n koodausviikko järjestetään 14.– 27. lokakuuta.',
+    /*'when-title' => 'Vuonna 2024 EU:n koodausviikko järjestetään 14.– 27. lokakuuta.',
     'when-text' => '<p>EU:n koodausviikko on ruohonjuuritason hanke, jolla edistetään luovuutta, ongelmanratkaisukykyä ja yhteistyötä ohjelmoinnin ja muiden tekniikan alan tapahtumien kautta. Ajatuksena on tehdä ohjelmointia tunnetuksi ja näyttää nuorille, aikuisille ja senioreille, miten ideat voidaan herättää henkiin koodin avulla. Tavoitteena on myös hälventää koodaukseen kohdistuvaa mystiikkaa ja tuoda motivoituneet ihmiset oppimaan yhdessä.</p>',
     'codeweek_in_numbers-title' => 'Koodausviikko lukuina',
     'codeweek_in_numbers-text' => '<p>Vuonna 2021 EU:n koodausviikkoon osallistui <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 ihmistä</a> yli 80 maassa ympäri maailmaa.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Oman sovelluksen kehittäminen, oman robotin rakentaminen tai lentävien autojen keksiminen ei ole koskaan ollut näin helppoa! Matka ei ole helppo, mutta se on täynnä luovia haasteita, tukevaa yhteisöllisyyttä ja hauskanpitoa. Oletko valmis vastaamaan haasteeseen ja ryhtymään tekijäksi?</p>
 
-                    <p>Koodaus auttaa kehittämään erilaisia taitoja, kuten esimerkiksi laskennallista ajattelua, ongelmanratkaisukykyä, luovuutta ja tiimityötä. Nämä ovat kaikki hyviä taitoja elämän tiellä.</p>',
+                    <p>Koodaus auttaa kehittämään erilaisia taitoja, kuten esimerkiksi laskennallista ajattelua, ongelmanratkaisukykyä, luovuutta ja tiimityötä. Nämä ovat kaikki hyviä taitoja elämän tiellä.</p>',*/
     'why_coding-quote' => ' <p>EU:n koodausviikon vapaaehtoisten lähettiläiden tiimin koordinaattori Alessandro Bogliolo sanoo:<blockquote>
                             <p>”Aikojen alusta olemme toteuttaneet luovuuttamme kiven, raudan, paperin ja kynän avulla. Nyt elämme erilaisella aikakaudella, ja maailmamme on valettu koodin muottiin. Eri aikakausilla on erilaisia työ- ja taitotarpeita. Koodausviikon aikana haluamme antaa kaikille eurooppalaisille mahdollisuuden tutustua koodaukseen ja leikittellä koodeilla. Opetellaan koodaamaan ja muokataan tulevaisuuttamme.”</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Osallistu EU:n koodausviikkoon',
+    /*'join_codeweek-title' => 'Osallistu EU:n koodausviikkoon',
     'join_codeweek-text' => '<p>Osallistu EU:n koodausviikkoon <a href="/guide">järjestämällä koodaustapahtuma</a> omassa kaupungissasi, liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a> ja yhdistämällä eri yhteisöissä ja maissa järjestettäviä tapahtumia tai tekemällä koodausviikkoa tunnetuksi oman maasi <a href="/ambassadors">EU:n koodausviikkolähettiläänä</a>!</p>',
-    'partners_and_sponsors' => 'Kumppanit ja sponsorit',
+    'partners_and_sponsors' => 'Kumppanit ja sponsorit',*/
 ];

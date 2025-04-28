@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => 'EU Code Week 2024 anordnas mellan den 14 och 27 oktober.',
+    /*'when-title' => 'EU Code Week 2024 anordnas mellan den 14 och 27 oktober.',
     'when-text' => '<p>EU Code Week är ett gräsrotsinitiativ som hyllar kreativitet, problemlösning och samarbete via programmering och andra tekniska aktiviteter. Tanken är att göra programmering mer synligt, att visa unga, vuxna och äldre hur man kan förverkliga idéer med kod, att avmystifiera dessa färdigheter och få motiverade människor att lära sig tillsammans.</p>',
     'codeweek_in_numbers-title' => 'Code Week i siffror',
     'codeweek_in_numbers-text' => '<p>År 2021 deltog <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miljoner personer</a> i över 80 länder världen runt i EU Code Week.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Det har aldrig varit enklare att bygga en app, en robot eller kanske till och med att uppfinna flygande bilar! Det är inte lätt, men det innebär massor av kreativa utmaningar, det finns en hjälpsam gemenskap och det är väldigt roligt. Är du redo att anta utmaningen och bli en skapare?</p>
 
-                    <p>Kodning hjälper också till att utveckla färdigheter som datalogiskt tänkande, problemlösning, kreativitet och samarbete – färdigheter som är bra inom alla områden.</p>',
+                    <p>Kodning hjälper också till att utveckla färdigheter som datalogiskt tänkande, problemlösning, kreativitet och samarbete – färdigheter som är bra inom alla områden.</p>',*/
     'why_coding-quote' => '<p>Alessandro Bogliolo, samordnare av EU Code Weeks frivilliga ambassadörer säger:<blockquote>
                             <p>”Sedan tidernas begynnelse har vi skapat saker med sten, järn, papper och penna som har förändrat våra liv. Nu lever vi i en annan tidsålder där vår värld formas av kod. Olika arbeten och kompetenser krävs under olika tidsperioder. Under Code Week vill vi att alla européer ska få chansen att upptäcka kodning och se hur roligt det är. Med kod kan vi forma vår framtid.”</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Delta i EU Code Week',
+    /*'join_codeweek-title' => 'Delta i EU Code Week',
     'join_codeweek-text' => '<p>Delta i EU Code Week genom att <a href="/guide">organisera en kodningsaktivitet</a> på din ort, delta i <a href="/codeweek4all">Code Week 4 All Challenge</a> och andra aktiviteter som förenar närsamhällen och går över gränserna. Eller hjälp oss att sprida information om Code Week som <a href="/ambassadors">ambassadör för EU Code Week</a> i ditt land!</p>',
-    'partners_and_sponsors' => 'Partners och sponsorer',
+    'partners_and_sponsors' => 'Partners och sponsorer',*/
 ];

@@ -1,16 +1,16 @@
 {
   "resources/assets/sass/app.scss": {
-    "file": "assets/app-DLEYY4g1.css",
+    "file": "assets/app-DyEntBnx.css",
     "src": "resources/assets/sass/app.scss",
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-D5Z_h9Hh.css",
+    "file": "assets/app-B8RcvDPG.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BeQfK5Wu.js",
+    "file": "assets/app-Bot-dkwU.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -47,185 +47,185 @@
       "resources/lang/php_ua.json"
     ],
     "css": [
-      "assets/app-Dy6pmx_p.css"
+      "assets/app-DKeYODlm.css"
     ]
   },
   "resources/lang/php_al.json": {
-    "file": "assets/php_al-BoEeuI-F.js",
+    "file": "assets/php_al-ByDIfRfB.js",
     "name": "php_al",
     "src": "resources/lang/php_al.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_ba.json": {
-    "file": "assets/php_ba-BswSqQMV.js",
+    "file": "assets/php_ba-CZuY_45c.js",
     "name": "php_ba",
     "src": "resources/lang/php_ba.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_bg.json": {
-    "file": "assets/php_bg-EYuryyTt.js",
+    "file": "assets/php_bg-cnq9bu5t.js",
     "name": "php_bg",
     "src": "resources/lang/php_bg.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_cs.json": {
-    "file": "assets/php_cs-BsGUOsGw.js",
+    "file": "assets/php_cs-B3zV_2h8.js",
     "name": "php_cs",
     "src": "resources/lang/php_cs.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_da.json": {
-    "file": "assets/php_da-COOn3F7s.js",
+    "file": "assets/php_da-CT7h-8D3.js",
     "name": "php_da",
     "src": "resources/lang/php_da.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_de.json": {
-    "file": "assets/php_de-BOhb02yh.js",
+    "file": "assets/php_de-D5G_u_ZU.js",
     "name": "php_de",
     "src": "resources/lang/php_de.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_el.json": {
-    "file": "assets/php_el-CqBw0In3.js",
+    "file": "assets/php_el-B83oJ7wW.js",
     "name": "php_el",
     "src": "resources/lang/php_el.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_en.json": {
-    "file": "assets/php_en-B9fV-4tb.js",
+    "file": "assets/php_en-DVLUkJ_P.js",
     "name": "php_en",
     "src": "resources/lang/php_en.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_es.json": {
-    "file": "assets/php_es-DZc8_mBL.js",
+    "file": "assets/php_es-DuJ_BDat.js",
     "name": "php_es",
     "src": "resources/lang/php_es.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_et.json": {
-    "file": "assets/php_et-HpmVylHn.js",
+    "file": "assets/php_et-CrgGRu0s.js",
     "name": "php_et",
     "src": "resources/lang/php_et.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_fi.json": {
-    "file": "assets/php_fi-DMriS-cx.js",
+    "file": "assets/php_fi-DHiLUKTo.js",
     "name": "php_fi",
     "src": "resources/lang/php_fi.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_fr.json": {
-    "file": "assets/php_fr-yUkYyTJl.js",
+    "file": "assets/php_fr-hdk0BlJW.js",
     "name": "php_fr",
     "src": "resources/lang/php_fr.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_hr.json": {
-    "file": "assets/php_hr-CiMdFmhK.js",
+    "file": "assets/php_hr-B3vyoaBc.js",
     "name": "php_hr",
     "src": "resources/lang/php_hr.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_hu.json": {
-    "file": "assets/php_hu-_DgLnxvl.js",
+    "file": "assets/php_hu-BF5z7YhG.js",
     "name": "php_hu",
     "src": "resources/lang/php_hu.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_it.json": {
-    "file": "assets/php_it-CYDWy9Om.js",
+    "file": "assets/php_it-D7I4Cgqt.js",
     "name": "php_it",
     "src": "resources/lang/php_it.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_lt.json": {
-    "file": "assets/php_lt-DrVx8oTV.js",
+    "file": "assets/php_lt-B--fU7Um.js",
     "name": "php_lt",
     "src": "resources/lang/php_lt.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_lv.json": {
-    "file": "assets/php_lv-CxVh2L8q.js",
+    "file": "assets/php_lv-BfrCwze1.js",
     "name": "php_lv",
     "src": "resources/lang/php_lv.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_me.json": {
-    "file": "assets/php_me-UBKX7CmI.js",
+    "file": "assets/php_me-CSFUvPrW.js",
     "name": "php_me",
     "src": "resources/lang/php_me.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_mk.json": {
-    "file": "assets/php_mk-CxuK1-QZ.js",
+    "file": "assets/php_mk-62G-p4aM.js",
     "name": "php_mk",
     "src": "resources/lang/php_mk.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_mt.json": {
-    "file": "assets/php_mt-BOzXROTE.js",
+    "file": "assets/php_mt-BoQxtloA.js",
     "name": "php_mt",
     "src": "resources/lang/php_mt.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_nl.json": {
-    "file": "assets/php_nl-XMYB3-T1.js",
+    "file": "assets/php_nl-C-qKFlGa.js",
     "name": "php_nl",
     "src": "resources/lang/php_nl.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_pl.json": {
-    "file": "assets/php_pl-BcRe_LhB.js",
+    "file": "assets/php_pl-CJAaS8pC.js",
     "name": "php_pl",
     "src": "resources/lang/php_pl.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_pt.json": {
-    "file": "assets/php_pt-C22vTuIV.js",
+    "file": "assets/php_pt-DSqii9P_.js",
     "name": "php_pt",
     "src": "resources/lang/php_pt.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_ro.json": {
-    "file": "assets/php_ro-CyxIQ9qZ.js",
+    "file": "assets/php_ro-Cj6zeKqn.js",
     "name": "php_ro",
     "src": "resources/lang/php_ro.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_rs.json": {
-    "file": "assets/php_rs-Bh3j7A2b.js",
+    "file": "assets/php_rs-DkWA3nhs.js",
     "name": "php_rs",
     "src": "resources/lang/php_rs.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_sk.json": {
-    "file": "assets/php_sk-Btfii795.js",
+    "file": "assets/php_sk-FqVEL0iR.js",
     "name": "php_sk",
     "src": "resources/lang/php_sk.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_sl.json": {
-    "file": "assets/php_sl-BcbN8tek.js",
+    "file": "assets/php_sl-Cpfe8Obq.js",
     "name": "php_sl",
     "src": "resources/lang/php_sl.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_sv.json": {
-    "file": "assets/php_sv-DpFKdh_U.js",
+    "file": "assets/php_sv-jlWFl16I.js",
     "name": "php_sv",
     "src": "resources/lang/php_sv.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_tr.json": {
-    "file": "assets/php_tr-Bxrd_pt-.js",
+    "file": "assets/php_tr-BaHk1eR3.js",
     "name": "php_tr",
     "src": "resources/lang/php_tr.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_ua.json": {
-    "file": "assets/php_ua-VbllPSL5.js",
+    "file": "assets/php_ua-BvHV2sGl.js",
     "name": "php_ua",
     "src": "resources/lang/php_ua.json",
     "isDynamicEntry": true
