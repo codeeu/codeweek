@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'about' => 'La Semaine europ&eacute;enne du code est une initiative citoyenne qui vise &agrave; apprendre la programmation et l&rsquo;alphab&eacute;tisation num&eacute;rique &agrave; tous de mani&egrave;re amusante et attrayante.',
+    'about' => 'La Semaine européenne du code est une initiative citoyenne qui vise à apprendre la programmation et l’alphabétisation numérique à tous de manière amusante et attrayante.',
     'when' => '14-27&nbsp;octobre&nbsp;2024',
-    'when_text' => 'Apprendre la programmation nous aide &agrave; comprendre le monde en mutation rapide qui nous entoure ainsi que le fonctionnement de la technologie, et &agrave; d&eacute;velopper des comp&eacute;tences et des aptitudes afin d&rsquo;&eacute;tudier de nouvelles id&eacute;es et d&rsquo;innover.',
+    'when_text' => 'Apprendre la programmation nous aide à comprendre le monde en mutation rapide qui nous entoure ainsi que le fonctionnement de la technologie, et à développer des compétences et des aptitudes afin d’étudier de nouvelles idées et d’innover.',
     'school_banner_title' => 'Participez!',
     'school_banner_text' => 'Vous êtes enseignant(e)?',
     'school_banner_text2' => 'Cliquez ici pour découvrir comment participer!',

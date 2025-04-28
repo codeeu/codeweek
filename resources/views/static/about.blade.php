@@ -11,14 +11,14 @@
 
         <section class="codeweek-banner about">
             <div class="text">
-                <h2>#EUCodeWeek</h2>
-                <h1>@lang('menu.about')</h1>
+                <h2 class="max-w-[600px] font-bold leading-none text-white max-md:max-w-full max-md:text-6xl">@lang('about.about_banner_title')</h2>
+                <p class="max-w-[500px] text-base font-bold leading-6 text-white max-md:max-w-full">
+                    @lang('about.about_banner_content')
+                </p>
             </div>
             <div class="image">
                 <img src="/images/banner_about.svg" class="static-image">
-
             </div>
-
         </section>
 
 
@@ -34,7 +34,7 @@
 
                 @lang('about.codeweek_in_numbers-text')
 
-                <img src="{{asset('img/participation-2021.gif')}}">
+                <img src="{{asset('img/IMG_2433-Enhanced-NR.jpg')}}">
 
             </div>
 
@@ -51,9 +51,10 @@
                         <h1>@lang('about.supported_by_commission-title')</h1>
 
                         @lang('about.supported_by_commission-text')
-                        <p>
+                        
+                        {{--<p>
                             @lang('snippets.about.goal')
-                        </p>
+                        </p>--}}
 
                     </div>
 
@@ -68,7 +69,7 @@
 
                     @lang('about.why_coding-text')
 
-                    @lang('about.why_coding-quote')
+                    {{--@lang('about.why_coding-quote')--}}
 
                 </div>
 
@@ -84,6 +85,10 @@
             </div>
 
             <div class="partners">
+                <h1>@lang('about.partners_and_sponsors-title')</h1>
+
+                @lang('about.partners_and_sponsors-content')
+                
                 <a href="/partners">
                     <h1>@lang('about.partners_and_sponsors')</h1>
                     <img src="/images/external-link.svg" width="16" class="static-image">
