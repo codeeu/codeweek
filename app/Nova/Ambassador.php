@@ -112,7 +112,7 @@ class Ambassador extends Resource
         //return $query->where('country_iso', "=", $request->user()->country_iso);
 
         return $query->join('model_has_roles', 'users.id', '=', 'model_has_roles.model_id')
-            ->where('model_has_roles.role_id', '=', 3)
+            ->where('model_has_roles.role_id', '=', 4)
             ->select('users.*');
 
     }
