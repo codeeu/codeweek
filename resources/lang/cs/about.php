@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => 'V roce 2024 proběhne Evropský týden programování od 14. do 27. října.',
+    /*'when-title' => 'V roce 2024 proběhne Evropský týden programování od 14. do 27. října.',
     'when-text' => '<p>Evropský týden programování je projekt, který propaguje kreativitu, řešení problémů a spolupráci pomocí programování a jiných technických aktivit. Cílem je programování zviditelnit – ukázat mladým lidem, dospělým i seniorům, jak je díky programování možné realizovat myšlenky. Chceme tyto dovednosti zbavit roušky tajemství a spojit motivované lidi, aby se učili.</p>',
     'codeweek_in_numbers-title' => 'Týden programování v číslech',
     'codeweek_in_numbers-text' => '<p>V roce 2021 se Evropského týdne programování zúčastnilo <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milionu lidí</a> ve více než 80 zemích celého světa.</p>
@@ -22,12 +22,12 @@ return [
 
                     <p>Nikdy nebylo snadnější vytvořit svou vlastní appku, sestavit svého vlastního robota, nebo dokonce vymyslet létající auto. Takže do toho! Cesta nebude snadná, ale je plná tvořivých výzev, ochotných podporovatelů a spousty legrace. Jste ochotní přijmout tuto výzvu a stát se tvůrcem?</p>
 
-                    <p>Programování také pomáhá rozvíjet dovednosti, jako je informatické myšlení, řešení problémů, kreativita a týmová spolupráce – a to jsou dovednosti užitečné pro všechny oblasti života.</p>',
+                    <p>Programování také pomáhá rozvíjet dovednosti, jako je informatické myšlení, řešení problémů, kreativita a týmová spolupráce – a to jsou dovednosti užitečné pro všechny oblasti života.</p>',*/
     'why_coding-quote' => '<p>Alessandro Bogliolo, koordinátor týmu dobrovolníků Evropského týdne programování, řekl:<blockquote>
                             <p>„Během dlouhých věků jsme mnoho věcí, které změnily náš život, dokázali udělat pomocí kamene, železa, papíru a pera. Dnes žijeme v odlišné době – náš svět je formován programováním. Různé éry mají různé požadavky na pracovní odbornosti a dovednosti. Během Týdne programování chceme dát každému Evropanovi příležitost objevit programování a oblíbit si ho. Naučme se programovat a utvářejme svou budoucnost.“</p>
                         </blockquote>
                     </p>',
-    'join_codeweek-title' => 'Zapojte se do Evropského týdne programování',
+    /*'join_codeweek-title' => 'Zapojte se do Evropského týdne programování',
     'join_codeweek-text' => '<p>Zapojte se do Evropského týdne programování tak, že ve svém městě <a href="/guide">zorganizujte programovací akci</a>, zapojíte se do <a href="/codeweek4all">soutěže Code Week 4 All</a> a souvisejících akcí napříč komunitami a hranicemi nebo nám pomozte šířit vizi Týdne programování jako <a href="/ambassadors">ambasador Evropského týdne programování</a> ve své zemi!</p>',
-    'partners_and_sponsors' => 'Partneři a sponzoři',
+    'partners_and_sponsors' => 'Partneři a sponzoři',*/
 ];
