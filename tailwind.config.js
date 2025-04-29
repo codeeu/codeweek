@@ -49,6 +49,7 @@ module.exports = {
         blinker: ['Blinker', 'sans-serif'],
       },
       screens: {
+        'xs': '480px',
         'sm': '575px',
         'tablet': '993px',
         'md': '768px',
