@@ -62,7 +62,7 @@
                             <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-4">
                                 Fill out this form:
                             </p>
-                            <a href="/" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-10 font-['Blinker'] hover:bg-hover-orange duration-300">
+                            <a href="https://forms.office.com/e/BJK7b42iHp" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-10 font-['Blinker'] hover:bg-hover-orange duration-300">
                                 <span
                                     class="text-base leading-7 font-semibold text-black normal-case"
                                 >
@@ -77,7 +77,7 @@
                             <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-4">
                                 Let us know here:
                             </p>
-                            <a href="/" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-10 font-['Blinker'] hover:bg-hover-orange duration-300">
+                            <a href="https://forms.office.com/e/504a5CUbUm" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-10 font-['Blinker'] hover:bg-hover-orange duration-300">
                                 <span
                                     class="text-base leading-7 font-semibold text-black normal-case"
                                 >
