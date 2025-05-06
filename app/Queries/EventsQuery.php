@@ -9,6 +9,7 @@ use App\Theme;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Country;
 
 class EventsQuery
 {
@@ -124,5 +125,25 @@ class EventsQuery
         $event->audiences()->sync($request['audience']);
 
         return $event;
+    }
+
+    public static function trigger(?Country $country, $status = null)
+    {
+        $query = Event::query()
+            ->where(function($query) {
+                $query->where('status', 'APPROVED')
+                      ->orWhere('status', 'FEATURED');
+            })
+            ->orderBy('start_date', 'asc');
+
+        if ($country) {
+            $query->where('country_iso', $country->iso);
+        }
+
+        if ($status) {
+            $query->where('status', $status);
+        }
+
+        return $query->get();
     }
 }
