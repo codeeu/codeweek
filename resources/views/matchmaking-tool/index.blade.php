@@ -14,7 +14,7 @@
 @section('content')
     <section id="codeweek-matchmaking-tool" class="font-['Blinker'] overflow-hidden">
         <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-orange-gradient pt-48 md:pt-32 pb-0 md:py-16">
+            <div class="flex relative transition-all w-full bg-orange-gradient pt-48 pb-0 md:py-24">
                 <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
@@ -62,11 +62,11 @@
                             <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-4">
                                 Fill out this form:
                             </p>
-                            <a href="https://forms.office.com/e/BJK7b42iHp" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-10 font-['Blinker'] hover:bg-hover-orange duration-300">
+                            <a href="https://forms.office.com/e/BJK7b42iHp" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-8 font-['Blinker'] hover:bg-hover-orange duration-300">
                                 <span
-                                    class="text-base leading-7 font-semibold text-black normal-case"
+                                    class="text-base leading-7 font-semibold text-black normal-case whitespace-nowrap"
                                 >
-                                    Individual registration forn
+                                    Individual registration form
                                 </span>
                             </a>
                         </div>
@@ -77,11 +77,11 @@
                             <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-4">
                                 Let us know here:
                             </p>
-                            <a href="https://forms.office.com/e/504a5CUbUm" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-10 font-['Blinker'] hover:bg-hover-orange duration-300">
+                            <a href="https://forms.office.com/e/504a5CUbUm" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-8 font-['Blinker'] hover:bg-hover-orange duration-300">
                                 <span
-                                    class="text-base leading-7 font-semibold text-black normal-case"
+                                    class="text-base leading-7 font-semibold text-black normal-case whitespace-nowrap"
                                 >
-                                    Organisation registration forn
+                                    Organisation registration form
                                 </span>
                             </a>
                         </div>
