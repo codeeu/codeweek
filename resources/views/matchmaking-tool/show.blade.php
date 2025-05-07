@@ -43,7 +43,7 @@
                         <div class="accordion">
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p class="text-[#20262C] font-semibold text-lg">Introduction</p>
+                                    <p class="text-[#20262C] font-semibold text-lg font-['Montserrat']">Introduction</p>
                                     <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                     </button>
@@ -56,7 +56,7 @@
                             </div>
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p class="text-[#20262C] font-semibold text-lg">Why am I volunteering?</p>
+                                    <p class="text-[#20262C] font-semibold text-lg font-['Montserrat']">Why am I volunteering?</p>
                                     <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                     </button>
@@ -69,7 +69,7 @@
                             </div>
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p class="text-[#20262C] font-semibold text-lg">What I can offer</p>
+                                    <p class="text-[#20262C] font-semibold text-lg font-['Montserrat']">What I can offer</p>
                                     <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                     </button>
@@ -82,7 +82,7 @@
                             </div>
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p class="text-[#20262C] font-semibold text-lg">Fields of interest</p>
+                                    <p class="text-[#20262C] font-semibold text-lg font-['Montserrat']">Fields of interest</p>
                                     <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                     </button>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p class="text-[#20262C] font-semibold text-lg">Who I want to work for?</p>
+                                    <p class="text-[#20262C] font-semibold text-lg font-['Montserrat']">Who I want to work for?</p>
                                     <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                     </button>
@@ -108,7 +108,7 @@
                             </div>
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p class="text-[#20262C] font-semibold text-lg">Stet clita ea et gubergren?</p>
+                                    <p class="text-[#20262C] font-semibold text-lg font-['Montserrat']">Stet clita ea et gubergren?</p>
                                     <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                     </button>
@@ -121,7 +121,7 @@
                             </div>
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p class="text-[#20262C] font-semibold text-lg">Consetetur sadipscing elitr, sed diam nonumy eirmod?</p>
+                                    <p class="text-[#20262C] font-semibold text-lg font-['Montserrat']">Consetetur sadipscing elitr, sed diam nonumy eirmod?</p>
                                     <button class="bg-yellow hover:bg-primary rounded-full min-w-12 min-h-12 duration-300 flex justify-center items-center">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" />
                                     </button>
@@ -140,7 +140,7 @@
                             <img src="/images/matchmaking-tool/tool-detail.png" />
                         </div>
                         <p class="text-[#20262C] font-semibold text-lg p-0 mb-10">Sandra Dawson, Ambassador</p>
-                        <p class="text-[#20262C] text-2xl md:text-3xl leading-[36px] font-medium font-['Montserrat'] mb-4 italic">
+                        <p class="text-[#20262C] text-2xl md:text-xl xl:text-3xl leading-[36px] font-medium font-['Montserrat'] mb-4 italic">
                             “Quote/ short intro Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do”
                         </p>
                         <div class="border-l-[4px] border-[#F95C22] pl-4">
