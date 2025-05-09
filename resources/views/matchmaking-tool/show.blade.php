@@ -140,7 +140,7 @@
                             <img src="/images/matchmaking-tool/tool-detail.png" />
                         </div>
                         <p class="text-[#20262C] font-semibold text-lg p-0 mb-10">Sandra Dawson, Ambassador</p>
-                        <p class="text-[#20262C] text-2xl md:text-xl xl:text-3xl leading-[36px] font-medium font-['Montserrat'] mb-4 italic">
+                        <p class="text-[#20262C] text-xl leading-[36px] font-medium font-['Montserrat'] mb-4 italic">
                             “Quote/ short intro Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do”
                         </p>
                         <div class="border-l-[4px] border-[#F95C22] pl-4">
