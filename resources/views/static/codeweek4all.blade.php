@@ -15,6 +15,16 @@
 @section('description', 'Join the Code Week 4 All challenge to link coding events, collaborate across countries, and promote digital skills worldwide.')
 <style>
 [x-cloak] { display: none !important; }
+
+#codeweek-training-page a {
+    color: #1C4DA1!important;
+    text-decoration: underline!important;
+}
+
+
+#codeweek-training-page a:hover {
+    text-decoration: none!important;
+}
 </style>
 @section('content')
     <section id="codeweek-training-page" class="font-['Blinker'] overflow-hidden">
@@ -83,7 +93,7 @@
             <div x-ignore class="absolute hidden w-full h-full bg-[#F4F6FA] xl:block" style="clip-path: ellipse(93% 90% at 50% 90%);"></div>
             <div class="relative flex justify-center pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
                 <div class="w-full gap-2">
-                    <h3 class="text-dark-blue tablet:text-center text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] md:mb-6 tablet:mb-8">
+                    <h3 class="text-dark-blue tablet:text-center text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] md:mb-6 tablet:mb-8 text-center">
                        @lang('codeweek4all.howto.title')
                     </h3>
                 <div 
@@ -98,7 +108,7 @@
                         :class="tab === 1
                             ? 'bg-blue-800 text-white'
                             : 'border-x border-t border-solid border-blue-800 text-blue-800'"
-                        class="px-5 py-3 whitespace-nowrap"
+                        class="px-5 py-3 rounded-tl rounded-tr h-full whitespace-nowrap text-[16px]  lg:text-[20px]"
                         :aria-pressed="tab === 1"
                         @click="tab = 1"
                         >
@@ -109,7 +119,7 @@
                         :class="tab === 2
                             ? 'bg-blue-800 text-white'
                             : 'border-x border-t border-solid border-blue-800 text-blue-800'"
-                        class="px-5 py-3 whitespace-nowrap"
+                        class="px-5 py-3 rounded-tl rounded-tr h-full whitespace-nowrap text-[16px] lg:text-[20px]"
                         :aria-pressed="tab === 2"
                         @click="tab = 2"
                         >
@@ -141,7 +151,7 @@
                     <select
                         id="alliance-select"
                         x-model.number="tab"
-                        class="w-full pr-2 bg-transparent border-none appearance-none cursor-pointer whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-300 hover:bg-hover hover:text-hover"
+                        class="w-full pr-2 bg-transparent border-none appearance-none cursor-pointer whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-300 hover:bg-hover hover:text-hover max-xs:text-[14px] max-md:text-[16px] md:text-[20px]"
                         aria-label="Alliance options"
                     >
                         <option value="1">If you are the first one in your alliance</option>
@@ -319,7 +329,7 @@
                            @lang('codeweek4all.why.title')
                         </p>
                         <ul class="w-full">
-                            <li class="flex flex-wrap items-start w-full gap-3 mt-6 max-md:max-w-full">
+                            <li class="flex flex-wrap items-center w-full gap-3 mt-6 max-md:max-w-full">
                             <div class="flex gap-2.5 items-center py-2 w-3">
                                 <div class="flex self-stretch flex-1 w-3 h-3 my-auto bg-orange-500 rounded-full shrink basis-0 fill-orange-500 min-h-3" aria-hidden="true"></div>
                             </div>
@@ -328,7 +338,7 @@
                             </span>
                             </li>
 
-                            <li class="flex flex-wrap items-start w-full gap-3 mt-6 max-md:max-w-full">
+                            <li class="flex flex-wrap items-center w-full gap-3 mt-6 max-md:max-w-full">
                             <div class="flex gap-2.5 items-center py-2 w-3">
                                 <div class="flex self-stretch flex-1 w-3 h-3 my-auto bg-orange-500 rounded-full shrink basis-0 fill-orange-500 min-h-3" aria-hidden="true"></div>
                             </div>
@@ -337,7 +347,7 @@
                             </span>
                             </li>
 
-                            <li class="flex flex-wrap items-start w-full gap-3 mt-6 max-md:max-w-full">
+                            <li class="flex flex-wrap items-center w-full gap-3 mt-6 max-md:max-w-full">
                             <div class="flex gap-2.5 items-center py-2 w-3">
                                 <div class="flex self-stretch flex-1 w-3 h-3 my-auto bg-orange-500 rounded-full shrink basis-0 fill-orange-500 min-h-3" aria-hidden="true"></div>
                             </div>
@@ -346,7 +356,7 @@
                             </span>
                             </li>
 
-                                                        <li class="flex flex-wrap items-start w-full gap-3 mt-6 max-md:max-w-full">
+                                                        <li class="flex flex-wrap items-center w-full gap-3 mt-6 max-md:max-w-full">
                             <div class="flex gap-2.5 items-center py-2 w-3">
                                 <div class="flex self-stretch flex-1 w-3 h-3 my-auto bg-orange-500 rounded-full shrink basis-0 fill-orange-500 min-h-3" aria-hidden="true"></div>
                             </div>
@@ -355,7 +365,7 @@
                             </span>
                             </li>
 
-                                                        <li class="flex flex-wrap items-start w-full gap-3 mt-6 max-md:max-w-full">
+                                                        <li class="flex flex-wrap items-center w-full gap-3 mt-6 max-md:max-w-full">
                             <div class="flex gap-2.5 items-center py-2 w-3">
                                 <div class="flex self-stretch flex-1 w-3 h-3 my-auto bg-orange-500 rounded-full shrink basis-0 fill-orange-500 min-h-3" aria-hidden="true"></div>
                             </div>
@@ -370,11 +380,11 @@
             </div>
         </section>
 <section class="relative overflow-hidden bg-yellow-50">
-    <div class="absolute w-full h-full bg-yellow md:hidden" style="clip-path: ellipse(287% 90% at 38% 90%);"></div>
+    <div class="absolute w-full h-full bg-yellow md:hidden" style="clip-path: ellipse(143% 90% at 38% 90%);"></div>
     <div class="absolute hidden w-full h-full bg-yellow md:block lg:hidden" style="clip-path: ellipse(244% 90% at 50% 90%);"></div>
     <div class="absolute hidden w-full h-full bg-yellow lg:block xl:hidden" style="clip-path: ellipse(144% 90% at 50% 90%);"></div>
-    <div class="absolute hidden w-full h-full bg-yellow xl:block" style="clip-path: ellipse(104% 90% at 50% 90%);"></div>
-    <div class="relative pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
+    <div class="absolute hidden w-full h-full bg-yellow xl:block" style="clip-path: ellipse(64% 90% at 50% 90%);"></div>
+    <div class="relative pt-20 pb-24 codeweek-container-lg md:pt-40 md:pb-28 max-w-[890px]">
     <h5 class="justify-start text-black max-md:text-[22px] text-4xl font-medium font-['Montserrat'] leading-[44px]">@lang('codeweek4all.superorganiser-title')</h5>
         <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 max-md:mt-2 md:mt-8">
             @lang('codeweek4all.superorganiser')

@@ -1,7 +1,8 @@
 @extends('layout.new_base')
 
 @section('title', 'EU Code Week Scoreboard: Track Participation Across Europe')
-@section('description', 'See how different countries and regions are contributing to EU Code Week. Track coding events
+@section('description',
+    'See how different countries and regions are contributing to EU Code Week. Track coding events
     and engagement on the live scoreboard!')
 
     <x-tailwind></x-tailwind>
@@ -37,13 +38,14 @@
 
         <section class="relative flex overflow-hidden bg-white">
             <div class="flex flex-col items-center w-full pt-0 pb-5 mx-auto max-w-container max-lg:px-5">
-                <div class="flex flex-col items-start sm:items-center justify-between w-full max-w-[450px] sm:py-10 sm:flex-row"
+                <div class="flex flex-col items-start justify-between w-full max-w-[450px] sm:py-10 sm:flex-row"
                     aria-label="Activity statistics and filters">
                     <!-- Statistics Display -->
-                    <div class="w-[164px] max-sm:mb-10">
-                        <h2 class="mb-2 text-[#333e48] text-base font-normal font-['Blinker'] leading-snug">
-                            @lang('scoreboard.events')
-                        </h2>
+                    <div class="h-full w-fit max-sm:mb-10">
+                        <h3
+                            class="mb-4 text-[#333e48] text-base font-normal font-['Blinker'] leading-snug w-full md:whitespace-nowrap tracking-[.1px]">
+                            Total number of @lang('scoreboard.events')
+                        </h3>
                         <p x-data="{ count: 0, total: {{ $total }} }" x-init="let interval = setInterval(() => {
                             if (count < total) {
                                 count += Math.ceil(total / 50);
@@ -52,47 +54,58 @@
                                 clearInterval(interval);
                             }
                         }, 10)" x-text="count"
-                            class="p-0 text-4xl font-semibold leading-none tracking-tighter text-zinc-800">
+                            class="p-0 text-4xl font-semibold leading-none text-zinc-800 ">
                             0
                         </p>
                     </div>
 
-                    <div class="text-base leading-none text-gray-700 w-[200px]">
+                    <div class="text-base leading-none text-gray-700 w-full md:w-[200px]">
                         <label for="edition"
                             class="block mb-2 text-[#333e48] text-base font-normal font-['Blinker'] leading-snug">
                             Select year
                         </label>
 
-<div class="relative w-[260px]">
-    <form id="faceted-search-events" method="get" action="/scoreboard" class="relative z-50" enctype="multipart/form-data">
-        <!-- Calendar icon inside -->
-        <div class="absolute inset-y-0 flex items-center pointer-events-none left-4">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 4.5H5C3.89543 4.5 3 5.39543 3 6.5V20.5C3 21.6046 3.89543 22.5 5 22.5H19C20.1046 22.5 21 21.6046 21 20.5V6.5C21 5.39543 20.1046 4.5 19 4.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 10.5H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16 2.5V6.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 2.5V6.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
+                        <div class="relative w-full md:w-[260px]">
+                            <form id="faceted-search-events" method="get" action="/scoreboard" class="relative z-50"
+                                enctype="multipart/form-data">
+                                <!-- Calendar icon inside -->
+                                <div class="absolute inset-y-0 flex items-center pointer-events-none left-4">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.5H5C3.89543 4.5 3 5.39543 3 6.5V20.5C3 21.6046 3.89543 22.5 5 22.5H19C20.1046 22.5 21 21.6046 21 20.5V6.5C21 5.39543 20.1046 4.5 19 4.5Z"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 10.5H21" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.5V6.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8 2.5V6.5" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
 
-        <!-- SELECT input -->
-        <select id="edition" name="edition" onchange="this.form.submit()"
-            class="flex appearance-none gap-10 justify-between items-center py-3 pr-10 pl-14 w-full bg-white rounded-3xl border border-gray-200 shadow-sm whitespace-nowrap hover:bg-hover hover:text-hover focus:outline-none focus:ring-2 focus:ring-blue-500 text-base font-normal font-['Blinker'] leading-snug text-[#333e48]">
-            @foreach ($years as $year_label)
-                <option value="{{ $year_label }}" {{ $year_label == $edition ? 'selected' : '' }}>
-                    {{ $year_label }}
-                </option>
-            @endforeach
-        </select>
+                                <!-- SELECT input -->
+                                <select id="edition" name="edition" onchange="this.form.submit()"
+                                    class="flex appearance-none gap-10 justify-between items-center py-3 pr-10 pl-14 w-full bg-white rounded-3xl border border-gray-200 shadow-sm whitespace-nowrap hover:bg-hover hover:text-hover focus:outline-none focus:ring-2 focus:ring-blue-500 text-base font-normal font-['Blinker'] leading-snug text-[#333e48]">
+                                    @foreach ($years as $year_label)
+                                        <option value="{{ $year_label }}" {{ $year_label == $edition ? 'selected' : '' }}>
+                                            {{ $year_label }}
+                                        </option>
+                                    @endforeach
+                                </select>
 
-        <!-- DROPDOWN ARROW icon (new one you sent) -->
-        <div class="absolute inset-y-0 flex items-center px-2 text-gray-700 pointer-events-none right-4">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 9.5L12 15.5L18 9.5" stroke="#1C4DA1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-    </form>
-</div>
+                                <!-- DROPDOWN ARROW icon (new one you sent) -->
+                                <div
+                                    class="absolute inset-y-0 flex items-center px-2 text-gray-700 pointer-events-none right-4">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9.5L12 15.5L18 9.5" stroke="#1C4DA1" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </form>
+                        </div>
 
                     </div>
 
@@ -115,7 +128,7 @@
                                 @if ($loop->first)
                                     <!-- First Country - full width with decorations -->
                                     <div
-                                        class="flex flex-row items-center justify-center w-full mb-6 sm:mb-12 scoreboard-card first max-xl:px-8">
+                                        class="flex flex-row items-center justify-center w-full mb-6 sm:mb-12 scoreboard-card first max-md:px-5 max-xl:px-8">
 
                                         <!-- Left decoration -->
                                         <div class="h-full my-auto overflow-hidden xl:mr-8 xxl:mr-10">
@@ -127,7 +140,7 @@
 
                                         <!-- First Card -->
                                         <article
-                                            class="flex relative gap-4 md:gap-10 items-center p-4 md:p-10 my-auto bg-white rounded-2xl border-b-8 border-[#FBBB26] border-solid max-sm:h-[224px] lg:h-[320px] w-full max-w-[560px] max-md:px-5 max-md:max-w-full"
+                                            class="flex relative gap-4 md:gap-10 items-center p-4 md:p-10 my-auto bg-white rounded-2xl border-b-8 border-[#FBBB26] border-solid max-sm:h-[224px] lg:h-[320px] w-full max-w-[560px] max-sm-px-2 max-md:px-5 max-md:max-w-full"
                                             aria-labelledby="country-name">
                                             <div class="relative flex items-center justify-center w-1/3 h-full mx-auto">
                                                 <img src="/images/trophy.svg" alt="Country illustration"
@@ -177,7 +190,7 @@
 
                             <!-- Now the grid for all the normal countries -->
                             <div
-                                class="grid w-full grid-cols-1 gap-4 px-5 pb-24 md:gap-6 md:grid-cols-2 xl:grid-cols-3 max-xl:px-8">
+                                class="grid w-full grid-cols-1 gap-4 px-5 pb-24 tablet:gap-6 tablet:grid-cols-2 xl:grid-cols-3 max-xl:px-5">
                                 @foreach ($events as $event)
                                     @if ($loop->first)
                                         @continue
@@ -199,7 +212,7 @@
                                             <img src="/images/trophy.svg" alt="Country illustration"
                                                 class="object-contain z-0 shrink-0 my-auto w-[100px] md:w-[130px]" />
                                             <span
-                                                class="absolute left-0 right-0 z-0 flex items-start justify-center w-full h-full font-bold leading-none tracking-tighter text-center max-sm:top-6 top-4 max-md:text-4xl md:text-5xl text-zinc-800 "
+                                                class="absolute left-0 right-0 z-0 flex items-start justify-center w-full h-full font-bold leading-none tracking-[.1px] text-center max-sm:top-6 top-4 max-md:text-4xl md:text-5xl text-zinc-800 "
                                                 aria-hidden="true">
                                                 {{ $loop->iteration }}
                                             </span>
