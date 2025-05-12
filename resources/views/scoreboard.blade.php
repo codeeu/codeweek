@@ -151,7 +151,7 @@
                                                     1
                                                 </span>
                                             </div>
-                                            <div class="z-0 flex flex-col justify-center w-2/3 h-full my-auto">
+                                            <div class="z-0 flex flex-col justify-center w-2/3 h-full my-auto max-sm:p-[10px]">
                                                 <h2 id="country-name"
                                                     class="font-medium leading-none tracking-tighter text-blue-800">
                                                     <a
@@ -164,7 +164,7 @@
                                                     @lang('scoreboard.parcipating_with')
                                                 </p>
                                                 <div
-                                                    class="flex gap-2.5 items-center mt-2 text-[20px] md:text-2xl font-semibold leading-none whitespace-nowrap text-zinc-800">
+                                                    class="flex gap-1 sm:gap-2.5 items-center mt-2 text-[20px] md:text-2xl font-semibold leading-none whitespace-nowrap text-zinc-800">
                                                     <span
                                                         class="flex items-center justify-center w-10 h-10 text-center text-[#20262c]  text-[20px] md:text-2xl  font-semibold font-['Blinker'] bg-orange-500 rounded"
                                                         aria-label="Activity count">
@@ -217,13 +217,13 @@
                                                 {{ $loop->iteration }}
                                             </span>
                                         </div>
-                                        <div class="z-0 flex-1 w-2/3 my-auto">
+                                        <div class="z-0 flex-1 w-2/3 my-auto max-sm:p-[10px">
                                             <h2 id="country-name"
                                                 class="text-[20px] md:text-2xl font-medium leading-none tracking-tighter text-blue-800">
                                                 <a class="hover:text-primary"
                                                     href="/events?country_iso={{ $event->country_iso }}&year={{ $edition }}">
                                                     <span
-                                                        class="text-secondary max-xs:text-[20px] text-[30px] md:text-4xl font-medium font-['Montserrat'] leading-[44px]">@lang('countries.' . $event->country_name)</span>
+                                                        class="text-secondary max-xs:text-[20px] max-2xl::text-[30px] 2xl:text-4xl font-medium font-['Montserrat'] leading-[44px]">@lang('countries.' . $event->country_name)</span>
                                                 </a>
                                             </h2>
                                             <p
@@ -231,7 +231,7 @@
                                                 @lang('scoreboard.parcipating_with')
                                             </p>
                                             <div
-                                                class="flex gap-2.5 items-center mt-2 text-lg font-semibold leading-none whitespace-nowrap text-zinc-800">
+                                                class="flex gap-1 sm:gap-2.5 items-center mt-2 text-lg font-semibold leading-none whitespace-nowrap text-zinc-800">
                                                 <span
                                                     class="flex items-center justify-center h-8 px-1 text-center text-black bg-orange-500 rounded w-fit min-w-8"
                                                     aria-label="Activity count">
