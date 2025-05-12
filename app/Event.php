@@ -67,6 +67,17 @@ class Event extends Model
         'location_id',
         'leading_teacher_tag',
         'mass_added_for',
+        'activity_format',
+        'duration',
+        'recurring_event',
+        'recurring_type',
+        'males_count',
+        'females_count',
+        'other_count',
+        'is_extracurricular_event',
+        'is_standard_school_curriculum',
+        'is_use_resource',
+        'ages'
     ];
 
     //    protected $policies = [
@@ -109,6 +120,12 @@ class Event extends Model
             'title' => PurifyHtmlOnGet::class,
             'location' => PurifyHtmlOnGet::class,
             'language' => PurifyHtmlOnGet::class,
+
+            'activity_format' => 'array',
+            'is_extracurricular_event' => 'boolean',
+            'is_standard_school_curriculum' => 'boolean',
+            'ages' => 'array',
+            'is_use_resource' => 'boolean',
         ];
     }
 
