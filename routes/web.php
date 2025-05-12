@@ -65,6 +65,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeocodeController;
 use Illuminate\Support\Facades\Config;
+use App\Http\Controllers\EventsController;
 
 
 Route::permanentRedirect('/certificates/excellence/Excellence Certificate', '/certificates/excellence/2024');
@@ -716,4 +717,8 @@ Route::middleware(ProtectAgainstSpam::class)->group(function() {
     Auth::routes();
 });
 Route::feeds();
+
+Route::get('/events/list/{country?}', [EventsController::class, 'list'])->name('events.list');
+Route::get('/events/promoted/{country?}', [EventsController::class, 'promoted'])->name('events.promoted');
+Route::get('/events/featured/{country?}', [EventsController::class, 'featured'])->name('events.featured');
 
