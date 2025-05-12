@@ -14,7 +14,8 @@ module.exports = {
         'orange-gradient': 'linear-gradient(36.92deg, #F95C22 20.32%, #FF885C 28.24%)',
         'violet-gradient': 'linear-gradient(247deg, #410098 22.05%, #6733AD 79.09%)',
         'yellow-transparent-gradient': 'linear-gradient(90deg, #FFFBE5 35%, #00000000 90%)',
-        'yellow-transparent-opposite-gradient': 'linear-gradient(90deg, #00000000 10%, #FFFBE5 65%)'
+        'yellow-transparent-opposite-gradient': 'linear-gradient(90deg, #00000000 10%, #FFFBE5 65%)',
+        'green-gradient': 'linear-gradient(90deg, #33C2E9 35%, #00B3E3 90%)',
       },
       colors: {
         'primary': '#F95C22',
@@ -33,17 +34,22 @@ module.exports = {
         'dark-blue': '#1C4DA1',
         'hover-blue': '#0A42A1',
         'slate': '#5C656D',
+        'slate-400': '#5C656D',
         'slate-500': '#333E48',
+        'slate-600': '#20262C',
         'light-blue': '#F2FBFE',
         'error-200': '#E30519',
         'dark-blue-50': '#E8EDF6',
+        'dark-blue-100': '#D2DBEC',
         'dark-blue-200': '#A4B8D9',
         'dark-blue-300': '#7794C7',
         'dark-blue-400': '#4971B4',
         'grey-3': '#F2F2F8',
         'lime': '#99CC28',
         'black-light': '#00000080',
-        'light-blue-100': '#CCF0F9'
+        'light-blue-100': '#CCF0F9',
+        'light-blue-300': '#66D1EE',
+        'gray-10': '#F4F6FA',
       },
       fontFamily: {
         blinker: ['Blinker', 'sans-serif'],
