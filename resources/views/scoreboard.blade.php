@@ -123,7 +123,10 @@
                 <div class="-mt-24 sm:-mt-20 bg-yellow-50">
                     <div class="relative z-10">
                         <div class="max-w-[1428px] mx-auto flex flex-col items-center">
-
+                            @php
+                                // re-order the collection so the highest-total ones come first
+                                $events = $events->sortByDesc('total')->values();
+                            @endphp
                             @foreach ($events as $event)
                                 @if ($loop->first)
                                     <!-- First Country - full width with decorations -->
@@ -166,7 +169,7 @@
                                                 <div
                                                     class="flex gap-1 sm:gap-2.5 items-center mt-2 text-[20px] md:text-2xl font-semibold leading-none whitespace-nowrap text-zinc-800">
                                                     <span
-                                                        class="flex items-center justify-center w-10 h-10 text-center text-[#20262c]  text-[20px] md:text-2xl  font-semibold font-['Blinker'] bg-orange-500 rounded"
+                                                        class="flex items-center justify-center w-fit h-10 text-center text-[#20262c]  text-[20px] md:text-2xl px-2  font-semibold font-['Blinker'] bg-orange-500 rounded"
                                                         aria-label="Activity count">
                                                         {{ $event->total }}
                                                     </span>
