@@ -65,6 +65,19 @@
         .leaflet-tile {
             visibility: inherit;
         }
+
+        /* max-md: */
+        @media not all and (min-width: 768px) {
+          #show-all-teacher-button {
+            padding: 16px 0;
+          }
+        }
+        /* md: */
+        @media (min-width: 768px) {
+          #show-all-teacher-button {
+          padding: 0 24px 16px 24px;
+          }
+        }
     </style>
 
     <section class="relative flex flex-col overflow-hidden bg-violet-gradient">
@@ -577,7 +590,7 @@
                     `<h3 class="hidden mb-3 text-lg font-bold">${city ? 'Teachers in ' + city : 'Teachers in Selected Country'}</h3>`;
                 if (city || selectedMarker) {
                     teacherDetails +=
-                        `<div class="sticky top-0 max-md:py-4 md:pb-4 md:px-6 bg-white">
+                        `<div id="show-all-teacher-button" class="sticky top-0 bg-white">
                           <button onclick="selectedMarker = null; populateTeacherInfo(allTeachers)" class="font-semibold text-[#1C4DA1] underline">
                             Show All Teachers
                           </button>
