@@ -12,7 +12,6 @@
 
 @section('title', 'EU Code Week Guide – How to Get Started')
 @section('description', 'New to EU Code Week? Check out our step-by-step guide on how to organize events, access resources, and engage with the coding community')
-@section('content')
 <style>
 
 #codeweek-toolkits-page a {
@@ -25,13 +24,13 @@
     text-decoration: none!important;
 }
 
-#codeweek-toolkits-page #questions  a {
+ #questions a {
     color: black!important;
     text-decoration: underline!important;
     font-weight: bold!important;
 } 
 
-#codeweek-toolkits-page #questions  a:hover {
+ #questions a:hover {
     text-decoration: none!important;
 }
 
@@ -48,6 +47,7 @@
 }
 
 </style>
+@section('content')
     <section id="codeweek-toolkits-page" class="font-['Blinker'] overflow-hidden">
         <section class="relative flex overflow-hidden">
             <div class="relative flex w-full pt-32 pb-0 transition-all bg-light-blue-gradient md:py-32">
