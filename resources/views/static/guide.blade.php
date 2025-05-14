@@ -353,7 +353,7 @@
                         </div>
                     </div>
                     <div class="relative flex items-center flex-1 overflow-hidden justify-center h-full rounded-[16px]">
-                        <img src="{{asset('images/codeweek4all/why.png')}}" class="object-cover h-full max-h-[449px] rounded-[16px]"">
+                       <img src="{{asset('images/codeweek4all/why.png')}}" class="object-cover h-full max-h-[449px] rounded-[16px]" />
                     </div>
                 </div>
             </div>
