@@ -281,13 +281,84 @@ export default {
       }
 
       try {
-        await axios.post('/events', payload);
+        if (!_.isNil(props.event.id)) {
+          await axios.post(`/events/${props.event.id}`, payload);
+        } else {
+          await axios.post('/events', payload);
+        }
         window.location.href = '/events';
       } catch (error) {
         errors.value = error.response?.data?.errors;
         step.value = 1;
       }
     };
+
+    watch(
+      () => props.event,
+      () => {
+        if (!props.event.id) return;
+
+        const mapIds = (items) =>
+          items
+            ?.split(',')
+            ?.filter((i) => !!i)
+            ?.map((id) => Number(id)) || [];
+
+        const event = props.event;
+        const geoposition = event.geoposition || props.location?.geoposition;
+        formValues.value = {
+          ...formValues.value,
+          // step 1
+          title: event.title,
+          activity_format: event.activity_format?.split(','),
+          activity_type: event.activity_type || 'open-in-person',
+          location: event.location || props.location?.location,
+          geoposition: geoposition?.split(','),
+          duration: event.duration,
+          start_date: event.start_date,
+          end_date: event.end_date,
+          recurring_event: event.recurring_event || 'daily',
+          recurring_type: event.recurring_type,
+          theme: mapIds(props.selectedValues.themes),
+          description: event.description,
+
+          // step 2
+          audience: mapIds(props.selectedValues.audiences),
+          participants_count: event.participants_count,
+          males_count: event.males_count,
+          females_count: event.females_count,
+          other_count: event.other_count,
+          ages: event.ages?.split(','),
+          is_extracurricular_event: String(!!event.is_extracurricular_event),
+          is_standard_school_curriculum: String(
+            !!event.is_standard_school_curriculum
+          ),
+          codeweek_for_all_participation_code:
+            event.codeweek_for_all_participation_code,
+          leading_teacher_tag: event.leading_teacher_tag
+            ? Number(event.leading_teacher_tag)
+            : null,
+          picture: event.picture,
+          pictureUrl: props.selectedValues.picture,
+
+          // step 3,
+          organizer: event.organizer || props.location?.name,
+          organizer_type:
+            event.organizer_type || props?.location?.organizer_type,
+          language: event.language || props.locale,
+          country_iso: event.country_iso || props.location.country_iso,
+          is_use_resource: String(!!event.is_use_resource),
+          event_url: event.event_url,
+          contact_person: event.contact_person,
+          user_email: event.user_email,
+        };
+
+        if (event.recurring_event) {
+          formValues.value.is_recurring_event_local = 'true';
+        }
+      },
+      { immediate: true }
+    );
 
     watch(step, () => {
       if (containerRef.value) {

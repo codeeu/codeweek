@@ -80,6 +80,47 @@ class Event extends Model
         'ages'
     ];
 
+    public const ACTIVITY_FORMATS = [
+        'coding-camp',
+        'summer-camp',
+        'weekend-course',
+        'evening-course',
+        'careerday',
+        'university-visit',
+        'coding-home',
+        'code-week-challenge',
+        'competition',
+        'other',
+    ];
+    
+    public const DURATIONS = [
+        '0-1',
+        '1-2',
+        '2-4',
+        'over-4',
+    ];
+    
+    public const RECURRING_TYPES = [
+        'consecutive',
+        'individual',
+    ];
+    
+    public const RECURRING_EVENTS = [
+        'daily',
+        'weekly',
+        'monthly',
+    ];
+    
+    public const AGES = [
+        'under-5',
+        '6-9',
+        '10-12',
+        '13-15',
+        '16-18',
+        '19-25',
+        'over-25',
+    ];
+
     //    protected $policies = [
     //        'App\Event' => 'App\Policies\EventPolicy',
     //        Event::class => EventPolicy::class
