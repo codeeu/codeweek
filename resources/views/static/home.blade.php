@@ -35,7 +35,7 @@
                             style="opacity: {{ $index === 0 ? 1 : 0 }}">
                             <div
                                 class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                                @if ($index === 1)
+                                @if ($index === 0)
                                     <div x-data="countdownTimer('2025-10-14T00:00:00')" x-init="startCountdown()"
                                         class="flex gap-2.5 items-start max-md:gap-2 max-sm:gap-1.5 mt-4 mb-4" role="timer"
                                         aria-label="Countdown timer">
@@ -117,7 +117,6 @@
                             
                             @php
                                 $backgroundImages = [
-                                    asset('images/dream-jobs/dream_jobs_bg.png'),
                                     asset('images/homepage/slide1.png'),
                                     asset('images/search/search_bg_lg_2.jpeg'),
                                 ];
