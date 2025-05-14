@@ -36,7 +36,6 @@ class OnlineCalendar extends Component
         'status' => 'APPROVED',
         'highlighted_status' => 'FEATURED',
     ];
-
     public function mount()
     {
         $this->selectedLanguage = strtolower(App::getLocale());
@@ -81,7 +80,6 @@ class OnlineCalendar extends Component
             ->whereMonth('start_date', $this->selectedMonth)
             ->whereYear('start_date', $this->selectedYear)
             ->where('start_date', '>=', \Carbon\Carbon::now()->firstOfMonth())
-//            ->where('start_date', '>=', Carbon::now())
             ->orderBy('start_date')
             ->get();
 
@@ -102,8 +100,6 @@ class OnlineCalendar extends Component
             $this->filteredEvents = $this->events;
         }
 
-        //Log::info($this->selectedDate);
-
         $countries = CountriesQuery::withOnlineEvents('FEATURED');
 
         $countryNames = $this->getCountryNamesFromEvents($this->events);
@@ -120,7 +116,6 @@ class OnlineCalendar extends Component
             'filteredEvents' => $this->filteredEvents->paginate(50),
         ]);
     }
-
     /**
      * @return mixed
      */

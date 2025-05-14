@@ -42,11 +42,11 @@ return [
                         </blockquote>
                     </p>',
 
-    'join_codeweek-title' => 'Werden Sie Teil der Bewegung!',
+    'join_codeweek-title' => 'Werde Teil der Bewegung!',
     'join_codeweek-text' => 
-                            '<p>Die EU Code Week ist mehr als nur eine Veranstaltung - es ist eine gemeinschaftliche Revolution! <a href="/guide">Organisieren Sie eine Programmieraktivität in Ihrer Stadt</a>, nehmen Sie am <a href="/codeweek4all">Code Week 4 All Challenge</a> Challenge teil und vernetzen Sie sich mit gleichgesinnten Innovator*innen über Grenzen hinweg.
+                            '<p>Die EU Code Week ist mehr als nur eine Veranstaltung - sie ist eine von der Gemeinschaft getragene Revolution!  <a href="/guide">Veranstalte eine Coding-Aktivität in deiner Stadt</a>, nimm die <a href="/codeweek4all">Code Week 4 All Challenge</a> an und vernetze dich mit gleichgesinnten Innovator*innen über Grenzen hinweg.
                             </p>
-                             <p>Wollen Sie noch mehr bewirken? Nehmen Sie Kontakt zu Ihrem lokalen Hub auf, <a href="/community?country_iso=IE"> um die lokal aktive Gemeinschaft kennenzulernen </a> und die Zukunft des Programmierens in deinem Land aktiv mitzugestalten!
+                             <p>Möchtest du einen größeren Beitrag leisten? Vernetze dich mit deinem lokalen Hub, <a href="/community?country_iso=IE"> finde deine eigene Community </a> und präge die Zukunft des Codings in deinem Land!
                             </p>
                             <p>Du kannst dich auch über unseren <a href="/blog/">Blog</a> über lokale Community-Initiativen und internationale Entwicklungen auf dem Laufenden halten.
                             </p>',
@@ -57,8 +57,8 @@ return [
     'about_banner_content'=>'Die EU Code Week weckt Kreativität, fördert Problemlösungsfähigkeiten und inspiriert zur Zusammenarbeit. Sie macht Programmieren und digitale Kompetenzen das ganze Jahr über für alle zugänglich.',
     'partners_and_sponsors-title' => 'Das Code4Europe-Konsortium: Die Zukunft der Code Week gestalten',
     'partners_and_sponsors-content'=>
-                                        '<p>Die EU Code Week wird nun vom Code4Europe Konsortium geleitet, das aus über 40 Bildungs- und Technologiepartnern aus 20 Ländern besteht. Gemeinsam sorgen wir für ein kontinuierliches Wachstum der Code Week, erweitern die digitale Bildung und fördern die Zusammenarbeit in ganz Europa.
+                                        '<p>Die EU Code Week wird nun vom Code4Europe Konsortium betreut, das aus über 40 Bildungs- und Technologiepartner*innen aus 20 Ländern besteht. Gemeinsam sorgen wir für ein kontinuierliches Wachstum der Code Week, erweitern die digitale Bildung und fördern die Zusammenarbeit in ganz Europa.
                                         </p>
-                                        <p>Mit einer starken Gemeinschaft von Lehrkräften, Botschafter*innen und Industrieparter*innen gestalten wir die Zukunft des Programmierens – und machen es zugänglicher, inklusiver und wirkungsvoller.
+                                        <p>Mit einer starken Gemeinschaft von Lehrkräften, Botschafter*innen und Industriepartner*innen gestalten wir die Zukunft des Programmierens – und machen es zugänglicher, inklusiver und wirkungsvoller.
                                         </p>', 
 ];

@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         'secondary-gradient': 'linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%)',
         'blue-gradient': 'linear-gradient(161.75deg, #1254C5 16.95%, #0040AE 31.1%)',
+        'light-blue-gradient': 'linear-gradient(161.75deg, #33C2E9 16.95%, #00B3E3 31.1%)',
         'count-gradient': 'linear-gradient(150.73deg, #1254C5 24.55%, #0040AE 68.54%)',
         'orange-gradient': 'linear-gradient(36.92deg, #F95C22 20.32%, #FF885C 28.24%)',
         'violet-gradient': 'linear-gradient(247deg, #410098 22.05%, #6733AD 79.09%)',
@@ -55,6 +56,7 @@ module.exports = {
         blinker: ['Blinker', 'sans-serif'],
       },
       screens: {
+        'xs': '480px',
         'sm': '575px',
         'tablet': '993px',
         'md': '768px',
