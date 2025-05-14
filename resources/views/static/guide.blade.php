@@ -2,8 +2,7 @@
 
 @php
     $list = [
-        (object) ['label' => 'Guide on activities', 'href' => '/guide'],
-        (object) ['label' => 'Guide on activities', 'href' => ''],
+        (object) ['label' => 'Guide', 'href' => '/guide']
     ];
 @endphp
 
@@ -14,7 +13,6 @@
 @section('title', 'EU Code Week Guide – How to Get Started')
 @section('description', 'New to EU Code Week? Check out our step-by-step guide on how to organize events, access resources, and engage with the coding community')
 <style>
-[x-cloak] { display: none !important; }
 
 #codeweek-toolkits-page a {
     color: #1C4DA1!important;
@@ -404,7 +402,7 @@
                 </div>
                 </div>
             </div>
-            </section>
+        </section>
 
 
         <section id="questions" class="relative overflow-hidden bg-[#F2FBFE]">
@@ -475,5 +473,4 @@
         });
       });
     </script>
-
-@endpush
+    @endpush
