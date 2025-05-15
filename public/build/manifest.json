@@ -1,11 +1,19 @@
 {
   "resources/assets/sass/app.scss": {
+<<<<<<< HEAD
     "file": "assets/app-Dzh6SAaM.css",
+=======
+    "file": "assets/app-ow9RuqJ2.css",
+>>>>>>> 40084fdf (new guide page)
     "src": "resources/assets/sass/app.scss",
     "isEntry": true
   },
   "resources/css/app.css": {
+<<<<<<< HEAD
     "file": "assets/app-DDfiJZ_P.css",
+=======
+    "file": "assets/app-D84vEpjC.css",
+>>>>>>> 40084fdf (new guide page)
     "src": "resources/css/app.css",
     "isEntry": true
   },
