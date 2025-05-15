@@ -13,7 +13,7 @@
 
 @section('content')
     <section id="codeweek-events-add-page" class="font-['Blinker'] overflow-hidden">
-        <section class="relative flex overflow-hidden">
+        <section id="add-event-hero-section" class="relative flex overflow-hidden">
             <div class="flex relative transition-all w-full bg-green-gradient pt-32 pb-0 md:py-20">
                 <div
                     class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">

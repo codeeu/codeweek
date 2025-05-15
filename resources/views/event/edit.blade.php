@@ -47,12 +47,19 @@
             </div>
         </section>
 
-        <activity-form token="{{ csrf_token() }}" :user="{{ auth()->user() }}" :event="{{ $event }}"
-            :selected-values='@json($selectedValues)' :themes='{{ $themes }}' :audiences='{{ $audiences }}'
-            :leading-teachers="{{ json_encode($leading_teachers) }}" :languages="{{ json_encode($languages) }}"
-            :countries="{{ $countries }}" :locale="'{{ App::getLocale() }}'" :location='@json($location ?? (object) [])'
-            :privacy-link="'{{ route('privacy-contact-points') }}'"></activity-form>
-
+        <activity-form
+          token="{{ csrf_token() }}"
+          :user="{{ auth()->user() }}"
+          :event="{{ $event }}"
+          :selected-values='@json($selectedValues)'
+          :themes='{{ $themes }}'
+          :audiences='{{ $audiences }}'
+          :leading-teachers="{{ json_encode($leading_teachers) }}"
+          :languages="{{ json_encode($languages) }}"
+          :countries="{{ $countries }}":locale="'{{ App::getLocale() }}'"
+          :location='@json($location ?? (object) [])'
+          :privacy-link="'{{ route('privacy-contact-points') }}'"
+        ></activity-form>
     </section>
 @endsection
 

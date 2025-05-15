@@ -140,6 +140,8 @@
 import { computed } from 'vue';
 import { trans } from 'laravel-vue-i18n';
 
+import { useDataOptions } from './mixins.js';
+
 import FieldWrapper from '../form-fields/FieldWrapper.vue';
 import SelectField from '../form-fields/SelectField.vue';
 import InputField from '../form-fields/InputField.vue';
@@ -161,16 +163,7 @@ export default {
     ImageField,
   },
   setup(props, { emit }) {
-    const organizerTypeOptions = computed(() => [
-      { id: 'school', name: trans('event.organizertype.school') },
-      { id: 'library', name: trans('event.organizertype.library') },
-      { id: 'non profit', name: trans('event.organizertype.non profit') },
-      {
-        id: 'private business',
-        name: trans('event.organizertype.private business'),
-      },
-      { id: 'other', name: trans('event.organizertype.other') },
-    ]);
+    const { organizerTypeOptions } = useDataOptions();
 
     const languageOptions = computed(() =>
       Object.entries(props.languages).map(([key, value]) => ({

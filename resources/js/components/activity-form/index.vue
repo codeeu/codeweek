@@ -1,5 +1,8 @@
 <template>
-  <div class="relative py-10 codeweek-container-lg flex justify-center">
+  <div
+    v-if="step < 4"
+    class="relative py-10 codeweek-container-lg flex justify-center"
+  >
     <div class="flex gap-12">
       <template v-for="(stepItem, index) in stepItems">
         <div
@@ -29,6 +32,44 @@
     </div>
   </div>
 
+  <div
+    v-if="step === 4"
+    class="relative codeweek-container-lg flex justify-center px-4 md:px-10 py-10 md:py-20"
+  >
+    <div
+      class="flex flex-col justify-center items-center text-center gap-4 max-w-[660px]"
+    >
+      <div
+        class="flex justify-center items-center w-16 h-16 bg-dark-blue rounded-full"
+      >
+        <img class="w-6" src="/images/check-white.svg" />
+      </div>
+
+      <div
+        class="text-dark-blue text-[22px] md:text-4xl font-semibold font-[Montserrat]"
+      >
+        Thank you for adding your activity!
+      </div>
+
+      <div class="flex flex-col gap-4 text-[16px] text-center">
+        <div>
+          One of the EU Code Week Ambassadors or organisers will now review your
+          activity
+          <span class="text-dark-blue font-semibold underline">{{
+            formValues.title
+          }}</span>
+          and make sure everything is ok. If you have questions, get in touch
+          with the EU Code Week Ambassadors or organisers.
+        </div>
+        <div>
+          You can share your Code Week 4 all code with other people:
+          {{ formValues.codeweek_for_all_participation_code }}
+        </div>
+        <div>See the information you supplied below:</div>
+      </div>
+    </div>
+  </div>
+
   <div ref="containerRef" class="w-full relative">
     <div
       class="absolute w-full h-full bg-gray-10 md:hidden"
@@ -51,9 +92,10 @@
       <div class="flex justify-center">
         <div class="flex flex-col max-w-[852px] w-full">
           <h2
+            v-if="stepItems[step - 1]?.title"
             class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-10 text-center"
           >
-            {{ stepItems[step - 1].title }}
+            {{ stepItems[step - 1]?.title }}
           </h2>
 
           <div :class="[step !== 1 && 'hidden']">
@@ -95,32 +137,49 @@
             </CheckboxField>
           </div>
 
-          <div class="flex justify-between mt-10 gap-4">
-            <div>
-              <button
-                v-if="step > 1"
-                class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] md:w-56"
-                type="button"
-                @click="handleMoveStep(-1)"
-              >
-                <span>Previous step</span>
-              </button>
-            </div>
+          <div :class="[step !== 4 && 'hidden']">
+            <AddConfirmation
+              :formValues="formValues"
+              :themes="themes"
+              :location="location"
+              :audiences="audiences"
+              :leadingTeachers="leadingTeachers"
+              :languages="languages"
+              :countries="countries"
+            />
+          </div>
 
+          <div class="flex flex-wrap justify-between mt-10 gap-y-2 gap-x-4">
             <button
-              class="text-nowrap flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg md:w-56"
+              v-if="step > 1"
+              class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] max-sm:w-full sm:min-w-[224px]"
               type="button"
               @click="
                 () => {
-                  if (step === 3) {
-                    handleSubmit();
-                  } else {
-                    handleMoveStep(1);
-                  }
+                  if (step === 4) handleGoHomePage();
+                  else handleMoveStep(-1);
                 }
               "
             >
-              <span v-if="step === 3">Submit</span>
+              <span v-if="step === 4">Back to homepage</span>
+              <span v-else>Previous step</span>
+            </button>
+
+            <div />
+
+            <button
+              class="text-nowrap flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
+              type="button"
+              @click="
+                () => {
+                  if (step === 4) handleReloadPage();
+                  else if (step === 3) handleSubmit();
+                  else handleMoveStep(1);
+                }
+              "
+            >
+              <span v-if="step === 4">Add another activity</span>
+              <span v-else-if="step === 3">Submit</span>
               <span v-else>Next step</span>
             </button>
           </div>
@@ -135,9 +194,12 @@ import { ref, watch } from 'vue';
 import axios from 'axios';
 import _ from 'lodash';
 
+import { useDataOptions } from './mixins.js';
+
 import FormStep1 from './FormStep1.vue';
 import FormStep2 from './FormStep2.vue';
 import FormStep3 from './FormStep3.vue';
+import AddConfirmation from './AddConfirmation.vue';
 import CheckboxField from '../form-fields/CheckboxField.vue';
 
 export default {
@@ -195,16 +257,14 @@ export default {
     FormStep1,
     FormStep2,
     FormStep3,
+    AddConfirmation,
     CheckboxField,
   },
   setup(props, { emit }) {
+    const { stepItems } = useDataOptions();
+
     const containerRef = ref(null);
     const step = ref(1);
-    const stepItems = ref([
-      { name: 'Join the community', title: 'Activity overview' },
-      { name: 'Who is the activity for', title: 'Who is the activity for' },
-      { name: 'Organiser', title: 'Organiser' },
-    ]);
     const errors = ref({});
     const formValues = ref({
       // step 1
@@ -228,8 +288,15 @@ export default {
     });
 
     const handleMoveStep = (move) => {
-      step.value = Math.max(Math.min(step.value + move, 3), 1);
+      step.value = Math.max(
+        Math.min(step.value + move, props.event.id ? 3 : 4),
+        1
+      );
     };
+
+    const handleGoHomePage = () => (window.location.href = '/');
+
+    const handleReloadPage = () => window.location.reload();
 
     const handleSubmit = async () => {
       errors.value = {};
@@ -283,10 +350,11 @@ export default {
       try {
         if (!_.isNil(props.event.id)) {
           await axios.post(`/events/${props.event.id}`, payload);
+          window.location.href = '/events';
         } else {
           await axios.post('/events', payload);
+          handleMoveStep(1);
         }
-        window.location.href = '/events';
       } catch (error) {
         errors.value = error.response?.data?.errors;
         step.value = 1;
@@ -361,7 +429,13 @@ export default {
     );
 
     watch(step, () => {
-      if (containerRef.value) {
+      if (step.value === 4) {
+        const heroElement = document.getElementById('add-event-hero-section');
+        if (heroElement) {
+          heroElement.style.display = 'none';
+        }
+        window.scrollTo({ top: 0 });
+      } else if (containerRef.value) {
         const offsetTop = containerRef.value.getBoundingClientRect().top;
         window.scrollTo({ top: offsetTop + window.pageYOffset - 40 });
       }
@@ -373,6 +447,8 @@ export default {
       stepItems,
       errors,
       formValues,
+      handleGoHomePage,
+      handleReloadPage,
       handleMoveStep,
       handleSubmit,
     };
