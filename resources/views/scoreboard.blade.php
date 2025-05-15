@@ -112,8 +112,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="md:mt-10 xl:mt-20">
             <div class="relative pt-48">
                 <div class="absolute w-full h-[500px] bg-yellow-50 md:hidden top-0"
@@ -123,10 +121,6 @@
                 <div class="-mt-24 sm:-mt-20 bg-yellow-50">
                     <div class="relative z-10">
                         <div class="max-w-[1428px] mx-auto flex flex-col items-center">
-                            @php
-                                // re-order the collection so the highest-total ones come first
-                                $events = $events->sortByDesc('total')->values();
-                            @endphp
                             @foreach ($events as $event)
                                 @if ($loop->first)
                                     <!-- First Country - full width with decorations -->
