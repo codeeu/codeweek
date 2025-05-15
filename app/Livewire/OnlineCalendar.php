@@ -36,7 +36,6 @@ class OnlineCalendar extends Component
         'status' => 'APPROVED',
         'highlighted_status' => 'FEATURED',
     ];
-
     public function mount()
     {
         $this->selectedLanguage = strtolower(App::getLocale());
@@ -117,7 +116,6 @@ class OnlineCalendar extends Component
             'filteredEvents' => $this->filteredEvents->paginate(50),
         ]);
     }
-
     /**
      * @return mixed
      */
