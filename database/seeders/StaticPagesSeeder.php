@@ -104,7 +104,7 @@ class StaticPagesSeeder extends Seeder
 
         StaticPage::create([
             'name' => 'Presentations and Toolkits',
-            'description' => 'In this section you will find material which will help you organise your EU Code Week activity, and promote the initiative with your community.  Communication toolkit: find here the official EU Code Week logos, badge, flyer, poster, PowerPoint and Word templates, examples of social media posts, and illustrations. ( English ). Teachers toolkit: find here the official EU Code Week logos, badge, template of certificate of participation for your students, an introductory presentation about EU Code Week, and social media material. ( English ).',
+            'description' => 'In this section you will find material which will help you organise your EU Code Week activity, and promote the initiative with your community.  Communication toolkit: find here the official EU Code Week logos, badge, flyer, poster, PowerPoint and Word templates, examples of social media posts, and illustrations. ( English ). Teachers toolkit: find here the official EU Code Week logos, badge, template of certificate of participation for your students, an introductory presentation about EU Code Week, and social media material.  English .',
             'unique_identifier' => 'presentations-and-toolkits',
             'path' => '/toolkits',
             'thumbnail' => '/images/banner_learn_teach.svg',
