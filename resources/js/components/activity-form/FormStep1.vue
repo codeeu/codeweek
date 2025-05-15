@@ -219,8 +219,9 @@
 </template>
 
 <script>
-import { computed, onMounted } from 'vue';
-import { trans } from 'laravel-vue-i18n';
+import { onMounted } from 'vue';
+
+import { useDataOptions } from './mixins.js';
 
 import FieldWrapper from '../form-fields/FieldWrapper.vue';
 import SelectField from '../form-fields/SelectField.vue';
@@ -242,62 +243,12 @@ export default {
     RadioField,
   },
   setup(props, { emit }) {
-    const activityFormatOptions = computed(() => [
-      { id: 'coding-camp', name: 'Coding camp' },
-      { id: 'summer-camp', name: 'Summercamp' },
-      { id: 'weekend-course', name: 'Weekend course' },
-      { id: 'evening-course', name: 'Evening course' },
-      { id: 'careerday', name: 'Careerday' },
-      { id: 'university-visit', name: 'University visit' },
-      { id: 'coding-home', name: 'Coding@Home' },
-      { id: 'code-week-challenge', name: 'Code Week Challenge' },
-      { id: 'competition', name: 'Competition' },
-      { id: 'other', name: 'Other (e.g. Group work, Seminars, Workshops' },
-    ]);
-
-    const activityTypeOptions = computed(() => [
-      {
-        id: 'open-online',
-        name: trans('event.activitytype.open-online'),
-      },
-      {
-        id: 'invite-online',
-        name: trans('event.activitytype.invite-online'),
-      },
-      {
-        id: 'open-in-person',
-        name: trans('event.activitytype.open-in-person'),
-      },
-      {
-        id: 'invite-in-person',
-        name: trans('event.activitytype.invite-in-person'),
-      },
-      {
-        id: 'other',
-        name: trans('event.organizertype.other'),
-      },
-    ]);
-
-    const durationOptions = computed(() => [
-      { id: '0-1', name: trans('event.duration.0-1-hour') },
-      { id: '1-2', name: trans('event.duration.1-2-hours') },
-      { id: '2-4', name: trans('event.duration.2-4-hours') },
-      {
-        id: 'over-4',
-        name: trans('event.duration.more-than-4-hours'),
-      },
-    ]);
-
-    const recurringTypeOptions = computed(() => [
-      {
-        id: 'consecutive',
-        name: 'Consecutive learning over multiple sessions',
-      },
-      {
-        id: 'individual',
-        name: 'Individual, stand-alone lessons under a common theme/joint event.',
-      },
-    ]);
+    const {
+      activityFormatOptions,
+      activityTypeOptions,
+      durationOptions,
+      recurringTypeOptions,
+    } = useDataOptions();
 
     const handleLocationChange = ({ location, geoposition, country_iso }) => {
       props.formValues.location = location;

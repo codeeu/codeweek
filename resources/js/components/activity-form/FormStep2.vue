@@ -172,7 +172,7 @@
 </template>
 
 <script>
-import { computed } from 'vue';
+import { useDataOptions } from './mixins.js';
 
 import FieldWrapper from '../form-fields/FieldWrapper.vue';
 import SelectField from '../form-fields/SelectField.vue';
@@ -195,18 +195,11 @@ export default {
     ImageField,
   },
   setup(props, { emit }) {
-    const ageOptions = computed(() => [
-      { id: 'under-5', name: 'Under 5 - Early learners' },
-      { id: '6-9', name: '6-9 - Primary' },
-      { id: '10-12', name: '10-12 - Upper primary' },
-      { id: '13-15', name: '13-15 - Lower secondary' },
-      { id: '16-18', name: '16-18 - Upper secondary' },
-      { id: '19-25', name: '19-25 - Young Adults' },
-      { id: 'over-25', name: 'Over 25 - Adults' },
-    ]);
+    const { ageOptions } = useDataOptions();
 
-    const onPictureChange = ({ imageName }) => {
-      props.formValues.picture = imageName;
+    const onPictureChange = (data) => {
+      props.formValues.picture = data.imageName;
+      props.formValues.pictureUrl = data.path;
     };
 
     return {
