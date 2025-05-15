@@ -112,8 +112,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="md:mt-10 xl:mt-20">
             <div class="relative pt-48">
                 <div class="absolute w-full h-[500px] bg-yellow-50 md:hidden top-0"
