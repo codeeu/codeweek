@@ -67,6 +67,58 @@ class Event extends Model
         'location_id',
         'leading_teacher_tag',
         'mass_added_for',
+        'activity_format',
+        'duration',
+        'recurring_event',
+        'recurring_type',
+        'males_count',
+        'females_count',
+        'other_count',
+        'is_extracurricular_event',
+        'is_standard_school_curriculum',
+        'is_use_resource',
+        'ages'
+    ];
+
+    public const ACTIVITY_FORMATS = [
+        'coding-camp',
+        'summer-camp',
+        'weekend-course',
+        'evening-course',
+        'careerday',
+        'university-visit',
+        'coding-home',
+        'code-week-challenge',
+        'competition',
+        'other',
+    ];
+    
+    public const DURATIONS = [
+        '0-1',
+        '1-2',
+        '2-4',
+        'over-4',
+    ];
+    
+    public const RECURRING_TYPES = [
+        'consecutive',
+        'individual',
+    ];
+    
+    public const RECURRING_EVENTS = [
+        'daily',
+        'weekly',
+        'monthly',
+    ];
+    
+    public const AGES = [
+        'under-5',
+        '6-9',
+        '10-12',
+        '13-15',
+        '16-18',
+        '19-25',
+        'over-25',
     ];
 
     //    protected $policies = [
@@ -109,6 +161,12 @@ class Event extends Model
             'title' => PurifyHtmlOnGet::class,
             'location' => PurifyHtmlOnGet::class,
             'language' => PurifyHtmlOnGet::class,
+
+            'activity_format' => 'array',
+            'is_extracurricular_event' => 'boolean',
+            'is_standard_school_curriculum' => 'boolean',
+            'ages' => 'array',
+            'is_use_resource' => 'boolean',
         ];
     }
 

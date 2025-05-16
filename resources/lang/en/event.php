@@ -40,7 +40,7 @@ return [
         'placeholder' => 'Organisation you work in or volunteer for',
     ],
     'website' => [
-        'label' => 'Organiser\'s Website',
+        'label' => 'Website',
         'placeholder' => 'Do you have a website with more information ?',
     ],
     'description' => [
@@ -58,11 +58,11 @@ return [
 
     ],
     'title' => [
-        'label' => 'Activity Title',
+        'label' => 'Activity title',
         'placeholder' => 'What is the name of the activity ?',
     ],
     'address' => [
-        'label' => 'Address',
+        'label' => 'Activity address',
         'placeholder' => 'Where will the activity be taking place?',
     ],
 
@@ -133,13 +133,19 @@ return [
         'Other' => 'Other',
     ],
     'activitytype' => [
-        'label' => 'Activity Type',
+        'label' => 'Activity type',
         'placeholder' => '',
         'open-online' => 'Open online activity',
         'invite-online' => 'Invite-only online activity',
         'open-in-person' => 'Open in-person activity',
         'invite-in-person' => 'Invite-only in-person activity',
 
+    ],
+    'duration' => [
+      '0-1-hour' => '0-1 hours',
+      '1-2-hours' => '1-2 hours',
+      '2-4-hours' => '2-4 hours',
+      'more-than-4-hours' => 'longer than 4 hours',
     ],
 
     'More' => 'More',

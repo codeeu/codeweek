@@ -1,0 +1,27 @@
+.custom-tinymce {
+  .tox-tinymce {
+    border: 2px solid #a4b8d9;
+    border-radius: 24px;
+  }
+
+  .tox-editor-container {
+    .tox-menubar {
+      padding: 0 12px;
+    }
+  }
+  .tox-toolbar-overlord {
+    .tox-toolbar__primary {
+      .tox-toolbar__group:first-child {
+        padding-left: 12px;
+      }
+      .tox-toolbar__group:last-child {
+        padding-right: 12px;
+      }
+    }
+  }
+
+  .tox .tox-statusbar {
+    height: 24px;
+    padding: 4px 16px 4px 16px;
+  }
+}

@@ -1,5 +1,6 @@
 import './bootstrap';
 import { createApp } from 'vue';
+import ActivityForm from './components/activity-form/index.vue';
 import ResourceForm from './components/ResourceForm.vue';
 import ResourceCard from './components/ResourceCard.vue';
 import ResourcePill from './components/ResourcePill.vue';
@@ -34,6 +35,7 @@ app.use(i18nVue, {
         return await langs[`../lang/${lang}.json`]();
     }
 })
+app.component('ActivityForm', ActivityForm);
 app.component('ResourceForm', ResourceForm);
 app.component('ResourceCard', ResourceCard);
 app.component('ResourcePill', ResourcePill);
