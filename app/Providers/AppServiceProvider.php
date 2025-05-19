@@ -9,9 +9,11 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Lang;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -40,6 +42,7 @@ class AppServiceProvider extends ServiceProvider
                 $view->with('audiences', \App\Audience::all());
                 $view->with('activity_types', \App\ActivityType::list());
                 $view->with('countries', \App\Country::translated());
+                $view->with('languages', Arr::sort(Lang::get('base.languages')));
                 $view->with('active_countries', \App\Country::withEvents());
                 $view->with(
                     'themes',

@@ -16,7 +16,7 @@
       <li v-for="page in pages" class="flex items-center gap-1 whitespace-nowrap">
         <a
           v-if="pagination.current_page != page"
-          class="flex justify-center items-center w-12 h-12 text-xl hover:bg-[#1C4DA1]/10 rounded font-bold text-[#1C4DA1] underline duration-300"
+          class="flex justify-center items-center w-12 h-12 text-xl hover:bg-[#1C4DA1]/10 rounded font-bold text-[#1C4DA1] underline duration-300 cursor-pointer"
           @click.prevent="changePage(page)"
         >
           {{ page }}

@@ -20,7 +20,7 @@ class EventHelper
         }
 
         $events = Event::selectRaw(
-            'id, title, slug, start_date, end_date, picture, description, picture, creator_id, 
+            'id, title, slug, start_date, end_date, picture, description, picture, creator_id, highlighted_status, recurring_event, 
         ( 6371 *
          acos( cos( radians(?) ) *
          cos( radians( latitude ) ) *

@@ -16,6 +16,8 @@ import PictureForm from "./components/PictureForm.vue";
 import Flash from "./components/Flash.vue";
 import InputTags from "./components/InputTags.vue";
 import ReportEvent from "./components/ReportEvent.vue";
+import EventCard from "./components/EventCard.vue";
+import EventDetail from "./components/EventDetail.vue";
 import SearchPageComponent from "./components/SearchPageComponent.vue";
 
 // import { createI18n } from 'vue-i18n';
@@ -54,4 +56,6 @@ app.component('InputTags', InputTags);
 app.component('SearchPageComponent', SearchPageComponent);
 app.component('AvatarForm', AvatarForm);
 app.component('PartnerGallery', PartnerGallery);
+app.component('EventCard', EventCard);
+app.component('EventDetail', EventDetail);
 app.mount("#app");

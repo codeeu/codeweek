@@ -2,6 +2,14 @@ import { computed } from 'vue';
 import { trans } from 'laravel-vue-i18n';
 
 export function useDataOptions() {
+  const buildOptionMap = (options) => {
+    const result = {};
+    options?.forEach((option) => {
+      result[option.id] = option.name;
+    });
+    return result;
+  };
+
   const stepItems = computed(() => [
     { name: 'Join the community', title: 'Activity overview' },
     { name: 'Who is the activity for', title: 'Who is the activity for' },
@@ -20,6 +28,9 @@ export function useDataOptions() {
     { id: 'competition', name: 'Competition' },
     { id: 'other', name: 'Other (e.g. Group work, Seminars, Workshops' },
   ]);
+  const activityFormatOptionsMap = computed(() =>
+    buildOptionMap(activityFormatOptions.value)
+  );
 
   const activityTypeOptions = computed(() => [
     {
@@ -43,6 +54,15 @@ export function useDataOptions() {
       name: trans('event.organizertype.other'),
     },
   ]);
+  const activityTypeOptionsMap = computed(() =>
+    buildOptionMap(activityTypeOptions.value)
+  );
+
+  const recurringFrequentlyMap = computed(() => ({
+    daily: 'Daily',
+    weekly: 'Weekly',
+    monthly: 'Monthly',
+  }));
 
   const durationOptions = computed(() => [
     { id: '0-1', name: trans('event.duration.0-1-hour') },
@@ -53,6 +73,9 @@ export function useDataOptions() {
       name: trans('event.duration.more-than-4-hours'),
     },
   ]);
+  const durationOptionsMap = computed(() =>
+    buildOptionMap(durationOptions.value)
+  );
 
   const recurringTypeOptions = computed(() => [
     {
@@ -64,6 +87,9 @@ export function useDataOptions() {
       name: 'Individual, stand-alone lessons under a common theme/joint event.',
     },
   ]);
+  const recurringTypeOptionsMap = computed(() =>
+    buildOptionMap(recurringTypeOptions.value)
+  );
 
   const ageOptions = computed(() => [
     { id: 'under-5', name: 'Under 5 - Early learners' },
@@ -74,6 +100,7 @@ export function useDataOptions() {
     { id: '19-25', name: '19-25 - Young Adults' },
     { id: 'over-25', name: 'Over 25 - Adults' },
   ]);
+  const ageOptionsMap = computed(() => buildOptionMap(ageOptions.value));
 
   const organizerTypeOptions = computed(() => [
     { id: 'school', name: trans('event.organizertype.school') },
@@ -85,14 +112,24 @@ export function useDataOptions() {
     },
     { id: 'other', name: trans('event.organizertype.other') },
   ]);
+  const organizerTypeOptionsMap = computed(() =>
+    buildOptionMap(organizerTypeOptions.value)
+  );
 
   return {
     stepItems,
     activityFormatOptions,
+    activityFormatOptionsMap,
     activityTypeOptions,
+    activityTypeOptionsMap,
+    recurringFrequentlyMap,
     durationOptions,
+    durationOptionsMap,
     recurringTypeOptions,
+    recurringTypeOptionsMap,
     ageOptions,
+    ageOptionsMap,
     organizerTypeOptions,
+    organizerTypeOptionsMap,
   };
 }

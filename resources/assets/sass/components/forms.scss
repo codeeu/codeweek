@@ -95,7 +95,7 @@
     }
   }
 
-  &.new-theme {
+  &.large-text {
     .multiselect__placeholder,
     .multiselect__single{
       font-size: 20px;
@@ -104,13 +104,16 @@
     .multiselect__placeholder {
       line-height: 24px;
     }
-    .multiselect__tags{
-      padding: 9px 40px 9px 16px;
-      min-height: 48px;
-    }
     .multiselect__input {
       line-height: 24px;
     }
+    .multiselect__tags{
+      padding: 9px 40px 8px 16px;
+      min-height: 48px;
+    }
+  }
+
+  &.new-theme {
     .multiselect__placeholder {
       display: block;
     }

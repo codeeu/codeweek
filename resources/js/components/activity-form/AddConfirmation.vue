@@ -48,12 +48,13 @@ export default {
   components: {},
   setup(props, { emit }) {
     const {
-      activityFormatOptions,
-      activityTypeOptions,
-      durationOptions,
-      recurringTypeOptions,
-      ageOptions,
-      organizerTypeOptions,
+      activityFormatOptionsMap,
+      activityTypeOptionsMap,
+      recurringFrequentlyMap,
+      durationOptionsMap,
+      recurringTypeOptionsMap,
+      ageOptionsMap,
+      organizerTypeOptionsMap,
     } = useDataOptions();
 
     const stepDataList = computed(() => {
@@ -74,15 +75,10 @@ export default {
       } = props.formValues || {};
 
       const formatValues = (activity_format || []).map(
-        (item) =>
-          activityFormatOptions.value.find(({ id }) => id === item)?.name
+        (item) => activityFormatOptionsMap.value[item]
       );
-      const typeValue = activityTypeOptions.value.find(
-        ({ id }) => id === activity_type
-      )?.name;
-      const durationValue = durationOptions.value.find(
-        ({ id }) => id === duration
-      )?.name;
+      const typeValue = activityTypeOptionsMap.value[activity_type];
+      const durationValue = durationOptionsMap.value[duration];
       const startDateValue = start_date
         ? new Date(start_date).toISOString().slice(0, 10)
         : '';
@@ -91,17 +87,10 @@ export default {
         : '';
 
       const isRecurring = is_recurring_event_local === 'true';
-      const frequentlyMap = {
-        daily: 'Daily',
-        weekly: 'Weekly',
-        monthly: 'Monthly',
-      };
-      const recurringType = recurringTypeOptions.value.find(
-        ({ id }) => id === recurring_type
-      )?.name;
-      const themeValues = (themes || []).map(
-        (item) => props.themes.find(({ id }) => id === item)?.name
-      );
+      const recurringType = recurringTypeOptionsMap.value[recurring_type];
+      const themeValues = (themes || [])
+        .map((item) => props.themes.find(({ id }) => id === item)?.name)
+        .map((name) => trans(`event.theme.${name}`));
 
       const step1List = [
         { label: trans('event.title.label'), value: title },
@@ -119,7 +108,9 @@ export default {
         },
         {
           label: 'How frequently?',
-          value: isRecurring ? frequentlyMap[recurring_event] : '',
+          value: isRecurring
+            ? recurringFrequentlyMap.value[recurring_event]
+            : '',
         },
         { label: 'What type of recurring activity?', value: recurringType },
         { label: 'Theme?', value: themeValues.join(', ') },
@@ -142,9 +133,9 @@ export default {
         picture,
       } = props.formValues || {};
 
-      const audienceValues = (audiences || []).map(
-        (item) => props.audiences.find(({ id }) => id === item)?.name
-      );
+      const audienceValues = (audiences || [])
+        .map((item) => props.audiences.find(({ id }) => id === item)?.name)
+        .map((name) => trans(`event.audience.${name}`));
       const participantsValue = [
         participants_count || 0,
         [
@@ -153,9 +144,7 @@ export default {
           `${other_count || 0} Other`,
         ].join(', '),
       ].join(' - ');
-      const ageValues = (ages || []).map(
-        (item) => ageOptions.value.find(({ id }) => id === item)?.name
-      );
+      const ageValues = (ages || []).map((item) => ageOptionsMap.value[item]);
       const teacherValues = (leading_teacher_tag || []).map(
         (item) => props.leadingTeachers.find(({ id }) => id === item)?.name
       );
@@ -207,9 +196,7 @@ export default {
         contact_person,
         user_email,
       } = props.formValues || {};
-      const organizerTypeValue = organizerTypeOptions.value.find(
-        ({ id }) => id === organizer_type
-      )?.name;
+      const organizerTypeValue = organizerTypeOptionsMap.value[organizer_type];
 
       const languageValue = Object.entries(props.languages).find(
         ([key]) => key === language

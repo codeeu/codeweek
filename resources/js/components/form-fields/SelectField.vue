@@ -1,8 +1,12 @@
 <template>
   <multiselect
-    class="multi-select new-theme"
-    :class="[multiple && 'multiple']"
-    v-model="selectedFormats"
+    class="multi-select"
+    :class="[
+      multiple && 'multiple',
+      theme === 'new' && 'new-theme large-text',
+      largeText && 'large-text',
+    ]"
+    v-model="selectedValues"
     :track-by="idName"
     :label="labelField"
     :multiple="multiple"
@@ -13,7 +17,7 @@
     :options="options"
     @update:modelValue="onUpdateModalValue"
   >
-    <template v-if="multiple" #option="{ option }">
+    <template v-if="multiple && theme === 'new'" #option="{ option }">
       <div class="flex justify-between items-center cursor-pointer">
         <span>{{ option[labelField] }}</span>
         <div
@@ -79,6 +83,7 @@ import Multiselect from 'vue-multiselect';
 export default {
   props: {
     multiple: Boolean,
+    returnObject: Boolean,
     modelValue: [Array, String],
     options: Array,
     idName: {
@@ -89,60 +94,79 @@ export default {
       type: String,
       default: 'name',
     },
+    theme: {
+      type: String,
+      default: 'new',
+    },
+    largeText: {
+      type: Boolean,
+      default: false,
+    },
   },
   components: {
     Multiselect,
   },
-  emits: ['update:modelValue'],
+  emits: ['update:modelValue', 'onChange'],
   setup(props, { emit }) {
-    const selectedFormats = ref();
+    const selectedValues = ref();
 
     const onUpdateModalValue = (value) => {
       if (props.multiple) {
-        emit(
-          'update:modelValue',
-          value.map((item) => item[props.idName])
-        );
+        const newVal = props.returnObject
+          ? value
+          : value.map((item) => item[props.idName]);
+        emit('update:modelValue', newVal);
+        emit('onChange', newVal);
       } else {
-        emit('update:modelValue', value[props.idName]);
+        const newVal = props.returnObject ? value : value[props.idName];
+        emit('onChange', newVal);
       }
     };
 
     const isSelectedOption = (option) => {
       if (props.multiple) {
-        return selectedFormats.value?.some(
+        return selectedValues.value?.some(
           (item) => String(item[props.idName]) === String(option[props.idName])
         );
       }
 
       return (
-        String(selectedFormats.value?.[props.idName]) ===
+        String(selectedValues.value?.[props.idName]) ===
         String(option[props.idName])
       );
     };
 
     watch(
-      [() => props.multiple, () => props.options, () => props.modelValue],
+      [
+        () => props.multiple,
+        () => props.returnObject,
+        () => props.options,
+        () => props.modelValue,
+      ],
       () => {
-        if (props.multiple) {
-          if (Array.isArray(props.modelValue)) {
-            selectedFormats.value = props.modelValue?.map((id) => {
-              return props.options.find(
-                (option) => option[props.idName] === id
-              );
-            });
-          }
+        if (props.returnObject) {
+          selectedValues.value = props.modelValue;
         } else {
-          selectedFormats.value = props.options?.find(
-            (option) => option[props.idName] === props.modelValue
-          );
+          if (props.multiple) {
+            if (Array.isArray(props.modelValue)) {
+              selectedValues.value = props.modelValue?.map((id) => {
+                return props.options.find(
+                  (option) => option[props.idName] === id
+                );
+              });
+            }
+          } else {
+            selectedValues.value = props.options?.find(
+              (option) => option[props.idName] === props.modelValue
+            );
+          }
         }
       },
       { immediate: true }
     );
 
     return {
-      selectedFormats,
+      selectedValues,
       isSelectedOption,
       onUpdateModalValue,
     };

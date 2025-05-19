@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex items-start flex-col gap-3"
+    class="flex items-start flex-col gap-x-3 gap-y-2"
     :class="[horizontalBreakpoint === 'md' && 'md:gap-10 md:flex-row']"
   >
     <label
-      :for="`id_${name || names[0]}`"
+      :for="`id_${name || names?.[0] || ''}`"
       class="flex items-center font-normal text-xl flex-1 text-slate-500 'w-full"
       :class="[horizontalBreakpoint === 'md' && 'md:min-h-[48px] md:w-1/3']"
     >
