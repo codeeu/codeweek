@@ -13,7 +13,8 @@
 @section('title', 'EU Code Week Guide – How to Get Started')
 @section('description', 'New to EU Code Week? Check out our step-by-step guide on how to organize events, access resources, and engage with the coding community')
 @section('content')
-<style>
+    <section id="codeweek-toolkits-page" class="font-['Blinker'] overflow-hidden">
+    <style>
 
 #codeweek-toolkits-page a {
     color: #1C4DA1!important;
@@ -48,7 +49,6 @@
 }
 
 </style>
-    <section id="codeweek-toolkits-page" class="font-['Blinker'] overflow-hidden">
         <section class="relative flex overflow-hidden">
             <div class="relative flex w-full pt-32 pb-0 transition-all bg-light-blue-gradient md:py-32">
                 <div class="flex flex-col justify-end flex-shrink-0 w-full pb-10 overflow-hidden md:p-0 md:flex-row md:items-center">
