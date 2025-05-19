@@ -101,6 +101,9 @@ Route::permanentRedirect('/meet-the-ambassadors-gabriella-fumagalli-switzerland'
 Route::permanentRedirect('/as-the-preparations-for-the-second-code-week-are', '/blog/as-the-preparations-for-the-second-code-week-are');
 Route::permanentRedirect('/as-the-preparations-for-the-second-code-week-are', '/blog/as-the-preparations-for-the-second-code-week-are');
 Route::permanentRedirect('/programming-a-pedometer-to-bring-coding-to?is_related_post=1', '/blog/programming-a-pedometer-to-bring-coding-to/');
+Route::get('/podcast/{slug}', function ($slug) {
+    return redirect("/podcasts/{$slug}", 301);
+});
 //redirects end
 //Auth::loginUsingId(268354);
 
