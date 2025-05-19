@@ -378,7 +378,7 @@ export default {
           ...formValues.value,
           // step 1
           title: event.title,
-          activity_format: event.activity_format?.split(','),
+          activity_format: event.activity_format,
           activity_type: event.activity_type || 'open-in-person',
           location: event.location || props.location?.location,
           geoposition: geoposition?.split(','),
@@ -396,7 +396,7 @@ export default {
           males_count: event.males_count,
           females_count: event.females_count,
           other_count: event.other_count,
-          ages: event.ages?.split(','),
+          ages: event.ages,
           is_extracurricular_event: String(!!event.is_extracurricular_event),
           is_standard_school_curriculum: String(
             !!event.is_standard_school_curriculum
@@ -420,6 +420,14 @@ export default {
           contact_person: event.contact_person,
           user_email: event.user_email,
         };
+
+        formValues.value.leading_teacher_tag = event.leading_teacher_tag || [];
+        if (
+          typeof event.leading_teacher_tag === 'number' ||
+          typeof event.leading_teacher_tag === 'string'
+        ) {
+          formValues.value.leading_teacher_tag = [event.leading_teacher_tag];
+        }
 
         if (event.recurring_event) {
           formValues.value.is_recurring_event_local = 'true';

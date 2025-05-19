@@ -1,7 +1,7 @@
 <template>
   <div class="datepicker-wrapper">
     <!--        <date-picker :input-name="name" width="100%" :placeholder="placeholder" v-model="time1" type="datetime" format="yyyy-MM-dd HH:mm:ss" :time-picker-options="{start: '07:00',step: '00:30',end: '23:30'}" lang="en"></date-picker>-->
-    <VueDatePicker :name="name" v-model="time1" type="datetime" format="yyyy-MM-dd HH:mm" :time-picker-options="{start: '07:00',step: '00:30',end: '23:30'}" lang="en" :placeholder="placeholder" @update:model-value="onChange"></VueDatePicker>
+    <VueDatePicker :name="name" v-model="time1" type="datetime" :format="format || 'yyyy-MM-dd HH:mm'" :time-picker-options="{start: '07:00',step: '00:30',end: '23:30'}" lang="en" :placeholder="placeholder" @update:model-value="onChange"></VueDatePicker>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import '@vuepic/vue-datepicker/dist/main.css'
 
 export default {
   components: { VueDatePicker },
-  props: ['name','placeholder','value','lang'],
+  props: ['name','placeholder','value','lang', 'format', 'onClear'],
   data() {
     return {
       time1: this.value ? this.value : '',
@@ -27,6 +27,7 @@ export default {
   },
   methods: {
     onChange(date) {
+      this.$emit('onClear');
       if (!(date instanceof Date) || isNaN(date.getTime())) return '';
       const pad = (n) => n.toString().padStart(2, '0');
 

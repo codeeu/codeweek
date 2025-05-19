@@ -110,7 +110,7 @@ return [
         'Promoting diversity' => 'Promoting diversity',
     ],
     'codeweek_for_all_participation_code' => [
-        'title' => 'CODE WEEK 4 ALL CODE',
+        'title' => 'Code week 4 all code',
         'explanation' => 'If you have received a Code Week 4 all code from a school colleague or a friend paste it here, otherwise please leave it blank. More info about Code Week 4 All are available',
         'link' => 'here',
     ],

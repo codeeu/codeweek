@@ -3,7 +3,6 @@
 namespace App\Filters;
 
 use App\Tag;
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -15,7 +14,20 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['countries', 'query', 'themes', 'audiences', 'types', 'year', 'creator_id', 'tag'];
+    protected $filters = [
+        'countries',
+        'query',
+        'themes',
+        'audiences',
+        'types',
+        'year',
+        'creator_id',
+        'tag',
+        'formats',
+        'ages',
+        'languages',
+        'start_date'
+    ];
 
     public function __construct(Request $request)
     {
@@ -50,13 +62,11 @@ class EventFilters extends Filters
     protected function year($year)
     {
         return $this->builder->whereYear('end_date', '=', $year);
-
     }
 
     protected function creator_id($creator_id)
     {
         return $this->builder->where('creator_id', '=', $creator_id);
-
     }
 
     protected function query($query)
@@ -85,7 +95,6 @@ class EventFilters extends Filters
         return $this->builder
             ->leftJoin('event_theme', 'events.id', '=', 'event_theme.event_id')
             ->whereIn('event_theme.theme_id', $themesIds);
-
     }
 
     protected function tag($tag)
@@ -104,7 +113,6 @@ class EventFilters extends Filters
         return $this->builder
             ->leftJoin('event_tag', 'events.id', '=', 'event_tag.event_id')
             ->where('event_tag.tag_id', $selectedTag->id);
-
     }
 
     protected function audiences($audiences)
@@ -119,7 +127,6 @@ class EventFilters extends Filters
         return $this->builder
             ->leftJoin('audience_event', 'events.id', '=', 'audience_event.event_id')
             ->whereIn('audience_event.audience_id', $audiencesIds);
-
     }
 
     protected function types($types)
@@ -129,11 +136,62 @@ class EventFilters extends Filters
             return;
         }
 
-        $keys = collect($types)->pluck('key')->all();
+        $keys = collect($types)->pluck('id')->all();
 
         $result = $this->builder->whereIn('activity_type', $keys);
 
         return $result;
+    }
 
+    protected function start_date($start_date)
+    {
+        if (!empty($start_date)) {
+            return $this->builder->where('start_date', '>=', $start_date);
+        }
+        return;
+    }
+
+    protected function languages($languages)
+    {
+
+        if (empty($languages)) {
+            return;
+        }
+
+        $keys = collect($languages)->pluck('id')->all();
+
+        $result = $this->builder->whereIn('language', $keys);
+
+        return $result;
+    }
+
+    protected function formats($formats)
+    {
+        if (empty($formats)) {
+            return;
+        }
+
+        $keys = collect($formats)->pluck('id')->all();
+
+        $this->builder->where(function ($query) use ($keys) {
+            foreach ($keys as $key) {
+                $query->orWhereRaw("JSON_CONTAINS(activity_format, '\"$key\"')");
+            }
+        });
+    }
+
+    protected function ages($ages)
+    {
+        if (empty($ages)) {
+            return;
+        }
+
+        $keys = collect($ages)->pluck('id')->all();
+
+        $this->builder->where(function ($query) use ($keys) {
+            foreach ($keys as $key) {
+                $query->orWhereRaw("JSON_CONTAINS(ages, '\"$key\"')");
+            }
+        });
     }
 }
