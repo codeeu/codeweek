@@ -110,6 +110,14 @@ Route::permanentRedirect('/view/1221652/blog/careers-linda-liukas/', '/blog/care
 Route::permanentRedirect('/view/1221652/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
 Route::permanentRedirect('/view/1221912/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
 Route::permanentRedirect('/view/1221912/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
+Route::get('/search/{term}', function ($term) {
+    if (strtolower($term) === 'e twinning') {
+        return redirect('/search', 301);
+    }
+
+    // Optionally, handle other terms or return 404
+    abort(404);
+});
 //redirects end
 //Auth::loginUsingId(268354);
 
