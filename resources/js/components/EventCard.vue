@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col bg-white rounded-lg overflow-hidden">
     <div class="flex-shrink-0">
-      <img :src="thumbnail(event)" class="w-full object-cover aspect-[1.5]" />
+      <img :src="event.picture_path" class="w-full object-cover aspect-[1.5]" />
     </div>
 
     <div class="flex-grow flex flex-col gap-2 px-6 py-4">
@@ -136,14 +136,6 @@ export default {
       )}`;
     });
 
-    const thumbnail = (event) => {
-      if (event.picture) {
-        if (event.picture.startsWith('http')) return event.picture;
-        return 'https://codeweek-s3.s3.amazonaws.com/' + event.picture;
-      }
-      return 'https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png';
-    };
-
     const limit = (text) => {
       if (text.length > 400) {
         return text.substring(0, 400) + '...';
@@ -154,7 +146,6 @@ export default {
     return {
       eventTags,
       eventStartDateText,
-      thumbnail,
       limit,
     };
   },

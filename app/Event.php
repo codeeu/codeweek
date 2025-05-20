@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Spatie\Activitylog\LogOptions;
 use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
@@ -126,7 +127,7 @@ class Event extends Model
     //        Event::class => EventPolicy::class
     //    ];
 
-    //protected $appends = ['LatestModeration'];
+    protected $appends = ['picture_path'];
 
     public function getUrlAttribute() {
         if (!empty($this->slug)) {
@@ -198,6 +199,8 @@ class Event extends Model
                 return $this->picture;
             }
 
+            // For local test
+            // return Storage::disk('public')->url($this->picture);
             return config('codeweek.aws_url').$this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
@@ -270,7 +273,7 @@ class Event extends Model
 
     public static function getByYear($year)
     {
-        $events = Event::where('status', 'like', 'APPROVED')->where(
+        $events = Event::where('status', 'APPROVED')->where(
             'start_date',
             '>',
             Carbon::createFromDate($year, 1, 1)

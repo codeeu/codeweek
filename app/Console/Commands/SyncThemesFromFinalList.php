@@ -83,21 +83,21 @@ class SyncThemesFromFinalList extends Command
     ];
 
     protected $finalThemes = [
-        'AI & Generative AI',
-        'Robotics, Drones & Smart Devices',
-        'Web, App & Software Development',
-        'Game Design',
-        'Cybersecurity & Data',
-        'Visual/Block Programming',
-        'Art & Creative Coding',
-        'Internet of Things & Wearables',
-        'AR, VR & 3D Technologies',
-        'Digital Careers & Learning Pathways',
-        'Digital Literacy & Soft Skills',
-        'Unplugged & Playful Activities',
-        'Promoting Diversity & Inclusion',
-        'Awareness & Inspiration',
-        'Other',
+        [17, 'AI & Generative AI', 15],
+        [6, 'Robotics, Drones & Smart Devices', 1],
+        [2, 'Web, App & Software Development', 4],
+        [13, 'Game Design', 10],
+        [5, 'Cybersecurity & Data', 2],
+        [1, 'Visual/Block Programming', 5],
+        [11, 'Art & Creative Coding', 8],
+        [14, 'Internet of Things & Wearables', 11],
+        [16, 'AR, VR & 3D Technologies', 12],
+        [3, 'Digital Careers & Learning Pathways', 13],
+        [4, 'Digital Literacy & Soft Skills', 14],
+        [9, 'Unplugged & Playful Activities', 6],
+        [19, 'Promoting Diversity & Inclusion', 17],
+        [18, 'Awareness & Inspiration', 16],
+        [8, 'Other', 18],
     ];
 
     /**
@@ -136,13 +136,19 @@ class SyncThemesFromFinalList extends Command
             DB::table('event_theme')->delete();
             DB::table('themes')->delete();
 
-            $finalThemesMap = collect($this->finalThemes)->map(function ($name, $index) {
+            $finalThemesMap = collect($this->finalThemes)->map(function ($theme) {
                 return [
-                    'name' => $name,
-                    'order' => $index + 1,
+                    'id' => $theme[0],
+                    'name' => $theme[1],
+                    'order' => $theme[2],
                 ];
             });
+            
             DB::table('themes')->insert($finalThemesMap->toArray());
+            
+            // Set AUTO_INCREMENT to max(id) + 1
+            $maxId = collect($this->finalThemes)->max(fn($theme) => $theme[0]);
+            DB::statement('ALTER TABLE themes AUTO_INCREMENT = ' . ($maxId + 1));
 
             $newThemes = DB::table('themes')->get()->keyBy('name');
 
@@ -163,7 +169,9 @@ class SyncThemesFromFinalList extends Command
                 ->values()
                 ->all();
 
-            DB::table('event_theme')->insert($uniqueRows);
+            foreach (array_chunk($uniqueRows, 1000) as $chunk) {
+                DB::table('event_theme')->insert($chunk);
+            }
 
             DB::statement('SET FOREIGN_KEY_CHECKS=1');
             config(['database.connections.mysql.strict' => true]);

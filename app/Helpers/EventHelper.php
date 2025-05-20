@@ -31,7 +31,7 @@ class EventHelper
          AS distance',
             [$latitude, $longitude, $latitude]
         )
-            ->where('status', '=', 'APPROVED')
+            ->where('status', 'APPROVED')
             ->where('id', '<>', $id)
             ->where('end_date', '>', Carbon::now())
             ->orderBy('distance')
@@ -55,7 +55,7 @@ class EventHelper
             array_push($countries, $country->country_iso);
         }
 
-        $events = Event::where('status', '=', 'PENDING')
+        $events = Event::where('status', 'PENDING')
             ->distinct()
             ->select('country_iso')
             ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
@@ -67,7 +67,7 @@ class EventHelper
 
     public static function getReportedEventsWithoutCertificates()
     {
-        $events = Event::where('status', '=', 'APPROVED')
+        $events = Event::where('status', 'APPROVED')
             ->whereNotNull('reported_at')
             ->whereNull('certificate_url')
             ->whereNotNull('approved_by')
@@ -81,7 +81,7 @@ class EventHelper
     private static function getPendingEventsForCountry($country)
     {
 
-        $events = Event::where('status', '=', 'PENDING')
+        $events = Event::where('status', 'PENDING')
             ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
             ->where('country_iso', $country)
             ->get();
@@ -92,7 +92,7 @@ class EventHelper
     private static function getPendingEventsCountForCountry($country)
     {
 
-        $count = Event::where('status', '=', 'PENDING')
+        $count = Event::where('status', 'PENDING')
             ->select('country_iso')
             ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
             ->where('country_iso', $country)
@@ -103,7 +103,7 @@ class EventHelper
 
     private static function getEventsQuery()
     {
-        return Event::where('status', '=', 'PENDING')
+        return Event::where('status', 'PENDING')
             ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1));
     }
 
@@ -140,7 +140,7 @@ class EventHelper
             return self::getEventsQuery()->where('id', '>', $event->id)->limit(1)->first();
         } else {
             //Get pending events count for specific country
-            return Event::where('status', '=', 'PENDING')
+            return Event::where('status', 'PENDING')
                 ->where('country_iso', $country)
                 ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
                 ->where('id', '<>', $event->id)->limit(1)->first();
