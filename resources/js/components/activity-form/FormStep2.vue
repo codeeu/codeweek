@@ -23,10 +23,11 @@
       <InputField
         v-model="formValues.participants_count"
         type="number"
-        min="1"
+        :min="0"
         required
         name="participants_count"
         placeholder="Enter number"
+        @onChange="handleCorrectCount('participants_count')"
       />
 
       <template #end>
@@ -42,27 +43,34 @@
               <InputField
                 v-model="formValues.males_count"
                 type="number"
-                min="1"
+                :min="0"
+                :max="formValues.participants_count"
                 name="males_count"
                 placeholder="Enter number"
+                @onChange="handleCorrectCount('males_count')"
               />
             </FieldWrapper>
             <FieldWrapper label="Females" name="females_count" :errors="errors">
               <InputField
                 v-model="formValues.females_count"
                 type="number"
-                min="1"
+                :min="0"
+                :max="formValues.participants_count"
                 name="females_count"
                 placeholder="Enter number"
+                @onChange="handleCorrectCount('females_count')"
               />
             </FieldWrapper>
             <FieldWrapper label="Other" name="other_count" :errors="errors">
               <InputField
                 v-model="formValues.other_count"
+                disabled
                 type="number"
-                min="1"
+                :min="0"
+                :max="formValues.participants_count"
                 name="other_count"
                 placeholder="Enter number"
+                @onChange="handleCorrectCount('other_count')"
               />
             </FieldWrapper>
           </div>
@@ -172,6 +180,7 @@
 </template>
 
 <script>
+import { ref, computed } from 'vue';
 import { useDataOptions } from './mixins.js';
 
 import FieldWrapper from '../form-fields/FieldWrapper.vue';
@@ -202,9 +211,43 @@ export default {
       props.formValues.pictureUrl = data.path;
     };
 
+    const handleCorrectCount = (field) => {
+      const participants_count = Number(
+        props.formValues.participants_count || '0'
+      );
+      const males_count = Number(props.formValues.males_count || '0');
+      const females_count = Number(props.formValues.females_count || '0');
+      const other_count = Number(props.formValues.other_count || '0');
+      if (males_count + females_count > participants_count) {
+        props.formValues.other_count = 0;
+        if (males_count < participants_count) {
+          props.formValues.females_count = null;
+          props.formValues.females_count = participants_count - males_count;
+        } else {
+          props.formValues.males_count = null;
+          props.formValues.males_count = participants_count;
+          props.formValues.females_count = null;
+          props.formValues.females_count = 0;
+        }
+      }
+      props.formValues.other_count = Math.max(
+        participants_count - (males_count + females_count),
+        0
+      );
+      console.log(
+        field,
+        participants_count,
+        males_count,
+        females_count,
+        other_count,
+        Math.max(participants_count - (males_count + females_count), 0)
+      );
+    };
+
     return {
       ageOptions,
       onPictureChange,
+      handleCorrectCount,
     };
   },
 };

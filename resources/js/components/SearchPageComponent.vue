@@ -313,7 +313,9 @@ export default {
     const isLoading = ref(true);
     const mapContainerRef = ref(null);
     const mapInstance = ref(null);
+    const mapMarkerClusterInstance = ref(null);
     const events = ref([]);
+    const mapDataObject = ref({});
     const errors = ref(null);
 
     const emptyFilters = {
@@ -478,12 +480,13 @@ export default {
             } else {
               window.eventsToMap = mapData;
             }
+            mapDataObject.value = mapData;
+            handleAddEventMakers();
           } else if (!mapData) {
             console.warn('⚠️ mapData is null, skipping map update');
           }
 
           setSelectedCountryToCenterMap();
-          handleAddEventMakers();
           isLoading.value = false;
         })
         .catch((error) => {
@@ -522,19 +525,31 @@ export default {
     };
 
     const handleAddEventMakers = () => {
-      if (!mapInstance.value) return;
+      if (!mapInstance.value || !mapMarkerClusterInstance.value) return;
+      const markerList = [];
+      Object.values(mapDataObject.value).forEach((list) => {
+        markerList.push(...list);
+      });
 
+      mapMarkerClusterInstance.value.clearLayers();
       const icon = L.icon({
         iconUrl: 'images/marker-blue.svg',
-        iconSize: [44, 62],
+        iconSize: [33, 41],
         iconAnchor: [22, 62],
         popupAnchor: [0, -60],
       });
-      events.value.map(({ latitude, longitude }) => {
+      markerList.map(({ geoposition }) => {
+        const coordinates = geoposition.split(',');
+        const latitude = parseFloat(coordinates[0]);
+        const longitude = parseFloat(coordinates[1]);
         if (latitude && longitude) {
-          L.marker([latitude, longitude], { icon }).addTo(mapInstance.value);
+          mapMarkerClusterInstance.value.addLayer(
+            L.marker([latitude, longitude], { icon })
+          );
         }
       });
+
+      mapInstance.value.addLayer(mapMarkerClusterInstance.value);
     };
     const handleAddUserLocationMarker = () => {
       navigator.geolocation.getCurrentPosition(
@@ -542,7 +557,7 @@ export default {
           const { latitude, longitude } = position.coords;
           const icon = L.icon({
             iconUrl: '/images/marker-orange.svg',
-            iconSize: [44, 62],
+            iconSize: [33, 41],
             iconAnchor: [22, 62],
             popupAnchor: [0, -60],
           });
@@ -564,6 +579,8 @@ export default {
         zoomOffset: -1,
         zoomControl: false,
       }).addTo(mapInstance.value);
+
+      mapMarkerClusterInstance.value = L.markerClusterGroup();
     };
 
     const handleToggleMapFullScreen = (isFullScreen) => {

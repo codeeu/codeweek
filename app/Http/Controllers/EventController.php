@@ -26,7 +26,7 @@ class EventController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'show', 'my']);
+        $this->middleware('auth')->except(['show', 'my']);
     }
 
     public function my(): View
@@ -48,40 +48,6 @@ class EventController extends Controller
     //        return view('event.myreportable', compact('events'));
     //
     //    }
-
-    /**
-     * Display a listing of the resource.
-     */
-    public function index(Request $request): View
-    {
-        $years = range(Carbon::now()->year, 2014, -1);
-
-        $selectedYear = $request->input('year')
-            ? $request->input('year')
-            : Carbon::now()->year;
-
-        $iso_country_of_user = User::getGeoIPData()->iso_code;
-
-        $ambassadors = User::role('ambassador')
-            ->where('country_iso', '=', $iso_country_of_user)
-            ->get();
-
-        return view('events')->with([
-            'events' => $this->eventsNearMe(),
-            'years' => $years,
-            'selectedYear' => $selectedYear,
-            'countries' => Country::withActualYearEvents(),
-            'current_country_iso' => $iso_country_of_user,
-            'ambassadors' => $ambassadors,
-        ]);
-    }
-
-    private function eventsNearMe()
-    {
-        $geoip = User::getGeoIPData();
-
-        return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
-    }
 
     /**
      * Show the form for creating a new resource.

@@ -119,6 +119,7 @@ export default {
         emit('onChange', newVal);
       } else {
         const newVal = props.returnObject ? value : value[props.idName];
+        emit('update:modelValue', newVal);
         emit('onChange', newVal);
       }
     };
