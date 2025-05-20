@@ -26,6 +26,24 @@
             'link_type' => 'form'
         ],
         [
+            'image' => '/images/webinars/collaboration.png',
+            'title' => 'From Idea to Impact: How to turn Dreams into ICT Success Stories',
+            'description' => "Discover the Girls In Digital webinar, an inspiring Code4Europe initiative empowering girls and women to explore the European programmes ecosystem and pursue careers in tech and innovation.",
+            'date' => '12 May 2025 - 14:00-15:00 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/ijXArs4NZIc',
+            'link_type' => 'video'
+        ],
+        [
+            'image' => '/images/webinars/linda_liukas.png',
+            'title' => 'Code Week Mini Series with Linda Liukas - Building Communities in Computer Science',
+            'description' => "Join Linda Liukas for an inspiring webinar on fostering connection, creativity, and collaboration in tech, with a focus on empowering the next generation of learners.",
+            'date' => '8th May, 18:30 – 19:15 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://www.youtube.com/watch?v=fwiTPbiZuTc&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky&index=1',
+            'link_type' => 'video'
+        ],
+        [
             'image' => '/images/webinars/blue_visual.jpg',
             'title' => 'Beyond Code: Empowering generations of innovators',
             'description' => "Explore the impact of diversity in STEM and how inclusivity drives innovation, with practical examples and strategies.",
