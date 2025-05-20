@@ -110,6 +110,7 @@ Route::permanentRedirect('/view/1221652/blog/careers-linda-liukas/', '/blog/care
 Route::permanentRedirect('/view/1221652/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
 Route::permanentRedirect('/view/1221912/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
 Route::permanentRedirect('/view/1221912/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
+Route::permanentRedirect('/view/1221651/challenges/careers-as-constellations', '/challenges/careers-as-constellations');
 Route::get('/search/{term}', function ($term) {
     if (strtolower($term) === 'e twinning') {
         return redirect('/search', 301);
@@ -118,6 +119,23 @@ Route::get('/search/{term}', function ($term) {
     // Optionally, handle other terms or return 404
     abort(404);
 });
+Route::get('/{term}', function ($term) {
+    if (strtolower($term) === 'e twinning') {
+        return redirect('/search', 301);
+    }
+
+    // Optional: handle unknown terms
+    abort(404);
+});
+Route::permanentRedirect('/blog/codeeu-monday-and-tuesday-thousands-of-schools/1Lg7vYO/', '/blog/codeeu-monday-and-tuesday-thousands-of-schools/');
+Route::permanentRedirect('/2021/challenges/dance/', '/challenges/dance/');
+Route::permanentRedirect('/2021/challenges', '/challenges');
+Route::permanentRedirect('/blog/submit', '/blog');
+Route::permanentRedirect('/blog/top-programming-languages-for-kids-of-any-language/Introduction%20to%20Scratch', '/blog/top-programming-languages-for-kids-of-any-language/');
+Route::permanentRedirect('/blog/top-programming-languages-for-kids-of-any-language/ScratchEd', '/blog/top-programming-languages-for-kids-of-any-language/');
+Route::permanentRedirect('/hackathons/slovenia', '/hackathons');
+Route::permanentRedirect('/hackathons/greece', '/hackathons');
+Route::permanentRedirect('/blog/generation-code-born-at-the-library/\Users\Sara%20Petti\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\61RWWU83\coderdojo.com', '/blog/generation-code-born-at-the-library/');
 //redirects end
 //Auth::loginUsingId(268354);
 
