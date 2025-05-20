@@ -104,6 +104,12 @@ Route::permanentRedirect('/programming-a-pedometer-to-bring-coding-to?is_related
 Route::get('/podcast/{slug}', function ($slug) {
     return redirect("/podcasts/{$slug}", 301);
 });
+Route::permanentRedirect('/view/1221651/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
+Route::permanentRedirect('/challenges/careers-as-constellations/', '/blog/careers-as-constellations/');
+Route::permanentRedirect('/view/1221652/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
+Route::permanentRedirect('/view/1221652/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
+Route::permanentRedirect('/view/1221912/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
+Route::permanentRedirect('/view/1221912/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
 //redirects end
 //Auth::loginUsingId(268354);
 
