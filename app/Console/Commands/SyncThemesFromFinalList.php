@@ -164,7 +164,20 @@ class SyncThemesFromFinalList extends Command
                 }
             }
 
-            $uniqueRows = collect($mappedRows)
+            $validatedRows = [];
+
+            foreach (array_chunk($mappedRows, 500) as $chunk) {
+                $eventIds = array_column($chunk, 'event_id');
+
+                $existingIds = DB::table('events')
+                    ->whereIn('id', $eventIds)
+                    ->pluck('id')
+                    ->toArray();
+
+                $validatedRows = array_merge($validatedRows, array_filter($chunk, fn($row) => in_array($row['event_id'], $existingIds)));
+            }
+
+            $uniqueRows = collect($validatedRows)
                 ->unique(fn($row) => $row['event_id'] . '-' . $row['theme_id'])
                 ->values()
                 ->all();
@@ -212,6 +225,9 @@ class SyncThemesFromFinalList extends Command
         }
 
         try {
+            config(['database.connections.mysql.strict' => false]);
+            DB::reconnect();
+
             DB::beginTransaction();
             DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
@@ -229,10 +245,15 @@ class SyncThemesFromFinalList extends Command
             DB::beginTransaction();
             DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
-            DB::table('event_theme')->insert($data);
+            foreach (array_chunk($data, 1000) as $chunk) {
+                DB::table('event_theme')->insert($chunk);
+            }
 
             DB::statement('SET FOREIGN_KEY_CHECKS=1');
             DB::commit();
+
+            config(['database.connections.mysql.strict' => true]);
+            DB::reconnect();
 
             $this->info('Restored event_theme successfully: ' . count($data) . ' rows.');
         } catch (\Throwable $e) {
