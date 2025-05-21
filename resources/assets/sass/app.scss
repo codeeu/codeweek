@@ -237,4 +237,16 @@ body:not(.new-layout) {
   }
 }
 
+.marker-popup-content {
+  .marker-popup-description {
+    max-height: 200px;
+    overflow: auto;
+    p {
+      font-size: 14px;
+      padding: 0;
+      margin: 4px 0;
+    }
+  }
+}
+
 @import "pages/cookie";
