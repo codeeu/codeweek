@@ -20,7 +20,7 @@
             'image' => '/images/webinars/Linda_Liukas.jpg',
             'title' => 'Code Week Mini Series with Linda Liukas - Building Communities in Computer Science',
             'description' => "Join Linda Liukas for an inspiring webinar on fostering connection, creativity, and collaboration in tech, with a focus on empowering the next generation of learners.",
-            'date' => '8th May 2025 - 18.30 - 19.15 CET',
+            'date' => '8 May 2025 - 18.30 - 19.15 CET',
             'label' => 'Past Webinar',
             'link' => 'https://www.youtube.com/watch?v=fwiTPbiZuTc&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky&index=1',
             'link_type' => 'video'
