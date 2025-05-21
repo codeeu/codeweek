@@ -14,6 +14,8 @@
     :close-on-select="!multiple"
     :clear-on-select="!multiple"
     :preserve-search="true"
+    :allow-empty="allowEmpty"
+    :deselect-label="deselectLabel"
     :options="options"
     @update:modelValue="onUpdateModalValue"
   >
@@ -84,7 +86,9 @@ export default {
   props: {
     multiple: Boolean,
     returnObject: Boolean,
+    allowEmpty: Boolean,
     modelValue: [Array, String],
+    deselectLabel: String,
     options: Array,
     idName: {
       type: String,

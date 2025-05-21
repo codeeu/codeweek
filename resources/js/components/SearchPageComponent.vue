@@ -64,7 +64,7 @@
     <div class="codeweek-container py-10">
       <div class="flex w-full">
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 items-end gap-4 w-full"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-end gap-4 w-full"
         >
           <FieldWrapper
             class="lg:col-span-2"
@@ -74,6 +74,19 @@
             <InputField
               v-model="filters.query"
               placeholder="E.g tools assessment in computing"
+            />
+          </FieldWrapper>
+
+          <FieldWrapper horizontal label="Year">
+            <SelectField
+              class="large-text"
+              return-object
+              theme="old"
+              placeholder="Select year"
+              v-model="filters.year"
+              :deselect-label="''"
+              :allow-empty="false"
+              :options="yearOptions"
             />
           </FieldWrapper>
 
@@ -103,7 +116,7 @@
           </FieldWrapper>
 
           <button
-            class="bg-[#F95C22] rounded-full py-3 px-20 font-['Blinker'] hover:bg-hover-orange duration-300 mt-2"
+            class="bg-[#F95C22] rounded-full py-3 px-20 font-['Blinker'] hover:bg-hover-orange duration-300 mt-2 sm:col-span-2 lg:col-span-1"
             @click="onSubmit()"
           >
             <span
@@ -297,6 +310,7 @@ export default {
     prpSelectedCountry: Array,
 
     name: String,
+    years: Array,
     countrieslist: Array,
     audienceslist: Array,
     themeslist: Array,
@@ -333,6 +347,7 @@ export default {
     const filters = ref({
       ...emptyFilters,
       query: props.prpQuery || '',
+      year: { id: new Date().getFullYear(), name: new Date().getFullYear() },
       countries: props.prpSelectedCountry || [],
     });
 
@@ -348,6 +363,10 @@ export default {
       to: null,
       total: 0,
     });
+
+    const yearOptions = computed(() =>
+      props.years.map((id) => ({ id, name: id }))
+    );
 
     const languageOptions = computed(() =>
       Object.entries(props.languagesObject).map(([key, value]) => ({
@@ -419,6 +438,7 @@ export default {
 
       const requestData = {
         ...filters.value,
+        year: filters.value.year?.id,
         start_date: filters.value.start_date
           ? new Date(filters.value.start_date).toISOString().slice(0, 10)
           : '',
@@ -481,7 +501,7 @@ export default {
               window.eventsToMap = mapData;
             }
             mapDataObject.value = mapData;
-            handleAddEventMakers();
+            handleAddMarkerLayer();
           } else if (!mapData) {
             console.warn('⚠️ mapData is null, skipping map update');
           }
@@ -498,11 +518,8 @@ export default {
 
     const setSelectedCountryToCenterMap = () => {
       if (!mapInstance.value) return;
-      let centerInfo = {
-        latitude: 51,
-        longitude: 4,
-        zoom: 4,
-      };
+      let centerInfo = { latitude: 51, longitude: 4, zoom: 4 };
+
       if (filters.value.countries?.length === 1) {
         const { latitude, longitude } = filters.value.countries[0] || {};
         if (latitude && longitude) {
@@ -524,49 +541,95 @@ export default {
       return text;
     };
 
-    const handleAddEventMakers = () => {
-      if (!mapInstance.value || !mapMarkerClusterInstance.value) return;
-      const markerList = [];
-      Object.values(mapDataObject.value).forEach((list) => {
-        markerList.push(...list);
-      });
+    var handleClickMarker = async (e) => {
+      const id = e.target.options.id;
 
-      mapMarkerClusterInstance.value.clearLayers();
-      const icon = L.icon({
-        iconUrl: 'images/marker-blue.svg',
-        iconSize: [33, 41],
-        iconAnchor: [22, 62],
-        popupAnchor: [0, -60],
-      });
-      markerList.map(({ geoposition }) => {
-        const coordinates = geoposition.split(',');
-        const latitude = parseFloat(coordinates[0]);
-        const longitude = parseFloat(coordinates[1]);
-        if (latitude && longitude) {
-          mapMarkerClusterInstance.value.addLayer(
-            L.marker([latitude, longitude], { icon })
-          );
-        }
-      });
+      try {
+        const { data } = await axios.get(`/api/event/detail?id=${id}`);
+        const event = data.data;
+        console.log('event/detail', event);
 
-      mapInstance.value.addLayer(mapMarkerClusterInstance.value);
+        const content = `
+          <div class="marker-popup-content" style="font-family: Blinker">
+            <h4 style="margin-bottom: 16px; font-size: 16px; font-family: Montserrat; font-weight: 500; color: #1C4DA1;">
+              <a class="map-marker" href="${event.path}">${event.title}</a>
+            </h4>
+            <div style="display:flex;align-items: center; gap: 16px">
+              <img class="marker-buble-img" src="${event.picture}" style="width:100px;height:100px; border-radius: 4px;" />
+              <div class="marker-popup-description">
+                <p style="overflow:hidden; padding: 0; margin: 0; font-size: 14px;">${event.description}</p>
+              </div>
+            </div>
+          </div>
+        `;
+
+        const popup = L.popup({ maxWidth: 600 }).setContent(content);
+        e.target.bindPopup(popup).openPopup();
+      } catch (error) {
+        console.error('Can NOT load event', error);
+      }
     };
-    const handleAddUserLocationMarker = () => {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          const icon = L.icon({
-            iconUrl: '/images/marker-orange.svg',
-            iconSize: [33, 41],
-            iconAnchor: [22, 62],
-            popupAnchor: [0, -60],
-          });
-          L.marker([latitude, longitude], { icon }).addTo(mapInstance.value);
-        },
-        (err) => {
-          console.error('Geolocation error:', err);
+
+    const handleAddMarkerLayer = () => {
+      if (!mapInstance.value) return;
+
+      try {
+        if (mapMarkerClusterInstance.value) {
+          // Clear layer will take time, let try without [clearLayers] for now
+          // mapMarkerClusterInstance.value.clearLayers();
+          mapInstance.value.removeLayer(mapMarkerClusterInstance.value);
+          mapMarkerClusterInstance.value = null;
         }
-      );
+        const clusterGroup = L.markerClusterGroup();
+
+        const markerDataList = [];
+        Object.values(mapDataObject.value).forEach((list) => {
+          markerDataList.push(...list);
+        });
+
+        console.group('Started add markers', markerDataList.length);
+
+        markerDataList.map(({ id, geoposition }, index) => {
+          if (index % 10000 === 0) {
+            console.log('Adding markers', index);
+          }
+          const coordinates = geoposition.split(',');
+          const latitude = parseFloat(coordinates[0]);
+          const longitude = parseFloat(coordinates[1]);
+          if (latitude && longitude) {
+            const marker = L.marker([latitude, longitude], { id });
+            marker.on('click', handleClickMarker);
+            clusterGroup.addLayer(marker);
+          }
+        });
+        console.log('Done add markers', markerDataList.length);
+        console.groupEnd();
+
+        mapMarkerClusterInstance.value = clusterGroup;
+        mapInstance.value.addLayer(clusterGroup);
+      } catch (error) {
+        console.log('Add marker error', error);
+      }
+    };
+
+    const handleAddUserLocationMarker = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            const icon = L.icon({
+              iconUrl: '/images/marker-orange.svg',
+              iconSize: [33, 41],
+              iconAnchor: [22, 62],
+              popupAnchor: [0, -60],
+            });
+            L.marker([latitude, longitude], { icon }).addTo(mapInstance.value);
+          },
+          (err) => {
+            console.error('Geolocation error:', err);
+          }
+        );
+      }
     };
 
     const handleInitMap = () => {
@@ -579,8 +642,6 @@ export default {
         zoomOffset: -1,
         zoomControl: false,
       }).addTo(mapInstance.value);
-
-      mapMarkerClusterInstance.value = L.markerClusterGroup();
     };
 
     const handleToggleMapFullScreen = (isFullScreen) => {
@@ -599,18 +660,18 @@ export default {
 
     onMounted(() => {
       onSubmit();
-      setSelectedCountryToCenterMap();
 
       document.addEventListener('leaflet-ready', () => {
         handleInitMap();
         setSelectedCountryToCenterMap();
-        handleAddEventMakers();
+        handleAddMarkerLayer();
         handleAddUserLocationMarker();
       });
     });
 
     return {
       mapContainerRef,
+      yearOptions,
       languageOptions,
       activityFormatOptions,
       activityTypeOptions,
