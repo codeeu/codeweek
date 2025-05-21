@@ -29,13 +29,13 @@
             'image' => '/images/webinars/collaboration.png',
             'title' => 'From Idea to Impact: How to turn Dreams into ICT Success Stories',
             'description' => "Discover the Girls In Digital webinar, an inspiring Code4Europe initiative empowering girls and women to explore the European programmes ecosystem and pursue careers in tech and innovation.",
-            'date' => '12 May 2025 - 14:00-15:00 CET',
+            'date' => '12 May 2025 - 14:00 - 15:00 CET',
             'label' => 'Past Webinar',
             'link' => 'https://youtu.be/ijXArs4NZIc',
             'link_type' => 'video'
         ],
         [
-            'image' => '/images/webinars/linda_liukas.png',
+            'image' => '/images/webinars/Linda_Liukas.jpg',
             'title' => 'Code Week Mini Series with Linda Liukas - Building Communities in Computer Science',
             'description' => "Join Linda Liukas for an inspiring webinar on fostering connection, creativity, and collaboration in tech, with a focus on empowering the next generation of learners.",
             'date' => '8th May, 18:30 – 19:15 CET',
