@@ -385,8 +385,8 @@ class User extends Authenticatable implements MustVerifyEmail
     {
 
         return DB::table('events')
-            ->where('creator_id', '=', $this->id)
-            ->where('status', "=", "APPROVED")
+            ->where('creator_id', $this->id)
+            ->where('status', "APPROVED")
             ->whereNull('deleted_at')
             ->whereYear('end_date', '=', $edition)
             ->count();
@@ -397,7 +397,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
         $query = DB::table('events')
             ->where('creator_id', '=', $this->id)
-            ->where('status', "=", "APPROVED")
+            ->where('status', "APPROVED")
             ->whereNotNull('reported_at')
             ->whereNull('deleted_at');
 
@@ -429,7 +429,7 @@ class User extends Authenticatable implements MustVerifyEmail
 //            Log::info("$nameInTag - $edition not in cache");
 
         $taggedActivities = $this->taggedActivities()
-            ->where('status', '=', 'APPROVED');
+            ->where('status', 'APPROVED');
 
         if (!is_null($edition)) {
             $taggedActivities->whereYear('events.created_at', '=', $edition);

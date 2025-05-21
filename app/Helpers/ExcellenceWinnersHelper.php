@@ -33,7 +33,7 @@ class ExcellenceWinnersHelper
 
         $codes = Event::select(DB::raw('sum(participants_count) as total_participants, codeweek_for_all_participation_code'))
             ->where([
-                ['status', 'like', 'APPROVED'],
+                ['status', 'APPROVED'],
             ])
             ->whereYear('end_date', '=', $edition)
             ->groupBy('codeweek_for_all_participation_code')
@@ -52,7 +52,7 @@ class ExcellenceWinnersHelper
 
         $codes = Event::select(DB::raw('count(DISTINCT creator_id) as total_creators, sum(participants_count) as total_participants, codeweek_for_all_participation_code'))
             ->where([
-                ['status', 'like', 'APPROVED'],
+                ['status', 'APPROVED'],
             ])
             ->whereYear('end_date', '=', $edition)
             ->groupBy('codeweek_for_all_participation_code')
@@ -72,7 +72,7 @@ class ExcellenceWinnersHelper
 
         $codes = Event::select(DB::raw('count(DISTINCT country_iso) as total_countries, sum(participants_count) as total_participants,codeweek_for_all_participation_code'))
             ->where([
-                ['status', 'like', 'APPROVED'],
+                ['status', 'APPROVED'],
             ])
             ->whereYear('end_date', '=', $edition)
             ->groupBy('codeweek_for_all_participation_code')
