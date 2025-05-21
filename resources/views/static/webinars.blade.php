@@ -8,28 +8,10 @@
 
     $results = [
         [
-            'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'NuGamers: How to foster gender inclusive gaming education?',
-            'description' => "Explore how to foster gender-inclusive gaming education in this CodeWeek 2025 webinar, addressing gender biases in the gaming industry.",
-            'date' => '24 March 2025 - upcoming 14.00 - 14.50 CET',
-            'label' => 'Past Webinar',
-            'link' => 'https://events.teams.microsoft.com/event/47c8f739-183d-48a1-acae-de3d28cd3b7d@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
-            'link_type' => 'form'
-        ],
-        [
-            'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'Empower, Inspire & Celebrate: Girls in Digital Week 2025',
-            'description' => "Explore Girls in Digital, an EU Code Week initiative empowering young Europeans to embrace STE(A)M fields and drive innovation.",
-            'date' => '18 March 2025 – upcoming from 16.00 - 16.45 CET',
-            'label' => 'Past Webinar',
-            'link' => 'https://events.teams.microsoft.com/event/964e1126-8038-43bd-8cae-fa000e261e62@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
-            'link_type' => 'form'
-        ],
-        [
             'image' => '/images/webinars/collaboration.png',
             'title' => 'From Idea to Impact: How to turn Dreams into ICT Success Stories',
             'description' => "Discover the Girls In Digital webinar, an inspiring Code4Europe initiative empowering girls and women to explore the European programmes ecosystem and pursue careers in tech and innovation.",
-            'date' => '12 May 2025 - 14:00 - 15:00 CET',
+            'date' => '12 May 2025 - 14.00 - 15.00 CET',
             'label' => 'Past Webinar',
             'link' => 'https://youtu.be/ijXArs4NZIc',
             'link_type' => 'video'
@@ -38,10 +20,28 @@
             'image' => '/images/webinars/Linda_Liukas.jpg',
             'title' => 'Code Week Mini Series with Linda Liukas - Building Communities in Computer Science',
             'description' => "Join Linda Liukas for an inspiring webinar on fostering connection, creativity, and collaboration in tech, with a focus on empowering the next generation of learners.",
-            'date' => '8th May, 18:30 – 19:15 CET',
+            'date' => '8th May 2025 - 18.30 - 19.15 CET',
             'label' => 'Past Webinar',
             'link' => 'https://www.youtube.com/watch?v=fwiTPbiZuTc&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky&index=1',
             'link_type' => 'video'
+        ],
+        [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'NuGamers: How to foster gender inclusive gaming education?',
+            'description' => "Explore how to foster gender-inclusive gaming education in this CodeWeek 2025 webinar, addressing gender biases in the gaming industry.",
+            'date' => '24 March 2025 - 14.00 - 14.50 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://events.teams.microsoft.com/event/47c8f739-183d-48a1-acae-de3d28cd3b7d@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
+            'link_type' => 'form'
+        ],
+        [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'Empower, Inspire & Celebrate: Girls in Digital Week 2025',
+            'description' => "Explore Girls in Digital, an EU Code Week initiative empowering young Europeans to embrace STE(A)M fields and drive innovation.",
+            'date' => '18 March 2025 - 16.00 - 16.45 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://events.teams.microsoft.com/event/964e1126-8038-43bd-8cae-fa000e261e62@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
+            'link_type' => 'form'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
