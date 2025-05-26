@@ -18,6 +18,7 @@ import ReportEvent from "./components/ReportEvent.vue";
 import SearchPageComponent from "./components/SearchPageComponent.vue";
 import MatchMakingToolForm from "./components/MatchMakingToolForm.vue";
 import ToolCard from "./components/ToolCard.vue";
+import ToolDetailCard from "./components/ToolDetailCard.vue";
 
 // import { createI18n } from 'vue-i18n';
 // import Locale from './vue-i18n-locales.generated';
@@ -56,4 +57,5 @@ app.component('AvatarForm', AvatarForm);
 app.component('PartnerGallery', PartnerGallery);
 app.component('MatchMakingToolForm', MatchMakingToolForm);
 app.component('ToolCard', ToolCard);
+app.component('ToolDetailCard', ToolDetailCard);
 app.mount("#app");

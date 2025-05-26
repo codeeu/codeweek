@@ -41,8 +41,8 @@ class MatchMakingToolController extends Controller
         return view('matchmaking-tool.index', compact(['query', 'selected_languages', 'selected_locations', 'selected_types', 'selected_topics', 'languages', 'locations', 'types', 'topics']));
     }
 
-    public function show(Request $request, string $id): View
+    public function show(Request $request, string $tool): View
     {
-        return view('matchmaking-tool.show');
+        return view('matchmaking-tool.show', ['tool' => $tool]);
     }
 }

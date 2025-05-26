@@ -1,5 +1,7 @@
 <template>
-  <div class="codeweek-matchmakingtool-component font-['Blinker'] bg-light-blue">
+  <div
+    class="codeweek-matchmakingtool-component font-['Blinker'] bg-light-blue"
+  >
     <div class="codeweek-container py-10">
       <div
         class="max-md:fixed left-0 top-[125px] z-[100] flex-col items-center w-full max-md:p-6 max-md:h-[calc(100dvh-125px)] max-md:overflow-auto max-md:bg-white duration-300"
@@ -14,9 +16,7 @@
             <img class="w-6 h-6" src="/images/close_menu_icon.svg" />
           </button>
         </div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
           <div>
             <label class="block text-[16px] leading-5 text-slate-500 mb-2">
               Support type
@@ -60,7 +60,9 @@
                   {{ values.length > 1 ? 'types' : 'type' }}
                 </div>
               </template>
-              <pre class="language-json"><code>{{ selectedLanguages }}</code></pre>
+              <pre class="language-json">
+                <code>{{ selectedLanguages }}</code>
+            </pre>
             </multiselect>
           </div>
 
@@ -84,7 +86,9 @@
               @select="onSubmit"
               @remove="onSubmit"
             >
-              <pre class="language-json"><code>{{ selectedLocations }}</code></pre>
+              <pre class="language-json">
+                <code>{{ selectedLocations }}</code>
+              </pre>
               <template #selection="{ values }">
                 <div
                   v-if="values.length > 0"
@@ -116,9 +120,7 @@
               @select="onSubmit"
               @remove="onSubmit"
             >
-              <pre
-                class="language-json"
-              ><code>{{ selectedTypes }}</code></pre>
+              <pre class="language-json"><code>{{ selectedTypes }}</code></pre>
               <template #selection="{ values }">
                 <div
                   v-if="values.length > 0"
@@ -132,9 +134,15 @@
           </div>
 
           <div>
-            <label class="flex items-center text-[16px] leading-5 text-slate-500 mb-2">
+            <label
+              class="flex items-center text-[16px] leading-5 text-slate-500 mb-2"
+            >
               <span>Topics</span>
-              <div class="w-5 h-5 bg-dark-blue rounded-full flex justify-center items-center text-white ml-1.5 cursor-pointer text-xs">i</div>
+              <div
+                class="w-5 h-5 bg-dark-blue rounded-full flex justify-center items-center text-white ml-1.5 cursor-pointer text-xs"
+              >
+                i
+              </div>
             </label>
             <multiselect
               v-model="selectedTopics"
@@ -151,9 +159,7 @@
               @select="onSubmit"
               @remove="onSubmit"
             >
-              <pre
-                class="language-json"
-              ><code>{{ selectedTopics }}</code></pre>
+              <pre class="language-json"><code>{{ selectedTopics }}</code></pre>
               <template #selection="{ values }">
                 <div
                   v-if="values.length > 0"
@@ -241,7 +247,9 @@
 
       <div class="bg-yellow-50 pb-20">
         <div class="relative z-10 codeweek-container">
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10"
+          >
             <template v-for="tool in tools" :key="tool.id">
               <tool-card :tool="tool"></tool-card>
             </template>
@@ -268,6 +276,7 @@ import Pagination from './Pagination.vue';
 import useClipboard from 'vue-clipboard3';
 import axios from 'axios';
 import { trans } from 'laravel-vue-i18n';
+import { individuals, organisations } from './match-makingtool-mock-data.js';
 
 export default {
   components: { ToolCard, Multiselect, Pagination },
@@ -380,25 +389,40 @@ export default {
       if (!isPagination) {
         pagination.current_page = 1;
       }
-      tools.value = Array(9).fill('').map((_, index) => {
-        return {
-          id: index,
-          name: 'First/last name Profession',
+
+      const list = [];
+
+      organisations.forEach((item) => {
+        list.push({
+          id: `organisation-${item.id}`,
+          name: item.organisation_name,
+          location: item.country,
+          description: item.organisation_mission,
           types: [
             { title: 'Online & In-person', highlight: true },
             { title: 'Ongoing availability' },
           ],
-          locations: [
-            {
-              name: 'Location'
-            }
-          ],
-          description: 'Providing fields of expertise and best practice (if any) max 5-6 lines of text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
-          thumbnail: 'https://s3-eu-west-1.amazonaws.com/codeweek-resources/dihQL7oz7ps1Xm4Ne27JDuknEkmZmEqqlcb3qJ5x.jpg',
-          source: 'profession'
-        };
+          thumbnail:
+            'https://s3-eu-west-1.amazonaws.com/codeweek-resources/dihQL7oz7ps1Xm4Ne27JDuknEkmZmEqqlcb3qJ5x.jpg',
+        });
       });
-      // TODO :: add post logic
+
+      individuals.forEach((item) => {
+        list.push({
+          id: `individual-${item.id}`,
+          name: `${item.first_name || ''} ${item.last_name}`.trim(),
+          location: item.location,
+          description: item.description,
+          types: [
+            { title: 'Online & In-person', highlight: true },
+            { title: 'Ongoing availability' },
+          ],
+          thumbnail:
+            'https://s3-eu-west-1.amazonaws.com/codeweek-resources/dihQL7oz7ps1Xm4Ne27JDuknEkmZmEqqlcb3qJ5x.jpg',
+        });
+      });
+
+      tools.value = list;
     };
 
     const customLabel = (obj, label) => {
