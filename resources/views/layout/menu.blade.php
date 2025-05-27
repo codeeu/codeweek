@@ -83,6 +83,7 @@
                       <li><a class="cookweek-link hover-underline" href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
+                      <li><a class="cookweek-link hover-underline" href="{{route('guide')}}">Guide on Activities</a></li>
                   </ul>
               </li>
 
