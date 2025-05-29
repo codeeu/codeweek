@@ -24,20 +24,21 @@
     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
         @if($event->language)
 
-            <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium leading-4 bg-indigo-100 text-indigo-800">
-  {{ __("base.languages.{$event->language}") }}
-  <button type="button" class="flex-shrink-0 ml-2 inline-flex text-indigo-500 focus:outline-none focus:text-indigo-700"
-          aria-label="Remove small badge" wire:click="clearLanguage()">
-    <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
-      <path stroke-linecap="round" stroke-width="1.5" d="M1 1l6 6m0-6L1 7"/>
-    </svg>
-  </button>
-</span>
+            @foreach($event->languages as $language)
+                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium leading-4 bg-indigo-100 text-indigo-800">
+                    {{ __("base.languages.{$language}") }}
+                    <button type="button" class="flex-shrink-0 ml-2 inline-flex text-indigo-500 focus:outline-none focus:text-indigo-700" aria-label="Remove small badge" wire:click="clearLanguage()">
+                        <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
+                            <path stroke-linecap="round" stroke-width="1.5" d="M1 1l6 6m0-6L1 7"/>
+                        </svg>
+                    </button>
+                </span>
 
-            <div class="text-sm leading-5 text-gray-500">
+                <div class="text-sm leading-5 text-gray-500">
 
 
-            </div>
+                </div>
+            @endforeach
         @else
             <div>
 

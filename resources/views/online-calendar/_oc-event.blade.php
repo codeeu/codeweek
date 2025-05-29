@@ -20,7 +20,15 @@
 
         <div class="text-sm leading-5 text-gray-900">{{$countryNames[$event->country_iso]}}</div>
 
-        <div class="text-sm leading-5 text-gray-500">{{$event->language ?  __("base.languages.{$event->language}") : "N/A"}}</div>
+        @if($event->language)
+            @foreach($event->languages as $language)
+                <div class="text-sm leading-5 text-gray-500">
+                    {{ __("base.languages.{$language}") }}
+                </div>
+            @endforeach
+        @else
+            <div class="text-sm leading-5 text-gray-500">N/A</div>
+        @endif
     </td>
     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-center">
               <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">

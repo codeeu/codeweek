@@ -29,6 +29,7 @@ class EventResource extends JsonResource
             'event_url' => $this->event_url,
             'contact_person' => $this->contact_person,
             'language' => $this->language,
+            'languages' => $this->languages,
             'imported_from_german_feeds' => $this->imported(),
             'codeweek_for_all_participation_code' => $this->codeweek_for_all_participation_code,
             'themes' => ThemeResource::collection($this->themes),

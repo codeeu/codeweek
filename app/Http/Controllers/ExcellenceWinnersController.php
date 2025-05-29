@@ -35,14 +35,14 @@ class ExcellenceWinnersController extends Controller
         $details = ExcellenceWinnersHelper::query($edition, false);
 
         $total_events = DB::table('events')
-            ->where('status', '=', 'APPROVED')
+            ->where('status', 'APPROVED')
             //->where('codeweek_for_all_participation_code', '<>', 'cw19-apple-eu')
             ->whereYear('end_date', '=', $edition)
             ->whereNull('deleted_at')
             ->count();
 
         $total_reported = DB::table('events')
-            ->where('status', '=', 'APPROVED')
+            ->where('status', 'APPROVED')
             ->whereNotNull('reported_at')
             ->whereNull('deleted_at')
             ->whereYear('end_date', '=', $edition)

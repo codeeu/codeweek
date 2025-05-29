@@ -68,4 +68,19 @@ class EventObserver
     {
         //
     }
+
+    /**
+     * Handle the Event "saving" event.
+     *
+     * @param  \App\Models\Event  $event
+     * @return void
+     */
+    public function saving(Event $event)
+    {
+        if (isset($event->language)) {
+            if (is_array($event->language)) {
+                $event->language = implode(',', array_filter($event->language));
+            }
+        }
+    }
 }
