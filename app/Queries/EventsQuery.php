@@ -76,7 +76,7 @@ class EventsQuery
         if (!empty($request['ages']) && is_string($request['ages'])) {
             $request['ages'] = explode(',', $request['ages']);
         }
-
+        
         $event = Event::create($request->toArray());
 
         if (! empty($request['tags'])) {

@@ -10,7 +10,7 @@
     />
 
     <div
-      class="h-8 w-8 border-2 bg-white flex items-center justify-center cursor-pointer border-dark-blue-200 rounded-lg"
+      class="flex-shrink-0 h-8 w-8 border-2 bg-white flex items-center justify-center cursor-pointer border-dark-blue-200 rounded-lg"
       :for="id"
     >
       <svg

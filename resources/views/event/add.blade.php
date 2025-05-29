@@ -2,7 +2,7 @@
 
 @php
     $list = [
-        (object) ['label' => 'Activities & Events', 'href' => '/'],
+        (object) ['label' => 'Activities & Events', 'href' => '/events'],
         (object) ['label' => 'Add activity', 'href' => ''],
     ];
 @endphp
@@ -24,11 +24,6 @@
                                 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 Add your Codeweek activity
                             </h2>
-                            <p
-                                class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
-                                illum dolore eu feugiat nulla facilisis at vero.
-                            </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                         <img class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden" loading="lazy"
@@ -67,13 +62,5 @@
             "width": "422",
             "custom": ["/js/hideMenuMap.js"]
         }
-    </script>
-
-    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
-
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
-    <script>
-        document.dispatchEvent(new CustomEvent('tinymce-ready'));
     </script>
 @endpush

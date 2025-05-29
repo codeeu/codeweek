@@ -103,6 +103,7 @@
         <date-time
           name="start_date"
           :placeholder="$t('event.start.label')"
+          :flow="['calendar', 'time']"
           :value="formValues.start_date"
           @onChange="formValues.start_date = $event"
         ></date-time>
@@ -112,6 +113,7 @@
         <date-time
           name="end_date"
           :placeholder="$t('event.end.label')"
+          :flow="['calendar', 'time']"
           :value="formValues.end_date"
           @onChange="formValues.end_date = $event"
         ></date-time>
@@ -130,13 +132,13 @@
           v-model="formValues.is_recurring_event_local"
           name="is_recurring_event_local"
           value="true"
-          label="True"
+          label="Yes"
         />
         <RadioField
           v-model="formValues.is_recurring_event_local"
           name="is_recurring_event_local"
           value="false"
-          label="False"
+          label="No"
         />
       </div>
 
@@ -148,7 +150,7 @@
           How frequently?
         </label>
 
-        <div class="flex items-center gap-8">
+        <div class="flex items-center flex-wrap gap-8">
           <RadioField
             v-model="formValues.recurring_event"
             name="recurring_event"
@@ -203,17 +205,7 @@
       name="description"
       :errors="errors"
     >
-      <div class="custom-tinymce">
-        <textarea
-          class="hidden"
-          cols="40"
-          id="id_description"
-          name="description"
-          :placeholder="$t('event.description.placeholder')"
-          rows="10"
-          @change="hanleChangeDescription"
-        />
-      </div>
+      <TinymceField v-model="formValues.description" name="description" />
     </FieldWrapper>
   </div>
 </template>
@@ -227,6 +219,7 @@ import FieldWrapper from '../form-fields/FieldWrapper.vue';
 import SelectField from '../form-fields/SelectField.vue';
 import InputField from '../form-fields/InputField.vue';
 import RadioField from '../form-fields/RadioField.vue';
+import TinymceField from '../form-fields/TinymceField.vue';
 
 export default {
   props: {
@@ -241,6 +234,7 @@ export default {
     SelectField,
     InputField,
     RadioField,
+    TinymceField,
   },
   setup(props, { emit }) {
     const {
@@ -258,27 +252,6 @@ export default {
       );
       props.formValues.country_iso = foundCountry;
     };
-
-    onMounted(() => {
-      document.addEventListener('tinymce-ready', () => {
-        tinymce.init({
-          selector: '#id_description',
-          height: 400,
-          width: '100%',
-          setup: function (editor) {
-            editor.on('init', function () {
-              editor.setContent(props.formValues.description || '');
-            });
-
-            editor.on('change input', function () {
-              const content = editor.getContent();
-              props.formValues.description = content;
-              editor.save();
-            });
-          },
-        });
-      });
-    });
 
     return {
       activityFormatOptions,

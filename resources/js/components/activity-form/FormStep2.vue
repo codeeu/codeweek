@@ -27,7 +27,7 @@
         required
         name="participants_count"
         placeholder="Enter number"
-        @onChange="handleCorrectCount('participants_count')"
+        @onBlur="handleCorrectCount('males_count')"
       />
 
       <template #end>
@@ -38,16 +38,15 @@
             Of this number, how many are
           </label>
 
-          <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4">
             <FieldWrapper label="Males" name="males_count" :errors="errors">
               <InputField
                 v-model="formValues.males_count"
                 type="number"
                 :min="0"
-                :max="formValues.participants_count"
                 name="males_count"
                 placeholder="Enter number"
-                @onChange="handleCorrectCount('males_count')"
+                @onBlur="handleCorrectCount('males_count')"
               />
             </FieldWrapper>
             <FieldWrapper label="Females" name="females_count" :errors="errors">
@@ -55,22 +54,19 @@
                 v-model="formValues.females_count"
                 type="number"
                 :min="0"
-                :max="formValues.participants_count"
                 name="females_count"
                 placeholder="Enter number"
-                @onChange="handleCorrectCount('females_count')"
+                @onBlur="handleCorrectCount('females_count')"
               />
             </FieldWrapper>
             <FieldWrapper label="Other" name="other_count" :errors="errors">
               <InputField
                 v-model="formValues.other_count"
-                disabled
                 type="number"
                 :min="0"
-                :max="formValues.participants_count"
                 name="other_count"
                 placeholder="Enter number"
-                @onChange="handleCorrectCount('other_count')"
+                @onBlur="handleCorrectCount('other_count')"
               />
             </FieldWrapper>
           </div>
@@ -84,14 +80,12 @@
       name="ages"
       :errors="errors"
     >
-      <div class="w-1/2">
-        <SelectField
-          v-model="formValues.ages"
-          multiple
-          name="ages"
-          :options="ageOptions"
-        />
-      </div>
+      <SelectField
+        v-model="formValues.ages"
+        multiple
+        name="ages"
+        :options="ageOptions"
+      />
     </FieldWrapper>
 
     <FieldWrapper
@@ -105,13 +99,13 @@
           v-model="formValues.is_extracurricular_event"
           name="is_extracurricular_event"
           value="true"
-          label="True"
+          label="Yes"
         />
         <RadioField
           v-model="formValues.is_extracurricular_event"
           name="is_extracurricular_event"
           value="false"
-          label="False"
+          label="No"
         />
       </div>
     </FieldWrapper>
@@ -127,13 +121,13 @@
           v-model="formValues.is_standard_school_curriculum"
           name="is_standard_school_curriculum"
           value="true"
-          label="True"
+          label="Yes"
         />
         <RadioField
           v-model="formValues.is_standard_school_curriculum"
           name="is_standard_school_curriculum"
           value="false"
-          label="False"
+          label="No"
         />
       </div>
     </FieldWrapper>
@@ -211,37 +205,38 @@ export default {
       props.formValues.pictureUrl = data.path;
     };
 
-    const handleCorrectCount = (field) => {
-      const participants_count = Number(
-        props.formValues.participants_count || '0'
+    const handleCorrectCount = (currentField) => {
+      const fields = ['males_count', 'females_count', 'other_count'];
+      const [primaryField, secondaryField] = fields.filter(
+        (field) => field !== currentField
       );
-      const males_count = Number(props.formValues.males_count || '0');
-      const females_count = Number(props.formValues.females_count || '0');
-      const other_count = Number(props.formValues.other_count || '0');
-      if (males_count + females_count > participants_count) {
-        props.formValues.other_count = 0;
-        if (males_count < participants_count) {
-          props.formValues.females_count = null;
-          props.formValues.females_count = participants_count - males_count;
-        } else {
-          props.formValues.males_count = null;
-          props.formValues.males_count = participants_count;
-          props.formValues.females_count = null;
-          props.formValues.females_count = 0;
-        }
+
+      const allCount = Number(props.formValues.participants_count || '0');
+      const currentCount = Number(props.formValues[currentField] || '0');
+      const primaryCount = Number(props.formValues[primaryField] || '0');
+      const secondaryCount = Number(props.formValues[secondaryField] || '0');
+
+      if (!currentCount && !primaryCount && !secondaryCount) {
+        return;
       }
-      props.formValues.other_count = Math.max(
-        participants_count - (males_count + females_count),
-        0
-      );
-      console.log(
-        field,
-        participants_count,
-        males_count,
-        females_count,
-        other_count,
-        Math.max(participants_count - (males_count + females_count), 0)
-      );
+
+      if (currentCount > allCount) {
+        props.formValues[currentField] = allCount;
+        props.formValues[primaryField] = 0;
+        props.formValues[secondaryField] = 0;
+      } else if (currentCount + primaryCount > allCount) {
+        props.formValues[primaryField] = allCount - currentCount;
+        props.formValues[secondaryField] = 0;
+      } else if (currentCount + primaryCount + secondaryCount > allCount) {
+        props.formValues[primaryField] = primaryCount;
+        props.formValues[secondaryField] = Math.max(
+          allCount - currentCount - primaryCount,
+          0
+        );
+      } else {
+        props.formValues[primaryField] = allCount - currentCount - primaryCount;
+        props.formValues[secondaryField] = 0;
+      }
     };
 
     return {

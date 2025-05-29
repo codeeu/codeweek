@@ -18,26 +18,14 @@
       <slot />
 
       <div
-        v-if="errors?.[name]?.length"
+        v-if="errorList.length"
         class="flex item-start gap-3 text-error-200 font-semibold mt-2.5 empty:hidden"
       >
         <img src="/images/icon_error.svg" />
-        <div v-for="message in errors[name]" class="leading-5">
+        <div v-for="message in errorList" class="leading-5">
           {{ message }}
         </div>
       </div>
-
-      <template v-for="name in names">
-        <div
-          v-if="errors?.[name]?.length"
-          class="flex item-start gap-3 text-error-200 font-semibold mt-2.5 empty:hidden"
-        >
-          <img src="/images/icon_error.svg" />
-          <div v-for="message in errors[name]" class="leading-5">
-            {{ message }}
-          </div>
-        </div>
-      </template>
 
       <slot name="end" />
     </div>
@@ -45,6 +33,9 @@
 </template>
 
 <script>
+import { computed } from 'vue';
+import _ from 'lodash';
+
 export default {
   props: {
     horizontalBreakpoint: String,
@@ -53,6 +44,26 @@ export default {
     name: String,
     names: Array,
     errors: Object,
+  },
+  setup(props) {
+    const errorList = computed(() => {
+      const result = [];
+      const nameList = [];
+      if (props.name) nameList.push(props.name);
+      if (props.names) nameList.push(...props.names);
+
+      nameList.forEach((name) => {
+        if (props.errors?.[name]) {
+          result.push(...props.errors?.[name]);
+        }
+      });
+
+      return _.uniq(result);
+    });
+
+    return {
+      errorList,
+    };
   },
 };
 </script>

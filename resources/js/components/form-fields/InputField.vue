@@ -1,6 +1,6 @@
 <template>
   <input
-    class="w-full border-2 border-solid border-dark-blue-200 rounded-full h-12 px-4 text-xl text-slate-600"
+    class="w-full border-2 border-solid border-dark-blue-200 rounded-full h-12 px-6 text-xl text-slate-600"
     :id="`id_${name}`"
     :type="type"
     :min="min"
@@ -26,7 +26,7 @@ export default {
       default: 'text',
     },
   },
-  emits: ['update:modelValue', 'onChange'],
+  emits: ['update:modelValue', 'onChange', 'onBlur'],
   setup(props, { emit }) {
     const localValue = ref(props.modelValue);
 
@@ -56,7 +56,7 @@ export default {
     };
 
     const onBlur = () => {
-      localValue.value = props.modelValue;
+      emit('onBlur');
     };
 
     return { localValue, onChange, onBlur };

@@ -153,16 +153,19 @@ class EventFilters extends Filters
 
     protected function languages($languages)
     {
-
         if (empty($languages)) {
             return;
         }
 
         $keys = collect($languages)->pluck('id')->all();
 
-        $result = $this->builder->whereIn('language', $keys);
+        $this->builder->where(function ($query) use ($keys) {
+            foreach ($keys as $lang) {
+                $query->orWhereRaw('FIND_IN_SET(?, language)', [$lang]);
+            }
+        });
 
-        return $result;
+        return $this->builder;
     }
 
     protected function formats($formats)

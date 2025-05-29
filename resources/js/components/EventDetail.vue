@@ -44,12 +44,15 @@
           <p class="text-slate-500 font-semibold p-0 mb-2">
             {{ $t('resources.Languages') }}:
           </p>
-          <div
-            class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
-          >
-            <p class="text-slate-500 p-0 text-base font-semibold">
-              {{ $t(`base.languages.${event.language}`) }}
-            </p>
+          <div class="flex flex-wrap gap-2">
+            <div
+              v-for="language in event.languages"
+              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+            >
+              <p class="text-slate-500 p-0 text-base font-semibold">
+                {{ $t(`base.languages.${language}`) }}
+              </p>
+            </div>
           </div>
         </div>
 

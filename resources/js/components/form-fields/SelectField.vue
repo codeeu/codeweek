@@ -14,6 +14,7 @@
     :close-on-select="!multiple"
     :clear-on-select="!multiple"
     :preserve-search="true"
+    :searchable="searchable"
     :allow-empty="allowEmpty"
     :deselect-label="deselectLabel"
     :options="options"
@@ -21,9 +22,11 @@
   >
     <template v-if="multiple && theme === 'new'" #option="{ option }">
       <div class="flex justify-between items-center cursor-pointer">
-        <span>{{ option[labelField] }}</span>
+        <span class="whitespace-normal leading-6">{{
+          option[labelField]
+        }}</span>
         <div
-          class="h-6 w-6 border-2 bg-white flex items-center justify-center cursor-pointer rounded"
+          class="flex-shrink-0 h-6 w-6 border-2 bg-white flex items-center justify-center cursor-pointer rounded"
           :class="[
             isSelectedOption(option)
               ? 'border-[#05603A]'
@@ -48,9 +51,22 @@
       </div>
     </template>
 
-    <template v-else #option="{ option }">
+    <template #tag="{ option, remove }">
+      <span
+        class="flex gap-2.5 items-center rounded-full bg-dark-blue text-white px-4 py-2"
+      >
+        <span class="font-semibold leading-4">{{ option.name }}</span>
+        <span @click="remove(option)">
+          <img src="/images/close-white.svg" />
+        </span>
+      </span>
+    </template>
+
+    <template v-if="!multiple" #option="{ option }">
       <div class="flex gap-4 items-center cursor-pointer">
-        <span>{{ option[labelField] }}</span>
+        <span class="whitespace-normal leading-6">{{
+          option[labelField]
+        }}</span>
 
         <div>
           <svg
@@ -67,12 +83,14 @@
             <path d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <!-- <input
-          type="checkbox"
-          class="form-checkbox text-blue-600"
-          :checked="isSelectedOption(option)"
-          @change.prevent
-        /> -->
+      </div>
+    </template>
+
+    <template #caret>
+      <div
+        class="absolute top-1/2 right-4 -translate-y-1/2 pointer-events-none"
+      >
+        <img src="/images/select-arrow.svg" />
       </div>
     </template>
   </multiselect>
@@ -86,7 +104,10 @@ export default {
   props: {
     multiple: Boolean,
     returnObject: Boolean,
-    allowEmpty: Boolean,
+    allowEmpty: {
+      type: Boolean,
+      default: true,
+    },
     modelValue: [Array, String],
     deselectLabel: String,
     options: Array,
@@ -105,6 +126,10 @@ export default {
     largeText: {
       type: Boolean,
       default: false,
+    },
+    searchable: {
+      type: Boolean,
+      fefault: false,
     },
   },
   components: {

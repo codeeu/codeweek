@@ -4,9 +4,20 @@
     class="relative py-10 codeweek-container-lg flex justify-center"
   >
     <div class="flex gap-12">
-      <template v-for="(stepItem, index) in stepItems">
+      <template v-for="(stepTitle, index) in stepTitles">
         <div
-          class="relative flex flex-col items-center gap-2 flex-1 md:w-52 cursor-pointer"
+          class="relative flex flex-col items-center gap-2 flex-1 md:w-52"
+          :class="[
+            index + 1 === 2 && validStep1 && 'cursor-pointer',
+            index + 1 === 3 && validStep2 && 'cursor-pointer',
+          ]"
+          @click="
+            () => {
+              if (index + 1 === 2 && !validStep1) return;
+              if (index + 1 === 3 && !validStep2) return;
+              handleMoveStep(index + 1);
+            }
+          "
         >
           <div
             class="w-12 h-12 rounded-full flex justify-center items-center text-['#20262C'] font-semibold text-2xl"
@@ -20,11 +31,11 @@
             <p
               class="text-slate-500 font-normal text-base leading-[22px] p-0 text-center"
             >
-              {{ stepItem.name }}
+              {{ stepTitle }}
             </p>
           </div>
           <div
-            v-if="index < stepItems.length - 1"
+            v-if="index < stepTitles.length - 1"
             class="absolute top-6 left-[calc(100%+1.5rem)] -translate-x-1/2 w-[calc(100%-1rem)] md:w-[calc(100%-0.75rem)] h-[2px] bg-[#CCF0F9]"
           ></div>
         </div>
@@ -48,10 +59,14 @@
       <div
         class="text-dark-blue text-[22px] md:text-4xl font-semibold font-[Montserrat]"
       >
-        Thank you for adding your activity!
+        {{
+          event
+            ? 'Your changes have been saved!'
+            : 'Thank you for adding your activity!'
+        }}
       </div>
 
-      <div class="flex flex-col gap-4 text-[16px] text-center">
+      <div v-if="!event" class="flex flex-col gap-4 text-[16px] text-center">
         <div>
           One of the EU Code Week Ambassadors or organisers will now review your
           activity
@@ -92,10 +107,10 @@
       <div class="flex justify-center">
         <div class="flex flex-col max-w-[852px] w-full">
           <h2
-            v-if="stepItems[step - 1]?.title"
+            v-if="stepTitles[step - 1]"
             class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-10 text-center"
           >
-            {{ stepItems[step - 1]?.title }}
+            {{ stepTitles[step - 1] }}
           </h2>
 
           <div :class="[step !== 1 && 'hidden']">
@@ -128,10 +143,14 @@
               v-model="formValues.privacy"
               name="privacy"
             >
-              <div class="flex gap-5 items-center">
-                {{ $t('event.privacy') }}
-                <a class="block w-5" :href="privacyLink" target="_blank">
-                  <img src="/images/external-link.svg" width="20" />
+              <div>
+                <span>{{ $t('event.privacy') }}</span>
+                <a
+                  class="ml-1 !inline cookweek-link"
+                  :href="privacyLink"
+                  target="_blank"
+                >
+                  Privacy policy terms
                 </a>
               </div>
             </CheckboxField>
@@ -157,7 +176,7 @@
               @click="
                 () => {
                   if (step === 4) handleGoHomePage();
-                  else handleMoveStep(-1);
+                  else handleMoveStep(step - 1);
                 }
               "
             >
@@ -168,17 +187,36 @@
             <div />
 
             <button
-              class="text-nowrap flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
+              class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
               type="button"
+              :disabled="disableNextbutton"
+              :class="[
+                disableNextbutton
+                  ? 'cursor-not-allowed bg-gray-200 text-gray-400'
+                  : 'bg-primary hover:bg-hover-orange text-[#20262C]',
+              ]"
               @click="
                 () => {
-                  if (step === 4) handleReloadPage();
-                  else if (step === 3) handleSubmit();
-                  else handleMoveStep(1);
+                  if (step === 4) {
+                    if (event?.id) {
+                      handleGoMapPage();
+                    } else {
+                      handleReloadPage();
+                    }
+                  } else if (step === 3 && validStep3) {
+                    handleSubmit();
+                  } else if (step === 2 && validStep2) {
+                    handleMoveStep(3);
+                  } else if (step === 1 && validStep1) {
+                    handleMoveStep(2);
+                  }
                 }
               "
             >
-              <span v-if="step === 4">Add another activity</span>
+              <template v-if="step === 4">
+                <span v-if="event?.id">Back to map page</span>
+                <span v-else>Add another activity</span>
+              </template>
               <span v-else-if="step === 3">Submit</span>
               <span v-else>Next step</span>
             </button>
@@ -190,7 +228,7 @@
 </template>
 
 <script>
-import { ref, watch } from 'vue';
+import { ref, watch, computed } from 'vue';
 import axios from 'axios';
 import _ from 'lodash';
 
@@ -261,12 +299,12 @@ export default {
     CheckboxField,
   },
   setup(props, { emit }) {
-    const { stepItems } = useDataOptions();
+    const { stepTitles } = useDataOptions();
 
     const containerRef = ref(null);
     const step = ref(1);
     const errors = ref({});
-    const formValues = ref({
+    const defaultFormValues = ref({
       // step 1
       activity_type: 'open-in-person',
       location: props.location?.location || '',
@@ -281,21 +319,75 @@ export default {
       // step 3,
       organizer: props.location?.name || '',
       organizer_type: props?.location?.organizer_type || '',
-      language: props.locale || '',
+      language: props.locale ? [props.locale] : [],
       country_iso: props.location.country_iso || '',
       is_use_resource: 'false',
       privacy: String(props.user?.privacy === 1),
     });
+    const formValues = ref(_.clone(defaultFormValues.value));
 
-    const handleMoveStep = (move) => {
-      step.value = Math.max(
-        Math.min(step.value + move, props.event.id ? 3 : 4),
-        1
+    const validStep1 = computed(() => {
+      const data = _.cloneDeep(formValues.value);
+
+      const requiredFields = [
+        'title',
+        'activity_type',
+        'duration',
+        'is_recurring_event_local',
+        'start_date',
+        'end_date',
+        'theme',
+        'description',
+      ];
+
+      if (!['open-online', 'invite-online'].includes(data.activity_type)) {
+        requiredFields.push('location');
+      }
+
+      return requiredFields.every((field) => !_.isEmpty(data[field]));
+    });
+
+    const validStep2 = computed(() => {
+      const data = _.cloneDeep(formValues.value);
+
+      const requiredFields = ['audience', 'ages', 'is_extracurricular_event'];
+
+      return (
+        !!data.participants_count &&
+        requiredFields.every((field) => !_.isEmpty(data[field]))
       );
+    });
+
+    const validStep3 = computed(() => {
+      const data = _.cloneDeep(formValues.value);
+
+      const requiredFields = [
+        'organizer',
+        'organizer_type',
+        'country_iso',
+        'user_email',
+      ];
+
+      if (['open-online', 'invite-online'].includes(data.activity_type)) {
+        requiredFields.push('event_url');
+      }
+
+      return requiredFields.every((field) => !_.isEmpty(data[field]));
+    });
+
+    const disableNextbutton = computed(() => {
+      if (step.value === 1 && !validStep1.value) return true;
+      if (step.value === 2 && !validStep2.value) return true;
+      if (step.value === 3 && !validStep3.value) return true;
+      return false;
+    });
+
+    const handleMoveStep = (newStep) => {
+      step.value = Math.max(Math.min(newStep, 4), 1);
     };
 
     const handleGoHomePage = () => (window.location.href = '/');
-
+    const handleGoMapPage = () => (window.location.href = '/events');
     const handleReloadPage = () => window.location.reload();
 
     const handleSubmit = async () => {
@@ -350,11 +442,10 @@ export default {
       try {
         if (!_.isNil(props.event.id)) {
           await axios.post(`/events/${props.event.id}`, payload);
-          window.location.href = '/events';
         } else {
           await axios.post('/events', payload);
-          handleMoveStep(1);
         }
+        handleMoveStep(4);
       } catch (error) {
         errors.value = error.response?.data?.errors;
         step.value = 1;
@@ -413,7 +504,7 @@ export default {
           organizer: event.organizer || props.location?.name,
           organizer_type:
             event.organizer_type || props?.location?.organizer_type,
-          language: event.language || props.locale,
+          language: event.languages || [props.locale],
           country_iso: event.country_iso || props.location.country_iso,
           is_use_resource: String(!!event.is_use_resource),
           event_url: event.event_url,
@@ -436,29 +527,36 @@ export default {
       { immediate: true }
     );
 
-    watch(step, () => {
-      if (step.value === 4) {
-        const heroElement = document.getElementById('add-event-hero-section');
-        if (heroElement) {
-          heroElement.style.display = 'none';
+    watch(
+      () => step.value,
+      () => {
+        if (step.value === 4) {
+          const heroElement = document.getElementById('add-event-hero-section');
+          if (heroElement) heroElement.style.display = 'none';
+          window.scrollTo({ top: 0 });
+        } else if (containerRef.value) {
+          const offsetTop = containerRef.value.getBoundingClientRect().top;
+          window.scrollTo({ top: offsetTop + window.pageYOffset - 40 });
         }
-        window.scrollTo({ top: 0 });
-      } else if (containerRef.value) {
-        const offsetTop = containerRef.value.getBoundingClientRect().top;
-        window.scrollTo({ top: offsetTop + window.pageYOffset - 40 });
       }
-    });
+    );
 
     return {
       containerRef,
       step,
-      stepItems,
+      stepTitles,
       errors,
       formValues,
       handleGoHomePage,
+      handleGoMapPage,
       handleReloadPage,
       handleMoveStep,
       handleSubmit,
+
+      disableNextbutton,
+      validStep1,
+      validStep2,
+      validStep3,
     };
   },
 };
