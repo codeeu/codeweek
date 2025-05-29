@@ -37,6 +37,7 @@
       <SelectField
         v-model="formValues.language"
         name="language"
+        multiple
         :options="languageOptions"
       />
     </FieldWrapper>
@@ -67,13 +68,13 @@
           v-model="formValues.is_use_resource"
           name="is_use_resource"
           value="true"
-          label="True"
+          label="Yes"
         />
         <RadioField
           v-model="formValues.is_use_resource"
           name="is_use_resource"
           value="false"
-          label="False"
+          label="No"
         />
       </div>
     </FieldWrapper>

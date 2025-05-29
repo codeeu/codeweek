@@ -6,6 +6,7 @@ use App\Rules\validAudience;
 use App\Rules\validTheme;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Lang;
+use Illuminate\Validation\Rule;
 
 class EventRequest extends FormRequest
 {
@@ -34,7 +35,8 @@ class EventRequest extends FormRequest
             'duration' => 'required',
             'location' => 'required_unless:activity_type,open-online,invite-online',
             'event_url' => 'required_if:activity_type,open-online,invite-online',
-            'language' => ['required', $this->in($languages)],
+            'language'   => ['required', 'array'],
+            'language.*' => ['required', Rule::in($languages)],
             'start_date' => 'required',
             'end_date' => 'required|after:start_date',
             'audience' => ['required', new ValidAudience],

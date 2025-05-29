@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Spatie\Activitylog\LogOptions;
 use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class Event extends Model
 {
@@ -127,7 +128,14 @@ class Event extends Model
     //        Event::class => EventPolicy::class
     //    ];
 
-    protected $appends = ['picture_path'];
+    protected $appends = ['picture_path', 'languages'];
+
+    public function getLanguagesAttribute() {
+        if(!is_array($this->language)) {
+            return explode(',', $this->language) ?? null;
+        }
+        return $this->language;
+    }
 
     public function getUrlAttribute() {
         if (!empty($this->slug)) {
@@ -161,7 +169,6 @@ class Event extends Model
             'description' => PurifyHtmlOnGet::class,
             'title' => PurifyHtmlOnGet::class,
             'location' => PurifyHtmlOnGet::class,
-            'language' => PurifyHtmlOnGet::class,
 
             'activity_format' => 'array',
             'is_extracurricular_event' => 'boolean',

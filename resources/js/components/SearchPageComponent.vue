@@ -79,9 +79,7 @@
 
           <FieldWrapper horizontal label="Year">
             <SelectField
-              class="large-text"
               return-object
-              theme="old"
               placeholder="Select year"
               v-model="filters.year"
               :deselect-label="''"
@@ -92,10 +90,8 @@
 
           <FieldWrapper horizontal label="Language">
             <SelectField
-              class="large-text"
               multiple
               return-object
-              theme="old"
               placeholder="Select language"
               v-model="filters.languages"
               :options="languageOptions"
@@ -104,10 +100,8 @@
 
           <FieldWrapper horizontal label="Country">
             <SelectField
-              class="large-text"
               multiple
               return-object
-              theme="old"
               id-name="iso"
               placeholder="Select country"
               v-model="filters.countries"
@@ -173,7 +167,7 @@
             >
               <FieldWrapper horizontal label="Date">
                 <div
-                  class="w-full flex px-3 justify-between items-center text-gray-700 whitespace-nowrap rounded-3xl border-2 border-dark-blue-200 h-[50px] bg-white"
+                  class="relative w-full flex px-3 justify-between items-center text-gray-700 whitespace-nowrap rounded-3xl border-2 border-dark-blue-200 h-[50px] bg-white"
                 >
                   <date-time
                     :key="filters.start_date"
@@ -183,15 +177,18 @@
                     @onChange="filters.start_date = $event"
                     @onClear="filters.start_date = null"
                   ></date-time>
+                  <div
+                    class="absolute top-1/2 right-4 -translate-y-1/2 pointer-events-none"
+                  >
+                    <img src="/images/select-arrow.svg" />
+                  </div>
                 </div>
               </FieldWrapper>
 
               <FieldWrapper horizontal label="Format">
                 <SelectField
-                  class="large-text"
                   multiple
                   return-object
-                  theme="old"
                   placeholder="Select format"
                   v-model="filters.formats"
                   :options="activityFormatOptions"
@@ -201,10 +198,8 @@
 
               <FieldWrapper horizontal label="Activity type">
                 <SelectField
-                  class="large-text"
                   multiple
                   return-object
-                  theme="old"
                   placeholder="Select type"
                   v-model="filters.types"
                   :options="activityTypeOptions"
@@ -214,10 +209,8 @@
 
               <FieldWrapper horizontal label="Audience">
                 <SelectField
-                  class="large-text"
                   multiple
                   return-object
-                  theme="old"
                   placeholder="Select audience"
                   v-model="filters.audiences"
                   :options="audienceslist"
@@ -227,10 +220,8 @@
 
               <FieldWrapper horizontal label="Age range">
                 <SelectField
-                  class="large-text"
                   multiple
                   return-object
-                  theme="old"
                   placeholder="Select range"
                   v-model="filters.ages"
                   :options="ageOptions"
@@ -240,10 +231,8 @@
 
               <FieldWrapper horizontal label="Themes">
                 <SelectField
-                  class="large-text"
                   multiple
                   return-object
-                  theme="old"
                   placeholder="Select themes"
                   v-model="filters.themes"
                   :options="themeslist"

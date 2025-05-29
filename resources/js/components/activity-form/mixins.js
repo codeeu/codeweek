@@ -10,10 +10,10 @@ export function useDataOptions() {
     return result;
   };
 
-  const stepItems = computed(() => [
-    { name: 'Join the community', title: 'Activity overview' },
-    { name: 'Who is the activity for', title: 'Who is the activity for' },
-    { name: 'Organiser', title: 'Organiser' },
+  const stepTitles = computed(() => [
+    'Activity overview',
+    'Who is the activity for',
+    'Organiser',
   ]);
 
   const activityFormatOptions = computed(() => [
@@ -117,7 +117,7 @@ export function useDataOptions() {
   );
 
   return {
-    stepItems,
+    stepTitles,
     activityFormatOptions,
     activityFormatOptionsMap,
     activityTypeOptions,

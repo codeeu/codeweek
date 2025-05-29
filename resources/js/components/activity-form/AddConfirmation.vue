@@ -198,9 +198,9 @@ export default {
       } = props.formValues || {};
       const organizerTypeValue = organizerTypeOptionsMap.value[organizer_type];
 
-      const languageValue = Object.entries(props.languages).find(
-        ([key]) => key === language
-      )?.[1];
+      const languageValues = language
+        ?.map((lang) => props.languages?.[lang])
+        .filter((label) => !!label);
       const countryValue = props.countries.find(
         ({ iso }) => iso === country_iso
       )?.name;
@@ -213,7 +213,7 @@ export default {
         },
         {
           label: trans('resources.Languages'),
-          value: languageValue,
+          value: languageValues?.join(', '),
         },
         {
           label: trans('event.country'),
