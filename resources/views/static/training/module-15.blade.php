@@ -31,19 +31,19 @@
                 <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-4">
                     @lang('training.lessons.15.text.2')
                 </p>
-                <ul class="list-none m-0 mb-6">
-                    <li class="p-0 text-default font-normal leading-7">
-                        <a class="text-dark-blue" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
+                <ul class="m-0 mb-6 list-none">
+                    <li class="p-0 font-normal leading-7 text-default">
+                        <a class="text-dark-blue" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-01.docx">
                             @lang('training.lessons.15.activities.1')
                         </a>
                     </li>
-                    <li class="p-0 text-default font-normal leading-7">
-                        <a class="text-dark-blue" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
+                    <li class="p-0 font-normal leading-7 text-default">
+                        <a class="text-dark-blue" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-02.docx">
                             @lang('training.lessons.15.activities.2')
                         </a>
                     </li>
-                    <li class="p-0 text-default font-normal leading-7">
-                        <a class="text-dark-blue" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                    <li class="p-0 font-normal leading-7 text-default">
+                        <a class="text-dark-blue" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-03.docx">
                             @lang('training.lessons.15.activities.3')
                         </a>
                     </li>
