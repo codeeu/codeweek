@@ -42,7 +42,7 @@ class EventiEvents extends Command
 
     Excel::import(
       new EventiEventsImport(),
-      resource_path('excel/eventi.xlsx')
+      resource_path('excel/.xlsx')
     );
   }
 }
