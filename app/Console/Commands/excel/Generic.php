@@ -42,7 +42,7 @@ class Generic extends Command
 
         Excel::import(
             new GenericEventsImport(),
-            '3-june.xlsx',
+            'today.xlsx',
             'excel'
         );
     }
