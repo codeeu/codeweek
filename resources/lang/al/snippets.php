@@ -43,4 +43,8 @@ return [
         8 => 'Shikoni Cristiana Lucaci, Ambasadoren për Rumaninë, për të mësuar pse Code Week është mirënjohëse për komunitetin e vet',
     ],
 
+    'learn_and_teach_1' => 'Një depo burimesh për të filluar ose vazhduar udhëtimin tuaj të kodimit dhe për të zhvilluar aftësitë dixhitale dhe teknike – të gjitha të disponueshme pa asnjë kosto.',
+    'learn_and_teach_2' => 'Kodimi dhe programimi janë kompetenca kyçe që janë gjithnjë e më të kërkuara në çdo fushë dhe Java e Kodit të BE-së dëshiron t\'ju mbështesë në mësimdhënien dhe mësimin tuaj! Shfletoni depon tonë dhe gjeni burimin e përsosur për të filluar ose për të vazhduar udhëtimin tuaj të kodimit. Të gjitha këto burime janë falas. Mos harroni se mund të filtroni kërkimin tuaj sipas titullit, llojit të burimeve, nivelit të aftësive, gjuhës programuese, subjektit, kategorisë dhe gjuhës.',
+    
+
 ];

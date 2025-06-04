@@ -395,6 +395,15 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
         'text' => '<p>Du kan lätt organisera en lektion, hålla öppet hus eller anordna ett evenemang på din skola. Hitta ett datum och registrera din aktivitet på <a href="/events">Code Week-kartan</a>. Alla arrangörer får ett certifikat för sina insatser.</p>
 
 <p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Lagom stora, färdiga material som hjälper dig att introducera grunderna i kodning och planera din nästa innovativa lektion.',
+'quick-practical-text1'=> "Upptäck grunderna i kodning och datalogiskt tänkande genom lagom stora, praktiska aktiviteter som är utformade för lärare, studenter och alla som är ivriga att utforska den digitala världen. Oavsett om du är ny på kodning eller letar efter nya idéer att integrera i dina undervisnings- eller utbildningssessioner, kommer Learning Bits att väcka din fantasi och ge en solid utgångspunkt.",
+'watch-learn-title'=>'Se och lär',
+'watch-learn-text'=>'Upptäck grunderna i kodning genom engagerande Learning Bits. Dessa lagom stora moduler, som varar i cirka 15 minuter, introducerar nyckelbegrepp relaterade till kodning och datalogiskt tänkande. Förutom teoretiska insikter ger modulerna praktiska tips om hur man kan tillämpa dessa begrepp i olika utbildningsmiljöer – oavsett om du undervisar barn, studenter eller vuxenstuderande.',
+'get-hands-on-title' =>'Få hands-on',
+'get-hands-on-text' =>'Välj en inlärningsbit, titta på instruktionsvideon och utforska praktiska aktiviteter med tillhörande material. Oavsett om du är ny på kodning eller letar efter fräscha, kreativa undervisningsidéer, kommer Coding Basics att utrusta dig med verktygen för att väcka digital nyfikenhet och kreativitet hos dina elever.',
+'share-inspire-title' =>'Dela och inspirera',
+'share-inspire-text1' =>'När du har slutfört en eller flera Learning Bits för Code Week uppmuntrar vi dig att ta med digital kreativitet i din utbildningsmiljö och fästa din aktivitet på <a href="/events" class="font-semibold text-dark-blue underline">Code Week-kartan</a>!',
+'share-inspire-text2' =>'Du kan organisera en lektion i ditt klassrum, en workshop i ett allaktivitetshus eller ett öppet evenemang i din organisation. Välj bara ett datum och registrera din aktivitet på <a href="/events" class="font-semibold text-dark-blue underline">Code Week-kartan</a>. Varje aktivitetsarrangör får ett deltagarintyg för sin insats.',
+'share-inspire-text3' =>'Om du vill komma i kontakt med en internationell grupp entusiastiska lärare kan du gå med i Facebook-gruppen <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">för lärare under EU:s kodvecka</a>! Om du vill ta ett steg längre och samarbeta med andra skolor i ditt land eller över gränserna kan du delta i utmaningen EU <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Code Week 4 All</a>.',
 ];

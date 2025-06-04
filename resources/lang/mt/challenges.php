@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram jew Twitter',
         'Kun ċert li tuża',
     ],
+
+    'challenges-text'=>'Ġabra ta\' attivitajiet li tista\' tagħmel waħdek, fil-klassi, ma\' kollegi jew ħbieb.',
+    'challenges-sub-title'=>'Tixtieq tipparteċipa fil-EU Code Week iżda m\'għandekx verament idea ta\' x\'għandek torganizza? ',
+    'challenges-sub-text1'=>'Flimkien mal-EU Code Week partners, fassalna għażla ta\' sfidi faċli biex isiru b\'eżempji konkreti ta\' kif jintużaw fi klassi jew fi grupp. Hemm ukoll linji gwida dwar kif tlesti l-isfidi, iżda tista\' tadattahom sabiex ikunu adattati għall-ħtiġijiet, l-interessi u l-età tal-parteċipanti tiegħek.',
+    'challenges-sub-text2'=>'Tista\' tuża kwalunkwe għodda u teknoloġiji li tixtieq, iżda nirrakkomandaw riżorsi open-source. Agħżel sfida waħda jew aktar, adattaha għall-grupp tiegħek jew għall-klassi tiegħek, u aqsam ir-riżultati fuq Instagram biex tħeġġeġ saħansitra aktar kollegi u ħbieb biex jissieħbu fl-Eu Code Week.',
 ];

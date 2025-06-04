@@ -43,4 +43,7 @@ return [
         8 => 'Cristiana Lucaci, embajadora por Rumanía, explica por qué la Semana de la Programación da las gracias a su comunidad de programadores',
     ],
 
+    'learn_and_teach_1' => 'Un repositorio de recursos para comenzar o continuar su viaje de codificación y desarrollar habilidades digitales y técnicas, todo disponible sin costo alguno.',
+    'learn_and_teach_2' => 'La codificación y la programación son competencias clave cada vez más demandadas en todos los ámbitos, ¡y la Semana de la Programación de la UE quiere apoyarte en tu enseñanza y aprendizaje! Explore nuestro repositorio y encuentre el recurso perfecto para comenzar o continuar su viaje de codificación. Todos estos recursos son gratuitos. No olvides que puedes filtrar tu búsqueda por título, tipo de recurso, nivel de habilidad, lenguaje de programación, tema, categoría e idioma.',
+
 ];
