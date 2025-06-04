@@ -2,23 +2,17 @@
 
 @section('content')
 
-    <section id="codeweek-error-page" class="codeweek-page">
-
-        <section class="codeweek-banner error">
-            <div class="text">
-                <h2>#EUCodeWeek</h2>
+    <section id="codeweek-error-page">
+        <div class="error-container">
+            <div class="error-robot">
+                <img src="{{ asset('images/404_robot.svg') }}" alt="Error Robot">
+            </div>
+            <div class="error-box">
                 <h1>Error!</h1>
+                <p>User does not have the right roles.</p>
+                <a href="/">Go back to homepage</a>
             </div>
-            <div class="image">
-                <img src="{{asset('images/robot_error.svg')}}" class="static-image">
-            </div>
-        </section>
-
-        <section class="codeweek-content-wrapper" style="align-items: center;">
-            <h1>Oops! Something is not working. Try again in a bit!</h1>
-            <a href="/" class="codeweek-action-link-button" style="width: 200px;margin-top: 15px;">GO TO HOMEPAGE</a>
-        </section>
-
+        </div>
+        <div class="footer-ellipse"></div>
     </section>
-
 @endsection
