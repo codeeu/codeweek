@@ -43,4 +43,7 @@ return [
         8 => 'Skatieties Rumānijas vēstneses Cristiana Lucaci uzrunu par sabiedrības nozīmi ES Programmēšanas nedēļas iniciatīvas veicināšanā',
     ],
 
+    'learn_and_teach_1' => 'Resursu krātuve, lai sāktu vai turpinātu programmēšanas ceļu un attīstītu digitālās un tehniskās prasmes - tas viss ir pieejams bez maksas.',
+    'learn_and_teach_2' => 'Kodēšana un programmēšana ir galvenās kompetences, kas arvien vairāk tiek pieprasītas visās jomās, un ES programmēšanas nedēļa vēlas jūs atbalstīt jūsu mācīšanas un mācīšanās procesā! Pārlūkojiet mūsu krātuvi un atrodiet perfektu resursu, lai sāktu vai turpinātu savu kodēšanas ceļojumu. Visi šie resursi ir bez maksas. Neaizmirstiet, ka varat filtrēt meklēšanu pēc nosaukuma, resursa veida, prasmju līmeņa, programmēšanas valodas, tēmas, kategorijas un valodas.',
+
 ];

@@ -93,4 +93,9 @@ return [
         'Facebook, Instagram eller Twitter',
         'Se till att du använder',
     ],
+
+    'challenges-text'=>'En samling aktiviteter som du kan göra på egen hand, i klassrummet, med kollegor eller vänner.',
+    'challenges-sub-title'=>'Vill du delta i EU:s kodvecka men har inte riktigt koll på vad du ska anordna?',
+    'challenges-sub-text1'=>'Då behöver du inte leta längre! Tillsammans med våra partner under EU:s kodvecka har vi utformat ett urval av enkla utmaningar med konkreta exempel på hur du kan använda dem i ett klassrum eller en grupp. Det finns också riktlinjer för hur du ska genomföra utmaningarna, men du kan anpassa dem så att de passar dina deltagares behov, intressen och ålder.',
+    'challenges-sub-text2'=>' Du kan använda vilka verktyg och tekniker du vill, men vi rekommenderar resurser med öppen källkod. Välj en eller flera utmaningar, anpassa den till din grupp eller ditt klassrum och dela resultaten på Instagram för att uppmuntra ännu fler kollegor och vänner att delta i EU:s kodvecka!',
 ];

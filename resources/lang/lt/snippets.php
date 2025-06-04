@@ -43,4 +43,7 @@ return [
         8 => 'Žiūrėkite Rumunijos ambasadorės Cristianos Lucaci vaizdo įrašą apie tai, kodėl Programavimo savaitės organizatoriai yra dėkingi šios iniciatyvos bendruomenei',
     ],
 
+    'learn_and_teach_1' => 'Išteklių saugykla, kurioje galima nemokamai pradėti ar tęsti pažintį su programavimu ir lavinti skaitmeninius bei techninius įgūdžius.',
+    'learn_and_teach_2' => 'Kodavimas ir programavimas yra bendrieji gebėjimai, kurių vis labiau reikia visose srityse, o ES programavimo savaitė siekia padėti jums to mokyti ir mokytis! Peržiūrėkite mūsų saugyklą ir rasite puikių išteklių pradėti arba tęsti tobulintis programavimo srityje. Visi šie ištekliai yra nemokami. Atkreipkite dėmesį, kad paiešką galite tikslinti pagal pavadinimą, išteklių rūšį, įgūdžių lygį, programavimo kalbą, dalyką, temą ir kalbą.',
+
 ];

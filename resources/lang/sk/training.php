@@ -383,6 +383,15 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
         'text' => '<p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
 <p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
-    ]
-
+    ],
+'training-text'=>'Materiály pripravené na použitie, ktoré vám pomôžu zoznámiť sa so základmi kódovania a naplánovať ďalšiu inovatívnu hodinu.',
+'quick-practical-text1'=> "Objavte základy programovania a výpočtového myslenia prostredníctvom praktických aktivít určených pre pedagógov, študentov a každého, kto túži preskúmať digitálny svet. Či už s programovaním začínate alebo hľadáte nové nápady, ktoré by ste mohli začleniť do výučby alebo školení, Learning Bits podnieti vašu predstavivosť a poskytne solídny východiskový bod.",
+'watch-learn-title'=>'Sledujte a učte sa',
+'watch-learn-text'=>'Objavte základy kódovania prostredníctvom pútavých učebných bitov. Tieto malé moduly, trvajúce približne 15 minút, predstavujú kľúčové pojmy súvisiace s kódovaním a výpočtovým myslením. Okrem teoretických poznatkov poskytujú moduly praktické tipy, ako tieto koncepty aplikovať v rôznych vzdelávacích prostrediach – či už učíte deti, študentov alebo dospelých študentov.',
+'get-hands-on-title' =>'Získajte praktické skúsenosti',
+'get-hands-on-text' =>'Vyberte si učebný kúsok, pozrite si inštruktážne video a preskúmajte praktické aktivity so sprievodnými materiálmi. Či už s programovaním začínate alebo hľadáte nové, kreatívne nápady na výučbu, Základy programovania vás vybavia nástrojmi, ktoré vo vašich študentoch podnietia digitálnu zvedavosť a kreativitu.',
+'share-inspire-title' =>'Zdieľajte a inšpirujte',
+'share-inspire-text1' =>'Po dokončení jedného alebo viacerých Learning Bits Týždňa programovania vám odporúčame, aby ste do svojho vzdelávacieho prostredia priniesli digitálnu kreativitu a pridali svoju aktivitu na <a href="/events" class="font-semibold text-dark-blue underline">mapu Týždňa programovania</a>!',
+'share-inspire-text2' =>'Môžete zorganizovať hodinu vo svojej triede, workshop v komunitnom centre alebo otvorené podujatie vo vašej organizácii. Stačí si vybrať termín a zaregistrovať svoju aktivitu na mape <a href="/events" class="font-semibold text-dark-blue underline">týždňa kódu</a>. Každý organizátor aktivity dostane za svoje úsilie certifikát o účasti.',
+'share-inspire-text3' =>'Ak by ste sa chceli spojiť s medzinárodnou skupinou nadšených učiteľov, pripojte sa k facebookovej <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">skupine pre učiteľov Európskeho týždňa programovania</a>! Ak chcete urobiť krok ďalej a spolupracovať s ostatnými školami vo vašej krajine alebo za hranicami, zapojte sa do výzvy 4.<a href="/codeweek4all" class="font-semibold text-dark-blue underline">týždňa programovania EÚ</a>.',
 ];
