@@ -90,4 +90,9 @@ return [
         '„Facebook“, „Instagram“ or „Twitter“',
         'Nepamirškite grotažymės',
     ],
+
+    'challenges-text'=>'Užsiėmimų, kuriuos galite atlikti savarankiškai, klasėje, su kolegomis ar draugais, rinkinys.',
+    'challenges-sub-title'=>'Norėtumėte dalyvauti ES programavimo savaitėje, bet nelabai žinote, ką reikėtų surengti?',
+    'challenges-sub-text1'=>'Nesirūpinkite! Kartu su ES programavimo savaitės partneriais parengėme lengvai atliekamų užduočių rinkinį su konkrečiais pavyzdžiais, kaip jas panaudoti klasėje ar grupėje. Taip pat pateikiamos užduočių atlikimo gairės, kurias galite pritaikyti taip, kad jos atitiktų jūsų dalyvių poreikius, interesus ir amžių.',
+    'challenges-sub-text2'=>'Galite naudoti bet kokias jums patinkančias priemones ir technologijas, tačiau rekomenduojame naudoti atvirojo kodo išteklius. Pasirinkite vieną ar kelis iššūkius, pritaikykite juos savo grupei ar klasei ir pasidalykite rezultatais instagrame, kad paskatintumėte dar daugiau kolegų ir draugų prisijungti prie ES programavimo savaitės pramogų!',
 ];

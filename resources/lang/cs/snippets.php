@@ -43,4 +43,7 @@ return [
         8 => 'Rumunská ambasadorka  Cristiana Lucaci – Proč je týden programování vděčný své komunitě',
     ],
 
+    'learn_and_teach_1' => 'Úložiště zdrojů pro zahájení nebo pokračování vaší cesty kódování a rozvoj digitálních a technických dovedností – to vše je k dispozici zdarma.',
+    'learn_and_teach_2' => 'Programování a programování jsou klíčové kompetence, které jsou stále žádanější ve všech oblastech, a Evropský týden programování vás chce podpořit ve vaší výuce a učení! Prohlédněte si náš repozitář a najděte ideální zdroj pro zahájení nebo pokračování vaší cesty kódování. Všechny tyto zdroje jsou zdarma. Nezapomeňte, že vyhledávání můžete filtrovat podle názvu, typu zdroje, úrovně dovedností, programovacího jazyka, předmětu, kategorie a jazyka.',
+
 ];

@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram oder Twitter',
         'Und vergesst nicht den Hashtag',
     ],
+
+    'challenges-text'=>'Eine Sammlung von Aktivitäten, die du alleine, im Klassenzimmer, mit Kolleg*innen oder Freund*innen durchführen kannst.',
+    'challenges-sub-title'=>'Möchtest du an der EU Code Week teilnehmen, hast aber keine Idee, was du organisieren könntest?',
+    'challenges-sub-text1'=>'Keine Sorge! Gemeinsam mit unseren EU Code Week Partner*innen haben wir eine Auswahl an leicht umsetzbaren Challenges entwickelt, mit konkreten Beispielen, wie du sie im Klassenzimmer oder in Gruppen nutzen kannst. Es gibt auch Anleitungen zur Durchführung der Challenges, die du an die Bedürfnisse, Interessen und das Alter deiner Teilnehmenden anpassen kannst.',
+    'challenges-sub-text2'=>'Du kannst beliebige Hilfsmittel und Technologien verwenden, aber wir empfehlen Open-Source-Ressourcen. Wähle eine oder mehrere Challenges, passe sie an deine Gruppe oder dein Klassenzimmer an und teile die Ergebnisse auf Instagram, um andere zur Teilnahme an der EU Code Week zu motivieren!',
 ];

@@ -350,6 +350,16 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
         'text' => '<p>Możesz z łatwością zorganizować lekcję w klasie, dzień otwarty lub wydarzenie w swojej szkole. Wybierz tylko datę i dodaj swoje wydarzenie na <a href=" / events">mapie Tygodnia Kodowania</a>. Każdy organizator wydarzenia otrzyma certyfikat uczestnictwa za udział i włożony wysiłek.</p>
 
 <p>Jeśli chcesz nawiązać kontakty z międzynarodową grupą nauczycieli – entuzjastów, dołącz do <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupy dla nauczycieli poświęconej Europejskiemu Tygodniowi Kodowania na Facebooku</a>! Aby pójść o krok dalej i nawiązać współpracę z innymi szkołami w twoim kraju lub w całej Europie, podejmij <a href="/codeweek4all">wyzwanie Tygodnia Kodowania dla wszystkich „Code Week 4 All”</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Krótkie, gotowe do użycia materiały, które pomogą Ci wprowadzić podstawy kodowania i zaplanować kolejną innowacyjną lekcję.',
+'quick-practical-text1'=> "Odkryj podstawy kodowania i myślenia komputacyjnego dzięki krótkim, praktycznym ćwiczeniom przeznaczonym dla nauczycieli, studentów i każdego, kto chce odkrywać cyfrowy świat. Niezależnie od tego, czy dopiero zaczynasz kodować, czy szukasz świeżych pomysłów, które możesz włączyć do swoich sesji dydaktycznych lub szkoleniowych, Learning Bits pobudzi Twoją wyobraźnię i zapewni solidny punkt wyjścia.",
+'watch-learn-title'=>'Oglądaj i ucz się',
+'watch-learn-text'=>'Odkryj podstawy kodowania dzięki angażującym modułom Learning Bits.Te krótkie moduły, trwające około 15 minut, wprowadzają kluczowe pojęcia związane z kodowaniem i myśleniem komputacyjnym. Oprócz spostrzeżeń teoretycznych, moduły zawierają praktyczne wskazówki, jak zastosować te koncepcje w różnych kontekstach edukacyjnych – niezależnie od tego, czy uczysz dzieci, studentów czy dorosłych.',
+'get-hands-on-title' =>'Przejdź do działania / Działaj praktyczni',
+'get-hands-on-text' =>'Wybierz część edukacyjną, obejrzyj film instruktażowy i zapoznaj się z ćwiczeniami praktycznymi dzięki dołączonym materiałom. Niezależnie od tego, czy dopiero zaczynasz przygodę z kodowaniem, czy szukasz świeżych, kreatywnych pomysłów na nauczanie, Podstawy kodowania wyposażą Cię w narzędzia, które rozbudzą w Twoich uczniach cyfrową ciekawość i kreatywność.',
+'share-inspire-title' =>'Dziel się i inspiruj',
+'share-inspire-text1' =>'Zachęcamy Cię, aby po ukończeniu jednego lub więcej modułów Learning Bits',
+'share-inspire-text2' =>'Tygodnia Kodowania wprowadzić cyfrową kreatywność do swojego środowiska edukacyjnego i przypiąć swoją aktywność do <a href="/events" class="font-semibold text-dark-blue underline">mapy Tygodnia Kodowania</a>.',
+'share-inspire-text3' =>'Możesz zorganizować lekcję w swojej klasie, warsztat w domu kultury lub wydarzenie otwarte w swojej organizacji. Po prostu wybierz datę i zarejestruj swoją aktywność na Mapie <a href="/events" class="font-semibold text-dark-blue underline">Tygodnia Kodowania</a>. Każdy organizator zajęć otrzyma certyfikat uczestnictwa za swój wysiłek.
+Jeśli chcesz nawiązać kontakt z międzynarodową grupą entuzjastycznych nauczycieli, dołącz do <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">grupy dla nauczycieli na Facebooku w ramach Europejskiego Tygodnia Kodowania</a>! Aby pójść o krok dalej i nawiązać współpracę z innymi szkołami w swoim kraju lub za granicą – weź udział w <a href="/codeweek4all" class="font-semibold text-dark-blue underline">wyzwaniu EU Code Week 4 All</a>.',
 ];
