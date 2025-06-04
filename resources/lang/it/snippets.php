@@ -43,4 +43,7 @@ return [
         8 => 'Guarda Cristiana Lucaci, ambasciatrice della Romania, per sapere perché la settimana della programmazione è grata alla sua comunità',
     ],
 
+    'learn_and_teach_1' => 'Un archivio di risorse per iniziare o continuare il tuo percorso di programmazione e sviluppare competenze digitali e tecniche, tutte disponibili gratuitamente.',
+    'learn_and_teach_2' => 'Scrivere codice e programmare sono competenze chiave che sono sempre più richieste in ogni campo, e la EU Code Week vuole supportarti nel tuo insegnamento e apprendimento! Sfoglia il nostro repository e trova la risorsa perfetta per iniziare o continuare il tuo percorso di programmazione. Tutte queste risorse sono gratuite. Non dimenticare che puoi filtrare la tua ricerca per titolo, tipo di risorsa, livello di abilità, linguaggio di programmazione, materia, categoria e lingua.',
+
 ];

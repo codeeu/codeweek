@@ -43,4 +43,7 @@ return [
         8 => 'Oglejte si Cristiano Lucaci, ambasadorko Romunije, ki spregovori o tem, zakaj je teden programiranja hvaležen svoji skupnosti',
     ],
 
+     'learn_and_teach_1' => 'Repozitorij virov za začetek ali nadaljevanje poti kodiranja ter razvoj digitalnih in tehničnih veščin – vse na voljo brezplačno.',
+    'learn_and_teach_2' => 'Programiranje in programiranje sta ključni kompetenci, po katerih je vse večje povpraševanje na vseh področjih, in evropski teden programiranja vas želi podpreti pri poučevanju in učenju! Prebrskajte naš repozitorij in poiščite popoln vir za začetek ali nadaljevanje poti kodiranja. Vsi ti viri so brezplačni. Ne pozabite, da lahko iskanje filtrirate po naslovu, vrsti vira, stopnji spretnosti, programskem jeziku, predmetu, kategoriji in jeziku.',
+
 ];

@@ -153,7 +153,7 @@
                                 Webinars
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                Discover a range of free webinars to boost your coding skills and knowledge. Tune in and learn from experts at your own pace!
+                                @lang('webinars.webinars-text')
                             </p>
                             <span class="text-dark-blue font-semibold text-lg ">
                                 <a href="/" class="cursor-pointer text-dark-blue underline mr-1">
@@ -192,13 +192,13 @@
                         Webinars
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        Organised by the EU Code Week team, this webinar series is designed to support the organisation of events and activities. This series brings together experts, educators, and enthusiasts to explore the fascinating intersection of coding and digital creativity.
-                        Whether you're a teacher looking to enrich your curriculum, a student eager to expand your skills, or a coding enthusiast interested in the latest educational trends, this series has something for everyone.
+                        @lang('webinars.webinars-sub-text1')
+                        @lang('webinars.webinars-sub-text2')
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                        All recordings are also available as YouTube playlists: <br />
-                        2024 Webinar Series: <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf">https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf</a> <br />
-                        2025 Webinar Series:  <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky">https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky</a>
+                        @lang('webinars.recordings-youtube-list-title')<br />
+                        @lang('webinars.2024-webinar-series-title') <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf">https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf</a> <br />
+                       @lang('webinars.2025-webinar-series-title') <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky">https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky</a>
                     </p>
                 </div>
             </div>
