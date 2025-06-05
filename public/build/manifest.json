@@ -10,7 +10,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BHCtV2Vb.js",
+    "file": "assets/app-DYEBsMfe.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -69,7 +69,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_cs.json": {
-    "file": "assets/php_cs-B5kh40UY.js",
+    "file": "assets/php_cs-BiXKKi69.js",
     "name": "php_cs",
     "src": "resources/lang/php_cs.json",
     "isDynamicEntry": true
