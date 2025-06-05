@@ -101,7 +101,7 @@
           :can-approve="{{ auth()->check() && auth()->user()->can('approve', $event) ? 'true' : 'false' }}"
           :can-edit="{{ auth()->check() && auth()->user()->can('edit', $event) ? 'true' : 'false' }}"
           :event="{{ $event }}"
-          event-picture-url={{ $event->picture_detail_path() }}
+          event-picture-url="{{ $event->picture_detail_path() }}"
           map-tile-url="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={{ config('codeweek.MAPS_MAPBOX_ACCESS_TOKEN') }}"
 
           from-text="{{ Carbon\Carbon::parse($event->start_date)->isoFormat('LLL') }}"
