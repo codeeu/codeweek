@@ -31,7 +31,7 @@ class CertificatesIssues extends Command
     {
 
         $issues = Participation::whereNull('participation_url')
-            ->where('status', '=', 'PENDING')
+            ->where('status', 'PENDING')
             ->where('created_at', '<', Carbon::now()->subMinutes(5))->get();
 
         Log::info('certificate with issues: '.count($issues));
