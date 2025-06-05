@@ -381,6 +381,15 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
         'text' => '<p>Sınıfınızda, halka açık ziyaret günlerinde ya da okulunuzdaki bir etkinlikte kolayca ders organize edebilirsiniz. Uygun bir tarih bulup aktivitenizi <a href="/events">Kod Haftası haritasına</a> eklemeniz yeterli. Tüm aktivite organizatörlerine çabalarından dolayı katılım sertifikası verilecektir.</p>
 
 <p>Birbirinden hevesli öğretmenlerin yer aldığı uluslararası bir grubun parçası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook öğretmenler grubuna</a> katılın! Bunu bir adım daha öteye taşımak ve ülkenizdeki ya da diğer ülkelerdeki okullarla iş birliği yapmak isterseniz - <a href="/codeweek4all">Herkes için Kod Haftası mücadelesine</a> katılın.</p>'
-    ]
-
+    ],
+'training-text'=>'Kodlama temellerini tanıtmanıza ve bir sonraki yenilikçi dersinizi planlamanıza yardımcı olacak küçük boyutlu, kullanıma hazır materyaller.',
+'quick-practical-text1'=> "Eğitimciler, öğrenciler ve dijital dünyayı keşfetmeye hevesli herkes için tasarlanmış küçük boyutlu, pratik etkinliklerle kodlama ve bilgi işlemsel düşünmenin temellerini keşfedin. İster kodlamada yeni olun, ister öğretiminize veya eğitim oturumlarınıza entegre etmek için yeni fikirler arıyor olun, Learning Bits hayal gücünüzü harekete geçirecek ve sağlam bir başlangıç noktası sağlayacaktır.",
+'watch-learn-title'=>'İzleyin ve Öğrenin',
+'watch-learn-text'=>'İlgi çekici Öğrenme Bitleri aracılığıyla kodlamanın temellerini keşfedin. Yaklaşık 15 dakika süren bu küçük modüller, kodlama ve bilgi işlemsel düşünme ile ilgili temel kavramları tanıtır. Teorik içgörülere ek olarak, modüller, bu kavramların çeşitli eğitim ortamlarında nasıl uygulanacağına dair pratik ipuçları sağlar - ister çocuklara, ister öğrencilere veya yetişkin öğrencilere öğretiyor olun.',
+'get-hands-on-title' =>'Uygulamaları Edinin',
+'get-hands-on-text' =>'Bir Öğrenme Biti seçin, eğitici videoyu izleyin ve beraberindeki materyallerle birlikte uygulamalı etkinlikleri keşfedin. İster kodlamada yeni olun, ister yeni, yaratıcı öğretim fikirleri arıyor olun, Kodlama Temelleri sizi öğrencilerinizde dijital merak ve yaratıcılığı ateşleyecek araçlarla donatacaktır.',
+'share-inspire-title' =>'Paylaşın ve İlham Verin',
+'share-inspire-text1' =>'Bir veya daha fazla Kod Haftası Öğrenme Bitini tamamladıktan sonra, dijital yaratıcılığınızı eğitim ortamınıza getirmenizi ve etkinliğinizi Kod Haftası haritasına sabitlemenizi öneririz!',
+'share-inspire-text2' =>'Sınıfınızda bir ders, bir toplum merkezinde bir atölye çalışması veya kuruluşunuzda açık bir etkinlik düzenleyebilirsiniz. Sadece bir tarih seçin ve etkinliğinizi <a href="/events" class="font-semibold text-dark-blue underline">Kod Haftası</a>. Haritası\'na kaydedin. Her aktivite organizatörüne çabaları için bir katılım belgesi verilecektir.',
+'share-inspire-text3' =>'Hevesli öğretmenlerden oluşan uluslararası bir grupla bağlantı kurmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">öğretmenler için AB Kod Haftası Facebook grubuna</a>! katılın! Bir adım daha ileri gitmek ve ülkenizdeki veya sınırların ötesindeki diğer okullarla işbirliği yapmak için AB <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Kodu Hafta 4 Tümü yarışmasına</a> katılın.',
 ];

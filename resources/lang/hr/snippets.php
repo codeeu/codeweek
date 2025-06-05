@@ -43,4 +43,7 @@ return [
         8 => 'Pogledajte Cristianu Lucaci, ambasadoricu Rumunjske, koja objašnjava zašto je tjedan programiranja zahvalan svojoj zajednici',
     ],
 
+    'learn_and_teach_1' => 'Repozitorij resursa za početak ili nastavak vašeg putovanja u svijet programiranja te razvoj digitalnih i tehničkih vještina – sve dostupno besplatno.',
+    'learn_and_teach_2' => 'Programiranje i kodiranje ključne su kompetencije koje su sve traženije u svim područjima, a Europski tjedan programiranja želi vas podržati u poučavanju i učenju! Pregledajte naš repozitorij i pronađite savršen resurs za početak ili nastavak vašeg putovanja u programiranju. Svi resursi su besplatni, a  pretraživanje možete filtrirati prema naslovu, vrsti resursa, razini vještine, programskom jeziku, nastavnom predmetu, kategoriji i jeziku.',
+
 ];

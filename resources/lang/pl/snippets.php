@@ -43,4 +43,7 @@ return [
         8 => 'Cristiana Lucaci, ambasadorka z Rumunii, opowiada, dlaczego Tydzień Kodowania jest wdzięczny skupionej wokół niego społeczności',
     ],
 
+    'learn_and_teach_1' => 'Repozytorium zasobów, dzięki którym możesz rozpocząć lub kontynuować swoją przygodę z kodowaniem oraz rozwijać umiejętności cyfrowe i techniczne – wszystko dostępne bezpłatnie.',
+    'learn_and_teach_2' => 'Kodowanie i programowanie to kluczowe kompetencje, które są coraz bardziej poszukiwane w każdej dziedzinie, a Europejski Tydzień Kodowania chce Cię wspierać w nauczaniu i uczeniu się! Przejrzyj nasze repozytorium i znajdź idealne źródło informacji, aby rozpocząć lub kontynuować swoją przygodę z kodowaniem. Wszystkie te zasoby są bezpłatne. Nie zapominaj, że możesz filtrować wyszukiwanie według tytułu, typu zasobu, poziomu umiejętności, języka programowania, tematu, kategorii i języka.',
+
 ];

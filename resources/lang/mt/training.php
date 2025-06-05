@@ -355,6 +355,15 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
 <p>
     Jekk tixtieq tingħaqad ma’ grupp internazzjonali ta’ għalliema entużjastiċi, issieħeb fil-<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupp ta’ Facebook tal-Ġimgħa tal-UE tal-Ikkowdjar għall-għalliema</a>! Biex tieħu pass oltre u tikkollabora ma’ skejjel oħra f’pajjiżek jew bejn il-fruntieri – issieħeb fl-<a href="/codeweek4all">isfida Ġimgħa tal-Ikkowdjar għal Kulħadd</a>.
 </p>'
-    ]
-
+    ],
+'training-text'=>'Materjali lest għall-użu li jgħinuk tintroduċi affarijiet bażiċi ta\' coding u ppjana l-lezzjoni innovattiva li jmiss tiegħek.',
+'quick-practical-text1'=> "Skopri l-essenzjali tal-coding u l-ħsieb komputazzjonali permezz ta 'attivitajiet prattiċi  ddisinjati għall-edukaturi, l-istudenti, u kull min hu ħerqan li jesplora d-dinja diġitali. Kemm jekk int ġdid biex tagħmel il-coding jew tfittex ideat ġodda biex tintegra fis-sessjonijiet tat-tagħlim jew tat-taħriġ tiegħek, Learning Bits se jqanqlu l-immaġinazzjoni tiegħek u jipprovdu punt tat-tluq solidu.",
+'watch-learn-title'=>'Ara u Tgħallem',
+'watch-learn-text'=>'Skopri l-essenzjali tal-codingi permezz tal-involviment ta \'Learning Bits. Dawn il-moduli, li jdumu madwar 15-il minuta jintroduċu kunċetti ewlenin relatati mal-coding u l-ħsieb komputazzjonali. Minbarra l-għarfien teoretiku, il-moduli jipprovdu pariri prattiċi dwar kif tapplika dawn il-kunċetti f\'diversi ambjenti edukattivi – kemm jekk qed tgħallem tfal, studenti jew studenti adulti.',
+'get-hands-on-title' =>'Ikseb Hands-On',
+'get-hands-on-text' =>'Agħżel Learning Bit, ara l-video ta\' istruzzjoni, u esplora attivitajiet hands-on bil-materjali li jakkumpanjawhom. Kemm jekk int ġdid għall-coding jew qed tfittex ideat ta \'tagħlim ġodda u kreattivi, Coding Basics se jarmawk bl-għodda biex tqanqal kurżità u kreattività diġitali fl-istudenti tiegħek.',
+'share-inspire-title' =>'Aqsam u Ispira',
+'share-inspire-text1' =>'Ladarba tkun lestejt waħda jew aktar Code Week Learning Bits, inħeġġuk iġġib il-kreattività diġitali fl-ambjent edukattiv tiegħek u tpoġġi l-attività tiegħek fuq il-mappa tal- <a href="/events" class="font-semibold text-dark-blue underline">EU Code Week.</a>',
+'share-inspire-text2' =>'Tista\' torganizza lezzjoni fil-klassi tiegħek, workshop f\'ċentru tal-komunità, jew avveniment miftuħ fl-organizzazzjoni tiegħek. Sempliċement agħżel data u rreġistra l-attività tiegħek fuq il-Mappa tal-<a href="/events" class="font-semibold text-dark-blue underline">EU Code Week</a>. Kull organizzatur tal-attività se jikseb ċertifikat ta\' parteċipazzjoni għall-isforz tiegħu',
+'share-inspire-text3' =>'Jekk tixtieq tikkonnettja ma\' grupp internazzjonali ta\' għalliema entużjasti, ingħaqad mal-grupp ta\' Facebook tal-EU Code Week  <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">għall-għalliema</a>! Biex tagħmel pass ieħor u tikkollabora ma\' skejjel oħra f\'pajjiżek jew bejn il-fruntieri – ingħaqad mal-UE <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Code Week 4 All challenge</a>.',
 ];

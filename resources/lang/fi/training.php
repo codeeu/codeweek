@@ -352,6 +352,15 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
         'text' => '<p>Voit helposti järjestää oppitunnin luokassasi, avoimien ovien päivän tai tapahtuman koulullasi. Sovi vain päivä ja merkitse tapahtuma <a href="/events">koodausviikkokarttaan</a>. Jokainen tapahtumajärjestäjä saa osallistumistodistuksen.</p>
 
 <p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Pienikokoiset, käyttövalmiit materiaalit, jotka auttavat sinua esittelemään koodauksen perusteet ja suunnittelemaan seuraavaa innovatiivista oppituntiasi.',
+'quick-practical-text1'=> "Tutustu koodauksen ja laskennallisen ajattelun perusasioihin pienikokoisilla, käytännöllisillä aktiviteeteilla, jotka on suunniteltu opettajille, opiskelijoille ja kaikille, jotka haluavat tutustua digitaaliseen maailmaan. Olitpa sitten uusi koodauksessa tai etsit tuoreita ideoita integroitavaksi opetus- tai koulutustilaisuuksiin, Learning Bits herättää mielikuvituksesi ja tarjoaa vankan lähtökohdan.",
+'watch-learn-title'=>'Katso ja opi',
+'watch-learn-text'=>'Tutustu koodauksen perusteisiin mukaansatempaavien oppimisbittien avulla. Nämä noin 15 minuuttia kestävät pienet moduulit esittelevät koodaukseen ja laskennalliseen ajatteluun liittyviä keskeisiä käsitteitä. Teoreettisten näkemysten lisäksi moduulit tarjoavat käytännön vinkkejä näiden käsitteiden soveltamiseen erilaisissa koulutusympäristöissä – opetitpa sitten lapsia, opiskelijoita tai aikuisopiskelijoita.',
+'get-hands-on-title' =>'Hanki käytännönläheisiä',
+'get-hands-on-text' =>'Valitse oppimisbitti, katso opetusvideo ja tutustu käytännön aktiviteetteihin oheisten materiaalien avulla. Olitpa uusi koodauksessa tai etsit tuoreita, luovia opetusideoita, Coding Basics antaa sinulle työkalut, jotka herättävät oppijoissasi digitaalisen uteliaisuuden ja luovuuden.',
+'share-inspire-title' =>'Jaa ja inspiroi',
+'share-inspire-text1' =>'Kun olet suorittanut yhden tai useamman koodausviikon oppipalasen, kannustamme sinua tuomaan digitaalisen luovuuden koulutusympäristöösi ja kiinnittämään aktiivisuutesi <a href="/events" class="font-semibold text-dark-blue underline">koodausviikon karttaan</a>!',
+'share-inspire-text2' =>'Voit järjestää oppitunnin omassa luokassasi, työpajan monitoimitalossa tai avoimen tapahtuman organisaatiossasi. Valitse vain päivämäärä ja rekisteröi aktiivisuutesi <a href="/events" class="font-semibold text-dark-blue underline">koodiviikon kartalle</a>. Jokainen toiminnan järjestäjä saa ponnisteluistaan osallistumistodistuksen.',
+'share-inspire-text3' =>'Jos haluat olla yhteydessä kansainväliseen innokkaiden opettajien ryhmään, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">EU:n koodausviikon Facebook-ryhmään opettajille</a>! Jos haluat ottaa askeleen pidemmälle ja tehdä yhteistyötä muiden koulujen kanssa omassa maassasi tai rajojen yli, liity EU:n <a href="/codeweek4all" class="font-semibold text-dark-blue underline">koodausviikon 4 Kaikki -haasteeseen</a>.',
 ];

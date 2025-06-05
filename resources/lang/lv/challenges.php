@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram vai Twitter',
         'Izmantojiet',
     ],
+
+    'challenges-text'=>'Aktivitāšu kopums, ko varat veikt pats, klasē, kopā ar kolēģiem vai draugiem.',
+    'challenges-sub-title'=>'Jūs vēlētos piedalīties ES programmēšanas nedēļā, bet jums īsti nav priekšstata par to, ko organizēt?',
+    'challenges-sub-text1'=>'Nemeklējiet tālāk! Kopā ar ES programmēšanas nedēļas partneriem mēs esam izstrādājuši viegli izpildāmu izaicinājumu izlasi ar konkrētiem piemēriem, kā tos izmantot klasē vai grupā. Ir arī vadlīnijas par to, kā izpildīt izaicinājumus, taču jūs varat tos pielāgot tā, lai tie atbilstu jūsu dalībnieku vajadzībām, interesēm un vecumam.',
+    'challenges-sub-text2'=>'Jūs varat izmantot jebkurus rīkus un tehnoloģijas, kas jums patīk, taču mēs iesakām atvērtā pirmkoda resursus. Izvēlieties vienu vai vairākus izaicinājumus, pielāgojiet tos savai grupai vai klasei un dalieties ar rezultātiem Instagram, lai mudinātu vēl vairāk kolēģu un draugu pievienoties ES programmēšanas nedēļas jautrībai!',
 ];

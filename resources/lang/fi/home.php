@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'about' => 'EU:n koodausviikko on ruohonjuuritason aloite, jonka tavoitteena on edist&auml;&auml; koodausta ja digitaalista lukutaitoa hauskalla ja osallistavalla tavalla.',
+    'about' => 'EU:n koodausviikko on ruohonjuuritason aloite, jonka tavoitteena on edistää koodausta ja digitaalista lukutaitoa hauskalla ja osallistavalla tavalla.',
     'when' => '14.&ndash;27.10.2024',
-    'when_text' => 'Oppimalla koodaamaan opimme j&auml;sent&auml;m&auml;&auml;n ymp&auml;rill&auml;mme nopeasti muuttuvaa maailmaa, ymm&auml;rt&auml;m&auml;&auml;n teknologiaa sek&auml; kehitt&auml;m&auml;&auml;n taitoja ja valmiuksia, joiden avulla voimme keksi&auml; uusia ideoita ja innovaatioita.',
+    'when_text' => 'Oppimalla koodaamaan opimme jäsentämään ympärillämme nopeasti muuttuvaa maailmaa, ymmärtämään teknologiaa sekä kehittämään taitoja ja valmiuksia, joiden avulla voimme keksiä uusia ideoita ja innovaatioita.',
     'school_banner_title' => 'Osallistu!',
     'school_banner_text' => 'Oletko opettaja?',
     'school_banner_text2' => 'Napsauta tästä ja lue, miten voit osallistua!',

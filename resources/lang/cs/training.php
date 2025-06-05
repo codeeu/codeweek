@@ -380,6 +380,15 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
         'text' => '<p>Můžete snadno zorganizovat lekci ve své třídě, den otevřených dveří nebo akci ve své škole. Stačí si vybrat datum a zaregistrovat svou akci na <a href="/events">mapu na stránkách Týdne programování</a>. Za svou snahu každý organizátor akce dostane certifikát o účasti.</p>
 
 <p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="/codeweek4all">soutěže Code Week 4 All</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Materiály připravené k použití, které vám pomohou představit základy programování a naplánovat další inovativní lekci.',
+'quick-practical-text1'=> "Objevte základy kódování a počítačového myšlení prostřednictvím praktických aktivit určených pro pedagogy, studenty a kohokoli, kdo touží prozkoumat digitální svět. Ať už s programováním začínáte, nebo hledáte nové nápady, které byste mohli začlenit do své výuky nebo školení, Learning Bits podnítí vaši představivost a poskytne pevný výchozí bod.",
+'watch-learn-title'=>'Sledujte a učte se',
+'watch-learn-text'=>'Objevte základy kódování prostřednictvím poutavých Learning Bits. Tyto krátké moduly, které trvají přibližně 15 minut, představují klíčové koncepty související s kódováním a výpočetním myšlením. Kromě teoretických poznatků poskytují moduly praktické tipy, jak tyto koncepty aplikovat v různých vzdělávacích prostředích – ať už učíte děti, studenty nebo dospělé studenty.',
+'get-hands-on-title' =>'Vyzkoušejte si to',
+'get-hands-on-text' =>'Vyberte si Learning Bit, podívejte se na instruktážní video a prozkoumejte praktické aktivity s doprovodnými materiály. Ať už s programováním začínáte, nebo hledáte nové, kreativní nápady na výuku, Coding Basics vás vybaví nástroji, které ve vašich studentech podnítí digitální zvídavost a kreativitu.',
+'share-inspire-title' =>'Sdílejte a inspirujte',
+'share-inspire-text1' =>'Jakmile dokončíte jednu nebo více Learning Bits týdne programování, doporučujeme vám přenést digitální kreativitu do svého vzdělávacího prostředí a přidat svou aktivitu na  <a href="/events" class="font-semibold text-dark-blue underline">mapu týdne programování</a>!',
+'share-inspire-text2' =>'Můžete uspořádat lekci ve své třídě, workshop v komunitním centru nebo otevřenou akci ve vaší organizaci. Stačí si vybrat datum a zaregistrovat svou aktivitu na <a href="/events" class="font-semibold text-dark-blue underline">mapě týdne programování.</a>.Každý organizátor aktivity obdrží za své úsilí certifikát o účasti.',
+'share-inspire-text3' =>'Pokud se chcete spojit s mezinárodní skupinou nadšených učitelů, připojte se k facebookové <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">skupině pro učitele Evropský týden programování</a>! Chcete-li pokročit o krok dále a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí – zapojte se do výzvy EU <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Program week 4 All</a>.',
 ];

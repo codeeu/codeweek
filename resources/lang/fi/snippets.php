@@ -43,4 +43,7 @@ return [
         8 => 'Katso video, jolla koodausviikon Romanian lähettiläs Cristiana Lucaci kertoo, miksi kiitos koodausviikosta kuuluu yhteisöille.',
     ],
 
+    'learn_and_teach_1' => 'Resurssivarasto, jonka avulla voit aloittaa tai jatkaa koodausmatkaasi ja kehittää digitaalisia ja teknisiä taitoja – kaikki saatavilla ilmaiseksi.',
+    'learn_and_teach_2' => 'Koodaus ja ohjelmointi ovat avaintaitoja, joille on yhä enemmän kysyntää kaikilla aloilla, ja EU:n koodausviikko haluaa tukea sinua opetuksessasi ja oppimisessasi! Selaa arkistoamme ja löydä täydellinen resurssi koodausmatkasi aloittamiseen tai jatkamiseen. Kaikki nämä resurssit ovat maksuttomia. Älä unohda, että voit suodattaa hakusi otsikon, resurssityypin, taitotason, ohjelmointikielen, aiheen, luokan ja kielen mukaan.',
+
 ];

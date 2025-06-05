@@ -43,4 +43,7 @@ return [
         8 => 'Voir Cristiana Lucaci, ambassadrice de Roumanie, expliquer pourquoi la semaine du code est reconnaissante envers sa communauté',
     ],
 
+    'learn_and_teach_1' => 'Un référentiel de ressources pour commencer ou poursuivre votre parcours de codage et développer des compétences numériques et techniques, le tout disponible gratuitement.',
+    'learn_and_teach_2' => 'Le codage et la programmation sont des compétences clés qui sont de plus en plus demandées dans tous les domaines, et l\'EU Code Week veut vous soutenir dans votre enseignement et votre apprentissage ! Parcourez notre référentiel et trouvez la ressource parfaite pour commencer ou poursuivre votre parcours de codage. Toutes ces ressources sont gratuites. N\'oubliez pas que vous pouvez filtrer votre recherche par titre, type de ressource, niveau de compétence, langage de programmation, sujet, catégorie et langage.',
+
 ];

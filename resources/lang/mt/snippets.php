@@ -43,4 +43,7 @@ return [
         8 => 'Ara lil Cristiana Lucaci, Ambaxxatriċi għar-Rumanija dwar għaliex il-Ġimgħa tal-Ikkowdjar hija grata lejn il-komunità tagħha',
     ],
 
+    'learn_and_teach_1' => 'Repożitorju tar-riżorsi biex tibda jew tkompli l-vjaġġ tal-codingtiegħek u tiżviluppa ħiliet diġitali u tekniċi – kollha disponibbli mingħajr ħlas.',
+    'learn_and_teach_2' => "Il-Coding u l-ipprogrammar huma kompetenzi ewlenin li qed jitolbu dejjem aktar f'kull qasam, u l-EU Code Week trid tappoġġjak fit-tagħlim u t-tagħlim tiegħek! Ibbrawżja r-repożitorju tagħna u sib ir-riżorsa perfetta biex tibda jew tkompli l-vjaġġ tal-coding tiegħek. Dawn ir-riżorsi kollha huma mingħajr ħlas. Tinsiex li tista' tiffiltra t-tfittxija tiegħek skont it-titlu, it-tip ta' riżorsi, il-livell tal-ħiliet, il-lingwa tal-ipprogrammar, is-suġġett, il-kategorija u l-lingwa.",
+
 ];

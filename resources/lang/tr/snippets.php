@@ -43,4 +43,7 @@ return [
         8 => 'Kod Haftası’nın neden katılımcılarına minnettar olduğunu Romanya elçisi Cristiana Lucaci’den dinleyin',
     ],
 
+     'learn_and_teach_1' => 'Kodlama yolculuğunuza başlamak veya devam etmek ve dijital ve teknik beceriler geliştirmek için bir kaynak deposu - tümü ücretsiz olarak kullanılabilir.',
+    'learn_and_teach_2' => 'Kodlama ve programlama, her alanda giderek daha fazla talep gören temel becerilerdir ve AB Kod Haftası, öğretme ve öğrenmenizde sizi desteklemek istiyor! Depomuza göz atın ve kodlama yolculuğunuza başlamak veya devam etmek için mükemmel kaynağı bulun. Tüm bu kaynaklar ücretsizdir. Aramanızı başlığa, kaynak türüne, beceri düzeyine, programlama diline, konuya, kategoriye ve dile göre filtreleyebileceğinizi unutmayın.',
+
 ];

@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram ili Twitter',
         'Obavezno upotrijebite',
     ],
+
+    'challenges-text'=>'Zbirka aktivnosti koje možete raditi sami, u učionici, s kolegama ili prijateljima.',
+    'challenges-sub-title'=>'Željeli biste sudjelovati u Europskom tjednu programiranja, ali zapravo nemate ideju što organizirati?',
+    'challenges-sub-text1'=>'Ne tražite dalje! Zajedno s partnerima Europskog tjedna programiranja osmislili smo izbor jednostavnih izazova s konkretnim primjerima kako ih koristiti u učionici ili grupi. Postoje i smjernice o tome kako dovršiti izazove, ali ih možete prilagoditi tako da odgovaraju potrebama, interesima i dobi vaših sudionika.',
+    'challenges-sub-text2'=>'Možete koristiti sve alate i tehnologije koje želite, ali preporučujemo resurse iz otvorenih izvora. Odaberite jedan ili više izazova, prilagodite ih svojoj grupi ili učionici i podijelite rezultate na Instagramu kako biste potaknuli još više kolega i prijatelja da se pridruže Europskom tjednu programiranja!',
 ];

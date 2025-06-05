@@ -381,6 +381,15 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
         'text' => '<p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href=" / events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
 
 <p>Jei norite užmegzti ryšį su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės „Facebook“ grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo šalyje ar už jos ribų, prisijunkite prie <a href="/codeweek4all">„CodeWeek4All“ iššūkio</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Paruošta naudoti nedidelės apimties medžiaga, kuri padės įdiegti programavimo pagrindus ir pasirengti kitai naujoviškai pamokai.',
+'quick-practical-text1'=> "Susipažinkite su kodavimo ir kompiuterinio mąstymo pagrindais atlikdami nedidelės apimties praktines užduotis, skirtas pedagogams, mokiniams ir visiems, kurie nori tyrinėti skaitmeninį pasaulį. Jei tik pradedate programuoti arba ieškote naujų idėjų, kurias galėtumėte pritaikyti pamokose ar mokymuose, medžiagos moduliai sužadins jūsų vaizduotę ir taps tvirtu atspirties tašku.",
+'watch-learn-title'=>'Žiūrėkite ir mokykitės',
+'watch-learn-text'=>'Susipažinkite su programavimo pagrindais naudodamiesi patraukliais mokymosi moduliais. Šiuose maždaug 15 minučių trukmės moduliuose supažindinama su pagrindinėmis programavimo ir kompiuterinio mąstymo sąvokomis. Be teorinių įžvalgų, moduliuose pateikiama praktinių patarimų, kaip šias sąvokas taikyti įvairiose švietimo įstaigose - tiek mokant vaikus, moksleivius, tiek ir suaugusius.',
+'get-hands-on-title' =>'Įgykite praktinės patirties',
+'get-hands-on-text' =>'Pasirinkite mokymosi modulį, žiūrėkite mokomąjį vaizdo įrašą ir atlikite praktines veiklas su pridedama medžiaga. Ar būtumėte programavimo srities naujokas, ar ieškotumėte naujų, kūrybiškų mokymo idėjų, programavimo pagrindai suteiks jums priemonių, kurie padės žadinti mokinių skaitmeninį smalsumą ir kūrybiškumą.',
+'share-inspire-title' =>'Bendrinkite ir įkvėpkite',
+'share-inspire-text1' =>'Baigus vieną ar daugiau Programavimo savaitės mokymosi modulių, kviečiame į savo edukacinę aplinką įtraukti skaitmeninį kūrybiškumą ir pridėti savo veiklą <a href="/events" class="font-semibold text-dark-blue underline">Programavimo savaitės žemėlapyje</a>!',
+'share-inspire-text2' =>'Galite surengti pamoką savo klasėje, seminarą bendruomenės centre arba atvirą renginį savo organizacijoje. Tiesiog pasirinkite datą ir užregistruokite savo veiklą <a href="/events" class="font-semibold text-dark-blue underline">Programavimo savaitės žemėlapyje</a>.Kiekvienas veiklos organizatorius už savo pastangas gaus dalyvio pažymėjimą.',
+'share-inspire-text3' =>'Norėdami prisijungti prie tarptautinės mokytojų entuziastų, dalyvaukite <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">ES programavimo savaitės mokytojų feisbuko grupėje</a>! Jei norite eiti dar toliau ir bendradarbiauti su kitomis savo šalies ar užsienio mokyklomis, prisijunkite prie ES <a href="/codeweek4all" class="font-semibold text-dark-blue underline">programavimo savaitės visiems iššūkio</a>.',
 ];

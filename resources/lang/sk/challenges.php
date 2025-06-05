@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram alebo Twitter',
         'Nezabudnite uviesť',
     ],
+
+    'challenges-text'=>'Zbierka aktivít, ktoré môžete robiť sami, v triede, s kolegami alebo priateľmi.',
+    'challenges-sub-title'=>'Chceli by ste sa zúčastniť Európskeho týždňa programovania, ale neviete, čo zorganizovať?',
+    'challenges-sub-text1'=>'Už nehľadajte! Spolu s partnermi Európskeho týždňa programovania sme navrhli výber jednoduchých výziev s konkrétnymi príkladmi, ako ich použiť v triede alebo skupine. Existujú aj pokyny, ako výzvy splniť, ale môžete ich prispôsobiť tak, aby vyhovovali potrebám, záujmom a veku vašich účastníkov.',
+    'challenges-sub-text2'=>'Môžete použiť akékoľvek nástroje a technológie, ktoré sa vám páčia, ale odporúčame zdroje s otvoreným zdrojovým kódom. Vyberte si jednu alebo viacero výziev, prispôsobte ich svojej skupine alebo triede a zdieľajte výsledky na Instagrame, aby ste povzbudili ešte viac kolegov a priateľov, aby sa zapojili do zábavy v rámci Európskeho týždňa programovania!',
 ];
