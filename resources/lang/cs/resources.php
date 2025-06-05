@@ -23,6 +23,7 @@ return [
     'Subjects' => 'Předmět',
     'subjects_placeholder' => 'Vyberte Předmět, např. umění',
     'share' => 'Sdílet',
+    'search' => 'Prohledat',
     'communication_toolkit' => 'Komunikační nástroje',
     'teachers_toolkit' => 'Nástroje pro učitele',
     'leaflet' => 'Leták',
