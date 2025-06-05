@@ -2,7 +2,7 @@
 
 @php
     $list = [
-      (object) ['label' => 'My certificates', 'href' => ''],
+      (object) ['label' => 'Activity venues', 'href' => ''],
     ];
 @endphp
 @section('layout.breadcrumb')

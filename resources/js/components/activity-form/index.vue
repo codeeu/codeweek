@@ -186,40 +186,46 @@
 
             <div />
 
-            <button
-              class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
-              type="button"
-              :disabled="disableNextbutton"
-              :class="[
-                disableNextbutton
-                  ? 'cursor-not-allowed bg-gray-200 text-gray-400'
-                  : 'bg-primary hover:bg-hover-orange text-[#20262C]',
-              ]"
-              @click="
-                () => {
-                  if (step === 4) {
-                    if (event?.id) {
-                      handleGoMapPage();
-                    } else {
-                      handleReloadPage();
-                    }
-                  } else if (step === 3 && validStep3) {
-                    handleSubmit();
-                  } else if (step === 2 && validStep2) {
-                    handleMoveStep(3);
-                  } else if (step === 1 && validStep1) {
-                    handleMoveStep(2);
-                  }
-                }
-              "
+            <div
+              id="footer-scroll-activity"
+              class="flex justify-center max-sm:w-full sm:min-w-[224px]"
+              :class="[step < 4 ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]' : '!translate-y-0']"
             >
-              <template v-if="step === 4">
-                <span v-if="event?.id">Back to map page</span>
-                <span v-else>Add another activity</span>
-              </template>
-              <span v-else-if="step === 3">Submit</span>
-              <span v-else>Next step</span>
-            </button>
+              <button
+                class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
+                type="button"
+                :disabled="disableNextbutton"
+                :class="[
+                  disableNextbutton
+                    ? 'cursor-not-allowed bg-gray-200 text-gray-400'
+                    : 'bg-primary hover:bg-hover-orange text-[#20262C]',
+                ]"
+                @click="
+                  () => {
+                    if (step === 4) {
+                      if (event?.id) {
+                        handleGoMapPage();
+                      } else {
+                        handleReloadPage();
+                      }
+                    } else if (step === 3 && validStep3) {
+                      handleSubmit();
+                    } else if (step === 2 && validStep2) {
+                      handleMoveStep(3);
+                    } else if (step === 1 && validStep1) {
+                      handleMoveStep(2);
+                    }
+                  }
+                "
+              >
+                <template v-if="step === 4">
+                  <span v-if="event?.id">Back to map page</span>
+                  <span v-else>Add another activity</span>
+                </template>
+                <span v-else-if="step === 3">Submit</span>
+                <span v-else>Next step</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -322,7 +328,7 @@ export default {
       language: props.locale ? [props.locale] : [],
       country_iso: props.location.country_iso || '',
       is_use_resource: 'false',
-      privacy: String(props.user?.privacy === 1),
+      privacy: false,
     });
     const formValues = ref(_.clone(defaultFormValues.value));
 
@@ -370,6 +376,10 @@ export default {
 
       if (['open-online', 'invite-online'].includes(data.activity_type)) {
         requiredFields.push('event_url');
+      }
+
+      if (!data.privacy) {
+        return false;
       }
 
       return requiredFields.every((field) => !_.isEmpty(data[field]));
@@ -431,7 +441,7 @@ export default {
         event_url: values.event_url,
         contact_person: values.contact_person,
         user_email: values.user_email,
-        privacy: values.privacy === 'true' ? 'on' : undefined,
+        privacy: values.privacy === true ? 'on' : undefined,
       };
 
       if (values.is_recurring_event_local === 'true') {

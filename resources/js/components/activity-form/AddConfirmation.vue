@@ -33,6 +33,7 @@
 <script>
 import { computed } from 'vue';
 import { trans } from 'laravel-vue-i18n';
+import _ from 'lodash';
 
 import { useDataOptions } from './mixins.js';
 
@@ -238,9 +239,24 @@ export default {
       ];
 
       return [
-        { title: 'Activity overview', list: step1List },
-        { title: 'Who is the activity for', list: step2List },
-        { title: 'Organiser', list: step3List },
+        {
+          title: 'Activity overview',
+          list: step1List.filter(
+            ({ value }) => !_.isNil(value) && !_.isEmpty(value)
+          ),
+        },
+        {
+          title: 'Who is the activity for',
+          list: step2List.filter(
+            ({ value }) => !_.isNil(value) && !_.isEmpty(value)
+          ),
+        },
+        {
+          title: 'Organiser',
+          list: step3List.filter(
+            ({ value }) => !_.isNil(value) && !_.isEmpty(value)
+          ),
+        },
       ];
     });
 
