@@ -40,7 +40,7 @@ return [
         'placeholder' => 'Organisation you work in or volunteer for',
     ],
     'website' => [
-        'label' => 'Organiser\'s Website',
+        'label' => 'Website',
         'placeholder' => 'Do you have a website with more information ?',
     ],
     'description' => [
@@ -58,11 +58,11 @@ return [
 
     ],
     'title' => [
-        'label' => 'Activity Title',
+        'label' => 'Activity title',
         'placeholder' => 'What is the name of the activity ?',
     ],
     'address' => [
-        'label' => 'Address',
+        'label' => 'Activity address',
         'placeholder' => 'Where will the activity be taking place?',
     ],
 
@@ -89,28 +89,24 @@ return [
     ],
 
     'theme' => [
-        'Basic programming concepts' => 'Basic programming concepts',
-        'Web development' => 'Web development',
-        'Mobile app development' => 'Mobile app development',
-        'Software development' => 'Software development',
-        'Data manipulation and visualisation' => 'Data manipulation and visualisation',
-        'Robotics' => 'Robotics',
-        'Hardware' => 'Hardware',
+        'AI & Generative AI' => 'AI & Generative AI',
+        'Robotics, Drones & Smart Devices' => 'Robotics, Drones & Smart Devices',
+        'Web, App & Software Development' => 'Web, App & Software Development',
+        'Game Design' => 'Game Design',
+        'Cybersecurity & Data' => 'Cybersecurity & Data',
+        'Visual/Block Programming' => 'Visual/Block Programming',
+        'Art & Creative Coding' => 'Art & Creative Coding',
+        'Internet of Things & Wearables' => 'Internet of Things & Wearables',
+        'AR, VR & 3D Technologies' => 'AR, VR & 3D Technologies',
+        'Digital Careers & Learning Pathways' => 'Digital Careers & Learning Pathways',
+        'Digital Literacy & Soft Skills' => 'Digital Literacy & Soft Skills',
+        'Unplugged & Playful Activities' => 'Unplugged & Playful Activities',
+        'Promoting Diversity & Inclusion' => 'Promoting Diversity & Inclusion',
+        'Awareness & Inspiration' => 'Awareness & Inspiration',
         'Other' => 'Other',
-        'Unplugged activities' => 'Unplugged activities',
-        'Playful coding activities' => 'Playful coding activities',
-        'Art and creativity' => 'Art and creativity',
-        'Visual/Block programming' => 'Visual/Block programming',
-        'Game design' => 'Game design',
-        'Internet of things and wearable computing' => 'Internet of things and wearable computing',
-        '3D printing' => '3D printing',
-        'Augmented reality' => 'Augmented reality',
-        'Artificial intelligence' => 'Artificial intelligence',
-        'Motivation and awareness raising' => 'Motivation and awareness raising',
-        'Promoting diversity' => 'Promoting diversity',
     ],
     'codeweek_for_all_participation_code' => [
-        'title' => 'CODE WEEK 4 ALL CODE',
+        'title' => 'Code week 4 all code',
         'explanation' => 'If you have received a Code Week 4 all code from a school colleague or a friend paste it here, otherwise please leave it blank. More info about Code Week 4 All are available',
         'link' => 'here',
     ],
@@ -133,13 +129,19 @@ return [
         'Other' => 'Other',
     ],
     'activitytype' => [
-        'label' => 'Activity Type',
+        'label' => 'Activity type',
         'placeholder' => '',
         'open-online' => 'Open online activity',
         'invite-online' => 'Invite-only online activity',
         'open-in-person' => 'Open in-person activity',
         'invite-in-person' => 'Invite-only in-person activity',
 
+    ],
+    'duration' => [
+      '0-1-hour' => '0-1 hours',
+      '1-2-hours' => '1-2 hours',
+      '2-4-hours' => '2-4 hours',
+      'more-than-4-hours' => 'longer than 4 hours',
     ],
 
     'More' => 'More',
