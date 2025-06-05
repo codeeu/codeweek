@@ -37,6 +37,13 @@ class EventsQuery
             abort(503, 'Title error');
         }
 
+        if (!isset($request['participants_count'])) {
+            $request['participants_count'] = (int) $request['males_count'] + (int) $request['females_count'] + (int) $request['other_count'];
+            if ($request['participants_count'] > 0) {
+                $request['percentage_of_females'] = number_format((int) $request['females_count'] / (int) $request['participants_count'] * 100, 2);
+            }
+        }
+
         $request['pub_date'] = Carbon::now();
         $request['created'] = Carbon::now();
         $request['updated'] = Carbon::now();
@@ -62,6 +69,14 @@ class EventsQuery
             $request['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
         }
 
+        if (!empty($request['activity_format']) && is_string($request['activity_format'])) {
+            $request['activity_format'] = explode(',', $request['activity_format']);
+        }
+        
+        if (!empty($request['ages']) && is_string($request['ages'])) {
+            $request['ages'] = explode(',', $request['ages']);
+        }
+        
         $event = Event::create($request->toArray());
 
         if (! empty($request['tags'])) {
@@ -101,9 +116,24 @@ class EventsQuery
         $request['latitude'] = explode(',', $request['geoposition'])[0];
         $request['longitude'] = explode(',', $request['geoposition'])[1];
 
+        if (!isset($request['participants_count'])) {
+            $request['participants_count'] = (int) $request['males_count'] + (int) $request['females_count'] + (int) $request['other_count'];
+            if ($request['participants_count'] > 0) {
+                $request['percentage_of_females'] = number_format((int) $request['females_count'] / (int) $request['participants_count'] * 100, 2);
+            }
+        }
+
         //In order to appear again in the list for the moderators
         if ($event->status == 'REJECTED') {
             $request['status'] = 'PENDING';
+        }
+
+        if (!empty($request['activity_format']) && is_string($request['activity_format'])) {
+            $request['activity_format'] = explode(',', $request['activity_format']);
+        }
+        
+        if (!empty($request['ages']) && is_string($request['ages'])) {
+            $request['ages'] = explode(',', $request['ages']);
         }
 
         $event->update($request->toArray());

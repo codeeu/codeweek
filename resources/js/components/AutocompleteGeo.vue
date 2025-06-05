@@ -37,21 +37,26 @@ export default {
     geoposition: String,
     location: String
   },
-  setup(props) {
+  emits: ['onChange'],
+  setup(props, { emit }) {
     const item = ref(props.value ? { name: props.value } : null);
     const items = ref(null);
     const template = ItemTemplate;
-    const inputAttrs = {
+    const inputAttrs = ref({
       placeholder: props.placeholder,
       name: props.name,
       autocomplete: "off"
-    };
+    });
     const localGeoposition = ref(props.geoposition);
     const initialLocation = props.location;
 
-
+    watch(() => props.placeholder, () => {
+      inputAttrs.value.placeholder = props.placeholder;
+    });
 
     const itemSelected = (selectedItem) => {
+      emit('onChange', { location: selectedItem?.name || '' });
+
       if (selectedItem && selectedItem.name && selectedItem.magicKey) {
         const baseURL = "/api/proxy/geocode"; // Update to your Laravel endpoint
         axios.get(baseURL, {
@@ -66,7 +71,16 @@ export default {
             window.map.setView([candidate.location.y, candidate.location.x], 16);
           }
           const countryIso2 = findCountry(candidate.attributes.Country).iso2;
-          document.getElementById('id_country').value = countryIso2;
+
+          emit('onChange', {
+            location: selectedItem?.name || '',
+            geoposition: [candidate.location.y, candidate.location.x],
+            country_iso: countryIso2 || '',
+          });
+
+          if (document.getElementById('id_country')) {
+            document.getElementById('id_country').value = countryIso2;
+          }
         }).catch(error => {
           console.error('Error:', error);
         });
