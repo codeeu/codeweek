@@ -2,26 +2,26 @@
 
 namespace App\Console\Commands\excel;
 
-use App\Imports\EventiEventsImport;
+use App\Imports\EventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class EventiEvents extends Command
+class EventsImporter extends Command
 {
   /**
    * The name and signature of the console command.
    *
    * @var string
    */
-  protected $signature = 'excel:eventi';
+  protected $signature = 'excel:events-import';
 
   /**
    * The console command description.
    *
    * @var string
    */
-  protected $description = 'eventi 2025 From Excel File';
+  protected $description = 'events 2025 From Excel File';
 
   /**
    * Create a new command instance.
@@ -38,11 +38,12 @@ class EventiEvents extends Command
    */
   public function handle(): void
   {
-    Log::info('Loading eventi Excel File');
+    Log::info('Loading events Excel File');
 
     Excel::import(
-      new EventiEventsImport(),
-      resource_path('excel/.xlsx')
+      new EventsImporter(),
+            '3-june.xlsx',
+            'excel'
     );
   }
 }
