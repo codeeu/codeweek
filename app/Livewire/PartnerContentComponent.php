@@ -513,17 +513,6 @@ class PartnerContentComponent extends Component
                 'link_url' => 'https://www.avanade.com/en-gb',
                 'main_img_url' => 'images/partners/avanade.png'
             ],
-            (object)[
-                'id' => 48,
-                'name' => 'EU-ASE',
-                'logo_url' => 'images/partners/eu-ase.png',
-                'categories' => ['Partners'],
-                'description' => 'The European Alliance to Save Energy (EU-ASE) is a cross-sectoral, business led organisation which aims to ensure that the voice of energy efficiency is heard across Europe.
-                <br/>
-                EU-ASE members have operations across all the 27 Member States of the European Union, employ over 340.000 people in the EU and have an aggregated annual turnover of €115 billion.',
-                'link_url' => 'https://euase.net/',
-                'main_img_url' => 'images/partners/eu-ase.png'
-            ],
         ]);
     }
 
