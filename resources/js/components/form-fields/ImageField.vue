@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div v-if="pictureClone" class="mb-4">
-      <img :src="pictureClone" class="mr-1" />
-    </div>
 
     <form method="POST" enctype="multipart/form-data">
       <div
@@ -12,7 +9,10 @@
         @dragleave="onDragLeave"
         @drop.prevent="onDrop"
       >
-        <img class="w-16 h-16" src="/images/icon_image.svg" />
+        <div v-if="pictureClone" class="mb-4">
+          <img :src="pictureClone" class="mr-1" />
+        </div>
+        <img v-else class="w-16 h-16" src="/images/icon_image.svg" />
 
         <span class="text-xl text-slate-500">
           Drop your image here, or

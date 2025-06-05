@@ -27,7 +27,6 @@
         required
         name="participants_count"
         placeholder="Enter number"
-        @onBlur="handleCorrectCount('males_count')"
       />
 
       <template #end>
@@ -38,7 +37,9 @@
             Of this number, how many are
           </label>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4"
+          >
             <FieldWrapper label="Males" name="males_count" :errors="errors">
               <InputField
                 v-model="formValues.males_count"
@@ -206,36 +207,11 @@ export default {
     };
 
     const handleCorrectCount = (currentField) => {
-      const fields = ['males_count', 'females_count', 'other_count'];
-      const [primaryField, secondaryField] = fields.filter(
-        (field) => field !== currentField
-      );
-
       const allCount = Number(props.formValues.participants_count || '0');
       const currentCount = Number(props.formValues[currentField] || '0');
-      const primaryCount = Number(props.formValues[primaryField] || '0');
-      const secondaryCount = Number(props.formValues[secondaryField] || '0');
-
-      if (!currentCount && !primaryCount && !secondaryCount) {
-        return;
-      }
 
       if (currentCount > allCount) {
         props.formValues[currentField] = allCount;
-        props.formValues[primaryField] = 0;
-        props.formValues[secondaryField] = 0;
-      } else if (currentCount + primaryCount > allCount) {
-        props.formValues[primaryField] = allCount - currentCount;
-        props.formValues[secondaryField] = 0;
-      } else if (currentCount + primaryCount + secondaryCount > allCount) {
-        props.formValues[primaryField] = primaryCount;
-        props.formValues[secondaryField] = Math.max(
-          allCount - currentCount - primaryCount,
-          0
-        );
-      } else {
-        props.formValues[primaryField] = allCount - currentCount - primaryCount;
-        props.formValues[secondaryField] = 0;
       }
     };
 

@@ -86,9 +86,10 @@
       </div>
     </template>
 
-    <template #caret>
+    <template #caret="{ toggle }">
       <div
-        class="absolute top-1/2 right-4 -translate-y-1/2 pointer-events-none"
+        class="cursor-pointer absolute top-1/2 right-4 -translate-y-1/2"
+        @mousedown.prevent="toggle"
       >
         <img src="/images/select-arrow.svg" />
       </div>
