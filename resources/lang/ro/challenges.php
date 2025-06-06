@@ -93,4 +93,9 @@ return [
         'Facebook, Instagram sau Twitter',
         'Nu uitați să folosiți',
     ],
+
+    'challenges-text'=>'O colecție de activități pe care le puteți face singur, în clasă, cu colegii sau prietenii.',
+    'challenges-sub-title'=>'Ați dori să participați la Săptămâna UE a programării, dar nu aveți idee ce să organizați?',
+    'challenges-sub-text1'=>'Nu căutați mai departe! Împreună cu partenerii EU Code Week, am conceput o selecție de provocări ușor de realizat, cu exemple concrete despre cum să le folosești într-o clasă sau într-un grup. Există, de asemenea, linii directoare despre cum să finalizați provocările, dar le puteți adapta astfel încât să se potrivească nevoilor, intereselor și vârstei participanților dvs.',
+    'challenges-sub-text2'=>'Puteți utiliza orice instrumente și tehnologii doriți, dar vă recomandăm resurse open-source. Alege una sau mai multe provocări, adaptează-le grupului tău sau clasei tale și distribuie rezultatele pe Instagram pentru a încuraja și mai mulți colegi și prieteni să se alăture distracției EU Code Week!',
 ];

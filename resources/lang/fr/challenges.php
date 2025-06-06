@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram ou Twitter',
         "Assurez-vous d'ajouter",
     ],
+
+    'challenges-text'=>'Une collection d\'activités que vous pouvez faire seul, en classe, avec des collègues ou des amis.',
+    'challenges-sub-title'=>'Vous aimeriez participer à l\'EU Code Week mais vous n\'avez pas vraiment d\'idée de ce qu\'il faut organiser ? ',
+    'challenges-sub-text1'=>'Ne cherchez pas plus loin ! En collaboration avec les partenaires de l\'EU Code Week, nous avons conçu une sélection de défis faciles à relever avec des exemples concrets de la façon de les utiliser en classe ou en groupe. Il existe également des directives sur la façon de relever les défis, mais vous pouvez les adapter pour qu\'ils correspondent aux besoins, aux intérêts et à l\'âge de vos participants.',
+    'challenges-sub-text2'=>'Vous pouvez utiliser les outils et les technologies de votre choix, mais nous vous recommandons d\'utiliser des ressources open source. Choisissez un ou plusieurs défis, adaptez-le à votre groupe ou à votre classe, et partagez les résultats sur Instagram pour encourager encore plus de collègues et d\'amis à participer à la Semaine du code de l\'UE !',
 ];

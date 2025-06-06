@@ -237,3 +237,195 @@ body:not(.new-layout) {
 }
 
 @import "pages/cookie";
+
+
+/*Error Pages*/
+
+#codeweek-error-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .error-container {
+       display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+        background-color: white;
+    }
+
+    .error-box {
+        max-width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+		    z-index: 2;
+    }
+
+    .error-box h1 {
+        color: var(--Dark-Blue-500, #1C4DA1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 144px;
+        letter-spacing: -2.4px;
+    }
+
+    .error-robot svg {
+      max-width: 915px;
+      margin: 0 auto;
+    }
+
+    .error-box p {
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        color: #003087;
+        padding:0;
+    }
+
+    .error-box a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      color: var(--Slate-600, #20262C);
+      font-family: Blinker;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      background-color: #f25022;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+	.error-robot {
+		z-index: 1;
+	}
+  
+  .error-box a:hover {
+    background-color: rgb(251 157 122);
+  }
+
+  .desktop-robot {
+    display: block;
+  }
+
+  .mobile-robot {
+    display: none;
+  }
+  .footer-ellipse {
+    position: absolute;
+    height: 324px;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+
+  @media (min-width: 568px) and (max-width: 1024px) {
+
+    .error-container {
+      padding: 40px 0;
+    }
+
+  .error-robot svg {
+        max-width: 568px;
+        margin: 0 auto;
+      }  
+      .error-box h1 {
+        color: var(--Dark-Blue-500, #1C4DA1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 44.984px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 53.98px; /* 120% */
+        letter-spacing: -0.9px;
+      }
+
+      .error-box p {
+        color: var(--Dark-Blue-500, #1C4DA1);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 11.996px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 14.995px; /* 125% */
+      }
+  }
+
+  @media (max-width: 568px) {        
+    #codeweek-error-page {
+        justify-content: flex-start;
+    }
+    .desktop-robot {
+        display: none;
+    }
+
+    .mobile-robot {
+        display: block;
+    }
+
+    .error-box h1 {
+      color: var(--Dark-Blue-500, #1C4DA1);
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 44.984px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 53.98px; /* 120% */
+      letter-spacing: -0.9px;
+    }
+
+    .error-box p {
+      color: var(--Dark-Blue-500, #1C4DA1);
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 11.996px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 14.995px; /* 125% */
+      max-width: 150px;
+      margin: 0 auto;
+    }
+    .error-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 80px 0;
+      background-color: #fff;
+    }
+
+    .error-box {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+    }
+
+    .error-box a {
+      display: flex;
+      height: 48px;
+      padding: 16px 40px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      min-width: 250px;
+   }
+
+    .footer-ellipse {
+      height: 220px;
+    }
+  }

@@ -43,4 +43,7 @@ return [
         8 => 'Kijk naar Cristiana Lucaci, de ambassadeur voor Roemenië, over waarom de Code Week zijn gemeenschap dankbaar is',
     ],
 
+    'learn_and_teach_1' => 'Een opslagplaats van bronnen om uw codeerreis te beginnen of voort te zetten en digitale en technische vaardigheden te ontwikkelen - allemaal gratis beschikbaar.',
+    'learn_and_teach_2' => 'Coderen en programmeren zijn sleutelcompetenties waar op elk gebied steeds meer vraag naar is, en de EU Code Week wil u ondersteunen bij uw lesgeven en leren! Blader door onze verzameling en vind de perfecte bron om uw codeerreis te beginnen of voort te zetten. Al deze bronnen zijn gratis. Vergeet niet dat u uw zoekopdracht kunt filteren op titel, brontype, vaardigheidsniveau, programmeertaal, onderwerp, categorie en taal.',
+
 ];

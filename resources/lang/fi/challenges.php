@@ -93,4 +93,9 @@ return [
         'Facebookiin, Instagramiin tai Twitteriin.',
         'Muista käyttää aihetunnistetta',
     ],
+
+    'challenges-text'=>'Kokoelma aktiviteetteja, joita voit tehdä yksin, luokkahuoneessa, kollegoiden tai ystävien kanssa.',
+    'challenges-sub-title'=>'Haluaisitko osallistua EU:n koodausviikolle, mutta sinulla ei ole aavistustakaan siitä, mitä järjestäisit?',
+    'challenges-sub-text1'=>'Älä etsi enää! Olemme suunnitelleet yhdessä EU:n koodausviikon kumppaneiden kanssa valikoiman helppoja haasteita ja konkreettisia esimerkkejä niiden käyttämisestä luokkahuoneessa tai ryhmässä. Haasteiden suorittamiseen on myös ohjeita, mutta voit mukauttaa niitä osallistujien tarpeiden, kiinnostuksen kohteiden ja iän mukaan.',
+    'challenges-sub-text2'=>'Voit käyttää mitä tahansa työkaluja ja tekniikoita, mutta suosittelemme avoimen lähdekoodin resursseja. Valitse yksi tai useampi haaste, mukauta se ryhmällesi tai luokkahuoneellesi ja jaa tulokset Instagramissa, jotta voit kannustaa entistä useampia kollegoita ja ystäviä osallistumaan EU:n koodausviikolle!',
 ];

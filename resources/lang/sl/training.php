@@ -378,5 +378,14 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
 
 <p>Če se želite povezati z mednarodno skupino zagnanih učiteljev, se pridružite <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupini evropskega tedna programiranja za učitelje na Facebooku</a>! Če želite narediti še korak dlje in sodelovati z drugimi šolami v svoji državi ali drugod, se pridružite <a href="/codeweek4all">izzivu Code Week 4 All</a>.</p>',
     ],
-
+'training-text'=>'Materiali, pripravljeni za uporabo, ki vam bodo pomagali predstaviti osnove kodiranja in načrtovati naslednjo inovativno lekcijo.',
+'quick-practical-text1'=> "Odkrijte osnove kodiranja in računalniškega razmišljanja s praktičnimi dejavnostmi, namenjenimi učiteljem, študentom in vsem, ki želijo raziskovati digitalni svet. Ne glede na to, ali ste novi v kodiranju ali iščete sveže ideje, ki jih boste vključili v svoje poučevanje ali usposabljanje, bodo učni biti spodbudili vašo domišljijo in zagotovili trdno izhodišče.",
+'watch-learn-title'=>'Oglejte si in se učite',
+'watch-learn-text'=>'Odkrijte osnove kodiranja z zanimivimi učnimi biti. Ti moduli, ki trajajo približno 15 minut, uvajajo ključne koncepte, povezane s kodiranjem in računalniškim razmišljanjem. Poleg teoretičnih vpogledov moduli ponujajo praktične nasvete o tem, kako te koncepte uporabiti v različnih izobraževalnih okoljih – ne glede na to, ali poučujete otroke, dijake ali odrasle učence.',
+'get-hands-on-title' =>'Pridobite praktične naloge',
+'get-hands-on-text' =>'Izberite učni del, oglejte si poučni videoposnetek in raziščite praktične dejavnosti s spremnim gradivom. Ne glede na to, ali ste novi v kodiranju ali iščete sveže, ustvarjalne ideje za poučevanje, vas bodo osnove kodiranja opremile z orodji za spodbujanje digitalne radovednosti in ustvarjalnosti pri vaših učencih.',
+'share-inspire-title' =>'Delite in navdihujte',
+'share-inspire-text1' =>'Ko zaključite enega ali več učnih bitov tedna programiranja, vam priporočamo, da v svoje izobraževalno okolje vnesete digitalno ustvarjalnost in svojo dejavnost pripnete na <a href="/events" class="font-semibold text-dark-blue underline">zemljevid tedna programiranja</a>!',
+'share-inspire-text2' =>'Organizirate lahko učno uro v svoji učilnici, delavnico v skupnostnem centru ali odprt dogodek v svoji organizaciji. Preprosto izberite datum in registrirajte svojo dejavnost na  <a href="/events" class="font-semibold text-dark-blue underline">zemljevidu tedna kode</a>.Vsak organizator aktivnosti bo za svoj trud prejel potrdilo o sodelovanju.',
+'share-inspire-text3' =>'Če se želite povezati z mednarodno skupino navdušenih učiteljev, se pridružite <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">Facebook skupini za učitelje v okviru evropskega tedna programiranja</a>! Če želite narediti korak dlje in sodelovati z drugimi šolami v svoji državi ali čezmejno, se pridružite izzivu 4. <a href="/codeweek4all" class="font-semibold text-dark-blue underline">tedna programiranja EU</a>.',
 ];
