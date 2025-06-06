@@ -10,7 +10,11 @@
             </div>
             <div class="error-box">
                 <h1>Error!</h1>
-                <p>User does not have the right roles.</p>
+                @if($exception->getMessage())
+                    <p>{{ $exception->getMessage() }}</p>
+                @else
+                    <p>You are not authorized to perform this action!</p>
+                @endif
                 <a href="/">Go back to homepage</a>
             </div>
         </div>
