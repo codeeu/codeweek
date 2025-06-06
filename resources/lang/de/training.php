@@ -382,6 +382,15 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
         'text' => '<p>Sie können ganz einfach eine Lehrstunde in Ihrem Klassenzimmer, einen Tag der offenen Tür oder eine Veranstaltung an Ihrer Schule ausrichten. Überlegen Sie sich nur ein Datum und registrieren Sie Ihre Aktivität in der <a href="/events">Code Week-Karte</a>. Alle Organisatoren von Aktivitäten erhalten für ihre Beteiligung ein Teilnahmezertifikat.</p>
 
 <p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week-Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrkräften vernetzen möchten! Nehmen Sie an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>'
-    ]
-
+    ],
+'training-text'=>'Kompakte, sofort einsetzbare Materialien, die dir helfen, die Grundlagen des Codings zu vermitteln und deine nächste innovative Unterrichtsstunde zu planen.',
+'quick-practical-text1'=> "Entdecke die Grundlagen des Codings und des Computational Thinkings durch kompakte, praktische Aktivitäten, die für Lehrkräfte, Schüler*innen und alle, die die digitale Welt erkunden möchten, konzipiert sind. Egal, ob du neu im Bereich Coding bist oder frische Ideen für deinen Unterricht oder deine Workshops suchst – Learning Bits bieten dir inspirierende und praxisnahe Ansätze.",
+'watch-learn-title'=>'Anschauen & Lernen',
+'watch-learn-text'=>'Entdecke die Grundlagen des Codings mit spannenden Learning Bits. Diese 15-minütigen Module vermitteln die wichtigsten Konzepte des Codings und Computational Thinkings und bieten praktische Tipps für den Einsatz in verschiedenen Bildungseinrichtungen – egal, ob du Kinder oder Erwachsene unterrichtest.',
+'get-hands-on-title' =>'Praktisch werden',
+'get-hands-on-text' =>'Wähle ein Learning Bit, sieh dir das Anleitungsvideo an und erkunde praktische Aktivitäten mit den begleitenden Materialien. Ob du neu im Bereich Coding bist oder nach frischen, kreativen Unterrichtsideen suchst – Coding Basics wird dich mit den Werkzeugen ausstatten, um digitale Neugier und Kreativität bei deinen Lernenden zu wecken.',
+'share-inspire-title' =>'Teilen & Inspirieren',
+'share-inspire-text1' =>'Nachdem du ein oder mehrere Code Week Learning Bits abgeschlossen hast, bringe digitale Kreativität in deine Bildungsumgebung und markiere deine Aktivität auf der <a href="/events" class="font-semibold text-dark-blue underline">Code Week Karte</a>!',
+'share-inspire-text2' =>'Organisiere eine Unterrichtsstunde, einen Workshop oder eine offene Veranstaltung. Wähle ein Datum und registriere deine Aktivität auf der <a href="/events" class="font-semibold text-dark-blue underline">Code Week Karte</a>. Alle Aktivitätsorganisator*innen erhalten Teilnahmezertifikate.',
+'share-inspire-text3' =>'Wenn du dich mit einer internationalen Gruppe begeisterter Lehrkräfte vernetzen möchtest, tritt der  <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">EU Code Week Facebook-Gruppe für Lehrkräfte</a> bei! Um einen Schritt weiter zu gehen und mit anderen Schulen in deinem Land oder über Grenzen hinweg zusammenzuarbeiten – nimm an der <a href="/codeweek4all" class="font-semibold text-dark-blue underline">EU Code Week 4 All Challenge</a> teil.',
 ];

@@ -323,4 +323,10 @@ return [
                         at the <a href="/resources/learn">EU Code Week Learn&Teach resources</a>, 
                         where you can find free, high-quality resources from around the world for teachers and students.',
     ],
+
+    'coding-at-home-text' => 'A collection of short videos, do-it-yourself materials, puzzles, games, and coding challenges for
+                             everyday  use in the family as well as at school.',
+    'coding-at-home-sub-text1' => 'EU Code Week’s Coding@Home series builds on the <a class="text-dark-blue underline" href="https://www.raicultura.it/speciali/codinginfamiglia/"      
+                                    target="_blank">“Coding in famiglia”</a> initiative of the University of Urbino and the CodeMOOCnet Association in cooperation with Rai Cultura. The author of Coding@Home video is Alessandro Bogliolo, a Professor of Information Processing Systems at the University of Urbino, an <a class="text-dark-blue underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italian EU Code Week ambassador</a> and the coordinator of all ambassadors as well as a member of the Governing Board of the Digital Skills and Jobs Coalition.',
+    'coding-at-home-sub-text2' => 'You do not need any previous knowledge or electronic devices to do the activities. The activities will stimulate computational thinking and cultivate the skills of pupils, parents and teachers at home or at school.',
 ];

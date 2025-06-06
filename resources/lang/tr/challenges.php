@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram veya Twitter\'a yükleyin',
         'Şu etiketi kullanmayı unutmayın:',
     ],
+
+    'challenges-text'=>'Kendi başınıza, sınıfta, iş arkadaşlarınızla veya arkadaşlarınızla yapabileceğiniz bir dizi etkinlik.',
+    'challenges-sub-title'=>'AB Kod Haftası\'na katılmak istiyorsunuz ancak ne organize edeceğiniz konusunda bir fikriniz yok mu?',
+    'challenges-sub-text1'=>'Başka yerde arama! AB Kod Haftası ortaklarıyla birlikte, bir sınıfta veya grupta nasıl kullanılacağına dair somut örneklerle birlikte, yapılması kolay bir dizi meydan okuma tasarladık. Zorlukların nasıl tamamlanacağına dair yönergeler de vardır, ancak bunları katılımcılarınızın ihtiyaçlarına, ilgi alanlarına ve yaşlarına uyacak şekilde uyarlayabilirsiniz.',
+    'challenges-sub-text2'=>'İstediğiniz araçları ve teknolojileri kullanabilirsiniz, ancak açık kaynaklı kaynakları öneririz. Bir veya birkaç meydan okuma seçin, grubunuza veya sınıfınıza uyarlayın ve daha fazla meslektaşınızı ve arkadaşınızı AB Kod Haftası eğlencesine katılmaya teşvik etmek için sonuçları Instagram\'da paylaşın!',
 ];
