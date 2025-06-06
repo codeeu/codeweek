@@ -10,7 +10,7 @@
             </div>
             <div class="error-box">
                 <h1>Error!</h1>
-                <p>User does not have the right roles.</p>
+                <p>Oops! Something is not working. Try again in a bit!</p>
                 <a href="/">Go back to homepage</a>
             </div>
         </div>
