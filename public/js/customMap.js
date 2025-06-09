@@ -14,7 +14,7 @@ L.custom = {
         var markersCountryLayers = [];
 
         var success = function (data) {
-            console.log("DEBUG -- API returned data:", data);
+
             var markerOnClick = function (e) {
                 var id = e.target.options.id;
                 $.ajax({
@@ -35,7 +35,7 @@ L.custom = {
                 });
             }
 
-            // Clear previous layers
+            // Clear old layers
             if (markersCountryLayers.length > 0) {
                 $.each(markersCountryLayers, function (key, countryLayer) {
                     countryLayer.clearLayers();
@@ -44,69 +44,63 @@ L.custom = {
                 markersCountryLayers = [];
             }
 
-            // 🔥 Flatten all events
-            var allEvents = [];
-            $.each(data, function (countryCode, countryEvents) {
-                allEvents = allEvents.concat(countryEvents);
-            });
+            // NEW: Build single master cluster
+            var allMarkers = [];
 
-            // Group markers per country
-            var countryMarkersMap = {};
+            $.each(data, function (key, country) {
+                $.each(country, function (key, val) {
+                    if (val.geoposition) {
+                        var coordinates = val.geoposition.split(',');
+                        var lat = parseFloat(coordinates[0]);
+                        var lng = parseFloat(coordinates[1]);
 
-            $.each(allEvents, function (key, val) {
-                var coordinates = val.geoposition.split(',');
-                var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), {
-                    id: val.id,
-                    country: val.country_iso
-                });
-                marker.on('click', markerOnClick);
-
-                if (!countryMarkersMap[val.country_iso]) {
-                    countryMarkersMap[val.country_iso] = [];
-                }
-                countryMarkersMap[val.country_iso].push(marker);
-            });
-
-            // Create clusters per country
-            $.each(countryMarkersMap, function (countryCode, markersList) {
-                var markers = L.markerClusterGroup({
-                    showCoverageOnHover: false,
-                    maxClusterRadius: 120,
-                    chunkedLoading: true,
-                    iconCreateFunction: function (cluster) {
-                        var total = cluster.getAllChildMarkers().length;
-                        var iconSize;
-                        var className = "mycluster ";
-                        if (total <= 10) {
-                            iconSize = L.point(30, 30);
-                            className += "size1";
-                        } else if (total <= 100) {
-                            iconSize = L.point(35, 35);
-                            className += "size2";
-                        } else if (total <= 1000) {
-                            iconSize = L.point(40, 40);
-                            className += "size3";
-                        } else if (total <= 10000) {
-                            iconSize = L.point(45, 45);
-                            className += "size4";
-                        } else {
-                            iconSize = L.point(50, 50);
-                            className += "size5";
+                        if (!isNaN(lat) && !isNaN(lng)) {
+                            var marker = L.marker(L.latLng(lat, lng), { id: val.id });
+                            marker.on('click', markerOnClick);
+                            allMarkers.push(marker);
                         }
-                        return L.divIcon({ html: '<div>' + total + '</div>', className: className, iconSize: iconSize });
                     }
                 });
-
-                markers.addLayers(markersList);
-                markersCountryLayers.push(markers);
-                map.addLayer(markers);
             });
 
-            // ✅ Proceed next components
+            var masterCluster = L.markerClusterGroup({
+                showCoverageOnHover: false,
+                maxClusterRadius: 120,
+                chunkedLoading: true,
+                iconCreateFunction: function (cluster) {
+                    var total = cluster.getAllChildMarkers().length;
+                    var iconSize;
+                    var className = "mycluster ";
+                    if (total <= 10) {
+                        iconSize = L.point(30, 30);
+                        className += "size1";
+                    } else if (total <= 100) {
+                        iconSize = L.point(35, 35);
+                        className += "size2";
+                    } else if (total <= 1000) {
+                        iconSize = L.point(40, 40);
+                        className += "size3";
+                    } else if (total <= 10000) {
+                        iconSize = L.point(45, 45);
+                        className += "size4";
+                    } else {
+                        iconSize = L.point(50, 50);
+                        className += "size5";
+                    }
+                    return L.divIcon({ html: '<div>' + total + '</div>', className: className, iconSize: iconSize });
+                }
+            });
+
+            masterCluster.addLayers(allMarkers);
+            markersCountryLayers.push(masterCluster);
+            map.addLayer(masterCluster);
+
+            // process next components
             $wt._queue("next");
         }
 
         $('#id_year').on('change', function () {
+            //window.location = window.App.url + '/events?year=' + this.value;
             getEvents(this.value);
         });
 
