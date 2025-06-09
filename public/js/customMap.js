@@ -14,6 +14,7 @@ L.custom = {
         var markersCountryLayers = [];
 
         var success = function (data) {
+            console.log("DEBUG -- API returned data:", data);
             var markerOnClick = function (e) {
                 var id = e.target.options.id;
                 $.ajax({
