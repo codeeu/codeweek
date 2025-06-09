@@ -11,7 +11,7 @@ L.custom = {
 
         map.menu.remove("print");
 
-        var markersCountryLayers = [];
+        var markersCountryLayers = {};
 
         var success = function (data) {
 
@@ -36,19 +36,19 @@ L.custom = {
             }
 
             // Clear old layers
-            if (markersCountryLayers.length > 0) {
-                $.each(markersCountryLayers, function (key, countryLayer) {
-                    countryLayer.clearLayers();
-                    map.removeLayer(countryLayer);
-                });
-                markersCountryLayers = [];
-            }
+            $.each(markersCountryLayers, function (countryKey, layer) {
+                layer.clearLayers();
+                map.removeLayer(layer);
+            });
+            markersCountryLayers = {};
 
-            // NEW: Build single master cluster
-            var allMarkers = [];
+            // Now process new data
+            $.each(data, function (key, countryEvents) {
+                // SAFE normalization:
+                var countryKey = key.toUpperCase();
 
-            $.each(data, function (key, country) {
-                $.each(country, function (key, val) {
+                var markersListPerCountry = [];
+                $.each(countryEvents, function (key, val) {
                     if (val.geoposition) {
                         var coordinates = val.geoposition.split(',');
                         var lat = parseFloat(coordinates[0]);
@@ -57,50 +57,49 @@ L.custom = {
                         if (!isNaN(lat) && !isNaN(lng)) {
                             var marker = L.marker(L.latLng(lat, lng), { id: val.id });
                             marker.on('click', markerOnClick);
-                            allMarkers.push(marker);
+                            markersListPerCountry.push(marker);
                         }
                     }
                 });
-            });
 
-            var masterCluster = L.markerClusterGroup({
-                showCoverageOnHover: false,
-                maxClusterRadius: 120,
-                chunkedLoading: true,
-                iconCreateFunction: function (cluster) {
-                    var total = cluster.getAllChildMarkers().length;
-                    var iconSize;
-                    var className = "mycluster ";
-                    if (total <= 10) {
-                        iconSize = L.point(30, 30);
-                        className += "size1";
-                    } else if (total <= 100) {
-                        iconSize = L.point(35, 35);
-                        className += "size2";
-                    } else if (total <= 1000) {
-                        iconSize = L.point(40, 40);
-                        className += "size3";
-                    } else if (total <= 10000) {
-                        iconSize = L.point(45, 45);
-                        className += "size4";
-                    } else {
-                        iconSize = L.point(50, 50);
-                        className += "size5";
+                var countryCluster = L.markerClusterGroup({
+                    showCoverageOnHover: false,
+                    maxClusterRadius: 120,
+                    chunkedLoading: true,
+                    iconCreateFunction: function (cluster) {
+                        var total = cluster.getAllChildMarkers().length;
+                        var iconSize;
+                        var className = "mycluster ";
+                        if (total <= 10) {
+                            iconSize = L.point(30, 30);
+                            className += "size1";
+                        } else if (total <= 100) {
+                            iconSize = L.point(35, 35);
+                            className += "size2";
+                        } else if (total <= 1000) {
+                            iconSize = L.point(40, 40);
+                            className += "size3";
+                        } else if (total <= 10000) {
+                            iconSize = L.point(45, 45);
+                            className += "size4";
+                        } else {
+                            iconSize = L.point(50, 50);
+                            className += "size5";
+                        }
+                        return L.divIcon({ html: '<div>' + total + '</div>', className: className, iconSize: iconSize });
                     }
-                    return L.divIcon({ html: '<div>' + total + '</div>', className: className, iconSize: iconSize });
-                }
-            });
+                });
 
-            masterCluster.addLayers(allMarkers);
-            markersCountryLayers.push(masterCluster);
-            map.addLayer(masterCluster);
+                countryCluster.addLayers(markersListPerCountry);
+                markersCountryLayers[countryKey] = countryCluster;
+                map.addLayer(countryCluster);
+            });
 
             // process next components
             $wt._queue("next");
         }
 
         $('#id_year').on('change', function () {
-            //window.location = window.App.url + '/events?year=' + this.value;
             getEvents(this.value);
         });
 
