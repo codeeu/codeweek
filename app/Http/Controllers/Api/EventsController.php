@@ -31,38 +31,42 @@ class EventsController extends Controller
 
     }
 
-    public function list(Request $request)
-    {
-        $year = $request->input('year')
-            ? $request->input('year')
-            : Carbon::now()->year;
+        public function list(Request $request)
+        {
+            $year = $request->input('year')
+                ? $request->input('year')
+                : Carbon::now()->year;
 
-        if (Cache::has('events'.$year)) {
-            $events = Cache::get('events'.$year);
-        } else {
-            $events = Event::getByYear($year);
-
-            $events = $this->eventTransformer->transformCollection($events);
-
-            $events = $events->groupBy('country');
-
-            if ($year == Carbon::now()->year) {
-                Cache::add(
-                    'events'.$year,
-                    $events,
-                    300
-                );
+            if (Cache::has('events'.$year)) {
+                $events = Cache::get('events'.$year);
             } else {
-                Cache::forever('events'.$year, $events);
+                $events = Event::getByYear($year);
+
+                $events = $this->eventTransformer->transformCollection($events);
+
+                // FIX: group by UPPERCASE country
+                $events = $events->groupBy(function ($event) {
+                    return strtoupper(trim($event['country']));
+                });
+
+                if ($year == Carbon::now()->year) {
+                    Cache::add(
+                        'events'.$year,
+                        $events,
+                        300
+                    );
+                } else {
+                    Cache::forever('events'.$year, $events);
+                }
             }
+
+            if ($request->wantsJson()) {
+                return response()->json($events, 200);
+            }
+
+            return $events;
         }
 
-        if ($request->wantsJson()) {
-            return response()->json($events, 200);
-        }
-
-        return $events;
-    }
 
     public function detail(Request $request)
     {
