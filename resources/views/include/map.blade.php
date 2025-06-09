@@ -18,6 +18,7 @@
     <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
     <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet" />
     <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet" />
+
     <script type="application/json">
         {
             "service" : "map",
