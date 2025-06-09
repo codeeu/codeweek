@@ -1,11 +1,12 @@
 <template>
   <div>
 
-    <select v-model="selected_country" class="codeweek-input-select" id="id_country" name="country_iso"
-            @change="newCountry()">
+    <select v-model="selected_country" class="codeweek-input-select" id="id_country" name="country_iso" @change="newCountry()">
       <option value=""> All countries</option>
       <option disabled value="---">-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</option>
-      <option v-for="country in countries" v-bind:value="country.iso">{{ country.name }} ({{ country.total }})</option>
+      <option v-for="country in countries" :value="country.iso">
+        {{ country.name }} ({{ country.total }})
+      </option>
     </select>
   </div>
 </template>
