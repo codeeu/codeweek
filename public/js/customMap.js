@@ -1,6 +1,8 @@
 L.custom = {
     init: function (obj, params) {
 
+        console.log('🚀 Initializing custom map...');
+
         window.map = L.map(obj, {
             center: [48, 4],
             zoom: 4,
@@ -17,13 +19,35 @@ L.custom = {
 
             console.log('🔥 Full API response:', data);
 
-            // SAFELY get the correct countries object
+            // Detect correct format
             var countryData = Array.isArray(data) && data.length > 1 ? data[1] : data;
 
-            console.log('✅ Using countryData:', countryData);
+            console.log('🌍 Detected countries:', Object.keys(countryData));
+
+            // Marker click
+            var markerOnClick = function (e) {
+                var id = e.target.options.id;
+                $.ajax({
+                    dataType: "json",
+                    url: "api/event/detail?id=" + id,
+                    success: function (res) {
+                        var event = res.data;
+
+                        var content = '<div><h4><a href="' + event.path + '" class="map-marker">' + event.title + '</a></h4><div style="display:flex;align-items: center;">' +
+                            '<img src="' + event.picture + '" class="img-polaroid marker-buble-img" style="width:100px;height:100px;">' +
+                            '<p style="overflow:hidden;">' + event.description + '</p>';
+
+                        var popup = L.popup({ maxWidth: 600 })
+                            .setContent(content)
+
+                        e.target.bindPopup(popup).openPopup();
+                    }
+                });
+            }
 
             // Clear old layers
             if (markersCountryLayers.length > 0) {
+                console.log(`♻️ Clearing ${markersCountryLayers.length} old marker layers...`);
                 $.each(markersCountryLayers, function (key, countryLayer) {
                     countryLayer.clearLayers();
                     map.removeLayer(countryLayer);
@@ -31,40 +55,39 @@ L.custom = {
                 markersCountryLayers = [];
             }
 
-            // NEW: Build master cluster
+            // Build single master cluster
             var allMarkers = [];
+            var totalEvents = 0;
+            var missingGeo = 0;
 
-            $.each(countryData, function (countryIso, events) {
-                $.each(events, function (idx, event) {
-                    if (event.geoposition) {
-                        var coordinates = event.geoposition.split(',');
+            $.each(countryData, function (countryCode, countryEvents) {
+                console.log(`→ Processing country: ${countryCode} with ${countryEvents.length} events`);
+                totalEvents += countryEvents.length;
+
+                $.each(countryEvents, function (idx, val) {
+                    if (val.geoposition) {
+                        var coordinates = val.geoposition.split(',');
                         var lat = parseFloat(coordinates[0]);
                         var lng = parseFloat(coordinates[1]);
 
                         if (!isNaN(lat) && !isNaN(lng)) {
-                            var marker = L.marker(L.latLng(lat, lng), { id: event.id });
-                            marker.on('click', function (e) {
-                                var id = e.target.options.id;
-                                $.ajax({
-                                    dataType: "json",
-                                    url: "api/event/detail?id=" + id,
-                                    success: function (res) {
-                                        var ev = res.data;
-                                        var content = '<div><h4><a href="' + ev.path + '" class="map-marker">' + ev.title + '</a></h4>' +
-                                            '<div style="display:flex;align-items: center;">' +
-                                            '<img src="' + ev.picture + '" class="img-polaroid marker-buble-img" style="width:100px;height:100px;">' +
-                                            '<p style="overflow:hidden;">' + ev.description + '</p></div>';
-
-                                        var popup = L.popup({ maxWidth: 600 }).setContent(content);
-                                        e.target.bindPopup(popup).openPopup();
-                                    }
-                                });
-                            });
+                            var marker = L.marker(L.latLng(lat, lng), { id: val.id });
+                            marker.on('click', markerOnClick);
                             allMarkers.push(marker);
+                        } else {
+                            console.warn(`⚠️ Invalid geoposition for event ID ${val.id} in ${countryCode}:`, val.geoposition);
+                            missingGeo++;
                         }
+                    } else {
+                        console.warn(`⚠️ Missing geoposition for event ID ${val.id} in ${countryCode}`);
+                        missingGeo++;
                     }
                 });
             });
+
+            console.log(`✅ Total events processed: ${totalEvents}`);
+            console.log(`✅ Total valid markers: ${allMarkers.length}`);
+            console.log(`⚠️ Total events missing/invalid geoposition: ${missingGeo}`);
 
             var masterCluster = L.markerClusterGroup({
                 showCoverageOnHover: false,
@@ -98,8 +121,8 @@ L.custom = {
             markersCountryLayers.push(masterCluster);
             map.addLayer(masterCluster);
 
-            console.log('✅ Markers added:', allMarkers.length);
-
+            console.log('🗺️ Master cluster added to map.');
+            console.log('➡️ Triggering next components...');
             $wt._queue("next");
         };
 
@@ -112,6 +135,7 @@ L.custom = {
         }
 
         function getEvents(year) {
+            console.log(`📡 Fetching events for year: ${year}...`);
             $.ajax({
                 dataType: "json",
                 url: "api/event/list?year=" + year,
@@ -120,6 +144,7 @@ L.custom = {
         }
 
         var year = param('year') ? param('year') : new Date().getFullYear();
+        console.log(`🎯 Initial map year = ${year}`);
         getEvents(year);
     }
 };
