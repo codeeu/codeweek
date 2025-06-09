@@ -1,6 +1,5 @@
 L.custom = {
-    init: function (obj, params) { // this method is run as soon as the core loading process is loaded
-
+    init: function (obj, params) {
         window.map = L.map(obj, {
             center: [48, 4],
             zoom: 4,
@@ -11,93 +10,85 @@ L.custom = {
 
         map.menu.remove("print");
 
-        var markersCountryLayers = {};
+        var masterCluster = L.markerClusterGroup({
+            showCoverageOnHover: false,
+            maxClusterRadius: 120,
+            chunkedLoading: true,
+            iconCreateFunction: function (cluster) {
+                var total = cluster.getAllChildMarkers().length;
+                var iconSize;
+                var className = "mycluster ";
+                if (total <= 10) {
+                    iconSize = L.point(30, 30);
+                    className += "size1";
+                } else if (total <= 100) {
+                    iconSize = L.point(35, 35);
+                    className += "size2";
+                } else if (total <= 1000) {
+                    iconSize = L.point(40, 40);
+                    className += "size3";
+                } else if (total <= 10000) {
+                    iconSize = L.point(45, 45);
+                    className += "size4";
+                } else {
+                    iconSize = L.point(50, 50);
+                    className += "size5";
+                }
+                return L.divIcon({ html: '<div>' + total + '</div>', className: className, iconSize: iconSize });
+            }
+        });
+
+        var markerOnClick = function (e) {
+            var id = e.target.options.id;
+            $.ajax({
+                dataType: "json",
+                url: "api/event/detail?id=" + id,
+                success: function (res) {
+                    var event = res.data;
+
+                    var content = '<div><h4><a href="' + event.path + '" class="map-marker">' + event.title + '</a></h4><div style="display:flex;align-items: center;">' +
+                        '<img src="' + event.picture + '" class="img-polaroid marker-buble-img" style="width:100px;height:100px;">' +
+                        '<p style="overflow:hidden;">' + event.description + '</p>';
+
+                    var popup = L.popup({ maxWidth: 600 }).setContent(content);
+
+                    e.target.bindPopup(popup).openPopup();
+                }
+            });
+        };
 
         var success = function (data) {
+            console.log('✅ API returned countries:', Object.keys(data));
 
-            var markerOnClick = function (e) {
-                var id = e.target.options.id;
-                $.ajax({
-                    dataType: "json",
-                    url: "api/event/detail?id=" + id,
-                    success: function (res) {
-                        var event = res.data;
+            // Clear old cluster
+            masterCluster.clearLayers();
 
-                        var content = '<div><h4><a href="' + event.path + '" class="map-marker">' + event.title + '</a></h4><div style="display:flex;align-items: center;">' +
-                            '<img src="' + event.picture + '" class="img-polaroid marker-buble-img" style="width:100px;height:100px;">' +
-                            '<p style="overflow:hidden;">' + event.description + '</p>';
+            var allMarkers = [];
 
-                        var popup = L.popup({ maxWidth: 600 })
-                            .setContent(content)
-
-                        e.target.bindPopup(popup).openPopup();
-                    }
-                });
-            }
-
-            // Clear old layers
-            $.each(markersCountryLayers, function (countryKey, layer) {
-                layer.clearLayers();
-                map.removeLayer(layer);
-            });
-            markersCountryLayers = {};
-
-            // Now process new data
-            $.each(data, function (key, countryEvents) {
-                // SAFE normalization:
-                var countryKey = key.toUpperCase();
-
-                var markersListPerCountry = [];
-                $.each(countryEvents, function (key, val) {
+            $.each(data, function (key, country) {
+                $.each(country, function (key, val) {
                     if (val.geoposition) {
                         var coordinates = val.geoposition.split(',');
                         var lat = parseFloat(coordinates[0]);
                         var lng = parseFloat(coordinates[1]);
 
                         if (!isNaN(lat) && !isNaN(lng)) {
-                            var marker = L.marker(L.latLng(lat, lng), { id: val.id });
+                            var marker = L.marker([lat, lng], { id: val.id });
                             marker.on('click', markerOnClick);
-                            markersListPerCountry.push(marker);
+                            allMarkers.push(marker);
                         }
                     }
                 });
-
-                var countryCluster = L.markerClusterGroup({
-                    showCoverageOnHover: false,
-                    maxClusterRadius: 120,
-                    chunkedLoading: true,
-                    iconCreateFunction: function (cluster) {
-                        var total = cluster.getAllChildMarkers().length;
-                        var iconSize;
-                        var className = "mycluster ";
-                        if (total <= 10) {
-                            iconSize = L.point(30, 30);
-                            className += "size1";
-                        } else if (total <= 100) {
-                            iconSize = L.point(35, 35);
-                            className += "size2";
-                        } else if (total <= 1000) {
-                            iconSize = L.point(40, 40);
-                            className += "size3";
-                        } else if (total <= 10000) {
-                            iconSize = L.point(45, 45);
-                            className += "size4";
-                        } else {
-                            iconSize = L.point(50, 50);
-                            className += "size5";
-                        }
-                        return L.divIcon({ html: '<div>' + total + '</div>', className: className, iconSize: iconSize });
-                    }
-                });
-
-                countryCluster.addLayers(markersListPerCountry);
-                markersCountryLayers[countryKey] = countryCluster;
-                map.addLayer(countryCluster);
             });
+
+            console.log('✅ Adding', allMarkers.length, 'markers to master cluster');
+            masterCluster.addLayers(allMarkers);
+
+            map.addLayer(masterCluster);
 
             // process next components
             $wt._queue("next");
-        }
+        };
 
         $('#id_year').on('change', function () {
             getEvents(this.value);
@@ -108,6 +99,7 @@ L.custom = {
         }
 
         function getEvents(year) {
+            console.log('ℹ️ Loading events for year', year);
             $.ajax({
                 dataType: "json",
                 url: "api/event/list?year=" + year,
@@ -117,6 +109,5 @@ L.custom = {
 
         var year = param('year') ? param('year') : new Date().getFullYear();
         getEvents(year);
-
     }
-}
+};
