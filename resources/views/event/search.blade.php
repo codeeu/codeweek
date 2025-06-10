@@ -10,13 +10,11 @@
     <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet"/>
     <script type="application/json">
         {
-            "service" : "map",
+            "service" : "map
             "version" : "2.0",
             "renderTo" : "home-map",
             "custom": ["js/customSearchMap.js","js/leaflet.markercluster.js"]
         }
-
-
     </script>
 
 {{--    <script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js" async></script>--}}
