@@ -45,9 +45,13 @@ L.custom = {
                 var markersListPerCountry = [];
                 $.each(country, function (key, val) {
                     var coordinates = val.geoposition.split(',');
-                    var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), {id: val.id});
-                    marker.on('click', markerOnClick);
-                    markersListPerCountry.push(marker);
+                    var lat = parseFloat(coordinates[0]);
+                    var lng = parseFloat(coordinates[1]);
+                    if (!isNaN(lat) && !isNaN(lng)) {
+                        var marker = L.marker(L.latLng(lat, lng), {id: val.id});
+                        marker.on('click', markerOnClick);
+                        markersListPerCountry.push(marker);
+                    }
                 });
                 var markers = L.markerClusterGroup({
                     showCoverageOnHover: false,
