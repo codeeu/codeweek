@@ -113,11 +113,8 @@
 
 
         </div>
-
     </section>
-
 </template>
-
 <script>
     import Multiselect from 'vue-multiselect'
     import Pagination from "./Pagination.vue";
