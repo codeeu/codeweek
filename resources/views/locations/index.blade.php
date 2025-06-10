@@ -26,7 +26,7 @@
                         </p>
                         <a
                             class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-base"
-                            href="/add"
+                            href="/add?skip=1"
                         >
                             <span>Create an activity</span>
                         </a>
