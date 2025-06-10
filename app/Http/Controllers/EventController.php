@@ -48,7 +48,6 @@ class EventController extends Controller
     //        return view('event.myreportable', compact('events'));
     //
     //    }
-
     /**
      * Display a listing of the resource.
      */

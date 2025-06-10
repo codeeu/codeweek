@@ -63,7 +63,6 @@ class EventsController extends Controller
 
         return $events;
     }
-
     public function detail(Request $request)
     {
         $event_id = $request->input('id');
