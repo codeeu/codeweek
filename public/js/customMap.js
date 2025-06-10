@@ -1,5 +1,5 @@
 L.custom = {
-    init: function(obj, params){ // this method is run as soon as the core loading process is loaded
+    init: function (obj, params) { // this method is run as soon as the core loading process is loaded
 
         window.map = L.map(obj, {
             center: [48, 4],
@@ -15,7 +15,7 @@ L.custom = {
 
         var success = function (data) {
 
-            var markerOnClick = function(e){
+            var markerOnClick = function (e) {
                 var id = e.target.options.id;
                 $.ajax({
                     dataType: "json",
@@ -27,7 +27,7 @@ L.custom = {
                             '<img src="' + event.picture + '" class="img-polaroid marker-buble-img" style="width:100px;height:100px;">' +
                             '<p style="overflow:hidden;">' + event.description + '</p>';
 
-                        var popup = L.popup({maxWidth:600})
+                        var popup = L.popup({ maxWidth: 600 })
                             .setContent(content)
 
                         e.target.bindPopup(popup).openPopup();
@@ -35,7 +35,7 @@ L.custom = {
                 });
             }
 
-            if (markersCountryLayers.length > 0){
+            if (markersCountryLayers.length > 0) {
                 $.each(markersCountryLayers, function (key, countryLayer) {
                     countryLayer.clearLayers();
                 })
@@ -45,7 +45,7 @@ L.custom = {
                 var markersListPerCountry = [];
                 $.each(country, function (key, val) {
                     var coordinates = val.geoposition.split(',');
-                    var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), {id: val.id});
+                    var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), { id: val.id });
                     marker.on('click', markerOnClick);
                     markersListPerCountry.push(marker);
                 });
@@ -53,27 +53,27 @@ L.custom = {
                     showCoverageOnHover: false,
                     maxClusterRadius: 120,
                     chunkedLoading: true,
-                    iconCreateFunction: function(cluster) {
+                    iconCreateFunction: function (cluster) {
                         var total = cluster.getAllChildMarkers().length;
                         var iconSize;
                         var className = "mycluster ";
-                        if (total<= 10){
+                        if (total <= 10) {
                             iconSize = L.point(30, 30);
                             className += "size1";
-                        }else if(total <=100){
+                        } else if (total <= 100) {
                             iconSize = L.point(35, 35);
                             className += "size2";
-                        }else if(total <= 1000) {
+                        } else if (total <= 1000) {
                             iconSize = L.point(40, 40);
                             className += "size3";
-                        }else if(total <= 10000) {
+                        } else if (total <= 10000) {
                             iconSize = L.point(45, 45);
                             className += "size4";
-                        }else {
+                        } else {
                             iconSize = L.point(50, 50);
                             className += "size5";
                         }
-                        return L.divIcon({ html: '<div>'+total+'</div>', className: className, iconSize: iconSize });
+                        return L.divIcon({ html: '<div>' + total + '</div>', className: className, iconSize: iconSize });
                     }
                 });
                 markers.addLayers(markersListPerCountry);
@@ -97,7 +97,7 @@ L.custom = {
         function getEvents(year) {
             $.ajax({
                 dataType: "json",
-                url: "api/event/list?year="+ year,
+                url: "api/event/list?year=" + year,
                 success: success
             });
         }
