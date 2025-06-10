@@ -2,15 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Country;
 use App\Event;
-use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
 use App\Queries\PendingEventsQuery;
 use App\User;
-use Carbon\Carbon;
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -65,12 +63,16 @@ class EventController extends Controller
         $leading_teachers = $this->getLeadingTeachersTagsArray();
 
         if ($request->get('location')) {
-            $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
-
-            return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
+            try {
+                $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
+                return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
+            }
+            catch (ModelNotFoundException $e) {
+                return redirect(route('activities-locations'));
+            }
+            
         }
-
-        if (! auth()->user()->locations->isEmpty()) {
+        else {
             if (! $request->get('skip')) {
                 return redirect(route('activities-locations'));
             }
