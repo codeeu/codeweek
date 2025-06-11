@@ -5,7 +5,7 @@
     ];
 @endphp
 
-<footer class="border-t-[3px] border-primary bg-white">
+<footer id="page-footer" class="border-t-[3px] border-primary bg-white">
     <div class="py-10 md:py-16 border-b">
         <div class="codeweek-container-lg flex flex-col xl:flex-row xl:justify-between">
             <div class="flex flex-col justify-between">
