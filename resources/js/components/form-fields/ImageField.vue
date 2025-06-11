@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <form method="POST" enctype="multipart/form-data">
+    <div>
       <div
         class="flex flex-col justify-center items-center gap-2 border-[3px] border-dashed border-dark-blue-200 w-full rounded-2xl py-12 px-8 cursor-pointer"
         @click="onTriggerFileInput"
@@ -9,10 +8,12 @@
         @dragleave="onDragLeave"
         @drop.prevent="onDrop"
       >
-        <div v-if="pictureClone" class="mb-4">
+        <div class="mb-4" :class="[!pictureClone && 'hidden']">
           <img :src="pictureClone" class="mr-1" />
         </div>
-        <img v-else class="w-16 h-16" src="/images/icon_image.svg" />
+        <div :class="[!!pictureClone && 'hidden']">
+          <img class="w-16 h-16" src="/images/icon_image.svg" />
+        </div>
 
         <span class="text-xl text-slate-500">
           Drop your image here, or
@@ -40,7 +41,7 @@
           {{ error }}
         </div>
       </div>
-    </form>
+    </div>
 
     <div class="w-full flex gap-2.5 mt-4">
       <img class="flex-shrink-0 w-6 h-6" src="/images/icon_info.svg" />
@@ -102,7 +103,6 @@ export default {
     const fileInput = ref(null);
 
     const pictureClone = ref(props.picture || '');
-    const imageClone = ref(props.image || '');
     const error = ref('');
 
     const onTriggerFileInput = () => {
@@ -137,7 +137,6 @@ export default {
         .then((result) => {
           error.value = '';
           pictureClone.value = result.data.path;
-          imageClone.value = result.data.imageName;
           emitter.emit('flash', {
             message: 'Picture uploaded!',
             level: 'success',
@@ -157,7 +156,6 @@ export default {
     return {
       fileInput,
       pictureClone,
-      imageClone,
       error,
       onTriggerFileInput,
       onDragOver,

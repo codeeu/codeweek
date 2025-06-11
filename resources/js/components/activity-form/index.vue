@@ -168,7 +168,7 @@
             />
           </div>
 
-          <div class="flex flex-wrap justify-between mt-10 gap-y-2 gap-x-4">
+          <div class="flex flex-wrap justify-between mt-10 gap-y-2 gap-x-4 min-h-12">
             <button
               v-if="step > 1"
               class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] max-sm:w-full sm:min-w-[224px]"
@@ -184,12 +184,12 @@
               <span v-else>Previous step</span>
             </button>
 
-            <div />
+            <div class="hidden md:block" />
 
             <div
               id="footer-scroll-activity"
               class="flex justify-center max-sm:w-full sm:min-w-[224px]"
-              :class="[step < 4 ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]' : '!translate-y-0']"
+              :class="[(step < 4 && !pageFooterVisible) ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]' : '!translate-y-0']"
             >
               <button
                 class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
@@ -234,7 +234,7 @@
 </template>
 
 <script>
-import { ref, watch, computed } from 'vue';
+import { ref, watch, computed, onMounted } from 'vue';
 import axios from 'axios';
 import _ from 'lodash';
 
@@ -310,6 +310,7 @@ export default {
     const containerRef = ref(null);
     const step = ref(1);
     const errors = ref({});
+    const pageFooterVisible = ref(false);
     const defaultFormValues = ref({
       // step 1
       activity_type: 'open-in-person',
@@ -551,6 +552,16 @@ export default {
       }
     );
 
+    onMounted(() => {
+      const observer = new IntersectionObserver(([entry]) => {
+        pageFooterVisible.value = entry.isIntersecting;
+      });
+      const footer = document.getElementById('page-footer');
+      if (footer) {
+        observer.observe(footer);
+      }
+    })
+
     return {
       containerRef,
       step,
@@ -567,6 +578,8 @@ export default {
       validStep1,
       validStep2,
       validStep3,
+
+      pageFooterVisible,
     };
   },
 };
