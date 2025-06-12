@@ -238,24 +238,26 @@ export default {
         },
       ];
 
+      const filterValidItem = ({ value, htmlValue, imageUrl }) => {
+        return (
+          (!_.isNil(value) && !_.isEmpty(value)) ||
+          !_.isEmpty(htmlValue) ||
+          !_.isEmpty(imageUrl)
+        );
+      };
+
       return [
         {
           title: 'Activity overview',
-          list: step1List.filter(
-            ({ value }) => !_.isNil(value) && !_.isEmpty(value)
-          ),
+          list: step1List.filter(filterValidItem),
         },
         {
           title: 'Who is the activity for',
-          list: step2List.filter(
-            ({ value }) => !_.isNil(value) && !_.isEmpty(value)
-          ),
+          list: step2List.filter(filterValidItem),
         },
         {
           title: 'Organiser',
-          list: step3List.filter(
-            ({ value }) => !_.isNil(value) && !_.isEmpty(value)
-          ),
+          list: step3List.filter(filterValidItem),
         },
       ];
     });

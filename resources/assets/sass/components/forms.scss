@@ -929,6 +929,21 @@
 
   .dp--header-wrap {
     margin-bottom: 8px;
+
+    .dp__month_year_wrap {
+      justify-content: center;
+      .dp__btn.dp__month_year_select:first-child {
+        justify-content: flex-end;
+        padding: 0 4px;
+        width: auto;
+      }
+      
+      .dp__btn.dp__month_year_select:last-child {
+        justify-content: flex-start;
+        padding: 0 4px;
+        width: auto;
+      }
+    }
   }
 
   .dp__instance_calendar {

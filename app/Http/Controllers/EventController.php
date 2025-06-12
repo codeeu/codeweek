@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
+use Illuminate\Http\JsonResponse;
 
 class EventController extends Controller
 {
@@ -91,7 +92,7 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(EventRequest $request): View
+    public function store(EventRequest $request): JsonResponse
     {
         $user = auth()->user();
 
@@ -105,11 +106,14 @@ class EventController extends Controller
 
         $event->createLocation();
 
-        Mail::to(auth()->user()->email)->queue(
-            new \App\Mail\EventRegistered($event, auth()->user())
+        Mail::to($user->email)->queue(
+            new \App\Mail\EventRegistered($event, $user)
         );
 
-        return view('event.thankyou', compact('event'));
+        return response()->json([
+            'message' => 'Event registered successfully.',
+            'event' => $event,
+        ], 201);
     }
 
     /**
