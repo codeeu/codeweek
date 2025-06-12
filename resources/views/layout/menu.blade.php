@@ -89,8 +89,8 @@
               {{-- resources --}}
               <li class="main-menu-item">
                   <a
-                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
-                      href="{{route('educational-resources')}}"
+                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px] cursor-pointer"
+                      onclick="document.body.clientWidth > 1280 && (window.location.href='{{ route('educational-resources') }}')"
                   >
                       @lang('menu.resources')
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">

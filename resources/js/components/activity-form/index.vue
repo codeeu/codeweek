@@ -8,6 +8,7 @@
         <div
           class="relative flex flex-col items-center gap-2 flex-1 md:w-52"
           :class="[
+            index === 0 && 'cursor-pointer',
             index + 1 === 2 && validStep1 && 'cursor-pointer',
             index + 1 === 3 && validStep2 && 'cursor-pointer',
           ]"
@@ -168,19 +169,21 @@
             />
           </div>
 
-          <div class="flex flex-wrap justify-between mt-10 gap-y-2 gap-x-4 min-h-12">
+          <div
+            class="flex flex-wrap justify-between mt-10 gap-y-2 gap-x-4 min-h-12"
+          >
             <button
               v-if="step > 1"
               class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] max-sm:w-full sm:min-w-[224px]"
               type="button"
               @click="
                 () => {
-                  if (step === 4) handleGoHomePage();
+                  if (step === 4) handleGoToActivity();
                   else handleMoveStep(step - 1);
                 }
               "
             >
-              <span v-if="step === 4">Back to homepage</span>
+              <span v-if="step === 4">View activity</span>
               <span v-else>Previous step</span>
             </button>
 
@@ -189,7 +192,11 @@
             <div
               id="footer-scroll-activity"
               class="flex justify-center max-sm:w-full sm:min-w-[224px]"
-              :class="[(step < 4 && !pageFooterVisible) ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]' : '!translate-y-0']"
+              :class="[
+                step < 4 && !pageFooterVisible
+                  ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]'
+                  : '!translate-y-0',
+              ]"
             >
               <button
                 class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
@@ -307,6 +314,7 @@ export default {
   setup(props, { emit }) {
     const { stepTitles } = useDataOptions();
 
+    const newEvent = ref(null);
     const containerRef = ref(null);
     const step = ref(1);
     const errors = ref({});
@@ -397,7 +405,11 @@ export default {
       step.value = Math.max(Math.min(newStep, 4), 1);
     };
 
-    const handleGoHomePage = () => (window.location.href = '/');
+    const handleGoToActivity = () => {
+      const eventId = props?.event?.id || newEvent.value?.id;
+      const eventSlug = props?.event?.slug || newEvent.value?.slug;
+      window.location.href = `/view/${eventId}/${eventSlug}`;
+    };
     const handleGoMapPage = () => (window.location.href = '/events');
     const handleReloadPage = () => window.location.reload();
 
@@ -454,7 +466,8 @@ export default {
         if (!_.isNil(props.event.id)) {
           await axios.post(`/events/${props.event.id}`, payload);
         } else {
-          await axios.post('/events', payload);
+          const { data } = await axios.post('/events', payload);
+          newEvent.value = data.event;
         }
         handleMoveStep(4);
       } catch (error) {
@@ -560,7 +573,7 @@ export default {
       if (footer) {
         observer.observe(footer);
       }
-    })
+    });
 
     return {
       containerRef,
@@ -568,7 +581,7 @@ export default {
       stepTitles,
       errors,
       formValues,
-      handleGoHomePage,
+      handleGoToActivity,
       handleGoMapPage,
       handleReloadPage,
       handleMoveStep,
