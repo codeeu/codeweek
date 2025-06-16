@@ -94,6 +94,10 @@
         <img src="/images/select-arrow.svg" />
       </div>
     </template>
+
+    <template #noResult>
+      <div class="text-gray-400 text-center">No elements found</div>
+    </template>
   </multiselect>
 </template>
 
@@ -130,7 +134,7 @@ export default {
     },
     searchable: {
       type: Boolean,
-      fefault: false,
+      default: false,
     },
   },
   components: {

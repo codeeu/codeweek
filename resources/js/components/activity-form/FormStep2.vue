@@ -143,6 +143,12 @@
         v-model="formValues.codeweek_for_all_participation_code"
         name="codeweek_for_all_participation_code"
       />
+      <template #tooltip>
+        If you have received a Code Week 4 All code from a school colleague or a
+        friend, paste it here. Otherwise, please leave it blank. More info about
+        Code Week 4 All is available
+        <a href="/codeweek4all" target="_blank"> here</a>.
+      </template>
     </FieldWrapper>
 
     <FieldWrapper
