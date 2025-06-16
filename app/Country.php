@@ -121,19 +121,26 @@ class Country extends Model
 
     public static function withActualYearEvents()
     {
+        $year = request()->input('year', Carbon::now('Europe/Brussels')->year);
 
-        $isos = DB::table('events')
-            ->select(['country_iso'])
-            ->where('status', "=", "APPROVED")
-            ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
+        $countries = DB::table('events')
+            ->select('country_iso as iso', DB::raw('COUNT(*) as total'))
+            ->where('status', '=', 'APPROVED')
+            ->whereYear('end_date', '>=', $year)
+            ->whereNotNull('geoposition')
             ->groupBy('country_iso')
-            ->get()
-            ->pluck('country_iso');
+            ->get();
 
-        $countries = Country::findMany($isos)->sortBy('name');
+        $result = $countries->map(function ($row) {
+            $country = Country::find($row->iso);
+            return [
+                'iso' => $row->iso,
+                'name' => $country ? __('countries.' . $country->name) : $row->iso,
+                'total' => $row->total,
+            ];
+        })->sortBy('name')->values();
 
-        return $countries;
-
+        return $result;
     }
 
 

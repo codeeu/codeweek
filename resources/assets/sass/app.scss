@@ -12,7 +12,6 @@
 @import "components/pagination";
 @import "components/calendar";
 @import "components/table";
-
 //Import pages
 @import "pages";
 @import "pages/homepage";
@@ -310,7 +309,7 @@ body:not(.new-layout) {
 	.error-robot {
 		z-index: 1;
 	}
-  
+
   .error-box a:hover {
     background-color: rgb(251 157 122);
   }
@@ -340,7 +339,7 @@ body:not(.new-layout) {
   .error-robot svg {
         max-width: 568px;
         margin: 0 auto;
-      }  
+      }
       .error-box h1 {
         color: var(--Dark-Blue-500, #1C4DA1);
         text-align: center;
@@ -363,7 +362,7 @@ body:not(.new-layout) {
       }
   }
 
-  @media (max-width: 568px) {        
+  @media (max-width: 568px) {
     #codeweek-error-page {
         justify-content: flex-start;
     }
