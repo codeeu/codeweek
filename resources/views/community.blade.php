@@ -151,7 +151,7 @@
                         <div class="absolute" style="top: 14px; right: 14px">
                             <img
                                 src="images/chevron-down-icon.svg"
-                                class="w-6 h-6 pointer-events-none text-secondary bg-white"
+                                class="w-6 h-6 bg-white pointer-events-none text-secondary"
                             >
                         </div>
                       </div>
@@ -180,7 +180,7 @@
                     <p class="text-[#333E48] text-lg md:text-xl leading-7 p-0">
                         @lang('community.ambassadors')
                     </p>
-                    <div class="flex flex-col gap-4 xl:flex-row mt-10">
+                    <div class="flex flex-col gap-4 mt-10 xl:flex-row">
                         @if (app('request')->input('country_iso'))
                             @foreach ($countries as $country)
                                 @if ($country->iso === app('request')->input('country_iso'))
@@ -225,19 +225,23 @@
                  style="transform: translate(-16px, -24px)"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8 mx-auto mb-20 codeweek-container-lg max-xl:px-5">
+        <div class="grid grid-cols-1 gap-8 mx-auto mb-20 md:grid-cols-2 2xl:grid-cols-3 codeweek-container-lg max-xl:px-5">
             @forelse ($ambassadors as $ambassador)
-                <div class="flex flex-col justify-between bg-white rounded-2xl p-4">
-                    <div class="relative z-50 flex max-sm:w-full gap-8 h-full"
+                <div class="flex flex-col justify-between p-4 bg-white rounded-2xl">
+                    <div class="relative z-50 flex h-full gap-8 max-sm:w-full"
                          role="article" aria-labelledby="profile-name">
-                        <img class="object-cover w-32 h-32" src="{{ $ambassador->avatar }}" class="card-image-avatar">
+                       <img
+                            class="object-cover w-32 h-32"
+                            src="{{ $ambassador->avatar_path ?? asset('images/default.png') }}"
+                            alt="{{ $ambassador->fullName() }}"
+                            >
                         <div class="flex flex-col justify-between flex-1">
                             <div class="flex flex-col gap-1 mt-1">
                                 <h4 id="profile-name" class="text-2xl font-medium leading-7 text-blue-800">
                                     {{ $ambassador->fullName() }}</h4>
-                                <p class="text-lg font-medium leading-6 text-gray-700">{{ $ambassador->bio }}</p>
+                                <p class="text-lg font-medium leading-6 text-gray-700">{{ $ambassador->bio ?? $ambassador->short_bio ?? '' }}</p>
                             </div>
-                            <div class="hidden items-center w-full gap-4 mt-4 tablet:flex">
+                            <div class="items-center hidden w-full gap-4 mt-4 tablet:flex">
                                 @if ($ambassador->email)
                                     <a class="group flex gap-2 items-start my-auto text-base font-semibold leading-none text-[#1C4DA1] hover:text-white overflow-hidden px-6 w-auto whitespace-nowrap py-2.5 rounded-3xl border-2 border-[#1C4DA1] border-solid hover:bg-[#1C4DA1]"
                                        href="mailto:{{ $ambassador->email }}">
@@ -335,9 +339,9 @@
     </section>
     <section class="relative overflow-hidden bg-[#FFFBE5]">
         <div class="absolute w-full h-full bg-blue-gradient md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
-        <div class="absolute w-full h-full bg-blue-gradient hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
-        <div class="absolute w-full h-full bg-blue-gradient hidden lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
-        <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(118% 90% at 50% 90%);"></div>
+        <div class="absolute hidden w-full h-full bg-blue-gradient md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
+        <div class="absolute hidden w-full h-full bg-blue-gradient lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
+        <div class="absolute hidden w-full h-full bg-blue-gradient xl:block" style="clip-path: ellipse(118% 90% at 50% 90%);"></div>
         <div
             class="relative z-10 flex flex-col items-center gap-12 pb-16 codeweek-container-lg md:flex-row pt-28 md:pt-48">
             <div class="flex-1">
@@ -419,7 +423,7 @@
         <div class="absolute w-full h-full bg-white md:hidden" style="clip-path: ellipse(100% 58% at 38% 39%)"></div>
         <div class="absolute hidden w-full h-full bg-white md:block" style="clip-path: ellipse(70% 60% at 50% 40%);">
         </div>
-        <div class="relative z-10 flex flex-col items-center gap-12 codeweek-container-lg md:flex-row pt-16 pb-0 tablet:py-20">
+        <div class="relative z-10 flex flex-col items-center gap-12 pt-16 pb-0 codeweek-container-lg md:flex-row tablet:py-20">
             <div class="flex-1 order-1">
                 <div class="relative inline-block observer-element">
                     <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/community/4.png" />
@@ -597,11 +601,11 @@
                         </div>`;
                 }
                 teacherDetails +=
-                    `<ul id="teacher-list" class="m-0 relative z-50 list-none bg-white h-auto h-full overflow-x-scroll md:overflow-x-hidden overflow-y-hidden md:overflow-y-scroll flex flex-row md:flex-col max-md:pb-4">`;
+                    `<ul id="teacher-list" class="relative z-50 flex flex-row h-auto h-full m-0 overflow-x-scroll overflow-y-hidden list-none bg-white md:overflow-x-hidden md:overflow-y-scroll md:flex-col max-md:pb-4">`;
                 teachers.forEach(function(teacher, index) {
                     let shortBio = teacher.bio ? teacher.bio.split(' ').slice(0, 14).join(' ') :
-                        'No bio available';
-                    let fullBio = teacher.bio || 'No bio available';
+                        (teacher.short_bio ? teacher.short_bio.split(' ').slice(0, 14).join(' ') : 'No bio available');
+                    let fullBio = teacher.bio || teacher.short_bio || 'No bio available';
                     teacherDetails += `
                         <li data-city="${teacher.city}" class="flex flex-col-reverse max-md:justify-end justify-between min-w-[353px] md:flex-row flex gap-4 items-start p-6 w-11/12 md:w-full 
                             border-t-[5px] md:border-t-0 md:border-l-[5px] border-[#1C4DA1] 
