@@ -8,7 +8,18 @@
       class="flex items-center font-normal text-xl flex-1 text-slate-500 'w-full"
       :class="[horizontalBreakpoint === 'md' && 'md:min-h-[48px] md:w-1/3']"
     >
-      {{ label }}
+      <span>
+        {{ label }}
+
+        <Tooltip v-if="slots.tooltip" class="ml-1 translate-y-1" contentClass="w-64">
+          <template #trigger>
+            <img class="text-dark-blue w-6 h-6" src="/images/icon_question.svg" />
+          </template>
+          <template #content>
+            <slot name="tooltip" />
+          </template>
+        </Tooltip>
+      </span>
     </label>
 
     <div
@@ -35,6 +46,7 @@
 <script>
 import { computed } from 'vue';
 import _ from 'lodash';
+import Tooltip from '../Tooltip.vue';
 
 export default {
   props: {
@@ -45,7 +57,10 @@ export default {
     names: Array,
     errors: Object,
   },
-  setup(props) {
+  components: {
+    Tooltip,
+  },
+  setup(props, { slots }) {
     const errorList = computed(() => {
       const result = [];
       const nameList = [];
@@ -62,6 +77,7 @@ export default {
     });
 
     return {
+      slots,
       errorList,
     };
   },

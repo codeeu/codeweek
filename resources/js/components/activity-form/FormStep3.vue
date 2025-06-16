@@ -51,6 +51,7 @@
       <SelectField
         v-model="formValues.country_iso"
         id-name="iso"
+        searchable
         required
         name="country_iso"
         :options="countries"
