@@ -130,7 +130,7 @@
 
     <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
         <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="{{ Auth::check() ? '/add' : '/login' }}">
-            <span class="text-[16px] leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
+            <span class="text-base leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
         </a>
     </div>
 </footer>
