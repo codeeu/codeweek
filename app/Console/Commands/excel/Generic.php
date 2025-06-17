@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Console\Commands\excel;
+
 use App\Imports\GenericEventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
-use PhpOffice\PhpSpreadsheet\IOFactory;
 
 class Generic extends Command
 {
@@ -16,19 +16,22 @@ class Generic extends Command
     {
         Log::info('Loading Generic Excel');
 
-        // Count rows first (optional but useful)
-       $filePath = base_path('resources/excel/example.xlsx');
-        $spreadsheet = IOFactory::load($filePath);
-        $worksheet = $spreadsheet->getActiveSheet();
-        $rowCount = $worksheet->getHighestDataRow();
+        // Load rows to determine the actual count (only the first sheet)
+        $collection = Excel::toCollection(new GenericEventsImport($this->output), 'example.xlsx', 'excel');
+        $rows = $collection->first();
+        $rowCount = $rows->count();
 
         $this->info("Rows to import: {$rowCount}");
 
+        // Re-run with row count and output for progress tracking
         $importer = new GenericEventsImport($this->output, $rowCount);
 
         Excel::import(
             $importer,
-            $filePath
+            'example.xlsx',
+            'excel'
         );
+
+        $this->info("✅ Import completed successfully.");
     }
 }
