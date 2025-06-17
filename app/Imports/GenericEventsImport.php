@@ -17,13 +17,18 @@ use Symfony\Component\Console\Helper\ProgressBar;
 
 class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
-     protected ?ProgressBar $bar = null;
+        protected $output;
+    protected $progressBar;
+    protected $total;
 
-    public function __construct(?OutputInterface $output = null, int $rowCount = 0)
+    public function __construct(?OutputInterface $output = null, int $total = 0)
     {
-        if ($output && $rowCount > 0) {
-            $this->bar = new ProgressBar($output, $rowCount);
-            $this->bar->start();
+        $this->output = $output;
+        $this->total = $total;
+
+        if ($this->output && $total > 0) {
+            $this->progressBar = new ProgressBar($this->output, $total);
+            $this->progressBar->start();
         }
     }
 
