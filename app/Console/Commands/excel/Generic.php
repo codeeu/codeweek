@@ -9,29 +9,41 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class Generic extends Command
 {
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
     protected $signature = 'excel:generic';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
     protected $description = 'Generic Excel Importer';
 
+    /**
+     * Create a new command instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
+     * Execute the console command.
+     */
     public function handle(): void
     {
         Log::info('Loading Generic Excel');
 
-        // Load rows to determine the actual count (only the first sheet)
-        $collection = Excel::toCollection(new GenericEventsImport($this->output), 'example.xlsx', 'excel');
-        $rows = $collection->first();
-        $rowCount = $rows->count();
-
-        $this->info("Rows to import: {$rowCount}");
-
-        // Re-run with row count and output for progress tracking
-        $importer = new GenericEventsImport($this->output, $rowCount);
-
         Excel::import(
-            $importer,
+            new GenericEventsImport(),
             'example.xlsx',
             'excel'
         );
-
-        $this->info("✅ Import completed successfully.");
     }
 }

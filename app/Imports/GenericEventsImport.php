@@ -12,34 +12,9 @@ use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
-use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Helper\ProgressBar;
 
 class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
-        protected $output;
-    protected $progressBar;
-    protected $total;
-
-    public function __construct(?OutputInterface $output = null, int $total = 0)
-    {
-        $this->output = $output;
-        $this->total = $total;
-
-        if ($this->output && $total > 0) {
-            $this->progressBar = new ProgressBar($this->output, $total);
-            $this->progressBar->start();
-        }
-    }
-
-    public function __destruct()
-    {
-        if ($this->progressBar) {
-            $this->progressBar->finish();
-            $this->output->writeln("\nImport complete.");
-        }
-    }
-
     public function parseDate($value)
     {
         // Handle Excel dates or normal string dates
@@ -59,13 +34,6 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
     public function model(array $row): ?Model
     {
         Log::info('Importing row:', $row);
-        if ($this->progressBar) {
-            $this->progressBar->advance();
-        }
-
-        if (!empty($row['activity_title']) && $this->output) {
-            $this->output->writeln(" Imported: " . $row['activity_title']);
-        }
 
         // Validate required fields
         if (
