@@ -37,6 +37,7 @@
       <SelectField
         v-model="formValues.language"
         name="language"
+        searchable
         multiple
         :options="languageOptions"
       />
