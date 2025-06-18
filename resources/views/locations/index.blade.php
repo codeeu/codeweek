@@ -23,7 +23,7 @@
                         </h2>
                         <div class="flex flex-col gap-4 items-center max-w-[864px] text-[16px] tablet:text-xl text-slate-500 font-[Blinker]">
                           <p class="p-0">
-                              To add a new activity, select an existing venue form the list below or add a new venue
+                              To add a new activity, select an existing venue from the list below or add a new venue
                           </p>
                           <button
                               id="scroll-to-venue"
