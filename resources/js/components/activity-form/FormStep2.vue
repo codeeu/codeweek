@@ -33,6 +33,15 @@
         <div
           class="w-full flex flex-col gap-4 bg-dark-blue-50 border border-dark-blue-100 rounded-2xl p-4 mt-2.5"
         >
+          <div class="w-full flex gap-2 bg-gray-100 rounded p-2 mb-2">
+            <img
+              class="flex-shrink-0 mt-1 w-6 h-6"
+              src="/images/icon_info.svg"
+            />
+            <span class="text-slate-500 text-xl">
+              If you do not have clear information, please provide an estimate.
+            </span>
+          </div>
           <label class="block text-slate-500 text-xl font-semibold mb-2">
             Of this number, how many are
           </label>

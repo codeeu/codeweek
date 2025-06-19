@@ -45,7 +45,7 @@
         <div
           class="w-full flex gap-4 bg-dark-blue-50 border border-dark-blue-100 rounded-2xl p-4 mt-2.5"
         >
-          <img class="flex-shrink-0 mt-1 w-5 h-5" src="/images/icon_info.svg" />
+          <img class="flex-shrink-0 mt-1 w-6 h-6" src="/images/icon_info.svg" />
           <span class="text-slate-500 text-xl">
             Any address added below won’t be shown publicly for invite-only
             actitivities.
