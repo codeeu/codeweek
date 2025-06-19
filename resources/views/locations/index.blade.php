@@ -22,24 +22,29 @@
                             @lang('locations.title')
                         </h2>
                         <div class="flex flex-col gap-4 items-center max-w-[864px] text-[16px] tablet:text-xl text-slate-500 font-[Blinker]">
-                          <p class="p-0">
-                              To add a new activity, select an existing venue from the list below or add a new venue
+                          <p class="p-0 text-center">
+                              For your next activity, register a new venue <b>OR</b> add a new activity using one of your existing venues from the list below.
                           </p>
-                          <button
-                              id="scroll-to-venue"
-                              class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-base"
-                          >
-                              <span>Use existing venue</span>
-                          </button>
-                          <p class="p-0">
-                              OR
-                          </p>
-                          <a
-                              class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-base"
-                              href="/add?skip=1"
-                          >
-                              <span>Add a new venue</span>
-                          </a>
+                          <div class="flex flex-col md:flex-row gap-6 md:gap-[50px]">
+                              <a
+                                  class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-6 font-semibold text-base"
+                                  href="/add?skip=1"
+                              >
+                                  <span>Register a new venue</span>
+                              </a>
+                              <button
+                                  id="scroll-to-venue"
+                                  class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                              >
+                                  <span>Use existing venue</span>
+                                  <div class="flex w-4 gap-2 overflow-hidden rotate-90">
+                                    <img src="/images/arrow-right-icon.svg"
+                                        class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                    <img src="/images/arrow-right-icon.svg"
+                                        class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                </div>
+                              </button>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -65,6 +70,16 @@
             ></div>
             <div class="bg-gray-10 md:pb-20">
               <div id="venue-table" class="codeweek-container-lg relative pb-16 bg-gray-10 pt-10">
+                <div class="codeweek-container-lg flex flex-col items-center mb-6">
+                      <h2 class="text-dark-blue text-[22px] tablet:text-4xl font-medium font-['Montserrat'] mb-6 text-center">
+                          Existing venues
+                      </h2>
+                      <div class="flex flex-col gap-4 items-center max-w-[864px] text-[16px] tablet:text-xl text-slate-500 font-[Blinker]">
+                          <p class="p-0 text-center">
+                              A list of activity venues you have already created
+                          </p>
+                      </div>
+                  </div>
                   <div class="tablet:hidden flex flex-col gap-y-6">
                       @foreach($locations as $location)
                           <div class="border-2 border-[#B399D6] rounded-lg overflow-hidden">
@@ -89,7 +104,18 @@
                                       Action
                                   </div>
                                   <div class="px-4 py-5 {{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }} border-[#B399D6] font-normal flex-1">
-                                      <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6]" href="{{route('create_event', ['location'=> $location->id])}}">Add new activity</a>
+                                      <a
+                                          class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                                          href="{{route('create_event', ['location'=> $location->id])}}"
+                                      >
+                                          <span>Go</span>
+                                          <div class="flex w-4 gap-2 overflow-hidden">
+                                            <img src="/images/arrow-right-icon.svg"
+                                                class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                            <img src="/images/arrow-right-icon.svg"
+                                                class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                        </div>
+                                      </a>
                                   </div>
                               </div>
                           </div>
@@ -112,7 +138,18 @@
                               </td>
                               <td class="border-r border-[#B399D6] px-6 py-4 font-normal text-xl">{{$location->location}}</td>
                               <td class="px-6 py-4 font-normal text-xl" width="270">
-                                  <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6]" href="{{route('create_event', ['location'=> $location->id])}}">Add new activity</a>
+                                  <a
+                                      class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                                      href="{{route('create_event', ['location'=> $location->id])}}"
+                                  >
+                                      <span>Go</span>
+                                      <div class="flex w-4 gap-2 overflow-hidden">
+                                        <img src="/images/arrow-right-icon.svg"
+                                            class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                        <img src="/images/arrow-right-icon.svg"
+                                            class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                    </div>
+                                  </a>
                               </td>
                           </tr>
                           @endforeach
