@@ -75,7 +75,7 @@
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
-                      <li class="menu-title max-xl:hidden">
+                      <li class="menu-title max-xl:!hidden">
                         @lang('menu.events')
                         <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
                       </li>
@@ -96,7 +96,7 @@
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
-                      <li class="menu-title max-xl:hidden">
+                      <li class="menu-title max-xl:!hidden">
                           <a class="flex items-center gap-2"  href="{{route('educational-resources')}}">
                               @lang('menu.resources')
                               <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
@@ -161,7 +161,7 @@
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="dropdown-menu sub-menu">
-                      <li class="menu-title max-xl:hidden">
+                      <li class="menu-title max-xl:!hidden">
                         @lang('menu.schools')
                         <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
                       </li>
@@ -180,7 +180,7 @@
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
-                      <li class="menu-title max-xl:hidden">
+                      <li class="menu-title max-xl:!hidden">
                         @lang('menu.about')
                         <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
                       </li>
@@ -204,6 +204,22 @@
                       @lang('menu.blog')
                   </a>
               </li>
+
+              {{-- My account --}}
+              @if (Auth::check())
+                  <li class="main-menu-item xl:!hidden">
+                      <a
+                          class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
+                          href="javascript:void(null);"
+                      >
+                          My account
+                          <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
+                      </a>
+                      <ul class="sub-menu">
+                          @include('layout.menu-profile-dropdown')
+                      </ul>
+                  </li>
+              @endif
 
               {{-- actions --}}
               <li class="main-menu-item flex-grow flex h-full items-end xl:hidden max-xl:w-full">
@@ -233,131 +249,7 @@
                       <img src="/images/user_icon.svg" class="text-white">
                   </a>
                   <ul class="menu-dropdown">
-                      <li>
-                          <img src="/images/user_menu_profile.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="{{route('profile')}}">
-                              @lang('menu.profile')
-                          </a>
-                      </li>
-                      <li>
-                          <img src="{{asset('svg/address-book.svg')}}" class="static-image">
-                          <a class="cookweek-link hover-underline" href="{{route('activities-locations')}}">
-                              Activities Locations
-                          </a>
-                      </li>
-                      @role('super admin|leading teacher')
-                      <li class="p-1 text-orange-600 rounded">
-
-                          <img src="/images/user_menu_badges.svg">
-
-                          <a class="cookweek-link hover-underline" href="{{route('my-badges')}}">
-                              My Badges
-                          </a>
-                      </li>
-                      @endrole
-                      @role('ambassador')
-                      <li>
-                          <img src="/images/user_menu_volunteers.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="{{route('admin.online-events')}}">
-                              @lang('menu.online_events')
-                          </a>
-                      </li>
-
-                      @endrole
-                      @role('super admin')
-                      <li>
-                          <img src="/images/user_menu_volunteers.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="{{route('promoted_events')}}">
-                              @lang('menu.online_events')
-                          </a>
-                      </li>
-
-                      @endrole
-
-                      @role('ambassador|super admin')
-                      <li>
-                          <img src="/images/user_menu_pending_events.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="{{route('pending')}}">
-                              @lang('menu.pending')
-                          </a>
-                      </li>
-                      @endrole
-
-
-                      <li>
-                          <img src="/images/user_menu_your_events.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="{{route('my_events')}}">
-                              @lang('menu.your_events')
-                          </a>
-                      </li>
-                      <li>
-                          <img src="/images/user_menu_certificates.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="{{route('certificates')}}">
-                              @lang('menu.your_certificates')
-                          </a>
-                      </li>
-                      <li>
-                          <img src="/images/user_menu_report_events.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="/events_to_report">
-                              @lang('menu.report')
-                          </a>
-                      </li>
-                      <li>
-                          <img src="/images/user_menu_certificates.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="/participation">
-                              @lang('menu.participation')
-                          </a>
-                      </li>
-                      @role('super admin')
-                      <li>
-                          <img src="/images/user_menu_activities.svg" class="icon">
-                          <a class="cookweek-link hover-underline" href="{{route('excellence_winners')}}">
-                              Excellence Winners
-                          </a>
-                      </li>
-                      @endrole
-
-                      @role('super admin|leading teacher admin')
-                      <li class="p-1 text-orange-600 rounded">
-
-                          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                              <path d="M0 0h24v24H0V0z" fill="none"/>
-                              <path d="M2 6h12v2H2zm0 4h12v2H2zm0 4h8v2H2zm14.01 3L13 14l-1.5 1.5 4.51 4.5L23 13l-1.5-1.5z"
-                                    fill="#FE6824"/>
-                          </svg>
-
-                          <a class="cookweek-link hover-underline" href="{{route('leading_teachers_list')}}">
-                              Leading Teachers
-                          </a>
-                      </li>
-
-                      <li class="p-1 text-orange-600 rounded">
-
-                          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24">
-                              <path fill="#FE6824"
-                                    d="M22 7h-5.67V4v0c0-.56-.45-1-1-1H8.66v0c-.56 0-1 .44-1 1v7H1.99v0c-.56 0-1 .44-1 1v8 0c0 .55.44 1 1 1h20v0c.55 0 1-.45 1-1V8v0c0-.56-.45-1-1-1ZM7.66 19H2.99v-6h4.66Zm6.666 0h-4.67V5h4.66Zm6.66 0h-4.67V9h4.66Z"
-                              />
-                          </svg>
-
-                          <a class="cookweek-link hover-underline" href="{{route('badges-leaderboard-year')}}">
-                              Badges Leaderboard
-                          </a>
-                      </li>
-
-                      @endrole
-
-                      <li>
-                          <img src="/images/user_menu_logout.svg" class="icon">
-                          <a class="cookweek-link hover-underline" class="dropdown-item" href="{{ route('logout') }}"
-                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                              {{ __('menu.logout') }}
-                          </a>
-                      </li>
-
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                            style="display: none;">
-                          {{ csrf_field() }}
-                      </form>
+                      @include('layout.menu-profile-dropdown')
                   </ul>
               </div>
           @else
@@ -366,7 +258,7 @@
               </a>
           @endif
 
-          <a class="max-xl:hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/add">
+          <a class="max-xl:!hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/add">
               <span class="text-base leading-7 font-semibold text-black normal-case">
                   @lang('menu.register_activity')
               </span>
