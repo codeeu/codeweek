@@ -2,6 +2,9 @@
     $hideStickyFooterOnPages = [
       'activities-locations',
       'add',
+      'login',
+      'register',
+      'password/reset',
     ];
 @endphp
 
