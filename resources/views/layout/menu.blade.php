@@ -102,8 +102,8 @@
                               <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
                           </a>
                       </li>
-                      <li class="xl:flex gap-16">
-                          <div class="flex-grow flex flex-col gap-4 mb-4 xl:mb-0">
+                      <li class="flex flex-col xl:flex-row gap-16">
+                          <div class="flex-grow flex flex-col gap-4 mb-1 xl:mb-0 max-xl:w-full">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg">@lang('menu.resources')</div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('coding@home')}}">@lang('menu.coding@home')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">Podcasts</a></div>
@@ -115,7 +115,7 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
                             </div>
-                            <div class="flex-grow flex flex-col gap-4">
+                            <div class="flex-grow flex flex-col gap-4 max-xl:w-full">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('challenges')}}">@lang('menu.challenges')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">Hackathons</a></div>
