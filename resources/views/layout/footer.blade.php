@@ -25,6 +25,11 @@
                             <img src="/images/social/facebook.svg" alt="Facebook" />
                         </a>
                     </div>
+                     <div class="flex gap-[22px] my-10">
+                        <a class="cookweek-link hover-underline" href="mailto:info@codeweek.eu" target="_blank" rel="noreferer, noopener">
+                            e: info@codeweek.eu 
+                        </a>
+                      </div>
                 </div>
                 <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg" class="mb-10 xl:mb-0">
             </div>
@@ -99,8 +104,8 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col justify-between gap-8 pt-8 pb-20 codeweek-container-lg md:pb-8 xl:py-4 xl:flex-row">
-        <ul class="flex flex-col items-start flex-shrink-0 gap-4 p-0 m-0 xl:items-center xl:flex-row xl:gap-10">
+    <div class="flex flex-col gap-8 justify-between pt-8 pb-20 codeweek-container-lg md:pb-8 xl:py-4 xl:flex-row">
+        <ul class="flex flex-col flex-shrink-0 gap-4 items-start p-0 m-0 xl:items-center xl:flex-row xl:gap-10">
             <li>
                 <a href="/privacy" class="cookweek-link hover-underline !text-sm">@lang('footer.privacy_policy')</a>
             </li>
