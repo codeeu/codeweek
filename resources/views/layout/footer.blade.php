@@ -27,7 +27,7 @@
                     </div>
                      <div class="flex gap-[22px] my-10">
                         <a class="cookweek-link hover-underline" href="mailto:info@codeweek.eu" target="_blank" rel="noreferer, noopener">
-                            e: info@codeweek.eu 
+                            info@codeweek.eu 
                         </a>
                       </div>
                 </div>
