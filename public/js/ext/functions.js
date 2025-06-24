@@ -917,14 +917,6 @@ var SEMICOLON = SEMICOLON || {};
                 $('#primary-menu.sub-title').children('ul').children('.current').prev().css({ backgroundImage : 'none' });
             }
 
-            if( SEMICOLON.isMobile.Android() ) {
-                $( '#primary-menu ul li.sub-menu' ).children('a').on('touchstart', function(e){
-                    if( !$(this).parent('li.sub-menu').hasClass('sfHover') ) {
-                        e.preventDefault();
-                    }
-                });
-            }
-
             if( SEMICOLON.isMobile.Windows() ) {
                 $('#primary-menu > ul, #primary-menu > div > ul,.top-links > ul').superfish('destroy').addClass('windows-mobile-menu');
 
