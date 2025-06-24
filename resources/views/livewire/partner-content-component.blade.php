@@ -38,7 +38,7 @@
                     @endphp
 
                     <div 
-                        class="relative flex flex-col items-center justify-center border {{ $isSelected ? 'border-blue-500' : 'border-[#DEDEDE]' }} w-full h-[160px] rounded-[5px] cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
+                        class="relative flex flex-col items-center bg-white justify-center border-2 {{ $isSelected ? 'border-[#DEDEDE] ' : 'border-[#A4B8D9]' }} w-full h-[160px] rounded-[16px] cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
                         @if($filter === 'Partners')
                             wire:click="showPartnerContent({{ $partner->id }})"
                             tabindex="0"
@@ -56,8 +56,8 @@
                         
                         @if($isSelected && $filter === 'Partners')
                             <!-- Triangle/Caret (shown if this is the selected partner) -->
-                            <div class="absolute transform -translate-x-1/2 -bottom-6 left-1/2">
-                                <div class="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-aqua mt-[13px]"></div>
+                            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                                <div class="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-[#F4F6FA] mt-[13px]"></div>
                             </div>
                         @endif
                     </div>
@@ -67,13 +67,13 @@
             @if($selectedPartner && $chunk->contains('id', $selectedPartner->id) && $filter === 'Partners')
                 <!-- Display selected partner's content below the grid row -->
                 <section class="flex flex-col">
-                    <article class="relative flex flex-col w-full p-10 mb-4 bg-aqua max-md:px-5 max-md:max-w-full">
-                        <h3 class="text-2xl font-bold leading-none text-primary">{{ $selectedPartner->name }}</h3>
-                        <div class="flex flex-col w-full pt-5 mt-1 text-base text-black">
+                    <article class="flex relative flex-col p-10 mb-4 w-full bg-[#F4F6FA] max-md:px-5 max-md:max-w-full">
+                        <h3 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat']">{{ $selectedPartner->name }}</h3>
+                        <div class="flex flex-col pt-5 mt-1 w-full text-base text-black">
                             <p class="leading-6">
                                 {!! $selectedPartner->description !!}
                             </p>
-                            <a target="_blank" href="{{ $selectedPartner->link_url }}" class="mt-5 underline text-secondary hover:text-primary">Visit Partner</a>
+                            <a target="_blank" href="{{ $selectedPartner->link_url }}" class="mt-5 cookweek-link hover-underline !text-[#1C4DA1] !text-[16px] max-w-fit">Visit Partner</a>
                         </div>
                     </article>
                 </section>

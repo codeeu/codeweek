@@ -29,6 +29,7 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
             return null;
         }
     }
+    
 
     public function model(array $row): ?Model
     {
@@ -70,6 +71,7 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
                 'activity_type' => trim($row['activity_type']),
                 'location' => !empty($row['address']) ? trim($row['address']) : 'online',
                 'event_url' => !empty($row['organiser_website']) ? trim($row['organiser_website']) : '',
+                'contact_person' => !empty($row['contact_email']) ? trim($row['contact_email']) : '',
                 'user_email' => !empty($row['contact_email']) ? trim($row['contact_email']) : '',
                 'creator_id' => $creatorId,
                 'country_iso' => strtoupper(trim($row['country'])),
@@ -85,6 +87,41 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
                 'latitude' => !empty($row['latitude']) ? trim($row['latitude']) : '',
                 'language' => !empty($row['language']) ? strtolower(explode('_', trim($row['language']))[0]) : 'en',
                 'mass_added_for' => 'Excel',
+                 'recurring_event' => isset($row['recurring_event'])
+                    ? $this->validateSingleChoice($row['recurring_event'], Event::RECURRING_EVENTS)
+                    : null,
+
+                'males_count' => isset($row['males_count']) ? (int) $row['males_count'] : null,
+                'females_count' => isset($row['females_count']) ? (int) $row['females_count'] : null,
+                'other_count' => isset($row['other_count']) ? (int) $row['other_count'] : null,
+
+                'is_extracurricular_event' => isset($row['is_extracurricular_event'])
+                    ? $this->parseBool($row['is_extracurricular_event'])
+                    : false,
+
+                'is_standard_school_curriculum' => isset($row['is_standard_school_curriculum'])
+                    ? $this->parseBool($row['is_standard_school_curriculum'])
+                    : false,
+
+                'is_use_resource' => isset($row['is_use_resource'])
+                    ? $this->parseBool($row['is_use_resource'])
+                    : false,
+
+                'activity_format' => isset($row['activity_format'])
+                    ? $this->validateMultiChoice($row['activity_format'], Event::ACTIVITY_FORMATS)
+                    : [],
+
+                'ages' => isset($row['ages'])
+                    ? $this->validateMultiChoice($row['ages'], Event::AGES)
+                    : [],
+
+                'duration' => isset($row['duration'])
+                    ? $this->validateSingleChoice($row['duration'], Event::DURATIONS)
+                    : null,
+
+                'recurring_type' => isset($row['recurring_type'])
+                    ? $this->validateSingleChoice($row['recurring_type'], Event::RECURRING_TYPES)
+                    : null,
             ]);
 
             $event->save();
