@@ -1,6 +1,16 @@
-<footer class="border-t-[3px] border-primary bg-white">
-    <div class="py-10 border-b md:py-16">
-        <div class="flex flex-col codeweek-container-lg xl:flex-row xl:justify-between">
+@php
+    $hideStickyFooterOnPages = [
+      'activities-locations',
+      'add',
+      'login',
+      'register',
+      'password/reset',
+    ];
+@endphp
+
+<footer id="page-footer" class="border-t-[3px] border-primary bg-white">
+    <div class="py-10 md:py-16 border-b">
+        <div class="codeweek-container-lg flex flex-col xl:flex-row xl:justify-between">
             <div class="flex flex-col justify-between">
                 <div>
                     <div class="mb-6">
@@ -133,11 +143,13 @@
         <img class="w-6 h-6 icon-rotate-270 md:w-8 md:h-8" src="/images/arrow-up-icon.svg" />
     </div>
 
-    <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
-        <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="{{ Auth::check() ? '/add' : '/login' }}">
-            <span class="text-[16px] leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
-        </a>
-    </div>
+    @if (!collect($hideStickyFooterOnPages)->contains(fn($path) => request()->is($path)))
+        <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
+            <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="{{ Auth::check() ? '/add' : '/login' }}">
+                <span class="text-base leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
+            </a>
+        </div>
+    @endif
 </footer>
 
 @push('scripts')
@@ -155,10 +167,12 @@
   window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > 0) {
-      scrollFooterActivity.classList.add('visible');
-    } else {
-      scrollFooterActivity.classList.remove('visible');
+    if (scrollFooterActivity) {
+      if (scrollTop > 0) {
+        scrollFooterActivity.classList.add('visible');
+      } else {
+        scrollFooterActivity.classList.remove('visible');
+      }
     }
   });
 </script>
