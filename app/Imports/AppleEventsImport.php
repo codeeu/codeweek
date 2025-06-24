@@ -78,7 +78,10 @@ class AppleEventsImport extends BaseEventsImport implements ToModel, WithCustomV
         $event->save();
 
         $event->audiences()->attach(explode(',', $row['audience_comma_separated_ids']));
-        $event->themes()->attach(explode(',', $row['theme_comma_separated_ids']));
+        $validThemeIds = $this->validateThemes($row['theme_comma_separated_ids'] ?? '');
+        if (count($validThemeIds) > 0 ) {
+            $event->themes()->attach($validThemeIds);
+        }
 
         return $event;
 

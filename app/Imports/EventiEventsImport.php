@@ -113,12 +113,9 @@ class EventiEventsImport extends BaseEventsImport implements ToModel, WithCustom
             }
 
             if (!empty($row['theme_comma_separated_ids'])) {
-                $themes = array_unique(array_map('trim', explode(',', $row['theme_comma_separated_ids'])));
-                $themes = array_filter($themes, function ($id) {
-                    return is_numeric($id) && $id > 0 && $id <= 100;
-                });
-                if (!empty($themes)) {
-                    $event->themes()->attach($themes);
+                $validThemeIds = $this->validateThemes($row['theme_comma_separated_ids'] ?? '');
+                if (count($validThemeIds) > 0 ) {
+                    $event->themes()->attach($validThemeIds);
                 }
             }
 
