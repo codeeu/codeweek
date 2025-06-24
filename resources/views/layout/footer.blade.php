@@ -9,29 +9,37 @@
                         </a>
                     </div>
                     <div class="flex gap-[22px] mb-10 xl:mb-0">
-                        <a class="cookweek-link hover-underline" href="https://www.linkedin.com/company/codeweek/" target="_blank" rel="noreferer, noopener">
+                        <a class="cookweek-link hover-underline" href="https://www.linkedin.com/company/codeweek/"
+                            target="_blank" rel="noreferer, noopener">
                             <img src="/images/social/linkedin.svg" alt="LinkedIn" />
                         </a>
-                        <a class="cookweek-link hover-underline" href="https://twitter.com/CodeWeekEU" target="_blank" rel="noreferer, noopener">
+                        <a class="cookweek-link hover-underline" href="https://twitter.com/CodeWeekEU" target="_blank"
+                            rel="noreferer, noopener">
                             <img src="/images/social/twitter.svg" alt="X" />
                         </a>
-                        <a class="cookweek-link hover-underline" href="https://www.instagram.com/codeweekeu/" target="_blank" rel="noreferer, noopener">
+                        <a class="cookweek-link hover-underline" href="https://www.instagram.com/codeweekeu/"
+                            target="_blank" rel="noreferer, noopener">
                             <img src="/images/social/instagram.svg" alt="Instagram" />
                         </a>
-                        <a class="cookweek-link hover-underline" href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA" target="_blank" rel="noreferer, noopener">
+                        <a class="cookweek-link hover-underline"
+                            href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA" target="_blank"
+                            rel="noreferer, noopener">
                             <img src="/images/social/youtube.svg" alt="Youtube" />
                         </a>
-                        <a class="cookweek-link hover-underline" href="https://www.facebook.com/codeEU/" target="_blank" rel="noreferer, noopener">
+                        <a class="cookweek-link hover-underline" href="https://www.facebook.com/codeEU/" target="_blank"
+                            rel="noreferer, noopener">
                             <img src="/images/social/facebook.svg" alt="Facebook" />
                         </a>
                     </div>
-                     <div class="flex gap-[22px] my-10">
-                        <a class="cookweek-link hover-underline" href="mailto:info@codeweek.eu" target="_blank" rel="noreferer, noopener">
-                            e: info@codeweek.eu 
+                    <div class="flex gap-[22px] my-10">
+                        <a class="cookweek-link hover-underline" href="mailto:info@codeweek.eu" target="_blank"
+                            rel="noreferer, noopener">
+                            info@codeweek.eu
                         </a>
-                      </div>
+                    </div>
                 </div>
-                <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg" class="mb-10 xl:mb-0">
+                <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg"
+                    class="mb-10 xl:mb-0">
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 xl:gap-[120px]">
@@ -74,7 +82,8 @@
                             <a href="/blog" class="cookweek-link hover-underline">@lang('footer.news')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://forms.mailpro.com/l3086a9a3-9dc5-4160-ab12-71a0f34d3f07" target="_blank" class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
+                            <a href="https://forms.mailpro.com/l3086a9a3-9dc5-4160-ab12-71a0f34d3f07" target="_blank"
+                                class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
                         </li>
                     </ul>
                 </div>
@@ -82,7 +91,8 @@
                     <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">@lang('footer.educational_resources')</p>
                     <ul class="p-0 m-0">
                         <li class="mb-4">
-                            <a href="/resources/CodingAtHome" class="cookweek-link hover-underline">@lang('footer.coding_home')</a>
+                            <a href="/resources/CodingAtHome"
+                                class="cookweek-link hover-underline">@lang('footer.coding_home')</a>
                         </li>
                         <li class="mb-4">
                             <a href="/podcasts" class="cookweek-link hover-underline">@lang('footer.podcast')</a>
@@ -123,43 +133,47 @@
             </li> --}}
         </ul>
         <p class="p-0 text-slate font-['Montserrat'] font-medium text-sm mb-8 md:mb-0">
-            ©CodeWeek 2025 | @lang('footer.designed_and_developed_by') <a href="https://www.matrixinternet.ie/" target="_blank" class="cookweek-link hover-underline !text-sm">Matrix Internet</a> . @lang('footer.all_rights_reserved')
+            ©CodeWeek 2025 | @lang('footer.designed_and_developed_by') <a href="https://www.matrixinternet.ie/" target="_blank"
+                class="cookweek-link hover-underline !text-sm">Matrix Internet</a> . @lang('footer.all_rights_reserved')
         </p>
     </div>
-    <div
-        id="scroll-top-btn"
-        class="fixed z-[100] -bottom-2 hover:bottom-0 right-[20px] bg-yellow hover:bg-primary p-3 pb-4 md:p-4 md:pb-6 rounded-t-full duration-300 cursor-pointer"
-    >
+    <div id="scroll-top-btn"
+        class="fixed z-[100] -bottom-2 hover:bottom-0 right-[20px] bg-yellow hover:bg-primary p-3 pb-4 md:p-4 md:pb-6 rounded-t-full duration-300 cursor-pointer">
         <img class="w-6 h-6 icon-rotate-270 md:w-8 md:h-8" src="/images/arrow-up-icon.svg" />
     </div>
 
-    <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
-        <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="{{ Auth::check() ? '/add' : '/login' }}">
+    <div id="footer-scroll-activity"
+        class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
+        <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center"
+            href="{{ Auth::check() ? '/add' : '/login' }}">
             <span class="text-[16px] leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
         </a>
     </div>
 </footer>
 
 @push('scripts')
-<script type="text/javascript">
-  // Scroll Top
-  const scrollTopBtn = document.getElementById("scroll-top-btn");
+    <script type="text/javascript">
+        // Scroll Top
+        const scrollTopBtn = document.getElementById("scroll-top-btn");
 
-  scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
 
-  // toggle bottom sticky bar when scroll on mobile
-  const scrollFooterActivity = document.getElementById('footer-scroll-activity');
+        // toggle bottom sticky bar when scroll on mobile
+        const scrollFooterActivity = document.getElementById('footer-scroll-activity');
 
-  window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > 0) {
-      scrollFooterActivity.classList.add('visible');
-    } else {
-      scrollFooterActivity.classList.remove('visible');
-    }
-  });
-</script>
+            if (scrollTop > 0) {
+                scrollFooterActivity.classList.add('visible');
+            } else {
+                scrollFooterActivity.classList.remove('visible');
+            }
+        });
+    </script>
 @endpush
