@@ -20,7 +20,7 @@ class SuperOrganiserQuery
     public static function winners($edition)
     {
         $winners = DB::table('events')
-            ->where('status', '=', 'APPROVED')
+            ->where('status', 'APPROVED')
             ->whereNull('deleted_at')
             ->whereYear('end_date', '=', $edition)
             ->groupBy('creator_id')

@@ -10,10 +10,9 @@ use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
+class GenericEventsImport extends BaseEventsImport implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
     public function parseDate($value)
     {
@@ -29,7 +28,6 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
             return null;
         }
     }
-    
 
     public function model(array $row): ?Model
     {
@@ -59,7 +57,6 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
                 $creatorId = User::where('email', trim($row['creator_id']))->value('id');
             }
         }
-
         try {
             $event = new Event([
                 'status' => 'APPROVED',
@@ -71,7 +68,6 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
                 'activity_type' => trim($row['activity_type']),
                 'location' => !empty($row['address']) ? trim($row['address']) : 'online',
                 'event_url' => !empty($row['organiser_website']) ? trim($row['organiser_website']) : '',
-                'contact_person' => !empty($row['contact_email']) ? trim($row['contact_email']) : '',
                 'user_email' => !empty($row['contact_email']) ? trim($row['contact_email']) : '',
                 'creator_id' => $creatorId,
                 'country_iso' => strtoupper(trim($row['country'])),
@@ -87,7 +83,7 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
                 'latitude' => !empty($row['latitude']) ? trim($row['latitude']) : '',
                 'language' => !empty($row['language']) ? strtolower(explode('_', trim($row['language']))[0]) : 'en',
                 'mass_added_for' => 'Excel',
-                 'recurring_event' => isset($row['recurring_event'])
+                'recurring_event' => isset($row['recurring_event'])
                     ? $this->validateSingleChoice($row['recurring_event'], Event::RECURRING_EVENTS)
                     : null,
 
@@ -129,7 +125,7 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
             // Audiences
             if (!empty($row['audience_comma_separated_ids'])) {
                 $audiences = array_unique(array_map('trim', explode(',', $row['audience_comma_separated_ids'])));
-                $audiences = array_filter($audiences, fn ($id) => is_numeric($id) && $id > 0 && $id <= 100);
+                $audiences = array_filter($audiences, fn($id) => is_numeric($id) && $id > 0 && $id <= 100);
                 if (!empty($audiences)) {
                     $event->audiences()->attach($audiences);
                 }
@@ -137,10 +133,9 @@ class GenericEventsImport extends DefaultValueBinder implements ToModel, WithCus
 
             // Themes
             if (!empty($row['theme_comma_separated_ids'])) {
-                $themes = array_unique(array_map('trim', explode(',', $row['theme_comma_separated_ids'])));
-                $themes = array_filter($themes, fn ($id) => is_numeric($id) && $id > 0 && $id <= 100);
-                if (!empty($themes)) {
-                    $event->themes()->attach($themes);
+                $validThemeIds = $this->validateThemes($row['theme_comma_separated_ids'] ?? '');
+                if (count($validThemeIds) > 0) {
+                    $event->themes()->attach($validThemeIds);
                 }
             }
 
