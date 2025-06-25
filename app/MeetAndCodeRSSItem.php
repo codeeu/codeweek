@@ -60,6 +60,31 @@ use Illuminate\Support\Str;
  */
 class MeetAndCodeRSSItem extends Model
 {
+    protected $fillable = [
+        'activity_format',
+        'duration',
+        'recurring_event',
+        'recurring_type',
+        'males_count',
+        'females_count',
+        'other_count',
+        'is_extracurricular_event',
+        'is_standard_school_curriculum',
+        'is_use_resource',
+        'ages'
+    ];
+
+    protected function casts(): array
+    {
+        return [
+            'activity_format' => 'array',
+            'is_extracurricular_event' => 'boolean',
+            'is_standard_school_curriculum' => 'boolean',
+            'ages' => 'array',
+            'is_use_resource' => 'boolean',
+        ];
+    }
+
     public function getCountryIso()
     {
 
@@ -73,7 +98,6 @@ class MeetAndCodeRSSItem extends Model
             default:
                 return Country::where('name', 'like', $this->country)->first()->iso;
         }
-
     }
 
     private function mapOrganisationTypes($organisation_type)
@@ -84,7 +108,6 @@ class MeetAndCodeRSSItem extends Model
             default:
                 return 'other';
         }
-
     }
 
     private function mapActivityTypes($activity_type)
@@ -97,7 +120,6 @@ class MeetAndCodeRSSItem extends Model
             default:
                 return 'other';
         }
-
     }
 
     public function createEvent($user)
@@ -125,9 +147,20 @@ class MeetAndCodeRSSItem extends Model
             'end_date' => $this->end_date,
             'longitude' => $this->lon,
             'latitude' => $this->lat,
-            'geoposition' => $this->lat.','.$this->lon,
+            'geoposition' => $this->lat . ',' . $this->lon,
             'language' => MeetAndCodeHelper::getLanguage($this->link),
             'mass_added_for' => 'RSS meet_and_code',
+            'activity_format' => is_array($this->activity_format) ? $this->activity_format : [],
+            'duration' => $this->duration,
+            'recurring_event' => $this->recurring_event,
+            'recurring_type' => $this->recurring_type,
+            'males_count' => $this->males_count,
+            'females_count' => $this->females_count,
+            'other_count' => $this->other_count,
+            'is_extracurricular_event' => $this->is_extracurricular_event,
+            'is_standard_school_curriculum' => $this->is_standard_school_curriculum,
+            'ages' => is_array($this->ages) ? $this->ages : [],
+            'is_use_resource' => $this->is_use_resource,
         ]);
 
         $event->save();
@@ -137,6 +170,5 @@ class MeetAndCodeRSSItem extends Model
         $event->themes()->attach(8);
 
         return $event;
-
     }
 }

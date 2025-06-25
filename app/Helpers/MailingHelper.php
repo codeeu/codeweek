@@ -11,7 +11,7 @@ class MailingHelper
 
         $activeIds = DB::table('events')
             ->join('users', 'users.id', '=', 'events.creator_id')
-            ->where('status', '=', 'APPROVED')
+            ->where('status', 'APPROVED')
             ->where('users.receive_emails', true)
             ->where('events.country_iso', '=', $country)
             ->whereNull('users.deleted_at')
@@ -25,7 +25,7 @@ class MailingHelper
         return DB::table('events')
             ->join('users', 'users.id', '=', 'events.creator_id')
 
-            ->where('status', '=', 'APPROVED')
+            ->where('status', 'APPROVED')
             ->whereNull('events.deleted_at')
             ->whereIntegerInRaw('events.creator_id', $activeIds)
             ->groupBy('users.email')

@@ -47,7 +47,7 @@ class Excellence extends Command
         //Select the winners from the Database
         $winners = [];
         foreach ($codeweek4all_codes as $codeweek4all_code) {
-            $creators = Event::whereYear('end_date', '=', $edition)->where('status', '=', 'APPROVED')->where('codeweek_for_all_participation_code', '=', $codeweek4all_code)->pluck('creator_id');
+            $creators = Event::whereYear('end_date', '=', $edition)->where('status', 'APPROVED')->where('codeweek_for_all_participation_code', '=', $codeweek4all_code)->pluck('creator_id');
             foreach ($creators as $creator) {
                 if (! in_array($creator, $winners)) {
                     $winners[] = $creator;
