@@ -9,10 +9,9 @@ use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-class AvandeEventsImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
+class AvandeEventsImport extends AppleEventsImport implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
   public function parseDate($date)
   {
@@ -72,6 +71,41 @@ class AvandeEventsImport extends DefaultValueBinder implements ToModel, WithCust
         'language' => !empty($row['language']) ? strtolower(explode('_', $row['language'])[0]) : 'en',
         'approved_by' => 19588,
         'mass_added_for' => 'Excel',
+        'recurring_event' => isset($row['recurring_event'])
+            ? $this->validateSingleChoice($row['recurring_event'], Event::RECURRING_EVENTS)
+            : null,
+
+        'males_count' => isset($row['males_count']) ? (int) $row['males_count'] : null,
+        'females_count' => isset($row['females_count']) ? (int) $row['females_count'] : null,
+        'other_count' => isset($row['other_count']) ? (int) $row['other_count'] : null,
+
+        'is_extracurricular_event' => isset($row['is_extracurricular_event'])
+            ? $this->parseBool($row['is_extracurricular_event'])
+            : false,
+
+        'is_standard_school_curriculum' => isset($row['is_standard_school_curriculum'])
+            ? $this->parseBool($row['is_standard_school_curriculum'])
+            : false,
+
+        'is_use_resource' => isset($row['is_use_resource'])
+            ? $this->parseBool($row['is_use_resource'])
+            : false,
+
+        'activity_format' => isset($row['activity_format'])
+            ? $this->validateMultiChoice($row['activity_format'], Event::ACTIVITY_FORMATS)
+            : [],
+
+        'ages' => isset($row['ages'])
+            ? $this->validateMultiChoice($row['ages'], Event::AGES)
+            : [],
+
+        'duration' => isset($row['duration'])
+            ? $this->validateSingleChoice($row['duration'], Event::DURATIONS)
+            : null,
+
+        'recurring_type' => isset($row['recurring_type'])
+            ? $this->validateSingleChoice($row['recurring_type'], Event::RECURRING_TYPES)
+            : null,
       ]);
 
       $event->save();
@@ -88,14 +122,9 @@ class AvandeEventsImport extends DefaultValueBinder implements ToModel, WithCust
       }
 
       // Handle themes with validation
-      if (!empty($row['theme_comma_separated_ids'])) {
-        $themes = array_unique(array_map('trim', explode(',', $row['theme_comma_separated_ids'])));
-        $themes = array_filter($themes, function ($id) {
-          return is_numeric($id) && $id > 0 && $id <= 100;
-        });
-        if (!empty($themes)) {
-          $event->themes()->attach($themes);
-        }
+      $validThemeIds = $this->validateThemes($row['theme_comma_separated_ids'] ?? '');
+      if (count($validThemeIds) > 0 ) {
+        $event->themes()->attach($validThemeIds);
       }
 
       return $event;

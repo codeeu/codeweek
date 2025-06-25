@@ -16,9 +16,11 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Spatie\Activitylog\LogOptions;
 use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class Event extends Model
 {
@@ -67,6 +69,58 @@ class Event extends Model
         'location_id',
         'leading_teacher_tag',
         'mass_added_for',
+        'activity_format',
+        'duration',
+        'recurring_event',
+        'recurring_type',
+        'males_count',
+        'females_count',
+        'other_count',
+        'is_extracurricular_event',
+        'is_standard_school_curriculum',
+        'is_use_resource',
+        'ages'
+    ];
+
+    public const ACTIVITY_FORMATS = [
+        'coding-camp',
+        'summer-camp',
+        'weekend-course',
+        'evening-course',
+        'careerday',
+        'university-visit',
+        'coding-home',
+        'code-week-challenge',
+        'competition',
+        'other',
+    ];
+    
+    public const DURATIONS = [
+        '0-1',
+        '1-2',
+        '2-4',
+        'over-4',
+    ];
+    
+    public const RECURRING_TYPES = [
+        'consecutive',
+        'individual',
+    ];
+    
+    public const RECURRING_EVENTS = [
+        'daily',
+        'weekly',
+        'monthly',
+    ];
+    
+    public const AGES = [
+        'under-5',
+        '6-9',
+        '10-12',
+        '13-15',
+        '16-18',
+        '19-25',
+        'over-25',
     ];
 
     //    protected $policies = [
@@ -74,7 +128,14 @@ class Event extends Model
     //        Event::class => EventPolicy::class
     //    ];
 
-    //protected $appends = ['LatestModeration'];
+    protected $appends = ['picture_path', 'languages'];
+
+    public function getLanguagesAttribute() {
+        if(!is_array($this->language)) {
+            return explode(',', $this->language) ?? null;
+        }
+        return $this->language;
+    }
 
     public function getUrlAttribute() {
         if (!empty($this->slug)) {
@@ -108,7 +169,12 @@ class Event extends Model
             'description' => PurifyHtmlOnGet::class,
             'title' => PurifyHtmlOnGet::class,
             'location' => PurifyHtmlOnGet::class,
-            'language' => PurifyHtmlOnGet::class,
+
+            'activity_format' => 'array',
+            'is_extracurricular_event' => 'boolean',
+            'is_standard_school_curriculum' => 'boolean',
+            'ages' => 'array',
+            'is_use_resource' => 'boolean',
         ];
     }
 
@@ -140,6 +206,8 @@ class Event extends Model
                 return $this->picture;
             }
 
+            // For local test
+            // return Storage::disk('public')->url($this->picture);
             return config('codeweek.aws_url').$this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
@@ -212,7 +280,7 @@ class Event extends Model
 
     public static function getByYear($year)
     {
-        $events = Event::where('status', 'like', 'APPROVED')->where(
+        $events = Event::where('status', 'APPROVED')->where(
             'start_date',
             '>',
             Carbon::createFromDate($year, 1, 1)
