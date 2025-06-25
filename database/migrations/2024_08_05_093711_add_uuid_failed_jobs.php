@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (Schema::hasTable('failed_jobs')) {
+        if (Schema::hasTable('failed_jobs') && !Schema::hasColumn('failed_jobs', 'uuid')) {
             Schema::table('failed_jobs', function (Blueprint $table) {
-                if (!Schema::hasColumn('failed_jobs', 'uuid')) {
-                    $table->string('uuid')->after('id')->nullable()->unique();
-                }
+                $table->string('uuid')->after('id')->nullable()->unique();
             });
         }
     }
