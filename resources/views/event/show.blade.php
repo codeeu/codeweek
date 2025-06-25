@@ -145,18 +145,8 @@
       window.event_details = {!! json_encode($event->getJavascriptData()) !!};
       window.event_coordinates = event_details.geoposition.split(",");
     </script>
-
-    <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
     <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>
     <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet"/>
-    <script type="application/json">
-        {
-            "service" : "map",
-            "version" : "2.0",
-            "renderTo" : "events-show-map",
-            "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
-        }
-    </script>
 @endpush
 
 @push('extra-css')
