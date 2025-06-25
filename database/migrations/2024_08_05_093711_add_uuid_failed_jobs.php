@@ -13,7 +13,9 @@ return new class extends Migration
     {
         if (Schema::hasTable('failed_jobs')) {
             Schema::table('failed_jobs', function (Blueprint $table) {
-                $table->string('uuid')->after('id')->nullable()->unique();
+                if (!Schema::hasColumn('failed_jobs', 'uuid')) {
+                    $table->string('uuid')->after('id')->nullable()->unique();
+                }
             });
         }
     }
