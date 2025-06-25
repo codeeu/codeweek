@@ -623,6 +623,7 @@ export default {
     const handleInitMap = () => {
       mapInstance.value = L.map('mapid');
       mapInstance.value.setView([51, 10], 5);
+      
       L.tileLayer(props.mapTileUrl, {
         maxZoom: 18,
         attribution: '© <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -649,12 +650,12 @@ export default {
     onMounted(() => {
       onSubmit();
 
-      document.addEventListener('leaflet-ready', () => {
+      // document.addEventListener('leaflet-ready', () => {
         handleInitMap();
         setSelectedCountryToCenterMap();
         handleAddMarkerLayer();
         handleAddUserLocationMarker();
-      });
+      // });
     });
 
     return {
