@@ -418,7 +418,9 @@ export default {
 
     onMounted(() => {
       // document.addEventListener('leaflet-ready', () => {
-        handleLoadMap();
+        setTimeout(() => {
+          handleLoadMap();
+        }, 2000);
       // });
     });
 
