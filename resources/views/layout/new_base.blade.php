@@ -67,6 +67,10 @@
         <title>EU Code Week</title>
     @endif
 
+    <!-- Start - Cookie Bot -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="719385d2-f5d2-4806-8352-72e5ebe53996" data-blockingmode="auto" type="text/javascript"></script>
+    <!-- End - Cookie Bot -->
+
 </head>
 
 <body class="new-layout">
@@ -204,9 +208,5 @@
         window.Livewire.start();
       }
     </script>
-
-    <!-- Start - Cookie Bot -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="719385d2-f5d2-4806-8352-72e5ebe53996" data-blockingmode="auto" type="text/javascript"></script>
-    <!-- End - Cookie Bot -->
 </body>
 </html>

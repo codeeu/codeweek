@@ -651,10 +651,12 @@ export default {
       onSubmit();
 
       // document.addEventListener('leaflet-ready', () => {
+      setTimeout(() => {
         handleInitMap();
         setSelectedCountryToCenterMap();
         handleAddMarkerLayer();
         handleAddUserLocationMarker();
+      }, 2000);
       // });
     });
 
