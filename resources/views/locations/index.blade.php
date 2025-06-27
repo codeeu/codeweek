@@ -161,15 +161,3 @@
         </section>
     </section>
 @endsection
-
-@push('scripts')
-  <script type="text/javascript">
-    document.getElementById('scroll-to-venue').addEventListener('click', function () {
-      const venueTable = document.getElementById('venue-table');
-      if (venueTable) {
-        const top = venueTable.getBoundingClientRect().top + window.pageYOffset - 150;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
-    });
-  </script>
-@endpush
