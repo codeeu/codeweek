@@ -312,6 +312,7 @@ export default {
     CheckboxField,
   },
   setup(props, { emit }) {
+    console.log('event', props.event);
     const { stepTitles } = useDataOptions();
 
     const newEvent = ref(null);
@@ -518,9 +519,7 @@ export default {
           ),
           codeweek_for_all_participation_code:
             event.codeweek_for_all_participation_code,
-          leading_teacher_tag: event.leading_teacher_tag
-            ? Number(event.leading_teacher_tag)
-            : null,
+          leading_teacher_tag: event.leading_teacher_tag,
           picture: event.picture,
           pictureUrl: props.selectedValues.picture,
 
@@ -535,14 +534,6 @@ export default {
           contact_person: event.contact_person,
           user_email: event.user_email,
         };
-
-        formValues.value.leading_teacher_tag = event.leading_teacher_tag || [];
-        if (
-          typeof event.leading_teacher_tag === 'number' ||
-          typeof event.leading_teacher_tag === 'string'
-        ) {
-          formValues.value.leading_teacher_tag = [event.leading_teacher_tag];
-        }
 
         if (event.recurring_event) {
           formValues.value.is_recurring_event_local = 'true';

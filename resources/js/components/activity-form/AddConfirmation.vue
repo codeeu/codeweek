@@ -146,9 +146,6 @@ export default {
         ].join(', '),
       ].join(' - ');
       const ageValues = (ages || []).map((item) => ageOptionsMap.value[item]);
-      const teacherValues = (leading_teacher_tag || []).map(
-        (item) => props.leadingTeachers.find(({ id }) => id === item)?.name
-      );
 
       const step2List = [
         {
@@ -177,7 +174,7 @@ export default {
         },
         {
           label: trans('community.titles.2'),
-          value: teacherValues?.join(', '),
+          value: leading_teacher_tag,
         },
         {
           label: trans('event.image'),
