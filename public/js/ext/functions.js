@@ -2398,6 +2398,16 @@ var SEMICOLON = SEMICOLON || {};
             // el.darkRetinaLogo.prependTo("body");
             // el.darkLogo.css({'position':'absolute','z-index':'-100'});
             // el.darkRetinaLogo.css({'position':'absolute','z-index':'-100'});
+
+            if (document.getElementById('scroll-to-venue')) {
+                document.getElementById('scroll-to-venue').addEventListener('click', function () {
+                    const venueTable = document.getElementById('venue-table');
+                    if (venueTable) {
+                        const top = venueTable.getBoundingClientRect().top + window.pageYOffset - 150;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                });
+            }
         }
 
     };
@@ -2573,3 +2583,30 @@ var SEMICOLON = SEMICOLON || {};
     $window.on( 'resize', SEMICOLON.documentOnResize.init );
 
 })(jQuery);
+
+(function pollForSemicolonAndDOM() {
+    let attempts = 0;
+    const MAX_ATTEMPTS = 10;
+
+    const interval = setInterval(() => {
+        attempts++;
+
+        const wrapper = document.getElementsByClassName('new-layout')[0];
+        const isSemicolonReady =
+            typeof window.SEMICOLON !== 'undefined' &&
+            typeof SEMICOLON.documentOnReady?.init === 'function';
+
+        if (wrapper && isSemicolonReady) {
+            console.log('[SAFE INIT] SEMICOLON rebind triggered via polling');
+            SEMICOLON.documentOnReady.init();
+            SEMICOLON.documentOnLoad.init();
+            SEMICOLON.documentOnResize.init();
+            clearInterval(interval);
+        }
+
+        if (attempts >= MAX_ATTEMPTS) {
+            console.warn('[SAFE INIT] SEMICOLON rebind failed after polling timeout');
+            clearInterval(interval);
+        }
+    }, 500);
+})();
