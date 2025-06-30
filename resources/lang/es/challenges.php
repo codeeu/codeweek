@@ -93,4 +93,9 @@ return [
         'Facebook, Instagram o Twitter',
         'Asegúrate de que utilizas',
     ],
+
+    'challenges-text'=>'Una colección de actividades que puedes hacer por tu cuenta, en el aula, con compañeros o amigos.',
+    'challenges-sub-title'=>'¿Le gustaría participar en la Semana de la Programación de la UE pero no tiene una idea clara de qué organizar?',
+    'challenges-sub-text1'=>' ¡No busques más! Junto con los socios de la Semana de la Programación de la UE, hemos diseñado una selección de retos fáciles de hacer con ejemplos concretos de cómo utilizarlos en un aula o en un grupo. También hay pautas sobre cómo completar los desafíos, pero puedes adaptarlos para que se adapten a las necesidades, intereses y edad de tus participantes.',
+    'challenges-sub-text2'=>'Puedes usar las herramientas y tecnologías que quieras, pero te recomendamos que utilices recursos de código abierto. Elige uno o varios retos, adáptalo a tu grupo o a tu clase y comparte los resultados en Instagram para animar a más compañeros y amigos a unirse a la diversión de la Semana de la Programación de la UE.',
 ];

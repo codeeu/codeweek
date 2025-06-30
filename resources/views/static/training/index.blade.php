@@ -154,7 +154,7 @@
                                 Training
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
-                                Bite-sized, ready-to-use materials that will help you introduce training and plan your next innovative lesson.
+                                @lang('training.training-text')
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
@@ -182,7 +182,7 @@
                         Quick & Practical Tools for Innovative Lessons
                     </h2>
                     <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-8">
-                        Discover the essentials of coding and computational thinking through bite-sized, practical activities designed for educators, students, and anyone eager to explore the digital world. Whether you're new to coding or looking for fresh ideas to integrate into your teaching or training sessions, Learning Bits will spark your imagination and provide a solid starting point.
+                        @lang('training.quick-practical-text1')
                     </p>
                     <div class="relative flex gap-x-8 pb-4 tablet:pb-16">
                         <div class="w-10 h-10 rounded-full flex justify-center items-center text-['#20262C'] font-semibold text-2xl bg-primary">
@@ -190,9 +190,9 @@
                         </div>
                         <div class="absolute after:content-[''] after:block after:w-[2px] after:h-full after:bg-[#5F718A] left-5 bottom-2 top-12"></div>
                         <div class="flex-1 pt-1">
-                            <p class="font-semibold text-[#20262C] text-xl tablet:text-2xl mb-2 p-0">Watch & Learn</p>
+                            <p class="font-semibold text-[#20262C] text-xl tablet:text-2xl mb-2 p-0">@lang('training.watch-learn-title')</p>
                             <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                                Discover the essentials of coding through engaging Learning Bits. These bite-sized modules, lasting around 15 minutes introduce key concepts related to coding and computational thinking. In addition to theoretical insights, the modules provide practical tips on how to apply these concepts in various educational settings – whether you're teaching children, students or adult learners.
+                                @lang('training.watch-learn-text')
                             </p>
                         </div>
                     </div>
@@ -202,9 +202,9 @@
                         </div>
                         <div class="absolute after:content-[''] after:block after:w-[2px] after:h-full after:bg-[#5F718A] left-5 bottom-2 top-12"></div>
                         <div class="flex-1 pt-1">
-                            <p class="font-semibold text-[#20262C] text-xl tablet:text-2xl mb-2 p-0">Get Hands-On</p>
+                            <p class="font-semibold text-[#20262C] text-xl tablet:text-2xl mb-2 p-0">@lang('training.get-hands-on-title')</p>
                             <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                                Choose a Learning Bit, watch the instructional video, and explore hands-on activities with the accompanying materials. Whether you’re new to coding or looking for fresh, creative teaching ideas, Training will equip you with the tools to spark digital curiosity and creativity in your learners.
+                                @lang('training.get-hands-on-text')
                             </p>
                         </div>
                     </div>
@@ -213,15 +213,15 @@
                             3
                         </div>
                         <div class="flex-1 pt-1">
-                            <p class="font-semibold text-[#20262C] text-xl tablet:text-2xl mb-2 p-0">Share & Inspire</p>
+                            <p class="font-semibold text-[#20262C] text-xl tablet:text-2xl mb-2 p-0">@lang('training.share-inspire-title')</p>
                             <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-4">
-                                Once you've completed one or more Code Week Learning Bits, we encourage you to bring digital creativity into your educational environment and pin your activity on the <a href="/events" class="font-semibold text-dark-blue underline">Code Week Map</a>!
+                                @lang('training.share-inspire-text1')
                             </p>
                             <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-4">
-                                You can organise a lesson in your classroom, a workshop at a community centre, or an open event at your organisation. Simply pick a date and register your activity on the <a href="/events" class="font-semibold text-dark-blue underline">Code Week Map</a>. Each activity organiser will get a participation certificate for their effort.
+                               @lang('training.share-inspire-text2')
                             </p>
                             <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                                If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the EU <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Code Week 4 All challenge</a>.
+                                @lang('training.share-inspire-text3')
                             </p>
                         </div>
                     </div>

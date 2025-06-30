@@ -379,8 +379,16 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
     'footer' => [
         'title' => 'Mos harroni të shtoni aktivitetin tuaj në hartën e Code Week!',
         'text' => '<p>Ju mund të organizoni me lehtësi një mësim në klasën tuaj, një ditë të hapur ose një eveniment në shkollën tuaj. Thjesht gjeni një datë dhe regjistroni aktivitetin tuaj në <a href="/events">hartën e Code Week</a>. Secili organizator aktiviteti do të marrë një certifikatë pjesëmarrjeje për përpjekjet e veta.</p>
-
 <p>Nëse doni të lidheni me një grup mësuesish entuziastë, bëhuni pjesë e <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Grupit të EU Code Week në Facebook për mësuesit</a>! Për të marrë një hap më tej dhe për të bashkëpunuar me shkollat e tjera në vendin tuaj ose përtej kufijve, bëhuni pjesë e <a href="/codeweek4all">Sfidës Code Week 4 All</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Materiale të madhësisë së kafshimit dhe të gatshme për t\'u përdorur, të cilat do t\'ju ndihmojnë të futni bazat e kodimit dhe të planifikoni mësimin tuaj të ardhshëm novator.',
+'quick-practical-text1'=> "Zbuloni gjërat thelbësore të kodimit dhe të të menduarit kompjuterik nëpërmjet aktiviteteve praktike me përmasa te vogla, të dizajnuara për Mësuesit, studentët dhe këdo që është i etur për të eksploruar botën dixhitale. Pavarësisht nëse jeni të rinj në kodim apo në kërkim të ideve të reja për t'u integruar në seancat tuaja të mësimdhënies apo trajnimit, Learning Bits do të ndezë imagjinatën tuaj dhe do të ofrojë një pikënisje të duhur.",
+'watch-learn-title'=>'Shiko dhe mëso',
+'watch-learn-text'=>'Zbuloni gjërat thelbësore të kodimit nëpërmjet angazhimit të Learning Bits. Këto module të madhësisë së vogël, që zgjasin rreth 15 minuta, futin konceptet kyçe që lidhen me kodimin dhe mendimin llogaritës. Përveç mendjemprehtësisë teorike, modulet japin këshilla praktike se si t\'i zbatoni këto koncepte në mjedise të ndryshme arsimore – pavarësisht nëse jeni duke u mësuar fëmijëve, nxënësve apo nxënësve të rritur.',
+'get-hands-on-title' =>'Praktikohuni',
+'get-hands-on-text' =>'Zgjidhni një Learning Bit, shikoni videon mësimore dhe eksploroni aktivitetet praktike me materialet shoqëruese. Pavarësisht nëse jeni të rinj në kodim apo në kërkim të ideve të reja dhe kreative të mësimdhënies, Coding Basics do t\'ju pajisë me mjetet për të ngjallur kuriozitet dhe kreativitet dixhital tek nxënësit tuaj.',
+'share-inspire-title' =>'Ndani dhe frymëzoni',
+'share-inspire-text1' =>'Pasi të keni përfunduar një ose më shumë Code Week Learning Bits, ju inkurajojmë të sillni kreativitetin dixhital në mjedisin tuaj arsimor dhe të mbërtheni aktivitetin tuaj në hartën e <a href="/events" class="font-semibold text-dark-blue underline">Javës së Kodit!</a>',
+'share-inspire-text2' =>'Ju mund të organizoni një mësim në klasën tuaj, një workshop në një qendër komunitare, ose një ngjarje të hapur në organizatën tuaj. Thjesht zgjidhni një datë dhe regjistroni aktivitetin tuaj në Hartën e Javës së <a href="/events" class="font-semibold text-dark-blue underline">Kodit</a>. Çdo organizator i aktivitetit do të marrë një çertifikatë pjesëmarrjeje për angazhimin e tyre.',
+'share-inspire-text3' =>'Nëse dëshironi të lidheni me një grup ndërkombëtar mësuesish entuziastë, bashkohuni me <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">grupin Facebook të Javës së Kodit të BE-së për mësuesit!</a> Për të bërë një hap më tej dhe për të bashkëpunuar me shkolla të tjera në vendin tuaj apo përtej kufijve – bashkohuni me Kodi i BE-së <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Java 4 Të gjitha</a> sfidat.',
 ];

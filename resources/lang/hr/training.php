@@ -379,6 +379,15 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
         'text' => '<p>Jednostavno možete organizirati nastavni sat u svojem razredu, dan otvorenih vrata ili događanje u svojoj školi. Samo pronađite datum i registrirajte svoju aktivnost na <a href="/events">karti Tjedna programiranja</a>. Svaki organizator aktivnosti za svoj će trud primiti potvrdu o sudjelovanju.</p>
 
 <p>Ako biste se željeli povezati s međunarodnom skupinom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupi Europskog tjedna programiranja za nastavnike na Facebooku</a>! Da biste otišli korak naprijed i surađivali s drugim školama u svojoj zemlji ili preko granica, pridružite se izazovu <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Kraći materijali spremni za korištenje koji će vam pomoći da upoznate osnove kodiranja i isplanirate svoju sljedeću inovativnu lekciju.',
+'quick-practical-text1'=> "Otkrijte osnove kodiranja i računalnog razmišljanja kroz kraće praktične aktivnosti namijenjene učiteljima, nastavnicima, studentima i svima koji žele istražiti digitalni svijet. Bilo da ste novi u kodiranju ili tražite svježe ideje koje ćete integrirati u svoje nastave ili treninge, Learning Bits će potaknuti vašu maštu i pružiti solidnu početnu točku.",
+'watch-learn-title'=>'Gledajte i učite',
+'watch-learn-text'=>'Otkrijte osnove kodiranja kroz zanimljive bitove za učenje. Ovi moduli, u trajanju od oko 15 minuta, uvode ključne koncepte vezane uz kodiranje i računalno razmišljanje. Osim teorijskih uvida, moduli pružaju praktične savjete o tome kako primijeniti ove koncepte u različitim obrazovnim okruženjima – bilo da podučavate djecu, studente ili odrasle učenike.',
+'get-hands-on-title' =>'Budite praktični',
+'get-hands-on-text' =>'Odaberite modul, pogledajte video s uputama i istražite praktične aktivnosti s popratnim materijalima. Bilo da ste novi u kodiranju ili tražite svježe, kreativne ideje za podučavanje, Coding Basics će vas opremiti alatima za poticanje digitalne znatiželje i kreativnosti kod vaših učenika.',
+'share-inspire-title' =>'Podijelite i inspirirajte',
+'share-inspire-text1' =>'Nakon što završite jedan ili više modula, potaknite digitalnu kreativnost u svom obrazovnom okruženju i unesite svoju aktivnost na <a href="/events" class="font-semibold text-dark-blue underline">kartu Tjedna programiranja</a>!',
+'share-inspire-text2' =>'Možete organizirati lekciju u svojoj učionici, radionicu u društvenom centru ili otvoreni događaj u svojoj organizaciji. Jednostavno odaberite datum i registrirajte svoju aktivnost na karti <a href="/events" class="font-semibold text-dark-blue underline">Tjedna programiranja</a>. Svaki organizator aktivnosti dobit će potvrdu o sudjelovanju.',
+'share-inspire-text3' =>'Ako se želite povezati s međunarodnom skupinom entuzijastičnih učitelja i nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">Facebook grupi Europskog tjedna programiranja</a>! Kako biste otišli korak dalje i surađivali s drugim školama u svojoj zemlji ili preko granica, pridružite se <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Code Week 4 All izazovu</a>.',
 ];

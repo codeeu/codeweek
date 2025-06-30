@@ -27,7 +27,7 @@ return [
 
     'minecraft_description1' => 'Careers in Digital is part of EU Code Week targeting 15–18-year-olds and educators to explore exciting and varied digital careers.',
     'minecraft_description2' => 'Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there.',
-    'minecraft_button' => 'Get Involded',
+    'minecraft_button' => 'Get involved',
 
     'activity_title' => 'Organise or join an activity',
     'activity_description' => 'Anyone is welcome to organise or join an activity. Just pick a topic and a target audience and add your activity to the map, or browse for activities in your area.',
@@ -44,5 +44,11 @@ return [
     'banner1_title' => 'Careers in Digital',
     'banner1_description' => 'Get inspired by dream jobs in digital and explore role models, career guides, open day toolkits and more!',
     'banner2_title' => 'Our Code Week Family',
-    'banner2_description' => 'Discover our vibrant network of ambassadors, teachers, students and hubs—each contributing to our shared passion for digital education.'
+    'banner2_description' => 'Discover our vibrant network of ambassadors, teachers, students and hubs—each contributing to our shared passion for digital education.',
+
+    'carrersdigital_description1' => 'Careers in Digital is part of EU Code Week targeting 15–18-year-olds and educators to explore exciting and varied digital careers.',
+    'carrersdigital_description2' => 'Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there.',
+    'carrersdigital_button' => 'Get involved',
+    
+    'banner3_title' => 'October 11-26',
 ];

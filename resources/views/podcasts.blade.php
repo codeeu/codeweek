@@ -26,7 +26,7 @@
                                 Podcasts
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-8 max-md:max-w-full max-w-[525px]">
-                                Tune in for expert insights on coding and digital creativity!
+                                @lang('podcasts.podcasts-text')
                             </p>
                             <div class="bg-[#F4F6FA] p-6 md:max-w-[386px] rounded-xl">
                               <p class="text-base text-[#333E48] font-semibold mb-4 p-0">Listen on</p>
@@ -75,10 +75,10 @@
                         EU Code Week Podcasts
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and innovation closer to you, your community and your school.
+                        @lang('podcasts.podcasts-series-text1')
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                        Join Arjana Blazic, Eugenia Casariego and Eirini Symeonidou, as they explore a range of topics, from media literacy to robotics, with the help of expert guests – to empower you to equip your students with the skills to confront the challenges and opportunities posed by a digital future.
+                        @lang('podcasts.podcasts-series-text2')
                     </p>
                 </div>
             </div>

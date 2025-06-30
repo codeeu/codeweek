@@ -57,7 +57,7 @@ return [
     'register_activity' => 'Online-Kurse',
     'select_language' => 'Sprache auswählen',
     'search_site' => 'Site durchsuchen',
-    'what_you_looking_for' => 'Wonach suchen Sie?',
+    'what_you_looking_for' => 'Wonach suchst du?',
     'type_to_search' => 'Suchbegriff eingeben...',  
    
 ];

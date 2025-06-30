@@ -2,15 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Country;
 use App\Event;
-use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
 use App\Queries\PendingEventsQuery;
 use App\User;
-use Carbon\Carbon;
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -18,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
+use Illuminate\Http\JsonResponse;
 
 class EventController extends Controller
 {
@@ -26,7 +25,7 @@ class EventController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'show', 'my']);
+        $this->middleware('auth')->except(['show', 'my']);
     }
 
     public function my(): View
@@ -50,40 +49,6 @@ class EventController extends Controller
     //    }
 
     /**
-     * Display a listing of the resource.
-     */
-    public function index(Request $request): View
-    {
-        $years = range(Carbon::now()->year, 2014, -1);
-
-        $selectedYear = $request->input('year')
-            ? $request->input('year')
-            : Carbon::now()->year;
-
-        $iso_country_of_user = User::getGeoIPData()->iso_code;
-
-        $ambassadors = User::role('ambassador')
-            ->where('country_iso', '=', $iso_country_of_user)
-            ->get();
-
-        return view('events')->with([
-            'events' => $this->eventsNearMe(),
-            'years' => $years,
-            'selectedYear' => $selectedYear,
-            'countries' => Country::withActualYearEvents(),
-            'current_country_iso' => $iso_country_of_user,
-            'ambassadors' => $ambassadors,
-        ]);
-    }
-
-    private function eventsNearMe()
-    {
-        $geoip = User::getGeoIPData();
-
-        return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
-    }
-
-    /**
      * Show the form for creating a new resource.
      */
     public function create(Request $request)
@@ -99,12 +64,16 @@ class EventController extends Controller
         $leading_teachers = $this->getLeadingTeachersTagsArray();
 
         if ($request->get('location')) {
-            $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
-
-            return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
+            try {
+                $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
+                return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
+            }
+            catch (ModelNotFoundException $e) {
+                return redirect(route('activities-locations'));
+            }
+            
         }
-
-        if (! auth()->user()->locations->isEmpty()) {
+        else {
             if (! $request->get('skip')) {
                 return redirect(route('activities-locations'));
             }
@@ -123,7 +92,7 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(EventRequest $request): View
+    public function store(EventRequest $request): JsonResponse
     {
         $user = auth()->user();
 
@@ -137,11 +106,14 @@ class EventController extends Controller
 
         $event->createLocation();
 
-        Mail::to(auth()->user()->email)->queue(
-            new \App\Mail\EventRegistered($event, auth()->user())
+        Mail::to($user->email)->queue(
+            new \App\Mail\EventRegistered($event, $user)
         );
 
-        return view('event.thankyou', compact('event'));
+        return response()->json([
+            'message' => 'Event registered successfully.',
+            'event' => $event,
+        ], 201);
     }
 
     /**
@@ -186,7 +158,7 @@ class EventController extends Controller
             ->pluck('id')
             ->toArray();
         $selected_audiences = implode(',', $selected_audiences);
-        $selected_country = $event->country()->first()->iso;
+        $selected_country = optional($event->country()->first())->iso;
         $selected_language = is_null($event->language)
             ? 'en'
             : $event->language;

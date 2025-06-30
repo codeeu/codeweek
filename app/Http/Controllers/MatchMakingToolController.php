@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\ResourceCategory;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -30,13 +31,13 @@ class MatchMakingToolController extends Controller
         }
 
         if (! is_null($selected_topics)) {
-            $selected_topics = collect([]); // TODO:: update this query
+            $selected_topics = ResourceCategory::find($selected_topics);
         }
 
         $languages = \App\ResourceLanguage::orderBy('position')->get();
         $locations = \App\Location::orderBy('name')->get();
         $types = \App\ResourceType::orderBy('position')->get();
-        $topics = collect([]); // TODO:: update this query
+        $topics = \App\ResourceCategory::orderBy('position')->get();
 
         return view('matchmaking-tool.index', compact(['query', 'selected_languages', 'selected_locations', 'selected_types', 'selected_topics', 'languages', 'locations', 'types', 'topics']));
     }

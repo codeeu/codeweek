@@ -66,10 +66,70 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeocodeController;
 use Illuminate\Support\Facades\Config;
-
-
+use App\Http\Controllers\EventsController;
+//redirects start
 Route::permanentRedirect('/certificates/excellence/Excellence Certificate', '/certificates/excellence/2024');
 Route::permanentRedirect('/certificates/excellence/Excellence%20Certificate', '/certificates/excellence/2024');
+Route::redirect('/resources/learn', '/resources/learn-and-teach', 301);
+Route::redirect('/static/docs/codeeu_toolkit.pdf', '/guide', 301);
+Route::get('/google-grants-to-46-eu-code-week-projects-thatt', function () {
+    return redirect('/blog/google-grants-to-46-eu-code-week-projects-that', 301);
+});
+Route::permanentRedirect('/the-codehunting-game-is-on-across-europe', '/blog/the-codehunting-game-is-on-across-europe');
+Route::permanentRedirect('/eu-code-week-leading-teachers-join-a-growing', '/blog/eu-code-week-leading-teachers-join-a-growing');
+Route::permanentRedirect('/25-selected-leading-teachers-to-attend-the-first', '/blog/25-selected-leading-teachers-to-attend-the-first');
+Route::permanentRedirect('/eu-code-weeks-deep-dive-mooc-to-expand-teachers', '/blog/eu-code-weeks-deep-dive-mooc-to-expand-teachers');
+Route::permanentRedirect('/day-1-of-the-eu-code-week-pilot-summer-school', '/blog/day-1-of-the-eu-code-week-pilot-summer-school');
+Route::permanentRedirect('/europe-code-week-veria-central-public-library', '/blog/europe-code-week-veria-central-public-library');
+Route::permanentRedirect('/5-activities-to-try-out-something-new-with-coding', '/blog/5-activities-to-try-out-something-new-with-coding');
+Route::permanentRedirect('/eucodeweek19stats', '/blog/eucodeweek19stats');
+Route::permanentRedirect('/eu-code-week-free-icebreaker-course-starts-11-may', '/blog/eu-code-week-free-icebreaker-course-starts-11-may');
+Route::permanentRedirect('/distance-learning-with-coding', '/blog/distance-learning-with-coding');
+Route::permanentRedirect('/meet-the-ambassadors-alessandro-bogliolo-italy', '/blog/meet-the-ambassadors-alessandro-bogliolo-italy');
+Route::permanentRedirect('/meet-the-ambassadors-alja-isakovic-slovenia', '/blog/meet-the-ambassadors-alja-isakovic-slovenia');
+Route::permanentRedirect('/meet-the-ambassadors-lieke-boon-netherlands', '/blog/meet-the-ambassadors-lieke-boon-netherlands');
+Route::permanentRedirect('/meet-the-ambassadors-kostas-karpouzis-greece', '/blog/meet-the-ambassadors-kostas-karpouzis-greece');
+Route::permanentRedirect('/meet-the-ambassadors-laurence-bricteux-france', '/blog/meet-the-ambassadors-laurence-bricteux-france');
+Route::permanentRedirect('/meet-the-ambassadors-adil-tugyan-turkey', '/blog/meet-the-ambassadors-adil-tugyan-turkey');
+Route::permanentRedirect('/meet-the-ambassadors-szabolcs-mizsei-hungary', '/blog/meet-the-ambassadors-szabolcs-mizsei-hungary');
+Route::permanentRedirect('/meet-the-ambassadors-gesche-joost-germany', '/blog/meet-the-ambassadors-gesche-joost-germany');
+Route::permanentRedirect('/meet-the-ambassadors-antonis-hadjiantonis-cyprus', '/blog/meet-the-ambassadors-antonis-hadjiantonis-cyprus');
+Route::permanentRedirect('/meet-the-ambassadors-abayomi-ogundipe-moldova', '/blog/meet-the-ambassadors-abayomi-ogundipe-moldova');
+Route::permanentRedirect('/meet-the-ambassadors-yasemin-allsop-united-kingdom', '/blog/meet-the-ambassadors-yasemin-allsop-united-kingdom');
+Route::permanentRedirect('/meet-the-ambassadors-paulius-podolskis-lithuania', '/blog/meet-the-ambassadors-paulius-podolskis-lithuania');
+Route::permanentRedirect('/meet-the-ambassadors-gabriella-fumagalli-switzerland', '/blog/meet-the-ambassadors-gabriella-fumagalli-switzerland');
+Route::permanentRedirect('/as-the-preparations-for-the-second-code-week-are', '/blog/as-the-preparations-for-the-second-code-week-are');
+Route::permanentRedirect('/as-the-preparations-for-the-second-code-week-are', '/blog/as-the-preparations-for-the-second-code-week-are');
+Route::permanentRedirect('/programming-a-pedometer-to-bring-coding-to?is_related_post=1', '/blog/programming-a-pedometer-to-bring-coding-to/');
+Route::get('/podcast/{slug}', function ($slug) {
+    return redirect("/podcasts/{$slug}", 301);
+});
+Route::permanentRedirect('/view/1221651/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
+Route::permanentRedirect('/challenges/careers-as-constellations/', '/blog/careers-as-constellations/');
+Route::permanentRedirect('/view/1221652/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
+Route::permanentRedirect('/view/1221652/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
+Route::permanentRedirect('/view/1221912/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
+Route::permanentRedirect('/view/1221912/challenges/careers-as-constellations', '/challenges/careers-as-constellations/');
+Route::permanentRedirect('/view/1221651/challenges/careers-as-constellations', '/challenges/careers-as-constellations');
+
+Route::permanentRedirect('/blog/codeeu-monday-and-tuesday-thousands-of-schools/1Lg7vYO/', '/blog/codeeu-monday-and-tuesday-thousands-of-schools/');
+Route::permanentRedirect('/2021/challenges/dance/', '/challenges/dance/');
+Route::permanentRedirect('/2021/challenges', '/challenges');
+Route::permanentRedirect('/blog/submit', '/blog');
+Route::permanentRedirect('/blog/top-programming-languages-for-kids-of-any-language/Introduction%20to%20Scratch', '/blog/top-programming-languages-for-kids-of-any-language/');
+Route::permanentRedirect('/blog/top-programming-languages-for-kids-of-any-language/ScratchEd', '/blog/top-programming-languages-for-kids-of-any-language/');
+Route::permanentRedirect('/hackathons/slovenia', '/hackathons');
+Route::permanentRedirect('/hackathons/greece', '/hackathons');
+
+Route::get('/search/{term}', function ($term) {
+    if (strtolower($term) === 'e twinning') {
+        return redirect('/search', 301);
+    }
+
+    // Optionally, handle other terms or return 404
+    abort(404);
+});
+//redirects end
 //Auth::loginUsingId(268354);
 
 Route::domain('{subdomain}.'.Config::get('app.url'))->group(function () {
@@ -723,3 +783,7 @@ Route::middleware(ProtectAgainstSpam::class)->group(function() {
 });
 Route::feeds();
 
+Route::get('/events/list/{country?}', [EventsController::class, 'list'])->name('events.list');
+Route::get('/events/promoted/{country?}', [EventsController::class, 'promoted'])->name('events.promoted');
+Route::get('/events/featured/{country?}', [EventsController::class, 'featured'])->name('events.featured');
+//redirects

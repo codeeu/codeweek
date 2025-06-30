@@ -93,4 +93,9 @@ return [
         'Facebook, Instagram lub Twitter',
         'Nie zapomnij o hasztagu',
     ],
+
+    'challenges-text'=>'Zbiór ćwiczeń, które możesz wykonywać samodzielnie, w klasie, z kolegami lub przyjaciółmi.',
+    'challenges-sub-title'=>'Chciałbyś wziąć udział w Europejskim Tygodniu Kodowania, ale nie bardzo wiesz, co zorganizować?',
+    'challenges-sub-text1'=>'Nie szukaj dalej! Wraz z partnerami z Europejskiego Tygodnia Kodowania opracowaliśmy wybór łatwych do wykonania wyzwań wraz z konkretnymi przykładami, jak można je wykorzystać w klasie lub grupie. Istnieją również wskazówki dotyczące sposobu realizacji wyzwań, ale możesz je dostosować tak, aby odpowiadały potrzebom, zainteresowaniom i wiekowi uczestników.',
+    'challenges-sub-text2'=>'Możesz korzystać z dowolnych narzędzi i technologii, ale zalecamy otwarte zasoby (open source). Wybierz jedno lub kilka wyzwań, dostosuj je do swojej grupy lub klasy i udostępnij wyniki na Instagramie, aby zachęcić jeszcze więcej współpracowników i przyjaciół do przyłączenia się do zabawy w ramach Europejskiego Tygodnia Kodowania!',
 ];

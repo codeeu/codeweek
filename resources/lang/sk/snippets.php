@@ -43,4 +43,7 @@ return [
         8 => 'Pozrite si video rumunskej ambasádorky Cristiany Lucaciovej o tom, prečo je týždeň programovania vďačný svojej komunite',
     ],
 
+     'learn_and_teach_1' => 'Úložisko zdrojov na pre začiatok alebo pokračovanie v programovaní a rozvoj digitálnych a technických zručností – všetko je k dispozícii bezplatne.',
+    'learn_and_teach_2' => 'Programovanie a kódovanie sú kľúčové kompetencie, ktoré sú čoraz žiadanejšie vo všetkých oblastiach a Európsky týždeň programovania vás chce podporiť vo výučbe a učení sa! Prezrite si naše úložisko a nájdite ideálny zdroj na začatie alebo pokračovanie v ceste programovania. Všetky tieto zdroje sú bezplatné. Nezabudnite, že vyhľadávanie môžete filtrovať podľa názvu, typu zdroja, úrovne zručností, programovacieho jazyka, predmetu, kategórie a jazyka.',
+
 ];
