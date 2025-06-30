@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram ou Twitter',
         'Certifique-se de que utiliza a hashtag',
     ],
+
+    'challenges-text'=>'Uma coleção de atividades que você pode fazer por conta própria, na sala de aula, com colegas ou amigos.',
+    'challenges-sub-title'=>'Gostaria de participar na Semana Europeia da Programação , mas não tem uma ideia do que organizar?',
+    'challenges-sub-text1'=>'Não procure mais! Juntamente com os parceiros da Semana Europeia da Programação, concebemos uma seleção de desafios fáceis de fazer com exemplos concretos de como utilizá-los numa sala de aula ou em grupo. Há também orientações sobre como completar os desafios, mas você pode adaptá-las para que atendam às necessidades, interesses e idade de seus participantes.',
+    'challenges-sub-text2'=>'Você pode usar as ferramentas e tecnologias que quiser, mas recomendamos recursos de código aberto. Escolha um ou vários desafios, adapte-os ao seu grupo ou à sua sala de aula e partilhe os resultados no Instagram para incentivar ainda mais colegas e amigos a juntarem-se à diversão da Semana Europeia da Programação.',
 ];

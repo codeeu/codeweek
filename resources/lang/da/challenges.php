@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram eller Twitter',
         'Sørg for at bruge',
     ],
+
+    'challenges-text'=>'En samling af aktiviteter, som du kan lave på egen hånd, i klasseværelset, med kolleger eller venner.',
+    'challenges-sub-title'=>'Du vil gerne deltage i EU Code Week, men har ikke rigtig en idé om, hvad du skal organisere?',
+    'challenges-sub-text1'=>'Så behøver du ikke lede længere! Sammen med EU Code Weeks partnere har vi designet et udvalg af nemme udfordringer med konkrete eksempler på, hvordan man kan bruge dem i et klasseværelse eller i en gruppe. Der er også retningslinjer for, hvordan du løser udfordringerne. Du kan tilpasse dem, så de passer til dine deltageres behov, interesser og alder.',
+    'challenges-sub-text2'=>'Du kan bruge de værktøjer og teknologier, du vil, men vi anbefaler open source-ressourcer. Vælg en eller flere udfordringer, tilpas den til din gruppe eller dit klasseværelse, og del resultaterne på Instagram for at opmuntre endnu flere kolleger og venner til at deltage i den sjove EU Code Week.',
 ];

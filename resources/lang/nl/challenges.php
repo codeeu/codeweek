@@ -93,4 +93,9 @@ return [
         'Facebook, Instagram of Twitter',
         'Gebruik de',
     ],
+
+    'challenges-text'=>'Een verzameling activiteiten die je alleen, in de klas, met collega\'s of vrienden kunt doen.',
+    'challenges-sub-title'=>'U wilt graag deelnemen aan de EU Code Week, maar heeft niet echt een idee wat u moet organiseren?',
+    'challenges-sub-text1'=>'Zoek niet verder! Samen met de partners van de EU Code Week hebben we een selectie van eenvoudig te doen uitdagingen ontworpen met concrete voorbeelden van hoe ze in een klaslokaal of groep kunnen worden gebruikt. Er zijn ook richtlijnen voor het voltooien van de uitdagingen, maar u kunt ze aanpassen zodat ze passen bij de behoeften, interesses en leeftijd van uw deelnemers.',
+    'challenges-sub-text2'=>'U kunt alle tools en technologieën gebruiken die u wilt, maar we raden open-sourcebronnen aan. Kies een of meerdere uitdagingen, pas deze aan uw groep of uw klas aan en deel de resultaten op Instagram om nog meer collega\'s en vrienden aan te moedigen om deel te nemen aan de EU Code Week!',
 ];

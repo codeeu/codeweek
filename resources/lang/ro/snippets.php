@@ -43,4 +43,7 @@ return [
         8 => 'Urmărește-o pe Cristiana Lucaci, ambasadorul pentru România, explicând de ce Săptămâna programării îi este recunoscătoare comunității sale',
     ],
 
+    'learn_and_teach_1' => 'Un depozit de resurse pentru a începe sau a continua călătoria de codare și pentru a dezvolta abilități digitale și tehnice - toate disponibile gratuit.',
+    'learn_and_teach_2' => 'Programarea și programarea sunt competențe cheie care sunt din ce în ce mai solicitate în fiecare domeniu, iar EU Code Week dorește să vă sprijine în predarea și învățarea! Răsfoiți depozitul nostru și găsiți resursa perfectă pentru a începe sau pentru a vă continua călătoria de codare. Toate aceste resurse sunt gratuite. Nu uitați că vă puteți filtra căutarea după titlu, tip de resursă, nivel de calificare, limbaj de programare, subiect, categorie și limbă.',
+
 ];

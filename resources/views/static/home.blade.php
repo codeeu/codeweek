@@ -35,7 +35,7 @@
                             style="opacity: {{ $index === 0 ? 1 : 0 }}">
                             <div
                                 class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                                @if ($index === 1)
+                                @if ($index === 0)
                                     <div x-data="countdownTimer('2025-10-14T00:00:00')" x-init="startCountdown()"
                                         class="flex gap-2.5 items-start max-md:gap-2 max-sm:gap-1.5 mt-4 mb-4" role="timer"
                                         aria-label="Countdown timer">
@@ -102,7 +102,7 @@
                                 </h2>
                                 <p
                                     class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                    {{ mb_substr(strip_tags(__(''.$activity['description'])), 0, 200) }}
+                                    {{ strip_tags(__(''.$activity['description'])) }}
                                 </p>
                                 <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                     href="{{ $activity['url'] }}">
@@ -117,7 +117,6 @@
                             
                             @php
                                 $backgroundImages = [
-                                    asset('images/dream-jobs/dream_jobs_bg.png'),
                                     asset('images/homepage/slide1.png'),
                                     asset('images/search/search_bg_lg_2.jpeg'),
                                 ];
@@ -203,14 +202,14 @@
                 <div class="flex-1">
                     <img class="max-w-full" loading="lazy" src="/images/dream-jobs/dream_jobs_logo.svg" />
                     <p class="text-left text-lg md:text-2xl md:leading-8 text-[#20262C] p-0 my-6">
-                        Careers in Digital is part of EU Code Week targeting 15–18-year-olds and educators to explore exciting and varied digital careers.
+                        @lang('home.carrersdigital_description1')
                     </p>
                     <p class="text-[16px] md:text-lg text-[#333E48] p-0 mb-8">
-                        Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there.
+                        @lang('home.carrersdigital_description2')
                     </p>
                     <a class="inline-flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#FFEF99] group"
                         href="{{route('dream-jobs-in-digital')}}">
-                        <span>Get involved</span>
+                        <span>@lang('home.carrersdigital_button')</span>
                         <div class="flex w-4 gap-2 overflow-hidden">
                             <img src="/images/arrow-right-icon.svg"
                                 class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />

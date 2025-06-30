@@ -57,6 +57,6 @@ return [
     'register_activity' => 'Καταχώρηση Δραστηριότητας',
     'select_language' => 'Επιλέξτε γλώσσα',
     'search_site' => 'Αναζήτηση ιστότοπου',
-    'what_you_looking_for' => 'Τι ψάχνετε?',
-    'type_to_search' => 'Πληκτρολογήστε για αναζήτηση...', 
+    'what_you_looking_for' => 'Τι σε ενδιαφέρει?',
+    'type_to_search' => 'Πληκτρολόγησε για αναζήτηση...', 
 ];

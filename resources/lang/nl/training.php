@@ -381,6 +381,15 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
         'text' => '<p>Je kunt gemakkelijk een les in je klas, een opendeurdag of een evenement op je school organiseren. Zoek gewoon een datum en registreer je activiteit op de <a href="/events">kaart van de EU-programmeerweek</a>. Iedereen die een activiteit organiseert, krijgt een deelnamecertificaat voor zijn of haar inzet.</p>
 
 <p>Wil je in contact komen met een internationale groep enthousiaste leraren? Word dan lid van de <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook-groep van de EU-programmeerweek voor leraren</a>! Als je nog een stap verder wilt gaan en wilt samenwerken met andere scholen in je land of andere landen, doe dan mee met de <a href="/codeweek4all">Code Week 4 All-uitdaging</a>.</p>'
-    ]
-
+    ],
+'training-text'=>'Hapklare, kant-en-klare materialen die je helpen de basisprincipes van coderen te introduceren en je volgende innovatieve les te plannen.',
+'quick-practical-text1'=> "Ontdek de essentie van coderen en computationeel denken door middel van hapklare, praktische activiteiten die zijn ontworpen voor docenten, studenten en iedereen die graag de digitale wereld wil verkennen. Of je nu nieuw bent in coderen of op zoek bent naar frisse ideeën om te integreren in je onderwijs- of trainingssessies, Learning Bits zal je verbeelding prikkelen en een solide startpunt bieden.",
+'watch-learn-title'=>'Kijken en leren',
+'watch-learn-text'=>'Ontdek de essentie van coderen door middel van boeiende Learning Bits. Deze hapklare modules, die ongeveer 15 minuten duren, introduceren sleutelconcepten met betrekking tot coderen en computationeel denken. Naast theoretische inzichten geven de modules praktische tips over hoe je deze concepten kunt toepassen in verschillende onderwijsomgevingen – of je nu lesgeeft aan kinderen, studenten of volwassen leerlingen.',
+'get-hands-on-title' =>'Ga aan de slag',
+'get-hands-on-text' =>'Kies een leerstuk, bekijk de instructievideo en verken praktische activiteiten met het bijbehorende materiaal. Of je nu nieuw bent in coderen of op zoek bent naar frisse, creatieve lesideeën, Coding Basics voorziet je van de tools om digitale nieuwsgierigheid en creativiteit bij je leerlingen aan te wakkeren. ',
+'share-inspire-title' =>'Deel en inspireer',
+'share-inspire-text1' =>'Zodra je een of meer Code Week Learning Bits hebt voltooid, moedigen we je aan om digitale creativiteit in je onderwijsomgeving te brengen en je activiteit vast te zetten op de <a href="/events" class="font-semibold text-dark-blue underline">Code Week-kaart</a>!',
+'share-inspire-text2' =>'U kunt een les organiseren in uw klas, een workshop in een buurthuis of een open evenement in uw organisatie. Kies gewoon een datum en registreer je activiteit op de <a href="/events" class="font-semibold text-dark-blue underline">Code Week Map</a>.Elke activiteitenorganisator krijgt een certificaat van deelname voor zijn inspanningen.',
+'share-inspire-text3' =>'Als je in contact wilt komen met een internationale groep enthousiaste leraren, word dan lid van de <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">EU-programmeerweek Facebook-groep voor leraren</a>! Om een stap verder te gaan en samen te werken met andere scholen in uw land of over de grenzen heen, doet u mee aan de EU <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Code Week 4 All-uitdaging</a>.',
 ];
