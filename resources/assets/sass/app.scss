@@ -12,6 +12,8 @@
 @import "components/pagination";
 @import "components/calendar";
 @import "components/table";
+@import "components/tinymce";
+
 //Import pages
 @import "pages";
 @import "pages/homepage";
@@ -231,6 +233,18 @@ body:not(.new-layout) {
       bottom: 0;
       left: 0;
       transition-duration: 300ms;
+    }
+  }
+}
+
+.marker-popup-content {
+  .marker-popup-description {
+    max-height: 200px;
+    overflow: auto;
+    p {
+      font-size: 14px;
+      padding: 0;
+      margin: 4px 0;
     }
   }
 }

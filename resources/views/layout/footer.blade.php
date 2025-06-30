@@ -1,4 +1,8 @@
-<footer class="border-t-[3px] border-primary bg-white">
+@php
+    $hideStickyFooterOnPages = ['activities-locations', 'add', 'login', 'register', 'password/reset'];
+@endphp
+
+<footer id="page-footer" class="border-t-[3px] border-primary bg-white">
     <div class="py-10 border-b md:py-16">
         <div class="flex flex-col codeweek-container-lg xl:flex-row xl:justify-between">
             <div class="flex flex-col justify-between">
