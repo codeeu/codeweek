@@ -169,7 +169,7 @@
       <SelectField
         v-model="formValues.leading_teacher_tag"
         name="leading_teacher_tag"
-        :options="leadingTeachers"
+        :options="leadingTeacherOptions"
       />
     </FieldWrapper>
 
@@ -216,6 +216,10 @@ export default {
   setup(props, { emit }) {
     const { ageOptions } = useDataOptions();
 
+    const leadingTeacherOptions = computed(() =>
+      props.leadingTeachers.map((name) => ({ id: name, name }))
+    );
+
     const onPictureChange = (data) => {
       props.formValues.picture = data.imageName;
       props.formValues.pictureUrl = data.path;
@@ -231,6 +235,7 @@ export default {
     };
 
     return {
+      leadingTeacherOptions,
       ageOptions,
       onPictureChange,
       handleCorrectCount,

@@ -226,7 +226,7 @@
               <li class="main-menu-item flex-grow flex h-full items-end xl:hidden max-xl:w-full">
                   <div class="flex flex-col gap-4 items-center w-full pb-12 pt-5">
                       @if (Auth::check())
-                          <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="/add">
+                          <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="/add?skip=1">
                               <span class="text-[16px] leading-7 font-semibold">@lang('menu.register_activity')</span>
                           </a>
                       @else
@@ -259,7 +259,7 @@
               </a>
           @endif
 
-          <a class="max-xl:!hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/add">
+          <a class="max-xl:!hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/add?skip=1">
               <span class="text-base leading-7 font-semibold text-black normal-case">
                   @lang('menu.register_activity')
               </span>

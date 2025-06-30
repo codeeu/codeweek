@@ -417,9 +417,11 @@ export default {
     };
 
     onMounted(() => {
-      document.addEventListener('leaflet-ready', () => {
-        handleLoadMap();
-      });
+      // document.addEventListener('leaflet-ready', () => {
+        setTimeout(() => {
+          handleLoadMap();
+        }, 2000);
+      // });
     });
 
     return {

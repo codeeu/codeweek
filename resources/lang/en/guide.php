@@ -39,7 +39,7 @@ return [
             '7' => '<strong>Register participants.</strong> If you have limited space available, you can use online
                         tools such as <a href="https://docs.google.com/forms/">Google forms</a> and <a
                                 href="https://www.eventbrite.com/">Eventbrite</a> to register participants.',
-            '8' => 'Remember to <a href="/add">pin your activity</a> on the <a href="/events">Code Week map</a>!',
+            '8' => 'Remember to <a href="/add?skip=1">pin your activity</a> on the <a href="/events">Code Week map</a>!',
         ],
     ],
     'how_to' => [
@@ -61,7 +61,7 @@ return [
                         (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Talk to your friends, fellow
                         educators, the local press, and make a press
                         release.',
-            '5' => 'Don\'t forget to <a href="/add">add your activity</a> on the <a href="/events">Code Week map</a>!',
+            '5' => 'Don\'t forget to <a href="/add?skip=1">add your activity</a> on the <a href="/events">Code Week map</a>!',
         ],
     ],
     'material' => [
