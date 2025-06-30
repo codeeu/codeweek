@@ -8,7 +8,7 @@ return [
     'school_banner_text' => 'Are you a teacher?',
     'school_banner_text2' => 'Find out how to get involved!',
     'organize_activity_title' => 'Organise or join an activity',
-    'organize_activity_text' => 'Anyone is welcome to organise or join an activity. Just pick a topic and a target audience and <a href="/add">add your activity</a> to <a href="/events">the map</a>, or browse for activities in your area.',
+    'organize_activity_text' => 'Anyone is welcome to organise or join an activity. Just pick a topic and a target audience and <a href="/add?skip=1">add your activity</a> to <a href="/events">the map</a>, or browse for activities in your area.',
     'get_started_title' => 'Get started',
     'get_started_text' => 'Not sure how to get started? Take a look at the <a href="/guide">how-to page</a>, and download our <a href="/toolkits">toolkits for organisers</a> to get prepared and spread the word.',
     'access_resources_title' => 'Access resources and training',

@@ -70,6 +70,8 @@ use App\Http\Controllers\EventsController;
 Route::permanentRedirect('/certificates/excellence/Excellence Certificate', '/certificates/excellence/2024');
 Route::permanentRedirect('/certificates/excellence/Excellence%20Certificate', '/certificates/excellence/2024');
 Route::redirect('/resources/learn', '/resources/learn-and-teach', 301);
+Route::redirect('/learn', '/resources/learn-and-teach', 301);
+Route::redirect('/teach', '/resources/learn-and-teach', 301);
 Route::redirect('/static/docs/codeeu_toolkit.pdf', '/guide', 301);
 Route::get('/google-grants-to-46-eu-code-week-projects-thatt', function () {
     return redirect('/blog/google-grants-to-46-eu-code-week-projects-that', 301);
