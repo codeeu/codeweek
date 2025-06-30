@@ -28,7 +28,7 @@ class CertificatesOfParticipationGeneration extends Command
     public function handle(): int
     {
 
-        $participations = Participation::whereNull('participation_url')->where('status', '=', 'PENDING')->orderByDesc('created_at')->get();
+        $participations = Participation::whereNull('participation_url')->where('status', 'PENDING')->orderByDesc('created_at')->get();
 
         $this->info(count($participations).' certificates of participation to generate');
 

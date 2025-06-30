@@ -109,7 +109,7 @@ class EventsController extends Controller
         ]);
 
         $collection = \App\Http\Resources\EventResource::collection(
-            Event::where('status', 'like', 'APPROVED')
+            Event::where('status', 'APPROVED')
                 ->where('country_iso', 'DE')
                 ->whereYear('end_date', '=', $validated['year'])
                 ->get()
@@ -162,7 +162,7 @@ class EventsController extends Controller
         }
 
         $collection = \App\Http\Resources\EventResource::collection(
-            Event::where('status', 'like', 'APPROVED')
+            Event::where('status', 'APPROVED')
                 ->where($box)
                 ->whereYear('end_date', '=', $year)
                 ->get()
