@@ -15,34 +15,30 @@ use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 class GenericEventsImport extends BaseEventsImport implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
-    /** Fallback when no creator_id can be determined */
-    protected const FALLBACK_CREATOR_ID = 315958;
-
     /**
-     * Turn 3.0 → 3, 42.0 → 42, etc.
+     * Cast floats with no fractional part back to int.
      */
     protected function normalizeRow(array $row): array
     {
-        foreach ($row as $k => $v) {
-            if (is_float($v) && floor($v) === $v) {
-                $row[$k] = (int)$v;
+        foreach ($row as $key => $value) {
+            if (is_float($value) && floor($value) === $value) {
+                $row[$key] = (int) $value;
             }
         }
         return $row;
     }
 
     /**
-     * Handle Excel‐serial or string dates.
+     * Parse Excel or string dates into proper format.
      */
-    public function parseDate($value)
+    protected function parseDate($value): ?string
     {
         if (is_numeric($value)) {
             return Date::excelToDateTimeObject($value)
                        ->format('Y-m-d H:i:s');
         }
         try {
-            return Carbon::parse($value)
-                         ->format('Y-m-d H:i:s');
+            return Carbon::parse($value)->format('Y-m-d H:i:s');
         } catch (\Exception $e) {
             Log::warning("Invalid date: {$value}");
             return null;
@@ -50,98 +46,88 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     }
 
     /**
-     * Map each row into an Event or skip (return null).
+     * Normalize boolean-like values.
+     */
+    protected function parseBool($value): bool
+    {
+        $v = strtolower(trim((string) $value));
+        return in_array($v, ['1', 'true', 'yes', 'y'], true);
+    }
+
+    /**
+     * Map a row to an Event model.
      */
     public function model(array $row): ?Model
     {
-        // 1) normalize floats
+        // 1) normalize numeric floats
         $row = $this->normalizeRow($row);
 
         Log::info('Importing row:', $row);
 
         // 2) required fields
-        foreach ([
-            'activity_title',
-            'name_of_organisation',
-            'description',
-            'type_of_organisation',
-            'activity_type',
-            'country',
-            'start_date',
-            'end_date'
-        ] as $required) {
-            if (empty($row[$required])) {
-                Log::error("Missing required field “{$required}”, skipping.", $row);
-                return null;
-            }
+        if (empty($row['activity_title'])
+            || empty($row['name_of_organisation'])
+            || empty($row['description'])
+            || empty($row['type_of_organisation'])
+            || empty($row['activity_type'])
+            || empty($row['country'])
+            || empty($row['start_date'])
+            || empty($row['end_date'])
+        ) {
+            Log::error('Missing required fields, skipping row.', $row);
+            return null;
         }
 
         // 3) resolve creator_id
         $creatorId = null;
-
-        // a) explicit integer
-        if (isset($row['creator_id']) && is_int($row['creator_id'])) {
+        if (!empty($row['creator_id']) && is_int($row['creator_id'])) {
             $creatorId = $row['creator_id'];
-        }
-        // b) explicit email
-        elseif (!empty($row['creator_id']) && filter_var($row['creator_id'], FILTER_VALIDATE_EMAIL)) {
+        } elseif (!empty($row['creator_id']) && filter_var($row['creator_id'], FILTER_VALIDATE_EMAIL)) {
             $creatorId = User::where('email', trim($row['creator_id']))->value('id');
+        } elseif (!empty($row['contact_email']) && filter_var($row['contact_email'], FILTER_VALIDATE_EMAIL)) {
+            [$local] = explode('@', trim($row['contact_email']), 2);
+            $creatorId = User::where('email', 'like', $local.'@%')->value('id');
         }
-        // c) fallback from contact_email local‐part
-        elseif (!empty($row['contact_email']) && filter_var($row['contact_email'], FILTER_VALIDATE_EMAIL)) {
-            [$local,] = explode('@', trim($row['contact_email']), 2);
-            $creatorId = User::where('email', 'like', "{$local}@%")->value('id');
-        }
+        // leave null if not resolvable
 
-        // d) final fallback
-        if (empty($creatorId)) {
-            $creatorId = self::FALLBACK_CREATOR_ID;
-        }
-
-        // 4) build attributes
+        // 4) base attributes
         $attrs = [
-            'status'             => 'APPROVED',
-            'title'              => trim($row['activity_title']),
-            'slug'               => str_slug(trim($row['activity_title'])),
-            'organizer'          => trim($row['name_of_organisation']),
-            'description'        => trim($row['description']),
-            'organizer_type'     => trim($row['type_of_organisation']),
-            'activity_type'      => trim($row['activity_type']),
-            'location'           => trim($row['address'] ?? 'online'),
-            'event_url'          => trim($row['organiser_website'] ?? ''),
-            'user_email'         => trim($row['contact_email'] ?? ''),
-            'creator_id'         => $creatorId,
-            'country_iso'        => strtoupper(trim($row['country'])),
-            'picture'            => trim($row['image_path'] ?? ''),
-            'participants_count' => isset($row['participants_count'])
-                                   ? (int)$row['participants_count']
-                                   : null,
-            'mass_added_for'     => 'Excel',
-            'start_date'         => $this->parseDate($row['start_date']),
-            'end_date'           => $this->parseDate($row['end_date']),
-            'geoposition'        => (!empty($row['latitude']) && !empty($row['longitude']))
-                                   ? "{$row['latitude']},{$row['longitude']}"
-                                   : '',
-            'longitude'          => trim($row['longitude'] ?? ''),
-            'latitude'           => trim($row['latitude'] ?? ''),
-            'language'           => isset($row['language'])
-                                   ? strtolower(explode('_', trim($row['language']))[0])
-                                   : 'en',
-            'pub_date'           => now(),
-            'created'            => now(),
-            'updated'            => now(),
+            'status'              => 'APPROVED',
+            'title'               => trim($row['activity_title']),
+            'slug'                => str_slug(trim($row['activity_title'])),
+            'organizer'           => trim($row['name_of_organisation']),
+            'description'         => trim($row['description']),
+            'organizer_type'      => trim($row['type_of_organisation']),
+            'activity_type'       => trim($row['activity_type']),
+            'location'            => trim($row['address'] ?? ''),
+            'event_url'           => trim($row['organiser_website'] ?? ''),
+            'user_email'          => trim($row['contact_email'] ?? ''),
+            'creator_id'          => $creatorId,
+            'country_iso'         => strtoupper(trim($row['country'])),
+            'picture'             => trim($row['image_path'] ?? ''),
+            'participants_count'  => isset($row['participants_count']) ? (int) $row['participants_count'] : null,
+            'mass_added_for'      => 'Excel',
+            'start_date'          => $this->parseDate($row['start_date']),
+            'end_date'            => $this->parseDate($row['end_date']),
+            'geoposition'         => (!empty($row['latitude']) && !empty($row['longitude']))
+                                     ? "{$row['latitude']},{$row['longitude']}"
+                                     : '',
+            'longitude'           => trim((string) ($row['longitude'] ?? '')),
+            'latitude'            => trim((string) ($row['latitude'] ?? '')),
+            'language'            => isset($row['language'])
+                                     ? strtolower(explode('_', trim($row['language']))[0])
+                                     : 'en',
+            'pub_date'            => now(),
+            'created'             => now(),
+            'updated'             => now(),
+            // ensure boolean default for non-nullable
+            'recurring_event'     => $this->parseBool($row['recurring_event'] ?? ''),
         ];
 
-        // 5) optional single‐choice & counts
-        if (isset($row['recurring_event'])) {
-            $attrs['recurring_event'] = $this->validateSingleChoice(
-                $row['recurring_event'],
-                Event::RECURRING_EVENTS
-            );
-        }
-        foreach (['males_count', 'females_count', 'other_count'] as $c) {
+        // 5) optional counts
+        foreach (['males_count','females_count','other_count'] as $c) {
             if (isset($row[$c])) {
-                $attrs[$c] = (int)$row[$c];
+                $attrs[$c] = (int) $row[$c];
             }
         }
 
@@ -152,26 +138,26 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             }
         }
 
-        // 7) multi‐choice arrays
-        if (isset($row['activity_format'])) {
+        // 7) multi‑choice arrays
+        if (!empty($row['activity_format'])) {
             $attrs['activity_format'] = $this->validateMultiChoice(
                 $row['activity_format'],
                 Event::ACTIVITY_FORMATS
             );
         }
-        if (isset($row['ages'])) {
+        if (!empty($row['ages'])) {
             $attrs['ages'] = $this->validateMultiChoice(
                 $row['ages'],
                 Event::AGES
             );
         }
-        if (isset($row['duration'])) {
+        if (!empty($row['duration'])) {
             $attrs['duration'] = $this->validateSingleChoice(
                 $row['duration'],
                 Event::DURATIONS
             );
         }
-        if (isset($row['recurring_type'])) {
+        if (!empty($row['recurring_type'])) {
             $attrs['recurring_type'] = $this->validateSingleChoice(
                 $row['recurring_type'],
                 Event::RECURRING_TYPES
@@ -179,25 +165,28 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         }
 
         // 8) contact_person fallback
-        if (Schema::hasColumn('events', 'contact_person') && !empty($row['contact_email'])) {
+        if (Schema::hasColumn('events', 'contact_person')
+            && !empty($row['contact_email'])
+        ) {
             $attrs['contact_person'] = trim($row['contact_email']);
         }
 
-        // 9) persist & attach
+        // 9) persist & pivot attaches
         try {
             $event = new Event;
-            foreach ($attrs as $k => $v) {
-                $event->$k = $v;
+            foreach ($attrs as $key => $value) {
+                $event->$key = $value;
             }
             $event->save();
 
             if (!empty($row['audience_comma_separated_ids'])) {
                 $aud = array_filter(
-                    array_unique(explode(',', $row['audience_comma_separated_ids'])),
+                    explode(',', $row['audience_comma_separated_ids']),
                     fn($i) => is_numeric($i) && $i > 0 && $i <= 100
                 );
-                $event->audiences()->attach($aud);
+                $event->audiences()->attach(array_unique($aud));
             }
+
             if (!empty($row['theme_comma_separated_ids'])) {
                 $themes = $this->validateThemes($row['theme_comma_separated_ids']);
                 $event->themes()->attach($themes);
@@ -205,7 +194,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
 
             return $event;
         } catch (\Exception $e) {
-            Log::error('Event import failed: ' . $e->getMessage(), $row);
+            Log::error('Event import failed: '.$e->getMessage(), $attrs);
             return null;
         }
     }
