@@ -15,14 +15,17 @@ use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 class GenericEventsImport extends BaseEventsImport implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
+    /** Fallback when no creator_id can be determined */
+    protected const FALLBACK_CREATOR_ID = 315958;
+
     /**
-     * Cast any float with no fractional part back to int.
+     * Turn 3.0 → 3, 42.0 → 42, etc.
      */
     protected function normalizeRow(array $row): array
     {
-        foreach ($row as $key => $value) {
-            if (is_float($value) && floor($value) === $value) {
-                $row[$key] = (int) $value;
+        foreach ($row as $k => $v) {
+            if (is_float($v) && floor($v) === $v) {
+                $row[$k] = (int)$v;
             }
         }
         return $row;
@@ -37,7 +40,6 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             return Date::excelToDateTimeObject($value)
                        ->format('Y-m-d H:i:s');
         }
-
         try {
             return Carbon::parse($value)
                          ->format('Y-m-d H:i:s');
@@ -48,39 +50,55 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     }
 
     /**
-     * Map a row from the sheet into an Event model.
+     * Map each row into an Event or skip (return null).
      */
     public function model(array $row): ?Model
     {
-        // 1) normalize 3.0 → 3, etc.
+        // 1) normalize floats
         $row = $this->normalizeRow($row);
 
         Log::info('Importing row:', $row);
 
         // 2) required fields
-        if (
-            empty($row['activity_title']) ||
-            empty($row['name_of_organisation']) ||
-            empty($row['description']) ||
-            empty($row['type_of_organisation']) ||
-            empty($row['activity_type']) ||
-            empty($row['country']) ||
-            empty($row['start_date']) ||
-            empty($row['end_date'])
-        ) {
-            Log::error('Missing required fields in row, skipping.');
-            return null;
+        foreach ([
+            'activity_title',
+            'name_of_organisation',
+            'description',
+            'type_of_organisation',
+            'activity_type',
+            'country',
+            'start_date',
+            'end_date'
+        ] as $required) {
+            if (empty($row[$required])) {
+                Log::error("Missing required field “{$required}”, skipping.", $row);
+                return null;
+            }
         }
 
-        // 3) resolve creator_id if present
+        // 3) resolve creator_id
         $creatorId = null;
-        if (isset($row['creator_id']) && $row['creator_id'] !== '') {
-            $creatorId = is_int($row['creator_id'])
-                ? $row['creator_id']
-                : User::where('email', trim($row['creator_id']))->value('id');
+
+        // a) explicit integer
+        if (isset($row['creator_id']) && is_int($row['creator_id'])) {
+            $creatorId = $row['creator_id'];
+        }
+        // b) explicit email
+        elseif (!empty($row['creator_id']) && filter_var($row['creator_id'], FILTER_VALIDATE_EMAIL)) {
+            $creatorId = User::where('email', trim($row['creator_id']))->value('id');
+        }
+        // c) fallback from contact_email local‐part
+        elseif (!empty($row['contact_email']) && filter_var($row['contact_email'], FILTER_VALIDATE_EMAIL)) {
+            [$local,] = explode('@', trim($row['contact_email']), 2);
+            $creatorId = User::where('email', 'like', "{$local}@%")->value('id');
         }
 
-        // 4) build attribute array
+        // d) final fallback
+        if (empty($creatorId)) {
+            $creatorId = self::FALLBACK_CREATOR_ID;
+        }
+
+        // 4) build attributes
         $attrs = [
             'status'             => 'APPROVED',
             'title'              => trim($row['activity_title']),
@@ -89,41 +107,41 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             'description'        => trim($row['description']),
             'organizer_type'     => trim($row['type_of_organisation']),
             'activity_type'      => trim($row['activity_type']),
-            'location'           => $row['address'] ?? 'online',
-            'event_url'          => $row['organiser_website'] ?? '',
-            'user_email'         => $row['contact_email'] ?? '',
+            'location'           => trim($row['address'] ?? 'online'),
+            'event_url'          => trim($row['organiser_website'] ?? ''),
+            'user_email'         => trim($row['contact_email'] ?? ''),
             'creator_id'         => $creatorId,
             'country_iso'        => strtoupper(trim($row['country'])),
-            'picture'            => $row['image_path'] ?? '',
-            'pub_date'           => now(),
-            'created'            => now(),
-            'updated'            => now(),
+            'picture'            => trim($row['image_path'] ?? ''),
             'participants_count' => isset($row['participants_count'])
-                                   ? (int) $row['participants_count']
+                                   ? (int)$row['participants_count']
                                    : null,
             'mass_added_for'     => 'Excel',
             'start_date'         => $this->parseDate($row['start_date']),
             'end_date'           => $this->parseDate($row['end_date']),
-            'geoposition'        => (isset($row['latitude'], $row['longitude']) && $row['latitude'] !== '' && $row['longitude'] !== '')
+            'geoposition'        => (!empty($row['latitude']) && !empty($row['longitude']))
                                    ? "{$row['latitude']},{$row['longitude']}"
                                    : '',
-            'longitude'          => $row['longitude'] ?? '',
-            'latitude'           => $row['latitude'] ?? '',
+            'longitude'          => trim($row['longitude'] ?? ''),
+            'latitude'           => trim($row['latitude'] ?? ''),
             'language'           => isset($row['language'])
                                    ? strtolower(explode('_', trim($row['language']))[0])
                                    : 'en',
+            'pub_date'           => now(),
+            'created'            => now(),
+            'updated'            => now(),
         ];
 
-        // 5) optional singles & counts
+        // 5) optional single‐choice & counts
         if (isset($row['recurring_event'])) {
             $attrs['recurring_event'] = $this->validateSingleChoice(
                 $row['recurring_event'],
                 Event::RECURRING_EVENTS
             );
         }
-        foreach (['males_count','females_count','other_count'] as $c) {
+        foreach (['males_count', 'females_count', 'other_count'] as $c) {
             if (isset($row[$c])) {
-                $attrs[$c] = (int) $row[$c];
+                $attrs[$c] = (int)$row[$c];
             }
         }
 
@@ -160,40 +178,35 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             );
         }
 
-        // 8) contact_person from contact_email, if the column exists
-        if (Schema::hasColumn('events','contact_person')
-            && !empty($row['contact_email'])
-        ) {
+        // 8) contact_person fallback
+        if (Schema::hasColumn('events', 'contact_person') && !empty($row['contact_email'])) {
             $attrs['contact_person'] = trim($row['contact_email']);
         }
 
         // 9) persist & attach
         try {
-            $event = new Event($attrs);
+            $event = new Event;
+            foreach ($attrs as $k => $v) {
+                $event->$k = $v;
+            }
             $event->save();
 
-            // audiences
-            if (! empty($row['audience_comma_separated_ids'])) {
+            if (!empty($row['audience_comma_separated_ids'])) {
                 $aud = array_filter(
-                    array_unique(
-                        array_map('trim', explode(',', $row['audience_comma_separated_ids']))
-                    ),
+                    array_unique(explode(',', $row['audience_comma_separated_ids'])),
                     fn($i) => is_numeric($i) && $i > 0 && $i <= 100
                 );
                 $event->audiences()->attach($aud);
             }
-
-            // themes
-            if (! empty($row['theme_comma_separated_ids'])) {
+            if (!empty($row['theme_comma_separated_ids'])) {
                 $themes = $this->validateThemes($row['theme_comma_separated_ids']);
                 $event->themes()->attach($themes);
             }
 
             return $event;
         } catch (\Exception $e) {
-            Log::error('Event import failed: '.$e->getMessage());
+            Log::error('Event import failed: ' . $e->getMessage(), $row);
             return null;
         }
     }
 }
-
