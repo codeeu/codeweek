@@ -15,21 +15,24 @@ use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 class GenericEventsImport extends BaseEventsImport implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
+    /** Fallback when no creator_id can be determined */
+    protected const FALLBACK_CREATOR_ID = 315958;
+
     /**
-     * Cast floats with no fractional part back to int (so “3.0” → 3).
+     * Turn 3.0 → 3, 42.0 → 42, etc.
      */
     protected function normalizeRow(array $row): array
     {
         foreach ($row as $k => $v) {
             if (is_float($v) && floor($v) === $v) {
-                $row[$k] = (int) $v;
+                $row[$k] = (int)$v;
             }
         }
         return $row;
     }
 
     /**
-     * Turn Excel serials or strings into Y-m-d H:i:s
+     * Handle Excel‐serial or string dates.
      */
     public function parseDate($value)
     {
@@ -38,7 +41,8 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
                        ->format('Y-m-d H:i:s');
         }
         try {
-            return Carbon::parse($value)->format('Y-m-d H:i:s');
+            return Carbon::parse($value)
+                         ->format('Y-m-d H:i:s');
         } catch (\Exception $e) {
             Log::warning("Invalid date: {$value}");
             return null;
@@ -46,52 +50,55 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     }
 
     /**
-     * Map a row to an Event model (or skip/return null).
+     * Map each row into an Event or skip (return null).
      */
     public function model(array $row): ?Model
     {
-        // 1) normalize decimals → ints
+        // 1) normalize floats
         $row = $this->normalizeRow($row);
 
         Log::info('Importing row:', $row);
 
-        // 2) required fields guard
-        if (
-            empty($row['activity_title'])   ||
-            empty($row['name_of_organisation']) ||
-            empty($row['description'])      ||
-            empty($row['type_of_organisation']) ||
-            empty($row['activity_type'])    ||
-            empty($row['country'])          ||
-            empty($row['start_date'])       ||
-            empty($row['end_date'])
-        ) {
-            Log::error('Missing required fields, skipping row.', $row);
-            return null;
+        // 2) required fields
+        foreach ([
+            'activity_title',
+            'name_of_organisation',
+            'description',
+            'type_of_organisation',
+            'activity_type',
+            'country',
+            'start_date',
+            'end_date'
+        ] as $required) {
+            if (empty($row[$required])) {
+                Log::error("Missing required field “{$required}”, skipping.", $row);
+                return null;
+            }
         }
 
         // 3) resolve creator_id
         $creatorId = null;
+
         // a) explicit integer
         if (isset($row['creator_id']) && is_int($row['creator_id'])) {
             $creatorId = $row['creator_id'];
         }
-        // b) explicit email in creator_id column
+        // b) explicit email
         elseif (!empty($row['creator_id']) && filter_var($row['creator_id'], FILTER_VALIDATE_EMAIL)) {
             $creatorId = User::where('email', trim($row['creator_id']))->value('id');
         }
-        // c) fallback: match on local part of contact_email
+        // c) fallback from contact_email local‐part
         elseif (!empty($row['contact_email']) && filter_var($row['contact_email'], FILTER_VALIDATE_EMAIL)) {
             [$local,] = explode('@', trim($row['contact_email']), 2);
-            $creatorId = User::where('email', 'like', $local.'@%')->value('id');
+            $creatorId = User::where('email', 'like', "{$local}@%")->value('id');
         }
 
-        // d) final fallback to your chosen ID
-        if ($creatorId === null) {
-            $creatorId = 315958;
+        // d) final fallback
+        if (empty($creatorId)) {
+            $creatorId = self::FALLBACK_CREATOR_ID;
         }
 
-        // 4) build attribute array
+        // 4) build attributes
         $attrs = [
             'status'             => 'APPROVED',
             'title'              => trim($row['activity_title']),
@@ -125,14 +132,14 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             'updated'            => now(),
         ];
 
-        // 5) optional singles & counts
+        // 5) optional single‐choice & counts
         if (isset($row['recurring_event'])) {
             $attrs['recurring_event'] = $this->validateSingleChoice(
                 $row['recurring_event'],
                 Event::RECURRING_EVENTS
             );
         }
-        foreach (['males_count','females_count','other_count'] as $c) {
+        foreach (['males_count', 'females_count', 'other_count'] as $c) {
             if (isset($row[$c])) {
                 $attrs[$c] = (int)$row[$c];
             }
@@ -171,12 +178,12 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             );
         }
 
-        // 8) contact_person fallback if the column exists
-        if (Schema::hasColumn('events','contact_person') && ! empty($row['contact_email'])) {
+        // 8) contact_person fallback
+        if (Schema::hasColumn('events', 'contact_person') && !empty($row['contact_email'])) {
             $attrs['contact_person'] = trim($row['contact_email']);
         }
 
-        // 9) Persist + attach pivots
+        // 9) persist & attach
         try {
             $event = new Event;
             foreach ($attrs as $k => $v) {
@@ -191,7 +198,6 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
                 );
                 $event->audiences()->attach($aud);
             }
-
             if (!empty($row['theme_comma_separated_ids'])) {
                 $themes = $this->validateThemes($row['theme_comma_separated_ids']);
                 $event->themes()->attach($themes);
@@ -199,7 +205,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
 
             return $event;
         } catch (\Exception $e) {
-            Log::error('Event import failed: '.$e->getMessage(), $row);
+            Log::error('Event import failed: ' . $e->getMessage(), $row);
             return null;
         }
     }
