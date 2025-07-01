@@ -26,7 +26,8 @@
 
 @section('content')
     <tool-detail-card
-      id="{{ $tool }}"
+      profile='@json($profile)'
+      :locations='@json($locations)'
       map-tile-url="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={{ config('codeweek.MAPS_MAPBOX_ACCESS_TOKEN') }}"
     />
 @endsection

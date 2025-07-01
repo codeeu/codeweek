@@ -395,7 +395,8 @@ Route::post('/resources/search', [SearchResourcesController::class, 'search'])->
 Route::get('/matchmaking-tool', [MatchMakingToolController::class, 'index'])->name(
     'matchmaking_tool'
 );
-Route::get('/matchmaking-tool/{tool}', [MatchMakingToolController::class, 'show'])->name(
+Route::post('/matchmaking-tool/search', [MatchMakingToolController::class, 'searchPOST'])->name('search_matchprofiles');
+Route::get('/matchmaking-tool/{slug}', [MatchMakingToolController::class, 'show'])->name(
     'matchmaking_tool_detail'
 );
 //Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources')->middleware('auth');
