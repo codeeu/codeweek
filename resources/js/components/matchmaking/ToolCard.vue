@@ -31,7 +31,7 @@
             <img
               v-if="highlight"
               class="inline-block w-4 h-4"
-              src="/images/star.svg"
+              src="/images/star-white.svg"
             />
             <span>
               <template v-for="text in title.split(' ')">
@@ -71,7 +71,7 @@
           class="relative flex-grow text-slate-500 text-[16px] leading-[22px] mb-2 overflow-hidden"
           style="height: auto"
         >
-          {{ tool.description }}
+          <div v-html="tool.description" />
 
           <div
             v-if="needShowMore"
@@ -88,7 +88,7 @@
       <div class="flex-shrink-0 h-[56px]">
         <a
           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-          :href="`/matchmaking-tool/${tool.id}`"
+          :href="`/matchmaking-tool/${tool.slug}`"
         >
           <span>View profile/contact</span>
           <div class="flex gap-2 w-4 overflow-hidden">

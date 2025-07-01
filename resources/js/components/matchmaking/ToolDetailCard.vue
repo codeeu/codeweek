@@ -82,7 +82,10 @@
           <div class="flex-shrink-0 lg:max-w-[460px] w-full">
             <div
               class="flex justify-center items-center rounded-xl border-2 border-[#ADB2B6] mb-4 aspect-square"
-              :class="[isOrganisation && 'p-6', data.avatarDark && 'bg-stone-800']"
+              :class="[
+                isOrganisation && 'p-6',
+                data.avatarDark && 'bg-stone-800',
+              ]"
             >
               <img class="rounded-xl w-full" :src="data.avatar" />
             </div>
@@ -91,6 +94,7 @@
               <span v-if="data.job_title">, {{ data.job_title }}</span>
             </p>
             <p
+              v-if="data.short_intro"
               class="text-[#20262C] text-xl leading-[36px] font-medium font-['Montserrat'] mb-4 italic"
             >
               {{ data.short_intro }}
@@ -141,7 +145,7 @@
             <span
               class="bg-dark-blue text-white py-1 px-4 text-sm font-semibold rounded-full whitespace-nowrap flex items-center gap-2 w-fit mb-6"
             >
-              <img src="/images/star.svg" class="w-4 h-4" />
+              <img src="/images/star-white.svg" class="w-4 h-4" />
               <span>
                 Can teach Online <span class="font-sans">&</span> In-person
               </span>
@@ -154,7 +158,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-4 mb-6">
+            <div v-if="data.phone" class="flex gap-4 mb-6">
               <img src="/images/phone.svg" class="w-6 h-6" />
               <a
                 class="text-dark-blue underline cursor-pointer text-xl font-semibold"
@@ -212,10 +216,13 @@
                 Website
               </a>
             </div>
-            <div class="text-xl font-semibold text-[#20262C] mb-2">
+            <div
+              v-if="data.availabilities?.length"
+              class="text-xl font-semibold text-[#20262C] mb-2"
+            >
               My availability
             </div>
-            <div class="flex gap-4">
+            <div v-if="data.availabilities?.length" class="flex gap-4">
               <img src="/images/map.svg" class="w-6 h-6" />
               <div class="flex flex-col gap-2">
                 <div
@@ -253,8 +260,15 @@ import { individuals, organisations } from './match-makingtool-data.js';
 
 export default {
   props: {
-    id: String,
     mapTileUrl: String,
+    profile: {
+      type: Object,
+      default: () => ({}),
+    },
+    locations: {
+      type: Array,
+      default: () => [],
+    },
   },
   setup(props) {
     const descriptionRefs = ref([]);
@@ -264,11 +278,29 @@ export default {
 
     const isOrganisation = computed(() => props.id?.includes('organisation-'));
 
+    const profileData = computed(() => {
+      try {
+        const result = JSON.parse(props.profile);
+        console.log('>>> profile', result);
+        return result;
+      } catch (error) {
+        console.error('Parse profile data error', error);
+        return {};
+      }
+    });
+
+    const parseArrayString = (text) => {
+      if (typeof text !== 'string') return text;
+      try {
+        return JSON.parse(text);
+      } catch {
+        return [];
+      }
+    };
+
     const orgData = computed(() => {
-      const org = organisations.find(
-        ({ id }) => `organisation-${id}` === props.id
-      );
-      if (!org) return null;
+      const org = profileData.value;
+      if (org.type !== 'organisation') return null;
 
       const abouts = [];
       if (org.organisation_mission) {
@@ -308,32 +340,32 @@ export default {
         });
       }
 
+      const [website] = (org.website || '').split(',') || [];
+
       return {
         name: org.organisation_name,
         description: org.description,
-        location: org.country,
+        location:
+          props.locations.find(({ iso }) => iso === org.country)?.name || '',
         email: org.email,
-        website: org.organisation_website,
+        website: (website || '').trim(),
         abouts,
 
-        short_intro:
-          '“Quote/ short intro Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do”',
+        short_intro: '',
         availabilities: [
-          { dateText: 'Mon - Fri', timeText: '09:00 - 20:00' },
-          { dateText: 'Sat - Sun', timeText: '10:00 - 17:00' },
-          { dateText: 'Bank Holidays', timeText: '10:00 - 16:00' },
+          // { dateText: 'Mon - Fri', timeText: '09:00 - 20:00' },
+          // { dateText: 'Sat - Sun', timeText: '10:00 - 17:00' },
+          // { dateText: 'Bank Holidays', timeText: '10:00 - 16:00' },
         ],
-        phone: '+353 83 045 87 46',
+        phone: '',
         avatarDark: org.avatar_dark,
         avatar: org.avatar || '/images/matchmaking-tool/tool-organisation.png',
       };
     });
 
     const personData = computed(() => {
-      const person = individuals.find(
-        ({ id }) => `individual-${id}` === props.id
-      );
-      if (!person) return null;
+      const person = profileData.value;
+      if (person.type !== 'volunteer') return null;
 
       const abouts = [];
       if (person.description) {
@@ -347,7 +379,7 @@ export default {
           title: 'Organisation',
           list: [
             `Organisation name: ${person.organisation_name}`,
-            `Organisation type: ${person.organisation_type}`,
+            `Organisation type: ${parseArrayString(person.organisation_type)}`,
           ],
         });
       }
@@ -361,13 +393,13 @@ export default {
         abouts.push({
           title:
             'What kind of activities or support can you offer to schools and educators?',
-          list: person.support_activities,
+          list: parseArrayString(person.support_activities),
         });
       }
       if (person.languages?.length) {
         abouts.push({
           title: 'Languages spoken',
-          list: person.languages,
+          list: parseArrayString(person.languages),
         });
       }
 
@@ -383,14 +415,13 @@ export default {
         job_title: person.job_title,
         abouts,
 
-        short_intro:
-          '“Quote/ short intro Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do”',
+        short_intro: '',
         availabilities: [
-          { dateText: 'Mon - Fri', timeText: '09:00 - 20:00' },
-          { dateText: 'Sat - Sun', timeText: '10:00 - 17:00' },
-          { dateText: 'Bank Holidays', timeText: '10:00 – 16:00' },
+          // { dateText: 'Mon - Fri', timeText: '09:00 - 20:00' },
+          // { dateText: 'Sat - Sun', timeText: '10:00 - 17:00' },
+          // { dateText: 'Bank Holidays', timeText: '10:00 – 16:00' },
         ],
-        phone: '+353 83 045 87 46',
+        phone: '',
         avatar: person.avatar || '/images/matchmaking-tool/tool-individual.png',
       };
     });
@@ -471,7 +502,7 @@ export default {
       handleLoadLocationCoords();
       setTimeout(() => {
         handleInitMap();
-      }, 2000)
+      }, 2000);
     });
 
     return {

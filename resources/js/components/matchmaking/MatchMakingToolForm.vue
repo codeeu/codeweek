@@ -21,14 +21,35 @@
             <label class="block text-[16px] leading-5 text-slate-500 mb-2">
               Support type
             </label>
-            <input
-              class="px-6 py-3 w-full text-[16px] rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48] font-semibold placeholder:font-normal"
-              type="text"
-              v-model="searchInput"
-              @search-change="debounceSearch"
-              @keyup.enter="onSubmit"
+            <multiselect
+              v-model="selectedSupportTypes"
+              class="multi-select"
+              :options="supportTypeOptions"
+              :multiple="true"
+              :close-on-select="false"
+              :clear-on-select="false"
+              :preserve-search="true"
+              :custom-label="(opt) => opt.name"
               placeholder="Select type, e.g. volunteer"
-            />
+              label="Select type, e.g. volunteer"
+              track-by="name"
+              :preselect-first="false"
+              @select="onSubmit"
+              @remove="onSubmit"
+            >
+              <template #selection="{ values }">
+                <div
+                  v-if="values.length > 0"
+                  class="multiselect--values font-semibold text-[16px] truncate"
+                >
+                  Selected {{ values.length }}
+                  {{ values.length > 1 ? 'types' : 'type' }}
+                </div>
+              </template>
+              <pre class="language-json">
+                <code>{{ selectedLanguages }}</code>
+            </pre>
+            </multiselect>
           </div>
 
           <div>
@@ -57,12 +78,9 @@
                   class="multiselect--values font-semibold text-[16px] truncate"
                 >
                   Selected {{ values.length }}
-                  {{ values.length > 1 ? 'types' : 'type' }}
+                  {{ values.length > 1 ? 'languages' : 'language' }}
                 </div>
               </template>
-              <pre class="language-json">
-                <code>{{ selectedLanguages }}</code>
-            </pre>
             </multiselect>
           </div>
 
@@ -95,7 +113,7 @@
                   class="multiselect--values font-semibold text-[16px] truncate"
                 >
                   Selected {{ values.length }}
-                  {{ values.length > 1 ? 'levels' : 'level' }}
+                  {{ values.length > 1 ? 'locations' : 'location' }}
                 </div>
               </template>
             </multiselect>
@@ -108,15 +126,14 @@
             <multiselect
               v-model="selectedTypes"
               class="multi-select"
-              :options="types"
+              :options="typeOptions"
               :multiple="true"
               :close-on-select="false"
               :clear-on-select="false"
               :preserve-search="true"
               :custom-label="(opt) => opt.name"
-              placeholder="Online/in-person"
+              placeholder="Select type"
               label="Type"
-              track-by="name"
               :preselect-first="false"
               @select="onSubmit"
               @remove="onSubmit"
@@ -128,7 +145,7 @@
                   class="multiselect--values font-semibold text-[16px] truncate"
                 >
                   Selected {{ values.length }}
-                  {{ values.length > 1 ? 'languages' : 'language' }}
+                  {{ values.length > 1 ? 'types' : 'type' }}
                 </div>
               </template>
             </multiselect>
@@ -168,11 +185,7 @@
                   class="multiselect--values font-semibold text-[16px] truncate"
                 >
                   Selected {{ values.length }}
-                  {{
-                    values.length > 1
-                      ? 'programming languages'
-                      : 'programming language'
-                  }}
+                  {{ values.length > 1 ? 'topics' : 'topic' }}
                 </div>
               </template>
             </multiselect>
@@ -283,17 +296,46 @@ import { individuals, organisations } from './match-makingtool-data.js';
 export default {
   components: { ToolCard, Multiselect, Pagination },
   props: {
-    prpQuery: String,
-    prpLanguages: Array,
-    prpLocations: Array,
-    prpTypes: Array,
-    prpTopics: Array,
-    name: String,
-    supportedTypes: Array,
-    languages: Array,
-    locations: Array,
-    types: Array,
-    topics: Array,
+    prpQuery: {
+      type: String,
+      default: '',
+    },
+    prpLanguages: {
+      type: Array,
+      default: () => [],
+    },
+    prpLocations: {
+      type: Array,
+      default: () => [],
+    },
+    prpTypes: {
+      type: Array,
+      default: () => [],
+    },
+    prpTopics: {
+      type: Array,
+      default: () => [],
+    },
+    languages: {
+      type: Array,
+      default: () => [],
+    },
+    locations: {
+      type: Array,
+      default: () => [],
+    },
+    types: {
+      type: Array,
+      default: () => [],
+    },
+    topics: {
+      type: Array,
+      default: () => [],
+    },
+    support_types: {
+      type: Array,
+      default: () => [],
+    },
     locale: String,
   },
   setup(props) {
@@ -303,18 +345,40 @@ export default {
     const showFilterModal = ref(false);
     const query = ref(props.prpQuery);
     const searchInput = ref(props.prpQuery);
+    const selectedSupportTypes = ref([]);
     const selectedLanguages = ref(props.prpLanguages);
     const selectedLocations = ref(props.prpLocations);
     const selectedTypes = ref(props.prpTypes);
     const selectedTopics = ref(props.prpTopics);
     const errors = ref({});
-    const pagination = reactive({
+    const pagination = ref({
       current_page: 1,
+      per_page: 0,
+      from: null,
+      last_page: 0,
+      last_page_url: null,
+      next_page_url: null,
+      prev_page: null,
+      prev_page_url: null,
+      to: null,
+      total: 0,
     });
     const tools = ref([]);
 
+    const typeOptions = computed(() => {
+      return props.types.map((id) => ({ id, name: id }));
+    });
+
+    const supportTypeOptions = computed(() => {
+      return [
+        { id: 'organisation', name: 'Organisations' },
+        { id: 'volunteer', name: 'Volunteers' },
+      ];
+    });
+
     const tags = computed(() => {
       return [
+        ...selectedSupportTypes.value,
         ...selectedLanguages.value,
         ...selectedLocations.value,
         ...selectedTypes.value,
@@ -322,52 +386,18 @@ export default {
       ];
     });
 
-    const searchQuery = computed(() => {
-      let result =
-        window.location.hostname +
-        '/matchmaking-tool/' +
-        props.section +
-        '?lang=' +
-        props.locale;
-
-      if (searchInput.value) {
-        result += '&q=' + searchInput.value;
-      }
-      selectedLanguages.value.forEach((language) => {
-        result += '&languages[]=' + language.id;
-      });
-      selectedLocations.value.forEach((location) => {
-        result += '&locations[]=' + location.id;
-      });
-      selectedTypes.value.forEach((type) => {
-        result += '&types[]=' + type.id;
-      });
-      selectedTopics.value.forEach((topic) => {
-        result += '&topics[]=' + topic.id;
-      });
-
-      return result;
-    });
-
-    const copy = async () => {
-      try {
-        await toClipboard(searchQuery.value);
-        alert('Link has been copied to the clipboard!');
-      } catch (e) {
-        alert('Failed to copy texts');
-      }
-    };
-
     const removeSelectedItem = (tag) => {
       const filterFn = (item) => item.id !== tag.id;
+      selectedSupportTypes.value = selectedSupportTypes.value.filter(filterFn);
       selectedLanguages.value = selectedLanguages.value.filter(filterFn);
-      selectedLocations.value = selectedLocations.value.filter(filterFn);
+      selectedLocations.value = selectedLocations.value.filter((item) => item.iso !== tag?.iso);
       selectedTypes.value = selectedTypes.value.filter(filterFn);
       selectedTopics.value = selectedTopics.value.filter(filterFn);
       onSubmit();
     };
 
     const removeAllSelectedItems = () => {
+      selectedSupportTypes.value = [];
       selectedLanguages.value = [];
       selectedLocations.value = [];
       selectedTypes.value = [];
@@ -393,39 +423,68 @@ export default {
         pagination.current_page = 1;
       }
 
-      const list = [];
+      const params = {
+        page: pagination.value.current_page,
+        support_types: selectedSupportTypes.value.map((item) => item.id),
+        languages: selectedLanguages.value.map((item) => item.id),
+        locations: selectedLocations.value.map((item) => item.iso),
+        types: selectedTypes.value.map((item) => item.id),
+        topics: selectedTopics.value.map((item) => item.id),
+      };
 
-      organisations.forEach((item) => {
-        list.push({
-          id: `organisation-${item.id}`,
-          name: item.organisation_name,
-          location: item.country,
-          description: item.organisation_mission,
-          types: [
-            { title: 'Online & In-person', highlight: true },
-            { title: 'Ongoing availability' },
-          ],
-          avatar_dark: item.avatar_dark,
-          avatar: item.avatar,
+      axios
+        .post('/matchmaking-tool/search', {}, { params })
+        .then(({ data: response }) => {
+          console.log('>>> data', response.data);
+
+          tools.value = response.data.map((item) => {
+            const result = {
+              ...item,
+              avatar_dark: item.avatar_dark,
+              avatar: item.avatar,
+              types: [
+                { title: 'Online & In-person', highlight: true },
+                { title: 'Ongoing availability' },
+              ],
+            };
+
+            if (item.type === 'volunteer') {
+              return {
+                ...result,
+                name: `${item.first_name || ''} ${item.last_name || ''}`.trim(),
+                location: item.location,
+                description: item.description,
+              };
+            }
+
+            return {
+              ...result,
+              name: item.organisation_name,
+              location:
+                props.locations?.find(({ iso }) => iso === item.country)
+                  ?.name || '',
+              description: item.organisation_mission,
+            };
+          });
+          console.log(
+            '>>> tools.value',
+            JSON.parse(JSON.stringify(tools.value))
+          );
+
+          // Set pagination
+          pagination.value = {
+            per_page: response.per_page,
+            current_page: response.current_page,
+            from: response.from,
+            last_page: response.last_page,
+            last_page_url: response.last_page_url,
+            next_page_url: response.next_page_url,
+            prev_page: response.prev_page,
+            prev_page_url: response.prev_page_url,
+            to: response.to,
+            total: response.total,
+          };
         });
-      });
-
-      individuals.forEach((item) => {
-        list.push({
-          id: `individual-${item.id}`,
-          name: `${item.first_name || ''} ${item.last_name}`.trim(),
-          location: item.location,
-          description: item.description,
-          types: [
-            { title: 'Online & In-person', highlight: true },
-            { title: 'Ongoing availability' },
-          ],
-          avatar_dark: item.avatar_dark,
-          avatar: item.avatar,
-        });
-      });
-
-      tools.value = list;
     };
 
     const customLabel = (obj, label) => {
@@ -439,6 +498,7 @@ export default {
     return {
       query,
       searchInput,
+      selectedSupportTypes,
       selectedLanguages,
       selectedLocations,
       selectedTypes,
@@ -446,16 +506,16 @@ export default {
       errors,
       pagination,
       tools,
-      searchQuery,
       debounceSearch,
       paginate,
       onSubmit,
       customLabel,
-      copy,
       showFilterModal,
       tags,
       removeSelectedItem,
       removeAllSelectedItems,
+      typeOptions,
+      supportTypeOptions,
     };
   },
 };

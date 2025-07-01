@@ -97,15 +97,16 @@
         </section>
 
         <match-making-tool-form
-            :prp-query="'{{$query}}'"
-            :prp-languages="{{$selected_languages}}"
-            :prp-locations="{{$selected_locations}}"
-            :prp-types="{{$selected_types}}"
-            :prp-topics="{{$selected_topics}}"
-            :languages="{{ $languages }}"
-            :locations="{{ $locations }}"
-            :types="{{ $types }}"
-            :topics="{{ $topics }}"
+            :prp-query=""
+            :prp-languages='@json($selected_languages)'
+            :prp-locations='@json($selected_locations)'
+            :prp-types='@json($selected_types)'
+            :prp-topics='@json($selected_topics)'
+            :languages='@json($languages)'
+            :locations='@json($locations)'
+            :types='@json($types)'
+            :topics='@json($topics)'
+            :support_types='@json($support_types)'
             :locale="'{{App::getLocale()}}'"
         ></match-making-tool-form>
     </section>
