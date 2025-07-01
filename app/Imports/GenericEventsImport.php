@@ -12,6 +12,7 @@ use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
+use Illuminate\Support\Str;
 
 class GenericEventsImport extends BaseEventsImport implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
@@ -39,7 +40,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         }
         try {
             return Carbon::parse($value)->format('Y-m-d H:i:s');
-        } catch (\Exception $e) {
+        } catch (\Exception) {
             Log::warning("Invalid date: {$value}");
             return null;
         }
@@ -51,7 +52,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     protected function parseBool($value): bool
     {
         $v = strtolower(trim((string) $value));
-        return in_array($v, ['1', 'true', 'yes', 'y'], true);
+        return in_array($v, ['1','true','yes','y'], true);
     }
 
     /**
@@ -61,7 +62,6 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     {
         // 1) normalize numeric floats
         $row = $this->normalizeRow($row);
-
         Log::info('Importing row:', $row);
 
         // 2) required fields
@@ -86,15 +86,19 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             $creatorId = User::where('email', trim($row['creator_id']))->value('id');
         } elseif (!empty($row['contact_email']) && filter_var($row['contact_email'], FILTER_VALIDATE_EMAIL)) {
             [$local] = explode('@', trim($row['contact_email']), 2);
-            $creatorId = User::where('email', 'like', $local.'@%')->value('id');
+            $creatorId = User::where('email', 'like', "{$local}@%"
+            )->value('id');
         }
-        // leave null if not resolvable
 
-        // 4) base attributes
+        // 4) build attribute array
+        $picture = trim($row['image_path'] ?? '');
+        if ($picture && !Str::startsWith($picture, ['http://','https://'])) {
+            $picture = 'https://codeweek-s3.s3.amazonaws.com' . $picture;
+        }
         $attrs = [
             'status'              => 'APPROVED',
             'title'               => trim($row['activity_title']),
-            'slug'                => str_slug(trim($row['activity_title'])),
+            'slug'                => Str::slug(trim($row['activity_title'])),
             'organizer'           => trim($row['name_of_organisation']),
             'description'         => trim($row['description']),
             'organizer_type'      => trim($row['type_of_organisation']),
@@ -104,8 +108,10 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             'user_email'          => trim($row['contact_email'] ?? ''),
             'creator_id'          => $creatorId,
             'country_iso'         => strtoupper(trim($row['country'])),
-            'picture'             => trim($row['image_path'] ?? ''),
-            'participants_count'  => isset($row['participants_count']) ? (int) $row['participants_count'] : null,
+            'picture'             => $picture,
+            'participants_count'  => isset($row['participants_count'])
+                                    ? (int) $row['participants_count']
+                                    : null,
             'mass_added_for'      => 'Excel',
             'start_date'          => $this->parseDate($row['start_date']),
             'end_date'            => $this->parseDate($row['end_date']),
@@ -113,32 +119,29 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
                                      ? "{$row['latitude']},{$row['longitude']}"
                                      : '',
             'longitude'           => trim((string) ($row['longitude'] ?? '')),
-            'latitude'            => trim((string) ($row['latitude'] ?? '')),
+            'latitude'            => trim((string) ($row['latitude']  ?? '')),
             'language'            => isset($row['language'])
                                      ? strtolower(explode('_', trim($row['language']))[0])
                                      : 'en',
             'pub_date'            => now(),
             'created'             => now(),
             'updated'             => now(),
-            // ensure boolean default for non-nullable
             'recurring_event'     => $this->parseBool($row['recurring_event'] ?? ''),
         ];
 
-        // 5) optional counts
+        // 5) optional counts & booleans
         foreach (['males_count','females_count','other_count'] as $c) {
             if (isset($row[$c])) {
                 $attrs[$c] = (int) $row[$c];
             }
         }
-
-        // 6) optional booleans
         foreach (['is_extracurricular_event','is_standard_school_curriculum','is_use_resource'] as $b) {
             if (isset($row[$b])) {
                 $attrs[$b] = $this->parseBool($row[$b]);
             }
         }
 
-        // 7) multi‑choice arrays
+        // 6) multi-choice fields
         if (!empty($row['activity_format'])) {
             $attrs['activity_format'] = $this->validateMultiChoice(
                 $row['activity_format'],
@@ -164,29 +167,39 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             );
         }
 
-        // 8) contact_person fallback
-        if (Schema::hasColumn('events', 'contact_person')
-            && !empty($row['contact_email'])
-        ) {
+        // 7) contact_person fallback
+        if (Schema::hasColumn('events','contact_person') && !empty($row['contact_email'])) {
             $attrs['contact_person'] = trim($row['contact_email']);
         }
 
-        // 9) persist & pivot attaches
+        // 8) duplicate check: skip if an existing event has identical attributes
+        $dupQuery = Event::query();
+        foreach ($attrs as $field => $value) {
+            // only check scalar/stringable
+            if (is_scalar($value) || is_null($value)) {
+                $dupQuery->where($field, $value);
+            }
+        }
+        if ($dupQuery->exists()) {
+            Log::info('Duplicate event detected, skipping import.', $attrs);
+            return null;
+        }
+
+        // 9) persist & attach relations
         try {
             $event = new Event;
-            foreach ($attrs as $key => $value) {
-                $event->$key = $value;
+            foreach ($attrs as $k => $v) {
+                $event->$k = $v;
             }
             $event->save();
 
             if (!empty($row['audience_comma_separated_ids'])) {
                 $aud = array_filter(
                     explode(',', $row['audience_comma_separated_ids']),
-                    fn($i) => is_numeric($i) && $i > 0 && $i <= 100
+                    fn($i) => is_numeric($i) && $i>0 && $i<=100
                 );
                 $event->audiences()->attach(array_unique($aud));
             }
-
             if (!empty($row['theme_comma_separated_ids'])) {
                 $themes = $this->validateThemes($row['theme_comma_separated_ids']);
                 $event->themes()->attach($themes);
