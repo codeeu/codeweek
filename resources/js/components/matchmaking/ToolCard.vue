@@ -5,8 +5,11 @@
       :class="[tool.avatar_dark && 'bg-stone-800']"
     >
       <img
-        :src="tool.avatar || '/images/matchmaking-tool/tool-placeholder.svg'"
-        class="w-full object-contain aspect-[369/240]"
+        :src="tool.avatar || '/images/matchmaking-tool/tool-placeholder.png'"
+        :class="[
+          'w-full aspect-[2]',
+          tool.avatar ? 'object-contain' : 'object-cover',
+        ]"
       />
     </div>
 

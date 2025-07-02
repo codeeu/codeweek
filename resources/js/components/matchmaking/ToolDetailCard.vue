@@ -95,7 +95,7 @@
               <img
                 v-else
                 class="rounded-xl h-full w-full object-cover"
-                src="/images/matchmaking-tool/tool-placeholder.svg"
+                src="/images/matchmaking-tool/tool-placeholder.png"
               />
             </div>
             <p class="text-[#20262C] font-semibold text-lg p-0 mb-10">
@@ -252,7 +252,7 @@
           <div class="flex-1">
             <div
               id="map-id"
-              class="relative z-50 w-full h-64 md:h-full rounded-2xl"
+              class="relative z-50 w-full h-64 md:h-full md:min-h-96 rounded-2xl bg-gray-100"
             ></div>
           </div>
         </div>
@@ -280,8 +280,6 @@ export default {
   setup(props) {
     const descriptionRefs = ref([]);
     const showAboutIndexes = ref([]);
-    const mapInstance = ref();
-    const mapCenter = ref([51, 10]);
 
     const profileData = computed(() => {
       try {
@@ -462,7 +460,8 @@ export default {
       if (el) descriptionRefs.value[index] = el;
     };
 
-    const handleLoadLocationCoords = async () => {
+    const handleLoadMap = async () => {
+      let mapCenter = [51, 10];
       try {
         const response = await axios(
           'https://nominatim.openstreetmap.org/search',
@@ -471,46 +470,36 @@ export default {
         if (response.data && response.data.length > 0) {
           const { lat, lon } = response.data[0];
           if (lat && lon) {
-            mapCenter.value = [lat, lon];
+            mapCenter = [lat, lon];
           }
         }
       } catch (error) {
         console.log(error);
       }
-    };
 
-    watch(
-      [() => mapCenter.value, () => mapInstance.value],
-      () => {
-        if (mapInstance.value) {
-          const icon = L.icon({
-            iconUrl: '/images/marker-orange.svg',
-            iconSize: [33, 41],
-            iconAnchor: [22, 62],
-            popupAnchor: [0, -60],
-          });
-          L.marker(mapCenter.value, { icon }).addTo(mapInstance.value);
-          mapInstance.value.setView(mapCenter.value, 12);
-        }
-      },
-      { immediate: true }
-    );
-
-    const handleInitMap = async () => {
-      mapInstance.value = L.map('map-id');
+      const mapInstance = L.map('map-id');
       L.tileLayer(props.mapTileUrl, {
         maxZoom: 18,
         attribution: '© <a href="https://www.mapbox.com/">Mapbox</a>',
         tileSize: 512,
         zoomOffset: -1,
         zoomControl: false,
-      }).addTo(mapInstance.value);
+      }).addTo(mapInstance);
+      console.log(mapCenter);
+
+      const icon = L.icon({
+        iconUrl: '/images/marker-orange.svg',
+        iconSize: [44, 62],
+        iconAnchor: [22, 62],
+        popupAnchor: [0, -60],
+      });
+      L.marker(mapCenter, { icon }).addTo(mapInstance);
+      mapInstance.setView(mapCenter, 12);
     };
 
     onMounted(() => {
-      handleLoadLocationCoords();
       setTimeout(() => {
-        handleInitMap();
+        handleLoadMap();
       }, 2000);
     });
 
