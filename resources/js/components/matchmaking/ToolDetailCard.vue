@@ -22,7 +22,7 @@
             <h3
               class="text-dark-blue text-[22px] md:text-3xl leading-[36px] font-medium font-['Montserrat'] mb-6"
             >
-              {{ isOrganisation ? 'About' : 'About me' }}
+              {{ isOrganisation ? 'About our organization' : 'About me' }}
             </h3>
             <div class="accordion">
               <div
@@ -256,8 +256,6 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import axios from 'axios';
 
-import { individuals, organisations } from './match-makingtool-data.js';
-
 export default {
   props: {
     mapTileUrl: String,
@@ -276,8 +274,6 @@ export default {
     const mapInstance = ref();
     const mapCenter = ref([51, 10]);
 
-    const isOrganisation = computed(() => props.id?.includes('organisation-'));
-
     const profileData = computed(() => {
       try {
         const result = JSON.parse(props.profile);
@@ -288,6 +284,8 @@ export default {
         return {};
       }
     });
+
+    const isOrganisation = computed(() => profileData.value.type === 'organisation');
 
     const parseArrayString = (text) => {
       if (typeof text !== 'string') return text;
@@ -481,7 +479,7 @@ export default {
             popupAnchor: [0, -60],
           });
           L.marker(mapCenter.value, { icon }).addTo(mapInstance.value);
-          mapInstance.value.setView(mapCenter.value, 8);
+          mapInstance.value.setView(mapCenter.value, 12);
         }
       },
       { immediate: true }

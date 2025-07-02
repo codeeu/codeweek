@@ -15,7 +15,7 @@
     </div>
 
     <div
-      class="flex-grow flex flex-col gap-2 px-6 py-4 h-fit"
+      class="flex-grow flex flex-col gap-2 px-5 py-4 h-fit"
       :class="{ 'max-h-[450px]': needShowMore && !showMore }"
     >
       <div v-if="tool.types?.length" class="flex gap-2 flex-wrap mb-2">

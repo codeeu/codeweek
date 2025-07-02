@@ -27,6 +27,7 @@ class MatchmakingProfileFilters extends Filters
         'agree_to_be_contacted_for_feedback',
         'query',
         'start_time',
+        'topics',
     ];
 
     public function __construct(Request $request)
@@ -161,6 +162,17 @@ class MatchmakingProfileFilters extends Filters
             return $this->builder;
         }
         return $this->builder->where('start_time', '>=', $start);
+    }
+
+    protected function topics($topics)
+    {
+        if (empty($topics)) {
+            return $this->builder;
+        }
+
+        return $this->builder->whereHas('resourceCategories', function ($q) use ($topics) {
+            $q->whereIn('resource_categories.id', $topics);
+        });
     }
 
     protected function query($q)

@@ -1,10 +1,15 @@
 @extends('layout.new_base')
 
 @php
+      if ($profile->type === 'volunteer') {
+        $profileLabel = trim($profile->first_name . ' ' . $profile->last_name);
+      } else {
+        $profileLabel = $profile->organisation_name;
+      }
     $list = [
       (object) ['label' => 'Resources', 'href' => '/resources'],
       (object) ['label' => 'Role models', 'href' => '/matchmaking-tool'],
-      (object) ['label' => 'Sara Dawson', 'href' => ''],
+      (object) ['label' => $profileLabel, 'href' => ''],
     ];
 @endphp
 
