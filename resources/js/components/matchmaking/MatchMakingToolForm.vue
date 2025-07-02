@@ -34,8 +34,6 @@
               label="Select type, e.g. volunteer"
               track-by="name"
               :preselect-first="false"
-              @select="onSubmit"
-              @remove="onSubmit"
             >
               <template #selection="{ values }">
                 <div
@@ -69,8 +67,6 @@
               :custom-label="customLabel"
               track-by="name"
               :preselect-first="false"
-              @select="onSubmit"
-              @remove="onSubmit"
             >
               <template #selection="{ values }">
                 <div
@@ -101,8 +97,6 @@
               :custom-label="(opt) => opt.name"
               track-by="name"
               :preselect-first="false"
-              @select="onSubmit"
-              @remove="onSubmit"
             >
               <pre class="language-json">
                 <code>{{ selectedLocations }}</code>
@@ -135,8 +129,6 @@
               placeholder="Select type"
               label="Type"
               :preselect-first="false"
-              @select="onSubmit"
-              @remove="onSubmit"
             >
               <pre class="language-json"><code>{{ selectedTypes }}</code></pre>
               <template #selection="{ values }">
@@ -175,8 +167,6 @@
               label="Topics"
               track-by="name"
               :preselect-first="false"
-              @select="onSubmit"
-              @remove="onSubmit"
             >
               <pre class="language-json"><code>{{ selectedTopics }}</code></pre>
               <template #selection="{ values }">
@@ -291,7 +281,6 @@ import Pagination from '../Pagination.vue';
 import useClipboard from 'vue-clipboard3';
 import axios from 'axios';
 import { trans } from 'laravel-vue-i18n';
-import { individuals, organisations } from './match-makingtool-data.js';
 
 export default {
   components: { ToolCard, Multiselect, Pagination },
@@ -393,7 +382,6 @@ export default {
       selectedLocations.value = selectedLocations.value.filter((item) => item.iso !== tag?.iso);
       selectedTypes.value = selectedTypes.value.filter(filterFn);
       selectedTopics.value = selectedTopics.value.filter(filterFn);
-      onSubmit();
     };
 
     const removeAllSelectedItems = () => {
@@ -402,16 +390,11 @@ export default {
       selectedLocations.value = [];
       selectedTypes.value = [];
       selectedTopics.value = [];
-      onSubmit();
     };
 
     const scrollToTop = () => {
       window.scrollTo(0, 0);
     };
-
-    const debounceSearch = _.debounce(() => {
-      onSubmit();
-    }, 300);
 
     const paginate = () => {
       scrollToTop();
@@ -506,7 +489,6 @@ export default {
       errors,
       pagination,
       tools,
-      debounceSearch,
       paginate,
       onSubmit,
       customLabel,

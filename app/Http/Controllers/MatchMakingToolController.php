@@ -24,8 +24,34 @@ class MatchMakingToolController extends Controller
         $selected_types     = is_array($selected_types)     ? array_filter($selected_types)     : [];
         $selected_topics    = is_array($selected_topics)    ? array_filter($selected_topics)    : [];
 
-        $languages = ResourceLanguage::orderBy('position')->get()->toArray();
-        $locations = Country::orderBy('name')->select(['iso', 'name'])->get()->toArray();
+        $used_languages = MatchmakingProfile::query()
+            ->whereNotNull('languages')
+            ->pluck('languages')
+            ->filter()
+            ->flatMap(function ($langs) {
+                return is_array($langs) ? $langs : (json_decode($langs, true) ?: []);
+            })
+            ->unique()
+            ->values()
+            ->all();
+
+        $languages = ResourceLanguage::whereIn('name', $used_languages)
+            ->orderBy('position')
+            ->get(['id', 'name'])
+            ->toArray();
+            
+        $used_countries = MatchmakingProfile::query()
+            ->whereNotNull('country')
+            ->pluck('country')
+            ->unique()
+            ->values()
+            ->all();
+
+        $locations = Country::whereIn('iso', $used_countries)
+            ->orderBy('name')
+            ->get(['iso', 'name'])
+            ->toArray();
+
         $types     = MatchmakingProfile::getValidOrganizationTypeOptions();
         $topics    = ResourceCategory::orderBy('position')->get()->toArray();
 
@@ -55,7 +81,7 @@ class MatchMakingToolController extends Controller
         }
 
         $locations = Country::orderBy('name')->select(['iso', 'name'])->get()->toArray();
-        
+
         return view('matchmaking-tool.show', [
             'profile' => $profile,
             'locations' => $locations,

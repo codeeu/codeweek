@@ -106,8 +106,7 @@ class MatchmakingProfile extends Model
     {
         return [
             'Academic Institution / Research Organisation',
-            'EDTECH',
-            'EdTech organisation - developing safe and ethical education technology solutions',
+            'EdTech',
             'Education/Training Provider',
             'INTERNATIONAL CERTIFICATION',
             'Non-Governmental Organisation (NGO)',
@@ -129,6 +128,11 @@ class MatchmakingProfile extends Model
     public function countryModel()
     {
         return $this->belongsTo(Country::class, 'country', 'iso');
+    }
+
+    public function resourceCategories()
+    {
+        return $this->belongsToMany(ResourceCategory::class, 'matchmaking_profile_resource_category');
     }
 
     public function scopeFilter($query, MatchmakingProfileFilters $filters)

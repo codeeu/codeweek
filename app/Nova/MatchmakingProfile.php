@@ -12,6 +12,8 @@ use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany;
+
 
 class MatchmakingProfile extends Resource
 {
@@ -29,7 +31,7 @@ class MatchmakingProfile extends Resource
             ID::make()->sortable(),
 
             Select::make('Type')
-                ->options(MatchmakingProfileModel::getValidTypes())
+                ->options(array_combine(MatchmakingProfileModel::getValidTypes(), MatchmakingProfileModel::getValidTypes()))
                 ->displayUsingLabels(),
 
             Text::make('Slug')
@@ -46,6 +48,7 @@ class MatchmakingProfile extends Resource
             Text::make('Facebook')->hideFromIndex(),
             Text::make('Website')->hideFromIndex(),
             Text::make('Organisation Name')->sortable(),
+            BelongsToMany::make('Topics', 'resourceCategories', \App\Nova\ResourceCategory::class),
 
             // Array fields as JSON textareas
             Textarea::make('Languages')
@@ -82,7 +85,7 @@ class MatchmakingProfile extends Resource
                 ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
                 ->hideFromIndex(),
 
-            Boolean::make('Dark Avatar')->hideFromIndex(),
+            Boolean::make('Dark Avatar', 'avatar_dark')->hideFromIndex(),
             Boolean::make('Can Start Immediately'),
             Textarea::make('Why Volunteering')->hideFromIndex(),
 

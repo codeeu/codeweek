@@ -25,7 +25,7 @@ class MatchmakingProfilesSeeder extends Seeder
                 'languages'  => ['English', 'Italian', 'Spanish'],
                 'job_title'  => 'Chief Executive',
                 'linkedin'   => 'https://www.linkedin.com/in/sara-buonporto-60815231a/',
-                'organisation_type' => ['EDTECH', 'INTERNATIONAL CERTIFICATION'],
+                'organisation_type' => ['EdTech', 'INTERNATIONAL CERTIFICATION'],
                 'organisation_name' => 'IDCERT',
                 'website'    => 'https://it.idcert.io',
                 'location'   => 'andria, Italy',
@@ -491,7 +491,7 @@ class MatchmakingProfilesSeeder extends Seeder
                 'organisation_name' => 'IDCERT SRL SOCIETÀ BENEFIT',
                 'slug'              => Str::slug('IDCERT SRL SOCIETÀ BENEFIT'),
                 'website' => 'https://it.idcert.io',
-                'organisation_type' => ['EDTECH', 'INTERNATIONAL CERTIFICATION'],
+                'organisation_type' => ['EdTech', 'INTERNATIONAL CERTIFICATION'],
                 'country' => 'IT',
                 'organisation_mission' => 'IDCERT srl Società Benefit is a European-certified digital skills training provider, accredited under ISO 9001, ISO/IEC 27001, ISO/IEC 27017, ISO 29993, ISO 29994, and operates in compliance with UNI CEI EN ISO/IEC 17024 for personnel certification. The company is registered in the Italian National Research Registry (MIUR) and participates in major European alliances such as 1EdTech, ESSA (European Software Skills Alliance), and the Coalition for Competitive Digital Markets. IDCERT is an AWS Authorized Training Partner, a recognized provider on the Syllabus PA platform, and a National Youth Card partner. It is also accredited by the Ministry of Education for the training of school staff and leaders.',
                 'support_activities' => [
@@ -588,7 +588,7 @@ class MatchmakingProfilesSeeder extends Seeder
                 'organisation_name' => 'Datorium',
                 'slug'              => Str::slug('Datorium'),
                 'website' => 'https://datorium.eu, https://datorium.ai',
-                'organisation_type' => ['EdTech organisation - developing safe and ethical education technology solutions'],
+                'organisation_type' => ['EdTech'],
                 'country' => 'LV',
                 'organisation_mission' => 'Datorium is an innovative EdTech organisation. Read more about Datorium: <a class="text-dark-blue" href="https://www.linkedin.com/company/datorium">Co-founders Angela Jafarova and Elchin Jafarov</a> (both active in codeweek)',
                 'support_activities' => [
