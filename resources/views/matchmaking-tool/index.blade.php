@@ -3,7 +3,7 @@
 @php
     $list = [
       (object) ['label' => 'Resources', 'href' => '/resources'],
-      (object) ['label' => 'Role models', 'href' => ''],
+      (object) ['label' => 'Matchmaking Toolkit', 'href' => ''],
     ];
 @endphp
 
