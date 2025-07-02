@@ -5,12 +5,8 @@
       :class="[tool.avatar_dark && 'bg-stone-800']"
     >
       <img
-        :src="
-          tool.avatar ||
-          'https://s3-eu-west-1.amazonaws.com/codeweek-resources/dihQL7oz7ps1Xm4Ne27JDuknEkmZmEqqlcb3qJ5x.jpg'
-        "
-        class="w-full object-contain"
-        :class="[tool.avatar && 'aspect-[2]']"
+        :src="tool.avatar || '/images/matchmaking-tool/tool-placeholder.svg'"
+        class="w-full object-contain aspect-[369/240]"
       />
     </div>
 
