@@ -7,6 +7,9 @@
     ];
 @endphp
 
+@section('title', 'Digital Skills in Schools | Expert Matching Platform')
+@section('description', 'Find and connect with EU Code Week digital experts to inspire your students. Discover volunteers in coding, robotics, and more—online or in person.')
+
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection

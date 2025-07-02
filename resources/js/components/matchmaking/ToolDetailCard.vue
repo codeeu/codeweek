@@ -87,7 +87,16 @@
                 data.avatarDark && 'bg-stone-800',
               ]"
             >
-              <img class="rounded-xl w-full" :src="data.avatar" />
+              <img
+                v-if="data.avatar"
+                class="rounded-xl w-full"
+                :src="data.avatar"
+              />
+              <img
+                v-else
+                class="rounded-xl h-full w-full object-cover"
+                src="/images/matchmaking-tool/tool-placeholder.svg"
+              />
             </div>
             <p class="text-[#20262C] font-semibold text-lg p-0 mb-10">
               {{ data.name }}
@@ -285,7 +294,9 @@ export default {
       }
     });
 
-    const isOrganisation = computed(() => profileData.value.type === 'organisation');
+    const isOrganisation = computed(
+      () => profileData.value.type === 'organisation'
+    );
 
     const parseArrayString = (text) => {
       if (typeof text !== 'string') return text;
@@ -357,7 +368,7 @@ export default {
         ],
         phone: '',
         avatarDark: org.avatar_dark,
-        avatar: org.avatar || '/images/matchmaking-tool/tool-organisation.png',
+        avatar: org.avatar,
       };
     });
 
@@ -420,7 +431,7 @@ export default {
           // { dateText: 'Bank Holidays', timeText: '10:00 – 16:00' },
         ],
         phone: '',
-        avatar: person.avatar || '/images/matchmaking-tool/tool-individual.png',
+        avatar: person.avatar,
       };
     });
 

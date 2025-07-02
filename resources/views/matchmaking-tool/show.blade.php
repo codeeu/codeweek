@@ -2,16 +2,19 @@
 
 @php
       if ($profile->type === 'volunteer') {
-        $profileLabel = trim($profile->first_name . ' ' . $profile->last_name);
+        $profileName = trim($profile->first_name . ' ' . $profile->last_name);
       } else {
-        $profileLabel = $profile->organisation_name;
+        $profileName = $profile->organisation_name;
       }
     $list = [
       (object) ['label' => 'Resources', 'href' => '/resources'],
       (object) ['label' => 'Role models', 'href' => '/matchmaking-tool'],
-      (object) ['label' => $profileLabel, 'href' => ''],
+      (object) ['label' => $profileName, 'href' => ''],
     ];
 @endphp
+
+@section('title', $profileName)
+@section('description', implode(', ', $profile->support_activities))
 
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
