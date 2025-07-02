@@ -403,7 +403,7 @@ export default {
 
     const onSubmit = (isPagination = false) => {
       if (!isPagination) {
-        pagination.current_page = 1;
+        pagination.value.current_page = 1;
       }
 
       const params = {
