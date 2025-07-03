@@ -91,28 +91,32 @@
                     </div>
                     <div class="flex-1">
                         <p class="text-dark-blue text-[22px] md:text-4xl font-medium font-['Montserrat'] mb-6 p-0">
-                            EU Code Week Hackathon 2024
+                            EU Code Week Hackathon 2025
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2024 Hackathons is <span class="font-semibold">Hello, Future! Technical Solutions for a changing world</span>.
-                            EU Code Week national hackathons, which ran from October 2024 to March 2025, offered a platform for teams of young enthusiasts between 15-19 to learn, showcase their talents and produce a working solution to tackle global challenges.
+                            EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2025 Hackathons is <span class="font-semibold">From Code to Community: Bridging Digital Skills and Social Impact</span>.
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            Now it's the time for the European final! Join us online on <span class="font-semibold">30 April 2025 at 14:00 CET</span> to celebrate young minds building tech solutions for a changing world!
-                            Seven international teams will pitch their projects live, and you—the audience—get to vote for your favorites! Expect inspiring ideas, expert jury feedback, and plenty of good vibes. Don’t miss the big moment when we crown the <span class="font-semibold">Audience Winner, Jury Winner</span>, and the ultimate <span class="font-semibold">Super Winner</span>.
+                            EU Code Week national hackathons will take place from October to December 2025, offering an opportunity for teams of young enthusiasts aged 15–19 to learn, showcase their talents, and develop innovative digital solutions to address real-world challenges.
+                        </p>
+                        <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
+                            For the European finals, join us online in <span class="font-semibold">February 2026</span> (exact date to be confirmed) to celebrate young minds building tech solutions for a better world. International teams will pitch their projects live, and you will vote for your favourites!
+                        </p>
+                        <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
+                            Expect inspiring ideas, expert jury feedback, and plenty of positive energy. Don’t miss the big moment when we crown the <span class="font-semibold">Audience Winner, Jury Winner</span>, and the ultimate <span class="font-semibold">Super Winner</span>!
                         </p>
                         <div class="flex flex-col tablet:flex-row lg:flex-col 2xl:flex-row gap-x-2 gap-y-4">
                             <a
                                 class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                 target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024"
                             >
-                                Explore Hackathons Final 2024
+                                Hackathons Final 2024 Recap
                             </a>
                             <a
                                 class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                target="_blank" href="/docs/EU_Code_Week_Hackathons_2024 Toolkit_Final.pdf"
+                                target="_blank" href="/docs/C4EU_D2.7 Code Week Event Hackathon Design & Toolkit Final 18.06.2025.pdf"
                             >
-                                <span>Hackathon 2024 Toolkit</span>
+                                <span>Hackathon 2025 Toolkit</span>
                                 <div class="flex gap-2 w-4 overflow-hidden">
                                     <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
                                     <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
