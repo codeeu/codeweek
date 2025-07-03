@@ -8,6 +8,15 @@
 
     $results = [
         [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'AI Needs More Than Coders',
+            'description' => "AI isn't just about building tools, it's about choosing the right questions, spotting what others miss, and turning data into decisions that matter.",
+            'date' => '16 June 2025, Monday - 16.00 - 17.00 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/TKkB0z5k9tc',
+            'link_type' => 'video'
+        ],
+        [
             'image' => '/images/webinars/collaboration.png',
             'title' => 'From Idea to Impact: How to turn Dreams into ICT Success Stories',
             'description' => "Discover the Girls In Digital webinar, an inspiring Code4Europe initiative empowering girls and women to explore the European programmes ecosystem and pursue careers in tech and innovation.",
