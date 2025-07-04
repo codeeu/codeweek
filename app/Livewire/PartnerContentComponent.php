@@ -524,6 +524,16 @@ class PartnerContentComponent extends Component
                 'link_url' => 'https://euase.net/',
                 'main_img_url' => 'images/partners/eu-ase.png'
             ],
+             (object)[
+                'id' => 49,
+                'logo_url' => 'images/partners/philpott.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 50,
+                'logo_url' => 'images/partners/kod_centrum.png',
+                'categories' => ['Sponsor'],
+            ],
         ]);
     }
 
