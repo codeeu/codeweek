@@ -2306,21 +2306,25 @@ var SEMICOLON = SEMICOLON || {};
             });
 
             /* PRIMARY MENU */
-            $('#primary-menu-trigger,#overlay-menu-close').click(function() {
-                if ($( '#primary-menu-trigger .menu' ).attr('class').indexOf('hide') !== -1){
-                    $( '#primary-menu-trigger .menu' ).attr('class','menu');
-                }else{
-                    $( '#primary-menu-trigger .menu' ).attr('class','menu hide');
-                }
-                if ($( '#primary-menu-trigger .close' ).attr('class').indexOf('hide') !== -1){
-                    $( '#primary-menu-trigger .close' ).attr('class','close');
-                }else{
-                    $( '#primary-menu-trigger .close' ).attr('class','close hide');
-                }
+            $('#primary-menu-trigger,#overlay-menu-close').each(function() {
+              if ($(this).attr('data-click-initialized') === 'true') return;
+              $(this).attr('data-click-initialized', 'true');
+              $(this).click(function() {
+                  if ($( '#primary-menu-trigger .menu' ).attr('class').indexOf('hide') !== -1){
+                      $( '#primary-menu-trigger .menu' ).attr('class','menu');
+                  }else{
+                      $( '#primary-menu-trigger .menu' ).attr('class','menu hide');
+                  }
+                  if ($( '#primary-menu-trigger .close' ).attr('class').indexOf('hide') !== -1){
+                      $( '#primary-menu-trigger .close' ).attr('class','close');
+                  }else{
+                      $( '#primary-menu-trigger .close' ).attr('class','close hide');
+                  }
 
-                $( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show");
-                $( '#right-menu' ).toggleClass("show-flex");
-                return false;
+                  $( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show");
+                  $( '#right-menu' ).toggleClass("show-flex");
+                  return false;
+              });
             });
             if( SEMICOLON.isMobile.any() || !$body.hasClass('device-lg')){
                 $body.addClass('device-touch');
