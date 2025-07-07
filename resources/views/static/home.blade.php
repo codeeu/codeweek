@@ -243,7 +243,7 @@
                     </p>
                     <div class="flex flex-col gap-4 xl:flex-row">
                         <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                            href="/add">
+                            href="/add?skip=1">
                             <span>@lang('home.activity_button1')</span>
                             <div class="flex w-4 gap-2 overflow-hidden">
                                 <img src="/images/arrow-right-icon.svg"

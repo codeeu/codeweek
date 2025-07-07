@@ -50,17 +50,3 @@
         ></activity-form>
     </section>
 @endsection
-
-@push('scripts')
-    <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
-    <script type="application/json">
-        {
-            "service" : "map",
-            "version" : "2.0",
-            "renderTo" : "events-add-map",
-            "height": "250",
-            "width": "422",
-            "custom": ["/js/hideMenuMap.js"]
-        }
-    </script>
-@endpush
