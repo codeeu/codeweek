@@ -66,7 +66,6 @@
     @else
         <title>EU Code Week</title>
     @endif
-
 </head>
 
 <body class="new-layout">
@@ -182,13 +181,12 @@
       };
     </script>
 
-    @vite('resources/js/app.js')
     <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
     {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
     <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
     @include('scripts.countdown')
     <script type="text/javascript" src="{{ asset('plugins/slick-slider/slick.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}" data-cookieconsent="necessary"></script>
     @livewireScripts
     <script src="https://unpkg.com/vue-select@latest"></script>
 {{--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>--}}
