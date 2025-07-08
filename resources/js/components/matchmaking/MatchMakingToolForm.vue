@@ -115,7 +115,7 @@
 
           <div>
             <label class="block text-[16px] leading-5 text-slate-500 mb-2">
-              Type
+              Type of Organisation
             </label>
             <multiselect
               v-model="selectedTypes"
@@ -126,8 +126,9 @@
               :clear-on-select="false"
               :preserve-search="true"
               :custom-label="(opt) => opt.name"
-              placeholder="Select type"
-              label="Type"
+              placeholder="Select type of organisation"
+              label="Type of Organisation"
+              track-by="name"
               :preselect-first="false"
             >
               <pre class="language-json"><code>{{ selectedTypes }}</code></pre>
@@ -148,11 +149,18 @@
               class="flex items-center text-[16px] leading-5 text-slate-500 mb-2"
             >
               <span>Topics</span>
-              <div
-                class="w-5 h-5 bg-dark-blue rounded-full flex justify-center items-center text-white ml-1.5 cursor-pointer text-xs"
-              >
-                i
-              </div>
+              <Tooltip contentClass="w-64">
+                  <template #trigger>
+                      <div
+                        class="w-5 h-5 bg-dark-blue rounded-full flex justify-center items-center text-white ml-1.5 cursor-pointer text-xs"
+                      >
+                        i
+                      </div>
+                  </template>
+                  <template #content>
+                      Select a topic to help match volunteers with the right digital skills for your needs — e.g. coding, robotics, online safety, etc.
+                  </template>
+              </Tooltip>
             </label>
             <multiselect
               v-model="selectedTopics"
@@ -278,12 +286,13 @@ import Multiselect from 'vue-multiselect';
 import _ from 'lodash';
 import ToolCard from './ToolCard.vue';
 import Pagination from '../Pagination.vue';
+import Tooltip from '../Tooltip.vue';
 import useClipboard from 'vue-clipboard3';
 import axios from 'axios';
 import { trans } from 'laravel-vue-i18n';
 
 export default {
-  components: { ToolCard, Multiselect, Pagination },
+  components: { ToolCard, Multiselect, Pagination, Tooltip },
   props: {
     prpQuery: {
       type: String,

@@ -59,7 +59,7 @@ class MatchmakingProfileFilters extends Filters
         }
         return $this->builder->where(function ($q) use ($values) {
             foreach ($values as $value) {
-                $q->orWhereJsonContains('organisation_type', $value);
+                $q->orWhereJsonContains('digital_expertise_areas', $value);
             }
         });
     }

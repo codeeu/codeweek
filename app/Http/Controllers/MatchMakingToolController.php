@@ -52,7 +52,7 @@ class MatchMakingToolController extends Controller
             ->get(['iso', 'name'])
             ->toArray();
 
-        $types     = MatchmakingProfile::getValidOrganizationTypeOptions();
+        $types     = MatchmakingProfile::getUniqueDigitalExpertiseAreas();
         $topics    = ResourceCategory::orderBy('position')->get()->toArray();
 
         $support_types   = MatchmakingProfile::getValidTypes();
@@ -90,7 +90,7 @@ class MatchMakingToolController extends Controller
 
     public function searchPOST(MatchmakingProfileFilters $filters, Request $request)
     {
-        return MatchmakingProfile::where('type', '!=', null)
+        return MatchmakingProfile::query()
             ->filter($filters)
             ->orderByDesc('start_time')
             ->paginate(12);
