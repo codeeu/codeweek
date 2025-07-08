@@ -10,11 +10,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-<<<<<<< HEAD
-    "file": "assets/app-ywKpHvUw.js",
-=======
-    "file": "assets/app-BXMvrbqH.js",
->>>>>>> e6f1872e2f86f02e8f857265381965c1ccd12113
+    "file": "assets/app-BxQC0WBq.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
