@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+
+% Use Latin encoding (T1) as default, then LGR for Greek
+\usepackage[T1,LGR,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Set English as main language
+\usepackage[english,greek,russian]{babel}
+
+\usepackage[landscape,a4paper]{geometry}
+\geometry{verbose,tmargin=0cm,bmargin=0cm,lmargin=3cm,rmargin=3cm}
+
+\usepackage{fancybox}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{eso-pic}
+\usepackage{textcomp}
+\usepackage{tgheros} % TeX Gyre Heros font
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{xcolor}
+\definecolor{myorange}{RGB}{226, 83, 48}
+\definecolor{Slate600}{HTML}{20262C}
+\definecolor{GrayLine}{HTML}{858B91}
+
+% Background certificate image
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/participation-certificate-2025.png}%
+\vfill
+}}}
+
+\begin{document}
+
+\AddToShipoutPicture{\BackgroundPic}
+
+~
+\vspace{3.5cm}
+~
+
+\begin{center}
+
+\vspace{1cm}
+
+\textcolor{Slate600}{\fontsize{13}{13}\selectfont This certificate recognizes that} \\
+
+\vspace{0.5cm}
+
+% Certificate holder name in Greek
+\begin{otherlanguage*}{greek}
+\textcolor{myorange}{\fontsize{28}{32}\selectfont οκιμές οκιμές οκιμέ}
+\end{otherlanguage*} \\
+
+\vspace{0.5cm}
+
+\textcolor{Slate600}{\fontsize{13}{13}\selectfont Has developed essential computational thinking skills} \\
+\textcolor{Slate600}{\fontsize{13}{13}\selectfont and contributed to the success of} \\
+
+\vspace{0.8cm}
+
+\textcolor{myorange}{\fontsize{36}{42}\selectfont EU CodeWeek 2025} \\
+
+\vspace{0.8cm}
+
+\textcolor{Slate600}{\fontsize{13}{13}\selectfont by actively participating in the coding event} \\
+
+\vspace{0.5cm}
+
+% Event title: no forced language so Greek or English works
+\textcolor{myorange}{\fontsize{28}{32}\selectfont TEST TEST434343343443343434} \\
+
+\vspace{0.5cm}
+
+\textcolor{Slate600}{\fontsize{13}{13}\selectfont Which took place on} \\
+
+\vspace{0.5cm}
+
+% Event date in Greek
+\begin{otherlanguage*}{greek}
+\textcolor{Slate600}{\fontsize{24}{28}\selectfont 20/12/25}
+\end{otherlanguage*} \\
+
+\vspace{0.3cm}
+\centering
+\textcolor{GrayLine}{\rule{183pt}{2pt}}
+
+\end{center}
+
+\end{document}

@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[LGR,T2A,T1]{fontenc} % covers Greek, Cyrillic, Latin
+\usepackage[LGR,T2A,T1]{fontenc} % Force LGR first for Greek
 \usepackage[utf8]{inputenc}
 \usepackage[greek,russian,english]{babel}
 \usepackage[landscape,a4paper]{geometry}
@@ -11,13 +11,13 @@
 \usepackage{url}
 \usepackage{eso-pic}
 \usepackage{textcomp}
-\usepackage{tgheros} % TeX Gyre Heros is Helvetica-like
+\usepackage{tgheros} % Use TeX Gyre Heros for a lighter Helvetica
 \renewcommand{\familydefault}{\sfdefault}
 
 \usepackage{xcolor}
 \definecolor{myorange}{RGB}{226, 83, 48}
-\definecolor{Slate600}{HTML}{20262C}
-\definecolor{GrayLine}{HTML}{858B91}
+\definecolor{Slate600}{HTML}{20262C} 
+\definecolor{GrayLine}{HTML}{858B91} % Define gray color for the line
 
 \newcommand\BackgroundPic{%
   \put(0,0){%
@@ -26,23 +26,22 @@
       \centering
       \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/participation-certificate-2025.png}%
       \vfill
-    }
-  }
-}
+}}}
 
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
-
 ~
 \vspace{3.5cm}
 ~
-
 \begin{center}
-    \vspace{1cm}
+    \vspace{1cm} % Adjust spacing for alignment
     \textcolor{Slate600}{\fontsize{13}{13}\selectfont This certificate recognizes that} \\
     \vspace{0.5cm}
 
-    \textcolor{myorange}{\fontsize{28}{32}\selectfont <CERTIFICATE_HOLDER_NAME>} \\
+    % Certificate Holder Name in the correct language
+    \begin{otherlanguage*}{greek}
+        \textcolor{myorange}{\fontsize{28}{32}\selectfont <CERTIFICATE_HOLDER_NAME>}
+    \end{otherlanguage*} \\
 
     \vspace{0.5cm}
     \textcolor{Slate600}{\fontsize{13}{13}\selectfont Has developed essential computational thinking skills} \\
@@ -55,17 +54,24 @@
     \textcolor{Slate600}{\fontsize{13}{13}\selectfont by actively participating in the coding event} \\
     \vspace{0.5cm}
 
-    \textcolor{myorange}{\fontsize{28}{32}\selectfont <EVENT_NAME>} \\
+    % Event Name in the correct language
+    \begin{otherlanguage*}{greek}
+        \textcolor{myorange}{\fontsize{28}{32}\selectfont <EVENT_NAME>}
+    \end{otherlanguage*} \\
 
     \vspace{0.5cm}
     \textcolor{Slate600}{\fontsize{13}{13}\selectfont Which took place on} \\
     \vspace{0.5cm}
 
-    \textcolor{Slate600}{\fontsize{24}{28}\selectfont <EVENT_DATE>} \\
+    % Event Date in the correct language
+    \begin{otherlanguage*}{greek}
+        \textcolor{Slate600}{\fontsize{24}{28}\selectfont <EVENT_DATE>}
+    \end{otherlanguage*} \\
 
-    \vspace{0.3cm}
+    % Add a horizontal line centered below EVENT_DATE
+    \vspace{0.3cm} % Adjust vertical spacing
     \centering
-    \textcolor{GrayLine}{\rule{183pt}{2pt}}
+    \textcolor{GrayLine}{\rule{183pt}{2pt}} % Line: width=183pt (~377px), height=2pt
 
 \end{center}
 
