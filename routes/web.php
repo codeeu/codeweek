@@ -202,6 +202,8 @@ Route::get('/dream-jobs-in-digital', [StaticPageController::class, 'static'])->n
 
 Route::get('dream-jobs-in-digital/{role}', [StaticPageController::class, 'static'])->name('dream-jobs-in-digital-role');
 
+Route::get('/get-involved', [StaticPageController::class, 'static'])
+     ->name('get-involved');
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
 Route::get(

@@ -39,4 +39,3 @@ class SuperOrganiserQuery
 
     }
 }
-php artisan tinker --execute="\$u = \App\User::where('email','borana.barjami@junior-albania.org')->first(); echo \$u ? \"Found: ID={\$u->id}\n\" : \"User not found\n\";"
