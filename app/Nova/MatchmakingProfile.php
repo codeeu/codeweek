@@ -6,13 +6,11 @@ use App\MatchmakingProfile as MatchmakingProfileModel;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\BelongsToMany;
 
 
 class MatchmakingProfile extends Resource
@@ -48,7 +46,6 @@ class MatchmakingProfile extends Resource
             Text::make('Facebook')->hideFromIndex(),
             Text::make('Website')->hideFromIndex(),
             Text::make('Organisation Name')->sortable(),
-            BelongsToMany::make('Topics', 'resourceCategories', \App\Nova\ResourceCategory::class),
 
             // Array fields as JSON textareas
             Textarea::make('Languages')
@@ -75,7 +72,7 @@ class MatchmakingProfile extends Resource
                 ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
                 ->hideFromIndex(),
 
-            Textarea::make('Digital Expertise Areas')
+            Textarea::make('Topics')
                 ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
                 ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
                 ->hideFromIndex(),

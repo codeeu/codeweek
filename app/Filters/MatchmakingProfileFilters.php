@@ -57,9 +57,10 @@ class MatchmakingProfileFilters extends Filters
         if (empty($values)) {
             return $this->builder;
         }
+        logger($values);
         return $this->builder->where(function ($q) use ($values) {
             foreach ($values as $value) {
-                $q->orWhereJsonContains('digital_expertise_areas', $value);
+                $q->orWhereJsonContains('organisation_type', $value);
             }
         });
     }
@@ -84,18 +85,6 @@ class MatchmakingProfileFilters extends Filters
         return $this->builder->where(function ($q) use ($activities) {
             foreach ($activities as $activity) {
                 $q->orWhereJsonContains('support_activities', $activity);
-            }
-        });
-    }
-
-    protected function digital_expertise_areas($areas): Builder
-    {
-        if (empty($areas)) {
-            return $this->builder;
-        }
-        return $this->builder->where(function ($q) use ($areas) {
-            foreach ($areas as $area) {
-                $q->orWhereJsonContains('digital_expertise_areas', $area);
             }
         });
     }
@@ -164,14 +153,15 @@ class MatchmakingProfileFilters extends Filters
         return $this->builder->where('start_time', '>=', $start);
     }
 
-    protected function topics($topics)
+    protected function topics($values): Builder
     {
-        if (empty($topics)) {
+        if (empty($values)) {
             return $this->builder;
         }
-
-        return $this->builder->whereHas('resourceCategories', function ($q) use ($topics) {
-            $q->whereIn('resource_categories.id', $topics);
+        return $this->builder->where(function ($q) use ($values) {
+            foreach ($values as $value) {
+                $q->orWhereJsonContains('digital_expertise_areas', $value);
+            }
         });
     }
 

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Country;
-use App\ResourceCategory;
 use App\ResourceLanguage;
 use App\MatchmakingProfile;
 use Illuminate\Http\Request;
@@ -52,8 +51,8 @@ class MatchMakingToolController extends Controller
             ->get(['iso', 'name'])
             ->toArray();
 
-        $types     = MatchmakingProfile::getUniqueDigitalExpertiseAreas();
-        $topics    = ResourceCategory::orderBy('position')->get()->toArray();
+        $types     = MatchmakingProfile::getValidOrganizationTypeOptions();
+        $topics    = MatchmakingProfile::getUniqueDigitalExpertiseAreas();
 
         $support_types   = MatchmakingProfile::getValidTypes();
         $valid_formats = MatchmakingProfile::getValidFormats();

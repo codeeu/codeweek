@@ -144,11 +144,6 @@ class MatchmakingProfile extends Model
         return $this->belongsTo(Country::class, 'country', 'iso');
     }
 
-    public function resourceCategories()
-    {
-        return $this->belongsToMany(ResourceCategory::class, 'matchmaking_profile_resource_category');
-    }
-
     public function scopeFilter($query, MatchmakingProfileFilters $filters)
     {
         return $filters->apply($query);
