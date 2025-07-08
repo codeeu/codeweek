@@ -25,7 +25,7 @@
                                 Connect & support
                             </h2>
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
-                                Facilitating meetings... Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                                Looking to offer or receive help with digital skills? This space connects digital volunteers with individuals, schools, or organisations seeking support in using digital tools or delivering training on digital topics. Whether you're here to share your knowledge or to learn, you're in the right place!
                             </p>
                         </div>
                         <img
@@ -56,6 +56,9 @@
                     </p>
                     <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-6">
                         <span class="font-semibold">Experts & Organisation</span> – Sign up to share your knowledge with educators.
+                    </p>
+                    <p class="text-[#20262C] text-lg md:text-2xl font-semibold p-0 mb-6">
+                        Register today!
                     </p>
                     <div class="flex flex-col tablet:flex-row gap-6 mb-6">
                         <div class="p-6 flex flex-col items-center bg-yellow-50 rounded-lg flex-1">
@@ -89,11 +92,8 @@
                             </a>
                         </div>
                     </div>
-                    <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-6">
+                    <p class="p-0 text-slate-500 text-default md:text-xl font-normal">
                         <span class="font-semibold">Schools & Educators</span> – Browse the database to find the right expert and organisation for your students.
-                    </p>
-                    <p class="text-[#20262C] text-lg md:text-2xl font-semibold p-0">
-                        Register today!
                     </p>
                 </div>
             </div>

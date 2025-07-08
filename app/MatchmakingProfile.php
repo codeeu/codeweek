@@ -115,6 +115,20 @@ class MatchmakingProfile extends Model
         ];
     }
 
+    public static function getUniqueDigitalExpertiseAreas(): array
+    {
+        return MatchmakingProfile::query()
+            ->pluck('digital_expertise_areas')
+            ->filter()
+            ->flatMap(function ($item) {
+                return is_array($item) ? $item : [];
+            })
+            ->unique()
+            ->sort()
+            ->values()
+            ->all();
+    }
+
     /**
      * Get display name depending on type
      */
