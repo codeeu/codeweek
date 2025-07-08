@@ -165,7 +165,7 @@
             <multiselect
               v-model="selectedTopics"
               class="multi-select"
-              :options="topics"
+              :options="topicOptions"
               :multiple="true"
               :close-on-select="false"
               :clear-on-select="false"
@@ -374,6 +374,10 @@ export default {
       ];
     });
 
+    const topicOptions = computed(() => {
+      return props.topics.map((id) => ({ id, name: id }));
+    });
+
     const tags = computed(() => {
       return [
         ...selectedSupportTypes.value,
@@ -507,6 +511,7 @@ export default {
       removeAllSelectedItems,
       typeOptions,
       supportTypeOptions,
+      topicOptions,
     };
   },
 };
