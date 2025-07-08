@@ -1,11 +1,19 @@
 {
   "resources/assets/sass/app.scss": {
+<<<<<<< HEAD
     "file": "assets/app-CHE8MLB6.css",
+=======
+    "file": "assets/app-DF7FsoLk.css",
+>>>>>>> 9131cd4b (Finalize partner slider and arrow styling)
     "src": "resources/assets/sass/app.scss",
     "isEntry": true
   },
   "resources/css/app.css": {
+<<<<<<< HEAD
     "file": "assets/app-D1TMFUNA.css",
+=======
+    "file": "assets/app-Bpw_YULg.css",
+>>>>>>> 9131cd4b (Finalize partner slider and arrow styling)
     "src": "resources/css/app.css",
     "isEntry": true
   },
