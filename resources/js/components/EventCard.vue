@@ -18,7 +18,7 @@
             <img
               v-if="highlight"
               class="inline-block w-4 h-4 text-white"
-              src="/images/star.svg"
+              src="/images/star-white.svg"
             />
             <span>
               <template v-for="text in title.split(' ')">
