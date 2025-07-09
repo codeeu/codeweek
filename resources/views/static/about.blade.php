@@ -33,7 +33,7 @@
                             />
                         <div
                             class="flex flex-col-reverse justify-between items-center mx-auto w-full max-md:h-full md:flex-row codeweek-container-lg">
-                            <div class="flex justify-center items-center w-full md:w-1/2">
+                            <div class="flex justify-center items-center w-full h-full md:w-1/2">
                                 <div
                                     class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-fit h-fit relative -top-6">
                                     <h1
@@ -268,7 +268,7 @@
 
                 <div class="text-sm font-semibold leading-none text-black">
                     <div class="flex flex-col justify-center bg-white rounded-[32px] p-4">
-                            <div class="flex relative gap-2 items-center py-8 mb-0" role="tablist" aria-label="Map view options">
+                            <div class="flex relative gap-2 items-center py-2 mb-0 lg:py-8 max-lg:flex-wrap lg:flex-row" role="tablist" aria-label="Map view options">
                                 <button
                                     class="flex gap-2 justify-center items-center px-4 py-1 text-white whitespace-nowrap bg-blue-800 rounded-2xl btn w-fit hover:bg-hover hover:text-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800"
                                     role="tab"

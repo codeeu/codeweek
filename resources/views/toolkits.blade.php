@@ -32,9 +32,9 @@
                             />
                         <div
                             class="flex flex-col-reverse justify-between items-center mx-auto w-full max-md:h-full md:flex-row codeweek-container-lg">
-                            <div class="flex justify-center items-center w-full md:w-1/2">
+                            <div class="flex justify-center items-center w-full h-full md:w-1/2">
                                 <div
-                                    class="lg:px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-fit h-fit relative -top-6">
+                                    class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-fit h-fit relative -top-6">
                                     <h1
                                         class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
                                           @lang('menu.toolkits')
@@ -55,7 +55,7 @@
             <div class="relative max-lg:py-12 lg:pt-20 lg:pb-16 codeweek-container-lg">
                 <div class=" bg-[#FFEF99] rounded-full h-[93px] absolute top-12 -right-8 z-10 rotate-[-162.343deg] w-[93px] max-md:hidden" aria-hidden="true"></div>
                 <div class="flex overflow-hidden relative flex-col items-center">
-                <div class="flex lg:gap-20 items-start mx-auto w-full max-w-[1428px] max-lg:flex-col-reverse">
+                <div class="flex lg:gap-20 items-start mx-auto w-full max-w-[1428px] max-lg:flex-col">
                    <div class="relative w-full lg:w-1/2">
                     <img
                     src="{{asset('images/toolkits.png')}}"

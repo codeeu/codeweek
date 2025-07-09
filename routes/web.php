@@ -27,6 +27,7 @@ use App\Http\Controllers\BadgesController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\Codeweek4AllController;
 use App\Http\Controllers\CodingAtHomeController;
+use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\CommunityController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\EventController;
@@ -204,6 +205,8 @@ Route::get('dream-jobs-in-digital/{role}', [StaticPageController::class, 'static
 
 Route::get('/get-involved', [StaticPageController::class, 'static'])
      ->name('get-involved');
+Route::get('/contact-us', [StaticPageController::class, 'static'])
+     ->name('contact-us');
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
 Route::get(
@@ -301,7 +304,7 @@ Route::get(
     '/training/making-and-coding',
     [StaticPageController::class, 'static']
 )->name('training.module-22'); */
-
+Route::post('/contact-submit', [ContactFormController::class, 'submit'])->name('contact.submit');
 Route::get('/resources/CodingAtHome', [CodingAtHomeController::class, 'show'])->name(
     'coding@home'
 );
