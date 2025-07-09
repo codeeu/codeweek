@@ -110,8 +110,11 @@
                         <li class="mb-4">
                             <a href="/challenges" class="cookweek-link hover-underline">@lang('footer.challenges')</a>
                         </li>
-                        <li>
+                        <li class="mb-4">
                             <a href="/hackathons" class="cookweek-link hover-underline">@lang('footer.hackathons')</a>
+                        </li>
+                        <li>
+                            <a href="/matchmaking-tool" class="cookweek-link hover-underline">Matchmaking Toolkit</a>
                         </li>
                     </ul>
                 </div>
