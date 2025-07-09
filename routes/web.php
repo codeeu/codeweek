@@ -42,6 +42,7 @@ use App\Http\Controllers\LeadingTeachersSignup;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\MailTemplateController;
 use App\Http\Controllers\MapController;
+use App\Http\Controllers\MatchMakingToolController;
 use App\Http\Controllers\OnlineEventsController;
 use App\Http\Controllers\ParticipationController;
 use App\Http\Controllers\PendingEventsController;
@@ -398,7 +399,13 @@ Route::get('/resources/learn-and-teach', [ResourcesController::class, 'all'])->n
 Route::post('/resources/search', [SearchResourcesController::class, 'search'])->name(
     'search_resources'
 );
-
+Route::get('/matchmaking-tool', [MatchMakingToolController::class, 'index'])->name(
+    'matchmaking_tool'
+);
+Route::post('/matchmaking-tool/search', [MatchMakingToolController::class, 'searchPOST'])->name('search_matchprofiles');
+Route::get('/matchmaking-tool/{slug}', [MatchMakingToolController::class, 'show'])->name(
+    'matchmaking_tool_detail'
+);
 //Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources')->middleware('auth');
 //Route::post('/resources/suggest', 'SuggestResourcesController@store')->name('store_suggest_resources')->middleware('auth');
 
