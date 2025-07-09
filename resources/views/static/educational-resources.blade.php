@@ -20,7 +20,7 @@
                                 Educational Resources
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-slate-500 p-0 mb-0 max-md:max-w-full max-w-[725px]">
-                                Welcome! Here, you'll find a collection of free resources designed to support your learning journey!
+                                @lang('educational-resources.educational_resources_text')
                             </p>
                         </div>
                         <img
@@ -43,13 +43,13 @@
         <section class="relative bg-yellow-50">
             <div class="relative py-10 md:py-20 codeweek-container-lg font-['Montserrat']">
                 <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-8">
-                    Got free and open educational resources?
+                     @lang('educational-resources.share_your_resources_title')
                 </h2>
                 <p class="text-slate-500 font-normal leading-7 text-xl p-0 mb-4 w-full md:max-w-[825px] font-['Blinker']">
-                    Share them with the EU Code Week community! Submit your free resources using the form below, and we'll feature them on this page to help others learn, create and grow OR tell us what you think!
+                     @lang('educational-resources.share_your_resources_text')
                 </p>
                 <p class="text-slate-500 font-normal leading-7 text-xl p-0 mb-4 w-full md:max-w-[825px] font-['Blinker']">
-                    Share your feedback on the existing resources – whether you have suggestions for improvement, compliments, or new ideas, we'd love to hear from you!
+                    @lang('educational-resources.share_your_feedback_text')
                 </p>
                 <div class="flex flex-col md:flex-row gap-4 mb-10 md:mb-16">
                     <a
@@ -57,14 +57,14 @@
                         href="https://forms.gle/pZz9issG45B9131n9"
                         target="_blank"
                     >
-                        <span>Share your resource</span>
+                        <span> @lang('educational-resources.share_your_resources_button') </span>
                     </a>
                     <a
                         class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
                         href="https://forms.gle/enVmsPvNyYo7yEuT6"
                         target="_blank"
                     >
-                        <span>Share your feedback</span>
+                        <span> @lang('educational-resources.share_your_feedback_button') </span>
                     </a>
                 </div>
                 <div class="grid grid-cols-1 tablet:grid-cols-3 gap-6 xl:gap-10 mb-6 xl:mb-8">

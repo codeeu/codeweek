@@ -195,7 +195,7 @@
                                 Coding@Home – video tutorials
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-0 max-md:max-w-full max-w-[525px]">
-                                A collection of short videos, do-it-yourself materials, puzzles, games, and coding challenges for everyday use in the family as well as at school.
+                                @lang('coding-at-home.coding-at-home-text')
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
@@ -223,10 +223,10 @@
                         Coding@Home
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        EU Code Week’s Coding@Home series builds on the <a class="text-dark-blue underline" href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> initiative of the University of Urbino and the CodeMOOCnet Association in cooperation with Rai Cultura. The author of Coding@Home video is Alessandro Bogliolo, a Professor of Information Processing Systems at the University of Urbino, an <a class="text-dark-blue underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italian EU Code Week ambassador</a> and the coordinator of all ambassadors as well as a member of the Governing Board of the Digital Skills and Jobs Coalition.
+                         @lang('coding-at-home.coding-at-home-sub-text1')
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                        You do not need any previous knowledge or electronic devices to do the activities. The activities will stimulate computational thinking and cultivate the skills of pupils, parents and teachers at home or at school.
+                        @lang('coding-at-home.coding-at-home-sub-text2')
                     </p>
                 </div>
             </div>

@@ -435,6 +435,15 @@ With Python, students can create quizzes about historical events, solve math pro
 <p>
     If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the <a href="/codeweek4all">Code Week 4 All challenge</a>.
 </p>',
-    ],
-
+    ],    
+'training-text'=>'Bite-sized, ready-to-use materials that will help you introduce coding basics and plan your next innovative lesson.',
+'quick-practical-text1'=> "Discover the essentials of coding and computational thinking through bite-sized, practical activities designed for educators, students, and anyone eager to explore the digital world. Whether you're new to coding or looking for fresh ideas to integrate into your teaching or training sessions, Learning Bits will spark your imagination and provide a solid starting point.",
+'watch-learn-title'=>'Watch & Learn',
+'watch-learn-text'=>'Discover the essentials of coding through engaging Learning Bits. These bite-sized modules, lasting around 15 minutes introduce key concepts related to coding and computational thinking. In addition to theoretical insights, the modules provide practical tips on how to apply these concepts in various educational settings – whether you\'re teaching children, students or adult learners.',
+'get-hands-on-title' =>'Get Hands-On',
+'get-hands-on-text' =>'Choose a Learning Bit, watch the instructional video, and explore hands-on activities with the accompanying materials. Whether you’re new to coding or looking for fresh, creative teaching ideas, Coding Basics will equip you with the tools to spark digital curiosity and creativity in your learners.',
+'share-inspire-title' =>'Share & Inspire',
+'share-inspire-text1' =>'Once you\'ve completed one or more Code Week Learning Bits, we encourage you to bring digital creativity into your educational environment and pin your activity on the <a href="/events" class="font-semibold text-dark-blue underline">Code Week Map</a>!',
+'share-inspire-text2' =>'You can organise a lesson in your classroom, a workshop at a community centre, or an open event at your organisation. Simply pick a date and register your activity on the <a href="/events" class="font-semibold text-dark-blue underline">Code Week Map</a>. Each activity organiser will get a participation certificate for their effort.',
+'share-inspire-text3' =>'If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the EU <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Code Week 4 All challenge</a>.',
 ];

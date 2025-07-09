@@ -9,9 +9,36 @@
     $results = [
         [
             'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'AI Needs More Than Coders',
+            'description' => "AI isn't just about building tools, it's about choosing the right questions, spotting what others miss, and turning data into decisions that matter.",
+            'date' => '16 June 2025, Monday - 16.00 - 17.00 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/TKkB0z5k9tc',
+            'link_type' => 'video'
+        ],
+        [
+            'image' => '/images/webinars/collaboration.png',
+            'title' => 'From Idea to Impact: How to turn Dreams into ICT Success Stories',
+            'description' => "Discover the Girls In Digital webinar, an inspiring Code4Europe initiative empowering girls and women to explore the European programmes ecosystem and pursue careers in tech and innovation.",
+            'date' => '12 May 2025 - 14.00 - 15.00 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/ijXArs4NZIc',
+            'link_type' => 'video'
+        ],
+        [
+            'image' => '/images/webinars/Linda_Liukas.jpg',
+            'title' => 'Code Week Mini Series with Linda Liukas - Building Communities in Computer Science',
+            'description' => "Join Linda Liukas for an inspiring webinar on fostering connection, creativity, and collaboration in tech, with a focus on empowering the next generation of learners.",
+            'date' => '8 May 2025 - 18.30 - 19.15 CET',
+            'label' => 'Past Webinar',
+            'link' => 'https://www.youtube.com/watch?v=fwiTPbiZuTc&list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky&index=1',
+            'link_type' => 'video'
+        ],
+        [
+            'image' => '/images/webinars/blue_visual.jpg',
             'title' => 'NuGamers: How to foster gender inclusive gaming education?',
             'description' => "Explore how to foster gender-inclusive gaming education in this CodeWeek 2025 webinar, addressing gender biases in the gaming industry.",
-            'date' => '24 March 2025 - upcoming 14.00 - 14.50 CET',
+            'date' => '24 March 2025 - 14.00 - 14.50 CET',
             'label' => 'Past Webinar',
             'link' => 'https://events.teams.microsoft.com/event/47c8f739-183d-48a1-acae-de3d28cd3b7d@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
             'link_type' => 'form'
@@ -20,7 +47,7 @@
             'image' => '/images/webinars/blue_visual.jpg',
             'title' => 'Empower, Inspire & Celebrate: Girls in Digital Week 2025',
             'description' => "Explore Girls in Digital, an EU Code Week initiative empowering young Europeans to embrace STE(A)M fields and drive innovation.",
-            'date' => '18 March 2025 – upcoming from 16.00 - 16.45 CET',
+            'date' => '18 March 2025 - 16.00 - 16.45 CET',
             'label' => 'Past Webinar',
             'link' => 'https://events.teams.microsoft.com/event/964e1126-8038-43bd-8cae-fa000e261e62@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
             'link_type' => 'form'
@@ -135,7 +162,7 @@
                                 Webinars
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                Discover a range of free webinars to boost your coding skills and knowledge. Tune in and learn from experts at your own pace!
+                                @lang('webinars.webinars-text')
                             </p>
                             <span class="text-dark-blue font-semibold text-lg ">
                                 <a href="/" class="cursor-pointer text-dark-blue underline mr-1">
@@ -174,13 +201,13 @@
                         Webinars
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        Organised by the EU Code Week team, this webinar series is designed to support the organisation of events and activities. This series brings together experts, educators, and enthusiasts to explore the fascinating intersection of coding and digital creativity.
-                        Whether you're a teacher looking to enrich your curriculum, a student eager to expand your skills, or a coding enthusiast interested in the latest educational trends, this series has something for everyone.
+                        @lang('webinars.webinars-sub-text1')
+                        @lang('webinars.webinars-sub-text2')
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
-                        All recordings are also available as YouTube playlists: <br />
-                        2024 Webinar Series: <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf">https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf</a> <br />
-                        2025 Webinar Series:  <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky">https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky</a>
+                        @lang('webinars.recordings-youtube-list-title')<br />
+                        @lang('webinars.2024-webinar-series-title') <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf">https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf</a> <br />
+                       @lang('webinars.2025-webinar-series-title') <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky">https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky</a>
                     </p>
                 </div>
             </div>

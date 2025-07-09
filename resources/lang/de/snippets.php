@@ -60,4 +60,7 @@ return [
         7 => 'Marjana Prifti – Botschafterin für Albanien – dazu, warum die Code Week Innovation und Kreativität fördert',
         8 => 'Cristiana Lucaci – Botschafterin für Rumänien – dazu, warum die Code Week ihrer Gemeinschaft dankbar ist',
     ],
+
+    'learn_and_teach_1' => 'Ein Repository mit Ressourcen, um deine Coding-Reise zu beginnen oder fortzusetzen und digitale sowie technische Fähigkeiten zu entwickeln – alles kostenlos verfügbar.',
+    'learn_and_teach_2' => 'Coding und Programmierung sind Schlüsselkompetenzen, die in jedem Bereich zunehmend gefragt sind, und die EU Code Week möchte dich in deinem Lehr- und Lernprozess unterstützen! Durchstöbere unser Repository und finde die perfekte Ressource, um deine Coding-Reise zu starten oder fortzusetzen. Alle Ressourcen sind kostenlos. Vergiss nicht, dass du deine Suche nach Titel, Ressourcentyp, Fähigkeitsniveau, Programmiersprache, Unterrichtsfach, Kategorie und Sprache filtern kannst.',
 ];

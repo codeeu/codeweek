@@ -90,4 +90,9 @@ return [
         'Facebook, Instagram ose Twitter',
         'Sigurohuni që të përdorni',
     ],
+
+    'challenges-text'   => 'Një koleksion aktivitetesh që mund t\'i bëni vetë, në klasë, me kolegë apo miq.',
+    'challenges-sub-title' => 'Do të donit të merrnit pjesë në Javën e Kodit të BE-së, por nuk keni vërtet një ide se çfarë duhet të organizoni?',
+    'challenges-sub-text1' => 'Mos shiko më tej! Së bashku me partnerët e Javës së Kodit të BE-së, ne kemi projektuar një përzgjedhje sfidash të lehta për t\'u bërë me shembuj konkretë se si t\'i përdorim ato në një klasë apo grup. Ka edhe udhëzime se si t\'i përfundoni sfidat, por mund t\'i përshtatni ato në mënyrë që ato t\'u përshtaten nevojave, interesave dhe moshës së pjesëmarrësve tuaj.',
+    'challenges-sub-text2' => 'Ju mund të përdorni çfarëdo mjetesh dhe teknologjish që ju pëlqejnë, por ne rekomandojmë burime me burim të hapur. Zgjidhni një ose disa sfida, përshtateni atë me grupin tuaj ose klasën tuaj dhe ndani rezultatet në Instagram për të inkurajuar edhe më shumë kolegë dhe miq për t\'u bashkuar me argëtimin e Javës së Kodit të BE-së!.',
 ];

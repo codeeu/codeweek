@@ -1,31 +1,29 @@
-@extends('layout.base')
+@extends('layout.new_base')
 
 @section('content')
 
-    <section id="codeweek-error-page" class="codeweek-page">
-
-        <section class="codeweek-banner error">
-            <div class="text">
-                <h2>#EUCodeWeek</h2>
+    <section id="codeweek-error-page">
+        <div class="error-container">
+            <div class="error-robot">
+                <img src="{{ asset('images/404_robot.svg') }}" alt="Error Robot"  class="desktop-robot">
+                <img src="{{ asset('images/404_robot_mobile.svg') }}" alt="Error Robot Mobile" class="mobile-robot">
+            </div>
+            <div class="error-box">
                 <h1>Error!</h1>
+                @if($exception->getMessage())
+                    <p>{{ $exception->getMessage() }}</p>
+                @else
+                    <p>You are not authorized to perform this action!</p>
+                @endif
+                <a href="/">Go back to homepage</a>
             </div>
-            <div class="image">
-                <img src="{{asset('images/robot_error.svg')}}" class="static-image">
-            </div>
-        </section>
-
-        <section class="codeweek-content-wrapper" style="align-items: center;">
-
-            @if($exception->getMessage())
-                <h1>{!! $exception->getMessage() !!}</h1>
-            @else
-                <h1>You are not authorized to perform this action!</h1>
-            @endif
-
-            <a href="/" class="codeweek-action-link-button" style="width: 200px;margin-top: 15px;">GO TO HOMEPAGE</a>
-
-        </section>
+        </div>
+        <div class="footer-ellipse" style="
+            background: url('{{ asset('images/cream_ellipse.svg') }}');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+        </div>
 
     </section>
-
 @endsection

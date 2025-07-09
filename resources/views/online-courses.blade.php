@@ -28,7 +28,7 @@
                                 Online Courses
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                Massive open online courses (MOOCs) aiming to support teachers in effectively incorporating coding and computational thinking into their teaching practice.
+                                @lang('online-courses.online-courses-text')
                             </p>
                             <span class="text-dark-blue font-semibold text-lg ">
                                 <a href="/" class="cursor-pointer text-dark-blue underline mr-1">
@@ -63,11 +63,12 @@
                         EU Code Week Online Courses
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        EU Code Week MOOCs are open to all educators, regardless of their students' age or the subject they teach, and no prior experience or knowledge is required to participate.<br/>
-                        EU Code Week MOOCs offer free and accessible resources, materials, ideas and best practice examples to find inspiration and empower students by introducing coding and computational thinking, emerging technologies, and artificial intelligence safely into the classroom.
+                        @lang('online-courses.online-courses-sub-text1')
+                        <br/>
+                        @lang('online-courses.online-courses-sub-text2')
                     </p>
                     <p class="text-[#333E48] font-normal leading-[22px] md:leading-[30px] text-[16px] md:text-xl p-0">
-                        Although some of the courses have concluded, the content remains accessible; however, badges and certificates are no longer issued.
+                        @lang('online-courses.online-courses-sub-text3')
                     </p>
                 </div>
             </div>

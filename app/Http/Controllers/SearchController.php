@@ -60,74 +60,46 @@ class SearchController extends Controller
 
     public function searchPOST(EventFilters $filters, Request $request)
     {
-        $events = $this->getEvents($filters);
+        $paginatedEvents = $this->getPaginatedEvents($filters);
 
-        //Log::info($request->input('page'));
         if ($request->input('page')) {
-            $result = [$events];
-        } else {
-            Log::info('no page');
-            $eventsMap = $this->getAllEventsToMap($filters);
-            $result = [$events, $eventsMap];
+            return [$paginatedEvents];
         }
 
-        return $result;
+        $mapData = $this->transformEventsForMap($filters);
+
+        return [$paginatedEvents, $mapData];
     }
 
-    protected function getEvents(EventFilters $filters)
+    protected function getPaginatedEvents(EventFilters $filters)
     {
-
-        $events = Event::where('status', 'like', 'APPROVED')
+        return Event::where('status', 'APPROVED')
             ->filter($filters)
+            ->orderByRaw("start_date > ? desc", [Carbon::today()])
             ->orderBy('start_date')
-            ->get()
-            ->groupBy(function ($event) {
-                if ($event->start_date <= Carbon::today()) {
-                    return 'past';
-                }
-
-                return 'future';
-            });
-
-        if (is_null($events->get('future')) || is_null($events->get('past'))) {
-            return $events->flatten()->paginate(12);
-        }
-
-        return $events->get('future')->merge($events->get('past'))->paginate(12);
+            ->paginate(12);
     }
 
-    protected function getAllEventsToMap(EventFilters $filters)
+    protected function transformEventsForMap(EventFilters $filters)
     {
-
         $flattened = Arr::flatten($filters->getFilters());
         $filtered = array_filter($flattened, fn($v) => $v !== null && $v !== '');
-        $composed_key = implode(',', $filtered);
+        $composed_key = 'map_' . implode(',', $filtered);
 
-        if (empty($composed_key)) {
-            Log::info('Skipping cache due to empty composed_key');
-            return Event::where('status', 'APPROVED')
+        return Cache::remember($composed_key, 300, function () use ($filters) {
+            $grouped = [];
+
+            Event::select('id', 'geoposition', 'country_iso') // Only required fields
+                ->where('status', 'APPROVED')
                 ->filter($filters)
-                ->get()
-                ->groupBy('country');
-        }
+                ->cursor()
+                ->each(function ($event) use (&$grouped) {
+                    $transformed = app(\App\Http\Transformers\EventTransformer::class)->transform($event);
+                    $country = $transformed['country'] ?? 'unknown';
+                    $grouped[$country][] = $transformed;
+                });
 
-        $value = Cache::get($composed_key, function () use ($composed_key, $filters) {
-            Log::info("Building cache [{$composed_key}]");
-            $events = Event::where('status', 'like', 'APPROVED')
-                ->filter($filters)
-                ->get();
-
-            $events = $this->eventTransformer->transformCollection($events);
-
-            $events = $events->groupBy('country');
-
-            Cache::put($composed_key, $events, 5 * 60);
-
-            return $events;
+            return collect($grouped);
         });
-
-        Log::info("Serving from cache [{$composed_key}]");
-
-        return $value;
     }
 }
