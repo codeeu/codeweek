@@ -11,10 +11,6 @@
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
-
-@section('content')
-    <section id="codeweek-get-involved" class="font-['Blinker'] overflow-hidden">
-        <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
             <style>
                 @media (min-width: 768px) {
                     .hero-image {
@@ -22,6 +18,9 @@
                     }
                 }
             </style>
+@section('content')
+    <section id="codeweek-contact-us" class="font-['Blinker'] overflow-hidden">
+        <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
             <div class="relative w-full transition-all">
                 <div
                     class="relative flex flex-col justify-end w-full overflow-hidden md:p-0 md:flex-row md:items-center h-[760px]">

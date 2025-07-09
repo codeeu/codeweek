@@ -13,13 +13,6 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-       <style>
-       @media (min-width: 768px) {
-            .hero-image {
-                clip-path: ellipse(70% 120% at 70% -2%);
-            }
-        }
-        </style>
 @section('content')
     <section id="codeweek-contact-page" class="font-['Blinker'] overflow-hidden">
        <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
