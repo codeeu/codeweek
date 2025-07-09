@@ -15,17 +15,16 @@
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
-
+  <style>
+  @media (min-width: 768px) {
+    .hero-image {
+        clip-path: ellipse(70% 120% at 70% -2%);
+    }
+  }
+  </style>
 @section('content')
     <section id="codeweek-get-involved" class="font-['Blinker'] overflow-hidden">
        <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
-       <style>
-       @media (min-width: 768px) {
-            .hero-image {
-                clip-path: ellipse(70% 120% at 70% -2%);
-            }
-        }
-        </style>
             <div class="relative w-full transition-all">
                 <div
                     class="relative flex flex-col justify-end w-full overflow-hidden md:p-0 md:flex-row md:items-center h-[760px]">

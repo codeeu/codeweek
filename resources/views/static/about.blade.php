@@ -9,13 +9,6 @@
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-@section('content')
-    <section id="codeweek-about-page" class="font-['Blinker'] overflow-hidden">
-       <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
        <style>
        @media (min-width: 768px) {
             .hero-image {
@@ -23,6 +16,13 @@
             }
         }
         </style>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+@section('content')
+    <section id="codeweek-about-page" class="font-['Blinker'] overflow-hidden">
+       <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
             <div class="relative w-full transition-all">
                 <div
                     class="relative flex flex-col justify-end w-full overflow-hidden md:p-0 md:flex-row md:items-center h-[760px]">
