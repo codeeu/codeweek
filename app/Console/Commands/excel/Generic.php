@@ -42,7 +42,7 @@ class Generic extends Command
 
         Excel::import(
             new GenericEventsImport(),
-            'pauline-2023.xlsx',
+            'example.xlsx',
             'excel'
         );
     }

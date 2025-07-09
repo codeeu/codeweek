@@ -560,8 +560,16 @@ header .lang-menu .menu-dropdown ul li a{
         padding-bottom: 40px;
 
         > li {
+          display: flex;
+          align-items: center;
+          gap: 12px;
           margin-top: 24px;
           padding: 0;
+
+          > svg, > img {
+            width: 16px;
+            height: 16px;
+          }
 
           > a {
             padding: 0;

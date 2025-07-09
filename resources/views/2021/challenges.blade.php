@@ -27,7 +27,7 @@
                                 Challenges
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
-                                A collection of activities that you can do on your own, in the classroom, with colleagues or friends.
+                                @lang('challenges.challenges-text')
                             </p>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
@@ -52,13 +52,13 @@
             <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        You would like to participate in the EU Code Week but do not really have an idea of what to organise?
+                        @lang('challenges.challenges-sub-title')
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        Look no further! Along with EU Code Week partners, we have designed a selection of easy-to-do challenges with concrete examples of how to use them in a classroom or group. There are also guidelines on how to complete the challenges, but you can adapt them so that they suit the needs, interests and age of your participants.
+                        @lang('challenges.challenges-sub-text1')
                     </p>
                     <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                        You can use whatever tools and technologies you like, but we recommend open-source resources. Choose one or several challenges, adapt it to your group or your classroom, and share the results on Instagram to encourage even more colleagues and friends to join the EU Code Week fun!
+                        @lang('challenges.challenges-sub-text2')
                     </p>
                 </div>
             </div>

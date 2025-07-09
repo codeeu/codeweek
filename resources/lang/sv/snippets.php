@@ -43,4 +43,7 @@ return [
         8 => 'Se Cristiana Lucaci, ambassadör för Rumänien, förklara varför Code Week är tacksam mot sina deltagare',
     ],
 
+     'learn_and_teach_1' => 'Ett förråd av resurser för att starta eller fortsätta din kodningsresa och utveckla digitala och tekniska färdigheter – allt tillgängligt utan kostnad.',
+    'learn_and_teach_2' => 'Kodning och programmering är nyckelkompetenser som blir alltmer efterfrågade inom alla områden, och EU Code Week vill stödja dig i din undervisning och ditt lärande! Bläddra i vårt arkiv och hitta den perfekta resursen för att börja eller fortsätta din kodningsresa. Alla dessa resurser är kostnadsfria. Glöm inte att du kan filtrera din sökning efter titel, resurstyp, färdighetsnivå, programmeringsspråk, ämne, kategori och språk.',
+
 ];

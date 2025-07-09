@@ -1,5 +1,6 @@
 import './bootstrap';
 import { createApp } from 'vue';
+import ActivityForm from './components/activity-form/index.vue';
 import ResourceForm from './components/ResourceForm.vue';
 import ResourceCard from './components/ResourceCard.vue';
 import ResourcePill from './components/ResourcePill.vue';
@@ -15,7 +16,12 @@ import PictureForm from "./components/PictureForm.vue";
 import Flash from "./components/Flash.vue";
 import InputTags from "./components/InputTags.vue";
 import ReportEvent from "./components/ReportEvent.vue";
+import EventCard from "./components/EventCard.vue";
+import EventDetail from "./components/EventDetail.vue";
 import SearchPageComponent from "./components/SearchPageComponent.vue";
+import MatchMakingToolForm from "./components/matchmaking/MatchMakingToolForm.vue";
+import ToolCard from "./components/matchmaking/ToolCard.vue";
+import ToolDetailCard from "./components/matchmaking/ToolDetailCard.vue";
 
 // import { createI18n } from 'vue-i18n';
 // import Locale from './vue-i18n-locales.generated';
@@ -34,6 +40,7 @@ app.use(i18nVue, {
         return await langs[`../lang/${lang}.json`]();
     }
 })
+app.component('ActivityForm', ActivityForm);
 app.component('ResourceForm', ResourceForm);
 app.component('ResourceCard', ResourceCard);
 app.component('ResourcePill', ResourcePill);
@@ -52,4 +59,9 @@ app.component('InputTags', InputTags);
 app.component('SearchPageComponent', SearchPageComponent);
 app.component('AvatarForm', AvatarForm);
 app.component('PartnerGallery', PartnerGallery);
+app.component('MatchMakingToolForm', MatchMakingToolForm);
+app.component('ToolCard', ToolCard);
+app.component('ToolDetailCard', ToolDetailCard);
+app.component('EventCard', EventCard);
+app.component('EventDetail', EventDetail);
 app.mount("#app");

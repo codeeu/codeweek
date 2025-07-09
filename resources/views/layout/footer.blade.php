@@ -1,4 +1,14 @@
-<footer class="border-t-[3px] border-primary bg-white">
+@php
+    $hideStickyFooterOnPages = [
+      'activities-locations',
+      'add',
+      'login',
+      'register',
+      'password/reset',
+    ];
+@endphp
+
+<footer id="page-footer" class="border-t-[3px] border-primary bg-white">
     <div class="py-10 md:py-16 border-b">
         <div class="codeweek-container-lg flex flex-col xl:flex-row xl:justify-between">
             <div class="flex flex-col justify-between">
@@ -25,6 +35,11 @@
                             <img src="/images/social/facebook.svg" alt="Facebook" />
                         </a>
                     </div>
+                     <div class="flex gap-[22px] my-10">
+                        <a class="cookweek-link hover-underline" href="mailto:info@codeweek.eu" target="_blank" rel="noreferer, noopener">
+                            info@codeweek.eu 
+                        </a>
+                      </div>
                 </div>
                 <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg" class="mb-10 xl:mb-0">
             </div>
@@ -32,7 +47,7 @@
             <div class="grid md:grid-cols-3 gap-8 xl:gap-[120px]">
                 <div>
                     <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">@lang('footer.about_us')</p>
-                    <ul class="m-0 p-0">
+                    <ul class="p-0 m-0">
                         <li class="mb-4">
                             <a href="/about" class="cookweek-link hover-underline">@lang('footer.about_code_week')</a>
                         </li>
@@ -55,7 +70,7 @@
                 </div>
                 <div>
                     <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">@lang('footer.quick_links')</p>
-                    <ul class="m-0 p-0">
+                    <ul class="p-0 m-0">
                         <li class="mb-4">
                             <a href="/register" class="cookweek-link hover-underline">@lang('footer.register')</a>
                         </li>
@@ -69,13 +84,13 @@
                             <a href="/blog" class="cookweek-link hover-underline">@lang('footer.news')</a>
                         </li>
                         <li class="mb-4">
-                            <a href="https://mailp.ro/f/OCxYWv" target="_blank" class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
+                            <a href="https://forms.mailpro.com/l3086a9a3-9dc5-4160-ab12-71a0f34d3f07" target="_blank" class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <p class="font-normal font-['Blinker'] text-xl leading-[30px] mb-6 p-0">@lang('footer.educational_resources')</p>
-                    <ul class="m-0 p-0">
+                    <ul class="p-0 m-0">
                         <li class="mb-4">
                             <a href="/resources/CodingAtHome" class="cookweek-link hover-underline">@lang('footer.coding_home')</a>
                         </li>
@@ -91,16 +106,19 @@
                         <li class="mb-4">
                             <a href="/challenges" class="cookweek-link hover-underline">@lang('footer.challenges')</a>
                         </li>
-                        <li>
+                        <li class="mb-4">
                             <a href="/hackathons" class="cookweek-link hover-underline">@lang('footer.hackathons')</a>
+                        </li>
+                        <li>
+                            <a href="/matchmaking-tool" class="cookweek-link hover-underline">Matchmaking Toolkit</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="codeweek-container-lg pt-8 pb-20 md:pb-8 xl:py-4 flex flex-col xl:flex-row gap-8 justify-between">
-        <ul class="m-0 p-0 flex-shrink-0 flex flex-col items-start xl:items-center xl:flex-row gap-4 xl:gap-10">
+    <div class="flex flex-col gap-8 justify-between pt-8 pb-20 codeweek-container-lg md:pb-8 xl:py-4 xl:flex-row">
+        <ul class="flex flex-col flex-shrink-0 gap-4 items-start p-0 m-0 xl:items-center xl:flex-row xl:gap-10">
             <li>
                 <a href="/privacy" class="cookweek-link hover-underline !text-sm">@lang('footer.privacy_policy')</a>
             </li>
@@ -125,14 +143,16 @@
         id="scroll-top-btn"
         class="fixed z-[100] -bottom-2 hover:bottom-0 right-[20px] bg-yellow hover:bg-primary p-3 pb-4 md:p-4 md:pb-6 rounded-t-full duration-300 cursor-pointer"
     >
-        <img class="icon-rotate-270 w-6 h-6 md:w-8 md:h-8" src="/images/arrow-up-icon.svg" />
+        <img class="w-6 h-6 icon-rotate-270 md:w-8 md:h-8" src="/images/arrow-up-icon.svg" />
     </div>
 
-    <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
-        <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="{{ Auth::check() ? '/add' : '/login' }}">
-            <span class="text-[16px] leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
-        </a>
-    </div>
+    @if (!collect($hideStickyFooterOnPages)->contains(fn($path) => request()->is($path)))
+        <div id="footer-scroll-activity" class="fixed md:hidden bottom-0 left-0 border-t-2 border-primary flex justify-center py-4 px-[44px] w-full bg-white z-[99]">
+            <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="{{ Auth::check() ? '/add' : '/login' }}">
+                <span class="text-base leading-7 font-semibold text-[#20262C]">@lang('menu.register_activity')</span>
+            </a>
+        </div>
+    @endif
 </footer>
 
 @push('scripts')
@@ -150,10 +170,12 @@
   window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > 0) {
-      scrollFooterActivity.classList.add('visible');
-    } else {
-      scrollFooterActivity.classList.remove('visible');
+    if (scrollFooterActivity) {
+      if (scrollTop > 0) {
+        scrollFooterActivity.classList.add('visible');
+      } else {
+        scrollFooterActivity.classList.remove('visible');
+      }
     }
   });
 </script>
