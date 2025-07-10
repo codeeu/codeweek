@@ -1,20 +1,13 @@
 <template>
-  <div class="codeweek-user-avatar">
-    <div class="name">
-      <h1>{{ user.fullName }}</h1>
+  <div class="flex flex-col tablet:fex-row tablet:items-center gap-6 tablet:gap-14">
+    <div>
+      <img :src="avatar" class="w-40 h-40 rounded-full border-4 border-solid border-dark-blue-300">
     </div>
-    <div class="avatar">
-      <div class="actions">
-        <form v-if="canUpdate" method="POST" enctype="multipart/form-data">
-          <image-upload name="avatar" class="mr-1" @loaded="onLoad"></image-upload>
-        </form>
-      </div>
-      <img :src="avatar" class="codeweek-avatar-image">
-      <div style="display: flex;align-items: flex-end;margin-left: -35px;">
-        <button class="codeweek-image-button" @click="remove" v-show="hasAvatar">
-          <img src="/images/trash.svg">
-        </button>
-      </div>
+    <div>
+      <h1 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat'] mb-6">{{ user.fullName }}</h1>
+      <p class="text-xl font-normal text-white p-0 max-md:max-w-full max-w-[864px] mb-10 tablet:mb-6">
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+      </p>
     </div>
   </div>
 </template>
