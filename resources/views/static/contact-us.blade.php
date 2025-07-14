@@ -39,8 +39,7 @@
                                     </h1>
                                     <p
                                         class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                                        consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                                        We love hearing from the Code Week community — questions, ideas, feedback, or even just a quick hello. Let’s get to know you! 
                                     </p>
                                 </div>
                             </div>
@@ -65,26 +64,13 @@
             <div class="w-full max-w-[880px] gap-2">
                 <h2
                     class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                    Get in touch
+                     We’re here to help
                 </h2>
                 <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                </p>
-                <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                </p>
-                <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                   Need help planning your activity? Not sure where to start? Our team is here to guide you every step of the way, from finding resources to getting your event online.
                 </p>
             </div>
         </div>
-        <div class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-40 w-28 md:w-72 h-28 md:h-72 bg-[#FFEF99] rounded-full hidden lg:block"
-            style="transform: translate(-16px, -24px)"></div>
-        <div class="animation-element move-background duration-[1.5s] absolute z-0 lg:-bottom-20 xl:-bottom-36 right-40 w-28 h-28 hidden lg:block bg-[#FFEF99] rounded-full"
-            style="transform: translate(-16px, -24px)"></div>
     </section>
     <section class="overflow-hidden relative">
         <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
