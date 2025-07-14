@@ -27,6 +27,7 @@ use App\Http\Controllers\BadgesController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\Codeweek4AllController;
 use App\Http\Controllers\CodingAtHomeController;
+use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\CommunityController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\EventController;
@@ -41,6 +42,7 @@ use App\Http\Controllers\LeadingTeachersSignup;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\MailTemplateController;
 use App\Http\Controllers\MapController;
+use App\Http\Controllers\MatchMakingToolController;
 use App\Http\Controllers\OnlineEventsController;
 use App\Http\Controllers\ParticipationController;
 use App\Http\Controllers\PendingEventsController;
@@ -204,6 +206,8 @@ Route::get('dream-jobs-in-digital/{role}', [StaticPageController::class, 'static
 
 Route::get('/get-involved', [StaticPageController::class, 'static'])
      ->name('get-involved');
+Route::get('/contact-us', [StaticPageController::class, 'static'])
+     ->name('contact-us');
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
 Route::get(
@@ -301,7 +305,7 @@ Route::get(
     '/training/making-and-coding',
     [StaticPageController::class, 'static']
 )->name('training.module-22'); */
-
+Route::post('/contact-submit', [ContactFormController::class, 'submit'])->name('contact.submit');
 Route::get('/resources/CodingAtHome', [CodingAtHomeController::class, 'show'])->name(
     'coding@home'
 );
@@ -395,7 +399,13 @@ Route::get('/resources/learn-and-teach', [ResourcesController::class, 'all'])->n
 Route::post('/resources/search', [SearchResourcesController::class, 'search'])->name(
     'search_resources'
 );
-
+Route::get('/matchmaking-tool', [MatchMakingToolController::class, 'index'])->name(
+    'matchmaking_tool'
+);
+Route::post('/matchmaking-tool/search', [MatchMakingToolController::class, 'searchPOST'])->name('search_matchprofiles');
+Route::get('/matchmaking-tool/{slug}', [MatchMakingToolController::class, 'show'])->name(
+    'matchmaking_tool_detail'
+);
 //Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources')->middleware('auth');
 //Route::post('/resources/suggest', 'SuggestResourcesController@store')->name('store_suggest_resources')->middleware('auth');
 

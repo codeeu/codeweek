@@ -4,16 +4,12 @@
 @section('description', 'Collaborate with EU Code Week as a partner and help spread digital literacy and coding skills across Europe.')
 @php
     $list = [
-      (object) ['label' => '', 'href' => ''],
+      (object) ['label' => 'EU Code Week Partners & Sponsors', 'href' => ''],
     ];
 @endphp
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
-
-@section('content')
-    <section id="codeweek-sponsors-page" class="font-['Blinker'] overflow-hidden">
-       <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
        <style>
        @media (min-width: 768px) {
             .hero-image {
@@ -21,6 +17,9 @@
             }
         }
         </style>
+@section('content')
+    <section id="codeweek-sponsors-page" class="font-['Blinker'] overflow-hidden">
+       <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
             <div class="relative w-full transition-all">
                 <div
                     class="relative flex flex-col justify-end w-full overflow-hidden md:p-0 md:flex-row md:items-center h-[760px]">
@@ -31,7 +30,7 @@
                             />
                         <div
                             class="flex flex-col-reverse justify-between items-center mx-auto w-full max-md:h-full md:flex-row codeweek-container-lg">
-                            <div class="flex justify-center items-center w-full md:w-1/2">
+                            <div class="flex justify-center items-center w-full max-md:h-[50%] md:w-1/2">
                                 <div
                                     class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-full h-fit relative -top-6">
                                     <h4

@@ -13,9 +13,6 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-@section('content')
-    <section id="codeweek-about-page" class="font-['Blinker'] overflow-hidden">
-       <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
        <style>
        @media (min-width: 768px) {
             .hero-image {
@@ -23,6 +20,9 @@
             }
         }
         </style>
+@section('content')
+    <section id="codeweek-about-page" class="font-['Blinker'] overflow-hidden">
+       <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
             <div class="relative w-full transition-all">
                 <div
                     class="relative flex flex-col justify-end w-full overflow-hidden md:p-0 md:flex-row md:items-center h-[760px]">
@@ -33,7 +33,7 @@
                             />
                         <div
                             class="flex flex-col-reverse justify-between items-center mx-auto w-full max-md:h-full md:flex-row codeweek-container-lg">
-                            <div class="flex justify-center items-center w-full md:w-1/2">
+                            <div class="flex justify-center items-center w-full h-full md:w-1/2 max-md:max-h-[50%] max-md:h-full">
                                 <div
                                     class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-fit h-fit relative -top-6">
                                     <h1
@@ -135,8 +135,7 @@
                                 4 million people in more than 80 countries
                             </h2>
                             <p class="mt-2 !p-0 text-base leading-6 text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                EU Code Week has reached over 4 million participants across 80+ countries — and it’s still growing.
                             </p>
                         </div>
                     </article>
@@ -165,8 +164,7 @@
                                 Average participant 11 years old
                             </h2>
                             <p class="mt-2 !p-0 text-base leading-6 text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                With strong school engagement, Code Week is designed to be fun, accessible and age-appropriate for children and teens.
                             </p>
                         </div>
                     </article>
@@ -189,8 +187,7 @@
                                 49% of participants are women
                             </h2>
                             <p class="mt-2 !p-0 text-base leading-6 text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                We’re proud to champion gender equality in tech by encouraging girls and women to participate and lead.
                             </p>
                         </div>
                     </article>
@@ -214,97 +211,42 @@
                                 88% of Code Week events take part in schools
                             </h2>
                             <p class="mt-2 !p-0 text-base leading-6 text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Most activities are organised by teachers in schools, empowering the next generation from the classroom up.
                             </p>
                         </div>
                     </article>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 gap-10 items-start mt-20 w-full lg:grid-cols-2 max-md:mt-10">
+            <div class="flex flex-wrap items-start mt-20 w-full max-md:mt-10">
                 <div class="flex flex-col justify-center">
                     <p class="text-xl leading-8 text-gray-700">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                        <br />
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem
-                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris.
+                        Anyone can take part by adding their own activity to the map. From workshops to classroom sessions, every event helps make coding more accessible — and brings new communities into the movement.
                     </p>
 
                     <div class="flex flex-col gap-2 items-start mt-6 w-full text-lg font-semibold leading-loose sm:flex-row">
                         <div class="flex gap-2 items-start min-h-12 text-zinc-800">
-                            <button
+                            <a href="/login"
                                 class="btn flex gap-2 justify-center items-center px-10 h-[48px]  bg-primary min-h-12 rounded-[100px] max-md:px-5 w-fit whitespace-nowrap hover:bg-orange-500  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                                 aria-label="Add your activity to Code Week"
                             >
                                 <span class="text-zinc-800">Add your activity</span>
-                            </button>
+                            </a>
                         </div>
 
-                        <div class="flex gap-10 items-start text-blue-800">
-                            <button
-                                class="flex overflow-hidden flex-col justify-center px-6 h-[48px] whitespace-nowrap rounded-3xl border-2 border-blue-800 border-solid btn max-md:px-5 w-fit hover:bg-secondary hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800"
+                        <div class="flex gap-10 items-start group">
+                            <a href="/events"
+                                class="flex overflow-hidden flex-col justify-center px-6 h-[48px] whitespace-nowrap rounded-3xl border-2 border-blue-800 border-solid btn max-md:px-5 w-fit hover:bg-secondary hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 text-blue-800 hover:text-white"
                                 aria-label="Show activity map"
                             >
-                                <div class="flex gap-2 items-center">
+                                <span class="flex gap-2 items-center text-blue-800 hover:text-white group-hover:text-white">
                                    Show activity map
-                                    <img
-                                        src="https://cdn.builder.io/api/v1/image/assets/f35586c581c84ecf82b6de32c55ed39e/8fc3296536a7475f67194943256e39f6f12eb8cc?placeholderIfAbsent=true"
-                                        alt=""
-                                        class="object-contain w-4 h-4 shrink-0"
-                                        aria-hidden="true"
-                                    />
-                                </div>
-                            </button>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-sm font-semibold leading-none text-black">
-                    <div class="flex flex-col justify-center bg-white rounded-[32px] p-4">
-                            <div class="flex relative gap-2 items-center py-8 mb-0" role="tablist" aria-label="Map view options">
-                                <button
-                                    class="flex gap-2 justify-center items-center px-4 py-1 text-white whitespace-nowrap bg-blue-800 rounded-2xl btn w-fit hover:bg-hover hover:text-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800"
-                                    role="tab"
-                                    aria-selected="true"
-                                    aria-controls="activities-view"
-                                >
-                                    <span>Activities</span>
-                                </button>
-
-                                <button
-                                    class="flex gap-2 justify-center items-center px-4 py-1 whitespace-nowrap bg-cyan-100 rounded-2xl btn w-fit hover:bg-hover hover:text-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-100"
-                                    role="tab"
-                                    aria-selected="false"
-                                    aria-controls="participants-view"
-                                >
-                                    <span>Participants</span>
-                                </button>
-
-                                <button
-                                    class="flex gap-2 justify-center items-center px-4 py-1 whitespace-nowrap bg-cyan-100 rounded-2xl btn w-fit hover:bg-hover hover:text-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-100"
-                                    role="tab"
-                                    aria-selected="false"
-                                    aria-controls="countries-view"
-                                >
-                                    <span>Countries</span>
-                                </button>
-                            </div>
-                        <div class="flex relative flex-col items-start w-full rounded-2xl">
-                            <img
-                                src="https://placehold.co/600x400"
-                                alt="Code Week activity map showing global participation"
-                                class="object-cover  min-h-[453px] relative inset-0 rounded-2xl size-full"
-                            />
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -391,15 +333,7 @@
                             Run by volunteers
                         </h4>
                         <p class="mt-6 text-xl leading-8 text-gray-700 max-md:max-w-full">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris.
+                            EU Code Week is powered by a passionate volunteer community, from schoolteachers and youth workers to digital mentors and ambassadors. Across Europe, more than 450 Leading Teachers support schools, coordinate activities, and help bring coding to life for learners of all ages.
                         </p>
                     </div>
                     <img
@@ -420,15 +354,9 @@
                             Why coding?
                         </h4>
                         <p class="mt-6 text-xl leading-8 text-gray-700 max-md:max-w-full">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris.
+                           Coding is a creative way to solve problems, express ideas, and build the world you want to see. Digital skills are essential in today’s world, and coding helps people of all ages turn imagination into action, whether that’s building apps, designing games, programming robots or tackling real-world challenges.
+It unlocks collaboration, critical thinking and confidence, while opening doors in education, careers, and everyday life.
+
                         </p>
                     </div>
                 </article>
@@ -441,19 +369,13 @@
 
             <div class="py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mx-auto w-full max-w-[1428px] px-5">
                 <div class="flex-1 min-w-60">
-                    <h2 id="commission-heading" class="text-4xl font-medium leading-10 text-blue-800 max-md:max-w-full">
+                    <h4 id="commission-heading" class="text-4xl font-medium leading-10 text-blue-800 max-md:max-w-full">
                         Supported by the European Commission
-                    </h2>
+                    </h4>
                     <p class="mt-6 text-xl leading-8 text-gray-700 max-md:max-w-full">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris.
+                       EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. Since then, the European Commission has supported Code Week as part of its strategy for a Digital Single Market.
+                       Through the Digital Education Action Plan, the Commission encourages schools across Europe to take part and promotes digital skills as a key pillar of innovation and inclusion.
+
                     </p>
                 </div>
                 <div class="min-w-60">
@@ -477,15 +399,7 @@
                         Schools
                     </span>
                     <p class="mt-6 text-xl leading-8 text-gray-700 max-md:max-w-full">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris.
+                        Schools are the beating heart of EU Code Week. Teachers play a key role in introducing students to coding, organising events, and sparking creativity in the classroom. With ready-made resources and support from the Code Week community, educators can easily bring coding into any subject, and help learners gain vital digital skills in a fun and inclusive way.
                     </p>
                 </div>
                 <img
@@ -552,8 +466,7 @@
                 Partners and Sponsors
             </h4>
             <p class="mt-6 text-xl text-gray-700 max-md:max-w-full">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
+                EU Code Week is guided by the Code4Europe Consortium — a collaboration of more than 40 educational and tech partners across 20 countries. Together, we support the growth of Code Week, strengthen local and national outreach, and build a more connected, digital future for Europe.
             </p>
         </div>
     </div>
