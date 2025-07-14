@@ -24,7 +24,7 @@
 
                         <a
                             onclick="return confirm('Are you actually intending to delete your account?')"
-                            class="w-full md:w-fit flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-2.5 px-6 font-semibold text-base transition-all duration-300 group"
+                            class="w-full md:w-fit flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-2.5 px-6 font-semibold text-base transition-all duration-300 group mt-8 tablet:mt-0"
                             href="{{route('delete_user')}}"
                         >
                             <span>Delete my profile</span>
