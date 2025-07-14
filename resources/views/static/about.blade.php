@@ -218,7 +218,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 gap-10 items-start mt-20 w-full lg:grid-cols-2 max-md:mt-10">
+            <div class="flex flex-wrap items-start mt-20 w-full max-md:mt-10">
                 <div class="flex flex-col justify-center">
                     <p class="text-xl leading-8 text-gray-700">
                         Anyone can take part by adding their own activity to the map. From workshops to classroom sessions, every event helps make coding more accessible — and brings new communities into the movement.
