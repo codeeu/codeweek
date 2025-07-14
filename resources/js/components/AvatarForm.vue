@@ -1,20 +1,23 @@
 <template>
-  <div class="codeweek-user-avatar">
-    <div class="name">
-      <h1>{{ user.fullName }}</h1>
-    </div>
-    <div class="avatar">
-      <div class="actions">
-        <form v-if="canUpdate" method="POST" enctype="multipart/form-data">
+  <div class="flex flex-col tablet:flex-row tablet:items-center gap-6 tablet:gap-14">
+    <div class="flex">
+      <div class="relative">
+        <img :src="avatar" class="w-40 h-40 rounded-full border-4 border-solid border-dark-blue-300">
+        <form v-if="canUpdate" method="POST" enctype="multipart/form-data" class="absolute bottom-0 left-0">
           <image-upload name="avatar" class="mr-1" @loaded="onLoad"></image-upload>
         </form>
+        <div style="display: flex;align-items: flex-end;margin-left: -35px;">
+          <button class="absolute !bottom-0 !right-0 flex justify-center items-center !h-10 !w-10 !p-0 bg-[#FE6824] rounded-full !border-2 !border-solid !border-white" @click="remove" v-show="hasAvatar">
+            <img class="w-5 h-5" src="/images/trash.svg">
+          </button>
+        </div>
       </div>
-      <img :src="avatar" class="codeweek-avatar-image">
-      <div style="display: flex;align-items: flex-end;margin-left: -35px;">
-        <button class="codeweek-image-button" @click="remove" v-show="hasAvatar">
-          <img src="/images/trash.svg">
-        </button>
-      </div>
+    </div>
+    <div>
+      <h1 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat'] mb-6">{{ user.fullName }}</h1>
+      <p class="text-xl font-normal text-white p-0 max-md:max-w-full max-w-[864px]">
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+      </p>
     </div>
   </div>
 </template>
@@ -37,6 +40,7 @@ export default {
 
   computed: {
     canUpdate() {
+      console.log('user', this.user);
       return this.$authorize(user => user.id === this.user.id);
     },
     hasAvatar() {
