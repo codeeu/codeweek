@@ -11,8 +11,7 @@ return [
     'guide' => 'Check out our tutorials and trainings available in 29 languages to get ready to organise activities where young people learn coding and computational thinking.',
 
     'when-text' => 
-                    '<p> EU Code Week is a dynamic grassroots movement that empowers people of all ages to explore coding, creativity, and problem-solving. It breaks down barriers to digital skills, making programming more accessible, visible, and inclusive. From classrooms to community spaces, it connects educators, students and tech enthusiasts, bringing ideas to life through digital innovation, and fostering collaboration across Europe.
-                    </p>',
+                    'EU Code Week is a dynamic grassroots movement that empowers people of all ages to explore coding, creativity, and problem-solving. It breaks down barriers to digital skills, making programming more accessible, visible, and inclusive. From classrooms to community spaces, it connects educators, students and tech enthusiasts, bringing ideas to life through digital innovation, and fostering collaboration across Europe.',
 
     'codeweek_in_numbers-text' => 
                                     '<p>What began in 2013 as a small, grassroots initiative has grown into a year-round movement reaching millions. EU Code Week is now a continuous initiative, with thousands of activities taking place throughout the year in Europe and beyond. The two-week event each October is the culmination of these efforts — a celebration of a community-driven push to make coding, digital creativity and STEM education accessible to all.
@@ -61,12 +60,12 @@ return [
                             <p>You can also stay up to date with local community initiaives and international developments through our <a href="/blog/">blog</a>.
                             </p>',
 
-    'partners_and_sponsors' => 'Meet our partners and sponsors',
+                            'partners_and_sponsors' => 'Meet our partners and sponsors',
 
-    'about_banner_title'=>'Empowering Europe with digital skills',
-    'about_banner_content'=>'EU Code Week sparks creativity, problem-solving, and collaboration, making coding and digital skills accessible to everyone, all year round.',
-    'partners_and_sponsors-title' => 'The Code4Europe Consortium: Driving the future of Code Week',
-    'partners_and_sponsors-content'=>
+                                    'about_banner_title'=>'Empowering Europe with digital skills',
+                                    'about_banner_content'=>'EU Code Week sparks creativity, problem-solving, and collaboration, making coding and digital skills accessible to everyone, all year round.',
+                                    'partners_and_sponsors-title' => 'The Code4Europe Consortium: Driving the future of Code Week',
+                                    'partners_and_sponsors-content'=>
                                         '<p>EU Code Week is now guided by the Code4Europe Consortium, consisting of over 40 educational and tech industry partners from 20 countries. Together, we ensure Code Week’s continued growth, expanding digital education and fostering collaboration across Europe.
                                         </p>
                                         <p>With a strong community of educators, ambassadors, and industry leaders, we’re shaping the future of coding — making it more accessible, inclusive and impactful.

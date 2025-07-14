@@ -38,8 +38,7 @@
                                     </h1>
                                     <p
                                         class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                                        consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                                        It’s easy to take part in Code Week. If you’re an educator, student, parent or community leader you can make a big impact. You can host your own activity, join one nearby, explore learning resources, or connect with others across Europe.
                                     </p>
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                         href="/guide">
@@ -67,15 +66,14 @@
             <div class="w-full max-w-[880px] gap-2">
                 <h2
                     class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                    How you can participate and make a difference
+                    Join the movement for digital creativity
                 </h2>
                 <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                   The beauty of Code Week is that there’s no single way to take part. Whether you run an event or join one, you're helping grow a movement built on creativity, inclusion and digital skills.
+
                 </p>
                 <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                   Spread the joy of coding, connect with like-minded people, and empower others to shape their digital future. Every action makes a difference.
                 </p>
             </div>
         </div>
@@ -100,26 +98,19 @@
                         <div class="flex-1 max-w-full min-w-60">
                             <h3
                                 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                                Ways to engage with EU Code Week
+                               How to get started with Code Week
                             </h3>
                             <p class="mt-6 max-w-full text-xl leading-8 text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem
-                                ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
+                                Whether you’re curious about coding, passionate about teaching, or just want to try something new, there’s a place for you in EU Code Week.
                                 <br><br>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                You don’t need to be an expert. From hosting events to sharing resources, there are plenty of ways to contribute to this fun, open and collaborative movement.
                             </p>
                         </div>
 
                         <!-- Right Column - Engagement Options -->
                         <div class="min-w-60 w-full max-w-[674px]">
                             <!-- First Row of Icons -->
-                            <div class="grid grid-cols-1 gap-10 items-center mb-12 w-full md:grid-cols-2 max-md:mb-10">
+                            <div class="grid grid-cols-1 gap-10 items-start mb-12 w-full md:grid-cols-2 max-md:mb-10">
                                 <!-- Connect with Community -->
                                 <article class="flex flex-col justify-center engagement-card">
                                     <div class="engagement-icon flex gap-2.5 items-center p-7 bg-[#FFD700] h-[120px] rounded-[60px] w-[120px] max-md:px-5 mb-2.5"
@@ -132,12 +123,11 @@
                                         </svg>
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
-                                        <h2 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
+                                        <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
                                             Connect with your local Code Week community
-                                        </h2>
-                                        <p class="text-base leading-6 text-gray-700  !p-0 !p-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </h5>
+                                        <p class="text-base leading-6 text-gray-700 !p-0">
+                                          Find educators, mentors and organisers near you through the Code Week map or national hubs. There’s a whole network ready to support and collaborate.
                                         </p>
                                     </div>
                                 </article>
@@ -166,12 +156,11 @@
                                         </svg>
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
-                                        <h2 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            Register your Code Week activities
-                                        </h2>
+                                        <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
+                                           Register your Code Week activity
+                                        </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                           Planning something? Add it to the Code Week map so others can see it.
                                         </p>
                                     </div>
                                 </article>
@@ -198,12 +187,11 @@
                                         </svg>
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
-                                        <h2 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
+                                        <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
                                             Connect with EU Code Week Ambassadors
-                                        </h2>
+                                        </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                           Ambassadors help coordinate Code Week in their countries. Reach out for support, advice or to join local projects and challenges.
                                         </p>
                                     </div>
                                 </article>
@@ -229,12 +217,11 @@
                                         </svg>
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
-                                        <h2 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
+                                        <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
                                             Share your coding experience and stories
-                                        </h2>
+                                        </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Post photos, videos and stories using <strong>#EUCodeWeek</strong>. Highlight what you’ve learned, celebrate your community, and inspire others to join
                                         </p>
                                     </div>
                                 </article>
@@ -252,7 +239,7 @@
             <div class="flex relative z-10 flex-col gap-12 items-center py-20 codeweek-container-lg md:flex-row-reverse">
                 <div class="flex flex-col flex-1 items-start">
                     <h4 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-4">
-                        Placeholder headline
+                        Planning an activity? Here’s what you’ll need:
                     </h4>
                     <div class="flex flex-col w-full md:w-auto">
                         <ul class="w-full">
@@ -262,7 +249,7 @@
                                         aria-hidden="true"></div>
                                 </div>
                                 <span class="flex-1 text-xl leading-8 text-gray-700 shrink basis-0 max-md:max-w-full">
-                                    Lorme ispum dolar </span>
+                                   A group of curious learners and someone to guide the activity (teacher, mentor, parent or volunteer)</span>
                             </li>
 
                             <li class="flex flex-wrap gap-3 items-center mt-6 w-full max-md:max-w-full">
@@ -271,7 +258,7 @@
                                         aria-hidden="true"></div>
                                 </div>
                                 <span class="flex-1 text-xl text-gray-700 shrink basis-0 max-md:max-w-full">
-                                    Lorme ispum dolar </span>
+                                    A space to gather — classroom, library, online… even the kitchen table!</span>
                             </li>
 
                             <li class="flex flex-wrap gap-3 items-center mt-6 w-full max-md:max-w-full">
@@ -280,7 +267,7 @@
                                         aria-hidden="true"></div>
                                 </div>
                                 <span class="flex-1 text-xl text-gray-700 shrink basis-0 max-md:max-w-full">
-                                    Lorme ispum dolar </span>
+                                    Materials — computers, tablets, or offline tools for <a class="cookweek-link hover-underline" href="https://codeweek.eu/blog/unplugged-coding-activities/">unplugged learning</a></span>
                             </li>
 
                             <li class="flex flex-wrap gap-3 items-center mt-6 w-full max-md:max-w-full">
@@ -289,7 +276,7 @@
                                         aria-hidden="true"></div>
                                 </div>
                                 <span class="flex-1 text-xl text-gray-700 shrink basis-0 max-md:max-w-full">
-                                    Lorme ispum dolar </span>
+                                    An idea! Use our <a class="cookweek-link hover-underline" href="/resources/learn-and-teach">learning resources</a> to get started</span>
                             </li>
 
                             <li class="flex flex-wrap gap-3 items-center mt-6 w-full max-md:max-w-full">
@@ -298,9 +285,17 @@
                                         aria-hidden="true"></div>
                                 </div>
                                 <span class="flex-1 text-xl text-gray-700 shrink basis-0 max-md:max-w-full">
-                                    Lorme ispum dolar </span>
+                                    A simple way to track who’s coming (like Google Forms or Eventbrite)</span>
                             </li>
-
+                            <li class="flex flex-wrap gap-3 items-center mt-6 w-full max-md:max-w-full">
+                                <div class="flex gap-2.5 items-center py-2 w-3">
+                                    <div class="flex flex-1 self-stretch my-auto w-3 h-3 bg-orange-500 rounded-full shrink basis-0 fill-orange-500 min-h-3"
+                                        aria-hidden="true"></div>
+                                </div>
+                                <span class="flex-1 text-xl text-gray-700 shrink basis-0 max-md:max-w-full">
+                                   And finally, add your activity to the <a class="cookweek-link hover-underline" href="https://codeweek.eu/events">Code Week map!</a>
+                                    </span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -329,14 +324,11 @@
         <div class="hidden absolute w-full h-full bg-[#410098] xl:block" style="clip-path: ellipse(64% 90% at 50% 90%);">
         </div>
         <div class="relative pt-20 pb-24 codeweek-container-lg md:pt-40 md:pb-28 max-w-[890px]">
-            <h5
+            <h6
                 class="justify-start text-white max-md:text-[22px] text-4xl font-medium font-['Montserrat'] leading-[44px]">
-                Placeholder</h5>
+                Helpful resources</h6>
             <p class="p-0 text-lg font-normal text-white md:text-xl max-md:mt-2 md:mt-8">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor
-                sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                Download official toolkits, explore classroom materials, and customise your activities with templates, logos and guides in 29 languages from our <a class="!text-[#ffffff] underline hover:no-underline" href="/guide">guides page.</a>
             </p>
         </div>
     </section>
