@@ -1,7 +1,7 @@
 <header class="sticky top-0 pt-16 md:pt-12 !px-5 md:!px-0 pb-5 z-[1000] border-b-[3px] border-primary">
-  <div class="codeweek-container-lg flex items-center gap-6">
-      <div id="logo-wrapper" class="relative w-full flex justify-center sm:block sm:w-auto">
-          <a id="primary-menu-trigger" class="absolute sm:static sm:pr-6 -left-6 top-1/2 -translate-y-1/2 sm:translate-y-0" href="/">
+  <div class="flex gap-6 items-center codeweek-container-lg">
+      <div id="logo-wrapper" class="flex relative justify-center w-full sm:block sm:w-auto">
+          <a id="primary-menu-trigger" class="absolute -left-6 top-1/2 -translate-y-1/2 sm:static sm:pr-6 sm:translate-y-0" href="/">
               <img class="menu" src="/images/menu_icon.svg">
               <img class="close hide" src="/images/close_menu_icon.svg">
           </a>
@@ -13,8 +13,8 @@
       <nav id="primary-menu" class="flex-grow font-['Montserrat']">
           <ul class="max-xl:flex max-xl:flex-col max-xl:!items-start max-xl:overflow-auto max-xl:pt-6 main-menu">
               <li class="!pt-16 md:!pt-12 !pb-8 xl:hidden max-xl:w-full">
-                  <div class="relative flex justify-center">
-                    <a id="primary-menu-trigger" class="absolute xl:static left-0 sm:left-3 top-1/2 sm:top-2 -translate-y-1/2 sm:translate-y-0" href="/">
+                  <div class="flex relative justify-center">
+                    <a id="primary-menu-trigger" class="absolute left-0 top-1/2 -translate-y-1/2 xl:static sm:left-3 sm:top-2 sm:translate-y-0" href="/">
                         <img class="close hide" src="/images/close_menu_icon.svg">
                     </a>
                     <a id="logo" href="/">
@@ -53,7 +53,7 @@
               </li>
 
               {{-- search side --}}
-              <li class="main-menu-item xl:hidden w-full">
+              <li class="w-full main-menu-item xl:hidden">
                 <div class="relative w-full">
                   <input
                       class="pl-6 pr-14 py-3 w-full rounded-full border-solid border-2 border-[#A4B8D9] text-[#333E48]"
@@ -98,13 +98,13 @@
                   </a>
                   <ul class="sub-menu">
                       <li class="menu-title max-xl:!hidden">
-                          <a class="flex items-center gap-2"  href="{{route('educational-resources')}}">
+                          <a class="flex gap-2 items-center"  href="{{route('educational-resources')}}">
                               @lang('menu.resources')
                               <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
                           </a>
                       </li>
-                      <li class="flex flex-col xl:flex-row gap-16">
-                          <div class="flex-grow flex flex-col gap-4 mb-1 xl:mb-0 max-xl:w-full">
+                      <li class="flex flex-col gap-16 xl:flex-row">
+                          <div class="flex flex-col flex-grow gap-4 mb-1 xl:mb-0 max-xl:w-full">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg">@lang('menu.resources')</div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('coding@home')}}">@lang('menu.coding@home')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">Podcasts</a></div>
@@ -117,26 +117,26 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="/matchmaking-tool">Matchmaking Toolkit</a></div>
                             </div>
-                            <div class="flex-grow flex flex-col gap-4 max-xl:w-full">
+                            <div class="flex flex-col flex-grow gap-4 max-xl:w-full">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('challenges')}}">@lang('menu.challenges')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">Hackathons</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('treasure-hunt')}}">@lang('menu.treasure-hunt')</a></div>
                           </div>
-                          <div class="relative flex-grow hidden xl:flex flex-col gap-4 w-60 mb-2">
-                              <img class="w-full h-full rounded-lg object-cover" src="/images/homepage/dream-job.png" alt="">
+                          <div class="hidden relative flex-col flex-grow gap-4 mb-2 w-60 xl:flex">
+                              <img class="object-cover w-full h-full rounded-lg" src="/images/homepage/dream-job.png" alt="">
                               <div
-                                  class="absolute w-full h-full top-0 left-0"
+                                  class="absolute top-0 left-0 w-full h-full"
                                   style="background: linear-gradient(180deg, rgba(28, 77, 161, 0) 45.36%, #1C4DA1 66.72%);"
                               ></div>
-                              <div class="absolute w-full bottom-0 left-0 p-4">
-                                  <div class="text-white text-xl font-semibold mb-1">@lang('menu.careers_in_digital')</div>
+                              <div class="absolute bottom-0 left-0 p-4 w-full">
+                                  <div class="mb-1 text-xl font-semibold text-white">@lang('menu.careers_in_digital')</div>
                                   <div class="text-white text-[16px] font-medium mb-2">
                                       Meet our role models and find your dream job
                                   </div>
                                   <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('dream-jobs-in-digital')}}">
-                                    <span class="text-base leading-7 font-semibold text-black normal-case">
+                                    <span class="text-base font-semibold leading-7 text-black normal-case">
                                         See more
                                     </span>
                                   </a>
@@ -193,6 +193,8 @@
                       <li><a class="cookweek-link hover-underline" href="/why-coding">@lang('why-coding.titles.0')</a></li>
                       <li><a class="cookweek-link hover-underline" href="/our-values">@lang('menu.values')</a></li>
                       <li><a class="cookweek-link hover-underline" href="/partners">@lang('about.partners_and_sponsors')</a></li>
+                      <li><a class="cookweek-link hover-underline" href="/get-involved">@lang('footer.get-involved')</a></li>
+                        <li><a class="cookweek-link hover-underline" href="/contact-us">@lang('footer.contact-us')</a></li>
                   </ul>
               </li>
 
@@ -224,8 +226,8 @@
               @endif
 
               {{-- actions --}}
-              <li class="main-menu-item flex-grow flex h-full items-end xl:hidden max-xl:w-full">
-                  <div class="flex flex-col gap-4 items-center w-full pb-12 pt-5">
+              <li class="flex flex-grow items-end h-full main-menu-item xl:hidden max-xl:w-full">
+                  <div class="flex flex-col gap-4 items-center pt-5 pb-12 w-full">
                       @if (Auth::check())
                           <a class="bg-primary hover:bg-hover-orange rounded-full py-2.5 px-6 font-['Blinker'] duration-300 w-full text-center" href="/add?skip=1">
                               <span class="text-[16px] leading-7 font-semibold">@lang('menu.register_activity')</span>
@@ -261,20 +263,20 @@
           @endif
 
           <a class="max-xl:!hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="/add?skip=1">
-              <span class="text-base leading-7 font-semibold text-black normal-case">
+              <span class="text-base font-semibold leading-7 text-black normal-case">
                   @lang('menu.register_activity')
               </span>
           </a>
 
           <div id="tools" class="h-[50px]">
-              <div class="menu-trigger lang-menu relative flex items-center gap-1 cursor-pointer px-2 h-full menu-item">
+              <div class="flex relative gap-1 items-center px-2 h-full cursor-pointer menu-trigger lang-menu menu-item">
                   <a class="cookweek-link hover-underline flex items-center gap-1 !text-[#1C4DA1] !text-[16px] font-semibold font-['Montserrat']" href="javascript:void(null);">
                     {{App::getLocale()}}
                     <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
 
 
-                  <div class="menu-dropdown lang-menu-dropdown absolute top-14">
+                  <div class="absolute top-14 menu-dropdown lang-menu-dropdown">
                       <ul class="lang-sub-menu">
                           @foreach ($locales as $key => $value)
                               <li class="lang-menu-item {{ App::getLocale() === $value ? 'selected' : '' }}">
@@ -296,7 +298,7 @@
         class="fixed left-0 top-[139px] md:top-[123px] z-50 flex flex-col items-center justify-center w-full p-6 h-[calc(100dvh-139px)] md:h-[calc(100dvh-123px)] bg-white font-['Montserrat'] duration-300"
         style="display: none;"
       >
-        <div class="flex-shrink-0 flex justify-end w-full">
+        <div class="flex flex-shrink-0 justify-end w-full">
           <button
             id="search-menu-trigger-hide"
             class="block bg-[#FFD700] hover:bg-[#F95C22] rounded-full p-4 duration-300"
