@@ -53,7 +53,11 @@ class GenerateCertificatesOfParticipation implements ShouldQueue
         $zipUrl = CertificatesHelper::doGenerateCertificatesOfParticipation($names, $this->participation->event_name, $this->participation->event_date);
 
         $this->participation['participation_url'] = $zipUrl;
-        $this->participation['status'] = 'DONE';
+        if ($zipUrl) {
+            $this->participation['status'] = 'DONE';
+        } else {
+            $this->participation['status'] = 'FAILED';
+        }
         $this->participation->save();
     }
 
