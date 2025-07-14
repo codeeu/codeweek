@@ -1,8 +1,9 @@
 <template>
   <div>
     <input id="image" type="file" accept="image/*" @change="onChange" />
-    <label for="image">Choose a file</label>
-    Max size: 1 Mb
+    <label class="!flex justify-center items-center !h-10 !w-10 !p-0 !bg-dark-blue border-2 border-white" for="image">
+      <img class="w-5 h-5" src="/images/edit.svg" />
+    </label>
   </div>
 </template>
 

@@ -63,7 +63,7 @@
                         @endforeach
                     </div>
                     <div>
-                        {{ $events->links('vendor.livewire.pagination') }}
+                        {{ $events->links('vendor.pagination') }}
                     </div>
                 @endif
             </div>
