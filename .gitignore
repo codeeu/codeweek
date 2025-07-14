@@ -29,3 +29,4 @@ vue-i18n-locales.generated.js
 /.phpunit.result.cache
 vite.config.js
 .DS_Store
+resources/excel/example.xlsx
