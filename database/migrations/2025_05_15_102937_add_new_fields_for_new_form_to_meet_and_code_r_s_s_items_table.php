@@ -32,7 +32,19 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('meet_and_code_r_s_s_items', function (Blueprint $table) {
-            //
+            $table->dropColumn([
+                'activity_format',
+                'duration',
+                'recurring_event',
+                'recurring_type',
+                'males_count',
+                'females_count',
+                'other_count',
+                'is_extracurricular_event',
+                'is_standard_school_curriculum',
+                'ages',
+                'is_use_resource',
+            ]);
         });
     }
 };

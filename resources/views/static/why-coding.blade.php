@@ -15,17 +15,16 @@
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
-
+  <style>
+  @media (min-width: 768px) {
+    .hero-image {
+        clip-path: ellipse(70% 120% at 70% -2%);
+    }
+  }
+  </style>
 @section('content')
     <section id="codeweek-get-involved" class="font-['Blinker'] overflow-hidden">
        <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
-       <style>
-       @media (min-width: 768px) {
-            .hero-image {
-                clip-path: ellipse(70% 120% at 70% -2%);
-            }
-        }
-        </style>
             <div class="relative w-full transition-all">
                 <div
                     class="relative flex flex-col justify-end w-full overflow-hidden md:p-0 md:flex-row md:items-center h-[760px]">
@@ -36,7 +35,7 @@
                             />
                         <div
                             class="flex flex-col-reverse justify-between items-center mx-auto w-full max-md:h-full md:flex-row codeweek-container-lg">
-                            <div class="flex justify-center items-center w-full md:w-1/2">
+                            <div class="flex justify-center items-center w-full h-full md:w-1/2 max-md:max-h-[50%] max-md:h-full">
                                 <div
                                     class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-fit h-fit relative -top-6">
                                     <h1
@@ -44,7 +43,7 @@
                                          @lang('why-coding.titles.0')
                                     </h1>
                                     <p class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                       Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                                     Because it’s not just about technology — it’s about unlocking imagination, solving problems, and shaping the future. Coding helps us understand the digital world and gives everyone the power to build something new.
                                     </p>
                                     <a class="inline-block bg-primary  rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300 hover:bg-hover-orange" href="/guide">
                                     Get involved                                </a>
@@ -74,7 +73,7 @@
                 </h2>
                  {{-- Now loop through the rediving texts if you want --}}
                 @for($j =  count($titles); $j < count($texts); $j++)
-                    <p class="text-[#20262C] font-normal text-lg md:text-2xl mb-6">
+                    <p class="text-[#20262C] font-normal text-lg md:text-2xl mb-2">
                         @lang("why-coding.texts.{$j}")
                     </p>
                 @endfor
@@ -120,7 +119,7 @@
               <div class="flex flex-col justify-center items-start p-16 w-full bg-transparent tab-panel" role="tabpanel" id="tab-panel-1" aria-labelledby="tab-1">
                 <div class="flex flex-col w-full max-w-[819px]">
                   <h2 class="text-4xl font-medium text-blue-800">Ready to get involved?</h2>
-                  <p class="mt-6 text-xl text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="mt-6 text-xl text-gray-700">Already convinced? Great! Add your activity to the Code Week map, explore events near you, or run a session in your school or community.</p>
                 </div>
               </div>
               <div class="hidden flex-col justify-center items-start p-16 w-full bg-transparent tab-panel" role="tabpanel" id="tab-panel-2" aria-labelledby="tab-2">
@@ -148,7 +147,7 @@
               <div class="hidden accordion-content" id="accordion-panel-1">
                 <div class="flex flex-col p-6 bg-white">
                   <h2 class="text-3xl font-medium text-blue-800">Ready to get involved?</h2>
-                  <p class="mt-4 text-lg text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="mt-4 text-lg text-gray-700">Already convinced? Great! Add your activity to the Code Week map, explore events near you, or run a session in your school or community.</p>
                 </div>
               </div>
             </div>
