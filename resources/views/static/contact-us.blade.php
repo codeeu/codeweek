@@ -11,8 +11,6 @@
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
             <style>
                 @media (min-width: 768px) {
                     .hero-image {
@@ -177,11 +175,9 @@
                     </label>
 
                     <!-- CAPTCHA -->
-                    @if (env('TURNSTILE_SITE_KEY') && env('TURNSTILE_SECRET_KEY'))
-                        <div class="flex justify-center mt-6">
-                            <div class="cf-turnstile" data-sitekey="{{ env('TURNSTILE_SITE_KEY') }}"></div>
-                        </div>
-                    @endif
+                    <div class="flex justify-center mt-6">
+                        <div class="cf-turnstile" data-sitekey="{{ env('TURNSTILE_SITEKEY') }}"></div>
+                    </div>
 
                     <!-- Submit -->
                     <div class="flex justify-center mt-6">
@@ -194,7 +190,8 @@
             </div>
         </div>
 
-        <script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileCallback" async defer></script>
+ <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const form = document.getElementById('contactForm');
                 const submitButton = document.getElementById('submitButton');
@@ -203,8 +200,8 @@
                 function validateForm() {
                     let allFilled = true;
                     requiredFields.forEach(field => {
-                        if ((field.type === 'checkbox' && !field.checked) || 
-                            (field.tagName === 'SELECT' && !field.value) || 
+                        if ((field.type === 'checkbox' && !field.checked) ||
+                            (field.tagName === 'SELECT' && !field.value) ||
                             ((field.tagName === 'INPUT' || field.tagName === 'TEXTAREA') && !field.value.trim())) {
                             allFilled = false;
                         }
@@ -224,6 +221,16 @@
                 form.addEventListener('change', validateForm);
                 validateForm();
             });
+window.onload = function () {
+        window.turnstileCallback = function () {
+            turnstile.render('.cf-turnstile', {
+                sitekey: '{{ env('TURNSTILE_SITEKEY') }}',
+                callback: function(token) {
+                    document.getElementById('cf-turnstile-response').value = token;
+                }
+            });
+        };
+    };
         </script>
         </div>
     </section>
