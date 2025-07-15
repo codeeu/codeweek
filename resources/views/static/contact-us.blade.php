@@ -189,8 +189,7 @@
                 </form>
             </div>
         </div>
-
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileCallback" async defer></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -209,7 +208,8 @@
                 }
             });
 
-            allValid = allValid && captchaInput.value;
+            // Also require CAPTCHA token
+            if (!captchaInput.value) allValid = false;
 
             submitButton.disabled = !allValid;
             submitButton.classList.toggle('bg-primary', allValid);
@@ -221,20 +221,23 @@
             submitButton.classList.toggle('text-black', allValid);
         }
 
+        // Watch for form input changes
         form.addEventListener('input', validateForm);
         form.addEventListener('change', validateForm);
 
+        // Turnstile will call this once rendered
         window.turnstileCallback = function () {
             turnstile.render('.cf-turnstile', {
                 sitekey: '{{ env('TURNSTILE_SITEKEY') }}',
                 callback: function (token) {
                     captchaInput.value = token;
-                    validateForm();
+                    validateForm(); // ensure button re-validates once CAPTCHA succeeds
                 }
             });
         };
     });
 </script>
+
         </div>
     </section>
     </section>
