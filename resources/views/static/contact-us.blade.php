@@ -174,8 +174,8 @@
                         </span>
                     </label>
 
-                      <div class="flex justify-center mt-6">
-                        <div class="cf-turnstile" data-sitekey="{{ env('TURNSTILE_SITEKEY') }}"></div>
+                  <div class="flex justify-center mt-6">
+                        <div class="cf-turnstile"></div>
                         <input type="hidden" id="cf-turnstile-response" name="cf-turnstile-response" />
                     </div>
 
