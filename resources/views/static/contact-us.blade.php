@@ -11,6 +11,8 @@
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
             <style>
                 @media (min-width: 768px) {
                     .hero-image {
@@ -201,14 +203,16 @@
                 function validateForm() {
                     let allFilled = true;
                     requiredFields.forEach(field => {
-                        if ((field.type === 'checkbox' && !field.checked) || (field.type !== 'checkbox' && !
-                                field.value.trim())) {
+                        if ((field.type === 'checkbox' && !field.checked) || 
+                            (field.tagName === 'SELECT' && !field.value) || 
+                            ((field.tagName === 'INPUT' || field.tagName === 'TEXTAREA') && !field.value.trim())) {
                             allFilled = false;
                         }
                     });
 
                     submitButton.disabled = !allFilled;
-                    submitButton.classList.toggle('bg-primary hover:bg-hover-orange', allFilled);
+                    submitButton.classList.toggle('bg-primary', allFilled);
+                    submitButton.classList.toggle('hover:bg-hover-orange', allFilled);
                     submitButton.classList.toggle('cursor-pointer', allFilled);
                     submitButton.classList.toggle('cursor-not-allowed', !allFilled);
                     submitButton.classList.toggle('bg-gray-300', !allFilled);
