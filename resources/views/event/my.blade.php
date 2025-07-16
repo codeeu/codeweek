@@ -32,7 +32,7 @@
                             </a>
                             <a
                                 class="w-full md:w-fit flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-2.5 px-6 font-semibold text-base transition-all duration-300 group"
-                                href="/"
+                                href="/guide"
                             >
                                 <span>Guide for organisers </span>
                                 <div class="flex gap-2 w-4 overflow-hidden">
