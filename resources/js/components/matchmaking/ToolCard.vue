@@ -107,7 +107,6 @@
 </template>
 
 <script>
-var RESOURCES_URL = import.meta.env.VITE_RESOURCES_URL;
 
 export default {
   props: {
