@@ -47,7 +47,7 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         if (!empty($row['image']) && $this->imagesDir) {
             $localPath = $this->imagesDir . DIRECTORY_SEPARATOR . $row['image'];
             if (file_exists($localPath)) {
-                $filename = $row['image'];
+                $filename = 'codeweek-resources/' . $row['image'];
                 Storage::disk($this->disk)->put($filename, file_get_contents($localPath));
                 $thumbnail = Storage::disk($this->disk)->url($filename);
             } else {
@@ -63,6 +63,7 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             'learn' => true,
             'teach' => true,
             'active' => true,
+            'weight' => \Carbon\Carbon::now()->format('Y')
         ]);
         $item->save();
 
