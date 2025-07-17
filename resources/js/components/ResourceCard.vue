@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex flex-col bg-white rounded-lg overflow-hidden">
     <div class="flex-shrink-0">
-      <img :src="thumbnail" />
+      <img :src="resource.thumbnail" />
     </div>
 
     <div
@@ -76,8 +76,6 @@
 <script>
 import ResourcePill from './ResourcePill.vue';
 
-var RESOURCES_URL = import.meta.env.VITE_RESOURCES_URL;
-
 export default {
   components: { ResourcePill },
   props: {
@@ -89,18 +87,6 @@ export default {
       needShowMore: true,
       showMore: false,
     };
-  },
-  computed: {
-    thumbnail: function () {
-      if (
-        this.resource.thumbnail &&
-        this.resource.thumbnail.toLowerCase().startsWith('http')
-      ) {
-        return this.resource.thumbnail;
-      } else {
-        return RESOURCES_URL + this.resource.thumbnail;
-      }
-    },
   },
   methods: {
     computeDescriptionHeight() {

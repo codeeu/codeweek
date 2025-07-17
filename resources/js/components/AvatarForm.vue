@@ -15,9 +15,6 @@
     </div>
     <div>
       <h1 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat'] mb-6">{{ user.fullName }}</h1>
-      <p class="text-xl font-normal text-white p-0 max-md:max-w-full max-w-[864px]">
-        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
-      </p>
     </div>
   </div>
 </template>
