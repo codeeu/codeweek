@@ -16,6 +16,7 @@ use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
+use Illuminate\Support\Str;
 
 class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
@@ -47,9 +48,10 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         if (!empty($row['image']) && $this->imagesDir) {
             $localPath = $this->imagesDir . DIRECTORY_SEPARATOR . $row['image'];
             if (file_exists($localPath)) {
-                $filename = 'codeweek-resources/' . $row['image'];
-                Storage::disk($this->disk)->put($filename, file_get_contents($localPath));
-                $thumbnail = Storage::disk($this->disk)->url($filename);
+                $ext = pathinfo($row['image'], PATHINFO_EXTENSION) ?: 'jpg';
+                $basename = Str::slug($row['name_of_the_resource']) . '-' . time() . '.' . $ext;
+                Storage::disk($this->disk)->put($basename, file_get_contents($localPath));
+                $thumbnail = Storage::disk($this->disk)->url($basename);
             } else {
                 Log::warning("[ResourcesImport] Image not found: $localPath");
             }
