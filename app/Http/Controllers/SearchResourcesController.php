@@ -14,7 +14,6 @@ class SearchResourcesController extends Controller
         $items = $this->getItems($filters);
 
         $items->load(['types', 'levels', 'programmingLanguages', 'subjects', 'categories', 'languages']);
-        //$items = \App\ResourceItem::all();
 
         return $items;
 
@@ -23,14 +22,12 @@ class SearchResourcesController extends Controller
     protected function getItems(ResourceFilters $filters)
     {
 
-        $items = ResourceItem::filter($filters)->whereActive(true)
+        $items = ResourceItem::filter($filters)
+            ->whereActive(true)
             ->orderBy('weight', 'desc')
+            ->orderBy('created_at', 'desc')
             ->orderBy('name', 'asc');
 
-        //return($items->get()->distinct());
-
-        //dd($items->distinct()->paginate(10)->items);
-
-        return $items->get()->unique()->paginate(30);
+        return $items->distinct()->paginate(30);
     }
 }
