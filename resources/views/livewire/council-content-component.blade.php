@@ -7,39 +7,6 @@
                         <h2 id="profile-heading" class="text-dark-blue text-[22px] md:text-[36px] font-medium font-['Montserrat']">
                           {{ $member->name }}
                         </h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="38" viewBox="0 0 56 38" fill="none">
-                        <g filter="url(#filter0_d_3503_26825)">
-                            <mask id="mask0_3503_26825" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="48" height="30">
-                            <rect x="4" y="4" width="48" height="30" rx="2" fill="#D9D9D9"/>
-                            </mask>
-                            <g mask="url(#mask0_3503_26825)">
-                            <rect x="4" y="4" width="48" height="3.33333" fill="#002AC5"/>
-                            <rect x="4" y="7.33337" width="48" height="3.33333" fill="white"/>
-                            <rect x="4" y="10.6666" width="48" height="3.33333" fill="#002AC5"/>
-                            <rect x="4" y="14" width="48" height="3.33333" fill="white"/>
-                            <rect x="4" y="17.3334" width="48" height="3.33333" fill="#002AC5"/>
-                            <rect x="4" y="20.6666" width="48" height="3.33333" fill="white"/>
-                            <rect x="4" y="24" width="48" height="3.33333" fill="#002AC5"/>
-                            <rect x="4" y="27.3334" width="48" height="3.33333" fill="white"/>
-                            <rect x="4" y="30.6666" width="48" height="3.33333" fill="#002AC5"/>
-                            <rect x="4" y="4" width="16.66" height="16.66" fill="#002AC5"/>
-                            <rect x="4" y="10.67" width="16.66" height="3.33" fill="white"/>
-                            <rect x="10.6641" y="20.665" width="16.66" height="3.33" transform="rotate(-90 10.6641 20.665)" fill="white"/>
-                            </g>
-                        </g>
-                        <defs>
-                            <filter id="filter0_d_3503_26825" x="0" y="0" width="56" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset/>
-                            <feGaussianBlur stdDeviation="2"/>
-                            <feComposite in2="hardAlpha" operator="out"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3503_26825"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3503_26825" result="shape"/>
-                            </filter>
-                        </defs>
-                        </svg>
                     </div>
 
                     <span class="mt-6 text-3xl font-medium leading-tight text-gray-700 max-md:max-w-full">
