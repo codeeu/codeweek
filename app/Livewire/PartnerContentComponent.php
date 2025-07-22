@@ -543,17 +543,13 @@ public function render()
             // Council Presidency content
             $councilContent = collect([
                 (object)[
-                    'name' => 'Stamatis Papadakis',
+                    'name' => 'Annie Bergh – Sweden',
                     'title' => 'Council President',
-                    'description' => 'Stamatios Papadakis is an Assistant Professor at the University of Crete, bringing 23
-                    years of experience as an informatics teacher to his work. He is dedicated to
-                    advancing digital skills and computational thinking in education. With a strong
-                    background in mobile learning and computer science, Stamatios is passionate about
-                    leading the Code Week initiative, his vision is to unite educators, industry leaders,
-                    and policymakers to create impactful digital skills programs that empower
-                    communities and inspire the next generation of learners to thrive in an increasingly
-                    digital world.',
-                    'image' => 'images/council/one.jpg',
+                    'description' => 'Building bridges between classrooms and code
+                        Annie Bergh began her educational journey in 1991 as a preschool teacher and later taught students aged 6 to 13. But since 2014, she’s taken on a broader mission: supporting all 85 schools in Malmö municipality as a driving force behind internationalisation, coding, and robotics. Annie is the proud caretaker of 17 NAO robots—yes, actual humanoid robots—which teachers across Malmö can borrow to bring coding and AI to life in their classrooms. Through hands-on workshops and energetic TeachMeets, she inspires educators from preschool to upper secondary to integrate technology into their teaching in meaningful and creative ways. 
+                        Until recently, Annie also led the regional First Lego League (FLL) initiative for eight years, helping young minds explore science and innovation through teamwork and robotics. While she no longer teaches in a classroom, she’s still very much an educator—just one with a few more robots and a lot more cables.
+                        My motto in the presidency is: Innovate, educate, collaborate: Together, I know that we can build a brighter, more collaborative future through the power of code.',
+                    'image' => 'images/council/AnnieBergh.jpg',
                 ],
             ]);
 
