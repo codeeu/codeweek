@@ -17,6 +17,7 @@ return [
     'howto' => 'Kif torganizza l-avveniment tiegħek stess',
     'required' => 'L-oqsma meħtieġa huma mmarkati b’*asterisk. Ħossok liberu/a li żżid l-elenkar tal-avveniment tiegħek bil-lingwa lokali tiegħek.',
     'audience_title' => 'Udjenza',
+    'audiences' => 'Udjenza',
     'theme_title' => 'Tema',
     'scoreboard_by_country' => 'Tabella ta’ punti mirbuħa',
     'get_involved' => 'Involvi ruħek',
@@ -71,8 +72,8 @@ return [
         'placeholder' => 'Agħżel it-tip ta’ organizzatur',
         'school' => 'Skola',
         'library' => 'Librerija',
-        'non profit' => 'Organizzazzjoni mingħajr skop ta’ qligħ',
-        'private business' => 'Negozju Privat',
+        'non-profit' => 'Organizzazzjoni mingħajr skop ta’ qligħ',
+        'private-business' => 'Negozju Privat',
         'other' => 'Oħrajn',
     ],
     'audience' => [
@@ -142,5 +143,11 @@ return [
     'view_your_certificate' => 'Ara ċ-ċertifikat tiegħek hawn',
     'submit_event_and_report' => 'Issottometti rapport għal dan l-avveniment u itlob iċ-ċertifikat tal-Ġimgħa tal-Ikkowdjar tiegħek.',
     'report_and_claim' => 'Irrapporta l-avveniment u itlob iċ-ċertifikat',
-
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Quddiem dan, qed tuża xi riżorsi tal-Ġimgħa tal-Ikkowdjar f’din l-attività?',
+    'submit' => 'Ingluzja',
+    'privacy-policy-terms' => 'kif deskritt f’din il-karta',
+    'yes' => 'Iva',
+    'no' => 'Le',
+    'any-address-added-below' => 'Kwalunkwe indirizz miżjud hawn taħt ma jidhirx pubblikament għall-attivitajiet biss bil-istedina.',
+'if-no-clear-information-provide-estimate' => 'Jekk mgħandekx informazzjoni ċara, jekk jogħġbok ipprovdi stima.',
 ];
