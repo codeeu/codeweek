@@ -1,139 +1,124 @@
-@extends('layout.base')
+@extends('layout.new_base')
 
 @section('title', 'Remote Teaching Resources for Coding Education')
 @section('description', 'Access tools, guides, and best practices to teach coding remotely. Engage students in online learning with EU Code Week’s curated resources.')
 
+@php
+    $list = [
+        (object) ['label' => 'Remote Teaching', 'href' => ''],
+    ];
+@endphp
+
+@section('layout.breadcrumb')
+    @include('layout.breadcrumb', ['list' => $list])
+@endsection
+
+
 @section('content')
 
-    <section id="codeweek-about-page" class="codeweek-page">
-
-        <section class="codeweek-banner scoreboard">
-            <div class="text">
-                <h1>@lang('remote-teaching.remote-teaching')</h1>
-            </div>
-            <div class="image">
-                <img src="images/banner_scoreboard.svg" class="static-image">
+    <section id="codeweek-remote-teaching-page" class="font-['Blinker'] overflow-hidden">
+        <section class="relative flex overflow-hidden">
+            <div class="flex relative transition-all w-full bg-orange-gradient pt-32 pb-0 md:py-20">
+                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                    <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-40">
+                        <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
+                            <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] max-md:max-w-full max-w-[532px]">
+                                @lang('remote-teaching.remote-teaching')
+                            </h2>
+                        </div>
+                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
+                            <img src="images/banner_scoreboard.svg" class="static-image">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="codeweek-content-wrapper">
-
-            <div class="codeweek-about-blue-box" style="line-height: 22px;">
-
-                <h3>@lang('remote-teaching.intro.title')</h3>
-
-                <ul class="checklist">
-
-                    <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a>: @lang('remote-teaching.intro.points.1')</li>
-                    <li><a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/EU+Code+Week_Deep+Dive+MOOC+2020_Module+1_+Actitivities+at+home+.pdf">@lang('remote-teaching.intro.points.2.0')</a>: @lang('remote-teaching.intro.points.2.1')</li>
-                    <li>
-                        <a href="{{route('training.index')}}">@lang('training.learning_bits')</a>
+        <section class="overflow-hidden relative z-10">
+            <div class="relative z-10 py-10 md:py-20 codeweek-container-lg">
+                <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">@lang('remote-teaching.intro.title')</p>
+                <ul class="list-[circle] m-0 ml-4 pl-2 mb-3">
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-1"><a class="text-dark-blue" href="{{route('coding@home')}}">@lang('menu.coding@home')</a>: @lang('remote-teaching.intro.points.1')</li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-1"><a class="text-dark-blue" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/EU+Code+Week_Deep+Dive+MOOC+2020_Module+1_+Actitivities+at+home+.pdf">@lang('remote-teaching.intro.points.2.0')</a>: @lang('remote-teaching.intro.points.2.1')</li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-1">
+                        <a class="text-dark-blue" href="{{route('training.index')}}">@lang('training.learning_bits')</a>
                         : @lang('remote-teaching.intro.points.3.1')
-                        <a href="{{route('training.module-12')}}">@lang('remote-teaching.intro.points.3.2')</a>
+                        <a class="text-dark-blue" href="{{route('training.module-12')}}">@lang('remote-teaching.intro.points.3.2')</a>
                         @lang('remote-teaching.intro.points.3.3')
-                        <a href="{{route('training.module-13')}}">@lang('remote-teaching.intro.points.3.4')</a>
+                        <a class="text-dark-blue" href="{{route('training.module-13')}}">@lang('remote-teaching.intro.points.3.4')</a>
                         @lang('remote-teaching.intro.points.3.5')
                     </li>
-                    <li>
-                        <a href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.0')</a>:
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-1">
+                        <a class="text-dark-blue" href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.0')</a>:
                         @lang('remote-teaching.intro.points.4.1')
-                        <a href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.2')</a>
+                        <a class="text-dark-blue" href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.2')</a>
                         @lang('remote-teaching.intro.points.4.3')
-                        <a href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.4')</a>
+                        <a class="text-dark-blue" href="{{route('resources_all')}}">@lang('remote-teaching.intro.points.4.4')</a>
                         @lang('remote-teaching.intro.points.4.5')
-
                     </li>
-                    <li>
-                        <a href="https://www.youtube.com/playlist?list=PLnqp3yQre_1i7U2QKr2mc98pt2WEhA7Ig">@lang('remote-teaching.intro.points.5.0')</a>: @lang('remote-teaching.intro.points.5.1')
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-1">
+                        <a class="text-dark-blue" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1i7U2QKr2mc98pt2WEhA7Ig">@lang('remote-teaching.intro.points.5.0')</a>: @lang('remote-teaching.intro.points.5.1')
                     </li>
                 </ul>
 
+                <p class="font-semibold p-0 mt-6 mb-4 text-lg md:text-2xl capitalize">
+                    @lang('remote-teaching.tips.title')
+                </p>
 
-                <h3>@lang('remote-teaching.tips.title')</h3>
-
-                <ol class="tips">
-                    <li>
+                <ol class="list-decimal m-0 ml-4 pl-2">
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-2">
                         <strong>@lang('remote-teaching.tips.points.1.0')</strong>
                         @lang('remote-teaching.tips.points.1.1')
                     </li>
-                    <li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-2">
                         <strong>@lang('remote-teaching.tips.points.2.0')</strong>
                         @lang('remote-teaching.tips.points.2.1')
                     </li>
-                    <li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-2">
                         <strong>@lang('remote-teaching.tips.points.3.0')</strong>
                         @lang('remote-teaching.tips.points.3.1')
                     </li>
-                    <li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-2">
                         <strong>@lang('remote-teaching.tips.points.4.0')</strong>
                         @lang('remote-teaching.tips.points.4.1')
-                        <a href="">@lang('remote-teaching.tips.points.4.2')</a>
+                        <a class="text-dark-blue" href="">@lang('remote-teaching.tips.points.4.2')</a>
                         @lang('remote-teaching.tips.points.4.3')
-                        <a href="https://scratch.mit.edu/">Scratch</a>,
-                        <a href="https://appinventor.mit.edu/">App Inventor</a>,
-                        <a href="https://code.org/">Code.org</a>,
-                        <a href="https://earsketch.gatech.edu/landing/#/">EarSketch</a>,
-                        <a href="https://sonic-pi.net/">Sonic Pi</a>,
+                        <a class="text-dark-blue" href="https://scratch.mit.edu/">Scratch</a>,
+                        <a class="text-dark-blue" href="https://appinventor.mit.edu/">App Inventor</a>,
+                        <a class="text-dark-blue" href="https://code.org/">Code.org</a>,
+                        <a class="text-dark-blue" href="https://earsketch.gatech.edu/landing/#/">EarSketch</a>,
+                        <a class="text-dark-blue" href="https://sonic-pi.net/">Sonic Pi</a>,
 
                         @lang('remote-teaching.tips.points.4.4')
-                        <a href="{{route('training.index')}}">@lang('remote-teaching.tips.points.4.5')</a>
+                        <a class="text-dark-blue" href="{{route('training.index')}}">@lang('remote-teaching.tips.points.4.5')</a>
                         @lang('remote-teaching.tips.points.4.6')
                     </li>
-                    <li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-2">
                         <strong>@lang('remote-teaching.tips.points.5.0')</strong>
                         @lang('remote-teaching.tips.points.5.1')
-                        <a href="https://codycolor.codemooc.net/#!/">CodyColor</a>
+                        <a class="text-dark-blue" href="https://codycolor.codemooc.net/#!/">CodyColor</a>
                         @lang('remote-teaching.tips.points.5.2')
                     </li>
-                    <li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-2">
                         <strong>@lang('remote-teaching.tips.points.6.0')</strong>
                         @lang('remote-teaching.tips.points.6.1')
-                        <a href="https://zoom.us/">Zoom</a>,
-                        <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software">Microsoft Teams</a>,
-                        <a href="https://www.gotomeeting.com/en-gb">GoToMeeting</a>,
+                        <a class="text-dark-blue" href="https://zoom.us/">Zoom</a>,
+                        <a class="text-dark-blue" href="https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software">Microsoft Teams</a>,
+                        <a class="text-dark-blue" href="https://www.gotomeeting.com/en-gb">GoToMeeting</a>,
                         @lang('remote-teaching.tips.points.6.2')
-                        <a href="https://jitsi.org/">Jitsi</a>,
+                        <a class="text-dark-blue" href="https://jitsi.org/">Jitsi</a>,
                         @lang('remote-teaching.tips.points.6.3')
-                        <a href="https://kahoot.com/">Kahoot</a>,
-                        <a href="https://www.mentimeter.com/">Mentimeter</a>,
-                        <a href="https://www.google.com/forms/about/">Google Forms</a>,
+                        <a class="text-dark-blue" href="https://kahoot.com/">Kahoot</a>,
+                        <a class="text-dark-blue" href="https://www.mentimeter.com/">Mentimeter</a>,
+                        <a class="text-dark-blue" href="https://www.google.com/forms/about/">Google Forms</a>,
                         @lang('remote-teaching.tips.points.6.4')
                     </li>
-                    <li>
+                    <li class="font-normal text-default md:text-xl p-0 text-slate-500 py-2">
                         <strong>@lang('remote-teaching.tips.points.7.0')</strong>
                         @lang('remote-teaching.tips.points.7.1')
                     </li>
                 </ol>
-
-
-
             </div>
-
-
         </section>
-
-
     </section>
-
-@endsection
-
-@section('extra-css')
-    <style>
-        ul.checklist li:before {
-            content: '• ';
-            color: #054771;
-            font-weight: bold;
-
-        }
-
-        ul.checklist li {
-            margin:10px;
-        }
-
-        ol.tips li {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            margin-left: -18px;
-        }
-    </style>
 @endsection
