@@ -1,213 +1,120 @@
 <template>
-  <div
-    v-if="step < 4"
-    class="relative py-10 codeweek-container-lg flex justify-center"
-  >
+  <div v-if="step < 4" class="flex relative justify-center py-10 codeweek-container-lg">
     <div class="flex gap-12">
       <template v-for="(stepTitle, index) in stepTitles">
-        <div
-          class="relative flex flex-col items-center gap-2 flex-1 md:w-52"
-          :class="[
-            index === 0 && 'cursor-pointer',
-            index + 1 === 2 && validStep1 && 'cursor-pointer',
-            index + 1 === 3 && validStep2 && 'cursor-pointer',
-          ]"
-          @click="
+        <div class="flex relative flex-col flex-1 gap-2 items-center md:w-52" :class="[
+          index === 0 && 'cursor-pointer',
+          index + 1 === 2 && validStep1 && 'cursor-pointer',
+          index + 1 === 3 && validStep2 && 'cursor-pointer',
+        ]" @click="
             () => {
               if (index + 1 === 2 && !validStep1) return;
               if (index + 1 === 3 && !validStep2) return;
               handleMoveStep(index + 1);
             }
-          "
-        >
-          <div
-            class="w-12 h-12 rounded-full flex justify-center items-center text-['#20262C'] font-semibold text-2xl"
-            :class="[
-              step === index + 1 ? 'bg-light-blue-300' : 'bg-light-blue-100',
-            ]"
-          >
+          ">
+          <div class="w-12 h-12 rounded-full flex justify-center items-center text-['#20262C'] font-semibold text-2xl" :class="[
+            step === index + 1 ? 'bg-light-blue-300' : 'bg-light-blue-100',
+          ]">
             {{ index + 1 }}
           </div>
           <div class="flex-1">
-            <p
-              class="text-slate-500 font-normal text-base leading-[22px] p-0 text-center"
-            >
-              {{ stepTitle }}
+            <p class="text-slate-500 font-normal text-base leading-[22px] p-0 text-center">
+              {{ $t(`event.${stepTitle}`) }}
             </p>
           </div>
-          <div
-            v-if="index < stepTitles.length - 1"
-            class="absolute top-6 left-[calc(100%+1.5rem)] -translate-x-1/2 w-[calc(100%-1rem)] md:w-[calc(100%-0.75rem)] h-[2px] bg-[#CCF0F9]"
-          ></div>
+          <div v-if="index < stepTitles.length - 1" class="absolute top-6 left-[calc(100%+1.5rem)] -translate-x-1/2 w-[calc(100%-1rem)] md:w-[calc(100%-0.75rem)] h-[2px] bg-[#CCF0F9]"></div>
         </div>
       </template>
     </div>
   </div>
 
-  <div
-    v-if="step === 4"
-    class="relative codeweek-container-lg flex justify-center px-4 md:px-10 py-10 md:py-20"
-  >
-    <div
-      class="flex flex-col justify-center items-center text-center gap-4 max-w-[660px]"
-    >
-      <div
-        class="flex justify-center items-center w-16 h-16 bg-dark-blue rounded-full"
-      >
+  <div v-if="step === 4" class="flex relative justify-center px-4 py-10 codeweek-container-lg md:px-10 md:py-20">
+    <div class="flex flex-col justify-center items-center text-center gap-4 max-w-[660px]">
+      <div class="flex justify-center items-center w-16 h-16 rounded-full bg-dark-blue">
         <img class="w-6" src="/images/check-white.svg" />
       </div>
 
-      <div
-        class="text-dark-blue text-[22px] md:text-4xl font-semibold font-[Montserrat]"
-      >
+      <div class="text-dark-blue text-[22px] md:text-4xl font-semibold font-[Montserrat]">
         {{
           event
-            ? 'Your changes have been saved!'
-            : 'Thank you for adding your activity!'
+            ? $t('event.your-changes-have-been-saved')
+            : $t('event.thank-you-for-adding-your-activity')
         }}
       </div>
 
       <div v-if="!event" class="flex flex-col gap-4 text-[16px] text-center">
         <div>
-          One of the EU Code Week Ambassadors or organisers will now review your
-          activity
-          <span class="text-dark-blue font-semibold underline">{{
-            formValues.title
-          }}</span>
-          and make sure everything is ok. If you have questions, get in touch
-          with the EU Code Week Ambassadors or organisers.
+          {{ $t('event.one-of-the-ambassadors-or-organisers-will-review-your-activity', { title: formValues.title }) }}
         </div>
         <div>
-          You can share your Code Week 4 all code with other people:
+          {{ $t('event.you-can-share-your-code-week-4-all-code-with-other-people') }}
           {{ formValues.codeweek_for_all_participation_code }}
         </div>
-        <div>See the information you supplied below:</div>
+        <div>{{ $t('event.see-the-information-you-supplied-below') }}</div>
       </div>
     </div>
   </div>
 
-  <div ref="containerRef" class="w-full relative">
-    <div
-      class="absolute w-full h-full bg-gray-10 md:hidden"
-      style="clip-path: ellipse(370% 90% at 38% 90%)"
-    ></div>
-    <div
-      class="absolute w-full h-full bg-gray-10 hidden md:block lg:hidden"
-      style="clip-path: ellipse(488% 90% at 50% 90%)"
-    ></div>
-    <div
-      class="absolute w-full h-full bg-gray-10 hidden lg:block xl:hidden"
-      style="clip-path: ellipse(188% 90% at 50% 90%)"
-    ></div>
-    <div
-      class="absolute w-full h-full bg-gray-10 hidden xl:block"
-      style="clip-path: ellipse(158% 90% at 50% 90%)"
-    ></div>
+  <div ref="containerRef" class="relative w-full">
+    <div class="absolute w-full h-full bg-gray-10 md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%)"></div>
+    <div class="hidden absolute w-full h-full bg-gray-10 md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%)"></div>
+    <div class="hidden absolute w-full h-full bg-gray-10 lg:block xl:hidden" style="clip-path: ellipse(188% 90% at 50% 90%)"></div>
+    <div class="hidden absolute w-full h-full bg-gray-10 xl:block" style="clip-path: ellipse(158% 90% at 50% 90%)"></div>
 
-    <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-32 md:pb-20">
+    <div class="relative pt-20 pb-16 codeweek-container-lg md:pt-32 md:pb-20">
       <div class="flex justify-center">
         <div class="flex flex-col max-w-[852px] w-full">
-          <h2
-            v-if="stepTitles[step - 1]"
-            class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-10 text-center"
-          >
-            {{ stepTitles[step - 1] }}
+          <h2 v-if="stepTitles[step - 1]" class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-10 text-center">
+            {{ $t(`event.${stepTitles[step - 1]}`) }}
           </h2>
 
           <div :class="[step !== 1 && 'hidden']">
-            <FormStep1
-              :errors="errors"
-              :formValues="formValues"
-              :themes="themes"
-              :location="location"
-              :countries="countries"
-            />
+            <FormStep1 :errors="errors" :formValues="formValues" :themes="themes" :location="location" :countries="countries" />
           </div>
           <div :class="[step !== 2 && 'hidden']">
-            <FormStep2
-              :errors="errors"
-              :formValues="formValues"
-              :audiences="audiences"
-              :leadingTeachers="leadingTeachers"
-            />
+            <FormStep2 :errors="errors" :formValues="formValues" :audiences="audiences" :leadingTeachers="leadingTeachers" />
           </div>
           <div :class="[step !== 3 && 'hidden']">
-            <FormStep3
-              :errors="errors"
-              :formValues="formValues"
-              :languages="languages"
-              :countries="countries"
-            />
+            <FormStep3 :errors="errors" :formValues="formValues" :languages="languages" :countries="countries" />
 
-            <CheckboxField
-              class="mt-10"
-              v-model="formValues.privacy"
-              name="privacy"
-            >
+            <CheckboxField class="mt-10" v-model="formValues.privacy" name="privacy">
               <div>
                 <span>{{ $t('event.privacy') }}</span>
-                <a
-                  class="ml-1 !inline cookweek-link"
-                  :href="privacyLink"
-                  target="_blank"
-                >
-                  Privacy policy terms
+                <a class="ml-1 !inline cookweek-link" :href="privacyLink" target="_blank">
+                  {{ $t('event.privacy-policy-terms') }}
                 </a>
               </div>
             </CheckboxField>
           </div>
 
           <div :class="[step !== 4 && 'hidden']">
-            <AddConfirmation
-              :formValues="formValues"
-              :themes="themes"
-              :location="location"
-              :audiences="audiences"
-              :leadingTeachers="leadingTeachers"
-              :languages="languages"
-              :countries="countries"
-            />
+            <AddConfirmation :formValues="formValues" :themes="themes" :location="location" :audiences="audiences" :leadingTeachers="leadingTeachers" :languages="languages" :countries="countries" />
           </div>
 
-          <div
-            class="flex flex-wrap justify-between mt-10 gap-y-2 gap-x-4 min-h-12"
-          >
-            <button
-              v-if="step > 1"
-              class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] max-sm:w-full sm:min-w-[224px]"
-              type="button"
-              @click="
-                () => {
-                  if (step === 4) handleGoToActivity();
-                  else handleMoveStep(step - 1);
-                }
-              "
-            >
-              <span v-if="step === 4">View activity</span>
-              <span v-else>Previous step</span>
+          <div class="flex flex-wrap gap-y-2 gap-x-4 justify-between mt-10 min-h-12">
+            <button v-if="step > 1" class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] max-sm:w-full sm:min-w-[224px]" type="button" @click="
+              () => {
+                if (step === 4) handleGoToActivity();
+                else handleMoveStep(step - 1);
+              }
+            ">
+              <span v-if="step === 4">{{ $t('event.view-activity') }}</span>
+              <span v-else>{{ $t('event.previous-step') }}</span>
             </button>
 
             <div class="hidden md:block" />
 
-            <div
-              id="footer-scroll-activity"
-              class="flex justify-center max-sm:w-full sm:min-w-[224px]"
-              :class="[
-                step < 4 && !pageFooterVisible
-                  ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]'
-                  : '!translate-y-0',
-              ]"
-            >
-              <button
-                class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]"
-                type="button"
-                :disabled="disableNextbutton"
-                :class="[
-                  disableNextbutton
-                    ? 'cursor-not-allowed bg-gray-200 text-gray-400'
-                    : 'bg-primary hover:bg-hover-orange text-[#20262C]',
-                ]"
-                @click="
+            <div id="footer-scroll-activity" class="flex justify-center max-sm:w-full sm:min-w-[224px]" :class="[
+              step < 4 && !pageFooterVisible
+                ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]'
+                : '!translate-y-0',
+            ]">
+              <button class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]" type="button" :disabled="disableNextbutton" :class="[
+                disableNextbutton
+                  ? 'cursor-not-allowed bg-gray-200 text-gray-400'
+                  : 'bg-primary hover:bg-hover-orange text-[#20262C]',
+              ]" @click="
                   () => {
                     if (step === 4) {
                       if (event?.id) {
@@ -223,14 +130,13 @@
                       handleMoveStep(2);
                     }
                   }
-                "
-              >
+                ">
                 <template v-if="step === 4">
-                  <span v-if="event?.id">Back to map page</span>
-                  <span v-else>Add another activity</span>
+                  <span v-if="event?.id">{{ $t('event.back-to-map-page') }}</span>
+                  <span v-else>{{ $t('event.add-another-activity') }}</span>
                 </template>
-                <span v-else-if="step === 3">Submit</span>
-                <span v-else>Next step</span>
+                <span v-else-if="step === 3">{{ $t('event.submit') }}</span>
+                <span v-else>{{ $t('event.next-step') }}</span>
               </button>
             </div>
           </div>

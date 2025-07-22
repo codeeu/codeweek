@@ -54,6 +54,9 @@
                             <a href="/about" class="cookweek-link hover-underline">@lang('footer.about_code_week')</a>
                         </li>
                         <li class="mb-4">
+                            <a href="/get-involved" class="cookweek-link hover-underline">@lang('footer.get-involved')</a>
+                        </li>
+                        <li class="mb-4">
                             <a href="/our-values" class="cookweek-link hover-underline">@lang('footer.our_values')</a>
                         </li>
                         <li class="mb-4">
@@ -65,9 +68,6 @@
                         <li class="mb-4">
                             <a href="/community" class="cookweek-link hover-underline">@lang('footer.community')</a>
                         </li>
-                        {{-- <li>
-                            <a href="/" class="cookweek-link hover-underline">Contact us</a>
-                        </li> --}}
                     </ul>
                 </div>
                 <div>
@@ -88,6 +88,9 @@
                         <li class="mb-4">
                             <a href="https://forms.mailpro.com/l3086a9a3-9dc5-4160-ab12-71a0f34d3f07" target="_blank"
                                 class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us" class="cookweek-link hover-underline">@lang('footer.contact-us')</a>
                         </li>
                     </ul>
                 </div>

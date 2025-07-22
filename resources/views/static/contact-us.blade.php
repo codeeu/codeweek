@@ -174,12 +174,10 @@
                         </span>
                     </label>
 
-                    <!-- CAPTCHA -->
-                    @if (env('TURNSTILE_SITE_KEY') && env('TURNSTILE_SECRET_KEY'))
-                        <div class="flex justify-center mt-6">
-                            <div class="cf-turnstile" data-sitekey="{{ env('TURNSTILE_SITE_KEY') }}"></div>
-                        </div>
-                    @endif
+                  <div class="flex justify-center mt-6">
+                        <div class="cf-turnstile"></div>
+                        <input type="hidden" id="cf-turnstile-response" name="cf-turnstile-response" />
+                    </div>
 
                     <!-- Submit -->
                     <div class="flex justify-center mt-6">
@@ -191,36 +189,55 @@
                 </form>
             </div>
         </div>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileCallback" async defer></script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const form = document.getElementById('contactForm');
-                const submitButton = document.getElementById('submitButton');
-                const requiredFields = form.querySelectorAll('[required]');
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contactForm');
+        const submitButton = document.getElementById('submitButton');
+        const requiredFields = form.querySelectorAll('[required]');
+        const captchaInput = document.getElementById('cf-turnstile-response');
 
-                function validateForm() {
-                    let allFilled = true;
-                    requiredFields.forEach(field => {
-                        if ((field.type === 'checkbox' && !field.checked) || (field.type !== 'checkbox' && !
-                                field.value.trim())) {
-                            allFilled = false;
-                        }
-                    });
-
-                    submitButton.disabled = !allFilled;
-                    submitButton.classList.toggle('bg-primary hover:bg-hover-orange', allFilled);
-                    submitButton.classList.toggle('cursor-pointer', allFilled);
-                    submitButton.classList.toggle('cursor-not-allowed', !allFilled);
-                    submitButton.classList.toggle('bg-gray-300', !allFilled);
-                    submitButton.classList.toggle('text-gray-500', !allFilled);
-                    submitButton.classList.toggle('text-black', allFilled);
+        function validateForm() {
+            let allValid = true;
+            requiredFields.forEach(field => {
+                if ((field.type === 'checkbox' && !field.checked) ||
+                    (field.tagName === 'SELECT' && !field.value) ||
+                    ((field.tagName === 'INPUT' || field.tagName === 'TEXTAREA') && !field.value.trim())) {
+                    allValid = false;
                 }
-
-                form.addEventListener('input', validateForm);
-                form.addEventListener('change', validateForm);
-                validateForm();
             });
-        </script>
+
+            // Also require CAPTCHA token
+            if (!captchaInput.value) allValid = false;
+
+            submitButton.disabled = !allValid;
+            submitButton.classList.toggle('bg-primary', allValid);
+            submitButton.classList.toggle('hover:bg-hover-orange', allValid);
+            submitButton.classList.toggle('cursor-pointer', allValid);
+            submitButton.classList.toggle('cursor-not-allowed', !allValid);
+            submitButton.classList.toggle('bg-gray-300', !allValid);
+            submitButton.classList.toggle('text-gray-500', !allValid);
+            submitButton.classList.toggle('text-black', allValid);
+        }
+
+        // Watch for form input changes
+        form.addEventListener('input', validateForm);
+        form.addEventListener('change', validateForm);
+
+        // Turnstile will call this once rendered
+        window.turnstileCallback = function () {
+            turnstile.render('.cf-turnstile', {
+                sitekey: '{{ env('TURNSTILE_SITEKEY') }}',
+                callback: function (token) {
+                    captchaInput.value = token;
+                    validateForm(); // ensure button re-validates once CAPTCHA succeeds
+                }
+            });
+        };
+    });
+</script>
+
         </div>
     </section>
     </section>
