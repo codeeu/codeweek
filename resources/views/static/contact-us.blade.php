@@ -1,9 +1,8 @@
 @extends('layout.new_base')
 
-@section('title', 'Contact Us')
+@section('title', 'Get in Touch – EU Code Week Support & Inquiries')
 @section('description',
-    'Discover the core values of EU Code Week: inclusion, innovation, collaboration, and digital
-    empowerment for everyone.')
+    'Connect with the EU Code Week organisers to ask questions, explore partnership opportunities, or share your feedback.')
     @php
         $list = [(object) ['label' => 'Get Involved', 'href' => '']];
     @endphp
