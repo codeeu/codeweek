@@ -1,7 +1,7 @@
 <template>
   <section class="relative z-10">
     <div
-      class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center"
+      class="flex relative z-10 justify-center py-10 md:py-20 codeweek-container-lg"
     >
       <div class="w-full max-w-[880px] gap-2 text-xl">
         <h2
@@ -14,15 +14,15 @@
         </p>
 
         <div v-if="event.activity_format" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             Format of the activity:
           </p>
           <div class="flex flex-wrap gap-2">
             <div
               v-for="format in event.activity_format"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ activityFormatOptionsMap[format] }}
               </p>
             </div>
@@ -30,7 +30,7 @@
         </div>
 
         <div class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('event.activitytype.label') }}:
           </p>
           <p class="text-[#20262C] font-normal p-0 mb-6">
@@ -41,15 +41,15 @@
         </div>
 
         <div v-if="event.language" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('resources.Languages') }}:
           </p>
           <div class="flex flex-wrap gap-2">
             <div
               v-for="language in event.languages"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ $t(`base.languages.${language}`) }}
               </p>
             </div>
@@ -57,28 +57,28 @@
         </div>
 
         <div v-if="event.recurring_event" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">Recurring event:</p>
+          <p class="p-0 mb-2 font-semibold text-slate-500">Recurring event:</p>
           <div class="flex flex-wrap gap-2">
             <div
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ recurringFrequentlyMap[event.recurring_event] }}
               </p>
             </div>
             <div
               v-if="event.duration"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ durationOptionsMap[event.duration] }}
               </p>
             </div>
             <div
               v-if="event.recurring_type"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ recurringTypeOptionsMap[event.recurring_type] }}
               </p>
             </div>
@@ -86,15 +86,15 @@
         </div>
 
         <div v-if="event.audiences?.length" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('event.audience_title') }}:
           </p>
           <div class="flex flex-wrap gap-2">
             <div
               v-for="audience in event.audiences"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ $t(`event.audience.${audience.name}`) }}
               </p>
             </div>
@@ -102,13 +102,13 @@
         </div>
 
         <div v-if="event.ages?.length" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">Age range:</p>
+          <p class="p-0 mb-2 font-semibold text-slate-500">Age range:</p>
           <div class="flex flex-wrap gap-2">
             <div
               v-for="ageId in event.ages"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ ageOptionsMap[ageId] }}
               </p>
             </div>
@@ -116,13 +116,13 @@
         </div>
 
         <div v-if="event.themes?.length" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">Themes:</p>
+          <p class="p-0 mb-2 font-semibold text-slate-500">Themes:</p>
           <div class="flex flex-wrap gap-2">
             <div
               v-for="theme in event.themes"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ $t(`event.theme.${theme.name}`) }}
               </p>
             </div>
@@ -130,7 +130,7 @@
         </div>
 
         <div class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('event.address.label') }}:
           </p>
           <p class="text-[#20262C] font-normal p-0 mb-6">
@@ -139,8 +139,8 @@
         </div>
 
         <div class="mb-6 [&_p]:empty:hidden">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
-            Activity description:
+          <p class="p-0 mb-2 font-semibold text-slate-500">
+             {{ event.description }}
           </p>
           <div
             class="text-[#20262C] font-normal p-0 mb-6 space-y-2 [&_p]:py-0"
@@ -149,7 +149,7 @@
         </div>
 
         <div class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">Email address:</p>
+          <p class="p-0 mb-2 font-semibold text-slate-500">Email address:</p>
           <p class="text-[#20262C] font-normal p-0 mb-6">
             {{ event.contact_person }}
           </p>
@@ -159,11 +159,11 @@
           ref="mapContainerRef"
           class="w-full h-[520px] top-0 left-0 mb-6 rounded-lg overflow-hidden"
         >
-          <div id="mapid" class="w-full h-full relative">
+          <div id="mapid" class="relative w-full h-full">
             <div
               style="z-index: 999"
               id="map-controls"
-              class="absolute z-50 flex flex-col top-4 left-2"
+              class="flex absolute left-2 top-4 z-50 flex-col"
             >
               <!-- Minimize screen -->
               <button
@@ -227,7 +227,7 @@
         <!-- from old page -->
 
         <!-- <div class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('eventdetails.organised_by') }}
           </p>
           <p class="text-[#20262C] font-normal p-0 mb-6">
@@ -240,27 +240,27 @@
         </div> -->
 
         <!-- <div class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('eventdetails.more_info') }}
           </p>
           <a
             :href="event.event_url"
-            class="text-dark-blue font-normal p-0 mb-6"
+            class="p-0 mb-6 font-normal text-dark-blue"
           >
             {{ event.event_url }}
           </a>
         </div> -->
 
         <!-- <div v-if="event.tags?.length" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('eventdetails.tags') }}
           </p>
           <div class="flex flex-wrap gap-2">
             <div
               v-for="tag in event.tags"
-              class="w-fit px-4 py-1 bg-light-blue-100 rounded-full flex items-center gap-2"
+              class="flex gap-2 items-center px-4 py-1 bg-light-blue-100 rounded-full w-fit"
             >
-              <p class="text-slate-500 p-0 text-base font-semibold">
+              <p class="p-0 text-base font-semibold text-slate-500">
                 {{ tag.name }}
               </p>
             </div>
@@ -271,7 +271,7 @@
           v-if="canEdit && event.codeweek_for_all_participation_code"
           class="mb-6"
         >
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('event.codeweek_for_all_participation_code.title') }}:
           </p>
           <p class="text-[#20262C] font-normal p-0 mb-6">
@@ -280,7 +280,7 @@
         </div>
 
         <div v-if="canEdit" class="mb-6">
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             {{ $t('event.last_update') }}:
           </p>
           <p class="text-[#20262C] font-normal p-0 mb-6">
@@ -289,10 +289,10 @@
         </div> -->
 
         <div>
-          <p class="text-slate-500 font-semibold p-0 mb-2">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
             Share activity on:
           </p>
-          <div class="flex items-center gap-4">
+          <div class="flex gap-4 items-center">
             <div
               class="fb-like"
               :data-href="shareUrl"

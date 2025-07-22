@@ -1,136 +1,47 @@
 <template>
   <div class="flex flex-col gap-4 w-full">
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      :label="`${$t('event.organizer.label')}*`"
-      name="organizer"
-      :errors="errors"
-    >
-      <InputField
-        v-model="formValues.organizer"
-        required
-        name="organizer"
-        :placeholder="$t('event.organizer.placeholder')"
-      />
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.organizer.label')}*`" name="organizer" :errors="errors">
+      <InputField v-model="formValues.organizer" required name="organizer" :placeholder="$t('event.organizer.placeholder')" />
     </FieldWrapper>
 
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      :label="`${$t('event.organizertype.label')}*`"
-      name="organizer_type"
-      :errors="errors"
-    >
-      <SelectField
-        v-model="formValues.organizer_type"
-        required
-        name="organizer_type"
-        :options="organizerTypeOptions"
-      />
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.organizertype.label')}*`" name="organizer_type" :errors="errors">
+      <SelectField :placeholder="$t('event.select-option')" v-model="formValues.organizer_type" required name="organizer_type" :options="organizerTypeOptions" />
     </FieldWrapper>
 
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      :label="`${$t('resources.Languages')} (optional)`"
-      name="language"
-      :errors="errors"
-    >
-      <SelectField
-        v-model="formValues.language"
-        name="language"
-        searchable
-        multiple
-        :options="languageOptions"
-      />
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('resources.Languages')} (optional)`" name="language" :errors="errors">
+      <SelectField :placeholder="$t('event.select-option')" v-model="formValues.language" name="language" searchable multiple :options="languageOptions" />
     </FieldWrapper>
 
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      :label="`${$t('event.country')}*`"
-      name="country_iso"
-      :errors="errors"
-    >
-      <SelectField
-        v-model="formValues.country_iso"
-        id-name="iso"
-        searchable
-        required
-        name="country_iso"
-        :options="countries"
-      />
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.country')}*`" name="country_iso" :errors="errors">
+      <SelectField :placeholder="$t('event.select-option')" v-model="formValues.country_iso" id-name="iso" searchable required name="country_iso" :options="countries" />
     </FieldWrapper>
 
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      label="Are you using any Code Week resources in this activity?"
-      name="is_use_resource"
-      :errors="errors"
-    >
+    <FieldWrapper horizontalBreakpoint="md" :label="$t('event.are-you-using-any-code-week-resources-in-this-activity')" name="is_use_resource" :errors="errors">
       <div class="flex items-center gap-8 min-h-[48px] h-full">
-        <RadioField
-          v-model="formValues.is_use_resource"
-          name="is_use_resource"
-          value="true"
-          label="Yes"
-        />
-        <RadioField
-          v-model="formValues.is_use_resource"
-          name="is_use_resource"
-          value="false"
-          label="No"
-        />
+        <RadioField v-model="formValues.is_use_resource" name="is_use_resource" value="true" :label="$t('event.yes')" />
+        <RadioField v-model="formValues.is_use_resource" name="is_use_resource" value="false" :label="$t('event.no')" />
       </div>
     </FieldWrapper>
 
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      :label="`${$t('event.website.label')} ${
-        ['open-online', 'invite-online'].includes(formValues.activity_type)
-          ? '*'
-          : '(optional)'
-      }`"
-      name="event_url"
-      :errors="errors"
-    >
-      <InputField
-        v-model="formValues.event_url"
-        name="event_url"
-        :placeholder="$t('event.website.placeholder')"
-      />
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.website.label')} ${['open-online', 'invite-online'].includes(formValues.activity_type)
+        ? '*'
+        : '(optional)'
+      }`" name="event_url" :errors="errors">
+      <InputField v-model="formValues.event_url" name="event_url" :placeholder="$t('event.website.placeholder')" />
     </FieldWrapper>
 
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      :label="`${$t('event.public.label')} (optional)`"
-      name="contact_person"
-      :errors="errors"
-    >
-      <InputField
-        v-model="formValues.contact_person"
-        type="email"
-        name="contact_person"
-        :placeholder="$t('event.public.placeholder')"
-      />
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.public.label')} (optional)`" name="contact_person" :errors="errors">
+      <InputField v-model="formValues.contact_person" type="email" name="contact_person" :placeholder="$t('event.public.placeholder')" />
     </FieldWrapper>
 
-    <FieldWrapper
-      horizontalBreakpoint="md"
-      :label="`${$t('event.contact.label')}*`"
-      name="user_email"
-      :errors="errors"
-    >
-      <InputField
-        v-model="formValues.user_email"
-        required
-        type="email"
-        name="user_email"
-        :placeholder="$t('event.contact.placeholder')"
-      />
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.contact.label')}*`" name="user_email" :errors="errors">
+      <InputField v-model="formValues.user_email" required type="email" name="user_email" :placeholder="$t('event.contact.placeholder')" />
 
       <template #end>
-        <div class="w-full flex gap-2.5 mt-4">
+        <div class="flex gap-2.5 mt-4 w-full">
           <img class="flex-shrink-0 w-6 h-6" src="/images/icon_info.svg" />
 
-          <div class="text-slate-400 text-xs mt-1">
+          <div class="mt-1 text-xs text-slate-400">
             {{ $t('event.contact.explanation') }}
           </div>
         </div>

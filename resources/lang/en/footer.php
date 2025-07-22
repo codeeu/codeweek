@@ -17,7 +17,7 @@ return [
     'about_us' => 'About us',
     'about_code_week' => 'About Code Week',
     'our_values' => 'Our Values',
-    'statistics' => 'Statistics',
+    'statistics' => 'Scoreboard',
     'partners_sponsors' => 'Partners & Sponsors',
     'community' => 'Community',
     'quick_links' => 'Quick links',
@@ -32,5 +32,7 @@ return [
     'challenges' => 'Challenges',
     'hackathons' => 'Hackathons',
     'designed_and_developed_by' => 'Designed and developed by',
-    'all_rights_reserved' => 'All Rights Reserved'
+    'all_rights_reserved' => 'All Rights Reserved',
+    'get-involved' => 'Get Involved',
+    'contact-us' => 'Contact Us'
 ];
