@@ -20,7 +20,7 @@
           />
           <div v-if="imageUrl">
             <div class="mb-2">Image attached</div>
-            <img class="max-h-80 mb-2" :src="imageUrl" />
+            <img class="mb-2 max-h-80" :src="imageUrl" />
             <div>{{ imageName }}</div>
           </div>
           <div v-if="value" class="flex-grow w-full">{{ value || '' }}</div>
@@ -245,15 +245,15 @@ export default {
 
       return [
         {
-          title: 'Activity overview',
+          title: trans('event.confirmation_step.activity_overview'),
           list: step1List.filter(filterValidItem),
         },
         {
-          title: 'Who is the activity for',
+          title: trans('event.confirmation_step.who_is_the_activity_for'),
           list: step2List.filter(filterValidItem),
         },
         {
-          title: 'Organiser',
+          title: trans('event.confirmation_step.organiser'),
           list: step3List.filter(filterValidItem),
         },
       ];
