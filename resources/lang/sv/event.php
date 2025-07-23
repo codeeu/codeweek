@@ -284,5 +284,12 @@ return [
     'yes' => 'Ja',
     'no' => 'Nej',
     'any-address-added-below' => 'Alla adresser som läggs till nedan kommer inte att visas offentligt för aktiviteter som endast är på inbjudan.',
-'if-no-clear-information-provide-estimate' => 'Om du inte har tydlig information, vänligen ange en uppskattning.',
+    'if-no-clear-information-provide-estimate' => 'Om du inte har tydlig information, vänligen ange en uppskattning.',
+    'confirmation_step.activity_overview' => 'Översikt över aktiviteten',
+    'confirmation_step.who_is_the_activity_for' => 'För vem är aktiviteten?',
+    'confirmation_step.organiser' => 'Organisatör',
+    'your-changes-have-been-saved' => 'Dina ändringar har sparats',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Använder du Code Week-resurser i den här aktiviteten?',
+    'view-activity' => 'Visa aktivitet',
+    'add-another-activity' => 'Lägg till en annan aktivitet',
 ];

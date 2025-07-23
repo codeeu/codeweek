@@ -287,4 +287,11 @@ return [
     'submit' => 'Изпрати',
     'yes' => 'Да',
     'no' => 'Не',
+    'confirmation_step.activity_overview' => 'Преглед на дейността',
+    'confirmation_step.who_is_the_activity_for' => 'За кого е дейността?',
+    'confirmation_step.organiser' => 'Организатор',
+    'your-changes-have-been-saved' => 'Вашите промени са запазени',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Използвате ли ресурси от Седмицата на кода в тази дейност?',
+    'view-activity' => 'Преглед на дейността',
+    'add-another-activity' => 'Добави друга дейност',
 ];

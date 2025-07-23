@@ -291,4 +291,11 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
     'no' => 'Jo',
     'any-address-added-below' => 'Çdo adresë e shtuar më poshtë nuk do të shfaqet publikisht për aktivitete vetëm me ftesë.',
     'if-no-clear-information-provide-estimate' => 'Nëse nuk keni informacion të qartë, ju lutem jepni një vlerësim.',
+    'confirmation_step.activity_overview' => 'Përmbledhje e aktivitetit',
+    'confirmation_step.who_is_the_activity_for' => 'Për kë është aktiviteti?',
+    'confirmation_step.organiser' => 'Organizator',
+    'your-changes-have-been-saved' => 'Ndryshimet tuaja janë ruajtur',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'A po përdorni ndonjë burim të Javës së Kodit në këtë aktivitet?',
+    'view-activity' => 'Shiko aktivitetin',
+    'add-another-activity' => 'Shto aktivitet tjetër',
 ];

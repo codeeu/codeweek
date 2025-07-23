@@ -287,4 +287,11 @@ return [
     'privacy-policy-terms' => 'ahogy azt a jelen dokumentumban leírták',
     'yes' => 'Igen',
     'no' => 'Nem',
+    'confirmation_step.activity_overview' => 'Tevékenység áttekintése',
+    'confirmation_step.who_is_the_activity_for' => 'Kinek szól a tevékenység?',
+    'confirmation_step.organiser' => 'Szervező',
+    'your-changes-have-been-saved' => 'A módosítások elmentésre kerültek',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Használ Code Week erőforrásokat ebben a tevékenységben?',
+    'view-activity' => 'Tevékenység megtekintése',
+    'add-another-activity' => 'Új tevékenység hozzáadása',
 ];

@@ -288,4 +288,11 @@ return [
     'privacy-policy-terms' => 'kā aprakstīts šajā dokumentā',
     'yes' => 'Jā',
     'no' => 'Nē',
+    'confirmation_step.activity_overview' => 'Aktivitātes pārskats',
+    'confirmation_step.who_is_the_activity_for' => 'Kam paredzēta aktivitāte?',
+    'confirmation_step.organiser' => 'Organizators',
+    'your-changes-have-been-saved' => 'Jūsu izmaiņas ir saglabātas',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Vai šajā aktivitātē izmantojat Code Week resursus?',
+    'view-activity' => 'Skatīt aktivitāti',
+    'add-another-activity' => 'Pievienot vēl vienu aktivitāti',
 ];

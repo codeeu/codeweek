@@ -448,5 +448,11 @@ return [
     'view_your_certificate' => 'Visualizza qui il tuo certificato',
     'submit_event_and_report' => 'Presenta una relazione su quest’evento e chiedi il tuo certificato della settimana della programmazione.',
     'report_and_claim' => 'Segnala l’evento e chiedi il certificato',
-
+    'confirmation_step.activity_overview' => 'Panoramica dell’attività',
+    'confirmation_step.who_is_the_activity_for' => 'A chi è rivolta l’attività?',
+    'confirmation_step.organiser' => 'Organizzatore',
+    'your-changes-have-been-saved' => 'Le modifiche sono state salvate',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Stai utilizzando risorse della Code Week in questa attività?',
+    'view-activity' => 'Visualizza attività',
+    'add-another-activity' => 'Aggiungi un’altra attività',
 ];

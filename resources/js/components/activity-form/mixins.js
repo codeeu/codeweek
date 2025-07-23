@@ -1,4 +1,5 @@
-import { computed } from 'vue';
+import { computed, ref, onMounted } from 'vue';
+import axios from 'axios';
 import { trans } from 'laravel-vue-i18n';
 
 export function useDataOptions() {
@@ -33,31 +34,15 @@ export function useDataOptions() {
   );
 
   const activityTypeOptions = computed(() => [
-    {
-      id: 'open-online',
-      name: trans('event.activitytype.open-online'),
-    },
-    {
-      id: 'invite-online',
-      name: trans('event.activitytype.invite-online'),
-    },
-    {
-      id: 'open-in-person',
-      name: trans('event.activitytype.open-in-person'),
-    },
-    {
-      id: 'invite-in-person',
-      name: trans('event.activitytype.invite-in-person'),
-    },
-    {
-      id: 'other',
-      name: trans('event.organizertype.other'),
-    },
+    { id: 'open-online', name: trans('event.activitytype.open-online') },
+    { id: 'invite-online', name: trans('event.activitytype.invite-online') },
+    { id: 'open-in-person', name: trans('event.activitytype.open-in-person') },
+    { id: 'invite-in-person', name: trans('event.activitytype.invite-in-person') },
+    { id: 'other', name: trans('event.organizertype.other') },
   ]);
   const activityTypeOptionsMap = computed(() =>
     buildOptionMap(activityTypeOptions.value)
   );
-
 
   const recurringFrequentlyMap = computed(() => ({
     daily: trans('event.daily'),
@@ -112,37 +97,36 @@ export function useDataOptions() {
   );
 
   const themeOptions = computed(() => [
-    { id: 'robotics-drones-smart-devices', name: t('event.theme.robotics-drones-smart-devices') },
-    { id: 'cybersecurity-data', name: t('event.theme.cybersecurity-data') },
-    { id: 'web-app-software-development', name: t('event.theme.web-app-software-development') },
-    { id: 'visual-block-programming', name: t('event.theme.visual-block-programming') },
-    { id: 'unplugged-playful-activities', name: t('event.theme.unplugged-playful-activities') },
-    { id: 'art-creative-coding', name: t('event.theme.art-creative-coding') },
-    { id: 'game-design', name: t('event.theme.game-design') },
-    { id: 'internet-of-things-wearables', name: t('event.theme.internet-of-things-wearables') },
-    { id: 'ar-vr-3d-technologies', name: t('event.theme.ar-vr-3d-technologies') },
-    { id: 'digital-careers-learning-pathways', name: t('event.theme.digital-careers-learning-pathways') },
-    { id: 'digital-literacy-soft-skills', name: t('event.theme.digital-literacy-soft-skills') },
-    { id: 'ai-generative-ai', name: t('event.theme.ai-generative-ai') },
-    { id: 'awareness-inspiration', name: t('event.theme.awareness-inspiration') },
-    { id: 'promoting-diversity-inclusion', name: t('event.theme.promoting-diversity-inclusion') },
-    { id: 'other-theme', name: t('event.theme.other-theme') },
+    { id: 'robotics-drones-smart-devices', name: trans('event.theme.robotics-drones-smart-devices') },
+    { id: 'cybersecurity-data', name: trans('event.theme.cybersecurity-data') },
+    { id: 'web-app-software-development', name: trans('event.theme.web-app-software-development') },
+    { id: 'visual-block-programming', name: trans('event.theme.visual-block-programming') },
+    { id: 'unplugged-playful-activities', name: trans('event.theme.unplugged-playful-activities') },
+    { id: 'art-creative-coding', name: trans('event.theme.art-creative-coding') },
+    { id: 'game-design', name: trans('event.theme.game-design') },
+    { id: 'internet-of-things-wearables', name: trans('event.theme.internet-of-things-wearables') },
+    { id: 'ar-vr-3d-technologies', name: trans('event.theme.ar-vr-3d-technologies') },
+    { id: 'digital-careers-learning-pathways', name: trans('event.theme.digital-careers-learning-pathways') },
+    { id: 'digital-literacy-soft-skills', name: trans('event.theme.digital-literacy-soft-skills') },
+    { id: 'ai-generative-ai', name: trans('event.theme.ai-generative-ai') },
+    { id: 'awareness-inspiration', name: trans('event.theme.awareness-inspiration') },
+    { id: 'promoting-diversity-inclusion', name: trans('event.theme.promoting-diversity-inclusion') },
+    { id: 'other-theme', name: trans('event.theme.other-theme') },
   ]);
   const themeOptionsMap = computed(() =>
     buildOptionMap(themeOptions.value)
   );
 
-  const audienceOptions = computed(() => [
-    { id: 'pre-school-children', name: trans('event.pre-school-children') },
-    { id: 'elementary-school-students', name: trans('event.elementary-school-students') },
-    { id: 'high-school-students', name: trans('event.high-school-students') },
-    { id: 'graduate-students', name: trans('event.graduate-students') },
-    { id: 'post-graduate-students', name: trans('event.post-graduate-students') },
-    { id: 'employed-adults', name: trans('event.employed-adults') },
-    { id: 'unemployed-adults', name: trans('event.unemployed-adults') },
-    { id: 'others-see-description', name: trans('event.others-see-description') },
-    { id: 'teachers', name: trans('event.teachers') },
-  ]);
+  const audienceOptions = ref([]);
+
+  onMounted(async () => {
+    const response = await axios.get('/api/audiences');
+    audienceOptions.value = response.data.map((audience) => ({
+      id: audience.id,
+      name: trans(`event.${audience.slug}`),
+    }));
+  });
+
   const audienceOptionsMap = computed(() =>
     buildOptionMap(audienceOptions.value)
   );

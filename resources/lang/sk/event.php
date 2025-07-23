@@ -287,5 +287,12 @@ return [
     'yes' => 'Áno',
     'no' => 'Nie',
     'any-address-added-below' => 'Akákoľvek adresa pridaná nižšie nebude verejne zobrazená pre aktivity len na pozvanie.',
-'if-no-clear-information-provide-estimate' => 'Ak nemáte jasné informácie, prosím, poskytnite odhad.',
-];
+    'if-no-clear-information-provide-estimate' => 'Ak nemáte jasné informácie, prosím, poskytnite odhad.',
+        'confirmation_step.activity_overview' => 'Prehľad aktivity',
+    'confirmation_step.who_is_the_activity_for' => 'Pre koho je aktivita určená?',
+    'confirmation_step.organiser' => 'Organizátor',
+    'your-changes-have-been-saved' => 'Vaše zmeny boli uložené',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Používate zdroje Code Week pri tejto aktivite?',
+    'view-activity' => 'Zobraziť aktivitu',
+    'add-another-activity' => 'Pridať ďalšiu aktivitu',
+    ];
