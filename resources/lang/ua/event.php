@@ -303,4 +303,11 @@ return [
     'no' => 'Ні',
     'any-address-added-below' => 'Будь-яка адреса, додана нижче, не буде показана публічно для заходів лише за запрошенням.',
 'if-no-clear-information-provide-estimate' => 'Якщо у вас немає чіткої інформації, будь ласка, надайте оцінку.',
+'confirmation_step.activity_overview' => 'Огляд активності',
+'confirmation_step.who_is_the_activity_for' => 'Для кого ця активність?',
+'confirmation_step.organiser' => 'Організатор',
+'your-changes-have-been-saved' => 'Ваші зміни збережено',
+'are-you-using-any-code-week-resources-in-this-activity' => 'Чи використовуєте ви ресурси Code Week для цієї активності?',
+'view-activity' => 'Переглянути активність',
+'add-another-activity' => 'Додати іншу активність',
 ];

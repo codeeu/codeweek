@@ -289,4 +289,11 @@ return [
     'no' => 'Ne',
     'any-address-added-below' => 'Svaka adresa unesena ispod neće biti javno prikazana za aktivnosti samo uz poziv.',
     'if-no-clear-information-provide-estimate' => 'Ako nemate precizne informacije, molimo navedite procjenu.',
+    'confirmation_step.activity_overview' => 'Pregled aktivnosti',
+    'confirmation_step.who_is_the_activity_for' => 'Za koga je aktivnost?',
+    'confirmation_step.organiser' => 'Organizator',
+    'your-changes-have-been-saved' => 'Vaše izmjene su sačuvane',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Da li koristite neke resurse Code Week u ovoj aktivnosti?',
+    'view-activity' => 'Pogledaj aktivnost',
+    'add-another-activity' => 'Dodaj još jednu aktivnost',
 ];

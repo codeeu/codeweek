@@ -283,4 +283,11 @@ return [
     'privacy-policy-terms' => 'im vorliegenden Dokument beschrieben',
     'yes' => 'Ja',
     'no' => 'Nein',
+    'confirmation_step.activity_overview' => 'Aktivitätsübersicht',
+    'confirmation_step.who_is_the_activity_for' => 'Für wen ist die Aktivität?',
+    'confirmation_step.organiser' => 'Organisator',
+    'your-changes-have-been-saved' => 'Ihre Änderungen wurden gespeichert',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Verwenden Sie Ressourcen der Code Week in dieser Aktivität?',
+    'view-activity' => 'Aktivität ansehen',
+    'add-another-activity' => 'Weitere Aktivität hinzufügen',
 ];
