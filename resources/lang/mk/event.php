@@ -285,4 +285,11 @@ return [
     'privacy-policy-terms' => 'као што је описано у овом документу',
     'yes' => 'Да',
     'no' => 'Не',
+    'confirmation_step.activity_overview' => 'Преглед на активноста',
+    'confirmation_step.who_is_the_activity_for' => 'За кого е активноста?',
+    'confirmation_step.organiser' => 'Организатор',
+    'your-changes-have-been-saved' => 'Вашите промени се зачувани',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Дали користите ресурси на Code Week во оваа активност?',
+    'view-activity' => 'Погледни активност',
+    'add-another-activity' => 'Додади друга активност',
 ];

@@ -288,4 +288,11 @@ return [
     'privacy-policy-terms' => 'kuten on kuvattu tässä asiakirjassa',
     'yes' => 'Kyllä',
     'no' => 'Ei',
+    'confirmation_step.activity_overview' => 'Toiminnan yleiskatsaus',
+    'confirmation_step.who_is_the_activity_for' => 'Kenelle toiminta on suunnattu?',
+    'confirmation_step.organiser' => 'Järjestäjä',
+    'your-changes-have-been-saved' => 'Muutoksesi on tallennettu',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Käytätkö Code Week -resursseja tässä toiminnassa?',
+    'view-activity' => 'Näytä toiminta',
+    'add-another-activity' => 'Lisää toinen toiminta',
 ];

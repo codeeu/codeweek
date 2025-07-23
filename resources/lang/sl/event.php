@@ -284,5 +284,12 @@ return [
     'yes' => 'Da',
     'no' => 'Ne',
     'any-address-added-below' => 'Katera koli naslov dodan spodaj ne bo prikazan javno za aktivnosti samo na povabilo.',
-'if-no-clear-information-provide-estimate' => 'Če nimate jasnih informacij, prosim navedite oceno.',
+    'if-no-clear-information-provide-estimate' => 'Če nimate jasnih informacij, prosim navedite oceno.',
+    'confirmation_step.activity_overview' => 'Pregled dejavnosti',
+    'confirmation_step.who_is_the_activity_for' => 'Za koga je namenjena dejavnost?',
+    'confirmation_step.organiser' => 'Organizator',
+    'your-changes-have-been-saved' => 'Vaše spremembe so bile shranjene',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Ali uporabljate vire Code Week pri tej dejavnosti?',
+    'view-activity' => 'Ogled dejavnosti',
+    'add-another-activity' => 'Dodaj drugo dejavnost',
 ];

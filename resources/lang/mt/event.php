@@ -149,5 +149,12 @@ return [
     'yes' => 'Iva',
     'no' => 'Le',
     'any-address-added-below' => 'Kwalunkwe indirizz miżjud hawn taħt ma jidhirx pubblikament għall-attivitajiet biss bil-istedina.',
-'if-no-clear-information-provide-estimate' => 'Jekk mgħandekx informazzjoni ċara, jekk jogħġbok ipprovdi stima.',
+    'if-no-clear-information-provide-estimate' => 'Jekk mgħandekx informazzjoni ċara, jekk jogħġbok ipprovdi stima.',
+    'confirmation_step.activity_overview' => 'Ġenerali dwar l-attività',
+    'confirmation_step.who_is_the_activity_for' => 'Għal min hi l-attività?',
+    'confirmation_step.organiser' => 'Organizzatur',
+    'your-changes-have-been-saved' => 'Isseħħew il-bidliet tiegħek',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Qed tuża riżorsi tal-Code Week f’din l-attività?',
+    'view-activity' => 'Ara l-attività',
+    'add-another-activity' => 'Żid attività oħra',
 ];
