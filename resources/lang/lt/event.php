@@ -291,4 +291,11 @@ return [
     'privacy-policy-terms' => 'kaip aprašyta šiame dokumente',
     'yes' => 'Taip',
     'no' => 'Ne',
+    'confirmation_step.activity_overview' => 'Veiklos apžvalga',
+    'confirmation_step.who_is_the_activity_for' => 'Kam skirta veikla?',
+    'confirmation_step.organiser' => 'Organizatorius',
+    'your-changes-have-been-saved' => 'Jūsų pakeitimai buvo išsaugoti',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Ar naudojate Code Week išteklius šioje veikloje?',
+    'view-activity' => 'Peržiūrėti veiklą',
+    'add-another-activity' => 'Pridėti kitą veiklą',
 ];

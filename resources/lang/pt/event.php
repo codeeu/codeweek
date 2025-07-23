@@ -287,4 +287,11 @@ return [
     'no' => 'Não',
     'any-address-added-below' => 'Qualquer endereço adicionado abaixo não será exibido publicamente para atividades apenas por convite.',
     'if-no-clear-information-provide-estimate' => 'Se você não tiver informações claras, forneça uma estimativa.',
+    'confirmation_step.activity_overview' => 'Visão geral da atividade',
+    'confirmation_step.who_is_the_activity_for' => 'Para quem é a atividade?',
+    'confirmation_step.organiser' => 'Organizador',
+    'your-changes-have-been-saved' => 'As suas alterações foram guardadas',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Está a usar recursos do Code Week nesta atividade?',
+    'view-activity' => 'Ver atividade',
+    'add-another-activity' => 'Adicionar outra atividade',
 ];

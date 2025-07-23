@@ -286,5 +286,12 @@ return [
     'yes' => 'Evet',
     'no' => 'Hayır',
     'any-address-added-below' => 'Aşağıda eklenen herhangi bir adres, yalnızca davetiyeyle etkinliklerde halka açık olarak gösterilmeyecektir.',
-'if-no-clear-information-provide-estimate' => 'Emin olduğunuz bilgiler yoksa, lütfen bir tahmin sağlayın.',
+    'if-no-clear-information-provide-estimate' => 'Emin olduğunuz bilgiler yoksa, lütfen bir tahmin sağlayın.',
+    'confirmation_step.activity_overview' => 'Etkinlik genel bakışı',
+    'confirmation_step.who_is_the_activity_for' => 'Etkinlik kimler için?',
+    'confirmation_step.organiser' => 'Organizatör',
+    'your-changes-have-been-saved' => 'Değişiklikleriniz kaydedildi',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Bu etkinlikte Code Week kaynaklarını kullanıyor musunuz?',
+    'view-activity' => 'Etkinliği görüntüle',
+    'add-another-activity' => 'Başka etkinlik ekle',
 ];

@@ -313,4 +313,11 @@ return [
     'privacy-policy-terms' => 'popsané v tomto dokumentu',
     'yes' => 'Ano',
     'no' => 'Ne',
+    'confirmation_step.activity_overview' => 'Přehled aktivity',
+    'confirmation_step.who_is_the_activity_for' => 'Pro koho je aktivita?',
+    'confirmation_step.organiser' => 'Organizátor',
+    'your-changes-have-been-saved' => 'Vaše změny byly uloženy',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Používáte pro tuto aktivitu nějaké zdroje Code Week?',
+    'view-activity' => 'Zobrazit aktivitu',
+    'add-another-activity' => 'Přidat další aktivitu',
 ];

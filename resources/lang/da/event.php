@@ -286,4 +286,11 @@ return [
     'privacy-policy-terms' => 'beskrevet i dette dokument',
     'yes' => 'Ja',
     'no' => 'Nej',
+    'confirmation_step.activity_overview' => 'Oversigt over aktivitet',
+    'confirmation_step.who_is_the_activity_for' => 'Hvem er aktiviteten for?',
+    'confirmation_step.organiser' => 'Arrangør',
+    'your-changes-have-been-saved' => 'Dine ændringer er blevet gemt',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Bruger du nogle Code Week-ressourcer i denne aktivitet?',
+    'view-activity' => 'Vis aktivitet',
+    'add-another-activity' => 'Tilføj en anden aktivitet',
 ];

@@ -286,4 +286,11 @@ return [
     'privacy-policy-terms' => 'comme décrit dans ce document',
     'yes' => 'Oui',
     'no' => 'Non',
+    'confirmation_step.activity_overview' => 'Aperçu de l’activité',
+    'confirmation_step.who_is_the_activity_for' => 'À qui s’adresse l’activité ?',
+    'confirmation_step.organiser' => 'Organisateur',
+    'your-changes-have-been-saved' => 'Vos modifications ont été enregistrées',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Utilisez-vous des ressources de la Semaine du Code dans cette activité ?',
+    'view-activity' => 'Voir l’activité',
+    'add-another-activity' => 'Ajouter une autre activité',
 ];

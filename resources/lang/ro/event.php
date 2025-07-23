@@ -288,4 +288,11 @@ return [
     'no' => 'Nu',
     'any-address-added-below' => 'Orice adresă adăugată mai jos nu va fi afișată public pentru activitățile doar pe invitație.',
     'if-no-clear-information-provide-estimate' => 'Dacă nu aveți informații clare, vă rugăm să furnizați o estimare.',
+    'confirmation_step.activity_overview' => 'Prezentare generală a activității',
+    'confirmation_step.who_is_the_activity_for' => 'Pentru cine este activitatea?',
+    'confirmation_step.organiser' => 'Organizator',
+    'your-changes-have-been-saved' => 'Modificările au fost salvate',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Folosești resurse Code Week în această activitate?',
+    'view-activity' => 'Vizualizează activitatea',
+    'add-another-activity' => 'Adaugă o altă activitate',
 ];

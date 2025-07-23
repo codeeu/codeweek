@@ -286,4 +286,11 @@ return [
     'privacy-policy-terms' => 'zoals beschreven in dit document',
     'yes' => 'Ja',
     'no' => 'Nee',
+    'confirmation_step.activity_overview' => 'Overzicht van de activiteit',
+    'confirmation_step.who_is_the_activity_for' => 'Voor wie is de activiteit?',
+    'confirmation_step.organiser' => 'Organisator',
+    'your-changes-have-been-saved' => 'Je wijzigingen zijn opgeslagen',
+    'are-you-using-any-code-week-resources-in-this-activity' => 'Gebruik je bronnen van Code Week in deze activiteit?',
+    'view-activity' => 'Bekijk activiteit',
+    'add-another-activity' => 'Voeg nog een activiteit toe',
 ];
