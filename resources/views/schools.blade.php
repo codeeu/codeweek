@@ -20,9 +20,7 @@
             @foreach($questions as $question)
                 <question :question="{{json_encode($question)}}"></question>
             @endforeach
-
         </section>
-
     </section>
 
 @endsection
