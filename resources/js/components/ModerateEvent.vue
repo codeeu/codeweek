@@ -2,11 +2,13 @@
   <div class="moderate-event">
     <!-- HELLO !!! -->
 
-    <div class="actions" v-if="refresh">
-      <strong>Moderation:</strong>
-      <button @click="approve" class="codeweek-action-button green">Approve</button>
-      <button @click="toggleModal" class="codeweek-action-button">Reject</button>
-      <button @click="toggleDeleteModal" class="codeweek-action-button red">Delete</button>
+    <div class="px-6 flex items-center w-full gap-3" v-if="refresh">
+      <p class="text-default text-slate-500 flex items-center font-semibold p-0">Moderation:</p>
+      <div class="flex justify-between flex-1 items-center">
+        <button @click="approve" class="font-normal w-fit px-3 py-1 bg-dark-blue text-white rounded-full flex items-center">Approve</button>
+        <button @click="toggleModal" class="font-normal w-fit px-3 py-1 bg-primary text-white rounded-full flex items-center">Reject</button>
+        <button @click="toggleDeleteModal" class="font-normal w-fit px-3 py-1 bg-dark-orange text-white rounded-full flex items-center">Delete</button>
+      </div>
     </div>
 
     <div class="h-8 w-full grid grid-cols-3 gap-4 items-center" v-if="!refresh">
