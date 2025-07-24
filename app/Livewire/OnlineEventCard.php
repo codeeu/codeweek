@@ -17,12 +17,14 @@ class OnlineEventCard extends Component
 
     public $baseLanguage;
 
-    public function mount($event, $countryName)
+    public $loop;
+
+    public function mount($event, $countryName, $loop)
     {
         $this->event = $event;
         $this->countryName = $countryName;
         $this->baseLanguage = App::getLocale();
-
+        $this->loop = $loop;
     }
 
     public function render()
