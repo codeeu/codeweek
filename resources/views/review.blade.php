@@ -14,12 +14,10 @@
                     <h1>Pending Activities to review</h1>
                 </div>
             </div>
-
-
         </section>
 
 
-        <div class="bg-gray-50 overflow-hidden rounded-lg">
+        <div class="overflow-hidden bg-gray-50 rounded-lg">
             @role('super admin')
             <div class="mx-20 my-4">
             <country-select :target="'{{$target}}'" :code="'{{$country_iso}}'"
