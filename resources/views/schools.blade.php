@@ -16,9 +16,7 @@
                 <img src="/images/banner_training.svg" class="static-image">
             </div>
         </section>
-
         <section class="codeweek-content-wrapper">
-
             @foreach($questions as $question)
                 <question :question="{{json_encode($question)}}"></question>
             @endforeach
