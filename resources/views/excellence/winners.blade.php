@@ -1,66 +1,87 @@
-@extends('layout.base')
+@extends('layout.new_base')
+
+@php
+    $list = [
+        (object) ['label' => 'Excellence Winners', 'href' => ''],
+    ];
+@endphp
+
+@section('layout.breadcrumb')
+    @include('layout.breadcrumb', ['list' => $list])
+@endsection
 
 @section('content')
-    <section id="codeweek-participation-report-page" class="codeweek-page">
+    <section id="codeweek-privacy-page" class="font-['Blinker'] overflow-hidden">
+        <section class="relative flex overflow-hidden">
+            <div class="flex relative transition-all w-full bg-blue-gradient py-10 tablet:py-20">
+                <div class="w-full overflow-hidden flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                    <div class="codeweek-container-lg flex flex-col">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat']">
+                                Excellence Winners for {{$edition}}
+                            </h2>
+                        </div>
 
-        <section class="codeweek-content-header" style="display: flex; justify-content: space-between;">
-
-            <h1>Excellence Winners for {{$edition}}</h1>
-
-
-            <form action="{{route('excellence_excel')}}" method="post">
-                {{ csrf_field() }}
-
-                <button class="codeweek-action-button" type="submit">
-                    Download Excel
-                </button>
-            </form>
+                        <p class="text-xl font-normal text-white p-0 max-md:max-w-full max-w-[864px]">
+                            {{$total_reported}} events reported out of {{$total_events}} ({{number_format($percentage_reported,2)}}%)
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="codeweek-content-header" style="display: flex; justify-content: space-between;">
-            <h4>{{$total_reported}} events reported out of {{$total_events}} ({{number_format($percentage_reported,2)}}%)</h4></section>
 
-
-        <table class="codeweek-table">
-            <thead>
-            <tr>
-                <th>Code</th>
-                <th><a href="?participants={{request()->input('participants')==-1?1:-1}}"># Participants</a></th>
-                <th><a href="?teachers={{request()->input('teachers')==-1?1:-1}}"># Teachers</a></th>
-                <th><a href="?countries={{request()->input('countries')==-1?1:-1}}"># Countries</a></th>
-                <th><a href="?activities={{request()->input('activities')==-1?1:-1}}"># Activities</a></th>
-                <th><a href="?super={{request()->input('super')==-1?1:-1}}">Super winner</a></th>
-                <th><a href="?reporting={{request()->input('reporting')==-1?1:-1}}">Reporting %</a></th>
-            </tr>
-            </thead>
-            <tbody>
-
-            @if(!$details->isEmpty())
-                @foreach($details as $detail)
-                    <tr>
-                        <td>
-                            <a href="{{route('codeweek4all_details',['code'=>$detail->codeweek_for_all_participation_code])}}">{{$detail->codeweek_for_all_participation_code}}</a>
-                        </td>
-                        <td>{{$detail->total_participants}}</td>
-                        <td>{{$detail->total_creators}}</td>
-                        <td>{{$detail->total_countries}}</td>
-                        <td>{{$detail->total_activities}}</td>
-                        <td>{{$detail->super_winner}}</td>
-                        <td>{{number_format($detail->reporting_percentage,2)}}%</td>
+        <section class="relative z-10 py-10 md:py-20 codeweek-container-lg">
+            <div class="flex gap-4 justify-end">
+                <form action="{{route('excellence_excel')}}" method="post">
+                    {{ csrf_field() }}
+                    <button type="submit"
+                            class="bg-white flex text-nowrap justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                    >
+                        <span>Download Excel</span>
+                    </button>
+                </form>
+                <form action="#" method="get">
+                    <input type="hidden" name="clear_cache" value="1"/>
+                    <button type="submit"
+                            class="bg-white flex text-nowrap justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                    >
+                        <span>Clear Cache</span>
+                    </button>
+                </form>
+            </div>
+            <div class="overflow-hidden rounded-2xl border-2 border-[#B399D6] mt-6">
+                <table class="w-full border-collapse">
+                    <thead>
+                    <tr class="bg-[#410098] text-white">
+                        <th class="border-r border-[#B399D6] px-6 py-4 text-left font-['Montserrat'] font-semibold text-xl">Code</th>
+                        <th class="border-r border-[#B399D6] px-6 py-4 text-left font-['Montserrat'] font-semibold text-xl"><a class="text-white" href="?participants={{request()->input('participants')==-1?1:-1}}"># Participants</a></th>
+                        <th class="border-r border-[#B399D6] px-6 py-4 text-left font-['Montserrat'] font-semibold text-xl"><a class="text-white" href="?teachers={{request()->input('teachers')==-1?1:-1}}"># Teachers</a></th>
+                        <th class="border-r border-[#B399D6] px-6 py-4 text-left font-['Montserrat'] font-semibold text-xl"><a class="text-white" href="?countries={{request()->input('countries')==-1?1:-1}}"># Countries</a></th>
+                        <th class="border-r border-[#B399D6] px-6 py-4 text-left font-['Montserrat'] font-semibold text-xl"><a class="text-white" href="?activities={{request()->input('activities')==-1?1:-1}}"># Activities</a></th>
+                        <th class="border-r border-[#B399D6] px-6 py-4 text-left font-['Montserrat'] font-semibold text-xl"><a class="text-white" href="?super={{request()->input('super')==-1?1:-1}}">Super winner</a></th>
+                        <th class="border-r border-[#B399D6] px-6 py-4 text-left font-['Montserrat'] font-semibold text-xl"><a class="text-white" href="?reporting={{request()->input('reporting')==-1?1:-1}}">Reporting %</a></th>
                     </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
 
-                @endforeach
-            @endif
-
-
-            </tbody>
-        </table>
-        <form action="#" method="get">
-            <input type="hidden" name="clear_cache" value="1"/>
-            <button class="codeweek-blank-button" type="submit">
-                Clear Cache
-            </button>
-        </form>
-
-
+                    @if(!$details->isEmpty())
+                        @foreach($details as $detail)
+                            <tr class="{{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }}">
+                            <td class="border-r border-[#B399D6] px-6 py-4 text-xl">
+                                <a class="text-dark-blue" href="{{route('codeweek4all_details',['code'=>$detail->codeweek_for_all_participation_code])}}">{{$detail->codeweek_for_all_participation_code}}</a>
+                            </td>
+                            <td class="border-r border-[#B399D6] px-6 py-4 text-xl">{{$detail->total_participants}}</td>
+                            <td class="border-r border-[#B399D6] px-6 py-4 text-xl">{{$detail->total_creators}}</td>
+                            <td class="border-r border-[#B399D6] px-6 py-4 text-xl">{{$detail->total_countries}}</td>
+                            <td class="border-r border-[#B399D6] px-6 py-4 text-xl">{{$detail->total_activities}}</td>
+                            <td class="border-r border-[#B399D6] px-6 py-4 text-xl">{{$detail->super_winner}}</td>
+                            <td class="border-r border-[#B399D6] px-6 py-4 text-xl">{{number_format($detail->reporting_percentage,2)}}%</td>
+                        </tr>
+                        @endforeach
+                    @endif
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </section>
 @endsection
