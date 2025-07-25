@@ -75,7 +75,7 @@ class OnlineCalendar extends Component
     {
         $parts = explode('/', $this->selectedDate);
         $this->selectedMonth = $parts[0];
-        $this->selectedYear = $parts[1];
+        $this->selectedYear = $parts[1] ?? null;
 
         $this->events = Event::where($this->whereClause)
             ->whereMonth('start_date', $this->selectedMonth)
