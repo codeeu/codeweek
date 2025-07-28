@@ -36,7 +36,7 @@
         <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(70% 90% at 50% 90%)" ></div>
         <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden xl:block" style="clip-path: ellipse(65% 90% at 50% 90%)" ></div>
         <div class="bg-yellow-50">
-            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
+            <div class="codeweek-container-lg relative pt-10 pb-16 md:pb-28">
                 @if(count($filteredEvents) > 0)
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-10">
                         @foreach($filteredEvents as $event)
