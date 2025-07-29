@@ -2,7 +2,7 @@
     <div class="relative">
         <img src="{{$event->picture_path()}}" class="w-full object-cover h-[200px]" alt="{{$event->title}}" />
     </div>
-    <div class="flex-grow px-6 py-4 flex flex-col justify-between">
+    <div class="flex-grow px-6 py-4 flex flex-col justify-start">
         @can('approve', $event)
             @isset($moderation)
                 @if($event->owner)
@@ -21,7 +21,7 @@
         <div class="text-slate-500 text-default p-0 font-semibold mb-2">
             Activity Date: {{Carbon\Carbon::parse($event->start_date)->isoFormat('llll')}}
         </div>
-        <div class="[&_p]:p-0 [&_p]:empty:hidden space-y-1 text-slate-500 font-normal text-default">
+        <div class="[&_p]:p-0 [&_p]:empty:hidden space-y-1 text-slate-500 font-normal text-default max-h-60 overflow-hidden">
             {!! $event->description !!}
         </div>
     </div>
