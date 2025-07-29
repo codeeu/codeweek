@@ -101,5 +101,7 @@ return [
   'challenges-sub-title'=>'You would like to participate in the EU Code Week but do not really have an idea of what to organise?',
   'challenges-sub-text1'=>'Look no further! Along with EU Code Week partners, we have designed a selection of easy-to-do challenges with concrete examples of how to use them in a classroom or group. There are also guidelines on how to complete the challenges, but you can adapt them so that they suit the needs, interests and age of your participants.',
   'challenges-sub-text2'=>'You can use whatever tools and technologies you like, but we recommend open-source resources. Choose one or several challenges, adapt it to your group or your classroom, and share the results on Instagram to encourage even more colleagues and friends to join the EU Code Week fun!.',
-
+ 'challenges-sub-text3'=>'You can use whatever tools and technologies you like, but we recommend open-source resources. Choose one or several challenges, adapt it to your group or your classroom, and share the results on Instagram to encourage even more colleagues and friends to join the EU Code Week fun!.',
+ 'challenges-sub-text3'=>'You can use whatever tools and technologies you like, but we recommend open-source resources. Choose one or several challenges, adapt it to your group or your classroom, and share the results on Instagram to encourage even more colleagues and friends to join the EU Code Week fun!.',
+ 'challenges-sub-text3' => 'Need help navigating the Challenges? Try our <a class="cookweek-link hover-underline" href=":url" target="_blank" rel="noopener">Roadmap</a> — a simplified tool to explore them step by step.',
 ];
