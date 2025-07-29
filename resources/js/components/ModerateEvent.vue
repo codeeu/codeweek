@@ -2,12 +2,12 @@
   <div class="moderate-event">
     <!-- HELLO !!! -->
 
-    <div class="px-6 flex items-center w-full gap-3" v-if="refresh">
+    <div class="px-5 flex items-center w-full gap-1" v-if="refresh">
       <p class="text-default text-slate-500 flex items-center font-semibold p-0">Moderation:</p>
-      <div class="flex justify-between flex-1 items-center">
-        <button @click="approve" class="font-normal w-fit px-3 py-1 bg-dark-blue text-white rounded-full flex items-center">Approve</button>
-        <button @click="toggleModal" class="font-normal w-fit px-3 py-1 bg-primary text-white rounded-full flex items-center">Reject</button>
-        <button @click="toggleDeleteModal" class="font-normal w-fit px-3 py-1 bg-dark-orange text-white rounded-full flex items-center">Delete</button>
+      <div class="flex justify-end flex-1 items-center gap-1">
+        <button @click="approve" class="font-normal w-fit px-2.5 py-1 bg-dark-blue text-white rounded-full flex items-center">Approve</button>
+        <button @click="toggleModal" class="font-normal w-fit px-2.5 py-1 bg-primary text-white rounded-full flex items-center">Reject</button>
+        <button @click="toggleDeleteModal" class="font-normal w-fit px-2.5 py-1 bg-dark-orange text-white rounded-full flex items-center">Delete</button>
       </div>
     </div>
 

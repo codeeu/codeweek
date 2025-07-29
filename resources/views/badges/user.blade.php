@@ -29,10 +29,10 @@
             <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-3">
                 <span class="font-semibold">Reported events for {{$year}}:</span> {{$user->reported($year)}}
             </p>
-            <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-3">
+            <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-4">
                 <span class="font-semibold">Influencer Bits for {{$year}}:</span> {{$user->influence($year)}}
             </p>
-            <div class="mb-4">
+            <div class="mb-4 rounded-2xl border-2 border-[#B399D6] p-6">
                 <p id="header-1" class="font-semibold p-0 mb-2 text-lg md:text-2xl text-dark-blue">
                     Organiser Badges
                 </p>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mb-4">
+            <div class="mb-4 rounded-2xl border-2 border-[#B399D6] p-6">
                 <p id="header-1" class="font-semibold p-0 mb-2 text-lg md:text-2xl text-dark-blue">
                     Influencer Badges
                 </p>
