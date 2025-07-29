@@ -20,7 +20,7 @@
                 <div class="w-full overflow-hidden flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="codeweek-container-lg flex items-center gap-6">
                         <h2 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat']">
-                            Badges Leaderboard for
+                            Badges Leaderboard
                         </h2>
                     </div>
                 </div>
