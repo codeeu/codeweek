@@ -1,17 +1,114 @@
-@extends('layout.base')
+@extends('layout.new_base')
 
 @section('title', 'EU Code Week Cookie Policy – Manage Your Preferences')
 @section('description', 'Learn how EU Code Week uses cookies to enhance your browsing experience and how you can manage your preferences.')
 
+<style>
+  .cookie-content {
+    a {
+      color: #1C4DA1 !important;
+      font-weight: 600 !important;
+    }
+    p {
+      padding: 0 !important;
+    }
+    .CookieDeclarationType {
+      border: 0;
+      padding: 0;
+    }
+
+    .CookieDeclarationTypeHeader {
+      font-weight: 600;
+      font-size: 24px;
+      font-family: Montserrat;
+      margin: 40px 0 16px 0;
+      color: #1C4DA1;
+    }
+
+    table {
+      border-radius: 16px;
+      border-collapse: separate;
+
+      tr {
+        th {
+          background-color: #410098;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          padding: 16px 24px;
+
+          &:first-child {
+            border-top-left-radius: 16px;
+          }
+          &:last-child {
+            border-top-right-radius: 16px;
+          }
+        }
+        td {
+          font-size: 20px;
+          padding: 16px 24px;
+          border-bottom: 0;
+
+          &:first-child {
+            border-left: 2px solid #B399D6;
+          }
+          &:last-child {
+            border-right: 2px solid #B399D6;
+          }
+        }
+      }
+
+      tr:nth-child(even) {
+        td {
+          background-color: #F5F2FA;
+        }
+      }
+
+      tr:last-child {
+        border-bottom-left-radius: 16px !important;
+        td {
+          border-bottom: 2px solid #B399D6;
+          &:first-child {
+            border-bottom-left-radius: 16px !important;
+          }
+          &:last-child {
+            border-bottom-right-radius: 16px !important;
+          }
+        }
+      }
+    }
+
+    .CookieDeclaration > p {
+      margin-bottom: 32px;
+    }
+    
+    .CookieDeclarationIntro {
+      br {
+        line-height: 0.5;
+      }
+    }
+  }
+</style>
 @section('content')
 
-    <section id="codeweek-privacy-page" class="codeweek-page">
-        <section class="codeweek-content-wrapper cookies" style="margin-top: 0;">
-            <h1 style="margin-bottom:10px;">@lang('cookie_policy.title')</h1>
-            
-            <!-- Cookie Declaration Container -->
-            <div id="cookie-declaration-container"></div>
+    <section id="codeweek-privacy-page" class="bg-white">
+        <section class="relative flex overflow-hidden">
+            <div class="flex relative transition-all w-full bg-blue-gradient py-10 tablet:py-20">
+                <div class="w-full overflow-hidden flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
+                    <div class="codeweek-container-lg flex flex-col">
+                        <h2 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat']">
+                            @lang('cookie_policy.title')
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="bg-white codeweek-container-lg py-10 tablet:py-20 font-[Blinker]">
+            <!-- Cookie Declaration Container -->
+            <div class="cookie-content text-[16px] md:text-xl">
+              <div id="cookie-declaration-container"></div>
+            <div>
         </section>
     </section>
 
