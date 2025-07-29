@@ -43,11 +43,11 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window,document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '981788817415269'); 
+      fbq('init', '981788817415269');
       fbq('track', 'PageView');
     </script>
     <noscript>
-      <img height="1" width="1" 
+      <img height="1" width="1"
       src="https://www.facebook.com/tr?id=981788817415269&ev=PageView
       &noscript=1"/>
     </noscript>
@@ -66,23 +66,27 @@
 </head>
 
 
-<body>
+<body class="new-layout">
 
-<!-- Document Wrapper -->
-<div id="app">
+    <!-- Document Wrapper -->
+    <div>
+        @include('layout.menu')
+        @yield('layout.breadcrumb')
 
+        @yield('layout.video-player')
+        @stack('video-layer-stack')
 
-    @include('layout.menu')
+        <main id="app">
+            @yield("content")
+        </main>
+        <main id="non-vue">
+            @yield("non-vue-content")
+        </main>
 
+        @include('layout.footer')
 
-    <main>
-        @yield("content")
-    </main>
-
-    @include('layout.footer')
-
-{{--    <flash message="{{ session('flash') }}"></flash>--}}
-</div>
+        {{-- <flash message="{{ session('flash') }}"></flash>--}}
+    </div>
 
 <!-- Scripts -->
 <script data-cookieconsent="marketing" async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -22,7 +22,7 @@ import SearchPageComponent from "./components/SearchPageComponent.vue";
 import MatchMakingToolForm from "./components/matchmaking/MatchMakingToolForm.vue";
 import ToolCard from "./components/matchmaking/ToolCard.vue";
 import ToolDetailCard from "./components/matchmaking/ToolDetailCard.vue";
-
+import SelectField from "./components/form-fields/SelectField.vue";
 // import { createI18n } from 'vue-i18n';
 // import Locale from './vue-i18n-locales.generated';
 import AvatarForm from "./components/AvatarForm.vue";
@@ -64,4 +64,5 @@ app.component('ToolCard', ToolCard);
 app.component('ToolDetailCard', ToolDetailCard);
 app.component('EventCard', EventCard);
 app.component('EventDetail', EventDetail);
+app.component('SelectField', SelectField);
 app.mount("#app");
