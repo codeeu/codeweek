@@ -57,8 +57,6 @@ class EventController extends Controller
         //Redirect if we have locations
         $countries = \App\Country::all()->sortBy('name');
 
-        $themes = \App\Theme::orderBy('order', 'asc')->get();
-
         $languages = Arr::sort(Lang::get('base.languages'));
 
         $leading_teachers = $this->getLeadingTeachersTagsArray();
@@ -66,7 +64,7 @@ class EventController extends Controller
         if ($request->get('location')) {
             try {
                 $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
-                return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
+                return view('event.add', compact(['countries', 'languages', 'location', 'leading_teachers']));
             }
             catch (ModelNotFoundException $e) {
                 return redirect(route('activities-locations'));
@@ -79,7 +77,7 @@ class EventController extends Controller
             }
         }
 
-        return view('event.add', compact(['countries', 'themes', 'languages', 'leading_teachers']));
+        return view('event.add', compact(['countries', 'languages', 'leading_teachers']));
     }
 
     public function search(): View
