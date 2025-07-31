@@ -305,7 +305,9 @@ Route::get(
     '/training/making-and-coding',
     [StaticPageController::class, 'static']
 )->name('training.module-22'); */
-Route::post('/contact-submit', [ContactFormController::class, 'submit'])->name('contact.submit');
+Route::post('/contact-submit', [ContactFormController::class, 'submit'])
+    ->middleware('throttle:5,1') // 5 requests per minute per IP
+    ->name('contact.submit');
 Route::get('/resources/CodingAtHome', [CodingAtHomeController::class, 'show'])->name(
     'coding@home'
 );

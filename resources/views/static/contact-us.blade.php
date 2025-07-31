@@ -160,7 +160,7 @@
                         <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Enter message"
                             class="mt-2 px-6 py-3 w-full bg-white rounded-3xl border-2 border-[#A4B8D9] text-slate-600 placeholder-slate-200 focus:outline-none focus:ring-2 focus:ring-primary resize-none">{{ old('message') }}</textarea>
                     </div>
-
+                    
                     <!-- Terms -->
                     <label class="flex gap-2 items-start mt-10 cursor-pointer lg:items-center">
                         <input type="checkbox" id="terms" name="terms" required aria-required="true"
@@ -176,6 +176,7 @@
                   <div class="flex justify-center mt-6">
                         <div class="cf-turnstile"></div>
                         <input type="hidden" id="cf-turnstile-response" name="cf-turnstile-response" />
+                        <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
                     </div>
 
                     <!-- Submit -->
