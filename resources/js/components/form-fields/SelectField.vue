@@ -160,6 +160,7 @@ export default {
 
     const isSelectedOption = (option) => {
       if (props.multiple) {
+        if (!selectedValues.value) return false;
         return selectedValues.value?.some(
           (item) => String(item[props.idName]) === String(option[props.idName])
         );

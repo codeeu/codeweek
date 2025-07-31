@@ -6,9 +6,9 @@
         @can('approve', $event)
             @isset($moderation)
                 @if($event->owner)
-                    <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">Organizer: <span class="font-normal ml-3 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">{{$event->owner->email ?? $event->owner->email_display }}</span></div>
+                    <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">{{$event->owner->email ?? $event->owner->email_display }}</span></div>
                 @else
-                    <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">Organizer: <span class="font-normal ml-3 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">Unknown</span></div>
+                    <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">Unknown</span></div>
                 @endif
             @endisset
         @endcan
