@@ -18,10 +18,10 @@
 
 @section('content')
     <section id="challenges-page" class="font-['Blinker'] overflow-hidden">
-        <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-orange-gradient pt-32 pb-0 md:py-32">
-                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                    <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+        <section class="flex overflow-hidden relative">
+            <div class="flex relative pt-32 pb-0 w-full transition-all bg-orange-gradient md:py-32">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
+                    <div class="flex flex-col gap-28 duration-1000 codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 Challenges
@@ -30,7 +30,7 @@
                                 @lang('challenges.challenges-text')
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
+                        <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2"></div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"
@@ -49,7 +49,7 @@
         </section>
 
         <section class="relative z-10">
-            <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
+            <div class="flex relative z-10 justify-center py-10 md:py-20 codeweek-container-lg">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
                         @lang('challenges.challenges-sub-title')
@@ -57,9 +57,21 @@
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
                         @lang('challenges.challenges-sub-text1')
                     </p>
-                    <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                    <p class="text-[#333E48] mb-6 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
                         @lang('challenges.challenges-sub-text2')
                     </p>
+                  @php
+                        $locale = app()->getLocale();
+                        $roadmapUrl = match ($locale) {
+                            'it' => 'https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Roadmap4teachers_Syllabus_Code+Week_IT.pdf',
+                            default => 'https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Roadmap4teachers_Syllabus_Code+Week_EN.pdf',
+                        };
+                    @endphp
+
+                    <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                        {!! __('challenges.challenges-sub-text3', ['url' => $roadmapUrl]) !!}
+                    </p>
+
                 </div>
             </div>
             <div
@@ -72,13 +84,13 @@
             ></div>
         </section>
 
-        <section class="relative overflow-hidden">
+        <section class="overflow-hidden relative">
             <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(570% 90% at 38% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(288% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(198% 90% at 50% 90%);"></div>
-            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
-                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
+            <div class="hidden absolute w-full h-full bg-yellow-50 md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 lg:block xl:hidden" style="clip-path: ellipse(288% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 xl:block" style="clip-path: ellipse(198% 90% at 50% 90%);"></div>
+            <div class="relative pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
+                <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10">
                     @include('2021._thumbnail', ['slug' => 'careers-as-constellations', 'author'=>'Linda Liukas'])
                     @include('2021._thumbnail', ['slug' => 'air-drawing-with-AI', 'author'=>'Kristina Slišurić'])
 

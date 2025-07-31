@@ -1,130 +1,103 @@
-@extends('layout.base')
+@extends('layout.new_base')
 
 <x-tailwind></x-tailwind>
 <x-alpine></x-alpine>
 
+@php
+    $list = [
+        (object) ['label' => 'My Badges', 'href' => ''],
+    ];
+@endphp
+
+@section('layout.breadcrumb')
+    @include('layout.breadcrumb', ['list' => $list])
+@endsection
+
 @section('content')
-
-    <section id="codeweek-profile-page" class="codeweek-page">
-
-        <!-- This example requires Tailwind CSS v2.0+ -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
-            <div class="max-w-6xl mx-auto">
-                <div class="bg-blue-100 overflow-hidden rounded-lg">
-                    <div class="px-4 py-5 sm:p-6">
-
-
-                        <div class="header">
-
-                            <h1>Badges</h1>
-
-                        </div>
-
-                        <!-- Content goes here -->
-                        <div class="text-base mt-4">
-                            <strong>Name:</strong> {{$user->fullName}}<br/>
-                            <strong>Leading Teacher Tag:</strong> {{$user->tag}}
-                        </div>
-
-                        <div class="text-base mt-4"><strong>Bits earned
-                                in {{$year}}</strong>: {{$user->getPoints($year)}}</div>
-                        <div class="text-base mt-4"><strong>Reported events
-                                for {{$year}}</strong>: {{$user->reported($year)}}</div>
-                        <div class="text-base mt-4"><strong>Influencer Bits
-                                for {{$year}}</strong>: {{$user->influence($year)}}</div>
-
-                        <h2 class="mt-4">Organiser Badges</h2>
-
-
-
-                        <div>
-                            <div class="flex">
-                                <div class="flex-none pt-2">
-                                    <img class="w-5/6 shadow-lg rounded-lg"
-                                         src="{{asset('badges/organiser/organiser_logo.png')}}">
-                                </div>
-
-                                <div class="flex-1 pt-4">
-                                    <div class="text-base italic">
-                                        Go from active to legendary organiser, by organising more Code Week activities and contributing to the map.
-                                    </div>
-                                    <div class="pt-6">
-                                        <nav aria-label="Progress">
-                                            <ol role="list" class="flex items-center">
-
-                                                @foreach($organiserBadges as $achievement)
-                                                    @if(!$loop->last)
-                                                        <li class="relative pr-8 sm:pr-20">
-                                                    @else
-                                                        <li class="relative">
-                                                            @endif
-                                                            @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
-
-                                                                <x-badges.completed :achievement="$achievement"></x-badges.completed>
-
-
-                                                            @else
-
-                                                                <x-badges.locked :achievement="$achievement"></x-badges.locked>
-
-                                                            @endif
-                                                        </li>
-                                                        @endforeach
-                                            </ol>
-                                        </nav>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <h2 class="mt-4">Influencer Badges</h2>
-                        <div>
-                            <div class="flex">
-                                <div class="flex-none pt-2">
-                                    <img class="w-5/6 shadow-lg rounded-lg"
-                                         src="{{asset('badges/influencer/influencer_logo.png')}}">
-                                </div>
-
-                                <div class="flex-1 pt-4">
-                                    <div class="text-base italic">
-                                        Go from influencer to legendary influencer, and earn your place in the record books of Code Week legends. Increase your points by using the Code Week Tag when organising and sharing an activity.
-                                    </div>
-                                    <div class="pt-6">
-                                        <nav aria-label="Progress">
-                                            <ol role="list" class="flex items-center">
-
-                                                @foreach($influencerBadges as $achievement)
-                                                    @if(!$loop->last)
-                                                        <li class="relative pr-8 sm:pr-20">
-                                                    @else
-                                                        <li class="relative">
-                                                        @endif
-                                                            @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
-
-                                                                <x-badges.completed :achievement="$achievement"></x-badges.completed>
-
-
-                                                            @else
-
-                                                                <x-badges.locked :achievement="$achievement"></x-badges.locked>
-
-                                                            @endif
-                                                        </li>
-                                                        @endforeach
-                                            </ol>
-                                        </nav>
-                                    </div>
-                                </div>
-
-                            </div>
+    <section id="codeweek-my-badge-page" class="font-['Blinker'] overflow-hidden">
+        <section class="relative z-10 py-10 md:py-20 codeweek-container">
+            <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">Badges</p>
+            <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-3">
+                <span class="font-semibold">Name:</span> {{$user->fullName}}
+            </p>
+            <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-3">
+                <span class="font-semibold">Leading Teacher Tag:</span> {{$user->tag}}
+            </p>
+            <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-3">
+                <span class="font-semibold">Bits earned in {{$year}}:</span> {{$user->getPoints($year)}}
+            </p>
+            <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-3">
+                <span class="font-semibold">Reported events for {{$year}}:</span> {{$user->reported($year)}}
+            </p>
+            <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-4">
+                <span class="font-semibold">Influencer Bits for {{$year}}:</span> {{$user->influence($year)}}
+            </p>
+            <div class="mb-4 rounded-2xl border-2 border-[#B399D6] p-6">
+                <p id="header-1" class="font-semibold p-0 mb-2 text-lg md:text-2xl text-dark-blue">
+                    Organiser Badges
+                </p>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img class="w-5/6 shadow-lg rounded-lg" src="{{asset('badges/organiser/organiser_logo.png')}}">
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-normal italic text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">Go from active to legendary organiser, by organising more Code Week activities and contributing to the map.</p>
+                        <div class="pt-6">
+                            <nav>
+                                <ol class="list-decimal m-0 ml-4 pl-2">
+                                    @foreach($organiserBadges as $achievement)
+                                        @if(!$loop->last)
+                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500 pr-8 sm:pr-20">
+                                        @else
+                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500">
+                                        @endif
+                                                @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
+                                                    <x-badges.completed :achievement="$achievement"></x-badges.completed>
+                                                @else
+                                                    <x-badges.locked :achievement="$achievement"></x-badges.locked>
+                                                @endif
+                                            </li>
+                                    @endforeach
+                                </ol>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-
-
+            <div class="mb-4 rounded-2xl border-2 border-[#B399D6] p-6">
+                <p id="header-1" class="font-semibold p-0 mb-2 text-lg md:text-2xl text-dark-blue">
+                    Influencer Badges
+                </p>
+                <div class="flex">
+                    <div class="flex-none">
+                        <img class="w-5/6 shadow-lg rounded-lg" src="{{asset('badges/influencer/influencer_logo.png')}}">
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-normal italic text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
+                            Go from influencer to legendary influencer, and earn your place in the record books of Code Week legends. Increase your points by using the Code Week Tag when organising and sharing an activity.
+                        </p>
+                        <div class="pt-6">
+                            <nav>
+                                <ol class="list-decimal m-0 ml-4 pl-2">
+                                    @foreach($influencerBadges as $achievement)
+                                        @if(!$loop->last)
+                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500 pr-8 sm:pr-20">
+                                        @else
+                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500">
+                                                @endif
+                                                @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
+                                                    <x-badges.completed :achievement="$achievement"></x-badges.completed>
+                                                @else
+                                                    <x-badges.locked :achievement="$achievement"></x-badges.locked>
+                                                @endif
+                                            </li>
+                                    @endforeach
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
-
 @endsection

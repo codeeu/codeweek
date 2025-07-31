@@ -1,8 +1,7 @@
 @extends('layout.new_base')
 
-@section('title', 'EU Code Week Values – Empowering Digital Skills for All')
-@section('description', 'Discover the core values of EU Code Week: inclusion, innovation, collaboration, and digital
-    empowerment for everyone.')
+@section('title', 'Get Involved in EU Code Week – Host, Join or Learn')
+@section('description', 'Get started with EU Code Week: Run a coding activity, join a local event, or share your experience using #EUCodeWeek. No experience needed!')
     @php
         $list = [(object) ['label' => 'Get Involved', 'href' => '']];
     @endphp

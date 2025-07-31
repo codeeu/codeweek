@@ -67,6 +67,8 @@ class ResourceItem extends Model
         'teach' => false,
     ];
 
+    protected $appends = ['thumbnail'];
+
     public function scopeFilter($query, ResourceFilters $filters)
     {
         return $filters->apply($query);
@@ -74,13 +76,15 @@ class ResourceItem extends Model
 
     public function getThumbnailAttribute($value)
     {
-
-        if (strncmp($value, 'http', 4) !== 0) {
-            return config('codeweek.resources_url') . $value;
+        if (empty($value)) {
+            $value = $this->attributes['thumbnail'] ?? null;
+        }
+        
+        if (stripos($value, 'http://') === 0 || stripos($value, 'https://') === 0) {
+            return $value;
         }
 
-        return $value;
-
+        return config('codeweek.resources_url') . ltrim($value, '/');
     }
 
     public function levels(): BelongsToMany
