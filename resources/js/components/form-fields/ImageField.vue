@@ -1,75 +1,59 @@
 <template>
   <div>
-    <div>
-      <div
-        class="flex flex-col justify-center items-center gap-2 border-[3px] border-dashed border-dark-blue-200 w-full rounded-2xl py-12 px-8 cursor-pointer"
-        @click="onTriggerFileInput"
-        @dragover.prevent="onDragOver"
-        @dragleave="onDragLeave"
-        @drop.prevent="onDrop"
-      >
-        <div class="mb-4" :class="[!pictureClone && 'hidden']">
-          <img :src="pictureClone" class="mr-1" />
-        </div>
-        <div :class="[!!pictureClone && 'hidden']">
-          <img class="w-16 h-16" src="/images/icon_image.svg" />
-        </div>
-
-        <span class="text-xl text-slate-500">
-          Drop your image here, or
-          <span class="text-dark-blue font-semibold underline">upload</span>
-        </span>
-
-        <span class="text-xs text-slate-500">
-          Max size: 1 Mb, Image formats: .jpg, png
-        </span>
-
-        <input
-          class="hidden"
-          type="file"
-          ref="fileInput"
-          @change="onFileChange"
-        />
+    <!-- Drop/upload area -->
+    <div class="flex flex-col justify-center items-center gap-2 border-[3px] border-dashed border-dark-blue-200 w-full rounded-2xl py-12 px-8 cursor-pointer" @click="onTriggerFileInput" @dragover.prevent="onDragOver" @dragleave="onDragLeave" @drop.prevent="onDrop">
+      <!-- Preview if already uploaded -->
+      <div class="mb-4" :class="[!pictureClone && 'hidden']">
+        <img :src="pictureClone" class="mr-1" />
       </div>
 
-      <div
-        v-if="error"
-        class="flex item-start gap-3 text-error-200 font-semibold mt-2.5 empty:hidden"
-      >
-        <img src="/images/icon_error.svg" />
-        <div class="leading-5">
-          {{ error }}
-        </div>
+      <!-- Placeholder icon -->
+      <div :class="[!!pictureClone && 'hidden']">
+        <img class="w-16 h-16" src="/images/icon_image.svg" />
+      </div>
+
+      <!-- Drop/upload text -->
+      <span class="text-xl text-slate-500">
+        {{ $t('event.drop-your-image-here-or-upload') }}
+      </span>
+
+      <!-- Max size/formats -->
+      <span class="text-xs text-slate-500">
+        {{ $t('event.max-size-1mb-image-formats-jpg-png') }}
+      </span>
+
+      <input class="hidden" type="file" ref="fileInput" @change="onFileChange" />
+    </div>
+
+    <!-- Error message -->
+    <div v-if="error" class="flex gap-3 mt-2.5 font-semibold item-start text-error-200">
+      <img src="/images/icon_error.svg" />
+      <div class="leading-5">
+        {{ error }}
       </div>
     </div>
 
-    <div class="w-full flex gap-2.5 mt-4">
+    <!-- Permissions info -->
+    <div class="flex gap-2.5 mt-4 w-full">
       <img class="flex-shrink-0 w-6 h-6" src="/images/icon_info.svg" />
-
-      <div class="text-slate-500 text-xs mt-1">
-        By submitting images through this form, you confirm that:
-        <ul class="list-disc pl-4 my-4">
+      <div class="mt-1 text-xs text-slate-500">
+        {{ $t('event.by-submitting-images-through-this-form-you-confirm-that') }}
+        <ul class="pl-4 my-4 list-disc">
+          <li>{{ $t('event.you-have-obtained-all-necessary-permissions') }}</li>
           <li>
-            You have obtained all necessary permissions from the school,
-            organisation, and/or parents/guardians of the children and the
-            adults appearing in the photos.
+            {{ $t('event.you-will-not-submit-any-images-with-faces-directly-visible-or-identifiable') }}
+            {{ $t('event.if-this-is-the-case-ensure-faces-are-blurred') }}
+            {{ $t('event.submissions-that-do-not-comply-will-not-be-accepted') }}
           </li>
-          <li>
-            You will not submit any images in which the faces of children are
-            directly visible or identifiable. If this is the case, please ensure
-            that the children's faces are appropriately blurred. Submissions
-            that do not comply will not be accepted.
-          </li>
-          <li>
-            You understand and agree that these images will be shared on our
-            website along with the description of the activity and may be use
-            for promotional purposes.
-          </li>
+          <li>{{ $t('event.you-understand-and-agree-images-will-be-shared') }}</li>
         </ul>
       </div>
     </div>
 
-    <div class="text-xs text-slate-500"><b>Info</b>: Max size: 1MB</div>
+    <!-- Bottom info line -->
+    <div class="text-xs text-slate-500">
+      {{ $t('event.info-max-size-1mb') }}
+    </div>
 
     <Flash />
   </div>
@@ -78,19 +62,14 @@
 <script>
 import { ref } from 'vue';
 import axios from 'axios';
-import ImageUpload from '../ImageUpload.vue';
 import Flash, { emitter } from '../Flash.vue';
 
 export default {
-  components: { ImageUpload, Flash },
+  components: { Flash },
   props: {
     name: {
       type: String,
       default: 'picture',
-    },
-    image: {
-      type: String,
-      default: '',
     },
     picture: {
       type: String,
@@ -99,59 +78,45 @@ export default {
   },
   emits: ['onChange'],
   setup(props, { emit }) {
-    const isDragOver = ref(false);
     const fileInput = ref(null);
-
     const pictureClone = ref(props.picture || '');
     const error = ref('');
 
-    const onTriggerFileInput = () => {
-      fileInput.value?.click();
+    const onTriggerFileInput = () => fileInput.value?.click();
+    const onDragOver = () => { };
+    const onDragLeave = () => { };
+    const onDrop = (e) => {
+      const [file] = e.dataTransfer.files;
+      if (file) persist(file);
     };
-
-    const onDragOver = () => {
-      isDragOver.value = true;
-    };
-
-    const onDragLeave = () => {
-      isDragOver.value = false;
-    };
-
-    const onDrop = (event) => {
-      isDragOver.value = false;
-      const [file] = event.dataTransfer.files;
+    const onFileChange = (e) => {
+      const [file] = e.target.files;
       if (file) persist(file);
     };
 
-    const onFileChange = (event) => {
-      const [file] = event.target.files;
-      if (file) persist(file);
-    };
-
-    const persist = (picture) => {
-      let data = new FormData();
-      data.append('picture', picture);
+    function persist(file) {
+      const data = new FormData();
+      data.append('picture', file);
 
       axios
         .post(`/api/events/picture`, data)
-        .then((result) => {
+        .then((res) => {
           error.value = '';
-          pictureClone.value = result.data.path;
+          pictureClone.value = res.data.path;
           emitter.emit('flash', {
             message: 'Picture uploaded!',
             level: 'success',
           });
-          emit('onChange', result.data);
+          emit('onChange', res.data);
         })
         .catch((err) => {
-          if (err.response.data.errors && err.response.data.errors.picture) {
-            error.value = err.response.data.errors.picture[0];
-          } else {
-            error.value = 'Image is too large. Maximum is 1Mb';
-          }
-          emitter.emit('flash', { message: error.value, level: 'error' });
+          const msg =
+            err.response?.data?.errors?.picture?.[0] ||
+            'Image is too large. Maximum is 1Mb';
+          error.value = msg;
+          emitter.emit('flash', { message: msg, level: 'error' });
         });
-    };
+    }
 
     return {
       fileInput,
