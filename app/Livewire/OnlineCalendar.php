@@ -46,35 +46,36 @@ class OnlineCalendar extends Component
             'year(start_date) year, month(start_date) month, monthname(start_date) monthname, count(*) data'
         )
             ->where($this->whereClause)
-//            ->where('start_date', '>=', Carbon::now())
             ->where('start_date', '>=', \Carbon\Carbon::now()->firstOfMonth())
             ->groupBy('year', 'month','monthname')
             ->orderBy('year', 'asc')
             ->orderBy('month', 'asc')
             ->get();
-
-        $this->months = [];
-
-        foreach ($byMonths as $result) {
-            $this->months[$result->month.'/'.$result->year] =
-                $result->monthname.' '.$result->year;
+    
+        // Format months as objects
+        $this->months = $byMonths->map(function ($result) {
+            return [
+                'id' => $result->month.'/'.$result->year,
+                'name' => $result->monthname.' '.$result->year
+            ];
+        })->toArray();
+    
+        // Update logic for accessing first item
+        if (!empty($this->months)) {
+            $firstMonthId = $this->months[0]['id'];
+            $parts = explode('/', $firstMonthId);
+            if ($parts[0] !== $this->selectedMonth) {
+                $this->selectedMonth = $parts[0];
+            }
+            $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
         }
-
-        //Go back to start of array to get the first item
-        reset($this->months);
-        $parts = explode('/', key($this->months));
-        if ($parts[0] !== $this->selectedMonth) {
-            $this->selectedMonth = $parts[0];
-        }
-
-        $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
     }
 
     public function render()
     {
         $parts = explode('/', $this->selectedDate);
         $this->selectedMonth = $parts[0];
-        $this->selectedYear = $parts[1];
+        $this->selectedYear = $parts[1] ?? null;
 
         $this->events = Event::where($this->whereClause)
             ->whereMonth('start_date', $this->selectedMonth)
@@ -107,7 +108,21 @@ class OnlineCalendar extends Component
         $languages = $this->events
             ->groupBy('language')
             ->keys()
-            ->all();
+            ->filter(function ($language) {
+                return !empty($language);
+            })
+            ->map(function ($language) {
+                return [
+                    'id' => $language,
+                    'name' => __("base.languages.{$language}")
+                ];
+            })
+            ->values()
+            ->prepend([
+                'id' => '',
+                'name' => 'All Languages'
+            ])
+            ->toArray();
 
         return view('livewire.online-calendar', [
             'countries' => $countries,
