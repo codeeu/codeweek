@@ -125,6 +125,13 @@ return [
         'invite-in-person' => 'Veranstaltung für geladene Gäste',
     ],
 
+    'duration' => [
+      '0-1-hour' => '0-1 hours',
+      '1-2-hours' => '1-2 hours',
+      '2-4-hours' => '2-4 hours',
+      'more-than-4-hours' => 'longer than 4 hours',
+    ],
+
     'privacy' => 'Ich habe die in diesem Dokument beschriebenen Datenschutzbestimmungen gelesen und bin damit einverstanden',
     'country' => 'Land',
     'loading' => 'Laden...',
