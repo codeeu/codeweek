@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -10,6 +11,12 @@ class ContactFormController extends Controller
 {
     public function submit(Request $request)
     {
+        // Honeypot field: bot filled
+        if ($request->filled('website')) {
+            Log::warning('Spam detected: honeypot field filled', ['ip' => $request->ip()]);
+            abort(403, 'Spam detected.');
+        }
+
         $validated = $request->validate([
             'first_name' => 'required|string|max:255',
             'last_name'  => 'required|string|max:255',
@@ -21,7 +28,7 @@ class ContactFormController extends Controller
             'cf-turnstile-response' => env('TURNSTILE_SECRET_KEY') ? 'required' : 'nullable',
         ]);
 
-        // Validate Turnstile CAPTCHA if keys are present
+        // Verify CAPTCHA via Cloudflare Turnstile
         if (env('TURNSTILE_SECRET_KEY')) {
             $response = Http::asForm()->post('https://challenges.cloudflare.com/turnstile/v0/siteverify', [
                 'secret'   => env('TURNSTILE_SECRET_KEY'),
@@ -30,31 +37,27 @@ class ContactFormController extends Controller
             ]);
 
             if (!$response->json('success')) {
-                return redirect()->back()
+                return back()
                     ->withInput()
                     ->withErrors(['captcha' => 'CAPTCHA verification failed. Please try again.']);
             }
         }
 
-        Log::info('Contact form submitted', $validated);
+        Log::info('Contact form submitted', [
+            'ip' => $request->ip(),
+            'name' => $validated['first_name'] . ' ' . $validated['last_name'],
+            'email' => $validated['email'],
+        ]);
 
         $locale = app()->getLocale();
-        $view = "emails.$locale.contact";
+        $view = view()->exists("emails.$locale.contact") ? "emails.$locale.contact" : 'emails.en.contact';
 
-        // Fallback to English view if the localized one doesn't exist
-        if (!view()->exists($view)) {
-            $view = 'emails.en.contact';
-        }
-
-        // Use email from .env, fallback to your address if missing
-        $recipientEmail = env('CONTACT_FORM_RECIPIENT_EMAIL', 'bernard@matrixinternet.ie');
-
-        Mail::send($view, ['data' => $validated], function ($message) use ($validated, $recipientEmail) {
-            $message->to($recipientEmail)
+        Mail::send($view, ['data' => $validated], function ($message) use ($validated) {
+            $message->to(env('CONTACT_FORM_RECIPIENT_EMAIL', 'bernard@matrixinternet.ie'))
                     ->subject('New Contact Form Submission')
                     ->replyTo($validated['email'], $validated['first_name'] . ' ' . $validated['last_name']);
         });
 
-        return redirect()->back()->with('success', 'Thank you for contacting us.');
+        return back()->with('success', 'Thank you for contacting us.');
     }
 }

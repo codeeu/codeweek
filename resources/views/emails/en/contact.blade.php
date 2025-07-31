@@ -10,4 +10,4 @@
     <p><strong>Subject:</strong> {{ ucfirst($data['subject']) }}</p>
 @endif
 <p><strong>Message:</strong></p>
-<p>{{ nl2br(e($data['message'])) }}</p>
+<p>{!! nl2br(e($data['message'])) !!}</p>
