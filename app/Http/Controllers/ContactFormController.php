@@ -42,13 +42,11 @@ class ContactFormController extends Controller
                     ->withErrors(['captcha' => 'CAPTCHA verification failed. Please try again.']);
             }
         }
-
         Log::info('Contact form submitted', [
             'ip' => $request->ip(),
             'name' => $validated['first_name'] . ' ' . $validated['last_name'],
             'email' => $validated['email'],
         ]);
-
         $locale = app()->getLocale();
         $view = view()->exists("emails.$locale.contact") ? "emails.$locale.contact" : 'emails.en.contact';
 

@@ -218,7 +218,7 @@ export default {
     CheckboxField,
   },
   setup(props, { emit }) {
-    console.log('event', props.event);
+    // console.log('event', props.event);
     const { stepTitles } = useDataOptions();
 
     const newEvent = ref(null);

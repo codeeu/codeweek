@@ -5,6 +5,10 @@
     </div>
 
     <div class="flex-grow flex flex-col gap-2 px-6 py-4">
+      <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">
+        Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">{{ event.organizer || 'Unknown' }}</span>
+      </div>
+
       <div v-if="eventTags.length" class="flex gap-2 flex-wrap mb-2">
         <template v-for="{ title, highlight } in eventTags">
           <span
