@@ -373,4 +373,7 @@ return [
     'confirmation_step.activity_overview' => 'Activity overview',
     'confirmation_step.who_is_the_activity_for' => 'Who is the activity for',
     'confirmation_step.organiser' => 'Organiser',
+    'your-changes-have-been-saved' => 'Your CHnages have been saved',
+    'view-activity' => 'View activity',
+    'add-another-activity' => 'Add another activity',
 ];
