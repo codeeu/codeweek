@@ -377,4 +377,8 @@ return [
     'edit-your-codeweek-activity' => 'Edit your Codeweek activity',
     'view-activity' => 'View Activity',
     'add-another-activity' => 'Add another Activity'
+    'event.view-activity' => 'View activity',
+    'event.add-another-activity' => 'Add another activity',
+    'event.audience.Pre-primary education' => 'Pre-primary education',
+    'event.your-changes-have-been-saved' => 'Your CHnages have been saved',
 ];
