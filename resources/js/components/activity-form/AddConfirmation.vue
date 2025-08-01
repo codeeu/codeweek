@@ -21,12 +21,8 @@
   </div>
 </template>
 
-<script setup>
-import { trans } from 'laravel-vue-i18n';
-</script>
-
 <script>
-
+import { trans } from 'laravel-vue-i18n';
 import { computed } from 'vue';
 import _ from 'lodash';
 import { useDataOptions } from './mixins.js';
@@ -163,7 +159,7 @@ export default {
     });
 
     return {
-      stepDataList,
+      stepDataList, trans
     };
   },
 };
