@@ -328,6 +328,7 @@ return [
         'invite-online' => 'Invite-only online activity',
         'open-in-person' => 'Open in-person activity',
         'invite-in-person' => 'Invite-only in-person activity',
+        'offline' => 'Offline',
     ],
     'activitytype.label' => 'Activity type',
     'activitytype.placeholder' => '',
@@ -377,8 +378,6 @@ return [
     'edit-your-codeweek-activity' => 'Edit your Codeweek activity',
     'view-activity' => 'View Activity',
     'add-another-activity' => 'Add another Activity',
-    'event.view-activity' => 'View activity',
-    'event.add-another-activity' => 'Add another activity',
-    'event.audience.Pre-primary education' => 'Pre-primary education',
-    'event.your-changes-have-been-saved'   => 'Your changes have been saved',
+    'back-to-map-page' => 'Back to map page',
+    'image-attached' => 'Image Attached'
 ];

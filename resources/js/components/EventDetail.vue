@@ -65,7 +65,7 @@
           </div>
         </div>
 
-        <div v-if="event.recurring_event" class="mb-6">
+        <div v-if="event.recurring_event && recurringFrequentlyMap[event.recurring_event]" class="mb-6">
           <p class="p-0 mb-2 font-semibold text-slate-500">Recurring event:</p>
           <div class="flex flex-wrap gap-2">
             <div
@@ -148,9 +148,6 @@
         </div>
 
         <div class="mb-6 [&_p]:empty:hidden">
-          <p class="p-0 mb-2 font-semibold text-slate-500">
-             {{ event.description }}
-          </p>
           <div
             class="text-[#20262C] font-normal p-0 mb-6 space-y-2 [&_p]:py-0"
             v-html="event.description"
