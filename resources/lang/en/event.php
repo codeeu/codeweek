@@ -328,6 +328,7 @@ return [
         'invite-online' => 'Invite-only online activity',
         'open-in-person' => 'Open in-person activity',
         'invite-in-person' => 'Invite-only in-person activity',
+        'offline' => 'Offline',
     ],
     'activitytype.label' => 'Activity type',
     'activitytype.placeholder' => '',
@@ -373,4 +374,10 @@ return [
     'confirmation_step.activity_overview' => 'Activity overview',
     'confirmation_step.who_is_the_activity_for' => 'Who is the activity for',
     'confirmation_step.organiser' => 'Organiser',
+    'your-changes-have-been-saved' => 'Your changes have been saved',
+    'edit-your-codeweek-activity' => 'Edit your Codeweek activity',
+    'view-activity' => 'View Activity',
+    'add-another-activity' => 'Add another Activity',
+    'back-to-map-page' => 'Back to map page',
+    'image-attached' => 'Image Attached'
 ];

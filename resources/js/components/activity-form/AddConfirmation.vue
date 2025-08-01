@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import { computed } from 'vue';
 import { trans } from 'laravel-vue-i18n';
+import { computed } from 'vue';
 import _ from 'lodash';
 import { useDataOptions } from './mixins.js';
 
@@ -105,8 +105,12 @@ export default {
         { label: trans('event.theme-title'), value: themeValues.join(', ') },
         { label: trans('event.activity-description'), htmlValue: description },
       ];
+      
+      const audienceValues = (audience || [])
+        .map(item => props.audiences.find(({ id }) => id === item))
+        .filter(aud => aud)
+        .map(aud => aud.name);
 
-      const audienceValues = (audience || []).map(item => props.audiences.find(({ id }) => id === item)?.name).map(name => trans(`event.audience.${name}`));
       const participantsValue = [
         participants_count || 0,
         [
@@ -155,7 +159,7 @@ export default {
     });
 
     return {
-      stepDataList,
+      stepDataList, trans
     };
   },
 };
