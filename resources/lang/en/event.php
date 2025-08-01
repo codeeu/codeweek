@@ -376,8 +376,8 @@ return [
     'your-changes-have-been-saved' => 'Your Changes have been saved',
     'view-activity' => 'View activity',
     'add-another-activity' => 'Add another activity',
-    'event.view-activity'               => 'View activity',
-    'event.add-another-activity'        => 'Add another activity',
+    'event.view-activity' => 'View activity',
+    'event.add-another-activity' => 'Add another activity',
     'event.audience.Pre-primary education' => 'Pre-primary education',
     'event.your-changes-have-been-saved'   => 'Your changes have been saved',
 ];
