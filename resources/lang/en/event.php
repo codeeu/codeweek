@@ -373,4 +373,8 @@ return [
     'confirmation_step.activity_overview' => 'Activity overview',
     'confirmation_step.who_is_the_activity_for' => 'Who is the activity for',
     'confirmation_step.organiser' => 'Organiser',
+    'your-changes-have-been-saved' => 'Your changes have been saved',
+    'edit-your-codeweek-activity' => 'Edit your Codeweek activity',
+    'view-activity' => 'View Activity',
+    'add-another-activity' => 'Add another Activity'
 ];
