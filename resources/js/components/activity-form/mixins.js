@@ -117,20 +117,6 @@ export function useDataOptions() {
     buildOptionMap(themeOptions.value)
   );
 
-  const audienceOptions = ref([]);
-
-  onMounted(async () => {
-    const response = await axios.get('/api/audiences');
-    audienceOptions.value = response.data.map((audience) => ({
-      id: audience.id,
-      name: trans(`event.${audience.slug}`),
-    }));
-  });
-
-  const audienceOptionsMap = computed(() =>
-    buildOptionMap(audienceOptions.value)
-  );
-
   return {
     stepTitles,
     activityFormatOptions,
@@ -148,7 +134,5 @@ export function useDataOptions() {
     organizerTypeOptionsMap,
     themeOptions,
     themeOptionsMap,
-    audienceOptions,
-    audienceOptionsMap,
   };
 }
