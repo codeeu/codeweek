@@ -1,24 +1,24 @@
-<div class="flex flex-col rounded-lg bg-white overflow-hidden">
+<div class="flex overflow-hidden flex-col bg-white rounded-lg">
     <div class="relative">
         <img src="{{$event->picture_path()}}" class="w-full object-cover h-[200px]" alt="{{$event->title}}" />
     </div>
-    <div class="flex-grow px-6 py-4 flex flex-col justify-start">
+    <div class="flex flex-col flex-grow justify-start px-6 py-4">
         @can('approve', $event)
             @isset($moderation)
                 @if($event->owner)
-                    <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">{{$event->owner->email ?? $event->owner->email_display }}</span></div>
+                    <div class="flex items-center mb-2 font-semibold text-default text-slate-500">Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">{{$event->owner->email ?? $event->owner->email_display }}</span></div>
                 @else
-                    <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">Unknown</span></div>
+                    <div class="flex items-center mb-2 font-semibold text-default text-slate-500">Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">Unknown</span></div>
                 @endif
             @endisset
         @endcan
         <p class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat']">
             {{ $event->title }}
         </p>
-        <div class="text-slate-500 text-default p-0 font-semibold mb-2">
+        <div class="p-0 mb-2 font-semibold text-slate-500 text-default">
             Updated at: {{Carbon\Carbon::parse($event->updated_at)->isoFormat('llll')}}
         </div>
-        <div class="text-slate-500 text-default p-0 font-semibold mb-2">
+        <div class="p-0 mb-2 font-semibold text-slate-500 text-default">
             Activity Date: {{Carbon\Carbon::parse($event->start_date)->isoFormat('llll')}}
         </div>
         <div class="[&_p]:p-0 [&_p]:empty:hidden space-y-1 text-slate-500 font-normal text-default max-h-60 overflow-hidden">
@@ -36,9 +36,9 @@
             href="{{$event->path()}}"
         >
             <span>@lang('myevents.view')</span>
-            <div class="flex gap-2 w-4 overflow-hidden">
-                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
-                <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+            <div class="flex overflow-hidden gap-2 w-4">
+                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
             </div>
         </a>
     </div>
