@@ -91,6 +91,7 @@
           <FieldWrapper horizontal label="Language">
             <SelectField
               multiple
+              searchable
               return-object
               placeholder="Select language"
               v-model="filters.languages"
@@ -101,6 +102,7 @@
           <FieldWrapper horizontal label="Country">
             <SelectField
               multiple
+              searchable
               return-object
               id-name="iso"
               placeholder="Select country"
@@ -188,6 +190,7 @@
               <FieldWrapper horizontal label="Format">
                 <SelectField
                   multiple
+                  searchable
                   return-object
                   placeholder="Select format"
                   v-model="filters.formats"
@@ -199,6 +202,7 @@
               <FieldWrapper horizontal label="Activity type">
                 <SelectField
                   multiple
+                  searchable
                   return-object
                   placeholder="Select type"
                   v-model="filters.types"
@@ -210,6 +214,7 @@
               <FieldWrapper horizontal label="Audience">
                 <SelectField
                   multiple
+                  searchable
                   return-object
                   placeholder="Select audience"
                   v-model="filters.audiences"
@@ -221,6 +226,7 @@
               <FieldWrapper horizontal label="Age range">
                 <SelectField
                   multiple
+                  searchable
                   return-object
                   placeholder="Select range"
                   v-model="filters.ages"
@@ -232,6 +238,7 @@
               <FieldWrapper horizontal label="Themes">
                 <SelectField
                   multiple
+                  searchable
                   return-object
                   placeholder="Select themes"
                   v-model="filters.themes"
@@ -281,6 +288,7 @@ import SelectField from './form-fields/SelectField.vue';
 import InputField from './form-fields/InputField.vue';
 
 import { useDataOptions } from './activity-form/mixins.js';
+import { useQueryParams } from '../composables/useQueryParams.js';
 
 export default {
   name: 'SearchPageComponent',
@@ -312,6 +320,8 @@ export default {
     const { activityFormatOptions, activityTypeOptions, ageOptions } =
       useDataOptions();
 
+    const { queryParams, onChangeQueryParams } = useQueryParams();
+
     const isLoading = ref(true);
     const mapContainerRef = ref(null);
     const mapInstance = ref(null);
@@ -321,7 +331,7 @@ export default {
     const errors = ref(null);
 
     const emptyFilters = {
-      query: '',
+      query: props.prpQuery || '',
       languages: [],
       countries: [],
       start_date: '',
@@ -330,13 +340,12 @@ export default {
       audiences: [],
       ages: [],
       themes: [],
+      year: { id: new Date().getFullYear(), name: new Date().getFullYear() },
+      countries: props.prpSelectedCountry || [],
     };
 
     const filters = ref({
       ...emptyFilters,
-      query: props.prpQuery || '',
-      year: { id: new Date().getFullYear(), name: new Date().getFullYear() },
-      countries: props.prpSelectedCountry || [],
     });
 
     const pagination = ref({
@@ -362,6 +371,55 @@ export default {
         name: value,
       }))
     );
+
+    const handleUpdateParams = () => {
+      const updatedParams = {
+        page: pagination.value.current_page,
+        query: filters.value.query,
+        year: filters.value.year?.id,
+        start_date: filters.value.start_date,
+        languages: filters.value.languages?.map((i) => i.id).join(','),
+        countries: filters.value.countries?.map((i) => i.iso).join(','),
+        formats: filters.value.formats?.map((i) => i.id).join(','),
+        types: filters.value.types?.map((i) => i.id).join(','),
+        audiences: filters.value.audiences?.map((i) => i.id).join(','),
+        ages: filters.value.ages?.map((i) => i.id).join(','),
+        themes: filters.value.themes?.map((i) => i.id).join(','),
+      };
+      console.log('updatedParams', updatedParams);
+      onChangeQueryParams(updatedParams);
+    };
+
+    const onInitFilters = () => {
+      const params = queryParams.value;
+      console.log('init params', params);
+
+      const mapList = (listVal, options, key = 'id') => {
+        return (listVal || '')
+          .split(',')
+          .map((val) => options.find((op) => String(op[key]) === String(val)))
+          .filter((i) => !!i);
+      };
+      if (params.page) {
+        pagination.value.current_page = params.page;
+      }
+
+      filters.value = {
+        ...emptyFilters,
+        query: params.query || '',
+        start_date: params.start_date || '',
+        year: params.year
+          ? { id: params.year, name: params.year }
+          : emptyFilters.year,
+        languages: mapList(params.languages, languageOptions.value),
+        countries: mapList(params.countries, props.countrieslist, 'iso'),
+        formats: mapList(params.formats, activityFormatOptions.value),
+        types: mapList(params.types, activityTypeOptions.value),
+        audiences: mapList(params.audiences, props.audienceslist),
+        ages: mapList(params.ages, ageOptions.value),
+        themes: mapList(params.themes, props.themeslist),
+      };
+    };
 
     const tags = computed(() => {
       const result = [
@@ -423,6 +481,8 @@ export default {
       if (isPagination) {
         url = `/search?page=${pagination.value.current_page}`;
       }
+
+      handleUpdateParams();
 
       const requestData = {
         ...filters.value,
@@ -623,7 +683,7 @@ export default {
     const handleInitMap = () => {
       mapInstance.value = L.map('mapid');
       mapInstance.value.setView([51, 10], 5);
-      
+
       L.tileLayer(props.mapTileUrl, {
         maxZoom: 18,
         attribution: '© <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -648,7 +708,10 @@ export default {
     };
 
     onMounted(() => {
-      onSubmit();
+      setTimeout(() => {
+        onInitFilters();
+        onSubmit();
+      }, 100);
 
       // document.addEventListener('leaflet-ready', () => {
       setTimeout(() => {
