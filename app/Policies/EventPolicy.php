@@ -42,7 +42,7 @@ class EventPolicy
             return false;
         }
 
-        if ($user->email === $event->owner->email) {
+        if ($event->owner && $user->email === $event->owner->email) {
             return true;
         }
 
@@ -84,7 +84,7 @@ class EventPolicy
             return false;
         }
 
-        if ($user->email === $event->owner->email) {
+        if ($event->owner && $user->email === $event->owner->email) {
             return true;
         }
 
@@ -105,7 +105,7 @@ class EventPolicy
             }
         }
 
-        if ($user->email === $event->owner->email) {
+        if ($event->owner && $user->email === $event->owner->email) {
             return true;
         }
 

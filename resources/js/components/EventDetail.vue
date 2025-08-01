@@ -13,6 +13,15 @@
           {{ fromText }} - {{ toText }}
         </p>
 
+        <div class="mb-6">
+          <p class="text-slate-500 font-semibold p-0 mb-2">
+            Organizer:
+          </p>
+          <p class="text-[#20262C] font-normal p-0 mb-6">
+            {{ event.organizer || 'Unknown' }}
+          </p>
+        </div>
+
         <div v-if="event.activity_format" class="mb-6">
           <p class="p-0 mb-2 font-semibold text-slate-500">
             Format of the activity:
