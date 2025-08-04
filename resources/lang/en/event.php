@@ -379,5 +379,5 @@ return [
     'view-activity' => 'View Activity',
     'add-another-activity' => 'Add another Activity',
     'back-to-map-page' => 'Back to map page',
-    'image-attached' => 'Image Attached'
+    'image-attached' => 'Image Attached',
 ];
