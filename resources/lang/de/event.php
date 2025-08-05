@@ -110,7 +110,7 @@ return [
     'over-25-adults' => 'Über 25 Jahre – Erwachsene',
     'is-this-an-extracurricular-activity' => 'Handelt es sich um eine außerschulische Aktivität?*',
     'is-this-an-activity-within-the-standard-school-curriculum' => 'Handelt es sich um eine Aktivität im regulären Schulunterricht?',
-    'code-week-4-all-code-optional' => '„Code Week 4 All“-Code (optional)',
+    'code-week-4-all-code-optional' => 'Code Week 4 All -Code (optional)',
     'leading-teachers-optional' => 'Leitende Lehrkräfte (optional)',
     'image-optional' => 'Bild (optional)',
     'drop-your-image-here-or-upload' => 'Ziehe dein Bild hierher oder lade es hoch',
@@ -298,4 +298,5 @@ return [
     'view-activity' => 'Aktivität ansehen',
     'add-another-activity' => 'Weitere Aktivität hinzufügen',
     'image-attached' => 'Image Attached',
+    'if-no-clear-information-provide-estimate' => 'Wenn keine klaren Informationen vorliegen, gib eine Schätzung ab.'
 ];
