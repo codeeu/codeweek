@@ -54,7 +54,7 @@ return [
     'online_events' => 'Online-Aktivitäten',
     'featured_activities' => 'Hervorgehobene Aktivitäten',
     'codeweek2020' => 'Ausgabe 2020',
-    'register_activity' => 'Online-Kurse',
+    'register_activity' => 'Aktivität hinzufügen',
     'select_language' => 'Sprache auswählen',
     'search_site' => 'Site durchsuchen',
     'what_you_looking_for' => 'Wonach suchst du?',
