@@ -90,7 +90,10 @@ export default {
       const endDateValue = end_date ? new Date(end_date).toISOString().slice(0, 10) : '';
       const isRecurring = is_recurring_event_local === 'true';
       const recurringType = recurringTypeOptionsMap.value[recurring_type];
-      const themeValues = (theme || []).map(id => props.themes.find(t => t.id === id)?.name).map(name => trans(`event.theme.${name}`));
+      const themeValues = (theme || [])
+        .map(item => props.themes.find(({ id }) => id === item))
+        .filter(aud => aud)
+        .map(aud => aud.name);
 
       const step1List = [
         { label: trans('event.title.label'), value: title },
