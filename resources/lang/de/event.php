@@ -11,7 +11,8 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-      'banner-section' => 'Banner-Sektion',
+    'if-no-clear-information-provide-estimate' => 'Wenn keine klaren Informationen vorliegen, gib eine Schätzung ab.',
+    'banner-section' => 'Banner-Sektion',
     'add-your-codeweek-activity' => 'Code Week-Aktivität eintragen',
     'edit-your-codeweek-activity' => 'Code Week-Aktivität bearbeiten',
     'join-the-community' => 'Werde Teil der Community',
@@ -298,5 +299,4 @@ return [
     'view-activity' => 'Aktivität ansehen',
     'add-another-activity' => 'Weitere Aktivität hinzufügen',
     'image-attached' => 'Image Attached',
-    'if-no-clear-information-provide-estimate' => 'Wenn keine klaren Informationen vorliegen, gib eine Schätzung ab.'
 ];
