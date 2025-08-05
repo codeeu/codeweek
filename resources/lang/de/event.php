@@ -297,4 +297,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Verwenden Sie Ressourcen der Code Week in dieser Aktivität?',
     'view-activity' => 'Aktivität ansehen',
     'add-another-activity' => 'Weitere Aktivität hinzufügen',
+    'image-attached' => 'Image Attached',
 ];
