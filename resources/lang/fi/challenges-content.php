@@ -1,6 +1,53 @@
 <?php
 
 return [
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Koodaa se kuin Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Opiskelijat oppivat lohkopohjaisia koodauskäsitteitä Scratch Jr: n avulla avaruusaluksen laukaisemiseksi, aivan kuten Margaret Hamilton, nainen, joka ohjelmoi Nasan Apollon koodin kuuhun.',
+        'Toimella autetaan myös murtamaan sukupuolistereotypioita korostamalla naispuolisen ohjelmoijan osuutta avaruustutkimuksessa ja kannustamalla tyttöjä aloittamaan ohjelmasuunnittelun ja STEM-alojen uran.'
+    ],
+    'description' => 'Ohjelmoi avaruuslaukaisu Scratch Jr: ssä Margaret Hamiltonin innoittamana! Koodaa lähtölaskenta, laukaise avaruusalus ja murra sukupuolistereotypioita kannustamalla tyttöjä koodaamaan!',
+    'instructions' => [
+        'Johdanto: Opettaja esittelee avaruusmissiot ja ihmisten lähettämisen kuuhun sekä Margaret Hamiltonin ja hänen panoksensa Apollo-suunnitelmaan. Tämän jälkeen käydään keskustelu siitä, mitä ohjelmointi on ja kuinka voimme antaa ohjeita tietokoneelle.',
+        'Ohjelmointitehtävä: Margaret Hamilton ohjelmoi ja laskee takaperin, ja avaruusalus lähtee kuuhun.',
+        'Avaa Scratch Jr. -sovellus ja luo uusi projekti.',
+        'Poista hahmo.',
+        'Valitse taustaksi avaruus (Step1 png).',
+        'Valitse hahmoista nainen, avaruusalus ja Maa (Step 2 png).',
+        'Muuta hahmojen kokoa klikkaamalla tarvittavan monta kertaa "Shrink" tai "Grow" -lohkossa (Step 3 png).',
+        'Siirrä hahmot oikeaan paikkaan (Step 4 png).',
+        'Kirjoita ohjelmat niin, että nainen laskee takaperin ja kun hän on saanut sanansa sanottua, avaruusalus nousee ylös. Tämän saavuttamiseksi, kun vihreä lippu painetaan, naisen tulisi sanoa valitsemasi sanat ja sitten lähettää viesti. Avaruusalus saa viestin saman värisenä ja oikeilla liikuntablokeilla avaruusalus nousee ylös. Voit myös tehdä avaruusaluksesta pienemmän, kun se etääntyy. Avaru-aluksen ohjelmointiin voit käyttää yksinkertaisia lohkoja tai toiston silmukkaa. (Step 5 png).',
+        'Suorita skripti painamalla vihreää lippua.'
+    ],
+    'materials' => [
+        'Tabletti tai PC (jos mahdollista, suosittelemme ensisijaisesti käyttämään tabletti), jossa Scratch Jr. on asennettu (https://www.scratchjr.org/ tableteille ja https://jfo8000.github.io/ScratchJr-Desktop/ Windowsille tai Macille).',
+        'Painetut kuvat Margaret Hamiltonista ja Apollo 11 -tehtävästä (valinnainen).',
+        'Tulostettavat kortit Scratch Jr. -komennoilla (https://www.scratchjr.org/teach/resources) - (valinnainen).',
+        'Projektori (valinnainen).'
+    ],
+    'real-life-applications' => [
+        'Elämän todelliset sovellukset:',
+        'Tämä aktiviteetti ei ole vain ohjelmoinnin esittely, vaan se on yhteydessä todellisiin tapahtumiin ja sovelluksiin tieteessä ja teknologiassa:',
+        'Margaret Hamilton kehitti ohjelmiston Apollo Guidance Computerille, joka mahdollisti Apollo 11:n turvallisen laskeutumisen vuonna 1969. Aktiviteetti auttaa lapsia ymmärtämään, kuinka tietokoneet tarvitsevat selkeitä ja oikeita komentoja suorittaakseen tehtävän – aivan kuten NASA käytti koodia päästäkseen kuuhun.',
+        'Lohko-ohjelmointi, kuten Scratch Jr:ssä, on ensimmäinen askel ymmärtämään monimutkaisempia ohjelmointikieliä, joita käytetään nykyään avaruusmissioissa, robotiikassa ja tekoälyssä. Samoja periaatteita käytetään itsenäisten järjestelmien, kuten Marsin tutkimusrobottien (Curiosity, Perseverance) kehittämisessä.'
+    ],
+    'variations' => [
+        'Vaihtoehdot/Ehdotukset:',
+        'Jos oppilaat ovat uusia sovelluksessa, voit luoda projektit ensin painetuilla lohkoilla.',
+        'Lisää hahmoja, kuten planeettoja, tähtiä tai komeettoja.',
+        'Riippuen oppilaiden iästä ja kokemuksesta ScratchJr-sovelluksessa, voidaan lisätä lisähaasteita, kuten avaruusaluksen ohjelmointi väistämään esteitä.',
+        'Oppilaat voivat myös lisätä toisen sivun, jossa avaruusalus laskeutuu kuuhun.',
+        'Sen sijaan, että käyttäisit "Say"-lohkkoa, voit käyttää "Play Recorded Sound"-lohkoa, jolloin oppilaiden äänet voidaan kuulla.',
+        'Lisää astronauttihahmoja, joissa muokkaat kasvoja ja lisäät oppilaiden valokuvat.'
+    ],
+    'duration' => '60 minuuttia',
+    'experience' => 'Intermediate - Joitakin koodauksen perustietoja suositellaan; osallistujien tulisi tuntea ohjelmoinnin peruskäsitteet.',
+    'target-audience' => [
+        'Pienet lapset (5–7-vuotiaat)'
+    ]
+],
     'chatbot' => [
         'title' => 'Tee chattibotti',
         'author' => 'EU:n koodausviikon tiimi',

@@ -1,6 +1,52 @@
 <?php
 
 return [
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Označte to ako Margaret Hamiltonová!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Študenti sa naučia základné koncepty blokového kódovania pomocou rakety Scratch Jr na spustenie kozmickej lode, rovnako ako Margaret Hamiltonová, žena, ktorá naprogramovala kód pre Nasa\'s Apollo na dosiahnutie mesiaca.',
+        'Činnosť tiež pomôže rozložiť rodové stereotypy zdôraznením prínosu žien v programe vesmírneho výskumu a povzbudením dievčat, aby sa venovali programovaniu a kariére v oblasti STEM.'
+    ],
+    'description' => 'Program vesmírneho štartu v Scratch Jr inšpirovaný Margaret Hamiltonovou! Kódujte odpočítavanie, spustite kozmickú loď a prelomte rodové stereotypy povzbudzovaním dievčat v kódovaní!',
+    'instructions' => [
+        'Úvod: Učiteľ predstavuje vesmírne misie a vysiela ľudí na mesiac a predstavuje Margaret Hamiltonová a jej príspevok k plánovaniu Apolla. Po tomto nasleduje diskusiu o tom, čo je programovanie a ako môžeme dať pokyny počítač.',
+        'Programovacia činnosť: Margaret Hamiltonová kódy a odpočítava a kozmická loď odlieta na Mesiac.',
+        'Otvorte aplikáciu Scratch Jr. a vytvorte nový projekt.',
+        'Odstrániť znak.',
+        'Vybrať pozadie s medzerou (krok1 png).',
+        'Vyberte si z postáv ženu, vesmírnu loď a Zem (krok 2 png).',
+        'Zmeňte veľkosť znakov kliknutím na toľko krát, koľko je potrebné na bloku "Zmenšiť" alebo "Rast" (krok 3 png).',
+        'Posunúť znaky na pravú pozíciu (krok 4 png).',
+        'Napíšte programy tak, aby sa žena spočítala a keď dokončí svoje slová, vesmírna loď ide hore. Aby sa to dosiahlo, akonáhle je stlačená zelená vlajka žena by mal povedať slová, ktoré si vyberiete a potom poslať správu. Vesmírna loď by mala prijať správu rovnakej farby a so správnymi pohybovými blokmi vesmírna loď by mala ísť hore. Môžete tiež zmenšiť vesmírnu loď, ako sa pohybuje preč. Ak chcete naprogramovať vesmírnu loď, môžete použiť jednoduché bloky alebo slučku opakovania. (krok 5 png).',
+        'Spustite skript stlačením zelenej vlajky.'
+    ],
+    'materials' => [
+        'Tablet alebo PC (ak je to možné, odporúčame najmä použiť tablet) s nainštalovaným softvérom Scratch Jr. (https://www.scratchjr.org/ pre tablety a https://jfo8000.github.io/ScratchJr-Desktop/ pre Windows alebo Mac).',
+        'Tlačené obrázky Margaret Hamiltonovej a misie Apollo 11 (voliteľné).',
+        'Tlačiteľné karty s príkazmi Scratch Jr. (https://www.scratchjr.org/teach/resources) - (voliteľné).',
+        'Premietač (nepovinný).'
+    ],
+    'real-life-applications' => [
+        'Aplikácie v reálnom živote:',
+        'Táto činnosť nie je len úvodom k programovaniu, ale je spojená s udalosťami reálneho života a aplikácií vo vede a technike: Margaret Hamiltonová vyvinula softvér pre Apollo Guidance Computer, ktorý dovolil Apollu 11 bezpečne pristáť v roku 1969. Aktivita pomáha deťom pochopiť, ako počítače potrebujú jasné a správne príkazy na vykonanie misie - rovnako ako NASA použila kód na dosiahnutie Mesiaca. Plánovanie blokov, ako v Scratch Jr, je prvým krokom k pochopeniu zložitejších programovacie jazyky, ktoré sa v súčasnosti používajú v kozmických misiách, robotike a umelých inteligencia. Rovnaké princípy sa používajú pri vývoji autonómnych systémov, napríklad prieskumné roboty na Marse (zvedavosť, vytrvalosť).',
+    ],
+    'variations' => [
+        'Zmeny/návrhy:',
+        'Ak sú študenti noví v aplikácii, môžete vytvoriť projekty najprv s tlačeným bloky.',
+        'Pridajte ďalšie znaky, ako sú planéty, hviezdy alebo kométy.',
+        'V závislosti od veku a skúseností detí s aplikáciou ScratchJr, ďalšie môžu byť pridané výzvy, ako je programovanie vesmírnej lode, aby sa zabránilo prekážkam.',
+        'Študenti môžu pridať aj ďalšiu stranu zobrazujúcu kozmickú loď pristátie na mesiaci.',
+        'Namiesto použitia bloku "Say" by sa mohol použiť blok "Play Recorded Sound" (Prehrať zaznamenaný zvuk) a hlasy študentov môžu byť vypočuté.',
+        'Pridajte astronaut znaky, v ktorých upravujete tváre a pridajte fotky študentov.'
+    ],
+    'duration' => '60 minút',
+    'experience' => 'Intermediate - odporúčajú sa niektoré základné znalosti kódovania; účastníci by mali byť oboznámení so základnými programovými koncepciami.',
+    'target-audience' => [
+        'Malé deti (vo veku 5 - 7 rokov)'
+    ]
+],
     'chatbot' => [
         'title' => 'Vytvorte četbota',
         'author' => 'Tím Európskeho týždňa programovania',

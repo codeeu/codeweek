@@ -1,6 +1,53 @@
 <?php
 
 return [
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Codifica come Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Gli studenti impareranno concetti di base di codifica basata su blocchi utilizzando Scratch Jr per lanciare una navicella spaziale, proprio come Margaret Hamilton, la donna che ha programmato il codice per l\'Apollo della Nasa per raggiungere la luna.',
+        'L\'attività contribuirà anche a smantellare gli stereotipi di genere mettendo in evidenza il contributo di una programmatrice donna all\'esplorazione spaziale e incoraggiando le ragazze a intraprendere carriere nella programmazione e nelle STEM.'
+    ],
+    'description' => 'Programma un lancio spaziale in Scratch Jr ispirato a Margaret Hamilton! Codifica un conto alla rovescia, lancia una navicella spaziale e rompi gli stereotipi di genere incoraggiando le ragazze a programmare!',
+    'instructions' => [
+        'Introduzione: L\'insegnante presenta missioni spaziali e l’invio di esseri umani sulla luna e introduce Margaret Hamilton e i suoi contributi alla pianificazione di Apollo. Segue una discussione sulla programmazione e su come fornire istruzioni a un computer.',
+        'Attività di programmazione: Margaret Hamilton codifica e conta alla rovescia e la navicella parte per la Luna.',
+        'Apri l\'app Scratch Jr. e crea un nuovo progetto.',
+        'Elimina il carattere.',
+        'Scegli lo sfondo con lo spazio (Step1 png).',
+        'Scegli tra i personaggi una donna, una navicella spaziale e la Terra (Fase 2 png).',
+        'Ridimensiona i personaggi facendo clic quante volte è necessario sul Blocco "Riduci" o "Aumenta" (Fase 3 png).',
+        'Sposta i personaggi nella posizione corretta (passo 4 png).',
+        'Scrivi il programma in modo che il personaggio conti alla rovescia e quando finisce le sue parole, l\'astronave salga. Per ottenere questo risultato, una volta che la bandiera verde è premuta, la donna pronuncia le parole scelte e invia un messaggio. L\'astronave dovrebbe ricevere il messaggio dello stesso colore e con il blocchetto di movimento corretto l’astronave dovrebbe salire. Potete anche fare in modo che l\'astronave diventi più piccola mentre si muove. Per programmare l\'astronave è possibile utilizzare blocchi semplici o il ciclo di ripetizione. (Fase 5 png).',
+        'Eseguire lo script premendo la bandiera verde.'
+    ],
+    'materials' => [
+        'Tablet o PC (è preferibile utilizzare un tablet) con Scratch Jr. installato (https://www.scratchjr.org/ per tablet e https://jfo8000.github.io/ScratchJr-Desktop/ per Windows o Mac).',
+        'Immagini stampate di Margaret Hamilton e della missione Apollo 11 (opzionale).',
+        'Schede stampabili con comandi di Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opzionale).',
+        'Proiettore (opzionale).'
+    ],
+    'real-life-applications' => [
+        'Applicazioni reali:',
+        'Questa attività non è solo un\'introduzione alla programmazione, ma è collegata a eventi reali e applicazioni in campo scientifico e tecnologico:',
+        'Margaret Hamilton ha sviluppato il software per l\'Apollo Guidance Computer, che permise all\'Apollo 11 di atterrare in sicurezza nel 1969. L’attività aiuta i bambini a capire come i computer hanno bisogno di comandi chiari e corretti per svolgere una missione - proprio come la NASA ha usato il codice per raggiungere la Luna.',
+        'La programmazione a blocchi, come in Scratch Jr, è il primo passo per comprendere più complessi linguaggi di programmazione attualmente utilizzati nelle missioni spaziali, nella robotica e nell\'intelligenza artificiale. Gli stessi principi sono utilizzati nello sviluppo di sistemi autonomi, come i robot per l\'esplorazione di Marte (Curiosità, Perseveranza).'
+    ],
+    'variations' => [
+        'Variazioni/suggerimenti:',
+        'Se gli studenti sono nuovi all\'app è possibile creare i progetti prima con i blocchi stampati.',
+        'Aggiungi altri personaggi come pianeti, stelle o comete.',
+        'A seconda dell\'età e dell\'esperienza dei bambini con l\'app ScratchJr, si possono aggiungere sfide di difficoltà crescenti, come programmare l\'astronave in modo che eviti gli ostacoli.',
+        'Gli studenti possono anche aggiungere un\'altra pagina che mostra l\'astronave che atterra sulla luna.',
+        'Invece di utilizzare il blocco "Dire", è possibile utilizzare il blocco "Riproduci suono" e la voce degli studenti può essere ascoltata.',
+        'Aggiungere astronauti, modificare i loro volti e aggiungere le foto degli studenti.'
+    ],
+    'duration' => '60 minuti',
+    'experience' => 'Livello intermedio- Si consiglia di acquisire alcune conoscenze di base sulla codifica; i partecipanti devono avere familiarità con i concetti fondamentali della programmazione.',
+    'target-audience' => [
+        'Bambini (5-7 anni)'
+    ]
+],
     'chatbot' => [
         'title' => 'Crea un chatbot',
         'author' => 'Team della settimana europea della programmazione',

@@ -1,6 +1,54 @@
 <?php
 
 return [
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Código como Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Os alunos aprenderão conceitos básicos de codificação baseada em blocos usando Scratch Jr para lançar uma nave espacial, assim como Margaret Hamilton, a mulher que programou o código para Apollo da Nasa para chegar à lua.',
+        'A atividade também ajudará a quebrar estereótipos de género, destacando a contribuição de uma programadora feminina para a exploração espacial e incentivando as meninas a iniciarem carreiras de programação e CTEM.'
+    ],
+    'description' => 'Programe um lançamento espacial em Scratch Jr inspirado por Margaret Hamilton! Codificar uma contagem regressiva, lançar uma nave espacial e quebrar estereótipos de género, encorajando as meninas em Coding!',
+    'instructions' => [
+        'Introdução: O professor apresenta missões espaciais e envia humanos para a Lua e introduz Margaret Hamilton e suas contribuições ao planejamento Apollo. Isto é seguido por um discussão sobre o que é a programação e como podemos dar instruções a um computador.',
+        'Atividade de programação: Margaret Hamilton códigos e conta para baixo e o a nave espacial parte para a Lua.',
+        'Abra o aplicativo Scratch Jr. e crie um novo projeto.',
+        'Elimina o caráter.',
+        'Escolher o fundo com espaço (Passo1 png).',
+        'Escolha entre os personagens uma mulher, uma nave espacial e Terra (Passo 2 png).',
+        'Redimensione os caracteres clicando as vezes que for necessário no Bloco "Encolher" ou "Crescer" (Passo 3 png).',
+        'Mova os caracteres para a posição direita (Passo 4 png).',
+        'Escreva os programas para que a mulher conte para baixo e quando ela terminar suas palavras, a nave espacial sobe. Para conseguir isso, uma vez que a bandeira verde é pressionada a mulher deve dizer as palavras que escolher e, em seguida, enviar uma mensagem. A nave espacial deve receber a mensagem da mesma cor e com o movimento correto bloqueia a nave espacial deve subir. Você também pode fazer a nave espacial ficar menor à medida que ela se move afastado. Para programar a nave espacial pode usar blocos simples ou o laço de repetição. (Passo 5 png).',
+        'Executar o script pressionando a bandeira verde.'
+    ],
+    'materials' => [
+        'Tablet ou PC (se possível, encorajamos principalmente o uso de um tablet) com Scratch Jr. instalado (https://www.scratchjr.org/ para tablets e https://jfo8000.github.io/ScratchJr-Desktop/ para Windows ou Mac).',
+        'Imagens impressas de Margaret Hamilton e da missão Apollo 11 (opcional).',
+        'Cartões imprimíveis com comandos Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opcional).',
+        'Projetor (opcional).'
+    ],
+    'real-life-applications' => [
+        'Aplicações reais:',
+        'Esta atividade não é apenas uma introdução à programação, mas está ligada a eventos da vida real e aplicações em ciência e tecnologia:',
+        'Margaret Hamilton desenvolveu o software para o computador de orientação Apollo, que permitiu que a Apollo 11 pousasse com segurança em 1969. A atividade ajuda as crianças a entender como computadores precisam de comandos claros e corretos para realizar uma missão - tal como a NASA o código usado para alcançar a Lua.',
+        'A programação em bloco, como no Scratch Jr, é o primeiro passo para entender a programação mais complexa linguagens de programação atualmente usadas em missões espaciais, robótica e artificial inteligência. Os mesmos princípios são usados no desenvolvimento de sistemas autónomos, tais como robôs de exploração de Marte (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Variações/sugestões:',
+        'Se os alunos são novos para o aplicativo, pode criar os projetos primeiro com o impresso blocos.',
+        'Adicione mais caracteres como planetas, estrelas ou cometas.',
+        'Dependendo da idade e da experiência das crianças com o aplicativo ScratchJr, desafios podem ser adicionados, tais como a programação da nave espacial para evitar obstáculos.',
+        'Os alunos também podem adicionar outra página mostrando a nave espacial pousando na lua.',
+        'Em vez de usar o bloco "Say", o bloco "Play Recorded Sound" poderia ser usado e as vozes dos estudantes podem ser ouvidas.',
+        'Adicione personagens de astronautas em que edita os rostos e adicione as fotos dos alunos.'
+    ],
+    'duration' => '60 minutos',
+    'experience' => 'Intermediate - Alguns conhecimentos básicos de codificação são recomendados; os participantes devem estar familiarizados com conceitos fundamentais de programação.',
+    'target-audience' => [
+        'Crianças pequenas (idades 5-7)'
+    ]
+],
     'chatbot' => [
         'title' => 'Criar um robô de conversação',
         'author' => 'Equipa da Semana Europeia da Programação',

@@ -1,6 +1,54 @@
 <?php
 
 return [
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Code it like Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Die Schüler*innen lernen grundlegende Konzepte der blockbasierten Programmierung mit Scratch Jr kennen, um ein Raumfahrzeug zu starten – ganz wie Margaret Hamilton, die den Code für die Apollo-Mission der NASA schrieb, mit dem die Raumfähre den Mond erreichte.',
+        'Die Aktivität trägt außerdem dazu bei, Geschlechterstereotype abzubauen, indem sie den Beitrag einer weiblichen Programmiererin zur Raumfahrt hervorhebt und Mädchen ermutigt, sich für Programmierung und MINT-Berufe zu begeistern.'
+    ],
+    'description' => 'Programmiere einen Raketenstart in Scratch Jr – inspiriert von Margaret Hamilton. Erstelle einen Countdown, starte ein Raumfahrzeug und setze ein Zeichen gegen Geschlechterklischees, indem du besonders Mädchen für das Programmieren begeisterst.',
+    'instructions' => [
+        'Einführung: Die Lehrkraft stellt Weltraummissionen und die Mondlandung vor und erzählt von Margaret Hamilton und ihrem Beitrag zur Planung der Apollo-Mission. Anschließend wird gemeinsam besprochen, was Programmieren bedeutet und wie man einem Computer Anweisungen geben kann.',
+        'Programmieraktivität: Die Kinder programmieren eine Szene, in der eine Margaret-Hamilton-Figur einen Countdown zählt und danach ein Raumschiff zum Mond startet.',
+        'Öffne die Scratch Jr-App und erstelle ein neues Projekt.',
+        'Lösche die Startfigur.',
+        'Wähle als Hintergrund das Weltall aus. (Step1 png)',
+        'Füge eine weibliche Figur (als Margaret Hamilton), ein Raumschiff und die Erde hinzu (Step 2 png).',
+        'Passe die Größe der Figuren mit den Blöcken „Verkleinern“ oder „Vergrößern“ an (Step3 png).',
+        'Positioniere die Figuren auf der Bühne (Step 4 png).',
+        'Schreibe das Programm so, dass die Margaret-Hamilton-Figur einen Countdown zählt und danach das Raumschiff startet. Sobald die grüne Startflagge gedrückt wird, soll die Figur die von dir gewählten Worte sagen (z. B. „3, 2, 1, Start!“) und anschließend eine Nachricht senden. Das Raumschiff empfängt diese Nachricht (achte darauf, dass sie die gleiche Farbe hat) und fliegt mit den passenden Bewegungsblöcken nach oben. Optional kannst du das Raumschiff dabei kleiner werden lassen, um zu zeigen, dass es sich entfernt. Für die Bewegung kannst du einfache Blöcke oder eine Wiederholungsschleife verwenden (Step5.png).',
+        'Starte das Programm mit der grünen Flagge.'
+    ],
+    'materials' => [
+        'Tablet oder PC (bevorzugt ein Tablet) mit installierter Scratch Jr-App (https://www.scratchjr.org/ für Tablets, https://jfo8000.github.io/ScratchJr-Desktop/ für Windows oder Mac).',
+        'Ausgedruckte Bilder von Margaret Hamilton und der Apollo-11-Mission (optional).',
+        'Ausdruckbare Karten mit Scratch-Jr-Befehlen (https://www.scratchjr.org/teach/resources) – (optional).',
+        'Beamer (optional).'
+    ],
+    'real-life-applications' => [
+        'Praxisbezug:',
+        'Diese Aktivität ist nicht nur ein Einstieg ins Programmieren, sondern zeigt auch, wie eng Programmierung mit realen Ereignissen und Anwendungen in Wissenschaft und Technik verbunden ist:',
+        'Margaret Hamilton entwickelte die Software für den Apollo Guidance Computer, der es Apollo 11 ermöglichte, 1969 sicher auf dem Mond zu landen. Die Kinder lernen dabei, dass Computer klare und fehlerfreie Anweisungen brauchen, um eine Aufgabe erfolgreich auszuführen – genau so, wie die NASA mithilfe von Code den Mond erreichte.',
+        'Die Blockprogrammierung in Scratch Jr ist ein erster Schritt zum Verständnis komplexerer Programmiersprachen, wie sie heute in Raumfahrt, Robotik und Künstlicher Intelligenz eingesetzt werden. Die gleichen Prinzipien kommen auch in der Entwicklung von autonomen Systemen zum Einsatz, z. B. bei den Mars-Robotern Curiosity und Perseverance.'
+    ],
+    'variations' => [
+        'Variationen/Vorschläge:',
+        'Wenn die Kinder die App noch nicht kennen, kann das Projekt zunächst mit ausgedruckten Blockkarten erstellt werden.',
+        'Weitere Figuren wie Planeten, Sterne oder Kometen können hinzugefügt werden.',
+        'Je nach Alter und Vorerfahrung der Kinder mit Scratch Jr können zusätzliche Herausforderungen eingebaut werden, z.B. das bestehende Raumschiff so zu programmieren, dass es Hindernissen ausweicht.',
+        'Die Kinder können eine weitere Seite hinzufügen, auf der das Raumschiff auf dem Mond landet.',
+        'Statt des „Sagen“-Blocks kann auch der „Aufgenommener Ton“-Block verwendet werden – so sind die Stimmen der Kinder im Projekt zu hören.',
+        'Astronautenfiguren können ergänzt und mit den Fotos der Kinder personalisiert werden, indem die Gesichter bearbeitet werden.'
+    ],
+    'duration' => '60 Minuten',
+    'experience' => 'Mittleres Niveau: Grundkenntnisse im Programmieren sind empfohlen; die Teilnehmenden sollten mit grundlegenden Programmierkonzepten vertraut sein.',
+    'target-audience' => [
+        'Kinder im Vor- und Grundschulalter (5–7 Jahre)'
+    ]
+],
     'chatbot' => [
         'title' => 'Erstelle einen Chatbot',
         'author' => 'EU Code Week-Team',

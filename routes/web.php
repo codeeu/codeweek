@@ -734,6 +734,7 @@ $challenges = function () {
     Route::view('coding-with-legoboost', '2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
     Route::view('air-drawing-with-AI', '2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
     Route::view('careers-as-constellations', '2021.challenges.careers-as-constellations')->name('challenges.careers-as-constellations');
+    Route::view('code-it-like-margaret-hamilton', '2021.challenges.code-it-like-margaret-hamilton')->name('challenges.code-it-like-margaret-hamilton');
 };
 
 Route::prefix('2021/challenges')->group($challenges);
