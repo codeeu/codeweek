@@ -1,6 +1,54 @@
 <?php
 
 return [
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Kode det som Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Eleverne vil lære grundlæggende blokbaserede kodningskoncepter ved hjælp af Scratch Jr til at affyre et rumfartøj, ligesom Margaret Hamilton, kvinden, der programmerede koden til Nasas Apollo at nå månen.',
+        'Aktiviteten vil også bidrage til at nedbryde kønsstereotyper ved at fremhæve en kvindelig programmørs bidrag til udforskning af rummet og tilskynde piger til at påbegynde programmering og STEM-karrierer.'
+    ],
+    'description' => 'Programmer en rumopsendelse i Scratch Jr inspireret af Margaret Hamilton! Kode en nedtælling, lancere et rumfartøj, og bryde kønsstereotyper ved at tilskynde piger i Coding!',
+    'instructions' => [
+        'Indledning: Læreren præsenterer rummissioner og sender mennesker til månen og introducerer Margaret Hamilton og hendes bidrag til Apollo planlægning. Dette efterfølges af en diskussion om, hvad programmering er, og hvordan vi kan give instruktioner til en computer.',
+        'Programmering aktivitet: Margaret Hamilton koder og tæller ned og rumfartøjet forlader til Månen.',
+        'Åbn Scratch Jr.-appen, og opret et nyt projekt.',
+        'Slet tegnet.',
+        'Vælg baggrunden med mellemrum (Trin1 png).',
+        'Vælg mellem figurerne en kvinde, et rumskib og Jorden (Trin 2 png).',
+        'Ændre størrelsen på tegnene ved at klikke så mange gange som nødvendigt på Block »Shrink« eller »Grow« (Trin 3 png).',
+        'Flyt tegnene til den rigtige position (Trin 4 png).',
+        'Skriv programmerne, så kvinden tæller ned, og når hun er færdig med sine ord, Rumskibet går op. For at opnå dette, når det grønne flag er trykket kvinden skal sige de ord, du vælger, og derefter sende en besked. Rumskibet skal modtage meddelelsen af samme farve og med de korrekte bevægelsesblokke Rumskibet skal op. Du kan også få rumskibet til at blive mindre, når det bevæger sig væk. For at programmere rumskibet kan du bruge enkle blokke eller gentagelsesløkken. (Trin 5 png).',
+        'Kør scriptet ved at trykke på det grønne flag.'
+    ],
+    'materials' => [
+        'Tablet eller PC (hvis det er muligt, anbefaler vi primært at bruge en tablet) med Scratch Jr. installeret (https://www.scratchjr.org/ til tablets og https://jfo8000.github.io/ScratchJr-Desktop/ til Windows eller Mac).',
+        'Trykte billeder af Margaret Hamilton og Apollo 11-missionen (valgfrit).',
+        'Printbare kort med Scratch Jr. kommandoer (https://www.scratchjr.org/teach/resources) - (valgfrit).',
+        'Projektor (ekstraudstyr).'
+    ],
+    'real-life-applications' => [
+        'Virkelige anvendelsesmuligheder:',
+        'Denne aktivitet er ikke kun en introduktion til programmering, men er knyttet til virkelige begivenheder og anvendelser inden for videnskab og teknologi:',
+        'Margaret Hamilton udviklede softwaren til Apollo Guidance Computer, som tillod Apollo 11 at lande sikkert i 1969. Aktiviteten hjælper børn med at forstå, hvordan computere har brug for klare og korrekte kommandoer til at udføre en mission - ligesom NASA brugte kode til at nå Månen.',
+        'Blokprogrammering, som i Scratch Jr, er det første skridt til at forstå mere komplekse programmeringssprog, der i øjeblikket anvendes i rummissioner, robotteknologi og kunstig intelligens. De samme principper anvendes i udviklingen af autonome systemer, såsom Mars udforskning robotter (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Variationer/forslag:',
+        'Hvis eleverne er nye i appen, kan du først oprette projekterne med det trykte blokke.',
+        'Tilføj flere tegn såsom planeter, stjerner eller kometer.',
+        'Afhængigt af alder og børnenes oplevelse med ScratchJr app, yderligere udfordringer kan tilføjes, såsom programmering af rumskibet for at undgå forhindringer.',
+        'Eleverne kan også tilføje en anden side, der viser rumskibet landing på månen.',
+        'I stedet for at bruge »Sig«-blokken kunne »Afspil optaget lyd«-blokken bruges og de studerendes stemmer kan høres.',
+        'Tilføj astronauttegn, hvor du redigerer ansigterne og tilføjer elevernes fotos.'
+    ],
+    'duration' => '60 minutter',
+    'experience' => 'Intermediate - Nogle grundlæggende kodning viden anbefales; deltagerne bør være bekendt med grundlæggende programmering begreber.',
+    'target-audience' => [
+        'Små børn (5-7 år)'
+    ]
+],
     'chatbot' => [
         'title' => 'Lav en chatbot',
         'author' => 'Holdet bag EU\'s kodeuge',

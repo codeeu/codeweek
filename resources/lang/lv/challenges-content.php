@@ -1,6 +1,54 @@
 <?php
 
 return [
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Kodē kā Margareta Hamiltone!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Studenti apgūs bloku programmēšanas pamatjēdzienus, izmantojot Scratch Jr, lai palaistu kosmosa kuģi, tāpat kā Margareta Hamiltone, sieviete, kas programmēja kodu Nasa Apollo, lai sasniegtu mēnesi.',
+        'Pasākums arī palīdzēs likvidēt dzimumu stereotipus, uzsverot sievietes programmētājas ieguldījumu kosmosa izpētē un mudinot meitenes uzsākt programmēšanu un karjeru STEM jomā.'
+    ],
+    'description' => 'Ieprogrammēt Scratch kosmisko palaišanu, iedvesmojoties no Margaretas Hamiltones! Kodē atskaiti, palaiž kosmosa kuģi un lauž dzimumu stereotipus, iedrošinot meitenes programmēšanā!',
+    'instructions' => [
+        'Ievads: Skolotājs prezentē kosmosa misijas un sūta cilvēkus uz Mēnesi un iepazīstina ar Margaretu Hamiltoni un viņas ieguldījums Apollo plānošanā. Tam seko diskusija par to, kas ir programmēšana un kā mēs varam dot norādījumus datoram.',
+        'Programmēšanas darbība: Margaretas Hamiltones kodi un skaitīšana uz leju un kosmosa kuģi dodas uz Mēnesi.',
+        'Atveriet Scratch Jr lietotni un izveidojiet jaunu projektu.',
+        'Dzēst rakstzīmi.',
+        'Izvēlieties fonu ar atstarpi (Step1 png).',
+        'Izvēlēties no rakstzīmēm sieviete, kosmosa kuģis un Zeme (Step 2 png).',
+        'Mainiet rakstzīmju izmērus, noklikšķinot tik reižu, cik nepieciešams blokā "Samazināt" vai "Augt" (3. solis png).',
+        'Pārvietot rakstzīmes uz labo pozīciju (4. solis png).',
+        'Uzrakstiet programmas, lai sieviete skaitītu uz leju, un kad viņa pabeidz savus vārdus, kosmosa kuģis paceļas uz augšu. Lai to panāktu, kad zaļo karogu nospiež sieviete vajadzētu pateikt vārdus, kurus izvēlaties, un pēc tam nosūtīt ziņojumu. Kosmosa kuģim saņemt ziņojumu tādā pašā krāsā un ar pareizo kustību bloki kosmosa kuģim vajadzētu iet uz augšu. Jūs varat arī padarīt kosmosa kuģi mazāku, kad tas pārvietojas prom. Lai ieprogrammētu kosmosa kuģi, varat izmantot vienkāršus blokus vai atkārtošanās cilpu. (5. solis).',
+        'Palaidiet skriptu, nospiežot zaļo karogu.'
+    ],
+    'materials' => [
+        'Planšetdators vai personālais dators (ja iespējams, ieteicams izmantot planšetdatoru) ar instalētu Scratch Jr (https://www.scratchjr.org/ planšetdatoriem un https://jfo8000.github.io/ScratchJr-Desktop/ Windows vai Mac datoriem).',
+        'Margaretas Hamiltonas un Apollo 11 misijas drukātie attēli (pēc izvēles).',
+        'Izdrukājamas kartes ar Scratch Jr. komandām (https://www.scratchjr.org/teach/resources) - (pēc izvēles).',
+        'Projektors (pēc izvēles).'
+    ],
+    'real-life-applications' => [
+        'Reālās dzīves lietojumprogrammas:',
+        'Šī aktivitāte ir ne tikai ievads programmēšanā, bet ir saistīta ar reālās dzīves notikumiem un lietojumi zinātnē un tehnoloģijā:',
+        'Margareta Hamiltone izstrādāja programmatūru Apollo Guidance Computer, kas 1969. gadā atļāva Apollo 11 droši nolaisties. Aktivitāte palīdz bērniem saprast, kā lai veiktu misiju, datoriem ir vajadzīgas skaidras un pareizas komandas - tieši tāpat kā NASA Mēness sasniegšanai izmantots kods.',
+        'Bloku programmēšana, tāpat kā Scratch Jr, ir pirmais solis, lai saprastu sarežģītāku programmēšanas valodas, ko pašlaik izmanto kosmosa misijās, robotikā un mākslīgā inteliģence. Tos pašus principus izmanto autonomo sistēmu izstrādē, piemēram, Marsa izpētes roboti (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Varianti/ieteikumi:',
+        'Ja skolēni ir iesācēji lietotnē, projektus vispirms varat izveidot ar izdrukāto bloki.',
+        'Pievienot vairāk rakstzīmju, piemēram, planētas, zvaigznes vai komētas.',
+        'Atkarībā no vecuma un bērnu pieredzes ar ScratchJr lietotni, papildus var pievienot arī citas problēmas, piemēram, kosmosa kuģu plānošanu, lai izvairītos no šķēršļiem.',
+        'Skolēni var pievienot arī citu lapu, kurā redzama kosmosa kuģa nolaišanās uz mēness.',
+        'Tā vietā, lai izmantotu bloku "Say", var izmantot bloku "Play Recorded Sound" un studentu balsis ir dzirdamas.',
+        'Pievienot astronautu rakstzīmes, kurā jūs rediģēt sejas un pievienot skolēnu fotogrāfijas.'
+    ],
+    'duration' => '60 minūtes',
+    'experience' => 'Vidēja — ieteicamas dažas pamatzināšanas par programmēšanu; dalībniekiem jāpārzina programmēšanas pamatjēdzieni.',
+    'target-audience' => [
+        'Mazie bērni (5-7 gadi)'
+    ]
+],
     'chatbot' => [
         'title' => 'Izveidojiet tērzēšanas botu',
         'author' => 'ES programmēšanas nedēļas komanda',

@@ -1,6 +1,52 @@
 <?php
 
 return [
+    'code-it-like-margaret-hamilton' => [
+    'title' => 'Koduj jak Margaret Hamilton !!!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Uczniowie nauczą się podstawowych pojęć kodowania blokowego używając Scratch Jr do wystrzelenia statku kosmicznego, tak jak Margaret Hamilton, kobieta, która zaprogramowała kod dla Apollo Nasa, aby dotrzeć na Księżyc.',
+        'Działanie to pomoże również przełamać stereotypy związane z płcią, podkreślając wkład kobiety-programistki w badania przestrzeni kosmicznej i zachęcając dziewczęta do podejmowania kariery związanej z programowaniem i STEM.'
+    ],
+    'description' => 'Zaprogramuj kosmiczny start w Scratch Jr inspirowany przez Margaret Hamilton! Zaprogramuj odliczanie, uruchom statek kosmiczny i przełamuj stereotypy płciowe, zachęcając dziewczyny do kodowania!',
+    'instructions' => [
+        'Wprowadzenie: Nauczyciel przedstawia misje kosmiczne i wysłanie człowieka na Księżyc oraz wprowadza Margaret Hamilton i jej wkład w planowanie Apollo. Po tym następuje dyskusja o tym, czym jest programowanie i jak możemy wydawać instrukcje Komputer.',
+        'Działalność programistyczna: Margaret Hamilton koduje i odlicza oraz statek kosmiczny wyrusza na Księżyc.',
+        'Otwórz aplikację Scratch Jr. i utwórz nowy projekt.',
+        'Usunięcie znaku.',
+        'Wybierz tło ze spacją (Step1 png).',
+        'Wybierz spośród postaci kobietę, statek kosmiczny i Ziemię (Krok 2 png).',
+        'Zmień rozmiar znaków, klikając tyle razy, ile trzeba na bloku "Zmniejsz" lub "Grow" (Krok 3 png).',
+        'Przesuń znaki w prawo (Krok 4 png).',
+        'Napisz programy, aby kobieta odliczała, a gdy zakończy swoje słowa, statek kosmiczny poleci w górę. Aby to osiągnąć, po naciśnięciu zielonej flagi kobieta powinna powiedzieć wybrane przez ciebie słowa, a następnie wysłać wiadomość. Statek kosmiczny powinien otrzymać wiadomość w tej samej kolorze, a odpowiednimi blokami ruchu statek kosmiczny powinien polecieć w górę. Możesz również sprawić, aby statek kosmiczny zmniejszał się w miarę oddalania. Do zaprogramowania statku kosmicznego możesz użyć prostych bloków lub pętli powtarzania. (Krok 5 png).',
+        'Uruchom skrypt, naciskając zieloną flagę.'
+    ],
+    'materials' => [
+        'Tablet lub PC (jeśli to możliwe, zachęcamy przede wszystkim do korzystania z tabletu) z zainstalowanym Scratch Jr. (https://www.scratchjr.org/ dla tabletów i https://jfo8000.github.io/ScratchJr-Desktop/ dla Windows lub Mac)',
+        'Wydrukowane zdjęcia Margaret Hamilton i misji Apollo 11 (opcjonalnie)',
+        'Karty do wydruku z poleceniami Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opcjonalnie)',
+        'Projektor (opcjonalnie)'
+    ],
+    'real-life-applications' => [
+        'Ta aktywność jest nie tylko wprowadzeniem do programowania, ale jest powiązana z wydarzeniami i zastosowaniami w nauce i technologii.',
+        'Margaret Hamilton opracowała oprogramowanie dla Apollo Guidance Computer, które umożliwiło bezpieczne lądowanie Apollo 11 w 1969 roku. Aktywność pomaga dzieciom zrozumieć, jak komputery potrzebują jasnych i poprawnych poleceń do wykonania misji - tak samo, jak NASA używała kodu, aby dotrzeć na Księżyc.',
+        'Programowanie blokowe, jak w Scratch Jr, jest pierwszym krokiem do zrozumienia bardziej złożonych języków programowania, które są obecnie używane w misjach kosmicznych, robotyce i sztucznej inteligencji. Te same zasady są wykorzystywane w rozwoju systemów autonomicznych, takich jak roboty eksplorujące Marsa (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Wariacje/Sugestie:',
+        'Jeśli uczniowie są nowi w aplikacji, można najpierw stworzyć projekty z wydrukowanymi blokami.',
+        'Dodaj więcej postaci, takich jak planety, gwiazdy czy komety.',
+        'W zależności od wieku i doświadczenia dzieci z aplikacją ScratchJr, można dodać dodatkowe wyzwania, takie jak zaprogramowanie statku kosmicznego do unikania przeszkód.',
+        'Uczniowie mogą także dodać inną stronę, na której statek kosmiczny ląduje na Księżycu.',
+        'Zamiast używać bloku "Powiedz", można użyć bloku "Odtwórz nagrany dźwięk", dzięki czemu głosy uczniów będą słyszalne.',
+        'Dodaj postacie astronautów, w których edytujesz twarze i dodajesz zdjęcia uczniów.'
+    ],
+    'duration' => '60 minuta',
+    'experience' => 'Intermediate - Zalecana jest podstawowa wiedza z zakresu kodowania; uczestnicy powinni znać podstawowe pojęcia programistyczne.',
+    'target-audience' => [
+        'Małe dzieci (w wieku 5-7 lat)'
+    ]
+],
     'chatbot' => [
         'title' => 'Tworzenie czatbota',
         'author' => 'Zespół Europejskiego Tygodnia Kodowania',

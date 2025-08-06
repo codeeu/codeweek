@@ -1,6 +1,53 @@
 <?php
 
 return [
+        'code-it-like-margaret-hamilton' => [
+        'title' => 'Kodoje si Margaret Hamilton!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'Studentët do të mësojnë konceptet bazë të kodimit të bazuar në bllok duke përdorur Scratch Jr për të lëshuar një anije kozmike, ashtu si Margaret Hamilton, gruaja e cila ka programuar kodin për Apollo të Nasa-s për të arritur në hënë.',
+            'Veprimtaria do të ndihmojë gjithashtu për të thyer stereotipat e gjinive duke theksuar kontributin e një programuese në eksplorimin e hapësirës dhe duke inkurajuar vajzat që të marrin karriera programimi dhe të STEM.'
+        ],
+        'description' => 'Programo një lëshim anijeje kozmike në Scratch Jr të frymëzuar nga Margaret Hamilton! Kodo një numërim mbrapsht, lësho një anije hapësinore dhe thyej stereotipet gjinore duke inkurajuar vajzat në Kodim!',
+        'instructions' => [
+            'Hyrja: Mësuesi paraqet misione hapësinore dhe dërgon njerëz në hënë dhe prezanton Margaret Hamilton dhe kontributet e saj në planifikimin e Apollos. Kjo ndiqet nga një diskutim për atë program dhe si mund t\'i japim udhëzime një programi kompjuter.',
+            'Aktiviteti i programimit: Kodet e Margaret Hamilton dhe informacionet janë poshtë anije kozmike niset për në hënë.',
+            'Hap aplikacionin Scratch Jr. dhe krijo një projekt të ri.',
+            'Hiq karakterin.',
+            'Zgjidh sfondin me hapësirë (Hapi1 png).',
+            'Zgjidh nga karakteret për një grua, një anije kozmike dhe Tokë (Hapi 2 png).',
+            'Ndrysho madhësinë e karaktereve duke klikuar sa herë të jetë e nevojshme në Bllokun "Tkurr" ose "Rrit" (Hapi 3 png).',
+            'Zhvendos karakteret në pozicionin e duhur (Hapi 4 png).',
+            'Shkruani programet në mënyrë që gruaja të bëjë numërimin mbrapsht dhe, sapo të mbarojë fjalët e saj, anija kozmike të ngrihet lart. Për ta arritur këtë, sapo të shtypet flamuri i gjelbër, gruaja duhet të thotë fjalët që ju zgjidhni dhe më pas të dërgojë një mesazh. Anija kozmike duhet të marrë mesazhin me të njëjtën ngjyrë dhe, me blloqet e duhura të lëvizjes, të ngrihet lart. Ju gjithashtu mund ta bëni anijen të zvogëlohet ndërsa largohet. Për të programuar anijen kozmike, mund të përdorni blloqe të thjeshta ose një cikël përsëritjeje. (Hapi 5 png).',
+            'Ekzekuto skriptën duke shtypur flamurin e gjelbër.'
+        ],
+        'materials' => [
+            'Tablet ose kompjuter (nëse është e mundur, fillimisht inkurajojmë përdorimin e një tableti) me Scratch Jr. të instaluar (https://www.scratchjr.org/ për tablet dhe https://jfo8000.github.io/ScratchJr-Desktop/ për Windows-in ose Mac).',
+            'Imazhet e printuara të Margaret Hamilton dhe misionit Apollo 11 (opsionale).',
+            'Kartat e printueshme me komandat Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opsionale).',
+            'Projektori (opsionale).'
+        ],
+        'real-life-applications' => [
+            'Aplikacionet e jetës reale:',
+            'Ky aktivitet nuk është vetëm një prezantim për programim, por është i lidhur me ngjarjet e jetës reale dhe aplikimet në shkencë dhe teknologji:',
+            'Margaret Hamilton zhvilloi softuerin për Kompjuterin e Udhëzimit të Apollo, i cili e lejoi Apollo 11 të ulej shëndoshë më 1969. Aktiviteti ndihmon fëmijët të kuptojnë se si kompjuterët kanë nevojë për komanda të qarta dhe të sakta për të kryer një mision - si NASA Kodi i përdorur për të arritur hënën.',
+            'Programimi i blloqeve, si në Scratch Jr, është hapi i parë për të kuptuar më shumë kompleks gjuhët e programeve të përdorura aktualisht në misionet hapsinore, robotët dhe artificialet Inteligjenca. Të njëjtat parime përdoren në zhvillimin e sistemeve autonome, si robotët që eksplorojnë në Mars (kurioziteti, këmbëngulja).'
+        ],
+        'variations' => [
+            'Variacionet/Sugjerimet:',
+            'Nëse nxënësit janë të rinj në aplikacion, mund t\'i krijosh projektet së pari me të printuara blloqe.',
+            'Shto më shumë karaktere, si p.sh. planete, yje ose kometa.',
+            'Në varësi të moshës dhe përvojës së fëmijëve me aplikacionin ScratchJr, shtesë sfidat mund të shtohen, të tilla si programimi i anijes kozmike për të shmangur pengesat.',
+            'Nxënësit mund të shtojnë gjithashtu një faqe tjetër që tregon zbarkimin e anijes kozmike në hënë.',
+            'Në vend që të përdorësh bllokun "Thuaj", mund të përdoret blloku "Lexo tingullin e regjistruar" zërat e studentëve mund të dëgjohen.',
+            'Shto karaktere astronauti në të cilat redakton fytyrat dhe shton fotografitë e nxënësve.'
+        ],
+        'duration' => '60 minuta',
+        'experience' => 'Mesatar - Rekomandohet disa njohuri bazë për kodimin; pjesëmarrësit duhet të jenë të njohur me konceptet bazë të programimit.',
+        'target-audience' => [
+            'Fëmijët e Rinj (moshat 5-7)'
+        ]
+    ],
     'chatbot' => [
         'title' => 'Krijoni një chatbot',
         'author' => 'Ekipi i EU Code Week',

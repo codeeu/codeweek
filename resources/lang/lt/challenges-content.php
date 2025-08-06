@@ -1,6 +1,54 @@
 <?php
 
 return [
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Programuok kaip Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Mokiniai, naudodami „Scratch Jr“, išmoks pagrindinių blokų programavimo sąvokų, kad galėtų paleisti erdvėlaivį kaip Margaret Hamilton, moteris, kuri sukūrė programą NASA erdvėlaiviui „Apollo“, kad šis pasiektų Mėnulį.',
+        'Ši veikla taip pat padės laužyti lyčių stereotipus, nes atskleis moters programuotojos indėlį į kosmoso tyrinėjimus ir paskatins mergaites rinktis programavimo ir STEM karjerą.'
+    ],
+    'description' => 'Naudodami „Scratch Jr“ suprogramuokite erdvėlaivio paleidimą, kaip tą padarė Margaret Hamilton! Suprogramuokite atgalinį skaičiavimą, paleiskite erdvėlaivį ir sulaužykite lyčių stereotipus, skatindami mergaites programuoti!',
+    'instructions' => [
+        'Įvadas: Mokytojas pristato kosmoso misijas ir siunčia žmones į mėnulį ir supažindina Margaret Hamilton ir jos indėlis į Apolono planavimą. Po to sekantis diskusija apie tai, kas yra programavimas ir kaip mes galime duoti nurodymus kompiuteris.',
+        'Programavimo veikla: Margaret Hamilton programuoja, vyksta atgalinis skaičiavimas, ir erdvėlaivis išskrenda į Mėnulį.',
+        'Paleiskite programą „ Scratch Jr.“ ir sukurkite naują projektą.',
+        'Pašalinkite esamą veikėją.',
+        'Pasirinkite kosminį foną (Step1 png).',
+        'Pasirinkite moters, erdvėlaivio ir Žemės veikėjus (Step2 png).',
+        'Pakeiskite simbolių dydį spustelėdami tiek kartų, kiek reikia „Sumažinti“ arba „Padidinti“ (Step3 png).',
+        'Išlygiuokite veikėjus į dešinę (Step4 png).',
+        'Parašykite programą, kad moteris skaičiuotų, o kai ji baigs savo žodžius, erdvėlaivis kiltų aukštyn. Paspaudus žalią vėliavėlę, moteris turėtų pasakyti jūsų pasirinktus žodžius ir tada išsiųsti žinutę. Erdvėlaivis turėtų gauti tos pačios spalvos žinutę, po to pagal tinkamos krypties blokus erdvėlaivis turėtų kilti viršun. Galite taip pat padaryti, kad erdvėlaivis mažėtų judėdamas tolyn. Erdvėlaivį programuoti galite naudodami paprastus blokus arba pasikartojimo ciklą (Step 5 png).',
+        'Paleiskite programos scenarijų paspaudę žalią vėliavėlę.'
+    ],
+    'materials' => [
+        'Planšetinis arba asmeninis kompiuteris (rekomenduojame naudoti planšetinį kompiuterį) su įdiegta programa „Scratch Jr.“ (https://www.scratchjr.org/ planšetiniams kompiuteriams ir https://jfo8000.github.io/ScratchJr-Desktop/ „Windows“ arba „Mac“ kompiuteriams).',
+        'Išspausdinti Margaret Hamilton ir „Apollo 11“ skrydžio atvaizdai (neprivaloma).',
+        'Spausdinamos kortelės su „Scratch Jr.“ komandomis (https://www.scratchjr.org/teach/resources) (neprivaloma).',
+        'Projektorius (neprivaloma).'
+    ],
+    'real-life-applications' => [
+        'Tikroji naudojimo paskirtis:',
+        'Ši veikla yra ne tik įžanga į programavimą, bet ir susijusi su realiais įvykiais ir mokslo bei technologijų taikymu.',
+        'Margaret Hamilton sukūrė programą „Apollo“ valdymo kompiuteriui, kuri padėjo 1969 m. „Apollo 11“ saugiai nusileisti. Veikla padeda vaikams suprasti, kad užduočiai atlikti kompiuteriams reikia aiškių ir teisingų komandų – lygiai taip pat, kaip NASA programai valdant skrydį į Mėnulį.',
+        'Blokų programavimas, kaip ir programa „Scratch Jr“, yra pirmasis žingsnis siekiant suprasti sudėtingesnes programavimo kalbas, šiuo metu naudojamos kosminėse misijose, robotikoje ir dirbtiniame intelekte. Tie patys principai taikomi kuriant autonomines sistemas, pvz., Marso tyrinėjimo robotus („Curiosity“, „Perseverance”).'
+    ],
+    'variations' => [
+        'Pakeitimai ir pasiūlymai:',
+        'Jei mokiniai dar neturi patirties su šia programa, pirmiausia galite sukurti projektus iš išspausdintų blokelių.',
+        'Pridėkite daugiau simbolių, pavyzdžiui, planetų, žvaigždžių ar kometų.',
+        'Atsižvelgiant į vaikų amžių ir jų „ScratchJr“ programėlės naudojimo patirtį, galima pridėti papildomų užduočių, pavyzdžiui, suprogramuoti erdvėlaivį taip, kad jis išvengtų kliūčių.',
+        'Mokiniai taip pat gali pridėti dar vieną puslapį, kuriame būtų pavaizduotas kosminis laivas, nusileidęs Mėnulyje.',
+        'Užuot naudojus bloką "Say", galima naudoti bloką "Play Recorded Sound" ir atgaminti mokinių balsus.',
+        'Pridėkite astronautų veikėjus, kurių veidus galite pakeisti mokinių nuotraukomis.'
+    ],
+    'duration' => '60 minučių',
+    'experience' => 'Vidutinio lygio: rekomenduojama turėti tam tikrų pagrindinių programavimo žinių; dalyviai turėtų būti susipažinę su pagrindinėmis programavimo sąvokomis.',
+    'target-audience' => [
+        'Vaikai (5-7 metų amžiaus)'
+    ]
+],
     'chatbot' => [
         'title' => 'Virtualaus pašnekovo kūrimas',
         'author' => 'ES programavimo savaitės komanda',

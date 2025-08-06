@@ -1,6 +1,55 @@
 <?php
 
 return [
+    // resources/lang/fr/challenges-content.php
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Code comme Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Les élèves apprendront les concepts de base du codage par blocs en utilisant Scratch Jr pour lancer un vaisseau spatial, tout comme Margaret Hamilton, la femme qui a programmé le code pour qu\'Apollo de la Nasa atteigne la Lune.',
+        'L\'activité contribuera également à briser les stéréotypes sexistes en mettant en évidence la contribution d\'une programmatrice à l\'exploration spatiale et en encourageant les filles à se lancer dans la programmation et les carrières en STIM.'
+    ],
+    'description' => 'Programmez un lancement spatial à Scratch Jr inspiré par Margaret Hamilton! Programmez un compte à rebours, lancez un vaisseau spatial et brisez les stéréotypes de genre en encourageant les filles à coder!',
+    'instructions' => [
+        'Introduction: Le professeur présente des missions spatiales et envoie des humains sur la lune et présente Margaret Hamilton et ses contributions à la planification d\'Apollo. Cette étape est suivie d\'une discussion sur ce qu\'est la programmation et comment nous pouvons donner des instructions à un ordinateur.',
+        'Activité de programmation: Margaret Hamilton code et compte à rebours et un vaisseau part pour la Lune.',
+        'Ouvrez l\'application Scratch Jr. et créez un nouveau projet.',
+        'Supprimer le caractère.',
+        'Choisir l\'arrière-plan avec espace (Step1 png).',
+        'Choisissez parmi les personnages une femme, un vaisseau spatial et la Terre (Étape 2 png).',
+        'Redimensionnez les caractères en cliquant autant de fois que nécessaire sur le bouton « Réduire » ou « Grossir » (Étape 3 png).',
+        'Déplacez les caractères vers la bonne position (Étape 4 png).',
+        'Écrire les programmes de sorte que la femme compte à rebours et quand elle aura fini ses mots, le vaisseau spatial monte. Pour ce faire, une fois le drapeau vert appuyé, la femme devrait dire les mots que vous choisissez, puis envoyer un message. Le vaisseau spatial doit recevoir le message de la même couleur et, avec les blocs de mouvement corrects, le vaisseau spatial doit s\'élever. Vous pouvez également faire en sorte que le vaisseau spatial devienne plus petit à mesure qu\'il s\'éloigne. Pour programmer le vaisseau spatial, vous pouvez utiliser des blocs simples ou la boucle de répétition. (Étape 5 png).',
+        'Exécutez le script en appuyant sur le drapeau vert.'
+    ],
+    'materials' => [
+        'Tablette ou PC (si possible, nous encourageons principalement l\'utilisation d\'une tablette) avec Scratch Jr. installé (https://www.scratchjr.org/ pour les tablettes et https://jfo8000.github.io/ScratchJr-Desktop/ pour Windows ou Mac).',
+        'Images imprimées de Margaret Hamilton et de la mission Apollo 11 (facultatif).',
+        'Cartes imprimables avec commandes Scratch Jr. (https://www.scratchjr.org/teach/resources) - (facultatif).',
+        'Projecteur (en option).'
+    ],
+    'real-life-applications' => [
+        'Applications réelles :',
+        'Cette activité n\'est pas seulement une introduction à la programmation, mais est liée à des événements réels et applications en science et technologie :',
+        'Margaret Hamilton a mis au point le logiciel Apollo Guidance Computer, qui a permis à Apollo 11 d\'atterrir en toute sécurité en 1969. L’activité aide les enfants à comprendre comment les ordinateurs ont besoin de commandes claires et correctes pour mener à bien une mission - tout comme la NASA a utilisé le code pour atteindre la Lune.',
+        'La programmation par blocs, comme dans Scratch Jr, est la première étape vers la compréhension de langages de programmation plus complexes actuellement utilisés dans les missions spatiales, la robotique et l\'intelligence artificielle. Les mêmes principes sont utilisés dans le développement de systèmes autonomes, tels que les robots d\'exploration de Mars (Curiosity, Persévérance).'
+    ],
+    'variations' => [
+        'Variantes/suggestions :',
+        'Si les étudiants sont nouveaux dans l\'application, vous pouvez créer les projets d\'abord avec l\'imprimé blocs.',
+        'Ajouter d\'autres personnages tels que des planètes, des étoiles ou des comètes.',
+        'Selon l\'âge et l\'expérience des enfants avec l\'application ScratchJr, des défis peuvent être ajoutés, tels que la programmation du vaisseau spatial pour éviter les obstacles.',
+        'Les élèves peuvent également ajouter une autre page montrant le vaisseau spatial qui atterrit sur la lune.',
+        'Au lieu d\'utiliser le bloc « Dire », le bloc « Lire le son enregistré » pourrait être utilisé et la voix des étudiants peut être entendue.',
+        'Ajoutez des personnages d\'astronautes dans lesquels vous modifiez les visages et ajoutez les photos des élèves.'
+    ],
+    'duration' => '60 minutes',
+    'experience' => 'Intermédiaire - Certaines connaissances de base en codage sont recommandées ; les participants doivent connaître les concepts fondamentaux de programmation.',
+    'target-audience' => [
+        'Jeunes enfants (5-7 ans)'
+    ]
+],
     'chatbot' => [
         'title' => 'Créer un chatbot',
         'author' => 'L\'équipe de la Semaine européenne du code',

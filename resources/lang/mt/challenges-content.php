@@ -1,6 +1,100 @@
 <?php
 
 return [
+    'code-it-like-margaret-hamilton' => [
+        'title' => 'Kodiċi huwa bħal Margaret Hamilton!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'L-istudenti se jitgħallmu kunċetti bażiċi ta\' coding ibbażati fuq blokok billi jużaw Scratch Jr biex iniedu vettura spazjali, bħal Margaret Hamilton, il-mara li pprogrammat il-coding għall-Apollo ta\' Nasa biex jasal fil qamar.',
+            'L-attività se tgħin ukoll biex jitkissru l-istereotipi tas-sessi billi tenfasizza l-kontribut ta\' programmatur femminili għall-esplorazzjoni tal-ispazju u tħeġġeġ lill-bniet biex jibdew l-ipprogrammar u l-karrieri STEM.'
+        ],
+        'description' => 'Ipprogramma tnedija fl-ispazju fi Scratch Jr ispirati minn Margaret Hamilton! Agħmel countdown bil-code, tniedija tal-ispacecraft, u kisser l-isterjotipi tas-sessi billi tħeġġeġ lill-bniet jużaw il-coding.',
+        'instructions' => [
+            'Introduzzjoni: L-għalliem jippreżenta missjonijiet spazjali u jibgħat bnedmin lejn il-qamar u jintroduċi lil Margaret Hamilton u l-kontribuzzjonijiet tagħha għall-ippjanar ta\' Apollo. Dan huwa segwit minn diskussjoni dwar x\'inhu l-ipprogrammar u kif nistgħu nagħtu struzzjonijiet lill-kompjuter.',
+            'Attività ta\' programmar: Margaret Hamilton codes and count down u l-vettura spazjali titlaq lejn il-Qamar.',
+            'Iftaħ l-app Scratch Jr. u joħolqu proġett ġdid.',
+            'Ħassar il-karattru.',
+            'Agħżel l-isfond bi spazju (Pass1 png).',
+            'Agħżel mill-karattri mara, spaceship u Earth (Pass 2 png).',
+            'Kabbar jew ċekken il-karattri billi tikklikkja kemm-il darba meħtieġa fuq il-Blokk "Shrink" jew "Jikbru" (Pass 3 png).',
+            'Mexxi l-karattri għall-pożizzjoni tal-lemin (Pass 4 png).',
+            'Ikteb il-programmi biex il-mara tgħodd u meta tispiċċa kliemha, l-spaceship jitla’. Biex jinkiseb dan, ladarba tingħafas il-bandiera ħadra tal-mara għandhom jgħidu l-kliem inti tagħżel u mbagħad tibgħat messaġġ. Il-spaceship għandu jirċievi l-messaġġ tal-istess kulur u bil-movimenti korretti tal-blokkok l-ispaceship għandu jitla’. Inti tista wkoll tagħmel l-spaceship li jiġi iżgħar kif jiċċaqlaq. Biex tipprogramma l-spaceship tista tuża blokki sempliċi jew il-linja ta\' ripetizzjoni. (Stadju 5 png).',
+            'Ħaddem il-kitba billi tagħfas il-bandiera ħadra.'
+        ],
+        'materials' => [
+            'Tablet jew PC (jekk possibbli, aħna nħeġġu primarjament permezz ta\' Tablet) bi Scratch Jr. installat (https://www.scratchjr.org/ għall-pilloli u https://jfo8000.github.io/ScratchJr-Desktop/ għall-Windows jew Mac).',
+            'Stampi stampati ta\' Margaret Hamilton u l-missjoni Apollo 11 (mhux obbligatorja).',
+            'Karti li jistgħu jiġu stampati bil-kmandi tal-iScratch Jr. (https://www.scratchjr.org/teach/resources) - (mhux obbligatorju).',
+            'Proġekter (mhux obliggu).'
+        ],
+        'real-life-applications' => [
+            'Applikazzjonijiet tal-ħajja reali:',
+            'Din l-attività mhijiex biss introduzzjoni għall-ipprogrammar, iżda hija marbuta ma’ avvenimenti reali u applikazzjonijiet fix-xjenza u t-teknoloġija:',
+            'Margaret Hamilton żviluppat is-softwer għall-kompjuter Gwida Apollo, li ppermetta lil Apollo 11 biex jinżel bla periklu fl-1969. L-attività tgħin lit-tfal jifhmu kif il-kompjuters għandhom bżonn kmandi ċari u korretti biex iwettqu missjoni - bħan-NASA kodiċi użat biex jilħqu l-Qamar.',
+            'L-ipprogrammar tal-blokok, bħal fi Scratch Jr, huwa l-ewwel pass biex wieħed jifhem aktar il-lingwi ta\' programmar użati attwalment fil-missjonijiet spazjali, ir-robotika u l-intelliġenza artifiċċjali. L-istess prinċipji jintużaw fl-iżvilupp ta\' sistemi awtonomi, bħal robots li jintużaw fl-esplorazzjoni f’Mars (Kurżità, Perseveranza).'
+        ],
+        'variations' => [
+            'Varjazzjonijiet/Suġġerimenti:',
+            'Jekk l-istudenti huma ġodda għall-app tista\' toħloq il-proġetti l-ewwel fuq l-karta stampata bil-blokok.',
+            'Żid aktar karattri bħal pjaneti, stilel jew comets.',
+            'Skont l-età u l-esperjenza tat-tfal bl-iScratchJr app, sfidi adizzjonali jistgħu jiżdiedu, bħall-ipprogrammar tal-iskema spazjali biex jiġu evitati l-ostakli.',
+            'L-istudenti jistgħu wkoll iżidu paġna oħra li juru l-inżul ta\' spaceship fuq il-qamar.',
+            'Minflok tuża l-blokk "Say", jista\' jintuża l-blokk "Play Recorded Sound" u l-ilħna tal-istudenti jistgħu jinstemgħu.',
+            'Żid karattri tal-astronawti li fihom teditja l-uċuħ u żid ir-ritratti tal-istudenti.'
+        ],
+        'duration' => '60 minuta',
+        'experience' => 'Intermedja- Huwa rakkomandat xi għarfien bażiku dwar il-coding; il-parteċipanti għandhom ikunu familjari mal-kunċetti fundamentali tal-programmazzjoni.',
+        'target-audience' => [
+            'Tfal żgħar (ta\' bejn il-5 u s-7 snin)'
+        ]
+    ],
+    'code-it-like-margaret-hamilton' => [
+        'title' => 'Kodiċi huwa bħal Margaret Hamilton!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'L-istudenti se jitgħallmu kunċetti bażiċi ta\' coding ibbażati fuq blokok billi jużaw Scratch Jr biex iniedu vettura spazjali, bħal Margaret Hamilton, il-mara li pprogrammat il-coding għall-Apollo ta\' Nasa biex jasal fil qamar.',
+            'L-attività se tgħin ukoll biex jitkissru l-istereotipi tas-sessi billi tenfasizza l-kontribut ta\' programmatur femminili għall-esplorazzjoni tal-ispazju u tħeġġeġ lill-bniet biex jibdew l-ipprogrammar u l-karrieri STEM.'
+        ],
+        'description' => 'Ipprogramma tnedija fl-ispazju fi Scratch Jr ispirati minn Margaret Hamilton! Agħmel countdown bil-code, tniedija tal-ispacecraft, u kisser l-isterjotipi tas-sessi billi tħeġġeġ lill-bniet jużaw il-coding.',
+        'instructions' => [
+            'Introduzzjoni: L-għalliem jippreżenta missjonijiet spazjali u jibgħat bnedmin lejn il-qamar u jintroduċi lil Margaret Hamilton u l-kontribuzzjonijiet tagħha għall-ippjanar ta\' Apollo. Dan huwa segwit minn diskussjoni dwar x\'inhu l-ipprogrammar u kif nistgħu nagħtu struzzjonijiet lill-kompjuter.',
+            'Attività ta\' programmar: Margaret Hamilton codes and count down u l-vettura spazjali titlaq lejn il-Qamar.',
+            'Iftaħ l-app Scratch Jr. u joħolqu proġett ġdid.',
+            'Ħassar il-karattru.',
+            'Agħżel l-isfond bi spazju (Pass1 png).',
+            'Agħżel mill-karattri mara, spaceship u Earth (Pass 2 png).',
+            'Kabbar jew ċekken il-karattri billi tikklikkja kemm-il darba meħtieġa fuq il-Blokk "Shrink" jew "Jikbru" (Pass 3 png).',
+            'Mexxi l-karattri għall-pożizzjoni tal-lemin (Pass 4 png).',
+            'Ikteb il-programmi biex il-mara tgħodd u meta tispiċċa kliemha, l-spaceship jitla’. Biex jinkiseb dan, ladarba tingħafas il-bandiera ħadra tal-mara għandhom jgħidu l-kliem inti tagħżel u mbagħad tibgħat messaġġ. Il-spaceship għandu jirċievi l-messaġġ tal-istess kulur u bil-movimenti korretti tal-blokkok l-ispaceship għandu jitila’. Inti tista wkoll tagħmel l-spaceship li jiġi iżgħar kif jiċċaqlaq. Biex tipprogramma l-spaceship tista tuża blokki sempliċi jew il-linja ta\' ripetizzjoni. (Stadju 5 png).',
+            'Ħaddem il-kitba billi tagħfas il-bandiera ħadra.'
+        ],
+        'materials' => [
+            'Tablet jew PC (jekk possibbli, aħna nħeġġu primarjament permezz ta\' Tablet) bi Scratch Jr. installat (https://www.scratchjr.org/ għall-pilloli u https://jfo8000.github.io/ScratchJr-Desktop/ għall-Windows jew Mac).',
+            'Stampi stampati ta\' Margaret Hamilton u l-missjoni Apollo 11 (mhux obbligatorja).',
+            'Karti li jistgħu jiġu stampati bil-kmandi tal-iScratch Jr. (https://www.scratchjr.org/teach/resources) - (mhux obbligatorju).',
+            'Proġekter (mhux obliggu).'
+        ],
+        'real-life-applications' => [
+            'Applikazzjonijiet tal-ħajja reali:',
+            'Din l-attività mhijiex biss introduzzjoni għall-ipprogrammar, iżda hija marbuta ma’ avvenimenti reali u applikazzjonijiet fix-xjenza u t-teknoloġija:',
+            'Margaret Hamilton żviluppat is-softwer għall-kompjuter Gwida Apollo, li ppermetta lil Apollo 11 biex jinżel bla periklu fl-1969. L-attività tgħin lit-tfal jifhmu kif il-kompjuters għandhom bżonn kmandi ċari u korretti biex iwettqu missjoni - bħan-NASA kodiċi użat biex jilħqu l-Qamar.',
+            'L-ipprogrammar tal-blokok, bħal fi Scratch Jr, huwa l-ewwel pass biex wieħed jifhem aktar il-lingwi ta\' programmar użati attwalment fil-missjonijiet spazjali, ir-robotika u l-intelliġenza artifiċċjali. L-istess prinċipji jintużaw fl-iżvilupp ta\' sistemi awtonomi, bħal robots li jintużaw fl-esplorazzjoni f’Mars (Kurżità, Perseveranza).'
+        ],
+        'variations' => [
+            'Varjazzjonijiet/Suġġerimenti:',
+            'Jekk l-istudenti huma ġodda għall-app tista\' toħloq il-proġetti l-ewwel fuq l-karta stampata bil-blokok.',
+            'Żid aktar karattri bħal pjaneti, stilel jew comets.',
+            'Skont l-età u l-esperjenza tat-tfal bl-iScratchJr app, sfidi adizzjonali jistgħu jiżdiedu, bħall-ipprogrammar tal-iskema spazjali biex jiġu evitati l-ostakli.',
+            'L-istudenti jistgħu wkoll iżidu paġna oħra li juru l-inżul ta\' spaceship fuq il-qamar.',
+            'Minflok tuża l-blokk "Say", jista\' jintuża l-blokk "Play Recorded Sound" u l-ilħna tal-istudenti jistgħu jinstemgħu.',
+            'Żid karattri tal-astronawti li fihom teditja l-uċuħ u żid ir-ritratti tal-istudenti.'
+        ],
+        'duration' => '60 minuta',
+        'experience' => 'Intermedja- Huwa rakkomandat xi għarfien bażiku dwar il-coding; il-parteċipanti għandhom ikunu familjari mal-kunċetti fundamentali tal-programmazzjoni.',
+        'target-audience' => [
+            'Tfal żgħar (ta\' bejn il-5 u s-7 snin)'
+        ]
+    ],
     'chatbot' => [
         'title' => 'Agħmel chatbot',
         'author' => 'Tim tal-Ġimgħa tal-UE tal-Ikkowdjar',

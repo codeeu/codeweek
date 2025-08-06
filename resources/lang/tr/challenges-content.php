@@ -1,6 +1,51 @@
 <?php
 
 return [
+    'code-it-like-margaret-hamilton' => [
+    'title' => 'Margaret Hamilton gibi kodla!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Öğrenciler, NASA\'nın Apollo uzay aracının Ay\'a ulaşması için gerekli kodu programlayan Margaret Hamilton gibi, bir uzay aracını fırlatmak için Scratch Jr. kullanarak temel blok tabanlı kodlama kavramlarını öğrenecekler.',
+        'Bu etkinlik ayrıca, bir kadın programcının uzay araştırmalarına katkısını vurgulayarak ve kız çocuklarını programlama ve STEM alanlarında kariyer yapmaya teşvik ederek toplumsal cinsiyet kalıplarını yıkmaya yardımcı olacaktır.'
+    ],
+    'description' => 'Margaret Hamilton\'dan esinlenerek Scratch Jr\'da bir uzay fırlatması programlayın! Geri sayım kodlayın, bir uzay aracı fırlatın ve kızları Kodlamaya teşvik ederek toplumsal cinsiyet kalıplarını yıkın!',
+    'instructions' => [
+        'Giriş: Öğretmen uzay görevlerini ve insanları Ay\'a göndermeyi anlatır ve Margaret Hamilton\'ı ve Apollo planlamasına katkılarını tanıtır. Ardından, programlamanın ne olduğu ve bir bilgisayara nasıl talimat verebileceğimiz hakkında bir tartışma yapılır.',
+        'Programlama etkinliği: Margaret Hamilton kodlar ve geri sayım yapar ve uzay aracı Ay\'a doğru yola çıkar.',
+        'Scratch Jr. uygulamasını açın ve yeni bir proje oluşturun.',
+        'Karakteri silin.',
+        'Arkaplanı boşluk ile seçin (Adım 1 png).',
+        'Bir kadın, bir uzay gemisi ve Dünya (Adım 2 png) karakterlerinden seçin.',
+        'Karakterlerin boyutunu "Küçült" veya "Büyüme" (Adım 3 png) bloğuna gerektiği kadar tıklayarak ayarlayın.',
+        'Karakterleri doğru konuma taşıyın (Adım 4 png).',
+        'Kadının geri saymasını ve kelimelerini bitirdiğinde uzay gemisinin yukarı çıkmasını sağlayacak programlar yazın. Bunu başarmak için, yeşil bayrağa basıldığında kadın seçtiğiniz kelimeleri söylemeli ve ardından bir mesaj göndermelidir. Uzay gemisi aynı renkteki mesajı almalı ve doğru hareket bloklarıyla uzay gemisi yukarı çıkmalıdır. Ayrıca, uzay gemisinin uzaklaştıkça küçülmesini de sağlayabilirsiniz. Uzay gemisini programlamak için basit bloklar veya tekrar döngüsü kullanabilirsiniz. (Adım 5 png).',
+        'Yeşil bayrağa basarak komut dosyasını çalıştırın.'
+    ],
+    'materials' => [
+        'Scratch Jr. yüklü bir tablet veya PC (mümkünse öncelikle tablet kullanmanızı öneririz) (tabletler için https://www.scratchjr.org/ ve Windows veya Mac için https://jfo8000.github.io/ScratchJr-Desktop/).',
+        'Margaret Hamilton ve Apollo 11 görevinin basılı görüntüleri (isteğe bağlı).',
+        'Scratch Jr. komutlarını içeren yazdırılabilir kartlar (isteğe bağlı).',
+        'Projektör (isteğe bağlı).'
+    ],
+    'real-life-applications' => [
+        'Gerçek hayattaki uygulamalar:',
+        'Bu etkinlik yalnızca programlamaya giriş niteliğinde değil, aynı zamanda gerçek hayattaki olaylar ve bilim ve teknolojideki uygulamalarla da bağlantılıdır: Margaret Hamilton, Apollo 11\'in 1969\'da güvenli bir şekilde inişini sağlayan Apollo Rehberlik Bilgisayarı yazılımını geliştirdi. Bu etkinlik, çocukların bilgisayarların bir görevi yerine getirmek için net ve doğru komutlara ihtiyaç duyduğunu anlamalarına yardımcı olur; tıpkı NASA\'nın Ay\'a ulaşmak için kod kullanması gibi. Blok programlama, uzay görevlerinde, robotikte ve yapay zekada şu anda kullanılan daha karmaşık programlama dillerini anlamanın ilk adımıdır. Aynı ilkeler, Mars keşif robotları (Curiosity, Perseverance) gibi otonom sistemlerin geliştirilmesinde de kullanılır.'
+    ],
+    'variations' => [
+        'Varyasyonlar/Öneriler:',
+        'Öğrenciler uygulamaya yeni başlıyorsa, önce basılı bloklarla projeleri oluşturabilirsiniz.',
+        'Gezegenler, yıldızlar veya kuyruklu yıldızlar gibi daha fazla karakter ekleyin.',
+        'Çocukların yaşına ve ScratchJr uygulamasıyla ilgili deneyimlerine bağlı olarak, uzay gemisini engellerden kaçınmak için programlamak gibi ek zorluklar eklenebilir.',
+        'Öğrenciler ayrıca uzay gemisinin aya inişini gösteren başka bir sayfa da ekleyebilirler.',
+        '"Söyle" bloğunu kullanmak yerine, "Kaydedilmiş Sesi Çal" bloğu kullanılabilir ve öğrencilerin sesleri duyulabilir.',
+        'Yüzlerini düzenleyebileceğiniz ve öğrencilerin fotoğraflarını ekleyebileceğiniz astronot karakterleri ekleyin.'
+    ],
+    'duration' => '60 dakika',
+    'experience' => 'Orta Seviye - Bazı temel kodlama bilgileri önerilir; katılımcıların temel programlama kavramlarına aşina olması gerekir.',
+    'target-audience' => [
+        'Küçük Çocuklar (5-7 Yaş)'
+    ]
+],
     'chatbot' => [
         'title' => 'Sohbet robotu yapın',
         'author' => 'AB Kod Haftası Ekibi',

@@ -1,6 +1,53 @@
 <?php
 
 return [
+    // resources/lang/hr/challenges-content.php
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Kodiraj kao Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Učenici će naučiti osnove kodiranja temeljene na blokovima pomoću Scratch Jr. U programu će lansirati za svemirsku letjelicu, baš kao i Margaret Hamilton, žena koja je programirala kod za NASA-in Apollo do Mjeseca.',
+        'Aktivnost će također pomoći u razbijanju rodnih stereotipa isticanjem doprinosa jedne programerke istraživanju svemira i poticanjem djevojčica da se uključe u programiranje i STEM karijere.'
+    ],
+    'description' => 'Programirajte lansiranje u svemir pomoću Scratch Jr. Aktivnost je inspirirana Margaret Hamilton. Kodirajte odbrojavanje i lansirajte svemirsku letjelicu!',
+    'instructions' => [
+        'Uvod: Učitelj uvodi pojam svemirske misije i slanja ljudi na Mjesec. Učitelj objašnjava tko je Margaret Hamilton i njen doprinos u planiranju misije Apollo. Nakon toga slijedi rasprava o tome što je programiranje i kako računalu možemo dati upute.',
+        'Programska aktivnost: Margaret Hamilton kodira i odbrojava. Svemirska letjelica odlazi na Mjesec.',
+        'Otvorite aplikaciju Scratch Jr. i otvorite novi projekt.',
+        'Izbrišite lik.',
+        'Odaberite pozadinu sa svemirom (Korak 1 png).',
+        'Odaberite likove djevojke, svemirskog broda i Zemlje (Korak 2 png).',
+        'Promijenite veličinu likova klikom na blok „Umanji (Shrink)” ili „Uvećaj (Grow)” (Korak 3 png).',
+        'Poredajte likove pravilnim redoslijedom (Korak 4 png).',
+        'Poredajte programe tako da djevojka odbrojava i kada završi, svemirski brod se pomiče prema gore. Kako bi se to postiglo, kada se pritisne zelena zastava, djevojka treba izgovoriti riječi koje odaberete i poslati poruku. Svemirski brod bi trebao primiti tu poruku iste boje i ispravnim blokovima za kretanje, pomaknuti se prema gore. Možete i smanjiti svemirski brod kada se odmiče. Za programiranje svemirskog broda možete koristiti jednostavne blokove ili ponavljajuće pokrete (Korak 5 png).',
+        'Pokrenite likove pritiskom na zelenu zastavicu.'
+    ],
+    'materials' => [
+        'Tablet ili osobno računalo (ako je moguće, preporučeno je korištenje tableta) s instaliranim Scratch Jr. (https://www.scratchjr.org/ za tablete i https://jfo8000.github.io/ScratchJr-Desktop/ za Window ili Mac).',
+        'Ispisane slike Margaret Hamilton i misije Apollo 11 (neobavezno).',
+        'Ispisane kartice s uputama za Scratch Jr. (https://www.scratchjr.org/teach/resources) - (neobavezno).',
+        'Projektor (neobavezno).'
+    ],
+    'real-life-applications' => [
+        'Primjena u stvarnom životu:',
+        'Ova aktivnost nije samo uvod u programiranje, već je povezana sa stvarnim događajima i primjenom u znanosti i tehnologiji: Margaret Hamilton razvila je softver za Apollo Guidance Computer, računalo koje je Apollu 11 omogućilo sigurno slijetanje 1969. godine. Aktivnost pomaže djeci shvatiti kako su računalima potrebne jasne i ispravne naredbe za provođenje misije - baš kao što je i NASA koristila kod za dolazak na Mjesec. Programiranje blokova, kao u Scratch Jr, prvi je korak u razumijevanju složenijih programskih jezika koji se trenutno koriste u svemirskim misijama, robotici i umjetnoj inteligenciji. Ista se znanja koriste i u razvoju autonomnih sustava, poput robota za istraživanje Marsa (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Varijacije/prijedlozi:',
+        'Ako su učenici novi u aplikaciji, možete prvo izraditi projekte s ispisanim blokovima.',
+        'Dodajte više likova kao što su planeti, zvijezde ili kometi.',
+        'Ovisno o dobi i iskustvu djece s aplikacijom Scratch Jr, mogu se dodati dodatni izazovi, kao što je programiranje svemirskog broda kako bi se izbjegle prepreke.',
+        'Učenici mogu dodati još jednu stranicu koja prikazuje slijetanje svemirskog broda na Mjesec.',
+        'Umjesto korištenja bloka „Reci (Say)”, može se koristiti blok „Pusti snimljeni zvuk (Play Recorded Sound)" i glas učenika.',
+        'Dodajte likove astronauta kojima možete uređivati lica i dodati fotografije učenika.'
+    ],
+    'duration' => '60 minuta',
+    'experience' => 'Srednja razina - Preporučuju se osnovna znanja kodiranja; učenici bi trebali biti upoznati s osnovama programiranja.',
+    'target-audience' => [
+        'Manja djeca (5-7 godina)'
+    ]
+],
     'chatbot' => [
         'title' => 'Izradi robota za čavrljanje',
         'author' => 'Tim Europskog tjedna programiranja',

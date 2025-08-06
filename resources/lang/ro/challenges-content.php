@@ -1,6 +1,52 @@
 <?php
 
 return [
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Programează ca Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Elevii vor învăța concepte de bază de programare bazate pe blocuri folosind Scratch Jr pentru a lansa o navă spațială, la fel ca Margaret Hamilton, femeia care a scris codul pentru Apollo Nasa pentru a ajunge la Lună.',
+        'Activitatea va contribui, de asemenea, la eliminarea stereotipurilor de gen, subliniind contribuția unei femei programator la explorarea spațiului și încurajând fetele să urmeze programe și cariere STIM.'
+    ],
+    'description' => 'Programează o lansare spațială în Scratch Jr inspirată de Margaret Hamilton! Programați o numărătoare inversă, lansați o navă spațială și opriți stereotipurile de gen prin încurajarea fetelor în programare!',
+    'instructions' => [
+        'Introducere: Profesorul prezintă misiunile spațiale și trimiterea oamenilor pe Lună și o introduce pe Margaret Hamilton și contribuțiile ei la planificarea misiunii Apollo. Apoi urmează o discuție despre ce este programarea și cum putem da instrucțiuni unui computer.',
+        'Activitate de programare: Margaret Hamilton programează și numără invers, iar nava spațială pleacă spre Lună.',
+        'Deschideți aplicația Scratch Jr. și creați un nou proiect',
+        'Ștergeți caracterul',
+        'Alegeți fundalul cu spațiu (Pas1 png)',
+        'Alegeți dintre personajele o femeie, o navă spațială și Pământ (Pasul 2 png)',
+        'Redimensionați caracterele făcând clic de câte ori este necesar pe Bloc „Shrink” sau „Grow” (Pasul 3 png)',
+        'Mutați caracterele în poziția din dreapta (Pasul 4 png)',
+        'Scrie programele astfel încât femeia să numere invers, iar când își termină cuvintele, nava spațială să urce. Pentru a realiza acest lucru, odată ce se apasă steagul verde, femeia ar trebui să spună cuvintele alese și apoi să trimită un mesaj. Nava spațială ar trebui să primească mesajul de aceeași culoare și cu blocurile corecte de mișcare, nava spațială ar trebui să urce. De asemenea, poți face ca nava spațială să se micșoreze pe măsură ce se îndepărtează. Pentru a programa nava spațială, poți folosi blocuri simple sau bucla de repetare. (Step 5 png)',
+        'Rulați scriptul apăsând steagul verde.'
+    ],
+    'materials' => [
+        'Tabletă sau PC (dacă este posibil, încurajăm în primul rând utilizarea unei tablete) cu Scratch Jr. instalat (https://www.scratchjr.org/ pentru tablete și https://jfo8000.github.io/ScratchJr-Desktop/ pentru Windows sau Mac)',
+        'Imagini imprimate cu Margaret Hamilton și misiunea Apollo 11 (opțional)',
+        'Carduri imprimabile cu comenzile Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opțional)',
+        'Proiector (opțional)'
+    ],
+    'real-life-applications' => [
+        'Aplicații în viața reală:',
+        'Această activitate nu este doar o introducere în programare, ci este legată de evenimente și aplicații din viața reală în știință și tehnologie: Margaret Hamilton a dezvoltat software-ul pentru Apollo Guidance Computer, care a permis Apollo 11 să aterizeze în siguranță în 1969. Activitatea ajută copiii să înțeleagă cum computerele au nevoie de comenzi clare și corecte pentru a îndeplini o misiune – la fel cum NASA a folosit codul pentru a ajunge pe Lună. Programarea pe blocuri, cum este Scratch Jr, este primul pas pentru înțelegerea limbajelor de programare mai complexe folosite în prezent în misiuni spațiale, robotică și inteligență artificială. Aceleași principii sunt folosite în dezvoltarea sistemelor autonome, cum ar fi roboții de explorare a planetei Marte (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Variante/Sugestii:',
+        'Dacă elevii sunt noi în aplicație, poți crea mai întâi proiectele folosind blocurile tipărite.',
+        'Adaugă mai multe personaje, cum ar fi planete, stele sau comete.',
+        'În funcție de vârsta și experiența copiilor cu aplicația ScratchJr, se pot adăuga provocări suplimentare, cum ar fi programarea navei spațiale pentru a evita obstacole.',
+        'Elevii pot adăuga și o altă pagină care arată nava spațială aterizând pe Lună.',
+        'În loc de a folosi blocul „Say”, se poate folosi blocul „Play Recorded Sound” pentru a auzi vocile elevilor.',
+        'Adaugă personaje de astronauți în care editezi fețele și adaugi fotografiile elevilor.'
+    ],
+    'duration' => '60 minute',
+    'experience' => 'Intermediară - Se recomandă cunoștințe de bază de programare; participanții ar trebui să fie familiarizați cu conceptele fundamentale de programare.',
+    'target-audience' => [
+        'Copii mici (cu vârste cuprinse între 5 și 7 ani)'
+    ]
+],
     'chatbot' => [
         'title' => 'Să construim un chatbot',
         'author' => 'Echipa Săptămânii UE a programării',

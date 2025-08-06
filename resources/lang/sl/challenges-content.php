@@ -1,6 +1,53 @@
 <?php
 
 return [
+    // resources/lang/sl/challenges-content.php
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Kodiraj kot Margaret Hamilton!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Učenci bodo spoznali osnovne koncepte programiranja z bloki v Scratchu Jr in izstrelili vesoljsko plovilo – tako kot Margaret Hamilton, programerka, ki je napisala kodo za NASA-in program Apollo, da je dosegel Luno.',
+        'Dejavnost bo obenem pomagala razbijati spolne stereotipe, saj bo izpostavila prispevek ženske programerke k raziskovanju vesolja ter spodbujala dekleta k programiranju in karieram v STEM-področjih.'
+    ],
+    'description' => 'Programiraj izstrelitev vesoljskega plovila v Scratchu Jr po navdihu Margaret Hamilton! Ustvari odštevanje, izstrelitev plovila in razbij spolne stereotipe s spodbujanjem deklet k programiranju!',
+    'instructions' => [
+        'Uvod: Učitelj predstavi vesoljske misije in pošiljanje ljudi na Luno ter predstavi Margaret Hamilton in njen prispevek k načrtovanju Apolla. Sledi razprava o tem, kaj je programiranje in kako lahko dajemo navodila računalniku.',
+        'Aktivnost programiranja: Margaret Hamilton programira in nato pa vesoljska ladja odleti proti Luni.',
+        'Odpri aplikacijo Scratch Jr. in ustvari nov projekt.',
+        'Izbriši lik.',
+        'Izberi ozadje z vesoljem (Korak 1 png).',
+        'Izbieri med liki dekle, vesoljsko ladjo in Zemljo (Korak 2 png).',
+        'Spreminjaj velikost likov s klikom na blok »Skrči« (Shrink) ali »Povečaj« (Grow) tolikokrat, kolikor je potrebno (Korak 3 png).',
+        'Premakni like na pravo mesto (Korak 4 png).',
+        'Napiši program tako, da ženska odšteva in ko konča z besedami, vesoljska ladja poleti navzgor. Da to dosežeš, naj ženska ob kliku na zeleno zastavico izreče izbrane besede in nato pošlje sporočilo. Vesoljska ladja mora prejeti sporočilo iste barve in s pravilnimi bloki gibanja poleteti navzgor. Lahko tudi spremeniš velikost ladje, da bo videti, kot da se oddaljuje. Za programiranje vesoljske ladje lahko uporabiš enostavne bloke ali zanko ponavljanja. (Korak 5 png).',
+        'Zaženi skripto s klikom na zeleno zastavico.'
+    ],
+    'materials' => [
+        'Tablica ali računalnik (po možnosti priporočamo uporabo tablice) z nameščenim Scratch Jr: (https://www.scratchjr.org/ za tablične računalnike in https://jfo8000.github.io/ScratchJr-Desktop/ za Windows ali Mac).',
+        'Natisnjene slike Margaret Hamilton in misije Apollo 11 (neobvezno).',
+        'Natisnjene kartice z ukazi Scratch Jr. (https://www.scratchjr.org/teach/resources) - (neobvezno).',
+        'Projektor (neobvezno).'
+    ],
+    'real-life-applications' => [
+        'Resnične življenjske uporabe:',
+        'Ta dejavnost ni le uvod v programiranje, ampak je povezana z resničnimi dogodki in uporabo v znanosti in tehnologiji: Margaret Hamilton je razvila programsko opremo za računalnik Apollo Guidance Computer, ki je omogočil varno pristajanje Apolla 11 leta 1969. Ta dejavnost otrokom pomaga razumeti, da računalniki potrebujejo jasna in pravilna navodila za izvedbo naloge – tako kot je NASA uporabila kodo za pristanek na Luni. Programiranje z bloki, kot v ScratchJr, je prvi korak k razumevanju bolj zapletenih programskih jezikov, ki se danes uporabljajo v vesoljskih misijah, robotiki in umetni inteligenci. Enaka načela se uporabljajo pri razvoju avtonomnih sistemov, kot so roboti za raziskovanje Marsa (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Različice/predlogi:',
+        'Če učenci aplikacije še ne poznajo, lahko projekte najprej ustvarite s tiskanimi bloki.',
+        'Dodajte več likov, kot so planeti, zvezde ali kometi.',
+        'Glede na starost in izkušnje otrok z aplikacijo ScratchJr lahko dodate dodatne izzive, na primer programiranje vesoljske ladje, da se izogne oviram.',
+        'Učenci lahko dodajo še eno stran, ki prikazuje pristanek vesoljske ladje na Luni.',
+        'Namesto bloka »Reci« lahko uporabite blok »Predvajaj posneti zvok«, da se slišijo glasovi učencev.',
+        'Dodajte like astronavtov in uredite obraze tako, da dodate fotografije učencev.'
+    ],
+    'duration' => '60 minut',
+    'experience' => 'Intermediate - Priporočljivo je osnovno poznavanje programiranja; učenci naj bodo seznanjeni z osnovnimi programerskimi koncepti.',
+    'target-audience' => [
+        'Mlajši otroci (5-7 let)'
+    ]
+],
     'chatbot' => [
         'title' => 'Ustvarite bota za klepet',
         'author' => 'Ekipa evropskega tedna programiranja',
