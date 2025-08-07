@@ -22,12 +22,28 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
 {
     protected $imagesDir;
 
+    protected $focus;
+
     // public
     private $disk = 'resources';
 
-    public function __construct($imagesDir = null)
+    public function __construct($imagesDir = null, $focus = false)
     {
         $this->imagesDir = $imagesDir;
+        $this->focus = $focus;
+    }
+
+    protected function createOrGetModel($class, $name)
+    {
+        $name = ucwords(mb_strtolower(trim($name)));
+
+        return $class::create([
+            'name' => $name,
+            'position' => 0,
+            'active' => true,
+            'teach' => true,
+            'learn' => true,
+        ]);
     }
 
     protected function parseArray($value)
@@ -43,7 +59,7 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             Log::warning('[ResourcesImport] Missing name_of_the_resource', $row);
             return null;
         }
-        
+
         $thumbnail = null;
         if (!empty($row['image']) && $this->imagesDir) {
             $localPath = $this->imagesDir . DIRECTORY_SEPARATOR . $row['image'];
@@ -56,7 +72,12 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
                 Log::warning("[ResourcesImport] Image not found: $localPath");
             }
         }
-        
+
+        $groups = [];
+        if (!empty($row['category'])) {
+            $groups = $this->parseArray($row['category']);
+        }
+
         $item = new ResourceItem([
             'name' => trim($row['name_of_the_resource']),
             'source' => trim($row['link'] ?? ''),
@@ -65,7 +86,8 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             'learn' => true,
             'teach' => true,
             'active' => true,
-            'weight' => \Carbon\Carbon::now()->format('Y')
+            'weight' => \Carbon\Carbon::now()->format('Y'),
+            'groups' => $groups,
         ]);
         $item->save();
 
@@ -75,6 +97,9 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         foreach ($types as $type) {
             $model = ResourceType::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($type))])->first();
             if ($model) {
+                $item->types()->attach($model->id);
+            } elseif ($this->focus) {
+                $model = $this->createOrGetModel(ResourceType::class, trim($type));
                 $item->types()->attach($model->id);
             } else {
                 Log::warning("[ResourcesImport] ResourceType not found: $type");
@@ -87,6 +112,9 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             $model = ResourceLevel::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($aud))])->first();
             if ($model) {
                 $item->levels()->attach($model->id);
+            } elseif ($this->focus) {
+                $model = $this->createOrGetModel(ResourceLevel::class, trim($aud));
+                $item->levels()->attach($model->id);
             } else {
                 Log::warning("[ResourcesImport] ResourceLevel (target_audience) not found: $aud");
             }
@@ -97,6 +125,9 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         foreach ($levels as $level) {
             $model = ResourceLevel::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($level))])->first();
             if ($model) {
+                $item->levels()->attach($model->id);
+            } elseif ($this->focus) {
+                $model = $this->createOrGetModel(ResourceLevel::class, trim($level));
                 $item->levels()->attach($model->id);
             } else {
                 Log::warning("[ResourcesImport] ResourceLevel (level_of_difficulty) not found: $level");
@@ -109,6 +140,9 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             $model = ResourceProgrammingLanguage::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($lang))])->first();
             if ($model) {
                 $item->programmingLanguages()->attach($model->id);
+            } elseif ($this->focus) {
+                $model = $this->createOrGetModel(ResourceProgrammingLanguage::class, trim($lang));
+                $item->programmingLanguages()->attach($model->id);
             } else {
                 Log::warning("[ResourcesImport] ResourceProgrammingLanguage not found: $lang");
             }
@@ -119,6 +153,9 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         foreach ($subjects as $subject) {
             $model = ResourceSubject::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($subject))])->first();
             if ($model) {
+                $item->subjects()->attach($model->id);
+            } elseif ($this->focus) {
+                $model = $this->createOrGetModel(ResourceSubject::class, trim($subject));
                 $item->subjects()->attach($model->id);
             } else {
                 Log::warning("[ResourcesImport] ResourceSubject not found: $subject");
@@ -131,6 +168,9 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             $model = ResourceCategory::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($topic))])->first();
             if ($model) {
                 $item->categories()->attach($model->id);
+            } elseif ($this->focus) {
+                $model = $this->createOrGetModel(ResourceCategory::class, trim($topic));
+                $item->categories()->attach($model->id);
             } else {
                 Log::warning("[ResourcesImport] ResourceCategory (topic) not found: $topic");
             }
@@ -141,6 +181,9 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         foreach ($langs as $lang) {
             $model = ResourceLanguage::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($lang))])->first();
             if ($model) {
+                $item->languages()->attach($model->id);
+            } elseif ($this->focus) {
+                $model = $this->createOrGetModel(ResourceLanguage::class, trim($lang));
                 $item->languages()->attach($model->id);
             } else {
                 Log::warning("[ResourcesImport] ResourceLanguage not found: $lang");

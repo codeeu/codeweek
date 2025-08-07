@@ -15,7 +15,7 @@ class ImportResourcesFromExcel extends Command
      *
      * @var string
      */
-    protected $signature = 'resources:import {file : Path to the Excel file}';
+    protected $signature = 'resources:import {file : Path to the Excel file} {--focus : Focus create related attributes}';
 
     /**
      * The console command description.
@@ -29,6 +29,7 @@ class ImportResourcesFromExcel extends Command
      */
     public function handle()
     {
+        $focus = $this->option('focus');
         $filePath = $this->argument('file');
         $excelPath = realpath($filePath);
 
@@ -45,7 +46,7 @@ class ImportResourcesFromExcel extends Command
         }
 
         try {
-            Excel::import(new ResourcesImport($imagesDir), $filePath);
+            Excel::import(new ResourcesImport($imagesDir, $focus), $filePath);
 
             $this->info('Import completed successfully.');
             return 0;
