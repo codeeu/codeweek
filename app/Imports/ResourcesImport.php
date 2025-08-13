@@ -20,17 +20,26 @@ use Illuminate\Support\Str;
 
 class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
+    /**
+     * Folder images upload to S3
+     */
     protected $imagesDir;
+
+    /**
+     * Folder PDF upload to S3
+     */
+    protected $pdfsDir;
 
     protected $focus;
 
     // public
     private $disk = 'resources';
 
-    public function __construct($imagesDir = null, $focus = false)
+    public function __construct($imagesDir = null, $pdfsDir = null, $focus = false)
     {
         $this->imagesDir = $imagesDir;
         $this->focus = $focus;
+        $this->pdfsDir = $pdfsDir;
     }
 
     protected function createOrGetModel($class, $name)
@@ -73,6 +82,36 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             }
         }
 
+        $pdfLink = null;
+        if (!empty($row['link']) && stripos($row['link'], 'http://') !== 0 && stripos($row['link'], 'https://') !== 0 && $this->pdfsDir) {
+            $groupName = !empty($row['group_name']) ? trim($row['group_name']) : '';
+            $groupSlug = $groupName ? Str::slug($groupName) : 'default';
+
+            $searchBase = $groupName ? $this->pdfsDir . DIRECTORY_SEPARATOR . $groupName : $this->pdfsDir;
+            $pdfFilename = basename($row['link']);
+            $pdfLocalPath = null;
+
+            if (is_dir($searchBase)) {
+                $rii = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($searchBase));
+                foreach ($rii as $file) {
+                    if ($file->isFile() && strcasecmp($file->getFilename(), $pdfFilename) === 0) {
+                        $pdfLocalPath = $file->getPathname();
+                        break;
+                    }
+                }
+            }
+
+            if ($pdfLocalPath && file_exists($pdfLocalPath)) {
+                $ext = pathinfo($pdfFilename, PATHINFO_EXTENSION) ?: 'pdf';
+                $basename = Str::slug(pathinfo($pdfFilename, PATHINFO_FILENAME)) . '-' . time() . '.' . $ext;
+                $storagePath = $groupSlug . '/' . $basename;
+                Storage::disk($this->disk)->put($storagePath, file_get_contents($pdfLocalPath));
+                $pdfLink = Storage::disk($this->disk)->url($storagePath);
+            } else {
+                Log::warning("[ResourcesImport] PDF not found: {$row['link']} in {$searchBase}");
+            }
+        }
+
         $groups = [];
         if (!empty($row['category'])) {
             $groups = $this->parseArray($row['category']);
@@ -80,7 +119,7 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
 
         $item = new ResourceItem([
             'name' => trim($row['name_of_the_resource']),
-            'source' => trim($row['link'] ?? ''),
+            'source' => $pdfLink ?: trim($row['link'] ?? ''),
             'description' => trim($row['description'] ?? ''),
             'thumbnail' => $thumbnail,
             'learn' => true,

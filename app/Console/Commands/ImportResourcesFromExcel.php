@@ -40,13 +40,14 @@ class ImportResourcesFromExcel extends Command
 
         $excelDir = dirname($excelPath);
         $imagesDir = $excelDir . DIRECTORY_SEPARATOR . 'images';
+        $pdfsDir = $excelDir . DIRECTORY_SEPARATOR . 'links';
 
         if (!is_dir($imagesDir)) {
             $this->warn("Warning: Images folder not found at $imagesDir. Continuing without images.");
         }
 
         try {
-            Excel::import(new ResourcesImport($imagesDir, $focus), $filePath);
+            Excel::import(new ResourcesImport($imagesDir, $pdfsDir, $focus), $filePath);
 
             $this->info('Import completed successfully.');
             return 0;
