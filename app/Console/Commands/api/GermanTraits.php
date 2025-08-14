@@ -4,6 +4,7 @@ namespace App\Console\Commands\api;
 
 use App\Event;
 use App\Tag;
+use App\Theme;
 use App\User;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
@@ -134,7 +135,10 @@ trait GermanTraits
             $event->audiences()->attach(explode(',', $this->audience));
         }
         if ($this->themes) {
-            $event->themes()->attach(explode(',', $this->themes));
+            $validThemeIds = $this->validateThemes($this->themes);
+            if (count($validThemeIds) > 0 ) {
+                $event->themes()->attach($validThemeIds);
+            }
         }
 
         if ($this->tags) {
@@ -150,6 +154,31 @@ trait GermanTraits
 
             $event->tags()->sync($tagsArray);
         }
+    }
+
+    protected function validateThemes(string $input): array
+    {
+        if (empty($input)) {
+            return [];
+        }
+        
+        $themeIds = array_unique(array_filter(array_map('trim', explode(',', $input))));
+
+        // Mapping deleted old id to new id group
+        $themeIdMapping = [
+            7 => 6,
+            10 => 9,
+            12 => 1,
+            15 => 16,
+        ];
+
+        $mappedThemeIds = array_map(function ($id) use ($themeIdMapping) {
+            return $themeIdMapping[$id] ?? $id;
+        }, $themeIds);
+
+        $validThemeIds = Theme::whereIn('id', $mappedThemeIds)->pluck('id')->toArray();
+
+        return $validThemeIds;
     }
     
 }
