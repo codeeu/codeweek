@@ -107,7 +107,7 @@
               id-name="iso"
               placeholder="Select country"
               v-model="filters.countries"
-              :options="countrieslist"
+              :options="countriesOptions"
             />
           </FieldWrapper>
 
@@ -372,6 +372,15 @@ export default {
       }))
     );
 
+    const countriesOptions = computed(() =>
+      (props.countrieslist || [])
+        .map(c => ({
+          ...c,
+          name: (c.translation && String(c.translation).trim()) ? c.translation : c.name,
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }))
+    );
+
     const handleUpdateParams = () => {
       const updatedParams = {
         page: pagination.value.current_page,
@@ -412,7 +421,7 @@ export default {
           ? { id: params.year, name: params.year }
           : emptyFilters.year,
         languages: mapList(params.languages, languageOptions.value),
-        countries: mapList(params.countries, props.countrieslist, 'iso'),
+        countries: mapList(params.countries, countriesOptions.value, 'iso'),
         formats: mapList(params.formats, activityFormatOptions.value),
         types: mapList(params.types, activityTypeOptions.value),
         audiences: mapList(params.audiences, props.audienceslist),
@@ -731,6 +740,7 @@ export default {
       activityTypeOptions,
       ageOptions,
       filters,
+      countriesOptions,
 
       removeSelectedItem,
       removeAllSelectedItems,
