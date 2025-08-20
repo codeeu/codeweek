@@ -1,6 +1,392 @@
 <?php
 
 return [
+    'create-your-own-website-with-html-and-css' => [
+    'title' => 'Luo oma verkkosivusi HTML:llä ja CSS:llä',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Haasteen tarkoitus',
+    'purposes' => [
+        'Johdattaa aloittelijat verkkokehityksen maailmaan.',
+        'Opettaa HTML:n ja CSS:n perusteet, jotka ovat välttämättömiä verkkosivujen luomiseen ja tyylittämiseen.',
+        'Kannustaa käytännön oppimiseen rakentamalla oma verkkosivu alusta asti.',
+        'Antaa perustaidot web-suunnitteluun ja lisää itseluottamusta oman verkkoläsnäolon rakentamisessa.'
+    ],
+    'description_title' => 'Haasteen kuvaus',
+    'description' => [
+        'Verkkosivut ovat internetin perusta. Tässä tehtävässä opit käyttämään HTML:ää sisällön jäsentämiseen ja CSS:ää ulkoasun muokkaamiseen sekä luot ensimmäisen verkkosivusi.',
+        'Hauskojen vaiheiden kautta rakennat sivun, joka voi sisältää tekstiä, kuvia, värejä ja linkkejä.'
+    ],
+    'target_audience_title' => 'Kohderyhmä',
+    'target-audience' => [
+        'Aloittelijat, jotka haluavat oppia verkkosivujen luomista',
+        'Oppilaat tai kuka tahansa, jota kiinnostaa verkkosivujen rakenne ja toiminta'
+    ],
+    'experience_title' => 'Kokemustaso',
+    'experience' => 'Aloittelija – ohjelmointitaustaa ei tarvita.',
+    'duration_title' => 'Kesto',
+    'duration' => '1–2 tuntia',
+    'materials_title' => 'Materiaalit',
+    'materials' => [
+        'Tietokone tai kannettava tietokone',
+        'Tekstieditori, kuten Muistio (Windows) tai TextEdit (Mac)'
+    ],
+    'instructions_title' => 'Ohjeet',
+    'instructions' => [
+        'Vinkkejä opettajille: aloita perusteista (HTML ja CSS), selitä dokumentin rakenne, huomauta yleisimmistä virheistä, rohkaise interaktiivisuuteen ja luovuuteen.',
+        'Vaihe 1: Ympäristön valmistelu – avaa yksinkertainen tekstieditori (Muistio tai TextEdit).',
+        'Vaihe 2: HTML-tiedoston perusrakenne – tallenna tiedosto nimellä index.html ja lisää HTML-tagien perusrakenne.',
+        'Vaihe 3: Lisää tyylejä CSS:llä – luo style.css ja määritä perusasetuksia (taustaväri, fontti, tekstin väri ja tasaus).',
+        'Vaihe 4: Yhdistä HTML ja CSS – lisää <link rel="stylesheet" href="style.css"> <head>-osioon.',
+        'Vaihe 5: Aja sivu – avaa index.html selaimessa ja tarkista tulos.'
+    ],
+    'quiz_title' => 'Kysely:',
+    'quiz' => [
+        'Mikä on HTML?',
+        'a) Kieli kuvien tekemiseen',
+        'b) Kieli verkkosivujen sisällön jäsentämiseen',
+        'c) Kuvankäsittelyohjelma',
+        'Mikä on CSS?',
+        'a) Kieli verkkotietokantojen luomiseen',
+        'b) Kieli verkkosivujen ulkoasun ja tyylin määrittelyyn',
+        'c) Tiedostonhallintaohjelma',
+        'Miten yhdistät CSS:n HTML:ään?',
+        'a) <link>-tagilla HTML-dokumentissa',
+        'b) Käyttämällä <style>-tageja HTML:ssä',
+        'c) Sitä ei voi yhdistää',
+        'Oikeat vastaukset: 1.b, 2.b, 3.a'
+    ],
+    'mini_simulation_title' => 'Muokkaa omaa sivuasi:',
+    'mini_simulation' => [
+        'Vaihda taustaväri.',
+        'Lisää uusi alaotsikko (h2) pääotsikon alle.',
+        'Lisää linkki toiselle sivulle, esim. Googleen.',
+        'Muista päivittää sivu jokaisen muutoksen jälkeen!'
+    ],
+    'additional_resources_title' => 'Lisäresurssit:',
+    'additional_resources' => [
+        'https://developer.mozilla.org/fi/docs/Web/HTML',
+        'https://developer.mozilla.org/fi/docs/Web/CSS'
+    ]
+],
+
+    'train-it-like-fei-fei-li' => [
+    'title' => 'Kouluta kuin Fei-Fei Li – Anna tietokoneille näkökyky',
+    'author' => 'EU Code Week',
+    'purposes_title' => 'Haasteen tarkoitus',
+    'purposes' => [
+        'Tutustua tekoälyn ja koneoppimisen peruskäsitteisiin.',
+        'Oppia, miten tietokoneet voidaan kouluttaa tunnistamaan kuvia ja esineitä.',
+        'Kehittää ymmärrystä datan keräämisestä, käsittelystä ja hyödyntämisestä.',
+        'Harjoitella kriittistä ajattelua ja keskustella tekoälyn mahdollisuuksista ja rajoituksista.',
+        'Kokea luovaa oppimista rakentamalla oma luokittelija esimerkkidatalla.'
+    ],
+    'description_title' => 'Haasteen kuvaus',
+    'description' => [
+        'Tässä haasteessa osallistujat kouluttavat yksinkertaisen tekoälymallin kuvatunnistukseen. Tehtävä havainnollistaa, miten tietokoneet voivat oppia esimerkeistä tunnistamaan esineitä ja kuvioita.',
+        'Haaste perustuu Fei-Fei Lin uraauurtavaan työhön tietokonenäön ja tekoälyn alalla, jossa suuri määrä kuvia käytetään koneoppimismallien kouluttamiseen.'
+    ],
+    'target_audience_title' => 'Kohderyhmä',
+    'target-audience' => [
+        'Peruskoulun oppilaat (6–12 vuotta)',
+        'Alemman toisen asteen oppilaat (12–16 vuotta)',
+        'Ylemmän toisen asteen opiskelijat (16–18 vuotta)'
+    ],
+    'experience_title' => 'Kokemustaso',
+    'experience' => 'Aloittelija – osallistujilta ei vaadita aiempaa ohjelmointiosaamista.',
+    'duration_title' => 'Kesto',
+    'duration' => '45–60 minuuttia',
+    'materials_title' => 'Materiaalit',
+    'materials' => [
+        'Tietokone tai tabletti, jossa on internetyhteys.',
+        'Selainpohjainen koneoppimisalusta, kuten Teachable Machine (https://teachablemachine.withgoogle.com/).',
+        'Esimerkkikuvia koulutusaineiston luomiseen (esim. omat valokuvat esineistä tai symboleista).'
+    ],
+    'instructions_title' => 'Ohjeet',
+    'instructions' => [
+        'Avaa Teachable Machine -sivusto tai vastaava työkalu.',
+        'Luo uusi kuvantunnistusprojekti.',
+        'Kokoa esimerkkikuvia eri kategorioihin (esim. “omena” ja “banaani”).',
+        'Kouluta malli syöttämällä sille riittävästi kuvia kustakin kategoriasta.',
+        'Testaa malli syöttämällä uusia kuvia ja katso, onnistuuko se tunnistamaan ne oikein.',
+        'Keskustele: kuinka tarkka malli oli? Mikä voisi parantaa sitä? Entä rajoitukset?'
+    ],
+    'real-life-applications_title' => 'Tosielämän sovelluksia',
+    'real-life-applications' => [
+        'Tietokonenäköä käytetään itseajavissa autoissa, lääketieteellisessä kuvantamisessa ja turvallisuusjärjestelmissä.',
+        'Koneoppimisen mallit auttavat lajittelussa, kasvojentunnistuksessa ja luonnonilmiöiden havainnoinnissa.',
+        'Keskustelu eettisistä kysymyksistä: esimerkiksi yksityisyys ja datan vääristymät.'
+    ],
+],
+
+    'simulate-dice-in-python' => [
+    'title' => 'Simuloi nopan heittoa Pythonissa',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Haasteen tarkoitus',
+    'purposes' => [
+        'Tutustuttaa osallistujat satunnaislukujen tuottamiseen ja silmukoihin Pythonissa.',
+        'Nopanheiton simuloinnin avulla oppia, miten tietokone voi tuottaa satunnaisia tuloksia ja miten toimintaa toistetaan silmukalla.',
+        'Luoda perusta yksinkertaisten pelien ja simulointien rakentamiselle.',
+    ],
+    'description_title' => 'Haasteen kuvaus',
+    'description' => [
+        'Nopanheiton simulointi on oiva tapa opetella satunnaislukujen käsittelyn perusteita Pythonissa.',
+        'Tässä tehtävässä käytetään random-moduulia satunnaislukujen tuottamiseen ja hyödynnetään arvoa nopanheiton simulointiin.',
+        'Tehtävän myötä ymmärrät, miten Python voi tuottaa lukuja tietyltä väliltä.',
+    ],
+    'target_audience_title' => 'Kohderyhmä',
+    'target_audience' => 'Peruskoulun ja lukion opiskelijat, Pythonin aloittelijat sekä kaikki, jotka opiskelevat satunnaislukuja, pelejä tai ohjelmoinnin peruslogiikkaa.',
+    'experience_title' => 'Kokemustaso',
+    'experience' => 'Aiempi ohjelmointikokemus ei ole tarpeen. Perustaidot kirjoittamisesta ja tietokoneen käytöstä riittävät.',
+    'duration_title' => 'Kesto',
+    'duration' => '30–45 minuuttia perusversion tekemiseen; jopa 60 minuuttia, jos tutkitaan lisävaihtoehtoja (kaksi noppaa, yleisin silmäluku jne.).',
+    'materials_title' => 'Suositeltu työkalu',
+    'materials' => [
+        'Python asennettuna tietokoneelle. Lataa tarvittaessa: https://www.python.org',
+        'Python IDLE tai jokin tekstieditori (esim. Visual Studio Code, PyCharm) koodin kirjoittamiseen.',
+    ],
+    'instructions_title' => 'Ohjeet',
+    'instructions' => [
+        'Vaihe 1: Ympäristön valmistelu – asenna Python ja avaa Python IDLE tai tekstieditori koodin kirjoittamista varten.',
+        'Vaihe 2: Ohjelman kirjoittaminen – luo tiedosto nimeltä dice.py ja syötä seuraava koodi:',
+        '# Tuomme random-moduulin satunnaislukujen generoimiseksi',
+        'import random',
+        '# Tervehdys käyttäjälle',
+        'print("Tervetuloa nopanheiton simulointiin!")',
+        '# Kysytään heittojen määrä',
+        'throw_num = int(input("Kuinka monta kertaa haluat heittää noppaa? "))',
+        'for i in range(throw_num):',
+        '    result = random.randint(1, 6)  # Satunnainen luku 1–6',
+        '    print(f"Heitto {i + 1}: {result}")',
+        'print("Kiitos pelaamisesta!")',
+        'Muista sisennykset – niiden on vastattava esimerkkiä!',
+        'Vaihe 3: Koodin selitys – random.randint(a, b) palauttaa satunnaisen kokonaisluvun väliltä a…b (molemmat rajat mukana). Syöte muunnetaan kokonaisluvuksi int()-funktiolla. for-silmukka toistaa heiton pyydetyn määrän kertoja, ja jokaisen heiton tulos tulostetaan.',
+        'Vaihe 4: Ohjelman suorittaminen – tallenna tiedosto nimellä dice.py, suorita se IDLE:ssä, syötä heittojen määrä (esim. 5), ja katso tulosteet.',
+    ],
+    'quiz_title' => 'Kysely:',
+    'quiz' => [
+        'Mikä Pythonin moduuli mahdollistaa satunnaislukujen luomisen?',
+        'a) random', 'b) Math', 'c) Time',
+        'Mitä random.randint(1, 6) tekee?',
+        'a) Luo satunnaisen luvun 1–6', 'b) Tulostaa satunnaisen luvun näytölle', 'c) Tulostaa luvun 1–6',
+        'Miten muutat käyttäjän syötteen kokonaisluvuksi Pythonissa?',
+        'a) float(s)', 'b) int()', 'c) p()',
+        'Oikeat vastaukset: 1.a, 2.a, 3.b',
+    ],
+    'mini_simulation_title' => 'Mini-simulointi:',
+    'mini_simulation' => [
+        'Muokkaa ohjelmaa:',
+        'Lisää vaihtoehto simuloida kahta nopanheittoa ja laskea niiden summa.',
+        'Lisää vaihtoehto tulostaa lopuksi se silmäluku, joka esiintyi useimmin.',
+    ],
+    'additional_resources_title' => 'Lisäresurssit:',
+    'additional_resources' => [
+        'Pythonin virallinen dokumentaatio – random-moduuli',
+        'Learn Python',
+    ],
+],
+
+    'gender-gap-gender-graph' => [
+    'title' => 'Sukupuolten välinen kuilu, sukupuolijakauma',
+    'author' => 'Theodora S. Tziampazi',
+    'purposes_title' => 'Haasteen tarkoitus',
+    'purposes' => [
+        'Ymmärtää, miten datan visualisointi voi vaikuttaa havaintoihin.',
+        'Tunnistaa digitaalisten työkalujen vinoumat vuorovaikutuksen avulla.',
+        'Kokeilla syöttöarvoja vääristymien havaitsemiseksi.',
+        'Muokata koodia, jotta tiedot esitetään täsmällisesti.',
+        'Verrata reiluja ja puolueellisia datavisualisointeja.',
+        'Pohtia datan manipuloinnin eettisiä vaikutuksia.',
+        'Keskustella puolueellisten tilastojen todellisista seurauksista.',
+        'Kehittää kriittistä ajattelua tekoälystä ja algoritmisista vinoumista.'
+    ],
+    'description_title' => 'Haasteen kuvaus',
+    'description' => [
+        'Tutki datavisualisoinnin vinoumaa syöttämällä arvoja, analysoimalla vääristymiä, muokkaamalla koodia ja pohtimalla, miten digitaaliset työkalut vaikuttavat käsityksiin sukupuolten edustuksesta teknologiassa.'
+    ],
+    'target_audience_title' => 'Kohderyhmä',
+    'target-audience' => [
+        'Peruskoulun oppilaat (6–12 vuotta)',
+        'Alemman toisen asteen oppilaat (12–16 vuotta)',
+        'Ylemmän toisen asteen opiskelijat (16–18 vuotta)',
+        'Opettajat ja kasvattajat'
+    ],
+    'experience_title' => 'Kokemustaso',
+    'experience' => [
+        'Keskitaso – suositellaan perusohjelmoinnin tuntemusta.',
+        'Edistynyt – osallistujille, joilla on vahvat koodaustaidot ja aiempaa kokemusta.'
+    ],
+    'duration_title' => 'Kesto',
+    'duration' => '2 tuntia',
+    'materials_title' => 'Materiaalit',
+    'materials' => [
+        'Scratch 3',
+        'Työskentelylomake: https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+    ],
+    'instructions_title' => 'Ohjeet',
+    'instructions' => [
+        'Käytä tätä digitaalista työkalua (pylvään luonti): https://scratch.mit.edu/projects/1147892829. Älä vielä katso koodia. Klikkaa vihreää lippua ja syötä arvoja (1–10), jotka kuvaavat hypoteettisesti naisten määrää teknologiassa. Kokeile useita lukuja.',
+        'Mitä huomaat?',
+        'Onko kyse bugista vai tietoisesta valinnasta?',
+        'Miten sen voisi korjata?',
+        'Manuaalisesti (käyttäjätaso): tutki työkalua ja kaikkia vedettäviä spriteitä. Onko paikkaa, jossa ongelma ratkeaa? Tai kohtaa, jossa syntyy odottamaton tulos?',
+        'Keskustelu: entä jos naisten määrä alalla aliarvioidaan tai yliarvioidaan? Entä jos tiedot ovat oikeita, mutta epätasapaino säilyy?',
+        'Oivallus: tavanommeko käyttää työkalua (esim. komponentin sijoittelu) vaikuttaa lopputulokseen.',
+        'Koodaamalla (luojataso): avaa projekti. Perushaaste – muokkaa koodia niin, että näytetyt tiedot vastaavat syötettyjä.',
+        'Edistynyt haaste – kopioi pylväs-sprite, väritä se siniseksi (miehet), muuta sen y-sijaintia ja luo mies-symboli uutena sprite’nä. Muokkaa koodeja sekä reiluun että epäreiluun skenaarioon ja tutki, miten koodaus voi kaventaa tai kasvattaa kuilua.',
+        'Ratkaisu (sama koodi): https://scratch.mit.edu/projects/1151892036'
+    ],
+    'discussion_title' => 'Keskustelu',
+    'discussion' => [
+        'Miten voi syntyä sekä puolueeton että puolueellinen digitaalinen työkalu?',
+        'Missä vinouma on “piilossa” – vedettäessä komponentteja vai itse koodissa?',
+        'Voiko vääristynyt esitys joskus olla hyödyllinen?',
+        'Voiko päämäärä oikeuttaa vääristyneet tiedot, vai pitäisikö totuutta pyrkiä esittämään aina?',
+        'Miten tekoäly voi toistaa vastaavia asioita kuin tässä haasteessa kokeilit?',
+        'Lisäkysymyksiä: Miten keräämme dataa? Miten sitä käsitellään? Miten algoritmeihin kätkeytyvät tilastot ohjaavat toimintaamme?',
+        'Oivallus: se, miten työkalun rakennamme, vaikuttaa lopputulokseen ja tapaan, jolla näemme maailman.'
+    ],
+    'real-life-applications_title' => 'Tosielämän sovelluksia',
+    'real-life-applications' => [
+        'Työpaikan monimuotoisuusraportit – sukupuolijakauman tarkka esittäminen tilastoissa.',
+        'Median grafiikat – harhaanjohtavien visualisointien välttäminen sukupuolten tasa-arvosta raportoidessa.',
+        'Tekoäly ja algoritminen vinouma – vinoumien tunnistaminen ja lieventäminen koneoppimismalleissa.',
+        'Rekrytoinnin ja HR‑analytiikan työkalut – reilu edustus päätöksenteossa.',
+        'STEM‑koulutus – puolueettoman datan käyttö naisten osallistumisen lisäämiseksi teknologiaan.',
+        'Julkinen päätöksenteko – oikeudenmukaiset politiikat täsmällisen datan pohjalta.',
+        'Sosiaalinen media ja kampanjat – reilut visualisoinnit muutoksen tueksi.'
+    ],
+],
+
+    'dance-with-ally' => [
+    'title' => 'Tanssi Allyn kanssa',
+    'author' => 'Kristina Krtalić',
+    'purposes_title' => 'Haasteen tarkoitus',
+    'purposes' => [
+        'Oppia yhdistämään micro:bit Scratchiin Bluetoothin kautta.',
+        'Ymmärtää, miten Scratchin micro:bit-laajennusta käytetään.',
+        'Käyttää micro:bitin painikkeita vuorovaikutukseen Scratch-projektien kanssa.',
+        'Luoda interaktiivisia pelejä micro:bitin avulla.',
+        'Kehittää ongelmanratkaisu- ja loogisen ajattelun taitoja.',
+        'Lisätä luovuutta koodauksen avulla.'
+    ],
+    'description_title' => 'Haasteen kuvaus',
+    'description' => [
+        'Laadi ohjelma, jonka avulla Scratch-hahmo (sprite) tanssii micro:bitin avulla.'
+    ],
+    'educational_goals_title' => 'Oppimistavoitteet',
+    'educational_goals' => [
+        'Ohjelmoinnin logiikka: oppilaat käyttävät Scratch-lohkoja tapahtumapohjaisiin ohjelmiin, jotka reagoivat micro:bitin syötteisiin; he ymmärtävät silmukat, ehdot ja muuttujat sekä oppivat käsittelemään digitaalisia ja fyysisiä tuloja/lähtöjä.',
+        'Laskennallinen ajattelu: ongelma jaetaan osiin, hyödynnetään micro:bitin sensoridataa (painikkeet, ravistus) ja kehitetään algoritmeja haasteiden ratkaisemiseksi.',
+        'Virheiden etsintä ja korjaus: testataan, tunnistetaan virheitä ja parannetaan Scratch-koodia sekä micro:bit‑vuorovaikutusta; korjataan virheitä reaaliajassa ja dokumentoidaan muutokset.',
+        'Luovuus ja muotoiluajattelu: luodaan omia animaatioita, pelejä tai tarinoita, jotka hyödyntävät micro:bitin syötteitä; ilmaistaan itseä ja noudatetaan muotoiluprosessia (empatia–määrittely–prototyypitys–testaus).',
+        'Yhteistyö ja viestintä: työskennellään pareittain tai pienryhmissä interaktiivisten projektien suunnittelussa ja koodauksessa; esitetään ratkaisut ja selitetään valinnat sekä koodin logiikka.'
+    ],
+    'target_audience_title' => 'Kohderyhmä',
+    'target-audience' => [
+        'Peruskoululaiset (6–12 vuotta)',
+        'Alemman toisen asteen oppilaat (12–16 vuotta)'
+    ],
+    'experience_title' => 'Kokemustaso',
+    'experience' => 'Keskitaso – perusohjelmoinnin tuntemus on suositeltavaa; osallistujien on hyvä hallita peruskäsitteet.',
+    'duration_title' => 'Kesto',
+    'duration' => '60 minuuttia',
+    'materials_title' => 'Materiaalit',
+    'materials' => [
+        'Tietokone',
+        'Scratch (https://scratch.mit.edu/)',
+        'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
+        'Scratch micro:bit -laajennus (https://scratch.mit.edu/microbit)',
+        'micro:bit',
+        'Ally-sprite (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+    ],
+    'instructions_title' => 'Ohjeet',
+    'instructions' => [
+        'Käynnistä Scratch.',
+        'Luo Scratch-tili (jos sinulla ei vielä ole).',
+        'Aloita uusi projekti, lisää sprite ja tausta sekä aseta spriten aloitussijainti ohjelman käynnistyessä.',
+        'Lisää micro:bit-lohkot Scratchin laajennuksista.',
+        'Yhdistä micro:bit tietokoneeseen ja ota Bluetooth käyttöön.',
+        'Asenna ja käynnistä Scratch Link, lataa micro:bitin HEX-tiedosto ja siirrä se laitteelle.',
+        'Avaa Scratchin micro:bit‑laajennus, napsauta oranssia painiketta ja etsi lähilaitteet.',
+        'Valitse löydetty laite.',
+        'Laadi ohjelma, jossa sprite tanssii valitun musiikin tahdissa, kun micro:bitia ravistetaan (liike X-akselilla vasemmalle ja oikealle). Tallenna projekti.',
+        'Laajenna projektia: lisää omia lohkoja, ohjaa spriteä micro:bitin A/B‑painikkeilla, muuta spriten ulkoasua tai liikkeitä.'
+    ],
+    'real-life-applications_title' => 'Esimerkkejä tosielämästä',
+    'real-life-applications' => [
+        'Interaktiiviset tanssi- ja kuntosovellukset: micro:bitin kiihtyvyysanturin hyödyntäminen liikkeen seurantaan sekä kuntopelien tai tanssinopettelun työkalujen tekemiseen.',
+        'Eleisiin perustuvat animaatiot ja pelit: hahmojen ohjaus käsien liikkeillä tai kallistamalla; yksinkertaiset liikeohjatut pelit.'
+    ],
+],
+
+    'coding-for-the-ocean' => [
+    'title' => 'Koodaus valtamerelle – Rakenna AI-bottisi pelastamaan meri',
+    'author' => 'Teresa Silvestri',
+    'purposes_title' => 'Haasteen tarkoitus',
+    'purposes' => [
+        'Kyky käyttää tekoälyä ympäristöongelmien ratkaisemiseen.',
+        'Koodaustaitoja tekoälybotin luomiseen ja ohjelmointiin.',
+        'Tietoa ilmastonmuutoksesta ja meriympäristön suojelun tärkeydestä.',
+        'Ongelmanratkaisukyky tieteen ja teknologian kontekstissa.',
+        'Loogisen ajattelun kehittäminen sovellettuna reaalimaailman haasteisiin.',
+        'Luovuutta sellaisen botin suunnittelussa, joka pystyy vastaamaan ympäristöuhkiin.',
+        'Käytännön kokemus koodausalustojen, kuten Code.org, käytöstä.',
+        'Tiimityö ja yhteistyö jakaen botteja ja kilpaillen luokkatovereiden kanssa.'
+    ],
+    'description_title' => 'Haasteen kuvaus',
+    'description' => 'Luo ja kouluta AI-botti suojelemaan merta! Opi koodaamaan, ratkaisemaan ympäristöongelmia ja kehittämään loogista ajattelua meriympäristön turvaamiseksi.',
+    'instructions_title' => 'Ohjeet',
+    'instructions' => [
+        'Avaa Code.org',
+        'Avaa verkkoselaimesi ja siirry osoitteeseen Code.org. Jos sinulla ei ole tiliä, voit luoda uuden tai kirjautua sisään aiemmalla tilillä.',
+        'Aloita uusi projekti',
+        'Valitse päänäytöstä valtamerten suojeluun liittyvä kurssi tai opetusohjelma ja paina "Käynnistä".',
+        'Seuraa vaiheittaista opetusohjelmaa',
+        'Code.org opastaa sinua interaktiivisen opetusohjelman kautta. Lue jokainen ohje huolellisesti ja suorita vaiheet oppiaksesi ohjelmoimaan AI-bottisi.',
+        'Ohjelmoi bottisi',
+        'Käytä visuaalisia koodauslohkoja opettaaksesi bottiasi reagoimaan ympäristötilanteisiin, kuten keräämään muovia tai välttämään esteitä. Muokkaa lohkoja eri tilanteisiin sopiviksi ja testaa botin käyttäytymistä.',
+        'Testaa bottisi',
+        'Suorita ohjelmasi ja tarkista, miten botti selviää haasteista. Jos se ei toimi, palaa takaisin ja muokkaa, kunnes se toimii tehokkaasti.',
+        'Jaa bottisi luokan kanssa',
+        'Kun bottisi on valmis, kopioi projektilinkki ja jaa se luokkatovereillesi. Osallistu kilpailuun nähdäksesi, mikä botti suojelee merta parhaiten.',
+        'Tarkista ja paranna',
+        'Tarkista koodisi ja etsi tapoja parantaa sitä. Lisää bottiin uusia ominaisuuksia uusien ympäristöhaasteiden ratkaisemiseksi.'
+    ],
+    'materials_title' => 'Suositellut työkalut',
+    'materials' => [
+        'Ohjelmisto: Pääsy Code.org-sivustolle',
+        'Laitteisto: tietokone tai tabletti, jossa on internetyhteys.',
+        'Online-työkalut: Selain Code.orgin tai vastaavan alustan käyttöön.',
+        'Tukimateriaalit: Alustan tarjoamat opetusohjelmat ja oppimateriaalit.',
+        'Muut työkalut: Valinnaiset ääni- tai videolaitteet opetusohjelman seuraamiseksi.'
+    ],
+    'real-life-applications_title' => 'Tosielämän sovellukset',
+    'real-life-applications' => [
+        'Tekoäly valtamerten suojelussa: esimerkiksi The Ocean Cleanup käyttää tekoälyjärjestelmiä muovin keräämiseen valtameristä.',
+        'Tekoäly ympäristön seurannassa: AI-robotteja käytetään valtamerten olosuhteiden seurantaan, eläimistön seuraamiseen ja saasteiden havaitsemiseen.'
+    ],
+    'variations_title' => 'Haasteen muunnelmat',
+    'variations' => [
+        'Haasteen laajentaminen muihin ympäristöihin: voit muokata haastetta niin, että tekoälybotit suojelevat metsiä, jokia tai kaupunkeja.',
+        'Botit voisivat käsitellä haasteita, kuten metsäkatoa tai ilmansaasteita.'
+    ],
+    'duration_title' => 'Kesto',
+    'duration' => '45 minuuttia – 1 tunti',
+    'experience_title' => 'Kokemustaso',
+    'experience' => 'Aloittelija – aiempaa ohjelmointikokemusta ei tarvita.',
+    'target_audience_title' => 'Kohderyhmä',
+    'target-audience' => [
+        'Peruskoulun oppilaat (6–12-vuotiaat)'
+    ],
+    'educational_goals_title' => 'Koulutustavoitteet',
+    'educational_goals' => [
+        'Kehittää ohjelmoinnin ja tekoälyn perustaitoja',
+        'Edistää ympäristötietoisuutta ja ympäristönsuojelun tärkeyttä',
+        'Rohkaista luovuutta ja mielikuvitusta tarinankerronnan avulla',
+        'Kehittää ongelmanratkaisu- ja kriittisen ajattelun taitoja'
+    ],
+],
+
 'code-it-like-margaret-hamilton' => [
     'title' => 'Koodaa se kuin Margaret Hamilton!',
     'author' => 'Chouliara Theodora',

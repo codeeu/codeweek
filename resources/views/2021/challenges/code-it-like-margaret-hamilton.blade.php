@@ -45,7 +45,7 @@
                         </div>
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
                             <button
-                                class="flex justify-center items-center w-20 h-20 rounded-full duration-300 bg-yellow hover:bg-primary">
+                                class="hidden justify-center items-center w-20 h-20 rounded-full duration-300 bg-yellow hover:bg-primary">
                                 <img class="ml-2 duration-300" src="/images/fi_play.svg" />
                             </button>
                         </div>
@@ -197,4 +197,79 @@
             </div>
         </section>
     </section>
+    <script>
+(function () {
+  const SCOPE_SELECTOR = "#challenge-detail-page"; // change to "body" if you want site-wide
+  const PUNCT_TO_TRIM = '.,;:!?)]}"\'';
+  const URL_RE = /\bhttps?:\/\/[^\s<]+/gi;
+
+  function escapeForCharClass(s){return s.replace(/[[\]{}()*+?.,\\^$|#\s]/g,"\\$&");}
+
+  function linkifyNode(textNode) {
+    const text = textNode.nodeValue;
+    if (!URL_RE.test(text)) return;
+    URL_RE.lastIndex = 0;
+
+    // don’t process if inside a link
+    if (textNode.parentElement && textNode.parentElement.closest('a')) return;
+    // optional: skip code/pre blocks
+    if (textNode.parentElement && textNode.parentElement.closest('code,pre')) return;
+
+    const frag = document.createDocumentFragment();
+    let last = 0, m, punctTrimRe = new RegExp("[" + escapeForCharClass(PUNCT_TO_TRIM) + "]+$");
+
+    while ((m = URL_RE.exec(text)) !== null) {
+      const raw = m[0], start = m.index, end = start + raw.length;
+      if (start > last) frag.appendChild(document.createTextNode(text.slice(last, start)));
+
+      const trimmed = raw.replace(punctTrimRe, "");
+      const trail = raw.slice(trimmed.length);
+
+      const a = document.createElement("a");
+      a.href = trimmed;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.referrerPolicy = "no-referrer";
+      a.className = "underline hover:no-underline text-[#1c4da1]";
+      a.textContent = trimmed;
+
+      frag.appendChild(a);
+      if (trail) frag.appendChild(document.createTextNode(trail));
+      last = end;
+    }
+    if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    textNode.parentNode.replaceChild(frag, textNode);
+  }
+
+  function linkifyTree(root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: node => node.parentElement ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+    });
+    const toProcess = [];
+    while (walker.nextNode()) toProcess.push(walker.currentNode);
+    toProcess.forEach(linkifyNode);
+  }
+
+  function init(scopeRoot) {
+    if (!scopeRoot) return;
+    linkifyTree(scopeRoot);
+    // observe future changes
+    const obs = new MutationObserver(muts => {
+      for (const m of muts) {
+        m.addedNodes && m.addedNodes.forEach(n => {
+          if (n.nodeType === Node.TEXT_NODE) linkifyNode(n);
+          else if (n.nodeType === Node.ELEMENT_NODE) linkifyTree(n);
+        });
+      }
+    });
+    obs.observe(scopeRoot, { childList: true, subtree: true });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => init(document.querySelector(SCOPE_SELECTOR)));
+  } else {
+    init(document.querySelector(SCOPE_SELECTOR));
+  }
+})();
+</script>
 @endsection
