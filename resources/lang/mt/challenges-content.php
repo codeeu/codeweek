@@ -1,6 +1,442 @@
 <?php
 
 return [
+     'create-your-own-website-with-html-and-css' => [
+    'title' => 'Oħloq il-websajt tiegħek stess bl-HTML u CSS',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Għan tal-isfida',
+    'purposes' => [
+        'L-għan ta’ din l-isfida hu li tinfurma lill-beginners fid-dinja tal-iżvilupp tal-web.',
+        'Billi tlesti dan il-proġett, il-parteċipanti jitgħallmu l-bażi ta’ HTML u CSS, li huma fundamentali għall-ħolqien u l-istilizzar ta’ paġni web.',
+        'L-isfida tiffoka fuq tagħlim prattiku, biex tgħinek tibni l-websajt tiegħek mill-bidu.',
+        'Inti tikseb ħiliet essenzjali għall-ħolqien tad-disinn tal-web u sserraħ ruħek aktar fid-dħul online tiegħek.'
+    ],
+    'description_title' => 'Deskrizzjoni tal-isfida',
+    'description' => [
+        'Is-siti tal-web huma l-pedament tal-preżenza fuq l-Internet. Permezz ta’ dan il-lezzjoni, titgħallem kif tuża l-HTML biex tistruttura l-kontenut u l-CSS biex tistilizza u toħloq l-ewwel websajt tiegħek.',
+        'Permezz ta’ passi divertenti, toħloq paġna li tista’ tkun fih it-test, immaġini, kuluri, u links.'
+    ],
+    'target_audience_title' => 'Udjenza',
+    'target_audience' => [
+        'Din l-isfida hija mmirata lejn dawk li jibdew u li għandhom interess jitgħallmu kif toħloq siti tal-web.',
+        'Hija perfetta għal individwi li huma ġodda fl-iżvilupp tal-web, studenti, jew dawk kurjużi dwar kif isiru s-siti tal-web.',
+        'M’hemmx bżonn ta’ esperjenza fil-coding.'
+    ],
+    'experience_title' => 'Esperjenza',
+    'experience' => [
+        'Din hija sfida għal livell ta’ dawk li jibdew.',
+        'Xi għarfien preċedenti dwar operazzjonijiet bażiċi tal-kompjuter jista’ jkun ta’ għajnuna, iżda mhuwiex meħtieġ.',
+        'L-isfida hija maħsuba bħala introduzzjoni għal HTML u CSS.'
+    ],
+    'duration_title' => 'Ħin',
+    'duration' => 'Din l-isfida tieħu madwar 1 sa 2 siegħat, skont l-esperjenza tiegħek.',
+    'materials_title' => 'Għodod Rakkomandati:',
+    'materials' => [
+        'PC / Laptop',
+        'Editur tat-test regolari, bħal Notepad (Windows) jew TextEdit (Mac)'
+    ],
+    'instructions_title' => 'Istruzzjonijiet',
+    'instructions' => [
+        'Pariri għall-Għalliema qabel tibdew:',
+        'Jekk int ġdid fl-iżvilupp tal-web, tħossokx stressat! Hawn xi pariri:',
+        'Ibda bil-bażi: spjega l-kunċetti ta’ HTML u CSS.',
+        'Uri l-istruttura tad-dokument u r-relazzjoni bejn it-tags.',
+        'Evita żbalji komuni: tags magħluqa, kurkettini CSS.',
+        'Inkorraġġixxi l-kreattività u l-esperimentazzjoni.',
+        '---',
+        'Pass 1: Ittejjeb l-ambjent',
+        'Uża editur tat-test sempliċi bħal Notepad.',
+        'Pass 2: Struttura Bażika tal-HTML',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<meta charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Pass 3: Żid Stili bl-użu ta’ CSS',
+        'body { background-color: #f0f8ff; color: #333; font-family: Arial; text-align: center; }',
+        'h1 { color: #4CAF50; }',
+        'p { font-size: 18px; color: #555; }',
+        'Pass 4: Ikkonnettja l-HTML mal-CSS',
+        '<link rel="stylesheet" href="style.css">',
+        'Pass 5: Ibda l-paġna tiegħek',
+        'Issejvja index.html u style.css u iftħilhom fil-browser.'
+    ],
+    'mini_simulation_title' => 'Simulazzjoni żgħira:',
+    'mini_simulation' => [
+        'Iċċekkja l-għarfien tiegħek',
+        '1. X’inhu HTML?',
+        'a) Lingwaġġ għall-ħolqien ta’ immaġini',
+        'b) Lingwaġġ għall-istrutturar tal-kontenut fuq il-web',
+        'c) Editur ta’ immaġini',
+        '2. X’inhu CSS?',
+        'a) Lingwaġġ għall-bażijiet ta’ data',
+        'b) Lingwaġġ għall-istil u tqassim ta’ websajts',
+        'c) Programm ta’ fajls',
+        '3. Kif nikkonnettjaw CSS ma’ HTML?',
+        'a) Billi nużaw it-tag <link>',
+        'b) Billi nużaw it-tag <style>',
+        'c) Mhux possibbli',
+        'Tweġibiet korretti: 1.b, 2.b, 3.a',
+        '---',
+        'Ibdel il-paġna tiegħek:',
+        '• Ibdel il-kulur tal-isfond.',
+        '• Żid titlu ieħor (h2).',
+        '• Żid link għal sit ieħor (eż. Google).'
+    ],
+    'additional_resources_title' => 'Riżorsi addizzjonali:',
+    'additional_resources' => [
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS'
+    ]
+],
+
+    'train-it-like-fei-fei-li' => [
+    'title' => 'Ħarrisu bħall-Fei‑Fei Li – Tagħti Viżjoni lill-Kompjuters!',
+    'author' => 'Chouliara Theodora',
+    'purposes_title' => 'Għan tal-isfida',
+    'purposes' => [
+        'Titgħallem il-bażiċi tat‑Tagħlim tal‑Magna u r‑rikonoxximent ta’ immaġini.',
+        'Tħarreġ kompjuter jiddistingwi bejn immaġini differenti (eż. kelb vs qattus, pupi vs teddy bears).',
+        'Tesplora kif l‑AI u t‑Tagħlim tal‑Magna jintużaw fil‑ħajja reali.',
+        'Tiinspira mill‑kontribuzzjonijiet ta’ Fei‑Fei Li għall‑AI u r‑rikonoxximent ta’ immaġni.',
+        'Tħeġġeġ lill‑bniet jidħlu fil‑coding u karrieri STEM.'
+    ],
+    'description_title' => 'Deskrizzjoni tal-isfida',
+    'description' => 'Ħarreġ mudell AI bħall‑Fei‑Fei Li! Uża Teachable Machine biex tgħallem kompjuter jirrikonoxxi immaġini u esplora l‑qawwa tat‑Tagħlim tal‑Magna filwaqt li tikser l‑isterjotipi tal‑ġeneru fit‑tech.',
+    'target_audience_title' => 'Udjenza fil-mira',
+    'target_audience' => 'Studenti tal‑Iskola Primarja (6–12 sena)',
+    'experience_title' => 'Esperjenza',
+    'experience' => 'Prinċipjant – L-ebda esperjenza ta’ coding minn qabel; adattat għal min għadu jibda.',
+    'duration_title' => 'Tul ta’ żmien',
+    'duration' => '60 minuta',
+    'materials_title' => 'Għodda rakkomandata',
+    'materials' => [
+        'Teachable Machine (aċċess mill‑browser)',
+        'Kompjuter jew tablet b’kamera',
+        'Konnessjoni tal‑Internet (għat‑taħriġ tal‑mudell)',
+        'Ġugarelli / oġġetti tal‑klassi (eż. pupi, teddy bears) għat‑taħriġ',
+        'Projettur jew skrin (fakultattiv għal dimostrazzjonijiet fil‑klassi)'
+    ],
+    'instructions_title' => 'Istruzzjonijiet',
+    'instructions' => [
+        'Pass 1: Introduzzjoni għat‑Tagħlim tal‑Magna & Fei‑Fei Li — Spjega kif il‑kompjuters “jaraw” billi jitgħallmu minn eżempji; introduċi lil Fei‑Fei Li u ImageNet.',
+        'Pass 2: Setup — Mur fuq https://teachablemachine.withgoogle.com/train, agħżel “Image Project”, imbagħad “Standard Image Model”.',
+        'Pass 3: Agħżel kategoriji — eż. “Pupi” u “Teddy bears”.',
+        'Pass 4: Iġbor stampi — uża oġġetti reali quddiem il‑kamera jew tella’ stampi f’folders separati għal kull kategorija.',
+        'Pass 5: Ittajjar il‑mudell — ikklikkja “Train Model” u stenna li jitgħallem.',
+        'Pass 6: Ittestja — “Test Model” b’oġġetti ġodda li ma ntużawx fit‑taħriġ.',
+        'Pass 7: Ivvaluta — Ddiskuti preċiżjoni, żbalji u kif ittejjeb b’aktar stampi.',
+        'Pass 8: Issejvja u aqsam — “Export Model” u “Share” biex taqsam mal‑klassi. Mudell eżemplari: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+    ],
+    'examples_title' => 'Eżempji',
+    'examples' => [
+        'AI fil‑Bejgħ bl‑Imnut: kameras bl‑AI li jirrikonoxxu prodotti u jsegwu l‑inventarju; self‑checkout mingħajr barcodes.',
+        'AI u Teknoloġija Assistiva: identifikazzjoni ta’ oġġetti biex jgħinu lil persuni b’diffikultajiet fil‑vista; kameras “intelliġenti” jiddeskrivu dak li jaraw f’ħin reali.'
+    ]
+],
+
+    'simulate-dice-in-python' => [
+    'title' => 'Isimulaw Dadi bil-Python',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Għan tal-isfida',
+    'purposes' => [
+        'Tintroduċi lill-istudenti għall-ġenerazzjoni ta’ numri każwali u l-użu ta’ loops f’Python.',
+        'Billi nisimulaw ir-rif ta’ dadi, jitgħallmu kif il-kompjuters jiġġeneraw riżultati każwali u kif jirrepetu azzjonijiet permezz ta’ loop.',
+        'Jpoġġi l-pedament biex jinbnew logħob u simulazzjonijiet sempliċi.'
+    ],
+    'description_title' => 'Deskrizzjoni tal-isfida',
+    'description' => [
+        'Is-simulazzjoni tar-rif tad-dadi hija mod eċċellenti biex titgħallem ix-xogħol bażiku b’numri każwali f’Python.',
+        'Tgħallimna nużaw il-modulu random biex niġġeneraw numri każwali u nużawhom biex nissimlaw rif ta’ dadi.',
+        'Permezz ta’ din il-kompitu tifhem kif Python tiġġenera numri fi ħdan firxa speċifika.'
+    ],
+    'target_audience_title' => 'Udjenza fil-mira',
+    'target_audience' => 'Studenti tal-primarja u sekondarja, principianti f’Python, u kull min qed jitgħallem dwar numri każwali, logħob jew loġika bażika tal‑programmazzjoni.',
+    'experience_title' => 'Esperjenza',
+    'experience' => 'Ma hemmx bżonn esperjenza ta’ programmazzjoni minn qabel; familjarità bażika mal-kitba u l-użu tal-kompjuter hija biżżejjed.',
+    'duration_title' => 'Tul ta’ żmien',
+    'duration' => '30–45 minuta għall-verżjoni bażika; sa 60 minuta jekk tesplora għażliet avvanzati (żewġ dadi, l-aktar riżultat frekwenti, eċċ.).',
+    'materials_title' => 'Għodda rakkomandata',
+    'materials' => [
+        'Installa Python mill-websajt uffiċjali: https://www.python.org',
+        'Uża Python IDLE jew editur tat-test (eż. Visual Studio Code, PyCharm)'
+    ],
+    'instructions_title' => 'Istruzzjonijiet',
+    'instructions' => [
+        'Pass 1: Ipprepara l-ambjent',
+        'Installa Python jekk għadek ma għamiltx u iftaħ Python IDLE jew editur.',
+        'Pass 2: Ikteb il-programm',
+        'Oħloq fajl ġdid jismu dice.py u daħħal il-kodiċi li ġej:',
+        "import random",
+        'print("Welcome to the roll-dice simulation!")',
+        'throw_num = int(input("How many times do you want to roll the dice? "))',
+        'for i in range(throw_num):',
+        '    result = random.randint(1, 6)  # numru każwali bejn 1 u 6',
+        '    print(f"Throwing {i + 1}: {result}")',
+        'print("Thanks for playing!")',
+        'Żgura li l-indentazzjoni hija korretta bħall-eżempju.',
+        'Pass 3: Spjegazzjoni',
+        'random.randint(a, b) jirritorna interġer każwali bejn a u b inklużi.',
+        'Il-programm jitlob in-numru ta’ rifs, imbagħad juża loop biex jiġġenera riżultat għal kull rif.',
+        'Pass 4: Iġri l-programm',
+        'Issejvja dice.py u iħaddmu; daħħal in-numru ta’ rifs (eż. 5) u osserva r-riżultati.'
+    ],
+    'quiz_title' => 'Quiz:',
+    'quiz' => [
+        'Liema modulu f’Python jippermetti li tiġġenera numri każwali?',
+        'random',
+        'Math',
+        'Time',
+        'X’jagħmel random.randint(1, 6)?',
+        'Jiġġenera numru każwali bejn 1 u 6',
+        'Jistampa numru każwali fuq l-iskrin',
+        'Jistampa numru bejn 1 u 6',
+        'Kif tikkonverti d-dħul tal-utent għal interġer f’Python?',
+        'a) float(s)',
+        'b) int()',
+        'c) p()',
+        'Tweġibiet korretti: 1.a, 2.a, 3.b'
+    ],
+    'mini_simulation_title' => 'Mini simulazzjoni:',
+    'mini_simulation' => [
+        'Modifika l-programm:',
+        '• Żid għażla biex nisimulaw żewġ dadi u nżidu r-riżultati flimkien.',
+        '• Żid għażla biex l-programm juri liema numru deher l-aktar drabi.'
+    ],
+    'additional_resources_title' => 'Riżorsi addizzjonali:',
+    'additional_resources' => [
+        'Dokumentazzjoni uffiċjali ta’ Python – modulu random',
+        'Learn Python'
+    ]
+],
+
+'gender-gap-gender-graph' => [
+    'title' => 'Il-Lakuna bejn is-Sessi, Grafu tal-Ġeneru',
+        'author' => 'Theodora S. Tziampazi',
+        'purposes_title' => 'Għan tal-isfida',
+        'purposes' => [
+            'Tifhem kif il-viżwalizzazzjoni tad-dejta tista’ tinfluwenza l-perċezzjoni.',
+            'Tidentifika preġudizzji f’għodod diġitali permezz ta’ interazzjoni.',
+            'Tesperimenta bid-daħla tad-dejta biex tosserva distorsjonijiet.',
+            'Timmodifika l-code biex tiżgura rappreżentazzjoni korretta tad-dejta.',
+            'Tqabbel viżwalizzazzjonijiet ġusti u preġudikati.',
+            'Tirrifletti fuq l-implikazzjonijiet etiċi tal-manipulazzjoni tad-dejta.',
+            'Tiddiskuti l-konsegwenzi reali ta’ statistika preġudikata.',
+            'Tiżviluppa ħsieb kritiku dwar l-AI u l-preġudizzju algoritmiku.'
+        ],
+        'description_title' => 'Deskrizzjoni tal-isfida',
+        'description' => 'Esplora l-preġudizzju fil-viżwalizzazzjoni tad-dejta billi ddaħħal valuri, tanalizza distorsjonijiet, timmodifika code, u tesplora kif l-għodod diġitali jinfluwenzaw il-perċezzjoni tar-rappreżentazzjoni tas-sessi fit-teknoloġija.',
+        'educational_goals_title' => 'Miri edukattivi',
+        'educational_goals' => [
+            'Coding u Loġika ta’ Programmazzjoni:',
+            'Ħsieb Komputazzjonali:',
+            'Soluzzjoni ta’ Problemi u Debugging:',
+            'Kreattività u Ħsieb tad-Disinn:',
+            'Kollaborazzjoni u Komunikazzjoni:',
+        ],
+        'target_audience_title' => 'Udjenza fil-mira',
+        'target_audience' => [
+            'Studenti tal-Iskola Primarja (6 sa 12-il sena)',
+            'Studenti tal-Iskola Sekondarja Inferjuri (12 sa 16-il sena)',
+            'Studenti tal-Iskola Sekondarja Superjuri (16 sa 18-il sena)',
+            'Għalliema u edukaturi'
+        ],
+        'experience_title' => 'Esperjenza',
+        'experience' => 'Intermedju – Xi għarfien bażiku ta’ coding huwa rakkomandat.',
+        'advanced_experience' => 'Avvanzat – Għall-parteċipanti b’ħiliet b’saħħithom ta’ coding u esperjenza preċedenti.',
+        'duration_title' => 'Tul ta’ żmien',
+        'duration' => '2 siegħat',
+        'materials_title' => 'Għodda rakkomandata',
+        'materials' => [
+            'Scratch 3 u worksheet: https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing'
+        ],
+        'instructions_title' => 'Istruzzjonijiet',
+        'instructions' => [
+            'Uża l-għodda diġitali (bar maker) https://scratch.mit.edu/projects/1147892829 mingħajr ma tara l-code ġewwa.',
+            'Ikklikkja l-bandiera ħadra u daħħal dejta (1–10) li tirrappreżenta n-numru ta’ nisa f’settur tat-teknoloġija.',
+            'X’jinnota? Huwa bug jew deċiżjoni?',
+            'Kif jista’ jissewwa?',
+            '---',
+            'B’mod manwali (livell utent): Iċċaqlaq sprites u esplora l-pożizzjonijiet.',
+            'Diskuti: x’jiġri jekk in-numru tan-nisa jkun sottovalutat jew sopravvalutat?',
+            'X’jiġri jekk ikun stimat tajjeb imma l-gap bejn is-sessi jibqa’?',
+            '---',
+            'Bil-coding (livell kreatur):',
+            'Sfida sempliċi: immodifika l-code biex id-dejta mqiegħda tkun dejjem ugwali mad-dejta miżjuda.',
+            'Sfida avvanzata: oħloq bar blu (għall-irġiel), simbolu maskili bħala sprite ġdid, u agħmel tqabbil ġust jew inġust billi tbiddel il-code.',
+            'Esperimenta b’bias f’direzzjonijiet differenti (favur nisa jew irġiel).',
+            'Diskuti: Fejn il-preġudizzju hu l-aktar moħbi? Fl-azzjonijiet ta’ dragging jew fil-code?',
+            '---',
+            'Soluzzjoni għal bar ġust: https://scratch.mit.edu/projects/1151892036',
+            'Diskuti wkoll kif l-AI tista’ taħdem b’dan il-mod u x’impatt jista’ jkollu.'
+        ],
+        'real-life-applications_title' => 'Applikazzjonijiet tal-ħajja reali',
+        'real-life-applications' => [
+            'Rapporti dwar id-Diversità fuq il-post tax-xogħol – Preżentazzjoni ġusta ta’ dejta dwar is-sessi.',
+            'Grafiċi fil-media u l-aħbarijiet – Evita viżwalizzazzjonijiet qarrieqa dwar l-ugwaljanza tas-sessi.',
+            'AI & Bias – Identifika u indirizza preġudizzji f’mudelli ta’ tagħlim tal-magni.',
+            'HR & Reklutaġġ – Użu ta’ dejta ġusta fl-analiżi u deċiżjonijiet tal-HR.',
+            'Edukazzjoni STEM – Użu ta’ dejta imparzjali biex inħeġġu aktar nisa fit-teknoloġija.',
+            'Politika Pubblika – Appoġġ għal deċiżjonijiet ibbażati fuq statistika preċiża.',
+            'Kampanji ta’ Sensibilizzazzjoni – Viżwalizzazzjonijiet ġusti biex imexxu bidla.'
+        ],
+        'variations_title' => 'Varjazzjonijiet tal-isfida',
+        'variations' => [
+            'Estendi l-isfida għal ekosistemi oħra: foresta, xmajjar jew żoni urbani.',
+            'Il-bots jew il-codes jistgħu jindirizzaw deforestazzjoni jew tniġġis tal-arja.'
+        ]
+    ],
+    'dance-with-ally' => [
+    'title' => 'Żfin ma’ Ally',
+    'author' => 'Kristina Krtalić',
+    'purposes_title' => 'Għan tal-isfida',
+    'purposes' => [
+        'jitgħallmu jgħaqqdu micro:bit ma’ Scratch permezz ta’ Bluetooth',
+        'jifhmu kif jużaw l-estensjoni micro:bit ta’ Scratch',
+        'jużaw il-buttuni tal-micro:bit biex jinteraġixxu mal-proġetti Scratch',
+        'joħolqu logħob interattiv bil-micro:bit',
+        'jiżviluppaw ħiliet ta’ ħsieb loġiku u soluzzjoni ta’ problemi',
+        'ittejbu l-kreattività permezz tal-coding'
+    ],
+    'description_title' => 'Deskrizzjoni tal-isfida',
+    'description' => 'Oħloq programm li jippermetti lil sprite jagħmel żfin sempliċi f’Scratch bil-micro:bit.',
+    'educational_goals_title' => 'Miri edukattivi',
+    'educational_goals' => [
+        'Loġika ta’ coding u Programmazzjoni:',
+        'L-istudenti jużaw blokki ta’ Scratch biex jiktbu programmi mmexxija mill-avvenimenti li jirrispondu għall-inputs tal-micro:bit.',
+        'Jifhmu u japplikaw kunċetti fundamentali bħal loops, kundizzjonijiet u varjabbli.',
+        'Jiżviluppaw faċilità bil-programmar ibbażat fuq il-blokki biex jikkontrollaw outputs diġitali u fiżiċi.',
+        'Ħsieb Komputazzjonali:',
+        'Jiddekomponu problemi f’passi iżgħar u jfasslu soluzzjonijiet pass pass.',
+        'Jintużaw data mis-sensors tal-micro:bit (buttuni, shake) biex jikkontrollaw l-isprites.',
+        'Jiżviluppaw u jittestjaw algoritmi biex isolvu sfidi speċifiċi (eż. jagħmlu ż-żfin meta l-micro:bit ikun immejjel).',
+        'Soluzzjoni ta’ Problemi u Debugging:',
+        'Jittestjaw, jidentifikaw bugs, u jirfinaw il-code u l-interazzjonijiet tagħhom mal-micro:bit.',
+        'Isibu soluzzjonijiet għal żbalji f’ħin reali kemm fil-software kif ukoll fl-hardware.',
+        'Jiddokumentaw u jirriflettu fuq il-bidliet waqt id-debugging.',
+        'Kreattività u Disinn:',
+        'Joħolqu animazzjonijiet, logħob jew stejjer oriġinali li jintegraw inputs mill-micro:bit.',
+        'Jesprimu ruħhom b’mod artistiku billi jikkorjografaw movimenti jew jaħdmu fuq xeni interattivi.',
+        'Jsegwu l-proċess tad-disinn: empathize, ideate, prototype u test.',
+        'Kollaborazzjoni u Komunikazzjoni:',
+        'Jaħdmu f’pari jew fi gruppi żgħar fuq proġetti interattivi.',
+        'Jispjegaw l-għażliet tad-disinn u l-loġika tal-code lill-pari jew udjenza usa’.'
+    ],
+    'target_audience_title' => 'Udjenza fil-mira',
+    'target_audience' => [
+        'Studenti tal-Iskola Primarja (6 sa 12-il sena)',
+        'Studenti tal-Iskola Sekondarja Inferjuri (12 sa 16-il sena)'
+    ],
+    'experience_title' => 'Esperjenza',
+    'experience' => 'Intermedju – Xi għarfien bażiku ta’ coding huwa rakkomandat; il-parteċipanti għandhom ikunu familjari mal-kunċetti fundamentali.',
+    'duration_title' => 'Tul ta’ żmien',
+    'duration' => '60 minuta',
+    'materials_title' => 'Għodod rakkomandati',
+    'materials' => [
+        'Kompjuter',
+        'Scratch (https://scratch.mit.edu/)',
+        'Scratch link (https://scratch.mit.edu/download/scratch-link)',
+        'Estensjoni Scratch micro:bit (https://scratch.mit.edu/microbit)',
+        'micro:bit',
+        'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+    ],
+    'instructions_title' => 'Istruzzjonijiet',
+    'instructions' => [
+        'Ibda l-Scratch.',
+        'Oħloq kont fi Scratch jekk għadek m’għandekx.',
+        'Oħloq proġett ġdid, żid sprite u sfond, u issettja l-pożizzjoni inizjali.',
+        'Żid grupp ta’ scripts tal-micro:bit mill-estensjoni ta’ Scratch.',
+        'Qabbad il-micro:bit mal-kompjuter u ixgħel Bluetooth.',
+        'Installa u ħaddem Scratch Link, u niżżel il-fajl HEX tal-micro:bit fuq il-board.',
+        'Fil-micro:bit extension, fittex apparat qrib u qabbad.',
+        'Oħloq programm b’blokki li jagħmlu l-sprite jiżfen meta tiċċaqlaq il-micro:bit.',
+        'Żfin sempliċi fuq l-assi x (xellug u lemin).',
+        'Issejvja l-proġett fuq il-kompjuter tiegħek.',
+        'Wara tista’ żżid aktar blokki, kontrolli bil-buttuni A/B, bidliet fil-ħarsa jew movimenti ġodda.'
+    ],
+    'examples_title' => 'Eżempji',
+    'examples' => [
+        'Tqabbid micro:bit ma’ Scratch biex tikkontrolla sprite żfin huwa mod tajjeb ħafna biex tesplora programmar interattiv.',
+        'Dan jista’ jiġi estiż għal:',
+        '1. Programmi interattivi ta’ żfin u fitness:',
+        '- Uża l-aċċellerometru tal-micro:bit biex issegwi movimenti u toħloq logħob ta’ fitness.',
+        '- Agħmel għodda tat-tagħlim taż-żfin fejn l-isprite jsegwi movimenti reali.',
+        '2. Animazzjoni u logħob ibbażati fuq ġesti:',
+        '- Ikkontrolla karattri ta’ Scratch b’ġesti jew tilts.',
+        '- Iżviluppa logħob sempliċi kkontrollat bil-moviment (eż. ostakli, jump/dodge).'
+    ]
+],
+
+    'coding-for-the-ocean' => [
+    'title' => 'Coding għall-Oċean - Ibni l-Bot tiegħek bl-AI biex Issalva l-Baħar',
+    'author' => 'Teresa Silvestri',
+    'purposes_title' => 'Għan tal-isfida',
+    'purposes' => [
+        'Il-kapaċità li tuża l-intelliġenza artifiċjali biex issolvi problemi ambjentali.',
+        'Ħiliet ta’ coding biex jinħoloq u jiġi pprogrammat il-bot bl-Intelliġenza Artifiċjali.',
+        'Għarfien dwar it-tibdil fil-klima u l-importanza tal-protezzjoni tal-ambjent tal-baħar.',
+        'Ħiliet ta’ soluzzjoni tal-problemi fil-kuntest tax-xjenza u t-teknoloġija.',
+        'Żvilupp ta’ ħsieb loġiku applikat għal sfidi fid-dinja reali.',
+        'Kreattività fit-tfassil ta’ bot li jirrispondi għal theddid ambjentali.',
+        'Esperjenza prattika bl-użu ta’ pjattaformi ta’ coding bħal Code.org.',
+        'Ħidma f’tim u kollaborazzjoni waqt il-qsim tal-bots u l-kompetizzjoni mas-sħab tal-klassi.'
+    ],
+    'description_title' => 'Deskrizzjoni tal-isfida',
+    'description' => 'Oħloq u ħarreġ bot bl-Intelliġenza Artifiċjali biex tipproteġi l-baħar! Tgħallem il-coding, solvi problemi ambjentali, u żviluppa ħsieb loġiku biex tissalvagwardja l-ambjent tal-baħar.',
+    'educational_goals_title' => 'Miri edukattivi',
+    'educational_goals' => [
+        'Li jiġu żviluppati ħiliet bażiċi fl-ipprogrammar u fl-intelliġenza artifiċjali',
+        'Il-promozzjoni tal-għarfien ambjentali u l-importanza tal-ħarsien tal-ambjent',
+        'Li tinkoraġġixxi l-kreattività u l-immaġinazzjoni permezz tar-rakkont tal-istejjer',
+        'Li jiġu żviluppati ħiliet għas-soluzzjoni tal-problemi u l-ħsieb kritiku'
+    ],
+    'target_audience_title' => 'Udjenza fil-mira',
+    'target_audience' => [
+        'Studenti tal-Iskola Primarja (6 sa 12-il sena)'
+    ],
+    'experience_title' => 'Esperjenza',
+    'experience' => 'Beginner - L-ebda esperjenza ta’ coding minn qabel meħtieġa; adattat għal dawk li għadhom jibdew b’mod sħiħ.',
+    'duration_title' => 'Tul ta’ żmien',
+    'duration' => '45 minuta – 1 siegħa',
+    'materials_title' => 'Għodod rakkomandati',
+    'materials' => [
+        'Software: Aċċess għal Code.org',
+        'Ħardwer: Kompjuter jew tablet b’konnessjoni mal-Internet',
+        'Għodod online: Web browser biex tinnaviga Code.org jew pjattaformi simili',
+        'Materjali ta’ appoġġ: Tutorials u riżorsi edukattivi pprovduti mill-pjattaforma',
+        'Għodod oħra: Tagħmir awdjo jew vidjo (fakultattiv)'
+    ],
+    'instructions_title' => 'Istruzzjonijiet',
+    'instructions' => [
+        'Aċċessa Code.org',
+        'Iftaħ il-web browser u mur fuq Code.org. Oħloq kont jew illoggja jekk diġà għandek.',
+        'Ibda proġett ġdid billi tagħżel kors jew tutorja relatata mal-protezzjoni tal-oċean.',
+        'Ikklikkja "Start" biex tibda.',
+        'Segwi t-tutorja pass pass fuq Code.org u imla kull kompitu.',
+        'Ipprogramma l-bot tiegħek bl-użu ta’ blokki viżwali biex jirrispondi għal sitwazzjonijiet bħal ġbir ta’ plastik jew li jevita ostakli.',
+        'Ittestja l-bot tiegħek u aġġustah jekk ma jaħdimx kif mistenni.',
+        'Aqsam il-bot tiegħek mal-klassi billi taqsam il-link tal-proġett.',
+        'Irrevedi u ittejjeb il-bot billi żżid karatteristiċi ġodda għal sfidi ambjentali oħra.',
+        'Aqsam il-link tal-proġett tiegħek fuq il-profil tal-Instagram bil-hashtag #EUCodeWeekChallenge u semmi @CodeWeekEU.'
+    ],
+    'real-life-applications_title' => 'Applikazzjonijiet tal-ħajja reali',
+    'real-life-applications' => [
+        'AI fil-Protezzjoni tal-Oċean: Organizzazzjonijiet bħal The Ocean Cleanup jużaw sistemi bl-AI biex jiġbru l-plastik mill-oċeani.',
+        'AI fil-Monitoraġġ Ambjentali: Bots bl-AI jimmonitorjaw il-kundizzjonijiet tal-oċean, jittraċċaw il-ħlejjaq tal-baħar, u jidentifikaw it-tniġġis.'
+    ],
+    'variations_title' => 'Varjazzjonijiet tal-isfida',
+    'variations' => [
+        'Tista’ timmodifika l-isfida biex tinvolvi bots li jipproteġu ekosistemi oħra bħal foresta, xmajjar jew żoni urbani.',
+        'Il-bots ikollhom jindirizzaw sfidi bħal deforestazzjoni jew tniġġis tal-arja.'
+    ]
+],
     'code-it-like-margaret-hamilton' => [
         'title' => 'Kodiċi huwa bħal Margaret Hamilton!',
         'author' => 'Chouliara Theodora',
