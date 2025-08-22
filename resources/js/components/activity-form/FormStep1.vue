@@ -135,8 +135,9 @@ export default {
       return !isOnline && props.formValues.locationDirty === true && props.formValues.locationSelected === false;
     });
     
-    const handleLocationTyping = (text) => {
-      props.formValues.location = text ?? '';
+    const handleLocationTyping = (_text) => {
+      // Typing = need update location
+      props.formValues.location = '';
       props.formValues.locationDirty = true;
       props.formValues.locationSelected = false;
     };
