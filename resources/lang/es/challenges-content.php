@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'create-your-own-website-with-html-and-css' => [
+'create-your-own-website-with-html-and-css' => [
     'title' => 'Crea tu propia página web con HTML y CSS',
     'author' => 'Marko Šolić',
     'purposes_title' => 'Propósito del desafío',
@@ -17,7 +17,7 @@ return [
         'Con pasos divertidos, crearás una página que puede contener texto, imágenes, colores y enlaces.'
     ],
     'target_audience_title' => 'Público destinatario',
-    'target-audience' => [
+    'target_audience' => [
         'Principiantes interesados en aprender a crear páginas web',
         'Estudiantes o cualquier persona interesada en cómo se construyen las páginas web'
     ],
@@ -69,7 +69,7 @@ return [
     ]
 ],
 
-    'train-it-like-fei-fei-li' => [
+'train-it-like-fei-fei-li' => [
     'title' => 'Entrena como Fei-Fei Li – ¡dale visión a las computadoras!',
     'author' => 'Chouliara Theodora',
     'purposes_title' => 'Propósito del desafío',
@@ -85,7 +85,7 @@ return [
         '¡Entrena un modelo de IA como lo hizo Fei-Fei Li! Usa Teachable Machine para enseñar a la computadora a reconocer imágenes y explora el poder del aprendizaje automático, al mismo tiempo que desafías los estereotipos de género en la tecnología.'
     ],
     'target_audience_title' => 'Público destinatario',
-    'target-audience' => [
+    'target_audience' => [
         'Estudiantes de primaria (6 a 12 años)'
     ],
     'experience_title' => 'Experiencia',
@@ -111,6 +111,11 @@ return [
         'Paso 7: Evalúa el modelo – discute la precisión, los errores y cómo podría mejorarse.',
         'Paso 8: Guarda y comparte el modelo – haz clic en "Export Model" o "Share".'
     ],
+    'examples_title' => 'Ejemplos:',
+    'examples' => [
+        'IA en comercio y compras: las tiendas usan cámaras con IA para reconocer productos y gestionar inventarios; las cajas de autoservicio identifican artículos sin código de barras.',
+        'IA en tecnologías de apoyo: la IA puede ayudar a personas ciegas o con baja visión a moverse por el mundo; las cámaras inteligentes pueden describir en tiempo real lo que "ven".'
+    ],
     'real-life-applications_title' => 'Aplicaciones en la vida real',
     'real-life-applications' => [
         'IA en comercio y compras: las tiendas usan cámaras con IA para reconocer productos y gestionar inventarios; las cajas de autoservicio identifican artículos sin código de barras.',
@@ -118,7 +123,7 @@ return [
     ],
 ],
 
-    'simulate-dice-in-python' => [
+'simulate-dice-in-python' => [
     'title' => 'Simular dados en Python',
     'author' => 'Marko Šolić',
     'purposes_title' => 'Propósito del desafío',
@@ -205,7 +210,7 @@ return [
     ]
 ],
 
-    'gender-gap-gender-graph' => [
+'gender-gap-gender-graph' => [
     'title' => 'Brecha de género, gráfico de género',
     'author' => 'Theodora Tziampazi',
     'purposes_title' => 'Propósito del desafío',
@@ -224,7 +229,7 @@ return [
         'Explora el sesgo en la visualización de datos introduciendo valores, analizando distorsiones, modificando el código y descubriendo cómo las herramientas digitales afectan la percepción de la representación de género en la tecnología.'
     ],
     'target_audience_title' => 'Público destinatario',
-    'target-audience' => [
+    'target_audience' => [
         'Estudiantes de primaria (6 a 12 años)',
         'Estudiantes de secundaria inferior (12 a 16 años)',
         'Estudiantes de secundaria superior (16 a 18 años)',
@@ -277,7 +282,7 @@ return [
     ],
 ],
 
-    'dance-with-ally' => [
+'dance-with-ally' => [
     'title' => 'Baila con Ally',
     'author' => 'Kristina Krtalić',
     'purposes_title' => 'Propósito del desafío',
@@ -302,7 +307,7 @@ return [
         'Colaboración y comunicación: los estudiantes trabajarán en parejas o grupos pequeños para planificar y programar proyectos interactivos, presentarán sus soluciones y explicarán sus elecciones y la lógica de su código.'
     ],
     'target_audience_title' => 'Público destinatario',
-    'target-audience' => [
+    'target_audience' => [
         'Estudiantes de primaria (6 a 12 años)',
         'Estudiantes de secundaria inferior (12 a 16 años)'
     ],
@@ -331,6 +336,11 @@ return [
         'Selecciona el dispositivo detectado.',
         'Crea un programa que permita al sprite bailar con música seleccionada al agitar el micro:bit (moviéndose a la izquierda y derecha en el eje X). Guarda el proyecto.',
         'Amplía el proyecto: añade bloques propios, configura los botones A/B del micro:bit para controlar el sprite, cambia el aspecto o los movimientos del sprite.'
+    ],
+    'examples_title' => 'Ejemplos:',
+    'examples' => [
+        'Programas interactivos de baile y fitness: uso del acelerómetro del micro:bit para registrar movimientos y crear juegos de fitness o herramientas para aprender a bailar.',
+        'Animaciones y juegos basados en gestos: controlar personajes en Scratch mediante movimientos de las manos o inclinaciones; crear juegos simples controlados por movimiento.'
     ],
     'real-life-applications_title' => 'Aplicaciones de la vida real',
     'real-life-applications' => [

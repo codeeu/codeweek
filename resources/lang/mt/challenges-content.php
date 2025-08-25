@@ -1,7 +1,7 @@
 <?php
 
 return [
-     'create-your-own-website-with-html-and-css' => [
+'create-your-own-website-with-html-and-css' => [
     'title' => 'Oħloq il-websajt tiegħek stess bl-HTML u CSS',
     'author' => 'Marko Šolić',
     'purposes_title' => 'Għan tal-isfida',

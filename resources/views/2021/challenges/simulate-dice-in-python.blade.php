@@ -336,7 +336,9 @@
                             </div>
 
                             @include('2021.challenges._share')
-
+                            @include('2021.challenges._download', [
+                                'url' => "https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2025/$slug-$locale.docx",
+                            ])
                         </div>
                     </div>
                 </div>

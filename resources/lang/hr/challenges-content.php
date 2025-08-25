@@ -1,7 +1,546 @@
 <?php
 
 return [
-    // resources/lang/hr/challenges-content.php
+    'create-your-own-website-with-html-and-css' => [
+    'title' => 'Izradi vlastitu web-stranicu uz HTML i CSS',
+    'author' => 'Marko Šolić',
+
+    'purposes_title' => 'Svrha izazova',
+    'purposes' => [
+        'Uvesti početnike u svijet razvoja web-stranica.',
+        'Kroz izradu projekta naučiti osnove HTML-a i CSS-a – temeljne tehnologije za izradu i oblikovanje web-stranica.',
+        'Naglasiti učenje kroz rad: izradit ćeš vlastitu stranicu od nule.',
+        'Steći ključne vještine web-dizajna i samopouzdanje za izgradnju vlastite online prisutnosti.',
+    ],
+
+    'description_title' => 'Opis izazova',
+    'description' => [
+        'Web-stranice su temelj internetske prisutnosti. U ovoj lekciji naučit ćeš kako HTML-om strukturirati sadržaj, a CSS-om ga oblikovati te izraditi svoju prvu web-stranicu.',
+        'Kroz zabavne korake napravit ćeš stranicu koja može sadržavati tekst, slike, boje i poveznice.',
+    ],
+
+    'target_audience_title' => 'Ciljna skupina',
+    'target_audience' => [
+        'Početnici koji žele naučiti kako izraditi web-stranice.',
+        'Osobe nove u web-razvoju, učenici/studenti i svi koje zanima kako se web-stranice izrađuju.',
+        'Nije potrebno prethodno iskustvo u programiranju.',
+    ],
+
+    'experience_title' => 'Iskustvo',
+    'experience' => [
+        'Izazov je početničke razine. Osnovno snalaženje na računalu (npr. rad u uređivaču teksta) može pomoći, ali nije nužno.',
+        'Aktivnost je osmišljena kao uvod u HTML i CSS.',
+    ],
+
+    'duration_title' => 'Trajanje',
+    'duration' => 'Otprilike 1 do 2 sata, ovisno o prethodnom iskustvu i tome koliko želiš istraživati izvan osnova.',
+
+    'materials_title' => 'Preporučeni alati',
+    'materials' => [
+        'PC / prijenosno računalo',
+        'Jednostavan uređivač teksta, npr. Notepad (Windows) ili TextEdit (Mac)',
+    ],
+
+    'instructions_title' => 'Upute',
+    'instructions' => [
+        'Savjeti za nastavnike prije početka:',
+        'Ako si nov/a u web-razvoju – bez brige! Evo nekoliko smjernica za vođenje učenika kroz proces:',
+        'Kreni od osnova: objasni temeljne pojmove HTML-a (struktura stranice) i CSS-a (stiliziranje elemenata).',
+        'Budi strpljiv/a i daj učenicima vremena da shvate svrhu svake oznake (tag) i svojstva (property).',
+        'Objasni strukturu: pri predstavljanju HTML oznaka vizualno prikaži kako je dokument složen.',
+        'Pokaži odnos između otvarajućih i zatvarajućih oznaka, atributa i ugnježđivanja.',
+        'Česte pogreške: početnici često zaborave zatvoriti oznake ili u CSS-u pogrešno napišu vitičaste zagrade {}.',
+        'Podsjećaj na redovitu provjeru sintakse.',
+        'Potakni interaktivno učenje: ohrabri eksperimentiranje s izmjenama teksta i stilova.',
+        'Pokaži kako se male promjene u HTML-u ili CSS-u odmah vide nakon osvježavanja preglednika.',
+        'Budi otvoren/a za kreativnost: ne postoji samo jedan “ispravan” način dizajna web-stranice.',
+        'Potakni istraživanje različitih fontova, boja i rasporeda (layouta).',
+        'Česte pogreške na koje treba paziti:',
+        'Zaboravljena poveznica na CSS datoteku iz HTML-a.',
+        'Neispravno ugnježđivanje HTML oznaka.',
+        'Tipfeleri u CSS svojstvima (npr. pisanje „colour“ umjesto „color“).',
+        'Pretjerano kompliciranje strukture – i jednostavne stranice mogu izgledati vrlo profesionalno!',
+        'Korak 1: Priprema okruženja',
+        'Za izradu web-stranice ne trebaš posebne alate – dovoljan je običan uređivač teksta poput Notepada (Windows) ili TextEdita (Mac).',
+        'Cijela se stranica može izraditi u običnom uređivaču teksta; postoje i web-lokacije nastale upravo tako, npr. Hrvatski savez informatičara: hsin.hr',
+        'Korak 2: Osnovna struktura HTML dokumenta',
+        'Otvori novi dokument u uređivaču i spremi ga kao index.html',
+        'Ovisno o verziji Windowsa ili Maca, možda prvo treba omogućiti prikaz/izmjenu ekstenzija jer se index.txt treba preimenovati u index.html',
+        'U Notepadu (ili sličnom) upiši sljedeću osnovnu strukturu HTML-a:',
+        '<!DOCTYPE html>',
+        '<html lang="hr">',
+        '<head>',
+        '<meta charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>Moja prva web-stranica</title>',
+        '</head>',
+        '<body>',
+        '<h1>Dobrodošli na moju web-stranicu!</h1>',
+        '<p>Ovo je moja prva web-stranica izrađena uz HTML i CSS.</p>',
+        '</body>',
+        '</html>',
+        'Ovako bi tvoja stranica trebala izgledati bez CSS-a.',
+        'Korak 3: Dodavanje stilova uz CSS',
+        'CSS se koristi za oblikovanje elemenata na stranici. Krenimo s osnovama poput boje pozadine, boje teksta i veličine fonta.',
+        'U istu mapu stvori novu tekstualnu datoteku i nazovi je style.css .',
+        'U style.css upiši:',
+        'body {',
+        '  background-color: #f0f8ff; /* Svijetloplava pozadina */',
+        '  color: #333; /* Tamnosivi tekst */',
+        '  font-family: Arial, sans-serif; /* Pismo za tekst */',
+        '  text-align: center; /* Poravnanje teksta na sredinu */',
+        '}',
+        'h1 {',
+        '  color: #4CAF50; /* Zeleni naslov */',
+        '}',
+        'p {',
+        '  font-size: 18px; /* Veličina slova za odlomak */',
+        '  color: #555; /* Sivo-plavi tekst odlomka */',
+        '}',
+        'Korak 4: Povezivanje HTML-a i CSS-a',
+        'Nakon što si stvorio/la CSS datoteku, poveži je s HTML datotekom.',
+        'U odjeljku <head> HTML-a dodaj redak:',
+        '<link rel="stylesheet" href="style.css">',
+        'Time HTML dokument “zna” da treba primijeniti stilove iz CSS datoteke.',
+        'Korak 5: Pokretanje stranice',
+        'Spremi obje datoteke: index.html i style.css .',
+        'Dvoklikni index.html i otvori ga u pregledniku.',
+        'Sada vidiš stranicu s centriranim tekstom i osnovnim stilovima koje si dodao/la.',
+        'Ovako bi tvoja stranica sada trebala izgledati:',
+        'Poticanje raznolikosti u STEM-u',
+        'Web-razvoj je za svakoga! Bilo da si učenik, odrasla osoba koja traži novu karijeru ili netko iz nedovoljno zastupljene skupine – ovaj te izazov poziva da istražiš uzbudljiv svijet izrade web-stranica.',
+        'STEM područja (znanost, tehnologija, inženjerstvo i matematika) povijesno imaju manje raznolikosti – važno je ohrabriti sve, bez obzira na spol, rasu ili podrijetlo, da istražuju programiranje i tehnologiju.',
+        'Svatko donosi jedinstvene poglede i iskustva koja web-razvoj čine kreativnijim i uključivijim.',
+        'Dok radiš na svojoj stranici, razmisli kako digitalni svijet učiniti mjestom u kojem se svi osjećaju dobrodošlo i predstavljeno.',
+        'Ne moraš biti stručnjak – samo kreni učiti, korak po korak!',
+        'Učini svoju stranicu pristupačnom',
+        'Važno je da stranica bude dostupna što većem broju ljudi, uključujući osobe s invaliditetom.',
+        'Nekoliko savjeta za veću pristupačnost:',
+        'Kontrast: osiguraj dobar kontrast između pozadine i boje teksta kako bi osobama sa slabijim vidom bilo lakše čitati (svijetla pozadina + tamni tekst često je najbolja kombinacija).',
+        'Zamjenski tekst za slike (alt): ako naknadno dodaš slike, upiši opis (alt) koji objašnjava sadržaj slike – pomaže korisnicima čitača ekrana.',
+        'Semantički HTML: koristi ispravne HTML oznake radi bolje strukture i pristupačnosti (npr. <h1> za glavni naslov, <p> za odlomke).',
+        'Čitljivost: koristi jednostavan bezserifni font (npr. Arial) i po potrebi povećaj veličinu slova.',
+    ],
+
+    'mini_simulation_title' => 'Mini simulacija:',
+    'mini_simulation' => [
+        'Provjeri svoje znanje',
+        'Što je HTML? a) Jezik za izradu slika b) Jezik za strukturiranje sadržaja web-stranice c) Program za obradu slika',
+        'Što je CSS? a) Jezik za izradu web-baza podataka b) Jezik za stiliziranje i raspored elemenata na web-stranici c) Program za upravljanje datotekama',
+        'Kako povezujemo CSS i HTML? a) Pomoću <link> oznake u HTML dokumentu b) Pomoću <style> oznaka unutar HTML-a c) Povezivanje nije moguće',
+        'Točni odgovori: 1.b, 2.b, 3.a',
+        'Prilagodi svoju stranicu:',
+        'Promijeni boju pozadine.',
+        'Dodaj još jedan naslov (h2) ispod glavnog naslova.',
+        'Dodaj poveznicu na drugu stranicu, npr. Google.',
+        'Nakon svake promjene – osvježi stranicu!',
+    ],
+
+    'additional_resources_title' => 'Dodatni izvori:',
+    'additional_resources' => [
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    ],
+],
+
+    'train-it-like-fei-fei-li' => [
+    'title' => 'Treniraj kao Fei-Fei Li – nauči računalo prepoznavati slike!',
+    'author' => 'Chouliara Theodora',
+
+    'purposes_title' => 'Ciljevi izazova',
+    'purposes' => [
+        'Upoznati osnove strojnog učenja i prepoznavanja slika.',
+        'Uvježbati računalo da razlikuje različite slike (npr. pas vs. mačka, lutke vs. plišani medvjedići).',
+        'Istražiti kako se umjetna inteligencija i strojno učenje koriste u stvarnom životu.',
+        'Nadahnuti se doprinosima Fei-Fei Li području UI i računalnog vida.',
+        'Ohrabriti djevojčice da se uključe u programiranje i STEM karijere.',
+    ],
+
+    'description_title' => 'Opis izazova',
+    'description' => 'Uvježbaj AI model poput Fei-Fei Li! Upotrijebi Teachable Machine kako bi računalu „pokazao“ kako prepoznavati slike i pritom istraži moć strojnog učenja – rušeći rodne stereotipe u tehnologiji.',
+
+    'target_audience_title' => 'Ciljna skupina',
+    'target_audience' => 'Učenici osnovne škole (6 do 12 godina)',
+
+    'experience_title' => 'Iskustvo',
+    'experience' => 'Početnička razina – nije potrebno prethodno iskustvo u programiranju; prikladno za potpune početnike.',
+
+    'duration_title' => 'Trajanje',
+    'duration' => '60 minuta',
+
+    'materials_title' => 'Preporučeni alati i materijali:',
+    'materials' => [
+        'Teachable Machine (dostupno u web-pregledniku)',
+        'Računalo ili tablet s kamerom',
+        'Internetska veza (za treniranje AI modela)',
+        'Igračke i predmeti iz učionice (npr. lutke, plišani medvjedići) za treniranje modela',
+        'Projektor ili veliki zaslon (neobavezno, za prikaz u razredu)',
+    ],
+
+    'instructions_title' => 'Upute',
+    'instructions' => [
+        'Korak 1: Uvod u strojno učenje i Fei-Fei Li',
+        'Objasni strojno učenje: računala mogu „učiti“ prepoznavati slike analizirajući mnogo primjera.',
+        'Predstavi Fei-Fei Li: vodeća je znanstvenica u području UI i računalnog vida; razvila je ImageNet – golemi skup podataka koji je „naučio“ računala prepoznavanju slika.',
+
+        'Korak 2: Postavljanje Teachable Machine',
+        'Posjeti https://teachablemachine.withgoogle.com/train',
+        'Odaberi „Image Project“ (projekt za slike).',
+        'Klikni „Standard image model“.',
+
+        'Korak 3: Odabir kategorija za treniranje',
+        'Odluči koje kategorije želiš da računalo prepoznaje (npr. lutke i plišani medvjedići).',
+
+        'Korak 4: Prikupljanje slika za treniranje',
+        'Kreiraj dvije kategorije: „Lutke“ i „Medvjedići“.',
+        'Opcija 1 – stvarni predmeti: pokaži lutku/medvjedića kameri i snimi više fotografija po kategoriji.',
+        'Opcija 2 – slike s interneta: preuzmi slike i spremi ih u dvije mape („Lutke“, „Medvjedići“), zatim ih učitaj u Teachable Machine.',
+
+        'Korak 5: Treniranje AI modela',
+        'Klikni „Train Model“ i pričekaj da model nauči iz primjera.',
+
+        'Korak 6: Testiranje modela',
+        'Klikni „Test Model“ i provjeri prepoznaje li nove predmete koji nisu bili u treningu.',
+
+        'Korak 7: Vrednovanje modela',
+        'Raspravi: je li model ispravno prepoznavao? Gdje je griješio? Kako poboljšati (više slika, raznolikiji primjeri itd.)?',
+
+        'Korak 8: Spremanje i dijeljenje modela',
+        'Ako si zadovoljan/na točnošću, klikni „Export Model“ za spremanje ili „Share“ za dijeljenje.',
+        'Primjer modela: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/',
+    ],
+
+    'examples_title' => 'Primjeri:',
+    'examples' => [
+        'UI u maloprodaji: trgovine koriste kamere s UI-jem za prepoznavanje proizvoda i praćenje zaliha; samonaplatne blagajne prepoznaju artikle i bez barkoda.',
+        'UI i potpomognute tehnologije: UI može prepoznavati objekte i u stvarnom vremenu opisivati „što vidi“, pomažući osobama s oštećenjem vida u snalaženju.',
+    ],
+],
+
+    'simulate-dice-in-python' => [
+    'title' => 'Simulacija bacanja kocke u Pythonu',
+    'author' => 'Marko Šolić',
+
+    'purposes_title' => 'Ciljevi izazova',
+    'purposes' => [
+        'Uvesti učenike u generiranje nasumičnih brojeva i petlje u Pythonu.',
+        'Kroz simulaciju bacanja kocke pokazati kako računala mogu generirati nasumične ishode i kako ponavljati radnje pomoću petlje.',
+        'Postaviti temelje za izradu jednostavnih igara i simulacija.',
+    ],
+
+    'description_title' => 'Opis izazova',
+    'description' => [
+        'Simulacija bacanja kocke odličan je način za učenje rada s nasumičnim brojevima u Pythonu.',
+        'U ovoj aktivnosti naučit ćemo kako koristiti modul random za generiranje nasumičnih brojeva i kako taj broj iskoristiti za simulaciju bacanja kocke.',
+        'Kroz zadatak ćeš razumjeti kako Python može generirati brojeve unutar zadanog raspona.',
+    ],
+
+    'target_audience_title' => 'Ciljna skupina',
+    'target_audience' => 'Učenici osnovnih i srednjih škola, početnici u Pythonu, te svi koji žele naučiti o nasumičnim brojevima, igrama ili osnovnoj programerskoj logici.',
+
+    'experience_title' => 'Iskustvo',
+    'experience' => 'Nije potrebno prethodno iskustvo u programiranju. Dovoljna je osnovna vještina tipkanja i rada na računalu.',
+
+    'duration_title' => 'Trajanje',
+    'duration' => '30 do 45 minuta za osnovnu verziju. Do 60 minuta ako se istražuju napredne opcije (dvije kocke, najčešći ishod itd.).',
+
+    'materials_title' => 'Preporučeni alat',
+    'materials' => [
+        'Za početak je potrebno imati instaliran Python. Ako ga još nemaš, preuzmi ga s službene stranice: https://www.python.org',
+        'Otvori Python IDLE ili bilo koji uređivač koda (npr. Visual Studio Code, PyCharm) za pisanje koda.',
+    ],
+
+    'instructions_title' => 'Upute',
+    'instructions' => [
+        'Korak 1: Priprema okruženja',
+        'Instaliraj Python na računalo ako već nije instaliran.',
+        'Po potrebi ga preuzmi sa službene web-stranice.',
+        'Otvori Python IDLE ili neki uređivač koda za pisanje programa.',
+
+        'Korak 2: Pisanje programa',
+        'U Python IDLE-u kreiraj novu datoteku pod nazivom dice.py.',
+        'Upiši sljedeći kod:',
+        '# Uvozimo modul \'random\' za generiranje nasumičnih brojeva',
+        'import random',
+        '# Ispišemo poruku dobrodošlice korisniku',
+        'print("Dobrodošli u simulaciju bacanja kocke!")',
+        '# Pitamo korisnika koliko puta želi baciti kocku',
+        'throw_num = int(input("Koliko puta želiš baciti kocku? "))',
+        'for i in range(throw_num):',
+        '    result = random.randint(1, 6)  # Generiramo nasumičan broj između 1 i 6',
+        '    print(f"Bacanje {i + 1}: {result}")',
+        'print("Hvala na igranju!")',
+
+        'Korak 3: Objašnjenje koda',
+        'Modul random omogućuje generiranje nasumičnih brojeva.',
+        'Funkcija random.randint(a, b) vraća nasumični cijeli broj u rasponu od a do b (uključivo).',
+        'Program pita korisnika koliko puta želi baciti kocku i unos pretvara u cijeli broj pomoću int().',
+        'Petlja for izvršava simulaciju onoliko puta koliko je korisnik naveo.',
+        'Svako bacanje generira broj od 1 do 6 koji predstavlja ishod bacanja.',
+        'Rezultat svakog bacanja ispisuje se na ekran, a na kraju i poruka zahvale.',
+
+        'Korak 4: Pokretanje programa',
+        'Spremi datoteku kao dice.py.',
+        'Pokreni program u Python IDLE-u.',
+        'Unesi broj bacanja (npr. 5).',
+        'Program će generirati nasumične brojeve i ispisati rezultate svakog bacanja.',
+    ],
+
+    'quiz_title' => 'Kviz:',
+    'quiz' => [
+        'Koji modul u Pythonu omogućuje generiranje nasumičnih brojeva? a) random b) math c) time',
+        'Što radi funkcija random.randint(1, 6)? a) Generira nasumičan broj između 1 i 6 b) Ispisuje nasumičan broj na ekran c) Ispisuje broj između 1 i 6',
+        'Kako pretvoriti korisnički unos u cijeli broj u Pythonu? a) float() b) int() c) p()',
+        'Točni odgovori: 1.a, 2.a, 3.b',
+    ],
+
+    'mini_simulation_title' => 'Mini simulacija:',
+    'mini_simulation' => [
+        'Proširi program:',
+        'Dodaj opciju za simulaciju bacanja dviju kocaka i zbroji njihove rezultate.',
+        'Dodaj opciju da program na kraju prikaže koji se broj pojavio najčešće.',
+    ],
+
+    'additional_resources_title' => 'Dodatni izvori:',
+    'additional_resources' => [
+        'Službena dokumentacija za Python – modul random',
+        'Learn Python',
+    ],
+],
+
+    'gender-gap-gender-graph' => [
+    'title' => 'Rodni jaz, graf rodne zastupljenosti',
+    'author' => 'Theodora S. Tziampazi',
+
+    'purposes_title' => 'Ciljevi izazova',
+    'purposes' => [
+        'Razumjeti kako vizualizacija podataka može utjecati na percepciju.',
+        'Prepoznati pristranosti u digitalnim alatima kroz interakciju.',
+        'Eksperimentirati s unosom podataka kako bi se uočila iskrivljenja.',
+        'Mijenjati kod kako bi se osigurala točna reprezentacija podataka.',
+        'Usporediti fer i pristrane vizualizacije podataka.',
+        'Promišljati o etičkim posljedicama manipulacije podacima.',
+        'Raspraviti stvarne posljedice pristranih statistika.',
+        'Razviti kritičko promišljanje o umjetnoj inteligenciji i algoritamskoj pristranosti.',
+    ],
+
+    'description_title' => 'Opis izazova',
+    'description' => 'U ovom izazovu istražit ćeš kako digitalni alati mogu oblikovati naš doživljaj rodne zastupljenosti u tehnologiji. Unijet ćeš vlastite podatke, uočiti moguća iskrivljenja, doraditi kod i otkriti kako vizualizacije utječu na našu percepciju stvarnosti.',
+
+    'target_audience_title' => 'Ciljna skupina',
+    'target_audience' => [
+        'Osnovna škola (6–12 godina)',
+        'Niža srednja škola (12–16 godina)',
+        'Viša srednja škola (16–18 godina)',
+        'Učitelji i edukatori',
+    ],
+
+    'experience_title' => 'Iskustvo',
+    'experience' => [
+        'Srednja razina – Preporučeno osnovno znanje programiranja; sudionici bi trebali poznavati temeljne koncepte.',
+        'Napredna razina – Za sudionike s čvrstim programerskim vještinama i prethodnim iskustvom.',
+    ],
+
+    'duration_title' => 'Trajanje',
+    'duration' => '2 sata',
+
+    'materials_title' => 'Materijali',
+    'materials' => [
+        'Scratch 3',
+        'Radni list (engleski): https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true',
+    ],
+
+    'instructions_title' => 'Upute',
+    'instructions' => [
+        'Koristi ovaj digitalni alat (Bar Maker): https://scratch.mit.edu/projects/1147892829. Za sada nemoj gledati u kôd.',
+        'Klikni na zelenu zastavicu i unesi podatke (1–10) koji hipotetski predstavljaju broj žena u tehnološkom sektoru. Isprobaj više različitih vrijednosti.',
+        'Što primjećuješ? Je li riječ o pogrešci ili namjernoj odluci? Kako bi se to moglo ispraviti?',
+        'Ručni pristup (razina korisnika): istraži alat i sve pomične spriteove. Postoji li položaj u kojem problem nestaje? Postoji li položaj u kojem se pojavljuje neko neočekivano ponašanje?',
+        'Pouka: način na koji koristimo alat (gdje postavimo neki element) utječe na rezultat.',
+        'S programiranjem (razina kreatora): otvori projekt.',
+        'Osnovni izazov – promijeni kôd tako da prikazani podaci uvijek odgovaraju unesenim vrijednostima.',
+        'Napredni izazov – dupliciraj sprite trake, oboji ga plavo (za muškarce), promijeni mu y-položaj kako bi bio vidljiv i usporediv s ljubičastom trakom te izradi muški simbol kao novi sprite.',
+        'Doradi kôd za „fer” i „nefer” scenarije i istraži kako programiranje može povećati ili smanjiti rodne razlike.',
+        'Rješenje (isti kôd): https://scratch.mit.edu/projects/1151892036',
+    ],
+
+    'discussion_title' => 'Rasprava',
+    'discussion' => [
+        'Kako možeš stvoriti pristran i nepristran (neutralan) digitalni alat?',
+        'Gdje je pristranost „skrivenija”: u pomicanju elemenata ili u samom kodu?',
+        'Postoje li situacije u kojima iskrivljena slika može nekome biti korisna?',
+        'Je li opravdano manipulirati podacima ako je cilj „dobar”, ili bismo uvijek trebali prikazivati istinu?',
+        'Kako sustavi umjetne inteligencije mogu isprobavati slične stvari kao u ovom izazovu?',
+        'Dodatna pitanja: Kako prikupljamo podatke? Kako se obrađuju? Kako statistike skrivene u algoritmima (s ili bez AI-a) utječu na naše odluke i uvjerenja?',
+        'Zaključak: način na koji stvaramo alat utječe ne samo na rezultat nego i na naš pogled na svijet.',
+    ],
+
+    'real-life-applications_title' => 'Primjene u stvarnom životu',
+    'real-life-applications' => [
+        'Izvještaji o raznolikosti na radnom mjestu – točna i fer reprezentacija rodnih podataka u korporativnim statistikama.',
+        'Grafike u medijima i vijestima – izbjegavanje zavaravajućih vizualizacija u izvještavanju o rodnoj ravnopravnosti.',
+        'AI i algoritamska pristranost – prepoznavanje i ublažavanje pristranosti u modelima strojnog učenja koji obrađuju demografske podatke.',
+        'Alati za zapošljavanje i HR analitiku – osiguravanje fer prikaza u analitikama i odlukama.',
+        'STEM obrazovanje i outreach – korištenje nepristranih podataka za poticanje većeg udjela žena u tehnici.',
+        'Javne politike i zagovaranje – podrška pravednim odlukama točnim statistikama o rodnom jazu.',
+        'Društvene mreže i kampanje – izrada fer vizualizacija rodnih podataka za poticanje promjena.',
+    ],
+],
+
+'coding-for-the-ocean' => [
+    'dance-with-ally' => [
+    'title' => 'Ples s Ally',
+    'author' => 'Kristina Krtalić',
+
+    'purposes_title' => 'Svrha izazova',
+    'purposes' => [
+        'Naučiti povezati micro:bit sa Scratchom putem Bluetootha.',
+        'Razumjeti kako koristiti Scratch proširenje za micro:bit.',
+        'Koristiti tipke na micro:bitu za interakciju s projektima u Scratchu.',
+        'Izraditi interaktivne igre s micro:bitom.',
+        'Razviti vještine rješavanja problema i logičkog razmišljanja.',
+        'Potaknuti kreativnost kroz programiranje.',
+    ],
+
+    'description_title' => 'Opis izazova',
+    'description' => 'Izradite program koji omogućuje da lik (sprite) u Scratchu izvodi jednostavne plesne pokrete uz pomoć micro:bita.',
+
+    'educational_goals_title' => 'Obrazovni ciljevi',
+    'educational_goals' => [
+        'Programiranje i logičko razmišljanje:',
+        'Učenici koriste Scratch blokove za pisanje programa vođenih događajima koji reagiraju na ulaze s micro:bita.',
+        'Razumiju i primjenjuju temeljne koncepte programiranja poput petlji, grananja (uvjeta) i varijabli.',
+        'Stječu tečnost u blokovskom programiranju za upravljanje digitalnim i fizičkim izlazima.',
+        'Računalno razmišljanje:',
+        'Razlažu problem na manje dijelove i osmišljavaju rješenja korak-po-korak koristeći Scratch.',
+        'Koriste podatke senzora micro:bita (npr. tipke, potresanje) za upravljanje likovima ili animacijama.',
+        'Razvijaju i testiraju algoritme za rješavanje konkretnih zadataka (npr. da lik zapleše kada se micro:bit nagne).',
+        'Rješavanje problema i otklanjanje pogrešaka:',
+        'Iterativno testiraju, pronalaze i ispravljaju pogreške u Scratch kodu i interakciji s micro:bitom.',
+        'Otklanjaju pogreške u stvarnom vremenu, i u softveru (Scratch skripte) i u hardveru (povezivost, ulazi).',
+        'Dokumentiraju i promišljaju o promjenama napravljenima tijekom ispravljanja.',
+        'Kreativnost i dizajnersko razmišljanje:',
+        'Stvaraju originalne animacije, igre ili priče koje uključuju micro:bit kao interaktivni element.',
+        'Kreativno se izražavaju koreografiranjem pokreta lika ili dizajniranjem interaktivnih scena.',
+        'Slijede dizajnerski proces: razumjeti, osmisliti, prototipirati i testirati.',
+        'Suradnja i komunikacija:',
+        'Rade u parovima ili manjim timovima na planiranju, programiranju i prezentiranju projekata.',
+        'Objašnjavaju svoje dizajnerske odluke i logiku koda vršnjacima ili široj publici.',
+    ],
+
+    'target_audience_title' => 'Ciljna skupina',
+    'target_audience' => [
+        'Osnovna škola (6–12 godina)',
+        'Srednja škola (12–16 godina)',
+    ],
+
+    'experience_title' => 'Iskustvo',
+    'experience' => 'Srednja razina – Preporučuje se osnovno znanje programiranja; sudionici bi trebali poznavati temeljne koncepte programiranja.',
+
+    'duration_title' => 'Trajanje',
+    'duration' => '60 minuta',
+
+    'materials_title' => 'Preporučeni materijali',
+    'materials' => [
+        'Računalo',
+        'Scratch: https://scratch.mit.edu/',
+        'Scratch Link: https://scratch.mit.edu/download/scratch-link',
+        'Proširenje micro:bit za Scratch: https://scratch.mit.edu/microbit',
+        'micro:bit',
+        'Sprite „Ally”: https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png',
+    ],
+
+    'instructions_title' => 'Upute',
+    'instructions' => [
+        '1. Pokrenite Scratch.',
+        '2. Izradite račun na Scratchu (ako ga još nemate).',
+        '3. Započnite novi projekt, dodajte lik (sprite), odaberite pozadinu i postavite početni položaj lika pri pokretanju programa.',
+        '4. Dodajte skup micro:bit blokova iz Scratch proširenja.',
+        '5. Povežite micro:bit s računalom i uključite Bluetooth (ako nije uključen).',
+        '6. Instalirajte i pokrenite Scratch Link; preuzmite micro:bit HEX datoteku i kopirajte je na micro:bit.',
+        '7. U proširenju micro:bit kliknite narančastu tipku za pronalaženje obližnjih uređaja.',
+        '8. Potražite i odaberite svoj uređaj te uspostavite vezu.',
+        '9. Izradite program blokovima koji omogućuje da lik pleše uz odabranu glazbu (blok „start sound”) te se pomiče kada protresete micro:bit (klizi lijevo i desno po x-osi). Spremite projekt.',
+        'Nakon izrade temeljnog programa, učenici mogu dodati vlastite blokove, upravljati likom tipkama A/B na micro:bitu, mijenjati izgled lika i dodavati nove pokrete.',
+    ],
+
+    'examples_title' => 'Primjeri',
+    'examples' => [
+        'Povezivanje micro:bita sa Scratchom za upravljanje plešućim likom odličan je način za istraživanje interaktivnog programiranja. Koncept se može proširiti na brojne kreativne i stvarne primjene, primjerice:',
+        '1. Interaktivni plesni i fitness programi',
+        'Iskoristite akcelerometar micro:bita za praćenje pokreta i izradu fitness igara.',
+        'Izradite alat za učenje plesa u kojem lik slijedi stvarne plesne pokrete.',
+        '2. Animacije i igre temeljene na gestama',
+        'Upravljajte Scratch likovima pokretima ruku ili nagibom uređaja.',
+        'Razvijte jednostavne igre kontrolirane pokretom, poput skakanja ili izbjegavanja prepreka.',
+    ],
+],
+
+    'title' => 'Kodiranje za ocean – Izgradite svoj AI bot kako biste spasili more',
+    'author' => 'Teresa Silvestri',
+
+    'purposes_title' => 'Svrha izazova',
+    'purposes' => [
+        'Sposobnost korištenja umjetne inteligencije za rješavanje problema okoliša.',
+        'Vještine kodiranja za stvaranje i programiranje AI bota.',
+        'Znanje o klimatskim promjenama i važnosti zaštite morskog okoliša.',
+        'Sposobnosti rješavanja problema u kontekstu znanosti i tehnologije.',
+        'Razvoj logičkog razmišljanja primijenjenog na izazove iz stvarnog svijeta.',
+        'Kreativnost u dizajniranju bota koji može odgovoriti na prijetnje okolišu.',
+        'Praktično iskustvo korištenja platformi za kodiranje poput Code.org.',
+        'Timski rad i suradnja kroz dijeljenje botova i natjecanje s razredom.',
+    ],
+
+    'description' => 'Izradite i trenirajte AI bota za zaštitu mora! Naučite kodirati, rješavati ekološke probleme i razvijati logičko razmišljanje kako biste zaštitili morski okoliš.',
+
+    'instructions_title' => 'Upute',
+    'instructions' => [
+        'Otvorite Code.org.',
+        'Otvorite web-preglednik i idite na Code.org. Prijavite se u postojeći račun ili izradite novi.',
+        'Započnite novi projekt: na glavnom zaslonu odaberite lekciju ili vodič o zaštiti oceana i kliknite „Start”.',
+        'Slijedite vodič korak po korak: pažljivo čitajte upute i dovršite svaki korak kako biste naučili programirati AI bota.',
+        'Programirajte svog bota: koristite blokove vizualnog kodiranja da naučite bota reagirati na situacije (npr. prikupljanje plastike, izbjegavanje prepreka).',
+        'Po potrebi izmijenite blokove kako bi odgovarali različitim situacijama i testirajte ponašanje bota.',
+        'Testirajte bota: nakon pisanja koda provjerite kako se nosi s izazovima.',
+        'Ako bot ne radi prema očekivanjima, doradite kod i ponovno testirajte dok ne postane učinkovit.',
+        'Podijelite bota s razredom: kopirajte poveznicu na projekt i podijelite je s učenicima.',
+        'Sudjelujte u natjecanju kako biste vidjeli koji je bot najučinkovitiji u zaštiti mora.',
+        'Osvrt i poboljšanje: nakon dovršetka izazova pregledajte kod i potražite načine za poboljšanje.',
+        'Dodajte više značajki kako bi se bot mogao nositi s novim ekološkim izazovima.',
+    ],
+
+    'materials_title' => 'Preporučeni alat',
+    'materials' => [
+        'Softver: pristup Code.org',
+        'Hardver: računalo ili tablet s internetskom vezom',
+        'Online alati: web-preglednik za navigaciju Code.org ili sličnim platformama',
+        'Materijali za podršku: vodiči i obrazovni materijali koje pruža platforma',
+        'Ostalo: neobavezni audio ili video uređaji za praćenje video vodiča',
+    ],
+
+    'real-life-applications_title' => 'Primjene u stvarnom životu',
+    'real-life-applications' => [
+        'Umjetna inteligencija u zaštiti oceana: tvrtke i organizacije poput The Ocean Cleanup koriste AI sustave za prikupljanje plastike iz oceana, pomažući u borbi protiv onečišćenja mora.',
+        'AI u praćenju okoliša: AI botovi prate oceanské uvjete, morsku divljač i otkrivaju onečišćenje, povećavajući učinkovitost napora za zaštitu okoliša.',
+    ],
+
+    'variations_title' => 'Varijacije izazova',
+    'variations' => [
+        'Proširite izazov na druga okruženja: uključite AI botove koji štite druge ekosustave, poput šuma, rijeka ili urbanih područja, te se suočavaju s izazovima poput krčenja šuma ili onečišćenja zraka.',
+    ],
+
+    'duration' => '45 minuta – 1 sat',
+    'experience' => 'Početno – nije potrebno prethodno iskustvo kodiranja; prikladno za potpune početnike.',
+    'target-audience' => [
+        'Učenici osnovne škole (6 do 12 godina)',
+    ],
+    'educational_goals' => [
+        'Razviti osnovne vještine programiranja i umjetne inteligencije',
+        'Promicati ekološku svijest i važnost zaštite okoliša',
+        'Poticati kreativnost i maštu kroz pričanje priča',
+        'Razviti vještine rješavanja problema i kritičkog razmišljanja',
+    ],
+],
 
 'code-it-like-margaret-hamilton' => [
     'title' => 'Kodiraj kao Margaret Hamilton!',
