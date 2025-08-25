@@ -76,6 +76,7 @@
                 </div>
             </div>
         </section>
+
         <section class="relative bg-yellow-50">
             <div class="relative py-10 md:py-20 codeweek-container-lg">
                 <div class="grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-16">
@@ -402,10 +403,11 @@
                                         <figure class="my-4">
                                             <img width="100%"
                                                 src="/images/challenges/create-your-own-website-with-html-and-css/2.jpg">
-                                                                    </figure>
-                                </div>
-        
+                                    </figure>
                                 @endif
+                                </div>
+                            
+                    
                             </div>
 
                             {{-- Diversity --}}
@@ -453,8 +455,9 @@
 
                                 {{-- Quiz groups --}}
                                 @if (!empty($mini) && count($quizGroups))
-                                    <strong class=text-default md:text-xl block
-                                        mb-2">{{ $mini[0] ?? 'Check your knowledge' }}</strong>
+                                    <strong class="block mb-2 text-default md:text-xl">
+                                        {{ $mini[0] ?? 'Check your knowledge' }}
+                                    </strong>
                                     @foreach ($quizGroups as $g)
                                         <p class="mb-1 font-semibold text-default md:text-xl text-slate-700">
                                             {{ $g['q'] }}</p>
@@ -510,7 +513,6 @@
             </div>
             </div>
         </section>
-
         <script>
             (function() {
                 const SCOPE_SELECTOR = "#challenge-detail-page"; // change to "body" if you want site-wide
