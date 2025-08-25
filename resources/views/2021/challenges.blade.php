@@ -91,6 +91,13 @@
             <div class="hidden absolute w-full h-full bg-yellow-50 xl:block" style="clip-path: ellipse(198% 90% at 50% 90%);"></div>
             <div class="relative pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
                 <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10">
+                     @include('2021._thumbnail', ['slug' => 'create-your-own-website-with-html-and-css', 'author'=>'Marko Šolić'])
+                    @include('2021._thumbnail', ['slug' => 'train-it-like-fei-fei-li', 'author'=>'Chouliara Theodora'])
+                    @include('2021._thumbnail', ['slug' => 'simulate-dice-in-python', 'author'=>'Marko Šolić'])
+                    @include('2021._thumbnail', ['slug' => 'gender-gap-gender-graph', 'author'=>'Theodora S. Tziampazi'])
+                    @include('2021._thumbnail', ['slug' => 'dance-with-ally', 'author'=>'Kristina Krtalić'])
+                    @include('2021._thumbnail', ['slug' => 'coding-for-the-ocean', 'author'=>'Teresa Silvestri'])
+                    @include('2021._thumbnail', ['slug' => 'code-it-like-margaret-hamilton', 'author'=>'Chouliara Theodora'])
                     @include('2021._thumbnail', ['slug' => 'careers-as-constellations', 'author'=>'Linda Liukas'])
                     @include('2021._thumbnail', ['slug' => 'air-drawing-with-AI', 'author'=>'Kristina Slišurić'])
 

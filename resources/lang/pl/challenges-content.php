@@ -1,6 +1,403 @@
 <?php
 
 return [
+'create-your-own-website-with-html-and-css' => [
+    'title' => 'Stwórz własną stronę internetową za pomocą HTML i CSS',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Cel wyzwania',
+    'purposes' => [
+        'Wprowadzenie początkujących w świat tworzenia stron internetowych.',
+        'Nauka podstaw HTML i CSS, które są fundamentem budowy stron WWW.',
+        'Podkreślenie praktycznej nauki poprzez budowę własnej strony od podstaw.',
+        'Zdobycie podstawowych umiejętności projektowania stron i większa pewność siebie w tworzeniu obecności online.'
+    ],
+    'description_title' => 'Opis wyzwania',
+    'description' => [
+        'Strony internetowe są podstawą obecności w Internecie.',
+        'W tej lekcji nauczysz się używać HTML do strukturyzacji treści i CSS do stylizacji.',
+        'Stworzysz swoją pierwszą stronę, która może zawierać tekst, obrazy, kolory i linki.'
+    ],
+    'audience_title' => 'Grupa docelowa',
+    'audience' => [
+        'Początkujący zainteresowani tworzeniem stron internetowych.',
+        'Studenci oraz osoby nowe w programowaniu.',
+        'Każdy, kto chce dowiedzieć się, jak działają strony WWW.'
+    ],
+    'experience_title' => 'Doświadczenie',
+    'experience' => 'Poziom początkujący – wcześniejsze doświadczenie w kodowaniu nie jest wymagane.',
+    'duration_title' => 'Czas trwania',
+    'duration' => '1–2 godziny (w zależności od doświadczenia i eksploracji).',
+    'materials_title' => 'Zalecane narzędzia',
+    'materials' => [
+        'Komputer PC lub laptop',
+        'Zwykły edytor tekstu (np. Notatnik w Windows lub TextEdit w MacOS)'
+    ],
+    'instructions_title' => 'Instrukcje',
+    'instructions' => [
+        'Krok 1: Przygotowanie środowiska – otwórz edytor tekstu i zapisz nowy plik jako index.html.',
+        'Krok 2: Podstawowa struktura HTML – wpisz szkielet dokumentu HTML i dodaj nagłówek oraz akapit.',
+        'Krok 3: Dodawanie stylów CSS – utwórz plik style.css i dodaj kolory, czcionki i układ.',
+        'Krok 4: Połączenie HTML z CSS – dodaj w sekcji <head> kod <link rel="stylesheet" href="style.css">.',
+        'Krok 5: Uruchom stronę – zapisz oba pliki i otwórz index.html w przeglądarce internetowej.'
+    ],
+    'examples_title' => 'Mini symulacja',
+    'examples' => [
+        'Sprawdź swoją wiedzę:',
+        '1. Czym jest HTML? → Język do strukturyzacji treści stron internetowych.',
+        '2. Czym jest CSS? → Język do stylizacji i układu stron.',
+        '3. Jak łączymy CSS z HTML? → Za pomocą tagu <link> w dokumencie HTML.',
+        'Zmodyfikuj stronę: zmień kolor tła, dodaj nagłówek h2 i link do innej strony.'
+    ],
+    'resources_title' => 'Dodatkowe zasoby',
+    'resources' => [
+        'MDN Web Docs – HTML: https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'MDN Web Docs – CSS: https://developer.mozilla.org/en-US/docs/Web/CSS'
+    ]
+],
+
+'train-it-like-fei-fei-li' => [
+    'title' => 'Trenuj jak Fei-Fei Li – Dawanie wizji komputerom!',
+    'author' => 'Chouliara Theodora',
+    'purposes_title' => 'Cel wyzwania',
+    'purposes' => [
+        'Poznanie podstaw uczenia maszynowego i rozpoznawania obrazów.',
+        'Trenowanie komputera w zakresie rozróżniania różnych obrazów (np. pies kontra kot, lalki kontra misie).',
+        'Zbadanie, w jaki sposób sztuczna inteligencja i uczenie maszynowe są wykorzystywane w prawdziwym życiu.',
+        'Zainspirowanie się wkładem Fei-Fei Li w rozwój sztucznej inteligencji i rozpoznawania obrazów.',
+        'Zachęcanie dziewcząt do angażowania się w kodowanie i kariery STEM.'
+    ],
+    'description_title' => 'Opis wyzwania',
+    'description' => [
+        'Wytrenuj model sztucznej inteligencji jak Fei-Fei Li!',
+        'Użyj Teachable Machine, aby nauczyć komputer rozpoznawania obrazów i odkrywać moc uczenia maszynowego, jednocześnie przełamując stereotypy dotyczące płci w technologii.'
+    ],
+    'audience_title' => 'Docelowi odbiorcy',
+    'audience' => [
+        'Uczniowie szkół podstawowych (od 6 do 12 lat)'
+    ],
+    'experience_title' => 'Doświadczenie',
+    'experience' => 'Początkujący – Nie jest wymagane wcześniejsze doświadczenie w kodowaniu; odpowiednie dla zupełnie początkujących.',
+    'duration_title' => 'Czas trwania',
+    'duration' => '60 minut',
+    'materials_title' => 'Zalecane narzędzia',
+    'materials' => [
+        'Teachable Machine (https://teachablemachine.withgoogle.com/train)',
+        'Komputer lub tablet z aparatem fotograficznym',
+        'Połączenie z Internetem',
+        'Zabawki i przedmioty szkolne (np. lalki, pluszowe misie) do trenowania modelu',
+        'Projektor lub ekran (opcjonalnie, do demonstracji w klasie)'
+    ],
+    'instructions_title' => 'Instrukcje',
+    'instructions' => [
+        'Krok 1: Wprowadzenie do uczenia maszynowego i Fei-Fei Li – wyjaśnij, że komputery mogą uczyć się rozpoznawania obrazów, tak jak ludzie. Przedstaw Fei-Fei Li jako pionierkę w dziedzinie wizji komputerowej i twórczynię ImageNet.',
+        'Krok 2: Skonfiguruj Teachable Machine – wybierz projekt obrazu i kliknij „Standardowy model obrazu”.',
+        'Krok 3: Wybierz kategorie do treningu – np. „Lalki” i „Misie”.',
+        'Krok 4: Zbierz obrazy treningowe – wykonaj zdjęcia realnych obiektów lub pobierz obrazy z Internetu i wgraj je do Teachable Machine.',
+        'Krok 5: Wytrenuj model – kliknij „Train Model” i poczekaj, aż system nauczy się rozpoznawać obrazy.',
+        'Krok 6: Przetestuj model – sprawdź, jak dobrze klasyfikuje nowe obiekty, których nie użyto podczas treningu.',
+        'Krok 7: Oceń model – omów z uczniami poprawność, błędy i możliwe ulepszenia.',
+        'Krok 8: Zapisz i udostępnij model – kliknij „Export Model” i podziel się wynikami z innymi.'
+    ],
+    'examples_title' => 'Przykłady',
+    'examples' => [
+        'Sztuczna inteligencja w handlu detalicznym – AI rozpoznaje produkty i śledzi zapasy w sklepach.',
+        'Systemy kas samoobsługowych – rozpoznawanie przedmiotów bez kodów kreskowych.',
+        'AI w technologiach wspomagających – pomoc osobom niedowidzącym poprzez opisywanie otoczenia w czasie rzeczywistym.'
+    ]
+],
+
+'simulate-dice-in-python' => [
+    'title' => 'Symulacja rzutu kostką w Pythonie',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Cel wyzwania',
+    'purposes' => [
+        'Zapoznanie uczniów z generowaniem liczb losowych w Pythonie.',
+        'Nauka używania pętli do powtarzania działań.',
+        'Zrozumienie, jak komputer może generować losowe wyniki.',
+        'Przygotowanie do budowy prostych gier i symulacji.'
+    ],
+    'description_title' => 'Opis wyzwania',
+    'description' => [
+        'Symulacja rzutu kostką to świetny sposób na naukę pracy z liczbami losowymi w Pythonie.',
+        'Uczestnicy nauczą się używać modułu random do generowania liczb losowych i symulowania rzutu kostką.',
+        'Ćwiczenie pokaże, jak Python generuje liczby w określonym zakresie.'
+    ],
+    'audience_title' => 'Grupa docelowa',
+    'audience' => [
+        'Uczniowie szkół podstawowych i średnich.',
+        'Początkujący w Pythonie.',
+        'Osoby uczące się o liczbach losowych, grach lub podstawowej logice programowania.'
+    ],
+    'experience_title' => 'Doświadczenie',
+    'experience' => 'Nie jest wymagane wcześniejsze doświadczenie w programowaniu. Podstawowa obsługa komputera i pisania wystarczy.',
+    'duration_title' => 'Czas trwania',
+    'duration' => '30–45 minut (wersja podstawowa) lub do 60 minut (wersja rozszerzona).',
+    'materials_title' => 'Zalecane narzędzia',
+    'materials' => [
+        'Python zainstalowany na komputerze (https://www.python.org).',
+        'Python IDLE lub edytor tekstu (np. Visual Studio Code, PyCharm).'
+    ],
+    'instructions_title' => 'Instrukcje',
+    'instructions' => [
+        '1. Przygotuj środowisko: zainstaluj Pythona i otwórz IDLE lub edytor tekstu.',
+        '2. Utwórz plik o nazwie dice.py i wprowadź poniższy kod:',
+        'import random',
+        'print("Witaj w symulacji rzutu kostką!")',
+        'throw_num = int(input("Ile razy chcesz rzucić kostką? "))',
+        'for i in range(throw_num):',
+        '    result = random.randint(1, 6)',
+        '    print(f"Rzut {i + 1}: {result}")',
+        'print("Dziękujemy za grę!")',
+        '3. Uruchom program i wprowadź liczbę rzutów.',
+        '4. Program wygeneruje losowe liczby w zakresie 1–6 i wypisze je jako wyniki.'
+    ],
+    'quiz_title' => 'Quiz',
+    'quiz' => [
+        'Który moduł w Pythonie umożliwia generowanie liczb losowych? → a) random',
+        'Co robi funkcja random.randint(1, 6)? → a) Generuje losową liczbę między 1 a 6',
+        'Jak przekonwertować wpis użytkownika na liczbę całkowitą w Pythonie? → b) int()'
+    ],
+    'examples_title' => 'Mini symulacja',
+    'examples' => [
+        'Dodaj opcję symulacji dwóch rzutów kostką i zsumowania wyników.',
+        'Dodaj opcję, aby program na końcu wypisał najczęściej wypadającą liczbę.'
+    ],
+    'resources_title' => 'Dodatkowe zasoby',
+    'resources' => [
+        'Python official documentation – random module',
+        'Learn Python'
+    ]
+],
+
+'gender-gap-gender-graph' => [
+    'title' => 'Gender Gap, Gender Graph',
+    'author' => 'Theodora S. Tziampazi',
+    'purposes_title' => 'Cel wyzwania',
+    'purposes' => [
+        'Zrozumienie, w jaki sposób wizualizacja danych może wpływać na percepcję.',
+        'Identyfikowanie uprzedzeń w narzędziach cyfrowych poprzez interakcję.',
+        'Eksperymentowanie z wprowadzanymi danymi, aby zaobserwować zniekształcenia.',
+        'Modyfikowanie kodu w celu zapewnienia dokładnej reprezentacji danych.',
+        'Porównywanie uczciwych i stronniczych wizualizacji danych.',
+        'Refleksja nad etycznymi konsekwencjami manipulowania danymi.',
+        'Omówienie rzeczywistych konsekwencji stronniczych statystyk.',
+        'Rozwijanie krytycznego myślenia o sztucznej inteligencji i tendencyjności algorytmicznej.'
+    ],
+    'description_title' => 'Opis wyzwania',
+    'description' => [
+        'Zbadaj stronniczość w wizualizacji danych, wprowadzając wartości, analizując zniekształcenia, modyfikując kod i badając, w jaki sposób narzędzia cyfrowe wpływają na postrzeganie reprezentacji płci w technologiach.'
+    ],
+    'audience_title' => 'Docelowi odbiorcy',
+    'audience' => [
+        'Uczniowie szkół podstawowych (od 6 do 12 lat)',
+        'Uczniowie gimnazjum (od 12 do 16 lat)',
+        'Uczniowie szkół ponadgimnazjalnych (od 16 do 18 lat)',
+        'Nauczyciele i wychowawcy'
+    ],
+    'experience_title' => 'Doświadczenie',
+    'experience' => [
+        'Średniozaawansowane – zalecana podstawowa wiedza z zakresu kodowania.',
+        'Zaawansowane – dla uczestników z silnymi umiejętnościami programistycznymi i wcześniejszym doświadczeniem.'
+    ],
+    'duration_title' => 'Czas trwania',
+    'duration' => '2 godziny',
+    'materials_title' => 'Zalecane narzędzie',
+    'materials' => [
+        'Scratch 3',
+        'Arkusz: https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+    ],
+    'instructions_title' => 'Instrukcje',
+    'instructions' => [
+        'Wejdź w projekt bar maker: https://scratch.mit.edu/projects/1147892829 i kliknij zieloną flagę.',
+        'Wprowadź dane (1–10), które reprezentują liczbę kobiet w sektorze technologicznym.',
+        'Zauważ, czy wyniki są zniekształcone — czy to błąd czy decyzja?',
+        'Spróbuj ręcznie przesuwać sprite’y i obserwuj różne wyniki.',
+        'Przemyśl: co jeśli liczba kobiet jest niedoszacowana, przeszacowana lub poprawnie oszacowana, ale nierównomiernie przedstawiona?',
+        'Zajrzyj do kodu i zmodyfikuj go, aby wartości były prezentowane poprawnie.',
+        'Wersja zaawansowana: dodaj sprite mężczyzny (np. niebieski słupek) i porównaj wyniki.',
+        'Eksperymentuj z kodem, aby pokazać stronniczość na korzyść jednej z płci lub uczciwe przedstawienie.'
+    ],
+    'discussion_title' => 'Dyskusja',
+    'discussion' => [
+        'Jak to możliwe, że stworzyliśmy narzędzie stronnicze i bezstronne?',
+        'Gdzie bias jest bardziej ukryty – w przeciąganiu sprite’ów czy w kodzie?',
+        'Czy zniekształcone dane mogą być czasem pomocne?',
+        'Czy dane można manipulować, jeśli cel uświęca środki?',
+        'Jak sztuczna inteligencja może zachowywać się podobnie do tego ćwiczenia?'
+    ],
+    'examples_title' => 'Przykłady',
+    'examples' => [
+        'Raporty różnorodności w miejscu pracy – zapewnienie rzetelnych danych o płci w statystykach firmowych.',
+        'Media i raporty – unikanie mylących wizualizacji w raportach o równości płci.',
+        'AI i uprzedzenia algorytmiczne – identyfikacja i redukcja biasu w modelach ML.',
+        'Narzędzia HR – zapewnienie sprawiedliwej reprezentacji w rekrutacji i analityce kadrowej.',
+        'STEM i edukacja – wykorzystanie obiektywnych danych, by zachęcić więcej kobiet do branży technologicznej.',
+        'Polityka publiczna – wspieranie sprawiedliwych decyzji politycznych na podstawie rzetelnych danych.',
+        'Kampanie społeczne – tworzenie obiektywnych wizualizacji danych w kampaniach o równość płci.'
+    ]
+],
+
+ 'dance-with-ally' => [
+    'title' => 'Taniec z sojusznikiem',
+    'author' => 'Kristina Krtalić',
+    'purposes_title' => 'Cel wyzwania',
+    'purposes' => [
+        'Naucz się łączyć micro:bit ze Scratchem przez Bluetooth.',
+        'Dowiedz się, jak korzystać z rozszerzenia Scratch micro:bit.',
+        'Używaj przycisków micro:bit do interakcji z projektami Scratch.',
+        'Twórz interaktywne gry z micro:bit.',
+        'Rozwijaj umiejętności rozwiązywania problemów i logicznego myślenia.',
+        'Zwiększaj kreatywność poprzez kodowanie.'
+    ],
+    'description_title' => 'Opis wyzwania',
+    'description' => [
+        'Stwórz program, który umożliwi prosty taniec duszka w Scratch z micro:bit.',
+        'Cele edukacyjne:',
+        '• Logika kodowania i programowania: pisanie programów opartych na zdarzeniach, używanie pętli, warunków i zmiennych.',
+        '• Myślenie obliczeniowe: rozkładanie problemów na mniejsze części, użycie danych z czujników micro:bit.',
+        '• Rozwiązywanie problemów i debugowanie: testowanie, poprawianie błędów, dokumentowanie zmian.',
+        '• Kreatywność i projektowanie: tworzenie oryginalnych animacji, gier lub historii w Scratch.',
+        '• Współpraca i komunikacja: praca w parach lub zespołach, prezentowanie projektów i omawianie rozwiązań.'
+    ],
+    'audience_title' => 'Docelowi odbiorcy',
+    'audience' => [
+        'Uczniowie szkół podstawowych (od 6 do 12 lat)',
+        'Uczniowie gimnazjum (od 12 do 16 lat)'
+    ],
+    'experience_title' => 'Doświadczenie',
+    'experience' => 'Średniozaawansowane – Zalecana jest podstawowa wiedza z zakresu kodowania; uczestnicy powinni znać fundamentalne pojęcia programistyczne.',
+    'duration_title' => 'Czas trwania',
+    'duration' => '60 minut',
+    'materials_title' => 'Zalecane narzędzia',
+    'materials' => [
+        'Komputer',
+        'Scratch (https://scratch.mit.edu/)',
+        'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
+        'Scratch micro:bit (https://scratch.mit.edu/microbit)',
+        'micro:bit',
+        'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+    ],
+    'instructions_title' => 'Instrukcje',
+    'instructions' => [
+        '1. Uruchom Scratch i utwórz konto (jeśli go nie masz).',
+        '2. Rozpocznij nowy projekt, dodaj duszka, tło i ustaw pozycję początkową.',
+        '3. Dodaj grupę skryptów micro:bit z rozszerzenia Scratch.',
+        '4. Podłącz micro:bit do komputera, włącz Bluetooth.',
+        '5. Zainstaluj i uruchom Scratch Link, pobierz plik HEX micro:bit i wgraj go na urządzenie.',
+        '6. W rozszerzeniu micro:bit znajdź urządzenie w pobliżu komputera.',
+        '7. Stwórz program, w którym duszek tańczy do muzyki po potrząśnięciu micro:bit (np. ruch w lewo/prawo).',
+        '8. Zapisz projekt na komputerze i dodaj własne bloki, sterowanie przyciskami A/B, zmiany wyglądu duszka itp.'
+    ],
+    'examples_title' => 'Przykłady',
+    'examples' => [
+        'Interaktywne programy taneczne i fitness – użyj akcelerometru micro:bit do śledzenia ruchów i tworzenia gier fitness.',
+        'Animacja i gry oparte na gestach – sterowanie duszkami w Scratch za pomocą gestów lub ruchów pochylenia.',
+        'Rozszerzenie koncepcji do gier z kontrolą ruchu, takich jak skakanie lub omijanie przeszkód.'
+    ]
+],
+
+ 'coding-for-the-ocean' => [
+    'title' => 'Kodowanie dla oceanu – Zbuduj swojego AI Bota, aby uratować morze',
+    'author' => 'Teresa Silvestri',
+    'purposes_title' => 'Cel wyzwania',
+    'purposes' => [
+        'Umiejętność wykorzystania sztucznej inteligencji do rozwiązywania problemów środowiskowych.',
+        'Umiejętności kodowania do tworzenia i programowania robota sztucznej inteligencji.',
+        'Wiedza na temat zmian klimatu i znaczenia ochrony środowiska morskiego.',
+        'Umiejętności rozwiązywania problemów w kontekście nauki i techniki.',
+        'Rozwój logicznego myślenia stosowanego do rzeczywistych wyzwań.',
+        'Kreatywność w projektowaniu bota, który jest w stanie reagować na zagrożenia środowiskowe.',
+        'Praktyczne doświadczenie w korzystaniu z platform kodowania, takich jak Code.org.',
+        'Praca zespołowa i współpraca przy współdzieleniu botów i konkurowaniu z kolegami z klasy.'
+    ],
+    'description_title' => 'Opis wyzwania',
+    'description' => [
+        'Twórz i trenuj bota sztucznej inteligencji, aby chronić morze!',
+        'Naucz się kodować, rozwiązywać problemy środowiskowe i rozwijać logiczne myślenie, aby chronić środowisko morskie.'
+    ],
+    'audience_title' => 'Docelowi odbiorcy',
+    'audience' => [
+        'Uczniowie szkół podstawowych (od 6 do 12 lat)'
+    ],
+    'experience_title' => 'Doświadczenie',
+    'experience' => 'Początkujący – Nie wymaga wcześniejszego kodowania; odpowiedni dla początkujących.',
+    'duration_title' => 'Czas trwania',
+    'duration' => '45 minut – 1 godzina na wykonanie zadania.',
+    'materials_title' => 'Zalecane narzędzia',
+    'materials' => [
+        'Oprogramowanie: Dostęp do Code.org',
+        'Środki techniczne: Komputer lub tablet z połączeniem internetowym.',
+        'Narzędzia online: przeglądarka internetowa do poruszania się po Code.org lub podobnych platformach.',
+        'Materiały pomocnicze: samouczki i materiały edukacyjne udostępnione przez platformę.',
+        'Inne narzędzia: opcjonalne urządzenia audio lub wideo do śledzenia samouczka.'
+    ],
+    'instructions_title' => 'Instrukcje',
+    'instructions' => [
+        'Dostęp do Code.org: Otwórz przeglądarkę i przejdź do strony Code.org. Zaloguj się lub utwórz konto.',
+        'Rozpocznij nowy projekt: Wybierz kurs lub samouczek związany z ochroną oceanów i kliknij "Start".',
+        'Postępuj zgodnie z instrukcją krok po kroku: Code.org przeprowadzi Cię przez interaktywny samouczek.',
+        'Zaprogramuj swojego bota: Użyj bloków kodowania wizualnego, aby nauczyć swojego bota reagować na sytuacje środowiskowe.',
+        'Przetestuj swojego bota i w razie potrzeby zmodyfikuj kod.',
+        'Podziel się swoim botem z klasą, kopiując link do projektu i dołączając do konkursu.',
+        'Przejrzyj i ulepsz kod, dodając nowe funkcje odpowiadające kolejnym wyzwaniom środowiskowym.'
+    ],
+    'examples_title' => 'Przykłady',
+    'examples' => [
+        'Sztuczna inteligencja w ochronie oceanów: Firmy i organizacje takie jak The Ocean Cleanup wykorzystują systemy AI do zbierania plastiku z oceanów.',
+        'Sztuczna inteligencja w monitorowaniu środowiska: Boty wykorzystujące AI monitorują warunki oceaniczne, śledzą faunę i florę oraz wykrywają zanieczyszczenia.'
+    ],
+    'extensions_title' => 'Odmiany wyzwania',
+    'extensions' => [
+        'Rozszerz wyzwanie na inne środowiska: zmodyfikuj bota, aby chronił inne ekosystemy, takie jak lasy, rzeki czy obszary miejskie.'
+    ]
+],
+
+'code-it-like-margaret-hamilton' => [
+    'title' => 'Koduj jak Margaret Hamilton !!!',
+    'author' => 'Chouliara Theodora',
+    'purposes' => [
+        'Uczniowie nauczą się podstawowych pojęć kodowania blokowego używając Scratch Jr do wystrzelenia statku kosmicznego, tak jak Margaret Hamilton, kobieta, która zaprogramowała kod dla Apollo Nasa, aby dotrzeć na Księżyc.',
+        'Działanie to pomoże również przełamać stereotypy związane z płcią, podkreślając wkład kobiety-programistki w badania przestrzeni kosmicznej i zachęcając dziewczęta do podejmowania kariery związanej z programowaniem i STEM.'
+    ],
+    'description' => 'Zaprogramuj kosmiczny start w Scratch Jr inspirowany przez Margaret Hamilton! Zaprogramuj odliczanie, uruchom statek kosmiczny i przełamuj stereotypy płciowe, zachęcając dziewczyny do kodowania!',
+    'instructions' => [
+        'Wprowadzenie: Nauczyciel przedstawia misje kosmiczne i wysłanie człowieka na Księżyc oraz wprowadza Margaret Hamilton i jej wkład w planowanie Apollo. Po tym następuje dyskusja o tym, czym jest programowanie i jak możemy wydawać instrukcje Komputer.',
+        'Działalność programistyczna: Margaret Hamilton koduje i odlicza oraz statek kosmiczny wyrusza na Księżyc.',
+        'Otwórz aplikację Scratch Jr. i utwórz nowy projekt.',
+        'Usunięcie znaku.',
+        'Wybierz tło ze spacją (Step1 png).',
+        'Wybierz spośród postaci kobietę, statek kosmiczny i Ziemię (Krok 2 png).',
+        'Zmień rozmiar znaków, klikając tyle razy, ile trzeba na bloku "Zmniejsz" lub "Grow" (Krok 3 png).',
+        'Przesuń znaki w prawo (Krok 4 png).',
+        'Napisz programy, aby kobieta odliczała, a gdy zakończy swoje słowa, statek kosmiczny poleci w górę. Aby to osiągnąć, po naciśnięciu zielonej flagi kobieta powinna powiedzieć wybrane przez ciebie słowa, a następnie wysłać wiadomość. Statek kosmiczny powinien otrzymać wiadomość w tej samej kolorze, a odpowiednimi blokami ruchu statek kosmiczny powinien polecieć w górę. Możesz również sprawić, aby statek kosmiczny zmniejszał się w miarę oddalania. Do zaprogramowania statku kosmicznego możesz użyć prostych bloków lub pętli powtarzania. (Krok 5 png).',
+        'Uruchom skrypt, naciskając zieloną flagę.'
+    ],
+    'materials' => [
+        'Tablet lub PC (jeśli to możliwe, zachęcamy przede wszystkim do korzystania z tabletu) z zainstalowanym Scratch Jr. (https://www.scratchjr.org/ dla tabletów i https://jfo8000.github.io/ScratchJr-Desktop/ dla Windows lub Mac)',
+        'Wydrukowane zdjęcia Margaret Hamilton i misji Apollo 11 (opcjonalnie)',
+        'Karty do wydruku z poleceniami Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opcjonalnie)',
+        'Projektor (opcjonalnie)'
+    ],
+    'real-life-applications' => [
+        'Ta aktywność jest nie tylko wprowadzeniem do programowania, ale jest powiązana z wydarzeniami i zastosowaniami w nauce i technologii.',
+        'Margaret Hamilton opracowała oprogramowanie dla Apollo Guidance Computer, które umożliwiło bezpieczne lądowanie Apollo 11 w 1969 roku. Aktywność pomaga dzieciom zrozumieć, jak komputery potrzebują jasnych i poprawnych poleceń do wykonania misji - tak samo, jak NASA używała kodu, aby dotrzeć na Księżyc.',
+        'Programowanie blokowe, jak w Scratch Jr, jest pierwszym krokiem do zrozumienia bardziej złożonych języków programowania, które są obecnie używane w misjach kosmicznych, robotyce i sztucznej inteligencji. Te same zasady są wykorzystywane w rozwoju systemów autonomicznych, takich jak roboty eksplorujące Marsa (Curiosity, Perseverance).'
+    ],
+    'variations' => [
+        'Wariacje/Sugestie:',
+        'Jeśli uczniowie są nowi w aplikacji, można najpierw stworzyć projekty z wydrukowanymi blokami.',
+        'Dodaj więcej postaci, takich jak planety, gwiazdy czy komety.',
+        'W zależności od wieku i doświadczenia dzieci z aplikacją ScratchJr, można dodać dodatkowe wyzwania, takie jak zaprogramowanie statku kosmicznego do unikania przeszkód.',
+        'Uczniowie mogą także dodać inną stronę, na której statek kosmiczny ląduje na Księżycu.',
+        'Zamiast używać bloku "Powiedz", można użyć bloku "Odtwórz nagrany dźwięk", dzięki czemu głosy uczniów będą słyszalne.',
+        'Dodaj postacie astronautów, w których edytujesz twarze i dodajesz zdjęcia uczniów.'
+    ],
+    'duration' => '60 minuta',
+    'experience' => 'Intermediate - Zalecana jest podstawowa wiedza z zakresu kodowania; uczestnicy powinni znać podstawowe pojęcia programistyczne.',
+    'target-audience' => [
+        'Małe dzieci (w wieku 5-7 lat)'
+    ]
+],
     'chatbot' => [
         'title' => 'Tworzenie czatbota',
         'author' => 'Zespół Europejskiego Tygodnia Kodowania',
