@@ -1,16 +1,16 @@
 {
   "resources/assets/sass/app.scss": {
-    "file": "assets/app-tVW9kKGZ.css",
+    "file": "assets/app-vzCmrDYI.css",
     "src": "resources/assets/sass/app.scss",
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-B8Sr_tMK.css",
+    "file": "assets/app-BXGezakj.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-B7eKcN3f.js",
+    "file": "assets/app-BiRVKNPj.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -63,7 +63,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_bg.json": {
-    "file": "assets/php_bg-C12yvrwM.js",
+    "file": "assets/php_bg-BZWDPiQF.js",
     "name": "php_bg",
     "src": "resources/lang/php_bg.json",
     "isDynamicEntry": true
@@ -99,7 +99,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_es.json": {
-    "file": "assets/php_es-BVd_g9C9.js",
+    "file": "assets/php_es-BENYoZoZ.js",
     "name": "php_es",
     "src": "resources/lang/php_es.json",
     "isDynamicEntry": true

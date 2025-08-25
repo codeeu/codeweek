@@ -1,8 +1,534 @@
 <?php
 
 return [
-    // resources/lang/fr/challenges-content.php
+    'dance-with-ally' => [
+    'title' => 'Danser avec Ally',
+    'author' => 'Kristina Krtalić',
+    'purposes_title' => 'Objectif du défi',
+    'purposes' => [
+        'Apprendre à connecter un micro:bit à Scratch via Bluetooth.',
+        'Comprendre comment utiliser l’extension micro:bit dans Scratch.',
+        'Utiliser les boutons du micro:bit pour interagir avec des projets Scratch.',
+        'Créer des jeux interactifs avec le micro:bit.',
+        'Développer des compétences de résolution de problèmes et de pensée logique.',
+        'Stimuler la créativité grâce au codage.'
+    ],
+    'description_title' => 'Description du défi',
+    'description' => 'Créez un programme qui permet à un sprite dans Scratch de danser grâce au micro:bit.',
+    'educational_goals_title' => 'Objectifs pédagogiques',
+    'educational_goals' => [
+        'Programmation et logique : utiliser des blocs Scratch pour écrire des programmes pilotés par des événements répondant aux entrées du micro:bit ; comprendre boucles, conditions et variables ; contrôler des sorties numériques et physiques.',
+        'Pensée computationnelle : décomposer un problème, utiliser des données de capteurs (boutons, secousses) du micro:bit, concevoir et tester des algorithmes.',
+        'Débogage et résolution de problèmes : tester, repérer les erreurs et améliorer le code et l’interaction micro:bit en temps réel ; documenter les changements.',
+        'Créativité et design thinking : créer des animations, jeux ou histoires intégrant le micro:bit ; chorégraphier des mouvements ; suivre le processus empathiser-définir-prototyper-tester.',
+        'Collaboration et communication : travailler en binômes ou petits groupes, présenter les projets, expliquer les choix de conception et la logique du code.'
+    ],
+    'target_audience_title' => 'Public cible',
+    'target_audience' => [
+        'École primaire (6 à 12 ans)',
+        'Collège (12 à 16 ans)'
+    ],
+    'experience_title' => 'Expérience',
+    'experience' => 'Intermédiaire — des bases en programmation sont recommandées ; les participant·e·s doivent connaître les concepts fondamentaux.',
+    'duration_title' => 'Durée',
+    'duration' => '60 minutes',
+    'materials_title' => 'Matériel',
+    'materials' => [
+        'Ordinateur',
+        'Scratch (https://scratch.mit.edu/)',
+        'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
+        'Extension micro:bit pour Scratch (https://scratch.mit.edu/microbit)',
+        'micro:bit',
+        'Sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+    ],
+    'instructions_title' => 'Instructions',
+    'instructions' => [
+        'Ouvrez Scratch.',
+        'Créez un compte Scratch (si nécessaire).',
+        'Démarrez un nouveau projet, ajoutez un sprite et un arrière-plan ; fixez la position initiale du sprite au lancement.',
+        'Ajoutez les blocs de l’extension micro:bit.',
+        'Branchez le micro:bit et activez le Bluetooth sur l’ordinateur.',
+        'Installez et lancez Scratch Link ; téléchargez le fichier HEX du micro:bit et copiez-le sur l’appareil.',
+        'Dans l’extension micro:bit, cliquez sur le bouton orange et recherchez les appareils à proximité.',
+        'Sélectionnez l’appareil détecté pour vous connecter.',
+        'Créez un programme qui fait danser le sprite sur une musique choisie lorsque vous secouez le micro:bit (déplacements gauche/droite sur l’axe X).',
+        'Enrichissez le projet : ajoutez vos propres blocs, utilisez les boutons A/B du micro:bit pour contrôler le sprite, modifiez son apparence et ses mouvements.'
+    ],
+    'real-life-applications_title' => 'Applications concrètes',
+    'real-life-applications' => [
+        'Programmes interactifs de danse et de fitness : exploiter l’accéléromètre du micro:bit pour suivre les mouvements et créer des jeux ou des outils d’apprentissage de la danse.',
+        'Animations et jeux gestuels : contrôler des personnages Scratch par gestes ou inclinaisons ; créer des jeux simples pilotés par le mouvement.'
+    ],
+],
 
+'simulate-dice-in-python' => [
+    'title' => 'Simuler des lancers de dé en Python',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Objectif du défi',
+    'purposes' => [
+        'Initier les élèves à la génération de nombres aléatoires et aux boucles en Python.',
+        'Montrer comment simuler un lancer de dé et répéter une action plusieurs fois avec une boucle.',
+        'Poser les bases pour créer de petits jeux et des simulations.'
+    ],
+    'description_title' => 'Description du défi',
+    'description' => [
+        'La simulation d’un lancer de dé est un excellent moyen d’apprendre à manipuler les nombres aléatoires en Python.',
+        'Vous utiliserez le module random pour générer des nombres et simuler un lancer.',
+        'Vous comprendrez comment Python génère des nombres dans un intervalle donné.'
+    ],
+    'target_audience_title' => 'Public cible',
+    'target_audience' => 'Élèves du primaire et du secondaire, débutant·e·s en Python, toute personne découvrant les nombres aléatoires, les jeux ou la logique de base.',
+    'experience_title' => 'Expérience',
+    'experience' => 'Aucune expérience préalable requise. Une simple aisance avec le clavier et l’ordinateur suffit.',
+    'duration_title' => 'Durée',
+    'duration' => '30 à 45 minutes pour la version de base ; jusqu’à 60 minutes avec des variantes (deux dés, valeur la plus fréquente, etc.).',
+    'materials_title' => 'Matériel recommandé',
+    'materials' => [
+        'Python installé (https://www.python.org)',
+        'Python IDLE ou tout éditeur (p. ex. Visual Studio Code, PyCharm)'
+    ],
+    'instructions_title' => 'Instructions',
+    'instructions' => [
+        'Étape 1 : Préparer l’environnement',
+        'Installez Python si nécessaire, puis ouvrez IDLE ou votre éditeur.',
+        'Étape 2 : Écrire le programme',
+        'Créez un fichier nommé dice.py et saisissez le code suivant :',
+        '# Importer le module random pour les nombres aléatoires',
+        'import random',
+        '# Message d’accueil',
+        'print("Bienvenue dans la simulation de lancer de dé !")',
+        '# Demander le nombre de lancers',
+        'throw_num = int(input("Combien de fois veux-tu lancer le dé ? "))',
+        'for i in range(throw_num):',
+        '    result = random.randint(1, 6)  # Nombre aléatoire entre 1 et 6',
+        '    print(f"Lancer {i + 1} : {result}")',
+        'print("Merci d\'avoir joué !")',
+        'Étape 3 : Explications',
+        'random.randint(a, b) renvoie un entier aléatoire entre a et b, bornes incluses.',
+        'La saisie est convertie en entier avec int().',
+        'La boucle for répète la simulation autant de fois que demandé.',
+        'Étape 4 : Exécuter',
+        'Enregistrez dice.py, lancez le programme, entrez un nombre de lancers et observez les résultats.'
+    ],
+    'quiz_title' => 'Quiz :',
+    'quiz' => [
+        'Quel module Python permet de générer des nombres aléatoires ?',
+        'a) random', 'b) math', 'c) time',
+        'Que fait random.randint(1, 6) ?',
+        'a) Génère un nombre aléatoire entre 1 et 6',
+        'b) Affiche un nombre aléatoire à l’écran',
+        'c) Affiche un nombre entre 1 et 6',
+        'Comment convertir une saisie utilisateur en entier en Python ?',
+        'a) float()', 'b) int()', 'c) p()',
+        'Réponses : 1.a, 2.a, 3.b'
+    ],
+    'mini_simulation_title' => 'Mini-simulation :',
+    'mini_simulation' => [
+        'Faites évoluer le programme :',
+        'Ajoutez une option qui simule deux lancers et additionne les résultats.',
+        'Ajoutez une option qui affiche, à la fin, la valeur la plus souvent obtenue.'
+    ],
+    'additional_resources_title' => 'Ressources supplémentaires :',
+    'additional_resources' => [
+        'Documentation officielle Python — module random',
+        'Learn Python'
+    ]
+],
+
+    'gender-gap-gender-graph' => [
+    'title' => 'Écart de genre – graphique',
+    'author' => 'Theodora S. Tziampazi',
+    'purposes_title' => 'Objectif du défi',
+    'purposes' => [
+        'Comprendre comment la visualisation de données peut influencer la perception.',
+        'Identifier des biais dans des outils numériques par l’interaction.',
+        'Expérimenter des saisies de données pour observer des distorsions.',
+        'Modifier le code afin d’assurer une représentation fidèle des données.',
+        'Comparer des visualisations de données équitables et biaisées.',
+        'Réfléchir aux implications éthiques de la manipulation de données.',
+        'Discuter des conséquences réelles de statistiques biaisées.',
+        'Développer l’esprit critique sur l’IA et les biais algorithmiques.'
+    ],
+    'description_title' => 'Description du défi',
+    'description' => 'Explorez les biais dans la visualisation de données en saisissant des valeurs, en analysant des distorsions, en modifiant le code et en découvrant comment les outils numériques influencent notre perception de la représentation des genres dans la tech.',
+    'target_audience_title' => 'Public cible',
+    'target_audience' => [
+        'École primaire (6 à 12 ans)',
+        'Collège (12 à 16 ans)',
+        'Lycée (16 à 18 ans)',
+        'Enseignant·e·s et éducateur·trice·s'
+    ],
+    'experience_title' => 'Expérience',
+    'experience' => [
+        'Intermédiaire — Des notions de base en programmation sont recommandées ; les participant·e·s devraient connaître les concepts fondamentaux.',
+        'Avancé — Pensé pour des participant·e·s avec de solides compétences en code et une expérience préalable.'
+    ],
+    'duration_title' => 'Durée',
+    'duration' => '2 heures',
+    'materials_title' => 'Matériel recommandé',
+    'materials' => [
+        'Scratch 3 et la fiche d’activité (en anglais) : https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+    ],
+    'instructions_title' => 'Instructions',
+    'instructions' => [
+        'Vous êtes l’utilisatrice / l’utilisateur de cet outil numérique (créateur de barres) : https://scratch.mit.edu/projects/1147892829. Ne regardez pas encore le code.',
+        'Cliquez sur le drapeau vert et entrez des données (1–10) représentant hypothétiquement le nombre de femmes dans un secteur tech.',
+        'Essayez plusieurs valeurs.',
+        'Que remarquez-vous ?',
+        'Est-ce un bug ou un choix délibéré ?',
+        'Quoi qu’il en soit, comment corriger le problème ?',
+        'Manuellement (niveau utilisateur) :',
+        'Explorez l’outil et les sprites déplaçables.',
+        'Existe-t-il une position où le problème disparaît ?',
+        'Existe-t-il une position où un autre comportement inattendu apparaît ?',
+        'Pistes de discussion :',
+        'Que se passe-t-il si le nombre de femmes est sous-estimé ?',
+        'Et s’il est surestimé ?',
+        'Et si la valeur est correcte mais que le rapport entre les genres reste déséquilibré ?',
+        'Que faudrait-il faire ?',
+        'À retenir : la manière d’utiliser l’outil (placement d’un composant) influence le résultat.',
+        'Avec du code (niveau créateur) : il est temps d’ouvrir le projet.',
+        'Défi simple :',
+        'Modifiez le code pour que les données affichées soient toujours égales aux valeurs saisies.',
+        'Défi avancé :',
+        'Dupliquez le sprite du barreau et colorez-le en bleu (stéréotypiquement associé au masculin).',
+        'Modifiez sa position en y pour qu’il soit visible et comparable à la barre violette.',
+        'Créez un symbole masculin comme nouveau sprite.',
+        'Astuce : vous pouvez télécharger/exporter les deux sprites (barre, symbole) depuis le projet mentionné en solution à la fin de cette section.',
+        'Maintenant, hackez les scripts pour que, lorsque l’entrée utilisateur vaut x (désormais donnée deux fois, une par barre), les deux créateurs de barres couvrent les cas suivants :',
+        'Équitable (même code). Ajustez la position y du symbole masculin dans la condition if. Déboguez au fur et à mesure en testant les deux codes.',
+        'Inequitable à l’usage : placez les deux symboles à des positions différentes ; entrez la même valeur pour visualiser l’inégalité.',
+        'Orienté / biaisé (code différent) :',
+        'en faveur des hommes',
+        'en faveur des femmes',
+        'Expérimentez pour que le code atténue ou accentue l’écart de genre…',
+        'Explorez les deux sources de biais possibles (par le déplacement et/ou par le code).',
+        'Comment ces deux voies peuvent-elles se combiner ?',
+        'Une solution (même code) : https://scratch.mit.edu/projects/1151892036'
+    ],
+    'real-life-applications_title' => 'Exemples',
+    'real-life-applications' => [
+        'Rapports de diversité en entreprise — garantir une représentation fidèle des données de genre.',
+        'Graphiques dans les médias — éviter des visualisations trompeuses dans les sujets sur l’égalité.',
+        'IA et biais algorithmiques — identifier et réduire les biais dans des modèles traitant des données démographiques.',
+        'Outils de recrutement — assurer une représentation équitable dans l’analytique RH et les décisions.',
+        'Éducation STEM et sensibilisation — utiliser des données non biaisées pour encourager davantage de filles vers la tech.',
+        'Politiques publiques et plaidoyer — appuyer des décisions équitables avec des statistiques fiables sur l’écart de genre.',
+        'Réseaux sociaux et campagnes — produire des représentations visuelles justes pour favoriser le changement.'
+    ],
+],
+
+    'simulate-dice-in-python' => [
+    'title' => 'Simuler des lancers de dé en Python',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Objectif du défi',
+    'purposes' => [
+        'Initier les élèves à la génération de nombres aléatoires et aux boucles en Python.',
+        'En simulant un lancer de dé, comprendre comment l’ordinateur produit des résultats aléatoires et comment répéter des actions à l’aide d’une boucle.',
+        'Poser les bases pour créer de petits jeux et des simulations.'
+    ],
+    'description_title' => 'Description du défi',
+    'description' => [
+        'La simulation d’un lancer de dé est un excellent moyen d’apprendre à manipuler les nombres aléatoires en Python.',
+        'Dans cette leçon, nous utiliserons le module random pour générer des nombres aléatoires et simuler un lancer de dé.',
+        'Vous comprendrez comment Python peut générer des nombres dans un intervalle donné.'
+    ],
+    'target_audience_title' => 'Public cible',
+    'target_audience' => 'Élèves du primaire et du secondaire, débutant·e·s en Python, toute personne découvrant les nombres aléatoires, les jeux ou la logique de programmation de base.',
+    'experience_title' => 'Expérience',
+    'experience' => 'Aucune expérience préalable en programmation n’est requise. Une familiarité basique avec le clavier et l’ordinateur suffit.',
+    'duration_title' => 'Durée',
+    'duration' => '30 à 45 minutes pour la version de base. Jusqu’à 60 minutes si l’on explore des options avancées (deux dés, valeur la plus fréquente, etc.).',
+    'materials_title' => 'Outils recommandés',
+    'materials' => [
+        'Python installé sur l’ordinateur. Si nécessaire, téléchargez-le depuis le site officiel : https://www.python.org',
+        'IDLE Python ou tout éditeur de texte (p. ex. Visual Studio Code, PyCharm) pour écrire le code.'
+    ],
+    'instructions_title' => 'Instructions',
+    'instructions' => [
+        'Étape 1 : Préparer l’environnement',
+        'Assurez-vous que Python est installé sur votre ordinateur (sinon, téléchargez-le sur le site officiel).',
+        'Ouvrez IDLE Python ou un éditeur de texte pour écrire votre code.',
+        'Étape 2 : Écrire le programme',
+        'Ouvrez IDLE et créez un nouveau fichier nommé dice.py.',
+        'Saisissez le code suivant :',
+        '# Nous importons le module « random » pour générer des nombres aléatoires',
+        'import random',
+        '# Message d’accueil',
+        'print("Bienvenue dans la simulation de lancer de dé !")',
+        '# Demander combien de lancers effectuer',
+        'throw_num = int(input("Combien de fois voulez-vous lancer le dé ? "))',
+        'for i in range(throw_num):',
+        '    result = random.randint(1, 6)  # Génère un entier aléatoire entre 1 et 6',
+        '    print(f"Lancer {i + 1} : {result}")',
+        'print("Merci d\'avoir joué !")',
+        'Représentation visuelle du code dans IDLE :',
+        'Vérifiez que les indentations (retraits) sont identiques à l’exemple ci-dessus.',
+        'Étape 3 : Explication du code',
+        'Importer random : ce module permet de générer des nombres aléatoires.',
+        'random.randint(a, b) renvoie un entier aléatoire compris entre a et b, bornes incluses.',
+        'Saisie du nombre de lancers : le programme demande combien de fois lancer le dé et convertit l’entrée en entier avec int().',
+        'Simulation : une boucle for exécute autant de lancers que demandé.',
+        'Affichage : chaque résultat est imprimé ; un message de remerciement apparaît à la fin.',
+        'Étape 4 : Exécuter le programme',
+        'Enregistrez le fichier sous le nom dice.py.',
+        'Exécutez le programme dans IDLE.',
+        'Entrez le nombre de lancers souhaités (p. ex. 5) et observez les résultats.'
+    ],
+    'quiz_title' => 'Quiz :',
+    'quiz' => [
+        'Quel module Python permet de générer des nombres aléatoires ? a) random b) math c) time',
+        'Que fait random.randint(1, 6) ? a) Génère un nombre aléatoire entre 1 et 6 b) Affiche un nombre aléatoire à l’écran c) Affiche un nombre entre 1 et 6',
+        'Comment convertir l’entrée utilisateur en entier en Python ? a) float() b) int() c) p()',
+        'Réponses correctes : 1.a, 2.a, 3.b'
+    ],
+    'mini_simulation_title' => 'Mini-simulation :',
+    'mini_simulation' => [
+        'Modifiez le programme :',
+        'Ajoutez une option pour simuler deux lancers de dés et additionner leurs résultats.',
+        'Ajoutez une fonctionnalité qui affiche, à la fin, la valeur sortie le plus souvent.'
+    ],
+    'additional_resources_title' => 'Ressources complémentaires :',
+    'additional_resources' => [
+        'Documentation officielle de Python – module random',
+        'Learn Python'
+    ]
+],
+
+    'train-it-like-fei-fei-li' => [
+    'title' => 'Entraînez-le comme Fei-Fei Li – Donner une vision aux ordinateurs !',
+    'author' => 'Chouliara Theodora',
+    'purposes_title' => 'Objectif du défi',
+    'purposes' => [
+        'Apprendre les bases de l’apprentissage automatique et de la reconnaissance d’images.',
+        'Entraîner un ordinateur à distinguer différentes images (p. ex. chien vs chat, poupées vs ours en peluche).',
+        'Explorer comment l’IA et l’apprentissage automatique sont utilisés dans la vie réelle.',
+        'S’inspirer des contributions de Fei-Fei Li à l’IA et à la vision par ordinateur.',
+        'Encourager les filles à s’engager dans le codage et les carrières STEM.'
+    ],
+    'description_title' => 'Description du défi',
+    'description' => 'Entraînez un modèle d’IA comme Fei-Fei Li ! Utilisez Teachable Machine pour apprendre à un ordinateur à reconnaître des images et découvrez la puissance de l’apprentissage automatique tout en brisant les stéréotypes de genre dans la technologie.',
+    'target_audience_title' => 'Public cible',
+    'target_audience' => 'Élèves du primaire (6 à 12 ans)',
+    'experience_title' => 'Expérience',
+    'experience' => 'Débutant – aucune expérience de codage préalable requise ; convient aux grands débutants.',
+    'duration_title' => 'Durée',
+    'duration' => '60 minutes',
+    'materials_title' => 'Outil recommandé',
+    'materials' => [
+        'Teachable Machine (accessible via un navigateur web)',
+        'Ordinateur ou tablette avec appareil photo',
+        'Connexion Internet (pour l’entraînement du modèle d’IA)',
+        'Jouets et objets de classe (p. ex. poupées, ours en peluche) pour entraîner le modèle',
+        'Projecteur ou écran (facultatif, pour une démonstration en classe)'
+    ],
+    'instructions_title' => 'Instructions',
+    'instructions' => [
+        'Étape 1 : Introduction à l’apprentissage automatique et à Fei-Fei Li – expliquez que les ordinateurs peuvent apprendre à reconnaître des images en analysant des exemples ; présentez Fei-Fei Li et ImageNet.',
+        'Étape 2 : Configurer Teachable Machine – ouvrez https://teachablemachine.withgoogle.com/train, choisissez « Projet Images », puis « Modèle d’image standard ».',
+        'Étape 3 : Choisir des catégories – sélectionnez des catégories à reconnaître (poupées, ours en peluche, etc.).',
+        'Étape 4 : Collecter des images d’entraînement – Option 1 : utilisez de vrais objets devant la caméra ; Option 2 : trouvez des images en ligne et téléversez-les dans chaque catégorie.',
+        'Étape 5 : Entraîner le modèle – cliquez sur « Train Model » et attendez la fin de l’apprentissage.',
+        'Étape 6 : Tester le modèle – essayez avec de nouveaux objets qui n’étaient pas dans l’entraînement et observez la classification.',
+        'Étape 7 : Évaluer le modèle – discutez de la précision, des erreurs et des pistes d’amélioration ; que se passe-t-il avec plus d’images ?',
+        'Étape 8 : Enregistrer et partager – cliquez sur « Export Model » ou « Share ». Modèle d’exemple : https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+    ],
+    'examples_title' => 'Exemples',
+    'examples' => [
+        'IA dans le commerce de détail : caméras dotées d’IA pour reconnaître des produits et gérer les stocks ; caisses automatiques sans code-barres.',
+        'IA et technologies d’assistance : identifier des objets pour aider les personnes malvoyantes ; caméras intelligentes décrivant en temps réel ce qu’elles « voient ».'
+    ],
+],
+
+'create-your-own-website-with-html-and-css' => [
+    'title' => 'Créez votre propre site web avec HTML et CSS',
+    'author' => 'Marko Šolić',
+    'purposes_title' => 'Objectif du défi',
+    'purposes' => [
+        'Introduire les débutants au développement web.',
+        'Apprendre les bases de HTML et de CSS, fondamentales pour créer et styliser des pages web.',
+        'Mettre l’accent sur l’apprentissage par la pratique en construisant une page depuis zéro.',
+        'Acquérir des compétences essentielles en webdesign et gagner en confiance pour créer sa présence en ligne.',
+    ],
+    'description_title' => 'Description du défi',
+    'description' => [
+        'Les sites web sont la base de la présence en ligne. Dans cette activité, vous apprendrez à utiliser HTML pour structurer le contenu et CSS pour le mettre en forme, puis vous créerez votre première page web.',
+        'À travers des étapes simples et ludiques, vous réaliserez une page pouvant contenir du texte, des images, des couleurs et des liens.',
+    ],
+    'target_audience_title' => 'Public cible',
+    'target_audience' => [
+        'Débutants souhaitant apprendre à créer des sites web.',
+        'Personnes nouvelles dans le développement web, élèves/étudiants ou toute personne curieuse de comprendre comment sont construits les sites.',
+        'Aucune expérience préalable en programmation n’est requise.',
+    ],
+    'experience_title' => 'Expérience',
+    'experience' => [
+        'Niveau débutant : des notions de base en usage d’ordinateur (éditeur de texte) peuvent aider, mais ne sont pas indispensables.',
+        'Ce défi est une introduction à HTML et CSS.',
+    ],
+    'duration_title' => 'Durée',
+    'duration' => '1 à 2 heures, selon votre niveau et votre envie d’explorer au-delà des bases.',
+    'materials_title' => 'Outils recommandés :',
+    'materials' => [
+        'PC / Ordinateur portable',
+        'Éditeur de texte standard, tel que Notepad (Windows) ou TextEdit (Mac)',
+    ],
+    'instructions_title' => 'Instructions',
+    'instructions' => [
+        // Conseils pour enseignants
+        'Conseils pour les enseignants avant de commencer :',
+        '• Commencez par les bases : expliquez les concepts clés de HTML (structure d’une page) et de CSS (mise en forme).',
+        '• Présentez la structure : démontrez la relation entre balises ouvrantes/fermantes, attributs et imbrication.',
+        '• Évitez les erreurs courantes : balises non fermées ou accolades mal placées en CSS ; rappelez de vérifier la syntaxe.',
+        '• Apprentissage interactif : encouragez les essais en modifiant texte et styles et en actualisant le navigateur.',
+        '• Encouragez la créativité : il n’existe pas une unique « bonne » manière de concevoir un site.',
+        'Erreurs courantes à surveiller :',
+        '• Oublier de lier le fichier CSS au fichier HTML.',
+        '• Imbrication incorrecte des balises HTML.',
+        '• Fautes de frappe dans les propriétés CSS (ex. : colour au lieu de color).',
+        '• Structure inutilement complexe — un site simple peut paraître très professionnel avec peu de code. ',
+        // Étapes
+        'Étape 1 : Préparer l’environnement',
+        'Un simple éditeur de texte suffit (Notepad ou TextEdit). Un site complet peut être réalisé ainsi. Exemple : Association croate d’informatique : hsin.hr',
+        'Étape 2 : Structure de base d’un document HTML',
+        'Ouvrez un nouveau fichier et enregistrez-le en tant que index.html.',
+        'Selon votre système, activez l’option pour modifier les extensions (index.txt → index.html).',
+        'Saisissez la structure minimale :',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '    <meta charset="UTF-8">',
+        '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '    <title>My first website</title>',
+        '</head>',
+        '<body>',
+        '    <h1>Welcome to my website!</h1>',
+        '    <p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Étape 3 : Ajouter des styles avec CSS',
+        'Créez un fichier style.css dans le même dossier et ajoutez :',
+        'body {',
+        '  background-color: #f0f8ff; /* Fond bleu clair */',
+        '  color: #333; /* Texte gris foncé */',
+        '  font-family: Arial, sans-serif; /* Police du texte */',
+        '  text-align: center; /* Centrer le texte */',
+        '}',
+        'h1 {',
+        '  color: #4CAF50; /* Titre en vert */',
+        '}',
+        'p {',
+        '  font-size: 18px; /* Taille du texte du paragraphe */',
+        '  color: #555; /* Texte gris-bleu pour le paragraphe */',
+        '}',
+        'Étape 4 : Lier HTML et CSS',
+        'Dans la section <head> de votre HTML, ajoutez :',
+        '<link rel="stylesheet" href="style.css">',
+        'Étape 5 : Lancer votre page',
+        'Enregistrez index.html et style.css, puis ouvrez index.html dans votre navigateur.',
+        // Accessibilité
+        'Rendre votre site accessible :',
+        '• Contraste : assurez un bon contraste entre fond et texte (par ex. fond clair / texte foncé).',
+        '• Texte alternatif (images) : ajoutez un alt décrivant l’image, utile pour les lecteurs d’écran.',
+        '• HTML sémantique : utilisez les bonnes balises (ex. <h1> pour le titre, <p> pour les paragraphes).',
+        '• Lisibilité : préférez une police sans empattement (ex. Arial) et augmentez la taille si besoin.',
+    ],
+    'mini_simulation_title' => 'Mini-simulation :',
+    'mini_simulation' => [
+        'Testez vos connaissances',
+        'Qu’est-ce que HTML ? a) Langage pour créer des images b) Langage de structuration du contenu c) Éditeur d’images',
+        'Qu’est-ce que le CSS ? a) Langage pour bases de données en ligne b) Langage de style et de mise en page c) Gestionnaire de fichiers',
+        'Comment relier CSS et HTML ? a) Balise <link> dans le HTML b) Balises <style> dans le HTML c) Impossible',
+        'Réponses correctes : 1.b, 2.b, 3.a',
+        'Personnalisez votre page :',
+        '• Changez la couleur de fond.',
+        '• Ajoutez un nouveau titre (h2) sous le titre principal.',
+        '• Ajoutez un lien vers un autre site (ex. Google).',
+        '• Après chaque modification, actualisez la page !',
+    ],
+    'additional_resources_title' => 'Ressources supplémentaires :',
+    'additional_resources' => [
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    ],
+],
+
+'coding-for-the-ocean' => [
+    'title' => 'Coder pour l\'océan – Construisez votre robot d\'IA pour sauver la mer',
+    'author' => 'Teresa Silvestri',
+
+    'purposes_title' => 'Objet du défi',
+    'purposes' => [
+        'La capacité d\'utiliser l\'intelligence artificielle pour résoudre des problèmes environnementaux.',
+        'Compétences en codage pour créer et programmer un robot d\'IA.',
+        'Connaissance des changements climatiques et de l\'importance de protéger le milieu marin.',
+        'Capacité de résoudre des problèmes dans le contexte de la science et de la technologie.',
+        'Développement de la pensée logique appliquée aux défis du monde réel.',
+        'Créativité dans la conception d\'un robot capable de répondre aux menaces environnementales.',
+        'Expérience pratique en utilisant des plateformes de codage comme Code.org.',
+        'Travail d\'équipe et collaboration en partageant des bots et en rivalisant avec des camarades de classe.',
+    ],
+
+    'description' => 'Créez et entraînez un bot d\'IA pour protéger la mer ! Apprenez à coder, à résoudre des problèmes environnementaux et à développer une pensée logique pour protéger l\'environnement marin.',
+
+    'educational_goals_title' => 'Objectifs éducatifs',
+    'educational_goals' => [
+        'Développer des compétences de base en programmation et en intelligence artificielle',
+        'Promouvoir la sensibilisation à l\'environnement et l\'importance de la protection de l\'environnement',
+        'Encourager la créativité et l\'imagination par le récit',
+        'Développer des compétences en résolution de problèmes et en pensée critique',
+    ],
+
+    'target_audience_title' => 'Public cible',
+    'target-audience' => [
+        'Élèves de l\'école primaire (6 à 12 ans)',
+    ],
+
+    'experience_title' => 'Expérience',
+    'experience' => 'Débutant – aucune expérience préalable en codage requise ; convient aux grands débutants.',
+
+    'duration_title' => 'Durée',
+    'duration' => '45 minutes – 1 heure',
+
+    'materials_title' => 'Outil recommandé',
+    'materials' => [
+        'Logiciel : Accès à Code.org',
+        'Matériel : Ordinateur ou tablette avec une connexion Internet.',
+        'Outils en ligne : Navigateur Web pour naviguer sur Code.org ou des plateformes similaires.',
+        'Matériel support : Tutoriels et ressources éducatives fournis par la plateforme.',
+        'Autres outils : Périphériques audio ou vidéo (facultatif) pour suivre le tutoriel.',
+    ],
+
+    'instructions_title' => 'Instructions',
+    'instructions' => [
+        'Accéder à Code.org',
+        'Ouvrez votre navigateur Web et rendez-vous sur Code.org. Si vous n\'avez pas de compte, créez-en un ou connectez-vous avec un compte existant.',
+        'Démarrer un nouveau projet',
+        'Sur l\'écran principal, sélectionnez le cours ou le tutoriel relatif à la protection des océans. Cliquez sur « Démarrer » pour lancer votre projet.',
+        'Suivre le didacticiel étape par étape',
+        'Code.org vous guide via un tutoriel interactif : lisez chaque instruction et complétez chaque étape afin d\'apprendre à programmer votre robot d\'IA.',
+        'Programmer votre bot',
+        'Utilisez les blocs de codage visuel pour apprendre à votre bot à réagir à des situations environnementales (collecte de plastique, évitement d\'obstacles). Modifiez les blocs selon les situations et testez le comportement du bot.',
+        'Tester votre bot',
+        'Après avoir écrit le code, testez votre bot. S\'il ne fonctionne pas comme prévu, modifiez-le puis testez à nouveau jusqu\'à ce qu\'il soit efficace.',
+        'Partager votre bot avec la classe',
+        'Une fois votre bot prêt, copiez le lien du projet et partagez-le avec vos camarades. Participez à la compétition pour voir quel bot protège le mieux la mer.',
+        'Revoir et améliorer',
+        'Relisez votre code et cherchez des façons de l\'améliorer. Ajoutez des fonctionnalités pour relever de nouveaux défis environnementaux.',
+    ],
+
+    'real-life-applications_title' => 'Applications réelles',
+    'real-life-applications' => [
+        'Intelligence artificielle dans la protection des océans : des entreprises et des organisations comme The Ocean Cleanup utilisent des systèmes alimentés par l\'IA pour collecter le plastique des océans et lutter contre la pollution marine.',
+        'IA pour la surveillance environnementale : des robots d\'IA surveillent les conditions océaniques, suivent la faune marine et détectent la pollution, améliorant l\'efficacité des efforts de protection de l\'environnement.',
+    ],
+
+    'variations_title' => 'Variantes du défi',
+    'variations' => [
+        'Élargir le défi à d\'autres environnements : impliquer des robots d\'IA protégeant d\'autres écosystèmes (forêts, rivières, zones urbaines).',
+        'Les robots devront relever des défis tels que la déforestation ou la pollution de l\'air.',
+    ],
+],
 'code-it-like-margaret-hamilton' => [
     'title' => 'Code comme Margaret Hamilton!',
     'author' => 'Chouliara Theodora',
