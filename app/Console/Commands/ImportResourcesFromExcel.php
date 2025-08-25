@@ -15,7 +15,7 @@ class ImportResourcesFromExcel extends Command
      *
      * @var string
      */
-    protected $signature = 'resources:import {file : Path to the Excel file}';
+    protected $signature = 'resources:import {file : Path to the Excel file} {--focus : Focus create related attributes}';
 
     /**
      * The console command description.
@@ -29,6 +29,7 @@ class ImportResourcesFromExcel extends Command
      */
     public function handle()
     {
+        $focus = $this->option('focus');
         $filePath = $this->argument('file');
         $excelPath = realpath($filePath);
 
@@ -39,13 +40,14 @@ class ImportResourcesFromExcel extends Command
 
         $excelDir = dirname($excelPath);
         $imagesDir = $excelDir . DIRECTORY_SEPARATOR . 'images';
+        $pdfsDir = $excelDir . DIRECTORY_SEPARATOR . 'links';
 
         if (!is_dir($imagesDir)) {
             $this->warn("Warning: Images folder not found at $imagesDir. Continuing without images.");
         }
 
         try {
-            Excel::import(new ResourcesImport($imagesDir), $filePath);
+            Excel::import(new ResourcesImport($imagesDir, $pdfsDir, $focus), $filePath);
 
             $this->info('Import completed successfully.');
             return 0;

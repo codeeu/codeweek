@@ -22,10 +22,10 @@
 
 @section('content')
     <section id="challenge-detail-page" class="font-['Blinker'] overflow-hidden">
-        <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-orange-gradient pt-32 pb-0 md:py-32">
-                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                    <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+        <section class="flex overflow-hidden relative">
+            <div class="flex relative pt-32 pb-0 w-full transition-all bg-orange-gradient md:py-32">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
+                    <div class="flex flex-col gap-28 duration-1000 codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 @lang("challenges-content.$slug.title")
@@ -34,9 +34,9 @@
                                 @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">
-                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />
+                        <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
+                            <button class="flex justify-center items-center w-20 h-20 rounded-full duration-300 bg-yellow hover:bg-primary">
+                                <img class="ml-2 duration-300" src="/images/fi_play.svg" />
                             </button>
                         </div>
                         <img
@@ -58,88 +58,88 @@
 
         <section class="relative bg-yellow-50">
             <div class="relative py-10 md:py-20 codeweek-container-lg">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-16">
+                <div class="grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-16">
                     <div id="challenge-left-col" class="flex flex-col gap-6">
-                        <div class="bg-white p-6 rounded-lg flex lg:flex-col 2xl:flex-row flex-wrap gap-4 2xl:gap-8">
+                        <div class="flex flex-wrap gap-4 p-6 bg-white rounded-lg lg:flex-col 2xl:flex-row 2xl:gap-8">
                             <div>
-                                <p class="font-normal text-2xl p-0 mb-4">@lang('challenges.common.duration')</p>
-                                <div class="w-fit px-4 py-1.5 bg-light-blue-100 rounded-full flex items-center gap-2">
+                                <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges.common.duration')</p>
+                                <div class="flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full w-fit">
                                     <img src="{{asset('img/2021/challenges/icons/fi_clock.svg')}}" />
-                                    <p class="text-slate-500 p-0 text-default font-semibold">@lang('challenges.common.1-hour')</p>
+                                    <p class="p-0 font-semibold text-slate-500 text-default">@lang('challenges.common.1-hour')</p>
                                 </div>
                             </div>
                             <div>
-                                <p class="font-normal text-2xl p-0 mb-4">@lang('challenges.common.experience')</p>
-                                <div class="w-fit px-4 py-1.5 bg-light-blue-100 rounded-full flex items-center gap-2">
+                                <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges.common.experience')</p>
+                                <div class="flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full w-fit">
                                     <img src="{{asset('img/2021/challenges/icons/fi_lightbulb.svg')}}" />
-                                    <p class="text-slate-500 p-0 text-default font-semibold">@lang('challenges.common.intermediate')</p>
+                                    <p class="p-0 font-semibold text-slate-500 text-default">@lang('challenges.common.intermediate')</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white p-6 rounded-lg">
-                            <p class="font-normal text-2xl p-0 mb-4">@lang('challenges.common.target-audience')</p>
-                            <ol class="list-decimal ml-4">
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang('challenges-content.common.audience.0')</li>
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang('challenges-content.common.audience.1')</li>
+                        <div class="p-6 bg-white rounded-lg">
+                            <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges.common.target-audience')</p>
+                            <ol class="ml-4 list-decimal">
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang('challenges-content.common.audience.0')</li>
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang('challenges-content.common.audience.1')</li>
                             </ol>
                         </div>
-                        <div class="bg-white p-6 rounded-lg">
-                            <p class="font-normal text-2xl p-0 mb-4">@lang('challenges.common.purpose')</p>
-                            <ol class="list-decimal ml-4">
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang("challenges-content.$slug.purposes.0")</li>
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang("challenges-content.$slug.purposes.1")</li>
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang("challenges-content.$slug.purposes.2")</li>
+                        <div class="p-6 bg-white rounded-lg">
+                            <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges.common.purpose')</p>
+                            <ol class="ml-4 list-decimal">
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang("challenges-content.$slug.purposes.0")</li>
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang("challenges-content.$slug.purposes.1")</li>
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang("challenges-content.$slug.purposes.2")</li>
                             </ol>
                         </div>
-                        <div class="bg-white p-6 rounded-lg">
-                            <p class="font-normal text-2xl p-0 mb-4">@lang('challenges.common.materials')</p>
-                            <ol class="list-decimal ml-4">
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang("challenges-content.$slug.materials.0")</li>
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang("challenges-content.$slug.materials.1")</li>
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang("challenges-content.$slug.materials.2")</li>
-                                <li class="text-slate-500 p-0 text-default font-normal leading-7">@lang("challenges-content.$slug.materials.3")</li>
+                        <div class="p-6 bg-white rounded-lg">
+                            <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges.common.materials')</p>
+                            <ol class="ml-4 list-decimal">
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang("challenges-content.$slug.materials.0")</li>
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang("challenges-content.$slug.materials.1")</li>
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang("challenges-content.$slug.materials.2")</li>
+                                <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang("challenges-content.$slug.materials.3")</li>
                             </ol>
                         </div>
                     </div>
                     <div class="col-span-2">
-                        <div class=" bg-white px-6 py-8 lg:p-16 rounded-lg">
+                        <div class="px-6 py-8 bg-white rounded-lg lg:p-16">
                             <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">@lang("challenges-content.$slug.title")</p>
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <div class="px-4 py-1.5 bg-light-blue-100 rounded-full flex items-center gap-2">
+                                <div class="flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full">
                                     <img src="{{asset('img/2021/challenges/icons/fi_users.svg')}}" />
-                                    <p class="text-slate-500 p-0 text-default font-semibold">@lang('challenges-content.common.audience.0')</p>
+                                    <p class="p-0 font-semibold text-slate-500 text-default">@lang('challenges-content.common.audience.0')</p>
                                 </div>
-                                <div class="px-4 py-1.5 bg-light-blue-100 rounded-full flex items-center gap-2">
+                                <div class="flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full">
                                     <img src="{{asset('img/2021/challenges/icons/fi_users.svg')}}" />
-                                    <p class="text-slate-500 p-0 text-default font-semibold">@lang('challenges-content.common.audience.1')</p>
+                                    <p class="p-0 font-semibold text-slate-500 text-default">@lang('challenges-content.common.audience.1')</p>
                                 </div>
                             </div>
                             <div class="mb-6">
-                                <p class="font-semibold text-2xl p-0 mb-2">@lang('challenges.common.description')</p>
+                                <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges.common.description')</p>
                                 <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">@lang("challenges-content.$slug.description")</p>
                             </div>
                             <div class="mb-6">
-                                <p class="font-semibold text-2xl p-0 mb-2">@lang('challenges.common.instructions')</p>
+                                <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges.common.instructions')</p>
                                 <ol class="list-disc ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
-                                    <li class="font-normal text-default md:text-xl p-0 text-slate-500">@lang("challenges-content.$slug.instructions.0")</li>
-                                    <li class="font-normal text-default md:text-xl p-0 text-slate-500">@lang("challenges-content.$slug.instructions.1")</li>
-                                    <li class="font-normal text-default md:text-xl p-0 text-slate-500">@lang("challenges-content.$slug.instructions.2")</li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.0")</li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.1")</li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.2")</li>
                                     <img class="w-full" src="{{asset('img/2021/challenges/air-drawing-with-AI-1.png')}}"/>
-                                    <li class="font-normal text-default md:text-xl p-0 text-slate-500">@lang("challenges-content.$slug.instructions.3")</li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.3")</li>
                                     <img class="w-full"
                                          src="{{asset('img/2021/challenges/air-drawing-with-AI-2.png')}}"/>
-                                    <li class="font-normal text-default md:text-xl p-0 text-slate-500">@lang("challenges-content.$slug.instructions.4")</li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.4")</li>
                                     <img class="w-full"
                                          src="{{asset('img/2021/challenges/air-drawing-with-AI-3.png')}}"/>
-                                    <li class="font-normal text-default md:text-xl p-0 text-slate-500">@lang("challenges-content.$slug.instructions.5")</li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.5")</li>
                                     <img class="w-full"
                                          src="{{asset('img/2021/challenges/air-drawing-with-AI-4.png')}}"/>
-                                    <li class="font-normal text-default md:text-xl p-0 text-slate-500">@lang("challenges-content.$slug.instructions.6")</li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.6")</li>
                                 </ol>
                             </div>
                             @include('2021.challenges._share')
                             <div class="mb-6">
-                                <p class="font-semibold text-2xl p-0 mb-2">@lang('challenges.common.example')</p>
+                                <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges.common.example')</p>
                                 <div>
                                     <img width="700px"
                                          src="{{asset('img/2021/challenges/air-drawing-with-AI-5.png')}}"/>

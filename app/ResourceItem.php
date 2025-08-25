@@ -67,6 +67,22 @@ class ResourceItem extends Model
         'teach' => false,
     ];
 
+    protected $fillable = [
+        'name',
+        'source',
+        'description',
+        'thumbnail',
+        'learn',
+        'teach',
+        'active',
+        'weight',
+        'groups',
+    ];
+
+    protected $casts = [
+        'groups' => 'array',
+    ];
+
     protected $appends = ['thumbnail'];
 
     public function scopeFilter($query, ResourceFilters $filters)
@@ -84,7 +100,12 @@ class ResourceItem extends Model
             return $value;
         }
 
-        return config('codeweek.resources_url') . ltrim($value, '/');
+        if ($value) {
+            return config('codeweek.resources_url') . ltrim($value, '/');
+        }
+        else {
+            return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
+        }
     }
 
     public function levels(): BelongsToMany
