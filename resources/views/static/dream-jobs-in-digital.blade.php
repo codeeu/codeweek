@@ -128,36 +128,22 @@
     $result = collect($roles);
     $sortedResults = $result->sortBy('first_name');
 
-    $resources = [
-        (object) [
-            'title' =>  __('dream-jobs-in-digital.resource_title_1'),
-            'description' =>  __('dream-jobs-in-digital.resource_description_1'),
-            'button_text' =>  __('dream-jobs-in-digital.resource_button_1'),
-            'button_link' => '/docs/dream-jobs/C4E WP4 Careers in Digital Guide Toolkit.pdf',
-            'image' => '/images/dream-jobs/career-guide.png',
-        ],
-        (object) [
-            'title' =>  __('dream-jobs-in-digital.resource_title_2'),
-            'description' =>  __('dream-jobs-in-digital.resource_description_2'),
-            'button_text' =>  __('dream-jobs-in-digital.resource_button_2'),
-            'button_link' => '/docs/dream-jobs/C4E WP4 Career Day Toolkit.pdf',
-            'image' => '/images/dream-jobs/inspiration-day.png',
-        ],
-        (object) [
-            'title' =>  __('dream-jobs-in-digital.resource_title_3'),
-            'description' =>  __('dream-jobs-in-digital.resource_description_3'),
-            'button_text' =>  __('dream-jobs-in-digital.resource_button_3'),
-            'button_link' => '/docs/dream-jobs/Practical Skills – VET Toolkit.pdf',
-            'image' => '/images/dream-jobs/vet-activities.png',
-        ],
-        (object) [
-            'title' =>  __('dream-jobs-in-digital.resource_title_4'),
-            'description' =>  __('dream-jobs-in-digital.resource_description_4'),
-            'button_text' =>  __('dream-jobs-in-digital.resource_button_4'),
-            'button_link' => 'https://www.techskills.org/careers/quiz/',
-            'image' => '/images/dream-jobs/skills-test.png',
-        ],
-    ];
+    $resources = \App\ResourceItem::query()
+        ->whereJsonContains('groups', 'Careers in Digital')
+        ->whereHas('languages', function ($query) {
+            $query->where('code', App::getLocale());
+        })
+        ->orderByDesc('weight')
+        ->get()
+        ->map(function ($item) {
+            return (object) [
+                'title' => $item->name,
+                'description' => $item->description,
+                'button_text' => __('dream-jobs-in-digital.resource_button_1'),
+                'button_link' => $item->source,
+                'image' => $item->thumbnail,
+            ];
+        });
 @endphp
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
@@ -306,7 +292,7 @@
                                         {{ $resource->title }}
                                     </p>
                                     <p class="text-[#333E48] font-normal text-lg md:text-xl leading-[30px] font-['Blinker'] p-0 mb-6 md:mb-10">
-                                        {{ $resource->description }}
+                                        {{ \Illuminate\Support\Str::words(strip_tags($resource->description), 30, '...') }}
                                     </p>
                                 </div>
                                 <a
