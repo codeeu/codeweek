@@ -21,11 +21,29 @@
       </template>
     </FieldWrapper>
 
-    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.address.label')} ${['open-online', 'invite-online'].includes(formValues.activity_type)
-        ? '(optional)'
-        : '*'
-      }`" name="location" :errors="errors">
-      <autocomplete-geo class="custom-geo-input" name="location" :placeholder="$t('event.address.placeholder')" :location="formValues.location" :value="formValues.location" :geoposition="formValues.geoposition" @onChange="handleLocationChange"></autocomplete-geo>
+    <FieldWrapper
+      horizontalBreakpoint="md"
+      :label="`${$t('event.address.label')} ${['open-online','invite-online'].includes(formValues.activity_type) ? '(optional)' : '*'}`"
+      name="location"
+      :errors="errors"
+    >
+      <autocomplete-geo
+        class="custom-geo-input"
+        name="location"
+        :placeholder="$t('event.address.placeholder')"
+        :location="formValues.location"
+        :value="formValues.location"
+        :geoposition="formValues.geoposition"
+        @onChange="handleLocationChange"
+        @input="handleLocationTyping"
+        @clear="handleLocationClear"
+      ></autocomplete-geo>
+
+      <template #end>
+        <div v-if="showSelectHint" class="text-sm text-slate-500 mt-2">
+          {{ $t('event.please-select-address-from-dropdown') }}
+        </div>
+      </template>
     </FieldWrapper>
 
     <FieldWrapper horizontalBreakpoint="md" :label="$t('event.activity-duration')" name="duration" :errors="errors">
@@ -79,7 +97,7 @@
 </template>
 
 <script>
-import { onMounted } from 'vue';
+import { computed } from 'vue';
 
 import { useDataOptions } from './mixins.js';
 
@@ -104,7 +122,7 @@ export default {
     RadioField,
     TinymceField,
   },
-  setup(props, { emit }) {
+  setup(props) {
     const {
       activityFormatOptions,
       activityTypeOptions,
@@ -112,13 +130,30 @@ export default {
       recurringTypeOptions,
     } = useDataOptions();
 
+    const showSelectHint = computed(() => {
+      const isOnline = ['open-online','invite-online'].includes(props.formValues.activity_type);
+      return !isOnline && props.formValues.locationDirty === true && props.formValues.locationSelected === false;
+    });
+    
+    const handleLocationTyping = (_text) => {
+      // Typing = need update location
+      props.formValues.location = '';
+      props.formValues.locationDirty = true;
+      props.formValues.locationSelected = false;
+    };
+    
+    const handleLocationClear = () => {
+      props.formValues.location = '';
+      props.formValues.locationDirty = true;
+      props.formValues.locationSelected = false;
+    };
+    
     const handleLocationChange = ({ location, geoposition, country_iso }) => {
-      props.formValues.location = location;
+      props.formValues.location = location || '';
       props.formValues.geoposition = geoposition;
-      const foundCountry = props.countries.find(
-        ({ iso }) => iso === country_iso
-      );
-      props.formValues.country_iso = foundCountry;
+      props.formValues.country_iso = country_iso;
+      props.formValues.locationSelected = true;
+      props.formValues.locationDirty = true;
     };
 
     return {
@@ -126,6 +161,11 @@ export default {
       activityTypeOptions,
       durationOptions,
       recurringTypeOptions,
+
+      // UX hint
+      showSelectHint,
+      handleLocationTyping,
+      handleLocationClear,
       handleLocationChange,
     };
   },
