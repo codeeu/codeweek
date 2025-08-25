@@ -76,7 +76,6 @@
                 </div>
             </div>
         </section>
-
         <section class="relative bg-yellow-50">
             <div class="relative py-10 md:py-20 codeweek-container-lg">
                 <div class="grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-16">
@@ -403,8 +402,9 @@
                                         <figure class="my-4">
                                             <img width="100%"
                                                 src="/images/challenges/create-your-own-website-with-html-and-css/2.jpg">
+                                                                    </figure>
                                 </div>
-                                </figure>
+        
                                 @endif
                             </div>
 
@@ -502,11 +502,15 @@
 
 
                         @include('2021.challenges._share')
+                        @include('2021.challenges._download', [
+                                'url' => "https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2025/$slug-$locale.docx",
+                            ])
                     </div>
                 </div>
             </div>
             </div>
         </section>
+
         <script>
             (function() {
                 const SCOPE_SELECTOR = "#challenge-detail-page"; // change to "body" if you want site-wide
