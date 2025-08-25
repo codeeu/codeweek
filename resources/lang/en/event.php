@@ -380,4 +380,5 @@ return [
     'add-another-activity' => 'Add another Activity',
     'back-to-map-page' => 'Back to map page',
     'image-attached' => 'Image Attached',
+    'please-select-address-from-dropdown' => 'Please select an address from the dropdown',
 ];
