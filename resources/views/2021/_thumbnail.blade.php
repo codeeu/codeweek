@@ -16,7 +16,7 @@
             {{__('challenges-content.'.$slug.'.title')}}
         </div>
         <p class="text-slate-500 text-default p-0 font-bold font-['Blinker']">
-            {{$author}}
+            {{ strip_tags($author) }}
         </p>
     </div>
 </div>
