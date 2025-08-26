@@ -2233,44 +2233,84 @@ var SEMICOLON = SEMICOLON || {};
 
             // AUTO STICKY CHALLENGE LEFT COLUMN
             const handleChallengeLeftColSticky = () => {
-              const startPositionY = 150;
-
-              const leftCol = document.getElementById('challenge-left-col');
-              if (!leftCol) return;
-
-              // Add new wrapper for Left Column
-              const parent = leftCol.parentNode.closest('div');
-              const leftColWrapper = document.createElement('div');
-              leftColWrapper.append(leftCol);
-              parent.insertBefore(leftColWrapper, parent.firstChild);
-
-              const handleStickLeftColumn = () => {
-                // reset all computed css
-                leftColWrapper.style.paddingTop = '';
-                leftCol.style.height = '';
-                leftCol.style.overflow = '';
-
-                if (window.innerWidth < 1024) return;
-
-                // make left Column fit with screen
-                leftCol.style.maxHeight = `calc(100dvh - ${startPositionY + 20}px)`;
-                leftCol.style.overflow = 'auto';
-
-                // compute padding top for wrapper
-                const wrapperTop = leftColWrapper.getBoundingClientRect().top;
-                const maxPaddingTop = Math.max(parent.clientHeight - leftCol.clientHeight, 0);
-
-                let paddingTop = Math.abs(Math.min(wrapperTop - startPositionY, 0));
-                paddingTop = Math.min(paddingTop, maxPaddingTop);
-
-                leftColWrapper.style.paddingTop = `${paddingTop}px`;
-              }
-
-              handleStickLeftColumn();
-              document.addEventListener('scroll', handleStickLeftColumn);
-              window.addEventListener('resize', handleStickLeftColumn);
-            };
-            handleChallengeLeftColSticky();
+							const startPositionY = 150;
+							const minWidth = 1024;
+							const guard = 16;
+					
+							const leftCol = document.getElementById('challenge-left-col');
+							if (!leftCol) return;
+					
+							const parent = leftCol.parentNode.closest('div') || leftCol.parentElement;
+							if (!parent) return;
+					
+							let leftColWrapper = document.createElement('div');
+							leftColWrapper.append(leftCol);
+							parent.insertBefore(leftColWrapper, parent.firstChild);
+					
+							const footer = document.getElementById('page-footer') || document.querySelector('footer');
+					
+							let ticking = false;
+							const apply = () => {
+								ticking = false;
+					
+								leftColWrapper.style.paddingTop = '';
+								leftCol.style.height = '';
+								leftCol.style.overflow = '';
+								leftCol.style.maxHeight = '';
+					
+								if (window.innerWidth < minWidth) return;
+					
+								leftCol.style.maxHeight = `calc(100dvh - ${startPositionY + 20}px)`;
+								leftCol.style.overflow = 'auto';
+					
+								const wrapperRect = leftColWrapper.getBoundingClientRect();
+								const parentRect = parent.getBoundingClientRect();
+					
+								const wrapperTopDoc = wrapperRect.top + window.scrollY;
+								const parentHeight = parent.clientHeight;
+								const leftColHeight = leftCol.clientHeight;
+					
+								if (parentHeight <= leftColHeight + 8) {
+									leftColWrapper.style.paddingTop = '0px';
+									leftCol.style.maxHeight = '';
+									leftCol.style.overflow = '';
+									return;
+								}
+					
+								let paddingTop = Math.max(window.scrollY + startPositionY - wrapperTopDoc, 0);
+								const maxPaddingByParent = Math.max(parentHeight - leftColHeight, 0);
+								paddingTop = Math.min(paddingTop, maxPaddingByParent);
+					
+								if (footer) {
+									const footerTopDoc = footer.getBoundingClientRect().top + window.scrollY;
+									const leftColBottomDoc = wrapperTopDoc + paddingTop + leftColHeight;
+									const limit = footerTopDoc - guard;
+									if (leftColBottomDoc > limit) {
+										paddingTop = Math.max(paddingTop - (leftColBottomDoc - limit), 0);
+									}
+								}
+					
+								leftColWrapper.style.paddingTop = `${Math.round(paddingTop)}px`;
+							};
+					
+							const onScrollResize = () => {
+								if (!ticking) {
+									window.requestAnimationFrame(apply);
+									ticking = true;
+								}
+							};
+					
+							apply();
+							document.addEventListener('scroll', onScrollResize, { passive: true });
+							window.addEventListener('resize', onScrollResize);
+					
+							const ro = new ResizeObserver(onScrollResize);
+							ro.observe(leftCol);
+							ro.observe(parent);
+							if (footer) ro.observe(footer);
+						};
+					
+						handleChallengeLeftColSticky();
 
             // VIDEO MODAL
             $('#video-modal-trigger-show').click(function() {

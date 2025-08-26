@@ -161,6 +161,18 @@
           </p>
         </div>
 
+        <div v-if="event.event_url" class="mb-6">
+          <p class="p-0 mb-2 font-semibold text-slate-500">
+            {{ $t('eventdetails.more_info') }}
+          </p>
+          <a
+            :href="event.event_url"
+            class="p-0 mb-6 font-normal text-dark-blue"
+          >
+            {{ event.event_url }}
+          </a>
+        </div>
+
         <div
           ref="mapContainerRef"
           class="w-full h-[520px] top-0 left-0 mb-6 rounded-lg overflow-hidden"
