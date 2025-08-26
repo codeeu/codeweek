@@ -1,16 +1,16 @@
 {
   "resources/assets/sass/app.scss": {
-    "file": "assets/app-vzCmrDYI.css",
+    "file": "assets/app-D70tsHpM.css",
     "src": "resources/assets/sass/app.scss",
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-BXGezakj.css",
+    "file": "assets/app-CfYzzxNN.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BiRVKNPj.js",
+    "file": "assets/app-D8xJLSBX.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -81,7 +81,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_de.json": {
-    "file": "assets/php_de-zYKaPkro.js",
+    "file": "assets/php_de-CCB-JZ_Z.js",
     "name": "php_de",
     "src": "resources/lang/php_de.json",
     "isDynamicEntry": true
@@ -93,7 +93,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_en.json": {
-    "file": "assets/php_en-DQ--lzdc.js",
+    "file": "assets/php_en-C0dtDj9q.js",
     "name": "php_en",
     "src": "resources/lang/php_en.json",
     "isDynamicEntry": true
@@ -117,13 +117,13 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_fr.json": {
-    "file": "assets/php_fr-0S6JA30L.js",
+    "file": "assets/php_fr-DBS314xx.js",
     "name": "php_fr",
     "src": "resources/lang/php_fr.json",
     "isDynamicEntry": true
   },
   "resources/lang/php_hr.json": {
-    "file": "assets/php_hr-BWxreX0-.js",
+    "file": "assets/php_hr-Dt1cffWl.js",
     "name": "php_hr",
     "src": "resources/lang/php_hr.json",
     "isDynamicEntry": true
