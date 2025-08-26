@@ -40,7 +40,7 @@
       ></autocomplete-geo>
 
       <template #end>
-        <div v-if="showSelectHint" class="text-sm text-slate-500 mt-2">
+        <div v-if="showSelectHint" class="text-sm font-semibold text-red-600 mt-2">
           {{ $t('event.please-select-address-from-dropdown') }}
         </div>
       </template>
