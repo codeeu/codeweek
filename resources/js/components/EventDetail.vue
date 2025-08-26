@@ -167,6 +167,7 @@
           </p>
           <a
             :href="event.event_url"
+            target="_blank"
             class="p-0 mb-6 font-normal text-dark-blue"
           >
             {{ event.event_url }}
