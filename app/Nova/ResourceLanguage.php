@@ -55,6 +55,7 @@ class ResourceLanguage extends Resource
             ID::make()->sortable(),
             BelongsToMany::make('ResourceItem', 'items'),
             Text::make('name')->sortable(),
+            Text::make('code')->sortable(),
             Number::make('Position')->sortable(),
             Boolean::make('Teach')->sortable(),
             Boolean::make('Learn')->sortable(),
