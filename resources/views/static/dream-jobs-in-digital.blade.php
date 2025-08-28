@@ -128,7 +128,38 @@
     $result = collect($roles);
     $sortedResults = $result->sortBy('first_name');
 
-    $resources = \App\ResourceItem::query()
+    $resources = [
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_1'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_1'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_1'),
+            'button_link' => '/docs/dream-jobs/C4E WP4 Careers in Digital Guide Toolkit.pdf',
+            'image' => '/images/dream-jobs/career-guide.png',
+        ],
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_2'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_2'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_2'),
+            'button_link' => '/docs/dream-jobs/C4E WP4 Career Day Toolkit.pdf',
+            'image' => '/images/dream-jobs/inspiration-day.png',
+        ],
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_3'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_3'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_3'),
+            'button_link' => '/docs/dream-jobs/Practical Skills – VET Toolkit.pdf',
+            'image' => '/images/dream-jobs/vet-activities.png',
+        ],
+        (object) [
+            'title' =>  __('dream-jobs-in-digital.resource_title_4'),
+            'description' =>  __('dream-jobs-in-digital.resource_description_4'),
+            'button_text' =>  __('dream-jobs-in-digital.resource_button_4'),
+            'button_link' => 'https://www.techskills.org/careers/quiz/',
+            'image' => '/images/dream-jobs/skills-test.png',
+        ],
+    ];
+
+    $dbResources = \App\ResourceItem::query()
         ->whereJsonContains('groups', 'Careers in Digital')
         ->whereHas('languages', function ($query) {
             $query->where('code', App::getLocale());
@@ -137,13 +168,15 @@
         ->get()
         ->map(function ($item) {
             return (object) [
-                'title' => $item->name,
+                'title'       => $item->name,
                 'description' => $item->description,
                 'button_text' => __('dream-jobs-in-digital.resource_button_1'),
                 'button_link' => $item->source,
-                'image' => $item->thumbnail,
+                'image'       => $item->thumbnail,
             ];
         });
+
+    $resources = $dbResources->concat(collect($resources))->all();
 @endphp
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
