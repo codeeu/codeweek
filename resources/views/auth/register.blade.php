@@ -72,13 +72,7 @@
                     <div class="mb-6">
                         <div>
                             <label for="password" class="font-normal text-xl">@lang('login.password')*</label>
-                            <div class="relative mt-3">
-                                <input id="password" type="password" name="password"
-                                       class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4"
-                                       value="{{old('password')}}" required>
-                                <img src="/images/eye.svg" id="password-eye" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
-                                <img src="/images/eye-slash.svg" id="password-eye-slash" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer hidden">
-                            </div>
+                            <password-field id="password" name="password" value="{{old('password')}}" required />
                         </div>
                         <div class="text-error-200 font-semibold mt-2">
                             @component('components.validation-errors', ['field'=>'password'])@endcomponent
@@ -87,13 +81,7 @@
                     <div class="mb-5">
                         <div>
                             <label for="password_confirmation" class="font-normal text-xl">@lang('login.confirm_password')*</label>
-                            <div class="relative mt-3">
-                                <input id="password_confirmation" type="password" name="password_confirmation"
-                                       class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4"
-                                       required>
-                                <img src="/images/eye.svg" id="confirm-password-eye" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
-                                <img src="/images/eye-slash.svg" id="confirm-password-eye-slash" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer hidden">
-                            </div>
+                            <password-field id="password_confirmation" name="password_confirmation" required />
                         </div>
                         <div class="text-error-200 font-semibold mt-2">
                             @component('components.validation-errors', ['field'=>'password'])@endcomponent
@@ -141,36 +129,3 @@
         @livewire('still-have-question-section')
     </section>
 @endsection
-
-@push('scripts')
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    const passwordInput = document.getElementById('password');
-    const confirmPasswordInput = document.getElementById('password_confirmation');
-    const eyeIcon = document.getElementById('password-eye');
-    const eyeSlashIcon = document.getElementById('password-eye-slash');
-    const confirmEyeIcon = document.getElementById('confirm-password-eye');
-    const confirmEyeSlashIcon = document.getElementById('confirm-password-eye-slash');
-
-    const togglePasswordVisibility = () => {
-      const isPassword = passwordInput.type === 'password';
-      passwordInput.type = isPassword ? 'text' : 'password';
-      eyeIcon.style.display = isPassword ? 'none' : 'block';
-      eyeSlashIcon.style.display = isPassword ? 'block' : 'none';
-    };
-
-    eyeIcon.addEventListener('click', togglePasswordVisibility);
-    eyeSlashIcon.addEventListener('click', togglePasswordVisibility);
-
-    const toggleConfirmPasswordVisibility = () => {
-      const isConfirmPassword = confirmPasswordInput.type === 'password';
-      confirmPasswordInput.type = isConfirmPassword ? 'text' : 'password';
-      confirmEyeIcon.style.display = isConfirmPassword ? 'none' : 'block';
-      confirmEyeSlashIcon.style.display = isConfirmPassword ? 'block' : 'none';
-    };
-
-    confirmEyeIcon.addEventListener('click', toggleConfirmPasswordVisibility);
-    confirmEyeSlashIcon.addEventListener('click', toggleConfirmPasswordVisibility);
-  });
-</script>
-@endpush
