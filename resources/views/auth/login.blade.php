@@ -61,13 +61,7 @@
                     <div class="mb-3">
                         <div>
                             <label for="password" class="font-normal text-xl">@lang('login.password')*</label>
-                            <div class="relative mt-3">
-                                <input id="password" type="password" name="password"
-                                       class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4"
-                                       value="{{old('title')}}" required>
-                                <img src="/images/eye.svg" id="password-eye" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
-                                <img src="/images/eye-slash.svg" id="password-eye-slash" class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer hidden">
-                            </div>
+                            <password-field id="password" name="password" value="{{old('password')}}" required />
                         </div>
                         <div class="text-error-200 font-semibold mt-2">
                             @component('components.validation-errors', ['field'=>'password'])@endcomponent
@@ -114,36 +108,3 @@
         @livewire('still-have-question-section')
     </section>
 @endsection
-
-@push('scripts')
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-        const passwordInput = document.getElementById('password');
-        const eyeIcon = document.getElementById('password-eye');
-        const eyeSlashIcon = document.getElementById('password-eye-slash');
-
-        const togglePasswordVisibility = (event) => {
-            event.preventDefault(); // Prevents unintended behavior
-
-            if (passwordInput.type === 'password') {
-                passwordInput.setAttribute('type', 'text');
-                eyeIcon.classList.add('hidden');
-                eyeSlashIcon.classList.remove('hidden');
-            } else {
-                passwordInput.setAttribute('type', 'password');
-                eyeIcon.classList.remove('hidden');
-                eyeSlashIcon.classList.add('hidden');
-            }
-
-            // Refocus input after changing type to avoid losing cursor position
-            passwordInput.focus();
-            const val = passwordInput.value;
-            passwordInput.value = ''; // Temporarily clear
-            passwordInput.value = val; // Restore to keep cursor at the end
-        };
-
-        eyeIcon.addEventListener('mousedown', togglePasswordVisibility);
-        eyeSlashIcon.addEventListener('mousedown', togglePasswordVisibility);
-    });
-</script>
-@endpush
