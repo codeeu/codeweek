@@ -92,10 +92,10 @@
 @section('content')
 
     <section id="codeweek-privacy-page" class="bg-white">
-        <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-blue-gradient py-10 tablet:py-20">
-                <div class="w-full overflow-hidden flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                    <div class="codeweek-container-lg flex flex-col">
+        <section class="flex overflow-hidden relative">
+            <div class="flex relative py-10 w-full transition-all bg-blue-gradient tablet:py-20">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end w-full md:flex-row md:items-center">
+                    <div class="flex flex-col codeweek-container-lg">
                         <h2 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat']">
                             @lang('cookie_policy.title')
                         </h2>
@@ -115,21 +115,5 @@
 @endsection
 
 @push('scripts')
-    <script>
-        // Wait for the DOM to fully load
-        document.addEventListener('DOMContentLoaded', function () {
-            // Select the target container
-            const container = document.getElementById('cookie-declaration-container');
-
-            // Create the script element
-            const script = document.createElement('script');
-            script.id = 'CookieDeclaration';
-            script.src = 'https://consent.cookiebot.com/719385d2-f5d2-4806-8352-72e5ebe53996/cd.js';
-            script.type = 'text/javascript';
-            script.async = true;
-
-            // Append the script to the target container
-            container.appendChild(script);
-        });
-    </script>
+   
 @endpush
