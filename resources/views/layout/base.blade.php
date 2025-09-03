@@ -78,9 +78,7 @@
         <title>EU Code Week</title>
     @endif
 
-    <!-- Start - Cookie Bot -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="719385d2-f5d2-4806-8352-72e5ebe53996" data-blockingmode="auto" type="text/javascript"></script>
-    <!-- End - Cookie Bot -->
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/{{ env('COOKIESCRIPT_ID') }}.js"></script>
 
 </head>
 
