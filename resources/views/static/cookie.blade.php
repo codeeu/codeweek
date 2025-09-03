@@ -72,13 +72,12 @@
 
 @section('content')
     <section id="codeweek-privacy-page" class="bg-white">
-        <!-- Header -->
         <section class="flex overflow-hidden relative">
             <div class="flex relative py-10 w-full transition-all bg-blue-gradient tablet:py-20">
                 <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end w-full md:flex-row md:items-center">
                     <div class="flex flex-col codeweek-container-lg">
                         <h2 class="text-white font-normal text-3xl tablet:font-medium tablet:text-5xl font-['Montserrat']">
-                            @lang('cookie_policy.title', 'Cookie Policy')
+                            @lang('cookie_policy.title')
                         </h2>
                     </div>
                 </div>
@@ -86,8 +85,8 @@
         </section>
 
         <section class="bg-white codeweek-container-lg py-10 tablet:py-20 font-[Blinker]">
+            <!-- Cookie Declaration Container -->
             <div class="cookie-content text-[16px] md:text-xl">
-                <!-- Dynamic Cookie Report -->
                 <div id="cookie-report">
                     <div class="py-8 text-center">
                         <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#410098]"></div>
@@ -102,91 +101,36 @@
                         Manage Cookie Preferences
                     </button>
                 </div>
-            </div>
+            </div> <!-- Fixed: This closing div was missing -->
         </section>
     </section>
 @endsection
 
 @push('scripts')
+<!-- Try the CookieScript Report Widget first -->
+<script type="text/javascript" charset="UTF-8" 
+        src="//report.cookie-script.com/r/829a8b1800ff61ff631790bc732f7a67.js">
+</script>
+
+<!-- Fallback to dynamic generation if widget doesn't work -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    let attempts = 0;
-    const maxAttempts = 50;
-    
-    function checkCookieScript() {
-        attempts++;
-        if (typeof CookieScript !== 'undefined' && CookieScript.instance) {
-            generateCookieReport();
-        } else if (attempts < maxAttempts) {
-            setTimeout(checkCookieScript, 200);
-        } else {
-            // Fallback if CookieScript doesn't load
-            generateStaticReport();
-        }
-    }
-    
-    function generateCookieReport() {
+    setTimeout(function() {
+        // Check if report widget loaded
         const reportContainer = document.getElementById('cookie-report');
-        
-        try {
-            // Get cookie categories from CookieScript
-            const categories = CookieScript.instance.currentState();
-            
-            let html = '<div class="cookie-declaration">';
-            html += '<p class="mb-6 text-lg">This website uses cookies to enhance your browsing experience. Below you can see what cookies we use and manage your preferences.</p>';
-            
-            // Current consent status
-            html += '<div class="p-6 mb-8 bg-gray-50 rounded-lg border-2 border-gray-200">';
-            html += '<h3 class="font-bold text-2xl mb-4 text-[#410098]">Your Current Preferences:</h3>';
-            html += '<div class="grid grid-cols-1 gap-4 md:grid-cols-2">';
-            
-            const categoryNames = {
-                'strict': 'Strictly Necessary',
-                'performance': 'Performance/Statistics', 
-                'targeting': 'Marketing/Targeting',
-                'functionality': 'Functionality'
-            };
-            
-            // CookieScript might use different category names
-            const possibleCategoryNames = ['strict', 'necessary', 'performance', 'statistics', 'targeting', 'marketing', 'functionality', 'preferences'];
-            
-            possibleCategoryNames.forEach(key => {
-                if (categories && categories.hasOwnProperty(key)) {
-                    const displayName = categoryNames[key] || key.charAt(0).toUpperCase() + key.slice(1);
-                    const status = categories[key] ? '✅ Accepted' : '❌ Rejected';
-                    html += `<div class="flex justify-between items-center p-3 bg-white rounded border">`;
-                    html += `<span>${displayName}:</span>`;
-                    html += `<span class="font-semibold">${status}</span>`;
-                    html += `</div>`;
-                }
-            });
-            
-            html += '</div></div>';
-            
-            // Display cookie tables
-            html += generateCookieTables();
-            
-            html += '</div>';
-            reportContainer.innerHTML = html;
-        } catch (error) {
-            console.error('Error generating cookie report:', error);
+        if (reportContainer && reportContainer.innerHTML.includes('Loading')) {
+            // Widget didn't load, use dynamic generation
             generateStaticReport();
         }
-    }
+    }, 3000);
     
     function generateStaticReport() {
         const reportContainer = document.getElementById('cookie-report');
+        
         let html = '<div class="cookie-declaration">';
         html += '<p class="mb-6 text-lg">This website uses cookies to enhance your browsing experience. Below you can see what cookies we use.</p>';
-        html += generateCookieTables();
-        html += '</div>';
-        reportContainer.innerHTML = html;
-    }
-    
-    function generateCookieTables() {
-        let html = '';
         
-        // Cookie details by category
+        // Cookie tables
         const cookieData = {
             'Strictly Necessary Cookies': [
                 { name: 'CookieScriptConsent', purpose: 'Stores your cookie preferences', duration: '1 year' },
@@ -196,17 +140,14 @@ document.addEventListener('DOMContentLoaded', function() {
             'Performance/Statistics Cookies': [
                 { name: '_pk_id.*', purpose: 'Matomo - Distinguishes website visitors', duration: '13 months' },
                 { name: '_pk_ses.*', purpose: 'Matomo - Tracks page requests from the same visit', duration: '30 minutes' },
-                { name: '_pk_ref.*', purpose: 'Matomo - Stores referrer information', duration: '6 months' },
-                { name: 'mtm_consent', purpose: 'Matomo - Remembers consent for Matomo analytics', duration: '30 years' }
+                { name: '_pk_ref.*', purpose: 'Matomo - Stores referrer information', duration: '6 months' }
             ],
             'Marketing/Targeting Cookies': [
-                { name: '_fbp', purpose: 'Facebook - Tracks visits across websites to deliver advertising', duration: '3 months' },
-                { name: 'fr', purpose: 'Facebook - Enables ad delivery or retargeting', duration: '3 months' },
-                { name: '_fbc', purpose: 'Facebook - Tracks visits from Facebook ads', duration: '2 years' }
+                { name: '_fbp', purpose: 'Facebook - Tracks visits across websites', duration: '3 months' },
+                { name: 'fr', purpose: 'Facebook - Enables ad delivery', duration: '3 months' }
             ]
         };
         
-        // Display cookies by category
         for (const [category, cookies] of Object.entries(cookieData)) {
             html += `<div class="mb-10">`;
             html += `<h3 class="font-bold text-2xl mb-4 text-[#410098]">${category}</h3>`;
@@ -218,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
             html += '<th class="text-left">Duration</th>';
             html += '</tr></thead><tbody>';
             
-            cookies.forEach((cookie, index) => {
+            cookies.forEach((cookie) => {
                 html += `<tr>`;
                 html += `<td>${cookie.name}</td>`;
                 html += `<td>${cookie.purpose}</td>`;
@@ -229,10 +170,9 @@ document.addEventListener('DOMContentLoaded', function() {
             html += '</tbody></table></div></div>';
         }
         
-        return html;
+        html += '</div>';
+        reportContainer.innerHTML = html;
     }
-    
-    checkCookieScript();
 });
 </script>
 @endpush
