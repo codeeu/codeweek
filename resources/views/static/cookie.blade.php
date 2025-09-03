@@ -1,10 +1,11 @@
+
 @extends('layout.new_base')
 
 @section('title', 'EU Code Week Cookie Policy – Manage Your Preferences')
 @section('description', 'Learn how EU Code Week uses cookies to enhance your browsing experience and how you can manage your preferences.')
 
 <style>
-  .cookie-content {
+ .cookie-content {
     a {
       color: #1C4DA1 !important;
       font-weight: 600 !important;
@@ -89,8 +90,8 @@
     }
   }
 </style>
-@section('content')
 
+@section('content')
     <section id="codeweek-privacy-page" class="bg-white">
         <section class="flex overflow-hidden relative">
             <div class="flex relative py-10 w-full transition-all bg-blue-gradient tablet:py-20">
@@ -107,22 +108,21 @@
         <section class="bg-white codeweek-container-lg py-10 tablet:py-20 font-[Blinker]">
             <!-- Cookie Declaration Container -->
             <div class="cookie-content text-[16px] md:text-xl">
-                <div id="cookiescript_injected"></div>
+                <!-- CookieScript Declaration Embed -->
+                <div id="cookiescript_declaration"></div>
             </div>
         </section>
-
-        <script>
-            // Initialize CookieScript declaration
-            window.addEventListener('load', function() {
-                if (typeof CookieScript !== 'undefined') {
-                    CookieScript.instance.show('declaration');
-                }
-            });
-        </script>
     </section>
-
 @endsection
 
 @push('scripts')
-   
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Method 1: Direct iframe embed
+            const container = document.getElementById('cookiescript_declaration');
+            if (container) {
+                container.innerHTML = '<iframe src="https://cookie-script.com/s/{{ env("COOKIESCRIPT_ID") }}/declaration" style="width:100%; height:800px; border:none;"></iframe>';
+            }
+        });
+    </script>
 @endpush
