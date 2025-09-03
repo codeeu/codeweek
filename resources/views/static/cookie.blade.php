@@ -8,19 +8,26 @@
     a {
       color: #1C4DA1 !important;
       font-weight: 600 !important;
+      text-decoration: underline;
     }
     p {
       padding: 0 !important;
+      margin-bottom: 1rem;
+    }
+    
+    strong {
+      font-weight: 700;
     }
     
     table {
       border-radius: 16px;
       border-collapse: separate;
+      margin: 2rem 0;
       
       thead tr th {
-        background-color: #410098;
+        background-color: #f95c22;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         padding: 16px 24px;
         
@@ -34,30 +41,30 @@
       
       tbody tr {
         td {
-          font-size: 18px;
+          font-size: 16px;
           padding: 16px 24px;
-          border-bottom: 2px solid #B399D6;
-          border-left: 2px solid #B399D6;
-          border-right: 2px solid #B399D6;
+          border: 2px solid #f95c22;
+          border-top: 0;
+          opacity: 0.8;
           
-          &:first-child {
-            border-left: 2px solid #B399D6;
+          &:not(:last-child) {
+            border-right: 0;
           }
-          &:last-child {
-            border-right: 2px solid #B399D6;
+          &:not(:first-child) {
+            border-left: 0;
           }
-        }
-        
-        &:nth-child(even) td {
-          background-color: #F5F2FA;
         }
         
         &:first-child td {
-          border-top: 2px solid #B399D6;
+          border-top: 2px solid #f95c22;
+          opacity: 0.8;
+        }
+        
+        &:nth-child(even) td {
+          background-color: #FFF5F2;
         }
         
         &:last-child td {
-          border-bottom: 2px solid #B399D6;
           &:first-child {
             border-bottom-left-radius: 16px;
           }
@@ -65,6 +72,30 @@
             border-bottom-right-radius: 16px;
           }
         }
+      }
+    }
+    
+    h3 {
+      color: #000;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem 0;
+    }
+    
+    h4 {
+      color: #000;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin: 1.5rem 0 1rem 0;
+    }
+    
+    ul {
+      list-style: disc;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+      
+      li {
+        margin-bottom: 0.5rem;
       }
     }
   }
@@ -85,94 +116,234 @@
         </section>
 
         <section class="bg-white codeweek-container-lg py-10 tablet:py-20 font-[Blinker]">
-            <!-- Cookie Declaration Container -->
             <div class="cookie-content text-[16px] md:text-xl">
-                <div id="cookie-report">
-                    <div class="py-8 text-center">
-                        <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#410098]"></div>
-                        <p class="mt-4 text-gray-600">Loading cookie information...</p>
+                
+                <!-- What are cookies section -->
+                <div class="mb-10">
+                    <h3>@lang('cookie_policy.what.title')</h3>
+                    {!! __('cookie_policy.what.text') !!}
+                    <p>{!! __('cookie_policy.what.first_party') !!}</p>
+                    <p>{{ __('cookie_policy.what.persistent_cookies') }}</p>
+                    {!! __('cookie_policy.what.items') !!}
+                </div>
+
+                <!-- How do we use cookies section -->
+                <div class="mb-10">
+                    <h3>@lang('cookie_policy.how.title')</h3>
+                    {!! __('cookie_policy.how.text1') !!}
+                    {!! __('cookie_policy.how.text2') !!}
+                    
+                    <h4>@lang('cookie_policy.how.3types.title')</h4>
+                    <ul>
+                        <li>@lang('cookie_policy.how.3types.1')</li>
+                        <li>@lang('cookie_policy.how.3types.2')</li>
+                        <li>@lang('cookie_policy.how.3types.3')</li>
+                    </ul>
+                </div>
+
+                <!-- Dynamic Cookie Tables -->
+                <div id="cookie-tables">
+                    <!-- Visitor Preferences -->
+                    <div class="mb-10">
+                        <h4>@lang('cookie_policy.how.visitor_preferences.title')</h4>
+                        {!! __('cookie_policy.how.visitor_preferences.text') !!}
+                        <ul>
+                            <li>@lang('cookie_policy.how.visitor_preferences.item')</li>
+                        </ul>
+                        
+                        <table class="w-full">
+                            <thead>
+                                <tr>
+                                    <th>@lang('cookie_policy.how.table.name')</th>
+                                    <th>@lang('cookie_policy.how.table.service')</th>
+                                    <th>@lang('cookie_policy.how.table.purpose')</th>
+                                    <th>@lang('cookie_policy.how.table.type_duration')</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CookieScriptConsent</td>
+                                    <td>@lang('cookie_policy.how.visitor_preferences.table.1.service')</td>
+                                    <td>@lang('cookie_policy.how.visitor_preferences.table.1.purpose')</td>
+                                    <td>@lang('cookie_policy.how.visitor_preferences.table.1.type_duration')</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Operational/Technical Cookies -->
+                    <div class="mb-10">
+                        <h4>@lang('cookie_policy.how.operational_cookies.title')</h4>
+                        {!! __('cookie_policy.how.operational_cookies.text') !!}
+                        <ul>
+                            <li>@lang('cookie_policy.how.operational_cookies.item')</li>
+                        </ul>
+
+                        <h4>@lang('cookie_policy.how.technical_cookies.title')</h4>
+                        <table class="w-full">
+                            <thead>
+                                <tr>
+                                    <th>@lang('cookie_policy.how.table.name')</th>
+                                    <th>@lang('cookie_policy.how.table.purpose')</th>
+                                    <th>@lang('cookie_policy.how.table.type_duration')</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>XSRF-TOKEN</td>
+                                    <td>@lang('cookie_policy.how.technical_cookies.table.1.purpose')</td>
+                                    <td>@lang('cookie_policy.how.technical_cookies.table.1.type_duration')</td>
+                                </tr>
+                                <tr>
+                                    <td>laravel_session</td>
+                                    <td>@lang('cookie_policy.how.technical_cookies.table.2.purpose')</td>
+                                    <td>@lang('cookie_policy.how.technical_cookies.table.2.type_duration')</td>
+                                </tr>
+                                <tr>
+                                    <td>locale</td>
+                                    <td>@lang('cookie_policy.how.technical_cookies.table.3.purpose')</td>
+                                    <td>@lang('cookie_policy.how.technical_cookies.table.3.type_duration')</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Analytics Cookies -->
+                    <div class="mb-10">
+                        <h4>@lang('cookie_policy.how.analytics_cookies.title')</h4>
+                        {!! __('cookie_policy.how.analytics_cookies.items') !!}
+                        
+                        <table class="w-full">
+                            <thead>
+                                <tr>
+                                    <th>@lang('cookie_policy.how.table.name')</th>
+                                    <th>@lang('cookie_policy.how.table.service')</th>
+                                    <th>@lang('cookie_policy.how.table.purpose')</th>
+                                    <th>@lang('cookie_policy.how.table.type_duration')</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_pk_id</td>
+                                    <td>@lang('cookie_policy.how.analytics_cookies.table.1.service')</td>
+                                    <td>@lang('cookie_policy.how.analytics_cookies.table.1.purpose')</td>
+                                    <td>@lang('cookie_policy.how.analytics_cookies.table.1.type_duration')</td>
+                                </tr>
+                                <tr>
+                                    <td>_pk_ses</td>
+                                    <td>@lang('cookie_policy.how.analytics_cookies.table.2.service')</td>
+                                    <td>@lang('cookie_policy.how.analytics_cookies.table.2.purpose')</td>
+                                    <td>@lang('cookie_policy.how.analytics_cookies.table.2.type_duration')</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Third Party Cookies -->
+                    <div class="mb-10">
+                        <h3>@lang('cookie_policy.third-party.title')</h3>
+                        {!! __('cookie_policy.third-party.items.1') !!}
+                        <p>{{ __('cookie_policy.third-party.items.2') }}</p>
+                        
+                        <table class="w-full">
+                            <thead>
+                                <tr>
+                                    <th>Provider</th>
+                                    <th>@lang('cookie_policy.how.table.purpose')</th>
+                                    <th>Privacy Policy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Facebook</td>
+                                    <td>Social media integration and advertising</td>
+                                    <td><a href="https://www.facebook.com/policies/cookies/" target="_blank" rel="noopener">View Policy</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Twitter</td>
+                                    <td>Social media integration</td>
+                                    <td><a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies" target="_blank" rel="noopener">View Policy</a></td>
+                                </tr>
+                                <tr>
+                                    <td>YouTube</td>
+                                    <td>Video content delivery</td>
+                                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">View Policy</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                
+
+                <!-- How to manage cookies -->
+                <div class="mb-10">
+                    <h3>@lang('cookie_policy.how-manage.title')</h3>
+                    {!! __('cookie_policy.how-manage.items') !!}
+                </div>
+
+                <!-- Current Consent Status (Dynamic) -->
+                <div class="p-6 mb-10 bg-gray-50 rounded-lg border-2 border-gray-200">
+                    <h3>Your Current Cookie Preferences</h3>
+                    <div id="consent-status">
+                        <p class="text-gray-600">Loading your preferences...</p>
+                    </div>
+                </div>
+
                 <!-- Manage Preferences Button -->
                 <div class="mt-8 text-center">
                     <button onclick="if(typeof CookieScript !== 'undefined') { CookieScript.instance.show(); } return false;" 
-                            class="bg-[#410098] text-white px-8 py-4 rounded-lg hover:bg-[#5A00D6] transition font-semibold text-lg">
+                            class="bg-[#f95c22] text-white px-8 py-4 rounded-lg hover:bg-[#e54c12] transition font-semibold text-lg">
                         Manage Cookie Preferences
                     </button>
                 </div>
-            </div> <!-- Fixed: This closing div was missing -->
+            </div>
         </section>
     </section>
 @endsection
 
 @push('scripts')
-<!-- Try the CookieScript Report Widget first -->
-<script type="text/javascript" charset="UTF-8" 
-        src="//report.cookie-script.com/r/829a8b1800ff61ff631790bc732f7a67.js">
-</script>
-
-<!-- Fallback to dynamic generation if widget doesn't work -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        // Check if report widget loaded
-        const reportContainer = document.getElementById('cookie-report');
-        if (reportContainer && reportContainer.innerHTML.includes('Loading')) {
-            // Widget didn't load, use dynamic generation
-            generateStaticReport();
+    // Check for CookieScript and display current consent status
+    function checkConsent() {
+        const statusDiv = document.getElementById('consent-status');
+        
+        if (typeof CookieScript !== 'undefined' && CookieScript.instance) {
+            try {
+                const categories = CookieScript.instance.currentState();
+                let html = '<div class="grid grid-cols-1 gap-4 md:grid-cols-2">';
+                
+                const categoryNames = {
+                    'strict': 'Strictly Necessary',
+                    'necessary': 'Strictly Necessary',
+                    'performance': 'Performance/Statistics',
+                    'statistics': 'Performance/Statistics',
+                    'targeting': 'Marketing/Targeting',
+                    'marketing': 'Marketing/Targeting',
+                    'functionality': 'Functionality',
+                    'preferences': 'Preferences'
+                };
+                
+                for (const [key, value] of Object.entries(categories)) {
+                    if (categoryNames[key]) {
+                        const status = value ? '✅ Accepted' : '❌ Rejected';
+                        html += `<div class="flex justify-between items-center p-3 bg-white rounded border">`;
+                        html += `<span>${categoryNames[key]}:</span>`;
+                        html += `<span class="font-semibold">${status}</span>`;
+                        html += `</div>`;
+                    }
+                }
+                
+                html += '</div>';
+                statusDiv.innerHTML = html;
+            } catch (error) {
+                statusDiv.innerHTML = '<p>Click "Manage Cookie Preferences" below to view and change your settings.</p>';
+            }
+        } else {
+            setTimeout(checkConsent, 500);
         }
-    }, 3000);
-    
-    function generateStaticReport() {
-        const reportContainer = document.getElementById('cookie-report');
-        
-        let html = '<div class="cookie-declaration">';
-        html += '<p class="mb-6 text-lg">This website uses cookies to enhance your browsing experience. Below you can see what cookies we use.</p>';
-        
-        // Cookie tables
-        const cookieData = {
-            'Strictly Necessary Cookies': [
-                { name: 'CookieScriptConsent', purpose: 'Stores your cookie preferences', duration: '1 year' },
-                { name: 'XSRF-TOKEN', purpose: 'Security token to prevent cross-site attacks', duration: 'Session' },
-                { name: 'laravel_session', purpose: 'Website functionality and session management', duration: 'Session' }
-            ],
-            'Performance/Statistics Cookies': [
-                { name: '_pk_id.*', purpose: 'Matomo - Distinguishes website visitors', duration: '13 months' },
-                { name: '_pk_ses.*', purpose: 'Matomo - Tracks page requests from the same visit', duration: '30 minutes' },
-                { name: '_pk_ref.*', purpose: 'Matomo - Stores referrer information', duration: '6 months' }
-            ],
-            'Marketing/Targeting Cookies': [
-                { name: '_fbp', purpose: 'Facebook - Tracks visits across websites', duration: '3 months' },
-                { name: 'fr', purpose: 'Facebook - Enables ad delivery', duration: '3 months' }
-            ]
-        };
-        
-        for (const [category, cookies] of Object.entries(cookieData)) {
-            html += `<div class="mb-10">`;
-            html += `<h3 class="font-bold text-2xl mb-4 text-[#410098]">${category}</h3>`;
-            html += '<div class="overflow-x-auto">';
-            html += '<table class="w-full min-w-[600px]">';
-            html += '<thead><tr>';
-            html += '<th class="text-left">Cookie Name</th>';
-            html += '<th class="text-left">Purpose</th>';
-            html += '<th class="text-left">Duration</th>';
-            html += '</tr></thead><tbody>';
-            
-            cookies.forEach((cookie) => {
-                html += `<tr>`;
-                html += `<td>${cookie.name}</td>`;
-                html += `<td>${cookie.purpose}</td>`;
-                html += `<td>${cookie.duration}</td>`;
-                html += '</tr>';
-            });
-            
-            html += '</tbody></table></div></div>';
-        }
-        
-        html += '</div>';
-        reportContainer.innerHTML = html;
     }
+    
+    checkConsent();
 });
 </script>
 @endpush
