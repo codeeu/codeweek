@@ -107,9 +107,18 @@
         <section class="bg-white codeweek-container-lg py-10 tablet:py-20 font-[Blinker]">
             <!-- Cookie Declaration Container -->
             <div class="cookie-content text-[16px] md:text-xl">
-              <div id="cookie-declaration-container"></div>
-            <div>
+                <div id="cookiescript_injected"></div>
+            </div>
         </section>
+
+        <script>
+            // Initialize CookieScript declaration
+            window.addEventListener('load', function() {
+                if (typeof CookieScript !== 'undefined') {
+                    CookieScript.instance.show('declaration');
+                }
+            });
+        </script>
     </section>
 
 @endsection
