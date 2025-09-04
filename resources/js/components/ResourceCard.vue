@@ -1,7 +1,12 @@
 <template>
   <div class="relative flex flex-col bg-white rounded-lg overflow-hidden">
-    <div class="flex-shrink-0">
-      <img :src="resource.thumbnail" />
+    <div class="relative w-full h-48 sm:h-56 md:h-60 bg-slate-100 overflow-hidden">
+      <img
+        :src="resource.thumbnail"
+        alt=""
+        loading="lazy"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
     </div>
 
     <div
