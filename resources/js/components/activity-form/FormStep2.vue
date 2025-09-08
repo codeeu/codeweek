@@ -37,7 +37,7 @@
       <SelectField :placeholder="$t('event.select-option')" v-model="formValues.ages" multiple name="ages" :options="ageOptions" />
     </FieldWrapper>
 
-    <FieldWrapper horizontalBreakpoint="md" :label="$t('is-this-an-extracurricular-activity')" name="is_extracurricular_event" :errors="errors">
+    <FieldWrapper horizontalBreakpoint="md" :label="$t('event.is-this-an-extracurricular-activity')" name="is_extracurricular_event" :errors="errors">
       <div class="flex items-center gap-8 min-h-[48px] h-full">
         <RadioField v-model="formValues.is_extracurricular_event" name="is_extracurricular_event" value="true" :label="$t('event.yes')" />
         <RadioField v-model="formValues.is_extracurricular_event" name="is_extracurricular_event" value="false" :label="$t('event.no')" />

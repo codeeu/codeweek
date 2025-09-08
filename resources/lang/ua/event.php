@@ -310,4 +310,5 @@ return [
 'are-you-using-any-code-week-resources-in-this-activity' => 'Чи використовуєте ви ресурси Code Week для цієї активності?',
 'view-activity' => 'Переглянути активність',
 'add-another-activity' => 'Додати іншу активність',
+'please-select-address-from-dropdown' => 'Будь ласка, виберіть адресу з розкривного списку, щоб перейти до наступного кроку',
 ];

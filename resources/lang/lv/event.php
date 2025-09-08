@@ -295,4 +295,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Vai šajā aktivitātē izmantojat Code Week resursus?',
     'view-activity' => 'Skatīt aktivitāti',
     'add-another-activity' => 'Pievienot vēl vienu aktivitāti',
+    'please-select-address-from-dropdown' => 'Lūdzu, izvēlieties adresi no nolaižamās izvēlnes, lai pārietu uz nākamo soli',
 ];

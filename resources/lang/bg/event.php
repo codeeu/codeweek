@@ -294,4 +294,6 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Използвате ли ресурси от Седмицата на кода в тази дейност?',
     'view-activity' => 'Преглед на дейността',
     'add-another-activity' => 'Добави друга дейност',
+    'please-select-address-from-dropdown' => 'Моля, изберете адрес от падащото меню, за да продължите към следващата стъпка',
+
 ];

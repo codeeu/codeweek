@@ -15,7 +15,7 @@
 
 @section('content')
     <section id="codeweek-login-page">
-        <section class="py-10 px-5 lg:p-20 bg-secondary-gradient flex justify-center relative overflow-hidden">
+        <section class="flex overflow-hidden relative justify-center px-5 py-10 lg:p-20 bg-secondary-gradient">
             <div class="bg-white pb-10 pt-6 px-6 lg:p-16 rounded-[2rem] w-full md:max-w-[760px] z-10">
                 <div class="flex">
                     <a class="flex-1 flex justify-center p-4 border-b-4 border-dark-blue font-['Montserrat'] font-bold text-xl text-dark-blue cursor-pointer">
@@ -27,16 +27,16 @@
                 </div>
                 <div class="flex justify-center p-6 lg:p-10">
                     <div class="flex gap-4">
-                        <a href="/login/twitter" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                        <a href="/login/twitter" class="flex justify-center items-center w-10 h-10 rounded-full bg-dark-blue-50">
                             <img src="/images/social/prime_twitter.svg">
                         </a>
-                        <a href="/login/github" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                        <a href="/login/github" class="flex justify-center items-center w-10 h-10 rounded-full bg-dark-blue-50">
                             <img src="/images/social/fe_github.svg">
                         </a>
-                        <a href="/login/facebook" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                        <a href="/login/facebook" class="flex justify-center items-center w-10 h-10 rounded-full bg-dark-blue-50">
                             <img src="/images/social/logos_facebook.svg">
                         </a>
-                        <a href="/login/google" class="flex justify-center items-center bg-dark-blue-50 w-10 h-10 rounded-full">
+                        <a href="/login/google" class="flex justify-center items-center w-10 h-10 rounded-full bg-dark-blue-50">
                             <img src="/images/social/devicon_google.svg">
                         </a>
                     </div>
@@ -49,36 +49,36 @@
 
                     <div class="mb-6">
                         <div>
-                            <label for="email" class="font-normal text-xl">@lang('login.email')*</label>
+                            <label for="email" class="text-xl font-normal">@lang('login.email')*</label>
                             <input id="email" type="email" name="email"
-                                   class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 mt-3"
+                                   class="px-4 mt-3 w-full h-12 rounded-full border-2 border-solid border-dark-blue-200"
                                    value="{{old('email')}}" required autofocus>
                         </div>
-                        <div class="text-error-200 font-semibold mt-2">
+                        <div class="mt-2 font-semibold text-error-200">
                             @component('components.validation-errors', ['field'=>'email'])@endcomponent
                         </div>
                     </div>
                     <div class="mb-3">
                         <div>
-                            <label for="password" class="font-normal text-xl">@lang('login.password')*</label>
+                            <label for="password" class="text-xl font-normal">@lang('login.password')*</label>
                             <password-field id="password" name="password" value="{{old('password')}}" required />
                         </div>
-                        <div class="text-error-200 font-semibold mt-2">
+                        <div class="mt-2 font-semibold text-error-200">
                             @component('components.validation-errors', ['field'=>'password'])@endcomponent
                         </div>
                     </div>
                     <div class="flex justify-end">
-                        <a class="text-dark-blue text-lg font-semibold underline" href="{{ route('password.request') }}">
+                        <a class="text-lg font-semibold underline text-dark-blue" href="{{ route('password.request') }}">
                             @lang('login.forgotten_password')
                         </a>
                     </div>
-                    <div class="relative flex items-center gap-3">
+                    <div class="flex relative gap-3 items-center">
                         <input id="remember" name="remember" type="checkbox"
-                               class="peer relative w-8 h-8 border-2 border-solid border-dark-blue-200 rounded-md appearance-none cursor-pointer checked:bg-dark-blue checked:border-0"
+                               class="relative w-8 h-8 rounded-md border-2 border-solid appearance-none cursor-pointer peer border-dark-blue-200 checked:bg-dark-blue checked:border-0"
                                 {{ old('remember') ? 'checked' : '' }}>
                         <label for="remember" class="font-normal text-[16px] cursor-pointer">@lang('login.remember')</label>
                         <svg
-                            class="absolute top-1 w-6 h-6 hidden peer-checked:block ml-1"
+                            class="hidden absolute top-1 ml-1 w-6 h-6 peer-checked:block"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="none"
