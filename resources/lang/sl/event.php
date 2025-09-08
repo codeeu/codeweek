@@ -292,4 +292,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Ali uporabljate vire Code Week pri tej dejavnosti?',
     'view-activity' => 'Ogled dejavnosti',
     'add-another-activity' => 'Dodaj drugo dejavnost',
+    'please-select-address-from-dropdown' => 'Prosimo, izberite naslov iz spustnega menija, da nadaljujete na naslednji korak',
 ];

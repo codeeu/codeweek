@@ -304,4 +304,6 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Kas kasutate sellel tegevusel Code Week ressursse?',
     'view-activity' => 'Vaata tegevust',
     'add-another-activity' => 'Lisa veel üks tegevus',
+    'please-select-address-from-dropdown' => 'Selecciona una dirección del menú desplegable para continuar con el siguiente paso',
+
 ];

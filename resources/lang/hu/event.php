@@ -294,4 +294,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Használ Code Week erőforrásokat ebben a tevékenységben?',
     'view-activity' => 'Tevékenység megtekintése',
     'add-another-activity' => 'Új tevékenység hozzáadása',
+    'please-select-address-from-dropdown' => 'Kérjük, válasszon egy címet a legördülő listából, hogy továbbléphessen a következő lépésre',
 ];

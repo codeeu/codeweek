@@ -289,4 +289,5 @@ return [
     'privacy-policy-terms' => 'kaip aprašyta šiame dokumente',
     'yes' => 'Taip',
     'no' => 'Ne',
+    'please-select-address-from-dropdown' => 'Odaberite adresu iz padajućeg menija da biste prešli na sljedeći korak',
 ];

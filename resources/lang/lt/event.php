@@ -298,4 +298,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Ar naudojate Code Week išteklius šioje veikloje?',
     'view-activity' => 'Peržiūrėti veiklą',
     'add-another-activity' => 'Pridėti kitą veiklą',
+    'please-select-address-from-dropdown' => 'Prašome pasirinkti adresą iš išskleidžiamojo sąrašo, kad pereitumėte prie kito žingsnio',
 ];

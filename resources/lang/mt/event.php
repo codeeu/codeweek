@@ -157,4 +157,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Qed tuża riżorsi tal-Code Week f’din l-attività?',
     'view-activity' => 'Ara l-attività',
     'add-another-activity' => 'Żid attività oħra',
+    'please-select-address-from-dropdown' => 'Jekk jogħġbok agħżel indirizz mill-menu li jinżel biex tkompli għall-pass li jmiss',
 ];
