@@ -283,4 +283,5 @@ return [
     'privacy-policy-terms' => 'nagu on kirjas käesolevas dokumendis',
     'yes' => 'Jah',
     'no' => 'Ei',
+    'please-select-address-from-dropdown' => 'Palun vali rippmenüüst aadress, et jätkata järgmise sammuga',
 ];

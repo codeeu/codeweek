@@ -286,4 +286,5 @@ return [
     'privacy-policy-terms' => 'kao što je opisano u ovom dokumentu',
     'yes' => 'Da',
     'no' => 'Ne',
+    'please-select-address-from-dropdown' => 'Odaberite adresu s padajućeg izbornika kako biste prešli na sljedeći korak',
 ];

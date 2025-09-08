@@ -62,8 +62,8 @@ class MeetAndCode extends Command
         //
         //        $url = Storage::disk('meet-and-code')->url('meet-and-code-clean.xml');
 
-        $url = 'https://meet-and-code.org/de/de/events/rss/';
-        $feed = Feeds::make(asset($url));
+        $url  = 'https://www.meet-and-code.org/de/de/events/rss/';
+        $feed = Feeds::make($url); // <-- not asset($url)
 
         $new = 0;
         $updated = 0;
@@ -146,10 +146,11 @@ class MeetAndCode extends Command
     }
 
     public function getCustomTag($item, $tag)
-    {
-        return $item->get_item_tags('', $tag)[0]['data'];
+        {
+            $tags = $item->get_item_tags('', $tag) ?? [];
+            return $tags[0]['data'] ?? null;
+        }
 
-    }
 
     public function createEvents()
     {

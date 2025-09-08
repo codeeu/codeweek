@@ -295,4 +295,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Používate zdroje Code Week pri tejto aktivite?',
     'view-activity' => 'Zobraziť aktivitu',
     'add-another-activity' => 'Pridať ďalšiu aktivitu',
+    'please-select-address-from-dropdown' => 'Vyberte prosím adresu z rozbaľovacieho zoznamu, aby ste mohli pokračovať na ďalší krok',
     ];

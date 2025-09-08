@@ -292,4 +292,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Använder du Code Week-resurser i den här aktiviteten?',
     'view-activity' => 'Visa aktivitet',
     'add-another-activity' => 'Lägg till en annan aktivitet',
+    'please-select-address-from-dropdown' => 'Välj en adress i rullgardinsmenyn för att gå vidare till nästa steg',
 ];
