@@ -295,4 +295,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Käytätkö Code Week -resursseja tässä toiminnassa?',
     'view-activity' => 'Näytä toiminta',
     'add-another-activity' => 'Lisää toinen toiminta',
+    'please-select-address-from-dropdown' => 'Valitse pudotusvalikosta osoite jatkaaksesi seuraavaan vaiheeseen',
 ];

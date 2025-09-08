@@ -292,4 +292,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Дали користите ресурси на Code Week во оваа активност?',
     'view-activity' => 'Погледни активност',
     'add-another-activity' => 'Додади друга активност',
+    'please-select-address-from-dropdown' => 'Ве молиме, изберете адреса од паѓачкото мени за да продолжите на следниот чекор',
 ];

@@ -310,4 +310,6 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Χρησιμοποιείτε πόρους του Code Week σε αυτή τη δραστηριότητα;',
     'view-activity' => 'Προβολή δραστηριότητας',
     'add-another-activity' => 'Προσθήκη άλλης δραστηριότητας',
+    'please-select-address-from-dropdown' => 'Παρακαλούμε επιλέξτε μια διεύθυνση από το αναπτυσσόμενο μενού για να προχωρήσετε στο επόμενο βήμα',
+
 ];
