@@ -290,4 +290,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Czy korzystasz z zasobów Code Week podczas tej aktywności?',
     'view-activity' => 'Pokaż aktywność',
     'add-another-activity' => 'Dodaj kolejną aktywność',
+    'please-select-address-from-dropdown' => 'Wybierz adres z listy rozwijanej, aby przejść do następnego kroku',
 ];

@@ -298,4 +298,5 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
     'are-you-using-any-code-week-resources-in-this-activity' => 'A po përdorni ndonjë burim të Javës së Kodit në këtë aktivitet?',
     'view-activity' => 'Shiko aktivitetin',
     'add-another-activity' => 'Shto aktivitet tjetër',
+   'please-select-address-from-dropdown' => 'Zgjidhni një adresë nga menuja zbritëse për të vazhduar në hapin tjetër',
 ];

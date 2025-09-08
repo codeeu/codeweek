@@ -299,4 +299,6 @@ return [
     'view-activity' => 'Aktivität ansehen',
     'add-another-activity' => 'Weitere Aktivität hinzufügen',
     'image-attached' => 'Image Attached',
+    'please-select-address-from-dropdown' => 'Bitte wählen Sie eine Adresse aus der Dropdown-Liste aus, um zum nächsten Schritt fortzufahren',
+
 ];

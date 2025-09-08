@@ -294,4 +294,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Está a usar recursos do Code Week nesta atividade?',
     'view-activity' => 'Ver atividade',
     'add-another-activity' => 'Adicionar outra atividade',
+    'please-select-address-from-dropdown' => 'Selecione um endereço no menu pendente para avançar para o passo seguinte',
 ];
