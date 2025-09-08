@@ -294,4 +294,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Bu etkinlikte Code Week kaynaklarını kullanıyor musunuz?',
     'view-activity' => 'Etkinliği görüntüle',
     'add-another-activity' => 'Başka etkinlik ekle',
+    'please-select-address-from-dropdown' => 'Bir sonraki adıma geçmek için lütfen açılır menüden bir adres seçin',
 ];

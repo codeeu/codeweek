@@ -295,4 +295,5 @@ return [
     'are-you-using-any-code-week-resources-in-this-activity' => 'Folosești resurse Code Week în această activitate?',
     'view-activity' => 'Vizualizează activitatea',
     'add-another-activity' => 'Adaugă o altă activitate',
+    'please-select-address-from-dropdown' => 'Selectează o adresă din lista derulantă pentru a trece la pasul următor',
 ];
