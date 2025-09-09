@@ -20,6 +20,7 @@ return [
         'second_link' => 'príručku pre organizátorov',
     ],
     'view' => 'Zobraziť',
+    'view_lesson' => 'Zobraziť lekciu',
     'status' => [
         'APPROVED' => 'SCHVÁLENÉ',
         'REJECTED' => 'ZAMIETNUTÉ',

@@ -20,6 +20,7 @@ return [
         'second_link' => 'przewodnik dla organizatorów',
     ],
     'view' => 'Wyświetl',
+    'view_lesson' => 'Zobacz lekcję',
     'status' => [
         'APPROVED' => 'ZATWIERDZONE',
         'REJECTED' => 'ODRZUCONE',
