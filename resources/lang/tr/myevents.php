@@ -20,6 +20,7 @@ return [
         'second_link' => 'organizatör rehberimizi okuyun',
     ],
     'view' => 'Görüntüle',
+    'view_lesson' => 'Dersi görüntüle',
     'status' => [
         'APPROVED' => 'ONAYLANDI',
         'REJECTED' => 'REDDEDİLDİ',

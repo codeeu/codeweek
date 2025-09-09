@@ -52,6 +52,13 @@ return [
             'Turkish' => 'турски',
             'Ukrainian' => 'украински',
             'All targeted languages' => 'Сите целни јазици',
+            'Hindi' => 'Хинди',
+            'Bahasa Indonesia' => 'Индонезиски',
+            'Kiswahili' => 'Свахили',
+            'Telugu' => 'Телугу',
+            'Arabic' => 'Арапски',
+            'Simplified Chinese' => 'Поедноставен кинески',
+
         ],
         'levels' => [
             'Beginner' => 'Почетно ниво',

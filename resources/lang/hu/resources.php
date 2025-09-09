@@ -52,6 +52,12 @@ return [
             'Turkish' => 'Török',
             'Ukrainian' => 'Ukrán',
             'All targeted languages' => 'Minden célnyelv',
+            'Hindi' => 'Hindi',
+            'Bahasa Indonesia' => 'Indonéz',
+            'Kiswahili' => 'Szuahéli',
+            'Telugu' => 'Telugu',
+            'Arabic' => 'Arab',
+            'Simplified Chinese' => 'Egyszerűsített kínai',
         ],
         'levels' => [
             'Beginner' => 'Kezdő',

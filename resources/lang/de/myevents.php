@@ -20,6 +20,7 @@ return [
         'second_link' => 'Leitfaden für Veranstalter',
     ],
     'view' => 'Ansehen',
+    'view_lesson' => 'Lektion ansehen',
     'status' => [
         'APPROVED' => 'GENEHMIGT',
         'REJECTED' => 'ABGELEHNT',

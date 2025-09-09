@@ -69,6 +69,12 @@ return [
             'Austrian' => 'Austrian',
             'Irish' => 'Irish',
             'Slovak' => 'Slovak',
+            'Hindi' => 'Hindi',
+            'Bahasa Indonesia' => 'Indonēziešu',
+            'Kiswahili' => 'Svahili',
+            'Telugu' => 'Telugu',
+            'Arabic' => 'Arābu',
+            'Simplified Chinese' => 'Vienkāršotā ķīniešu',
         ],
         'levels' => [
             'Beginner' => 'Iesācējs',
