@@ -20,6 +20,7 @@ return [
         'second_link' => 'ghidul pentru organizatori',
     ],
     'view' => 'Vizualizare',
+    'view_lesson' => 'Vezi lecția',
     'status' => [
         'APPROVED' => 'APROBAT',
         'REJECTED' => 'REPINS',

@@ -20,6 +20,7 @@ return [
         'second_link' => 'juhendit korraldajatele',
     ],
     'view' => 'Vaata',
+    'view_lesson' => 'Vaata tundi',
     'status' => [
         'APPROVED' => 'KINNITATUD',
         'REJECTED' => 'TAGASI LÜKATUD',

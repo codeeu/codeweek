@@ -70,6 +70,12 @@ return [
             'Austrian' => 'Austrian',
             'Irish' => 'Irish',
             'Slovak' => 'Slovak',
+            'Hindi' => 'Hindi',
+            'Bahasa Indonesia' => 'Indonesisch',
+            'Kiswahili' => 'Suaheli',
+            'Telugu' => 'Telugu',
+            'Arabic' => 'Arabisch',
+            'Simplified Chinese' => 'Vereinfachtes Chinesisch',
         ],
         'levels' => [
             'Beginner' => 'Einstieg',

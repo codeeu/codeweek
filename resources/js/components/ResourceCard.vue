@@ -24,10 +24,10 @@
       </div>
 
       <div
-        v-if="resource.languages?.[0]?.name"
-        class="text-slate-500 text-[16px] leading-[22px]"
+        v-if="resource.main_language?.name || resource.languages?.[0]?.name"
+        class="text-slate-500 text-[16px] leading-[22px] h-[22px]"
       >
-        Language: {{ resource.languages?.[0]?.name || '' }}
+        Language: {{ resource.main_language?.name || resource.languages?.[0]?.name || '' }}
       </div>
 
       <div
