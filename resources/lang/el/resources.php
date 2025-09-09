@@ -70,6 +70,13 @@ return [
             'Austrian' => 'Austrian',
             'Irish' => 'Irish',
             'Slovak' => 'Slovak',
+            'Hindi' => 'Χίντι',
+            'Bahasa Indonesia' => 'Ινδονησιακά',
+            'Kiswahili' => 'Σουαχίλι',
+            'Telugu' => 'Τελούγκου',
+            'Arabic' => 'Αραβικά',
+            'Simplified Chinese' => 'Απλοποιημένα Κινέζικα',
+
         ],
         'levels' => [
             'Beginner' => 'Αρχάριο επίπεδο',

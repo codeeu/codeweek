@@ -20,6 +20,7 @@ return [
         'second_link' => 'l-gwida tagħna għall-organizzaturi',
     ],
     'view' => 'Ara',
+    'view_lesson' => 'Ara lezzjoni',
     'status' => [
         'APPROVED' => 'APPROVAT',
         'REJECTED' => 'IRRIFJUTAT',

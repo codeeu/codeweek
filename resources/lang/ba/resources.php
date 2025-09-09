@@ -53,6 +53,12 @@ return [
             'Ukrainian' => 'Ukrajinski',
             'Chinese' => 'Kineski',
             'All targeted languages' => 'Svi ciljani jezici',
+            'Hindi' => 'Hindi',
+            'Bahasa Indonesia' => 'Indonezijski',
+            'Kiswahili' => 'Svahili',
+            'Telugu' => 'Telugu',
+            'Arabic' => 'Arapski',
+            'Simplified Chinese' => 'Pojednostavljeni kineski',
         ],
         'levels' => [
             'Beginner' => 'Početni nivo',

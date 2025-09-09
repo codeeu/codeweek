@@ -20,6 +20,7 @@ return [
         'second_link' => 'vejledning til arrangører',
     ],
     'view' => 'Vis',
+    'view_lesson' => 'Se lektion',
     'status' => [
         'APPROVED' => 'GODKENDT',
         'REJECTED' => 'AFVIST',

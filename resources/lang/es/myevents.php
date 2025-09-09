@@ -20,6 +20,7 @@ return [
         'second_link' => 'Guía para organizadores?',
     ],
     'view' => 'Ver',
+    'view_lesson' => 'Ver lección',
     'status' => [
         'APPROVED' => 'APROBADO',
         'REJECTED' => 'RECHAZADO',
