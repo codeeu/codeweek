@@ -20,6 +20,7 @@ return [
         'second_link' => 'упатството за организатори',
     ],
     'view' => 'Преглед',
+    'view_lesson' => 'Види лекција',
     'status' => [
         'APPROVED' => 'ОДОБРЕНО',
         'REJECTED' => 'ОДБИЕНО',

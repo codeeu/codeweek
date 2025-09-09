@@ -53,6 +53,12 @@ return [
             'Ukrainian' => 'Ukraina',
             'Chinese' => 'Hiina',
             'All targeted languages' => 'Kõik sihtkeeled',
+            'Hindi' => 'Hindi',
+            'Bahasa Indonesia' => 'Indoneesia',
+            'Kiswahili' => 'Suahiili',
+            'Telugu' => 'Telugu',
+            'Arabic' => 'Araabia',
+            'Simplified Chinese' => 'Lihtsustatud hiina',
         ],
         'levels' => [
             'Beginner' => 'Algaja',
