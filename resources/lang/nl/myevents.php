@@ -20,6 +20,7 @@ return [
         'second_link' => 'gids voor organisatoren',
     ],
     'view' => 'Bekijken',
+    'view_lesson' => 'Bekijk les',
     'status' => [
         'APPROVED' => 'GOEDGEKEURD',
         'REJECTED' => 'GEWEIGERD',

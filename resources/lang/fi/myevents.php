@@ -20,6 +20,7 @@ return [
         'second_link' => 'järjestäjien opas',
     ],
     'view' => 'Näytä',
+    'view_lesson' => 'Näytä oppitunti',
     'status' => [
         'APPROVED' => 'HYVÄKSYTTY',
         'REJECTED' => 'HYLÄTTY',

@@ -20,6 +20,7 @@ return [
         'second_link' => 'ceļvedi organizatoriem',
     ],
     'view' => 'skatīt',
+    'view_lesson' => 'Skatīt nodarbību',
     'status' => [
         'APPROVED' => 'APSTIPRINĀTS',
         'REJECTED' => 'NORAIDĪTS',

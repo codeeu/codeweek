@@ -20,6 +20,7 @@ return [
         'second_link' => 'gaires organizatoriams?',
     ],
     'view' => 'Rodyti',
+    'view_lesson' => 'Peržiūrėti pamoką',
     'status' => [
         'APPROVED' => 'PATVIRTINTI',
         'REJECTED' => 'ATMESTI',

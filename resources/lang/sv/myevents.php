@@ -20,6 +20,7 @@ return [
         'second_link' => 'guide för arrangörer?',
     ],
     'view' => 'Visa',
+    'view_lesson' => 'Visa lektion',
     'status' => [
         'APPROVED' => 'GODKÄNDA',
         'REJECTED' => 'AVSLAGNA',

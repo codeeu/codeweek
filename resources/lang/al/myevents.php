@@ -20,6 +20,7 @@ return [
         'second_link' => 'udhëzuesin për organizatorët',
     ],
     'view' => 'Shikoni',
+    'view_lesson' => 'Shiko mësimin',
     'status' => [
         'APPROVED' => 'MIRATUAR',
         'REJECTED' => 'REFUZUAR',

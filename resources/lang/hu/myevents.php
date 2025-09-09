@@ -20,6 +20,7 @@ return [
         'second_link' => 'szervezõi útmutatónkat',
     ],
     'view' => 'Megtekintés',
+    'view_lesson' => 'Lecke megtekintése',
     'status' => [
         'APPROVED' => 'JÓVÁHAGYVA',
         'REJECTED' => 'ELUTASÍTVA',
