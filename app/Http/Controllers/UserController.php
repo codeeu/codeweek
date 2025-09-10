@@ -24,6 +24,7 @@ class UserController extends Controller
             'privacy' => 'required',
             'receive_emails' => 'required',
             'country_iso' => 'nullable|exists:countries,iso',
+            'city_id' => 'nullable|exists:cities,id',
             'twitter' => 'nullable',
             'website' => 'nullable',
             'bio' => 'nullable',
