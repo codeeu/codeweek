@@ -49,12 +49,23 @@ class AppServiceProvider extends ServiceProvider
                     return $theme;
                 });
 
+                $activeCountries = \App\Country::withEvents();
+
                 $view->with('audiences', $audiences);
                 $view->with('activity_types', \App\ActivityType::list());
                 $view->with('countries', \App\Country::translated());
                 $view->with('languages', Arr::sort(Lang::get('base.languages')));
-                $view->with('active_countries', \App\Country::withEvents());
+                $view->with('active_countries', $activeCountries);
                 $view->with('themes', $themes);
+
+                $cities = \App\City::query()
+                    ->whereIn('country_iso', $activeCountries->pluck('iso'))
+                    ->select(['id', 'city', 'country_iso'])
+                    ->orderBy('country_iso')
+                    ->orderBy('city')
+                    ->get();
+
+                $view->with('cities', $cities);
             }
         );
 
