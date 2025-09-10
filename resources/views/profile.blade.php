@@ -177,6 +177,27 @@
 
                     <div class="mb-1">
                         <div>
+                            <label class="block text-xl text-slate-500 mb-2" for="id_city">City</label>
+                            <select id="id_city"
+                                    name="city_id"
+                                    class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600 mb-3">
+                                <option value=""></option>
+                                @foreach ($cities as $city)
+                                    <option value="{{ $city->id }}"
+                                            data-country="{{ $city->country_iso }}"
+                                            {{ optional($profileUser->city)->id === $city->id ? 'selected' : '' }}>
+                                        {{ $city->city }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="errors">
+                            @component('components.validation-errors', ['field'=>'city_id'])@endcomponent
+                        </div>
+                    </div>
+
+                    <div class="mb-1">
+                        <div>
                             <label class="block text-xl text-slate-500 mb-2" for="id_bio">@lang('base.biography')</label>
                             <textarea id="id_bio"
                                    name="bio"
