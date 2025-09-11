@@ -37,7 +37,7 @@ class AppServiceProvider extends ServiceProvider
 
         Carbon::setLocale('app.locale');
         \View::composer(
-            ['event.add', 'event.search', 'profile', 'event.edit'],
+            ['event.add', 'event.search', 'event.edit'],
             function ($view) {
                 $audiences = \App\Audience::all()->map(function ($audience) {
                     $audience->name = __('event.audience.' . $audience->name);
@@ -57,17 +57,60 @@ class AppServiceProvider extends ServiceProvider
                 $view->with('languages', Arr::sort(Lang::get('base.languages')));
                 $view->with('active_countries', $activeCountries);
                 $view->with('themes', $themes);
+            }
+        );
 
-                $cities = \App\City::query()
-                    ->whereIn('country_iso', $activeCountries->pluck('iso'))
+        \View::composer(['community', 'profile'], function ($view) {
+            $supportedCountries = [
+                'GR',
+                'CY',
+                'MT',
+                'IT',
+                'BG',
+                'TR',
+                'UA',
+                'PL',
+                'IE',
+                'FR',
+                'LU',
+                'NL',
+                'BE',
+                'SK',
+                'CZ',
+                'NO',
+                'IS',
+                'FI',
+                'SE',
+                'PT',
+                'ES',
+                'LV',
+                'LT',
+                'HR',
+                'SI',
+                'DE',
+                'AT',
+                'CH',
+                'RO',
+                'MD',
+                'DK',
+            ];
+
+            $activeCountries = \App\Country::query()
+                                ->whereIn('iso', $supportedCountries)
+                                ->orderBy('name')
+                                ->get();
+
+            $cities = \App\City::query()
+                    ->whereIn('country_iso', $supportedCountries)
                     ->select(['id', 'city', 'country_iso'])
                     ->orderBy('country_iso')
                     ->orderBy('city')
                     ->get();
 
-                $view->with('cities', $cities);
-            }
-        );
+            $view->with('cities', $cities);
+            $view->with('active_countries', $activeCountries);
+            $view->with('supportedCountries', $supportedCountries);
+        });
 
         \View::composer(['stats'], function ($view) {
             $view->with('active_countries', \App\Country::withEvents());
