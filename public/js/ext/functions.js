@@ -2135,38 +2135,59 @@ var SEMICOLON = SEMICOLON || {};
             var $country = $('#id_country');
             var $city = $('#id_city');
             if (!$country.length || !$city.length) return;
+            
+            if (!$city.data('originalHtml')) {
+                $city.data('originalHtml', $city.html());
+            }
           
-            // cache once per current DOM
-            if (!$city.data('originalOptions')) {
-              $city.data('originalOptions', $city.find('option').clone());
-              $city.data('emptyOption', $city.find('option').first().clone());
+            function getAllOptions() {
+                var html = $city.data('originalHtml') || '';
+                var $tmp = $('<select>' + html + '</select>');
+                return $tmp.find('option');
             }
           
             function applyCityFilter() {
-              var iso = $country.val() || '';
-              var prev = $city.val();
-              var $original = $city.data('originalOptions');
-              var $empty = $city.data('emptyOption').clone();
-          
-              var $next = [$empty.get(0)];
-              if (iso) {
-                $original.each(function (i, opt) {
-                  if (i === 0) return; // keep first for empty
-                  var $opt = $(opt);
-                  if ($opt.attr('data-country') === iso) $next.push(opt);
+                var iso = ($country.val() || '').toUpperCase();
+                var prev = $city.val();
+                var $all = getAllOptions();
+
+                if (!iso) {
+                    $city.html($all.clone());
+                    if ($city.find('option[value="'+ prev +'"]').length) $city.val(prev);
+                    return;
+                }
+            
+                var $empty = $all.first().clone();
+                var $filtered = $all.filter(function (i, opt) {
+                    if (i === 0) return false;
+                    var dc = (opt.getAttribute('data-country') || '').toUpperCase();
+                    return dc === iso;
                 });
-              }
-              $city.empty().append($next);
-          
-              // restore previous if still valid
-              if ($next.some(function(o){ return o.value === prev; })) {
-                $city.val(prev);
-              } else {
-                $city.val('');
-              }
+                
+                $city.empty().append($empty).append($filtered.clone());
+                
+                if ($city.find('option[value="'+ prev +'"]').length) {
+                    $city.val(prev);
+                } else {
+                    $city.val(''); // reset
+                }
             }
+            
+            (function autoSelectCountryFromCity() {
+                if ($country.val()) return;
+                var $sel = getAllOptions().filter(function(i, opt){
+                    return opt.value && opt.selected;
+                }).first();
+                if ($sel.length) {
+                    var dc = ($sel.attr('data-country') || '').toUpperCase();
+                    if (dc) {
+                    var $opt = $country.find('option[value="'+ dc +'"]');
+                    if ($opt.length) $country.val(dc);
+                    }
+                }
+            })();
           
-            // bind once per render
+            // bind & run
             $country.off('change.cityfilter').on('change.cityfilter', applyCityFilter);
             applyCityFilter();
         },
