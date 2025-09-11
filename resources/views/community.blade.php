@@ -444,39 +444,6 @@
     {{-- Display this section only if a country is selected and has specific content --}}
     @php
         $country = app('request')->input('country_iso');
-        $supportedCountries = [
-            'GR',
-            'CY',
-            'MT',
-            'IT',
-            'BG',
-            'TR',
-            'UA',
-            'PL',
-            'IE',
-            'FR',
-            'LU',
-            'NL',
-            'BE',
-            'SK',
-            'CZ',
-            'NO',
-            'IS',
-            'FI',
-            'SE',
-            'PT',
-            'ES',
-            'LV',
-            'LT',
-            'HR',
-            'SI',
-            'DE',
-            'AT',
-            'CH',
-            'RO',
-            'MD',
-            'DK',
-        ];
     @endphp
     @if (in_array($country, $supportedCountries))
         <svg xmlns="http://www.w3.org/2000/svg" width="94" height="131" viewBox="0 0 94 131" fill="none"
