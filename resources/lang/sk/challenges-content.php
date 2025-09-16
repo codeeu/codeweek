@@ -1,71 +1,166 @@
 <?php
 
 return [
-    'create-your-own-website-with-html-and-css' => [
+'create-your-own-website-with-html-and-css' => [
     'title' => 'Vytvorte si vlastnú webovú stránku pomocou HTML a CSS',
     'author' => 'Marko Šolić',
-    'purposes_title' => 'Účel výzvy',
+
+    'purposes_title' => 'Cieľ výzvy',
     'purposes' => [
-        'Účelom tejto výzvy je oboznámiť začiatočníkov so svetom vývoja webových stránok.',
-        'Dokončením tohto projektu sa účastníci naučia základy HTML a CSS, ktoré sú kľúčové pre vytváranie a štýlovanie webových stránok.',
-        'Výzva kladie dôraz na praktické učenie a pomôže vám vytvoriť si vlastnú webovú stránku od úplného začiatku.',
-        'Získate základné zručnosti v oblasti webdizajnu a väčšiu istotu pri budovaní vlastnej online prezentácie.'
+        'Cieľom tejto výzvy je uviesť začiatočníkov do sveta vývoja webu.',
+        'Dokončením projektu sa účastníci naučia základy HTML a CSS, ktoré sú kľúčové na tvorbu a štýlovanie webových stránok.',
+        'Výzva kladie dôraz na praktické učenie – pomôže ti postaviť vlastnú webstránku od nuly.',
+        'Získaš dôležité zručnosti webového dizajnu a väčšiu istotu pri budovaní vlastnej online prítomnosti.'
     ],
-    'description_title' => 'Opis výzvy',
+
+    'description_title' => 'Popis výzvy',
     'description' => [
-        'Webové stránky sú základom internetovej prítomnosti. Prostredníctvom tejto lekcie sa naučíte, ako pomocou HTML štruktúrovať obsah a pomocou CSS ho štýlovať a vytvoriť svoju prvú webovú stránku.',
-        'Vďaka zábavným krokom si vytvoríte stránku, ktorá môže obsahovať text, obrázky, farby a odkazy.'
+        'Webové stránky sú základom online prítomnosti. V tejto lekcii sa naučíš používať HTML na štruktúrovanie obsahu a CSS na štýlovanie a vytvorenie svojej prvej webstránky.',
+        'Zábavnými krokmi vytvoríš stránku, ktorá môže obsahovať text, obrázky, farby a odkazy.'
     ],
+
     'target_audience_title' => 'Cieľová skupina',
-    'target-audience' => [
-        'Začiatočníci, ktorí sa chcú naučiť vytvárať webové stránky',
-        'Študenti alebo ktokoľvek zvedavý, ako sa webové stránky vytvárajú'
+    'target_audience' => [
+        'Výzva je určená začiatočníkom, ktorí sa chcú naučiť tvoriť webové stránky.',
+        'Je ideálna pre nových záujemcov o vývoj webu, študentov a každého, koho zaujíma, ako sa weby vytvárajú.',
+        'Nie je potrebná žiadna predchádzajúca skúsenosť s programovaním.'
     ],
+
     'experience_title' => 'Skúsenosti',
-    'experience' => 'Úroveň začiatočník – nie sú potrebné žiadne predchádzajúce skúsenosti s programovaním.',
+    'experience' => [
+        'Ide o výzvu pre začiatočníkov. Základné počítačové zručnosti (napr. práca v textovom editore) môžu pomôcť, no nie sú nevyhnutné.',
+        'Výzva je navrhnutá ako úvod do HTML a CSS.'
+    ],
+
     'duration_title' => 'Trvanie',
-    'duration' => '1 až 2 hodiny',
-    'materials_title' => 'Odporúčané nástroje',
+    'duration' => 'Výzva trvá približne 1–2 hodiny, podľa tvojej úrovne skúseností a toho, koľko budeš skúmať nad rámec základov.',
+
+    'materials_title' => 'Odporúčané nástroje:',
     'materials' => [
-        'PC / Laptop',
-        'Textový editor, ako napríklad Notepad (Windows) alebo TextEdit (Mac)'
+        'PC / notebook',
+        'Bežný textový editor, napríklad Notepad (Windows) alebo TextEdit (Mac)'
     ],
-    'instructions_title' => 'Inštrukcie',
+
+    'instructions_title' => 'Pokyny',
     'instructions' => [
-        'Tipy pre učiteľov: Začnite od základov (HTML a CSS), vysvetlite štruktúru dokumentu, upozornite na bežné chyby, povzbudzujte interaktívne učenie a kreativitu.',
-        'Krok 1: Príprava prostredia – použite jednoduchý textový editor, ako je Notepad alebo TextEdit.',
-        'Krok 2: Základná štruktúra HTML dokumentu – uložte súbor ako index.html a pridajte základné HTML značky.',
-        'Krok 3: Pridanie štýlov pomocou CSS – vytvorte style.css a pridajte základné štýly (farba pozadia, textu, font, zarovnanie).',
-        'Krok 4: Prepojenie HTML s CSS – použite <link rel="stylesheet" href="style.css"> v sekcii <head>.',
-        'Krok 5: Spustenie stránky – otvorte index.html v prehliadači a pozrite si výsledok.'
+        'Tipy pre učiteľov pred začiatkom:',
+        'Ak s vývojom webu len začínaš, žiadne obavy! Tu je pár tipov, ktoré ti pomôžu viesť študentov procesom:',
+        'Začni základmi: vysvetli kľúčové koncepty HTML (štruktúra webovej stránky) a CSS (štýlovanie prvkov).',
+        'Buď trpezlivý a dopraj študentom čas pochopiť účel každého tagu a vlastnosti.',
+        'Vysvetli štruktúru: pri predstavovaní HTML tagov názorne ukáž, ako je dokument poskladaný.',
+        'Ukáž vzťah medzi otváracími a zatváracími tagmi, atribútmi a zagnieďovaním (nesting).',
+        'Vyhni sa bežným chybám: začiatočníci často zabúdajú správne zatvárať tagy alebo si popletú zložené zátvorky {} v CSS.',
+        'Pripomínaj pravidelnú kontrolu chýb v syntaxi.',
+        'Interaktívne učenie: povzbudzuj k experimentom so zmenou textu a štýlov.',
+        'Ukáž, ako sa malé zmeny v HTML alebo CSS okamžite prejavia po obnovení stránky v prehliadači.',
+        'Buď otvorený kreativite: neexistuje jediný „správny“ spôsob dizajnu webu.',
+        'Povzbudzuj k skúšaniu rôznych písiem, farieb a rozložení.',
+        'Bežné chyby, na ktoré si daj pozor:',
+        'Zabudnutie prepojiť CSS súbor s HTML súborom.',
+        'Nesprávne zagnieďovanie tagov v HTML.',
+        'Preklepy vo vlastnostiach CSS (napr. použitie „colour“ namiesto „color“ v niektorých prípadoch).',
+        'Príliš komplikovaná štruktúra — jednoduché weby môžu vyzerať profesionálne aj s pár riadkami kódu!',
+
+        'Krok 1: Príprava prostredia',
+        'Na vytvorenie webu nepotrebuješ špeciálne nástroje – stačí obyčajný textový editor, napr. Notepad (Windows) alebo TextEdit (Mac).',
+        'Celú webstránku možno vytvoriť v jednoduchom textovom editore; na internete nájdeš aj weby vytvorené práve takto.',
+        'Ak chceš vidieť príklad takejto stránky, pozri si web Chorvátskeho informatického zväzu: hsin.hr',
+
+        'Krok 2: Základná štruktúra HTML dokumentu',
+        'Otvori nový dokument v editore a ulož ho ako index.html',
+        'Podľa verzie Windows alebo macOS budeš možno najprv musieť zapnúť možnosť meniť prípony súborov, pretože z index.txt sa má stať index.html',
+        'V editore (napr. Notepad) zadaj základnú štruktúru HTML dokumentu:',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<target charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Takto by mala vyzerať tvoja webová stránka bez CSS (v chorvátčine; tvoj príklad je, samozrejme, v slovenčine):',
+
+        'Krok 3: Pridanie štýlov pomocou CSS',
+        'CSS sa používa na štýlovanie prvkov na stránke. Začneme základmi – farba pozadia, farba textu a veľkosť písma.',
+        'V tom istom priečinku vytvor nový textový súbor a pomenuj ho style.css.',
+        'Do súboru style.css napíš:',
+        'body {',
+        'background-colour: #f0f8ff; /* Light blue background */',
+        'colour: #333; /* Dark Gray Text */',
+        'font-family: Arial, sans-serif; /* Font for text */',
+        'text-align: centre; /* Align text to centre */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Green title */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Paragraph font size */',
+        'colour: #555; /* Gray-blue text for paragraph */',
+        '}',
+
+        'Krok 4: Prepojenie HTML s CSS',
+        'Keď vytvoríš CSS súbor, musíš ho prepojiť s HTML súborom.',
+        'Urobíš to v sekcii <head> dokumentu HTML pridaním nasledujúceho riadku kódu:',
+        '<link rel="stylesheet" href="style.css">',
+        'Tým dokument HTML „vie“, že má použiť štýly zo súboru CSS.',
+
+        'Krok 5: Spustenie stránky',
+        'Ulož oba súbory: index.html a style.css.',
+        'Dvojklikom otvor index.html v internetovom prehliadači.',
+        'Uvidíš stránku s textom v strede a základnými štýlmi, ktoré si pridal(a).',
+        'Takto by mala tvoja stránka vyzerať teraz:',
+
+        'Podpora rozmanitosti v STEM:',
+        'Tvorba webu je pre každého! Či si žiak, dospelý hľadajúci novú kariéru, alebo niekto z nedostatočne zastúpených skupín — táto výzva ťa pozýva preskúmať vzrušujúci svet tvorby webu.',
+        'Oblasti STEM (veda, technológie, inžinierstvo a matematika) historicky trpia nedostatkom rozmanitosti; je dôležité povzbudzovať všetkých — bez ohľadu na pohlavie, pôvod či zázemie — aby objavovali programovanie a technológie.',
+        'Každý má jedinečné pohľady a skúsenosti, ktoré robia svet webového vývoja kreatívnejším a inkluzívnejším.',
+        'Pri práci na svojej stránke premýšľaj, ako môžeš prispieť k tomu, aby bol digitálny svet miestom, kde sa každý cíti reprezentovaný a vítaný.',
+        'Nemusíš byť technický expert — jednoducho začni a krok za krokom na tom stavaj!',
+
+        'Zosúlaď svoju stránku s prístupnosťou:',
+        'Pri tvorbe webu je dôležité, aby bola stránka dostupná čo najširšiemu okruhu ľudí, vrátane ľudí so znevýhodnením.',
+        'Tu je niekoľko tipov na prístupnejšie stránky:',
+        'Kontrast: Zabezpeč dobrý kontrast medzi pozadím a farbou textu, aby sa ľahšie čítalo aj ľuďom so slabším zrakom.',
+        'Napríklad svetlé pozadie s tmavým textom funguje najlepšie.',
+        'Alt text pre obrázky: Ak neskôr pridáš obrázky, pridaj aj alternatívny text (alt), ktorý popíše, čo na nich je.',
+        'Je to obzvlášť užitočné pre používateľov čítačiek obrazovky.',
+        'Sémantické HTML: Používaj správne HTML tagy pre lepšiu štruktúru a prístupnosť.',
+        'Napríklad <h1> pre hlavný názov a <p> pre odseky – čítačkám to uľahčí pochopiť obsah.',
+        'Zameraj sa na čitateľnosť: Používaj jednoduché bezpätkové písmo, napríklad Arial.',
+        'Môžeš tiež zväčšiť veľkosť písma pre lepšiu čitateľnosť.',
     ],
-    'quiz_title' => 'Mini simulácia:',
-    'quiz' => [
-        'Čo je HTML?',
-        'a) Počítačový jazyk na tvorbu obrázkov',
-        'b) Jazyk na štruktúrovanie obsahu na webovej stránke',
-        'c) Editor obrázkov',
-        'Čo je CSS?',
-        'a) Jazyk na vytváranie online databáz',
-        'b) Jazyk na štýlovanie a rozloženie webových stránok',
-        'c) Program na správu súborov',
-        'Ako prepojíme CSS s HTML?',
-        'a) Pomocou značky <link> v HTML dokumente',
-        'b) Použitím značiek <style> v rámci HTML',
-        'c) Nie je možné prepojiť',
-        'Správne odpovede: 1.b, 2.b, 3.a'
-    ],
-    'mini_simulation_title' => 'Upravte svoju stránku:',
+
+    'mini_simulation_title' => 'Mini-simulácia:',
     'mini_simulation' => [
-        'Skúste zmeniť farbu pozadia.',
-        'Pridajte ďalší nadpis (h2) s textom pod hlavným nadpisom.',
-        'Pridajte odkaz na inú webovú stránku, napríklad Google.',
-        'Po akejkoľvek zmene stránku obnovte!'
+        'Otestuj svoje vedomosti',
+        '1. Čo je HTML?',
+        'Programovací jazyk na tvorbu obrázkov',
+        'Jazyk na štruktúrovanie obsahu na webovej stránke',
+        'Editor obrázkov',
+        '2. Čo je CSS?',
+        'Jazyk na tvorbu online databáz',
+        'Jazyk na štýlovanie a rozloženie webových stránok',
+        'Program na správu súborov v počítači',
+        '3. Ako prepojíme CSS s HTML?',
+        'Pomocou tagu <link> v HTML dokumente',
+        'Pomocou prvkov <style> priamo v HTML',
+        'Nedá sa prepojiť',
+        'Správne odpovede: 1.b, 2.b, 3.a',
+        'Uprav svoju stránku:',
+        'Skús zmeniť farbu pozadia.',
+        'Pridaj ďalší nadpis (h2) s textom pod hlavným titulom.',
+        'Pridaj odkaz na inú stránku, napr. Google.',
+        'Po každej zmene – obnov stránku!',
     ],
-    'additional_resources_title' => 'Dodatočné zdroje:',
+
+    'additional_resources_title' => 'Ďalšie zdroje:',
     'additional_resources' => [
         'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS'
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
 

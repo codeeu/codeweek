@@ -4,68 +4,163 @@ return [
 'create-your-own-website-with-html-and-css' => [
     'title' => 'Ustvari svojo spletno stran z HTML in CSS',
     'author' => 'Marko Šolić',
+
     'purposes_title' => 'Namen izziva',
     'purposes' => [
-        'Namen tega izziva je začetnikom predstaviti svet spletnega razvoja.',
-        'S tem projektom se bodo udeleženci naučili osnov HTML in CSS, ki sta temeljna jezika za ustvarjanje in oblikovanje spletnih strani.',
-        'Izziv poudarja praktično učenje, saj boste ustvarili svojo spletno stran od začetka.',
-        'Pridobili boste bistvene veščine spletnega oblikovanja in več samozavesti pri ustvarjanju svoje spletne prisotnosti.'
+        'Namen tega izziva je začetnike uvajati v svet spletnega razvoja.',
+        'Z dokončanjem projekta se udeleženci naučijo osnov HTML in CSS, ki sta temeljni za ustvarjanje in oblikovanje spletnih strani.',
+        'Izziv poudarja učenje z delom in ti pomaga, da svojo spletno stran zgradiš od začetka.',
+        'Pridobil/a boš ključne veščine spletnega oblikovanja in več samozavesti pri gradnji svoje spletne prisotnosti.'
     ],
+
     'description_title' => 'Opis izziva',
     'description' => [
-        'Spletne strani so temelj spletne prisotnosti. Skozi to lekcijo se boste naučili uporabljati HTML za strukturiranje vsebine in CSS za oblikovanje ter ustvarili svojo prvo spletno stran.',
-        'Skozi zabavne korake boste ustvarili stran, ki lahko vsebuje besedilo, slike, barve in povezave.'
+        'Spletne strani so temelj prisotnosti na internetu. V tej lekciji se boš naučil/a uporabljati HTML za strukturiranje vsebine in CSS za oblikovanje ter ustvarjanje svoje prve spletne strani.',
+        'Skozi zabavne korake boš ustvaril/a stran, ki lahko vsebuje besedilo, slike, barve in povezave.'
     ],
-    'target_audience_title' => 'Ciljna publika',
-    'target-audience' => [
-        'Začetniki, ki se želijo naučiti ustvarjati spletne strani',
-        'Študenti ali vsakdo, ki ga zanima, kako nastajajo spletne strani'
+
+    'target_audience_title' => 'Ciljna skupina',
+    'target_audience' => [
+        'Izziv je namenjen začetnikom, ki želijo spoznati, kako ustvariti spletne strani.',
+        'Odličen je za posameznike, ki so novi v spletnem razvoju, za učence/študente ali za vsakogar, ki ga zanima, kako so spletna mesta zgrajena.',
+        'Predhodne izkušnje s programiranjem niso potrebne.'
     ],
+
     'experience_title' => 'Izkušnje',
-    'experience' => 'Začetnik – predhodne izkušnje s programiranjem niso potrebne.',
-    'duration_title' => 'Trajanje',
-    'duration' => '1 do 2 uri',
-    'materials_title' => 'Priporočena orodja',
-    'materials' => [
-        'Računalnik ali prenosnik',
-        'Besedilni urejevalnik, kot sta Beležnica (Windows) ali TextEdit (Mac)'
+    'experience' => [
+        'To je izziv na začetni ravni. Čeprav lahko osnovno znanje računalniškega dela (npr. delo v urejevalniku besedila) pomaga, ni nujno.',
+        'Izziv je zasnovan kot uvod v HTML in CSS.'
     ],
+
+    'duration_title' => 'Trajanje',
+    'duration' => 'Ta izziv običajno traja približno 1–2 uri, odvisno od tvoje izkušenosti in od tega, koliko boš raziskoval/a onkraj osnov.',
+
+    'materials_title' => 'Priporočena orodja:',
+    'materials' => [
+        'Računalnik / prenosnik',
+        'Običajen urejevalnik besedila, npr. Beležnica (Windows) ali TextEdit (Mac)'
+    ],
+
     'instructions_title' => 'Navodila',
     'instructions' => [
-        'Namigi za učitelje: Začnite z osnovami (HTML in CSS), razložite strukturo dokumenta, opozorite na pogoste napake, spodbujajte interaktivno učenje in ustvarjalnost.',
-        'Korak 1: Priprava okolja – uporabite enostaven besedilni urejevalnik, kot je Beležnica ali TextEdit.',
-        'Korak 2: Osnovna struktura HTML dokumenta – datoteko shranite kot index.html in dodajte osnovne HTML oznake.',
-        'Korak 3: Dodajanje slogov s CSS – ustvarite datoteko style.css in dodajte osnovne sloge (barva ozadja, besedilo, pisava, poravnava).',
-        'Korak 4: Povezava HTML s CSS – v razdelku <head> uporabite <link rel="stylesheet" href="style.css">.',
-        'Korak 5: Zagon strani – odprite index.html v brskalniku in preverite rezultat.'
+        'Nasveti za učitelje pred začetkom:',
+        'Če si nov/a v spletnem razvoju, brez skrbi! Tukaj je nekaj nasvetov, ki ti pomagajo voditi učence skozi postopek:',
+        'Začni z osnovami: osredotoči se na razlago ključnih pojmov HTML (struktura spletne strani) in CSS (oblikovanje elementov).',
+        'Bodi potrpežljiv/a in daj učencem čas, da razumejo namen vsake oznake (tag) in lastnosti.',
+        'Pojasni strukturo: ko uvajaš oznake HTML, vizualno razčleni, kako je dokument zgrajen.',
+        'Pokaži razmerje med začetnimi in končnimi oznakami, atributi in gnezdenjem (nesting).',
+        'Izogibaj se pogostim napakam: začetniki pogosto pozabijo pravilno zapreti oznake ali napačno postavijo zavite oklepaje {} v CSS.',
+        'Učence redno spomni, naj preverjajo napake v skladnji.',
+        'Interaktivno učenje: spodbujaj eksperimentiranje s spreminjanjem besedila in slogov.',
+        'Pokaži, kako se majhne spremembe v HTML ali CSS takoj pokažejo na strani po osvežitvi brskalnika.',
+        'Bodi odprt/a za ustvarjalnost: ni ene „prave“ poti za oblikovanje spletne strani.',
+        'Spodbujaj raziskovanje različnih pisav, barv in postavitev.',
+        'Pogoste napake, na katere pazi:',
+        'Pozabljena povezava datoteke CSS z datoteko HTML.',
+        'Napačno gnezdenje oznak v HTML.',
+        'Tipkarske napake v lastnostih CSS (npr. »colour« namesto »color« v nekaterih primerih).',
+        'Preveč zapletena struktura — preproste strani so lahko zelo profesionalne že z nekaj vrsticami kode!',
+
+        'Korak 1: Priprava okolja',
+        'Za ustvarjanje spletne strani ne potrebuješ posebnih orodij — zadostuje običajen urejevalnik besedila, npr. Beležnica (Windows) ali TextEdit (Mac).',
+        'Celotno spletno mesto lahko nastane v preprostem urejevalniku; na internetu so celo strani, narejene popolnoma na ta način.',
+        'Če želiš videti primer takšne strani, si oglej spletno mesto Hrvaškega informatika združenja: hsin.hr',
+
+        'Korak 2: Osnovna struktura dokumenta HTML',
+        'V urejevalniku odpri nov dokument in ga shrani kot index.html',
+        'Glede na različico Windows ali macOS boš morda moral/a najprej omogočiti spreminjanje pripon datotek, saj mora index.txt postati index.html',
+        'V urejevalniku, kot je Beležnica, vpiši osnovno strukturo dokumenta HTML:',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<target charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Tako naj bi bila videti tvoja spletna stran brez CSS (v hrvaščini; tvoj primer je seveda v slovenščini):',
+
+        'Korak 3: Dodajanje slogov s CSS',
+        'CSS se uporablja za oblikovanje elementov na strani. Za začetek bomo dodali osnovne sloge, kot so barva ozadja, barva besedila in velikost pisave.',
+        'V isti mapi ustvari novo besedilno datoteko in jo poimenuj style.css.',
+        'V datoteko style.css vpiši:',
+        'body {',
+        'background-colour: #f0f8ff; /* Light blue background */',
+        'colour: #333; /* Dark Gray Text */',
+        'font-family: Arial, sans-serif; /* Font for text */',
+        'text-align: centre; /* Align text to centre */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Green title */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Paragraph font size */',
+        'colour: #555; /* Gray-blue text for paragraph */',
+        '}',
+
+        'Korak 4: Poveži HTML s CSS',
+        'Ko ustvariš datoteko CSS, jo moraš povezati z datoteko HTML.',
+        'To storiš v razdelku <head> dokumenta HTML tako, da dodaš naslednjo vrstico kode:',
+        '<link rel="stylesheet" href="style.css">',
+        'S tem dokument HTML „ve“, da mora uporabiti sloge iz datoteke CSS.',
+
+        'Korak 5: Zaženi svojo stran',
+        'Shrani obe datoteki: index.html in style.css.',
+        'Dvakrat klikni index.html in odpri datoteko v brskalniku.',
+        'Zdaj boš videl/a svojo spletno stran z besedilom na sredini in z osnovnimi slogi, ki si jih dodal/a',
+        'Tako naj tvoja stran izgleda zdaj:',
+
+        'Spodbujanje raznolikosti v STEM:',
+        'Spletni razvoj je za vsakogar! Ne glede na to, ali si učenec, odrasla oseba, ki išče novo kariero, ali pripadnik premalo zastopanih skupin — ta izziv te vabi, da raziščeš vznemirljivi svet ustvarjanja spletnih strani.',
+        'Področja STEM (znanost, tehnologija, inženirstvo in matematika) so se zgodovinsko soočala s pomanjkanjem raznolikosti; pomembno je, da spodbujamo vse — ne glede na spol, raso ali ozadje — k raziskovanju programiranja in tehnologije.',
+        'Vsakdo ima edinstvene poglede in izkušnje, ki lahko naredijo svet spletnega razvoja bolj ustvarjalen in vključujoč.',
+        'Ko delaš na svoji strani, razmisli, kako lahko digitalni svet narediš tak, da se bodo vsi počutili zastopane in dobrodošle.',
+        'Za začetek ti ni treba biti tehnološki strokovnjak — preprosto začni in nato postopno nadgrajuj!',
+
+        'Naredi svoje spletno mesto dostopno:',
+        'Pri ustvarjanju spletne strani je pomembno, da je čim bolj dostopna čim več ljudem, tudi osebam z ovirami.',
+        'Tukaj je nekaj nasvetov za bolj dostopne strani:',
+        'Kontrast: zagotovi dober kontrast med ozadjem in barvo besedila, da je lažje berljivo za ljudi z motnjami vida.',
+        'Na primer, svetlo ozadje s temnim besedilom deluje najbolje.',
+        'Nadomestno (alt) besedilo za slike: če na stran dodaš slike (v naslednjih korakih), dodaj alt-besedilo, ki opiše, kaj je na sliki.',
+        'To je posebej koristno za uporabnike bralnikov zaslona.',
+        'Semantični HTML: uporabljaj ustrezne oznake HTML za boljšo strukturo in dostopnost.',
+        'Na primer, <h1> za glavni naslov in <p> za odstavke, da bralniki zaslona lažje razumejo vsebino.',
+        'Osredotoči se na berljivost: poskrbi za preprosto, brezserifsko pisavo, npr. Arial.',
+        'Velikost pisave lahko povečaš za boljšo berljivost.',
     ],
-    'quiz_title' => 'Kviz:',
-    'quiz' => [
-        'Kaj je HTML?',
-        'a) Računalniški jezik za ustvarjanje slik',
-        'b) Jezik za strukturiranje vsebine spletne strani',
-        'c) Urejevalnik slik',
-        'Kaj je CSS?',
-        'a) Jezik za ustvarjanje spletnih podatkovnih baz',
-        'b) Jezik za oblikovanje in postavitev spletnih strani',
-        'c) Program za upravljanje datotek',
-        'Kako povežemo CSS z HTML?',
-        'a) Z uporabo oznake <link> v HTML dokumentu',
-        'b) Z uporabo oznak <style> znotraj HTML',
-        'c) Ni mogoče povezati',
-        'Pravilni odgovori: 1.b, 2.b, 3.a'
-    ],
-    'mini_simulation_title' => 'Prilagodite svojo stran:',
+
+    'mini_simulation_title' => 'Mini-simulacija:',
     'mini_simulation' => [
-        'Poskusite spremeniti barvo ozadja.',
-        'Dodajte še en naslov (h2) pod glavni naslov.',
-        'Dodajte povezavo na drugo spletno stran, na primer Google.',
-        'Po vsaki spremembi osvežite stran!'
+        'Preveri svoje znanje',
+        '1. Kaj je HTML?',
+        'Programski jezik za ustvarjanje slik',
+        'Jezik za strukturiranje vsebine na spletnem mestu',
+        'Urejevalnik slik',
+        '2. Kaj je CSS?',
+        'Jezik za ustvarjanje spletnih podatkovnih baz',
+        'Jezik za oblikovanje in postavitev spletnih strani',
+        'Program za upravljanje datotek v računalniku',
+        '3. Kako povežemo CSS z HTML?',
+        'Z uporabo elementa <link> v dokumentu HTML',
+        'Z uporabo elementov <style> znotraj HTML',
+        'Ni mogoče povezati',
+        'Pravilni odgovori: 1.b, 2.b, 3.a',
+        'Prilagodi svojo stran:',
+        'Poskusi spremeniti barvo ozadja.',
+        'Dodaj še en naslov (h2) z besedilom pod glavnim naslovom.',
+        'Dodaj povezavo na drugo spletno mesto, npr. Google.',
+        'Po vsaki spremembi – osveži stran!',
     ],
+
     'additional_resources_title' => 'Dodatni viri:',
     'additional_resources' => [
         'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS'
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
 

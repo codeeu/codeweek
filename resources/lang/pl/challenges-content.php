@@ -4,56 +4,159 @@ return [
 'create-your-own-website-with-html-and-css' => [
     'title' => 'Stwórz własną stronę internetową za pomocą HTML i CSS',
     'author' => 'Marko Šolić',
+
     'purposes_title' => 'Cel wyzwania',
     'purposes' => [
-        'Wprowadzenie początkujących w świat tworzenia stron internetowych.',
-        'Nauka podstaw HTML i CSS, które są fundamentem budowy stron WWW.',
-        'Podkreślenie praktycznej nauki poprzez budowę własnej strony od podstaw.',
-        'Zdobycie podstawowych umiejętności projektowania stron i większa pewność siebie w tworzeniu obecności online.'
+        'Celem tego wyzwania jest wprowadzenie początkujących w świat tworzenia stron internetowych.',
+        'Realizując ten projekt, uczestnicy poznają podstawy HTML i CSS, które są niezbędne do tworzenia i stylowania stron WWW.',
+        'Wyzwanie kładzie nacisk na naukę poprzez działanie, pomagając zbudować własną stronę od zera.',
+        'Zdobędziesz kluczowe umiejętności z zakresu web-designu i zyskasz większą pewność w budowaniu swojej obecności online.'
     ],
+
     'description_title' => 'Opis wyzwania',
     'description' => [
-        'Strony internetowe są podstawą obecności w Internecie.',
-        'W tej lekcji nauczysz się używać HTML do strukturyzacji treści i CSS do stylizacji.',
-        'Stworzysz swoją pierwszą stronę, która może zawierać tekst, obrazy, kolory i linki.'
+        'Strony internetowe są podstawą obecności w sieci. W tej lekcji nauczysz się używać HTML do strukturyzowania treści oraz CSS do stylizowania i stworzenia swojej pierwszej strony.',
+        'Krok po kroku stworzysz stronę, która może zawierać tekst, obrazy, kolory i linki.'
     ],
-    'audience_title' => 'Grupa docelowa',
-    'audience' => [
-        'Początkujący zainteresowani tworzeniem stron internetowych.',
-        'Studenci oraz osoby nowe w programowaniu.',
-        'Każdy, kto chce dowiedzieć się, jak działają strony WWW.'
+
+    'target_audience_title' => 'Grupa docelowa',
+    'target_audience' => [
+        'Wyzwanie jest skierowane do początkujących zainteresowanych tworzeniem stron internetowych.',
+        'Świetne dla osób nowych w tworzeniu stron, dla uczniów i wszystkich ciekawych, jak powstają witryny.',
+        'Nie jest wymagana wcześniejsza znajomość programowania.'
     ],
+
     'experience_title' => 'Doświadczenie',
-    'experience' => 'Poziom początkujący – wcześniejsze doświadczenie w kodowaniu nie jest wymagane.',
-    'duration_title' => 'Czas trwania',
-    'duration' => '1–2 godziny (w zależności od doświadczenia i eksploracji).',
-    'materials_title' => 'Zalecane narzędzia',
-    'materials' => [
-        'Komputer PC lub laptop',
-        'Zwykły edytor tekstu (np. Notatnik w Windows lub TextEdit w MacOS)'
+    'experience' => [
+        'To wyzwanie dla początkujących. Podstawowa znajomość obsługi komputera (np. praca w edytorze tekstu) może pomóc, ale nie jest konieczna.',
+        'Wyzwanie zaprojektowano jako wprowadzenie do HTML i CSS.'
     ],
+
+    'duration_title' => 'Czas trwania',
+    'duration' => 'Wyzwanie zajmie około 1–2 godziny, w zależności od Twojego poziomu i tego, jak bardzo wyjdziesz poza podstawy.',
+
+    'materials_title' => 'Polecane narzędzia:',
+    'materials' => [
+        'Komputer / laptop',
+        'Zwykły edytor tekstu, np. Notepad (Windows) lub TextEdit (Mac)'
+    ],
+
     'instructions_title' => 'Instrukcje',
     'instructions' => [
-        'Krok 1: Przygotowanie środowiska – otwórz edytor tekstu i zapisz nowy plik jako index.html.',
-        'Krok 2: Podstawowa struktura HTML – wpisz szkielet dokumentu HTML i dodaj nagłówek oraz akapit.',
-        'Krok 3: Dodawanie stylów CSS – utwórz plik style.css i dodaj kolory, czcionki i układ.',
-        'Krok 4: Połączenie HTML z CSS – dodaj w sekcji <head> kod <link rel="stylesheet" href="style.css">.',
-        'Krok 5: Uruchom stronę – zapisz oba pliki i otwórz index.html w przeglądarce internetowej.'
+        'Wskazówki dla prowadzących przed rozpoczęciem:',
+        'Jeśli dopiero zaczynasz z tworzeniem stron, spokojnie! Oto kilka wskazówek, które pomogą poprowadzić uczniów przez proces:',
+        'Zacznij od podstaw: wyjaśnij kluczowe pojęcia HTML (struktura strony) i CSS (stylowanie elementów).',
+        'Bądź cierpliwy/a i daj uczniom czas, by zrozumieli cel każdego znacznika i właściwości.',
+        'Wyjaśnij strukturę: wprowadzając znaczniki HTML, pokaż wizualnie, jak zbudowany jest dokument.',
+        'Pokaż zależność między znacznikami otwierającymi i zamykającymi, atrybutami oraz zagnieżdżaniem.',
+        'Unikaj typowych błędów: początkujący często zapominają domykać znaczniki lub mylą nawiasy klamrowe {} w CSS.',
+        'Przypominaj o regularnym sprawdzaniu błędów składni.',
+        'Nauka interaktywna: zachęcaj do eksperymentów ze zmianą tekstu i stylów.',
+        'Pokaż, jak drobne zmiany w HTML lub CSS od razu widać po odświeżeniu strony w przeglądarce.',
+        'Bądź otwarty/a na kreatywność: nie ma jednej „właściwej” drogi projektowania strony.',
+        'Zachęcaj do eksplorowania różnych czcionek, kolorów i układów.',
+        'Typowe błędy, na które warto uważać:',
+        'Zapomnienie o podlinkowaniu pliku CSS w HTML.',
+        'Nieprawidłowe zagnieżdżanie znaczników w HTML.',
+        'Literówki we właściwościach CSS (np. „colour” zamiast „color”).',
+        'Zbytnie komplikowanie struktury strony — proste witryny też mogą wyglądać bardzo profesjonalnie przy zaledwie kilku linijkach kodu!',
+        'Krok 1: Przygotowanie środowiska',
+        'Do stworzenia strony nie potrzebujesz specjalnych narzędzi poza zwykłym edytorem tekstu, np. Notepad (Windows) lub TextEdit (Mac).',
+        'Całą witrynę można zrobić w prostym edytorze; w Internecie są nawet serwisy powstałe właśnie w ten sposób.',
+        'Jeśli chcesz zobaczyć przykład takiej strony, zajrzyj na witrynę Chorwackiego Stowarzyszenia Informatycznego: hsin.hr',
+        'Krok 2: Podstawowa struktura dokumentu HTML',
+        'Otwórz nowy dokument w edytorze i zapisz go jako index.html',
+        'W zależności od wersji Windows lub macOS najpierw włącz możliwość zmiany rozszerzeń, bo index.txt musi stać się index.html',
+        'W edytorze (np. Notepad) wpisz podstawową strukturę dokumentu HTML:',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<target charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Tak powinna wyglądać Twoja strona bez CSS (na przykładzie po chorwacku; Twój przykład oczywiście po polsku):',
+        'Krok 3: Dodawanie stylów w CSS',
+        'CSS służy do stylizowania elementów na stronie. Na początek dodamy podstawowe style: kolor tła, kolor tekstu i rozmiar czcionki.',
+        'W tym samym folderze utwórz nowy plik tekstowy i nazwij go style.css.',
+        'W pliku style.css wpisz:',
+        'body {',
+        'background-colour: #f0f8ff; /* Light blue background */',
+        'colour: #333; /* Dark Gray Text */',
+        'font-family: Arial, sans-serif; /* Font for text */',
+        'text-align: centre; /* Align text to centre */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Green title */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Paragraph font size */',
+        'colour: #555; /* Gray-blue text for paragraph */',
+        '}',
+        'Krok 4: Połącz HTML z CSS',
+        'Gdy utworzysz plik CSS, musisz połączyć go z plikiem HTML.',
+        'Zrobisz to w sekcji <head> dokumentu HTML, dodając następującą linię kodu:',
+        '<link rel="stylesheet" href="style.css">',
+        'Dzięki temu dokument HTML „wie”, że ma korzystać ze stylów z pliku CSS.',
+        'Krok 5: Uruchom swoją stronę',
+        'Zapisz oba pliki: index.html i style.css.',
+        'Kliknij dwukrotnie index.html i otwórz go w przeglądarce.',
+        'Zobaczysz stronę z tekstem na środku i podstawowymi stylami, które dodałeś/aś',
+        'Tak powinna teraz wyglądać Twoja strona:',
+        'Wspieranie różnorodności w STEM:',
+        'Tworzenie stron jest dla wszystkich! Niezależnie od wieku, ścieżki kariery czy przynależności do grup niedostatecznie reprezentowanych — to wyzwanie zaprasza do odkrywania świata budowy witryn.',
+        'Dziedziny STEM (nauka, technologia, inżynieria, matematyka) historycznie cechują się mniejszą różnorodnością; warto zachęcać wszystkich — bez względu na płeć, pochodzenie czy tło — do poznawania kodowania i technologii.',
+        'Każdy ma unikalne perspektywy i doświadczenia, które czynią świat web-developingu bardziej kreatywnym i inkluzywnym.',
+        'Pracując nad stroną, zastanów się, jak uczynić cyfrowy świat miejscem reprezentującym i przyjaznym dla wszystkich.',
+        'Nie musisz być ekspertem — po prostu zacznij się uczyć i rozwijaj się krok po kroku!',
+        'Uczyń swoją stronę dostępną:',
+        'Budując stronę, zadbaj, by była łatwo dostępna dla jak największej liczby osób, w tym osób z niepełnosprawnościami.',
+        'Oto kilka wskazówek dotyczących dostępności:',
+        'Kontrast: Zapewnij dobry kontrast między tłem a kolorem tekstu, by ułatwić czytanie osobom z wadami wzroku.',
+        'Np. jasne tło i ciemny tekst sprawdzają się najlepiej.',
+        'Tekst alternatywny (alt) dla obrazów: dodawaj opisy (alt) mówiące, co znajduje się na obrazku.',
+        'To szczególnie pomocne dla osób korzystających z czytników ekranu.',
+        'Semantyczny HTML: używaj właściwych znaczników dla lepszej struktury i dostępności.',
+        'Np. <h1> dla tytułu głównego i <p> dla akapitów — pomaga to czytnikom ekranu w interpretacji treści.',
+        'Skup się na czytelności: stosuj proste, bezszeryfowe fonty (np. Arial).',
+        'Możesz też zwiększyć rozmiar czcionki dla lepszej czytelności.',
     ],
-    'examples_title' => 'Mini symulacja',
-    'examples' => [
-        'Sprawdź swoją wiedzę:',
-        '1. Czym jest HTML? → Język do strukturyzacji treści stron internetowych.',
-        '2. Czym jest CSS? → Język do stylizacji i układu stron.',
-        '3. Jak łączymy CSS z HTML? → Za pomocą tagu <link> w dokumencie HTML.',
-        'Zmodyfikuj stronę: zmień kolor tła, dodaj nagłówek h2 i link do innej strony.'
+
+    'mini_simulation_title' => 'Mini-symulacja:',
+    'mini_simulation' => [
+        'Sprawdź swoją wiedzę',
+        '1. Czym jest HTML?',
+        'Język programowania do tworzenia obrazów',
+        'Język do strukturyzacji treści na stronie internetowej',
+        'Edytor obrazów',
+        '2. Czym jest CSS?',
+        'Język do tworzenia baz danych online',
+        'Język do stylowania i rozmieszczenia elementów stron',
+        'Program do zarządzania plikami komputera',
+        '3. Jak łączymy CSS z HTML?',
+        'Za pomocą znacznika <link> w dokumencie HTML',
+        'Używając znaczników <style> wewnątrz HTML',
+        'Nie można połączyć',
+        'Prawidłowe odpowiedzi: 1.b, 2.b, 3.a',
+        'Zmodyfikuj swoją stronę:',
+        'Spróbuj zmienić kolor tła.',
+        'Dodaj kolejny nagłówek (h2) z tekstem pod tytułem głównym.',
+        'Dodaj link do innej witryny, np. Google.',
+        'Po każdej zmianie — odśwież stronę!',
     ],
-    'resources_title' => 'Dodatkowe zasoby',
-    'resources' => [
-        'MDN Web Docs – HTML: https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'MDN Web Docs – CSS: https://developer.mozilla.org/en-US/docs/Web/CSS'
+
+    'additional_resources_title' => 'Dodatkowe materiały:',
+    'additional_resources' => [
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
+
 
 'train-it-like-fei-fei-li' => [
     'title' => 'Trenuj jak Fei-Fei Li – Dawanie wizji komputerom!',

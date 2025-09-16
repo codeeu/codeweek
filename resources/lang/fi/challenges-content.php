@@ -4,68 +4,163 @@ return [
     'create-your-own-website-with-html-and-css' => [
     'title' => 'Luo oma verkkosivusi HTML:llä ja CSS:llä',
     'author' => 'Marko Šolić',
+
     'purposes_title' => 'Haasteen tarkoitus',
     'purposes' => [
-        'Johdattaa aloittelijat verkkokehityksen maailmaan.',
-        'Opettaa HTML:n ja CSS:n perusteet, jotka ovat välttämättömiä verkkosivujen luomiseen ja tyylittämiseen.',
-        'Kannustaa käytännön oppimiseen rakentamalla oma verkkosivu alusta asti.',
-        'Antaa perustaidot web-suunnitteluun ja lisää itseluottamusta oman verkkoläsnäolon rakentamisessa.'
+        'Tämän haasteen tarkoitus on johdattaa aloittelijat verkkokehityksen maailmaan.',
+        'Projektin suorittamalla osallistujat oppivat HTML:n ja CSS:n perusteet, jotka ovat keskeisiä verkkosivujen luomiseen ja tyylittelyyn.',
+        'Haaste painottaa tekemällä oppimista ja auttaa sinua rakentamaan oman sivuston alusta asti.',
+        'Saat keskeisiä web-suunnittelun taitoja ja varmuutta oman verkkoläsnäolon rakentamiseen.'
     ],
+
     'description_title' => 'Haasteen kuvaus',
     'description' => [
-        'Verkkosivut ovat internetin perusta. Tässä tehtävässä opit käyttämään HTML:ää sisällön jäsentämiseen ja CSS:ää ulkoasun muokkaamiseen sekä luot ensimmäisen verkkosivusi.',
-        'Hauskojen vaiheiden kautta rakennat sivun, joka voi sisältää tekstiä, kuvia, värejä ja linkkejä.'
+        'Verkkosivut ovat verkkoläsnäolon perusta. Tässä oppitunnissa opit käyttämään HTML:ää sisällön jäsentämiseen ja CSS:ää tyylien luomiseen ja ensimmäisen sivustosi rakentamiseen.',
+        'Hauskojen vaiheiden avulla luot sivun, joka voi sisältää tekstiä, kuvia, värejä ja linkkejä.'
     ],
+
     'target_audience_title' => 'Kohderyhmä',
-    'target-audience' => [
-        'Aloittelijat, jotka haluavat oppia verkkosivujen luomista',
-        'Oppilaat tai kuka tahansa, jota kiinnostaa verkkosivujen rakenne ja toiminta'
+    'target_audience' => [
+        'Haaste on suunnattu aloittelijoille, jotka haluavat oppia tekemään verkkosivuja.',
+        'Sopii erinomaisesti verkkokehityksen vasta-alkajille, opiskelijoille ja kaikille, joita kiinnostaa, miten sivustot rakentuvat.',
+        'Aiempi koodauskokemus ei ole tarpeen.'
     ],
-    'experience_title' => 'Kokemustaso',
-    'experience' => 'Aloittelija – ohjelmointitaustaa ei tarvita.',
+
+    'experience_title' => 'Kokemus',
+    'experience' => [
+        'Tämä on aloittelijatason haaste. Perustaidot tietokoneen käytöstä (esim. tekstieditorin käyttö) voivat auttaa, mutteivät ole välttämättömiä.',
+        'Haaste on suunniteltu johdannoksi HTML:ään ja CSS:ään.'
+    ],
+
     'duration_title' => 'Kesto',
-    'duration' => '1–2 tuntia',
-    'materials_title' => 'Materiaalit',
+    'duration' => 'Haaste kestää arviolta 1–2 tuntia kokemustasostasi ja siitä riippuen, kuinka paljon tutkit perusasioiden lisäksi.',
+
+    'materials_title' => 'Suositellut työkalut:',
     'materials' => [
-        'Tietokone tai kannettava tietokone',
-        'Tekstieditori, kuten Muistio (Windows) tai TextEdit (Mac)'
+        'PC / kannettava',
+        'Tavallinen tekstieditori, kuten Muistio (Windows) tai TextEdit (Mac)'
     ],
+
     'instructions_title' => 'Ohjeet',
     'instructions' => [
-        'Vinkkejä opettajille: aloita perusteista (HTML ja CSS), selitä dokumentin rakenne, huomauta yleisimmistä virheistä, rohkaise interaktiivisuuteen ja luovuuteen.',
-        'Vaihe 1: Ympäristön valmistelu – avaa yksinkertainen tekstieditori (Muistio tai TextEdit).',
-        'Vaihe 2: HTML-tiedoston perusrakenne – tallenna tiedosto nimellä index.html ja lisää HTML-tagien perusrakenne.',
-        'Vaihe 3: Lisää tyylejä CSS:llä – luo style.css ja määritä perusasetuksia (taustaväri, fontti, tekstin väri ja tasaus).',
-        'Vaihe 4: Yhdistä HTML ja CSS – lisää <link rel="stylesheet" href="style.css"> <head>-osioon.',
-        'Vaihe 5: Aja sivu – avaa index.html selaimessa ja tarkista tulos.'
+        'Vinkkejä opettajille ennen aloitusta:',
+        'Jos olet uusi verkkokehityksessä, ei huolta! Tässä muutama vinkki opiskelijoiden ohjaamiseen prosessin aikana:',
+        'Aloita perusteista: selitä HTML:n (verkkosivun rakenne) ja CSS:n (elementtien tyylit) ydinkäsitteet.',
+        'Ole kärsivällinen ja anna oppijoille aikaa ymmärtää jokaisen tunnisteen (tag) ja ominaisuuden tarkoitus.',
+        'Selitä rakenne: esitellessäsi HTML-tunnisteita näytä visuaalisesti, miten dokumentti rakentuu.',
+        'Näytä avaus- ja sulkutunnisteiden, attribuuttien ja sisäkkäisyyden (nesting) suhde.',
+        'Vältä yleisiä virheitä: aloittelijat unohtavat usein sulkea tunnisteet oikein tai sijoittavat CSS:n aaltosulkeet {} väärin.',
+        'Muistuta oppijoita tarkistamaan säännöllisesti syntaksivirheet.',
+        'Interaktiivinen oppiminen: kannusta kokeilemaan tekstin ja tyylien muuttamista.',
+        'Näytä, miten pienet muutokset HTML:ssä tai CSS:ssä näkyvät heti sivulla, kun selain päivitetään.',
+        'Salli luovuus: ei ole yhtä ainoaa “oikeaa” tapaa suunnitella sivu.',
+        'Kannusta tutustumaan eri fontteihin, väreihin ja asetteluihin.',
+        'Yleisiä virheitä, joihin kiinnittää huomiota:',
+        'CSS-tiedoston linkittäminen HTML-tiedostoon unohtuu.',
+        'Virheellinen tunnisteiden sisäkkäisyys HTML:ssä.',
+        'Kirjoitusvirheet CSS-ominaisuuksissa (esim. “colour” vs. “color”).',
+        'Rakenne menee liian monimutkaiseksi — yksinkertaiset sivut voivat näyttää erittäin ammattimaisilta muutamalla koodirivillä!',
+
+        'Vaihe 1: Ympäristön valmistelu',
+        'Verkkosivun tekemiseen et tarvitse erikoistyökaluja, vaan riittää tavallinen tekstieditori, kuten Muistio (Windows) tai TextEdit (Mac).',
+        'Koko sivuston voi tehdä yksinkertaisella tekstieditorilla; verkossa on jopa sivustoja, jotka on rakennettu kokonaan näin.',
+        'Jos haluat esimerkin tällaisesta sivusta, katso Kroatian tietojenkäsittelyliiton sivusto: hsin.hr',
+
+        'Vaihe 2: HTML-asiakirjan perusrakenne',
+        'Avaa uusi dokumentti editorissa ja tallenna se nimellä index.html',
+        'Windowsin tai macOS:n versiosta riippuen sinun on ehkä ensin sallittava tiedostopäätteiden muuttaminen, koska index.txt tulee muuttaa muotoon index.html',
+        'Kirjoita editorissa (esim. Muistio) HTML-dokumentin perusrakenne:',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<target charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Tältä sivustosi näyttää ilman CSS:ää (kroatiaksi; oma esimerkkisi on tietenkin suomeksi):',
+
+        'Vaihe 3: Lisää tyyliä CSS:llä',
+        'CSS:ää käytetään sivun elementtien tyylittelyyn. Aloitamme perusasioista: taustaväri, tekstin väri ja fonttikoko.',
+        'Luo samaan kansioon uusi tekstitiedosto nimeltä style.css.',
+        'Kirjoita tiedostoon style.css seuraava:',
+        'body {',
+        'background-colour: #f0f8ff; /* Light blue background */',
+        'colour: #333; /* Dark Gray Text */',
+        'font-family: Arial, sans-serif; /* Font for text */',
+        'text-align: centre; /* Align text to centre */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Green title */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Paragraph font size */',
+        'colour: #555; /* Gray-blue text for paragraph */',
+        '}',
+
+        'Vaihe 4: Yhdistä HTML ja CSS',
+        'Kun olet luonut CSS-tiedoston, linkitä se HTML-tiedostoon.',
+        'Tee tämä HTML:n <head>-osassa lisäämällä seuraava koodirivi:',
+        '<link rel="stylesheet" href="style.css">',
+        'Tämän avulla HTML-dokumentti “tietää” käyttää CSS-tiedoston tyylejä.',
+
+        'Vaihe 5: Käynnistä sivusi',
+        'Tallenna molemmat tiedostot: index.html ja style.css.',
+        'Avaa index.html kaksoisnapsauttamalla sitä selaimessa.',
+        'Näet nyt sivustosi, jossa teksti on keskitetty ja jossa on lisäämäsi perustyylit',
+        'Tältä sivustosi näyttää nyt:',
+
+        'Monimuotoisuuden edistäminen STEM-aloilla:',
+        'Verkkokehitys on kaikille! Olitpa nuori opiskelija, uusi uravaihtoehtoa etsivä aikuinen tai aliedustettuun ryhmään kuuluva — tämä haaste kutsuu tutustumaan sivujen tekemisen maailmaan.',
+        'STEM-aloilla (tiede, teknologia, tekniikka ja matematiikka) on historiallisesti ollut monimuotoisuuden puutetta; on tärkeää rohkaista kaikkia — sukupuolesta, taustasta tai alkuperästä riippumatta — tutustumaan koodaukseen ja teknologiaan.',
+        'Jokaisella on ainutlaatuisia näkökulmia ja kokemuksia, jotka voivat tehdä verkkokehityksestä luovempaa ja osallistavampaa.',
+        'Työskennellessäsi sivusi parissa mieti, miten voit tehdä digitaalisesta maailmasta paikan, jossa kaikki tuntevat olonsa edustetuiksi ja tervetulleiksi.',
+        'Sinun ei tarvitse olla tekniikka-asiantuntija aloittaaksesi — aloita oppiminen ja rakenna siitä eteenpäin!',
+
+        'Tee sivustostasi saavutettava:',
+        'Kun rakennat sivua, varmista, että siihen pääsee mahdollisimman moni — myös henkilöt, joilla on toimintarajoitteita.',
+        'Vinkkejä saavutettavuuteen:',
+        'Kontrasti: huolehdi hyvästä kontrastista taustan ja tekstin värin välillä, jotta teksti on helpompi lukea heikkonäköisille.',
+        'Esimerkiksi vaalea tausta ja tumma teksti toimivat parhaiten.',
+        'Alt-teksti kuville: jos lisäät kuvia (myöhemmissä vaiheissa), lisää alt-teksti, joka kuvaa kuvan sisältöä.',
+        'Tämä on erityisen hyödyllistä ruudunlukuohjelmien käyttäjille.',
+        'Semanttinen HTML: käytä oikeita HTML-tunnisteita paremman rakenteen ja saavutettavuuden takaamiseksi.',
+        'Käytä esimerkiksi <h1>-tunnistetta pääotsikolle ja <p>-tunnistetta kappaleille — se helpottaa ruudunlukijoiden työtä.',
+        'Panosta luettavuuteen: käytä helppolukuista groteskikirjasinta, kuten Arial.',
+        'Voit myös kasvattaa fonttikokoa luettavuuden parantamiseksi.',
     ],
-    'quiz_title' => 'Kysely:',
-    'quiz' => [
-        'Mikä on HTML?',
-        'a) Kieli kuvien tekemiseen',
-        'b) Kieli verkkosivujen sisällön jäsentämiseen',
-        'c) Kuvankäsittelyohjelma',
-        'Mikä on CSS?',
-        'a) Kieli verkkotietokantojen luomiseen',
-        'b) Kieli verkkosivujen ulkoasun ja tyylin määrittelyyn',
-        'c) Tiedostonhallintaohjelma',
-        'Miten yhdistät CSS:n HTML:ään?',
-        'a) <link>-tagilla HTML-dokumentissa',
-        'b) Käyttämällä <style>-tageja HTML:ssä',
-        'c) Sitä ei voi yhdistää',
-        'Oikeat vastaukset: 1.b, 2.b, 3.a'
-    ],
-    'mini_simulation_title' => 'Muokkaa omaa sivuasi:',
+
+    'mini_simulation_title' => 'Mini-simulaatio:',
     'mini_simulation' => [
-        'Vaihda taustaväri.',
-        'Lisää uusi alaotsikko (h2) pääotsikon alle.',
-        'Lisää linkki toiselle sivulle, esim. Googleen.',
-        'Muista päivittää sivu jokaisen muutoksen jälkeen!'
+        'Testaa tietosi',
+        '1. Mitä on HTML?',
+        'Ohjelmointikieli kuvien tekemiseen',
+        'Kieli sisällön jäsentämiseen verkkosivulla',
+        'Kuvankäsittelyohjelma',
+        '2. Mitä on CSS?',
+        'Kieli verkkotietokantojen luomiseen',
+        'Kieli verkkosivujen tyyleihin ja asetteluun',
+        'Ohjelma tietokoneen tiedostojen hallintaan',
+        '3. Miten yhdistämme CSS:n HTML:ään?',
+        'Käyttämällä <link>-elementtiä HTML-dokumentissa',
+        'Käyttämällä <style>-elementtejä HTML:n sisällä',
+        'Ei voi yhdistää',
+        'Oikeat vastaukset: 1.b, 2.b, 3.a',
+        'Muokkaa sivuasi:',
+        'Kokeile vaihtaa taustaväriä.',
+        'Lisää toinen otsikko (h2) pääotsikon alle.',
+        'Lisää linkki toiselle sivustolle, esim. Googleen.',
+        'Päivitä sivu jokaisen muutoksen jälkeen!',
     ],
-    'additional_resources_title' => 'Lisäresurssit:',
+
+    'additional_resources_title' => 'Lisämateriaalia:',
     'additional_resources' => [
-        'https://developer.mozilla.org/fi/docs/Web/HTML',
-        'https://developer.mozilla.org/fi/docs/Web/CSS'
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
 
