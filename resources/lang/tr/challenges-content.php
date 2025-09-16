@@ -1,73 +1,169 @@
 <?php
 
 return [
-    'create-your-own-website-with-html-and-css' => [
+'create-your-own-website-with-html-and-css' => [
     'title' => 'HTML ve CSS ile Kendi Web Sitenizi Oluşturun',
     'author' => 'Marko Šolić',
-    'purposes_title' => 'Mücadelenin amacı',
+
+    'purposes_title' => 'Zorluğun amacı',
     'purposes' => [
-        'Yeni başlayanları web geliştirme dünyasına tanıtmak.',
-        'Katılımcılara HTML ve CSS’in temellerini öğretmek – web sayfaları oluşturmak ve tasarlamak için temel diller.',
-        'Sıfırdan web sitesi oluşturarak uygulamalı öğrenmeyi teşvik etmek.',
-        'Web tasarımında temel beceriler kazanmak ve çevrimiçi varlık oluşturmada özgüveni artırmak.'
+        'Bu zorluğun amacı, yeni başlayanları web geliştirme dünyasıyla tanıştırmaktır.',
+        'Bu projeyi tamamladığınızda, web sayfaları oluşturmak ve stillendirmek için temel olan HTML ve CSS’in temellerini öğreneceksiniz.',
+        'Zorluk, uygulamalı öğrenmeyi vurgular ve sıfırdan kendi web sitenizi kurmanıza yardımcı olur.',
+        'Web tasarımında temel beceriler kazanacak ve çevrimiçi varlığınızı oluştururken daha güvenli hissedeceksiniz.'
     ],
-    'description_title' => 'Meydan okumanın açıklaması',
+
+    'description_title' => 'Zorluğun açıklaması',
     'description' => [
-        'Web siteleri, internet varlığının temelidir. Bu derste HTML ile içeriğin nasıl yapılandırılacağını ve CSS ile nasıl stillendirileceğini öğrenerek ilk web sitenizi oluşturacaksınız.',
-        'Adım adım eğlenceli görevlerle metin, resim, renk ve bağlantılar içeren bir sayfa hazırlayacaksınız.'
+        'Web siteleri, çevrimiçi varlığın temelidir. Bu derste, içeriği yapılandırmak için HTML’yi ve ilk web sitenizi oluşturup stillendirmek için CSS’i kullanmayı öğreneceksiniz.',
+        'Eğlenceli adımlarla, metin, görseller, renkler ve bağlantılar içerebilen bir sayfa oluşturacaksınız.'
     ],
+
     'target_audience_title' => 'Hedef kitle',
-    'target-audience' => [
-        'Web sitesi yapmayı öğrenmek isteyen yeni başlayanlar',
-        'Öğrenciler ve web sayfalarının nasıl çalıştığını merak eden herkes'
+    'target_audience' => [
+        'Bu zorluk, web sitesi oluşturmayı öğrenmek isteyen yeni başlayanlara yöneliktir.',
+        'Web geliştirmede yeni olanlar, öğrenciler veya web sitelerinin nasıl kurulduğunu merak eden herkes için uygundur.',
+        'Önceden kodlama deneyimi gerekmez.'
     ],
+
     'experience_title' => 'Deneyim',
-    'experience' => 'Başlangıç seviyesi – Önceden deneyim gerekmez.',
+    'experience' => [
+        'Bu, başlangıç seviyesinde bir zorluktur. Bir metin düzenleyiciyi kullanmak gibi temel bilgisayar bilgisi yardımcı olabilir, ancak zorunlu değildir.',
+        'Zorluk, HTML ve CSS’e giriş olarak tasarlanmıştır.'
+    ],
+
     'duration_title' => 'Süre',
-    'duration' => '1–2 saat',
-    'materials_title' => 'Gerekli materyaller',
+    'duration' => 'Bu zorluğun yaklaşık 1–2 saat sürmesi beklenir; deneyim düzeyinize ve temel konuların ötesinde ne kadar keşfettiğinize bağlıdır.',
+
+    'materials_title' => 'Önerilen araçlar:',
     'materials' => [
-        'Bilgisayar veya dizüstü bilgisayar',
-        'Basit bir metin editörü (Windows’ta Not Defteri, Mac’te TextEdit vb.)'
+        'PC / Dizüstü bilgisayar',
+        'Not Defteri (Windows) veya TextEdit (Mac) gibi sıradan bir metin düzenleyici'
     ],
-    'instructions_title' => 'Yönergeler',
+
+    'instructions_title' => 'Talimatlar',
     'instructions' => [
-        'Öğretmen ipuçları: HTML ve CSS’in temellerini anlatın, doküman yapısını açıklayın, yaygın hataları vurgulayın, öğrencileri yaratıcılığa teşvik edin.',
-        'Adım 1: Ortamı hazırlayın – basit bir metin editörü açın.',
-        'Adım 2: HTML yapısını yazın – dosyayı index.html olarak kaydedin ve temel HTML etiketlerini yazın.',
-        'Adım 3: CSS ekleyin – style.css dosyası oluşturun ve arka plan rengi, yazı tipi, metin rengi gibi stiller tanımlayın.',
-        'Adım 4: HTML ve CSS’i bağlayın – <head> kısmına <link rel="stylesheet" href="style.css"> ekleyin.',
-        'Adım 5: Sayfayı çalıştırın – index.html dosyasını tarayıcıda açın ve sonucu görün.'
+        'Başlamadan önce eğitmenler için ipuçları:',
+        'Web geliştirmeye yeniyseniz endişelenmeyin! İşte öğrencileri sürece yönlendirmenize yardımcı olacak bazı ipuçları:',
+        'Temellerle başlayın: HTML’nin (bir web sayfasının yapısı) ve CSS’in (öğelerin stilleri) temel kavramlarını açıklamaya odaklanın.',
+        'Sabırlı olun ve her etiketi (tag) ve özelliğin amacını kavramaları için öğrencilere zaman tanıyın.',
+        'Yapıyı açıklayın: HTML etiketlerini tanıtırken belgenin nasıl yapılandığını görsel olarak gösterin.',
+        'Açılış/kapanış etiketleri, öznitelikler ve iç içe geçme (nesting) arasındaki ilişkiyi gösterin.',
+        'Yaygın hatalardan kaçının: yeni başlayanlar sık sık etiketleri düzgün kapatmayı unutur veya CSS’te süslü parantezleri {} yanlış yere koyar.',
+        'Öğrencilere düzenli olarak sözdizimi hatalarını kontrol etmelerini hatırlatın.',
+        'Etkileşimli öğrenme: metin ve stilleri değiştirerek deneme yapmalarını teşvik edin.',
+        'HTML veya CSS’teki küçük değişikliklerin tarayıcıyı yeniledikten sonra sayfada hemen nasıl göründüğünü gösterin.',
+        'Yaratıcılığa açık olun: bir web sitesini tasarlamanın tek bir “doğru” yolu yoktur.',
+        'Öğrencileri farklı yazı tiplerini, renkleri ve düzenleri keşfetmeye teşvik edin.',
+        'Dikkat edilmesi gereken yaygın hatalar:',
+        'CSS dosyasını HTML dosyasına bağlamayı unutmak.',
+        'HTML’de hatalı etiket iç içelikleri.',
+        'CSS özelliklerinde yazım hataları (ör. bazı durumlarda colour yerine color kullanmak).',
+        'Sayfa yapısını gereksiz yere karmaşıklaştırmak — basit siteler de birkaç satır kodla oldukça profesyonel görünebilir!',
+
+        'Adım 1: Ortamın hazırlanması',
+        'Bir web sitesi oluşturmak için Not Defteri (Windows) veya TextEdit (Mac) gibi sıradan bir metin düzenleyici dışında özel araçlar kurmanız gerekmez.',
+        'Tüm bir site basit bir metin düzenleyicide yapılabilir; internette tamamen bu şekilde yapılmış siteler bile vardır.',
+        'Böyle bir siteye örnek görmek isterseniz, Hırvatistan Bilişim Derneği’nin web sitesine bakın: hsin.hr',
+
+        'Adım 2: Temel HTML belge yapısı',
+        'Düzenleyicinizde yeni bir belge açın ve index.html olarak kaydedin',
+        'Kullandığınız Windows veya macOS sürümüne bağlı olarak önce dosya uzantılarını değiştirmenizi sağlayan seçeneği açmanız gerekebilir; çünkü index.txt’nin index.html olması gerekir',
+        'Not Defteri gibi bir düzenleyicide HTML belgesinin temel yapısını girin:',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<target charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'CSS olmadan web siteniz şöyle görünmelidir (Hırvatça; sizin örneğiniz elbette Türkçe):',
+
+        'Adım 3: CSS ile stiller ekleyin',
+        'CSS, sayfadaki öğeleri stillendirmek için kullanılır. Başlangıç olarak arka plan rengi, metin rengi ve yazı tipi boyutu gibi temel stilleri ekleyeceğiz.',
+        'Aynı klasörde yeni bir metin dosyası oluşturun ve adını style.css yapın.',
+        'style.css dosyasına şunları yazın:',
+        'body {',
+        'background-colour: #f0f8ff; /* Light blue background */',
+        'colour: #333; /* Dark Gray Text */',
+        'font-family: Arial, sans-serif; /* Font for text */',
+        'text-align: centre; /* Align text to centre */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Green title */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Paragraph font size */',
+        'colour: #555; /* Gray-blue text for paragraph */',
+        '}',
+
+        'Adım 4: HTML’yi CSS’e bağlayın',
+        'CSS dosyasını oluşturduktan sonra, onu HTML dosyasına bağlamanız gerekir.',
+        'Bunu HTML belgesinin <head> bölümünde aşağıdaki kod satırını ekleyerek yapın:',
+        '<link rel="stylesheet" href="style.css">',
+        'Böylece HTML belgesi, stilleri CSS dosyasından kullanması gerektiğini “bilir”.',
+
+        'Adım 5: Sayfanızı başlatın',
+        'Her iki dosyayı kaydedin: index.html ve style.css.',
+        'index.html dosyasına çift tıklayın ve internet tarayıcısında açın.',
+        'Artık, ortalanmış metin ve eklediğiniz temel stillerle sitenizi göreceksiniz',
+        'Web siteniz şimdi şöyle görünmelidir:',
+
+        'STEM’de çeşitliliği teşvik etmek:',
+        'Web geliştirme herkes içindir! Genç bir öğrenci, yeni kariyer arayan bir yetişkin ya da az temsil edilen bir gruptan biri olun — bu zorluk, web sitesi oluşturmanın heyecan verici dünyasını keşfetmeye davet ediyor.',
+        'STEM alanlarında (Bilim, Teknoloji, Mühendislik, Matematik) tarihsel olarak çeşitlilik eksikliği vardır; cinsiyet, ırk veya geçmişten bağımsız olarak herkesin kodlama ve teknolojiyi keşfetmesi teşvik edilmelidir.',
+        'Herkesin, web geliştirme dünyasını daha yaratıcı ve kapsayıcı kılabilecek benzersiz bakış açıları ve deneyimleri vardır.',
+        'Siteniz üzerinde çalışırken, dijital dünyayı herkesin temsil edildiğini ve hoş karşılandığını hissedeceği bir yer haline nasıl getirebileceğinizi düşünün.',
+        'Başlamak için teknoloji uzmanı olmanız gerekmez — öğrenmeye başlayın ve üzerine inşa edin!',
+
+        'Web sitenizi erişilebilir yapın:',
+        'Bir web sitesi oluştururken, engelli bireyler de dahil mümkün olduğunca çok kişinin kolayca erişebilmesini sağlamak önemlidir.',
+        'Daha erişilebilir siteler için ipuçları:',
+        'Kontrast: arka plan ile metin rengi arasında iyi bir kontrast sağlayın; bu, görme güçlüğü çekenler için okumayı kolaylaştırır.',
+        'Örneğin, açık arka plan ve koyu metin en iyi sonucu verir.',
+        'Görseller için alternatif metin: ileriki adımlarda görsel eklerseniz, görselin ne olduğunu açıklayan alt metin ekleyin.',
+        'Bu, ekran okuyucu kullanan kişiler için özellikle faydalıdır.',
+        'Anlamlı (semantik) HTML: daha iyi yapı ve erişilebilirlik için doğru HTML etiketlerini kullanın.',
+        'Örneğin, ana başlık için <h1> ve paragraflar için <p> kullanın — bu, ekran okuyucuların içeriği daha iyi anlamasına yardımcı olur.',
+        'Okunabilirliğe odaklanın: Arial gibi basit, serifsiz bir yazı tipi kullanın.',
+        'Okunabilirliği artırmak için yazı tipi boyutunu da büyütebilirsiniz.',
     ],
-    'quiz_title' => 'Bilgi testi:',
-    'quiz' => [
-        'HTML nedir?',
-        'a) Resim oluşturma dili',
-        'b) Web sayfalarının içeriğini yapılandırma dili',
-        'c) Resim düzenleme programı',
-        'CSS nedir?',
-        'a) Veritabanı oluşturma dili',
-        'b) Web sayfalarının görünümünü ve stilini belirleme dili',
-        'c) Dosya yönetim programı',
-        'CSS HTML’e nasıl bağlanır?',
-        'a) HTML belgesine <link> etiketi ile',
-        'b) HTML içinde <style> etiketi kullanarak',
-        'c) Bağlamak mümkün değil',
-        'Doğru cevaplar: 1.b, 2.b, 3.a'
-    ],
+
     'mini_simulation_title' => 'Mini simülasyon:',
     'mini_simulation' => [
-        'Arka plan rengini değiştirin.',
-        'Ana başlığın altına (h2) bir alt başlık ekleyin.',
-        'Google gibi başka bir siteye bağlantı ekleyin.',
-        'Her değişiklikten sonra sayfanızı yenilemeyi unutmayın!'
+        'Bilginizi test edin',
+        '1. HTML nedir?',
+        'Görsel oluşturmaya yönelik programlama dili',
+        'Bir web sitesinde içeriği yapılandırma dili',
+        'Görsel düzenleme programı',
+        '2. CSS nedir?',
+        'Çevrimiçi veritabanları oluşturma dili',
+        'Web sitelerini stillendirme ve yerleşimlendirme dili',
+        'Bilgisayar dosyalarını yönetme programı',
+        '3. CSS’i HTML’e nasıl bağlarız?',
+        'HTML belgesinde <link> etiketini kullanarak',
+        '<style> etiketlerini HTML içinde kullanarak',
+        'Bağlanamaz',
+        'Doğru cevaplar: 1.b, 2.b, 3.a',
+        'Sayfanızı düzenleyin:',
+        'Arka plan rengini değiştirmeyi deneyin.',
+        'Ana başlığın altına başka bir başlık (h2) ekleyin.',
+        'Başka bir siteye bağlantı ekleyin (ör. Google).',
+        'Her değişiklikten sonra sayfayı yenileyin!',
     ],
+
     'additional_resources_title' => 'Ek kaynaklar:',
     'additional_resources' => [
-        'https://developer.mozilla.org/tr/docs/Web/HTML',
-        'https://developer.mozilla.org/tr/docs/Web/CSS'
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
+
 
     'train-it-like-fei-fei-li' => [
     'title' => 'Fei-Fei Li gibi eğit – Bilgisayarlara görmeyi öğret!',

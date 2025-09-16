@@ -41,17 +41,13 @@
     <section id="challenge-detail-page" class="font-['Blinker'] overflow-hidden">
         <section class="flex overflow-hidden relative">
             <div class="flex relative pt-32 pb-0 w-full transition-all bg-orange-gradient md:py-32">
-                <div
-                    class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
-                    <div
-                        class="flex flex-col gap-28 duration-1000 codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
+                    <div class="flex flex-col gap-28 duration-1000 codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                            <h2
-                                class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
+                            <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 @lang("challenges-content.$slug.title")
                             </h2>
-                            <p
-                                class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
+                            <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
                                 @include('2021.challenges._author', [
                                     'author' => __("challenges-content.$slug.author"),
                                 ])
@@ -59,19 +55,18 @@
                         </div>
 
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
-                            <button
-                                class="hidden justify-center items-center w-20 h-20 rounded-full duration-300 bg-yellow hover:bg-primary">
+                            <button class="hidden justify-center items-center w-20 h-20 rounded-full duration-300 bg-yellow hover:bg-primary">
                                 <img class="ml-2 duration-300" src="/images/fi_play.svg" />
                             </button>
                         </div>
 
                         <img class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden" loading="lazy"
-                            src="{{ asset('img/2021/challenges/thumbnails/' . $slug . '.png') }}"
-                            style="clip-path: ellipse(71% 73% at 40% 20%);" />
+                             src="{{ asset('img/2021/challenges/thumbnails/' . $slug . '.png') }}"
+                             style="clip-path: ellipse(71% 73% at 40% 20%);" />
 
                         <img class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
-                            loading="lazy" src="{{ asset('img/2021/challenges/thumbnails/' . $slug . '.png') }}"
-                            style="clip-path: ellipse(70% 140% at 70% 25%);" />
+                             loading="lazy" src="{{ asset('img/2021/challenges/thumbnails/' . $slug . '.png') }}"
+                             style="clip-path: ellipse(70% 140% at 70% 25%);" />
                     </div>
                 </div>
             </div>
@@ -85,8 +80,7 @@
                             <p class="p-0 mb-4 text-2xl font-normal">@lang("challenges-content.$slug.purposes_title")</p>
                             <ul class="list-decimal ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
                                 @foreach ($tarr("challenges-content.$slug.purposes") as $purpose)
-                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">{{ $purpose }}
-                                    </li>
+                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">{{ $purpose }}</li>
                                 @endforeach
                             </ul>
                         </div>
@@ -122,8 +116,7 @@
                             <p class="p-0 mb-4 text-2xl font-normal">@lang("challenges-content.$slug.target_audience_title")</p>
                             <ul class="ml-4 list-decimal">
                                 @foreach ($tarr("challenges-content.$slug.target_audience") as $audience)
-                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">{{ $audience }}
-                                    </li>
+                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">{{ $audience }}</li>
                                 @endforeach
                             </ul>
                         </div>
@@ -132,8 +125,7 @@
                             <p class="p-0 mb-4 text-2xl font-normal">@lang("challenges-content.$slug.materials_title")</p>
                             <ul class="ml-4 list-decimal">
                                 @foreach ($tarr("challenges-content.$slug.materials") as $material)
-                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">{{ $material }}
-                                    </li>
+                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">{{ $material }}</li>
                                 @endforeach
                             </ul>
                         </div>
@@ -141,8 +133,7 @@
 
                     <div class="col-span-2">
                         <div class="px-6 py-8 bg-white rounded-lg lg:p-16">
-                            <p
-                                class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">
+                            <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">
                                 @lang("challenges-content.$slug.title")
                             </p>
 
@@ -160,14 +151,12 @@
                                 @php $descs = $tarr("challenges-content.$slug.description"); @endphp
                                 @if (count($descs))
                                     @foreach ($descs as $description)
-                                        <p
-                                            class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
+                                        <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
                                             {{ $description }}
                                         </p>
                                     @endforeach
                                 @else
-                                    <p
-                                        class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
+                                    <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
                                         {{ $tstr("challenges-content.$slug.description") }}
                                     </p>
                                 @endif
@@ -176,19 +165,13 @@
                             @php
                                 // Load arrays safely
                                 $ins = trans("challenges-content.$slug.instructions");
-                                if (!is_array($ins)) {
-                                    $ins = [];
-                                }
+                                if (!is_array($ins)) $ins = [];
 
                                 $mini = trans("challenges-content.$slug.mini_simulation");
-                                if (!is_array($mini)) {
-                                    $mini = [];
-                                }
+                                if (!is_array($mini)) $mini = [];
 
                                 $resources = trans("challenges-content.$slug.additional_resources");
-                                if (!is_array($resources)) {
-                                    $resources = [];
-                                }
+                                if (!is_array($resources)) $resources = [];
 
                                 // Helpers
                                 $joinLines = function (array $lines) {
@@ -197,100 +180,19 @@
 
                                 // Code blocks from instructions (by indices in your translation list)
                                 $codeHtml = $joinLines([
-                                    $ins[25] ?? null,
-                                    $ins[26] ?? null,
-                                    $ins[27] ?? null,
-                                    $ins[28] ?? null,
-                                    $ins[29] ?? null,
-                                    $ins[30] ?? null,
-                                    $ins[31] ?? null,
-                                    $ins[32] ?? null,
-                                    $ins[33] ?? null,
-                                    $ins[34] ?? null,
-                                    $ins[35] ?? null,
-                                    $ins[36] ?? null,
+                                    $ins[25] ?? null, $ins[26] ?? null, $ins[27] ?? null, $ins[28] ?? null,
+                                    $ins[29] ?? null, $ins[30] ?? null, $ins[31] ?? null, $ins[32] ?? null,
+                                    $ins[33] ?? null, $ins[34] ?? null, $ins[35] ?? null, $ins[36] ?? null,
                                 ]);
 
                                 $codeCss = $joinLines([
-                                    $ins[42] ?? null,
-                                    $ins[43] ?? null,
-                                    $ins[44] ?? null,
-                                    $ins[45] ?? null,
-                                    $ins[46] ?? null,
-                                    $ins[47] ?? null,
-                                    $ins[48] ?? null,
-                                    $ins[49] ?? null,
-                                    $ins[50] ?? null,
-                                    $ins[51] ?? null,
-                                    $ins[52] ?? null,
-                                    $ins[53] ?? null,
+                                    $ins[42] ?? null, $ins[43] ?? null, $ins[44] ?? null, $ins[45] ?? null,
+                                    $ins[46] ?? null, $ins[47] ?? null, $ins[48] ?? null, $ins[49] ?? null,
+                                    $ins[50] ?? null, $ins[51] ?? null, $ins[52] ?? null, $ins[53] ?? null,
                                     $ins[54] ?? null,
                                 ]);
 
                                 $codeLink = $joinLines([$ins[58] ?? null]);
-
-                                // Mini simulation parsing (quiz + modify tasks)
-                                $quizGroups = [];
-                                $correctLine = null;
-                                $modifyHeader = null;
-                                $modifyTasks = [];
-
-                                if (!empty($mini)) {
-                                    $ptr = 0;
-                                    $quizIntro = isset($mini[$ptr]) ? trim($mini[$ptr]) : null;
-                                    if ($quizIntro && stripos($quizIntro, 'check') === 0) {
-                                        $ptr++;
-                                    }
-
-                                    for ($q = 0; $q < 3 && $ptr < count($mini); $q++) {
-                                        $qText = trim((string) ($mini[$ptr] ?? ''));
-                                        if ($qText === '') {
-                                            break;
-                                        }
-                                        if (stripos($qText, 'Correct answers') === 0) {
-                                            $correctLine = $qText;
-                                            $ptr++;
-                                            break;
-                                        }
-
-                                        $opts = [];
-                                        for ($j = 1; $j <= 3 && $ptr + $j < count($mini); $j++) {
-                                            $opt = trim((string) $mini[$ptr + $j]);
-                                            if (stripos($opt, 'Correct answers') === 0) {
-                                                $correctLine = $opt;
-                                                $j--;
-                                                break;
-                                            }
-                                            $opts[] = $opt;
-                                        }
-                                        $quizGroups[] = ['q' => $qText, 'opts' => $opts];
-                                        $ptr += 1 + count($opts);
-                                        if ($correctLine) {
-                                            break;
-                                        }
-                                    }
-
-                                    for (; $ptr < count($mini); $ptr++) {
-                                        $line = trim((string) $mini[$ptr]);
-                                        if ($line === '') {
-                                            continue;
-                                        }
-                                        if (!$correctLine && stripos($line, 'Correct answers') === 0) {
-                                            $correctLine = $line;
-                                            continue;
-                                        }
-                                        if (
-                                            !$modifyHeader &&
-                                            (stripos($line, 'Modify') === 0 || stripos($line, 'Change') === 0)
-                                        ) {
-                                            $modifyHeader = $line;
-                                            continue;
-                                        }
-                                        if ($modifyHeader) {
-                                            $modifyTasks[] = $line;
-                                        }
-                                    }
-                                }
                             @endphp
 
                             <div class="mb-6 space-y-6 text-default md:text-xl">
@@ -328,10 +230,8 @@
                                         @endif
                                     @endforeach
 
-                                    {{-- Placeholder image for example site --}}
                                     <figure class="my-4">
-                                        <img width="100%"
-                                            src="/images/challenges/create-your-own-website-with-html-and-css/0.jpg">
+                                        <img width="100%" src="/images/challenges/create-your-own-website-with-html-and-css/0.jpg" alt="">
                                     </figure>
                                 </div>
 
@@ -351,8 +251,7 @@
                                     @if (!empty($ins[37]))
                                         <p class="mb-2 text-slate-700">{{ $ins[37] }}</p>
                                         <figure class="my-4">
-                                            <img width="100%"
-                                                src="/images/challenges/create-your-own-website-with-html-and-css/1.jpg">
+                                            <img width="100%" src="/images/challenges/create-your-own-website-with-html-and-css/1.jpg" alt="">
                                         </figure>
                                     @endif
                                 </div>
@@ -401,13 +300,10 @@
                                     @if (!empty($ins[64]))
                                         <p class="mb-2 text-slate-700">{{ $ins[64] }}</p>
                                         <figure class="my-4">
-                                            <img width="100%"
-                                                src="/images/challenges/create-your-own-website-with-html-and-css/2.jpg">
-                                    </figure>
-                                @endif
+                                            <img width="100%" src="/images/challenges/create-your-own-website-with-html-and-css/2.jpg" alt="">
+                                        </figure>
+                                    @endif
                                 </div>
-                            
-                    
                             </div>
 
                             {{-- Diversity --}}
@@ -440,9 +336,7 @@
                                     @foreach ($pairs as [$a, $b])
                                         @if (!empty($ins[$a]) || !empty($ins[$b]))
                                             <li class="text-default md:text-xl">
-                                                {{ $ins[$a] ?? '' }}@if (!empty($ins[$b]))
-                                                    {{ ' ' . $ins[$b] }}
-                                                @endif
+                                                {{ $ins[$a] ?? '' }}@if (!empty($ins[$b])) {{ ' ' . $ins[$b] }} @endif
                                             </li>
                                         @endif
                                     @endforeach
@@ -450,33 +344,111 @@
                             </div>
 
                             {{-- Mini simulation (Quiz + Modify tasks) --}}
+                            @php
+                                // --- Locale-agnostic Mini-simulation parsing (EN/NL/MT supported) ---
+                                $mini = array_map(fn($l) => trim((string)$l), $mini);
+
+// Accept "1.", "1)", "1-" etc.
+$reQ       = '/^\s*\d+\s*[\.\)\-]?\s+/u';
+
+$reHeading = '/^(Test je kennis|Check your knowledge|Test your knowledge|Ittestja l-għarfien tiegħek|Sprawdź swoją wiedzę|Testează-ți cunoștințele|Verifică-ți cunoștințele|Otestuj svoje vedomosti|Preveri svoje znanje|Comprueba tus conocimientos|Pon a prueba tus conocimientos|Testaa tietosi|Testa dina kunskaper|Bilginizi test edin|Перевірте свої знання)/iu';
+
+$reCorrect = '/^(Correct answers?|Juiste antwoorden|Tweġibiet korretti|Prawidłowe odpowiedzi|Răspunsuri corecte|Správne odpovede|Pravilni odgovori|Respuestas correctas|Oikeat vastaukset|Rätta svar|Doğru cevaplar|Правильні відповіді)\s*:/iu';
+
+$reModify  = '/^(Modify (your|the) page|Change your page|Pas je pagina aan|Ibdel il-paġna tiegħek|Zmodyfikuj swoją stronę|Modifică pagina ta|Uprav svoju stránku|Prilagodi svojo stran|Modifica tu página|Muokkaa sivuasi|Ändra din sida|Sayfanızı düzenleyin|Змініть свою сторінку)\s*:/iu';
+
+
+
+
+
+
+                                // Find quiz heading
+                                $headingIdx = null;
+                                foreach ($mini as $i => $line) {
+                                    if (preg_match($reHeading, $line)) { $headingIdx = $i; break; }
+                                }
+
+                                $quizGroups   = [];
+                                $correctLine  = null;
+                                $modifyHeader = null;
+                                $modifyTasks  = [];
+
+                                $ptr = ($headingIdx !== null) ? $headingIdx + 1 : 0;
+                                $N   = count($mini);
+
+                                while ($ptr < $N) {
+                                    $line = $mini[$ptr];
+                                    if ($line === '') { $ptr++; continue; }
+
+                                    if (preg_match($reCorrect, $line)) { $correctLine = $line; $ptr++; continue; }
+                                    if (preg_match($reModify,  $line)) { $modifyHeader = $line; $ptr++; break; }
+
+                                    // Question like "1. What is HTML?"
+                                    if (preg_match($reQ, $line)) {
+                                        $qText = $line; $opts = []; $ptr++;
+
+                                        // Collect up to 3 options (accept a), a., a- OR plain)
+                                        while ($ptr < $N) {
+                                            $cand = trim($mini[$ptr]);
+                                            if ($cand === '') { $ptr++; continue; }
+                                            if (preg_match($reQ, $cand) || preg_match($reCorrect, $cand) || preg_match($reModify, $cand)) break;
+
+                                            $opts[] = $cand; $ptr++;
+                                            if (count($opts) === 3) break;
+                                        }
+
+                                        $quizGroups[] = ['q' => $qText, 'opts' => $opts];
+                                        continue;
+                                    }
+
+                                    $ptr++;
+                                }
+
+                                // Collect "Modify your page" tasks
+                                for (; $ptr < $N; $ptr++) {
+                                    $line = trim((string) $mini[$ptr]);
+                                    if ($line === '') continue;
+
+                                    if (preg_match($reCorrect, $line)) { $correctLine = $line; continue; }
+                                    if (!$modifyHeader && preg_match($reModify, $line)) { $modifyHeader = $line; continue; }
+                                    if ($modifyHeader) $modifyTasks[] = $line;
+                                }
+
+                                // Heading to display
+                                $quizHeading = $headingIdx !== null
+                                    ? $mini[$headingIdx]
+                                    : ($mini[0] ?? __('Check your knowledge'));
+                            @endphp
+
                             <div>
                                 <strong class="block mb-2 text-default md:text-xl">@lang("challenges-content.$slug.mini_simulation_title")</strong>
 
-                                {{-- Quiz groups --}}
-                                @if (!empty($mini) && count($quizGroups))
-                                    <strong class="block mb-2 text-default md:text-xl">
-                                        {{ $mini[0] ?? 'Check your knowledge' }}
-                                    </strong>
+                                @if (count($quizGroups))
+                                    <strong class="block mb-2 text-default md:text-xl">{{ $quizHeading }}</strong>
+
                                     @foreach ($quizGroups as $g)
-                                        <p class="mb-1 font-semibold text-default md:text-xl text-slate-700">
-                                            {{ $g['q'] }}</p>
-                                        <ol class="mb-4 ml-6 list-decimal text-default md:text-xl text-slate-500">
+                                        <p class="mb-1 font-semibold text-default md:text-xl text-slate-700">{{ $g['q'] }}</p>
+                                        <ol class="mb-4 ml-6 list-[lower-alpha] text-default md:text-xl text-slate-500">
                                             @foreach ($g['opts'] as $opt)
-                                                <li class="text-default md:text-xl">{{ $opt }}</li>
+                                                <li class="text-default md:text-xl">{{ preg_replace('/^[abc][\)\.\-]\s*/iu', '', $opt) }}</li>
                                             @endforeach
                                         </ol>
                                     @endforeach
+
                                     @if ($correctLine)
-                                        <p class="mb-4 italic text-default md:text-xl text-slate-600">{{ $correctLine }}
-                                        </p>
+                                        <p class="mb-4 italic text-default md:text-xl text-slate-600">{{ $correctLine }}</p>
                                     @endif
+                                @else
+                                    {{-- Fallback: raw lines if parsing fails --}}
+                                    @foreach ($mini as $line)
+                                        @if ($line !== '')
+                                            <p class="text-default md:text-xl text-slate-700">{{ $line }}</p>
+                                        @endif
+                                    @endforeach
                                 @endif
 
-                                {{-- Modify your page --}}
                                 @if ($modifyHeader || count($modifyTasks))
-                                    <strong
-                                        class="block mb-2 text-default md:text-xl">{{ $modifyHeader ?? 'Modify your page:' }}</strong>
+                                    <strong class="block mb-2 text-default md:text-xl">{{ $modifyHeader ?? 'Modify your page:' }}</strong>
                                     @if (count($modifyTasks))
                                         <ul class="ml-6 list-disc text-slate-500 text-default md:text-xl">
                                             @foreach ($modifyTasks as $task)
@@ -489,13 +461,13 @@
 
                             {{-- Additional resources --}}
                             @if (!empty($resources))
-                                <div>
+                                <div class="mt-6">
                                     <strong class="block mb-2 text-default md:text-xl">@lang("challenges-content.$slug.additional_resources_title")</strong>
                                     <ul class="ml-6 list-disc text-default md:text-xl">
                                         @foreach ($resources as $url)
                                             <li class="text-default md:text-xl">
                                                 <a href="{{ $url }}" target="_blank" rel="noopener noreferrer"
-                                                    class="underline hover:no-underline text-[#1c4da1]">{{ $url }}</a>
+                                                   class="underline hover:no-underline text-[#1c4da1]">{{ $url }}</a>
                                             </li>
                                         @endforeach
                                     </ul>
@@ -503,19 +475,18 @@
                             @endif
                         </div>
 
-
                         @include('2021.challenges._share')
                         @include('2021.challenges._download', [
-                                'url' => "https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2025/$slug-$locale.docx",
-                            ])
+                            'url' => "https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2025/$slug-$locale.docx",
+                        ])
                     </div>
                 </div>
             </div>
-            </div>
         </section>
+
         <script>
             (function() {
-                const SCOPE_SELECTOR = "#challenge-detail-page"; // change to "body" if you want site-wide
+                const SCOPE_SELECTOR = "#challenge-detail-page";
                 const PUNCT_TO_TRIM = '.,;:!?)]}"\'';
                 const URL_RE = /\bhttps?:\/\/[^\s<]+/gi;
 
@@ -530,17 +501,15 @@
 
                     // don’t process if inside a link
                     if (textNode.parentElement && textNode.parentElement.closest('a')) return;
-                    // optional: skip code/pre blocks
+                    // skip code/pre blocks
                     if (textNode.parentElement && textNode.parentElement.closest('code,pre')) return;
 
                     const frag = document.createDocumentFragment();
-                    let last = 0,
-                        m, punctTrimRe = new RegExp("[" + escapeForCharClass(PUNCT_TO_TRIM) + "]+$");
+                    let last = 0, m,
+                        punctTrimRe = new RegExp("[" + escapeForCharClass(PUNCT_TO_TRIM) + "]+$");
 
                     while ((m = URL_RE.exec(text)) !== null) {
-                        const raw = m[0],
-                            start = m.index,
-                            end = start + raw.length;
+                        const raw = m[0], start = m.index, end = start + raw.length;
                         if (start > last) frag.appendChild(document.createTextNode(text.slice(last, start)));
 
                         const trimmed = raw.replace(punctTrimRe, "");
@@ -564,7 +533,7 @@
 
                 function linkifyTree(root) {
                     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-                        acceptNode: node => node.parentElement ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+                        acceptNode: node => node.parentElement ? NodeFilter.FILTER_ACCEPT : NodeFilter.REJECT
                     });
                     const toProcess = [];
                     while (walker.nextNode()) toProcess.push(walker.currentNode);
@@ -574,7 +543,7 @@
                 function init(scopeRoot) {
                     if (!scopeRoot) return;
                     linkifyTree(scopeRoot);
-                    // observe future changes
+
                     const obs = new MutationObserver(muts => {
                         for (const m of muts) {
                             m.addedNodes && m.addedNodes.forEach(n => {
@@ -583,10 +552,7 @@
                             });
                         }
                     });
-                    obs.observe(scopeRoot, {
-                        childList: true,
-                        subtree: true
-                    });
+                    obs.observe(scopeRoot, { childList: true, subtree: true });
                 }
 
                 if (document.readyState === "loading") {
@@ -598,3 +564,4 @@
         </script>
     </section>
 @endsection
+
