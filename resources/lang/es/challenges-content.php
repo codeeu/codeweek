@@ -4,70 +4,166 @@ return [
 'create-your-own-website-with-html-and-css' => [
     'title' => 'Crea tu propia página web con HTML y CSS',
     'author' => 'Marko Šolić',
-    'purposes_title' => 'Propósito del desafío',
+
+    'purposes_title' => 'Propósito del reto',
     'purposes' => [
-        'El propósito de este desafío es introducir a los principiantes en el mundo del desarrollo web.',
-        'Al completar este proyecto, los participantes aprenderán los conceptos básicos de HTML y CSS, fundamentales para crear y dar estilo a las páginas web.',
-        'El desafío enfatiza el aprendizaje práctico, ayudándote a construir tu propia página desde cero.',
-        'Ganarás habilidades esenciales de diseño web y mayor confianza en la creación de tu propia presencia en línea.'
+        'El propósito de este reto es introducir a los principiantes en el mundo del desarrollo web.',
+        'Al completar este proyecto, los participantes aprenderán lo básico de HTML y CSS, fundamentales para crear y dar estilo a páginas web.',
+        'El reto enfatiza el aprendizaje práctico, ayudándote a construir tu propia web desde cero.',
+        'Ganarás habilidades esenciales de diseño web y más confianza para construir tu presencia online.'
     ],
-    'description_title' => 'Descripción del desafío',
+
+    'description_title' => 'Descripción del reto',
     'description' => [
-        'Las páginas web son la base de la presencia en Internet. A través de esta lección aprenderás a usar HTML para estructurar contenido y CSS para dar estilo y crear tu primera página web.',
-        'Con pasos divertidos, crearás una página que puede contener texto, imágenes, colores y enlaces.'
+        'Las páginas web son la base de la presencia en Internet. En esta lección aprenderás a usar HTML para estructurar contenido y CSS para estilizar y crear tu primera web.',
+        'Mediante pasos divertidos, crearás una página que puede contener texto, imágenes, colores y enlaces.'
     ],
-    'target_audience_title' => 'Público destinatario',
+
+    'target_audience_title' => 'Público objetivo',
     'target_audience' => [
-        'Principiantes interesados en aprender a crear páginas web',
-        'Estudiantes o cualquier persona interesada en cómo se construyen las páginas web'
+        'Este reto está dirigido a principiantes interesados en aprender a crear páginas web.',
+        'Es perfecto para quienes son nuevos en el desarrollo web, estudiantes o cualquier persona curiosa sobre cómo se construyen los sitios.',
+        'No se requiere experiencia previa en programación.'
     ],
+
     'experience_title' => 'Experiencia',
-    'experience' => 'Principiante – no se requieren conocimientos previos de programación.',
-    'duration_title' => 'Duración',
-    'duration' => '1 a 2 horas',
-    'materials_title' => 'Herramientas recomendadas',
-    'materials' => [
-        'Ordenador o portátil',
-        'Editor de texto como Bloc de notas (Windows) o TextEdit (Mac)'
+    'experience' => [
+        'Es un reto de nivel inicial. Aunque algunos conocimientos básicos de uso del ordenador (como manejar un editor de texto) pueden ayudar, no son necesarios.',
+        'El reto está diseñado como una introducción a HTML y CSS.'
     ],
+
+    'duration_title' => 'Duración',
+    'duration' => 'Este reto debería llevar aproximadamente de 1 a 2 horas, según tu nivel de experiencia y cuánto explores más allá de lo básico.',
+
+    'materials_title' => 'Herramientas recomendadas:',
+    'materials' => [
+        'PC / portátil',
+        'Editor de texto común, como el Bloc de notas (Windows) o TextEdit (Mac)'
+    ],
+
     'instructions_title' => 'Instrucciones',
     'instructions' => [
-        'Sugerencias para docentes: comienza con lo básico (HTML y CSS), explica la estructura de un documento, señala errores comunes, fomenta el aprendizaje interactivo y la creatividad.',
-        'Paso 1: Preparar el entorno – utiliza un editor de texto sencillo como Bloc de notas o TextEdit.',
-        'Paso 2: Estructura básica de un documento HTML – guarda el archivo como index.html e incluye las etiquetas básicas de HTML.',
-        'Paso 3: Añadir estilos con CSS – crea un archivo style.css y añade estilos básicos (color de fondo, texto, fuente, alineación).',
-        'Paso 4: Vincular HTML con CSS – en la sección <head> usa <link rel="stylesheet" href="style.css">.',
-        'Paso 5: Ejecutar la página – abre index.html en el navegador y comprueba el resultado.'
+        'Consejos para docentes antes de comenzar:',
+        'Si eres nuevo/a en el desarrollo web, ¡no te preocupes! Aquí tienes algunos consejos para ayudar a guiar al alumnado durante el proceso:',
+        'Empieza por lo básico: céntrate en explicar los conceptos clave de HTML (estructura de una página web) y CSS (estilo de los elementos).',
+        'Sé paciente y permite al alumnado tiempo para entender el propósito de cada etiqueta (tag) y propiedad.',
+        'Explica la estructura: al presentar etiquetas HTML, desglosa visualmente cómo está estructurado el documento.',
+        'Muestra la relación entre etiquetas de apertura y cierre, atributos y anidamiento (nesting).',
+        'Evita errores comunes: quienes comienzan a menudo olvidan cerrar correctamente las etiquetas o colocan mal las llaves {} en CSS.',
+        'Recuerda al alumnado que revise periódicamente los errores de sintaxis.',
+        'Aprendizaje interactivo: fomenta que experimenten cambiando texto y estilos.',
+        'Muéstrales cómo los pequeños cambios en HTML o CSS se reflejan de inmediato al actualizar el navegador.',
+        'Mantén la creatividad: no existe una única forma “correcta” de diseñar una web.',
+        'Anima a explorar distintas tipografías, colores y maquetaciones.',
+        'Errores comunes a vigilar:',
+        'Olvidar enlazar el archivo CSS con el archivo HTML.',
+        'Anidamiento incorrecto de etiquetas en HTML.',
+        'Errores tipográficos en propiedades CSS (p. ej., usar «colour» en lugar de «color» en algunos casos).',
+        'Complicar en exceso la estructura: ¡los sitios sencillos pueden verse muy profesionales con solo unas pocas líneas de código!',
+
+        'Paso 1: Preparación del entorno',
+        'Para crear una web no necesitas herramientas especiales más allá de un editor de texto común, como el Bloc de notas (Windows) o TextEdit (Mac).',
+        'Todo un sitio puede hacerse en un editor de texto sencillo; incluso hay webs en Internet creadas completamente así.',
+        'Si quieres ver un ejemplo de este tipo de sitio, visita la web de la Asociación Croata de Informática: hsin.hr',
+
+        'Paso 2: Estructura básica de un documento HTML',
+        'Abre un documento nuevo en tu editor y guárdalo como index.html',
+        'Según la versión de Windows o macOS que uses, primero necesitarás activar la opción que permite modificar extensiones de archivo, porque index.txt debe convertirse en index.html',
+        'En un editor como el Bloc de notas, introduce la estructura básica del documento HTML:',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<target charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Así debería verse tu sitio web sin CSS (en croata; tu ejemplo, por supuesto, en español):',
+
+        'Paso 3: Añadir estilos con CSS',
+        'CSS se usa para dar estilo a los elementos de la página. Para empezar, añadiremos estilos básicos como color de fondo, color del texto y tamaño de fuente.',
+        'En la misma carpeta, crea un documento de texto nuevo y llámalo style.css.',
+        'En style.css, escribe lo siguiente:',
+        'body {',
+        'background-colour: #f0f8ff; /* Light blue background */',
+        'colour: #333; /* Dark Gray Text */',
+        'font-family: Arial, sans-serif; /* Font for text */',
+        'text-align: centre; /* Align text to centre */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Green title */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Paragraph font size */',
+        'colour: #555; /* Gray-blue text for paragraph */',
+        '}',
+
+        'Paso 4: Conectar HTML con CSS',
+        'Una vez creado el archivo CSS, debes enlazarlo con el archivo HTML.',
+        'Hazlo en la sección <head> del HTML añadiendo la siguiente línea de código:',
+        '<link rel="stylesheet" href="style.css">',
+        'Así el documento HTML “sabe” que debe usar los estilos del archivo CSS.',
+
+        'Paso 5: Inicia tu página',
+        'Guarda ambos archivos: index.html y style.css.',
+        'Haz doble clic en index.html y ábrelo en tu navegador.',
+        'Ahora verás tu web con el texto centrado y los estilos básicos que has añadido',
+        'Así debería verse tu sitio web ahora:',
+
+        'Fomentar la diversidad en STEM:',
+        '¡El desarrollo web es para todos! Ya seas un/a estudiante joven, una persona adulta buscando una nueva carrera o alguien de un grupo subrepresentado, este reto te invita a explorar el apasionante mundo de crear sitios web.',
+        'Los campos STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) han tenido históricamente poca diversidad; es importante animar a todas las personas —sin importar género, raza u origen— a explorar la programación y la tecnología.',
+        'Cada persona aporta perspectivas y experiencias únicas que pueden hacer el desarrollo web más creativo e inclusivo.',
+        'Mientras trabajas en tu sitio, piensa cómo hacer del mundo digital un lugar donde todas las personas se sientan representadas y bienvenidas.',
+        'No necesitas ser experto/a en tecnología para empezar: ¡simplemente empieza a aprender y construye a partir de ahí!',
+
+        'Haz tu web accesible:',
+        'Al construir una web, es importante garantizar que puedan acceder a ella el mayor número de personas posible, incluidas personas con discapacidad.',
+        'Algunos consejos para crear sitios más accesibles:',
+        'Contraste: asegúrate de un buen contraste entre el fondo y el color del texto para facilitar la lectura a personas con discapacidad visual.',
+        'Por ejemplo, un fondo claro con texto oscuro funciona mejor.',
+        'Texto alternativo (alt) para imágenes: si añades imágenes (en pasos posteriores), añade texto alternativo que describa qué muestra la imagen.',
+        'Esto es especialmente útil para quienes utilizan lectores de pantalla.',
+        'HTML semántico: usa etiquetas correctas de HTML para una mejor estructura y accesibilidad.',
+        'Por ejemplo, usa <h1> para el título principal y <p> para los párrafos, lo que ayuda a los lectores de pantalla a entender mejor el contenido.',
+        'Enfócate en la legibilidad: asegúrate de que el texto sea fácil de leer con una tipografía sencilla sin serifas como Arial.',
+        'También puedes aumentar el tamaño de fuente para mejorar la legibilidad.',
     ],
-    'quiz_title' => 'Cuestionario:',
-    'quiz' => [
-        '¿Qué es HTML?',
-        'a) Un lenguaje para crear imágenes',
-        'b) Un lenguaje para estructurar el contenido de las páginas web',
-        'c) Un editor de imágenes',
-        '¿Qué es CSS?',
-        'a) Un lenguaje para crear bases de datos web',
-        'b) Un lenguaje para dar estilo y maquetar páginas web',
-        'c) Un programa de gestión de archivos',
-        '¿Cómo vinculamos CSS con HTML?',
-        'a) Usando la etiqueta <link> en el documento HTML',
-        'b) Usando etiquetas <style> dentro de HTML',
-        'c) No es posible vincularlo',
-        'Respuestas correctas: 1.b, 2.b, 3.a'
-    ],
-    'mini_simulation_title' => 'Personaliza tu página:',
+
+    'mini_simulation_title' => 'Mini-simulación:',
     'mini_simulation' => [
-        'Cambia el color de fondo.',
-        'Agrega un nuevo título (h2) debajo del título principal.',
-        'Añade un enlace a otra página web, por ejemplo Google.',
-        '¡Después de cada cambio, actualiza la página!'
+        'Comprueba tus conocimientos',
+        '1. ¿Qué es HTML?',
+        'Lenguaje de programación para crear imágenes',
+        'Lenguaje para estructurar contenido en el sitio web',
+        'Editor de imágenes',
+        '2. ¿Qué es CSS?',
+        'Lenguaje para crear bases de datos en línea',
+        'Lenguaje para el estilo y la maquetación de sitios web',
+        'Programa para gestionar archivos del ordenador',
+        '3. ¿Cómo conectamos CSS con HTML?',
+        'Usando la etiqueta <link> en el documento HTML',
+        'Usando etiquetas <style> dentro de HTML',
+        'No se puede conectar',
+        'Respuestas correctas: 1.b, 2.b, 3.a',
+        'Modifica tu página:',
+        'Prueba a cambiar el color de fondo.',
+        'Añade otro encabezado (h2) con texto debajo del título principal.',
+        'Añade un enlace a otro sitio web, p. ej., Google.',
+        '¡Después de cualquier cambio, actualiza la página!',
     ],
+
     'additional_resources_title' => 'Recursos adicionales:',
     'additional_resources' => [
-        'https://developer.mozilla.org/es/docs/Web/HTML',
-        'https://developer.mozilla.org/es/docs/Web/CSS'
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
+
 
 'train-it-like-fei-fei-li' => [
     'title' => 'Entrena como Fei-Fei Li – ¡dale visión a las computadoras!',
