@@ -4,53 +4,76 @@ return [
 'create-your-own-website-with-html-and-css' => [
     'title' => 'Oħloq il-websajt tiegħek stess bl-HTML u CSS',
     'author' => 'Marko Šolić',
+
     'purposes_title' => 'Għan tal-isfida',
     'purposes' => [
-        'L-għan ta’ din l-isfida hu li tinfurma lill-beginners fid-dinja tal-iżvilupp tal-web.',
-        'Billi tlesti dan il-proġett, il-parteċipanti jitgħallmu l-bażi ta’ HTML u CSS, li huma fundamentali għall-ħolqien u l-istilizzar ta’ paġni web.',
-        'L-isfida tiffoka fuq tagħlim prattiku, biex tgħinek tibni l-websajt tiegħek mill-bidu.',
-        'Inti tikseb ħiliet essenzjali għall-ħolqien tad-disinn tal-web u sserraħ ruħek aktar fid-dħul online tiegħek.'
+        'L-għan ta’ din l-isfida huwa li tintroduċi lill-bidużi fid-dinja tal-iżvilupp tal-web.',
+        'Billi tlesti dan il-proġett, il-parteċipanti jitgħallmu l-baŜi tal-HTML u l-CSS, li huma fundamentali biex jinħolqu u jiġu stilizzati paġni tal-web.',
+        'L-isfida tenfasizza tagħlim prattiku, u tgħinek tibni l-websajt tiegħek mill-bidu nett.',
+        'Takkwista ħiliet essenzjali għad-disinn tal-web u ssir aktar kunfidenti fil-bini tal-preżenza onlajn tiegħek.'
     ],
+
     'description_title' => 'Deskrizzjoni tal-isfida',
     'description' => [
-        'Is-siti tal-web huma l-pedament tal-preżenza fuq l-Internet. Permezz ta’ dan il-lezzjoni, titgħallem kif tuża l-HTML biex tistruttura l-kontenut u l-CSS biex tistilizza u toħloq l-ewwel websajt tiegħek.',
-        'Permezz ta’ passi divertenti, toħloq paġna li tista’ tkun fih it-test, immaġini, kuluri, u links.'
+        'Il-websajts huma l-pedament tal-preżenza fuq l-Internet. Permezz ta’ din il-lezzjoni, titgħallem kif tuża l-HTML biex tistruttura l-kontenut u l-CSS biex tistilja u toħloq l-ewwel websajt tiegħek.',
+        'Permezz ta’ passi divertenti, toħloq paġna li tista’ tinkludi test, immaġini, kuluri u links.'
     ],
-    'target_audience_title' => 'Udjenza',
+
+    'target_audience_title' => 'Udjenza fil-mira',
     'target_audience' => [
-        'Din l-isfida hija mmirata lejn dawk li jibdew u li għandhom interess jitgħallmu kif toħloq siti tal-web.',
-        'Hija perfetta għal individwi li huma ġodda fl-iżvilupp tal-web, studenti, jew dawk kurjużi dwar kif isiru s-siti tal-web.',
-        'M’hemmx bżonn ta’ esperjenza fil-coding.'
+        'Din l-isfida hija mmirata lejn dawk li jibdew u jridu jitgħallmu kif jinħolqu websajts.',
+        'Hija perfetta għal persuni ġodda fl-iżvilupp tal-web, studenti, jew kull min hu kurjuż dwar kif jinbnew il-websajts.',
+        'Ma teħtieġ l-ebda esperjenza ta’ programmazzjoni minn qabel.'
     ],
+
     'experience_title' => 'Esperjenza',
     'experience' => [
-        'Din hija sfida għal livell ta’ dawk li jibdew.',
-        'Xi għarfien preċedenti dwar operazzjonijiet bażiċi tal-kompjuter jista’ jkun ta’ għajnuna, iżda mhuwiex meħtieġ.',
-        'L-isfida hija maħsuba bħala introduzzjoni għal HTML u CSS.'
+        'Din hija sfida għal livell ta’ bdew. Għalkemm xi għarfien bażiku ta’ kif jintuża kompjuter, bħal editur tat-test, jista’ jkun ta’ għajnuna, mhux meħtieġ.',
+        'L-isfida hija maħsuba bħala introduzzjoni għall-HTML u l-CSS.'
     ],
-    'duration_title' => 'Ħin',
-    'duration' => 'Din l-isfida tieħu madwar 1 sa 2 siegħat, skont l-esperjenza tiegħek.',
-    'materials_title' => 'Għodod Rakkomandati:',
+
+    'duration_title' => 'Tul ta’ żmien',
+    'duration' => 'Din l-isfida mistennija tieħu madwar 1 sa 2 siegħat, skont il-livell ta’ esperjenza tiegħek u kemm tesplora lil hinn mill-baŜi.',
+
+    'materials_title' => 'Għodod rakkomandati:',
     'materials' => [
         'PC / Laptop',
-        'Editur tat-test regolari, bħal Notepad (Windows) jew TextEdit (Mac)'
+        'Editur tat-test normali, bħal Notepad (Windows) jew TextEdit (Mac)'
     ],
+
     'instructions_title' => 'Istruzzjonijiet',
     'instructions' => [
-        'Pariri għall-Għalliema qabel tibdew:',
-        'Jekk int ġdid fl-iżvilupp tal-web, tħossokx stressat! Hawn xi pariri:',
-        'Ibda bil-bażi: spjega l-kunċetti ta’ HTML u CSS.',
-        'Uri l-istruttura tad-dokument u r-relazzjoni bejn it-tags.',
-        'Evita żbalji komuni: tags magħluqa, kurkettini CSS.',
-        'Inkorraġġixxi l-kreattività u l-esperimentazzjoni.',
-        '---',
-        'Pass 1: Ittejjeb l-ambjent',
-        'Uża editur tat-test sempliċi bħal Notepad.',
-        'Pass 2: Struttura Bażika tal-HTML',
+        'Pariri għall-edukaturi qabel tibda:',
+        'Jekk int ġdid għall-iżvilupp tal-web, tinkwetax! Hawn huma xi pariri biex jgħinuk tiggwida lill-istudenti matul il-proċess:',
+        'Ibda mill-baŜi: iffoka fuq l-ispjegazzjoni tal-kunċetti ewlenin ta’ HTML (l-istruttura ta’ paġna tal-web) u CSS (l-istilizzazzjoni tal-elementi).',
+        'Kun paċenzjuż u agħti lill-istudenti ħin biex jifhmu l-iskop ta’ kull tikketta (tag) u propjetà.',
+        'Spjega l-istruttura: meta tintroduċi t-tags tal-HTML, uri b’mod viżiv kif hu strutturat id-dokument.',
+        'Uri lill-istudenti r-relazzjoni bejn it-tags tal-ftuħ u tal-għeluq, l-attributi u n-nesting.',
+        'Evita żbalji komuni: il-bidużi spiss jinsew jagħlqu t-tags kif suppost jew iqiegħdu ħażin il-parentesi mgħawġa {} fil-CSS.',
+        'Fakkar lill-istudenti biex jivverifikaw regolarment għal żbalji fis-sintassi.',
+        'Tagħlim interattiv: ħeġġeġ lill-istudenti jesperimentaw billi jibdlu t-test u l-istili.',
+        'Urihom kif bidliet żgħar f’HTML jew CSS jidhru mill-ewwel fuq il-paġna wara li taġġorna l-browser.',
+        'Kun miftuħ għall-kreattività: m’hemmx mod wieħed “korrett” biex tiddisinja websajt.',
+        'Ħeġġeġ lill-istudenti jesploraw fonts, kuluri u layouts differenti.',
+        'Żbalji komuni li għandek toqgħod attent għalihom:',
+        'Li jintesa li tgħaqqad il-fajl CSS mal-fajl HTML.',
+        'Nesting ħażin ta’ tags fl-HTML.',
+        'Żbalji ta’ kitba fil-propjetajiet tal-CSS (eż., tuża colour minflok color f’xi każijiet).',
+        'Tgħaqqal iżżejjed l-istruttura tal-paġna – websajts sempliċi jistgħu jidhru professjonali b’ftit linji ta’ kodiċi!',
+
+        'Pass 1: Tħejjija tal-ambjent',
+        'Biex toħloq websajt, m’għandekx għalfejn tinstalla għodod speċjali ħlief editur tat-test ordinarju bħal Notepad (Windows) jew TextEdit (Mac).',
+        'Websajt sħiħa tista’ tinħoloq f’editur tat-test sempliċi, u hemm anki websajts fuq l-Internet mibnija kompletament b’dan il-mod.',
+        'Jekk trid tara eżempju ta’ sit bħal dan, iċċekkja l-websajt tal-Assoċjazzjoni Kroata tal-Informatika: hsin.hr',
+
+        'Pass 2: Struttura bażika ta’ dokument HTML',
+        'Iftaħ dokument ġdid fl-editur u ssejvjaha bħala index.html',
+        'Skont il-verżjoni ta’ Windows jew Mac li qed tuża, l-ewwel jista’ jkollok bżonn issib l-għażla li tippermettilek tibdel l-estensjonijiet tal-fajls, għax index.txt irid isir index.html',
+        'F’editur bħal Notepad, daħħal l-istruttura bażika tad-dokument HTML:',
         '<!DOCTYPE html>',
         '<html lang="en">',
         '<head>',
-        '<meta charset="UTF-8">',
+        '<target charset="UTF-8">',
         '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
         '<title>My first website</title>',
         '</head>',
@@ -59,41 +82,85 @@ return [
         '<p>This is my first website I created using HTML and CSS.</p>',
         '</body>',
         '</html>',
-        'Pass 3: Żid Stili bl-użu ta’ CSS',
-        'body { background-color: #f0f8ff; color: #333; font-family: Arial; text-align: center; }',
-        'h1 { color: #4CAF50; }',
-        'p { font-size: 18px; color: #555; }',
-        'Pass 4: Ikkonnettja l-HTML mal-CSS',
+        'Hekk għandu jidher il-websajt tiegħek mingħajr CSS (bil-Kroat, l-eżempju tiegħek naturalment bil-Malti):',
+
+        'Pass 3: Żid stili b’CSS',
+        'CSS tintuża biex tistilja l-elementi fuq il-paġna. Biex nibdew, inżidu stili bażiċi bħal kulur tal-isfond, kulur tat-test u daqs tal-font.',
+        'Fl-istess folder, oħloq dokument ġdid u semmih style.css.',
+        'F’style.css, ikteb dan li ġej:',
+        'body {',
+        'background-colour: #f0f8ff; /* Sfond blu ħafif */',
+        'colour: #333; /* Test griż skur */',
+        'font-family: Arial, sans-serif; /* Font għat-test */',
+        'text-align: centre; /* Allinja t-test fiċ-ċentru */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Titlu aħdar */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Daqs tal-font għall-paragrafu */',
+        'colour: #555; /* Test griż-blu għall-paragrafu */',
+        '}',
+
+        'Pass 4: Qabbad l-HTML mal-CSS',
+        'Ladarba toħloq il-fajl CSS, trid torbtu mal-fajl HTML.',
+        'Dan tagħmlu fis-sezzjoni <head> tal-HTML billi żżid din il-linja tal-kodiċi:',
         '<link rel="stylesheet" href="style.css">',
+        'Dan jagħmel id-dokument HTML "jaf" li għandu juża l-istili mill-fajl CSS.',
+
         'Pass 5: Ibda l-paġna tiegħek',
-        'Issejvja index.html u style.css u iftħilhom fil-browser.'
+        'Issejvja ż-żewġ fajls: index.html u style.css.',
+        'Ikklikkja darbtejn fuq index.html u iftħu fil-browser tal-Internet.',
+        'Issa tara l-websajt tiegħek bit-test fiċ-ċentru u l-istili bażiċi li żidt',
+        'Hekk għandu jidher il-websajt tiegħek issa:',
+
+        'Inħeġġu d-diversità fl-STEM:',
+        'L-iżvilupp tal-web huwa għal kulħadd! Kemm jekk int student żgħir, adult li qed ifittex karriera ġdida, jew xi ħadd minn grupp sottorappreżentat — din l-isfida tistiednek tesplora d-dinja eċċitanti tal-ħolqien ta’ websajts.',
+        'L-oqsma STEM (Xjenza, Teknoloġija, Inġinerija u Matematika) storikament kellhom nuqqas ta’ diversità; huwa importanti nħeġġu lil kulħadd — irrispettivament mis-sess, razza jew sfond — jesplora l-kodifikazzjoni u t-teknoloġija.',
+        'Kulħadd għandu perspettivi u esperjenzi uniċi li jistgħu jagħmlu d-dinja tal-iżvilupp tal-web aktar kreattiva u inklużiva.',
+        'Hekk kif taħdem fuq il-websajt tiegħek, aħseb kif tista’ tagħmel id-dinja diġitali post fejn kulħadd iħossu rappreżentat u milqugħ.',
+        'M’għandekx bżonn tkun espert fit-teknoloġija biex tibda — ibda titgħallem u kompli tibni minn hemm!',
+
+        'Agħmel il-websajt tiegħek aċċessibbli:',
+        'Meta tibni websajt, huwa importanti li tiżgura li tkun faċilment aċċessibbli għal kemm jista’ jkun nies, inklużi persuni b’diżabilità.',
+        'Hawn xi pariri biex toħloq websajts aktar aċċessibbli:',
+        'Kuntrast: Iċċekkja li hemm kuntrast tajjeb bejn l-isfond u l-kulur tat-test biex ikun eħfef għall-persuni b’diffikultajiet viżivi jaqraw.',
+        'Pereżempju, sfond ċar b’test skur jaħdem l-aħjar.',
+        'Test alternattiv għall-immaġini: Jekk iżżid immaġini (f’passi futuri), żid alt text li jiddeskrivi x’hemm fl-immaġni.',
+        'Dan huwa partikolarment utli għal min juża screen readers.',
+        'HTML semantiku: Uża tags korretti ta’ HTML għal struttura u aċċessibilità aħjar.',
+        'Pereżempju, uża <h1> għat-titlu prinċipali u <p> għall-paragrafi biex tgħin lill-screen readers jifhmu aħjar il-kontenut.',
+        'Iffoka fuq il-qarrejja: Iżgura li t-test hu faċli biex jinqara b’font sempliċi sans-serif bħal Arial.',
+        'Tista’ wkoll iżżid id-daqs tal-font għall-aħjar qari.',
     ],
-    'mini_simulation_title' => 'Simulazzjoni żgħira:',
+
+    'mini_simulation_title' => 'Mini-simulazzjoni:',
     'mini_simulation' => [
-        'Iċċekkja l-għarfien tiegħek',
+        'Ittestja l-għarfien tiegħek',
         '1. X’inhu HTML?',
-        'a) Lingwaġġ għall-ħolqien ta’ immaġini',
-        'b) Lingwaġġ għall-istrutturar tal-kontenut fuq il-web',
-        'c) Editur ta’ immaġini',
+        'Lingwa ta’ programmar għall-ħolqien ta’ immaġini',
+        'Lingwa għall-istrutturar tal-kontenut fuq websajt',
+        'Editur ta’ immaġini',
         '2. X’inhu CSS?',
-        'a) Lingwaġġ għall-bażijiet ta’ data',
-        'b) Lingwaġġ għall-istil u tqassim ta’ websajts',
-        'c) Programm ta’ fajls',
-        '3. Kif nikkonnettjaw CSS ma’ HTML?',
-        'a) Billi nużaw it-tag <link>',
-        'b) Billi nużaw it-tag <style>',
-        'c) Mhux possibbli',
+        'Lingwa għall-ħolqien ta’ databases onlajn',
+        'Lingwa għall-istilizzazzjoni u t-tqassim ta’ websajts',
+        'Programm għall-ġestjoni tal-fajls tal-kompjuter',
+        '3. Kif inqabbdu CSS ma’ HTML?',
+        'Billi nużaw it-tikketta <link> fid-dokument HTML',
+        'Billi nużaw elementi <style> ġewwa HTML',
+        'Ma jistax jiġi mqabbad',
         'Tweġibiet korretti: 1.b, 2.b, 3.a',
-        '---',
         'Ibdel il-paġna tiegħek:',
-        '• Ibdel il-kulur tal-isfond.',
-        '• Żid titlu ieħor (h2).',
-        '• Żid link għal sit ieħor (eż. Google).'
+        'Ipprova tbiddel il-kulur tal-isfond.',
+        'Żid titlu ieħor (h2) b’test taħt it-titlu prinċipali.',
+        'Żid link għal websajt oħra, eż. Google.',
+        'Wara kull bidla – aġġorna l-paġna!',
     ],
+
     'additional_resources_title' => 'Riżorsi addizzjonali:',
     'additional_resources' => [
         'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS'
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
 
