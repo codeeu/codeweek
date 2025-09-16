@@ -1,73 +1,169 @@
 <?php
 
 return [
-    'create-your-own-website-with-html-and-css' => [
+'create-your-own-website-with-html-and-css' => [
     'title' => 'Skapa din egen webbplats med HTML och CSS',
     'author' => 'Marko Šolić',
+
     'purposes_title' => 'Syftet med utmaningen',
     'purposes' => [
-        'Introducera nybörjare till webb­utvecklingens värld.',
-        'Genom att genomföra projektet lär sig deltagarna grunderna i HTML och CSS, som är fundamentala för att skapa och designa webbsidor.',
-        'Främja praktiskt lärande genom att bygga en egen webbplats från grunden.',
-        'Ge grundläggande färdigheter inom webbdesign och stärka självförtroendet i att bygga en egen online-närvaro.'
+        'Syftet med denna utmaning är att introducera nybörjare till webbutveckling.',
+        'Genom att slutföra projektet lär sig deltagarna grunderna i HTML och CSS, som är grundläggande för att skapa och styla webbsidor.',
+        'Utmaningen betonar praktiskt lärande och hjälper dig att bygga en egen webbplats från grunden.',
+        'Du får viktiga färdigheter i webbdesign och blir tryggare i att bygga din online-närvaro.'
     ],
+
     'description_title' => 'Beskrivning av utmaningen',
     'description' => [
-        'Webbplatser är grunden för en närvaro på internet. I denna lektion lär du dig hur man använder HTML för att strukturera innehåll och CSS för att ge stil åt och skapa din första webbplats.',
+        'Webbplatser är grunden för närvaro på internet. I denna lektion lär du dig använda HTML för att strukturera innehåll och CSS för att styla och skapa din första webbplats.',
         'Genom roliga steg skapar du en sida som kan innehålla text, bilder, färger och länkar.'
     ],
+
     'target_audience_title' => 'Målgrupp',
-    'target-audience' => [
-        'Nybörjare som vill lära sig skapa webbsidor',
-        'Elever och alla som är intresserade av hur webbsidor fungerar och byggs upp'
+    'target_audience' => [
+        'Utmaningen riktar sig till nybörjare som vill lära sig skapa webbplatser.',
+        'Perfekt för personer som är nya inom webbutveckling, studenter eller den som är nyfiken på hur webbplatser byggs.',
+        'Ingen tidigare programmerings-erfarenhet krävs.'
     ],
+
     'experience_title' => 'Erfarenhet',
-    'experience' => 'Nybörjare – ingen tidigare erfarenhet krävs.',
-    'duration_title' => 'Varaktighet',
-    'duration' => '1–2 timmar',
-    'materials_title' => 'Material',
-    'materials' => [
-        'Dator eller bärbar dator',
-        'En enkel texteditor (t.ex. Anteckningar på Windows eller TextEdit på Mac)'
+    'experience' => [
+        'Detta är en utmaning för nybörjare. Grundläggande datorvana (t.ex. arbete i en textredigerare) kan hjälpa, men är inte nödvändigt.',
+        'Utmaningen är utformad som en introduktion till HTML och CSS.'
     ],
+
+    'duration_title' => 'Tidsåtgång',
+    'duration' => 'Utmaningen beräknas ta cirka 1–2 timmar beroende på din erfarenhet och hur mycket du utforskar utöver grunderna.',
+
+    'materials_title' => 'Rekommenderade verktyg:',
+    'materials' => [
+        'Dator / laptop',
+        'Vanlig textredigerare, t.ex. Anteckningar (Windows) eller TextEdit (Mac)'
+    ],
+
     'instructions_title' => 'Instruktioner',
     'instructions' => [
-        'Tips till lärare: börja med grunderna (HTML och CSS), förklara dokumentets struktur, påpeka vanliga fel, uppmuntra till interaktivitet och kreativitet.',
-        'Steg 1: Förbered miljön – öppna en enkel texteditor.',
-        'Steg 2: Skriv HTML-strukturen – spara som index.html och skriv grundläggande HTML-taggar.',
-        'Steg 3: Lägg till CSS – skapa en fil som heter style.css och definiera grundläggande stilar (bakgrundsfärg, typsnitt, textfärg, justering).',
-        'Steg 4: Koppla ihop HTML och CSS – lägg till <link rel="stylesheet" href="style.css"> i <head>-delen.',
-        'Steg 5: Kör sidan – öppna index.html i webbläsaren och kontrollera resultatet.'
+        'Tips till lärare innan ni börjar:',
+        'Om du är ny inom webbutveckling – ingen fara! Här är några tips för att guida eleverna genom processen:',
+        'Börja med grunderna: förklara kärnkoncepten i HTML (webbsidans struktur) och CSS (elementens stil).',
+        'Var tålmodig och ge eleverna tid att förstå syftet med varje tagg och egenskap.',
+        'Förklara strukturen: när du introducerar HTML-taggar, visualisera hur dokumentet är uppbyggt.',
+        'Visa relationen mellan öppnings- och stängningstagg, attribut och nästning.',
+        'Undvik vanliga misstag: nybörjare glömmer ofta att stänga taggar korrekt eller placerar måsvingar {} fel i CSS.',
+        'Påminn om att regelbundet kontrollera syntaxfel.',
+        'Interaktivt lärande: uppmuntra eleverna att experimentera med att ändra text och stilar.',
+        'Visa hur små ändringar i HTML eller CSS syns direkt efter att webbläsaren uppdaterats.',
+        'Var öppen för kreativitet: det finns inget enda ”rätt” sätt att designa en webbplats.',
+        'Uppmuntra att utforska olika typsnitt, färger och layouter.',
+        'Vanliga misstag att se upp för:',
+        'Att glömma att länka CSS-filen till HTML-filen.',
+        'Felaktig nästning av taggar i HTML.',
+        'Stavfel i CSS-egenskaper (t.ex. ”colour” i stället för ”color”).',
+        'Att göra strukturen alltför komplex — enkla sidor kan se mycket professionella ut med bara några rader kod!',
+
+        'Steg 1: Förbered miljön',
+        'För att skapa en webbplats behöver du inga specialverktyg – en vanlig textredigerare som Anteckningar (Windows) eller TextEdit (Mac) räcker.',
+        'En hel webbplats kan göras i en enkel textredigerare; det finns till och med webbplatser på internet som är byggda helt på detta sätt.',
+        'Vill du se ett exempel? Titta på Kroatiska Informatikföreningens webbplats: hsin.hr',
+
+        'Steg 2: Grundläggande HTML-dokumentsstruktur',
+        'Öppna ett nytt dokument i redigeraren och spara det som index.html',
+        'Beroende på din version av Windows eller macOS måste du kanske först aktivera möjligheten att ändra filtillägg, eftersom index.txt ska bli index.html',
+        'Skriv i en redigerare som Anteckningar den grundläggande HTML-strukturen:',
+        '<!DOCTYPE html>',
+        '<html lang="en">',
+        '<head>',
+        '<target charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '<title>My first website</title>',
+        '</head>',
+        '<body>',
+        '<h1>Welcome to my website!</h1>',
+        '<p>This is my first website I created using HTML and CSS.</p>',
+        '</body>',
+        '</html>',
+        'Så här ska din webbplats se ut utan CSS (på kroatiska; ditt exempel är förstås på svenska):',
+
+        'Steg 3: Lägg till stilar med CSS',
+        'CSS används för att styla element på sidan. Vi börjar med grundläggande stilar som bakgrundsfärg, textfärg och teckenstorlek.',
+        'Skapa i samma mapp ett nytt textdokument och kalla det style.css.',
+        'Skriv följande i style.css:',
+        'body {',
+        'background-colour: #f0f8ff; /* Light blue background */',
+        'colour: #333; /* Dark Gray Text */',
+        'font-family: Arial, sans-serif; /* Font for text */',
+        'text-align: centre; /* Align text to centre */',
+        '}',
+        'h1 {',
+        'colour: #4CAF50; /* Green title */',
+        '}',
+        'p {',
+        'font-size: 18px; /* Paragraph font size */',
+        'colour: #555; /* Gray-blue text for paragraph */',
+        '}',
+
+        'Steg 4: Koppla HTML till CSS',
+        'När du har skapat CSS-filen måste du länka den till HTML-filen.',
+        'Gör detta i HTML-dokumentets <head>-sektion genom att lägga till följande kodrad:',
+        '<link rel="stylesheet" href="style.css">',
+        'Då ”vet” HTML-dokumentet att det ska använda stilarna från CSS-filen.',
+
+        'Steg 5: Starta din sida',
+        'Spara båda filerna: index.html och style.css.',
+        'Dubbelklicka på index.html och öppna filen i webbläsaren.',
+        'Nu ser du din webbplats med centrerad text och de grundstilar du har lagt till',
+        'Så här ska din webbplats se ut nu:',
+
+        'Främja mångfald inom STEM:',
+        'Webbutveckling är för alla! Oavsett om du är elev, vuxen som söker ny karriär eller någon från en underrepresenterad grupp — denna utmaning bjuder in dig att utforska den spännande världen av att skapa webbplatser.',
+        'STEM-områdena (vetenskap, teknik, ingenjörsvetenskap och matematik) har historiskt haft brist på mångfald; det är viktigt att uppmuntra alla — oavsett kön, bakgrund eller ursprung — att utforska programmering och teknik.',
+        'Alla har unika perspektiv och erfarenheter som kan göra webbutveckling mer kreativ och inkluderande.',
+        'När du arbetar med din webbplats, fundera på hur du kan göra den digitala världen till en plats där alla känner sig representerade och välkomna.',
+        'Du behöver inte vara teknikexpert för att börja — börja lära dig och bygg vidare därifrån!',
+
+        'Gör din webbplats tillgänglig:',
+        'När du bygger en webbplats är det viktigt att så många som möjligt kan använda den, inklusive personer med funktionsnedsättning.',
+        'Här är några tips för mer tillgängliga webbplatser:',
+        'Kontrast: säkerställ god kontrast mellan bakgrund och textfärg så att texten blir lättare att läsa.',
+        'Till exempel fungerar ljus bakgrund med mörk text bäst.',
+        'Alt-text för bilder: om du lägger till bilder (i senare steg), lägg till alt-text som beskriver bilden.',
+        'Det är särskilt hjälpsamt för användare av skärmläsare.',
+        'Semantisk HTML: använd korrekta HTML-taggar för bättre struktur och tillgänglighet.',
+        'Använd till exempel <h1> för huvudtitel och <p> för stycken — det hjälper skärmläsare att tolka innehållet.',
+        'Fokusera på läsbarhet: använd ett enkelt sans-serif-typsnitt som Arial.',
+        'Du kan också öka teckenstorleken för bättre läsbarhet.',
     ],
-    'quiz_title' => 'Frågesport:',
-    'quiz' => [
-        'Vad är HTML?',
-        'a) Ett språk för att skapa bilder',
-        'b) Ett språk för att strukturera innehåll på webbsidor',
-        'c) Ett bildredigeringsprogram',
-        'Vad är CSS?',
-        'a) Ett språk för att skapa databaser',
-        'b) Ett språk för att bestämma utseendet och stilen på webbsidor',
-        'c) Ett filhanteringsprogram',
-        'Hur länkar man CSS till HTML?',
-        'a) Med <link>-taggen i HTML-dokumentet',
-        'b) Genom att använda <style>-taggar i HTML',
-        'c) Det går inte att länka',
-        'Rätt svar: 1.b, 2.b, 3.a'
-    ],
+
     'mini_simulation_title' => 'Mini-simulering:',
     'mini_simulation' => [
-        'Byt bakgrundsfärg.',
-        'Lägg till en underrubrik (h2) under huvudrubriken.',
-        'Lägg till en länk till en annan sida, t.ex. Google.',
-        'Kom ihåg att uppdatera sidan efter varje ändring!'
+        'Testa dina kunskaper',
+        '1. Vad är HTML?',
+        'Programspråk för att skapa bilder',
+        'Språk för att strukturera innehåll på webbplatsen',
+        'Bildredigerare',
+        '2. Vad är CSS?',
+        'Språk för att skapa online-databaser',
+        'Språk för att styla och layouta webbplatser',
+        'Program för att hantera datorfiler',
+        '3. Hur kopplar vi CSS till HTML?',
+        'Genom att använda <link>-taggen i HTML-dokumentet',
+        'Genom att använda <style>-taggar i HTML',
+        'Går inte att koppla',
+        'Rätta svar: 1.b, 2.b, 3.a',
+        'Ändra din sida:',
+        'Prova att byta bakgrundsfärg.',
+        'Lägg till ytterligare en rubrik (h2) under huvudrubriken.',
+        'Lägg till en länk till en annan webbplats, t.ex. Google.',
+        'Uppdatera sidan efter varje ändring!',
     ],
+
     'additional_resources_title' => 'Ytterligare resurser:',
     'additional_resources' => [
-        'https://developer.mozilla.org/sv/docs/Web/HTML',
-        'https://developer.mozilla.org/sv/docs/Web/CSS'
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
     ]
 ],
+
 
     'train-it-like-fei-fei-li' => [
     'title' => 'Träna som Fei‑Fei Li – ge datorer syn!',
