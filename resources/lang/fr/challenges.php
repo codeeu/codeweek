@@ -4,6 +4,7 @@ return [
     'title' => 'DÉFIS DE LA SEMAINE EUROPÉENNE DU CODE',
     'date' => '9-24 octobre 2021',
     'common' => [
+        'educational-goals' => 'Objectifs éducatifs',
         'target-audience' => 'Public visé',
         'pre-primary' => 'Élèves de maternelle',
         'experience' => 'Expérience',

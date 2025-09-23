@@ -4,6 +4,7 @@ return [
     'title' => 'ES PROGRAMMĒŠANAS NEDĒĻAS UZDEVUMI',
     'date' => '2021. gada 9.–24. oktobrī',
     'common' => [
+        'educational-goals' => 'Izglītības mērķi',
         'target-audience' => 'Mērķauditorija',
         'pre-primary' => 'Pirmsskolas izglītības iestāžu audzēkņi',
         'experience' => 'Pieredze',

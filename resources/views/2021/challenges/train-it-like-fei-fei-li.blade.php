@@ -121,12 +121,12 @@
 
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">{{ $ts("challenges-content.$slug.examples_title") }}</p>
-                            <ul class="list-decimal ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
-                                @foreach ($tarr("challenges-content.$slug.examples") as $example)
-                                    @if (is_string($example) && str_contains($example, ':'))
+                            <ul class="list-disc ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                @foreach ($tarr("challenges-content.$slug.examples") as $k => $example)
+                                    @if ($k == 0 || $k == 4)
                                         <li class="p-0 font-bold leading-7 text-slate-500 text-default">{{ $example }}</li>
                                     @else
-                                        <li class="p-0 font-normal leading-7 text-slate-500 text-default">{{ is_array($example) ? json_encode($example) : $example }}</li>
+                                        <li class="list-none p-0 font-normal leading-7 text-slate-500 text-default">{{ is_array($example) ? json_encode($example) : $example }}</li>
                                     @endif
                                 @endforeach
                             </ul>
@@ -157,34 +157,124 @@
 
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">{{ $ts("challenges-content.$slug.instructions_title") }}</p>
-                                <ol class="list-decimal ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
-                                    @foreach ($tarr("challenges-content.$slug.instructions") as $instruction)
-                                        @php $isHeader = is_string($instruction) && str_contains($instruction, ':'); @endphp
-                                        <li class="p-0 {{ $isHeader ? 'font-bold' : 'font-normal' }} text-default md:text-xl text-slate-500">
-                                            {{ is_array($instruction) ? json_encode($instruction) : $instruction }}
-                                        </li>
-                                    @endforeach
+                                <ol class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[0] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[1] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[2] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[3] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[4] }}
+                                    </li>
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[5] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[6] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[7] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[8] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/0.jpg">
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[9] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[10] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[11] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/1.jpg">
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[12] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[13] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[14] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[15] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[16] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[17] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[18] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[19] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[20] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/2.jpg">
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[21] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[22] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[23] }}
+                                    </li>
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[24] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[25] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/3.jpg">
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[26] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[27] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[28] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[29] }}
+                                    </li>
+                                    <li class="p-0 list-none font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[30] }}
+                                    </li>
+                                    <li class="p-0 font-bold text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[31] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[32] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/4.jpg">
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {!! $tarr("challenges-content.$slug.instructions")[33] !!}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/5.jpg">
                                 </ol>
                             </div>
 
                             @include('2021.challenges._share')
 
                             <div class="mb-6">
-                                <p class="p-0 mb-2 text-2xl font-semibold">A model we made above can be found here:</p>
-                                <a href="https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/"
-                                   target="_blank" rel="noopener noreferrer"
-                                   class="font-normal leading-7 underline hover:no-underline text-[#1c4da1] text-default">
-                                    https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/
-                                </a>
-                                <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/0.jpg">
-                                <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/1.jpg">
-                                <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/2.jpg">
-                                <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/3.jpg">
-                                <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/4.jpg">
-                                <img width="100%" src="/images/challenges/train-it-like-fei-fei-li/5.jpg">
-                             @include('2021.challenges._download', [
-                                'url' => "https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2025/$slug-$locale.docx",
-                            ])
+                                @include('2021.challenges._download', [
+                                    'url' => "https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2025/$slug-$locale.docx",
+                                ])
                             </div>
                         </div>
                     </div>

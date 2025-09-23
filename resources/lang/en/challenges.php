@@ -4,6 +4,7 @@ return [
   'title' => 'EU CODE WEEK CHALLENGES',
   'date' => '9-24 October 2021',
   'common' => [
+    'educational-goals' => 'Educational goals',
     'target-audience' => 'Target Audience',
     'pre-primary' => 'Pre-primary students',
     'experience' => 'Experience',

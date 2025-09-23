@@ -4,6 +4,7 @@ return [
     'title' => 'EU-PROGRAMMEERWEEK-UITDAGINGEN',
     'date' => '9-24 oktober 2021',
     'common' => [
+        'educational-goals' => 'Onderwijsdoelen',
         'target-audience' => 'Doelgroep',
         'pre-primary' => 'Kleuters (3-6 jaar)',
         'experience' => 'Ervaring',

@@ -4,6 +4,7 @@ return [
     'title' => 'EU\'S KODEUGES UDFORDRINGER',
     'date' => 'Den 9.-24. oktober 2021',
     'common' => [
+        'educational-goals' => 'Uddannelsesmål',
         'target-audience' => 'Målgruppe',
         'pre-primary' => 'Førskoleelever',
         'experience' => 'Erfaring',

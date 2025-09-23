@@ -4,6 +4,7 @@ return [
     'title' => 'ES PROGRAMAVIMO SAVAITĖS IŠŠŪKIAI',
     'date' => '2021 m. spalio 9–24 d.',
     'common' => [
+        'educational-goals' => 'Mokomieji tikslai',
         'target-audience' => 'Tikslinė auditorija',
         'pre-primary' => 'Ikimokyklinio amžiaus vaikai',
         'experience' => 'Patirtis',

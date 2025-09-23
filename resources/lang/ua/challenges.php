@@ -5,6 +5,7 @@ return [
     'title' => 'ВИКЛИКИ ТИЖНЯ КОДУВАННЯ ЄС',
     'date' => '14-27 жовтня 2024',
     'common' => [
+        'educational-goals' => 'Освітні цілі',
         'target-audience' => 'Цільова аудиторія',
         'pre-primary' => 'Дошкільнята',
         'experience' => 'Досвід',
