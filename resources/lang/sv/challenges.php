@@ -4,6 +4,7 @@ return [
     'title' => 'EU CODE WEEK-UTMANINGAR',
     'date' => '9–24 oktober 2021',
     'common' => [
+        'educational-goals' => 'Utbildningsmål',
         'target-audience' => 'Målgrupp',
         'pre-primary' => 'Förskolebarn',
         'experience' => 'Erfarenhet',

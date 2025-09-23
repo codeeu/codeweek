@@ -94,10 +94,12 @@
                         <div class="flex flex-wrap gap-4 p-6 bg-white rounded-lg lg:flex-col 2xl:flex-row 2xl:gap-8">
                             <div>
                                 <p class="p-0 mb-4 text-2xl font-normal">@lang("challenges-content.$slug.duration_title")</p>
-                                <div class="flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full w-fit">
-                                    <img src="{{ asset('img/2021/challenges/icons/fi_clock.svg') }}" />
-                                    <p class="p-0 font-semibold text-slate-500 text-default">@lang("challenges-content.$slug.duration")</p>
-                                </div>
+                                @foreach ($tarr("challenges-content.$slug.durations") as $duration)
+                                    <div class="mb-2 flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full w-fit">
+                                        <img src="{{ asset('img/2021/challenges/icons/fi_clock.svg') }}" />
+                                        <p class="p-0 font-semibold text-slate-500 text-default">@lang($duration)</p>
+                                    </div>
+                                @endforeach
                             </div>
                             <div>
                                 <p class="p-0 mb-4 text-2xl font-normal">@lang("challenges-content.$slug.experience_title")</p>
@@ -198,8 +200,8 @@
 
                                 {{-- Step 2 --}}
                                 <strong class="block mb-2 text-default md:text-xl">{{ $items[4] ?? '' }}</strong>
-                                <ul class="mb-4 ml-6 list-disc text-slate-500 text-default md:text-xl">
-                                    @foreach ([5, 6, 7] as $i)
+                                <ul class="mb-4 ml-6 list-decimal text-slate-500 text-default md:text-xl">
+                                    @foreach ([5, 6] as $i)
                                         @if (!empty($items[$i]))
                                             <li>{{ $items[$i] }}</li>
                                         @endif
@@ -208,6 +210,7 @@
 
                                 {{-- Code block --}}
                                 <pre class="p-4 mb-4 font-mono text-sm rounded bg-slate-100">
+{{ $items[7] ?? '' }}
 {{ $items[8] ?? '' }}
 {{ $items[9] ?? '' }}
 {{ $items[10] ?? '' }}
@@ -216,26 +219,35 @@
 {{ $items[13] ?? '' }}
 {{ $items[14] ?? '' }}
 {{ $items[15] ?? '' }}
+{{ $items[16] ?? '' }}
 </pre>
                                 <img width="100%" src="/images/challenges/simulate-dice-in-python/1.png">
-                                <p class="mb-4 text-slate-700 text-default md:text-xl">{{ $items[16] ?? '' }}</p>
-                                <p class="mb-6 text-slate-700 text-default md:text-xl">{{ $items[17] ?? '' }}</p>
+                                <p class="mb-4 text-slate-700 text-default md:text-xl">{{ $items[17] ?? '' }}</p>
+                                <p class="mb-6 text-slate-700 text-default md:text-xl">{{ $items[18] ?? '' }}</p>
 
                                 {{-- Step 3 --}}
-                                <strong class="block mb-2 text-default md:text-xl">{{ $items[18] ?? '' }}</strong>
+                                <strong class="block mb-2 text-default md:text-xl">{{ $items[19] ?? '' }}</strong>
                                 <ul class="mb-4 ml-6 list-disc text-slate-500 text-default md:text-xl">
-                                    @foreach (range(19, 25) as $i)
+                                    @foreach (range(20, 23) as $i)
                                         @if (!empty($items[$i]))
-                                            <li class="text-default md:text-xl">{{ $items[$i] }}</li>
+                                            @php
+                                                $parts = explode(':', $items[$i], 2);
+                                            @endphp
+                                            <li class="text-default md:text-xl">
+                                                @if (count($parts) === 2)
+                                                    <strong>{{ trim($parts[0]) }}:</strong> {{ trim($parts[1]) }}
+                                                @else
+                                                    {{ $items[$i] }}
+                                                @endif
+                                            </li>
                                         @endif
                                     @endforeach
                                 </ul>
 
                                 {{-- Step 4 --}}
-                                <p class="block mb-2 text-default md:text-xl">{{ $items[26] ?? '' }}</p>
-                                <strong class="block mb-2 text-default md:text-xl">{{ $items[27] ?? '' }}</strong>
+                                <strong class="block mb-2 text-default md:text-xl">{{ $items[24] ?? '' }}</strong>
                                 <ol class="mb-6 ml-6 list-disc text-slate-500">
-                                    @foreach (range(28, 30) as $i)
+                                    @foreach (range(25, 28) as $i)
                                         @if (!empty($items[$i]))
                                             <li class="text-default md:text-xl">{{ $items[$i] }}</li>
                                         @endif
@@ -308,13 +320,14 @@
                                         @lang("challenges-content.$slug.quiz_title")
                                     </strong>
 
+                                    @php $qIndex = 1; @endphp
                                     @foreach ($groups as $g)
                                         {{-- Question --}}
                                         <p class="mb-1 font-semibold text-slate-700 text-default md:text-xl">
-                                            {{ $g['q'] }}</p>
+                                            {{ $qIndex++ }}. {{ $g['q'] }}
 
                                         {{-- Options (numbered, restart each question) --}}
-                                        <ol class="mb-4 ml-6 list-decimal text-slate-500">
+                                        <ol class="mb-4 ml-6 text-slate-500 list-[lower-alpha]">
                                             @foreach ($g['opts'] as $opt)
                                                 <li class="text-default md:text-xl">{{ $opt }}</li>
                                             @endforeach
@@ -328,9 +341,10 @@
                                 </div>
                                 {{-- Mini simulation --}}
                                 <strong class="block mb-2 text-default md:text-xl">@lang("challenges-content.$slug.mini_simulation_title")</strong>
-                                <ul class="mb-6 ml-6 list-disc text-slate-500">
-                                    @foreach (trans("challenges-content.$slug.mini_simulation") as $sim)
-                                        <li class="text-default md:text-xl">{{ $sim }}</li>
+                                <p class="mb-0 text-slate-700 text-default md:text-xl">{{ trans("challenges-content.$slug.mini_simulation")[0] }}</p>
+                                <ul class="mb-6 ml-2 list-disc text-slate-500">
+                                    @foreach (range(1, 2) as $i)
+                                        <li class="text-default md:text-xl">{{ trans("challenges-content.$slug.mini_simulation")[$i] }}</li>
                                     @endforeach
                                 </ul>
                             </div>
