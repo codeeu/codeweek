@@ -4,6 +4,7 @@ return [
     'title' => 'L-ISFIDI TAL-ĠIMGĦA TAL-UE TAL-IKKOWDJAR',
     'date' => '9-24 ta’ Ottubru 2021',
     'common' => [
+        'educational-goals' => 'Miri edukattivi',
         'target-audience' => 'Udjenza fil-Mira',
         'pre-primary' => 'Studenti preprimarji',
         'experience' => 'Esperjenza',

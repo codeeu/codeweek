@@ -76,12 +76,18 @@
                     <div id="challenge-left-col" class="flex flex-col gap-6">
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">{{ $ts("challenges-content.$slug.educational_goals_title") }}</p>
-                            <ul class="list-decimal ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                            <ul class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                @php $headingIndex = 1; @endphp
+
                                 @foreach ($tarr("challenges-content.$slug.educational_goals") as $goal)
-                                    @if (is_string($goal) && str_contains($goal, ':'))
-                                        <li class="p-0 font-bold leading-7 text-slate-500 text-default md:text-xl">{{ $goal }}</li>
+                                    @if (is_string($goal) && substr($goal, -1) === ':')
+                                        <li class="p-0 font-bold leading-7 text-slate-500 text-default md:text-xl">
+                                            {{ $headingIndex++ }}. {!! $goal !!}
+                                        </li>
                                     @else
-                                        <li class="p-0 font-normal leading-7 text-slate-500 text-default md:text-xl">{{ is_array($goal) ? json_encode($goal) : $goal }}</li>
+                                        <li class="p-0 font-normal leading-7 text-slate-500 text-default md:text-xl">
+                                            &nbsp;&nbsp;-&nbsp;{{ is_array($goal) ? json_encode($goal) : $goal }}
+                                        </li>
                                     @endif
                                 @endforeach
                             </ul>
@@ -150,18 +156,48 @@
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">{{ $ts("challenges-content.$slug.description_title") }}</p>
                                 <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
-                                    {{ $desc }}
+                                    {!! nl2br($desc) !!}
                                 </p>
                             </div>
 
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">{{ $ts("challenges-content.$slug.instructions_title") }}</p>
                                 <ol class="list-decimal ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
-                                    @foreach ($tarr("challenges-content.$slug.instructions") as $instruction)
-                                        <li class="p-0 font-normal text-default md:text-xl text-slate-500">
-                                            {{ is_array($instruction) ? json_encode($instruction) : $instruction }}
-                                        </li>
-                                    @endforeach
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[0] }}
+                                    </li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[1] }}
+                                    </li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[2] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/dance-with-ally/1.png">
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[3] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/dance-with-ally/5.png">
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[4] }}
+                                    </li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[5] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/dance-with-ally/3.png">
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[6] }}
+                                    </li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[7] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/dance-with-ally/2.png">
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[8] }}
+                                    </li>
+                                    <li class="list-none p-0 font-normal text-default md:text-xl text-slate-500">
+                                        {{ $tarr("challenges-content.$slug.instructions")[9] }}
+                                    </li>
+                                    <img width="100%" src="/images/challenges/dance-with-ally/6.png">
                                 </ol>
                             </div>
 
@@ -171,25 +207,23 @@
                                     $examples = $tarr("challenges-content.$slug.examples");
                                 @endphp
                                 @if (!empty($examples))
+                                    <p class="p-0 text-default md:text-xl">{{ $examples[0] }}</p>
                                     <ul class="list-disc ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
-                                        @foreach ($examples as $example)
-                                            <li class="p-0 font-normal text-default md:text-xl text-slate-500">
-                                                {{ is_array($example) ? json_encode($example) : $example }}
-                                            </li>
+                                        @foreach ($examples as $k => $example)
+                                            @if ($k != 0)
+                                                <li class="@if ($k == 1 || $k == 4) list-none @endif p-0 font-normal text-default md:text-xl text-slate-500">
+                                                    {{ $example }}
+                                                </li>
+                                            @endif
                                         @endforeach
                                     </ul>
                                 @else
                                     <p class="text-slate-500 text-default md:text-xl">@lang('challenges.no_examples_available')</p>
                                 @endif
                             </div>
-
-                            <img width="100%" src="/images/challenges/dance-with-ally/1.png">
-                            <img width="100%" src="/images/challenges/dance-with-ally/2.png">
-                            <img width="100%" src="/images/challenges/dance-with-ally/3.png">
+                
                             <img width="100%" src="/images/challenges/dance-with-ally/4.png">
-                            <img width="100%" src="/images/challenges/dance-with-ally/5.png">
-                            <img width="100%" src="/images/challenges/dance-with-ally/6.png">
-
+            
                             @include('2021.challenges._share')
 
                             @include('2021.challenges._download', [

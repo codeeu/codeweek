@@ -1,531 +1,641 @@
 <?php
 
 return [
-'create-your-own-website-with-html-and-css' => [
-    'title' => 'Creează-ți propriul site web cu HTML și CSS',
-    'author' => 'Marko Šolić',
 
-    'purposes_title' => 'Scopul provocării',
-    'purposes' => [
-        'Scopul acestei provocări este să-i introducă pe începători în lumea dezvoltării web.',
-        'Prin finalizarea proiectului, participanții vor învăța bazele HTML și CSS, esențiale pentru crearea și stilizarea paginilor web.',
-        'Provocarea pune accent pe învățarea practică, ajutându-te să îți construiești site-ul de la zero.',
-        'Vei dobândi abilități esențiale de web design și mai multă încredere în construirea propriei prezențe online.'
+    'create-your-own-website-with-html-and-css' => [
+        'title' => 'Creează-ți propriul site web cu HTML și CSS',
+        'author' => 'Marko Šolić',
+
+        'purposes_title' => 'Scopul provocării',
+        'purposes' => [
+            'Scopul acestei provocări este să-i introducă pe începători în lumea dezvoltării web.',
+            'Prin finalizarea proiectului, participanții vor învăța bazele HTML și CSS, esențiale pentru crearea și stilizarea paginilor web.',
+            'Provocarea pune accent pe învățarea practică, ajutându-te să îți construiești site-ul de la zero.',
+            'Vei dobândi abilități esențiale de web design și mai multă încredere în construirea propriei prezențe online.'
+        ],
+
+        'description_title' => 'Descrierea provocării',
+        'description' => [
+            'Site-urile web stau la baza prezenței pe Internet. În această lecție vei învăța să folosești HTML pentru a structura conținutul și CSS pentru a stiliza și a crea primul tău site.',
+            'Prin pași distractivi, vei crea o pagină care poate conține text, imagini, culori și linkuri.'
+        ],
+
+        'target_audience_title' => 'Public țintă',
+        'target_audience' => [
+            'Provocarea se adresează începătorilor interesați să învețe cum se creează site-uri web.',
+            'Este perfectă pentru persoanele noi în dezvoltarea web, pentru elevi/studenți sau pentru oricine este curios cum sunt construite site-urile.',
+            'Nu este necesară experiență anterioară de programare.'
+        ],
+
+        'experience_title' => 'Experiență',
+        'experience' => [
+            'Este o provocare pentru începători. Deși cunoștințele de bază de utilizare a computerului (de ex., lucrul într-un editor de text) pot ajuta, nu sunt obligatorii.',
+            'Provocarea este concepută ca o introducere în HTML și CSS.'
+        ],
+
+        'duration_title' => 'Durată',
+        'duration' => 'Provocarea durează aproximativ 1–2 ore, în funcție de nivelul tău de experiență și de cât de mult explorezi dincolo de bază.',
+
+        'materials_title' => 'Instrumente recomandate:',
+        'materials' => [
+            'PC / Laptop',
+            'Editor de text obișnuit, precum Notepad (Windows) sau TextEdit (Mac)'
+        ],
+
+        'instructions_title' => 'Instrucțiuni',
+        'instructions' => [
+            'Sfaturi pentru cadre didactice, înainte de a începe:',
+            'Dacă ești nou în dezvoltarea web, nu-ți face griji! Iată câteva sfaturi care te vor ajuta să îți ghidezi elevii prin proces:',
+            'Începe cu elementele de bază: explică noțiunile esențiale ale HTML (structura unei pagini web) și CSS (stilizarea elementelor).',
+            'Fii răbdător/răbdătoare și acordă elevilor timp să înțeleagă rolul fiecărei etichete (tag) și proprietăți.',
+            'Explică structura: când introduci etichetele HTML, ilustrează vizual cum este structurat documentul.',
+            'Arată-le elevilor relația dintre etichetele de deschidere și închidere, atribute și imbricare (nesting).',
+            'Evită greșelile frecvente: începătorii uită adesea să închidă corect etichetele sau poziționează greșit acoladele {} în CSS.',
+            'Amintește-le elevilor să verifice periodic erorile de sintaxă.',
+            'Învățare interactivă: încurajează-i să experimenteze schimbând textul și stilurile.',
+            'Arată-le cum modificările mici în HTML sau CSS se văd imediat pe pagină după reîmprospătarea (refresh) browserului.',
+            'Fii deschis(ă) la creativitate: nu există o singură „variantă corectă” de a proiecta un site.',
+            'Încurajează explorarea de fonturi, culori și layouturi diferite.',
+            'Greșeli frecvente de urmărit:',
+            'Uitatul de a lega fișierul CSS de fișierul HTML.',
+            'Imbricare incorectă a etichetelor în HTML.',
+            'Greșeli de tastare în proprietățile CSS (de ex., folosirea „colour” în loc de „color”).',
+            'Complicarea excesivă a structurii — site-urile simple pot arăta profesionist și cu doar câteva linii de cod!',
+            'Pasul 1: Pregătirea mediului',
+            'Pentru a crea un site, nu ai nevoie de instrumente speciale în afară de un editor de text obișnuit, precum Notepad (Windows) sau TextEdit (Mac).',
+            'Întregul site poate fi realizat într-un editor simplu de text; există chiar site-uri pe Internet construite complet astfel.',
+            'Dacă vrei să vezi un exemplu de astfel de site, consultă site-ul Asociației Croate de Informatică: hsin.hr',
+            'Pasul 2: Structura de bază a unui document HTML',
+            'Deschide un document nou în editor și salvează-l ca index.html',
+            'În funcție de versiunea de Windows sau macOS pe care o folosești, va trebui mai întâi să activezi opțiunea de modificare a extensiilor de fișiere, pentru că index.txt trebuie să devină index.html',
+            'Într-un editor precum Notepad, introdu structura de bază a documentului HTML:',
+            '<!DOCTYPE html>',
+            '<html lang="en">',
+            '<head>',
+            '<target charset="UTF-8">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '<title>My first website</title>',
+            '</head>',
+            '<body>',
+            '<h1>Welcome to my website!</h1>',
+            '<p>This is my first website I created using HTML and CSS.</p>',
+            '</body>',
+            '</html>',
+            'Așa ar trebui să arate site-ul tău fără CSS (în croată, exemplul tău este, desigur, în română):',
+            'Pasul 3: Adăugarea de stiluri cu CSS',
+            'CSS este folosit pentru a stiliza elementele de pe pagină. Pentru început, adăugăm stiluri de bază precum culoarea de fundal, culoarea textului și dimensiunea fontului.',
+            'În același folder creează un fișier nou și numește-l style.css.',
+            'În style.css, scrie următoarele:',
+            'body {',
+            'background-colour: #f0f8ff; /* Light blue background */',
+            'colour: #333; /* Dark Gray Text */',
+            'font-family: Arial, sans-serif; /* Font for text */',
+            'text-align: centre; /* Align text to centre */',
+            '}',
+            'h1 {',
+            'colour: #4CAF50; /* Green title */',
+            '}',
+            'p {',
+            'font-size: 18px; /* Paragraph font size */',
+            'colour: #555; /* Gray-blue text for paragraph */',
+            '}',
+            'Pasul 4: Conectarea HTML la CSS',
+            'După ce ai creat fișierul CSS, trebuie să îl legi de fișierul HTML.',
+            'Fă asta în secțiunea <head> a documentului HTML, adăugând următoarea linie de cod:',
+            '<link rel="stylesheet" href="style.css">',
+            'Astfel, documentul HTML „știe” că trebuie să folosească stilurile din fișierul CSS.',
+            'Pasul 5: Pornește-ți pagina',
+            'Salvează ambele fișiere: index.html și style.css.',
+            'Dă dublu click pe index.html și deschide-l în browser.',
+            'Acum vei vedea site-ul tău cu textul centrat și stilurile de bază pe care le-ai adăugat',
+            'Așa ar trebui să arate acum site-ul tău:',
+            'Încurajarea diversității în STEM:',
+            'Dezvoltarea web este pentru toți! Fie că ești elev, adult în căutarea unei noi cariere sau cineva dintr-un grup subreprezentat, această provocare te invită să explorezi lumea fascinantă a construirii de site-uri.',
+            'Domeniile STEM (Știință, Tehnologie, Inginerie și Matematică) au avut istoric o diversitate redusă; este important să încurajăm pe toată lumea — indiferent de gen, rasă sau origine — să exploreze programarea și tehnologia.',
+            'Fiecare are perspective și experiențe unice care pot face dezvoltarea web mai creativă și mai incluzivă.',
+            'Pe măsură ce lucrezi la site, gândește-te cum poți face lumea digitală un loc în care toți să se simtă reprezentați și bineveniți.',
+            'Nu trebuie să fii expert(ă) în tehnologie ca să începi — pur și simplu începe să înveți și construiește mai departe!',
+            'Fă-ți site-ul accesibil:',
+            'Când construiești un site, este important să te asiguri că poate fi accesat ușor de cât mai multe persoane, inclusiv de cele cu dizabilități.',
+            'Iată câteva sfaturi pentru site-uri mai accesibile:',
+            'Contrast: Asigură un contrast bun între fundal și culoarea textului pentru a facilita lectura persoanelor cu deficiențe de vedere.',
+            'De exemplu, un fundal deschis cu text închis funcționează cel mai bine.',
+            'Text alternativ pentru imagini: dacă adaugi imagini (în pașii următori), adaugă text „alt” care descrie conținutul imaginii.',
+            'Acest lucru este deosebit de util pentru persoanele care folosesc cititoare de ecran.',
+            'HTML semantic: folosește etichete corecte pentru o structură și accesibilitate mai bune.',
+            'De exemplu, folosește <h1> pentru titlul principal și <p> pentru paragrafe, pentru a ajuta cititoarele de ecran să înțeleagă mai bine conținutul.',
+            'Concentrează-te pe lizibilitate: asigură un text ușor de citit, cu un font simplu fără serif, precum Arial.',
+            'Poți crește și dimensiunea fontului pentru o lizibilitate mai bună.',
+        ],
+
+        'mini_simulation_title' => 'Mini-simulare:',
+        'mini_simulation' => [
+            'Testează-ți cunoștințele',
+            '1. Ce este HTML?',
+            'Limbaj de programare pentru crearea de imagini',
+            'Limbaj pentru structurarea conținutului pe site',
+            'Editor de imagini',
+            '2. Ce este CSS?',
+            'Limbaj pentru crearea bazelor de date online',
+            'Limbaj pentru stilizarea și aranjarea paginilor web',
+            'Program pentru gestionarea fișierelor computerului',
+            '3. Cum conectăm CSS la HTML?',
+            'Folosind eticheta <link> în documentul HTML',
+            'Folosind elemente <style> în interiorul HTML',
+            'Nu se poate conecta',
+            'Răspunsuri corecte: 1.b, 2.b, 3.a',
+            'Modifică pagina ta:',
+            'Încearcă să schimbi culoarea de fundal.',
+            'Adaugă un alt titlu (h2) cu text sub titlul principal.',
+            'Adaugă un link către un alt site, de ex. Google.',
+            'După orice modificare – reîncarcă pagina!',
+        ],
+
+        'additional_resources_title' => 'Resurse suplimentare:',
+        'additional_resources' => [
+            'https://developer.mozilla.org/en-US/docs/Web/HTML',
+            'https://developer.mozilla.org/en-US/docs/Web/CSS',
+        ]
     ],
-
-    'description_title' => 'Descrierea provocării',
-    'description' => [
-        'Site-urile web stau la baza prezenței pe Internet. În această lecție vei învăța să folosești HTML pentru a structura conținutul și CSS pentru a stiliza și a crea primul tău site.',
-        'Prin pași distractivi, vei crea o pagină care poate conține text, imagini, culori și linkuri.'
-    ],
-
-    'target_audience_title' => 'Public țintă',
-    'target_audience' => [
-        'Provocarea se adresează începătorilor interesați să învețe cum se creează site-uri web.',
-        'Este perfectă pentru persoanele noi în dezvoltarea web, pentru elevi/studenți sau pentru oricine este curios cum sunt construite site-urile.',
-        'Nu este necesară experiență anterioară de programare.'
-    ],
-
-    'experience_title' => 'Experiență',
-    'experience' => [
-        'Este o provocare pentru începători. Deși cunoștințele de bază de utilizare a computerului (de ex., lucrul într-un editor de text) pot ajuta, nu sunt obligatorii.',
-        'Provocarea este concepută ca o introducere în HTML și CSS.'
-    ],
-
-    'duration_title' => 'Durată',
-    'duration' => 'Provocarea durează aproximativ 1–2 ore, în funcție de nivelul tău de experiență și de cât de mult explorezi dincolo de bază.',
-
-    'materials_title' => 'Instrumente recomandate:',
-    'materials' => [
-        'PC / Laptop',
-        'Editor de text obișnuit, precum Notepad (Windows) sau TextEdit (Mac)'
-    ],
-
-    'instructions_title' => 'Instrucțiuni',
-    'instructions' => [
-        'Sfaturi pentru cadre didactice, înainte de a începe:',
-        'Dacă ești nou în dezvoltarea web, nu-ți face griji! Iată câteva sfaturi care te vor ajuta să îți ghidezi elevii prin proces:',
-        'Începe cu elementele de bază: explică noțiunile esențiale ale HTML (structura unei pagini web) și CSS (stilizarea elementelor).',
-        'Fii răbdător/răbdătoare și acordă elevilor timp să înțeleagă rolul fiecărei etichete (tag) și proprietăți.',
-        'Explică structura: când introduci etichetele HTML, ilustrează vizual cum este structurat documentul.',
-        'Arată-le elevilor relația dintre etichetele de deschidere și închidere, atribute și imbricare (nesting).',
-        'Evită greșelile frecvente: începătorii uită adesea să închidă corect etichetele sau poziționează greșit acoladele {} în CSS.',
-        'Amintește-le elevilor să verifice periodic erorile de sintaxă.',
-        'Învățare interactivă: încurajează-i să experimenteze schimbând textul și stilurile.',
-        'Arată-le cum modificările mici în HTML sau CSS se văd imediat pe pagină după reîmprospătarea (refresh) browserului.',
-        'Fii deschis(ă) la creativitate: nu există o singură „variantă corectă” de a proiecta un site.',
-        'Încurajează explorarea de fonturi, culori și layouturi diferite.',
-        'Greșeli frecvente de urmărit:',
-        'Uitatul de a lega fișierul CSS de fișierul HTML.',
-        'Imbricare incorectă a etichetelor în HTML.',
-        'Greșeli de tastare în proprietățile CSS (de ex., folosirea „colour” în loc de „color”).',
-        'Complicarea excesivă a structurii — site-urile simple pot arăta profesionist și cu doar câteva linii de cod!',
-        'Pasul 1: Pregătirea mediului',
-        'Pentru a crea un site, nu ai nevoie de instrumente speciale în afară de un editor de text obișnuit, precum Notepad (Windows) sau TextEdit (Mac).',
-        'Întregul site poate fi realizat într-un editor simplu de text; există chiar site-uri pe Internet construite complet astfel.',
-        'Dacă vrei să vezi un exemplu de astfel de site, consultă site-ul Asociației Croate de Informatică: hsin.hr',
-        'Pasul 2: Structura de bază a unui document HTML',
-        'Deschide un document nou în editor și salvează-l ca index.html',
-        'În funcție de versiunea de Windows sau macOS pe care o folosești, va trebui mai întâi să activezi opțiunea de modificare a extensiilor de fișiere, pentru că index.txt trebuie să devină index.html',
-        'Într-un editor precum Notepad, introdu structura de bază a documentului HTML:',
-        '<!DOCTYPE html>',
-        '<html lang="en">',
-        '<head>',
-        '<target charset="UTF-8">',
-        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-        '<title>My first website</title>',
-        '</head>',
-        '<body>',
-        '<h1>Welcome to my website!</h1>',
-        '<p>This is my first website I created using HTML and CSS.</p>',
-        '</body>',
-        '</html>',
-        'Așa ar trebui să arate site-ul tău fără CSS (în croată, exemplul tău este, desigur, în română):',
-        'Pasul 3: Adăugarea de stiluri cu CSS',
-        'CSS este folosit pentru a stiliza elementele de pe pagină. Pentru început, adăugăm stiluri de bază precum culoarea de fundal, culoarea textului și dimensiunea fontului.',
-        'În același folder creează un fișier nou și numește-l style.css.',
-        'În style.css, scrie următoarele:',
-        'body {',
-        'background-colour: #f0f8ff; /* Light blue background */',
-        'colour: #333; /* Dark Gray Text */',
-        'font-family: Arial, sans-serif; /* Font for text */',
-        'text-align: centre; /* Align text to centre */',
-        '}',
-        'h1 {',
-        'colour: #4CAF50; /* Green title */',
-        '}',
-        'p {',
-        'font-size: 18px; /* Paragraph font size */',
-        'colour: #555; /* Gray-blue text for paragraph */',
-        '}',
-        'Pasul 4: Conectarea HTML la CSS',
-        'După ce ai creat fișierul CSS, trebuie să îl legi de fișierul HTML.',
-        'Fă asta în secțiunea <head> a documentului HTML, adăugând următoarea linie de cod:',
-        '<link rel="stylesheet" href="style.css">',
-        'Astfel, documentul HTML „știe” că trebuie să folosească stilurile din fișierul CSS.',
-        'Pasul 5: Pornește-ți pagina',
-        'Salvează ambele fișiere: index.html și style.css.',
-        'Dă dublu click pe index.html și deschide-l în browser.',
-        'Acum vei vedea site-ul tău cu textul centrat și stilurile de bază pe care le-ai adăugat',
-        'Așa ar trebui să arate acum site-ul tău:',
-        'Încurajarea diversității în STEM:',
-        'Dezvoltarea web este pentru toți! Fie că ești elev, adult în căutarea unei noi cariere sau cineva dintr-un grup subreprezentat, această provocare te invită să explorezi lumea fascinantă a construirii de site-uri.',
-        'Domeniile STEM (Știință, Tehnologie, Inginerie și Matematică) au avut istoric o diversitate redusă; este important să încurajăm pe toată lumea — indiferent de gen, rasă sau origine — să exploreze programarea și tehnologia.',
-        'Fiecare are perspective și experiențe unice care pot face dezvoltarea web mai creativă și mai incluzivă.',
-        'Pe măsură ce lucrezi la site, gândește-te cum poți face lumea digitală un loc în care toți să se simtă reprezentați și bineveniți.',
-        'Nu trebuie să fii expert(ă) în tehnologie ca să începi — pur și simplu începe să înveți și construiește mai departe!',
-        'Fă-ți site-ul accesibil:',
-        'Când construiești un site, este important să te asiguri că poate fi accesat ușor de cât mai multe persoane, inclusiv de cele cu dizabilități.',
-        'Iată câteva sfaturi pentru site-uri mai accesibile:',
-        'Contrast: Asigură un contrast bun între fundal și culoarea textului pentru a facilita lectura persoanelor cu deficiențe de vedere.',
-        'De exemplu, un fundal deschis cu text închis funcționează cel mai bine.',
-        'Text alternativ pentru imagini: dacă adaugi imagini (în pașii următori), adaugă text „alt” care descrie conținutul imaginii.',
-        'Acest lucru este deosebit de util pentru persoanele care folosesc cititoare de ecran.',
-        'HTML semantic: folosește etichete corecte pentru o structură și accesibilitate mai bune.',
-        'De exemplu, folosește <h1> pentru titlul principal și <p> pentru paragrafe, pentru a ajuta cititoarele de ecran să înțeleagă mai bine conținutul.',
-        'Concentrează-te pe lizibilitate: asigură un text ușor de citit, cu un font simplu fără serif, precum Arial.',
-        'Poți crește și dimensiunea fontului pentru o lizibilitate mai bună.',
-    ],
-
-    'mini_simulation_title' => 'Mini-simulare:',
-    'mini_simulation' => [
-        'Testează-ți cunoștințele',
-        '1. Ce este HTML?',
-        'Limbaj de programare pentru crearea de imagini',
-        'Limbaj pentru structurarea conținutului pe site',
-        'Editor de imagini',
-        '2. Ce este CSS?',
-        'Limbaj pentru crearea bazelor de date online',
-        'Limbaj pentru stilizarea și aranjarea paginilor web',
-        'Program pentru gestionarea fișierelor computerului',
-        '3. Cum conectăm CSS la HTML?',
-        'Folosind eticheta <link> în documentul HTML',
-        'Folosind elemente <style> în interiorul HTML',
-        'Nu se poate conecta',
-        'Răspunsuri corecte: 1.b, 2.b, 3.a',
-        'Modifică pagina ta:',
-        'Încearcă să schimbi culoarea de fundal.',
-        'Adaugă un alt titlu (h2) cu text sub titlul principal.',
-        'Adaugă un link către un alt site, de ex. Google.',
-        'După orice modificare – reîncarcă pagina!',
-    ],
-
-    'additional_resources_title' => 'Resurse suplimentare:',
-    'additional_resources' => [
-        'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    ]
-],
-
 
     'train-it-like-fei-fei-li' => [
-    'title' => 'Antrenează-l ca Fei-Fei Li – Dă viziune computerelor!',
-    'author' => 'Chouliara Theodora',
-    'purposes_title' => 'Scopul provocării',
-    'purposes' => [
-        'Învățarea bazelor Machine Learning și recunoașterii imaginilor.',
-        'Antrenarea unui computer să distingă imagini diferite.',
-        'Explorarea modului în care AI și ML sunt folosite în viața reală.',
-        'Inspirație din contribuțiile lui Fei-Fei Li în AI și Computer Vision.',
-        'Încurajarea fetelor să se implice în codare și STEM.',
+        'title' => 'Antrenează ca Fei-Fei Li – Oferind viziune computerelor!',
+        'author' => 'Chouliara Theodora',
+        'purposes_title' => 'Scopul  provocării',
+        'purposes' => [
+            'Să învețe elementele de bază ale învățării automate și ale recunoașterii imaginilor.',
+            'Pentru a antrena un computer să facă distincția între diferite imagini (de exemplu, câine vs. pisică, păpuși vs. ursuleți de pluș).',
+            'Pentru a explora modul în care AI și Machine Learning sunt utilizate în viața reală.',
+            'Să fie inspirat de contribuțiile lui Fei-Fei Li la AI și recunoașterea imaginilor.',
+            'Să încurajeze fetele să se angajeze în cariere de programare și STEM.'
+        ],
+        'description_title' => 'Descrierea provocării',
+        'description' => 'Antrenează un model AI precum Fei-Fei Li! Utilizați Teachable Machine pentru a învăța un computer să recunoască imagini și să exploreze puterea învățării automate în timp ce sparge stereotipurile de gen în tehnologie.',
+        'target_audience_title' => 'Public țintă',
+        'target_audience' => 'Elevi din școala primară (6 - 12 ani)',
+        'experience_title' => 'Experiență',
+        'experience' => 'Începător - Nu este necesară experiență anterioară de programare; potrivit pentru începători completi.',
+        'duration_title' => 'Durată',
+        'duration' => '60 minute',
+        'materials_title' => 'Instrument recomandat',
+        'materials' => [
+            'Mașină de învățat (accesibilă prin browser web)',
+            'Computer sau tabletă cu cameră foto',
+            'Conexiune la internet (pentru antrenarea modelului AI)',
+            'Jucării și obiecte de clasă (de exemplu, păpuși, ursuleți de pluș) pentru antrenarea modelului AI',
+            'Proiector sau ecran (opțional, pentru demonstrații în clasă))'
+        ],
+        'instructions_title' => 'Instrucțiuni',
+        'instructions' => [
+            'Pasul 1: Introducere în învățarea automată și Fei-Fei Li',
+            'Explicați învățarea automată:',
+            'Computerele pot învăța să recunoască imaginile, la fel ca oamenii. Învățarea automată ajută Computerele "văd" obiecte analizând exemple.',
+            'Prezentați-l pe Fei-Fei Li:',
+            'Fei-Fei Li este un om de știință de top în AI și Computer Vision. A dezvoltat ImageNet, un set uriaș de date care a învățat computerele să recunoască imaginile. La fel cum a ajutat Fei-Fei Li computerele să vadă, băieții și fetele pot învăța un computer să recunoască și obiectele!',
+            'Pasul 2: Configurați mașina de predat',
+            'Mergi la Mașina de învățat (https://teachablemachine.withgoogle.com/train)',
+            'Alegeți "Image Project" pentru a antrena computerul să recunoască imaginile.',
+            'Faceți clic pe "Model imagine standard".',
+            'Pasul 3: Alegeți categoriile pentru antrenament',
+            'Decideți ce categorii doriți să recunoască computerul. Puteți crea Categorii bazate pe obiecte din clasă (de exemplu, blocuri, ursuleți de pluș, păpuși etc.).',
+            'Exemple de categorii: Păpuși și ursuleți de pluș',
+            'Pasul 4: Colectați imagini de antrenament',
+            'Creați două categorii: păpuși și ursuleți de pluș.',
+            'Opțiunea 1: Utilizați obiecte reale',
+            'Arătați o păpușă în fața camerei și faceți fotografii pentru categoria "Păpuși".',
+            'Faceți același lucru pentru un ursuleț de pluș pentru categoria "Ursuleți de pluș".',
+            'Opțiunea 2: Găsiți imagini online',
+            'Căutați imagini cu păpuși și ursuleți de pluș pe Google.',
+            'Salvați imaginile în două foldere separate ("Păpuși" și "Ursuleți de pluș").',
+            'Încărcați imaginile din fiecare folder în Mașina de învățat pentru instruire.',
+            'Pasul 5: Antrenați modelul AI',
+            'După ce ați capturat suficiente imagini, faceți clic pe "Antrenați modelul".',
+            'Așteptați ca modelul să învețe din imagini.',
+            'Pasul 6: Testați modelul',
+            'Odată ce modelul este antrenat, faceți clic pe "Test Model" pentru a vedea cât de bine recunoaște Noul Imagini. Testați AI arătând computerului obiecte noi care nu făceau parte din imagini de antrenament (de exemplu, arată o jucărie care nu a fost folosită pentru antrenament). Vedeți cât de bine este modelul îl recunoaște și îl clasifică corect.',
+            'Pasul 7: Evaluați modelul',
+            'Discutați cu elevii:',
+            'Modelul a recunoscut corect obiectele?',
+            'Au existat greșeli? Ce ar putea fi îmbunătățit?',
+            'Ce se întâmplă dacă îl antrenezi cu mai multe imagini?',
+            'Pasul 8: Salvați și partajați modelul',
+            'Odată ce sunteți mulțumit de acuratețea modelului, faceți clic pe "Export model" pentru a salva proiect. Puteți partaja modelul cu alte clase sau pe mașina de învățat site-ul web făcând clic pe "Partajare".',
+            'Modelul pe care l-am realizat mai sus poate fi găsit aici: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+        ],
+        'examples_title' => 'Exemple',
+        'examples' => [
+            'AI în retail și cumpărături:',
+            'Unele magazine folosesc camere bazate pe inteligență artificială pentru a recunoaște produsele și a urmări inventarul.',
+            'O tehnologie similară ajută sistemele de self-checkout să recunoască articolele fără coduri de bare.',
+            'AI și tehnologie asistivă',
+            'AI poate identifica obiecte pentru a ajuta persoanele cu deficiențe de vedere să navigheze prin lume.',
+            'Camerele inteligente pot descrie ceea ce "văd" pentru a ajuta utilizatorii în timp real.'
+        ],
     ],
-    'description_title' => 'Descrierea provocării',
-    'description' => 'Antrenează un model AI cu Teachable Machine pentru a recunoaște imagini și explorează puterea Machine Learning-ului, rupând stereotipurile de gen din tehnologie.',
-    'target_audience_title' => 'Public țintă',
-    'target_audience' => 'Elevi de școală primară (6–12 ani).',
-    'experience_title' => 'Experiență',
-    'experience' => 'Începător – nu este necesară experiență anterioară.',
-    'duration_title' => 'Durată',
-    'duration' => '60 minute',
-    'materials_title' => 'Instrumente recomandate',
-    'materials' => [
-        'Teachable Machine',
-        'Computer/tabletă cu cameră',
-        'Conexiune la internet',
-        'Obiecte (păpuși, ursuleți)',
-    ],
-    'instructions_title' => 'Instrucțiuni',
-    'instructions' => [
-        'Pasul 1: Introducere în Machine Learning și Fei-Fei Li.',
-        'Pasul 2: Deschide Teachable Machine.',
-        'Pasul 3: Creează categorii de imagini.',
-        'Pasul 4: Colectează imagini pentru antrenare.',
-        'Pasul 5: Antrenează modelul.',
-        'Pasul 6: Testează modelul.',
-        'Pasul 7: Evaluează și discută rezultate.',
-        'Pasul 8: Exportă și partajează modelul.',
-    ],
-    'examples_title' => 'Exemple',
-    'examples' => [
-        'AI în retail: recunoaștere produse și inventar.',
-        'AI asistiv: recunoaștere obiecte pentru nevăzători.',
-        'Camere inteligente care descriu mediul utilizatorilor.',
-    ],
-],
 
     'simulate-dice-in-python' => [
-    'title' => 'Simulează aruncarea zarurilor în Python',
-    'author' => 'Marko Šolić',
-    'purposes_title' => 'Scopul provocării',
-    'purposes' => [
-        'Introducerea elevilor în generarea de numere aleatoare și bucle în Python.',
-        'Prin simularea aruncării unui zar, elevii vor învăța cum pot computerele să genereze rezultate aleatoare și să repete acțiuni folosind bucle.',
-        'Acest exercițiu pune bazele pentru jocuri și simulări simple.',
+        'title' => 'Simularea aruncării unui zar în Python',
+        'author' => 'Marko Šolić',
+        'purposes_title' => 'Scopul provocării',
+        'purposes' => [
+            'Scopul acestei provocări este de a introduce studenții în generarea numerelor aleatoare și utilizarea buclelor în Python.',
+            'Prin simularea unui aruncat de zar, studenții vor învăța cum computerele pot genera rezultate aleatoare și cum să repete acțiuni de mai multe ori folosind o buclă.',
+            'Această exercițiu pune și bazele pentru construirea unor jocuri și simulări simple.'
+        ],
+        'description_title' => 'Descrierea provocării',
+        'description' => [
+            'Simularea aruncării zarului este o metodă excelentă pentru a învăța lucrul de bază cu numerele aleatoare în Python.',
+            'În această lecție, vom învăța cum să folosim modulul random pentru a genera numere aleatoare și cum să folosim acest număr pentru a simula o aruncare a zarului.',
+            'Prin această sarcină, veți înțelege cum Python poate genera numere într-un interval specific.'
+        ],
+        'target_audience_title' => 'Publicul țintă',
+        'target_audience' => 'Elevi de școală primară și secundară, începători în Python, orice persoană care învață despre numere aleatoare, jocuri sau logică de bază în programare.',
+        'experience_title' => 'Experiență',
+        'experience' => 'Nu este necesară experiență anterioară în programare. O familiaritate de bază cu tastarea și utilizarea unui computer este suficientă.',
+        'duration_title' => 'Durata',
+        'durations' => [
+            '30 până la 45 de minute pentru o versiune de bază',
+            'Până la 60 de minute dacă se explorează opțiuni avansate (două zaruri, cel mai frecvent aruncat, etc.)'
+        ],
+        'materials_title' => 'Instrument recomandat:',
+        'materials' => [
+            'Pentru a începe, trebuie să aveți Python instalat pe computerul dumneavoastră. Dacă nu ați făcut-o deja, descărcați Python de pe site-ul oficial: https://www.python.org',
+            'Deschideți Python IDLE sau orice editor de text (de exemplu, Visual Studio Code, PyCharm) pentru a scrie codul.'
+        ],
+        'instructions_title' => 'Instrucțiuni',
+        'instructions' => [
+            'Pasul 1: Pregătirea mediului',
+            'Pentru a începe, trebuie să aveți Python instalat pe computerul dumneavoastră.',
+            'Dacă nu ați făcut-o deja, descărcați Python de pe site-ul oficial.',
+            'Deschideți Python IDLE sau orice editor de text (de exemplu, Visual Studio Code, PyCharm) pentru a scrie codul.',
+            'Pasul 2: Scrierea programului',
+            'Deschideți Python IDLE și creați un fișier nou numit dice.py.',
+            'Introduceți următorul cod:',
+            '# Importăm modulul \'random\' pentru a genera numere aleatoare',
+            'import random',
+            'Afișăm un mesaj de bun venit utilizatoruluiprint("Bun venit la simularea aruncării de zaruri!")',
+            'Întreabă utilizatorul câte ori vrea să arunce zarul',
+            'throw_num = int(input("De câte ori doriți să aruncați zarul? "))',
+            'for i in range(throw_num):',
+            'result = random.randint(1, 6) # Generăm un număr aleator între 1 și 6',
+            'print(f"Aruncarea {i + 1}: {result}")',
+            'print("Mulțumim pentru joc!")',
+            'Reprezentarea vizuală a codului în Python IDLE',
+            'Asigurați-vă că indentările din codul dumneavoastră sunt aceleași ca în exemplul de mai sus!',
+            'Pasul 3: Explicația codului',
+            'Importarea modulului random: Modulul random vă permite să generați numere aleatoare. Funcția random.randint(a, b) returnează un număr întreg aleatoriu în intervalul de la a la b, inclusiv ambele capete.',
+            'Introducerea numărului de aruncări: Programul cere utilizatorului să introducă de câte ori vrea să arunce zarul. Numărul introdus este convertit într-un întreg folosind funcția int().',
+            'Simularea aruncării: Programul folosește un ciclu for pentru a efectua simularea aruncării zarului de atâtea ori câte a indicat utilizatorul. Pentru fiecare aruncare, se generează un număr aleator între 1 și 6, care reprezintă rezultatul aruncării.',
+            'Afișarea rezultatelor: Pentru fiecare aruncare, rezultatul este afișat (numărul care a „căzut” pe zar). La finalul programului, se afișează un mesaj de mulțumire',
+            'Pasul 4: Rulați programul',
+            'Salvați fișierul ca dice.py.',
+            'Rulați programul în Python IDLE.',
+            'Introduceți numărul de aruncări dorit (de exemplu: 5).',
+            'Programul va genera numere aleatoare și le va afișa ca rezultat al fiecărei aruncări.',
+        ],
+        'quiz_title' => 'Quiz:',
+        'quiz' => [
+            'Care modul din Python îți permite să generezi numere aleatoare?',
+            'random',
+            'Math',
+            'Time',
+            'Ce face funcția random.randint(1, 6)?',
+            'Generează un număr aleator între 1 și 6',
+            'Afișează un număr aleator pe ecran',
+            'Afișează un număr între 1 și 6',
+            'Cum convertești o intrare a utilizatorului într-un întreg în Python?',
+            'float(s)',
+            'int()',
+            'p()',
+            'Răspunsuri corecte: 1.a, 2.a, 3.b'
+        ],
+        'mini_simulation_title' => 'Mini simulare:',
+        'mini_simulation' => [
+            'Modifică programul:',
+            'Adaugă o opțiune pentru a simula două aruncări de zaruri și a aduna rezultatele acestora.',
+            'Adaugă o opțiune pentru ca programul să afișeze de câte ori programul a „căzut” pe zarul cu cel mai frecvent rezultat.',
+        ],
+        'additional_resources_title' => 'Resurse suplimentare:',
+        'additional_resources' => [
+            'Python official documentation - random module',
+            'Learn Python'
+        ]
     ],
-    'description_title' => 'Descrierea provocării',
-    'description' => [
-        'Simularea aruncării zarurilor este o metodă excelentă de a învăța cum să lucrăm cu numere aleatoare în Python.',
-        'Vom folosi modulul random pentru a genera numere și a simula rezultatele.',
-    ],
-    'target_audience_title' => 'Public țintă',
-    'target_audience' => 'Elevi de gimnaziu și liceu, începători în Python, oricine dorește să înțeleagă numerele aleatoare și logica de programare.',
-    'experience_title' => 'Experiență',
-    'experience' => 'Nu este necesară experiență anterioară de programare.',
-    'duration_title' => 'Durată',
-    'duration' => '30–45 de minute (sau până la 60 pentru opțiuni avansate).',
-    'materials_title' => 'Instrumente recomandate',
-    'materials' => [
-        'Python instalat de pe https://www.python.org',
-        'Editor de text sau IDE (IDLE, VS Code, PyCharm)',
-    ],
-    'instructions_title' => 'Instrucțiuni',
-    'instructions' => [
-        'Pasul 1: Instalează Python.',
-        'Pasul 2: Creează un fișier dice.py și introdu codul cu modulul random.',
-        'Pasul 3: Explică pas cu pas cum funcționează codul.',
-        'Pasul 4: Rulează programul și verifică rezultatele aruncărilor.',
-    ],
-    'quiz_title' => 'Test',
-    'quiz' => [
-        'Ce modul Python generează numere aleatoare? (random)',
-        'Ce face funcția random.randint(1,6)? (generează un număr întreg între 1 și 6)',
-        'Cum convertești un input la întreg? (int())',
-        'Răspunsuri corecte: 1.a, 2.a, 3.b',
-    ],
-    'mini_simulation_title' => 'Mini simulare',
-    'mini_simulation' => [
-        'Extinde programul pentru două zaruri.',
-        'Numără care rezultat apare cel mai des.',
-    ],
-    'additional_resources_title' => 'Resurse suplimentare',
-    'additional_resources' => [
-        'Documentația Python random',
-        'Learn Python',
-    ],
-],
 
     'gender-gap-gender-graph' => [
-    'title' => 'Diferența de gen, Graficul de gen',
-    'author' => 'Theodora S. Tziampazi',
-    'purposes_title' => 'Scopul provocării',
-    'purposes' => [
-        'Să înțelegeți cum vizualizarea datelor poate influența percepția.',
-        'Să identificați prejudecățile din instrumentele digitale prin interacțiune.',
-        'Să experimentați introducerea datelor pentru a observa distorsiuni.',
-        'Să modificați codul pentru a asigura o reprezentare corectă a datelor.',
-        'Să comparați vizualizările de date corecte și părtinitoare.',
-        'Să reflectați asupra implicațiilor etice ale manipulării datelor.',
-        'Să discutați consecințele reale ale statisticilor părtinitoare.',
-        'Să dezvoltați gândirea critică despre AI și părtinirea algoritmică.',
+        'title' => 'Diferența de gen, Graficul de gen',
+        'author' => 'Theodora S. Tziampazi',
+        'purposes_title' => 'Scopul provocării',
+        'purposes' => [
+            'Înțelegeți modul în care vizualizarea datelor poate influența percepția.',
+            'Identificați distorsiunile din instrumentele digitale prin interacțiune.',
+            'Experimentați cu date de intrare pentru a observa distorsiunile.',
+            'Modificați codul pentru a asigura reprezentarea exactă a datelor.',
+            'Comparați vizualizări de date corecte și părtinitoare.',
+            'Reflectarea asupra implicațiilor etice ale manipulării datelor.',
+            'Discutați despre consecințele reale ale statisticilor părtinitoare.',
+            'Dezvoltați gândirea critică despre AI și subiectivitatea algoritmică.'
+        ],
+        'description_title' => 'Descrierea provocării',
+        'description' => 'Investigați prejudecățile în vizualizarea datelor prin introducerea de valori, analizarea distorsiunilor, modificarea codului și explorarea modului în care instrumentele digitale influențează percepțiile reprezentării de gen în tehnologie.',
+        'educational_goals_title' => 'Obiective educaționale',
+        'educational_goals' => [
+            'Codare și logică de programare:',
+            'Gândire computațională:',
+            'Rezolvare de probleme și depanare:',
+            'Creativitate și gândire de design:',
+            'Colaborare și comunicare:',
+        ],
+        'target_audience_title' => 'Audiența țintă',
+        'target_audience' => [
+            'Elevii de școală primară (6-12 ani)',
+            'Elevii de gimnaziu (12-16 ani)',
+            'Elevii de liceu (16-18 ani)',
+            'Profesori și educatori'
+        ],
+        'experience_title' => 'Experiență',
+        'experiences' => [
+            'Intermediară - Se recomandă cunoștințe de bază de programare; participanții ar trebui să fie familiarizați cu conceptele fundamentale de programare.',
+            'Avansată - Conceput pentru participanții cu abilități puternice de programare și experiență anterioară în programare.'
+        ],
+        'duration_title' => 'Durată',
+        'duration' => '2 ore',
+        'materials_title' => 'Instrument recomandat',
+        'materials' => [
+            'Scratch 3 și foaia de lucru https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+        ],
+        'instructions_title' => 'Instrucțiuni',
+        'instructions' => [
+            'Sunteți utilizatorul acestui instrument digital (creator de bare) https://scratch.mit.edu/projects/1147892829 . Nu te uita în interiorul codului încă.',
+            'Faceți clic pe steagul verde și introduceți date (1-10) care reprezintă ipotetic numărul de femei dintr-un sector tehnic. Încearcă cu niște numere.',
+            '',
+            'Ce observați?',
+            'Ar putea fi o eroare sau o decizie?',
+            'Oricum ar fi, cum poate fi reparat?',
+            'Manual (nivel utilizator):',
+            'Explorați instrumentul și orice sprite care pot fi trase.',
+            'Există vreo poziție în care problema să fie rezolvată?',
+            'Există o poziție în care se observă un alt rezultat neașteptat?',
+            'Alimente pentru gândire/Discuție',
+            'Ce se întâmplă dacă numărul femeilor dintr-un sector este subestimat?',
+            'Ce se întâmplă dacă numărul femeilor dintr-un sector este supraestimat?',
+            'Ce se întâmplă dacă numărul femeilor dintr-un sector este bine estimat, dar nu echilibrat din punct de vedere al diferenței de gen?',
+            'Ce ar trebui făcut?',
+            'Takeaway: Modul în care folosim instrumentul (unde am localizat o componentă) afectează rezultatul.',
+            'Cu programare (nivel de creator): Acum, este timpul să vedeți în interiorul proiectului.',
+            'Provocare simplă:',
+            'Modificați codul astfel încât datele prezentate sunt egale cu datele introduse în orice caz.',
+            'Provocare avansată:',
+            'Copiați bara de sprite și faceți-l albastru (stereotipic referindu-se la bărbat).',
+            'Se modifică poziția astfel încât să fie vizibilă și comparabilă cu bara violetă.',
+            'Creați un simbol masculin ca sprite nou.',
+            'Sfat: Puteți descărca/exporta ambele sprite (bar, simbol) din proiectul dat la sfârșitul acestei secțiuni ca o soluție.',
+            'Acum modificați codurile astfel încât atunci când intrarea utilizatorului este x (acum dat de 2 ori pentru fiecare bar), factorii de decizie de 2 bare sunt:',
+            'Fair (același cod). Efectuați ajustări în poziția y a simbolului masculin în condiția if. Depanați în timp ce continuați să verificați ambele coduri.',
+            'Utilizare incorectă: Trageți cele 2 simboluri în poziții diferite; oferiți aceeași informație pentru a vedea inegalitatea.',
+            'Lateral/părtinitor (cod diferit)',
+            'pentru bărbați',
+            'în favoarea femeilor',
+            'Experimentați astfel încât codul să atenueze sau să exacerbeze diferența de gen…',
+            'Explorați cele două moduri în care rezultatul este părtinitor (tragere și/sau codare).',
+            'Cum ar putea aceste 2 moduri să fie legate între ele?',
+            'O soluție (același cod): https://scratch.mit.edu/projects/1151892036',
+            'Discuție:',
+            'Cum credeți că puteți crea un instrument digital părtinitor și imparțial?',
+            'Unde este prejudecata mai „ascunsă”? Când vine vorba de tragere între diferite poziții sau de a coda?',
+            'Vă puteți imagina cazuri în care o imagine distorsionată a ceva poate ajuta (unii oameni-cine)?',
+            'Credeți că am putea sprijini datele distorsionate atunci când scopul justifică mijloacele sau nu prezintă adevărul în niciun fel?',
+            'Cum simțiți că IA (condusă de un anumit scop) poate încerca lucruri ca cele pe care le-ați încercat în această provocare?',
+            'Mai multe întrebări:',
+            'Cum colectăm datele?',
+            'Cum sunt procesate datele noastre?',
+            'Cum sunt afectate acțiunile/convingerile noastre de statistici ascunse în algoritmi (AI sau nu)?',
+            'Takeaway: Modul în care creăm instrumentul afectează rezultatul sau chiar viziunea noastră asupra lumii.'
+        ],
+        'real-life-applications_title' => 'Exemple',
+        'real-life-applications' => [
+            'Rapoarte privind diversitatea la locul de muncă - asigurarea unei reprezentări exacte a datelor privind egalitatea de gen în statisticile privind diversitatea la nivelul întreprinderilor.',
+            'Media & News Graphics - Evitarea vizualizărilor înșelătoare în rapoartele privind egalitatea de gen.',
+            'AI & Algorithm Bias - Identificarea și atenuarea prejudecăților în modelele de învățare automată care procesează date demografice.',
+            'Instrumente de angajare și recrutare - Asigurarea unei reprezentări corecte în analiza resurselor umane și în software-ul de luare a deciziilor.',
+            'STEM Education & Outreach - Utilizarea de date nepărtinitoare pentru a încuraja mai multe femei în domeniile tehnologice.',
+            'Politici publice și promovare - sprijinirea deciziilor politice corecte cu statistici corecte privind diferențele de gen.',
+            'Social Media & Campanii de conștientizare - Crearea de reprezentări vizuale corecte ale datelor de gen pentru a stimula schimbarea.'
+        ],
+        'variations_title' => 'Variații ale provocării',
+        'variations' => [
+            'Extinderea provocării la alte medii: Ați putea modifica provocarea pentru a implica roboți AI care protejează alte ecosisteme precum pădurile, râurile sau chiar zonele urbane.',
+            'Roboții ar trebui să abordeze provocări precum defrișările sau poluarea aerului.',
+        ],
     ],
-    'description_title' => 'Descrierea provocării',
-    'description' => 'Investighează părtinirea în vizualizarea datelor introducând valori, analizând distorsiuni, modificând codul și explorând modul în care instrumentele digitale influențează percepțiile despre reprezentarea de gen în tehnologie.',
-    'educational_goals_title' => 'Obiective educaționale',
-    'educational_goals' => [
-        'Programare și logică de programare',
-        'Gândire computațională',
-        'Rezolvare de probleme și depanare',
-        'Creativitate și gândire de design',
-        'Colaborare și comunicare',
-    ],
-    'target_audience_title' => 'Public țintă',
-    'target_audience' => [
-        'Elevi de școală primară (6–12 ani)',
-        'Elevi de gimnaziu (12–16 ani)',
-        'Elevi de liceu (16–18 ani)',
-        'Profesori și educatori',
-    ],
-    'experience_title' => 'Experiență',
-    'experience' => 'Nivel intermediar – sunt recomandate cunoștințe de bază de programare; participanții ar trebui să fie familiarizați cu concepte fundamentale de programare.',
-    'advanced_experience' => 'Avansat – conceput pentru participanți cu abilități solide de programare și experiență anterioară.',
-    'duration_title' => 'Durată',
-    'duration' => '2 ore',
-    'materials_title' => 'Instrument recomandat',
-    'materials' => [
-        'Scratch 3 și fișa de lucru https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit',
-    ],
-    'instructions_title' => 'Instrucțiuni',
-    'instructions' => [
-        'Accesează instrumentul digital (bar maker) https://scratch.mit.edu/projects/1147892829 fără a analiza codul.',
-        'Apasă steagul verde și introdu date (1–10) care reprezintă ipotetic numărul de femei dintr-un sector tehnologic.',
-        'Observă rezultatele.',
-        'Întreabă-te: este o eroare sau o alegere?',
-        'Cum ar putea fi corectat?',
-        'La nivel de utilizator: explorează pozițiile sprite-urilor.',
-        'La nivel de creator: modifică codul astfel încât datele introduse să fie reprezentate corect.',
-        'Provocare avansată: adaugă un sprite pentru bărbați și compară graficele.',
-        'Discută: cum poate fi introdusă părtinirea atât prin cod, cât și prin interacțiune?',
-        'Găsești o soluție aici: https://scratch.mit.edu/projects/1151892036',
-    ],
-    'real-life-applications_title' => 'Aplicații reale',
-    'real-life-applications' => [
-        'Rapoarte despre diversitatea la locul de muncă',
-        'Grafice media și știri',
-        'Bias în algoritmi și AI',
-        'Instrumente de recrutare și HR',
-        'Educație STEM și campanii de sensibilizare',
-        'Politici publice și advocacy',
-    ],
-    'variations_title' => 'Variații ale provocării',
-    'variations' => [
-        'Extinde provocarea pentru a implica alte contexte, precum păduri, râuri sau zone urbane.',
-    ],
-],
+
     'dance-with-ally' => [
-    'title' => 'Dansează cu Ally',
-    'author' => 'Kristina Krtalić',
-
-    'purposes_title' => 'Scopul provocării',
-    'purposes' => [
-        'învățați să conectați micro:bit cu Scratch prin Bluetooth',
-        'înțelegeți cum să utilizați extensia Scratch micro:bit',
-        'utilizați butoane micro:bit pentru a interacționa cu proiectele Scratch',
-        'crearea de jocuri interactive cu micro:bit',
-        'dezvoltarea abilităților de rezolvare a problemelor și gândire logică',
-        'sporirea creativității prin programare',
+        'title' => 'Dansează cu Ally',
+        'author' => 'Kristina Krtalić',
+        'purposes_title' => 'Scopul provocării',
+        'purposes' => [
+            'învățați să conectați micro:bit cu Scratch prin Bluetooth',
+            'înțelegeți cum să utilizați extensia Scratch micro:bit',
+            'utilizați butoane micro:bit pentru a interacționa cu proiectele Scratch',
+            'crearea de jocuri interactive cu micro:bit',
+            'dezvoltarea abilităților de rezolvare a problemelor și gândire logică',
+            'sporirea creativității prin programare'
+        ],
+        'description_title' => 'Descrierea provocării',
+        'description' => 'Creați un program care va permite un dans simplu sprite în Scratch cu un micro:bit.
+        Prin conectarea Scratch și micro:bit, elevii dobândesc o experiență cuprinzătoare de învățare care integrează calculatoarele digitale și fizice, îmbunătățește abilitățile de rezolvare a problemelor și încurajează explorarea creativă.',
+        'educational_goals_title' => 'Obiective educaționale',
+        'educational_goals' => [
+            'Logica de programare:',
+            'elevii vor folosi blocuri în Scratch pentru a scrie programe bazate pe evenimente care răspund la intrările de la micro:bit',
+            'elevii vor înțelege și aplica concepte fundamentale de programare, cum ar fi bucle, decizii, condiționări și variabile',
+            'elevii vor construi fluență cu programarea bazată pe blocuri pentru a controla ieșirile digitale și fizice',
+            'Gândire computațională:',
+            'elevii vor descompune problemele în piese mai mici și vor proiecta soluții pas cu pas folosind Scratch',
+            'elevii vor folosi datele senzorilor (de exemplu: butoane) de la micro:bit pentru a controla sprite sau animații',
+            'elevii vor dezvolta și testa algoritmi pentru a rezolva provocări specifice (de exemplu: făcând dansul sprite când micro:bit este înclinat).',
+            'Rezolvare și depanare probleme:',
+            'elevii se vor angaja în design iterativ prin testarea, identificarea bug-urilor și rafinarea codului lor Scratch și a interacțiunilor micro:bit',
+            'elevii vor depana erorile în timp real care implică atât software-ul (scripturi de lucru), cât și hardware (conexiune micro:bit sau intrări)',
+            'elevii vor documenta și vor reflecta asupra modificărilor efectuate în timpul depanării.',
+            'Creativitate și gândire de design:',
+            'elevii vor crea animații originale, jocuri sau povești în Scratch care integrează intrările micro:bit ca elemente interactive',
+            'elevii se vor exprima artistic prin coregrafia mișcărilor de sprite sau prin proiectarea scenelor interactive',
+            'elevii vor urma procesul de proiectare: empatiza, ideate, prototip și test',
+            'Colaborare și comunicare:',
+            'elevii vor lucra în perechi sau echipe mici pentru a planifica, coda și prezenta proiecte interactive',
+            'elevii vor explica alegerile lor de design și logica codului la colegii sau o audiență mai largă'
+        ],
+        'target_audience_title' => 'Audiența țintă',
+        'target_audience' => [
+            'Elevii de școală primară (6-12 ani)',
+            'Elevii de gimnaziu (12-16 ani)'
+        ],
+        'experience_title' => 'Experiență',
+        'experience' => 'Intermediară - Se recomandă cunoștințe de bază de programare; participanții ar trebui să fie familiarizați cu conceptele fundamentale de programare.',
+        'duration_title' => 'Durată',
+        'duration' => '60 minute',
+        'materials_title' => 'Instrument recomandat',
+        'materials' => [
+            'computer',
+            'Scratch (https://scratch.mit.edu/)',
+            'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
+            'Scratch micro:bit (https://scratch.mit.edu/microbit)',
+            'micro:bit',
+            'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+        ],
+        'instructions_title' => 'Instrucțiuni',
+        'instructions' => [
+            'deschide Scratch',
+            'creați un cont în Scratch (dacă nu aveți unul)',
+            'începeți prin a crea un nou proiect, adăugați un sprite, adăugați un fundal, determinați poziția inițială a sprite-ului atunci când începeți programul',
+            'adăugați un grup de scripturi micro:bit din extensia limbajului de programare Scratch',
+            'conectați micro:bit la computer, porniți Bluetooth pe computer (dacă nu este pornit)',
+            'instalați și rulați Scratch link https://scratch.mit.edu/download/scratch-link, descărcați fișierul micro:bit HEX și salvați (copiați)-l la micro:bit https://scratch.mit.edu/microbit',
+            'extensia micro:bit, găsiți un dispozitiv lângă computer făcând clic pe butonul portocaliu din extensia micro:bit',
+            'Căutare și dispozitive găsite',
+            'Creați un program cu blocuri care va permite un dans sprite pentru muzica selectată (cu blocul de sunet de pornire) care se mișcă atunci când scuturăm micro:bit. Dansul constă doar din două comenzi: glisați pe axa x stânga și dreapta. Salvați proiectul pe computer.',
+            'După crearea programului conform instrucțiunilor, elevii pot adăuga propriile blocuri, pot determina comenzile spritului prin apăsarea butonului A și / sau B pe micro: bit, schimba aspectul spritului, schimba / adăuga mișcări,...'
+        ],
+        'examples_title' => 'Exemple',
+        'examples' => [
+            'Conectarea unui micro:bit cu Scratch pentru a controla un sprite de dans este o modalitate foarte bună de a explora programarea interactivă. Acest concept poate fi extins la diverse aplicații din viața reală și proiecte creative, cum ar fi:',
+            '1. programe interactive de dans și fitness',
+            'utilizați accelerometrul micro:bit pentru a urmări mișcarea și pentru a crea jocuri de fitness',
+            'creați un instrument de învățare a dansului în cazul în care spiritul urmează mișcări de dans din viața reală',
+            '2. animație și jocuri bazate pe gesturi',
+            'controați caracterele din Scratch cu gesturi de mână sau mișcări de înclinare',
+            'dezvoltați jocuri simple controlate de mișcare, cum ar fi sărituri sau ocolirea obstacolelor',
+            'https://microbit.org/projects/make-it-code-it/step-counter/'
+        ]
     ],
 
-    'description_title' => 'Descrierea provocării',
-    'description' => 'Creați un program care va permite un dans simplu sprite în Scratch cu un micro:bit.',
+    'coding-for-the-ocean' => [
+        'title' => 'Programare pentru Ocean Construiți-vă roboții AI pentru a salva Marea',
+        'author' => 'Teresa Silvestri',
+        'purposes' => [
+            'La finalizarea provocării, participanții vor învăța și vor câștiga:',
+            'Capacitatea de a utiliza inteligența artificială pentru a rezolva problemele de mediu.',
+            'Programarea abilităților pentru a crea și programa un robot AI.',
+            'Cunoașterea schimbărilor climatice și importanța protejării mediului marin.',
+            'Abilități de rezolvare a problemelor în contextul științei și tehnologiei.',
+            'Dezvoltarea gândirii logice aplicată provocărilor din lumea reală.',
+            'Creativitate în proiectarea unui robot care poate răspunde la amenințările de mediu.',
+            'Experiență practică folosind platforme de codare precum Code.org.',
+            'Lucrați în echipă și colaborați în timp ce partajați roboți și concurați cu colegii de clasă.',
+        ],
+        'description' => 'Creați și antrenați un robot AI pentru a proteja marea! Învață să programezi, să rezolvi problemele de mediu și să dezvolți gândirea logică pentru a proteja mediul marin.',
+        'target-audience' => [
+            'Elevii de școală primară (6-12 ani)',
+        ],
+        'experience' => 'Începător - Nu este necesară o experiență anterioară de codare; potrivit pentru începători.',
+        'duration' => '45 de minute – 1 oră',
+        'materials' => [
+            'Software: Acces la Code.org',
+            'Hardware: Computer sau tabletă cu conexiune la internet.',
+            'Instrumente online: Browser web pentru a naviga pe Code.org sau platforme similare.',
+            'Materiale de suport: Tutoriale și resurse educaționale furnizate de platformă.',
+            'Alte instrumente: Dispozitive audio sau video opționale pentru a urmări tutorialul.',
+        ],
+        'instructions' => [
+            'Accesați Code.org
 
-    'educational_goals_title' => 'Obiective educaționale',
-    'educational_goals' => [
-        'Logica de programare:',
-        'elevii vor folosi blocuri în Scratch pentru a scrie programe bazate pe evenimente care răspund la intrările de la micro:bit',
-        'elevii vor înțelege și aplica concepte fundamentale de programare, cum ar fi bucle, decizii, condiționări și variabile',
-        'elevii vor construi fluență cu programarea bazată pe blocuri pentru a controla ieșirile digitale și fizice',
-        'Gândire computațională:',
-        'elevii vor descompune problemele în piese mai mici și vor proiecta soluții pas cu pas folosind Scratch',
-        'elevii vor folosi datele senzorilor (de exemplu: butoane) de la micro:bit pentru a controla sprite sau animații',
-        'elevii vor dezvolta și testa algoritmi pentru a rezolva provocări specifice (de exemplu: făcând dansul sprite când micro:bit este înclinat).',
-        'Rezolvare și depanare probleme:',
-        'elevii se vor angaja în design iterativ prin testarea, identificarea bug-urilor și rafinarea codului lor Scratch și a interacțiunilor micro:bit',
-        'elevii vor depana erorile în timp real care implică atât software-ul (scripturi de lucru), cât și hardware (conexiune micro:bit sau intrări)',
-        'elevii vor documenta și vor reflecta asupra modificărilor efectuate în timpul depanării.',
-        'Creativitate și gândire de design:',
-        'elevii vor crea animații originale, jocuri sau povești în Scratch care integrează intrările micro:bit ca elemente interactive',
-        'elevii se vor exprima artistic prin coregrafia mișcărilor de sprite sau prin proiectarea scenelor interactive',
-        'elevii vor urma procesul de proiectare: empatiza, ideate, prototip și test',
-        'Colaborare și comunicare:',
-        'elevii vor lucra în perechi sau echipe mici pentru a planifica, coda și prezenta proiecte interactive',
-        'elevii vor explica alegerile lor de design și logica codului la colegii sau o audiență mai largă',
+            Deschideți browserul web și accesați Code.org.
+            Dacă nu aveți un cont, puteți crea unul sau vă puteți conecta cu unul existent.
+            Începeți un proiect nou
+
+            Pe ecranul principal, selectați cursul sau tutorialul legat de protecția oceanului.
+            Faceți clic pe „Start” pentru a începe proiectul.
+            Urmați tutorialul pas cu pas
+
+            Code.org vă va ghida printr-un tutorial interactiv. Citiți cu atenție fiecare instrucțiune și finalizați fiecare pas.
+            Asigurați-vă că urmați instrucțiunile pentru a afla cum să programați robotul AI.
+            Programați-vă robotul
+
+            Utilizați blocurile de programare vizuală pentru a vă învăța chatbot-ul cum să răspundă la situații de mediu, cum ar fi colectarea plasticului sau evitarea obstacolelor.
+            Modificați blocurile pentru a se potrivi diferitelor situații și testați comportamentul chatbot-ului.
+            Testează-ți robotul
+
+            După ce scrieți codul, testați-vă robotul pentru a vedea cum se ocupă de provocări.
+            Dacă chatbot-ul nu funcționează așa cum era de așteptat, reveniți și modificați-l, apoi retestați-l până devine eficient.
+            Partajați robotul cu clasa
+
+            Odată ce robotul este gata, copiați linkul proiectului și partajați-l cu colegii de clasă.
+            Alăturați-vă competiției pentru a vedea care dintre cele două este cel mai eficient la protejarea mării.
+            Revizuiți și îmbunătățiți
+
+            După finalizarea provocării, revizuiți codul și căutați modalități de a-l îmbunătăți.
+            Puteți adăuga mai multe caracteristici la robot pentru a aborda noile provocări legate de mediu.
+            ',
+        ],
+
+        'real-life-applications_title' => 'Aplicații reale',
+        'real-life-applications' => [
+            'Inteligența artificială în protecția oceanelor: Organizații precum The Ocean Cleanup folosesc sisteme bazate pe AI pentru a colecta plastic din oceane, ajutând la combaterea poluării marine.',
+            'AI în monitorizarea mediului: Roboții AI sunt utilizați pentru monitorizarea condițiilor oceanice, urmărirea faunei marine și detectarea poluării, îmbunătățind eficiența eforturilor de protecție a mediului.',
+        ],
+
+        'variations_title' => 'Variații ale provocării',
+        'variations' => [
+            'Extinderea provocării la alte medii: puteți modifica provocarea pentru a implica roboți AI care protejează alte ecosisteme, cum ar fi pădurile, râurile sau zonele urbane.',
+            'Roboții vor trebui să abordeze probleme precum despădurirea sau poluarea aerului.',
+        ],
+
+        'educational_goals' => [
+            'Dezvoltarea abilităților de bază în programare și inteligență artificială',
+            'Promovarea conștientizării ecologice și a importanței protecției mediului',
+            'Încurajarea creativității și imaginației prin povestire',
+            'Dezvoltarea abilităților de rezolvare a problemelor și a gândirii critice',
+        ],
     ],
-
-    'target_audience_title' => 'Audiența țintă',
-    'target_audience' => [
-        'Elevii de școală primară (6-12 ani)',
-        'Elevii de gimnaziu (12-16 ani)',
+    'code-it-like-margaret-hamilton' => [
+        'title' => 'Programează ca Margaret Hamilton !!!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'Elevii vor învăța concepte de bază de programare bazate pe blocuri folosind Scratch Jr pentru a lansa o navă spațială, la fel ca Margaret Hamilton, femeia care a scris codul pentru Apollo Nasa pentru a ajunge la Lună.',
+            'Activitatea va contribui, de asemenea, la eliminarea stereotipurilor de gen, subliniind contribuția unei femei programator la explorarea spațiului și încurajând fetele să urmeze programe și cariere STIM.'
+        ],
+        'description' => 'Programează o lansare spațială în Scratch Jr inspirată de Margaret Hamilton! Programați o numărătoare inversă, lansați o navă spațială și opriți stereotipurile de gen prin încurajarea fetelor în programare!',
+        'instructions' => [
+            '1. Introducere:',
+            'Profesorul prezintă misiunile spațiale și trimiterea oamenilor pe Lună și o introduce pe Margaret Hamilton și contribuțiile ei la planificarea misiunii Apollo. Apoi urmează o discuție despre ce este programarea și cum putem da instrucțiuni unui computer.',
+            '2. Activitate de programare: Margaret Hamilton programează și numără invers, iar nava spațială pleacă spre Lună.',
+            'Deschideți aplicația Scratch Jr. și creați un nou proiect',
+            'Ștergeți caracterul',
+            'Alegeți fundalul cu spațiu (Pas1 png)',
+            'Alegeți dintre personajele o femeie, o navă spațială și Pământ (Pasul 2 png)',
+            'Redimensionați caracterele făcând clic de câte ori este necesar pe Bloc „Shrink” sau „Grow” (Pasul 3 png)',
+            'Mutați caracterele în poziția din dreapta (Pasul 4 png)',
+            'Scrie programele astfel încât femeia să numere invers, iar când își termină cuvintele, nava spațială să urce. Pentru a realiza acest lucru, odată ce se apasă steagul verde, femeia ar trebui să spună cuvintele alese și apoi să trimită un mesaj. Nava spațială ar trebui să primească mesajul de aceeași culoare și cu blocurile corecte de mișcare, nava spațială ar trebui să urce. De asemenea, poți face ca nava spațială să se micșoreze pe măsură ce se îndepărtează. Pentru a programa nava spațială, poți folosi blocuri simple sau bucla de repetare. (Step 5 png)',
+            'Rulați scriptul apăsând steagul verde.'
+        ],
+        'materials' => [
+            'Tabletă sau PC (dacă este posibil, încurajăm în primul rând utilizarea unei tablete) cu Scratch Jr. instalat (https://www.scratchjr.org/ pentru tablete și https://jfo8000.github.io/ScratchJr-Desktop/ pentru Windows sau Mac)',
+            'Imagini imprimate cu Margaret Hamilton și misiunea Apollo 11 (opțional)',
+            'Carduri imprimabile cu comenzile Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opțional)',
+            'Proiector (opțional)'
+        ],
+        'real-life-applications' => [
+            'Aplicații în viața reală:',
+            'Această activitate nu este doar o introducere în programare, ci este legată de evenimente și aplicații din viața reală în știință și tehnologie:',
+            'Margaret Hamilton a dezvoltat software-ul pentru Apollo Guidance Computer, care a permis Apollo 11 să aterizeze în siguranță în 1969. Activitatea ajută copiii să înțeleagă cum computerele au nevoie de comenzi clare și corecte pentru a îndeplini o misiune – la fel cum NASA a folosit codul pentru a ajunge pe Lună.',
+            'Programarea pe blocuri, cum este Scratch Jr, este primul pas pentru înțelegerea limbajelor de programare mai complexe folosite în prezent în misiuni spațiale, robotică și inteligență artificială. Aceleași principii sunt folosite în dezvoltarea sistemelor autonome, cum ar fi roboții de explorare a planetei Marte (Curiosity, Perseverance).'
+        ],
+        'variations' => [
+            'Variante/Sugestii:',
+            'Dacă elevii sunt noi în aplicație, poți crea mai întâi proiectele folosind blocurile tipărite.',
+            'Adaugă mai multe personaje, cum ar fi planete, stele sau comete.',
+            'În funcție de vârsta și experiența copiilor cu aplicația ScratchJr, se pot adăuga provocări suplimentare, cum ar fi programarea navei spațiale pentru a evita obstacole.',
+            'Elevii pot adăuga și o altă pagină care arată nava spațială aterizând pe Lună.',
+            'În loc de a folosi blocul „Say”, se poate folosi blocul „Play Recorded Sound” pentru a auzi vocile elevilor.',
+            'Adaugă personaje de astronauți în care editezi fețele și adaugi fotografiile elevilor.'
+        ],
+        'duration' => '60 minute',
+        'experience' => 'Intermediară - Se recomandă cunoștințe de bază de programare; participanții ar trebui să fie familiarizați cu conceptele fundamentale de programare.',
+        'target-audience' => [
+            'Copii mici (cu vârste cuprinse între 5 și 7 ani)'
+        ]
     ],
-
-    'experience_title' => 'Experiență',
-    'experience' => 'Intermediară - Se recomandă cunoștințe de bază de programare; participanții ar trebui să fie familiarizați cu conceptele fundamentale de programare.',
-
-    'duration_title' => 'Durată',
-    'duration' => '60 minute',
-
-    'materials_title' => 'Instrument recomandat',
-    'materials' => [
-        'computer',
-        'Scratch (https://scratch.mit.edu/)',
-        'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
-        'Scratch micro:bit (https://scratch.mit.edu/microbit)',
-        'micro:bit',
-        'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)',
-    ],
-
-    'instructions_title' => 'Instrucțiuni',
-    'instructions' => [
-        'deschide Scratch',
-        'creați un cont în Scratch (dacă nu aveți unul)',
-        'începeți prin a crea un nou proiect, adăugați un sprite, adăugați un fundal, determinați poziția inițială a sprite-ului atunci când începeți programul',
-        'adăugați un grup de scripturi micro:bit din extensia limbajului de programare Scratch',
-        'conectați micro:bit la computer, porniți Bluetooth pe computer (dacă nu este pornit)',
-        'instalați și rulați Scratch Link, descărcați fișierul micro:bit HEX și salvați-l (copiați-l) pe micro:bit (https://scratch.mit.edu/microbit)',
-        'în extensia micro:bit, găsiți un dispozitiv lângă computer făcând clic pe butonul portocaliu din extensie',
-        'căutare și dispozitive găsite',
-        'creați un program cu blocuri care va permite un dans al sprite-ului pe muzica selectată (cu blocul „start sound”) care se mișcă atunci când scuturăm micro:bit. Dansul constă doar din două comenzi: glisați pe axa x stânga și dreapta. Salvați proiectul pe computer. După crearea programului conform instrucțiunilor, elevii pot adăuga propriile blocuri, pot determina comenzile sprite-ului prin apăsarea butonului A și/sau B pe micro:bit, schimba aspectul sprite-ului, schimba/adăuga mișcări,...',
-    ],
-
-    'examples_title' => 'Exemple',
-    'examples' => [
-        'Conectarea unui micro:bit cu Scratch pentru a controla un sprite de dans este o modalitate foarte bună de a explora programarea interactivă. Acest concept poate fi extins la diverse aplicații din viața reală și proiecte creative, cum ar fi:',
-        '1. programe interactive de dans și fitness',
-        '- utilizați accelerometrul micro:bit pentru a urmări mișcarea și pentru a crea jocuri de fitness',
-        '- creați un instrument de învățare a dansului în care sprite-ul urmează mișcările de dans din viața reală',
-        '2. animație și jocuri bazate pe gesturi',
-        '- controlați personajele din Scratch cu gesturi de mână sau mișcări de înclinare',
-        '- dezvoltați jocuri simple controlate de mișcare, cum ar fi sărituri sau ocolirea obstacolelor',
-        'https://microbit.org/projects/make-it-code-it/step-counter/',
-    ],
-],
-
-'coding-for-the-ocean' => [
-    'title' => 'Programare pentru Ocean Construiți-vă roboții AI pentru a salva Marea',
-    'author' => 'Teresa Silvestri',
-
-    // NB: your English schema for this slug had no "purposes_title", so I mirror that exactly.
-    'purposes' => [
-        'Capacitatea de a utiliza inteligența artificială pentru a rezolva problemele de mediu.',
-        'Programarea abilităților pentru a crea și programa un robot AI.',
-        'Cunoașterea schimbărilor climatice și importanța protejării mediului marin.',
-        'Abilități de rezolvare a problemelor în contextul științei și tehnologiei.',
-        'Dezvoltarea gândirii logice aplicată provocărilor din lumea reală.',
-        'Creativitate în proiectarea unui robot care poate răspunde la amenințările de mediu.',
-        'Experiență practică folosind platforme de codare precum Code.org.',
-        'Lucrați în echipă și colaborați în timp ce partajați roboți și concurați cu colegii de clasă.',
-    ],
-
-    'description' => 'Creați și antrenați un robot AI pentru a proteja marea! Învață să programezi, să rezolvi problemele de mediu și să dezvolți gândirea logică pentru a proteja mediul marin.',
-
-    'target-audience' => [
-        'Elevii de școală primară (6-12 ani)',
-    ],
-
-    'experience' => 'Începător - Nu este necesară o experiență anterioară de codare; potrivit pentru începători.',
-
-    'duration' => '45 de minute – 1 oră',
-
-    'materials' => [
-        'Software: Acces la Code.org',
-        'Hardware: Computer sau tabletă cu conexiune la internet.',
-        'Instrumente online: Browser web pentru a naviga pe Code.org sau platforme similare.',
-        'Materiale de suport: Tutoriale și resurse educaționale furnizate de platformă.',
-        'Alte instrumente: Dispozitive audio sau video opționale pentru a urmări tutorialul.',
-    ],
-
-    'instructions' => [
-        'Accesați Code.org',
-        'Deschideți browserul web și accesați Code.org. Dacă nu aveți un cont, puteți crea unul sau vă puteți conecta cu unul existent.',
-        'Începeți un proiect nou',
-        'Pe ecranul principal, selectați cursul sau tutorialul legat de protecția oceanului. Faceți clic pe „Start” pentru a începe proiectul.',
-        'Urmați tutorialul pas cu pas',
-        'Code.org vă va ghida printr-un tutorial interactiv. Citiți cu atenție fiecare instrucțiune și finalizați fiecare pas. Asigurați-vă că urmați instrucțiunile pentru a afla cum să programați robotul AI.',
-        'Programați-vă robotul',
-        'Utilizați blocurile de programare vizuală pentru a vă învăța robotul cum să răspundă la situații de mediu, cum ar fi colectarea plasticului sau evitarea obstacolelor. Modificați blocurile pentru a se potrivi diferitelor situații și testați comportamentul robotului.',
-        'Testează-ți robotul',
-        'După ce scrieți codul, testați robotul pentru a vedea cum se descurcă în fața provocărilor. Dacă robotul nu funcționează așa cum era de așteptat, reveniți și modificați-l, apoi retestați-l până devine eficient.',
-        'Partajați robotul cu clasa',
-        'Odată ce robotul este gata, copiați linkul proiectului și partajați-l cu colegii de clasă. Alăturați-vă competiției pentru a vedea care robot este cel mai eficient la protejarea mării.',
-        'Revizuiți și îmbunătățiți',
-        'După finalizarea provocării, revizuiți codul și căutați modalități de a-l îmbunătăți. Puteți adăuga mai multe funcționalități robotului pentru a aborda noi provocări de mediu.',
-        // Present in your English block — included here for parity.
-        'Partajați linkul lucrării în Bio-ul Instagram: apăsați Edit Profile pe Instagram și adăugați linkul în câmpul Website. Apoi creați o postare nouă, adăugați un screenshot al lucrării, scrieți „Link in Bio”, adăugați hashtagul #EUCodeWeekChallenge și menționați @CodeWeekEU.',
-    ],
-
-    'real-life-applications_title' => 'Aplicații reale',
-    'real-life-applications' => [
-        'Inteligența artificială în protecția oceanelor: Organizații precum The Ocean Cleanup folosesc sisteme bazate pe AI pentru a colecta plastic din oceane, ajutând la combaterea poluării marine.',
-        'AI în monitorizarea mediului: Roboții AI sunt utilizați pentru monitorizarea condițiilor oceanice, urmărirea faunei marine și detectarea poluării, îmbunătățind eficiența eforturilor de protecție a mediului.',
-    ],
-
-    'variations_title' => 'Variații ale provocării',
-    'variations' => [
-        'Extinderea provocării la alte medii: puteți modifica provocarea pentru a implica roboți AI care protejează alte ecosisteme, cum ar fi pădurile, râurile sau zonele urbane.',
-        'Roboții vor trebui să abordeze probleme precum despădurirea sau poluarea aerului.',
-    ],
-
-    'educational_goals' => [
-        'Dezvoltarea abilităților de bază în programare și inteligență artificială',
-        'Promovarea conștientizării ecologice și a importanței protecției mediului',
-        'Încurajarea creativității și imaginației prin povestire',
-        'Dezvoltarea abilităților de rezolvare a problemelor și a gândirii critice',
-    ],
-],
-'code-it-like-margaret-hamilton' => [
-    'title' => 'Programează ca Margaret Hamilton!',
-    'author' => 'Chouliara Theodora',
-    'purposes' => [
-        'Elevii vor învăța concepte de bază de programare bazate pe blocuri folosind Scratch Jr pentru a lansa o navă spațială, la fel ca Margaret Hamilton, femeia care a scris codul pentru Apollo Nasa pentru a ajunge la Lună.',
-        'Activitatea va contribui, de asemenea, la eliminarea stereotipurilor de gen, subliniind contribuția unei femei programator la explorarea spațiului și încurajând fetele să urmeze programe și cariere STIM.'
-    ],
-    'description' => 'Programează o lansare spațială în Scratch Jr inspirată de Margaret Hamilton! Programați o numărătoare inversă, lansați o navă spațială și opriți stereotipurile de gen prin încurajarea fetelor în programare!',
-    'instructions' => [
-        'Introducere: Profesorul prezintă misiunile spațiale și trimiterea oamenilor pe Lună și o introduce pe Margaret Hamilton și contribuțiile ei la planificarea misiunii Apollo. Apoi urmează o discuție despre ce este programarea și cum putem da instrucțiuni unui computer.',
-        'Activitate de programare: Margaret Hamilton programează și numără invers, iar nava spațială pleacă spre Lună.',
-        'Deschideți aplicația Scratch Jr. și creați un nou proiect',
-        'Ștergeți caracterul',
-        'Alegeți fundalul cu spațiu (Pas1 png)',
-        'Alegeți dintre personajele o femeie, o navă spațială și Pământ (Pasul 2 png)',
-        'Redimensionați caracterele făcând clic de câte ori este necesar pe Bloc „Shrink” sau „Grow” (Pasul 3 png)',
-        'Mutați caracterele în poziția din dreapta (Pasul 4 png)',
-        'Scrie programele astfel încât femeia să numere invers, iar când își termină cuvintele, nava spațială să urce. Pentru a realiza acest lucru, odată ce se apasă steagul verde, femeia ar trebui să spună cuvintele alese și apoi să trimită un mesaj. Nava spațială ar trebui să primească mesajul de aceeași culoare și cu blocurile corecte de mișcare, nava spațială ar trebui să urce. De asemenea, poți face ca nava spațială să se micșoreze pe măsură ce se îndepărtează. Pentru a programa nava spațială, poți folosi blocuri simple sau bucla de repetare. (Step 5 png)',
-        'Rulați scriptul apăsând steagul verde.'
-    ],
-    'materials' => [
-        'Tabletă sau PC (dacă este posibil, încurajăm în primul rând utilizarea unei tablete) cu Scratch Jr. instalat (https://www.scratchjr.org/ pentru tablete și https://jfo8000.github.io/ScratchJr-Desktop/ pentru Windows sau Mac)',
-        'Imagini imprimate cu Margaret Hamilton și misiunea Apollo 11 (opțional)',
-        'Carduri imprimabile cu comenzile Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opțional)',
-        'Proiector (opțional)'
-    ],
-    'real-life-applications' => [
-        'Aplicații în viața reală:',
-        'Această activitate nu este doar o introducere în programare, ci este legată de evenimente și aplicații din viața reală în știință și tehnologie: Margaret Hamilton a dezvoltat software-ul pentru Apollo Guidance Computer, care a permis Apollo 11 să aterizeze în siguranță în 1969. Activitatea ajută copiii să înțeleagă cum computerele au nevoie de comenzi clare și corecte pentru a îndeplini o misiune – la fel cum NASA a folosit codul pentru a ajunge pe Lună. Programarea pe blocuri, cum este Scratch Jr, este primul pas pentru înțelegerea limbajelor de programare mai complexe folosite în prezent în misiuni spațiale, robotică și inteligență artificială. Aceleași principii sunt folosite în dezvoltarea sistemelor autonome, cum ar fi roboții de explorare a planetei Marte (Curiosity, Perseverance).'
-    ],
-    'variations' => [
-        'Variante/Sugestii:',
-        'Dacă elevii sunt noi în aplicație, poți crea mai întâi proiectele folosind blocurile tipărite.',
-        'Adaugă mai multe personaje, cum ar fi planete, stele sau comete.',
-        'În funcție de vârsta și experiența copiilor cu aplicația ScratchJr, se pot adăuga provocări suplimentare, cum ar fi programarea navei spațiale pentru a evita obstacole.',
-        'Elevii pot adăuga și o altă pagină care arată nava spațială aterizând pe Lună.',
-        'În loc de a folosi blocul „Say”, se poate folosi blocul „Play Recorded Sound” pentru a auzi vocile elevilor.',
-        'Adaugă personaje de astronauți în care editezi fețele și adaugi fotografiile elevilor.'
-    ],
-    'duration' => '60 minute',
-    'experience' => 'Intermediară - Se recomandă cunoștințe de bază de programare; participanții ar trebui să fie familiarizați cu conceptele fundamentale de programare.',
-    'target-audience' => [
-        'Copii mici (cu vârste cuprinse între 5 și 7 ani)'
-    ]
-],
     'chatbot' => [
         'title' => 'Să construim un chatbot',
         'author' => 'Echipa Săptămânii UE a programării',
@@ -1029,7 +1139,8 @@ return [
         'author' => 'Lydie El-Halougi',
         'purposes' => [
             'Pentru a învăța și a exersa bucla și variabilele.',
-            'Pentru a spori creativitatea în programare.'],
+            'Pentru a spori creativitatea în programare.'
+        ],
         'description' => 'În această probă vei scrie un proiect cu Scratch pentru a crea o spirală, folosind blocurile stilou, o buclă și o variabilă.',
 
         'instructions' => [
@@ -1143,7 +1254,8 @@ return [
             'Creează un nou model de învățare automată adăugând 3 etichete noi, prima se numește „frumos”, a doua se numește „rău” și, opțional, dacă vrei să-ți recunoască numele, creează o a treia etichetă numită „nume”.',
             'Antrenează noul model de învățare automată, testează-l și folosește-l pentru a crea Emobot în Scratch.',
             'Lansează editorul Scratch 3, șterge elementul grafic sprite cat, inserează 3 elemente grafice sprite noi realizate de Microsoft Bing Image Creator (desene animate pe calculator fericite, furioase și nesigure) sau creează un nou element grafic sprite făcând clic pe pictograma Paint, desenând trei copii ale „costumului” pentru fața fericită, furioasă și nesigură.',
-            'Fă clic pe fila „Code” (cod) și introdu următorul script.'],
+            'Fă clic pe fila „Code” (cod) și introdu următorul script.'
+        ],
         'example' => [
             'Partajează Emobot Kliki cu prietenii tăi și învață mai multe despre IA și emoții!',
             'În loc de un desen animat pe calculator poți încerca ceva diferit, cum ar fi un animal. În loc de amabilitate și răutate ai putea antrena personajul să recunoască alte tipuri de mesaje.',
@@ -1209,7 +1321,8 @@ return [
             'Pentru a preda/învăța și a reflecta asupra conceptelor de programare.',
             'Pentru a utiliza instrumente de programare simple.',
             'Pentru a dezvolta gândirea computațională și abilitățile de rezolvare a problemelor.',
-        ], 'description' => [
+        ],
+        'description' => [
             'Creează o experiență escape room cu ajutorul programării:',
             'Poți să folosești Google Forms, Genially, Google presentation, orice instrument pentru a spune o poveste bazată pe programare ;).',
 
@@ -1253,7 +1366,8 @@ return [
             'Toate animațiile încep atunci când se primește semnalul radio . ',
             'Animația primului microbit este vizibilă imediat, celelalte așteaptă până când șarpele ajunge acolo . ',
             'Timpul dintre cele două faze determină viteza șarpelui . ',
-        ], 'materials' => [
+        ],
+        'materials' => [
             'micro:biți(pentru fiecare elev, dacă este posibil)',
             'laptop sau calculator pentru editorul makecode . microbit . org',
         ],
@@ -1351,4 +1465,80 @@ return [
         ],
     ],
 
+    'careers-as-constellations' => [
+        'title' => 'Carierele precum constelații',
+        'authorcontent' => 'Această provocare și acest concurs este inițiativa autoarei, ilustratoarei și antreprenoare Linda Liukas în legătură cu campania Girls in Digital 2025 a parteneriatului Code4Europe #Webinar 1 transmisă în direct pe Youtube: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">How Code, Creativity and Curiosity form a Career?</a>',
+        'author' => 'Linda Liukas',
+        'start-date' => 'Data de începere',
+        'activity-type' => 'Tipul de activitate',
+        'open-online-activity' => 'Deschide activitatea online',
+        'name-of-org' => 'Denumirea organizației',
+        'language' => 'Limbă',
+        'description' => 'Această activitate interactivă îi ajută pe elevi să-și cartografieze interesele și hobby-urile personale cu potențiale cariere în tehnologie. Vizualizându-și abilitățile și pasiunile ca constelații, studenții descoperă cum se formează carierele prin conectarea punctelor aparent fără legătură. Nu este necesară experiență anterioară în programare, iar activitatea încurajează gândirea creativă despre viitorul muncii în tehnologie.',
+        'teachers' => 'Profesori',
+        'english' => 'Engleză',
+        'type-of-org' => 'Tipul de organizație',
+        'private-business' => 'Afaceri private',
+        'secondary-school' => 'Liceu',
+        'higher-education' => 'Învățământul superior',
+        'audience' => 'Audiență',
+        'theme' => 'Teme principale',
+        'themes' => [
+            'motivation-and-awareness-raising' => 'Motivație și sensibilizare',
+            'promoting-diversity' => 'Promovarea diversității',
+        ],
+        'age-group' => 'Grupa de vârstă',
+        'age-groups' => [
+            '12' => '12+ (adaptabil pentru elevii de gimnaziu, liceu sau chiar universitate)',
+            'under-6' => 'Sub 6 ani',
+            '7-8' => '7-8',
+            '9-11' => '9-11',
+            '12-14' => '12-14',
+            '15-18' => '15-18',
+            'over-18' => 'Peste 18',
+        ],
+        'subjects' => 'Subiecte',
+        'time-required' => 'Timp necesar',
+        '45–60' => '45–60 minute',
+        'group-size' => 'Dimensiunea grupului',
+        'group-sizes' => [
+            'small' => 'Se poate face individual sau în grupuri mici',
+        ],
+        'required-materials' => 'Materiale necesare',
+        'step-by-step-instructions' => 'Instrucțiuni pas cu pas',
+        'materials' => [
+            'one' => 'Fișă de lucru tipărită „Cariere ca constelații” (se recomandă A3)',
+            'two' => 'Hârtie <span class="font-sans">&</span> markere/pixuri pentru note suplimentare',
+            'three' => 'Opțional: Versiune digitală (elevii pot crea constelații folosind Miro, Canva sau Google Jamboard)',
+        ],
+        'titles' =>  [
+            'one' => 'Discuție de încălzire: Care sunt punctele tale? (5 min)',
+            'two' => 'Cartografierea constelațiilor: conectarea intereselor la tehnologie (20 min)',
+            'three' => 'Exemple de conexiuni',
+            'four' => ' Reflecție <span class="font-sans">&</span> împărtășire: Ce modele ați găsit? (15 min)',
+            'five' => 'Extinderea activității',
+        ],
+        'intro' => '<p>Începeți prin a contesta ideile tradiționale de carieră cu o întrebare:</p>
+         <p class="my-8 italic">Crezi că carierele ar trebui să urmeze o cale dreaptă?</p>
+         <p>Introduceți ideea că carierele de succes sunt adesea construite din conexiuni neașteptate.</p><p>Urmăriți împreună discursul Lindei Liukas în care își împărtășește propria carieră în tehnologie</p>',
+        'content' => [
+            'one' => '<p>Fiecare elev completează fișa de lucru „Cariere ca constelații”, adăugând:</p>',
+            'two' => 'Interese personale (hobby-uri, abilități, activități preferate)',
+            'three' => 'Subiecte legate de tehnologie (AI, robotică, design de jocuri, artă digitală, tehnologie de sustenabilitate etc.)',
+            'four' => '<strong>Trasarea liniilor</strong> pentru a arăta conexiunile dintre interesele lor și tehnologie',
+            'five' => 'Iubește muzica? → Interesat de AI? → instrumente muzicale generate de AI!',
+            'six' => 'Îți place să desenezi? → Ești interesat de designul de jocuri? → animație 2D/3D <span class="font-sans">&</span> codare',
+            'seven' => 'Pasionat de schimbările climatice? → Interesat de date? → Tehnologie de mediu',
+            'eight' => 'Invitați elevii să împărtășească legăturile surprinzătoare pe care le-au descoperit.',
+            'nine' => 'Întrebați: Ce puncte au părut fără legătură la început? Cum s-au conectat?',
+            'ten' => '<p>Solicitări de discuție:</p>',
+            'eleven' => 'Ce te-a surprins la constelația ta?',
+            'twelve' => 'Ai descoperit vreun traseu profesional pe care nu l-ai luat în considerare înainte?',
+            'thirteen' => 'Cum ar putea tehnologia să-ți modeleze viitorul în moduri neașteptate?',
+            'fourteen' => 'Provocare digitală: Rugați elevii să creeze o versiune digitală a constelației lor folosind Miro, Canva sau Google Jamboard și să-și prezinte constatările.',
+            'fifteen' => 'Sarcina de cercetare: Elevii cercetează o persoană din tehnologie a cărei carieră a urmat o cale surprinzătoare, își cartografiază constelația și își împărtășește povestea.',
+            '16' => 'Descărcați <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">șablonul</a> pentru activitate',
+            '17' => 'OBS! NU UITAȚI SĂ ADĂUGAȚI ACTIVITATEA ȘI SĂ O ÎNCĂRCAȚI <a href="/add">AICI</a>!',
+        ],
+    ],
 ];

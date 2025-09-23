@@ -4,6 +4,7 @@ return [
     'title' => 'VÝZVY PRO EVROPSKÝ TÝDEN PROGRAMOVÁNÍ',
     'date' => '9.–24. října 2021',
     'common' => [
+        'educational-goals' => 'Cíle vzdělávání',
         'target-audience' => 'Cílová skupina',
         'pre-primary' => 'Žáci předškolního vzdělávání',
         'experience' => 'Zkušenost',

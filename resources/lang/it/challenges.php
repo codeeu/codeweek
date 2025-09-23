@@ -4,6 +4,7 @@ return [
     'title' => 'LE SFIDE DELLA SETTIMANA EUROPEA DELLA PROGRAMMAZIONE',
     'date' => 'Dal 9 al 24 ottobre 2021',
     'common' => [
+        'educational-goals' => 'Obiettivi educativi',
         'target-audience' => 'Destinatari',
         'pre-primary' => 'Studenti in età prescolare',
         'experience' => 'Esperienza',

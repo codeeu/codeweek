@@ -4,6 +4,7 @@ return [
     'title' => 'DESAFIOS DA SEMANA EUROPEIA DA PROGRAMAÇÃO',
     'date' => '9-24 de outubro de 2021',
     'common' => [
+        'educational-goals' => 'Objetivos educacionais',
         'target-audience' => 'Público-alvo',
         'pre-primary' => 'Alunos do ensino pré-escolar',
         'experience' => 'Experiência',

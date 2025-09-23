@@ -1,533 +1,644 @@
 <?php
 
 return [
-'create-your-own-website-with-html-and-css' => [
-    'title' => 'HTML ve CSS ile Kendi Web Sitenizi Oluşturun',
-    'author' => 'Marko Šolić',
+    'create-your-own-website-with-html-and-css' => [
+        'title' => 'HTML ve CSS ile Kendi Web Sitenizi Oluşturun',
+        'author' => 'Marko Šolić',
 
-    'purposes_title' => 'Zorluğun amacı',
-    'purposes' => [
-        'Bu zorluğun amacı, yeni başlayanları web geliştirme dünyasıyla tanıştırmaktır.',
-        'Bu projeyi tamamladığınızda, web sayfaları oluşturmak ve stillendirmek için temel olan HTML ve CSS’in temellerini öğreneceksiniz.',
-        'Zorluk, uygulamalı öğrenmeyi vurgular ve sıfırdan kendi web sitenizi kurmanıza yardımcı olur.',
-        'Web tasarımında temel beceriler kazanacak ve çevrimiçi varlığınızı oluştururken daha güvenli hissedeceksiniz.'
+        'purposes_title' => 'Zorluğun amacı',
+        'purposes' => [
+            'Bu zorluğun amacı, yeni başlayanları web geliştirme dünyasıyla tanıştırmaktır.',
+            'Bu projeyi tamamladığınızda, web sayfaları oluşturmak ve stillendirmek için temel olan HTML ve CSS’in temellerini öğreneceksiniz.',
+            'Zorluk, uygulamalı öğrenmeyi vurgular ve sıfırdan kendi web sitenizi kurmanıza yardımcı olur.',
+            'Web tasarımında temel beceriler kazanacak ve çevrimiçi varlığınızı oluştururken daha güvenli hissedeceksiniz.'
+        ],
+
+        'description_title' => 'Zorluğun açıklaması',
+        'description' => [
+            'Web siteleri, çevrimiçi varlığın temelidir. Bu derste, içeriği yapılandırmak için HTML’yi ve ilk web sitenizi oluşturup stillendirmek için CSS’i kullanmayı öğreneceksiniz.',
+            'Eğlenceli adımlarla, metin, görseller, renkler ve bağlantılar içerebilen bir sayfa oluşturacaksınız.'
+        ],
+
+        'target_audience_title' => 'Hedef kitle',
+        'target_audience' => [
+            'Bu zorluk, web sitesi oluşturmayı öğrenmek isteyen yeni başlayanlara yöneliktir.',
+            'Web geliştirmede yeni olanlar, öğrenciler veya web sitelerinin nasıl kurulduğunu merak eden herkes için uygundur.',
+            'Önceden kodlama deneyimi gerekmez.'
+        ],
+
+        'experience_title' => 'Deneyim',
+        'experience' => [
+            'Bu, başlangıç seviyesinde bir zorluktur. Bir metin düzenleyiciyi kullanmak gibi temel bilgisayar bilgisi yardımcı olabilir, ancak zorunlu değildir.',
+            'Zorluk, HTML ve CSS’e giriş olarak tasarlanmıştır.'
+        ],
+
+        'duration_title' => 'Süre',
+        'duration' => 'Bu zorluğun yaklaşık 1–2 saat sürmesi beklenir; deneyim düzeyinize ve temel konuların ötesinde ne kadar keşfettiğinize bağlıdır.',
+
+        'materials_title' => 'Önerilen araçlar:',
+        'materials' => [
+            'PC / Dizüstü bilgisayar',
+            'Not Defteri (Windows) veya TextEdit (Mac) gibi sıradan bir metin düzenleyici'
+        ],
+
+        'instructions_title' => 'Talimatlar',
+        'instructions' => [
+            'Başlamadan önce eğitmenler için ipuçları:',
+            'Web geliştirmeye yeniyseniz endişelenmeyin! İşte öğrencileri sürece yönlendirmenize yardımcı olacak bazı ipuçları:',
+            'Temellerle başlayın: HTML’nin (bir web sayfasının yapısı) ve CSS’in (öğelerin stilleri) temel kavramlarını açıklamaya odaklanın.',
+            'Sabırlı olun ve her etiketi (tag) ve özelliğin amacını kavramaları için öğrencilere zaman tanıyın.',
+            'Yapıyı açıklayın: HTML etiketlerini tanıtırken belgenin nasıl yapılandığını görsel olarak gösterin.',
+            'Açılış/kapanış etiketleri, öznitelikler ve iç içe geçme (nesting) arasındaki ilişkiyi gösterin.',
+            'Yaygın hatalardan kaçının: yeni başlayanlar sık sık etiketleri düzgün kapatmayı unutur veya CSS’te süslü parantezleri {} yanlış yere koyar.',
+            'Öğrencilere düzenli olarak sözdizimi hatalarını kontrol etmelerini hatırlatın.',
+            'Etkileşimli öğrenme: metin ve stilleri değiştirerek deneme yapmalarını teşvik edin.',
+            'HTML veya CSS’teki küçük değişikliklerin tarayıcıyı yeniledikten sonra sayfada hemen nasıl göründüğünü gösterin.',
+            'Yaratıcılığa açık olun: bir web sitesini tasarlamanın tek bir “doğru” yolu yoktur.',
+            'Öğrencileri farklı yazı tiplerini, renkleri ve düzenleri keşfetmeye teşvik edin.',
+            'Dikkat edilmesi gereken yaygın hatalar:',
+            'CSS dosyasını HTML dosyasına bağlamayı unutmak.',
+            'HTML’de hatalı etiket iç içelikleri.',
+            'CSS özelliklerinde yazım hataları (ör. bazı durumlarda colour yerine color kullanmak).',
+            'Sayfa yapısını gereksiz yere karmaşıklaştırmak — basit siteler de birkaç satır kodla oldukça profesyonel görünebilir!',
+
+            'Adım 1: Ortamın hazırlanması',
+            'Bir web sitesi oluşturmak için Not Defteri (Windows) veya TextEdit (Mac) gibi sıradan bir metin düzenleyici dışında özel araçlar kurmanız gerekmez.',
+            'Tüm bir site basit bir metin düzenleyicide yapılabilir; internette tamamen bu şekilde yapılmış siteler bile vardır.',
+            'Böyle bir siteye örnek görmek isterseniz, Hırvatistan Bilişim Derneği’nin web sitesine bakın: hsin.hr',
+
+            'Adım 2: Temel HTML belge yapısı',
+            'Düzenleyicinizde yeni bir belge açın ve index.html olarak kaydedin',
+            'Kullandığınız Windows veya macOS sürümüne bağlı olarak önce dosya uzantılarını değiştirmenizi sağlayan seçeneği açmanız gerekebilir; çünkü index.txt’nin index.html olması gerekir',
+            'Not Defteri gibi bir düzenleyicide HTML belgesinin temel yapısını girin:',
+            '<!DOCTYPE html>',
+            '<html lang="en">',
+            '<head>',
+            '<target charset="UTF-8">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '<title>My first website</title>',
+            '</head>',
+            '<body>',
+            '<h1>Welcome to my website!</h1>',
+            '<p>This is my first website I created using HTML and CSS.</p>',
+            '</body>',
+            '</html>',
+            'CSS olmadan web siteniz şöyle görünmelidir (Hırvatça; sizin örneğiniz elbette Türkçe):',
+
+            'Adım 3: CSS ile stiller ekleyin',
+            'CSS, sayfadaki öğeleri stillendirmek için kullanılır. Başlangıç olarak arka plan rengi, metin rengi ve yazı tipi boyutu gibi temel stilleri ekleyeceğiz.',
+            'Aynı klasörde yeni bir metin dosyası oluşturun ve adını style.css yapın.',
+            'style.css dosyasına şunları yazın:',
+            'body {',
+            'background-colour: #f0f8ff; /* Light blue background */',
+            'colour: #333; /* Dark Gray Text */',
+            'font-family: Arial, sans-serif; /* Font for text */',
+            'text-align: centre; /* Align text to centre */',
+            '}',
+            'h1 {',
+            'colour: #4CAF50; /* Green title */',
+            '}',
+            'p {',
+            'font-size: 18px; /* Paragraph font size */',
+            'colour: #555; /* Gray-blue text for paragraph */',
+            '}',
+
+            'Adım 4: HTML’yi CSS’e bağlayın',
+            'CSS dosyasını oluşturduktan sonra, onu HTML dosyasına bağlamanız gerekir.',
+            'Bunu HTML belgesinin <head> bölümünde aşağıdaki kod satırını ekleyerek yapın:',
+            '<link rel="stylesheet" href="style.css">',
+            'Böylece HTML belgesi, stilleri CSS dosyasından kullanması gerektiğini “bilir”.',
+
+            'Adım 5: Sayfanızı başlatın',
+            'Her iki dosyayı kaydedin: index.html ve style.css.',
+            'index.html dosyasına çift tıklayın ve internet tarayıcısında açın.',
+            'Artık, ortalanmış metin ve eklediğiniz temel stillerle sitenizi göreceksiniz',
+            'Web siteniz şimdi şöyle görünmelidir:',
+
+            'STEM’de çeşitliliği teşvik etmek:',
+            'Web geliştirme herkes içindir! Genç bir öğrenci, yeni kariyer arayan bir yetişkin ya da az temsil edilen bir gruptan biri olun — bu zorluk, web sitesi oluşturmanın heyecan verici dünyasını keşfetmeye davet ediyor.',
+            'STEM alanlarında (Bilim, Teknoloji, Mühendislik, Matematik) tarihsel olarak çeşitlilik eksikliği vardır; cinsiyet, ırk veya geçmişten bağımsız olarak herkesin kodlama ve teknolojiyi keşfetmesi teşvik edilmelidir.',
+            'Herkesin, web geliştirme dünyasını daha yaratıcı ve kapsayıcı kılabilecek benzersiz bakış açıları ve deneyimleri vardır.',
+            'Siteniz üzerinde çalışırken, dijital dünyayı herkesin temsil edildiğini ve hoş karşılandığını hissedeceği bir yer haline nasıl getirebileceğinizi düşünün.',
+            'Başlamak için teknoloji uzmanı olmanız gerekmez — öğrenmeye başlayın ve üzerine inşa edin!',
+
+            'Web sitenizi erişilebilir yapın:',
+            'Bir web sitesi oluştururken, engelli bireyler de dahil mümkün olduğunca çok kişinin kolayca erişebilmesini sağlamak önemlidir.',
+            'Daha erişilebilir siteler için ipuçları:',
+            'Kontrast: arka plan ile metin rengi arasında iyi bir kontrast sağlayın; bu, görme güçlüğü çekenler için okumayı kolaylaştırır.',
+            'Örneğin, açık arka plan ve koyu metin en iyi sonucu verir.',
+            'Görseller için alternatif metin: ileriki adımlarda görsel eklerseniz, görselin ne olduğunu açıklayan alt metin ekleyin.',
+            'Bu, ekran okuyucu kullanan kişiler için özellikle faydalıdır.',
+            'Anlamlı (semantik) HTML: daha iyi yapı ve erişilebilirlik için doğru HTML etiketlerini kullanın.',
+            'Örneğin, ana başlık için <h1> ve paragraflar için <p> kullanın — bu, ekran okuyucuların içeriği daha iyi anlamasına yardımcı olur.',
+            'Okunabilirliğe odaklanın: Arial gibi basit, serifsiz bir yazı tipi kullanın.',
+            'Okunabilirliği artırmak için yazı tipi boyutunu da büyütebilirsiniz.',
+        ],
+
+        'mini_simulation_title' => 'Mini simülasyon:',
+        'mini_simulation' => [
+            'Bilginizi test edin',
+            '1. HTML nedir?',
+            'Görsel oluşturmaya yönelik programlama dili',
+            'Bir web sitesinde içeriği yapılandırma dili',
+            'Görsel düzenleme programı',
+            '2. CSS nedir?',
+            'Çevrimiçi veritabanları oluşturma dili',
+            'Web sitelerini stillendirme ve yerleşimlendirme dili',
+            'Bilgisayar dosyalarını yönetme programı',
+            '3. CSS’i HTML’e nasıl bağlarız?',
+            'HTML belgesinde <link> etiketini kullanarak',
+            '<style> etiketlerini HTML içinde kullanarak',
+            'Bağlanamaz',
+            'Doğru cevaplar: 1.b, 2.b, 3.a',
+            'Sayfanızı düzenleyin:',
+            'Arka plan rengini değiştirmeyi deneyin.',
+            'Ana başlığın altına başka bir başlık (h2) ekleyin.',
+            'Başka bir siteye bağlantı ekleyin (ör. Google).',
+            'Her değişiklikten sonra sayfayı yenileyin!',
+        ],
+
+        'additional_resources_title' => 'Ek kaynaklar:',
+        'additional_resources' => [
+            'https://developer.mozilla.org/en-US/docs/Web/HTML',
+            'https://developer.mozilla.org/en-US/docs/Web/CSS',
+        ]
     ],
-
-    'description_title' => 'Zorluğun açıklaması',
-    'description' => [
-        'Web siteleri, çevrimiçi varlığın temelidir. Bu derste, içeriği yapılandırmak için HTML’yi ve ilk web sitenizi oluşturup stillendirmek için CSS’i kullanmayı öğreneceksiniz.',
-        'Eğlenceli adımlarla, metin, görseller, renkler ve bağlantılar içerebilen bir sayfa oluşturacaksınız.'
-    ],
-
-    'target_audience_title' => 'Hedef kitle',
-    'target_audience' => [
-        'Bu zorluk, web sitesi oluşturmayı öğrenmek isteyen yeni başlayanlara yöneliktir.',
-        'Web geliştirmede yeni olanlar, öğrenciler veya web sitelerinin nasıl kurulduğunu merak eden herkes için uygundur.',
-        'Önceden kodlama deneyimi gerekmez.'
-    ],
-
-    'experience_title' => 'Deneyim',
-    'experience' => [
-        'Bu, başlangıç seviyesinde bir zorluktur. Bir metin düzenleyiciyi kullanmak gibi temel bilgisayar bilgisi yardımcı olabilir, ancak zorunlu değildir.',
-        'Zorluk, HTML ve CSS’e giriş olarak tasarlanmıştır.'
-    ],
-
-    'duration_title' => 'Süre',
-    'duration' => 'Bu zorluğun yaklaşık 1–2 saat sürmesi beklenir; deneyim düzeyinize ve temel konuların ötesinde ne kadar keşfettiğinize bağlıdır.',
-
-    'materials_title' => 'Önerilen araçlar:',
-    'materials' => [
-        'PC / Dizüstü bilgisayar',
-        'Not Defteri (Windows) veya TextEdit (Mac) gibi sıradan bir metin düzenleyici'
-    ],
-
-    'instructions_title' => 'Talimatlar',
-    'instructions' => [
-        'Başlamadan önce eğitmenler için ipuçları:',
-        'Web geliştirmeye yeniyseniz endişelenmeyin! İşte öğrencileri sürece yönlendirmenize yardımcı olacak bazı ipuçları:',
-        'Temellerle başlayın: HTML’nin (bir web sayfasının yapısı) ve CSS’in (öğelerin stilleri) temel kavramlarını açıklamaya odaklanın.',
-        'Sabırlı olun ve her etiketi (tag) ve özelliğin amacını kavramaları için öğrencilere zaman tanıyın.',
-        'Yapıyı açıklayın: HTML etiketlerini tanıtırken belgenin nasıl yapılandığını görsel olarak gösterin.',
-        'Açılış/kapanış etiketleri, öznitelikler ve iç içe geçme (nesting) arasındaki ilişkiyi gösterin.',
-        'Yaygın hatalardan kaçının: yeni başlayanlar sık sık etiketleri düzgün kapatmayı unutur veya CSS’te süslü parantezleri {} yanlış yere koyar.',
-        'Öğrencilere düzenli olarak sözdizimi hatalarını kontrol etmelerini hatırlatın.',
-        'Etkileşimli öğrenme: metin ve stilleri değiştirerek deneme yapmalarını teşvik edin.',
-        'HTML veya CSS’teki küçük değişikliklerin tarayıcıyı yeniledikten sonra sayfada hemen nasıl göründüğünü gösterin.',
-        'Yaratıcılığa açık olun: bir web sitesini tasarlamanın tek bir “doğru” yolu yoktur.',
-        'Öğrencileri farklı yazı tiplerini, renkleri ve düzenleri keşfetmeye teşvik edin.',
-        'Dikkat edilmesi gereken yaygın hatalar:',
-        'CSS dosyasını HTML dosyasına bağlamayı unutmak.',
-        'HTML’de hatalı etiket iç içelikleri.',
-        'CSS özelliklerinde yazım hataları (ör. bazı durumlarda colour yerine color kullanmak).',
-        'Sayfa yapısını gereksiz yere karmaşıklaştırmak — basit siteler de birkaç satır kodla oldukça profesyonel görünebilir!',
-
-        'Adım 1: Ortamın hazırlanması',
-        'Bir web sitesi oluşturmak için Not Defteri (Windows) veya TextEdit (Mac) gibi sıradan bir metin düzenleyici dışında özel araçlar kurmanız gerekmez.',
-        'Tüm bir site basit bir metin düzenleyicide yapılabilir; internette tamamen bu şekilde yapılmış siteler bile vardır.',
-        'Böyle bir siteye örnek görmek isterseniz, Hırvatistan Bilişim Derneği’nin web sitesine bakın: hsin.hr',
-
-        'Adım 2: Temel HTML belge yapısı',
-        'Düzenleyicinizde yeni bir belge açın ve index.html olarak kaydedin',
-        'Kullandığınız Windows veya macOS sürümüne bağlı olarak önce dosya uzantılarını değiştirmenizi sağlayan seçeneği açmanız gerekebilir; çünkü index.txt’nin index.html olması gerekir',
-        'Not Defteri gibi bir düzenleyicide HTML belgesinin temel yapısını girin:',
-        '<!DOCTYPE html>',
-        '<html lang="en">',
-        '<head>',
-        '<target charset="UTF-8">',
-        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-        '<title>My first website</title>',
-        '</head>',
-        '<body>',
-        '<h1>Welcome to my website!</h1>',
-        '<p>This is my first website I created using HTML and CSS.</p>',
-        '</body>',
-        '</html>',
-        'CSS olmadan web siteniz şöyle görünmelidir (Hırvatça; sizin örneğiniz elbette Türkçe):',
-
-        'Adım 3: CSS ile stiller ekleyin',
-        'CSS, sayfadaki öğeleri stillendirmek için kullanılır. Başlangıç olarak arka plan rengi, metin rengi ve yazı tipi boyutu gibi temel stilleri ekleyeceğiz.',
-        'Aynı klasörde yeni bir metin dosyası oluşturun ve adını style.css yapın.',
-        'style.css dosyasına şunları yazın:',
-        'body {',
-        'background-colour: #f0f8ff; /* Light blue background */',
-        'colour: #333; /* Dark Gray Text */',
-        'font-family: Arial, sans-serif; /* Font for text */',
-        'text-align: centre; /* Align text to centre */',
-        '}',
-        'h1 {',
-        'colour: #4CAF50; /* Green title */',
-        '}',
-        'p {',
-        'font-size: 18px; /* Paragraph font size */',
-        'colour: #555; /* Gray-blue text for paragraph */',
-        '}',
-
-        'Adım 4: HTML’yi CSS’e bağlayın',
-        'CSS dosyasını oluşturduktan sonra, onu HTML dosyasına bağlamanız gerekir.',
-        'Bunu HTML belgesinin <head> bölümünde aşağıdaki kod satırını ekleyerek yapın:',
-        '<link rel="stylesheet" href="style.css">',
-        'Böylece HTML belgesi, stilleri CSS dosyasından kullanması gerektiğini “bilir”.',
-
-        'Adım 5: Sayfanızı başlatın',
-        'Her iki dosyayı kaydedin: index.html ve style.css.',
-        'index.html dosyasına çift tıklayın ve internet tarayıcısında açın.',
-        'Artık, ortalanmış metin ve eklediğiniz temel stillerle sitenizi göreceksiniz',
-        'Web siteniz şimdi şöyle görünmelidir:',
-
-        'STEM’de çeşitliliği teşvik etmek:',
-        'Web geliştirme herkes içindir! Genç bir öğrenci, yeni kariyer arayan bir yetişkin ya da az temsil edilen bir gruptan biri olun — bu zorluk, web sitesi oluşturmanın heyecan verici dünyasını keşfetmeye davet ediyor.',
-        'STEM alanlarında (Bilim, Teknoloji, Mühendislik, Matematik) tarihsel olarak çeşitlilik eksikliği vardır; cinsiyet, ırk veya geçmişten bağımsız olarak herkesin kodlama ve teknolojiyi keşfetmesi teşvik edilmelidir.',
-        'Herkesin, web geliştirme dünyasını daha yaratıcı ve kapsayıcı kılabilecek benzersiz bakış açıları ve deneyimleri vardır.',
-        'Siteniz üzerinde çalışırken, dijital dünyayı herkesin temsil edildiğini ve hoş karşılandığını hissedeceği bir yer haline nasıl getirebileceğinizi düşünün.',
-        'Başlamak için teknoloji uzmanı olmanız gerekmez — öğrenmeye başlayın ve üzerine inşa edin!',
-
-        'Web sitenizi erişilebilir yapın:',
-        'Bir web sitesi oluştururken, engelli bireyler de dahil mümkün olduğunca çok kişinin kolayca erişebilmesini sağlamak önemlidir.',
-        'Daha erişilebilir siteler için ipuçları:',
-        'Kontrast: arka plan ile metin rengi arasında iyi bir kontrast sağlayın; bu, görme güçlüğü çekenler için okumayı kolaylaştırır.',
-        'Örneğin, açık arka plan ve koyu metin en iyi sonucu verir.',
-        'Görseller için alternatif metin: ileriki adımlarda görsel eklerseniz, görselin ne olduğunu açıklayan alt metin ekleyin.',
-        'Bu, ekran okuyucu kullanan kişiler için özellikle faydalıdır.',
-        'Anlamlı (semantik) HTML: daha iyi yapı ve erişilebilirlik için doğru HTML etiketlerini kullanın.',
-        'Örneğin, ana başlık için <h1> ve paragraflar için <p> kullanın — bu, ekran okuyucuların içeriği daha iyi anlamasına yardımcı olur.',
-        'Okunabilirliğe odaklanın: Arial gibi basit, serifsiz bir yazı tipi kullanın.',
-        'Okunabilirliği artırmak için yazı tipi boyutunu da büyütebilirsiniz.',
-    ],
-
-    'mini_simulation_title' => 'Mini simülasyon:',
-    'mini_simulation' => [
-        'Bilginizi test edin',
-        '1. HTML nedir?',
-        'Görsel oluşturmaya yönelik programlama dili',
-        'Bir web sitesinde içeriği yapılandırma dili',
-        'Görsel düzenleme programı',
-        '2. CSS nedir?',
-        'Çevrimiçi veritabanları oluşturma dili',
-        'Web sitelerini stillendirme ve yerleşimlendirme dili',
-        'Bilgisayar dosyalarını yönetme programı',
-        '3. CSS’i HTML’e nasıl bağlarız?',
-        'HTML belgesinde <link> etiketini kullanarak',
-        '<style> etiketlerini HTML içinde kullanarak',
-        'Bağlanamaz',
-        'Doğru cevaplar: 1.b, 2.b, 3.a',
-        'Sayfanızı düzenleyin:',
-        'Arka plan rengini değiştirmeyi deneyin.',
-        'Ana başlığın altına başka bir başlık (h2) ekleyin.',
-        'Başka bir siteye bağlantı ekleyin (ör. Google).',
-        'Her değişiklikten sonra sayfayı yenileyin!',
-    ],
-
-    'additional_resources_title' => 'Ek kaynaklar:',
-    'additional_resources' => [
-        'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    ]
-],
-
 
     'train-it-like-fei-fei-li' => [
-    'title' => 'Fei-Fei Li gibi eğit – Bilgisayarlara görmeyi öğret!',
-    'author' => 'Chouliara Theodora',
-    'purposes_title' => 'Mücadelenin amacı',
-    'purposes' => [
-        'Makine öğrenmesi ve görsel tanımanın temellerini öğrenmek.',
-        'Bilgisayarı farklı görselleri ayırt etmesi için eğitmek (ör. köpek/kedi, oyuncak bebek/ayıcık).',
-        'Yapay zekanın ve makine öğrenmesinin gerçek hayattaki kullanım alanlarını keşfetmek.',
-        'Yapay zeka ve görsel tanıma alanındaki öncü bilim insanı Fei-Fei Li’den ilham almak.',
-        'Kız öğrencileri kodlama ve STEM alanlarında cesaretlendirmek.'
+        'title' => 'Fei-Fei Li gibi eğitin - Bilgisayarlara Vizyon Kazandırmak!',
+        'author' => 'Chouliara Theodora',
+        'purposes_title' => 'Meydan Okumanın amacı',
+        'purposes' => [
+            'Makine Öğrenimi ve görüntü tanımanın temellerini öğrenmek.',
+            'Bir bilgisayara farklı görüntüleri (örneğin, köpek ve kedi, oyuncak bebek ve oyuncak ayı) ayırt etmeyi öğretmek.',
+            'Yapay Zeka ve Makine Öğreniminin gerçek hayatta nasıl kullanıldığını keşfetmek.',
+            'Fei-Fei Li\'nin yapay zeka ve görüntü tanıma alanındaki katkılarından ilham almak.',
+            'Kız çocuklarını kodlama ve STEM alanlarında kariyer yapmaya teşvik etmek.'
+        ],
+        'description_title' => 'Meydan Okumanın açıklaması',
+        'description' => 'Fei-Fei Li gibi bir yapay zeka modeli eğitin! Öğretilebilir Makine\'yi kullanarak bir bilgisayara görüntüleri tanımayı öğretin ve teknolojideki cinsiyet kalıplarını kırarken Makine Öğreniminin gücünü keşfedin.',
+        'target_audience_title' => 'Hedef Kitle',
+        'target_audience' => 'İlkokul Öğrencileri (6-12 yaş)',
+        'experience_title' => 'Deneyim',
+        'experience' => 'Başlangıç Seviyesi - Önceden kodlama deneyimi gerekmez; tamamen yeni başlayanlar için uygundur.',
+        'duration_title' => 'Süre',
+        'duration' => '60 dakika',
+        'materials_title' => 'Önerilen Araç',
+        'materials' => [
+            'Teachable Machine (web tarayıcısı üzerinden erişilebilir)',
+            'Kameralı bilgisayar veya tablet',
+            'İnternet bağlantısı (Yapay Zeka modelini eğitmek için)',
+            'Yapay Zeka modelini eğitmek için oyuncaklar ve sınıf nesneleri (örneğin bebekler, oyuncak ayılar)',
+            'Projektör veya ekran (isteğe bağlı, sınıf içi gösteriler için)'
+        ],
+        'instructions_title' => 'Talimatlar',
+        'instructions' => [
+            '1. Adım: Makine Öğrenimi ve Fei-Fei Li\'ye Giriş',
+            'Makine Öğrenimini Açıklayın:',
+            'Bilgisayarlar, tıpkı insanlar gibi görüntüleri tanımayı öğrenebilir. Makine Öğrenimi, örnekleri analiz ederek bilgisayarların nesneleri "görmesine" yardımcı olur.',
+            'Fei-Fei Li\'yi Tanıtın:',
+            'Fei-Fei Li, Yapay Zeka ve Bilgisayarlı Görme alanında önde gelen bir bilim insanıdır. Bilgisayarlara görüntüleri tanımayı öğreten devasa bir veri kümesi olan ImageNet\'i geliştirmiştir. Tıpkı Fei-Fei Li\'nin bilgisayarların görmesine yardımcı olduğu gibi, erkek ve kız çocukları da bir bilgisayara nesneleri tanımayı öğretebilir!',
+            '2. Adım: Öğretilebilir Makineyi Kurun',
+            'Öğretilebilir Makine\'ye gidin (https://teachablemachine.withgoogle.com/train)',
+            'Bilgisayarı görüntüleri tanıması için eğitmek üzere "Görüntü Projesi"ni seçin.',
+            '"Standart Görüntü Modeli"ne tıklayın.',
+            '3. Adım: Eğitim İçin Kategorileri Seçin',
+            'Bilgisayarın hangi kategorileri tanımasını istediğinize karar verin. Sınıf nesnelerine (örneğin bloklar, oyuncak ayılar, bebekler vb.) göre kategoriler oluşturabilirsiniz.',
+            'Örnek kategoriler: Bebekler ve Oyuncak Ayılar',
+            '4. Adım: Eğitim Görselleri Toplayın',
+            'İki kategori oluşturun: Bebekler ve Oyuncak Ayılar.',
+            '1. Seçenek: Gerçek nesneler kullanın',
+            'Kameranın önünde bir bebek gösterin ve "Bebekler" kategorisi için fotoğraflar çekin.',
+            'Aynı işlemi "Oyuncak Ayılar" kategorisi için bir oyuncak ayı için de yapın.',
+            '2. Seçenek: İnternette görsel bulun',
+            'Google\'da bebek ve oyuncak ayı resimleri arayın.',
+            'Görüntüleri iki ayrı klasöre ("Bebekler" ve "Oyuncak Ayılar") kaydedin.',
+            'Her klasördeki görselleri eğitim için Öğretilebilir Makine\'ye yükleyin.',
+            '5. Adım: Yapay Zeka Modelini Eğitin',
+            'Yeterli sayıda görüntü yakaladıktan sonra "Modeli Eğit"e tıklayın.',
+            'Modelin görüntülerden öğrenmesini bekleyin.',
+            '6. Adım: Modeli Test Edin',
+            'Model eğitildikten sonra, yeni görüntüleri ne kadar iyi tanıdığını görmek için "Modeli Test Et"e tıklayın. Bilgisayara eğitim görüntülerinin parçası olmayan yeni nesneler göstererek (örneğin, eğitim için kullanılmayan bir oyuncak göstererek) yapay zekayı test edin. Modelin onu ne kadar iyi tanıdığını ve doğru şekilde kategorize ettiğini görün.',
+            '7. Adım: Modeli Değerlendirin',
+            'Öğrencilerle tartışın:',
+            'Model nesneleri doğru tanıdı mı?',
+            'Herhangi bir hata var mıydı? Neler geliştirilebilir?',
+            'Daha fazla resimle eğitirseniz ne olur?',
+            '8. Adım: Modeli Kaydedin ve Paylaşın',
+            'Modelin doğruluğundan memnun kaldığınızda, projenizi kaydetmek için "Modeli Dışa Aktar"a tıklayın. Modeli diğer sınıflarla veya Teachable Machine web sitesinde "Paylaş"a tıklayarak paylaşabilirsiniz.',
+            'Yukarıda yaptığımız modele buradan ulaşabilirsiniz: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+        ],
+        'examples_title' => 'Örnekler',
+        'examples' => [
+            'Perakende ve Alışverişte Yapay Zeka:',
+            'Bazı mağazalar, ürünleri tanımak ve envanteri takip etmek için yapay zeka destekli kameralar kullanır.',
+            'Benzer bir teknoloji, self-checkout sistemlerinin barkodsuz ürünleri tanımasına yardımcı olur.',
+            'Yapay Zeka ve Yardımcı Teknoloji',
+            'Yapay zeka, görme engelli bireylerin dünyada gezinmesine yardımcı olmak için nesneleri tanımlayabilir.',
+            'Akıllı kameralar, kullanıcılara gerçek zamanlı olarak yardımcı olmak için "gördüklerini" tanımlayabilir.'
+        ],
     ],
-    'description_title' => 'Meydan okumanın açıklaması',
-    'description' => [
-        'Tıpkı Fei-Fei Li gibi bir yapay zekâ modeli eğitin! Teachable Machine kullanarak bilgisayarı görselleri tanıyacak şekilde eğitin ve makine öğrenmesinin gücünü keşfedin. Aynı zamanda teknoloji dünyasında toplumsal cinsiyet kalıplarına meydan okuyun.'
-    ],
-    'target_audience_title' => 'Hedef kitle',
-    'target-audience' => [
-        'İlkokul öğrencileri (6–12 yaş)'
-    ],
-    'experience_title' => 'Deneyim',
-    'experience' => 'Başlangıç seviyesi – Önceden programlama bilgisi gerekmez; tamamen yeni başlayanlara uygundur.',
-    'duration_title' => 'Süre',
-    'duration' => '60 dakika',
-    'materials_title' => 'Gerekli materyaller',
-    'materials' => [
-        'Teachable Machine (web tarayıcısı üzerinden erişilebilir)',
-        'Kameralı bilgisayar veya tablet',
-        'İnternet bağlantısı (modeli eğitmek için)',
-        'Oyuncaklar ve sınıf nesneleri (ör. bebekler, ayıcıklar) eğitim verisi için',
-        'Projeksiyon cihazı veya ekran (opsiyonel, sınıf sunumları için)'
-    ],
-    'instructions_title' => 'Yönergeler',
-    'instructions' => [
-        'Adım 1: Makine öğrenmesini ve Fei-Fei Li’yi tanıtın – bilgisayarların görselleri nasıl tanıyabileceğini açıklayın; Fei-Fei Li ve ImageNet’i tanıtın.',
-        'Adım 2: Teachable Machine’i açın – https://teachablemachine.withgoogle.com/train adresine gidin, “Image Project” ve ardından “Standard Image Model” seçin.',
-        'Adım 3: Kategorileri seçin – ör. Bebekler ve Ayıcıklar.',
-        'Adım 4: Eğitim görsellerini toplayın – gerçek nesneler kullanın veya internetten görseller yükleyin.',
-        'Adım 5: Modeli eğitin – “Train Model”e tıklayın ve tamamlanmasını bekleyin.',
-        'Adım 6: Modeli test edin – daha önce kullanılmamış nesneler veya görsellerle deneyin.',
-        'Adım 7: Değerlendirin – doğruluğu, hataları ve nasıl iyileştirilebileceğini tartışın.',
-        'Adım 8: Kaydedin ve paylaşın – “Export Model” veya “Share” seçeneklerini kullanın.'
-    ],
-    'real-life-applications_title' => 'Gerçek yaşam uygulamaları',
-    'real-life-applications' => [
-        'Mağaza ve perakende sektöründe yapay zekâ: Kameralar ürünleri tanıyabilir, stok takibi yapabilir; kasasız ödeme sistemleri barkod olmadan ürünleri algılayabilir.',
-        'Erişilebilirlikte yapay zekâ: Görme engelli kişilere yardımcı olmak için yapay zekâ, çevreyi tanıyıp gerçek zamanlı betimlemeler yapabilir.'
-    ],
-],
+
     'simulate-dice-in-python' => [
-    'title' => 'Python ile Zar Atmayı Simüle Et',
-    'author' => 'Marko Šolić',
-    'purposes_title' => 'Mücadelenin amacı',
-    'purposes' => [
-        'Öğrencilere Python’da rastgele sayı üretimi ve döngüleri tanıtmak.',
-        'Zar atma simülasyonu sayesinde bilgisayarların rastgele sonuçlar üretebilmesini ve döngüler kullanarak işlemleri tekrarlamayı öğretmek.',
-        'Basit oyunlar ve simülasyonlar geliştirmek için temel oluşturmak.'
+        'title' => 'Python\'da Zar Simülasyonu',
+        'author' => 'Marko Šolić',
+        'purposes_title' => 'Meydan Okumanın  Amacı',
+        'purposes' => [
+            'Bu görevin amacı, öğrencilere Python\'da rastgele sayı üretme ve döngüleri tanıtmaktır.',
+            'Bir zar atışını simüle ederek, öğrenciler bilgisayarların nasıl rastgele sonuçlar üretebileceğini ve bir döngü kullanarak eylemleri nasıl birden çok kez tekrarlayabileceklerini öğrenecekler.',
+            'Bu alıştırma aynı zamanda basit oyunlar ve simülasyonlar oluşturmak için de temel oluşturur.'
+        ],
+        'description_title' => 'Meydan Okumanın Açıklaması',
+        'description' => [
+            'Zar atma simülasyonu, Python\'da rastgele sayılarla temel çalışmayı öğrenmenin harika bir yoludur.',
+            'Bu derste, rastgele modülünü kullanarak rastgele sayılar üretmeyi ve bu sayıyı bir zar atışını simüle etmek için nasıl kullanacağımızı öğreneceğiz.',
+            'Bu görev sayesinde, Python\'un belirli bir aralıktaki sayıları nasıl üretebileceğini anlayacaksınız.'
+        ],
+        'target_audience_title' => 'Hedef Kitle',
+        'target_audience' => 'İlkokul ve ortaokul öğrencileri, Python\'a yeni başlayanlar, rastgele sayılar, oyunlar veya temel programlama mantığı öğrenen herkes.',
+        'experience_title' => 'Deneyim',
+        'experience' => 'Önceden programlama deneyimi gerekmez. Yazma ve bilgisayar kullanma konusunda temel bilgi yeterlidir.',
+        'duration_title' => 'Süre',
+        'durations' => [
+            'Temel sürüm için 30 ila 45 dakika.',
+            'İleri düzey seçenekleri (iki zar, en sık zar atma vb.) keşfediyorsanız 60 dakikaya kadar.'
+        ],
+        'materials_title' => 'Önerilen Araç:',
+        'materials' => [
+            'Başlamak için bilgisayarınızda Python yüklü olması gerekir. Henüz yüklü değilse, Python\'ı resmi web sitesinden indirin: https://www.python.org',
+            'Kodunuzu yazmak için Python IDLE\'ı veya herhangi bir metin düzenleyiciyi (örneğin Visual Studio Code, PyCharm) açın.'
+        ],
+        'instructions_title' => 'Talimatlar',
+        'instructions' => [
+            'Adım 1: Ortamın Hazırlanması',
+            'Başlamak için Python\'un bilgisayarınıza kurulu olması gerekir.',
+            'Henüz yüklemediyseniz, Python\'u resmi web sitesinden indirin.',
+            'Python IDLE\'ı veya herhangi bir metin düzenleyicisini (örneğin, Visual Studio Code, PyCharm) açarak kodunuzu yazın.',
+            'Adım 2: Programı Yazma',
+            'Python IDLE\'ı açın ve dice.py adında yeni bir dosya oluşturun.',
+            'Aşağıdaki kodu girin:',
+            '# Rastgele sayılar üretmek için \'random\' modülünü içe aktarırız',
+            'import random',
+            'Kullanıcıya bir selamlaşma mesajı yazdırırızprint("Zar atış simülasyonuna hoş geldiniz!")',
+            'Kullanıcıya zar atışını kaç kez yapmak istediğini sorarız',
+            'throw_num = int(input("Zarı kaç kez atmak istersiniz? "))',
+            'for i in range(throw_num):',
+            'result = random.randint(1, 6) # 1 ile 6 arasında rastgele bir sayı üretiriz',
+            'print(f"Atış {i + 1}: {result}")',
+            'print("Oyunu oynadığınız için teşekkürler!")',
+            'Python IDLE\'de Kodun Görsel Temsili:',
+            'Kodunuzdaki girintilerin, yukarıdaki örnekle aynı olduğundan emin olun!',
+            'Adım 3: Kodu Açıklama',
+            'random modülünü içe aktarma: random modülü, rastgele sayılar üretmenizi sağlar. random.randint(a, b) fonksiyonu, a ile b arasındaki rastgele bir tam sayı döndürür, her iki uç dahil.',
+            'Atış sayısını girme: Program, kullanıcıya zar atışını kaç kez yapmak istediğini sorar. Girilen sayıyı, int() fonksiyonu ile tam sayıya dönüştürürüz.',
+            'Atış simülasyonu: Program, kullanıcının belirttiği kadar zar simülasyonu yapmak için bir döngü kullanır. Her atış için 1 ile 6 arasında rastgele bir sayı üretilir ve bu sayı atışın sonucunu temsil eder.',
+            'Sonuçları yazdırma: Her atış için sonuç yazdırılır (zarın üzerine "düşen" sayı). Program sonunda bir teşekkür mesajı yazdırılır',
+            'Adım 4: Programı Çalıştırma',
+            'Dosyayı dice.py olarak kaydedin.',
+            'Python IDLE\'de programınızı çalıştırın.',
+            'Zarın kaç kez atılacağını girin (örneğin 5).',
+            'Program, rastgele sayılar üretecek ve her atışın sonucunu yazdıracaktır.',
+        ],
+        'quiz_title' => 'Kviz:',
+        'quiz' => [
+            'Hangi Python modülü rastgele sayılar üretmenizi sağlar?',
+            'random',
+            'Math',
+            'Time',
+            'random.randint(1, 6) fonksiyonu ne yapar?',
+            '1 ile 6 arasında rastgele bir sayı üretir',
+            'Ekrana rastgele bir sayı yazdırır',
+            '1 ile 6 arasında bir sayı yazdırır',
+            'Kullanıcı girişini tam sayıya nasıl dönüştürürsünüz?',
+            'float(s)',
+            'int()',
+            'p()',
+            'Doğru cevaplar: 1.a, 2.a, 3.b'
+        ],
+        'mini_simulation_title' => 'Mini simülasyon:',
+        'mini_simulation' => [
+            'Programı değiştirin:',
+            'İki zar atışı simüle etme seçeneği ekleyin ve sonuçlarını toplayın.',
+            'Programın en sık "düştüğü" zar sonuçlarını yazdırmasını sağlayacak bir seçenek ekleyin.',
+        ],
+        'additional_resources_title' => 'Ek kaynaklar:',
+        'additional_resources' => [
+            'Python official documentation - random module',
+            'Learn Python'
+        ]
     ],
-    'description_title' => 'Meydan okumanın açıklaması',
-    'description' => [
-        'Zar atma simülasyonu, Python’da rastgele sayılarla çalışmayı öğrenmek için harika bir yoldur.',
-        'Bu derste random modülünü kullanarak rastgele sayılar üretmeyi ve bu sayıları zar atmayı simüle etmek için kullanmayı öğreneceğiz.',
-        'Bu görev sayesinde Python’un belirli bir aralıkta nasıl sayı üretebildiğini anlayacaksınız.'
-    ],
-    'target_audience_title' => 'Hedef kitle',
-    'target_audience' => 'İlkokul ve ortaokul öğrencileri, Python’a yeni başlayanlar, rastgele sayılar, oyunlar veya temel programlama mantığını öğrenmek isteyen herkes.',
-    'experience_title' => 'Deneyim',
-    'experience' => 'Önceden programlama deneyimi gerekli değildir. Temel bilgisayar kullanımı yeterlidir.',
-    'duration_title' => 'Süre',
-    'duration' => 'Basit sürüm için 30–45 dakika. Gelişmiş seçenekler (iki zar, en sık gelen atış vb.) için 60 dakikaya kadar.',
-    'materials_title' => 'Önerilen araç',
-    'materials' => [
-        'Bilgisayarınıza Python kurulu olmalıdır. Henüz kurulu değilse https://www.python.org adresinden indirin.',
-        'Python IDLE veya herhangi bir metin editörü (ör. Visual Studio Code, PyCharm).'
-    ],
-    'instructions_title' => 'Yönergeler',
-    'instructions' => [
-        'Adım 1: Ortamı hazırlayın – Python’u bilgisayarınıza kurun ve IDLE veya bir editör açın.',
-        'Adım 2: Programı yazın – dice.py adında yeni bir dosya oluşturun ve aşağıdaki kodu yazın:',
-        'import random',
-        'print("Zar simülasyonuna hoş geldiniz!")',
-        'throw_num = int(input("Kaç kez zar atmak istersiniz? "))',
-        'for i in range(throw_num):',
-        '    result = random.randint(1, 6)',
-        '    print(f"{i + 1}. Atış: {result}")',
-        'print("Oynadığınız için teşekkürler!")',
-        'İndentasyonlara dikkat edin!',
-        'Adım 3: Kodu açıklayın – random.randint(a, b) fonksiyonu a ile b arasında rastgele bir tam sayı üretir. Program kullanıcıdan atış sayısını ister ve bir döngüyle işlemi tekrarlar.',
-        'Adım 4: Programı çalıştırın – dice.py olarak kaydedin, IDLE’da çalıştırın, kaç kez zar atmak istediğinizi girin ve sonuçları görün.'
-    ],
-    'quiz_title' => 'Bilgi testi:',
-    'quiz' => [
-        'Python’da rastgele sayı üretmek için hangi modül kullanılır?',
-        'a) random', 'b) Math', 'c) Time',
-        'random.randint(1, 6) fonksiyonu ne yapar?',
-        'a) 1 ile 6 arasında rastgele bir sayı üretir',
-        'b) Ekrana rastgele bir sayı yazar',
-        'c) 1 ile 6 arasında bir sayı yazar',
-        'Kullanıcı girişini tam sayıya dönüştürmek için hangi fonksiyon kullanılır?',
-        'a) float(s)', 'b) int()', 'c) p()',
-        'Doğru cevaplar: 1.a, 2.a, 3.b'
-    ],
-    'mini_simulation_title' => 'Mini simülasyon:',
-    'mini_simulation' => [
-        'Programı değiştirin:',
-        'İki zar atışı yapıp sonuçlarını toplayan bir seçenek ekleyin.',
-        'Programın en çok çıkan zar değerini yazdırmasını sağlayın.'
-    ],
-    'additional_resources_title' => 'Ek kaynaklar:',
-    'additional_resources' => [
-        'Python resmi belgeleri – random modülü',
-        'Learn Python'
-    ],
-],
 
     'gender-gap-gender-graph' => [
-    'title' => 'Toplumsal Cinsiyet Açığı, Toplumsal Cinsiyet Grafiği',
-    'author' => 'Theodora S. Tziampazi',
-    'purposes_title' => 'Mücadelenin amacı',
-    'purposes' => [
-        'Veri görselleştirmesinin algılarımızı nasıl etkileyebileceğini anlamak.',
-        'Dijital araçlarda önyargıları etkileşim yoluyla tanımlamak.',
-        'Yanlılıkları keşfetmek için veri girişleriyle denemeler yapmak.',
-        'Doğru veri temsili için kodu düzenlemek.',
-        'Adil ve yanlı veri görselleştirmelerini karşılaştırmak.',
-        'Veri manipülasyonunun etik sonuçlarını tartışmak.',
-        'Yanlış temsil edilen istatistiklerin gerçek hayattaki etkilerini tartışmak.',
-        'Yapay zeka ve algoritmik önyargılar hakkında eleştirel düşünme geliştirmek.'
+        'title' => 'Cinsiyet Farkı, Cinsiyet Grafiği',
+        'author' => 'Theodora Tziampazi',
+        'purposes_title' => 'Meydan okumanın amacı',
+        'purposes' => [
+            'Veri görselleştirmenin algıyı nasıl etkileyebileceğini anlamak.',
+            'Etkileşim yoluyla dijital araçlardaki önyargıları belirlemek.',
+            'Çarpıtmaları gözlemlemek için veri girişiyle denemeler yapmak.',
+            'Doğru veri temsilini sağlamak için kodu değiştirmek.',
+            'Adil ve önyargılı veri görselleştirmelerini karşılaştırmak.',
+            'Veri manipülasyonunun etik etkileri üzerine düşünmek.',
+            'Yanlı istatistiklerin gerçek dünyadaki sonuçlarını tartışmak.',
+            'Yapay zeka ve algoritmik önyargı hakkında eleştirel düşünme geliştirmek.'
+        ],
+        'description_title' => 'Meydan okumanın açıklaması',
+        'description' => 'Değerleri girerek, bozulmaları analiz ederek, kodu değiştirerek ve dijital araçların teknoloji alanındaki cinsiyet temsiline ilişkin algıları nasıl etkilediğini araştırarak veri görselleştirmedeki önyargıları araştırın.',
+        'educational_goals_title' => 'Educational goals',
+        'educational_goals' => [
+            'Coding and Programming Logic:',
+            'Computational Thinking:',
+            'Problem Solving and Debugging:',
+            'Creativity and Design Thinking:',
+            'Collaboration and Communication:',
+        ],
+        'target_audience_title' => 'Hedef Kitle',
+        'target_audience' => [
+            'İlkokul öğrencileri (6-12 yaş)',
+            'Ortaokul öğrencileri (12-16 yaş)',
+            'Lise öğrencileri (16-18 yaş)',
+            'Öğretmenler ve Eğitimciler'
+        ],
+        'experience_title' => 'Deneyim',
+        'experiences' => [
+            'Orta Seviye - Bazı temel kodlama bilgileri önerilir; katılımcıların temel programlama kavramlarına aşina olması gerekir.',
+            'İleri Seviye - Güçlü kodlama becerilerine ve programlama konusunda önceki deneyime sahip katılımcılar için tasarlanmıştır.'
+        ],
+        'duration_title' => 'Süre',
+        'duration' => '2 saat',
+        'materials_title' => 'Önerilen Araç',
+        'materials' => [
+            'Scratch 3 ve Çalışma Sayfası https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+        ],
+        'instructions_title' => 'Talimatlar',
+        'instructions' => [
+            'Bu dijital aracın (bar üreticisi) kullanıcısısınız (https://scratch.mit.edu/projects/1147892829). Henüz kodun içine bakmayın.',
+            'Yeşil bayrağa tıklayın ve bir teknoloji sektöründeki kadın sayısını varsayımsal olarak temsil eden verileri (1-10) girin. Birkaç sayı deneyin.',
+            '',
+            'Ne fark ettiniz?',
+            'Bu bir hata mı yoksa bir karar mı?',
+            'Her iki durumda da nasıl düzeltilebilir?',
+            'Manuel olarak (kullanıcı seviyesi):',
+            'Aracı ve sürüklenebilir karakterleri inceleyin.',
+            'Sorunun çözüldüğü bir durum var mı?',
+            'Başka bir beklenmedik sonucun gözlemlendiği bir durum var mı?',
+            'Düşünülmesi/Tartışması Gerekenler',
+            'Bir sektördeki kadın sayısı düşük tahmin ediliyorsa ne olur?',
+            'Bir sektördeki kadın sayısı yüksek tahmin ediliyorsa ne olur?',
+            'Bir sektördeki kadın sayısı iyi tahmin ediliyor ancak cinsiyet farkı açısından dengeli değilse ne olur?',
+            'Ne yapılmalı?',
+            'Önemli Nokta: Aracı nasıl kullandığımız (bileşeni nereye yerleştirdiğimiz) sonucu etkiler.',
+            'Kodlama (yaratıcı seviyesi): Şimdi, projenin içine bakma zamanı.',
+            'Basit görev:',
+            'Sunulan veriler her durumda eklenen verilerle eşit olacak şekilde kodu düzenleyin.',
+            'Gelişmiş görev:',
+            'Çubuk sprite\'ını kopyalayın ve mavi yapın (genellikle erkek olarak adlandırılır).',
+            'Y konumunu, mor çubukla görünür ve karşılaştırılabilir olacak şekilde değiştirin.',
+            'Yeni bir sprite olarak erkek bir sembol oluşturun.',
+            'İpucu: Bu bölümün sonunda çözüm olarak verilen projeden her iki sprite\'ı da (çubuk, sembol) indirebilir/dışa aktarabilirsiniz.',
+            'Şimdi kodları, kullanıcı girişi x olduğunda (şimdi her çubuk için 2 kez verilmiştir), 2 çubuk oluşturucunun şu şekilde olmasını sağlayacak şekilde düzenleyin:',
+            'Adil (aynı kod). Erkek sembolünün y konumunda if koşulunda ayarlamalar yapın. Her iki kodu da kontrol ederken hata ayıklayın.',
+            'Kullanımda adil değil: 2 sembolü farklı konumlara sürükleyin; eşitsizliği görmek için aynı girişi verin.',
+            'Taraflı/önyargılı (farklı kod)',
+            'erkekler lehine',
+            'kadınlar lehine',
+            'Kodun cinsiyet farkını azaltıp azaltmayacağını veya daha da kötüleştirip kötüleştirmeyeceğini deneyin...',
+            'Sonucun önyargılı olduğu iki yolu (sürükleme ve/veya kodlama) keşfedin.',
+            'Bu iki yol birbiriyle nasıl ilişkili olabilir?',
+            'Bir çözüm (aynı kod): https://scratch.mit.edu/projects/1151892036',
+            'Tartışma:',
+            'Hem taraflı hem de tarafsız bir dijital araç yaratabileceğinizi nasıl düşünüyorsunuz?',
+            'Taraflılık nerede daha "gizli"? Farklı konumlar arasında sürüklenirken veya kod yazarken?',
+            'Bir şeyin çarpıtılmış bir görüntüsünün (bazı insanlar - kim) yardımcı olabileceği durumları hayal edebiliyor musunuz?',
+            'Amaç aracı meşru kılıyorsa veya gerçeği hiçbir şekilde sunmuyorsa çarpıtılmış verileri destekleyebileceğimize inanıyor musunuz?',
+            'Yapay zekanın (belirli bir amaç doğrultusunda) bu meydan okumada denediğiniz gibi şeyleri deneyebileceğini nasıl düşünüyorsunuz?',
+            'Daha fazla soru:',
+            'Verileri nasıl topluyoruz?',
+            'Verilerimiz nasıl işleniyor?',
+            'Algoritmalarda (yapay zeka olsun ya da olmasın) gizli istatistikler eylemlerimizi/inançlarımızı nasıl etkiliyor?',
+            'Çıkarım: Aracı nasıl yarattığımız, sonucu veya hatta dünya görüşümüzü etkiliyor.'
+        ],
+        'real-life-applications_title' => 'Örnek',
+        'real-life-applications' => [
+            'İşyeri Çeşitlilik Raporları – Kurumsal çeşitlilik istatistiklerinde cinsiyet verilerinin doğru temsilini sağlamak.',
+            'Medya ve Haber Grafikleri – Cinsiyet eşitliği raporlarında yanıltıcı görselleştirmelerden kaçınmak.',
+            'Yapay Zeka ve Algoritma Yanlılığı – Demografik verileri işleyen makine öğrenimi modellerindeki yanlılıkları belirlemek ve azaltmak.',
+            'İşe Alma ve İstihdam Araçları – İK analitiği ve karar alma yazılımlarında adil temsili sağlamak.',
+            'STEM Eğitimi ve Kapsamı – Teknoloji alanlarında daha fazla kadını teşvik etmek için tarafsız veriler kullanmak.',
+            'Kamu Politikası ve Savunuculuk – Doğru cinsiyet farkı istatistikleriyle adil politika kararlarını desteklemek.',
+            'Sosyal Medya ve Farkındalık Kampanyaları – Değişimi teşvik etmek için cinsiyet verilerinin adil görsel temsillerini oluşturmak.'
+        ],
+        'variations_title' => 'Variations of the challenge',
+        'variations' => [
+            'Expanding the challenge to other environments: You could modify the challenge to involve AI bots protecting other ecosystems like forests, rivers, or even urban areas.',
+            'The bots would need to address challenges such as deforestation or air pollution.',
+        ],
     ],
-    'description_title' => 'Meydan okumanın açıklaması',
-    'description' => [
-        'Değerler girerek, hataları analiz ederek, kodu ayarlayarak ve dijital araçların teknoloji alanındaki toplumsal cinsiyet temsiline dair algımızı nasıl etkilediğini tartışarak veri görselleştirmedeki yanlılığı keşfedin.'
-    ],
-    'target_audience_title' => 'Hedef kitle',
-    'target-audience' => [
-        'İlkokul öğrencileri (6–12 yaş)',
-        'Ortaokul öğrencileri (12–16 yaş)',
-        'Lise öğrencileri (16–18 yaş)',
-        'Öğretmenler ve eğitimciler'
-    ],
-    'experience_title' => 'Deneyim',
-    'experience' => [
-        'Orta seviye – temel programlama bilgisi önerilir.',
-        'İleri seviye – güçlü kodlama becerilerine ve deneyime sahip olanlar için.'
-    ],
-    'duration_title' => 'Süre',
-    'duration' => '2 saat',
-    'materials_title' => 'Gerekli materyaller',
-    'materials' => [
-        'Scratch 3',
-        'Çalışma sayfası: https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing'
-    ],
-    'instructions_title' => 'Yönergeler',
-    'instructions' => [
-        'Bu dijital aracı kullanın (çubuk grafik oluştur): https://scratch.mit.edu/projects/1147892829. Henüz koda bakmayın. Yeşil bayrağa tıklayın ve teknoloji alanındaki kadınların sayısını temsil eden değerler (1–10) girin. Farklı değerler deneyin.',
-        'Ne fark ettiniz?',
-        'Bu bir hata mı yoksa bilinçli bir tercih mi?',
-        'Nasıl çözülebilir?',
-        'Kullanıcı düzeyi: aracı ve taşınabilir tüm spriteları inceleyin. Sorunu düzeltebileceğiniz bir nokta var mı? Yoksa beklenmeyen bir sonuç mu çıkıyor?',
-        'Tartışma: Kadınların teknoloji alanındaki sayısı az gösterilirse ya da çok gösterilirse ne olurdu? Rakamlar doğru olsa bile dengesizlik devam ederse ne olurdu?',
-        'Farkındalık: Aracı nasıl kullandığımız (ör. bileşenleri yerleştirme şeklimiz) sonucu etkiler.',
-        'Kodlama düzeyi: Projeyi açın. Temel görev – girilen verilerle eşleşen doğru verilerin görüntülenmesini sağlamak için kodu düzenleyin.',
-        'İleri görev – çubuk sprite’ını kopyalayın, maviye (erkek) boyayın, y-konumunu değiştirin, yeni bir sprite olarak erkek sembolü ekleyin. Hem adil hem de yanlı versiyonları oluşturun ve kodlamanın farkı nasıl artırabileceğini ya da azaltabileceğini keşfedin.',
-        'Çözüm (aynı kod): https://scratch.mit.edu/projects/1151892036'
-    ],
-    'discussion_title' => 'Tartışma',
-    'discussion' => [
-        'Bir dijital araç hem tarafsız hem de önyargılı olabilir mi?',
-        'Önyargı nerede “saklı” – bileşenlerin nasıl sürüklendiğinde mi yoksa kodun içinde mi?',
-        'Yanlış bir temsil bazen faydalı olabilir mi?',
-        'Amaç, yanlış veriyi haklı çıkarabilir mi yoksa gerçek her zaman doğru şekilde mi temsil edilmeli?',
-        'Yapay zeka bu görevde gördüğünüz kalıpları nasıl tekrarlayabilir?',
-        'Ek sorular: Veriyi nasıl topluyoruz? Nasıl işliyoruz? Algoritmalardaki gizli istatistikler davranışımızı nasıl yönlendiriyor?',
-        'Farkındalık: Bir aracı nasıl tasarladığımız, sonucu ve dünyayı nasıl algıladığımızı etkiler.'
-    ],
-    'real-life-applications_title' => 'Gerçek yaşam uygulamaları',
-    'real-life-applications' => [
-        'İş yerlerinde çeşitlilik raporları – toplumsal cinsiyet dağılımını doğru temsil etmek.',
-        'Medya grafiklerinde – toplumsal cinsiyet eşitliğiyle ilgili haberlerde yanıltıcı görsellerden kaçınmak.',
-        'Yapay zeka ve algoritmik önyargı – makine öğrenmesi modellerindeki yanlılığı belirlemek ve azaltmak.',
-        'İşe alım ve İK analiz araçları – karar verme süreçlerinde adil temsil sağlamak.',
-        'STEM eğitimi – tarafsız verilerle teknoloji alanında kadınların katılımını artırmak.',
-        'Kamu politikaları – doğru veriye dayalı adil politikalar üretmek.',
-        'Sosyal medya ve kampanyalar – değişimi desteklemek için adil görselleştirmeler kullanmak.'
-    ],
-],
 
     'dance-with-ally' => [
-    'title' => 'Ally ile Dans Et',
-    'author' => 'Kristina Krtalić',
-    'purposes_title' => 'Mücadelenin amacı',
-    'purposes' => [
-        'micro:bit\'i Bluetooth üzerinden Scratch\'e bağlamayı öğrenmek.',
-        'Scratch micro:bit uzantısını nasıl kullanacağını anlamak.',
-        'micro:bit düğmelerini Scratch projeleriyle etkileşim için kullanmak.',
-        'micro:bit ile etkileşimli oyunlar geliştirmek.',
-        'Problem çözme ve mantıksal düşünme becerilerini geliştirmek.',
-        'Kodlama yoluyla yaratıcılığı artırmak.'
+        'title' => 'Ally ile dans et',
+        'author' => 'Kristina Krtalić',
+        'purposes_title' => 'Meydan Okumanın Amacı',
+        'purposes' => [
+            "Micro:bit'i Bluetooth aracılığıyla Scratch'e bağlamayı öğrenmek",
+            "Scratch micro:bit eklentisini nasıl kullanacağınızı anlamak",
+            "Scratch projeleriyle etkileşim kurmak için micro:bit düğmelerini kullanmak",
+            "Micro:bit ile etkileşimli oyunlar oluşturmak",
+            "Problem çözme ve mantıksal düşünme becerilerini geliştirmek",
+            "Kodlama yoluyla yaratıcılığı geliştirmek"
+        ],
+        'description_title' => 'Meydan okumanın açıklaması',
+        'description' => "Micro:bit kullanarak Scratch'te bir sprite'ın basitçe dans etmesini sağlayacak bir program oluşturun.
+        Öğrenciler, Scratch ve micro:bit'i birleştirerek, dijital ve fiziksel bilişimi entegre eden, problem çözme becerilerini geliştiren ve yaratıcı keşifleri teşvik eden kapsamlı bir öğrenme deneyimi kazanacaklar.",
+        'educational_goals_title' => 'Eğitim hedefleri',
+        'educational_goals' => [
+            'Kodlama ve Programlama Mantığı:',
+            "Öğrenciler, micro:bit'ten gelen girdilere yanıt veren olay odaklı programlar yazmak için Scratch bloklarını kullanacaklar.",
+            "Öğrenciler, döngüler, karar verme, koşullar ve değişkenler gibi temel programlama kavramlarını anlayacak ve uygulayacaklar.",
+            "Öğrenciler, dijital ve fiziksel çıktıları kontrol etmek için blok tabanlı programlamada akıcılık kazanacaklar.",
+            'Hesaplamalı Düşünme:',
+            "Öğrenciler, Scratch kullanarak problemleri daha küçük parçalara ayıracak ve adım adım çözümler tasarlayacaklar.",
+            "Öğrenciler, sprite'ları veya animasyonları kontrol etmek için micro:bit'ten gelen sensör verilerini (örneğin, düğmeler, sallama) kullanacaklar.",
+            "Öğrenciler, belirli zorlukları çözmek için algoritmalar geliştirecek ve test edecekler (örneğin, micro:bit eğildiğinde sprite'ın dans etmesini sağlamak).",
+            'Problem Çözme ve Hata Ayıklama:',
+            "Öğrenciler, Scratch kodlarını ve micro:bit etkileşimlerini test ederek, hataları belirleyerek ve iyileştirerek yinelemeli tasarıma dahil olacaklar.",
+            "Öğrenciler, hem yazılım (Scratch betikleri) hem de donanım (micro:bit bağlantısı veya girdileri) ile ilgili gerçek zamanlı hataları giderecekler.",
+            "Öğrenciler, hata ayıklama sırasında yapılan değişiklikleri belgeleyecek ve üzerinde düşünecekler.",
+            'Yaratıcılık ve Tasarım Odaklı Düşünme:',
+            "Öğrenciler, Scratch'te micro:bit girdilerini etkileşimli öğeler olarak birleştiren özgün animasyonlar, oyunlar veya hikayeler oluşturacaklar.",
+            "Öğrenciler, sprite hareketleri koreografisi oluşturarak veya etkileşimli sahneler tasarlayarak kendilerini sanatsal olarak ifade edecekler.",
+            "Öğrenciler tasarım sürecini takip edecekler: empati kuracaklar, fikir üretecekler, prototip oluşturacaklar ve test edecekler.",
+            'İş Birliği ve İletişim:',
+            "Öğrenciler, etkileşimli projeler planlamak, kodlamak ve sunmak için ikili veya küçük ekipler halinde çalışacaklar.",
+            "Öğrenciler, tasarım seçimlerini ve kod mantığını akranlarına veya daha geniş bir kitleye açıklayacaklar."
+        ],
+        'target_audience_title' => 'Hedef Kitle',
+        'target_audience' => [
+            'İlkokul Öğrencileri (6-12 yaş)',
+            'Ortaokul Öğrencileri (12-16 yaş)'
+        ],
+        'experience_title' => 'Deneyim',
+        'experience' => 'Orta Seviye - Bazı temel kodlama bilgileri önerilir; katılımcıların temel programlama kavramlarına aşina olması gerekir.',
+        'duration_title' => 'Süre',
+        'duration' => '60 dakika',
+        'materials_title' => 'Önerilen Araç',
+        'materials' => [
+            'Bilgisayar',
+            'Scratch (https://scratch.mit.edu/)',
+            'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
+            'Scratch Micro:bit (https://scratch.mit.edu/microbit)',
+            'micro:bit',
+            'Sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+        ],
+        'instructions_title' => 'Talimatlar',
+        'instructions' => [
+            "Scratch'i başlatın",
+            "Scratch'te bir hesap oluşturun (eğer yoksa)",
+            "Yeni bir proje oluşturmaya başlayın, bir sprite ekleyin, bir arka plan ekleyin, programı başlatırken sprite'ın başlangıç konumunu belirleyin",
+            "Scratch programlama dili uzantısından bir grup micro:bit betiği ekleyin",
+            "micro:bit'i bilgisayara bağlayın, bilgisayarda Bluetooth'u açın (açık değilse)",
+            "Scratch bağlantısını kurun ve çalıştırın https://scratch.mit.edu/download/scratch-link, micro:bit HEX dosyasını indirin ve micro:bit'e kaydedin (kopyalayın) https://scratch.mit.edu/microbit",
+            "micro:bit uzantısında, micro:bit uzantısındaki turuncu düğmeye tıklayarak bilgisayarın yakınındaki bir cihazı bulun",
+            "Cihazları arayın ve bulun",
+            "Seçilen müziğe (başlangıç sesi bloğuyla birlikte) eşlik eden ve micro:bit'i salladığımızda hareket eden bir sprite'ın dans etmesini sağlayacak bloklarla bir program oluşturun. Dans yalnızca iki komuttan oluşur: x ekseninde sola ve sağa kaydır. Projeyi bilgisayarınıza kaydedin.",
+            "Öğrenciler talimatlara göre programı oluşturduktan sonra kendi bloklarını ekleyebilir, micro:bit üzerindeki A ve/veya B tuşuna basarak sprite`ın kontrollerini belirleyebilir, sprite`ın görünümünü değiştirebilir, hareketleri değiştirebilir/ekleyebilir."
+        ],
+        'examples_title' => 'Örnek',
+        'examples' => [
+            "Dans eden bir sprite'ı kontrol etmek için micro:bit'i Scratch'e bağlamak, etkileşimli programlamayı keşfetmenin harika bir yoludur. Bu konsept, çeşitli gerçek yaşam uygulamalarına ve yaratıcı projelere genişletilebilir, örneğin:",
+            '1. Etkileşimli dans ve fitness programları',
+            "Hareketi izlemek ve fitness oyunları oluşturmak için micro:bit'in ivmeölçerini kullanın",
+            "Sprite'ın gerçek hayattaki dans hareketlerini takip ettiği bir dans öğrenme aracı oluşturun",
+            '2. Hareket tabanlı animasyon ve oyun',
+            "Scratch karakterlerini el hareketleri veya eğme hareketleriyle kontrol edin",
+            "Zıplama veya engellerden kaçma gibi basit hareket kontrollü oyunlar geliştirin",
+            'https://microbit.org/projects/make-it-code-it/step-counter/'
+        ]
     ],
-    'description_title' => 'Meydan okumanın açıklaması',
-    'description' => [
-        'micro:bit kullanarak Scratch karakterinin (sprite) dans etmesini sağlayan bir program oluştur.'
-    ],
-    'educational_goals_title' => 'Eğitim hedefleri',
-    'educational_goals' => [
-        'Programlama mantığı: Öğrenciler micro:bit girişlerine tepki veren olay tabanlı programlar için Scratch bloklarını kullanır; döngüler, koşullar ve değişkenleri anlar; dijital ve fiziksel giriş/çıkışlarla etkileşimi öğrenir.',
-        'Hesaplamalı düşünme: Problemleri küçük parçalara ayırır, micro:bit sensör verilerini (düğmeler, sallama) kullanır ve algoritmalar geliştirir.',
-        'Hata ayıklama ve iyileştirme: Scratch kodunu ve micro:bit etkileşimini test etme, hata bulma, düzeltme ve geliştirme.',
-        'Yaratıcılık ve tasarım düşüncesi: micro:bit girişlerine dayalı animasyonlar, oyunlar veya hikâyeler tasarlama.',
-        'İş birliği ve iletişim: Ekiplerle etkileşimli projeler tasarlama ve kodlama, çözümleri paylaşma ve kod mantığını açıklama.'
-    ],
-    'target_audience_title' => 'Hedef kitle',
-    'target-audience' => [
-        'İlkokul öğrencileri (6–12 yaş)',
-        'Ortaokul öğrencileri (12–16 yaş)'
-    ],
-    'experience_title' => 'Deneyim',
-    'experience' => 'Orta seviye – temel programlama bilgisi önerilir.',
-    'duration_title' => 'Süre',
-    'duration' => '60 dakika',
-    'materials_title' => 'Gerekli materyaller',
-    'materials' => [
-        'Bilgisayar',
-        'Scratch (https://scratch.mit.edu/)',
-        'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
-        'Scratch micro:bit uzantısı (https://scratch.mit.edu/microbit)',
-        'micro:bit',
-        'Ally karakteri (sprite) (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
-    ],
-    'instructions_title' => 'Yönergeler',
-    'instructions' => [
-        'Scratch\'i aç.',
-        'Scratch hesabı oluştur (henüz yoksa).',
-        'Yeni bir proje başlat, sprite ve arka plan ekle, başlangıç konumunu ayarla.',
-        'Uzantılar bölümünden micro:bit bloklarını ekle.',
-        'micro:bit\'i bilgisayara bağla ve Bluetooth\'u etkinleştir.',
-        'Scratch Link uygulamasını yükle ve çalıştır, micro:bit HEX dosyasını indir ve cihaza yükle.',
-        'Scratch micro:bit uzantısını aç, turuncu düğmeye tıkla ve cihazı eşleştir.',
-        'micro:bit sallandığında karakterin dans etmesini sağlayan bir program yaz. Projeni kaydet.',
-        'Projeni genişlet: A/B düğmeleriyle kontrol, yeni hareketler veya görünümler ekle.'
-    ],
-    'real-life-applications_title' => 'Gerçek yaşam uygulamaları',
-    'real-life-applications' => [
-        'Etkileşimli dans ve fitness uygulamaları: micro:bit\'in ivmeölçerini kullanarak hareketleri takip etme ve oyunlar geliştirme.',
-        'Hareket tabanlı animasyonlar ve oyunlar: el hareketleri veya cihazı eğme ile karakterleri kontrol etme.'
-    ],
-],
 
     'coding-for-the-ocean' => [
-    'title' => 'Okyanus İçin Kodlama - Denizleri Kurtarmak İçin Yapay Zeka Botunuzu Oluşturun',
-    'author' => 'Teresa Silvestri',
-    'purposes_title' => 'Mücadelenin amacı',
-    'purposes' => [
-        'Çevre sorunlarını çözmek için yapay zekayı kullanma becerisi.',
-        'Bir yapay zeka botu oluşturma ve programlama becerisi.',
-        'İklim değişikliği ve deniz ortamını korumanın önemi hakkında bilgi.',
-        'Bilim ve teknoloji bağlamında problem çözme becerileri.',
-        'Gerçek dünyadaki zorluklara uygulanabilen mantıksal düşünme becerisinin geliştirilmesi.',
-        'Çevresel tehditlere yanıt verebilecek bir bot tasarlamada yaratıcılık.',
-        'Code.org gibi kodlama platformlarını kullanma konusunda pratik deneyim.',
-        'Botları paylaşırken ve sınıf arkadaşlarıyla rekabet ederken takım çalışması ve iş birliği.'
+        'title' => 'Okyanus İçin Kodlama Denizleri Kurtarmak İçin Yapay Zeka Botunuzu Oluşturun',
+        'author' => 'Teresa Silvestri',
+        'purposes' => [
+            'Yarışmayı tamamlayan katılımcılar şunları öğrenecek ve kazanacak:',
+            'Çevre sorunlarını çözmek için yapay zekayı kullanma becerisi.',
+            'Bir yapay zeka botu oluşturma ve programlama becerisi.',
+            'İklim değişikliği ve deniz ortamını korumanın önemi hakkında bilgi.',
+            'Bilim ve teknoloji bağlamında problem çözme becerileri.',
+            'Gerçek dünyadaki zorluklara uygulanabilen mantıksal düşünme becerisinin geliştirilmesi.',
+            'Çevresel tehditlere yanıt verebilecek bir bot tasarlamada yaratıcılık.',
+            'Code.org gibi kodlama platformlarını kullanma konusunda pratik deneyim.',
+            'Botları paylaşırken ve sınıf arkadaşlarıyla rekabet ederken takım çalışması ve iş birliği.'
+        ],
+        'description' => 'Denizleri korumak için bir yapay zeka botu oluşturun ve eğitin! Kod yazmayı, çevre sorunlarını çözmeyi ve deniz ortamını korumak için mantıksal düşünmeyi öğrenin.',
+        'educational_goals' => [
+            'Programlama ve yapay zeka konusunda temel becerileri geliştirmek',
+            'Çevre bilincini ve çevreyi korumanın önemini teşvik etmek',
+            'Hikaye anlatımı yoluyla yaratıcılığı ve hayal gücünü teşvik etmek',
+            'Problem çözme ve eleştirel düşünme becerilerini geliştirmek'
+        ],
+        'target-audience' => [
+            'İlkokul Öğrencileri (6-12 yaş)'
+        ],
+        'experience' => 'Başlangıç Seviyesi - Önceden kodlama deneyimi gerekmez; tamamen yeni başlayanlar için uygundur.',
+        'duration' => '45 dakika – 1 saat',
+        'materials' => [
+            'Yazılım: Code.org\'a Erişim',
+            'Donanım: İnternet bağlantısı olan bilgisayar veya tablet.',
+            'Çevrimiçi Araçlar: Code.org veya benzeri platformlarda gezinmek için web tarayıcısı.',
+            'Destek Materyalleri: Platform tarafından sağlanan eğitim materyalleri ve kaynaklar.',
+            'Diğer Araçlar: Eğitimi takip etmek için isteğe bağlı ses veya görüntü cihazları.'
+        ],
+        'instructions' => [
+            'Code.org\'a Erişim
+
+            Web tarayıcınızı açın ve Code.org adresine gidin.
+            Hesabınız yoksa, hesap oluşturabilir veya mevcut bir hesabınızla giriş yapabilirsiniz.
+            Yeni bir proje başlatın
+
+            Ana ekranda, okyanus korumayla ilgili kursu veya eğitimi seçin.
+            Projenize başlamak için "Başlat"a tıklayın.
+            Adım adım eğitimi izleyin
+
+            Code.org sizi etkileşimli bir eğitim boyunca yönlendirecektir. Her talimatı dikkatlice okuyun ve her adımı tamamlayın.
+            Yapay zeka botunuzu nasıl programlayacağınızı öğrenmek için talimatları izlediğinizden emin olun.
+            Botunuzu programlayın
+
+            Görsel kodlama bloklarını kullanarak botunuza plastik toplama veya engellerden kaçınma gibi çevresel durumlara nasıl tepki vereceğini öğretin.
+            Blokları farklı durumlara uyacak şekilde değiştirin ve botun davranışını test edin.
+            Botunuzu test edin
+
+            Kodu yazdıktan sonra, zorluklarla nasıl başa çıktığını görmek için botunuzu test edin.
+            Bot beklendiği gibi çalışmazsa, geri dönüp değiştirin ve etkili olana kadar tekrar test edin.
+            Botunuzu sınıfla paylaşın
+
+            Botunuz hazır olduğunda, proje bağlantısını kopyalayın ve sınıf arkadaşlarınızla paylaşın.
+            Denizleri korumada en etkili botun hangisi olduğunu görmek için yarışmaya katılın.
+            Gözden geçirin ve geliştirin
+
+            Yarışmayı tamamladıktan sonra kodunuzu gözden geçirin ve geliştirmenin yollarını arayın.
+            Yeni çevresel zorluklarla başa çıkmak için bota daha fazla özellik ekleyebilirsiniz.
+            '
+        ],
+        'real-life-applications_title' => 'Gerçek uygulamalar',
+        'real-life-applications' => [
+            'Okyanus Korumada Yapay Zeka: The Ocean Cleanup gibi şirketler ve kuruluşlar, okyanuslardan plastik toplamak için yapay zeka destekli sistemler kullanıyor ve bu da deniz kirliliğiyle mücadeleye yardımcı oluyor.',
+            'Çevresel İzlemede Yapay Zeka: Yapay zeka botları, okyanus koşullarını izlemek, deniz canlılarını takip etmek ve kirliliği tespit etmek için kullanılıyor ve böylece çevre koruma çalışmalarının verimliliği artıyor.'
+        ],
+        'variations_title' => 'Proje varyasyonları',
+        'variations' => [
+            'Projeyi diğer ortamlara genişletmek: Projeyi, ormanlar, nehirler ve hatta kentsel alanlar gibi diğer ekosistemleri koruyan yapay zeka botlarını da içerecek şekilde değiştirebilirsiniz. Botların ormansızlaşma veya hava kirliliği gibi sorunları ele alması gerekecektir.'
+        ]
     ],
-    'description_title' => 'Meydan okumanın açıklaması',
-    'description' => [
-        'Denizleri korumak için bir yapay zeka botu oluşturun ve eğitin!',
-        'Kod yazmayı, çevre sorunlarını çözmeyi ve deniz ortamını korumak için mantıksal düşünmeyi öğrenin.'
-    ],
-    'educational_goals_title' => 'Eğitim hedefleri',
-    'educational_goals' => [
-        'Programlama ve yapay zeka konusunda temel becerileri geliştirmek',
-        'Çevre bilincini ve çevreyi korumanın önemini teşvik etmek',
-        'Hikaye anlatımı yoluyla yaratıcılığı ve hayal gücünü teşvik etmek',
-        'Problem çözme ve eleştirel düşünme becerilerini geliştirmek'
-    ],
-    'target_audience_title' => 'Hedef kitle',
-    'target_audience' => [
-        'İlkokul Öğrencileri (6-12 yaş)'
-    ],
-    'experience_title' => 'Deneyim',
-    'experience' => 'Başlangıç Seviyesi - Önceden kodlama deneyimi gerekmez; tamamen yeni başlayanlar için uygundur.',
-    'duration_title' => 'Süre',
-    'duration' => '45 dakika – 1 saat',
-    'materials_title' => 'Önerilen araç',
-    'materials' => [
-        'Yazılım: Code.org\'a Erişim',
-        'Donanım: İnternet bağlantısı olan bilgisayar veya tablet.',
-        'Çevrimiçi Araçlar: Code.org veya benzeri platformlarda gezinmek için web tarayıcısı.',
-        'Destek Materyalleri: Platform tarafından sağlanan eğitim materyalleri ve kaynaklar.',
-        'Diğer Araçlar: Eğitimi takip etmek için isteğe bağlı ses veya görüntü cihazları.'
-    ],
-    'instructions_title' => 'Yönergeler',
-    'instructions' => [
-        'Code.org\'a erişin',
-        'Web tarayıcınızı açın ve Code.org adresine gidin. Hesabınız yoksa hesap oluşturabilir veya mevcut bir hesapla giriş yapabilirsiniz.',
-        'Yeni bir proje başlatın',
-        'Ana ekranda okyanus korumayla ilgili kursu veya eğitimi seçin. Projenize başlamak için "Başlat"a tıklayın.',
-        'Adım adım eğitimi izleyin',
-        'Code.org sizi etkileşimli bir eğitim boyunca yönlendirecektir. Talimatları dikkatle okuyun ve her adımı tamamlayın.',
-        'Botunuzu programlayın',
-        'Görsel kodlama bloklarını kullanarak botunuza plastik toplama veya engellerden kaçınma gibi çevresel durumlara tepki vermeyi öğretin.',
-        'Botunuzu test edin',
-        'Botunuzu yazdıktan sonra çalışmasını test edin. Beklenildiği gibi değilse kodu değiştirip yeniden deneyin.',
-        'Botunuzu sınıfla paylaşın',
-        'Botunuz hazır olduğunda proje bağlantısını kopyalayın ve sınıf arkadaşlarınızla paylaşın. Yarışmaya katılın.',
-        'Gözden geçirin ve geliştirin',
-        'Kodunuzu gözden geçirin ve yeni çevresel zorluklarla başa çıkmak için geliştirin.'
-    ],
-    'real-life-applications_title' => 'Gerçek uygulamalar',
-    'real-life-applications' => [
-        'Okyanus Korumada Yapay Zeka: The Ocean Cleanup gibi şirketler, okyanuslardan plastik toplamak için yapay zeka destekli sistemler kullanıyor.',
-        'Çevresel İzlemede Yapay Zeka: Yapay zeka botları, okyanus koşullarını izlemek, deniz canlılarını takip etmek ve kirliliği tespit etmek için kullanılıyor.'
-    ],
-    'variations_title' => 'Proje varyasyonları',
-    'variations' => [
-        'Projeyi diğer ortamlara genişletmek: Ormanlar, nehirler veya kentsel alanları koruyan botlar tasarlanabilir.',
-        'Botların ormansızlaşma veya hava kirliliği gibi sorunları çözmesi sağlanabilir.'
-    ]
-],
 
     'code-it-like-margaret-hamilton' => [
-    'title' => 'Margaret Hamilton gibi kodla!',
-    'author' => 'Chouliara Theodora',
-    'purposes' => [
-        'Öğrenciler, NASA\'nın Apollo uzay aracının Ay\'a ulaşması için gerekli kodu programlayan Margaret Hamilton gibi, bir uzay aracını fırlatmak için Scratch Jr. kullanarak temel blok tabanlı kodlama kavramlarını öğrenecekler.',
-        'Bu etkinlik ayrıca, bir kadın programcının uzay araştırmalarına katkısını vurgulayarak ve kız çocuklarını programlama ve STEM alanlarında kariyer yapmaya teşvik ederek toplumsal cinsiyet kalıplarını yıkmaya yardımcı olacaktır.'
+        'title' => 'Margaret Hamilton gibi kodla!!!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'Öğrenciler, NASA\'nın Apollo uzay aracının Ay\'a ulaşması için gerekli kodu programlayan Margaret Hamilton gibi, bir uzay aracını fırlatmak için Scratch Jr. kullanarak temel blok tabanlı kodlama kavramlarını öğrenecekler.',
+            'Bu etkinlik ayrıca, bir kadın programcının uzay araştırmalarına katkısını vurgulayarak ve kız çocuklarını programlama ve STEM alanlarında kariyer yapmaya teşvik ederek toplumsal cinsiyet kalıplarını yıkmaya yardımcı olacaktır.'
+        ],
+        'description' => 'Margaret Hamilton\'dan esinlenerek Scratch Jr\'da bir uzay fırlatması programlayın! Geri sayım kodlayın, bir uzay aracı fırlatın ve kızları Kodlamaya teşvik ederek toplumsal cinsiyet kalıplarını yıkın!',
+        'instructions' => [
+            '1. Giriş:',
+            'Öğretmen uzay görevlerini ve insanları Ay\'a göndermeyi anlatır ve Margaret Hamilton\'ı ve Apollo planlamasına katkılarını tanıtır. Ardından, programlamanın ne olduğu ve bir bilgisayara nasıl talimat verebileceğimiz hakkında bir tartışma yapılır.',
+            '2. Programlama etkinliği: Margaret Hamilton kodlar ve geri sayım yapar ve uzay aracı Ay\'a doğru yola çıkar.',
+            'Scratch Jr. uygulamasını açın ve yeni bir proje oluşturun.',
+            'Karakteri silin.',
+            'Arkaplanı boşluk ile seçin (Adım 1 png).',
+            'Bir kadın, bir uzay gemisi ve Dünya (Adım 2 png) karakterlerinden seçin.',
+            'Karakterlerin boyutunu "Küçült" veya "Büyüme" (Adım 3 png) bloğuna gerektiği kadar tıklayarak ayarlayın.',
+            'Karakterleri doğru konuma taşıyın (Adım 4 png).',
+            'Kadının geri saymasını ve kelimelerini bitirdiğinde uzay gemisinin yukarı çıkmasını sağlayacak programlar yazın. Bunu başarmak için, yeşil bayrağa basıldığında kadın seçtiğiniz kelimeleri söylemeli ve ardından bir mesaj göndermelidir. Uzay gemisi aynı renkteki mesajı almalı ve doğru hareket bloklarıyla uzay gemisi yukarı çıkmalıdır. Ayrıca, uzay gemisinin uzaklaştıkça küçülmesini de sağlayabilirsiniz. Uzay gemisini programlamak için basit bloklar veya tekrar döngüsü kullanabilirsiniz. (Adım 5 png).',
+            'Yeşil bayrağa basarak komut dosyasını çalıştırın.'
+        ],
+        'materials' => [
+            'Scratch Jr. yüklü bir tablet veya PC (mümkünse öncelikle tablet kullanmanızı öneririz) (tabletler için https://www.scratchjr.org/ ve Windows veya Mac için https://jfo8000.github.io/ScratchJr-Desktop/).',
+            'Margaret Hamilton ve Apollo 11 görevinin basılı görüntüleri (isteğe bağlı).',
+            'Scratch Jr. komutlarını içeren yazdırılabilir kartlar (isteğe bağlı).',
+            'Projektör (isteğe bağlı).'
+        ],
+        'real-life-applications' => [
+            'Gerçek hayattaki uygulamalar:',
+            'Bu etkinlik yalnızca programlamaya giriş niteliğinde değil, aynı zamanda gerçek hayattaki olaylar ve bilim ve teknolojideki uygulamalarla da bağlantılıdır:',
+            'Margaret Hamilton, Apollo 11\'in 1969\'da güvenli bir şekilde inişini sağlayan Apollo Rehberlik Bilgisayarı yazılımını geliştirdi. Bu etkinlik, çocukların bilgisayarların bir görevi yerine getirmek için net ve doğru komutlara ihtiyaç duyduğunu anlamalarına yardımcı olur; tıpkı NASA\'nın Ay\'a ulaşmak için kod kullanması gibi.',
+            'Scratch Jr\'daki gibi blok programlama, uzay görevlerinde, robotikte ve yapay zekada şu anda kullanılan daha karmaşık programlama dillerini anlamanın ilk adımıdır. Aynı ilkeler, Mars keşif robotları (Curiosity, Perseverance) gibi otonom sistemlerin geliştirilmesinde de kullanılır.'
+        ],
+        'variations' => [
+            'Varyasyonlar/Öneriler:',
+            'Öğrenciler uygulamaya yeni başlıyorsa, önce basılı bloklarla projeleri oluşturabilirsiniz.',
+            'Gezegenler, yıldızlar veya kuyruklu yıldızlar gibi daha fazla karakter ekleyin.',
+            'Çocukların yaşına ve ScratchJr uygulamasıyla ilgili deneyimlerine bağlı olarak, uzay gemisini engellerden kaçınmak için programlamak gibi ek zorluklar eklenebilir.',
+            'Öğrenciler ayrıca uzay gemisinin aya inişini gösteren başka bir sayfa da ekleyebilirler.',
+            '"Söyle" bloğunu kullanmak yerine, "Kaydedilmiş Sesi Çal" bloğu kullanılabilir ve öğrencilerin sesleri duyulabilir.',
+            'Yüzlerini düzenleyebileceğiniz ve öğrencilerin fotoğraflarını ekleyebileceğiniz astronot karakterleri ekleyin.'
+        ],
+        'duration' => '60 dakika',
+        'experience' => 'Orta Seviye - Bazı temel kodlama bilgileri önerilir; katılımcıların temel programlama kavramlarına aşina olması gerekir.',
+        'target-audience' => [
+            'Küçük Çocuklar (5-7 Yaş)'
+        ]
     ],
-    'description' => 'Margaret Hamilton\'dan esinlenerek Scratch Jr\'da bir uzay fırlatması programlayın! Geri sayım kodlayın, bir uzay aracı fırlatın ve kızları Kodlamaya teşvik ederek toplumsal cinsiyet kalıplarını yıkın!',
-    'instructions' => [
-        'Giriş: Öğretmen uzay görevlerini ve insanları Ay\'a göndermeyi anlatır ve Margaret Hamilton\'ı ve Apollo planlamasına katkılarını tanıtır. Ardından, programlamanın ne olduğu ve bir bilgisayara nasıl talimat verebileceğimiz hakkında bir tartışma yapılır.',
-        'Programlama etkinliği: Margaret Hamilton kodlar ve geri sayım yapar ve uzay aracı Ay\'a doğru yola çıkar.',
-        'Scratch Jr. uygulamasını açın ve yeni bir proje oluşturun.',
-        'Karakteri silin.',
-        'Arkaplanı boşluk ile seçin (Adım 1 png).',
-        'Bir kadın, bir uzay gemisi ve Dünya (Adım 2 png) karakterlerinden seçin.',
-        'Karakterlerin boyutunu "Küçült" veya "Büyüme" (Adım 3 png) bloğuna gerektiği kadar tıklayarak ayarlayın.',
-        'Karakterleri doğru konuma taşıyın (Adım 4 png).',
-        'Kadının geri saymasını ve kelimelerini bitirdiğinde uzay gemisinin yukarı çıkmasını sağlayacak programlar yazın. Bunu başarmak için, yeşil bayrağa basıldığında kadın seçtiğiniz kelimeleri söylemeli ve ardından bir mesaj göndermelidir. Uzay gemisi aynı renkteki mesajı almalı ve doğru hareket bloklarıyla uzay gemisi yukarı çıkmalıdır. Ayrıca, uzay gemisinin uzaklaştıkça küçülmesini de sağlayabilirsiniz. Uzay gemisini programlamak için basit bloklar veya tekrar döngüsü kullanabilirsiniz. (Adım 5 png).',
-        'Yeşil bayrağa basarak komut dosyasını çalıştırın.'
-    ],
-    'materials' => [
-        'Scratch Jr. yüklü bir tablet veya PC (mümkünse öncelikle tablet kullanmanızı öneririz) (tabletler için https://www.scratchjr.org/ ve Windows veya Mac için https://jfo8000.github.io/ScratchJr-Desktop/).',
-        'Margaret Hamilton ve Apollo 11 görevinin basılı görüntüleri (isteğe bağlı).',
-        'Scratch Jr. komutlarını içeren yazdırılabilir kartlar (isteğe bağlı).',
-        'Projektör (isteğe bağlı).'
-    ],
-    'real-life-applications' => [
-        'Gerçek hayattaki uygulamalar:',
-        'Bu etkinlik yalnızca programlamaya giriş niteliğinde değil, aynı zamanda gerçek hayattaki olaylar ve bilim ve teknolojideki uygulamalarla da bağlantılıdır: Margaret Hamilton, Apollo 11\'in 1969\'da güvenli bir şekilde inişini sağlayan Apollo Rehberlik Bilgisayarı yazılımını geliştirdi. Bu etkinlik, çocukların bilgisayarların bir görevi yerine getirmek için net ve doğru komutlara ihtiyaç duyduğunu anlamalarına yardımcı olur; tıpkı NASA\'nın Ay\'a ulaşmak için kod kullanması gibi. Blok programlama, uzay görevlerinde, robotikte ve yapay zekada şu anda kullanılan daha karmaşık programlama dillerini anlamanın ilk adımıdır. Aynı ilkeler, Mars keşif robotları (Curiosity, Perseverance) gibi otonom sistemlerin geliştirilmesinde de kullanılır.'
-    ],
-    'variations' => [
-        'Varyasyonlar/Öneriler:',
-        'Öğrenciler uygulamaya yeni başlıyorsa, önce basılı bloklarla projeleri oluşturabilirsiniz.',
-        'Gezegenler, yıldızlar veya kuyruklu yıldızlar gibi daha fazla karakter ekleyin.',
-        'Çocukların yaşına ve ScratchJr uygulamasıyla ilgili deneyimlerine bağlı olarak, uzay gemisini engellerden kaçınmak için programlamak gibi ek zorluklar eklenebilir.',
-        'Öğrenciler ayrıca uzay gemisinin aya inişini gösteren başka bir sayfa da ekleyebilirler.',
-        '"Söyle" bloğunu kullanmak yerine, "Kaydedilmiş Sesi Çal" bloğu kullanılabilir ve öğrencilerin sesleri duyulabilir.',
-        'Yüzlerini düzenleyebileceğiniz ve öğrencilerin fotoğraflarını ekleyebileceğiniz astronot karakterleri ekleyin.'
-    ],
-    'duration' => '60 dakika',
-    'experience' => 'Orta Seviye - Bazı temel kodlama bilgileri önerilir; katılımcıların temel programlama kavramlarına aşina olması gerekir.',
-    'target-audience' => [
-        'Küçük Çocuklar (5-7 Yaş)'
-    ]
-],
     'chatbot' => [
         'title' => 'Sohbet robotu yapın',
         'author' => 'AB Kod Haftası Ekibi',
@@ -985,7 +1096,8 @@ return [
             '5 farklı renk seçin ve her renge bir fitness egzersizi atayın, ör. squat ya da jumping jacks. Daha sonra renkler istenilen sırada dizilerek egzersiz yapılabilir.',
         ],
 
-    ],    'common' => [
+    ],
+    'common' => [
         'share' => 'Projenizin bağlantısını veya kare kodunu Instagram\’da ya da Facebook\’ta paylaşın, #EUCodeWeekChallenge hashtag\’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
         'audience' => [
             'Öğretmenler ve eğitmenler',
@@ -1034,7 +1146,8 @@ return [
         'author' => 'Lydie El-Halougi',
         'purposes' => [
             'Döngü ve değişkenleri öğrenip uygulamak.',
-            'Kodlamada yaratıcılığı artırmak.'],
+            'Kodlamada yaratıcılığı artırmak.'
+        ],
         'description' => 'Bu mücadelede, kalem blokları ile döngüleri ve değişkenleri kullanarak bir sarmal oluşturmak üzere Scratch üzerinde proje yazacaksınız.',
 
         'instructions' => [
@@ -1148,7 +1261,8 @@ return [
             '3 yeni etiket ekleyerek yeni bir makine öğrenimi modeli hazırlayın; bunlardan birincisini “güzel”, ikincisini ise “kötü” olarak adlandırın, modelin isminizi de bilmesini istiyorsanız “isim” adlı üçüncü bir etiket oluşturun.',
             'Yeni makine öğrenimi modelini eğitip test edin ve bunu Scratch üzerinde Emobot oluşturmada kullanın.',
             'Scratch 3 editörünü çalıştırın, kedi kuklasını silin, Microsoft Bing Görüntü Oluşturucu tarafından oluşturulmuş 3 yeni kuklayı (mutlu, kızgın ve kafası karışmış bilgisayar simgesi) ekleyin veya Resim simgesine tıklayıp mutlu, kızgın ve kafası karışmış ifadeler için üç farklı kostüm çizerek yeni bir kukla oluşturun.',
-            '“Kod” sekmesine tıklayın ve alttaki komut dizisini girin.'],
+            '“Kod” sekmesine tıklayın ve alttaki komut dizisini girin.'
+        ],
         'example' => [
             'Oluşturduğunuz Emobot Kliki\’yi arkadaşlarınızla paylaşın ve yapay zeka ile duygular hakkında daha fazla bilgi edinin!',
             'Bilgisayar simgesi yerine hayvan gibi başka bir simge de kullanabilirsiniz. Karakteri, kibar ve kaba ifadeler yerine farklı türde mesajları algılayacak şekilde eğitebilirsiniz.',
@@ -1214,7 +1328,8 @@ return [
             'Kodlama kavramlarını öğretmek/öğrenmek ve bu kavramlar üzerinde düşünmek.',
             'Basit kodlama araçlarını kullanmak.',
             'Sayısal düşünme ve problem çözme becerilerini geliştirmek.',
-        ], 'description' => [
+        ],
+        'description' => [
             'Şunun gibi bir kodlama kaçış deneyimi oluşturun:',
             'Kodlama üzerine bir hikâye yaratmak için Google formlar, Genially veya Google slaytlar gibi herhangi bir aracı kullanabilirsiniz ;).',
 
@@ -1258,7 +1373,8 @@ return [
             'Tüm hareketler radyo sinyali alındığında başlar.',
             'İlk micro:bit hemen hareket eder, diğerleri ise yılan kendilerine ulaşana dek bekler.',
             'İki evre arasındaki zaman, yılanın hızını belirler.',
-        ], 'materials' => [
+        ],
+        'materials' => [
             'micro:bit’ler (mümkünse her öğrenci için)',
             'makecode.microbit.org editörü için dizüstü veya masaüstü bilgisayar',
         ],
@@ -1355,5 +1471,80 @@ return [
             'Test edin!',
         ],
     ],
-
+    'careers-as-constellations' => [
+        'title' => 'Takımyıldızlar olarak kariyer',
+        'authorcontent' => 'Bu meydan okuma ve yarışma, yazar, illüstratör ve girişimci Linda Liukas\'ın Code4Europe ortaklığının Youtube\'da canlı yayınlanan 2025 #Webinar 1\'deki Kızlar Kampanyası ile bağlantılı olarak girişimidir: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">Kod, Yaratıcılık ve Merak Bir Kariyeri Nasıl Oluşturur?</a>',
+        'author' => 'Linda Liukas',
+        'start-date' => 'Başlangıç tarihi',
+        'activity-type' => 'Etkinlik türü',
+        'open-online-activity' => 'Açık çevrimiçi etkinlik',
+        'name-of-org' => 'Kuruluşun adı',
+        'language' => 'Dil',
+        'description' => 'Bu etkileşimli etkinlik, öğrencilerin kişisel ilgi alanlarını ve hobilerini teknolojideki potansiyel kariyerlerle eşleştirmelerine yardımcı olur. Öğrenciler, becerilerini ve tutkularını takımyıldızlar olarak görselleştirerek, görünüşte ilgisiz noktaları birleştirerek kariyerlerin nasıl oluştuğunu keşfederler. Önceden kodlama deneyimi gerekmez ve etkinlik, teknolojide işin geleceği hakkında yaratıcı düşünmeyi teşvik eder.',
+        'teachers' => 'Öğretmen',
+        'english' => 'İngilizce',
+        'type-of-org' => 'Organizasyon türü',
+        'private-business' => 'Özel kuruluş',
+        'secondary-school' => 'Lise',
+        'higher-education' => 'Yükseköğretim',
+        'audience' => 'Seyirci',
+        'theme' => 'Ana Temalar',
+        'themes' => [
+            'motivation-and-awareness-raising' => 'Motivasyon ve farkındalık yaratma',
+            'promoting-diversity' => 'Çeşitliliği teşvik etmek',
+        ],
+        'age-group' => 'Yaş grubu',
+        'age-groups' => [
+            '12' => '12+ (ortaokul, lise ve hatta üniversite öğrencileri için uyarlanabilir)',
+            'under-6' => '6 yaş altı',
+            '7-8' => '7-8',
+            '9-11' => '9-11',
+            '12-14' => '12-14',
+            '15-18' => '15-18',
+            'over-18' => '18 yaş üstü',
+        ],
+        'subjects' => 'Konular',
+        'time-required' => 'Gereken süre',
+        '45–60' => '45–60 dakika',
+        'group-size' => 'Grup büyüklüğü',
+        'group-sizes' => [
+            'small' => 'Tek tek veya küçük gruplar halinde yapılabilir',
+        ],
+        'required-materials' => 'Gerekli malzemeler',
+        'step-by-step-instructions' => 'Adım adım talimatlar',
+        'materials' => [
+            'one' => 'Takımyıldızlar Olarak Kariyer çalışma sayfası (A3 önerilir)',
+            'two' => 'Ek notlar için kağıt <span class="font-sans">&</span> keçeli kalemler/kalemler',
+            'three' => 'İsteğe bağlı: Dijital sürüm (öğrenciler Miro, Canva veya Google Jamboard\'u kullanarak takımyıldızlar oluşturabilir)',
+        ],
+        'titles' =>  [
+            'one' => 'Isınma Tartışması: Noktalarınız Neler? (5 dk)',
+            'two' => 'Takımyıldızları Haritalama: İlgi Alanlarını Teknolojiye Bağlama (20 dk)',
+            'three' => 'Örnek Bağlantılar',
+            'four' => ' Yansıtma <span class="font-sans">&</span> Paylaşma: Hangi Kalıpları Buldunuz? (15 dk)',
+            'five' => 'Aktivitenin Genişletilmesi',
+        ],
+        'intro' => '<p>Geleneksel kariyer fikirlerine bir soruyla meydan okuyarak başlayın:</p>
+            <p class="my-8 italic">Kariyerlerin düz bir yol izlemesi gerektiğini düşünüyor musunuz?</p>
+            <p> Başarılı kariyerlerin genellikle beklenmedik bağlantılardan inşa edildiği fikrini ortaya atın.</p><p>Linda Liukas\'ın teknoloji alanında kendi kariyer yolunu paylaştığı konuşmasını birlikte izleyin</p>',
+        'content' => [
+            'one' => '<p>Her öğrenci Takımyıldızlar Olarak Kariyer çalışma sayfasını doldurur ve şunları ekler:</p>',
+            'two' => 'Kişisel ilgi alanları (hobiler, beceriler, favori aktiviteler)',
+            'three' => 'Teknolojiyle ilgili konular (yapay zeka, robotik, oyun tasarımı, dijital sanat, sürdürülebilirlik teknolojisi vb.)',
+            'four' => '<strong>Çizgiler çizmek</strong> — ilgi alanları ve teknoloji arasındaki bağlantıları göstermek için',
+            'five' => 'Müziği seviyor mu? → Yapay zekayla ilgileniyor mu? → Yapay zeka tarafından oluşturulan müzik araçları!',
+            'six' => 'Çizim yapmayı seviyor mu? → Oyun tasarımıyla ilgileniyor mu? → 2D/3D animasyon <span class="font-sans">&</span> kodlama',
+            'seven' => 'İklim değişikliği konusunda tutkulu mu? → Verilerle ilgileniyor mu? → Çevre teknolojisi',
+            'eight' => 'Öğrencileri, keşfettikleri şaşırtıcı bağlantıları paylaşmaya davet edin.',
+            'nine' => 'Sorun: İlk başta hangi noktalar ilgisiz geldi? Nasıl bağlantı kurdular?',
+            'ten' => '<p>Tartışma İstemleri:</p>',
+            'eleven' => 'Takımyıldızınızla ilgili sizi şaşırtan ne oldu?',
+            'twelve' => 'Daha önce düşünmediğiniz herhangi bir kariyer yolu keşfettiniz mi?',
+            'thirteen' => 'Teknoloji geleceğinizi beklenmedik şekillerde nasıl şekillendirebilir?',
+            'fourteen' => 'Dijital Meydan Okuma: Öğrencilerin Miro, Canva veya Google Jamboard kullanarak takımyıldızlarının dijital bir versiyonunu oluşturmalarını ve bulgularını sunmalarını sağlayın.',
+            'fifteen' => 'Araştırma Görevi: Öğrenciler, kariyeri şaşırtıcı bir yol izleyen teknoloji alanındaki bir kişiyi araştırır, takımyıldızlarının haritasını çıkarır ve hikayelerini paylaşır.',
+            '16' => 'Etkinlik için <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">Şablonu indirin</a>',
+            '17' => 'OBS! AKTİVİTENİZİ EKLEMEYİ VE BURAYA YÜKLEMEYİ <a href="/add">UNUTMAYIN</a>!',
+        ],
+    ],
 ];

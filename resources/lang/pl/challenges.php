@@ -4,6 +4,7 @@ return [
     'title' => 'WYZWANIA EUROPEJSKIEGO TYGODNIA KODOWANIA',
     'date' => '9–24 października 2021',
     'common' => [
+        'educational-goals' => 'Cele edukacyjne',
         'target-audience' => 'Grupa docelowa',
         'pre-primary' => 'Dzieci w wieku przedszkolnym',
         'experience' => 'Poziom zaawansowania',

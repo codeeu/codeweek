@@ -1,535 +1,643 @@
 <?php
 
 return [
-'create-your-own-website-with-html-and-css' => [
-    'title' => 'Vytvorte si vlastnú webovú stránku pomocou HTML a CSS',
-    'author' => 'Marko Šolić',
+    'create-your-own-website-with-html-and-css' => [
+        'title' => 'Vytvorte si vlastnú webovú stránku pomocou HTML a CSS',
+        'author' => 'Marko Šolić',
 
-    'purposes_title' => 'Cieľ výzvy',
-    'purposes' => [
-        'Cieľom tejto výzvy je uviesť začiatočníkov do sveta vývoja webu.',
-        'Dokončením projektu sa účastníci naučia základy HTML a CSS, ktoré sú kľúčové na tvorbu a štýlovanie webových stránok.',
-        'Výzva kladie dôraz na praktické učenie – pomôže ti postaviť vlastnú webstránku od nuly.',
-        'Získaš dôležité zručnosti webového dizajnu a väčšiu istotu pri budovaní vlastnej online prítomnosti.'
+        'purposes_title' => 'Cieľ výzvy',
+        'purposes' => [
+            'Cieľom tejto výzvy je uviesť začiatočníkov do sveta vývoja webu.',
+            'Dokončením projektu sa účastníci naučia základy HTML a CSS, ktoré sú kľúčové na tvorbu a štýlovanie webových stránok.',
+            'Výzva kladie dôraz na praktické učenie – pomôže ti postaviť vlastnú webstránku od nuly.',
+            'Získaš dôležité zručnosti webového dizajnu a väčšiu istotu pri budovaní vlastnej online prítomnosti.'
+        ],
+
+        'description_title' => 'Popis výzvy',
+        'description' => [
+            'Webové stránky sú základom online prítomnosti. V tejto lekcii sa naučíš používať HTML na štruktúrovanie obsahu a CSS na štýlovanie a vytvorenie svojej prvej webstránky.',
+            'Zábavnými krokmi vytvoríš stránku, ktorá môže obsahovať text, obrázky, farby a odkazy.'
+        ],
+
+        'target_audience_title' => 'Cieľová skupina',
+        'target_audience' => [
+            'Výzva je určená začiatočníkom, ktorí sa chcú naučiť tvoriť webové stránky.',
+            'Je ideálna pre nových záujemcov o vývoj webu, študentov a každého, koho zaujíma, ako sa weby vytvárajú.',
+            'Nie je potrebná žiadna predchádzajúca skúsenosť s programovaním.'
+        ],
+
+        'experience_title' => 'Skúsenosti',
+        'experience' => [
+            'Ide o výzvu pre začiatočníkov. Základné počítačové zručnosti (napr. práca v textovom editore) môžu pomôcť, no nie sú nevyhnutné.',
+            'Výzva je navrhnutá ako úvod do HTML a CSS.'
+        ],
+
+        'duration_title' => 'Trvanie',
+        'duration' => 'Výzva trvá približne 1–2 hodiny, podľa tvojej úrovne skúseností a toho, koľko budeš skúmať nad rámec základov.',
+
+        'materials_title' => 'Odporúčané nástroje:',
+        'materials' => [
+            'PC / notebook',
+            'Bežný textový editor, napríklad Notepad (Windows) alebo TextEdit (Mac)'
+        ],
+
+        'instructions_title' => 'Pokyny',
+        'instructions' => [
+            'Tipy pre učiteľov pred začiatkom:',
+            'Ak s vývojom webu len začínaš, žiadne obavy! Tu je pár tipov, ktoré ti pomôžu viesť študentov procesom:',
+            'Začni základmi: vysvetli kľúčové koncepty HTML (štruktúra webovej stránky) a CSS (štýlovanie prvkov).',
+            'Buď trpezlivý a dopraj študentom čas pochopiť účel každého tagu a vlastnosti.',
+            'Vysvetli štruktúru: pri predstavovaní HTML tagov názorne ukáž, ako je dokument poskladaný.',
+            'Ukáž vzťah medzi otváracími a zatváracími tagmi, atribútmi a zagnieďovaním (nesting).',
+            'Vyhni sa bežným chybám: začiatočníci často zabúdajú správne zatvárať tagy alebo si popletú zložené zátvorky {} v CSS.',
+            'Pripomínaj pravidelnú kontrolu chýb v syntaxi.',
+            'Interaktívne učenie: povzbudzuj k experimentom so zmenou textu a štýlov.',
+            'Ukáž, ako sa malé zmeny v HTML alebo CSS okamžite prejavia po obnovení stránky v prehliadači.',
+            'Buď otvorený kreativite: neexistuje jediný „správny“ spôsob dizajnu webu.',
+            'Povzbudzuj k skúšaniu rôznych písiem, farieb a rozložení.',
+            'Bežné chyby, na ktoré si daj pozor:',
+            'Zabudnutie prepojiť CSS súbor s HTML súborom.',
+            'Nesprávne zagnieďovanie tagov v HTML.',
+            'Preklepy vo vlastnostiach CSS (napr. použitie „colour“ namiesto „color“ v niektorých prípadoch).',
+            'Príliš komplikovaná štruktúra — jednoduché weby môžu vyzerať profesionálne aj s pár riadkami kódu!',
+
+            'Krok 1: Príprava prostredia',
+            'Na vytvorenie webu nepotrebuješ špeciálne nástroje – stačí obyčajný textový editor, napr. Notepad (Windows) alebo TextEdit (Mac).',
+            'Celú webstránku možno vytvoriť v jednoduchom textovom editore; na internete nájdeš aj weby vytvorené práve takto.',
+            'Ak chceš vidieť príklad takejto stránky, pozri si web Chorvátskeho informatického zväzu: hsin.hr',
+
+            'Krok 2: Základná štruktúra HTML dokumentu',
+            'Otvori nový dokument v editore a ulož ho ako index.html',
+            'Podľa verzie Windows alebo macOS budeš možno najprv musieť zapnúť možnosť meniť prípony súborov, pretože z index.txt sa má stať index.html',
+            'V editore (napr. Notepad) zadaj základnú štruktúru HTML dokumentu:',
+            '<!DOCTYPE html>',
+            '<html lang="en">',
+            '<head>',
+            '<target charset="UTF-8">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '<title>My first website</title>',
+            '</head>',
+            '<body>',
+            '<h1>Welcome to my website!</h1>',
+            '<p>This is my first website I created using HTML and CSS.</p>',
+            '</body>',
+            '</html>',
+            'Takto by mala vyzerať tvoja webová stránka bez CSS (v chorvátčine; tvoj príklad je, samozrejme, v slovenčine):',
+
+            'Krok 3: Pridanie štýlov pomocou CSS',
+            'CSS sa používa na štýlovanie prvkov na stránke. Začneme základmi – farba pozadia, farba textu a veľkosť písma.',
+            'V tom istom priečinku vytvor nový textový súbor a pomenuj ho style.css.',
+            'Do súboru style.css napíš:',
+            'body {',
+            'background-colour: #f0f8ff; /* Light blue background */',
+            'colour: #333; /* Dark Gray Text */',
+            'font-family: Arial, sans-serif; /* Font for text */',
+            'text-align: centre; /* Align text to centre */',
+            '}',
+            'h1 {',
+            'colour: #4CAF50; /* Green title */',
+            '}',
+            'p {',
+            'font-size: 18px; /* Paragraph font size */',
+            'colour: #555; /* Gray-blue text for paragraph */',
+            '}',
+
+            'Krok 4: Prepojenie HTML s CSS',
+            'Keď vytvoríš CSS súbor, musíš ho prepojiť s HTML súborom.',
+            'Urobíš to v sekcii <head> dokumentu HTML pridaním nasledujúceho riadku kódu:',
+            '<link rel="stylesheet" href="style.css">',
+            'Tým dokument HTML „vie“, že má použiť štýly zo súboru CSS.',
+
+            'Krok 5: Spustenie stránky',
+            'Ulož oba súbory: index.html a style.css.',
+            'Dvojklikom otvor index.html v internetovom prehliadači.',
+            'Uvidíš stránku s textom v strede a základnými štýlmi, ktoré si pridal(a).',
+            'Takto by mala tvoja stránka vyzerať teraz:',
+
+            'Podpora rozmanitosti v STEM:',
+            'Tvorba webu je pre každého! Či si žiak, dospelý hľadajúci novú kariéru, alebo niekto z nedostatočne zastúpených skupín — táto výzva ťa pozýva preskúmať vzrušujúci svet tvorby webu.',
+            'Oblasti STEM (veda, technológie, inžinierstvo a matematika) historicky trpia nedostatkom rozmanitosti; je dôležité povzbudzovať všetkých — bez ohľadu na pohlavie, pôvod či zázemie — aby objavovali programovanie a technológie.',
+            'Každý má jedinečné pohľady a skúsenosti, ktoré robia svet webového vývoja kreatívnejším a inkluzívnejším.',
+            'Pri práci na svojej stránke premýšľaj, ako môžeš prispieť k tomu, aby bol digitálny svet miestom, kde sa každý cíti reprezentovaný a vítaný.',
+            'Nemusíš byť technický expert — jednoducho začni a krok za krokom na tom stavaj!',
+
+            'Zosúlaď svoju stránku s prístupnosťou:',
+            'Pri tvorbe webu je dôležité, aby bola stránka dostupná čo najširšiemu okruhu ľudí, vrátane ľudí so znevýhodnením.',
+            'Tu je niekoľko tipov na prístupnejšie stránky:',
+            'Kontrast: Zabezpeč dobrý kontrast medzi pozadím a farbou textu, aby sa ľahšie čítalo aj ľuďom so slabším zrakom.',
+            'Napríklad svetlé pozadie s tmavým textom funguje najlepšie.',
+            'Alt text pre obrázky: Ak neskôr pridáš obrázky, pridaj aj alternatívny text (alt), ktorý popíše, čo na nich je.',
+            'Je to obzvlášť užitočné pre používateľov čítačiek obrazovky.',
+            'Sémantické HTML: Používaj správne HTML tagy pre lepšiu štruktúru a prístupnosť.',
+            'Napríklad <h1> pre hlavný názov a <p> pre odseky – čítačkám to uľahčí pochopiť obsah.',
+            'Zameraj sa na čitateľnosť: Používaj jednoduché bezpätkové písmo, napríklad Arial.',
+            'Môžeš tiež zväčšiť veľkosť písma pre lepšiu čitateľnosť.',
+        ],
+
+        'mini_simulation_title' => 'Mini-simulácia:',
+        'mini_simulation' => [
+            'Otestuj svoje vedomosti',
+            '1. Čo je HTML?',
+            'Programovací jazyk na tvorbu obrázkov',
+            'Jazyk na štruktúrovanie obsahu na webovej stránke',
+            'Editor obrázkov',
+            '2. Čo je CSS?',
+            'Jazyk na tvorbu online databáz',
+            'Jazyk na štýlovanie a rozloženie webových stránok',
+            'Program na správu súborov v počítači',
+            '3. Ako prepojíme CSS s HTML?',
+            'Pomocou tagu <link> v HTML dokumente',
+            'Pomocou prvkov <style> priamo v HTML',
+            'Nedá sa prepojiť',
+            'Správne odpovede: 1.b, 2.b, 3.a',
+            'Uprav svoju stránku:',
+            'Skús zmeniť farbu pozadia.',
+            'Pridaj ďalší nadpis (h2) s textom pod hlavným titulom.',
+            'Pridaj odkaz na inú stránku, napr. Google.',
+            'Po každej zmene – obnov stránku!',
+        ],
+
+        'additional_resources_title' => 'Ďalšie zdroje:',
+        'additional_resources' => [
+            'https://developer.mozilla.org/en-US/docs/Web/HTML',
+            'https://developer.mozilla.org/en-US/docs/Web/CSS',
+        ]
     ],
-
-    'description_title' => 'Popis výzvy',
-    'description' => [
-        'Webové stránky sú základom online prítomnosti. V tejto lekcii sa naučíš používať HTML na štruktúrovanie obsahu a CSS na štýlovanie a vytvorenie svojej prvej webstránky.',
-        'Zábavnými krokmi vytvoríš stránku, ktorá môže obsahovať text, obrázky, farby a odkazy.'
-    ],
-
-    'target_audience_title' => 'Cieľová skupina',
-    'target_audience' => [
-        'Výzva je určená začiatočníkom, ktorí sa chcú naučiť tvoriť webové stránky.',
-        'Je ideálna pre nových záujemcov o vývoj webu, študentov a každého, koho zaujíma, ako sa weby vytvárajú.',
-        'Nie je potrebná žiadna predchádzajúca skúsenosť s programovaním.'
-    ],
-
-    'experience_title' => 'Skúsenosti',
-    'experience' => [
-        'Ide o výzvu pre začiatočníkov. Základné počítačové zručnosti (napr. práca v textovom editore) môžu pomôcť, no nie sú nevyhnutné.',
-        'Výzva je navrhnutá ako úvod do HTML a CSS.'
-    ],
-
-    'duration_title' => 'Trvanie',
-    'duration' => 'Výzva trvá približne 1–2 hodiny, podľa tvojej úrovne skúseností a toho, koľko budeš skúmať nad rámec základov.',
-
-    'materials_title' => 'Odporúčané nástroje:',
-    'materials' => [
-        'PC / notebook',
-        'Bežný textový editor, napríklad Notepad (Windows) alebo TextEdit (Mac)'
-    ],
-
-    'instructions_title' => 'Pokyny',
-    'instructions' => [
-        'Tipy pre učiteľov pred začiatkom:',
-        'Ak s vývojom webu len začínaš, žiadne obavy! Tu je pár tipov, ktoré ti pomôžu viesť študentov procesom:',
-        'Začni základmi: vysvetli kľúčové koncepty HTML (štruktúra webovej stránky) a CSS (štýlovanie prvkov).',
-        'Buď trpezlivý a dopraj študentom čas pochopiť účel každého tagu a vlastnosti.',
-        'Vysvetli štruktúru: pri predstavovaní HTML tagov názorne ukáž, ako je dokument poskladaný.',
-        'Ukáž vzťah medzi otváracími a zatváracími tagmi, atribútmi a zagnieďovaním (nesting).',
-        'Vyhni sa bežným chybám: začiatočníci často zabúdajú správne zatvárať tagy alebo si popletú zložené zátvorky {} v CSS.',
-        'Pripomínaj pravidelnú kontrolu chýb v syntaxi.',
-        'Interaktívne učenie: povzbudzuj k experimentom so zmenou textu a štýlov.',
-        'Ukáž, ako sa malé zmeny v HTML alebo CSS okamžite prejavia po obnovení stránky v prehliadači.',
-        'Buď otvorený kreativite: neexistuje jediný „správny“ spôsob dizajnu webu.',
-        'Povzbudzuj k skúšaniu rôznych písiem, farieb a rozložení.',
-        'Bežné chyby, na ktoré si daj pozor:',
-        'Zabudnutie prepojiť CSS súbor s HTML súborom.',
-        'Nesprávne zagnieďovanie tagov v HTML.',
-        'Preklepy vo vlastnostiach CSS (napr. použitie „colour“ namiesto „color“ v niektorých prípadoch).',
-        'Príliš komplikovaná štruktúra — jednoduché weby môžu vyzerať profesionálne aj s pár riadkami kódu!',
-
-        'Krok 1: Príprava prostredia',
-        'Na vytvorenie webu nepotrebuješ špeciálne nástroje – stačí obyčajný textový editor, napr. Notepad (Windows) alebo TextEdit (Mac).',
-        'Celú webstránku možno vytvoriť v jednoduchom textovom editore; na internete nájdeš aj weby vytvorené práve takto.',
-        'Ak chceš vidieť príklad takejto stránky, pozri si web Chorvátskeho informatického zväzu: hsin.hr',
-
-        'Krok 2: Základná štruktúra HTML dokumentu',
-        'Otvori nový dokument v editore a ulož ho ako index.html',
-        'Podľa verzie Windows alebo macOS budeš možno najprv musieť zapnúť možnosť meniť prípony súborov, pretože z index.txt sa má stať index.html',
-        'V editore (napr. Notepad) zadaj základnú štruktúru HTML dokumentu:',
-        '<!DOCTYPE html>',
-        '<html lang="en">',
-        '<head>',
-        '<target charset="UTF-8">',
-        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-        '<title>My first website</title>',
-        '</head>',
-        '<body>',
-        '<h1>Welcome to my website!</h1>',
-        '<p>This is my first website I created using HTML and CSS.</p>',
-        '</body>',
-        '</html>',
-        'Takto by mala vyzerať tvoja webová stránka bez CSS (v chorvátčine; tvoj príklad je, samozrejme, v slovenčine):',
-
-        'Krok 3: Pridanie štýlov pomocou CSS',
-        'CSS sa používa na štýlovanie prvkov na stránke. Začneme základmi – farba pozadia, farba textu a veľkosť písma.',
-        'V tom istom priečinku vytvor nový textový súbor a pomenuj ho style.css.',
-        'Do súboru style.css napíš:',
-        'body {',
-        'background-colour: #f0f8ff; /* Light blue background */',
-        'colour: #333; /* Dark Gray Text */',
-        'font-family: Arial, sans-serif; /* Font for text */',
-        'text-align: centre; /* Align text to centre */',
-        '}',
-        'h1 {',
-        'colour: #4CAF50; /* Green title */',
-        '}',
-        'p {',
-        'font-size: 18px; /* Paragraph font size */',
-        'colour: #555; /* Gray-blue text for paragraph */',
-        '}',
-
-        'Krok 4: Prepojenie HTML s CSS',
-        'Keď vytvoríš CSS súbor, musíš ho prepojiť s HTML súborom.',
-        'Urobíš to v sekcii <head> dokumentu HTML pridaním nasledujúceho riadku kódu:',
-        '<link rel="stylesheet" href="style.css">',
-        'Tým dokument HTML „vie“, že má použiť štýly zo súboru CSS.',
-
-        'Krok 5: Spustenie stránky',
-        'Ulož oba súbory: index.html a style.css.',
-        'Dvojklikom otvor index.html v internetovom prehliadači.',
-        'Uvidíš stránku s textom v strede a základnými štýlmi, ktoré si pridal(a).',
-        'Takto by mala tvoja stránka vyzerať teraz:',
-
-        'Podpora rozmanitosti v STEM:',
-        'Tvorba webu je pre každého! Či si žiak, dospelý hľadajúci novú kariéru, alebo niekto z nedostatočne zastúpených skupín — táto výzva ťa pozýva preskúmať vzrušujúci svet tvorby webu.',
-        'Oblasti STEM (veda, technológie, inžinierstvo a matematika) historicky trpia nedostatkom rozmanitosti; je dôležité povzbudzovať všetkých — bez ohľadu na pohlavie, pôvod či zázemie — aby objavovali programovanie a technológie.',
-        'Každý má jedinečné pohľady a skúsenosti, ktoré robia svet webového vývoja kreatívnejším a inkluzívnejším.',
-        'Pri práci na svojej stránke premýšľaj, ako môžeš prispieť k tomu, aby bol digitálny svet miestom, kde sa každý cíti reprezentovaný a vítaný.',
-        'Nemusíš byť technický expert — jednoducho začni a krok za krokom na tom stavaj!',
-
-        'Zosúlaď svoju stránku s prístupnosťou:',
-        'Pri tvorbe webu je dôležité, aby bola stránka dostupná čo najširšiemu okruhu ľudí, vrátane ľudí so znevýhodnením.',
-        'Tu je niekoľko tipov na prístupnejšie stránky:',
-        'Kontrast: Zabezpeč dobrý kontrast medzi pozadím a farbou textu, aby sa ľahšie čítalo aj ľuďom so slabším zrakom.',
-        'Napríklad svetlé pozadie s tmavým textom funguje najlepšie.',
-        'Alt text pre obrázky: Ak neskôr pridáš obrázky, pridaj aj alternatívny text (alt), ktorý popíše, čo na nich je.',
-        'Je to obzvlášť užitočné pre používateľov čítačiek obrazovky.',
-        'Sémantické HTML: Používaj správne HTML tagy pre lepšiu štruktúru a prístupnosť.',
-        'Napríklad <h1> pre hlavný názov a <p> pre odseky – čítačkám to uľahčí pochopiť obsah.',
-        'Zameraj sa na čitateľnosť: Používaj jednoduché bezpätkové písmo, napríklad Arial.',
-        'Môžeš tiež zväčšiť veľkosť písma pre lepšiu čitateľnosť.',
-    ],
-
-    'mini_simulation_title' => 'Mini-simulácia:',
-    'mini_simulation' => [
-        'Otestuj svoje vedomosti',
-        '1. Čo je HTML?',
-        'Programovací jazyk na tvorbu obrázkov',
-        'Jazyk na štruktúrovanie obsahu na webovej stránke',
-        'Editor obrázkov',
-        '2. Čo je CSS?',
-        'Jazyk na tvorbu online databáz',
-        'Jazyk na štýlovanie a rozloženie webových stránok',
-        'Program na správu súborov v počítači',
-        '3. Ako prepojíme CSS s HTML?',
-        'Pomocou tagu <link> v HTML dokumente',
-        'Pomocou prvkov <style> priamo v HTML',
-        'Nedá sa prepojiť',
-        'Správne odpovede: 1.b, 2.b, 3.a',
-        'Uprav svoju stránku:',
-        'Skús zmeniť farbu pozadia.',
-        'Pridaj ďalší nadpis (h2) s textom pod hlavným titulom.',
-        'Pridaj odkaz na inú stránku, napr. Google.',
-        'Po každej zmene – obnov stránku!',
-    ],
-
-    'additional_resources_title' => 'Ďalšie zdroje:',
-    'additional_resources' => [
-        'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    ]
-],
 
     'train-it-like-fei-fei-li' => [
-    'title' => 'Trénujte to ako Fei-Fei Li – Dávať videnie počítačom!',
-    'author' => 'Chouliara Theodora',
-    'purposes_title' => 'Účel výzvy',
-    'purposes' => [
-        'Naučiť sa základy strojového učenia a rozpoznávania obrázkov.',
-        'Naučiť počítač rozlišovať medzi rôznymi obrázkami (napr. pes vs. mačka, bábiky vs. plyšové medvedíky).',
-        'Preskúmať, ako sa AI a strojové učenie používajú v reálnom živote.',
-        'Inšpirovať sa príspevkami Fei-Fei Li k umelej inteligencii a rozpoznávaniu obrázkov.',
-        'Povzbudzovať dievčatá, aby sa zapojili do programovania a kariéry v oblasti STEM.'
+        'title' => 'Trénujte to ako Fei-Fei Li – Dávať videnie počítačom!',
+        'author' => 'Uverejnil používateľ Chouliara Theodora',
+        'purposes_title' => 'Účel výzvy',
+        'purposes' => [
+            'Naučiť sa základy strojového učenia a rozpoznávania obrázkov.',
+            'Naučiť počítač rozlišovať medzi rôznymi obrázkami (napr. pes vs. mačka, bábiky vs. plyšové medvedíky).',
+            'Preskúmať, ako sa AI a strojové učenie používajú v reálnom živote.',
+            'Inšpirovať sa príspevkami Fei-Fei Li k umelej inteligencii a rozpoznávaniu obrázkov.',
+            'Povzbudzovať dievčatá, aby sa zapojili do programovania a kariéry v oblasti STEM.'
+        ],
+        'description_title' => 'Opis výzvy',
+        'description' => 'Trénujte model AI, ako je Fei-Fei Li! Pomocou Teachable Machine naučte počítač rozpoznávať obrázky a skúmať silu strojového učenia a zároveň búrať rodové stereotypy v technológiách.',
+        'target_audience_title' => 'Cieľová skupina',
+        'target_audience' => 'Žiaci základných škôl (6 až 12 rokov)',
+        'experience_title' => 'Skúsenosti',
+        'experience' => 'Začiatočník - Nevyžadujú sa žiadne predchádzajúce skúsenosti s kódovaním; vhodné pre úplných začiatočníkov.',
+        'duration_title' => 'Trvanie',
+        'duration' => '60 minút',
+        'materials_title' => 'Odporúčaný nástroj',
+        'materials' => [
+            'Naučiteľný stroj (prístupný cez webový prehliadač)',
+            'Počítač alebo tablet s fotoaparátom',
+            'Internetové pripojenie (na trénovanie modelu AI)',
+            'Hračky a predmety v triede (napr. bábiky, plyšové medvedíky) na trénovanie modelu AI',
+            'Projektor alebo plátno (voliteľné, na ukážky v triede))'
+        ],
+        'instructions_title' => 'Pokyny',
+        'instructions' => [
+            'Krok 1: Úvod do strojového učenia a Fei-Fei Li',
+            'Vysvetlite strojové učenie:',
+            'Počítače sa môžu naučiť rozpoznávať obrázky rovnako ako ľudia. Strojové učenie pomáha počítače "vidia" objekty analýzou príkladov.',
+            'Predstavte Fei-Fei Li:',
+            'Fei-Fei Li je popredným vedcom v oblasti umelej inteligencie a počítačového videnia. Vyvinula ImageNet, obrovský súbor údajov, ktorý naučil počítače rozpoznávať obrázky. Rovnako ako Fei-Fei Li pomohol počítače vidia, chlapci a dievčatá môžu naučiť počítač rozpoznávať aj predmety!',
+            'Krok 2: Nastavte Teachable Machine',
+            'Prejsť na Teachable Machine (https://teachablemachine.withgoogle.com/train)',
+            'Zvoľte "Image Project" a naučte počítač rozpoznávať obrázky.',
+            'Kliknite na "Štandardný model obrázka".',
+            'Krok 3: Vyberte kategórie pre školenie',
+            'Rozhodnite sa, ktoré kategórie má počítač rozpoznať. Môžete vytvoriť kategórie založené na objektoch v triede (napr. kocky, plyšové medvedíky, bábiky atď.).',
+            'Príklady kategórií: Bábiky a plyšové medvedíky',
+            'Krok 4: Zhromaždenie tréningových obrázkov',
+            'Vytvorte dve kategórie: Bábiky a Plyšové medvedíky.',
+            'Možnosť 1: Použitie skutočných objektov',
+            'Ukážte bábiku pred fotoaparátom a odfoťte ju do kategórie "Bábiky".',
+            'To isté urobte pre plyšového medvedíka pre kategóriu "Plyšové medvedíky".',
+            'Možnosť 2: Vyhľadanie obrázkov online',
+            'Vyhľadajte obrázky bábik a plyšových medvedíkov na Googli.',
+            'Obrázky uložte do dvoch samostatných priečinkov ("Bábiky" a "Plyšové medvedíky").',
+            'Nahrajte obrázky z každého priečinka do Teachable Machine na školenie.',
+            'Krok 5: Trénovanie modelu AI',
+            'Po nasnímaní dostatočného množstva obrázkov kliknite na "Trénovať model".',
+            'Počkajte, kým sa model poučí z obrázkov.',
+            'Krok 6: Otestujte model',
+            'Po natrénovaní modelu kliknite na "Testovať model", aby ste zistili, ako dobre rozpoznáva nové Obrázky. Otestujte AI tak, že počítaču ukážete nové objekty, ktoré neboli súčasťou tréningové obrázky (napr. zobrazujú hračku, ktorá nebola použitá na tréning). Pozrite sa, ako dobre model ho rozpozná a správne kategorizuje.',
+            'Krok 7: Vyhodnoťte model',
+            'Diskutujte so študentmi:',
+            'Rozpoznal model objekty správne?',
+            'Vyskytli sa nejaké chyby? Čo by sa dalo zlepšiť?',
+            'Čo sa stane, ak to natrénujete s viacerými obrázkami?',
+            'Krok 8: Uložte a zdieľajte model',
+            'Keď ste spokojní s presnosťou modelu, kliknite na "Exportovať model" a uložte svoj projekt. Model môžete zdieľať s inými triedami alebo na stroji Teachable Machine kliknutím na "Zdieľať".',
+            'Model, ktorý sme vyrobili vyššie, nájdete tu: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+        ],
+        'examples_title' => 'Príklady',
+        'examples' => [
+            'AI v maloobchode a nákupe:',
+            'Niektoré obchody používajú kamery poháňané umelou inteligenciou na rozpoznávanie produktov a sledovanie zásob.',
+            'Podobná technológia pomáha samoobslužným pokladniam rozpoznať položky bez čiarových kódov.',
+            'Umelá inteligencia a asistenčné technológie',
+            'Umelá inteligencia dokáže identifikovať objekty a pomôcť zrakovo postihnutým osobám orientovať sa vo svete.',
+            'Inteligentné kamery dokážu opísať, čo "vidia", aby pomohli používateľom v reálnom čase.'
+        ],
     ],
-    'description_title' => 'Opis výzvy',
-    'description' => [
-        'Trénujte model AI, ako je Fei-Fei Li! Pomocou Teachable Machine naučte počítač rozpoznávať obrázky a skúmajte silu strojového učenia a zároveň búrajte rodové stereotypy v technológiách.'
-    ],
-    'target_audience_title' => 'Cieľová skupina',
-    'target-audience' => [
-        'Žiaci základných škôl (6 až 12 rokov)'
-    ],
-    'experience' => 'Začiatočník – Nevyžadujú sa žiadne predchádzajúce skúsenosti s kódovaním; vhodné pre úplných začiatočníkov.',
-    'duration' => '60 minút',
-    'materials_title' => 'Odporúčaný nástroj',
-    'materials' => [
-        'Teachable Machine (prístupný cez webový prehliadač)',
-        'Počítač alebo tablet s fotoaparátom',
-        'Internetové pripojenie (na trénovanie modelu AI)',
-        'Hračky a predmety v triede (napr. bábiky, plyšové medvedíky) na trénovanie modelu AI',
-        'Projektor alebo plátno (voliteľné, na ukážky v triede)'
-    ],
-    'instructions_title' => 'Pokyny',
-    'instructions' => [
-        'Krok 1: Úvod do strojového učenia a Fei-Fei Li – vysvetlite, ako počítače môžu rozpoznávať obrázky a predstavte Fei-Fei Li a jej prácu na ImageNet.',
-        'Krok 2: Nastavte Teachable Machine – prejdite na https://teachablemachine.withgoogle.com/train, zvoľte „Image Project“ a „Štandardný model obrázka“.',
-        'Krok 3: Vyberte kategórie pre školenie – napríklad Bábiky a Plyšové medvedíky.',
-        'Krok 4: Zhromaždenie tréningových obrázkov – použite reálne objekty alebo online obrázky a nahrajte ich do Teachable Machine.',
-        'Krok 5: Trénovanie modelu AI – kliknite na „Trénovať model“ a počkajte, kým sa model naučí.',
-        'Krok 6: Otestujte model – vyskúšajte rozpoznávanie nových objektov, ktoré neboli súčasťou tréningu.',
-        'Krok 7: Vyhodnoťte model – diskutujte o správnosti, chybách a možnostiach zlepšenia.',
-        'Krok 8: Uložte a zdieľajte model – kliknite na „Exportovať model“ alebo „Zdieľať“.'
-    ],
-    'real-life-applications_title' => 'Príklady',
-    'real-life-applications' => [
-        'AI v maloobchode a nákupe: obchody používajú AI kamery na rozpoznávanie produktov a sledovanie zásob, samoobslužné pokladne rozpoznávajú položky bez čiarových kódov.',
-        'Umelá inteligencia a asistenčné technológie: AI môže pomôcť zrakovo postihnutým osobám orientovať sa vo svete a inteligentné kamery opisujú, čo „vidia“ v reálnom čase.'
-    ],
-],
 
     'simulate-dice-in-python' => [
-    'title' => 'Simulácia hodu kockou v Pythone',
-    'author' => 'Marko Šolić',
-    'purposes_title' => 'Účel výzvy',
-    'purposes' => [
-        'Účelom tejto výzvy je zoznámiť študentov s generovaním náhodných čísel a cyklami v Pythone.',
-        'Simulovaním hodu kockou sa študenti naučia, ako počítače generujú náhodné výsledky a ako opakovať akcie niekoľkokrát pomocou cyklu.',
-        'Toto cvičenie tiež pripravuje základy na vytváranie jednoduchých hier a simulácií.'
+        'title' => 'Simulácia hodu kockou v Pythone',
+        'author' => 'Marko Šolić',
+        'purposes_title' => 'Účel výzvy',
+        'purposes' => [
+            'Účelom tejto výzvy je zoznámiť študentov s generovaním náhodných čísel a cyklami v Pythone.',
+            'Simulovaním hodu kockou sa študenti naučia, ako počítače generujú náhodné výsledky a ako opakovať akcie niekoľkokrát pomocou cyklu.',
+            'Toto cvičenie tiež pripravuje základy na vytváranie jednoduchých hier a simulácií.'
+        ],
+        'description_title' => 'Popis výzvy',
+        'description' => [
+            'Simulácia hodu kockou je skvelý spôsob, ako sa naučiť základnú prácu s náhodnými číslami v Pythone.',
+            'V tejto lekcii sa naučíme, ako použiť modul random na generovanie náhodných čísel a ako tento číslo využiť na simulovanie hodu kockou.',
+            'Prostredníctvom tejto úlohy pochopíte, ako Python môže generovať čísla v určitom rozsahu.'
+        ],
+        'target_audience_title' => 'Cieľová skupina',
+        'target_audience' => 'Študenti základných a stredných škôl, začiatočníci v Pythone, každý, kto sa učí o náhodných číslach, hrách alebo základnej programátorskej logike.',
+        'experience_title' => 'Skúsenosti',
+        'experience' => 'Nie sú potrebné predchádzajúce skúsenosti s programovaním. Základná znalosť písania a používania počítača je postačujúca.',
+        'duration_title' => 'Dĺžka trvania',
+        'durations' => [
+            '30 až 45 minút pre základnú verziu',
+            'Až 60 minút, ak sa skúmajú pokročilé možnosti (dve kocky, najčastejší hod, atď.)'
+        ],
+        'materials_title' => 'Odporúčaný nástroj:',
+        'materials' => [
+            'Na začiatok musíte mať nainštalovaný Python na svojom počítači. Ak ste tak ešte neurobili, stiahnite si Python z oficiálnej webovej stránky: https://www.python.org',
+            'Otvorte Python IDLE alebo akýkoľvek textový editor (napr. Visual Studio Code, PyCharm), aby ste napísali svoj kód.'
+        ],
+        'instructions_title' => 'Inštrukcie',
+        'instructions' => [
+            'Krok 1: Príprava prostredia',
+            'Na začiatok musíte mať nainštalovaný Python na vašom počítači.',
+            'Ak ste tak ešte neurobili, stiahnite Python z oficiálnej stránky.',
+            'Otvorte Python IDLE alebo akýkoľvek textový editor (napr. Visual Studio Code, PyCharm), aby ste napísali svoj kód.',
+            'Krok 2: Písanie programu',
+            'Otvorte Python IDLE a vytvorte nový súbor, ktorý sa bude volať dice.py.',
+            'Zadajte nasledujúci kód:',
+            '# Importujeme modul \'random\' na generovanie náhodných čísel',
+            'import random',
+            'Vytlačíme pozdrav pre používateľaprint("Vitajte v simulácii hodu kockou!")',
+            'Spýtame sa používateľa, koľkokrát chce hodiť kocku',
+            'throw_num = int(input("Koľkokrát chcete hodiť kocku? "))',
+            'for i in range(throw_num):',
+            'result = random.randint(1, 6) # Generujeme náhodné číslo medzi 1 a 6',
+            'print(f"Hod {i + 1}: {result}")',
+            'print("Ďakujeme za hranie!")',
+            'Vizualizácia kódu v Python IDLE',
+            'Uistite sa, že odsadenia vo vašom kóde sú rovnaké ako v príklade vyššie!',
+            'Krok 3: Vysvetlenie kódu',
+            'Importovanie modulu random: Modul random umožňuje generovanie náhodných čísel. Funkcia random.randint(a, b) vracia náhodné celé číslo v rozsahu od a do b, vrátane oboch krajov.',
+            'Zadanie počtu hodov: Program sa pýta používateľa, koľkokrát chce hodiť kocku. Zadané číslo konvertujeme na celé číslo pomocou int().',
+            'Simulácia hodu: Program používa cyklus for, aby vykonal simuláciu hodu toľkokrát, koľkokrát používateľ zadal. Pre každý hod sa generuje náhodné číslo medzi 1 a 6, ktoré reprezentuje výsledok hodu.',
+            'Vytlačenie výsledkov: Pre každý hod sa vytlačí výsledok (číslo, ktoré "padlo" na kocke). Na konci programu sa vytlačí správa s poďakovaním',
+            'Krok 4: Spustenie programu',
+            'Uložte súbor ako dice.py.',
+            'Spustite svoj program v Python IDLE.',
+            'Zadajte počet hodov, ktoré chcete vykonať (napr. 5).',
+            'Program vygeneruje náhodné čísla a vytlačí ich ako výsledok každého hodu.',
+        ],
+        'quiz_title' => 'Kvíz:',
+        'quiz' => [
+            'Ktorý modul v Pythone umožňuje generovať náhodné čísla?',
+            'random',
+            'Math',
+            'Time',
+            'Čo robí funkcia random.randint(1, 6)?',
+            'Generuje náhodné číslo medzi 1 a 6',
+            'Vytlačí náhodné číslo na obrazovku',
+            'Vytlačí číslo medzi 1 a 6',
+            'Ako konvertujete vstup od používateľa na celé číslo v Pythone?',
+            'float(s)',
+            'int()',
+            'p()',
+            'Správne odpovede: 1.a, 2.a, 3.b'
+        ],
+        'mini_simulation_title' => 'Mini simulácia:',
+        'mini_simulation' => [
+            'Upravte program:',
+            '• Pridajte možnosť simulovať dva hody kockou a sčítať ich výsledky.',
+            '• Pridajte možnosť, aby program na konci vytlačil počet hodov, ktoré najčastejšie padli na kocku.',
+        ],
+        'additional_resources_title' => 'Ďalšie zdroje:',
+        'additional_resources' => [
+            'Python official documentation - random module',
+            'Learn Python'
+        ]
     ],
-    'description_title' => 'Opis výzvy',
-    'description' => [
-        'Simulácia hodu kockou je skvelý spôsob, ako sa naučiť základnú prácu s náhodnými číslami v Pythone.',
-        'V tejto lekcii sa naučíme, ako použiť modul random na generovanie náhodných čísel a ako toto číslo využiť na simulovanie hodu kockou.',
-        'Prostredníctvom tejto úlohy pochopíte, ako Python môže generovať čísla v určitom rozsahu.'
-    ],
-    'target_audience_title' => 'Cieľová skupina',
-    'target_audience' => 'Študenti základných a stredných škôl, začiatočníci v Pythone, každý, kto sa učí o náhodných číslach, hrách alebo základnej programátorskej logike.',
-    'experience_title' => 'Skúsenosti',
-    'experience' => 'Nie sú potrebné predchádzajúce skúsenosti s programovaním. Základná znalosť písania a používania počítača je postačujúca.',
-    'duration_title' => 'Dĺžka trvania',
-    'duration' => '30 až 45 minút pre základnú verziu. Až 60 minút, ak sa skúmajú pokročilé možnosti (dve kocky, najčastejší hod, atď.).',
-    'materials_title' => 'Odporúčaný nástroj',
-    'materials' => [
-        'Na začiatok musíte mať nainštalovaný Python na svojom počítači. Ak ste tak ešte neurobili, stiahnite si Python z oficiálnej stránky: https://www.python.org',
-        'Otvorte Python IDLE alebo akýkoľvek textový editor (napr. Visual Studio Code, PyCharm), aby ste napísali svoj kód.'
-    ],
-    'instructions_title' => 'Inštrukcie',
-    'instructions' => [
-        'Krok 1: Príprava prostredia',
-        'Na začiatok musíte mať nainštalovaný Python na vašom počítači.',
-        'Ak ste tak ešte neurobili, stiahnite Python z oficiálnej stránky.',
-        'Otvorte Python IDLE alebo akýkoľvek textový editor (napr. Visual Studio Code, PyCharm), aby ste napísali svoj kód.',
-        'Krok 2: Písanie programu',
-        'Otvorte Python IDLE a vytvorte nový súbor s názvom dice.py.',
-        'Zadajte nasledujúci kód:',
-        '# Importujeme modul random na generovanie náhodných čísel',
-        'import random',
-        '# Vytlačíme pozdrav pre používateľa',
-        'print("Vitajte v simulácii hodu kockou!")',
-        '# Spýtame sa používateľa, koľkokrát chce hodiť kocku',
-        'throw_num = int(input("Koľkokrát chcete hodiť kocku? "))',
-        'for i in range(throw_num):',
-        '    result = random.randint(1, 6)  # Generujeme náhodné číslo medzi 1 a 6',
-        '    print(f"Hod {i + 1}: {result}")',
-        'print("Ďakujeme za hranie!")',
-        'Vizualizácia kódu v Python IDLE – uistite sa, že odsadenia vo vašom kóde sú rovnaké ako v príklade vyššie!',
-        'Krok 3: Vysvetlenie kódu',
-        'Modul random umožňuje generovanie náhodných čísel. Funkcia random.randint(a, b) vracia náhodné celé číslo v rozsahu od a do b vrátane.',
-        'Program sa pýta používateľa, koľkokrát chce hodiť kocku. Zadané číslo konvertujeme na celé číslo pomocou int().',
-        'Program používa cyklus for, aby vykonal simuláciu hodu toľkokrát, koľkokrát používateľ zadal.',
-        'Pre každý hod sa vygeneruje náhodné číslo medzi 1 a 6, ktoré predstavuje výsledok hodu.',
-        'Pre každý hod sa výsledok vytlačí. Na konci programu sa zobrazí správa s poďakovaním.',
-        'Krok 4: Spustenie programu',
-        'Uložte súbor ako dice.py.',
-        'Spustite svoj program v Python IDLE.',
-        'Zadajte počet hodov, ktoré chcete vykonať (napr. 5).',
-        'Program vygeneruje náhodné čísla a vytlačí ich ako výsledok každého hodu.'
-    ],
-    'quiz_title' => 'Kvíz:',
-    'quiz' => [
-        'Ktorý modul v Pythone umožňuje generovať náhodné čísla?',
-        'a) random',
-        'b) Math',
-        'c) Time',
-        'Čo robí funkcia random.randint(1, 6)?',
-        'a) Generuje náhodné číslo medzi 1 a 6',
-        'b) Vytlačí náhodné číslo na obrazovku',
-        'c) Vytlačí číslo medzi 1 a 6',
-        'Ako konvertujete vstup od používateľa na celé číslo v Pythone?',
-        'a) float(s)',
-        'b) int()',
-        'c) p()',
-        'Správne odpovede: 1.a, 2.a, 3.b'
-    ],
-    'mini_simulation_title' => 'Mini simulácia:',
-    'mini_simulation' => [
-        'Upravte program:',
-        'Pridajte možnosť simulovať dva hody kockou a sčítať ich výsledky.',
-        'Pridajte možnosť, aby program na konci vytlačil počet hodov, ktoré najčastejšie padli na kocke.'
-    ],
-    'additional_resources_title' => 'Ďalšie zdroje:',
-    'additional_resources' => [
-        'Python oficiálna dokumentácia – modul random',
-        'Learn Python'
-    ]
-],
 
     'gender-gap-gender-graph' => [
-    'title' => 'Rozdiel medzi pohlaviami, Graf pohlaví',
-    'author' => 'Theodora Tziampazi',
-    'purposes_title' => 'Účel výzvy',
-    'purposes' => [
-        'Umožňuje pochopiť, ako môže vizualizácia údajov ovplyvniť vnímanie.',
-        'Identifikovať skreslenia v digitálnych nástrojoch prostredníctvom interakcie.',
-        'Experimentovať so zadávaním údajov na účely pozorovania deformácií.',
-        'Upraviť kód, aby sa zaistilo presné zobrazenie údajov.',
-        'Porovnať spravodlivé a neobjektívne vizualizácie údajov.',
-        'Zvážiť etické dôsledky manipulácie s údajmi.',
-        'Diskutovať o skutočných dôsledkoch neobjektívnych štatistík.',
-        'Rozvíjať kritické myslenie o umelej inteligencii a algoritmickej zaujatosti.'
+        'title' => 'Rozdiel Medzi Pohlaviami, Graf Pohlav',
+        'author' => 'Theodora Tziampazi',
+        'purposes_title' => 'Účel výzvy',
+        'purposes' => [
+            'Umožňuje pochopiť, ako môže vizualizácia údajov ovplyvniť vnímanie.',
+            'Identifikovať skreslenia v digitálnych nástrojoch prostredníctvom interakcie.',
+            'Experimentovať so zadávaním údajov na účely pozorovania deformácií.',
+            'Upravte kód, aby ste zaistili presné zobrazenie údajov.',
+            'Porovnajte spravodlivé a neobjektívne vizualizácie údajov.',
+            'Zvážiť etické dôsledky manipulácie s údajmi.',
+            'Diskutujte o skutočných dôsledkoch neobjektívnych štatistík.',
+            'Rozvíjať kritické myslenie o umelej inteligencii a algoritmickej zaujatosti.'
+        ],
+        'description_title' => 'Opis výzvy',
+        'description' => 'Skúma zaujatosť vo vizualizácii údajov zadávaním hodnôt, analyzovaním narušení, úpravou kódu a skúmaním, ako digitálne nástroje ovplyvňujú vnímanie rodového zastúpenia v technológiách.',
+        'educational_goals_title' => 'Educational goals',
+        'educational_goals' => [
+            'Coding and Programming Logic:',
+            'Computational Thinking:',
+            'Problem Solving and Debugging:',
+            'Creativity and Design Thinking:',
+            'Collaboration and Communication:',
+        ],
+        'target_audience_title' => 'Cieľová skupina',
+        'target_audience' => [
+            'Študenti základných škôl (6 až 12 rokov)',
+            'Študenti nižších stredných škôl (12 až 16 rokov)',
+            'Študenti stredných škôl (16 až 18 rokov)',
+            'Učitelia a pedagógovia'
+        ],
+        'experience_title' => 'Experience',
+        'experiences' => [
+            'Intermediate - odporúčajú sa niektoré základné znalosti kódovania; účastníci by mali byť oboznámení so základnými programovými koncepciami.',
+            'Pokročilé - navrhnuté pre účastníkov so silnými kódovacími schopnosťami a predchádzajúcimi skúsenosťami s programovaním.'
+        ],
+        'duration_title' => 'Trvanie',
+        'duration' => '2 hodiny',
+        'materials_title' => 'Odporúčaný nástroj',
+        'materials' => [
+            'Scratch 3 a pracovný hárok https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+        ],
+        'instructions_title' => 'Pokyny',
+        'instructions' => [
+            'Ste používateľom tohto digitálneho nástroja (tvorca pruhov) https://scratch.mit.edu/projects/1147892829. Ešte sa nepozerajte dovnútra kódu.',
+            'Kliknite na zelenú vlajku a vložte údaje (1 - 10), ktoré hypoteticky predstavujú počet žien v odvetví technológií. Skús nejaké čísla.',
+            '',
+            'Čo si všimnete?',
+            'Môže to byť chyba alebo rozhodnutie?',
+            'Tak či onak, ako to môže byť opravené?',
+            'Manuálne (úroveň používateľa):',
+            'Preskúmajte nástroj a všetky ťahateľné šproty.',
+            'Existuje nejaké miesto, kde sa problém rieši?',
+            'Je možné pozorovať iný neočakávaný výsledok?',
+            'Potraviny na zamyslenie/diskusiu',
+            'Čo ak sa podceňuje počet žien v odvetví?',
+            'Čo ak sa nadhodnotí počet žien v odvetví?',
+            'Čo ak je počet žien v odvetví dobre odhadnutý, ale nie vyvážený z hľadiska rodových rozdielov?',
+            'Čo treba urobiť?',
+            'Vzaté: To, ako používame nástroj (kde nachádzame komponent), má vplyv na výsledok.',
+            'S kódovaním (úroveň tvorcu): Teraz je čas vidieť sa v projekte.',
+            'Jednoduchá výzva:',
+            'Hacknúť kód tak, aby prezentované údaje boli rovnaké ako údaje vložené v každom prípade.',
+            'Pokročilá výzva:',
+            'Skopírujte šprot a urobte ho modrým (stereotypne označovaný ako samec).',
+            'Zmení polohu y tak, aby bola viditeľná a porovnateľná s purpurovým pruhom.',
+            'Vytvoriť mužský symbol ako nový šprot.',
+            'Tip: Ako riešenie môžete stiahnuť/exportovať oba sprity (pruh, symbol) z projektu uvedeného na konci tejto sekcie.',
+            'Teraz hack kódy tak, že keď je vstup používateľa x (teraz daný 2 krát pre každý bar), 2 bar makery sú:',
+            'Fair (rovnaký kód). Upravte polohu samčieho symbolu na y v podmienkach if. Ladiť počas kontroly oboch kódov.',
+            'Nečestné používanie: Pretiahnite 2 symboly na rôznych miestach; poskytnite rovnaký vstup na zobrazenie nerovnosti.',
+            'Vedľajší/neobjektívny (odlišný kód)',
+            'v prospech mužov',
+            'v prospech žien',
+            'Pokúsiť sa, aby kódex zmiernil alebo prehĺbil rodové rozdiely...',
+            'Preskúmajte dva spôsoby, ako je výsledok zaujatý (ťahanie a/alebo kódovanie).',
+            'Ako by tieto 2 spôsoby mohli byť navzájom prepojené?',
+            'Riešenie (rovnaký kód): https://scratch.mit.edu/projects/1151892036',
+            'Diskusia:',
+            'Ako si myslíte, že môžete vytvoriť aj neobjektívny a nezaujatý digitálny nástroj?',
+            'Kde je zaujatosť viac "skrytá"? Keď príde na ťahanie medzi rôznymi pozíciami alebo na kódovanie?',
+            'Dokážete si predstaviť prípady, kedy môže pomôcť skreslený obraz niečoho (niektorí ľudia - kto)?',
+            'Myslíte si, že by sme mohli podporiť skreslené údaje, keď koniec ospravedlňuje prostriedky alebo v žiadnom prípade neprezentuje pravdu?',
+            'Ako si myslíte, že umelá inteligencia (riadená daným účelom) môže vyskúšať veci, ako ste sa v tejto výzve pokúsili?',
+            'Ďalšie otázky:',
+            'Ako zhromažďujeme údaje?',
+            'Ako sa spracúvajú naše údaje?',
+            'Ako sú naše konanie/presvedčenie ovplyvnené štatistikami skrytými v algoritmoch (AI alebo nie)?',
+            'Vzaté: Spôsob, akým nástroj vytvoríme, ovplyvňuje výsledok, či dokonca náš pohľad na svet.'
+        ],
+        'real-life-applications_title' => 'Príklady',
+        'real-life-applications' => [
+            'Správy o rozmanitosti na pracovisku - zabezpečenie presného zastúpenia údajov o rodovej príslušnosti v štatistike rozmanitosti podnikov.',
+            'Media & News Graphics - Zabránenie zavádzajúcim vizualizáciám v správach o rodovej rovnosti.',
+            'AI & Algorithm Bias - Identifikácia a zmierňovanie predsudkov v modeloch strojového učenia spracúvajúcich demografické údaje.',
+            'Nástroje náboru a prijímania zamestnancov - Zabezpečenie spravodlivého zastúpenia v oblasti analýzy ľudských zdrojov a rozhodovacieho softvéru.',
+            'STEM Education & Outreach - Používanie nezaujatých údajov na podporu väčšieho počtu žien v technických odboroch.',
+            'Verejná politika a presadzovanie - podpora spravodlivých politických rozhodnutí s presnými štatistikami rodových rozdielov.',
+            'Sociálne médiá a kampane na zvyšovanie povedomia - vytváranie spravodlivých vizuálnych zobrazení rodových údajov na podporu zmeny.'
+        ],
+        'variations_title' => 'Variations of the challenge',
+        'variations' => [
+            'Expanding the challenge to other environments: You could modify the challenge to involve AI bots protecting other ecosystems like forests, rivers, or even urban areas.',
+            'The bots would need to address challenges such as deforestation or air pollution.',
+        ],
     ],
-    'description_title' => 'Opis výzvy',
-    'description' => [
-        'Skúmať zaujatosť vo vizualizácii údajov zadávaním hodnôt, analyzovaním narušení, úpravou kódu a skúmaním, ako digitálne nástroje ovplyvňujú vnímanie rodového zastúpenia v technológiách.'
-    ],
-    'target_audience_title' => 'Cieľová skupina',
-    'target-audience' => [
-        'Žiaci základných škôl (6 až 12 rokov)',
-        'Žiaci nižších stredných škôl (12 až 16 rokov)',
-        'Žiaci stredných škôl (16 až 18 rokov)',
-        'Učitelia a pedagógovia'
-    ],
-    'experience' => [
-        'Stredne pokročilý – odporúčajú sa niektoré základné znalosti kódovania; účastníci by mali byť oboznámení so základnými programovými koncepciami.',
-        'Pokročilý – navrhnuté pre účastníkov so silnými kódovacími schopnosťami a predchádzajúcimi skúsenosťami s programovaním.'
-    ],
-    'duration' => '2 hodiny',
-    'materials' => [
-        'Scratch 3',
-        'Pracovný hárok: https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
-    ],
-    'instructions_title' => 'Pokyny',
-    'instructions' => [
-        'Ste používateľom tohto digitálneho nástroja (tvorca pruhov) https://scratch.mit.edu/projects/1147892829. Ešte sa nepozerajte do kódu. Kliknite na zelenú vlajku a vložte údaje (1–10), ktoré hypoteticky predstavujú počet žien v odvetví technológií. Vyskúšajte niekoľko čísel.',
-        'Čo si všimnete?',
-        'Môže to byť chyba alebo rozhodnutie?',
-        'Ako by sa to dalo opraviť?',
-        'Manuálne (úroveň používateľa): Preskúmajte nástroj a všetky ťahateľné sprity. Existuje pozícia, kde sa problém vyrieši? Alebo miesto, kde nastane neočakávaný výsledok?',
-        'Diskusia: Čo ak sa podhodnotí alebo nadhodnotí počet žien v odvetví? Čo ak sú údaje správne, ale rodová nerovnosť zostáva?',
-        'Poučenie: spôsob použitia nástroja (umiestnenie komponentu) ovplyvňuje výsledok.',
-        'S kódovaním (úroveň tvorcu): Otvorte projekt. Jednoduchá výzva – upravte kód tak, aby zobrazené údaje zodpovedali vloženým.',
-        'Pokročilá výzva – skopírujte sprite pruhu, urobte ho modrým (pre mužov), zmeňte jeho y-polohu a vytvorte mužský symbol ako nový sprite. Upravte kódy pre férový aj neférový scenár a preskúmajte, ako môže kódovanie prehlbovať alebo zmierňovať rodové rozdiely.',
-        'Riešenie (rovnaký kód): https://scratch.mit.edu/projects/1151892036'
-    ],
-    'discussion_title' => 'Diskusia',
-    'discussion' => [
-        'Ako je možné vytvoriť zaujatý aj nezaujatý digitálny nástroj?',
-        'Kde je zaujatosť viac „skrytá“ – pri ťahaní komponentov alebo v kóde?',
-        'Existujú prípady, keď môže byť skreslený obraz užitočný?',
-        'Mali by sme ospravedlniť skreslené údaje, ak účel ospravedlňuje prostriedky?',
-        'Ako môže AI skúšať podobné veci, ako ste vyskúšali v tejto výzve?',
-        'Ďalšie otázky: Ako zhromažďujeme údaje? Ako sa spracúvajú? Ako naše konanie ovplyvňujú štatistiky skryté v algoritmoch?',
-        'Poučenie: spôsob, akým vytvoríme nástroj, ovplyvňuje výsledok a náš pohľad na svet.'
-    ],
-    'real-life-applications_title' => 'Príklady',
-    'real-life-applications' => [
-        'Správy o rozmanitosti na pracovisku – zabezpečenie presného zastúpenia pohlaví v štatistikách.',
-        'Mediálne a spravodajské grafiky – vyhnutie sa zavádzajúcim vizualizáciám v správach o rodovej rovnosti.',
-        'AI a algoritmická zaujatosť – identifikácia a zmierňovanie predsudkov v modeloch strojového učenia.',
-        'Nástroje náboru a HR analytiky – zabezpečenie spravodlivého zastúpenia v rozhodovacích procesoch.',
-        'STEM vzdelávanie – využívanie nezaujatých údajov na podporu väčšieho zastúpenia žien v technológiách.',
-        'Verejná politika a advokácia – podpora spravodlivých politických rozhodnutí s presnými údajmi.',
-        'Sociálne médiá a kampane – vytváranie férových vizualizácií na podporu zmeny.'
-    ],
-],
 
     'dance-with-ally' => [
-    'title' => 'Tancuj s Allym',
-    'author' => 'Kristina Krtalićová',
-    'purposes_title' => 'Účel výzvy',
-    'purposes' => [
-        'naučte sa pripojiť micro:bit pomocou Scratch cez Bluetooth',
-        'pochopiť, ako používať rozšírenie Scratch micro:bit',
-        'použiť micro:bit tlačidlá na interakciu so Scratch projektmi',
-        'vytvoriť interaktívne hry s micro:bit',
-        'rozvíjať schopnosti riešenia problémov a logického myslenia',
-        'zvýšiť kreativitu prostredníctvom kódovania'
+        'title' => 'Tancuj s Allym',
+        'author' => 'Kristina Krtalićová',
+        'purposes_title' => 'Účel výzvy',
+        'purposes' => [
+            'naučte sa pripojiť micro:bit pomocou Scratch cez Bluetooth',
+            'pochopiť, ako používať Scratch micro:bit rozšírenie',
+            'použiť micro:bit tlačidlá na interakciu s Scratch projektov',
+            'vytvoriť interaktívne hry s micro:bit',
+            'rozvíjať schopnosti riešenia problémov a logického myslenia,',
+            'zvýšiť kreativitu prostredníctvom kódovania'
+        ],
+        'description_title' => 'Opis výzvy',
+        'description' => 'Vytvorte program, ktorý umožní jednoduchý tanec a sprite v Scratch s mikro:bit.
+        Pripojením Scratch a micro:bit študenti získajú komplexný vzdelávací zážitok, ktorý integruje digitálne a fyzické výpočty, zlepšuje schopnosti riešenia problémov a podporuje kreatívny prieskum.',
+        'educational_goals_title' => 'Vzdelávacie ciele',
+        'educational_goals' => [
+            'Kódovacia a programovacia logika:',
+            'študenti budú používať Scratch bloky na písanie udalosťou riadených programov, ktoré reagujú na vstupy z micro:bit',
+            'študenti pochopia a budú uplatňovať základné programovacie koncepcie ako slučky, rozhodnutia, podmienky a premenné',
+            'študenti budú budovať plynulosť s blokovým programovaním na kontrolu digitálnych a fyzických výstupov',
+            'Počítačové myslenie:',
+            'študenti rozložia problémy na menšie časti a dizajnové riešenia krok za krokom pomocou Scratch',
+            'študenti budú používať senzorové dáta (napr. tlačidlá, trasenie) z micro:bit na ovládanie šprintov alebo animácií',
+            'študenti vyvinú a otestujú algoritmy na riešenie konkrétnych výziev (napr. tanec sprite pri naklonení micro:bit).',
+            'Riešenie a ladenie problémov:',
+            'študenti sa budú zapájať do iteratívneho dizajnu testovaním, identifikovaním chýb a zdokonalením ich Scratch kódu a mikro:bit interakcií',
+            'študenti budú riešiť chyby v reálnom čase týkajúce sa softvéru (skripty) a hardvéru (micro:bit pripojenie alebo vstupy)',
+            'študenti budú dokumentovať a premýšľať o zmenách vykonaných počas ladenia.',
+            'Tvorivosť a myslenie dizajnu:',
+            'študenti budú vytvárať originálne animácie, hry alebo príbehy v Scratch, ktoré integrujú mikro:bitové vstupy ako interaktívne prvky',
+            'študenti sa budú vyjadrovať umelecky prostredníctvom choreografie šprotových pohybov alebo navrhovaním interaktívnych scén',
+            'študenti budú postupovať podľa návrhu: empatizovať, identifikovať, prototyp a testovať',
+            'Spolupráca a komunikácia:',
+            'študenti budú pracovať v pároch alebo malých tímoch na plánovanie, kódovanie a prezentovanie interaktívnych projektov',
+            'študenti vysvetlia peerom alebo širšiemu publiku svoje dizajnové voľby a logiku kódu'
+        ],
+        'target_audience_title' => 'Cieľová skupina',
+        'target_audience' => [
+            'Študenti základných škôl (6 až 12 rokov)',
+            'Študenti nižších stredných škôl (12 až 16 rokov)'
+        ],
+        'experience_title' => 'Skúsenosť',
+        'experience' => 'Intermediate - odporúčajú sa niektoré základné znalosti kódovania; účastníci by mali byť oboznámení so základnými programovými koncepciami.',
+        'duration_title' => 'Trvanie',
+        'duration' => '60 minút',
+        'materials_title' => 'Odporúčaný nástroj',
+        'materials' => [
+            'počítač',
+            'Škrabanie (https://scratch.mit.edu/)',
+            'Scratch link (https://scratch.mit.edu/download/scratch-link)',
+            'Rozškriabanie mikrofónu:bitov (https://scratch.mit.edu/microbit)',
+            'mikro:bit',
+            'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+        ],
+        'instructions_title' => 'Pokyny',
+        'instructions' => [
+            'spustiť koncepciu scratch',
+            'vytvorte si konto v Scratch (ak žiadne nemáte)',
+            'začať vytvárať nový projekt, pridať šprot, pridať pozadie, určiť počiatočnú pozíciu šprotu pri spustení programu.',
+            'pridať skupinu mikro:bitových skriptov z rozšírenia Scratch programovací jazyk',
+            'pripojte micro:bit k počítaču, zapnite Bluetooth v počítači (ak nie je zapnutý).',
+            'nainštalujte a spustite prepojenie Scratch https://scratch.mit.edu/download/scratch-link, prevezmite súbor micro:bit HEX a uložte ho do micro:bit https://scratch.mit.edu/microbit.',
+            'rozšírenie micro:bit, nájdite zariadenie v blízkosti počítača kliknutím na oranžové tlačidlo v rozšírení micro:bit.',
+            'Vyhľadávanie a nájdené zariadenia.',
+            'Vytvorte program s blokmi, ktoré umožnia sprite tanec na vybranú hudbu (s start zvuk blok), ktorý sa pohybuje, keď trasie mikro:bit. Tanec sa skladá iba z dvoch príkazov: posuňte sa na osi x doľava a doprava. Uloží projekt do počítača.',
+            'Po vytvorení programu podľa pokynov môžu študenti pridať svoje vlastné bloky, určiť ovládacie prvky sprite stlačením tlačidla A a/alebo B na micro:bit, zmeniť vzhľad sprite, zmeniť/pridať pohyby,...'
+        ],
+        'examples_title' => 'Príklady',
+        'examples' => [
+            'Pripojenie mikro:bit s Scratch na ovládanie tanečného šprotu je skvelý spôsob, ako preskúmať interaktívne programovanie. Táto koncepcia sa môže rozšíriť na rôzne reálne aplikácie a kreatívne projekty, ako sú:',
+            '1 interaktívne tanečné a fitnes programy',
+            'použite akcelerometer micro:bit na sledovanie pohybu a vytváranie fitness hier',
+            'vytvoriť nástroj na učenie sa tanca, kde sprej sleduje skutočné tanečné pohyby',
+            '2 animácia a hranie hier na báze gesta',
+            'ovládanie Poškriabané znaky s gestami ruky alebo naklonením',
+            'vývoj jednoduchých pohybom riadených hier, ako skákanie alebo vyhýbanie sa prekážkam',
+            'https://microbit.org/projects/make-it-code-it/step-counter/'
+        ]
     ],
-    'description_title' => 'Opis výzvy',
-    'description' => [
-        'Vytvorte program, ktorý umožní jednoduchý tanec sprite v Scratch s micro:bit.'
-    ],
-    'educational_goals' => [
-        'Kódovacia a programovacia logika: študenti použijú Scratch bloky na písanie udalosťou riadených programov reagujúcich na vstupy z micro:bit; pochopia slučky, podmienky a premenné a naučia sa ovládať digitálne a fyzické výstupy.',
-        'Počítačové myslenie: študenti rozložia problémy na menšie časti, použijú senzorové dáta (napr. tlačidlá, trasenie) z micro:bit a vyvinú algoritmy na riešenie konkrétnych výziev.',
-        'Riešenie a ladenie problémov: študenti budú testovať, identifikovať chyby a zdokonaľovať svoj Scratch kód a interakcie s micro:bit, riešiť chyby v reálnom čase a dokumentovať zmeny.',
-        'Tvorivosť a myslenie dizajnu: študenti vytvoria originálne animácie, hry alebo príbehy v Scratch, ktoré využívajú vstupy micro:bit; vyjadria sa umelecky a budú postupovať podľa dizajnovej metódy (empatizovať, identifikovať, prototypovať, testovať).',
-        'Spolupráca a komunikácia: študenti budú pracovať v pároch alebo malých tímoch na plánovaní a kódovaní interaktívnych projektov a prezentovaní svojich riešení; vysvetlia svoje voľby a logiku kódu ostatným.'
-    ],
-    'target_audience_title' => 'Cieľová skupina',
-    'target-audience' => [
-        'Žiaci základných škôl (6 až 12 rokov)',
-        'Žiaci nižších stredných škôl (12 až 16 rokov)'
-    ],
-    'experience' => 'Stredne pokročilý – odporúčajú sa základné znalosti kódovania; účastníci by mali poznať základné programátorské koncepty.',
-    'duration' => '60 minút',
-    'materials' => [
-        'Počítač',
-        'Scratch (https://scratch.mit.edu/)',
-        'Scratch link (https://scratch.mit.edu/download/scratch-link)',
-        'Scratch micro:bit (https://scratch.mit.edu/microbit)',
-        'micro:bit',
-        'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
-    ],
-    'instructions_title' => 'Pokyny',
-    'instructions' => [
-        'Spustite Scratch.',
-        'Vytvorte si konto v Scratch (ak ho ešte nemáte).',
-        'Začnite nový projekt, pridajte sprite, pozadie a určte počiatočnú pozíciu sprite pri spustení programu.',
-        'Pridajte skupinu micro:bit skriptov z rozšírenia Scratch.',
-        'Pripojte micro:bit k počítaču a zapnite Bluetooth.',
-        'Nainštalujte a spustite Scratch link, stiahnite HEX súbor micro:bit a uložte ho do zariadenia.',
-        'V rozšírení micro:bit kliknite na oranžové tlačidlo a vyhľadajte zariadenia v okolí.',
-        'Vyberte nájdené zariadenie.',
-        'Vytvorte program, ktorý umožní sprite tancovať na vybranú hudbu pri zatrasení micro:bit (pohyb po osi X doľava a doprava). Uložte projekt do počítača.',
-        'Rozšírte projekt: pridajte vlastné bloky, nastavte ovládanie sprite pomocou tlačidiel A/B na micro:bit, zmeňte vzhľad alebo pohyby sprite.'
-    ],
-    'real-life-applications_title' => 'Príklady',
-    'real-life-applications' => [
-        'Interaktívne tanečné a fitnes programy: využitie akcelerometra micro:bit na sledovanie pohybu a tvorbu fitness hier alebo nástrojov na učenie sa tanca.',
-        'Animácia a hry založené na gestách: ovládanie postáv v Scratch gestami ruky alebo naklonením; tvorba jednoduchých hier riadených pohybom.'
-    ],
-],
 
     'coding-for-the-ocean' => [
-    'title' => 'Kódovanie pre oceán – Vytvorte svoj AI bota na záchranu mora',
-    'author' => 'Teresa Silvestri',
-    'purposes' => [
-        'Schopnosť používať umelú inteligenciu na riešenie environmentálnych problémov.',
-        'Zručnosti v kódovaní na vytvorenie a programovanie robota umelej inteligencie.',
-        'Vedomosti o zmene klímy a dôležitosti ochrany morského prostredia.',
-        'Schopnosti riešiť problémy v kontexte vedy a techniky.',
-        'Rozvoj logického myslenia aplikovaného na výzvy reálneho sveta.',
-        'Tvorivosť pri navrhovaní robota, ktorý dokáže reagovať na environmentálne hrozby.',
-        'Praktické skúsenosti s používaním kódovacích platforiem ako Code.org.',
-        'Tímová práca a spolupráca pri zdieľaní robotov a súťažení so spolužiakmi.'
+        'title' => 'Kódovanie pre Ocean Build Váš AI Bot zachrániť more',
+        'author' => 'Teresa Silvestri',
+        'purposes' => [
+            'Po splnení výzvy sa účastníci naučia a získajú: ',
+            'Schopnosť používať umelú inteligenciu na riešenie environmentálnych problémov.',
+            'Zručnosti v kódovaní na vytvorenie a programovanie robota umelej inteligencie.',
+            'Vedomosti o zmene klímy a dôležitosti ochrany morského prostredia.',
+            'Schopnosti riešiť problémy v kontexte vedy a techniky.',
+            'Rozvoj logického myslenia aplikovaného na výzvy reálneho sveta.',
+            'Tvorivosť pri navrhovaní robota, ktorý dokáže reagovať na environmentálne hrozby.',
+            'Praktické skúsenosti s používaním kódovacích platforiem ako Code.org.',
+            'Tímová práca a spolupráca pri zdieľaní robotov a súťažení so spolužiakmi.'
+        ],
+        'description' => 'Vytvorte a trénujte robota umelej inteligencie na ochranu mora! Naučte sa kódovať, riešiť environmentálne problémy a rozvíjať logické myslenie na ochranu morského prostredia.',
+        'instructions' => [
+            'Access Code.org 
+            
+            Otvorte svoj webový prehliadač a prejdite na lokalitu Code.org. 
+            Ak nemáte konto, môžete ho vytvoriť alebo sa prihlásiť pomocou existujúceho konta. 
+            Spustiť nový projekt 
+            
+            Na hlavnej obrazovke vyberte kurz alebo kurz súvisiaci s ochranou oceánu. 
+            Pre spustenie projektu kliknite na tlačidlo "Štart". 
+            Postupujte podľa podrobného kurzu 
+            
+            Code.org vás prevedie interaktívnym kurzom. Pozorne si prečítajte každý návod a vyplňte každý krok. 
+            Dbajte na to, aby ste sa riadili pokynmi a naučili sa naprogramovať robota umelej inteligencie. 
+            Naprogramujte si robota 
+            
+            Pomocou vizuálnych kódovacích blokov naučte bota, ako reagovať na environmentálne situácie, ako je zber plastov alebo vyhýbanie sa prekážkam. 
+            Upravte bloky tak, aby vyhovovali rôznym situáciám, a otestujte správanie robota. 
+            Otestujte svojho robota 
+            
+            Po napísaní kódu otestujte svojho robota, aby ste zistili, ako zvláda problémy. 
+            Ak bot nefunguje podľa očakávania, vráťte sa späť a upravte ho, potom ho znova otestujte, kým nebude účinný. 
+            Zdieľajte robota s triedou 
+            
+            Keď bude váš robot pripravený, skopírujte prepojenie na projekt a zdieľajte ho so spolužiakmi. 
+            Pripojte sa do súťaže, aby ste zistili, ktorý bot je najúčinnejší na ochranu mora. 
+            Preskúmanie a zlepšovanie 
+            
+            Po dokončení výzvy skontrolujte svoj kód a hľadajte spôsoby, ako ho zlepšiť. 
+            Do robota môžete pridať ďalšie funkcie na riešenie nových environmentálnych výziev.
+            '
+        ],
+        'materials' => [
+            'Softvér: Prístup na Code.org',
+            'Hardvér: Počítač alebo tablet s pripojením na internet.',
+            'Online nástroje: Webový prehliadač na navigáciu na Code.org alebo podobné platformy.',
+            'Podporné materiály: Tutoriály a vzdelávacie zdroje poskytované platformou.',
+            'Ďalšie nástroje: Voliteľné audio alebo video zariadenia na sledovanie tutoriálu.'
+        ],
+        'real-life-applications_title' => 'Aplikácie v reálnom živote',
+        'real-life-applications' => [
+            'Umelá inteligencia v oblasti ochrany oceánov: Spoločnosti a organizácie ako The Ocean Cleanup používajú systémy poháňané umelou inteligenciou na zber plastov z oceánov a pomáhajú tak bojovať proti znečisťovaniu morí.',
+            'Umelá inteligencia pri monitorovaní životného prostredia: Roboty umelej inteligencie sa používajú na sledovanie podmienok v oceánoch, monitorovanie morských živočíchov a zisťovanie znečistenia, čím sa zvyšuje efektívnosť ochrany životného prostredia.'
+        ],
+        'variations_title' => 'Variácie výzvy',
+        'variations' => [
+            'Rozšírenie výzvy na iné prostredia: Môžete upraviť výzvu tak, aby zahŕňala AI robotov chrániacich iné ekosystémy, ako sú lesy, rieky alebo dokonca mestské oblasti. Roboty by museli riešiť problémy, ako je odlesňovanie alebo znečistenie ovzdušia.'
+        ],
+        'duration' => '45 minút – 1 hodina',
+        'experience' => 'Začiatočník – nevyžadujú sa žiadne predchádzajúce skúsenosti s kódovaním; vhodné pre úplných začiatočníkov.',
+        'target-audience' => [
+            'Žiaci základných škôl (6 až 12 rokov)'
+        ],
+        'educational_goals' => [
+            'Rozvíjať základné zručnosti v programovaní a umelej inteligencii',
+            'Podporovať environmentálne povedomie a dôležitosť ochrany životného prostredia',
+            'Podporovať tvorivosť a predstavivosť prostredníctvom rozprávania príbehov',
+            'Rozvíjať zručnosti v riešení problémov a kritickom myslení'
+        ],
     ],
-    'description' => 'Vytvorte a trénujte robota umelej inteligencie na ochranu mora! Naučte sa kódovať, riešiť environmentálne problémy a rozvíjať logické myslenie na ochranu morského prostredia.',
-    'instructions' => [
-        'Prístup na Code.org',
-        'Otvorte svoj webový prehliadač a prejdite na stránku Code.org. Ak nemáte konto, môžete si ho vytvoriť alebo sa prihlásiť pomocou existujúceho účtu.',
-        'Spustite nový projekt',
-        'Na hlavnej obrazovke vyberte kurz alebo tutoriál súvisiaci s ochranou oceánu. Kliknite na „Štart“ a začnite svoj projekt.',
-        'Postupujte podľa podrobného kurzu',
-        'Code.org vás prevedie interaktívnym tutoriálom. Pozorne si prečítajte každý návod a splňte každý krok. Dodržiavajte pokyny, aby ste sa naučili naprogramovať svojho AI robota.',
-        'Naprogramujte svojho robota',
-        'Použite vizuálne kódovacie bloky, aby ste svojho robota naučili reagovať na environmentálne situácie, napríklad zbierať plasty alebo vyhýbať sa prekážkam. Bloky môžete upraviť pre rôzne situácie a testovať správanie robota.',
-        'Otestujte svojho robota',
-        'Po napísaní kódu otestujte svojho robota a zistite, ako zvláda výzvy. Ak robot nefunguje podľa očakávania, vráťte sa späť, upravte kód a znova ho otestujte.',
-        'Zdieľajte robota s triedou',
-        'Keď bude váš robot pripravený, skopírujte odkaz na projekt a zdieľajte ho so spolužiakmi. Zapojte sa do súťaže a zistite, ktorý robot je najúčinnejší pri ochrane mora.',
-        'Preskúmajte a vylepšite',
-        'Po dokončení výzvy skontrolujte svoj kód a hľadajte spôsoby, ako ho vylepšiť. Môžete pridať ďalšie funkcie, aby robot zvládal nové environmentálne výzvy.',
-        'Zdieľajte odkaz na svoju prácu vo svojom Instagram Bio: kliknite na tlačidlo Upraviť profil a vložte odkaz do poľa Webová stránka. Potom vytvorte nový príspevok, pridajte snímku obrazovky svojej práce, napíšte „Link v Bio“, pridajte hashtag #EUCodeWeekChallenge a označte @CodeWeekEU.'
+    'code-it-like-margaret-hamilton' => [
+        'title' => 'Označte to ako Margaret Hamiltonová!!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'Študenti sa naučia základné koncepty blokového kódovania pomocou rakety Scratch Jr na spustenie kozmickej lode, rovnako ako Margaret Hamiltonová, žena, ktorá naprogramovala kód pre Nasa\'s Apollo na dosiahnutie mesiaca.',
+            'Činnosť tiež pomôže rozložiť rodové stereotypy zdôraznením prínosu žien v programe vesmírneho výskumu a povzbudením dievčat, aby sa venovali programovaniu a kariére v oblasti STEM.'
+        ],
+        'description' => 'Program vesmírneho štartu v Scratch Jr inšpirovaný Margaret Hamiltonovou! Kódujte odpočítavanie, spustite kozmickú loď a prelomte rodové stereotypy povzbudzovaním dievčat v kódovaní!',
+        'instructions' => [
+            '1. Úvod:',
+            'Učiteľ predstavuje vesmírne misie a vysiela ľudí na mesiac a predstavuje Margaret Hamiltonová a jej príspevok k plánovaniu Apolla. Po tomto nasleduje diskusiu o tom, čo je programovanie a ako môžeme dať pokyny počítač.',
+            '2. Programovacia činnosť: Margaret Hamiltonová kódy a odpočítava a kozmická loď odlieta na Mesiac.',
+            'Otvorte aplikáciu Scratch Jr. a vytvorte nový projekt.',
+            'Odstrániť znak.',
+            'Vybrať pozadie s medzerou (krok1 png).',
+            'Vyberte si z postáv ženu, vesmírnu loď a Zem (krok 2 png).',
+            'Zmeňte veľkosť znakov kliknutím na toľko krát, koľko je potrebné na bloku "Zmenšiť" alebo "Rast" (krok 3 png).',
+            'Posunúť znaky na pravú pozíciu (krok 4 png).',
+            'Napíšte programy tak, aby sa žena spočítala a keď dokončí svoje slová, vesmírna loď ide hore. Aby sa to dosiahlo, akonáhle je stlačená zelená vlajka žena by mal povedať slová, ktoré si vyberiete a potom poslať správu. Vesmírna loď by mala prijať správu rovnakej farby a so správnymi pohybovými blokmi vesmírna loď by mala ísť hore. Môžete tiež zmenšiť vesmírnu loď, ako sa pohybuje preč. Ak chcete naprogramovať vesmírnu loď, môžete použiť jednoduché bloky alebo slučku opakovania. (krok 5 png).',
+            'Spustite skript stlačením zelenej vlajky.'
+        ],
+        'materials' => [
+            'Tablet alebo PC (ak je to možné, odporúčame najmä použiť tablet) s nainštalovaným softvérom Scratch Jr. (https://www.scratchjr.org/ pre tablety a https://jfo8000.github.io/ScratchJr-Desktop/ pre Windows alebo Mac).',
+            'Tlačené obrázky Margaret Hamiltonovej a misie Apollo 11 (voliteľné).',
+            'Tlačiteľné karty s príkazmi Scratch Jr. (https://www.scratchjr.org/teach/resources) - (voliteľné).',
+            'Premietač (nepovinný).'
+        ],
+        'real-life-applications' => [
+            'Aplikácie v reálnom živote:',
+            'Táto činnosť nie je len úvodom k programovaniu, ale je spojená s udalosťami reálneho života a aplikácií vo vede a technike:',
+            'Margaret Hamiltonová vyvinula softvér pre Apollo Guidance Computer, ktorý dovolil Apollu 11 bezpečne pristáť v roku 1969. Aktivita pomáha deťom pochopiť, ako počítače potrebujú jasné a správne príkazy na vykonanie misie - rovnako ako NASA použila kód na dosiahnutie Mesiaca.',
+            'Plánovanie blokov, ako v Scratch Jr, je prvým krokom k pochopeniu zložitejších programovacie jazyky, ktoré sa v súčasnosti používajú v kozmických misiách, robotike a umelých inteligencia. Rovnaké princípy sa používajú pri vývoji autonómnych systémov, napríklad prieskumné roboty na Marse (zvedavosť, vytrvalosť).'
+        ],
+        'variations' => [
+            'Zmeny/návrhy:',
+            'Ak sú študenti noví v aplikácii, môžete vytvoriť projekty najprv s tlačeným bloky.',
+            'Pridajte ďalšie znaky, ako sú planéty, hviezdy alebo kométy.',
+            'V závislosti od veku a skúseností detí s aplikáciou ScratchJr, ďalšie môžu byť pridané výzvy, ako je programovanie vesmírnej lode, aby sa zabránilo prekážkam.',
+            'Študenti môžu pridať aj ďalšiu stranu zobrazujúcu kozmickú loď pristátie na mesiaci.',
+            'Namiesto použitia bloku "Say" by sa mohol použiť blok "Play Recorded Sound" (Prehrať zaznamenaný zvuk) a hlasy študentov môžu byť vypočuté.',
+            'Pridajte astronaut znaky, v ktorých upravujete tváre a pridajte fotky študentov.'
+        ],
+        'duration' => '60 minút',
+        'experience' => 'Intermediate - odporúčajú sa niektoré základné znalosti kódovania; účastníci by mali byť oboznámení so základnými programovými koncepciami.',
+        'target-audience' => [
+            'Malé deti (vo veku 5 - 7 rokov)'
+        ]
     ],
-    'materials' => [
-        'Softvér: Prístup na Code.org',
-        'Hardvér: Počítač alebo tablet s pripojením na internet.',
-        'Online nástroje: Webový prehliadač na navigáciu na Code.org alebo podobné platformy.',
-        'Podporné materiály: Tutoriály a vzdelávacie zdroje poskytované platformou.',
-        'Ďalšie nástroje: Voliteľné audio alebo video zariadenia na sledovanie tutoriálu.'
-    ],
-    'real-life-applications_title' => 'Aplikácie v reálnom živote',
-    'real-life-applications' => [
-        'Umelá inteligencia v oblasti ochrany oceánov: Spoločnosti a organizácie ako The Ocean Cleanup používajú systémy poháňané umelou inteligenciou na zber plastov z oceánov a pomáhajú tak bojovať proti znečisťovaniu morí.',
-        'Umelá inteligencia pri monitorovaní životného prostredia: Roboty umelej inteligencie sa používajú na sledovanie podmienok v oceánoch, monitorovanie morských živočíchov a zisťovanie znečistenia, čím sa zvyšuje efektívnosť ochrany životného prostredia.'
-    ],
-    'variations_title' => 'Variácie výzvy',
-    'variations' => [
-        'Rozšírenie výzvy na iné prostredia: Môžete upraviť výzvu tak, aby zahŕňala AI robotov chrániacich iné ekosystémy, ako sú lesy, rieky alebo dokonca mestské oblasti.',
-        'Roboty by museli riešiť problémy, ako je odlesňovanie alebo znečistenie ovzdušia.'
-    ],
-    'duration' => '45 minút – 1 hodina',
-    'experience' => 'Začiatočník – nevyžadujú sa žiadne predchádzajúce skúsenosti s kódovaním; vhodné pre úplných začiatočníkov.',
-    'target-audience' => [
-        'Žiaci základných škôl (6 až 12 rokov)'
-    ],
-    'educational_goals' => [
-        'Rozvíjať základné zručnosti v programovaní a umelej inteligencii',
-        'Podporovať environmentálne povedomie a dôležitosť ochrany životného prostredia',
-        'Podporovať tvorivosť a predstavivosť prostredníctvom rozprávania príbehov',
-        'Rozvíjať zručnosti v riešení problémov a kritickom myslení'
-    ],
-],
-'code-it-like-margaret-hamilton' => [
-    'title' => 'Označte to ako Margaret Hamiltonová!',
-    'author' => 'Chouliara Theodora',
-    'purposes' => [
-        'Študenti sa naučia základné koncepty blokového kódovania pomocou rakety Scratch Jr na spustenie kozmickej lode, rovnako ako Margaret Hamiltonová, žena, ktorá naprogramovala kód pre Nasa\'s Apollo na dosiahnutie mesiaca.',
-        'Činnosť tiež pomôže rozložiť rodové stereotypy zdôraznením prínosu žien v programe vesmírneho výskumu a povzbudením dievčat, aby sa venovali programovaniu a kariére v oblasti STEM.'
-    ],
-    'description' => 'Program vesmírneho štartu v Scratch Jr inšpirovaný Margaret Hamiltonovou! Kódujte odpočítavanie, spustite kozmickú loď a prelomte rodové stereotypy povzbudzovaním dievčat v kódovaní!',
-    'instructions' => [
-        'Úvod: Učiteľ predstavuje vesmírne misie a vysiela ľudí na mesiac a predstavuje Margaret Hamiltonová a jej príspevok k plánovaniu Apolla. Po tomto nasleduje diskusiu o tom, čo je programovanie a ako môžeme dať pokyny počítač.',
-        'Programovacia činnosť: Margaret Hamiltonová kódy a odpočítava a kozmická loď odlieta na Mesiac.',
-        'Otvorte aplikáciu Scratch Jr. a vytvorte nový projekt.',
-        'Odstrániť znak.',
-        'Vybrať pozadie s medzerou (krok1 png).',
-        'Vyberte si z postáv ženu, vesmírnu loď a Zem (krok 2 png).',
-        'Zmeňte veľkosť znakov kliknutím na toľko krát, koľko je potrebné na bloku "Zmenšiť" alebo "Rast" (krok 3 png).',
-        'Posunúť znaky na pravú pozíciu (krok 4 png).',
-        'Napíšte programy tak, aby sa žena spočítala a keď dokončí svoje slová, vesmírna loď ide hore. Aby sa to dosiahlo, akonáhle je stlačená zelená vlajka žena by mal povedať slová, ktoré si vyberiete a potom poslať správu. Vesmírna loď by mala prijať správu rovnakej farby a so správnymi pohybovými blokmi vesmírna loď by mala ísť hore. Môžete tiež zmenšiť vesmírnu loď, ako sa pohybuje preč. Ak chcete naprogramovať vesmírnu loď, môžete použiť jednoduché bloky alebo slučku opakovania. (krok 5 png).',
-        'Spustite skript stlačením zelenej vlajky.'
-    ],
-    'materials' => [
-        'Tablet alebo PC (ak je to možné, odporúčame najmä použiť tablet) s nainštalovaným softvérom Scratch Jr. (https://www.scratchjr.org/ pre tablety a https://jfo8000.github.io/ScratchJr-Desktop/ pre Windows alebo Mac).',
-        'Tlačené obrázky Margaret Hamiltonovej a misie Apollo 11 (voliteľné).',
-        'Tlačiteľné karty s príkazmi Scratch Jr. (https://www.scratchjr.org/teach/resources) - (voliteľné).',
-        'Premietač (nepovinný).'
-    ],
-    'real-life-applications' => [
-        'Aplikácie v reálnom živote:',
-        'Táto činnosť nie je len úvodom k programovaniu, ale je spojená s udalosťami reálneho života a aplikácií vo vede a technike: Margaret Hamiltonová vyvinula softvér pre Apollo Guidance Computer, ktorý dovolil Apollu 11 bezpečne pristáť v roku 1969. Aktivita pomáha deťom pochopiť, ako počítače potrebujú jasné a správne príkazy na vykonanie misie - rovnako ako NASA použila kód na dosiahnutie Mesiaca. Plánovanie blokov, ako v Scratch Jr, je prvým krokom k pochopeniu zložitejších programovacie jazyky, ktoré sa v súčasnosti používajú v kozmických misiách, robotike a umelých inteligencia. Rovnaké princípy sa používajú pri vývoji autonómnych systémov, napríklad prieskumné roboty na Marse (zvedavosť, vytrvalosť).',
-    ],
-    'variations' => [
-        'Zmeny/návrhy:',
-        'Ak sú študenti noví v aplikácii, môžete vytvoriť projekty najprv s tlačeným bloky.',
-        'Pridajte ďalšie znaky, ako sú planéty, hviezdy alebo kométy.',
-        'V závislosti od veku a skúseností detí s aplikáciou ScratchJr, ďalšie môžu byť pridané výzvy, ako je programovanie vesmírnej lode, aby sa zabránilo prekážkam.',
-        'Študenti môžu pridať aj ďalšiu stranu zobrazujúcu kozmickú loď pristátie na mesiaci.',
-        'Namiesto použitia bloku "Say" by sa mohol použiť blok "Play Recorded Sound" (Prehrať zaznamenaný zvuk) a hlasy študentov môžu byť vypočuté.',
-        'Pridajte astronaut znaky, v ktorých upravujete tváre a pridajte fotky študentov.'
-    ],
-    'duration' => '60 minút',
-    'experience' => 'Intermediate - odporúčajú sa niektoré základné znalosti kódovania; účastníci by mali byť oboznámení so základnými programovými koncepciami.',
-    'target-audience' => [
-        'Malé deti (vo veku 5 - 7 rokov)'
-    ]
-],
     'chatbot' => [
         'title' => 'Vytvorte četbota',
         'author' => 'Tím Európskeho týždňa programovania',
@@ -1033,7 +1141,8 @@ return [
         'author' => 'Lydie El-Halougi',
         'purposes' => [
             'Aby ste sa naučili a precvičili slučku a premenné.',
-            'Aby ste zvýšili tvorivosť pri programovaní.'],
+            'Aby ste zvýšili tvorivosť pri programovaní.'
+        ],
         'description' => 'V tejto výzve napíšete projekt pomocou programu Scratch na vytvorenie špirály, pričom použijete bloky pera, slučku a premennú.',
 
         'instructions' => [
@@ -1147,7 +1256,8 @@ return [
             'Vytvorte nový model strojového učenia a pridajte 3 nové štítky, prvý nazvite „pekné“, druhý „zlé“ a prípadne, ak chcete rozpoznať svoje meno, vytvorte tretí štítok s názvom „meno“.',
             'Trénujte nový model strojového učenia, otestujte ho a použite ho na vytvorenie Emobota v programe Scratch.',
             'Spustite editor Scratch 3, odstráňte postavu mačky, vložte 3 nové postavičky od Microsoft Bing Image Creator (šťastná, nahnevaná a neistá počítačová kreslená postavička) alebo vytvorte novú postavičku kliknutím na ikonu maľovania tak, že nakreslíte tri kópie kostýmu pre šťastnú, nahnevanú a neistú tvár.',
-            'Kliknite na kartu „Code“ (kód) a zadajte nasledujúci skript.'],
+            'Kliknite na kartu „Code“ (kód) a zadajte nasledujúci skript.'
+        ],
         'example' => [
             'Podeľte sa o svoje Emobot Kliki so svojimi priateľmi a zistite viac o AI a emóciách!',
             'Namiesto počítačovej kreslenej postavy môžete skúsiť niečo iné, napríklad zviera. Namiesto láskavého a nemilého by ste mohli postavu cvičiť tak, aby rozpoznávala iné typy správ.',
@@ -1213,7 +1323,8 @@ return [
             'Na učenie/naučenie sa a uvažovanie o koncepciách programovania.',
             'Na používanie jednoduchých nástrojov na programovanie.',
             'Na rozvíjanie výpočtového myslenia a riešenie problémov.',
-        ], 'description' => [
+        ],
+        'description' => [
             'Vytvorte únikový zážitok z programovania, ako je tento:',
             'Môžete použiť Google formulár, Genially, Google prezentáciu, akýkoľvek nástroj na vytvorenie rozprávania založeného na programovaní ;).',
 
@@ -1257,7 +1368,8 @@ return [
             'Všetky animácie sa spustia po prijatí rádiového signálu.',
             'Animácia prvého mikrobitu je okamžite viditeľná, ostatné čakajú, kým sa tam had dostane.',
             'Čas medzi dvoma fázami určuje rýchlosť hada.',
-        ], 'materials' => [
+        ],
+        'materials' => [
             'micro:bits (pre každého študenta, ak je to možné)',
             'notebook alebo počítač pre editor makecode.microbit.org',
         ],
@@ -1355,4 +1467,80 @@ return [
         ],
     ],
 
+    'careers-as-constellations' => [
+        'title' => 'Kariéra ako súhvezdia',
+        'authorcontent' => 'Táto výzva a súťaž je iniciatívou autorky, ilustrátorky a podnikateľky Lindy Liukas, v súvislosti s kampaňou partnerstva Code4Europe Girls in Digital 2025 #Webinar 1 naživo vysielanou na Youtube: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">How Code, Creativity and Curiosity form a Career?</a>',
+        'author' => 'Linda Liukas',
+        'start-date' => 'Dátum začiatku',
+        'activity-type' => 'Typ aktivity',
+        'open-online-activity' => 'Otvorená online aktivita',
+        'name-of-org' => 'Názov organizácie',
+        'language' => 'Jazyk',
+        'description' => 'Táto interaktívna aktivita pomáha študentom zmapovať ich osobné záujmy a záľuby s potenciálnou kariérou v technológii. Vizualizáciou svojich zručností a vášní ako súhvezdí študenti zisťujú, ako sú kariéry formované spájaním zdanlivo nesúvisiacich bodov. Nevyžadujú sa žiadne predchádzajúce skúsenosti s kódovaním a táto aktivita podporuje kreatívne myslenie o budúcnosti práce v technológiách.',
+        'teachers' => 'Učitelia',
+        'english' => 'Angličtina',
+        'type-of-org' => 'Typ organizácie',
+        'private-business' => 'Súkromné podnikanie',
+        'secondary-school' => 'Stredné školy',
+        'higher-education' => 'Vysoké školy',
+        'audience' => 'Cieľová skupina',
+        'theme' => 'Hlavné témy',
+        'themes' => [
+            'motivation-and-awareness-raising' => 'Motivácia a zvyšovanie povedomia',
+            'promoting-diversity' => 'Podpora rozmanitosti',
+        ],
+        'age-group' => 'Veková skupina',
+        'age-groups' => [
+            '12' => '12+ (prispôsobiteľné pre študentov stredných škôl, gymnázií alebo dokonca žiakov vysokých škôl)',
+            'under-6' => 'Do 6 rokov',
+            '7-8' => '7-8',
+            '9-11' => '9-11',
+            '12-14' => '12-14',
+            '15-18' => '15-18',
+            'over-18' => 'Nad 18',
+        ],
+        'subjects' => 'Predmety',
+        'time-required' => 'Potrebný čas',
+        '45–60' => '45–60 minút',
+        'group-size' => 'Veľkosť skupiny',
+        'group-sizes' => [
+            'small' => 'Môže sa robiť individuálne alebo v malých skupinách',
+        ],
+        'required-materials' => 'Potrebné materiály',
+        'step-by-step-instructions' => 'Pokyny krok za krokom',
+        'materials' => [
+            'one' => 'Vytlačený pracovný list „Kariéra ako súhvezdia“ (odporúča sa A3)',
+            'two' => 'Papier <span class="font-sans">&</span> fixky/perá na ďalšie poznámky',
+            'three' => 'Voliteľné: Digitálna verzia (študenti môžu vytvárať súhvezdia pomocou Miro, Canva alebo Google Jamboard)',
+        ],
+        'titles' =>  [
+            'one' => 'Zahrievacia diskusia: Čo sú vaše bodky? (5 min)',
+            'two' => 'Mapovanie konštelácií: Prepojenie záujmov s technikou (20 min)',
+            'three' => 'Príklady prepojení',
+            'four' => ' Reflexia <span class="font-sans">&</span> zdieľanie: Aké vzorce ste našli? (15 min)',
+            'five' => 'Rozšírenie aktivity',
+        ],
+        'intro' => '<p>Začnite tým, že spochybníte tradičné kariérne nápady otázkou:</p>
+            <p  class="my-8 italic">Myslíte si, že kariéra by mala ísť priamou cestou?</p>
+            <p> Predstavte myšlienku, že úspešná kariéra sa často buduje na neočakávaných spojeniach.</p><p>Pozrite si spolu prednášku Lindy Liukas, v ktorej sa delí o svoju vlastnú kariéru v oblasti technológií</p>',
+        'content' => [
+            'one' => '<p>Každý študent vyplní pracovný list „Kariéra ako súhvezdia“, pričom pridá:</p>',
+            'two' => 'Osobné záujmy (záľuby, zručnosti, obľúbené činnosti)',
+            'three' => 'Témy súvisiace s technológiami (AI, robotika, herný dizajn, digitálne umenie, technológie udržateľnosti atď.)',
+            'four' => '<strong>Kreslenie čiar</strong> na zobrazenie prepojení medzi ich záujmami a technológiou',
+            'five' => 'Miluje hudbu? → Má záujem o AI? → nástroje na tvorbu hudby generované AI!',
+            'six' => 'Miluje kreslenie? → Zaujíma sa o herný dizajn? → 2D/3D animácia <span class="font-sans">&</span> kódovanie',
+            'seven' => 'Nadšenie pre klimatické zmeny? → Záujem o dáta? → Environmentálne technológie',
+            'eight' => 'Vyzvite študentov, aby sa podelili o prekvapivé spojenia, ktoré objavili.',
+            'nine' => 'Opýtajte sa: Ktoré bodky sa spočiatku zdali nesúvisiace? Ako sa spojili?',
+            'ten' => '<p>Podnety na diskusiu:</p>',
+            'eleven' => 'Čo ťa prekvapilo na tvojom súhvezdí?',
+            'twelve' => 'Objavil si nejaké kariérne cesty, o ktorých si predtým neuvažoval?',
+            'thirteen' => 'Ako by mohla technológia formovať tvoju budúcnosť neočakávanými spôsobmi?',
+            'fourteen' => 'Digitálna výzva: Požiadajte študentov, aby vytvorili digitálnu verziu svojho súhvezdia pomocou Miro, Canva alebo Google Jamboard a prezentovali svoje zistenia.',
+            'fifteen' => 'Výskumná úloha: Študenti preskúmajú osobu z oblasti technológií, ktorej kariéra sa uberala prekvapivou cestou, zmapujú jej súhvezdie a podelia sa o jej príbeh.',
+            '16' => 'Stiahnite si <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">šablónu aktivity</a>',
+            '17' => 'A SAMOZREJME NEZABUDNITE PRIDAŤ SVOJU AKTIVITU A NAHRAŤ JU <a href="/add">SEM</a>!',
+        ],
+    ],
 ];

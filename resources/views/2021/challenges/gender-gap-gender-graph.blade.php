@@ -94,10 +94,12 @@
                             </div>
                             <div>
                                 <p class="p-0 mb-4 text-2xl font-normal">{{ $ts("challenges-content.$slug.experience_title") }}</p>
-                                <div class="flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full w-fit">
+                                @foreach ($tarr("challenges-content.$slug.experiences") as $experience)
+                                <div class="flex gap-2 items-center px-4 py-1.5 bg-light-blue-100 rounded-full w-fit mb-2">
                                     <img src="{{ asset('img/2021/challenges/icons/fi_lightbulb.svg') }}" />
-                                    <p class="p-0 font-semibold text-slate-500 text-default">{{ $ts("challenges-content.$slug.experience") }}</p>
+                                    <p class="p-0 font-semibold text-slate-500 text-default">{{ $experience }}</p>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="p-6 bg-white rounded-lg">
@@ -110,18 +112,18 @@
                         </div>
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">{{ $ts("challenges-content.$slug.materials_title") }}</p>
-                            <ul class="ml-4 list-decimal">
+                            <ul class="ml-4 list-decimal break-word">
                                 @foreach ($tarr("challenges-content.$slug.materials") as $material)
-                                    @php $m = is_array($material) ? implode(' ', array_map('strval', $material)) : (string)$material; @endphp
-                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">
-                                        @if (preg_match('~^https?://~i', $m))
-                                            <a href="{{ $m }}" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline text-[#1c4da1]">
-                                                {{ $m }}
-                                            </a>
-                                        @else
-                                            {{ $m }}
-                                        @endif
-                                    </li>
+                                    @php
+                                        $m = is_array($material) ? implode(' ', array_map('strval', $material)) : (string) $material;
+                                        $m = preg_replace_callback(
+                                            '~(https?://[^\s]+)~i',
+                                            fn($matches) => '<a href="'.$matches[1].'" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline text-[#1c4da1]">'.$matches[1].'</a>',
+                                            $m
+                                        );
+                                    @endphp
+
+                                    <li class="p-0 font-normal leading-7 text-slate-500 text-default">{!! $m !!}</li>
                                 @endforeach
                             </ul>
                         </div>
@@ -245,11 +247,15 @@
                                 {{-- ul nested: 25,26,27 + 28..29 --}}
                                 <ul class="mb-6 ml-6 list-disc text-slate-500 text-default md:text-xl">
                                     @if (!empty($items[25])) <li>{{ is_array($items[25]) ? json_encode($items[25]) : $items[25] }}</li> @endif
-                                    @if (!empty($items[26])) <li>{{ is_array($items[26]) ? json_encode($items[26]) : $items[26] }}</li> @endif
+                                    @if (!empty($items[26])) <li class="list-none">
+                                        <ul class="ml-6" style="list-style-type: circle;">
+                                            <li>{{ is_array($items[26]) ? json_encode($items[26]) : $items[26] }}</li>
+                                        </ul>
+                                        </li>@endif
                                     @if (!empty($items[27]))
                                         <li>
                                             {{ is_array($items[27]) ? json_encode($items[27]) : $items[27] }}
-                                            <ul class="ml-6 list-disc">
+                                            <ul class="ml-6" style="list-style-type: circle;">
                                                 @foreach ([28, 29] as $i)
                                                     @if (!empty($items[$i])) <li>{{ is_array($items[$i]) ? json_encode($items[$i]) : $items[$i] }}</li> @endif
                                                 @endforeach
@@ -271,7 +277,7 @@
 
                                 {{-- Discussion: 34 + ordered 35..39 --}}
                                 @if (!empty($items[34])) <strong class="block mb-2 text-default md:text-xl">{{ strip_tags(is_array($items[34]) ? json_encode($items[34]) : $items[34]) }}</strong> @endif
-                                <ol class="mb-6 ml-6 list-decimal text-slate-500 text-default md:text-xl">
+                                <ol class="mb-6 ml-6 text-slate-500 text-default md:text-xl" style="list-style: lower-alpha;">
                                     @foreach (range(35, 39) as $i)
                                         @if (!empty($items[$i])) <li>{{ is_array($items[$i]) ? json_encode($items[$i]) : $items[$i] }}</li> @endif
                                     @endforeach
