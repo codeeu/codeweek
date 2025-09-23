@@ -4,6 +4,7 @@ return [
     'title' => 'PROVOCĂRILE SĂPTĂMÂNII UE A PROGRAMĂRII',
     'date' => '9-24 octombrie 2021',
     'common' => [
+        'educational-goals' => 'Obiective educaționale',
         'target-audience' => 'Publicul-țintă',
         'pre-primary' => 'Copiii preșcolari',
         'experience' => 'Experiență',

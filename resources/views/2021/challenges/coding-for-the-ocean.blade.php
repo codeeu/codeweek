@@ -153,45 +153,45 @@
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges.common.description')</p>
                                 <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
-                                    {{ $desc }}
+                                    {!! nl2br($desc) !!}
                                 </p>
                             </div>
 
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges.common.instructions')</p>
-                                <ol class="list-decimal ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                <ol class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
                                     @foreach ($tarr("challenges-content.$slug.instructions") as $instruction)
                                         <li class="p-0 font-normal text-default md:text-xl text-slate-500">
-                                            {{ is_array($instruction) ? json_encode($instruction) : $instruction }}
+                                            {!! is_array($instruction) ? json_encode($instruction) : nl2br($instruction) !!}
                                         </li>
                                     @endforeach
                                 </ol>
+                                <img width="100%" src="/images/challenges/coding-for-the-ocean/2.png">
                             </div>
 
                             @include('2021.challenges._share')
 
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">{{ $ts("challenges-content.$slug.real-life-applications_title") }}</p>
-                                <ul class="list-disc ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                <ul class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
                                     @foreach ($tarr("challenges-content.$slug.real-life-applications") as $real_life_application)
                                         <li class="p-0 font-normal text-default md:text-xl text-slate-500">{{ $real_life_application }}</li>
                                     @endforeach
                                 </ul>
                             </div>
 
-                            <img width="100%" src="/images/challenges/coding-for-the-ocean/2.png">
-                            <img width="100%" src="/images/challenges/coding-for-the-ocean/3.png">
-                            <img width="100%" src="/images/challenges/coding-for-the-ocean/4.png">
-                            <img width="100%" src="/images/challenges/coding-for-the-ocean/5.png">
-                            <img width="100%" src="/images/challenges/coding-for-the-ocean/6.png">
-
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">{{ $ts("challenges-content.$slug.variations_title") }}</p>
-                                <ul class="list-disc ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                <ul class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
                                     @foreach ($tarr("challenges-content.$slug.variations") as $variation)
                                         <li class="p-0 font-normal text-default md:text-xl text-slate-500">{{ $variation }}</li>
                                     @endforeach
                                 </ul>
+
+                                <img width="100%" src="/images/challenges/coding-for-the-ocean/3.png">
+                                <img width="100%" src="/images/challenges/coding-for-the-ocean/4.png">
+                                <img width="100%" src="/images/challenges/coding-for-the-ocean/5.png">
+                                <img width="100%" src="/images/challenges/coding-for-the-ocean/6.png">
                             </div>
 
                             @include('2021.challenges._download', [

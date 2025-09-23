@@ -4,6 +4,7 @@ return [
     'title' => 'RETOS DE LA SEMANA DE LA PROGRAMACIÓN DE LA UE',
     'date' => '9-24 de octubre de 2021',
     'common' => [
+        'educational-goals' => 'Objetivos educativos',
         'target-audience' => 'Público objetivo',
         'pre-primary' => 'Estudiantes de Educación Infantil',
         'experience' => 'Experiencia',

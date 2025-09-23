@@ -4,6 +4,7 @@ return [
     'title' => 'EU:N KOODAUSVIIKON HAASTEET',
     'date' => '9. –24. lokakuuta 2021',
     'common' => [
+        'educational-goals' => 'Koulutustavoitteet',
         'target-audience' => 'Kohderyhmä',
         'pre-primary' => 'Varhaiskasvatuksen oppilaat',
         'experience' => 'Osaamistaso',
