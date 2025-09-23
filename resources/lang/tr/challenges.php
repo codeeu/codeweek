@@ -4,6 +4,7 @@ return [
     'title' => 'AB KOD HAFTASI GÖREVLERİ',
     'date' => '9-24 Ekim 2021',
     'common' => [
+        'educational-goals' => 'Eğitim hedefleri',
         'target-audience' => 'Hedef Kitle',
         'pre-primary' => 'Okul öncesi öğrenciler',
         'experience' => 'Deneyim',

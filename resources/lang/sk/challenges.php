@@ -4,6 +4,7 @@ return [
     'title' => 'VÝZVY EURÓPSKEHO TÝŽDŇA PROGRAMOVANIA',
     'date' => '9. – 24. októbra 2021',
     'common' => [
+        'educational-goals' => 'Vzdelávacie ciele',
         'target-audience' => 'Cieľová skupina',
         'pre-primary' => 'Škôlkári a predškoláci',
         'experience' => 'Skúsenosti',

@@ -4,6 +4,7 @@ return [
     'title' => 'IZZIVI EVROPSKEGA TEDNA PROGRAMIRANJA',
     'date' => '9.–24. oktober 2021',
     'common' => [
+        'educational-goals' => 'Cilji',
         'target-audience' => 'Ciljno občinstvo',
         'pre-primary' => 'Predšolski učenci',
         'experience' => 'Izkušnje',

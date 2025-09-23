@@ -122,59 +122,63 @@
                             </div>
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges.common.instructions')</p>
-                                <ol class="list-decimal ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                <ol class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.0")
                                     </li>
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.1")
                                     </li>
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.2")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.3")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.3")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.4")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.4")
+                                    </li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.5")
                                     </li>
                                     <img width="100%" src="/images/challenges/code-it-like-margaret-hamilton/0.jpg">
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.5")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.6")
                                     </li>
                                     <img width="100%" src="/images/challenges/code-it-like-margaret-hamilton/1.jpg">
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.6")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.7")
                                     </li>
                                     <img width="100%" src="/images/challenges/code-it-like-margaret-hamilton/2.jpg">
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.7")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.8")
                                     </li>
                                     <img width="100%" src="/images/challenges/code-it-like-margaret-hamilton/3.jpg">
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.8")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.9")
                                     </li>
                                     <img width="100%" src="/images/challenges/code-it-like-margaret-hamilton/4.jpg">
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.instructions.9")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.instructions.10")
                                     </li>
                                 </ol>
                             </div>
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">
                                     @lang("challenges-content.$slug.real-life-applications.0")</p>
-                                <ul class="list-disc ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                <ul class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.real-life-applications.1")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.real-life-applications.2")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.real-life-applications.2")
+                                    </li>
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.real-life-applications.3")
                                     </li>
                                 </ul>
                             </div>
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">
                                     @lang("challenges-content.$slug.variations.0")</p>
-                                <ul class="list-disc ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.variations.1")
+                                <ul class="list-none ml-4 [&_li]:my-2 leading-[22px] md:leading-[30px]">
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.variations.1")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.variations.2")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.variations.2")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.variations.3")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.variations.3")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.variations.4")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.variations.4")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.variations.5")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.variations.5")
                                     </li>
-                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">@lang("challenges-content.$slug.variations.6")
+                                    <li class="p-0 font-normal text-default md:text-xl text-slate-500">&nbsp;&nbsp;●&nbsp;@lang("challenges-content.$slug.variations.6")
                                     </li>
                                     <img width="100%" src="/images/challenges/code-it-like-margaret-hamilton/5.jpg">
                                     <img width="100%" src="/images/challenges/code-it-like-margaret-hamilton/6.jpg">

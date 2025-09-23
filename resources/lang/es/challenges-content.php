@@ -1,566 +1,642 @@
 <?php
 
 return [
-'create-your-own-website-with-html-and-css' => [
-    'title' => 'Crea tu propia página web con HTML y CSS',
-    'author' => 'Marko Šolić',
+    'create-your-own-website-with-html-and-css' => [
+        'title' => 'Crea tu propia página web con HTML y CSS',
+        'author' => 'Marko Šolić',
 
-    'purposes_title' => 'Propósito del reto',
-    'purposes' => [
-        'El propósito de este reto es introducir a los principiantes en el mundo del desarrollo web.',
-        'Al completar este proyecto, los participantes aprenderán lo básico de HTML y CSS, fundamentales para crear y dar estilo a páginas web.',
-        'El reto enfatiza el aprendizaje práctico, ayudándote a construir tu propia web desde cero.',
-        'Ganarás habilidades esenciales de diseño web y más confianza para construir tu presencia online.'
+        'purposes_title' => 'Propósito del reto',
+        'purposes' => [
+            'El propósito de este reto es introducir a los principiantes en el mundo del desarrollo web.',
+            'Al completar este proyecto, los participantes aprenderán lo básico de HTML y CSS, fundamentales para crear y dar estilo a páginas web.',
+            'El reto enfatiza el aprendizaje práctico, ayudándote a construir tu propia web desde cero.',
+            'Ganarás habilidades esenciales de diseño web y más confianza para construir tu presencia online.'
+        ],
+
+        'description_title' => 'Descripción del reto',
+        'description' => [
+            'Las páginas web son la base de la presencia en Internet. En esta lección aprenderás a usar HTML para estructurar contenido y CSS para estilizar y crear tu primera web.',
+            'Mediante pasos divertidos, crearás una página que puede contener texto, imágenes, colores y enlaces.'
+        ],
+
+        'target_audience_title' => 'Público objetivo',
+        'target_audience' => [
+            'Este reto está dirigido a principiantes interesados en aprender a crear páginas web.',
+            'Es perfecto para quienes son nuevos en el desarrollo web, estudiantes o cualquier persona curiosa sobre cómo se construyen los sitios.',
+            'No se requiere experiencia previa en programación.'
+        ],
+
+        'experience_title' => 'Experiencia',
+        'experience' => [
+            'Es un reto de nivel inicial. Aunque algunos conocimientos básicos de uso del ordenador (como manejar un editor de texto) pueden ayudar, no son necesarios.',
+            'El reto está diseñado como una introducción a HTML y CSS.'
+        ],
+
+        'duration_title' => 'Duración',
+        'duration' => 'Este reto debería llevar aproximadamente de 1 a 2 horas, según tu nivel de experiencia y cuánto explores más allá de lo básico.',
+
+        'materials_title' => 'Herramientas recomendadas:',
+        'materials' => [
+            'PC / portátil',
+            'Editor de texto común, como el Bloc de notas (Windows) o TextEdit (Mac)'
+        ],
+
+        'instructions_title' => 'Instrucciones',
+        'instructions' => [
+            'Consejos para docentes antes de comenzar:',
+            'Si eres nuevo/a en el desarrollo web, ¡no te preocupes! Aquí tienes algunos consejos para ayudar a guiar al alumnado durante el proceso:',
+            'Empieza por lo básico: céntrate en explicar los conceptos clave de HTML (estructura de una página web) y CSS (estilo de los elementos).',
+            'Sé paciente y permite al alumnado tiempo para entender el propósito de cada etiqueta (tag) y propiedad.',
+            'Explica la estructura: al presentar etiquetas HTML, desglosa visualmente cómo está estructurado el documento.',
+            'Muestra la relación entre etiquetas de apertura y cierre, atributos y anidamiento (nesting).',
+            'Evita errores comunes: quienes comienzan a menudo olvidan cerrar correctamente las etiquetas o colocan mal las llaves {} en CSS.',
+            'Recuerda al alumnado que revise periódicamente los errores de sintaxis.',
+            'Aprendizaje interactivo: fomenta que experimenten cambiando texto y estilos.',
+            'Muéstrales cómo los pequeños cambios en HTML o CSS se reflejan de inmediato al actualizar el navegador.',
+            'Mantén la creatividad: no existe una única forma “correcta” de diseñar una web.',
+            'Anima a explorar distintas tipografías, colores y maquetaciones.',
+            'Errores comunes a vigilar:',
+            'Olvidar enlazar el archivo CSS con el archivo HTML.',
+            'Anidamiento incorrecto de etiquetas en HTML.',
+            'Errores tipográficos en propiedades CSS (p. ej., usar «colour» en lugar de «color» en algunos casos).',
+            'Complicar en exceso la estructura: ¡los sitios sencillos pueden verse muy profesionales con solo unas pocas líneas de código!',
+
+            'Paso 1: Preparación del entorno',
+            'Para crear una web no necesitas herramientas especiales más allá de un editor de texto común, como el Bloc de notas (Windows) o TextEdit (Mac).',
+            'Todo un sitio puede hacerse en un editor de texto sencillo; incluso hay webs en Internet creadas completamente así.',
+            'Si quieres ver un ejemplo de este tipo de sitio, visita la web de la Asociación Croata de Informática: hsin.hr',
+
+            'Paso 2: Estructura básica de un documento HTML',
+            'Abre un documento nuevo en tu editor y guárdalo como index.html',
+            'Según la versión de Windows o macOS que uses, primero necesitarás activar la opción que permite modificar extensiones de archivo, porque index.txt debe convertirse en index.html',
+            'En un editor como el Bloc de notas, introduce la estructura básica del documento HTML:',
+            '<!DOCTYPE html>',
+            '<html lang="en">',
+            '<head>',
+            '<target charset="UTF-8">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '<title>My first website</title>',
+            '</head>',
+            '<body>',
+            '<h1>Welcome to my website!</h1>',
+            '<p>This is my first website I created using HTML and CSS.</p>',
+            '</body>',
+            '</html>',
+            'Así debería verse tu sitio web sin CSS (en croata; tu ejemplo, por supuesto, en español):',
+
+            'Paso 3: Añadir estilos con CSS',
+            'CSS se usa para dar estilo a los elementos de la página. Para empezar, añadiremos estilos básicos como color de fondo, color del texto y tamaño de fuente.',
+            'En la misma carpeta, crea un documento de texto nuevo y llámalo style.css.',
+            'En style.css, escribe lo siguiente:',
+            'body {',
+            'background-colour: #f0f8ff; /* Light blue background */',
+            'colour: #333; /* Dark Gray Text */',
+            'font-family: Arial, sans-serif; /* Font for text */',
+            'text-align: centre; /* Align text to centre */',
+            '}',
+            'h1 {',
+            'colour: #4CAF50; /* Green title */',
+            '}',
+            'p {',
+            'font-size: 18px; /* Paragraph font size */',
+            'colour: #555; /* Gray-blue text for paragraph */',
+            '}',
+
+            'Paso 4: Conectar HTML con CSS',
+            'Una vez creado el archivo CSS, debes enlazarlo con el archivo HTML.',
+            'Hazlo en la sección <head> del HTML añadiendo la siguiente línea de código:',
+            '<link rel="stylesheet" href="style.css">',
+            'Así el documento HTML “sabe” que debe usar los estilos del archivo CSS.',
+
+            'Paso 5: Inicia tu página',
+            'Guarda ambos archivos: index.html y style.css.',
+            'Haz doble clic en index.html y ábrelo en tu navegador.',
+            'Ahora verás tu web con el texto centrado y los estilos básicos que has añadido',
+            'Así debería verse tu sitio web ahora:',
+
+            'Fomentar la diversidad en STEM:',
+            '¡El desarrollo web es para todos! Ya seas un/a estudiante joven, una persona adulta buscando una nueva carrera o alguien de un grupo subrepresentado, este reto te invita a explorar el apasionante mundo de crear sitios web.',
+            'Los campos STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) han tenido históricamente poca diversidad; es importante animar a todas las personas —sin importar género, raza u origen— a explorar la programación y la tecnología.',
+            'Cada persona aporta perspectivas y experiencias únicas que pueden hacer el desarrollo web más creativo e inclusivo.',
+            'Mientras trabajas en tu sitio, piensa cómo hacer del mundo digital un lugar donde todas las personas se sientan representadas y bienvenidas.',
+            'No necesitas ser experto/a en tecnología para empezar: ¡simplemente empieza a aprender y construye a partir de ahí!',
+
+            'Haz tu web accesible:',
+            'Al construir una web, es importante garantizar que puedan acceder a ella el mayor número de personas posible, incluidas personas con discapacidad.',
+            'Algunos consejos para crear sitios más accesibles:',
+            'Contraste: asegúrate de un buen contraste entre el fondo y el color del texto para facilitar la lectura a personas con discapacidad visual.',
+            'Por ejemplo, un fondo claro con texto oscuro funciona mejor.',
+            'Texto alternativo (alt) para imágenes: si añades imágenes (en pasos posteriores), añade texto alternativo que describa qué muestra la imagen.',
+            'Esto es especialmente útil para quienes utilizan lectores de pantalla.',
+            'HTML semántico: usa etiquetas correctas de HTML para una mejor estructura y accesibilidad.',
+            'Por ejemplo, usa <h1> para el título principal y <p> para los párrafos, lo que ayuda a los lectores de pantalla a entender mejor el contenido.',
+            'Enfócate en la legibilidad: asegúrate de que el texto sea fácil de leer con una tipografía sencilla sin serifas como Arial.',
+            'También puedes aumentar el tamaño de fuente para mejorar la legibilidad.',
+        ],
+
+        'mini_simulation_title' => 'Mini-simulación:',
+        'mini_simulation' => [
+            'Comprueba tus conocimientos',
+            '1. ¿Qué es HTML?',
+            'Lenguaje de programación para crear imágenes',
+            'Lenguaje para estructurar contenido en el sitio web',
+            'Editor de imágenes',
+            '2. ¿Qué es CSS?',
+            'Lenguaje para crear bases de datos en línea',
+            'Lenguaje para el estilo y la maquetación de sitios web',
+            'Programa para gestionar archivos del ordenador',
+            '3. ¿Cómo conectamos CSS con HTML?',
+            'Usando la etiqueta <link> en el documento HTML',
+            'Usando etiquetas <style> dentro de HTML',
+            'No se puede conectar',
+            'Respuestas correctas: 1.b, 2.b, 3.a',
+            'Modifica tu página:',
+            'Prueba a cambiar el color de fondo.',
+            'Añade otro encabezado (h2) con texto debajo del título principal.',
+            'Añade un enlace a otro sitio web, p. ej., Google.',
+            '¡Después de cualquier cambio, actualiza la página!',
+        ],
+
+        'additional_resources_title' => 'Recursos adicionales:',
+        'additional_resources' => [
+            'https://developer.mozilla.org/en-US/docs/Web/HTML',
+            'https://developer.mozilla.org/en-US/docs/Web/CSS',
+        ]
     ],
 
-    'description_title' => 'Descripción del reto',
-    'description' => [
-        'Las páginas web son la base de la presencia en Internet. En esta lección aprenderás a usar HTML para estructurar contenido y CSS para estilizar y crear tu primera web.',
-        'Mediante pasos divertidos, crearás una página que puede contener texto, imágenes, colores y enlaces.'
+    'train-it-like-fei-fei-li' => [
+        'title' => 'Entrénalo como Fei-Fei Li – ¡Dando visión a los ordenadors!',
+        'author' => 'Chouliara Theodora',
+        'purposes_title' => 'Propósito del reto',
+        'purposes' => [
+            'Aprender los conceptos básicos del Machine Learning y el reconocimiento de imágenes.',
+            'Entrenar un ordenador para distinguir entre diferentes imágenes (p. ej., perro vs. gato, muñecas vs. ositos de peluche).',
+            'Explorar cómo se utilizan la IA y el aprendizaje automático en la vida real.',
+            'Inspirarse en las contribuciones de Fei-Fei Li a la IA y al reconocimiento de imágenes.',
+            'Animar a las niñas a participar en carreras de codificación y STEM.'
+        ],
+        'description_title' => 'Descripción del reto',
+        'description' => '¡Entrena un modelo de IA como Fei-Fei Li! Utiliza Teachable Machine para enseñar a un ordenador a reconocer imágenes y explorar el poder del aprendizaje automático mientras rompe los estereotipos de género en la tecnología.',
+        'target_audience_title' => 'Público objetivo',
+        'target_audience' => 'Alumnos de primaria (6 a 12 años)',
+        'experience_title' => 'Experiencia',
+        'experience' => 'Principiante - No se requiere experiencia previa en codificación; adecuado para principiantes completos.',
+        'duration_title' => 'Duración',
+        'duration' => '60 minutos',
+        'materials_title' => 'Herramienta recomendada',
+        'materials' => [
+            'Teachable Machine (accesible a través del navegador web)',
+            'Ordenador/computadora o tableta con cámara',
+            'Conexión a Internet (para entrenar el modelo de IA)',
+            'Juguetes y objetos del aula (p. ej., muñecas, ositos de peluche) para entrenar el modelo de IA',
+            'Proyector o pantalla (opcional, para demostraciones en el aula))'
+        ],
+        'instructions_title' => 'Instrucciones',
+        'instructions' => [
+            'Paso 1: Introducción al Aprendizaje Automático y Fei-Fei Li',
+            'Explique el aprendizaje automático:',
+            'Los ordenadores pueden aprender a reconocer imágenes, al igual que los humanos. El aprendizaje automático ayuda Los ordenadores "ven" objetos analizando ejemplos.',
+            'Presentamos a Fei-Fei Li:',
+            'Fei-Fei Li es un científico líder en IA y visión por computadora. Desarrolló ImageNet, Un enorme conjunto de datos que enseñó a las computadoras a reconocer imágenes. Al igual que Fei-Fei Li ayudó ¡Los niños y las niñas también pueden enseñar a un ordenador/computadora a reconocer objetos!',
+            'Paso 2: Configurar la máquina enseñable',
+            'Ir a Máquina Enseñable (https://teachablemachine.withgoogle.com/train)',
+            'Elija "Proyecto de imagen" para entrenar a la computadora para que reconozca imágenes.',
+            'Haga clic en "Modelo de imagen estándar".',
+            'Paso 3: Elegir categorías para la formación',
+            'Decida qué categorías desea que reconozca el equipo. Puedes crear Categorías basadas en objetos del aula (p. ej., bloques, ositos de peluche, muñecas, etc.).',
+            'Ejemplos de categorías: Muñecas y ositos de peluche',
+            'Paso 4: Recopilar imágenes de entrenamiento',
+            'Crea dos categorías: Muñecas y Ositos de peluche.',
+            'Opción 1: Usar objetos reales',
+            'Muestre una muñeca frente a la cámara y tome fotos para la categoría "Muñecas".',
+            'Haz lo mismo con un osito de peluche para la categoría "Ositos de peluche".',
+            'Opción 2: Buscar imágenes en línea',
+            'Busca imágenes de muñecas y osos de peluche en Google.',
+            'Guarde las imágenes en dos carpetas separadas ("Muñecas" y "Ositos de peluche").',
+            'Cargue las imágenes de cada carpeta en Teachable Machine para el entrenamiento.',
+            'Paso 5: Entrenar el modelo de IA',
+            'Después de capturar suficientes imágenes, haga clic en "Entrenar modelo".',
+            'Espere a que el modelo aprenda de las imágenes.',
+            'Paso 6: Probar el modelo',
+            'Una vez que el modelo esté entrenado, haga clic en "Probar modelo" para ver qué tan bien reconoce nuevos Imágenes. Pruebe la IA mostrando al ordenador nuevos objetos que no formaban parte de la Imágenes de entrenamiento (p. ej., mostrar un juguete que no se usó para el entrenamiento). Vea lo bien que funciona el El modelo lo reconoce y lo categoriza correctamente.',
+            'Paso 7: Evaluar el modelo',
+            'Analice con los estudiantes:',
+            '¿El modelo reconoció correctamente los objetos?',
+            '¿Hubo algún error? ¿Qué se podría mejorar?',
+            '¿Qué pasa si lo entrenas con más imágenes?',
+            'Paso 8: Guardar y compartir el modelo',
+            'Una vez que esté satisfecho con la precisión del modelo, haga clic en "Exportar modelo" para guardar su proyecto. Puede compartir el modelo con otras clases o en la máquina de enseñanza haciendo clic en "Compartir".',
+            'El modelo que hicimos arriba se puede encontrar aquí: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+        ],
+        'examples_title' => 'Ejemplos',
+        'examples' => [
+            'IA en el comercio minorista y las compras:',
+            'Algunas tiendas utilizan cámaras impulsadas por IA para reconocer productos y realizar un seguimiento del inventario.',
+            'Una tecnología similar ayuda a los sistemas de autopago a reconocer los artículos sin códigos de barras.',
+            'IA y tecnología de asistencia',
+            'La IA puede identificar objetos para ayudar a las personas con discapacidad visual a navegar por el mundo.',
+            'Las cámaras inteligentes pueden describir lo que "ven" para ayudar a los usuarios en tiempo real.'
+        ],
     ],
 
-    'target_audience_title' => 'Público objetivo',
-    'target_audience' => [
-        'Este reto está dirigido a principiantes interesados en aprender a crear páginas web.',
-        'Es perfecto para quienes son nuevos en el desarrollo web, estudiantes o cualquier persona curiosa sobre cómo se construyen los sitios.',
-        'No se requiere experiencia previa en programación.'
+    'simulate-dice-in-python' => [
+        'title' => 'Simulación de lanzamiento de dados en Python',
+        'author' => 'Marko Šolić',
+        'purposes_title' => 'Propósito del desafío',
+        'purposes' => [
+            'El propósito de este desafío es introducir a los estudiantes en la generación de números aleatorios y los bucles en Python.',
+            'Al simular un lanzamiento de dado, los estudiantes aprenderán cómo los ordenadores pueden generar resultados aleatorios y cómo repetir acciones múltiples veces utilizando un bucle.',
+            'Este ejercicio también establece las bases para construir juegos simples y simulaciones.'
+        ],
+        'description_title' => 'Descripción del desafío',
+        'description' => [
+            'La simulación de lanzamiento de dado es una excelente manera de aprender a trabajar con números aleatorios en Python.',
+            'En esta lección, aprenderemos cómo usar el módulo random para generar números aleatorios y cómo usar ese número para simular un lanzamiento de dado.',
+            'A través de esta tarea, comprenderás cómo Python puede generar números dentro de un rango específico.'
+        ],
+        'target_audience_title' => 'Público objetivo',
+        'target_audience' => ' Estudiantes de Primaria y Secundaria, personas que se inician en Python o cualquiera que quiera aprender sobre números aleatorios, juegos o lógica básica de programación.',
+        'experience_title' => 'Experiencia',
+        'experience' => 'No se requiere experiencia previa en programación. Es suficiente con tener conocimientos básicos de escritura y uso de un ordenador.',
+        'duration_title' => 'Duración',
+        'durations' => [
+            'De 30 a 45 minutos para una versión básica.',
+            'Hasta 60 minutos si se exploran opciones avanzadas (dos dados, el lanzamiento más frecuente, etc.).'
+        ],
+        'materials_title' => 'Herramienta recomendada:',
+        'materials' => [
+            'Para empezar, necesitas tener Python instalado en tu ordenador. Si no lo has hecho aún, descarga Python desde el sitio web oficial: https://www.python.org',
+            'Abre Python IDLE o cualquier editor de texto (por ejemplo, Visual Studio Code, PyCharm) para escribir tu código.'
+        ],
+        'instructions_title' => 'Instrucciones',
+        'instructions' => [
+            'Paso 1: Preparar el entorno',
+            'Para comenzar, necesitas tener Python instalado en tu computadora.',
+            'Si aún no lo tienes, descarga Python desde el sitio web oficial.',
+            'Abre Python IDLE o cualquier editor de texto (por ejemplo, Visual Studio Code, PyCharm) para escribir código.',
+            'Paso 2: Escribir el programa',
+            'Abre Python IDLE y crea un nuevo archivo llamado dice.py.',
+            'Ingresa el siguiente código:',
+            '# Importamos el módulo \'random\' para generar números aleatorios',
+            'import random',
+            'Imprimimos un saludo al usuarioprint("¡Bienvenido a la simulación de lanzamiento de dados!")',
+            'Preguntamos al usuario cuántas veces quiere lanzar el dado',
+            'throw_num = int(input("¿Cuántas veces quieres lanzar el dado? "))',
+            'for i in range(throw_num):',
+            'result = random.randint(1, 6)  # Generamos un número aleatorio entre 1 y 6',
+            'print(f"Lanzamiento {i + 1}: {result}")',
+            'print("¡Gracias por jugar!")',
+            'Representación visual del código en Python IDLE',
+            '¡Asegúrate de que las sangrías en tu código sean las mismas que en el ejemplo anterior!',
+            'Paso 3: Explicación del código',
+            'Importar el módulo random: El módulo random permite generar números aleatorios. La función random.randint(a, b) devuelve un número entero aleatorio en el rango de a a b, incluyendo ambos extremos.',
+            'Introducir el número de lanzamientos: El programa le pide al usuario que ingrese cuántas veces quiere lanzar el dado. Convertimos el número ingresado en un entero utilizando int().',
+            'Simulación de lanzamientos: El programa usa un bucle for para realizar la simulación del lanzamiento tantas veces como el usuario haya ingresado. Para cada lanzamiento, se genera un número aleatorio entre 1 y 6, que representa el resultado del lanzamiento.',
+            'Imprimir resultados: Para cada lanzamiento, se imprime el resultado (el número que "cayó" en el dado). Al final del programa, se imprime un mensaje de agradecimiento',
+            'Paso 4: Ejecutar el programa',
+            'Guarda el archivo como dice.py.',
+            'Ejecuta tu programa en Python IDLE.',
+            'Ingresa el número de veces que deseas lanzar el dado (por ejemplo, 5).',
+            'El programa generará números aleatorios y los imprimirá como resultado de cada lanzamiento.',
+        ],
+        'quiz_title' => 'Quiz:',
+        'quiz' => [
+            '¿Qué módulo en Python permite generar números aleatorios?',
+            'random',
+            'matematicas',
+            'tiempo',
+            '¿Qué hace la función random.randint(1, 6)?',
+            'Genera un número aleatorio entre 1 y 6',
+            'Muestra un número aleatorio en la pantalla',
+            'Muestra un número entre 1 y 6',
+            '¿Cómo conviertes la entrada de un usuario a un número entero en Python?',
+            'float(s)',
+            'int()',
+            'p()',
+            'Respuestas correctas: 1.a, 2.a, 3.b'
+        ],
+        'mini_simulation_title' => 'Mini simulación:',
+        'mini_simulation' => [
+            'Modifica el programa:',
+            'Agrega una opción para simular dos lanzamientos de dados y sumar sus resultados.',
+            'Agrega una opción para que el programa muestre el número de veces que el programa ha "caído" en el número que más veces ha salido en los dados.',
+        ],
+        'additional_resources_title' => 'Recursos adicionales:',
+        'additional_resources' => [
+            'Python official documentation - random module',
+            'Learn Python'
+        ]
     ],
 
-    'experience_title' => 'Experiencia',
-    'experience' => [
-        'Es un reto de nivel inicial. Aunque algunos conocimientos básicos de uso del ordenador (como manejar un editor de texto) pueden ayudar, no son necesarios.',
-        'El reto está diseñado como una introducción a HTML y CSS.'
+    'gender-gap-gender-graph' => [
+        'title' => 'Brecha de género, Gráfico de género',
+        'author' => 'Theodora S. Tziampazi',
+        'purposes_title' => 'Propósito del desafío',
+        'purposes' => [
+            'Comprender cómo la visualización de datos puede influir en la percepción.',
+            'Identificar sesgos en herramientas digitales a través de la interacción.',
+            'Experimentar con la entrada de datos para observar distorsiones.',
+            'Modificar el código para garantizar una representación precisa de los datos.',
+            'Comparae visualizaciones de datos justas y sesgadas.',
+            'Reflexionar sobre las implicaciones éticas de la manipulación de datos.',
+            'Discutir las consecuencias en el mundo real de las estadísticas sesgadas.',
+            'Desarrollar el pensamiento crítico sobre la IA y el sesgo algorítmico.'
+        ],
+        'description_title' => 'Descripción del desafío',
+        'description' => 'Investigar el sesgo en la visualización de datos introduciendo valores, analizando distorsiones, modificando el código y explorando cómo las herramientas digitales influyen en las percepciones de la representación de género en la tecnología.',
+        'educational_goals_title' => 'Educational goals',
+        'educational_goals' => [
+            'Coding and Programming Logic:',
+            'Computational Thinking:',
+            'Problem Solving and Debugging:',
+            'Creativity and Design Thinking:',
+            'Collaboration and Communication:',
+        ],
+        'target_audience_title' => 'Público destinatario',
+        'target_audience' => [
+            'Estudiantes de Primaria (6 a 12 años)',
+            'Estudiantes de Secundaria (12 a 16 años)',
+            'Estudiantes de Secundaria y Bachillerato (16 a 18 años)',
+            'Profesores y educadores'
+        ],
+        'experience_title' => 'Experiencia',
+        'experiences' => [
+            'Intermedia - Se recomiendan algunos conocimientos básicos de codificación; los participantes deben estar familiarizados con los conceptos fundamentales de programación.',
+            'Avanzado: diseñado para participantes con habilidades de codificación sólidas y experiencia previa en programación.'
+        ],
+        'duration_title' => 'Duración',
+        'duration' => '2 horas',
+        'materials_title' => 'Herramienta recomendada',
+        'materials' => [
+            'Scratch 3 y la hoja de cálculo https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+        ],
+        'instructions_title' => 'Instrucciones',
+        'instructions' => [
+            'Eres el usuario de esta herramienta digital (fabricante de barras) https://scratch.mit.edu/projects/1147892829 . No mires dentro del código todavía.',
+            'Haz clic en la bandera verde e inserta los datos (1-10) que hipotéticamente representan el número de mujeres en un sector tecnológico. Prueba con algunos números.',
+            '',
+            '¿Qué notas?',
+            '¿Podría ser un error o una decisión?',
+            'De cualquier manera, ¿cómo se puede arreglar?',
+            'Manualmente (nivel de usuario):',
+            'Explora la herramienta y cualquier sprite arrastrable.',
+            '¿Hay alguna posición en la que se resuelva el problema?',
+            '¿Existe una situación en la que se observe otro resultado inesperado?',
+            'Alimento para el pensamiento/discusión',
+            '¿Y si se subestima el número de mujeres en un sector?',
+            '¿Y si se sobreestima el número de mujeres en un sector?',
+            '¿Y si el número de mujeres en un sector está bien estimado, pero no equilibrado en términos de brecha de género? ¿Qué se debe hacer?',
+            'Nota: La forma en que usamos la herramienta (donde situamos un componente) afecta el resultado.',
+            'Con la codificación (nivel de creador): Ahora, es el momento de ver el interior del proyecto.',
+            'Desafío simple:',
+            'Hackea el código para que los datos presentados sean iguales a los datos insertados en cualquier caso.',
+            'Desafío avanzado:',
+            'Copia el sprite de barra y hazlo azul (estereotipado como masculino).',
+            'Cambia la posición para que sea visible y comparable con la barra púrpura.',
+            'Crea un símbolo masculino como un nuevo sprite.',
+            'Sugerencia: Puedes descargar/exportar ambos sprites (barra, símbolo) del proyecto que se muestra al final de esta sección como solución.',
+            'Ahora, hackea los códigos de modo que cuando la entrada del usuario es x (ahora dado 2 veces por cada barra), los 2 fabricantes de barras son:',
+            'Feria (mismo código). Realiza ajustes en la posición y del símbolo masculino en su condición. Depura a medida que se procede a comprobar ambos códigos.',
+            'Uso injusto: Arrastra los 2 símbolos en diferentes posiciones; da la misma entrada para ver la desigualdad.',
+            'Lado/sesgado (código diferente)',
+            'A favor de los hombres',
+            'A favor de las mujeres',
+            'Experimenta para que el código mitigue o exacerbe la brecha de género…',
+            'Explora las dos formas en que el resultado está sesgado (arrastrar y/o codificar).',
+            '¿Cómo podrían relacionarse entre sí estas dos formas?',
+            'Una solución (mismo código): https://scratch.mit.edu/projects/1151892036',
+            'Discusión:',
+            '¿Cómo crees que también se puede crear una herramienta digital sesgada y no sesgada?',
+            '¿Dónde está el sesgo más “oculto”? ¿Cuándo se trata de arrastrar entre diferentes posiciones o de codificar?',
+            '¿Puedes imaginar casos en los que una imagen distorsionada de algo puede ayudar (algunas personas-que)?',
+            '¿Crees que podríamos apoyar datos distorsionados cuando el fin justifica los medios o no presentar la verdad de ninguna manera?',
+            '¿Cómo crees que la IA (impulsada por un propósito determinado) puede probar cosas como las que ha probado en este desafío?',
+            'Más preguntas:',
+            '¿Cómo recopilamos los datos?',
+            '¿Cómo se tratan nuestros datos?',
+            '¿Cómo afectan nuestras acciones/creencias a las estadísticas ocultas en algoritmos (IA o no)?',
+            'Conclusión: La forma en que creamos la herramienta afecta el resultado o incluso nuestra visión del mundo.'
+        ],
+        'real-life-applications_title' => 'Ejemplos',
+        'real-life-applications' => [
+            'Informes sobre la diversidad en el lugar de trabajo – Garantizar una representación precisa de los datos de género en las estadísticas de diversidad corporativa.',
+            'Medios y noticias Gráficos – Evitar visualizaciones engañosas en informes sobre igualdad de género.',
+            'Sesgo de IA y algoritmo: identificación y mitigación de sesgos en modelos de aprendizaje automático que procesan datos demográficos.',
+            'Herramientas de contratación y reclutamiento – Asegurar una representación justa en el análisis de recursos humanos y el software de toma de decisiones.',
+            'Educación y Divulgación STEM – Uso de datos imparciales para alentar a más mujeres en los campos de la tecnología.',
+            'Políticas públicas y promoción – Apoyar decisiones políticas justas con estadísticas precisas sobre la brecha de género.',
+            'Medios sociales y campañas de sensibilización: crear representaciones visuales justas de los datos de género para impulsar el cambio.'
+        ],
+        'variations_title' => 'Variaciones del desafío',
+        'variations' => [
+            'Ampliar el desafío a otros entornos: Podrías modificar el desafío para involucrar bots de IA que protejan otros ecosistemas como bosques, ríos o incluso áreas urbanas.',
+            'Los bots tendrían que abordar desafíos como la deforestación o la contaminación del aire.',
+        ],
     ],
 
-    'duration_title' => 'Duración',
-    'duration' => 'Este reto debería llevar aproximadamente de 1 a 2 horas, según tu nivel de experiencia y cuánto explores más allá de lo básico.',
-
-    'materials_title' => 'Herramientas recomendadas:',
-    'materials' => [
-        'PC / portátil',
-        'Editor de texto común, como el Bloc de notas (Windows) o TextEdit (Mac)'
+    'dance-with-ally' => [
+        'title' => 'Baila con Ally',
+        'author' => 'Kristina Krtalić',
+        'purposes_title' => 'Propósito del desafío',
+        'purposes' => [
+            'aprender a conectar micro:bit con Scratch a través de Bluetooth.',
+            'entender cómo utilizar la extensión Scratch micro:bit.',
+            'utilizar los botones micro:bit para interactuar con proyectos Scratch.',
+            'Crear juegos interactivos con micro: bit.',
+            'Desarrollar habilidades de resolución de problemas y pensamiento lógico.',
+            'Mejorar la creatividad a través de la codificación.'
+        ],
+        'description_title' => 'Descripción del desafío',
+        'description' => 'Crea un programa que permita bailar un sprite en Scratch con un micro:bit.
+        Al conectar Scratch y micro: bit, los estudiantes obtienen una experiencia de aprendizaje integral que integra la computación digital y física, mejora las habilidades de resolución de problemas y fomenta la exploración creativa.',
+        'educational_goals_title' => 'Objetivos educativos',
+        'educational_goals' => [
+            'Lógica de programación y codificación:',
+            'Los estudiantes usarán bloques Scratch para escribir programas impulsados por eventos que respondan a las entradas del micro:bit.',
+            'Los estudiantes entenderán y aplicarán conceptos fundamentales de programación como bucles, decisión, condicionales y variables.',
+            'Los estudiantes desarrollarán fluidez con programación basada en bloques para controlar las salidas digitales y físicas.',
+            'Pensamiento computacional:',
+            'Los estudiantes descompondrán los problemas en piezas más pequeñas y diseñarán soluciones paso a paso utilizando Scratch.',
+            'Los estudiantes usarán los datos del sensor (por ejemplo, botones, Shake) del micro:bit para controlar sprites o animaciones.',
+            'Los estudiantes desarrollarán y probarán algoritmos para resolver desafíos específicos (por ejemplo, hacer que el sprite baile cuando se inclina el micro: bit).',
+            'Solución y depuración de problemas:',
+            'Los estudiantes participarán en el diseño iterativo probando, identificando errores y refinando su código Scratch y las interacciones micro: bit.',
+            'Los estudiantes solucionarán los errores en tiempo real que involucran tanto software (scripts Scratch) como hardware (conexión micro:bit o entradas).',
+            'Los estudiantes documentarán y reflexionarán sobre los cambios realizados durante la depuración.',
+            'Creatividad y pensamiento de diseño:',
+            'Los estudiantes crearán animaciones, juegos o historias originales en Scratch que integran entradas micro: bit como elementos interactivos.',
+            'Los estudiantes se expresarán artísticamente coreografiando movimientos de sprites o diseñando escenas interactivas.',
+            'Los estudiantes seguirán el proceso de diseño: empatizar, idear, prototipar y probar.',
+            'Colaboración y comunicación:',
+            'Los estudiantes trabajarán en parejas o pequeños equipos para planificar, codificar y presentar proyectos interactivos.',
+            'Los estudiantes explicarán sus opciones de diseño y lógica de código a sus compañeros o a una audiencia más amplia.'
+        ],
+        'target_audience_title' => 'Público destinatario',
+        'target_audience' => [
+            'Estudiantes de Primaria (6 a 12 años)',
+            'Estudiantes de Secundaria (12 a 16 años)'
+        ],
+        'experience_title' => 'Experiencia',
+        'experience' => 'Intermedia - Se recomiendan algunos conocimientos básicos de codificación; los participantes deben estar familiarizados con los conceptos fundamentales de programación.',
+        'duration_title' => 'Duración',
+        'duration' => '60 minutos',
+        'materials_title' => 'Herramienta recomendada',
+        'materials' => [
+            'Ordenador',
+            'Scratch (https://scratch.mit.edu/)',
+            'Enlace de Scratch (https://scratch.mit.edu/download/scratch-link)',
+            'Scratch micro: bit (https://scratch.mit.edu/microbit)',
+            'micro:bit',
+            'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+        ],
+        'instructions_title' => 'Instrucciones',
+        'instructions' => [
+            'Inicia Scratch.',
+            'Crea una cuenta en Scratch (si no tienes una).',
+            'Comienza a crear un nuevo proyecto, agrega un sprite, agrega un fondo, determina la posición inicial del sprite al iniciar el programa.',
+            'Agrega un grupo de scripts micro:bit desde la extensión de lenguaje de programación Scratch.',
+            'Conecta el micro:bit a la computadora, enciende Bluetooth en la computadora (si no está encendido).',
+            'Instala y ejecuta el enlace Scratch https://scratch.mit.edu/download/scratch-link, descarga el archivo micro:bit HEX y guárdalo (cópielo) en el micro:bit https://scratch.mit.edu/microbit.',
+            'La extensión micro:bit, encuentra un dispositivo cerca de la computadora haciendo clic en el botón naranja en la extensión micro:bit.',
+            'Busca y encuentra dispositivos.',
+            'Crear un programa con bloques que permita un sprite dance a la música seleccionada (con el bloque de sonido start) que se mueva cuando agitamos el micro:bit. El baile consta de solo dos comandos: deslizarse en el eje x a la izquierda y a la derecha. Guarda el proyecto en tu ordenador.',
+            'Después de crear el programa de acuerdo con las instrucciones, los estudiantes pueden agregar sus propios bloques, determinar los controles del sprite presionando el botón A y/o B en el micro: bit, cambiar la apariencia del sprite, cambiar/agregar movimientos...'
+        ],
+        'examples_title' => 'Ejemplos',
+        'examples' => [
+            'Conectar un micro:bit con Scratch para controlar un sprite bailarín es una excelente manera de explorar la programación interactiva. Este concepto se puede extender a varias aplicaciones de la vida real y proyectos creativos, tales como:',
+            '1. Programas interactivos de danza y fitness',
+            'Utiliza el acelerómetro de Micro: Bit para realizar un seguimiento del movimiento y crear juegos de fitness.',
+            'Hacer una herramienta de aprendizaje de baile donde el sprite sigue los movimientos de baile de la vida real.',
+            '2. Animación y juegos basados en gestos',
+            'Rasca y controla personajes con gestos con la mano o movimientos de inclinación.',
+            'Desarrollar juegos simples controlados por el movimiento, como saltar o esquivar obstáculos.',
+            'https://microbit.org/projects/make-it-code-it/step-counter/.'
+        ]
     ],
-
-    'instructions_title' => 'Instrucciones',
-    'instructions' => [
-        'Consejos para docentes antes de comenzar:',
-        'Si eres nuevo/a en el desarrollo web, ¡no te preocupes! Aquí tienes algunos consejos para ayudar a guiar al alumnado durante el proceso:',
-        'Empieza por lo básico: céntrate en explicar los conceptos clave de HTML (estructura de una página web) y CSS (estilo de los elementos).',
-        'Sé paciente y permite al alumnado tiempo para entender el propósito de cada etiqueta (tag) y propiedad.',
-        'Explica la estructura: al presentar etiquetas HTML, desglosa visualmente cómo está estructurado el documento.',
-        'Muestra la relación entre etiquetas de apertura y cierre, atributos y anidamiento (nesting).',
-        'Evita errores comunes: quienes comienzan a menudo olvidan cerrar correctamente las etiquetas o colocan mal las llaves {} en CSS.',
-        'Recuerda al alumnado que revise periódicamente los errores de sintaxis.',
-        'Aprendizaje interactivo: fomenta que experimenten cambiando texto y estilos.',
-        'Muéstrales cómo los pequeños cambios en HTML o CSS se reflejan de inmediato al actualizar el navegador.',
-        'Mantén la creatividad: no existe una única forma “correcta” de diseñar una web.',
-        'Anima a explorar distintas tipografías, colores y maquetaciones.',
-        'Errores comunes a vigilar:',
-        'Olvidar enlazar el archivo CSS con el archivo HTML.',
-        'Anidamiento incorrecto de etiquetas en HTML.',
-        'Errores tipográficos en propiedades CSS (p. ej., usar «colour» en lugar de «color» en algunos casos).',
-        'Complicar en exceso la estructura: ¡los sitios sencillos pueden verse muy profesionales con solo unas pocas líneas de código!',
-
-        'Paso 1: Preparación del entorno',
-        'Para crear una web no necesitas herramientas especiales más allá de un editor de texto común, como el Bloc de notas (Windows) o TextEdit (Mac).',
-        'Todo un sitio puede hacerse en un editor de texto sencillo; incluso hay webs en Internet creadas completamente así.',
-        'Si quieres ver un ejemplo de este tipo de sitio, visita la web de la Asociación Croata de Informática: hsin.hr',
-
-        'Paso 2: Estructura básica de un documento HTML',
-        'Abre un documento nuevo en tu editor y guárdalo como index.html',
-        'Según la versión de Windows o macOS que uses, primero necesitarás activar la opción que permite modificar extensiones de archivo, porque index.txt debe convertirse en index.html',
-        'En un editor como el Bloc de notas, introduce la estructura básica del documento HTML:',
-        '<!DOCTYPE html>',
-        '<html lang="en">',
-        '<head>',
-        '<target charset="UTF-8">',
-        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-        '<title>My first website</title>',
-        '</head>',
-        '<body>',
-        '<h1>Welcome to my website!</h1>',
-        '<p>This is my first website I created using HTML and CSS.</p>',
-        '</body>',
-        '</html>',
-        'Así debería verse tu sitio web sin CSS (en croata; tu ejemplo, por supuesto, en español):',
-
-        'Paso 3: Añadir estilos con CSS',
-        'CSS se usa para dar estilo a los elementos de la página. Para empezar, añadiremos estilos básicos como color de fondo, color del texto y tamaño de fuente.',
-        'En la misma carpeta, crea un documento de texto nuevo y llámalo style.css.',
-        'En style.css, escribe lo siguiente:',
-        'body {',
-        'background-colour: #f0f8ff; /* Light blue background */',
-        'colour: #333; /* Dark Gray Text */',
-        'font-family: Arial, sans-serif; /* Font for text */',
-        'text-align: centre; /* Align text to centre */',
-        '}',
-        'h1 {',
-        'colour: #4CAF50; /* Green title */',
-        '}',
-        'p {',
-        'font-size: 18px; /* Paragraph font size */',
-        'colour: #555; /* Gray-blue text for paragraph */',
-        '}',
-
-        'Paso 4: Conectar HTML con CSS',
-        'Una vez creado el archivo CSS, debes enlazarlo con el archivo HTML.',
-        'Hazlo en la sección <head> del HTML añadiendo la siguiente línea de código:',
-        '<link rel="stylesheet" href="style.css">',
-        'Así el documento HTML “sabe” que debe usar los estilos del archivo CSS.',
-
-        'Paso 5: Inicia tu página',
-        'Guarda ambos archivos: index.html y style.css.',
-        'Haz doble clic en index.html y ábrelo en tu navegador.',
-        'Ahora verás tu web con el texto centrado y los estilos básicos que has añadido',
-        'Así debería verse tu sitio web ahora:',
-
-        'Fomentar la diversidad en STEM:',
-        '¡El desarrollo web es para todos! Ya seas un/a estudiante joven, una persona adulta buscando una nueva carrera o alguien de un grupo subrepresentado, este reto te invita a explorar el apasionante mundo de crear sitios web.',
-        'Los campos STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) han tenido históricamente poca diversidad; es importante animar a todas las personas —sin importar género, raza u origen— a explorar la programación y la tecnología.',
-        'Cada persona aporta perspectivas y experiencias únicas que pueden hacer el desarrollo web más creativo e inclusivo.',
-        'Mientras trabajas en tu sitio, piensa cómo hacer del mundo digital un lugar donde todas las personas se sientan representadas y bienvenidas.',
-        'No necesitas ser experto/a en tecnología para empezar: ¡simplemente empieza a aprender y construye a partir de ahí!',
-
-        'Haz tu web accesible:',
-        'Al construir una web, es importante garantizar que puedan acceder a ella el mayor número de personas posible, incluidas personas con discapacidad.',
-        'Algunos consejos para crear sitios más accesibles:',
-        'Contraste: asegúrate de un buen contraste entre el fondo y el color del texto para facilitar la lectura a personas con discapacidad visual.',
-        'Por ejemplo, un fondo claro con texto oscuro funciona mejor.',
-        'Texto alternativo (alt) para imágenes: si añades imágenes (en pasos posteriores), añade texto alternativo que describa qué muestra la imagen.',
-        'Esto es especialmente útil para quienes utilizan lectores de pantalla.',
-        'HTML semántico: usa etiquetas correctas de HTML para una mejor estructura y accesibilidad.',
-        'Por ejemplo, usa <h1> para el título principal y <p> para los párrafos, lo que ayuda a los lectores de pantalla a entender mejor el contenido.',
-        'Enfócate en la legibilidad: asegúrate de que el texto sea fácil de leer con una tipografía sencilla sin serifas como Arial.',
-        'También puedes aumentar el tamaño de fuente para mejorar la legibilidad.',
-    ],
-
-    'mini_simulation_title' => 'Mini-simulación:',
-    'mini_simulation' => [
-        'Comprueba tus conocimientos',
-        '1. ¿Qué es HTML?',
-        'Lenguaje de programación para crear imágenes',
-        'Lenguaje para estructurar contenido en el sitio web',
-        'Editor de imágenes',
-        '2. ¿Qué es CSS?',
-        'Lenguaje para crear bases de datos en línea',
-        'Lenguaje para el estilo y la maquetación de sitios web',
-        'Programa para gestionar archivos del ordenador',
-        '3. ¿Cómo conectamos CSS con HTML?',
-        'Usando la etiqueta <link> en el documento HTML',
-        'Usando etiquetas <style> dentro de HTML',
-        'No se puede conectar',
-        'Respuestas correctas: 1.b, 2.b, 3.a',
-        'Modifica tu página:',
-        'Prueba a cambiar el color de fondo.',
-        'Añade otro encabezado (h2) con texto debajo del título principal.',
-        'Añade un enlace a otro sitio web, p. ej., Google.',
-        '¡Después de cualquier cambio, actualiza la página!',
-    ],
-
-    'additional_resources_title' => 'Recursos adicionales:',
-    'additional_resources' => [
-        'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    ]
-],
-
-
-'train-it-like-fei-fei-li' => [
-    'title' => 'Entrena como Fei-Fei Li – ¡dale visión a las computadoras!',
-    'author' => 'Chouliara Theodora',
-    'purposes_title' => 'Propósito del desafío',
-    'purposes' => [
-        'Aprender los fundamentos del aprendizaje automático y el reconocimiento de imágenes.',
-        'Enseñar a la computadora a diferenciar entre distintas imágenes (ej. perro contra gato, muñecas contra osos de peluche).',
-        'Explorar cómo se utilizan la IA y el aprendizaje automático en la vida real.',
-        'Inspirarse en el trabajo de Fei-Fei Li en el campo de la inteligencia artificial y el reconocimiento de imágenes.',
-        'Animar a las niñas a involucrarse en la programación y en carreras STEM.'
-    ],
-    'description_title' => 'Descripción del desafío',
-    'description' => [
-        '¡Entrena un modelo de IA como lo hizo Fei-Fei Li! Usa Teachable Machine para enseñar a la computadora a reconocer imágenes y explora el poder del aprendizaje automático, al mismo tiempo que desafías los estereotipos de género en la tecnología.'
-    ],
-    'target_audience_title' => 'Público destinatario',
-    'target_audience' => [
-        'Estudiantes de primaria (6 a 12 años)'
-    ],
-    'experience_title' => 'Experiencia',
-    'experience' => 'Principiante – no se requieren conocimientos previos de programación; apto para principiantes totales.',
-    'duration_title' => 'Duración',
-    'duration' => '60 minutos',
-    'materials_title' => 'Herramientas recomendadas',
-    'materials' => [
-        'Teachable Machine (accesible en un navegador web)',
-        'Ordenador o tableta con cámara',
-        'Conexión a Internet (para entrenar el modelo de IA)',
-        'Juguetes y objetos en el aula (ej. muñecas, osos de peluche) para entrenar el modelo',
-        'Proyector o pantalla (opcional, para mostrar en clase)'
-    ],
-    'instructions_title' => 'Instrucciones',
-    'instructions' => [
-        'Paso 1: Introducción al aprendizaje automático y a Fei-Fei Li – explica cómo las computadoras pueden reconocer imágenes y presenta a Fei-Fei Li y su trabajo en ImageNet.',
-        'Paso 2: Configura Teachable Machine – ve a https://teachablemachine.withgoogle.com/train, selecciona "Image Project" y luego "Standard Image Model".',
-        'Paso 3: Define las categorías a entrenar – por ejemplo, Muñecas y Osos de peluche.',
-        'Paso 4: Reúne imágenes de entrenamiento – usa objetos del aula o imágenes de Internet y súbelas a Teachable Machine.',
-        'Paso 5: Entrena el modelo de IA – haz clic en "Train Model" y espera a que finalice el entrenamiento.',
-        'Paso 6: Prueba el modelo – prueba el reconocimiento con objetos nuevos que no hayan sido incluidos en el entrenamiento.',
-        'Paso 7: Evalúa el modelo – discute la precisión, los errores y cómo podría mejorarse.',
-        'Paso 8: Guarda y comparte el modelo – haz clic en "Export Model" o "Share".'
-    ],
-    'examples_title' => 'Ejemplos:',
-    'examples' => [
-        'IA en comercio y compras: las tiendas usan cámaras con IA para reconocer productos y gestionar inventarios; las cajas de autoservicio identifican artículos sin código de barras.',
-        'IA en tecnologías de apoyo: la IA puede ayudar a personas ciegas o con baja visión a moverse por el mundo; las cámaras inteligentes pueden describir en tiempo real lo que "ven".'
-    ],
-    'real-life-applications_title' => 'Aplicaciones en la vida real',
-    'real-life-applications' => [
-        'IA en comercio y compras: las tiendas usan cámaras con IA para reconocer productos y gestionar inventarios; las cajas de autoservicio identifican artículos sin código de barras.',
-        'IA en tecnologías de apoyo: la IA puede ayudar a personas ciegas o con baja visión a moverse por el mundo; las cámaras inteligentes pueden describir en tiempo real lo que "ven".'
-    ],
-],
-
-'simulate-dice-in-python' => [
-    'title' => 'Simular dados en Python',
-    'author' => 'Marko Šolić',
-    'purposes_title' => 'Propósito del desafío',
-    'purposes' => [
-        'El propósito de este desafío es introducir a los estudiantes en la generación de números aleatorios y los bucles en Python.',
-        'Al simular una tirada de dados, los estudiantes aprenderán cómo las computadoras pueden generar resultados aleatorios y cómo repetir acciones varias veces usando un bucle.',
-        'Este ejercicio también sienta las bases para construir juegos y simulaciones simples.'
-    ],
-    'description_title' => 'Descripción del desafío',
-    'description' => [
-        'La simulación de tiradas de dados es una excelente manera de aprender a trabajar con números aleatorios en Python.',
-        'En esta lección aprenderemos a usar el módulo random para generar números aleatorios y cómo usar ese número para simular una tirada de dados.',
-        'Con esta tarea entenderás cómo Python puede generar números dentro de un rango determinado.'
-    ],
-    'target_audience_title' => 'Público destinatario',
-    'target_audience' => 'Estudiantes de primaria y secundaria, principiantes en Python, cualquiera que aprenda sobre números aleatorios, juegos o lógica básica de programación.',
-    'experience_title' => 'Experiencia',
-    'experience' => 'No se requiere experiencia previa en programación. Basta con conocimientos básicos de mecanografía y uso del ordenador.',
-    'duration_title' => 'Duración',
-    'duration' => '30 a 45 minutos para una versión básica. Hasta 60 minutos si se exploran opciones avanzadas (dos dados, tirada más frecuente, etc.).',
-    'materials_title' => 'Herramienta recomendada',
-    'materials' => [
-        'Para comenzar, debes tener Python instalado en tu ordenador. Si aún no lo tienes, descárgalo desde la web oficial: https://www.python.org',
-        'Abre Python IDLE o cualquier editor de texto (ej. Visual Studio Code, PyCharm) para escribir tu código.'
-    ],
-    'instructions_title' => 'Instrucciones',
-    'instructions' => [
-        'Paso 1: Preparar el entorno',
-        'Instala Python en tu ordenador si aún no lo tienes.',
-        'Descárgalo desde la web oficial si es necesario.',
-        'Abre Python IDLE o cualquier editor de texto para escribir código.',
-        'Paso 2: Escribir el programa',
-        'Abre Python IDLE y crea un archivo nuevo llamado dice.py.',
-        'Escribe el siguiente código:',
-        '# Importamos el módulo random para generar números aleatorios',
-        'import random',
-        '# Mostramos un mensaje de bienvenida al usuario',
-        'print("¡Bienvenido a la simulación de dados!")',
-        '# Preguntamos al usuario cuántas veces quiere tirar los dados',
-        'throw_num = int(input("¿Cuántas veces quieres lanzar el dado? "))',
-        'for i in range(throw_num):',
-        '    result = random.randint(1, 6)  # Generamos un número aleatorio entre 1 y 6',
-        '    print(f"Tirada {i + 1}: {result}")',
-        'print("¡Gracias por jugar!")',
-        'Paso 3: Explicación del código',
-        'El módulo random permite generar números aleatorios.',
-        'La función random.randint(a, b) devuelve un número entero aleatorio entre a y b, ambos incluidos.',
-        'El programa pregunta al usuario cuántas veces quiere lanzar el dado y convierte la entrada en un entero con int().',
-        'El bucle for ejecuta la simulación tantas veces como indicó el usuario.',
-        'Cada tirada genera un número aleatorio entre 1 y 6 que representa el resultado del dado.',
-        'Cada resultado se imprime en pantalla y al final se muestra un mensaje de despedida.',
-        'Paso 4: Ejecutar el programa',
-        'Guarda el archivo como dice.py.',
-        'Ejecuta el programa en Python IDLE.',
-        'Introduce el número de tiradas que deseas realizar (ej. 5).',
-        'El programa generará números aleatorios e imprimirá los resultados de cada tirada.'
-    ],
-    'quiz_title' => 'Cuestionario:',
-    'quiz' => [
-        '¿Qué módulo en Python permite generar números aleatorios?',
-        'a) random',
-        'b) Math',
-        'c) Time',
-        '¿Qué hace la función random.randint(1, 6)?',
-        'a) Genera un número aleatorio entre 1 y 6',
-        'b) Imprime un número aleatorio en pantalla',
-        'c) Muestra un número entre 1 y 6',
-        '¿Cómo conviertes una entrada de usuario en un número entero en Python?',
-        'a) float(s)',
-        'b) int()',
-        'c) p()',
-        'Respuestas correctas: 1.a, 2.a, 3.b'
-    ],
-    'mini_simulation_title' => 'Mini simulación:',
-    'mini_simulation' => [
-        'Modifica el programa:',
-        'Agrega una opción para simular dos tiradas de dados y sumar sus resultados.',
-        'Agrega una opción para que el programa muestre al final qué número salió más veces.'
-    ],
-    'additional_resources_title' => 'Recursos adicionales:',
-    'additional_resources' => [
-        'Documentación oficial de Python – módulo random',
-        'Learn Python'
-    ]
-],
-
-'gender-gap-gender-graph' => [
-    'title' => 'Brecha de género, gráfico de género',
-    'author' => 'Theodora Tziampazi',
-    'purposes_title' => 'Propósito del desafío',
-    'purposes' => [
-        'Comprender cómo la visualización de datos puede influir en la percepción.',
-        'Identificar sesgos en herramientas digitales a través de la interacción.',
-        'Experimentar introduciendo datos para observar distorsiones.',
-        'Modificar el código para garantizar una representación precisa de los datos.',
-        'Comparar visualizaciones de datos justas y sesgadas.',
-        'Reflexionar sobre las implicaciones éticas de manipular datos.',
-        'Debatir sobre las consecuencias reales de las estadísticas sesgadas.',
-        'Desarrollar un pensamiento crítico sobre la IA y los sesgos algorítmicos.'
-    ],
-    'description_title' => 'Descripción del desafío',
-    'description' => [
-        'Explora el sesgo en la visualización de datos introduciendo valores, analizando distorsiones, modificando el código y descubriendo cómo las herramientas digitales afectan la percepción de la representación de género en la tecnología.'
-    ],
-    'target_audience_title' => 'Público destinatario',
-    'target_audience' => [
-        'Estudiantes de primaria (6 a 12 años)',
-        'Estudiantes de secundaria inferior (12 a 16 años)',
-        'Estudiantes de secundaria superior (16 a 18 años)',
-        'Docentes y educadores'
-    ],
-    'experience_title' => 'Experiencia',
-    'experience' => [
-        'Intermedio – se recomienda conocimiento básico de programación; los participantes deben estar familiarizados con conceptos fundamentales.',
-        'Avanzado – diseñado para participantes con sólidas habilidades de programación y experiencia previa.'
-    ],
-    'duration_title' => 'Duración',
-    'duration' => '2 horas',
-    'materials_title' => 'Materiales',
-    'materials' => [
-        'Scratch 3',
-        'Hoja de trabajo: https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
-    ],
-    'instructions_title' => 'Instrucciones',
-    'instructions' => [
-        'Utiliza esta herramienta digital (creador de barras): https://scratch.mit.edu/projects/1147892829. Por ahora, no mires el código. Haz clic en la bandera verde e introduce datos (1–10) que representen hipotéticamente el número de mujeres en la industria tecnológica. Prueba con varios valores.',
-        '¿Qué observas?',
-        '¿Es un error o una decisión?',
-        '¿Cómo se podría corregir?',
-        'De forma manual (nivel de usuario): explora la herramienta y todos los sprites en movimiento. ¿Hay una posición donde el problema desaparece? ¿O donde aparece un resultado inesperado?',
-        'Discusión: ¿Qué ocurre si el número de mujeres en la industria está subestimado o sobreestimado? ¿Qué pasa si los datos son correctos pero la desigualdad persiste?',
-        'Lección: la forma de usar la herramienta (posición de un componente) afecta al resultado.',
-        'Con programación (nivel creador): abre el proyecto. Desafío básico – cambia el código para que los datos mostrados correspondan a los valores introducidos.',
-        'Desafío avanzado – duplica el sprite de la barra, coloréalo de azul (para los hombres), cambia su posición en Y y crea un símbolo masculino como nuevo sprite. Modifica el código para escenarios justos e injustos y explora cómo la programación puede ampliar o reducir las brechas de género.',
-        'Solución (mismo código): https://scratch.mit.edu/projects/1151892036'
-    ],
-    'discussion_title' => 'Discusión',
-    'discussion' => [
-        '¿Cómo se puede crear una herramienta digital sesgada y otra no sesgada?',
-        '¿Dónde está el sesgo más "oculto": en el movimiento de los componentes o en el código?',
-        '¿Existen casos en los que una representación distorsionada pueda ser útil?',
-        '¿Se justifica manipular datos si el fin lo justifica?',
-        '¿Cómo puede la IA intentar cosas similares a las que probaste en este desafío?',
-        'Preguntas adicionales: ¿Cómo recopilamos datos? ¿Cómo se procesan? ¿Cómo influyen nuestras acciones en las estadísticas ocultas en los algoritmos?',
-        'Lección: la manera en que creamos una herramienta influye en el resultado y en nuestra visión del mundo.'
-    ],
-    'real-life-applications_title' => 'Aplicaciones de la vida real',
-    'real-life-applications' => [
-        'Informes de diversidad en el lugar de trabajo – garantizar una representación precisa de género en las estadísticas.',
-        'Gráficos en medios y periodismo – evitar visualizaciones engañosas al informar sobre igualdad de género.',
-        'IA y sesgo algorítmico – identificar y reducir prejuicios en modelos de aprendizaje automático.',
-        'Herramientas de contratación y análisis de RRHH – asegurar una representación justa en los procesos de toma de decisiones.',
-        'Educación STEM – usar datos imparciales para fomentar una mayor participación de las mujeres en tecnología.',
-        'Políticas públicas y defensa – apoyar decisiones políticas justas con datos precisos.',
-        'Redes sociales y campañas – crear visualizaciones justas para impulsar cambios.'
-    ],
-],
-
-'dance-with-ally' => [
-    'title' => 'Baila con Ally',
-    'author' => 'Kristina Krtalić',
-    'purposes_title' => 'Propósito del desafío',
-    'purposes' => [
-        'Aprender a conectar micro:bit con Scratch a través de Bluetooth.',
-        'Comprender cómo usar la extensión micro:bit en Scratch.',
-        'Utilizar los botones del micro:bit para interactuar con proyectos en Scratch.',
-        'Crear juegos interactivos con micro:bit.',
-        'Desarrollar habilidades de resolución de problemas y pensamiento lógico.',
-        'Fomentar la creatividad a través de la codificación.'
-    ],
-    'description_title' => 'Descripción del desafío',
-    'description' => [
-        'Crea un programa que permita que un sprite en Scratch baile con la ayuda del micro:bit.'
-    ],
-    'educational_goals_title' => 'Objetivos educativos',
-    'educational_goals' => [
-        'Lógica de programación: los estudiantes utilizarán bloques de Scratch para escribir programas basados en eventos que respondan a entradas del micro:bit; comprenderán bucles, condiciones y variables, y aprenderán a manejar entradas y salidas digitales y físicas.',
-        'Pensamiento computacional: los estudiantes dividirán un problema en partes más pequeñas, usarán datos de sensores (botones, sacudidas) del micro:bit y desarrollarán algoritmos para resolver desafíos específicos.',
-        'Depuración y resolución de problemas: los estudiantes probarán, identificarán errores y mejorarán su código en Scratch y sus interacciones con el micro:bit, corrigiendo errores en tiempo real y documentando cambios.',
-        'Creatividad y pensamiento de diseño: los estudiantes crearán animaciones, juegos o historias originales en Scratch que utilicen entradas del micro:bit; se expresarán artísticamente y aplicarán el proceso de diseño (empatizar, definir, prototipar, probar).',
-        'Colaboración y comunicación: los estudiantes trabajarán en parejas o grupos pequeños para planificar y programar proyectos interactivos, presentarán sus soluciones y explicarán sus elecciones y la lógica de su código.'
-    ],
-    'target_audience_title' => 'Público destinatario',
-    'target_audience' => [
-        'Estudiantes de primaria (6 a 12 años)',
-        'Estudiantes de secundaria inferior (12 a 16 años)'
-    ],
-    'experience_title' => 'Experiencia',
-    'experience' => 'Intermedio – se recomienda conocimiento básico de programación; los participantes deben conocer conceptos fundamentales.',
-    'duration_title' => 'Duración',
-    'duration' => '60 minutos',
-    'materials_title' => 'Materiales',
-    'materials' => [
-        'Ordenador',
-        'Scratch (https://scratch.mit.edu/)',
-        'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
-        'Extensión micro:bit para Scratch (https://scratch.mit.edu/microbit)',
-        'micro:bit',
-        'Sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
-    ],
-    'instructions_title' => 'Instrucciones',
-    'instructions' => [
-        'Abre Scratch.',
-        'Crea una cuenta en Scratch (si aún no la tienes).',
-        'Inicia un nuevo proyecto, añade un sprite, un fondo y establece la posición inicial del sprite al comenzar el programa.',
-        'Agrega los bloques de micro:bit desde la extensión de Scratch.',
-        'Conecta el micro:bit al ordenador y habilita Bluetooth.',
-        'Instala y abre Scratch Link, descarga el archivo HEX para el micro:bit y cárgalo en el dispositivo.',
-        'En la extensión de Scratch micro:bit, haz clic en el botón naranja y busca dispositivos cercanos.',
-        'Selecciona el dispositivo detectado.',
-        'Crea un programa que permita al sprite bailar con música seleccionada al agitar el micro:bit (moviéndose a la izquierda y derecha en el eje X). Guarda el proyecto.',
-        'Amplía el proyecto: añade bloques propios, configura los botones A/B del micro:bit para controlar el sprite, cambia el aspecto o los movimientos del sprite.'
-    ],
-    'examples_title' => 'Ejemplos:',
-    'examples' => [
-        'Programas interactivos de baile y fitness: uso del acelerómetro del micro:bit para registrar movimientos y crear juegos de fitness o herramientas para aprender a bailar.',
-        'Animaciones y juegos basados en gestos: controlar personajes en Scratch mediante movimientos de las manos o inclinaciones; crear juegos simples controlados por movimiento.'
-    ],
-    'real-life-applications_title' => 'Aplicaciones de la vida real',
-    'real-life-applications' => [
-        'Programas interactivos de baile y fitness: uso del acelerómetro del micro:bit para registrar movimientos y crear juegos de fitness o herramientas para aprender a bailar.',
-        'Animaciones y juegos basados en gestos: controlar personajes en Scratch mediante movimientos de las manos o inclinaciones; crear juegos simples controlados por movimiento.'
-    ],
-],
 
     'coding-for-the-ocean' => [
-    'title' => 'Codificación para el océano - Construye tu AI Bot para salvar el mar',
-    'author' => 'Teresa Silvestri',
-    'purposes_title' => 'Propósito del desafío',
-    'purposes' => [
-        'La capacidad de utilizar la inteligencia artificial para resolver problemas ambientales.',
-        'Habilidades de codificación para crear y programar un bot de IA.',
-        'Conocimiento sobre el cambio climático y la importancia de proteger el medio marino.',
-        'Capacidad de resolución de problemas en el contexto de la ciencia y la tecnología.',
-        'Desarrollo del pensamiento lógico aplicado a los desafíos del mundo real.',
-        'Creatividad en el diseño de un bot que pueda responder a las amenazas ambientales.',
-        'Experiencia práctica utilizando plataformas de codificación como Code.org.',
-        'Trabajo en equipo y colaboración mientras se comparten bots y se compite con compañeros de clase.'
+        'title' => 'Codificación para el océano Construye tu AI Bot para salvar el mar',
+        'author' => 'Teresa Silvestri',
+        'purposes' => [
+            'Al completar el desafío, los participantes aprenderán y ganarán:',
+            'La capacidad de utilizar la inteligencia artificial para resolver problemas ambientales.',
+            'Habilidades de codificación para crear y programar un bot de IA.',
+            'Conocimiento sobre el cambio climático y la importancia de proteger el medio marino.',
+            'Capacidad de resolución de problemas en el contexto de la ciencia y la tecnología.',
+            'Desarrollo del pensamiento lógico aplicado a los desafíos del mundo real.',
+            'Creatividad en el diseño de un bot que pueda responder a las amenazas ambientales.',
+            'Experiencia práctica utilizando plataformas de codificación como Code.org.',
+            'Trabajo en equipo y colaboración mientras se comparten bots y se compite con compañeros de clase.'
+        ],
+        'description' => '¡Crea y entrena un bot de IA para proteger el mar! Aprender a codificar, resolver problemas ambientales y desarrollar el pensamiento lógico para salvaguardar el medio ambiente marino.',
+        'educational_goals' => [
+            'Desarrollar habilidades básicas en programación e inteligencia artificial',
+            'Promover la conciencia ambiental y la importancia de proteger el medio ambiente',
+            'Fomentar la creatividad y la imaginación a través de la narración',
+            'Desarrollar habilidades de resolución de problemas y pensamiento crítico'
+        ],
+        'target-audience' => [
+            'Estudiantes de primaria (6 a 12 años)'
+        ],
+        'experience' => 'Principiante - No se requiere experiencia previa en codificación; adecuado para principiantes completos.',
+        'duration' => '45 minutos – 1 hora para completar el desafío.',
+        'materials' => [
+            'Software: Acceso a Code.org',
+            'Hardware: Ordenador o tableta con conexión a Internet.',
+            'Herramientas en línea: Navegador web para navegar por Code.org o plataformas similares.',
+            'Materiales de apoyo: Tutoriales y recursos educativos proporcionados por la plataforma.',
+            'Otras herramientas: Dispositivos opcionales de audio o video para seguir el tutorial.'
+        ],
+        'instructions' => [
+            'Acceso Code.org 
+            
+            Abre tu navegador web y ve a Code.org. 
+            Si no tienes una cuenta, puedes crear una o iniciar sesión con una existente. 
+            Inicia un nuevo proyecto. 
+            
+            En la pantalla principal, selecciona el curso o tutorial relacionado con la protección del océano. 
+            Haz clic en "Inicio" para comenzar tu proyecto. 
+            Sigue el tutorial paso a paso. 
+            
+            Code.org te guiará a través de un tutorial interactivo. Lee cada instrucción cuidadosamente y completa cada paso. 
+            Asegúrate de seguir las instrucciones para aprender a programar tu bot de IA. 
+            Programa tu bot. 
+            
+            Usa los bloques de codificación visual para enseñarle a tu bot cómo responder a situaciones ambientales, como recolectar plástico o evitar obstáculos. 
+            Modifica los bloques para adaptarlos a diferentes situaciones y prueba el comportamiento del bot. 
+            Pon a prueba tu bot. 
+            
+            Después de escribir el código, prueba tu bot para ver cómo maneja los desafíos. 
+            Si el bot no funciona como se esperaba, vuelve atrás y modifícalo, luego vuelve a probarlo hasta que sea efectivo. 
+            Comparte tu bot con la clase. 
+            
+            Una vez que tu bot esté listo, copia el enlace del proyecto y compártelo con tus compañeros de clase. 
+            Únete a la competencia para ver cuál es el bot más eficaz para proteger el mar. 
+            Revisa y mejora. 
+            
+            Después de completar el desafío, revisa tu código y busca formas de mejorarlo. 
+            Puedes agregar más funciones al bot para abordar nuevos desafíos ambientales.
+            '
+        ],
+        'real-life-applications_title' => 'Aplicaciones de la vida real',
+        'real-life-applications' => [
+            'Inteligencia artificial en la protección de los océanos: empresas y organizaciones como The Ocean Cleanup están utilizando sistemas impulsados por IA para recolectar plástico de los océanos, ayudando a abordar la contaminación marina.',
+            'IA en el monitoreo ambiental: Los robots de IA se emplean para monitorear las condiciones del océano, rastrear la vida marina y detectar la contaminación, mejorando la eficiencia de los esfuerzos de protección ambiental.'
+        ],
+        'variations_title' => 'Variaciones del desafío',
+        'variations' => [
+            'Ampliar el desafío a otros entornos: se podría modificar el desafío para involucrar a los robots de IA que protegen otros ecosistemas como bosques, ríos o incluso áreas urbanas. Los bots tendrían que abordar desafíos como la deforestación o la contaminación del aire.'
+        ],
     ],
-    'description_title' => 'Descripción del desafío',
-    'description' => [
-        '¡Crea y entrena un bot de IA para proteger el mar! Aprende a codificar, resolver problemas ambientales y desarrollar el pensamiento lógico para salvaguardar el medio ambiente marino.'
-    ],
-    'educational_goals_title' => 'Objetivos educativos',
-    'educational_goals' => [
-        'Desarrollar habilidades básicas en programación e inteligencia artificial',
-        'Promover la conciencia ambiental y la importancia de proteger el medio ambiente',
-        'Fomentar la creatividad y la imaginación a través de la narración',
-        'Desarrollar habilidades de resolución de problemas y pensamiento crítico'
-    ],
-    'target_audience_title' => 'Público destinatario',
-    'target-audience' => [
-        'Estudiantes de primaria (6 a 12 años)'
-    ],
-    'experience_title' => 'Experiencia',
-    'experience' => 'Principiante - No se requiere experiencia previa en codificación; adecuado para principiantes completos.',
-    'duration_title' => 'Duración',
-    'duration' => '45 minutos – 1 hora para completar el desafío.',
-    'materials_title' => 'Herramienta recomendada',
-    'materials' => [
-        'Software: Acceso a Code.org',
-        'Hardware: Ordenador o tableta con conexión a Internet.',
-        'Herramientas en línea: Navegador web para navegar por Code.org o plataformas similares.',
-        'Materiales de apoyo: Tutoriales y recursos educativos proporcionados por la plataforma.',
-        'Otras herramientas: Dispositivos opcionales de audio o video para seguir el tutorial.'
-    ],
-    'instructions_title' => 'Instrucciones',
-    'instructions' => [
-        'Accede a Code.org',
-        'Abre tu navegador web y ve a Code.org. Si no tienes una cuenta, puedes crear una o iniciar sesión con una existente.',
-        'Inicia un nuevo proyecto',
-        'En la pantalla principal, selecciona el curso o tutorial relacionado con la protección del océano. Haz clic en "Inicio" para comenzar tu proyecto.',
-        'Sigue el tutorial paso a paso',
-        'Code.org te guiará a través de un tutorial interactivo. Lee cada instrucción cuidadosamente y completa cada paso. Asegúrate de seguir las instrucciones para aprender a programar tu bot de IA.',
-        'Programa tu bot',
-        'Usa los bloques de codificación visual para enseñarle a tu bot cómo responder a situaciones ambientales, como recolectar plástico o evitar obstáculos. Modifica los bloques para adaptarlos a diferentes situaciones y prueba el comportamiento del bot.',
-        'Pon a prueba tu bot',
-        'Después de escribir el código, prueba tu bot para ver cómo maneja los desafíos. Si el bot no funciona como se esperaba, vuelve atrás y modifícalo, luego vuelve a probarlo hasta que sea efectivo.',
-        'Comparte tu bot con la clase',
-        'Una vez que tu bot esté listo, copia el enlace del proyecto y compártelo con tus compañeros de clase. Únete a la competencia para ver cuál es el bot más eficaz para proteger el mar.',
-        'Revisa y mejora',
-        'Después de completar el desafío, revisa tu código y busca formas de mejorarlo. Puedes agregar más funciones al bot para abordar nuevos desafíos ambientales.'
-    ],
-    'real-life-applications_title' => 'Aplicaciones de la vida real',
-    'real-life-applications' => [
-        'Inteligencia artificial en la protección de los océanos: empresas y organizaciones como The Ocean Cleanup están utilizando sistemas impulsados por IA para recolectar plástico de los océanos, ayudando a abordar la contaminación marina.',
-        'IA en el monitoreo ambiental: Los robots de IA se emplean para monitorear las condiciones del océano, rastrear la vida marina y detectar la contaminación, mejorando la eficiencia de los esfuerzos de protección ambiental.'
-    ],
-    'variations_title' => 'Variaciones del desafío',
-    'variations' => [
-        'Ampliar el desafío a otros entornos: se podría modificar el desafío para involucrar a los robots de IA que protegen otros ecosistemas como bosques, ríos o incluso áreas urbanas.',
-        'Los bots tendrían que abordar desafíos como la deforestación o la contaminación del aire.'
-    ],
-],
     'code-it-like-margaret-hamilton' => [
-    'title' => 'Codifique como Margaret Hamilton!',
-    'author' => 'Chouliara Theodora',
-    'purposes' => [
-        'Los estudiantes aprenderán conceptos básicos de codificación basados en bloques utilizando Scratch Jr para lanzar una nave espacial, al igual que Margaret Hamilton, la mujer que programó el código para que el Apolo de la Nasa llegara a la luna.',
-        'La actividad también ayudará a romper los estereotipos de género al destacar la contribución de una programadora a la exploración espacial y alentar a las niñas a comenzar carreras de programación y STEM.'
+        'title' => 'Codifique como Margaret Hamilton !!!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'Los estudiantes aprenderán conceptos básicos de codificación basados en bloques utilizando Scratch Jr para lanzar una nave espacial, al igual que Margaret Hamilton, la mujer que programó el código para que el Apolo de la Nasa llegara a la luna.',
+            'La actividad también ayudará a romper los estereotipos de género al destacar la contribución de una programadora a la exploración espacial y alentar a las niñas a comenzar carreras de programación y STEM.'
+        ],
+        'description' => '¡Programa un lanzamiento espacial en Scratch Jr inspirado en Margaret Hamilton! ¡Codifique una cuenta atrás, lance una nave espacial y rompa los estereotipos de género alentando a las niñas a participar en Codificación!',
+        'instructions' => [
+            '1. Introducción:',
+            'El profesor presenta las misiones espaciales y el envío de humanos a la Luna e introduce a Margaret Hamilton y sus contribuciones a la planificación del Apolo. A continuación, se realiza una discusión sobre qué es la programación y cómo podemos dar instrucciones a una computadora.',
+            '2. Actividad de programación: Margaret Hamilton programa y cuenta atrás, y la nave espacial sale hacia la Luna.',
+            'Abre la aplicación Scratch Jr. y crea un nuevo proyecto.',
+            'Elimina el personaje.',
+            'Elige el fondo con el espacio (Step1 png).',
+            'Elige entre los personajes una mujer, una nave espacial y la Tierra (Step 2 png).',
+            'Cambia el tamaño de los personajes haciendo clic tantas veces como sea necesario en el bloque "Shrink" o "Grow" (Step 3 png).',
+            'Mueve los personajes a la posición correcta (Step 4 png).',
+            'Escribe los programas para que la mujer cuente hacia atrás y, cuando termine sus palabras, la nave espacial suba. Para lograr esto, una vez que se presione la bandera verde, la mujer debe decir las palabras que elijas y luego enviar un mensaje. La nave espacial debe recibir el mensaje del mismo color y, con los bloques de movimiento correctos, la nave debe subir. También puedes hacer que la nave espacial se haga más pequeña a medida que se aleja. Para programar la nave, puedes usar bloques simples o el bucle de repetición. (Step 5 png).',
+            'Ejecuta el guion presionando la bandera verde.'
+        ],
+        'materials' => [
+            'Tablet o PC (si es posible, recomendamos principalmente usar una tableta) con Scratch Jr. instalado (https://www.scratchjr.org/ para tabletas y https://jfo8000.github.io/ScratchJr-Desktop/ para Windows o Mac).',
+            'Imágenes impresas de Margaret Hamilton y la misión Apolo 11 (opcional).',
+            'Tarjetas imprimibles con comandos Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opcional).',
+            'Proyector (opcional).'
+        ],
+        'real-life-applications' => [
+            'Aplicaciones en la vida real:',
+            'Esta actividad no es solo una introducción a la programación, sino que está vinculada a eventos y aplicaciones de la vida real en la ciencia y la tecnología:',
+            'Margaret Hamilton desarrolló el software para el Apollo Guidance Computer, que permitió que el Apollo 11 aterrizara con seguridad en 1969. La actividad ayuda a los niños a entender cómo los ordenadores necesitan instrucciones claras y correctas para llevar a cabo una misión, de la misma manera que la NASA utilizó código para llegar a la Luna.',
+            'La programación por bloques, como en Scratch Jr, es el primer paso para entender lenguajes de programación más complejos que se utilizan actualmente en misiones espaciales, robótica e inteligencia artificial. Los mismos principios se utilizan en el desarrollo de sistemas autónomos, como los robots de exploración de Marte (Curiosity, Perseverance).',
+        ],
+        'variations' => [
+            'Variaciones/Sugerencias:',
+            'Si los estudiantes son nuevos en la aplicación, puedes crear los proyectos primero con los bloques impresos.',
+            'Añade más personajes como planetas, estrellas o cometas.',
+            'Dependiendo de la edad y de la experiencia de los niños con la aplicación ScratchJr, se pueden agregar desafíos adicionales, como programar la nave espacial para evitar obstáculos.',
+            'Los estudiantes también pueden añadir otra página que muestre la nave espacial aterrizando en la Luna.',
+            'En lugar de usar el bloque "Say", se podría usar el bloque "Play Recorded Sound" y así se pueden escuchar las voces de los estudiantes.',
+            'Añadir personajes de astronautas en los que edites las caras y agregues las fotos de los estudiantes.',
+        ],
+        'duration' => '60 minutos',
+        'experience' => 'Intermediate - Se recomiendan algunos conocimientos básicos de codificación; los participantes deben estar familiarizados con los conceptos fundamentales de programación.',
+        'target-audience' => [
+            'Niños pequeños (de 5 a 7 años)'
+        ]
     ],
-    'description' => '¡Programa un lanzamiento espacial en Scratch Jr inspirado en Margaret Hamilton! ¡Codifique una cuenta atrás, lance una nave espacial y rompa los estereotipos de género alentando a las niñas a participar en Codificación!',
-    'instructions' => [
-        'Introducción: El profesor presenta las misiones espaciales y el envío de humanos a la Luna e introduce a Margaret Hamilton y sus contribuciones a la planificación del Apolo. A continuación, se realiza una discusión sobre qué es la programación y cómo podemos dar instrucciones a una computadora.',
-        'Actividad de programación: Margaret Hamilton programa y cuenta atrás, y la nave espacial sale hacia la Luna.',
-        'Abre la aplicación Scratch Jr. y crea un nuevo proyecto.',
-        'Elimina el personaje.',
-        'Elige el fondo con el espacio (Step1 png).',
-        'Elige entre los personajes una mujer, una nave espacial y la Tierra (Step 2 png).',
-        'Cambia el tamaño de los personajes haciendo clic tantas veces como sea necesario en el bloque "Shrink" o "Grow" (Step 3 png).',
-        'Mueve los personajes a la posición correcta (Step 4 png).',
-        'Escribe los programas para que la mujer cuente hacia atrás y, cuando termine sus palabras, la nave espacial suba. Para lograr esto, una vez que se presione la bandera verde, la mujer debe decir las palabras que elijas y luego enviar un mensaje. La nave espacial debe recibir el mensaje del mismo color y, con los bloques de movimiento correctos, la nave debe subir. También puedes hacer que la nave espacial se haga más pequeña a medida que se aleja. Para programar la nave, puedes usar bloques simples o el bucle de repetición. (Step 5 png).',
-        'Ejecuta el guion presionando la bandera verde.'
-    ],
-    'materials' => [
-        'Tablet o PC (si es posible, recomendamos principalmente usar una tableta) con Scratch Jr. instalado (https://www.scratchjr.org/ para tabletas y https://jfo8000.github.io/ScratchJr-Desktop/ para Windows o Mac).',
-        'Imágenes impresas de Margaret Hamilton y la misión Apolo 11 (opcional).',
-        'Tarjetas imprimibles con comandos Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opcional).',
-        'Proyector (opcional).'
-    ],
-    'real-life-applications' => [
-        'Aplicaciones en la vida real:',
-        'Esta actividad no es solo una introducción a la programación, sino que está vinculada a eventos y aplicaciones de la vida real en la ciencia y la tecnología:',
-        'Margaret Hamilton desarrolló el software para el Apollo Guidance Computer, que permitió que el Apollo 11 aterrizara con seguridad en 1969. La actividad ayuda a los niños a entender cómo los ordenadores necesitan instrucciones claras y correctas para llevar a cabo una misión, de la misma manera que la NASA utilizó código para llegar a la Luna.',
-        'La programación por bloques, como en Scratch Jr, es el primer paso para entender lenguajes de programación más complejos que se utilizan actualmente en misiones espaciales, robótica e inteligencia artificial. Los mismos principios se utilizan en el desarrollo de sistemas autónomos, como los robots de exploración de Marte (Curiosity, Perseverance).',
-    ],
-    'variations' => [
-        'Variaciones/Sugerencias:',
-        'Si los estudiantes son nuevos en la aplicación, puedes crear los proyectos primero con los bloques impresos.',
-        'Añade más personajes como planetas, estrellas o cometas.',
-        'Dependiendo de la edad y de la experiencia de los niños con la aplicación ScratchJr, se pueden agregar desafíos adicionales, como programar la nave espacial para evitar obstáculos.',
-        'Los estudiantes también pueden añadir otra página que muestre la nave espacial aterrizando en la Luna.',
-        'En lugar de usar el bloque "Say", se podría usar el bloque "Play Recorded Sound" y así se pueden escuchar las voces de los estudiantes.',
-        'Añadir personajes de astronautas en los que edites las caras y agregues las fotos de los estudiantes.',
-    ],
-    'duration' => '60 minutos',
-    'experience' => 'Intermediate - Se recomiendan algunos conocimientos básicos de codificación; los participantes deben estar familiarizados con los conceptos fundamentales de programación.',
-    'target-audience' => [
-        'Niños pequeños (de 5 a 7 años)'
-    ]
-],
     'chatbot' => [
         'title' => 'Haz un chatbot',
         'author' => 'Equipo de la Semana de la Programación de la UE',
@@ -1071,7 +1147,8 @@ return [
         'author' => 'Lydie El-Halougi',
         'purposes' => [
             'Aprender y practicar bucles y variables.',
-            'Mejorar la creatividad en la programación.'],
+            'Mejorar la creatividad en la programación.'
+        ],
         'description' => 'En este reto escribirás un proyecto con Scratch para crear una espiral, empleando bloques de lápiz, un bucle y una variable.',
 
         'instructions' => [
@@ -1185,7 +1262,8 @@ return [
             'Crea un nuevo modelo de aprendizaje automático añadiendo 3 nuevas etiquetas, a la primera llámala “bueno”, a la segunda “malo” y, de forma opcional, si quieres que se reconozca tu nombre, crea una tercera etiqueta llamada “nombre”.',
             'Entrena al nuevo modelo de aprendizaje automático, pruébalo y utilízalo para hacer el Emobot en Scratch.',
             'Inicia el editor de Scratch 3, borra el objeto gato, inserta 3 nuevos objetos hechos por el creador de imágenes de Microsoft Bing (el dibujo animado feliz, enfadado y dubitativo) o crea un nuevo objeto haciendo clic en el icono de Paint dibujando tres copias del disfraz de cara feliz, enfadada y dubitativa.',
-            'Haz clic en la pestaña “Código” e introduce el siguiente script.'],
+            'Haz clic en la pestaña “Código” e introduce el siguiente script.'
+        ],
         'example' => [
             'Comparte tu Emobot Kliki con tus amigos y amplía tu conocimiento sobre la IA y las emociones.',
             'En lugar de un dibujo animado por ordenador también puedes probar algo diferente, como un animal. En lugar de amable y desagradable podrías entrenar al personaje para que reconozca otros tipos de mensajes.',
@@ -1251,7 +1329,8 @@ return [
             'Enseñar / aprender y reflexionar sobre los conceptos de programación . ',
             'Utilizar herramientas de programación sencillas . ',
             'Desarrollar el pensamiento computacional y la resolución de problemas . ',
-        ], 'description' => [
+        ],
+        'description' => [
             'Crear una experiencia de programación de juego de escape como esta:',
             'Puedes utilizar Google Forms, Genially, Google Presentations, cualquier herramienta para crear una narración basada en la programación;).',
 
@@ -1295,7 +1374,8 @@ return [
             'Todas las animaciones se inician al recibir la radioseñal.',
             'La animación del primer micro:bit es visible de inmediato, las demás esperan hasta que la serpiente llegue allí.',
             'El tiempo que transcurre entre las dos fases determina la velocidad de la serpiente.',
-        ], 'materials' => [
+        ],
+        'materials' => [
             'micro:bits (para cada alumno, si es posible)',
             'ordenador portátil o PC para el editor makecode.microbit.org',
         ],
@@ -1392,5 +1472,80 @@ return [
             '¡Pruébalo!',
         ],
     ],
-
+    'careers-as-constellations' => [
+        'title' => 'Carreras como constelaciones',
+        'authorcontent' => 'Este reto y concurso es una iniciativa de Linda Liukas, autora, ilustradora y empresaria, en relación con la campaña Girls in Digital 2025 #Webinar 1 de la asociación Code4Europe, retransmitida en directo en Youtube: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">How Code, Creativity and Curiosity form a Career?</a>',
+        'author' => 'Linda Liukas',
+        'start-date' => 'Fecha de inicio',
+        'activity-type' => 'Tipo de actividad',
+        'open-online-activity' => 'Actividad abierta en línea',
+        'name-of-org' => 'Nombre de la organización',
+        'language' => 'Idioma',
+        'description' => 'Esta actividad interactiva ayuda a los estudiantes a relacionar sus intereses y pasatiempos personales con posibles carreras en tecnología. Al visualizar sus habilidades y pasiones como constelaciones, los estudiantes descubren cómo se forman las carreras conectando puntos aparentemente no relacionados. No se requiere experiencia previa en codificación, y la actividad fomenta el pensamiento creativo sobre el futuro del trabajo en tecnología.',
+        'teachers' => 'Profesorado',
+        'english' => 'Inglés',
+        'type-of-org' => 'Tipo de organización',
+        'private-business' => 'Empresa privada',
+        'secondary-school' => 'Liceo',
+        'higher-education' => 'Enseñanza superior',
+        'audience' => 'Audiencia',
+        'theme' => 'Temas Principales',
+        'themes' => [
+            'motivation-and-awareness-raising' => 'Motivación y concienciación',
+            'promoting-diversity' => 'Promoción de la diversidad',
+        ],
+        'age-group' => 'Grupo de edad',
+        'age-groups' => [
+            '12' => '12+ (adaptable para estudiantes de secundaria, bachillerato o incluso universitarios)',
+            'under-6' => 'Menores de 6',
+            '7-8' => '7–8',
+            '9-11' => '9–11',
+            '12-14' => '12–14',
+            '15-18' => '15–18',
+            'over-18' => 'Mayores de 18',
+        ],
+        'subjects' => 'Asignaturas',
+        'time-required' => 'Tiempo requerido',
+        '45–60' => '45–60 minutos',
+        'group-size' => 'Tamaño del grupo',
+        'group-sizes' => [
+            'small' => 'Se puede hacer individualmente o en grupos pequeños',
+        ],
+        'required-materials' => 'Materiales necesarios',
+        'step-by-step-instructions' => 'Instrucciones paso a paso',
+        'materials' => [
+            'one' => 'Hoja de trabajo impresa de “Carreras como constelaciones” (se recomienda A3)',
+            'two' => 'Papel <span class="font-sans">&</span> rotuladores/bolígrafos para notas adicionales',
+            'three' => 'Opcional: versión digital (los estudiantes pueden crear constelaciones usando Miro, Canva o Google Jamboard)',
+        ],
+        'titles' => [
+            'one' => 'Discusión de calentamiento: ¿Cuáles son tus puntos? (5 minutos)',
+            'two' => 'Mapeo de constelaciones: conectando intereses con la tecnología (20 min)',
+            'three' => 'Ejemplos de conexiones',
+            'four' => ' Reflexión <span class="font-sans">&</span> compartir: ¿Qué patrones encontraste? (15 minutos)',
+            'five' => 'Ampliación de la actividad',
+        ],
+        'intro' => '<p>Comience por desafiar las ideas de carrera tradicionales con una pregunta:</p>
+            <p class="my-8 italic">¿Crees que las carreras deben seguir un camino recto?</p>
+            <p> Introduce la idea de que las carreras exitosas a menudo se construyen a partir de conexiones inesperadas.</p><p>Vean juntos la charla de Linda Liukas, en la que comparte su propia trayectoria profesional en tecnología</p>',
+        'content' => [
+            'one' => '<p>Cada estudiante llena la hoja de trabajo de Carreras como constelaciones, agregando:</p>',
+            'two' => 'Intereses personales (pasatiempos, habilidades, actividades favoritas)',
+            'three' => 'Temas relacionados con la tecnología (IA, robótica, diseño de juegos, arte digital, tecnología de sostenibilidad, etc.)',
+            'four' => '<strong>Dibujar líneas</strong> para mostrar las conexiones entre sus intereses y la tecnología',
+            'five' => '¿Te gusta la música? → ¿Interesado en la IA? → ¡herramientas de música generadas por IA!',
+            'six' => '¿Te encanta dibujar? → ¿Te interesa el diseño de juegos? → Animación 2D/3D <span class="font-sans">&</span> codificación',
+            'seven' => '¿Te apasiona el cambio climático? → ¿Te interesan los datos? → Tecnología ambiental',
+            'eight' => 'Invite a los alumnos a compartir conexiones sorprendentes que hayan descubierto.',
+            'nine' => 'Pregunte: ¿Qué puntos no se sintieron relacionados al principio? ¿Cómo se conectaron?',
+            'ten' => '<p>Sugerencias para la discusión:</p>',
+            'eleven' => '¿Qué te sorprendió de tu constelación?',
+            'twelve' => '¿Descubriste alguna carrera que no habías considerado antes?',
+            'thirteen' => '¿Cómo podría la tecnología dar forma a tu futuro de maneras inesperadas?',
+            'fourteen' => 'Desafío digital: Pida a los estudiantes que creen una versión digital de su constelación usando Miro, Canva o Google Jamboard y presenten sus hallazgos.',
+            'fifteen' => 'Tarea de investigación: Los estudiantes investigan a una persona en tecnología cuya carrera siguió un camino sorprendente, mapean su constelación y comparten su historia.',
+            '16' => 'Descarga la <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">plantilla</a> de la actividad',
+            '17' => '¡OBS! ¡RECUERDA AÑADIR TU ACTIVIDAD Y SUBIRLA <a href="/add">AQUÍ</a>!',
+        ],
+    ],
 ];

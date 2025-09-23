@@ -1,532 +1,569 @@
 <?php
 
 return [
-'create-your-own-website-with-html-and-css' => [
-    'title' => 'Skapa din egen webbplats med HTML och CSS',
-    'author' => 'Marko Šolić',
+    'create-your-own-website-with-html-and-css' => [
+        'title' => 'Skapa din egen webbplats med HTML och CSS',
+        'author' => 'Marko Šolić',
 
-    'purposes_title' => 'Syftet med utmaningen',
-    'purposes' => [
-        'Syftet med denna utmaning är att introducera nybörjare till webbutveckling.',
-        'Genom att slutföra projektet lär sig deltagarna grunderna i HTML och CSS, som är grundläggande för att skapa och styla webbsidor.',
-        'Utmaningen betonar praktiskt lärande och hjälper dig att bygga en egen webbplats från grunden.',
-        'Du får viktiga färdigheter i webbdesign och blir tryggare i att bygga din online-närvaro.'
+        'purposes_title' => 'Syftet med utmaningen',
+        'purposes' => [
+            'Syftet med denna utmaning är att introducera nybörjare till webbutveckling.',
+            'Genom att slutföra projektet lär sig deltagarna grunderna i HTML och CSS, som är grundläggande för att skapa och styla webbsidor.',
+            'Utmaningen betonar praktiskt lärande och hjälper dig att bygga en egen webbplats från grunden.',
+            'Du får viktiga färdigheter i webbdesign och blir tryggare i att bygga din online-närvaro.'
+        ],
+
+        'description_title' => 'Beskrivning av utmaningen',
+        'description' => [
+            'Webbplatser är grunden för närvaro på internet. I denna lektion lär du dig använda HTML för att strukturera innehåll och CSS för att styla och skapa din första webbplats.',
+            'Genom roliga steg skapar du en sida som kan innehålla text, bilder, färger och länkar.'
+        ],
+
+        'target_audience_title' => 'Målgrupp',
+        'target_audience' => [
+            'Utmaningen riktar sig till nybörjare som vill lära sig skapa webbplatser.',
+            'Perfekt för personer som är nya inom webbutveckling, studenter eller den som är nyfiken på hur webbplatser byggs.',
+            'Ingen tidigare programmerings-erfarenhet krävs.'
+        ],
+
+        'experience_title' => 'Erfarenhet',
+        'experience' => [
+            'Detta är en utmaning för nybörjare. Grundläggande datorvana (t.ex. arbete i en textredigerare) kan hjälpa, men är inte nödvändigt.',
+            'Utmaningen är utformad som en introduktion till HTML och CSS.'
+        ],
+
+        'duration_title' => 'Tidsåtgång',
+        'duration' => 'Utmaningen beräknas ta cirka 1–2 timmar beroende på din erfarenhet och hur mycket du utforskar utöver grunderna.',
+
+        'materials_title' => 'Rekommenderade verktyg:',
+        'materials' => [
+            'Dator / laptop',
+            'Vanlig textredigerare, t.ex. Anteckningar (Windows) eller TextEdit (Mac)'
+        ],
+
+        'instructions_title' => 'Instruktioner',
+        'instructions' => [
+            'Tips till lärare innan ni börjar:',
+            'Om du är ny inom webbutveckling – ingen fara! Här är några tips för att guida eleverna genom processen:',
+            'Börja med grunderna: förklara kärnkoncepten i HTML (webbsidans struktur) och CSS (elementens stil).',
+            'Var tålmodig och ge eleverna tid att förstå syftet med varje tagg och egenskap.',
+            'Förklara strukturen: när du introducerar HTML-taggar, visualisera hur dokumentet är uppbyggt.',
+            'Visa relationen mellan öppnings- och stängningstagg, attribut och nästning.',
+            'Undvik vanliga misstag: nybörjare glömmer ofta att stänga taggar korrekt eller placerar måsvingar {} fel i CSS.',
+            'Påminn om att regelbundet kontrollera syntaxfel.',
+            'Interaktivt lärande: uppmuntra eleverna att experimentera med att ändra text och stilar.',
+            'Visa hur små ändringar i HTML eller CSS syns direkt efter att webbläsaren uppdaterats.',
+            'Var öppen för kreativitet: det finns inget enda ”rätt” sätt att designa en webbplats.',
+            'Uppmuntra att utforska olika typsnitt, färger och layouter.',
+            'Vanliga misstag att se upp för:',
+            'Att glömma att länka CSS-filen till HTML-filen.',
+            'Felaktig nästning av taggar i HTML.',
+            'Stavfel i CSS-egenskaper (t.ex. ”colour” i stället för ”color”).',
+            'Att göra strukturen alltför komplex — enkla sidor kan se mycket professionella ut med bara några rader kod!',
+
+            'Steg 1: Förbered miljön',
+            'För att skapa en webbplats behöver du inga specialverktyg – en vanlig textredigerare som Anteckningar (Windows) eller TextEdit (Mac) räcker.',
+            'En hel webbplats kan göras i en enkel textredigerare; det finns till och med webbplatser på internet som är byggda helt på detta sätt.',
+            'Vill du se ett exempel? Titta på Kroatiska Informatikföreningens webbplats: hsin.hr',
+
+            'Steg 2: Grundläggande HTML-dokumentsstruktur',
+            'Öppna ett nytt dokument i redigeraren och spara det som index.html',
+            'Beroende på din version av Windows eller macOS måste du kanske först aktivera möjligheten att ändra filtillägg, eftersom index.txt ska bli index.html',
+            'Skriv i en redigerare som Anteckningar den grundläggande HTML-strukturen:',
+            '<!DOCTYPE html>',
+            '<html lang="en">',
+            '<head>',
+            '<target charset="UTF-8">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '<title>My first website</title>',
+            '</head>',
+            '<body>',
+            '<h1>Welcome to my website!</h1>',
+            '<p>This is my first website I created using HTML and CSS.</p>',
+            '</body>',
+            '</html>',
+            'Så här ska din webbplats se ut utan CSS (på kroatiska; ditt exempel är förstås på svenska):',
+
+            'Steg 3: Lägg till stilar med CSS',
+            'CSS används för att styla element på sidan. Vi börjar med grundläggande stilar som bakgrundsfärg, textfärg och teckenstorlek.',
+            'Skapa i samma mapp ett nytt textdokument och kalla det style.css.',
+            'Skriv följande i style.css:',
+            'body {',
+            'background-colour: #f0f8ff; /* Light blue background */',
+            'colour: #333; /* Dark Gray Text */',
+            'font-family: Arial, sans-serif; /* Font for text */',
+            'text-align: centre; /* Align text to centre */',
+            '}',
+            'h1 {',
+            'colour: #4CAF50; /* Green title */',
+            '}',
+            'p {',
+            'font-size: 18px; /* Paragraph font size */',
+            'colour: #555; /* Gray-blue text for paragraph */',
+            '}',
+
+            'Steg 4: Koppla HTML till CSS',
+            'När du har skapat CSS-filen måste du länka den till HTML-filen.',
+            'Gör detta i HTML-dokumentets <head>-sektion genom att lägga till följande kodrad:',
+            '<link rel="stylesheet" href="style.css">',
+            'Då ”vet” HTML-dokumentet att det ska använda stilarna från CSS-filen.',
+
+            'Steg 5: Starta din sida',
+            'Spara båda filerna: index.html och style.css.',
+            'Dubbelklicka på index.html och öppna filen i webbläsaren.',
+            'Nu ser du din webbplats med centrerad text och de grundstilar du har lagt till',
+            'Så här ska din webbplats se ut nu:',
+
+            'Främja mångfald inom STEM:',
+            'Webbutveckling är för alla! Oavsett om du är elev, vuxen som söker ny karriär eller någon från en underrepresenterad grupp — denna utmaning bjuder in dig att utforska den spännande världen av att skapa webbplatser.',
+            'STEM-områdena (vetenskap, teknik, ingenjörsvetenskap och matematik) har historiskt haft brist på mångfald; det är viktigt att uppmuntra alla — oavsett kön, bakgrund eller ursprung — att utforska programmering och teknik.',
+            'Alla har unika perspektiv och erfarenheter som kan göra webbutveckling mer kreativ och inkluderande.',
+            'När du arbetar med din webbplats, fundera på hur du kan göra den digitala världen till en plats där alla känner sig representerade och välkomna.',
+            'Du behöver inte vara teknikexpert för att börja — börja lära dig och bygg vidare därifrån!',
+
+            'Gör din webbplats tillgänglig:',
+            'När du bygger en webbplats är det viktigt att så många som möjligt kan använda den, inklusive personer med funktionsnedsättning.',
+            'Här är några tips för mer tillgängliga webbplatser:',
+            'Kontrast: säkerställ god kontrast mellan bakgrund och textfärg så att texten blir lättare att läsa.',
+            'Till exempel fungerar ljus bakgrund med mörk text bäst.',
+            'Alt-text för bilder: om du lägger till bilder (i senare steg), lägg till alt-text som beskriver bilden.',
+            'Det är särskilt hjälpsamt för användare av skärmläsare.',
+            'Semantisk HTML: använd korrekta HTML-taggar för bättre struktur och tillgänglighet.',
+            'Använd till exempel <h1> för huvudtitel och <p> för stycken — det hjälper skärmläsare att tolka innehållet.',
+            'Fokusera på läsbarhet: använd ett enkelt sans-serif-typsnitt som Arial.',
+            'Du kan också öka teckenstorleken för bättre läsbarhet.',
+        ],
+
+        'mini_simulation_title' => 'Mini-simulering:',
+        'mini_simulation' => [
+            'Testa dina kunskaper',
+            '1. Vad är HTML?',
+            'Programspråk för att skapa bilder',
+            'Språk för att strukturera innehåll på webbplatsen',
+            'Bildredigerare',
+            '2. Vad är CSS?',
+            'Språk för att skapa online-databaser',
+            'Språk för att styla och layouta webbplatser',
+            'Program för att hantera datorfiler',
+            '3. Hur kopplar vi CSS till HTML?',
+            'Genom att använda <link>-taggen i HTML-dokumentet',
+            'Genom att använda <style>-taggar i HTML',
+            'Går inte att koppla',
+            'Rätta svar: 1.b, 2.b, 3.a',
+            'Ändra din sida:',
+            'Prova att byta bakgrundsfärg.',
+            'Lägg till ytterligare en rubrik (h2) under huvudrubriken.',
+            'Lägg till en länk till en annan webbplats, t.ex. Google.',
+            'Uppdatera sidan efter varje ändring!',
+        ],
+
+        'additional_resources_title' => 'Ytterligare resurser:',
+        'additional_resources' => [
+            'https://developer.mozilla.org/en-US/docs/Web/HTML',
+            'https://developer.mozilla.org/en-US/docs/Web/CSS',
+        ]
     ],
-
-    'description_title' => 'Beskrivning av utmaningen',
-    'description' => [
-        'Webbplatser är grunden för närvaro på internet. I denna lektion lär du dig använda HTML för att strukturera innehåll och CSS för att styla och skapa din första webbplats.',
-        'Genom roliga steg skapar du en sida som kan innehålla text, bilder, färger och länkar.'
-    ],
-
-    'target_audience_title' => 'Målgrupp',
-    'target_audience' => [
-        'Utmaningen riktar sig till nybörjare som vill lära sig skapa webbplatser.',
-        'Perfekt för personer som är nya inom webbutveckling, studenter eller den som är nyfiken på hur webbplatser byggs.',
-        'Ingen tidigare programmerings-erfarenhet krävs.'
-    ],
-
-    'experience_title' => 'Erfarenhet',
-    'experience' => [
-        'Detta är en utmaning för nybörjare. Grundläggande datorvana (t.ex. arbete i en textredigerare) kan hjälpa, men är inte nödvändigt.',
-        'Utmaningen är utformad som en introduktion till HTML och CSS.'
-    ],
-
-    'duration_title' => 'Tidsåtgång',
-    'duration' => 'Utmaningen beräknas ta cirka 1–2 timmar beroende på din erfarenhet och hur mycket du utforskar utöver grunderna.',
-
-    'materials_title' => 'Rekommenderade verktyg:',
-    'materials' => [
-        'Dator / laptop',
-        'Vanlig textredigerare, t.ex. Anteckningar (Windows) eller TextEdit (Mac)'
-    ],
-
-    'instructions_title' => 'Instruktioner',
-    'instructions' => [
-        'Tips till lärare innan ni börjar:',
-        'Om du är ny inom webbutveckling – ingen fara! Här är några tips för att guida eleverna genom processen:',
-        'Börja med grunderna: förklara kärnkoncepten i HTML (webbsidans struktur) och CSS (elementens stil).',
-        'Var tålmodig och ge eleverna tid att förstå syftet med varje tagg och egenskap.',
-        'Förklara strukturen: när du introducerar HTML-taggar, visualisera hur dokumentet är uppbyggt.',
-        'Visa relationen mellan öppnings- och stängningstagg, attribut och nästning.',
-        'Undvik vanliga misstag: nybörjare glömmer ofta att stänga taggar korrekt eller placerar måsvingar {} fel i CSS.',
-        'Påminn om att regelbundet kontrollera syntaxfel.',
-        'Interaktivt lärande: uppmuntra eleverna att experimentera med att ändra text och stilar.',
-        'Visa hur små ändringar i HTML eller CSS syns direkt efter att webbläsaren uppdaterats.',
-        'Var öppen för kreativitet: det finns inget enda ”rätt” sätt att designa en webbplats.',
-        'Uppmuntra att utforska olika typsnitt, färger och layouter.',
-        'Vanliga misstag att se upp för:',
-        'Att glömma att länka CSS-filen till HTML-filen.',
-        'Felaktig nästning av taggar i HTML.',
-        'Stavfel i CSS-egenskaper (t.ex. ”colour” i stället för ”color”).',
-        'Att göra strukturen alltför komplex — enkla sidor kan se mycket professionella ut med bara några rader kod!',
-
-        'Steg 1: Förbered miljön',
-        'För att skapa en webbplats behöver du inga specialverktyg – en vanlig textredigerare som Anteckningar (Windows) eller TextEdit (Mac) räcker.',
-        'En hel webbplats kan göras i en enkel textredigerare; det finns till och med webbplatser på internet som är byggda helt på detta sätt.',
-        'Vill du se ett exempel? Titta på Kroatiska Informatikföreningens webbplats: hsin.hr',
-
-        'Steg 2: Grundläggande HTML-dokumentsstruktur',
-        'Öppna ett nytt dokument i redigeraren och spara det som index.html',
-        'Beroende på din version av Windows eller macOS måste du kanske först aktivera möjligheten att ändra filtillägg, eftersom index.txt ska bli index.html',
-        'Skriv i en redigerare som Anteckningar den grundläggande HTML-strukturen:',
-        '<!DOCTYPE html>',
-        '<html lang="en">',
-        '<head>',
-        '<target charset="UTF-8">',
-        '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-        '<title>My first website</title>',
-        '</head>',
-        '<body>',
-        '<h1>Welcome to my website!</h1>',
-        '<p>This is my first website I created using HTML and CSS.</p>',
-        '</body>',
-        '</html>',
-        'Så här ska din webbplats se ut utan CSS (på kroatiska; ditt exempel är förstås på svenska):',
-
-        'Steg 3: Lägg till stilar med CSS',
-        'CSS används för att styla element på sidan. Vi börjar med grundläggande stilar som bakgrundsfärg, textfärg och teckenstorlek.',
-        'Skapa i samma mapp ett nytt textdokument och kalla det style.css.',
-        'Skriv följande i style.css:',
-        'body {',
-        'background-colour: #f0f8ff; /* Light blue background */',
-        'colour: #333; /* Dark Gray Text */',
-        'font-family: Arial, sans-serif; /* Font for text */',
-        'text-align: centre; /* Align text to centre */',
-        '}',
-        'h1 {',
-        'colour: #4CAF50; /* Green title */',
-        '}',
-        'p {',
-        'font-size: 18px; /* Paragraph font size */',
-        'colour: #555; /* Gray-blue text for paragraph */',
-        '}',
-
-        'Steg 4: Koppla HTML till CSS',
-        'När du har skapat CSS-filen måste du länka den till HTML-filen.',
-        'Gör detta i HTML-dokumentets <head>-sektion genom att lägga till följande kodrad:',
-        '<link rel="stylesheet" href="style.css">',
-        'Då ”vet” HTML-dokumentet att det ska använda stilarna från CSS-filen.',
-
-        'Steg 5: Starta din sida',
-        'Spara båda filerna: index.html och style.css.',
-        'Dubbelklicka på index.html och öppna filen i webbläsaren.',
-        'Nu ser du din webbplats med centrerad text och de grundstilar du har lagt till',
-        'Så här ska din webbplats se ut nu:',
-
-        'Främja mångfald inom STEM:',
-        'Webbutveckling är för alla! Oavsett om du är elev, vuxen som söker ny karriär eller någon från en underrepresenterad grupp — denna utmaning bjuder in dig att utforska den spännande världen av att skapa webbplatser.',
-        'STEM-områdena (vetenskap, teknik, ingenjörsvetenskap och matematik) har historiskt haft brist på mångfald; det är viktigt att uppmuntra alla — oavsett kön, bakgrund eller ursprung — att utforska programmering och teknik.',
-        'Alla har unika perspektiv och erfarenheter som kan göra webbutveckling mer kreativ och inkluderande.',
-        'När du arbetar med din webbplats, fundera på hur du kan göra den digitala världen till en plats där alla känner sig representerade och välkomna.',
-        'Du behöver inte vara teknikexpert för att börja — börja lära dig och bygg vidare därifrån!',
-
-        'Gör din webbplats tillgänglig:',
-        'När du bygger en webbplats är det viktigt att så många som möjligt kan använda den, inklusive personer med funktionsnedsättning.',
-        'Här är några tips för mer tillgängliga webbplatser:',
-        'Kontrast: säkerställ god kontrast mellan bakgrund och textfärg så att texten blir lättare att läsa.',
-        'Till exempel fungerar ljus bakgrund med mörk text bäst.',
-        'Alt-text för bilder: om du lägger till bilder (i senare steg), lägg till alt-text som beskriver bilden.',
-        'Det är särskilt hjälpsamt för användare av skärmläsare.',
-        'Semantisk HTML: använd korrekta HTML-taggar för bättre struktur och tillgänglighet.',
-        'Använd till exempel <h1> för huvudtitel och <p> för stycken — det hjälper skärmläsare att tolka innehållet.',
-        'Fokusera på läsbarhet: använd ett enkelt sans-serif-typsnitt som Arial.',
-        'Du kan också öka teckenstorleken för bättre läsbarhet.',
-    ],
-
-    'mini_simulation_title' => 'Mini-simulering:',
-    'mini_simulation' => [
-        'Testa dina kunskaper',
-        '1. Vad är HTML?',
-        'Programspråk för att skapa bilder',
-        'Språk för att strukturera innehåll på webbplatsen',
-        'Bildredigerare',
-        '2. Vad är CSS?',
-        'Språk för att skapa online-databaser',
-        'Språk för att styla och layouta webbplatser',
-        'Program för att hantera datorfiler',
-        '3. Hur kopplar vi CSS till HTML?',
-        'Genom att använda <link>-taggen i HTML-dokumentet',
-        'Genom att använda <style>-taggar i HTML',
-        'Går inte att koppla',
-        'Rätta svar: 1.b, 2.b, 3.a',
-        'Ändra din sida:',
-        'Prova att byta bakgrundsfärg.',
-        'Lägg till ytterligare en rubrik (h2) under huvudrubriken.',
-        'Lägg till en länk till en annan webbplats, t.ex. Google.',
-        'Uppdatera sidan efter varje ändring!',
-    ],
-
-    'additional_resources_title' => 'Ytterligare resurser:',
-    'additional_resources' => [
-        'https://developer.mozilla.org/en-US/docs/Web/HTML',
-        'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    ]
-],
-
 
     'train-it-like-fei-fei-li' => [
-    'title' => 'Träna som Fei‑Fei Li – ge datorer syn!',
-    'author' => 'Chouliara Theodora',
-    'purposes_title' => 'Syftet med utmaningen',
-    'purposes' => [
-        'Lära sig grunderna i maskininlärning och bildigenkänning.',
-        'Träna datorn att skilja mellan olika bilder (t.ex. hund vs. katt, dockor vs. nallebjörnar).',
-        'Utforska hur AI och maskininlärning används i verkliga livet.',
-        'Inspireras av Fei‑Fei Lis insatser inom artificiell intelligens och bildigenkänning.',
-        'Uppmuntra flickor att engagera sig i programmering och STEM‑karriärer.'
+        'title' => 'Träna det som Fei-Fei Li – Att ge syn till datorer!',
+        'author' => 'Chouliara Theodora',
+        'purposes_title' => 'Syfte med utmaningen',
+        'purposes' => [
+            'Att lära sig grunderna i maskininlärning och bildigenkänning.',
+            'Att träna en dator att skilja mellan olika bilder (t.ex. hund mot katt, dockor kontra nallebjörnar).',
+            'Att utforska hur AI och maskininlärning används i verkligheten.',
+            'Att inspireras av Fei-Fei Lis bidrag till AI och bildigenkänning.',
+            'Att uppmuntra flickor att engagera sig i kodning och STEM-karriärer.'
+        ],
+        'description_title' => 'Beskrivning av utmaningen',
+        'description' => 'Träna en AI-modell som Fei-Fei Li! Använd Teachable Machine för att lära en dator att känna igen bilder och utforska kraften i maskininlärning samtidigt som du bryter könsstereotyper inom teknik.',
+        'target_audience_title' => 'Målgrupp',
+        'target_audience' => 'Grundskoleelever (6 till 12 år)',
+        'experience_title' => 'Erfarenhet',
+        'experience' => 'Nybörjare - Ingen tidigare erfarenhet av kodning krävs; lämplig för kompletta nybörjare.',
+        'duration_title' => 'Varaktighet',
+        'duration' => '60 minuter',
+        'materials_title' => 'Rekommenderat verktyg',
+        'materials' => [
+            'Teachable Machine (tillgänglig via webbläsare)',
+            'Dator eller surfplatta med kamera',
+            'Internetanslutning (för träning av AI-modellen)',
+            'Leksaker och klassrumsföremål (t.ex. dockor, nallebjörnar) för träning av AI-modellen',
+            'Projektor eller duk (valfritt, för klassrumsdemonstrationer))'
+        ],
+        'instructions_title' => 'Instruktioner',
+        'instructions' => [
+            'Steg 1: Introduktion till maskininlärning och Fei-Fei Li',
+            'Förklara maskininlärning:',
+            'Datorer kan lära sig att känna igen bilder, precis som människor. Maskininlärning hjälper datorer "ser" objekt genom att analysera exempel.',
+            'Vi presenterar Fei-Fei Li:',
+            'Fei-Fei Li är en ledande forskare inom AI och datorseende. Hon utvecklade ImageNet, en enorm datamängd som lärde datorer att känna igen bilder. Precis som Fei-Fei Li hjälpte datorer se, pojkar och flickor kan lära en dator att känna igen föremål också!',
+            'Steg 2: Ställ in Teachable Machine',
+            'Gå till Teachable Machine (https://teachablemachine.withgoogle.com/train)',
+            'Välj "Bildprojekt" för att träna datorn att känna igen bilder.',
+            'Klicka på "Standard Image Model".',
+            'Steg 3: Välj kategorier för träning',
+            'Bestäm vilka kategorier du vill att datorn ska känna igen. Du kan skapa kategorier baserade på klassrumsobjekt (t.ex. klossar, nallebjörnar, dockor, etc.).',
+            'Exempel på kategorier: Dockor och nallar',
+            'Steg 4: Samla in träningsbilder',
+            'Skapa två kategorier: Dockor och nallebjörnar.',
+            'Alternativ 1: Använd riktiga föremål',
+            'Visa en docka framför kameran och ta bilder för kategorin "Dockor".',
+            'Gör samma sak för en nallebjörn i kategorin "Nallebjörnar".',
+            'Alternativ 2: Hitta bilder online',
+            'Sök efter bilder på dockor och nallar på Google.',
+            'Spara bilderna i två separata mappar ("Dockor" och "Nallebjörnar").',
+            'Ladda upp bilderna från varje mapp till Teachable Machine för träning.',
+            'Steg 5: Träna AI-modellen',
+            'När du har tagit tillräckligt med bilder klickar du på "Träna modell".',
+            'Vänta tills modellen lär sig av bilderna.',
+            'Steg 6: Testa modellen',
+            'När modellen har tränats klickar du på "Testmodell" för att se hur väl den känner igen nya bilder. Testa AI genom att visa datorn nya objekt som inte var en del av träningsbilder (t.ex. visar en leksak som inte användes för träning). Se hur väl modellen känner igen den och kategoriserar den korrekt.',
+            'Steg 7: Utvärdera modellen',
+            'Diskutera med eleverna:',
+            'Kände modellen igen objekten korrekt?',
+            'Blev det några fel? Vad kan förbättras?',
+            'Vad händer om du tränar den med fler bilder?',
+            'Steg 8: Spara och dela modellen',
+            'När du är nöjd med modellens noggrannhet klickar du på "Exportera modell" för att spara din projekt. Du kan dela modellen med andra klasser eller på Teachable Machine webbplats genom att klicka på "Dela".',
+            'Modellen vi gjorde ovan hittar du här: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+        ],
+        'examples_title' => 'Exempel',
+        'examples' => [
+            'AI inom detaljhandel och shopping:',
+            'Vissa butiker använder AI-drivna kameror för att känna igen produkter och spåra lager.',
+            'Liknande teknik hjälper självutcheckningssystem att känna igen varor utan streckkoder.',
+            'AI och hjälpmedelsteknik',
+            'AI kan identifiera föremål för att hjälpa synskadade personer att navigera i världen.',
+            'Smarta kameror kan beskriva vad de "ser" för att hjälpa användare i realtid.'
+        ],
     ],
-    'description_title' => 'Beskrivning av utmaningen',
-    'description' => [
-        'Träna en AI‑modell – precis som Fei‑Fei Li! Med Teachable Machine lär du datorn att känna igen bilder och upptäcker kraften i maskininlärning samtidigt som du utmanar könsstereotyper i tech.'
-    ],
-    'target_audience_title' => 'Målgrupp',
-    'target-audience' => [
-        'Elever i låg- och mellanstadiet (6–12 år)'
-    ],
-    'experience_title' => 'Erfarenhet',
-    'experience' => 'Nybörjare – inga förkunskaper i programmering krävs; passar helt nybörjare.',
-    'duration_title' => 'Varaktighet',
-    'duration' => '60 minuter',
-    'materials_title' => 'Rekommenderade verktyg',
-    'materials' => [
-        'Teachable Machine (åtkomligt i webbläsare)',
-        'Dator eller surfplatta med kamera',
-        'Internetanslutning (för att träna modellen)',
-        'Leksaker och klassrumsföremål (t.ex. dockor, nallebjörnar) för att samla träningsdata',
-        'Projektor eller skärm (valfritt, för demonstrationer i klassrummet)'
-    ],
-    'instructions_title' => 'Instruktioner',
-    'instructions' => [
-        'Steg 1: Introducera maskininlärning och Fei‑Fei Li – förklara hur datorer kan känna igen bilder; presentera Fei‑Fei Li och ImageNet.',
-        'Steg 2: Öppna Teachable Machine – gå till https://teachablemachine.withgoogle.com/train, välj ”Image Project” och ”Standard Image Model”.',
-        'Steg 3: Välj kategorier – t.ex. Dockor och Nallebjörnar.',
-        'Steg 4: Samla träningsbilder – använd verkliga objekt eller bilder från nätet och ladda upp dem.',
-        'Steg 5: Träna modellen – klicka på ”Train Model” och vänta tills träningen är klar.',
-        'Steg 6: Testa modellen – prova med nya objekt/bilder som inte ingick i träningen.',
-        'Steg 7: Utvärdera – diskutera noggrannhet, fel och hur modellen kan förbättras.',
-        'Steg 8: Spara och dela – använd ”Export Model” eller ”Share” för att spara/dela.'
-    ],
-    'real-life-applications_title' => 'Tillämpningar i verkliga livet',
-    'real-life-applications' => [
-        'AI i butik och handel: kameror med AI kan känna igen produkter och hålla koll på lager; självutcheckning kan identifiera varor utan streckkod.',
-        'AI och tillgänglighet: AI kan hjälpa personer med synnedsättning att navigera; smarta kameror kan i realtid beskriva vad de ”ser”.'
-    ],
-],
 
     'simulate-dice-in-python' => [
-    'title' => 'Simulera tärningskast i Python',
-    'author' => 'Marko Šolić',
-    'purposes_title' => 'Syftet med utmaningen',
-    'purposes' => [
-        'Introducera elever till slumpgenerering och loopar i Python.',
-        'Genom att simulera ett tärningskast får eleverna lära sig hur datorer kan generera slumpmässiga utfall och hur man kan upprepa åtgärder flera gånger med en loop.',
-        'Övningen lägger också grunden för att bygga enkla spel och simuleringar.'
+        'title' => 'Simulera tärningkast i Python',
+        'author' => 'Marko Šolić',
+        'purposes_title' => 'Syftet med utmaningen',
+        'purposes' => [
+            'Syftet med denna utmaning är att introducera eleverna till generering av slumpmässiga tal och loopar i Python.',
+            'Genom att simulera ett tärningskast kommer eleverna att lära sig hur datorer kan generera slumpmässiga resultat och hur man upprepar handlingar flera gånger med hjälp av en loop.',
+            'Denna övning lägger också grunden för att bygga enkla spel och simuleringar.'
+        ],
+        'description_title' => 'Beskrivning av utmaningen',
+        'description' => [
+            'Simulering av tärningskast är ett utmärkt sätt att lära sig grundläggande arbete med slumpmässiga tal i Python.',
+            'I den här lektionen kommer vi att lära oss hur vi använder random-modulen för att generera slumpmässiga tal och hur vi använder det talet för att simulera ett tärningskast.',
+            'Genom denna uppgift kommer du att förstå hur Python kan generera tal inom ett visst intervall.'
+        ],
+        'target_audience_title' => 'Målgrupp',
+        'target_audience' => 'Grundskole- och gymnasieelever, nybörjare i Python, alla som lär sig om slumpmässiga tal, spel eller grundläggande programmeringslogik.',
+        'experience_title' => 'Erfarenhet',
+        'experience' => 'Ingen tidigare programmeringserfarenhet krävs. Grundläggande kunskaper om att skriva och använda en dator räcker.',
+        'duration_title' => 'Varaktighet',
+        'durations' => [
+            '30 till 45 minuter för en grundversion.',
+            'Upp till 60 minuter om avancerade alternativ utforskas (två tärningar, mest frekventa kast, etc.).'
+        ],
+        'materials_title' => 'Rekommenderat verktyg:',
+        'materials' => [
+            'För att komma igång behöver du ha Python installerat på din dator. Om du inte redan har det, ladda ner Python från den officiella webbplatsen: https://www.python.org',
+            'Öppna Python IDLE eller vilken textredigerare som helst (t.ex. Visual Studio Code, PyCharm) för att skriva din kod.'
+        ],
+        'instructions_title' => 'Instruktioner',
+        'instructions' => [
+            'Steg 1: Förberedelse av miljön',
+            'För att komma igång behöver du ha Python installerat på din dator.',
+            'Om du inte redan har det, ladda ner Python från den officiella webbplatsen.',
+            'Öppna Python IDLE eller vilken textredigerare som helst (t.ex. Visual Studio Code, PyCharm) för att skriva din kod.',
+            'Steg 2: Skriva programmet',
+            'Öppna Python IDLE och skapa en ny fil som heter dice.py.',
+            'Skriv in följande kod:',
+            '# Vi importerar ett \'random\' modul för att generera slumpmässiga tal',
+            'import random',
+            'Vi skriver ut ett hälsningsmeddelande till användarenprint("Välkommen till tärningkast simuleringen!")',
+            'Fråga användaren hur många gånger de vill kasta tärningen',
+            'throw_num = int(input("Hur många gånger vill du kasta tärningen? "))',
+            'for i in range(throw_num):',
+            'result = random.randint(1, 6) # Vi genererar ett slumpmässigt tal mellan 1 och 6',
+            'print(f"Kast {i + 1}: {result}")',
+            'print("Tack för att du spelade!")',
+            'Visuell representation av koden i Python IDLE:',
+            'Se till att indenteringarna i din kod är desamma som i exemplet ovan!',
+            'Steg 3: Förklaring av koden',
+            'Importera random-modulen: Random-modulen låter dig generera slumpmässiga tal. Funktionen random.randint(a, b) returnerar ett slumpmässigt heltal mellan a och b, inklusive båda ändarna.',
+            'Ange antalet kast: Programmet frågar användaren hur många gånger de vill kasta tärningen. Vi omvandlar det inmatade numret till ett heltal med int().',
+            'Simulering av kast: Programmet använder en for-loop för att genomföra tärningkast så många gånger som användaren har angett. För varje kast genereras ett slumpmässigt tal mellan 1 och 6, vilket representerar resultatet av kastet.',
+            'Skriva ut resultat: För varje kast skrivs resultatet ut (talet som "landade" på tärningen). I slutet av programmet skrivs ett tackmeddelande ut',
+            'Steg 4: Köra programmet',
+            'Spara filen som dice.py.',
+            'Kör ditt program i Python IDLE.',
+            'Ange antalet gånger du vill kasta tärningen (t.ex. 5).',
+            'Programmet kommer att generera slumpmässiga tal och skriva ut dem som resultat av varje kast.',
+        ],
+        'quiz_title' => 'Kviz:',
+        'quiz' => [
+            'Vilken modul i Python gör det möjligt att generera slumpmässiga tal?',
+            'random',
+            'Math',
+            'Time',
+            'Vad gör funktionen random.randint(1, 6)?',
+            'Genererar ett slumpmässigt tal mellan 1 och 6',
+            'Skriver ut ett slumpmässigt tal på skärmen',
+            'Skriver ut ett tal mellan 1 och 6',
+            'Hur konverterar du en användarinmatning till ett heltal i Python?',
+            'float(s)',
+            'int()',
+            'p()',
+            'Korrekt svar: 1.a, 2.a, 3.b'
+        ],
+        'mini_simulation_title' => 'Mini-simulering:',
+        'mini_simulation' => [
+            'Ändra programmet:',
+            'Lägg till ett alternativ för att simulera två tärningkast och lägga ihop deras resultat.',
+            'Lägg till ett alternativ för att programmet skriver ut det antal gånger det mest frekventa resultatet har dykt upp på tärningen.',
+        ],
+        'additional_resources_title' => 'Ytterligare resurser:',
+        'additional_resources' => [
+            'Python official documentation - random module',
+            'Learn Python'
+        ]
     ],
-    'description_title' => 'Beskrivning av utmaningen',
-    'description' => [
-        'Att simulera ett tärningskast är ett utmärkt sätt att lära sig grunderna i slumpmässiga tal i Python.',
-        'I denna lektion lär vi oss använda modulen random för att generera slumpmässiga tal och hur man använder dessa tal för att simulera ett tärningskast.',
-        'Genom denna uppgift förstår du hur Python kan generera tal inom ett visst intervall.'
-    ],
-    'target_audience_title' => 'Målgrupp',
-    'target_audience' => 'Grund- och gymnasieelever, nybörjare i Python, samt alla som vill lära sig om slumpmässiga tal, spel eller grundläggande programmeringslogik.',
-    'experience_title' => 'Erfarenhet',
-    'experience' => 'Ingen tidigare programmeringskunskap krävs. Grundläggande datorkunskap räcker.',
-    'duration_title' => 'Varaktighet',
-    'duration' => '30–45 minuter för en enkel version. Upp till 60 minuter om du utforskar avancerade alternativ (två tärningar, vanligaste kastet, etc.).',
-    'materials_title' => 'Rekommenderat verktyg',
-    'materials' => [
-        'Python installerat på din dator. Om du inte redan har det, ladda ner från den officiella webbplatsen: https://www.python.org',
-        'Python IDLE eller en texteditor (t.ex. Visual Studio Code, PyCharm) för att skriva din kod.'
-    ],
-    'instructions_title' => 'Instruktioner',
-    'instructions' => [
-        'Steg 1: Förbered miljön – installera Python och öppna IDLE eller en editor.',
-        'Steg 2: Skriv programmet – skapa en ny fil dice.py och skriv in följande kod:',
-        'import random',
-        'print("Välkommen till tärningssimuleringen!")',
-        'throw_num = int(input("Hur många gånger vill du kasta tärningen? "))',
-        'for i in range(throw_num):',
-        '    result = random.randint(1, 6)',
-        '    print(f"Kast {i + 1}: {result}")',
-        'print("Tack för att du spelade!")',
-        'Kontrollera indragningen – den måste stämma exakt!',
-        'Steg 3: Förklara koden – random.randint(a, b) returnerar ett heltal mellan a och b (inklusive båda gränserna). Programmet frågar användaren hur många kast som ska göras och använder en loop för att upprepa kastet.',
-        'Steg 4: Kör programmet – spara som dice.py, kör i IDLE, ange antal kast (t.ex. 5), och se resultaten.'
-    ],
-    'quiz_title' => 'Frågesport:',
-    'quiz' => [
-        'Vilken modul i Python används för att generera slumpmässiga tal?',
-        'a) random', 'b) Math', 'c) Time',
-        'Vad gör funktionen random.randint(1, 6)?',
-        'a) Genererar ett slumpmässigt tal mellan 1 och 6',
-        'b) Skriver ut ett slumpmässigt tal på skärmen',
-        'c) Skriver ut ett tal mellan 1 och 6',
-        'Hur konverterar du användarens inmatning till ett heltal i Python?',
-        'a) float(s)', 'b) int()', 'c) p()',
-        'Rätt svar: 1.a, 2.a, 3.b'
-    ],
-    'mini_simulation_title' => 'Mini-simulering:',
-    'mini_simulation' => [
-        'Ändra programmet:',
-        'Lägg till en funktion för att simulera två tärningskast och summera resultaten.',
-        'Lägg till en funktion som skriver ut det kastade värde som förekom oftast.'
-    ],
-    'additional_resources_title' => 'Ytterligare resurser:',
-    'additional_resources' => [
-        'Python officiella dokumentation – random-modulen',
-        'Learn Python'
-    ],
-],
 
     'gender-gap-gender-graph' => [
-    'title' => 'Könsgap, könsdiagram',
-    'author' => 'Theodora S. Tziampazi',
-    'purposes_title' => 'Syftet med utmaningen',
-    'purposes' => [
-        'Förstå hur datavisualisering kan påverka våra uppfattningar.',
-        'Identifiera partiskheter i digitala verktyg genom interaktion.',
-        'Experimentera med indata för att upptäcka snedvridningar.',
-        'Redigera koden för att säkerställa korrekt datarepresentation.',
-        'Jämföra rättvisa och partiska datavisualiseringar.',
-        'Reflektera över de etiska konsekvenserna av att manipulera data.',
-        'Diskutera de verkliga konsekvenserna av snedvridna statistik.',
-        'Utveckla kritiskt tänkande om AI och algoritmiska partiskheter.'
+        'title' => 'Könsklyftan, Könsdiagram',
+        'author' => 'Theodora S. Tziampazi',
+        'purposes_title' => 'Syftet med invändningen',
+        'purposes' => [
+            'Förstå hur datavisualisering kan påverka perception.',
+            'Identifiera fördomar i digitala verktyg genom interaktion.',
+            'Experimentera med indata för att observera förvrängningar.',
+            'Ändra koden för att säkerställa korrekt datarepresentation.',
+            'Jämför rättvisa och vinklade datavisualiseringar.',
+            'Reflektera över de etiska konsekvenserna av datamanipulering.',
+            'Diskutera verkliga konsekvenser av vinklad statistik.',
+            'Utveckla kritiskt tänkande om AI och algoritmisk bias.'
+        ],
+        'description_title' => 'Beskrivning av utmaningen',
+        'description' => 'Undersök bias i datavisualisering genom att mata in värden, analysera förvrängningar, modifiera kod och utforska hur digitala verktyg påverkar uppfattningar om könsrepresentation inom tech.',
+        'educational_goals_title' => 'Educational goals',
+        'educational_goals' => [
+            'Coding and Programming Logic:',
+            'Computational Thinking:',
+            'Problem Solving and Debugging:',
+            'Creativity and Design Thinking:',
+            'Collaboration and Communication:',
+        ],
+        'target_audience_title' => 'Målgrupp',
+        'target_audience' => [
+            'Grundskoleelever (6 till 12 år)',
+            'Högstadieelever (12–16 år)',
+            'Gymnasieelever (16 till 18 år)',
+            'Lärare och utbildare'
+        ],
+        'experience_title' => 'Experience',
+        'experiences' => [
+            'Intermediate - Viss grundläggande kodning kunskap rekommenderas; deltagarna bör vara bekanta med grundläggande programmering koncept.',
+            'Avancerad - Utformad för deltagare med stark kodningsförmåga och tidigare erfarenhet av programmering.'
+        ],
+        'duration_title' => 'Varaktighet',
+        'duration' => '2 timmar',
+        'materials_title' => 'Rekommenderat verktyg',
+        'materials' => [
+            'Scratch 3 och kalkylbladet https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+        ],
+        'instructions_title' => 'Instruktioner',
+        'instructions' => [
+            'Du använder det här digitala verktyget (bar maker) https://scratch.mit.edu/projects/1147892829 . Titta inte inuti koden ännu.',
+            'Klicka på den gröna flaggan och infoga data (1-10) som hypotetiskt representerar antalet kvinnor i en tekniksektor. Försök med några siffror.',
+            '',
+            'Vad märker du?',
+            'Kan det vara en bugg eller ett beslut?',
+            'Hur som helst, hur kan det fixas?',
+            'Manuellt (användarnivå):',
+            'Utforska verktyget och eventuella dragbara sprites.',
+            'Finns det någon ståndpunkt där problemet är löst?',
+            'Finns det en situation där ett annat oväntat resultat observeras?',
+            'Mat för eftertanke/diskussion',
+            'Vad händer om antalet kvinnor i en sektor underskattas?',
+            'Vad händer om antalet kvinnor i en sektor överskattas?',
+            'Vad händer om antalet kvinnor i en sektor är väl uppskattat men inte balanserat när det gäller könsskillnader?',
+            'Vad bör göras?',
+            'Takeaway: Hur vi använder verktyget (där vi placerar en komponent) påverkar resultatet.',
+            'Med kodning (skaparnivå): Nu är det dags att se inuti projektet.',
+            'Enkel utmaning:',
+            'Hacka koden så att de data som visas är lika med de data som har infogats.',
+            'Avancerad utmaning:',
+            'Kopiera bar sprite och göra den blå (stereotypt refereras till manlig).',
+            'Ändra y-positionen så att den är synlig och jämförbar med den lila stapeln.',
+            'Skapa en manlig symbol som en ny sprite.',
+            'Tips: Du kan ladda ner / exportera båda sprites (bar, symbol) från projektet som anges i slutet av detta avsnitt som en lösning.',
+            'Hacka nu koderna så att när användarens inmatning är x (nu ges 2 gånger för varje stapel), de 2 stapelmakarna är:',
+            'Fair (samma kod). Justera hansymbolens y-position om den är i skick. Felsök när du fortsätter kontrollera båda koderna.',
+            'Orättvis användning: Dra de två symbolerna i olika positioner; ge samma indata för att se olikheten.',
+            'Sidig/partisk (annan kod)',
+            'till förmån för män',
+            'till förmån för kvinnor',
+            'Experimentera så att koden antingen skulle mildra eller förvärra könsskillnaderna...',
+            'Utforska de två sätten som resultatet är partiskt på (dra och/eller koda).',
+            'Hur kan dessa två sätt relateras till varandra?',
+            'En lösning (samma kod): https://scratch.mit.edu/projects/1151892036',
+            'Diskussion:',
+            'Hur känner du att du kan skapa ett ensidigt och ett opartiskt digitalt verktyg också?',
+            'Var är partiskheten mer ”dold”? När det gäller att dra mellan olika positioner eller att koda?',
+            'Kan du föreställa dig fall där en förvrängd bild av något kan hjälpa (vissa människor-vem)?',
+            'Tror ni att vi kan stödja förvrängda uppgifter när ändamålet helgar medlen eller inte på något sätt presenterar sanningen?',
+            'Hur känner du att AI (driven av ett givet syfte) kan prova saker som du har provat i denna utmaning?',
+            'Fler frågor:',
+            'Hur samlar vi in data?',
+            'Hur behandlas våra uppgifter?',
+            'Hur påverkas våra handlingar/övertygelser av statistik dold i algoritmer (AI eller inte)?',
+            'Takeaway: Hur vi skapar verktyget påverkar resultatet eller till och med vår världsbild.'
+        ],
+        'real-life-applications_title' => 'Exempel',
+        'real-life-applications' => [
+            'Rapporter om mångfald på arbetsplatsen – Säkerställa korrekt representation av könsrelaterade uppgifter i statistiken om mångfald på arbetsplatsen.',
+            'Media & Nyhetsgrafik – Undvika vilseledande visualiseringar i rapporter om jämställdhet.',
+            'AI & Algoritm Bias – Identifiera och mildra fördomar i maskininlärningsmodeller som behandlar demografiska data.',
+            'Rekryteringsverktyg – Säkerställa rättvis representation i HR-analys och beslutsprogram.',
+            'STEM Education & Outreach – Användning av opartiska data för att uppmuntra fler kvinnor inom teknikområden.',
+            'Offentlig politik och opinionsbildning – Stöd till rättvisa politiska beslut med korrekt statistik över könsskillnader.',
+            'Kampanjer för sociala medier och ökad medvetenhet – Skapa rättvisa visuella representationer av könsdata för att driva på förändring.'
+        ],
+        'variations_title' => 'Variations of the challenge',
+        'variations' => [
+            'Expanding the challenge to other environments: You could modify the challenge to involve AI bots protecting other ecosystems like forests, rivers, or even urban areas.',
+            'The bots would need to address challenges such as deforestation or air pollution.',
+        ],
     ],
-    'description_title' => 'Beskrivning av utmaningen',
-    'description' => [
-        'Utforska snedvridning i datavisualisering genom att mata in värden, analysera felaktigheter, justera koden och reflektera över hur digitala verktyg påverkar vår uppfattning om könsrepresentation i teknik.'
-    ],
-    'target_audience_title' => 'Målgrupp',
-    'target-audience' => [
-        'Grundskoleelever (6–12 år)',
-        'Gymnasieelever (12–16 år)',
-        'Äldre gymnasieelever (16–18 år)',
-        'Lärare och utbildare'
-    ],
-    'experience_title' => 'Erfarenhet',
-    'experience' => [
-        'Medelnivå – rekommenderas att ha grundläggande programmeringskunskaper.',
-        'Avancerad – för deltagare med starka kodningsfärdigheter och tidigare erfarenhet.'
-    ],
-    'duration_title' => 'Varaktighet',
-    'duration' => '2 timmar',
-    'materials_title' => 'Material',
-    'materials' => [
-        'Scratch 3',
-        'Arbetsblad: https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing'
-    ],
-    'instructions_title' => 'Instruktioner',
-    'instructions' => [
-        'Använd detta digitala verktyg (skapa stapel): https://scratch.mit.edu/projects/1147892829. Titta inte på koden än. Klicka på den gröna flaggan och ange värden (1–10) som hypotetiskt representerar antalet kvinnor i teknik. Testa flera värden.',
-        'Vad märker du?',
-        'Är det en bugg eller ett medvetet val?',
-        'Hur kan det lösas?',
-        'Manuellt (användarnivå): undersök verktyget och alla sprites som kan dras. Finns det någon plats där problemet åtgärdas? Eller där ett oväntat resultat uppstår?',
-        'Diskussion: tänk om antalet kvinnor inom teknik underskattas eller överskattas? Vad händer om siffrorna är korrekta men obalansen kvarstår?',
-        'Insikt: det sätt vi använder verktyget på (t.ex. placering av komponenter) påverkar resultatet.',
-        'Genom kodning (skaparnivå): öppna projektet. Grundutmaning – redigera koden så att den data som visas stämmer med det du skrev in.',
-        'Avancerad utmaning – duplicera stapel-spriten, färga den blå (män), ändra dess y-position och skapa en manlig symbol som ny sprite. Ändra koderna för både rättvis och partisk version och undersök hur kodning kan minska eller förstärka gapet.',
-        'Lösning (samma kod): https://scratch.mit.edu/projects/1151892036'
-    ],
-    'discussion_title' => 'Diskussion',
-    'discussion' => [
-        'Hur kan ett digitalt verktyg vara både opartiskt och partiskt?',
-        'Var är partiskheten ”gömd” – i hur vi drar komponenter eller i själva koden?',
-        'Kan en snedvriden representation ibland vara användbar?',
-        'Kan målet rättfärdiga snedvriden data, eller bör sanningen alltid representeras korrekt?',
-        'Hur kan AI reproducera liknande mönster som du såg i denna utmaning?',
-        'Extra frågor: Hur samlar vi in data? Hur bearbetar vi den? Hur styr dold statistik i algoritmer vårt beteende?',
-        'Insikt: det sätt vi bygger verktyget påverkar resultatet och hur vi ser världen.'
-    ],
-    'real-life-applications_title' => 'Exempel från verkligheten',
-    'real-life-applications' => [
-        'Rapporter om mångfald på arbetsplatser – korrekt representation av könsfördelning i statistik.',
-        'Mediegrafik – undvika vilseledande visualiseringar när man rapporterar om jämställdhet.',
-        'AI och algoritmisk partiskhet – identifiera och minska bias i maskininlärningsmodeller.',
-        'Rekrytering och HR-analysverktyg – rättvis representation i beslutsfattande.',
-        'STEM-utbildning – använda opartisk data för att öka kvinnors deltagande i teknik.',
-        'Offentligt beslutsfattande – rättvis politik baserad på korrekt data.',
-        'Sociala medier och kampanjer – rättvisa visualiseringar för att stödja förändring.'
-    ],
-],
 
     'dance-with-ally' => [
-    'title' => 'Dansa med Ally',
-    'author' => 'Kristina Krtalić',
-    'purposes_title' => 'Syftet med utmaningen',
-    'purposes' => [
-        'Lära sig att ansluta micro:bit till Scratch via Bluetooth.',
-        'Förstå hur man använder Scratchs micro:bit-tillägg.',
-        'Använda micro:bits knappar för interaktion med Scratch-projekt.',
-        'Skapa interaktiva spel med hjälp av micro:bit.',
-        'Utveckla problemlösningsförmåga och logiskt tänkande.',
-        'Öka kreativiteten genom kodning.'
+        'title' => 'Dansa med allierade',
+        'author' => 'Kristina Krtalić',
+        'purposes_title' => 'Syftet med utmaningen',
+        'purposes' => [
+            'lär dig att ansluta micro:bit med Scratch via Bluetooth',
+            'förstå hur man använder tillägget Scratch micro:bit',
+            'använd micro:bit-knappar för att interagera med Scratch-projekt',
+            'skapa interaktiva spel med micro:bit',
+            'utveckla förmågan att lösa problem och tänka logiskt',
+            'öka kreativiteten genom kodning'
+        ],
+        'description_title' => 'Beskrivning av utmaningen',
+        'description' => 'Skapa ett program som gör det möjligt att dansa en sprite i Scratch med en micro:bit.
+        Genom att ansluta Scratch och micro:bit får eleverna en omfattande inlärningsupplevelse som integrerar digital och fysisk datoranvändning, förbättrar problemlösningsförmågan och uppmuntrar kreativ utforskning.',
+        'educational_goals_title' => 'Utbildningsmål',
+        'educational_goals' => [
+            'Logik för kodning och programmering:',
+            'eleverna kommer att använda Scratch-block för att skriva händelsestyrda program som svarar på indata från micro:bit',
+            'eleverna kommer att förstå och tillämpa grundläggande programmeringskoncept som slingor, beslut, villkor och variabler',
+            'eleverna kommer att bygga flyt med blockbaserad programmering för att styra digitala och fysiska utgångar',
+            'Beräkningstänkande:',
+            'eleverna kommer att sönderdela problem i mindre delar och designa lösningar steg för steg med Scratch',
+            'eleverna kommer att använda sensordata (t.ex. knappar, skakningar) från micro:bit för att styra sprites eller animationer',
+            'Eleverna kommer att utveckla och testa algoritmer för att lösa specifika utmaningar (t.ex. att få sprite att dansa när micro:bit lutas).',
+            'Problemlösning och felsökning:',
+            'eleverna kommer att engagera sig i iterativ design genom att testa, identifiera buggar och förfina deras Scratch-kod och micro:bit-interaktioner',
+            'eleverna felsöker realtidsfel som omfattar både programvara (Scratch-skript) och maskinvara (micro:bit-anslutning eller -ingångar)',
+            'deltagarna dokumenterar och reflekterar över ändringar som görs under felsökning.',
+            'Kreativitet och designtänkande:',
+            'eleverna skapar originalanimeringar, spel eller berättelser i Scratch som integrerar micro:bit-indata som interaktiva element',
+            'eleverna kommer att uttrycka sig konstnärligt genom att koreografera sprite rörelser eller utforma interaktiva scener',
+            'eleverna kommer att följa designprocessen: empatisera, ideera, prototyp och testa',
+            'Samarbete och kommunikation:',
+            'eleverna kommer att arbeta i par eller små team för att planera, koda och presentera interaktiva projekt',
+            'eleverna kommer att förklara sina designval och kodlogik för kamrater eller en bredare publik'
+        ],
+        'target_audience_title' => 'Målgrupp',
+        'target_audience' => [
+            'Grundskoleelever (6 till 12 år)',
+            'Högstadieelever (12–16 år)'
+        ],
+        'experience_title' => 'Erfarenhet',
+        'experience' => 'Intermediate - Viss grundläggande kodning kunskap rekommenderas; deltagarna bör vara bekanta med grundläggande programmering koncept.',
+        'duration_title' => 'Varaktighet',
+        'duration' => '60 minuter',
+        'materials_title' => 'Rekommenderat verktyg',
+        'materials' => [
+            'dator',
+            'Scratch (https://scratch.mit.edu/)',
+            'Skraplock (https://scratch.mit.edu/download/scratch-link)',
+            'Scratch micro:bit (https://scratch.mit.edu/microbit)',
+            'mikro:bit',
+            'sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+        ],
+        'instructions_title' => 'Instruktioner',
+        'instructions' => [
+            'start Scratch',
+            'skapa ett konto i Scratch (om du inte har ett)',
+            'börja skapa ett nytt projekt, lägga till en sprite, lägga till en bakgrund, bestämma den ursprungliga positionen för spriten när du startar programmet',
+            'lägg till en grupp med micro:bit-skript från tillägget Scratch programmeringsspråk',
+            'anslut micro:bit till datorn, slå på Bluetooth på datorn (om den inte är påslagen)',
+            'installera och kör Scratch länk https://scratch.mit.edu/download/scratch-link, ladda ner micro:bit HEX-filen och spara (kopiera) den till micro:bit https://scratch.mit.edu/microbit',
+            'Micro:bit-tillägget, hitta en enhet nära datorn genom att klicka på den orange knappen i micro:bit-tillägget',
+            'Sök och hitta enheter',
+            'Skapa ett program med block som möjliggör en sprite dans till vald musik (med start ljudblock) som rör sig när vi skakar micro:bit. Dansen består av endast två kommandon: glid på x-axeln vänster och höger. Spara projektet på datorn.',
+            'Efter att ha skapat programmet enligt instruktionerna, kan eleverna lägga till sina egna block, bestämma spritens kontroller genom att trycka på A och / eller B-knappen på micro:bit, ändra spritens utseende, ändra / lägga till rörelser,...'
+        ],
+        'examples_title' => 'Exempel',
+        'examples' => [
+            'Att koppla ihop en micro:bit med Scratch för att styra en dansande sprite är ett bra sätt att utforska interaktiv programmering. Detta koncept kan utvidgas till olika tillämpningar i verkligheten och kreativa projekt, såsom:',
+            '1. Interaktiva dans- och träningsprogram',
+            'använd micro:bits accelerometer för att spåra rörelser och skapa träningsspel',
+            'göra ett danslärande verktyg där spriten följer verkliga dansrörelser',
+            '2. gestbaserad animering och spel',
+            'styra friställda tecken med handrörelser eller lutningsrörelser',
+            'utveckla enkla rörelsestyrda spel, som att hoppa eller undvika hinder',
+            'https://microbit.org/projects/make-it-code-it/step-counter/'
+        ]
     ],
-    'description_title' => 'Beskrivning av utmaningen',
-    'description' => [
-        'Skapa ett program som gör att en Scratch-figur (sprite) dansar med hjälp av micro:bit.'
-    ],
-    'educational_goals_title' => 'Lärandemål',
-    'educational_goals' => [
-        'Programmeringslogik: eleverna använder Scratch-block för händelsebaserade program som reagerar på micro:bits inmatningar; de förstår loopar, villkor och variabler samt lär sig hantera digitala och fysiska in/utdata.',
-        'Beräknande tänkande: dela upp problem i mindre delar, använda sensordata från micro:bit (knappar, skakningar) och utveckla algoritmer för att lösa utmaningar.',
-        'Felsökning och förbättring: testa, identifiera fel och förbättra Scratch-koden samt interaktionen med micro:bit; rätta fel i realtid och dokumentera ändringar.',
-        'Kreativitet och design thinking: skapa egna animationer, spel eller berättelser som bygger på micro:bits indata; uttryck dig själv och följ designprocessen (empati–definiera–prototypa–testa).',
-        'Samarbete och kommunikation: arbeta i par eller små grupper för att designa och koda interaktiva projekt; presentera lösningar och förklara val samt kodlogik.'
-    ],
-    'target_audience_title' => 'Målgrupp',
-    'target-audience' => [
-        'Grundskoleelever (6–12 år)',
-        'Elever i lägre gymnasiet (12–16 år)'
-    ],
-    'experience_title' => 'Erfarenhet',
-    'experience' => 'Medelnivå – grundläggande kunskaper i programmering rekommenderas; deltagarna bör känna till de viktigaste koncepten.',
-    'duration_title' => 'Varaktighet',
-    'duration' => '60 minuter',
-    'materials_title' => 'Material',
-    'materials' => [
-        'Dator',
-        'Scratch (https://scratch.mit.edu/)',
-        'Scratch Link (https://scratch.mit.edu/download/scratch-link)',
-        'Scratch micro:bit-tillägg (https://scratch.mit.edu/microbit)',
-        'micro:bit',
-        'Ally-sprite (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
-    ],
-    'instructions_title' => 'Instruktioner',
-    'instructions' => [
-        'Starta Scratch.',
-        'Skapa ett Scratch-konto (om du inte redan har ett).',
-        'Starta ett nytt projekt, lägg till en sprite och en bakgrund, och ange spritens startposition när programmet körs.',
-        'Lägg till micro:bit-blocken från Scratch-tilläggen.',
-        'Koppla micro:bit till datorn och aktivera Bluetooth.',
-        'Installera och starta Scratch Link, ladda ner micro:bits HEX-fil och överför den till enheten.',
-        'Öppna Scratch micro:bit-tillägget, klicka på den orange knappen och sök efter enheter i närheten.',
-        'Välj den hittade enheten.',
-        'Skapa ett program där spriten dansar till vald musik när micro:bit skakas (rörelse på X-axeln vänster och höger). Spara projektet.',
-        'Utöka projektet: lägg till egna block, styr spriten med micro:bits A/B-knappar, ändra spritens utseende eller rörelser.'
-    ],
-    'real-life-applications_title' => 'Exempel från verkligheten',
-    'real-life-applications' => [
-        'Interaktiva dans- och träningsappar: använd micro:bits accelerometer för att spåra rörelser och skapa träningsspel eller verktyg för att lära sig dans.',
-        'Gestbaserade animationer och spel: styra karaktärer med handrörelser eller lutning; enkla spel som styrs med rörelser.'
-    ],
-],
 
-'coding-for-the-ocean' => [
-    'title' => 'Kodning för havet – Bygg din AI-bot för att rädda havet',
-    'author' => 'Teresa Silvestri',
-    'purposes_title' => 'Syftet med utmaningen',
-    'purposes' => [
-        'Förmågan att använda artificiell intelligens för att lösa miljöproblem.',
-        'Kodningsfärdigheter för att skapa och programmera en AI-bot.',
-        'Kunskap om klimatförändringar och vikten av att skydda den marina miljön.',
-        'Förmåga att lösa problem inom vetenskap och teknik.',
-        'Utveckling av logiskt tänkande som tillämpas på verkliga utmaningar.',
-        'Kreativitet i att utforma en bot som kan svara på miljöhot.',
-        'Praktisk erfarenhet av att använda kodningsplattformar som Code.org.',
-        'Lagarbete och samarbete samtidigt som man delar botar och tävlar med klasskamrater.'
+    'code-it-like-margaret-hamilton' => [
+        'title' => 'Koda det som Margaret Hamilton!!!',
+        'author' => 'Chouliara Theodora',
+        'purposes' => [
+            'Studenterna kommer att lära sig grundläggande blockbaserade kodningskoncept med Scratch Jr för att skjuta upp en rymdfarkost, precis som Margaret Hamilton, kvinnan som programmerade koden för Nasas Apollo för att nå månen.',
+            'Verksamheten kommer också att bidra till att bryta ned könsstereotyper genom att lyfta fram en kvinnlig programmerares bidrag till utforskning av rymden och uppmuntra flickor att börja programmera och göra STEM-karriärer.'
+        ],
+        'description' => 'Programmera en rymduppskjutning i Scratch Jr inspirerad av Margaret Hamilton! Koda en nedräkning, starta en rymdfarkost och bryta könsstereotyper genom att uppmuntra flickor i Coding!',
+        'instructions' => [
+            '1. Inledning:',
+            'Läraren presenterar rymduppdrag och skickar människor till månen och presenterar Margaret Hamilton och hennes bidrag till Apollo planering. Detta följs av en diskussion om vad programmering är och hur vi kan ge instruktioner till en dator.',
+            '2. Programmeringsaktivitet: Margaret Hamilton kodar och räknar ner och rymdfarkosten går mot månen.',
+            'Öppna appen Scratch Jr. och skapa ett nytt projekt.',
+            'Ta bort tecknet.',
+            'Välj bakgrund med mellanslag (Steg1 png).',
+            'Välj bland karaktärerna en kvinna, ett rymdskepp och jorden (steg 2 png).',
+            'Ändra storlek på tecknen genom att klicka så många gånger som behövs på Blocket ”Krympa” eller ”Växa” (steg 3 png).',
+            'Flytta tecknen till rätt position (steg 4 png).',
+            'Skriva programmen så att kvinnan räknar ner och när hon är klar med sina ord, rymdskeppet går upp. För att uppnå detta, när den gröna flaggan trycks kvinnan ska säga de ord du väljer och sedan skicka ett meddelande. Rymdskeppet bör ta emot meddelandet med samma färg och med rätt rörelse blockerar rymdskeppet borde gå upp. Du kan också göra rymdskeppet mindre när det rör sig för att programmera rymdskeppet kan du använda enkla block eller upprepningsslingan. (Steg 5 png).',
+            'Kör skriptet genom att trycka på den gröna flaggan.'
+        ],
+        'materials' => [
+            'Tablet eller PC (om möjligt rekommenderar vi i första hand att du använder en surfplatta) med Scratch Jr. installerat (https://www.scratchjr.org/ för surfplattor och https://jfo8000.github.io/ScratchJr-Desktop/ för Windows eller Mac).',
+            'Tryckta bilder av Margaret Hamilton och Apollo 11-uppdraget (valfritt).',
+            'Utskrivbara kort med Scratch Jr.-kommandon (https://www.scratchjr.org/teach/resources) - (tillval).',
+            'Projektor (tillval).'
+        ],
+        'real-life-applications' => [
+            'Verkliga tillämpningar:',
+            'Denna aktivitet är inte bara en introduktion till programmering, utan är kopplad till verkliga händelser och tillämpningar inom vetenskap och teknik:',
+            'Margaret Hamilton utvecklade mjukvaran för Apollo Guidance Computer, som tillät Apollo 11 att landa säkert 1969. Aktiviteten hjälper barn att förstå hur datorer behöver tydliga och korrekta kommandon för att utföra ett uppdrag - precis som NASA använd kod för att nå månen.',
+            'Blockprogrammering, som i Scratch Jr, är det första steget för att förstå mer komplex programmeringsspråk som för närvarande används i rymduppdrag, robotteknik och artificiella Samma principer används vid utvecklingen av autonoma system, system för såsom Mars utforskningsrobotar (nyfikenhet, uthållighet).'
+        ],
+        'variations' => [
+            'Variationer/förslag:',
+            'Om studenterna är nya i appen kan du skapa projekten först med de tryckta block.',
+            'Lägg till fler karaktärer som planeter, stjärnor eller kometer.',
+            'Beroende på ålder och barnens upplevelse med ScratchJr-appen kan ytterligare utmaningar kan läggas till, såsom programmering av rymdskeppet för att undvika hinder.',
+            'Eleverna kan också lägga till en annan sida som visar rymdskeppet som landar på månen.',
+            'I stället för att använda ”Say”-blocket kan blocket ”Play Recorded Sound” användas och elevernas röster hörs.',
+            'Lägg till astronauttecken där du redigerar ansikten och lägger till elevernas foton.'
+        ],
+        'duration' => '60 minuter',
+        'experience' => 'Intermediate - Viss grundläggande kodning kunskap rekommenderas; deltagarna bör vara bekanta med grundläggande programmering koncept.',
+        'target-audience' => [
+            'Små barn (5–7 år)'
+        ]
     ],
-    'description_title' => 'Beskrivning av utmaningen',
-    'description' => [
-        'Skapa och träna en AI-bot för att skydda havet!',
-        'Lär dig koda, lös miljöproblem och utveckla logiskt tänkande för att skydda den marina miljön.'
-    ],
-    'instructions_title' => 'Instruktioner',
-    'instructions' => [
-        'Gå till Code.org',
-        'Öppna din webbläsare och gå till Code.org. Om du inte har något konto kan du skapa ett eller logga in med ett befintligt.',
-        'Starta ett nytt projekt',
-        'På huvudskärmen väljer du den kurs eller handledning som rör havsskydd. Klicka på ”Start” för att påbörja ditt projekt.',
-        'Följ steg-för-steg-guiden',
-        'Code.org guidar dig genom en interaktiv handledning. Läs varje instruktion noggrant och slutför varje steg. Se till att följa instruktionerna för att lära dig programmera din AI-bot.',
-        'Programmera din bot',
-        'Använd de visuella kodblocken för att lära din bot hur den ska reagera på miljösituationer, som att samla in plast eller undvika hinder. Ändra blocken för att passa olika situationer och testa botens beteende.',
-        'Testa din bot',
-        'När du har skrivit koden testar du din bot för att se hur den hanterar utmaningarna. Om boten inte fungerar som förväntat, gå tillbaka och ändra den och testa den igen tills den fungerar bra.',
-        'Dela din bot med klassen',
-        'När din bot är klar, kopiera projektlänken och dela den med dina klasskamrater. Delta i tävlingen för att se vilken bot som är mest effektiv för att skydda havet.',
-        'Se över och förbättra',
-        'Efter att du har slutfört utmaningen, granska koden och leta efter sätt att förbättra den. Du kan lägga till fler funktioner i boten för att hantera nya miljöutmaningar.',
-        'Dela länken till ditt arbete i din Instagram-bio: tryck på knappen Redigera profil på ditt Instagramkonto och lägg till länken i fältet Webbplats. Skapa därefter ett nytt inlägg, lägg till en skärmdump av ditt arbete, skriv “Länk i bio”, lägg till hashtaggen #EUCodeWeekChallenge och nämn @CodeWeekEU.'
-    ],
-    'materials_title' => 'Material',
-    'materials' => [
-        'Programvara: Tillgång till Code.org',
-        'Maskinvara: Dator eller surfplatta med internetanslutning.',
-        'Onlineverktyg: Webbläsare för att navigera på Code.org eller liknande plattformar.',
-        'Stödmaterial: Handledningar och utbildningsresurser från plattformen.',
-        'Andra verktyg: Eventuella ljud- eller videoutrustningar för att följa handledningen.'
-    ],
-    'real-life-applications_title' => 'Verkliga tillämpningar',
-    'real-life-applications' => [
-        'Artificiell intelligens i havsskydd: Företag och organisationer som The Ocean Cleanup använder AI-drivna system för att samla plast från haven och bekämpa marin förorening.',
-        'AI i miljöövervakning: AI-robotar används för att övervaka havsförhållanden, spåra marina djur och upptäcka föroreningar, vilket ökar effektiviteten i miljöskyddsarbetet.'
-    ],
-    'variations_title' => 'Varianter av utmaningen',
-    'variations' => [
-        'Utöka utmaningen till andra miljöer: Du kan ändra utmaningen så att AI-robotar skyddar andra ekosystem som skogar, floder eller till och med stadsområden.',
-        'Robotarna skulle behöva hantera utmaningar som avskogning eller luftföroreningar.'
-    ],
-    'duration' => '45 minuter – 1 timme',
-    'experience' => 'Nybörjare – Ingen tidigare kodningserfarenhet krävs; lämplig för helt nybörjare.',
-    'target-audience' => [
-        'Grundskoleelever (6 till 12 år)'
-    ],
-    'educational_goals' => [
-        'Att utveckla grundläggande färdigheter i programmering och artificiell intelligens',
-        'Att främja miljömedvetenhet och vikten av att skydda miljön',
-        'Att uppmuntra kreativitet och fantasi genom berättande',
-        'Att utveckla problemlösning och kritiskt tänkande'
-    ],
-],
-
-'code-it-like-margaret-hamilton' => [
-    'title' => 'Koda det som Margaret Hamilton!',
-    'author' => 'Chouliara Theodora',
-    'purposes' => [
-        'Studenterna kommer att lära sig grundläggande blockbaserade kodningskoncept med Scratch Jr för att skjuta upp en rymdfarkost, precis som Margaret Hamilton, kvinnan som programmerade koden för Nasas Apollo för att nå månen.',
-        'Verksamheten kommer också att bidra till att bryta ned könsstereotyper genom att lyfta fram en kvinnlig programmerares bidrag till utforskning av rymden och uppmuntra flickor att börja programmera och göra STEM-karriärer.'
-    ],
-    'description' => 'Programmera en rymduppskjutning i Scratch Jr inspirerad av Margaret Hamilton! Koda en nedräkning, starta en rymdfarkost och bryta könsstereotyper genom att uppmuntra flickor i Coding!',
-    'instructions' => [
-        'Inledning: Läraren presenterar rymduppdrag och skickar människor till månen och presenterar Margaret Hamilton och hennes bidrag till Apollo planering. Detta följs av en diskussion om vad programmering är och hur vi kan ge instruktioner till en dator.',
-        'Programmeringsaktivitet: Margaret Hamilton kodar och räknar ner och rymdfarkosten går mot månen.',
-        'Öppna appen Scratch Jr. och skapa ett nytt projekt.',
-        'Ta bort tecknet.',
-        'Välj bakgrund med mellanslag (Steg1 png).',
-        'Välj bland karaktärerna en kvinna, ett rymdskepp och jorden (steg 2 png).',
-        'Ändra storlek på tecknen genom att klicka så många gånger som behövs på Blocket ”Krympa” eller ”Växa” (steg 3 png).',
-        'Flytta tecknen till rätt position (steg 4 png).',
-        'Skriva programmen så att kvinnan räknar ner och när hon är klar med sina ord, rymdskeppet går upp. För att uppnå detta, när den gröna flaggan trycks kvinnan ska säga de ord du väljer och sedan skicka ett meddelande. Rymdskeppet bör ta emot meddelandet med samma färg och med rätt rörelse blockerar rymdskeppet borde gå upp. Du kan också göra rymdskeppet mindre när det rör sig för att programmera rymdskeppet kan du använda enkla block eller upprepningsslingan. (Steg 5 png).',
-        'Kör skriptet genom att trycka på den gröna flaggan.'
-    ],
-    'materials' => [
-        'Tablet eller PC (om möjligt rekommenderar vi i första hand att du använder en surfplatta) med Scratch Jr. installerat (https://www.scratchjr.org/ för surfplattor och https://jfo8000.github.io/ScratchJr-Desktop/ för Windows eller Mac).',
-        'Tryckta bilder av Margaret Hamilton och Apollo 11-uppdraget (valfritt).',
-        'Utskrivbara kort med Scratch Jr.-kommandon (https://www.scratchjr.org/teach/resources) - (tillval).',
-        'Projektor (tillval).'
-    ],
-    'real-life-applications' => [
-        'Verkliga tillämpningar:',
-        'Denna aktivitet är inte bara en introduktion till programmering, utan är kopplad till verkliga händelser och tillämpningar inom vetenskap och teknik: Margaret Hamilton utvecklade mjukvaran för Apollo Guidance Computer, som tillät Apollo 11 att landa säkert 1969. Aktiviteten hjälper barn att förstå hur datorer behöver tydliga och korrekta kommandon för att utföra ett uppdrag - precis som NASA använd kod för att nå månen. Blockprogrammering, som i Scratch Jr, är det första steget för att förstå mer komplex programmeringsspråk som för närvarande används i rymduppdrag, robotteknik och artificiella Samma principer används vid utvecklingen av autonoma system, system för såsom Mars utforskningsrobotar (nyfikenhet, uthållighet).',
-    ],
-    'variations' => [
-        'Variationer/förslag:',
-        'Om studenterna är nya i appen kan du skapa projekten först med de tryckta block.',
-        'Lägg till fler karaktärer som planeter, stjärnor eller kometer.',
-        'Beroende på ålder och barnens upplevelse med ScratchJr-appen kan ytterligare utmaningar kan läggas till, såsom programmering av rymdskeppet för att undvika hinder.',
-        'Eleverna kan också lägga till en annan sida som visar rymdskeppet som landar på månen.',
-        'I stället för att använda ”Say”-blocket kan blocket ”Play Recorded Sound” användas och elevernas röster hörs.',
-        'Lägg till astronauttecken där du redigerar ansikten och lägger till elevernas foton.'
-    ],
-    'duration' => '60 minuter',
-    'experience' => 'Intermediate - Viss grundläggande kodning kunskap rekommenderas; deltagarna bör vara bekanta med grundläggande programmering koncept.',
-    'target-audience' => [
-        'Små barn (5–7 år)'
-    ]
-],
     'chatbot' => [
         'title' => 'Skapa en chattbot',
         'author' => 'EU Code Week Team',
@@ -1034,7 +1071,8 @@ return [
         'author' => 'Lydie El-Halougi',
         'purposes' => [
             'Att lära sig och öva på loopar och variabler',
-            'Att öka kreativiteten i kodningen.'],
+            'Att öka kreativiteten i kodningen.'
+        ],
         'description' => 'I den här utmaningen kommer du att skriva ett projekt i Scratch för att skapa en spiral, med hjälp av ”penna”-blocken, en loop och en variabel.',
 
         'instructions' => [
@@ -1148,7 +1186,8 @@ return [
             'Skapa en ny maskininlärningsmodell genom att lägga till 3 nya etiketter, kalla den första ”snäll”, den andra kallas ”elak” och om du vill att den ska känna igen ditt namn kan du skapa en tredje etikett som heter ”namn”.',
             'Träna den nya maskininlärningsmodellen, testa den och använd den för att skapa en Emobot i Scratch.',
             'Starta Scratch 3-redigeraren, radera kattspriten, lägg in 3 nya sprites skapade med Microsoft Bing Image Creator (glad, arg och inte säker) eller skapa en ny sprite genom att klicka på penselikonen och rita tre kopior av klädseln för ansiktena glad, arg och inte säker.',
-            'Klicka på ”kod”-fliken och ange följande script.'],
+            'Klicka på ”kod”-fliken och ange följande script.'
+        ],
         'example' => [
             'Dela din Emobot Kliki med dina vänner och lär dig mer om AI och känslor!',
             'I stället för en datorteckning kan du testa något annat, som ett djur. I stället för snäll och elak kan du träna figuren att känna igen andra typer av budskap.',
@@ -1214,7 +1253,8 @@ return [
             'Att lära ut/lära sig om och reflektera över kodningskoncept.',
             'Att använda enkla kodningsverktyg.',
             'Att utveckla datalogiskt tänkande och problemlösning.',
-        ], 'description' => [
+        ],
+        'description' => [
             'Skapa en escape-kodningsupplevelse så här:',
             'Du kan använda google form, genial.ly, google presentation, vilket verktyg som helst för att skapa historieberättande baserat på kodning ;).',
 
@@ -1258,7 +1298,8 @@ return [
             'Alla animeringar startar när radiosignalen tas emot.',
             'Animeringen på det första micro:bitet syns omedelbart, de andra startar när ormen kommer dit.',
             'Tiden mellan de två faserna bestämmer ormens hastighet.',
-        ], 'materials' => [
+        ],
+        'materials' => [
             'micro:bits (för alla elever om det är möjligt)',
             'laptop eller dator för makecode.microbit.org editor',
         ],
@@ -1355,5 +1396,80 @@ return [
             'Testa det!',
         ],
     ],
-
+    'careers-as-constellations' => [
+        'title' => 'Karriärer som konstellationer',
+        'authorcontent' => 'Denna utmaning och tävling är ett initiativ av Linda Liukas, författare, illustratör och entreprenör i samband med Code4Europe-partnerskapets kampanj Girls in Digital 2025 #Webinar 1 livestreamad på Youtube: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">How Code, Creativity and Curiosity form a Career?</a>',
+        'author' => 'Linda Liukas',
+        'start-date' => 'Startdatum',
+        'activity-type' => 'Typ av aktivitet',
+        'open-online-activity' => 'Öppen online-aktivitet',
+        'name-of-org' => 'Organisationens namn',
+        'language' => 'Språk',
+        'description' => 'Denna interaktiva aktivitet hjälper eleverna att kartlägga sina personliga intressen och hobbyer och planera för en potentiell karriärer inom teknik. Genom att visualisera sina färdigheter och passioner som konstellationer upptäcker eleverna hur karriärer bildas genom att koppla ihop till synes orelaterade punkter. Ingen tidigare erfarenhet av kodning krävs, och aktiviteten främjar kreativt tänkande om framtiden för arbete inom teknik.',
+        'teachers' => 'Lärare',
+        'english' => 'Engelska',
+        'type-of-org' => 'Typ av organisation',
+        'private-business' => 'Företag',
+        'secondary-school' => 'Utbildningsanstalter',
+        'higher-education' => 'Högre utbildning',
+        'audience' => 'Publik',
+        'theme' => 'Huvudteman',
+        'themes' => [
+            'motivation-and-awareness-raising' => 'Motivation och öka medvetenheten',
+            'promoting-diversity' => 'Främjande av mångfald',
+        ],
+        'age-group' => 'Åldersgrupp',
+        'age-groups' => [
+            '12' => '12+ (anpassningsbar för mellanstadie-, gymnasie- eller till och med universitetsstudenter)',
+            'under-6' => 'Under 6',
+            '7-8' => '7–8',
+            '9-11' => '9–11',
+            '12-14' => '12–14',
+            '15-18' => '15–18',
+            'over-18' => 'Över 18',
+        ],
+        'subjects' => 'Ämnen',
+        'time-required' => 'Tidsåtgång',
+        '45–60' => '45–60 minuter',
+        'group-size' => 'Gruppens storlek',
+        'group-sizes' => [
+            'small' => 'Kan göras individuellt eller i små grupper',
+        ],
+        'required-materials' => 'Material som krävs',
+        'step-by-step-instructions' => 'Steg-för-steg-instruktioner',
+        'materials' => [
+            'one' => 'Arbetsblad Karriär som konstellationer (A3 rekommenderas)',
+            'two' => 'Papper <span class="font-sans">&</span> markörer/pennor för ytterligare anteckningar',
+            'three' => 'Valfritt: Digital version (eleverna kan skapa konstellationer med Miro, Canva eller Google Jamboard)',
+        ],
+        'titles' => [
+            'one' => 'Uppvärmningsdiskussion: Vilka är dina prickar? (5 minuter)',
+            'two' => 'Kartläggning av konstellationer: Att koppla intressen till teknik (20 min)',
+            'three' => 'Exempel på anslutningar',
+            'four' => ' Reflektion <span class="font-sans">&</span> delande: Vilka mönster fann du? (15 min)',
+            'five' => 'Utöka aktiviteten',
+        ],
+        'intro' => '<p>Börja med att utmana traditionella karriäridéer med en fråga:</p>
+            <p class="my-8 italic">Tycker du att karriärer ska följa en rak väg?</p>
+            <p> Introducera idén att framgångsrika karriärer ofta byggs upp av oväntade kopplingar.</p><p>Se tillsammans ett föredrag av Linda Liukas där hon delar med sig av sin egen karriärväg inom teknik</p>',
+        'content' => [
+            'one' => '<p>Varje elev fyller i arbetsbladet Karriärer som konstellationer och lägger till:</p>',
+            'two' => 'Personliga intressen (hobbyer, färdigheter, favoritaktiviteter)',
+            'three' => 'Teknikrelaterade ämnen (AI, robotik, speldesign, digital konst, hållbarhetsteknik, etc.)',
+            'four' => '<strong>Rita linjer</strong> för att visa kopplingar mellan deras intressen och teknik',
+            'five' => 'Älskar du musik? → intresserad av AI? → AI-genererade musikverktyg!',
+            'six' => 'Älskar du att rita? → Intresserad av speldesign? → 2D/3D-animering <span class="font-sans">&</span> kodning',
+            'seven' => 'Brinner du för klimatförändringar? → Är du intresserad av data? → Miljöteknik',
+            'eight' => 'Be eleverna berätta om överraskande samband som de upptäckte.',
+            'nine' => 'Fråga: Vilka punkter kändes inte relaterade till en början? Hur fick de kontakt?',
+            'ten' => '<p>Uppmaningar till diskussion:</p>',
+            'eleven' => 'Vad överraskade dig med din konstellation?',
+            'twelve' => 'Upptäckte du några karriärvägar som du inte hade övervägt tidigare?',
+            'thirteen' => 'Hur kan tekniken forma din framtid på oväntade sätt?',
+            'fourteen' => 'Digital utmaning: Låt eleverna skapa en digital version av sin konstellation med Miro, Canva eller Google Jamboard och presentera sina resultat.',
+            'fifteen' => 'Forskningsuppgift: Eleverna undersöker en person inom teknik vars karriär följde en överraskande väg, kartlägger deras konstellation och delar med sig av deras historia.',
+            '16' => 'Ladda ner <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">mallen för aktiviteten här</a>',
+            '17' => 'OBS! KOM IHÅG ATT LÄGGA TILL DIN AKTIVITET OCH LADDA UPP DEN <a href="/add">HÄR</a>!',
+        ],
+    ],
 ];
