@@ -153,49 +153,51 @@ return [
     ]
 ],
     'code-it-like-margaret-hamilton' => [
-    'title' => 'Koduj jak Margaret Hamilton !!!',
+        'title' => 'Codeer het zoals Margaret Hamilton!!',
         'author' => 'Chouliara Theodora',
         'purposes' => [
-            'Uczniowie nauczą się podstawowych pojęć kodowania blokowego używając Scratch Jr do wystrzelenia statku kosmicznego, tak jak Margaret Hamilton, kobieta, która zaprogramowała kod dla Apollo Nasa, aby dotrzeć na Księżyc.',
-            'Działanie to pomoże również przełamać stereotypy związane z płcią, podkreślając wkład kobiety-programistki w badania przestrzeni kosmicznej i zachęcając dziewczęta do podejmowania kariery związanej z programowaniem i STEM.'
+            'Studenten leren basis-blok-gebaseerde codering concepten met behulp van Scratch Jr om een ruimtevaartuig te lanceren, net als Margaret Hamilton, de vrouw die de code voor NASA\'s Apollo programmeerde om de maan te bereiken.',
+            'De activiteit zal ook helpen genderstereotypen te doorbreken door de bijdrage van een vrouwelijke programmeur aan ruimteverkenning te benadrukken en meisjes aan te moedigen om programmeren en STEM-carrières te beginnen.'
         ],
-        'description' => 'Zaprogramuj kosmiczny start w Scratch Jr inspirowany przez Margaret Hamilton! Zaprogramuj odliczanie, uruchom statek kosmiczny i przełamuj stereotypy płciowe, zachęcając dziewczyny do kodowania!',
+        'description' => 'Programmeer een ruimtelancering in Scratch Jr geïnspireerd door Margaret Hamilton! Codeer een countdown, start een ruimtevaartuig en doorbreek genderstereotypen door meisjes aan te moedigen in coderen!',
         'instructions' => [
-            'Wprowadzenie: Nauczyciel przedstawia misje kosmiczne i wysłanie człowieka na Księżyc oraz wprowadza Margaret Hamilton i jej wkład w planowanie Apollo. Po tym następuje dyskusja o tym, czym jest programowanie i jak możemy wydawać instrukcje Komputer.',
-            'Działalność programistyczna: Margaret Hamilton koduje i odlicza oraz statek kosmiczny wyrusza na Księżyc.',
-            'Otwórz aplikację Scratch Jr. i utwórz nowy projekt.',
-            'Usunięcie znaku.',
-            'Wybierz tło ze spacją (Step1 png).',
-            'Wybierz spośród postaci kobietę, statek kosmiczny i Ziemię (Krok 2 png).',
-            'Zmień rozmiar znaków, klikając tyle razy, ile trzeba na bloku "Zmniejsz" lub "Grow" (Krok 3 png).',
-            'Przesuń znaki w prawo (Krok 4 png).',
-            'Napisz programy, aby kobieta odliczała, a gdy zakończy swoje słowa, statek kosmiczny poleci w górę. Aby to osiągnąć, po naciśnięciu zielonej flagi kobieta powinna powiedzieć wybrane przez ciebie słowa, a następnie wysłać wiadomość. Statek kosmiczny powinien otrzymać wiadomość w tej samej kolorze, a odpowiednimi blokami ruchu statek kosmiczny powinien polecieć w górę. Możesz również sprawić, aby statek kosmiczny zmniejszał się w miarę oddalania. Do zaprogramowania statku kosmicznego możesz użyć prostych bloków lub pętli powtarzania. (Krok 5 png).',
-            'Uruchom skrypt, naciskając zieloną flagę.'
+            '1. Inleiding:',
+            'De leraar presenteert ruimtemissies en stuurt mensen naar de maan en introduceert Margaret Hamilton en haar bijdragen aan Apollo planning. Dit wordt gevolgd door een Discussie over wat programmeren is en hoe we instructies kunnen geven aan een computer.',
+            '2. Programmeringsactiviteit: Margaret Hamilton codeert en telt af en de ruimtesonde vertrekt naar de maan.',
+            'Open de Scratch Jr. app en maak een nieuw project',
+            'Verwijder het teken',
+            'Kies de achtergrond met ruimte (Stap1 png)',
+            'Kies uit de personages een vrouw, een ruimteschip en de aarde (Stap 2 png)',
+            'Wijzig de grootte van de tekens door zo vaak als nodig op het blok "Verkleinen" te klikken of "Groeien" (Stap 3 png)',
+            'Verplaats de tekens naar de juiste positie (Stap 4 png)',
+            'Schrijf de programma\'s zodat de vrouw aftelt en wanneer ze haar woorden heeft uitgesproken, het ruimteschip omhoog gaat. Om dit te bereiken, moet de vrouw, zodra de groene vlag wordt ingedrukt, de door jou gekozen woorden zeggen en vervolgens een bericht versturen. Het ruimteschip moet het bericht van dezelfde kleur ontvangen en met de juiste bewegingsblokken moet het ruimteschip omhoog gaan. Je kunt het ruimteschip ook kleiner maken naarmate het verder weg beweegt. Om het ruimteschip te programmeren, kun je eenvoudige blokken gebruiken of de herhalingslus. (Stap 5 png)',
+            'Voer het script uit door op de groene vlag te drukken.'
         ],
         'materials' => [
-            'Tablet lub PC (jeśli to możliwe, zachęcamy przede wszystkim do korzystania z tabletu) z zainstalowanym Scratch Jr. (https://www.scratchjr.org/ dla tabletów i https://jfo8000.github.io/ScratchJr-Desktop/ dla Windows lub Mac)',
-            'Wydrukowane zdjęcia Margaret Hamilton i misji Apollo 11 (opcjonalnie)',
-            'Karty do wydruku z poleceniami Scratch Jr. (https://www.scratchjr.org/teach/resources) - (opcjonalnie)',
-            'Projektor (opcjonalnie)'
+            'Tablet of PC (indien mogelijk raden we het gebruik van een tablet aan) met Scratch Jr. geïnstalleerd (https://www.scratchjr.org/ voor tablets en https://jfo8000.github.io/ScratchJr-Desktop/ voor Windows of Mac)',
+            'Gedrukte afbeeldingen van Margaret Hamilton en de Apollo 11-missie (optioneel)',
+            'Afdrukbare kaarten met Scratch Jr.-opdrachten (https://www.scratchjr.org/teach/resources) - (optioneel)',
+            'Projector (optioneel)'
         ],
         'real-life-applications' => [
-            'Ta aktywność jest nie tylko wprowadzeniem do programowania, ale jest powiązana z wydarzeniami i zastosowaniami w nauce i technologii.',
-            'Margaret Hamilton opracowała oprogramowanie dla Apollo Guidance Computer, które umożliwiło bezpieczne lądowanie Apollo 11 w 1969 roku. Aktywność pomaga dzieciom zrozumieć, jak komputery potrzebują jasnych i poprawnych poleceń do wykonania misji - tak samo, jak NASA używała kodu, aby dotrzeć na Księżyc.',
-            'Programowanie blokowe, jak w Scratch Jr, jest pierwszym krokiem do zrozumienia bardziej złożonych języków programowania, które są obecnie używane w misjach kosmicznych, robotyce i sztucznej inteligencji. Te same zasady są wykorzystywane w rozwoju systemów autonomicznych, takich jak roboty eksplorujące Marsa (Curiosity, Perseverance).'
+            'Toepassingen in het echte leven:',
+            'Deze activiteit is niet alleen een introductie tot programmeren, maar is gekoppeld aan gebeurtenissen en toepassingen in de wetenschap en technologie:',
+            'Margaret Hamilton ontwikkelde de software voor de Apollo Guidance Computer, die het mogelijk maakte voor Apollo 11 om veilig te landen in 1969. De activiteit helpt kinderen te begrijpen hoe computers duidelijke en correcte opdrachten nodig hebben om een missie uit te voeren – net zoals NASA code gebruikte om de Maan te bereiken.',
+            'Blockprogrammeren, zoals in Scratch Jr, is de eerste stap om meer complexe programmeertalen te begrijpen die momenteel gebruikt worden in ruimtevaarten, robotica en kunstmatige intelligentie. Dezelfde principes worden gebruikt in de ontwikkeling van autonome systemen, zoals Mars-verkenningsrobots (Curiosity, Perseverance).'
         ],
         'variations' => [
-            'Wariacje/Sugestie:',
-            'Jeśli uczniowie są nowi w aplikacji, można najpierw stworzyć projekty z wydrukowanymi blokami.',
-            'Dodaj więcej postaci, takich jak planety, gwiazdy czy komety.',
-            'W zależności od wieku i doświadczenia dzieci z aplikacją ScratchJr, można dodać dodatkowe wyzwania, takie jak zaprogramowanie statku kosmicznego do unikania przeszkód.',
-            'Uczniowie mogą także dodać inną stronę, na której statek kosmiczny ląduje na Księżycu.',
-            'Zamiast używać bloku "Powiedz", można użyć bloku "Odtwórz nagrany dźwięk", dzięki czemu głosy uczniów będą słyszalne.',
-            'Dodaj postacie astronautów, w których edytujesz twarze i dodajesz zdjęcia uczniów.'
+            'Variaties/Suggesties:',
+            'Als de leerlingen nieuw zijn met de app, kun je de projecten eerst maken met de geprinte blokken.',
+            'Voeg meer karakters toe, zoals planeten, sterren of kometen.',
+            'Afhankelijk van de leeftijd en de ervaring van de kinderen met de ScratchJr-app, kunnen extra uitdagingen worden toegevoegd, zoals het programmeren van het ruimteschip om obstakels te vermijden.',
+            'Studenten kunnen ook een andere pagina toevoegen waarop het ruimteschip op de maan landt.',
+            'In plaats van de "Zeg"-blok te gebruiken, kan de "Speel Opgenomen Geluid"-blok worden gebruikt, zodat de stemmen van de studenten te horen zijn.',
+            'Voeg astronauten-karakters toe waarbij je de gezichten bewerkt en de foto\'s van de studenten toevoegt.'
         ],
-        'duration' => '60 minuta',
-        'experience' => 'Intermediate - Zalecana jest podstawowa wiedza z zakresu kodowania; uczestnicy powinni znać podstawowe pojęcia programistyczne.',
+        'duration' => '60 minuten',
+        'experience' => 'Gemiddeld - Sommige basiscodeerkennis wordt aanbevolen; deelnemers moeten bekend zijn met fundamentele programmeerconcepten.',
         'target-audience' => [
-            'Małe dzieci (w wieku 5-7 lat)'
+            'Jonge kinderen (5-7 jaar)'
         ]
     ],
     'chatbot' => [
@@ -820,7 +822,8 @@ return [
             'Maak een nieuw machine learning model waarbij je 3 nieuwe labels toevoegt, noem het eerste “aardig”, het tweede “onaardig” en – dit is optioneel – als je wilt dat de robot je naam herkent, maak je een derde label “naam”.',
             'Train het nieuwe machine learning model, test het en gebruik het voor het maken van een Emobot in Scratch.',
             'Start de Scratch 3-editor, verwijder de Cat-sprite, voeg 3 nieuwe sprites in die zijn gemaakt door Microsoft Bing Image Creator (de computertekeningen blij, boos en onzeker) of creëer een nieuwe sprite door op het Paint-icoontje te klikken en drie exemplaren van het kostuum te tekenen voor de gezichten blij, boos en onzeker.',
-            'Klik op de “Code”-tab en voer het volgende script in.'],
+            'Klik op de “Code”-tab en voer het volgende script in.'
+        ],
         'example' => [
             'Deel je Emobot Kliki met je vrienden en leer meer over AI en emoties!',
             'In plaats van een computertekening kun je iets anders proberen, zoals een dier. In plaats van aardig en gemeen kun je het personage trainen om andere soorten boodschappen te herkennen.',
@@ -886,7 +889,8 @@ return [
             'Onderwijzen/leren van en reflecteren op programmeerconcepten.',
             'Gebruiken van eenvoudige programmeertools.',
             'Ontwikkelen van computationeel denken en probleemoplossend vermogen',
-        ], 'description' => [
+        ],
+        'description' => [
             'Zo creëer je een escape-ervaring met code:',
             'Je kunt gebruikmaken van Google Forms, Genial.ly, Google Slides– iedere tool voor het creëren van storytelling op basis van code;).',
 
@@ -930,7 +934,8 @@ return [
             'Alle animaties beginnen wanneer het radiosignaal is ontvangen.',
             'De animatie van de eerste micro:bit is onmiddellijk te zien, de andere wachten tot de slang daar arriveert.',
             'De tijd tussen de twee fasen bepaalt de snelheid van de slang.',
-        ], 'materials' => [
+        ],
+        'materials' => [
             'micro:bits (indien mogelijk voor iedere leerling)',
             'laptop of computer voor de editor makecode.micro:bit.org',
         ],
@@ -1027,5 +1032,502 @@ return [
             'Test het uit!',
         ],
     ],
+    'coding-for-the-ocean' => [
+        'title' => 'Coderen voor de oceaan Bouw je AI-bot om de zee te redden',
+        'author' => 'Teresa Silvestri',
+        'purposes_title' => 'Formålet med udfordringen',
+        'purposes' => [
+            'Na het voltooien van de uitdaging zullen de deelnemers leren en krijgen:',
+            'Het vermogen om kunstmatige intelligentie te gebruiken om milieuproblemen op te lossen.',
+            'Codeervaardigheden om een AI-bot te maken en te programmeren.',
+            'Kennis over klimaatverandering en het belang van de bescherming van het mariene milieu.',
+            'Probleemoplossend vermogen in de context van wetenschap en technologie.',
+            'Ontwikkeling van logisch denken toegepast op uitdagingen in de echte wereld.',
+            'Creativiteit bij het ontwerpen van een bot die kan reageren op bedreigingen van het milieu.',
+            'Praktische ervaring met coderingsplatforms zoals Code.org.',
+            'Teamwork en samenwerking terwijl je bots deelt en concurreert met klasgenoten.'
+        ],
+        'description' => 'Maak en train een AI-bot om de zee te beschermen! Leer programmeren, milieuproblemen oplossen en logisch denken ontwikkelen om het mariene milieu te beschermen.',
+        'educational_goals' => [
+            'Het ontwikkelen van basisvaardigheden in programmeren en kunstmatige intelligentie',
+            'Bevordering van milieubewustzijn en het belang van milieubescherming',
+            'Creativiteit en verbeelding stimuleren door middel van verhalen vertellen',
+            'Het ontwikkelen van probleemoplossende en kritische denkvaardigheden'
+        ],
+        'target-audience' => [
+            '(6 t/m 12 jaar)'
+        ],
+        'experience' => 'Beginner - Geen voorafgaande codeerervaring vereist; geschikt voor complete beginners.',
+        'duration' => '45 minuten – 1 uur om de uitdaging te voltooien.',
+        'materials' => [
+            'Software: Toegang tot Code.org',
+            'Hardware: Computer of tablet met een internetverbinding.',
+            'Online tools: Webbrowser om te navigeren op Code.org of vergelijkbare platforms.',
+            'Ondersteunende materialen: zelfstudies en educatieve middelen die door het platform worden verstrekt.',
+            'Andere hulpmiddelen: Optionele audio- of videoapparaten om de zelfstudie te volgen.',
+        ],
+        'instructions' => [
+            'Toegang tot Code.org
 
+            Open uw webbrowser en ga naar Code.org.
+            Als u geen account hebt, kunt u er een aanmaken of inloggen met een bestaand account.
+            Start een nieuw project
+
+            Selecteer in het hoofdscherm de cursus of zelfstudie met betrekking tot oceaanbescherming.
+            Klik op "Start" om het project te starten.
+            Volg de stap-voor-stap handleiding
+
+            Code.org zal je begeleiden door middel van een interactieve tutorial. Lees elke instructie zorgvuldig en voltooi elke stap.
+            Zorg ervoor dat je de instructies volgt om te leren hoe je je AI-bot kunt programmeren.
+            Programmeer je bot
+
+            Gebruik de visuele coderingsblokken om je bot te leren hoe hij moet reageren op omgevingssituaties, zoals het verzamelen van plastic of het vermijden van obstakels.
+            Wijzig de blokken aan verschillende situaties en test het gedrag van de bot.
+            Test je bot
+
+            Nadat je de code hebt geschreven, test je je bot om te zien hoe deze de uitdagingen aanpakt.
+            Als de bot niet werkt zoals verwacht, ga dan terug en wijzig het en test het opnieuw totdat het effectief is.
+            Deel je bot met de klas
+
+            Zodra uw bot klaar is, kopieert u de projectlink en deelt u deze met uw klasgenoten.
+            Doe mee aan de competitie om te zien welke bot het meest effectief is in het beschermen van de zee.
+            Bekijken en verbeteren
+
+            Na het voltooien van de uitdaging, bekijk je je code en zoek je naar manieren om deze te verbeteren.
+            U kunt meer functies aan de bot toevoegen om nieuwe milieu-uitdagingen aan te pakken.
+            '
+        ],
+        'real-life-applications_title' => 'Real-life toepassingen:',
+        'real-life-applications' => [
+            'Kunstmatige intelligentie in oceaanbescherming: bedrijven en organisaties zoals The Ocean Cleanup gebruiken AI-aangedreven systemen om plastic uit oceanen te verzamelen en zo de vervuiling van de zee aan te pakken.',
+            'AI in Environmental Monitoring: AI-bots worden gebruikt om de toestand van de oceaan te volgen, mariene dieren te volgen en vervuiling te detecteren, waardoor de efficiëntie van milieubeschermingsinspanningen wordt verbeterd.',
+        ],
+        'variations_title' => 'Variaties op de uitdaging:',
+        'variations' => [
+            'Uitbreiding van de uitdaging naar andere omgevingen: je kunt de uitdaging aanpassen om AI-bots te betrekken die andere ecosystemen beschermen, zoals bossen, rivieren of zelfs stedelijke gebieden. De bots zouden uitdagingen zoals ontbossing of luchtvervuiling moeten aanpakken.'
+        ],
+    ],
+    'careers-as-constellations' => [
+        'title' => 'Loopbanen als constellaties',
+        'authorcontent' => 'Deze uitdaging en wedstrijd is een initiatief van Linda Liukas, auteur, illustrator en ondernemer, in verband met de Girls in Digital-campagne 2025 (#Webinar 1) van het Code4Europe-partnerschap, livestream op YouTube: <a href="https://www.youtube.com/live/52LaQA9342k" target="_blank">Hoe vormen code, creativiteit en nieuwsgierigheid een loopbaan?</a>',
+        'author' => 'Linda Liukas',
+        'start-date' => 'Startdatum',
+        'activity-type' => 'Type activiteit',
+        'open-online-activity' => 'Open online activiteit',
+        'name-of-org' => 'Naam van de organisatie',
+        'language' => 'Taal',
+        'description' => 'Deze interactieve activiteit helpt leerlingen hun persoonlijke interesses en hobby’s te koppelen aan potentiële loopbanen in de technologie. Door hun vaardigheden en passies als constellaties te visualiseren, ontdekken leerlingen hoe loopbanen ontstaan door schijnbaar niet-gerelateerde punten te verbinden. Er is geen programmeerervaring vereist en de activiteit stimuleert creatief denken over de toekomst van werk in technologie.',
+        'teachers' => 'Onderwijzers',
+        'english' => 'Engels',
+        'type-of-org' => 'Type organisatie',
+        'private-business' => 'Privébedrijf',
+        'secondary-school' => 'Middelbare school',
+        'higher-education' => 'Hoger onderwijs',
+        'audience' => 'Publiek',
+        'theme' => 'Belangrijkste thema’s',
+        'themes' => [
+            'motivation-and-awareness-raising' => 'Motivatie en bewustmaking',
+            'promoting-diversity' => 'Diversiteit bevorderen',
+        ],
+        'age-group' => 'Leeftijdsgroep',
+        'age-groups' => [
+            '12' => '12+ (aanpasbaar voor middelbare school of zelfs universiteit)',
+            'under-6' => 'Onder 6',
+            '7-8' => '7–8',
+            '9-11' => '9–11',
+            '12-14' => '12–14',
+            '15-18' => '15–18',
+            'over-18' => 'Boven 18',
+        ],
+        'subjects' => 'Vakken',
+        'time-required' => 'Benodigde tijd',
+        '45–60' => '45–60 minuten',
+        'group-size' => 'Groepsgrootte',
+        'group-sizes' => [
+            'small' => 'Kan individueel of in kleine groepen worden gedaan',
+        ],
+        'required-materials' => 'Benodigde materialen',
+        'step-by-step-instructions' => 'Stap-voor-stap instructies',
+        'materials' => [
+            'one' => 'Gedrukt werkblad “Loopbanen als constellaties” (A3 aanbevolen)',
+            'two' => 'Papier <span class="font-sans">&</span> stiften/pennen voor extra notities',
+            'three' => 'Optioneel: Digitale versie (leerlingen kunnen constellaties maken met Miro, Canva of Google Jamboard)',
+        ],
+        'titles' =>  [
+            'one' => 'Warming-up discussie: Wat zijn jouw stippen? (5 min)',
+            'two' => 'Constellaties in kaart brengen: interesses verbinden met technologie (20 min)',
+            'three' => 'Voorbeeldverbindingen',
+            'four' => ' Reflectie <span class="font-sans">&</span> Delen: Welke patronen heb je gevonden? (15 min)',
+            'five' => 'Uitbreiding van de activiteit',
+        ],
+        'intro' => '<p>Begin met het uitdagen van traditionele carrière-ideeën met een vraag:</p>
+         <p  class="my-8 italic">Vind je dat loopbanen een recht pad moeten volgen?</p>
+         <p> Introduceer het idee dat succesvolle loopbanen vaak voortkomen uit onverwachte verbindingen.</p><p>Bekijk samen de talk van Linda Liukas waarin zij haar eigen loopbaanpad in de technologie deelt</p>',
+        'content' => [
+            'one' => '<p>Elke leerling vult het werkblad “Loopbanen als constellaties” in en voegt toe:</p>',
+            'two' => 'Persoonlijke interesses (hobby’s, vaardigheden, favoriete activiteiten)',
+            'three' => 'Technologiegerelateerde onderwerpen (AI, robotica, gamedesign, digitale kunst, duurzaamheidstechnologie, enz.)',
+            'four' => '<strong>Lijnen tekenen</strong> om verbanden te tonen tussen hun interesses en technologie',
+            'five' => 'Houd je van muziek? → Geïnteresseerd in AI? → AI-gegenereerde muziektools!',
+            'six' => 'Houd je van tekenen? → Geïnteresseerd in gamedesign? → 2D/3D-animatie <span class="font-sans">&</span> coderen',
+            'seven' => 'Gepassioneerd door klimaatverandering? → Geïnteresseerd in data? → Milieutechnologie',
+            'eight' => 'Nodig leerlingen uit om verrassende verbanden te delen die ze hebben ontdekt.',
+            'nine' => 'Vraag: Welke stippen leken in het begin niet gerelateerd? Hoe raakten ze verbonden?',
+            'ten' => '<p>Discussie-prompts:</p>',
+            'eleven' => 'Wat heeft je verrast aan jouw constellatie?',
+            'twelve' => 'Heb je loopbaanpaden ontdekt waar je eerder niet aan dacht?',
+            'thirteen' => 'Hoe kan technologie jouw toekomst op onverwachte manieren vormgeven?',
+            'fourteen' => 'Digitale uitdaging: Laat leerlingen een digitale versie van hun constellatie maken met Miro, Canva of Google Jamboard en hun bevindingen presenteren.',
+            'fifteen' => 'Onderzoekstaak: Leerlingen onderzoeken een persoon in de technologie wiens loopbaan een verrassend pad volgde, brengen diens constellatie in kaart en delen het verhaal.',
+            '16' => 'Download de <a target="_blank" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/resources/Constellations-A3.pdf">sjabloon</a> voor de activiteit',
+            '17' => 'LET OP! VERGEET NIET JE ACTIVITEIT TOE TE VOEGEN EN <a href="/add">HIER</a> TE UPLOADEN!',
+        ],
+    ],
+    'simulate-dice-in-python' => [
+        'title' => 'Simuleer het gooien van een dobbelsteen in Python',
+        'author' => 'Marko Šolić',
+        'purposes_title' => 'Doel van de opdracht',
+        'purposes' => [
+            'Het doel van deze opdracht is om leerlingen kennis te laten maken met het genereren van willekeurige getallen en het gebruik van loops in Python.',
+            'Door het simuleren van een dobbelsteenworp leren ze hoe computers willekeurige uitkomsten kunnen genereren en hoe acties meerdere keren herhaald kunnen worden met behulp van een loop.',
+            'Deze oefening vormt ook de basis voor het bouwen van eenvoudige spellen en simulaties.'
+        ],
+        'description_title' => 'Beschrijving van de opdracht',
+        'description' => [
+            'Het simuleren van een dobbelsteenworp is een uitstekende manier om basiskennis op te doen over het werken met willekeurige getallen in Python.',
+            'In deze les leren we hoe we de module random kunnen gebruiken om willekeurige getallen te genereren en hoe we dat getal gebruiken om een worp met de dobbelsteen na te bootsen.',
+            'Door deze taak begrijp je hoe Python getallen binnen een bepaald bereik kan genereren.'
+        ],
+        'target_audience_title' => 'Doelgroep',
+        'target_audience' => 'Leerlingen van het basis- en seundair onderwijs, beginners in Python, en iedereen die wil leren over willekeurige getallen, spelletjes of basisprincipes van programmeren.',
+        'experience_title' => 'Vereiste ervaring',
+        'experience' => 'Er is geen eerdere programmeerervaring nodig. Basiskennis van typen en het gebruik van een computer is voldoende.',
+        'duration_title' => 'Duur',
+        'durations' => [
+            '30 tot 45 minuten voor de basisversie',
+            'Tot 60 minuten bij het verkennen van geavanceerde opties (twee dobbelstenen, meest gegooide getal, enz.)'
+        ],
+        'materials_title' => 'Aanbevolen hulpmiddel',
+        'materials' => [
+            'Om te beginnen moet je Python op je computer hebben geïnstalleerd. Als je dat nog niet hebt gedaan, kun je Python downloaden van de officiële website: https://www.python.org',
+            'Open vervolgens Python IDLE of een willekeurige teksteditor (zoals Visual Studio Code of PyCharm) om je code te schrijven.'
+        ],
+        'instructions_title' => 'Instructies',
+        'instructions' => [
+            'Stap 1: De omgeving voorbereiden',
+            'Om te beginnen moet je Python op je computer hebben geïnstalleerd.',
+            'Als je dat nog niet hebt gedaan, download Python dan via de officiële website.',
+            'Open vervolgens Python IDLE of een andere teksteditor (zoals Visual Studio Code of PyCharm) om je code te schrijven.',
+            'Stap 2: Het programma schrijven',
+            'Open Python IDLE en maak een nieuw bestand aan met de naam dice.py.',
+            'Voer de volgende code in:',
+            '# We importeren de \'random\'-module om willekeurige getallen te genereren',
+            'import random',
+            'We tonen een begroeting aan de gebruikerprint("Welcome to the roll-dice simulation!")',
+            'We vragen de gebruiker hoeveel keer hij de dobbelsteen wil gooien',
+            'throw_num = int(input("How many times do you want to roll the dice? "))',
+            'for i in range(throw_num):',
+            'result = random.randint(1, 6) # We genereren een willekeurig getal tussen 1 en 6',
+            'print(f"Throwing {i + 1}: {result}")',
+            'print("Thanks for playing!")',
+            'Visuele weergave van de code in Python IDLE',
+            'Zorg ervoor dat de inspringingen (indentaties) in je code hetzelfde zijn als in het voorbeeld hierboven!',
+            'Stap 3: Uitleg van de code',
+            'Importeer de module random: Deze module maakt het mogelijk om willekeurige getallen te genereren. De functie random.randint(a, b) retourneert een willekeurig geheel getal tussen a en b, inclusief beide grenzen.',
+            'Voer het aantal worpen in: Het programma vraagt de gebruiker hoe vaak hij de dobbelsteen wil gooien. De ingevoerde waarde wordt omgezet in een geheel getal met behulp van int().',
+            'Simulatie van de worpen: Het programma gebruikt een for-lus om de simulatie net zo vaak uit te voeren als de gebruiker heeft opgegeven. Voor elke worp wordt een willekeurig getal tussen 1 en 6 gegenereerd, dat het resultaat van de worp voorstelt.',
+            'Resultaten weergeven: Voor elke worp wordt het resultaat getoond (het getal dat op de dobbelsteen is gevallen). Aan het eind van het programma wordt een bedankbericht weergegeven',
+            'Stap 4: Het programma uitvoeren',
+            'Sla het bestand op als dice.py.',
+            'Voer je programma uit in Python IDLE.',
+            'Voer het aantal worpen in dat je wilt doen (bijvoorbeeld 5).',
+            'Het programma genereert willekeurige getallen en toont ze als resultaat van elke worp.',
+        ],
+        'quiz_title' => 'Quiz:',
+        'quiz' => [
+            'Welke module in Python gebruik je om willekeurige getallen te genereren?',
+            'random',
+            'Math',
+            'Time',
+            'Wat doet de functie random.randint(1, 6)?',
+            'Genereert een willekeurig getal tussen 1 en 6',
+            'Print een willekeurig getal op het scherm',
+            'Print een getal tussen 1 en 6',
+            'Hoe converteer je een invoer van de gebruiker naar een geheel getal in Python?',
+            'float(s)',
+            'int()',
+            'p()',
+            'Juiste antwoorden: 1.a, 2.a, 3.b'
+        ],
+        'mini_simulation_title' => 'Mini-simulatie:',
+        'mini_simulation' => [
+            'Pas het programma aan:',
+            'Voeg een optie toe om twee dobbelstenen te werpen en de resultaten op te tellen.',
+            'Voeg een optie toe zodat het programma aan het einde het getal toont dat het vaakst is "gevallen".',
+        ],
+        'additional_resources_title' => 'Aanvullende bronnen:',
+        'additional_resources' => [
+            'Python official documentation - random module',
+            'Learn Python'
+        ]
+    ],
+    'dance-with-ally' => [
+        'title' => 'Dans met Ally',
+        'author' => 'Kristina Krtalić',
+        'purposes_title' => 'Doel van de uitdaging',
+        'purposes' => [
+            'leer micro: bit verbinden met Scratch via Bluetooth',
+            'Begrijp hoe u de Scratch micro: bit-extensie gebruikt',
+            'gebruik micro: bit knoppen om te communiceren met Scratch projecten',
+            'Maak interactieve spellen met micro: bit',
+            'ontwikkelen van probleemoplossende en logische denkvaardigheden',
+            'Creativiteit verbeteren door middel van coderen'
+        ],
+        'description_title' => 'Beschrijving van de uitdaging',
+        'description' => 'Maak een programma waarmee je een eenvoudige dans met een micro: bit in Scratch kunt uitvoeren.
+        Door Scratch en micro: bit te verbinden, krijgen studenten een uitgebreide leerervaring die digitale en fysieke computers integreert, probleemoplossende vaardigheden verbetert en creatieve verkenning stimuleert.',
+        'educational_goals_title' => 'Onderwijsdoelen',
+        'educational_goals' => [
+            'Codering en programmeerlogica:',
+            'Studenten zullen Scratch-blokken gebruiken om gebeurtenisgestuurde programma\'s te schrijven die reageren op invoer van de micro: bit',
+            'Studenten zullen fundamentele programmeerconcepten zoals lussen, beslissingen, voorwaarden en variabelen begrijpen en toepassen',
+            'Studenten zullen vloeiendheid opbouwen met op blokken gebaseerde programmering om digitale en fysieke uitgangen te regelen',
+            'Computationeel denken:',
+            'studenten zullen problemen ontleden in kleinere delen en oplossingen stap voor stap ontwerpen met behulp van Scratch',
+            'Studenten gebruiken sensorgegevens (bijvoorbeeld knoppen, schudden) van de Micro: Bit om sprites of animaties te besturen',
+            'Studenten zullen algoritmen ontwikkelen en testen om specifieke uitdagingen op te lossen (bijvoorbeeld de sprite laten dansen wanneer de micro: bit is gekanteld).',
+            'Problemen oplossen en debuggen:',
+            'Studenten zullen zich bezighouden met iteratief ontwerp door het testen, het identificeren van bugs, en het verfijnen van hun Scratch code en micro: bit interacties',
+            'studenten zullen problemen oplossen met real-time fouten met betrekking tot zowel software (Scratch-scripts) als hardware (micro: bit-verbinding of ingangen)',
+            'Studenten documenteren en reflecteren op wijzigingen die zijn aangebracht tijdens het debuggen.',
+            'Creativiteit en Design Thinking:',
+            'Studenten maken originele animaties, games of verhalen in Scratch die micro: bit-ingangen integreren als interactieve elementen',
+            'Studenten zullen zich artistiek uiten door het choreograferen van sprite bewegingen of het ontwerpen van interactieve scènes',
+            'Studenten zullen het ontwerpproces volgen: inleven, ideën doen onstaan, prototypen maken en testen',
+            'Samenwerking en communicatie:',
+            'Studenten werken in paren of kleine teams om interactieve projecten te plannen, te coderen en te presenteren',
+            'Studenten zullen hun ontwerpkeuzes en codelogica uitleggen aan collega\'s of een breder publiek'
+        ],
+        'target_audience_title' => 'Doelgroep',
+        'target_audience' => [
+            'Basisschoolleerlingen (6 t/m 12 jaar)',
+            'Leerlingen van de middelbare school (12 tot 16 jaar)'
+        ],
+        'experience_title' => 'Experience',
+        'experience' => 'Gemiddeld - Sommige basiscodeerkennis wordt aanbevolen; deelnemers moeten bekend zijn met fundamentele programmeerconcepten.',
+        'duration_title' => 'Duur',
+        'duration' => '60 minuten',
+        'materials_title' => 'Aanbevolen gereedschap',
+        'materials' => [
+            'computer',
+            'Scratch (https://scratch.mit.edu/)',
+            'Scratch-link (https://scratch.mit.edu/download/scratch-link)',
+            'Scratch micro: bit (https://scratch.mit.edu/microbit)',
+            'micro:bit',
+            'Sprite Ally (https://codeweek-s3.s3-eu-west-1.amazonaws.com/chatbot/ally.png)'
+        ],
+        'instructions_title' => 'Instructies',
+        'instructions' => [
+            'begin Scratch.',
+            'maak een account aan in Scratch (als je er geen hebt).',
+            'Begin met het maken van een nieuw project, voeg een sprite toe, voeg een achtergrond toe, bepaal de beginpositie van de sprite bij het starten van het programma.',
+            'voeg een groep micro: bit-scripts toe vanuit de Scratch-programmeertaalextensie.',
+            'Sluit de micro: bit aan op de computer, schakel Bluetooth in op de computer (als deze niet is ingeschakeld).',
+            'installeer en voer Scratch link https://scratch.mit.edu/download/scratch-link uit, download het micro:bit HEX-bestand en sla het op (kopieer) naar de micro:bit https://scratch.mit.edu/microbit.',
+            'Zoek in de micro: bit-extensie een apparaat in de buurt van de computer door op de oranje knop in de micro: bit-extensie te klikken.',
+            'Zoeken en gevonden apparaten.',
+            'Maak een programma met blokken waarmee een sprite-dans op geselecteerde muziek (met het startgeluidsblok) kan worden uitgevoerd die beweegt wanneer we de micro: bit schudden. De dans bestaat uit slechts twee opdrachten: schuif op de x-as links en rechts. Sla het project op uw computer op.',
+            'Na het maken van het programma volgens de instructies kunnen studenten hun eigen blokken toevoegen, de besturingselementen van de sprite bepalen door op de A- en / of B-knop op de micro: bit te drukken, het uiterlijk van de sprite te wijzigen, bewegingen te wijzigen / toe te voegen,...'
+        ],
+        'examples_title' => 'Voorbeelden',
+        'examples' => [
+            'Het aansluiten van een micro: bit met Scratch om een dansprite te besturen is een geweldige manier om interactieve programmering te verkennen. Dit concept kan worden uitgebreid naar verschillende real-life toepassingen en creatieve projecten, zoals:',
+            '1. Interactieve dans- en fitnessprogramma\'s',
+            'Gebruik micro:bits accelerometer om bewegingen te volgen en fitnessspellen te maken',
+            'Maak een dansleermiddel waarbij de sprite echte dansbewegingen volgt',
+            '2. Op gebaren gebaseerde animatie en gaming',
+            'Krabtekens besturen met handgebaren of kantelbewegingen',
+            'Ontwikkel eenvoudige bewegingsgestuurde spellen, zoals springen of obstakels ontwijken'
+        ]
+    ],
+    'gender-gap-gender-graph' => [
+        'title' => 'Genderkloof, gendergrafiek',
+        'author' => 'Theodora S. Tziampazi',
+        'purposes_title' => 'Doel van de uitdaging',
+        'purposes' => [
+            'Begrijp hoe datavisualisatie de perceptie kan beïnvloeden.',
+            'Identificeer vooroordelen in digitale tools door middel van interactie.',
+            'Experimenteer met gegevensinvoer om vervormingen te observeren.',
+            'Wijzig de code om een nauwkeurige weergave van de gegevens te garanderen.',
+            'Vergelijk eerlijke en bevooroordeelde datavisualisaties.',
+            'Denk na over de ethische implicaties van datamanipulatie.',
+            'Bespreek de gevolgen in de echte wereld van vooringenomen statistieken.',
+            'Ontwikkel kritisch denken over AI en algoritmische bias.'
+        ],
+        'description_title' => 'Beschrijving van de uitdaging',
+        'description' => 'Onderzoek bias in datavisualisatie door waarden in te voeren, vervormingen te analyseren, code aan te passen en te onderzoeken hoe digitale hulpmiddelen de perceptie van genderrepresentatie in technologie beïnvloeden.',
+        'educational_goals_title' => 'Onderwijsdoelen',
+        'educational_goals' => [
+            'Coding and Programming Logic:',
+            'Computational Thinking:',
+            'Problem Solving and Debugging:',
+            'Creativity and Design Thinking:',
+            'Collaboration and Communication:',
+        ],
+        'target_audience_title' => 'Doelgroep',
+        'target_audience' => [
+            'Basisschoolleerlingen (6 t/m 12 jaar)',
+            'Leerlingen van de middelbare school (12 tot 16 jaar)',
+            'Leerlingen van de middelbare school (16 tot 18 jaar)',
+            'Docenten en opvoeders'
+        ],
+        'experience_title' => 'Ervaring',
+        'experiences' => [
+            'Gemiddeld - Sommige basiscodeerkennis wordt aanbevolen; deelnemers moeten bekend zijn met fundamentele programmeerconcepten.',
+            'Geavanceerd - Ontworpen voor deelnemers met sterke codeervaardigheden en eerdere ervaring met programmeren.'
+        ],
+        'duration_title' => 'Duur',
+        'duration' => '2 uur',
+        'materials_title' => 'Aanbevolen tool',
+        'materials' => [
+            'Scratch 3 en het werkblad https://docs.google.com/document/d/1wKwrc825if8-W6QDeNJ3hv2PcPcXIbAw/edit?usp=sharing&ouid=113724828757126842317&rtpof=true&sd=true'
+        ],
+        'instructions_title' => 'Gebruiksaanwijzing',
+        'instructions' => [
+            'U bent de gebruiker van deze digitale tool (barmaker) https://scratch.mit.edu/projects/1147892829. Kijk nog niet in de code.',
+            'Klik op de groene vlag en voeg gegevens (1-10) in die hypothetisch het aantal vrouwen in een technische sector vertegenwoordigen. Probeer het eens met wat cijfers.',
+            '',
+            'Wat merk je?',
+            'Zou dit een bug of een beslissing kunnen zijn?',
+            'Hoe dan ook, hoe kan het worden opgelost?',
+            'Handmatig (gebruikersniveau):',
+            'Verken het gereedschap en alle sleepbare sprites.',
+            'Is er een situatie waarin het probleem is opgelost?',
+            'Is er een situatie waarin een andere onverwachte uitkomst wordt waargenomen?',
+            'Eten tot nadenken/discussie',
+            'Wat als het aantal vrouwen in een sector wordt onderschat?',
+            'Wat als het aantal vrouwen in een sector wordt overschat?',
+            'Wat als het aantal vrouwen in een sector goed wordt geschat, maar niet in evenwicht is in termen van genderkloof?',
+            'Wat moet er worden gedaan?',
+            'Takeaway: Hoe we de tool gebruiken (waar we een component plaatsen) beïnvloedt het resultaat.',
+            'Met codering (creator level): Nu is het tijd om binnen het project te kijken.',
+            'Eenvoudige uitdaging:',
+            'Hack de code zodat de gepresenteerde gegevens in elk geval gelijk zijn aan de ingevoerde gegevens.',
+            'Geavanceerde uitdaging:',
+            'Kopieer de balksprite en maak deze blauw (stereotypisch aangeduid als mannelijk).',
+            'Verander de y-positie zodat deze zichtbaar en vergelijkbaar is met de paarse balk.',
+            'Maak een mannelijk symbool als een nieuwe sprite.',
+            'Tip: U kunt beide sprites (balk, symbool) downloaden/exporteren van het project dat aan het einde van deze sectie als oplossing wordt gegeven.',
+            'Hack nu de codes zodat wanneer de gebruikersinvoer x is (nu 2 keer gegeven voor elke balk), de 2 staafmakers zijn:',
+            'Eerlijk (zelfde code). Breng aanpassingen aan in de y-positie van het mannelijke symbool in indien van toepassing. Foutopsporing terwijl u doorgaat met het controleren van beide codes.',
+            'Oneerlijk in gebruik: Sleep de 2 symbolen in verschillende posities; geef dezelfde invoer om de ongelijkheid te zien.',
+            'Zijdelings/bevooroordeeld (andere code)',
+            'In het voordeel van mannen',
+            'ten voordele van vrouwen',
+            'Experimenteer zodat de code de genderkloof zou verminderen of verergeren...',
+            'Verken de twee manieren waarop het resultaat bevooroordeeld is (slepen en / of coderen).',
+            'Hoe kunnen deze twee manieren met elkaar in verband worden gebracht?',
+            'Een oplossing (zelfde code): https://scratch.mit.edu/projects/1151892036',
+            'Discussie:',
+            'Hoe denk je dat je ook een bevooroordeeld en onbevooroordeeld digitaal hulpmiddel kunt maken?',
+            'Waar is de bias meer "verborgen"? Als het gaat om slepen tussen verschillende posities of om code?',
+            'Kun je je gevallen voorstellen waarin een vertekend beeld van iets kan helpen (sommige mensen-wie)?',
+            'Gelooft u dat we vervormde gegevens kunnen ondersteunen wanneer het doel de middelen heiligt of de waarheid op geen enkele manier presenteren?',
+            'Hoe denk je dat AI (gedreven door een bepaald doel) dingen kan uitproberen zoals je in deze uitdaging hebt geprobeerd?',
+            'Meer vragen:',
+            'Hoe verzamelen we gegevens?',
+            'Hoe worden onze gegevens verwerkt?',
+            'Hoe worden onze acties / overtuigingen beïnvloed door statistieken verborgen in algoritmen (AI of niet)?',
+            'Afhaalmaaltijden: hoe we de tool maken, beïnvloedt het resultaat of zelfs ons wereldbeeld.'
+        ],
+        'real-life-applications_title' => 'Voorbeelden',
+        'real-life-applications' => [
+            'Workplace Diversity Reports – Zorgen voor een accurate weergave van gendergegevens in bedrijfsdiversiteitsstatistieken.',
+            'Media & News Graphics – Het vermijden van misleidende visualisaties in rapporten over gendergelijkheid.',
+            'AI & Algorithm Bias – Het identificeren en beperken van vooroordelen in machine learning-modellen die demografische gegevens verwerken.',
+            'Hiring & Recruitment Tools – Zorgen voor een eerlijke vertegenwoordiging in HR analytics en besluitvorming software.',
+            'STEM Education & Outreach – Onbevooroordeelde gegevens gebruiken om meer vrouwen in technische velden aan te moedigen.',
+            'Public Policy & Advocacy – Ondersteuning van eerlijke beleidsbeslissingen met nauwkeurige genderkloofstatistieken.',
+            'Social Media en bewustmakingscampagnes – Het creëren van eerlijke visuele representaties van gendergegevens om verandering te stimuleren.'
+        ],
+        'variations_title' => 'Variaties van de uitdaging',
+        'variations' => [
+            'Expanding the challenge to other environments: You could modify the challenge to involve AI bots protecting other ecosystems like forests, rivers, or even urban areas.',
+            'The bots would need to address challenges such as deforestation or air pollution.',
+        ],
+    ],
+    'train-it-like-fei-fei-li' => [
+        'title' => 'Train het als Fei-Fei Li – Het geven van visie aan computers!',
+        'author' => 'Chouliara Theodora',
+        'purposes_title' => 'Doel van de uitdaging',
+        'purposes' => [
+            'De basisprincipes van machine learning en beeldherkenning leren.',
+            'Om een computer te trainen om onderscheid te maken tussen verschillende afbeeldingen (bijv. hond vs. kat, poppen vs. Teddyberen).',
+            'Om te onderzoeken hoe AI en Machine Learning in het echte leven worden gebruikt.',
+            'Laat je inspireren door de bijdragen van Fei-Fei Li aan AI en beeldherkenning.',
+            'Om meisjes aan te moedigen om deel te nemen aan codering en STEM-carrières.'
+        ],
+        'description_title' => 'Beschrijving van de uitdaging',
+        'description' => 'Train een AI-model zoals Fei-Fei Li! Gebruik Teachable Machine om een computer te leren afbeeldingen te herkennen en de kracht van Machine Learning te verkennen terwijl genderstereotypen in technologie worden doorbroken.',
+        'target_audience_title' => 'Doelgroep',
+        'target_audience' => 'Basisschoolleerlingen (6 tot 12 jaar)',
+        'experience_title' => 'Experience',
+        'experience' => 'Beginner - Geen voorafgaande codeerervaring vereist; geschikt voor complete beginners.',
+        'duration_title' => 'Duur',
+        'duration' => '60 minuten',
+        'materials_title' => 'Aanbevolen tool',
+        'materials' => [
+            'leermachine (toegankelijk via webbrowser)',
+            'Computer of tablet met een camera',
+            'Internetverbinding (voor het trainen van het AI-model)',
+            'Speelgoed en klassikale objecten (bijv. poppen, teddyberen) voor het trainen van het AI-model',
+            'Projector of scherm (optioneel, voor demonstraties in de klas)'
+        ],
+        'instructions_title' => 'Instructies',
+        'instructions' => [
+            'Stap 1: Inleiding tot Machine Learning & Fei-Fei Li',
+            'Machine learning uitleggen:',
+            'Computers kunnen leren om beelden te herkennen, net als mensen. Machine Learning helpt Computers "zien" objecten door voorbeelden te analyseren.',
+            'Maak kennis met Fei-Fei Li:',
+            'Fei-Fei Li is een vooraanstaand wetenschapper in AI en Computer Vision. Zij ontwikkelde ImageNet, Een enorme dataset die computers leerde om afbeeldingen te herkennen. Net zoals Fei-Fei Li hielp Computers zien, jongens en meisjes kunnen een computer leren om ook objecten te herkennen!',
+            'Stap 2: Instellen van een leermachine',
+            'Ga naar Teachable Machine (https://teachablemachine.withgoogle.com/train)',
+            'Kies "Image Project" om de computer te trainen om afbeeldingen te herkennen.',
+            'Klik op "Standaard beeldmodel".',
+            'Stap 3: Kies categorieën voor training',
+            'Bepaal welke categorieën de computer moet herkennen. Je kunt creëren categorieën op basis van klassikale objecten (bijv. blokken, teddyberen, poppen, enz.).',
+            'Voorbeeldcategorieën: Poppen en teddyberen',
+            'Stap 4: Verzamel trainingsbeelden',
+            'Maak twee categorieën: Poppen en Teddyberen.',
+            'Optie 1: Gebruik echte objecten',
+            'Toon een pop voor de camera en maak foto\'s voor de categorie "Poppen".',
+            'Doe hetzelfde voor een teddybeer voor de categorie "Teddyberen".',
+            'Optie 2: Afbeeldingen online zoeken',
+            'Zoek naar foto\'s van poppen en teddyberen op Google.',
+            'Sla de afbeeldingen op in twee afzonderlijke mappen ("Poppen" en "Teddyberen").',
+            'Upload de afbeeldingen uit elke map naar de leermachine voor training.',
+            'Stap 5: Train het AI-model',
+            'Nadat u voldoende afbeeldingen hebt vastgelegd, klikt u op "Model trainen".',
+            'Wacht tot het model van de afbeeldingen heeft geleerd.',
+            'Stap 6: Test het model',
+            'Zodra het model is getraind, klikt u op "Test Model" om te zien hoe goed het nieuwe herkent afbeeldingen. Test de AI door de computer nieuwe objecten weer te geven die geen deel uitmaakten van de trainingsbeelden (bijvoorbeeld een speeltje laten zien dat niet voor training is gebruikt). Zie hoe goed de Het model herkent het en categoriseert het correct.',
+            'Stap 7: Evalueer het model',
+            'Bespreek met de studenten:',
+            'Herkende het model de objecten correct?',
+            'Zijn er fouten gemaakt? Wat kan er verbeterd worden?',
+            'Wat gebeurt er als je het met meer foto\'s traint?',
+            'Stap 8: Opslaan en delen van het model',
+            'Zodra u tevreden bent met de nauwkeurigheid van het model, klikt u op "Export model" om uw Project. Je kunt het model delen met andere klassen of met de leermachine website door op "Delen" te klikken.',
+            'Het model dat we hierboven hebben gemaakt is hier te vinden: https://teachablemachine.withgoogle.com/models/hRNy1ZPlQ/'
+        ],
+        'examples_title' => 'Voorbeelden',
+        'examples' => [
+            'AI in Retail & Shopping:',
+            'Sommige winkels gebruiken AI-camera\'s om producten te herkennen en de inventaris bij te houden.',
+            'Soortgelijke technologie helpt zelfuitchecksystemen items zonder streepjescodes te herkennen.',
+            'AI en ondersteunende technologie',
+            'AI kan objecten identificeren om visueel gehandicapte personen te helpen navigeren door de wereld.',
+            'Slimme camera\'s kunnen beschrijven wat ze "zien" om gebruikers in realtime te helpen.'
+        ],
+    ],
 ];

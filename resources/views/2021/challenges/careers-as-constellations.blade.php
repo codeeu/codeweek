@@ -82,19 +82,19 @@
                     <div id="challenge-left-col" class="flex flex-col gap-6">
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges-content.careers-as-constellations.activity-type')</p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal leading-7 text-slate-500 text-default">@lang('challenges-content.careers-as-constellations.open-online-activity')</li>
                             </ol>
                         </div>
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges-content.careers-as-constellations.name-of-org')</p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal leading-7 text-slate-500 text-default">Linda Liukas</li>
                             </ol>
                         </div>
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges-content.careers-as-constellations.language')</p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal leading-7 text-slate-500 text-default">
                                     @lang('challenges-content.careers-as-constellations.english')
                                 </li>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges-content.careers-as-constellations.type-of-org')</p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal leading-7 text-slate-500 text-default">
                                     @lang('challenges-content.careers-as-constellations.private-business')
                                 </li>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges-content.careers-as-constellations.audience')</p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal leading-7 text-slate-500 text-default">
                                     @lang('challenges-content.careers-as-constellations.secondary-school')
                                 </li>
@@ -124,7 +124,7 @@
                         </div>
                         <div class="p-6 bg-white rounded-lg">
                             <p class="p-0 mb-4 text-2xl font-normal">@lang('challenges-content.careers-as-constellations.theme')</p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal leading-7 text-slate-500 text-default">
                                     @lang('challenges-content.careers-as-constellations.themes.motivation-and-awareness-raising')
                                 </li>
@@ -145,35 +145,35 @@
                             </div>
                             <div class="mb-6">
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges-content.careers-as-constellations.start-date')</p>
-                                <ol class="ml-4 list-decimal">
+                                <ol class="ml-4 list-disc">
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                         27.2.2025 - 27.2.2026
                                     </li>
                                 </ol>
 
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges-content.careers-as-constellations.age-group')</p>
-                                <ol class="ml-4 list-decimal">
+                                <ol class="ml-4 list-disc">
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                         @lang("challenges-content.careers-as-constellations.age-groups.12")
                                     </li>
                                 </ol>
 
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges-content.careers-as-constellations.time-required')</p>
-                                <ol class="ml-4 list-decimal">
+                                <ol class="ml-4 list-disc">
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                         @lang("challenges-content.careers-as-constellations.45–60")
                                     </li>
                                 </ol>
 
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges-content.careers-as-constellations.group-size')</p>
-                                <ol class="ml-4 list-decimal">
+                                <ol class="ml-4 list-disc">
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                         @lang("challenges-content.careers-as-constellations.group-sizes.small")
                                     </li>
                                 </ol>
 
                                 <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges-content.careers-as-constellations.required-materials')</p>
-                                <ol class="ml-4 list-decimal">
+                                <ol class="ml-4 list-disc">
                                     <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                         @lang("challenges-content.careers-as-constellations.materials.one")
                                     </li>
@@ -185,12 +185,6 @@
                                     </li>
                                 </ol>
                             </div>
-
-                            @include('2021.challenges._share')
-
-                            <p class="p-0 font-normal text-default md:text-xl text-slate-500">
-                                This activity helps students map their personal interests and hobbies to potential careers in technology. By visualizing their skills and passions as constellations, students discover how careers are formed by connecting seemingly unrelated dots—just like in the night sky. No prior coding experience is required, and the activity fosters creative thinking about the future of work in technology. Share your class’s constellations! Use #CodeWeek and tag us—we’d love to see how your students connect their dots!
-                            </p>
 
                             <p class="p-0 mb-2 text-2xl font-semibold">@lang('challenges-content.careers-as-constellations.step-by-step-instructions')</p>
                             <p class="p-0 mb-2 font-semibold text-default md:text-xl text-slate-500">
@@ -207,7 +201,7 @@
                                 @lang("challenges-content.careers-as-constellations.content.one")
                             </div>
 
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                     @lang("challenges-content.careers-as-constellations.content.two")
                                 </li>
@@ -222,7 +216,7 @@
                             <p class="p-0 my-2 font-semibold text-default md:text-xl text-slate-500">
                                 @lang('challenges-content.careers-as-constellations.titles.three')
                             </p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                     @lang("challenges-content.careers-as-constellations.content.five")
                                 </li>
@@ -236,7 +230,7 @@
                             <p class="p-0 my-2 font-semibold text-default md:text-xl text-slate-500">
                                 @lang('challenges-content.careers-as-constellations.titles.four')
                             </p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                     @lang("challenges-content.careers-as-constellations.content.eight")
                                 </li>
@@ -247,7 +241,7 @@
                             <div class="font-semibold text-default md:text-xl text-slate-500">
                                 @lang("challenges-content.careers-as-constellations.content.ten")
                             </div>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                     @lang("challenges-content.careers-as-constellations.content.eleven")
                                 </li>
@@ -261,7 +255,7 @@
                             <p class="p-0 my-2 font-semibold text-default md:text-xl text-slate-500">
                                 @lang('challenges-content.careers-as-constellations.titles.five')
                             </p>
-                            <ol class="ml-4 list-decimal">
+                            <ol class="ml-4 list-disc">
                                 <li class="p-0 font-normal text-default md:text-xl text-slate-500">
                                     @lang("challenges-content.careers-as-constellations.content.fourteen")
                                 </li>
@@ -270,8 +264,10 @@
                                 </li>
                             </ol>
 
+                            @include('2021.challenges._share')
+
                             <div class="p-0 font-semibold text-default md:text-xl text-slate-500">@lang("challenges-content.careers-as-constellations.content.16")</div>
-                                                         @include('2021.challenges._download', [
+                                @include('2021.challenges._download', [
                                 'url' => "https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2025/$slug-$locale.docx",
                             ])
                         </div>

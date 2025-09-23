@@ -4,6 +4,7 @@ return [
     'title' => 'SFIDAT E EU CODE WEEK',
     'date' => '9-24 tetor 2021',
     'common' => [
+        'educational-goals' => 'Qëllimet edukative',
         'target-audience' => 'Audienca e synuar',
         'pre-primary' => 'Nxënësit parashkollorë',
         'experience' => 'Eksperienca',
