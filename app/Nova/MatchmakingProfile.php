@@ -72,11 +72,6 @@ class MatchmakingProfile extends Resource
                 ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
                 ->hideFromIndex(),
 
-            Textarea::make('Topics')
-                ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
-                ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
-                ->hideFromIndex(),
-
             Textarea::make('Time Commitment')
                 ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
                 ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
