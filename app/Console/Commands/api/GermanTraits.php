@@ -23,136 +23,211 @@ trait GermanTraits
     {
         $new = 0;
         $updated = 0;
+
         foreach ($json as $index => $item) {
             try {
                 Log::info("Processing item {$index} from {$city}");
 
-                // Validate required data
-                if (!isset($item['user'])) {
-                    Log::warning("Item {$index} in {$city} has no user data - skipping");
+                if (empty($item['uid']) || !isset($item['user'])) {
+                    Log::warning("Item {$index} in {$city} missing uid or user - skipping");
                     continue;
                 }
 
-                $className = '\App\RSSItems\\' . $city . 'RSSItem';
-                $RSSitem = new $className;
+                $className = '\\App\\RSSItems\\' . $city . 'RSSItem';
+                if (!class_exists($className)) {
+                    Log::error("RSSItem class not found for city={$city}");
+                    continue;
+                }
 
-                $RSSitem->uid = $item['uid'] ?? null;
-                $RSSitem->title = $item['title'] ?? '';
-                $RSSitem->description = $item['description'] ?? '';
-                $RSSitem->organizer = $item['organizer'] ?? '';
-                $RSSitem->photo = $item['photo'] ?? null;
-                $RSSitem->eventEndDate = $item['eventEndDate'] ?? null;
-                $RSSitem->eventStartDate = $item['eventStartDate'] ?? null;
-                $RSSitem->latitude = $item['latitude'] ?? null;
-                $RSSitem->longitude = $item['longitude'] ?? null;
-                $RSSitem->location = $item['location'] ?? '';
+                $lat = isset($item['latitude']) && is_numeric($item['latitude']) ? (float)$item['latitude'] : null;
+                $lng = isset($item['longitude']) && is_numeric($item['longitude']) ? (float)$item['longitude'] : null;
 
-                // Safely get nested user data
-                $RSSitem->user_company = $item['user']['company'] ?? '';
-                $RSSitem->user_email = $item['user']['email'] ?? '';
-                $RSSitem->user_publicEmail = $item['user']['publicEmail'] ?? '';
-                $RSSitem->user_type = $item['user']['type']['identifier'] ??
-                    ($item['user']['type'] ?? 'invite-in-person');
-                $RSSitem->user_website = $item['user']['www'] ?? '';
+                $payload = [
+                    'uid'            => (int)($item['uid']),
+                    'title'          => (string)($item['title'] ?? ''),
+                    'description'    => (string)($item['description'] ?? ''),
+                    'organizer'      => (string)($item['organizer'] ?? ''),
+                    'photo'          => $item['photo'] ?? null,
+                    'eventEndDate'   => $item['eventEndDate'] ?? null,
+                    'eventStartDate' => $item['eventStartDate'] ?? null,
+                    'latitude'       => $lat,
+                    'longitude'      => $lng,
+                    'location'       => (string)($item['location'] ?? ''),
 
-                // Safely get type data
-                $RSSitem->activity_type = $item['type']['identifier'] ?? 'invite-in-person';
+                    'user_company'     => (string)($item['user']['company'] ?? ''),
+                    'user_email'       => (string)($item['user']['email'] ?? ''),
+                    'user_publicEmail' => (string)($item['user']['publicEmail'] ?? ''),
+                    'user_type'        => (string)($item['user']['type']['identifier'] ?? ($item['user']['type'] ?? 'invite-in-person')),
+                    'user_website'     => (string)($item['user']['www'] ?? ''),
 
-                // Safely handle arrays
-                $RSSitem->tags = trim(implode(';', Arr::pluck($item['tags'] ?? [], 'title')));
-                $RSSitem->themes = trim(implode(',', Arr::pluck($item['themes'] ?? [], 'identifier')));
-                $RSSitem->audience = trim(implode(',', Arr::pluck($item['audience'] ?? [], 'identifier')));
+                    'activity_type' => (string)($item['type']['identifier'] ?? 'invite-in-person'),
+
+                    'tags'     => trim(implode(';', \Illuminate\Support\Arr::pluck($item['tags'] ?? [], 'title'))),
+                    'themes'   => trim(implode(',', \Illuminate\Support\Arr::pluck($item['themes'] ?? [], 'identifier'))),
+                    'audience' => trim(implode(',', \Illuminate\Support\Arr::pluck($item['audience'] ?? [], 'identifier'))),
+
+                    'last_updated_at' => now(),
+                ];
 
                 try {
-                    $RSSitem->save();
-                    $new++;
-                    Log::info("Successfully saved item {$index} from {$city}");
-                } catch (\PDOException $exception) {
-                    if ($exception->getCode() !== '23000') {
-                        Log::error("Database error for item {$index} in {$city}: " . json_encode($exception->errorInfo));
+                    /** @var \Illuminate\Database\Eloquent\Model $existing */
+                    $existing = $className::query()->where('uid', $payload['uid'])->first();
+
+                    if ($existing) {
+                        $existing->fill($payload);
+
+                        if ($existing->isDirty()) {
+                            $existing->save();
+                            $updated++;
+                            Log::info("Updated RSS item uid={$payload['uid']} ({$city})");
+                        } else {
+                            Log::info("No changes for RSS item uid={$payload['uid']} ({$city})");
+                        }
+                    } else {
+                        $className::query()->create($payload);
+                        $new++;
+                        Log::info("Inserted RSS item uid={$payload['uid']} ({$city})");
+                    }
+                } catch (\Throwable $e) {
+                    // 23000 (duplicate) => retry as update (race condition safe)
+                    if (method_exists($e, 'getCode') && (string)$e->getCode() === '23000') {
+                        try {
+                            $className::query()->where('uid', $payload['uid'])->update($payload);
+                            $updated++;
+                            Log::warning("Handled duplicate by updating uid={$payload['uid']} ({$city})");
+                        } catch (\Throwable $e2) {
+                            Log::error("DB upsert retry failed for uid={$payload['uid']} ({$city}): ".$e2->getMessage());
+                        }
+                    } else {
+                        Log::error("DB error for item {$index} in {$city}: ".$e->getMessage());
                     }
                 }
-            } catch (\Exception $e) {
-                Log::error("Error processing item {$index} from {$city}: " . $e->getMessage());
-                Log::error("Item data: " . json_encode($item));
+            } catch (\Throwable $e) {
+                Log::error("Error processing item {$index} from {$city}: ".$e->getMessage());
+                Log::error("Item data: ".json_encode($item));
                 continue;
             }
         }
 
-        Log::info("New items imported from $city API: " . $new);
+        Log::info("{$city}: RSS upsert done. New={$new}, Updated={$updated}");
     }
 
-    private function createGermanEvent($city): void
+    /**
+     * Create/Update an Event from current RSS item (idempotent, minimal fields).
+     * - Prevents duplicates via `events.source_ref` unique key "{feed}:{uid}".
+     * - Updates only a safe subset on subsequent syncs (dates & coords, picture if empty).
+     * - Guards against overwriting valid coords with default/fallback Germany center.
+     *
+     * @param  string $city  Feed key, e.g. "bremen", "baden", ...
+     * @return void
+     */
+    private function createGermanEvent(string $city): void
     {
-        $user = User::where(['email' => $this->user_email])->first();
-    
-        if ($user == null) {
+        $feedKey   = Str::slug($city);
+        $sourceRef = $feedKey.':'.$this->uid;
 
-            //Create user
-            $user = User::create(
-                [
-                    'email' => $this->user_email,
+        try {
+            $user = User::where('email', $this->user_email)->first();
+            if (!$user) {
+                $user = User::create([
+                    'email'     => $this->user_email,
                     'firstname' => $this->organizer,
-                    'lastname' => '',
-                    'username' => $this->organizer,
-                    'password' => bcrypt(Str::random()),
-                ]
-            );
-        }
-
-        $event = new Event([
-            'status' => 'APPROVED',
-            'title' => htmlspecialchars_decode($this->title),
-            'slug' => Str::slug($this->title),
-            'organizer' => $this->organizer,
-            'description' => $this->description,
-            'organizer_type' => $this->user_type,
-            'activity_type' => $this->activity_type,
-            'location' => $this->location,
-            'event_url' => $this->user_website,
-            'contact_person' => $this->user_publicEmail,
-            'user_email' => $this->user_email,
-            'creator_id' => $user->id,
-            'country_iso' => 'DE',
-            'picture' => $this->photo,
-            'pub_date' => now(),
-            'created' => now(),
-            'updated' => now(),
-            'codeweek_for_all_participation_code' => "cw-$city",
-            'mass_added_for' => 'API codeweek_de',
-            'start_date' => $this->eventStartDate,
-            'end_date' => $this->eventEndDate,
-            'longitude' => $this->longitude,
-            'latitude' => $this->latitude,
-            'geoposition' => $this->latitude . ',' . $this->longitude,
-            'language' => 'de',
-        ]);
-
-        $event->save();
-
-        //Link Other as theme and audience
-        if ($this->audience) {
-            $event->audiences()->attach(explode(',', $this->audience));
-        }
-        if ($this->themes) {
-            $validThemeIds = $this->validateThemes($this->themes);
-            if (count($validThemeIds) > 0 ) {
-                $event->themes()->attach($validThemeIds);
-            }
-        }
-
-        if ($this->tags) {
-            $tagsArray = [];
-
-            foreach (explode(';', $this->tags) as $item) {
-                $tag = Tag::firstOrCreate([
-                    'name' => trim($item),
-                    'slug' => str_slug(trim($item)),
+                    'lastname'  => '',
+                    'username'  => $this->organizer,
+                    'password'  => bcrypt(Str::random()),
                 ]);
-                array_push($tagsArray, $tag->id);
+            }
+            
+            $event = Event::where('source_ref', $sourceRef)->first();
+
+            if (!$event) {
+                $event = new Event([
+                    'status'        => 'APPROVED',
+                    'title'         => htmlspecialchars_decode((string)$this->title),
+                    'slug'          => Str::slug((string)$this->title),
+                    'organizer'     => (string)$this->organizer,
+                    'description'   => (string)$this->description,
+                    'organizer_type'=> (string)$this->user_type,
+                    'activity_type' => (string)$this->activity_type,
+                    'location'      => (string)$this->location,
+                    'event_url'     => (string)$this->user_website,
+                    'contact_person'=> (string)$this->user_publicEmail,
+                    'user_email'    => (string)$this->user_email,
+                    'creator_id'    => $user->id,
+                    'country_iso'   => 'DE',
+                    'picture'       => $this->photo,
+                    'pub_date'      => now(),
+                    'created'       => now(),
+                    'updated'       => now(),
+                    'start_date'    => $this->eventStartDate,
+                    'end_date'      => $this->eventEndDate,
+                    'longitude'     => $this->longitude,
+                    'latitude'      => $this->latitude,
+                    'geoposition'   => $this->latitude.','.$this->longitude,
+                    'language'      => 'de',
+                    'codeweek_for_all_participation_code' => "cw-$city",
+                    'mass_added_for' => 'API codeweek_de',
+                    // minimal linkage
+                    'source_ref'     => $sourceRef,
+                    'source_synced_at'=> now(),
+                ]);
+                $event->save();
+
+                if (!empty($this->audience)) {
+                    $event->audiences()->sync(explode(',', (string)$this->audience));
+                }
+                if (!empty($this->themes)) {
+                    $validThemeIds = $this->validateThemes((string)$this->themes);
+                    if ($validThemeIds) {
+                        $event->themes()->sync($validThemeIds);
+                    }
+                }
+                if (!empty($this->tags)) {
+                    $tagIds = [];
+                    foreach (explode(';', (string)$this->tags) as $name) {
+                        $name = trim($name);
+                        if ($name === '') continue;
+                        $tag = Tag::firstOrCreate(['name' => $name], ['slug' => Str::slug($name)]);
+                        $tagIds[] = $tag->id;
+                    }
+                    if ($tagIds) $event->tags()->sync($tagIds);
+                }
+
+                Log::info("[GermanTraits] Created event for {$sourceRef}", ['event_id' => $event->id]);
+                return;
             }
 
-            $event->tags()->sync($tagsArray);
+            $dirty = [];
+
+            if (!empty($this->eventStartDate)) $dirty['start_date'] = $this->eventStartDate;
+            if (!empty($this->eventEndDate))   $dirty['end_date']   = $this->eventEndDate;
+
+            $dirty['latitude']    = $this->latitude;
+            $dirty['longitude']   = $this->longitude;
+            $dirty['geoposition'] = $this->latitude.','.$this->longitude;
+
+            if (empty($event->picture) && !empty($this->photo)) {
+                $dirty['picture'] = $this->photo;
+            }
+
+            if (empty($event->location) && !empty($this->location)) {
+                $dirty['location'] = (string)$this->location;
+            }
+
+            if (!empty($dirty)) {
+                $dirty['updated'] = now();
+                $event->fill($dirty);
+            }
+
+            $event->source_synced_at = now();
+            $event->save();
+
+            Log::info("[GermanTraits] Updated event for {$sourceRef}", ['event_id' => $event->id, 'changed' => array_keys($dirty)]);
+        } catch (\Throwable $e) {
+            Log::error('[GermanTraits] createGermanEvent failed', [
+                'source_ref' => $sourceRef ?? null,
+                'error'      => $e->getMessage(),
+            ]);
         }
     }
 
