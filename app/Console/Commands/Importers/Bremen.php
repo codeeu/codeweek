@@ -43,16 +43,21 @@ class Bremen extends Command
         Log::info('Loading Bremen API Items in Database');
 
         $techicalUser = ImporterHelper::getTechnicalUser('bremen-technical');
-        
         $items = BremenRSSItem::whereNull('imported_at')->get();
 
         foreach ($items as $item) {
-            $item->createEvent($techicalUser);
-            $item->imported_at = Carbon::now();
-            $item->save();
+            try {
+                $item->createEvent($techicalUser);
+                $item->imported_at = Carbon::now();
+                $item->save();
+
+                $this->info(sprintf('UID=%s imported_at=%s', $item->uid, $item->imported_at));
+            } catch (\Throwable $e) {
+                Log::error('[import:bremen] item failed', ['uid' => $item->uid, 'error' => $e]);
+                $this->error('Failed UID='.$item->uid.' -> '.$e->getMessage());
+            }
         }
 
         Log::info('Activities created from RSS Feed: '.count($items));
-
     }
 }
