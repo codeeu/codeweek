@@ -111,9 +111,15 @@
                                     </a>
 
                                     @if (isset($activity['btn2_lang']) && !is_null($activity['btn2_lang']))
-                                    <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
+                                    <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                                         target="_blank" href="{{ $activity['url2'] }}">
-                                        @lang($activity['btn2_lang'])
+                                        <span>@lang($activity['btn2_lang'])</span>
+                                        <div class="flex w-4 gap-2 overflow-hidden">
+                                            <img src="/images/arrow-right-icon.svg"
+                                                class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                            <img src="/images/arrow-right-icon.svg"
+                                                class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                        </div>
                                     </a>
                                     @endif
                                 </div>
