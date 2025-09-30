@@ -8,7 +8,7 @@ return [
     'school_banner_text' => 'Er du lærer?',
     'school_banner_text2' => 'Klik her for at se, hvordan du kan være med!',
     'organize_activity_title' => 'Afhold eller deltag i en aktivitet',
-    'organize_activity_text' => 'Alle er velkomne til at afholde eller deltage i  en aktivitet. Du skal bare vælge et emne og en målgruppe og <a href="/add">tilføje din aktivitet</a> til <a href="/events">kortet</a> eller søge efter arrangementer i dit område.',
+    'organize_activity_text' => 'Alle er velkomne til at afholde eller deltage i en aktivitet. Du skal bare vælge et emne og en målgruppe og <a href="/add">tilføje din aktivitet</a> til <a href="/events">kortet</a> eller søge efter arrangementer i dit område.',
     'get_started_title' => 'Kom i gang',
     'get_started_text' => 'Er du i tvivl om, hvordan du kommer i gang? Tag et kig på vores <a href="/guide">vejledningsside</a>, og hent vores <a href="/toolkits">pakke for arrangører</a>, så du kan blive klar til at sprede budskabet.',
     'access_resources_title' => 'Få adgang til ressourcer og undervisning',
@@ -38,5 +38,6 @@ return [
     'banner1_title' => 'Piger i digital transformation',
     'banner1_description' => 'Udforsk og omfavn digitale muligheder - styrkelse af en ny generation af piger i den digitale verden!',
     'banner2_title' => 'Vore Code Week familie',
-    'banner2_description' => 'Oplev vores pulserende netværk af ambassadører, lærere, studerende og hubs – som hver især bidrager til vores fælles passion for digital uddannelse.'
+    'banner2_description' => 'Oplev vores pulserende netværk af ambassadører, lærere, studerende og hubs – som hver især bidrager til vores fælles passion for digital uddannelse.',
+    'download_brochure_btn' => 'Download 2025 Brochure',
 ];

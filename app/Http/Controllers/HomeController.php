@@ -23,6 +23,8 @@ class HomeController extends Controller
                 'url' => '/guide',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
+                'url2' => '/blog/code-week-25-programme/',
+                'btn2_lang' => 'home.download_brochure_btn',
             ],
             [
                 'title' => 'home.banner2_title',
@@ -30,6 +32,8 @@ class HomeController extends Controller
                 'url' => '/community',
                 'style_color' => 'background: linear-gradient(36.92deg, rgb(51, 194, 233) 20.32%, rgb(0, 179, 227) 28.24%);',
                 'btn_lang' => 'home.meet_our_community',
+                'url2' => null,
+                'btn2_lang' => null
             ]
         ]);
         return view('static.home', compact('activities'));

@@ -109,6 +109,13 @@
                                     @lang($activity['btn_lang'])
                                 </a>
 
+                                @if (isset($activity['btn2_lang']) && !is_null($activity['btn2_lang']))
+                                <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300" target="_blank"
+                                    href="{{ $activity['url2'] }}">
+                                    @lang($activity['btn2_lang'])
+                                </a>
+                                @endif
+
                                 <div
                                     class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] m:dtext-base">
                                     #EUCodeWeek
