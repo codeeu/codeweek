@@ -79,7 +79,9 @@ class Event extends Model
         'is_extracurricular_event',
         'is_standard_school_curriculum',
         'is_use_resource',
-        'ages'
+        'ages',
+        'source_ref',
+        'source_synced_at'
     ];
 
     public const ACTIVITY_FORMATS = [
@@ -175,6 +177,14 @@ class Event extends Model
             'is_standard_school_curriculum' => 'boolean',
             'ages' => 'array',
             'is_use_resource' => 'boolean',
+
+            'start_date'                     => 'datetime',
+            'end_date'                       => 'datetime',
+            'pub_date'                       => 'datetime',
+            'reported_at'                    => 'datetime',
+            'certificate_generated_at'       => 'datetime',
+            'last_report_notification_sent_at' => 'datetime',
+            'source_synced_at'               => 'datetime',
         ];
     }
 
