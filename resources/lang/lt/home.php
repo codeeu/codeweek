@@ -10,7 +10,7 @@ return [
     'school_banner_text' => 'Esate mokytoja (-as)?',
     'school_banner_text2' => 'Spustelėkite čia ir sužinokite, kaip dalyvauti!',
     'organize_activity_title' => 'Organizuokite renginį arba prisijunkite prie jau organizuojamo',
-    'organize_activity_text' => 'Visi kviečiami organizuoti  renginius ar prie jų prisijungti. Tiesiog pasirinkite temą, tikslinę auditoriją ir <a href="/add">pažymėkite savo renginį</a> <a href="/events">žemėlapyje</a> arba peržiūrėkite savo vietovėje organizuojamus renginius.',
+    'organize_activity_text' => 'Visi kviečiami organizuoti renginius ar prie jų prisijungti. Tiesiog pasirinkite temą, tikslinę auditoriją ir <a href="/add">pažymėkite savo renginį</a> <a href="/events">žemėlapyje</a> arba peržiūrėkite savo vietovėje organizuojamus renginius.',
     'get_started_title' => 'Pradėkite',
     'get_started_text' => 'Nežinote, nuo ko pradėti? Apsilankykite <a href="/guide">pagalbiniame puslapyje</a> ir atsisiųskite mūsų <a href="/toolkits">organizatoriams skirtus priemonių rinkinius</a>, kurie padės pasiruošti ir skleisti žinią.',
     'access_resources_title' => 'Naudokitės ištekliais ir mokymo galimybėmis',
@@ -35,5 +35,6 @@ return [
     'banner1_title' => 'Merginos skaitmeninėje erdvėje',
     'banner1_description' => 'Tyrinėkite ir išnaudokite skaitmenines galimybes – skaitmeninėje srityje įgalinkite naują merginų kartą!',
     'banner2_title' => 'Mūsų programavimo savaitės šeima',
-    'banner2_description' => 'Atraskite dinamišką mūsų atstovų, mokytojų, mokinių ir centrų tinklą – kiekvienas iš jų prisideda prie mūsų bendros skaitmeninio švietimo iniciatyvos.'
+    'banner2_description' => 'Atraskite dinamišką mūsų atstovų, mokytojų, mokinių ir centrų tinklą – kiekvienas iš jų prisideda prie mūsų bendros skaitmeninio švietimo iniciatyvos.',
+    'download_brochure_btn' => 'Atsisiųsti 2025 brošiūrą',
 ];

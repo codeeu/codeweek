@@ -10,7 +10,7 @@ return [
     'school_banner_text' => 'Ste učitelj?',
     'school_banner_text2' => 'Kliknite tukaj in si oglejte, kako se lahko vključite!',
     'organize_activity_title' => 'Organizirajte dejavnost ali se ji pridružite',
-    'organize_activity_text' => 'Vsi so dobrodošli, da organizirajo  dejavnost ali se ji pridružijo. Samo izberite temo in ciljno občinstvo ter <a href="/add">dodajte svojo dejavnost</a> na <a href="/events">zemljevid</a> ali pa poiščite dogodke v vašem območju.',
+    'organize_activity_text' => 'Vsi so dobrodošli, da organizirajo dejavnost ali se ji pridružijo. Samo izberite temo in ciljno občinstvo ter <a href="/add">dodajte svojo dejavnost</a> na <a href="/events">zemljevid</a> ali pa poiščite dogodke v vašem območju.',
     'get_started_title' => 'Kako začeti',
     'get_started_text' => 'Niste prepričani, kako začeti? Oglejte si <a href="/guide">stran z nasveti kako</a> in prenesite naša <a href="/toolkits">orodja za organizatorje,</a> s katerimi se lahko pripravite in razširite glas.',
     'access_resources_title' => 'Dostop do virov in usposabljanja',
@@ -35,5 +35,6 @@ return [
     'banner1_title' => 'Dekleta v digitalnem svetu',
     'banner1_description' => 'Raziščite in izkoristite digitalne priložnosti – opolnomočimo novo generacijo deklic in deklet v digitalnem svetu!',
     'banner2_title' => 'Naša Code Week družina',
-    'banner2_description' => 'Odkrijte našo živahno mrežo ambasadorjev, učiteljev, študentov in središč – vsak prispeva k naši skupni strasti do digitalnega izobraževanja.'
+    'banner2_description' => 'Odkrijte našo živahno mrežo ambasadorjev, učiteljev, študentov in središč – vsak prispeva k naši skupni strasti do digitalnega izobraževanja.',
+    'download_brochure_btn' => 'Prenesi brošuro 2025',
 ];
