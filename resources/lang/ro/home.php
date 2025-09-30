@@ -10,7 +10,7 @@ return [
     'school_banner_text' => 'Sunteți profesor?',
     'school_banner_text2' => 'Clic aici pentru a afla cum vă puteți implica!',
     'organize_activity_title' => 'Organizează sau participă la o activitate',
-    'organize_activity_text' => 'Oricine este binevenit să organizeze sau să participe  la o activitate. Alege un subiect și un public țintă și <a href="/add">adaugă activitatea ta</a> pe <a href="/events">hartă</a> sau caută evenimente în zona ta.',
+    'organize_activity_text' => 'Oricine este binevenit să organizeze sau să participe la o activitate. Alege un subiect și un public țintă și <a href="/add">adaugă activitatea ta</a> pe <a href="/events">hartă</a> sau caută evenimente în zona ta.',
     'get_started_title' => 'Începe',
     'get_started_text' => 'Nu ești sigur cum să începi? Consultă <a href="/guide">pagina informativă</a> și descarcă <a href="/toolkits">setul nostru de instrumente pentru organizatori</a> pentru a te pregăti și răspândește mesajul.',
     'access_resources_title' => 'Accesează resurse și instruire',
@@ -35,5 +35,6 @@ return [
     'banner1_title' => 'Fete în domeniul digital',
     'banner1_description' => 'Explorați și îmbrățișați oportunitățile digitale - împuternicind o nouă generație de fete în domeniul digital!',
     'banner2_title' => 'Familia noastră Code Week',
-    'banner2_description' => 'Descoperiți rețeaua noastră vibrantă de ambasadori, profesori, studenți și hub-uri - fiecare contribuind la pasiunea noastră comună pentru educația digitală'
+    'banner2_description' => 'Descoperiți rețeaua noastră vibrantă de ambasadori, profesori, studenți și hub-uri - fiecare contribuind la pasiunea noastră comună pentru educația digitală',
+    'download_brochure_btn' => 'Descarcă broșura 2025',
 ];
