@@ -10,7 +10,7 @@ return [
     'school_banner_text' => 'Ste učiteľ alebo učiteľka?',
     'school_banner_text2' => 'Kliknite tu a zistite, ako sa môžete zapojiť!',
     'organize_activity_title' => 'Usporiadajte aktivitu alebo sa do niektorej zapojte',
-    'organize_activity_text' => 'Ktokoľvek môže usporiadať aktivitu alebo sa zapojiť  do aktivity. Stačí si vybrať tému a cieľovú skupinu a <a href="/add">pridať aktivitu</a> na <a href="/events">mapu</a> alebo si vyhľadať podujatia v okolí.',
+    'organize_activity_text' => 'Ktokoľvek môže usporiadať aktivitu alebo sa zapojiť do aktivity. Stačí si vybrať tému a cieľovú skupinu a <a href="/add">pridať aktivitu</a> na <a href="/events">mapu</a> alebo si vyhľadať podujatia v okolí.',
     'get_started_title' => 'Ako na to?',
     'get_started_text' => 'Nie je vám jasné, ako na to? S prípravou a šírením informácií vám pomôže <a href="/guide">stránka s návodom</a> a naše <a href="/toolkits">súbory nástrojov pre organizátorov</a> na stiahnutie.',
     'access_resources_title' => 'Prístup k materiálom a školeniu',
@@ -40,6 +40,6 @@ return [
     'banner1_title' => 'Dievčatá v digitále',
     'banner1_description' => ': Preskúmajte a využite digitálne príležitosti – posilnite novú generáciu dievčat v digitálnom svete!',
     'banner2_title' => 'Naša Rodina Code Week',
-    'banner2_description' => 'Objavte našu živú sieť ambasádorov, učiteľov, študentov a centier z ktorých každý prispieva k našej spoločnej vášni pre digitálne vzdelávanie.'
-
+    'banner2_description' => 'Objavte našu živú sieť ambasádorov, učiteľov, študentov a centier z ktorých každý prispieva k našej spoločnej vášni pre digitálne vzdelávanie.',
+    'download_brochure_btn' => 'Stiahnuť brožúru 2025',
 ];

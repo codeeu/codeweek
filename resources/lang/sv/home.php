@@ -10,7 +10,7 @@ return [
     'school_banner_text' => 'Är du lärare?',
     'school_banner_text2' => 'Klicka här för att få reda på hur du kan engagera dig!',
     'organize_activity_title' => 'Organisera eller delta i en aktivitet',
-    'organize_activity_text' => 'Vem som helst är välkommen att organisera eller delta  i en aktivitet. Välj ett ämne och en målgrupp och <a href="/add">lägg till din aktivitet</a> på <a href="/events">kartan</a>, eller sök efter evenemang i ditt område.',
+    'organize_activity_text' => 'Vem som helst är välkommen att organisera eller delta i en aktivitet. Välj ett ämne och en målgrupp och <a href="/add">lägg till din aktivitet</a> på <a href="/events">kartan</a>, eller sök efter evenemang i ditt område.',
     'get_started_title' => 'Kom igång',
     'get_started_text' => 'Vet du inte hur du ska börja? Ta en titt på <a href="/guide">instruktionssidan</a>, och ladda ner våra <a href="/toolkits">verktygslådor för arrangörer</a> för att förbereda dig och berätta för andra.',
     'access_resources_title' => 'Få tillgång till resurser och utbildning',
@@ -35,5 +35,6 @@ return [
     'banner1_title' => 'Flickor i digital transformation',
     'banner1_description' => 'Utforska och omfamna digitala möjligheter – stärk en ny generation tjejer i det digitala!',
     'banner2_title' => 'Vår kodveckafamilj',
-    'banner2_description' => 'Upptäck vårt livfulla nätverk av ambassadörer, lärare, studenter och hubbar – var och en bidrar till vår gemensamma passion för digital utbildning'
+    'banner2_description' => 'Upptäck vårt livfulla nätverk av ambassadörer, lärare, studenter och hubbar – var och en bidrar till vår gemensamma passion för digital utbildning',
+    'download_brochure_btn' => 'Ladda ner 2025 broschyren',
 ];

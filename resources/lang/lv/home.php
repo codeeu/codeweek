@@ -10,7 +10,7 @@ return [
     'school_banner_text' => 'Vai esat skolotājs?',
     'school_banner_text2' => 'Noklikšķiniet šeit, lai uzzinātu, kā iesaistīties!',
     'organize_activity_title' => 'Organizējiet pasākumus vai pievienojieties citu rīkotajiem',
-    'organize_activity_text' => 'Ikviens ir aicināts organizēt  pasākumus vai pievienoties citu rīkotajiem pasākumiem. Izvēlieties tematu un mērķauditoriju un <a href="/add">pievienojiet savu pasākumu</a> <a href="/events">kartei</a>, vai arī meklējiet pasākumus savā reģionā.',
+    'organize_activity_text' => 'Ikviens ir aicināts organizēt pasākumus vai pievienoties citu rīkotajiem pasākumiem. Izvēlieties tematu un mērķauditoriju un <a href="/add">pievienojiet savu pasākumu</a> <a href="/events">kartei</a>, vai arī meklējiet pasākumus savā reģionā.',
     'get_started_title' => 'Sāciet dalību',
     'get_started_text' => 'Nezināt, kā sākt dalību? Apmeklējiet <a href="/guide">pasākumu organizēšanas lapu</a> un lejupielādējiet mūsu <a href="/toolkits">rīkkopas organizētājiem</a>, lai sagatavotos un izplatītu informāciju.',
     'access_resources_title' => 'Piekļūstiet resursiem un apmācībām',
@@ -35,7 +35,6 @@ return [
     'banner1_title' => 'Meitenes digitālajā pasaulē',
     'banner1_description' => 'Izmanto iespējas, lai iedvesmotu meitenes digitālajā pasaulē!!',
     'banner2_title' => 'Code Week kopiena',
-    'banner2_description' => 'Atklāj aizrautīgo vēstnešu, skolotāju, skolēnu un organizāciju kopienu, kur ikviens tiecas uz kopīgo mērķi – veicināt digitālās izglītības attīstību.'
-
-
+    'banner2_description' => 'Atklāj aizrautīgo vēstnešu, skolotāju, skolēnu un organizāciju kopienu, kur ikviens tiecas uz kopīgo mērķi – veicināt digitālās izglītības attīstību.',
+    'download_brochure_btn' => 'Lejupielādēt 2025 brošūru',
 ];
