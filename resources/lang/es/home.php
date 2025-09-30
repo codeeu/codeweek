@@ -33,5 +33,6 @@ return [
     'banner1_title' => 'chicas en el digital',
     'banner1_description' => 'Explora y aprovecha las oportunidades digitales: ¡empodera a una nueva generación de chicas en el mundo digital!',
     'banner2_title' => 'Nuestra familia Code Week',
-    'banner2_description' => 'Descubre nuestra dinámica red de embajadores, profesores, estudiantes y centros, cada uno de los cuales contribuye a nuestra pasión compartida por la educación digital.'
+    'banner2_description' => 'Descubre nuestra dinámica red de embajadores, profesores, estudiantes y centros, cada uno de los cuales contribuye a nuestra pasión compartida por la educación digital.',
+    'download_brochure_btn' => 'Descargar folleto 2025',
 ];

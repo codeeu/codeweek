@@ -33,5 +33,6 @@ return [
     'banner1_title' => 'Tytöt digimaailmassa',
     'banner1_description' => 'Tutustu digitaalisiin mahdollisuuksiin ja hyödynnä ne – anna uuden sukupolven tyttöjä digitaaliseen käyttöön!',
     'banner2_title' => 'Code Week-perheemme',
-    'banner2_description' => 'Tutustu elävään lähettiläiden, opettajien, opiskelijoiden ja keskusten verkostoomme – jokainen edistää yhteistä intohimoamme digitaalista koulutusta kohtaan.'
+    'banner2_description' => 'Tutustu elävään lähettiläiden, opettajien, opiskelijoiden ja keskusten verkostoomme – jokainen edistää yhteistä intohimoamme digitaalista koulutusta kohtaan.',
+    'download_brochure_btn' => 'Lataa 2025 esite',
 ];

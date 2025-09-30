@@ -35,5 +35,6 @@ return [
     'banner1_title' => 'meninas no digital!',
     'banner1_description' => 'Explorar e aproveitar as oportunidades digitais - capacitar uma nova geração de raparigas no mundo digital!',
     'banner2_title' => 'Semana da família Code',
-    'banner2_description' => 'Descubra a nossa vibrante rede de embaixadores, professores, estudantes e centros - cada um contribuindo para a nossa paixão partilhada pela educação digital.'
+    'banner2_description' => 'Descubra a nossa vibrante rede de embaixadores, professores, estudantes e centros - cada um contribuindo para a nossa paixão partilhada pela educação digital.',
+    'download_brochure_btn' => 'Baixar brochura 2025',
 ];
