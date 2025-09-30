@@ -51,4 +51,5 @@ return [
     'carrersdigital_button' => 'Get involved',
     
     'banner3_title' => 'October 11-26',
+    'download_brochure_btn' => 'Download 2025 Brochure',
 ];

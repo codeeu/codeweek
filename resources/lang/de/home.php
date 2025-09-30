@@ -45,4 +45,5 @@ return [
     'carrersdigital_button' => 'Mach mit!',
 
     'banner3_title' => '11.-26. Oktober',
+    'download_brochure_btn' => 'Broschüre 2025 herunterladen',
 ];

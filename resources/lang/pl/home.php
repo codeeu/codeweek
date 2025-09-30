@@ -35,5 +35,6 @@ return [
     'banner1_title' => 'Bniet fid-Digital',
     'banner1_description' => "Esplora u ħaddan opportunitajiet diġitali—li tagħti s-setgħa lil ġenerazzjoni ġdida ta' bniet fid-diġitali !",
     'banner2_title' => 'Familja waħda fil-Code Week',
-    'banner2_description' => 'Skopri n-netwerk vibranti tagħna ta’ ambaxxaturi, għalliema, studenti u ċentri – kull wieħed jikkontribwixxi għall-passjoni kondiviża tagħna għall-edukazzjoni diġitali.'
+    'banner2_description' => 'Skopri n-netwerk vibranti tagħna ta’ ambaxxaturi, għalliema, studenti u ċentri – kull wieħed jikkontribwixxi għall-passjoni kondiviża tagħna għall-edukazzjoni diġitali.',
+    'download_brochure_btn' => 'Pobierz broszurę 2025',
 ];

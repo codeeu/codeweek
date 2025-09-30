@@ -35,6 +35,6 @@ return [
     'banner1_title' => 'ragazze nel digitale!',
     'banner1_description' => 'Esplora e accogli le opportunità digitali — Per dare forza a una nuova generazione di ragazze nel settore digitale!',
     'banner2_title' => 'La famiglia CodeWeek',
-    'banner2_description' => "Scopri la nostra vivace rete di ambasciatori, insegnanti, studenti e hub, ognuno dei quali contribuisce alla nostra passione condivisa per l'educazione digitale"
-
+    'banner2_description' => "Scopri la nostra vivace rete di ambasciatori, insegnanti, studenti e hub, ognuno dei quali contribuisce alla nostra passione condivisa per l'educazione digitale",
+    'download_brochure_btn' => 'Scarica la brochure 2025',
 ];

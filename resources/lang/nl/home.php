@@ -15,4 +15,5 @@ return [
     'get_started_text' => 'Weet je niet precies hoe je aan de slag gaat? Neem een kijkje op de <a href="/guide">how-to pagina</a> en download onze <a href="/toolkits">toolkits voor organisatoren</a> om aan de slag te gaan en de boodschap te verspreiden.',
     'access_resources_title' => 'Toegang tot hulpmiddelen en training',
     'access_resources_text' => 'Als je niet weet hoe je een activiteit moet organiseren, bezoek dan onze <a href="/resources/teach">leermiddelenpagina</a> en blader door het <a href="/training">trainingsmateriaal met leerbits</a> voor begeleiding en op maat gesneden lesplannen.',
+    'download_brochure_btn' => 'Download 2025 brochure',
 ];
