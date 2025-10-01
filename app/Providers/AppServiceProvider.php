@@ -93,6 +93,7 @@ class AppServiceProvider extends ServiceProvider
                 'RO',
                 'MD',
                 'DK',
+                'HU',
             ];
 
             $activeCountries = \App\Country::query()
