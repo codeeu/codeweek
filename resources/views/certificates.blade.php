@@ -20,7 +20,7 @@
                         @lang('certificates.certificates_for'){{ Auth::user()->fullName }}
                     </h2>
                     <p class="text-xl font-normal text-white p-0 max-md:max-w-full max-w-[864px]">
-                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                        
                     </p>
                 </div>
             </div>

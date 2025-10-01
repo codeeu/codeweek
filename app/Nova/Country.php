@@ -30,6 +30,7 @@ class Country extends Resource
      * @var array
      */
     public static $search = [
+        'name', 'iso',
     ];
 
     //public static $displayInNavigation = false;
@@ -41,6 +42,7 @@ class Country extends Resource
     {
         return [
             Text::make('Name')->sortable(),
+            Text::make('Iso')->sortable(),
             Text::make('Facebook')
                 ->rules('nullable', 'url')
                 ->sortable(),
