@@ -378,7 +378,7 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
     'choose_lessons' => 'Pasirinkite vieną iš toliau pateiktų pamokos planų ir įgyvendinkite jį su savo mokiniais.',
     'footer' => [
         'title' => 'Nepamirškite įtraukti savo renginio į Programavimo savaitės žemėlapį!',
-        'text' => '<p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href=" / events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
+        'text' => '<p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href="/events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
 
 <p>Jei norite užmegzti ryšį su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės „Facebook“ grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo šalyje ar už jos ribų, prisijunkite prie <a href="/codeweek4all">„CodeWeek4All“ iššūkio</a>.</p>'
     ],

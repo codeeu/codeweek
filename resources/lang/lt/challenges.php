@@ -24,7 +24,7 @@ return [
     ],
     'main' => [
         '2021 m. spalio 9–24 d. vyksiančios ES programavimo savaitės metu kviečiame dalyvauti viename ar keliuose ES programavimo savaitės iššūkiuose.',
-        'Kas yra m. ES programavimo savaitės iššūkiai?',
+        'Kas yra ES programavimo savaitės iššūkiai?',
         'ES programavimo savaitės iššūkiai yra užduotys, kurias galite atlikti patys, klasėje, su kolegomis ar draugais. Norite dalyvauti Programavimo savaitėje, bet nežinote, ką surengti? Tai kaip tik jums! Kartu su Programavimo savaitės partneriais sukūrėme nesunkių užduočių su konkrečiais pavyzdžiais, kaip jas atlikti klasėje ar grupėje. Taip pat pateikiamos užduočių atlikimo gairės, kurias galima pritaikyti pagal dalyvių poreikius, pomėgius ir amžių. Nors naudotis galima bet kokiomis priemonėmis ir technologijomis, rekomenduojame pasitelkti nemokamus atvirųjų šaltinių išteklius.',
         'Pasirinkite vieną ar kelis iššūkius, pritaikykite juos savo grupei ar klasei ir bendrinkite rezultatus „Instagram“, kad paskatintumėte dar daugiau kolegų ir draugų įsitraukti į Programavimo savaitės pramogas!',
         'Daugiau informacijos rasite spustelėję konkretų iššūkį:',
@@ -88,7 +88,7 @@ return [
         'ir viršuje kairėje pažymėkite baltą burbuliuką',
         'Pasidalykite savo iššūkiu socialiniuose tinkluose ir laimėkite šaunių Programavimo savaitės prizų',
         'Tiesiog įkelkite nuotrauką su užbaigta (-omis) eilute (-ėmis), stulpeliu (-iais) arba – dar geriau – visa bingo kortele į',
-        '„Facebook“, „Instagram“ or „Twitter“',
+        '„Facebook“, „Instagram“ arba „Twitter“',
         'Nepamirškite grotažymės',
     ],
 
