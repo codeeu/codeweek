@@ -3,7 +3,7 @@
 return [
 
     'search_resources' => 'Ieškoti išteklių',
-    'search_by_title_description' => 'Search by title or description',
+    'search_by_title_description' => 'Ieškoti pagal pavadinimą arba aprašymą',
     'resource_type' => 'Rūšis',
     'resource_type_placeholder' => 'Pasirinkite Rūšis, pvz., garso',
     'types' => 'Rūšis',
@@ -161,7 +161,7 @@ return [
             'Swift' => 'Swift',
             'Visual Programming' => 'vizualinis programavimas',
             'Other' => 'kitas',
-            'All targeted programming languages' => 'All targeted programming languages',
+            'All targeted programming languages' => 'Visos tikslinės programavimo kalbos',
         ],
          
 

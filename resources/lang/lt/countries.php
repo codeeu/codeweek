@@ -13,7 +13,7 @@ return [
     |
     */
     'all' => 'Visos šalys',
-    'Cloud' => 'Debesija',
+    'Cloud' => 'Debesis',
     'Andorra' => 'Andora',
     'United Arab Emirates' => 'Jungtiniai Arabų Emyratai',
     'Afghanistan' => 'Afganistanas',
