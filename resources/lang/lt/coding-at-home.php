@@ -30,7 +30,7 @@ return [
         'text' => ' „Kairė ir dešinė“ yra varžybinis ir bendradarbiavimo žaidimas. Dvi komandos bendradarbiauja, tiesdamos kelią iki tikslo, ir tuo pačiu varžosi, siekdamos panaudoti kuo daugiau jiems skirtų žaidimo plytelių: geltonoji komanda stengiasi įterpti į kelią kuo daugiau posūkių į kairę, o raudonoji komanda stengiasi padėti kiek įmanoma daugiau plytelių su posūkiu į dešinę.',
         'questions' => [
             'content' => [
-                1 => 'K1. Naudojant vaizdo įraše, pirmame žaidime pateiktas pradžios ir pabaigos padėtis, ar įmanoma vienai komandai laimėti?',
+                1 => 'K1. Naudojant pirmajame vaizdo įraše pateiktas pirmojo žaidimo pradžios ir pabaigos padėtis, ar įmanoma kuriai nors komandai laimėti?',
                 2 => 'K2. Naudojant pradžios ir pabaigos padėtis žaidime, kurį laimėjo Anna, ar galimos lygiosios?',
                 3 => 'K3. Ar yra tokių pradžios ir pabaigos padėčių išdėstymų, kurios suteiktų privalumą vienai iš komandų?',
                 4 => 'K4. Naudojant pradžios ir pabaigos padėčių išdėstymą, ar įmanoma numatyti taškų skirtumą tarp laimėjusios ir pralaimėjusios komandos? ',
@@ -70,7 +70,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Tyrinëtojas be pëdsakø',
+        'title' => 'Tyrinėtojas be pėdsakų',
         'text' => ' „Tyrinėtojas“ vaikšto po lentą nuo pradžios taško iki pabaigos taško, stengdamasis aplankyti visus langelius. Eidamas „tyrinėtojas“ palieka spalvotus pėdsakus, kurie leidžia robotui jais sekti, iššifruojant spalvas. Žaidimas tampa dar įdomesnis, kai „tyrinėtojas“ ištrina pėdsakus ir palieka tik spalvas.',
         'material' => 'ir raudonas, geltonas ir pilkas žymekliai (arba pieštukai)',
         'questions' => [
@@ -113,7 +113,7 @@ return [
     ],
 
     'cody-and-roby' => [
-        'title' => 'Kodis and Robis',
+        'title' => 'Kodis ir Robis',
         'text' => 'Tai vaidmenų žaidimas su programuotoju Kodžiu ir robotu Robiu. Vaizdo įraše pristatomos Kodžio ir Robio kortelės, kurias nuo šiol naudosime, kad nurodytume ėjimus languotoje lentoje. Kodis naudos šias korteles duodamas Robiui nurodymus, kaip judėti languotoje lentoje',
         'material' => 'languota lenta su žymėmis, kortelės su komandomis (į kairę, į dešinę, tiesiai) ir bet kokie daiktai, kuriuos reikia dėti ant languotos lentos',
         'starter-kit' => 'Kodžio ir Robio pradinis rinkinys',
@@ -197,7 +197,7 @@ return [
         'material' => '„CodyRoby“ kortelės, 5 x 5 langelių lenta, dvi figūrėlės ir popieriaus lapeliai, kuriais bus žymimi jau aplankyti langeliai.',
         'questions' => [
             'content' => [
-                1 => 'K1 Jei pirmajame vaizdo įraše rodomame scenarijuje nė vienas žaidėjas neištrauks geltonos kortelės, leidžiančios pasukti į kairę, kokias korteles jie turėtų tikėtis ištraukti?',
+                1 => 'K1. Jei pirmajame vaizdo įraše rodomame scenarijuje nė vienas žaidėjas neištrauks geltonos kortelės, leidžiančios pasukti į kairę, kokias korteles jie turėtų tikėtis ištraukti?',
             ],
 
         ],
@@ -210,7 +210,7 @@ return [
         'material' => '„CodyRoby“ kortelės, 5 x 5 langelių lenta, dvi figūrėlės ir popieriaus lapeliai, kuriais bus žymimi jau aplankyti langeliai.',
         'questions' => [
             'content' => [
-                1 => 'K1 Ar Robį į pradinį tašką grąžinanti programa gali būti trumpesnė (t. y. sudaryta iš mažiau nurodymų) nei kelionės į priekį programa?',
+                1 => 'K1. Ar Robį į pradinį tašką grąžinanti programa gali būti trumpesnė (t. y. sudaryta iš mažiau nurodymų) nei kelionės į priekį programa?',
             ],
 
         ],
@@ -219,11 +219,11 @@ return [
 
     'meeting-point' => [
         'title' => 'Susitikimo vieta',
-        'text' => 'Šį kartą savo ėjimus suplanuojame prieš pradėdami judėti. Abi komandos, dėdamos korteles ant stalo, kuria nurodymų, pagal kuriuos judės jų robotai, seką, bet niekas nepradeda judėti, kol vienas iš žaidėjų nepasako„Startas!“. Tą akimirką programavimas baigiamas ir prasideda veiksmas. Žaidėjas, kuris ištarė „Startas!“, laimi tik tuo atveju, jei abu savo komandų nurodymus vykdantys robotai atsiduria tame pačiame langelyje.',
+        'text' => 'Šį kartą savo ėjimus suplanuojame prieš pradėdami judėti. Abi komandos, dėdamos korteles ant stalo, kuria nurodymų, pagal kuriuos judės jų robotai, seką, bet niekas nepradeda judėti, kol vienas iš žaidėjų nepasako „Startas!“. Tą akimirką programavimas baigiamas ir prasideda veiksmas. Žaidėjas, kuris ištarė „Startas!“, laimi tik tuo atveju, jei abu savo komandų nurodymus vykdantys robotai atsiduria tame pačiame langelyje.',
         'material' => '„CodyRoby“ kortelės, 5 × 5 langelių lenta, dvi figūrėlės.',
         'questions' => [
             'content' => [
-                1 => 'K1 Jei manote, kad įmanoma dviem robotams niekada nesusitikti, sukurkite žaidimo taisykles, kurios apimtų visas įmanomas situacijas.',
+                1 => 'K1. Jei manote, kad įmanoma dviem robotams niekada nesusitikti, sukurkite žaidimo taisykles, kurios apimtų visas įmanomas situacijas.',
             ],
 
         ],
@@ -236,7 +236,7 @@ return [
         'material' => 'Be „CodyRoby“ kortelių, langelių lentos ir figūrėlės, mums dar reikės trijų skirtingų garsų. Aš panaudojau tris stiklines, į kurias įpiltas nevienodas kiekis vandens, o ką naudosite jūs?',
         'questions' => [
             'content' => [
-                1 => 'K1 Pasistenkite vadovautis vaizdo įrašu ir stiklinių skleidžiamus garsus sekti nežiūrėdami į korteles. Ar atpažįstate ir galite vykdyti nurodymus pagal garsus?',
+                1 => 'K1. Pasistenkite vadovautis vaizdo įrašu ir stiklinių skleidžiamus garsus sekti nežiūrėdami į korteles. Ar atpažįstate ir galite vykdyti nurodymus pagal garsus?',
                 2 => 'K2. Pasirinkite tris garsus, kuriais pakeisite tris pagrindinius nurodymus. Sukurkite garsų seką, kurią galėtumėte nepertraukiamai kartoti ir Robis niekada neišeitų iš lentos...',
             ],
 
@@ -273,7 +273,7 @@ return [
 
     'boring-pixels' => [
         'title' => 'Nuobodūs pikseliai! / Naudokime skaičius',
-        'text' => 'Kai davėme Rubiui nurodymus sukurti paveikslėlį judant po langelį ar po pikselį matėme, kad kai daug langelių vienoje eilėje yra tos pačios spalvos, žaidimą galime padaryti įdomesnį naudodami skaičius. Kompiuteriai veikia taip pat...',
+        'text' => 'Kai davėme Robiui nurodymus sukurti paveikslėlį judant po langelį ar po pikselį matėme, kad kai daug langelių vienoje eilėje yra tos pačios spalvos, žaidimą galime padaryti įdomesnį naudodami skaičius. Kompiuteriai veikia taip pat...',
         'material' => 'languotas sąsiuvinis arba ant popieriaus lapo nupiešta 5 × 5 langelių lenta, flomasteris. Piešinio kodą galite užrašyti rašikliu ant popieriaus.',
         'questions' => [
             'content' => [
@@ -307,6 +307,6 @@ return [
     ],
 
     'coding-at-home-text' => 'Vaizdo siužetų, „pasidaryk pats“ medžiagos, galvosūkių, žaidimų ir programavimo iššūkių rinkinys, kurį galima kasdien naudoti šeimoje ir mokykloje.',
-    'coding-at-home-sub-text1' => 'ES programavimo savaitės „Coding@Home“ ciklas vyksta <a class="text-dark-blue underline" href="https://www.raicultura.it/speciali/codinginfamiglia/"   target="_blank"> Urbino universiteto ir „CodeMOOCnet“ asociacijos iniciatyva „Programavimas šeimoje",</a> bendradarbiaujant su „Rai Cultura“. „Coding@Home“ vaizdo įrašo autorius –  Alessandro Bogliolo, Urbino universiteto informacijos apdorojimo sistemų profesorius, <a class="text-dark-blue underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italijos ES programavimo savaitės ambasadorius</a> ir visų ambasadorių koordinatorius, Skaitmeninių įgūdžių ir užimtumo koalicijos valdybos narys.',
+    'coding-at-home-sub-text1' => 'ES programavimo savaitės „Coding@Home“ ciklas vyksta <a class="text-dark-blue underline" href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">Urbino universiteto ir „CodeMOOCnet“ asociacijos iniciatyva „Programavimas šeimoje“</a>, bendradarbiaujant su „Rai Cultura“. „Coding@Home“ vaizdo įrašo autorius – Alessandro Bogliolo, Urbino universiteto informacijos apdorojimo sistemų profesorius, <a class="text-dark-blue underline" href="https://codeweek.eu/ambassadors?country_iso=IT" target="_blank">Italijos ES programavimo savaitės ambasadorius</a> ir visų ambasadorių koordinatorius, Skaitmeninių įgūdžių ir užimtumo koalicijos valdybos narys.',
     'coding-at-home-sub-text2' => 'Užduotims atlikti nereikia jokių pradinių žinių ar elektroninių prietaisų. Užsiėmimai skatins kompiuterinį mąstymą ir lavins mokinių, tėvų ir mokytojų įgūdžius namuose ar mokykloje.',
 ];
