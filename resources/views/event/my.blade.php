@@ -21,7 +21,7 @@
                             @lang('myevents.created_by') {{ Auth::user()->fullName }}
                         </h2>
                         <p class="text-xl font-normal text-white p-0 max-md:max-w-full max-w-[864px] mb-10 tablet:mb-6">
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                            
                         </p>
                         <div class="flex flex-col md:flex-row gap-4 md:gap-2">
                             <a
