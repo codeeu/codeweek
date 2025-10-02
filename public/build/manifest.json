@@ -10,7 +10,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-DT4BDWqr.js",
+    "file": "assets/app-DV06VHrJ.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -81,7 +81,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_de.json": {
-    "file": "assets/php_de-BPkeRUdS.js",
+    "file": "assets/php_de-eAQHjYgL.js",
     "name": "php_de",
     "src": "resources/lang/php_de.json",
     "isDynamicEntry": true
@@ -93,7 +93,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_en.json": {
-    "file": "assets/php_en-DFNv0AYS.js",
+    "file": "assets/php_en-CJSlev07.js",
     "name": "php_en",
     "src": "resources/lang/php_en.json",
     "isDynamicEntry": true
@@ -177,7 +177,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_pl.json": {
-    "file": "assets/php_pl-Cq6DLX2x.js",
+    "file": "assets/php_pl-BzMqrKWl.js",
     "name": "php_pl",
     "src": "resources/lang/php_pl.json",
     "isDynamicEntry": true
