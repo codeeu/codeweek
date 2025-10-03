@@ -55,6 +55,7 @@ class CoderDojoEventsImport extends BaseEventsImport implements ToModel, WithCus
                 'created' => now(),
                 'updated' => now(),
                 'codeweek_for_all_participation_code' => 'cw20-coderdojo-eu',
+                'leading_teacher_tag' => $row['leading_teacher_tag'] ?? null,
                 'start_date' => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['start_date']),
                 'end_date' => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['end_date']),
                 'geoposition' => (!empty($row['latitude']) && !empty($row['longitude'])) ? $row['latitude'] . ',' . $row['longitude'] : '',

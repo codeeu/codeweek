@@ -98,6 +98,7 @@ class EventController extends Controller
 
         $user->save();
 
+        /** @var Event $event */
         $event = EventsQuery::store($request);
 
         $event->notifyAmbassadors();
