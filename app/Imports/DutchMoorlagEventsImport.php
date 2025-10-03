@@ -40,6 +40,7 @@ class DutchMoorlagEventsImport extends BaseEventsImport implements ToModel, With
             'created' => now(),
             'updated' => now(),
             'codeweek_for_all_participation_code' => 'NL-Moorlag-001',
+            'leading_teacher_tag' => $row['leading_teacher_tag'] ?? null,
             'start_date' => $this->parseDate($row['start_date']),
             'end_date' => $this->parseDate($row['end_date']),
             'geoposition' => $row['longitude'].','.$row['latitude'],
