@@ -287,4 +287,8 @@ return [
     'yes' => 'Da',
     'no' => 'Ne',
     'please-select-address-from-dropdown' => 'Izaberite adresu iz padajućeg menija da biste prešli na sledeći korak',
+    'optional' => 'opcionalno',
+    'other-gender' => 'Drugo',
+    'image-attached' => 'Slika dodana',
+    'back-to-map-page' => 'Vratite se na kartu',
 ];

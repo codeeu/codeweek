@@ -40,9 +40,8 @@ return [
     'banner2_title' => 'Unsere Code Week Familie',
     'banner2_description' => 'Entdecke unser lebendiges Netzwerk von Botschafter*innen, Lehrkräften, Schüler*innen und Hubs – alle tragen zu unserer gemeinsamen Leidenschaft für digitale Bildung bei',
     
-    'carrersdigital_description1' => '“Careers in Digital” ist Teil der EU Code Week und richtet sich an 15- bis 18-Jährige sowie Lehrkräfte, um spannende und vielfältige digitale Berufsfelder zu entdecken.',
-    'carrersdigital_description2' => 'Lerne inspirierende Vorbilder kennen, die ihren Traumjob in der digitalen Welt gefunden haben – tauche ein in ihre motivierenden Videos und Karrierewege. Unser "Careers in Digital” Guide zeigt dir die Vielfalt digitaler Berufe und wie du zu ihnen gelangen kannst.',
-    'carrersdigital_button' => 'Mach mit!',
+    'minecraft_description1' => '“Careers in Digital” ist Teil der EU Code Week und richtet sich an 15- bis 18-Jährige sowie Lehrkräfte, um spannende und vielfältige digitale Berufsfelder zu entdecken.',
+    'minecraft_description2' => 'Lerne inspirierende Vorbilder kennen, die ihren Traumjob in der digitalen Welt gefunden haben – tauche ein in ihre motivierenden Videos und Karrierewege. Unser "Careers in Digital” Guide zeigt dir die Vielfalt digitaler Berufe und wie du zu ihnen gelangen kannst.',
 
     'banner3_title' => '11.-26. Oktober',
     'download_brochure_btn' => 'Broschüre 2025 herunterladen',

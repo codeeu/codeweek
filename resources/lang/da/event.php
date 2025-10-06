@@ -294,4 +294,8 @@ return [
     'view-activity' => 'Vis aktivitet',
     'add-another-activity' => 'Tilføj en anden aktivitet',
     'please-select-address-from-dropdown' => 'Vælg venligst en adresse i rullemenuen for at fortsætte til næste trin',
+    'optional' => 'valgfri',
+    'other-gender' => 'Andre',
+    'image-attached' => 'Billede tilføjet',
+    'back-to-map-page' => 'Tilbage til kortet',
 ];

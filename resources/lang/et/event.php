@@ -284,4 +284,8 @@ return [
     'yes' => 'Jah',
     'no' => 'Ei',
     'please-select-address-from-dropdown' => 'Palun vali rippmenüüst aadress, et jätkata järgmise sammuga',
+    'optional' => 'valikuline',
+    'other-gender' => 'Muu',
+    'image-attached' => 'Pilt lisatud',
+    'back-to-map-page' => 'Tagasi karta lehele',
 ];

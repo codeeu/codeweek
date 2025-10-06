@@ -295,4 +295,8 @@ return [
     'view-activity' => 'Tevékenység megtekintése',
     'add-another-activity' => 'Új tevékenység hozzáadása',
     'please-select-address-from-dropdown' => 'Kérjük, válasszon egy címet a legördülő listából, hogy továbbléphessen a következő lépésre',
+    'optional' => 'opcionális',
+    'other-gender' => 'Egyéb',
+    'image-attached' => 'Kép hozzáadva',
+    'back-to-map-page' => 'Vissza a térképhez',
 ];

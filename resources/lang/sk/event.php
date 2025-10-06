@@ -296,4 +296,8 @@ return [
     'view-activity' => 'Zobraziť aktivitu',
     'add-another-activity' => 'Pridať ďalšiu aktivitu',
     'please-select-address-from-dropdown' => 'Vyberte prosím adresu z rozbaľovacieho zoznamu, aby ste mohli pokračovať na ďalší krok',
-    ];
+    'optional' => 'voliteľné',
+    'other-gender' => 'Iné',
+    'image-attached' => 'Obrázok pripojený',
+    'back-to-map-page' => 'Vrátiť sa na mapu',
+];

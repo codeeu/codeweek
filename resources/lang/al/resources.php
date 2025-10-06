@@ -3,7 +3,7 @@
 return [
 
     'search_resources' => 'Kërko burimet',
-    'search_by_title_description' => 'Search by title or description',
+    'search_by_title_description' => 'Kërko për titull ose përshkrim',
     'resource_type' => 'Lloji',
     'resource_type_placeholder' => 'Zgjidhni Lloji, p.sh. audio',
     'types' => 'Lloji',

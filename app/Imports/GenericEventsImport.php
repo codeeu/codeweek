@@ -127,6 +127,8 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             'created'             => now(),
             'updated'             => now(),
             'recurring_event'     => $this->parseBool($row['recurring_event'] ?? ''),
+            'leading_teacher_tag' => $row['leading_teacher_tag'] ?? null,
+            'codeweek_for_all_participation_code' => $row['codeweek_for_all_participation_code'] ?? '',
         ];
 
         // 5) optional counts & booleans

@@ -296,4 +296,8 @@ return [
     'view-activity' => 'Vizualizează activitatea',
     'add-another-activity' => 'Adaugă o altă activitate',
     'please-select-address-from-dropdown' => 'Selectează o adresă din lista derulantă pentru a trece la pasul următor',
+    'optional' => 'opțional',
+    'other-gender' => 'Altele',
+    'image-attached' => 'Imagine atașată',
+    'back-to-map-page' => 'Înapoi la hartă',
 ];

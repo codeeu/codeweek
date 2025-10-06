@@ -8,7 +8,7 @@
       <SelectField :placeholder="$t('event.select-option')" v-model="formValues.organizer_type" required name="organizer_type" :options="organizerTypeOptions" />
     </FieldWrapper>
 
-    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('resources.Languages')} (optional)`" name="language" :errors="errors">
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('resources.Languages')} (${$t('event.optional')})`" name="language" :errors="errors">
       <SelectField :placeholder="$t('event.select-option')" v-model="formValues.language" name="language" searchable multiple :options="languageOptions" />
     </FieldWrapper>
 
@@ -25,12 +25,12 @@
 
     <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.website.label')} ${['open-online', 'invite-online'].includes(formValues.activity_type)
         ? '*'
-        : '(optional)'
+        : $t('event.optional')
       }`" name="event_url" :errors="errors">
       <InputField v-model="formValues.event_url" name="event_url" :placeholder="$t('event.website.placeholder')" />
     </FieldWrapper>
 
-    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.public.label')} (optional)`" name="contact_person" :errors="errors">
+    <FieldWrapper horizontalBreakpoint="md" :label="`${$t('event.public.label')} (${$t('event.optional')})`" name="contact_person" :errors="errors">
       <InputField v-model="formValues.contact_person" type="email" name="contact_person" :placeholder="$t('event.public.placeholder')" />
     </FieldWrapper>
 

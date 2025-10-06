@@ -294,4 +294,8 @@ return [
     'view-activity' => 'Voir l’activité',
     'add-another-activity' => 'Ajouter une autre activité',
     'please-select-address-from-dropdown' => 'Veuillez sélectionner une adresse dans la liste déroulante pour passer à l’étape suivante',
+    'optional' => 'facultatif',
+    'other-gender' => 'Autre',
+    'image-attached' => 'Image ajoutée',
+    'back-to-map-page' => 'Retour à la carte',
 ];
