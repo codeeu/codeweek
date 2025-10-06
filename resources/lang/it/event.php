@@ -456,4 +456,8 @@ return [
     'view-activity' => 'Visualizza attività',
     'add-another-activity' => 'Aggiungi un’altra attività',
     'please-select-address-from-dropdown' => 'Seleziona un indirizzo dal menu a discesa per procedere al passaggio successivo',
+    'optional' => 'opzionale',
+    'other-gender' => 'Altro',
+    'image-attached' => 'Immagine aggiunta',
+    'back-to-map-page' => 'Vai alla mappa',
 ];

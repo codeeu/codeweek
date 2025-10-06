@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-      'banner-section' => 'Banner sectie',
+    'banner-section' => 'Banner sectie',
     'add-your-codeweek-activity' => 'Voeg je Codeweek activity toe',
     'edit-your-codeweek-activity' => 'Bewerk je Codeweek activity',
     'join-the-community' => 'Word lid van de community',
@@ -294,4 +294,8 @@ return [
     'view-activity' => 'Bekijk activiteit',
     'add-another-activity' => 'Voeg nog een activiteit toe',
     'please-select-address-from-dropdown' => 'Selecteer een adres in de keuzelijst om door te gaan naar de volgende stap',
+    'optional' => 'optioneel',
+    'other-gender' => 'Andere',
+    'image-attached' => 'Afbeelding toegevoegd',
+    'back-to-map-page' => 'Terug naar de kaart',
 ];

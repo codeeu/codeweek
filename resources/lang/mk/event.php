@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-     'banner-section' => 'Секција за банер',
+    'banner-section' => 'Секција за банер',
     'add-your-codeweek-activity' => 'Додадете ја вашата CodeWeek активност',
     'edit-your-codeweek-activity' => 'Изменете ја вашата CodeWeek активност',
     'join-the-community' => 'Придружете се на заедницата',
@@ -293,4 +293,8 @@ return [
     'view-activity' => 'Погледни активност',
     'add-another-activity' => 'Додади друга активност',
     'please-select-address-from-dropdown' => 'Ве молиме, изберете адреса од паѓачкото мени за да продолжите на следниот чекор',
+    'optional' => 'опционално',
+    'other-gender' => 'Друго',
+    'image-attached' => 'Слика додадена',
+    'back-to-map-page' => 'Врати се на картата',
 ];

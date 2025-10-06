@@ -305,5 +305,8 @@ return [
     'view-activity' => 'Vaata tegevust',
     'add-another-activity' => 'Lisa veel üks tegevus',
     'please-select-address-from-dropdown' => 'Selecciona una dirección del menú desplegable para continuar con el siguiente paso',
-
+    'optional' => 'opcional',
+    'other-gender' => 'Otro',
+    'image-attached' => 'Imagen adjunta',
+    'back-to-map-page' => 'Volver a la página de mapa',
 ];

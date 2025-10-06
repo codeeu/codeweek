@@ -11,7 +11,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-     'banner-section' => 'Avsnitt om aktivitetsöversikt',
+    'banner-section' => 'Avsnitt om aktivitetsöversikt',
     'add-your-codeweek-activity' => 'Lägg till din aktivitet för kodveckan',
     'edit-your-codeweek-activity' => 'Redigera din aktivitet för kodveckan',
     'join-the-community' => 'Gå med i gemenskapen',
@@ -293,4 +293,8 @@ return [
     'view-activity' => 'Visa aktivitet',
     'add-another-activity' => 'Lägg till en annan aktivitet',
     'please-select-address-from-dropdown' => 'Välj en adress i rullgardinsmenyn för att gå vidare till nästa steg',
+    'optional' => 'valfritt',
+    'other-gender' => 'Andra',
+    'image-attached' => 'Bild bifogad',
+    'back-to-map-page' => 'Återgå till kartan',
 ];

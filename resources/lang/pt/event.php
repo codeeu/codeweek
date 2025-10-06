@@ -295,4 +295,8 @@ return [
     'view-activity' => 'Ver atividade',
     'add-another-activity' => 'Adicionar outra atividade',
     'please-select-address-from-dropdown' => 'Selecione um endereço no menu pendente para avançar para o passo seguinte',
+    'optional' => 'opcional',
+    'other-gender' => 'Outro',
+    'image-attached' => 'Imagem anexada',
+    'back-to-map-page' => 'Voltar para o mapa',
 ];

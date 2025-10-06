@@ -297,4 +297,8 @@ return [
     'view-activity' => 'Pogledaj aktivnost',
     'add-another-activity' => 'Dodaj još jednu aktivnost',
     'please-select-address-from-dropdown' => 'Odaberite adresu s padajućeg izbornika kako biste nastavili na sljedeći korak',
+    'optional' => 'opcionalno',
+    'other-gender' => 'Ostalo',
+    'image-attached' => 'Slika dodana',
+    'back-to-map-page' => 'Vratite se na mapu',
 ];
