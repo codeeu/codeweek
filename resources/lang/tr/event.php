@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-        'banner-section' => 'Sekcja z podsumowaniem aktywności',
+    'banner-section' => 'Sekcja z podsumowaniem aktywności',
     'add-your-codeweek-activity' => 'Dodaj swoją aktywność Code Week',
     'edit-your-codeweek-activity' => 'Edytuj swoją aktywność Code Week',
     'join-the-community' => 'Dołącz do społeczności',
@@ -295,4 +295,8 @@ return [
     'view-activity' => 'Etkinliği görüntüle',
     'add-another-activity' => 'Başka etkinlik ekle',
     'please-select-address-from-dropdown' => 'Bir sonraki adıma geçmek için lütfen açılır menüden bir adres seçin',
+    'optional' => 'isteğe bağlı',
+    'other-gender' => 'Diğer',
+    'image-attached' => 'Resim eklendi',
+    'back-to-map-page' => 'Haritaya dön',
 ];

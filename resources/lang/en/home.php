@@ -45,10 +45,6 @@ return [
     'banner1_description' => 'Get inspired by dream jobs in digital and explore role models, career guides, open day toolkits and more!',
     'banner2_title' => 'Our Code Week Family',
     'banner2_description' => 'Discover our vibrant network of ambassadors, teachers, students and hubs—each contributing to our shared passion for digital education.',
-
-    'carrersdigital_description1' => 'Careers in Digital is part of EU Code Week targeting 15–18-year-olds and educators to explore exciting and varied digital careers.',
-    'carrersdigital_description2' => 'Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there.',
-    'carrersdigital_button' => 'Get involved',
     
     'banner3_title' => 'October 11-26',
     'download_brochure_btn' => 'Download 2025 Brochure',

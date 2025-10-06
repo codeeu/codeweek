@@ -295,5 +295,8 @@ return [
     'view-activity' => 'Преглед на дейността',
     'add-another-activity' => 'Добави друга дейност',
     'please-select-address-from-dropdown' => 'Моля, изберете адрес от падащото меню, за да продължите към следващата стъпка',
-
+    'optional' => 'по избор',
+    'other-gender' => 'Други',
+    'image-attached' => 'Изображение добавено',
+    'back-to-map-page' => 'Върнете се към картата',
 ];

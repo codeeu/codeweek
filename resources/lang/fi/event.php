@@ -296,4 +296,8 @@ return [
     'view-activity' => 'Näytä toiminta',
     'add-another-activity' => 'Lisää toinen toiminta',
     'please-select-address-from-dropdown' => 'Valitse pudotusvalikosta osoite jatkaaksesi seuraavaan vaiheeseen',
+    'optional' => 'valinnainen',
+    'other-gender' => 'Muu',
+    'image-attached' => 'Kuva liitetty',
+    'back-to-map-page' => 'Palaa karttaan',
 ];

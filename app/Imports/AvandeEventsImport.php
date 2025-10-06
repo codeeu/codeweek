@@ -63,6 +63,7 @@ class AvandeEventsImport extends AppleEventsImport implements ToModel, WithCusto
         'created' => now(),
         'updated' => now(),
         'codeweek_for_all_participation_code' => 'cw25-avande-eu',
+        'leading_teacher_tag' => $row['leading_teacher_tag'] ?? null,
         'start_date' => $this->parseDate($row['start_date']),
         'end_date' => $this->parseDate($row['end_date']),
         'geoposition' => (!empty($row['latitude']) && !empty($row['longitude'])) ? $row['latitude'] . ',' . $row['longitude'] : '',

@@ -3,7 +3,7 @@
 return [
 
     'search_resources' => 'Ressourcen durchsuchen',
-    'search_by_title_description' => 'Search by title or description',
+    'search_by_title_description' => 'Suche nach Titel oder Beschreibung',
     'resource_type' => 'Art',
     'resource_type_placeholder' => 'Art auswählen, z. B. Audio',
     'types' => 'Art',

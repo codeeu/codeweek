@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-     'banner-section' => 'Odsjek za baner',
+    'banner-section' => 'Odsjek za baner',
     'add-your-codeweek-activity' => 'Dodajte svoju CodeWeek aktivnost',
     'edit-your-codeweek-activity' => 'Uredite svoju CodeWeek aktivnost',
     'join-the-community' => 'Pridružite se zajednici',
@@ -290,4 +290,8 @@ return [
     'yes' => 'Taip',
     'no' => 'Ne',
     'please-select-address-from-dropdown' => 'Odaberite adresu iz padajućeg menija da biste prešli na sljedeći korak',
+    'optional' => 'opciono',
+    'other-gender' => 'Ostalo',
+    'image-attached' => 'Slika dodana',
+    'back-to-map-page' => 'Vratite se na kartu',
 ];
