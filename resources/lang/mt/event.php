@@ -158,4 +158,8 @@ return [
     'view-activity' => 'Ara l-attività',
     'add-another-activity' => 'Żid attività oħra',
     'please-select-address-from-dropdown' => 'Jekk jogħġbok agħżel indirizz mill-menu li jinżel biex tkompli għall-pass li jmiss',
+    'optional' => 'opzjonali',
+    'other-gender' => 'Oħrajn',
+    'image-attached' => 'Immaġni miżjuda',
+    'back-to-map-page' => 'It-tqegħid għal il-kartu',
 ];

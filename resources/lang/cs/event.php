@@ -321,4 +321,8 @@ return [
     'view-activity' => 'Zobrazit aktivitu',
     'add-another-activity' => 'Přidat další aktivitu',
     'please-select-address-from-dropdown' => 'Vyberte prosím adresu z rozbalovací nabídky, abyste mohli pokračovat na další krok',
+    'optional' => 'volitelné',
+    'other-gender' => 'Jiné',
+    'image-attached' => 'Obrázek přidán',
+    'back-to-map-page' => 'Vrátit se na mapu',
 ];

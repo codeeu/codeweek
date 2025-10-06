@@ -299,4 +299,8 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
     'view-activity' => 'Shiko aktivitetin',
     'add-another-activity' => 'Shto aktivitet tjetër',
    'please-select-address-from-dropdown' => 'Zgjidhni një adresë nga menuja zbritëse për të vazhduar në hapin tjetër',
+   'optional' => 'opsional',
+   'other-gender' => 'Të tjerë',
+   'image-attached' => 'Imazhi i shtuar',
+   'back-to-map-page' => 'Kthehuni te faqja e hartës',
 ];

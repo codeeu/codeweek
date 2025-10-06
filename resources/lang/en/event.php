@@ -381,4 +381,8 @@ return [
     'back-to-map-page' => 'Back to map page',
     'image-attached' => 'Image Attached',
     'please-select-address-from-dropdown' => 'Please select an address from the dropdown to proceed to the next step',
+    'optional' => 'optional',
+    'other-gender' => 'Other',
+    'image-attached' => 'Image Attached',
+    'back-to-map-page' => 'Back to map page',
 ];
