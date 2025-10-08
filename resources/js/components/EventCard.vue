@@ -1,18 +1,18 @@
 <template>
-  <div class="flex flex-col bg-white rounded-lg overflow-hidden">
+  <div class="flex overflow-hidden flex-col bg-white rounded-lg">
     <div class="flex-shrink-0">
-      <img :src="event.picture_path" class="w-full object-cover aspect-[1.5]" />
+      <img :src="event.picture_path" class="w-full object-cover aspect-[2.5]" />
     </div>
 
-    <div class="flex-grow flex flex-col gap-2 px-6 py-4">
-      <div class="text-default text-slate-500 mb-2 flex items-center font-semibold">
+    <div class="flex flex-col flex-grow gap-2 px-6 py-4">
+      <div class="flex items-center mb-2 font-semibold text-default text-slate-500">
         Organizer: <span class="text-sm font-semibold ml-1 w-fit px-4 py-1.5 bg-[#CCF0F9] rounded-full flex items-center">{{ event.organizer || 'Unknown' }}</span>
       </div>
 
-      <div v-if="eventTags.length" class="flex gap-2 flex-wrap mb-2">
+      <div v-if="eventTags.length" class="flex flex-wrap gap-2 mb-2">
         <template v-for="{ title, highlight } in eventTags">
           <span
-            class="flex items-center gap-2 py-1 px-3 text-sm font-semibold rounded-full whitespace-nowrap leading-4"
+            class="flex gap-2 items-center px-3 py-1 text-sm font-semibold leading-4 whitespace-nowrap rounded-full"
             :class="[
               highlight
                 ? 'bg-dark-blue text-white'
@@ -60,7 +60,7 @@
           :href="'/view/' + event.id + '/' + event.slug"
         >
           <span>View activity</span>
-          <div class="flex gap-2 w-4 overflow-hidden">
+          <div class="flex overflow-hidden gap-2 w-4">
             <img
               src="/images/arrow-right-icon.svg"
               class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0 text-[#1C4DA1]"
