@@ -39,4 +39,17 @@ return [
     'participation' => 'Ċertifikat ta’ Parteċipazzjoni',
     'values' => 'Il-valuri tagħna',
     'featured_activities' => 'Attiitajiet prominenti',
-    'codeweek2020' => 'Edizzjoni 2020'];
+    'codeweek2020' => 'Edizzjoni 2020',
+    'activities_locations' => 'Postijiet tal-attivitajiet',
+    'my_badges' => 'Il-badges tiegħi',
+    'excellence_winners' => 'Rebbieħa tal-eċċellenza',
+    'leading_teachers' => 'Għalliema ewlenin',
+    'badges_leaderboard' => 'Tabella tal-badges',
+    'podcasts' => 'Podcasts',
+    'matchmaking_toolkit' => 'Toolkit ta’ tqabbil',
+    'hackathons' => 'Hackathons',
+    'slogan_menu' => 'Iltaqa’ mal-mudelli tagħna u sib ix-xogħol tal-ħolm tiegħek',
+    'see_more' => 'Ara aktar',
+    'my_account' => 'Il-kont tiegħi',
+    'guide_on_activities' => 'Gwida għall-attivitajiet',
+];

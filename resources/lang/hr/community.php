@@ -42,5 +42,6 @@ return [
         
     'hub_SI' => 'Profil Klett D.o.o.',
     'hub_level_SI' => 'Regionalni Hub',
-    'hub_desc_SI' => 'Podjetje Profil Klett, d. o. o., je vodilni izobraževalni založnik, ki ustvarja kakovostna gradiva za poučevanje in učenje na različnih stopnjah izobraževalnega sistema. Ponuja širok nabor učbenikov, digitalnih gradiv in izobraževalnih orodij za podporo učenju in spodbujanje aktivnega sodelovanja učencev. Profil Klett sodeluje s številnimi učitelji, raziskovalci in inštitucijami ter s tem zagotavlja, da učna gradiva ustrezajo potrebam izobraževalnega sistema. Poslanstvo podjetja je negovanje ljubezni do učenja, s čimer navdihujejo tako učence kot učitelje.'
+    'hub_desc_SI' => 'Podjetje Profil Klett, d. o. o., je vodilni izobraževalni založnik, ki ustvarja kakovostna gradiva za poučevanje in učenje na različnih stopnjah izobraževalnega sistema. Ponuja širok nabor učbenikov, digitalnih gradiv in izobraževalnih orodij za podporo učenju in spodbujanje aktivnega sodelovanja učencev. Profil Klett sodeluje s številnimi učitelji, raziskovalci in inštitucijami ter s tem zagotavlja, da učna gradiva ustrezajo potrebam izobraževalnega sistema. Poslanstvo podjetja je negovanje ljubezni do učenja, s čimer navdihujejo tako učence kot učitelje.',
+    'slider_info' => 'Živa mreža edukatora, volontera i ambasadora koji pokreću EU Code Week naprijed. Povežite se, surađujte i inspirirajte sljedeću generaciju digitalnih inovatora u vašoj zemlji — i šire.',
 ];

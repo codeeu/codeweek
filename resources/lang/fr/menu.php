@@ -39,4 +39,17 @@ return [
     'participation' => 'Certificat de participation',
     'values' => 'Nos valeurs',
     'featured_activities' => 'Activités en vedette',
-    'codeweek2020' => 'Edition 2020'];
+    'codeweek2020' => 'Edition 2020',
+    'activities_locations' => 'Lieux des activités',
+    'my_badges' => 'Mes badges',
+    'excellence_winners' => 'Lauréats de l’excellence',
+    'leading_teachers' => 'Enseignants leaders',
+    'badges_leaderboard' => 'Classement des badges',
+    'podcasts' => 'Podcasts',
+    'matchmaking_toolkit' => 'Boîte à outils de mise en relation',
+    'hackathons' => 'Hackathons',
+    'slogan_menu' => 'Rencontrez nos modèles et trouvez le métier de vos rêves',
+    'see_more' => 'Voir plus',
+    'my_account' => 'Mon compte',
+    'guide_on_activities' => 'Guide des activités',
+];

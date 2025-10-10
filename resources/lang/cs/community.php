@@ -35,4 +35,5 @@ return [
         'a podívejte se na seznam ambasadorů Evropského týdne programování',
         'Pokud ve vaší zemi ambasadoři již fungují, spojte se přímo s nimi a společně se dohodněte, jak můžete iniciativu nejlépe podpořit vy. Pokud ve vaší zemi žádný ambasador zatím není, napište nám na e-mail info@codeweek.eu.',
     ],
+    'slider_info' => 'Živá síť pedagogů, dobrovolníků a ambasadorů, která posouvá Evropský týden programování vpřed. Propojte se, spolupracujte a inspirujte další generaci digitálních inovátorů ve své zemi — i mimo ni.',
 ];

@@ -35,4 +35,5 @@ return [
         'i na brzinu pogledajte spisak ambasadora EU Code Week - a',
         'Ako u vašoj zemlji postoje ambasadori, kontaktirajte ih direktno i pogledajte kako možete najbolje podržati inicijativu. Ako u vašoj zemlji nema nikoga, možete se obratiti na adresu info@codeweek.eu.',
     ],
+    'slider_info' => 'Živa mreža edukatora, volontera i ambasadora koji pokreću EU Code Week naprijed. Povežite se, sarađujte i inspirišite sljedeću generaciju digitalnih inovatora u vašoj zemlji — i šire.',
 ];

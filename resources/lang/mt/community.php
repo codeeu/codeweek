@@ -35,5 +35,5 @@ return [
         'u agħti ħarsa ħafifa lejn il-lista tal-Ambaxxaturi tal-Ġimgħa tal-Ikkowdjar tal-UE.',
         'Jekk hemm Ambaxxaturi f’pajjiżek, jekk jogħġbok ikkuntattjahom direttament u ara kif l-aħjar li tappoġġja l-inizjattiva. Jekk m’hemm ħadd f’pajjiżek, tista’ tikkuntattja lil info@codeweek.eu.',
     ],
-
+    'slider_info' => 'Xibka vibranti ta’ edukaturi, voluntiera u ambaxxaturi li qed iressqu ’il quddiem il-EU Code Week. Qabbad, ikkoopera u ispiraw il-ġenerazzjoni li jmiss ta’ innovaturi diġitali f’pajjiżek — u lil hinn minnu.',
 ];

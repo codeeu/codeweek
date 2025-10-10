@@ -39,4 +39,17 @@ return [
     'participation' => 'Deelnamecertificaat',
     'values' => 'Onze waardes',
     'featured_activities' => 'Uitgelichte activiteiten',
-    'codeweek2020' => 'Editie 2020'];
+    'codeweek2020' => 'Editie 2020',
+    'activities_locations' => 'Activiteitenlocaties',
+    'my_badges' => 'Mijn badges',
+    'excellence_winners' => 'Winnaars van uitmuntendheid',
+    'leading_teachers' => 'Leidende docenten',
+    'badges_leaderboard' => 'Badge klassement',
+    'podcasts' => 'Podcasts',
+    'matchmaking_toolkit' => 'Matchmaking toolkit',
+    'hackathons' => 'Hackathons',
+    'slogan_menu' => 'Ontmoet onze rolmodellen en vind je droombaan',
+    'see_more' => 'Bekijk meer',
+    'my_account' => 'Mijn account',
+    'guide_on_activities' => 'Gids voor activiteiten',
+];

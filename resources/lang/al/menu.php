@@ -42,4 +42,16 @@ return [
 
     'featured_activities' => 'Aktivitete tё evidentuara',
     'codeweek2020' => 'Edicioni 2020',
+    'activities_locations' => 'Vendndodhjet e aktiviteteve',
+    'my_badges' => 'Distinktivat e mi',
+    'excellence_winners' => 'Fituesit e Ekselencës',
+    'leading_teachers' => 'Mësuesit udhëheqës',
+    'badges_leaderboard' => 'Tabela e distinktivave',
+    'podcasts' => 'Podkaste',
+    'matchmaking_toolkit' => 'Paketa e bashkëpunimit',
+    'hackathons' => 'Hackathone',
+    'slogan_menu' => 'Njih modelet tona dhe gjej punën e ëndrrave të tua',
+    'see_more' => 'Shiko më shumë',
+    'my_account' => 'Llogaria ime',
+    'guide_on_activities' => 'Udhëzues për aktivitetet',
 ];

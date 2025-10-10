@@ -35,4 +35,5 @@ return [
         'ja luetteloon EU:n koodausviikon lähettiläistä.',
         'Jos maassasi on lähettiläitä, ota yhteyttä suoraan heihin ja selvitä, miten voit parhaiten tukea aloitetta. Jos maassasi ei ole lähettilästä, voit ottaa yhteyttä osoitteeseen info@codeweek.eu.',
     ],
+    'slider_info' => 'Elinvoimainen opettajien, vapaaehtoisten ja lähettiläiden verkosto, joka vie EU:n Koodausviikkoa eteenpäin. Verkostoidu, tee yhteistyötä ja inspiroi seuraavaa sukupolvea digitaalisia uudistajia maassasi — ja sen ulkopuolella.',
 ];

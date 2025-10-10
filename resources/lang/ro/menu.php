@@ -59,5 +59,16 @@ return [
     'search_site' => 'Caută pe site',
     'what_you_looking_for' => 'Ce dorești să cauți azi? ',
     'type_to_search' => 'Tastează pentru a căuta…',  
-    
+    'activities_locations' => 'Locațiile activităților',
+    'my_badges' => 'Insignele mele',
+    'excellence_winners' => 'Câștigătorii excelenței',
+    'leading_teachers' => 'Profesorii lideri',
+    'badges_leaderboard' => 'Clasamentul insignelor',
+    'podcasts' => 'Podcasturi',
+    'matchmaking_toolkit' => 'Set de instrumente pentru colaborare',
+    'hackathons' => 'Hackathoane',
+    'slogan_menu' => 'Cunoaște modelele noastre și găsește-ți jobul visurilor tale',
+    'see_more' => 'Vezi mai mult',
+    'my_account' => 'Contul meu',
+    'guide_on_activities' => 'Ghid pentru activități',
 ];
