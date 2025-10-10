@@ -39,4 +39,5 @@ return [
     'hub_BE' => 'Digitale Wolven, België; Nederland',
     'hub_level_BE' => 'National Hub',
     'hub_desc_BE' => 'Digitale Wolven is een non-profitorganisatie die zich richt op het versterken van individuen en bedrijven om te floreren in het digitale landschap. Door middel van innovatieve oplossingen en educatieve initiatieven willen zij de digitale vaardigheidskloof overbruggen en de digitale mogelijkheden van de gemeenschap vergroten. De organisatie biedt workshops, trainingsprogramma\'s en middelen die deelnemers voorzien van de nodige vaardigheden om te navigeren in de snel evoluerende digitale wereld.  Digitale Wolven werkt ook samen met verschillende belanghebbenden om digitale geletterdheid te bevorderen en de toepassing van technologie in diverse sectoren te stimuleren.',
+    'slider_info' => 'Een bruisend netwerk van docenten, vrijwilligers en ambassadeurs dat de EU Code Week vooruit stuwt. Verbind, werk samen en inspireer de volgende generatie digitale vernieuwers in jouw land — en daarbuiten.',
 ];

@@ -35,4 +35,5 @@ return [
         've AB Kod Haftası Elçileri listesine bir göz atın.',
         'Ülkenizde Elçiler varsa, lütfen doğrudan onlarla iletişime geçerek girişimi nasıl destekleyebileceğinizi öğrenin. Ülkenizde Elçi yoksa, info@codeweek.eu adresinden bize ulaşabilirsiniz.',
     ],
+    'slider_info' => 'AB Kod Haftasını ileriye taşıyan öğretmenler, gönüllüler ve elçilerden oluşan canlı bir ağ. Ülkenizde — ve ötesinde — dijital yenilikçilerin bir sonraki nesline bağlanın, işbirliği yapın ve ilham verin.',
 ];

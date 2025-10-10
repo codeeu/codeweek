@@ -35,4 +35,5 @@ return [
         'e consulte rapidamente a lista de embaixadores da Semana Europeia da Programação.',
         'Se houver Embaixadores no seu país, contacte-os diretamente para saber qual a melhor forma de apoiar a iniciativa. Se não houver nenhum, pode contactar info@codeweek.',
     ],
+    'slider_info' => 'Uma rede vibrante de educadores, voluntários e embaixadores que impulsionam a Semana Europeia do Código. Conecta-te, colabora e inspira a próxima geração de inovadores digitais no teu país — e além-fronteiras.',
 ];

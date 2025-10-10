@@ -40,4 +40,17 @@ return [
     'participation' => 'Сертификат за учество',
     'values' => 'Нашите вредности',
     'featured_activities' => 'Истакнати активности',
-    'codeweek2020' => 'Издание за 2020'];
+    'codeweek2020' => 'Издание за 2020',
+    'activities_locations' => 'Локации на активности',
+    'my_badges' => 'Мои значки',
+    'excellence_winners' => 'Победници на извонредноста',
+    'leading_teachers' => 'Водечки наставници',
+    'badges_leaderboard' => 'Листа на значки',
+    'podcasts' => 'Подкасти',
+    'matchmaking_toolkit' => 'Алатка за поврзување',
+    'hackathons' => 'Хакатони',
+    'slogan_menu' => 'Запознајте ги нашите улоги и најдете ја вашата работа од соништата',
+    'see_more' => 'Види повеќе',
+    'my_account' => 'Мојот профил',
+    'guide_on_activities' => 'Водич за активности',
+];
