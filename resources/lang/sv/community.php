@@ -35,4 +35,5 @@ return [
         'Ta gärna en titt på vår lista över kodveckans ambassadörer',
         'Om det finns ambassadörer i ditt land kan du kontakta dem direkt för mer information om hur du på bästa sätt kan stödja initiativet. Om det inte finns någon ambassadör i ditt land kan du i stället kontakta info@codeweek.eu.',
     ],
+    'slider_info' => 'Ett levande nätverk av lärare, volontärer och ambassadörer som driver EU Code Week framåt. Knyt kontakter, samarbeta och inspirera nästa generation digitala innovatörer i ditt land — och bortom.',
 ];

@@ -39,4 +39,17 @@ return [
     'participation' => 'Részvételi tanúsítvány',
     'values' => 'Értékeink',
     'featured_activities' => 'Kiemelt programok',
-    'codeweek2020' => '2020. évi kiadás'];
+    'codeweek2020' => '2020. évi kiadás',
+    'activities_locations' => 'Tevékenységek helyszínei',
+    'my_badges' => 'Jelvényeim',
+    'excellence_winners' => 'Kiválósági díjazottak',
+    'leading_teachers' => 'Vezető tanárok',
+    'badges_leaderboard' => 'Jelvény ranglista',
+    'podcasts' => 'Podcastok',
+    'matchmaking_toolkit' => 'Kapcsolódási eszköztár',
+    'hackathons' => 'Hackathonok',
+    'slogan_menu' => 'Ismerd meg példaképeinket, és találd meg álmaid munkáját',
+    'see_more' => 'Továbbiak',
+    'my_account' => 'Fiókom',
+    'guide_on_activities' => 'Útmutató a tevékenységekhez',
+];

@@ -35,4 +35,5 @@ return [
         'i zajrzyj na listę Ambasadorów Europejskiego Tygodnia Kodowania',
         'Jeśli w Twoim kraju działają już nasi ambasadorzy, skontaktuj się z nimi bezpośrednio i dowiedz się, co możesz zrobić, aby wesprzeć inicjatywę. Jeżeli w Twoim kraju nie ma jeszcze ambasadorów, skontaktuj się z nami, pisząc na adres info@codeweek.eu.',
     ],
+    'slider_info' => 'Tętniąca życiem sieć nauczycieli, wolontariuszy i ambasadorów, która napędza Europejski Tydzień Kodowania. Nawiąż kontakty, współpracuj i inspiruj kolejne pokolenie cyfrowych innowatorów w twoim kraju — i poza nim.',
 ];

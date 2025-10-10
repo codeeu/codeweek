@@ -17,7 +17,7 @@
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-dark-blue text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[830px]">
-                                Educational Resources
+                                @lang('footer.educational_resources')
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-slate-500 p-0 mb-0 max-md:max-w-full max-w-[725px]">
                                 @lang('educational-resources.educational_resources_text')

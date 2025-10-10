@@ -35,4 +35,5 @@ return [
         'ja vaadake ka ELi programmeerimisnädala Code Week saadikute nimekirja.',
         'Kui teie riigis on saadikud juba olemas, võtke palun nendega ühendust ja uurige, mida saaksite ettevõtmise heaks teha. Kui teie riigis saadikut pole, võtke ühendust aadressil info@codeweek.eu.',
     ],
+    'slider_info' => 'Elav õpetajate, vabatahtlike ja saadikute võrgustik viib ELi koodinädalat edasi. Looge ühendusi, tehke koostööd ja inspireerige järgmise põlvkonna digitaalseid innovaatoreid teie riigis — ja kaugemalgi.',
 ];

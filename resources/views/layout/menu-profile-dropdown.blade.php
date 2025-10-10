@@ -7,7 +7,7 @@
 <li>
     <img src="{{asset('svg/address-book.svg')}}" class="static-image">
     <a class="cookweek-link hover-underline" href="{{route('activities-locations')}}">
-        Activities Locations
+        @lang('menu.activities_locations')
     </a>
 </li>
 @role('super admin|leading teacher')
@@ -16,7 +16,7 @@
     <img src="/images/user_menu_badges.svg">
 
     <a class="cookweek-link hover-underline" href="{{route('my-badges')}}">
-        My Badges
+        @lang('menu.my_badges')
     </a>
 </li>
 @endrole
@@ -76,7 +76,7 @@
 <li>
     <img src="/images/user_menu_activities.svg" class="icon">
     <a class="cookweek-link hover-underline" href="{{route('excellence_winners')}}">
-        Excellence Winners
+        @lang('menu.excellence_winners')
     </a>
 </li>
 @endrole
@@ -91,7 +91,7 @@
     </svg>
 
     <a class="cookweek-link hover-underline" href="{{route('leading_teachers_list')}}">
-        Leading Teachers
+        @lang('menu.leading_teachers')
     </a>
 </li>
 
@@ -104,7 +104,7 @@
     </svg>
 
     <a class="cookweek-link hover-underline" href="{{route('badges-leaderboard-year')}}">
-        Badges Leaderboard
+        @lang('menu.badges_leaderboard')
     </a>
 </li>
 

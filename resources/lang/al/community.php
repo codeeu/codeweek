@@ -35,4 +35,5 @@ return [
         'dhe hidhini një vështrim të shpejtë listës së Ambasadorëve të EU Code Week',
         'Nëse ka Ambasadorë në vendin tuaj, ju lutemi kontaktoni direkt me ta dhe shikoni se si mund ta mbështesni më mirë nismën. Nëse nuk ka një të tillë në vendin tuaj, mund të kontaktoni në info@codeweek.eu.',
     ],
+    'slider_info' => 'Një rrjet i gjallë mësuesish, vullnetarësh dhe ambasadorësh që e çojnë përpara Javën e Kodimit të BE-së. Lidhuni, bashkëpunoni dhe frymëzoni brezin e ardhshëm të novatorëve digjitalë në vendin tuaj — dhe përtej.',
 ];

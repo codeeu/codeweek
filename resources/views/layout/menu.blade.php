@@ -83,7 +83,7 @@
                       <li><a class="cookweek-link hover-underline" href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
-                      <li><a class="cookweek-link hover-underline" href="{{route('guide')}}">Guide on Activities</a></li>
+                      <li><a class="cookweek-link hover-underline" href="{{route('guide')}}">@lang('menu.guide_on_activities')</a></li>
                   </ul>
               </li>
 
@@ -107,20 +107,20 @@
                           <div class="flex flex-col flex-grow gap-4 mb-1 xl:mb-0 max-xl:w-full">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg">@lang('menu.resources')</div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('coding@home')}}">@lang('menu.coding@home')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">Podcasts</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('online-courses')}}">Online Courses</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">@lang('menu.podcasts')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('online-courses')}}">@lang('menu.online-courses')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('training.index')}}">@lang('menu.training')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_all')}}">@lang('menu.learn')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('webinars')}}">@lang('menu.webinars')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="/matchmaking-tool">Matchmaking Toolkit</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="/matchmaking-tool">@lang('menu.matchmaking_toolkit')</a></div>
                             </div>
                             <div class="flex flex-col flex-grow gap-4 max-xl:w-full">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('challenges')}}">@lang('menu.challenges')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">Hackathons</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">@lang('menu.hackathons')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('treasure-hunt')}}">@lang('menu.treasure-hunt')</a></div>
                           </div>
@@ -133,11 +133,11 @@
                               <div class="absolute bottom-0 left-0 p-4 w-full">
                                   <div class="mb-1 text-xl font-semibold text-white">@lang('menu.careers_in_digital')</div>
                                   <div class="text-white text-[16px] font-medium mb-2">
-                                      Meet our role models and find your dream job
+                                      @lang('menu.slogan_menu')
                                   </div>
                                   <a class="block w-full bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="{{route('dream-jobs-in-digital')}}">
                                     <span class="text-base font-semibold leading-7 text-black normal-case">
-                                        See more
+                                        @lang('menu.see_more')
                                     </span>
                                   </a>
                               </div>
@@ -216,7 +216,7 @@
                           class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
                           href="javascript:void(null);"
                       >
-                          My account
+                      @lang('menu.my_account')
                           <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                       </a>
                       <ul class="sub-menu">

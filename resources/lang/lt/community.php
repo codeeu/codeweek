@@ -35,4 +35,5 @@ return [
         'ir peržvelkite ES programavimo savaitės ambasadorių sąrašą.',
         'Jei jūsų šalyje yra ambasadorių, susisiekite su jais tiesiogiai ir pasiteiraukite, kaip geriausiai galite prisidėti prie šios iniciatyvos. Jei tokių ambasadorių jūsų šalyje nėra, galite parašyti el. pašto adresu info@codeweek.eu.',
     ],
+    'slider_info' => 'Gyvas mokytojų, savanorių ir ambasadorių tinklas, kuris stumia į priekį ES Programavimo savaitę. Bendraukite, bendradarbiaukite ir įkvėpkite kitą skaitmeninių novatorių kartą jūsų šalyje — ir už jos ribų.',
 ];

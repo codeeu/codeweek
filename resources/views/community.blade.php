@@ -100,13 +100,13 @@
                                 </h4>
                                 <p
                                     class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                    A vibrant network of educators, volunteers and ambassadors driving EU Code Week forward. Connect, collaborate and inspire the next generation of digital innovators in your country — and beyond.
+                                    @lang('community.slider_info')
                                 </p>
                                 <a
                                     class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
                                     href="/"
                                 >
-                                    <span>Get in touch</span>
+                                    <span>@lang('base.get_in_touch')</span>
                                 </a>
                             </div>
                         </div>
@@ -245,7 +245,7 @@
                                 @if ($ambassador->email)
                                     <a class="group flex gap-2 items-start my-auto text-base font-semibold leading-none text-[#1C4DA1] hover:text-white overflow-hidden px-6 w-auto whitespace-nowrap py-2.5 rounded-3xl border-2 border-[#1C4DA1] border-solid hover:bg-[#1C4DA1]"
                                        href="mailto:{{ $ambassador->email }}">
-                                        <span class="my-auto">Get in touch</span>
+                                        <span class="my-auto">@lang('base.get_in_touch')</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                              viewBox="0 0 16 16" fill="none"
                                              class="text-[#1C4DA1] group-hover:text-white">
