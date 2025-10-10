@@ -43,4 +43,5 @@ return [
     'hub_LV' => 'Latvijas Informācijas un komunikācijas tehnoloģijas asociācija',
     'hub_level_LV' => 'Regional Hub',
     'hub_desc_LV' => 'Latvijas Informācijas un komunikācijas tehnoloģiju asociācija (LIKTA) veicina informācijas un komunikācijas tehnoloģiju (IKT) nozares attīstību Latvijā. Organizācija iestājas par politiku, kas sekmē inovācijas, izaugsmi un konkurētspēju, vienlaikus nodrošinot biedriem resursus, kontaktu veidošanas iespējas un zināšanu apmaiņas platformas. LIKTA ciešā sadarbībā ar valsts un izglītības iestādēm strādā pie digitālās pratības veicināšanas sabiedrībā un interešu rosināšanas par karjeras iespējām IKT jomā. Tāpat asociācija organizē konferences, darbnīcas un hakatonus, lai iesaistītu un iedvesmotu nākamās paaudzes tehnoloģiju līderus. LIKTA koordinē arī CodeWeek aktivitātes Latvijā un Lietuvā.',
+    'slider_info' => 'Dzīvs pedagogu, brīvprātīgo un vēstnešu tīkls, kas virza uz priekšu ES Koda nedēļu. Sazinieties, sadarbojieties un iedvesmojiet nākamo digitālo inovatoru paaudzi savā valstī — un ārpus tās.',
 ];

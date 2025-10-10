@@ -36,4 +36,5 @@ return [
         'vessen egy pillantást az európai programozási hét nagyköveteinek névsorára.',
         'Ha az Ön országában már vannak nagykövetek, kérjük, közvetlenül velük vegye fel a kapcsolatot, és tőlük érdeklődjön, hogyan segíthetné leginkább a kezdeményezést. Ha a programozási hétnek az Ön országában még nincs nagykövete, az info@codeweek.eu e-mail-címen érdeklődhet.',
     ],
+    'slider_info' => 'Tanárokból, önkéntesekből és nagykövetekből álló pezsgő hálózat, amely előreviszi az EU Code Weeket. Kapcsolódjon, működjön együtt, és inspirálja a digitális újítók következő generációját hazájában — és azon túl.',
 ];

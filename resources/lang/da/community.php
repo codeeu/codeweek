@@ -35,4 +35,5 @@ return [
         "og kaste et hurtigt blik på listen over ambassadører for EU's kodeuge",
         'Hvis der er ambassadører i dit land, kan du kontakte dem direkte og høre, hvordan du bedst kan støtte initiativet. Hvis der ikke er nogen i dit land, kan du kontakte info@codeweek.eu.',
     ],
+    'slider_info' => 'Et levende netværk af undervisere, frivillige og ambassadører, der driver EU Code Week fremad. Skab kontakt, samarbejd og inspirér den næste generation af digitale innovatører i dit land — og ud over.',
 ];

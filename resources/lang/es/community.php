@@ -35,4 +35,5 @@ return [
         'y eche un vistazo a la lista de embajadores de la Semana de la Programación de la UE.',
         'Si hay embajadores en su país, póngase en contacto directamente con ellos para ver cómo puede apoyar la iniciativa. Si no hay nadie en su país, puede dirigirse a info@codeweek.eu.',
     ],
+    'slider_info' => 'Una red vibrante de docentes, voluntariado y embajadores que impulsa la Semana de la Programación de la UE. Conéctate, colabora e inspira a la próxima generación de innovadores digitales en tu país — y más allá.',
 ];

@@ -35,4 +35,5 @@ return [
         'a pozrite si zoznam veľvyslancov Európskeho týždňa programovania.',
         'Ak už vo vašej krajine ambasádori sú, spojte sa priamo s nimi, aby ste sa dozvedeli, ako môžete iniciatívu najlepšie podporiť. Ak vaša krajina ambasádorov nemá, môžete nás kontaktovať na info@codeweek.eu.',
     ],
+    'slider_info' => 'Živá sieť pedagógov, dobrovoľníkov a ambasádorov, ktorí posúvajú EU Code Week vpred. Prepojte sa, spolupracujte a inšpirujte ďalšiu generáciu digitálnych inovátorov vo vašej krajine — aj za jej hranicami.',
 ];

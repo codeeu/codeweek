@@ -40,4 +40,17 @@ return [
     'participation' => 'Osalemise tunnistus',
     'values' => 'Meie väärtused',
     'featured_activities' => 'Esiletõstetud üritused',
-    'codeweek2020' => '2020. aasta versioon'];
+    'codeweek2020' => '2020. aasta versioon',
+    'activities_locations' => 'Tegevuste asukohad',
+    'my_badges' => 'Minu märgid',
+    'excellence_winners' => 'Tipptegijate võitjad',
+    'leading_teachers' => 'Juhtivad õpetajad',
+    'badges_leaderboard' => 'Märgipõhine edetabel',
+    'podcasts' => 'Podcastid',
+    'matchmaking_toolkit' => 'Koostöö tööriistakomplekt',
+    'hackathons' => 'Hackathonid',
+    'slogan_menu' => 'Kohtu meie eeskujude ja leia oma unistuste töö',
+    'see_more' => 'Vaata rohkem',
+    'my_account' => 'Minu konto',
+    'guide_on_activities' => 'Juhend tegevuste kohta',
+];

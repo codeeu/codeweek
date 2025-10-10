@@ -59,5 +59,16 @@ return [
     'search_site' => 'Søg på webstedet',
     'what_you_looking_for' => 'Hvad leder du efter?',
     'type_to_search' => 'Skriv for at ansøge...',
-   
+    'activities_locations' => 'Aktivitetssteder',
+    'my_badges' => 'Mine badges',
+    'excellence_winners' => 'Excellence-vindere',
+    'leading_teachers' => 'Førende lærere',
+    'badges_leaderboard' => 'Badge-rangliste',
+    'podcasts' => 'Podcasts',
+    'matchmaking_toolkit' => 'Matchmaking-værktøjskasse',
+    'hackathons' => 'Hackathons',
+    'slogan_menu' => 'Mød vores rollemodeller og find dit drømmejob',
+    'see_more' => 'Se mere',
+    'my_account' => 'Min konto',
+    'guide_on_activities' => 'Vejledning om aktiviteter',
 ];
