@@ -1,36 +1,27 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Validation Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines contain the default error messages used by
-    | the validator class. Some of these rules have multiple versions such
-    | as the size rules. Feel free to tweak each of these messages here.
-    |
-    */
-    'privacy_policy' => 'Politika ta Privatezza',
+    'privacy_policy' => 'Polityka prywatności',
     'cookies_policy' => 'Polityka plików cookie',
-    'about_us' => 'Dwarna',
-    'about_code_week' => 'Dwar il-Code Week',
-    'our_values' => 'Il-Valuri tagħna',
-    'statistics' => 'Statistika',
-    'partners_sponsors' => 'Imsieħba u Sponsors',
-    'community' => 'Komunità',
-    'quick_links' => 'Szybkie linki',
-    'register' => 'Irreġistra',
-    'activities_events' => 'Attivitajiet u Avvenimenti',
-    'learn_teach' => 'Tgħallem u Għallem',
-    'news' => 'Aħbarijiet',
+    'about_us' => 'O nas',
+    'about_code_week' => 'O Code Week',
+    'our_values' => 'Nasze wartości',
+    'statistics' => 'Tablica wyników',
+    'partners_sponsors' => 'Partnerzy i sponsorzy',
+    'community' => 'Społeczność',
+    'quick_links' => 'Szybkie odnośniki',
+    'register' => 'Zarejestruj się',
+    'activities_events' => 'Aktywności i wydarzenia',
+    'learn_teach' => 'Ucz się i nauczaj',
+    'news' => 'Aktualności',
     'newsletter_signup' => 'Zapisz się do newslettera',
     'educational_resources' => 'Zasoby edukacyjne',
     'coding_home' => 'Kodowanie w domu',
     'podcast' => 'Podcast',
-    'challenges' => 'Sfidi',
-    'hackathons' => 'Hackatony',
-    'designed_and_developed_by' => 'Zaprojektowany i opracowany przez',
-    'all_rights_reserved' => 'Wszelkie prawa zastrzeżone'
+    'challenges' => 'Wyzwania',
+    'hackathons' => 'Hackathony',
+    'designed_and_developed_by' => 'Zaprojektowane i opracowane przez',
+    'all_rights_reserved' => 'Wszelkie prawa zastrzeżone',
+    'get-involved' => 'Zaangażuj się',
+    'contact-us' => 'Skontaktuj się z nami',
 ];
