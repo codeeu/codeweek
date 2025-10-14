@@ -54,16 +54,23 @@
                 this.persist(avatar.file);
             },
 
-            persist(avatar) {
-                let data = new FormData();
-
+            async persist(avatar) {
+                const data = new FormData();
                 data.append('avatar', avatar);
-
-                axios.post(`/api/users/${this.user.id}/avatar`, data)
-                    .then((result) => {
-                        this.avatar = result.data.path;
-                        flash('Avatar uploaded!');
-                    })
+                try {
+                    const result = await axios.post(`/api/users/${this.user.id}/avatar`, data);
+                    this.avatar = result.data.path;
+                    flash('Avatar uploaded!');
+                } catch (error) {
+                    if (error.response && error.response.status === 422) {
+                        const errors = error.response.data.errors;
+                        const messages = Object.values(errors).flat().join('\n');
+                        flash(messages, 'error');
+                    } else {
+                        console.error('Upload failed:', error);
+                        flash('An unexpected error occurred while uploading the avatar.', 'error');
+                    }
+                }
             },
             remove() {
                 console.log("delete me");
