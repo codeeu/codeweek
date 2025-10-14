@@ -1,4 +1,5 @@
 <template>
+  <Flash />
   <div class="flex flex-col tablet:flex-row tablet:items-center gap-6 tablet:gap-14">
     <div class="flex">
       <div class="relative">
@@ -54,16 +55,32 @@ export default {
       this.persist(avatar.file);
     },
 
-    persist(avatar) {
-      let data = new FormData();
-
+    async persist(avatar) {
+      const data = new FormData();
       data.append('avatar', avatar);
-
-      axios.post(`/api/users/${this.user.id}/avatar`, data)
-          .then((result) => {
-            this.avatar = result.data.path;
-            emitter.emit('flash', {message: 'Avatar uploaded!', level: 'success'});
-          })
+      try {
+        const result = await axios.post(`/api/users/${this.user.id}/avatar`, data);
+        this.avatar = result.data.path;
+        emitter.emit('flash', {
+          message: 'Avatar uploaded!',
+          level: 'success'
+        });
+      } catch (error) {
+        if (error.response && error.response.status === 422) {
+          const errors = error.response.data.errors;
+          const messages = Object.values(errors).flat().join('\n');
+          emitter.emit('flash', {
+            message: messages,
+            level: 'error'
+          });
+        } else {
+          console.error('Upload failed:', error);
+          emitter.emit('flash', {
+            message: 'An unexpected error occurred while uploading the avatar.',
+            level: 'error'
+          });
+        }
+      }
     },
     remove() {
       console.log("delete me");
