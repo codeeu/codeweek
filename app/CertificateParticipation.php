@@ -91,18 +91,26 @@ class CertificateParticipation
     {
         if ($this->is_greek_text($this->event_name) || $this->is_greek_text($this->event_date) || $this->is_greek_text($this->name_of_certificate_holder)) {
             $this->templateName = 'participation_greek.tex';
+        } else if ($this->is_ukrainian_text($this->event_name) || $this->is_ukrainian_text($this->event_date) || $this->is_ukrainian_text($this->name_of_certificate_holder)) {
+            $this->templateName = 'participation_ukrainian.tex';
         }
 
         if ($this->is_greek_text($this->event_name)) {
             $this->event_name_lang = 'greek';
+        } else if($this->is_ukrainian_text($this->event_name)) {
+            $this->event_name_lang = 'ukrainian';
         }
 
         if ($this->is_greek_text($this->event_date)) {
             $this->event_date_lang = 'greek';
+        } else if($this->is_ukrainian_text($this->event_date)) {
+            $this->event_date_lang = 'ukrainian';
         }
 
         if ($this->is_greek_text($this->name_of_certificate_holder)) {
             $this->certificate_holder_name_lang = 'greek';
+        } else if($this->is_ukrainian_text($this->name_of_certificate_holder)) {
+            $this->certificate_holder_name_lang = 'ukrainian';
         }
 
         $base_template = Storage::disk('latex')->get($this->templateName);
@@ -128,6 +136,8 @@ class CertificateParticipation
         . escapeshellarg($this->resource_path) . ' '
             . escapeshellarg($this->resource_path . '/' . $this->personalized_template_name . '.tex');
 
+        logger($command);
+        logger($this->resource_path);
         $process = Process::fromShellCommandline($command, $this->resource_path);
         $process->setTimeout(600); // Allow up to 600 seconds for execution
         $this->execute_process($process);
