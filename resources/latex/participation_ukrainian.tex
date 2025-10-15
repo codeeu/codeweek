@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ukrainian,english]{babel}
+
+\usepackage[landscape,a4paper]{geometry}
+\geometry{verbose,tmargin=0cm,bmargin=0cm,lmargin=3cm,rmargin=3cm}
+
+\usepackage{fancybox}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{eso-pic}
+\usepackage{textcomp}
+
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{xcolor}
+\definecolor{myorange}{RGB}{226, 83, 48}
+\definecolor{Slate600}{HTML}{20262C}
+\definecolor{GrayLine}{HTML}{858B91}
+
+\newcommand\BackgroundPic{%
+  \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering
+      \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/participation-certificate-2025.png}%
+      \vfill
+}}}
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+\vspace*{3.5cm}
+
+\begin{center}
+    \vspace{1cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont This certificate recognizes that} \\
+    \vspace{0.5cm}
+
+    \begin{otherlanguage*}{ukrainian}
+        \textcolor{myorange}{\fontsize{28}{32}\selectfont Прізвище Ім’я}
+    \end{otherlanguage*} \\
+
+    \vspace{0.5cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Has developed essential computational thinking skills} \\
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont and contributed to the success of} \\
+
+    \vspace{0.8cm}
+    \textcolor{myorange}{\fontsize{36}{42}\selectfont EU CodeWeek 2025} \\
+
+    \vspace{0.8cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont by actively participating in the coding event} \\
+    \vspace{0.5cm}
+
+    \begin{otherlanguage*}{ukrainian}
+        \textcolor{myorange}{\fontsize{28}{32}\selectfont Назва події}
+    \end{otherlanguage*} \\
+
+    \vspace{0.5cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Which took place on} \\
+    \vspace{0.5cm}
+
+    \begin{otherlanguage*}{ukrainian}
+        \textcolor{Slate600}{\fontsize{24}{28}\selectfont 14 жовтня 2025 р.}
+    \end{otherlanguage*} \\
+
+    \vspace{0.3cm}
+    \textcolor{GrayLine}{\rule{183pt}{2pt}}
+\end{center}
+
+\end{document}
