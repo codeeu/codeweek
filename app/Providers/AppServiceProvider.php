@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\City;
+use App\Country;
 use App\Event;
 use App\Observers\EventObserver;
 use Carbon\Carbon;
@@ -96,13 +98,10 @@ class AppServiceProvider extends ServiceProvider
                 'HU',
             ];
 
-            $activeCountries = \App\Country::query()
-                                ->whereIn('iso', $supportedCountries)
-                                ->orderBy('name')
-                                ->get();
+            $activeCountries = Country::query()->orderBy('name')->get();
 
-            $cities = \App\City::query()
-                    ->whereIn('country_iso', $supportedCountries)
+            $cities = City::query()
+                    ->whereIn('country_iso', $activeCountries->pluck('iso'))
                     ->select(['id', 'city', 'country_iso'])
                     ->orderBy('country_iso')
                     ->orderBy('city')
