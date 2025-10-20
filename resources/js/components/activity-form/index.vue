@@ -110,33 +110,22 @@
                 ? 'md:!translate-y-0 max-md:fixed max-md:bottom-0 max-md:left-0 max-md:border-t-2 max-md:border-primary max-md:py-4 max-md:px-[44px] max-md:w-full max-md:bg-white max-md:z-[99]'
                 : '!translate-y-0',
             ]">
-              <button class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]" type="button" :disabled="disableNextbutton" :class="[
-                disableNextbutton
+              <button class="text-nowrap flex justify-center items-center duration-300 rounded-full py-2.5 px-6 font-semibold text-lg max-sm:w-full sm:min-w-[224px]" type="button" :disabled="disableNextbutton || isSubmitting" :class="[
+                disableNextbutton || isSubmitting
                   ? 'cursor-not-allowed bg-gray-200 text-gray-400'
                   : 'bg-primary hover:bg-hover-orange text-[#20262C]',
-              ]" @click="
-                  () => {
-                    if (step === 4) {
-                      if (event?.id) {
-                        handleGoMapPage();
-                      } else {
-                        handleReloadPage();
-                      }
-                    } else if (step === 3 && validStep3) {
-                      handleSubmit();
-                    } else if (step === 2 && validStep2) {
-                      handleMoveStep(3);
-                    } else if (step === 1 && validStep1) {
-                      handleMoveStep(2);
-                    }
-                  }
-                ">
-                <template v-if="step === 4">
-                  <span v-if="event?.id">{{ $t('event.back-to-map-page') }}</span>
-                  <span v-else>{{ $t('event.add-another-activity') }}</span>
-                </template>
-                <span v-else-if="step === 3">{{ $t('event.submit') }}</span>
-                <span v-else>{{ $t('event.next-step') }}</span>
+              ]" 
+              @click="handleNextClick"
+              >
+              <template v-if="isSubmitting">
+                <span>{{ $t('event.submitting') }}...</span>
+              </template>
+              <template v-else-if="step === 4">
+                <span v-if="event?.id">{{ $t('event.back-to-map-page') }}</span>
+                <span v-else>{{ $t('event.add-another-activity') }}</span>
+              </template>
+              <span v-else-if="step === 3">{{ $t('event.submit') }}</span>
+              <span v-else>{{ $t('event.next-step') }}</span>
               </button>
             </div>
           </div>
@@ -226,6 +215,8 @@ export default {
     const step = ref(1);
     const errors = ref({});
     const pageFooterVisible = ref(false);
+    const isSubmitting = ref(false);
+
     const defaultFormValues = ref({
       // step 1
       activity_type: 'open-in-person',
@@ -247,6 +238,37 @@ export default {
       privacy: false,
     });
     const formValues = ref(_.clone(defaultFormValues.value));
+
+    const handleNextClick = async () => {
+      if (isSubmitting.value) return;
+
+      if (step.value === 4) {
+        if (props.event?.id) handleGoMapPage();
+        else handleReloadPage();
+        return;
+      }
+      
+      console.log(validStep3.value);
+      if (step.value === 3 && validStep3.value) {
+        isSubmitting.value = true;
+        try {
+          await handleSubmit();
+        } finally {
+          isSubmitting.value = false;
+        }
+        return;
+      }
+      
+      if (step.value === 2 && validStep2.value) {
+        handleMoveStep(3);
+        return;
+      }
+
+      if (step.value === 1 && validStep1.value) {
+        handleMoveStep(2);
+        return;
+      }
+    };
 
     const validStep1 = computed(() => {
       const data = _.cloneDeep(formValues.value);
@@ -381,6 +403,9 @@ export default {
         errors.value = error.response?.data?.errors;
         step.value = 1;
       }
+      finally {
+        isSubmitting.value = false;
+      }
     };
 
     watch(
@@ -490,6 +515,8 @@ export default {
       validStep3,
 
       pageFooterVisible,
+      handleNextClick,
+      isSubmitting
     };
   },
 };

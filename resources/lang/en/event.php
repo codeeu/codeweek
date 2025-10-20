@@ -226,8 +226,6 @@ return [
         'label' => 'Activity address',
         'placeholder' => 'Where will the activity be taking place?',
     ],
-    'address.label' => 'Activity address',
-    'address.placeholder' => 'Where will the activity be taking place?',
     'organizertype' => [
         'label' => 'Type of organisation',
         'placeholder' => 'Select the type of organiser',
@@ -385,4 +383,5 @@ return [
     'other-gender' => 'Other',
     'image-attached' => 'Image Attached',
     'back-to-map-page' => 'Back to map page',
+    'submitting' => 'Submitting'
 ];
