@@ -46,7 +46,8 @@ class CleanDuplicateEvents extends Command
                 e.title,
                 e.start_date,
                 e.end_date,
-                e.created_at
+                e.created_at,
+                e.status
             FROM events e
             WHERE YEAR(e.created_at) = ?
               AND e.title <> ''
@@ -100,18 +101,32 @@ class CleanDuplicateEvents extends Command
 
         $rows = [];
         foreach ($groups as $g) {
-            $first = $byId[$g[0]] ?? null;
+            $events = array_map(fn($id) => $byId[$id] ?? null, $g);
+
+            usort($events, function ($a, $b) {
+                $priority = ['APPROVED' => 1, 'PENDING' => 2, 'REJECTED' => 3];
+                $aScore = $priority[$a->status] ?? 4;
+                $bScore = $priority[$b->status] ?? 4;
+                return $aScore <=> $bScore;
+            });
+
+            $keep = $events[0]->id ?? null;
+            $deleteIds = array_filter(array_column(array_slice($events, 1), 'id'));
+
+            $first = $events[0] ?? null;
             $rows[] = [
                 implode(', ', $g),
                 count($g) . ' items',
                 $first?->title ?? '—',
                 $first?->start_date ?? '—',
                 $first?->end_date ?? '—',
+                'Keep ID: ' . ($keep ?? '—'),
             ];
-            $toDelete = array_merge($toDelete, array_slice($g, 1));
+
+            $toDelete = array_merge($toDelete, $deleteIds);
         }
 
-        $this->table(['Event IDs (Group)', 'Count', 'Title', 'Start date', 'End date'], $rows);
+        $this->table(['Event IDs (Group)', 'Count', 'Title', 'Start date', 'End date', 'Keep'], $rows);
 
         if (!$shouldDelete) {
             $this->newLine();
