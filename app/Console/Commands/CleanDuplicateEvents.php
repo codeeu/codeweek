@@ -38,59 +38,61 @@ class CleanDuplicateEvents extends Command
             $shouldDelete ? 'DELETE' : 'DRY-RUN'
         ));
 
-        // --- Detect clusters of events with same title/start/end within 2 seconds ---
+        $year = 2025;
+
         $duplicates = DB::select("
             SELECT 
                 e.id,
                 e.title,
                 e.start_date,
                 e.end_date,
-                e.created_at,
-                LAG(e.created_at) OVER (PARTITION BY e.title, e.start_date, e.end_date ORDER BY e.created_at) AS prev_created
+                e.created_at
             FROM events e
-            WHERE YEAR(e.created_at) = 2025
+            WHERE YEAR(e.created_at) = ?
               AND e.title <> ''
               AND e.start_date IS NOT NULL
               AND e.end_date IS NOT NULL
-            ORDER BY e.title, e.start_date, e.created_at
-        ");
+            ORDER BY e.title, e.start_date, e.created_at, e.id
+        ", [$year]);
 
         $toDelete = [];
         $groups = [];
-        $prevTitle = $prevStart = $prevEnd = null;
         $group = [];
 
-        foreach ($duplicates as $row) {
-            $diff = null;
-            if ($row->prev_created) {
-                $diff = abs(strtotime($row->created_at) - strtotime($row->prev_created));
-            }
+        $prevTitle = $prevStart = $prevEnd = null;
+        $prevCreated = null;
 
-            if (
-                $row->title === $prevTitle &&
-                $row->start_date === $prevStart &&
-                $row->end_date === $prevEnd &&
-                $diff !== null && $diff < 2
-            ) {
-                $group[] = $row->id;
-            } else {
-                if (count($group) > 1) {
-                    $groups[] = $group;
+        $byId = [];
+        foreach ($duplicates as $r) {
+            $byId[$r->id] = $r;
+        }
+
+        foreach ($duplicates as $row) {
+            $sameKey = ($row->title === $prevTitle && $row->start_date === $prevStart && $row->end_date === $prevEnd);
+
+            if ($sameKey && $prevCreated !== null) {
+                $diff = abs(strtotime($row->created_at) - strtotime($prevCreated));
+                if ($diff < 2) {
+                    $group[] = $row->id;
+                } else {
+                    if (count($group) > 1) $groups[] = $group;
+                    $group = [$row->id];
                 }
+            } else {
+                if (count($group) > 1) $groups[] = $group;
                 $group = [$row->id];
             }
 
             $prevTitle = $row->title;
             $prevStart = $row->start_date;
             $prevEnd = $row->end_date;
+            $prevCreated = $row->created_at;
         }
 
-        if (count($group) > 1) {
-            $groups[] = $group;
-        }
+        if (count($group) > 1) $groups[] = $group;
 
         if (empty($groups)) {
-            $this->info('No duplicate event groups found in 2025.');
+            $this->info("No duplicate event groups found in {$year}.");
             return self::SUCCESS;
         }
 
@@ -98,23 +100,18 @@ class CleanDuplicateEvents extends Command
 
         $rows = [];
         foreach ($groups as $g) {
-            $firstEvent = collect($duplicates)->firstWhere('id', $g[0]);
-
+            $first = $byId[$g[0]] ?? null;
             $rows[] = [
                 implode(', ', $g),
                 count($g) . ' items',
-                $firstEvent?->title ?? '—',
-                $firstEvent?->start_date ?? '—',
-                $firstEvent?->end_date ?? '—',
+                $first?->title ?? '—',
+                $first?->start_date ?? '—',
+                $first?->end_date ?? '—',
             ];
-
             $toDelete = array_merge($toDelete, array_slice($g, 1));
         }
 
-        $this->table(
-            ['Event IDs (Group)', 'Count', 'Title', 'Start date', 'End date'],
-            $rows
-        );
+        $this->table(['Event IDs (Group)', 'Count', 'Title', 'Start date', 'End date'], $rows);
 
         if (!$shouldDelete) {
             $this->newLine();
