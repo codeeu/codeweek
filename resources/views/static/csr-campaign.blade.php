@@ -2,7 +2,7 @@
 
 @php
     $list = [
-      (object) ['label' => 'CSR Campaign', 'href' => ''],
+      (object) ['label' => 'Future Ready Csr', 'href' => ''],
     ];
 
     $resources = [
@@ -11,70 +11,80 @@
             'description' => __('csr-campaign.resource_description_1'),
             'button_text' => __('csr-campaign.resource_button_1'),
             'button_link' => __('csr-campaign.resource_link_1'),
-            'image' => '/images/csr/post1_vertical.jpg',
+            'image' => '/images/csr/res1_explore_befefits_vertical.jpg',
+            'image2' => '/images/csr/res1_explore_befefits_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_2'),
             'description' => __('csr-campaign.resource_description_2'),
             'button_text' => __('csr-campaign.resource_button_2'),
             'button_link' => __('csr-campaign.resource_link_2'),
-            'image' => '/images/csr/post2_vertical.jpg',
+            'image' => '/images/csr/res2_first_steps_vertical.jpg',
+            'image2' => '/images/csr/res2_first_steps_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_3'),
             'description' => __('csr-campaign.resource_description_3'),
             'button_text' => __('csr-campaign.resource_button_3'),
             'button_link' => __('csr-campaign.resource_link_3'),
-            'image' => '/images/csr/post3_vertical.jpg',
+            'image' => '/images/csr/res3_pledge_badge_vertical.jpg',
+            'image2' => '/images/csr/res3_pledge_badge_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_4'),
             'description' => __('csr-campaign.resource_description_4'),
             'button_text' => __('csr-campaign.resource_button_4'),
             'button_link' => __('csr-campaign.resource_link_4'),
-            'image' => '/images/csr/post4_vertical.jpg',
+            'image' => '/images/csr/res4_csr_toolkit_vertical.jpg',
+            'image2' => '/images/csr/res4_csr_toolkit_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_5'),
             'description' => __('csr-campaign.resource_description_5'),
             'button_text' => __('csr-campaign.resource_button_5'),
             'button_link' => __('csr-campaign.resource_link_5'),
-            'image' => '/images/csr/post5_vertical.jpg',
+            'image' => '/images/csr/res5_employee_voluntering_vertical.jpg',
+            'image2' => '/images/csr/res5_employee_voluntering_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_6'),
             'description' => __('csr-campaign.resource_description_6'),
             'button_text' => __('csr-campaign.resource_button_6'),
             'button_link' => __('csr-campaign.resource_link_6'),
-            'image' => '/images/csr/post6_vertical.jpg',
+            'image' => '/images/csr/res6_mentorship_programme_vertical.jpg',
+            'image2' => '/images/csr/res6_mentorship_programme_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_7'),
             'description' => __('csr-campaign.resource_description_7'),
             'button_text' => __('csr-campaign.resource_button_7'),
             'button_link' => __('csr-campaign.resource_link_7'),
-            'image' => '/images/csr/post7_vertical.jpg',
+            'image' => '/images/csr/res7_empowering_industry_vertical.jpg',
+            'image2' => '/images/csr/res7_empowering_industry_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_8'),
             'description' => __('csr-campaign.resource_description_8'),
             'button_text' => __('csr-campaign.resource_button_8'),
             'button_link' => __('csr-campaign.resource_link_8'),
-            'image' => '/images/csr/post7_vertical.jpg',
+            'image' => '/images/csr/res8_csr_survey_vertical.jpg',
+            'image2' => '/images/csr/res8_csr_survey_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_9'),
             'description' => __('csr-campaign.resource_description_9'),
             'button_text' => __('csr-campaign.resource_button_9'),
             'button_link' => __('csr-campaign.resource_link_9'),
-            'image' => '/images/csr/post7_vertical.jpg',
+            'image' => '/images/csr/res9_faq_vertical.jpg',
+            'image2' => '/images/csr/res9_faq_horizontal.jpg',
         ],
         (object) [
             'title' => __('csr-campaign.resource_title_10'),
             'description' => __('csr-campaign.resource_description_10'),
             'button_text' => __('csr-campaign.resource_button_10'),
             'button_link' => __('csr-campaign.resource_link_10'),
-            'image' => '/images/csr/post7_vertical.jpg',
+            'image' => '/images/csr/res10_happening_now_vertical.jpg',
+            'image2' => '/images/csr/res10_happening_now_horizontal.jpg',
         ],
     ];
 
@@ -90,10 +100,6 @@
                 <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                            <img
-                                class="mb-4 max-w-full"
-                                src="/images/dream-jobs/dream_jobs_logo.svg"
-                            />
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
                                 @lang('csr-campaign.landing_header')
                             </p>
@@ -143,12 +149,6 @@
                         loading="lazy"
                         src="/images/csr/csr_hero1.jpg"
                     />
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        @include('layout.video-player', [
-                          'id' => 'careers-about',
-                          'src' => 'https://www.youtube.com/embed/pzP-kToeym4?si=FzutCQGW4rO5M_5A',
-                        ])
-                    </div>
                 </div>
             </div>
         </section>
@@ -184,10 +184,20 @@
                             </div>
 
                             <div class="order-0 sm:order-2">
-                                <img
-                                    class="w-full flex-1 rounded-lg object-cover object-center max-w-full h-full"
-                                    src="{{ $resource->image }}"
-                                />
+                                <div class="order-0 sm:order-2">
+                                    <!-- Mobile -->
+                                    <img
+                                        class="block sm:hidden w-full rounded-lg object-cover object-center max-w-full h-full"
+                                        src="{{ $resource->image2 }}"
+                                        alt="{{ $resource->title }}"
+                                    />
+                                    <!-- Desktop / Tablet -->
+                                    <img
+                                        class="hidden sm:block w-full rounded-lg object-cover object-center max-w-full h-full"
+                                        src="{{ $resource->image }}"
+                                        alt="{{ $resource->title }}"
+                                    />
+                                </div>
                             </div>
                         </div>
                     @endforeach

@@ -201,7 +201,7 @@ Route::get('/remote-teaching', [RemoteTeachingController::class, 'index'])->name
 Route::get('/dream-jobs-in-digital', [StaticPageController::class, 'static'])->name(
     'dream-jobs-in-digital'
 );
-Route::get('/csr-campaign', [StaticPageController::class, 'static'])->name(
+Route::get('/future-ready-csr', [StaticPageController::class, 'static'])->name(
     'csr-campaign'
 );
 
