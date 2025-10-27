@@ -16,4 +16,5 @@ return [
     'access_resources_title' => 'Toegang tot hulpmiddelen en training',
     'access_resources_text' => 'Als je niet weet hoe je een activiteit moet organiseren, bezoek dan onze <a href="/resources/teach">leermiddelenpagina</a> en blader door het <a href="/training">trainingsmateriaal met leerbits</a> voor begeleiding en op maat gesneden lesplannen.',
     'download_brochure_btn' => 'Download 2025 brochure',
+    'banner3_title' => 'Bedankt voor uw deelname aan Code Week 2025',
 ];
