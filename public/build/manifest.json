@@ -10,7 +10,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BF4djpwS.js",
+    "file": "assets/app-CGLaaHrT.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -219,7 +219,7 @@
     "isDynamicEntry": true
   },
   "resources/lang/php_tr.json": {
-    "file": "assets/php_tr-BvLF0W0w.js",
+    "file": "assets/php_tr-PcJiiPvL.js",
     "name": "php_tr",
     "src": "resources/lang/php_tr.json",
     "isDynamicEntry": true
