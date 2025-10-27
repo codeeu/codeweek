@@ -37,4 +37,5 @@ return [
     'banner2_title' => 'La famiglia CodeWeek',
     'banner2_description' => "Scopri la nostra vivace rete di ambasciatori, insegnanti, studenti e hub, ognuno dei quali contribuisce alla nostra passione condivisa per l'educazione digitale",
     'download_brochure_btn' => 'Scarica la brochure 2025',
+    'banner3_title' => 'Grazie per aver partecipato alla Code Week 2025',
 ];

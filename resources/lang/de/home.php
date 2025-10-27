@@ -43,6 +43,6 @@ return [
     'minecraft_description1' => '“Careers in Digital” ist Teil der EU Code Week und richtet sich an 15- bis 18-Jährige sowie Lehrkräfte, um spannende und vielfältige digitale Berufsfelder zu entdecken.',
     'minecraft_description2' => 'Lerne inspirierende Vorbilder kennen, die ihren Traumjob in der digitalen Welt gefunden haben – tauche ein in ihre motivierenden Videos und Karrierewege. Unser "Careers in Digital” Guide zeigt dir die Vielfalt digitaler Berufe und wie du zu ihnen gelangen kannst.',
 
-    'banner3_title' => '11.-26. Oktober',
+    'banner3_title' => 'Vielen Dank für Ihre Teilnahme an der Code Week 2025',
     'download_brochure_btn' => 'Broschüre 2025 herunterladen',
 ];
