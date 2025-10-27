@@ -37,4 +37,5 @@ return [
     'banner2_title' => 'Semana da família Code',
     'banner2_description' => 'Descubra a nossa vibrante rede de embaixadores, professores, estudantes e centros - cada um contribuindo para a nossa paixão partilhada pela educação digital.',
     'download_brochure_btn' => 'Baixar brochura 2025',
+    'banner3_title' => 'Obrigado(a) por participar na Code Week 2025',
 ];

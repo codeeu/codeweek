@@ -14,4 +14,5 @@ return [
     'access_resources_title' => 'Accéder à des ressources et des formations',
     'access_resources_text' => 'Si vous ne savez pas comment organiser une activité, consultez notre <a href="/resources/teach">page de ressources pédagogiques</a> et nos supports <a href="/training">d’apprentissage</a> pour obtenir des conseils et des plans de cours personnalisés.',
     'download_brochure_btn' => 'Télécharger la brochure 2025',
+    'banner3_title' => 'Merci d’avoir participé à la Semaine du code 2025',
 ];

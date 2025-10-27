@@ -36,7 +36,7 @@
                             <div
                                 class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                                 @if ($index === 0)
-                                    <div x-data="countdownTimer('2025-10-14T00:00:00')" x-init="startCountdown()"
+                                    {{-- <div x-data="countdownTimer('2025-10-14T00:00:00')" x-init="startCountdown()"
                                         class="flex gap-2.5 items-start max-md:gap-2 max-sm:gap-1.5 mt-4 mb-4" role="timer"
                                         aria-label="Countdown timer">
 
@@ -61,7 +61,7 @@
                                         <!-- Seconds -->
                                         <div class="px-2 py-1 text-3xl leading-9 text-white bg-black max-md:px-1.5 max-md:py-1 max-md:text-2xl max-md:leading-8 max-sm:px-1 max-sm:py-0.5 max-sm:text-xl max-sm:leading-7"
                                             aria-label="Seconds" x-text="seconds">00</div>
-                                    </div>
+                                    </div> --}}
                                 @endif
                                 <script>
                                     function countdownTimer(targetDate) {
@@ -97,7 +97,7 @@
                                 </script>
 
                                 <h2
-                                    class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
+                                    class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-w-[525px]">
                                     @lang($activity['title'])
                                 </h2>
                                 <p

@@ -37,4 +37,5 @@ return [
     'banner2_title' => 'Code Week kopiena',
     'banner2_description' => 'Atklāj aizrautīgo vēstnešu, skolotāju, skolēnu un organizāciju kopienu, kur ikviens tiecas uz kopīgo mērķi – veicināt digitālās izglītības attīstību.',
     'download_brochure_btn' => 'Lejupielādēt 2025 brošūru',
+    'banner3_title' => 'Paldies par dalību Code Week 2025',
 ];

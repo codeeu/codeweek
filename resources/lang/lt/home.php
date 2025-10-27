@@ -37,4 +37,5 @@ return [
     'banner2_title' => 'Mūsų programavimo savaitės šeima',
     'banner2_description' => 'Atraskite dinamišką mūsų atstovų, mokytojų, mokinių ir centrų tinklą – kiekvienas iš jų prisideda prie mūsų bendros skaitmeninio švietimo iniciatyvos.',
     'download_brochure_btn' => 'Atsisiųsti 2025 brošiūrą',
+    'banner3_title' => 'Ačiū, kad dalyvavote „Code Week 2025“',
 ];

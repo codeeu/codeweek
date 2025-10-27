@@ -35,4 +35,5 @@ return [
     'banner2_title' => 'Naše rodina Code Week',
     'banner2_description' => 'Objevte naši živou síť ambasadorů, učitelů, studentů a center – každý přispívá k naší společné vášni pro digitální vzdělávání.',
     'download_brochure_btn' => 'Stáhnout brožuru 2025',
+    'banner3_title' => 'Děkujeme za účast na Týdnu programování 2025',
 ];
