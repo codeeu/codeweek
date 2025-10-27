@@ -35,4 +35,5 @@ return [
     'banner2_title' => 'Code Week-perheemme',
     'banner2_description' => 'Tutustu elävään lähettiläiden, opettajien, opiskelijoiden ja keskusten verkostoomme – jokainen edistää yhteistä intohimoamme digitaalista koulutusta kohtaan.',
     'download_brochure_btn' => 'Lataa 2025 esite',
+    'banner3_title' => 'Kiitos osallistumisestasi Code Week 2025 -tapahtumaan',
 ];

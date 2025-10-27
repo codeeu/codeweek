@@ -37,4 +37,5 @@ return [
     'banner2_title' => 'Familia noastră Code Week',
     'banner2_description' => 'Descoperiți rețeaua noastră vibrantă de ambasadori, profesori, studenți și hub-uri - fiecare contribuind la pasiunea noastră comună pentru educația digitală',
     'download_brochure_btn' => 'Descarcă broșura 2025',
+    'banner3_title' => 'Vă mulțumim pentru participarea la Săptămâna Programării 2025',
 ];

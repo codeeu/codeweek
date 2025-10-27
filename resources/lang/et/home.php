@@ -14,4 +14,5 @@ return [
     'access_resources_title' => 'Kasutage materjale ja koolitust',
     'access_resources_text' => 'Kui te ei tea, kuidas tegevust korraldada, külastage meie <a href="/resources/teach">õppematerjalide lehte</a> ja <a href="/training">õppevahendite koolituse</a> materjale, et saada näpunäiteid ja kohandatud tunnikavasid.',
     'download_brochure_btn' => 'Laadi alla 2025 brošüür',
+    'banner3_title' => 'Aitäh osalemast Code Week 2025',
 ];
