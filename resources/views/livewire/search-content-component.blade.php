@@ -1,7 +1,7 @@
 <div class="w-full">
     <!-- Loading Indicator -->
-    <div wire:loading.block wire:loading.delay.longest class="text-center py-6 w-full" style="display:none;">
-        <svg class="animate-spin h-8 w-8 text-gray-500 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <div wire:loading.block wire:loading.delay.longest class="py-6 w-full text-center" style="display:none;">
+        <svg class="mx-auto w-8 h-8 text-gray-500 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
         </svg>
@@ -9,7 +9,7 @@
 
     <div wire:loading.remove>
         @if(count($results) > 0)
-        <p class="font-bold p-0">{{ $results->total() }} @lang('search.results')</p>
+        <p class="p-0 font-bold">{{ $results->total() }} @lang('search.results')</p>
 
         @foreach($results as $result)
             <div wire:key="result-{{ $loop->index }}" class="border-b border-[#D6D8DA] py-6 md:py-10 flex flex-col md:flex-row items-start gap-6 md:gap-16">
@@ -17,7 +17,7 @@
                     <img src="{{ $result->thumbnail }}" alt="{{ $result->name }}" class="w-full h-auto rounded-md" />
                 </a>
                 <div class="flex-grow">
-                    <p class="font-bold uppercase p-0 mb-3">
+                    <p class="p-0 mb-3 font-bold uppercase">
                         <span>{{ $result->category }}</span>
                         @if(isset($result->created_at))
                             <span class="ml-1.5">|</span>
@@ -29,7 +29,7 @@
                             {{ $result->name }}
                         </h3>
                     </a>
-                    <p class="p-0 text-lg md:text-xl leading-7 text-[#333E48]">{{ $result->description }}</p>
+                    <p class="p-0 text-lg md:text-xl leading-7 text-[#333E48]">{!! $result->description !!}</p>
                 </div>
             </div>
         @endforeach
