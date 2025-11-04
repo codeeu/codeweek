@@ -31,7 +31,7 @@ return [
     'resource_title_4' => "The CSR Toolkit - Your all-in-one playbook",
     'resource_description_4' => "Your CSR can spark innovation, open doors, and shape the future. How? With the CSR Toolkit - the core element of the CSR campaign. Discover a free, practical guide to help you turn ideas into impact. Find ideas that fit your goals - plan and launch CSR actions in coding, STEM, and digital literacy with ready-made checklists, templates, useful tools, and real-life examples. It’s your strategic resource to inspire, connect, and create lasting impact.",
     'resource_button_4' => "Explore more & take action",
-    'resource_link_4' => "/docs/csr/EU CW CSR TOOLKIT - YOUR PLAYBOOK TO INSPIRE SUPPORT FUTURE INNOVATORS.pdf",
+    'resource_link_4' => "/docs/csr/THE CSR TOOLKIT/",
 
     'resource_title_5' => "What is “Employee Volunteering” and why does it matter?",
     'resource_description_5' => "Empower your people to make a difference. By motivating them to volunteer time with a coding workshop, sharing expertise and inspiring students in a local school or participating as judges in an innovation challenge. Employee volunteering can turn purpose into action — helping bridge the digital skills gap, enhancing corporate reputation, while fostering engagement.",
@@ -61,5 +61,5 @@ return [
     'resource_title_10' => "Happening Now | Events",
     'resource_description_10' => "Find out more details about our current CSR event and join us. Whether you are an industry representative or belong to the educational community, you can’t miss it!",
     'resource_button_10' => "Learn more & Register",
-    'resource_link_10' => "https://codeweek.eu/blog/category/events/",
+    'resource_link_10' => "https://codeweek.eu/blog/csr-events/",
 ];
