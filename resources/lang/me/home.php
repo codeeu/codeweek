@@ -16,4 +16,5 @@ return [
     'access_resources_title' => 'Pristup materijalima i obuci',
     'access_resources_text' => 'Ako nijeste sigurni kako da organizujete aktivnost, posjetite našu <a href="/resources/teach">stranicu Nastavni materijali</a> i materijali <a href="/training">za obuku učenja</a>, da biste pronašli smjernice i prilagođene nastavne planove.',
     'download_brochure_btn' => 'Preuzmi brošuru 2025',
+    'banner3_title' => 'Hvala vam na učešću u Nedjelji kodiranja 2025',
 ];

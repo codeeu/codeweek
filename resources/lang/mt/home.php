@@ -16,4 +16,5 @@ return [
     'access_resources_title' => 'Aċċessa r-riżorsi u t-taħriġ',
     'access_resources_text' => 'Jekk m’intix ċert/a dwar kif torganizza attività, żur il-<a href="/resources/teach">paġna tar-riżorsi tat-tagħlim</a> u l-materjal <a href="/training">ta’ taħriġ ta’ sezzjonijiet ta’ tagħlim</a> tagħna għall-gwida u pjanijiet ta’ lezzjonijiet personalizzati.',
     'download_brochure_btn' => 'Niżżel il-brochure 2025',
+    'banner3_title' => 'Grazzi talli pparteċipajt fil-Code Week 2025',
 ];

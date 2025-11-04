@@ -90,7 +90,7 @@ return [
     'of-this-number-how-many-are' => 'Bu sayının kaçı:',
     'males' => 'Erkek',
     'females' => 'Kadın',
-    'other-gender' => 'Diğer',
+    'other-gender' => 'Öğrenci dışındaki katılımcı sayısı.',
     'age' => 'Katılımcı yaşı*',
     'under-5-early-learners' => '5 yaş altı – Erken öğrenenler',
     '6-9-primary' => '6–9 – İlkokul',

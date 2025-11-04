@@ -16,4 +16,5 @@ return [
     'access_resources_title' => 'Erőforrásokhoz és képzésekhez való hozzáférés',
     'access_resources_text' => 'Ha nem biztos abban, hogyan is szervezhet tevékenységet, látogasson el <a href="/resources/teach">oktatási segédanyagok</a> és <a href="/training">tudásmorzsák</a> oldalunkra, ahol útmutatást és személyre szabott óravázlatokat is talál.',
     'download_brochure_btn' => 'Töltse le a 2025-ös brosúrát',
+    'banner3_title' => 'Köszönjük, hogy részt vett a Code Week 2025 rendezvényen',
 ];

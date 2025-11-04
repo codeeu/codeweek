@@ -37,4 +37,5 @@ return [
     'banner2_title' => 'Jedna rodzina w Code Week',
     'banner2_description' => 'Poznaj naszą tętniącą życiem sieć ambasadorów, nauczycieli, uczniów i centrów — każdy współtworzy naszą wspólną pasję do edukacji cyfrowej.',
     'download_brochure_btn' => 'Pobierz broszurę 2025',
+    'banner3_title' => 'Dziękujemy za udział w Code Week 2025',
 ];
