@@ -19,4 +19,5 @@ return [
     'access_resources_title' => 'Aksesoni burime dhe trajnime',
     'access_resources_text' => 'Nëse nuk jeni i sigurt si të organizoni një aktivitet, vizitoni <a href="/resources/teach">faqen e burimeve të mësimdhënies</a> dhe materialet për <a href="/training">trajnimin për mësimet</a> për plane mësimore të përshtatura.',
     'download_brochure_btn' => 'Shkarko broshurën 2025',
+    'banner3_title' => 'Faleminderit për pjesëmarrjen në Javën e Kodimit 2025',
 ];

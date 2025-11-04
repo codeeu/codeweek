@@ -46,6 +46,6 @@ return [
     'banner2_title' => 'Our Code Week Family',
     'banner2_description' => 'Discover our vibrant network of ambassadors, teachers, students and hubs—each contributing to our shared passion for digital education.',
     
-    'banner3_title' => 'October 11-26',
+    'banner3_title' => 'Thank you for participating in Code Week 2025',
     'download_brochure_btn' => 'Download 2025 Brochure',
 ];

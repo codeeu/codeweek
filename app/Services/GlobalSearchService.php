@@ -110,8 +110,21 @@ class GlobalSearchService
                     'Activities' AS category, 
                     description, 
                     picture AS thumbnail, 
-                    event_url AS path, 
-                    'external' AS link_type, 
+                    CASE
+                        WHEN COALESCE(slug,'') <> '' 
+                            THEN CONCAT('/view/', id, '/', slug)
+                        WHEN COALESCE(event_url,'') <> '' 
+                            THEN CASE 
+                                    WHEN LEFT(event_url, 4) = 'http' THEN event_url 
+                                    ELSE CONCAT('http://', event_url) 
+                                END
+                        ELSE '/events'
+                    END AS path,
+                    CASE
+                        WHEN COALESCE(slug,'') <> '' THEN 'internal'
+                        WHEN COALESCE(event_url,'') <> '' THEN 'external'
+                        ELSE 'internal'
+                    END AS link_type,
                     'en' AS language, 
                     created_at,
                     '' AS unique_identifier, 
@@ -277,8 +290,21 @@ class GlobalSearchService
                             'Activities' AS category, 
                             description, 
                             picture AS thumbnail, 
-                            event_url AS path, 
-                            'external' AS link_type, 
+                            CASE
+                                WHEN COALESCE(slug,'') <> '' 
+                                    THEN CONCAT('/view/', id, '/', slug)
+                                WHEN COALESCE(event_url,'') <> '' 
+                                    THEN CASE 
+                                            WHEN LEFT(event_url, 4) = 'http' THEN event_url 
+                                            ELSE CONCAT('http://', event_url) 
+                                        END
+                                ELSE '/events'
+                            END AS path,
+                            CASE
+                                WHEN COALESCE(slug,'') <> '' THEN 'internal'
+                                WHEN COALESCE(event_url,'') <> '' THEN 'external'
+                                ELSE 'internal'
+                            END AS link_type,
                             'en' AS language, 
                             created_at,
                             '' AS unique_identifier, 

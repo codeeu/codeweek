@@ -37,4 +37,5 @@ return [
     'banner2_title' => 'Vår kodveckafamilj',
     'banner2_description' => 'Upptäck vårt livfulla nätverk av ambassadörer, lärare, studenter och hubbar – var och en bidrar till vår gemensamma passion för digital utbildning',
     'download_brochure_btn' => 'Ladda ner 2025 broschyren',
+    'banner3_title' => 'Tack för ditt deltagande i Code Week 2025',
 ];

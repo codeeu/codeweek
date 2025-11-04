@@ -24,7 +24,7 @@ class HomeController extends Controller
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
                 'url2' => '/blog/code-week-25-programme/',
-                'btn2_lang' => 'home.download_brochure_btn',
+                // 'btn2_lang' => 'home.download_brochure_btn',
             ],
             [
                 'title' => 'home.banner2_title',

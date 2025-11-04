@@ -46,6 +46,6 @@ return [
     'banner2_title' => 'Kod Haftası Ailemız',
     'banner2_description' => 'Elçiler, öğretmenler, öğrenciler ve merkezlerden oluşan canlı ağımızı keşfedin—her biri dijital eğitime olan ortak tutkumuzu paylaşıyor.',
     
-    'banner3_title' => '11-26 Ekim',
+    'banner3_title' => 'Code Week 2025’e katıldığınız için teşekkür ederiz',
     'download_brochure_btn' => '2025 Broşürünü İndir',
 ];
