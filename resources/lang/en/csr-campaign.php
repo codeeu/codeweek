@@ -19,27 +19,27 @@ return [
     'resource_link_1' => "/docs/csr/Why Get Involved_BENEFITS TO JOIN THE EU CW FUTUREREADYCSR MOVEMENT.pdf",
 
     'resource_title_2' => "“Your First Steps to Get Started”",
-    'resource_description_2' => "Whether you are a large company, a startup, an SME, or you just belong to another organization like a cluster, digital innovation hub/lab, chamber of commerce, industry association, professional body or an entrepreneurial network, you play a key role in tackling the STEM and digital skills gap. See how your participation can shape an inclusive and innovative digital Europe.",
+    'resource_description_2' => "Regardless of your organization’s type or size, you play a key role in closing the STEM and digital skills gap. Discover how we can shape together an inclusive, digital Europe",
     'resource_button_2' => "How to get involved",
     'resource_link_2' => "/docs/csr/First Steps to get started.pdf",
 
     'resource_title_3' => "Pledge & Badge Kit",
-    'resource_description_3' => "This activation pack is one of the two main resources of the CSR campaign. It provides everything you need to join the CSR movement, a collection of practical digital tools to help you pledge your support to EU Code Week, get involved, and share your impact with the world.",
+    'resource_description_3' => "This activation pack provides everything you need: Pledge your support to EU Code Week, be part of the #FutureReadyCSR movement, and share your impact with the world!",
     'resource_button_3' => "Get involved & share it",
     'resource_link_3' => "https://codeweek.eu/blog/wp-content/uploads/FutureReadyCSR-Campaign-Pledge-&-Badge-Kit.pdf",
 
     'resource_title_4' => "The CSR Toolkit - Your all-in-one playbook",
-    'resource_description_4' => "Your CSR can spark innovation, open doors, and shape the future. How? With the CSR Toolkit - the core element of the CSR campaign. Discover a free, practical guide to help you turn ideas into impact. Find ideas that fit your goals - plan and launch CSR actions in coding, STEM, and digital literacy with ready-made checklists, templates, useful tools, and real-life examples. It’s your strategic resource to inspire, connect, and create lasting impact.",
+    'resource_description_4' => "Your go-to-resource to spark innovation and empower young changemakers. Turn CSR ideas into impact with ready-to-use templates, tools, and real-world examples.",
     'resource_button_4' => "Explore more & take action",
     'resource_link_4' => "/docs/csr/THE CSR TOOLKIT/",
 
     'resource_title_5' => "What is “Employee Volunteering” and why does it matter?",
-    'resource_description_5' => "Empower your people to make a difference. By motivating them to volunteer time with a coding workshop, sharing expertise and inspiring students in a local school or participating as judges in an innovation challenge. Employee volunteering can turn purpose into action — helping bridge the digital skills gap, enhancing corporate reputation, while fostering engagement.",
+    'resource_description_5' => "Encourage your people to lead a coding workshop, mentor students, or judge an innovation challenge. Small actions create a big impact!",
     'resource_button_5' => "Discover more",
     'resource_link_5' => "/docs/csr/Employee Volunteering.pdf",
 
     'resource_title_6' => "What is a “Mentorship Programme” & why should you have it?",
-    'resource_description_6' => "A mentorship programme connects experienced professionals with young learners to guide, inspire, and support their personal and career growth. It helps bridge knowledge gaps, build confidence, and motivate students, especially girls, to pursue careers in ICT and STEM.",
+    'resource_description_6' => "Mentorship connects professionals with young learners — building confidence, bridging skills gaps, and encouraging them — especially girls — to follow ICT and STEM careers.",
     'resource_button_6' => "Get started",
     'resource_link_6' => "/docs/csr//Mentorship Programme.pdf",
 
@@ -49,8 +49,8 @@ return [
     'resource_link_7' => "/docs/csr/5 Key Steps for Successful School-Industry Collaboration.pdf",
 
     'resource_title_8' => "The CSR Survey",
-    'resource_description_8' => "We want to hear from you; your voice matters! Complete our short CSR survey and help us design better tools and resources to empower more companies like yours, to create a bigger impact on digital skills and STEM education.",
-    'resource_button_8' => "Have your say, today",
+    'resource_description_8' => "We want to hear from you; your voice matters! Complete our short CSR survey and help us design better tools and resources to empower more companies like yours.",
+    'resource_button_8' => "Have your say",
     'resource_link_8' => "https://forms.gle/QZChvDkk8AHGnFas8",
 
     'resource_title_9' => "FAQs",
