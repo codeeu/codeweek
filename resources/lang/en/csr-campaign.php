@@ -26,7 +26,7 @@ return [
     'resource_title_3' => "Pledge & Badge Kit",
     'resource_description_3' => "This activation pack is one of the two main resources of the CSR campaign. It provides everything you need to join the CSR movement, a collection of practical digital tools to help you pledge your support to EU Code Week, get involved, and share your impact with the world.",
     'resource_button_3' => "Get involved & share it",
-    'resource_link_3' => "#", // Missing now
+    'resource_link_3' => "https://codeweek.eu/blog/wp-content/uploads/FutureReadyCSR-Campaign-Pledge-&-Badge-Kit.pdf",
 
     'resource_title_4' => "The CSR Toolkit - Your all-in-one playbook",
     'resource_description_4' => "Your CSR can spark innovation, open doors, and shape the future. How? With the CSR Toolkit - the core element of the CSR campaign. Discover a free, practical guide to help you turn ideas into impact. Find ideas that fit your goals - plan and launch CSR actions in coding, STEM, and digital literacy with ready-made checklists, templates, useful tools, and real-life examples. It’s your strategic resource to inspire, connect, and create lasting impact.",
