@@ -51,7 +51,7 @@ return [
     'resource_title_8' => "The CSR Survey",
     'resource_description_8' => "We want to hear from you; your voice matters! Complete our short CSR survey and help us design better tools and resources to empower more companies like yours, to create a bigger impact on digital skills and STEM education.",
     'resource_button_8' => "Have your say, today",
-    'resource_link_8' => "#", // Missing now
+    'resource_link_8' => "https://forms.gle/QZChvDkk8AHGnFas8",
 
     'resource_title_9' => "FAQs",
     'resource_description_9' => "Got questions? We’ve got you covered. Learn more about how the CSR campaign works, and how your organization can join and make an impact.",
