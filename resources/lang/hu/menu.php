@@ -52,4 +52,5 @@ return [
     'see_more' => 'Továbbiak',
     'my_account' => 'Fiókom',
     'guide_on_activities' => 'Útmutató a tevékenységekhez',
+    'future_ready_csr' => 'Jövőre kész CSR',
 ];

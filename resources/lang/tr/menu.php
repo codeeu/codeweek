@@ -73,4 +73,5 @@ return [
     'see_more' => 'Daha fazlasını gör',
     'my_account' => 'Hesabım',
     'guide_on_activities' => 'Etkinlik Rehberi',
+    'future_ready_csr' => 'Geleceğe Hazır CSR',
 ];
