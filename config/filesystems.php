@@ -7,7 +7,7 @@ return [
     'disks' => [
         'latex' => [
             'driver' => 'local',
-            'root' => resource_path('latex'),
+            'root'   => resource_path('latex'),
         ],
 
         'meet-and-code' => [
