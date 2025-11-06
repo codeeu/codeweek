@@ -52,4 +52,5 @@ return [
     'see_more' => 'Bekijk meer',
     'my_account' => 'Mijn account',
     'guide_on_activities' => 'Gids voor activiteiten',
+    'future_ready_csr' => 'Toekomstbestendige CSR',
 ];

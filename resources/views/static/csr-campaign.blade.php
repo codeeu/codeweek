@@ -103,15 +103,15 @@
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
                                 @lang('csr-campaign.landing_header')
                             </p>
-                            <div class="flex gap-5">
+                            <div class="flex flex-col md:flex-row gap-3 md:gap-5 items-center">
                                 <a
-                                    class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
+                                    class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
                                     href="https://codeweek.eu/blog/futurereadycsr-campaign-launch"
                                 >
                                     <span>@lang('csr-campaign.get_involved')</span>
                                 </a>
                                 <a
-                                    class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
+                                    class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
                                     href="https://codeweek.eu/blog/futurereadycsr-resources"
                                 >
                                     <span>@lang('csr-campaign.explore_resources')</span>
