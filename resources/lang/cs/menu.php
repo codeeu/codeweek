@@ -71,4 +71,5 @@ return [
     'see_more' => 'Zobrazit více',
     'my_account' => 'Můj účet',
     'guide_on_activities' => 'Průvodce aktivitami',
+    'future_ready_csr' => 'CSR připravené na budoucnost',
 ];

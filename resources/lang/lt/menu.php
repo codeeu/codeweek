@@ -70,4 +70,5 @@ return [
     'see_more' => 'Rodyti daugiau',
     'my_account' => 'Mano paskyra',
     'guide_on_activities' => 'Veiklų vadovas',
+    'future_ready_csr' => 'Ateičiai pasirengusi CSR',
 ];

@@ -70,4 +70,5 @@ return [
     'see_more' => 'Skatīt vairāk',
     'my_account' => 'Mans konts',
     'guide_on_activities' => 'Rokasgrāmata par aktivitātēm',
+    'future_ready_csr' => 'Nākotnei gatavs CSR',
 ];

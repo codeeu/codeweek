@@ -71,4 +71,5 @@ return [
     'see_more' => 'Vezi mai mult',
     'my_account' => 'Contul meu',
     'guide_on_activities' => 'Ghid pentru activități',
+    'future_ready_csr' => 'CSR pregătit pentru viitor',
 ];

@@ -71,4 +71,5 @@ return [
     'see_more' => 'Näytä lisää',
     'my_account' => 'Oma tili',
     'guide_on_activities' => 'Opas toimintoihin',
+    'future_ready_csr' => 'Tulevaisuusvalmis CSR',
 ];
