@@ -53,4 +53,5 @@ return [
     'see_more' => 'Види повеќе',
     'my_account' => 'Мојот профил',
     'guide_on_activities' => 'Водич за активности',
+    'future_ready_csr' => 'CSR подготвен за иднината'
 ];

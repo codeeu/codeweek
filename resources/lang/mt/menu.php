@@ -52,4 +52,5 @@ return [
     'see_more' => 'Ara aktar',
     'my_account' => 'Il-kont tiegħi',
     'guide_on_activities' => 'Gwida għall-attivitajiet',
+    'future_ready_csr' => 'CSR lest għall-futur'
 ];

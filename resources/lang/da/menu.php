@@ -71,4 +71,5 @@ return [
     'see_more' => 'Se mere',
     'my_account' => 'Min konto',
     'guide_on_activities' => 'Vejledning om aktiviteter',
+    'future_ready_csr' => 'Fremtidsklar CSR'
 ];

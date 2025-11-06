@@ -73,4 +73,5 @@ return [
     'see_more' => 'See more',
     'my_account' => 'My account',
     'guide_on_activities' => 'Guide on Activities',
+    'future_ready_csr' => 'Future Ready CSR',
 ];

@@ -70,4 +70,5 @@ return [
     'see_more' => 'Se mer',
     'my_account' => 'Mitt konto',
     'guide_on_activities' => 'Vägledning om aktiviteter',
+    'future_ready_csr' => 'Framtidsredo CSR'
 ];
