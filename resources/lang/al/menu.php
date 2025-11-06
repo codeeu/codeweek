@@ -54,4 +54,5 @@ return [
     'see_more' => 'Shiko më shumë',
     'my_account' => 'Llogaria ime',
     'guide_on_activities' => 'Udhëzues për aktivitetet',
+    'future_ready_csr' => 'CSR gati për të ardhmen',
 ];

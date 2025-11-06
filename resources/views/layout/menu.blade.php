@@ -116,6 +116,7 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="/matchmaking-tool">@lang('menu.matchmaking_toolkit')</a></div>
+                              <div><a class="cookweek-link hover-underline !px-0" href="/future-ready-csr">@lang('menu.future_ready_csr')</a></div>
                             </div>
                             <div class="flex flex-col flex-grow gap-4 max-xl:w-full">
                               <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>

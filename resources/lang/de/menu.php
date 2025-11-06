@@ -71,4 +71,5 @@ return [
     'see_more' => 'Mehr anzeigen',
     'my_account' => 'Mein Konto',
     'guide_on_activities' => 'Leitfaden zu Aktivitäten',
+    'future_ready_csr' => 'Zukunftsbereite CSR'
 ];
