@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+
+% Encoding & languages
+\usepackage[LGR,T2A,T1]{fontenc} % LGR for Greek, T2A for Cyrillic, T1 for Latin
+\usepackage[utf8]{inputenc}
+\usepackage[greek,russian,english]{babel} % English is the main language (last)
+
+% Page & layout
+\usepackage[landscape,a4paper]{geometry}
+\geometry{verbose,tmargin=0cm,bmargin=0cm,lmargin=3cm,rmargin=3cm}
+\usepackage{fancybox}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{eso-pic}
+\usepackage{textcomp}
+\usepackage{tgheros} % TeX Gyre Heros (Helvetica-like)
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{myorange}{RGB}{226, 83, 48}
+\definecolor{Slate600}{HTML}{20262C}
+\definecolor{GrayLine}{HTML}{858B91}
+
+% Be a bit more permissive with line-breaking to avoid overfull boxes
+\setlength{\emergencystretch}{2em}
+
+% Background image
+\newcommand\BackgroundPic{%
+  \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering
+      \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/participation-certificate-2025.png}%
+      \vfill
+}}}
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+
+~
+\vspace{3.5cm}
+~
+
+\begin{center}
+    \vspace{1cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont This certificate recognizes that} \\
+    \vspace{0.5cm}
+
+    % Certificate Holder Name (auto-wrap; language wrapping, if needed, should be applied in PHP before injection)
+    \noindent\parbox{0.9\textwidth}{\centering
+      \textcolor{myorange}{\fontsize{28}{32}\selectfont α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω}
+    }\\
+
+    \vspace{0.5cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Has developed essential computational thinking skills} \\
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont and contributed to the success of} \\
+
+    \vspace{0.8cm}
+    \textcolor{myorange}{\fontsize{36}{42}\selectfont EU CodeWeek 2025} \\
+
+    \vspace{0.8cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont by actively participating in the coding event} \\
+    \vspace{0.5cm}
+
+    % Event Name (auto-wrap; no forced Greek — inject Greek wrapper from PHP only when text is Greek)
+    \noindent\parbox{0.9\textwidth}{\centering
+      \textcolor{myorange}{\fontsize{28}{32}\selectfont α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω}
+    }\\
+
+    \vspace{0.5cm}
+    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Which took place on} \\
+    \vspace{0.5cm}
+
+    % Event Date (auto-wrap if long; typically short)
+    \noindent\parbox{0.9\textwidth}{\centering
+      \textcolor{Slate600}{\fontsize{24}{28}\selectfont 2025-11-20 13:36}
+    }\\
+
+    % Horizontal divider
+    \vspace{0.3cm}
+    \centering
+    \textcolor{GrayLine}{\rule{183pt}{2pt}}
+
+\end{center}
+
+\end{document}

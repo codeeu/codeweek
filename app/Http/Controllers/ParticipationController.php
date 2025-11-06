@@ -30,7 +30,7 @@ class ParticipationController extends Controller
     {
 
         $rules = [
-            'event_name' => 'required|max:50',
+            'event_name' => 'required|max:90',
             'event_date' => 'required|max:20',
             'names' => 'required|regex:/^[^ə]*$/u',
         ];
