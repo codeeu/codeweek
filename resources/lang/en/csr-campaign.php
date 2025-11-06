@@ -18,7 +18,7 @@ return [
     'resource_button_1' => "Why get involved",
     'resource_link_1' => "/docs/csr/Why Get Involved_BENEFITS TO JOIN THE EU CW FUTUREREADYCSR MOVEMENT.pdf",
 
-    'resource_title_2' => "“Your First Steps to Get Started”",
+    'resource_title_2' => "Your First Steps to Get Started",
     'resource_description_2' => "No matter your organization’s size or focus, you play a key role in closing the STEM and digital skills gap. Discover what you can do for an inclusive, digital Europe.",
     'resource_button_2' => "How to get involved",
     'resource_link_2' => "/docs/csr/First Steps to get started.pdf",
