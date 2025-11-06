@@ -1,7 +1,7 @@
 <?php
 return [
     // Top of the page
-    'landing_header' => "The #FutureReadyCSR Movement seeks to inspire, encourage, and empower global players, SMEs and startups to organizations like clusters, digital innovation hubs, industry associations, professional bodies, or chambers of commerce to turn Corporate Social Responsibility into real-world action, by supporting digital skills education where it matters most.",
+    'landing_header' => "<strong>#FutureReadyCSR Movement</strong> seeks to inspire, encourage, and empower global players, SMEs, and startups, to organizations like clusters, digital innovation hubs, industry associations, professional bodies, or chambers of commerce, to turn <strong>Corporate Social Responsibility</strong> into real-world action, by supporting <strong>digital skills education</strong>.",
     'get_involved' => "Get involved",
     'explore_resources' => "Explore the resources",
 
@@ -14,17 +14,17 @@ return [
 
     // Resource cards
     'resource_title_1' => "Explore the Benefits of the CSR Campaign",
-    'resource_description_1' => "There are countless reasons to get involved in this campaign. Discover why your participation matters, because the future is calling, and now is the perfect time to build it together.",
+    'resource_description_1' => "There are countless reasons to get involved. Discover why your participation matters because the future is calling, and now is the perfect time to build it together.",
     'resource_button_1' => "Why get involved",
     'resource_link_1' => "/docs/csr/Why Get Involved_BENEFITS TO JOIN THE EU CW FUTUREREADYCSR MOVEMENT.pdf",
 
     'resource_title_2' => "“Your First Steps to Get Started”",
-    'resource_description_2' => "Regardless of your organization’s type or size, you play a key role in closing the STEM and digital skills gap. Discover how we can shape together an inclusive, digital Europe",
+    'resource_description_2' => "No matter your organization’s size or focus, you play a key role in closing the STEM and digital skills gap. Discover what you can do for an inclusive, digital Europe.",
     'resource_button_2' => "How to get involved",
     'resource_link_2' => "/docs/csr/First Steps to get started.pdf",
 
     'resource_title_3' => "Pledge & Badge Kit",
-    'resource_description_3' => "This activation pack provides everything you need: Pledge your support to EU Code Week, be part of the #FutureReadyCSR movement, and share your impact with the world!",
+    'resource_description_3' => "This activation pack provides everything you need. Pledge your support to EU Code Week, be part of the CSR movement, and share your impact with the world.",
     'resource_button_3' => "Get involved & share it",
     'resource_link_3' => "https://codeweek.eu/blog/wp-content/uploads/FutureReadyCSR-Campaign-Pledge-&-Badge-Kit.pdf",
 
@@ -39,7 +39,7 @@ return [
     'resource_link_5' => "/docs/csr/Employee Volunteering.pdf",
 
     'resource_title_6' => "What is a “Mentorship Programme” & why should you have it?",
-    'resource_description_6' => "Mentorship connects professionals with young learners — building confidence, bridging skills gaps, and encouraging them — especially girls — to follow ICT and STEM careers.",
+    'resource_description_6' => "Mentorship empowers young learners to grow. Professionals can guide them to build confidence, gain skills, and explore ICT and STEM careers.",
     'resource_button_6' => "Get started",
     'resource_link_6' => "/docs/csr//Mentorship Programme.pdf",
 
