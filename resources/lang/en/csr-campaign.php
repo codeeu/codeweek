@@ -7,7 +7,7 @@ return [
 
     // About section
     'about_title' => "About the <strong>#FutureReadyCSR</strong> Campaign",
-    'about_description' => "EU Code Week invites industry to support youth all-year round, bridge the skills gap, and empower the next generation with the tools, confidence, and opportunities to thrive in a technology-driven world. It’s more than an effort to support young minds through CSR — it’s a <strong>movement to empower educators, unite industries and schools</strong>, and <strong>open doors for diverse voices</strong> in the digital future.<br /><br />Together, we can help <strong>businesses lead the way with purpose and impact</strong>, turn <strong>classrooms into launchpads for creativity</strong>, and <strong>give communities new opportunities to grow.</strong>",
+    'about_description' => "EU Code Week invites <strong>industry</strong> to support youth all-year round, bridge the skills gap, and <strong>empower the next generation</strong> with the tools, confidence, and opportunities to thrive in a technology-driven world. It’s more than an effort to support young minds through CSR — it’s a <strong>powerful movement</strong> that <strong>unites industries with schools</strong>, and <strong>opens doors for diverse voices</strong> in the digital future.<br /><br />Together, we can <strong>help businesses lead the way</strong> with purpose and impact, turn <strong>classrooms into launchpads for creativity</strong>, and <strong>give communities new opportunities</strong> to grow.",
 
     // Resource section title
     'resources' => "CSR Resources",
