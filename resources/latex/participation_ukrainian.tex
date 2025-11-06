@@ -1,74 +1,85 @@
 \documentclass[12pt]{article}
-\usepackage[T2A,T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[ukrainian,english]{babel}
 
+% --- Encodings & languages (pdfTeX) ---
+\usepackage[LGR,T2A,T1]{fontenc}         % Greek(LGR), Cyrillic(T2A), Latin(T1)
+\usepackage[utf8]{inputenc}              % UTF-8 input
+\usepackage[greek,ukrainian,english,russian]{babel}
+
+% Try a pdfTeX-safe sans with Cyrillic; fallback to CM/LH
+\makeatletter
+\IfFileExists{paratype.sty}{%
+  \usepackage{paratype}% PT Serif/Sans (Cyrillic support)
+  \renewcommand{\familydefault}{\sfdefault}% PT Sans as default
+}{%
+  \IfFileExists{cm-super.sty}{\usepackage{cm-super}}{}%
+  \renewcommand{\familydefault}{\sfdefault}% CM Sans fallback
+}
+\makeatother
+
+% Normalize curly punctuation / NBSP that can sneak in
+\DeclareUnicodeCharacter{2019}{'}
+\DeclareUnicodeCharacter{2018}{'}
+\DeclareUnicodeCharacter{201C}{"}
+\DeclareUnicodeCharacter{201D}{"}
+\DeclareUnicodeCharacter{2013}{-}
+\DeclareUnicodeCharacter{2014}{--}
+\DeclareUnicodeCharacter{00A0}{\ } % NBSP
+
+% --- Page & layout ---
 \usepackage[landscape,a4paper]{geometry}
 \geometry{verbose,tmargin=0cm,bmargin=0cm,lmargin=3cm,rmargin=3cm}
 
-\usepackage{fancybox}
-\usepackage{calc}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{url}
-\usepackage{eso-pic}
-\usepackage{textcomp}
+% --- Visuals ---
+\usepackage{graphicx,eso-pic,xcolor,fancybox,calc,multicol,url,textcomp}
 
-\usepackage{PTSans}
-\renewcommand{\familydefault}{\sfdefault}
-
-\usepackage{xcolor}
+% Colors
 \definecolor{myorange}{RGB}{226, 83, 48}
 \definecolor{Slate600}{HTML}{20262C}
 \definecolor{GrayLine}{HTML}{858B91}
 
+% Background image
 \newcommand\BackgroundPic{%
   \put(0,0){%
     \parbox[b][\paperheight]{\paperwidth}{%
-      \vfill
-      \centering
+      \vfill\centering
       \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{images/participation-certificate-2025.png}%
       \vfill
 }}}
 
 \begin{document}
 \AddToShipoutPicture{\BackgroundPic}
-\vspace*{3.5cm}
+
+~\vspace{3.2cm}~.2
 
 \begin{center}
-    \vspace{1cm}
-    \textcolor{Slate600}{\fontsize{13}{13}\selectfont This certificate recognizes that} \\
-    \vspace{0.5cm}
+  {\color{Slate600}\fontsize{13}{13}\selectfont This certificate recognizes that}\par
+  \vspace{1cm} % exact space *under* the sentence
 
-    \begin{otherlanguage*}{ukrainian}
-        \textcolor{myorange}{\fontsize{28}{32}\selectfont Прізвище Ім’я}
-    \end{otherlanguage*} \\
+  % --- Certificate Holder Name (language injected) ---
+  \begin{otherlanguage*}{<CERTIFICATE_HOLDER_NAME_LANG>}
+    {\color{myorange}\fontsize{22}{24}\selectfont <CERTIFICATE_HOLDER_NAME>}
+  \end{otherlanguage*}\\[0.5cm]
 
-    \vspace{0.5cm}
-    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Has developed essential computational thinking skills} \\
-    \textcolor{Slate600}{\fontsize{13}{13}\selectfont and contributed to the success of} \\
+  {\color{Slate600}\fontsize{13}{13}\selectfont Has developed essential computational thinking skills}\\
+  {\color{Slate600}\fontsize{13}{13}\selectfont and contributed to the success of}\\[0.8cm]
 
-    \vspace{0.8cm}
-    \textcolor{myorange}{\fontsize{36}{42}\selectfont EU CodeWeek 2025} \\
+  {\color{myorange}\fontsize{36}{42}\selectfont EU CodeWeek 2025}\\[0.8cm]
 
-    \vspace{0.8cm}
-    \textcolor{Slate600}{\fontsize{13}{13}\selectfont by actively participating in the coding event} \\
-    \vspace{0.5cm}
+  {\color{Slate600}\fontsize{13}{13}\selectfont by actively participating in the coding event}\\[0.5cm]
 
-    \begin{otherlanguage*}{ukrainian}
-        \textcolor{myorange}{\fontsize{28}{32}\selectfont Назва події}
-    \end{otherlanguage*} \\
+  % --- Event Name (language injected) ---
+  \begin{otherlanguage*}{<EVENT_NAME_LANG>}
+    {\color{myorange}\fontsize{28}{32}\selectfont <EVENT_NAME>}
+  \end{otherlanguage*}\\[0.5cm]
 
-    \vspace{0.5cm}
-    \textcolor{Slate600}{\fontsize{13}{13}\selectfont Which took place on} \\
-    \vspace{0.5cm}
+  {\color{Slate600}\fontsize{13}{13}\selectfont Which took place on}\\[0.5cm]
 
-    \begin{otherlanguage*}{ukrainian}
-        \textcolor{Slate600}{\fontsize{24}{28}\selectfont 14 жовтня 2025 р.}
-    \end{otherlanguage*} \\
+  % --- Event Date (language injected) ---
+  \begin{otherlanguage*}{<EVENT_DATE_LANG>}
+    {\color{Slate600}\fontsize{24}{28}\selectfont <EVENT_DATE>}
+  \end{otherlanguage*}\\[0.3cm]
 
-    \vspace{0.3cm}
-    \textcolor{GrayLine}{\rule{183pt}{2pt}}
+  {\color{GrayLine}\rule{183pt}{2pt}}
 \end{center}
 
 \end{document}
