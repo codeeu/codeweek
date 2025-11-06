@@ -71,4 +71,5 @@ return [
     'see_more' => 'Δείτε περισσότερα',
     'my_account' => 'Ο λογαριασμός μου',
     'guide_on_activities' => 'Οδηγός για δραστηριότητες',
+    'future_ready_csr' => 'CSR έτοιμο για το μέλλον',
 ];

@@ -53,4 +53,5 @@ return [
     'see_more' => 'Vaata rohkem',
     'my_account' => 'Minu konto',
     'guide_on_activities' => 'Juhend tegevuste kohta',
+    'future_ready_csr' => 'Tulevikuks valmis CSR'
 ];

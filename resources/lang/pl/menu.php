@@ -70,4 +70,5 @@ return [
     'see_more' => 'Zobacz więcej',
     'my_account' => 'Moje konto',
     'guide_on_activities' => 'Przewodnik po działaniach',
+    'future_ready_csr' => 'CSR gotowy na przyszłość'
 ];
