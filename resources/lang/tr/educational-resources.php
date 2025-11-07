@@ -6,5 +6,6 @@ return [
     'share_your_resources_title' => "Ücretsiz ve açık eğitim kaynaklarınız var mı?",
     'share_your_resources_text' => "Bunları AB Kod Haftası topluluğuyla paylaşın! Aşağıdaki formu kullanarak ücretsiz kaynaklarınızı gönderin, biz de başkalarının öğrenmesine, yaratmasına ve büyümesine yardımcı olmak için bunları bu sayfada öne çıkaralım.",
     'share_your_feedback_button' => "Geri bildiriminizi paylaşın",
-    'share_your_feedback_text' => "Bize ne düşündüğünüzü söyleyin! Mevcut kaynaklarla ilgili geri bildiriminizi paylaşın - iyileştirme önerileriniz, iltifatlarınız veya yeni fikirleriniz olsun, sizden haber almak isteriz!",  
+    'share_your_feedback_text' => "Bize ne düşündüğünüzü söyleyin! Mevcut kaynaklarla ilgili geri bildiriminizi paylaşın - iyileştirme önerileriniz, iltifatlarınız veya yeni fikirleriniz olsun, sizden haber almak isteriz!",
+    'educational_resources_cta_btn' => 'Çeşitlilik ve kapsayıcılık konusundaki yönergeler',
 ];

@@ -6,5 +6,6 @@ return [
     'share_your_resources_title' => "Tem recursos educativos gratuitos e abertos?",
     'share_your_resources_text' => "Partilhe-os com a comunidade da Semana Europeia da Programação! Envie seus recursos gratuitos usando o formulário abaixo, e nós os apresentaremos nesta página para ajudar outras pessoas a aprender, criar e crescer.",
     'share_your_feedback_button' => "Partilhe os seus comentários",
-    'share_your_feedback_text' => "Diga-nos o que achou! Partilhe os seus comentários sobre os recursos existentes – quer tenha sugestões de melhoria, elogios ou novas ideias, gostaríamos muito de ouvir a sua opinião!",  
+    'share_your_feedback_text' => "Diga-nos o que achou! Partilhe os seus comentários sobre os recursos existentes – quer tenha sugestões de melhoria, elogios ou novas ideias, gostaríamos muito de ouvir a sua opinião!",
+    'educational_resources_cta_btn' => 'Diretrizes sobre diversidade e inclusão',
 ];
