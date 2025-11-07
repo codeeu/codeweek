@@ -19,9 +19,17 @@
                             <h2 class="text-dark-blue text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[830px]">
                                 @lang('footer.educational_resources')
                             </h2>
-                            <p class="text-xl font-normal md:text-2xl leading-8 text-slate-500 p-0 mb-0 max-md:max-w-full max-w-[725px]">
+                            <p class="text-xl font-normal md:text-2xl leading-8 text-slate-500 p-0 mb-3 max-md:max-w-full max-w-[725px]">
                                 @lang('educational-resources.educational_resources_text')
                             </p>
+                            <div class="flex flex-col md:flex-row gap-3 md:gap-5 items-center">
+                                <a
+                                    class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
+                                    href="/docs/EU Code Week - Guidelines on Diversity and Inclusion.pdf"
+                                >
+                                    <span>@lang('educational-resources.educational_resources_cta_btn')</span>
+                                </a>
+                            </div>
                         </div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
