@@ -120,6 +120,18 @@ class UpdateResourceDescriptions extends Command
             'not_found' => array_filter($results, fn($r) => $r['status'] === 'NOT FOUND'),
         ]);
 
+        $this->newLine();
+        $duplicates = $data
+            ->groupBy(fn($row) => trim((string)($row['Name of the resource'] ?? $row[0] ?? '')))
+            ->map(fn($group) => $group->count())
+            ->filter(fn($count) => $count > 1);
+
+        if ($duplicates->isNotEmpty()) {
+            $this->newLine(2);
+            $this->warn('Duplicate resource titles detected:');
+            $this->table(['Resource Name', 'Count'], $duplicates->map(fn($count, $name) => [$name, $count])->values());
+        }
+
         if ($dryRun) {
             $this->warn('Dry run only — no data was modified.');
         }
