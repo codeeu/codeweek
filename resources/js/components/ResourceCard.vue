@@ -40,7 +40,12 @@
           class="relative flex-grow text-slate-500 overflow-hidden"
           style="height: auto"
         >
-          {{ resource.description }}
+        <div
+          ref="descriptionRef"
+          class="relative flex-grow text-slate-500 overflow-hidden"
+          style="height: auto"
+          v-html="formattedDescription"
+        ></div>
 
           <div
             v-if="needShowMore"
@@ -125,5 +130,10 @@ export default {
   mounted: function () {
     this.computeDescriptionHeight();
   },
+  computed: {
+    formattedDescription() {
+      return (this.resource.description || '').replace(/\n/g, '<br />');
+    },
+  }
 };
 </script>
