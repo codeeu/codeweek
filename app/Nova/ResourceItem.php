@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 
 class ResourceItem extends Resource
 {
@@ -64,7 +65,7 @@ class ResourceItem extends Resource
             BelongsToMany::make('ResourceProgrammingLanguage', 'programmingLanguages'),
             BelongsToMany::make('ResourceLanguage', 'languages'),
             Text::make('name')->sortable(),
-            Text::make('Description')->sortable()->hideFromIndex(),
+            Textarea::make('Description')->hideFromIndex(),
             Text::make('Source')->sortable()->hideFromIndex(),
             Number::make('weight')->sortable(),
             Code::make('Groups', 'groups')->json(),
