@@ -46,7 +46,8 @@ class UpdateResourceDescriptions extends Command
             return self::FAILURE;
         }
 
-        $data = collect($rows[0]);
+        // Skip Row 1 is header
+        $data = collect($rows[0])->skip(1);
         $results = [];
         $updated = 0;
 
