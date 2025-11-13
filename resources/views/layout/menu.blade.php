@@ -124,6 +124,11 @@
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">@lang('menu.hackathons')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
                               <div><a class="cookweek-link hover-underline !px-0" href="{{route('treasure-hunt')}}">@lang('menu.treasure-hunt')</a></div>
+                              <div><a href="https://www.codeweekcoders.eu/"
+                            target="_blank"
+                            rel="noopener">
+                                Minecraft Education
+                            </a></div>
                           </div>
                           <div class="hidden relative flex-col flex-grow gap-4 mb-2 w-60 xl:flex">
                               <img class="object-cover w-full h-full rounded-lg" src="/images/homepage/dream-job.png" alt="">
