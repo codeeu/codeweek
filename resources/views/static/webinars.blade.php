@@ -7,13 +7,58 @@
     ];
 
     $results = [
+         [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'EU Code Week Lightning Talk - NerdKunst: A Gentle and Interactive Introduction to Generative Art',
+            'description' => "Dive into the creative world of generative art! Through live demos, explore how open-source tools can help anyone create computer-generated artworks while learning coding and maths in a fun way.",
+            'date' => '22 Oct 2025',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/K15vo_RRPL0?si=NYD2cld8ajFn6gZG',
+            'link_type' => 'video'
+        ],
+         [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'EU Code Week Lightning Talk - AI to Z: Doing more with less',
+            'description' => "Join a live journey to build and publish a complete website in just 40 minutes - no technical skills needed! Discover how AI is transforming education, productivity, and collaboration, and leave with practical insights on embedding AI into learning.",
+            'date' => '21 Oct 2025',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/czCjTm3ChVg?si=02PxWG-zVf4z72vF',
+            'link_type' => 'video'
+        ],
+         [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'EU Code Week Lightning Talk - From Myth to Code: A History Project in PBL',
+            'description' => "Turn history into a quest! Learn how students become world-builders and archeologists in a digital environment, using Tinkercad and Delightex to bring Etruscan culture to life through puzzles, coding, and 3D models.",
+            'date' => '17 Oct 2025',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/YysVQDuADME?si=wMxUOYhr_IIg4iPz',
+            'link_type' => 'video'
+        ],
+         [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'EU Code Week Lightning Talk - Early Computational Thinking: Inclusive STEM Learning for Young Minds',
+            'description' => "Explore how computational thinking can be introduced meaningfully in early education, starting as young as 5 years old. Through role play and unplugged activities, young learners can develop core problem-solving skills and logical reasoning even before they begin formal coding. You will discover practical resources, classroom-ready examples, and inspiring case studies from schools already implementing this approach.",
+            'date' => '14 Oct 2025',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/cx6qm5mxmF8?si=gevJU9waKaHjI3Cn',
+            'link_type' => 'video'
+        ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'AI Needs More Than Coders',
-            'description' => "AI isn't just about building tools, it's about choosing the right questions, spotting what others miss, and turning data into decisions that matter.",
-            'date' => '16 June 2025, Monday - 16.00 - 17.00 CET',
+            'title' => 'Open Roberta – Programming Robots Without Robots',
+            'description' => "Learn how to bring robots to life without using any physical equipment in this on-demand webinar introducing Open Roberta, a free and accessible block-based simulation environment for learning programming and robotics. Guided by Dr. Samuel Branco, the session offers a practical and inspiring introduction to coding concepts, virtual robots, and problem-solving skills.",
+            'date' => '13 Oct 2025',
             'label' => 'Past Webinar',
-            'link' => 'https://youtu.be/TKkB0z5k9tc',
+            'link' => 'https://youtu.be/kA2whiNjmvc?si=aE3IP0nXzIu8bNuZ',
+            'link_type' => 'video'
+        ],
+          [
+            'image' => '/images/webinars/march_04_2025.png',
+            'title' => 'Beyond Code: Empowering Generations of Innovators',
+            'description' => "This EU Code Week webinar, “Beyond Code: Empowering Generations of Innovators,” explores how diversity and inclusion drive innovation in STEM, offering practical examples and strategies to foster collaboration in tech. Tania Gómez shares her experience in digital transformation and promoting equity in the ICT industry.",
+            'date' => '04 march 2025',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/cMdu9_BSz4k?si=usS23nEmuyYrvfeE',
             'link_type' => 'video'
         ],
         [
@@ -153,10 +198,10 @@
 
 @section('content')
     <section id="webinars-page" class="font-['Blinker'] overflow-hidden">
-        <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-orange-gradient pt-32 pb-0 md:py-20">
-                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                    <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+        <section class="flex overflow-hidden relative">
+            <div class="flex relative pt-32 pb-0 w-full transition-all bg-orange-gradient md:py-20">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
+                    <div class="flex flex-col gap-28 duration-1000 codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 Webinars
@@ -164,17 +209,17 @@
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
                                 @lang('webinars.webinars-text')
                             </p>
-                            <span class="text-dark-blue font-semibold text-lg ">
-                                <a href="/" class="cursor-pointer text-dark-blue underline mr-1">
+                            <span class="text-lg font-semibold text-dark-blue">
+                                <a href="/" class="mr-1 underline cursor-pointer text-dark-blue">
                                     Optional secondary CTA introduction to webinars
                                 </a>
                                 ›
                             </span>
 
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
-{{--                            <button class="bg-yellow hover:bg-primary rounded-full w-20 h-20 duration-300 flex justify-center items-center">--}}
-{{--                                <img class="duration-300 ml-2" src="/images/fi_play.svg" />--}}
+                        <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
+{{--                            <button class="flex justify-center items-center w-20 h-20 rounded-full duration-300 bg-yellow hover:bg-primary">--}}
+{{--                                <img class="ml-2 duration-300" src="/images/fi_play.svg" />--}}
 {{--                            </button>--}}
                         </div>
                         <img
@@ -195,7 +240,7 @@
         </section>
 
         <section class="relative z-10">
-            <div class="relative py-10 md:py-20 codeweek-container-lg flex justify-center">
+            <div class="flex relative justify-center py-10 md:py-20 codeweek-container-lg">
                 <div class="w-full max-w-[880px] gap-2 z-10">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                         Webinars
@@ -206,8 +251,8 @@
                     </p>
                     <p class="text-[#333E48] font-normal text-lg md:text-xl p-0">
                         @lang('webinars.recordings-youtube-list-title')<br />
-                        @lang('webinars.2024-webinar-series-title') <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf">https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf</a> <br />
-                       @lang('webinars.2025-webinar-series-title') <a class="text-dark-blue underline" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky">https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky</a>
+                        @lang('webinars.2024-webinar-series-title') <a class="underline text-dark-blue" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf">https://www.youtube.com/playlist?list=PLnqp3yQre_1gaiLYx-_QIB6NMYLOhrAcf</a> <br />
+                       @lang('webinars.2025-webinar-series-title') <a class="underline text-dark-blue" target="_blank" href="https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky">https://www.youtube.com/playlist?list=PLnqp3yQre_1iU1qMK7vMSzC_jfMkqxXky</a>
                     </p>
                 </div>
             </div>
@@ -221,15 +266,15 @@
             ></div>
         </section>
 
-        <section class="relative overflow-hidden">
+        <section class="overflow-hidden relative">
             <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(370% 90% at 38% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(158% 90% at 50% 90%);"></div>
-            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
-                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
+            <div class="hidden absolute w-full h-full bg-yellow-50 md:block lg:hidden" style="clip-path: ellipse(488% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 lg:block xl:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 xl:block" style="clip-path: ellipse(158% 90% at 50% 90%);"></div>
+            <div class="relative pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
+                <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10">
                     @foreach($results as $result)
-                        <div class="flex flex-col rounded-lg bg-white overflow-hidden">
+                        <div class="flex overflow-hidden flex-col bg-white rounded-lg">
                             <div class="relative">
                                 <a href="{{ $result['link'] }}" class="w-full">
                                     <img src="{{ $result['image'] }}" class="w-full" />
@@ -238,7 +283,7 @@
                                     {{ $result['label'] }}
                                 </div>
                             </div>
-                            <div class="flex-grow px-6 py-8 flex flex-col justify-between">
+                            <div class="flex flex-col flex-grow justify-between px-6 py-8">
                                 <div>
                                     <a  href="{{ $result['link'] }}" class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat']">
                                         {{ $result['title'] }}
@@ -255,9 +300,9 @@
                                     href="{{ $result['link'] }}"
                                 >
                                     <span>{{ $result['link_type'] == 'form' ? 'Register' : 'Watch' }}</span>
-                                    <div class="flex gap-2 w-4 overflow-hidden">
-                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
-                                        <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                    <div class="flex overflow-hidden gap-2 w-4">
+                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                     </div>
                                 </a>
                             </div>
