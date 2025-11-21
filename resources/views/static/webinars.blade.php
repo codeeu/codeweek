@@ -17,7 +17,7 @@
             'link_type' => 'video'
         ],
          [
-            'image' => '/images/webinars/blue_visual.jpg',
+            'image' => '/images/webinars/blue_visual_2025.jpg',
             'title' => 'EU Code Week Lightning Talk - AI to Z: Doing more with less',
             'description' => "Join a live journey to build and publish a complete website in just 40 minutes - no technical skills needed! Discover how AI is transforming education, productivity, and collaboration, and leave with practical insights on embedding AI into learning.",
             'date' => '21 Oct 2025',
@@ -26,7 +26,7 @@
             'link_type' => 'video'
         ],
          [
-            'image' => '/images/webinars/blue_visual.jpg',
+            'image' => '/images/webinars/blue_visual_2025.jpg',
             'title' => 'EU Code Week Lightning Talk - From Myth to Code: A History Project in PBL',
             'description' => "Turn history into a quest! Learn how students become world-builders and archeologists in a digital environment, using Tinkercad and Delightex to bring Etruscan culture to life through puzzles, coding, and 3D models.",
             'date' => '17 Oct 2025',
@@ -35,7 +35,7 @@
             'link_type' => 'video'
         ],
          [
-            'image' => '/images/webinars/blue_visual.jpg',
+            'image' => '/images/webinars/blue_visual_2025.jpg',
             'title' => 'EU Code Week Lightning Talk - Early Computational Thinking: Inclusive STEM Learning for Young Minds',
             'description' => "Explore how computational thinking can be introduced meaningfully in early education, starting as young as 5 years old. Through role play and unplugged activities, young learners can develop core problem-solving skills and logical reasoning even before they begin formal coding. You will discover practical resources, classroom-ready examples, and inspiring case studies from schools already implementing this approach.",
             'date' => '14 Oct 2025',
@@ -44,7 +44,7 @@
             'link_type' => 'video'
         ],
         [
-            'image' => '/images/webinars/blue_visual.jpg',
+            'image' => '/images/webinars/blue_visual_2025.jpg',
             'title' => 'Open Roberta – Programming Robots Without Robots',
             'description' => "Learn how to bring robots to life without using any physical equipment in this on-demand webinar introducing Open Roberta, a free and accessible block-based simulation environment for learning programming and robotics. Guided by Dr. Samuel Branco, the session offers a practical and inspiring introduction to coding concepts, virtual robots, and problem-solving skills.",
             'date' => '13 Oct 2025',
@@ -53,10 +53,10 @@
             'link_type' => 'video'
         ],
           [
-            'image' => '/images/webinars/march_04_2025.png',
+            'image' => '/images/webinars/blue_visual.jpg',
             'title' => 'Beyond Code: Empowering Generations of Innovators',
             'description' => "This EU Code Week webinar, “Beyond Code: Empowering Generations of Innovators,” explores how diversity and inclusion drive innovation in STEM, offering practical examples and strategies to foster collaboration in tech. Tania Gómez shares her experience in digital transformation and promoting equity in the ICT industry.",
-            'date' => '04 march 2025',
+            'date' => '04 March 2025',
             'label' => 'Past Webinar',
             'link' => 'https://youtu.be/cMdu9_BSz4k?si=usS23nEmuyYrvfeE',
             'link_type' => 'video'
