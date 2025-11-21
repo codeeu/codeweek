@@ -8,7 +8,7 @@
 
     $results = [
          [
-            'image' => '/images/webinars/blue_visual.jpg',
+            'image' => '/images/webinars/blue_visual_2025.jpg',
             'title' => 'EU Code Week Lightning Talk - NerdKunst: A Gentle and Interactive Introduction to Generative Art',
             'description' => "Dive into the creative world of generative art! Through live demos, explore how open-source tools can help anyone create computer-generated artworks while learning coding and maths in a fun way.",
             'date' => '22 October 2025',
