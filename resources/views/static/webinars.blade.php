@@ -52,15 +52,6 @@
             'link' => 'https://youtu.be/kA2whiNjmvc?si=aE3IP0nXzIu8bNuZ',
             'link_type' => 'video'
         ],
-          [
-            'image' => '/images/webinars/blue_visual.jpg',
-            'title' => 'Beyond Code: Empowering Generations of Innovators',
-            'description' => "This EU Code Week webinar, “Beyond Code: Empowering Generations of Innovators,” explores how diversity and inclusion drive innovation in STEM, offering practical examples and strategies to foster collaboration in tech. Tania Gómez shares her experience in digital transformation and promoting equity in the ICT industry.",
-            'date' => '04 March 2025',
-            'label' => 'Past Webinar',
-            'link' => 'https://youtu.be/cMdu9_BSz4k?si=usS23nEmuyYrvfeE',
-            'link_type' => 'video'
-        ],
         [
             'image' => '/images/webinars/collaboration.png',
             'title' => 'From Idea to Impact: How to turn Dreams into ICT Success Stories',
@@ -96,6 +87,15 @@
             'label' => 'Past Webinar',
             'link' => 'https://events.teams.microsoft.com/event/964e1126-8038-43bd-8cae-fa000e261e62@8d8b2be4-0c2e-4b10-8d42-9ef10987a89f',
             'link_type' => 'form'
+        ],
+        [
+            'image' => '/images/webinars/blue_visual.jpg',
+            'title' => 'Beyond Code: Empowering Generations of Innovators',
+            'description' => "This EU Code Week webinar, “Beyond Code: Empowering Generations of Innovators,” explores how diversity and inclusion drive innovation in STEM, offering practical examples and strategies to foster collaboration in tech. Tania Gómez shares her experience in digital transformation and promoting equity in the ICT industry.",
+            'date' => '04 March 2025',
+            'label' => 'Past Webinar',
+            'link' => 'https://youtu.be/cMdu9_BSz4k?si=usS23nEmuyYrvfeE',
+            'link_type' => 'video'
         ],
         [
             'image' => '/images/webinars/blue_visual.jpg',
