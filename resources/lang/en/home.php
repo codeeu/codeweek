@@ -41,6 +41,8 @@ return [
     
     'get_involved' => 'Get involved',
     'meet_our_community' => 'Meet our community',
+    'learn_more'  => 'Learn more',
+
     'banner1_title' => 'Careers in Digital',
     'banner1_description' => 'Get inspired by dream jobs in digital and explore role models, career guides, open day toolkits and more!',
     'banner2_title' => 'Our Code Week Family',
@@ -48,4 +50,10 @@ return [
     
     'banner3_title' => 'Thank you for participating in Code Week 2025',
     'download_brochure_btn' => 'Download 2025 Brochure',
+
+    'banner4_title' => 'Code Week Digital Educator',
+    'banner4_description' => 'Powered by Vodafone Foundation, the 2025 Code Week Digital Educator Awards celebrate inspiring teachers and educator teams across Europe in two tracks: high-quality digital teaching content and outstanding participation during the Code Week celebration window. The evaluation phase is currently ongoing, and the winners will be announced soon.',
+
+    'banner5_title' => 'Future Ready CSR',
+    'banner5_description' => 'FutureReadyCSR Movement seeks to inspire, encourage, and empower global players, SMEs, and startups, to organizations like clusters, digital innovation hubs, industry associations, professional bodies, or chambers of commerce, to turn Corporate Social Responsibility into real-world action, by supporting digital skills education.',
 ];
