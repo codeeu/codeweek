@@ -18,6 +18,24 @@ class HomeController extends Controller
                 'btn_lang' => 'home.get_involved',
             ],     */
             [
+                'title' => 'home.banner5_title',
+                'description' => 'home.banner5_description',
+                'url' => '/future-ready-csr',
+                'style_color' => 'background: linear-gradient(36.92deg, rgb(51, 194, 233) 20.32%, rgb(0, 179, 227) 28.24%);',
+                'btn_lang' => 'home.learn_more',
+                'url2' => null,
+                'btn2_lang' => null
+            ],
+             [
+                'title' => 'home.banner4_title',
+                'description' => 'home.banner4_description',
+                'url' => 'https://codeweek.eu/blog/digital-educator-awards-2025/',
+                'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
+                'btn_lang' => 'home.learn_more',
+                'url2' => 'https://codeweek.eu/blog/digital-educator-awards-2025/ ',
+                // 'btn2_lang' => 'home.download_brochure_btn',
+            ],
+            [
                 'title' => 'home.banner3_title',
                 'description' => __('home.when_text'),
                 'url' => '/guide',
