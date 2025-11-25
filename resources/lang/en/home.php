@@ -51,7 +51,7 @@ return [
     'banner3_title' => 'Thank you for participating in Code Week 2025',
     'download_brochure_btn' => 'Download 2025 Brochure',
 
-    'banner4_title' => 'Code Week Digital Educator',
+    'banner4_title' => 'Code Week Digital Educator Awards',
     'banner4_description' => 'Powered by Vodafone Foundation, the 2025 Code Week Digital Educator Awards celebrate inspiring teachers and educator teams across Europe in two tracks: high-quality digital teaching content and outstanding participation during the Code Week celebration window. The evaluation phase is currently ongoing, and the winners will be announced soon.',
 
     'banner5_title' => 'Future Ready CSR',
