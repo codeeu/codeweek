@@ -13,11 +13,11 @@
 
 @section('non-vue-content')
     <section id="codeweek-homepage" class="codeweek-page font-['Blinker']">
-        <section class="relative flex overflow-hidden">
-            <div id="slider-wrapper" class="relative flex w-full transition-all bg-secondary-gradient">
+        <section class="flex overflow-hidden relative">
+            <div id="slider-wrapper" class="flex relative w-full transition-all bg-secondary-gradient">
                 @foreach ($activities as $index => $activity)
                     <div
-                        class="absolute top-0 left-0 flex flex-col justify-end flex-shrink-0 w-full h-full pb-10 overflow-hidden md:px-16 md:p-0 md:flex-row md:items-center">
+                        class="flex overflow-hidden absolute top-0 left-0 flex-col flex-shrink-0 justify-end pb-10 w-full h-full md:px-16 md:p-0 md:flex-row md:items-center">
                         <div class="relative h-full flex-grow-1">
                             <button id="slider-prev-small-btn"
                                 class="absolute z-10 top-1/2 -translate-y-1/2 -left-2 hover:left-0 bg-white hover:bg-[#F95C22] p-4 pl-6 rounded-r-full duration-300 block md:hidden"
@@ -37,7 +37,7 @@
                                 class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                                 @if ($index === 0)
                                     {{-- <div x-data="countdownTimer('2025-10-14T00:00:00')" x-init="startCountdown()"
-                                        class="flex gap-2.5 items-start max-md:gap-2 max-sm:gap-1.5 mt-4 mb-4" role="timer"
+                                        class="flex gap-2.5 items-start mt-4 mb-4 max-md:gap-2 max-sm:gap-1.5" role="timer"
                                         aria-label="Countdown timer">
 
                                         <!-- Days -->
@@ -104,7 +104,7 @@
                                     class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
                                     {{ strip_tags(__(''.$activity['description'])) }}
                                 </p>
-                                <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+                                <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                         href="{{ $activity['url'] }}">
                                         @lang($activity['btn_lang'])
@@ -114,7 +114,7 @@
                                     <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                                         target="_blank" href="{{ $activity['url2'] }}">
                                         <span>@lang($activity['btn2_lang'])</span>
-                                        <div class="flex w-4 gap-2 overflow-hidden">
+                                        <div class="flex overflow-hidden gap-2 w-4">
                                             <img src="/images/arrow-right-icon.svg"
                                                 class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                             <img src="/images/arrow-right-icon.svg"
@@ -132,6 +132,8 @@
                             
                             @php
                                 $backgroundImages = [
+                                    asset('/images/csr/csr_about1.jpg'),
+                                    asset('/images/dream-jobs/dream_jobs_bg.png'),
                                     asset('images/homepage/slide1.png'),
                                     asset('images/search/search_bg_lg_2.jpeg'),
                                 ];
@@ -167,12 +169,12 @@
 
         <section class="relative animation-section bg-yellow-2">
             <div class="absolute w-full h-full bg-white md:hidden" style="clip-path: ellipse(100% 58% at 38% 39%)"></div>
-            <div class="absolute hidden w-full h-full bg-white md:block" style="clip-path: ellipse(70% 60% at 50% 40%);">
+            <div class="hidden absolute w-full h-full bg-white md:block" style="clip-path: ellipse(70% 60% at 50% 40%);">
             </div>
             <div
-                class="relative z-10 flex flex-col-reverse items-center gap-12 py-16 pb-32 codeweek-container-lg md:flex-row md:pb-48">
+                class="flex relative z-10 flex-col-reverse gap-12 items-center py-16 pb-32 codeweek-container-lg md:flex-row md:pb-48">
                 <div class="flex-1">
-                    <div class="relative inline-block observer-element">
+                    <div class="inline-block relative observer-element">
                         <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/homepage/toolkits.png" />
                         <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
                             loading="lazy" src="/images/shape.png" style="transform: translate(-16px, -24px)" />
@@ -189,7 +191,7 @@
                         <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                             href="/guide">
                             <span>@lang('home.toolkits_button1')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
+                            <div class="flex overflow-hidden gap-2 w-4">
                                 <img src="/images/arrow-right-icon.svg"
                                     class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 <img src="/images/arrow-right-icon.svg"
@@ -199,7 +201,7 @@
                         <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                             href="/toolkits">
                             <span>@lang('home.toolkits_button2')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
+                            <div class="flex overflow-hidden gap-2 w-4">
                                 <img src="/images/arrow-right-icon.svg"
                                     class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 <img src="/images/arrow-right-icon.svg"
@@ -225,7 +227,7 @@
                     <a class="inline-flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#FFEF99] group"
                         href="{{route('dream-jobs-in-digital')}}">
                         <span>@lang('home.get_involved')</span>
-                        <div class="flex w-4 gap-2 overflow-hidden">
+                        <div class="flex overflow-hidden gap-2 w-4">
                             <img src="/images/arrow-right-icon.svg"
                                 class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                             <img src="/images/arrow-right-icon.svg"
@@ -240,10 +242,10 @@
             </div>
         </section>
 
-        <section class="relative overflow-hidden animation-section">
-            <div class="relative z-10 flex flex-col-reverse items-center gap-12 py-16 codeweek-container-lg md:flex-row">
+        <section class="overflow-hidden relative animation-section">
+            <div class="flex relative z-10 flex-col-reverse gap-12 items-center py-16 codeweek-container-lg md:flex-row">
                 <div class="flex-1">
-                    <div class="relative inline-block observer-element">
+                    <div class="inline-block relative observer-element">
                         <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/homepage/activity.png" />
                         <img class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
                             loading="lazy" src="/images/shape.png" style="transform: translate(-16px, -24px)" />
@@ -260,7 +262,7 @@
                         <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                             href="/add?skip=1">
                             <span>@lang('home.activity_button1')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
+                            <div class="flex overflow-hidden gap-2 w-4">
                                 <img src="/images/arrow-right-icon.svg"
                                     class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 <img src="/images/arrow-right-icon.svg"
@@ -270,7 +272,7 @@
                         <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                             href="/events">
                             <span>@lang('home.activity_button2')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
+                            <div class="flex overflow-hidden gap-2 w-4">
                                 <img src="/images/arrow-right-icon.svg"
                                     class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 <img src="/images/arrow-right-icon.svg"
@@ -286,13 +288,13 @@
                 style="transform: translate(-16px, -24px)"></div>
         </section>
 
-        <section class="relative overflow-hidden">
+        <section class="overflow-hidden relative">
             <div class="absolute w-full h-full bg-blue-gradient md:hidden"
                 style="clip-path: ellipse(170% 90% at 38% 90%);"></div>
-            <div class="absolute hidden w-full h-full bg-blue-gradient md:block"
+            <div class="hidden absolute w-full h-full bg-blue-gradient md:block"
                 style="clip-path: ellipse(88% 90% at 50% 90%);"></div>
             <div
-                class="relative z-10 flex flex-col items-center gap-12 pb-16 codeweek-container-lg md:flex-row pt-28 md:pt-48">
+                class="flex relative z-10 flex-col gap-12 items-center pt-28 pb-16 codeweek-container-lg md:flex-row md:pt-48">
                 <div class="flex-1">
                     <h2 class="text-white text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
                         @lang('home.resouce_title')
@@ -304,7 +306,7 @@
                         <a class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#061b45] hover:text-white group"
                             href="/resources/CodingAtHome">
                             <span>@lang('home.resouce_button1')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
+                            <div class="flex overflow-hidden gap-2 w-4">
                                 <img src="/images/arrow-right-icon.svg"
                                     class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 <img src="/images/arrow-right-icon.svg"
@@ -314,7 +316,7 @@
                         <a class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#061b45] hover:text-white group"
                             href="/training">
                             <span>@lang('home.resouce_button2')</span>
-                            <div class="flex w-4 gap-2 overflow-hidden">
+                            <div class="flex overflow-hidden gap-2 w-4">
                                 <img src="/images/arrow-right-icon.svg"
                                     class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 <img src="/images/arrow-right-icon.svg"
@@ -323,7 +325,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="relative flex justify-center flex-1 observer-element">
+                <div class="flex relative flex-1 justify-center observer-element">
                     <img class="z-10 w-full duration-700 animation-element fade-scale-bottom" loading="lazy"
                         src="/images/homepage/resource-training.png" />
                     <img class="animation-element fade-scale-bottom duration-700 absolute z-0 -bottom-10 sm:-bottom-16 -right-16 sm:-right-60 w-[184px] sm:w-[324px]"
