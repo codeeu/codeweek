@@ -10,6 +10,6 @@
 
     <livewire:map-wire></livewire:map-wire>
 
-    {{--    <div class="w-full" id="mapid" style="height: 600px;"></div>--}}
+    {{--    <div class="w-full" id="" style="height: 600px;"></div>--}}
 
 @endsection
