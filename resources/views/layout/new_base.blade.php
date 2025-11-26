@@ -196,12 +196,6 @@
 
     @yield('extra-js')
 
-    {{-- Hot fix --}}
-    <script type="text/javascript">
-      if (window.Livewire && window.Livewire.all().length == 0) {
-        window.Livewire.start();
-      }
-    </script>
 
     <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/{{ env('COOKIESCRIPT_ID') }}.js"></script>
 </body>
