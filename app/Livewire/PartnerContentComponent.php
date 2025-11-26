@@ -559,6 +559,11 @@ class PartnerContentComponent extends Component
                 'logo_url' => 'images/partners/tech-shecan.png',
                 'categories' => ['Sponsor'],
             ],
+             (object)[
+                'id' => 56,
+                'logo_url' => 'images/partners/NTI.png',
+                'categories' => ['Sponsor'],
+            ],
         ]);
     }
 
