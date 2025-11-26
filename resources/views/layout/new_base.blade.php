@@ -196,6 +196,7 @@
 
     @yield('extra-js')
 
+
     <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/{{ env('COOKIESCRIPT_ID') }}.js"></script>
 </body>
 </html>
