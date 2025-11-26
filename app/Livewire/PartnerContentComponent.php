@@ -534,6 +534,41 @@ class PartnerContentComponent extends Component
                 'logo_url' => 'images/partners/kod_centrum.png',
                 'categories' => ['Sponsor'],
             ],
+             (object)[
+                'id' => 51,
+                'logo_url' => 'images/partners/All4youth_logo.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 52,
+                'logo_url' => 'images/partners/coding_pirates.png',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 53,
+                'logo_url' => 'images/partners/hp.jpg',
+                'categories' => ['Sponsor'],
+            ],
+            (object)[
+                'id' => 54,
+                'logo_url' => 'images/partners/KC.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 55,
+                'logo_url' => 'images/partners/Micro-bit.jpg',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 56,
+                'logo_url' => 'images/partners/nvidia.png',
+                'categories' => ['Sponsor'],
+            ],
+             (object)[
+                'id' => 57,
+                'logo_url' => 'images/partners/tech-shecan.png',
+                'categories' => ['Sponsor'],
+            ],
         ]);
     }
 
