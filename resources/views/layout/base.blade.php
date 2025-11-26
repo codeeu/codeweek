@@ -131,11 +131,5 @@
 
 @yield('extra-js')
 
-    {{-- Hot fix --}}
-    <script type="text/javascript">
-      if (window.Livewire && window.Livewire.all().length == 0) {
-        window.Livewire.start();
-      }
-    </script>
 </body>
 </html>
