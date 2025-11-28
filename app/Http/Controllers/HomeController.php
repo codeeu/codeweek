@@ -36,6 +36,15 @@ class HomeController extends Controller
                 // 'btn2_lang' => 'home.download_brochure_btn',
             ],
             [
+                'title' => 'home.banner6_title',
+                'description' => 'home.banner6_description',
+                'url' => 'https://airtable.com/appW5W6DJ6CI6SVdH/pagLDrU2NQja9F2vu/form',
+                'style_color' => 'background: linear-gradient(36.92deg, rgb(51, 194, 233) 20.32%, rgb(0, 179, 227) 28.24%);',
+                'btn_lang' => 'home.register_here', 
+                'url2' => null,
+                'btn2_lang' => null
+            ],
+            [
                 'title' => 'home.banner3_title',
                 'description' => __('home.when_text'),
                 'url' => '/guide',
