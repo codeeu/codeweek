@@ -134,6 +134,7 @@
                                 $backgroundImages = [
                                     asset('/images/csr/csr_about1.jpg'),
                                     asset('/images/dream-jobs/dream_jobs_bg.png'),
+                                    asset('/images/digital-girls/banner_bg.png'),
                                     asset('images/homepage/slide1.png'),
                                     asset('images/search/search_bg_lg_2.jpeg'),
                                 ];

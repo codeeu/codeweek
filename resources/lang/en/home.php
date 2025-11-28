@@ -42,6 +42,7 @@ return [
     'get_involved' => 'Get involved',
     'meet_our_community' => 'Meet our community',
     'learn_more'  => 'Learn more',
+    'register_here'  => 'Register here!',
 
     'banner1_title' => 'Careers in Digital',
     'banner1_description' => 'Get inspired by dream jobs in digital and explore role models, career guides, open day toolkits and more!',
@@ -56,4 +57,7 @@ return [
 
     'banner5_title' => 'Future Ready CSR',
     'banner5_description' => 'FutureReadyCSR Movement seeks to inspire, encourage, and empower global players, SMEs, and startups, to organizations like clusters, digital innovation hubs, industry associations, professional bodies, or chambers of commerce, to turn Corporate Social Responsibility into real-world action, by supporting digital skills education.',
+
+    'banner6_title' => 'Cisco EMEA networking Academy Cup',
+    'banner6_description' => 'Join the learn-a-thon to build your networking and cybersecurity skills and earn the chance to access exclusive content created with Real Madrid on the network technologies powering the Santiago Bernabéu Stadium. Register by the 31st of December!',
 ];
