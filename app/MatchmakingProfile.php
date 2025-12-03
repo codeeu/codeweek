@@ -112,6 +112,7 @@ class MatchmakingProfile extends Model
             'Non-Governmental Organisation (NGO)',
             'Preschool',
             'Public Sector Organisation / Government Agency',
+            'Industry/SMEs'
         ];
     }
 
