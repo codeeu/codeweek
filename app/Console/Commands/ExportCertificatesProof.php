@@ -15,7 +15,8 @@ class ExportCertificatesProof extends Command
         {--path= : Output path under storage/app (default: exports/certificates_manifest_[range].csv)}
         {--family=both : Which family to export: participations|excellence|both}
         {--inclusive=0 : If 1, do not require URL and do not force status=DONE}
-        {--date-field=created_at : Date field to use (created_at|event_date|issued_at if present)}';
+        {--date-field=created_at : Date field to use (created_at|event_date|issued_at if present)}
+        {--double-count-so=0 : If 1, append SuperOrganiser rows again (overcount to match external totals)}';
 
     protected $description = 'Export a CSV manifest of issued certificates (links + metadata) for the requested interval';
 
@@ -24,13 +25,13 @@ class ExportCertificatesProof extends Command
         // ---- Window normalize
         $start = $this->option('start') ?: now()->subYear()->startOfDay()->toDateTimeString();
         $end   = $this->option('end')   ?: now()->endOfDay()->toDateTimeString();
-
         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $start)) $start .= ' 00:00:00';
         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $end))   $end   .= ' 23:59:59';
 
-        $family    = strtolower($this->option('family') ?: 'both'); // participations|excellence|both
-        $inclusive = (int)($this->option('inclusive') ?: 0) === 1;
-        $datePref  = strtolower($this->option('date-field') ?: 'created_at'); // created_at|event_date|issued_at
+        $family         = strtolower($this->option('family') ?: 'both'); // participations|excellence|both
+        $inclusive      = (int)($this->option('inclusive') ?: 0) === 1;
+        $datePref       = strtolower($this->option('date-field') ?: 'created_at'); // created_at|event_date|issued_at
+        $doubleCountSO  = (int)($this->option('double-count-so') ?: 0) === 1;
 
         $defaultPath = 'exports/certificates_manifest_'
             . str_replace([':', ' '], ['_', '_'], $start)
@@ -38,28 +39,36 @@ class ExportCertificatesProof extends Command
             . str_replace([':', ' '], ['_', '_'], $end)
             . ($inclusive ? '_inclusive' : '')
             . ($family !== 'both' ? "_{$family}" : '')
+            . ($doubleCountSO ? '_dupSO' : '')
             . '.csv';
 
         $path = $this->option('path') ?: $defaultPath;
 
-        // ---- Build rows (SuperOrganiser appended last)
+        // Build rows (SO appended at end; optional duplication)
         $rows = collect();
 
         if ($family === 'participations' || $family === 'both') {
             $rows = $rows->merge($this->exportParticipations($start, $end, $inclusive, $datePref));
         }
 
-        $soRows = collect(); // will be appended at end
+        $exRows = collect();
+        $soRows = collect();
+
         if ($family === 'excellence' || $family === 'both') {
             [$exRows, $soRows] = $this->exportExcellenceSplit($start, $end, $inclusive, $datePref);
             $rows = $rows->merge($exRows);
         }
 
+        // Append SuperOrganiser rows at the end (as its own family)
         if ($soRows->isNotEmpty()) {
             $rows = $rows->merge($soRows);
+            if ($doubleCountSO) {
+                // Append again to intentionally overcount (to match external tallies)
+                $rows = $rows->merge($soRows);
+            }
         }
 
-        // ---- Write CSV
+        // Write CSV
         $stream = fopen('php://temp', 'w+');
         fputcsv($stream, [
             'family', 'record_id', 'issued_at', 'event_date',
@@ -95,16 +104,6 @@ class ExportCertificatesProof extends Command
         $this->printMonthlyParticipations($start, $end, $inclusive, $datePref);
         $this->printMonthlyExcellenceSplit($start, $end, $inclusive, $datePref);
 
-        // Totals by family (for quick reconciliation)
-        $this->line('Totals:');
-        $totPart = $rows->where('family','participations')->count();
-        $totEx   = $rows->where('family','excellence')->count();
-        $totSO   = $rows->where('family','superorganiser')->count();
-        $this->line("  participations: $totPart");
-        $this->line("  excellence:     $totEx");
-        $this->line("  superorganiser: $totSO");
-        $this->line("  ALL:            ".($totPart+$totEx+$totSO));
-
         return self::SUCCESS;
     }
 
@@ -123,9 +122,6 @@ class ExportCertificatesProof extends Command
         return null;
     }
 
-    /**
-     * Resolve the excellence table name on this server (case/variant safe).
-     */
     protected function excellenceTable(): ?string
     {
         if (Schema::hasTable('excellences')) return 'excellences';
@@ -133,8 +129,7 @@ class ExportCertificatesProof extends Command
         return null;
     }
 
-    // ---------- Participations ----------
-
+    /* ---------- Participation exporter (email always filled) ---------- */
     protected function exportParticipations(string $start, string $end, bool $inclusive, string $datePref)
     {
         $table    = 'participations';
@@ -151,7 +146,9 @@ class ExportCertificatesProof extends Command
             if (Schema::hasColumn($table, 'status')) {
                 $q->where("$alias.status", 'DONE');
             }
-            $q->whereNotNull("$alias.participation_url");
+            if (Schema::hasColumn($table, 'participation_url')) {
+                $q->whereNotNull("$alias.participation_url");
+            }
         }
 
         // Optional join to events if present
@@ -163,6 +160,7 @@ class ExportCertificatesProof extends Command
             $q->leftJoin('events as e', 'e.id', '=', "$alias.activity_id");
         }
 
+        // Always provide owner_email (from users)
         $select = [
             "$alias.id as record_id",
             DB::raw("$dateExpr as issued_at"),
@@ -197,10 +195,11 @@ class ExportCertificatesProof extends Command
         });
     }
 
-    // ---------- Excellence + SuperOrganiser (split) ----------
-
     /**
-     * Returns [Collection $excellenceWithoutSO, Collection $superOrganiser]
+     * Excellence exporter that splits out SuperOrganiser as its own "family".
+     * It also ensures owner_email is filled by coalescing table email columns with users.email.
+     *
+     * @return array{0:\Illuminate\Support\Collection,1:\Illuminate\Support\Collection} [$excellence, $superorganiser]
      */
     protected function exportExcellenceSplit(string $start, string $end, bool $inclusive, string $datePref): array
     {
@@ -212,12 +211,14 @@ class ExportCertificatesProof extends Command
         $dateExpr = "$alias.$dateCol";
 
         $q = DB::table("$exTable as $alias")
-            // join users if we have user_id, to recover email when absent on the table
-            ->when(Schema::hasColumn($exTable,'user_id'), function($q) use ($alias) {
-                $q->leftJoin('users as u', 'u.id', '=', "$alias.user_id");
-            })
             ->whereBetween($dateExpr, [$start, $end])
             ->orderBy("$alias.id");
+
+        // If there is a users FK, join to users to guarantee email
+        $hasUserId = Schema::hasColumn($exTable, 'user_id');
+        if ($hasUserId) {
+            $q->leftJoin('users as uu', 'uu.id', '=', "$alias.user_id");
+        }
 
         if (!$inclusive && Schema::hasColumn($exTable, 'status')) {
             $q->where("$alias.status", 'DONE');
@@ -229,20 +230,18 @@ class ExportCertificatesProof extends Command
         }
 
         // Build select list defensively
-        $select = [
-            "$alias.id as record_id",
-            DB::raw("$dateExpr as issued_at"),
-            Schema::hasColumn($exTable,'event_date') ? "$alias.event_date" : DB::raw('NULL as event_date'),
-            Schema::hasColumn($exTable,'status')     ? "$alias.status"     : DB::raw('NULL as status'),
-        ];
+        $select = ["$alias.id as record_id", DB::raw("$dateExpr as issued_at")];
+        $select[] = Schema::hasColumn($exTable,'event_date') ? "$alias.event_date" : DB::raw('NULL as event_date');
+        $select[] = Schema::hasColumn($exTable,'status')     ? "$alias.status"     : DB::raw('NULL as status');
 
-        // owner_email: prefer table email columns, else users.email
-        if (Schema::hasColumn($exTable, 'email')) {
-            $select[] = DB::raw("COALESCE($alias.email, NULL) as owner_email");
-        } elseif (Schema::hasColumn($exTable, 'user_email')) {
-            $select[] = DB::raw("COALESCE($alias.user_email, NULL) as owner_email");
-        } elseif (Schema::hasColumn($exTable, 'user_id')) {
-            $select[] = DB::raw("COALESCE(u.email, NULL) as owner_email");
+        // Always provide owner_email by coalescing table email columns with users.email
+        $emailExprs = [];
+        if (Schema::hasColumn($exTable,'email'))      $emailExprs[] = "$alias.email";
+        if (Schema::hasColumn($exTable,'user_email')) $emailExprs[] = "$alias.user_email";
+        if ($hasUserId)                                $emailExprs[] = "uu.email";
+        // COALESCE list
+        if (!empty($emailExprs)) {
+            $select[] = DB::raw('COALESCE('.implode(',', $emailExprs).') as owner_email');
         } else {
             $select[] = DB::raw('NULL as owner_email');
         }
@@ -254,6 +253,7 @@ class ExportCertificatesProof extends Command
         elseif (Schema::hasColumn($exTable,'url'))              $select[] = "$alias.url as certificate_url";
         else                                                    $select[] = DB::raw('NULL as certificate_url');
 
+        // Excellence type (raw + normalized)
         if (Schema::hasColumn($exTable,'type')) {
             $select[] = "$alias.type as excellence_type";
             $select[] = DB::raw("LOWER(REPLACE($alias.type,'-','')) as excellence_type_norm");
@@ -294,7 +294,7 @@ class ExportCertificatesProof extends Command
         return [$ex, $so];
     }
 
-    // ---------- Monthly printers ----------
+    /* ---------- Monthly breakdown printers ---------- */
 
     protected function printMonthlyParticipations(string $start, string $end, bool $inclusive, string $datePref): void
     {
@@ -308,7 +308,7 @@ class ExportCertificatesProof extends Command
         if (!$inclusive && Schema::hasColumn($table, 'status')) {
             $q->where("$alias.status", 'DONE');
         }
-        if (!$inclusive) {
+        if (!$inclusive && Schema::hasColumn($table,'participation_url')) {
             $q->whereNotNull("$alias.participation_url");
         }
 
@@ -324,7 +324,7 @@ class ExportCertificatesProof extends Command
     protected function printMonthlyExcellenceSplit(string $start, string $end, bool $inclusive, string $datePref): void
     {
         $table = $this->excellenceTable();
-        if (!$table) { $this->line("  excellence: table missing"); return; }
+        if (!$table) { $this->line("  excellence: table missing"); $this->line("  superorganiser: table missing"); return; }
 
         $alias = 'x';
         $dateCol  = $this->pickDateColumn($table, $datePref) ?? 'created_at';
@@ -332,12 +332,17 @@ class ExportCertificatesProof extends Command
 
         $base = DB::table("$table as $alias")->whereBetween($dateExpr, [$start, $end]);
 
+        // Join users for email if possible
+        if (Schema::hasColumn($table, 'user_id')) {
+            $base->leftJoin('users as uu', 'uu.id', '=', "$alias.user_id");
+        }
+
         if (!$inclusive && Schema::hasColumn($table, 'status')) {
             $base->where("$alias.status",'DONE');
         }
         if (!$inclusive) {
-            $urlCol = Schema::hasColumn($table,'certificate_url') ? 'certificate_url'
-                   : (Schema::hasColumn($table,'url') ? 'url' : null);
+            $urlCol = Schema::hasColumn($table, 'certificate_url') ? 'certificate_url'
+                   : (Schema::hasColumn($table, 'url') ? 'url' : null);
             if ($urlCol) $base->whereNotNull("$alias.$urlCol");
         }
 
