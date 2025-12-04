@@ -16,10 +16,10 @@
 
 @section('content')
     <section id="hackathons-page" class="font-['Blinker'] overflow-hidden">
-        <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-orange-gradient pt-32 pb-0 md:py-32">
-                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                    <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+        <section class="flex overflow-hidden relative">
+            <div class="flex relative pt-32 pb-0 w-full transition-all bg-orange-gradient md:py-32">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
+                    <div class="flex flex-col gap-28 duration-1000 codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 Hackathons
@@ -28,7 +28,7 @@
                                 Bring your ideas to life!
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10">
+                        <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
 
                         </div>
                         <img
@@ -49,7 +49,7 @@
         </section>
 
         <section class="relative z-10">
-            <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
+            <div class="flex relative z-10 justify-center py-10 md:py-20 codeweek-container-lg">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
                         Hackathons
@@ -73,15 +73,15 @@
             ></div>
         </section>
 
-        <section class="relative overflow-hidden">
+        <section class="overflow-hidden relative">
             <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(270% 90% at 38% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(128% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(93% 90% at 50% 90%);"></div>
-            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28">
-                <div class="flex flex-col lg:flex-row gap-6 lg:gap-20">
-                    <div class="relative flex-1 flex items-center overflow-hidden">
-                        <img src="{{asset('images/hackathons/hackathon.png')}}" class="rounded-lg h-full object-cover">
+            <div class="hidden absolute w-full h-full bg-yellow-50 md:block lg:hidden" style="clip-path: ellipse(188% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 lg:block xl:hidden" style="clip-path: ellipse(128% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 xl:block" style="clip-path: ellipse(93% 90% at 50% 90%);"></div>
+            <div class="relative pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
+                <div class="flex flex-col gap-6 lg:flex-row lg:gap-20">
+                    <div class="flex overflow-hidden relative flex-1 items-center">
+                        <img src="{{asset('images/hackathons/hackathon.png')}}" class="object-cover h-full rounded-lg">
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                             @include('layout.video-player', [
                                 'id' => 'hackathons-video',
@@ -94,18 +94,18 @@
                             EU Code Week Hackathon 2025
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            EU Code Week Hackathons have an overarching theme to foster a sense of connection and belonging among participants across different countries. The central theme for EU Code Week 2025 Hackathons is <span class="font-semibold">From Code to Community: Bridging Digital Skills and Social Impact</span>.
+                            EU Code Week Hackathons share a common theme that strengthens connection and belonging among young innovators across Europe. The central theme for the 2025 edition is <strong>From Code to Community: Bridging Digital Skills and Social Impact.</strong></span>.
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            EU Code Week national hackathons will take place from October to December 2025, offering an opportunity for teams of young enthusiasts aged 15–19 to learn, showcase their talents, and develop innovative digital solutions to address real-world challenges.
+                            The ten national hackathons — <a href="https://codeweek.eu/blog/hackathons-italy/">Italy (Florence)</a>, <a href="https://codeweek.eu/blog/hackathons-italy/">Italy (Turin)</a>, <a href="https://codeweek.eu/blog/greek-hackathon-2025/">Greece</a>, <a href="https://codeweek.eu/blog/eu-code-week-hackathons-croatia/">Croatia</a>, Ukraine, Turkey, Spain, Lithuania, <a href="https://codeweek.eu/blog/eu-code-week-hackathons-slovenia/">Slovenia</a>, and France — mark a vibrant journey of creativity and collaboration. Italy (Florence) opened the series with its event in October 2025, while all other national hackathons are taking place from now until the end of January 2026. Each event invites teams of young people aged 15 to 19 to learn, innovate, and develop digital solutions that tackle real societal challenges.
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            For the European finals, join us online in <span class="font-semibold">February 2026</span> (exact date to be confirmed) to celebrate young minds building tech solutions for a better world. International teams will pitch their projects live, and you will vote for your favourites!
+                           Join us online for the <strong>EU Finals on 11 March 2026</strong>, where all national finalists will present their projects and celebrate their shared achievements. Expect inspiring ideas, expert jury insights, and plenty of positive energy — a celebration of how young people use technology to make a difference.
                         </p>
                         <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
-                            Expect inspiring ideas, expert jury feedback, and plenty of positive energy. Don’t miss the big moment when we crown the <span class="font-semibold">Audience Winner, Jury Winner</span>, and the ultimate <span class="font-semibold">Super Winner</span>!
+                            Be part of the excitement as we honour the outstanding teams shaping the future of digital innovation!</span>!
                         </p>
-                        <div class="flex flex-col tablet:flex-row lg:flex-col 2xl:flex-row gap-x-2 gap-y-4">
+                        <div class="flex flex-col gap-x-2 gap-y-4 tablet:flex-row lg:flex-col 2xl:flex-row">
                             <a
                                 class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                 target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024"
@@ -117,9 +117,9 @@
                                 target="_blank" href="/docs/C4EU_D2.7 Code Week Event Hackathon Design & Toolkit Final 18.06.2025.pdf"
                             >
                                 <span>Hackathon 2025 Toolkit</span>
-                                <div class="flex gap-2 w-4 overflow-hidden">
-                                    <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
-                                    <img src="/images/arrow-right-icon.svg" class="min-w-4 duration-500 transform -translate-x-6 group-hover:translate-x-0" />
+                                <div class="flex overflow-hidden gap-2 w-4">
+                                    <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                    <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 </div>
                             </a>
                         </div>
