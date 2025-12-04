@@ -15,7 +15,8 @@ class ExportCertificatesProof extends Command
         {--path= : Output path under storage/app (default: exports/certificates_manifest_[range].csv)}
         {--family=both : Which family to export: participations|excellence|both}
         {--inclusive=0 : If 1, do not require URL and do not force status=DONE}
-        {--date-field=created_at : Date field to use (created_at|event_date|issued_at if present)}';
+        {--date-field=created_at : Date field to use (created_at|event_date|issued_at if present)}
+        {--excellence-type= : Optional filter for Excellence types (comma-separated; e.g. SuperOrganiser,Excellence)}';
 
     protected $description = 'Export a CSV manifest of issued certificates (links + metadata) for the requested interval';
 
@@ -27,9 +28,10 @@ class ExportCertificatesProof extends Command
         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $start)) $start .= ' 00:00:00';
         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $end))   $end   .= ' 23:59:59';
 
-        $family    = strtolower($this->option('family') ?: 'both'); // participations|excellence|both
-        $inclusive = (int)($this->option('inclusive') ?: 0) === 1;
-        $datePref  = strtolower($this->option('date-field') ?: 'created_at'); // created_at|event_date|issued_at
+        $family        = strtolower($this->option('family') ?: 'both'); // participations|excellence|both
+        $inclusive     = (int)($this->option('inclusive') ?: 0) === 1;
+        $datePref      = strtolower($this->option('date-field') ?: 'created_at'); // created_at|event_date|issued_at
+        $exTypeFilter  = $this->parseExcellenceTypeFilter($this->option('excellence-type'));
 
         $defaultPath = 'exports/certificates_manifest_'
             . str_replace([':', ' '], ['_', '_'], $start)
@@ -37,6 +39,7 @@ class ExportCertificatesProof extends Command
             . str_replace([':', ' '], ['_', '_'], $end)
             . ($inclusive ? '_inclusive' : '')
             . ($family !== 'both' ? "_{$family}" : '')
+            . (!empty($exTypeFilter) ? '_exType_' . implode('-', $exTypeFilter) : '')
             . '.csv';
 
         $path = $this->option('path') ?: $defaultPath;
@@ -48,15 +51,16 @@ class ExportCertificatesProof extends Command
         }
 
         if ($family === 'excellence' || $family === 'both') {
-            $rows = $rows->merge($this->exportExcellence($start, $end, $inclusive, $datePref));
+            $rows = $rows->merge($this->exportExcellence($start, $end, $inclusive, $datePref, $exTypeFilter));
         }
 
-        // Write merged CSV
+        // Write merged CSV (now includes excellence_type columns)
         $stream = fopen('php://temp', 'w+');
         fputcsv($stream, [
             'family', 'record_id', 'issued_at', 'event_date',
             'status', 'owner_email', 'event_id', 'title',
-            'certificate_url', 'missing_url'
+            'certificate_url', 'missing_url',
+            'excellence_type', 'excellence_type_norm'
         ]);
 
         foreach ($rows as $r) {
@@ -71,6 +75,8 @@ class ExportCertificatesProof extends Command
                 $r['title'] ?? null,
                 $r['certificate_url'] ?? null,
                 !empty($r['certificate_url']) ? 0 : 1,
+                $r['excellence_type'] ?? null,
+                $r['excellence_type_norm'] ?? null,
             ]);
         }
 
@@ -82,9 +88,9 @@ class ExportCertificatesProof extends Command
         $this->info("Wrote {$rows->count()} rows to storage/app/{$path}");
         $this->line('Breakdown:');
 
-        // Print per-family monthly breakdowns for the memo
+        // Per-family monthly breakdowns
         $this->printMonthly('participations', $start, $end, $inclusive, $datePref);
-        $this->printMonthly('excellence', $start, $end, $inclusive, $datePref);
+        $this->printMonthly('excellence',      $start, $end, $inclusive, $datePref);
 
         return self::SUCCESS;
     }
@@ -110,14 +116,26 @@ class ExportCertificatesProof extends Command
         return null;
     }
 
-    /**
-     * Resolve the excellence table name on this server (case/variant safe).
-     */
     protected function excellenceTable(): ?string
     {
         if (Schema::hasTable('excellences')) return 'excellences';
         if (Schema::hasTable('CertificatesOfExcellence')) return 'CertificatesOfExcellence';
         return null;
+    }
+
+    protected function normalizeType(?string $t): ?string
+    {
+        if ($t === null) return null;
+        return strtolower(str_replace('-', '', $t));
+    }
+
+    protected function parseExcellenceTypeFilter($opt): array
+    {
+        if (!$opt) return [];
+        $parts = array_filter(array_map('trim', explode(',', $opt)));
+        return array_values(array_unique(array_map(function ($s) {
+            return $this->normalizeType($s);
+        }, $parts)));
     }
 
     protected function exportParticipations(string $start, string $end, bool $inclusive, string $datePref)
@@ -161,7 +179,7 @@ class ExportCertificatesProof extends Command
             $select[] = 'e.title as title';
         } else {
             $select[] = DB::raw('NULL as event_id');
-            $select[] = DB::raw('NULL as title'); // `participations` has no native title
+            $select[] = DB::raw('NULL as title');
         }
 
         return collect($q->get($select))->map(function ($r) {
@@ -175,11 +193,13 @@ class ExportCertificatesProof extends Command
                 'event_id'        => property_exists($r, 'event_id') ? $r->event_id : null,
                 'title'           => $r->title ?? null,
                 'certificate_url' => $r->certificate_url ?? null,
+                'excellence_type' => null,
+                'excellence_type_norm' => null,
             ];
         });
     }
 
-    protected function exportExcellence(string $start, string $end, bool $inclusive, string $datePref)
+    protected function exportExcellence(string $start, string $end, bool $inclusive, string $datePref, array $exTypeFilter = [])
     {
         $exTable = $this->excellenceTable();
         if (!$exTable) return collect();
@@ -201,6 +221,12 @@ class ExportCertificatesProof extends Command
             if ($urlCol) $q->whereNotNull("$alias.$urlCol");
         }
 
+        // Optional Excellence type filtering (normalized)
+        if (!empty($exTypeFilter) && Schema::hasColumn($exTable, 'type')) {
+            // use SQL normalization to match our normalizeType()
+            $q->whereIn(DB::raw("LOWER(REPLACE($alias.type,'-',''))"), $exTypeFilter);
+        }
+
         // Build select list defensively
         $select = ["$alias.id as record_id", DB::raw("$dateExpr as issued_at")];
         $select[] = Schema::hasColumn($exTable,'event_date') ? "$alias.event_date" : DB::raw('NULL as event_date');
@@ -217,6 +243,15 @@ class ExportCertificatesProof extends Command
         elseif (Schema::hasColumn($exTable,'url'))              $select[] = "$alias.url as certificate_url";
         else                                                    $select[] = DB::raw('NULL as certificate_url');
 
+        // Excellence types (raw + normalized)
+        if (Schema::hasColumn($exTable,'type')) {
+            $select[] = "$alias.type as excellence_type";
+            $select[] = DB::raw("LOWER(REPLACE($alias.type,'-','')) as excellence_type_norm");
+        } else {
+            $select[] = DB::raw("NULL as excellence_type");
+            $select[] = DB::raw("NULL as excellence_type_norm");
+        }
+
         return collect($q->get($select))->map(function ($r) {
             return [
                 'family'          => 'excellence',
@@ -228,6 +263,8 @@ class ExportCertificatesProof extends Command
                 'event_id'        => $r->event_id ?? null,
                 'title'           => $r->title ?? null,
                 'certificate_url' => $r->certificate_url ?? null,
+                'excellence_type' => $r->excellence_type ?? null,
+                'excellence_type_norm' => $r->excellence_type_norm ?? null,
             ];
         });
     }
