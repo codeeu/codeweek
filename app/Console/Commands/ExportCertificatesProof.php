@@ -110,10 +110,20 @@ class ExportCertificatesProof extends Command
         return null;
     }
 
+    /**
+     * Resolve the excellence table name on this server (case/variant safe).
+     */
+    protected function excellenceTable(): ?string
+    {
+        if (Schema::hasTable('excellences')) return 'excellences';
+        if (Schema::hasTable('CertificatesOfExcellence')) return 'CertificatesOfExcellence';
+        return null;
+    }
+
     protected function exportParticipations(string $start, string $end, bool $inclusive, string $datePref)
     {
-        $table   = 'participations';
-        $dateCol = $this->pickDateColumn($table, $datePref) ?? 'created_at';
+        $table    = 'participations';
+        $dateCol  = $this->pickDateColumn($table, $datePref) ?? 'created_at';
         $dateExpr = "p.$dateCol";
 
         $q = DB::table('participations as p')
@@ -151,7 +161,7 @@ class ExportCertificatesProof extends Command
             $select[] = 'e.title as title';
         } else {
             $select[] = DB::raw('NULL as event_id');
-            $select[] = DB::raw('NULL as title'); // `participations` has no native title in your DB
+            $select[] = DB::raw('NULL as title'); // `participations` has no native title
         }
 
         return collect($q->get($select))->map(function ($r) {
@@ -171,41 +181,41 @@ class ExportCertificatesProof extends Command
 
     protected function exportExcellence(string $start, string $end, bool $inclusive, string $datePref)
     {
-        $table = 'CertificatesOfExcellence';
-        if (!Schema::hasTable($table)) return collect();
+        $exTable = $this->excellenceTable();
+        if (!$exTable) return collect();
 
-        $dateCol  = $this->pickDateColumn($table, $datePref) ?? 'created_at';
         $alias    = 'x';
+        $dateCol  = $this->pickDateColumn($exTable, $datePref) ?? 'created_at';
         $dateExpr = "$alias.$dateCol";
 
-        $q = DB::table("$table as $alias")
+        $q = DB::table("$exTable as $alias")
             ->whereBetween($dateExpr, [$start, $end])
             ->orderBy("$alias.id");
 
-        if (!$inclusive && Schema::hasColumn($table, 'status')) {
+        if (!$inclusive && Schema::hasColumn($exTable, 'status')) {
             $q->where("$alias.status", 'DONE');
         }
         if (!$inclusive) {
-            $urlCol = Schema::hasColumn($table, 'certificate_url') ? 'certificate_url'
-                   : (Schema::hasColumn($table, 'url') ? 'url' : null);
+            $urlCol = Schema::hasColumn($exTable, 'certificate_url') ? 'certificate_url'
+                   : (Schema::hasColumn($exTable, 'url') ? 'url' : null);
             if ($urlCol) $q->whereNotNull("$alias.$urlCol");
         }
 
         // Build select list defensively
         $select = ["$alias.id as record_id", DB::raw("$dateExpr as issued_at")];
-        $select[] = Schema::hasColumn($table,'event_date') ? "$alias.event_date" : DB::raw('NULL as event_date');
-        $select[] = Schema::hasColumn($table,'status')     ? "$alias.status"     : DB::raw('NULL as status');
+        $select[] = Schema::hasColumn($exTable,'event_date') ? "$alias.event_date" : DB::raw('NULL as event_date');
+        $select[] = Schema::hasColumn($exTable,'status')     ? "$alias.status"     : DB::raw('NULL as status');
 
-        if (Schema::hasColumn($table,'email'))            $select[] = "$alias.email as owner_email";
-        elseif (Schema::hasColumn($table,'user_email'))   $select[] = "$alias.user_email as owner_email";
-        else                                              $select[] = DB::raw('NULL as owner_email');
+        if (Schema::hasColumn($exTable,'email'))            $select[] = "$alias.email as owner_email";
+        elseif (Schema::hasColumn($exTable,'user_email'))   $select[] = "$alias.user_email as owner_email";
+        else                                                $select[] = DB::raw('NULL as owner_email');
 
-        $select[] = Schema::hasColumn($table,'event_id') ? "$alias.event_id" : DB::raw('NULL as event_id');
-        $select[] = Schema::hasColumn($table,'title')    ? "$alias.title"    : DB::raw('NULL as title');
+        $select[] = Schema::hasColumn($exTable,'event_id') ? "$alias.event_id" : DB::raw('NULL as event_id');
+        $select[] = Schema::hasColumn($exTable,'title')    ? "$alias.title"    : DB::raw('NULL as title');
 
-        if (Schema::hasColumn($table,'certificate_url'))      $select[] = "$alias.certificate_url as certificate_url";
-        elseif (Schema::hasColumn($table,'url'))              $select[] = "$alias.url as certificate_url";
-        else                                                  $select[] = DB::raw('NULL as certificate_url');
+        if (Schema::hasColumn($exTable,'certificate_url'))      $select[] = "$alias.certificate_url as certificate_url";
+        elseif (Schema::hasColumn($exTable,'url'))              $select[] = "$alias.url as certificate_url";
+        else                                                    $select[] = DB::raw('NULL as certificate_url');
 
         return collect($q->get($select))->map(function ($r) {
             return [
@@ -228,8 +238,8 @@ class ExportCertificatesProof extends Command
             $table = 'participations';
             $alias = 'p';
         } elseif ($family === 'excellence') {
-            $table = 'CertificatesOfExcellence';
-            if (!Schema::hasTable($table)) { $this->line("  {$family}: table missing"); return; }
+            $table = $this->excellenceTable();
+            if (!$table) { $this->line("  excellence: table missing"); return; }
             $alias = 'x';
         } else {
             return;
