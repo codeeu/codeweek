@@ -15,8 +15,7 @@ class ExportCertificatesProof extends Command
         {--path= : Output path under storage/app (default: exports/certificates_manifest_[range].csv)}
         {--family=both : Which family to export: participations|excellence|both}
         {--inclusive=0 : If 1, do not require URL and do not force status=DONE}
-        {--date-field=created_at : Date field to use (created_at|event_date|issued_at if present)}
-        {--excellence-type= : Optional filter for Excellence types (comma-separated; e.g. SuperOrganiser,Excellence)}';
+        {--date-field=created_at : Date field to use (created_at|event_date|issued_at if present)}';
 
     protected $description = 'Export a CSV manifest of issued certificates (links + metadata) for the requested interval';
 
@@ -28,10 +27,9 @@ class ExportCertificatesProof extends Command
         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $start)) $start .= ' 00:00:00';
         if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $end))   $end   .= ' 23:59:59';
 
-        $family        = strtolower($this->option('family') ?: 'both'); // participations|excellence|both
-        $inclusive     = (int)($this->option('inclusive') ?: 0) === 1;
-        $datePref      = strtolower($this->option('date-field') ?: 'created_at'); // created_at|event_date|issued_at
-        $exTypeFilter  = $this->parseExcellenceTypeFilter($this->option('excellence-type'));
+        $family    = strtolower($this->option('family') ?: 'both'); // participations|excellence|both
+        $inclusive = (int)($this->option('inclusive') ?: 0) === 1;
+        $datePref  = strtolower($this->option('date-field') ?: 'created_at'); // created_at|event_date|issued_at
 
         $defaultPath = 'exports/certificates_manifest_'
             . str_replace([':', ' '], ['_', '_'], $start)
@@ -39,22 +37,29 @@ class ExportCertificatesProof extends Command
             . str_replace([':', ' '], ['_', '_'], $end)
             . ($inclusive ? '_inclusive' : '')
             . ($family !== 'both' ? "_{$family}" : '')
-            . (!empty($exTypeFilter) ? '_exType_' . implode('-', $exTypeFilter) : '')
             . '.csv';
 
         $path = $this->option('path') ?: $defaultPath;
 
+        // Build rows ensuring SuperOrganiser is appended last
         $rows = collect();
 
         if ($family === 'participations' || $family === 'both') {
             $rows = $rows->merge($this->exportParticipations($start, $end, $inclusive, $datePref));
         }
 
+        $soRows = collect();
         if ($family === 'excellence' || $family === 'both') {
-            $rows = $rows->merge($this->exportExcellence($start, $end, $inclusive, $datePref, $exTypeFilter));
+            [$exRows, $soRows] = $this->exportExcellenceSplit($start, $end, $inclusive, $datePref);
+            $rows = $rows->merge($exRows);
         }
 
-        // Write merged CSV (now includes excellence_type columns)
+        // Append SuperOrganiser rows at the END (as requested)
+        if ($soRows->isNotEmpty()) {
+            $rows = $rows->merge($soRows);
+        }
+
+        // Write CSV
         $stream = fopen('php://temp', 'w+');
         fputcsv($stream, [
             'family', 'record_id', 'issued_at', 'event_date',
@@ -88,9 +93,9 @@ class ExportCertificatesProof extends Command
         $this->info("Wrote {$rows->count()} rows to storage/app/{$path}");
         $this->line('Breakdown:');
 
-        // Per-family monthly breakdowns
-        $this->printMonthly('participations', $start, $end, $inclusive, $datePref);
-        $this->printMonthly('excellence',      $start, $end, $inclusive, $datePref);
+        // Monthly breakdowns for all three "families"
+        $this->printMonthlyParticipations($start, $end, $inclusive, $datePref);
+        $this->printMonthlyExcellenceSplit($start, $end, $inclusive, $datePref);
 
         return self::SUCCESS;
     }
@@ -100,15 +105,9 @@ class ExportCertificatesProof extends Command
     protected function pickDateColumn(string $table, string $preferred): ?string
     {
         // Respect requested preference first
-        if ($preferred === 'event_date' && Schema::hasColumn($table, 'event_date')) {
-            return 'event_date';
-        }
-        if ($preferred === 'issued_at' && Schema::hasColumn($table, 'issued_at')) {
-            return 'issued_at';
-        }
-        if ($preferred === 'created_at' && Schema::hasColumn($table, 'created_at')) {
-            return 'created_at';
-        }
+        if ($preferred === 'event_date' && Schema::hasColumn($table, 'event_date')) return 'event_date';
+        if ($preferred === 'issued_at' && Schema::hasColumn($table, 'issued_at')) return 'issued_at';
+        if ($preferred === 'created_at' && Schema::hasColumn($table, 'created_at')) return 'created_at';
         // Fallbacks
         foreach (['created_at','issued_at','event_date','date'] as $c) {
             if (Schema::hasColumn($table, $c)) return $c;
@@ -129,49 +128,41 @@ class ExportCertificatesProof extends Command
         return strtolower(str_replace('-', '', $t));
     }
 
-    protected function parseExcellenceTypeFilter($opt): array
-    {
-        if (!$opt) return [];
-        $parts = array_filter(array_map('trim', explode(',', $opt)));
-        return array_values(array_unique(array_map(function ($s) {
-            return $this->normalizeType($s);
-        }, $parts)));
-    }
-
     protected function exportParticipations(string $start, string $end, bool $inclusive, string $datePref)
     {
         $table    = 'participations';
         $dateCol  = $this->pickDateColumn($table, $datePref) ?? 'created_at';
-        $dateExpr = "p.$dateCol";
+        $alias    = 'p';
+        $dateExpr = "$alias.$dateCol";
 
-        $q = DB::table('participations as p')
-            ->leftJoin('users as u', 'u.id', '=', 'p.user_id')
+        $q = DB::table("$table as $alias")
+            ->leftJoin('users as u', 'u.id', '=', "$alias.user_id")
             ->whereBetween($dateExpr, [$start, $end])
-            ->orderBy('p.id');
-
-        $hasEventId    = Schema::hasColumn($table, 'event_id');
-        $hasActivityId = Schema::hasColumn($table, 'activity_id');
-
-        if ($hasEventId) {
-            $q->leftJoin('events as e', 'e.id', '=', 'p.event_id');
-        } elseif ($hasActivityId) {
-            $q->leftJoin('events as e', 'e.id', '=', 'p.activity_id');
-        }
+            ->orderBy("$alias.id");
 
         if (!$inclusive) {
             if (Schema::hasColumn($table, 'status')) {
-                $q->where('p.status', 'DONE');
+                $q->where("$alias.status", 'DONE');
             }
-            $q->whereNotNull('p.participation_url');
+            $q->whereNotNull("$alias.participation_url");
+        }
+
+        // Optional join to events if present
+        $hasEventId    = Schema::hasColumn($table, 'event_id');
+        $hasActivityId = Schema::hasColumn($table, 'activity_id');
+        if ($hasEventId) {
+            $q->leftJoin('events as e', 'e.id', '=', "$alias.event_id");
+        } elseif ($hasActivityId) {
+            $q->leftJoin('events as e', 'e.id', '=', "$alias.activity_id");
         }
 
         $select = [
-            'p.id as record_id',
+            "$alias.id as record_id",
             DB::raw("$dateExpr as issued_at"),
-            (Schema::hasColumn($table, 'event_date') ? 'p.event_date' : DB::raw('NULL as event_date')),
-            (Schema::hasColumn($table, 'status')     ? 'p.status'     : DB::raw('NULL as status')),
+            (Schema::hasColumn($table, 'event_date') ? "$alias.event_date" : DB::raw('NULL as event_date')),
+            (Schema::hasColumn($table, 'status')     ? "$alias.status"     : DB::raw('NULL as status')),
             'u.email as owner_email',
-            (Schema::hasColumn($table, 'participation_url') ? 'p.participation_url as certificate_url' : DB::raw('NULL as certificate_url')),
+            (Schema::hasColumn($table, 'participation_url') ? "$alias.participation_url as certificate_url" : DB::raw('NULL as certificate_url')),
         ];
 
         if ($hasEventId || $hasActivityId) {
@@ -184,25 +175,28 @@ class ExportCertificatesProof extends Command
 
         return collect($q->get($select))->map(function ($r) {
             return [
-                'family'          => 'participations',
-                'record_id'       => $r->record_id,
-                'issued_at'       => $r->issued_at,
-                'event_date'      => $r->event_date,
-                'status'          => $r->status,
-                'owner_email'     => $r->owner_email,
-                'event_id'        => property_exists($r, 'event_id') ? $r->event_id : null,
-                'title'           => $r->title ?? null,
-                'certificate_url' => $r->certificate_url ?? null,
-                'excellence_type' => null,
-                'excellence_type_norm' => null,
+                'family'                 => 'participations',
+                'record_id'              => $r->record_id,
+                'issued_at'              => $r->issued_at,
+                'event_date'             => $r->event_date,
+                'status'                 => $r->status,
+                'owner_email'            => $r->owner_email,
+                'event_id'               => property_exists($r, 'event_id') ? $r->event_id : null,
+                'title'                  => $r->title ?? null,
+                'certificate_url'        => $r->certificate_url ?? null,
+                'excellence_type'        => null,
+                'excellence_type_norm'   => null,
             ];
         });
     }
 
-    protected function exportExcellence(string $start, string $end, bool $inclusive, string $datePref, array $exTypeFilter = [])
+    /**
+     * Returns [Collection $excellenceWithoutSO, Collection $superOrganiser]
+     */
+    protected function exportExcellenceSplit(string $start, string $end, bool $inclusive, string $datePref): array
     {
         $exTable = $this->excellenceTable();
-        if (!$exTable) return collect();
+        if (!$exTable) return [collect(), collect()];
 
         $alias    = 'x';
         $dateCol  = $this->pickDateColumn($exTable, $datePref) ?? 'created_at';
@@ -221,12 +215,6 @@ class ExportCertificatesProof extends Command
             if ($urlCol) $q->whereNotNull("$alias.$urlCol");
         }
 
-        // Optional Excellence type filtering (normalized)
-        if (!empty($exTypeFilter) && Schema::hasColumn($exTable, 'type')) {
-            // use SQL normalization to match our normalizeType()
-            $q->whereIn(DB::raw("LOWER(REPLACE($alias.type,'-',''))"), $exTypeFilter);
-        }
-
         // Build select list defensively
         $select = ["$alias.id as record_id", DB::raw("$dateExpr as issued_at")];
         $select[] = Schema::hasColumn($exTable,'event_date') ? "$alias.event_date" : DB::raw('NULL as event_date');
@@ -243,7 +231,7 @@ class ExportCertificatesProof extends Command
         elseif (Schema::hasColumn($exTable,'url'))              $select[] = "$alias.url as certificate_url";
         else                                                    $select[] = DB::raw('NULL as certificate_url');
 
-        // Excellence types (raw + normalized)
+        // Excellence type (raw + normalized)
         if (Schema::hasColumn($exTable,'type')) {
             $select[] = "$alias.type as excellence_type";
             $select[] = DB::raw("LOWER(REPLACE($alias.type,'-','')) as excellence_type_norm");
@@ -252,36 +240,42 @@ class ExportCertificatesProof extends Command
             $select[] = DB::raw("NULL as excellence_type_norm");
         }
 
-        return collect($q->get($select))->map(function ($r) {
-            return [
-                'family'          => 'excellence',
-                'record_id'       => $r->record_id,
-                'issued_at'       => $r->issued_at,
-                'event_date'      => $r->event_date ?? null,
-                'status'          => $r->status ?? null,
-                'owner_email'     => $r->owner_email ?? null,
-                'event_id'        => $r->event_id ?? null,
-                'title'           => $r->title ?? null,
-                'certificate_url' => $r->certificate_url ?? null,
-                'excellence_type' => $r->excellence_type ?? null,
+        $all = collect($q->get($select));
+
+        $ex = collect();
+        $so = collect();
+
+        foreach ($all as $r) {
+            $row = [
+                'family'               => null, // set below
+                'record_id'            => $r->record_id,
+                'issued_at'            => $r->issued_at,
+                'event_date'           => $r->event_date ?? null,
+                'status'               => $r->status ?? null,
+                'owner_email'          => $r->owner_email ?? null,
+                'event_id'             => $r->event_id ?? null,
+                'title'                => $r->title ?? null,
+                'certificate_url'      => $r->certificate_url ?? null,
+                'excellence_type'      => $r->excellence_type ?? null,
                 'excellence_type_norm' => $r->excellence_type_norm ?? null,
             ];
-        });
-    }
 
-    protected function printMonthly(string $family, string $start, string $end, bool $inclusive, string $datePref): void
-    {
-        if ($family === 'participations') {
-            $table = 'participations';
-            $alias = 'p';
-        } elseif ($family === 'excellence') {
-            $table = $this->excellenceTable();
-            if (!$table) { $this->line("  excellence: table missing"); return; }
-            $alias = 'x';
-        } else {
-            return;
+            if (($r->excellence_type_norm ?? null) === 'superorganiser') {
+                $row['family'] = 'superorganiser';
+                $so->push($row);
+            } else {
+                $row['family'] = 'excellence';
+                $ex->push($row);
+            }
         }
 
+        return [$ex, $so];
+    }
+
+    protected function printMonthlyParticipations(string $start, string $end, bool $inclusive, string $datePref): void
+    {
+        $table = 'participations';
+        $alias = 'p';
         $dateCol  = $this->pickDateColumn($table, $datePref) ?? 'created_at';
         $dateExpr = "$alias.$dateCol";
 
@@ -291,17 +285,61 @@ class ExportCertificatesProof extends Command
             $q->where("$alias.status", 'DONE');
         }
         if (!$inclusive) {
-            $urlCol = Schema::hasColumn($table,'participation_url') ? 'participation_url'
-                   : (Schema::hasColumn($table,'certificate_url')   ? 'certificate_url'
-                   : (Schema::hasColumn($table,'url')               ? 'url' : null));
-            if ($urlCol) $q->whereNotNull("$alias.$urlCol");
+            $q->whereNotNull("$alias.participation_url");
         }
 
         $monthly = $q->selectRaw('DATE_FORMAT('.$dateExpr.', "%Y-%m") as yyyymm, COUNT(*) as cnt')
             ->groupBy('yyyymm')->orderBy('yyyymm')->get();
 
-        $this->line("  {$family}:");
+        $this->line("  participations:");
         foreach ($monthly as $m) {
+            $this->line("    {$m->yyyymm}: {$m->cnt}");
+        }
+    }
+
+    protected function printMonthlyExcellenceSplit(string $start, string $end, bool $inclusive, string $datePref): void
+    {
+        $table = $this->excellenceTable();
+        if (!$table) { $this->line("  excellence: table missing"); return; }
+
+        $alias = 'x';
+        $dateCol  = $this->pickDateColumn($table, $datePref) ?? 'created_at';
+        $dateExpr = "$alias.$dateCol";
+
+        // Base query builder
+        $base = DB::table("$table as $alias")->whereBetween($dateExpr, [$start, $end]);
+        if (!$inclusive && Schema::hasColumn($table, 'status')) {
+            $base->where("$alias.status",'DONE');
+        }
+        if (!$inclusive) {
+            $urlCol = Schema::hasColumn($table, 'certificate_url') ? 'certificate_url'
+                   : (Schema::hasColumn($table, 'url') ? 'url' : null);
+            if ($urlCol) $base->whereNotNull("$alias.$urlCol");
+        }
+
+        // Excellence (excluding SO)
+        $exQ = clone $base;
+        $exQ->when(Schema::hasColumn($table,'type'), function($q) use($alias){
+            $q->whereRaw("LOWER(REPLACE($alias.type,'-','')) <> 'superorganiser'");
+        });
+        $exMonthly = $exQ->selectRaw('DATE_FORMAT('.$dateExpr.', "%Y-%m") as yyyymm, COUNT(*) as cnt')
+            ->groupBy('yyyymm')->orderBy('yyyymm')->get();
+
+        // SuperOrganiser only
+        $soMonthly = collect();
+        if (Schema::hasColumn($table,'type')) {
+            $soQ = clone $base;
+            $soQ->whereRaw("LOWER(REPLACE($alias.type,'-','')) = 'superorganiser'");
+            $soMonthly = $soQ->selectRaw('DATE_FORMAT('.$dateExpr.', "%Y-%m") as yyyymm, COUNT(*) as cnt')
+                ->groupBy('yyyymm')->orderBy('yyyymm')->get();
+        }
+
+        $this->line("  excellence:");
+        foreach ($exMonthly as $m) {
+            $this->line("    {$m->yyyymm}: {$m->cnt}");
+        }
+        $this->line("  superorganiser:");
+        foreach ($soMonthly as $m) {
             $this->line("    {$m->yyyymm}: {$m->cnt}");
         }
     }
