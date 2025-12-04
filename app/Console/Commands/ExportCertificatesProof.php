@@ -54,7 +54,7 @@ class ExportCertificatesProof extends Command
             $rows = $rows->merge($exRows);
         }
 
-        // Append SuperOrganiser rows at the END (as requested)
+        // Append SuperOrganiser rows at the END
         if ($soRows->isNotEmpty()) {
             $rows = $rows->merge($soRows);
         }
@@ -104,11 +104,9 @@ class ExportCertificatesProof extends Command
 
     protected function pickDateColumn(string $table, string $preferred): ?string
     {
-        // Respect requested preference first
         if ($preferred === 'event_date' && Schema::hasColumn($table, 'event_date')) return 'event_date';
         if ($preferred === 'issued_at' && Schema::hasColumn($table, 'issued_at')) return 'issued_at';
         if ($preferred === 'created_at' && Schema::hasColumn($table, 'created_at')) return 'created_at';
-        // Fallbacks
         foreach (['created_at','issued_at','event_date','date'] as $c) {
             if (Schema::hasColumn($table, $c)) return $c;
         }
