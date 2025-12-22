@@ -16,7 +16,7 @@ class HomeController extends Controller
                 'url' => '/dream-jobs-in-digital',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
-            ],     */
+            ],     
             [
                 'title' => 'home.banner5_title',
                 'description' => 'home.banner5_description',
@@ -25,7 +25,7 @@ class HomeController extends Controller
                 'btn_lang' => 'home.learn_more',
                 'url2' => null,
                 'btn2_lang' => null
-            ],
+            ],*/
              [
                 'title' => 'home.banner4_title',
                 'description' => 'home.banner4_description',
@@ -59,6 +59,15 @@ class HomeController extends Controller
                 'url' => '/community',
                 'style_color' => 'background: linear-gradient(36.92deg, rgb(51, 194, 233) 20.32%, rgb(0, 179, 227) 28.24%);',
                 'btn_lang' => 'home.meet_our_community',
+                'url2' => null,
+                'btn2_lang' => null
+            ],
+             [
+                'title' => 'home.banner7_title',
+                'description' => 'home.banner7_description',
+                'url' => '/blog/festive-acts-of-digital-kindness',
+                'style_color' => 'background: linear-gradient(36.92deg, rgb(51, 194, 233) 20.32%, rgb(0, 179, 227) 28.24%);',
+                'btn_lang' => 'home.learn_more',
                 'url2' => null,
                 'btn2_lang' => null
             ]
