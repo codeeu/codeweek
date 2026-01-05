@@ -132,8 +132,7 @@
                             
                             @php
                                 $backgroundImages = [
-                                    //asset('/images/csr/csr_about1.jpg'),
-                                    asset('/images/homepage/festive_acts_of_digital_kindness.png'),
+                                    asset('/images/csr/csr_about1.jpg'),
                                     asset('/images/dream-jobs/dream_jobs_bg.png'),
                                     asset('/images/digital-girls/banner_bg.png'),
                                     asset('images/homepage/slide1.png'),
