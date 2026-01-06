@@ -52,7 +52,7 @@ class HomeController extends Controller
                 'btn_lang' => 'home.get_involved',
                 'url2' => '/blog/code-week-25-programme/',
                 // 'btn2_lang' => 'home.download_brochure_btn',
-            ],
+            ]
         ]);
         return view('static.home', compact('activities'));
     }
