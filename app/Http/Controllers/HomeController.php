@@ -25,7 +25,7 @@ class HomeController extends Controller
                 'btn_lang' => 'home.learn_more',
                 'url2' => null,
                 'btn2_lang' => null
-            ],*/
+            ],
              [
                 'title' => 'home.banner4_title',
                 'description' => 'home.banner4_description',
