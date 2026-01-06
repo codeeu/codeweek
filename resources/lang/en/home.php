@@ -63,4 +63,5 @@ return [
 
     'banner7_title' => 'Festive acts of digital kindness',
     'banner7_description' => 'The holiday season is all about connection, kindness, and giving. But gifts don\'t have to come wrapped in paper with a bow on top. This December, we\'re inviting you to join us for something special: Festive Acts of Digital Kindness. ',
+
 ];
