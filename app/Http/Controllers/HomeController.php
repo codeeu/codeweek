@@ -10,13 +10,13 @@ class HomeController extends Controller
     public function index(Request $request): View
     {
         $activities = collect([
-             [
+            /* [
                 'title' => 'home.banner1_title',
                 'description' => 'home.banner1_description',
                 'url' => '/dream-jobs-in-digital',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
-            ],     
+            ],  */   
             [
                 'title' => 'home.banner5_title',
                 'description' => 'home.banner5_description',
