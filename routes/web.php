@@ -214,10 +214,6 @@ Route::get('/contact-us', [StaticPageController::class, 'static'])
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
 Route::get(
-    '/training/cody-color-kit',
-    [StaticPageController::class, 'static']
-)->name('training.module-0');
-Route::get(
     '/training/coding-without-computers',
     [StaticPageController::class, 'static']
 )->name('training.module-1');
