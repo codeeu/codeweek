@@ -22,6 +22,26 @@ return [
                 </p>',
 
     'lessons' => [
+            '0' => [
+            'title' => 'CodyColor Kit',
+            'author' => 'By Alessandro Bogliolo',
+            'text' => '<p>
+                    Coding is the language of things, which allows us to write programs to grant new functionalities to the tens of billions of programmable objects around us. Coding is the fastest way to make our ideas come true and the most effective way to develop computational thinking capabilities. However, technology is not strictly required to develop computational thinking. Rather, our computational thinking skills are essential to make technology work.
+                </p>
+
+                <p>
+                    In this video, Alessandro Bogliolo, Professor of Computer Systems in Italy and EU Code Week Coordinator, will introduce unplugged coding activities that can be practiced without any electronic device. The main purpose of unplugged activities is to lower the access barriers to bring coding in every school, regardless of funding and equipment.
+                </p>
+
+                <p>
+                    Unplugged coding activities unveil the computational aspects of the physical world around us.
+                </p>',
+            'activities' => [
+                '1' => 'Activity 1 – CodyRoby for Primary School',
+                '2' => 'Activity 2 – CodyRoby for Lower Secondary School',
+                '3' => 'Activity 3 – CodyRoby for Secondary School',
+            ],
+        ],
         '1' => [
             'title' => 'Coding without digital technology (unplugged)',
             'author' => 'By Alessandro Bogliolo',
@@ -443,7 +463,7 @@ With Python, students can create quizzes about historical events, solve math pro
 'get-hands-on-title' =>'Get Hands-On',
 'get-hands-on-text' =>'Choose a Learning Bit, watch the instructional video, and explore hands-on activities with the accompanying materials. Whether you’re new to coding or looking for fresh, creative teaching ideas, Coding Basics will equip you with the tools to spark digital curiosity and creativity in your learners.',
 'share-inspire-title' =>'Share & Inspire',
-'share-inspire-text1' =>'Once you\'ve completed one or more Code Week Learning Bits, we encourage you to bring digital creativity into your educational environment and pin your activity on the <a href="/events" class="font-semibold text-dark-blue underline">Code Week Map</a>!',
-'share-inspire-text2' =>'You can organise a lesson in your classroom, a workshop at a community centre, or an open event at your organisation. Simply pick a date and register your activity on the <a href="/events" class="font-semibold text-dark-blue underline">Code Week Map</a>. Each activity organiser will get a participation certificate for their effort.',
-'share-inspire-text3' =>'If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold text-dark-blue underline">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the EU <a href="/codeweek4all" class="font-semibold text-dark-blue underline">Code Week 4 All challenge</a>.',
+'share-inspire-text1' =>'Once you\'ve completed one or more Code Week Learning Bits, we encourage you to bring digital creativity into your educational environment and pin your activity on the <a href="/events" class="font-semibold underline text-dark-blue">Code Week Map</a>!',
+'share-inspire-text2' =>'You can organise a lesson in your classroom, a workshop at a community centre, or an open event at your organisation. Simply pick a date and register your activity on the <a href="/events" class="font-semibold underline text-dark-blue">Code Week Map</a>. Each activity organiser will get a participation certificate for their effort.',
+'share-inspire-text3' =>'If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215" target="_blank" class="font-semibold underline text-dark-blue">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the EU <a href="/codeweek4all" class="font-semibold underline text-dark-blue">Code Week 4 All challenge</a>.',
 ];
