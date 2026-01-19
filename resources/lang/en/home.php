@@ -43,6 +43,8 @@ return [
     'meet_our_community' => 'Meet our community',
     'learn_more'  => 'Learn more',
     'register_here'  => 'Register here!',
+    
+    'view_winners'  => 'View WInners',
 
     'banner1_title' => 'Careers in Digital',
     'banner1_description' => 'Get inspired by dream jobs in digital and explore role models, career guides, open day toolkits and more!',
@@ -53,13 +55,13 @@ return [
     'download_brochure_btn' => 'Download 2025 Brochure',
 
     'banner4_title' => 'Code Week Digital Educator Awards',
-    'banner4_description' => 'Powered by Vodafone Foundation, the 2025 Code Week Digital Educator Awards celebrate inspiring teachers and educator teams across Europe in two tracks: high-quality digital teaching content and outstanding participation during the Code Week celebration window. The evaluation phase is currently ongoing, and the winners will be announced soon.',
+    'banner4_description' => 'Powered by Vodafone Foundation, the 2025 Code Week Digital Educator Awards celebrate inspiring teachers and educator teams across Europe in two tracks: high-quality digital teaching content and outstanding participation during the Code Week celebration window. The winners have now been announced — discover the educators and initiatives shaping the future of digital learning across Europe..',
 
     'banner5_title' => 'Future Ready CSR',
     'banner5_description' => 'FutureReadyCSR Movement seeks to inspire, encourage, and empower global players, SMEs, and startups, to organizations like clusters, digital innovation hubs, industry associations, professional bodies, or chambers of commerce, to turn Corporate Social Responsibility into real-world action, by supporting digital skills education.',
 
     'banner6_title' => 'Cisco EMEA networking Academy Cup',
-    'banner6_description' => 'Join the learn-a-thon to build your networking and cybersecurity skills and earn the chance to access exclusive content created with Real Madrid on the network technologies powering the Santiago Bernabéu Stadium. Register by the 31st of December!',
+    'banner6_description' => 'Join the learn-a-thon to build your networking and cybersecurity skills and earn the chance to access exclusive content created with Real Madrid on the network technologies powering the Santiago Bernabéu Stadium. Register by the 31st of January!',
 
     'banner7_title' => 'Festive acts of digital kindness',
     'banner7_description' => 'The holiday season is all about connection, kindness, and giving. But gifts don\'t have to come wrapped in paper with a bow on top. This December, we\'re inviting you to join us for something special: Festive Acts of Digital Kindness. ',
