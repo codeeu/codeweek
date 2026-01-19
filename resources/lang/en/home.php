@@ -55,7 +55,7 @@ return [
     'download_brochure_btn' => 'Download 2025 Brochure',
 
     'banner4_title' => 'Code Week Digital Educator Awards',
-    'banner4_description' => 'Powered by Vodafone Foundation, the 2025 Code Week Digital Educator Awards celebrate inspiring teachers and educator teams across Europe in two tracks: high-quality digital teaching content and outstanding participation during the Code Week celebration window. The winners have now been announced — discover the educators and initiatives shaping the future of digital learning across Europe..',
+    'banner4_description' => 'Powered by Vodafone Foundation, the 2025 Code Week Digital Educator Awards celebrate inspiring teachers and educator teams across Europe in two tracks: high-quality digital teaching content and outstanding participation during the Code Week celebration window. The winners have now been announced — discover the educators and initiatives shaping the future of digital learning across Europe.',
 
     'banner5_title' => 'Future Ready CSR',
     'banner5_description' => 'FutureReadyCSR Movement seeks to inspire, encourage, and empower global players, SMEs, and startups, to organizations like clusters, digital innovation hubs, industry associations, professional bodies, or chambers of commerce, to turn Corporate Social Responsibility into real-world action, by supporting digital skills education.',
