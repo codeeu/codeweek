@@ -33,23 +33,23 @@
                 <span class="font-semibold">Influencer Bits for {{$year}}:</span> {{$user->influence($year)}}
             </p>
             <div class="mb-4 rounded-2xl border-2 border-[#B399D6] p-6">
-                <p id="header-1" class="font-semibold p-0 mb-2 text-lg md:text-2xl text-dark-blue">
+                <p id="header-1" class="p-0 mb-2 text-lg font-semibold md:text-2xl text-dark-blue">
                     Organiser Badges
                 </p>
                 <div class="flex">
                     <div class="flex-none">
-                        <img class="w-5/6 shadow-lg rounded-lg" src="{{asset('badges/organiser/organiser_logo.png')}}">
+                        <img class="w-5/6 rounded-lg shadow-lg" src="{{asset('badges/organiser/organiser_logo.png')}}">
                     </div>
                     <div class="flex-1">
                         <p class="font-normal italic text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">Go from active to legendary organiser, by organising more Code Week activities and contributing to the map.</p>
                         <div class="pt-6">
                             <nav>
-                                <ol class="list-decimal m-0 ml-4 pl-2">
+                                <ol class="pl-2 m-0 ml-4 list-decimal">
                                     @foreach($organiserBadges as $achievement)
                                         @if(!$loop->last)
-                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500 pr-8 sm:pr-20">
+                                            <li class="relative p-0 pr-8 font-normal text-default md:text-xl text-slate-500 sm:pr-20">
                                         @else
-                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500">
+                                            <li class="relative p-0 font-normal text-default md:text-xl text-slate-500">
                                         @endif
                                                 @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
                                                     <x-badges.completed :achievement="$achievement"></x-badges.completed>
@@ -65,12 +65,12 @@
                 </div>
             </div>
             <div class="mb-4 rounded-2xl border-2 border-[#B399D6] p-6">
-                <p id="header-1" class="font-semibold p-0 mb-2 text-lg md:text-2xl text-dark-blue">
+                <p id="header-1" class="p-0 mb-2 text-lg font-semibold md:text-2xl text-dark-blue">
                     Influencer Badges
                 </p>
                 <div class="flex">
                     <div class="flex-none">
-                        <img class="w-5/6 shadow-lg rounded-lg" src="{{asset('badges/influencer/influencer_logo.png')}}">
+                        <img class="w-5/6 rounded-lg shadow-lg" src="{{asset('badges/influencer/influencer_logo.png')}}">
                     </div>
                     <div class="flex-1">
                         <p class="font-normal italic text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px]">
@@ -78,12 +78,12 @@
                         </p>
                         <div class="pt-6">
                             <nav>
-                                <ol class="list-decimal m-0 ml-4 pl-2">
+                                <ol class="pl-2 m-0 ml-4 list-decimal">
                                     @foreach($influencerBadges as $achievement)
                                         @if(!$loop->last)
-                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500 pr-8 sm:pr-20">
+                                            <li class="relative p-0 pr-8 font-normal text-default md:text-xl text-slate-500 sm:pr-20">
                                         @else
-                                            <li class="relative font-normal text-default md:text-xl p-0 text-slate-500">
+                                            <li class="relative p-0 font-normal text-default md:text-xl text-slate-500">
                                                 @endif
                                                 @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
                                                     <x-badges.completed :achievement="$achievement"></x-badges.completed>
