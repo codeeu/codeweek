@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use App\MatchmakingProfile as MatchmakingProfileModel;
 use App\Nova\Actions\ImportMatchmakingProfiles;
+use App\Nova\Actions\DownloadMatchmakingTemplate;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -109,6 +110,7 @@ class MatchmakingProfile extends Resource
     public function actions(NovaRequest $request): array
     {
         return [
+            new DownloadMatchmakingTemplate,
             new ImportMatchmakingProfiles,
         ];
     }
