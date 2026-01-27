@@ -306,10 +306,24 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'Completion time',
         ]));
 
+        // Check if profile already exists
+        $existingProfile = null;
+        
+        if ($type === MatchmakingProfile::TYPE_ORGANISATION && !empty($organisationName)) {
+            // For organisations, check by organisation name
+            $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_ORGANISATION)
+                ->where('organisation_name', $organisationName)
+                ->first();
+        } elseif ($type === MatchmakingProfile::TYPE_VOLUNTEER && !empty($email)) {
+            // For volunteers, check by email
+            $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_VOLUNTEER)
+                ->where('email', $email)
+                ->first();
+        }
+
         // Build the profile data
         $profileData = [
             'type' => $type,
-            'slug' => $slug,
             'email' => $email,
             'organisation_name' => $organisationName,
             'organisation_type' => $organisationType,
@@ -328,26 +342,47 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'completion_time' => $completionTime,
         ];
 
-        // Remove null values to use database defaults
+        // Only set slug if creating new profile
+        if (!$existingProfile) {
+            $profileData['slug'] = $slug;
+        }
+
+        // Remove null values to use database defaults, but keep empty arrays
         $profileData = array_filter($profileData, function ($value) {
             return $value !== null;
         });
 
         try {
-            $profile = new MatchmakingProfile($profileData);
-            $profile->save();
-            
-            Log::info('[MatchmakingProfileImport] Created profile', [
-                'id' => $profile->id,
-                'slug' => $profile->slug,
-                'email' => $profile->email,
-            ]);
-            
-            return $profile;
+            if ($existingProfile) {
+                // Update existing profile
+                $existingProfile->update($profileData);
+                
+                Log::info('[MatchmakingProfileImport] Updated existing profile', [
+                    'id' => $existingProfile->id,
+                    'slug' => $existingProfile->slug,
+                    'email' => $existingProfile->email,
+                    'organisation_name' => $existingProfile->organisation_name,
+                ]);
+                
+                return $existingProfile;
+            } else {
+                // Create new profile
+                $profile = new MatchmakingProfile($profileData);
+                $profile->save();
+                
+                Log::info('[MatchmakingProfileImport] Created new profile', [
+                    'id' => $profile->id,
+                    'slug' => $profile->slug,
+                    'email' => $profile->email,
+                ]);
+                
+                return $profile;
+            }
         } catch (\Exception $e) {
-            Log::error('[MatchmakingProfileImport] Failed to create profile', [
+            Log::error('[MatchmakingProfileImport] Failed to save profile', [
                 'error' => $e->getMessage(),
                 'row' => $row,
+                'existing' => $existingProfile ? $existingProfile->id : null,
             ]);
             return null;
         }
