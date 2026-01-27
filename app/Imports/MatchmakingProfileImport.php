@@ -170,10 +170,20 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             return null;
         }
 
+        // Trim values
+        $email = $email ? trim($email) : null;
+        $organisationName = $organisationName ? trim($organisationName) : null;
+
         // Determine type - if organisation_name exists, it's an organisation, otherwise volunteer
         $type = !empty($organisationName) 
             ? MatchmakingProfile::TYPE_ORGANISATION 
             : MatchmakingProfile::TYPE_VOLUNTEER;
+        
+        Log::info('[MatchmakingProfileImport] Processing row', [
+            'type' => $type,
+            'email' => $email,
+            'organisation_name' => $organisationName,
+        ]);
 
         // Generate slug
         $slug = $this->generateSlug(
@@ -307,18 +317,75 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         ]));
 
         // Check if profile already exists
+        // Use case-insensitive matching and trim whitespace
         $existingProfile = null;
         
         if ($type === MatchmakingProfile::TYPE_ORGANISATION && !empty($organisationName)) {
-            // For organisations, check by organisation name
+            // For organisations, check by organisation name (case-insensitive, trimmed)
+            $trimmedOrgName = trim($organisationName);
+            $lowerOrgName = mb_strtolower($trimmedOrgName);
+            
+            // First try with type constraint
             $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_ORGANISATION)
-                ->where('organisation_name', $organisationName)
+                ->whereRaw('LOWER(TRIM(COALESCE(organisation_name, \'\'))) = ?', [$lowerOrgName])
                 ->first();
+            
+            // If not found, try without type constraint (in case type was set incorrectly)
+            if (!$existingProfile) {
+                $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(COALESCE(organisation_name, \'\'))) = ?', [$lowerOrgName])
+                    ->whereNotNull('organisation_name')
+                    ->first();
+            }
+            
+            // Log for debugging
+            if ($existingProfile) {
+                Log::info('[MatchmakingProfileImport] Found existing organisation', [
+                    'id' => $existingProfile->id,
+                    'existing_name' => $existingProfile->organisation_name,
+                    'existing_type' => $existingProfile->type,
+                    'import_name' => $organisationName,
+                    'import_type' => $type,
+                ]);
+            } else {
+                Log::info('[MatchmakingProfileImport] No existing organisation found', [
+                    'searched_name' => $organisationName,
+                    'trimmed' => $trimmedOrgName,
+                    'lower' => $lowerOrgName,
+                ]);
+            }
         } elseif ($type === MatchmakingProfile::TYPE_VOLUNTEER && !empty($email)) {
-            // For volunteers, check by email
+            // For volunteers, check by email (case-insensitive, trimmed)
+            $trimmedEmail = trim($email);
+            $lowerEmail = mb_strtolower($trimmedEmail);
+            
+            // First try with type constraint
             $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_VOLUNTEER)
-                ->where('email', $email)
+                ->whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
                 ->first();
+            
+            // If not found, try without type constraint (in case type was set incorrectly)
+            if (!$existingProfile) {
+                $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
+                    ->whereNotNull('email')
+                    ->first();
+            }
+            
+            // Log for debugging
+            if ($existingProfile) {
+                Log::info('[MatchmakingProfileImport] Found existing volunteer', [
+                    'id' => $existingProfile->id,
+                    'existing_email' => $existingProfile->email,
+                    'existing_type' => $existingProfile->type,
+                    'import_email' => $email,
+                    'import_type' => $type,
+                ]);
+            } else {
+                Log::info('[MatchmakingProfileImport] No existing volunteer found', [
+                    'searched_email' => $email,
+                    'trimmed' => $trimmedEmail,
+                    'lower' => $lowerEmail,
+                ]);
+            }
         }
 
         // Build the profile data
@@ -354,14 +421,16 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
 
         try {
             if ($existingProfile) {
-                // Update existing profile
-                $existingProfile->update($profileData);
+                // Update existing profile - use fill() and save() to ensure model events fire
+                $existingProfile->fill($profileData);
+                $existingProfile->save();
                 
                 Log::info('[MatchmakingProfileImport] Updated existing profile', [
                     'id' => $existingProfile->id,
                     'slug' => $existingProfile->slug,
                     'email' => $existingProfile->email,
                     'organisation_name' => $existingProfile->organisation_name,
+                    'updated_fields' => array_keys($profileData),
                 ]);
                 
                 return $existingProfile;
@@ -374,6 +443,7 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
                     'id' => $profile->id,
                     'slug' => $profile->slug,
                     'email' => $profile->email,
+                    'organisation_name' => $profile->organisation_name,
                 ]);
                 
                 return $profile;
@@ -381,8 +451,10 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         } catch (\Exception $e) {
             Log::error('[MatchmakingProfileImport] Failed to save profile', [
                 'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
                 'row' => $row,
                 'existing' => $existingProfile ? $existingProfile->id : null,
+                'profile_data' => $profileData,
             ]);
             return null;
         }
