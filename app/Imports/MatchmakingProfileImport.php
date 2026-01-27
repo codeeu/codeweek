@@ -871,6 +871,20 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         // Only set slug if creating new profile
         if (!$existingProfile) {
             $profileData['slug'] = $slug;
+        } else {
+            // For volunteers, update slug if it was previously based on organisation name or is missing
+            if ($type === MatchmakingProfile::TYPE_VOLUNTEER) {
+                $currentSlug = $existingProfile->slug ?? '';
+                $orgSlug = $organisationName ? Str::slug($organisationName) : '';
+                $existingOrgSlug = $existingProfile->organisation_name ? Str::slug($existingProfile->organisation_name) : '';
+                $shouldUpdateSlug = empty($currentSlug)
+                    || (!empty($orgSlug) && $currentSlug === $orgSlug)
+                    || (!empty($existingOrgSlug) && $currentSlug === $existingOrgSlug);
+
+                if ($shouldUpdateSlug && !empty($slug)) {
+                    $profileData['slug'] = $slug;
+                }
+            }
         }
 
         // For updates, we want to include all fields (even null) to properly update
