@@ -44,6 +44,25 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         return in_array($v, ['1', 'true', 'yes', 'y'], true);
     }
 
+    protected function normalizeEmail(?string $value): ?string
+    {
+        if ($value === null) {
+            return null;
+        }
+        $value = trim((string) $value);
+        if ($value === '' || $value === '—' || $value === '-') {
+            return null;
+        }
+        $lower = mb_strtolower($value);
+        if (in_array($lower, ['anonymous', 'n/a', 'na', 'none', 'null'], true)) {
+            return null;
+        }
+        if (!str_contains($value, '@')) {
+            return null;
+        }
+        return $value;
+    }
+
     /**
      * Parse date values
      */
@@ -303,7 +322,7 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $row = $this->normalizeRowKeys($row);
 
         // Try to get email and organisation name with multiple possible key variations
-        $email = $this->getRowValue($row, [
+        $rawEmail = $this->getRowValue($row, [
             'email',
             'Email',
             'email_address',
@@ -339,6 +358,11 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $mainEmailAddress = $this->getRowValue($row, [
             'main_email_address',
             'Main email address',
+        ]);
+
+        $emailAddress = $this->getRowValue($row, [
+            'email_address',
+            'Email address',
         ]);
 
         // Optional location field (if present)
@@ -391,26 +415,32 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'Do you give your consent to use your LinkedIn profile picture and display it in the matchmaking directory?',
         ]);
 
-        // Skip rows without essential data
-        if (empty($email) && empty($organisationName)) {
-            Log::warning('[MatchmakingProfileImport] Skipping row - missing email and organisation_name', $row);
-            return null;
-        }
-
         // Trim values
-        $email = $email ? trim($email) : null;
+        $rawEmail = $rawEmail ? trim($rawEmail) : null;
         $organisationName = $organisationName ? trim($organisationName) : null;
         $fullName = $fullName ? trim($fullName) : null;
         $firstName = $firstName ? trim($firstName) : null;
         $lastName = $lastName ? trim($lastName) : null;
         $jobTitle = $jobTitle ? trim($jobTitle) : null;
         $mainEmailAddress = $mainEmailAddress ? trim($mainEmailAddress) : null;
+        $emailAddress = $emailAddress ? trim($emailAddress) : null;
         $locationValue = $locationValue ? trim($locationValue) : null;
         $languages = $languages ? trim($languages) : null;
         $linkedin = $linkedin ? trim($linkedin) : null;
         $timeCommitment = $timeCommitment ? trim($timeCommitment) : null;
         $whyVolunteeringValue = $whyVolunteeringValue ? trim($whyVolunteeringValue) : null;
         $formatValue = $formatValue ? trim($formatValue) : null;
+
+        // Prefer email address and main email address over "Email" (often "anonymous")
+        $email = $this->normalizeEmail($emailAddress)
+            ?? $this->normalizeEmail($mainEmailAddress)
+            ?? $this->normalizeEmail($rawEmail);
+
+        // Skip rows without essential data
+        if (empty($email) && empty($organisationName) && empty($fullName)) {
+            Log::warning('[MatchmakingProfileImport] Skipping row - missing email, organisation_name, and name', $row);
+            return null;
+        }
 
         // Optional explicit type override from CSV
         $typeOverride = $this->getRowValue($row, [
@@ -811,6 +841,13 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'start_time' => $startTime,
             'completion_time' => $completionTime,
         ];
+
+        if ($existingProfile && empty($email)) {
+            unset($profileData['email']);
+        }
+        if ($existingProfile && empty($organisationName)) {
+            unset($profileData['organisation_name']);
+        }
 
         // Only set slug if creating new profile
         if (!$existingProfile) {
