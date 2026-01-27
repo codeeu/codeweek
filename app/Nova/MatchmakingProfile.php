@@ -33,71 +33,80 @@ class MatchmakingProfile extends Resource
 
             Select::make('Type')
                 ->options(array_combine(MatchmakingProfileModel::getValidTypes(), MatchmakingProfileModel::getValidTypes()))
-                ->displayUsingLabels(),
+                ->displayUsingLabels()
+                ->sortable(),
 
             Text::make('Slug')
                 ->sortable()
-                ->rules('required', 'max:255'),
+                ->rules('required', 'max:255')
+                ->hideFromIndex(),
 
             Text::make('Avatar')->hideFromIndex(),
 
             Text::make('Email')->sortable(),
-            Text::make('First Name')->hideFromIndex(),
-            Text::make('Last Name')->hideFromIndex(),
-            Text::make('Job Title')->hideFromIndex(),
+            Text::make('First Name')->sortable(),
+            Text::make('Last Name')->sortable(),
+            Text::make('Job Title'),
             Text::make('Linkedin')->hideFromIndex(),
             Text::make('Facebook')->hideFromIndex(),
-            Text::make('Website')->hideFromIndex(),
+            Text::make('Website'),
             Text::make('Organisation Name')->sortable(),
 
             // Array fields as JSON textareas
             Textarea::make('Languages')
-                ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
-                ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true)),
+                ->resolveUsing(fn($v) => is_array($v) ? implode(', ', $v) : ($v ?: ''))
+                ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
+                ->alwaysShow(),
 
             Textarea::make('Organisation Type')
-                ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
-                ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true)),
+                ->resolveUsing(fn($v) => is_array($v) ? implode(', ', $v) : ($v ?: ''))
+                ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
+                ->alwaysShow(),
 
-            Textarea::make('Organisation Mission')->hideFromIndex(),
+            Textarea::make('Organisation Mission')->alwaysShow(),
 
-            Text::make('Location')->hideFromIndex(),
-            BelongsTo::make('Country', 'countryModel', \App\Nova\Country::class)->nullable(),
+            Text::make('Location'),
+            BelongsTo::make('Country', 'countryModel', \App\Nova\Country::class)
+                ->nullable()
+                ->sortable()
+                ->searchable(),
 
             Textarea::make('Support Activities')
-                ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
-                ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true)),
+                ->resolveUsing(fn($v) => is_array($v) ? implode(', ', $v) : ($v ?: ''))
+                ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
+                ->alwaysShow(),
 
-            Text::make('Interested In School Collaboration')->hideFromIndex(),
+            Text::make('Interested In School Collaboration')->sortable(),
 
             Textarea::make('Target School Types')
-                ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
+                ->resolveUsing(fn($v) => is_array($v) ? implode(', ', $v) : ($v ?: ''))
                 ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
-                ->hideFromIndex(),
+                ->alwaysShow(),
 
             Textarea::make('Time Commitment')
-                ->resolveUsing(fn($v) => is_array($v) ? json_encode($v) : $v)
+                ->resolveUsing(fn($v) => is_array($v) ? implode(', ', $v) : ($v ?: ''))
                 ->fillUsing(fn($req, $mdl, $attr, $reqAttr) => $mdl->{$attr} = json_decode($req->{$reqAttr}, true))
-                ->hideFromIndex(),
+                ->alwaysShow(),
 
             Boolean::make('Dark Avatar', 'avatar_dark')->hideFromIndex(),
             Boolean::make('Can Start Immediately'),
-            Textarea::make('Why Volunteering')->hideFromIndex(),
+            Textarea::make('Why Volunteering')->alwaysShow(),
 
             Select::make('Format')
                 ->options(MatchmakingProfileModel::getValidFormats())
-                ->displayUsingLabels(),
+                ->displayUsingLabels()
+                ->sortable(),
 
             Boolean::make('Is Use Resource'),
             Boolean::make('Want Updates'),
             Boolean::make('Agree To Be Contacted For Feedback'),
-            Textarea::make('Description')->hideFromIndex(),
+            Textarea::make('Description')->alwaysShow(),
 
-            DateTime::make('Start Time')->hideFromIndex(),
-            DateTime::make('Completion Time')->hideFromIndex(),
+            DateTime::make('Start Time')->sortable(),
+            DateTime::make('Completion Time')->sortable(),
 
             Boolean::make('Email Via Linkedin'),
-            Text::make('Get Email From')->hideFromIndex(),
+            Text::make('Get Email From'),
         ];
     }
 
