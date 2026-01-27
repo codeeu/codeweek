@@ -328,6 +328,12 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'Main email address',
         ]);
 
+        // Optional location field (if present)
+        $locationValue = $this->getRowValue($row, [
+            'location',
+            'Location',
+        ]);
+
         // Skip rows without essential data
         if (empty($email) && empty($organisationName)) {
             Log::warning('[MatchmakingProfileImport] Skipping row - missing email and organisation_name', $row);
@@ -342,6 +348,7 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $lastName = $lastName ? trim($lastName) : null;
         $jobTitle = $jobTitle ? trim($jobTitle) : null;
         $mainEmailAddress = $mainEmailAddress ? trim($mainEmailAddress) : null;
+        $locationValue = $locationValue ? trim($locationValue) : null;
 
         // Determine type - if organisation_name exists, it's an organisation, otherwise volunteer
         $type = !empty($organisationName) 
@@ -449,6 +456,13 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             ]);
         } else {
             Log::info('[MatchmakingProfileImport] No country value found in row');
+            static $loggedKeys = false;
+            if (!$loggedKeys) {
+                $loggedKeys = true;
+                Log::info('[MatchmakingProfileImport] Row keys sample', [
+                    'keys' => array_keys($row),
+                ]);
+            }
         }
 
         // Parse website - ensure it has protocol
@@ -539,37 +553,101 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
                     'lower' => $lowerOrgName,
                 ]);
             }
-        } elseif ($type === MatchmakingProfile::TYPE_VOLUNTEER && !empty($email)) {
-            // For volunteers, check by email (case-insensitive, trimmed)
-            $trimmedEmail = trim($email);
-            $lowerEmail = mb_strtolower($trimmedEmail);
-            
-            // First try with type constraint
-            $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_VOLUNTEER)
-                ->whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
-                ->first();
-            
-            // If not found, try without type constraint (in case type was set incorrectly)
-            if (!$existingProfile) {
-                $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
-                    ->whereNotNull('email')
+        } elseif ($type === MatchmakingProfile::TYPE_VOLUNTEER) {
+            if (!empty($email)) {
+                // For volunteers, check by email (case-insensitive, trimmed)
+                $trimmedEmail = trim($email);
+                $lowerEmail = mb_strtolower($trimmedEmail);
+
+                // First try with type constraint
+                $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_VOLUNTEER)
+                    ->whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
                     ->first();
-            }
-            
-            // Log for debugging
-            if ($existingProfile) {
-                Log::info('[MatchmakingProfileImport] Found existing volunteer', [
-                    'id' => $existingProfile->id,
-                    'existing_email' => $existingProfile->email,
-                    'existing_type' => $existingProfile->type,
-                    'import_email' => $email,
-                    'import_type' => $type,
-                ]);
+
+                // If not found, try without type constraint (in case type was set incorrectly)
+                if (!$existingProfile) {
+                    $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
+                        ->whereNotNull('email')
+                        ->first();
+                }
+
+                // Log for debugging
+                if ($existingProfile) {
+                    Log::info('[MatchmakingProfileImport] Found existing volunteer by email', [
+                        'id' => $existingProfile->id,
+                        'existing_email' => $existingProfile->email,
+                        'existing_type' => $existingProfile->type,
+                        'import_email' => $email,
+                        'import_type' => $type,
+                    ]);
+                } else {
+                    Log::info('[MatchmakingProfileImport] No existing volunteer found by email', [
+                        'searched_email' => $email,
+                        'trimmed' => $trimmedEmail,
+                        'lower' => $lowerEmail,
+                    ]);
+                }
             } else {
-                Log::info('[MatchmakingProfileImport] No existing volunteer found', [
-                    'searched_email' => $email,
-                    'trimmed' => $trimmedEmail,
-                    'lower' => $lowerEmail,
+                // Fallback: match by first + last name when email is missing
+                if (!empty($firstName) && !empty($lastName)) {
+                    $first = mb_strtolower(trim($firstName));
+                    $last = mb_strtolower(trim($lastName));
+
+                    $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_VOLUNTEER)
+                        ->whereRaw('LOWER(TRIM(first_name)) = ?', [$first])
+                        ->whereRaw('LOWER(TRIM(last_name)) = ?', [$last])
+                        ->first();
+
+                    // If not found, try without type constraint (in case type was set incorrectly)
+                    if (!$existingProfile) {
+                        $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(first_name)) = ?', [$first])
+                            ->whereRaw('LOWER(TRIM(last_name)) = ?', [$last])
+                            ->first();
+                    }
+
+                    if ($existingProfile) {
+                        Log::info('[MatchmakingProfileImport] Found existing volunteer by name', [
+                            'id' => $existingProfile->id,
+                            'existing_first_name' => $existingProfile->first_name,
+                            'existing_last_name' => $existingProfile->last_name,
+                            'import_first_name' => $firstName,
+                            'import_last_name' => $lastName,
+                        ]);
+                    } else {
+                        Log::info('[MatchmakingProfileImport] No existing volunteer found by name', [
+                            'searched_first_name' => $firstName,
+                            'searched_last_name' => $lastName,
+                        ]);
+                    }
+                } else {
+                    Log::info('[MatchmakingProfileImport] Volunteer missing email and name; cannot match', [
+                        'email' => $email,
+                        'first_name' => $firstName,
+                        'last_name' => $lastName,
+                        'full_name' => $fullName,
+                    ]);
+                }
+            }
+        }
+
+        // If country is still missing, try to infer from location (CSV or existing profile)
+        if (empty($countryIso)) {
+            $fallbackLocation = $locationValue;
+            if (empty($fallbackLocation) && $existingProfile) {
+                $fallbackLocation = $existingProfile->location;
+            }
+
+            if (!empty($fallbackLocation)) {
+                $fallbackLocation = trim((string) $fallbackLocation);
+                if (strlen($fallbackLocation) === 2) {
+                    $countryIso = strtoupper($fallbackLocation);
+                } else {
+                    $cleanedLocation = $this->extractCountryName($fallbackLocation);
+                    $countryIso = $this->findCountryIso($cleanedLocation);
+                }
+                Log::info('[MatchmakingProfileImport] Country fallback from location', [
+                    'location' => $fallbackLocation,
+                    'country_iso' => $countryIso,
                 ]);
             }
         }
@@ -587,6 +665,7 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'organisation_type' => $organisationType,
             'organisation_mission' => $organisationMission,
             'website' => $website,
+            'location' => $locationValue,
             'country' => $countryIso, // This can be null to clear the field
             'support_activities' => $supportActivities,
             'interested_in_school_collaboration' => $interestedInCollaboration,
