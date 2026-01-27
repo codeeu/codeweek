@@ -415,6 +415,9 @@ Route::post('/matchmaking-tool/search', [MatchMakingToolController::class, 'sear
 Route::get('/matchmaking-tool/{slug}', [MatchMakingToolController::class, 'show'])->name(
     'matchmaking_tool_detail'
 );
+Route::get('/matchmaking-tool/download/template', [MatchMakingToolController::class, 'downloadTemplate'])
+    ->middleware('auth')
+    ->name('matchmaking_template_download');
 //Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources')->middleware('auth');
 //Route::post('/resources/suggest', 'SuggestResourcesController@store')->name('store_suggest_resources')->middleware('auth');
 
