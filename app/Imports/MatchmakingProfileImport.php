@@ -232,13 +232,17 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
     }
 
     /**
-     * Generate slug from organisation name or email
+     * Generate slug from a base string
      */
-    protected function generateSlug($organisationName, $email): string
+    protected function generateSlug(string $base): string
     {
-        $base = !empty($organisationName) ? $organisationName : $email;
+        $base = trim($base);
         $slug = Str::slug($base);
-        
+
+        if ($slug === '') {
+            $slug = 'profile';
+        }
+
         // Ensure uniqueness
         $originalSlug = $slug;
         $counter = 1;
@@ -246,7 +250,7 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             $slug = $originalSlug . '-' . $counter;
             $counter++;
         }
-        
+
         return $slug;
     }
 
@@ -509,17 +513,32 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             $lastName = count($parts) ? implode(' ', $parts) : null;
         }
         
+        // Build slug base
+        $slugBase = null;
+        if ($type === MatchmakingProfile::TYPE_VOLUNTEER) {
+            $nameParts = array_filter([trim((string) $firstName), trim((string) $lastName)]);
+            if (!empty($nameParts)) {
+                $slugBase = implode(' ', $nameParts);
+            } elseif (!empty($fullName)) {
+                $slugBase = $fullName;
+            } elseif (!empty($email)) {
+                $slugBase = $email;
+            } else {
+                $slugBase = $organisationName ?: 'profile';
+            }
+        } else {
+            $slugBase = $organisationName ?: ($email ?: 'profile');
+        }
+
         Log::info('[MatchmakingProfileImport] Processing row', [
             'type' => $type,
             'email' => $email,
             'organisation_name' => $organisationName,
+            'slug_base' => $slugBase,
         ]);
 
         // Generate slug
-        $slug = $this->generateSlug(
-            $organisationName ?? '',
-            $email ?? 'anonymous'
-        );
+        $slug = $this->generateSlug($slugBase);
 
         // Parse organisation type
         $organisationType = [];
