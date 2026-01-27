@@ -42,10 +42,24 @@ class ImportMatchmakingProfiles extends Action
                 return Action::danger('Please select a CSV file to import.');
             }
 
-            // Validate file extension
-            $extension = $file->getClientOriginalExtension();
-            if (!in_array(strtolower($extension), ['csv', 'xlsx', 'xls'])) {
-                return Action::danger('Invalid file type. Please upload a CSV or Excel file.');
+            // Validate file extension (more lenient)
+            $extension = strtolower($file->getClientOriginalExtension());
+            $allowedExtensions = ['csv', 'txt', 'xlsx', 'xls'];
+            
+            // Also check the filename if extension is missing
+            if (empty($extension)) {
+                $filename = strtolower($file->getClientOriginalName());
+                if (strpos($filename, '.csv') !== false) {
+                    $extension = 'csv';
+                } elseif (strpos($filename, '.xlsx') !== false) {
+                    $extension = 'xlsx';
+                } elseif (strpos($filename, '.xls') !== false) {
+                    $extension = 'xls';
+                }
+            }
+            
+            if (!in_array($extension, $allowedExtensions)) {
+                return Action::danger('Invalid file type. Please upload a CSV or Excel file (.csv, .xlsx, or .xls).');
             }
 
             // Store the file temporarily
@@ -90,7 +104,31 @@ class ImportMatchmakingProfiles extends Action
     {
         return [
             File::make('CSV File', 'csv_file')
-                ->rules('required', 'mimes:csv,xlsx,xls', 'max:10240') // Max 10MB
+                ->rules([
+                    'required',
+                    'file',
+                    'max:10240',
+                    function ($attribute, $value, $fail) {
+                        if ($value) {
+                            $extension = strtolower($value->getClientOriginalExtension());
+                            $allowedExtensions = ['csv', 'txt', 'xlsx', 'xls'];
+                            
+                            // Check extension
+                            if (!in_array($extension, $allowedExtensions)) {
+                                // Also check filename for CSV
+                                $filename = strtolower($value->getClientOriginalName());
+                                $isCsv = strpos($filename, '.csv') !== false;
+                                $isXlsx = strpos($filename, '.xlsx') !== false;
+                                $isXls = strpos($filename, '.xls') !== false;
+                                
+                                if (!$isCsv && !$isXlsx && !$isXls) {
+                                    $fail('The file must be a CSV or Excel file (.csv, .xlsx, or .xls).');
+                                }
+                            }
+                        }
+                    }
+                ])
+                ->acceptedTypes('.csv,.xlsx,.xls')
                 ->help('Upload a CSV or Excel file with matchmaking profile data. The file should have headers matching the form field names.'),
         ];
     }
