@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 use App\Filters\MatchmakingProfileFilters;
 use Symfony\Component\HttpFoundation\StreamedResponse;
+use Illuminate\Support\Str;
 
 class MatchMakingToolController extends Controller
 {
@@ -77,6 +78,22 @@ class MatchMakingToolController extends Controller
         $profile = MatchmakingProfile::where('slug', $slug)->first();
 
         if (! $profile) {
+            // Fallback: try to match by computed slug from name or organisation name
+            $search = str_replace('-', ' ', $slug);
+            $candidates = MatchmakingProfile::query()
+                ->where('organisation_name', 'like', "%{$search}%")
+                ->orWhereRaw("CONCAT(COALESCE(first_name, ''), ' ', COALESCE(last_name, '')) LIKE ?", ["%{$search}%"])
+                ->get(['id', 'slug', 'first_name', 'last_name', 'organisation_name']);
+
+            foreach ($candidates as $candidate) {
+                $orgSlug = $candidate->organisation_name ? Str::slug($candidate->organisation_name) : null;
+                $nameSlug = Str::slug(trim("{$candidate->first_name} {$candidate->last_name}"));
+
+                if ($slug === $orgSlug || $slug === $nameSlug) {
+                    return redirect()->route('matchmaking_tool_detail', ['slug' => $candidate->slug], 301);
+                }
+            }
+
             abort(404);
         }
 
