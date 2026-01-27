@@ -123,7 +123,7 @@
 
 
                 <img src="{{ asset('images/training/codycolor-kit-learning-bits.png') }}" alt="CodyColor Kit Learning Bits"
-                    class="mb-12 w-full h-full max-h-[630px] object-contain">
+                   style="max-height: 630px;"  class="mb-12 w-full h-full max-h-[630px] object-contain">
 
                 {{-- PDF Downloads --}}
                 <h2 class="text-dark-blue text-2xl md:text-3xl leading-[44px] font-medium font-['Montserrat'] mb-4">
