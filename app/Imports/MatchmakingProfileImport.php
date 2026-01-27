@@ -81,6 +81,48 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
     }
 
     /**
+     * Extract country name from potentially complex location strings
+     * Handles cases like "Fier, Albamia", "Durres/Albania/ Albania", "Belgium/Brussels/..."
+     */
+    protected function extractCountryName($locationString): string
+    {
+        $locationString = trim($locationString);
+        
+        // Common country names to look for
+        $countryNames = [
+            'Albania', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan', 'Belarus', 'Belgium',
+            'Bosnia', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech', 'Denmark', 'Estonia',
+            'Finland', 'France', 'Georgia', 'Germany', 'Greece', 'Hungary', 'Iceland',
+            'Ireland', 'Italy', 'Latvia', 'Liechtenstein', 'Lithuania', 'Luxembourg',
+            'Malta', 'Moldova', 'Monaco', 'Montenegro', 'Netherlands', 'North Macedonia',
+            'Norway', 'Poland', 'Portugal', 'Romania', 'Russia', 'San Marino', 'Serbia',
+            'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Turkey', 'Türkiye',
+            'Ukraine', 'United Kingdom', 'UK', 'Vatican',
+        ];
+        
+        // Try to find a country name in the string
+        foreach ($countryNames as $country) {
+            if (stripos($locationString, $country) !== false) {
+                return $country;
+            }
+        }
+        
+        // If no country found, try splitting by common separators and check each part
+        $parts = preg_split('/[,\/;|]/', $locationString);
+        foreach ($parts as $part) {
+            $part = trim($part);
+            foreach ($countryNames as $country) {
+                if (stripos($part, $country) !== false) {
+                    return $country;
+                }
+            }
+        }
+        
+        // If still no match, return the original string (trimmed)
+        return trim($locationString);
+    }
+
+    /**
      * Find country by name and return ISO code
      */
     protected function findCountryIso($countryName): ?string
@@ -89,25 +131,65 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             return null;
         }
 
+        $trimmedName = trim($countryName);
+        $lowerName = mb_strtolower($trimmedName);
+        
         // Try exact match first
-        $country = Country::where('name', $countryName)->first();
+        $country = Country::where('name', $trimmedName)->first();
         if ($country) {
+            Log::info("Country found (exact match): {$trimmedName} -> {$country->iso}");
             return $country->iso;
         }
 
         // Try case-insensitive match
-        $country = Country::whereRaw('LOWER(name) = ?', [mb_strtolower(trim($countryName))])->first();
+        $country = Country::whereRaw('LOWER(TRIM(name)) = ?', [$lowerName])->first();
         if ($country) {
+            Log::info("Country found (case-insensitive): {$trimmedName} -> {$country->iso}");
             return $country->iso;
         }
 
-        // Try partial match
-        $country = Country::whereRaw('LOWER(name) LIKE ?', ['%' . mb_strtolower(trim($countryName)) . '%'])->first();
+        // Try partial match (contains)
+        $country = Country::whereRaw('LOWER(TRIM(name)) LIKE ?', ['%' . $lowerName . '%'])->first();
         if ($country) {
+            Log::info("Country found (partial match): {$trimmedName} -> {$country->iso}");
             return $country->iso;
         }
 
-        Log::warning("Country not found: {$countryName}");
+        // Try reverse partial match (country name contains search term)
+        $country = Country::whereRaw('? LIKE CONCAT(\'%\', LOWER(TRIM(name)), \'%\')', [$lowerName])->first();
+        if ($country) {
+            Log::info("Country found (reverse partial): {$trimmedName} -> {$country->iso}");
+            return $country->iso;
+        }
+
+        // Common country name variations/mappings
+        $countryMappings = [
+            'italy' => 'IT',
+            'italia' => 'IT',
+            'spain' => 'ES',
+            'espana' => 'ES',
+            'greece' => 'GR',
+            'netherlands' => 'NL',
+            'holland' => 'NL',
+            'hungary' => 'HU',
+            'bulgaria' => 'BG',
+            'romania' => 'RO',
+            'malta' => 'MT',
+            'lithuania' => 'LT',
+            'latvia' => 'LV',
+            'albania' => 'AL',
+            'turkey' => 'TR',
+            'türkiye' => 'TR',
+            'belgium' => 'BE',
+        ];
+        
+        if (isset($countryMappings[$lowerName])) {
+            $iso = $countryMappings[$lowerName];
+            Log::info("Country found (mapping): {$trimmedName} -> {$iso}");
+            return $iso;
+        }
+
+        Log::warning("Country not found: {$trimmedName}");
         return null;
     }
 
@@ -262,9 +344,13 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'Country',
         ]);
         if (!empty($countryValue)) {
-            $countryIso = $this->findCountryIso($countryValue);
+            // Clean and extract country name from potentially complex values
+            // Handle cases like "Fier, Albamia", "Durres/Albania/ Albania", "Belgium/Brussels/..."
+            $cleanedCountry = $this->extractCountryName($countryValue);
+            $countryIso = $this->findCountryIso($cleanedCountry);
             Log::info('[MatchmakingProfileImport] Country lookup', [
-                'input' => $countryValue,
+                'original_input' => $countryValue,
+                'cleaned' => $cleanedCountry,
                 'result' => $countryIso,
             ]);
         } else {
@@ -425,9 +511,22 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         // For new records, we can filter out nulls to use defaults
         if ($existingProfile) {
             // Keep all fields for updates, but convert empty strings to null for consistency
+            // IMPORTANT: Always include country field even if null, so we can update it
             $profileData = array_map(function ($value) {
                 return $value === '' ? null : $value;
             }, $profileData);
+            
+            // Ensure country is always in the array for updates (even if null)
+            if (!array_key_exists('country', $profileData)) {
+                $profileData['country'] = $countryIso;
+            }
+            
+            Log::info('[MatchmakingProfileImport] Profile data for update', [
+                'country_iso' => $countryIso,
+                'country_in_array' => array_key_exists('country', $profileData),
+                'country_value' => $profileData['country'] ?? 'NOT SET',
+                'all_keys' => array_keys($profileData),
+            ]);
         } else {
             // For new records, remove null values to use database defaults
             $profileData = array_filter($profileData, function ($value) {
