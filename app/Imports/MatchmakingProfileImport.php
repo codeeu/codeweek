@@ -283,6 +283,17 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         return $default;
     }
 
+    protected function hasAnyValue(array $row, array $keys): bool
+    {
+        foreach ($keys as $key) {
+            $value = $this->getRowValue($row, [$key]);
+            if (!empty($value)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * Map a row to a MatchmakingProfile model
      */
@@ -295,6 +306,8 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $email = $this->getRowValue($row, [
             'email',
             'Email',
+            'email_address',
+            'Email address',
             'main_email_address',
             'Main email address',
         ]);
@@ -332,6 +345,50 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $locationValue = $this->getRowValue($row, [
             'location',
             'Location',
+            'current_location_country_city',
+            'Current location (country, city)',
+        ]);
+
+        // Volunteer-specific fields
+        $languages = $this->getRowValue($row, [
+            'languages_spoken_select_all_that_apply',
+            'Languages spoken (Select all that apply)',
+            'languages',
+            'Languages',
+        ]);
+        $linkedin = $this->getRowValue($row, [
+            'linkedin_profile',
+            'LinkedIn profile',
+            'linkedin',
+            'Linkedin',
+        ]);
+        $timeCommitment = $this->getRowValue($row, [
+            'please_specify_time_commitment',
+            'Please specify time commitment',
+            'time_commitment',
+            'Time Commitment',
+        ]);
+        $canStartImmediatelyValue = $this->getRowValue($row, [
+            'are_you_able_to_start_immediately',
+            'Are you able to start immediately?',
+            'can_start_immediately',
+            'Can Start Immediately',
+        ]);
+        $whyVolunteeringValue = $this->getRowValue($row, [
+            'why_are_you_volunteering',
+            'Why are you volunteering?',
+            'why_volunteering',
+            'Why Volunteering',
+        ]);
+        $formatValue = $this->getRowValue($row, [
+            'what_format_works_best_for_your_participation',
+            'What format works best for your participation',
+            'format',
+            'Format',
+        ]);
+        $linkedinConsent = $this->getRowValue($row, [
+            'do_you_give_your_consent_to_use_your_linkedin_profile_picture_and_display_it_in_the_matchmaking_directory',
+            'Do you give your consent to use your LinkedIn profile picture and display it in the matchmaking directory?',
         ]);
 
         // Skip rows without essential data
@@ -349,11 +406,71 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $jobTitle = $jobTitle ? trim($jobTitle) : null;
         $mainEmailAddress = $mainEmailAddress ? trim($mainEmailAddress) : null;
         $locationValue = $locationValue ? trim($locationValue) : null;
+        $languages = $languages ? trim($languages) : null;
+        $linkedin = $linkedin ? trim($linkedin) : null;
+        $timeCommitment = $timeCommitment ? trim($timeCommitment) : null;
+        $whyVolunteeringValue = $whyVolunteeringValue ? trim($whyVolunteeringValue) : null;
+        $formatValue = $formatValue ? trim($formatValue) : null;
 
-        // Determine type - if organisation_name exists, it's an organisation, otherwise volunteer
-        $type = !empty($organisationName) 
-            ? MatchmakingProfile::TYPE_ORGANISATION 
-            : MatchmakingProfile::TYPE_VOLUNTEER;
+        // Optional explicit type override from CSV
+        $typeOverride = $this->getRowValue($row, [
+            'type',
+            'Type',
+            'profile_type',
+            'Profile type',
+            'volunteer_or_organisation',
+            'Volunteer or organisation',
+        ]);
+        $typeOverride = $typeOverride ? mb_strtolower(trim($typeOverride)) : null;
+        if ($typeOverride && in_array($typeOverride, MatchmakingProfile::getValidTypes(), true)) {
+            $type = $typeOverride;
+        }
+
+        // Determine type based on form-specific columns if no override
+        $volunteerSignals = $this->hasAnyValue($row, [
+            'first_name',
+            'First name',
+            'last_name',
+            'Last name',
+            'languages_spoken_select_all_that_apply',
+            'Languages spoken (Select all that apply)',
+            'linkedin_profile',
+            'LinkedIn profile',
+            'why_are_you_volunteering',
+            'Why are you volunteering?',
+            'please_specify_time_commitment',
+            'Please specify time commitment',
+            'what_format_works_best_for_your_participation',
+            'What format works best for your participation',
+            'current_location_country_city',
+            'Current location (country, city)',
+        ]);
+
+        $organisationSignals = $this->hasAnyValue($row, [
+            'organisation_website',
+            'Organisation website',
+            'organisation_type',
+            'Organisation type',
+            'want_to_tell_us_more_about_your_organisation',
+            'Want to tell us more about your organisation?',
+            'target_school_types',
+            'What types of schools are you most interested in working with?',
+            'digital_expertise_areas',
+            'What areas of digital expertise does your organisation or you specialise in?',
+        ]);
+
+        if (empty($type)) {
+            if ($volunteerSignals) {
+                $type = MatchmakingProfile::TYPE_VOLUNTEER;
+            } elseif ($organisationSignals) {
+                $type = MatchmakingProfile::TYPE_ORGANISATION;
+            } else {
+                // Fallback: if organisation_name exists, it's an organisation, otherwise volunteer
+                $type = !empty($organisationName)
+                    ? MatchmakingProfile::TYPE_ORGANISATION
+                    : MatchmakingProfile::TYPE_VOLUNTEER;
+            }
+        }
 
         // If we only have full name, split into first/last for volunteers
         if ($type === MatchmakingProfile::TYPE_VOLUNTEER && empty($firstName) && empty($lastName) && !empty($fullName)) {
@@ -379,6 +496,8 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $orgTypeValue = $this->getRowValue($row, [
             'organisation_type',
             'Organisation type',
+            'type_of_organisation',
+            'Type of organisation',
             'organization_type',
             'Organization type',
         ]);
@@ -490,6 +609,9 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'do_you_give_your_consent_to_use_your_logo_and_display_it_in_the_matchmaking_directory',
             'Do you give your consent to use your logo and display it in the matchmaking directory?',
         ], false));
+        if ($type === MatchmakingProfile::TYPE_VOLUNTEER && !empty($linkedinConsent)) {
+            $isUseResource = $this->parseBool($linkedinConsent);
+        }
         
         $wantUpdates = $this->parseBool($this->getRowValue($row, [
             'would_you_like_to_be_part_of_the_wider_eu_code_week_community_and_receive_updates_about_future_activities_and_events',
@@ -515,6 +637,11 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'completion_time',
             'Completion time',
         ]));
+
+        // Volunteer fields
+        $languagesArray = !empty($languages) ? $this->parseArray($languages) : [];
+        $timeCommitmentArray = !empty($timeCommitment) ? $this->parseArray($timeCommitment) : [];
+        $canStartImmediately = $this->parseBool($canStartImmediatelyValue ?? false);
 
         // Check if profile already exists
         // Use case-insensitive matching and trim whitespace
@@ -667,10 +794,16 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'website' => $website,
             'location' => $locationValue,
             'country' => $countryIso, // This can be null to clear the field
+            'languages' => $languagesArray,
+            'linkedin' => $linkedin,
             'support_activities' => $supportActivities,
             'interested_in_school_collaboration' => $interestedInCollaboration,
             'target_school_types' => $targetSchoolTypes,
             'digital_expertise_areas' => $digitalExpertiseAreas,
+            'time_commitment' => $timeCommitmentArray,
+            'can_start_immediately' => $canStartImmediately,
+            'why_volunteering' => $whyVolunteeringValue,
+            'format' => $formatValue,
             'is_use_resource' => $isUseResource,
             'want_updates' => $wantUpdates,
             'agree_to_be_contacted_for_feedback' => $agreeToBeContacted,
