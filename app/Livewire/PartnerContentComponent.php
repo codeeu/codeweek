@@ -564,6 +564,18 @@ class PartnerContentComponent extends Component
                 'logo_url' => 'images/partners/NTI.png',
                 'categories' => ['Sponsor'],
             ],
+            (object)[
+                'id' =>  57,
+                'name' => 'Athena RC',
+                'logo_url' => 'images/partners/Athena_RC_logo.png',
+                'categories' => ['Partners'],
+                'description' => 'Athena RC conducts research in Information, Communication, and Computational Science & Technology, including all areas of data
+                science, robotics, artificial intelligence and digital communication, modelling, and simulation. Research and development are carried
+                out at the level of both information technology itself and specific applications. Computational sciences form a strong component of
+                the Athena RC activities, including computational linguistics, archaeology, engineering, medicine, biology, and mechanics.',
+                'link_url' => 'https://www.athenarc.gr/en',
+                'main_img_url' => 'images/partners/Athena_RC_logo.png'
+            ],
         ]);
     }
 
