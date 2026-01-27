@@ -86,7 +86,10 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
      */
     protected function extractCountryName($locationString): string
     {
+        $locationString = str_replace("\xc2\xa0", ' ', $locationString);
         $locationString = trim($locationString);
+        $locationString = trim($locationString, "\"' ");
+        $locationString = preg_replace('/\s+/', ' ', $locationString);
         
         // Common country names to look for
         $countryNames = [
@@ -118,6 +121,12 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             }
         }
         
+        // Try taking the last non-empty part (often the country is last)
+        $parts = array_filter(array_map('trim', preg_split('/[,\/;|]/', $locationString)));
+        if (!empty($parts)) {
+            return trim(end($parts));
+        }
+
         // If still no match, return the original string (trimmed)
         return trim($locationString);
     }
@@ -133,6 +142,16 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
 
         $trimmedName = trim($countryName);
         $lowerName = mb_strtolower($trimmedName);
+
+        // If already an ISO code
+        if (strlen($trimmedName) === 2) {
+            $iso = strtoupper($trimmedName);
+            $country = Country::where('iso', $iso)->first();
+            if ($country) {
+                Log::info("Country found (iso): {$trimmedName} -> {$country->iso}");
+                return $country->iso;
+            }
+        }
         
         // Try exact match first
         $country = Country::where('name', $trimmedName)->first();
@@ -234,6 +253,10 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             $normalizedKey = $this->normalizeKey((string) $key);
             if (!array_key_exists($normalizedKey, $normalized)) {
                 $normalized[$normalizedKey] = $value;
+            }
+            $compactKey = str_replace('_', '', $normalizedKey);
+            if (!array_key_exists($compactKey, $normalized)) {
+                $normalized[$compactKey] = $value;
             }
         }
         return $normalized;
