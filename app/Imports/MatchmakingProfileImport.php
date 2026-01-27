@@ -263,6 +263,12 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         ]);
         if (!empty($countryValue)) {
             $countryIso = $this->findCountryIso($countryValue);
+            Log::info('[MatchmakingProfileImport] Country lookup', [
+                'input' => $countryValue,
+                'result' => $countryIso,
+            ]);
+        } else {
+            Log::info('[MatchmakingProfileImport] No country value found in row');
         }
 
         // Parse website - ensure it has protocol
@@ -388,7 +394,8 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             }
         }
 
-        // Build the profile data
+        // Build the profile data - include all fields, even if null
+        // This ensures we can clear fields that should be empty
         $profileData = [
             'type' => $type,
             'email' => $email,
@@ -396,7 +403,7 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'organisation_type' => $organisationType,
             'organisation_mission' => $organisationMission,
             'website' => $website,
-            'country' => $countryIso,
+            'country' => $countryIso, // This can be null to clear the field
             'support_activities' => $supportActivities,
             'interested_in_school_collaboration' => $interestedInCollaboration,
             'target_school_types' => $targetSchoolTypes,
@@ -414,23 +421,46 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             $profileData['slug'] = $slug;
         }
 
-        // Remove null values to use database defaults, but keep empty arrays
-        $profileData = array_filter($profileData, function ($value) {
-            return $value !== null;
-        });
+        // For updates, we want to include all fields (even null) to properly update
+        // For new records, we can filter out nulls to use defaults
+        if ($existingProfile) {
+            // Keep all fields for updates, but convert empty strings to null for consistency
+            $profileData = array_map(function ($value) {
+                return $value === '' ? null : $value;
+            }, $profileData);
+        } else {
+            // For new records, remove null values to use database defaults
+            $profileData = array_filter($profileData, function ($value) {
+                return $value !== null;
+            });
+        }
 
         try {
             if ($existingProfile) {
                 // Update existing profile - use fill() and save() to ensure model events fire
+                // Log before update to see what we're updating
+                Log::info('[MatchmakingProfileImport] Before update', [
+                    'id' => $existingProfile->id,
+                    'current_country' => $existingProfile->country,
+                    'new_country' => $countryIso,
+                    'current_email' => $existingProfile->email,
+                    'new_email' => $email,
+                ]);
+                
                 $existingProfile->fill($profileData);
                 $existingProfile->save();
+                
+                // Refresh to get updated values
+                $existingProfile->refresh();
                 
                 Log::info('[MatchmakingProfileImport] Updated existing profile', [
                     'id' => $existingProfile->id,
                     'slug' => $existingProfile->slug,
                     'email' => $existingProfile->email,
                     'organisation_name' => $existingProfile->organisation_name,
+                    'country' => $existingProfile->country,
                     'updated_fields' => array_keys($profileData),
+                    'profile_data' => $profileData,
                 ]);
                 
                 return $existingProfile;
