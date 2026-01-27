@@ -275,6 +275,10 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             if (isset($row[$normalizedKey]) && !empty($row[$normalizedKey])) {
                 return $row[$normalizedKey];
             }
+            $compactKey = str_replace('_', '', $normalizedKey);
+            if (isset($row[$compactKey]) && !empty($row[$compactKey])) {
+                return $row[$compactKey];
+            }
         }
         return $default;
     }
