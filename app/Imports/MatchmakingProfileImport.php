@@ -27,9 +27,13 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         if (empty($value)) {
             return [];
         }
-        // Handle semicolon-separated values (common in CSV exports)
-        $separator = strpos($value, ';') !== false ? ';' : ',';
-        return array_filter(array_map('trim', explode($separator, $value)));
+        // Handle semicolon/comma/pipe separated values (common in CSV exports)
+        $parts = preg_split('/[;,|]/', (string) $value);
+        return array_filter(array_map(function ($item) {
+            $item = trim((string) $item);
+            $item = trim($item, " \t\n\r\0\x0B.");
+            return $item;
+        }, $parts));
     }
 
     /**
@@ -551,11 +555,36 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'Organization type',
         ]);
         if (!empty($orgTypeValue)) {
-            $orgType = trim($orgTypeValue);
-            // Check if it's a valid organisation type
             $validTypes = MatchmakingProfile::getValidOrganizationTypeOptions();
-            if (in_array($orgType, $validTypes)) {
-                $organisationType = [$orgType];
+            $validMap = [];
+            foreach ($validTypes as $typeOption) {
+                $validMap[mb_strtolower(trim($typeOption))] = $typeOption;
+            }
+
+            $orgTypeValues = $this->parseArray($orgTypeValue);
+            $normalized = [];
+            foreach ($orgTypeValues as $value) {
+                $value = trim((string) $value);
+                $value = trim($value, " \t\n\r\0\x0B,.");
+                $key = mb_strtolower($value);
+                if (isset($validMap[$key])) {
+                    $normalized[] = $validMap[$key];
+                    continue;
+                }
+                // Try collapsing multiple spaces and normalizing case
+                $collapsed = preg_replace('/\s+/', ' ', $key);
+                if (isset($validMap[$collapsed])) {
+                    $normalized[] = $validMap[$collapsed];
+                    continue;
+                }
+                // Allow raw value if no valid match (keeps data for volunteers)
+                if ($value !== '') {
+                    $normalized[] = $value;
+                }
+            }
+
+            if (!empty($normalized)) {
+                $organisationType = array_values(array_unique($normalized));
             }
         }
 
