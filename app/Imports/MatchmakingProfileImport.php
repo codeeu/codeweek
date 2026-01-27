@@ -213,6 +213,33 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
     }
 
     /**
+     * Normalize CSV header keys to a consistent format
+     */
+    protected function normalizeKey(string $key): string
+    {
+        $key = str_replace("\xc2\xa0", ' ', $key); // replace non-breaking space
+        $key = trim($key);
+        $key = preg_replace('/[^\pL\pN]+/u', '_', $key);
+        $key = trim($key, '_');
+        return mb_strtolower($key);
+    }
+
+    /**
+     * Normalize row keys and merge with original keys
+     */
+    protected function normalizeRowKeys(array $row): array
+    {
+        $normalized = $row;
+        foreach ($row as $key => $value) {
+            $normalizedKey = $this->normalizeKey((string) $key);
+            if (!array_key_exists($normalizedKey, $normalized)) {
+                $normalized[$normalizedKey] = $value;
+            }
+        }
+        return $normalized;
+    }
+
+    /**
      * Get value from row by trying multiple possible key names
      */
     protected function getRowValue(array $row, array $possibleKeys, $default = null)
@@ -220,6 +247,10 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         foreach ($possibleKeys as $key) {
             if (isset($row[$key]) && !empty($row[$key])) {
                 return $row[$key];
+            }
+            $normalizedKey = $this->normalizeKey((string) $key);
+            if (isset($row[$normalizedKey]) && !empty($row[$normalizedKey])) {
+                return $row[$normalizedKey];
             }
         }
         return $default;
@@ -231,6 +262,8 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
     public function model(array $row): ?Model
     {
         // Normalize row keys to handle various CSV header formats
+        $row = $this->normalizeRowKeys($row);
+
         // Try to get email and organisation name with multiple possible key variations
         $email = $this->getRowValue($row, [
             'email',
@@ -246,6 +279,28 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'Organization name',
         ]);
 
+        // Name fields (volunteers)
+        $fullName = $this->getRowValue($row, [
+            'name',
+            'Name',
+        ]);
+        $firstName = $this->getRowValue($row, [
+            'first_name',
+            'First Name',
+        ]);
+        $lastName = $this->getRowValue($row, [
+            'last_name',
+            'Last Name',
+        ]);
+        $jobTitle = $this->getRowValue($row, [
+            'job_title',
+            'Job Title',
+        ]);
+        $mainEmailAddress = $this->getRowValue($row, [
+            'main_email_address',
+            'Main email address',
+        ]);
+
         // Skip rows without essential data
         if (empty($email) && empty($organisationName)) {
             Log::warning('[MatchmakingProfileImport] Skipping row - missing email and organisation_name', $row);
@@ -255,11 +310,23 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         // Trim values
         $email = $email ? trim($email) : null;
         $organisationName = $organisationName ? trim($organisationName) : null;
+        $fullName = $fullName ? trim($fullName) : null;
+        $firstName = $firstName ? trim($firstName) : null;
+        $lastName = $lastName ? trim($lastName) : null;
+        $jobTitle = $jobTitle ? trim($jobTitle) : null;
+        $mainEmailAddress = $mainEmailAddress ? trim($mainEmailAddress) : null;
 
         // Determine type - if organisation_name exists, it's an organisation, otherwise volunteer
         $type = !empty($organisationName) 
             ? MatchmakingProfile::TYPE_ORGANISATION 
             : MatchmakingProfile::TYPE_VOLUNTEER;
+
+        // If we only have full name, split into first/last for volunteers
+        if ($type === MatchmakingProfile::TYPE_VOLUNTEER && empty($firstName) && empty($lastName) && !empty($fullName)) {
+            $parts = preg_split('/\s+/', $fullName);
+            $firstName = array_shift($parts);
+            $lastName = count($parts) ? implode(' ', $parts) : null;
+        }
         
         Log::info('[MatchmakingProfileImport] Processing row', [
             'type' => $type,
@@ -485,6 +552,10 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $profileData = [
             'type' => $type,
             'email' => $email,
+            'first_name' => $firstName,
+            'last_name' => $lastName,
+            'job_title' => $jobTitle,
+            'get_email_from' => $mainEmailAddress,
             'organisation_name' => $organisationName,
             'organisation_type' => $organisationType,
             'organisation_mission' => $organisationMission,
