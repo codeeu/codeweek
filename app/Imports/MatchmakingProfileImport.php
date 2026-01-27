@@ -544,9 +544,18 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
                     'new_country' => $countryIso,
                     'current_email' => $existingProfile->email,
                     'new_email' => $email,
+                    'profile_data_keys' => array_keys($profileData),
+                    'country_in_data' => isset($profileData['country']),
+                    'country_value' => $profileData['country'] ?? 'NOT SET',
                 ]);
                 
+                // Fill the model with all data
                 $existingProfile->fill($profileData);
+                
+                // Explicitly set country to ensure it updates (even if null)
+                // This ensures the field is updated even if it was previously null
+                $existingProfile->country = $countryIso;
+                
                 $existingProfile->save();
                 
                 // Refresh to get updated values
@@ -557,9 +566,9 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
                     'slug' => $existingProfile->slug,
                     'email' => $existingProfile->email,
                     'organisation_name' => $existingProfile->organisation_name,
-                    'country' => $existingProfile->country,
+                    'country_after_update' => $existingProfile->country,
+                    'country_was_set_to' => $countryIso,
                     'updated_fields' => array_keys($profileData),
-                    'profile_data' => $profileData,
                 ]);
                 
                 return $existingProfile;
