@@ -98,9 +98,14 @@ class MatchMakingToolController extends Controller
 
     public function downloadTemplate()
     {
+        // Match the exact format from the original CSV
         $csvHeaders = [
+            'ID',
+            'Start time',
+            'Completion time',
             'Email',
             'Name',
+            'Last modified time',
             'Organisation name',
             'Organisation website',
             'Organisation type',
@@ -111,34 +116,34 @@ class MatchMakingToolController extends Controller
             'What kind of activities or support can you offer to schools and educators? (Select all that apply):',
             'Are you interested in collaborating with schools to bring real-world expertise into the classroom?',
             'What types of schools are you most interested in working with?',
-            'What areas of digital expertise does your organisation or you specialise in?',
+            'What areas of digital expertise does your organisation or you specialise in? ',
             'Would you like to be part of the wider EU Code Week community and receive updates about future activities and events?',
             'Do you have any additional information or comments that could help us better match you with schools and educators?',
             'By registering as a Digital Volunteer, you agree to being contacted later to share feedback about your experience.',
-            'Start time',
-            'Completion time',
         ];
 
-        // Example row with helpful values
+        // Example row with helpful values matching the original format
         $exampleRow = [
+            '', // ID - leave empty, will be auto-generated
+            '5/16/25 9:08:01', // Start time - format: M/D/YY H:MM:SS
+            '5/16/25 9:15:42', // Completion time - format: M/D/YY H:MM:SS
             'example@example.com',
-            'John Doe',
+            'John Doe', // Full name
+            '', // Last modified time - leave empty, will be auto-generated
             'Example Organisation',
             'www.example.org',
             'Non-Governmental Organisation (NGO)',
             'contact@example.org',
             'Belgium',
-            'Our mission is to promote coding education.',
+            'Our mission is to contribute to the inclusion of the Bulgarian public in the global digital community, to raise their quality of life, and to promote civic participation.',
             'Yes',
             'Delivering workshops or training;Providing learning resources or curricula;',
-            'Yes',
-            'Primary Schools;Secondary Schools;',
+            'Maybe, I would like more details',
+            'Primary Schools;',
             'Coding and programming;Cybersecurity;',
             'Yes',
-            'Additional information about our organisation.',
+            'GLBF, over the years, has promoted Code Week in Bulgaria through the network of public libraries.',
             'Yes',
-            '2025-01-01 10:00:00',
-            '2025-01-01 10:30:00',
         ];
 
         // Get valid options for reference
@@ -169,16 +174,22 @@ class MatchMakingToolController extends Controller
             fputcsv($stream, $exampleRow);
             
             // Write a comment row with valid options
-            fputcsv($stream, ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['VALID OPTIONS:', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['Organisation type options:', $validOrgTypes, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['Collaboration options:', $validCollaboration, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['Format options:', $validFormats, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['NOTES:', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['- Multiple values should be separated by semicolons (;)', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['- Boolean fields: Yes/No', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['- Dates should be in format: YYYY-MM-DD HH:MM:SS', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
-            fputcsv($stream, ['- Country should be the full country name (e.g., "Belgium", "United States")', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']);
+            $emptyRow = array_fill(0, count($csvHeaders), '');
+            fputcsv($stream, $emptyRow);
+            fputcsv($stream, array_merge(['VALID OPTIONS:'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['Organisation type options:', $validOrgTypes], array_fill(2, count($csvHeaders) - 2, '')));
+            fputcsv($stream, array_merge(['Collaboration options:', $validCollaboration], array_fill(2, count($csvHeaders) - 2, '')));
+            fputcsv($stream, array_merge(['Format options:', $validFormats], array_fill(2, count($csvHeaders) - 2, '')));
+            fputcsv($stream, array_merge(['Type options:', 'volunteer;organisation'], array_fill(2, count($csvHeaders) - 2, '')));
+            fputcsv($stream, $emptyRow);
+            fputcsv($stream, array_merge(['NOTES:'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['- Multiple values should be separated by semicolons (;)'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['- Boolean fields: Yes/No'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['- Dates should be in format: YYYY-MM-DD HH:MM:SS'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['- Country should be the full country name (e.g., "Belgium", "United States")'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['- Array fields (Languages, Support Activities, etc.) use semicolons (;)'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['- Type field: "volunteer" or "organisation"'], array_fill(1, count($csvHeaders) - 1, '')));
+            fputcsv($stream, array_merge(['- Format field: "Online", "In-person", or "Both"'], array_fill(1, count($csvHeaders) - 1, '')));
             
             fclose($stream);
         };
