@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use App\MatchmakingProfile as MatchmakingProfileModel;
+use App\Nova\Actions\ImportMatchmakingProfiles;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
@@ -95,6 +96,19 @@ class MatchmakingProfile extends Resource
 
             Boolean::make('Email Via Linkedin'),
             Text::make('Get Email From')->hideFromIndex(),
+        ];
+    }
+
+    /**
+     * Get the actions available for the resource.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function actions(Request $request): array
+    {
+        return [
+            new ImportMatchmakingProfiles,
         ];
     }
 }
