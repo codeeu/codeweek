@@ -6,6 +6,7 @@ use App\MatchmakingProfile as MatchmakingProfileModel;
 use App\Nova\Actions\ImportMatchmakingProfiles;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\Select;
@@ -102,10 +103,10 @@ class MatchmakingProfile extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
-    public function actions(Request $request): array
+    public function actions(NovaRequest $request): array
     {
         return [
             new ImportMatchmakingProfiles,
