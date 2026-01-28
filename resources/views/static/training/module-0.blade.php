@@ -9,7 +9,7 @@
     <section id="codeweek-codycolor-subpage" class="font-['Blinker'] overflow-hidden">
 
         @include('codingathome.banner', [
-            'author' => 'Alessandro Bogliolo - EU Code Week Italian Ambassador; University of Urbino',
+            'author' => 'By Alessandro Bogliolo and the Italian EU ode Week HUB',
             'title' => 'CodyColor KIT',
         ])
 
@@ -157,7 +157,7 @@
                     </li>
                     <li class="p-0 my-8 mt-8 mb-2 font-normal leading-7 text-default">
                         <a class="max-xl:!hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
-                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{ strtoupper(App::getLocale()) }}/color-kit/full-kit.zip">
+                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{ strtoupper(App::getLocale()) }}/color-kit/CodyColor-Full-kit.pdf">
                             DOWNLOAD THE KIT!
                         </a>
                     </li>
