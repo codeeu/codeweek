@@ -9,7 +9,7 @@
     <section id="codeweek-codycolor-subpage" class="font-['Blinker'] overflow-hidden">
 
         @include('codingathome.banner', [
-            'author' => 'By Alessandro Bogliolo and the Italian EU ode Week HUB',
+            'author' => 'By Alessandro Bogliolo and the Italian EU Code Week HUB',
             'title' => 'CodyColor KIT',
         ])
 
