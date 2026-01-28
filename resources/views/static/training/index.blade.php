@@ -10,7 +10,7 @@
          [
             'image' => '/img/learning/cody-color-kit.png',
             'title' => 'training.lessons.0.title',
-            'author' => 'training.lessons.1.author',
+            'author' => 'training.lessons.0.author',
             'link' => '/training/cody-color-kit'
         ],
          [
