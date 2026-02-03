@@ -2029,7 +2029,9 @@ var SEMICOLON = SEMICOLON || {};
         },
 
         loadPodcastDetailSlider: function() {
-            $('.slick-slider').slick({
+            var $el = $('.slick-slider');
+            if (!$el.length || typeof $.fn.slick !== 'function') return;
+            $el.slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 centerMode: true,
