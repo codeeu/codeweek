@@ -51,14 +51,12 @@
                             <label for="file" class="block font-medium mb-1">Excel / CSV file <span class="text-red-600">*</span></label>
                             <input type="file" name="file" id="file" accept=".csv,.xlsx,.xls" required
                                    class="block w-full max-w-md">
-                            <p class="text-sm text-gray-600 mt-1">Max 10 MB. Required columns: activity_title, name_of_organisation, type_of_organisation, activity_type, description, address, country, start_date, end_date, longitude, latitude, contact_email, organiser_website, participants_count, males_count, females_count, other_count.</p>
+                            <p class="text-sm text-gray-600 mt-1">Select a file above (required), then click the button below. Max 10 MB. Required columns: activity_title, name_of_organisation, type_of_organisation, activity_type, description, address, country, start_date, end_date, longitude, latitude, contact_email, organiser_website, participants_count, males_count, females_count, other_count.</p>
                         </div>
 
                         <div class="codeweek-form-button-container">
                             <div class="codeweek-button">
-                                <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-                                    Upload &amp; validate
-                                </button>
+                                <input type="submit" value="Upload &amp; validate" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-[#20262C] hover:bg-hover-orange duration-300">
                             </div>
                         </div>
                     </div>
@@ -86,9 +84,7 @@
                     <p class="mb-3 text-green-700">All required columns are present. Click the button below to run the import.</p>
                     <form method="POST" action="{{ route('admin.bulk-upload.import') }}" class="inline">
                         @csrf
-                        <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
-                            Import
-                        </button>
+                        <input type="submit" value="Import" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-[#20262C] hover:bg-hover-orange duration-300">
                     </form>
                 </div>
             @endif
