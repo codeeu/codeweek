@@ -73,6 +73,7 @@ Route::middleware(['auth', 'role:super admin'])->group(function () {
     Route::get('/admin/bulk-upload', [BulkEventUploadController::class, 'index'])->name('admin.bulk-upload.index');
     Route::post('/admin/bulk-upload/validate', [BulkEventUploadController::class, 'validateUpload'])->name('admin.bulk-upload.validate');
     Route::post('/admin/bulk-upload/import', [BulkEventUploadController::class, 'import'])->name('admin.bulk-upload.import');
+    Route::get('/admin/bulk-upload/import', fn () => redirect()->route('admin.bulk-upload.index'))->name('admin.bulk-upload.import.get');
     Route::get('/admin/bulk-upload/report', [BulkEventUploadController::class, 'report'])->name('admin.bulk-upload.report');
 });
 
