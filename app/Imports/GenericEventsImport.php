@@ -71,21 +71,39 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     }
 
     /**
+     * Parse a coordinate value from Excel (may be float, string with dot or comma decimal).
+     * Returns float or null if empty/invalid.
+     */
+    protected function parseCoordinate($value): ?float
+    {
+        if ($value === null || $value === '') {
+            return null;
+        }
+        $s = trim((string) $value);
+        if ($s === '') {
+            return null;
+        }
+        $s = str_replace(',', '.', $s);
+        if (! is_numeric($s)) {
+            return null;
+        }
+        return (float) $s;
+    }
+
+    /**
      * Validate latitude/longitude. Returns null if valid, or error message if invalid.
      */
     protected function validateCoordinates(array $row): ?string
     {
-        $lat = trim((string) ($row['latitude'] ?? ''));
-        $lon = trim((string) ($row['longitude'] ?? ''));
-        if ($lat === '' && $lon === '') {
+        $lat = $this->parseCoordinate($row['latitude'] ?? null);
+        $lon = $this->parseCoordinate($row['longitude'] ?? null);
+        if ($lat === null && $lon === null) {
             return null;
         }
-        if (! is_numeric($lat) || ! is_numeric($lon)) {
+        if ($lat === null || $lon === null) {
             return 'Invalid latitude/longitude (must be numeric)';
         }
-        $latF = (float) $lat;
-        $lonF = (float) $lon;
-        if ($latF < -90 || $latF > 90 || $lonF < -180 || $lonF > 180) {
+        if ($lat < -90 || $lat > 90 || $lon < -180 || $lon > 180) {
             return 'Bad coordinates (latitude -90 to 90, longitude -180 to 180)';
         }
         return null;
@@ -207,6 +225,8 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         if ($picture && !Str::startsWith($picture, ['http://','https://'])) {
             $picture = 'https://codeweek-s3.s3.amazonaws.com' . $picture;
         }
+        $lat = $this->parseCoordinate($row['latitude'] ?? null);
+        $lon = $this->parseCoordinate($row['longitude'] ?? null);
         $attrs = [
             'status'              => 'APPROVED',
             'title'               => trim($row['activity_title']),
@@ -227,11 +247,9 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             'mass_added_for'      => 'Excel',
             'start_date'          => $startDate,
             'end_date'            => $endDate,
-            'geoposition'         => (!empty($row['latitude']) && !empty($row['longitude']))
-                                     ? "{$row['latitude']},{$row['longitude']}"
-                                     : '',
-            'longitude'           => trim((string) ($row['longitude'] ?? '')),
-            'latitude'            => trim((string) ($row['latitude']  ?? '')),
+            'geoposition'         => ($lat !== null && $lon !== null) ? "{$lat},{$lon}" : '',
+            'latitude'            => $lat ?? 0.0,
+            'longitude'           => $lon ?? 0.0,
             'language'            => isset($row['language'])
                                      ? strtolower(explode('_', trim($row['language']))[0])
                                      : 'en',
@@ -286,38 +304,52 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             $attrs['contact_person'] = trim($row['contact_email']);
         }
 
-        // 8) duplicate check: skip if an existing event has identical attributes
-        $dupQuery = Event::query();
-        foreach ($attrs as $field => $value) {
-            // only check scalar/stringable
-            if (is_scalar($value) || is_null($value)) {
-                $dupQuery->where($field, $value);
-            }
-        }
-        if ($dupQuery->exists()) {
-            $this->recordFailure($rowIndex, 'Duplicate event detected');
-            Log::info('Duplicate event detected, skipping import.', $attrs);
-            return null;
-        }
+        // 8) duplicate check: find existing by title + start_date + country_iso + organizer; if found, update instead of create
+        $existing = Event::where('title', $attrs['title'])
+            ->where('start_date', $attrs['start_date'])
+            ->where('country_iso', $attrs['country_iso'])
+            ->where('organizer', $attrs['organizer'])
+            ->first();
 
-        // 9) persist & attach relations
         try {
-            $event = new Event;
-            foreach ($attrs as $k => $v) {
-                $event->$k = $v;
-            }
-            $event->save();
+            if ($existing) {
+                $event = $existing;
+                foreach ($attrs as $k => $v) {
+                    $event->$k = $v;
+                }
+                $event->save();
 
-            if (!empty($row['audience_comma_separated_ids'])) {
-                $aud = array_filter(
-                    explode(',', $row['audience_comma_separated_ids']),
-                    fn($i) => is_numeric($i) && $i>0 && $i<=100
-                );
-                $event->audiences()->attach(array_unique($aud));
-            }
-            if (!empty($row['theme_comma_separated_ids'])) {
-                $themes = $this->validateThemes($row['theme_comma_separated_ids']);
-                $event->themes()->attach($themes);
+                $event->audiences()->detach();
+                if (!empty($row['audience_comma_separated_ids'])) {
+                    $aud = array_filter(
+                        explode(',', $row['audience_comma_separated_ids']),
+                        fn($i) => is_numeric($i) && $i>0 && $i<=100
+                    );
+                    $event->audiences()->attach(array_unique($aud));
+                }
+                $event->themes()->detach();
+                if (!empty($row['theme_comma_separated_ids'])) {
+                    $themes = $this->validateThemes($row['theme_comma_separated_ids']);
+                    $event->themes()->attach($themes);
+                }
+            } else {
+                $event = new Event;
+                foreach ($attrs as $k => $v) {
+                    $event->$k = $v;
+                }
+                $event->save();
+
+                if (!empty($row['audience_comma_separated_ids'])) {
+                    $aud = array_filter(
+                        explode(',', $row['audience_comma_separated_ids']),
+                        fn($i) => is_numeric($i) && $i>0 && $i<=100
+                    );
+                    $event->audiences()->attach(array_unique($aud));
+                }
+                if (!empty($row['theme_comma_separated_ids'])) {
+                    $themes = $this->validateThemes($row['theme_comma_separated_ids']);
+                    $event->themes()->attach($themes);
+                }
             }
 
             $this->recordCreated($event);
