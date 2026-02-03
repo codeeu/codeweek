@@ -7,6 +7,7 @@ use App\Services\BulkEventImportResult;
 use App\Services\BulkEventUploadValidator;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 use Maatwebsite\Excel\Facades\Excel;
@@ -138,6 +139,8 @@ class BulkEventUploadController extends Controller
             Storage::delete($path);
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING]);
 
+            $this->clearMapCache();
+
             return view('admin.bulk-upload.report', [
                 'created' => $result->created,
                 'failures' => $result->failures,
@@ -151,5 +154,13 @@ class BulkEventUploadController extends Controller
             return redirect()->route('admin.bulk-upload.index')
                 ->withErrors(['import' => 'Import failed: '.$e->getMessage()]);
         }
+    }
+
+    /**
+     * Clear map cache so new/updated events appear on the map immediately.
+     */
+    private function clearMapCache(): void
+    {
+        Cache::flush();
     }
 }
