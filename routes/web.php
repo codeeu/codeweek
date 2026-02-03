@@ -231,6 +231,10 @@ Route::get('/contact-us', [StaticPageController::class, 'static'])
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
 Route::get(
+    '/training/cody-color-kit',
+    [StaticPageController::class, 'static']
+)->name('training.module-0');
+Route::get(
     '/training/coding-without-computers',
     [StaticPageController::class, 'static']
 )->name('training.module-1');
@@ -428,6 +432,9 @@ Route::post('/matchmaking-tool/search', [MatchMakingToolController::class, 'sear
 Route::get('/matchmaking-tool/{slug}', [MatchMakingToolController::class, 'show'])->name(
     'matchmaking_tool_detail'
 );
+Route::get('/matchmaking-tool/download/template', [MatchMakingToolController::class, 'downloadTemplate'])
+    ->middleware('auth')
+    ->name('matchmaking_template_download');
 //Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources')->middleware('auth');
 //Route::post('/resources/suggest', 'SuggestResourcesController@store')->name('store_suggest_resources')->middleware('auth');
 
