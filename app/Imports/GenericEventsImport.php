@@ -3,7 +3,9 @@
 namespace App\Imports;
 
 use App\Event;
+use App\Helpers\UserHelper;
 use App\User;
+use App\Services\BulkEventImportResult;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
@@ -16,6 +18,19 @@ use Illuminate\Support\Str;
 
 class GenericEventsImport extends BaseEventsImport implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
+    protected ?string $defaultCreatorEmail = null;
+
+    protected ?BulkEventImportResult $result = null;
+
+    /** Current Excel row number (2 = first data row after header). */
+    protected int $currentRow = 2;
+
+    public function __construct(?string $defaultCreatorEmail = null, ?BulkEventImportResult $result = null)
+    {
+        $this->defaultCreatorEmail = $defaultCreatorEmail ? trim($defaultCreatorEmail) : null;
+        $this->result = $result;
+    }
+
     /**
      * Cast floats with no fractional part back to int.
      */
@@ -56,38 +71,135 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     }
 
     /**
+     * Validate latitude/longitude. Returns null if valid, or error message if invalid.
+     */
+    protected function validateCoordinates(array $row): ?string
+    {
+        $lat = trim((string) ($row['latitude'] ?? ''));
+        $lon = trim((string) ($row['longitude'] ?? ''));
+        if ($lat === '' && $lon === '') {
+            return null;
+        }
+        if (! is_numeric($lat) || ! is_numeric($lon)) {
+            return 'Invalid latitude/longitude (must be numeric)';
+        }
+        $latF = (float) $lat;
+        $lonF = (float) $lon;
+        if ($latF < -90 || $latF > 90 || $lonF < -180 || $lonF > 180) {
+            return 'Bad coordinates (latitude -90 to 90, longitude -180 to 180)';
+        }
+        return null;
+    }
+
+    /**
+     * Resolve creator_id: row creator_id -> default creator email -> contact_email (find or create user).
+     */
+    protected function resolveCreatorId(array $row): ?int
+    {
+        if (! empty($row['creator_id']) && is_int($row['creator_id'])) {
+            return $row['creator_id'];
+        }
+        if (! empty($row['creator_id']) && filter_var($row['creator_id'], FILTER_VALIDATE_EMAIL)) {
+            $id = User::where('email', trim($row['creator_id']))->value('id');
+            if ($id) {
+                return $id;
+            }
+        }
+        if ($this->defaultCreatorEmail && filter_var($this->defaultCreatorEmail, FILTER_VALIDATE_EMAIL)) {
+            $id = User::where('email', $this->defaultCreatorEmail)->value('id');
+            if ($id) {
+                return $id;
+            }
+        }
+        $contactEmail = trim($row['contact_email'] ?? '');
+        if (! $contactEmail || ! filter_var($contactEmail, FILTER_VALIDATE_EMAIL)) {
+            return null;
+        }
+        $user = User::where('email', $contactEmail)->first();
+        if ($user) {
+            return $user->id;
+        }
+        [$local] = explode('@', $contactEmail, 2);
+        $user = User::where('email', 'like', "{$local}@%")->first();
+        if ($user) {
+            return $user->id;
+        }
+        try {
+            $user = UserHelper::createUser($contactEmail);
+            return $user->id;
+        } catch (\Exception $e) {
+            Log::warning('User creation failed for contact_email: '.$contactEmail, ['exception' => $e->getMessage()]);
+            return null;
+        }
+    }
+
+    private function recordFailure(int $rowIndex, string $reason): void
+    {
+        if ($this->result) {
+            $this->result->addFailure($rowIndex, $reason);
+        }
+    }
+
+    private function recordCreated(Event $event): void
+    {
+        if ($this->result) {
+            $this->result->addCreated($event);
+        }
+    }
+
+    /**
      * Map a row to an Event model.
      */
     public function model(array $row): ?Model
     {
-        // 1) normalize numeric floats
+        $rowIndex = $this->currentRow++;
         $row = $this->normalizeRow($row);
         Log::info('Importing row:', $row);
 
+        // 1) coordinate validation
+        $coordError = $this->validateCoordinates($row);
+        if ($coordError !== null) {
+            $this->recordFailure($rowIndex, $coordError);
+            Log::warning($coordError, $row);
+            return null;
+        }
+
         // 2) required fields
-        if (empty($row['activity_title'])
-            || empty($row['name_of_organisation'])
-            || empty($row['description'])
-            || empty($row['type_of_organisation'])
-            || empty($row['activity_type'])
-            || empty($row['country'])
-            || empty($row['start_date'])
-            || empty($row['end_date'])
-        ) {
+        $required = [
+            'activity_title' => 'activity_title',
+            'name_of_organisation' => 'name_of_organisation',
+            'description' => 'description',
+            'type_of_organisation' => 'type_of_organisation',
+            'activity_type' => 'activity_type',
+            'country' => 'country',
+            'start_date' => 'start_date',
+            'end_date' => 'end_date',
+        ];
+        $missing = [];
+        foreach ($required as $key => $label) {
+            if (empty($row[$key])) {
+                $missing[] = $label;
+            }
+        }
+        if ($missing !== []) {
+            $reason = 'Missing required field(s): '.implode(', ', $missing);
+            $this->recordFailure($rowIndex, $reason);
             Log::error('Missing required fields, skipping row.', $row);
             return null;
         }
 
+        $startDate = $this->parseDate($row['start_date']);
+        $endDate = $this->parseDate($row['end_date']);
+        if ($startDate === null || $endDate === null) {
+            $this->recordFailure($rowIndex, 'Invalid date format for start_date or end_date');
+            return null;
+        }
+
         // 3) resolve creator_id
-        $creatorId = null;
-        if (!empty($row['creator_id']) && is_int($row['creator_id'])) {
-            $creatorId = $row['creator_id'];
-        } elseif (!empty($row['creator_id']) && filter_var($row['creator_id'], FILTER_VALIDATE_EMAIL)) {
-            $creatorId = User::where('email', trim($row['creator_id']))->value('id');
-        } elseif (!empty($row['contact_email']) && filter_var($row['contact_email'], FILTER_VALIDATE_EMAIL)) {
-            [$local] = explode('@', trim($row['contact_email']), 2);
-            $creatorId = User::where('email', 'like', "{$local}@%"
-            )->value('id');
+        $creatorId = $this->resolveCreatorId($row);
+        if ($creatorId === null && ! empty(trim($row['contact_email'] ?? ''))) {
+            $this->recordFailure($rowIndex, 'Could not resolve or create user for contact_email');
+            return null;
         }
 
         // 4) build attribute array
@@ -113,8 +225,8 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
                                     ? (int) $row['participants_count']
                                     : null,
             'mass_added_for'      => 'Excel',
-            'start_date'          => $this->parseDate($row['start_date']),
-            'end_date'            => $this->parseDate($row['end_date']),
+            'start_date'          => $startDate,
+            'end_date'            => $endDate,
             'geoposition'         => (!empty($row['latitude']) && !empty($row['longitude']))
                                      ? "{$row['latitude']},{$row['longitude']}"
                                      : '',
@@ -183,6 +295,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             }
         }
         if ($dupQuery->exists()) {
+            $this->recordFailure($rowIndex, 'Duplicate event detected');
             Log::info('Duplicate event detected, skipping import.', $attrs);
             return null;
         }
@@ -207,8 +320,10 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
                 $event->themes()->attach($themes);
             }
 
+            $this->recordCreated($event);
             return $event;
         } catch (\Exception $e) {
+            $this->recordFailure($rowIndex, 'Event import failed: '.$e->getMessage());
             Log::error('Event import failed: '.$e->getMessage(), $attrs);
             return null;
         }
