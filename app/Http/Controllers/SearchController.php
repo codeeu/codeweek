@@ -89,8 +89,10 @@ class SearchController extends Controller
         return Cache::remember($composed_key, 300, function () use ($filters) {
             $grouped = [];
 
-            Event::select('id', 'geoposition', 'country_iso') // Only required fields
+            Event::select('id', 'geoposition', 'country_iso')
                 ->where('status', 'APPROVED')
+                ->whereNotNull('geoposition')
+                ->where('geoposition', '!=', '')
                 ->filter($filters)
                 ->cursor()
                 ->each(function ($event) use (&$grouped) {
