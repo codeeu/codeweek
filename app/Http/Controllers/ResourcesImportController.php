@@ -74,20 +74,21 @@ class ResourcesImportController extends Controller
                 ->withInput();
         }
 
+        $tempDisk = config('filesystems.resources_import_temp_disk', 'local');
         $oldPath = $request->session()->get(self::SESSION_FILE_PATH);
-        if ($oldPath && Storage::exists($oldPath)) {
-            Storage::delete($oldPath);
+        if ($oldPath && Storage::disk($tempDisk)->exists($oldPath)) {
+            Storage::disk($tempDisk)->delete($oldPath);
         }
         $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
 
-        $path = $file->storeAs('temp', 'resources_import_'.time().'.'.$extension);
+        $path = $file->storeAs('temp', 'resources_import_'.time().'.'.$extension, $tempDisk);
 
         try {
             $import = new ResourcesPreviewImport;
-            Excel::import($import, $path, 'local');
+            Excel::import($import, $path, $tempDisk);
             $rows = $import->data;
         } catch (\Throwable $e) {
-            Storage::delete($path);
+            Storage::disk($tempDisk)->delete($path);
 
             return redirect()->route('admin.resources-import.index')
                 ->withErrors(['file' => 'Could not parse file: '.$e->getMessage()])
@@ -96,14 +97,14 @@ class ResourcesImportController extends Controller
 
         $headerCheck = ResourcesUploadValidator::validateRequiredColumnsFromRows($rows);
         if (! $headerCheck['valid']) {
-            Storage::delete($path);
+            Storage::disk($tempDisk)->delete($path);
 
             return redirect()->route('admin.resources-import.index')
                 ->withErrors(['file' => 'Missing required column(s): '.implode(', ', $headerCheck['missing']).'. Please add a header row with at least "name_of_the_resource".'])
                 ->withInput();
         }
         if (empty($rows)) {
-            Storage::delete($path);
+            Storage::disk($tempDisk)->delete($path);
 
             return redirect()->route('admin.resources-import.index')
                 ->withErrors(['file' => 'The file has no data rows.'])
@@ -133,9 +134,11 @@ class ResourcesImportController extends Controller
         }
 
         $path = $request->session()->get(self::SESSION_FILE_PATH);
+        $tempDisk = config('filesystems.resources_import_temp_disk', 'local');
         $importPayload = $path ? Crypt::encryptString(json_encode([
             'path' => $path,
             'focus' => $focus,
+            'disk' => $tempDisk,
         ])) : '';
 
         return view('admin.resources-import.preview', [
@@ -153,6 +156,7 @@ class ResourcesImportController extends Controller
     {
         $path = null;
         $focus = false;
+        $tempDisk = config('filesystems.resources_import_temp_disk', 'local');
 
         $payload = $request->input('import_payload');
         if (is_string($payload) && $payload !== '') {
@@ -161,6 +165,9 @@ class ResourcesImportController extends Controller
                 if (is_array($decoded) && ! empty($decoded['path'])) {
                     $path = $decoded['path'];
                     $focus = (bool) ($decoded['focus'] ?? false);
+                    if (! empty($decoded['disk'])) {
+                        $tempDisk = $decoded['disk'];
+                    }
                 }
             } catch (\Throwable $e) {
                 // Invalid or expired payload, fall back to session
@@ -172,7 +179,7 @@ class ResourcesImportController extends Controller
             $focus = $request->session()->get(self::SESSION_FOCUS, false);
         }
 
-        if (! $path || ! Storage::exists($path)) {
+        if (! $path || ! Storage::disk($tempDisk)->exists($path)) {
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
 
             return redirect()->route('admin.resources-import.index')
@@ -212,9 +219,9 @@ class ResourcesImportController extends Controller
         try {
             $result = new ResourcesImportResult;
             $import = new ResourcesImport(null, null, $focus, $overrides, $result);
-            Excel::import($import, $path, 'local');
+            Excel::import($import, $path, $tempDisk);
 
-            Storage::delete($path);
+            Storage::disk($tempDisk)->delete($path);
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
 
             $request->session()->flash('resources_import_report_created', $result->created);
@@ -223,8 +230,8 @@ class ResourcesImportController extends Controller
 
             return redirect()->route('admin.resources-import.report');
         } catch (\Throwable $e) {
-            if (Storage::exists($path)) {
-                Storage::delete($path);
+            if (Storage::disk($tempDisk)->exists($path)) {
+                Storage::disk($tempDisk)->delete($path);
             }
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
 
