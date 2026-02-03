@@ -141,10 +141,10 @@ class BulkEventUploadController extends Controller
 
             $this->clearMapCache();
 
-            return view('admin.bulk-upload.report', [
-                'created' => $result->created,
-                'failures' => $result->failures,
-            ]);
+            $request->session()->flash('bulk_upload_report_created', $result->created);
+            $request->session()->flash('bulk_upload_report_failures', $result->failures);
+
+            return redirect()->route('admin.bulk-upload.report');
         } catch (\Throwable $e) {
             if (Storage::exists($path)) {
                 Storage::delete($path);
@@ -154,6 +154,26 @@ class BulkEventUploadController extends Controller
             return redirect()->route('admin.bulk-upload.index')
                 ->withErrors(['import' => 'Import failed: '.$e->getMessage()]);
         }
+    }
+
+    /**
+     * Show the import report (GET). Data is flashed from import() redirect.
+     * Refreshing this page will redirect back to index as flash data is gone.
+     */
+    public function report(Request $request): View|RedirectResponse
+    {
+        $created = $request->session()->get('bulk_upload_report_created');
+        $failures = $request->session()->get('bulk_upload_report_failures');
+
+        if ($created === null && $failures === null) {
+            return redirect()->route('admin.bulk-upload.index')
+                ->with('info', 'Report no longer available. Run an import to see a new report.');
+        }
+
+        return view('admin.bulk-upload.report', [
+            'created' => $created ?? [],
+            'failures' => $failures ?? [],
+        ]);
     }
 
     /**
