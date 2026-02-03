@@ -24,6 +24,7 @@ use App\Http\Controllers\Api;
 // use App\Http\Controllers\Auth;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BadgesController;
+use App\Http\Controllers\BulkEventUploadController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\Codeweek4AllController;
 use App\Http\Controllers\CodingAtHomeController;
@@ -67,7 +68,13 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeocodeController;
 use Illuminate\Support\Facades\Config;
-use App\Http\Controllers\EventsController;
+// Bulk upload: register early so no other route shadows it
+Route::middleware(['auth', 'role:super admin'])->group(function () {
+    Route::get('/admin/bulk-upload', [BulkEventUploadController::class, 'index'])->name('admin.bulk-upload.index');
+    Route::post('/admin/bulk-upload/validate', [BulkEventUploadController::class, 'validateUpload'])->name('admin.bulk-upload.validate');
+    Route::post('/admin/bulk-upload/import', [BulkEventUploadController::class, 'import'])->name('admin.bulk-upload.import');
+});
+
 //redirects start
 Route::permanentRedirect('/certificates/excellence/Excellence Certificate', '/certificates/excellence/2024');
 Route::permanentRedirect('/certificates/excellence/Excellence%20Certificate', '/certificates/excellence/2024');
@@ -541,7 +548,7 @@ Route::middleware('role:super admin')->group(function () {
     );
 });
 
-Route::middleware('role:super admin')->group(function () {
+Route::middleware(['auth', 'role:super admin'])->group(function () {
     Route::get('/activities', [AdminController::class, 'activities'])->name('activities');
     Route::get('/pending/{country}', [PendingEventsController::class, 'index'])->name(
         'pending_by_country'
@@ -803,7 +810,7 @@ Route::middleware(ProtectAgainstSpam::class)->group(function() {
 });
 Route::feeds();
 
-Route::get('/events/list/{country?}', [EventsController::class, 'list'])->name('events.list');
-Route::get('/events/promoted/{country?}', [EventsController::class, 'promoted'])->name('events.promoted');
-Route::get('/events/featured/{country?}', [EventsController::class, 'featured'])->name('events.featured');
+Route::get('/events/list/{country?}', [OnlineEventsController::class, 'list'])->name('events.list');
+Route::get('/events/promoted/{country?}', [OnlineEventsController::class, 'promoted'])->name('events.promoted');
+Route::get('/events/featured/{country?}', [OnlineEventsController::class, 'featured'])->name('events.featured');
 //redirects
