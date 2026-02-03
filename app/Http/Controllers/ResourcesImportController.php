@@ -8,6 +8,7 @@ use App\Services\ResourcesImportResult;
 use App\Services\ResourcesUploadValidator;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 use Maatwebsite\Excel\Facades\Excel;
@@ -131,26 +132,52 @@ class ResourcesImportController extends Controller
                 ->with('info', 'No preview data found. Please upload and verify a file first.');
         }
 
+        $path = $request->session()->get(self::SESSION_FILE_PATH);
+        $importPayload = $path ? Crypt::encryptString(json_encode([
+            'path' => $path,
+            'focus' => $focus,
+        ])) : '';
+
         return view('admin.resources-import.preview', [
             'rows' => $rows,
             'focus' => $focus,
+            'import_payload' => $importPayload,
         ]);
     }
 
     /**
-     * Run import with session file and request edits; clear session; redirect to report.
+     * Run import with file path (from form payload or session) and request edits; redirect to report.
+     * Uses encrypted form payload so import works when session is not shared (e.g. load-balanced servers).
      */
     public function import(Request $request): RedirectResponse
     {
-        $path = $request->session()->get(self::SESSION_FILE_PATH);
+        $path = null;
+        $focus = false;
+
+        $payload = $request->input('import_payload');
+        if (is_string($payload) && $payload !== '') {
+            try {
+                $decoded = json_decode(Crypt::decryptString($payload), true);
+                if (is_array($decoded) && ! empty($decoded['path'])) {
+                    $path = $decoded['path'];
+                    $focus = (bool) ($decoded['focus'] ?? false);
+                }
+            } catch (\Throwable $e) {
+                // Invalid or expired payload, fall back to session
+            }
+        }
+
+        if (! $path) {
+            $path = $request->session()->get(self::SESSION_FILE_PATH);
+            $focus = $request->session()->get(self::SESSION_FOCUS, false);
+        }
+
         if (! $path || ! Storage::exists($path)) {
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
 
             return redirect()->route('admin.resources-import.index')
                 ->withErrors(['import' => 'No verified file found. Please upload and verify a file first.']);
         }
-
-        $focus = $request->session()->get(self::SESSION_FOCUS, false);
         $edits = $request->input('edits', []);
         if (! is_array($edits)) {
             $edits = [];
