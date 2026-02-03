@@ -133,31 +133,31 @@
                 <ul class="m-0 mb-6 list-none">
                     <li class="p-0 mb-2 font-normal leading-7 text-default">
                         <a class="text-lg text-dark-blue hover:underline" target="_blank"
-                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{ strtoupper(App::getLocale()) }}/color-kit/Discover-the-method.pdf">
+                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/color-kit/Discover-the-method.pdf">
                             1 – DISCOVER THE METHOD
                         </a>
                     </li>
                     <li class="p-0 mb-2 font-normal leading-7 text-default">
                         <a class="text-lg text-dark-blue hover:underline" target="_blank"
-                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{ strtoupper(App::getLocale()) }}/color-kit/Prepare-the-learning-experience.pdf">
+                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/color-kit/Prepare-the-learning-experience.pdf">
                             2 – PREPARE THE LEARNING SPACE
                         </a>
                     </li>
                     <li class="p-0 mb-2 font-normal leading-7 text-default">
                         <a class="text-lg text-dark-blue hover:underline" target="_blank"
-                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{ strtoupper(App::getLocale()) }}/color-kit/Discover-the-lesson-plan.pdf">
+                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/color-kit/Discover-the-lesson-plan.pdf">
                             3 – DISCOVER THE LESSON PLAN
                         </a>
                     </li>
                     <li class="p-0 mb-2 font-normal leading-7 text-default">
                         <a class="text-lg text-dark-blue hover:underline" target="_blank"
-                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{ strtoupper(App::getLocale()) }}/color-kit/Share-your-experience.pdf">
+                            href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/color-kit/Share-your-experience.pdf">
                             4 – SHOWCASE AND SHARE YOUR EXPERIENCE
                         </a>
                     </li>
                     <li class="p-0 my-8 mt-8 mb-2 font-normal leading-7 text-default">
                         <a class="max-xl:!hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
-                            target="_blank" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{ strtoupper(App::getLocale()) }}/color-kit/CodyColor-Full-kit.pdf">
+                            target="_blank" href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/color-kit/CodyColor-Full-kit.pdf">
                             DOWNLOAD THE KIT!
                         </a>
                     </li>
