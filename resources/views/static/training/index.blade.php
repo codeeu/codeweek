@@ -8,6 +8,12 @@
 
     $results = [
          [
+            'image' => '/img/learning/cody-color-kit.png',
+            'title' => 'training.lessons.0.title',
+            'author' => 'training.lessons.0.author',
+            'link' => '/training/cody-color-kit'
+        ],
+         [
             'image' => '/img/learning/coding-without-computers.png',
             'title' => 'training.lessons.1.title',
             'author' => 'training.lessons.1.author',
@@ -145,10 +151,10 @@
 
 @section('content')
     <section id="training-page" class="font-['Blinker'] overflow-hidden">
-        <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-blue-gradient pt-32 pb-0 md:py-40">
-                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                    <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+        <section class="flex overflow-hidden relative">
+            <div class="flex relative pt-32 pb-0 w-full transition-all bg-blue-gradient md:py-40">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
+                    <div class="flex flex-col gap-28 duration-1000 codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 Training
@@ -157,7 +163,7 @@
                                 @lang('training.training-text')
                             </p>
                         </div>
-                        <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
+                        <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2"></div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"
@@ -175,8 +181,8 @@
             </div>
         </section>
 
-        <section class="relative overflow-hidden">
-            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28 flex justify-center">
+        <section class="overflow-hidden relative">
+            <div class="flex relative justify-center pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
                 <div class="w-full max-w-[907px] gap-2">
                     <h2 class="text-dark-blue tablet:text-center text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6 tablet:mb-8">
                         Quick & Practical Tools for Innovative Lessons
@@ -184,7 +190,7 @@
                     <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-8">
                         @lang('training.quick-practical-text1')
                     </p>
-                    <div class="relative flex gap-x-8 pb-4 tablet:pb-16">
+                    <div class="flex relative gap-x-8 pb-4 tablet:pb-16">
                         <div class="w-10 h-10 rounded-full flex justify-center items-center text-['#20262C'] font-semibold text-2xl bg-primary">
                             1
                         </div>
@@ -196,7 +202,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative flex gap-x-8 pb-4 tablet:pb-16">
+                    <div class="flex relative gap-x-8 pb-4 tablet:pb-16">
                         <div class="w-10 h-10 rounded-full flex justify-center items-center text-['#20262C'] font-semibold text-2xl bg-primary">
                             2
                         </div>
@@ -208,7 +214,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative flex gap-x-8 mb-8">
+                    <div class="flex relative gap-x-8 mb-8">
                         <div class="w-10 h-10 rounded-full flex justify-center items-center text-['#20262C'] font-semibold text-2xl bg-primary">
                             3
                         </div>
@@ -228,9 +234,9 @@
                     <div class="w-full bg-light-blue rounded-lg p-6 flex flex-col md:flex-row text-['Blinker'] gap-2">
                         <img class="min-w-8 min-h-8" src="/images/icon_info.svg" />
                         <div class="text-slate-500 text-[16px] leading-[22px] tablet:text-xl tablet:leading-7">
-                            <p class="font-semibold p-0 mb-2 tablet:mb-0">Copyright notice ©</p>
-                            <p class="font-normal p-0">
-                                <a class="font-semibold text-dark-blue underline" href="/training">The EU Code Week website</a> is a service supported by the European Commission Except where stated otherwise, content made available on this site is licensed under a <a class="font-semibold text-dark-blue underline" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license</a> Licensing under Creative Commons licenses does not of itself affect the ownership of the copyright Content from third party websites is subject to their own copyright restrictions; please refer to the site of origin for more information.
+                            <p class="p-0 mb-2 font-semibold tablet:mb-0">Copyright notice ©</p>
+                            <p class="p-0 font-normal">
+                                <a class="font-semibold underline text-dark-blue" href="/training">The EU Code Week website</a> is a service supported by the European Commission Except where stated otherwise, content made available on this site is licensed under a <a class="font-semibold underline text-dark-blue" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license</a> Licensing under Creative Commons licenses does not of itself affect the ownership of the copyright Content from third party websites is subject to their own copyright restrictions; please refer to the site of origin for more information.
                             </p>
                         </div>
                     </div>
@@ -238,18 +244,18 @@
             </div>
         </section>
 
-        <section class="relative overflow-hidden">
+        <section class="overflow-hidden relative">
             <div class="absolute w-full h-full bg-yellow-50 md:hidden" style="clip-path: ellipse(410% 90% at 38% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(528% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(228% 90% at 50% 90%);"></div>
-            <div class="absolute w-full h-full bg-yellow-50 hidden xl:block" style="clip-path: ellipse(148% 90% at 50% 90%);"></div>
-            <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-40 md:pb-28 flex flex-col talet:items-center">
+            <div class="hidden absolute w-full h-full bg-yellow-50 md:block lg:hidden" style="clip-path: ellipse(528% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 lg:block xl:hidden" style="clip-path: ellipse(228% 90% at 50% 90%);"></div>
+            <div class="hidden absolute w-full h-full bg-yellow-50 xl:block" style="clip-path: ellipse(148% 90% at 50% 90%);"></div>
+            <div class="flex relative flex-col pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28 talet:items-center">
                 <h2 class="text-dark-blue text-left tablet:text-center text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6 tablet:mb-10">
                     Learning Bits
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-10">
                     @foreach($results as $result)
-                        <div class="flex flex-col rounded-lg bg-white overflow-hidden cursor-pointer" onclick="window.location.href='{{ $result['link'] }}'">
+                        <div class="flex overflow-hidden flex-col bg-white rounded-lg cursor-pointer" onclick="window.location.href='{{ $result['link'] }}'">
                             <div class="relative">
                                 <img src="{{ $result['image'] }}" class="w-full" />
                             </div>

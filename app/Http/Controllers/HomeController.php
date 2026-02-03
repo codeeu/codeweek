@@ -29,10 +29,10 @@ class HomeController extends Controller
              [
                 'title' => 'home.banner4_title',
                 'description' => 'home.banner4_description',
-                'url' => 'https://codeweek.eu/blog/digital-educator-awards-2025/',
+                'url' => 'https://codeweek.eu/blog/code-week-digital-educator-awards-2025/',
                 'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
-                'btn_lang' => 'home.learn_more',
-                'url2' => 'https://codeweek.eu/blog/digital-educator-awards-2025/ ',
+                'btn_lang' => 'home.view_winners',
+                'url2' => 'https://codeweek.eu/blog/code-week-digital-educator-awards-2025/ ',
                 // 'btn2_lang' => 'home.download_brochure_btn',
             ],
             [
