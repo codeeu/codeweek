@@ -25,6 +25,7 @@ use App\Http\Controllers\Api;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BadgesController;
 use App\Http\Controllers\BulkEventUploadController;
+use App\Http\Controllers\ResourcesImportController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\Codeweek4AllController;
 use App\Http\Controllers\CodingAtHomeController;
@@ -75,6 +76,13 @@ Route::middleware(['auth', 'role:super admin'])->group(function () {
     Route::post('/admin/bulk-upload/import', [BulkEventUploadController::class, 'import'])->name('admin.bulk-upload.import');
     Route::get('/admin/bulk-upload/import', fn () => redirect()->route('admin.bulk-upload.index'))->name('admin.bulk-upload.import.get');
     Route::get('/admin/bulk-upload/report', [BulkEventUploadController::class, 'report'])->name('admin.bulk-upload.report');
+
+    Route::get('/admin/resources-import', [ResourcesImportController::class, 'index'])->name('admin.resources-import.index');
+    Route::post('/admin/resources-import/verify', [ResourcesImportController::class, 'verify'])->name('admin.resources-import.verify');
+    Route::get('/admin/resources-import/preview', [ResourcesImportController::class, 'preview'])->name('admin.resources-import.preview');
+    Route::post('/admin/resources-import/import', [ResourcesImportController::class, 'import'])->name('admin.resources-import.import');
+    Route::get('/admin/resources-import/import', fn () => redirect()->route('admin.resources-import.index'))->name('admin.resources-import.import.get');
+    Route::get('/admin/resources-import/report', [ResourcesImportController::class, 'report'])->name('admin.resources-import.report');
 });
 
 //redirects start
