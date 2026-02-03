@@ -8,7 +8,7 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            <p class="mb-4">Review and edit the parsed rows below. All fields are editable. Then click <strong>Import</strong> to run the import.</p>
+            <p class="mb-4">Review and edit the parsed rows below. All fields are editable. Then click <strong>Import</strong> to run the import. Complete the import soon; if you see &ldquo;419 Page Expired&rdquo;, your session timed out — go back to <a href="{{ route('admin.resources-import.index') }}">Upload &amp; verify</a> and try again.</p>
 
             @if ($errors->any())
                 <div class="mb-4 p-4 rounded bg-red-50 border border-red-200">
@@ -20,8 +20,9 @@
                 </div>
             @endif
 
-            <form method="POST" action="{{ route('admin.resources-import.import') }}" class="codeweek-form">
+            <form id="resources-import-form" method="POST" action="{{ route('admin.resources-import.import') }}" class="codeweek-form">
                 @csrf
+                <input type="hidden" name="import_payload" value="{{ $import_payload ?? '' }}">
 
                 <div class="overflow-x-auto mb-4">
                     <table class="w-full border-collapse border border-gray-300">
@@ -119,6 +120,13 @@
                     </div>
                 </div>
             </form>
+            <script>
+                document.getElementById('resources-import-form').addEventListener('submit', function () {
+                    var meta = document.querySelector('meta[name="csrf-token"]');
+                    var tokenInput = this.querySelector('input[name="_token"]');
+                    if (meta && tokenInput) tokenInput.value = meta.getAttribute('content');
+                });
+            </script>
         </section>
     </section>
 @endsection
