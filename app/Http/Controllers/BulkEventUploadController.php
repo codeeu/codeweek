@@ -135,6 +135,7 @@ class BulkEventUploadController extends Controller
             'default_creator_email' => $defaultCreatorEmail,
             'disk' => $tempDisk,
         ]));
+        $request->session()->put('bulk_upload_import_payload', $importPayload);
 
         $result = new BulkEventImportResult;
         $import = new GenericEventsImport($defaultCreatorEmail, $result, true);
@@ -183,6 +184,7 @@ class BulkEventUploadController extends Controller
                     'default_creator_email' => $request->session()->get(self::SESSION_DEFAULT_CREATOR),
                     'disk' => $tempDisk,
                 ]));
+                $request->session()->put('bulk_upload_import_payload', $importPayload);
             }
         }
 
@@ -208,6 +210,9 @@ class BulkEventUploadController extends Controller
         $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
 
         $payload = $request->input('import_payload');
+        if (empty($payload) || ! is_string($payload)) {
+            $payload = $request->session()->get('bulk_upload_import_payload');
+        }
         if (is_string($payload) && $payload !== '') {
             try {
                 $decoded = json_decode(Crypt::decryptString($payload), true);
@@ -219,7 +224,7 @@ class BulkEventUploadController extends Controller
                     }
                 }
             } catch (\Throwable $e) {
-                // Fall back to session
+                // Fall back to session path
             }
         }
         if (! $path) {
@@ -228,7 +233,7 @@ class BulkEventUploadController extends Controller
         }
 
         if (! $path || ! Storage::disk($tempDisk)->exists($path)) {
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING]);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_row_statuses']);
 
             return redirect()->route('admin.bulk-upload.index')
                 ->withErrors(['import' => 'No validated file found. Please upload and validate a file first.']);
@@ -240,7 +245,7 @@ class BulkEventUploadController extends Controller
             Excel::import($import, $path, $tempDisk);
 
             Storage::disk($tempDisk)->delete($path);
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING]);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_row_statuses']);
 
             $this->clearMapCache();
 
@@ -252,7 +257,7 @@ class BulkEventUploadController extends Controller
             if (Storage::disk($tempDisk)->exists($path)) {
                 Storage::disk($tempDisk)->delete($path);
             }
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING]);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_row_statuses']);
 
             return redirect()->route('admin.bulk-upload.index')
                 ->withErrors(['import' => 'Import failed: '.$e->getMessage()]);
