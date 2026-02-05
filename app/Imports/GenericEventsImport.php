@@ -101,10 +101,10 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             return null;
         }
         if ($lat === null || $lon === null) {
-            return 'Invalid latitude/longitude (must be numeric)';
+            return 'value must be numeric';
         }
         if ($lat < -90 || $lat > 90 || $lon < -180 || $lon > 180) {
-            return 'Bad coordinates (latitude -90 to 90, longitude -180 to 180)';
+            return 'latitude must be -90 to 90, longitude -180 to 180';
         }
         return null;
     }
@@ -177,7 +177,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         // 1) coordinate validation
         $coordError = $this->validateCoordinates($row);
         if ($coordError !== null) {
-            $this->recordFailure($rowIndex, $coordError);
+            $this->recordFailure($rowIndex, 'Row ' . $rowIndex . ' — columns latitude, longitude: ' . $coordError);
             Log::warning($coordError, $row);
             return null;
         }
@@ -200,8 +200,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             }
         }
         if ($missing !== []) {
-            $reason = 'Missing required field(s): '.implode(', ', $missing);
-            $this->recordFailure($rowIndex, $reason);
+            $this->recordFailure($rowIndex, 'Row ' . $rowIndex . ' — missing required columns: ' . implode(', ', $missing));
             Log::error('Missing required fields, skipping row.', $row);
             return null;
         }
@@ -209,14 +208,22 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         $startDate = $this->parseDate($row['start_date']);
         $endDate = $this->parseDate($row['end_date']);
         if ($startDate === null || $endDate === null) {
-            $this->recordFailure($rowIndex, 'Invalid date format for start_date or end_date');
+            $badDates = [];
+            if ($startDate === null && trim((string) ($row['start_date'] ?? '')) !== '') {
+                $badDates[] = 'start_date';
+            }
+            if ($endDate === null && trim((string) ($row['end_date'] ?? '')) !== '') {
+                $badDates[] = 'end_date';
+            }
+            $colList = $badDates !== [] ? implode(', ', $badDates) : 'start_date, end_date';
+            $this->recordFailure($rowIndex, 'Row ' . $rowIndex . ' — invalid date format in column(s): ' . $colList);
             return null;
         }
 
         // 3) resolve creator_id
         $creatorId = $this->resolveCreatorId($row);
         if ($creatorId === null && ! empty(trim($row['contact_email'] ?? ''))) {
-            $this->recordFailure($rowIndex, 'Could not resolve or create user for contact_email');
+            $this->recordFailure($rowIndex, 'Row ' . $rowIndex . ' — could not resolve or create user (column: contact_email)');
             return null;
         }
 
@@ -355,7 +362,7 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             $this->recordCreated($event);
             return $event;
         } catch (\Exception $e) {
-            $this->recordFailure($rowIndex, 'Event import failed: '.$e->getMessage());
+            $this->recordFailure($rowIndex, 'Row ' . $rowIndex . ' — save failed: ' . $e->getMessage());
             Log::error('Event import failed: '.$e->getMessage(), $attrs);
             return null;
         }
