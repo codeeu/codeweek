@@ -8,7 +8,11 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            <p class="mb-4">Rows below show validation results: <span class="bg-trans-success text-green-800 px-1 rounded">green</span> = valid, <span class="bg-trans-danger text-red-800 px-1 rounded">red</span> = problem. You can still run the import; invalid rows will be skipped. Click <strong>Import</strong> to run the import.</p>
+            @php
+                $validCount = collect($row_statuses)->where('valid', true)->count();
+                $totalCount = count($row_statuses);
+            @endphp
+            <p class="mb-2"><strong>{{ $validCount }} of {{ $totalCount }}</strong> rows passed validation. Rows below: <span class="bg-trans-success text-green-800 px-1 rounded">green</span> = valid, <span class="bg-trans-danger text-red-800 px-1 rounded">red</span> = problem (see Details). You can still run the import; invalid rows will be skipped. Click <strong>Import</strong> to run the import.</p>
 
             @if ($errors->any())
                 <div class="mb-4 p-4 rounded bg-red-50 border border-red-200">
@@ -26,7 +30,7 @@
                         <tr class="bg-gray-100">
                             <th class="border border-gray-300 px-3 py-2 text-left">Row</th>
                             <th class="border border-gray-300 px-3 py-2 text-left">Status</th>
-                            <th class="border border-gray-300 px-3 py-2 text-left">Details</th>
+                            <th class="border border-gray-300 px-3 py-2 text-left">Details (why invalid)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,7 +44,7 @@
                                         <span class="text-red-800 font-medium">Problem</span>
                                     @endif
                                 </td>
-                                <td class="border border-gray-300 px-3 py-2 {{ $item['valid'] ? 'text-green-700' : 'text-red-700' }}">
+                                <td class="border border-gray-300 px-3 py-2 {{ $item['valid'] ? 'text-green-700' : 'text-red-700' }} max-w-xl">
                                     @if ($item['valid'])
                                         —
                                     @else

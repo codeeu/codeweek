@@ -63,4 +63,22 @@ class BulkEventUploadValidator
             'missing' => $missing,
         ];
     }
+
+    /**
+     * Return the number of data rows (excluding header) in the file.
+     *
+     * @return int 0 if unreadable or empty
+     */
+    public static function getDataRowCount(string $path, string $disk = 'local'): int
+    {
+        try {
+            $import = new HeadingRowImport(1);
+            $data = Excel::toArray($import, $path, $disk);
+            $rows = $data[0] ?? [];
+
+            return is_array($rows) ? count($rows) : 0;
+        } catch (\Throwable $e) {
+            return 0;
+        }
+    }
 }
