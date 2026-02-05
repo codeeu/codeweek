@@ -196,10 +196,14 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         }
 
         $item = ResourceItem::where('name', $name)->where('source', $source)->first();
+        if (! $item) {
+            $item = ResourceItem::where('name', $name)->first();
+        }
         if ($item) {
             $item->fill($itemAttributes);
+            $hadChanges = $item->isDirty();
             $item->save();
-            if ($this->result) {
+            if ($this->result && $hadChanges) {
                 $this->result->addUpdated($item);
             }
         } else {
