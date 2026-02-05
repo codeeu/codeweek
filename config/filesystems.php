@@ -4,6 +4,9 @@ return [
 
     'cloud' => env('FILESYSTEM_CLOUD', 's3'),
 
+    'resources_import_temp_disk' => env('RESOURCES_IMPORT_TEMP_DISK', 'local'),
+    'bulk_upload_temp_disk' => env('BULK_UPLOAD_TEMP_DISK', 'local'),
+
     'disks' => [
         'latex' => [
             'driver' => 'local',
