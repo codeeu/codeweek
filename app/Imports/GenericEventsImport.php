@@ -174,6 +174,24 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     public function model(array $row): ?Model
     {
         $rowIndex = $this->currentRow++;
+
+        try {
+            return $this->processRow($rowIndex, $row);
+        } catch (\Throwable $e) {
+            if ($this->result) {
+                $this->result->addFailure($rowIndex, 'Row ' . $rowIndex . ' — ' . $e->getMessage());
+            }
+            Log::warning('Import row ' . $rowIndex . ' failed: ' . $e->getMessage(), ['row' => $row]);
+
+            return null;
+        }
+    }
+
+    /**
+     * Process a single row (validation + optional persist). Called from model() inside try-catch.
+     */
+    protected function processRow(int $rowIndex, array $row): ?Model
+    {
         $row = $this->normalizeRow($row);
         Log::info('Importing row:', $row);
 
@@ -378,3 +396,4 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         }
     }
 }
+
