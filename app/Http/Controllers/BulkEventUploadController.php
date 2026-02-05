@@ -8,6 +8,7 @@ use App\Services\BulkEventUploadValidator;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 use Maatwebsite\Excel\Facades\Excel;
@@ -26,11 +27,23 @@ class BulkEventUploadController extends Controller
     {
         $validationMissing = $request->session()->get('validation_missing')
             ?? $request->session()->get(self::SESSION_VALIDATION_MISSING, []);
+        $validationPassed = $request->session()->get(self::SESSION_VALIDATION_PASSED, false);
+        $filePath = $request->session()->get(self::SESSION_FILE_PATH);
+        $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
+        $importPayload = '';
+        if ($validationPassed && $filePath) {
+            $importPayload = Crypt::encryptString(json_encode([
+                'path' => $filePath,
+                'default_creator_email' => $request->session()->get(self::SESSION_DEFAULT_CREATOR),
+                'disk' => $tempDisk,
+            ]));
+        }
 
         return view('admin.bulk-upload.index', [
-            'validationPassed' => $request->session()->get(self::SESSION_VALIDATION_PASSED, false),
+            'validationPassed' => $validationPassed,
             'validationMissing' => $validationMissing,
             'storedDefaultCreatorEmail' => $request->session()->get(self::SESSION_DEFAULT_CREATOR),
+            'import_payload' => $importPayload,
         ]);
     }
 
@@ -81,25 +94,25 @@ class BulkEventUploadController extends Controller
                 ->withInput();
         }
 
-        // Remove any previously stored file
+        $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
         $oldPath = $request->session()->get(self::SESSION_FILE_PATH);
-        if ($oldPath && Storage::exists($oldPath)) {
-            Storage::delete($oldPath);
+        if ($oldPath && Storage::disk($tempDisk)->exists($oldPath)) {
+            Storage::disk($tempDisk)->delete($oldPath);
         }
         $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, self::SESSION_DEFAULT_CREATOR]);
 
-        $path = $file->storeAs('temp', 'bulk_events_'.time().'.'.$extension);
+        $path = $file->storeAs('temp', 'bulk_events_'.time().'.'.$extension, $tempDisk);
 
-        $headerCheck = BulkEventUploadValidator::validateRequiredColumns($path, 'local');
+        $headerCheck = BulkEventUploadValidator::validateRequiredColumns($path, $tempDisk);
         if (isset($headerCheck['error'])) {
-            Storage::delete($path);
+            Storage::disk($tempDisk)->delete($path);
 
             return redirect()->route('admin.bulk-upload.index')
                 ->withErrors(['file' => 'Could not read file: '.$headerCheck['error']])
                 ->withInput();
         }
         if (! $headerCheck['valid']) {
-            Storage::delete($path);
+            Storage::disk($tempDisk)->delete($path);
 
             return redirect()->route('admin.bulk-upload.index')
                 ->with('validation_missing', $headerCheck['missing'])
@@ -117,26 +130,48 @@ class BulkEventUploadController extends Controller
     }
 
     /**
-     * Run the import using the file stored in session (after validate).
+     * Run the import using file path from encrypted form payload or session.
+     * Payload avoids "No validated file found" when session is not shared (e.g. load balancer).
      */
     public function import(Request $request): View|RedirectResponse
     {
-        $path = $request->session()->get(self::SESSION_FILE_PATH);
-        if (! $path || ! Storage::exists($path)) {
+        $path = null;
+        $defaultCreatorEmail = null;
+        $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
+
+        $payload = $request->input('import_payload');
+        if (is_string($payload) && $payload !== '') {
+            try {
+                $decoded = json_decode(Crypt::decryptString($payload), true);
+                if (is_array($decoded) && ! empty($decoded['path'])) {
+                    $path = $decoded['path'];
+                    $defaultCreatorEmail = $decoded['default_creator_email'] ?? null;
+                    if (! empty($decoded['disk'])) {
+                        $tempDisk = $decoded['disk'];
+                    }
+                }
+            } catch (\Throwable $e) {
+                // Fall back to session
+            }
+        }
+        if (! $path) {
+            $path = $request->session()->get(self::SESSION_FILE_PATH);
+            $defaultCreatorEmail = $request->session()->get(self::SESSION_DEFAULT_CREATOR);
+        }
+
+        if (! $path || ! Storage::disk($tempDisk)->exists($path)) {
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING]);
 
             return redirect()->route('admin.bulk-upload.index')
                 ->withErrors(['import' => 'No validated file found. Please upload and validate a file first.']);
         }
 
-        $defaultCreatorEmail = $request->session()->get(self::SESSION_DEFAULT_CREATOR);
-
         try {
             $result = new BulkEventImportResult;
             $import = new GenericEventsImport($defaultCreatorEmail, $result);
-            Excel::import($import, $path, 'local');
+            Excel::import($import, $path, $tempDisk);
 
-            Storage::delete($path);
+            Storage::disk($tempDisk)->delete($path);
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING]);
 
             $this->clearMapCache();
@@ -146,8 +181,8 @@ class BulkEventUploadController extends Controller
 
             return redirect()->route('admin.bulk-upload.report');
         } catch (\Throwable $e) {
-            if (Storage::exists($path)) {
-                Storage::delete($path);
+            if (Storage::disk($tempDisk)->exists($path)) {
+                Storage::disk($tempDisk)->delete($path);
             }
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING]);
 
