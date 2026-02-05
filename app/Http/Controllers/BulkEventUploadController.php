@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -130,12 +131,6 @@ class BulkEventUploadController extends Controller
         $request->session()->forget(self::SESSION_VALIDATION_MISSING);
 
         $defaultCreatorEmail = $validated['default_creator_email'] ?? null;
-        $importPayload = Crypt::encryptString(json_encode([
-            'path' => $path,
-            'default_creator_email' => $defaultCreatorEmail,
-            'disk' => $tempDisk,
-        ]));
-        $request->session()->put('bulk_upload_import_payload', $importPayload);
 
         $result = new BulkEventImportResult;
         $import = new GenericEventsImport($defaultCreatorEmail, $result, true);
@@ -162,8 +157,22 @@ class BulkEventUploadController extends Controller
         }
         ksort($rowStatuses);
 
+        $importToken = Str::random(64);
+        Cache::put('bulk_import_' . $importToken, [
+            'path' => $path,
+            'disk' => $tempDisk,
+            'default_creator_email' => $defaultCreatorEmail,
+        ], now()->addHours(1));
+
+        $request->session()->put('bulk_upload_import_token', $importToken);
+        $request->session()->put('bulk_upload_import_payload', Crypt::encryptString(json_encode([
+            'path' => $path,
+            'default_creator_email' => $defaultCreatorEmail,
+            'disk' => $tempDisk,
+        ])));
+
         return redirect()->route('admin.bulk-upload.preview')
-            ->with('bulk_upload_import_payload', $importPayload)
+            ->with('bulk_upload_import_token', $importToken)
             ->with('bulk_upload_row_statuses', array_values($rowStatuses));
     }
 
@@ -172,29 +181,37 @@ class BulkEventUploadController extends Controller
      */
     public function preview(Request $request): View|RedirectResponse
     {
-        $importPayload = $request->session()->get('bulk_upload_import_payload');
+        $importToken = $request->session()->get('bulk_upload_import_token');
         $rowStatuses = $request->session()->get('bulk_upload_row_statuses', []);
 
-        if ($importPayload === null || $importPayload === '') {
-            $filePath = $request->session()->get(self::SESSION_FILE_PATH);
-            $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
-            if ($filePath) {
-                $importPayload = Crypt::encryptString(json_encode([
-                    'path' => $filePath,
-                    'default_creator_email' => $request->session()->get(self::SESSION_DEFAULT_CREATOR),
-                    'disk' => $tempDisk,
-                ]));
-                $request->session()->put('bulk_upload_import_payload', $importPayload);
+        if (empty($importToken)) {
+            $importPayload = $request->session()->get('bulk_upload_import_payload');
+            if ($importPayload === null || $importPayload === '') {
+                $filePath = $request->session()->get(self::SESSION_FILE_PATH);
+                $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
+                if ($filePath) {
+                    $importPayload = Crypt::encryptString(json_encode([
+                        'path' => $filePath,
+                        'default_creator_email' => $request->session()->get(self::SESSION_DEFAULT_CREATOR),
+                        'disk' => $tempDisk,
+                    ]));
+                    $request->session()->put('bulk_upload_import_payload', $importPayload);
+                }
             }
-        }
-
-        if ($importPayload === null || $importPayload === '') {
-            return redirect()->route('admin.bulk-upload.index')
-                ->withErrors(['import' => 'No validated file found. Please upload and validate a file first.']);
+            if ($importPayload === null || $importPayload === '') {
+                return redirect()->route('admin.bulk-upload.index')
+                    ->withErrors(['import' => 'No validated file found. Please upload and validate a file first.']);
+            }
+            return view('admin.bulk-upload.preview', [
+                'import_token' => '',
+                'import_payload' => $importPayload,
+                'row_statuses' => $rowStatuses,
+            ]);
         }
 
         return view('admin.bulk-upload.preview', [
-            'import_payload' => $importPayload,
+            'import_token' => $importToken,
+            'import_payload' => '',
             'row_statuses' => $rowStatuses,
         ]);
     }
@@ -209,22 +226,34 @@ class BulkEventUploadController extends Controller
         $defaultCreatorEmail = null;
         $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
 
-        $payload = $request->input('import_payload');
-        if (empty($payload) || ! is_string($payload)) {
-            $payload = $request->session()->get('bulk_upload_import_payload');
+        $token = $request->input('import_token');
+        if (is_string($token) && $token !== '') {
+            $cached = Cache::get('bulk_import_' . $token);
+            if (is_array($cached) && ! empty($cached['path'])) {
+                $path = $cached['path'];
+                $tempDisk = $cached['disk'] ?? $tempDisk;
+                $defaultCreatorEmail = $cached['default_creator_email'] ?? null;
+            }
         }
-        if (is_string($payload) && $payload !== '') {
-            try {
-                $decoded = json_decode(Crypt::decryptString($payload), true);
-                if (is_array($decoded) && ! empty($decoded['path'])) {
-                    $path = $decoded['path'];
-                    $defaultCreatorEmail = $decoded['default_creator_email'] ?? null;
-                    if (! empty($decoded['disk'])) {
-                        $tempDisk = $decoded['disk'];
+
+        if (! $path) {
+            $payload = $request->input('import_payload');
+            if (empty($payload) || ! is_string($payload)) {
+                $payload = $request->session()->get('bulk_upload_import_payload');
+            }
+            if (is_string($payload) && $payload !== '') {
+                try {
+                    $decoded = json_decode(Crypt::decryptString($payload), true);
+                    if (is_array($decoded) && ! empty($decoded['path'])) {
+                        $path = $decoded['path'];
+                        $defaultCreatorEmail = $decoded['default_creator_email'] ?? null;
+                        if (! empty($decoded['disk'])) {
+                            $tempDisk = $decoded['disk'];
+                        }
                     }
+                } catch (\Throwable $e) {
+                    // Fall back to session path
                 }
-            } catch (\Throwable $e) {
-                // Fall back to session path
             }
         }
         if (! $path) {
@@ -233,10 +262,18 @@ class BulkEventUploadController extends Controller
         }
 
         if (! $path || ! Storage::disk($tempDisk)->exists($path)) {
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_row_statuses']);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_import_token', 'bulk_upload_row_statuses']);
+            if (is_string($token ?? null) && $token !== '') {
+                Cache::forget('bulk_import_' . $token);
+            }
+
+            $message = 'No validated file found. Please upload and validate a file first.';
+            if ($path && ! Storage::disk($tempDisk)->exists($path)) {
+                $message .= ' If you use multiple servers, set BULK_UPLOAD_TEMP_DISK=s3 in .env so the file is stored in shared storage.';
+            }
 
             return redirect()->route('admin.bulk-upload.index')
-                ->withErrors(['import' => 'No validated file found. Please upload and validate a file first.']);
+                ->withErrors(['import' => $message]);
         }
 
         try {
@@ -245,7 +282,11 @@ class BulkEventUploadController extends Controller
             Excel::import($import, $path, $tempDisk);
 
             Storage::disk($tempDisk)->delete($path);
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_row_statuses']);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_import_token', 'bulk_upload_row_statuses']);
+            $token = $request->input('import_token');
+            if (is_string($token) && $token !== '') {
+                Cache::forget('bulk_import_' . $token);
+            }
 
             $this->clearMapCache();
 
@@ -257,7 +298,11 @@ class BulkEventUploadController extends Controller
             if (Storage::disk($tempDisk)->exists($path)) {
                 Storage::disk($tempDisk)->delete($path);
             }
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_row_statuses']);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_DEFAULT_CREATOR, self::SESSION_VALIDATION_PASSED, self::SESSION_VALIDATION_MISSING, 'bulk_upload_import_payload', 'bulk_upload_import_token', 'bulk_upload_row_statuses']);
+            $token = $request->input('import_token');
+            if (is_string($token) && $token !== '') {
+                Cache::forget('bulk_import_' . $token);
+            }
 
             return redirect()->route('admin.bulk-upload.index')
                 ->withErrors(['import' => 'Import failed: '.$e->getMessage()]);
