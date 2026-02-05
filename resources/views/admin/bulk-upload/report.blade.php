@@ -22,19 +22,19 @@
 
             @if (count($failures) > 0)
                 <h2 class="text-xl font-semibold mt-6 mb-2">Failures ({{ count($failures) }})</h2>
-                <p class="text-sm text-gray-600 mb-2">Row number refers to the row in the Excel file (header = row 1).</p>
+                <p class="text-sm text-gray-600 mb-2">Row is the Excel row number (header = row 1). Reason shows which columns have issues so you can fix the file and re-upload.</p>
                 <table class="w-full border-collapse border border-gray-300">
                     <thead>
                         <tr class="bg-gray-100">
                             <th class="border border-gray-300 px-3 py-2 text-left">Row</th>
-                            <th class="border border-gray-300 px-3 py-2 text-left">Reason</th>
+                            <th class="border border-gray-300 px-3 py-2 text-left">Reason (row and columns)</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($failures as $rowIndex => $reason)
                             <tr>
-                                <td class="border border-gray-300 px-3 py-2">{{ $rowIndex }}</td>
-                                <td class="border border-gray-300 px-3 py-2">{{ $reason }}</td>
+                                <td class="border border-gray-300 px-3 py-2 font-medium">{{ $rowIndex }}</td>
+                                <td class="border border-gray-300 px-3 py-2 text-left">{{ $reason }}</td>
                             </tr>
                         @endforeach
                     </tbody>
