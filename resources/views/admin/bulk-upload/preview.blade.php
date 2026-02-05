@@ -63,7 +63,11 @@
 
             <form method="POST" action="{{ route('admin.bulk-upload.import') }}" class="inline" id="bulk-upload-import-form">
                 @csrf
-                <input type="hidden" name="import_payload" value="{{ $import_payload ?? '' }}">
+                @if(!empty($import_token))
+                    <input type="hidden" name="import_token" value="{{ $import_token }}">
+                @else
+                    <input type="hidden" name="import_payload" value="{{ $import_payload ?? '' }}">
+                @endif
                 <button type="submit" id="bulk-upload-import-btn" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300">Import</button>
             </form>
             <script>
