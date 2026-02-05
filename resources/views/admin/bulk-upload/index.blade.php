@@ -52,7 +52,7 @@
                             <div class="flex flex-wrap items-center gap-2 mb-1">
                                 <label for="bulk-upload-file" class="font-medium">Excel / CSV file <span class="text-red-600">*</span></label>
                                 <input type="file" name="file" id="bulk-upload-file" accept=".csv,.xlsx,.xls" required
-                                       class="text-sm file:mr-2 file:py-2 file:px-4 file:rounded-full file:border-0 file:font-semibold file:bg-gray-200 file:text-gray-700 hover:file:bg-gray-300 file:cursor-pointer cursor-pointer" aria-required="true">
+                                       class="text-sm file:mr-2 file:py-2 file:px-4 file:rounded-full file:border-0 file:font-semibold file:bg-primary file:text-white hover:file:opacity-90 file:cursor-pointer cursor-pointer" aria-required="true">
                                 <span id="bulk-upload-file-name" class="text-sm text-gray-600 italic">No file chosen</span>
                                 <span id="bulk-upload-file-attached" class="hidden text-sm font-medium text-green-700 bg-green-100 px-2 py-0.5 rounded">Attached</span>
                             </div>
@@ -91,7 +91,7 @@
                         form.addEventListener('submit', function () {
                             if (!fileInput.files || fileInput.files.length === 0) return;
                             btn.disabled = true;
-                            btn.textContent = 'Uploading…';
+                            btn.textContent = 'Validating…';
                         });
                     })();
                 </script>
