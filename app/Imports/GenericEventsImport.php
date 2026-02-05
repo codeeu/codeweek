@@ -22,13 +22,16 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
 
     protected ?BulkEventImportResult $result = null;
 
+    protected bool $previewMode = false;
+
     /** Current Excel row number (2 = first data row after header). */
     protected int $currentRow = 2;
 
-    public function __construct(?string $defaultCreatorEmail = null, ?BulkEventImportResult $result = null)
+    public function __construct(?string $defaultCreatorEmail = null, ?BulkEventImportResult $result = null, bool $previewMode = false)
     {
         $this->defaultCreatorEmail = $defaultCreatorEmail ? trim($defaultCreatorEmail) : null;
         $this->result = $result;
+        $this->previewMode = $previewMode;
     }
 
     /**
@@ -309,6 +312,13 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         // 7) contact_person fallback
         if (Schema::hasColumn('events','contact_person') && !empty($row['contact_email'])) {
             $attrs['contact_person'] = trim($row['contact_email']);
+        }
+
+        // Preview mode: record row as valid and skip persistence
+        if ($this->previewMode && $this->result) {
+            $this->result->addValid($rowIndex);
+
+            return null;
         }
 
         // 8) duplicate check: find existing by title + start_date + country_iso + organizer; if found, update instead of create
