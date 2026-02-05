@@ -147,6 +147,18 @@ class BulkEventUploadController extends Controller
         foreach ($result->failures as $row => $reason) {
             $rowStatuses[$row] = ['row' => $row, 'valid' => false, 'message' => $reason];
         }
+
+        $dataRowCount = BulkEventUploadValidator::getDataRowCount($path, $tempDisk);
+        $firstDataRow = 2;
+        for ($r = $firstDataRow; $r < $firstDataRow + $dataRowCount; $r++) {
+            if (! isset($rowStatuses[$r])) {
+                $rowStatuses[$r] = [
+                    'row' => $r,
+                    'valid' => false,
+                    'message' => 'Row was not validated (empty row or reader skipped).',
+                ];
+            }
+        }
         ksort($rowStatuses);
 
         return redirect()->route('admin.bulk-upload.preview')
