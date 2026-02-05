@@ -22,7 +22,11 @@
 
             <form id="resources-import-form" method="POST" action="{{ route('admin.resources-import.import') }}" class="codeweek-form">
                 @csrf
-                <input type="hidden" name="import_payload" value="{{ $import_payload ?? '' }}">
+                @if(!empty($import_token))
+                    <input type="hidden" name="import_token" value="{{ $import_token }}">
+                @else
+                    <input type="hidden" name="import_payload" value="{{ $import_payload ?? '' }}">
+                @endif
 
                 <div class="overflow-x-auto mb-4">
                     <table class="w-full border-collapse border border-gray-300">

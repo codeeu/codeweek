@@ -8,8 +8,10 @@ use App\Services\ResourcesImportResult;
 use App\Services\ResourcesUploadValidator;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -111,9 +113,18 @@ class ResourcesImportController extends Controller
                 ->withInput();
         }
 
+        $focus = (bool) $request->boolean('focus');
         $request->session()->put(self::SESSION_FILE_PATH, $path);
         $request->session()->put(self::SESSION_ROWS, $rows);
-        $request->session()->put(self::SESSION_FOCUS, (bool) $request->boolean('focus'));
+        $request->session()->put(self::SESSION_FOCUS, $focus);
+
+        $importToken = Str::random(64);
+        Cache::put('resources_import_' . $importToken, [
+            'path' => $path,
+            'disk' => $tempDisk,
+            'focus' => $focus,
+        ], now()->addHours(1));
+        $request->session()->put('resources_import_token', $importToken);
 
         return redirect()->route('admin.resources-import.preview');
     }
@@ -127,23 +138,28 @@ class ResourcesImportController extends Controller
         $focus = $request->session()->get(self::SESSION_FOCUS, false);
 
         if (! is_array($rows) || empty($rows)) {
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS, 'resources_import_token']);
 
             return redirect()->route('admin.resources-import.index')
                 ->with('info', 'No preview data found. Please upload and verify a file first.');
         }
 
+        $importToken = $request->session()->get('resources_import_token');
         $path = $request->session()->get(self::SESSION_FILE_PATH);
         $tempDisk = config('filesystems.resources_import_temp_disk', 'local');
-        $importPayload = $path ? Crypt::encryptString(json_encode([
-            'path' => $path,
-            'focus' => $focus,
-            'disk' => $tempDisk,
-        ])) : '';
+        $importPayload = '';
+        if (empty($importToken) && $path) {
+            $importPayload = Crypt::encryptString(json_encode([
+                'path' => $path,
+                'focus' => $focus,
+                'disk' => $tempDisk,
+            ]));
+        }
 
         return view('admin.resources-import.preview', [
             'rows' => $rows,
             'focus' => $focus,
+            'import_token' => $importToken ?? '',
             'import_payload' => $importPayload,
         ]);
     }
@@ -158,32 +174,54 @@ class ResourcesImportController extends Controller
         $focus = false;
         $tempDisk = config('filesystems.resources_import_temp_disk', 'local');
 
-        $payload = $request->input('import_payload');
-        if (is_string($payload) && $payload !== '') {
-            try {
-                $decoded = json_decode(Crypt::decryptString($payload), true);
-                if (is_array($decoded) && ! empty($decoded['path'])) {
-                    $path = $decoded['path'];
-                    $focus = (bool) ($decoded['focus'] ?? false);
-                    if (! empty($decoded['disk'])) {
-                        $tempDisk = $decoded['disk'];
-                    }
-                }
-            } catch (\Throwable $e) {
-                // Invalid or expired payload, fall back to session
+        $token = $request->input('import_token');
+        if (is_string($token) && $token !== '') {
+            $cached = Cache::get('resources_import_' . $token);
+            if (is_array($cached) && ! empty($cached['path'])) {
+                $path = $cached['path'];
+                $tempDisk = $cached['disk'] ?? $tempDisk;
+                $focus = (bool) ($cached['focus'] ?? false);
             }
         }
 
+        if (! $path) {
+            $payload = $request->input('import_payload');
+            if (empty($payload) || ! is_string($payload)) {
+                $payload = $request->session()->get('resources_import_payload');
+            }
+            if (is_string($payload) && $payload !== '') {
+                try {
+                    $decoded = json_decode(Crypt::decryptString($payload), true);
+                    if (is_array($decoded) && ! empty($decoded['path'])) {
+                        $path = $decoded['path'];
+                        $focus = (bool) ($decoded['focus'] ?? false);
+                        if (! empty($decoded['disk'])) {
+                            $tempDisk = $decoded['disk'];
+                        }
+                    }
+                } catch (\Throwable $e) {
+                    // Fall back to session
+                }
+            }
+        }
         if (! $path) {
             $path = $request->session()->get(self::SESSION_FILE_PATH);
             $focus = $request->session()->get(self::SESSION_FOCUS, false);
         }
 
         if (! $path || ! Storage::disk($tempDisk)->exists($path)) {
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS, 'resources_import_token']);
+            if (is_string($token ?? null) && $token !== '') {
+                Cache::forget('resources_import_' . $token);
+            }
+
+            $message = 'No verified file found. Please upload and verify a file first.';
+            if ($path && ! Storage::disk($tempDisk)->exists($path)) {
+                $message .= ' If you use multiple servers, set RESOURCES_IMPORT_TEMP_DISK=s3 in .env so the file is stored in shared storage.';
+            }
 
             return redirect()->route('admin.resources-import.index')
-                ->withErrors(['import' => 'No verified file found. Please upload and verify a file first.']);
+                ->withErrors(['import' => $message]);
         }
         $edits = $request->input('edits', []);
         if (! is_array($edits)) {
@@ -222,7 +260,10 @@ class ResourcesImportController extends Controller
             Excel::import($import, $path, $tempDisk);
 
             Storage::disk($tempDisk)->delete($path);
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS, 'resources_import_token']);
+            if (is_string($token = $request->input('import_token')) && $token !== '') {
+                Cache::forget('resources_import_' . $token);
+            }
 
             $request->session()->flash('resources_import_report_created', $result->created);
             $request->session()->flash('resources_import_report_updated', $result->updated);
@@ -233,7 +274,10 @@ class ResourcesImportController extends Controller
             if (Storage::disk($tempDisk)->exists($path)) {
                 Storage::disk($tempDisk)->delete($path);
             }
-            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
+            $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS, 'resources_import_token']);
+            if (is_string($token = $request->input('import_token')) && $token !== '') {
+                Cache::forget('resources_import_' . $token);
+            }
 
             return redirect()->route('admin.resources-import.preview')
                 ->withErrors(['import' => 'Import failed: '.$e->getMessage()]);
