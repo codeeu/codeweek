@@ -655,6 +655,7 @@ Route::middleware(['auth', 'super.certificate.admin'])->prefix('admin/certificat
     Route::post('/generate/start', [CertificateBackendController::class, 'startGeneration'])->name('generate.start');
     Route::post('/generate/cancel', [CertificateBackendController::class, 'cancelGeneration'])->name('generate.cancel');
     Route::post('/send/start', [CertificateBackendController::class, 'startSend'])->name('send.start');
+    Route::post('/regenerate/{id}', [CertificateBackendController::class, 'regenerateOne'])->whereNumber('id')->name('regenerate.one');
     Route::post('/resend/{id}', [CertificateBackendController::class, 'resendOne'])->whereNumber('id')->name('resend.one');
     Route::post('/resend-all-failed', [CertificateBackendController::class, 'resendAllFailed'])->name('resend.all_failed');
     Route::get('/errors', [CertificateBackendController::class, 'errorsList'])->name('errors');
