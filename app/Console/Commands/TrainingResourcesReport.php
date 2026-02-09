@@ -6,6 +6,7 @@ use App\OnlineCourse;
 use App\ResourceItem;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Schema;
 
 /**
  * Training resources report for https://codeweek.eu/training and related Learn & Teach resources.
@@ -54,6 +55,10 @@ class TrainingResourcesReport extends Command
         }
 
         if ($onlineCoursesOnly) {
+            if (! Schema::hasTable('online_courses')) {
+                $this->error('The online_courses table does not exist. Run: php artisan migrate');
+                return self::FAILURE;
+            }
             $stats = $this->onlineCoursesStats($baseline);
             if ($format === 'json') {
                 $this->line(json_encode([
@@ -74,7 +79,7 @@ class TrainingResourcesReport extends Command
             'report_period_downloads' => 'June/Sept 2024 – Jan 2026 (requested). Download data not collected by application.',
             'training_page' => $this->trainingPageStats(),
             'learn_teach_resources' => $this->learnTeachResourcesStats($baseline),
-            'online_courses' => $this->onlineCoursesStats($baseline),
+            'online_courses' => $this->onlineCoursesStats($baseline, true),
             'downloads' => $this->downloadsSection(),
             'geographical_distribution' => $this->geographySection(),
             'downloads_over_time' => $this->downloadsOverTimeSection(),
@@ -117,8 +122,22 @@ class TrainingResourcesReport extends Command
         ];
     }
 
-    private function onlineCoursesStats(Carbon $baseline): array
+    /** @param bool $allowMissingTable When true (e.g. full report), return a placeholder instead of throwing. */
+    private function onlineCoursesStats(Carbon $baseline, bool $allowMissingTable = false): array
     {
+        if (! Schema::hasTable('online_courses')) {
+            if ($allowMissingTable) {
+                return [
+                    'total_now' => null,
+                    'added_since_baseline' => null,
+                    'baseline_date' => $baseline->format('Y-m-d'),
+                    'url' => 'https://codeweek.eu/online-courses',
+                    'note' => 'Online courses table not found. Run: php artisan migrate',
+                ];
+            }
+            throw new \RuntimeException('The online_courses table does not exist. Run: php artisan migrate');
+        }
+
         $total = OnlineCourse::query()->where('active', true)->count();
         $addedSince = OnlineCourse::query()
             ->where('active', true)
@@ -196,8 +215,10 @@ class TrainingResourcesReport extends Command
         $this->line('');
 
         $this->line('--- Online Courses (https://codeweek.eu/online-courses) ---');
-        $this->line('Total online courses now: ' . $report['online_courses']['total_now']);
-        $this->line('Added since baseline (' . $baseline->format('Y-m-d') . '): ' . $report['online_courses']['added_since_baseline']);
+        if (array_key_exists('total_now', $report['online_courses']) && $report['online_courses']['total_now'] !== null) {
+            $this->line('Total online courses now: ' . $report['online_courses']['total_now']);
+            $this->line('Added since baseline (' . $baseline->format('Y-m-d') . '): ' . $report['online_courses']['added_since_baseline']);
+        }
         $this->line($report['online_courses']['note']);
         $this->line('');
 
