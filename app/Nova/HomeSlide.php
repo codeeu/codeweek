@@ -42,21 +42,25 @@ class HomeSlide extends Resource
             ID::make()->sortable(),
             Text::make('Title', 'title')
                 ->rules('required')
-                ->help('Lang key (e.g. home.banner1_title) or plain text.'),
+                ->help('Use a lang key (e.g. home.banner1_title) for translated content, or type plain text.'),
             Textarea::make('Description', 'description')
                 ->nullable()
-                ->help('Lang key or plain text.'),
+                ->help('Use a lang key for translated content, or plain text.'),
             Text::make('Primary button URL', 'url')->rules('required')->hideFromIndex(),
             Text::make('Primary button label', 'button_text')
                 ->rules('required')
-                ->help('Lang key (e.g. home.learn_more) or plain text.'),
+                ->help('Lang key (e.g. home.learn_more) for translation, or plain text.'),
+            Boolean::make('Open primary link in new tab', 'open_primary_new_tab')
+                ->help('Open the primary button link in a new window/tab.'),
             Text::make('Second button URL', 'url2')->nullable()->hideFromIndex(),
             Text::make('Second button label', 'button2_text')
                 ->nullable()
-                ->help('Leave empty to hide second button.'),
+                ->help('Leave empty to hide second button. Use lang key for translation.'),
+            Boolean::make('Open second link in new tab', 'open_second_new_tab')
+                ->help('Open the second button link in a new window/tab.'),
             Text::make('Image', 'image')
                 ->nullable()
-                ->help('Path e.g. /images/homepage/slide1.png or full URL. Used as slide background.'),
+                ->help('Path from site root e.g. images/dream-jobs/dream_jobs_bg.png (no leading slash), or full URL. Used as slide background.'),
             Number::make('Position', 'position')
                 ->min(0)
                 ->default(0)
