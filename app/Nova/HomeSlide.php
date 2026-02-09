@@ -3,13 +3,16 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\KeyValue;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Panel;
 
 class HomeSlide extends Resource
 {
@@ -19,7 +22,7 @@ class HomeSlide extends Resource
 
     public static $title = 'title';
 
-    public static $search = [];
+    public static $search = ['title', 'description'];
 
     public static function label()
     {
@@ -36,32 +39,72 @@ class HomeSlide extends Resource
         return true;
     }
 
+    /**
+     * Lang keys from resources/lang/en/home.php for dropdown fallback.
+     *
+     * @return array<string, string> key => label (key as label for clarity)
+     */
+    public static function homeLangKeys(): array
+    {
+        $path = resource_path('lang/en/home.php');
+        if (! File::exists($path)) {
+            return [];
+        }
+        $keys = array_keys(require $path);
+        $prefixed = [];
+        foreach ($keys as $key) {
+            $full = 'home.' . $key;
+            $prefixed[$full] = $full;
+        }
+        return $prefixed;
+    }
+
+    /**
+     * Locale codes from config (LOCALES env).
+     *
+     * @return array<string, string>
+     */
+    public static function localeOptions(): array
+    {
+        $locales = config('app.locales', ['en']);
+        if (is_string($locales)) {
+            $locales = explode(',', $locales);
+        }
+        $out = [];
+        foreach ($locales as $locale) {
+            $locale = trim($locale);
+            if ($locale !== '') {
+                $out[$locale] = $locale;
+            }
+        }
+        return $out;
+    }
+
     public function fields(Request $request): array
     {
+        $locales = self::localeOptions();
+
         return [
             ID::make()->sortable(),
-            KeyValue::make('Title', 'title_translations')
-                ->keyLabel('Locale (e.g. en, fr, de)')
-                ->valueLabel('Text')
+
+            Text::make('Title', 'title')
                 ->rules('required')
-                ->help('Add one row per language. Key = locale code (en, fr, de, …), Value = translated title.'),
-            KeyValue::make('Description', 'description_translations')
-                ->keyLabel('Locale')
-                ->valueLabel('Text')
-                ->help('Add one row per language.'),
+                ->help('Lang key (e.g. home.banner4_title) for automatic translation per locale from resources/lang/en/home.php, or plain text. English is default.'),
+
+            Textarea::make('Description', 'description')
+                ->nullable()
+                ->help('Lang key (e.g. home.banner4_description) or plain text. Translated via resources/lang per locale.'),
+
             Text::make('Primary button URL', 'url')->rules('required')->hideFromIndex(),
-            KeyValue::make('Primary button label', 'button_text_translations')
-                ->keyLabel('Locale')
-                ->valueLabel('Text')
+            Text::make('Primary button label', 'button_text')
                 ->rules('required')
-                ->help('Add one row per language.'),
+                ->help('Lang key (e.g. home.learn_more, home.view_winners) or plain text.'),
             Boolean::make('Open primary link in new tab', 'open_primary_new_tab')
                 ->help('Open the primary button link in a new window/tab.'),
             Text::make('Second button URL', 'url2')->nullable()->hideFromIndex(),
-            KeyValue::make('Second button label', 'button2_text_translations')
-                ->keyLabel('Locale')
-                ->valueLabel('Text')
-                ->help('Add one row per language. Leave empty to hide second button.'),
+            Text::make('Second button label', 'button2_text')
+                ->nullable()
+                ->help('Leave empty to hide second button. Lang key or plain text.'),
             Boolean::make('Open second link in new tab', 'open_second_new_tab')
                 ->help('Open the second button link in a new window/tab.'),
             Text::make('Image', 'image')
@@ -77,6 +120,17 @@ class HomeSlide extends Resource
             DateTime::make('Countdown target', 'countdown_target')
                 ->nullable()
                 ->help('Target date/time for countdown (e.g. Code Week start). Only used if Show countdown is on.'),
+
+            new Panel('Optional: per-locale overrides', [
+                Code::make('Locale overrides', 'locale_overrides')
+                    ->json()
+                    ->nullable()
+                    ->help(
+                        'Optional. Override text for specific locales. Leave empty to use lang keys above (from resources/lang). ' .
+                        'Locales: ' . implode(', ', array_keys($locales)) . '. ' .
+                        'Example: {"es": {"title": "Título", "description": "Descripción", "button_text": "Ver", "button2_text": ""}, "fr": {"title": "Titre"}}'
+                    ),
+            ]),
         ];
     }
 
