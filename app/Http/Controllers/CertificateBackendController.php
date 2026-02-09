@@ -127,6 +127,17 @@ class CertificateBackendController extends Controller
                 }
             }
 
+            $sendRunningKey = sprintf(SendCertificateBatchJob::CACHE_KEY_SEND_RUNNING, $edition, $type);
+            $sendRunningValue = Cache::get($sendRunningKey);
+            $sendRunning = false;
+            if ($sendRunningValue !== null && is_numeric($sendRunningValue) && (time() - (int) $sendRunningValue) < 7200) {
+                $sendRunning = true;
+            } else {
+                if ($sendRunningValue !== null) {
+                    Cache::forget($sendRunningKey);
+                }
+            }
+
             $hasGenErrorCol = Schema::hasColumn('excellences', 'certificate_generation_error');
             $hasSentErrorCol = Schema::hasColumn('excellences', 'certificate_sent_error');
 
@@ -138,6 +149,7 @@ class CertificateBackendController extends Controller
                 'generation_failed' => $hasGenErrorCol ? $q()->whereNotNull('certificate_generation_error')->count() : 0,
                 'send_failed' => $hasSentErrorCol ? $q()->whereNotNull('certificate_sent_error')->count() : 0,
                 'generation_running' => $generationRunning,
+                'send_running' => $sendRunning,
             ];
 
             return response()->json($stats);
@@ -151,6 +163,7 @@ class CertificateBackendController extends Controller
                 'generation_failed' => 0,
                 'send_failed' => 0,
                 'generation_running' => false,
+                'send_running' => false,
                 'message' => $message,
             ], 500);
         }
