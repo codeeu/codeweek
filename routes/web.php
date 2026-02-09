@@ -59,6 +59,7 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SearchResourcesController;
 use App\Http\Controllers\StaticPageController;
 use App\Http\Controllers\SuperOrganiserController;
+use App\Http\Controllers\CertificateBackendController;
 use App\Http\Controllers\ToolkitsController;
 use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
@@ -644,6 +645,20 @@ Route::middleware(['auth', 'role:super admin'])->group(function () {
         [AdminController::class, 'generateCertificates']
     )->name('generate_certificates');
 
+});
+
+// Certificate backend: Excellence & Super Organiser cert generation/sending (bernard@matrixinternet.ie only)
+Route::middleware(['auth', 'super.certificate.admin'])->prefix('admin/certificate-backend')->name('certificate_backend.')->group(function () {
+    Route::get('/', [CertificateBackendController::class, 'index'])->name('index');
+    Route::get('/list', [CertificateBackendController::class, 'listRecipients'])->name('list');
+    Route::get('/status', [CertificateBackendController::class, 'status'])->name('status');
+    Route::post('/generate/start', [CertificateBackendController::class, 'startGeneration'])->name('generate.start');
+    Route::post('/generate/cancel', [CertificateBackendController::class, 'cancelGeneration'])->name('generate.cancel');
+    Route::post('/send/start', [CertificateBackendController::class, 'startSend'])->name('send.start');
+    Route::post('/resend/{id}', [CertificateBackendController::class, 'resendOne'])->whereNumber('id')->name('resend.one');
+    Route::post('/resend-all-failed', [CertificateBackendController::class, 'resendAllFailed'])->name('resend.all_failed');
+    Route::get('/errors', [CertificateBackendController::class, 'errorsList'])->name('errors');
+    Route::post('/manual-create-send', [CertificateBackendController::class, 'manualCreateSend'])->name('manual_create_send');
 });
 
 Route::middleware('role:super admin|ambassador')->group(function () {

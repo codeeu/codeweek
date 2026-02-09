@@ -50,7 +50,9 @@ class Excellence extends Model
         'type',
         'name_for_certificate',
         'certificate_url',
+        'certificate_generation_error',
         'notified_at',
+        'certificate_sent_error',
     ];
 
     /**
