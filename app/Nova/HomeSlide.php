@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\KeyValue;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class HomeSlide extends Resource
@@ -19,7 +19,7 @@ class HomeSlide extends Resource
 
     public static $title = 'title';
 
-    public static $search = ['title', 'description'];
+    public static $search = [];
 
     public static function label()
     {
@@ -40,22 +40,28 @@ class HomeSlide extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Title', 'title')
+            KeyValue::make('Title', 'title_translations')
+                ->keyLabel('Locale (e.g. en, fr, de)')
+                ->valueLabel('Text')
                 ->rules('required')
-                ->help('Use a lang key (e.g. home.banner1_title) for translated content, or type plain text.'),
-            Textarea::make('Description', 'description')
-                ->nullable()
-                ->help('Use a lang key for translated content, or plain text.'),
+                ->help('Add one row per language. Key = locale code (en, fr, de, …), Value = translated title.'),
+            KeyValue::make('Description', 'description_translations')
+                ->keyLabel('Locale')
+                ->valueLabel('Text')
+                ->help('Add one row per language.'),
             Text::make('Primary button URL', 'url')->rules('required')->hideFromIndex(),
-            Text::make('Primary button label', 'button_text')
+            KeyValue::make('Primary button label', 'button_text_translations')
+                ->keyLabel('Locale')
+                ->valueLabel('Text')
                 ->rules('required')
-                ->help('Lang key (e.g. home.learn_more) for translation, or plain text.'),
+                ->help('Add one row per language.'),
             Boolean::make('Open primary link in new tab', 'open_primary_new_tab')
                 ->help('Open the primary button link in a new window/tab.'),
             Text::make('Second button URL', 'url2')->nullable()->hideFromIndex(),
-            Text::make('Second button label', 'button2_text')
-                ->nullable()
-                ->help('Leave empty to hide second button. Use lang key for translation.'),
+            KeyValue::make('Second button label', 'button2_text_translations')
+                ->keyLabel('Locale')
+                ->valueLabel('Text')
+                ->help('Add one row per language. Leave empty to hide second button.'),
             Boolean::make('Open second link in new tab', 'open_second_new_tab')
                 ->help('Open the second button link in a new window/tab.'),
             Text::make('Image', 'image')
