@@ -11,8 +11,10 @@ class HomeSlide extends Model
         'description',
         'url',
         'button_text',
+        'open_primary_new_tab',
         'url2',
         'button2_text',
+        'open_second_new_tab',
         'image',
         'position',
         'active',
@@ -25,6 +27,8 @@ class HomeSlide extends Model
         'show_countdown' => 'boolean',
         'countdown_target' => 'datetime',
         'position' => 'integer',
+        'open_primary_new_tab' => 'boolean',
+        'open_second_new_tab' => 'boolean',
     ];
 
     public function scopeActive($query)
@@ -38,16 +42,17 @@ class HomeSlide extends Model
     }
 
     /**
-     * Full URL for image (prefix with base URL if stored as path).
+     * Full URL for image. Use asset() for paths so images in public/ resolve correctly.
      */
     public function getImageUrlAttribute(): ?string
     {
         if (empty($this->image)) {
             return null;
         }
-        if (str_starts_with($this->image, 'http://') || str_starts_with($this->image, 'https://')) {
-            return $this->image;
+        $value = trim($this->image);
+        if (str_starts_with($value, 'http://') || str_starts_with($value, 'https://')) {
+            return $value;
         }
-        return url(ltrim($this->image, '/'));
+        return asset(ltrim($value, '/'));
     }
 }
