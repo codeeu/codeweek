@@ -81,6 +81,15 @@
 </li>
 @endrole
 
+@if(auth()->user()->email === 'bernard@matrixinternet.ie')
+<li>
+    <img src="/images/user_menu_certificates.svg" class="icon">
+    <a class="cookweek-link hover-underline" href="{{ route('certificate_backend.index') }}">
+        Certificate backend (Excellence &amp; Super Organiser)
+    </a>
+</li>
+@endif
+
 @role('super admin|leading teacher admin')
 <li class="p-1 text-orange-600 rounded">
 

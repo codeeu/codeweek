@@ -195,15 +195,18 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             $itemAttributes['groups'] = $groups;
         }
 
-        $item = ResourceItem::where('name', $name)->where('source', $source)->first();
+        $nameNormalized = mb_strtolower($name);
+        $sourceNormalized = mb_strtolower(trim($source));
+        $item = ResourceItem::whereRaw('LOWER(TRIM(name)) = ?', [$nameNormalized])
+            ->whereRaw('(source = ? OR LOWER(TRIM(source)) = ?)', [$source, $sourceNormalized])
+            ->first();
         if (! $item) {
-            $item = ResourceItem::where('name', $name)->first();
+            $item = ResourceItem::whereRaw('LOWER(TRIM(name)) = ?', [$nameNormalized])->first();
         }
         if ($item) {
             $item->fill($itemAttributes);
-            $hadChanges = $item->isDirty();
             $item->save();
-            if ($this->result && $hadChanges) {
+            if ($this->result) {
                 $this->result->addUpdated($item);
             }
         } else {
