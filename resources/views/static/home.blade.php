@@ -86,7 +86,7 @@
                                             }
                                         };
                                     }
-                                </script> 
+                                </script>
 
                                 <h2
                                     class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-w-[525px]">
@@ -98,7 +98,7 @@
                                 </p>
                                 <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
-                                        href="{{ $activi‚ty['url'] }}"
+                                        href="{{ $activity['url'] }}"
                                         @if(!empty($activity['open_primary_new_tab'])) target="_blank" rel="noopener noreferrer" @endif>
                                         {{ __($activity['btn_lang']) }}
                                     </a>
@@ -286,7 +286,7 @@
                     </h2>
                     <p class="p-0 mb-10 text-lg leading-7 text-white md:text-xl">
                         @lang('home.resouce_description')
-                    </p>∏
+                    </p>
                     <div class="flex flex-col gap-4 xl:flex-row">
                         <a class="flex justify-center items-center gap-2 text-white border-solid border-2 border-white rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#061b45] hover:text-white group"
                             href="/resources/CodingAtHome">
