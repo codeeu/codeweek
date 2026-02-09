@@ -12,7 +12,7 @@ You can personalise and download your Super Organiser certificate by clicking on
 <br/>
 
 
-@component('mail::button', ['url' => config('codeweek.app_url') . "/certificates/super-organiser/" . $edition])
+@component('mail::button', ['url' => $certificateUrl ?? config('codeweek.app_url') . '/certificates/super-organiser/' . $edition])
     Get your Certificate
 @endcomponent
 

@@ -14,15 +14,19 @@ class NotifyWinner extends Mailable
 
     public $edition;
 
+    /** @var string|null When set, the email button links directly to this certificate PDF URL */
+    public $certificateUrl;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($user, $edition)
+    public function __construct($user, $edition, ?string $certificateUrl = null)
     {
         $this->user = $user;
         $this->edition = $edition;
+        $this->certificateUrl = $certificateUrl;
     }
 
     /**
