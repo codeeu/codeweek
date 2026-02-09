@@ -102,7 +102,8 @@
     let searchQuery = '';
 
     function apiUrl(path, params = {}) {
-        const u = new URL(basePath + path.replace(/^\//, ''), window.location.origin);
+        const segment = path.replace(/^\//, '');
+        const u = new URL(segment ? basePath + '/' + segment : basePath, window.location.origin);
         u.searchParams.set('edition', editionSelect.value);
         u.searchParams.set('type', typeSlug);
         Object.entries(params).forEach(([k, v]) => { if (v !== undefined && v !== '') u.searchParams.set(k, v); });
