@@ -11,6 +11,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
 
 class SendCertificateBatchJob implements ShouldQueue
@@ -18,6 +19,8 @@ class SendCertificateBatchJob implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     public const BATCH_SIZE = 100;
+    public const CACHE_KEY_SEND_RUNNING = 'certificate_send_running_%s_%s';
+    public const CACHE_TTL = 86400;
 
     public function __construct(
         public int $edition,
@@ -27,6 +30,9 @@ class SendCertificateBatchJob implements ShouldQueue
 
     public function handle(): void
     {
+        $runningKey = sprintf(self::CACHE_KEY_SEND_RUNNING, $this->edition, $this->type);
+        Cache::put($runningKey, time(), self::CACHE_TTL);
+
         // Send to: has cert and (not yet sent or had send error)
         $query = Excellence::query()
             ->where('edition', $this->edition)
@@ -78,6 +84,8 @@ class SendCertificateBatchJob implements ShouldQueue
 
         if ($hasMore) {
             self::dispatch($this->edition, $this->type, $nextOffset);
+        } else {
+            Cache::forget($runningKey);
         }
     }
 }
