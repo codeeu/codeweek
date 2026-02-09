@@ -30,6 +30,11 @@ class OnlineCourse extends Resource
         return 'Online Course';
     }
 
+    public static function authorizedToViewAny(Request $request): bool
+    {
+        return true;
+    }
+
     public function fields(Request $request): array
     {
         return [
@@ -50,6 +55,6 @@ class OnlineCourse extends Resource
 
     public static function indexQuery(NovaRequest $request, $query)
     {
-        return $query->ordered();
+        return $query->orderBy('position')->orderBy('created_at', 'desc');
     }
 }
