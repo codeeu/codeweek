@@ -2,6 +2,18 @@
 
 namespace App\Http\Controllers;
 
+/**
+ * Certificate Backend: Excellence & Super Organiser cert generation and sending.
+ *
+ * Final considerations (addressed):
+ * - Error handling: LaTeX input is escaped (CertificateExcellence::tex_escape), generation/send
+ *   failures are caught and stored in certificate_generation_error / certificate_sent_error;
+ *   the Errors page and table show them; manual and batch flows handle exceptions gracefully.
+ * - Queue: Bulk generate and send use Laravel queues (GenerateCertificateBatchJob, SendCertificateBatchJob)
+ *   so the web request is not blocked; run php artisan queue:work on the server.
+ * - Testing: Use seeded Excellences or manual "Generate/Regenerate" per row to validate
+ *   LaTeX templates and S3 upload; EventFactory is for participation events, not this backend.
+ */
 use App\Excellence;
 use App\Jobs\GenerateCertificateBatchJob;
 use App\Jobs\SendCertificateBatchJob;
@@ -230,6 +242,49 @@ class CertificateBackendController extends Controller
         SendCertificateBatchJob::dispatch($edition, $type, 0);
 
         return response()->json(['ok' => true, 'message' => 'Sending started in batches of ' . SendCertificateBatchJob::BATCH_SIZE . '.']);
+    }
+
+    /**
+     * Regenerate the certificate PDF for one recipient (by excellence id).
+     * Works for both "never generated" and "regenerate existing".
+     */
+    public function regenerateOne(Request $request, int $id): JsonResponse
+    {
+        $excellence = Excellence::with('user')->findOrFail($id);
+        $user = $excellence->user;
+        if (! $user) {
+            return response()->json(['ok' => false, 'message' => 'User missing.']);
+        }
+
+        $edition = $excellence->edition;
+        $type = $excellence->type;
+        $certType = $type === 'SuperOrganiser' ? 'super-organiser' : 'excellence';
+        $name = $excellence->name_for_certificate ?? trim($user->firstname . ' ' . $user->lastname) ?: 'Unknown';
+        $numberOfActivities = $type === 'SuperOrganiser' ? $user->activities($edition) : 0;
+
+        try {
+            $cert = new \App\CertificateExcellence(
+                $edition,
+                $name,
+                $certType,
+                $numberOfActivities,
+                $user->id,
+                $user->email
+            );
+            $url = $cert->generate();
+            $excellence->update([
+                'certificate_url' => $url,
+                'certificate_generation_error' => null,
+            ]);
+            return response()->json([
+                'ok' => true,
+                'message' => 'Certificate generated.',
+                'certificate_url' => $url,
+            ]);
+        } catch (\Throwable $e) {
+            $excellence->update(['certificate_generation_error' => $e->getMessage()]);
+            return response()->json(['ok' => false, 'message' => 'Generation failed: ' . $e->getMessage()], 500);
+        }
     }
 
     public function resendOne(Request $request, int $id): JsonResponse
