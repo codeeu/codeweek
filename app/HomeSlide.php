@@ -7,26 +7,24 @@ use Illuminate\Database\Eloquent\Model;
 class HomeSlide extends Model
 {
     protected $fillable = [
-        'title_translations',
-        'description_translations',
+        'title',
+        'description',
         'url',
-        'button_text_translations',
+        'button_text',
         'open_primary_new_tab',
         'url2',
-        'button2_text_translations',
+        'button2_text',
         'open_second_new_tab',
         'image',
         'position',
         'active',
         'show_countdown',
         'countdown_target',
+        'locale_overrides',
     ];
 
     protected $casts = [
-        'title_translations' => 'array',
-        'description_translations' => 'array',
-        'button_text_translations' => 'array',
-        'button2_text_translations' => 'array',
+        'locale_overrides' => 'array',
         'active' => 'boolean',
         'show_countdown' => 'boolean',
         'countdown_target' => 'datetime',
@@ -36,27 +34,47 @@ class HomeSlide extends Model
     ];
 
     /**
-     * Get translated string for a key (title_translations, description_translations, etc.).
-     * Uses current app locale with fallback to 'en' then first available.
+     * Display value for current locale: use optional override or translate via lang key (default English).
      */
-    public function getTranslation(string $key, ?string $locale = null): string
+    public function titleForLocale(?string $locale = null): string
     {
         $locale = $locale ?? app()->getLocale();
-        $translations = $this->getAttribute($key);
-        if (! is_array($translations)) {
-            return '';
+        $overrides = $this->locale_overrides ?? [];
+        if (! empty($overrides[$locale]['title'])) {
+            return (string) $overrides[$locale]['title'];
         }
-        $value = $translations[$locale] ?? $translations['en'] ?? null;
-        if ($value !== null && $value !== '') {
-            return (string) $value;
-        }
-        return (string) (array_values($translations)[0] ?? '');
+        return (string) __($this->title ?? '');
     }
 
-    /** For Nova index/detail: show title in current locale. */
-    public function getTitleAttribute(): string
+    public function descriptionForLocale(?string $locale = null): string
     {
-        return $this->getTranslation('title_translations');
+        $locale = $locale ?? app()->getLocale();
+        $overrides = $this->locale_overrides ?? [];
+        if (! empty($overrides[$locale]['description'])) {
+            return (string) $overrides[$locale]['description'];
+        }
+        return (string) __($this->description ?? '');
+    }
+
+    public function buttonTextForLocale(?string $locale = null): string
+    {
+        $locale = $locale ?? app()->getLocale();
+        $overrides = $this->locale_overrides ?? [];
+        if (! empty($overrides[$locale]['button_text'])) {
+            return (string) $overrides[$locale]['button_text'];
+        }
+        return (string) __($this->button_text ?? '');
+    }
+
+    public function button2TextForLocale(?string $locale = null): ?string
+    {
+        $locale = $locale ?? app()->getLocale();
+        $overrides = $this->locale_overrides ?? [];
+        if (isset($overrides[$locale]['button2_text'])) {
+            return $overrides[$locale]['button2_text'] === '' ? null : (string) $overrides[$locale]['button2_text'];
+        }
+        $val = $this->button2_text;
+        return $val === null || $val === '' ? null : (string) __($val);
     }
 
     public function scopeActive($query)
