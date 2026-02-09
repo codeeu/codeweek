@@ -11,7 +11,9 @@ use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\View\View;
 
 class CertificateBackendController extends Controller
@@ -107,32 +109,51 @@ class CertificateBackendController extends Controller
 
     public function status(Request $request): JsonResponse
     {
-        $edition = (int) $request->get('edition', self::EDITION_DEFAULT);
-        $typeSlug = $request->get('type', 'excellence');
-        $type = self::TYPES[$typeSlug] ?? 'Excellence';
+        try {
+            $edition = (int) $request->get('edition', self::EDITION_DEFAULT);
+            $typeSlug = $request->get('type', 'excellence');
+            $type = self::TYPES[$typeSlug] ?? 'Excellence';
 
-        $runningKey = sprintf(GenerateCertificateBatchJob::CACHE_KEY_RUNNING, $edition, $type);
-        $runningValue = Cache::get($runningKey);
-        $generationRunning = false;
-        if ($runningValue !== null) {
-            $startedAt = is_numeric($runningValue) ? (int) $runningValue : null;
-            if ($startedAt && (time() - $startedAt) < GenerateCertificateBatchJob::RUNNING_STALE_SECONDS) {
-                $generationRunning = true;
-            } else {
-                Cache::forget($runningKey);
+            $runningKey = sprintf(GenerateCertificateBatchJob::CACHE_KEY_RUNNING, $edition, $type);
+            $runningValue = Cache::get($runningKey);
+            $generationRunning = false;
+            if ($runningValue !== null) {
+                $startedAt = is_numeric($runningValue) ? (int) $runningValue : null;
+                $staleSeconds = 7200;
+                if ($startedAt && (time() - $startedAt) < $staleSeconds) {
+                    $generationRunning = true;
+                } else {
+                    Cache::forget($runningKey);
+                }
             }
+
+            $hasGenErrorCol = Schema::hasColumn('excellences', 'certificate_generation_error');
+            $hasSentErrorCol = Schema::hasColumn('excellences', 'certificate_sent_error');
+
+            $q = fn () => Excellence::query()->where('edition', $edition)->where('type', $type);
+            $stats = [
+                'total' => $q()->count(),
+                'generated' => $q()->whereNotNull('certificate_url')->count(),
+                'sent' => $q()->whereNotNull('notified_at')->count(),
+                'generation_failed' => $hasGenErrorCol ? $q()->whereNotNull('certificate_generation_error')->count() : 0,
+                'send_failed' => $hasSentErrorCol ? $q()->whereNotNull('certificate_sent_error')->count() : 0,
+                'generation_running' => $generationRunning,
+            ];
+
+            return response()->json($stats);
+        } catch (\Throwable $e) {
+            Log::error('CertificateBackendController::status failed: ' . $e->getMessage(), ['exception' => $e]);
+            $message = config('app.debug') ? $e->getMessage() : 'Server error. Run: php artisan migrate';
+            return response()->json([
+                'total' => 0,
+                'generated' => 0,
+                'sent' => 0,
+                'generation_failed' => 0,
+                'send_failed' => 0,
+                'generation_running' => false,
+                'message' => $message,
+            ], 500);
         }
-
-        $stats = [
-            'total' => Excellence::query()->where('edition', $edition)->where('type', $type)->count(),
-            'generated' => Excellence::query()->where('edition', $edition)->where('type', $type)->whereNotNull('certificate_url')->count(),
-            'sent' => Excellence::query()->where('edition', $edition)->where('type', $type)->whereNotNull('notified_at')->count(),
-            'generation_failed' => Excellence::query()->where('edition', $edition)->where('type', $type)->whereNotNull('certificate_generation_error')->count(),
-            'send_failed' => Excellence::query()->where('edition', $edition)->where('type', $type)->whereNotNull('certificate_sent_error')->count(),
-            'generation_running' => $generationRunning,
-        ];
-
-        return response()->json($stats);
     }
 
     public function startGeneration(Request $request): JsonResponse
