@@ -17,7 +17,7 @@ You can personalise and download your EU Code Week 4 all certificate by clicking
 <br/>
 
 
-@component('mail::button', ['url' => "https://codeweek.eu/certificates/excellence/2024"])
+@component('mail::button', ['url' => $certificateUrl ?? config('codeweek.app_url', 'https://codeweek.eu') . '/certificates/excellence/' . $edition])
     Get your Certificate
 @endcomponent
 

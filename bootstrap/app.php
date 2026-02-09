@@ -42,6 +42,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
             'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,
             'role' => \Spatie\Permission\Middleware\RoleMiddleware::class,
+            'super.certificate.admin' => \App\Http\Middleware\EnsureSuperCertificateAdmin::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
