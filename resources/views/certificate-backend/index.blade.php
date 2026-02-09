@@ -5,11 +5,11 @@
     <section class="codeweek-content-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
         <h1>Certificate Backend – Excellence &amp; Super Organiser</h1>
         <div>
-            <a href="{{ route('certificate_backend.index', ['edition' => $edition, 'type' => $typeSlug]) }}" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300 inline-block mr-2">Refresh</a>
-            <a href="{{ route('certificate_backend.errors', ['edition' => $edition, 'type' => $typeSlug]) }}" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300 inline-block">View errors</a>
+            <a href="{{ route('certificate_backend.index', ['edition' => $edition, 'type' => $typeSlug]) }}" class="inline-block px-6 py-3 mr-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Refresh</a>
+            <a href="{{ route('certificate_backend.errors', ['edition' => $edition, 'type' => $typeSlug]) }}" class="inline-block px-6 py-3 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">View errors</a>
         </div>
     </section>
-
+ <section class="px-5 codeweek-content-wrapper">
     {{-- Tabs --}}
     <ul class="cert-backend-tabs" style="display: flex; gap: 0.5rem; list-style: none; padding: 0; margin: 0 0 1.5rem 0; border-bottom: 1px solid #ddd;">
         <li>
@@ -44,13 +44,13 @@
     <div class="cert-backend-actions" style="margin-bottom: 1.5rem;">
         <p style="margin-bottom: 0.5rem;"><strong>Step 1 – Generate:</strong></p>
         <div style="margin-bottom: 1rem;">
-            <button type="button" id="btn-generate" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300 mr-2">Generate certificates</button>
-            <button type="button" id="btn-cancel" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300">Cancel generation</button>
+            <button type="button" id="btn-generate" class="px-6 py-3 mr-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Generate certificates</button>
+            <button type="button" id="btn-cancel" class="px-6 py-3 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Cancel generation</button>
         </div>
         <p style="margin-bottom: 0.5rem;"><strong>Step 2 – Send:</strong> (only after certificates are generated)</p>
         <div>
-            <button type="button" id="btn-send" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300 mr-2">Send emails (batches of 100)</button>
-            <button type="button" id="btn-resend-all-failed" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300">Resend all failed / unsent</button>
+            <button type="button" id="btn-send" class="px-6 py-3 mr-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Send emails (batches of 100)</button>
+            <button type="button" id="btn-resend-all-failed" class="px-6 py-3 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Resend all failed / unsent</button>
         </div>
     </div>
 
@@ -60,8 +60,8 @@
         <div style="margin-top: 0.5rem;">
             <label>User email:</label>
             <input type="email" id="manual-email" placeholder="user@example.com" style="margin-left: 0.5rem; padding: 0.25rem;">
-            <button type="button" id="btn-manual-generate" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300 ml-2">Generate certificate only</button>
-            <button type="button" id="btn-manual-send" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300 ml-2">Send email only</button>
+            <button type="button" id="btn-manual-generate" class="px-6 py-3 ml-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Generate certificate only</button>
+            <button type="button" id="btn-manual-send" class="px-6 py-3 ml-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Send email only</button>
             <span id="manual-result" style="margin-left: 0.5rem;"></span>
         </div>
     </details>
@@ -70,9 +70,9 @@
     <div style="margin-bottom: 1rem;">
         <label>Search by name or email:</label>
         <input type="text" id="search-input" placeholder="Search…" style="margin-left: 0.5rem; padding: 0.25rem; width: 280px;">
-        <button type="button" id="btn-search" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300 ml-2">Search</button>
+        <button type="button" id="btn-search" class="px-6 py-3 ml-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Search</button>
     </div>
-
+</section>
     {{-- Table --}}
     <div class="codeweek-content-wrapper">
         <div id="table-loading" style="padding: 1rem;">Loading…</div>
@@ -97,15 +97,12 @@
 (function() {
     const editionSelect = document.getElementById('edition-select');
     const typeSlug = '{{ $typeSlug }}';
+    const basePath = '{{ url("/admin/certificate-backend") }}'.replace(/\/$/, '');
     let currentPage = 1;
     let searchQuery = '';
 
-    function baseUrl() {
-        return '{{ route("certificate_backend.index", ["edition" => $edition, "type" => $typeSlug]) }}'.replace(/\d{4}$/, editionSelect.value).replace(/excellence|super-organiser/, typeSlug);
-    }
-
     function apiUrl(path, params = {}) {
-        const u = new URL('{{ url("/admin/certificate-backend") }}' + path, window.location.origin);
+        const u = new URL(basePath + path.replace(/^\//, ''), window.location.origin);
         u.searchParams.set('edition', editionSelect.value);
         u.searchParams.set('type', typeSlug);
         Object.entries(params).forEach(([k, v]) => { if (v !== undefined && v !== '') u.searchParams.set(k, v); });
@@ -116,23 +113,41 @@
         return document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '';
     }
 
+    function handleResponse(r) {
+        const contentType = r.headers.get('content-type') || '';
+        const isJson = contentType.indexOf('application/json') !== -1;
+        if (!r.ok) {
+            return (isJson ? r.json() : r.text()).then(function(data) {
+                const msg = (data && data.message) ? data.message : (typeof data === 'string' ? data.substring(0, 200) : 'Request failed (' + r.status + ')');
+                throw new Error(r.status === 419 ? 'Session expired. Please refresh the page and try again.' : (r.status === 403 ? 'Access denied.' : msg));
+            });
+        }
+        return isJson ? r.json() : r.text().then(function() { return {}; });
+    }
+
     function fetchJson(url, options = {}) {
-        const opts = { headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' } };
+        const opts = { method: 'GET', headers: { 'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest' }, credentials: 'same-origin' };
         if (options.method === 'POST') {
             opts.method = 'POST';
             opts.headers['Content-Type'] = 'application/json';
             opts.headers['X-CSRF-TOKEN'] = csrf();
             opts.body = JSON.stringify(options.body || {});
         }
-        return fetch(url, opts).then(r => r.json());
+        return fetch(url, opts).then(handleResponse);
     }
 
     function postJson(url, body = {}) {
         return fetch(url, {
             method: 'POST',
-            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'X-CSRF-TOKEN': csrf(), 'X-Requested-With': 'XMLHttpRequest' },
+            credentials: 'same-origin',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': csrf(),
+                'X-Requested-With': 'XMLHttpRequest'
+            },
             body: JSON.stringify(body)
-        }).then(r => r.json());
+        }).then(handleResponse);
     }
 
     function loadStatus() {
@@ -163,12 +178,12 @@
                     '<td style="padding: 0.5rem;">' + (row.certificate_generated ? 'Yes' : 'No') + (row.certificate_generation_error ? ' <span style="color:red" title="' + escapeAttr(row.certificate_generation_error) + '">(error)</span>' : '') + '</td>' +
                     '<td style="padding: 0.5rem;">' + (row.certificate_sent ? (row.notified_at || 'Yes') : 'No') + (row.certificate_sent_error ? ' <span style="color:red" title="' + escapeAttr(row.certificate_sent_error) + '">(error)</span>' : '') + '</td>' +
                     '<td style="padding: 0.5rem;">' + (row.certificate_url ? '<a href="' + escapeAttr(row.certificate_url) + '" target="_blank" rel="noopener">Open</a>' : '–') + '</td>' +
-                    '<td style="padding: 0.5rem;">' + (row.certificate_url ? '<button type="button" class="resend-one bg-primary cursor-pointer px-4 py-2 rounded-full font-semibold text-white hover:opacity-90 duration-300 text-sm" data-id="' + row.id + '">Resend</button>' : '–') + '</td>';
+                    '<td style="padding: 0.5rem;">' + (row.certificate_url ? '<button type="button" class="px-4 py-2 text-sm font-semibold text-white rounded-full duration-300 cursor-pointer resend-one bg-primary hover:opacity-90" data-id="' + row.id + '">Resend</button>' : '–') + '</td>';
                 tbody.appendChild(tr);
             });
             pagination(data.current_page, data.last_page, data.total);
-        }).catch(() => {
-            document.getElementById('table-loading').textContent = 'Error loading list.';
+        }).catch(function(err) {
+            document.getElementById('table-loading').innerHTML = 'Error loading list. ' + (err.message || '');
         });
     }
 
@@ -185,9 +200,9 @@
         const el = document.getElementById('pagination');
         if (last <= 1) { el.innerHTML = ''; return; }
         let html = '';
-        if (current > 1) html += '<button type="button" class="bg-primary cursor-pointer px-4 py-2 rounded-full font-semibold text-white hover:opacity-90 duration-300 page-btn" data-page="' + (current - 1) + '">Previous</button> ';
+        if (current > 1) html += '<button type="button" class="px-4 py-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90 page-btn" data-page="' + (current - 1) + '">Previous</button> ';
         html += ' Page ' + current + ' of ' + last + ' (' + total + ' total) ';
-        if (current < last) html += '<button type="button" class="bg-primary cursor-pointer px-4 py-2 rounded-full font-semibold text-white hover:opacity-90 duration-300 page-btn" data-page="' + (current + 1) + '">Next</button>';
+        if (current < last) html += '<button type="button" class="px-4 py-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90 page-btn" data-page="' + (current + 1) + '">Next</button>';
         el.innerHTML = html;
         el.querySelectorAll('.page-btn').forEach(btn => btn.addEventListener('click', function() { currentPage = parseInt(this.dataset.page, 10); loadList(currentPage); }));
     }
@@ -197,24 +212,26 @@
     });
 
     document.getElementById('btn-generate').addEventListener('click', function() {
-        this.disabled = true;
+        const btn = this;
+        btn.disabled = true;
         postJson(apiUrl('/generate/start')).then(r => {
             alert(r.message || (r.ok ? 'Started.' : 'Error'));
-            this.disabled = false;
             loadStatus();
-        }).catch(() => { this.disabled = false; });
+        }).catch(function(err) {
+            alert(err.message || 'Request failed.');
+        }).finally(function() { btn.disabled = false; });
     });
 
     document.getElementById('btn-cancel').addEventListener('click', function() {
-        postJson(apiUrl('/generate/cancel')).then(r => { alert(r.message); loadStatus(); });
+        postJson(apiUrl('/generate/cancel')).then(r => { alert(r.message); loadStatus(); }).catch(function(err) { alert(err.message || 'Request failed.'); });
     });
 
     document.getElementById('btn-send').addEventListener('click', function() {
-        postJson(apiUrl('/send/start')).then(r => { alert(r.message); loadStatus(); loadList(currentPage); });
+        postJson(apiUrl('/send/start')).then(r => { alert(r.message); loadStatus(); loadList(currentPage); }).catch(function(err) { alert(err.message || 'Request failed.'); });
     });
 
     document.getElementById('btn-resend-all-failed').addEventListener('click', function() {
-        postJson(apiUrl('/resend-all-failed')).then(r => { alert(r.message); loadStatus(); loadList(currentPage); });
+        postJson(apiUrl('/resend-all-failed')).then(r => { alert(r.message); loadStatus(); loadList(currentPage); }).catch(function(err) { alert(err.message || 'Request failed.'); });
     });
 
     document.getElementById('btn-manual-generate').addEventListener('click', function() {
@@ -225,7 +242,7 @@
         postJson(apiUrl('/manual-create-send'), { user_email: email, generate_only: true }).then(r => {
             resultEl.textContent = r.ok ? ('Generated. ' + (r.certificate_url ? 'URL: ' + r.certificate_url : '')) : r.message;
             if (r.ok) { loadStatus(); loadList(currentPage); }
-        }).catch(() => { resultEl.textContent = 'Request failed.'; });
+        }).catch(function(err) { resultEl.textContent = err.message || 'Request failed.'; });
     });
 
     document.getElementById('btn-manual-send').addEventListener('click', function() {
@@ -234,9 +251,9 @@
         if (!email) { resultEl.textContent = 'Enter email.'; return; }
         resultEl.textContent = 'Sending…';
         postJson(apiUrl('/manual-create-send'), { user_email: email, send_only: true }).then(r => {
-            resultEl.textContent = r.ok ? 'Email queued.' : r.message;
+            resultEl.textContent = r.ok ? (r.message || 'Email sent.') : r.message;
             if (r.ok) { loadStatus(); loadList(currentPage); }
-        }).catch(() => { resultEl.textContent = 'Request failed.'; });
+        }).catch(function(err) { resultEl.textContent = err.message || 'Request failed.'; });
     });
 
     document.getElementById('btn-search').addEventListener('click', function() {
@@ -251,12 +268,12 @@
         if (!btn) return;
         const id = btn.dataset.id;
         btn.disabled = true;
-        postJson('{{ url("/admin/certificate-backend/resend") }}/' + id, {}).then(r => {
+        const resendUrl = '{{ url("/admin/certificate-backend/resend") }}'.replace(/\/$/, '') + '/' + id;
+        postJson(resendUrl, {}).then(r => {
             alert(r.message);
-            btn.disabled = false;
             loadStatus();
             loadList(currentPage);
-        }).catch(() => { btn.disabled = false; });
+        }).catch(function(err) { alert(err.message || 'Request failed.'); }).finally(function() { btn.disabled = false; });
     });
 
     loadStatus();
