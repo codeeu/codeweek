@@ -32,7 +32,12 @@
 
     {{-- Server note: queue worker required for bulk actions --}}
     <div class="mb-4 p-3 rounded bg-amber-100 text-amber-900" role="alert">
-        <strong>On the server</strong>, bulk Generate and Send run in the background. You must run <code class="bg-amber-200 px-1">php artisan queue:work</code> (or use a process manager like Supervisor) so jobs are processed. Manual buttons and single Resend work immediately without the queue.
+        <p class="mb-2"><strong>Bulk Generate and Send</strong> run in the background. To process them:</p>
+        <ol class="list-decimal list-inside mb-2 space-y-1">
+            <li>On the server (SSH), start the queue worker once: <code class="bg-amber-200 px-1 rounded">php artisan queue:work</code></li>
+            <li>Keep it running (or use <strong>Supervisor</strong> so it restarts automatically).</li>
+        </ol>
+        <p class="mb-0 text-sm">When the worker is running, the progress bars above update every few seconds—you’ll see “Generating…” / “Sending…” and the counts going up. No button in the browser can start the worker; it has to run as a separate process on the server. Manual “Generate” / “Regenerate” / “Resend” for single rows work immediately without the queue.</p>
     </div>
 
     {{-- Visible error (in case alerts are blocked) --}}
@@ -251,7 +256,10 @@
                     '<td style="padding: 0.5rem;">' + (row.certificate_generated ? 'Yes' : 'No') + (row.certificate_generation_error ? ' <span style="color:red" title="' + escapeAttr(row.certificate_generation_error) + '">(error)</span>' : '') + '</td>' +
                     '<td style="padding: 0.5rem;">' + (row.certificate_sent ? (row.notified_at || 'Yes') : 'No') + (row.certificate_sent_error ? ' <span style="color:red" title="' + escapeAttr(row.certificate_sent_error) + '">(error)</span>' : '') + '</td>' +
                     '<td style="padding: 0.5rem;">' + (row.certificate_url ? '<a href="' + escapeAttr(row.certificate_url) + '" target="_blank" rel="noopener">Open</a>' : '–') + '</td>' +
-                    '<td style="padding: 0.5rem;">' + (row.certificate_url ? '<button type="button" class="px-4 py-2 text-sm font-semibold text-white rounded-full duration-300 cursor-pointer resend-one bg-primary hover:opacity-90" data-id="' + row.id + '">Resend</button>' : '–') + '</td>';
+                    '<td style="padding: 0.5rem;">' +
+                    '<button type="button" class="regenerate-one px-4 py-2 text-sm font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90 mr-1" data-id="' + row.id + '">' + (row.certificate_generated ? 'Regenerate' : 'Generate') + '</button>' +
+                    (row.certificate_url ? '<button type="button" class="resend-one px-4 py-2 text-sm font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90" data-id="' + row.id + '">Resend</button>' : '') +
+                    '</td>';
                 tbody.appendChild(tr);
             });
             pagination(data.current_page, data.last_page, data.total);
@@ -358,17 +366,30 @@
     document.getElementById('search-input').addEventListener('keydown', function(e) { if (e.key === 'Enter') document.getElementById('btn-search').click(); });
 
     document.getElementById('recipients-tbody').addEventListener('click', function(e) {
-        const btn = e.target.closest('.resend-one');
-        if (!btn) return;
         e.preventDefault();
-        const id = btn.dataset.id;
-        btn.disabled = true;
-        clearError();
-        const resendUrl = '{{ url("/admin/certificate-backend/resend") }}'.replace(/\/$/, '') + '/' + id;
-        postJson(resendUrl, {}).then(r => {
-            showError(r.ok ? '' : r.message);
-            if (r.ok) { loadStatus(); loadList(currentPage); }
-        }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { btn.disabled = false; });
+        const regenerateBtn = e.target.closest('.regenerate-one');
+        const resendBtn = e.target.closest('.resend-one');
+        if (regenerateBtn) {
+            const id = regenerateBtn.dataset.id;
+            regenerateBtn.disabled = true;
+            clearError();
+            const url = '{{ url("/admin/certificate-backend/regenerate") }}'.replace(/\/$/, '') + '/' + id;
+            postJson(url, {}).then(r => {
+                showError(r.ok ? '' : r.message);
+                if (r.ok) { loadStatus(); loadList(currentPage); }
+            }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { regenerateBtn.disabled = false; });
+            return;
+        }
+        if (resendBtn) {
+            const id = resendBtn.dataset.id;
+            resendBtn.disabled = true;
+            clearError();
+            const resendUrl = '{{ url("/admin/certificate-backend/resend") }}'.replace(/\/$/, '') + '/' + id;
+            postJson(resendUrl, {}).then(r => {
+                showError(r.ok ? '' : r.message);
+                if (r.ok) { loadStatus(); loadList(currentPage); }
+            }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { resendBtn.disabled = false; });
+        }
     });
 
     loadStatus();
