@@ -66,6 +66,7 @@ use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VolunteerController;
 use App\Http\Controllers\ConsentController;
+use App\Http\Controllers\HomeSlideLocaleOverridesController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -86,6 +87,9 @@ Route::middleware(['auth', 'role:super admin'])->group(function () {
     Route::post('/admin/resources-import/import', [ResourcesImportController::class, 'import'])->name('admin.resources-import.import');
     Route::get('/admin/resources-import/import', fn () => redirect()->route('admin.resources-import.index'))->name('admin.resources-import.import.get');
     Route::get('/admin/resources-import/report', [ResourcesImportController::class, 'report'])->name('admin.resources-import.report');
+
+    Route::get('/admin/home-slides/export-locale-overrides', [HomeSlideLocaleOverridesController::class, 'export'])
+        ->name('admin.home-slides.export-locale-overrides');
 });
 
 //redirects start

@@ -34,6 +34,23 @@ class HomeSlide extends Model
     ];
 
     /**
+     * Normalize locale_overrides so empty/invalid JSON from Nova doesn't cause 500.
+     */
+    public function setLocaleOverridesAttribute($value): void
+    {
+        if ($value === null || $value === '') {
+            $this->attributes['locale_overrides'] = null;
+            return;
+        }
+        if (is_string($value)) {
+            $decoded = json_decode($value, true);
+            $this->attributes['locale_overrides'] = json_encode(is_array($decoded) ? $decoded : []);
+            return;
+        }
+        $this->attributes['locale_overrides'] = is_array($value) ? json_encode($value) : null;
+    }
+
+    /**
      * Display value for current locale: use optional override or translate via lang key (default English).
      */
     public function titleForLocale(?string $locale = null): string
