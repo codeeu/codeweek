@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\OnlineCourse;
 use App\ResourceItem;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
@@ -24,14 +25,16 @@ class TrainingResourcesReport extends Command
     protected $signature = 'training:report
                             {--format=text : Output format: text or json }
                             {--baseline= : Override baseline date (Y-m-d) for "added since" }
-                            {--learn-teach-only : Only output Learn & Teach resource counts (baseline + total now) }';
+                            {--learn-teach-only : Only output Learn & Teach resource counts (baseline + total now) }
+                            {--online-courses-only : Only output Online Courses counts (baseline + total now) }';
 
-    protected $description = 'Training resources report: counts (static training modules + Learn & Teach resources), baseline vs total. Download/geography/top10 require tracking or S3 logs.';
+    protected $description = 'Training resources report: counts (static training modules + Learn & Teach + Online Courses), baseline vs total. Download/geography/top10 require tracking or S3 logs.';
 
     public function handle(): int
     {
         $format = $this->option('format');
         $learnTeachOnly = $this->option('learn-teach-only');
+        $onlineCoursesOnly = $this->option('online-courses-only');
         $baseline = $this->option('baseline') ? Carbon::parse($this->option('baseline')) : Carbon::parse(self::CODE4EUROPE_START);
 
         if ($learnTeachOnly) {
@@ -50,11 +53,28 @@ class TrainingResourcesReport extends Command
             return self::SUCCESS;
         }
 
+        if ($onlineCoursesOnly) {
+            $stats = $this->onlineCoursesStats($baseline);
+            if ($format === 'json') {
+                $this->line(json_encode([
+                    'online_courses' => $stats,
+                    'generated_at' => now()->toIso8601String(),
+                ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+                return self::SUCCESS;
+            }
+            $this->line('Online Courses (https://codeweek.eu/online-courses)');
+            $this->line('Baseline date (project start): ' . $stats['baseline_date']);
+            $this->line('Total online courses now: ' . $stats['total_now']);
+            $this->line('Added since baseline: ' . $stats['added_since_baseline']);
+            return self::SUCCESS;
+        }
+
         $report = [
             'generated_at' => now()->toIso8601String(),
             'report_period_downloads' => 'June/Sept 2024 – Jan 2026 (requested). Download data not collected by application.',
             'training_page' => $this->trainingPageStats(),
             'learn_teach_resources' => $this->learnTeachResourcesStats($baseline),
+            'online_courses' => $this->onlineCoursesStats($baseline),
             'downloads' => $this->downloadsSection(),
             'geographical_distribution' => $this->geographySection(),
             'downloads_over_time' => $this->downloadsOverTimeSection(),
@@ -94,6 +114,23 @@ class TrainingResourcesReport extends Command
             'added_since_baseline' => $addedSince,
             'baseline_date' => $baseline->format('Y-m-d'),
             'note' => 'Learn & Teach resources at /resources/learn-and-teach (ResourceItem). Not the same as the static /training modules; both are "training-related" content.',
+        ];
+    }
+
+    private function onlineCoursesStats(Carbon $baseline): array
+    {
+        $total = OnlineCourse::query()->where('active', true)->count();
+        $addedSince = OnlineCourse::query()
+            ->where('active', true)
+            ->where('created_at', '>=', $baseline->copy()->startOfDay())
+            ->count();
+
+        return [
+            'total_now' => $total,
+            'added_since_baseline' => $addedSince,
+            'baseline_date' => $baseline->format('Y-m-d'),
+            'url' => 'https://codeweek.eu/online-courses',
+            'note' => 'Online Courses (MOOCs) at /online-courses. Managed in Nova; counts use active records only.',
         ];
     }
 
@@ -156,6 +193,12 @@ class TrainingResourcesReport extends Command
         $this->line('Total resources now: ' . $report['learn_teach_resources']['total_resources_now']);
         $this->line('Added since baseline (' . $baseline->format('Y-m-d') . '): ' . $report['learn_teach_resources']['added_since_baseline']);
         $this->line($report['learn_teach_resources']['note']);
+        $this->line('');
+
+        $this->line('--- Online Courses (https://codeweek.eu/online-courses) ---');
+        $this->line('Total online courses now: ' . $report['online_courses']['total_now']);
+        $this->line('Added since baseline (' . $baseline->format('Y-m-d') . '): ' . $report['online_courses']['added_since_baseline']);
+        $this->line($report['online_courses']['note']);
         $this->line('');
 
         $this->line('--- Downloads ---');
