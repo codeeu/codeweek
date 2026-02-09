@@ -30,6 +30,14 @@
         </select>
     </p>
 
+    {{-- Server note: queue worker required for bulk actions --}}
+    <div class="mb-4 p-3 rounded bg-amber-100 text-amber-900" role="alert">
+        <strong>On the server</strong>, bulk Generate and Send run in the background. You must run <code class="bg-amber-200 px-1">php artisan queue:work</code> (or use a process manager like Supervisor) so jobs are processed. Manual buttons and single Resend work immediately without the queue.
+    </div>
+
+    {{-- Visible error (in case alerts are blocked) --}}
+    <div id="last-error" class="hidden mb-4 p-3 rounded bg-red-100 text-red-800" role="alert"></div>
+
     {{-- Stats --}}
     <div id="stats" class="cert-backend-stats" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
         <div>Total: <strong id="stat-total">–</strong></div>
@@ -37,7 +45,22 @@
         <div>Sent: <strong id="stat-sent">–</strong></div>
         <div>Generation failed: <strong id="stat-gen-failed">–</strong></div>
         <div>Send failed: <strong id="stat-send-failed">–</strong></div>
-        <div id="stat-running" style="display: none;">Generation in progress…</div>
+    </div>
+
+    {{-- Progress: Generating --}}
+    <div id="progress-generate" class="hidden mb-4">
+        <p class="mb-1"><strong>Generating certificates…</strong> <span id="progress-generate-text">0 of 0</span></p>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div id="progress-generate-bar" class="h-full bg-primary rounded-full transition-all duration-300" style="width: 0%;"></div>
+        </div>
+    </div>
+
+    {{-- Progress: Sending --}}
+    <div id="progress-send" class="hidden mb-4">
+        <p class="mb-1"><strong>Sending emails…</strong> <span id="progress-send-text">0 of 0</span></p>
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div id="progress-send-bar" class="h-full bg-primary rounded-full transition-all duration-300" style="width: 0%;"></div>
+        </div>
     </div>
 
     {{-- Step 1: Generate (always separate from Step 2: Send) --}}
@@ -100,6 +123,18 @@
     const basePath = '{{ url("/admin/certificate-backend") }}'.replace(/\/$/, '');
     let currentPage = 1;
     let searchQuery = '';
+    let statusInterval = null;
+
+    function showError(msg) {
+        const el = document.getElementById('last-error');
+        if (!el) return;
+        el.textContent = msg || '';
+        el.classList.toggle('hidden', !msg);
+    }
+
+    function clearError() {
+        showError('');
+    }
 
     function apiUrl(path, params = {}) {
         const segment = path.replace(/^\//, '');
@@ -151,6 +186,42 @@
         }).then(handleResponse);
     }
 
+    function updateProgress(data) {
+        const total = Number(data.total) || 0;
+        const generated = Number(data.generated) || 0;
+        const sent = Number(data.sent) || 0;
+        const genRunning = !!data.generation_running;
+        const sendRunning = !!data.send_running;
+
+        const progGen = document.getElementById('progress-generate');
+        const progGenText = document.getElementById('progress-generate-text');
+        const progGenBar = document.getElementById('progress-generate-bar');
+        const progSend = document.getElementById('progress-send');
+        const progSendText = document.getElementById('progress-send-text');
+        const progSendBar = document.getElementById('progress-send-bar');
+
+        if (progGen) {
+            progGen.classList.toggle('hidden', !genRunning);
+            if (genRunning) {
+                progGenText.textContent = generated + ' of ' + total + ' generated';
+                progGenBar.style.width = (total > 0 ? Math.round((generated / total) * 100) : 0) + '%';
+            }
+        }
+        if (progSend) {
+            progSend.classList.toggle('hidden', !sendRunning);
+            if (sendRunning) {
+                progSendText.textContent = sent + ' of ' + total + ' sent';
+                progSendBar.style.width = (total > 0 ? Math.round((sent / total) * 100) : 0) + '%';
+            }
+        }
+
+        if (genRunning || sendRunning) {
+            if (!statusInterval) statusInterval = setInterval(loadStatus, 2000);
+        } else {
+            if (statusInterval) { clearInterval(statusInterval); statusInterval = null; }
+        }
+    }
+
     function loadStatus() {
         fetchJson(apiUrl('/status')).then(data => {
             document.getElementById('stat-total').textContent = data.total ?? '–';
@@ -158,8 +229,9 @@
             document.getElementById('stat-sent').textContent = data.sent ?? '–';
             document.getElementById('stat-gen-failed').textContent = data.generation_failed ?? '–';
             document.getElementById('stat-send-failed').textContent = data.send_failed ?? '–';
-            const runEl = document.getElementById('stat-running');
-            if (data.generation_running) runEl.style.display = 'block'; else runEl.style.display = 'none';
+            updateProgress(data);
+        }).catch(function(err) {
+            showError(err.message || 'Could not load status.');
         });
     }
 
@@ -212,52 +284,73 @@
         window.location.href = '{{ url("/admin/certificate-backend") }}?edition=' + this.value + '&type=' + typeSlug;
     });
 
-    document.getElementById('btn-generate').addEventListener('click', function() {
+    document.getElementById('btn-generate').addEventListener('click', function(e) {
+        e.preventDefault();
         const btn = this;
+        clearError();
         btn.disabled = true;
         postJson(apiUrl('/generate/start')).then(r => {
-            alert(r.message || (r.ok ? 'Started.' : 'Error'));
-            loadStatus();
-        }).catch(function(err) {
-            alert(err.message || 'Request failed.');
-        }).finally(function() { btn.disabled = false; });
+            showError(r.ok ? '' : (r.message || 'Error'));
+            if (r.ok) loadStatus();
+        }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { btn.disabled = false; });
     });
 
-    document.getElementById('btn-cancel').addEventListener('click', function() {
-        postJson(apiUrl('/generate/cancel')).then(r => { alert(r.message); loadStatus(); }).catch(function(err) { alert(err.message || 'Request failed.'); });
+    document.getElementById('btn-cancel').addEventListener('click', function(e) {
+        e.preventDefault();
+        clearError();
+        postJson(apiUrl('/generate/cancel')).then(r => { showError(r.ok ? '' : r.message); loadStatus(); }).catch(function(err) { showError(err.message || 'Request failed.'); });
     });
 
-    document.getElementById('btn-send').addEventListener('click', function() {
-        postJson(apiUrl('/send/start')).then(r => { alert(r.message); loadStatus(); loadList(currentPage); }).catch(function(err) { alert(err.message || 'Request failed.'); });
+    document.getElementById('btn-send').addEventListener('click', function(e) {
+        e.preventDefault();
+        clearError();
+        postJson(apiUrl('/send/start')).then(r => {
+            showError(r.ok ? '' : (r.message || 'Error'));
+            if (r.ok) loadStatus();
+            loadList(currentPage);
+        }).catch(function(err) { showError(err.message || 'Request failed.'); });
     });
 
-    document.getElementById('btn-resend-all-failed').addEventListener('click', function() {
-        postJson(apiUrl('/resend-all-failed')).then(r => { alert(r.message); loadStatus(); loadList(currentPage); }).catch(function(err) { alert(err.message || 'Request failed.'); });
+    document.getElementById('btn-resend-all-failed').addEventListener('click', function(e) {
+        e.preventDefault();
+        clearError();
+        postJson(apiUrl('/resend-all-failed')).then(r => {
+            showError(r.ok ? '' : (r.message || 'Error'));
+            if (r.ok) loadStatus();
+            loadList(currentPage);
+        }).catch(function(err) { showError(err.message || 'Request failed.'); });
     });
 
-    document.getElementById('btn-manual-generate').addEventListener('click', function() {
+    document.getElementById('btn-manual-generate').addEventListener('click', function(e) {
+        e.preventDefault();
         const email = document.getElementById('manual-email').value.trim();
         const resultEl = document.getElementById('manual-result');
-        if (!email) { resultEl.textContent = 'Enter email.'; return; }
+        if (!email) { showError('Enter email.'); return; }
+        clearError();
         resultEl.textContent = 'Generating…';
         postJson(apiUrl('/manual-create-send'), { user_email: email, generate_only: true }).then(r => {
             resultEl.textContent = r.ok ? ('Generated. ' + (r.certificate_url ? 'URL: ' + r.certificate_url : '')) : r.message;
+            if (!r.ok) showError(r.message);
             if (r.ok) { loadStatus(); loadList(currentPage); }
-        }).catch(function(err) { resultEl.textContent = err.message || 'Request failed.'; });
+        }).catch(function(err) { resultEl.textContent = ''; showError(err.message || 'Request failed.'); });
     });
 
-    document.getElementById('btn-manual-send').addEventListener('click', function() {
+    document.getElementById('btn-manual-send').addEventListener('click', function(e) {
+        e.preventDefault();
         const email = document.getElementById('manual-email').value.trim();
         const resultEl = document.getElementById('manual-result');
-        if (!email) { resultEl.textContent = 'Enter email.'; return; }
+        if (!email) { showError('Enter email.'); return; }
+        clearError();
         resultEl.textContent = 'Sending…';
         postJson(apiUrl('/manual-create-send'), { user_email: email, send_only: true }).then(r => {
             resultEl.textContent = r.ok ? (r.message || 'Email sent.') : r.message;
+            if (!r.ok) showError(r.message);
             if (r.ok) { loadStatus(); loadList(currentPage); }
-        }).catch(function(err) { resultEl.textContent = err.message || 'Request failed.'; });
+        }).catch(function(err) { resultEl.textContent = ''; showError(err.message || 'Request failed.'); });
     });
 
-    document.getElementById('btn-search').addEventListener('click', function() {
+    document.getElementById('btn-search').addEventListener('click', function(e) {
+        e.preventDefault();
         searchQuery = document.getElementById('search-input').value.trim();
         currentPage = 1;
         loadList(1);
@@ -267,14 +360,15 @@
     document.getElementById('recipients-tbody').addEventListener('click', function(e) {
         const btn = e.target.closest('.resend-one');
         if (!btn) return;
+        e.preventDefault();
         const id = btn.dataset.id;
         btn.disabled = true;
+        clearError();
         const resendUrl = '{{ url("/admin/certificate-backend/resend") }}'.replace(/\/$/, '') + '/' + id;
         postJson(resendUrl, {}).then(r => {
-            alert(r.message);
-            loadStatus();
-            loadList(currentPage);
-        }).catch(function(err) { alert(err.message || 'Request failed.'); }).finally(function() { btn.disabled = false; });
+            showError(r.ok ? '' : r.message);
+            if (r.ok) { loadStatus(); loadList(currentPage); }
+        }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { btn.disabled = false; });
     });
 
     loadStatus();
