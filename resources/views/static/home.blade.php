@@ -35,33 +35,25 @@
                             style="opacity: {{ $index === 0 ? 1 : 0 }}">
                             <div
                                 class="px-6 py-10 max-md:w-full md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                                @if ($index === 0)
-                                    {{-- <div x-data="countdownTimer('2025-10-14T00:00:00')" x-init="startCountdown()"
+                                @if (!empty($activity['show_countdown']) && !empty($activity['countdown_target']))
+                                    <div x-data="countdownTimer('{{ $activity['countdown_target'] }}')" x-init="startCountdown()"
                                         class="flex gap-2.5 items-start mt-4 mb-4 max-md:gap-2 max-sm:gap-1.5" role="timer"
                                         aria-label="Countdown timer">
-
-                                        <!-- Days -->
                                         <div class="px-2 py-1 text-3xl leading-9 text-white bg-black max-md:px-1.5 max-md:py-1 max-md:text-2xl max-md:leading-8 max-sm:px-1 max-sm:py-0.5 max-sm:text-xl max-sm:leading-7"
                                             aria-label="Days" x-text="days">00</div>
                                         <div class="text-3xl leading-9 text-black max-md:text-2xl max-md:leading-8 max-sm:text-xl max-sm:leading-7"
                                             aria-hidden="true">:</div>
-
-                                        <!-- Hours -->
                                         <div class="px-2 py-1 text-3xl leading-9 text-white bg-black max-md:px-1.5 max-md:py-1 max-md:text-2xl max-md:leading-8 max-sm:px-1 max-sm:py-0.5 max-sm:text-xl max-sm:leading-7"
                                             aria-label="Hours" x-text="hours">00</div>
                                         <div class="text-3xl leading-9 text-black max-md:text-2xl max-md:leading-8 max-sm:text-xl max-sm:leading-7"
                                             aria-hidden="true">:</div>
-
-                                        <!-- Minutes -->
                                         <div class="px-2 py-1 text-3xl leading-9 text-white bg-black max-md:px-1.5 max-md:py-1 max-md:text-2xl max-md:leading-8 max-sm:px-1 max-sm:py-0.5 max-sm:text-xl max-sm:leading-7"
                                             aria-label="Minutes" x-text="minutes">00</div>
                                         <div class="text-3xl leading-9 text-black max-md:text-2xl max-md:leading-8 max-sm:text-xl max-sm:leading-7"
                                             aria-hidden="true">:</div>
-
-                                        <!-- Seconds -->
                                         <div class="px-2 py-1 text-3xl leading-9 text-white bg-black max-md:px-1.5 max-md:py-1 max-md:text-2xl max-md:leading-8 max-sm:px-1 max-sm:py-0.5 max-sm:text-xl max-sm:leading-7"
                                             aria-label="Seconds" x-text="seconds">00</div>
-                                    </div> --}}
+                                    </div>
                                 @endif
                                 <script>
                                     function countdownTimer(targetDate) {
@@ -102,7 +94,7 @@
                                 </h2>
                                 <p
                                     class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                    {{ strip_tags(__(''.$activity['description'])) }}
+                                    {{ strip_tags(__($activity['description'] ?? '')) }}
                                 </p>
                                 <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
@@ -130,26 +122,15 @@
                                 </div>
                             </div>
                             
-                            @php
-                                $backgroundImages = [
-                                    //asset('/images/csr/csr_about1.jpg'),
-                                    asset('/images/dream-jobs/dream_jobs_bg.png'),
-                                    asset('/images/digital-girls/banner_bg.png'),
-                                    asset('images/homepage/slide1.png'),
-                                    asset('images/search/search_bg_lg_2.jpeg'),
-                                    asset('/images/homepage/festive_acts_of_digital_kindness.png'),
-                                ];
-                            @endphp
-
-                            @if(isset($backgroundImages[$index]))
+                            @if(!empty($activity['image']))
                                 <img class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                                     loading="lazy"
-                                    src="{{ $backgroundImages[$index] }}"
+                                    src="{{ $activity['image'] }}"
                                     style="clip-path: ellipse(71% 73% at 40% 20%);" />
 
                                 <img class="absolute top-0 right-0 h-full min-w-[55%] max-w-[calc(70vw)] object-cover hidden md:block"
                                     loading="lazy"
-                                    src="{{ $backgroundImages[$index] }}"
+                                    src="{{ $activity['image'] }}"
                                     style="clip-path: ellipse(70% 140% at 70% 25%);" />
                             @endif
 
