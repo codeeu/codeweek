@@ -94,7 +94,7 @@
                                 </h2>
                                 <p
                                     class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                    {!! strip_tags(__($activity['description'] ?? '')) !!}
+                                    {{ strip_tags(__($activity['description'] ?? '')) }}
                                 </p>
                                 <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
@@ -103,7 +103,7 @@
                                         {{ __($activity['btn_lang']) }}
                                     </a>
 
-                                    @if (isset($activity['btn2_lang']) && (string)$activity['btn2_lang'] !== '')
+                                    @if (isset($activity['btn2_lang']) && !is_null($activity['btn2_lang']) && $activity['btn2_lang'] !== '')
                                     <a class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                                         href="{{ $activity['url2'] }}"
                                         @if(!empty($activity['open_second_new_tab'])) target="_blank" rel="noopener noreferrer" @endif>
