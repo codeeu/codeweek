@@ -4,6 +4,7 @@ namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Log;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
@@ -22,22 +23,32 @@ class CertificateExcellence
     private $number_of_activities;
     private $type;
 
-    public function __construct($edition, $name_for_certificate, $type = 'excellence', $number_of_activities = 0)
+    /**
+     * @param  int  $edition  e.g. 2025
+     * @param  string  $name_for_certificate
+     * @param  string  $type  'excellence' or 'super-organiser'
+     * @param  int  $number_of_activities  For super-organiser only
+     * @param  int|null  $user_id  When set (backend generation), used for unique filenames instead of auth
+     * @param  string|null  $user_email  When set (backend generation), used in template instead of auth user
+     */
+    public function __construct($edition, $name_for_certificate, $type = 'excellence', $number_of_activities = 0, $user_id = null, $user_email = null)
     {
         $this->edition = $edition;
         $this->name_of_certificate_holder = $name_for_certificate;
-        $this->email_of_certificate_holder = auth()->user()->email ?? '';
-        $this->personalized_template_name = $edition . '-' . auth()->id();
+        $this->email_of_certificate_holder = $user_email ?? (auth()->check() ? (auth()->user()->email ?? '') : '');
+        $effectiveUserId = $user_id ?? (auth()->check() ? auth()->id() : 0);
+        $random = Str::random(10);
+        $this->personalized_template_name = $edition . '-' . $effectiveUserId . '-' . $random;
         $this->resource_path = resource_path() . '/latex';
         $this->pdflatex = config('codeweek.pdflatex_path');
-        $this->id = auth()->id() . '-' . str_random(10);
+        $this->id = $effectiveUserId . '-' . $random;
         $this->number_of_activities = $number_of_activities;
         $this->type = $type ?: 'excellence';
 
         // e.g. "excellence-2025.tex" or "super-organiser-2025.tex"
         $this->templateName = "{$this->type}-{$this->edition}.tex";
 
-        Log::info('User ID ' . auth()->id() . " generating {$this->type} certificate with name: " . $name_for_certificate);
+        Log::info('Generating ' . $this->type . ' certificate for user_id ' . $effectiveUserId . ' with name: ' . $name_for_certificate);
     }
 
     /**
