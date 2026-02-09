@@ -45,6 +45,7 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\MailTemplateController;
 use App\Http\Controllers\MapController;
 use App\Http\Controllers\MatchMakingToolController;
+use App\Http\Controllers\OnlineCoursesController;
 use App\Http\Controllers\OnlineEventsController;
 use App\Http\Controllers\ParticipationController;
 use App\Http\Controllers\PendingEventsController;
@@ -807,7 +808,7 @@ Route::middleware('auth')->group(function () {
 });
 
 //Route::view('/registration', 'registration.add');
-Route::view('/online-courses', 'online-courses')->name('online-courses');
+Route::get('/online-courses', [OnlineCoursesController::class, 'index'])->name('online-courses');
 
 Route::get('/hackathons', [HackathonsController::class, 'index'])->name('hackathons');
 
