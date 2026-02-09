@@ -26,13 +26,13 @@ class HomeController extends Controller
             if ($slides->isNotEmpty()) {
                 return $slides->map(function (HomeSlide $slide) {
                     return [
-                        'title' => $slide->title,
-                        'description' => $slide->description ?? '',
+                        'title' => $slide->titleForLocale(),
+                        'description' => $slide->descriptionForLocale(),
                         'url' => $slide->url,
-                        'btn_lang' => $slide->button_text,
+                        'btn_lang' => $slide->buttonTextForLocale(),
                         'open_primary_new_tab' => $slide->open_primary_new_tab ?? false,
                         'url2' => $slide->url2,
-                        'btn2_lang' => $slide->button2_text,
+                        'btn2_lang' => $slide->button2TextForLocale(),
                         'open_second_new_tab' => $slide->open_second_new_tab ?? false,
                         'image' => $slide->image_url,
                         'show_countdown' => $slide->show_countdown,
