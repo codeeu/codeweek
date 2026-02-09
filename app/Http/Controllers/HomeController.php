@@ -24,15 +24,16 @@ class HomeController extends Controller
         if (Schema::hasTable('home_slides')) {
             $slides = HomeSlide::active()->ordered()->get();
             if ($slides->isNotEmpty()) {
-                return $slides->map(function (HomeSlide $slide) {
+                $locale = app()->getLocale();
+                return $slides->map(function (HomeSlide $slide) use ($locale) {
                     return [
-                        'title' => $slide->title,
-                        'description' => $slide->description ?? '',
+                        'title' => $slide->getTranslation('title_translations', $locale),
+                        'description' => $slide->getTranslation('description_translations', $locale),
                         'url' => $slide->url,
-                        'btn_lang' => $slide->button_text,
+                        'btn_lang' => $slide->getTranslation('button_text_translations', $locale),
                         'open_primary_new_tab' => $slide->open_primary_new_tab ?? false,
                         'url2' => $slide->url2,
-                        'btn2_lang' => $slide->button2_text,
+                        'btn2_lang' => $slide->getTranslation('button2_text_translations', $locale),
                         'open_second_new_tab' => $slide->open_second_new_tab ?? false,
                         'image' => $slide->image_url,
                         'show_countdown' => $slide->show_countdown,
