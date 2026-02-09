@@ -2,58 +2,97 @@
 
 namespace App\Http\Controllers;
 
+use App\HomeSlide;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\View\View;
 
 class HomeController extends Controller
 {
     public function index(Request $request): View
     {
-        $activities = collect([
-            /* [
-                'title' => 'home.banner1_title',
-                'description' => 'home.banner1_description',
-                'url' => '/dream-jobs-in-digital',
-                'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
-                'btn_lang' => 'home.get_involved',
-            ],  */   
+        $activities = $this->getActivities();
+
+        return view('static.home', compact('activities'));
+    }
+
+    /**
+     * Homepage slider slides: from Nova (home_slides) when present, else default hardcoded set.
+     */
+    private function getActivities()
+    {
+        if (Schema::hasTable('home_slides')) {
+            $slides = HomeSlide::active()->ordered()->get();
+            if ($slides->isNotEmpty()) {
+                return $slides->map(function (HomeSlide $slide) {
+                    return [
+                        'title' => $slide->title,
+                        'description' => $slide->description ?? '',
+                        'url' => $slide->url,
+                        'btn_lang' => $slide->button_text,
+                        'url2' => $slide->url2,
+                        'btn2_lang' => $slide->button2_text,
+                        'image' => $slide->image_url,
+                        'show_countdown' => $slide->show_countdown,
+                        'countdown_target' => $slide->countdown_target?->toIso8601String(),
+                    ];
+                })->values();
+            }
+        }
+
+        $defaultImages = [
+            asset('/images/dream-jobs/dream_jobs_bg.png'),
+            asset('/images/digital-girls/banner_bg.png'),
+            asset('images/homepage/slide1.png'),
+            asset('images/search/search_bg_lg_2.jpeg'),
+            asset('/images/homepage/festive_acts_of_digital_kindness.png'),
+        ];
+
+        return collect([
             [
                 'title' => 'home.banner5_title',
                 'description' => 'home.banner5_description',
                 'url' => '/future-ready-csr',
-                'style_color' => 'background: linear-gradient(36.92deg, rgb(51, 194, 233) 20.32%, rgb(0, 179, 227) 28.24%);',
                 'btn_lang' => 'home.learn_more',
                 'url2' => null,
-                'btn2_lang' => null
+                'btn2_lang' => null,
+                'image' => $defaultImages[0] ?? null,
+                'show_countdown' => false,
+                'countdown_target' => null,
             ],
-             [
+            [
                 'title' => 'home.banner4_title',
                 'description' => 'home.banner4_description',
                 'url' => 'https://codeweek.eu/blog/code-week-digital-educator-awards-2025/',
-                'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.view_winners',
-                'url2' => 'https://codeweek.eu/blog/code-week-digital-educator-awards-2025/ ',
-                // 'btn2_lang' => 'home.download_brochure_btn',
+                'url2' => 'https://codeweek.eu/blog/code-week-digital-educator-awards-2025/',
+                'btn2_lang' => null,
+                'image' => $defaultImages[1] ?? null,
+                'show_countdown' => false,
+                'countdown_target' => null,
             ],
             [
                 'title' => 'home.banner6_title',
                 'description' => 'home.banner6_description',
                 'url' => 'https://airtable.com/appW5W6DJ6CI6SVdH/pagLDrU2NQja9F2vu/form',
-                'style_color' => 'background: linear-gradient(36.92deg, rgb(51, 194, 233) 20.32%, rgb(0, 179, 227) 28.24%);',
-                'btn_lang' => 'home.register_here', 
+                'btn_lang' => 'home.register_here',
                 'url2' => null,
-                'btn2_lang' => null
+                'btn2_lang' => null,
+                'image' => $defaultImages[2] ?? null,
+                'show_countdown' => false,
+                'countdown_target' => null,
             ],
             [
                 'title' => 'home.banner3_title',
-                'description' => __('home.when_text'),
+                'description' => 'home.when_text',
                 'url' => '/guide',
-                'style_color' => 'background-image: linear-gradient(36.92deg, #1C4DA1 20.32%, #0040AE 28.24%);',
                 'btn_lang' => 'home.get_involved',
                 'url2' => '/blog/code-week-25-programme/',
-                // 'btn2_lang' => 'home.download_brochure_btn',
-            ]
+                'btn2_lang' => null,
+                'image' => $defaultImages[3] ?? null,
+                'show_countdown' => false,
+                'countdown_target' => null,
+            ],
         ]);
-        return view('static.home', compact('activities'));
     }
 }
