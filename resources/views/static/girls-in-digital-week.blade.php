@@ -28,7 +28,7 @@
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
                             @include('layout.video-player', [
                                 'id' => 'girls-digital-hero',
-                                'src' => 'https://www.youtube.com/embed/z4IkeLRuF9E?si=hLAEtN4PDfbigb5M',
+                                'src' => 'https://www.youtube.com/embed/XfYqEYLbPWY?si=7JQaVoVM6bJLuuoT',
                             ])
                         </div>
                         <img
