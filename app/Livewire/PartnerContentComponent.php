@@ -1,12 +1,16 @@
 <?php
 namespace App\Livewire;
 
+use App\Partner;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class PartnerContentComponent extends Component
 {
     use WithPagination;
+
+    /** @var array<int, object>|null Lazy-filled default partners list (used when DB is empty). */
+    private static $defaultPartnersRaw = null;
 
     public $filter = 'Partners';
 
@@ -87,7 +91,13 @@ class PartnerContentComponent extends Component
 
     private function getAllPartners()
     {
-        return collect([
+        $fromDb = Partner::active()->ordered()->get();
+        if ($fromDb->isNotEmpty()) {
+            return $fromDb->map(fn (Partner $p) => $p->toPartnerObject());
+        }
+
+        if (self::$defaultPartnersRaw === null) {
+            self::$defaultPartnersRaw = [
                 (object)[
                 'id' => 1,
                 'name' => 'JA EUROPE',
@@ -576,10 +586,23 @@ class PartnerContentComponent extends Component
                 'link_url' => 'https://www.athenarc.gr/en',
                 'main_img_url' => 'images/partners/Athena_RC_logo.png'
             ],
-        ]);
+        ];
+        }
+        return collect(self::$defaultPartnersRaw);
     }
 
-public function render()
+    /**
+     * Return default partners as array of arrays (for seeding into DB). Call after getAllPartners() or ensure defaults are loaded.
+     */
+    public static function getDefaultPartnersForSeeding(): array
+    {
+        if (self::$defaultPartnersRaw === null) {
+            (new self())->getAllPartners();
+        }
+        return array_map(fn ($o) => (array) $o, self::$defaultPartnersRaw);
+    }
+
+    public function render()
     {
         if ($this->filter === 'Council Presidency') {
             // Council Presidency content
