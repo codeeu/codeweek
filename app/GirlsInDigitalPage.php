@@ -160,7 +160,8 @@ class GirlsInDigitalPage extends Model
     }
 
     /**
-     * Get content for a key in the current locale: locale override, then main (English) column, then lang file.
+     * Get content for a key in the current locale: locale override, then main (English) column.
+     * Returns empty string when blank (no static/lang fallback) so sections can stay empty.
      */
     public function contentForLocale(string $key, ?string $locale = null): string
     {
@@ -176,7 +177,8 @@ class GirlsInDigitalPage extends Model
                 return (string) $value;
             }
         }
-        return (string) __('girls-in-digital.' . $key);
+
+        return '';
     }
 
     /**
