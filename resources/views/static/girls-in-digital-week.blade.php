@@ -85,7 +85,7 @@
                         {{ $content('about_girls_title') ?: 'About Girls in Digital' }}
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                       {{ $content('about_girls_description_1') ?: 'Get ready to celebrate Girls in Digital Week from 23–27 March 2026, as we put a spotlight on inclusion, innovation, and the limitless opportunities digital skills offer to all!' }}
+                       {!! $content('about_girls_description_1') ?: 'Get ready to celebrate Girls in Digital Week from 23–27 March 2026, as we put a spotlight on inclusion, innovation, and the limitless opportunities digital skills offer to all!' !!}
                     </p>
                     <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6">
                         {!! $content('about_girls_description_2') ?: 'Girls in Digital encourages communities to get involved in meaningful ways. Through <strong>Girls Code It Better (GCIB) Sprints</strong>, educators and organisations can offer hands-on learning experiences where girls collaborate, build confidence, and solve real-world challenges using digital tools. The <strong>Female Role Model Database</strong> connects young people with women and gender-diverse professionals in STE(A)M, sharing stories and guidance that support their digital journeys. <strong>Together, these initiatives help turn curiosity into confidence and ideas into possibility.</strong>' !!}
@@ -202,7 +202,7 @@
                                 {{ $content('resource_educator_title') ?: 'Are you an educator?' }}
                             </h3>
                             <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
-                                {{ $content('resource_educator_description') ?: 'You are an educator looking to organise an activity to empower youth with digital skills in a safe and inclusive environment, where all feel welcomed to explore the endless opportunities that digital has to offer. Check our resources below for guidance and support in bringing your activity to life.' }}
+                                {!! $content('resource_educator_description') ?: 'You are an educator looking to organise an activity to empower youth with digital skills in a safe and inclusive environment, where all feel welcomed to explore the endless opportunities that digital has to offer. Check our resources below for guidance and support in bringing your activity to life.' !!}
                             </p>
                             <div class="flex flex-wrap gap-4">
                                 @if($b = $btn('organise_gcib_sprint'))
