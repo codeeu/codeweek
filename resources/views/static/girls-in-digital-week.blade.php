@@ -40,15 +40,17 @@
                                 class="mb-4 max-w-full"
                                 src="/images/digital-girls/digital_girls_logo.svg"
                             />
-                            <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0">
-                                {!! $content('landing_header') ?: "We're excited to announce Girls in Digital Week 2026! Empower, inspire and celebrate the next generation of girls and young Europeans!" !!}
-                            </p>
+                            <div class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
+                                {!! $content('landing_header') !!}
+                            </div>
                         </div>
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
+                            @if($heroDynamic && $page && $page->hero_video_url)
                             @include('layout.video-player', [
                                 'id' => 'girls-digital-hero',
-                                'src' => ($heroDynamic && $page && $page->hero_video_url) ? $page->hero_video_url : 'https://www.youtube.com/embed/XfYqEYLbPWY?si=7JQaVoVM6bJLuuoT',
+                                'src' => $page->hero_video_url,
                             ])
+                            @endif
                         </div>
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
@@ -68,10 +70,11 @@
         </section>
 
         <section class="relative z-10 animation-section">
-            <div class="flex relative z-10 flex-col-reverse gap-12 items-center py-20 pb-32 codeweek-container-lg md:flex-row md:pb-48">
+                <div class="flex relative z-10 flex-col-reverse gap-12 items-center py-20 pb-32 codeweek-container-lg md:flex-row md:pb-48">
                 <div class="flex-1">
+                    @if($aboutDynamic && $page && $page->about_image)
                     <div class="inline-block relative observer-element">
-                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="{{ ($aboutDynamic && $page && $page->about_image) ? $page->about_image : '/images/digital-girls/about-girls.png' }}" alt="" />
+                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="{{ $page->about_image }}" alt="" />
                         <img
                             class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
                             loading="lazy"
@@ -79,17 +82,18 @@
                             style="transform: translate(-16px, -24px)"
                         />
                     </div>
+                    @endif
                 </div>
                 <div class="flex-1">
                     <h2 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        {{ $content('about_girls_title') ?: 'About Girls in Digital' }}
+                        {{ $content('about_girls_title') }}
                     </h2>
-                    <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                       {!! $content('about_girls_description_1') ?: 'Get ready to celebrate Girls in Digital Week from 23–27 March 2026, as we put a spotlight on inclusion, innovation, and the limitless opportunities digital skills offer to all!' !!}
-                    </p>
-                    <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6">
-                        {!! $content('about_girls_description_2') ?: 'Girls in Digital encourages communities to get involved in meaningful ways. Through <strong>Girls Code It Better (GCIB) Sprints</strong>, educators and organisations can offer hands-on learning experiences where girls collaborate, build confidence, and solve real-world challenges using digital tools. The <strong>Female Role Model Database</strong> connects young people with women and gender-diverse professionals in STE(A)M, sharing stories and guidance that support their digital journeys. <strong>Together, these initiatives help turn curiosity into confidence and ideas into possibility.</strong>' !!}
-                    </p>
+                    <div class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
+                       {!! $content('about_girls_description_1') !!}
+                    </div>
+                    <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
+                        {!! $content('about_girls_description_2') !!}
+                    </div>
                     <div class="flex flex-col gap-4 mb-4 xl:flex-row xl:mb-6">
                         @if($b = $btn('gcib_sprint_hero'))
                         <a
@@ -98,17 +102,6 @@
                             @if($b->open_new_tab) target="_blank" rel="noopener" @endif
                         >
                             <span>{{ $b->label }}</span>
-                            <div class="flex overflow-hidden gap-2 w-4">
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                            </div>
-                        </a>
-                        @else
-                        <a
-                            class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                            href="https://codeweek.eu/blog/girls-in-digital-week-2026/"
-                        >
-                            <span>Girls Code It Better Sprint</span>
                             <div class="flex overflow-hidden gap-2 w-4">
                                 <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                                 <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
@@ -126,14 +119,6 @@
                             >
                                 <span>{{ $b->label }}</span>
                             </a>
-                            @else
-                            <a
-                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
-                                href="https://codeweek.ecwt.eu/"
-                                target="_blank"
-                            >
-                                <span>Female Role Models Database</span>
-                            </a>
                             @endif
                         </div>
                         <div class="flex flex-wrap gap-4">
@@ -144,14 +129,6 @@
                                 @if($b->open_new_tab) target="_blank" rel="noopener" @endif
                             >
                                 <span>{{ $b->label }}</span>
-                            </a>
-                            @else
-                            <a
-                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
-                                href="/docs/girls-in-digital/open-call-for-new-code-week-challenges_v2.pdf"
-                                target="_blank"
-                            >
-                                <span>Open Call for GiD Challenges</span>
                             </a>
                             @endif
                         </div> 
@@ -174,61 +151,45 @@
             <div class="relative pt-20 pb-12 md:pt-48 md:pb-28">
                 <div class="codeweek-container-lg">
                     <h2 class="text-white md:text-center text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
-                        {{ $content('resource_title') ?: 'Resources' }}
+                        {{ $content('resource_title') }}
                     </h2>
                     <div class="flex flex-col gap-6 justify-between md:flex-row md:gap-20">
                         <div class="px-6 py-8 w-full bg-white rounded-2xl md:p-12">
                             <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                                {{ $content('resource_person_title') ?: 'Are you a young person or parent?' }}
+                                {{ $content('resource_person_title') }}
                             </h3>
-                            <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
-                                {!! $content('resource_person_description_1') ?: 'You are a <span class="font-semibold">young person</span> curious about technology, coding, or digital creativity; search for activities near you or connect with a role model through the Female Role Model Database. You are a <span class="font-semibold">parent</span> seeking safe, inclusive digital activities; find opportunities nearby and explore the Female Role Model Database for inspiring role models.' !!}
-                            </p>
+                            <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
+                                {!! $content('resource_person_description_1') !!}
+                            </div>
                             <div class="flex flex-wrap gap-4">
                                 @if($b = $btn('search_activity'))
                                 <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
-                                @else
-                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="/events"><span>Search an activity</span></a>
                                 @endif
                                 @if($b = $btn('meet_role_model'))
                                 <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
-                                @else
-                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="https://codeweek.ecwt.eu/role-models/" target="_blank"><span>Meet a Role Model</span></a>
                                 @endif
                             </div>
                         </div>
                         <div class="px-6 py-8 w-full bg-white rounded-2xl md:p-12">
                             <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                                {{ $content('resource_educator_title') ?: 'Are you an educator?' }}
+                                {{ $content('resource_educator_title') }}
                             </h3>
-                            <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
-                                {!! $content('resource_educator_description') ?: 'You are an educator looking to organise an activity to empower youth with digital skills in a safe and inclusive environment, where all feel welcomed to explore the endless opportunities that digital has to offer. Check our resources below for guidance and support in bringing your activity to life.' !!}
-                            </p>
+                            <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
+                                {!! $content('resource_educator_description') !!}
+                            </div>
                             <div class="flex flex-wrap gap-4">
                                 @if($b = $btn('organise_gcib_sprint'))
                                 <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
-                                @else
-                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="https://codeweek-resources.s3.eu-west-1.amazonaws.com/GCIB-Sprint-materials.zip"><span>Organise a GCIB Sprint</span></a>
                                 @endif
                                 @if($b = $btn('activity_guideline'))
                                 <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif>
                                     <span>{{ $b->label }}</span>
                                     <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
                                 </a>
-                                @else
-                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank" href="/docs/girls-in-digital/girls-in-digital-activity-guidelines.pdf">
-                                    <span>Girls in Digital Activity Guideline</span>
-                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
-                                </a>
                                 @endif
                                 @if($b = $btn('social_media_kit'))
                                 <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif>
                                     <span>{{ $b->label }}</span>
-                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
-                                </a>
-                                @else
-                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank" href="/docs/girls-in-digital/girls-in-digital-media-kit.pdf">
-                                    <span>Social Media Kit</span>
                                     <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
                                 </a>
                                 @endif
@@ -242,39 +203,49 @@
         <section class="overflow-hidden relative">
             <div class="relative py-20 codeweek-container-lg">
                 <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-16">
-                    {{ ($mattersDynamic && $page && $page->matters_title) ? $page->matters_title : 'Why Girls in Digital Matters' }}
+                    {{ $mattersDynamic && $page ? $page->matters_title : '' }}
                 </h2>
                 <div class="flex flex-col gap-12 justify-between lg:flex-row">
                     <div class="w-full">
                         @php
-                            $g1img = ($mattersDynamic && $page && $page->matters_graph1_image) ? $page->matters_graph1_image : '/images/digital-girls/fig-1.png';
-                            $g1link = ($mattersDynamic && $page && $page->matters_graph1_link) ? $page->matters_graph1_link : 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Young_people_-_digital_world';
+                            $g1img = ($mattersDynamic && $page && $page->matters_graph1_image) ? $page->matters_graph1_image : '';
+                            $g1link = ($mattersDynamic && $page && $page->matters_graph1_link) ? $page->matters_graph1_link : '#';
                         @endphp
+                        @if($g1img)
                         <a class="block mb-12 p-6 lg:py-10 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g1link }}" target="_blank" rel="noopener">
-                            <img src="{{ $g1img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph1_caption') : 'Young people – digital world. Eurostat 2023' }}" />
+                            <img src="{{ $g1img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph1_caption') : '' }}" />
                         </a>
+                        @endif
                         @php
-                            $g2img = ($mattersDynamic && $page && $page->matters_graph2_image) ? $page->matters_graph2_image : '/images/digital-girls/fig-2.png';
-                            $g2link = ($mattersDynamic && $page && $page->matters_graph2_link) ? $page->matters_graph2_link : 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=ICT_specialists_in_employment#Explore_further';
+                            $g2img = ($mattersDynamic && $page && $page->matters_graph2_image) ? $page->matters_graph2_image : '';
+                            $g2link = ($mattersDynamic && $page && $page->matters_graph2_link) ? $page->matters_graph2_link : '#';
                         @endphp
+                        @if($g2img)
                         <a class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g2link }}" target="_blank" rel="noopener">
-                            <img src="{{ $g2img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph2_caption') : 'ICT specialists in employment. Eurostat 2023' }}" />
+                            <img src="{{ $g2img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph2_caption') : '' }}" />
                         </a>
-                        <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10">
-                            {!! ($mattersDynamic && $page && $page->matters_paragraph_1) ? $page->matters_paragraph_1 : __('girls-in-digital.relevant_statistics_graph_1') !!}
-                        </p>
+                        @endif
+                        @if($mattersDynamic && $page && $page->matters_paragraph_1)
+                        <div class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
+                            {!! $page->matters_paragraph_1 !!}
+                        </div>
+                        @endif
                     </div>
                     <div class="w-full">
                         @php
-                            $g3img = ($mattersDynamic && $page && $page->matters_graph3_image) ? $page->matters_graph3_image : '/images/digital-girls/fig-3.png';
-                            $g3link = ($mattersDynamic && $page && $page->matters_graph3_link) ? $page->matters_graph3_link : 'https://unesdoc.unesco.org/ark:/48223/pf0000253479';
+                            $g3img = ($mattersDynamic && $page && $page->matters_graph3_image) ? $page->matters_graph3_image : '';
+                            $g3link = ($mattersDynamic && $page && $page->matters_graph3_link) ? $page->matters_graph3_link : '#';
                         @endphp
+                        @if($g3img)
                         <a class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g3link }}" target="_blank" rel="noopener">
-                            <img src="{{ $g3img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph3_caption') : 'Cracking the code: Girls and women education in STEM. UNESCO, 2017.' }}" />
+                            <img src="{{ $g3img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph3_caption') : '' }}" />
                         </a>
-                       <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10">
-                            {!! ($mattersDynamic && $page && $page->matters_paragraph_2) ? $page->matters_paragraph_2 : __('girls-in-digital.relevant_statistics_graph_2') !!}
-                        </p>
+                        @endif
+                        @if($mattersDynamic && $page && $page->matters_paragraph_2)
+                        <div class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
+                            {!! $page->matters_paragraph_2 !!}
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -287,7 +258,7 @@
             <div class="flex relative justify-center pt-28 pb-28 md:pt-48 codeweek-container-lg">
                 <div class="w-full max-w-[708px]">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
-                        {{ ($faqDynamic && $page && $page->faq_title) ? $page->faq_title : 'FAQ\'s' }}
+                        {{ ($faqDynamic && $page && $page->faq_title) ? $page->faq_title : '' }}
                     </h2>
 
                     <div class="accordion">
