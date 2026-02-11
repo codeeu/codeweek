@@ -258,8 +258,7 @@ class GirlsInDigitalPage extends Resource
             $faqFields[] = $this->localeField('FAQ title (' . strtoupper($locale) . ')', $locale, 'faq_title', false);
         }
         if (Schema::hasTable('girls_in_digital_faq_items')) {
-            $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class)
-                ->help('Add, edit, or reorder FAQ items. Each item has a question and answer (with formatting). Use the Translations panel on each item for other languages.');
+            $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class);
         } else {
             $faqFields[] = \Laravel\Nova\Fields\Heading::make('Run migration to enable FAQ items: php artisan migrate --path=database/migrations/2026_02_12_100000_create_girls_in_digital_faq_items_table.php');
         }
