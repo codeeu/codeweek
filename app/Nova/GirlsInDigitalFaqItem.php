@@ -42,11 +42,13 @@ class GirlsInDigitalFaqItem extends Resource
         return true;
     }
 
+    /** Must be instance method to match Laravel\Nova\Resource::authorizedToUpdate (non-static). */
     public function authorizedToUpdate(Request $request): bool
     {
         return true;
     }
 
+    /** Must be instance method to match Laravel\Nova\Resource::authorizedToDelete (non-static). */
     public function authorizedToDelete(Request $request): bool
     {
         return true;
