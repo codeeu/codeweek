@@ -116,6 +116,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('active_countries', \App\Country::withEvents());
         });
 
+        View::composer('static.girls-in-digital-week', \App\Http\View\Composers\GirlsInDigitalComposer::class);
+
         /**
          * Paginate a standard Laravel Collection.
          *
