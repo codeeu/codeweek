@@ -356,7 +356,7 @@ class GirlsInDigitalPage extends Resource
             if (! Schema::hasTable('girls_in_digital_buttons')) {
                 return;
             }
-            $updates = $model->_button_updates ?? null;
+            $updates = $model->nonPersistedButtonUpdates ?? $model->_button_updates ?? null;
             if (! is_array($updates) || empty($updates)) {
                 return;
             }
@@ -380,7 +380,7 @@ class GirlsInDigitalPage extends Resource
                     report($e);
                 }
             }
-            unset($model->_button_updates);
+            unset($model->_button_updates, $model->nonPersistedButtonUpdates);
         } catch (\Throwable $e) {
             report($e);
         }
