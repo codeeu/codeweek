@@ -244,8 +244,7 @@ class GirlsInDigitalPage extends Resource
             $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class)
                 ->fillUsing(function () {
                     // Do not set faqItems on the parent; children are managed separately.
-                })
-                ->dependsOn('faq_dynamic', $this->hideWhenSectionOff('faq_dynamic'));
+                });
         } else {
             $faqFields[] = \Laravel\Nova\Fields\Heading::make('Run migration to enable FAQ items: php artisan migrate --path=database/migrations/2026_02_12_100000_create_girls_in_digital_faq_items_table.php');
         }
