@@ -72,6 +72,14 @@ class GirlsInDigitalPage extends Resource
         return 'girls-in-digital-page';
     }
 
+    /**
+     * Permissive update rules so form submission does not fail on strict validation.
+     */
+    public static function rulesForUpdate(NovaRequest $request, $resource = null): array
+    {
+        return [];
+    }
+
     public static function indexQuery(NovaRequest $request, $query)
     {
         return $query->where('id', 1);
@@ -156,113 +164,140 @@ class GirlsInDigitalPage extends Resource
         }
     }
 
+    /**
+     * Build locale fields for "Other languages" (non-English). English is always first in each section.
+     */
+    private function otherLocaleFields(array $locales, array $specs): array
+    {
+        $fields = [];
+        foreach ($locales as $locale) {
+            if ($locale === 'en') {
+                continue;
+            }
+            foreach ($specs as $spec) {
+                $fields[] = $this->localeField(
+                    $spec['label'] . ' (' . strtoupper($locale) . ')',
+                    $locale,
+                    $spec['key'],
+                    $spec['textarea'] ?? false,
+                    $spec['rich'] ?? false
+                );
+            }
+        }
+        return $fields;
+    }
+
     private function buildFields(Request $request): array
     {
         $locales = self::localesSorted();
 
+        // — Hero: English first, then other languages, then buttons
         $heroFields = [
             Boolean::make('Use dynamic content for this section', 'hero_dynamic')
                 ->help('When on, hero uses the content below.'),
-            Trix::make('Hero intro (default)', 'hero_intro')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('Hero video URL (default)', 'hero_video_url')->nullable()->help('YouTube embed URL.'),
-            Text::make('Hero image (default)', 'hero_image')->nullable(),
+            \Laravel\Nova\Fields\Heading::make('English'),
+            Trix::make('Hero intro (English)', 'hero_intro')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Text::make('Hero video URL (English)', 'hero_video_url')->nullable()->help('YouTube embed URL.'),
+            Text::make('Hero image (English)', 'hero_image')->nullable(),
         ];
-        foreach ($locales as $locale) {
-            if ($locale === 'en') {
-                continue;
-            }
-            $heroFields[] = $this->localeField('Hero intro (' . strtoupper($locale) . ')', $locale, 'hero_intro', true, true);
-            $heroFields[] = $this->localeField('Hero video URL (' . strtoupper($locale) . ')', $locale, 'hero_video_url', false);
-        }
+        $heroFields[] = \Laravel\Nova\Fields\Heading::make('Other languages');
+        $heroFields = array_merge($heroFields, $this->otherLocaleFields($locales, [
+            ['label' => 'Hero intro', 'key' => 'hero_intro', 'textarea' => true, 'rich' => true],
+            ['label' => 'Hero video URL', 'key' => 'hero_video_url'],
+        ]));
         foreach (self::buttonKeysBySection()['hero'] as $key => $title) {
             $heroFields = array_merge($heroFields, $this->buttonFields($key, $title));
         }
 
+        // — About: English first, then other languages, then buttons
         $aboutFields = [
             Boolean::make('Use dynamic content for this section', 'about_dynamic'),
-            Text::make('About title (default)', 'about_title')->nullable(),
-            Trix::make('About description 1 (default)', 'about_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Trix::make('About description 2 (default)', 'about_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('About image (default)', 'about_image')->nullable(),
+            \Laravel\Nova\Fields\Heading::make('English'),
+            Text::make('About title (English)', 'about_title')->nullable(),
+            Trix::make('About description 1 (English)', 'about_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Trix::make('About description 2 (English)', 'about_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Text::make('About image (English)', 'about_image')->nullable(),
         ];
-        foreach ($locales as $locale) {
-            if ($locale === 'en') {
-                continue;
-            }
-            $aboutFields[] = $this->localeField('About title (' . strtoupper($locale) . ')', $locale, 'about_title', false);
-            $aboutFields[] = $this->localeField('About description 1 (' . strtoupper($locale) . ')', $locale, 'about_description_1', true, true);
-            $aboutFields[] = $this->localeField('About description 2 (' . strtoupper($locale) . ')', $locale, 'about_description_2', true, true);
-        }
+        $aboutFields[] = \Laravel\Nova\Fields\Heading::make('Other languages');
+        $aboutFields = array_merge($aboutFields, $this->otherLocaleFields($locales, [
+            ['label' => 'About title', 'key' => 'about_title'],
+            ['label' => 'About description 1', 'key' => 'about_description_1', 'textarea' => true, 'rich' => true],
+            ['label' => 'About description 2', 'key' => 'about_description_2', 'textarea' => true, 'rich' => true],
+        ]));
         foreach (self::buttonKeysBySection()['about'] as $key => $title) {
             $aboutFields = array_merge($aboutFields, $this->buttonFields($key, $title));
         }
 
+        // — Resources: English first, then other languages, then buttons
         $resourcesFields = [
             Boolean::make('Use dynamic content for this section', 'resources_dynamic'),
-            Text::make('Resources title (default)', 'resource_title')->nullable(),
-            Text::make('Young person / parent title (default)', 'resource_person_title')->nullable(),
-            Trix::make('Young person / parent description 1 (default)', 'resource_person_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Trix::make('Young person / parent description 2 (default)', 'resource_person_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('Young person / parent image (default)', 'resource_young_image')->nullable(),
-            Text::make('Educator title (default)', 'resource_educator_title')->nullable(),
-            Trix::make('Educator description (default)', 'resource_educator_description')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('Educator image (default)', 'resource_educator_image')->nullable(),
+            \Laravel\Nova\Fields\Heading::make('English'),
+            Text::make('Resources title (English)', 'resource_title')->nullable(),
+            Text::make('Young person / parent title (English)', 'resource_person_title')->nullable(),
+            Trix::make('Young person / parent description 1 (English)', 'resource_person_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Trix::make('Young person / parent description 2 (English)', 'resource_person_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Text::make('Young person / parent image (English)', 'resource_young_image')->nullable(),
+            Text::make('Educator title (English)', 'resource_educator_title')->nullable(),
+            Trix::make('Educator description (English)', 'resource_educator_description')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Text::make('Educator image (English)', 'resource_educator_image')->nullable(),
         ];
-        foreach ($locales as $locale) {
-            if ($locale === 'en') {
-                continue;
-            }
-            $resourcesFields[] = $this->localeField('Resource title (' . strtoupper($locale) . ')', $locale, 'resource_title', false);
-            $resourcesFields[] = $this->localeField('Young person title (' . strtoupper($locale) . ')', $locale, 'resource_person_title', false);
-            $resourcesFields[] = $this->localeField('Young person description 1 (' . strtoupper($locale) . ')', $locale, 'resource_person_description_1', true, true);
-            $resourcesFields[] = $this->localeField('Young person description 2 (' . strtoupper($locale) . ')', $locale, 'resource_person_description_2', true, true);
-            $resourcesFields[] = $this->localeField('Educator title (' . strtoupper($locale) . ')', $locale, 'resource_educator_title', false);
-            $resourcesFields[] = $this->localeField('Educator description (' . strtoupper($locale) . ')', $locale, 'resource_educator_description', true, true);
-        }
+        $resourcesFields[] = \Laravel\Nova\Fields\Heading::make('Other languages');
+        $resourcesFields = array_merge($resourcesFields, $this->otherLocaleFields($locales, [
+            ['label' => 'Resource title', 'key' => 'resource_title'],
+            ['label' => 'Young person title', 'key' => 'resource_person_title'],
+            ['label' => 'Young person description 1', 'key' => 'resource_person_description_1', 'textarea' => true, 'rich' => true],
+            ['label' => 'Young person description 2', 'key' => 'resource_person_description_2', 'textarea' => true, 'rich' => true],
+            ['label' => 'Educator title', 'key' => 'resource_educator_title'],
+            ['label' => 'Educator description', 'key' => 'resource_educator_description', 'textarea' => true, 'rich' => true],
+        ]));
         foreach (self::buttonKeysBySection()['resources'] as $key => $title) {
             $resourcesFields = array_merge($resourcesFields, $this->buttonFields($key, $title));
         }
 
+        // — Why Matters: English first, then other languages
         $mattersFields = [
             Boolean::make('Use dynamic content for this section', 'matters_dynamic'),
-            Text::make('Section title (default)', 'matters_title')->nullable(),
-            Text::make('Graph 1 image (default)', 'matters_graph1_image')->nullable(),
-            Text::make('Graph 1 link (default)', 'matters_graph1_link')->nullable(),
-            Trix::make('Graph 1 caption (default)', 'matters_graph1_caption')->nullable(),
-            Text::make('Graph 2 image (default)', 'matters_graph2_image')->nullable(),
-            Text::make('Graph 2 link (default)', 'matters_graph2_link')->nullable(),
-            Trix::make('Graph 2 caption (default)', 'matters_graph2_caption')->nullable(),
-            Text::make('Graph 3 image (default)', 'matters_graph3_image')->nullable(),
-            Text::make('Graph 3 link (default)', 'matters_graph3_link')->nullable(),
-            Trix::make('Graph 3 caption (default)', 'matters_graph3_caption')->nullable(),
-            Trix::make('Paragraph 1 (default)', 'matters_paragraph_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Trix::make('Paragraph 2 (default)', 'matters_paragraph_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            \Laravel\Nova\Fields\Heading::make('English'),
+            Text::make('Section title (English)', 'matters_title')->nullable(),
+            Text::make('Graph 1 image (English)', 'matters_graph1_image')->nullable(),
+            Text::make('Graph 1 link (English)', 'matters_graph1_link')->nullable(),
+            Trix::make('Graph 1 caption (English)', 'matters_graph1_caption')->nullable(),
+            Text::make('Graph 2 image (English)', 'matters_graph2_image')->nullable(),
+            Text::make('Graph 2 link (English)', 'matters_graph2_link')->nullable(),
+            Trix::make('Graph 2 caption (English)', 'matters_graph2_caption')->nullable(),
+            Text::make('Graph 3 image (English)', 'matters_graph3_image')->nullable(),
+            Text::make('Graph 3 link (English)', 'matters_graph3_link')->nullable(),
+            Trix::make('Graph 3 caption (English)', 'matters_graph3_caption')->nullable(),
+            Trix::make('Paragraph 1 (English)', 'matters_paragraph_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Trix::make('Paragraph 2 (English)', 'matters_paragraph_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
         ];
-        foreach ($locales as $locale) {
-            if ($locale === 'en') {
-                continue;
-            }
-            $mattersFields[] = $this->localeField('Matters title (' . strtoupper($locale) . ')', $locale, 'matters_title', false);
-            $mattersFields[] = $this->localeField('Matters paragraph 1 (' . strtoupper($locale) . ')', $locale, 'matters_paragraph_1', true, true);
-            $mattersFields[] = $this->localeField('Matters paragraph 2 (' . strtoupper($locale) . ')', $locale, 'matters_paragraph_2', true, true);
-        }
+        $mattersFields[] = \Laravel\Nova\Fields\Heading::make('Other languages');
+        $mattersFields = array_merge($mattersFields, $this->otherLocaleFields($locales, [
+            ['label' => 'Matters title', 'key' => 'matters_title'],
+            ['label' => 'Matters paragraph 1', 'key' => 'matters_paragraph_1', 'textarea' => true, 'rich' => true],
+            ['label' => 'Matters paragraph 2', 'key' => 'matters_paragraph_2', 'textarea' => true, 'rich' => true],
+        ]));
 
+        // — FAQ: English first, then other languages, then FAQ items
         $faqFields = [
             Boolean::make('Use dynamic content for this section', 'faq_dynamic'),
-            Text::make('FAQ section title (default)', 'faq_title')->nullable(),
+            \Laravel\Nova\Fields\Heading::make('English'),
+            Text::make('FAQ section title (English)', 'faq_title')->nullable(),
         ];
-        foreach ($locales as $locale) {
-            if ($locale === 'en') {
-                continue;
-            }
-            $faqFields[] = $this->localeField('FAQ title (' . strtoupper($locale) . ')', $locale, 'faq_title', false);
-        }
+        $faqFields[] = \Laravel\Nova\Fields\Heading::make('Other languages');
+        $faqFields = array_merge($faqFields, $this->otherLocaleFields($locales, [
+            ['label' => 'FAQ title', 'key' => 'faq_title'],
+        ]));
         if (Schema::hasTable('girls_in_digital_faq_items')) {
-            $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class);
+            $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class)
+                ->fillUsing(function () {
+                    // Do not set faqItems on the parent; children are managed separately.
+                });
         } else {
             $faqFields[] = \Laravel\Nova\Fields\Heading::make('Run migration to enable FAQ items: php artisan migrate --path=database/migrations/2026_02_12_100000_create_girls_in_digital_faq_items_table.php');
         }
 
+        // All sections are collapsible accordions, closed by default
         return [
             ID::make()->onlyOnForms(),
 
