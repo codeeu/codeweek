@@ -118,13 +118,22 @@ class GirlsInDigitalPage extends Resource
             return $overrides[$locale][$key] ?? '';
         });
         $field->fillUsing(function ($request, $model, $attribute, $requestAttribute) use ($locale, $key) {
-            $value = $request->get($requestAttribute);
-            $overrides = $model->locale_overrides ?? [];
-            if (! isset($overrides[$locale])) {
-                $overrides[$locale] = [];
+            try {
+                $value = $request->get($requestAttribute);
+                $overrides = $model->locale_overrides ?? [];
+                if (! isset($overrides[$locale])) {
+                    $overrides[$locale] = [];
+                }
+                $overrides[$locale][$key] = $value;
+                $model->locale_overrides = $overrides;
+            } catch (\Throwable $e) {
+                \Illuminate\Support\Facades\Log::error('GirlsInDigital locale field fill failed: ' . $attribute, [
+                    'exception' => $e->getMessage(),
+                    'file' => $e->getFile(),
+                    'line' => $e->getLine(),
+                ]);
+                throw $e;
             }
-            $overrides[$locale][$key] = $value;
-            $model->locale_overrides = $overrides;
         });
         return $field;
     }
@@ -335,16 +344,25 @@ class GirlsInDigitalPage extends Resource
 
     private function fillButtonField(\App\GirlsInDigitalPage $model, string $key, string $field, $value): void
     {
-        if (! isset($model->_button_updates)) {
-            $model->_button_updates = [];
+        try {
+            if (! isset($model->_button_updates)) {
+                $model->_button_updates = [];
+            }
+            if (! isset($model->_button_updates[$key])) {
+                $model->_button_updates[$key] = [];
+            }
+            if ($field === 'enabled' || $field === 'open_new_tab') {
+                $value = (bool) $value;
+            }
+            $model->_button_updates[$key][$field] = $value;
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::error('GirlsInDigital button field fill failed: ' . $key . '.' . $field, [
+                'exception' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+            ]);
+            throw $e;
         }
-        if (! isset($model->_button_updates[$key])) {
-            $model->_button_updates[$key] = [];
-        }
-        if ($field === 'enabled' || $field === 'open_new_tab') {
-            $value = (bool) $value;
-        }
-        $model->_button_updates[$key][$field] = $value;
     }
 
     public static function afterSave(NovaRequest $request, $model): void
@@ -356,7 +374,7 @@ class GirlsInDigitalPage extends Resource
             if (! Schema::hasTable('girls_in_digital_buttons')) {
                 return;
             }
-            $updates = $model->nonPersistedButtonUpdates ?? $model->_button_updates ?? null;
+            $updates = $model->nonPersistedButtonUpdates ?? null;
             if (! is_array($updates) || empty($updates)) {
                 return;
             }
@@ -380,7 +398,7 @@ class GirlsInDigitalPage extends Resource
                     report($e);
                 }
             }
-            unset($model->_button_updates, $model->nonPersistedButtonUpdates);
+            unset($model->nonPersistedButtonUpdates);
         } catch (\Throwable $e) {
             report($e);
         }
