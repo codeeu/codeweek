@@ -10,6 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
@@ -155,6 +156,17 @@ class AppServiceProvider extends ServiceProvider
 
         $this->bootAuth();
         $this->bootEvent();
+        $this->bootNovaMainDashboardRoute();
+    }
+
+    /**
+     * Ensure /nova/dashboards/main always has a matching route (no domain constraint).
+     */
+    protected function bootNovaMainDashboardRoute(): void
+    {
+        Route::middleware(config('nova.middleware', []))
+            ->get('/nova/dashboards/main', [\Laravel\Nova\Http\Controllers\Pages\DashboardController::class, '__invoke'])
+            ->defaults('name', 'main');
     }
 
     /**

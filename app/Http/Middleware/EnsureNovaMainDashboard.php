@@ -20,8 +20,20 @@ class EnsureNovaMainDashboard
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (! $this->isNovaDashboardRequest($request)) {
-            return $next($request);
+        self::ensureMainDashboardRegistered($request);
+
+        return $next($request);
+    }
+
+    /**
+     * Call from anywhere (e.g. web middleware) to ensure Main dashboard exists for Nova paths.
+     */
+    public static function ensureMainDashboardRegistered(Request $request): void
+    {
+        $path = $request->path();
+        $isNova = $path === 'nova' || str_starts_with($path, 'nova/') || str_starts_with($path, 'nova-api/');
+        if (! $isNova) {
+            return;
         }
 
         $hasMain = collect(Nova::$dashboards)->contains(function ($dashboard) {
@@ -31,8 +43,6 @@ class EnsureNovaMainDashboard
         if (! $hasMain) {
             Nova::dashboards([new Main]);
         }
-
-        return $next($request);
     }
 
     private function isNovaDashboardRequest(Request $request): bool
