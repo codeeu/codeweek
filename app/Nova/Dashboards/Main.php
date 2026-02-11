@@ -13,6 +13,16 @@ use Laravel\Nova\Dashboards\Main as Dashboard;
 class Main extends Dashboard
 {
     /**
+     * URI key for the dashboard (must match Nova's default route /nova/dashboards/main).
+     *
+     * @return string
+     */
+    public function uriKey()
+    {
+        return 'main';
+    }
+
+    /**
      * Get the cards for the dashboard.
      *
      * @return array
