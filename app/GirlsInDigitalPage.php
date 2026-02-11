@@ -51,7 +51,6 @@ class GirlsInDigitalPage extends Model
         'matters_paragraph_1',
         'matters_paragraph_2',
         'faq_title',
-        'faq_items',
         'locale_overrides',
     ];
 
@@ -61,13 +60,17 @@ class GirlsInDigitalPage extends Model
         'resources_dynamic' => 'boolean',
         'matters_dynamic' => 'boolean',
         'faq_dynamic' => 'boolean',
-        'faq_items' => 'array',
         'locale_overrides' => 'array',
     ];
 
     public function buttons()
     {
         return $this->hasMany(GirlsInDigitalButton::class, 'page_id')->orderBy('position');
+    }
+
+    public function faqItems()
+    {
+        return $this->hasMany(GirlsInDigitalFaqItem::class, 'page_id')->orderBy('position');
     }
 
     /**
@@ -170,17 +173,13 @@ class GirlsInDigitalPage extends Model
     }
 
     /**
-     * FAQ items for locale: locale_overrides[locale].faq_items or main faq_items.
-     * Each item: ['question' => string, 'answer' => string].
+     * FAQ items for locale: returns array of ['question' => string, 'answer' => string] from faqItems relationship.
      */
     public function faqItemsForLocale(?string $locale = null): array
     {
-        $locale = $locale ?? app()->getLocale();
-        $overrides = $this->locale_overrides ?? [];
-        if (! empty($overrides[$locale]['faq_items']) && is_array($overrides[$locale]['faq_items'])) {
-            return $overrides[$locale]['faq_items'];
-        }
-        $items = $this->faq_items ?? [];
-        return is_array($items) ? $items : [];
+        return $this->faqItems->map(fn (GirlsInDigitalFaqItem $item) => [
+            'question' => $item->questionForLocale($locale),
+            'answer' => $item->answerForLocale($locale),
+        ])->all();
     }
 }
