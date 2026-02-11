@@ -10,12 +10,18 @@
 @endsection
 
 @php
-    $btn = function($key) use ($buttons) {
-        if (!isset($buttons) || $buttons->isEmpty()) { return null; }
-        return $buttons->keyBy('key')->get($key);
+    $useDynamic = $page && $page->use_dynamic_content;
+    $btn = function($key) use ($page, $useDynamic) {
+        if (!$useDynamic) {
+            return null;
+        }
+        return $page ? $page->getButton($key) : null;
     };
-    $content = function($key) use ($page) {
-        return $page ? $page->contentForLocale($key) : (__('girls-in-digital.' . $key) ?: '');
+    $content = function($key) use ($page, $useDynamic) {
+        if (!$useDynamic || !$page) {
+            return '';
+        }
+        return $page->contentForLocale($key);
     };
 @endphp
 @section('content')
@@ -30,14 +36,17 @@
                                 src="/images/digital-girls/digital_girls_logo.svg"
                             />
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0">
-                                We’re excited to announce Girls in Digital Week 2026!
- Empower, inspire and celebrate the next generation of girls and young Europeans!
+                                @if($useDynamic && $page->hero_intro)
+                                    {!! $page->hero_intro !!}
+                                @else
+                                    {{ $content('landing_header') ?: "We're excited to announce Girls in Digital Week 2026! Empower, inspire and celebrate the next generation of girls and young Europeans!" }}
+                                @endif
                             </p>
                         </div>
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
                             @include('layout.video-player', [
                                 'id' => 'girls-digital-hero',
-                                'src' => 'https://www.youtube.com/embed/XfYqEYLbPWY?si=7JQaVoVM6bJLuuoT',
+                                'src' => ($useDynamic && $page->hero_video_url) ? $page->hero_video_url : 'https://www.youtube.com/embed/XfYqEYLbPWY?si=7JQaVoVM6bJLuuoT',
                             ])
                         </div>
                         <img
