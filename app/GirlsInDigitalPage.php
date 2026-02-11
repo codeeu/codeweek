@@ -64,42 +64,43 @@ class GirlsInDigitalPage extends Model
     ];
 
     /**
-     * Prevent relationship / virtual attributes from being persisted (e.g. from Nova form).
-     */
-    public function setAttribute($key, $value)
-    {
-        if (in_array($key, ['faqItems'], true)) {
-            return $this;
-        }
-        if (str_starts_with($key, 'button_') || str_starts_with($key, 'locale_')) {
-            return $this;
-        }
-        return parent::setAttribute($key, $value);
-    }
-
-    /**
-     * Used by Nova afterSave; not persisted to DB.
+     * Button updates from Nova form; never persisted to DB.
      *
      * @var array<string, array<string, mixed>>|null
      */
     public $nonPersistedButtonUpdates;
 
     /**
-     * Keep _button_updates out of the SQL UPDATE (used by Nova to pass button data to afterSave).
+     * Prevent relationship / virtual attributes from being persisted (e.g. from Nova form).
+     * Store _button_updates only in nonPersistedButtonUpdates so it never hits the DB.
      */
-    protected static function booted(): void
+    public function setAttribute($key, $value)
     {
-        static::saving(function (self $model): void {
-            $model->preserveButtonUpdatesBeforeSave();
-        });
+        if (in_array($key, ['faqItems'], true)) {
+            return $this;
+        }
+        if ($key === '_button_updates') {
+            $this->nonPersistedButtonUpdates = $value;
+
+            return $this;
+        }
+        if (str_starts_with($key, 'button_') || str_starts_with($key, 'locale_')) {
+            return $this;
+        }
+
+        return parent::setAttribute($key, $value);
     }
 
-    private function preserveButtonUpdatesBeforeSave(): void
+    /**
+     * So that $model->_button_updates reads back the non-persisted value.
+     */
+    public function getAttribute($key)
     {
-        if (array_key_exists('_button_updates', $this->attributes)) {
-            $this->nonPersistedButtonUpdates = $this->attributes['_button_updates'];
-            unset($this->attributes['_button_updates']);
+        if ($key === '_button_updates') {
+            return $this->nonPersistedButtonUpdates;
         }
+
+        return parent::getAttribute($key);
     }
 
     public function buttons()
