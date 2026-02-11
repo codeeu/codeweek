@@ -10,18 +10,23 @@
 @endsection
 
 @php
-    $useDynamic = $page && $page->use_dynamic_content;
-    $btn = function($key) use ($page, $useDynamic) {
-        if (!$useDynamic) {
-            return null;
-        }
+    $heroDynamic   = $page && $page->hero_dynamic;
+    $aboutDynamic  = $page && $page->about_dynamic;
+    $resourcesDynamic = $page && $page->resources_dynamic;
+    $mattersDynamic   = $page && $page->matters_dynamic;
+    $faqDynamic   = $page && $page->faq_dynamic;
+    $btn = function($key) use ($page) {
         return $page ? $page->getButton($key) : null;
     };
-    $content = function($key) use ($page, $useDynamic) {
-        if (!$useDynamic || !$page) {
-            return '';
+    $content = function($key) use ($page, $heroDynamic, $aboutDynamic, $resourcesDynamic, $mattersDynamic) {
+        if (!$page) return '';
+        if (in_array($key, ['hero_intro', 'landing_header'], true) && $heroDynamic) return $page->contentForLocale($key === 'landing_header' ? 'hero_intro' : $key);
+        if (in_array($key, ['about_girls_title', 'about_girls_description_1', 'about_girls_description_2'], true) && $aboutDynamic) return $page->contentForLocale($key);
+        if (in_array($key, ['resource_title', 'resource_person_title', 'resource_person_description_1', 'resource_person_description_2', 'resource_educator_title', 'resource_educator_description'], true) && $resourcesDynamic) return $page->contentForLocale($key);
+        if (str_starts_with($key, 'matters_') || in_array($key, ['relevant_statistics_title', 'relevant_statistics_graph_1', 'relevant_statistics_graph_2'], true)) {
+            if ($mattersDynamic) return $page->contentForLocale($key);
         }
-        return $page->contentForLocale($key);
+        return '';
     };
 @endphp
 @section('content')
@@ -36,17 +41,13 @@
                                 src="/images/digital-girls/digital_girls_logo.svg"
                             />
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0">
-                                @if($useDynamic && $page->hero_intro)
-                                    {!! $page->hero_intro !!}
-                                @else
-                                    {{ $content('landing_header') ?: "We're excited to announce Girls in Digital Week 2026! Empower, inspire and celebrate the next generation of girls and young Europeans!" }}
-                                @endif
+                                {!! $content('landing_header') ?: "We're excited to announce Girls in Digital Week 2026! Empower, inspire and celebrate the next generation of girls and young Europeans!" !!}
                             </p>
                         </div>
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
                             @include('layout.video-player', [
                                 'id' => 'girls-digital-hero',
-                                'src' => ($useDynamic && $page->hero_video_url) ? $page->hero_video_url : 'https://www.youtube.com/embed/XfYqEYLbPWY?si=7JQaVoVM6bJLuuoT',
+                                'src' => ($heroDynamic && $page && $page->hero_video_url) ? $page->hero_video_url : 'https://www.youtube.com/embed/XfYqEYLbPWY?si=7JQaVoVM6bJLuuoT',
                             ])
                         </div>
                         <img
@@ -70,7 +71,7 @@
             <div class="flex relative z-10 flex-col-reverse gap-12 items-center py-20 pb-32 codeweek-container-lg md:flex-row md:pb-48">
                 <div class="flex-1">
                     <div class="inline-block relative observer-element">
-                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/digital-girls/about-girls.png" />
+                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="{{ ($aboutDynamic && $page && $page->about_image) ? $page->about_image : '/images/digital-girls/about-girls.png' }}" alt="" />
                         <img
                             class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
                             loading="lazy"
@@ -241,38 +242,38 @@
         <section class="overflow-hidden relative">
             <div class="relative py-20 codeweek-container-lg">
                 <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-16">
-                    Why Girls in Digital Matters
+                    {{ ($mattersDynamic && $page && $page->matters_title) ? $page->matters_title : 'Why Girls in Digital Matters' }}
                 </h2>
                 <div class="flex flex-col gap-12 justify-between lg:flex-row">
                     <div class="w-full">
-                        <a
-                            class="block mb-12 p-6 lg:py-10 rounded-lg border-2 border-[#A4B8D9]"
-                            href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Young_people_-_digital_world"
-                            target="_blank"
-                        >
-                            <img src="/images/digital-girls/fig-1.png" alt="Young people – digital world. Eurostat 2023" />
+                        @php
+                            $g1img = ($mattersDynamic && $page && $page->matters_graph1_image) ? $page->matters_graph1_image : '/images/digital-girls/fig-1.png';
+                            $g1link = ($mattersDynamic && $page && $page->matters_graph1_link) ? $page->matters_graph1_link : 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Young_people_-_digital_world';
+                        @endphp
+                        <a class="block mb-12 p-6 lg:py-10 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g1link }}" target="_blank" rel="noopener">
+                            <img src="{{ $g1img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph1_caption') : 'Young people – digital world. Eurostat 2023' }}" />
                         </a>
-                        <a
-                            class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]"
-                            href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=ICT_specialists_in_employment#Explore_further"
-                            target="_blank"
-                        >
-                            <img src="/images/digital-girls/fig-2.png" alt="ICT specialists in employment. Eurostat 2023" />
+                        @php
+                            $g2img = ($mattersDynamic && $page && $page->matters_graph2_image) ? $page->matters_graph2_image : '/images/digital-girls/fig-2.png';
+                            $g2link = ($mattersDynamic && $page && $page->matters_graph2_link) ? $page->matters_graph2_link : 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=ICT_specialists_in_employment#Explore_further';
+                        @endphp
+                        <a class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g2link }}" target="_blank" rel="noopener">
+                            <img src="{{ $g2img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph2_caption') : 'ICT specialists in employment. Eurostat 2023' }}" />
                         </a>
                         <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10">
-                            The graphs illustrate the persistent gender gap in ICT across different stages of a young European’s journey, from education to professional life. While female representation has gradually increased between 2013 and 2023, the sector remains male-dominated, highlighting the need for further progress in closing the gap.
+                            {!! ($mattersDynamic && $page && $page->matters_paragraph_1) ? $page->matters_paragraph_1 : __('girls-in-digital.relevant_statistics_graph_1') !!}
                         </p>
                     </div>
                     <div class="w-full">
-                        <a
-                            class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]"
-                            href="https://unesdoc.unesco.org/ark:/48223/pf0000253479"
-                            target="_blank"
-                        >
-                            <img src="/images/digital-girls/fig-3.png" alt="Cracking the code: Girls’ and women’s education in science, technology, engineering and mathematics (STEM). United Nations Educational, Scientific and Cultural Organization (UNESCO), 2017." />
+                        @php
+                            $g3img = ($mattersDynamic && $page && $page->matters_graph3_image) ? $page->matters_graph3_image : '/images/digital-girls/fig-3.png';
+                            $g3link = ($mattersDynamic && $page && $page->matters_graph3_link) ? $page->matters_graph3_link : 'https://unesdoc.unesco.org/ark:/48223/pf0000253479';
+                        @endphp
+                        <a class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g3link }}" target="_blank" rel="noopener">
+                            <img src="{{ $g3img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph3_caption') : 'Cracking the code: Girls and women education in STEM. UNESCO, 2017.' }}" />
                         </a>
                        <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10">
-                            Multiple interconnected factors influence girls' and women's participation, achievement, and progression in STEM, with individual beliefs shaped by family, peers, education, and broader societal influences. This diagram illustrates the various factors at different levels influencing female representation in STEM. Addressing these factors holistically has been shown to positively impact confidence and motivation, encouraging more girls and women to pursue STEM education and careers.
+                            {!! ($mattersDynamic && $page && $page->matters_paragraph_2) ? $page->matters_paragraph_2 : __('girls-in-digital.relevant_statistics_graph_2') !!}
                         </p>
                     </div>
                 </div>
@@ -286,10 +287,27 @@
             <div class="flex relative justify-center pt-28 pb-28 md:pt-48 codeweek-container-lg">
                 <div class="w-full max-w-[708px]">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
-                        FAQ’s
+                        {{ ($faqDynamic && $page && $page->faq_title) ? $page->faq_title : 'FAQ\'s' }}
                     </h2>
 
                     <div class="accordion">
+                        @if($faqDynamic && $page && count($page->faqItemsForLocale()) > 0)
+                            @foreach($page->faqItemsForLocale() as $faq)
+                                <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
+                                    <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
+                                        <p>{{ $faq['question'] ?? '' }}</p>
+                                        <button class="flex justify-center items-center rounded-full duration-300 bg-yellow hover:bg-primary min-w-12 min-h-12">
+                                            <img class="duration-300" src="/images/digital-girls/arrow.svg" />
+                                        </button>
+                                    </div>
+                                    <div class="overflow-hidden max-h-0 transition-all duration-300">
+                                        <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
+                                            {!! $faq['answer'] ?? '' !!}
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @else
                         {{-- General FAQs --}}
                         <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                             <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
@@ -495,6 +513,7 @@ If you would like to join the Female Role Models Database as a role model, you c
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
                 </div>
