@@ -23,6 +23,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         parent::boot();
 
+        // Ensure dashboards are registered at boot so /nova/dashboards/main is always available
+        // (ServingNova also registers them per-request; this covers edge cases)
+        Nova::dashboards($this->dashboards());
 
 //        Nova::mainMenu(function (Request $request) {
 //            return [
