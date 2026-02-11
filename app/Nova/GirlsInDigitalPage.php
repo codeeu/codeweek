@@ -129,11 +129,19 @@ class GirlsInDigitalPage extends Resource
         }
     }
 
-    /** Hide field from form when the given dynamic toggle is explicitly off. Show when on or when not yet set (initial load). */
+    /** Hide field from form when the given dynamic toggle is off. Use form data when present, else the resource's value (initial load). */
     private function hideWhenSectionOff(string $dynamicAttribute): \Closure
     {
         return function ($field, $request, $formData) use ($dynamicAttribute) {
             $value = $formData->get($dynamicAttribute);
+            if ($value === null && $request->resourceId ?? null) {
+                try {
+                    $model = $request->findResourceOrFail();
+                    $value = $model->getAttribute($dynamicAttribute);
+                } catch (\Throwable $e) {
+                    // ignore
+                }
+            }
             if ($value === false || $value === '0' || $value === 0) {
                 $field->exceptOnForms();
             }
