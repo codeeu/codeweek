@@ -77,6 +77,31 @@ class GirlsInDigitalPage extends Model
         return parent::setAttribute($key, $value);
     }
 
+    /**
+     * Used by Nova afterSave; not persisted to DB.
+     *
+     * @var array<string, array<string, mixed>>|null
+     */
+    public $nonPersistedButtonUpdates;
+
+    /**
+     * Keep _button_updates out of the SQL UPDATE (used by Nova to pass button data to afterSave).
+     */
+    protected static function booted(): void
+    {
+        static::saving(function (self $model): void {
+            $model->preserveButtonUpdatesBeforeSave();
+        });
+    }
+
+    private function preserveButtonUpdatesBeforeSave(): void
+    {
+        if (array_key_exists('_button_updates', $this->attributes)) {
+            $this->nonPersistedButtonUpdates = $this->attributes['_button_updates'];
+            unset($this->attributes['_button_updates']);
+        }
+    }
+
     public function buttons()
     {
         return $this->hasMany(GirlsInDigitalButton::class, 'page_id')->orderBy('position');
