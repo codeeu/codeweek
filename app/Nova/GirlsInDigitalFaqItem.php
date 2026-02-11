@@ -37,6 +37,21 @@ class GirlsInDigitalFaqItem extends Resource
     /** Only manage FAQ items from the Girls in Digital page (HasMany). */
     public static $displayInNavigation = false;
 
+    public static function authorizedToCreate(Request $request): bool
+    {
+        return true;
+    }
+
+    public static function authorizedToUpdate(Request $request, $model): bool
+    {
+        return true;
+    }
+
+    public static function authorizedToDelete(Request $request, $model): bool
+    {
+        return true;
+    }
+
     private static function localesSorted(): array
     {
         $locales = config('app.locales', ['en']);
@@ -95,7 +110,12 @@ class GirlsInDigitalFaqItem extends Resource
         $fields = [
             ID::make()->onlyOnForms(),
             \Laravel\Nova\Fields\Hidden::make('Page', 'page_id')
-                ->default(fn ($request) => $request->viaResourceId ?? 1),
+                ->default(function ($request) {
+                    if ($request instanceof \Laravel\Nova\Http\Requests\NovaRequest && method_exists($request, 'viaResourceId')) {
+                        return $request->viaResourceId() ?? 1;
+                    }
+                    return $request->query('viaResourceId', 1);
+                }),
             Text::make('Question (default)', 'question')->nullable()->rules('nullable', 'string'),
             Trix::make('Answer (default)', 'answer')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
             \Laravel\Nova\Fields\Number::make('Order', 'position')->min(0)->help('Lower numbers appear first.'),
