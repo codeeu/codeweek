@@ -240,8 +240,12 @@ class GirlsInDigitalPage extends Resource
             }
             $faqFields[] = $this->localeField('FAQ title (' . strtoupper($locale) . ')', $locale, 'faq_title', false);
         }
-        $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class)
-            ->help('Add, edit, or reorder FAQ items. Each item has a question and answer (with formatting). Use the Translations panel on each item for other languages.');
+        if (Schema::hasTable('girls_in_digital_faq_items')) {
+            $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class)
+                ->help('Add, edit, or reorder FAQ items. Each item has a question and answer (with formatting). Use the Translations panel on each item for other languages.');
+        } else {
+            $faqFields[] = \Laravel\Nova\Fields\Heading::make('Run migration to enable FAQ items: php artisan migrate --path=database/migrations/2026_02_12_100000_create_girls_in_digital_faq_items_table.php');
+        }
 
         return [
             ID::make()->onlyOnForms(),
@@ -264,11 +268,18 @@ class GirlsInDigitalPage extends Resource
 
     private function getButtonField(string $key, string $field)
     {
-        $button = $this->resource->buttons()->where('key', $key)->first();
-        if (! $button) {
+        try {
+            if (! \Illuminate\Support\Facades\Schema::hasTable('girls_in_digital_buttons')) {
+                return $field === 'enabled' ? true : ($field === 'open_new_tab' ? false : '');
+            }
+            $button = $this->resource->buttons()->where('key', $key)->first();
+            if (! $button) {
+                return $field === 'enabled' ? true : ($field === 'open_new_tab' ? false : '');
+            }
+            return $button->{$field};
+        } catch (\Throwable $e) {
             return $field === 'enabled' ? true : ($field === 'open_new_tab' ? false : '');
         }
-        return $button->{$field};
     }
 
     private function fillButtonField(\App\GirlsInDigitalPage $model, string $key, string $field, $value): void
