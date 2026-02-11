@@ -42,12 +42,12 @@ class GirlsInDigitalFaqItem extends Resource
         return true;
     }
 
-    public static function authorizedToUpdate(Request $request, $model): bool
+    public function authorizedToUpdate(Request $request): bool
     {
         return true;
     }
 
-    public static function authorizedToDelete(Request $request, $model): bool
+    public function authorizedToDelete(Request $request): bool
     {
         return true;
     }
