@@ -103,6 +103,9 @@ class GirlsInDigitalPage extends Resource
                 : Text::make($label, $attr)->nullable();
         }
         $field->resolveUsing(function () use ($locale, $key) {
+            if (! $this->resource) {
+                return '';
+            }
             $overrides = $this->resource->locale_overrides ?? [];
             return $overrides[$locale][$key] ?? '';
         });
@@ -140,6 +143,20 @@ class GirlsInDigitalPage extends Resource
     }
 
     public function fields(Request $request): array
+    {
+        try {
+            return $this->buildFields($request);
+        } catch (\Throwable $e) {
+            report($e);
+            return [
+                ID::make()->onlyOnForms(),
+                \Laravel\Nova\Fields\Heading::make('Error loading form: ' . $e->getMessage()),
+                \Laravel\Nova\Fields\Heading::make('File: ' . $e->getFile() . ' Line: ' . $e->getLine()),
+            ];
+        }
+    }
+
+    private function buildFields(Request $request): array
     {
         $locales = self::localesSorted();
 
@@ -269,7 +286,7 @@ class GirlsInDigitalPage extends Resource
     private function getButtonField(string $key, string $field)
     {
         try {
-            if (! \Illuminate\Support\Facades\Schema::hasTable('girls_in_digital_buttons')) {
+            if (! $this->resource || ! \Illuminate\Support\Facades\Schema::hasTable('girls_in_digital_buttons')) {
                 return $field === 'enabled' ? true : ($field === 'open_new_tab' ? false : '');
             }
             $button = $this->resource->buttons()->where('key', $key)->first();
