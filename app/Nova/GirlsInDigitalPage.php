@@ -85,23 +85,33 @@ class GirlsInDigitalPage extends Resource
     }
 
     /** Build the 4 fields for one button (enabled, url, label, open_new_tab). */
-    private function buttonFields(string $key, string $title): array
+    private function buttonFields(string $key, string $title, string $dynamicAttribute): array
     {
+        $hideWhenSectionOff = function ($field, $request, $formData) use ($dynamicAttribute) {
+            if (! $formData->get($dynamicAttribute)) {
+                $field->exceptOnForms();
+            }
+        };
+
         return [
             Boolean::make($title . ' — Enabled', 'button_' . $key . '_enabled')
                 ->resolveUsing(fn () => $this->getButtonField($key, 'enabled'))
-                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'enabled', $r->get($ra))),
+                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'enabled', $r->get($ra)))
+                ->dependsOn($dynamicAttribute, $hideWhenSectionOff),
             Text::make($title . ' — Link (URL)', 'button_' . $key . '_url')
                 ->nullable()
                 ->resolveUsing(fn () => $this->getButtonField($key, 'url'))
-                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'url', $r->get($ra))),
+                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'url', $r->get($ra)))
+                ->dependsOn($dynamicAttribute, $hideWhenSectionOff),
             Text::make($title . ' — Text (label)', 'button_' . $key . '_label')
                 ->nullable()
                 ->resolveUsing(fn () => $this->getButtonField($key, 'label'))
-                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'label', $r->get($ra))),
+                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'label', $r->get($ra)))
+                ->dependsOn($dynamicAttribute, $hideWhenSectionOff),
             Boolean::make($title . ' — Open in new window', 'button_' . $key . '_open_new_tab')
                 ->resolveUsing(fn () => $this->getButtonField($key, 'open_new_tab'))
-                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'open_new_tab', $r->get($ra))),
+                ->fillUsing(fn ($r, $m, $a, $ra) => $this->fillButtonField($m, $key, 'open_new_tab', $r->get($ra)))
+                ->dependsOn($dynamicAttribute, $hideWhenSectionOff),
         ];
     }
 
@@ -119,75 +129,115 @@ class GirlsInDigitalPage extends Resource
         }
     }
 
+    /** Hide field from form when the given dynamic toggle is explicitly off. Show when on or when not yet set (initial load). */
+    private function hideWhenSectionOff(string $dynamicAttribute): \Closure
+    {
+        return function ($field, $request, $formData) use ($dynamicAttribute) {
+            $value = $formData->get($dynamicAttribute);
+            if ($value === false || $value === '0' || $value === 0) {
+                $field->exceptOnForms();
+            }
+        };
+    }
+
     private function buildFields(Request $request): array
     {
-        // — Hero: English only, then buttons
+        // — Hero: toggle first, then content/buttons only when "Use dynamic content" is on
         $heroFields = [
             Boolean::make('Use dynamic content for this section', 'hero_dynamic')
                 ->help('When on, hero uses the content below.'),
-            Trix::make('Hero intro', 'hero_intro')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('Hero video URL', 'hero_video_url')->nullable()->help('YouTube embed URL.'),
-            Text::make('Hero image', 'hero_image')->nullable(),
+            Trix::make('Hero intro', 'hero_intro')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('hero_dynamic', $this->hideWhenSectionOff('hero_dynamic')),
+            Text::make('Hero video URL', 'hero_video_url')->nullable()->help('YouTube embed URL.')
+                ->dependsOn('hero_dynamic', $this->hideWhenSectionOff('hero_dynamic')),
+            Text::make('Hero image', 'hero_image')->nullable()
+                ->dependsOn('hero_dynamic', $this->hideWhenSectionOff('hero_dynamic')),
         ];
         foreach (self::buttonKeysBySection()['hero'] as $key => $title) {
-            $heroFields = array_merge($heroFields, $this->buttonFields($key, $title));
+            $heroFields = array_merge($heroFields, $this->buttonFields($key, $title, 'hero_dynamic'));
         }
 
-        // — About: English only, then buttons
+        // — About: toggle first, then content/buttons only when dynamic is on
         $aboutFields = [
             Boolean::make('Use dynamic content for this section', 'about_dynamic'),
-            Text::make('About title', 'about_title')->nullable(),
-            Trix::make('About description 1', 'about_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Trix::make('About description 2', 'about_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('About image', 'about_image')->nullable(),
+            Text::make('About title', 'about_title')->nullable()
+                ->dependsOn('about_dynamic', $this->hideWhenSectionOff('about_dynamic')),
+            Trix::make('About description 1', 'about_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('about_dynamic', $this->hideWhenSectionOff('about_dynamic')),
+            Trix::make('About description 2', 'about_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('about_dynamic', $this->hideWhenSectionOff('about_dynamic')),
+            Text::make('About image', 'about_image')->nullable()
+                ->dependsOn('about_dynamic', $this->hideWhenSectionOff('about_dynamic')),
         ];
         foreach (self::buttonKeysBySection()['about'] as $key => $title) {
-            $aboutFields = array_merge($aboutFields, $this->buttonFields($key, $title));
+            $aboutFields = array_merge($aboutFields, $this->buttonFields($key, $title, 'about_dynamic'));
         }
 
-        // — Resources: English only, then buttons
+        // — Resources: toggle first, then content/buttons only when dynamic is on
         $resourcesFields = [
             Boolean::make('Use dynamic content for this section', 'resources_dynamic'),
-            Text::make('Resources title', 'resource_title')->nullable(),
-            Text::make('Young person / parent title', 'resource_person_title')->nullable(),
-            Trix::make('Young person / parent description 1', 'resource_person_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Trix::make('Young person / parent description 2', 'resource_person_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('Young person / parent image', 'resource_young_image')->nullable(),
-            Text::make('Educator title', 'resource_educator_title')->nullable(),
-            Trix::make('Educator description', 'resource_educator_description')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Text::make('Educator image', 'resource_educator_image')->nullable(),
+            Text::make('Resources title', 'resource_title')->nullable()
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
+            Text::make('Young person / parent title', 'resource_person_title')->nullable()
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
+            Trix::make('Young person / parent description 1', 'resource_person_description_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
+            Trix::make('Young person / parent description 2', 'resource_person_description_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
+            Text::make('Young person / parent image', 'resource_young_image')->nullable()
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
+            Text::make('Educator title', 'resource_educator_title')->nullable()
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
+            Trix::make('Educator description', 'resource_educator_description')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
+            Text::make('Educator image', 'resource_educator_image')->nullable()
+                ->dependsOn('resources_dynamic', $this->hideWhenSectionOff('resources_dynamic')),
         ];
         foreach (self::buttonKeysBySection()['resources'] as $key => $title) {
-            $resourcesFields = array_merge($resourcesFields, $this->buttonFields($key, $title));
+            $resourcesFields = array_merge($resourcesFields, $this->buttonFields($key, $title, 'resources_dynamic'));
         }
 
-        // — Why Matters: English only
+        // — Why Matters: toggle first, then content only when dynamic is on
         $mattersFields = [
             Boolean::make('Use dynamic content for this section', 'matters_dynamic'),
-            Text::make('Section title', 'matters_title')->nullable(),
-            Text::make('Graph 1 image', 'matters_graph1_image')->nullable(),
-            Text::make('Graph 1 link', 'matters_graph1_link')->nullable(),
-            Trix::make('Graph 1 caption', 'matters_graph1_caption')->nullable(),
-            Text::make('Graph 2 image', 'matters_graph2_image')->nullable(),
-            Text::make('Graph 2 link', 'matters_graph2_link')->nullable(),
-            Trix::make('Graph 2 caption', 'matters_graph2_caption')->nullable(),
-            Text::make('Graph 3 image', 'matters_graph3_image')->nullable(),
-            Text::make('Graph 3 link', 'matters_graph3_link')->nullable(),
-            Trix::make('Graph 3 caption', 'matters_graph3_caption')->nullable(),
-            Trix::make('Paragraph 1', 'matters_paragraph_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
-            Trix::make('Paragraph 2', 'matters_paragraph_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.'),
+            Text::make('Section title', 'matters_title')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Text::make('Graph 1 image', 'matters_graph1_image')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Text::make('Graph 1 link', 'matters_graph1_link')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Trix::make('Graph 1 caption', 'matters_graph1_caption')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Text::make('Graph 2 image', 'matters_graph2_image')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Text::make('Graph 2 link', 'matters_graph2_link')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Trix::make('Graph 2 caption', 'matters_graph2_caption')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Text::make('Graph 3 image', 'matters_graph3_image')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Text::make('Graph 3 link', 'matters_graph3_link')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Trix::make('Graph 3 caption', 'matters_graph3_caption')->nullable()
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Trix::make('Paragraph 1', 'matters_paragraph_1')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
+            Trix::make('Paragraph 2', 'matters_paragraph_2')->nullable()->help('Use the toolbar for bold, italic, links, lists.')
+                ->dependsOn('matters_dynamic', $this->hideWhenSectionOff('matters_dynamic')),
         ];
 
-        // — FAQ: English only, then FAQ items
+        // — FAQ: toggle first, then content only when dynamic is on
         $faqFields = [
             Boolean::make('Use dynamic content for this section', 'faq_dynamic'),
-            Text::make('FAQ section title', 'faq_title')->nullable(),
+            Text::make('FAQ section title', 'faq_title')->nullable()
+                ->dependsOn('faq_dynamic', $this->hideWhenSectionOff('faq_dynamic')),
         ];
         if (Schema::hasTable('girls_in_digital_faq_items')) {
             $faqFields[] = HasMany::make('FAQ items', 'faqItems', GirlsInDigitalFaqItem::class)
                 ->fillUsing(function () {
                     // Do not set faqItems on the parent; children are managed separately.
-                });
+                })
+                ->dependsOn('faq_dynamic', $this->hideWhenSectionOff('faq_dynamic'));
         } else {
             $faqFields[] = \Laravel\Nova\Fields\Heading::make('Run migration to enable FAQ items: php artisan migrate --path=database/migrations/2026_02_12_100000_create_girls_in_digital_faq_items_table.php');
         }
