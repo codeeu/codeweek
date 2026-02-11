@@ -268,7 +268,7 @@ class GirlsInDigitalPage extends Resource
 
             Panel::make('Section toggles', [
                 \Laravel\Nova\Fields\Heading::make('Turn on "Use dynamic content" in each section below to show DB content on the front.'),
-            ])->collapsable(),
+            ])->collapsable()->collapsedByDefault(),
 
             Panel::make('Hero', $heroFields)->collapsable()->collapsedByDefault(),
 
@@ -328,18 +328,22 @@ class GirlsInDigitalPage extends Resource
             $allKeys = self::allButtonKeys();
             $positionMap = array_flip($allKeys);
             foreach ($updates as $key => $fields) {
-                $existing = GirlsInDigitalButton::where('page_id', $model->id)->where('key', $key)->first();
-                $payload = [
-                    'label' => array_key_exists('label', $fields) ? (string) $fields['label'] : ($existing?->label ?? ''),
-                    'url' => array_key_exists('url', $fields) ? (string) $fields['url'] : ($existing?->url ?? '#'),
-                    'open_new_tab' => array_key_exists('open_new_tab', $fields) ? (bool) $fields['open_new_tab'] : ($existing?->open_new_tab ?? false),
-                    'enabled' => array_key_exists('enabled', $fields) ? (bool) $fields['enabled'] : ($existing?->enabled ?? true),
-                    'position' => $positionMap[$key] ?? $existing?->position ?? 0,
-                ];
-                GirlsInDigitalButton::updateOrCreate(
-                    ['page_id' => $model->id, 'key' => $key],
-                    $payload
-                );
+                try {
+                    $existing = GirlsInDigitalButton::where('page_id', $model->id)->where('key', $key)->first();
+                    $payload = [
+                        'label' => array_key_exists('label', $fields) ? (string) $fields['label'] : ($existing?->label ?? ''),
+                        'url' => array_key_exists('url', $fields) ? (string) $fields['url'] : ($existing?->url ?? '#'),
+                        'open_new_tab' => array_key_exists('open_new_tab', $fields) ? (bool) $fields['open_new_tab'] : ($existing?->open_new_tab ?? false),
+                        'enabled' => array_key_exists('enabled', $fields) ? (bool) $fields['enabled'] : ($existing?->enabled ?? true),
+                        'position' => $positionMap[$key] ?? $existing?->position ?? 0,
+                    ];
+                    GirlsInDigitalButton::updateOrCreate(
+                        ['page_id' => $model->id, 'key' => $key],
+                        $payload
+                    );
+                } catch (\Throwable $e) {
+                    report($e);
+                }
             }
             unset($model->_button_updates);
         } catch (\Throwable $e) {
