@@ -75,6 +75,7 @@ return [
         'web',
         HandleInertiaRequests::class,
         DispatchServingNovaEvent::class,
+        \App\Http\Middleware\EnsureNovaMainDashboard::class,
         BootTools::class,
     ],
 
