@@ -63,6 +63,20 @@ class GirlsInDigitalPage extends Model
         'locale_overrides' => 'array',
     ];
 
+    /**
+     * Prevent relationship / virtual attributes from being persisted (e.g. from Nova form).
+     */
+    public function setAttribute($key, $value)
+    {
+        if (in_array($key, ['faqItems'], true)) {
+            return $this;
+        }
+        if (str_starts_with($key, 'button_') || str_starts_with($key, 'locale_')) {
+            return $this;
+        }
+        return parent::setAttribute($key, $value);
+    }
+
     public function buttons()
     {
         return $this->hasMany(GirlsInDigitalButton::class, 'page_id')->orderBy('position');
