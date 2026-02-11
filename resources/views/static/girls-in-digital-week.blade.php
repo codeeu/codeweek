@@ -9,6 +9,15 @@
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
 
+@php
+    $btn = function($key) use ($buttons) {
+        if (!isset($buttons) || $buttons->isEmpty()) { return null; }
+        return $buttons->keyBy('key')->get($key);
+    };
+    $content = function($key) use ($page) {
+        return $page ? $page->contentForLocale($key) : (__('girls-in-digital.' . $key) ?: '');
+    };
+@endphp
 @section('content')
     <section id="codeweek-digital-girls" class="font-['Blinker'] overflow-hidden">
         <section class="flex overflow-hidden relative">
@@ -63,15 +72,28 @@
                 </div>
                 <div class="flex-1">
                     <h2 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        About Girls in Digital
+                        {{ $content('about_girls_title') ?: 'About Girls in Digital' }}
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                       Get ready to celebrate Girls in Digital Week from 23–27 March 2026, as we put a spotlight on inclusion, innovation, and the limitless opportunities digital skills offer to all!
+                       {{ $content('about_girls_description_1') ?: 'Get ready to celebrate Girls in Digital Week from 23–27 March 2026, as we put a spotlight on inclusion, innovation, and the limitless opportunities digital skills offer to all!' }}
                     </p>
                     <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6">
-                        Girls in Digital encourages communities to get involved in meaningful ways. Through <strong>Girls Code It Better (GCIB) Sprints</strong>, educators and organisations can offer hands-on learning experiences where girls collaborate, build confidence, and solve real-world challenges using digital tools. The <strong>Female Role Model Database</strong> connects young people with women and gender-diverse professionals in STE(A)M, sharing stories and guidance that support their digital journeys. <strong>Together, these initiatives help turn curiosity into confidence and ideas into possibility.</strong>
+                        {!! $content('about_girls_description_2') ?: 'Girls in Digital encourages communities to get involved in meaningful ways. Through <strong>Girls Code It Better (GCIB) Sprints</strong>, educators and organisations can offer hands-on learning experiences where girls collaborate, build confidence, and solve real-world challenges using digital tools. The <strong>Female Role Model Database</strong> connects young people with women and gender-diverse professionals in STE(A)M, sharing stories and guidance that support their digital journeys. <strong>Together, these initiatives help turn curiosity into confidence and ideas into possibility.</strong>' !!}
                     </p>
                     <div class="flex flex-col gap-4 mb-4 xl:flex-row xl:mb-6">
+                        @if($b = $btn('gcib_sprint_hero'))
+                        <a
+                            class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                            href="{{ $b->url }}"
+                            @if($b->open_new_tab) target="_blank" rel="noopener" @endif
+                        >
+                            <span>{{ $b->label }}</span>
+                            <div class="flex overflow-hidden gap-2 w-4">
+                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            </div>
+                        </a>
+                        @else
                         <a
                             class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                             href="https://codeweek.eu/blog/girls-in-digital-week-2026/"
@@ -82,9 +104,19 @@
                                 <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                             </div>
                         </a>
+                        @endif
                     </div>
                     <div class="flex flex-col gap-4 2xl:flex-row">
                         <div class="flex flex-wrap gap-4">
+                            @if($b = $btn('female_role_models'))
+                            <a
+                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
+                                href="{{ $b->url }}"
+                                @if($b->open_new_tab) target="_blank" rel="noopener" @endif
+                            >
+                                <span>{{ $b->label }}</span>
+                            </a>
+                            @else
                             <a
                                 class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
                                 href="https://codeweek.ecwt.eu/"
@@ -92,15 +124,26 @@
                             >
                                 <span>Female Role Models Database</span>
                             </a>
+                            @endif
                         </div>
                         <div class="flex flex-wrap gap-4">
+                            @if($b = $btn('open_call_challenges'))
+                            <a
+                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
+                                href="{{ $b->url }}"
+                                @if($b->open_new_tab) target="_blank" rel="noopener" @endif
+                            >
+                                <span>{{ $b->label }}</span>
+                            </a>
+                            @else
                             <a
                                 class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
                                 href="/docs/girls-in-digital/open-call-for-new-code-week-challenges_v2.pdf"
                                 target="_blank"
                             >
                                 <span>Open Call for GiD Challenges</span>
-                            </a> 
+                            </a>
+                            @endif
                         </div> 
                     </div>
                 </div>
@@ -121,70 +164,64 @@
             <div class="relative pt-20 pb-12 md:pt-48 md:pb-28">
                 <div class="codeweek-container-lg">
                     <h2 class="text-white md:text-center text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
-                        Resources
+                        {{ $content('resource_title') ?: 'Resources' }}
                     </h2>
                     <div class="flex flex-col gap-6 justify-between md:flex-row md:gap-20">
                         <div class="px-6 py-8 w-full bg-white rounded-2xl md:p-12">
                             <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                                Are you a young person or parent?
+                                {{ $content('resource_person_title') ?: 'Are you a young person or parent?' }}
                             </h3>
                             <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
-                                You are a <span class="font-semibold">young person</span> curious about technology, coding, or digital creativity; search for activities near you or connect with a role model through the Female Role Model Database.
-                                You are a <span class="font-semibold">parent</span> seeking safe, inclusive digital activities; find opportunities nearby and explore the Female Role Model Database for inspiring role models.
-
+                                {!! $content('resource_person_description_1') ?: 'You are a <span class="font-semibold">young person</span> curious about technology, coding, or digital creativity; search for activities near you or connect with a role model through the Female Role Model Database. You are a <span class="font-semibold">parent</span> seeking safe, inclusive digital activities; find opportunities nearby and explore the Female Role Model Database for inspiring role models.' !!}
                             </p>
                             <div class="flex flex-wrap gap-4">
-                                <a
-                                    class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
-                                    href="/events"
-                                >
-                                    <span>Search an activity</span>
-                                </a>
-                                <a
-                                    class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
-                                    href="https://codeweek.ecwt.eu/role-models/"
-                                    target="_blank"
-                                >
-                                    <span>Meet a Role Model</span>
-                                </a>
+                                @if($b = $btn('search_activity'))
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
+                                @else
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="/events"><span>Search an activity</span></a>
+                                @endif
+                                @if($b = $btn('meet_role_model'))
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
+                                @else
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="https://codeweek.ecwt.eu/role-models/" target="_blank"><span>Meet a Role Model</span></a>
+                                @endif
                             </div>
                         </div>
                         <div class="px-6 py-8 w-full bg-white rounded-2xl md:p-12">
                             <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                                Are you an educator?
+                                {{ $content('resource_educator_title') ?: 'Are you an educator?' }}
                             </h3>
                             <p class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10">
-                              You are an educator looking to organise an activity to empower youth with digital skills in a safe and inclusive environment, where all feel welcomed to explore the endless opportunities that digital has to offer. Check our resources below for guidance and support in bringing your activity to life.
+                                {{ $content('resource_educator_description') ?: 'You are an educator looking to organise an activity to empower youth with digital skills in a safe and inclusive environment, where all feel welcomed to explore the endless opportunities that digital has to offer. Check our resources below for guidance and support in bringing your activity to life.' }}
                             </p>
                             <div class="flex flex-wrap gap-4">
-                                <a
-                                    class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg"
-                                    href="https://codeweek-resources.s3.eu-west-1.amazonaws.com/GCIB-Sprint-materials.zip"
-                                >
-                                    <span>Organise a GCIB Sprint</span>
+                                @if($b = $btn('organise_gcib_sprint'))
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
+                                @else
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="https://codeweek-resources.s3.eu-west-1.amazonaws.com/GCIB-Sprint-materials.zip"><span>Organise a GCIB Sprint</span></a>
+                                @endif
+                                @if($b = $btn('activity_guideline'))
+                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif>
+                                    <span>{{ $b->label }}</span>
+                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
                                 </a>
-                              <a
-                                    class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                    target="_blank"
-                                    href="/docs/girls-in-digital/girls-in-digital-activity-guidelines.pdf"
-                                >
-                                    <span>Girls in DIgital Activity Guideline</span>
-                                    <div class="flex overflow-hidden gap-2 w-4">
-                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                    </div>
+                                @else
+                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank" href="/docs/girls-in-digital/girls-in-digital-activity-guidelines.pdf">
+                                    <span>Girls in Digital Activity Guideline</span>
+                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
                                 </a>
-                                <a
-                                    class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                    target="_blank"
-                                    href="/docs/girls-in-digital/girls-in-digital-media-kit.pdf"
-                                >
+                                @endif
+                                @if($b = $btn('social_media_kit'))
+                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif>
+                                    <span>{{ $b->label }}</span>
+                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
+                                </a>
+                                @else
+                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank" href="/docs/girls-in-digital/girls-in-digital-media-kit.pdf">
                                     <span>Social Media Kit</span>
-                                    <div class="flex overflow-hidden gap-2 w-4">
-                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                    </div>
-                                </a> 
+                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
+                                </a>
+                                @endif
                             </div>
                         </div>
                     </div>
