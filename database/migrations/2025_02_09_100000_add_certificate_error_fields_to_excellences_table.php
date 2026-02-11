@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('excellences', function (Blueprint $table) {
-            $table->text('certificate_generation_error')->nullable()->after('certificate_url');
-            $table->text('certificate_sent_error')->nullable()->after('notified_at');
+            if (! Schema::hasColumn('excellences', 'certificate_generation_error')) {
+                $table->text('certificate_generation_error')->nullable()->after('certificate_url');
+            }
+            if (! Schema::hasColumn('excellences', 'certificate_sent_error')) {
+                $table->text('certificate_sent_error')->nullable()->after('notified_at');
+            }
         });
     }
 
@@ -23,7 +27,16 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('excellences', function (Blueprint $table) {
-            $table->dropColumn(['certificate_generation_error', 'certificate_sent_error']);
+            $cols = [];
+            if (Schema::hasColumn('excellences', 'certificate_generation_error')) {
+                $cols[] = 'certificate_generation_error';
+            }
+            if (Schema::hasColumn('excellences', 'certificate_sent_error')) {
+                $cols[] = 'certificate_sent_error';
+            }
+            if ($cols !== []) {
+                $table->dropColumn($cols);
+            }
         });
     }
 };
