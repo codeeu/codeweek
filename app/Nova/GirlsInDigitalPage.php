@@ -345,16 +345,16 @@ class GirlsInDigitalPage extends Resource
     private function fillButtonField(\App\GirlsInDigitalPage $model, string $key, string $field, $value): void
     {
         try {
-            if (! isset($model->_button_updates)) {
-                $model->_button_updates = [];
+            if (! isset($model->nonPersistedButtonUpdates)) {
+                $model->nonPersistedButtonUpdates = [];
             }
-            if (! isset($model->_button_updates[$key])) {
-                $model->_button_updates[$key] = [];
+            if (! isset($model->nonPersistedButtonUpdates[$key])) {
+                $model->nonPersistedButtonUpdates[$key] = [];
             }
             if ($field === 'enabled' || $field === 'open_new_tab') {
                 $value = (bool) $value;
             }
-            $model->_button_updates[$key][$field] = $value;
+            $model->nonPersistedButtonUpdates[$key][$field] = $value;
         } catch (\Throwable $e) {
             \Illuminate\Support\Facades\Log::error('GirlsInDigital button field fill failed: ' . $key . '.' . $field, [
                 'exception' => $e->getMessage(),
