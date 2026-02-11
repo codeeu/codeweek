@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer;
@@ -30,14 +31,25 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
-        //        if ($this->shouldReport($exception)) {
-        //            $this->sendEmail($exception); // sends an email
-        //        }
+        $request = request();
+        if ($request && $this->isNovaRequest($request)) {
+            Log::error('Nova request failed: ' . $exception->getMessage(), [
+                'path' => $request->path(),
+                'method' => $request->method(),
+                'exception' => $exception->getMessage(),
+                'file' => $exception->getFile(),
+                'line' => $exception->getLine(),
+            ]);
+        }
         parent::report($exception);
     }
 
     /**
      * Render an exception into an HTTP response.
+     *
+     * When NOVA_SHOW_ERRORS=true (e.g. on live for debugging), Nova API errors
+     * return JSON with the real exception message. Check the failed request in
+     * DevTools → Network → Response to see "error", "file", "line".
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Symfony\Component\HttpFoundation\Response
@@ -46,7 +58,22 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if ($request && $this->isNovaRequest($request) && env('NOVA_SHOW_ERRORS', false)) {
+            return response()->json([
+                'message' => 'There was a problem submitting the form.',
+                'error' => $exception->getMessage(),
+                'file' => $exception->getFile(),
+                'line' => $exception->getLine(),
+            ], 500);
+        }
+
         return parent::render($request, $exception);
+    }
+
+    private function isNovaRequest(Request $request): bool
+    {
+        $path = $request->path();
+        return str_starts_with($path, 'nova/') || str_starts_with($path, 'nova-api/');
     }
 
     /**
