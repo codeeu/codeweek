@@ -177,9 +177,16 @@ class GirlsInDigitalPage extends Model
      */
     public function faqItemsForLocale(?string $locale = null): array
     {
-        return $this->faqItems->map(fn (GirlsInDigitalFaqItem $item) => [
-            'question' => $item->questionForLocale($locale),
-            'answer' => $item->answerForLocale($locale),
-        ])->all();
+        try {
+            if (! \Illuminate\Support\Facades\Schema::hasTable('girls_in_digital_faq_items')) {
+                return [];
+            }
+            return $this->faqItems->map(fn (GirlsInDigitalFaqItem $item) => [
+                'question' => $item->questionForLocale($locale),
+                'answer' => $item->answerForLocale($locale),
+            ])->all();
+        } catch (\Throwable $e) {
+            return [];
+        }
     }
 }
