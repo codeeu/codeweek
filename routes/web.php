@@ -235,6 +235,8 @@ Route::get('/get-involved', [StaticPageController::class, 'static'])
      ->name('get-involved');
 Route::get('/contact-us', [StaticPageController::class, 'static'])
      ->name('contact-us');
+Route::get('/faqs', [StaticPageController::class, 'static'])
+     ->name('faqs');
 //Static training pages
 Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
 Route::get(

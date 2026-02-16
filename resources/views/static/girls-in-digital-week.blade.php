@@ -41,15 +41,24 @@
                                 src="/images/digital-girls/digital_girls_logo.svg"
                             />
                             <div class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
-                                {!! $content('landing_header') !!}
+                                @if($heroDynamic)
+                                    {!! $content('landing_header') !!}
+                                @else
+                                    {!! "We're excited to announce Girls in Digital Week 2026! " . __('girls-in-digital.landing_header') !!}
+                                @endif
                             </div>
                         </div>
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
                             @if($heroDynamic && $page && $page->hero_video_url)
-                            @include('layout.video-player', [
-                                'id' => 'girls-digital-hero',
-                                'src' => $page->hero_video_url,
-                            ])
+                                @include('layout.video-player', [
+                                    'id' => 'girls-digital-hero',
+                                    'src' => $page->hero_video_url,
+                                ])
+                            @elseif(!$heroDynamic)
+                                @include('layout.video-player', [
+                                    'id' => 'girls-digital-hero',
+                                    'src' => 'https://www.youtube.com/embed/XfYqEYLbPWY?si=7JQaVoVM6bJLuuoT',
+                                ])
                             @endif
                         </div>
                         <img
@@ -73,29 +82,39 @@
                 <div class="flex relative z-10 flex-col-reverse gap-12 items-center py-20 pb-32 codeweek-container-lg md:flex-row md:pb-48">
                 <div class="flex-1">
                     @if($aboutDynamic && $page && $page->about_image)
-                    <div class="inline-block relative observer-element">
-                        <img class="relative z-10 w-full max-w-xl" loading="lazy" src="{{ $page->about_image }}" alt="" />
-                        <img
-                            class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
-                            loading="lazy"
-                            src="/images/shape.png"
-                            style="transform: translate(-16px, -24px)"
-                        />
-                    </div>
+                        <div class="inline-block relative observer-element">
+                            <img class="relative z-10 w-full max-w-xl" loading="lazy" src="{{ $page->about_image }}" alt="" />
+                            <img
+                                class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
+                                loading="lazy"
+                                src="/images/shape.png"
+                                style="transform: translate(-16px, -24px)"
+                            />
+                        </div>
+                    @else
+                        <div class="inline-block relative observer-element">
+                            <img class="relative z-10 w-full max-w-xl" loading="lazy" src="/images/digital-girls/about-girls.png" alt="" />
+                            <img
+                                class="animation-element move-background duration-[1.5s] absolute top-0 left-0 w-full max-w-xl"
+                                loading="lazy"
+                                src="/images/shape.png"
+                                style="transform: translate(-16px, -24px)"
+                            />
+                        </div>
                     @endif
                 </div>
                 <div class="flex-1">
                     <h2 class="text-[#1C4DA1] text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        {{ $content('about_girls_title') }}
+                        @if($aboutDynamic){{ $content('about_girls_title') }}@else{{ __('girls-in-digital.about_girls_title') }}@endif
                     </h2>
                     <div class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
-                       {!! $content('about_girls_description_1') !!}
+                       @if($aboutDynamic){!! $content('about_girls_description_1') !!}@else{!! __('girls-in-digital.about_girls_description_1') !!}@endif
                     </div>
                     <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
-                        {!! $content('about_girls_description_2') !!}
+                        @if($aboutDynamic){!! $content('about_girls_description_2') !!}@else{!! __('girls-in-digital.about_girls_description_2') !!}@endif
                     </div>
                     <div class="flex flex-col gap-4 mb-4 xl:flex-row xl:mb-6">
-                        @if($b = $btn('gcib_sprint_hero'))
+                        @if($heroDynamic && ($b = $btn('gcib_sprint_hero')))
                         <a
                             class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
                             href="{{ $b->url }}"
@@ -107,11 +126,22 @@
                                 <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
                             </div>
                         </a>
+                        @elseif(!$heroDynamic)
+                        <a
+                            class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                            href="https://codeweek.eu/blog/girls-in-digital-week-2026/"
+                        >
+                            <span>Girls Code It Better Sprint</span>
+                            <div class="flex overflow-hidden gap-2 w-4">
+                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                            </div>
+                        </a>
                         @endif
                     </div>
                     <div class="flex flex-col gap-4 2xl:flex-row">
                         <div class="flex flex-wrap gap-4">
-                            @if($b = $btn('female_role_models'))
+                            @if($aboutDynamic && ($b = $btn('female_role_models')))
                             <a
                                 class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
                                 href="{{ $b->url }}"
@@ -119,16 +149,32 @@
                             >
                                 <span>{{ $b->label }}</span>
                             </a>
+                            @elseif(!$aboutDynamic)
+                            <a
+                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
+                                href="https://codeweek.ecwt.eu/"
+                                target="_blank"
+                            >
+                                <span>Female Role Models Database</span>
+                            </a>
                             @endif
                         </div>
                         <div class="flex flex-wrap gap-4">
-                            @if($b = $btn('open_call_challenges'))
+                            @if($aboutDynamic && ($b = $btn('open_call_challenges')))
                             <a
                                 class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
                                 href="{{ $b->url }}"
                                 @if($b->open_new_tab) target="_blank" rel="noopener" @endif
                             >
                                 <span>{{ $b->label }}</span>
+                            </a>
+                            @elseif(!$aboutDynamic)
+                            <a
+                                class="w-full xl:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-3 px-8 font-semibold text-lg"
+                                href="/docs/girls-in-digital/open-call-for-new-code-week-challenges_v2.pdf"
+                                target="_blank"
+                            >
+                                <span>Open Call for GiD Challenges</span>
                             </a>
                             @endif
                         </div> 
@@ -151,45 +197,61 @@
             <div class="relative pt-20 pb-12 md:pt-48 md:pb-28">
                 <div class="codeweek-container-lg">
                     <h2 class="text-white md:text-center text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
-                        {{ $content('resource_title') }}
+                        @if($resourcesDynamic){{ $content('resource_title') }}@else{{ __('girls-in-digital.resource_title') }}@endif
                     </h2>
                     <div class="flex flex-col gap-6 justify-between md:flex-row md:gap-20">
                         <div class="px-6 py-8 w-full bg-white rounded-2xl md:p-12">
                             <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                                {{ $content('resource_person_title') }}
+                                @if($resourcesDynamic){{ $content('resource_person_title') }}@else{{ __('girls-in-digital.resource_person_title') }}@endif
                             </h3>
                             <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
-                                {!! $content('resource_person_description_1') !!}
+                                @if($resourcesDynamic){!! $content('resource_person_description_1') !!}@else{!! __('girls-in-digital.resource_person_description_1') !!}@endif
                             </div>
                             <div class="flex flex-wrap gap-4">
-                                @if($b = $btn('search_activity'))
+                                @if($resourcesDynamic && ($b = $btn('search_activity')))
                                 <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
+                                @elseif(!$resourcesDynamic)
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="/events"><span>Search an activity</span></a>
                                 @endif
-                                @if($b = $btn('meet_role_model'))
+                                @if($resourcesDynamic && ($b = $btn('meet_role_model')))
                                 <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
+                                @elseif(!$resourcesDynamic)
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="https://codeweek.ecwt.eu/role-models/" target="_blank"><span>Meet a Role Model</span></a>
                                 @endif
                             </div>
                         </div>
                         <div class="px-6 py-8 w-full bg-white rounded-2xl md:p-12">
                             <h3 class="text-[#1C4DA1] text-2xl md:text-3xl font-medium font-['Montserrat'] mb-6">
-                                {{ $content('resource_educator_title') }}
+                                @if($resourcesDynamic){{ $content('resource_educator_title') }}@else{{ __('girls-in-digital.resource_educator_title') }}@endif
                             </h3>
                             <div class="text-[#20262C] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
-                                {!! $content('resource_educator_description') !!}
+                                @if($resourcesDynamic){!! $content('resource_educator_description') !!}@else{!! __('girls-in-digital.resource_educator_description') !!}@endif
                             </div>
                             <div class="flex flex-wrap gap-4">
-                                @if($b = $btn('organise_gcib_sprint'))
+                                @if($resourcesDynamic && ($b = $btn('organise_gcib_sprint')))
                                 <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif><span>{{ $b->label }}</span></a>
+                                @elseif(!$resourcesDynamic)
+                                <a class="w-full md:w-auto flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-lg" href="https://codeweek-resources.s3.eu-west-1.amazonaws.com/GCIB-Sprint-materials.zip"><span>Organise a GCIB Sprint</span></a>
                                 @endif
-                                @if($b = $btn('activity_guideline'))
+                                @if($resourcesDynamic && ($b = $btn('activity_guideline')))
                                 <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif>
                                     <span>{{ $b->label }}</span>
                                     <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
                                 </a>
+                                @elseif(!$resourcesDynamic)
+                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank" href="/docs/girls-in-digital/girls-in-digital-activity-guidelines.pdf">
+                                    <span>Girls in Digital Activity Guideline</span>
+                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
+                                </a>
                                 @endif
-                                @if($b = $btn('social_media_kit'))
+                                @if($resourcesDynamic && ($b = $btn('social_media_kit')))
                                 <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" href="{{ $b->url }}" @if($b->open_new_tab) target="_blank" rel="noopener" @endif>
                                     <span>{{ $b->label }}</span>
+                                    <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
+                                </a>
+                                @elseif(!$resourcesDynamic)
+                                <a class="w-full md:w-auto flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-2.5 px-6 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group" target="_blank" href="/docs/girls-in-digital/girls-in-digital-media-kit.pdf">
+                                    <span>Social Media Kit</span>
                                     <div class="flex overflow-hidden gap-2 w-4"><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /><img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" /></div>
                                 </a>
                                 @endif
@@ -203,48 +265,56 @@
         <section class="overflow-hidden relative">
             <div class="relative py-20 codeweek-container-lg">
                 <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-16">
-                    {{ $mattersDynamic && $page ? $page->matters_title : '' }}
+                    @if($mattersDynamic && $page){{ $page->matters_title }}@else{{ 'Why Girls in Digital Matters' }}@endif
                 </h2>
                 <div class="flex flex-col gap-12 justify-between lg:flex-row">
                     <div class="w-full">
                         @php
-                            $g1img = ($mattersDynamic && $page && $page->matters_graph1_image) ? $page->matters_graph1_image : '';
-                            $g1link = ($mattersDynamic && $page && $page->matters_graph1_link) ? $page->matters_graph1_link : '#';
+                            $g1img = ($mattersDynamic && $page && $page->matters_graph1_image) ? $page->matters_graph1_image : (!$mattersDynamic ? '/images/digital-girls/fig-1.png' : '');
+                            $g1link = ($mattersDynamic && $page && $page->matters_graph1_link) ? $page->matters_graph1_link : (!$mattersDynamic ? 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Young_people_-_digital_world' : '#');
                         @endphp
                         @if($g1img)
                         <a class="block mb-12 p-6 lg:py-10 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g1link }}" target="_blank" rel="noopener">
-                            <img src="{{ $g1img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph1_caption') : '' }}" />
+                            <img src="{{ $g1img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph1_caption') : 'Young people – digital world. Eurostat 2023' }}" />
                         </a>
                         @endif
                         @php
-                            $g2img = ($mattersDynamic && $page && $page->matters_graph2_image) ? $page->matters_graph2_image : '';
-                            $g2link = ($mattersDynamic && $page && $page->matters_graph2_link) ? $page->matters_graph2_link : '#';
+                            $g2img = ($mattersDynamic && $page && $page->matters_graph2_image) ? $page->matters_graph2_image : (!$mattersDynamic ? '/images/digital-girls/fig-2.png' : '');
+                            $g2link = ($mattersDynamic && $page && $page->matters_graph2_link) ? $page->matters_graph2_link : (!$mattersDynamic ? 'https://ec.europa.eu/eurostat/statistics-explained/index.php?title=ICT_specialists_in_employment#Explore_further' : '#');
                         @endphp
                         @if($g2img)
                         <a class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g2link }}" target="_blank" rel="noopener">
-                            <img src="{{ $g2img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph2_caption') : '' }}" />
+                            <img src="{{ $g2img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph2_caption') : 'ICT specialists in employment. Eurostat 2023' }}" />
                         </a>
                         @endif
                         @if($mattersDynamic && $page && $page->matters_paragraph_1)
                         <div class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
                             {!! $page->matters_paragraph_1 !!}
                         </div>
+                        @elseif(!$mattersDynamic)
+                        <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10">
+                            {!! __('girls-in-digital.relevant_statistics_graph_1') !!}
+                        </p>
                         @endif
                     </div>
                     <div class="w-full">
                         @php
-                            $g3img = ($mattersDynamic && $page && $page->matters_graph3_image) ? $page->matters_graph3_image : '';
-                            $g3link = ($mattersDynamic && $page && $page->matters_graph3_link) ? $page->matters_graph3_link : '#';
+                            $g3img = ($mattersDynamic && $page && $page->matters_graph3_image) ? $page->matters_graph3_image : (!$mattersDynamic ? '/images/digital-girls/fig-3.png' : '');
+                            $g3link = ($mattersDynamic && $page && $page->matters_graph3_link) ? $page->matters_graph3_link : (!$mattersDynamic ? 'https://unesdoc.unesco.org/ark:/48223/pf0000253479' : '#');
                         @endphp
                         @if($g3img)
                         <a class="block mb-12 p-6 rounded-lg border-2 border-[#A4B8D9]" href="{{ $g3link }}" target="_blank" rel="noopener">
-                            <img src="{{ $g3img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph3_caption') : '' }}" />
+                            <img src="{{ $g3img }}" alt="{{ ($mattersDynamic && $page) ? $page->contentForLocale('matters_graph3_caption') : 'Cracking the code: Girls and women education in STEM. UNESCO, 2017.' }}" />
                         </a>
                         @endif
                         @if($mattersDynamic && $page && $page->matters_paragraph_2)
                         <div class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10 [&_p]:p-0 [&_p]:mb-0 [&_div]:p-0">
                             {!! $page->matters_paragraph_2 !!}
                         </div>
+                        @elseif(!$mattersDynamic)
+                        <p class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-10">
+                            {!! __('girls-in-digital.relevant_statistics_graph_2') !!}
+                        </p>
                         @endif
                     </div>
                 </div>
@@ -258,7 +328,7 @@
             <div class="flex relative justify-center pt-28 pb-28 md:pt-48 codeweek-container-lg">
                 <div class="w-full max-w-[708px]">
                     <h2 class="text-dark-blue text-2xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
-                        {{ ($faqDynamic && $page && $page->faq_title) ? $page->faq_title : '' }}
+                        @if($faqDynamic && $page && $page->faq_title){{ $page->faq_title }}@else{{ __('girls-in-digital.faq') }}@endif
                     </h2>
 
                     <div class="accordion">
