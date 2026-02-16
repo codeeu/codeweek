@@ -80,7 +80,7 @@
                             </div>
                             <div class="overflow-hidden max-h-0 transition-all duration-300">
                                 <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
-                                    Use the guide on this page to join EU Code Week by organising an activity and pinning it on the map. It explains what Code Week is, what you need (a group, a venue, devices or an unplugged option), and how to run a hands-on session using free resources. You'll also find promotion tips, toolkits, and ambassador support if needed.
+                                    Use the guide on <a class="cookweek-link hover-underline" href="https://codeweek.eu/guide" target="_blank" rel="noopener">this page</a> to join EU Code Week by organising an activity and pinning it on the map. It explains what Code Week is, what you need (a group, a venue, devices or an unplugged option), and how to run a hands-on session using free resources. You'll also find promotion tips, toolkits, and ambassador support if needed.
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="overflow-hidden max-h-0 transition-all duration-300">
                                 <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
-                                    Use the step-by-step guide on this page. It walks you through everything you need to submit an activity, including details to include, adding participants, promotion, adding your event to the map, and more.
+                                    Use the step-by-step guide on <a class="cookweek-link hover-underline" href="https://codeweek.eu/guide" target="_blank" rel="noopener">this page</a>. It walks you through everything you need to submit an activity, including details to include, adding participants, promotion, adding your event to the map, and more.
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="overflow-hidden max-h-0 transition-all duration-300">
                                 <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
-                                    Code Week uses ArcGIS, an open-source mapping system. Sometimes a school name won't appear because the ArcGIS database isn't fully up to date or doesn't match the exact wording of your school's name. If that happens, choose the street name and number, or the closest matching address instead.
+                                    Code Week uses <a class="cookweek-link hover-underline" href="https://geocode.arcgis.com/arcgis/" target="_blank" rel="noopener">ArcGIS</a>, an open-source mapping system. Sometimes a school name won't appear because the ArcGIS database isn't fully up to date or doesn't match the exact wording of your school's name. If that happens, choose the street name and number, or the closest matching address instead.
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,7 @@
                                 <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
                                     You don't need to submit a separate report anymore. Since June 2025, the activity submission form already includes the reporting metrics.
                                     <br><br>
-                                    If you need to correct or update the information you originally submitted, go to this page while logged into your account. It's the page that lists your activities that have started or finished, and it lets you adjust the numbers for statistical purposes and claim your Code Week participation certificate (you'll get one certificate per activity).
+                                    If you need to correct or update the information you originally submitted, go to <a class="cookweek-link hover-underline" href="https://codeweek.eu/events_to_report" target="_blank" rel="noopener">this page</a> while logged into your account. It's the page that lists your activities that have started or finished, and it lets you adjust the numbers for statistical purposes and claim your Code Week participation certificate (you'll get one certificate per activity).
                                 </div>
                             </div>
                         </div>
@@ -210,7 +210,7 @@
                             </div>
                             <div class="overflow-hidden max-h-0 transition-all duration-300">
                                 <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
-                                    Go to this link for a page for a form to generate certificates of participation. You'll be asked to enter your participants' names. You'll then receive the individual certificates of participation for each name you entered.
+                                    Go to <a class="cookweek-link hover-underline" href="https://codeweek.eu/participation" target="_blank" rel="noopener">this page</a> for a form to generate certificates of participation. You'll be asked to enter your participants' names. You'll then receive the individual certificates of participation for each name you entered.
                                 </div>
                             </div>
                         </div>
@@ -224,7 +224,7 @@
                             </div>
                             <div class="overflow-hidden max-h-0 transition-all duration-300">
                                 <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
-                                    Use this link to a page that lists your certificates to download. Make sure you're logged in to your Code Week account, or you won't see your generated certificates.
+                                    Use <a class="cookweek-link hover-underline" href="https://codeweek.eu/participation" target="_blank" rel="noopener">this link</a> to open the page that lists your certificates to download. Make sure you're logged in to your Code Week account, or you won't see your generated certificates.
                                 </div>
                             </div>
                         </div>
@@ -280,9 +280,9 @@
                             </div>
                             <div class="overflow-hidden max-h-0 transition-all duration-300">
                                 <div class="pb-4 pt-2 text-[#333E48] text-xl font-normal">
-                                    If you qualify for a super organiser certificate, you'll receive an email when it's generated. You can download your certificate directly from that email, or via this link.
+                                    If you qualify for a super organiser certificate, you'll receive an email when it's generated. You can download your certificate directly from that email, or via <a class="cookweek-link hover-underline" href="/certificates">this link</a>.
                                     <br><br>
-                                    If you're looking for certificates of participation (for your class or group), you'll need to generate them yourself using this link. Add each participant's name separated by commas, submit the form, and the individual certificates will be created. Once generated, you can download them from this link. Just make sure you're logged in to your account!
+                                    If you're looking for certificates of participation (for your class or group), you'll need to generate them yourself using <a class="cookweek-link hover-underline" href="https://codeweek.eu/participation" target="_blank" rel="noopener">this link</a>. Add each participant's name separated by commas, submit the form, and the individual certificates will be created. Once generated, you can download them from <a class="cookweek-link hover-underline" href="https://codeweek.eu/participation" target="_blank" rel="noopener">this link</a>. Just make sure you're logged in to your account!
                                 </div>
                             </div>
                         </div>
