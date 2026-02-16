@@ -19,7 +19,7 @@
 
        {{--  <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2025/communications-toolkit-2025-{{strtoupper($lang)}}.zip">@lang('base.languages.en')</a>--}}
 
-        <a class="text-center no-underline w-full lg:w-fit bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2025/communications-toolkit-2025.zip">
+        <a class="text-center no-underline w-full lg:w-fit bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit.zip">
             <span class="text-base font-semibold leading-7 text-black normal-case">
              @lang('snippets.toolkits.1')
             </span>
@@ -32,7 +32,7 @@
 
         @foreach($languages as $lang)
             @if($lang === $locale)
-                <a class="text-center no-underline w-full lg:w-fit bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2025/teachers-toolkit-2025-EN.zip">
+                <a class="text-center no-underline w-full lg:w-fit bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit.zip">
                   <span class="text-base font-semibold leading-7 text-black normal-case">
                 @lang('snippets.toolkits.3')
                     </span>
