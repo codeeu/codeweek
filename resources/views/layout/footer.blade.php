@@ -86,6 +86,9 @@
                             <a href="/blog" class="cookweek-link hover-underline">@lang('footer.news')</a>
                         </li>
                         <li class="mb-4">
+                            <a href="/faqs" class="cookweek-link hover-underline">FAQs</a>
+                        </li>
+                        <li class="mb-4">
                             <a href="https://forms.mailpro.com/l3086a9a3-9dc5-4160-ab12-71a0f34d3f07" target="_blank"
                                 class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
                         </li>
