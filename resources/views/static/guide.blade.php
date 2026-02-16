@@ -416,6 +416,9 @@
             <span class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
                     @lang('guide.questions.content')
             </span>
+            <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mt-3 max-w-4xl">
+                You can also visit our <a class="cookweek-link hover-underline" href="{{ route('faqs') }}">FAQs page</a>.
+            </p>
             </div>
         </section>
 
