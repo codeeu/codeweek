@@ -57,7 +57,7 @@
 
         @foreach($languages as $lang)
             @if($lang === $locale)
-                <a class="text-center no-underline w-full lg:w-fit bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/leaflet/2025/codeweek-leaflet-2025-{{strtoupper($lang)}}.pdf">
+                <a class="text-center no-underline w-full lg:w-fit bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/leaflet/codeweek-leaflet.pdf">
                   <span class="text-base font-semibold leading-7 text-black normal-case">
                   @lang('snippets.toolkits.5')
                   </span></a>
