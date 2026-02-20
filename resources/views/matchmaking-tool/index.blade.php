@@ -3,7 +3,7 @@
 @php
     $list = [
       (object) ['label' => 'Resources', 'href' => '/resources'],
-      (object) ['label' => 'Matchmaking Toolkit', 'href' => ''],
+      (object) ['label' => 'Matchmaking Toolk', 'href' => ''],
     ];
 @endphp
 
@@ -16,10 +16,10 @@
 
 @section('content')
     <section id="codeweek-matchmaking-tool" class="font-['Blinker'] overflow-hidden">
-        <section class="relative flex overflow-hidden">
-            <div class="flex relative transition-all w-full bg-orange-gradient pt-48 pb-0 md:py-24">
-                <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
-                    <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
+        <section class="flex overflow-hidden relative">
+            <div class="flex relative pt-48 pb-0 w-full transition-all bg-orange-gradient md:py-24">
+                <div class="flex overflow-hidden flex-col flex-shrink-0 justify-end pb-10 w-full md:p-0 md:flex-row md:items-center">
+                    <div class="flex flex-col gap-28 duration-1000 home-activity codeweek-container-lg md:flex-row md:items-center md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-dark-blue text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[525px]">
                                 Connect & support
@@ -46,53 +46,53 @@
         </section>
 
         <section class="relative z-10">
-            <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
+            <div class="flex relative z-10 justify-center py-10 md:py-20 codeweek-container-lg">
                 <div class="w-full max-w-[880px] gap-2">
                     <p class="text-[#20262C] text-lg md:text-2xl font-normal mb-6 p-0">
                         Are you an expert, industry leader, or organisation ready to inspire students? Or a school looking for digital professionals to bring real-world expertise into the classroom? 
                     </p>
-                    <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-6">
+                    <p class="p-0 mb-6 font-normal text-slate-500 text-default md:text-xl">
                         Join our growing EU Code Week Community and help build a strong network of digital professionals, companies, academics and educators to inspire students, both online and in person.  
                     </p>
-                    <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-6">
+                    <p class="p-0 mb-6 font-normal text-slate-500 text-default md:text-xl">
                         <span class="font-semibold">Experts & Organisation</span> – Sign up to share your knowledge with educators.
                     </p>
                     <p class="text-[#20262C] text-lg md:text-2xl font-semibold p-0 mb-6">
                         Register today!
                     </p>
-                    <div class="flex flex-col tablet:flex-row gap-6 mb-6">
-                        <div class="p-6 flex flex-col items-center bg-yellow-50 rounded-lg flex-1">
-                            <p class="p-0 text-slate-500 text-default md:text-xl font-semibold">
+                    <div class="flex flex-col gap-6 mb-6 tablet:flex-row">
+                        <div class="flex flex-col flex-1 items-center p-6 bg-yellow-50 rounded-lg">
+                            <p class="p-0 font-semibold text-slate-500 text-default md:text-xl">
                                 Registering as an individual?
                             </p>
-                            <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-4">
+                            <p class="p-0 mb-4 font-normal text-slate-500 text-default md:text-xl">
                                 Fill out this form:
                             </p>
                             <a href="https://forms.office.com/e/BJK7b42iHp" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-8 font-['Blinker'] hover:bg-hover-orange duration-300">
                                 <span
-                                    class="text-base leading-7 font-semibold text-black normal-case whitespace-nowrap"
+                                    class="text-base font-semibold leading-7 text-black normal-case whitespace-nowrap"
                                 >
                                     Individual registration form
                                 </span>
                             </a>
                         </div>
-                        <div class="p-6 flex flex-col items-center bg-yellow-50 rounded-lg flex-1">
-                            <p class="p-0 text-slate-500 text-default md:text-xl font-semibold">
+                        <div class="flex flex-col flex-1 items-center p-6 bg-yellow-50 rounded-lg">
+                            <p class="p-0 font-semibold text-slate-500 text-default md:text-xl">
                                 Signing up as an organisation?
                             </p>
-                            <p class="p-0 text-slate-500 text-default md:text-xl font-normal mb-4">
+                            <p class="p-0 mb-4 font-normal text-slate-500 text-default md:text-xl">
                                 Let us know here:
                             </p>
                             <a href="https://forms.office.com/e/504a5CUbUm" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-8 font-['Blinker'] hover:bg-hover-orange duration-300">
                                 <span
-                                    class="text-base leading-7 font-semibold text-black normal-case whitespace-nowrap"
+                                    class="text-base font-semibold leading-7 text-black normal-case whitespace-nowrap"
                                 >
                                     Organisation registration form
                                 </span>
                             </a>
                         </div>
                     </div>
-                    <p class="p-0 text-slate-500 text-default md:text-xl font-normal">
+                    <p class="p-0 font-normal text-slate-500 text-default md:text-xl">
                         <span class="font-semibold">Schools & Educators</span> – Browse the database to find the right expert and organisation for your students.
                     </p>
                 </div>

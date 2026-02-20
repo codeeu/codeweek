@@ -67,7 +67,7 @@ return [
     'leading_teachers' => 'Leading Teachers',
     'badges_leaderboard' => 'Badges Leaderboard',
     'podcasts' => 'Podcasts',
-    'matchmaking_toolkit' => 'Matchmaking Toolkit',
+    'matchmaking_toolkit' => 'Matchmaking Tool',
     'hackathons' => 'Hackathons',
     'slogan_menu' => 'Meet our role models and find your dream job',
     'see_more' => 'See more',
