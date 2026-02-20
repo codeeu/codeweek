@@ -8,7 +8,7 @@
       }
     $list = [
       (object) ['label' => 'Resources', 'href' => '/resources'],
-      (object) ['label' => 'Matchmaking Toolkit', 'href' => '/matchmaking-tool'],
+      (object) ['label' => 'Matchmaking Tool', 'href' => '/matchmaking-tool'],
       (object) ['label' => $profileName, 'href' => ''],
     ];
 @endphp
