@@ -46,7 +46,7 @@ return [
     'leading_teachers' => 'Leidende docenten',
     'badges_leaderboard' => 'Badge klassement',
     'podcasts' => 'Podcasts',
-    'matchmaking_toolkit' => 'Matchmaking toolkit',
+    'matchmaking_toolkit' => 'Matchmaking tool',
     'hackathons' => 'Hackathons',
     'slogan_menu' => 'Ontmoet onze rolmodellen en vind je droombaan',
     'see_more' => 'Bekijk meer',
