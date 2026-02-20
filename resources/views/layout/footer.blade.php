@@ -120,7 +120,7 @@
                             <a href="/hackathons" class="cookweek-link hover-underline">@lang('footer.hackathons')</a>
                         </li>
                         <li>
-                            <a href="/matchmaking-tool" class="cookweek-link hover-underline">Matchmaking Toolkit</a>
+                            <a href="/matchmaking-tool" class="cookweek-link hover-underline">Matchmaking Tool</a>
                         </li>
                     </ul>
                 </div>
