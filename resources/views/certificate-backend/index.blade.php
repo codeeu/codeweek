@@ -124,14 +124,18 @@
 </section>
 
 <script>
-(function() {
-    const editionSelect = document.getElementById('edition-select');
-    const typeSlug = '{{ $typeSlug }}';
-    // Relative path so POST is same-origin (session + CSRF work reliably)
-    const basePath = '/admin/certificate-backend';
-    let currentPage = 1;
-    let searchQuery = '';
-    let statusInterval = null;
+document.addEventListener('DOMContentLoaded', function() {
+    'use strict';
+    var editionSelect = document.getElementById('edition-select');
+    var typeSlug = '{{ $typeSlug }}';
+    var basePath = '/admin/certificate-backend';
+    var currentPage = 1;
+    var searchQuery = '';
+    var statusInterval = null;
+
+    function getEdition() {
+        return editionSelect ? editionSelect.value : '{{ $edition }}';
+    }
 
     function showError(msg) {
         const el = document.getElementById('last-error');
@@ -155,12 +159,15 @@
         showSuccess('');
     }
 
-    function apiUrl(path, params = {}) {
-        const segment = path.replace(/^\//, '');
-        const u = new URL(segment ? basePath + '/' + segment : basePath, window.location.origin);
-        u.searchParams.set('edition', editionSelect.value);
+    function apiUrl(path, params) {
+        params = params || {};
+        var segment = path.replace(/^\//, '');
+        var u = new URL(segment ? basePath + '/' + segment : basePath, window.location.origin);
+        u.searchParams.set('edition', getEdition());
         u.searchParams.set('type', typeSlug);
-        Object.entries(params).forEach(([k, v]) => { if (v !== undefined && v !== '') u.searchParams.set(k, v); });
+        Object.keys(params).forEach(function(k) {
+            if (params[k] !== undefined && params[k] !== '') u.searchParams.set(k, params[k]);
+        });
         return u.toString();
     }
 
@@ -258,28 +265,33 @@
     }
 
     function loadStatus() {
-        fetchJson(apiUrl('/status')).then(data => {
-            document.getElementById('stat-total').textContent = data.total ?? '–';
-            document.getElementById('stat-generated').textContent = data.generated ?? '–';
-            document.getElementById('stat-sent').textContent = data.sent ?? '–';
-            document.getElementById('stat-gen-failed').textContent = data.generation_failed ?? '–';
-            document.getElementById('stat-send-failed').textContent = data.send_failed ?? '–';
+        fetchJson(apiUrl('/status')).then(function(data) {
+            var el;
+            if ((el = document.getElementById('stat-total'))) el.textContent = data.total ?? '–';
+            if ((el = document.getElementById('stat-generated'))) el.textContent = data.generated ?? '–';
+            if ((el = document.getElementById('stat-sent'))) el.textContent = data.sent ?? '–';
+            if ((el = document.getElementById('stat-gen-failed'))) el.textContent = data.generation_failed ?? '–';
+            if ((el = document.getElementById('stat-send-failed'))) el.textContent = data.send_failed ?? '–';
             updateProgress(data);
         }).catch(function(err) {
             showError(err.message || 'Could not load status.');
         });
     }
 
-    function loadList(page = 1) {
-        document.getElementById('table-loading').style.display = 'block';
-        document.getElementById('recipients-table').style.display = 'none';
-        fetchJson(apiUrl('/list', { page, search: searchQuery, per_page: 50 })).then(data => {
-            document.getElementById('table-loading').style.display = 'none';
-            document.getElementById('recipients-table').style.display = 'table';
-            const tbody = document.getElementById('recipients-tbody');
+    function loadList(page) {
+        page = page || 1;
+        var tableLoading = document.getElementById('table-loading');
+        var recipientsTable = document.getElementById('recipients-table');
+        if (tableLoading) tableLoading.style.display = 'block';
+        if (recipientsTable) recipientsTable.style.display = 'none';
+        fetchJson(apiUrl('/list', { page: page, search: searchQuery, per_page: 50 })).then(function(data) {
+            if (tableLoading) tableLoading.style.display = 'none';
+            if (recipientsTable) recipientsTable.style.display = 'table';
+            var tbody = document.getElementById('recipients-tbody');
+            if (!tbody) return;
             tbody.innerHTML = '';
-            (data.data || []).forEach(row => {
-                const tr = document.createElement('tr');
+            (data.data || []).forEach(function(row) {
+                var tr = document.createElement('tr');
                 tr.innerHTML =
                     '<td style="padding: 0.5rem;">' + escapeHtml(row.name || '') + '</td>' +
                     '<td style="padding: 0.5rem;">' + escapeHtml(row.email || '') + '</td>' +
@@ -294,7 +306,8 @@
             });
             pagination(data.current_page, data.last_page, data.total);
         }).catch(function(err) {
-            document.getElementById('table-loading').innerHTML = 'Error loading list. ' + (err.message || '');
+            var loadingEl = document.getElementById('table-loading');
+            if (loadingEl) loadingEl.innerHTML = 'Error loading list. ' + (err.message || '');
         });
     }
 
@@ -318,19 +331,22 @@
         el.querySelectorAll('.page-btn').forEach(btn => btn.addEventListener('click', function() { currentPage = parseInt(this.dataset.page, 10); loadList(currentPage); }));
     }
 
-    editionSelect.addEventListener('change', function() {
-        window.location.href = '{{ url("/admin/certificate-backend") }}?edition=' + this.value + '&type=' + typeSlug;
-    });
+    if (editionSelect) {
+        editionSelect.addEventListener('change', function() {
+            window.location.href = window.location.pathname + '?edition=' + encodeURIComponent(this.value) + '&type=' + encodeURIComponent(typeSlug);
+        });
+    }
 
-    document.getElementById('btn-generate').addEventListener('click', function(e) {
+    function onGenerateClick(e) {
         e.preventDefault();
-        const btn = this;
-        const origText = btn.textContent;
+        var btn = e.target.closest('#btn-generate');
+        if (!btn) return;
+        var origText = btn.textContent;
         clearError();
         clearSuccess();
         btn.disabled = true;
         btn.textContent = 'Starting…';
-        postJson(apiUrl('/generate/start')).then(r => {
+        postJson(apiUrl('/generate/start')).then(function(r) {
             if (r.ok) {
                 showError('');
                 showSuccess('Generation started. Progress will update above. If the numbers don\'t change within a minute, run the queue worker on the server: php artisan queue:work');
@@ -347,28 +363,30 @@
             btn.disabled = false;
             btn.textContent = origText;
         });
-    });
+    }
 
-    document.getElementById('btn-cancel').addEventListener('click', function(e) {
+    function onCancelClick(e) {
         e.preventDefault();
+        if (!e.target.closest('#btn-cancel')) return;
         clearError();
         clearSuccess();
-        postJson(apiUrl('/generate/cancel')).then(r => {
+        postJson(apiUrl('/generate/cancel')).then(function(r) {
             showError(r.ok ? '' : r.message);
             showSuccess(r.ok ? 'Cancellation requested.' : '');
             loadStatus();
         }).catch(function(err) { showError(err.message || 'Request failed.'); });
-    });
+    }
 
-    document.getElementById('btn-send').addEventListener('click', function(e) {
+    function onSendClick(e) {
         e.preventDefault();
-        const btn = this;
-        const origText = btn.textContent;
+        var btn = e.target.closest('#btn-send');
+        if (!btn) return;
+        var origText = btn.textContent;
         clearError();
         clearSuccess();
         btn.disabled = true;
         btn.textContent = 'Starting…';
-        postJson(apiUrl('/send/start')).then(r => {
+        postJson(apiUrl('/send/start')).then(function(r) {
             if (r.ok) {
                 showError('');
                 showSuccess('Sending started. Progress will update above. If the numbers don\'t change, run the queue worker: php artisan queue:work');
@@ -386,17 +404,18 @@
             btn.disabled = false;
             btn.textContent = origText;
         });
-    });
+    }
 
-    document.getElementById('btn-resend-all-failed').addEventListener('click', function(e) {
+    function onResendAllFailedClick(e) {
         e.preventDefault();
-        const btn = this;
-        const origText = btn.textContent;
+        var btn = e.target.closest('#btn-resend-all-failed');
+        if (!btn) return;
+        var origText = btn.textContent;
         clearError();
         clearSuccess();
         btn.disabled = true;
         btn.textContent = 'Starting…';
-        postJson(apiUrl('/resend-all-failed')).then(r => {
+        postJson(apiUrl('/resend-all-failed')).then(function(r) {
             if (r.ok) {
                 showError('');
                 showSuccess('Resend started. Progress will update above. Run the queue worker if needed: php artisan queue:work');
@@ -414,74 +433,93 @@
             btn.disabled = false;
             btn.textContent = origText;
         });
+    }
+
+    document.body.addEventListener('click', function(e) {
+        if (e.target.id === 'btn-generate' || e.target.closest('#btn-generate')) { onGenerateClick(e); return; }
+        if (e.target.id === 'btn-cancel' || e.target.closest('#btn-cancel')) { onCancelClick(e); return; }
+        if (e.target.id === 'btn-send' || e.target.closest('#btn-send')) { onSendClick(e); return; }
+        if (e.target.id === 'btn-resend-all-failed' || e.target.closest('#btn-resend-all-failed')) { onResendAllFailedClick(e); return; }
     });
 
-    document.getElementById('btn-manual-generate').addEventListener('click', function(e) {
+    var btnManualGen = document.getElementById('btn-manual-generate');
+    if (btnManualGen) btnManualGen.addEventListener('click', function(e) {
         e.preventDefault();
-        const email = document.getElementById('manual-email').value.trim();
-        const resultEl = document.getElementById('manual-result');
+        var email = (document.getElementById('manual-email') || {}).value;
+        if (email) email = email.trim();
+        var resultEl = document.getElementById('manual-result');
         if (!email) { showError('Enter email.'); return; }
         clearError();
-        resultEl.textContent = 'Generating…';
-        postJson(apiUrl('/manual-create-send'), { user_email: email, generate_only: true }).then(r => {
-            resultEl.textContent = r.ok ? ('Generated. ' + (r.certificate_url ? 'URL: ' + r.certificate_url : '')) : r.message;
+        if (resultEl) resultEl.textContent = 'Generating…';
+        postJson(apiUrl('/manual-create-send'), { user_email: email, generate_only: true }).then(function(r) {
+            if (resultEl) resultEl.textContent = r.ok ? ('Generated. ' + (r.certificate_url ? 'URL: ' + r.certificate_url : '')) : r.message;
             if (!r.ok) showError(r.message);
             if (r.ok) { loadStatus(); loadList(currentPage); }
-        }).catch(function(err) { resultEl.textContent = ''; showError(err.message || 'Request failed.'); });
+        }).catch(function(err) { if (resultEl) resultEl.textContent = ''; showError(err.message || 'Request failed.'); });
     });
 
-    document.getElementById('btn-manual-send').addEventListener('click', function(e) {
+    var btnManualSend = document.getElementById('btn-manual-send');
+    if (btnManualSend) btnManualSend.addEventListener('click', function(e) {
         e.preventDefault();
-        const email = document.getElementById('manual-email').value.trim();
-        const resultEl = document.getElementById('manual-result');
+        var email = (document.getElementById('manual-email') || {}).value;
+        if (email) email = email.trim();
+        var resultEl = document.getElementById('manual-result');
         if (!email) { showError('Enter email.'); return; }
         clearError();
-        resultEl.textContent = 'Sending…';
-        postJson(apiUrl('/manual-create-send'), { user_email: email, send_only: true }).then(r => {
-            resultEl.textContent = r.ok ? (r.message || 'Email sent.') : r.message;
+        if (resultEl) resultEl.textContent = 'Sending…';
+        postJson(apiUrl('/manual-create-send'), { user_email: email, send_only: true }).then(function(r) {
+            if (resultEl) resultEl.textContent = r.ok ? (r.message || 'Email sent.') : r.message;
             if (!r.ok) showError(r.message);
             if (r.ok) { loadStatus(); loadList(currentPage); }
-        }).catch(function(err) { resultEl.textContent = ''; showError(err.message || 'Request failed.'); });
+        }).catch(function(err) { if (resultEl) resultEl.textContent = ''; showError(err.message || 'Request failed.'); });
     });
 
-    document.getElementById('btn-search').addEventListener('click', function(e) {
+    var btnSearch = document.getElementById('btn-search');
+    if (btnSearch) btnSearch.addEventListener('click', function(e) {
         e.preventDefault();
-        searchQuery = document.getElementById('search-input').value.trim();
+        var searchInput = document.getElementById('search-input');
+        searchQuery = searchInput ? searchInput.value.trim() : '';
         currentPage = 1;
         loadList(1);
     });
-    document.getElementById('search-input').addEventListener('keydown', function(e) { if (e.key === 'Enter') document.getElementById('btn-search').click(); });
+    var searchInputEl = document.getElementById('search-input');
+    if (searchInputEl) searchInputEl.addEventListener('keydown', function(e) { if (e.key === 'Enter' && btnSearch) btnSearch.click(); });
 
-    document.getElementById('recipients-tbody').addEventListener('click', function(e) {
+    var recipientsTbody = document.getElementById('recipients-tbody');
+    if (recipientsTbody) recipientsTbody.addEventListener('click', function(e) {
         e.preventDefault();
-        const regenerateBtn = e.target.closest('.regenerate-one');
-        const resendBtn = e.target.closest('.resend-one');
+        var regenerateBtn = e.target.closest ? e.target.closest('.regenerate-one') : null;
+        var resendBtn = e.target.closest ? e.target.closest('.resend-one') : null;
         if (regenerateBtn) {
-            const id = regenerateBtn.dataset.id;
+            var id = regenerateBtn.dataset.id;
             regenerateBtn.disabled = true;
             clearError();
-            const url = basePath + '/regenerate/' + id + '?edition=' + encodeURIComponent(editionSelect.value) + '&type=' + encodeURIComponent(typeSlug);
-            postJson(url, {}).then(r => {
+            var url = basePath + '/regenerate/' + id + '?edition=' + encodeURIComponent(getEdition()) + '&type=' + encodeURIComponent(typeSlug);
+            postJson(url, {}).then(function(r) {
                 showError(r.ok ? '' : r.message);
                 if (r.ok) { loadStatus(); loadList(currentPage); }
             }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { regenerateBtn.disabled = false; });
             return;
         }
         if (resendBtn) {
-            const id = resendBtn.dataset.id;
+            var id = resendBtn.dataset.id;
             resendBtn.disabled = true;
             clearError();
-            const resendUrl = basePath + '/resend/' + id + '?edition=' + encodeURIComponent(editionSelect.value) + '&type=' + encodeURIComponent(typeSlug);
-            postJson(resendUrl, {}).then(r => {
+            var resendUrl = basePath + '/resend/' + id + '?edition=' + encodeURIComponent(getEdition()) + '&type=' + encodeURIComponent(typeSlug);
+            postJson(resendUrl, {}).then(function(r) {
                 showError(r.ok ? '' : r.message);
                 if (r.ok) { loadStatus(); loadList(currentPage); }
             }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { resendBtn.disabled = false; });
         }
     });
 
-    loadStatus();
-    loadList(1);
-    setInterval(loadStatus, 10000);
-})();
+    try {
+        loadStatus();
+        loadList(1);
+        setInterval(loadStatus, 10000);
+    } catch (err) {
+        showError('Page load error: ' + (err.message || err));
+    }
+});
 </script>
 @endsection
