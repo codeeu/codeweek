@@ -228,7 +228,6 @@ class CertificateBackendController extends Controller
         $pending = Excellence::query()
             ->where('edition', $edition)
             ->where('type', $type)
-            ->whereNotNull('certificate_url')
             ->where(function ($q) {
                 $q->whereNull('notified_at')->orWhereNotNull('certificate_sent_error');
             })
@@ -236,7 +235,7 @@ class CertificateBackendController extends Controller
             ->exists();
 
         if (! $pending) {
-            return response()->json(['ok' => false, 'message' => 'No pending recipients with generated certificates.']);
+            return response()->json(['ok' => false, 'message' => 'No pending recipients to send.']);
         }
 
         SendCertificateBatchJob::dispatch($edition, $type, 0);
@@ -326,7 +325,6 @@ class CertificateBackendController extends Controller
         $count = Excellence::query()
             ->where('edition', $edition)
             ->where('type', $type)
-            ->whereNotNull('certificate_url')
             ->where(function ($q) {
                 $q->whereNull('notified_at')->orWhereNotNull('certificate_sent_error');
             })
@@ -449,10 +447,6 @@ class CertificateBackendController extends Controller
                 'message' => 'Certificate generated.',
                 'certificate_url' => $excellence->certificate_url,
             ]);
-        }
-
-        if ($sendOnly && ! $excellence->certificate_url) {
-            return response()->json(['ok' => false, 'message' => 'No certificate yet. Generate first.']);
         }
 
         try {

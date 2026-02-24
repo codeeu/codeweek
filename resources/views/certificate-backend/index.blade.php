@@ -77,7 +77,7 @@
             <button type="button" id="btn-generate" class="px-6 py-3 mr-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Generate certificates</button>
             <button type="button" id="btn-cancel" class="px-6 py-3 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Cancel generation</button>
         </div>
-        <p style="margin-bottom: 0.5rem;"><strong>Step 2 – Send:</strong> (only after certificates are generated)</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Step 2 – Send:</strong> (sends to all qualified recipients; certificate can be generated from email link)</p>
         <div>
             <button type="button" id="btn-send" class="px-6 py-3 mr-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Send emails (batches of 100)</button>
             <button type="button" id="btn-resend-all-failed" class="px-6 py-3 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Resend all failed / unsent</button>
