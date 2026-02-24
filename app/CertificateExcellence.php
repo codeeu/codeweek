@@ -66,6 +66,20 @@ class CertificateExcellence
     }
 
     /**
+     * Dry-run style preflight: compile the certificate locally without S3 upload.
+     * Cleans up temp files regardless of success/failure.
+     */
+    public function preflight(): void
+    {
+        try {
+            $this->customize_and_save_latex();
+            $this->run_pdf_creation();
+        } finally {
+            $this->clean_temp_files();
+        }
+    }
+
+    /**
      * Clean up LaTeX artifacts for the generated file.
      */
     private function clean_temp_files()
