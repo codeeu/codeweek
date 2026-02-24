@@ -421,7 +421,10 @@ class CertificateBackendController extends Controller
         $name = $excellence->name_for_certificate ?? trim($user->firstname . ' ' . $user->lastname);
         $numberOfActivities = $type === 'SuperOrganiser' ? $user->activities($edition) : 0;
 
-        if (! $sendOnly && ! $excellence->certificate_url) {
+        // Manual "generate only" should always regenerate, even if a URL already exists.
+        // For combined flow, only generate when certificate is missing.
+        $shouldGenerate = ! $sendOnly && ($generateOnly || ! $excellence->certificate_url);
+        if ($shouldGenerate) {
             try {
                 $cert = new \App\CertificateExcellence(
                     $edition,
