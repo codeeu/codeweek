@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Excellence as ExcellenceModel;
 use App\Queries\SuperOrganiserQuery;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
@@ -41,13 +42,32 @@ class SuperOrganisers extends Command
 
         $winners = SuperOrganiserQuery::winners($edition);
 
+        $created = 0;
+        $existing = 0;
+        $failed = 0;
+
         foreach ($winners as $user_id) {
             try {
-                create(\App\Excellence::class, ['edition' => $edition, 'user_id' => $user_id, 'type' => 'SuperOrganiser']);
+                $record = ExcellenceModel::updateOrCreate(
+                    [
+                        'edition' => (int) $edition,
+                        'user_id' => (int) $user_id,
+                        'type' => 'SuperOrganiser',
+                    ],
+                    []
+                );
+
+                if ($record->wasRecentlyCreated) {
+                    $created++;
+                } else {
+                    $existing++;
+                }
             } catch (\Exception $ex) {
+                $failed++;
                 Log::info($ex->getMessage());
             }
         }
 
+        $this->info("Super organiser sync completed. Created: {$created}, Existing: {$existing}, Failed: {$failed}");
     }
 }
