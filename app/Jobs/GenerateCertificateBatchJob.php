@@ -54,7 +54,7 @@ class GenerateCertificateBatchJob implements ShouldQueue
                 ->orWhereNotNull('certificate_generation_error');
         });
 
-        $rows = $query->offset($this->offset)->limit(self::BATCH_SIZE)->get();
+        $rows = $query->limit(self::BATCH_SIZE)->get();
 
         if ($rows->isEmpty()) {
             Cache::forget($runningKey);
@@ -101,19 +101,17 @@ class GenerateCertificateBatchJob implements ShouldQueue
             }
         }
 
-        $nextOffset = $this->offset + $rows->count();
         $hasMore = Excellence::query()
             ->where('edition', $this->edition)
             ->where('type', $this->type)
             ->where(function ($q) {
                 $q->whereNull('certificate_url')->orWhereNotNull('certificate_generation_error');
             })
-            ->offset($nextOffset)
             ->limit(1)
             ->exists();
 
         if ($hasMore && ! Cache::get($cancelledKey)) {
-            self::dispatch($this->edition, $this->type, $nextOffset);
+            self::dispatch($this->edition, $this->type, 0);
         } else {
             Cache::forget($runningKey);
         }
