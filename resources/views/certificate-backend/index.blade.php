@@ -42,6 +42,8 @@
 
     {{-- Visible error (in case alerts are blocked) --}}
     <div id="last-error" class="hidden mb-4 p-3 rounded bg-red-100 text-red-800" role="alert"></div>
+    {{-- Success message (e.g. "Generation started" + queue reminder) --}}
+    <div id="last-success" class="hidden mb-4 p-3 rounded bg-green-100 text-green-800" role="status"></div>
 
     {{-- Stats --}}
     <div id="stats" class="cert-backend-stats" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
@@ -125,7 +127,8 @@
 (function() {
     const editionSelect = document.getElementById('edition-select');
     const typeSlug = '{{ $typeSlug }}';
-    const basePath = '{{ url("/admin/certificate-backend") }}'.replace(/\/$/, '');
+    // Relative path so POST is same-origin (session + CSRF work reliably)
+    const basePath = '/admin/certificate-backend';
     let currentPage = 1;
     let searchQuery = '';
     let statusInterval = null;
@@ -137,8 +140,19 @@
         el.classList.toggle('hidden', !msg);
     }
 
+    function showSuccess(msg) {
+        const el = document.getElementById('last-success');
+        if (!el) return;
+        el.textContent = msg || '';
+        el.classList.toggle('hidden', !msg);
+    }
+
     function clearError() {
         showError('');
+    }
+
+    function clearSuccess() {
+        showSuccess('');
     }
 
     function apiUrl(path, params = {}) {
@@ -178,13 +192,17 @@
     }
 
     function postJson(url, body = {}) {
+        const token = csrf();
+        if (!token) {
+            return Promise.reject(new Error('CSRF token missing. Refresh the page and try again.'));
+        }
         return fetch(url, {
             method: 'POST',
             credentials: 'same-origin',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': csrf(),
+                'X-CSRF-TOKEN': token,
                 'X-Requested-With': 'XMLHttpRequest'
             },
             body: JSON.stringify(body)
@@ -225,6 +243,18 @@
         } else {
             if (statusInterval) { clearInterval(statusInterval); statusInterval = null; }
         }
+    }
+
+    /** Start polling status every 2s for a while after starting an action (so progress bars appear once the worker picks up the job). */
+    function startStatusPollingForAWhile() {
+        if (statusInterval) return;
+        statusInterval = setInterval(loadStatus, 2000);
+        setTimeout(function() {
+            if (statusInterval) {
+                clearInterval(statusInterval);
+                statusInterval = null;
+            }
+        }, 120000);
     }
 
     function loadStatus() {
@@ -295,38 +325,95 @@
     document.getElementById('btn-generate').addEventListener('click', function(e) {
         e.preventDefault();
         const btn = this;
+        const origText = btn.textContent;
         clearError();
+        clearSuccess();
         btn.disabled = true;
+        btn.textContent = 'Starting…';
         postJson(apiUrl('/generate/start')).then(r => {
-            showError(r.ok ? '' : (r.message || 'Error'));
-            if (r.ok) loadStatus();
-        }).catch(function(err) { showError(err.message || 'Request failed.'); }).finally(function() { btn.disabled = false; });
+            if (r.ok) {
+                showError('');
+                showSuccess('Generation started. Progress will update above. If the numbers don\'t change within a minute, run the queue worker on the server: php artisan queue:work');
+                loadStatus();
+                startStatusPollingForAWhile();
+            } else {
+                showError(r.message || 'Error');
+                showSuccess('');
+            }
+        }).catch(function(err) {
+            showError(err.message || 'Request failed.');
+            showSuccess('');
+        }).finally(function() {
+            btn.disabled = false;
+            btn.textContent = origText;
+        });
     });
 
     document.getElementById('btn-cancel').addEventListener('click', function(e) {
         e.preventDefault();
         clearError();
-        postJson(apiUrl('/generate/cancel')).then(r => { showError(r.ok ? '' : r.message); loadStatus(); }).catch(function(err) { showError(err.message || 'Request failed.'); });
+        clearSuccess();
+        postJson(apiUrl('/generate/cancel')).then(r => {
+            showError(r.ok ? '' : r.message);
+            showSuccess(r.ok ? 'Cancellation requested.' : '');
+            loadStatus();
+        }).catch(function(err) { showError(err.message || 'Request failed.'); });
     });
 
     document.getElementById('btn-send').addEventListener('click', function(e) {
         e.preventDefault();
+        const btn = this;
+        const origText = btn.textContent;
         clearError();
+        clearSuccess();
+        btn.disabled = true;
+        btn.textContent = 'Starting…';
         postJson(apiUrl('/send/start')).then(r => {
-            showError(r.ok ? '' : (r.message || 'Error'));
-            if (r.ok) loadStatus();
-            loadList(currentPage);
-        }).catch(function(err) { showError(err.message || 'Request failed.'); });
+            if (r.ok) {
+                showError('');
+                showSuccess('Sending started. Progress will update above. If the numbers don\'t change, run the queue worker: php artisan queue:work');
+                loadStatus();
+                loadList(currentPage);
+                startStatusPollingForAWhile();
+            } else {
+                showError(r.message || 'Error');
+                showSuccess('');
+            }
+        }).catch(function(err) {
+            showError(err.message || 'Request failed.');
+            showSuccess('');
+        }).finally(function() {
+            btn.disabled = false;
+            btn.textContent = origText;
+        });
     });
 
     document.getElementById('btn-resend-all-failed').addEventListener('click', function(e) {
         e.preventDefault();
+        const btn = this;
+        const origText = btn.textContent;
         clearError();
+        clearSuccess();
+        btn.disabled = true;
+        btn.textContent = 'Starting…';
         postJson(apiUrl('/resend-all-failed')).then(r => {
-            showError(r.ok ? '' : (r.message || 'Error'));
-            if (r.ok) loadStatus();
-            loadList(currentPage);
-        }).catch(function(err) { showError(err.message || 'Request failed.'); });
+            if (r.ok) {
+                showError('');
+                showSuccess('Resend started. Progress will update above. Run the queue worker if needed: php artisan queue:work');
+                loadStatus();
+                loadList(currentPage);
+                startStatusPollingForAWhile();
+            } else {
+                showError(r.message || 'Error');
+                showSuccess('');
+            }
+        }).catch(function(err) {
+            showError(err.message || 'Request failed.');
+            showSuccess('');
+        }).finally(function() {
+            btn.disabled = false;
+            btn.textContent = origText;
+        });
     });
 
     document.getElementById('btn-manual-generate').addEventListener('click', function(e) {
@@ -373,7 +460,7 @@
             const id = regenerateBtn.dataset.id;
             regenerateBtn.disabled = true;
             clearError();
-            const url = '{{ url("/admin/certificate-backend/regenerate") }}'.replace(/\/$/, '') + '/' + id;
+            const url = basePath + '/regenerate/' + id + '?edition=' + encodeURIComponent(editionSelect.value) + '&type=' + encodeURIComponent(typeSlug);
             postJson(url, {}).then(r => {
                 showError(r.ok ? '' : r.message);
                 if (r.ok) { loadStatus(); loadList(currentPage); }
@@ -384,7 +471,7 @@
             const id = resendBtn.dataset.id;
             resendBtn.disabled = true;
             clearError();
-            const resendUrl = '{{ url("/admin/certificate-backend/resend") }}'.replace(/\/$/, '') + '/' + id;
+            const resendUrl = basePath + '/resend/' + id + '?edition=' + encodeURIComponent(editionSelect.value) + '&type=' + encodeURIComponent(typeSlug);
             postJson(resendUrl, {}).then(r => {
                 showError(r.ok ? '' : r.message);
                 if (r.ok) { loadStatus(); loadList(currentPage); }
