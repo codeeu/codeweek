@@ -51,11 +51,10 @@ class GenerateCertificateBatchJob implements ShouldQueue
             ->with('user')
             ->orderBy('id');
 
-        // Either no cert yet, or had a generation error (retry)
-        $query->where(function ($q) {
-            $q->whereNull('certificate_url')
-                ->orWhereNotNull('certificate_generation_error');
-        });
+        // Process only fresh pending rows in bulk.
+        // Failed rows are tracked in certificate_generation_error and should not be retried endlessly.
+        $query->whereNull('certificate_url')
+            ->whereNull('certificate_generation_error');
 
         $rows = $query->limit(self::BATCH_SIZE)->get();
 
@@ -107,9 +106,8 @@ class GenerateCertificateBatchJob implements ShouldQueue
         $hasMore = Excellence::query()
             ->where('edition', $this->edition)
             ->where('type', $this->type)
-            ->where(function ($q) {
-                $q->whereNull('certificate_url')->orWhereNotNull('certificate_generation_error');
-            })
+            ->whereNull('certificate_url')
+            ->whereNull('certificate_generation_error')
             ->limit(1)
             ->exists();
 
