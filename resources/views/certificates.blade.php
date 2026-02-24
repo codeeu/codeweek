@@ -80,7 +80,7 @@
 
                         @if(!$excellence->isEmpty())
                             @foreach($excellence as $certificate_of_excellence)
-                                @if(!is_null($certificate_of_excellence->name_for_certificate))
+                                @if(!empty($certificate_of_excellence->certificate_url))
                                     <tr class="{{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }}">
                                         <td class="border-r border-[#B399D6] px-6 py-4 font-semibold text-xl">
                                             <span class="text-slate-500 font-semibold">Excellence</span>
@@ -112,7 +112,7 @@
 
                         @if(!$superOrganiser->isEmpty())
                             @foreach($superOrganiser as $super_organiser_certificate)
-                                @if(!is_null($super_organiser_certificate->name_for_certificate))
+                                @if(!empty($super_organiser_certificate->certificate_url))
                                     <tr class="{{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }}">
                                         <td class="border-r border-[#B399D6] px-6 py-4 font-semibold text-xl">
                                             <span class="text-slate-500 font-semibold">Super Organiser</span>
@@ -222,7 +222,7 @@
 
                     @if(!$excellence->isEmpty())
                         @foreach($excellence as $certificate_of_excellence)
-                            @if(!is_null($certificate_of_excellence->name_for_certificate))
+                            @if(!empty($certificate_of_excellence->certificate_url))
                                 <div class="border-2 border-[#B399D6] rounded-lg overflow-hidden">
                                     <div class="flex">
                                         <div class="flex items-center px-4 py-5 bg-[#410098] border-r border-b border-[#B399D6] font-['Montserrat'] font-semibold text-base text-white w-[108px]">
@@ -272,7 +272,7 @@
 
                     @if(!$superOrganiser->isEmpty())
                         @foreach($superOrganiser as $super_organiser_certificate)
-                            @if(!is_null($super_organiser_certificate->name_for_certificate))
+                            @if(!empty($super_organiser_certificate->certificate_url))
                                 <div class="border-2 border-[#B399D6] rounded-lg overflow-hidden">
                                     <div class="flex">
                                         <div class="flex items-center px-4 py-5 bg-[#410098] border-r border-b border-[#B399D6] font-['Montserrat'] font-semibold text-base text-white w-[108px]">
