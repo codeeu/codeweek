@@ -33,11 +33,11 @@ class SendCertificateBatchJob implements ShouldQueue
         $runningKey = sprintf(self::CACHE_KEY_SEND_RUNNING, $this->edition, $this->type);
         Cache::put($runningKey, time(), self::CACHE_TTL);
 
-        // Send to: has cert and (not yet sent or had send error)
+        // Send to: all qualified recipients for this edition/type that are unsent or had send error.
+        // certificate_url may be null; email templates fall back to certificate pages where users generate themselves.
         $query = Excellence::query()
             ->where('edition', $this->edition)
             ->where('type', $this->type)
-            ->whereNotNull('certificate_url')
             ->where(function ($q) {
                 $q->whereNull('notified_at')->orWhereNotNull('certificate_sent_error');
             })
@@ -73,7 +73,6 @@ class SendCertificateBatchJob implements ShouldQueue
         $hasMore = Excellence::query()
             ->where('edition', $this->edition)
             ->where('type', $this->type)
-            ->whereNotNull('certificate_url')
             ->where(function ($q) {
                 $q->whereNull('notified_at')->orWhereNotNull('certificate_sent_error');
             })
