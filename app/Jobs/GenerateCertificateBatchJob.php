@@ -16,7 +16,10 @@ class GenerateCertificateBatchJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    public const BATCH_SIZE = 50;
+    public $timeout = 1200; // 20 minutes for slow PDF generation
+    public $tries = 1;
+
+    public const BATCH_SIZE = 5;
     public const CACHE_KEY_RUNNING = 'certificate_generation_running_%s_%s';
     public const CACHE_KEY_CANCELLED = 'certificate_generation_cancelled_%s_%s';
     public const CACHE_TTL_SECONDS = 86400; // 24h
