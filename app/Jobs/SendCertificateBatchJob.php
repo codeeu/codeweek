@@ -44,7 +44,7 @@ class SendCertificateBatchJob implements ShouldQueue
             ->with('user')
             ->orderBy('id');
 
-        $rows = $query->offset($this->offset)->limit(self::BATCH_SIZE)->get();
+        $rows = $query->limit(self::BATCH_SIZE)->get();
 
         foreach ($rows as $excellence) {
             $user = $excellence->user;
@@ -70,7 +70,6 @@ class SendCertificateBatchJob implements ShouldQueue
             }
         }
 
-        $nextOffset = $this->offset + $rows->count();
         $hasMore = Excellence::query()
             ->where('edition', $this->edition)
             ->where('type', $this->type)
@@ -78,12 +77,11 @@ class SendCertificateBatchJob implements ShouldQueue
             ->where(function ($q) {
                 $q->whereNull('notified_at')->orWhereNotNull('certificate_sent_error');
             })
-            ->offset($nextOffset)
             ->limit(1)
             ->exists();
 
         if ($hasMore) {
-            self::dispatch($this->edition, $this->type, $nextOffset);
+            self::dispatch($this->edition, $this->type, 0);
         } else {
             Cache::forget($runningKey);
         }
