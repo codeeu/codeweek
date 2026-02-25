@@ -78,6 +78,8 @@ class CertificateBackendController extends Controller
             ->where('edition', $edition)
             ->where('type', $type)
             ->with('user')
+            ->orderByRaw('CASE WHEN certificate_sent_error IS NOT NULL THEN 0 ELSE 1 END')
+            ->orderByRaw('CASE WHEN certificate_generation_error IS NOT NULL THEN 0 ELSE 1 END')
             ->orderBy('id');
 
         if ($search !== '') {
@@ -352,6 +354,8 @@ class CertificateBackendController extends Controller
                 $q->whereNotNull('certificate_generation_error')->orWhereNotNull('certificate_sent_error');
             })
             ->with('user')
+            ->orderByRaw('CASE WHEN certificate_sent_error IS NOT NULL THEN 0 ELSE 1 END')
+            ->orderByRaw('CASE WHEN certificate_generation_error IS NOT NULL THEN 0 ELSE 1 END')
             ->orderBy('id')
             ->get();
 
