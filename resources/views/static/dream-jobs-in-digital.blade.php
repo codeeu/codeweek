@@ -316,6 +316,7 @@
                             $flagSrc = in_array($countryCode, $localFlagCodes, true)
                                 ? "/images/flags/{$countryCode}-flag.svg"
                                 : "https://flagcdn.com/w80/{$countryCode}.png";
+                            $rolePreview = trim(preg_replace('/\s+/', ' ', strip_tags(html_entity_decode((string) ($result['role'] ?? '')))));
                         @endphp
                         <div class="p-4 rounded-2xl border-2 border-solid border-[#A4B8D9] flex flex-col gap-4 md:gap-8 bg-white">
                             <div class="flex flex-1 items-start gap-4 md:gap-8">
@@ -330,7 +331,7 @@
                                 <div class="flex flex-1 flex-col justify-between h-full">
                                     <div class="flex-grow">
                                         <p class="p-0 font-medium text-dark-blue text-[22px] lg:text-xl font-['Montserrat']">{{ $result['first_name'] }} {{ $result['last_name'] }}</p>
-                                        <p class="p-0 font-medium text-[#333E48] text-lg mb-4 font-['Montserrat'] lg:line-clamp-2">{{ $result['role'] }}</p>
+                                        <p class="p-0 font-medium text-[#333E48] text-lg mb-4 font-['Montserrat'] lg:line-clamp-2">{{ $rolePreview }}</p>
                                     </div>
 
                                     <a
