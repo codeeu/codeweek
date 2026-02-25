@@ -12,8 +12,9 @@ class CertificatePreflight extends Command
                             {--edition=2025 : Target edition year}
                             {--type=all : excellence|super-organiser|all}
                             {--limit=0 : Max records to test (0 = all)}
+                            {--batch-size=500 : Process in batches; 0 = single run}
                             {--only-pending : Test only rows without certificate_url}
-                            {--export= : Optional CSV path for failures}';
+                            {--export= : Optional CSV path for failures (only failures written)}';
 
     protected $description = 'Dry-run compile certificates (no S3 upload, no DB updates) and report failures';
 
@@ -22,6 +23,7 @@ class CertificatePreflight extends Command
         $edition = (int) $this->option('edition');
         $typeOption = strtolower(trim((string) $this->option('type')));
         $limit = max(0, (int) $this->option('limit'));
+        $batchSize = max(0, (int) $this->option('batch-size'));
         $onlyPending = (bool) $this->option('only-pending');
         $exportPath = trim((string) $this->option('export'));
 
@@ -31,7 +33,7 @@ class CertificatePreflight extends Command
             return self::FAILURE;
         }
 
-        $query = Excellence::query()
+        $baseQuery = Excellence::query()
             ->where('edition', $edition)
             ->whereIn('type', $types)
             ->with('user')
@@ -39,74 +41,105 @@ class CertificatePreflight extends Command
             ->orderBy('id');
 
         if ($onlyPending) {
-            $query->whereNull('certificate_url');
+            $baseQuery->whereNull('certificate_url');
         }
 
-        if ($limit > 0) {
-            $query->limit($limit);
-        }
-
-        $rows = $query->get();
-        if ($rows->isEmpty()) {
+        $totalToTest = (clone $baseQuery)->count();
+        if ($totalToTest === 0) {
             $this->info('No recipients found for the selected filters.');
             return self::SUCCESS;
         }
 
-        $failures = [];
-        $ok = 0;
-        $bar = $this->output->createProgressBar($rows->count());
-        $bar->start();
-
-        foreach ($rows as $e) {
-            $bar->advance();
-            $user = $e->user;
-            if (! $user) {
-                $failures[] = $this->failureRow($e, '', 'Missing related user record.');
-                continue;
-            }
-            if (! $user->email) {
-                $failures[] = $this->failureRow($e, (string) $user->email, 'Missing user email.');
-                continue;
-            }
-
-            $name = $e->name_for_certificate ?? trim(($user->firstname ?? '') . ' ' . ($user->lastname ?? ''));
-            if ($name === '') {
-                $failures[] = $this->failureRow($e, (string) $user->email, 'Empty certificate holder name.');
-                continue;
-            }
-
-            $certType = $e->type === 'SuperOrganiser' ? 'super-organiser' : 'excellence';
-            $numberOfActivities = $e->type === 'SuperOrganiser' ? (int) $user->activities($edition) : 0;
-
-            try {
-                $cert = new CertificateExcellence(
-                    $edition,
-                    $name,
-                    $certType,
-                    $numberOfActivities,
-                    (int) $user->id,
-                    (string) $user->email
-                );
-                $cert->preflight();
-                $ok++;
-            } catch (\Throwable $ex) {
-                $failures[] = $this->failureRow($e, (string) $user->email, $ex->getMessage());
-            }
+        if ($limit > 0) {
+            $totalToTest = min($totalToTest, $limit);
         }
-        $bar->finish();
-        $this->newLine(2);
 
-        $this->info("Preflight complete. Tested: {$rows->count()}, Passed: {$ok}, Failed: " . count($failures));
+        $batchSize = $batchSize > 0 ? $batchSize : $totalToTest;
+        $totalBatches = (int) ceil($totalToTest / $batchSize);
+        $this->info("Dry-run preflight: {$totalToTest} recipients in {$totalBatches} batch(es) of up to {$batchSize}. Failures only.");
+        $this->newLine();
 
-        if (! empty($failures)) {
-            $show = array_slice($failures, 0, 20);
+        $allFailures = [];
+        $totalTested = 0;
+        $totalPassed = 0;
+        $offset = 0;
+
+        while ($offset < $totalToTest) {
+            $take = min($batchSize, $totalToTest - $offset);
+            $query = (clone $baseQuery)->offset($offset)->limit($take);
+            $rows = $query->get();
+            if ($rows->isEmpty()) {
+                break;
+            }
+
+            $batchNum = (int) floor($offset / $batchSize) + 1;
+            $bar = $this->output->createProgressBar($rows->count());
+            $bar->setFormat(" Batch %current%/%max% [%bar%] %percent:3s%% — failures this batch: ");
+            $bar->start();
+
+            $batchFailures = 0;
+            foreach ($rows as $e) {
+                $user = $e->user;
+                if (! $user) {
+                    $allFailures[] = $this->failureRow($e, '', 'Missing related user record.');
+                    $batchFailures++;
+                    $bar->advance();
+                    continue;
+                }
+                if (! $user->email) {
+                    $allFailures[] = $this->failureRow($e, (string) $user->email, 'Missing user email.');
+                    $batchFailures++;
+                    $bar->advance();
+                    continue;
+                }
+
+                $name = $e->name_for_certificate ?? trim(($user->firstname ?? '') . ' ' . ($user->lastname ?? ''));
+                if ($name === '') {
+                    $allFailures[] = $this->failureRow($e, (string) $user->email, 'Empty certificate holder name.');
+                    $batchFailures++;
+                    $bar->advance();
+                    continue;
+                }
+
+                $certType = $e->type === 'SuperOrganiser' ? 'super-organiser' : 'excellence';
+                $numberOfActivities = $e->type === 'SuperOrganiser' ? (int) $user->activities($edition) : 0;
+
+                try {
+                    $cert = new CertificateExcellence(
+                        $edition,
+                        $name,
+                        $certType,
+                        $numberOfActivities,
+                        (int) $user->id,
+                        (string) $user->email
+                    );
+                    $cert->preflight();
+                    $totalPassed++;
+                } catch (\Throwable $ex) {
+                    $allFailures[] = $this->failureRow($e, (string) $user->email, $ex->getMessage());
+                    $batchFailures++;
+                }
+                $bar->advance();
+            }
+
+            $bar->finish();
+            $totalTested += $rows->count();
+            $this->line(" {$batchFailures}  |  Total: {$totalTested}/{$totalToTest} tested, " . count($allFailures) . " failures.");
+            $offset += $rows->count();
+        }
+
+        $this->newLine();
+        $this->info("Preflight complete. Tested: {$totalTested}, Passed: {$totalPassed}, Failed: " . count($allFailures));
+
+        if (! empty($allFailures)) {
+            $show = array_slice($allFailures, 0, 20);
             $this->table(['id', 'type', 'user_id', 'email', 'name', 'error'], $show);
-            if (count($failures) > 20) {
-                $this->line('Showing first 20 failures. Use --export for full list.');
+            if (count($allFailures) > 20) {
+                $this->line('(First 20 failures above. Full list in CSV if --export used.)');
             }
         }
 
-        if ($exportPath !== '') {
+        if ($exportPath !== '' && ! empty($allFailures)) {
             $path = $this->resolvePath($exportPath);
             $dir = dirname($path);
             if (! is_dir($dir) && ! @mkdir($dir, 0775, true) && ! is_dir($dir)) {
@@ -119,7 +152,7 @@ class CertificatePreflight extends Command
                 return self::FAILURE;
             }
             fputcsv($fh, ['id', 'type', 'edition', 'user_id', 'email', 'name_for_certificate', 'error']);
-            foreach ($failures as $row) {
+            foreach ($allFailures as $row) {
                 fputcsv($fh, [
                     $row['id'],
                     $row['type'],
@@ -131,7 +164,7 @@ class CertificatePreflight extends Command
                 ]);
             }
             fclose($fh);
-            $this->info("Exported failures CSV: {$path}");
+            $this->info("Exported failures only: {$path}");
         }
 
         return self::SUCCESS;
