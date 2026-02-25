@@ -73,7 +73,7 @@ class DreamJobsPage extends Model
             ->where('active', true)
             ->orderBy('position')
             ->get()
-            ->map(fn (DreamJobsResource $item) => [
+            ->map(fn (DreamJobsResource $item) => (object) [
                 'title' => $item->titleForLocale($locale),
                 'description' => $item->descriptionForLocale($locale),
                 'button_text' => $item->buttonTextForLocale($locale),
