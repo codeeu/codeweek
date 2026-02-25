@@ -11,16 +11,18 @@ class CertificateGenerateWindow extends Command
     protected $signature = 'certificate:generate-window
                             {--edition=2025 : Target edition year}
                             {--type=all : excellence|super-organiser|all}
-                            {--limit=500 : Max recipients to process per type in this run}
-                            {--include-failed : Include rows with previous generation errors}';
+                            {--limit=500 : Max recipients to process per type per batch}
+                            {--include-failed : Include rows with previous generation errors}
+                            {--once : Run only one batch per type then stop (default: run until no pending left)}';
 
-    protected $description = 'Generate certificates in controlled windows (e.g. 500 at a time); use --type=all for both certs';
+    protected $description = 'Generate certificates in batches; runs until no pending left (use --once for single batch)';
 
     public function handle(): int
     {
         $edition = (int) $this->option('edition');
         $limit = max(1, (int) $this->option('limit'));
         $includeFailed = (bool) $this->option('include-failed');
+        $once = (bool) $this->option('once');
         $typeInput = strtolower(trim((string) $this->option('type')));
         $types = $this->resolveTypes($typeInput);
         if ($types === null) {
@@ -30,22 +32,21 @@ class CertificateGenerateWindow extends Command
 
         $totalOk = 0;
         $totalFailed = 0;
-        $any = false;
+        $batchCount = 0;
 
         foreach ($types as $type) {
-            $result = $this->generateWindowForType($edition, $type, $limit, $includeFailed);
-            $totalOk += $result['ok'];
-            $totalFailed += $result['failed'];
-            if ($result['processed'] > 0) {
-                $any = true;
-            }
+            do {
+                $result = $this->generateWindowForType($edition, $type, $limit, $includeFailed);
+                $totalOk += $result['ok'];
+                $totalFailed += $result['failed'];
+                if ($result['processed'] > 0) {
+                    $batchCount++;
+                }
+            } while (! $once && $result['processed'] > 0);
         }
 
         $this->newLine();
-        $this->info("Generate window(s) complete. Total success: {$totalOk}, Total failed: {$totalFailed}.");
-        if ($any) {
-            $this->line('Run the same command again to process the next batch.');
-        }
+        $this->info("Generate complete. Batches: {$batchCount}, Total success: {$totalOk}, Total failed: {$totalFailed}.");
         return self::SUCCESS;
     }
 
