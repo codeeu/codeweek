@@ -14,6 +14,8 @@ class CertificatePreflight extends Command
                             {--limit=0 : Max records to test (0 = all)}
                             {--batch-size=500 : Process in batches; 0 = single run}
                             {--only-pending : Test only rows without certificate_url}
+                            {--emails= : Comma-separated emails to test only}
+                            {--emails-file= : Path to file with one email per line (to test only those)}
                             {--export= : Optional CSV path for failures (only failures written)}';
 
     protected $description = 'Dry-run compile certificates (no S3 upload, no DB updates) and report failures';
@@ -25,11 +27,18 @@ class CertificatePreflight extends Command
         $limit = max(0, (int) $this->option('limit'));
         $batchSize = max(0, (int) $this->option('batch-size'));
         $onlyPending = (bool) $this->option('only-pending');
+        $emailsOption = trim((string) $this->option('emails'));
+        $emailsFilePath = trim((string) $this->option('emails-file'));
         $exportPath = trim((string) $this->option('export'));
 
         $types = $this->resolveTypes($typeOption);
         if ($types === null) {
             $this->error("Invalid --type value: {$typeOption}. Use 'excellence', 'super-organiser', or 'all'.");
+            return self::FAILURE;
+        }
+
+        $emailList = $this->resolveEmailList($emailsOption, $emailsFilePath);
+        if ($emailList === null) {
             return self::FAILURE;
         }
 
@@ -40,14 +49,22 @@ class CertificatePreflight extends Command
             ->orderBy('type')
             ->orderBy('id');
 
+        if (! empty($emailList)) {
+            $baseQuery->whereHas('user', fn ($q) => $q->whereIn('email', $emailList));
+        }
+
         if ($onlyPending) {
             $baseQuery->whereNull('certificate_url');
         }
 
         $totalToTest = (clone $baseQuery)->count();
         if ($totalToTest === 0) {
-            $this->info('No recipients found for the selected filters.');
+            $this->info(empty($emailList) ? 'No recipients found for the selected filters.' : 'No Excellence rows found for the given email list (edition/type may not match).');
             return self::SUCCESS;
+        }
+
+        if (! empty($emailList)) {
+            $this->info('Restricted to '.count($emailList).' email(s) from list; '.$totalToTest.' Excellence row(s) match.');
         }
 
         if ($limit > 0) {
@@ -176,6 +193,36 @@ class CertificatePreflight extends Command
         }
 
         return self::SUCCESS;
+    }
+
+    /**
+     * @return array<string>|null Returns list of emails, or null on error (e.g. file not found).
+     */
+    private function resolveEmailList(string $emailsOption, string $emailsFilePath): ?array
+    {
+        $list = [];
+        if ($emailsOption !== '') {
+            foreach (array_map('trim', explode(',', $emailsOption)) as $e) {
+                if ($e !== '') {
+                    $list[] = $e;
+                }
+            }
+        }
+        if ($emailsFilePath !== '') {
+            $path = str_starts_with($emailsFilePath, '/') ? $emailsFilePath : base_path($emailsFilePath);
+            if (! is_file($path) || ! is_readable($path)) {
+                $this->error("Emails file not found or not readable: {$path}");
+                return null;
+            }
+            $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [];
+            foreach ($lines as $line) {
+                $e = trim($line);
+                if ($e !== '') {
+                    $list[] = $e;
+                }
+            }
+        }
+        return array_values(array_unique($list));
     }
 
     private function resolveTypes(string $typeOption): ?array
