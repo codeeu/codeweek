@@ -7,7 +7,7 @@ use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class DreamJobRoleModel extends Resource
@@ -45,7 +45,7 @@ class DreamJobRoleModel extends Resource
             Text::make('Slug', 'slug')
                 ->rules('required', 'max:255', 'unique:dream_job_role_models,slug,{{resourceId}}')
                 ->help('Used in URL, e.g. anny-tubbs'),
-            Textarea::make('Role', 'role')->rules('required'),
+            Trix::make('Role', 'role')->rules('required'),
 
             Text::make('Image URL', 'image')
                 ->rules('required', 'max:2048')
@@ -54,8 +54,10 @@ class DreamJobRoleModel extends Resource
                 ->rules('required', 'max:8')
                 ->help('Flag code used by existing assets, e.g. be, fr, gr'),
 
-            Textarea::make('Description 1', 'description1')->nullable(),
-            Textarea::make('Description 2', 'description2')->nullable(),
+            Trix::make('Description 1', 'description1')->nullable()
+                ->help('Supports rich text formatting, links, and lists.'),
+            Trix::make('Description 2', 'description2')->nullable()
+                ->help('Supports rich text formatting, links, and lists.'),
 
             Text::make('Profile Link', 'link')->nullable()->rules('nullable', 'max:2048'),
             Text::make('Video Embed URL', 'video')->nullable()->rules('nullable', 'max:2048'),
