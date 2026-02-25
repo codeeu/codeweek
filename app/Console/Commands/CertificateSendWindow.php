@@ -14,16 +14,18 @@ class CertificateSendWindow extends Command
     protected $signature = 'certificate:send-window
                             {--edition=2025 : Target edition year}
                             {--type=all : excellence|super-organiser|all}
-                            {--limit=500 : Max recipients to send per type in this run}
-                            {--include-send-failed : Include rows that previously failed sending}';
+                            {--limit=500 : Max recipients to send per type per batch}
+                            {--include-send-failed : Include rows that previously failed sending}
+                            {--once : Run only one batch per type then stop (default: run until no recipients left)}';
 
-    protected $description = 'Send certificate emails in controlled windows (e.g. 500 at a time); use --type=all for both certs';
+    protected $description = 'Send certificate emails in batches; runs until no recipients left (use --once for single batch)';
 
     public function handle(): int
     {
         $edition = (int) $this->option('edition');
         $limit = max(1, (int) $this->option('limit'));
         $includeSendFailed = (bool) $this->option('include-send-failed');
+        $once = (bool) $this->option('once');
         $typeInput = strtolower(trim((string) $this->option('type')));
         $types = $this->resolveTypes($typeInput);
         if ($types === null) {
@@ -33,22 +35,22 @@ class CertificateSendWindow extends Command
 
         $totalQueued = 0;
         $totalFailed = 0;
-        $any = false;
+        $batchCount = 0;
 
         foreach ($types as $type) {
-            $result = $this->sendWindowForType($edition, $type, $limit, $includeSendFailed);
-            $totalQueued += $result['queued'];
-            $totalFailed += $result['failed'];
-            if ($result['processed'] > 0) {
-                $any = true;
-            }
+            do {
+                $result = $this->sendWindowForType($edition, $type, $limit, $includeSendFailed);
+                $totalQueued += $result['queued'];
+                $totalFailed += $result['failed'];
+                if ($result['processed'] > 0) {
+                    $batchCount++;
+                }
+            } while (! $once && $result['processed'] > 0);
         }
 
         $this->newLine();
-        $this->info("Send window(s) complete. Total queued: {$totalQueued}, Total failed: {$totalFailed}.");
-        if ($any) {
-            $this->line('Run the same command again to process the next batch (or ensure queue worker is running: php artisan queue:work).');
-        }
+        $this->info("Send complete. Batches: {$batchCount}, Total queued: {$totalQueued}, Total failed: {$totalFailed}.");
+        $this->line('Ensure queue worker is running to deliver: php artisan queue:work');
         return self::SUCCESS;
     }
 
