@@ -65,6 +65,12 @@ class DreamJobRoleModel extends Resource
                 ->nullable()
                 ->rules('nullable', 'max:255')
                 ->help('Either a full URL (e.g. S3 link) OR a filename in /public/docs/dream-jobs/, e.g. Career Pathway Map Anny Tubbs.pdf'),
+            Trix::make('Pathway section title', 'pathway_title')
+                ->nullable()
+                ->help('Shown above the pathway map (e.g. Explore Career Pathway). Supports links and formatting.'),
+            Text::make('Pathway CTA text', 'pathway_cta_text')
+                ->nullable()
+                ->help('Link label under the map. Defaults to "Career Pathway Map".'),
 
             Number::make('Position', 'position')
                 ->min(0)
