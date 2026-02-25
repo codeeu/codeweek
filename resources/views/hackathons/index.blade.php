@@ -152,7 +152,7 @@
                         <div class="flex flex-col gap-x-2 gap-y-4 tablet:flex-row lg:flex-col 2xl:flex-row">
                             <a
                                 class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
-                                target="_blank" href="@if($dynamic && $page && $page->recap_button_link){{ $page->recap_button_link }}@elsehttps://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024@endif"
+                                target="_blank" href="{{ ($dynamic && $page && $page->recap_button_link) ? $page->recap_button_link : 'https://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024' }}"
                             >
                                 @if($dynamic && $page && $page->contentForLocale('recap_button_text'))
                                     {{ $page->contentForLocale('recap_button_text') }}
@@ -162,7 +162,7 @@
                             </a>
                             <a
                                 class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                target="_blank" href="@if($dynamic && $page && $page->toolkit_button_link){{ $page->toolkit_button_link }}@else/docs/C4EU_D2.7 Code Week Event Hackathon Design & Toolkit Final 18.06.2025.pdf@endif"
+                                target="_blank" href="{{ ($dynamic && $page && $page->toolkit_button_link) ? $page->toolkit_button_link : '/docs/C4EU_D2.7 Code Week Event Hackathon Design & Toolkit Final 18.06.2025.pdf' }}"
                             >
                                 <span>
                                     @if($dynamic && $page && $page->contentForLocale('toolkit_button_text'))
