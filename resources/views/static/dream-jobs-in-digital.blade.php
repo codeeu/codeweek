@@ -227,13 +227,13 @@
                                 class="mb-4 max-w-full"
                                 src="/images/dream-jobs/dream_jobs_logo.svg"
                             />
-                            <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
+                            <div class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($heroDynamic && $page && $page->contentForLocale('hero_intro'))
                                     {!! $page->contentForLocale('hero_intro') !!}
                                 @else
                                     @lang('dream-jobs-in-digital.landing_header')
                                 @endif
-                            </p>
+                            </div>
                             <a
                                 class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
                                 href="{{ ($heroDynamic && $page && $page->hero_cta_link) ? $page->hero_cta_link : '#dream-job-resources' }}"
@@ -273,13 +273,13 @@
                         @lang('dream-jobs-in-digital.about_title')
                     @endif
                 </h2>
-                <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
+                <div class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0">
                     @if($aboutDynamic && $page && $page->contentForLocale('about_description'))
                         {!! $page->contentForLocale('about_description') !!}
                     @else
                         @lang('dream-jobs-in-digital.about_description')
                     @endif
-                </p>
+                </div>
                 <div class="relative">
                     <img
                         class="w-full rounded-2xl object-cover object-center h-[calc(80vw-40px)] sm:h-auto"
