@@ -63,8 +63,24 @@ class CertificatePreflight extends Command
         $totalTested = 0;
         $totalPassed = 0;
         $offset = 0;
+        $exportFh = null;
+        if ($exportPath !== '') {
+            $path = $this->resolvePath($exportPath);
+            $dir = dirname($path);
+            if (! is_dir($dir) && ! @mkdir($dir, 0775, true) && ! is_dir($dir)) {
+                $this->error("Failed to create export directory: {$dir}");
+                return self::FAILURE;
+            }
+            $exportFh = @fopen($path, 'wb');
+            if (! $exportFh) {
+                $this->error("Failed to open export file: {$path}");
+                return self::FAILURE;
+            }
+            fputcsv($exportFh, ['id', 'type', 'edition', 'user_id', 'email', 'name_for_certificate', 'error']);
+        }
 
         while ($offset < $totalToTest) {
+            $failuresBeforeBatch = count($allFailures);
             $take = min($batchSize, $totalToTest - $offset);
             $query = (clone $baseQuery)->offset($offset)->limit($take);
             $rows = $query->get();
@@ -72,7 +88,6 @@ class CertificatePreflight extends Command
                 break;
             }
 
-            $batchNum = (int) floor($offset / $batchSize) + 1;
             $bar = $this->output->createProgressBar($rows->count());
             $bar->setFormat(" Batch %current%/%max% [%bar%] %percent:3s%% — failures this batch: ");
             $bar->start();
@@ -125,6 +140,21 @@ class CertificatePreflight extends Command
             $bar->finish();
             $totalTested += $rows->count();
             $this->line(" {$batchFailures}  |  Total: {$totalTested}/{$totalToTest} tested, " . count($allFailures) . " failures.");
+            if ($exportFh !== null) {
+                $batchFailureRows = array_slice($allFailures, $failuresBeforeBatch);
+                foreach ($batchFailureRows as $row) {
+                    fputcsv($exportFh, [
+                        $row['id'],
+                        $row['type'],
+                        $edition,
+                        $row['user_id'],
+                        $row['email'],
+                        $row['name'],
+                        $row['error'],
+                    ]);
+                }
+                fflush($exportFh);
+            }
             $offset += $rows->count();
         }
 
@@ -139,31 +169,9 @@ class CertificatePreflight extends Command
             }
         }
 
-        if ($exportPath !== '') {
+        if ($exportFh !== null) {
+            fclose($exportFh);
             $path = $this->resolvePath($exportPath);
-            $dir = dirname($path);
-            if (! is_dir($dir) && ! @mkdir($dir, 0775, true) && ! is_dir($dir)) {
-                $this->error("Failed to create export directory: {$dir}");
-                return self::FAILURE;
-            }
-            $fh = @fopen($path, 'wb');
-            if (! $fh) {
-                $this->error("Failed to open export file: {$path}");
-                return self::FAILURE;
-            }
-            fputcsv($fh, ['id', 'type', 'edition', 'user_id', 'email', 'name_for_certificate', 'error']);
-            foreach ($allFailures as $row) {
-                fputcsv($fh, [
-                    $row['id'],
-                    $row['type'],
-                    $edition,
-                    $row['user_id'],
-                    $row['email'],
-                    $row['name'],
-                    $row['error'],
-                ]);
-            }
-            fclose($fh);
             $this->info(empty($allFailures) ? "Exported (no failures): {$path}" : "Exported failures only: {$path}");
         }
 
