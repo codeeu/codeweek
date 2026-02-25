@@ -307,6 +307,16 @@
                 </h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 lg:gap-8">
                     @foreach($sortedResults as $result)
+                        @php
+                            $countryCode = strtolower(trim((string) ($result['country'] ?? '')));
+                            if ($countryCode === 'po') {
+                                $countryCode = 'pl';
+                            }
+                            $localFlagCodes = ['be', 'da', 'ei', 'fr', 'gm', 'gr', 'lo', 'sp', 'sz', 'uk'];
+                            $flagSrc = in_array($countryCode, $localFlagCodes, true)
+                                ? "/images/flags/{$countryCode}-flag.svg"
+                                : "https://flagcdn.com/w80/{$countryCode}.png";
+                        @endphp
                         <div class="p-4 rounded-2xl border-2 border-solid border-[#A4B8D9] flex flex-col gap-4 md:gap-8 bg-white">
                             <div class="flex flex-1 items-start gap-4 md:gap-8">
                                 <div class="relative w-32 flex-shrink-0">
@@ -314,7 +324,8 @@
                                         class="block w-32 h-32 object-cover object-center rounded-lg"
                                         src="{{ $result['image'] }}"
                                     />
-                                    <img class="absolute w-[26px] h-auto object-center bottom-2.5 right-2.5 shadow-lg rounded-sm" src="/images/flags/{{ $result['country'] }}-flag.svg" />
+                                    <img class="absolute w-[26px] h-auto object-center bottom-2.5 right-2.5 shadow-lg rounded-sm"
+                                        src="{{ $flagSrc }}" onerror="this.style.display='none';" />
                                 </div>
                                 <div class="flex flex-1 flex-col justify-between h-full">
                                     <div class="flex-grow">
