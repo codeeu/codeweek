@@ -139,7 +139,7 @@ class CertificatePreflight extends Command
             }
         }
 
-        if ($exportPath !== '' && ! empty($allFailures)) {
+        if ($exportPath !== '') {
             $path = $this->resolvePath($exportPath);
             $dir = dirname($path);
             if (! is_dir($dir) && ! @mkdir($dir, 0775, true) && ! is_dir($dir)) {
@@ -164,7 +164,7 @@ class CertificatePreflight extends Command
                 ]);
             }
             fclose($fh);
-            $this->info("Exported failures only: {$path}");
+            $this->info(empty($allFailures) ? "Exported (no failures): {$path}" : "Exported failures only: {$path}");
         }
 
         return self::SUCCESS;
