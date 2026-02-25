@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
@@ -39,70 +40,8 @@ class DreamJobsPage extends Resource
         return $query->where('id', 1);
     }
 
-    private static function localesSorted(): array
-    {
-        $locales = config('app.locales', ['en']);
-        if (is_string($locales)) {
-            $locales = array_map('trim', explode(',', $locales));
-        }
-        $locales = array_values(array_filter($locales));
-        if (empty($locales)) {
-            $locales = ['en'];
-        }
-        sort($locales);
-
-        return $locales;
-    }
-
     public function fields(Request $request): array
     {
-        $translationKeys = [
-            'hero_intro' => 'Hero intro',
-            'hero_cta_text' => 'Hero button text',
-            'about_title' => 'About title',
-            'about_description' => 'About description',
-            'role_models_title' => 'Role models section title',
-            'resources_title' => 'Resources section title',
-        ];
-
-        $translationFields = [];
-        foreach (self::localesSorted() as $locale) {
-            if ($locale === 'en') {
-                continue;
-            }
-            foreach ($translationKeys as $key => $label) {
-                $isLongText = in_array($key, ['hero_intro', 'about_description'], true);
-                $fieldName = 'locale_' . $locale . '_' . $key;
-                if ($isLongText) {
-                    $translationFields[] = Textarea::make($label . ' (' . strtoupper($locale) . ')', $fieldName)
-                        ->nullable()
-                        ->resolveUsing(function () use ($locale, $key) {
-                            $overrides = $this->resource->locale_overrides ?? [];
-
-                            return $overrides[$locale][$key] ?? '';
-                        })
-                        ->fillUsing(function ($request, $model, $attribute, $requestAttribute) use ($locale, $key) {
-                            $overrides = $model->locale_overrides ?? [];
-                            $overrides[$locale][$key] = $request->get($requestAttribute) ?: null;
-                            $model->locale_overrides = $overrides;
-                        });
-                } else {
-                    $translationFields[] = Text::make($label . ' (' . strtoupper($locale) . ')', $fieldName)
-                        ->nullable()
-                        ->resolveUsing(function () use ($locale, $key) {
-                            $overrides = $this->resource->locale_overrides ?? [];
-
-                            return $overrides[$locale][$key] ?? '';
-                        })
-                        ->fillUsing(function ($request, $model, $attribute, $requestAttribute) use ($locale, $key) {
-                            $overrides = $model->locale_overrides ?? [];
-                            $overrides[$locale][$key] = $request->get($requestAttribute) ?: null;
-                            $model->locale_overrides = $overrides;
-                        });
-                }
-            }
-        }
-
         $resourcesPanelFields = [
             Boolean::make('Use dynamic content for this section', 'resources_dynamic'),
             Text::make('Resources section title', 'resources_title')->nullable(),
@@ -136,11 +75,12 @@ class DreamJobsPage extends Resource
             Panel::make('Resources section (global for all role model pages)', $resourcesPanelFields)
                 ->collapsable()
                 ->collapsedByDefault(),
+            Panel::make('Translations (JSON)', [
+                Code::make('Locale overrides', 'locale_overrides')
+                    ->json()
+                    ->help('Optional per-locale overrides. Example: {"fr":{"hero_intro":"..."}}'),
+            ])->collapsable()->collapsedByDefault(),
         ];
-
-        if (!empty($translationFields)) {
-            $fields[] = new Panel('Translations', $translationFields);
-        }
 
         return $fields;
     }

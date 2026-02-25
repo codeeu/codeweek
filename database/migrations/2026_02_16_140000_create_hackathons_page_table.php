@@ -23,6 +23,8 @@ return new class extends Migration {
                 $table->text('details_paragraph_3')->nullable();
                 $table->text('details_paragraph_4')->nullable();
                 $table->string('video_url')->nullable();
+                $table->string('extra_button_text')->nullable();
+                $table->string('extra_button_link')->nullable();
                 $table->string('recap_button_text')->nullable();
                 $table->string('recap_button_link')->nullable();
                 $table->string('toolkit_button_text')->nullable();
