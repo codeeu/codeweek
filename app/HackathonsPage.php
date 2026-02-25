@@ -21,6 +21,8 @@ class HackathonsPage extends Model
         'details_paragraph_3',
         'details_paragraph_4',
         'video_url',
+        'extra_button_text',
+        'extra_button_link',
         'recap_button_text',
         'recap_button_link',
         'toolkit_button_text',
