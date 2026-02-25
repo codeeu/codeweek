@@ -278,16 +278,18 @@
                     </h2>
                     <img class="shadow-lg rounded w-12 h-9" width="48" src="/images/flags/{{ $item['country'] }}-flag.svg" />
                 </div>
-                <p class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0 mb-6">{{ $item['role'] }}</p>
+                <div class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_div]:p-0 [&_div]:m-0">
+                    {!! $item['role'] !!}
+                </div>
                 <div class="flex flex-col tablet:flex-row gap-6 xl:gap-12">
                     <div class="w-full tablet:w-1/3 xl:w-1/3">
                         <img class="rounded-xl mb-6 w-full" src="{{ $item['image'] }}" />
-                        <p class="font-normal text-2xl p-0 mb-6">
-                            {{ $item['description1'] }}
-                        </p>
-                        <p class="text-[#333E48] font-normal text-xl p-0 mb-6">
-                            {{ $item['description2'] }}
-                        </p>
+                        <div class="font-normal text-2xl p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0 [&_div]:p-0 [&_div]:m-0 [&_div]:mb-6 [&_div:last-child]:mb-0">
+                            {!! $item['description1'] !!}
+                        </div>
+                        <div class="text-[#333E48] font-normal text-xl p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0 [&_div]:p-0 [&_div]:m-0 [&_div]:mb-6 [&_div:last-child]:mb-0">
+                            {!! $item['description2'] !!}
+                        </div>
                         <p class="text-[#333E48] font-normal text-xl p-0 mb-6">
                             Check out the career journey here: <a class="text-dark-blue underline" href="{{ $item['link'] }}" target="_blank">{{ $item['first_name'] }} {{ $item['last_name'] }}</a>
                         </p>
