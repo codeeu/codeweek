@@ -64,7 +64,7 @@ class DreamJobRoleModel extends Resource
             Text::make('Pathway Map Filename', 'pathway_map_link')
                 ->nullable()
                 ->rules('nullable', 'max:255')
-                ->help('Filename in /public/docs/dream-jobs/, e.g. Career Pathway Map Anny Tubbs.pdf'),
+                ->help('Either a full URL (e.g. S3 link) OR a filename in /public/docs/dream-jobs/, e.g. Career Pathway Map Anny Tubbs.pdf'),
 
             Number::make('Position', 'position')
                 ->min(0)
