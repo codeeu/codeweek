@@ -150,6 +150,14 @@
                             @endif
                         </p>
                         <div class="flex flex-col gap-x-2 gap-y-4 tablet:flex-row lg:flex-col 2xl:flex-row">
+                            @if($dynamic && $page && $page->extra_button_link && $page->contentForLocale('extra_button_text'))
+                                <a
+                                    class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
+                                    target="_blank" href="{{ $page->extra_button_link }}"
+                                >
+                                    {{ $page->contentForLocale('extra_button_text') }}
+                                </a>
+                            @endif
                             <a
                                 class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                 target="_blank" href="{{ ($dynamic && $page && $page->recap_button_link) ? $page->recap_button_link : 'https://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024' }}"
