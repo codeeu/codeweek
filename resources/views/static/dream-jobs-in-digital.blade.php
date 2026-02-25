@@ -5,7 +5,15 @@
       (object) ['label' => 'Careers in Digital', 'href' => ''],
     ];
 
-    $roles = [
+    $hasDreamJobsPageTable = \Illuminate\Support\Facades\Schema::hasTable('dream_jobs_page');
+    $hasDreamJobsResourcesTable = \Illuminate\Support\Facades\Schema::hasTable('dream_jobs_resources');
+    $page = $hasDreamJobsPageTable ? \App\DreamJobsPage::config() : null;
+    $heroDynamic = $page && $page->hero_dynamic;
+    $aboutDynamic = $page && $page->about_dynamic;
+    $roleModelsDynamic = $page && $page->role_models_dynamic;
+    $resourcesDynamic = $page && $page->resources_dynamic;
+
+    $fallbackRoles = [
         [
             'id' => '1',
             'first_name' => 'Anny',
@@ -125,10 +133,33 @@
         ],
     ];
 
-    $result = collect($roles);
-    $sortedResults = $result->sortBy('first_name');
+    $hasRoleModelsTable = \Illuminate\Support\Facades\Schema::hasTable('dream_job_role_models');
+    $hasDbRoleModels = $hasRoleModelsTable
+        ? \App\DreamJobRoleModel::query()->where('active', true)->exists()
+        : false;
 
-    $resources = [
+    if ($hasDbRoleModels) {
+        $sortedResults = \App\DreamJobRoleModel::query()
+            ->where('active', true)
+            ->orderBy('position')
+            ->orderBy('first_name')
+            ->get()
+            ->map(function ($item) {
+                return [
+                    'id' => (string) $item->id,
+                    'first_name' => (string) $item->first_name,
+                    'last_name' => (string) $item->last_name,
+                    'slug' => (string) $item->slug,
+                    'role' => (string) $item->role,
+                    'image' => (string) $item->image,
+                    'country' => (string) $item->country,
+                ];
+            });
+    } else {
+        $sortedResults = collect($fallbackRoles)->sortBy('first_name');
+    }
+
+    $fallbackResources = [
         (object) [
             'title' =>  __('dream-jobs-in-digital.resource_title_1'),
             'description' =>  __('dream-jobs-in-digital.resource_description_1'),
@@ -176,7 +207,10 @@
             ];
         });
 
-    $resources = $dbResources->concat(collect($resources))->all();
+    $fallbackResources = $dbResources->concat(collect($fallbackResources))->all();
+
+    $dynamicResources = ($page && $hasDreamJobsResourcesTable) ? $page->resourcesForLocale() : [];
+    $resources = ($resourcesDynamic && !empty($dynamicResources)) ? $dynamicResources : $fallbackResources;
 @endphp
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
@@ -194,13 +228,23 @@
                                 src="/images/dream-jobs/dream_jobs_logo.svg"
                             />
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
-                                @lang('dream-jobs-in-digital.landing_header')
+                                @if($heroDynamic && $page && $page->contentForLocale('hero_intro'))
+                                    {!! $page->contentForLocale('hero_intro') !!}
+                                @else
+                                    @lang('dream-jobs-in-digital.landing_header')
+                                @endif
                             </p>
                             <a
                                 class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                href="#dream-job-resources"
+                                href="@if($heroDynamic && $page && $page->hero_cta_link){{ $page->hero_cta_link }}@else#dream-job-resources@endif"
                             >
-                                <span>@lang('dream-jobs-in-digital.get_involved')</span>
+                                <span>
+                                    @if($heroDynamic && $page && $page->contentForLocale('hero_cta_text'))
+                                        {{ $page->contentForLocale('hero_cta_text') }}
+                                    @else
+                                        @lang('dream-jobs-in-digital.get_involved')
+                                    @endif
+                                </span>
                             </a>
                         </div>
                         <img
@@ -223,10 +267,18 @@
         <section class="relative flex overflow-hidden">
             <div class="relative pt-10 md:pt-28 codeweek-container-lg">
                 <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block">
-                    @lang('dream-jobs-in-digital.about_title')
+                    @if($aboutDynamic && $page && $page->contentForLocale('about_title'))
+                        {{ $page->contentForLocale('about_title') }}
+                    @else
+                        @lang('dream-jobs-in-digital.about_title')
+                    @endif
                 </h2>
                 <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
-                    @lang('dream-jobs-in-digital.about_description')
+                    @if($aboutDynamic && $page && $page->contentForLocale('about_description'))
+                        {!! $page->contentForLocale('about_description') !!}
+                    @else
+                        @lang('dream-jobs-in-digital.about_description')
+                    @endif
                 </p>
                 <div class="relative">
                     <img
@@ -237,7 +289,7 @@
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                         @include('layout.video-player', [
                           'id' => 'careers-about',
-                          'src' => 'https://www.youtube.com/embed/pzP-kToeym4?si=FzutCQGW4rO5M_5A',
+                          'src' => ($aboutDynamic && $page && $page->about_video_url) ? $page->about_video_url : 'https://www.youtube.com/embed/pzP-kToeym4?si=FzutCQGW4rO5M_5A',
                         ])
                     </div>
                 </div>
@@ -247,7 +299,11 @@
         <section class="relative flex z-10">
             <div class="relative pt-10 pb-10 md:pt-12 md:pb-28 codeweek-container-lg z-[1]">
                 <h2 class="text-dark-blue text-2xl md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-10">
-                    @lang('dream-jobs-in-digital.our_role_models')
+                    @if($roleModelsDynamic && $page && $page->contentForLocale('role_models_title'))
+                        {{ $page->contentForLocale('role_models_title') }}
+                    @else
+                        @lang('dream-jobs-in-digital.our_role_models')
+                    @endif
                 </h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 lg:gap-8">
                     @foreach($sortedResults as $result)
@@ -314,7 +370,11 @@
             <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
                 <h2 class="text-white md:text-center text-3xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
-                    @lang('dream-jobs-in-digital.resources')
+                    @if($resourcesDynamic && $page && $page->contentForLocale('resources_title'))
+                        {{ $page->contentForLocale('resources_title') }}
+                    @else
+                        @lang('dream-jobs-in-digital.resources')
+                    @endif
                 </h2>
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 xl:gap-20">
                     @foreach($resources as $resource)

@@ -3,7 +3,7 @@
 @php
     $slug = request()->segment(2);
 
-    $results = [
+    $fallbackResults = [
         [
             'id' => '1',
             'first_name' => 'Anny',
@@ -188,14 +188,49 @@
         ],
     ];
 
-    $item = collect($results)->firstWhere('slug', $slug);
+    $hasRoleModelsTable = \Illuminate\Support\Facades\Schema::hasTable('dream_job_role_models');
+    $hasDbRoleModels = $hasRoleModelsTable
+        ? \App\DreamJobRoleModel::query()->where('active', true)->exists()
+        : false;
+
+    if ($hasDbRoleModels) {
+        $dbItem = \App\DreamJobRoleModel::query()
+            ->where('active', true)
+            ->where('slug', $slug)
+            ->first();
+
+        abort_if(! $dbItem, 404);
+
+        $item = [
+            'id' => (string) $dbItem->id,
+            'first_name' => (string) $dbItem->first_name,
+            'last_name' => (string) $dbItem->last_name,
+            'slug' => (string) $dbItem->slug,
+            'role' => (string) $dbItem->role,
+            'image' => (string) $dbItem->image,
+            'description1' => (string) ($dbItem->description1 ?? ''),
+            'description2' => (string) ($dbItem->description2 ?? ''),
+            'link' => (string) ($dbItem->link ?? ''),
+            'video' => (string) ($dbItem->video ?? ''),
+            'pathway_map_link' => (string) ($dbItem->pathway_map_link ?? ''),
+            'country' => (string) $dbItem->country,
+        ];
+    } else {
+        $item = collect($fallbackResults)->firstWhere('slug', $slug);
+        abort_if(! $item, 404);
+    }
 
     $list = [
       (object) ['label' => 'Careers in Digital', 'href' => '/dream-jobs-in-digital'],
       (object) ['label' => $item['first_name'] . ' ' . $item['last_name'], 'href' => ''],
     ];
 
-    $resources = [
+    $hasDreamJobsPageTable = \Illuminate\Support\Facades\Schema::hasTable('dream_jobs_page');
+    $hasDreamJobsResourcesTable = \Illuminate\Support\Facades\Schema::hasTable('dream_jobs_resources');
+    $page = $hasDreamJobsPageTable ? \App\DreamJobsPage::config() : null;
+    $resourcesDynamic = $page && $page->resources_dynamic;
+
+    $fallbackResources = [
         (object) [
             'title' =>  __('dream-jobs-in-digital.resource_title_1'),
             'description' =>  __('dream-jobs-in-digital.resource_description_1'),
@@ -225,6 +260,9 @@
             'image' => '/images/dream-jobs/skills-test.png',
         ],
     ];
+
+    $dynamicResources = ($page && $hasDreamJobsResourcesTable) ? $page->resourcesForLocale() : [];
+    $resources = ($resourcesDynamic && !empty($dynamicResources)) ? $dynamicResources : $fallbackResources;
 @endphp
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
@@ -298,7 +336,11 @@
             <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
                 <h2 class="text-white md:text-center text-3xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
-                    @lang('dream-jobs-in-digital.resources')
+                    @if($resourcesDynamic && $page && $page->contentForLocale('resources_title'))
+                        {{ $page->contentForLocale('resources_title') }}
+                    @else
+                        @lang('dream-jobs-in-digital.resources')
+                    @endif
                 </h2>
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 xl:gap-20">
                     @foreach($resources as $resource)

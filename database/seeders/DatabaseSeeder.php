@@ -29,6 +29,9 @@ class DatabaseSeeder extends Seeder
 
         // Resource seeders
         $this->call(ResourceEditorRoleSeeder::class);
+        $this->call(DreamJobRoleModelSeeder::class);
+        $this->call(DreamJobsPageSeeder::class);
+        $this->call(HackathonsPageSeeder::class);
 
         $this->call(SchoolSeeder::class);
 
