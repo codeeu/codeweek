@@ -12,7 +12,7 @@ class CertificateStats extends Command
 {
     protected $signature = 'certificate:stats
                             {--edition=2025 : Target edition year}
-                            {--type=excellence : excellence|super-organiser}
+                            {--type=all : excellence|super-organiser|all}
                             {--sample=10 : Number of sample user IDs to show for missing/extra}';
 
     protected $description = 'Show diagnostic counts for certificate backend recipients and processing status';
@@ -23,12 +23,20 @@ class CertificateStats extends Command
         $typeOption = (string) $this->option('type');
         $sampleSize = max(0, (int) $this->option('sample'));
 
-        $normalizedType = $this->normalizeType($typeOption);
-        if ($normalizedType === null) {
-            $this->error("Invalid --type value: {$typeOption}. Use 'excellence' or 'super-organiser'.");
+        $types = $this->resolveTypes($typeOption);
+        if ($types === null) {
+            $this->error("Invalid --type value: {$typeOption}. Use 'excellence', 'super-organiser', or 'all'.");
             return self::FAILURE;
         }
 
+        foreach ($types as $normalizedType) {
+            $this->outputStatsForType($edition, $normalizedType, $sampleSize);
+        }
+        return self::SUCCESS;
+    }
+
+    private function outputStatsForType(int $edition, string $normalizedType, int $sampleSize): void
+    {
         $eligibleUserIds = $this->eligibleUserIds($edition, $normalizedType);
         $eligibleUserIds = array_values(array_unique(array_filter(array_map('intval', $eligibleUserIds))));
 
@@ -91,16 +99,16 @@ class CertificateStats extends Command
             $this->line('Sample missing user IDs: ' . $this->sampleCsv($missingUserIds, $sampleSize));
             $this->line('Sample extra user IDs: ' . $this->sampleCsv($extraUserIds, $sampleSize));
         }
-
-        return self::SUCCESS;
     }
 
-    private function normalizeType(string $typeOption): ?string
+    /** @return array<string>|null */
+    private function resolveTypes(string $typeOption): ?array
     {
         $slug = strtolower(trim($typeOption));
         return match ($slug) {
-            'excellence' => 'Excellence',
-            'super-organiser', 'superorganiser' => 'SuperOrganiser',
+            'all' => ['Excellence', 'SuperOrganiser'],
+            'excellence' => ['Excellence'],
+            'super-organiser', 'superorganiser' => ['SuperOrganiser'],
             default => null,
         };
     }

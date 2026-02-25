@@ -13,11 +13,11 @@ class CertificateSendWindow extends Command
 {
     protected $signature = 'certificate:send-window
                             {--edition=2025 : Target edition year}
-                            {--type=excellence : excellence|super-organiser}
-                            {--limit=500 : Max recipients to send in this run}
+                            {--type=all : excellence|super-organiser|all}
+                            {--limit=500 : Max recipients to send per type in this run}
                             {--include-send-failed : Include rows that previously failed sending}';
 
-    protected $description = 'Send certificate emails in controlled windows (e.g. 500 at a time)';
+    protected $description = 'Send certificate emails in controlled windows (e.g. 500 at a time); use --type=all for both certs';
 
     public function handle(): int
     {
@@ -25,17 +25,36 @@ class CertificateSendWindow extends Command
         $limit = max(1, (int) $this->option('limit'));
         $includeSendFailed = (bool) $this->option('include-send-failed');
         $typeInput = strtolower(trim((string) $this->option('type')));
-        $type = match ($typeInput) {
-            'excellence' => 'Excellence',
-            'super-organiser', 'superorganiser' => 'SuperOrganiser',
-            default => null,
-        };
-
-        if ($type === null) {
-            $this->error("Invalid --type value: {$typeInput}. Use 'excellence' or 'super-organiser'.");
+        $types = $this->resolveTypes($typeInput);
+        if ($types === null) {
+            $this->error("Invalid --type value: {$typeInput}. Use 'excellence', 'super-organiser', or 'all'.");
             return self::FAILURE;
         }
 
+        $totalQueued = 0;
+        $totalFailed = 0;
+        $any = false;
+
+        foreach ($types as $type) {
+            $result = $this->sendWindowForType($edition, $type, $limit, $includeSendFailed);
+            $totalQueued += $result['queued'];
+            $totalFailed += $result['failed'];
+            if ($result['processed'] > 0) {
+                $any = true;
+            }
+        }
+
+        $this->newLine();
+        $this->info("Send window(s) complete. Total queued: {$totalQueued}, Total failed: {$totalFailed}.");
+        if ($any) {
+            $this->line('Run the same command again to process the next batch (or ensure queue worker is running: php artisan queue:work).');
+        }
+        return self::SUCCESS;
+    }
+
+    /** @return array{processed: int, queued: int, failed: int} */
+    private function sendWindowForType(int $edition, string $type, int $limit, bool $includeSendFailed): array
+    {
         $query = Excellence::query()
             ->where('edition', $edition)
             ->where('type', $type)
@@ -51,12 +70,13 @@ class CertificateSendWindow extends Command
 
         $rows = $query->get();
         if ($rows->isEmpty()) {
-            $this->info('No recipients found for this send window.');
-            return self::SUCCESS;
+            $this->line("  [{$type}] No recipients left for this window.");
+            return ['processed' => 0, 'queued' => 0, 'failed' => 0];
         }
 
-        $this->info("Queueing {$rows->count()} {$type} emails for edition {$edition}...");
+        $this->info("[{$type}] Queueing {$rows->count()} emails (edition {$edition})...");
         $bar = $this->output->createProgressBar($rows->count());
+        $bar->setFormat("  %current%/%max% [%bar%] %percent:3s%%");
         $bar->start();
 
         $queued = 0;
@@ -89,10 +109,19 @@ class CertificateSendWindow extends Command
         }
 
         $bar->finish();
-        $this->newLine(2);
-        $this->info("Send window complete. Queued: {$queued}, Failed: {$failed}.");
-        $this->line('Run again to process the next send window.');
+        $this->newLine();
+        $this->line("  [{$type}] Done. Queued: {$queued}, Failed: {$failed}.");
+        return ['processed' => $rows->count(), 'queued' => $queued, 'failed' => $failed];
+    }
 
-        return self::SUCCESS;
+    /** @return array<string>|null */
+    private function resolveTypes(string $typeInput): ?array
+    {
+        return match ($typeInput) {
+            'all' => ['Excellence', 'SuperOrganiser'],
+            'excellence' => ['Excellence'],
+            'super-organiser', 'superorganiser' => ['SuperOrganiser'],
+            default => null,
+        };
     }
 }
