@@ -222,7 +222,8 @@
         abort_if(! $item, 404);
     }
 
-    $item['pathway_title'] = (string) ($item['pathway_title'] ?? 'Explore Career Pathway');
+    $defaultPathwayTitle = 'For inspiration from more role models check out <a class="text-dark-blue underline" target="_blank" rel="noopener" href="https://high5girls.dk/bliv-rollemodel-2/">High5Girls rollemodeller - kvinder i STEM-fag</a>';
+    $item['pathway_title'] = (string) ($item['pathway_title'] ?? $defaultPathwayTitle);
     $item['pathway_cta_text'] = (string) ($item['pathway_cta_text'] ?? 'Career Pathway Map');
 
     $list = [

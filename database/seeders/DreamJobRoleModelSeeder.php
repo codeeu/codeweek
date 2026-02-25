@@ -7,6 +7,8 @@ use Illuminate\Database\Seeder;
 
 class DreamJobRoleModelSeeder extends Seeder
 {
+    private const DEFAULT_PATHWAY_TITLE = 'For inspiration from more role models check out <a class="text-dark-blue underline" target="_blank" rel="noopener" href="https://high5girls.dk/bliv-rollemodel-2/">High5Girls rollemodeller - kvinder i STEM-fag</a>';
+
     /**
      * Seed Dream Jobs role models from the current hardcoded defaults.
      * Safe to run multiple times (upserts by slug).
@@ -199,7 +201,7 @@ class DreamJobRoleModelSeeder extends Seeder
                     'link' => $row['link'],
                     'video' => $row['video'],
                     'pathway_map_link' => $row['pathway_map_link'] !== '' ? $row['pathway_map_link'] : null,
-                    'pathway_title' => $row['pathway_title'] ?? 'Explore Career Pathway',
+                    'pathway_title' => $row['pathway_title'] ?? self::DEFAULT_PATHWAY_TITLE,
                     'pathway_cta_text' => $row['pathway_cta_text'] ?? 'Career Pathway Map',
                     'position' => $index,
                     'active' => true,
