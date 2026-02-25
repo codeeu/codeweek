@@ -225,6 +225,15 @@
       (object) ['label' => $item['first_name'] . ' ' . $item['last_name'], 'href' => ''],
     ];
 
+    $countryCode = strtolower(trim((string) ($item['country'] ?? '')));
+    if ($countryCode === 'po') {
+        $countryCode = 'pl';
+    }
+    $localFlagCodes = ['be', 'da', 'ei', 'fr', 'gm', 'gr', 'lo', 'sp', 'sz', 'uk'];
+    $flagSrc = in_array($countryCode, $localFlagCodes, true)
+        ? "/images/flags/{$countryCode}-flag.svg"
+        : "https://flagcdn.com/w80/{$countryCode}.png";
+
     $hasDreamJobsPageTable = \Illuminate\Support\Facades\Schema::hasTable('dream_jobs_page');
     $hasDreamJobsResourcesTable = \Illuminate\Support\Facades\Schema::hasTable('dream_jobs_resources');
     $page = $hasDreamJobsPageTable ? \App\DreamJobsPage::config() : null;
@@ -276,7 +285,7 @@
                     <h2 class="text-dark-blue text-3xl md:text-4xl md:leading-[44px] font-medium font-['Montserrat']">
                         {{ $item['first_name'] }} {{ $item['last_name'] }}
                     </h2>
-                    <img class="shadow-lg rounded w-12 h-9" width="48" src="/images/flags/{{ $item['country'] }}-flag.svg" />
+                    <img class="shadow-lg rounded w-12 h-9" width="48" src="{{ $flagSrc }}" onerror="this.style.display='none';" />
                 </div>
                 <div class="text-[22px] md:text-3xl text-[#333E48] font-medium font-['Montserrat'] p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_div]:p-0 [&_div]:m-0">
                     {!! $item['role'] !!}
@@ -322,11 +331,16 @@
             <div class="absolute w-full h-full bg-light-blue hidden lg:block xl:hidden" style="clip-path: ellipse(168% 90% at 50% 90%);"></div>
             <div class="absolute w-full h-full bg-light-blue hidden xl:block" style="clip-path: ellipse(108% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
+                @php
+                    $pathwayHref = \Illuminate\Support\Str::startsWith((string) $item['pathway_map_link'], ['http://', 'https://'])
+                        ? (string) $item['pathway_map_link']
+                        : '/docs/dream-jobs/' . ltrim((string) $item['pathway_map_link'], '/');
+                @endphp
                 <h2 class="text-dark-blue text-[22px] md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
                     Explore Career Pathway
                 </h2>
                 <img class="rounded-xl w-full h-60 md:h-auto object-cover object-center mb-6 md:mb-12" src="/images/dream-jobs/pathway-map.png" />
-                <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="/docs/dream-jobs/{{ $item['pathway_map_link'] }}">Career Pathway Map</a>
+                <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="{{ $pathwayHref }}">Career Pathway Map</a>
             </div>
         </section>
         @endif
