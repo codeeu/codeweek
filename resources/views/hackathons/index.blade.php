@@ -32,13 +32,13 @@
                                     Hackathons
                                 @endif
                             </h2>
-                            <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
+                            <div class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] [&_p]:p-0 [&_p]:m-0">
                                 @if($dynamic && $page && $page->contentForLocale('hero_subtitle'))
                                     {!! $page->contentForLocale('hero_subtitle') !!}
                                 @else
                                     Bring your ideas to life!
                                 @endif
-                            </p>
+                            </div>
                         </div>
                         <div class="flex z-10 flex-1 justify-center items-center order-0 md:order-2">
 
@@ -70,21 +70,21 @@
                             Hackathons
                         @endif
                     </h2>
-                    <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
+                    <div class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0">
                         @if($dynamic && $page && $page->contentForLocale('intro_paragraph_1'))
                             {!! $page->contentForLocale('intro_paragraph_1') !!}
                         @else
                             A hackathon is an event where participants with diverse skills collaborate to tackle global challenges. Participants form teams to brainstorm, design, and code, aiming to produce a working solution or prototype by the event's conclusion. Beyond fostering innovation and teamwork, EU Code Week hackathons offer a platform for young enthusiasts to learn, showcase their talents, and connect with like-minded peers.
                         @endif
-                    </p>
-                    <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                    </div>
+                    <div class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0">
                         @if($dynamic && $page && $page->contentForLocale('intro_paragraph_2'))
                             {!! $page->contentForLocale('intro_paragraph_2') !!}
                         @else
                             Adapting the traditional hackathon format, the EU Code Week Hackathons take into consideration the age of the participants and cater to the unique skills, insights, and interests of adolescents.
                             The aim of the EU Code Week Hackathons is to inspire young people to develop their coding and problem-solving skills by engaging them in collaborative, creative, and innovative projects.
                         @endif
-                    </p>
+                    </div>
                 </div>
             </div>
             <div
@@ -121,34 +121,34 @@
                                 EU Code Week Hackathons 2025-26
                             @endif
                         </p>
-                        <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
+                        <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0">
                             @if($dynamic && $page && $page->contentForLocale('details_paragraph_1'))
                                 {!! $page->contentForLocale('details_paragraph_1') !!}
                             @else
                                 EU Code Week Hackathons share a common theme that strengthens connection and belonging among young innovators across Europe. The central theme for the 2025 edition is <strong>From Code to Community: Bridging Digital Skills and Social Impact.</strong></span>.
                             @endif
-                        </p>
-                        <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
+                        </div>
+                        <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0">
                             @if($dynamic && $page && $page->contentForLocale('details_paragraph_2'))
                                 {!! $page->contentForLocale('details_paragraph_2') !!}
                             @else
                                 The ten national hackathons — <strong><a href="https://codeweek.eu/blog/hackathons-italy/">Italy (Florence)</a>, <a href="https://codeweek.eu/blog/hackathons-italy/">Italy (Turin)</a>, <a href="https://codeweek.eu/blog/greek-hackathon-2025/">Greece</a>, <a href="https://codeweek.eu/blog/eu-code-week-hackathons-croatia/">Croatia</a>, <a href="https://codeweek.eu/blog/eu-code-week-hackathons-ukraine/">Ukraine</a>, Turkey, Spain, Lithuania, <a href="https://codeweek.eu/blog/eu-code-week-hackathons-slovenia/">Slovenia</a>, and France</strong> — mark a vibrant journey of creativity and collaboration. <strong>Italy (Florence)</strong> opened the series with its event in October 2025, while all other national hackathons are taking place <strong>from now until the end of January 2026</strong>. Each event invites teams of young people aged 15 to 19 to learn, innovate, and develop digital solutions that tackle real societal challenges.
                             @endif
-                        </p>
-                        <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
+                        </div>
+                        <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0">
                             @if($dynamic && $page && $page->contentForLocale('details_paragraph_3'))
                                 {!! $page->contentForLocale('details_paragraph_3') !!}
                             @else
                                Join us online for the <strong>EU Finals on 11 March 2026</strong>, where all national finalists will present their projects and celebrate their shared achievements. Expect inspiring ideas, expert jury insights, and plenty of positive energy — a celebration of how young people use technology to make a difference.
                             @endif
-                        </p>
-                        <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6">
+                        </div>
+                        <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-6 [&_p:last-child]:mb-0">
                             @if($dynamic && $page && $page->contentForLocale('details_paragraph_4'))
                                 {!! $page->contentForLocale('details_paragraph_4') !!}
                             @else
                                 Be part of the excitement as we honour the outstanding teams shaping the future of digital innovation!</span>!
                             @endif
-                        </p>
+                        </div>
                         <div class="flex flex-col gap-x-2 gap-y-4 tablet:flex-row lg:flex-col 2xl:flex-row">
                             @if($dynamic && $page && $page->extra_button_link && $page->contentForLocale('extra_button_text'))
                                 <a
