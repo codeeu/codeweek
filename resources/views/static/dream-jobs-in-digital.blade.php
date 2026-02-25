@@ -236,7 +236,7 @@
                             </p>
                             <a
                                 class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                href="@if($heroDynamic && $page && $page->hero_cta_link){{ $page->hero_cta_link }}@else#dream-job-resources@endif"
+                                href="{{ ($heroDynamic && $page && $page->hero_cta_link) ? $page->hero_cta_link : '#dream-job-resources' }}"
                             >
                                 <span>
                                     @if($heroDynamic && $page && $page->contentForLocale('hero_cta_text'))
