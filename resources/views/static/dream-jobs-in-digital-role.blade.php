@@ -213,12 +213,17 @@
             'link' => (string) ($dbItem->link ?? ''),
             'video' => (string) ($dbItem->video ?? ''),
             'pathway_map_link' => (string) ($dbItem->pathway_map_link ?? ''),
+            'pathway_title' => (string) ($dbItem->pathway_title ?? ''),
+            'pathway_cta_text' => (string) ($dbItem->pathway_cta_text ?? ''),
             'country' => (string) $dbItem->country,
         ];
     } else {
         $item = collect($fallbackResults)->firstWhere('slug', $slug);
         abort_if(! $item, 404);
     }
+
+    $item['pathway_title'] = (string) ($item['pathway_title'] ?? 'Explore Career Pathway');
+    $item['pathway_cta_text'] = (string) ($item['pathway_cta_text'] ?? 'Career Pathway Map');
 
     $list = [
       (object) ['label' => 'Careers in Digital', 'href' => '/dream-jobs-in-digital'],
@@ -336,11 +341,11 @@
                         ? (string) $item['pathway_map_link']
                         : '/docs/dream-jobs/' . ltrim((string) $item['pathway_map_link'], '/');
                 @endphp
-                <h2 class="text-dark-blue text-[22px] md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10">
-                    Explore Career Pathway
-                </h2>
+                <div class="text-dark-blue text-[22px] md:text-4xl leading-[44px] font-medium font-['Montserrat'] p-0 mb-6 md:mb-10 [&_p]:p-0 [&_p]:m-0 [&_div]:p-0 [&_div]:m-0 [&_a]:underline">
+                    {!! $item['pathway_title'] !!}
+                </div>
                 <img class="rounded-xl w-full h-60 md:h-auto object-cover object-center mb-6 md:mb-12" src="/images/dream-jobs/pathway-map.png" />
-                <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="{{ $pathwayHref }}">Career Pathway Map</a>
+                <a class="font-normal text-xl text-dark-blue underline" target="_blank" href="{{ $pathwayHref }}">{{ $item['pathway_cta_text'] }}</a>
             </div>
         </section>
         @endif

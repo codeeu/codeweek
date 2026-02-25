@@ -80,6 +80,30 @@ class CertificateExcellence
     }
 
     /**
+     * Generate the certificate PDF and save a copy to the given path (e.g. for viewing test certs).
+     * Does not upload to S3. Cleans up LaTeX temp files after copying.
+     *
+     * @return string The full path where the PDF was saved
+     */
+    public function generateAndSavePdfTo(string $fullPath): string
+    {
+        try {
+            $this->customize_and_save_latex();
+            $this->run_pdf_creation();
+            $pdfName = $this->personalized_template_name . '.pdf';
+            $dir = dirname($fullPath);
+            if (! is_dir($dir) && ! @mkdir($dir, 0775, true) && ! is_dir($dir)) {
+                throw new \RuntimeException("Cannot create directory: {$dir}");
+            }
+            $contents = Storage::disk('latex')->get($pdfName);
+            file_put_contents($fullPath, $contents);
+            return $fullPath;
+        } finally {
+            $this->clean_temp_files();
+        }
+    }
+
+    /**
      * Clean up LaTeX artifacts for the generated file.
      */
     private function clean_temp_files()
@@ -97,6 +121,14 @@ class CertificateExcellence
     {
         $split = preg_split('/[\p{Greek}]/u', $this->name_of_certificate_holder);
         return (count($split) > 1);
+    }
+
+    /**
+     * Check for Cyrillic characters in the name (Russian, Ukrainian, etc.).
+     */
+    public function is_cyrillic(): bool
+    {
+        return (bool) preg_match('/[\p{Cyrillic}]/u', $this->name_of_certificate_holder);
     }
 
     /**
@@ -141,12 +173,12 @@ class CertificateExcellence
         Log::info("Using template: {$this->templateName}");
         $base_template = Storage::disk('latex')->get($this->templateName);
 
-        // Always replace <CERTIFICATE_HOLDER_NAME> for both excellence & super-organiser
-        $template = str_replace(
-            '<CERTIFICATE_HOLDER_NAME>',
-            $this->tex_escape($this->name_of_certificate_holder),
-            $base_template
-        );
+        // Name replacement: for default (non-Greek) template, wrap Cyrillic names in russian block so T2A is used
+        $nameReplacement = $this->tex_escape($this->name_of_certificate_holder);
+        if (! $this->is_greek() && $this->is_cyrillic()) {
+            $nameReplacement = '\\begin{otherlanguage*}{russian}' . $nameReplacement . '\\end{otherlanguage*}';
+        }
+        $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $nameReplacement, $base_template);
 
         // If super-organiser, we also replace these:
         if ($this->type === 'super-organiser') {

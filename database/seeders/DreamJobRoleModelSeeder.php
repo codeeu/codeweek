@@ -199,6 +199,8 @@ class DreamJobRoleModelSeeder extends Seeder
                     'link' => $row['link'],
                     'video' => $row['video'],
                     'pathway_map_link' => $row['pathway_map_link'] !== '' ? $row['pathway_map_link'] : null,
+                    'pathway_title' => $row['pathway_title'] ?? 'Explore Career Pathway',
+                    'pathway_cta_text' => $row['pathway_cta_text'] ?? 'Career Pathway Map',
                     'position' => $index,
                     'active' => true,
                 ]

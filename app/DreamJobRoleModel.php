@@ -18,6 +18,8 @@ class DreamJobRoleModel extends Model
         'link',
         'video',
         'pathway_map_link',
+        'pathway_title',
+        'pathway_cta_text',
         'position',
         'active',
     ];
