@@ -95,6 +95,36 @@ class HomeSlide extends Resource
 
     private const OVERRIDE_KEYS = ['title', 'description', 'button_text', 'button2_text'];
 
+    private static function isAbsoluteImageUrl(?string $value): bool
+    {
+        if (! is_string($value) || trim($value) === '') {
+            return false;
+        }
+
+        return str_starts_with($value, 'http://') || str_starts_with($value, 'https://');
+    }
+
+    private static function fillImageFromInputs($request, $model): void
+    {
+        $path = trim((string) $request->get('image_path_input', ''));
+        $url = trim((string) $request->get('image_url_input', ''));
+
+        // URL wins when both are provided.
+        if ($url !== '') {
+            $model->image = $url;
+            return;
+        }
+
+        if ($path !== '') {
+            $model->image = ltrim($path, '/');
+            return;
+        }
+
+        if ($request->exists('image_path_input') || $request->exists('image_url_input')) {
+            $model->image = null;
+        }
+    }
+
     private static function parseOverrideAttribute(string $attribute): ?array
     {
         if (! str_starts_with($attribute, 'override_') || strlen($attribute) < 12) {
@@ -227,9 +257,32 @@ class HomeSlide extends Resource
                 ->help('Leave empty to hide second button. Lang key or plain text.'),
             Boolean::make('Open second link in new tab', 'open_second_new_tab')
                 ->help('Open the second button link in a new window/tab.'),
-            Text::make('Image', 'image')
+            Text::make('Image (saved value)', 'image')
+                ->exceptOnForms()
                 ->nullable()
-                ->help('Path from site root e.g. images/dream-jobs/dream_jobs_bg.png (no leading slash), or full URL. Used as slide background.'),
+                ->help('Stored image reference used by the homepage slider.'),
+            Text::make('Image path (site root)', 'image_path_input')
+                ->onlyOnForms()
+                ->nullable()
+                ->resolveUsing(function () {
+                    $image = $this->resource->image;
+                    return self::isAbsoluteImageUrl($image) ? '' : (string) ($image ?? '');
+                })
+                ->fillUsing(function ($request, $model) {
+                    self::fillImageFromInputs($request, $model);
+                })
+                ->help('Option 1: local path like images/dream-jobs/dream_jobs_bg.png (no leading slash).'),
+            Text::make('Image URL (full)', 'image_url_input')
+                ->onlyOnForms()
+                ->nullable()
+                ->resolveUsing(function () {
+                    $image = $this->resource->image;
+                    return self::isAbsoluteImageUrl($image) ? (string) $image : '';
+                })
+                ->fillUsing(function ($request, $model) {
+                    self::fillImageFromInputs($request, $model);
+                })
+                ->help('Option 2: full URL, e.g. https://codeweek-resources.s3.eu-west-1.amazonaws.com/...'),
             Number::make('Position', 'position')
                 ->min(0)
                 ->default(0)
