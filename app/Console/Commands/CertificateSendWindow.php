@@ -83,13 +83,16 @@ class CertificateSendWindow extends Command
 
         $queued = 0;
         $failed = 0;
+        $failures = [];
 
         foreach ($rows as $excellence) {
             $bar->advance();
             $user = $excellence->user;
             if (! $user || ! $user->email) {
+                $err = 'No user or email';
                 $failed++;
-                $excellence->update(['certificate_sent_error' => 'No user or email']);
+                $excellence->update(['certificate_sent_error' => $err]);
+                $failures[] = ['id' => $excellence->id, 'email' => $user?->email ?? '-', 'error' => $err];
                 continue;
             }
 
@@ -105,14 +108,19 @@ class CertificateSendWindow extends Command
                 ]);
                 $queued++;
             } catch (\Throwable $e) {
+                $err = $e->getMessage();
                 $failed++;
-                $excellence->update(['certificate_sent_error' => $e->getMessage()]);
+                $excellence->update(['certificate_sent_error' => $err]);
+                $failures[] = ['id' => $excellence->id, 'email' => $user->email, 'error' => $err];
             }
         }
 
         $bar->finish();
         $this->newLine();
         $this->line("  [{$type}] Done. Queued: {$queued}, Failed: {$failed}.");
+        if ($failed > 0 && count($failures) > 0) {
+            $this->table(['id', 'email', 'error'], $failures);
+        }
         return ['processed' => $rows->count(), 'queued' => $queued, 'failed' => $failed];
     }
 
