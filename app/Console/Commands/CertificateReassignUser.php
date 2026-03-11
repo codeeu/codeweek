@@ -63,6 +63,27 @@ class CertificateReassignUser extends Command
         ])->toArray();
         $this->table(['id', 'edition', 'type', 'has PDF', 'sent'], $table);
 
+        // Check first: target must not already have an excellence for the same edition+type (unique constraint)
+        $conflicts = [];
+        foreach ($rows as $e) {
+            $exists = Excellence::where('user_id', $toUser->id)
+                ->where('edition', $e->edition)
+                ->where('type', $e->type)
+                ->exists();
+            if ($exists) {
+                $conflicts[] = "edition {$e->edition}, type {$e->type}";
+            }
+        }
+        if (count($conflicts) > 0) {
+            $this->newLine();
+            $this->error('Cannot reassign: target user already has certificate(s) for the same edition+type:');
+            foreach ($conflicts as $c) {
+                $this->line('  - ' . $c);
+            }
+            $this->line('Resolve duplicates (e.g. merge or delete one side) before reassigning.');
+            return self::FAILURE;
+        }
+
         if ($dryRun) {
             $this->newLine();
             $this->warn('Dry run: no changes made. Run without --dry-run to reassign.');
