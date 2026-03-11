@@ -66,6 +66,41 @@ class CertificateExcellence
     }
 
     /**
+     * Regenerate the certificate and overwrite the existing S3 file so the same URL serves the new PDF.
+     * Use when fixing content (e.g. Greek template text) without resending email; existing links keep working.
+     *
+     * @param  string  $existingCertificateUrl  Current certificate_url (e.g. from Excellence row)
+     * @return string The same URL (file overwritten on S3)
+     */
+    public function generateReplacing(string $existingCertificateUrl): string
+    {
+        $id = $this->parseIdFromCertificateUrl($existingCertificateUrl);
+        if ($id === '') {
+            throw new \InvalidArgumentException('Could not parse certificate id from URL: ' . $existingCertificateUrl);
+        }
+        $this->id = $id;
+        $this->personalized_template_name = $id;
+
+        $this->customize_and_save_latex();
+        $this->run_pdf_creation();
+        $url = $this->copy_to_s3();
+        $this->clean_temp_files();
+
+        return $url;
+    }
+
+    private function parseIdFromCertificateUrl(string $url): string
+    {
+        $path = parse_url($url, PHP_URL_PATH);
+        if ($path === null || $path === '') {
+            return '';
+        }
+        $filename = basename($path);
+
+        return (string) preg_replace('/\.pdf$/i', '', $filename);
+    }
+
+    /**
      * Dry-run style preflight: compile the certificate locally without S3 upload.
      * Cleans up temp files regardless of success/failure.
      */
