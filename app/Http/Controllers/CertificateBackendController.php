@@ -33,20 +33,23 @@ class CertificateBackendController extends Controller
     public const EDITION_DEFAULT = 2025;
 
     /** In local, send immediately so you see success/failure (e.g. in mail log or Mailtrap). In production, queue. */
-    private function sendCertificateMail(string $email, $mailable): void
+    private function sendCertificateMail(string $email, $mailable, bool $sync = false): void
     {
-        if (app()->environment('local')) {
+        if ($sync || app()->environment('local')) {
             Mail::to($email)->send($mailable);
         } else {
             Mail::to($email)->queue($mailable);
         }
     }
 
-    private function mailSentMessage(): string
+    private function mailSentMessage(bool $sync = false): string
     {
-        return app()->environment('local')
-            ? 'Email sent. (Check storage/logs or your mail catcher.)'
-            : 'Email queued. It will be sent when the queue worker runs.';
+        if ($sync || app()->environment('local')) {
+            return app()->environment('local')
+                ? 'Email sent. (Check storage/logs or your mail catcher.)'
+                : 'Email sent.';
+        }
+        return 'Email queued. It will be sent when the queue worker runs.';
     }
 
     public const TYPES = [
@@ -382,6 +385,7 @@ class CertificateBackendController extends Controller
      * Manual: generate and/or send for one user by email.
      * generate_only=true: only generate certificate (do not send).
      * send_only=true: only send email (certificate must already exist).
+     * send_sync=true: when sending, send immediately (no queue) so this user gets the email now.
      * Otherwise: generate if needed, then send.
      */
     public function manualCreateSend(Request $request): JsonResponse
@@ -392,6 +396,7 @@ class CertificateBackendController extends Controller
         $certType = $type === 'SuperOrganiser' ? 'super-organiser' : 'excellence';
         $generateOnly = $request->boolean('generate_only');
         $sendOnly = $request->boolean('send_only');
+        $sendSync = $request->boolean('send_sync');
 
         $excellenceId = $request->get('excellence_id');
         $userEmail = $request->get('user_email');
@@ -455,15 +460,15 @@ class CertificateBackendController extends Controller
 
         try {
             if ($type === 'SuperOrganiser') {
-                $this->sendCertificateMail($user->email, new NotifySuperOrganiser($user, $edition, $excellence->certificate_url));
+                $this->sendCertificateMail($user->email, new NotifySuperOrganiser($user, $edition, $excellence->certificate_url), $sendSync);
             } else {
-                $this->sendCertificateMail($user->email, new NotifyWinner($user, $edition, $excellence->certificate_url));
+                $this->sendCertificateMail($user->email, new NotifyWinner($user, $edition, $excellence->certificate_url), $sendSync);
             }
             $excellence->update(['notified_at' => Carbon::now(), 'certificate_sent_error' => null]);
 
             return response()->json([
                 'ok' => true,
-                'message' => $this->mailSentMessage(),
+                'message' => $this->mailSentMessage($sendSync),
                 'certificate_url' => $excellence->certificate_url,
             ]);
         } catch (\Throwable $e) {

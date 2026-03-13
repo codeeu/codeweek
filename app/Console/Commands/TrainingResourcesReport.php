@@ -118,7 +118,7 @@ class TrainingResourcesReport extends Command
             'total_resources_now' => $total,
             'added_since_baseline' => $addedSince,
             'baseline_date' => $baseline->format('Y-m-d'),
-            'note' => 'Learn & Teach resources at /resources/learn-and-teach (ResourceItem). Not the same as the static /training modules; both are "training-related" content.',
+            'note' => 'Learn & Teach resources at /resources/ (ResourceItem). Not the same as the static /training modules; both are "training-related" content.',
         ];
     }
 

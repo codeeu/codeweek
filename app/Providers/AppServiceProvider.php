@@ -154,7 +154,10 @@ class AppServiceProvider extends ServiceProvider
 
          //Livewire::paginationView('vendor.livewire.pagination');
 
-        $this->commands([\App\Console\Commands\CertificateReassignUser::class]);
+        $this->commands([
+            \App\Console\Commands\CertificateReassignUser::class,
+            \App\Console\Commands\CertificateRegenerateInPlace::class,
+        ]);
 
         $this->bootAuth();
         $this->bootEvent();
