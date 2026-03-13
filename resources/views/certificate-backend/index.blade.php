@@ -92,8 +92,10 @@
             <input type="email" id="manual-email" placeholder="user@example.com" style="margin-left: 0.5rem; padding: 0.25rem;">
             <button type="button" id="btn-manual-generate" class="px-6 py-3 ml-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Generate certificate only</button>
             <button type="button" id="btn-manual-send" class="px-6 py-3 ml-2 font-semibold text-white rounded-full duration-300 cursor-pointer bg-primary hover:opacity-90">Send email only</button>
+            <label style="margin-left: 1rem; cursor: pointer;"><input type="checkbox" id="manual-send-now" checked style="margin-right: 0.25rem;">Send now (no queue)</label>
             <span id="manual-result" style="margin-left: 0.5rem;"></span>
         </div>
+        <p style="margin-top: 0.25rem; font-size: 0.9rem; color: #666;">Use <strong>Send now (no queue)</strong> to send the email immediately for this user only, so they get it without running the queue worker.</p>
     </details>
 
     {{-- Search --}}
@@ -467,7 +469,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!email) { showError('Enter email.'); return; }
         clearError();
         if (resultEl) resultEl.textContent = 'Sending…';
-        postJson(apiUrl('/manual-create-send'), { user_email: email, send_only: true }).then(function(r) {
+        var sendNow = document.getElementById('manual-send-now') && document.getElementById('manual-send-now').checked;
+        postJson(apiUrl('/manual-create-send'), { user_email: email, send_only: true, send_sync: sendNow }).then(function(r) {
             if (resultEl) resultEl.textContent = r.ok ? (r.message || 'Email sent.') : r.message;
             if (!r.ok) showError(r.message);
             if (r.ok) { loadStatus(); loadList(currentPage); }
