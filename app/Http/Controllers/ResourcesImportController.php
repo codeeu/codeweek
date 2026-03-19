@@ -233,6 +233,7 @@ class ResourcesImportController extends Controller
             'filters_type', 'filters_target_audience', 'filters_level_of_difficulty',
             'filters_programming_language', 'filters_subject', 'filters_topics', 'filters_language',
             'category', 'group_name',
+            's3_suffix', 'file_suffix', 's3_file_suffix',
         ];
         foreach ($edits as $index => $fields) {
             if (! is_array($fields)) {
@@ -254,9 +255,18 @@ class ResourcesImportController extends Controller
             }
         }
 
+        $filenameMode = $request->input('filename_mode', 'per_file');
+        if (! is_string($filenameMode) || ! in_array($filenameMode, ['per_file', 'batch', 'stable', 'preserve'], true)) {
+            $filenameMode = 'per_file';
+        }
+        $batchTimestamp = $filenameMode === 'batch' ? time() : null;
+        $customSuffix = $request->input('custom_s3_suffix');
+        $customSuffix = is_string($customSuffix) ? trim($customSuffix) : '';
+        $customSuffix = $customSuffix !== '' ? $customSuffix : null;
+
         try {
             $result = new ResourcesImportResult;
-            $import = new ResourcesImport(null, null, $focus, $overrides, $result);
+            $import = new ResourcesImport(null, null, $focus, $overrides, $result, $filenameMode, $batchTimestamp, $customSuffix);
             Excel::import($import, $path, $tempDisk);
 
             Storage::disk($tempDisk)->delete($path);

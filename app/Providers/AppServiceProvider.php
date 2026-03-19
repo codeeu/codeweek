@@ -157,6 +157,7 @@ class AppServiceProvider extends ServiceProvider
         $this->commands([
             \App\Console\Commands\CertificateReassignUser::class,
             \App\Console\Commands\CertificateRegenerateInPlace::class,
+            \App\Console\Commands\ResourcesExportS3Urls::class,
         ]);
 
         $this->bootAuth();
