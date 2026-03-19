@@ -46,7 +46,8 @@
                             <label for="file" class="block font-medium mb-1">Excel / CSV file <span class="text-red-600">*</span></label>
                             <input type="file" name="file" id="file" accept=".csv,.xlsx,.xls" required
                                    class="block w-full max-w-md" aria-required="true">
-                            <p class="text-sm text-gray-600 mt-1">Required column: <code>name_of_the_resource</code>. Optional: link, description, image, filters_type, filters_target_audience, filters_level_of_difficulty, filters_programming_language, filters_subjects, filters_topics, filters_language, category, group_name. Max 10 MB.</p>
+                            <p class="text-sm text-gray-600 mt-1">Required column: <code>name_of_the_resource</code>. Optional: link, description, image, filters_type, filters_target_audience, filters_level_of_difficulty, filters_programming_language, filters_subjects, filters_topics, filters_language, category, group_name, <code>s3_suffix</code> (or <code>file_suffix</code>) per row for file naming. Max 10 MB.</p>
+                            <p class="text-sm text-gray-600 mt-1">After verify, the preview step lets you choose <strong>batch</strong> / <strong>stable</strong> / <strong>preserve</strong> naming or a <strong>custom suffix</strong>. On the server: <code>php artisan resources:export-s3-urls --output=storage/app/resources_s3_urls.csv</code> then rename local PDFs/images to match <code>pdf_basename</code> / <code>thumb_basename</code> and import with <code>--preserve-filenames</code>. Example header: <code>docs/resources/resources-s3-urls-export.example.csv</code>. See <code>resources:import --help</code>.</p>
                             <p id="file-required-hint" class="text-sm text-amber-600 mt-1 hidden">Please select a file first, then click Verify.</p>
                         </div>
 
