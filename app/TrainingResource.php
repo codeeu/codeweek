@@ -20,6 +20,8 @@ class TrainingResource extends Model
         'intro',
         'highlight_box',
         'video_url',
+        'video_script_url',
+        'video_script_text',
         'body_image',
         'body_image_alt',
         'content',
