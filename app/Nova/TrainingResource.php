@@ -87,6 +87,18 @@ class TrainingResource extends Resource
                 ->nullable()
                 ->help('Main training content area'),
 
+            Trix::make('PDF links section', 'pdf_links_section')
+                ->nullable()
+                ->help('Optional area for numbered downloadable resources (e.g. 1-6 links).'),
+
+            Trix::make('Contacts section', 'contacts_section')
+                ->nullable()
+                ->help('Optional contacts/extra info block.'),
+
+            Trix::make('Register box section', 'register_box_section')
+                ->nullable()
+                ->help('Optional text shown in a highlighted callout box (register on map, hashtags, etc).'),
+
             Text::make('Button text', 'button_text')->nullable(),
 
             Text::make('Button URL', 'button_url')
