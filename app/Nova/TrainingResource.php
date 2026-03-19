@@ -76,6 +76,15 @@ class TrainingResource extends Resource
                 ->nullable()
                 ->help('Optional YouTube URL. Supports youtu.be, watch, embed, shorts.'),
 
+            Text::make('Video script URL', 'video_script_url')
+                ->nullable()
+                ->rules('nullable', 'url')
+                ->help('Optional link shown under the video, e.g. DOCX/PDF script.'),
+
+            Text::make('Video script link text', 'video_script_text')
+                ->nullable()
+                ->help('Optional. Defaults to "Download the video script".'),
+
             Text::make('Body image', 'body_image')
                 ->nullable()
                 ->help('Optional image path/URL (supports Amazon S3/CloudFront).'),
@@ -86,6 +95,18 @@ class TrainingResource extends Resource
             Trix::make('Content', 'content')
                 ->nullable()
                 ->help('Main training content area'),
+
+            Trix::make('PDF links section', 'pdf_links_section')
+                ->nullable()
+                ->help('Optional area for numbered downloadable resources (e.g. 1-6 links).'),
+
+            Trix::make('Contacts section', 'contacts_section')
+                ->nullable()
+                ->help('Optional contacts/extra info block.'),
+
+            Trix::make('Register box section', 'register_box_section')
+                ->nullable()
+                ->help('Optional text shown in a highlighted callout box (register on map, hashtags, etc).'),
 
             Text::make('Button text', 'button_text')->nullable(),
 
