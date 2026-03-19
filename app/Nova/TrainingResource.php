@@ -1,0 +1,123 @@
+<?php
+
+namespace App\Nova;
+
+use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Trix;
+use Laravel\Nova\Http\Requests\NovaRequest;
+
+class TrainingResource extends Resource
+{
+    public static $group = 'Resources';
+
+    public static $model = \App\TrainingResource::class;
+
+    public static $title = 'card_title';
+
+    public static $search = ['slug', 'card_title', 'page_title', 'card_author'];
+
+    public static function label()
+    {
+        return 'Training Resources';
+    }
+
+    public static function singularLabel()
+    {
+        return 'Training Resource';
+    }
+
+    public static function authorizedToViewAny(Request $request): bool
+    {
+        return true;
+    }
+
+    public function fields(Request $request): array
+    {
+        return [
+            ID::make()->sortable(),
+
+            Text::make('Slug', 'slug')
+                ->rules('nullable', 'max:255', 'alpha_dash', 'unique:training_resources,slug,{{resourceId}}')
+                ->help('Optional. If empty, generated automatically from title. Used in /training/{slug}.'),
+
+            Text::make('Card title', 'card_title')
+                ->rules('nullable', 'max:255')
+                ->help('Optional. Shown in the Learning Bits grid on /training'),
+
+            Text::make('Card author', 'card_author')
+                ->nullable()
+                ->help('Optional subtitle shown under the card title'),
+
+            Text::make('Card image', 'card_image')
+                ->nullable()
+                ->help('Supports full URLs (including Amazon S3/CloudFront) or local paths like /img/learning/my-image.png. Plain filenames are treated as /img/learning/{filename}.'),
+
+            Text::make('Page title', 'page_title')->rules('nullable', 'max:255')
+                ->help('Optional. Falls back to card title.'),
+
+            Text::make('Hero author', 'hero_author')
+                ->nullable()
+                ->help('Optional pill text in the header banner'),
+
+            Trix::make('Intro', 'intro')
+                ->nullable()
+                ->help('Optional intro block shown above the main content'),
+
+            Trix::make('Highlight box', 'highlight_box')
+                ->nullable()
+                ->help('Optional styled gray section (e.g. Scientific author / Contributors block).'),
+
+            Text::make('Video URL', 'video_url')
+                ->nullable()
+                ->help('Optional YouTube URL. Supports youtu.be, watch, embed, shorts.'),
+
+            Text::make('Body image', 'body_image')
+                ->nullable()
+                ->help('Optional image path/URL (supports Amazon S3/CloudFront).'),
+
+            Text::make('Body image alt text', 'body_image_alt')
+                ->nullable(),
+
+            Trix::make('Content', 'content')
+                ->nullable()
+                ->help('Main training content area'),
+
+            Text::make('Button text', 'button_text')->nullable(),
+
+            Text::make('Button URL', 'button_url')
+                ->nullable()
+                ->rules('nullable', 'url'),
+
+            Text::make('Secondary button text', 'secondary_button_text')->nullable(),
+
+            Text::make('Secondary button URL', 'secondary_button_url')
+                ->nullable()
+                ->rules('nullable', 'url'),
+
+            Text::make('Meta title', 'meta_title')
+                ->nullable()
+                ->help('Optional HTML title override'),
+
+            Textarea::make('Meta description', 'meta_description')
+                ->nullable()
+                ->alwaysShow(),
+
+            Number::make('Position', 'position')
+                ->min(0)
+                ->help('Lower = shown first among dynamic resources')
+                ->nullable(),
+
+            Boolean::make('Active', 'active'),
+        ];
+    }
+
+    public static function indexQuery(NovaRequest $request, $query)
+    {
+        return $query->orderBy('position')->orderBy('created_at', 'desc');
+    }
+}

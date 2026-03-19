@@ -1,6 +1,16 @@
 @extends('layout.new_base')
 
 @php
+    $dynamicResults = ($dynamicTrainingResources ?? collect())->map(function ($resource) {
+        return [
+            'image' => $resource->resolved_card_image,
+            'title' => $resource->card_title,
+            'author' => $resource->card_author,
+            'link' => '/training/' . $resource->slug,
+            'is_translated' => false,
+        ];
+    })->toArray();
+
     $list = [
       (object) ['label' => 'Learn & Teach', 'href' => '/learn'],
       (object) ['label' => 'Training', 'href' => ''],
@@ -11,133 +21,155 @@
             'image' => '/img/learning/cody-color-kit.png',
             'title' => 'training.lessons.0.title',
             'author' => 'training.lessons.0.author',
-            'link' => '/training/cody-color-kit'
+            'link' => '/training/cody-color-kit',
+            'is_translated' => true,
         ],
          [
             'image' => '/img/learning/coding-without-computers.png',
             'title' => 'training.lessons.1.title',
             'author' => 'training.lessons.1.author',
-            'link' => '/training/coding-without-computers'
+            'link' => '/training/coding-without-computers',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/computational-thinking-and-problem-solving.png',
             'title' => 'training.lessons.2.title',
             'author' => 'training.lessons.2.author',
-            'link' => '/training/computational-thinking-and-problem-solving'
+            'link' => '/training/computational-thinking-and-problem-solving',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/visual-programming-introduction-to-scratch.png',
             'title' => 'training.lessons.3.title',
             'author' => 'training.lessons.3.author',
-            'link' => '/training/visual-programming-introduction-to-scratch'
+            'link' => '/training/visual-programming-introduction-to-scratch',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/creating-educational-games-with-scratch.png',
             'title' => 'training.lessons.4.title',
             'author' => 'training.lessons.4.author',
-            'link' => '/training/creating-educational-games-with-scratch'
+            'link' => '/training/creating-educational-games-with-scratch',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/making-robotics-and-tinkering-in-the-classroom.png',
             'title' => 'training.lessons.5.title',
             'author' => 'training.lessons.5.author',
-            'link' => '/training/making-robotics-and-tinkering-in-the-classroom'
+            'link' => '/training/making-robotics-and-tinkering-in-the-classroom',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/developing-creative-thinking-through-mobile-app-development.png',
             'title' => 'training.lessons.6.title',
             'author' => 'training.lessons.6.author',
-            'link' => '/training/developing-creative-thinking-through-mobile-app-development'
+            'link' => '/training/developing-creative-thinking-through-mobile-app-development',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/tinkering-and-making.png',
             'title' => 'training.lessons.7.title',
             'author' => 'training.lessons.7.author',
-            'link' => '/training/tinkering-and-making'
+            'link' => '/training/tinkering-and-making',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/coding-for-all-subjects.png',
             'title' => 'training.lessons.8.title',
             'author' => 'training.lessons.8.author',
-            'link' => '/training/coding-for-all-subjects'
+            'link' => '/training/coding-for-all-subjects',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/making-an-automaton-with-microbit.png',
             'title' => 'training.lessons.9.title',
             'author' => 'training.lessons.9.author',
-            'link' => '/training/making-an-automaton-with-microbit'
+            'link' => '/training/making-an-automaton-with-microbit',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/creative-coding-with-python.png',
             'title' => 'training.lessons.10.title',
             'author' => 'training.lessons.10.author',
-            'link' => '/training/creative-coding-with-python'
+            'link' => '/training/creative-coding-with-python',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/coding-for-inclusion.png',
             'title' => 'training.lessons.11.title',
             'author' => 'training.lessons.11.author',
-            'link' => '/training/coding-for-inclusion'
+            'link' => '/training/coding-for-inclusion',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/coding-for-sustainable-development-goals.png',
             'title' => 'training.lessons.12.title',
             'author' => 'training.lessons.12.author',
-            'link' => '/training/coding-for-sustainable-development-goals'
+            'link' => '/training/coding-for-sustainable-development-goals',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/introduction-to-artificial-intelligence-in-the-classroom.png',
             'title' => 'training.lessons.13.title',
             'author' => 'training.lessons.13.author',
-            'link' => '/training/introduction-to-artificial-intelligence-in-the-classroom'
+            'link' => '/training/introduction-to-artificial-intelligence-in-the-classroom',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/learning-in-the-age-of-intelligent-machines.png',
             'title' => 'training.lessons.14.title',
             'author' => 'training.lessons.14.author',
-            'link' => '/training/learning-in-the-age-of-intelligent-machines'
+            'link' => '/training/learning-in-the-age-of-intelligent-machines',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/mining-media-literacy.png',
             'title' => 'training.lessons.15.title',
             'author' => 'training.lessons.15.author',
-            'link' => '/training/mining-media-literacy'
+            'link' => '/training/mining-media-literacy',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/story-telling-with-hedy.png',
             'title' => 'training.lessons.16.title',
             'author' => 'training.lessons.16.author',
-            'link' => '/training/story-telling-with-hedy'
+            'link' => '/training/story-telling-with-hedy',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/feel-the-code.jpg',
             'title' => 'training.lessons.17.title',
             'author' => 'training.lessons.17.author',
-            'link' => '/training/feel-the-code'
+            'link' => '/training/feel-the-code',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/sos-water.png',
             'title' => 'training.lessons.18.title',
             'author' => 'training.lessons.18.author',
-            'link' => '/training/sos-water'
+            'link' => '/training/sos-water',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/creative-scratch-laboratory.png',
             'title' => 'training.lessons.19.title',
             'author' => 'training.lessons.19.author',
-            'link' => '/training/creative-scratch-laboratory'
+            'link' => '/training/creative-scratch-laboratory',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/code-through-art.png',
             'title' => 'training.lessons.20.title',
             'author' => 'training.lessons.20.author',
-            'link' => '/training/code-through-art'
+            'link' => '/training/code-through-art',
+            'is_translated' => true,
         ],
         [
             'image' => '/img/learning/making-and-coding.png',
             'title' => 'training.lessons.21.title',
             'author' => 'training.lessons.21.author',
-            'link' => '/training/making-and-coding'
+            'link' => '/training/making-and-coding',
+            'is_translated' => true,
         ],
     ];
 @endphp
@@ -254,6 +286,23 @@
                     Learning Bits
                 </h2>
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-10">
+                    @foreach($dynamicResults as $result)
+                        <div class="flex overflow-hidden flex-col bg-white rounded-lg cursor-pointer" onclick="window.location.href='{{ $result['link'] }}'">
+                            <div class="relative">
+                                <img src="{{ $result['image'] }}" class="w-full" />
+                            </div>
+                            <div class="block flex-grow px-6 py-8">
+                                <p class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat']">
+                                    {{ $result['title'] }}
+                                </p>
+                                @if(!empty($result['author']))
+                                    <p class="text-[#333E48] text-default font-bold leading-[22px] p-0">
+                                        {{ $result['author'] }}
+                                    </p>
+                                @endif
+                            </div>
+                        </div>
+                    @endforeach
                     @foreach($results as $result)
                         <div class="flex overflow-hidden flex-col bg-white rounded-lg cursor-pointer" onclick="window.location.href='{{ $result['link'] }}'">
                             <div class="relative">
@@ -261,11 +310,21 @@
                             </div>
                             <div class="block flex-grow px-6 py-8">
                                 <p class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat']">
-                                    @lang($result['title'])
+                                    @if($result['is_translated'])
+                                        @lang($result['title'])
+                                    @else
+                                        {{ $result['title'] }}
+                                    @endif
                                 </p>
-                                <p class="text-[#333E48] text-default font-bold leading-[22px] p-0">
-                                    @lang($result['author'])
-                                </p>
+                                @if(!empty($result['author']))
+                                    <p class="text-[#333E48] text-default font-bold leading-[22px] p-0">
+                                        @if($result['is_translated'])
+                                            @lang($result['author'])
+                                        @else
+                                            {{ $result['author'] }}
+                                        @endif
+                                    </p>
+                                @endif
                             </div>
                         </div>
                     @endforeach
