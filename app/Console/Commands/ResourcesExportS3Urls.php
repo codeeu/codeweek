@@ -13,7 +13,8 @@ class ResourcesExportS3Urls extends Command
 {
     protected $signature = 'resources:export-s3-urls
                             {--active-only : Only rows with active=1}
-                            {--json : Output JSON array instead of CSV}';
+                            {--json : Output JSON array instead of CSV}
+                            {--output= : Write CSV or JSON to this path (e.g. storage/app/resources_s3_urls.csv)}';
 
     protected $description = 'Export ResourceItem id, name, source, thumbnail (for matching local filenames to live S3 keys)';
 
@@ -25,8 +26,22 @@ class ResourcesExportS3Urls extends Command
         }
         $rows = $q->get(['id', 'name', 'source', 'thumbnail']);
 
+        $outputPath = $this->option('output');
+        $outputPath = is_string($outputPath) ? trim($outputPath) : '';
+
         if ($this->option('json')) {
-            $this->line($rows->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+            $payload = $rows->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+            if ($outputPath !== '') {
+                $full = $this->resolveOutputPath($outputPath);
+                if ($full === null) {
+                    return self::FAILURE;
+                }
+                file_put_contents($full, $payload);
+                $this->info("Wrote JSON ({$rows->count()} items) to: {$full}");
+
+                return self::SUCCESS;
+            }
+            $this->line($payload);
 
             return self::SUCCESS;
         }
@@ -46,9 +61,43 @@ class ResourcesExportS3Urls extends Command
             ]);
         }
         rewind($out);
-        $this->output->write(stream_get_contents($out) ?: '');
+        $csv = stream_get_contents($out) ?: '';
         fclose($out);
 
+        if ($outputPath !== '') {
+            $full = $this->resolveOutputPath($outputPath);
+            if ($full === null) {
+                return self::FAILURE;
+            }
+            file_put_contents($full, $csv);
+            $this->info("Wrote CSV ({$rows->count()} rows) to: {$full}");
+
+            return self::SUCCESS;
+        }
+
+        $this->output->write($csv);
+
         return self::SUCCESS;
+    }
+
+    /**
+     * @return string|null Absolute path, or null on error
+     */
+    private function resolveOutputPath(string $path): ?string
+    {
+        $full = str_starts_with($path, DIRECTORY_SEPARATOR) || preg_match('#^[a-zA-Z]:\\\\#', $path) === 1
+            ? $path
+            : base_path($path);
+
+        $dir = dirname($full);
+        if (! is_dir($dir)) {
+            if (! @mkdir($dir, 0755, true) && ! is_dir($dir)) {
+                $this->error("Cannot create directory: {$dir}");
+
+                return null;
+            }
+        }
+
+        return $full;
     }
 }
