@@ -118,6 +118,26 @@
                     </table>
                 </div>
 
+                <div class="mb-6 p-4 rounded border border-gray-200 bg-gray-50">
+                    <h2 class="text-lg font-semibold mb-2">S3 file naming (Learn &amp; Teach re-uploads)</h2>
+                    <p class="text-sm text-gray-700 mb-3">Choose how uploaded PDFs and images are named on S3. Default adds a new Unix timestamp per file (old links change after each import).</p>
+                    <div class="mb-3">
+                        <label class="block font-medium mb-1">Filename strategy</label>
+                        <select name="filename_mode" class="block max-w-md w-full px-3 py-2 border rounded">
+                            <option value="per_file" {{ old('filename_mode', 'per_file') === 'per_file' ? 'selected' : '' }}>Per file: new timestamp each upload (default)</option>
+                            <option value="batch" {{ old('filename_mode') === 'batch' ? 'selected' : '' }}>Batch: one timestamp for this entire import (all files share the same suffix)</option>
+                            <option value="stable" {{ old('filename_mode') === 'stable' ? 'selected' : '' }}>Stable: no timestamp — overwrites same path (clean URLs; use when re-uploading fixed PDFs)</option>
+                            <option value="preserve" {{ old('filename_mode') === 'preserve' ? 'selected' : '' }}>Preserve: use local file name as S3 key (rename files to match live URLs from export, then overwrite)</option>
+                        </select>
+                    </div>
+                    <div class="mb-1">
+                        <label for="custom_s3_suffix" class="block font-medium mb-1">Optional custom suffix (all rows)</label>
+                        <input type="text" name="custom_s3_suffix" id="custom_s3_suffix" value="{{ old('custom_s3_suffix') }}"
+                               class="block max-w-md w-full px-3 py-2 border rounded" placeholder="e.g. 2026-03">
+                        <p class="text-sm text-gray-600 mt-1">If set, every file becomes <code>slug-your-suffix.ext</code> (overrides batch/per_file timestamps). You can also add optional columns <code>s3_suffix</code>, <code>file_suffix</code>, or <code>s3_file_suffix</code> per row in the spreadsheet.</p>
+                    </div>
+                </div>
+
                 <div class="codeweek-form-button-container">
                     <div class="codeweek-button">
                         <input type="submit" value="Import" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-[#20262C] hover:bg-hover-orange duration-300">

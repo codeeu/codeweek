@@ -45,16 +45,92 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
     /** Optional result collector for web import report. */
     protected ?ResourcesImportResult $result = null;
 
+    /**
+     * How S3 object names get a suffix:
+     * - per_file: Unix time() per upload (default; each file can differ by seconds).
+     * - batch: same Unix timestamp for every file in this import (set $batchTimestamp).
+     * - stable: no timestamp — {slug}.pdf / {slug}-{language}.png (overwrites same path on re-upload).
+     * - preserve: use the local file’s basename as the S3 key (after group folder for PDFs). Rename local files
+     *   to match production (e.g. export URLs from live) so re-upload overwrites the same object without changing DB URLs.
+     */
+    protected string $filenameMode = 'per_file';
+
+    /** Used when $filenameMode === 'batch'. */
+    protected ?int $batchTimestamp = null;
+
+    /** If set, all files use this suffix (slugged), e.g. "2026-03" → "-2026-03". Overrides timestamp modes. */
+    protected ?string $globalSuffix = null;
+
     // public
     private $disk = 'resources';
 
-    public function __construct($imagesDir = null, $pdfsDir = null, $focus = false, array $overrides = [], ?ResourcesImportResult $result = null)
-    {
+    public function __construct(
+        $imagesDir = null,
+        $pdfsDir = null,
+        $focus = false,
+        array $overrides = [],
+        ?ResourcesImportResult $result = null,
+        string $filenameMode = 'per_file',
+        ?int $batchTimestamp = null,
+        ?string $globalSuffix = null
+    ) {
         $this->imagesDir = $imagesDir;
         $this->focus = $focus;
         $this->pdfsDir = $pdfsDir;
         $this->overrides = $overrides;
         $this->result = $result;
+        $this->filenameMode = in_array($filenameMode, ['per_file', 'batch', 'stable', 'preserve'], true) ? $filenameMode : 'per_file';
+        $this->batchTimestamp = $batchTimestamp;
+        $this->globalSuffix = $globalSuffix !== null && trim($globalSuffix) !== '' ? trim($globalSuffix) : null;
+    }
+
+    /**
+     * Build stored filename (without path) for PDF or thumbnail.
+     *
+     * @param  string  $baseSlug  Slug from resource name or PDF basename
+     * @param  bool  $isThumbnail  If true and mode is stable, language is appended for uniqueness
+     */
+    protected function buildStoredBasename(string $baseSlug, string $ext, array $row, int $rowIndex, bool $isThumbnail): string
+    {
+        $rowSuffix = $this->getRowValue($row, ['s3_suffix', 'file_suffix', 's3_file_suffix']);
+        if (is_string($rowSuffix) && trim($rowSuffix) !== '') {
+            return $baseSlug . '-' . Str::slug(trim($rowSuffix)) . '.' . $ext;
+        }
+        if ($this->globalSuffix !== null) {
+            return $baseSlug . '-' . Str::slug($this->globalSuffix) . '.' . $ext;
+        }
+        if ($this->filenameMode === 'stable') {
+            if ($isThumbnail) {
+                $lang = $this->getRowValue($row, ['filters_language', 'language']);
+                $langPart = is_string($lang) && trim($lang) !== ''
+                    ? Str::slug(trim($lang))
+                    : 'row-' . ($rowIndex + 1);
+
+                return $baseSlug . '-' . $langPart . '.' . $ext;
+            }
+
+            return $baseSlug . '.' . $ext;
+        }
+        if ($this->filenameMode === 'batch') {
+            $ts = $this->batchTimestamp ?? time();
+
+            return $baseSlug . '-' . $ts . '.' . $ext;
+        }
+
+        return $baseSlug . '-' . time() . '.' . $ext;
+    }
+
+    /**
+     * Use local filename as S3 object basename (no slugging, no extra suffix). For trusted admin imports only.
+     */
+    protected function preserveModeBasename(string $filename): string
+    {
+        $b = basename(str_replace('\\', '/', $filename));
+        if ($b === '' || str_contains($b, '..')) {
+            throw new \InvalidArgumentException('Invalid upload filename: '.$filename);
+        }
+
+        return $b;
     }
 
     protected function createOrGetModel($class, $name)
@@ -134,8 +210,15 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             } elseif ($this->imagesDir) {
                 $localPath = $this->imagesDir . DIRECTORY_SEPARATOR . $imageValue;
                 if (file_exists($localPath)) {
-                    $ext = pathinfo($imageValue, PATHINFO_EXTENSION) ?: 'jpg';
-                    $basename = Str::slug($row['name_of_the_resource']) . '-' . time() . '.' . $ext;
+                    $basename = $this->filenameMode === 'preserve'
+                        ? $this->preserveModeBasename($imageValue)
+                        : $this->buildStoredBasename(
+                            Str::slug($row['name_of_the_resource']),
+                            pathinfo($imageValue, PATHINFO_EXTENSION) ?: 'jpg',
+                            $row,
+                            $rowIndex,
+                            true
+                        );
                     Storage::disk($this->disk)->put($basename, file_get_contents($localPath));
                     $thumbnail = Storage::disk($this->disk)->url($basename);
                 } else {
@@ -164,8 +247,15 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
             }
 
             if ($pdfLocalPath && file_exists($pdfLocalPath)) {
-                $ext = pathinfo($pdfFilename, PATHINFO_EXTENSION) ?: 'pdf';
-                $basename = Str::slug(pathinfo($pdfFilename, PATHINFO_FILENAME)) . '-' . time() . '.' . $ext;
+                $basename = $this->filenameMode === 'preserve'
+                    ? $this->preserveModeBasename($pdfFilename)
+                    : $this->buildStoredBasename(
+                        Str::slug(pathinfo($pdfFilename, PATHINFO_FILENAME)),
+                        pathinfo($pdfFilename, PATHINFO_EXTENSION) ?: 'pdf',
+                        $row,
+                        $rowIndex,
+                        false
+                    );
                 $storagePath = $groupSlug . '/' . $basename;
                 Storage::disk($this->disk)->put($storagePath, file_get_contents($pdfLocalPath));
                 $pdfLink = Storage::disk($this->disk)->url($storagePath);
