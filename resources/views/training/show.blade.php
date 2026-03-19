@@ -55,6 +55,12 @@
                     </div>
                 @endif
 
+                @if(!empty($trainingResource->pdf_links_section))
+                    <div class="text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6">
+                        {!! $trainingResource->pdf_links_section !!}
+                    </div>
+                @endif
+
                 @if(
                     (!empty($trainingResource->button_text) && !empty($trainingResource->button_url)) ||
                     (!empty($trainingResource->secondary_button_text) && !empty($trainingResource->secondary_button_url))
@@ -81,6 +87,20 @@
                                 {{ $trainingResource->secondary_button_text }}
                             </a>
                         @endif
+                    </div>
+                @endif
+
+                @if(!empty($trainingResource->contacts_section))
+                    <div class="text-[#333E48] font-normal text-lg md:text-xl p-0 mt-8 mb-6">
+                        {!! $trainingResource->contacts_section !!}
+                    </div>
+                @endif
+
+                @if(!empty($trainingResource->register_box_section))
+                    <div class="p-6 mb-8 bg-blue-50 border-l-4 border-dark-blue">
+                        <div class="text-[#333E48] font-normal text-base md:text-lg">
+                            {!! $trainingResource->register_box_section !!}
+                        </div>
                     </div>
                 @endif
             </div>
