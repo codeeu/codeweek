@@ -7,6 +7,7 @@ use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
 use App\Nova\Metrics\ImporterTrend;
 use App\Nova\Metrics\MeetCodeTrend;
+use App\Nova\TrainingResource as TrainingResourceNova;
 use App\Nova\Metrics\UsersPerDay;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Menu\MenuSection;
@@ -22,6 +23,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function boot(): void
     {
         parent::boot();
+
+        // Explicitly register newly added resources to avoid sidebar discovery misses.
+        Nova::resources([
+            TrainingResourceNova::class,
+        ]);
 
         // Ensure dashboards are registered at boot so /nova/dashboards/main is always available
         // (ServingNova also registers them per-request; this covers edge cases)
