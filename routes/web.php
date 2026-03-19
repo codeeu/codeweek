@@ -62,6 +62,7 @@ use App\Http\Controllers\StaticPageController;
 use App\Http\Controllers\SuperOrganiserController;
 use App\Http\Controllers\CertificateBackendController;
 use App\Http\Controllers\ToolkitsController;
+use App\Http\Controllers\TrainingController;
 use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VolunteerController;
@@ -238,7 +239,7 @@ Route::get('/contact-us', [StaticPageController::class, 'static'])
 Route::get('/faqs', [StaticPageController::class, 'static'])
      ->name('faqs');
 //Static training pages
-Route::get('/training', [StaticPageController::class, 'static'])->name('training.index');
+Route::get('/training', [TrainingController::class, 'index'])->name('training.index');
 Route::get(
     '/training/cody-color-kit',
     [StaticPageController::class, 'static']
@@ -338,6 +339,7 @@ Route::get(
     '/training/making-and-coding',
     [StaticPageController::class, 'static']
 )->name('training.module-22'); */
+Route::get('/training/{slug}', [TrainingController::class, 'show'])->name('training.dynamic.show');
 Route::post('/contact-submit', [ContactFormController::class, 'submit'])
     ->middleware('throttle:5,1') // 5 requests per minute per IP
     ->name('contact.submit');
