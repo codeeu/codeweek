@@ -339,6 +339,9 @@ Route::get(
     '/training/making-and-coding',
     [StaticPageController::class, 'static']
 )->name('training.module-22'); */
+Route::get('/training-preview/{trainingResource}', [TrainingController::class, 'preview'])
+    ->middleware('signed')
+    ->name('training.preview');
 Route::get('/training/{slug}', [TrainingController::class, 'show'])->name('training.dynamic.show');
 Route::post('/contact-submit', [ContactFormController::class, 'submit'])
     ->middleware('throttle:5,1') // 5 requests per minute per IP

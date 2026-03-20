@@ -18,6 +18,17 @@ class TrainingController extends Controller
     {
         $trainingResource = TrainingResource::active()->where('slug', $slug)->firstOrFail();
 
-        return view('training.show', compact('trainingResource'));
+        return view('training.show', [
+            'trainingResource' => $trainingResource,
+            'previewMode' => false,
+        ]);
+    }
+
+    public function preview(TrainingResource $trainingResource): View
+    {
+        return view('training.show', [
+            'trainingResource' => $trainingResource,
+            'previewMode' => true,
+        ]);
     }
 }
