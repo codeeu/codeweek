@@ -22,6 +22,14 @@
 
 @section('content')
     <section id="codeweek-training-dynamic-subpage" class="font-['Blinker'] overflow-hidden">
+        @if(($previewMode ?? false) === true)
+            <div class="bg-yellow-100 border-b border-yellow-300 text-[#20262C]">
+                <div class="codeweek-container-lg py-3 text-sm md:text-base font-medium">
+                    Preview mode: this page is not published yet.
+                </div>
+            </div>
+        @endif
+
         @include('codingathome.banner', [
             'author' => $trainingResource->hero_author,
             'title' => $displayTitle,
