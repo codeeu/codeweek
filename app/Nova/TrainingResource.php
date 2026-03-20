@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
@@ -44,6 +45,23 @@ class TrainingResource extends Resource
             Text::make('Slug', 'slug')
                 ->rules('nullable', 'max:255', 'alpha_dash', 'unique:training_resources,slug,{{resourceId}}')
                 ->help('Optional. If empty, generated automatically from title. Used in /training/{slug}.'),
+
+            Text::make('Preview URL', function () {
+                if (! $this->resource?->exists) {
+                    return 'Save first to generate preview URL.';
+                }
+
+                $url = URL::temporarySignedRoute(
+                    'training.preview',
+                    now()->addDays(14),
+                    ['trainingResource' => $this->resource]
+                );
+
+                return '<a href="'.$url.'" target="_blank" rel="noopener noreferrer">'.$url.'</a>';
+            })
+                ->onlyOnDetail()
+                ->asHtml()
+                ->help('Share this link with clients for preview before publishing. Link expires in 14 days.'),
 
             Text::make('Card title', 'card_title')
                 ->rules('nullable', 'max:255')
@@ -133,7 +151,8 @@ class TrainingResource extends Resource
                 ->help('Lower = shown first among dynamic resources')
                 ->nullable(),
 
-            Boolean::make('Active', 'active'),
+            Boolean::make('Published', 'active')
+                ->help('Turn off to keep this page hidden publicly. Preview URL still works.'),
         ];
     }
 
