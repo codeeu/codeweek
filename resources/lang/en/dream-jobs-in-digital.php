@@ -11,7 +11,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'landing_header' => 'Get inspired by the incredible variety of jobs in digital! Download our Dream Jobs guide, check out our role models, test your digital skills, hold a Career in Digital Open Day or arrange a practical session with our Practical skills – VET Toolkit.',
+    'landing_header' => 'Get inspired by the incredible variety of jobs in digital! Download our Dream Jobs guide, check out our role models, test your digital skills, hold a Career in Digital Open Day or arrange a practical session with our VET toolkit.',
     'get_involved' => 'Get involved',
     'about_title' => 'About Careers in Digital',
     'about_description' => 'Careers in Digital is part of <a href="/about" class="text-dark-blue underline">EU Code Week</a> targeting 15–18-year-olds and educators to explore exciting and varied digital careers. Discover role models doing their dream job in digital - dive into their motivational videos and career pathways and explore our Careers in Digital Guide to understand the variety of roles and how to get there. If you’re an educator download our new Career Day Toolkit to help organise open day sessions for schools and colleges or try out our new Vocational Education toolkit to hold practical creative sessions, created by Fondazione Links and CISCO. We strive to showcase the diverse opportunities in digital careers beyond coding. Unlock your potential and dive into the world of digital careers today!',
@@ -19,7 +19,7 @@ return [
     'more_about' => 'More about',
 
     'resources' => 'Resources',
-    'resource_title_1' => 'Check out our Dream Jobs in Digital Guide',
+    'resource_title_1' => 'Check out our Careers in Digital Guide',
     'resource_description_1' => 'Explore the top 20 careers in digital today and the pathways to get there',
     'resource_button_1' => 'Download the career guide',
     'resource_title_2' => 'Hold a Career Inspiration Day',
