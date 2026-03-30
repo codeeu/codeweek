@@ -3,15 +3,17 @@
 namespace App\Nova\Actions;
 
 use App\MediaUpload;
+use DigitalCreative\Filepond\Filepond;
+use DigitalCreative\Filepond\Data\Data;
 use Illuminate\Bus\Queueable;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
-use Laravel\Nova\Fields\File;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class BulkUploadMediaFiles extends Action
@@ -53,20 +55,22 @@ class BulkUploadMediaFiles extends Action
                 continue;
             }
 
-            $extension = strtolower((string) $file->getClientOriginalExtension());
+            $originalName = $this->extractOriginalName($file);
+            if ($originalName === null) {
+                $skipped++;
+                continue;
+            }
+            $extension = strtolower((string) pathinfo($originalName, PATHINFO_EXTENSION));
             if (!in_array($extension, $allowedExtensions, true)) {
                 $skipped++;
                 continue;
             }
 
-            $baseName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+            $baseName = pathinfo($originalName, PATHINFO_FILENAME);
             $safeBaseName = Str::slug($baseName) ?: 'upload-file';
             $destination = 'nova/uploads/' . now()->format('Y/m');
-            $storedPath = $file->storeAs(
-                $destination,
-                $safeBaseName . '-' . Str::random(8) . '.' . $extension,
-                'resources'
-            );
+            $finalFileName = $safeBaseName . '-' . Str::random(8) . '.' . $extension;
+            $storedPath = $this->storeFile($file, $destination, $finalFileName);
 
             if (!$storedPath) {
                 $skipped++;
@@ -94,14 +98,10 @@ class BulkUploadMediaFiles extends Action
     public function fields(NovaRequest $request): array
     {
         return [
-            File::make('Files', 'files')
-                ->withMeta([
-                    'extraAttributes' => [
-                        'name' => 'files[]',
-                        'multiple' => true,
-                        'accept' => '.jpg,.jpeg,.png,.gif,.webp,.svg,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt',
-                    ],
-                ])
+            Filepond::make('Files', 'files')
+                ->multiple()
+                ->limit(50)
+                ->acceptedTypes('.jpg,.jpeg,.png,.gif,.webp,.svg,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt')
                 ->rules('required')
                 ->help('Drag and drop multiple files or click to select. Supported: images, PDF, Office docs, and TXT.'),
         ];
@@ -120,6 +120,11 @@ class BulkUploadMediaFiles extends Action
             $candidates[] = $fields->files;
         }
 
+        $requestItems = request()->collect('files')->all();
+        if (!empty($requestItems)) {
+            $candidates[] = $requestItems;
+        }
+
         $requestFiles = request()->allFiles();
         if (!empty($requestFiles)) {
             $candidates[] = $requestFiles;
@@ -127,6 +132,10 @@ class BulkUploadMediaFiles extends Action
 
         $flatten = function ($value) use (&$flatten): array {
             if ($value instanceof UploadedFile) {
+                return [$value];
+            }
+
+            if (is_string($value)) {
                 return [$value];
             }
 
@@ -148,6 +157,49 @@ class BulkUploadMediaFiles extends Action
         }
 
         return $files;
+    }
+
+    protected function extractOriginalName(UploadedFile|string $file): ?string
+    {
+        if ($file instanceof UploadedFile) {
+            return $file->getClientOriginalName();
+        }
+
+        try {
+            $data = Data::fromEncrypted($file);
+            return $data->filename;
+        } catch (\Throwable $e) {
+            return null;
+        }
+    }
+
+    protected function storeFile(UploadedFile|string $file, string $destination, string $finalFileName): ?string
+    {
+        if ($file instanceof UploadedFile) {
+            return $file->storeAs($destination, $finalFileName, 'resources');
+        }
+
+        try {
+            $data = Data::fromEncrypted($file);
+        } catch (\Throwable $e) {
+            return null;
+        }
+
+        $stream = Storage::disk($data->disk)->readStream($data->path);
+        if ($stream === false) {
+            return null;
+        }
+
+        $targetPath = $destination . '/' . $finalFileName;
+        $stored = Storage::disk('resources')->put($targetPath, $stream, 'public');
+        if (is_resource($stream)) {
+            fclose($stream);
+        }
+
+        // Clean temporary Filepond directory.
+        $data->deleteDirectory();
+
+        return $stored ? $targetPath : null;
     }
 
 }
