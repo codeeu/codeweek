@@ -4,6 +4,7 @@ namespace App\Nova\Actions;
 
 use App\MediaUpload;
 use Illuminate\Bus\Queueable;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
@@ -33,13 +34,9 @@ class BulkUploadMediaFiles extends Action
      */
     public function handle(ActionFields $fields, Collection $models)
     {
-        $uploadedFiles = $fields->files ?? request()->file('files');
-        if (!$uploadedFiles) {
+        $uploadedFiles = $this->collectUploadedFiles($fields);
+        if (empty($uploadedFiles)) {
             return Action::danger('Please select one or more files.');
-        }
-
-        if (!is_array($uploadedFiles)) {
-            $uploadedFiles = [$uploadedFiles];
         }
 
         $allowedExtensions = [
@@ -100,6 +97,7 @@ class BulkUploadMediaFiles extends Action
             File::make('Files', 'files')
                 ->withMeta([
                     'extraAttributes' => [
+                        'name' => 'files[]',
                         'multiple' => true,
                         'accept' => '.jpg,.jpeg,.png,.gif,.webp,.svg,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt',
                     ],
@@ -107,6 +105,49 @@ class BulkUploadMediaFiles extends Action
                 ->rules('required')
                 ->help('Drag and drop multiple files or click to select. Supported: images, PDF, Office docs, and TXT.'),
         ];
+    }
+
+    /**
+     * Collect uploaded files from Nova action fields + raw request payload.
+     *
+     * @return UploadedFile[]
+     */
+    protected function collectUploadedFiles(ActionFields $fields): array
+    {
+        $candidates = [];
+
+        if (isset($fields->files)) {
+            $candidates[] = $fields->files;
+        }
+
+        $requestFiles = request()->allFiles();
+        if (!empty($requestFiles)) {
+            $candidates[] = $requestFiles;
+        }
+
+        $flatten = function ($value) use (&$flatten): array {
+            if ($value instanceof UploadedFile) {
+                return [$value];
+            }
+
+            if (!is_array($value)) {
+                return [];
+            }
+
+            $result = [];
+            foreach ($value as $item) {
+                $result = array_merge($result, $flatten($item));
+            }
+
+            return $result;
+        };
+
+        $files = [];
+        foreach ($candidates as $candidate) {
+            $files = array_merge($files, $flatten($candidate));
+        }
+
+        return $files;
     }
 
     /**
