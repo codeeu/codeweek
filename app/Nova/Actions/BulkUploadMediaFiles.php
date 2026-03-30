@@ -150,11 +150,4 @@ class BulkUploadMediaFiles extends Action
         return $files;
     }
 
-    /**
-     * Indicate that this action can be run without any models.
-     */
-    public function standalone()
-    {
-        return true;
-    }
 }
