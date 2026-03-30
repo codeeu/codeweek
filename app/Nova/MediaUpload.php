@@ -76,7 +76,9 @@ class MediaUpload extends Resource
     public function actions(Request $request): array
     {
         return [
-            new BulkUploadMediaFiles,
+            (new BulkUploadMediaFiles)
+                ->standalone()
+                ->onlyOnIndex(),
         ];
     }
 
