@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Nova\Dashboards\Main;
+use App\Nova\MediaUpload as MediaUploadNova;
 use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
 use App\Nova\Metrics\ImporterTrend;
@@ -27,6 +28,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         // Explicitly register newly added resources to avoid sidebar discovery misses.
         Nova::resources([
             TrainingResourceNova::class,
+            MediaUploadNova::class,
         ]);
 
         // Ensure dashboards are registered at boot so /nova/dashboards/main is always available
