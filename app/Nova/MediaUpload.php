@@ -2,10 +2,12 @@
 
 namespace App\Nova;
 
+use App\Nova\Actions\BulkUploadMediaFiles;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\File;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
 class MediaUpload extends Resource
 {
@@ -40,6 +42,10 @@ class MediaUpload extends Resource
                 ->nullable()
                 ->help('Optional label to help identify this file in Nova.'),
 
+            Text::make('File Name', function () {
+                return basename((string) $this->file_path);
+            })->onlyOnIndex(),
+
             File::make('File', 'file_path')
                 ->disk('resources')
                 ->path('nova/uploads')
@@ -63,6 +69,18 @@ class MediaUpload extends Resource
             Text::make('URL', function () {
                 return $this->resolved_url ?: '-';
             })->onlyOnIndex(),
+        ];
+    }
+
+    public static function indexQuery(NovaRequest $request, $query)
+    {
+        return $query->orderBy('created_at', 'desc');
+    }
+
+    public function actions(Request $request): array
+    {
+        return [
+            new BulkUploadMediaFiles,
         ];
     }
 }
