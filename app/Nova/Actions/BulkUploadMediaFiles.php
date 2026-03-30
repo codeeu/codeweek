@@ -210,8 +210,9 @@ class BulkUploadMediaFiles extends Action
             $stored = Storage::disk('resources')->put($targetPath, $contents, 'public');
         }
 
-        // Clean temporary Filepond directory.
-        $data->deleteDirectory();
+        // Clean only this temp file. Deleting the whole directory can remove
+        // sibling files from the same multi-upload batch.
+        $data->deleteFile();
 
         return $stored ? $targetPath : null;
     }
