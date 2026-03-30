@@ -10,6 +10,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Laravel\Nova\Actions\Action;
@@ -185,19 +186,33 @@ class BulkUploadMediaFiles extends Action
             return null;
         }
 
-        $stream = Storage::disk($data->disk)->readStream($data->path);
-        if ($stream === false) {
-            return null;
-        }
-
         $targetPath = $destination . '/' . $finalFileName;
-        $stored = Storage::disk('resources')->put($targetPath, $stream, 'public');
+        $stream = Storage::disk($data->disk)->readStream($data->path);
+
         if (is_resource($stream)) {
-            fclose($stream);
+            try {
+                $stored = Storage::disk('resources')->writeStream($targetPath, $stream, ['visibility' => 'public']);
+            } finally {
+                fclose($stream);
+            }
+        } else {
+            // Some environments return null instead of a stream for temp files.
+            // Fallback to reading file contents directly.
+            $contents = Storage::disk($data->disk)->get($data->path);
+            if (!is_string($contents) || $contents === '') {
+                Log::warning('[BulkUploadMediaFiles] Unable to read temp file contents', [
+                    'disk' => $data->disk,
+                    'path' => $data->path,
+                ]);
+                return null;
+            }
+
+            $stored = Storage::disk('resources')->put($targetPath, $contents, 'public');
         }
 
-        // Clean temporary Filepond directory.
-        $data->deleteDirectory();
+        // Clean only this temp file. Deleting the whole directory can remove
+        // sibling files from the same multi-upload batch.
+        $data->deleteFile();
 
         return $stored ? $targetPath : null;
     }
