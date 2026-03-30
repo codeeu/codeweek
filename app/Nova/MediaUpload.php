@@ -55,20 +55,16 @@ class MediaUpload extends Resource
                 ->help('Uploads directly to S3 disk "resources" under folder "nova/uploads".'),
 
             Text::make('URL', function () {
-                if (empty($this->resolved_url)) {
-                    return '-';
-                }
-
-                $url = $this->resolved_url;
-
-                return '<a href="' . e($url) . '" target="_blank" rel="noopener noreferrer">' . e($url) . '</a>';
+                return $this->renderUrlWithCopy($this->resolved_url);
             })
                 ->asHtml()
                 ->onlyOnDetail(),
 
             Text::make('URL', function () {
-                return $this->resolved_url ?: '-';
-            })->onlyOnIndex(),
+                return $this->renderUrlWithCopy($this->resolved_url);
+            })
+                ->asHtml()
+                ->onlyOnIndex(),
         ];
     }
 
@@ -82,5 +78,19 @@ class MediaUpload extends Resource
         return [
             new BulkUploadMediaFiles,
         ];
+    }
+
+    protected function renderUrlWithCopy(?string $url): string
+    {
+        if (empty($url)) {
+            return '-';
+        }
+
+        $escapedUrl = e($url);
+        $jsonUrl = json_encode($url, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP);
+        $copyScript = "navigator.clipboard.writeText({$jsonUrl}).then(function(){alert('URL copied to clipboard');}).catch(function(){window.prompt('Copy URL:', {$jsonUrl});}); return false;";
+
+        return '<a href="' . $escapedUrl . '" target="_blank" rel="noopener noreferrer">' . $escapedUrl . '</a>'
+            . ' <button type="button" class="btn btn-default btn-xs" onclick="' . e($copyScript) . '">Copy URL</button>';
     }
 }
