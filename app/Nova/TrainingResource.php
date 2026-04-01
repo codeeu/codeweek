@@ -138,6 +138,12 @@ class TrainingResource extends Resource
                 ->nullable()
                 ->rules('nullable', 'url'),
 
+            Text::make('Third button text', 'third_button_text')->nullable(),
+
+            Text::make('Third button URL', 'third_button_url')
+                ->nullable()
+                ->rules('nullable', 'url'),
+
             Text::make('Meta title', 'meta_title')
                 ->nullable()
                 ->help('Optional HTML title override'),
