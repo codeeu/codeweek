@@ -32,6 +32,8 @@ class TrainingResource extends Model
         'button_url',
         'secondary_button_text',
         'secondary_button_url',
+        'third_button_text',
+        'third_button_url',
         'meta_title',
         'meta_description',
         'position',
