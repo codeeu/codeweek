@@ -88,14 +88,29 @@
                 @endif
 
                 @if(!empty($trainingResource->button_text) && !empty($trainingResource->button_url))
-                    <a
-                        class="max-xl:!hidden inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
-                        href="{{ $trainingResource->button_url }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {{ $trainingResource->button_text }}
-                    </a>
+                    <div>
+                        <a
+                            class="max-xl:!hidden inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
+                            href="{{ $trainingResource->button_url }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {{ $trainingResource->button_text }}
+                        </a>
+
+                        @if(!empty($trainingResource->third_button_text) && !empty($trainingResource->third_button_url))
+                            <div class="mt-4">
+                                <a
+                                    class="max-xl:!hidden inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
+                                    href="{{ $trainingResource->third_button_url }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {{ $trainingResource->third_button_text }}
+                                </a>
+                            </div>
+                        @endif
+                    </div>
                 @endif
 
                 @if(!empty($trainingResource->contacts_section))
