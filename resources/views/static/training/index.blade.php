@@ -289,7 +289,7 @@
                     @foreach($dynamicResults as $result)
                         <div class="flex overflow-hidden flex-col bg-white rounded-lg cursor-pointer" onclick="window.location.href='{{ $result['link'] }}'">
                             <div class="relative">
-                                <img src="{{ $result['image'] }}" class="w-full" />
+                                <img src="{{ $result['image'] }}" class="w-full md:h-[244px] md:object-cover" />
                             </div>
                             <div class="block flex-grow px-6 py-8">
                                 <p class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat']">
@@ -306,7 +306,7 @@
                     @foreach($results as $result)
                         <div class="flex overflow-hidden flex-col bg-white rounded-lg cursor-pointer" onclick="window.location.href='{{ $result['link'] }}'">
                             <div class="relative">
-                                <img src="{{ $result['image'] }}" class="w-full" />
+                                <img src="{{ $result['image'] }}" class="w-full md:h-[244px] md:object-cover" />
                             </div>
                             <div class="block flex-grow px-6 py-8">
                                 <p class="text-dark-blue text-lg p-0 font-semibold mb-2 font-['Montserrat']">
