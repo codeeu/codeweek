@@ -3,18 +3,15 @@
 namespace App\Nova\Actions;
 
 use App\MediaUpload;
-use DigitalCreative\Filepond\Filepond;
-use DigitalCreative\Filepond\Data\Data;
 use Illuminate\Bus\Queueable;
-use Illuminate\Http\UploadedFile;
+use Illuminate\Http\Request;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
+use Laravel\Nova\Fields\File;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class BulkUploadMediaFiles extends Action
@@ -37,7 +34,7 @@ class BulkUploadMediaFiles extends Action
      */
     public function handle(ActionFields $fields, Collection $models)
     {
-        $uploadedFiles = $this->collectUploadedFiles($fields);
+        $uploadedFiles = $this->collectUploadedFiles($fields, request());
         if (empty($uploadedFiles)) {
             return Action::danger('Please select one or more files.');
         }
@@ -56,11 +53,7 @@ class BulkUploadMediaFiles extends Action
                 continue;
             }
 
-            $originalName = $this->extractOriginalName($file);
-            if ($originalName === null) {
-                $skipped++;
-                continue;
-            }
+            $originalName = $file->getClientOriginalName();
             $extension = strtolower((string) pathinfo($originalName, PATHINFO_EXTENSION));
             if (!in_array($extension, $allowedExtensions, true)) {
                 $skipped++;
@@ -71,7 +64,7 @@ class BulkUploadMediaFiles extends Action
             $safeBaseName = Str::slug($baseName) ?: 'upload-file';
             $destination = 'nova/uploads/' . now()->format('Y/m');
             $finalFileName = $safeBaseName . '-' . Str::random(8) . '.' . $extension;
-            $storedPath = $this->storeFile($file, $destination, $finalFileName);
+            $storedPath = $file->storeAs($destination, $finalFileName, 'resources');
 
             if (!$storedPath) {
                 $skipped++;
@@ -98,123 +91,34 @@ class BulkUploadMediaFiles extends Action
      */
     public function fields(NovaRequest $request): array
     {
-        return [
-            Filepond::make('Files', 'files')
-                ->multiple()
-                ->limit(50)
-                ->acceptedTypes('.jpg,.jpeg,.png,.gif,.webp,.svg,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt')
-                ->rules('required')
-                ->help('Drag and drop multiple files or click to select. Supported: images, PDF, Office docs, and TXT.'),
-        ];
+        $fields = [];
+
+        for ($i = 1; $i <= 20; $i++) {
+            $fields[] = File::make("File {$i}", "file_{$i}")
+                ->rules('nullable', 'max:51200', 'mimes:jpg,jpeg,png,gif,webp,svg,pdf,doc,docx,ppt,pptx,xls,xlsx,txt');
+        }
+
+        $fields[0]->help('Upload up to 20 files in one run (mix of images/docs).');
+
+        return $fields;
     }
 
     /**
-     * Collect uploaded files from Nova action fields + raw request payload.
+     * Collect uploaded files from explicit action slots.
      *
-     * @return UploadedFile[]
+     * @return array
      */
-    protected function collectUploadedFiles(ActionFields $fields): array
+    protected function collectUploadedFiles(ActionFields $fields, Request $request): array
     {
-        $candidates = [];
-
-        if (isset($fields->files)) {
-            $candidates[] = $fields->files;
-        }
-
-        $requestItems = request()->collect('files')->all();
-        if (!empty($requestItems)) {
-            $candidates[] = $requestItems;
-        }
-
-        $requestFiles = request()->allFiles();
-        if (!empty($requestFiles)) {
-            $candidates[] = $requestFiles;
-        }
-
-        $flatten = function ($value) use (&$flatten): array {
-            if ($value instanceof UploadedFile) {
-                return [$value];
-            }
-
-            if (is_string($value)) {
-                return [$value];
-            }
-
-            if (!is_array($value)) {
-                return [];
-            }
-
-            $result = [];
-            foreach ($value as $item) {
-                $result = array_merge($result, $flatten($item));
-            }
-
-            return $result;
-        };
-
         $files = [];
-        foreach ($candidates as $candidate) {
-            $files = array_merge($files, $flatten($candidate));
+        for ($i = 1; $i <= 20; $i++) {
+            $key = "file_{$i}";
+            $file = $fields->{$key} ?? $request->file($key);
+            if ($file) {
+                $files[] = $file;
+            }
         }
 
         return $files;
     }
-
-    protected function extractOriginalName(UploadedFile|string $file): ?string
-    {
-        if ($file instanceof UploadedFile) {
-            return $file->getClientOriginalName();
-        }
-
-        try {
-            $data = Data::fromEncrypted($file);
-            return $data->filename;
-        } catch (\Throwable $e) {
-            return null;
-        }
-    }
-
-    protected function storeFile(UploadedFile|string $file, string $destination, string $finalFileName): ?string
-    {
-        if ($file instanceof UploadedFile) {
-            return $file->storeAs($destination, $finalFileName, 'resources');
-        }
-
-        try {
-            $data = Data::fromEncrypted($file);
-        } catch (\Throwable $e) {
-            return null;
-        }
-
-        $targetPath = $destination . '/' . $finalFileName;
-        $stream = Storage::disk($data->disk)->readStream($data->path);
-
-        if (is_resource($stream)) {
-            try {
-                $stored = Storage::disk('resources')->writeStream($targetPath, $stream, ['visibility' => 'public']);
-            } finally {
-                fclose($stream);
-            }
-        } else {
-            // Some environments return null instead of a stream for temp files.
-            // Fallback to reading file contents directly.
-            $contents = Storage::disk($data->disk)->get($data->path);
-            if (!is_string($contents) || $contents === '') {
-                Log::warning('[BulkUploadMediaFiles] Unable to read temp file contents', [
-                    'disk' => $data->disk,
-                    'path' => $data->path,
-                ]);
-                return null;
-            }
-
-            $stored = Storage::disk('resources')->put($targetPath, $contents, 'public');
-        }
-
-        // Clean only this temp file. Deleting the whole directory can remove
-        // sibling files from the same multi-upload batch.
-        $data->deleteFile();
-
-        return $stored ? $targetPath : null;
-    }
-
 }
