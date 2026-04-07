@@ -49,6 +49,9 @@ class HackathonsPage extends Resource
             Panel::make('Hero', [
                 Text::make('Hero title', 'hero_title')->nullable(),
                 Trix::make('Hero subtitle', 'hero_subtitle')->nullable(),
+                Text::make('Hero background image URL', 'hero_background_image_url')
+                    ->nullable()
+                    ->help('Optional. Use a relative path like /images/hackathons/hackathons_bg.png or a full URL.'),
             ])->collapsable()->collapsedByDefault(),
 
             Panel::make('Intro section', [
@@ -64,6 +67,9 @@ class HackathonsPage extends Resource
                 Trix::make('Details paragraph 3', 'details_paragraph_3')->nullable(),
                 Trix::make('Details paragraph 4', 'details_paragraph_4')->nullable(),
                 Text::make('Video URL (embed)', 'video_url')->nullable(),
+                Text::make('Video poster image URL', 'video_poster_image_url')
+                    ->nullable()
+                    ->help('Optional. Image shown behind the play button. Use a relative path like /images/Visual%20for%20EU%20Finals%20webpage.png or a full URL.'),
                 Text::make('Extra button text (optional)', 'extra_button_text')->nullable(),
                 Text::make('Extra button link (optional)', 'extra_button_link')->nullable(),
                 Text::make('Recap button text', 'recap_button_text')->nullable(),

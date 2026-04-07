@@ -9,6 +9,13 @@
     $hasHackathonsPageTable = \Illuminate\Support\Facades\Schema::hasTable('hackathons_page');
     $page = $hasHackathonsPageTable ? \App\HackathonsPage::config() : null;
     $dynamic = $page && $page->dynamic_content;
+
+    $defaultHeroBackground = '/images/hackathons/hackathons_bg.png';
+    $heroBackground = ($dynamic && $page && $page->hero_background_image_url) ? $page->hero_background_image_url : $defaultHeroBackground;
+
+    // Note: file on disk has spaces; URL must be encoded.
+    $defaultVideoPoster = '/images/Visual%20for%20EU%20Finals%20webpage.png';
+    $videoPoster = ($dynamic && $page && $page->video_poster_image_url) ? $page->video_poster_image_url : $defaultVideoPoster;
 @endphp
 
 @section('layout.breadcrumb')
@@ -46,13 +53,13 @@
                         <img
                             class="absolute top-0 -left-1/4 w-[150vw] !max-w-none md:hidden"
                             loading="lazy"
-                            src="/images/hackathons/hackathons_bg.png"
+                            src="{{ $heroBackground }}"
                             style="clip-path: ellipse(71% 73% at 40% 20%);"
                         />
                         <img
                             class="absolute top-0 right-0 h-full max-w-[calc(70vw)] object-cover hidden md:block"
                             loading="lazy"
-                            src="/images/hackathons/hackathons_bg.png"
+                            src="{{ $heroBackground }}"
                             style="clip-path: ellipse(70% 140% at 70% 25%);"
                         />
                     </div>
@@ -105,7 +112,7 @@
             <div class="relative pt-20 pb-16 codeweek-container-lg md:pt-40 md:pb-28">
                 <div class="flex flex-col gap-6 lg:flex-row lg:gap-20">
                     <div class="flex overflow-hidden relative flex-1 items-center">
-                        <img src="{{asset('images/hackathons/hackathon.png')}}" class="object-cover h-full rounded-lg">
+                        <img src="{{ $videoPoster }}" class="object-cover h-full rounded-lg">
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                             @include('layout.video-player', [
                                 'id' => 'hackathons-video',
