@@ -165,32 +165,47 @@
                                     {{ $page->contentForLocale('extra_button_text') }}
                                 </a>
                             @endif
-                            <a
-                                class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
-                                target="_blank" href="{{ ($dynamic && $page && $page->recap_button_link) ? $page->recap_button_link : 'https://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024' }}"
-                            >
-                                @if($dynamic && $page && $page->contentForLocale('recap_button_text'))
-                                    {{ $page->contentForLocale('recap_button_text') }}
-                                @else
-                                    Hackathons Final 2024 Recap
+
+                            @if($dynamic)
+                                @if($page && $page->recap_button_link && $page->contentForLocale('recap_button_text'))
+                                    <a
+                                        class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
+                                        target="_blank" href="{{ $page->recap_button_link }}"
+                                    >
+                                        {{ $page->contentForLocale('recap_button_text') }}
+                                    </a>
                                 @endif
-                            </a>
-                            <a
-                                class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
-                                target="_blank" href="{{ ($dynamic && $page && $page->toolkit_button_link) ? $page->toolkit_button_link : '/docs/C4EU_D2.7 Code Week Event Hackathon Design & Toolkit Final 18.06.2025.pdf' }}"
-                            >
-                                <span>
-                                    @if($dynamic && $page && $page->contentForLocale('toolkit_button_text'))
-                                        {{ $page->contentForLocale('toolkit_button_text') }}
-                                    @else
-                                        Hackathon 2025 Toolkit
-                                    @endif
-                                </span>
-                                <div class="flex overflow-hidden gap-2 w-4">
-                                    <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                    <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
-                                </div>
-                            </a>
+
+                                @if($page && $page->toolkit_button_link && $page->contentForLocale('toolkit_button_text'))
+                                    <a
+                                        class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                                        target="_blank" href="{{ $page->toolkit_button_link }}"
+                                    >
+                                        <span>{{ $page->contentForLocale('toolkit_button_text') }}</span>
+                                        <div class="flex overflow-hidden gap-2 w-4">
+                                            <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                            <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                        </div>
+                                    </a>
+                                @endif
+                            @else
+                                <a
+                                    class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
+                                    target="_blank" href="https://eventornado.com/event/eu-codeweek-hackathon2024#Finals%20-%20EU%20Code%20Week%20Hackathon%202024"
+                                >
+                                    Hackathons Final 2024 Recap
+                                </a>
+                                <a
+                                    class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
+                                    target="_blank" href="/docs/C4EU_D2.7 Code Week Event Hackathon Design & Toolkit Final 18.06.2025.pdf"
+                                >
+                                    <span>Hackathon 2025 Toolkit</span>
+                                    <div class="flex overflow-hidden gap-2 w-4">
+                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                        <img src="/images/arrow-right-icon.svg" class="duration-500 transform -translate-x-6 min-w-4 group-hover:translate-x-0" />
+                                    </div>
+                                </a>
+                            @endif
                         </div>
                     </div>
                 </div>
