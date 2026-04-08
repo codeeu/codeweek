@@ -97,9 +97,7 @@ final class EventsTest extends TestCase
             'status' => 'APPROVED',
         ]);
 
-        $this->get('/view/'.$event->id.'/random')->assertDontSee(
-            'foo@bar.com'
-        );
+        $this->get('/view/'.$event->id.'/random')->assertDontSee('foo@bar.com');
     }
 
     #[Test]

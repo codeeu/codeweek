@@ -54,9 +54,15 @@ class EventFactory extends Factory
             'name_for_certificate' => $this->faker->name(),
             'organizer_type' => $this->faker->randomElement($orgtypes),
             'participants_count' => $this->faker->numberBetween(0, 100),
-            'codeweek_for_all_participation_code' => $this->faker->randomAscii(),
+            // Keep it HTML-safe so feature tests can assertSee() reliably.
+            'codeweek_for_all_participation_code' => 'cw'.$this->faker->numberBetween(18, 26).'-'.$this->faker->bothify('????'),
             'activity_type' => 'offline',
-            'language' => 'en',
+            // EventRequest expects language as an array of locales.
+            'language' => ['en'],
+            // Fields required by EventRequest
+            'duration' => '1-2',
+            'ages' => ['10-12'],
+            'is_extracurricular_event' => true,
             'highlighted_status' => 'NONE',
 
         ];

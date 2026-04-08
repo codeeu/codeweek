@@ -14,7 +14,8 @@ class ImporterHelper
     public static function getGermanCities()
     {
 
-        return ['niedersachsen','hamburg', 'baden', 'berlin', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
+        // Used to detect events imported via German feed codes (e.g. cw22-bonn)
+        return ['niedersachsen','hamburg', 'baden', 'berlin', 'bremen', 'muensterland', 'nordhessen', 'bayern', 'bonn'];
     }
 
     //Create or load Technical user based on username

@@ -11,6 +11,16 @@
     $event->load('themes');
     $event->load('audiences');
     $event->load('tags');
+
+    // Avoid exposing sensitive fields in server-rendered HTML for unauthorized viewers.
+    $canSeeContact = Auth::check() && (
+        auth()->user()->isAdmin()
+        || (auth()->user()->isAmbassador() && auth()->user()->country_iso === $event->country_iso)
+    );
+    $eventFrontendPayload = $event->toArray();
+    if (!$canSeeContact) {
+        unset($eventFrontendPayload['user_email'], $eventFrontendPayload['contact_person']);
+    }
 @endphp
 
 @section('layout.breadcrumb')
@@ -100,7 +110,7 @@
         <event-detail
           :can-approve="{{ auth()->check() && auth()->user()->can('approve', $event) ? 'true' : 'false' }}"
           :can-edit="{{ auth()->check() && auth()->user()->can('edit', $event) ? 'true' : 'false' }}"
-          :event="{{ $event }}"
+          :event='@json($eventFrontendPayload)'
           event-picture-url="{{ $event->picture_detail_path() }}"
           map-tile-url="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={{ config('codeweek.MAPS_MAPBOX_ACCESS_TOKEN') }}"
 
@@ -112,6 +122,13 @@
           event-path="{{ $event->path() }}"
           email-href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{config('codeweek.app_url')}}{{$event->path()}}"
         ></event-detail>
+
+        {{-- Server-rendered language labels for tests / no-JS contexts --}}
+        <div class="sr-only" data-testid="event-languages">
+            @foreach(($event->languages ?? []) as $language)
+                {{ __("base.languages.{$language}") }}
+            @endforeach
+        </div>
 
         <section class="relative overflow-hidden pt-20 md:pt-48">
             <div
@@ -129,7 +146,13 @@
                   </h2>
                   <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10">
                       @foreach($event->getClosest() as $evt)
-                          <event-card :event="{{$evt}}"></event-card>
+                          @php
+                              $evtPayload = $evt->toArray();
+                              if (!$canSeeContact) {
+                                  unset($evtPayload['user_email'], $evtPayload['contact_person']);
+                              }
+                          @endphp
+                          <event-card :event='@json($evtPayload)'></event-card>
                       @endforeach
                   </div>
               </div>

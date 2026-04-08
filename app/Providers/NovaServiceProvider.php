@@ -8,6 +8,11 @@ use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
 use App\Nova\Metrics\ImporterTrend;
 use App\Nova\Metrics\MeetCodeTrend;
+use App\Nova\SupportApproval as SupportApprovalNova;
+use App\Nova\SupportCase as SupportCaseNova;
+use App\Nova\SupportCaseAction as SupportCaseActionNova;
+use App\Nova\SupportCaseMessage as SupportCaseMessageNova;
+use App\Nova\SupportGmailCursor as SupportGmailCursorNova;
 use App\Nova\TrainingResource as TrainingResourceNova;
 use App\Nova\Metrics\UsersPerDay;
 use Illuminate\Support\Facades\Gate;
@@ -29,6 +34,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         Nova::resources([
             TrainingResourceNova::class,
             MediaUploadNova::class,
+            SupportCaseNova::class,
+            SupportCaseActionNova::class,
+            SupportApprovalNova::class,
+            SupportCaseMessageNova::class,
+            SupportGmailCursorNova::class,
         ]);
 
         // Ensure dashboards are registered at boot so /nova/dashboards/main is always available
