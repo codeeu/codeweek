@@ -5,7 +5,7 @@ namespace App\Services\Support\Gmail;
 interface GmailConnector
 {
     /**
-     * @return array{messages: GmailMessage[], next_history_id: ?string}
+     * @return array{messages: GmailMessage[], next_history_id: ?string, warnings: string[]}
      */
     public function fetchNewMessages(
         string $mailbox,
