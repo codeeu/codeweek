@@ -14,7 +14,7 @@ return [
     */
     'if-no-clear-information-provide-estimate' => 'If you do not have clear information, please provide an estimate.',
     'banner-section' => 'banner section',
-    'add-your-codeweek-activity' => 'Add your Codeweek activity',
+    'add-your-codeweek-activity' => 'Add your #EUCodeWeek activity',
     'join-the-community' => 'Join the community',
     'activity-overview-section' => 'Activity Overview Section',
     'activity-title' => 'Activity title*',

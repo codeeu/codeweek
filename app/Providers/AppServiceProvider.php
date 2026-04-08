@@ -17,6 +17,9 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Lang;
+use App\Services\Support\Gmail\GmailConnector;
+use App\Services\Support\Gmail\GoogleGmailConnector;
+use App\Services\Support\Gmail\NullGmailConnector;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -186,6 +189,15 @@ class AppServiceProvider extends ServiceProvider
             );
         }
         $this->app->bind(\Illuminate\Contracts\Debug\ExceptionHandler::class, \App\Exceptions\Handler::class);
+
+        $this->app->bind(GmailConnector::class, function () {
+            if (!config('support_gmail.enabled')) {
+                return new NullGmailConnector();
+            }
+
+            // Default to Google connector when enabled.
+            return new GoogleGmailConnector();
+        });
     }
 
     public function bootAuth(): void

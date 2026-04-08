@@ -227,6 +227,9 @@
 
         <div class="grid grid-cols-1 gap-8 mx-auto mb-20 md:grid-cols-2 2xl:grid-cols-3 codeweek-container-lg max-xl:px-5">
             @forelse ($ambassadors as $ambassador)
+                @php
+                    $ambassadorEmail = $ambassador->email_display ?: $ambassador->email;
+                @endphp
                 <div class="flex flex-col justify-between p-4 bg-white rounded-2xl">
                     <div class="relative z-50 flex h-full gap-8 max-sm:w-full"
                          role="article" aria-labelledby="profile-name">
@@ -242,9 +245,9 @@
                                 <p class="text-lg font-medium leading-6 text-gray-700">{{ $ambassador->bio ?? $ambassador->short_bio ?? '' }}</p>
                             </div>
                             <div class="items-center hidden w-full gap-4 mt-4 tablet:flex">
-                                @if ($ambassador->email)
+                                @if ($ambassadorEmail)
                                     <a class="group flex gap-2 items-start my-auto text-base font-semibold leading-none text-[#1C4DA1] hover:text-white overflow-hidden px-6 w-auto whitespace-nowrap py-2.5 rounded-3xl border-2 border-[#1C4DA1] border-solid hover:bg-[#1C4DA1]"
-                                       href="mailto:{{ $ambassador->email }}">
+                                       href="mailto:{{ $ambassadorEmail }}">
                                         <span class="my-auto">@lang('base.get_in_touch')</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                              viewBox="0 0 16 16" fill="none"
@@ -288,9 +291,9 @@
                         </div>
                     </div>
                     <div class="flex items-center w-full gap-4 mt-4 tablet:hidden">
-                        @if ($ambassador->email)
+                        @if ($ambassadorEmail)
                             <a class="group flex-1 flex gap-2 items-start my-auto text-base font-semibold leading-none text-[#1C4DA1] hover:text-white overflow-hidden px-6 w-auto whitespace-nowrap py-2.5 rounded-3xl border-2 border-[#1C4DA1] border-solid hover:bg-[#1C4DA1]"
-                               href="mailto:{{ $ambassador->email }}">
+                               href="mailto:{{ $ambassadorEmail }}">
                                 <span class="my-auto">Get in touch</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                      viewBox="0 0 16 16" fill="none"
@@ -487,6 +490,8 @@
             </div>
         </section>
     @endif
+
+</section>
 
 @endsection
 
@@ -804,5 +809,3 @@
       });
     </script>
 @endpush
-
-</section>

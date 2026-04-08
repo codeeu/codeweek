@@ -47,10 +47,18 @@ class EventRequest extends FormRequest
             'country_iso' => 'required|exists:countries,iso',
             'user_email' => 'required',
             'organizer_type' => 'required',
-            'privacy' => 'required',
             'leading_teacher_tag' => 'nullable',
 
         ];
+    }
+
+    protected function prepareForValidation(): void
+    {
+        $language = $this->input('language');
+        if (is_string($language)) {
+            $parts = array_values(array_filter(array_map('trim', explode(',', $language))));
+            $this->merge(['language' => $parts]);
+        }
     }
 
     public function messages(): array
