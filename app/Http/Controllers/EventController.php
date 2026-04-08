@@ -54,12 +54,13 @@ class EventController extends Controller
     public function create(Request $request)
     {
 
-        //Redirect if we have locations
+        // Redirect to locations chooser only when the user has stored locations
         $countries = \App\Country::all()->sortBy('name');
 
         $languages = Arr::sort(Lang::get('base.languages'));
 
         $leading_teachers = $this->getLeadingTeachersTagsArray();
+        $hasLocations = auth()->user()->locations()->exists();
 
         if ($request->get('location')) {
             try {
@@ -72,7 +73,7 @@ class EventController extends Controller
             
         }
         else {
-            if (! $request->get('skip')) {
+            if ($hasLocations && ! $request->get('skip')) {
                 return redirect(route('activities-locations'));
             }
         }

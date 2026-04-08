@@ -12,6 +12,7 @@ namespace App\Http\Controllers;
 use App\CertificateExcellence;
 use App\Excellence;
 use App\Queries\ExcellenceQuery;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -20,11 +21,19 @@ class ExcellenceController extends Controller
 {
     public function report($edition): View
     {
+        if (Gate::denies('report-excellence', $edition)) {
+            abort(403);
+        }
+
         return view('excellence.report', compact('edition'));
     }
 
     public function generate($edition, Request $request): RedirectResponse
     {
+        if (Gate::denies('report-excellence', $edition)) {
+            abort(403);
+        }
+
         $rules = [
             'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u',
         ];
