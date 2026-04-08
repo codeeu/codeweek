@@ -40,6 +40,7 @@ final class GmailIngestServiceTest extends TestCase
                         new GmailMessage('m2', 't2', 'Subj 2', 'sender2@example.com', "Hello 2"),
                     ],
                     'next_history_id' => '123',
+                    'warnings' => [],
                 ];
             }
         };
@@ -54,6 +55,7 @@ final class GmailIngestServiceTest extends TestCase
 
         $this->assertSame(2, $res['ingested']);
         $this->assertSame(1, $res['duplicates']);
+        $this->assertSame([], $res['warnings']);
 
         $cursor = SupportGmailCursor::query()->where('mailbox', 'me')->where('label', 'Support-AI')->first();
         $this->assertNotNull($cursor);
@@ -89,9 +91,50 @@ final class GmailIngestServiceTest extends TestCase
         );
 
         $res = $svc->pollAndIngest(25);
-        $this->assertSame(['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false], $res);
+        $this->assertSame(['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false, 'warnings' => []], $res);
 
         $lock->release();
+    }
+
+    public function test_poll_passes_through_connector_warnings(): void
+    {
+        config()->set('support_gmail.enabled', true);
+        config()->set('support_gmail.lock.name', 'test:support:gmail:poll:warnings');
+        config()->set('support_gmail.lock.ttl_seconds', 30);
+        config()->set('support_gmail.user', 'me');
+        config()->set('support_gmail.label', 'Missing-Label');
+        config()->set('support_gmail.query', 'newer_than:7d');
+
+        $fakeConnector = new class implements GmailConnector {
+            public function fetchNewMessages(
+                string $mailbox,
+                ?string $label,
+                string $query,
+                ?string $sinceHistoryId,
+                int $max = 25,
+            ): array {
+                return [
+                    'messages' => [],
+                    'next_history_id' => null,
+                    'warnings' => [
+                        'Configured Gmail label "Missing-Label" was not found; polling without label filter.',
+                    ],
+                ];
+            }
+        };
+
+        $svc = new GmailIngestService(
+            connector: $fakeConnector,
+            intake: app(CaseIntakeService::class),
+            logger: app(SupportActionLogger::class),
+        );
+
+        $res = $svc->pollAndIngest(25);
+
+        $this->assertSame(
+            ['Configured Gmail label "Missing-Label" was not found; polling without label filter.'],
+            $res['warnings'],
+        );
     }
 }
 

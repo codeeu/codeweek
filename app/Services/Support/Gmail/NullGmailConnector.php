@@ -14,6 +14,7 @@ class NullGmailConnector implements GmailConnector
         return [
             'messages' => [],
             'next_history_id' => $sinceHistoryId,
+            'warnings' => [],
         ];
     }
 }
