@@ -20,18 +20,8 @@ class GoogleGmailConnector implements GmailConnector
         $client->setScopes([GmailService::GMAIL_READONLY]);
         $client->setAccessType('offline');
 
-        $credentials = config('support_gmail.credentials_json');
-        if (!$credentials) {
-            throw new \RuntimeException('SUPPORT_GMAIL_CREDENTIALS_JSON not set');
-        }
-
-        $client->setAuthConfig($credentials);
-
-        // Optional OAuth token json (installed-app flows).
-        $tokenJson = config('support_gmail.token_json');
-        if ($tokenJson && is_file($tokenJson)) {
-            $client->setAccessToken(json_decode((string) file_get_contents($tokenJson), true));
-        }
+        GmailOAuthConfig::applyClientSecrets($client);
+        GmailOAuthConfig::applyAccessToken($client);
 
         $this->client = $client;
         $this->gmail = new GmailService($client);
@@ -123,7 +113,7 @@ class GoogleGmailConnector implements GmailConnector
     {
         $token = $this->client->getAccessToken();
         if (empty($token)) {
-            throw new \RuntimeException('Gmail token missing. Run support:gmail:authorize and set SUPPORT_GMAIL_TOKEN_JSON.');
+            throw new \RuntimeException('Gmail token missing. Run support:gmail:authorize and set SUPPORT_GMAIL_TOKEN or SUPPORT_GMAIL_TOKEN_JSON.');
         }
 
         if (!$this->client->isAccessTokenExpired()) {
