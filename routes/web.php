@@ -129,9 +129,7 @@ Route::permanentRedirect('/meet-the-ambassadors-gabriella-fumagalli-switzerland'
 Route::permanentRedirect('/as-the-preparations-for-the-second-code-week-are', '/blog/as-the-preparations-for-the-second-code-week-are');
 Route::permanentRedirect('/as-the-preparations-for-the-second-code-week-are', '/blog/as-the-preparations-for-the-second-code-week-are');
 Route::permanentRedirect('/programming-a-pedometer-to-bring-coding-to?is_related_post=1', '/blog/programming-a-pedometer-to-bring-coding-to/');
-Route::get('/podcast/{slug}', function ($slug) {
-    return redirect("/podcasts/{$slug}", 301);
-});
+Route::get('/podcast/{podcast}', [PodcastsController::class, 'show']);
 Route::permanentRedirect('/view/1221651/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');
 Route::permanentRedirect('/challenges/careers-as-constellations/', '/blog/careers-as-constellations/');
 Route::permanentRedirect('/view/1221652/blog/careers-linda-liukas/', '/blog/careers-linda-liukas/');

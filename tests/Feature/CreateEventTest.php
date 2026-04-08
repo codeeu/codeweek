@@ -135,13 +135,13 @@ final class CreateEventTest extends TestCase
         $this->signIn();
 
         $this->expectException(ValidationException::class);
-        $this->expectExceptionMessage('The selected language is invalid');
+        $this->expectExceptionMessage('The selected language.0 is invalid');
 
         $event = \App\Event::factory()->make();
         \App\Audience::factory()->count(3)->create();
         \App\Theme::factory()->count(3)->create();
 
-        $event->theme = '111';
+        $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
         $event->audience = '2, 3';
         $event->privacy = true;

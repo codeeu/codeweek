@@ -17,7 +17,12 @@ class CommunityController extends Controller
             return redirect('community?country_iso='.$country_iso);
         }
 
-        $ambassadors = User::role('ambassador')->filter($filters)->whereNotNull('avatar_path')->whereNotNull('bio')->paginate(10);
+        $ambassadors = User::role('ambassador')
+            ->filter($filters)
+            ->whereRaw("bio is not null and trim(bio) <> ''")
+            ->whereRaw("avatar_path is not null and trim(avatar_path) <> ''")
+            ->where('avatar_path', '<>', 'images/default-avatar.png')
+            ->paginate(10);
 
         $teachers = User::role('leading teacher')->where('approved', 1)->with('city')->get();
 

@@ -35,12 +35,14 @@
                             <img src="/images/social/facebook.svg" alt="Facebook" />
                         </a>
                     </div>
-                    <div class="flex gap-[22px] my-10">
-                        <a class="cookweek-link hover-underline" href="mailto:info@codeweek.eu" target="_blank"
-                            rel="noreferer, noopener">
-                            info@codeweek.eu
-                        </a>
-                    </div>
+                    @if(request()->is('community') || request()->is('community/*') || request()->is('ambassadors') || request()->is('ambassadors/*'))
+                        <div class="flex gap-[22px] my-10">
+                            <a class="cookweek-link hover-underline" href="mailto:info@codeweek.eu" target="_blank"
+                                rel="noreferer, noopener">
+                                info@codeweek.eu
+                            </a>
+                        </div>
+                    @endif
                 </div>
                 <img width="200px" alt="Funded by the European Union Logo" src="/images/EU_logo_new.jpg"
                     class="mb-10 xl:mb-0">

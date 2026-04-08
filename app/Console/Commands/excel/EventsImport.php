@@ -2,12 +2,11 @@
 
 namespace App\Console\Commands\excel;
 
-use App\Imports\EventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class EventsImporter extends Command
+class EventsImport extends Command
 {
   /**
    * The name and signature of the console command.
@@ -41,7 +40,7 @@ class EventsImporter extends Command
     Log::info('Loading events Excel File');
 
     Excel::import(
-      new EventsImporter(),
+      new \App\Imports\EventsImport(),
             '3-june.xlsx',
             'excel'
     );
