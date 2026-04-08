@@ -19,12 +19,12 @@ class GmailIngestService
     }
 
     /**
-     * @return array{ingested: int, duplicates: int, cursor_updated: bool}
+     * @return array{ingested: int, duplicates: int, cursor_updated: bool, warnings: string[]}
      */
     public function pollAndIngest(int $max = 25): array
     {
         if (!config('support_gmail.enabled')) {
-            return ['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false];
+            return ['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false, 'warnings' => []];
         }
 
         $lockName = (string) config('support_gmail.lock.name', 'support:gmail:poll');
@@ -34,7 +34,7 @@ class GmailIngestService
         // to avoid double-ingesting on multiple nodes silently.
         $lock = Cache::lock($lockName, $ttlSeconds);
         if (!$lock->get()) {
-            return ['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false];
+            return ['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false, 'warnings' => []];
         }
 
         $mailbox = (string) config('support_gmail.user', 'me');
@@ -99,6 +99,7 @@ class GmailIngestService
                 'ingested' => $ingested,
                 'duplicates' => $duplicates,
                 'cursor_updated' => true,
+                'warnings' => $result['warnings'] ?? [],
             ];
         } finally {
             optional($lock)->release();
