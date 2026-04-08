@@ -4,6 +4,7 @@ namespace App\Services\Support\Gmail;
 
 use Google\Client as GoogleClient;
 use Google\Service\Gmail as GmailService;
+use Google\Service\Gmail\Label as GoogleLabel;
 use Google\Service\Gmail\Message as GoogleMessage;
 use Illuminate\Support\Str;
 
@@ -46,9 +47,18 @@ class GoogleGmailConnector implements GmailConnector
         $this->ensureValidToken();
 
         $q = trim($query);
+        $labelId = null;
+        $warnings = [];
         if ($label) {
-            // Label scoping is done via labelIds, but keep query readable too.
-            $q = trim($q.' label:'.Str::of($label)->replace(' ', '-'));
+            // Label filtering is optional. If the label doesn't exist, we ingest without label scoping
+            // rather than failing the whole poll.
+            $labelId = $this->resolveLabelIdOrNull($mailbox, $label);
+            if ($labelId === null && trim((string) $label) !== '') {
+                $warnings[] = sprintf(
+                    'Configured Gmail label "%s" was not found; polling without label filter.',
+                    trim((string) $label),
+                );
+            }
         }
 
         $params = [
@@ -56,8 +66,8 @@ class GoogleGmailConnector implements GmailConnector
             'maxResults' => $max,
         ];
 
-        if ($label) {
-            $params['labelIds'] = [$label];
+        if ($labelId) {
+            $params['labelIds'] = [$labelId];
         }
 
         // V1: we use search-based ingestion; historyId is only used as a stored cursor.
@@ -81,7 +91,32 @@ class GoogleGmailConnector implements GmailConnector
         return [
             'messages' => $messages,
             'next_history_id' => $nextHistoryId,
+            'warnings' => $warnings,
         ];
+    }
+
+    private function resolveLabelIdOrNull(string $mailbox, string $label): ?string
+    {
+        $label = trim($label);
+        if ($label === '') {
+            return null;
+        }
+
+        // If user already provided a label ID (usually "Label_..."), use it directly.
+        if (Str::startsWith($label, 'Label_')) {
+            return $label;
+        }
+
+        $labels = $this->gmail->users_labels->listUsersLabels($mailbox)->getLabels() ?? [];
+
+        /** @var GoogleLabel $l */
+        foreach ($labels as $l) {
+            if ($l->getId() === $label || $l->getName() === $label) {
+                return (string) $l->getId();
+            }
+        }
+
+        return null;
     }
 
     private function ensureValidToken(): void
