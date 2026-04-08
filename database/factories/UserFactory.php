@@ -27,7 +27,8 @@ class UserFactory extends Factory
 
         return [
             'firstname' => $this->faker->firstName,
-            'lastname' => $this->faker->firstName,
+            // Use a distinctive pattern to avoid accidental substring matches in HTML assertions.
+            'lastname' => 'ln_'.$this->faker->unique()->bothify('??????###'),
             'username' => $this->faker->firstName,
             'email' => $this->faker->unique()->safeEmail,
             'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret

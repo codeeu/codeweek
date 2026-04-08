@@ -32,7 +32,7 @@
             <h2 class="text-dark-blue text-2xl font-medium tablet:text-4xl font-['Montserrat'] mb-6 tablet:mb-8">
                 Certificates
             </h2>
-            @if($reported_events->isEmpty() && $excellence->isEmpty() && $participation->isEmpty())
+            @if($reported_events->isEmpty() && $excellence->isEmpty() && $superOrganiser->isEmpty() && $participation->isEmpty())
                 <p class="text-slate-500 font-normal text-lg p-0">@lang('certificates.no_certificates')</p>
             @else
                 <div class="overflow-hidden rounded-lg border-2 border-[#B399D6] hidden tablet:block">
@@ -86,7 +86,7 @@
                                             <span class="text-slate-500 font-semibold">Excellence</span>
                                         </td>
                                         <td class="border-r border-[#B399D6] px-6 py-4 font-normal text-xl">
-                                            {{$certificate_of_excellence->activity_type}}
+                                            {{$certificate_of_excellence->name_for_certificate ?? $certificate_of_excellence->activity_type}}
                                         </td>
                                         <td class="border-r border-[#B399D6] px-6 py-4 font-normal text-xl">
                                             {{$certificate_of_excellence->event_date}}
@@ -103,6 +103,9 @@
                                         <td colspan="4" class="px-6 py-4 font-normal text-xl">
                                             <a class="text-[#1C4DA1] font-semibold" href="{{route('certificate_excellence_report', ['edition'=>$certificate_of_excellence->edition])}}">
                                                 Claim your certificate of excellence for {{$certificate_of_excellence->edition}}
+                                                @if(!empty($certificate_of_excellence->name_for_certificate))
+                                                    ({{$certificate_of_excellence->name_for_certificate}})
+                                                @endif
                                             </a>
                                         </td>
                                     </tr>
@@ -115,10 +118,10 @@
                                 @if(!empty($super_organiser_certificate->certificate_url))
                                     <tr class="{{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }}">
                                         <td class="border-r border-[#B399D6] px-6 py-4 font-semibold text-xl">
-                                            <span class="text-slate-500 font-semibold">Super Organiser</span>
+                                            <span class="text-slate-500 font-semibold">Super Organiser Certificate {{$super_organiser_certificate->edition}}</span>
                                         </td>
                                         <td class="border-r border-[#B399D6] px-6 py-4 font-normal text-xl">
-                                            {{$super_organiser_certificate->activity_type}}
+                                            {{$super_organiser_certificate->name_for_certificate ?? $super_organiser_certificate->activity_type}}
                                         </td>
                                         <td class="border-r border-[#B399D6] px-6 py-4 font-normal text-xl">
                                             {{$super_organiser_certificate->event_date}}
@@ -135,6 +138,10 @@
                                         <td colspan="4" class="px-6 py-4 font-normal text-xl">
                                             <a class="text-[#1C4DA1] font-semibold" href="{{route('certificate_super_organiser_report', ['edition'=>$super_organiser_certificate->edition])}}">
                                                 Claim your Super Organiser certificate for {{$super_organiser_certificate->edition}}
+                                                (Super Organiser Certificate {{$super_organiser_certificate->edition}})
+                                                @if(!empty($super_organiser_certificate->name_for_certificate))
+                                                    ({{$super_organiser_certificate->name_for_certificate}})
+                                                @endif
                                             </a>
                                         </td>
                                     </tr>
@@ -237,7 +244,7 @@
                                             Activity
                                         </div>
                                         <div class="px-4 py-5 {{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }} border-b border-[#B399D6] flex-1 text-xl">
-                                            {{$certificate_of_excellence->activity_type}}
+                                            {{$certificate_of_excellence->name_for_certificate ?? $certificate_of_excellence->activity_type}}
                                         </div>
                                     </div>
                                     <div class="flex">
@@ -264,6 +271,9 @@
                                 <div class="px-4 py-5 {{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }} font-normal text-xl border-2 border-[#B399D6] rounded-lg overflow-hidden">
                                     <a class="text-[#1C4DA1] font-semibold" href="{{route('certificate_excellence_report', ['edition'=>$certificate_of_excellence->edition])}}">
                                         Claim your certificate of excellence for {{$certificate_of_excellence->edition}}
+                                        @if(!empty($certificate_of_excellence->name_for_certificate))
+                                            ({{$certificate_of_excellence->name_for_certificate}})
+                                        @endif
                                     </a>
                                 </div>
                             @endif
@@ -279,7 +289,7 @@
                                             Type
                                         </div>
                                         <div class="px-4 py-5 {{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }} border-b border-[#B399D6] flex-1 text-xl">
-                                            Super Organiser
+                                            Super Organiser Certificate {{$super_organiser_certificate->edition}}
                                         </div>
                                     </div>
                                     <div class="flex">
@@ -287,7 +297,7 @@
                                             Activity
                                         </div>
                                         <div class="px-4 py-5 {{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }} border-b border-[#B399D6] flex-1 text-xl">
-                                            {{$super_organiser_certificate->activity_type}}
+                                            {{$super_organiser_certificate->name_for_certificate ?? $super_organiser_certificate->activity_type}}
                                         </div>
                                     </div>
                                     <div class="flex">
@@ -314,6 +324,10 @@
                                 <div class="px-4 py-5 {{ $loop->even ? 'bg-[#F5F2FA]' : 'bg-white' }} font-normal text-xl border-2 border-[#B399D6] rounded-lg overflow-hidden">
                                     <a class="text-[#1C4DA1] font-semibold" href="{{route('certificate_super_organiser_report', ['edition'=>$super_organiser_certificate->edition])}}">
                                         Claim your Super Organiser certificate for {{$super_organiser_certificate->edition}}
+                                        (Super Organiser Certificate {{$super_organiser_certificate->edition}})
+                                        @if(!empty($super_organiser_certificate->name_for_certificate))
+                                            ({{$super_organiser_certificate->name_for_certificate}})
+                                        @endif
                                     </a>
                                 </div>
                             @endif

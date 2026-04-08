@@ -18,6 +18,7 @@ class ExcellenceFactory extends Factory
                 return \App\User::factory()->create()->id;
             },
             'edition' => $this->faker->numberBetween(2018, 2021),
+            'type' => 'Excellence',
         ];
     }
 }

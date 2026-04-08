@@ -44,6 +44,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,
             'role' => \Spatie\Permission\Middleware\RoleMiddleware::class,
             'super.certificate.admin' => \App\Http\Middleware\EnsureSuperCertificateAdmin::class,
+            'support.service.token' => \App\Http\Middleware\SupportServiceToken::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
