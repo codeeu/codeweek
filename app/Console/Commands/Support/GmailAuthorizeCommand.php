@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands\Support;
 
+use App\Services\Support\Gmail\GmailOAuthConfig;
 use Google\Client as GoogleClient;
 use Google\Service\Gmail as GmailService;
 use Illuminate\Console\Command;
@@ -18,22 +19,22 @@ class GmailAuthorizeCommand extends Command
 
     public function handle(): int
     {
-        $credentialsPath = (string) ($this->option('credentials') ?: config('support_gmail.credentials_json'));
-        $tokenPath = (string) ($this->option('token') ?: config('support_gmail.token_json'));
-
-        if (!$credentialsPath || !is_file($credentialsPath)) {
-            $this->error('OAuth credentials JSON not found. Set SUPPORT_GMAIL_CREDENTIALS_JSON or pass --credentials=');
-            return self::FAILURE;
-        }
-        if (!$tokenPath) {
-            $this->error('Token path not set. Set SUPPORT_GMAIL_TOKEN_JSON or pass --token=');
-            return self::FAILURE;
-        }
+        $credentialsPath = $this->option('credentials');
+        $tokenPath = $this->option('token') ?: config('support_gmail.token_json');
 
         $client = new GoogleClient();
         $client->setApplicationName('Codeweek Internal Support Copilot');
         $client->setScopes([GmailService::GMAIL_READONLY]);
-        $client->setAuthConfig($credentialsPath);
+        if ($credentialsPath) {
+            if (!is_file((string) $credentialsPath)) {
+                $this->error('OAuth credentials file not found: '.$credentialsPath);
+
+                return self::FAILURE;
+            }
+            $client->setAuthConfig((string) $credentialsPath);
+        } else {
+            GmailOAuthConfig::applyClientSecrets($client);
+        }
         $client->setAccessType('offline');
         $client->setPrompt('consent');
 
@@ -62,12 +63,16 @@ class GmailAuthorizeCommand extends Command
             return self::FAILURE;
         }
 
-        // Ensure folder exists and write token json.
-        File::ensureDirectoryExists(dirname($tokenPath));
-        File::put($tokenPath, json_encode($token, JSON_PRETTY_PRINT));
-        @chmod($tokenPath, 0600);
+        if ($tokenPath) {
+            File::ensureDirectoryExists(dirname((string) $tokenPath));
+            File::put((string) $tokenPath, json_encode($token, JSON_PRETTY_PRINT));
+            @chmod((string) $tokenPath, 0600);
+            $this->info('Token saved to '.$tokenPath);
+        } else {
+            $this->warn('No SUPPORT_GMAIL_TOKEN_JSON / --token path — paste this JSON into Forge as SUPPORT_GMAIL_TOKEN:');
+            $this->line(json_encode($token, JSON_PRETTY_PRINT));
+        }
 
-        $this->info('Token saved to '.$tokenPath);
         $this->line('Next: set SUPPORT_GMAIL_ENABLED=true and run `php artisan support:gmail:poll`.');
 
         return self::SUCCESS;
