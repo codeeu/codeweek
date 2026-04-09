@@ -8,6 +8,7 @@ use Illuminate\Support\Collection;
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
 class RejectSupportApproval extends Action
 {
@@ -15,7 +16,7 @@ class RejectSupportApproval extends Action
 
     public $name = 'Reject';
 
-    public function fields(): array
+    public function fields(NovaRequest $request): array
     {
         return [
             Text::make('Reason', 'reason')
