@@ -19,10 +19,16 @@ return [
     // Example: 'is:unread newer_than:7d -category:promotions'
     'query' => env('SUPPORT_GMAIL_QUERY', 'newer_than:7d'),
 
-    // Google service account or OAuth client credentials JSON path.
+    // Google OAuth client JSON: paste full JSON from Google Cloud (preferred on Forge; survives deploys).
+    'credentials' => env('SUPPORT_GMAIL_CREDENTIALS'),
+
+    // Alternative: path to the same JSON on disk (e.g. storage/app/google/support-gmail-credentials.json).
     'credentials_json' => env('SUPPORT_GMAIL_CREDENTIALS_JSON', null),
 
-    // Token JSON path for OAuth installed-app flows (if used).
+    // OAuth token JSON: paste token from support:gmail:authorize (preferred on Forge).
+    'token' => env('SUPPORT_GMAIL_TOKEN'),
+
+    // Alternative: path to token JSON (e.g. storage/app/google/support-gmail-token.json).
     'token_json' => env('SUPPORT_GMAIL_TOKEN_JSON', null),
 
     // When true, mark ingested messages as read and/or apply a label.
