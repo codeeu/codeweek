@@ -14,6 +14,7 @@ use App\Nova\SupportCaseAction as SupportCaseActionNova;
 use App\Nova\SupportCaseMessage as SupportCaseMessageNova;
 use App\Nova\SupportGmailCursor as SupportGmailCursorNova;
 use App\Nova\TrainingResource as TrainingResourceNova;
+use App\Nova\MenuSection as MenuSectionNova;
 use App\Nova\Metrics\UsersPerDay;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Menu\MenuSection;
@@ -39,6 +40,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             SupportApprovalNova::class,
             SupportCaseMessageNova::class,
             SupportGmailCursorNova::class,
+            MenuSectionNova::class,
         ]);
 
         // Ensure dashboards are registered at boot so /nova/dashboards/main is always available

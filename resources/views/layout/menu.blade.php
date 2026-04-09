@@ -104,32 +104,108 @@
                           </a>
                       </li>
                       <li class="flex flex-col gap-16 xl:flex-row">
-                          <div class="flex flex-col flex-grow gap-4 mb-1 xl:mb-0 max-xl:w-full">
-                              <div class="hidden xl:block text-[#20262C] font-semibold text-lg">@lang('menu.resources')</div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('coding@home')}}">@lang('menu.coding@home')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">@lang('menu.podcasts')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('online-courses')}}">@lang('menu.online-courses')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('training.index')}}">@lang('menu.training')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_all')}}">@lang('menu.learn')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('webinars')}}">@lang('menu.webinars')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="/matchmaking-tool">@lang('menu.matchmaking_toolkit')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="/future-ready-csr">@lang('menu.future_ready_csr')</a></div>
-                            </div>
-                            <div class="flex flex-col flex-grow gap-4 max-xl:w-full">
-                              <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('challenges')}}">@lang('menu.challenges')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">@lang('menu.hackathons')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
-                              <div><a class="cookweek-link hover-underline !px-0" href="{{route('treasure-hunt')}}">@lang('menu.treasure-hunt')</a></div>
-                              <div><a href="https://www.codeweekcoders.eu/"
-                            target="_blank"
-                            rel="noopener">
-                                Minecraft Education
-                            </a></div>
-                          </div>
+                          @php
+                              $resourcesDropdownSections = $resourcesDropdownSections ?? collect();
+                              $resourcesDropdownLeft = $resourcesDropdownSections->filter(fn ($s) => ($s->column ?? null) === 'left');
+                              $resourcesDropdownRight = $resourcesDropdownSections->filter(fn ($s) => ($s->column ?? null) === 'right');
+                              $resourcesDropdownHasAnyItems = $resourcesDropdownSections->contains(fn ($s) => ($s->items?->count() ?? 0) > 0);
+                          @endphp
+
+                          @if(config('menus.resources_dropdown_use_nova', true) && $resourcesDropdownSections->isNotEmpty() && $resourcesDropdownHasAnyItems)
+                              <div class="flex flex-col flex-grow gap-4 mb-1 xl:mb-0 max-xl:w-full">
+                                  @foreach($resourcesDropdownLeft as $section)
+                                      @php
+                                          $title = $section->title_key ? __($section->title_key) : ($section->title ?? '');
+                                      @endphp
+                                      @if(trim((string) $title) !== '')
+                                          <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">
+                                              {{$title}}
+                                          </div>
+                                      @endif
+
+                                      @foreach($section->items as $item)
+                                          @php
+                                              $href = $item->resolvedHref();
+                                              $label = $item->resolvedLabel(app()->getLocale());
+                                          @endphp
+                                          @if($href && trim((string) $label) !== '')
+                                              <div>
+                                                  <a
+                                                      class="cookweek-link hover-underline !px-0"
+                                                      href="{{$href}}"
+                                                      @if($item->open_in_new_tab) target="_blank" rel="noopener" @endif
+                                                  >
+                                                      {{$label}}
+                                                  </a>
+                                              </div>
+                                          @endif
+                                      @endforeach
+                                  @endforeach
+                              </div>
+                              <div class="flex flex-col flex-grow gap-4 max-xl:w-full">
+                                  @foreach($resourcesDropdownRight as $section)
+                                      @php
+                                          $title = $section->title_key ? __($section->title_key) : ($section->title ?? '');
+                                      @endphp
+                                      @if(trim((string) $title) !== '')
+                                          <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">
+                                              {{$title}}
+                                          </div>
+                                      @endif
+
+                                      @foreach($section->items as $item)
+                                          @php
+                                              $href = $item->resolvedHref();
+                                              $label = $item->resolvedLabel(app()->getLocale());
+                                          @endphp
+                                          @if($href && trim((string) $label) !== '')
+                                              <div>
+                                                  <a
+                                                      class="cookweek-link hover-underline !px-0"
+                                                      href="{{$href}}"
+                                                      @if($item->open_in_new_tab) target="_blank" rel="noopener" @endif
+                                                  >
+                                                      {{$label}}
+                                                  </a>
+                                              </div>
+                                          @endif
+                                      @endforeach
+                                  @endforeach
+                              </div>
+                          @else
+                              {{-- Fallback hardcoded menu (keeps working without DB config) --}}
+                              <div class="flex flex-col flex-grow gap-4 mb-1 xl:mb-0 max-xl:w-full">
+                                  <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">Learn to Code</div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('online-courses')}}">@lang('menu.online-courses')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('coding@home')}}">@lang('menu.coding@home')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('training.index')}}">@lang('menu.training')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('webinars')}}">@lang('menu.webinars')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="/podcasts">@lang('menu.podcasts')</a></div>
+
+                                  <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">Teaching and Training Resources</div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_all')}}">@lang('menu.learn')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="https://forms.gle/enVmsPvNyYo7yEuT6" target="_blank" rel="noopener">Share your own lessons</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="https://forms.gle/pZz9issG45B9131n9" target="_blank" rel="noopener">Share your feedback</a></div>
+                              </div>
+                              <div class="flex flex-col flex-grow gap-4 max-xl:w-full">
+                                  <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">Career &amp; Inspiration</div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('dream-jobs-in-digital')}}">@lang('menu.careers_in_digital')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('girls-in-digital-week')}}">@lang('menu.girls_in_digital')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="https://codeweek.eu/blog/category/humans-of-code-week/">Inspiration</a></div>
+
+                                  <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">Connect</div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="/future-ready-csr">@lang('menu.future_ready_csr')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="/matchmaking-tool">@lang('menu.matchmaking_toolkit')</a></div>
+
+                                  <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">@lang('menu.game_and_competitions')</div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('challenges')}}">@lang('menu.challenges')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('hackathons')}}">@lang('menu.hackathons')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('dance')}}">@lang('snippets.dance.menu')</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="{{route('treasure-hunt')}}">@lang('menu.treasure-hunt')</a></div>
+                                  <div><a href="https://www.codeweekcoders.eu/" target="_blank" rel="noopener">Minecraft Education</a></div>
+                              </div>
+                          @endif
                           <div class="hidden relative flex-col flex-grow gap-4 mb-2 w-60 xl:flex">
                               <img class="object-cover w-full h-full rounded-lg" src="/images/homepage/dream-job.png" alt="">
                               <div
