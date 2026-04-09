@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Lang;
 use App\Services\Support\Gmail\GmailConnector;
 use App\Services\Support\Gmail\GoogleGmailConnector;
 use App\Services\Support\Gmail\NullGmailConnector;
+use App\Services\Menu\MenuRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -42,6 +43,12 @@ class AppServiceProvider extends ServiceProvider
         View::share('locales', config('app.locales'));
 
         Carbon::setLocale('app.locale');
+
+        View::composer('layout.menu', function ($view) {
+            $menuRepository = app(MenuRepository::class);
+            $view->with('resourcesDropdownSections', $menuRepository->sectionsForLocation('resources_dropdown'));
+        });
+
         \View::composer(
             ['event.add', 'event.search', 'event.edit'],
             function ($view) {
