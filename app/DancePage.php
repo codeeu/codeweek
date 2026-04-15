@@ -24,13 +24,31 @@ class DancePage extends Model
 
     public static function config(): self
     {
+        $defaults = [
+            'use_dynamic_content' => false,
+            'hero_title' => __('cw2020.title.0'),
+            'hero_subtitle' => __('cw2020.dance.title'),
+            'content_intro_title' => __('cw2020.dance.title'),
+            'content_intro_subtitle' => __('snippets.dance.subtitle'),
+            'get_involved_title' => __('cw2020.get-involved.title'),
+            'get_involved_subtitle' => __('cw2020.get-involved.subtitle'),
+        ];
+
         $page = self::first();
         if ($page) {
+            $dirty = false;
+            foreach ($defaults as $key => $value) {
+                if ($page->{$key} === null || $page->{$key} === '') {
+                    $page->{$key} = $value;
+                    $dirty = true;
+                }
+            }
+            if ($dirty) {
+                $page->save();
+            }
             return $page;
         }
 
-        return self::create([
-            'use_dynamic_content' => false,
-        ]);
+        return self::create($defaults);
     }
 }
