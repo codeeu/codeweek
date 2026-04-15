@@ -4,6 +4,44 @@
 @section('description', 'Get started with EU Code Week: Run a coding activity, join a local event, or share your experience using #EUCodeWeek. No experience needed!')
     @php
         $list = [(object) ['label' => 'Get Involved', 'href' => '']];
+
+        $optionalValue = static function (string $key): ?string {
+            $value = __($key);
+
+            if ($value === $key) {
+                return null;
+            }
+
+            $value = trim($value);
+
+            return $value !== '' ? $value : null;
+        };
+
+        $isTruthy = static function (?string $value): bool {
+            if ($value === null) {
+                return false;
+            }
+
+            return in_array(strtolower($value), ['1', 'true', 'yes', 'on'], true);
+        };
+
+        $makeCardLink = static function (string $cardKey) use ($optionalValue, $isTruthy): array {
+            $href = $optionalValue("cw2020.get-involved.cards.{$cardKey}.href");
+            $newTab = $isTruthy($optionalValue("cw2020.get-involved.cards.{$cardKey}.new_tab"));
+
+            return [
+                'href' => $href,
+                'target' => $href && $newTab ? '_blank' : null,
+                'rel' => $href && $newTab ? 'noopener noreferrer' : null,
+            ];
+        };
+
+        $engagementLinks = [
+            'community' => $makeCardLink('community'),
+            'activity' => $makeCardLink('activity'),
+            'ambassadors' => $makeCardLink('ambassadors'),
+            'stories' => $makeCardLink('stories'),
+        ];
     @endphp
 
 @section('layout.breadcrumb')
@@ -111,7 +149,7 @@
                             <!-- First Row of Icons -->
                             <div class="grid grid-cols-1 gap-10 items-start mb-12 w-full md:grid-cols-2 max-md:mb-10">
                                 <!-- Connect with Community -->
-                                <article class="flex flex-col justify-center engagement-card">
+                                <article class="group flex flex-col justify-center engagement-card">
                                     <div class="engagement-icon flex gap-2.5 items-center p-7 bg-[#FFD700] h-[120px] rounded-[60px] w-[120px] max-md:px-5 mb-2.5"
                                         role="img" aria-label="Community connection icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
@@ -123,7 +161,16 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            Connect with your local Code Week community
+                                            @if($engagementLinks['community']['href'])
+                                                <a href="{{ $engagementLinks['community']['href'] }}"
+                                                   @if($engagementLinks['community']['target']) target="{{ $engagementLinks['community']['target'] }}" @endif
+                                                   @if($engagementLinks['community']['rel']) rel="{{ $engagementLinks['community']['rel'] }}" @endif
+                                                   class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
+                                                    Connect with your local Code Week community
+                                                </a>
+                                            @else
+                                                Connect with your local Code Week community
+                                            @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700 !p-0">
                                           Find educators, mentors and organisers near you through the Code Week map or national hubs. There’s a whole network ready to support and collaborate.
@@ -132,7 +179,7 @@
                                 </article>
 
                                 <!-- Register Activities -->
-                                <article class="flex flex-col justify-center engagement-card">
+                                <article class="group flex flex-col justify-center engagement-card">
                                     <div class="engagement-icon flex gap-2.5 items-center p-7 bg-[#FFD700] h-[120px] rounded-[60px] w-[120px] max-md:px-5 mb-2.5"
                                         role="img" aria-label="Activity registration icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
@@ -156,7 +203,16 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                           Register your Code Week activity
+                                            @if($engagementLinks['activity']['href'])
+                                                <a href="{{ $engagementLinks['activity']['href'] }}"
+                                                   @if($engagementLinks['activity']['target']) target="{{ $engagementLinks['activity']['target'] }}" @endif
+                                                   @if($engagementLinks['activity']['rel']) rel="{{ $engagementLinks['activity']['rel'] }}" @endif
+                                                   class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
+                                                    Register your Code Week activity
+                                                </a>
+                                            @else
+                                                Register your Code Week activity
+                                            @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
                                            Planning something? Add it to the Code Week map so others can see it.
@@ -168,7 +224,7 @@
                             <!-- Second Row of Icons -->
                             <div class="grid grid-cols-1 gap-10 items-center w-full md:grid-cols-2">
                                 <!-- Connect with Ambassadors -->
-                                <article class="flex flex-col justify-center engagement-card">
+                                <article class="group flex flex-col justify-center engagement-card">
                                     <div class="engagement-icon flex gap-2.5 items-center p-7 bg-[#FFD700] h-[120px] rounded-[60px] w-[120px] max-md:px-5 mb-2.5"
                                         role="img" aria-label="Ambassador connection icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
@@ -187,7 +243,16 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            Connect with EU Code Week Ambassadors
+                                            @if($engagementLinks['ambassadors']['href'])
+                                                <a href="{{ $engagementLinks['ambassadors']['href'] }}"
+                                                   @if($engagementLinks['ambassadors']['target']) target="{{ $engagementLinks['ambassadors']['target'] }}" @endif
+                                                   @if($engagementLinks['ambassadors']['rel']) rel="{{ $engagementLinks['ambassadors']['rel'] }}" @endif
+                                                   class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
+                                                    Connect with EU Code Week Ambassadors
+                                                </a>
+                                            @else
+                                                Connect with EU Code Week Ambassadors
+                                            @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
                                            Ambassadors help coordinate Code Week in their countries. Reach out for support, advice or to join local projects and challenges.
@@ -196,7 +261,7 @@
                                 </article>
 
                                 <!-- Share Stories -->
-                                <article class="flex flex-col justify-center engagement-card">
+                                <article class="group flex flex-col justify-center engagement-card">
                                     <div class="engagement-icon flex gap-2.5 items-center p-7 bg-[#FFD700] h-[120px] rounded-[60px] w-[120px] max-md:px-5 mb-2.5"
                                         role="img" aria-label="Story sharing icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
@@ -217,7 +282,16 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            Share your coding experience and stories
+                                            @if($engagementLinks['stories']['href'])
+                                                <a href="{{ $engagementLinks['stories']['href'] }}"
+                                                   @if($engagementLinks['stories']['target']) target="{{ $engagementLinks['stories']['target'] }}" @endif
+                                                   @if($engagementLinks['stories']['rel']) rel="{{ $engagementLinks['stories']['rel'] }}" @endif
+                                                   class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
+                                                    Share your coding experience and stories
+                                                </a>
+                                            @else
+                                                Share your coding experience and stories
+                                            @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
                                             Post photos, videos and stories using <strong>#EUCodeWeek</strong>. Highlight what you’ve learned, celebrate your community, and inspire others to join
