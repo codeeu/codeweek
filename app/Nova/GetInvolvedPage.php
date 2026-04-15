@@ -42,17 +42,12 @@ class GetInvolvedPage extends Resource
 
     public static function indexQuery(NovaRequest $request, $query)
     {
-        return $query->where('path', '/get-involved');
+        return $query->where('path', '/get-involved')->orWhere('unique_identifier', 'get-involved');
     }
 
     public static function relatableQuery(NovaRequest $request, $query)
     {
-        return $query->where('path', '/get-involved');
-    }
-
-    public static function authorizedToCreate(Request $request): bool
-    {
-        return false;
+        return $query->where('path', '/get-involved')->orWhere('unique_identifier', 'get-involved');
     }
 
     public function fields(Request $request): array
@@ -111,5 +106,26 @@ class GetInvolvedPage extends Resource
 
             Textarea::make('Meta Keywords')->nullable(),
         ];
+    }
+
+    public static function authorizedToCreate(Request $request): bool
+    {
+        return true;
+    }
+
+    public static function redirectAfterCreate(NovaRequest $request, $resource)
+    {
+        return '/resources/' . static::uriKey() . '/' . $resource->id;
+    }
+
+    public static function fill(NovaRequest $request, $model)
+    {
+        $model->path = $model->path ?: '/get-involved';
+        $model->unique_identifier = $model->unique_identifier ?: 'get-involved';
+        $model->language = $model->language ?: 'en';
+        $model->link_type = $model->link_type ?: 'internal_link';
+        $model->name = $model->name ?: 'Get Involved';
+
+        return parent::fill($request, $model);
     }
 }
