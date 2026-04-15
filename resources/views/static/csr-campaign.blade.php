@@ -89,6 +89,16 @@
     ];
 
 @endphp
+@php
+    $hasPageTable = \Illuminate\Support\Facades\Schema::hasTable('csr_campaign_page');
+    $hasResourcesTable = \Illuminate\Support\Facades\Schema::hasTable('csr_campaign_resources');
+    $page = $hasPageTable ? \App\CsrCampaignPage::config() : null;
+    $dynamic = $page && $page->use_dynamic_content;
+    $dynamicResources = ($dynamic && $page && $hasResourcesTable)
+        ? $page->resources()->where('active', true)->orderBy('position')->get()
+        : collect();
+    $resourcesToRender = $dynamicResources->isNotEmpty() ? $dynamicResources : collect($resources);
+@endphp
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
@@ -101,20 +111,24 @@
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
-                                @lang('csr-campaign.landing_header')
+                                @if($dynamic && $page->hero_text)
+                                    {!! $page->hero_text !!}
+                                @else
+                                    @lang('csr-campaign.landing_header')
+                                @endif
                             </p>
                             <div class="flex flex-col md:flex-row gap-3 md:gap-5 items-center">
                                 <a
                                     class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                    href="https://codeweek.eu/blog/futurereadycsr-campaign-launch"
+                                    href="{{ $dynamic && $page->primary_cta_link ? $page->primary_cta_link : 'https://codeweek.eu/blog/futurereadycsr-campaign-launch' }}"
                                 >
-                                    <span>@lang('csr-campaign.get_involved')</span>
+                                    <span>{{ $dynamic && $page->primary_cta_text ? $page->primary_cta_text : __('csr-campaign.get_involved') }}</span>
                                 </a>
                                 <a
                                     class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                    href="https://codeweek.eu/blog/futurereadycsr-resources"
+                                    href="{{ $dynamic && $page->secondary_cta_link ? $page->secondary_cta_link : 'https://codeweek.eu/blog/futurereadycsr-resources' }}"
                                 >
-                                    <span>@lang('csr-campaign.explore_resources')</span>
+                                    <span>{{ $dynamic && $page->secondary_cta_text ? $page->secondary_cta_text : __('csr-campaign.explore_resources') }}</span>
                                 </a>
                             </div>
                         </div>
@@ -138,10 +152,14 @@
         <section class="relative flex overflow-hidden">
             <div class="relative pt-10 md:pt-28 codeweek-container-lg">
                 <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block">
-                    @lang('csr-campaign.about_title')
+                    {{ $dynamic && $page->about_title ? $page->about_title : __('csr-campaign.about_title') }}
                 </h2>
                 <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
-                    @lang('csr-campaign.about_description')
+                    @if($dynamic && $page->about_description)
+                        {!! $page->about_description !!}
+                    @else
+                        @lang('csr-campaign.about_description')
+                    @endif
                 </p>
                 <div class="relative">
                     <img
@@ -160,10 +178,10 @@
             <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
                 <h2 class="text-white md:text-center text-3xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
-                    @lang('csr-campaign.resources')
+                    {{ $dynamic && $page->resources_title ? $page->resources_title : __('csr-campaign.resources') }}
                 </h2>
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 xl:gap-20">
-                    @foreach($resources as $resource)
+                    @foreach($resourcesToRender as $resource)
                         <div class="px-6 py-8 md:p-12 rounded-2xl bg-white gap-4 sm:gap-10 grid grid-cols-1 sm:grid-cols-2">
                             <div class="flex-1 flex flex-col justify-between order-1">
                                 <div>
@@ -188,7 +206,7 @@
                                     <!-- Mobile -->
                                     <img
                                         class="block sm:hidden w-full rounded-lg object-cover object-center max-w-full h-full"
-                                        src="{{ $resource->image2 }}"
+                                        src="{{ $resource->image2 ?? $resource->image_mobile }}"
                                         alt="{{ $resource->title }}"
                                     />
                                     <!-- Desktop / Tablet -->
