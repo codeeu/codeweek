@@ -33,7 +33,13 @@ class OnlineCoursesPage extends Resource
 
     public static function indexQuery(NovaRequest $request, $query)
     {
-        return $query->where('id', 1);
+        if (!\Illuminate\Support\Facades\Schema::hasTable('online_courses_page')) {
+            return $query->whereRaw('1 = 0');
+        }
+
+        $page = \App\OnlineCoursesPage::config();
+
+        return $query->where('id', $page->id);
     }
 
     public static function authorizedToCreate(Request $request): bool
