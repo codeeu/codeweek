@@ -7,6 +7,10 @@
     ];
 @endphp
 
+@php
+    $dynamic = $page && $page->use_dynamic_content;
+@endphp
+
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
@@ -25,14 +29,18 @@
                     <div class="codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="order-1 flex-1 px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
-                                Online Courses
+                                {{ $dynamic && $page->hero_title ? $page->hero_title : 'Online Courses' }}
                             </h2>
                             <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                @lang('online-courses.online-courses-text')
+                                @if($dynamic && $page->hero_text)
+                                    {!! $page->hero_text !!}
+                                @else
+                                    @lang('online-courses.online-courses-text')
+                                @endif
                             </p>
                             <span class="text-dark-blue font-semibold text-lg ">
-                                <a href="/" class="cursor-pointer text-dark-blue underline mr-1">
-                                    Optional secondary CTA introduction to online courses
+                                <a href="{{ $dynamic && $page->hero_cta_link ? $page->hero_cta_link : '/' }}" class="cursor-pointer text-dark-blue underline mr-1">
+                                    {{ $dynamic && $page->hero_cta_text ? $page->hero_cta_text : 'Optional secondary CTA introduction to online courses' }}
                                 </a>
                                 ›
                             </span>
@@ -60,15 +68,27 @@
             <div class="relative z-10 py-10 md:py-20 codeweek-container-lg flex justify-center">
                 <div class="w-full max-w-[880px] gap-2">
                     <h2 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                        EU Code Week Online Courses
+                        {{ $dynamic && $page->intro_title ? $page->intro_title : 'EU Code Week Online Courses' }}
                     </h2>
                     <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                        @lang('online-courses.online-courses-sub-text1')
-                        <br/>
-                        @lang('online-courses.online-courses-sub-text2')
+                        @if($dynamic && $page->intro_text_1)
+                            {!! $page->intro_text_1 !!}
+                        @else
+                            @lang('online-courses.online-courses-sub-text1')
+                        @endif
+                        <br />
+                        @if($dynamic && $page->intro_text_2)
+                            {!! $page->intro_text_2 !!}
+                        @else
+                            @lang('online-courses.online-courses-sub-text2')
+                        @endif
                     </p>
                     <p class="text-[#333E48] font-normal leading-[22px] md:leading-[30px] text-[16px] md:text-xl p-0">
-                        @lang('online-courses.online-courses-sub-text3')
+                        @if($dynamic && $page->intro_text_3)
+                            {!! $page->intro_text_3 !!}
+                        @else
+                            @lang('online-courses.online-courses-sub-text3')
+                        @endif
                     </p>
                 </div>
             </div>
