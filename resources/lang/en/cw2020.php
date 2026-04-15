@@ -163,6 +163,24 @@ return [
             'Deep Dive massive open online course',
             'Coding@Home series',
         ],
+        'cards' => [
+            'community' => [
+                'href' => '',
+                'new_tab' => '',
+            ],
+            'activity' => [
+                'href' => '',
+                'new_tab' => '',
+            ],
+            'ambassadors' => [
+                'href' => '',
+                'new_tab' => '',
+            ],
+            'stories' => [
+                'href' => '',
+                'new_tab' => '',
+            ],
+        ],
     ],
 
 ];
