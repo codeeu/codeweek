@@ -47,12 +47,7 @@ class GetInvolvedPage extends Model
 
     public static function config(): self
     {
-        $page = self::first();
-        if ($page) {
-            return $page;
-        }
-
-        return self::create([
+        $defaults = [
             'use_dynamic_content' => false,
             'intro_heading' => 'How to get involved',
             'intro_text' => 'It’s easy to take part in Code Week. If you’re an educator, student, parent or community leader you can make a big impact. You can host your own activity, join one nearby, explore learning resources, or connect with others across Europe.',
@@ -71,6 +66,23 @@ class GetInvolvedPage extends Model
             'card_ambassadors_text' => 'Ambassadors help coordinate Code Week in their countries. Reach out for support, advice or to join local projects and challenges.',
             'card_stories_title' => 'Share your coding experience and stories',
             'card_stories_text' => 'Post photos, videos and stories using #EUCodeWeek. Highlight what you’ve learned, celebrate your community, and inspire others to join',
-        ]);
+        ];
+
+        $page = self::first();
+        if ($page) {
+            $dirty = false;
+            foreach ($defaults as $key => $value) {
+                if ($page->{$key} === null || $page->{$key} === '') {
+                    $page->{$key} = $value;
+                    $dirty = true;
+                }
+            }
+            if ($dirty) {
+                $page->save();
+            }
+            return $page;
+        }
+
+        return self::create($defaults);
     }
 }

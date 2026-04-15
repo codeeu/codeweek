@@ -26,12 +26,7 @@ class OnlineCoursesPage extends Model
 
     public static function config(): self
     {
-        $page = self::first();
-        if ($page) {
-            return $page;
-        }
-
-        return self::create([
+        $defaults = [
             'use_dynamic_content' => false,
             'hero_title' => 'Online Courses',
             'hero_text' => __('online-courses.online-courses-text'),
@@ -41,6 +36,23 @@ class OnlineCoursesPage extends Model
             'intro_text_1' => __('online-courses.online-courses-sub-text1'),
             'intro_text_2' => __('online-courses.online-courses-sub-text2'),
             'intro_text_3' => __('online-courses.online-courses-sub-text3'),
-        ]);
+        ];
+
+        $page = self::first();
+        if ($page) {
+            $dirty = false;
+            foreach ($defaults as $key => $value) {
+                if ($page->{$key} === null || $page->{$key} === '') {
+                    $page->{$key} = $value;
+                    $dirty = true;
+                }
+            }
+            if ($dirty) {
+                $page->save();
+            }
+            return $page;
+        }
+
+        return self::create($defaults);
     }
 }

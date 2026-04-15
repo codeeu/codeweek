@@ -36,12 +36,7 @@ class TreasureHuntPage extends Model
 
     public static function config(): self
     {
-        $page = self::first();
-        if ($page) {
-            return $page;
-        }
-
-        return self::create([
+        $defaults = [
             'use_dynamic_content' => false,
             'hero_title' => 'Treasure Hunt',
             'hero_subtitle' => 'Simple yet challenging Telegram game – easy for beginners, engaging for experienced players.',
@@ -61,6 +56,23 @@ class TreasureHuntPage extends Model
             'get_involved_link_3' => '/training',
             'get_involved_link_4' => 'https://bit.ly/DEEPDIVE2020',
             'get_involved_link_5' => '/resources/CodingAtHome',
-        ]);
+        ];
+
+        $page = self::first();
+        if ($page) {
+            $dirty = false;
+            foreach ($defaults as $key => $value) {
+                if ($page->{$key} === null || $page->{$key} === '') {
+                    $page->{$key} = $value;
+                    $dirty = true;
+                }
+            }
+            if ($dirty) {
+                $page->save();
+            }
+            return $page;
+        }
+
+        return self::create($defaults);
     }
 }
