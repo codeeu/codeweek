@@ -33,7 +33,13 @@ class DancePage extends Resource
 
     public static function indexQuery(NovaRequest $request, $query)
     {
-        return $query->where('id', 1);
+        if (!\Illuminate\Support\Facades\Schema::hasTable('dance_page')) {
+            return $query->whereRaw('1 = 0');
+        }
+
+        $page = \App\DancePage::config();
+
+        return $query->where('id', $page->id);
     }
 
     public static function authorizedToCreate(Request $request): bool
