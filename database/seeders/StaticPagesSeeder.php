@@ -112,6 +112,27 @@ class StaticPagesSeeder extends Seeder
             'link_type' => 'internal_link'
         ]);
 
+        StaticPage::updateOrCreate(
+            [
+                'language' => 'en',
+                'path' => '/get-involved',
+            ],
+            [
+                'name' => 'Get Involved',
+                'description' => 'Get started with EU Code Week: run a coding activity, join a local event, or share your experience using #EUCodeWeek.',
+                'unique_identifier' => 'get-involved',
+                'path' => '/get-involved',
+                'keywords' => ['Get Involved', 'EU Code Week', 'Coding'],
+                'thumbnail' => '/images/get-involved.png',
+                'meta_title' => 'Get Involved in EU Code Week – Host, Join or Learn',
+                'meta_description' => 'Get started with EU Code Week: Run a coding activity, join a local event, or share your experience using #EUCodeWeek. No experience needed!',
+                'meta_keywords' => 'EU Code Week, get involved, coding activity, host event, join event',
+                'category' => 'General',
+                'link_type' => 'internal_link',
+                'is_searchable' => false,
+            ]
+        );
+
         // Sub Pages
         $subPages = [
             // Online Cources
