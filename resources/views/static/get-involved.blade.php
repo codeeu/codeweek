@@ -5,6 +5,10 @@
     @php
         $list = [(object) ['label' => 'Get Involved', 'href' => '']];
 
+        $hasGetInvolvedPageTable = \Illuminate\Support\Facades\Schema::hasTable('get_involved_page');
+        $page = $hasGetInvolvedPageTable ? \App\GetInvolvedPage::config() : null;
+        $dynamic = $page && $page->use_dynamic_content;
+
         $optionalValue = static function (string $key): ?string {
             $value = __($key);
 
@@ -42,6 +46,33 @@
             'ambassadors' => $makeCardLink('ambassadors'),
             'stories' => $makeCardLink('stories'),
         ];
+
+        $cardData = [
+            'community' => [
+                'title' => $dynamic && $page && $page->card_community_title ? $page->card_community_title : 'Connect with your local Code Week community',
+                'text' => $dynamic && $page && $page->card_community_text ? $page->card_community_text : 'Find educators, mentors and organisers near you through the Code Week map or national hubs. There’s a whole network ready to support and collaborate.',
+                'href' => $dynamic && $page && $page->card_community_link ? $page->card_community_link : $engagementLinks['community']['href'],
+                'new_tab' => $dynamic && $page ? (bool) $page->card_community_new_tab : ($engagementLinks['community']['target'] === '_blank'),
+            ],
+            'activity' => [
+                'title' => $dynamic && $page && $page->card_activity_title ? $page->card_activity_title : 'Register your Code Week activity',
+                'text' => $dynamic && $page && $page->card_activity_text ? $page->card_activity_text : 'Planning something? Add it to the Code Week map so others can see it.',
+                'href' => $dynamic && $page && $page->card_activity_link ? $page->card_activity_link : $engagementLinks['activity']['href'],
+                'new_tab' => $dynamic && $page ? (bool) $page->card_activity_new_tab : ($engagementLinks['activity']['target'] === '_blank'),
+            ],
+            'ambassadors' => [
+                'title' => $dynamic && $page && $page->card_ambassadors_title ? $page->card_ambassadors_title : 'Connect with EU Code Week Ambassadors',
+                'text' => $dynamic && $page && $page->card_ambassadors_text ? $page->card_ambassadors_text : 'Ambassadors help coordinate Code Week in their countries. Reach out for support, advice or to join local projects and challenges.',
+                'href' => $dynamic && $page && $page->card_ambassadors_link ? $page->card_ambassadors_link : $engagementLinks['ambassadors']['href'],
+                'new_tab' => $dynamic && $page ? (bool) $page->card_ambassadors_new_tab : ($engagementLinks['ambassadors']['target'] === '_blank'),
+            ],
+            'stories' => [
+                'title' => $dynamic && $page && $page->card_stories_title ? $page->card_stories_title : 'Share your coding experience and stories',
+                'text' => $dynamic && $page && $page->card_stories_text ? $page->card_stories_text : 'Post photos, videos and stories using #EUCodeWeek. Highlight what you’ve learned, celebrate your community, and inspire others to join',
+                'href' => $dynamic && $page && $page->card_stories_link ? $page->card_stories_link : $engagementLinks['stories']['href'],
+                'new_tab' => $dynamic && $page ? (bool) $page->card_stories_new_tab : ($engagementLinks['stories']['target'] === '_blank'),
+            ],
+        ];
     @endphp
 
 @section('layout.breadcrumb')
@@ -71,15 +102,15 @@
                                     class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 w-fit h-fit relative -top-6">
                                     <h1
                                         class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
-                                        @lang('cw2020.get-involved.title')
+                                        {{ $dynamic && $page && $page->intro_heading ? $page->intro_heading : __('cw2020.get-involved.title') }}
                                     </h1>
                                     <p
                                         class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                        It’s easy to take part in Code Week. If you’re an educator, student, parent or community leader you can make a big impact. You can host your own activity, join one nearby, explore learning resources, or connect with others across Europe.
+                                        {{ $dynamic && $page && $page->intro_text ? $page->intro_text : 'It’s easy to take part in Code Week. If you’re an educator, student, parent or community leader you can make a big impact. You can host your own activity, join one nearby, explore learning resources, or connect with others across Europe.' }}
                                     </p>
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
-                                        href="/guide">
-                                        Get involved </a>
+                                        href="{{ $dynamic && $page && $page->intro_button_link ? $page->intro_button_link : '/guide' }}">
+                                        {{ $dynamic && $page && $page->intro_button_text ? $page->intro_button_text : 'Get involved' }} </a>
                                 </div>
                             </div>
                             <button class="hidden justify-center items-center w-full md:w-1/2 group max-md:h-full">
@@ -103,14 +134,14 @@
             <div class="w-full max-w-[880px] gap-2">
                 <h2
                     class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                    Join the movement for digital creativity
+                    {{ $dynamic && $page && $page->movement_heading ? $page->movement_heading : 'Join the movement for digital creativity' }}
                 </h2>
                 <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                   The beauty of Code Week is that there’s no single way to take part. Whether you run an event or join one, you're helping grow a movement built on creativity, inclusion and digital skills.
+                   {{ $dynamic && $page && $page->movement_text_1 ? $page->movement_text_1 : 'The beauty of Code Week is that there’s no single way to take part. Whether you run an event or join one, you\'re helping grow a movement built on creativity, inclusion and digital skills.' }}
 
                 </p>
                 <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                   Spread the joy of coding, connect with like-minded people, and empower others to shape their digital future. Every action makes a difference.
+                   {{ $dynamic && $page && $page->movement_text_2 ? $page->movement_text_2 : 'Spread the joy of coding, connect with like-minded people, and empower others to shape their digital future. Every action makes a difference.' }}
                 </p>
             </div>
         </div>
@@ -135,12 +166,16 @@
                         <div class="flex-1 max-w-full min-w-60">
                             <h3
                                 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
-                               How to get started with Code Week
+                               {{ $dynamic && $page && $page->start_heading ? $page->start_heading : 'How to get started with Code Week' }}
                             </h3>
                             <p class="mt-6 max-w-full text-xl leading-8 text-gray-700">
-                                Whether you’re curious about coding, passionate about teaching, or just want to try something new, there’s a place for you in EU Code Week.
-                                <br><br>
-                                You don’t need to be an expert. From hosting events to sharing resources, there are plenty of ways to contribute to this fun, open and collaborative movement.
+                                @if($dynamic && $page && $page->start_text)
+                                    {!! nl2br(e($page->start_text)) !!}
+                                @else
+                                    Whether you’re curious about coding, passionate about teaching, or just want to try something new, there’s a place for you in EU Code Week.
+                                    <br><br>
+                                    You don’t need to be an expert. From hosting events to sharing resources, there are plenty of ways to contribute to this fun, open and collaborative movement.
+                                @endif
                             </p>
                         </div>
 
@@ -161,19 +196,18 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            @if($engagementLinks['community']['href'])
-                                                <a href="{{ $engagementLinks['community']['href'] }}"
-                                                   @if($engagementLinks['community']['target']) target="{{ $engagementLinks['community']['target'] }}" @endif
-                                                   @if($engagementLinks['community']['rel']) rel="{{ $engagementLinks['community']['rel'] }}" @endif
+                                            @if($cardData['community']['href'])
+                                                <a href="{{ $cardData['community']['href'] }}"
+                                                   @if($cardData['community']['new_tab']) target="_blank" rel="noopener noreferrer" @endif
                                                    class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
-                                                    Connect with your local Code Week community
+                                                    {{ $cardData['community']['title'] }}
                                                 </a>
                                             @else
-                                                Connect with your local Code Week community
+                                                {{ $cardData['community']['title'] }}
                                             @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700 !p-0">
-                                          Find educators, mentors and organisers near you through the Code Week map or national hubs. There’s a whole network ready to support and collaborate.
+                                            {!! $cardData['community']['text'] !!}
                                         </p>
                                     </div>
                                 </article>
@@ -203,19 +237,18 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            @if($engagementLinks['activity']['href'])
-                                                <a href="{{ $engagementLinks['activity']['href'] }}"
-                                                   @if($engagementLinks['activity']['target']) target="{{ $engagementLinks['activity']['target'] }}" @endif
-                                                   @if($engagementLinks['activity']['rel']) rel="{{ $engagementLinks['activity']['rel'] }}" @endif
+                                            @if($cardData['activity']['href'])
+                                                <a href="{{ $cardData['activity']['href'] }}"
+                                                   @if($cardData['activity']['new_tab']) target="_blank" rel="noopener noreferrer" @endif
                                                    class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
-                                                    Register your Code Week activity
+                                                    {{ $cardData['activity']['title'] }}
                                                 </a>
                                             @else
-                                                Register your Code Week activity
+                                                {{ $cardData['activity']['title'] }}
                                             @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
-                                           Planning something? Add it to the Code Week map so others can see it.
+                                            {!! $cardData['activity']['text'] !!}
                                         </p>
                                     </div>
                                 </article>
@@ -243,19 +276,18 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            @if($engagementLinks['ambassadors']['href'])
-                                                <a href="{{ $engagementLinks['ambassadors']['href'] }}"
-                                                   @if($engagementLinks['ambassadors']['target']) target="{{ $engagementLinks['ambassadors']['target'] }}" @endif
-                                                   @if($engagementLinks['ambassadors']['rel']) rel="{{ $engagementLinks['ambassadors']['rel'] }}" @endif
+                                            @if($cardData['ambassadors']['href'])
+                                                <a href="{{ $cardData['ambassadors']['href'] }}"
+                                                   @if($cardData['ambassadors']['new_tab']) target="_blank" rel="noopener noreferrer" @endif
                                                    class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
-                                                    Connect with EU Code Week Ambassadors
+                                                    {{ $cardData['ambassadors']['title'] }}
                                                 </a>
                                             @else
-                                                Connect with EU Code Week Ambassadors
+                                                {{ $cardData['ambassadors']['title'] }}
                                             @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
-                                           Ambassadors help coordinate Code Week in their countries. Reach out for support, advice or to join local projects and challenges.
+                                            {!! $cardData['ambassadors']['text'] !!}
                                         </p>
                                     </div>
                                 </article>
@@ -282,19 +314,18 @@
                                     </div>
                                     <div class="pt-1 w-full text-gray-700">
                                         <h5 class="mb-2 text-2xl font-medium leading-7 text-gray-700">
-                                            @if($engagementLinks['stories']['href'])
-                                                <a href="{{ $engagementLinks['stories']['href'] }}"
-                                                   @if($engagementLinks['stories']['target']) target="{{ $engagementLinks['stories']['target'] }}" @endif
-                                                   @if($engagementLinks['stories']['rel']) rel="{{ $engagementLinks['stories']['rel'] }}" @endif
+                                            @if($cardData['stories']['href'])
+                                                <a href="{{ $cardData['stories']['href'] }}"
+                                                   @if($cardData['stories']['new_tab']) target="_blank" rel="noopener noreferrer" @endif
                                                    class="transition-colors duration-200 hover:text-[#1C4DA1] hover:underline focus-visible:underline group-hover:text-[#1C4DA1]">
-                                                    Share your coding experience and stories
+                                                    {{ $cardData['stories']['title'] }}
                                                 </a>
                                             @else
-                                                Share your coding experience and stories
+                                                {{ $cardData['stories']['title'] }}
                                             @endif
                                         </h5>
                                         <p class="text-base leading-6 text-gray-700  !p-0">
-                                            Post photos, videos and stories using <strong>#EUCodeWeek</strong>. Highlight what you’ve learned, celebrate your community, and inspire others to join
+                                            {!! $cardData['stories']['text'] !!}
                                         </p>
                                     </div>
                                 </article>
