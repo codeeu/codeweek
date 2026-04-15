@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Nova\Dashboards\Main;
+use App\Nova\GetInvolvedPage as GetInvolvedPageNova;
 use App\Nova\MediaUpload as MediaUploadNova;
 use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
@@ -33,6 +34,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
         // Explicitly register newly added resources to avoid sidebar discovery misses.
         Nova::resources([
+            GetInvolvedPageNova::class,
             TrainingResourceNova::class,
             MediaUploadNova::class,
             SupportCaseNova::class,
