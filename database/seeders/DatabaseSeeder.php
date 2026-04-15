@@ -32,6 +32,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DreamJobRoleModelSeeder::class);
         $this->call(DreamJobsPageSeeder::class);
         $this->call(GetInvolvedPageSeeder::class);
+        $this->call(EditableStaticPagesSeeder::class);
         $this->call(HackathonsPageSeeder::class);
 
         $this->call(SchoolSeeder::class);

@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Nova\Dashboards\Main;
+use App\Nova\CsrCampaignPage as CsrCampaignPageNova;
+use App\Nova\DancePage as DancePageNova;
 use App\Nova\GetInvolvedPage as GetInvolvedPageNova;
 use App\Nova\MediaUpload as MediaUploadNova;
 use App\Nova\Metrics\EventCount;
@@ -14,6 +16,8 @@ use App\Nova\SupportCase as SupportCaseNova;
 use App\Nova\SupportCaseAction as SupportCaseActionNova;
 use App\Nova\SupportCaseMessage as SupportCaseMessageNova;
 use App\Nova\SupportGmailCursor as SupportGmailCursorNova;
+use App\Nova\OnlineCoursesPage as OnlineCoursesPageNova;
+use App\Nova\TreasureHuntPage as TreasureHuntPageNova;
 use App\Nova\TrainingResource as TrainingResourceNova;
 use App\Nova\MenuSection as MenuSectionNova;
 use App\Nova\Metrics\UsersPerDay;
@@ -34,7 +38,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
         // Explicitly register newly added resources to avoid sidebar discovery misses.
         Nova::resources([
+            CsrCampaignPageNova::class,
+            DancePageNova::class,
             GetInvolvedPageNova::class,
+            OnlineCoursesPageNova::class,
+            TreasureHuntPageNova::class,
             TrainingResourceNova::class,
             MediaUploadNova::class,
             SupportCaseNova::class,
