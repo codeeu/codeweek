@@ -31,12 +31,7 @@ class CsrCampaignPage extends Model
 
     public static function config(): self
     {
-        $page = self::first();
-        if ($page) {
-            return $page;
-        }
-
-        return self::create([
+        $defaults = [
             'use_dynamic_content' => false,
             'hero_text' => __('csr-campaign.landing_header'),
             'primary_cta_text' => __('csr-campaign.get_involved'),
@@ -46,6 +41,23 @@ class CsrCampaignPage extends Model
             'about_title' => __('csr-campaign.about_title'),
             'about_description' => __('csr-campaign.about_description'),
             'resources_title' => __('csr-campaign.resources'),
-        ]);
+        ];
+
+        $page = self::first();
+        if ($page) {
+            $dirty = false;
+            foreach ($defaults as $key => $value) {
+                if ($page->{$key} === null || $page->{$key} === '') {
+                    $page->{$key} = $value;
+                    $dirty = true;
+                }
+            }
+            if ($dirty) {
+                $page->save();
+            }
+            return $page;
+        }
+
+        return self::create($defaults);
     }
 }
