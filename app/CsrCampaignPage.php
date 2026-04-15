@@ -31,15 +31,33 @@ class CsrCampaignPage extends Model
 
     public static function config(): self
     {
+        $defaults = [
+            'use_dynamic_content' => false,
+            'hero_text' => __('csr-campaign.landing_header'),
+            'primary_cta_text' => __('csr-campaign.get_involved'),
+            'primary_cta_link' => 'https://codeweek.eu/blog/futurereadycsr-campaign-launch',
+            'secondary_cta_text' => __('csr-campaign.explore_resources'),
+            'secondary_cta_link' => 'https://codeweek.eu/blog/futurereadycsr-resources',
+            'about_title' => __('csr-campaign.about_title'),
+            'about_description' => __('csr-campaign.about_description'),
+            'resources_title' => __('csr-campaign.resources'),
+        ];
+
         $page = self::first();
         if ($page) {
+            $dirty = false;
+            foreach ($defaults as $key => $value) {
+                if ($page->{$key} === null || $page->{$key} === '') {
+                    $page->{$key} = $value;
+                    $dirty = true;
+                }
+            }
+            if ($dirty) {
+                $page->save();
+            }
             return $page;
         }
 
-        return self::create([
-            'use_dynamic_content' => false,
-            'primary_cta_link' => 'https://codeweek.eu/blog/futurereadycsr-campaign-launch',
-            'secondary_cta_link' => 'https://codeweek.eu/blog/futurereadycsr-resources',
-        ]);
+        return self::create($defaults);
     }
 }
