@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\OnlineCoursesPage;
 use App\OnlineCourse;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\View\View;
 
 class OnlineCoursesController extends Controller
@@ -14,7 +16,8 @@ class OnlineCoursesController extends Controller
     public function index(): View
     {
         $onlineCourses = OnlineCourse::active()->ordered()->get();
+        $page = Schema::hasTable('online_courses_page') ? OnlineCoursesPage::config() : null;
 
-        return view('online-courses', compact('onlineCourses'));
+        return view('online-courses', compact('onlineCourses', 'page'));
     }
 }

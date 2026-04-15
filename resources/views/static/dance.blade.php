@@ -7,6 +7,9 @@
     $list = [
         (object) ['label' => 'Dance', 'href' => ''],
     ];
+    $hasDanceTable = \Illuminate\Support\Facades\Schema::hasTable('dance_page');
+    $page = $hasDanceTable ? \App\DancePage::config() : null;
+    $dynamic = $page && $page->use_dynamic_content;
 @endphp
 
 @section('layout.breadcrumb')
@@ -21,10 +24,14 @@
                     <div class="codeweek-container-lg flex flex-col justify-end md:justify-start md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28 h-[560px]">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                             <h2 class="text-dark-blue text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
-                                @lang('cw2020.title.0')
+                                {{ $dynamic && $page->hero_title ? $page->hero_title : __('cw2020.title.0') }}
                             </h2>
                             <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
-                                @lang('cw2020.dance.title')
+                                @if($dynamic && $page->hero_subtitle)
+                                    {!! $page->hero_subtitle !!}
+                                @else
+                                    @lang('cw2020.dance.title')
+                                @endif
                             </p>
                         </div>
                         <div
@@ -46,8 +53,16 @@
 
         <section class="overflow-hidden relative z-10">
             <div class="relative z-10 py-10 md:py-20 codeweek-container-lg">
-                <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">@lang('cw2020.dance.title')</p>
-                <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-6">@lang('snippets.dance.subtitle')</p>
+                <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">
+                    {{ $dynamic && $page->content_intro_title ? $page->content_intro_title : __('cw2020.dance.title') }}
+                </p>
+                <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-6">
+                    @if($dynamic && $page->content_intro_subtitle)
+                        {!! $page->content_intro_subtitle !!}
+                    @else
+                        @lang('snippets.dance.subtitle')
+                    @endif
+                </p>
 
                 <p class="font-semibold text-2xl p-0 mb-2">
                     @lang('cw2020.dance.section1.title')
@@ -128,8 +143,16 @@
                     @lang('cw2020.dance.outro.3').
                 </p>
 
-                <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">@lang('cw2020.get-involved.title')</p>
-                <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-6">@lang('cw2020.get-involved.subtitle').</p>
+                <p class="text-dark-blue font-['Montserrat'] font-medium text-[22px] leading-7 md:text-4xl p-0 mb-6">
+                    {{ $dynamic && $page->get_involved_title ? $page->get_involved_title : __('cw2020.get-involved.title') }}
+                </p>
+                <p class="font-normal text-default md:text-xl p-0 text-slate-500 leading-[22px] md:leading-[30px] mb-6">
+                    @if($dynamic && $page->get_involved_subtitle)
+                        {!! $page->get_involved_subtitle !!}
+                    @else
+                        @lang('cw2020.get-involved.subtitle').
+                    @endif
+                </p>
                 <ul class="list-[circle] m-0 ml-4 pl-2 mb-3">
                     <li class="font-normal text-default md:text-xl p-0 text-slate-500"><a class="text-dark-blue" href="https://blog.codeweek.eu/getting-started-with-eu-code-week/">@lang('cw2020.get-involved.content.0')</a></li>
                     <li class="font-normal text-default md:text-xl p-0 text-slate-500"><a class="text-dark-blue" href="{{route("guide")}}">@lang('cw2020.get-involved.content.1')</a></li>
