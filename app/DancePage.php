@@ -31,6 +31,12 @@ class DancePage extends Model
 
         return self::create([
             'use_dynamic_content' => false,
+            'hero_title' => __('cw2020.title.0'),
+            'hero_subtitle' => __('cw2020.dance.title'),
+            'content_intro_title' => __('cw2020.dance.title'),
+            'content_intro_subtitle' => __('snippets.dance.subtitle'),
+            'get_involved_title' => __('cw2020.get-involved.title'),
+            'get_involved_subtitle' => __('cw2020.get-involved.subtitle'),
         ]);
     }
 }
