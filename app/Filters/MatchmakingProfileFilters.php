@@ -2,6 +2,7 @@
 
 namespace App\Filters;
 
+use App\MatchmakingProfile;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
@@ -160,7 +161,9 @@ class MatchmakingProfileFilters extends Filters
         }
         return $this->builder->where(function ($q) use ($values) {
             foreach ($values as $value) {
-                $q->orWhereJsonContains('digital_expertise_areas', $value);
+                foreach (MatchmakingProfile::getTopicAliases($value) as $alias) {
+                    $q->orWhereJsonContains('digital_expertise_areas', $alias);
+                }
             }
         });
     }
