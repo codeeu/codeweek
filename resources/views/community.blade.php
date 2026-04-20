@@ -99,15 +99,25 @@
                                     @lang('community.titles.0')
                                 </h4>
                                 <p
-                                    class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                    @lang('community.slider_info')
+                                    class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-6 max-md:max-w-full max-w-[525px]">
+                                    EU Code Week is expanding its community in 2026 and is looking for motivated educators to join as Leading Teachers or Ambassadors. If you are passionate about digital education, we invite you to apply and become part of the Code Week community.
                                 </p>
-                                <a
-                                    class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                    href="{{ route('contact-us') }}"
-                                >
-                                    <span>@lang('base.get_in_touch')</span>
-                                </a>
+                                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                                    <a
+                                        class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
+                                        href="{{ route('contact-us') }}"
+                                    >
+                                        <span>@lang('base.get_in_touch')</span>
+                                    </a>
+                                    <a
+                                        class="text-nowrap md:w-fit flex justify-center items-center border-2 border-[#1C4DA1] hover:border-hover-orange text-[#1C4DA1] hover:text-hover-orange duration-300 rounded-full py-4 px-8 font-semibold text-lg bg-white"
+                                        href="https://codeweek.eu/blog/international-call-community-members-2026-2/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span>Read the call</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <button class="items-center justify-center hidden w-full md:w-1/2 group max-md:h-full">
