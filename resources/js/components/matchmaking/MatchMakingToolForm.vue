@@ -409,7 +409,8 @@ export default {
       window.scrollTo(0, 0);
     };
 
-    const paginate = () => {
+    const paginate = (page) => {
+      pagination.value.current_page = page;
       scrollToTop();
       onSubmit(true);
     };
@@ -419,13 +420,27 @@ export default {
         pagination.value.current_page = 1;
       }
 
+      const toOptionValue = (item, key) =>
+        item && typeof item === 'object' ? item[key] : item;
+
       const params = {
         page: pagination.value.current_page,
-        support_types: selectedSupportTypes.value.map((item) => item.id),
-        languages: selectedLanguages.value.map((item) => item.id),
-        locations: selectedLocations.value.map((item) => item.iso),
-        types: selectedTypes.value.map((item) => item.id),
-        topics: selectedTopics.value.map((item) => item.id),
+        support_types: selectedSupportTypes.value
+          .map((item) => toOptionValue(item, 'id'))
+          .filter(Boolean),
+        // Languages are stored in DB as names, not numeric IDs.
+        languages: selectedLanguages.value
+          .map((item) => toOptionValue(item, 'name'))
+          .filter(Boolean),
+        locations: selectedLocations.value
+          .map((item) => toOptionValue(item, 'iso'))
+          .filter(Boolean),
+        types: selectedTypes.value
+          .map((item) => toOptionValue(item, 'id'))
+          .filter(Boolean),
+        topics: selectedTopics.value
+          .map((item) => toOptionValue(item, 'id'))
+          .filter(Boolean),
       };
 
       axios
