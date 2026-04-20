@@ -2,7 +2,7 @@
   <div
     class="codeweek-matchmakingtool-component font-['Blinker'] bg-light-blue"
   >
-    <div class="codeweek-container py-10">
+    <div ref="filtersContainer" class="codeweek-container py-10">
       <div
         class="max-md:fixed left-0 top-[125px] z-[100] flex-col items-center w-full max-md:p-6 max-md:h-[calc(100dvh-125px)] max-md:overflow-auto max-md:bg-white duration-300"
         :class="[showFilterModal ? 'flex' : 'max-md:hidden']"
@@ -405,8 +405,20 @@ export default {
       selectedTopics.value = [];
     };
 
+    const filtersContainer = ref(null);
+
     const scrollToTop = () => {
-      window.scrollTo(0, 0);
+      if (!filtersContainer.value) {
+        return;
+      }
+
+      const headerOffset = 120;
+      const top =
+        filtersContainer.value.getBoundingClientRect().top +
+        window.scrollY -
+        headerOffset;
+
+      window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
     };
 
     const paginate = (page) => {
@@ -521,6 +533,7 @@ export default {
       onSubmit,
       customLabel,
       showFilterModal,
+      filtersContainer,
       tags,
       removeSelectedItem,
       removeAllSelectedItems,
