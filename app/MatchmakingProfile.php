@@ -75,6 +75,18 @@ class MatchmakingProfile extends Model
     public const COLLABORATION_NO = 'No';
     public const COLLABORATION_MAYBE = 'Maybe, I would like more details';
 
+    public const TOPIC_CODING_PROGRAMMING = 'Coding & Programming';
+    public const TOPIC_ICT_DIGITAL_SKILLS = 'ICT & Digital Skills';
+    public const TOPIC_STEM_STEAM = 'STEM/STEAM education';
+    public const TOPIC_DIGITAL_EDTECH = 'Digital Education & EdTech';
+    public const TOPIC_CYBERSECURITY = 'Cybersecurity';
+    public const TOPIC_MEDIA_LITERACY = 'Media Literacy';
+    public const TOPIC_AI_ML = 'AI & Machine Learning';
+    public const TOPIC_AI_LITERACY = 'AI Literacy';
+    public const TOPIC_GRAPHIC_DESIGN = 'Graphic Design';
+    public const TOPIC_MARKETING_SOCIAL = 'Marketing & Social Media';
+    public const TOPIC_OTHER = 'Other';
+
     // Static helpers for validation / form use
     public static function getValidTypes(): array
     {
@@ -118,16 +130,78 @@ class MatchmakingProfile extends Model
 
     public static function getUniqueDigitalExpertiseAreas(): array
     {
-        return MatchmakingProfile::query()
-            ->pluck('digital_expertise_areas')
-            ->filter()
-            ->flatMap(function ($item) {
-                return is_array($item) ? $item : [];
-            })
-            ->unique()
-            ->sort()
-            ->values()
-            ->all();
+        return self::getTopicOptions();
+    }
+
+    public static function getTopicOptions(): array
+    {
+        return [
+            self::TOPIC_CODING_PROGRAMMING,
+            self::TOPIC_ICT_DIGITAL_SKILLS,
+            self::TOPIC_STEM_STEAM,
+            self::TOPIC_DIGITAL_EDTECH,
+            self::TOPIC_CYBERSECURITY,
+            self::TOPIC_MEDIA_LITERACY,
+            self::TOPIC_AI_ML,
+            self::TOPIC_AI_LITERACY,
+            self::TOPIC_GRAPHIC_DESIGN,
+            self::TOPIC_MARKETING_SOCIAL,
+            self::TOPIC_OTHER,
+        ];
+    }
+
+    /**
+     * Map canonical topic labels to legacy values already stored in DB.
+     */
+    public static function getTopicAliases(string $topic): array
+    {
+        $aliases = [
+            self::TOPIC_CODING_PROGRAMMING => [
+                self::TOPIC_CODING_PROGRAMMING,
+                'Coding and programming',
+            ],
+            self::TOPIC_ICT_DIGITAL_SKILLS => [
+                self::TOPIC_ICT_DIGITAL_SKILLS,
+                'Digital skills',
+                'ICT',
+            ],
+            self::TOPIC_STEM_STEAM => [
+                self::TOPIC_STEM_STEAM,
+            ],
+            self::TOPIC_DIGITAL_EDTECH => [
+                self::TOPIC_DIGITAL_EDTECH,
+                'Digital Education and EdTech',
+            ],
+            self::TOPIC_CYBERSECURITY => [
+                self::TOPIC_CYBERSECURITY,
+                'Cyber security',
+            ],
+            self::TOPIC_MEDIA_LITERACY => [
+                self::TOPIC_MEDIA_LITERACY,
+                'Media literacy',
+            ],
+            self::TOPIC_AI_ML => [
+                self::TOPIC_AI_ML,
+                'Artificial Intelligence & Machine Learning',
+                'Artificial Intelligence and Machine Learning',
+            ],
+            self::TOPIC_AI_LITERACY => [
+                self::TOPIC_AI_LITERACY,
+                'AI literacy',
+            ],
+            self::TOPIC_GRAPHIC_DESIGN => [
+                self::TOPIC_GRAPHIC_DESIGN,
+            ],
+            self::TOPIC_MARKETING_SOCIAL => [
+                self::TOPIC_MARKETING_SOCIAL,
+                'Marketing and Social Media',
+            ],
+            self::TOPIC_OTHER => [
+                self::TOPIC_OTHER,
+            ],
+        ];
+
+        return $aliases[$topic] ?? [$topic];
     }
 
     /**
