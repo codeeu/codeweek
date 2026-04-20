@@ -22,6 +22,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
+use Throwable;
 
 /**
  * App\User
@@ -378,7 +379,19 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public static function getGeoIPData()
     {
-        return geoip(geoip()->getClientIP());
+        try {
+            return geoip(geoip()->getClientIP());
+        } catch (Throwable $e) {
+            Log::warning('GeoIP lookup failed, using default location fallback.', [
+                'error' => $e->getMessage(),
+            ]);
+
+            return (object) [
+                'iso_code' => config('geoip.default_location.iso_code', 'BE'),
+                'lat' => config('geoip.default_location.lat'),
+                'lon' => config('geoip.default_location.lon'),
+            ];
+        }
     }
 
     public function activities($edition)
