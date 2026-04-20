@@ -4,6 +4,7 @@ namespace App\Imports;
 
 use App\MatchmakingProfile;
 use App\Country;
+use App\Services\Matchmaking\ProfileAvatarResolver;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
@@ -16,6 +17,13 @@ use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, WithCustomValueBinder, WithHeadingRow
 {
+    private ProfileAvatarResolver $avatarResolver;
+
+    public function __construct()
+    {
+        $this->avatarResolver = app(ProfileAvatarResolver::class);
+    }
+
     /**
      * Parse semicolon or comma separated values into array
      */
@@ -889,6 +897,17 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             'start_time' => $startTime,
             'completion_time' => $completionTime,
         ];
+
+        $resolvedAvatar = $this->avatarResolver->resolve(
+            $type,
+            $organisationName,
+            $firstName,
+            $lastName,
+            $slug
+        );
+        if (!empty($resolvedAvatar)) {
+            $profileData['avatar'] = $resolvedAvatar;
+        }
 
         if ($existingProfile && empty($email)) {
             unset($profileData['email']);
