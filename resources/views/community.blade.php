@@ -105,7 +105,7 @@
                                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
                                     <a
                                         class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                        href="{{ route('contact-us') }}"
+                                        href="https://codeweek.eu/contact-us"
                                     >
                                         <span>@lang('base.get_in_touch')</span>
                                     </a>
@@ -115,7 +115,7 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <span>Read the call</span>
+                                        <span>Find our more</span>
                                     </a>
                                 </div>
                             </div>
