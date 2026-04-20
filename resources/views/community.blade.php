@@ -104,7 +104,7 @@
                                 </p>
                                 <a
                                     class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                    href="/"
+                                    href="{{ route('contact-us') }}"
                                 >
                                     <span>@lang('base.get_in_touch')</span>
                                 </a>
