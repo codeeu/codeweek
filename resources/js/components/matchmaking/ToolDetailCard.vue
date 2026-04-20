@@ -375,10 +375,13 @@ export default {
       if (person.type !== 'volunteer') return null;
 
       const abouts = [];
-      if (person.description) {
+      // Reviewer request: use "Why am I volunteering?" as Introduction content
+      // and remove the dedicated "Why am I volunteering?" section.
+      const introductionText = person.why_volunteering || person.description;
+      if (introductionText) {
         abouts.push({
           title: 'Introduction',
-          list: [person.description],
+          list: [introductionText],
         });
       }
       if (person.organisation_name && person.organisation_type) {
@@ -388,12 +391,6 @@ export default {
             `Organisation name: ${person.organisation_name}`,
             `Organisation type: ${parseArrayString(person.organisation_type)}`,
           ],
-        });
-      }
-      if (person.why_volunteering) {
-        abouts.push({
-          title: 'Why am I volunteering?',
-          list: [person.why_volunteering],
         });
       }
       if (person.support_activities?.length) {
