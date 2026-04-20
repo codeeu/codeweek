@@ -115,7 +115,7 @@
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <span>Find our more</span>
+                                        <span>Find out more</span>
                                     </a>
                                 </div>
                             </div>
