@@ -158,7 +158,7 @@
                       </div>
                   </template>
                   <template #content>
-                      Select a topic to help match volunteers with the right digital skills for your needs — e.g. coding, robotics, online safety, etc.
+                      Select a topic to help match volunteers with the right digital skills for your needs.
                   </template>
               </Tooltip>
             </label>
@@ -171,7 +171,7 @@
               :clear-on-select="false"
               :preserve-search="true"
               :custom-label="(opt) => opt.name"
-              placeholder="Select topic, e.g. robotics"
+              placeholder="Select topic"
               label="Topics"
               track-by="name"
               :preselect-first="false"
