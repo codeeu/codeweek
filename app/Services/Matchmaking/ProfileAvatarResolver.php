@@ -179,6 +179,16 @@ class ProfileAvatarResolver
             return 100;
         }
 
+        $candidateCompact = $this->compact($candidate);
+        $indexCompact = $this->compact($indexKey);
+        if (
+            $candidateCompact !== '' &&
+            $indexCompact !== '' &&
+            (str_contains($candidateCompact, $indexCompact) || str_contains($indexCompact, $candidateCompact))
+        ) {
+            return 65;
+        }
+
         $candidateTokens = array_values(array_filter(explode('-', $candidate)));
         $indexTokens = array_values(array_filter(explode('-', $indexKey)));
         $tokenOverlap = count(array_intersect($candidateTokens, $indexTokens));
@@ -203,6 +213,11 @@ class ProfileAvatarResolver
         }
 
         return 0;
+    }
+
+    private function compact(string $value): string
+    {
+        return preg_replace('/[^a-z0-9]/', '', strtolower($value)) ?? '';
     }
 }
 
