@@ -105,9 +105,11 @@
                                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
                                     <a
                                         class="text-nowrap md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                        href="https://codeweek.eu/contact-us"
+                                        href="https://forms.cloud.microsoft/e/kWuLwq0hYR"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
-                                        <span>@lang('base.get_in_touch')</span>
+                                        <span>Apply now</span>
                                     </a>
                                     <a
                                         class="text-nowrap md:w-fit flex justify-center items-center border-2 border-[#1C4DA1] hover:border-hover-orange text-[#1C4DA1] hover:text-hover-orange duration-300 rounded-full py-4 px-8 font-semibold text-lg bg-white"
