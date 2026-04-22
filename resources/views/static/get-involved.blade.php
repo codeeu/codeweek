@@ -104,10 +104,14 @@
                                         class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4">
                                         {{ $dynamic && $page && $page->intro_heading ? $page->intro_heading : __('cw2020.get-involved.title') }}
                                     </h1>
-                                    <p
-                                        class="text-xl  md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                        {{ $dynamic && $page && $page->intro_text ? $page->intro_text : 'It’s easy to take part in Code Week. If you’re an educator, student, parent or community leader you can make a big impact. You can host your own activity, join one nearby, explore learning resources, or connect with others across Europe.' }}
-                                    </p>
+                                    <div
+                                        class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px] [&_p]:p-0 [&_p]:m-0 [&_div]:inline [&_br]:leading-8">
+                                        @if($dynamic && $page && $page->intro_text)
+                                            {!! $page->intro_text !!}
+                                        @else
+                                            It’s easy to take part in Code Week. If you’re an educator, student, parent or community leader you can make a big impact. You can host your own activity, join one nearby, explore learning resources, or connect with others across Europe.
+                                        @endif
+                                    </div>
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                         href="{{ $dynamic && $page && $page->intro_button_link ? $page->intro_button_link : '/guide' }}">
                                         {{ $dynamic && $page && $page->intro_button_text ? $page->intro_button_text : 'Get involved' }} </a>
@@ -136,13 +140,20 @@
                     class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
                     {{ $dynamic && $page && $page->movement_heading ? $page->movement_heading : 'Join the movement for digital creativity' }}
                 </h2>
-                <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
-                   {{ $dynamic && $page && $page->movement_text_1 ? $page->movement_text_1 : 'The beauty of Code Week is that there’s no single way to take part. Whether you run an event or join one, you\'re helping grow a movement built on creativity, inclusion and digital skills.' }}
-
-                </p>
-                <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
-                   {{ $dynamic && $page && $page->movement_text_2 ? $page->movement_text_2 : 'Spread the joy of coding, connect with like-minded people, and empower others to shape their digital future. Every action makes a difference.' }}
-                </p>
+                <div class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
+                    @if($dynamic && $page && $page->movement_text_1)
+                        {!! $page->movement_text_1 !!}
+                    @else
+                        The beauty of Code Week is that there’s no single way to take part. Whether you run an event or join one, you're helping grow a movement built on creativity, inclusion and digital skills.
+                    @endif
+                </div>
+                <div class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
+                    @if($dynamic && $page && $page->movement_text_2)
+                        {!! $page->movement_text_2 !!}
+                    @else
+                        Spread the joy of coding, connect with like-minded people, and empower others to shape their digital future. Every action makes a difference.
+                    @endif
+                </div>
             </div>
         </div>
         <div class="animation-element move-background duration-[1.5s] absolute z-0 bottom-10 md:bottom-auto md:top-1/3 -right-14 md:-right-40 w-28 md:w-72 h-28 md:h-72 bg-[#FFEF99] rounded-full hidden lg:block"
@@ -168,15 +179,15 @@
                                 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
                                {{ $dynamic && $page && $page->start_heading ? $page->start_heading : 'How to get started with Code Week' }}
                             </h3>
-                            <p class="mt-6 max-w-full text-xl leading-8 text-gray-700">
+                            <div class="mt-6 max-w-full text-xl leading-8 text-gray-700 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page && $page->start_text)
-                                    {!! nl2br(e($page->start_text)) !!}
+                                    {!! $page->start_text !!}
                                 @else
                                     Whether you’re curious about coding, passionate about teaching, or just want to try something new, there’s a place for you in EU Code Week.
                                     <br><br>
                                     You don’t need to be an expert. From hosting events to sharing resources, there are plenty of ways to contribute to this fun, open and collaborative movement.
                                 @endif
-                            </p>
+                            </div>
                         </div>
 
                         <!-- Right Column - Engagement Options -->
