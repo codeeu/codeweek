@@ -27,13 +27,13 @@
                             <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                                 {{ $dynamic && $page->hero_title ? $page->hero_title : 'Treasure Hunt' }}
                             </h2>
-                            <p class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px]">
+                            <div class="text-xl font-normal md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page->hero_subtitle)
                                     {!! $page->hero_subtitle !!}
                                 @else
                                     Simple yet challenging Telegram game – easy for beginners, engaging for experienced players.
                                 @endif
-                            </p>
+                            </div>
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
                         <img
@@ -59,20 +59,20 @@
                     <h2 class="text-dark-blue text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
                         {{ $dynamic && $page->intro_title ? $page->intro_title : 'Code Week Treasure Hunt' }}
                     </h2>
-                    <p class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6">
+                    <div class="text-[#20262C] font-normal text-lg md:text-2xl p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                         @if($dynamic && $page->intro_paragraph_1)
                             {!! $page->intro_paragraph_1 !!}
                         @else
                             This is a game on Telegram that is simple enough for beginners, but also challenging to keep experienced participants on their toes.
                         @endif
-                    </p>
-                    <p class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                    </div>
+                    <div class="text-[#333E48] font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                         @if($dynamic && $page->intro_paragraph_2)
                             {!! $page->intro_paragraph_2 !!}
                         @else
                             <a href="/code-hunting-game" class="text-dark-blue underline">The Code Week Treasure Hunt</a> is a game best played on your PC with a mobile phone in hand. The game will ask you to solve coding challenges and guide you through the history of coding, computer science and technology in Europe.
                         @endif
-                    </p>
+                    </div>
                 </div>
             </div>
             <div
@@ -101,13 +101,13 @@
                         </div>
                         <div class="absolute after:content-[''] after:block after:w-[2px] after:h-full after:bg-[#5F718A] left-5 bottom-2 top-12 tablet:top-16"></div>
                         <div class="flex-1">
-                            <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                            <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page->step_1_text)
                                     {!! $page->step_1_text !!}
                                 @else
                                     Download the Telegram app. It is available for <a href="https://desktop.telegram.org/" class="text-dark-blue underline">Desktop</a> (Windows, macOS and Linux), <a href="https://apps.apple.com/app/telegram-messenger/id686449807" class="text-dark-blue underline">iOS</a> and <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger" class="text-dark-blue underline">Android</a> You can play the game either on your PC or laptop, or on your smartphone. We recommend you play it on your computer so that you can get the instructions and solve the coding challenges on the Telegram app on your phone.
                                 @endif
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div class="relative flex gap-x-8 pb-4 tablet:pb-16">
@@ -116,13 +116,13 @@
                         </div>
                         <div class="absolute after:content-[''] after:block after:w-[2px] after:h-full after:bg-[#5F718A] left-5 bottom-2 top-12 tablet:top-16"></div>
                         <div class="flex-1">
-                            <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                            <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page->step_2_text)
                                     {!! $page->step_2_text !!}
                                 @else
                                     To play the game, <a href="/code-hunting-game" class="text-dark-blue underline">open the game</a> and scan the QR code that will take you to the Telegram app and give you the first set of instructions.
                                 @endif
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div class="relative flex gap-x-8 pb-4 tablet:pb-16">
@@ -131,13 +131,13 @@
                         </div>
                         <div class="absolute after:content-[''] after:block after:w-[2px] after:h-full after:bg-[#5F718A] left-5 bottom-2 top-12 tablet:top-16"></div>
                         <div class="flex-1">
-                            <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                            <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page->step_3_text)
                                     {!! $page->step_3_text !!}
                                 @else
                                     To win, you need to solve 10 coding challenges and find 10 locations on the map of Europe that are linked to the rise of coding and technology.
                                 @endif
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div class="relative flex gap-x-8 mb-8">
@@ -145,25 +145,25 @@
                             4
                         </div>
                         <div class="flex-1">
-                            <p class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0">
+                            <div class="text-slate-500 font-normal text-[16px] md:text-xl leading-[22px] md:leading-[30px] p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page->step_4_text)
                                     {!! $page->step_4_text !!}
                                 @else
                                     After you complete the game, share your score with your friends using #EUCodeWeek and challenge them to play and learn about the history of coding too. Let's see who scores the top results!
                                 @endif
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full bg-white rounded-lg p-6 flex flex-col tablet:flex-row justify-start gap-2">
                         <img class="min-w-8 min-h-8" src="/images/icon_info.svg" />
                         <div class="text-slate-500">
-                            <p class="font-normal leading-[22px] text-default tablet:leading-[30px] tablet:text-xl p-0">
+                            <div class="font-normal leading-[22px] text-default tablet:leading-[30px] tablet:text-xl p-0 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page->info_text)
                                     {!! $page->info_text !!}
                                 @else
                                     The Code Week Treasure Hunt is the virtual version of the original EU Code Week Treasure Hunt which was first developed by Alessandro Bogliolo, Professor of Computer Systems at the University of Urbino. To learn more about his original game, visit our <a href="https://blog.codeweek.eu/" class="text-dark-blue underline">blog</a>.
                                 @endif
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,13 +184,13 @@
                         <h2 class="text-white text-[22px] md:text-4xl leading-7 md:leading-[44px] font-medium font-['Montserrat'] mb-6">
                             {{ $dynamic && $page->get_involved_title ? $page->get_involved_title : 'How to get involved' }}
                         </h2>
-                        <p class="text-white font-normal leading-7 text-base tablet:text-xl p-0 mb-6">
+                        <div class="text-white font-normal leading-7 text-base tablet:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                             @if($dynamic && $page->get_involved_text)
                                 {!! $page->get_involved_text !!}
                             @else
                                 Can’t wait to start coding? If you would like to join the EU Code Week community but don't know where to start, take a look at these resources that will help get you started, just in time for our annual celebration in October.
                             @endif
-                        </p>
+                        </div>
                         <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="{{ $dynamic && $page->get_involved_link_1 ? $page->get_involved_link_1 : 'https://blog.codeweek.eu/getting-started-with-eu-code-week/' }}">@lang('cw2020.get-involved.content.0')</a></div>
                         <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="{{ $dynamic && $page->get_involved_link_2 ? $page->get_involved_link_2 : route('guide') }}">@lang('cw2020.get-involved.content.1')</a></div>
                         <div class="mb-6 flex gap-2 items-center"><div class="bg-primary w-3 h-3 rounded-full"></div><a class="text-white font-normal text-base tablet:text-xl hover:underline" href="{{ $dynamic && $page->get_involved_link_3 ? $page->get_involved_link_3 : route('training.index') }}">@lang('cw2020.get-involved.content.2')</a></div>
