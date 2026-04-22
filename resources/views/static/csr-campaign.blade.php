@@ -110,13 +110,13 @@
                 <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                            <p class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4">
+                            <div class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                                 @if($dynamic && $page->hero_text)
                                     {!! $page->hero_text !!}
                                 @else
                                     @lang('csr-campaign.landing_header')
                                 @endif
-                            </p>
+                            </div>
                             <div class="flex flex-col md:flex-row gap-3 md:gap-5 items-center">
                                 <a
                                     class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
@@ -154,13 +154,13 @@
                 <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block">
                     {{ $dynamic && $page->about_title ? $page->about_title : __('csr-campaign.about_title') }}
                 </h2>
-                <p class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl">
+                <div class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
                     @if($dynamic && $page->about_description)
                         {!! $page->about_description !!}
                     @else
                         @lang('csr-campaign.about_description')
                     @endif
-                </p>
+                </div>
                 <div class="relative">
                     <img
                         class="w-full rounded-2xl object-cover object-center h-[calc(80vw-40px)] sm:h-auto"
