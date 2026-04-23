@@ -261,7 +261,7 @@
       <div class="bg-yellow-50 pb-20">
         <div class="relative z-10 codeweek-container">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10"
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10 items-stretch"
           >
             <template v-for="tool in tools" :key="tool.id">
               <tool-card :tool="tool"></tool-card>
