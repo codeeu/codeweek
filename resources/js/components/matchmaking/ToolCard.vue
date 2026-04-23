@@ -1,8 +1,7 @@
 <template>
-  <div class="flex flex-col bg-white rounded-lg overflow-hidden">
+  <div class="flex h-full flex-col bg-white rounded-lg overflow-hidden">
     <div
-      class="flex-shrink-0 flex justify-center items-center w-full h-[178px]"
-      :class="[tool.avatar_dark ? 'bg-black' : 'bg-white']"
+      class="flex-shrink-0 flex justify-center items-center w-full h-[178px] bg-[#15509e]"
     >
       <img
         :src="tool.avatar || '/images/matchmaking-tool/tool-placeholder.png'"
@@ -14,7 +13,7 @@
     </div>
 
     <div
-      class="flex-grow flex flex-col gap-2 px-5 py-4 h-fit"
+      class="flex-grow flex flex-col gap-2 px-5 py-4"
       :class="{ 'max-h-[450px]': needShowMore && !showMore }"
     >
       <div v-if="tool.types?.length" class="flex gap-2 flex-wrap mb-2">
@@ -63,7 +62,7 @@
       <div
         v-if="tool.description"
         ref="descriptionContainerRef"
-        class="flex-grow h-full"
+        class="min-h-0"
         :class="{ 'overflow-hidden': needShowMore && !showMore }"
       >
         <div
