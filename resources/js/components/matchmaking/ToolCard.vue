@@ -56,6 +56,14 @@
         {{ tool.location }}
       </div>
 
+      <div
+        v-if="tool.description"
+        class="text-slate-500 text-[16px] leading-[22px] mb-2 overflow-hidden"
+        style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5"
+      >
+        {{ tool.description }}
+      </div>
+
       <div class="mt-auto flex-shrink-0 h-[56px]">
         <a
           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
