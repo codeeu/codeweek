@@ -476,8 +476,8 @@ export default {
                 ...result,
                 name: `${item.first_name || ''} ${item.last_name || ''}`.trim(),
                 location: item.location,
-                // Keep cards concise for individuals: show only name + location.
-                description: '',
+                // Keep card introduction aligned with profile Introduction source.
+                description: item.why_volunteering || item.description || '',
               };
             }
 
