@@ -15,6 +15,7 @@
               {{ data.name }}
             </h2>
             <p
+              v-if="isOrganisation"
               class="text-[#20262C] font-normal text-2xl p-0 mb-10"
               v-html="data.description"
             />
@@ -110,6 +111,7 @@
             </p>
             <div class="border-l-[4px] border-[#F95C22] pl-4">
               <p
+                v-if="isOrganisation"
                 class="p-0 text-slate-500 text-xl font-normal"
                 v-html="data.description"
               />
@@ -409,7 +411,8 @@ export default {
 
       return {
         name: `${person.first_name || ''} ${person.last_name}`.trim(),
-        description: person.description,
+        // Reviewer/client request: do not show the opt-in text section for individuals.
+        description: '',
         location: person.location,
         email: person.email,
         get_email_from: person.get_email_from,
