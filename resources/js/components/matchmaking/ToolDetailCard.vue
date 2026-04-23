@@ -326,12 +326,6 @@ export default {
       if (org.type !== 'organisation') return null;
 
       const abouts = [];
-      if (org.organisation_mission) {
-        abouts.push({
-          title: 'Introduction',
-          list: [org.organisation_mission],
-        });
-      }
       if (org.support_activities?.length) {
         abouts.push({
           title:
@@ -367,7 +361,9 @@ export default {
 
       return {
         name: org.organisation_name,
-        description: org.description,
+        // Column L in the organisation Excel maps to organisation_mission.
+        // Show it in the lead section under the organisation name.
+        description: org.organisation_mission || org.description,
         location:
           props.locations.find(({ iso }) => iso === org.country)?.name || '',
         email: org.email,
