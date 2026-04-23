@@ -476,7 +476,8 @@ export default {
                 ...result,
                 name: `${item.first_name || ''} ${item.last_name || ''}`.trim(),
                 location: item.location,
-                description: item.description,
+                // Keep cards concise for individuals: show only name + location.
+                description: '',
               };
             }
 
