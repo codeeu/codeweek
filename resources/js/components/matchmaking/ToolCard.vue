@@ -71,7 +71,7 @@
           class="relative flex-grow text-slate-500 text-[16px] leading-[22px] mb-2 overflow-hidden"
           style="height: auto"
         >
-          <div v-html="tool.description" />
+          <div v-html="formatMultiline(tool.description)" />
 
           <div
             v-if="needShowMore"
@@ -121,6 +121,19 @@ export default {
     };
   },
   methods: {
+    escapeHtml(value = '') {
+      return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    },
+    formatMultiline(value) {
+      if (!value) return '';
+      const normalized = String(value).replace(/\r\n?/g, '\n');
+      return this.escapeHtml(normalized).replace(/\n/g, '<br>');
+    },
     computeDescriptionHeight() {
       const containerEl = this.$refs.descriptionContainerRef;
       const descriptionEl = this.$refs.descriptionRef;
