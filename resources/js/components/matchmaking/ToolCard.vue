@@ -1,7 +1,7 @@
 <template>
-  <div class="flex h-full flex-col bg-white rounded-lg overflow-hidden">
+  <div class="flex h-[430px] flex-col bg-white rounded-lg overflow-hidden">
     <div
-      class="flex-shrink-0 flex justify-center items-center w-full h-[178px] bg-[#15509e]"
+      class="flex-shrink-0 flex justify-center items-center w-full h-[178px] bg-white"
     >
       <img
         :src="tool.avatar || '/images/matchmaking-tool/tool-placeholder.png'"
@@ -12,10 +12,7 @@
       />
     </div>
 
-    <div
-      class="flex-grow flex flex-col gap-2 px-5 py-4"
-      :class="{ 'max-h-[450px]': needShowMore && !showMore }"
-    >
+    <div class="flex-grow flex flex-col gap-2 px-5 py-4">
       <div v-if="tool.types?.length" class="flex gap-2 flex-wrap mb-2">
         <template v-for="{ title, highlight } in tool.types">
           <span
@@ -59,32 +56,7 @@
         {{ tool.location }}
       </div>
 
-      <div
-        v-if="tool.description"
-        ref="descriptionContainerRef"
-        class="min-h-0"
-        :class="{ 'overflow-hidden': needShowMore && !showMore }"
-      >
-        <div
-          ref="descriptionRef"
-          class="relative flex-grow text-slate-500 text-[16px] leading-[22px] mb-2 overflow-hidden"
-          style="height: auto"
-        >
-          <div v-html="formatMultiline(tool.description)" />
-
-          <div
-            v-if="needShowMore"
-            class="flex justify-end bottom-0 right-0 bg-white pl-0.5 text-dark-blue"
-            :class="{ absolute: !showMore, 'w-full': showMore }"
-          >
-            <button @click="onToggleShowMore">
-              {{ showMore ? 'Show less' : '... Show more' }}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-shrink-0 h-[56px]">
+      <div class="mt-auto flex-shrink-0 h-[56px]">
         <a
           class="flex justify-center items-center gap-2 text-[#1C4DA1] border-solid border-2 border-[#1C4DA1] rounded-full py-3 px-8 font-semibold text-lg transition-all duration-300 hover:bg-[#E8EDF6] group"
           :href="`/matchmaking-tool/${tool.slug}`"
@@ -111,63 +83,6 @@
 export default {
   props: {
     tool: Object,
-  },
-  data() {
-    return {
-      descriptionHeight: 'auto',
-      needShowMore: true,
-      showMore: false,
-    };
-  },
-  methods: {
-    escapeHtml(value = '') {
-      return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-    },
-    formatMultiline(value) {
-      if (!value) return '';
-      const normalized = String(value).replace(/\r\n?/g, '\n');
-      return this.escapeHtml(normalized).replace(/\n/g, '<br>');
-    },
-    computeDescriptionHeight() {
-      const containerEl = this.$refs.descriptionContainerRef;
-      const descriptionEl = this.$refs.descriptionRef;
-
-      const maxHeight = containerEl.clientHeight;
-      const rows = Math.floor(maxHeight / 22);
-      descriptionEl.style.height = 'auto';
-      this.descriptionHeight = 'auto';
-
-      this.needShowMore = descriptionEl.offsetHeight > maxHeight;
-      if (descriptionEl.offsetHeight > maxHeight) {
-        descriptionEl.style.height = `${rows * 22}px`;
-        this.descriptionHeight = `${rows * 22}px`;
-      } else {
-        this.showMore = false;
-      }
-    },
-    onToggleShowMore() {
-      const descriptionEl = this.$refs.descriptionRef;
-
-      this.showMore = !this.showMore;
-      if (!this.showMore) {
-        descriptionEl.style.height = this.descriptionHeight;
-      } else {
-        descriptionEl.style.height = 'auto';
-      }
-    },
-  },
-  mounted: function () {
-    if (this.tool.description) {
-      this.computeDescriptionHeight();
-    } else {
-      this.needShowMore = false;
-      this.showMore = false;
-    }
   },
 };
 </script>
