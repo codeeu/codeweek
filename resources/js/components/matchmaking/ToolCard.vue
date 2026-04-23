@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-[430px] flex-col bg-white rounded-lg overflow-hidden">
+  <div class="flex h-full min-h-[430px] flex-col bg-white rounded-lg overflow-hidden">
     <div
       class="flex-shrink-0 flex justify-center items-center w-full h-[178px] bg-white"
     >
@@ -58,10 +58,27 @@
 
       <div
         v-if="tool.description"
-        class="text-slate-500 text-[16px] leading-[22px] mb-2 overflow-hidden"
-        style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5"
+        ref="descriptionContainerRef"
+        class="flex-grow min-h-0"
+        :class="{ 'overflow-hidden': needShowMore && !showMore }"
       >
-        {{ tool.description }}
+        <div
+          ref="descriptionRef"
+          class="relative flex-grow text-slate-500 text-[16px] leading-[22px] mb-2 overflow-hidden"
+          style="height: auto"
+        >
+          <div v-html="formatMultiline(tool.description)" />
+
+          <div
+            v-if="needShowMore"
+            class="flex justify-end bottom-0 right-0 bg-white pl-0.5 text-dark-blue"
+            :class="{ absolute: !showMore, 'w-full': showMore }"
+          >
+            <button @click="onToggleShowMore">
+              {{ showMore ? 'Show less' : '... Show more' }}
+            </button>
+          </div>
+        </div>
       </div>
 
       <div class="mt-auto flex-shrink-0 h-[56px]">
@@ -91,6 +108,69 @@
 export default {
   props: {
     tool: Object,
+  },
+  data() {
+    return {
+      descriptionHeight: 'auto',
+      needShowMore: true,
+      showMore: false,
+    };
+  },
+  methods: {
+    escapeHtml(value = '') {
+      return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    },
+    formatMultiline(value) {
+      if (!value) return '';
+      const normalized = String(value).replace(/\r\n?/g, '\n');
+      return this.escapeHtml(normalized).replace(/\n/g, '<br>');
+    },
+    computeDescriptionHeight() {
+      const containerEl = this.$refs.descriptionContainerRef;
+      const descriptionEl = this.$refs.descriptionRef;
+      if (!containerEl || !descriptionEl) {
+        return;
+      }
+
+      const maxHeight = containerEl.clientHeight;
+      const rows = Math.floor(maxHeight / 22);
+      descriptionEl.style.height = 'auto';
+      this.descriptionHeight = 'auto';
+
+      this.needShowMore = descriptionEl.offsetHeight > maxHeight;
+      if (descriptionEl.offsetHeight > maxHeight) {
+        descriptionEl.style.height = `${rows * 22}px`;
+        this.descriptionHeight = `${rows * 22}px`;
+      } else {
+        this.showMore = false;
+      }
+    },
+    onToggleShowMore() {
+      const descriptionEl = this.$refs.descriptionRef;
+      if (!descriptionEl) {
+        return;
+      }
+
+      this.showMore = !this.showMore;
+      if (!this.showMore) {
+        descriptionEl.style.height = this.descriptionHeight;
+      } else {
+        descriptionEl.style.height = 'auto';
+      }
+    },
+  },
+  mounted: function () {
+    if (this.tool.description) {
+      this.computeDescriptionHeight();
+    } else {
+      this.needShowMore = false;
+      this.showMore = false;
+    }
   },
 };
 </script>
