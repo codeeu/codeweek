@@ -35,8 +35,18 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         if (empty($value)) {
             return [];
         }
-        // Handle semicolon/comma/pipe separated values (common in CSV exports)
-        $parts = preg_split('/[;,|]/', (string) $value);
+        $rawValue = (string) $value;
+
+        // Prefer explicit multi-select delimiters first.
+        // Falling back to comma splitting can break natural-language sentences.
+        if (str_contains($rawValue, ';')) {
+            $parts = explode(';', $rawValue);
+        } elseif (str_contains($rawValue, '|')) {
+            $parts = explode('|', $rawValue);
+        } else {
+            $parts = explode(',', $rawValue);
+        }
+
         return array_filter(array_map(function ($item) {
             $item = trim((string) $item);
             $item = trim($item, " \t\n\r\0\x0B.");
@@ -417,6 +427,8 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
         $whyVolunteeringValue = $this->getRowValue($row, [
             'why_are_you_volunteering',
             'Why are you volunteering?',
+            'why_are_you_volunteering_tell_us_more_about_yourself_and_your_expertise',
+            'Why are you volunteering? Tell us more about yourself and your expertise.',
             'why_volunteering',
             'Why Volunteering',
         ]);
