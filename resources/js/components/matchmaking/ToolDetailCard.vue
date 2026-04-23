@@ -17,7 +17,7 @@
             <p
               v-if="isOrganisation"
               class="text-[#20262C] font-normal text-2xl p-0 mb-10"
-              v-html="data.description"
+              v-html="formatMultiline(data.description)"
             />
 
             <h3
@@ -72,7 +72,7 @@
                     <p
                       v-for="detail in item.list"
                       class="p-0 pb-4 w-full"
-                      v-html="detail"
+                      v-html="formatMultiline(detail)"
                     />
                   </div>
                 </div>
@@ -113,7 +113,7 @@
               <p
                 v-if="isOrganisation"
                 class="p-0 text-slate-500 text-xl font-normal"
-                v-html="data.description"
+                v-html="formatMultiline(data.description)"
               />
             </div>
           </div>
@@ -305,6 +305,20 @@ export default {
       } catch {
         return [];
       }
+    };
+
+    const escapeHtml = (value = '') =>
+      String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
+    const formatMultiline = (value) => {
+      if (!value) return '';
+      const normalized = String(value).replace(/\r\n?/g, '\n');
+      return escapeHtml(normalized).replace(/\n/g, '<br>');
     };
 
     const orgData = computed(() => {
@@ -510,6 +524,7 @@ export default {
       showAboutIndexes,
       handleToggleAbout,
       setDescriptionRef,
+      formatMultiline,
     };
   },
 };
