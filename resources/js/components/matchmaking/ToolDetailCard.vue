@@ -109,9 +109,9 @@
             >
               {{ data.short_intro }}
             </p>
-            <div class="border-l-[4px] border-[#F95C22] pl-4">
+            <div v-if="!isOrganisation" class="border-l-[4px] border-[#F95C22] pl-4">
               <p
-                v-if="isOrganisation"
+                v-if="data.description"
                 class="p-0 text-slate-500 text-xl font-normal"
                 v-html="formatMultiline(data.description)"
               />
