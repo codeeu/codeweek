@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-[430px] flex-col bg-white rounded-lg overflow-hidden">
+  <div class="flex h-full min-h-[430px] flex-col bg-white rounded-lg overflow-hidden">
     <div
       class="flex-shrink-0 flex justify-center items-center w-full h-[178px] bg-white"
     >
@@ -58,10 +58,10 @@
 
       <div
         v-if="tool.description"
-        class="flex-grow min-h-0 overflow-hidden"
+        class="flex-grow"
       >
         <div
-          class="h-full text-slate-500 text-[16px] leading-[22px] mb-2"
+          class="text-slate-500 text-[16px] leading-[22px] mb-2"
         >
           <div v-html="formatMultiline(showMore ? tool.description : getCollapsedText(tool.description))" />
 
