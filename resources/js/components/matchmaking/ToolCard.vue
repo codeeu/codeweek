@@ -12,7 +12,7 @@
       />
     </div>
 
-    <div class="flex-grow flex flex-col gap-2 px-5 py-4">
+    <div class="flex-grow min-h-0 flex flex-col gap-2 px-5 py-4">
       <div v-if="tool.types?.length" class="flex gap-2 flex-wrap mb-2">
         <template v-for="{ title, highlight } in tool.types">
           <span
@@ -58,17 +58,16 @@
 
       <div
         v-if="tool.description"
-        class="flex-grow min-h-0"
+        class="flex-grow min-h-0 overflow-hidden"
       >
         <div
-          class="relative flex-grow text-slate-500 text-[16px] leading-[22px] mb-2"
+          class="h-full text-slate-500 text-[16px] leading-[22px] mb-2"
         >
           <div v-html="formatMultiline(showMore ? tool.description : getCollapsedText(tool.description))" />
 
           <div
             v-if="isCollapsible(tool.description)"
-            class="flex justify-end bottom-0 right-0 bg-white pl-0.5 text-dark-blue"
-            :class="{ absolute: !showMore }"
+            class="flex justify-end bg-white pl-0.5 text-dark-blue"
           >
             <button @click="onToggleShowMore">
               {{ showMore ? 'Show less' : '... Show more' }}
