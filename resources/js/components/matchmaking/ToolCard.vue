@@ -61,6 +61,7 @@
       </div>
 
       <div
+        v-if="tool.description"
         ref="descriptionContainerRef"
         class="flex-grow h-full"
         :class="{ 'overflow-hidden': needShowMore && !showMore }"
@@ -149,7 +150,12 @@ export default {
     },
   },
   mounted: function () {
-    this.computeDescriptionHeight();
+    if (this.tool.description) {
+      this.computeDescriptionHeight();
+    } else {
+      this.needShowMore = false;
+      this.showMore = false;
+    }
   },
 };
 </script>
