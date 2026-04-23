@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col bg-white rounded-lg overflow-hidden">
     <div
-      class="flex-shrink-0 flex justify-center items-center w-full"
-      :class="[tool.avatar_dark && 'bg-stone-800']"
+      class="flex-shrink-0 flex justify-center items-center w-full h-[178px]"
+      :class="[tool.avatar_dark ? 'bg-black' : 'bg-white']"
     >
       <img
         :src="tool.avatar || '/images/matchmaking-tool/tool-placeholder.png'"
         :class="[
-          'w-full aspect-[2]',
+          'w-full h-full',
           tool.avatar ? 'object-contain' : 'object-cover',
         ]"
       />
