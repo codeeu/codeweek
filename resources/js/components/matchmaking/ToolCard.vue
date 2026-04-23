@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-full min-h-[430px] flex-col bg-white rounded-lg overflow-hidden">
+  <div class="flex h-[430px] flex-col bg-white rounded-lg overflow-hidden">
     <div
       class="flex-shrink-0 flex justify-center items-center w-full h-[178px] bg-white"
     >
@@ -58,21 +58,17 @@
 
       <div
         v-if="tool.description"
-        ref="descriptionContainerRef"
         class="flex-grow min-h-0"
-        :class="{ 'overflow-hidden': needShowMore && !showMore }"
       >
         <div
-          ref="descriptionRef"
-          class="relative flex-grow text-slate-500 text-[16px] leading-[22px] mb-2 overflow-hidden"
-          style="height: auto"
+          class="relative flex-grow text-slate-500 text-[16px] leading-[22px] mb-2"
         >
-          <div v-html="formatMultiline(tool.description)" />
+          <div v-html="formatMultiline(showMore ? tool.description : getCollapsedText(tool.description))" />
 
           <div
-            v-if="needShowMore"
+            v-if="isCollapsible(tool.description)"
             class="flex justify-end bottom-0 right-0 bg-white pl-0.5 text-dark-blue"
-            :class="{ absolute: !showMore, 'w-full': showMore }"
+            :class="{ absolute: !showMore }"
           >
             <button @click="onToggleShowMore">
               {{ showMore ? 'Show less' : '... Show more' }}
@@ -111,9 +107,8 @@ export default {
   },
   data() {
     return {
-      descriptionHeight: 'auto',
-      needShowMore: true,
       showMore: false,
+      previewMaxChars: 190,
     };
   },
   methods: {
@@ -130,46 +125,20 @@ export default {
       const normalized = String(value).replace(/\r\n?/g, '\n');
       return this.escapeHtml(normalized).replace(/\n/g, '<br>');
     },
-    computeDescriptionHeight() {
-      const containerEl = this.$refs.descriptionContainerRef;
-      const descriptionEl = this.$refs.descriptionRef;
-      if (!containerEl || !descriptionEl) {
-        return;
+    getCollapsedText(value = '') {
+      const normalized = String(value).replace(/\s+/g, ' ').trim();
+      if (normalized.length <= this.previewMaxChars) {
+        return normalized;
       }
 
-      const maxHeight = containerEl.clientHeight;
-      const rows = Math.floor(maxHeight / 22);
-      descriptionEl.style.height = 'auto';
-      this.descriptionHeight = 'auto';
-
-      this.needShowMore = descriptionEl.offsetHeight > maxHeight;
-      if (descriptionEl.offsetHeight > maxHeight) {
-        descriptionEl.style.height = `${rows * 22}px`;
-        this.descriptionHeight = `${rows * 22}px`;
-      } else {
-        this.showMore = false;
-      }
+      return `${normalized.slice(0, this.previewMaxChars).trimEnd()}...`;
+    },
+    isCollapsible(value = '') {
+      const normalized = String(value).replace(/\s+/g, ' ').trim();
+      return normalized.length > this.previewMaxChars;
     },
     onToggleShowMore() {
-      const descriptionEl = this.$refs.descriptionRef;
-      if (!descriptionEl) {
-        return;
-      }
-
       this.showMore = !this.showMore;
-      if (!this.showMore) {
-        descriptionEl.style.height = this.descriptionHeight;
-      } else {
-        descriptionEl.style.height = 'auto';
-      }
-    },
-  },
-  mounted: function () {
-    if (this.tool.description) {
-      this.computeDescriptionHeight();
-    } else {
-      this.needShowMore = false;
-      this.showMore = false;
     }
   },
 };
