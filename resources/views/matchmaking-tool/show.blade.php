@@ -14,7 +14,7 @@
 @endphp
 
 @section('title', $profileName)
-@section('description', implode(', ', $profile->support_activities))
+@section('description', implode(', ', (array) ($profile->support_activities ?? [])))
 
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
