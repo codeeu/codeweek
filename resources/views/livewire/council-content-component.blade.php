@@ -15,7 +15,7 @@
 
                     <img
                         src="{{ $member->image }}"
-                        alt="Portrait of Stamatis Papadakis, EU Code Week Council President"
+                        alt="Portrait of {{ $member->name }}"
                         class="object-cover h-full max-h-[396px] w-full mt-6 md:hidden block rounded-[12px]"
                     />
 
@@ -59,7 +59,7 @@
                 <aside class="flex justify-center items-center max-md:max-w-full" aria-label="Profile image">
                     <img
                         src="{{ $member->image }}"
-                        alt="Portrait of Stamatis Papadakis, EU Code Week Council President"
+                        alt="Portrait of {{ $member->name }}"
                         class="object-contain md:object-cover w-full max-w-[643px] h-full max-h-[646px] max-md:hidden block rounded-[12px]"
                     />
                 </aside>
