@@ -11,10 +11,18 @@
     $pageDescription = $trainingResource->meta_description ?: $fallbackDescription;
 
     $introClass = "text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-6 [&_a]:text-dark-blue [&_a]:hover:underline";
-    $contentClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-6 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_ul]:pl-8 [&_ul]:m-0 [&_ul]:mb-6 [&_ul]:list-disc [&_li]:p-0 [&_li]:text-lg [&_li]:font-normal [&_li]:leading-7 [&_li]:text-default [&_a]:text-dark-blue [&_a]:hover:underline";
+    $contentClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-6 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_h3]:text-dark-blue [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-medium [&_h3]:font-['Montserrat'] [&_h3]:mb-4 [&_ul]:pl-8 [&_ul]:m-0 [&_ul]:mb-6 [&_ul]:list-disc [&_ol]:pl-8 [&_ol]:m-0 [&_ol]:mb-6 [&_ol]:list-decimal [&_li]:p-0 [&_li]:text-lg [&_li]:font-normal [&_li]:leading-7 [&_li]:text-default [&_a]:text-dark-blue [&_a]:hover:underline [&_img]:w-full [&_img]:h-auto [&_img]:my-8";
     $pdfClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-4 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_ul]:m-0 [&_ul]:mb-6 [&_ul]:list-none [&_ol]:m-0 [&_ol]:mb-6 [&_ol]:list-none [&_li]:p-0 [&_li]:mb-2 [&_li]:font-normal [&_li]:leading-7 [&_li]:text-default [&_a]:text-lg [&_a]:text-dark-blue [&_a]:no-underline [&_a:hover]:underline";
     $contactsClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-8 [&_p]:p-0 [&_p]:mb-4 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_a]:text-dark-blue [&_a]:hover:underline";
     $registerClass = "text-[#333E48] font-normal text-base md:text-lg [&_p]:p-0 [&_p]:mb-4 [&_p:last-child]:mb-0 [&_a]:font-medium [&_a]:text-dark-blue [&_a]:hover:underline";
+    $aboutBoxClass = "text-slate-500 text-[16px] leading-[22px] tablet:text-xl tablet:leading-7 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-3 [&_h3]:text-dark-blue [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-medium [&_h3]:font-['Montserrat'] [&_h3]:mb-3 [&_p]:p-0 [&_p]:mb-3 [&_p:last-child]:mb-0 [&_ul]:pl-8 [&_ul]:m-0 [&_ul]:mb-2 [&_ul]:list-disc [&_li]:mb-2 [&_li:last-child]:mb-0 [&_a]:font-semibold [&_a]:underline [&_a]:text-dark-blue";
+    $anchorOffset = max(0, (int) ($trainingResource->anchor_offset ?? 0));
+
+    $isExternalLink = static function (?string $url): bool {
+        $url = trim((string) $url);
+
+        return \Illuminate\Support\Str::startsWith($url, ['http://', 'https://', '//']);
+    };
 @endphp
 
 @section('title', $pageTitle)
@@ -33,6 +41,10 @@
         @include('codingathome.banner', [
             'author' => $trainingResource->hero_author,
             'title' => $displayTitle,
+            'primaryButtonText' => $trainingResource->hero_button_text,
+            'primaryButtonUrl' => $trainingResource->hero_button_url,
+            'secondaryButtonText' => $trainingResource->hero_secondary_button_text,
+            'secondaryButtonUrl' => $trainingResource->hero_secondary_button_url,
         ])
 
         <section class="relative z-10">
@@ -87,24 +99,26 @@
                     </div>
                 @endif
 
-                @if(!empty($trainingResource->button_text) && !empty($trainingResource->button_url))
-                    <div>
-                        <a
-                            class="max-xl:!hidden inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
-                            href="{{ $trainingResource->button_url }}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {{ $trainingResource->button_text }}
-                        </a>
+                @if(!empty($trainingResource->contacts_section))
+                    <div class="{{ $contactsClass }}">
+                        {!! $trainingResource->contacts_section !!}
+                    </div>
+                @endif
 
+                @if(!empty($trainingResource->register_box_section))
+                    <div class="p-6 mb-8 bg-blue-50 border-l-4 border-dark-blue">
+                        <div class="{{ $registerClass }}">
+                            {!! $trainingResource->register_box_section !!}
+                        </div>
                         @if(!empty($trainingResource->third_button_text) && !empty($trainingResource->third_button_url))
-                            <div class="mt-4">
+                            <div class="mt-5">
                                 <a
-                                    class="max-xl:!hidden inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
+                                    class="inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
                                     href="{{ $trainingResource->third_button_url }}"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    @if($isExternalLink($trainingResource->third_button_url))
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    @endif
                                 >
                                     {{ $trainingResource->third_button_text }}
                                 </a>
@@ -113,30 +127,46 @@
                     </div>
                 @endif
 
-                @if(!empty($trainingResource->contacts_section))
-                    <div class="{{ $contactsClass }}">
-                        {!! $trainingResource->contacts_section !!}
+                @if(!empty($trainingResource->about_box_section))
+                    <div class="w-full bg-light-blue rounded-lg p-6 flex flex-col md:flex-row text-['Blinker'] gap-2 mb-8">
+                        <img class="min-w-8 min-h-8" src="/images/icon_info.svg" alt="Info" />
+                        <div class="{{ $aboutBoxClass }}">
+                            {!! $trainingResource->about_box_section !!}
+                        </div>
                     </div>
                 @endif
 
-                @if(!empty($trainingResource->secondary_button_text) && !empty($trainingResource->secondary_button_url))
-                    <a
-                        class="max-xl:!hidden bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 inline-block"
-                        href="{{ $trainingResource->secondary_button_url }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span class="text-base font-semibold leading-7 text-black normal-case">
-                            {{ $trainingResource->secondary_button_text }}
-                        </span>
-                    </a>
-                    <div class="pb-8"></div>
-                @endif
-
-                @if(!empty($trainingResource->register_box_section))
-                    <div class="p-6 mb-8 bg-blue-50 border-l-4 border-dark-blue">
-                        <div class="{{ $registerClass }}">
-                            {!! $trainingResource->register_box_section !!}
+                @if(
+                    (!empty($trainingResource->button_text) && !empty($trainingResource->button_url))
+                    || (!empty($trainingResource->secondary_button_text) && !empty($trainingResource->secondary_button_url))
+                )
+                    <div class="mt-12 mb-4">
+                        <h2 class="text-dark-blue text-2xl md:text-3xl leading-[44px] font-medium font-['Montserrat'] mb-5">Toolkit access</h2>
+                        <div class="flex flex-wrap gap-4 items-center">
+                            @if(!empty($trainingResource->button_text) && !empty($trainingResource->button_url))
+                                <a
+                                    class="inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
+                                    href="{{ $trainingResource->button_url }}"
+                                    @if($isExternalLink($trainingResource->button_url))
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    @endif
+                                >
+                                    {{ $trainingResource->button_text }}
+                                </a>
+                            @endif
+                            @if(!empty($trainingResource->secondary_button_text) && !empty($trainingResource->secondary_button_url))
+                                <a
+                                    class="inline-block rounded-full py-2.5 px-6 border border-[#1C4DA1] text-[#1C4DA1] font-['Blinker'] text-base font-semibold leading-7 normal-case hover:bg-[#1C4DA1] hover:text-white duration-300"
+                                    href="{{ $trainingResource->secondary_button_url }}"
+                                    @if($isExternalLink($trainingResource->secondary_button_url))
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    @endif
+                                >
+                                    {{ $trainingResource->secondary_button_text }}
+                                </a>
+                            @endif
                         </div>
                     </div>
                 @endif
@@ -146,3 +176,48 @@
         @include('include.licence')
     </section>
 @endsection
+
+@if($anchorOffset > 0)
+    @push('scripts')
+        <script>
+            (function () {
+                const offset = {{ $anchorOffset }};
+
+                function scrollToHash(hash, smooth) {
+                    if (!hash || hash.length < 2) return;
+                    const id = decodeURIComponent(hash.slice(1));
+                    const target = document.getElementById(id);
+                    if (!target) return;
+
+                    const y = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({
+                        top: Math.max(0, y),
+                        behavior: smooth ? 'smooth' : 'auto',
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    const link = event.target.closest('a[href^="#"]');
+                    if (!link) return;
+
+                    const hash = link.getAttribute('href');
+                    if (!hash || hash === '#') return;
+
+                    event.preventDefault();
+                    history.pushState(null, '', hash);
+                    scrollToHash(hash, true);
+                });
+
+                window.addEventListener('hashchange', function () {
+                    scrollToHash(window.location.hash, false);
+                });
+
+                if (window.location.hash) {
+                    window.requestAnimationFrame(function () {
+                        scrollToHash(window.location.hash, false);
+                    });
+                }
+            })();
+        </script>
+    @endpush
+@endif

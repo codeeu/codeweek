@@ -82,6 +82,22 @@ class TrainingResource extends Resource
                 ->nullable()
                 ->help('Optional pill text in the header banner'),
 
+            Text::make('Hero button text', 'hero_button_text')
+                ->nullable()
+                ->help('Optional primary CTA shown in the hero section.'),
+
+            Text::make('Hero button URL', 'hero_button_url')
+                ->nullable()
+                ->help('Supports full URLs, root-relative paths, or #anchors.'),
+
+            Text::make('Hero secondary button text', 'hero_secondary_button_text')
+                ->nullable()
+                ->help('Optional outline CTA shown beside the hero primary button.'),
+
+            Text::make('Hero secondary button URL', 'hero_secondary_button_url')
+                ->nullable()
+                ->help('Supports full URLs, root-relative paths, or #anchors.'),
+
             Trix::make('Intro', 'intro')
                 ->nullable()
                 ->help('Optional intro block shown above the main content'),
@@ -125,6 +141,16 @@ class TrainingResource extends Resource
             Trix::make('Register box section', 'register_box_section')
                 ->nullable()
                 ->help('Optional text shown in a highlighted callout box (register on map, hashtags, etc).'),
+
+            Trix::make('About box section', 'about_box_section')
+                ->nullable()
+                ->help('Optional blue info card shown below register box (supports heading, text, lists).'),
+
+            Number::make('Anchor offset', 'anchor_offset')
+                ->min(0)
+                ->step(1)
+                ->nullable()
+                ->help('Optional scroll offset in pixels for in-page anchor links (useful with sticky headers).'),
 
             Text::make('Button text', 'button_text')->nullable(),
 
