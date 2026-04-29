@@ -8,6 +8,7 @@ class Partner extends Model
 {
     protected $fillable = [
         'name',
+        'title',
         'logo_url',
         'categories',
         'description',
@@ -41,6 +42,7 @@ class Partner extends Model
         $o = new \stdClass;
         $o->id = $this->id;
         $o->name = $this->name;
+        $o->title = $this->title;
         $o->logo_url = $this->logo_url;
         $o->categories = $this->categories ?? [];
         $o->description = $this->description;
