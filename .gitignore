@@ -30,3 +30,4 @@ vue-i18n-locales.generated.js
 vite.config.js
 .DS_Store
 resources/excel/example.xlsx
+resources/ai-agent-plans/*
