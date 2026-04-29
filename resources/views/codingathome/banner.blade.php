@@ -1,5 +1,14 @@
 @php
   $author = $author ?? 'By EUCodeWeek';
+  $primaryButtonText = $primaryButtonText ?? null;
+  $primaryButtonUrl = $primaryButtonUrl ?? null;
+  $secondaryButtonText = $secondaryButtonText ?? null;
+  $secondaryButtonUrl = $secondaryButtonUrl ?? null;
+  $isExternalLink = static function (?string $url): bool {
+      $url = trim((string) $url);
+
+      return \Illuminate\Support\Str::startsWith($url, ['http://', 'https://', '//']);
+  };
 @endphp
 
 <section class="relative flex overflow-hidden">
@@ -10,6 +19,30 @@
                     <h2 class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[532px]">
                         {{$title}}
                     </h2>
+                    @if(!empty($primaryButtonText) && !empty($primaryButtonUrl))
+                        <div class="mt-6 flex flex-wrap items-center gap-4">
+                            <a
+                                class="inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
+                                href="{{ $primaryButtonUrl }}"
+                                @if($isExternalLink($primaryButtonUrl))
+                                    target="_blank" rel="noopener noreferrer"
+                                @endif
+                            >
+                                {{ $primaryButtonText }}
+                            </a>
+                            @if(!empty($secondaryButtonText) && !empty($secondaryButtonUrl))
+                                <a
+                                    class="inline-block rounded-full py-2.5 px-6 border border-[#1C4DA1] text-[#1C4DA1] font-['Blinker'] text-base font-semibold leading-7 normal-case hover:bg-[#1C4DA1] hover:text-white duration-300"
+                                    href="{{ $secondaryButtonUrl }}"
+                                    @if($isExternalLink($secondaryButtonUrl))
+                                        target="_blank" rel="noopener noreferrer"
+                                    @endif
+                                >
+                                    {{ $secondaryButtonText }}
+                                </a>
+                            @endif
+                        </div>
+                    @endif
                     @if ($author)
                     <div class="absolute top-0 -translate-y-1/2 bg-yellow py-3 md:py-4 px-8 md:px-10 rounded-full text-secondary font-semibold text-[16px] leading-[22px] max-w-[80%]">
                         {{$author}}

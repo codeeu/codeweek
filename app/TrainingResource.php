@@ -17,6 +17,10 @@ class TrainingResource extends Model
         'card_image',
         'page_title',
         'hero_author',
+        'hero_button_text',
+        'hero_button_url',
+        'hero_secondary_button_text',
+        'hero_secondary_button_url',
         'intro',
         'highlight_box',
         'video_url',
@@ -28,6 +32,8 @@ class TrainingResource extends Model
         'pdf_links_section',
         'contacts_section',
         'register_box_section',
+        'about_box_section',
+        'anchor_offset',
         'button_text',
         'button_url',
         'secondary_button_text',
@@ -43,6 +49,7 @@ class TrainingResource extends Model
     protected $casts = [
         'active' => 'boolean',
         'position' => 'integer',
+        'anchor_offset' => 'integer',
     ];
 
     public function scopeActive($query)
