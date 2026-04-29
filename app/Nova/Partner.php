@@ -45,6 +45,10 @@ class Partner extends Resource
                 ->nullable()
                 ->help('Display name. Optional for sponsor logos (e.g. EU Code Week Supporters).'),
 
+            Text::make('Title', 'title')
+                ->nullable()
+                ->help('Used in the Council Presidency tab (e.g. "Council President").'),
+
             Text::make('Logo URL', 'logo_url')
                 ->rules('required')
                 ->help('Path from site root, e.g. images/partners/logo.png (no leading slash), or full URL.'),
@@ -53,8 +57,9 @@ class Partner extends Resource
                 ->options([
                     'Partners' => 'Partners',
                     'Sponsor' => 'EU Code Week Supporters (Sponsor)',
+                    'Council Presidency' => 'Council Presidency',
                 ])
-                ->help('Partners = "Partners" tab; Sponsor = "EU Code Week Supporters" tab.')
+                ->help('Partners = "Partners" tab; Sponsor = "EU Code Week Supporters" tab; Council Presidency = "Council Presidency" tab.')
                 ->resolveUsing(function ($value) {
                     $arr = is_array($value) ? $value : (array) json_decode($value ?? '[]', true);
                     return $arr[0] ?? null;
@@ -74,7 +79,7 @@ class Partner extends Resource
 
             Text::make('Main image URL', 'main_img_url')
                 ->nullable()
-                ->help('Larger image path (optional).'),
+                ->help('Larger image path (optional). Used as profile image for Council Presidency.'),
 
             Number::make('Position', 'position')
                 ->min(0)
