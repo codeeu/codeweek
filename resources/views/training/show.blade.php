@@ -23,6 +23,18 @@
 
         return \Illuminate\Support\Str::startsWith($url, ['http://', 'https://', '//']);
     };
+
+    $renderedContent = $trainingResource->content ?? '';
+    $roadmapEmbedUrl = trim((string) ($trainingResource->roadmap_pdf_embed_url ?? ''));
+    if ($roadmapEmbedUrl !== '' && str_contains($renderedContent, '[[embed_roadmap_pdf]]')) {
+        $renderedContent = str_replace(
+            '[[embed_roadmap_pdf]]',
+            view('training.partials.roadmap-pdf-embed', ['url' => $roadmapEmbedUrl])->render(),
+            $renderedContent
+        );
+    } elseif (str_contains($renderedContent, '[[embed_roadmap_pdf]]')) {
+        $renderedContent = str_replace('[[embed_roadmap_pdf]]', '', $renderedContent);
+    }
 @endphp
 
 @section('title', $pageTitle)
@@ -87,9 +99,9 @@
                     />
                 @endif
 
-                @if(!empty($trainingResource->content))
+                @if(!empty($renderedContent))
                     <div class="{{ $contentClass }}">
-                        {!! $trainingResource->content !!}
+                        {!! $renderedContent !!}
                     </div>
                 @endif
 
