@@ -26,14 +26,29 @@
 
     $renderedContent = $trainingResource->content ?? '';
     $roadmapEmbedUrl = trim((string) ($trainingResource->roadmap_pdf_embed_url ?? ''));
-    if ($roadmapEmbedUrl !== '' && str_contains($renderedContent, '[[embed_roadmap_pdf]]')) {
-        $renderedContent = str_replace(
-            '[[embed_roadmap_pdf]]',
-            view('training.partials.roadmap-pdf-embed', ['url' => $roadmapEmbedUrl])->render(),
-            $renderedContent
-        );
-    } elseif (str_contains($renderedContent, '[[embed_roadmap_pdf]]')) {
-        $renderedContent = str_replace('[[embed_roadmap_pdf]]', '', $renderedContent);
+    $roadmapEmbedKind = strtolower(trim((string) ($trainingResource->roadmap_embed_kind ?? 'pdf')));
+    if (! in_array($roadmapEmbedKind, ['pdf', 'svg', 'none'], true)) {
+        $roadmapEmbedKind = 'pdf';
+    }
+    $roadmapSvg = trim((string) ($trainingResource->roadmap_svg ?? ''));
+
+    $roadmapPlaceholders = ['[[embed_roadmap_pdf]]', '[[embed_roadmap]]'];
+    $hasRoadmapPlaceholder = str_contains($renderedContent, '[[embed_roadmap_pdf]]')
+        || str_contains($renderedContent, '[[embed_roadmap]]');
+
+    if ($hasRoadmapPlaceholder) {
+        $roadmapEmbedHtml = '';
+        if ($roadmapEmbedKind === 'pdf' && $roadmapEmbedUrl !== '') {
+            $roadmapEmbedHtml = view('training.partials.roadmap-pdf-embed', ['url' => $roadmapEmbedUrl])->render();
+        } elseif ($roadmapEmbedKind === 'svg' && $roadmapSvg !== '') {
+            $roadmapEmbedHtml = view('training.partials.roadmap-svg-embed', ['svg' => $roadmapSvg])->render();
+        }
+
+        foreach ($roadmapPlaceholders as $token) {
+            if (str_contains($renderedContent, $token)) {
+                $renderedContent = str_replace($token, $roadmapEmbedHtml, $renderedContent);
+            }
+        }
     }
 @endphp
 
