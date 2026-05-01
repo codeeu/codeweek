@@ -17,8 +17,7 @@ class TrainingResourceDiscoverDigitalProgrammeSeeder extends Seeder
             [
                 'card_title' => 'Discover Digital Programme',
                 'card_author' => 'Code4Europe | Deliverable D4.2 | Public toolkit',
-                // Temporary thumbnail until final artwork is provided.
-                'card_image' => '/images/banner_training.svg',
+                'card_image' => 'https://codeweek-resources.s3.eu-west-1.amazonaws.com/+discover-digital-toolkit/DDP_thumbnail.png',
                 'page_title' => 'Discover Digital Programme',
                 'hero_author' => 'Code4Europe | Deliverable D4.2 | Public toolkit',
                 'hero_button_text' => 'Open the complete toolkit',
