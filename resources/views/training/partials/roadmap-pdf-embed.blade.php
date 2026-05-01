@@ -4,9 +4,12 @@
 @php
     // Strip any fragment from stored URL for the "open in new tab" link.
     $tabUrl = \Illuminate\Support\Str::before($url, '#');
-    // Adobe-style PDF open parameters: hide toolbar/side panes in many Chromium viewers.
-    // Safari / iOS often ignore these; users can use "Open in new tab" for the native viewer.
-    $embedSrc = $tabUrl.'#toolbar=0&navpanes=0&scrollbar=1&view=FitH';
+    // Same-origin PDF.js viewer for the allowlisted DDP roadmap (see TrainingRoadmapPdfController).
+    // Other URLs keep the direct PDF iframe with viewer chrome hints.
+    $ddpRoadmapBase = 'https://codeweek-resources.s3.eu-west-1.amazonaws.com/+discover-digital-toolkit/DDP_toolkit_roadmap.pdf';
+    $usePdfjsViewer = strtolower(rtrim($tabUrl, '/')) === strtolower(rtrim($ddpRoadmapBase, '/'));
+    $fragment = '#toolbar=0&navpanes=0&scrollbar=1&view=FitH';
+    $embedSrc = $usePdfjsViewer ? route('training.roadmap_pdf_viewer') : $tabUrl.$fragment;
 @endphp
 <div class="w-full max-w-full my-6 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow-sm">
     <iframe
