@@ -35,6 +35,8 @@ class TrainingResource extends Model
         'about_box_section',
         'anchor_offset',
         'roadmap_pdf_embed_url',
+        'roadmap_embed_kind',
+        'roadmap_svg',
         'button_text',
         'button_url',
         'secondary_button_text',
