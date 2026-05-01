@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Rules\FlexibleUrlOrAnchor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Laravel\Nova\Fields\Boolean;
@@ -156,19 +157,19 @@ class TrainingResource extends Resource
 
             Text::make('Button URL', 'button_url')
                 ->nullable()
-                ->rules('nullable', 'url'),
+                ->rules('nullable', new FlexibleUrlOrAnchor),
 
             Text::make('Secondary button text', 'secondary_button_text')->nullable(),
 
             Text::make('Secondary button URL', 'secondary_button_url')
                 ->nullable()
-                ->rules('nullable', 'url'),
+                ->rules('nullable', new FlexibleUrlOrAnchor),
 
             Text::make('Third button text', 'third_button_text')->nullable(),
 
             Text::make('Third button URL', 'third_button_url')
                 ->nullable()
-                ->rules('nullable', 'url'),
+                ->rules('nullable', new FlexibleUrlOrAnchor),
 
             Text::make('Meta title', 'meta_title')
                 ->nullable()

@@ -38,12 +38,10 @@ HTML,
   <li>Plan evaluation and feedback to measure outcomes.</li>
   <li>Use digital outreach and communication to build awareness and follow-up.</li>
 </ol>
-<div style="margin-top: 2.25rem;">
+<div style="margin-top:2.25rem;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;">
   <h2>Roadmap</h2>
   <p>Use this roadmap if you do not have time to read the full deliverable. The one-pagers mirror the toolkit flow and provide a practical checklist for implementation.</p>
-  <a href="https://codeweek-resources.s3.eu-west-1.amazonaws.com/+discover-digital-toolkit/DDP_toolkit_roadmap.pdf" target="_blank" rel="noopener noreferrer">
-    <img src="https://codeweek-resources.s3.eu-west-1.amazonaws.com/+discover-digital-toolkit/DDP_toolkit_roadmap.svg" alt="Discover Digital Programme roadmap" />
-  </a>
+  <img src="https://codeweek-resources.s3.eu-west-1.amazonaws.com/+discover-digital-toolkit/DDP_toolkit_roadmap_small.svg" alt="Discover Digital Programme roadmap diagram" style="display:block;max-width:100%;width:auto;height:auto;margin:0 auto;" />
 </div>
 HTML,
                 'body_image' => null,
