@@ -2,11 +2,10 @@
     'url',
 ])
 @php
-    // Strip any fragment from stored URL for the "open in new tab" link.
+    // Strip any fragment from stored URL for the "open in new tab" link and iframe src.
+    // Use the plain PDF URL in the iframe so the browser's native viewer keeps link annotations working.
     $tabUrl = \Illuminate\Support\Str::before($url, '#');
-    // Native PDF in iframe keeps link annotations clickable (canvas PDF.js viewers do not).
-    $fragment = '#toolbar=0&navpanes=0&scrollbar=1&view=FitH';
-    $embedSrc = $tabUrl.$fragment;
+    $embedSrc = $tabUrl;
 @endphp
 <div class="w-full max-w-full my-6 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow-sm">
     <iframe
