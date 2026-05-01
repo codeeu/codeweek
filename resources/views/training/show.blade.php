@@ -27,10 +27,12 @@
     $renderedContent = $trainingResource->content ?? '';
     $roadmapEmbedUrl = trim((string) ($trainingResource->roadmap_pdf_embed_url ?? ''));
     $roadmapEmbedKind = strtolower(trim((string) ($trainingResource->roadmap_embed_kind ?? 'pdf')));
-    if (! in_array($roadmapEmbedKind, ['pdf', 'svg', 'none'], true)) {
+    if (! in_array($roadmapEmbedKind, ['pdf', 'svg', 'image', 'none'], true)) {
         $roadmapEmbedKind = 'pdf';
     }
     $roadmapSvg = trim((string) ($trainingResource->roadmap_svg ?? ''));
+    $roadmapImageUrl = trim((string) ($trainingResource->roadmap_image_url ?? ''));
+    $roadmapImageLinkUrl = trim((string) ($trainingResource->roadmap_image_link_url ?? ''));
 
     $roadmapPlaceholders = ['[[embed_roadmap_pdf]]', '[[embed_roadmap]]'];
     $hasRoadmapPlaceholder = str_contains($renderedContent, '[[embed_roadmap_pdf]]')
@@ -42,6 +44,14 @@
             $roadmapEmbedHtml = view('training.partials.roadmap-pdf-embed', ['url' => $roadmapEmbedUrl])->render();
         } elseif ($roadmapEmbedKind === 'svg' && $roadmapSvg !== '') {
             $roadmapEmbedHtml = view('training.partials.roadmap-svg-embed', ['svg' => $roadmapSvg])->render();
+        } elseif ($roadmapEmbedKind === 'image' && $roadmapImageUrl !== '') {
+            $imageLinkHref = $roadmapImageLinkUrl !== '' ? $roadmapImageLinkUrl : $roadmapEmbedUrl;
+            if ($imageLinkHref !== '') {
+                $roadmapEmbedHtml = view('training.partials.roadmap-image-embed', [
+                    'imageUrl' => $roadmapImageUrl,
+                    'linkUrl' => $imageLinkHref,
+                ])->render();
+            }
         }
 
         foreach ($roadmapPlaceholders as $token) {
