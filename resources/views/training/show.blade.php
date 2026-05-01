@@ -11,7 +11,7 @@
     $pageDescription = $trainingResource->meta_description ?: $fallbackDescription;
 
     $introClass = "text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-6 [&_a]:text-dark-blue [&_a]:hover:underline";
-    $contentClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-6 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_h3]:text-dark-blue [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-medium [&_h3]:font-['Montserrat'] [&_h3]:mb-4 [&_ul]:pl-8 [&_ul]:m-0 [&_ul]:mb-6 [&_ul]:list-disc [&_ol]:pl-8 [&_ol]:m-0 [&_ol]:mb-6 [&_ol]:list-decimal [&_li]:p-0 [&_li]:text-lg [&_li]:font-normal [&_li]:leading-7 [&_li]:text-default [&_a]:text-dark-blue [&_a]:hover:underline [&_img]:max-w-full [&_img]:w-auto [&_img]:h-auto [&_img]:my-8 [&_img]:mx-auto [&_img]:block";
+    $contentClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6 min-w-0 [&_p]:p-0 [&_p]:mb-6 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_h3]:text-dark-blue [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-medium [&_h3]:font-['Montserrat'] [&_h3]:mb-4 [&_ul]:pl-8 [&_ul]:m-0 [&_ul]:mb-6 [&_ul]:list-disc [&_ol]:pl-8 [&_ol]:m-0 [&_ol]:mb-6 [&_ol]:list-decimal [&_li]:p-0 [&_li]:text-lg [&_li]:font-normal [&_li]:leading-7 [&_li]:text-default [&_a]:text-dark-blue [&_a]:hover:underline [&_a]:break-words [&_img]:max-w-full [&_img]:w-auto [&_img]:h-auto [&_img]:my-8 [&_img]:mx-auto [&_img]:block [&_svg]:max-w-full [&_svg]:h-auto [&_svg]:block";
     $pdfClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-4 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_ul]:m-0 [&_ul]:mb-6 [&_ul]:list-none [&_ol]:m-0 [&_ol]:mb-6 [&_ol]:list-none [&_li]:p-0 [&_li]:mb-2 [&_li]:font-normal [&_li]:leading-7 [&_li]:text-default [&_li]:break-words [&_a]:text-lg [&_a]:text-dark-blue [&_a]:no-underline [&_a:hover]:underline [&_a]:break-words [&_a]:max-w-full";
     $contactsClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-8 [&_p]:p-0 [&_p]:mb-4 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_a]:text-dark-blue [&_a]:hover:underline";
     $registerClass = "text-[#333E48] font-normal text-base md:text-lg [&_p]:p-0 [&_p]:mb-4 [&_p:last-child]:mb-0 [&_a]:font-medium [&_a]:text-dark-blue [&_a]:hover:underline";
@@ -188,6 +188,31 @@
         @include('include.licence')
     </section>
 @endsection
+
+@push('scripts')
+    <script>
+        (function () {
+            document.querySelectorAll('#codeweek-training-dynamic-subpage svg').forEach(function (svg) {
+                if (svg.getAttribute('viewBox')) {
+                    return;
+                }
+                var w = svg.getAttribute('width');
+                var h = svg.getAttribute('height');
+                if (!w || !h) {
+                    return;
+                }
+                var wn = parseFloat(w);
+                var hn = parseFloat(h);
+                if (!(wn > 0 && hn > 0)) {
+                    return;
+                }
+                svg.setAttribute('viewBox', '0 0 ' + wn + ' ' + hn);
+                svg.removeAttribute('width');
+                svg.removeAttribute('height');
+            });
+        })();
+    </script>
+@endpush
 
 @if($anchorOffset > 0)
     @push('scripts')
