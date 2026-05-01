@@ -153,6 +153,11 @@ class TrainingResource extends Resource
                 ->nullable()
                 ->help('Optional scroll offset in pixels for in-page anchor links (useful with sticky headers).'),
 
+            Text::make('Roadmap PDF embed URL', 'roadmap_pdf_embed_url')
+                ->nullable()
+                ->rules('nullable', 'url')
+                ->help('Optional HTTPS URL to a PDF shown inline in the Roadmap section. Put the literal text [[embed_roadmap_pdf]] in Content where the embed should appear (avoids Nova stripping iframes).'),
+
             Text::make('Button text', 'button_text')->nullable(),
 
             Text::make('Button URL', 'button_url')
