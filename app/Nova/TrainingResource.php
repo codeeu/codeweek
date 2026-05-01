@@ -157,12 +157,12 @@ class TrainingResource extends Resource
 
             Select::make('Roadmap embed format', 'roadmap_embed_kind')
                 ->options([
-                    'pdf' => 'PDF (inline viewer)',
-                    'svg' => 'SVG (paste markup below)',
+                    'pdf' => 'PDF (recommended — keeps clickable links from the file)',
+                    'svg' => 'SVG (static graphic; exports usually do not preserve PDF links)',
                     'none' => 'None (remove placeholder output)',
                 ])
                 ->default('pdf')
-                ->help('Use [[embed_roadmap_pdf]] or [[embed_roadmap]] in Content where the roadmap should appear.'),
+                ->help('Put [[embed_roadmap_pdf]] or [[embed_roadmap]] in Content where the roadmap should appear. Use PDF when the roadmap must open real URLs from the document.'),
 
             Text::make('Roadmap PDF embed URL', 'roadmap_pdf_embed_url')
                 ->nullable()
@@ -174,7 +174,7 @@ class TrainingResource extends Resource
                         $field->hide();
                     }
                 })
-                ->help('HTTPS URL to the roadmap PDF. Used when format is PDF.'),
+                ->help('HTTPS URL to the PDF. Shown in an iframe with the browser’s built-in PDF viewer so links inside the file stay active.'),
 
             Textarea::make('Roadmap SVG', 'roadmap_svg')
                 ->nullable()
@@ -186,7 +186,7 @@ class TrainingResource extends Resource
                         $field->hide();
                     }
                 })
-                ->help('Full <svg>...</svg> markup from your design tool. Used when format is SVG.'),
+                ->help('Optional: paste full <svg>...</svg> only for a non-interactive graphic. For clickable resources, prefer PDF above.'),
 
             Text::make('Button text', 'button_text')->nullable(),
 
