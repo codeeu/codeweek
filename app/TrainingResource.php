@@ -37,6 +37,8 @@ class TrainingResource extends Model
         'roadmap_pdf_embed_url',
         'roadmap_embed_kind',
         'roadmap_svg',
+        'roadmap_image_url',
+        'roadmap_image_link_url',
         'button_text',
         'button_url',
         'secondary_button_text',
