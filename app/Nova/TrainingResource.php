@@ -157,24 +157,26 @@ class TrainingResource extends Resource
 
             Select::make('Roadmap embed format', 'roadmap_embed_kind')
                 ->options([
-                    'pdf' => 'PDF (recommended — keeps clickable links from the file)',
+                    'pdf' => 'PDF (inline viewer, links inside the file)',
+                    'image' => 'Image (PNG/JPG thumbnail linking to URL you set)',
                     'svg' => 'SVG (static graphic; exports usually do not preserve PDF links)',
                     'none' => 'None (remove placeholder output)',
                 ])
                 ->default('pdf')
-                ->help('Put [[embed_roadmap_pdf]] or [[embed_roadmap]] in Content where the roadmap should appear. Use PDF when the roadmap must open real URLs from the document.'),
+                ->help('Put [[embed_roadmap_pdf]] or [[embed_roadmap]] in Content where the roadmap should appear.'),
 
             Text::make('Roadmap PDF embed URL', 'roadmap_pdf_embed_url')
                 ->nullable()
                 ->rules('nullable', 'url')
                 ->dependsOn(['roadmap_embed_kind'], function (Text $field, NovaRequest $request, FormData $formData) {
-                    if (($formData->roadmap_embed_kind ?? 'pdf') === 'pdf') {
+                    $kind = $formData->roadmap_embed_kind ?? 'pdf';
+                    if ($kind === 'pdf' || $kind === 'image') {
                         $field->show();
                     } else {
                         $field->hide();
                     }
                 })
-                ->help('HTTPS URL to the PDF. Shown in an iframe with the browser’s built-in PDF viewer so links inside the file stay active.'),
+                ->help('HTTPS URL to the roadmap PDF. For PDF format this is embedded in-page. For Image format use it too (or Roadmap image link URL) as the PDF click target.'),
 
             Textarea::make('Roadmap SVG', 'roadmap_svg')
                 ->nullable()
@@ -187,6 +189,30 @@ class TrainingResource extends Resource
                     }
                 })
                 ->help('Optional: paste full <svg>...</svg> only for a non-interactive graphic. For clickable resources, prefer PDF above.'),
+
+            Text::make('Roadmap image URL', 'roadmap_image_url')
+                ->nullable()
+                ->rules('nullable', 'url')
+                ->dependsOn(['roadmap_embed_kind'], function (Text $field, NovaRequest $request, FormData $formData) {
+                    if (($formData->roadmap_embed_kind ?? 'pdf') === 'image') {
+                        $field->show();
+                    } else {
+                        $field->hide();
+                    }
+                })
+                ->help('Full URL of the roadmap graphic (e.g. PNG on S3). The whole image is clickable.'),
+
+            Text::make('Roadmap image link URL', 'roadmap_image_link_url')
+                ->nullable()
+                ->rules('nullable', 'url')
+                ->dependsOn(['roadmap_embed_kind'], function (Text $field, NovaRequest $request, FormData $formData) {
+                    if (($formData->roadmap_embed_kind ?? 'pdf') === 'image') {
+                        $field->show();
+                    } else {
+                        $field->hide();
+                    }
+                })
+                ->help('Where clicks go (e.g. full PDF). If empty, falls back to Roadmap PDF embed URL.'),
 
             Text::make('Button text', 'button_text')->nullable(),
 
