@@ -6,8 +6,10 @@ use App\Rules\FlexibleUrlOrAnchor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\FormData;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Trix;
@@ -153,10 +155,38 @@ class TrainingResource extends Resource
                 ->nullable()
                 ->help('Optional scroll offset in pixels for in-page anchor links (useful with sticky headers).'),
 
+            Select::make('Roadmap embed format', 'roadmap_embed_kind')
+                ->options([
+                    'pdf' => 'PDF (inline viewer)',
+                    'svg' => 'SVG (paste markup below)',
+                    'none' => 'None (remove placeholder output)',
+                ])
+                ->default('pdf')
+                ->help('Use [[embed_roadmap_pdf]] or [[embed_roadmap]] in Content where the roadmap should appear.'),
+
             Text::make('Roadmap PDF embed URL', 'roadmap_pdf_embed_url')
                 ->nullable()
                 ->rules('nullable', 'url')
-                ->help('Optional HTTPS URL to a PDF shown inline in the Roadmap section. Put the literal text [[embed_roadmap_pdf]] in Content where the embed should appear (avoids Nova stripping iframes).'),
+                ->dependsOn(['roadmap_embed_kind'], function (Text $field, NovaRequest $request, FormData $formData) {
+                    if (($formData->roadmap_embed_kind ?? 'pdf') === 'pdf') {
+                        $field->show();
+                    } else {
+                        $field->hide();
+                    }
+                })
+                ->help('HTTPS URL to the roadmap PDF. Used when format is PDF.'),
+
+            Textarea::make('Roadmap SVG', 'roadmap_svg')
+                ->nullable()
+                ->rows(10)
+                ->dependsOn(['roadmap_embed_kind'], function (Textarea $field, NovaRequest $request, FormData $formData) {
+                    if (($formData->roadmap_embed_kind ?? 'pdf') === 'svg') {
+                        $field->show();
+                    } else {
+                        $field->hide();
+                    }
+                })
+                ->help('Full <svg>...</svg> markup from your design tool. Used when format is SVG.'),
 
             Text::make('Button text', 'button_text')->nullable(),
 

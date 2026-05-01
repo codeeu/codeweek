@@ -63,6 +63,7 @@ use App\Http\Controllers\SuperOrganiserController;
 use App\Http\Controllers\CertificateBackendController;
 use App\Http\Controllers\ToolkitsController;
 use App\Http\Controllers\TrainingController;
+use App\Http\Controllers\TrainingRoadmapPdfController;
 use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VolunteerController;
@@ -340,6 +341,10 @@ Route::get(
 Route::get('/training-preview/{trainingResource}', [TrainingController::class, 'preview'])
     ->middleware('signed')
     ->name('training.preview');
+Route::get('/training/embedded-roadmap.pdf', [TrainingRoadmapPdfController::class, 'proxyPdf'])
+    ->name('training.embedded_pdf.roadmap');
+Route::get('/training/roadmap-pdf-viewer', [TrainingRoadmapPdfController::class, 'viewer'])
+    ->name('training.roadmap_pdf_viewer');
 Route::get('/training/{slug}', [TrainingController::class, 'show'])->name('training.dynamic.show');
 Route::post('/contact-submit', [ContactFormController::class, 'submit'])
     ->middleware('throttle:5,1') // 5 requests per minute per IP
