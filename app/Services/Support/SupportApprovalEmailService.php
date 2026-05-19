@@ -21,8 +21,13 @@ class SupportApprovalEmailService
     public function approvalSubject(SupportCase $case): string
     {
         $prefix = (string) config('support_gmail.approval_subject_prefix', '[CW-SUPPORT');
+        $headline = match ($case->case_type) {
+            'profile_update' => 'Please review — name change',
+            'account_restore' => 'Please review — account restore',
+            default => 'Please review before we make changes',
+        };
 
-        return sprintf('%s #%d] Support copilot - dry run review', $prefix, $case->id);
+        return sprintf('%s #%d] %s', $prefix, $case->id, $headline);
     }
 
     public function completionSubject(SupportCase $case, bool $succeeded, string $action = ''): string
@@ -280,57 +285,174 @@ class SupportApprovalEmailService
      */
     private function buildDryRunBody(SupportCase $case, array $proposedAction): string
     {
+        $email = (string) ($case->target_email ?? '');
+        $action = $proposedAction['action'] ?? 'none';
+
         $lines = [
-            'CodeWeek Support Copilot - dry run summary',
+            'CodeWeek Support — please review before we make changes',
             '',
-            'Case #'.$case->id,
-            'Subject: '.$case->subject,
-            'Type: '.($case->case_type ?? 'unknown'),
-            'Risk: '.($case->risk_level ?? 'low'),
-            'Target: '.($case->target_email ?? '(unknown)'),
-            '',
+            'Reference: Case #'.$case->id,
+            'Account: '.($email !== '' ? $email : '(email not found in request)'),
         ];
 
-        $diagnostics = $case->actions()->where('action_name', 'diagnostics')->latest()->first()?->output_json;
-        if (is_array($diagnostics)) {
-            $lines[] = 'Diagnostics findings: '.implode(', ', (array) ($diagnostics['findings'] ?? []));
+        if ($case->subject) {
+            $lines[] = 'Your request: '.$case->subject;
+        }
+
+        $warnings = $this->dryRunWarningLines($case);
+        if ($warnings !== []) {
             $lines[] = '';
+            $lines[] = 'Please note';
+            $lines[] = str_repeat('─', 12);
+            $lines = array_merge($lines, $warnings);
         }
 
-        foreach (['user_restore', 'user_profile_update'] as $writeAction) {
-            $dryRun = $case->actions()->where('action_name', $writeAction)->where('action_type', 'write')->latest()->first()?->output_json;
-            if (!is_array($dryRun)) {
-                continue;
-            }
-            $result = $dryRun['result'] ?? $dryRun;
-            if (is_array($result) && isset($result['before'], $result['after'])) {
-                $lines[] = 'Planned profile/account changes (dry run):';
-                $lines[] = 'Before: '.json_encode($result['before'], JSON_UNESCAPED_SLASHES);
-                $lines[] = 'After:  '.json_encode($result['after'], JSON_UNESCAPED_SLASHES);
-                $lines[] = '';
-            } elseif (is_array($result)) {
-                $lines[] = 'Planned changes (dry run):';
-                $lines[] = json_encode($result['changes_planned'] ?? $result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-                $lines[] = '';
-            }
-        }
+        $lines[] = '';
+        $lines[] = 'What will change if you approve';
+        $lines[] = str_repeat('─', 28);
+        $lines = array_merge($lines, $this->dryRunPlannedChangeLines($case, $proposedAction));
 
-        $action = $proposedAction['action'] ?? 'none';
         if ($action !== 'none') {
-            $lines[] = 'Proposed action: '.$action;
-            $lines[] = 'Payload: '.json_encode($proposedAction['payload'] ?? [], JSON_UNESCAPED_SLASHES);
             $lines[] = '';
-            $lines[] = 'To execute this change, reply to this email with a single line:';
+            $lines[] = 'How to approve';
+            $lines[] = str_repeat('─', 13);
+            $lines[] = 'Reply to this email with exactly one word on the first line:';
+            $lines[] = '';
             $lines[] = 'APPROVE';
             $lines[] = '';
-            $lines[] = 'You will receive a follow-up email when the action has run (completed or failed).';
-            $lines[] = '';
-            $lines[] = '(Only @matrixinternet.ie and @codeweek.eu senders are accepted.)';
+            $lines[] = 'We will then apply the change and send you a short confirmation email.';
+            $lines[] = 'Only messages from @matrixinternet.ie and @codeweek.eu can approve.';
         } else {
-            $lines[] = 'No automated write action proposed. Review the case in Nova if needed.';
+            $lines[] = '';
+            $lines[] = 'No automatic change is available for this request.';
+            $lines[] = 'Please review the case in Nova or handle it manually.';
         }
 
+        $lines[] = '';
+        $lines[] = '— CodeWeek Support Copilot';
+
         return implode("\n", $lines);
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function dryRunWarningLines(SupportCase $case): array
+    {
+        $diagnostics = $case->actions()->where('action_name', 'diagnostics')->latest()->first()?->output_json;
+        $findings = is_array($diagnostics) ? (array) ($diagnostics['findings'] ?? []) : [];
+        $lines = [];
+
+        foreach ($findings as $finding) {
+            $line = $this->humanizeDiagnosticFinding((string) $finding, $case->id);
+            if ($line !== null) {
+                $lines[] = '• '.$line;
+            }
+        }
+
+        return $lines;
+    }
+
+    private function humanizeDiagnosticFinding(string $finding, int $caseId): ?string
+    {
+        $finding = strtolower(trim($finding));
+
+        return match (true) {
+            str_contains($finding, 'duplicate_risk') => 'More than one CodeWeek account uses this email. We will update the account that still needs this name change.',
+            str_contains($finding, 'user_audit_completed') => null,
+            str_contains($finding, 'ambiguous') => 'We could not tell which account to use. Case #'.$caseId.' may need manual review in Nova.',
+            default => null,
+        };
+    }
+
+    /**
+     * @param array{action: string, payload: array<string, mixed>} $proposedAction
+     * @return list<string>
+     */
+    private function dryRunPlannedChangeLines(SupportCase $case, array $proposedAction): array
+    {
+        $action = $proposedAction['action'] ?? 'none';
+        $payload = $proposedAction['payload'] ?? [];
+        $email = (string) ($case->target_email ?? $payload['email'] ?? '');
+
+        if ($action === 'user_profile_update') {
+            return $this->dryRunProfileChangeLines($case, $payload, $email);
+        }
+
+        if ($action === 'user_restore') {
+            return [
+                '',
+                'We will reactivate the CodeWeek account'.($email !== '' ? ' for '.$email : '').'.',
+                'The person can sign in again with their usual email and password.',
+            ];
+        }
+
+        return [
+            '',
+            'We could not determine an automatic change from this email.',
+            'Check that the message includes lines like "Requested first name:" and "Requested last name:".',
+        ];
+    }
+
+    /**
+     * @param array<string, mixed> $payload
+     * @return list<string>
+     */
+    private function dryRunProfileChangeLines(SupportCase $case, array $payload, string $email): array
+    {
+        $dryRun = $case->actions()
+            ->where('action_name', 'user_profile_update')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        $result = is_array($dryRun) ? ($dryRun['result'] ?? $dryRun) : [];
+        $inner = is_array($result) ? $result : [];
+
+        $lines = [
+            '',
+            'We will update the name shown on the CodeWeek account'.($email !== '' ? ' for '.$email : '').'.',
+        ];
+
+        if (isset($inner['before'], $inner['after']) && is_array($inner['before']) && is_array($inner['after'])) {
+            $changeLines = $this->formatProfileNameChanges($inner['before'], $inner['after']);
+            if ($changeLines !== []) {
+                $lines[] = '';
+                $lines = array_merge($lines, $changeLines);
+            } elseif (($inner['note'] ?? '') === 'profile_already_matches_requested_values') {
+                $lines[] = '';
+                $lines[] = 'The account already has the requested name — approving will make no change.';
+            }
+        } else {
+            $lines = array_merge($lines, $this->dryRunProfileChangeLinesFromPayload($payload));
+        }
+
+        $lines[] = '';
+        $lines[] = 'The login email address will not change.';
+
+        return $lines;
+    }
+
+    /**
+     * @param array<string, mixed> $payload
+     * @return list<string>
+     */
+    private function dryRunProfileChangeLinesFromPayload(array $payload): array
+    {
+        $lines = ['', 'Requested updates:'];
+
+        if (!empty($payload['firstname'])) {
+            $lines[] = '  • First name → '.$payload['firstname'];
+        }
+        if (!empty($payload['lastname'])) {
+            $lines[] = '  • Last name → '.$payload['lastname'];
+        }
+
+        if (count($lines) === 2) {
+            $lines[] = '  • (could not read name fields from the email — check the request text)';
+        }
+
+        return $lines;
     }
 
     private function completionHeadline(SupportCase $case, string $action, bool $succeeded): string
