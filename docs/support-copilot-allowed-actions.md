@@ -99,7 +99,18 @@ Configured in `config/support_gmail.php` → `allowed_write_actions`.
 | Scope | Purpose |
 |-------|---------|
 | `gmail.readonly` | Poll inbox, read approval replies |
-| `gmail.send` | Send dry-run summaries |
+| `gmail.send` | Send dry-run summaries and completion emails |
+
+---
+
+## 10. Email notifications (what you receive)
+
+| When | Email subject (example) |
+|------|-------------------------|
+| Ticket processed (dry-run) | `[CW-SUPPORT #10] Support copilot - dry run review` |
+| After you reply **APPROVE** and action runs | `[CW-SUPPORT #10] Support copilot - action completed` or `action failed` |
+
+Completion emails go to the same recipient as the dry-run summary (`SUPPORT_GMAIL_NOTIFY_EMAIL` unless overridden). Disable with `SUPPORT_GMAIL_SEND_COMPLETION_EMAIL=false`.
 
 ---
 
