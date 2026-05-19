@@ -625,6 +625,9 @@ class SupportApprovalEmailService
             $lines[] = '  • An unexpected error occurred. Please check the case in Nova.';
         } else {
             foreach ($errors as $error) {
+                if (str_contains(strtolower((string) $error), 'matched_user_ids')) {
+                    continue;
+                }
                 $lines[] = '  • '.$this->humanizeError((string) $error, $action, $caseId);
             }
         }

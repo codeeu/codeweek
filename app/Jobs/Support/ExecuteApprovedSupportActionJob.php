@@ -79,14 +79,8 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
                 viaEmailApproval: true,
             );
         } elseif ($action === 'user_profile_update') {
-            $result = $userProfileUpdate->updateProfile(
-                case: $case,
-                email: (string) ($payload['email'] ?? ''),
-                firstname: isset($payload['firstname']) ? (string) $payload['firstname'] : null,
-                lastname: isset($payload['lastname']) ? (string) $payload['lastname'] : null,
-                dryRun: false,
-                viaEmailApproval: true,
-            );
+            // Re-read names from the case email (approval payload may be from an older parser).
+            $result = $userProfileUpdate->updateFromCase($case, dryRun: false, viaEmailApproval: true);
         } else {
             $result = [
                 'ok' => false,

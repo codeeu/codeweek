@@ -23,7 +23,13 @@ final class SupportProfileRequestParser
     ];
 
     /**
-     * @return array{email: ?string, firstname: ?string, lastname: ?string}
+     * @return array{
+     *   email: ?string,
+     *   firstname: ?string,
+     *   lastname: ?string,
+     *   current_firstname: ?string,
+     *   current_lastname: ?string,
+     * }
      */
     public function parse(string $text): array
     {
@@ -33,6 +39,8 @@ final class SupportProfileRequestParser
             'email' => $this->extractFirstEmail($normalized),
             'firstname' => $this->sanitizeName($this->extractRequestedName($normalized, 'first')),
             'lastname' => $this->sanitizeName($this->extractRequestedName($normalized, 'last')),
+            'current_firstname' => $this->sanitizeName($this->extractCurrentName($normalized, 'first')),
+            'current_lastname' => $this->sanitizeName($this->extractCurrentName($normalized, 'last')),
         ];
     }
 
@@ -46,9 +54,22 @@ final class SupportProfileRequestParser
 
     private function extractRequestedName(string $text, string $which): ?string
     {
+        return $this->extractPrefixedName($text, $which, ['requested', 'new']);
+    }
+
+    private function extractCurrentName(string $text, string $which): ?string
+    {
+        return $this->extractPrefixedName($text, $which, ['current']);
+    }
+
+    /**
+     * @param list<string> $prefixes
+     */
+    private function extractPrefixedName(string $text, string $which, array $prefixes): ?string
+    {
         $field = $which === 'first' ? 'first\\s*name' : 'last\\s*name';
 
-        foreach (['requested', 'new'] as $prefix) {
+        foreach ($prefixes as $prefix) {
             $pattern = '/(?:^|\n)\s*'.preg_quote($prefix, '/').'\s+'.$field.'\s*[:*]?\s*([^\n\r]+)/iu';
             if (preg_match($pattern, $text, $m)) {
                 return $this->cleanCapturedName($m[1]);
