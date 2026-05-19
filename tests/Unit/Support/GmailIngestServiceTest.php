@@ -31,6 +31,7 @@ final class GmailIngestServiceTest extends TestCase
             logger: app(SupportActionLogger::class),
             allowlist: app(SupportSenderAllowlist::class),
             approvalEmail: $approvalEmail,
+            ingestFilter: app(\App\Services\Support\Gmail\SupportGmailIngestFilter::class),
         );
     }
 
@@ -45,6 +46,7 @@ final class GmailIngestServiceTest extends TestCase
         config()->set('support_gmail.label', 'Support-AI');
         config()->set('support_gmail.query', 'newer_than:7d');
         config()->set('support_gmail.allowed_sender_domains', ['matrixinternet.ie']);
+        config()->set('support_gmail.subject_prefix', 'codeweek-support');
 
         $fakeConnector = new class implements GmailConnector {
             public function fetchNewMessages(
@@ -56,9 +58,9 @@ final class GmailIngestServiceTest extends TestCase
             ): array {
                 return [
                     'messages' => [
-                        new GmailMessage('m1', 't1', 'Subj 1', 'sender@matrixinternet.ie', "Hello 1"),
-                        new GmailMessage('m1', 't1', 'Subj 1', 'sender@matrixinternet.ie', "Hello 1 DUP"),
-                        new GmailMessage('m2', 't2', 'Subj 2', 'other@matrixinternet.ie', "Hello 2"),
+                        new GmailMessage('m1', 't1', 'codeweek-support ticket 1', 'sender@matrixinternet.ie', "Hello 1"),
+                        new GmailMessage('m1', 't1', 'codeweek-support ticket 1', 'sender@matrixinternet.ie', "Hello 1 DUP"),
+                        new GmailMessage('m2', 't2', 'codeweek-support ticket 2', 'other@matrixinternet.ie', "Hello 2"),
                     ],
                     'next_history_id' => '123',
                     'warnings' => [],
@@ -138,6 +140,67 @@ final class GmailIngestServiceTest extends TestCase
         $this->assertFalse($res['cursor_updated']);
 
         $lock->release();
+    }
+
+    public function test_poll_skips_system_outbound_and_processes_approve_reply(): void
+    {
+        config()->set('support_gmail.enabled', true);
+        config()->set('support_gmail.lock.name', 'test:support:gmail:poll:approve');
+        config()->set('support_gmail.lock.ttl_seconds', 30);
+        config()->set('support_gmail.notify_email', 'codeweek@matrixinternet.ie');
+        config()->set('support_gmail.allowed_sender_domains', ['matrixinternet.ie']);
+        config()->set('support_gmail.subject_prefix', 'codeweek-support');
+
+        $approvalEmail = $this->createMock(SupportApprovalEmailService::class);
+        $approvalEmail->expects($this->once())
+            ->method('processApprovalReply')
+            ->willReturn(['ok' => true, 'tool' => 'support_email_approval']);
+
+        $fakeConnector = new class implements GmailConnector {
+            public function fetchNewMessages(
+                string $mailbox,
+                ?string $label,
+                string $query,
+                ?string $sinceHistoryId,
+                int $max = 25,
+            ): array {
+                return [
+                    'messages' => [
+                        new GmailMessage(
+                            'bot1',
+                            't-bot',
+                            '[CW-SUPPORT #20] Support copilot - dry run review',
+                            'codeweek@matrixinternet.ie',
+                            'dry run body',
+                        ),
+                        new GmailMessage(
+                            'approve1',
+                            't-approve',
+                            'Re: [CW-SUPPORT #20] Support copilot - dry run review',
+                            'bernard@matrixinternet.ie',
+                            "APPROVE\n",
+                        ),
+                    ],
+                    'next_history_id' => null,
+                    'warnings' => [],
+                ];
+            }
+        };
+
+        $svc = new GmailIngestService(
+            connector: $fakeConnector,
+            intake: app(CaseIntakeService::class),
+            logger: app(SupportActionLogger::class),
+            allowlist: app(SupportSenderAllowlist::class),
+            approvalEmail: $approvalEmail,
+            ingestFilter: app(\App\Services\Support\Gmail\SupportGmailIngestFilter::class),
+        );
+
+        $res = $svc->pollAndIngest(25);
+
+        $this->assertSame(1, $res['approvals_processed']);
+        $this->assertSame(1, $res['skipped_system']);
+        $this->assertSame(0, $res['ingested']);
     }
 
     public function test_poll_passes_through_connector_warnings(): void
