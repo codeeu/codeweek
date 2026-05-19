@@ -18,8 +18,10 @@ use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Lang;
 use App\Services\Support\Gmail\GmailConnector;
+use App\Services\Support\Gmail\GmailOutboundService;
 use App\Services\Support\Gmail\GoogleGmailConnector;
 use App\Services\Support\Gmail\NullGmailConnector;
+use App\Services\Support\Gmail\NullGmailOutboundService;
 use App\Services\Menu\MenuRepository;
 
 class AppServiceProvider extends ServiceProvider
@@ -204,6 +206,18 @@ class AppServiceProvider extends ServiceProvider
 
             // Default to Google connector when enabled.
             return new GoogleGmailConnector();
+        });
+
+        $this->app->bind(GmailOutboundService::class, function ($app) {
+            if (!config('support_gmail.enabled')) {
+                return new NullGmailOutboundService();
+            }
+
+            try {
+                return new GmailOutboundService($app->make(GoogleGmailConnector::class));
+            } catch (\Throwable) {
+                return new NullGmailOutboundService();
+            }
         });
     }
 

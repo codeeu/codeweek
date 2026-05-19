@@ -17,7 +17,10 @@ class GoogleGmailConnector implements GmailConnector
     {
         $client = new GoogleClient();
         $client->setApplicationName('Codeweek Internal Support Copilot');
-        $client->setScopes([GmailService::GMAIL_READONLY]);
+        $client->setScopes([
+            GmailService::GMAIL_READONLY,
+            GmailService::GMAIL_SEND,
+        ]);
         $client->setAccessType('offline');
 
         GmailOAuthConfig::applyClientSecrets($client);
@@ -211,6 +214,50 @@ class GoogleGmailConnector implements GmailConnector
         $data = str_replace(['-', '_'], ['+', '/'], $data);
         $decoded = base64_decode($data, true);
         return $decoded === false ? '' : $decoded;
+    }
+
+    /**
+     * @return array{id: string, thread_id: ?string}
+     */
+    public function sendPlainTextMessage(
+        string $mailbox,
+        string $to,
+        string $subject,
+        string $body,
+        ?string $threadId = null,
+        ?string $inReplyToMessageId = null,
+    ): array {
+        $this->ensureValidToken();
+
+        $headers = [
+            'To: '.$to,
+            'Subject: '.$subject,
+            'MIME-Version: 1.0',
+            'Content-Type: text/plain; charset=UTF-8',
+        ];
+
+        if ($inReplyToMessageId) {
+            $headers[] = 'In-Reply-To: '.$inReplyToMessageId;
+            $headers[] = 'References: '.$inReplyToMessageId;
+        }
+
+        $raw = implode("\r\n", $headers)."\r\n\r\n".$body;
+        $encoded = rtrim(strtr(base64_encode($raw), '+/', '-_'), '=');
+
+        $message = new GoogleMessage();
+        $message->setRaw($encoded);
+
+        $params = [];
+        if ($threadId) {
+            $params['threadId'] = $threadId;
+        }
+
+        $sent = $this->gmail->users_messages->send($mailbox, $message, $params);
+
+        return [
+            'id' => (string) $sent->getId(),
+            'thread_id' => $sent->getThreadId(),
+        ];
     }
 }
 
