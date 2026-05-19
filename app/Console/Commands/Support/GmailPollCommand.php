@@ -19,8 +19,9 @@ class GmailPollCommand extends Command
         $this->line(json_encode([
             'ok' => true,
             'tool' => 'support:gmail:poll',
+            'dry_run_mode' => (bool) config('support_gmail.dry_run', true),
             'result' => $result,
-        ], JSON_PRETTY_PRINT));
+        ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
         return self::SUCCESS;
     }

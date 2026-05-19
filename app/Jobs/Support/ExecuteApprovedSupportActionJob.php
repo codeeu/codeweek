@@ -43,6 +43,23 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
         $action = $approval->requested_action;
         $payload = (array) ($approval->payload_json ?? []);
 
+        if ($action === 'none') {
+            $case->update(['status' => 'resolved']);
+            $logger->log(
+                case: $case,
+                actionName: 'approved_action_executed',
+                actionType: 'read',
+                input: ['approval_id' => $approval->id, 'action' => $action],
+                output: ['ok' => true, 'note' => 'no_write_action'],
+                succeeded: true,
+                executedBy: 'system',
+                approvedBy: $approval->approved_by,
+                correlationId: $case->correlation_id,
+            );
+
+            return;
+        }
+
         $result = null;
         if ($action === 'user_restore') {
             $result = $userRestore->restore(

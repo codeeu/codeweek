@@ -93,6 +93,10 @@ class UserRestoreService
             ]);
         }
 
+        if (config('support_gmail.dry_run')) {
+            return SupportJson::fail($tool, $input, 'dry_run_mode_requires_email_approval');
+        }
+
         $user->restore();
 
         $verification = $this->verification->verifyUserRestored($user);

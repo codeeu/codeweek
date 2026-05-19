@@ -2,10 +2,14 @@
 
 namespace App\Services\Support\Gmail;
 
+use App\Jobs\Support\ProcessSupportCaseTriageJob;
 use App\Models\Support\SupportGmailCursor;
 use App\Services\Support\CaseIntakeService;
 use App\Services\Support\SupportActionLogger;
+use App\Services\Support\SupportApprovalEmailService;
+use App\Services\Support\SupportEmailAddress;
 use App\Services\Support\SupportJson;
+use App\Services\Support\SupportSenderAllowlist;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
 
@@ -15,26 +19,33 @@ class GmailIngestService
         private readonly GmailConnector $connector,
         private readonly CaseIntakeService $intake,
         private readonly SupportActionLogger $logger,
+        private readonly SupportSenderAllowlist $allowlist,
+        private readonly SupportApprovalEmailService $approvalEmail,
     ) {
     }
 
     /**
-     * @return array{ingested: int, duplicates: int, cursor_updated: bool, warnings: string[]}
+     * @return array{
+     *   ingested: int,
+     *   duplicates: int,
+     *   skipped_untrusted: int,
+     *   approvals_processed: int,
+     *   cursor_updated: bool,
+     *   warnings: string[]
+     * }
      */
     public function pollAndIngest(int $max = 25): array
     {
         if (!config('support_gmail.enabled')) {
-            return ['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false, 'warnings' => []];
+            return $this->emptyResult();
         }
 
         $lockName = (string) config('support_gmail.lock.name', 'support:gmail:poll');
         $ttlSeconds = (int) config('support_gmail.lock.ttl_seconds', 120);
 
-        // If cache store doesn't support locks, this will throw; treat that as a hard fail
-        // to avoid double-ingesting on multiple nodes silently.
         $lock = Cache::lock($lockName, $ttlSeconds);
         if (!$lock->get()) {
-            return ['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false, 'warnings' => []];
+            return $this->emptyResult();
         }
 
         $mailbox = (string) config('support_gmail.user', 'me');
@@ -59,8 +70,25 @@ class GmailIngestService
 
             $ingested = 0;
             $duplicates = 0;
+            $skippedUntrusted = 0;
+            $approvalsProcessed = 0;
 
             foreach ($result['messages'] as $msg) {
+                if ($this->allowlist->isAllowed($msg->from)) {
+                    $approvalResult = $this->approvalEmail->processApprovalReply($msg, (string) $msg->from);
+                    if ($approvalResult !== null) {
+                        $approvalsProcessed++;
+                        continue;
+                    }
+                }
+
+                if (!$this->allowlist->isAllowed($msg->from)) {
+                    $skippedUntrusted++;
+                    continue;
+                }
+
+                $requester = SupportEmailAddress::fromHeader($msg->from);
+
                 $case = $this->intake->intake([
                     'source_channel' => 'gmail',
                     'processing_mode' => 'poll',
@@ -68,7 +96,8 @@ class GmailIngestService
                     'gmail_thread_id' => $msg->threadId,
                     'subject' => $msg->subject ?? '(no subject)',
                     'raw_message' => $msg->rawBody,
-                    'original_sender_email' => $msg->from,
+                    'original_sender_email' => $requester,
+                    'forwarded_by_email' => $requester,
                     'correlation_id' => $correlationId,
                 ]);
 
@@ -84,6 +113,8 @@ class GmailIngestService
                         executedBy: 'system:gmail_poll',
                         correlationId: $correlationId,
                     );
+
+                    ProcessSupportCaseTriageJob::dispatch($case->id);
                 } else {
                     $duplicates++;
                 }
@@ -98,6 +129,8 @@ class GmailIngestService
             return [
                 'ingested' => $ingested,
                 'duplicates' => $duplicates,
+                'skipped_untrusted' => $skippedUntrusted,
+                'approvals_processed' => $approvalsProcessed,
                 'cursor_updated' => true,
                 'warnings' => $result['warnings'] ?? [],
             ];
@@ -105,5 +138,19 @@ class GmailIngestService
             optional($lock)->release();
         }
     }
-}
 
+    /**
+     * @return array{ingested: int, duplicates: int, skipped_untrusted: int, approvals_processed: int, cursor_updated: bool, warnings: string[]}
+     */
+    private function emptyResult(): array
+    {
+        return [
+            'ingested' => 0,
+            'duplicates' => 0,
+            'skipped_untrusted' => 0,
+            'approvals_processed' => 0,
+            'cursor_updated' => false,
+            'warnings' => [],
+        ];
+    }
+}
