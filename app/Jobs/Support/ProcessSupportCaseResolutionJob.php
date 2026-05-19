@@ -6,6 +6,7 @@ use App\Models\Support\SupportCase;
 use App\Models\Support\SupportCaseMessage;
 use App\Services\Support\Agents\ResolutionAgentService;
 use App\Services\Support\SupportActionLogger;
+use App\Services\Support\SupportApprovalEmailService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -59,6 +60,10 @@ class ProcessSupportCaseResolutionJob implements ShouldQueue
         ]);
 
         $case->update(['status' => 'draft_ready']);
+
+        if (config('support_gmail.dry_run', true) && $case->source_channel === 'gmail') {
+            app(SupportApprovalEmailService::class)->sendDryRunReview($case);
+        }
     }
 }
 
