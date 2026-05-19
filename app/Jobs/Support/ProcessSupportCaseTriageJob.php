@@ -51,7 +51,7 @@ class ProcessSupportCaseTriageJob implements ShouldQueue
             correlationId: $case->correlation_id,
         );
 
-        ProcessSupportCaseDiagnosticsJob::dispatch($case->id);
+        ProcessSupportCaseDiagnosticsJob::dispatchSync($case->id);
     }
 }
 

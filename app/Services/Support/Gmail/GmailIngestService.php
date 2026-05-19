@@ -114,7 +114,8 @@ class GmailIngestService
                         correlationId: $correlationId,
                     );
 
-                    ProcessSupportCaseTriageJob::dispatch($case->id);
+                    // Run pipeline synchronously so scheduler poll does not depend on queue workers.
+                    ProcessSupportCaseTriageJob::dispatchSync($case->id);
                 } else {
                     $duplicates++;
                 }
