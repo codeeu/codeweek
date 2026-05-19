@@ -3,13 +3,21 @@
 namespace App\Services\Support\Agents;
 
 use App\Models\Support\SupportCase;
+use App\Services\Support\SupportProfileRequestParser;
 use Illuminate\Support\Str;
 
 class TriageAgentService
 {
+    public function __construct(
+        private readonly SupportProfileRequestParser $profileParser,
+    ) {
+    }
+
     public function triage(SupportCase $case): array
     {
-        $text = Str::lower((string) ($case->normalized_message ?? $case->raw_message ?? ''));
+        $rawText = (string) ($case->normalized_message ?? $case->raw_message ?? '');
+        $text = Str::lower($rawText);
+        $profile = $this->profileParser->parse($rawText);
 
         // V1 heuristic placeholder (replace with LLM later, keep output schema stable).
         $caseType = 'unknown';
@@ -17,6 +25,17 @@ class TriageAgentService
         if (Str::contains($text, ['soft-deleted', 'deleted', 'restore account', 'account missing'])) {
             $caseType = 'account_restore';
             $runbook = 'restore_deleted_account';
+        } elseif (Str::contains($text, [
+            'update profile',
+            'profile name',
+            'your details',
+            'first name',
+            'last name',
+            'change name',
+            'rename profile',
+        ]) || ($profile['firstname'] !== null || $profile['lastname'] !== null)) {
+            $caseType = 'profile_update';
+            $runbook = 'update_user_profile';
         } elseif (Str::contains($text, ['duplicate', 'two accounts', 'split across'])) {
             $caseType = 'duplicate_account';
             $runbook = 'duplicate_account_investigation';
@@ -31,11 +50,17 @@ class TriageAgentService
             $runbook = 'role_problem';
         }
 
-        $targetEmail = $this->extractFirstEmail($text);
+        $targetEmail = $profile['email'] ?? $this->extractFirstEmail($text);
         $secondary = $this->extractAllEmails($text);
         $secondary = array_values(array_filter($secondary, fn ($e) => $targetEmail ? $e !== $targetEmail : true));
 
         $risk = Str::contains($text, ['password reset', 'merge', 'ownership', 'privileged']) ? 'high' : 'low';
+        if ($caseType === 'profile_update') {
+            $risk = 'low';
+        }
+
+        $needsHuman = $targetEmail === null
+            || ($caseType === 'profile_update' && $profile['firstname'] === null && $profile['lastname'] === null);
 
         return [
             'case_type' => $caseType,
@@ -43,10 +68,12 @@ class TriageAgentService
             'target_email' => $targetEmail,
             'secondary_emails' => $secondary,
             'target_user_id' => null,
-            'requested_action' => null,
+            'requested_action' => $caseType === 'profile_update' ? 'user_profile_update' : null,
+            'profile_firstname' => $profile['firstname'],
+            'profile_lastname' => $profile['lastname'],
             'risk_level' => $risk,
             'recommended_runbook' => $runbook,
-            'needs_human_review' => $targetEmail === null,
+            'needs_human_review' => $needsHuman,
             'reasoning_summary' => 'V1 heuristic triage (LLM integration pending).',
         ];
     }
