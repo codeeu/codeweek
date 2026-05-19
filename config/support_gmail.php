@@ -75,5 +75,8 @@ return [
         'user_restore',
         'user_profile_update',
     ],
+
+    // Send a follow-up email after an APPROVE action runs (success or failure).
+    'send_completion_email' => env('SUPPORT_GMAIL_SEND_COMPLETION_EMAIL', true),
 ];
 
