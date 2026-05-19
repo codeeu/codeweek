@@ -6,6 +6,7 @@ use App\Models\Support\SupportCase;
 use App\Models\Support\SupportCaseMessage;
 use App\Services\Support\Agents\DiagnosticsAgentService;
 use App\Services\Support\SupportActionLogger;
+use App\Services\Support\UserRestoreService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -20,8 +21,11 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
     {
     }
 
-    public function handle(DiagnosticsAgentService $diagnostics, SupportActionLogger $logger): void
-    {
+    public function handle(
+        DiagnosticsAgentService $diagnostics,
+        SupportActionLogger $logger,
+        UserRestoreService $userRestore,
+    ): void {
         $case = SupportCase::findOrFail($this->supportCaseId);
         $case->update(['status' => 'investigating']);
 
@@ -37,6 +41,20 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
             executedBy: 'agent',
             correlationId: $case->correlation_id,
         );
+
+        if ($case->case_type === 'account_restore' && $case->target_email) {
+            $dryRunResult = $userRestore->restore($case, (string) $case->target_email, dryRun: true);
+            $logger->log(
+                case: $case,
+                actionName: 'user_restore',
+                actionType: 'write',
+                input: ['email' => $case->target_email, 'dry_run' => true],
+                output: $dryRunResult,
+                succeeded: (bool) ($dryRunResult['ok'] ?? false),
+                executedBy: 'agent',
+                correlationId: $case->correlation_id,
+            );
+        }
 
         // Persist diagnostics snapshot as a message for UI/debugging (stable storage for later external orchestrator).
         SupportCaseMessage::create([

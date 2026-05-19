@@ -2,12 +2,16 @@
 
 namespace Tests\Unit\Support;
 
+use App\Jobs\Support\ProcessSupportCaseTriageJob;
 use App\Models\Support\SupportGmailCursor;
 use App\Services\Support\CaseIntakeService;
 use App\Services\Support\Gmail\GmailConnector;
 use App\Services\Support\Gmail\GmailIngestService;
 use App\Services\Support\Gmail\GmailMessage;
 use App\Services\Support\SupportActionLogger;
+use App\Services\Support\SupportApprovalEmailService;
+use App\Services\Support\SupportSenderAllowlist;
+use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -16,14 +20,31 @@ final class GmailIngestServiceTest extends TestCase
 {
     use RefreshDatabase;
 
+    private function makeService(GmailConnector $connector): GmailIngestService
+    {
+        $approvalEmail = $this->createMock(SupportApprovalEmailService::class);
+        $approvalEmail->method('processApprovalReply')->willReturn(null);
+
+        return new GmailIngestService(
+            connector: $connector,
+            intake: app(CaseIntakeService::class),
+            logger: app(SupportActionLogger::class),
+            allowlist: app(SupportSenderAllowlist::class),
+            approvalEmail: $approvalEmail,
+        );
+    }
+
     public function test_poll_and_ingest_creates_cases_and_dedupes(): void
     {
+        Bus::fake();
+
         config()->set('support_gmail.enabled', true);
         config()->set('support_gmail.lock.name', 'test:support:gmail:poll');
         config()->set('support_gmail.lock.ttl_seconds', 30);
         config()->set('support_gmail.user', 'me');
         config()->set('support_gmail.label', 'Support-AI');
         config()->set('support_gmail.query', 'newer_than:7d');
+        config()->set('support_gmail.allowed_sender_domains', ['matrixinternet.ie']);
 
         $fakeConnector = new class implements GmailConnector {
             public function fetchNewMessages(
@@ -35,9 +56,9 @@ final class GmailIngestServiceTest extends TestCase
             ): array {
                 return [
                     'messages' => [
-                        new GmailMessage('m1', 't1', 'Subj 1', 'sender@example.com', "Hello 1"),
-                        new GmailMessage('m1', 't1', 'Subj 1', 'sender@example.com', "Hello 1 DUP"),
-                        new GmailMessage('m2', 't2', 'Subj 2', 'sender2@example.com', "Hello 2"),
+                        new GmailMessage('m1', 't1', 'Subj 1', 'sender@matrixinternet.ie', "Hello 1"),
+                        new GmailMessage('m1', 't1', 'Subj 1', 'sender@matrixinternet.ie', "Hello 1 DUP"),
+                        new GmailMessage('m2', 't2', 'Subj 2', 'other@matrixinternet.ie', "Hello 2"),
                     ],
                     'next_history_id' => '123',
                     'warnings' => [],
@@ -45,22 +66,50 @@ final class GmailIngestServiceTest extends TestCase
             }
         };
 
-        $svc = new GmailIngestService(
-            connector: $fakeConnector,
-            intake: app(CaseIntakeService::class),
-            logger: app(SupportActionLogger::class),
-        );
-
-        $res = $svc->pollAndIngest(25);
+        $res = $this->makeService($fakeConnector)->pollAndIngest(25);
 
         $this->assertSame(2, $res['ingested']);
         $this->assertSame(1, $res['duplicates']);
+        $this->assertSame(0, $res['skipped_untrusted']);
         $this->assertSame([], $res['warnings']);
+
+        Bus::assertDispatched(ProcessSupportCaseTriageJob::class, 2);
 
         $cursor = SupportGmailCursor::query()->where('mailbox', 'me')->where('label', 'Support-AI')->first();
         $this->assertNotNull($cursor);
         $this->assertSame('123', $cursor->last_history_id);
         $this->assertNotNull($cursor->last_polled_at);
+    }
+
+    public function test_poll_skips_untrusted_senders(): void
+    {
+        config()->set('support_gmail.enabled', true);
+        config()->set('support_gmail.lock.name', 'test:support:gmail:poll:untrusted');
+        config()->set('support_gmail.lock.ttl_seconds', 30);
+        config()->set('support_gmail.allowed_sender_domains', ['codeweek.eu']);
+
+        $fakeConnector = new class implements GmailConnector {
+            public function fetchNewMessages(
+                string $mailbox,
+                ?string $label,
+                string $query,
+                ?string $sinceHistoryId,
+                int $max = 25,
+            ): array {
+                return [
+                    'messages' => [
+                        new GmailMessage('m1', 't1', 'Subj', 'notallowed@evil.com', 'body'),
+                    ],
+                    'next_history_id' => null,
+                    'warnings' => [],
+                ];
+            }
+        };
+
+        $res = $this->makeService($fakeConnector)->pollAndIngest(25);
+
+        $this->assertSame(0, $res['ingested']);
+        $this->assertSame(1, $res['skipped_untrusted']);
     }
 
     public function test_poll_skips_when_lock_is_held(): void
@@ -84,14 +133,9 @@ final class GmailIngestServiceTest extends TestCase
             }
         };
 
-        $svc = new GmailIngestService(
-            connector: $connector,
-            intake: app(CaseIntakeService::class),
-            logger: app(SupportActionLogger::class),
-        );
-
-        $res = $svc->pollAndIngest(25);
-        $this->assertSame(['ingested' => 0, 'duplicates' => 0, 'cursor_updated' => false, 'warnings' => []], $res);
+        $res = $this->makeService($connector)->pollAndIngest(25);
+        $this->assertSame(0, $res['ingested']);
+        $this->assertFalse($res['cursor_updated']);
 
         $lock->release();
     }
@@ -123,13 +167,7 @@ final class GmailIngestServiceTest extends TestCase
             }
         };
 
-        $svc = new GmailIngestService(
-            connector: $fakeConnector,
-            intake: app(CaseIntakeService::class),
-            logger: app(SupportActionLogger::class),
-        );
-
-        $res = $svc->pollAndIngest(25);
+        $res = $this->makeService($fakeConnector)->pollAndIngest(25);
 
         $this->assertSame(
             ['Configured Gmail label "Missing-Label" was not found; polling without label filter.'],
@@ -137,4 +175,3 @@ final class GmailIngestServiceTest extends TestCase
         );
     }
 }
-

@@ -24,7 +24,10 @@ class GmailAuthorizeCommand extends Command
 
         $client = new GoogleClient();
         $client->setApplicationName('Codeweek Internal Support Copilot');
-        $client->setScopes([GmailService::GMAIL_READONLY]);
+        $client->setScopes([
+            GmailService::GMAIL_READONLY,
+            GmailService::GMAIL_SEND,
+        ]);
         if ($credentialsPath) {
             if (!is_file((string) $credentialsPath)) {
                 $this->error('OAuth credentials file not found: '.$credentialsPath);
