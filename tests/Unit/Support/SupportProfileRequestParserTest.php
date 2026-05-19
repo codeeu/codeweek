@@ -34,6 +34,22 @@ final class SupportProfileRequestParserTest extends TestCase
         $this->assertNull($parsed['lastname']);
     }
 
+    public function test_parses_current_and_requested_names(): void
+    {
+        $text = <<<'TEXT'
+        Current first name: Bernard
+        Current last name: Hanna
+        Requested first name: Bernard
+        Requested last name: Hannaa
+        TEXT;
+
+        $parsed = (new SupportProfileRequestParser())->parse($text);
+
+        $this->assertSame('Bernard', $parsed['current_firstname']);
+        $this->assertSame('Hanna', $parsed['current_lastname']);
+        $this->assertSame('Hannaa', $parsed['lastname']);
+    }
+
     public function test_parses_hanna_to_hannaa_request_without_bleeding_lines(): void
     {
         $text = <<<'TEXT'
