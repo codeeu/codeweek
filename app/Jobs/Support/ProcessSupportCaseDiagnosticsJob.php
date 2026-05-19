@@ -6,6 +6,7 @@ use App\Models\Support\SupportCase;
 use App\Models\Support\SupportCaseMessage;
 use App\Services\Support\Agents\DiagnosticsAgentService;
 use App\Services\Support\SupportActionLogger;
+use App\Services\Support\UserProfileUpdateService;
 use App\Services\Support\UserRestoreService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -25,6 +26,7 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
         DiagnosticsAgentService $diagnostics,
         SupportActionLogger $logger,
         UserRestoreService $userRestore,
+        UserProfileUpdateService $userProfileUpdate,
     ): void {
         $case = SupportCase::findOrFail($this->supportCaseId);
         $case->update(['status' => 'investigating']);
@@ -47,6 +49,20 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
             $logger->log(
                 case: $case,
                 actionName: 'user_restore',
+                actionType: 'write',
+                input: ['email' => $case->target_email, 'dry_run' => true],
+                output: $dryRunResult,
+                succeeded: (bool) ($dryRunResult['ok'] ?? false),
+                executedBy: 'agent',
+                correlationId: $case->correlation_id,
+            );
+        }
+
+        if ($case->case_type === 'profile_update' && $case->target_email) {
+            $dryRunResult = $userProfileUpdate->updateFromCase($case, dryRun: true);
+            $logger->log(
+                case: $case,
+                actionName: 'user_profile_update',
                 actionType: 'write',
                 input: ['email' => $case->target_email, 'dry_run' => true],
                 output: $dryRunResult,

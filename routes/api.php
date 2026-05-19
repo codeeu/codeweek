@@ -43,6 +43,7 @@ Route::prefix('internal/support')
         // Tool endpoints (V1 tools)
         Route::post('/tools/user-audit', [ToolController::class, 'userAudit']);
         Route::post('/tools/user-restore', [ToolController::class, 'userRestore']);
+        Route::post('/tools/user-profile-update', [ToolController::class, 'userProfileUpdate']);
         Route::post('/tools/event-audit', [ToolController::class, 'eventAudit']);
 
         // Approvals
