@@ -14,6 +14,7 @@ class SupportApprovalEmailService
     public function __construct(
         private readonly GmailOutboundService $gmail,
         private readonly SupportSenderAllowlist $allowlist,
+        private readonly SupportProfileRequestParser $profileParser,
     ) {
     }
 
@@ -175,6 +176,20 @@ class SupportApprovalEmailService
             ];
         }
 
+        if ($case->case_type === 'profile_update' && $case->target_email) {
+            $profile = $this->profileParser->parse((string) ($case->normalized_message ?? $case->raw_message ?? ''));
+            if ($profile['firstname'] !== null || $profile['lastname'] !== null) {
+                return [
+                    'action' => 'user_profile_update',
+                    'payload' => [
+                        'email' => $case->target_email,
+                        'firstname' => $profile['firstname'],
+                        'lastname' => $profile['lastname'],
+                    ],
+                ];
+            }
+        }
+
         return ['action' => 'none', 'payload' => []];
     }
 
@@ -200,11 +215,22 @@ class SupportApprovalEmailService
             $lines[] = '';
         }
 
-        $dryRun = $case->actions()->where('action_name', 'user_restore')->where('action_type', 'write')->latest()->first()?->output_json;
-        if (is_array($dryRun)) {
-            $lines[] = 'Planned changes (dry run):';
-            $lines[] = json_encode($dryRun['changes_planned'] ?? $dryRun, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-            $lines[] = '';
+        foreach (['user_restore', 'user_profile_update'] as $writeAction) {
+            $dryRun = $case->actions()->where('action_name', $writeAction)->where('action_type', 'write')->latest()->first()?->output_json;
+            if (!is_array($dryRun)) {
+                continue;
+            }
+            $result = $dryRun['result'] ?? $dryRun;
+            if (is_array($result) && isset($result['before'], $result['after'])) {
+                $lines[] = 'Planned profile/account changes (dry run):';
+                $lines[] = 'Before: '.json_encode($result['before'], JSON_UNESCAPED_SLASHES);
+                $lines[] = 'After:  '.json_encode($result['after'], JSON_UNESCAPED_SLASHES);
+                $lines[] = '';
+            } elseif (is_array($result)) {
+                $lines[] = 'Planned changes (dry run):';
+                $lines[] = json_encode($result['changes_planned'] ?? $result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+                $lines[] = '';
+            }
         }
 
         $action = $proposedAction['action'] ?? 'none';
