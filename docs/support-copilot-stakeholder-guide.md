@@ -360,7 +360,7 @@ Read the summary email carefully.
    APPROVE
    ```
 
-   (`YES` or `PROCEED` also work.)
+   (`APPROVED`, `YES`, or `PROCEED` also work. Must be on its own line near the top of the reply.)
 3. Send from **`@matrixinternet.ie`** or **`@codeweek.eu`**
 4. Wait up to ~1 minute for the system to process your reply
 5. You will receive a **follow-up email** in the same thread:
