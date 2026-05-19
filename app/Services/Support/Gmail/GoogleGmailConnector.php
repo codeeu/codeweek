@@ -247,12 +247,11 @@ class GoogleGmailConnector implements GmailConnector
         $message = new GoogleMessage();
         $message->setRaw($encoded);
 
-        $params = [];
         if ($threadId) {
-            $params['threadId'] = $threadId;
+            $message->setThreadId($threadId);
         }
 
-        $sent = $this->gmail->users_messages->send($mailbox, $message, $params);
+        $sent = $this->gmail->users_messages->send($mailbox, $message);
 
         return [
             'id' => (string) $sent->getId(),
