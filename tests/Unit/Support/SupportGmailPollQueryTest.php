@@ -12,8 +12,10 @@ final class SupportGmailPollQueryTest extends TestCase
         config()->set('support_gmail.subject_prefix', 'codeweek-support');
         config()->set('support_gmail.query', 'newer_than:90d');
 
+        config()->set('support_gmail.notify_email', 'codeweek@matrixinternet.ie');
+
         $this->assertSame(
-            '(subject:codeweek-support OR subject:"[CW-SUPPORT") newer_than:90d',
+            '(subject:codeweek-support OR subject:"[CW-SUPPORT" -from:codeweek@matrixinternet.ie) newer_than:90d',
             SupportGmailPollQuery::resolve(),
         );
     }
