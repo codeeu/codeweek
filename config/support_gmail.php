@@ -12,12 +12,15 @@ return [
     // Mailbox user to query, usually "me" or a specific inbox user.
     'user' => env('SUPPORT_GMAIL_USER', 'me'),
 
-    // Optional label to scope ingestion (e.g. "Support-AI").
-    'label' => env('SUPPORT_GMAIL_LABEL', null),
+    // Optional Gmail label filter (leave empty to avoid manual labelling in the inbox).
+    'label' => env('SUPPORT_GMAIL_LABEL'),
 
-    // Optional query string appended to Gmail search.
-    // Example: 'is:unread newer_than:7d -category:promotions'
-    'query' => env('SUPPORT_GMAIL_QUERY', 'newer_than:7d'),
+    // Base Gmail search (combined with subject_prefix when set).
+    // Example: 'newer_than:90d -category:promotions'
+    'query' => env('SUPPORT_GMAIL_QUERY', 'newer_than:90d'),
+
+    // Only ingest messages whose subject contains this text (recommended over labels).
+    'subject_prefix' => env('SUPPORT_GMAIL_SUBJECT_PREFIX', '[CodeWeek Support]'),
 
     // Google OAuth client JSON: paste full JSON from Google Cloud (preferred on Forge; survives deploys).
     'credentials' => env('SUPPORT_GMAIL_CREDENTIALS'),
