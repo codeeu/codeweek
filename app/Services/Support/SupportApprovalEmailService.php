@@ -49,27 +49,56 @@ class SupportApprovalEmailService
             return SupportJson::ok('support_completion_email', ['case_id' => $case->id], ['skipped' => true]);
         }
 
-        $to = SupportEmailAddress::normalize(
-            (string) ($approval->notify_email ?: $case->forwarded_by_email ?: config('support_gmail.notify_email')),
-        );
-        if ($to === null) {
+        $recipients = $this->completionRecipients($case, $approval);
+        if ($recipients === []) {
             return SupportJson::fail('support_completion_email', ['case_id' => $case->id], 'no_recipient_email');
         }
 
         $body = $this->buildCompletionBody($case, $action, $result, $succeeded, (string) ($approval->approved_by ?? ''));
+        $subject = $this->completionSubject($case, $succeeded);
+        $sentTo = [];
 
-        $sent = $this->gmail->sendPlainText(
-            to: $to,
-            subject: $this->completionSubject($case, $succeeded),
-            body: $body,
-            threadId: $approval->gmail_thread_id,
-        );
+        foreach ($recipients as $to) {
+            $sent = $this->gmail->sendPlainText(
+                to: $to,
+                subject: $subject,
+                body: $body,
+                threadId: $approval->gmail_thread_id,
+            );
+            $sentTo[] = ['to' => $to, 'gmail_message_id' => $sent['id'] ?? null];
+        }
 
-        return SupportJson::ok('support_completion_email', ['case_id' => $case->id, 'to' => $to], [
+        return SupportJson::ok('support_completion_email', ['case_id' => $case->id], [
             'succeeded' => $succeeded,
-            'gmail_message_id' => $sent['id'] ?? null,
-            'gmail_thread_id' => $sent['thread_id'] ?? $approval->gmail_thread_id,
+            'sent_to' => $sentTo,
+            'gmail_thread_id' => $approval->gmail_thread_id,
         ]);
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function completionRecipients(SupportCase $case, SupportApproval $approval): array
+    {
+        $candidates = [
+            SupportEmailAddress::normalize((string) config('support_gmail.notify_email')),
+            SupportEmailAddress::normalize((string) $approval->notify_email),
+            SupportEmailAddress::normalize((string) $approval->approved_by),
+            SupportEmailAddress::normalize((string) $case->forwarded_by_email),
+        ];
+
+        $out = [];
+        foreach ($candidates as $email) {
+            if ($email === null || $email === '') {
+                continue;
+            }
+            if (!$this->allowlist->isAllowed($email)) {
+                continue;
+            }
+            $out[$email] = $email;
+        }
+
+        return array_values($out);
     }
 
     /**

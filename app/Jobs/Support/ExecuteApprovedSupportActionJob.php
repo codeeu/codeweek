@@ -64,7 +64,7 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
                 approvedBy: $approval->approved_by,
                 correlationId: $case->correlation_id,
             );
-            $approvalEmail->sendActionCompletion($case, $approval, $action, $noneResult, true);
+            $this->sendCompletionEmail($approvalEmail, $logger, $case, $approval, $action, $noneResult, true);
 
             return;
         }
@@ -114,7 +114,47 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
             errorMessage: $ok ? null : implode(';', (array) ($result['errors'] ?? [])),
         );
 
-        $approvalEmail->sendActionCompletion($case, $approval, $action, $result ?? [], $ok);
+        $this->sendCompletionEmail($approvalEmail, $logger, $case, $approval, $action, $result ?? [], $ok);
+    }
+
+    /**
+     * @param  array<string, mixed>  $result
+     */
+    private function sendCompletionEmail(
+        SupportApprovalEmailService $approvalEmail,
+        SupportActionLogger $logger,
+        SupportCase $case,
+        SupportApproval $approval,
+        string $action,
+        array $result,
+        bool $succeeded,
+    ): void {
+        try {
+            $payload = $approvalEmail->sendActionCompletion($case, $approval, $action, $result, $succeeded);
+            $logger->log(
+                case: $case,
+                actionName: 'support_completion_email',
+                actionType: 'notify',
+                input: ['approval_id' => $approval->id, 'action' => $action],
+                output: $payload,
+                succeeded: (bool) ($payload['ok'] ?? false),
+                executedBy: 'system',
+                correlationId: $case->correlation_id,
+                errorMessage: ($payload['ok'] ?? false) ? null : implode(';', (array) ($payload['errors'] ?? [])),
+            );
+        } catch (\Throwable $e) {
+            $logger->log(
+                case: $case,
+                actionName: 'support_completion_email',
+                actionType: 'notify',
+                input: ['approval_id' => $approval->id, 'action' => $action],
+                output: ['ok' => false, 'error' => $e->getMessage()],
+                succeeded: false,
+                executedBy: 'system',
+                correlationId: $case->correlation_id,
+                errorMessage: $e->getMessage(),
+            );
+        }
     }
 }
 
