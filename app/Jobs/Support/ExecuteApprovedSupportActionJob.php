@@ -5,6 +5,7 @@ namespace App\Jobs\Support;
 use App\Models\Support\SupportApproval;
 use App\Models\Support\SupportCase;
 use App\Services\Support\SupportActionLogger;
+use App\Services\Support\SupportApprovalEmailService;
 use App\Services\Support\UserProfileUpdateService;
 use App\Services\Support\UserRestoreService;
 use Illuminate\Bus\Queueable;
@@ -24,6 +25,7 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
     public function handle(
         UserRestoreService $userRestore,
         UserProfileUpdateService $userProfileUpdate,
+        SupportApprovalEmailService $approvalEmail,
         SupportActionLogger $logger,
     ): void
     {
@@ -50,17 +52,19 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
 
         if ($action === 'none') {
             $case->update(['status' => 'resolved']);
+            $noneResult = ['ok' => true, 'tool' => 'none', 'input' => $payload, 'result' => ['note' => 'no_write_action'], 'errors' => []];
             $logger->log(
                 case: $case,
                 actionName: 'approved_action_executed',
                 actionType: 'read',
                 input: ['approval_id' => $approval->id, 'action' => $action],
-                output: ['ok' => true, 'note' => 'no_write_action'],
+                output: $noneResult,
                 succeeded: true,
                 executedBy: 'system',
                 approvedBy: $approval->approved_by,
                 correlationId: $case->correlation_id,
             );
+            $approvalEmail->sendActionCompletion($case, $approval, $action, $noneResult, true);
 
             return;
         }
@@ -109,6 +113,8 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
             correlationId: $case->correlation_id,
             errorMessage: $ok ? null : implode(';', (array) ($result['errors'] ?? [])),
         );
+
+        $approvalEmail->sendActionCompletion($case, $approval, $action, $result ?? [], $ok);
     }
 }
 

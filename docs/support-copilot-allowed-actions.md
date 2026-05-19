@@ -12,7 +12,8 @@ This document lists everything the support copilot **allows**, **automates**, an
 |------|---------|
 | Sender email domain | `@matrixinternet.ie`, `@codeweek.eu` (config: `SUPPORT_GMAIL_ALLOWED_DOMAINS`) |
 | Extra explicit senders | Optional list via `SUPPORT_GMAIL_ALLOWED_SENDERS` |
-| Subject line | Must contain `codeweek-support` (config: `SUPPORT_GMAIL_SUBJECT_PREFIX`) |
+| Subject line (new tickets) | Must contain `codeweek-support` (config: `SUPPORT_GMAIL_SUBJECT_PREFIX`) |
+| Subject line (APPROVE replies) | Must be in the **`[CW-SUPPORT #…]`** thread (poll also searches this prefix) |
 | Teacher / parent Gmail, schools, etc. | **Not ingested** — staff must send a new email from an allowed domain |
 
 ---
@@ -98,7 +99,18 @@ Configured in `config/support_gmail.php` → `allowed_write_actions`.
 | Scope | Purpose |
 |-------|---------|
 | `gmail.readonly` | Poll inbox, read approval replies |
-| `gmail.send` | Send dry-run summaries |
+| `gmail.send` | Send dry-run summaries and completion emails |
+
+---
+
+## 10. Email notifications (what you receive)
+
+| When | Email subject (example) |
+|------|-------------------------|
+| Ticket processed (dry-run) | `[CW-SUPPORT #10] Support copilot - dry run review` |
+| After you reply **APPROVE** and action runs | `[CW-SUPPORT #10] Support copilot - action completed` or `action failed` |
+
+Completion emails go to the same recipient as the dry-run summary (`SUPPORT_GMAIL_NOTIFY_EMAIL` unless overridden). Disable with `SUPPORT_GMAIL_SEND_COMPLETION_EMAIL=false`.
 
 ---
 
