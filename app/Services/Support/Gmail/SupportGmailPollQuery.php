@@ -20,7 +20,13 @@ final class SupportGmailPollQuery
             // Ingest new tickets (codeweek-support) and APPROVE replies (Re: [CW-SUPPORT #…]).
             $subjectFilters = ['subject:'.self::quoteGmailSearchTerm($prefix)];
             if ($approvalPrefix !== '' && !self::sameSearchTerm($prefix, $approvalPrefix)) {
-                $subjectFilters[] = 'subject:'.self::quoteGmailSearchTerm($approvalPrefix);
+                $approvalSubject = 'subject:'.self::quoteGmailSearchTerm($approvalPrefix);
+                $notify = trim((string) config('support_gmail.notify_email'));
+                if ($notify !== '') {
+                    // Exclude our own dry-run / completion emails from the approval poll.
+                    $approvalSubject .= ' -from:'.self::quoteGmailFromAddress($notify);
+                }
+                $subjectFilters[] = $approvalSubject;
             }
             $parts[] = count($subjectFilters) === 1
                 ? $subjectFilters[0]
@@ -55,5 +61,10 @@ final class SupportGmailPollQuery
     private static function sameSearchTerm(string $a, string $b): bool
     {
         return strcasecmp(trim($a), trim($b)) === 0;
+    }
+
+    private static function quoteGmailFromAddress(string $email): string
+    {
+        return self::quoteGmailSearchTerm(trim($email));
     }
 }
