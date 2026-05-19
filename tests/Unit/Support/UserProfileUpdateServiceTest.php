@@ -43,6 +43,42 @@ class UserProfileUpdateServiceTest extends TestCase
         $this->assertSame('Bernard Hanna', $u->firstname);
     }
 
+    public function test_profile_update_resolves_duplicate_email_to_user_needing_change(): void
+    {
+        User::factory()->create([
+            'email' => 'dup@example.com',
+            'firstname' => 'Bernard',
+            'lastname' => 'Hanna',
+        ]);
+        User::factory()->create([
+            'email' => 'dup@example.com',
+            'firstname' => 'Bernard Hanna',
+            'lastname' => '',
+        ]);
+
+        $case = SupportCase::create([
+            'source_channel' => 'manual',
+            'processing_mode' => 'manual',
+            'subject' => 'test',
+            'raw_message' => 'test',
+            'status' => 'investigating',
+            'risk_level' => 'low',
+            'correlation_id' => 'cid',
+        ]);
+
+        $payload = app(UserProfileUpdateService::class)->updateProfile(
+            $case,
+            'dup@example.com',
+            'Bernard',
+            'Hanna',
+            true,
+        );
+
+        $this->assertTrue($payload['ok']);
+        $this->assertSame('Bernard Hanna', $payload['result']['before']['firstname']);
+        $this->assertStringContainsString('resolved_duplicate_email_to_user_id:', (string) ($payload['warnings'][0] ?? ''));
+    }
+
     public function test_profile_update_execute_changes_user(): void
     {
         config(['support_gmail.dry_run' => true]);
