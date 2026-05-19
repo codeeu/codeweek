@@ -21,6 +21,7 @@ class GmailIngestService
         private readonly SupportActionLogger $logger,
         private readonly SupportSenderAllowlist $allowlist,
         private readonly SupportApprovalEmailService $approvalEmail,
+        private readonly SupportGmailIngestFilter $ingestFilter,
     ) {
     }
 
@@ -29,6 +30,8 @@ class GmailIngestService
      *   ingested: int,
      *   duplicates: int,
      *   skipped_untrusted: int,
+     *   skipped_system: int,
+     *   skipped_non_ticket: int,
      *   approvals_processed: int,
      *   cursor_updated: bool,
      *   warnings: string[]
@@ -71,9 +74,16 @@ class GmailIngestService
             $ingested = 0;
             $duplicates = 0;
             $skippedUntrusted = 0;
+            $skippedSystem = 0;
+            $skippedNonTicket = 0;
             $approvalsProcessed = 0;
 
             foreach ($result['messages'] as $msg) {
+                if ($this->ingestFilter->isSystemOutbound($msg)) {
+                    $skippedSystem++;
+                    continue;
+                }
+
                 if ($this->allowlist->isAllowed($msg->from)) {
                     $approvalResult = $this->approvalEmail->processApprovalReply($msg, (string) $msg->from);
                     if ($approvalResult !== null) {
@@ -84,6 +94,11 @@ class GmailIngestService
 
                 if (!$this->allowlist->isAllowed($msg->from)) {
                     $skippedUntrusted++;
+                    continue;
+                }
+
+                if (!$this->ingestFilter->isTicketSubject($msg->subject)) {
+                    $skippedNonTicket++;
                     continue;
                 }
 
@@ -131,6 +146,8 @@ class GmailIngestService
                 'ingested' => $ingested,
                 'duplicates' => $duplicates,
                 'skipped_untrusted' => $skippedUntrusted,
+                'skipped_system' => $skippedSystem,
+                'skipped_non_ticket' => $skippedNonTicket,
                 'approvals_processed' => $approvalsProcessed,
                 'cursor_updated' => true,
                 'warnings' => $result['warnings'] ?? [],
@@ -141,7 +158,7 @@ class GmailIngestService
     }
 
     /**
-     * @return array{ingested: int, duplicates: int, skipped_untrusted: int, approvals_processed: int, cursor_updated: bool, warnings: string[]}
+     * @return array{ingested: int, duplicates: int, skipped_untrusted: int, skipped_system: int, skipped_non_ticket: int, approvals_processed: int, cursor_updated: bool, warnings: string[]}
      */
     private function emptyResult(): array
     {
@@ -149,6 +166,8 @@ class GmailIngestService
             'ingested' => 0,
             'duplicates' => 0,
             'skipped_untrusted' => 0,
+            'skipped_system' => 0,
+            'skipped_non_ticket' => 0,
             'approvals_processed' => 0,
             'cursor_updated' => false,
             'warnings' => [],
