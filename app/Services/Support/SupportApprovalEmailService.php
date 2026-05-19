@@ -25,12 +25,12 @@ class SupportApprovalEmailService
         return sprintf('%s #%d] Support copilot - dry run review', $prefix, $case->id);
     }
 
-    public function completionSubject(SupportCase $case, bool $succeeded): string
+    public function completionSubject(SupportCase $case, bool $succeeded, string $action = ''): string
     {
         $prefix = (string) config('support_gmail.approval_subject_prefix', '[CW-SUPPORT');
-        $label = $succeeded ? 'action completed' : 'action failed';
+        $headline = $this->completionHeadline($case, $action, $succeeded);
 
-        return sprintf('%s #%d] Support copilot - %s', $prefix, $case->id, $label);
+        return sprintf('%s #%d] %s', $prefix, $case->id, $headline);
     }
 
     /**
@@ -54,8 +54,8 @@ class SupportApprovalEmailService
             return SupportJson::fail('support_completion_email', ['case_id' => $case->id], 'no_recipient_email');
         }
 
-        $body = $this->buildCompletionBody($case, $action, $result, $succeeded, (string) ($approval->approved_by ?? ''));
-        $subject = $this->completionSubject($case, $succeeded);
+        $body = $this->buildCompletionBody($case, $approval, $action, $result, $succeeded);
+        $subject = $this->completionSubject($case, $succeeded, $action);
         $sentTo = [];
 
         foreach ($recipients as $to) {
@@ -333,50 +333,197 @@ class SupportApprovalEmailService
         return implode("\n", $lines);
     }
 
+    private function completionHeadline(SupportCase $case, string $action, bool $succeeded): string
+    {
+        if (!$succeeded) {
+            return 'Could not complete your request';
+        }
+
+        return match ($action) {
+            'user_profile_update' => 'Done — name updated on CodeWeek account',
+            'user_restore' => 'Done — CodeWeek account reactivated',
+            default => 'Done — your approved request was completed',
+        };
+    }
+
     /**
      * @param  array<string, mixed>  $result
      */
     private function buildCompletionBody(
         SupportCase $case,
+        SupportApproval $approval,
         string $action,
         array $result,
         bool $succeeded,
-        string $approvedBy,
     ): string {
+        $email = (string) ($case->target_email ?: ($approval->payload_json['email'] ?? ''));
+        $approvedBy = (string) ($approval->approved_by ?? '');
+        $approvedAt = $approval->approved_at?->timezone('UTC')->format('j M Y, H:i').' UTC';
+
         $lines = [
-            'CodeWeek Support Copilot - action result',
+            $succeeded
+                ? 'CodeWeek Support — your request has been completed'
+                : 'CodeWeek Support — we could not complete your request',
             '',
-            'Case #'.$case->id,
-            'Status: '.($succeeded ? 'COMPLETED' : 'FAILED'),
-            'Action: '.$action,
-            'Approved by: '.($approvedBy !== '' ? $approvedBy : '(unknown)'),
-            'Case status: '.($case->status ?? 'unknown'),
-            '',
+            'Reference: Case #'.$case->id,
         ];
 
-        $inner = is_array($result['result'] ?? null) ? $result['result'] : [];
-        if (isset($inner['before'], $inner['after']) && is_array($inner['before']) && is_array($inner['after'])) {
-            $lines[] = 'Before: '.json_encode($inner['before'], JSON_UNESCAPED_SLASHES);
-            $lines[] = 'After:  '.json_encode($inner['after'], JSON_UNESCAPED_SLASHES);
-            $lines[] = '';
+        if ($case->subject) {
+            $lines[] = 'Original email subject: '.$case->subject;
         }
 
-        $errors = array_values(array_filter((array) ($result['errors'] ?? [])));
-        if ($errors !== []) {
-            $lines[] = 'Errors:';
-            foreach ($errors as $error) {
-                $lines[] = '- '.$error;
-            }
-            $lines[] = '';
-        }
+        $lines[] = '';
+        $lines[] = 'What we did';
+        $lines[] = str_repeat('─', 12);
+        $lines[] = '';
 
         if ($succeeded) {
-            $lines[] = 'The approved change has been applied. No further reply is required.';
+            $lines = array_merge($lines, $this->completionSuccessLines($case, $action, $result, $email));
         } else {
-            $lines[] = 'The change was not applied. Review the case in Nova or contact the technical team.';
-            $lines[] = 'Include case #'.$case->id.' when escalating.';
+            $lines = array_merge($lines, $this->completionFailureLines($action, $result, $email, $case->id));
         }
 
+        if ($email !== '') {
+            $lines[] = '';
+            $lines[] = 'Account email: '.$email;
+        }
+
+        if ($approvedBy !== '') {
+            $lines[] = 'Approved by: '.$approvedBy.($approvedAt ? ' on '.$approvedAt : '');
+        }
+
+        $lines[] = '';
+        if ($succeeded) {
+            $lines[] = 'No further action is needed. The supporter can sign in with their usual email and password.';
+            $lines[] = 'You do not need to reply to this email.';
+        } else {
+            $lines[] = 'The change was not applied automatically. Please review this case in Nova or ask the technical team for help.';
+            $lines[] = 'When escalating, include reference Case #'.$case->id.'.';
+        }
+
+        $lines[] = '';
+        $lines[] = '— CodeWeek Support Copilot';
+
         return implode("\n", $lines);
+    }
+
+    /**
+     * @param  array<string, mixed>  $result
+     * @return list<string>
+     */
+    private function completionSuccessLines(SupportCase $case, string $action, array $result, string $email): array
+    {
+        $inner = is_array($result['result'] ?? null) ? $result['result'] : [];
+        $note = is_string($inner['note'] ?? null) ? $inner['note'] : '';
+
+        if ($action === 'user_profile_update') {
+            $lines = [
+                'We updated the name shown on the CodeWeek account'.($email !== '' ? ' for '.$email : '').'.',
+            ];
+
+            if (isset($inner['before'], $inner['after']) && is_array($inner['before']) && is_array($inner['after'])) {
+                $changeLines = $this->formatProfileNameChanges($inner['before'], $inner['after']);
+                if ($changeLines !== []) {
+                    $lines[] = '';
+                    $lines = array_merge($lines, $changeLines);
+                }
+            }
+
+            if ($note === 'profile_already_matches_requested_values') {
+                $lines[] = '';
+                $lines[] = 'The account already had the requested name — no change was required.';
+            }
+
+            return $lines;
+        }
+
+        if ($action === 'user_restore') {
+            if ($note === 'user_already_active') {
+                return [
+                    'The CodeWeek account'.($email !== '' ? ' for '.$email : '').' was already active.',
+                    'No restore was needed.',
+                ];
+            }
+
+            return [
+                'We reactivated the CodeWeek account'.($email !== '' ? ' for '.$email : '').'.',
+                'The person can sign in again with their usual email and password.',
+            ];
+        }
+
+        return [
+            'The approved request for case #'.$case->id.' was completed successfully.',
+        ];
+    }
+
+    /**
+     * @param  array<string, mixed>  $before
+     * @param  array<string, mixed>  $after
+     * @return list<string>
+     */
+    private function formatProfileNameChanges(array $before, array $after): array
+    {
+        $lines = [];
+
+        foreach (['firstname' => 'First name', 'lastname' => 'Last name'] as $field => $label) {
+            $old = $before[$field] ?? null;
+            $new = $after[$field] ?? null;
+            if ($old === $new) {
+                continue;
+            }
+            $lines[] = '  • '.$label.': '.$this->displayNameValue($old).' → '.$this->displayNameValue($new);
+        }
+
+        return $lines;
+    }
+
+    private function displayNameValue(mixed $value): string
+    {
+        if ($value === null || $value === '') {
+            return '(empty)';
+        }
+
+        return (string) $value;
+    }
+
+    /**
+     * @param  array<string, mixed>  $result
+     * @return list<string>
+     */
+    private function completionFailureLines(string $action, array $result, string $email, int $caseId): array
+    {
+        $errors = array_values(array_filter((array) ($result['errors'] ?? [])));
+        $lines = [
+            'We were not able to apply the approved change'.($email !== '' ? ' for '.$email : '').'.',
+            '',
+            'Reason:',
+        ];
+
+        if ($errors === []) {
+            $lines[] = '  • An unexpected error occurred. Please check the case in Nova.';
+        } else {
+            foreach ($errors as $error) {
+                $lines[] = '  • '.$this->humanizeError((string) $error, $action, $caseId);
+            }
+        }
+
+        return $lines;
+    }
+
+    private function humanizeError(string $code, string $action, int $caseId): string
+    {
+        $code = strtolower(trim($code));
+
+        return match (true) {
+            str_contains($code, 'no_matching_user') => 'We could not find a CodeWeek account with that email address.',
+            str_contains($code, 'ambiguous_user') => 'More than one account matched this email. A team member must review Case #'.$caseId.' manually.',
+            str_contains($code, 'invalid_email') => 'The email address on the request was not valid.',
+            str_contains($code, 'no_profile_fields') => 'The request did not include a first or last name to update.',
+            str_contains($code, 'dry_run_mode') => 'The system is in preview-only mode and could not apply live changes.',
+            str_contains($code, 'unsupported_approved_action') => 'This type of request cannot be run automatically yet.',
+            str_contains($code, 'approval_required') => 'This action still requires a separate approval step in the system.',
+            $action === 'user_restore' && str_contains($code, 'verification') => 'The account was changed but we could not confirm it is fully active. Please verify in Nova.',
+            default => 'Technical detail: '.$code,
+        };
     }
 }
