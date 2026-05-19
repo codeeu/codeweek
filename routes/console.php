@@ -40,6 +40,13 @@ Schedule::command('app:export-search-data-to-json')->dailyAt('2:00');
 Schedule::command('events:generate-recurring')->dailyAt('01:00');
 
 // Support Gmail copilot: ingest tickets by subject (codeweek-support), run dry-run, email for APPROVE.
-Schedule::command('support:gmail:poll --max=10')
-    ->everyFiveMinutes()
+$supportGmailPoll = Schedule::command('support:gmail:poll --max=10')
     ->when(fn () => (bool) config('support_gmail.enabled'));
+$supportPollMinutes = (int) config('support_gmail.poll_interval_minutes', 1);
+if ($supportPollMinutes <= 1) {
+    $supportGmailPoll->everyMinute();
+} elseif ($supportPollMinutes === 5) {
+    $supportGmailPoll->everyFiveMinutes();
+} else {
+    $supportGmailPoll->cron('*/'.$supportPollMinutes.' * * * *');
+}
