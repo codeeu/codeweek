@@ -363,6 +363,9 @@ Read the summary email carefully.
    (`YES` or `PROCEED` also work.)
 3. Send from **`@matrixinternet.ie`** or **`@codeweek.eu`**
 4. Wait up to ~5 minutes for the system to process your reply
+5. You will receive a **follow-up email** in the same thread:
+   - **`action completed`** — change was applied
+   - **`action failed`** — change was not applied (see errors in the email; check Nova)
 
 ---
 
