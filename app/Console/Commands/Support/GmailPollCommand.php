@@ -3,6 +3,7 @@
 namespace App\Console\Commands\Support;
 
 use App\Services\Support\Gmail\GmailIngestService;
+use App\Services\Support\Gmail\SupportGmailPollQuery;
 use Illuminate\Console\Command;
 
 class GmailPollCommand extends Command
@@ -20,6 +21,7 @@ class GmailPollCommand extends Command
             'ok' => true,
             'tool' => 'support:gmail:poll',
             'dry_run_mode' => (bool) config('support_gmail.dry_run', true),
+            'effective_poll_query' => SupportGmailPollQuery::resolve(),
             'result' => $result,
         ], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 

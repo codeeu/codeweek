@@ -21,7 +21,7 @@ class SupportApprovalEmailService
     {
         $prefix = (string) config('support_gmail.approval_subject_prefix', '[CW-SUPPORT');
 
-        return sprintf('%s #%d] Support copilot — dry run review', $prefix, $case->id);
+        return sprintf('%s #%d] Support copilot - dry run review', $prefix, $case->id);
     }
 
     /**
@@ -184,7 +184,7 @@ class SupportApprovalEmailService
     private function buildDryRunBody(SupportCase $case, array $proposedAction): string
     {
         $lines = [
-            'CodeWeek Support Copilot — dry run summary',
+            'CodeWeek Support Copilot - dry run summary',
             '',
             'Case #'.$case->id,
             'Subject: '.$case->subject,

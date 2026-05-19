@@ -39,7 +39,7 @@ class GmailTestCommand extends Command
             'processing_mode' => 'manual_test',
             'gmail_message_id' => 'test-'.SupportJson::correlationId(),
             'gmail_thread_id' => 'test-thread-'.time(),
-            'subject' => '[TEST] Support copilot dry run',
+            'subject' => trim((string) config('support_gmail.subject_prefix', '[CodeWeek Support]')).' [TEST] Support copilot dry run',
             'raw_message' => $message,
             'forwarded_by_email' => $from,
             'original_sender_email' => $from,
