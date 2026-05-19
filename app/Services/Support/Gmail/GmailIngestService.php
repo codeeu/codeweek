@@ -50,7 +50,7 @@ class GmailIngestService
 
         $mailbox = (string) config('support_gmail.user', 'me');
         $label = config('support_gmail.label');
-        $query = (string) config('support_gmail.query', 'newer_than:7d');
+        $query = SupportGmailPollQuery::resolve();
 
         try {
             $cursor = SupportGmailCursor::query()->firstOrCreate([

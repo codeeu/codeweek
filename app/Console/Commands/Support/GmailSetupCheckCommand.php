@@ -3,6 +3,7 @@
 namespace App\Console\Commands\Support;
 
 use App\Services\Support\Gmail\GmailOAuthConfig;
+use App\Services\Support\Gmail\SupportGmailPollQuery;
 use App\Services\Support\SupportSenderAllowlist;
 use Google\Client as GoogleClient;
 use Google\Service\Gmail as GmailService;
@@ -25,6 +26,9 @@ class GmailSetupCheckCommand extends Command
         $checks['notify_email'] = (string) config('support_gmail.notify_email');
         $checks['allowed_domains'] = $allowlist->allowedDomains();
         $checks['allowed_emails'] = $allowlist->allowedEmails();
+        $checks['label'] = config('support_gmail.label');
+        $checks['subject_prefix'] = config('support_gmail.subject_prefix');
+        $checks['effective_poll_query'] = SupportGmailPollQuery::resolve();
 
         $checks['tables'] = [
             'support_cases' => Schema::hasTable('support_cases'),
