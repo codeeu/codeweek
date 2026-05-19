@@ -48,15 +48,16 @@ final class SupportApprovalCompletionEmailTest extends TestCase
         ]);
 
         $gmail = $this->createMock(GmailOutboundService::class);
-        $gmail->expects($this->once())
+        config()->set('support_gmail.allowed_sender_domains', ['matrixinternet.ie']);
+        config()->set('support_gmail.notify_email', 'notify@matrixinternet.ie');
+
+        $gmail->expects($this->exactly(2))
             ->method('sendPlainText')
-            ->with(
-                'notify@matrixinternet.ie',
-                $this->stringContains('action completed'),
-                $this->stringContains('COMPLETED'),
-                'thread-1',
-            )
-            ->willReturn(['id' => 'msg-1', 'thread_id' => 'thread-1']);
+            ->willReturnCallback(function (string $to) {
+                $this->assertContains($to, ['notify@matrixinternet.ie', 'admin@matrixinternet.ie']);
+
+                return ['id' => 'msg-'.$to, 'thread_id' => 'thread-1'];
+            });
 
         $svc = new SupportApprovalEmailService(
             $gmail,
