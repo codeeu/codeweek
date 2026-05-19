@@ -17,9 +17,9 @@ final class SupportApprovalCompletionEmailTest extends TestCase
         $case = new SupportCase(['id' => 10]);
         $svc = app(SupportApprovalEmailService::class);
 
-        $this->assertStringContainsString('action completed', $svc->completionSubject($case, true));
-        $this->assertStringContainsString('action failed', $svc->completionSubject($case, false));
-        $this->assertStringContainsString('#10', $svc->completionSubject($case, true));
+        $this->assertStringContainsString('Done — name updated', $svc->completionSubject($case, true, 'user_profile_update'));
+        $this->assertStringContainsString('Could not complete', $svc->completionSubject($case, false, 'user_profile_update'));
+        $this->assertStringContainsString('#10', $svc->completionSubject($case, true, 'user_profile_update'));
     }
 
     public function test_send_action_completion_calls_gmail(): void
