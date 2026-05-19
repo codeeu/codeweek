@@ -38,3 +38,8 @@ Schedule::command('app:sync-blogs')->dailyAt('1:00');
 Schedule::command('app:export-search-data-to-json')->dailyAt('2:00');
 
 Schedule::command('events:generate-recurring')->dailyAt('01:00');
+
+// Support Gmail copilot: ingest tickets by subject (codeweek-support), run dry-run, email for APPROVE.
+Schedule::command('support:gmail:poll --max=10')
+    ->everyFiveMinutes()
+    ->when(fn () => (bool) config('support_gmail.enabled'));
