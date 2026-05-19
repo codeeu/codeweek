@@ -25,6 +25,53 @@ class SupportApprovalEmailService
         return sprintf('%s #%d] Support copilot - dry run review', $prefix, $case->id);
     }
 
+    public function completionSubject(SupportCase $case, bool $succeeded): string
+    {
+        $prefix = (string) config('support_gmail.approval_subject_prefix', '[CW-SUPPORT');
+        $label = $succeeded ? 'action completed' : 'action failed';
+
+        return sprintf('%s #%d] Support copilot - %s', $prefix, $case->id, $label);
+    }
+
+    /**
+     * Follow-up email after APPROVE is processed (success or failure).
+     *
+     * @param  array<string, mixed>  $result
+     */
+    public function sendActionCompletion(
+        SupportCase $case,
+        SupportApproval $approval,
+        string $action,
+        array $result,
+        bool $succeeded,
+    ): array {
+        if (!config('support_gmail.send_completion_email', true)) {
+            return SupportJson::ok('support_completion_email', ['case_id' => $case->id], ['skipped' => true]);
+        }
+
+        $to = SupportEmailAddress::normalize(
+            (string) ($approval->notify_email ?: $case->forwarded_by_email ?: config('support_gmail.notify_email')),
+        );
+        if ($to === null) {
+            return SupportJson::fail('support_completion_email', ['case_id' => $case->id], 'no_recipient_email');
+        }
+
+        $body = $this->buildCompletionBody($case, $action, $result, $succeeded, (string) ($approval->approved_by ?? ''));
+
+        $sent = $this->gmail->sendPlainText(
+            to: $to,
+            subject: $this->completionSubject($case, $succeeded),
+            body: $body,
+            threadId: $approval->gmail_thread_id,
+        );
+
+        return SupportJson::ok('support_completion_email', ['case_id' => $case->id, 'to' => $to], [
+            'succeeded' => $succeeded,
+            'gmail_message_id' => $sent['id'] ?? null,
+            'gmail_thread_id' => $sent['thread_id'] ?? $approval->gmail_thread_id,
+        ]);
+    }
+
     /**
      * Send dry-run summary and open a pending approval for email reply.
      */
@@ -241,9 +288,58 @@ class SupportApprovalEmailService
             $lines[] = 'To execute this change, reply to this email with a single line:';
             $lines[] = 'APPROVE';
             $lines[] = '';
+            $lines[] = 'You will receive a follow-up email when the action has run (completed or failed).';
+            $lines[] = '';
             $lines[] = '(Only @matrixinternet.ie and @codeweek.eu senders are accepted.)';
         } else {
             $lines[] = 'No automated write action proposed. Review the case in Nova if needed.';
+        }
+
+        return implode("\n", $lines);
+    }
+
+    /**
+     * @param  array<string, mixed>  $result
+     */
+    private function buildCompletionBody(
+        SupportCase $case,
+        string $action,
+        array $result,
+        bool $succeeded,
+        string $approvedBy,
+    ): string {
+        $lines = [
+            'CodeWeek Support Copilot - action result',
+            '',
+            'Case #'.$case->id,
+            'Status: '.($succeeded ? 'COMPLETED' : 'FAILED'),
+            'Action: '.$action,
+            'Approved by: '.($approvedBy !== '' ? $approvedBy : '(unknown)'),
+            'Case status: '.($case->status ?? 'unknown'),
+            '',
+        ];
+
+        $inner = is_array($result['result'] ?? null) ? $result['result'] : [];
+        if (isset($inner['before'], $inner['after']) && is_array($inner['before']) && is_array($inner['after'])) {
+            $lines[] = 'Before: '.json_encode($inner['before'], JSON_UNESCAPED_SLASHES);
+            $lines[] = 'After:  '.json_encode($inner['after'], JSON_UNESCAPED_SLASHES);
+            $lines[] = '';
+        }
+
+        $errors = array_values(array_filter((array) ($result['errors'] ?? [])));
+        if ($errors !== []) {
+            $lines[] = 'Errors:';
+            foreach ($errors as $error) {
+                $lines[] = '- '.$error;
+            }
+            $lines[] = '';
+        }
+
+        if ($succeeded) {
+            $lines[] = 'The approved change has been applied. No further reply is required.';
+        } else {
+            $lines[] = 'The change was not applied. Review the case in Nova or contact the technical team.';
+            $lines[] = 'Include case #'.$case->id.' when escalating.';
         }
 
         return implode("\n", $lines);

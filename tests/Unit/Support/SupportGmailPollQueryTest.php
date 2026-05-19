@@ -13,9 +13,22 @@ final class SupportGmailPollQueryTest extends TestCase
         config()->set('support_gmail.query', 'newer_than:90d');
 
         $this->assertSame(
-            'subject:codeweek-support newer_than:90d',
+            '(subject:codeweek-support OR subject:"[CW-SUPPORT") newer_than:90d',
             SupportGmailPollQuery::resolve(),
         );
+    }
+
+    public function test_includes_approval_reply_subject_for_poll(): void
+    {
+        config()->set('support_gmail.subject_prefix', 'codeweek-support');
+        config()->set('support_gmail.approval_subject_prefix', '[CW-SUPPORT');
+        config()->set('support_gmail.query', 'newer_than:90d');
+
+        $query = SupportGmailPollQuery::resolve();
+
+        $this->assertStringContainsString('codeweek-support', $query);
+        $this->assertStringContainsString('[CW-SUPPORT', $query);
+        $this->assertStringContainsString(' OR ', $query);
     }
 
     public function test_skips_duplicate_subject_filter_when_query_already_has_one(): void
