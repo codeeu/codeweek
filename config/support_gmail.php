@@ -20,7 +20,8 @@ return [
     'query' => env('SUPPORT_GMAIL_QUERY', 'newer_than:90d'),
 
     // Only ingest messages whose subject contains this text (recommended over labels).
-    'subject_prefix' => env('SUPPORT_GMAIL_SUBJECT_PREFIX', '[CodeWeek Support]'),
+    // Production uses: SUPPORT_GMAIL_SUBJECT_PREFIX=codeweek-support
+    'subject_prefix' => env('SUPPORT_GMAIL_SUBJECT_PREFIX', 'codeweek-support'),
 
     // Google OAuth client JSON: paste full JSON from Google Cloud (preferred on Forge; survives deploys).
     'credentials' => env('SUPPORT_GMAIL_CREDENTIALS'),
