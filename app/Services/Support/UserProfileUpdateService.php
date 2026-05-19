@@ -30,6 +30,8 @@ class UserProfileUpdateService
             lastname: $parsed['lastname'],
             dryRun: $dryRun,
             viaEmailApproval: $viaEmailApproval,
+            currentFirstname: $parsed['current_firstname'] ?? null,
+            currentLastname: $parsed['current_lastname'] ?? null,
         );
     }
 
@@ -40,6 +42,8 @@ class UserProfileUpdateService
         ?string $lastname,
         bool $dryRun,
         bool $viaEmailApproval = false,
+        ?string $currentFirstname = null,
+        ?string $currentLastname = null,
     ): array {
         $tool = 'user_profile_update';
         $input = [
@@ -67,7 +71,13 @@ class UserProfileUpdateService
             return SupportJson::fail($tool, $input, 'no_matching_user_found');
         }
 
-        $user = $this->resolveUserForProfileUpdate($matches, $firstname, $lastname);
+        $user = $this->resolveUserForProfileUpdate(
+            $matches,
+            $firstname,
+            $lastname,
+            $currentFirstname,
+            $currentLastname,
+        );
         if ($user === null) {
             return SupportJson::fail($tool, $input, [
                 'ambiguous_user_match',
@@ -159,8 +169,13 @@ class UserProfileUpdateService
      *
      * @param  Collection<int, User>  $matches
      */
-    private function resolveUserForProfileUpdate(Collection $matches, ?string $firstname, ?string $lastname): ?User
-    {
+    private function resolveUserForProfileUpdate(
+        Collection $matches,
+        ?string $firstname,
+        ?string $lastname,
+        ?string $currentFirstname = null,
+        ?string $currentLastname = null,
+    ): ?User {
         if ($matches->count() === 1) {
             return $matches->first();
         }
@@ -171,6 +186,18 @@ class UserProfileUpdateService
         }
 
         $candidates = $active->isNotEmpty() ? $active : $matches->values();
+
+        if ($currentFirstname !== null || $currentLastname !== null) {
+            $byCurrent = $candidates->filter(
+                fn (User $user) => $this->userMatchesCurrentNames($user, $currentFirstname, $currentLastname),
+            )->values();
+            if ($byCurrent->count() === 1) {
+                return $byCurrent->first();
+            }
+            if ($byCurrent->isNotEmpty()) {
+                $candidates = $byCurrent;
+            }
+        }
 
         $needingUpdate = $candidates->filter(function (User $user) use ($firstname, $lastname) {
             if ($firstname !== null && $firstname !== $user->firstname) {
@@ -187,7 +214,75 @@ class UserProfileUpdateService
             return $needingUpdate->first();
         }
 
+        if ($needingUpdate->count() > 1) {
+            return $this->pickUserWithFewestChanges($needingUpdate, $firstname, $lastname);
+        }
+
         return null;
+    }
+
+    private function userMatchesCurrentNames(User $user, ?string $currentFirstname, ?string $currentLastname): bool
+    {
+        if ($currentFirstname !== null && ! $this->namesEqual($currentFirstname, $user->firstname)) {
+            return false;
+        }
+        if ($currentLastname !== null && ! $this->namesEqual($currentLastname, $user->lastname)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * @param  Collection<int, User>  $candidates
+     */
+    private function pickUserWithFewestChanges(Collection $candidates, ?string $firstname, ?string $lastname): ?User
+    {
+        $ranked = $candidates->map(function (User $user) use ($firstname, $lastname) {
+            $fieldsToChange = 0;
+            if ($firstname !== null && $firstname !== $user->firstname) {
+                $fieldsToChange++;
+            }
+            if ($lastname !== null && $lastname !== $user->lastname) {
+                $fieldsToChange++;
+            }
+
+            $tieScore = 0;
+            if ($firstname !== null && $this->namesEqual($firstname, $user->firstname)) {
+                $tieScore += 2;
+            }
+            if ($lastname !== null && $user->lastname !== '' && $user->lastname !== 'Last Name') {
+                $tieScore += 1;
+            }
+
+            return ['user' => $user, 'fields_to_change' => $fieldsToChange, 'tie_score' => $tieScore];
+        })->sort(function (array $a, array $b): int {
+            if ($a['fields_to_change'] !== $b['fields_to_change']) {
+                return $a['fields_to_change'] <=> $b['fields_to_change'];
+            }
+            if ($a['tie_score'] !== $b['tie_score']) {
+                return $b['tie_score'] <=> $a['tie_score'];
+            }
+
+            return $b['user']->id <=> $a['user']->id;
+        })->values();
+
+        if ($ranked->isEmpty()) {
+            return null;
+        }
+
+        $best = $ranked->first();
+        $sameRank = $ranked->filter(
+            fn (array $row) => $row['fields_to_change'] === $best['fields_to_change']
+                && $row['tie_score'] === $best['tie_score'],
+        );
+
+        return $sameRank->count() === 1 ? $best['user'] : null;
+    }
+
+    private function namesEqual(?string $a, ?string $b): bool
+    {
+        return Str::lower(trim((string) $a)) === Str::lower(trim((string) $b));
     }
 
     private function isValidEmail(string $email): bool
