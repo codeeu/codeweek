@@ -62,8 +62,8 @@ return [
     // Default recipient for support:gmail:test and dry-run summaries when requester unknown.
     'notify_email' => env('SUPPORT_GMAIL_NOTIFY_EMAIL', 'codeweek@matrixinternet.ie'),
 
-    // First line of a reply must match one of these (case-insensitive) to approve.
-    'approval_keywords' => ['approve', 'yes', 'proceed'],
+    // First non-empty line of a reply must match one of these (case-insensitive) to approve.
+    'approval_keywords' => ['approve', 'approved', 'yes', 'proceed'],
 
     // Subject prefix for approval threads: "[CW-SUPPORT #123] ..."
     'approval_subject_prefix' => '[CW-SUPPORT',
