@@ -12,7 +12,8 @@ This document lists everything the support copilot **allows**, **automates**, an
 |------|---------|
 | Sender email domain | `@matrixinternet.ie`, `@codeweek.eu` (config: `SUPPORT_GMAIL_ALLOWED_DOMAINS`) |
 | Extra explicit senders | Optional list via `SUPPORT_GMAIL_ALLOWED_SENDERS` |
-| Subject line | Must contain `codeweek-support` (config: `SUPPORT_GMAIL_SUBJECT_PREFIX`) |
+| Subject line (new tickets) | Must contain `codeweek-support` (config: `SUPPORT_GMAIL_SUBJECT_PREFIX`) |
+| Subject line (APPROVE replies) | Must be in the **`[CW-SUPPORT #…]`** thread (poll also searches this prefix) |
 | Teacher / parent Gmail, schools, etc. | **Not ingested** — staff must send a new email from an allowed domain |
 
 ---
