@@ -29,24 +29,10 @@ final class SupportProfileRequestParser
     {
         $normalized = Str::of($text)->replace("\r\n", "\n")->toString();
 
-        $email = $this->extractFirstEmail($normalized);
-        $firstname = $this->extractLabelledValue($normalized, [
-            'requested first name',
-            'new first name',
-            'first name',
-            'firstname',
-        ]);
-        $lastname = $this->extractLabelledValue($normalized, [
-            'requested last name',
-            'new last name',
-            'last name',
-            'lastname',
-        ]);
-
         return [
-            'email' => $email,
-            'firstname' => $this->sanitizeName($firstname),
-            'lastname' => $this->sanitizeName($lastname),
+            'email' => $this->extractFirstEmail($normalized),
+            'firstname' => $this->sanitizeName($this->extractRequestedName($normalized, 'first')),
+            'lastname' => $this->sanitizeName($this->extractRequestedName($normalized, 'last')),
         ];
     }
 
@@ -58,22 +44,33 @@ final class SupportProfileRequestParser
         return $emails[0] ?? null;
     }
 
-    /**
-     * @param list<string> $labels
-     */
-    private function extractLabelledValue(string $text, array $labels): ?string
+    private function extractRequestedName(string $text, string $which): ?string
     {
-        foreach ($labels as $label) {
-            $pattern = '/'.preg_quote($label, '/').'\s*[\*:]?\s*(.+?)(?:\n|$)/iu';
+        $field = $which === 'first' ? 'first\\s*name' : 'last\\s*name';
+
+        foreach (['requested', 'new'] as $prefix) {
+            $pattern = '/(?:^|\n)\s*'.preg_quote($prefix, '/').'\s+'.$field.'\s*[:*]?\s*([^\n\r]+)/iu';
             if (preg_match($pattern, $text, $m)) {
-                $value = trim($m[1]);
-                if ($value !== '') {
-                    return $value;
-                }
+                return $this->cleanCapturedName($m[1]);
             }
         }
 
         return null;
+    }
+
+    private function cleanCapturedName(string $value): string
+    {
+        $value = trim(preg_replace('/\s+/', ' ', $value) ?? '');
+
+        if (preg_match('/^(.+?)(?:\s+the email\b|\s+email address\b)/iu', $value, $m)) {
+            $value = trim($m[1]);
+        }
+
+        if (str_contains($value, "\n")) {
+            $value = trim(explode("\n", $value)[0]);
+        }
+
+        return $value;
     }
 
     private function sanitizeName(?string $value): ?string
@@ -82,7 +79,7 @@ final class SupportProfileRequestParser
             return null;
         }
 
-        $value = trim(preg_replace('/\s+/', ' ', $value) ?? '');
+        $value = trim($value);
         if ($value === '') {
             return null;
         }
