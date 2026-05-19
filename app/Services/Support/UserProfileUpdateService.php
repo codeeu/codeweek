@@ -4,6 +4,7 @@ namespace App\Services\Support;
 
 use App\Models\Support\SupportCase;
 use App\User;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
@@ -66,12 +67,17 @@ class UserProfileUpdateService
             return SupportJson::fail($tool, $input, 'no_matching_user_found');
         }
 
-        if ($matches->count() !== 1) {
-            return SupportJson::fail($tool, $input, 'ambiguous_user_match');
+        $user = $this->resolveUserForProfileUpdate($matches, $firstname, $lastname);
+        if ($user === null) {
+            return SupportJson::fail($tool, $input, [
+                'ambiguous_user_match',
+                'matched_user_ids: '.$matches->pluck('id')->implode(','),
+            ]);
         }
 
-        /** @var User $user */
-        $user = $matches->first();
+        $warnings = $matches->count() > 1
+            ? ['resolved_duplicate_email_to_user_id:'.$user->id]
+            : [];
 
         $before = [
             'user_id' => $user->id,
@@ -95,7 +101,7 @@ class UserProfileUpdateService
                 'before' => $before,
                 'after' => $before,
                 'note' => 'profile_already_matches_requested_values',
-            ]);
+            ], $warnings);
         }
 
         $planned = [
@@ -114,7 +120,7 @@ class UserProfileUpdateService
                 'changes_applied' => [],
                 'before' => $before,
                 'after' => $after,
-            ]);
+            ], $warnings);
         }
 
         if (config('support_gmail.dry_run') && !$viaEmailApproval) {
@@ -145,7 +151,43 @@ class UserProfileUpdateService
             'changes_applied' => [$planned],
             'before' => $before,
             'after' => $after,
-        ]);
+        ], $warnings);
+    }
+
+    /**
+     * When multiple users share an email, pick the one that still needs the requested name change.
+     *
+     * @param  Collection<int, User>  $matches
+     */
+    private function resolveUserForProfileUpdate(Collection $matches, ?string $firstname, ?string $lastname): ?User
+    {
+        if ($matches->count() === 1) {
+            return $matches->first();
+        }
+
+        $active = $matches->filter(fn (User $user) => $user->deleted_at === null)->values();
+        if ($active->count() === 1) {
+            return $active->first();
+        }
+
+        $candidates = $active->isNotEmpty() ? $active : $matches->values();
+
+        $needingUpdate = $candidates->filter(function (User $user) use ($firstname, $lastname) {
+            if ($firstname !== null && $firstname !== $user->firstname) {
+                return true;
+            }
+            if ($lastname !== null && $lastname !== $user->lastname) {
+                return true;
+            }
+
+            return false;
+        });
+
+        if ($needingUpdate->count() === 1) {
+            return $needingUpdate->first();
+        }
+
+        return null;
     }
 
     private function isValidEmail(string $email): bool
