@@ -88,6 +88,7 @@ Configured in `config/support_gmail.php` → `allowed_write_actions`.
 | Variable | Typical prod | Effect |
 |----------|--------------|--------|
 | `SUPPORT_GMAIL_ENABLED` | `true` | Turns on polling |
+| `SUPPORT_GMAIL_POLL_INTERVAL_MINUTES` | `1` | Scheduler frequency (1–5 typical; increase if Gmail rate limits) |
 | `SUPPORT_GMAIL_DRY_RUN` | `true` | Pipeline sends summaries; writes need **APPROVE** |
 | `SUPPORT_GMAIL_NOTIFY_EMAIL` | `codeweek@matrixinternet.ie` | Dry-run summary recipient |
 | `SUPPORT_GMAIL_ALLOWED_DOMAINS` | `matrixinternet.ie,codeweek.eu` | Ingest + approve senders |

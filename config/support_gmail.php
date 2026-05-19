@@ -3,6 +3,9 @@
 return [
     'enabled' => env('SUPPORT_GMAIL_ENABLED', false),
 
+    // How often support:gmail:poll runs (minutes). 1 is fine for low-volume support mailboxes.
+    'poll_interval_minutes' => max(1, (int) env('SUPPORT_GMAIL_POLL_INTERVAL_MINUTES', 1)),
+
     // In a load-balanced setup, use a distributed lock so only one node polls at a time.
     'lock' => [
         'name' => env('SUPPORT_GMAIL_LOCK_NAME', 'support:gmail:poll'),
