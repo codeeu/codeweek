@@ -9,7 +9,7 @@
 CodeWeek has an automated **support assistant** that:
 
 - Watches a dedicated support inbox
-- Picks up qualifying emails automatically (about every 5 minutes)
+- Picks up qualifying emails automatically (about every minute by default)
 - Runs basic checks on the user account mentioned in the email
 - Sends a **summary email** to **codeweek@matrixinternet.ie** so the team can review before any change is made
 
@@ -144,7 +144,7 @@ Reported by: Rachele (EU CodeWeek coordination)
 | `cw25-x6LtQ` | Extra context for manual verification (V1 may not auto-use the code yet) |
 | Work email sender | Required for ingest and for any later **APPROVE** reply |
 
-**What the team receives (~5 minutes later)**
+**What the team receives (~1 minute later)**
 
 An email to **codeweek@matrixinternet.ie** similar to:
 
@@ -325,7 +325,7 @@ Please update the profile name fields. Email address must stay the same.
 
 | When | What happens |
 |------|----------------|
-| **Within ~5 minutes** | The system reads the inbox and creates a support case |
+| **Within ~1 minute** | The system reads the inbox and creates a support case |
 | **Shortly after** | A summary is emailed to **codeweek@matrixinternet.ie** |
 | **Subject of summary** | `[CW-SUPPORT #123] Support copilot - dry run review` |
 | **Sender** | Code Week Bot (automated) |
@@ -362,7 +362,7 @@ Read the summary email carefully.
 
    (`YES` or `PROCEED` also work.)
 3. Send from **`@matrixinternet.ie`** or **`@codeweek.eu`**
-4. Wait up to ~5 minutes for the system to process your reply
+4. Wait up to ~1 minute for the system to process your reply
 5. You will receive a **follow-up email** in the same thread:
    - **`action completed`** — change was applied
    - **`action failed`** — change was not applied (see errors in the email; check Nova)
@@ -431,7 +431,7 @@ BODY:    User email: someone@example.com
          Problem: ...
          Request: ...
 
-WAIT:    ~5 min → summary at codeweek@matrixinternet.ie
+WAIT:    ~1 min → summary at codeweek@matrixinternet.ie
 
 APPROVE: Only if summary asks — reply with first line: APPROVE
 ```
