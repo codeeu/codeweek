@@ -5,6 +5,7 @@ namespace App\Jobs\Support;
 use App\Models\Support\SupportApproval;
 use App\Models\Support\SupportCase;
 use App\Services\Support\SupportActionLogger;
+use App\Services\Support\UserProfileUpdateService;
 use App\Services\Support\UserRestoreService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -20,7 +21,11 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
     {
     }
 
-    public function handle(UserRestoreService $userRestore, SupportActionLogger $logger): void
+    public function handle(
+        UserRestoreService $userRestore,
+        UserProfileUpdateService $userProfileUpdate,
+        SupportActionLogger $logger,
+    ): void
     {
         $approval = SupportApproval::findOrFail($this->supportApprovalId);
         $case = SupportCase::findOrFail($approval->support_case_id);
@@ -67,6 +72,16 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
                 email: (string) ($payload['email'] ?? ''),
                 dryRun: false,
                 confidence: isset($payload['confidence']) ? (float) $payload['confidence'] : null,
+                viaEmailApproval: true,
+            );
+        } elseif ($action === 'user_profile_update') {
+            $result = $userProfileUpdate->updateProfile(
+                case: $case,
+                email: (string) ($payload['email'] ?? ''),
+                firstname: isset($payload['firstname']) ? (string) $payload['firstname'] : null,
+                lastname: isset($payload['lastname']) ? (string) $payload['lastname'] : null,
+                dryRun: false,
+                viaEmailApproval: true,
             );
         } else {
             $result = [

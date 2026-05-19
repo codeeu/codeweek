@@ -64,5 +64,16 @@ return [
 
     // Subject prefix for approval threads: "[CW-SUPPORT #123] ..."
     'approval_subject_prefix' => '[CW-SUPPORT',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Allowed automated write actions (email APPROVE or CLI)
+    |--------------------------------------------------------------------------
+    | See docs/support-copilot-allowed-actions.md for the full matrix.
+    */
+    'allowed_write_actions' => [
+        'user_restore',
+        'user_profile_update',
+    ],
 ];
 

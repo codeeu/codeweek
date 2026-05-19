@@ -7,6 +7,7 @@ use App\Services\Support\EventAuditService;
 use App\Services\Support\SupportActionLogger;
 use App\Services\Support\SupportJson;
 use App\Services\Support\UserAuditService;
+use App\Services\Support\UserProfileUpdateService;
 use App\Services\Support\UserRestoreService;
 use Illuminate\Http\Request;
 
@@ -16,6 +17,7 @@ class ToolController
         private readonly SupportActionLogger $logger,
         private readonly UserAuditService $userAudit,
         private readonly UserRestoreService $userRestore,
+        private readonly UserProfileUpdateService $userProfileUpdate,
         private readonly EventAuditService $eventAudit,
     ) {
     }
@@ -71,6 +73,40 @@ class ToolController
             succeeded: (bool) ($payload['ok'] ?? false),
             executedBy: 'system',
             requiresApproval: in_array('approval_required', $payload['errors'] ?? [], true),
+            correlationId: $case->correlation_id,
+            errorMessage: ($payload['ok'] ?? false) ? null : implode(';', (array) ($payload['errors'] ?? [])),
+        );
+
+        return SupportJson::json($payload, ($payload['ok'] ?? false) ? 200 : 422);
+    }
+
+    public function userProfileUpdate(Request $request)
+    {
+        $data = $request->validate([
+            'support_case_id' => ['required', 'integer'],
+            'email' => ['required', 'string'],
+            'firstname' => ['nullable', 'string', 'max:255'],
+            'lastname' => ['nullable', 'string', 'max:255'],
+            'dry_run' => ['required', 'boolean'],
+        ]);
+
+        $case = SupportCase::findOrFail((int) $data['support_case_id']);
+        $payload = $this->userProfileUpdate->updateProfile(
+            case: $case,
+            email: $data['email'],
+            firstname: $data['firstname'] ?? null,
+            lastname: $data['lastname'] ?? null,
+            dryRun: (bool) $data['dry_run'],
+        );
+
+        $this->logger->log(
+            case: $case,
+            actionName: 'user_profile_update',
+            actionType: 'write',
+            input: $data,
+            output: $payload,
+            succeeded: (bool) ($payload['ok'] ?? false),
+            executedBy: 'system',
             correlationId: $case->correlation_id,
             errorMessage: ($payload['ok'] ?? false) ? null : implode(';', (array) ($payload['errors'] ?? [])),
         );
