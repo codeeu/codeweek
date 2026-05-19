@@ -195,16 +195,22 @@ class SupportApprovalEmailService
 
     public function isApprovalReply(string $body): bool
     {
-        $keywords = config('support_gmail.approval_keywords', ['approve', 'yes', 'proceed']);
-        $firstLine = strtolower(trim(Str::before(str_replace("\r\n", "\n", $body), "\n")));
+        $keywords = config('support_gmail.approval_keywords', ['approve', 'approved', 'yes', 'proceed']);
+        $lines = explode("\n", str_replace("\r\n", "\n", $body));
 
-        foreach ($keywords as $keyword) {
-            $keyword = strtolower(trim((string) $keyword));
-            if ($keyword === '') {
+        foreach (array_slice($lines, 0, 8) as $line) {
+            $line = strtolower(trim($line));
+            if ($line === '') {
                 continue;
             }
-            if ($firstLine === $keyword || str_starts_with($firstLine, $keyword.' ')) {
-                return true;
+            foreach ($keywords as $keyword) {
+                $keyword = strtolower(trim((string) $keyword));
+                if ($keyword === '') {
+                    continue;
+                }
+                if ($line === $keyword || str_starts_with($line, $keyword.' ')) {
+                    return true;
+                }
             }
         }
 
