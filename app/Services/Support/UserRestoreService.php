@@ -15,7 +15,7 @@ class UserRestoreService
     ) {
     }
 
-    public function restore(SupportCase $case, string $email, bool $dryRun, ?float $confidence = null): array
+    public function restore(SupportCase $case, string $email, bool $dryRun, ?float $confidence = null, bool $viaEmailApproval = false): array
     {
         $tool = 'user_restore';
         $input = ['email' => $email, 'dry_run' => $dryRun];
@@ -93,7 +93,7 @@ class UserRestoreService
             ]);
         }
 
-        if (config('support_gmail.dry_run')) {
+        if (config('support_gmail.dry_run') && !$viaEmailApproval) {
             return SupportJson::fail($tool, $input, 'dry_run_mode_requires_email_approval');
         }
 
