@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\URL;
 
 class GrassrootsGrantsPage extends Model
 {
@@ -52,5 +53,13 @@ class GrassrootsGrantsPage extends Model
             'meta_description' => 'Discover EU Code Week Round 1 grassroots grant projects, impact, and funded initiatives across Europe.',
             'round_title' => 'Round 1 of Grants',
         ]);
+    }
+
+    public function previewSignedUrl(int $days = 14): string
+    {
+        return URL::temporarySignedRoute(
+            'grassroots-grants.preview',
+            now()->addDays($days),
+        );
     }
 }
