@@ -130,6 +130,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         View::composer('static.girls-in-digital-week', \App\Http\View\Composers\GirlsInDigitalComposer::class);
+        View::composer('static.grassroots-grants', \App\Http\View\Composers\GrassrootsGrantsComposer::class);
 
         /**
          * Paginate a standard Laravel Collection.
