@@ -130,7 +130,14 @@
                         @forelse(($page?->activeHubs ?? collect()) as $hub)
                             <div class="bg-transparent border-b-2 border-solid border-[#A4B8D9]">
                                 <div class="text-[#20262C] font-semibold text-lg py-4 cursor-pointer flex items-center justify-between duration-300 accordion-item-header">
-                                    <p>{{ $hub->title }}</p>
+                                    <p>
+                                        {{ $hub->title }}
+                                        @if($hub->isStatusOnly() && ($statusLabel = $hub->statusLabel()))
+                                            <span class="block text-base font-normal text-[#333E48] mt-1">
+                                                <strong>Status:</strong> {{ $statusLabel }}
+                                            </span>
+                                        @endif
+                                    </p>
                                     <button class="flex justify-center items-center rounded-full duration-300 bg-yellow hover:bg-primary min-w-12 min-h-12">
                                         <img class="duration-300" src="/images/digital-girls/arrow.svg" alt="" />
                                     </button>
@@ -138,8 +145,11 @@
                                 <div class="overflow-hidden max-h-0 transition-all duration-300">
                                     <div class="pb-6 pt-2 text-[#333E48] text-lg md:text-xl font-normal grants-content">
                                         @if($hub->isStatusOnly())
-                                            @if($hub->status_message)
-                                                {!! $hub->status_message !!}
+                                            @if($statusLabel = $hub->statusLabel())
+                                                <p class="mb-4"><strong>Status:</strong> {{ $statusLabel }}</p>
+                                            @endif
+                                            @if($statusBody = $hub->statusBodyHtml())
+                                                <div>{!! $statusBody !!}</div>
                                             @endif
                                         @else
                                             <div class="mb-4">
