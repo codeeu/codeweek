@@ -236,8 +236,11 @@ Route::get('/contact-us', [StaticPageController::class, 'static'])
      ->name('contact-us');
 Route::get('/faqs', [StaticPageController::class, 'static'])
      ->name('faqs');
-Route::get('/grassroots-grants', [StaticPageController::class, 'static'])
+Route::get('/grassroots-grants', [\App\Http\Controllers\GrassrootsGrantsController::class, 'show'])
      ->name('grassroots-grants');
+Route::get('/grassroots-grants-preview', [\App\Http\Controllers\GrassrootsGrantsController::class, 'preview'])
+     ->middleware('signed')
+     ->name('grassroots-grants.preview');
 //Static training pages
 Route::get('/training', [TrainingController::class, 'index'])->name('training.index');
 Route::get(

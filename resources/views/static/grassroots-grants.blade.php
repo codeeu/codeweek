@@ -58,10 +58,10 @@
 
 @section('content')
     <section id="codeweek-grassroots-grants" class="font-['Blinker'] overflow-hidden">
-        @if($page && $page->is_preview_mode)
+        @if(($previewMode ?? false) === true)
             <div class="bg-yellow-100 border-b border-yellow-300 text-[#20262C]">
                 <div class="codeweek-container-lg py-3 text-sm md:text-base font-medium">
-                    Preview mode: this page is not published yet.
+                    Preview mode: this page is not published yet. Share only the signed preview link from Nova.
                 </div>
             </div>
         @endif
