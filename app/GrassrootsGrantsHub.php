@@ -65,4 +65,29 @@ class GrassrootsGrantsHub extends Model
     {
         return in_array($this->hub_status, ['not_launched', 'cancelled'], true);
     }
+
+    public function statusLabel(): ?string
+    {
+        return match ($this->hub_status) {
+            'not_launched' => 'Call not launched',
+            'cancelled' => 'Cancelled due to low number of applications',
+            default => null,
+        };
+    }
+
+    public function statusBodyHtml(): string
+    {
+        $message = trim(strip_tags((string) ($this->status_message ?? ''), '<p><br><strong><em><a><ul><ol><li>'));
+        if ($message !== '') {
+            if (str_contains((string) $this->status_message, '<')) {
+                return (string) $this->status_message;
+            }
+
+            return '<p>'.e($message).'</p>';
+        }
+
+        $overview = trim((string) ($this->overview ?? ''));
+
+        return $overview;
+    }
 }
