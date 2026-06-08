@@ -133,6 +133,27 @@ class StaticPagesSeeder extends Seeder
             ]
         );
 
+        StaticPage::updateOrCreate(
+            [
+                'language' => 'en',
+                'path' => '/grassroots-grants',
+            ],
+            [
+                'name' => 'Grassroots Grants',
+                'description' => 'EU Code Week Round 1 grassroots grant projects, impact statistics, and funded initiatives across Europe.',
+                'unique_identifier' => 'grassroots-grants',
+                'path' => '/grassroots-grants',
+                'keywords' => ['Grassroots Grants', 'EU Code Week', 'Funding', 'Projects'],
+                'thumbnail' => '/images/contact-us.png',
+                'meta_title' => 'EU Code Week Grants for Grassroots – Round 1',
+                'meta_description' => 'Discover EU Code Week Round 1 grassroots grant projects, impact, and funded initiatives across Europe.',
+                'meta_keywords' => 'EU Code Week, grassroots grants, funding, coding projects',
+                'category' => 'General',
+                'link_type' => 'internal_link',
+                'is_searchable' => false,
+            ]
+        );
+
         // Sub Pages
         $subPages = [
             // Online Cources
