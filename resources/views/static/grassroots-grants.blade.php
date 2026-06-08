@@ -145,9 +145,6 @@
                                 <div class="overflow-hidden max-h-0 transition-all duration-300">
                                     <div class="pb-6 pt-2 text-[#333E48] text-lg md:text-xl font-normal grants-content">
                                         @if($hub->isStatusOnly())
-                                            @if($statusLabel = $hub->statusLabel())
-                                                <p class="mb-4"><strong>Status:</strong> {{ $statusLabel }}</p>
-                                            @endif
                                             @if($statusBody = $hub->statusBodyHtml())
                                                 <div>{!! $statusBody !!}</div>
                                             @endif
