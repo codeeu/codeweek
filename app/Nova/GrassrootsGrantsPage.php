@@ -53,7 +53,19 @@ class GrassrootsGrantsPage extends Resource
 
             Panel::make('Publishing', [
                 Boolean::make('Preview mode', 'is_preview_mode')
-                    ->help('When enabled, the page shows a preview banner and the footer link stays hidden.'),
+                    ->help('When enabled, /grassroots-grants returns 404 and only the signed preview URL below works. The footer link stays hidden until preview mode is off.'),
+                Text::make('Preview URL', function () {
+                    if (! $this->resource?->exists) {
+                        return 'Save first to generate preview URL.';
+                    }
+
+                    $url = $this->resource->previewSignedUrl();
+
+                    return '<a href="'.$url.'" target="_blank" rel="noopener noreferrer">'.$url.'</a>';
+                })
+                    ->onlyOnDetail()
+                    ->asHtml()
+                    ->help('Share this signed link for review. It expires in 14 days. Regenerate by reopening this page in Nova.'),
             ])->collapsable(),
 
             Panel::make('Hero', [
