@@ -90,6 +90,17 @@
                         <li class="mb-4">
                             <a href="/faqs" class="cookweek-link hover-underline">FAQs</a>
                         </li>
+                        @php
+                            $grassrootsGrantsPage = null;
+                            if (\Illuminate\Support\Facades\Schema::hasTable('grassroots_grants_page')) {
+                                $grassrootsGrantsPage = \App\GrassrootsGrantsPage::query()->first();
+                            }
+                        @endphp
+                        @if($grassrootsGrantsPage && ! $grassrootsGrantsPage->is_preview_mode)
+                            <li class="mb-4">
+                                <a href="{{ route('grassroots-grants') }}" class="cookweek-link hover-underline">Grassroots Grants</a>
+                            </li>
+                        @endif
                         <li class="mb-4">
                             <a href="https://forms.mailpro.com/l3086a9a3-9dc5-4160-ab12-71a0f34d3f07" target="_blank"
                                 class="cookweek-link hover-underline">@lang('footer.newsletter_signup')</a>
