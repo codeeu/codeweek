@@ -77,17 +77,38 @@ class GrassrootsGrantsHub extends Model
 
     public function statusBodyHtml(): string
     {
-        $message = trim(strip_tags((string) ($this->status_message ?? ''), '<p><br><strong><em><a><ul><ol><li>'));
+        $message = trim((string) ($this->status_message ?? ''));
         if ($message !== '') {
-            if (str_contains((string) $this->status_message, '<')) {
-                return (string) $this->status_message;
-            }
-
-            return '<p>'.e($message).'</p>';
+            return $this->stripEmbeddedStatusLine($message);
         }
 
-        $overview = trim((string) ($this->overview ?? ''));
+        return $this->stripEmbeddedStatusLine(trim((string) ($this->overview ?? '')));
+    }
 
-        return $overview;
+    private function stripEmbeddedStatusLine(string $html): string
+    {
+        if ($html === '') {
+            return '';
+        }
+
+        $cleaned = preg_replace(
+            '/<p>\s*<strong>\s*Status:\s*<\/strong>[^<]*<\/p>\s*/iu',
+            '',
+            $html
+        ) ?? $html;
+
+        $plain = trim(strip_tags($cleaned));
+        $plain = preg_replace('/^Status:\s*.+?(?:\n|$)/iu', '', $plain) ?? $plain;
+        $plain = trim($plain);
+
+        if ($plain === '') {
+            return '';
+        }
+
+        if (str_contains($cleaned, '<')) {
+            return trim($cleaned);
+        }
+
+        return '<p>'.e($plain).'</p>';
     }
 }
