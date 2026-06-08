@@ -6,6 +6,7 @@ use App\Nova\Dashboards\Main;
 use App\Nova\CsrCampaignPage as CsrCampaignPageNova;
 use App\Nova\DancePage as DancePageNova;
 use App\Nova\GetInvolvedPage as GetInvolvedPageNova;
+use App\Nova\GrassrootsGrantsPage as GrassrootsGrantsPageNova;
 use App\Nova\MediaUpload as MediaUploadNova;
 use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
@@ -41,6 +42,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             CsrCampaignPageNova::class,
             DancePageNova::class,
             GetInvolvedPageNova::class,
+            GrassrootsGrantsPageNova::class,
             OnlineCoursesPageNova::class,
             TreasureHuntPageNova::class,
             TrainingResourceNova::class,
