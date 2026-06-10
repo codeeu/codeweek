@@ -10,6 +10,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Panel;
 use App\Nova\Actions\ExportHomeSlideLocaleOverrides;
@@ -174,6 +175,7 @@ class HomeSlide extends Resource
                 ->nullable()
                 ->onlyOnForms()
                 ->hideFromIndex()
+                ->help('Plain text or HTML (line breaks and links supported). Copy from the English Trix editor if needed.')
                 ->resolveUsing(function () use ($locale) {
                     $overrides = $this->resource->locale_overrides ?? [];
                     return $overrides[$locale]['description'] ?? '';
@@ -241,9 +243,9 @@ class HomeSlide extends Resource
                 ->rules('required')
                 ->help('Lang key (e.g. home.banner4_title) for automatic translation per locale from resources/lang/en/home.php, or plain text. English is default.'),
 
-            Textarea::make('Description', 'description')
+            Trix::make('Description', 'description')
                 ->nullable()
-                ->help('Lang key (e.g. home.banner4_description) or plain text. HTML links allowed, e.g. Check our <a href="https://codeweek.eu/dream-jobs-in-digital">Careers in Digital page</a>! Translated via resources/lang per locale.'),
+                ->help('Rich text: links, line breaks, and bold text. Or use a lang key (e.g. home.banner4_description) for automatic translation per locale.'),
 
             Text::make('Primary button URL', 'url')->rules('required')->hideFromIndex(),
             Text::make('Primary button label', 'button_text')
