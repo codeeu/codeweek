@@ -93,8 +93,8 @@
                                     {{ __($activity['title']) }}
                                 </h2>
                                 <p
-                                    class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px]">
-                                    {{ strip_tags(__($activity['description'] ?? '')) }}
+                                    class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px] [&_a]:text-[#1C4DA1] [&_a]:font-semibold [&_a]:underline hover:[&_a]:opacity-80">
+                                    {!! \App\HomeSlide::sanitizeDescriptionHtml(__($activity['description'] ?? '')) !!}
                                 </p>
                                 <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"

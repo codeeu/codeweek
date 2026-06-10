@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Stevebauman\Purify\Facades\Purify;
 
 class HomeSlide extends Model
 {
@@ -92,6 +93,18 @@ class HomeSlide extends Model
         }
         $val = $this->button2_text;
         return $val === null || $val === '' ? null : (string) __($val);
+    }
+
+    /**
+     * Sanitize homepage slide description HTML, allowing only safe links.
+     */
+    public static function sanitizeDescriptionHtml(string $html): string
+    {
+        if ($html === '') {
+            return '';
+        }
+
+        return (string) Purify::config('home_slide')->clean($html);
     }
 
     public function scopeActive($query)

@@ -49,6 +49,18 @@ return [
             'AutoFormat.RemoveEmpty' => false,
         ],
 
+        'home_slide' => [
+            'Core.Encoding' => 'utf-8',
+            'HTML.Doctype' => 'HTML 4.01 Transitional',
+            'HTML.Allowed' => 'a[href|target|rel]',
+            'HTML.ForbiddenElements' => '',
+            'CSS.AllowedProperties' => '',
+            'AutoFormat.AutoParagraph' => false,
+            'AutoFormat.RemoveEmpty' => false,
+            'Attr.AllowedFrameTargets' => ['_blank'],
+            'URI.AllowedSchemes' => ['http' => true, 'https' => true, 'mailto' => true],
+        ],
+
     ],
 
     /*
