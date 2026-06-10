@@ -243,7 +243,7 @@ class HomeSlide extends Resource
 
             Textarea::make('Description', 'description')
                 ->nullable()
-                ->help('Lang key (e.g. home.banner4_description) or plain text. Translated via resources/lang per locale.'),
+                ->help('Lang key (e.g. home.banner4_description) or plain text. HTML links allowed, e.g. Check our <a href="https://codeweek.eu/dream-jobs-in-digital">Careers in Digital page</a>! Translated via resources/lang per locale.'),
 
             Text::make('Primary button URL', 'url')->rules('required')->hideFromIndex(),
             Text::make('Primary button label', 'button_text')
