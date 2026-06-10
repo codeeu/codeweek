@@ -92,10 +92,10 @@
                                     class="text-[#1C4DA1] text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-w-[525px]">
                                     {{ __($activity['title']) }}
                                 </h2>
-                                <p
-                                    class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px] [&_a]:text-[#1C4DA1] [&_a]:font-semibold [&_a]:underline hover:[&_a]:opacity-80">
-                                    {!! \App\HomeSlide::sanitizeDescriptionHtml(__($activity['description'] ?? '')) !!}
-                                </p>
+                                <div
+                                    class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 mb-4 max-md:max-w-full max-w-[525px] [&_p]:p-0 [&_p]:mb-4 [&_p:last-child]:mb-0 [&_div]:mb-4 [&_div:last-child]:mb-0 [&_a]:text-[#1C4DA1] [&_a]:font-semibold [&_a]:underline hover:[&_a]:opacity-80">
+                                    {!! \App\HomeSlide::sanitizeDescriptionHtml(\App\HomeSlide::resolveLocalizedRichText($activity['description'] ?? '')) !!}
+                                </div>
                                 <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                                     <a class="inline-block bg-primary hover:bg-hover-orange rounded-full py-4 px-6 md:px-10 font-semibold text-base w-full md:w-auto text-center text-[#20262C] transition-all duration-300"
                                         href="{{ $activity['url'] }}"
