@@ -71,7 +71,22 @@ class HomeSlide extends Model
         if (! empty($overrides[$locale]['description'])) {
             return (string) $overrides[$locale]['description'];
         }
-        return (string) __($this->description ?? '');
+
+        return (string) ($this->description ?? '');
+    }
+
+    /**
+     * Resolve lang keys to translated strings, or return rich text / plain content as stored.
+     */
+    public static function resolveLocalizedRichText(string $value): string
+    {
+        $plain = trim(strip_tags($value));
+
+        if ($plain !== '' && $plain === trim($value) && str_contains($plain, '.') && ! str_contains($plain, ' ')) {
+            return (string) __($plain);
+        }
+
+        return $value;
     }
 
     public function buttonTextForLocale(?string $locale = null): string
@@ -96,12 +111,18 @@ class HomeSlide extends Model
     }
 
     /**
-     * Sanitize homepage slide description HTML, allowing only safe links.
+     * Sanitize homepage slide description HTML, allowing Trix-style formatting and links.
      */
     public static function sanitizeDescriptionHtml(string $html): string
     {
         if ($html === '') {
             return '';
+        }
+
+        $html = trim($html);
+
+        if ($html === strip_tags($html)) {
+            return nl2br(e($html), false);
         }
 
         return (string) Purify::config('home_slide')->clean($html);

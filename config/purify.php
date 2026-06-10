@@ -52,7 +52,7 @@ return [
         'home_slide' => [
             'Core.Encoding' => 'utf-8',
             'HTML.Doctype' => 'HTML 4.01 Transitional',
-            'HTML.Allowed' => 'a[href|target|rel]',
+            'HTML.Allowed' => 'div,p,br,strong,b,em,i,a[href|target|rel]',
             'HTML.ForbiddenElements' => '',
             'CSS.AllowedProperties' => '',
             'AutoFormat.AutoParagraph' => false,
