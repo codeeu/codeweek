@@ -53,7 +53,8 @@ class CsrCampaignPage extends Resource
         return [
             ID::make()->onlyOnForms(),
             Panel::make('General', [
-                Boolean::make('Use dynamic content for this page', 'use_dynamic_content'),
+                Boolean::make('Use dynamic resource cards', 'use_dynamic_content')
+                    ->help('When enabled, the CSR Resources section uses the Resources list below instead of the default cards. Hero and About are always taken from this Nova form.'),
             ])->collapsable()->collapsedByDefault(),
             Panel::make('Hero', [
                 Trix::make('Hero text', 'hero_text')->nullable(),
@@ -63,7 +64,7 @@ class CsrCampaignPage extends Resource
                 Text::make('Secondary CTA link', 'secondary_cta_link')->nullable(),
             ])->collapsable()->collapsedByDefault(),
             Panel::make('About section', [
-                Text::make('Title', 'about_title')->nullable(),
+                Trix::make('Title', 'about_title')->nullable(),
                 Trix::make('Description', 'about_description')->nullable(),
             ])->collapsable()->collapsedByDefault(),
             Panel::make('Resources section', [
