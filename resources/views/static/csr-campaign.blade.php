@@ -110,25 +110,21 @@
                 <div class="w-full overflow-hidden pb-10 md:p-0 flex flex-col md:flex-row justify-end md:items-center flex-shrink-0">
                     <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                         <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
-                            <div class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
-                                @if($dynamic && $page->hero_text)
-                                    {!! $page->hero_text !!}
-                                @else
-                                    @lang('csr-campaign.landing_header')
-                                @endif
+                            <div class="text-xl md:text-2xl leading-8 text-[#333E48] p-0 max-md:max-w-full max-w-[525px] mb-4 [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0 [&_a]:text-[#1C4DA1] [&_a]:font-semibold [&_a]:underline">
+                                {!! \App\CsrCampaignPage::renderRichText($page?->hero_text ?? __('csr-campaign.landing_header')) !!}
                             </div>
                             <div class="flex flex-col md:flex-row gap-3 md:gap-5 items-center">
                                 <a
                                     class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                    href="{{ $dynamic && $page->primary_cta_link ? $page->primary_cta_link : 'https://codeweek.eu/blog/futurereadycsr-campaign-launch' }}"
+                                    href="{{ $page?->primary_cta_link ?? 'https://codeweek.eu/blog/futurereadycsr-campaign-launch' }}"
                                 >
-                                    <span>{{ $dynamic && $page->primary_cta_text ? $page->primary_cta_text : __('csr-campaign.get_involved') }}</span>
+                                    <span>{{ $page?->primary_cta_text ?? __('csr-campaign.get_involved') }}</span>
                                 </a>
                                 <a
                                     class="text-nowrap w-full md:w-fit flex justify-center items-center bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-4 px-8 font-semibold text-lg"
-                                    href="{{ $dynamic && $page->secondary_cta_link ? $page->secondary_cta_link : 'https://codeweek.eu/blog/futurereadycsr-resources' }}"
+                                    href="{{ $page?->secondary_cta_link ?? 'https://codeweek.eu/blog/futurereadycsr-resources' }}"
                                 >
-                                    <span>{{ $dynamic && $page->secondary_cta_text ? $page->secondary_cta_text : __('csr-campaign.explore_resources') }}</span>
+                                    <span>{{ $page?->secondary_cta_text ?? __('csr-campaign.explore_resources') }}</span>
                                 </a>
                             </div>
                         </div>
@@ -151,15 +147,11 @@
 
         <section class="relative flex overflow-hidden">
             <div class="relative pt-10 md:pt-28 codeweek-container-lg">
-                <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block">
-                    {{ $dynamic && $page->about_title ? $page->about_title : __('csr-campaign.about_title') }}
+                <h2 class="text-dark-blue text-[22px] md:text-4xl md:leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-10 block [&_strong]:font-semibold">
+                    {!! \App\CsrCampaignPage::renderRichText($page?->about_title ?? __('csr-campaign.about_title')) !!}
                 </h2>
-                <div class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0">
-                    @if($dynamic && $page->about_description)
-                        {!! $page->about_description !!}
-                    @else
-                        @lang('csr-campaign.about_description')
-                    @endif
+                <div class="text-[#20262C] font-normal text-[16px] leading-[22px] md:text-xl p-0 mb-6 md:mb-10 max-w-4xl [&_p]:p-0 [&_p]:m-0 [&_p]:mb-4 [&_p:last-child]:mb-0 [&_strong]:font-semibold [&_a]:text-[#1C4DA1] [&_a]:font-semibold [&_a]:underline">
+                    {!! \App\CsrCampaignPage::renderRichText($page?->about_description ?? __('csr-campaign.about_description')) !!}
                 </div>
                 <div class="relative">
                     <img
@@ -178,7 +170,7 @@
             <div class="absolute w-full h-full bg-blue-gradient hidden xl:block" style="clip-path: ellipse(98% 90% at 50% 90%);"></div>
             <div class="codeweek-container-lg relative pt-20 pb-16 md:pt-48 md:pb-28">
                 <h2 class="text-white md:text-center text-3xl md:text-4xl leading-[44px] font-medium font-['Montserrat'] mb-6 md:mb-16">
-                    {{ $dynamic && $page->resources_title ? $page->resources_title : __('csr-campaign.resources') }}
+                    {{ $page?->resources_title ?? __('csr-campaign.resources') }}
                 </h2>
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-10 xl:gap-20">
                     @foreach($resourcesToRender as $resource)
