@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Stevebauman\Purify\Facades\Purify;
 
 class CsrCampaignPage extends Model
 {
@@ -27,6 +28,15 @@ class CsrCampaignPage extends Model
     public function resources()
     {
         return $this->hasMany(CsrCampaignResource::class, 'page_id')->orderBy('position');
+    }
+
+    public static function renderRichText(?string $html): string
+    {
+        if ($html === null || trim($html) === '') {
+            return '';
+        }
+
+        return (string) Purify::clean($html);
     }
 
     public static function config(): self
