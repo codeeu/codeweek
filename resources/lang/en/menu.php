@@ -32,6 +32,7 @@ return [
     'schools' => 'Schools',
     'about' => 'About',
     'blog' => 'Blog',
+    'share_your_stories' => 'Share your stories',
     'news' => 'News',
     'search' => 'Type & hit Enter...',
     'map' => 'Map',
