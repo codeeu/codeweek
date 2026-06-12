@@ -228,11 +228,18 @@
                   </ul>
               </li>
 
-              {{-- commnity --}}
-              <li class="main-menu-item menu-item">
-                  <a class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]" href="{{route('community')}}">
+              {{-- community --}}
+              <li class="main-menu-item">
+                  <a
+                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px] cursor-pointer"
+                      onclick="document.body.clientWidth > 1280 && (window.location.href='{{ route('community') }}')"
+                  >
                       @lang('community.titles.0')
+                      <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
+                  <ul class="sub-menu">
+                      <li><a class="cookweek-link hover-underline" href="{{ route('grassroots-grants') }}">@lang('menu.grassroots_grants')</a></li>
+                  </ul>
               </li>
 
               {{-- schools --}}
