@@ -26,6 +26,7 @@ return [
     'search_result' => 'Search results',
     'events' => 'Activities',
     'ambassadors' => 'Ambassadors',
+    'grassroots_grants' => 'Grassroots Grants',
     'resources' => 'Resources',
     'game_and_competitions' => 'Games & Competitions',
     'schools' => 'Schools',
