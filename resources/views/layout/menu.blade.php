@@ -297,8 +297,7 @@
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
-                      <li><a class="cookweek-link hover-underline" href="https://codeweek.eu/blog/">@lang('menu.blog')</a></li>
-                      <li><a class="cookweek-link hover-underline" href="https://forms.office.com/Pages/ResponsePage.aspx?id=18F13DIal06vkB3AGRHqbCnyIKB_vXdLsUgagfjd7DRUN1dZTVYxSkJNQ1VWSlVZNlpBOFAyN0g4UC4u&amp;embed=true" target="_blank" rel="noopener noreferrer">@lang('menu.share_your_stories')</a></li>
+                      <li><a class="cookweek-link hover-underline" href="https://forms.office.com/Pages/ResponsePage.aspx?id=18F13DIal06vkB3AGRHqbCnyIKB_vXdLsUgagfjd7DRUN1dZTVYxSkJNQ1VWSlVZNlpBOFAyN0g4UC4u&amp;embed=true" target="_blank" rel="noopener">@lang('menu.share_your_stories')</a></li>
                   </ul>
               </li>
 
