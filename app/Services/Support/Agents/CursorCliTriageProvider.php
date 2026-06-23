@@ -4,6 +4,7 @@ namespace App\Services\Support\Agents;
 
 use App\Models\Support\SupportCase;
 use App\Services\Support\Artisan\ArtisanActionRegistry;
+use App\Services\Support\Content\ContentActionRegistry;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Process;
 
@@ -28,11 +29,14 @@ class CursorCliTriageProvider implements TriageProvider
         'role_issue',
         'code_change',
         'artisan_command',
+        'content_update',
         'unknown',
     ];
 
-    public function __construct(private readonly ArtisanActionRegistry $registry)
-    {
+    public function __construct(
+        private readonly ArtisanActionRegistry $registry,
+        private readonly ContentActionRegistry $contentRegistry,
+    ) {
     }
 
     public function available(): bool
@@ -47,13 +51,21 @@ class CursorCliTriageProvider implements TriageProvider
         return (bool) config('support_ai.artisan.enabled');
     }
 
+    private function contentEnabled(): bool
+    {
+        return (bool) config('support_ai.content.enabled');
+    }
+
     /** @return list<string> case types offered to the model this run. */
     private function offeredCaseTypes(): array
     {
-        return array_values(array_filter(
-            self::CASE_TYPES,
-            fn (string $type) => $type !== 'artisan_command' || $this->artisanEnabled()
-        ));
+        return array_values(array_filter(self::CASE_TYPES, function (string $type): bool {
+            return match ($type) {
+                'artisan_command' => $this->artisanEnabled(),
+                'content_update' => $this->contentEnabled(),
+                default => true,
+            };
+        }));
     }
 
     public function triage(SupportCase $case): ?array
@@ -112,6 +124,7 @@ class CursorCliTriageProvider implements TriageProvider
         // Keep the ticket text bounded so the CLI invocation stays small.
         $ticket = mb_substr($rawText, 0, 6000);
         $artisanBlock = $this->artisanEnabled() ? $this->artisanPromptBlock() : '';
+        $contentBlock = $this->contentEnabled() ? $this->contentPromptBlock() : '';
 
         return <<<PROMPT
 You are the triage brain for the CodeWeek support copilot. Classify ONE support ticket.
@@ -120,7 +133,7 @@ Do NOT make any code changes, run tools, or edit files. Respond with a single JS
 Allowed case_type values: {$types}
 Use "code_change" only when the request is about a bug or change in the website/application code
 (frontend or template/markup/styling/behaviour) that a developer would fix in the repository.
-{$artisanBlock}
+{$artisanBlock}{$contentBlock}
 JSON schema to return:
 {
   "case_type": "<one allowed value>",
@@ -138,7 +151,11 @@ JSON schema to return:
   "cursor_prompt": "<for code_change: a precise instruction for a coding agent to implement the fix and open a PR, else null>",
   "artisan_command_name": "<for artisan_command: an allowlisted command name, else null>",
   "artisan_args": {},
-  "artisan_raw_command": "<for artisan_command: a raw artisan command WITHOUT 'php artisan' prefix if no allowlisted command fits, else null>"
+  "artisan_raw_command": "<for artisan_command: a raw artisan command WITHOUT 'php artisan' prefix if no allowlisted command fits, else null>",
+  "content_model": "<for content_update: an allowlisted content model key, else null>",
+  "content_identifier": "<for content_update: the record id or unique reference; null for single-row pages>",
+  "content_changes": {},
+  "content_summary": "<for content_update: one sentence describing the copy change, else null>"
 }
 
 Ticket subject: {$case->subject}
@@ -168,6 +185,22 @@ Allowlisted commands:
 {$allow}
 If none fits, set "artisan_command_name" to null and put the bare artisan command in "artisan_raw_command"
 (no "php artisan" prefix, no shell operators). Destructive commands will be rejected.
+
+BLOCK;
+    }
+
+    private function contentPromptBlock(): string
+    {
+        $keys = implode(', ', $this->contentRegistry->keys());
+
+        return <<<BLOCK
+
+Use "content_update" only when the request is to change editorial text/copy on an existing
+page or content record (e.g. fix a typo, reword a paragraph, update a heading). Put the
+content model key in "content_model" (one of: {$keys}), the record reference in
+"content_identifier" (an id or unique reference; null for single-row pages), and the
+field→new-text pairs in "content_changes" (e.g. {"hero_title":"New heading"}).
+Plain text only — no HTML, no links/URLs. Use "code_change" instead if it needs a developer.
 
 BLOCK;
     }
@@ -257,6 +290,7 @@ BLOCK;
             'account_restore' => 'user_restore',
             'code_change' => 'code_change',
             'artisan_command' => 'artisan_command',
+            'content_update' => 'content_update',
             default => null,
         };
 
@@ -264,6 +298,13 @@ BLOCK;
         foreach ((array) ($data['artisan_args'] ?? []) as $key => $value) {
             if (is_string($key) && (is_string($value) || is_numeric($value) || is_bool($value))) {
                 $artisanArgs[$key] = is_bool($value) ? $value : (string) $value;
+            }
+        }
+
+        $contentChanges = [];
+        foreach ((array) ($data['content_changes'] ?? []) as $key => $value) {
+            if (is_string($key) && (is_string($value) || is_numeric($value))) {
+                $contentChanges[$key] = (string) $value;
             }
         }
 
@@ -286,6 +327,10 @@ BLOCK;
             'artisan_command_name' => $this->stringOrNull($data['artisan_command_name'] ?? null),
             'artisan_args' => $artisanArgs,
             'artisan_raw_command' => $this->stringOrNull($data['artisan_raw_command'] ?? null),
+            'content_model' => $this->stringOrNull($data['content_model'] ?? null),
+            'content_identifier' => $this->stringOrNull($data['content_identifier'] ?? null),
+            'content_changes' => $contentChanges,
+            'content_summary' => $this->stringOrNull($data['content_summary'] ?? null),
             'triage_source' => 'cursor_cli',
         ];
     }
