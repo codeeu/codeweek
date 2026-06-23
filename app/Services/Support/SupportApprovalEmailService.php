@@ -24,6 +24,9 @@ class SupportApprovalEmailService
         $headline = match ($case->case_type) {
             'profile_update' => 'Please review — name change',
             'account_restore' => 'Please review — account restore',
+            'code_change' => 'Please review — proposed code fix (PR into dev)',
+            'artisan_command' => 'Please review — proposed server maintenance command',
+            'content_update' => 'Please review — proposed content/copy change',
             default => 'Please review before we make changes',
         };
 
@@ -277,7 +280,103 @@ class SupportApprovalEmailService
             }
         }
 
+        if ($case->case_type === 'code_change') {
+            $plan = $this->codeChangePlan($case);
+            if (($plan['cursor_prompt'] ?? '') !== '') {
+                return [
+                    'action' => 'code_change',
+                    'payload' => [
+                        'cursor_prompt' => $plan['cursor_prompt'],
+                        'starting_ref' => $plan['starting_ref'] ?? (string) config('support_ai.code_change.dev_branch', 'dev'),
+                        'change_summary' => $plan['change_summary'] ?? '',
+                        'change_area' => $plan['change_area'] ?? null,
+                    ],
+                ];
+            }
+        }
+
+        if ($case->case_type === 'artisan_command') {
+            $stored = $this->artisanDiagnostics($case);
+            $planResult = is_array($stored['plan']['result'] ?? null) ? $stored['plan']['result'] : [];
+            if (($stored['plan']['ok'] ?? false) && ($planResult['display'] ?? '') !== '') {
+                return [
+                    'action' => 'artisan_command',
+                    'payload' => [
+                        'display' => (string) $planResult['display'],
+                        'mode' => (string) ($planResult['mode'] ?? 'registry'),
+                        'command' => (string) ($planResult['command'] ?? ''),
+                        'is_write' => (bool) ($planResult['is_write'] ?? true),
+                    ],
+                ];
+            }
+        }
+
+        if ($case->case_type === 'content_update') {
+            $plan = $this->contentDiagnostics($case);
+            $result = is_array($plan['result'] ?? null) ? $plan['result'] : [];
+            if (($plan['ok'] ?? false) && !empty($result['after'])) {
+                return [
+                    'action' => 'content_update',
+                    'payload' => [
+                        'label' => (string) ($result['label'] ?? 'content'),
+                        'model_key' => (string) ($result['model_key'] ?? ''),
+                        'record_id' => $result['record_id'] ?? null,
+                    ],
+                ];
+            }
+        }
+
         return ['action' => 'none', 'payload' => []];
+    }
+
+    /**
+     * Read the artisan_command dry-run record from diagnostics.
+     *
+     * @return array<string, mixed>
+     */
+    private function artisanDiagnostics(SupportCase $case): array
+    {
+        $output = $case->actions()
+            ->where('action_name', 'artisan_command')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        return is_array($output) ? $output : [];
+    }
+
+    /**
+     * Read the content_update dry-run plan from diagnostics.
+     *
+     * @return array<string, mixed>
+     */
+    private function contentDiagnostics(SupportCase $case): array
+    {
+        $output = $case->actions()
+            ->where('action_name', 'content_update')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        return is_array($output) ? $output : [];
+    }
+
+    /**
+     * Read the code_change dry-run plan recorded during diagnostics.
+     *
+     * @return array<string, mixed>
+     */
+    private function codeChangePlan(SupportCase $case): array
+    {
+        $action = $case->actions()
+            ->where('action_name', 'code_change')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        $result = is_array($action) ? ($action['result'] ?? []) : [];
+
+        return is_array($result) ? $result : [];
     }
 
     /**
@@ -387,11 +486,133 @@ class SupportApprovalEmailService
             ];
         }
 
+        if ($action === 'code_change') {
+            return $this->dryRunCodeChangeLines($payload);
+        }
+
+        if ($action === 'artisan_command') {
+            return $this->dryRunArtisanLines($case);
+        }
+
+        if ($action === 'content_update') {
+            return $this->dryRunContentLines($case);
+        }
+
         return [
             '',
             'We could not determine an automatic change from this email.',
             'Check that the message includes lines like "Requested first name:" and "Requested last name:".',
         ];
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function dryRunArtisanLines(SupportCase $case): array
+    {
+        $stored = $this->artisanDiagnostics($case);
+        $planResult = is_array($stored['plan']['result'] ?? null) ? $stored['plan']['result'] : [];
+        $dry = is_array($stored['dry_run']['result'] ?? null) ? $stored['dry_run']['result'] : [];
+
+        $display = (string) ($planResult['display'] ?? '');
+        $lines = ['', 'We will run this maintenance command on the server:'];
+        if ($display !== '') {
+            $lines[] = '  '.$display;
+        }
+
+        if (($planResult['mode'] ?? 'registry') === 'raw') {
+            $lines[] = '';
+            $lines[] = '(AI-proposed command — not on the standard allowlist. Please check it carefully.)';
+        }
+
+        if (($dry['executed'] ?? false) && isset($dry['output'])) {
+            $lines[] = '';
+            $lines[] = 'Dry-run preview output:';
+            $lines[] = str_repeat('·', 20);
+            foreach (preg_split('/\r\n|\r|\n/', (string) $dry['output']) ?: [] as $out) {
+                $lines[] = '  '.$out;
+            }
+        } elseif (($dry['note'] ?? '') !== '') {
+            $lines[] = '';
+            $lines[] = (string) $dry['note'];
+        }
+
+        if (!($stored['plan']['ok'] ?? false)) {
+            $errors = implode('; ', array_map('strval', (array) ($stored['plan']['errors'] ?? [])));
+            $lines[] = '';
+            $lines[] = 'Note: the proposed command could not be prepared'.($errors !== '' ? ' ('.$errors.')' : '').'.';
+        }
+
+        return $lines;
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function dryRunContentLines(SupportCase $case): array
+    {
+        $plan = $this->contentDiagnostics($case);
+        $result = is_array($plan['result'] ?? null) ? $plan['result'] : [];
+        $label = (string) ($result['label'] ?? 'content record');
+        $before = (array) ($result['before'] ?? []);
+        $after = (array) ($result['after'] ?? []);
+
+        $lines = ['', 'We will update text on the '.$label.':'];
+
+        foreach ($after as $field => $newValue) {
+            $oldValue = (string) ($before[$field] ?? '');
+            $lines[] = '';
+            $lines[] = '  Field: '.$field;
+            $lines[] = '    From: '.$this->truncateForEmail($oldValue);
+            $lines[] = '    To:   '.$this->truncateForEmail((string) $newValue);
+        }
+
+        $lines[] = '';
+        $lines[] = 'Only the text above changes. The change is editable in Nova after it is applied.';
+
+        return $lines;
+    }
+
+    private function truncateForEmail(string $value, int $limit = 300): string
+    {
+        $value = trim(preg_replace('/\s+/', ' ', $value) ?? $value);
+        if ($value === '') {
+            return '(empty)';
+        }
+
+        return mb_strlen($value) > $limit ? mb_substr($value, 0, $limit).'…' : $value;
+    }
+
+    /**
+     * @param array<string, mixed> $payload
+     * @return list<string>
+     */
+    private function dryRunCodeChangeLines(array $payload): array
+    {
+        $devBranch = (string) ($payload['starting_ref'] ?? config('support_ai.code_change.dev_branch', 'dev'));
+        $summary = trim((string) ($payload['change_summary'] ?? ''));
+        $prompt = trim((string) ($payload['cursor_prompt'] ?? ''));
+
+        $lines = ['', 'We will ask the AI coding agent to make this change:'];
+        if ($summary !== '') {
+            $lines[] = '  • '.$summary;
+        }
+        if (($payload['change_area'] ?? null)) {
+            $lines[] = '  • Area: '.$payload['change_area'];
+        }
+
+        $lines[] = '';
+        $lines[] = 'Exactly what the agent will be instructed to do:';
+        $lines[] = str_repeat('·', 20);
+        foreach (preg_split('/\r\n|\r|\n/', $prompt) ?: [] as $promptLine) {
+            $lines[] = '  '.$promptLine;
+        }
+
+        $lines[] = '';
+        $lines[] = 'The agent works on a new branch and opens a Pull Request into "'.$devBranch.'"';
+        $lines[] = 'for a developer to review. NOTHING is merged or deployed automatically.';
+
+        return $lines;
     }
 
     /**
@@ -464,6 +685,9 @@ class SupportApprovalEmailService
         return match ($action) {
             'user_profile_update' => 'Done — name updated on CodeWeek account',
             'user_restore' => 'Done — CodeWeek account reactivated',
+            'code_change' => 'Started — AI coding agent is preparing a PR into dev',
+            'artisan_command' => 'Done — maintenance command completed on the server',
+            'content_update' => 'Done — content updated',
             default => 'Done — your approved request was completed',
         };
     }
@@ -573,6 +797,71 @@ class SupportApprovalEmailService
             ];
         }
 
+        if ($action === 'code_change') {
+            $prUrl = (string) ($inner['pr_url'] ?? '');
+            $agentId = (string) ($inner['agent_id'] ?? '');
+            $lines = [
+                'We started an AI coding agent to implement the approved fix.',
+                'It will push to a new branch and open a Pull Request into the dev branch.',
+            ];
+            if ($prUrl !== '') {
+                $lines[] = '';
+                $lines[] = 'Pull request: '.$prUrl;
+            } else {
+                $lines[] = '';
+                $lines[] = 'The pull request link will follow in a moment once the agent finishes.';
+            }
+            if ($agentId !== '') {
+                $lines[] = 'Agent reference: '.$agentId;
+            }
+            $promoUrl = (string) ($inner['promotion_pr_url'] ?? '');
+            if ($promoUrl !== '') {
+                $lines[] = '';
+                $lines[] = 'Release PR (dev → live, for when the fix is ready to deploy): '.$promoUrl;
+            }
+            $lines[] = '';
+            $lines[] = 'A developer must review and merge the PR — nothing deploys automatically.';
+
+            return $lines;
+        }
+
+        if ($action === 'artisan_command') {
+            $command = (string) ($inner['command'] ?? '');
+            $output = (string) ($inner['output'] ?? '');
+            $lines = ['We ran the approved maintenance command on the server.'];
+            if ($command !== '') {
+                $lines[] = '';
+                $lines[] = 'Command: '.$command;
+            }
+            if ($output !== '') {
+                $lines[] = '';
+                $lines[] = 'Output:';
+                $lines[] = str_repeat('·', 20);
+                foreach (preg_split('/\r\n|\r|\n/', $output) ?: [] as $out) {
+                    $lines[] = '  '.$out;
+                }
+            }
+
+            return $lines;
+        }
+
+        if ($action === 'content_update') {
+            $label = (string) ($inner['label'] ?? 'content record');
+            $before = (array) ($inner['before'] ?? []);
+            $after = (array) ($inner['after'] ?? []);
+            $lines = ['We updated the text on the '.$label.'.'];
+            foreach ($after as $field => $newValue) {
+                $lines[] = '';
+                $lines[] = '  Field: '.$field;
+                $lines[] = '    From: '.$this->truncateForEmail((string) ($before[$field] ?? ''));
+                $lines[] = '    To:   '.$this->truncateForEmail((string) $newValue);
+            }
+            $lines[] = '';
+            $lines[] = 'The change is live and can be further edited in Nova.';
+
+            return $lines;
+        }
+
         return [
             'The approved request for case #'.$case->id.' was completed successfully.',
         ];
@@ -647,6 +936,20 @@ class SupportApprovalEmailService
             str_contains($code, 'dry_run_mode') => 'The system is in preview-only mode and could not apply live changes.',
             str_contains($code, 'unsupported_approved_action') => 'This type of request cannot be run automatically yet.',
             str_contains($code, 'approval_required') => 'This action still requires a separate approval step in the system.',
+            str_contains($code, 'denylisted_command') => 'The proposed command is blocked for safety and was not run.',
+            str_contains($code, 'artisan_actions_disabled') => 'Server maintenance commands are currently disabled.',
+            str_contains($code, 'command_not_in_allowlist') => 'The proposed command is not on the approved list and was not run.',
+            str_contains($code, 'shell_metacharacters_rejected') => 'The proposed command contained unsafe characters and was not run.',
+            str_starts_with($code, 'exit_code_') => 'The command ran but reported an error (exit '.str_replace('exit_code_', '', $code).'). Please check the case in Nova.',
+            str_contains($code, 'content_edits_disabled') => 'Content editing is currently disabled.',
+            str_contains($code, 'model_not_in_allowlist') => 'That content type cannot be edited automatically.',
+            str_contains($code, 'record_not_found') => 'We could not find the content record to edit. Please check the reference in Nova.',
+            str_starts_with($code, 'field_not_editable') => 'One of the requested fields is not an editable text field.',
+            str_starts_with($code, 'field_is_translation_key') => 'One of the fields holds a translation key and was left unchanged.',
+            str_starts_with($code, 'value_contains_url') => 'The new text contained a link/URL, which is not allowed for content edits.',
+            str_starts_with($code, 'value_contains_markup') => 'The new text contained HTML/markup, which is not allowed for content edits.',
+            str_starts_with($code, 'value_too_long') => 'The new text was too long.',
+            str_contains($code, 'no_effective_change') => 'The content already matched the requested text — no change was needed.',
             $action === 'user_restore' && str_contains($code, 'verification') => 'The account was changed but we could not confirm it is fully active. Please verify in Nova.',
             default => 'Technical detail: '.$code,
         };
