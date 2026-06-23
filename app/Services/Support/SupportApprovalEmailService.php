@@ -24,6 +24,7 @@ class SupportApprovalEmailService
         $headline = match ($case->case_type) {
             'profile_update' => 'Please review — name change',
             'account_restore' => 'Please review — account restore',
+            'code_change' => 'Please review — proposed code fix (PR into dev)',
             default => 'Please review before we make changes',
         };
 
@@ -277,7 +278,40 @@ class SupportApprovalEmailService
             }
         }
 
+        if ($case->case_type === 'code_change') {
+            $plan = $this->codeChangePlan($case);
+            if (($plan['cursor_prompt'] ?? '') !== '') {
+                return [
+                    'action' => 'code_change',
+                    'payload' => [
+                        'cursor_prompt' => $plan['cursor_prompt'],
+                        'starting_ref' => $plan['starting_ref'] ?? (string) config('support_ai.code_change.dev_branch', 'dev'),
+                        'change_summary' => $plan['change_summary'] ?? '',
+                        'change_area' => $plan['change_area'] ?? null,
+                    ],
+                ];
+            }
+        }
+
         return ['action' => 'none', 'payload' => []];
+    }
+
+    /**
+     * Read the code_change dry-run plan recorded during diagnostics.
+     *
+     * @return array<string, mixed>
+     */
+    private function codeChangePlan(SupportCase $case): array
+    {
+        $action = $case->actions()
+            ->where('action_name', 'code_change')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        $result = is_array($action) ? ($action['result'] ?? []) : [];
+
+        return is_array($result) ? $result : [];
     }
 
     /**
@@ -387,11 +421,47 @@ class SupportApprovalEmailService
             ];
         }
 
+        if ($action === 'code_change') {
+            return $this->dryRunCodeChangeLines($payload);
+        }
+
         return [
             '',
             'We could not determine an automatic change from this email.',
             'Check that the message includes lines like "Requested first name:" and "Requested last name:".',
         ];
+    }
+
+    /**
+     * @param array<string, mixed> $payload
+     * @return list<string>
+     */
+    private function dryRunCodeChangeLines(array $payload): array
+    {
+        $devBranch = (string) ($payload['starting_ref'] ?? config('support_ai.code_change.dev_branch', 'dev'));
+        $summary = trim((string) ($payload['change_summary'] ?? ''));
+        $prompt = trim((string) ($payload['cursor_prompt'] ?? ''));
+
+        $lines = ['', 'We will ask the AI coding agent to make this change:'];
+        if ($summary !== '') {
+            $lines[] = '  • '.$summary;
+        }
+        if (($payload['change_area'] ?? null)) {
+            $lines[] = '  • Area: '.$payload['change_area'];
+        }
+
+        $lines[] = '';
+        $lines[] = 'Exactly what the agent will be instructed to do:';
+        $lines[] = str_repeat('·', 20);
+        foreach (preg_split('/\r\n|\r|\n/', $prompt) ?: [] as $promptLine) {
+            $lines[] = '  '.$promptLine;
+        }
+
+        $lines[] = '';
+        $lines[] = 'The agent works on a new branch and opens a Pull Request into "'.$devBranch.'"';
+        $lines[] = 'for a developer to review. NOTHING is merged or deployed automatically.';
+
+        return $lines;
     }
 
     /**
@@ -464,6 +534,7 @@ class SupportApprovalEmailService
         return match ($action) {
             'user_profile_update' => 'Done — name updated on CodeWeek account',
             'user_restore' => 'Done — CodeWeek account reactivated',
+            'code_change' => 'Started — AI coding agent is preparing a PR into dev',
             default => 'Done — your approved request was completed',
         };
     }
@@ -571,6 +642,34 @@ class SupportApprovalEmailService
                 'We reactivated the CodeWeek account'.($email !== '' ? ' for '.$email : '').'.',
                 'The person can sign in again with their usual email and password.',
             ];
+        }
+
+        if ($action === 'code_change') {
+            $prUrl = (string) ($inner['pr_url'] ?? '');
+            $agentId = (string) ($inner['agent_id'] ?? '');
+            $lines = [
+                'We started an AI coding agent to implement the approved fix.',
+                'It will push to a new branch and open a Pull Request into the dev branch.',
+            ];
+            if ($prUrl !== '') {
+                $lines[] = '';
+                $lines[] = 'Pull request: '.$prUrl;
+            } else {
+                $lines[] = '';
+                $lines[] = 'The pull request link will follow in a moment once the agent finishes.';
+            }
+            if ($agentId !== '') {
+                $lines[] = 'Agent reference: '.$agentId;
+            }
+            $promoUrl = (string) ($inner['promotion_pr_url'] ?? '');
+            if ($promoUrl !== '') {
+                $lines[] = '';
+                $lines[] = 'Release PR (dev → live, for when the fix is ready to deploy): '.$promoUrl;
+            }
+            $lines[] = '';
+            $lines[] = 'A developer must review and merge the PR — nothing deploys automatically.';
+
+            return $lines;
         }
 
         return [

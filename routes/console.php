@@ -50,3 +50,8 @@ if ($supportPollMinutes <= 1) {
 } else {
     $supportGmailPoll->cron('*/'.$supportPollMinutes.' * * * *');
 }
+
+// Support AI copilot: capture finished code-change agents' PR links and report back.
+Schedule::command('support:ai:poll-agents')
+    ->everyMinute()
+    ->when(fn () => (bool) config('support_ai.enabled') && (bool) config('support_ai.code_change.enabled'));
