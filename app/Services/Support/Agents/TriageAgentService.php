@@ -10,10 +10,48 @@ class TriageAgentService
 {
     public function __construct(
         private readonly SupportProfileRequestParser $profileParser,
+        private readonly CursorCliTriageProvider $aiProvider,
     ) {
     }
 
     public function triage(SupportCase $case): array
+    {
+        $heuristic = $this->heuristicTriage($case);
+
+        $ai = $this->aiProvider->triage($case);
+        if ($ai === null) {
+            return $heuristic;
+        }
+
+        return $this->mergeAiOverHeuristic($ai, $heuristic);
+    }
+
+    /**
+     * AI result wins; fall back to the heuristic for any field the model left empty.
+     *
+     * @param array<string, mixed> $ai
+     * @param array<string, mixed> $heuristic
+     * @return array<string, mixed>
+     */
+    private function mergeAiOverHeuristic(array $ai, array $heuristic): array
+    {
+        $merged = $heuristic;
+
+        foreach ($ai as $key => $value) {
+            if ($value === null || $value === '' || $value === []) {
+                continue;
+            }
+            $merged[$key] = $value;
+        }
+
+        // Preserve a known target/profile from the heuristic parser when AI omitted it.
+        $merged['target_email'] = $ai['target_email'] ?? $heuristic['target_email'];
+        $merged['triage_source'] = $ai['triage_source'] ?? 'cursor_cli';
+
+        return $merged;
+    }
+
+    private function heuristicTriage(SupportCase $case): array
     {
         $rawText = (string) ($case->normalized_message ?? $case->raw_message ?? '');
         $text = Str::lower($rawText);
@@ -75,6 +113,10 @@ class TriageAgentService
             'recommended_runbook' => $runbook,
             'needs_human_review' => $needsHuman,
             'reasoning_summary' => 'V1 heuristic triage (LLM integration pending).',
+            'change_summary' => null,
+            'change_area' => null,
+            'cursor_prompt' => null,
+            'triage_source' => 'heuristic',
         ];
     }
 
