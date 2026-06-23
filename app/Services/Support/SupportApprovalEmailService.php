@@ -26,6 +26,7 @@ class SupportApprovalEmailService
             'account_restore' => 'Please review — account restore',
             'code_change' => 'Please review — proposed code fix (PR into dev)',
             'artisan_command' => 'Please review — proposed server maintenance command',
+            'content_update' => 'Please review — proposed content/copy change',
             default => 'Please review before we make changes',
         };
 
@@ -310,6 +311,21 @@ class SupportApprovalEmailService
             }
         }
 
+        if ($case->case_type === 'content_update') {
+            $plan = $this->contentDiagnostics($case);
+            $result = is_array($plan['result'] ?? null) ? $plan['result'] : [];
+            if (($plan['ok'] ?? false) && !empty($result['after'])) {
+                return [
+                    'action' => 'content_update',
+                    'payload' => [
+                        'label' => (string) ($result['label'] ?? 'content'),
+                        'model_key' => (string) ($result['model_key'] ?? ''),
+                        'record_id' => $result['record_id'] ?? null,
+                    ],
+                ];
+            }
+        }
+
         return ['action' => 'none', 'payload' => []];
     }
 
@@ -322,6 +338,22 @@ class SupportApprovalEmailService
     {
         $output = $case->actions()
             ->where('action_name', 'artisan_command')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        return is_array($output) ? $output : [];
+    }
+
+    /**
+     * Read the content_update dry-run plan from diagnostics.
+     *
+     * @return array<string, mixed>
+     */
+    private function contentDiagnostics(SupportCase $case): array
+    {
+        $output = $case->actions()
+            ->where('action_name', 'content_update')
             ->where('action_type', 'write')
             ->latest()
             ->first()?->output_json;
@@ -462,6 +494,10 @@ class SupportApprovalEmailService
             return $this->dryRunArtisanLines($case);
         }
 
+        if ($action === 'content_update') {
+            return $this->dryRunContentLines($case);
+        }
+
         return [
             '',
             'We could not determine an automatic change from this email.',
@@ -508,6 +544,43 @@ class SupportApprovalEmailService
         }
 
         return $lines;
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function dryRunContentLines(SupportCase $case): array
+    {
+        $plan = $this->contentDiagnostics($case);
+        $result = is_array($plan['result'] ?? null) ? $plan['result'] : [];
+        $label = (string) ($result['label'] ?? 'content record');
+        $before = (array) ($result['before'] ?? []);
+        $after = (array) ($result['after'] ?? []);
+
+        $lines = ['', 'We will update text on the '.$label.':'];
+
+        foreach ($after as $field => $newValue) {
+            $oldValue = (string) ($before[$field] ?? '');
+            $lines[] = '';
+            $lines[] = '  Field: '.$field;
+            $lines[] = '    From: '.$this->truncateForEmail($oldValue);
+            $lines[] = '    To:   '.$this->truncateForEmail((string) $newValue);
+        }
+
+        $lines[] = '';
+        $lines[] = 'Only the text above changes. The change is editable in Nova after it is applied.';
+
+        return $lines;
+    }
+
+    private function truncateForEmail(string $value, int $limit = 300): string
+    {
+        $value = trim(preg_replace('/\s+/', ' ', $value) ?? $value);
+        if ($value === '') {
+            return '(empty)';
+        }
+
+        return mb_strlen($value) > $limit ? mb_substr($value, 0, $limit).'…' : $value;
     }
 
     /**
@@ -614,6 +687,7 @@ class SupportApprovalEmailService
             'user_restore' => 'Done — CodeWeek account reactivated',
             'code_change' => 'Started — AI coding agent is preparing a PR into dev',
             'artisan_command' => 'Done — maintenance command completed on the server',
+            'content_update' => 'Done — content updated',
             default => 'Done — your approved request was completed',
         };
     }
@@ -771,6 +845,23 @@ class SupportApprovalEmailService
             return $lines;
         }
 
+        if ($action === 'content_update') {
+            $label = (string) ($inner['label'] ?? 'content record');
+            $before = (array) ($inner['before'] ?? []);
+            $after = (array) ($inner['after'] ?? []);
+            $lines = ['We updated the text on the '.$label.'.'];
+            foreach ($after as $field => $newValue) {
+                $lines[] = '';
+                $lines[] = '  Field: '.$field;
+                $lines[] = '    From: '.$this->truncateForEmail((string) ($before[$field] ?? ''));
+                $lines[] = '    To:   '.$this->truncateForEmail((string) $newValue);
+            }
+            $lines[] = '';
+            $lines[] = 'The change is live and can be further edited in Nova.';
+
+            return $lines;
+        }
+
         return [
             'The approved request for case #'.$case->id.' was completed successfully.',
         ];
@@ -850,6 +941,15 @@ class SupportApprovalEmailService
             str_contains($code, 'command_not_in_allowlist') => 'The proposed command is not on the approved list and was not run.',
             str_contains($code, 'shell_metacharacters_rejected') => 'The proposed command contained unsafe characters and was not run.',
             str_starts_with($code, 'exit_code_') => 'The command ran but reported an error (exit '.str_replace('exit_code_', '', $code).'). Please check the case in Nova.',
+            str_contains($code, 'content_edits_disabled') => 'Content editing is currently disabled.',
+            str_contains($code, 'model_not_in_allowlist') => 'That content type cannot be edited automatically.',
+            str_contains($code, 'record_not_found') => 'We could not find the content record to edit. Please check the reference in Nova.',
+            str_starts_with($code, 'field_not_editable') => 'One of the requested fields is not an editable text field.',
+            str_starts_with($code, 'field_is_translation_key') => 'One of the fields holds a translation key and was left unchanged.',
+            str_starts_with($code, 'value_contains_url') => 'The new text contained a link/URL, which is not allowed for content edits.',
+            str_starts_with($code, 'value_contains_markup') => 'The new text contained HTML/markup, which is not allowed for content edits.',
+            str_starts_with($code, 'value_too_long') => 'The new text was too long.',
+            str_contains($code, 'no_effective_change') => 'The content already matched the requested text — no change was needed.',
             $action === 'user_restore' && str_contains($code, 'verification') => 'The account was changed but we could not confirm it is fully active. Please verify in Nova.',
             default => 'Technical detail: '.$code,
         };

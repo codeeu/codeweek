@@ -84,4 +84,30 @@ return [
             'config:cache', 'route:cache', 'optimize',
         ],
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Phase 3 — AI content edits on Nova-managed records
+    |--------------------------------------------------------------------------
+    | Editorial copy changes to allowlisted content models
+    | (App\Services\Support\Content\ContentActionRegistry). Text fields only:
+    | the field resolver keeps string/text columns and drops URLs, slugs, flags,
+    | relations, and JSON/boolean/date casts. Same dry-run + APPROVE flow; the
+    | records are also editable in Nova for manual review.
+    */
+    'content' => [
+        'enabled' => env('SUPPORT_AI_CONTENT_ENABLED', false),
+        'max_field_length' => (int) env('SUPPORT_AI_CONTENT_MAX_FIELD_LENGTH', 5000),
+
+        // Column name fragments that are never editable, even if string/text.
+        'field_denylist' => [
+            'id', 'slug', 'path', 'url', 'uri', 'link', 'href', 'image', 'img',
+            'thumbnail', 'icon', 'file', 'photo', 'media', 'locale', 'lang',
+            'language', 'status', 'state', 'type', 'code', 'token', 'secret',
+            'password', 'email', 'position', 'sort', 'order', 'active', 'enabled',
+            'published', 'visible', 'identifier', 'keywords', 'color', 'colour',
+            'class', 'css', 'html', 'script', 'embed', 'json', 'overrides',
+            'created', 'updated', 'deleted', 'category', 'key', 'ref', 'uuid',
+        ],
+    ],
 ];
