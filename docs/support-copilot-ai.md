@@ -1,7 +1,7 @@
 # CodeWeek Support Copilot — AI capabilities (Phase 1)
 
 **Status:** Phase 1 · AI triage + frontend code fixes as PRs into `dev`
-**Phase 2 (planned):** AI-driven `artisan` changes on the server (allowlist-first, dry-run + APPROVE)
+**Phase 2:** AI-driven `artisan` changes on the server (allowlist-first, dry-run + APPROVE)
 
 This builds on the email pipeline in [support-copilot-stakeholder-guide.md](./support-copilot-stakeholder-guide.md)
 and the action matrix in [support-copilot-allowed-actions.md](./support-copilot-allowed-actions.md).
@@ -108,10 +108,36 @@ Keep `SUPPORT_GMAIL_DRY_RUN=true` throughout so every change still needs an emai
 
 ---
 
-## Phase 2 (not yet built) — AI `artisan` changes over SSH
+## Phase 2 — AI `artisan` changes over SSH
 
-Agreed design for the next phase:
+When triage classifies a ticket as `artisan_command`, the bot prepares a server
+maintenance command and runs it through the same dry-run → APPROVE → execute →
+report pipeline as every other write action. **Disabled by default**
+(`SUPPORT_AI_ARTISAN_ENABLED=false`).
 
-- **Allowlist-first:** an `ArtisanActionRegistry` of permitted commands with validated args. The AI may only pick from these.
-- **Fallback:** if no allowlisted command fits, the AI may propose a raw command string — still **dry-run first**, the **exact command** is emailed, and it only runs after **APPROVE**.
-- **Report:** after execution, a completion email reports what ran and the result (reusing the existing completion-email pipeline).
+- **Allowlist-first** (`App\Services\Support\Artisan\ArtisanActionRegistry`): the AI may
+  only pick a permitted command, and every argument/option is validated by type
+  (email, token, name). Current allowlist: `support:user-audit`, `support:event-audit`,
+  `support:user-restore`, `support:user-update-profile`.
+- **Guarded raw fallback** (`SUPPORT_AI_ARTISAN_ALLOW_RAW=true`): if no allowlisted command
+  fits, the AI may propose a bare `artisan` command. It is rejected if it contains shell
+  metacharacters or hits the deny-list (`migrate:fresh`, `db:wipe`, `tinker`, `down`, …),
+  treated as a write, and **never auto-simulated** — the exact command is emailed for APPROVE.
+- **Execution safety:** commands run via the `Process` array form (`php artisan …`), so
+  argument values can never be interpreted by a shell. Write commands that support
+  `--dry-run` are previewed with it during diagnostics; read-only commands are run as-is.
+  Re-validated against the allowlist/deny-list again at execution time (not trusting the
+  stored approval payload). Output is captured and truncated to `SUPPORT_AI_ARTISAN_OUTPUT_LIMIT`.
+- **Report:** the completion email shows the exact command and its output.
+
+### Phase 2 env
+
+```dotenv
+SUPPORT_AI_ARTISAN_ENABLED=false      # master switch for artisan actions
+SUPPORT_AI_ARTISAN_ALLOW_RAW=true     # allow AI-proposed (non-allowlisted) commands
+SUPPORT_AI_ARTISAN_TIMEOUT=120        # per-command timeout (seconds)
+SUPPORT_AI_ARTISAN_OUTPUT_LIMIT=8000  # captured output cap (characters)
+```
+
+`artisan_command` must also be present in `support_gmail.allowed_write_actions`
+(it is by default) and `support:ai:setup-check` verifies this.
