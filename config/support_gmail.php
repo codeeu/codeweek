@@ -78,6 +78,7 @@ return [
         'user_restore',
         'user_profile_update',
         'code_change',
+        'artisan_command',
     ],
 
     // Send a follow-up email after an APPROVE action runs (success or failure).

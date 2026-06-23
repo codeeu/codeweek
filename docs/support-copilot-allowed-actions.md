@@ -37,6 +37,7 @@ These are the **only** actions that can change production data via the email pip
 | `user_restore` | `account_restore` | Restores a **soft-deleted** user | User email + words like *restore*, *deleted account* |
 | `user_profile_update` | `profile_update` | Updates `firstname` and/or `lastname` on `users` | User email + requested first/last name |
 | `code_change` | `code_change` | AI cloud agent implements a frontend/code fix and opens a **PR into `dev`** (never deploys) | Description of the bug/change in the website code |
+| `artisan_command` | `artisan_command` | Runs an allowlisted (or guarded AI-proposed) `artisan` maintenance command on the server after dry-run + APPROVE | Request needing a server maintenance command; gated by `SUPPORT_AI_ARTISAN_ENABLED` |
 
 Configured in `config/support_gmail.php` → `allowed_write_actions`. AI features are
 configured in `config/support_ai.php` — see [support-copilot-ai.md](./support-copilot-ai.md).
