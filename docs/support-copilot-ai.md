@@ -2,6 +2,7 @@
 
 **Status:** Phase 1 · AI triage + frontend code fixes as PRs into `dev`
 **Phase 2:** AI-driven `artisan` changes on the server (allowlist-first, dry-run + APPROVE)
+**Phase 3:** AI content/copy edits on Nova-managed records (text fields only, dry-run + APPROVE)
 
 This builds on the email pipeline in [support-copilot-stakeholder-guide.md](./support-copilot-stakeholder-guide.md)
 and the action matrix in [support-copilot-allowed-actions.md](./support-copilot-allowed-actions.md).
@@ -140,4 +141,39 @@ SUPPORT_AI_ARTISAN_OUTPUT_LIMIT=8000  # captured output cap (characters)
 ```
 
 `artisan_command` must also be present in `support_gmail.allowed_write_actions`
+(it is by default) and `support:ai:setup-check` verifies this.
+
+---
+
+## Phase 3 — AI content edits on Nova-managed records
+
+When triage classifies a ticket as `content_update`, the bot proposes an editorial
+text change to an allowlisted content record and runs it through the same dry-run →
+APPROVE → execute → report pipeline. The records are Nova resources, so a reviewer
+can also adjust them by hand. **Disabled by default** (`SUPPORT_AI_CONTENT_ENABLED=false`).
+
+- **Model allowlist** (`App\Services\Support\Content\ContentActionRegistry`): the AI may
+  only edit listed content models (pages, homepage slides, FAQ items, menus, events,
+  podcasts, partners, …). Page-style singletons are looked up automatically; other
+  records are referenced by id or a unique field.
+- **Text fields only** (`ContentFieldResolver`): editable columns are resolved at runtime
+  to string/text columns **minus** a structural deny-list (URLs, slugs, flags, relations,
+  identifiers, SEO/keyword/category fields) and minus any non-string cast (boolean / array
+  / date / int). No hand-maintained per-model column list.
+- **Value guards** (`ContentUpdateService::validateValue`): each new value must be plain
+  text — URLs, `www.` references, and HTML/markup are rejected, length is capped at
+  `SUPPORT_AI_CONTENT_MAX_FIELD_LENGTH`. Fields whose current value is a Laravel
+  translation key (e.g. `hackathons.hero.title`) are left untouched.
+- **Exact diff + re-validation:** diagnostics computes a before→after diff (shown in the
+  approval email); execution re-runs the full plan/validation before saving — it never
+  trusts the stored payload. The completion email shows the applied before→after.
+
+### Phase 3 env
+
+```dotenv
+SUPPORT_AI_CONTENT_ENABLED=false        # master switch for content edits
+SUPPORT_AI_CONTENT_MAX_FIELD_LENGTH=5000
+```
+
+`content_update` must also be present in `support_gmail.allowed_write_actions`
 (it is by default) and `support:ai:setup-check` verifies this.
