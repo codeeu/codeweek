@@ -31,3 +31,4 @@ vite.config.js
 .DS_Store
 resources/excel/example.xlsx
 resources/ai-agent-plans/*
+/docs/internal/
