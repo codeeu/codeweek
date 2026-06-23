@@ -77,6 +77,9 @@ return [
     'allowed_write_actions' => [
         'user_restore',
         'user_profile_update',
+        'code_change',
+        'artisan_command',
+        'content_update',
     ],
 
     // Send a follow-up email after an APPROVE action runs (success or failure).
