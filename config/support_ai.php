@@ -60,4 +60,28 @@ return [
     // promotion is skipped gracefully if absent). owner/repo form.
     'github_repo' => env('SUPPORT_GITHUB_REPO', 'codeeu/codeweek'),
     'github_token' => env('SUPPORT_GITHUB_TOKEN'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Phase 2 — AI-driven artisan changes on the server
+    |--------------------------------------------------------------------------
+    | Allowlist-first: the AI may only pick an allowlisted command (see
+    | App\Services\Support\Artisan\ArtisanActionRegistry). If none fits and
+    | allow_raw_fallback is true, it may propose a raw artisan command — still
+    | dry-run + emailed APPROVE, and still subject to the destructive deny-list.
+    */
+    'artisan' => [
+        'enabled' => env('SUPPORT_AI_ARTISAN_ENABLED', false),
+        'allow_raw_fallback' => filter_var(env('SUPPORT_AI_ARTISAN_ALLOW_RAW', true), FILTER_VALIDATE_BOOL),
+        'timeout_seconds' => (int) env('SUPPORT_AI_ARTISAN_TIMEOUT', 120),
+        'output_limit' => (int) env('SUPPORT_AI_ARTISAN_OUTPUT_LIMIT', 8000),
+        'php_binary' => env('SUPPORT_AI_PHP_BINARY', PHP_BINARY),
+
+        // Subcommand verbs that are NEVER allowed, even via raw fallback.
+        'denylist' => [
+            'migrate:fresh', 'migrate:reset', 'migrate:rollback', 'migrate:refresh',
+            'db:wipe', 'db:seed', 'tinker', 'down', 'env', 'key:generate',
+            'config:cache', 'route:cache', 'optimize',
+        ],
+    ],
 ];
