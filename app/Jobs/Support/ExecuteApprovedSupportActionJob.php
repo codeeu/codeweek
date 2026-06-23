@@ -4,6 +4,7 @@ namespace App\Jobs\Support;
 
 use App\Models\Support\SupportApproval;
 use App\Models\Support\SupportCase;
+use App\Services\Support\Cursor\CursorAgentService;
 use App\Services\Support\SupportActionLogger;
 use App\Services\Support\SupportApprovalEmailService;
 use App\Services\Support\UserProfileUpdateService;
@@ -27,6 +28,7 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
         UserProfileUpdateService $userProfileUpdate,
         SupportApprovalEmailService $approvalEmail,
         SupportActionLogger $logger,
+        CursorAgentService $cursorAgent,
     ): void
     {
         $approval = SupportApproval::findOrFail($this->supportApprovalId);
@@ -81,6 +83,18 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
         } elseif ($action === 'user_profile_update') {
             // Re-read names from the case email (approval payload may be from an older parser).
             $result = $userProfileUpdate->updateFromCase($case, dryRun: false, viaEmailApproval: true);
+        } elseif ($action === 'code_change') {
+            $result = $cursorAgent->launchCodeAgent(
+                prompt: (string) ($payload['cursor_prompt'] ?? ''),
+                startingRef: isset($payload['starting_ref']) ? (string) $payload['starting_ref'] : null,
+            );
+
+            $inner = is_array($result['result'] ?? null) ? $result['result'] : [];
+            $case->update([
+                'cursor_agent_id' => $inner['agent_id'] ?? null,
+                'cursor_agent_status' => $inner['status'] ?? null,
+                'cursor_pr_url' => $inner['pr_url'] ?? null,
+            ]);
         } else {
             $result = [
                 'ok' => false,
@@ -93,7 +107,12 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
         }
 
         $ok = (bool) ($result['ok'] ?? false);
-        $case->update(['status' => $ok ? 'verified' : 'escalated']);
+        if ($action === 'code_change') {
+            // Agent launched asynchronously; poll command captures the PR + closes out.
+            $case->update(['status' => $ok ? 'action_executed' : 'escalated']);
+        } else {
+            $case->update(['status' => $ok ? 'verified' : 'escalated']);
+        }
 
         $logger->log(
             case: $case,
