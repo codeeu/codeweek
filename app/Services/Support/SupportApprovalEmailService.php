@@ -25,6 +25,7 @@ class SupportApprovalEmailService
             'profile_update' => 'Please review — name change',
             'account_restore' => 'Please review — account restore',
             'code_change' => 'Please review — proposed code fix (PR into dev)',
+            'artisan_command' => 'Please review — proposed server maintenance command',
             default => 'Please review before we make changes',
         };
 
@@ -293,7 +294,39 @@ class SupportApprovalEmailService
             }
         }
 
+        if ($case->case_type === 'artisan_command') {
+            $stored = $this->artisanDiagnostics($case);
+            $planResult = is_array($stored['plan']['result'] ?? null) ? $stored['plan']['result'] : [];
+            if (($stored['plan']['ok'] ?? false) && ($planResult['display'] ?? '') !== '') {
+                return [
+                    'action' => 'artisan_command',
+                    'payload' => [
+                        'display' => (string) $planResult['display'],
+                        'mode' => (string) ($planResult['mode'] ?? 'registry'),
+                        'command' => (string) ($planResult['command'] ?? ''),
+                        'is_write' => (bool) ($planResult['is_write'] ?? true),
+                    ],
+                ];
+            }
+        }
+
         return ['action' => 'none', 'payload' => []];
+    }
+
+    /**
+     * Read the artisan_command dry-run record from diagnostics.
+     *
+     * @return array<string, mixed>
+     */
+    private function artisanDiagnostics(SupportCase $case): array
+    {
+        $output = $case->actions()
+            ->where('action_name', 'artisan_command')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        return is_array($output) ? $output : [];
     }
 
     /**
@@ -425,11 +458,56 @@ class SupportApprovalEmailService
             return $this->dryRunCodeChangeLines($payload);
         }
 
+        if ($action === 'artisan_command') {
+            return $this->dryRunArtisanLines($case);
+        }
+
         return [
             '',
             'We could not determine an automatic change from this email.',
             'Check that the message includes lines like "Requested first name:" and "Requested last name:".',
         ];
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function dryRunArtisanLines(SupportCase $case): array
+    {
+        $stored = $this->artisanDiagnostics($case);
+        $planResult = is_array($stored['plan']['result'] ?? null) ? $stored['plan']['result'] : [];
+        $dry = is_array($stored['dry_run']['result'] ?? null) ? $stored['dry_run']['result'] : [];
+
+        $display = (string) ($planResult['display'] ?? '');
+        $lines = ['', 'We will run this maintenance command on the server:'];
+        if ($display !== '') {
+            $lines[] = '  '.$display;
+        }
+
+        if (($planResult['mode'] ?? 'registry') === 'raw') {
+            $lines[] = '';
+            $lines[] = '(AI-proposed command — not on the standard allowlist. Please check it carefully.)';
+        }
+
+        if (($dry['executed'] ?? false) && isset($dry['output'])) {
+            $lines[] = '';
+            $lines[] = 'Dry-run preview output:';
+            $lines[] = str_repeat('·', 20);
+            foreach (preg_split('/\r\n|\r|\n/', (string) $dry['output']) ?: [] as $out) {
+                $lines[] = '  '.$out;
+            }
+        } elseif (($dry['note'] ?? '') !== '') {
+            $lines[] = '';
+            $lines[] = (string) $dry['note'];
+        }
+
+        if (!($stored['plan']['ok'] ?? false)) {
+            $errors = implode('; ', array_map('strval', (array) ($stored['plan']['errors'] ?? [])));
+            $lines[] = '';
+            $lines[] = 'Note: the proposed command could not be prepared'.($errors !== '' ? ' ('.$errors.')' : '').'.';
+        }
+
+        return $lines;
     }
 
     /**
@@ -535,6 +613,7 @@ class SupportApprovalEmailService
             'user_profile_update' => 'Done — name updated on CodeWeek account',
             'user_restore' => 'Done — CodeWeek account reactivated',
             'code_change' => 'Started — AI coding agent is preparing a PR into dev',
+            'artisan_command' => 'Done — maintenance command completed on the server',
             default => 'Done — your approved request was completed',
         };
     }
@@ -672,6 +751,26 @@ class SupportApprovalEmailService
             return $lines;
         }
 
+        if ($action === 'artisan_command') {
+            $command = (string) ($inner['command'] ?? '');
+            $output = (string) ($inner['output'] ?? '');
+            $lines = ['We ran the approved maintenance command on the server.'];
+            if ($command !== '') {
+                $lines[] = '';
+                $lines[] = 'Command: '.$command;
+            }
+            if ($output !== '') {
+                $lines[] = '';
+                $lines[] = 'Output:';
+                $lines[] = str_repeat('·', 20);
+                foreach (preg_split('/\r\n|\r|\n/', $output) ?: [] as $out) {
+                    $lines[] = '  '.$out;
+                }
+            }
+
+            return $lines;
+        }
+
         return [
             'The approved request for case #'.$case->id.' was completed successfully.',
         ];
@@ -746,6 +845,11 @@ class SupportApprovalEmailService
             str_contains($code, 'dry_run_mode') => 'The system is in preview-only mode and could not apply live changes.',
             str_contains($code, 'unsupported_approved_action') => 'This type of request cannot be run automatically yet.',
             str_contains($code, 'approval_required') => 'This action still requires a separate approval step in the system.',
+            str_contains($code, 'denylisted_command') => 'The proposed command is blocked for safety and was not run.',
+            str_contains($code, 'artisan_actions_disabled') => 'Server maintenance commands are currently disabled.',
+            str_contains($code, 'command_not_in_allowlist') => 'The proposed command is not on the approved list and was not run.',
+            str_contains($code, 'shell_metacharacters_rejected') => 'The proposed command contained unsafe characters and was not run.',
+            str_starts_with($code, 'exit_code_') => 'The command ran but reported an error (exit '.str_replace('exit_code_', '', $code).'). Please check the case in Nova.',
             $action === 'user_restore' && str_contains($code, 'verification') => 'The account was changed but we could not confirm it is fully active. Please verify in Nova.',
             default => 'Technical detail: '.$code,
         };
