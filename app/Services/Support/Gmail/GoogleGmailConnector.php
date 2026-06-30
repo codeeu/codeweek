@@ -231,7 +231,7 @@ class GoogleGmailConnector implements GmailConnector
 
         $headers = [
             'To: '.$to,
-            'Subject: '.$subject,
+            'Subject: '.$this->encodeHeaderValue($subject),
             'MIME-Version: 1.0',
             'Content-Type: text/plain; charset=UTF-8',
         ];
@@ -244,6 +244,31 @@ class GoogleGmailConnector implements GmailConnector
         $raw = implode("\r\n", $headers)."\r\n\r\n".$body;
         $encoded = rtrim(strtr(base64_encode($raw), '+/', '-_'), '=');
 
+        return $this->dispatch($mailbox, $encoded, $threadId);
+    }
+
+    /**
+     * RFC 2047 encode a header value when it contains non-ASCII bytes so that
+     * characters like em-dashes and accents are not mangled by mail clients.
+     */
+    private function encodeHeaderValue(string $value): string
+    {
+        if (preg_match('/[^\x20-\x7E]/', $value) !== 1) {
+            return $value;
+        }
+
+        $encoded = mb_encode_mimeheader($value, 'UTF-8', 'B', "\r\n");
+
+        return $encoded !== false && $encoded !== ''
+            ? $encoded
+            : '=?UTF-8?B?'.base64_encode($value).'?=';
+    }
+
+    /**
+     * @return array{id: string, thread_id: ?string}
+     */
+    private function dispatch(string $mailbox, string $encoded, ?string $threadId): array
+    {
         $message = new GoogleMessage();
         $message->setRaw($encoded);
 
