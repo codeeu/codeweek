@@ -70,7 +70,7 @@ final class SupportDryRunEmailCopyTest extends TestCase
             $gmail,
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
-            app(\App\Services\Support\SupportRoleRequestParser::class),
+            app(\App\Services\Support\SupportRoleRequestResolver::class),
         );
 
         $svc->sendDryRunReview($case, 'admin@matrixinternet.ie');
@@ -144,7 +144,7 @@ final class SupportDryRunEmailCopyTest extends TestCase
             $gmail,
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
-            app(\App\Services\Support\SupportRoleRequestParser::class),
+            app(\App\Services\Support\SupportRoleRequestResolver::class),
         );
 
         $svc->sendDryRunReview($case, 'admin@matrixinternet.ie');
