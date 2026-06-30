@@ -15,7 +15,7 @@ class SupportApprovalEmailService
         private readonly GmailOutboundService $gmail,
         private readonly SupportSenderAllowlist $allowlist,
         private readonly SupportProfileRequestParser $profileParser,
-        private readonly SupportRoleRequestParser $roleParser,
+        private readonly SupportRoleRequestResolver $roleResolver,
     ) {
     }
 
@@ -283,12 +283,12 @@ class SupportApprovalEmailService
         }
 
         if ($case->case_type === 'role_add') {
-            $role = $this->roleParser->parse((string) ($case->normalized_message ?? $case->raw_message ?? ''));
+            $role = $this->roleResolver->resolve($case);
             if ($role['role'] !== null && $role['emails'] !== []) {
                 return [
                     'action' => 'user_role_add',
                     'payload' => [
-                        'operation' => 'add',
+                        'operation' => $role['operation'],
                         'role' => $role['role'],
                         'emails' => $role['emails'],
                     ],
