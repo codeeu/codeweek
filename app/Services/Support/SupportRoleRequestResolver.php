@@ -5,12 +5,15 @@ namespace App\Services\Support;
 use App\Models\Support\SupportCase;
 
 /**
- * Resolve the role-change request for a case, AI-first.
+ * Resolve the role-change request for a case.
  *
- * Emails and role come from the triage result (Cursor AI when enabled, the
- * heuristic otherwise) which is stored on the case and the triage action.
- * The deterministic SupportRoleRequestParser is used only as a fallback when
- * the triage layer did not produce a usable value.
+ * AI-first by design: when Cursor triage is enabled we trust the triage result
+ * (role + emails) exclusively. The triage result is itself already "AI over
+ * heuristic" — if the AI call fails for a run, TriageAgentService keeps the
+ * heuristic values, so this path degrades gracefully without re-parsing here.
+ *
+ * The deterministic SupportRoleRequestParser is used ONLY when AI triage is not
+ * enabled.
  */
 class SupportRoleRequestResolver
 {
@@ -20,33 +23,61 @@ class SupportRoleRequestResolver
     }
 
     /**
-     * @return array{operation: string, role: ?string, emails: list<string>, source: array{role: string, emails: string}}
+     * @return array{operation: string, role: ?string, emails: list<string>, source: array{mode: string, role: string, emails: string}}
      */
     public function resolve(SupportCase $case): array
     {
-        $parsed = $this->parser->parse((string) ($case->normalized_message ?? $case->raw_message ?? ''));
+        return $this->aiEnabled()
+            ? $this->resolveFromTriage($case)
+            : $this->resolveFromParser($case);
+    }
+
+    /**
+     * @return array{operation: string, role: ?string, emails: list<string>, source: array{mode: string, role: string, emails: string}}
+     */
+    private function resolveFromTriage(SupportCase $case): array
+    {
         $triage = $this->triageOutput($case);
 
-        $aiRole = $this->stringOrNull($triage['role_name'] ?? null);
-        $aiOperation = $this->stringOrNull($triage['role_operation'] ?? null);
-        $aiEmails = $this->emailsFromCase($case);
-
-        $role = $aiRole ?? $parsed['role'];
-        $roleSource = $aiRole !== null ? 'ai' : ($parsed['role'] !== null ? 'parser' : 'none');
-
-        $emails = $aiEmails !== [] ? $aiEmails : $parsed['emails'];
-        $emailSource = $aiEmails !== [] ? 'ai' : ($parsed['emails'] !== [] ? 'parser' : 'none');
-
-        $operation = in_array($aiOperation, ['add', 'remove'], true)
-            ? $aiOperation
-            : ($parsed['operation'] ?: 'add');
+        $role = $this->stringOrNull($triage['role_name'] ?? null);
+        $operation = $this->stringOrNull($triage['role_operation'] ?? null);
+        $emails = $this->emailsFromCase($case);
 
         return [
-            'operation' => $operation,
+            'operation' => in_array($operation, ['add', 'remove'], true) ? $operation : 'add',
             'role' => $role,
             'emails' => $emails,
-            'source' => ['role' => $roleSource, 'emails' => $emailSource],
+            'source' => [
+                'mode' => 'ai',
+                'role' => $role !== null ? 'ai' : 'none',
+                'emails' => $emails !== [] ? 'ai' : 'none',
+            ],
         ];
+    }
+
+    /**
+     * @return array{operation: string, role: ?string, emails: list<string>, source: array{mode: string, role: string, emails: string}}
+     */
+    private function resolveFromParser(SupportCase $case): array
+    {
+        $parsed = $this->parser->parse((string) ($case->normalized_message ?? $case->raw_message ?? ''));
+
+        return [
+            'operation' => $parsed['operation'] ?: 'add',
+            'role' => $parsed['role'],
+            'emails' => $parsed['emails'],
+            'source' => [
+                'mode' => 'deterministic',
+                'role' => $parsed['role'] !== null ? 'parser' : 'none',
+                'emails' => $parsed['emails'] !== [] ? 'parser' : 'none',
+            ],
+        ];
+    }
+
+    private function aiEnabled(): bool
+    {
+        return (bool) config('support_ai.enabled', false)
+            && (bool) config('support_ai.triage.enabled', true);
     }
 
     /**
