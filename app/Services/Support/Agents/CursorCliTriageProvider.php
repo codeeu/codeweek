@@ -135,7 +135,9 @@ Allowed case_type values: {$types}
 Use "code_change" only when the request is about a bug or change in the website/application code
 (frontend or template/markup/styling/behaviour) that a developer would fix in the repository.
 Use "role_add" when the request is to add/grant a role (e.g. "leading teacher") to one or more
-users identified by email. Put the affected emails in target_email/secondary_emails.
+users identified by email. Put the affected emails in target_email/secondary_emails, put the
+role being granted in "role_name" (singular, e.g. "leading teacher"), and set "role_operation"
+to "add". Include EVERY email listed in the request (one per person), even for long pasted tables.
 {$artisanBlock}{$contentBlock}
 JSON schema to return:
 {
@@ -149,6 +151,8 @@ JSON schema to return:
   "reasoning_summary": "<one sentence>",
   "profile_firstname": "<requested first name or null>",
   "profile_lastname": "<requested last name or null>",
+  "role_name": "<for role_add: the role to grant, e.g. leading teacher, else null>",
+  "role_operation": "<for role_add: add (remove is not supported), else null>",
   "change_summary": "<for code_change: one sentence describing the fix, else null>",
   "change_area": "<for code_change: e.g. frontend/blade/css/js, else null>",
   "cursor_prompt": "<for code_change: a precise instruction for a coding agent to implement the fix and open a PR, else null>",
@@ -321,6 +325,8 @@ BLOCK;
             'requested_action' => $requestedAction,
             'profile_firstname' => $this->stringOrNull($data['profile_firstname'] ?? null),
             'profile_lastname' => $this->stringOrNull($data['profile_lastname'] ?? null),
+            'role_name' => $this->stringOrNull($data['role_name'] ?? null),
+            'role_operation' => $this->normalizeRoleOperation($data['role_operation'] ?? null),
             'risk_level' => $risk,
             'recommended_runbook' => $this->stringOrNull($data['recommended_runbook'] ?? null) ?? $caseType,
             'needs_human_review' => (bool) ($data['needs_human_review'] ?? false),
@@ -337,6 +343,16 @@ BLOCK;
             'content_summary' => $this->stringOrNull($data['content_summary'] ?? null),
             'triage_source' => 'cursor_cli',
         ];
+    }
+
+    private function normalizeRoleOperation(mixed $value): ?string
+    {
+        if (!is_string($value)) {
+            return null;
+        }
+        $value = strtolower(trim($value));
+
+        return in_array($value, ['add', 'grant', 'assign'], true) ? 'add' : null;
     }
 
     private function stringOrNull(mixed $value): ?string
