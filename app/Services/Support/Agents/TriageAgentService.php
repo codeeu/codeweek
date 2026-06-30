@@ -4,6 +4,7 @@ namespace App\Services\Support\Agents;
 
 use App\Models\Support\SupportCase;
 use App\Services\Support\SupportProfileRequestParser;
+use App\Services\Support\SupportRoleRequestParser;
 use Illuminate\Support\Str;
 
 class TriageAgentService
@@ -11,6 +12,7 @@ class TriageAgentService
     public function __construct(
         private readonly SupportProfileRequestParser $profileParser,
         private readonly CursorCliTriageProvider $aiProvider,
+        private readonly SupportRoleRequestParser $roleParser,
     ) {
     }
 
@@ -56,11 +58,18 @@ class TriageAgentService
         $rawText = (string) ($case->normalized_message ?? $case->raw_message ?? '');
         $text = Str::lower($rawText);
         $profile = $this->profileParser->parse($rawText);
+        $roleRequest = $this->roleParser->parse($rawText);
+        $hasRoleRequest = $roleRequest['role'] !== null
+            && $roleRequest['operation'] === 'add'
+            && $roleRequest['emails'] !== [];
 
         // V1 heuristic placeholder (replace with LLM later, keep output schema stable).
         $caseType = 'unknown';
         $runbook = 'unknown';
-        if (Str::contains($text, ['soft-deleted', 'deleted', 'restore account', 'account missing'])) {
+        if ($hasRoleRequest) {
+            $caseType = 'role_add';
+            $runbook = 'add_user_role';
+        } elseif (Str::contains($text, ['soft-deleted', 'deleted', 'restore account', 'account missing'])) {
             $caseType = 'account_restore';
             $runbook = 'restore_deleted_account';
         } elseif (Str::contains($text, [
@@ -88,17 +97,31 @@ class TriageAgentService
             $runbook = 'role_problem';
         }
 
-        $targetEmail = $profile['email'] ?? $this->extractFirstEmail($text);
-        $secondary = $this->extractAllEmails($text);
-        $secondary = array_values(array_filter($secondary, fn ($e) => $targetEmail ? $e !== $targetEmail : true));
+        if ($hasRoleRequest) {
+            $targetEmail = $roleRequest['emails'][0];
+            $secondary = array_values(array_slice($roleRequest['emails'], 1));
+        } else {
+            $targetEmail = $profile['email'] ?? $this->extractFirstEmail($text);
+            $secondary = $this->extractAllEmails($text);
+            $secondary = array_values(array_filter($secondary, fn ($e) => $targetEmail ? $e !== $targetEmail : true));
+        }
 
         $risk = Str::contains($text, ['password reset', 'merge', 'ownership', 'privileged']) ? 'high' : 'low';
         if ($caseType === 'profile_update') {
             $risk = 'low';
         }
+        if ($hasRoleRequest && $this->roleLooksPrivileged((string) $roleRequest['role'])) {
+            $risk = 'high';
+        }
 
         $needsHuman = $targetEmail === null
             || ($caseType === 'profile_update' && $profile['firstname'] === null && $profile['lastname'] === null);
+
+        $requestedAction = match ($caseType) {
+            'profile_update' => 'user_profile_update',
+            'role_add' => 'user_role_add',
+            default => null,
+        };
 
         return [
             'case_type' => $caseType,
@@ -106,7 +129,7 @@ class TriageAgentService
             'target_email' => $targetEmail,
             'secondary_emails' => $secondary,
             'target_user_id' => null,
-            'requested_action' => $caseType === 'profile_update' ? 'user_profile_update' : null,
+            'requested_action' => $requestedAction,
             'profile_firstname' => $profile['firstname'],
             'profile_lastname' => $profile['lastname'],
             'risk_level' => $risk,
@@ -118,6 +141,11 @@ class TriageAgentService
             'cursor_prompt' => null,
             'triage_source' => 'heuristic',
         ];
+    }
+
+    private function roleLooksPrivileged(string $roleName): bool
+    {
+        return (bool) preg_match('/\b(admin|administrator|super|owner|root|staff)\b/i', $roleName);
     }
 
     private function extractFirstEmail(string $text): ?string

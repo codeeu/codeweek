@@ -77,10 +77,18 @@ return [
     'allowed_write_actions' => [
         'user_restore',
         'user_profile_update',
+        'user_role_add',
         'code_change',
         'artisan_command',
         'content_update',
     ],
+
+    // Roles the copilot may add via email APPROVE. Empty = any role that exists in the roles table.
+    // Provide a comma-separated list to restrict (e.g. "leading teacher,leading teacher admin").
+    'role_add_allowed_roles' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env('SUPPORT_GMAIL_ROLE_ADD_ALLOWED_ROLES', '')),
+    ))),
 
     // Send a follow-up email after an APPROVE action runs (success or failure).
     'send_completion_email' => env('SUPPORT_GMAIL_SEND_COMPLETION_EMAIL', true),
