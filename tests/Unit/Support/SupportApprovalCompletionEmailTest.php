@@ -8,10 +8,13 @@ use App\Services\Support\Gmail\GmailOutboundService;
 use App\Services\Support\SupportApprovalEmailService;
 use App\Services\Support\SupportProfileRequestParser;
 use App\Services\Support\SupportSenderAllowlist;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 final class SupportApprovalCompletionEmailTest extends TestCase
 {
+    use RefreshDatabase;
+
     public function test_completion_subject_reflects_success_or_failure(): void
     {
         $case = new SupportCase(['id' => 10]);
@@ -63,6 +66,7 @@ final class SupportApprovalCompletionEmailTest extends TestCase
             $gmail,
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
+            app(\App\Services\Support\SupportRoleRequestParser::class),
         );
 
         $payload = $svc->sendActionCompletion(

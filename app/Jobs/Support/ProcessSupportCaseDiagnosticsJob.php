@@ -11,6 +11,7 @@ use App\Services\Support\SupportActionLogger;
 use App\Services\Support\SupportJson;
 use App\Services\Support\UserProfileUpdateService;
 use App\Services\Support\UserRestoreService;
+use App\Services\Support\UserRoleAddService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -30,6 +31,7 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
         SupportActionLogger $logger,
         UserRestoreService $userRestore,
         UserProfileUpdateService $userProfileUpdate,
+        UserRoleAddService $userRoleAdd,
         ArtisanCommandRunner $artisanRunner,
         ContentUpdateService $contentUpdate,
     ): void {
@@ -70,6 +72,20 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
                 actionName: 'user_profile_update',
                 actionType: 'write',
                 input: ['email' => $case->target_email, 'dry_run' => true],
+                output: $dryRunResult,
+                succeeded: (bool) ($dryRunResult['ok'] ?? false),
+                executedBy: 'agent',
+                correlationId: $case->correlation_id,
+            );
+        }
+
+        if ($case->case_type === 'role_add') {
+            $dryRunResult = $userRoleAdd->addFromCase($case, dryRun: true);
+            $logger->log(
+                case: $case,
+                actionName: 'user_role_add',
+                actionType: 'write',
+                input: ['dry_run' => true],
                 output: $dryRunResult,
                 succeeded: (bool) ($dryRunResult['ok'] ?? false),
                 executedBy: 'agent',
