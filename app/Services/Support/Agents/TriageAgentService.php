@@ -132,6 +132,8 @@ class TriageAgentService
             'requested_action' => $requestedAction,
             'profile_firstname' => $profile['firstname'],
             'profile_lastname' => $profile['lastname'],
+            'role_name' => $hasRoleRequest ? $roleRequest['role'] : null,
+            'role_operation' => $hasRoleRequest ? $roleRequest['operation'] : null,
             'risk_level' => $risk,
             'recommended_runbook' => $runbook,
             'needs_human_review' => $needsHuman,

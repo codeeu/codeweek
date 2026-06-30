@@ -56,7 +56,7 @@ final class SupportCompletionEmailCopyTest extends TestCase
             $gmail,
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
-            app(\App\Services\Support\SupportRoleRequestParser::class),
+            app(\App\Services\Support\SupportRoleRequestResolver::class),
         );
 
         $svc->sendActionCompletion(
