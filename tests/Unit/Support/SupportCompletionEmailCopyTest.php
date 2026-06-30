@@ -8,10 +8,13 @@ use App\Services\Support\Gmail\GmailOutboundService;
 use App\Services\Support\SupportApprovalEmailService;
 use App\Services\Support\SupportProfileRequestParser;
 use App\Services\Support\SupportSenderAllowlist;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 final class SupportCompletionEmailCopyTest extends TestCase
 {
+    use RefreshDatabase;
+
     public function test_completion_body_uses_plain_language_for_profile_update(): void
     {
         $case = SupportCase::create([
@@ -53,6 +56,7 @@ final class SupportCompletionEmailCopyTest extends TestCase
             $gmail,
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
+            app(\App\Services\Support\SupportRoleRequestParser::class),
         );
 
         $svc->sendActionCompletion(

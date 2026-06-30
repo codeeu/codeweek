@@ -27,6 +27,7 @@ class CursorCliTriageProvider implements TriageProvider
         'missing_events',
         'certificate_issue',
         'role_issue',
+        'role_add',
         'code_change',
         'artisan_command',
         'content_update',
@@ -133,6 +134,8 @@ Do NOT make any code changes, run tools, or edit files. Respond with a single JS
 Allowed case_type values: {$types}
 Use "code_change" only when the request is about a bug or change in the website/application code
 (frontend or template/markup/styling/behaviour) that a developer would fix in the repository.
+Use "role_add" when the request is to add/grant a role (e.g. "leading teacher") to one or more
+users identified by email. Put the affected emails in target_email/secondary_emails.
 {$artisanBlock}{$contentBlock}
 JSON schema to return:
 {
@@ -288,6 +291,7 @@ BLOCK;
         $requestedAction = match ($caseType) {
             'profile_update' => 'user_profile_update',
             'account_restore' => 'user_restore',
+            'role_add' => 'user_role_add',
             'code_change' => 'code_change',
             'artisan_command' => 'artisan_command',
             'content_update' => 'content_update',
