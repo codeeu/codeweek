@@ -584,7 +584,8 @@ class SupportApprovalEmailService
         $status = (string) ($item['status'] ?? '');
 
         $label = match ($status) {
-            'would_add', 'added' => 'will be added',
+            'would_add' => 'will be added',
+            'added' => 'role added',
             'already_has_role' => 'already has this role (no change)',
             'user_not_found' => 'no CodeWeek account found — skipped',
             'ambiguous' => 'multiple accounts match — needs manual check, skipped',
