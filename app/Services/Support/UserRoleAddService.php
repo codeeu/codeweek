@@ -17,21 +17,21 @@ use Spatie\Permission\Models\Role;
 class UserRoleAddService
 {
     public function __construct(
-        private readonly SupportRoleRequestParser $parser,
+        private readonly SupportRoleRequestResolver $resolver,
     ) {
     }
 
     public function addFromCase(SupportCase $case, bool $dryRun, bool $viaEmailApproval = false): array
     {
-        $parsed = $this->parser->parse((string) ($case->normalized_message ?? $case->raw_message ?? ''));
+        $resolved = $this->resolver->resolve($case);
 
         return $this->addRole(
             case: $case,
-            roleName: $parsed['role'],
-            emails: $parsed['emails'],
+            roleName: $resolved['role'],
+            emails: $resolved['emails'],
             dryRun: $dryRun,
             viaEmailApproval: $viaEmailApproval,
-            operation: $parsed['operation'],
+            operation: $resolved['operation'],
         );
     }
 
