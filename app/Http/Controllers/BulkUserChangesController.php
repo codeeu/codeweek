@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Services\BulkUserChanges\BulkUserChangesPlanner;
 use App\Services\BulkUserChanges\BulkUserChangesReadOptions;
 use App\Services\BulkUserChanges\BulkUserChangesSheetReader;
+use App\Services\BulkUserChanges\BulkUserChangesTextParser;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -22,6 +23,94 @@ class BulkUserChangesController extends Controller
     }
 
     public function validateUpload(
+        Request $request,
+        BulkUserChangesSheetReader $reader,
+        BulkUserChangesTextParser $textParser,
+        BulkUserChangesPlanner $planner,
+    ): RedirectResponse {
+        $hasFile = $request->hasFile('file') && $request->file('file')?->isValid();
+        $hasPaste = trim((string) $request->input('paste', '')) !== '';
+
+        if ($hasFile && $hasPaste) {
+            return redirect()->route('admin.bulk-user-changes.index')
+                ->withErrors(['file' => 'Upload a file or paste text, not both.'])
+                ->withInput();
+        }
+
+        if (! $hasFile && ! $hasPaste) {
+            return redirect()->route('admin.bulk-user-changes.index')
+                ->withErrors(['file' => 'Upload a file or paste changes to continue.']);
+        }
+
+        if ($hasPaste) {
+            return $this->validatePaste($request, $textParser, $planner);
+        }
+
+        return $this->validateFile($request, $reader, $planner);
+    }
+
+    public function preview(Request $request): View|RedirectResponse
+    {
+        $payload = $this->payloadFromSession($request);
+        if ($payload === null) {
+            return redirect()->route('admin.bulk-user-changes.index')
+                ->withErrors(['file' => 'No validated upload found. Please upload a file or paste changes first.']);
+        }
+
+        return view('admin.bulk-user-changes.preview', [
+            'parsed' => $payload['parsed'],
+            'plan' => $payload['plan'],
+            'token' => $request->session()->get(self::SESSION_TOKEN),
+        ]);
+    }
+
+    public function apply(
+        Request $request,
+        BulkUserChangesSheetReader $reader,
+        BulkUserChangesTextParser $textParser,
+        BulkUserChangesPlanner $planner,
+    ): RedirectResponse {
+        $token = (string) $request->input('token', $request->session()->get(self::SESSION_TOKEN, ''));
+        $payload = $token !== '' ? Cache::get('bulk_user_changes_'.$token) : null;
+
+        if (! is_array($payload)) {
+            return redirect()->route('admin.bulk-user-changes.index')
+                ->withErrors(['file' => 'Session expired. Please upload or paste again.']);
+        }
+
+        try {
+            $parsed = $this->readPayload($payload, $reader, $textParser);
+            $result = $planner->apply($parsed['rows']);
+        } catch (\Throwable $e) {
+            return redirect()->route('admin.bulk-user-changes.preview')
+                ->withErrors(['apply' => 'Apply failed: '.$e->getMessage()]);
+        }
+
+        $this->cleanupPayload($payload);
+        Cache::forget('bulk_user_changes_'.$token);
+        $request->session()->forget(self::SESSION_TOKEN);
+        $request->session()->put('bulk_user_changes_report', [
+            'parsed' => $parsed,
+            'result' => $result,
+        ]);
+
+        return redirect()->route('admin.bulk-user-changes.report');
+    }
+
+    public function report(Request $request): View|RedirectResponse
+    {
+        $report = $request->session()->get('bulk_user_changes_report');
+        if (! is_array($report)) {
+            return redirect()->route('admin.bulk-user-changes.index');
+        }
+
+        return view('admin.bulk-user-changes.report', [
+            'parsed' => $report['parsed'],
+            'result' => $report['result'],
+        ]);
+    }
+
+    private function validateFile(
         Request $request,
         BulkUserChangesSheetReader $reader,
         BulkUserChangesPlanner $planner,
@@ -68,15 +157,56 @@ class BulkUserChangesController extends Controller
                 ->withErrors(['file' => 'No actionable rows found after the header row. Check that the Changes sheet has email addresses and actions.']);
         }
 
+        return $this->storePreviewSession($request, $planner, $parsed, [
+            'source' => 'file',
+            'path' => $path,
+            'disk' => $tempDisk,
+            'ignore_through_row' => $readOptions->ignoreThroughRow,
+        ]);
+    }
+
+    private function validatePaste(
+        Request $request,
+        BulkUserChangesTextParser $textParser,
+        BulkUserChangesPlanner $planner,
+    ): RedirectResponse {
+        $validated = $request->validate([
+            'paste' => ['required', 'string', 'min:10', 'max:100000'],
+        ], [
+            'paste.required' => 'Paste the change list to continue.',
+        ]);
+
+        try {
+            $parsed = $textParser->parse($validated['paste']);
+        } catch (\Throwable $e) {
+            return redirect()->route('admin.bulk-user-changes.index')
+                ->withErrors(['paste' => $e->getMessage()])
+                ->withInput();
+        }
+
+        return $this->storePreviewSession($request, $planner, $parsed, [
+            'source' => 'paste',
+            'paste_text' => $validated['paste'],
+        ]);
+    }
+
+    /**
+     * @param  array<string, mixed>  $parsed
+     * @param  array<string, mixed>  $cacheMeta
+     */
+    private function storePreviewSession(
+        Request $request,
+        BulkUserChangesPlanner $planner,
+        array $parsed,
+        array $cacheMeta,
+    ): RedirectResponse {
         $plan = $planner->plan($parsed['rows']);
         $token = Str::random(64);
 
         Cache::put('bulk_user_changes_'.$token, [
-            'path' => $path,
-            'disk' => $tempDisk,
+            ...$cacheMeta,
             'parsed' => $parsed,
             'plan' => $plan,
-            'ignore_through_row' => $readOptions->ignoreThroughRow,
         ], now()->addHours(2));
 
         $request->session()->put(self::SESSION_TOKEN, $token);
@@ -84,73 +214,52 @@ class BulkUserChangesController extends Controller
         return redirect()->route('admin.bulk-user-changes.preview');
     }
 
-    public function preview(Request $request): View|RedirectResponse
-    {
-        $payload = $this->payloadFromSession($request);
-        if ($payload === null) {
-            return redirect()->route('admin.bulk-user-changes.index')
-                ->withErrors(['file' => 'No validated upload found. Please upload a file first.']);
-        }
-
-        return view('admin.bulk-user-changes.preview', [
-            'parsed' => $payload['parsed'],
-            'plan' => $payload['plan'],
-            'token' => $request->session()->get(self::SESSION_TOKEN),
-        ]);
-    }
-
-    public function apply(
-        Request $request,
+    /**
+     * @param  array<string, mixed>  $payload
+     * @return array<string, mixed>
+     */
+    private function readPayload(
+        array $payload,
         BulkUserChangesSheetReader $reader,
-        BulkUserChangesPlanner $planner,
-    ): RedirectResponse {
-        $token = (string) $request->input('token', $request->session()->get(self::SESSION_TOKEN, ''));
-        $payload = $token !== '' ? Cache::get('bulk_user_changes_'.$token) : null;
+        BulkUserChangesTextParser $textParser,
+    ): array {
+        if (($payload['source'] ?? 'file') === 'paste') {
+            $pasteText = (string) ($payload['paste_text'] ?? '');
 
-        if (! is_array($payload)) {
-            return redirect()->route('admin.bulk-user-changes.index')
-                ->withErrors(['file' => 'Upload session expired. Please upload the file again.']);
+            if ($pasteText === '') {
+                throw new \RuntimeException('Pasted text no longer available. Please paste again.');
+            }
+
+            return $textParser->parse($pasteText);
         }
 
         $path = (string) ($payload['path'] ?? '');
         $disk = (string) ($payload['disk'] ?? 'local');
 
         if ($path === '' || ! Storage::disk($disk)->exists($path)) {
-            return redirect()->route('admin.bulk-user-changes.index')
-                ->withErrors(['file' => 'Uploaded file no longer available. Please upload again.']);
+            throw new \RuntimeException('Uploaded file no longer available. Please upload again.');
         }
 
-        try {
-            $readOptions = BulkUserChangesReadOptions::fromInput($payload['ignore_through_row'] ?? null);
-            $parsed = $reader->read($path, $disk, $readOptions);
-            $result = $planner->apply($parsed['rows']);
-        } catch (\Throwable $e) {
-            return redirect()->route('admin.bulk-user-changes.preview')
-                ->withErrors(['apply' => 'Apply failed: '.$e->getMessage()]);
-        }
+        $readOptions = BulkUserChangesReadOptions::fromInput($payload['ignore_through_row'] ?? null);
 
-        Storage::disk($disk)->delete($path);
-        Cache::forget('bulk_user_changes_'.$token);
-        $request->session()->forget(self::SESSION_TOKEN);
-        $request->session()->put('bulk_user_changes_report', [
-            'parsed' => $parsed,
-            'result' => $result,
-        ]);
-
-        return redirect()->route('admin.bulk-user-changes.report');
+        return $reader->read($path, $disk, $readOptions);
     }
 
-    public function report(Request $request): View|RedirectResponse
+    /**
+     * @param  array<string, mixed>  $payload
+     */
+    private function cleanupPayload(array $payload): void
     {
-        $report = $request->session()->get('bulk_user_changes_report');
-        if (! is_array($report)) {
-            return redirect()->route('admin.bulk-user-changes.index');
+        if (($payload['source'] ?? 'file') !== 'file') {
+            return;
         }
 
-        return view('admin.bulk-user-changes.report', [
-            'parsed' => $report['parsed'],
-            'result' => $report['result'],
-        ]);
+        $path = (string) ($payload['path'] ?? '');
+        $disk = (string) ($payload['disk'] ?? 'local');
+
+        if ($path !== '' && Storage::disk($disk)->exists($path)) {
+            Storage::disk($disk)->delete($path);
+        }
     }
 
     /**
