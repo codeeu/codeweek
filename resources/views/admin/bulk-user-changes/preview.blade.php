@@ -24,8 +24,35 @@
             @endif
 
             <div class="mb-6 p-4 rounded bg-blue-50 border border-blue-200 text-sm">
-                <p><strong>Sheet:</strong> {{ $parsed['sheet_name'] ?? 'Changes' }} · header row {{ $parsed['header_row'] ?? '?' }}</p>
-                <p><strong>Actionable rows:</strong> {{ $parsed['meta']['parsed_rows'] ?? 0 }} ({{ $parsed['meta']['skipped_blank_rows'] ?? 0 }} blank rows skipped)</p>
+                @php
+                    $meta = $parsed['meta'] ?? [];
+                    $firstRow = $meta['first_data_row'] ?? null;
+                    $lastRow = $meta['last_data_row'] ?? null;
+                    $headerRow = $parsed['header_row'] ?? 1;
+                @endphp
+                <p><strong>Sheet:</strong> {{ $parsed['sheet_name'] ?? 'Changes' }} · header row {{ $headerRow }}</p>
+                <p><strong>Rows in file:</strong>
+                    @if ($firstRow && $lastRow)
+                        {{ $firstRow }}–{{ $lastRow }}
+                        ({{ $meta['parsed_rows'] ?? 0 }} with email)
+                    @else
+                        none
+                    @endif
+                </p>
+                @if (! empty($meta['first_email']) && ! empty($meta['last_email']))
+                    <p><strong>First:</strong> {{ $meta['first_email'] }} · <strong>Last:</strong> {{ $meta['last_email'] }}</p>
+                @endif
+                @if (($meta['skipped_legacy_rows'] ?? 0) > 0 || ($meta['skipped_no_email_rows'] ?? 0) > 0)
+                    <p class="text-gray-700">
+                        Ignored:
+                        {{ $meta['skipped_legacy_rows'] ?? 0 }} legacy <code>#VALUE!</code> rows,
+                        {{ $meta['skipped_no_email_rows'] ?? 0 }} rows without email,
+                        {{ $meta['skipped_blank_rows'] ?? 0 }} blank rows.
+                    </p>
+                @endif
+                @if ($firstRow && $firstRow > $headerRow + 1)
+                    <p class="mt-2 text-amber-800"><strong>Note:</strong> The first row is {{ $firstRow }}, not row {{ $headerRow + 1 }}. If older batches are still above your new list, delete those rows in Excel and re-upload so the first entry is the start of this batch.</p>
+                @endif
                 <p class="mt-2"><strong>Ready to apply:</strong> {{ $summary['would_apply'] ?? 0 }} · <strong>Skipped:</strong> {{ collect($summary)->except(['would_apply', 'applied'])->sum() }}</p>
             </div>
 
