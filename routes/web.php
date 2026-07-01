@@ -25,6 +25,7 @@ use App\Http\Controllers\Api;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BadgesController;
 use App\Http\Controllers\BulkEventUploadController;
+use App\Http\Controllers\BulkUserChangesController;
 use App\Http\Controllers\ResourcesImportController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\Codeweek4AllController;
@@ -81,6 +82,12 @@ Route::middleware(['auth', 'role:super admin'])->group(function () {
     Route::post('/admin/bulk-upload/import', [BulkEventUploadController::class, 'import'])->name('admin.bulk-upload.import');
     Route::get('/admin/bulk-upload/import', fn () => redirect()->route('admin.bulk-upload.index'))->name('admin.bulk-upload.import.get');
     Route::get('/admin/bulk-upload/report', [BulkEventUploadController::class, 'report'])->name('admin.bulk-upload.report');
+
+    Route::get('/admin/bulk-user-changes', [BulkUserChangesController::class, 'index'])->name('admin.bulk-user-changes.index');
+    Route::post('/admin/bulk-user-changes/validate', [BulkUserChangesController::class, 'validateUpload'])->name('admin.bulk-user-changes.validate');
+    Route::get('/admin/bulk-user-changes/preview', [BulkUserChangesController::class, 'preview'])->name('admin.bulk-user-changes.preview');
+    Route::post('/admin/bulk-user-changes/apply', [BulkUserChangesController::class, 'apply'])->name('admin.bulk-user-changes.apply');
+    Route::get('/admin/bulk-user-changes/report', [BulkUserChangesController::class, 'report'])->name('admin.bulk-user-changes.report');
 
     Route::get('/admin/resources-import', [ResourcesImportController::class, 'index'])->name('admin.resources-import.index');
     Route::post('/admin/resources-import/verify', [ResourcesImportController::class, 'verify'])->name('admin.resources-import.verify');

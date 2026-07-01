@@ -4,6 +4,7 @@
     <section id="codeweek-bulk-upload-page" class="codeweek-page">
         <section class="codeweek-content-header" style="display: flex; justify-content: space-between; align-items: center;">
             <h1>Bulk Event Upload</h1>
+            <a href="{{ route('admin.bulk-user-changes.index') }}" class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Bulk user changes</a>
             <a href="{{ route('admin.resources-import.index') }}" class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Resources import</a>
         </section>
 
