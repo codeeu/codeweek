@@ -61,6 +61,12 @@ final class SupportRoleRequestParser
         } elseif (preg_match('/(?:^|\n)\s*(?:remove|revoke)\s+role\s*[:\-]\s*([^\n\r]+)/iu', $text, $m)) {
             $role = $this->cleanRole($m[1]);
             $operation = 'remove';
+        } elseif (preg_match('/\b(?:remove|revoke|delete)\s+(?:the\s+)?["\']?([^"\'\n\r]+?)["\']?\s+role\b/iu', $text, $m)) {
+            $role = $this->cleanRole($m[1]);
+            $operation = 'remove';
+        } elseif (preg_match('/\b(?:remove|revoke|delete)\s+the\s+role\s+["\']?([^"\'\n\r]+?)["\']?\s+from\b/iu', $text, $m)) {
+            $role = $this->cleanRole($m[1]);
+            $operation = 'remove';
         } elseif (preg_match('/(?:^|\n)\s*role\s*(?:to\s+(add|remove))?\s*[:\-]\s*([^\n\r]+)/iu', $text, $m)) {
             $operation = strtolower(trim($m[1] ?? '')) === 'remove' ? 'remove' : 'add';
             $role = $this->cleanRole($m[2]);

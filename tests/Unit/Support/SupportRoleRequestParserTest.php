@@ -50,6 +50,21 @@ final class SupportRoleRequestParserTest extends TestCase
         $this->assertNull($parsed['role']);
     }
 
+    public function test_parses_natural_language_remove_request(): void
+    {
+        $text = <<<'TEXT'
+        Please remove the "ambassador" role from the following user.
+
+        Veronica Ward  vward@eircom.net
+        TEXT;
+
+        $parsed = (new SupportRoleRequestParser())->parse($text);
+
+        $this->assertSame('remove', $parsed['operation']);
+        $this->assertSame('ambassador', $parsed['role']);
+        $this->assertSame(['vward@eircom.net'], $parsed['emails']);
+    }
+
     public function test_deduplicates_emails(): void
     {
         $text = "add role: leading teacher\nx@example.com\nX@Example.com\n";

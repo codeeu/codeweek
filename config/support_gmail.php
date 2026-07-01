@@ -78,6 +78,8 @@ return [
         'user_restore',
         'user_profile_update',
         'user_role_add',
+        'user_role_remove',
+        'user_email_update',
         'code_change',
         'artisan_command',
         'content_update',

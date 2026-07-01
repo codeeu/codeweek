@@ -67,6 +67,7 @@ final class SupportApprovalCompletionEmailTest extends TestCase
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
             app(\App\Services\Support\SupportRoleRequestResolver::class),
+            app(\App\Services\Support\SupportEmailChangeRequestResolver::class),
         );
 
         $payload = $svc->sendActionCompletion(

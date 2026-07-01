@@ -3,6 +3,7 @@
 namespace App\Services\Support\Agents;
 
 use App\Models\Support\SupportCase;
+use App\Services\Support\SupportEmailChangeRequestParser;
 use App\Services\Support\SupportProfileRequestParser;
 use App\Services\Support\SupportRoleRequestParser;
 use Illuminate\Support\Str;
@@ -11,6 +12,7 @@ class TriageAgentService
 {
     public function __construct(
         private readonly SupportProfileRequestParser $profileParser,
+        private readonly SupportEmailChangeRequestParser $emailChangeParser,
         private readonly CursorCliTriageProvider $aiProvider,
         private readonly SupportRoleRequestParser $roleParser,
     ) {
@@ -58,17 +60,29 @@ class TriageAgentService
         $rawText = (string) ($case->normalized_message ?? $case->raw_message ?? '');
         $text = Str::lower($rawText);
         $profile = $this->profileParser->parse($rawText);
+        $emailChange = $this->emailChangeParser->parse($rawText);
         $roleRequest = $this->roleParser->parse($rawText);
-        $hasRoleRequest = $roleRequest['role'] !== null
+        $hasEmailChangeRequest = $emailChange['from_email'] !== null && $emailChange['to_email'] !== null;
+        $hasRoleAddRequest = $roleRequest['role'] !== null
             && $roleRequest['operation'] === 'add'
             && $roleRequest['emails'] !== [];
+        $hasRoleRemoveRequest = $roleRequest['role'] !== null
+            && $roleRequest['operation'] === 'remove'
+            && $roleRequest['emails'] !== [];
+        $hasRoleRequest = $hasRoleAddRequest || $hasRoleRemoveRequest;
 
         // V1 heuristic placeholder (replace with LLM later, keep output schema stable).
         $caseType = 'unknown';
         $runbook = 'unknown';
-        if ($hasRoleRequest) {
+        if ($hasRoleRemoveRequest) {
+            $caseType = 'role_remove';
+            $runbook = 'remove_user_role';
+        } elseif ($hasRoleAddRequest) {
             $caseType = 'role_add';
             $runbook = 'add_user_role';
+        } elseif ($hasEmailChangeRequest) {
+            $caseType = 'email_change';
+            $runbook = 'update_user_email';
         } elseif (Str::contains($text, ['soft-deleted', 'deleted', 'restore account', 'account missing'])) {
             $caseType = 'account_restore';
             $runbook = 'restore_deleted_account';
@@ -100,6 +114,9 @@ class TriageAgentService
         if ($hasRoleRequest) {
             $targetEmail = $roleRequest['emails'][0];
             $secondary = array_values(array_slice($roleRequest['emails'], 1));
+        } elseif ($hasEmailChangeRequest) {
+            $targetEmail = $emailChange['from_email'];
+            $secondary = [$emailChange['to_email']];
         } else {
             $targetEmail = $profile['email'] ?? $this->extractFirstEmail($text);
             $secondary = $this->extractAllEmails($text);
@@ -109,6 +126,9 @@ class TriageAgentService
         $risk = Str::contains($text, ['password reset', 'merge', 'ownership', 'privileged']) ? 'high' : 'low';
         if ($caseType === 'profile_update') {
             $risk = 'low';
+        }
+        if ($caseType === 'email_change') {
+            $risk = 'medium';
         }
         if ($hasRoleRequest && $this->roleLooksPrivileged((string) $roleRequest['role'])) {
             $risk = 'high';
@@ -120,6 +140,8 @@ class TriageAgentService
         $requestedAction = match ($caseType) {
             'profile_update' => 'user_profile_update',
             'role_add' => 'user_role_add',
+            'role_remove' => 'user_role_remove',
+            'email_change' => 'user_email_update',
             default => null,
         };
 
@@ -134,6 +156,8 @@ class TriageAgentService
             'profile_lastname' => $profile['lastname'],
             'role_name' => $hasRoleRequest ? $roleRequest['role'] : null,
             'role_operation' => $hasRoleRequest ? $roleRequest['operation'] : null,
+            'current_email' => $hasEmailChangeRequest ? $emailChange['from_email'] : null,
+            'new_email' => $hasEmailChangeRequest ? $emailChange['to_email'] : null,
             'risk_level' => $risk,
             'recommended_runbook' => $runbook,
             'needs_human_review' => $needsHuman,
