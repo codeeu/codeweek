@@ -27,6 +27,9 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     /** Current Excel row number (2 = first data row after header). */
     protected int $currentRow = 2;
 
+    /** @var array<string, int|null> */
+    private array $creatorIdByEmail = [];
+
     public function __construct(?string $defaultCreatorEmail = null, ?BulkEventImportResult $result = null, bool $previewMode = false)
     {
         $this->defaultCreatorEmail = $defaultCreatorEmail ? trim($defaultCreatorEmail) : null;
@@ -136,21 +139,28 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
         if (! $contactEmail || ! filter_var($contactEmail, FILTER_VALIDATE_EMAIL)) {
             return null;
         }
+
+        if (array_key_exists($contactEmail, $this->creatorIdByEmail)) {
+            return $this->creatorIdByEmail[$contactEmail];
+        }
+
         $user = User::where('email', $contactEmail)->first();
         if ($user) {
-            return $user->id;
+            return $this->creatorIdByEmail[$contactEmail] = $user->id;
         }
         [$local] = explode('@', $contactEmail, 2);
         $user = User::where('email', 'like', "{$local}@%")->first();
         if ($user) {
-            return $user->id;
+            return $this->creatorIdByEmail[$contactEmail] = $user->id;
         }
         try {
             $user = UserHelper::createUser($contactEmail);
-            return $user->id;
+
+            return $this->creatorIdByEmail[$contactEmail] = $user->id;
         } catch (\Exception $e) {
             Log::warning('User creation failed for contact_email: '.$contactEmail, ['exception' => $e->getMessage()]);
-            return null;
+
+            return $this->creatorIdByEmail[$contactEmail] = null;
         }
     }
 
@@ -175,6 +185,10 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     {
         $rowIndex = $this->currentRow++;
 
+        if ($this->result) {
+            $this->result->rowsProcessed++;
+        }
+
         try {
             return $this->processRow($rowIndex, $row);
         } catch (\Throwable $e) {
@@ -193,7 +207,6 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
     protected function processRow(int $rowIndex, array $row): ?Model
     {
         $row = $this->normalizeRow($row);
-        Log::info('Importing row:', $row);
 
         // 1) coordinate validation
         $coordError = $this->validateCoordinates($row);

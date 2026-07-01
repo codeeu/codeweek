@@ -15,6 +15,12 @@ class BulkEventImportResult
     /** @var array<int, true> Row index (1-based) => valid (for preview) */
     public array $valid = [];
 
+    public int $rowsProcessed = 0;
+
+    public int $createdCount = 0;
+
+    public bool $trackCreatedDetails = true;
+
     public function addFailure(int $rowIndex, string $reason): void
     {
         $this->failures[$rowIndex] = $reason;
@@ -27,6 +33,12 @@ class BulkEventImportResult
 
     public function addCreated(Event $event): void
     {
+        $this->createdCount++;
+
+        if (! $this->trackCreatedDetails) {
+            return;
+        }
+
         $this->created[] = [
             'id' => $event->id,
             'title' => $event->title,
