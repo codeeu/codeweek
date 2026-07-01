@@ -24,13 +24,16 @@ final class BulkUserChangesSheetReader
      *     skipped_blank_rows: int,
      *     skipped_no_email_rows: int,
      *     skipped_legacy_rows: int,
+     *     skipped_ignored_range_rows: int,
+     *     ignore_through_row: ?int,
      *     first_email: ?string,
      *     last_email: ?string,
      *   }
      * }
      */
-    public function read(string $path, ?string $disk = null): array
+    public function read(string $path, ?string $disk = null, ?BulkUserChangesReadOptions $options = null): array
     {
+        $options ??= new BulkUserChangesReadOptions;
         $localPath = $path;
         if ($disk !== null) {
             $localPath = $this->materializeFromDisk($path, $disk);
@@ -46,8 +49,15 @@ final class BulkUserChangesSheetReader
         $skippedBlank = 0;
         $skippedNoEmail = 0;
         $skippedLegacy = 0;
+        $skippedIgnoredRange = 0;
 
         for ($rowNumber = $headerRow + 1; $rowNumber <= $lastDataRow; $rowNumber++) {
+            if ($options->shouldIgnoreRow($rowNumber)) {
+                $skippedIgnoredRange++;
+
+                continue;
+            }
+
             $raw = $this->readRow($sheet, $rowNumber, $columnMap);
 
             if ($this->isBlankDataRow($raw)) {
@@ -90,6 +100,8 @@ final class BulkUserChangesSheetReader
                 'skipped_blank_rows' => $skippedBlank,
                 'skipped_no_email_rows' => $skippedNoEmail,
                 'skipped_legacy_rows' => $skippedLegacy,
+                'skipped_ignored_range_rows' => $skippedIgnoredRange,
+                'ignore_through_row' => $options->ignoreThroughRow,
                 'first_email' => $rows[0]['email'] ?? null,
                 'last_email' => $rows !== [] ? $rows[array_key_last($rows)]['email'] : null,
             ],
