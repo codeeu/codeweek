@@ -26,6 +26,7 @@ class SupportApprovalEmailService
             'profile_update' => 'Please review — name change',
             'account_restore' => 'Please review — account restore',
             'role_add' => 'Please review — add user role',
+            'role_remove' => 'Please review — remove user role',
             'code_change' => 'Please review — proposed code fix (PR into dev)',
             'artisan_command' => 'Please review — proposed server maintenance command',
             'content_update' => 'Please review — proposed content/copy change',
@@ -282,6 +283,20 @@ class SupportApprovalEmailService
             }
         }
 
+        if ($case->case_type === 'role_remove') {
+            $role = $this->roleResolver->resolve($case);
+            if ($role['role'] !== null && $role['emails'] !== []) {
+                return [
+                    'action' => 'user_role_remove',
+                    'payload' => [
+                        'operation' => $role['operation'],
+                        'role' => $role['role'],
+                        'emails' => $role['emails'],
+                    ],
+                ];
+            }
+        }
+
         if ($case->case_type === 'role_add') {
             $role = $this->roleResolver->resolve($case);
             if ($role['role'] !== null && $role['emails'] !== []) {
@@ -514,8 +529,8 @@ class SupportApprovalEmailService
             return $this->dryRunContentLines($case);
         }
 
-        if ($action === 'user_role_add') {
-            return $this->dryRunRoleAddLines($case, $payload);
+        if ($action === 'user_role_add' || $action === 'user_role_remove') {
+            return $this->dryRunRoleChangeLines($case, $payload, $action);
         }
 
         return [
@@ -529,10 +544,13 @@ class SupportApprovalEmailService
      * @param array<string, mixed> $payload
      * @return list<string>
      */
-    private function dryRunRoleAddLines(SupportCase $case, array $payload): array
+    private function dryRunRoleChangeLines(SupportCase $case, array $payload, string $action): array
     {
+        $actionName = $action === 'user_role_remove' ? 'user_role_remove' : 'user_role_add';
+        $isRemove = $action === 'user_role_remove';
+
         $output = $case->actions()
-            ->where('action_name', 'user_role_add')
+            ->where('action_name', $actionName)
             ->where('action_type', 'write')
             ->latest()
             ->first()?->output_json;
@@ -544,7 +562,9 @@ class SupportApprovalEmailService
 
         $lines = [
             '',
-            'We will add the role "'.$role.'" to the following CodeWeek accounts:',
+            $isRemove
+                ? 'We will remove the role "'.$role.'" from the following CodeWeek accounts:'
+                : 'We will add the role "'.$role.'" to the following CodeWeek accounts:',
             '',
         ];
 
@@ -554,22 +574,26 @@ class SupportApprovalEmailService
                 $lines[] = '  • '.$email;
             }
             $lines[] = '';
-            $lines[] = 'We will add the role to each account above that does not already have it.';
+            $lines[] = $isRemove
+                ? 'We will remove the role from each account above that currently has it.'
+                : 'We will add the role to each account above that does not already have it.';
 
             return $lines;
         }
 
         foreach ($items as $item) {
-            $lines[] = '  • '.$this->roleItemLine((array) $item);
+            $lines[] = '  • '.$this->roleItemLine((array) $item, $isRemove);
         }
 
         $lines[] = '';
-        $lines[] = 'Summary: '.$this->roleSummaryLine($summary);
+        $lines[] = 'Summary: '.$this->roleSummaryLine($summary, $isRemove);
 
         if (($summary['ambiguous'] ?? 0) > 0 || ($summary['user_not_found'] ?? 0) > 0) {
             $lines[] = '';
             $lines[] = 'Accounts marked "not found" or "needs manual check" will be skipped.';
-            $lines[] = 'Approving will still add the role to all accounts that are ready.';
+            $lines[] = $isRemove
+                ? 'Approving will still remove the role from all accounts that are ready.'
+                : 'Approving will still add the role to all accounts that are ready.';
         }
 
         return $lines;
@@ -578,7 +602,7 @@ class SupportApprovalEmailService
     /**
      * @param array<string, mixed> $item
      */
-    private function roleItemLine(array $item): string
+    private function roleItemLine(array $item, bool $isRemove = false): string
     {
         $email = (string) ($item['email'] ?? '');
         $status = (string) ($item['status'] ?? '');
@@ -587,6 +611,9 @@ class SupportApprovalEmailService
             'would_add' => 'will be added',
             'added' => 'role added',
             'already_has_role' => 'already has this role (no change)',
+            'would_remove' => 'will be removed',
+            'removed' => 'role removed',
+            'does_not_have_role' => 'does not have this role (no change)',
             'user_not_found' => 'no CodeWeek account found — skipped',
             'ambiguous' => 'multiple accounts match — needs manual check, skipped',
             default => $status,
@@ -598,12 +625,20 @@ class SupportApprovalEmailService
     /**
      * @param array<string, mixed> $summary
      */
-    private function roleSummaryLine(array $summary): string
+    private function roleSummaryLine(array $summary, bool $isRemove = false): string
     {
-        $toAdd = (int) (($summary['would_add'] ?? 0) + ($summary['added'] ?? 0));
-        $parts = [$toAdd.' to add'];
-        if (($summary['already_has_role'] ?? 0) > 0) {
-            $parts[] = (int) $summary['already_has_role'].' already have it';
+        if ($isRemove) {
+            $toChange = (int) (($summary['would_remove'] ?? 0) + ($summary['removed'] ?? 0));
+            $parts = [$toChange.' to remove'];
+            if (($summary['does_not_have_role'] ?? 0) > 0) {
+                $parts[] = (int) $summary['does_not_have_role'].' do not have it';
+            }
+        } else {
+            $toChange = (int) (($summary['would_add'] ?? 0) + ($summary['added'] ?? 0));
+            $parts = [$toChange.' to add'];
+            if (($summary['already_has_role'] ?? 0) > 0) {
+                $parts[] = (int) $summary['already_has_role'].' already have it';
+            }
         }
         if (($summary['user_not_found'] ?? 0) > 0) {
             $parts[] = (int) $summary['user_not_found'].' not found';
@@ -796,6 +831,7 @@ class SupportApprovalEmailService
             'user_profile_update' => 'Done — name updated on CodeWeek account',
             'user_restore' => 'Done — CodeWeek account reactivated',
             'user_role_add' => 'Done — user role added',
+            'user_role_remove' => 'Done — user role removed',
             'code_change' => 'Started — AI coding agent is preparing a PR into dev',
             'artisan_command' => 'Done — maintenance command completed on the server',
             'content_update' => 'Done — content updated',
@@ -840,8 +876,8 @@ class SupportApprovalEmailService
             $lines = array_merge($lines, $this->completionFailureLines($action, $result, $email, $case->id));
         }
 
-        // Role-add is a batch action; the per-account list is shown above, so skip the single email line.
-        if ($email !== '' && $action !== 'user_role_add') {
+        // Role add/remove are batch actions; the per-account list is shown above.
+        if ($email !== '' && ! in_array($action, ['user_role_add', 'user_role_remove'], true)) {
             $lines[] = '';
             $lines[] = 'Account email: '.$email;
         }
@@ -852,10 +888,10 @@ class SupportApprovalEmailService
 
         $lines[] = '';
         if ($succeeded) {
-            $lines[] = $action === 'user_role_add'
+            $lines[] = in_array($action, ['user_role_add', 'user_role_remove'], true)
                 ? 'No further action is needed. You do not need to reply to this email.'
                 : 'No further action is needed. The supporter can sign in with their usual email and password.';
-            if ($action !== 'user_role_add') {
+            if (! in_array($action, ['user_role_add', 'user_role_remove'], true)) {
                 $lines[] = 'You do not need to reply to this email.';
             }
         } else {
@@ -978,8 +1014,8 @@ class SupportApprovalEmailService
             return $lines;
         }
 
-        if ($action === 'user_role_add') {
-            return $this->completionRoleAddLines($inner);
+        if ($action === 'user_role_add' || $action === 'user_role_remove') {
+            return $this->completionRoleChangeLines($inner, $action);
         }
 
         return [
@@ -991,23 +1027,32 @@ class SupportApprovalEmailService
      * @param  array<string, mixed>  $inner
      * @return list<string>
      */
-    private function completionRoleAddLines(array $inner): array
+    private function completionRoleChangeLines(array $inner, string $action): array
     {
+        $isRemove = $action === 'user_role_remove';
         $role = (string) ($inner['role'] ?? 'the requested role');
         $items = is_array($inner['items'] ?? null) ? $inner['items'] : [];
         $summary = is_array($inner['summary'] ?? null) ? $inner['summary'] : [];
-        $addedCount = (int) ($summary['added'] ?? 0);
+        $changedCount = (int) ($isRemove ? ($summary['removed'] ?? 0) : ($summary['added'] ?? 0));
+
+        if ($isRemove) {
+            $headline = $changedCount === 1
+                ? 'We removed the role "'.$role.'" from 1 CodeWeek account.'
+                : 'We removed the role "'.$role.'" from '.$changedCount.' CodeWeek accounts.';
+        } else {
+            $headline = $changedCount === 1
+                ? 'We added the role "'.$role.'" to 1 CodeWeek account.'
+                : 'We added the role "'.$role.'" to '.$changedCount.' CodeWeek accounts.';
+        }
 
         $lines = [
-            $addedCount === 1
-                ? 'We added the role "'.$role.'" to 1 CodeWeek account.'
-                : 'We added the role "'.$role.'" to '.$addedCount.' CodeWeek accounts.',
+            $headline,
             '',
             'Details:',
         ];
 
         foreach ($items as $item) {
-            $lines[] = '  • '.$this->roleItemLine((array) $item);
+            $lines[] = '  • '.$this->roleItemLine((array) $item, $isRemove);
         }
 
         $skipped = (int) ($summary['user_not_found'] ?? 0) + (int) ($summary['ambiguous'] ?? 0);
@@ -1104,9 +1149,10 @@ class SupportApprovalEmailService
             str_contains($code, 'no_effective_change') => 'The content already matched the requested text — no change was needed.',
             str_starts_with($code, 'role_not_found') => 'We could not find a matching role. Check the role name (e.g. "leading teacher").',
             str_starts_with($code, 'role_not_allowed') => 'That role is not on the list the copilot is allowed to add.',
-            str_contains($code, 'no_role_specified') => 'The request did not say which role to add.',
+            str_contains($code, 'no_role_specified') => 'The request did not say which role to change.',
             str_contains($code, 'no_target_emails') => 'The request did not include any valid email addresses.',
             str_contains($code, 'only_add_operation') => 'Only adding roles is supported right now (not removing).',
+            str_contains($code, 'only_remove_operation') => 'Only removing roles is supported for this action.',
             $action === 'user_restore' && str_contains($code, 'verification') => 'The account was changed but we could not confirm it is fully active. Please verify in Nova.',
             default => 'Technical detail: '.$code,
         };

@@ -28,6 +28,7 @@ class CursorCliTriageProvider implements TriageProvider
         'certificate_issue',
         'role_issue',
         'role_add',
+        'role_remove',
         'code_change',
         'artisan_command',
         'content_update',
@@ -138,6 +139,9 @@ Use "role_add" when the request is to add/grant a role (e.g. "leading teacher") 
 users identified by email. Put the affected emails in target_email/secondary_emails, put the
 role being granted in "role_name" (singular, e.g. "leading teacher"), and set "role_operation"
 to "add". Include EVERY email listed in the request (one per person), even for long pasted tables.
+Use "role_remove" when the request is to remove/revoke/delete a role (e.g. "ambassador") from one
+or more users. Use the same target_email/secondary_emails and role_name fields, and set
+"role_operation" to "remove".
 {$artisanBlock}{$contentBlock}
 JSON schema to return:
 {
@@ -151,8 +155,8 @@ JSON schema to return:
   "reasoning_summary": "<one sentence>",
   "profile_firstname": "<requested first name or null>",
   "profile_lastname": "<requested last name or null>",
-  "role_name": "<for role_add: the role to grant, e.g. leading teacher, else null>",
-  "role_operation": "<for role_add: add (remove is not supported), else null>",
+  "role_name": "<for role_add/role_remove: the role affected, else null>",
+  "role_operation": "<for role_add: add; for role_remove: remove; else null>",
   "change_summary": "<for code_change: one sentence describing the fix, else null>",
   "change_area": "<for code_change: e.g. frontend/blade/css/js, else null>",
   "cursor_prompt": "<for code_change: a precise instruction for a coding agent to implement the fix and open a PR, else null>",
@@ -296,6 +300,7 @@ BLOCK;
             'profile_update' => 'user_profile_update',
             'account_restore' => 'user_restore',
             'role_add' => 'user_role_add',
+            'role_remove' => 'user_role_remove',
             'code_change' => 'code_change',
             'artisan_command' => 'artisan_command',
             'content_update' => 'content_update',
@@ -352,7 +357,11 @@ BLOCK;
         }
         $value = strtolower(trim($value));
 
-        return in_array($value, ['add', 'grant', 'assign'], true) ? 'add' : null;
+        return match (true) {
+            in_array($value, ['add', 'grant', 'assign'], true) => 'add',
+            in_array($value, ['remove', 'revoke', 'delete'], true) => 'remove',
+            default => null,
+        };
     }
 
     private function stringOrNull(mixed $value): ?string
