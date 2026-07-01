@@ -59,14 +59,21 @@ class TriageAgentService
         $text = Str::lower($rawText);
         $profile = $this->profileParser->parse($rawText);
         $roleRequest = $this->roleParser->parse($rawText);
-        $hasRoleRequest = $roleRequest['role'] !== null
+        $hasRoleAddRequest = $roleRequest['role'] !== null
             && $roleRequest['operation'] === 'add'
             && $roleRequest['emails'] !== [];
+        $hasRoleRemoveRequest = $roleRequest['role'] !== null
+            && $roleRequest['operation'] === 'remove'
+            && $roleRequest['emails'] !== [];
+        $hasRoleRequest = $hasRoleAddRequest || $hasRoleRemoveRequest;
 
         // V1 heuristic placeholder (replace with LLM later, keep output schema stable).
         $caseType = 'unknown';
         $runbook = 'unknown';
-        if ($hasRoleRequest) {
+        if ($hasRoleRemoveRequest) {
+            $caseType = 'role_remove';
+            $runbook = 'remove_user_role';
+        } elseif ($hasRoleAddRequest) {
             $caseType = 'role_add';
             $runbook = 'add_user_role';
         } elseif (Str::contains($text, ['soft-deleted', 'deleted', 'restore account', 'account missing'])) {
@@ -120,6 +127,7 @@ class TriageAgentService
         $requestedAction = match ($caseType) {
             'profile_update' => 'user_profile_update',
             'role_add' => 'user_role_add',
+            'role_remove' => 'user_role_remove',
             default => null,
         };
 

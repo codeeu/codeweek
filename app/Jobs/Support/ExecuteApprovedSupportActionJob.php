@@ -12,6 +12,7 @@ use App\Services\Support\SupportApprovalEmailService;
 use App\Services\Support\UserProfileUpdateService;
 use App\Services\Support\UserRestoreService;
 use App\Services\Support\UserRoleAddService;
+use App\Services\Support\UserRoleRemoveService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
@@ -35,6 +36,7 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
         ArtisanCommandRunner $artisanRunner,
         ContentUpdateService $contentUpdate,
         UserRoleAddService $userRoleAdd,
+        UserRoleRemoveService $userRoleRemove,
     ): void
     {
         $approval = SupportApproval::findOrFail($this->supportApprovalId);
@@ -92,6 +94,8 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
         } elseif ($action === 'user_role_add') {
             // Re-read the role + emails from the case email at execution time.
             $result = $userRoleAdd->addFromCase($case, dryRun: false, viaEmailApproval: true);
+        } elseif ($action === 'user_role_remove') {
+            $result = $userRoleRemove->removeFromCase($case, dryRun: false, viaEmailApproval: true);
         } elseif ($action === 'code_change') {
             $result = $cursorAgent->launchCodeAgent(
                 prompt: (string) ($payload['cursor_prompt'] ?? ''),
