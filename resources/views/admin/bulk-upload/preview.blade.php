@@ -9,10 +9,18 @@
 
         <section class="codeweek-content-wrapper">
             @php
-                $validCount = collect($row_statuses)->where('valid', true)->count();
-                $totalCount = count($row_statuses);
+                $validCount = $valid_count ?? collect($row_statuses)->where('valid', true)->count();
+                $totalCount = $total_count ?? count($row_statuses);
             @endphp
-            <p class="mb-2"><strong>{{ $validCount }} of {{ $totalCount }}</strong> rows passed validation. Rows below: <span class="bg-trans-success text-green-800 px-1 rounded">green</span> = valid, <span class="bg-trans-danger text-red-800 px-1 rounded">red</span> = problem (see Details). You can still run the import; invalid rows will be skipped. Click <strong>Import</strong> to run the import.</p>
+            <p class="mb-2">
+                <strong>{{ $validCount }} of {{ $totalCount }}</strong> rows passed validation.
+                @if ($failures_only ?? false)
+                    Only problem rows are listed below (file too large to show every valid row).
+                @else
+                    Rows below: <span class="bg-trans-success text-green-800 px-1 rounded">green</span> = valid, <span class="bg-trans-danger text-red-800 px-1 rounded">red</span> = problem.
+                @endif
+                You can still run the import; invalid rows will be skipped.
+            </p>
 
             @if ($errors->any())
                 <div class="mb-4 p-4 rounded bg-red-50 border border-red-200">
@@ -54,7 +62,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="3" class="border border-gray-300 px-3 py-4 text-gray-500 text-center">No data rows to show.</td>
+                                <td colspan="3" class="border border-gray-300 px-3 py-4 text-gray-500 text-center">No problem rows to show.</td>
                             </tr>
                         @endforelse
                     </tbody>
@@ -63,17 +71,13 @@
 
             <form method="POST" action="{{ route('admin.bulk-upload.import') }}" class="inline" id="bulk-upload-import-form">
                 @csrf
-                @if(!empty($import_token))
-                    <input type="hidden" name="import_token" value="{{ $import_token }}">
-                @else
-                    <input type="hidden" name="import_payload" value="{{ $import_payload ?? '' }}">
-                @endif
+                <input type="hidden" name="import_token" value="{{ $import_token }}">
                 <button type="submit" id="bulk-upload-import-btn" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-white hover:opacity-90 duration-300">Import</button>
             </form>
             <script>
                 document.getElementById('bulk-upload-import-form').addEventListener('submit', function () {
                     var btn = document.getElementById('bulk-upload-import-btn');
-                    if (btn) { btn.disabled = true; btn.textContent = 'Importing…'; }
+                    if (btn) { btn.disabled = true; btn.textContent = 'Starting import…'; }
                 });
             </script>
         </section>

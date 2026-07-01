@@ -8,16 +8,24 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            @if (count($created) > 0)
-                <h2 class="text-xl font-semibold mt-6 mb-2">Created events ({{ count($created) }})</h2>
-                <ul class="list-disc list-inside mb-6">
-                    @foreach ($created as $event)
-                        <li>
-                            <a href="{{ $event['url'] }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ $event['title'] }}</a>
-                            <span class="text-gray-500">(ID: {{ $event['id'] }})</span>
-                        </li>
-                    @endforeach
-                </ul>
+            @php
+                $createdCount = $created_count ?? count($created);
+            @endphp
+
+            @if ($createdCount > 0)
+                <h2 class="text-xl font-semibold mt-6 mb-2">Created events ({{ $createdCount }})</h2>
+                @if ($created_details_truncated ?? false)
+                    <p class="text-sm text-gray-600 mb-4">Individual event links are omitted for large imports. Events were created successfully.</p>
+                @else
+                    <ul class="list-disc list-inside mb-6">
+                        @foreach ($created as $event)
+                            <li>
+                                <a href="{{ $event['url'] }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ $event['title'] }}</a>
+                                <span class="text-gray-500">(ID: {{ $event['id'] }})</span>
+                            </li>
+                        @endforeach
+                    </ul>
+                @endif
             @endif
 
             @if (count($failures) > 0)
@@ -41,7 +49,7 @@
                 </table>
             @endif
 
-            @if (count($created) === 0 && count($failures) === 0)
+            @if ($createdCount === 0 && count($failures) === 0)
                 <p class="text-gray-600">No events were created and no failures were recorded. The file may have had no data rows.</p>
             @endif
         </section>
