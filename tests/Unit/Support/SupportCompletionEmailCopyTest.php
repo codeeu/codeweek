@@ -57,6 +57,7 @@ final class SupportCompletionEmailCopyTest extends TestCase
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
             app(\App\Services\Support\SupportRoleRequestResolver::class),
+            app(\App\Services\Support\SupportEmailChangeRequestResolver::class),
         );
 
         $svc->sendActionCompletion(
@@ -126,6 +127,7 @@ final class SupportCompletionEmailCopyTest extends TestCase
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
             app(\App\Services\Support\SupportRoleRequestResolver::class),
+            app(\App\Services\Support\SupportEmailChangeRequestResolver::class),
         );
 
         $svc->sendActionCompletion(
