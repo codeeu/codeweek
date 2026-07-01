@@ -5,6 +5,7 @@ namespace App\Imports;
 use App\Event;
 use App\Helpers\UserHelper;
 use App\User;
+use App\Services\BulkEventDuplicateFinder;
 use App\Services\BulkEventImportResult;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
@@ -352,12 +353,8 @@ class GenericEventsImport extends BaseEventsImport implements ToModel, WithCusto
             return null;
         }
 
-        // 8) duplicate check: find existing by title + start_date + country_iso + organizer; if found, update instead of create
-        $existing = Event::where('title', $attrs['title'])
-            ->where('start_date', $attrs['start_date'])
-            ->where('country_iso', $attrs['country_iso'])
-            ->where('organizer', $attrs['organizer'])
-            ->first();
+        // 8) duplicate check: same title/date/country/organiser + same address or coordinates → update
+        $existing = app(BulkEventDuplicateFinder::class)->find($attrs);
 
         try {
             if ($existing) {
