@@ -35,8 +35,8 @@ class BulkUserChangesController extends Controller
                         return;
                     }
                     $ext = strtolower($value->getClientOriginalExtension());
-                    if (! in_array($ext, ['csv', 'xlsx', 'xls'], true)) {
-                        $fail('The file must be a CSV or Excel file (.csv, .xlsx, or .xls).');
+                    if (! in_array($ext, ['xlsx', 'xls'], true)) {
+                        $fail('The file must be an Excel workbook (.xlsx or .xls) with a Changes sheet.');
                     }
                 },
             ],
