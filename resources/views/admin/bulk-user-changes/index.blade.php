@@ -8,7 +8,7 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            <p class="mb-4">Upload the client Excel workbook. <strong>Only the sheet named <code>Changes</code> is read</strong> — all other tabs are ignored. The tool finds the header row on that sheet automatically; rows with no email/action are skipped. <strong>Missing users are never created.</strong></p>
+            <p class="mb-4">Upload the client Excel workbook. <strong>Only the sheet named <code>Changes</code> is read</strong> — all other tabs are ignored. Before uploading, <strong>delete earlier completed batches</strong> from that sheet so the first data row is your new batch (row 2 after the header). Only rows with an email address are listed. <strong>Missing users are never created.</strong></p>
 
             @if ($errors->any())
                 <div class="mb-4 p-4 rounded bg-red-50 border border-red-200">

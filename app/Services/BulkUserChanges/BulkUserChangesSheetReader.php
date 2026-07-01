@@ -17,7 +17,16 @@ final class BulkUserChangesSheetReader
      *   sheet_name: string,
      *   header_row: int,
      *   rows: list<array<string, mixed>>,
-     *   meta: array{total_sheet_rows: int, parsed_rows: int, skipped_blank_rows: int}
+     *   meta: array{
+     *     first_data_row: ?int,
+     *     last_data_row: ?int,
+     *     parsed_rows: int,
+     *     skipped_blank_rows: int,
+     *     skipped_no_email_rows: int,
+     *     skipped_legacy_rows: int,
+     *     first_email: ?string,
+     *     last_email: ?string,
+     *   }
      * }
      */
     public function read(string $path, ?string $disk = null): array
@@ -31,17 +40,32 @@ final class BulkUserChangesSheetReader
         $sheet = $this->resolveChangesSheet($spreadsheet->getSheetNames(), $spreadsheet);
         $headerRow = $this->detectHeaderRow($sheet);
         $columnMap = $this->mapColumns($sheet, $headerRow);
+        $lastDataRow = $this->detectLastDataRow($sheet, $headerRow, $columnMap);
 
         $rows = [];
         $skippedBlank = 0;
-        $highest = (int) $sheet->getHighestRow();
+        $skippedNoEmail = 0;
+        $skippedLegacy = 0;
 
-        for ($rowNumber = $headerRow + 1; $rowNumber <= $highest; $rowNumber++) {
+        for ($rowNumber = $headerRow + 1; $rowNumber <= $lastDataRow; $rowNumber++) {
             $raw = $this->readRow($sheet, $rowNumber, $columnMap);
+
+            if ($this->isBlankDataRow($raw)) {
+                $skippedBlank++;
+
+                continue;
+            }
+
+            if ($this->isLegacyCountry($raw['country'] ?? null)) {
+                $skippedLegacy++;
+
+                continue;
+            }
+
             $normalized = $this->normalizer->normalize($raw);
 
-            if ($normalized['email'] === null && $normalized['operation'] === null) {
-                $skippedBlank++;
+            if ($normalized['email'] === null) {
+                $skippedNoEmail++;
 
                 continue;
             }
@@ -52,14 +76,22 @@ final class BulkUserChangesSheetReader
             ];
         }
 
+        $firstRow = $rows[0]['row_number'] ?? null;
+        $lastRow = $rows !== [] ? $rows[array_key_last($rows)]['row_number'] : null;
+
         return [
             'sheet_name' => $sheet->getTitle(),
             'header_row' => $headerRow,
             'rows' => $rows,
             'meta' => [
-                'total_sheet_rows' => max(0, $highest - $headerRow),
+                'first_data_row' => $firstRow,
+                'last_data_row' => $lastRow,
                 'parsed_rows' => count($rows),
                 'skipped_blank_rows' => $skippedBlank,
+                'skipped_no_email_rows' => $skippedNoEmail,
+                'skipped_legacy_rows' => $skippedLegacy,
+                'first_email' => $rows[0]['email'] ?? null,
+                'last_email' => $rows !== [] ? $rows[array_key_last($rows)]['email'] : null,
             ],
         ];
     }
@@ -100,24 +132,74 @@ final class BulkUserChangesSheetReader
 
     private function detectHeaderRow(Worksheet $sheet): int
     {
-        $highest = min((int) $sheet->getHighestRow(), 300);
+        $highest = min((int) $sheet->getHighestRow(), 500);
+        $headerRow = 1;
 
         for ($row = 1; $row <= $highest; $row++) {
-            $values = array_map(
-                fn ($v) => mb_strtolower(trim((string) $v)),
-                array_values($sheet->rangeToArray('A'.$row.':H'.$row, null, true, true, true)[$row] ?? []),
-            );
+            if (! $this->rowLooksLikeHeader($sheet, $row)) {
+                continue;
+            }
 
-            $hasCountry = $this->rowContains($values, 'country');
-            $hasEmail = $this->rowContains($values, 'email');
-            $hasAction = $this->rowContains($values, 'action');
+            $headerRow = $row;
+        }
 
-            if ($hasCountry && $hasEmail && $hasAction) {
-                return $row;
+        return $headerRow;
+    }
+
+    /**
+     * @param  array<string, string>  $columnMap
+     */
+    private function detectLastDataRow(Worksheet $sheet, int $headerRow, array $columnMap): int
+    {
+        $scanLimit = min((int) $sheet->getHighestRow(), $headerRow + 2000);
+        $lastDataRow = $headerRow;
+
+        for ($rowNumber = $headerRow + 1; $rowNumber <= $scanLimit; $rowNumber++) {
+            $raw = $this->readRow($sheet, $rowNumber, $columnMap);
+
+            if ($this->isBlankDataRow($raw)) {
+                continue;
+            }
+
+            $lastDataRow = $rowNumber;
+        }
+
+        return $lastDataRow;
+    }
+
+    private function rowLooksLikeHeader(Worksheet $sheet, int $row): bool
+    {
+        $values = array_map(
+            fn ($v) => mb_strtolower(trim((string) $v)),
+            array_values($sheet->rangeToArray('A'.$row.':H'.$row, null, true, true, true)[$row] ?? []),
+        );
+
+        return $this->rowContains($values, 'country')
+            && $this->rowContains($values, 'email')
+            && $this->rowContains($values, 'action');
+    }
+
+    /**
+     * @param  array<string, ?string>  $raw
+     */
+    private function isBlankDataRow(array $raw): bool
+    {
+        foreach (['country', 'full_name', 'email', 'action', 'role', 'comments'] as $field) {
+            if (($raw[$field] ?? null) !== null) {
+                return false;
             }
         }
 
-        return 1;
+        return true;
+    }
+
+    private function isLegacyCountry(?string $country): bool
+    {
+        if ($country === null) {
+            return false;
+        }
+
+        return str_starts_with($country, '#');
     }
 
     /**
