@@ -71,6 +71,7 @@ final class SupportDryRunEmailCopyTest extends TestCase
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
             app(\App\Services\Support\SupportRoleRequestResolver::class),
+            app(\App\Services\Support\SupportEmailChangeRequestResolver::class),
         );
 
         $svc->sendDryRunReview($case, 'admin@matrixinternet.ie');
@@ -145,6 +146,7 @@ final class SupportDryRunEmailCopyTest extends TestCase
             app(SupportSenderAllowlist::class),
             app(SupportProfileRequestParser::class),
             app(\App\Services\Support\SupportRoleRequestResolver::class),
+            app(\App\Services\Support\SupportEmailChangeRequestResolver::class),
         );
 
         $svc->sendDryRunReview($case, 'admin@matrixinternet.ie');
