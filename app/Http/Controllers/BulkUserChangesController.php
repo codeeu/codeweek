@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\BulkUserChanges\BulkUserChangesPlanner;
+use App\Services\BulkUserChanges\BulkUserChangesReadOptions;
 use App\Services\BulkUserChanges\BulkUserChangesSheetReader;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -40,17 +41,19 @@ class BulkUserChangesController extends Controller
                     }
                 },
             ],
+            'ignore_through_row' => ['nullable', 'integer', 'min:1', 'max:10000'],
         ], [
             'file.required' => 'Please select a file to upload.',
         ]);
 
         $file = $validated['file'];
+        $readOptions = BulkUserChangesReadOptions::fromInput($validated['ignore_through_row'] ?? null);
         $extension = strtolower($file->getClientOriginalExtension() ?: 'xlsx');
         $tempDisk = config('filesystems.bulk_upload_temp_disk', 'local');
         $path = $file->storeAs('temp', 'bulk_user_changes_'.time().'.'.$extension, $tempDisk);
 
         try {
-            $parsed = $reader->read($path, $tempDisk);
+            $parsed = $reader->read($path, $tempDisk, $readOptions);
         } catch (\Throwable $e) {
             Storage::disk($tempDisk)->delete($path);
 
@@ -73,6 +76,7 @@ class BulkUserChangesController extends Controller
             'disk' => $tempDisk,
             'parsed' => $parsed,
             'plan' => $plan,
+            'ignore_through_row' => $readOptions->ignoreThroughRow,
         ], now()->addHours(2));
 
         $request->session()->put(self::SESSION_TOKEN, $token);
@@ -117,7 +121,8 @@ class BulkUserChangesController extends Controller
         }
 
         try {
-            $parsed = $reader->read($path, $disk);
+            $readOptions = BulkUserChangesReadOptions::fromInput($payload['ignore_through_row'] ?? null);
+            $parsed = $reader->read($path, $disk, $readOptions);
             $result = $planner->apply($parsed['rows']);
         } catch (\Throwable $e) {
             return redirect()->route('admin.bulk-user-changes.preview')
