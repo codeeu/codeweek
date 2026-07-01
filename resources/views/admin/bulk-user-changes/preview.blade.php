@@ -42,16 +42,25 @@
                 @if (! empty($meta['first_email']) && ! empty($meta['last_email']))
                     <p><strong>First:</strong> {{ $meta['first_email'] }} · <strong>Last:</strong> {{ $meta['last_email'] }}</p>
                 @endif
-                @if (($meta['skipped_legacy_rows'] ?? 0) > 0 || ($meta['skipped_no_email_rows'] ?? 0) > 0)
+                @if (! empty($meta['ignore_through_row']))
+                    <p><strong>Ignored rows:</strong> 2–{{ $meta['ignore_through_row'] }} ({{ $meta['skipped_ignored_range_rows'] ?? 0 }} rows skipped)</p>
+                @endif
+                @if (($meta['skipped_legacy_rows'] ?? 0) > 0 || ($meta['skipped_no_email_rows'] ?? 0) > 0 || (($meta['skipped_blank_rows'] ?? 0) > 0 && empty($meta['ignore_through_row'])))
                     <p class="text-gray-700">
-                        Ignored:
-                        {{ $meta['skipped_legacy_rows'] ?? 0 }} legacy <code>#VALUE!</code> rows,
-                        {{ $meta['skipped_no_email_rows'] ?? 0 }} rows without email,
-                        {{ $meta['skipped_blank_rows'] ?? 0 }} blank rows.
+                        Also ignored:
+                        @if (($meta['skipped_legacy_rows'] ?? 0) > 0)
+                            {{ $meta['skipped_legacy_rows'] }} legacy <code>#VALUE!</code> rows,
+                        @endif
+                        @if (($meta['skipped_no_email_rows'] ?? 0) > 0)
+                            {{ $meta['skipped_no_email_rows'] }} rows without email,
+                        @endif
+                        @if (($meta['skipped_blank_rows'] ?? 0) > 0)
+                            {{ $meta['skipped_blank_rows'] }} blank rows
+                        @endif
                     </p>
                 @endif
-                @if ($firstRow && $firstRow > $headerRow + 1)
-                    <p class="mt-2 text-amber-800"><strong>Note:</strong> The first row is {{ $firstRow }}, not row {{ $headerRow + 1 }}. If older batches are still above your new list, delete those rows in Excel and re-upload so the first entry is the start of this batch.</p>
+                @if ($firstRow && $firstRow > $headerRow + 1 && empty($meta['ignore_through_row']))
+                    <p class="mt-2 text-amber-800"><strong>Note:</strong> The first row is {{ $firstRow }}, not row {{ $headerRow + 1 }}. Set <strong>Ignore rows through</strong> on upload, or delete earlier batches in Excel.</p>
                 @endif
                 <p class="mt-2"><strong>Ready to apply:</strong> {{ $summary['would_apply'] ?? 0 }} · <strong>Skipped:</strong> {{ collect($summary)->except(['would_apply', 'applied'])->sum() }}</p>
             </div>
