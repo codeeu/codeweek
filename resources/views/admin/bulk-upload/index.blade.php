@@ -57,7 +57,7 @@
                                 <span id="bulk-upload-file-name" class="text-sm text-gray-600 italic">No file chosen</span>
                                 <span id="bulk-upload-file-attached" class="hidden text-sm font-medium text-green-700 bg-green-100 px-2 py-0.5 rounded">Attached</span>
                             </div>
-                            <p class="text-sm text-gray-600 mt-1">Max 10 MB. Required columns: activity_title, name_of_organisation, type_of_organisation, activity_type, description, address, country, start_date, end_date, longitude, latitude, contact_email, organiser_website, participants_count, males_count, females_count, other_count.</p>
+                            <p class="text-sm text-gray-600 mt-1">Max 50 MB. Required columns: activity_title, name_of_organisation, type_of_organisation, activity_type, description, address, country, start_date, end_date, longitude, latitude, contact_email, organiser_website, participants_count, males_count, females_count, other_count.</p>
                         </div>
 
                         <div class="codeweek-form-button-container">

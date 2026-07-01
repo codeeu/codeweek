@@ -37,7 +37,7 @@ class BulkEventUploadController extends Controller
             'file' => [
                 'required',
                 'file',
-                'max:10240',
+                'max:51200',
                 function ($attribute, $value, $fail) {
                     if ($value) {
                         $ext = strtolower($value->getClientOriginalExtension());
@@ -54,7 +54,7 @@ class BulkEventUploadController extends Controller
             'default_creator_email' => ['nullable', 'email', 'max:255'],
         ], [
             'file.required' => 'Please select a file to upload.',
-            'file.max' => 'The file may not be greater than 10 MB.',
+            'file.max' => 'The file may not be greater than 50 MB.',
         ]);
 
         $file = $request->file('file');
