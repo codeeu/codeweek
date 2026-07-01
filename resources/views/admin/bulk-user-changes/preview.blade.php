@@ -29,9 +29,15 @@
                     $firstRow = $meta['first_data_row'] ?? null;
                     $lastRow = $meta['last_data_row'] ?? null;
                     $headerRow = $parsed['header_row'] ?? 1;
+                    $isPaste = ($parsed['source'] ?? '') === 'paste';
+                    $rowLabel = $isPaste ? 'Entry' : 'Row';
                 @endphp
-                <p><strong>Sheet:</strong> {{ $parsed['sheet_name'] ?? 'Changes' }} · header row {{ $headerRow }}</p>
-                <p><strong>Rows in file:</strong>
+                <p><strong>Source:</strong> {{ $parsed['sheet_name'] ?? 'Changes' }}
+                    @if (! $isPaste)
+                        · header row {{ $headerRow }}
+                    @endif
+                </p>
+                <p><strong>{{ $isPaste ? 'Entries' : 'Rows in file' }}:</strong>
                     @if ($firstRow && $lastRow)
                         {{ $firstRow }}–{{ $lastRow }}
                         ({{ $meta['parsed_rows'] ?? 0 }} with email)
@@ -59,7 +65,7 @@
                         @endif
                     </p>
                 @endif
-                @if ($firstRow && $firstRow > $headerRow + 1 && empty($meta['ignore_through_row']))
+                @if ($firstRow && $firstRow > $headerRow + 1 && empty($meta['ignore_through_row']) && ! $isPaste)
                     <p class="mt-2 text-amber-800"><strong>Note:</strong> The first row is {{ $firstRow }}, not row {{ $headerRow + 1 }}. Set <strong>Ignore rows through</strong> on upload, or delete earlier batches in Excel.</p>
                 @endif
                 <p class="mt-2"><strong>Ready to apply:</strong> {{ $summary['would_apply'] ?? 0 }} · <strong>Skipped:</strong> {{ collect($summary)->except(['would_apply', 'applied'])->sum() }}</p>
@@ -80,7 +86,7 @@
                 <table class="w-full border-collapse border border-gray-300 text-sm">
                     <thead>
                         <tr class="bg-gray-100">
-                            <th class="border border-gray-300 px-2 py-2 text-left">Row</th>
+                            <th class="border border-gray-300 px-2 py-2 text-left">{{ $rowLabel ?? 'Row' }}</th>
                             <th class="border border-gray-300 px-2 py-2 text-left">Country</th>
                             <th class="border border-gray-300 px-2 py-2 text-left">Name</th>
                             <th class="border border-gray-300 px-2 py-2 text-left">Email</th>
