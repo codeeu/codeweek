@@ -16,6 +16,7 @@ class SupportApprovalEmailService
         private readonly SupportSenderAllowlist $allowlist,
         private readonly SupportProfileRequestParser $profileParser,
         private readonly SupportRoleRequestResolver $roleResolver,
+        private readonly SupportEmailChangeRequestResolver $emailChangeResolver,
     ) {
     }
 
@@ -24,6 +25,7 @@ class SupportApprovalEmailService
         $prefix = (string) config('support_gmail.approval_subject_prefix', '[CW-SUPPORT');
         $headline = match ($case->case_type) {
             'profile_update' => 'Please review — name change',
+            'email_change' => 'Please review — account email change',
             'account_restore' => 'Please review — account restore',
             'role_add' => 'Please review — add user role',
             'role_remove' => 'Please review — remove user role',
@@ -269,6 +271,19 @@ class SupportApprovalEmailService
             ];
         }
 
+        if ($case->case_type === 'email_change') {
+            $change = $this->emailChangeResolver->resolve($case);
+            if ($change['from_email'] !== null && $change['to_email'] !== null) {
+                return [
+                    'action' => 'user_email_update',
+                    'payload' => [
+                        'from' => $change['from_email'],
+                        'to' => $change['to_email'],
+                    ],
+                ];
+            }
+        }
+
         if ($case->case_type === 'profile_update' && $case->target_email) {
             $profile = $this->profileParser->parse((string) ($case->normalized_message ?? $case->raw_message ?? ''));
             if ($profile['firstname'] !== null || $profile['lastname'] !== null) {
@@ -503,7 +518,11 @@ class SupportApprovalEmailService
     {
         $action = $proposedAction['action'] ?? 'none';
         $payload = $proposedAction['payload'] ?? [];
-        $email = (string) ($case->target_email ?? $payload['email'] ?? '');
+        $email = (string) ($case->target_email ?? $payload['email'] ?? $payload['from'] ?? '');
+
+        if ($action === 'user_email_update') {
+            return $this->dryRunEmailChangeLines($case, $payload);
+        }
 
         if ($action === 'user_profile_update') {
             return $this->dryRunProfileChangeLines($case, $payload, $email);
@@ -538,6 +557,48 @@ class SupportApprovalEmailService
             'We could not determine an automatic change from this email.',
             'Check that the message includes lines like "Requested first name:" and "Requested last name:".',
         ];
+    }
+
+    /**
+     * @param array<string, mixed> $payload
+     * @return list<string>
+     */
+    private function dryRunEmailChangeLines(SupportCase $case, array $payload): array
+    {
+        $output = $case->actions()
+            ->where('action_name', 'user_email_update')
+            ->where('action_type', 'write')
+            ->latest()
+            ->first()?->output_json;
+
+        $result = is_array($output) ? ($output['result'] ?? []) : [];
+        $from = (string) ($result['before']['email'] ?? $payload['from'] ?? $case->target_email ?? '');
+        $to = (string) ($result['after']['email'] ?? $payload['to'] ?? '');
+        $note = (string) ($result['note'] ?? '');
+
+        if ($note === 'email_already_matches_requested_value') {
+            return [
+                '',
+                'The account already uses '.$to.'.',
+                'Approving will make no change.',
+            ];
+        }
+
+        $lines = [
+            '',
+            'We will update the login email on this CodeWeek account:',
+            '  • From: '.($from !== '' ? $from : '(not found)'),
+            '  • To:   '.($to !== '' ? $to : '(not found)'),
+        ];
+
+        if (($result['would_update_email_display'] ?? false) === true) {
+            $lines[] = '  • The public display email will be updated to match.';
+        }
+
+        $lines[] = '';
+        $lines[] = 'The person will need to verify the new email address before it is fully active.';
+
+        return $lines;
     }
 
     /**
@@ -829,6 +890,7 @@ class SupportApprovalEmailService
 
         return match ($action) {
             'user_profile_update' => 'Done — name updated on CodeWeek account',
+            'user_email_update' => 'Done — account email updated',
             'user_restore' => 'Done — CodeWeek account reactivated',
             'user_role_add' => 'Done — user role added',
             'user_role_remove' => 'Done — user role removed',
@@ -877,7 +939,7 @@ class SupportApprovalEmailService
         }
 
         // Role add/remove are batch actions; the per-account list is shown above.
-        if ($email !== '' && ! in_array($action, ['user_role_add', 'user_role_remove'], true)) {
+        if ($email !== '' && ! in_array($action, ['user_role_add', 'user_role_remove', 'user_email_update'], true)) {
             $lines[] = '';
             $lines[] = 'Account email: '.$email;
         }
@@ -888,10 +950,10 @@ class SupportApprovalEmailService
 
         $lines[] = '';
         if ($succeeded) {
-            $lines[] = in_array($action, ['user_role_add', 'user_role_remove'], true)
+            $lines[] = in_array($action, ['user_role_add', 'user_role_remove', 'user_email_update'], true)
                 ? 'No further action is needed. You do not need to reply to this email.'
                 : 'No further action is needed. The supporter can sign in with their usual email and password.';
-            if (! in_array($action, ['user_role_add', 'user_role_remove'], true)) {
+            if (! in_array($action, ['user_role_add', 'user_role_remove', 'user_email_update'], true)) {
                 $lines[] = 'You do not need to reply to this email.';
             }
         } else {
@@ -913,6 +975,33 @@ class SupportApprovalEmailService
     {
         $inner = is_array($result['result'] ?? null) ? $result['result'] : [];
         $note = is_string($inner['note'] ?? null) ? $inner['note'] : '';
+
+        if ($action === 'user_email_update') {
+            $before = (array) ($inner['before'] ?? []);
+            $after = (array) ($inner['after'] ?? []);
+
+            if ($note === 'email_already_matches_requested_value') {
+                return [
+                    'The account already uses the requested email address — no change was required.',
+                ];
+            }
+
+            $lines = [
+                'We updated the login email on this CodeWeek account.',
+                '',
+                '  • From: '.(string) ($before['email'] ?? '(unknown)'),
+                '  • To:   '.(string) ($after['email'] ?? '(unknown)'),
+            ];
+
+            if (($inner['would_update_email_display'] ?? false) === true) {
+                $lines[] = '  • The public display email was updated to match.';
+            }
+
+            $lines[] = '';
+            $lines[] = 'The person should sign in with the new email address and complete email verification if prompted.';
+
+            return $lines;
+        }
 
         if ($action === 'user_profile_update') {
             $lines = [
@@ -1128,7 +1217,11 @@ class SupportApprovalEmailService
         return match (true) {
             str_contains($code, 'no_matching_user') => 'We could not find a CodeWeek account with that email address.',
             str_contains($code, 'ambiguous_user') => 'More than one account matched this email. A team member must review Case #'.$caseId.' manually.',
-            str_contains($code, 'invalid_email') => 'The email address on the request was not valid.',
+            str_contains($code, 'invalid_from_email') => 'The current email address on the request was not valid.',
+            str_contains($code, 'invalid_to_email') => 'The new email address on the request was not valid.',
+            str_contains($code, 'from_and_to_emails_identical') => 'The current and new email addresses are the same.',
+            str_contains($code, 'to_email_already_in_use') => 'Another CodeWeek account already uses the new email address.',
+            str_contains($code, 'email_already_matches') => 'The account already uses the requested email address.',
             str_contains($code, 'no_profile_fields') => 'The request did not include a first or last name to update.',
             str_contains($code, 'dry_run_mode') => 'The system is in preview-only mode and could not apply live changes.',
             str_contains($code, 'unsupported_approved_action') => 'This type of request cannot be run automatically yet.',

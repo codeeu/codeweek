@@ -12,6 +12,7 @@ use App\Services\Support\SupportJson;
 use App\Services\Support\UserProfileUpdateService;
 use App\Services\Support\UserRestoreService;
 use App\Services\Support\UserRoleAddService;
+use App\Services\Support\UserEmailUpdateService;
 use App\Services\Support\UserRoleRemoveService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -34,6 +35,7 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
         UserProfileUpdateService $userProfileUpdate,
         UserRoleAddService $userRoleAdd,
         UserRoleRemoveService $userRoleRemove,
+        UserEmailUpdateService $userEmailUpdate,
         ArtisanCommandRunner $artisanRunner,
         ContentUpdateService $contentUpdate,
     ): void {
@@ -74,6 +76,20 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
                 actionName: 'user_profile_update',
                 actionType: 'write',
                 input: ['email' => $case->target_email, 'dry_run' => true],
+                output: $dryRunResult,
+                succeeded: (bool) ($dryRunResult['ok'] ?? false),
+                executedBy: 'agent',
+                correlationId: $case->correlation_id,
+            );
+        }
+
+        if ($case->case_type === 'email_change') {
+            $dryRunResult = $userEmailUpdate->updateFromCase($case, dryRun: true);
+            $logger->log(
+                case: $case,
+                actionName: 'user_email_update',
+                actionType: 'write',
+                input: ['dry_run' => true],
                 output: $dryRunResult,
                 succeeded: (bool) ($dryRunResult['ok'] ?? false),
                 executedBy: 'agent',
