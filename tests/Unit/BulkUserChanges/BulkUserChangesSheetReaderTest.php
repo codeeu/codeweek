@@ -26,4 +26,23 @@ final class BulkUserChangesSheetReaderTest extends TestCase
         $this->assertSame('role_add', $anita['operation']);
         $this->assertSame('leading teacher', $anita['role_name']);
     }
+
+    public function test_rejects_workbook_without_changes_sheet(): void
+    {
+        $path = sys_get_temp_dir().'/bulk_user_changes_no_changes_'.uniqid().'.xlsx';
+        $spreadsheet = new \PhpOffice\PhpSpreadsheet\Spreadsheet;
+        $spreadsheet->getActiveSheet()->setTitle('Contacts');
+        $spreadsheet->getActiveSheet()->setCellValue('A1', 'Country');
+        $writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($spreadsheet);
+        $writer->save($path);
+
+        try {
+            $this->expectException(\InvalidArgumentException::class);
+            $this->expectExceptionMessage('No sheet named "Changes" found');
+
+            app(BulkUserChangesSheetReader::class)->read($path);
+        } finally {
+            @unlink($path);
+        }
+    }
 }

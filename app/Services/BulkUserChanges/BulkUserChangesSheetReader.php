@@ -90,7 +90,12 @@ final class BulkUserChangesSheetReader
             }
         }
 
-        return $spreadsheet->getSheet(0);
+        $available = implode(', ', array_map(fn (string $n) => '"'.$n.'"', $sheetNames));
+
+        throw new \InvalidArgumentException(
+            'No sheet named "Changes" found. Only the Changes tab is read; other sheets are ignored. '
+            .'Sheets in this file: '.($available !== '' ? $available : '(none)').'.'
+        );
     }
 
     private function detectHeaderRow(Worksheet $sheet): int
