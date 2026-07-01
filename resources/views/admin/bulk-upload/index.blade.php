@@ -9,7 +9,7 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            <p class="mb-4">Upload an Excel or CSV file with event data. First click <strong>Upload &amp; validate</strong> to check that all required column headers are present. If validation passes, click <strong>Import</strong> to run the import. You can set an optional default creator email; otherwise events use the contact email (and a user will be created if needed).</p>
+            <p class="mb-4">Upload an Excel or CSV file with event data. Click <strong>Upload &amp; validate</strong> — large files are processed in the background so the upload does not time out. When validation finishes you will see a preview, then click <strong>Import</strong> to create events. You can set an optional default creator email; otherwise events use the contact email (and a user will be created if needed).</p>
 
             @if (session('success'))
                 <div class="mb-4 p-4 rounded bg-green-50 border border-green-200 text-green-800">
@@ -109,25 +109,6 @@
                         @endforeach
                     </ul>
                     <p class="text-sm text-amber-700 mt-2">Add the missing columns to your file and upload again.</p>
-                </div>
-            @endif
-
-            {{-- Step 2: Import (only when validation passed) --}}
-            @if ($validationPassed)
-                <div class="p-4 rounded bg-green-50 border border-green-200">
-                    <h2 class="text-lg font-semibold mb-2 text-green-800">Step 2: Import</h2>
-                    <p class="mb-3 text-green-700">All required columns are present. Click the button below to run the import.</p>
-                    <form method="POST" action="{{ route('admin.bulk-upload.import') }}" class="inline" id="bulk-upload-import-form">
-                        @csrf
-                        <input type="hidden" name="import_payload" value="{{ $import_payload ?? '' }}">
-                        <button type="submit" id="bulk-upload-import-btn" class="bg-primary cursor-pointer px-6 py-3 rounded-full font-semibold text-[#20262C] hover:bg-hover-orange duration-300">Import</button>
-                    </form>
-                    <script>
-                        document.getElementById('bulk-upload-import-form').addEventListener('submit', function () {
-                            var btn = document.getElementById('bulk-upload-import-btn');
-                            if (btn) { btn.disabled = true; btn.textContent = 'Importing…'; }
-                        });
-                    </script>
                 </div>
             @endif
         </section>
