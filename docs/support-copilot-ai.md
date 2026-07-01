@@ -1,7 +1,8 @@
 # CodeWeek Support Copilot — AI capabilities (Phase 1)
 
 **Status:** Phase 1 · AI triage + frontend code fixes as PRs into `dev`
-**Phase 2 (planned):** AI-driven `artisan` changes on the server (allowlist-first, dry-run + APPROVE)
+**Phase 2:** AI-driven `artisan` changes on the server (allowlist-first, dry-run + APPROVE)
+**Phase 3:** AI content/copy edits on Nova-managed records (text fields only, dry-run + APPROVE)
 
 This builds on the email pipeline in [support-copilot-stakeholder-guide.md](./support-copilot-stakeholder-guide.md)
 and the action matrix in [support-copilot-allowed-actions.md](./support-copilot-allowed-actions.md).
@@ -108,10 +109,71 @@ Keep `SUPPORT_GMAIL_DRY_RUN=true` throughout so every change still needs an emai
 
 ---
 
-## Phase 2 (not yet built) — AI `artisan` changes over SSH
+## Phase 2 — AI `artisan` changes over SSH
 
-Agreed design for the next phase:
+When triage classifies a ticket as `artisan_command`, the bot prepares a server
+maintenance command and runs it through the same dry-run → APPROVE → execute →
+report pipeline as every other write action. **Disabled by default**
+(`SUPPORT_AI_ARTISAN_ENABLED=false`).
 
-- **Allowlist-first:** an `ArtisanActionRegistry` of permitted commands with validated args. The AI may only pick from these.
-- **Fallback:** if no allowlisted command fits, the AI may propose a raw command string — still **dry-run first**, the **exact command** is emailed, and it only runs after **APPROVE**.
-- **Report:** after execution, a completion email reports what ran and the result (reusing the existing completion-email pipeline).
+- **Allowlist-first** (`App\Services\Support\Artisan\ArtisanActionRegistry`): the AI may
+  only pick a permitted command, and every argument/option is validated by type
+  (email, token, name). Current allowlist: `support:user-audit`, `support:event-audit`,
+  `support:user-restore`, `support:user-update-profile`.
+- **Guarded raw fallback** (`SUPPORT_AI_ARTISAN_ALLOW_RAW=true`): if no allowlisted command
+  fits, the AI may propose a bare `artisan` command. It is rejected if it contains shell
+  metacharacters or hits the deny-list (`migrate:fresh`, `db:wipe`, `tinker`, `down`, …),
+  treated as a write, and **never auto-simulated** — the exact command is emailed for APPROVE.
+- **Execution safety:** commands run via the `Process` array form (`php artisan …`), so
+  argument values can never be interpreted by a shell. Write commands that support
+  `--dry-run` are previewed with it during diagnostics; read-only commands are run as-is.
+  Re-validated against the allowlist/deny-list again at execution time (not trusting the
+  stored approval payload). Output is captured and truncated to `SUPPORT_AI_ARTISAN_OUTPUT_LIMIT`.
+- **Report:** the completion email shows the exact command and its output.
+
+### Phase 2 env
+
+```dotenv
+SUPPORT_AI_ARTISAN_ENABLED=false      # master switch for artisan actions
+SUPPORT_AI_ARTISAN_ALLOW_RAW=true     # allow AI-proposed (non-allowlisted) commands
+SUPPORT_AI_ARTISAN_TIMEOUT=120        # per-command timeout (seconds)
+SUPPORT_AI_ARTISAN_OUTPUT_LIMIT=8000  # captured output cap (characters)
+```
+
+`artisan_command` must also be present in `support_gmail.allowed_write_actions`
+(it is by default) and `support:ai:setup-check` verifies this.
+
+---
+
+## Phase 3 — AI content edits on Nova-managed records
+
+When triage classifies a ticket as `content_update`, the bot proposes an editorial
+text change to an allowlisted content record and runs it through the same dry-run →
+APPROVE → execute → report pipeline. The records are Nova resources, so a reviewer
+can also adjust them by hand. **Disabled by default** (`SUPPORT_AI_CONTENT_ENABLED=false`).
+
+- **Model allowlist** (`App\Services\Support\Content\ContentActionRegistry`): the AI may
+  only edit listed content models (pages, homepage slides, FAQ items, menus, events,
+  podcasts, partners, …). Page-style singletons are looked up automatically; other
+  records are referenced by id or a unique field.
+- **Text fields only** (`ContentFieldResolver`): editable columns are resolved at runtime
+  to string/text columns **minus** a structural deny-list (URLs, slugs, flags, relations,
+  identifiers, SEO/keyword/category fields) and minus any non-string cast (boolean / array
+  / date / int). No hand-maintained per-model column list.
+- **Value guards** (`ContentUpdateService::validateValue`): each new value must be plain
+  text — URLs, `www.` references, and HTML/markup are rejected, length is capped at
+  `SUPPORT_AI_CONTENT_MAX_FIELD_LENGTH`. Fields whose current value is a Laravel
+  translation key (e.g. `hackathons.hero.title`) are left untouched.
+- **Exact diff + re-validation:** diagnostics computes a before→after diff (shown in the
+  approval email); execution re-runs the full plan/validation before saving — it never
+  trusts the stored payload. The completion email shows the applied before→after.
+
+### Phase 3 env
+
+```dotenv
+SUPPORT_AI_CONTENT_ENABLED=false        # master switch for content edits
+SUPPORT_AI_CONTENT_MAX_FIELD_LENGTH=5000
+```
+
+`content_update` must also be present in `support_gmail.allowed_write_actions`
+(it is by default) and `support:ai:setup-check` verifies this.

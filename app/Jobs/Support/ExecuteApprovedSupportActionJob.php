@@ -4,6 +4,8 @@ namespace App\Jobs\Support;
 
 use App\Models\Support\SupportApproval;
 use App\Models\Support\SupportCase;
+use App\Services\Support\Artisan\ArtisanCommandRunner;
+use App\Services\Support\Content\ContentUpdateService;
 use App\Services\Support\Cursor\CursorAgentService;
 use App\Services\Support\SupportActionLogger;
 use App\Services\Support\SupportApprovalEmailService;
@@ -29,6 +31,8 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
         SupportApprovalEmailService $approvalEmail,
         SupportActionLogger $logger,
         CursorAgentService $cursorAgent,
+        ArtisanCommandRunner $artisanRunner,
+        ContentUpdateService $contentUpdate,
     ): void
     {
         $approval = SupportApproval::findOrFail($this->supportApprovalId);
@@ -95,6 +99,22 @@ class ExecuteApprovedSupportActionJob implements ShouldQueue
                 'cursor_agent_status' => $inner['status'] ?? null,
                 'cursor_pr_url' => $inner['pr_url'] ?? null,
             ]);
+        } elseif ($action === 'artisan_command') {
+            // Re-plan from triage (re-validates against the allowlist/deny-list at
+            // execution time) rather than trusting the stored approval payload.
+            $triage = (array) ($case->actions()->where('action_name', 'triage')->latest()->first()?->output_json ?? []);
+            $plan = $artisanRunner->planFromTriage($triage);
+            $result = ($plan['ok'] ?? false)
+                ? $artisanRunner->execute((array) $plan['result'])
+                : $plan;
+        } elseif ($action === 'content_update') {
+            // Re-read the proposed change from triage and re-validate at execution time.
+            $triage = (array) ($case->actions()->where('action_name', 'triage')->latest()->first()?->output_json ?? []);
+            $result = $contentUpdate->execute(
+                modelKey: (string) ($triage['content_model'] ?? ''),
+                identifier: isset($triage['content_identifier']) ? (string) $triage['content_identifier'] : null,
+                changes: (array) ($triage['content_changes'] ?? []),
+            );
         } else {
             $result = [
                 'ok' => false,

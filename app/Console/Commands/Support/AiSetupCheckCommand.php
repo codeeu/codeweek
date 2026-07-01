@@ -21,6 +21,9 @@ class AiSetupCheckCommand extends Command
         $checks['ai_enabled'] = (bool) config('support_ai.enabled');
         $checks['triage_enabled'] = (bool) config('support_ai.triage.enabled');
         $checks['code_change_enabled'] = (bool) config('support_ai.code_change.enabled');
+        $checks['artisan_enabled'] = (bool) config('support_ai.artisan.enabled');
+        $checks['artisan_allow_raw'] = (bool) config('support_ai.artisan.allow_raw_fallback', true);
+        $checks['content_enabled'] = (bool) config('support_ai.content.enabled');
         $checks['gmail_dry_run'] = (bool) config('support_gmail.dry_run', true);
 
         $apiKey = trim((string) config('support_ai.cursor_api_key', ''));
@@ -68,7 +71,19 @@ class AiSetupCheckCommand extends Command
             $warnings[] = 'Missing support_cases columns — run: php artisan migrate.';
         }
 
-        $checks['code_change_in_allowed_actions'] = in_array('code_change', (array) config('support_gmail.allowed_write_actions', []), true);
+        $allowedActions = (array) config('support_gmail.allowed_write_actions', []);
+        $checks['code_change_in_allowed_actions'] = in_array('code_change', $allowedActions, true);
+        $checks['artisan_command_in_allowed_actions'] = in_array('artisan_command', $allowedActions, true);
+        $checks['content_update_in_allowed_actions'] = in_array('content_update', $allowedActions, true);
+        if ($checks['artisan_enabled'] && !$checks['artisan_command_in_allowed_actions']) {
+            $warnings[] = "artisan_command missing from support_gmail.allowed_write_actions — approvals can't execute it.";
+        }
+        if ($checks['content_enabled'] && !$checks['content_update_in_allowed_actions']) {
+            $warnings[] = "content_update missing from support_gmail.allowed_write_actions — approvals can't execute it.";
+        }
+        if ($checks['artisan_enabled'] && $checks['gmail_dry_run'] === false) {
+            $warnings[] = 'Artisan actions enabled with SUPPORT_GMAIL_DRY_RUN=false — commands run live after APPROVE.';
+        }
 
         // Dev -> Live promotion.
         $checks['live_promotion'] = (string) config('support_ai.live_promotion', 'pr_only');

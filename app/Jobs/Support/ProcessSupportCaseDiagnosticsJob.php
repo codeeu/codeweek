@@ -5,6 +5,8 @@ namespace App\Jobs\Support;
 use App\Models\Support\SupportCase;
 use App\Models\Support\SupportCaseMessage;
 use App\Services\Support\Agents\DiagnosticsAgentService;
+use App\Services\Support\Artisan\ArtisanCommandRunner;
+use App\Services\Support\Content\ContentUpdateService;
 use App\Services\Support\SupportActionLogger;
 use App\Services\Support\SupportJson;
 use App\Services\Support\UserProfileUpdateService;
@@ -28,6 +30,8 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
         SupportActionLogger $logger,
         UserRestoreService $userRestore,
         UserProfileUpdateService $userProfileUpdate,
+        ArtisanCommandRunner $artisanRunner,
+        ContentUpdateService $contentUpdate,
     ): void {
         $case = SupportCase::findOrFail($this->supportCaseId);
         $case->update(['status' => 'investigating']);
@@ -78,6 +82,40 @@ class ProcessSupportCaseDiagnosticsJob implements ShouldQueue
             $logger->log(
                 case: $case,
                 actionName: 'code_change',
+                actionType: 'write',
+                input: ['dry_run' => true],
+                output: $plan,
+                succeeded: (bool) ($plan['ok'] ?? false),
+                executedBy: 'agent',
+                correlationId: $case->correlation_id,
+            );
+        }
+
+        if ($case->case_type === 'artisan_command') {
+            $triage = (array) ($case->actions()->where('action_name', 'triage')->latest()->first()?->output_json ?? []);
+            $plan = $artisanRunner->planFromTriage($triage);
+            $dryRun = ($plan['ok'] ?? false)
+                ? $artisanRunner->dryRun((array) $plan['result'])
+                : $plan;
+
+            $logger->log(
+                case: $case,
+                actionName: 'artisan_command',
+                actionType: 'write',
+                input: ['dry_run' => true],
+                output: ['plan' => $plan, 'dry_run' => $dryRun],
+                succeeded: (bool) ($dryRun['ok'] ?? false) && (bool) ($plan['ok'] ?? false),
+                executedBy: 'agent',
+                correlationId: $case->correlation_id,
+            );
+        }
+
+        if ($case->case_type === 'content_update') {
+            $triage = (array) ($case->actions()->where('action_name', 'triage')->latest()->first()?->output_json ?? []);
+            $plan = $contentUpdate->planFromTriage($triage);
+            $logger->log(
+                case: $case,
+                actionName: 'content_update',
                 actionType: 'write',
                 input: ['dry_run' => true],
                 output: $plan,
