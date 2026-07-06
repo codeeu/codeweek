@@ -1,5 +1,24 @@
 var $ = jQuery.noConflict();
 
+function codeweekMobileMenuLinkClick(e) {
+    var $link = $(this);
+    var $submenu = $link.parent().children('ul');
+
+    if (!$submenu.length) {
+        return;
+    }
+
+    var href = $link.attr('href') || '';
+    var isVoidHref = !href || href === '#' || href.indexOf('javascript:') === 0;
+    var clickedArrow = $(e.target).closest('.arrow-icon').length > 0;
+
+    if (clickedArrow || isVoidHref) {
+        e.preventDefault();
+        $submenu.toggleClass('show');
+        return false;
+    }
+}
+
 $.fn.inlineStyle = function (prop) {
     return this.prop("style")[$.camelCase(prop)];
 };
@@ -879,9 +898,7 @@ var SEMICOLON = SEMICOLON || {};
             if ( $().superfish ) {
                 var menuSelector = '#primary-menu > ul';
                 $(menuSelector).superfish('destroy');
-                $('#primary-menu ul li a').click(function() {
-                    $(this.parentNode).children('ul').toggleClass('show')
-                });
+                $('#primary-menu ul li a').click(codeweekMobileMenuLinkClick);
             }
         },
 
@@ -2427,9 +2444,7 @@ var SEMICOLON = SEMICOLON || {};
             });
             if( SEMICOLON.isMobile.any() || !$body.hasClass('device-lg')){
                 $body.addClass('device-touch');
-                $('#primary-menu ul li a').click(function() {
-                    $(this.parentNode).children('ul').toggleClass('show')
-                })
+                $('#primary-menu ul li a').click(codeweekMobileMenuLinkClick);
             }
 
             /*DROPDOWN MENUS*/
