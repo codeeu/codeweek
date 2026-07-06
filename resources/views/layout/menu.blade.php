@@ -90,18 +90,21 @@
               {{-- resources --}}
               <li class="main-menu-item">
                   <a
-                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px] cursor-pointer"
-                      onclick="document.body.clientWidth > 1280 && (window.location.href='{{ route('educational-resources') }}')"
+                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
+                      href="{{ route('educational-resources') }}"
                   >
                       @lang('menu.resources')
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
                       <li class="menu-title max-xl:!hidden">
-                          <a class="flex gap-2 items-center"  href="{{route('educational-resources')}}">
+                          <a class="flex gap-2 items-center" href="{{route('educational-resources')}}">
                               @lang('menu.resources')
                               <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
                           </a>
+                      </li>
+                      <li class="xl:hidden">
+                          <a class="cookweek-link hover-underline" href="{{ route('educational-resources') }}">@lang('menu.resources')</a>
                       </li>
                       <li class="flex flex-col gap-16 xl:flex-row">
                           @php
@@ -231,13 +234,14 @@
               {{-- community --}}
               <li class="main-menu-item">
                   <a
-                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px] cursor-pointer"
-                      onclick="document.body.clientWidth > 1280 && (window.location.href='{{ route('community') }}')"
+                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
+                      href="{{ route('community') }}"
                   >
                       @lang('community.titles.0')
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
+                      <li class="xl:hidden"><a class="cookweek-link hover-underline" href="{{ route('community') }}">@lang('community.titles.0')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{ route('grassroots-grants') }}">@lang('menu.grassroots_grants')</a></li>
                   </ul>
               </li>
@@ -290,13 +294,14 @@
               {{-- blog --}}
               <li class="main-menu-item">
                   <a
-                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px] cursor-pointer"
-                      onclick="document.body.clientWidth > 1280 && (window.location.href='https://codeweek.eu/blog/')"
+                      class="cookweek-link hover-underline !text-[#1C4DA1] !text-[16px]"
+                      href="https://codeweek.eu/blog/"
                   >
                       @lang('menu.blog')
                       <img class="arrow-icon" src="/images/chevron-down-icon.svg" alt="">
                   </a>
                   <ul class="sub-menu">
+                      <li class="xl:hidden"><a class="cookweek-link hover-underline" href="https://codeweek.eu/blog/">@lang('menu.blog')</a></li>
                       <li><a class="cookweek-link hover-underline" href="https://forms.office.com/Pages/ResponsePage.aspx?id=18F13DIal06vkB3AGRHqbCnyIKB_vXdLsUgagfjd7DRUN1dZTVYxSkJNQ1VWSlVZNlpBOFAyN0g4UC4u&amp;embed=true" target="_blank" rel="noopener">@lang('menu.share_your_stories')</a></li>
                   </ul>
               </li>
