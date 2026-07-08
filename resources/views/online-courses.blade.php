@@ -38,12 +38,14 @@
                                     @lang('online-courses.online-courses-text')
                                 @endif
                             </p>
+                            @if($dynamic && $page->hero_cta_text && $page->hero_cta_link)
                             <span class="text-dark-blue font-semibold text-lg ">
-                                <a href="{{ $dynamic && $page->hero_cta_link ? $page->hero_cta_link : '/' }}" class="cursor-pointer text-dark-blue underline mr-1">
-                                    {{ $dynamic && $page->hero_cta_text ? $page->hero_cta_text : 'Optional secondary CTA introduction to online courses' }}
+                                <a href="{{ $page->hero_cta_link }}" class="cursor-pointer text-dark-blue underline mr-1">
+                                    {{ $page->hero_cta_text }}
                                 </a>
                                 ›
                             </span>
+                            @endif
 
                         </div>
                         <div class="order-0 md:order-2 flex flex-1 justify-center items-center z-10"></div>
