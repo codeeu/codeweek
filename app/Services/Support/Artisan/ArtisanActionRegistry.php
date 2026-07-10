@@ -35,6 +35,16 @@ class ArtisanActionRegistry
                 'arguments' => ['identifier' => ['type' => 'token', 'required' => true]],
                 'options' => ['--json' => ['type' => 'flag']],
             ],
+            'support:certificate-kpi-report' => [
+                'description' => 'Certificate KPI counts for a date window (Organiser, Excellence, Super Organiser).',
+                'is_write' => false,
+                'supports_dry_run' => false,
+                'arguments' => [
+                    'start' => ['type' => 'date', 'required' => true],
+                    'end' => ['type' => 'date', 'required' => true],
+                ],
+                'options' => ['--json' => ['type' => 'flag']],
+            ],
             'support:user-restore' => [
                 'description' => 'Restore a soft-deleted user.',
                 'is_write' => true,
@@ -93,6 +103,8 @@ class ArtisanActionRegistry
 
         return match ($type) {
             'email' => filter_var(trim($value), FILTER_VALIDATE_EMAIL) !== false,
+            'date' => (bool) preg_match('/^\d{4}-\d{2}-\d{2}$/', trim($value))
+                || (bool) preg_match('/^\d{1,2}[.\/\-]\d{1,2}[.\/\-]\d{4}$/', trim($value)),
             // Event codes / identifiers: letters, digits, dot, dash, underscore.
             'token' => (bool) preg_match('/^[A-Za-z0-9._-]{1,64}$/', trim($value)),
             // Names: no shell metacharacters or control chars.
