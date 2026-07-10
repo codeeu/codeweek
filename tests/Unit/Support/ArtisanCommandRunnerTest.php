@@ -36,6 +36,23 @@ final class ArtisanCommandRunnerTest extends TestCase
 
     public function test_registry_command_builds_validated_tokens(): void
     {
+        $plan = $this->runner->plan('support:certificate-kpi-report', [
+            'start' => '17.03.2026',
+            'end' => '07.07.2026',
+            '--json' => true,
+        ]);
+
+        $this->assertTrue($plan['ok']);
+        $this->assertSame('registry', $plan['result']['mode']);
+        $this->assertFalse($plan['result']['is_write']);
+        $this->assertSame(
+            ['support:certificate-kpi-report', '17.03.2026', '07.07.2026', '--json'],
+            $plan['result']['tokens']
+        );
+    }
+
+    public function test_registry_command_builds_validated_tokens_for_user_restore(): void
+    {
         $plan = $this->runner->plan('support:user-restore', ['email' => 'user@example.com', '--json' => true]);
 
         $this->assertTrue($plan['ok']);
