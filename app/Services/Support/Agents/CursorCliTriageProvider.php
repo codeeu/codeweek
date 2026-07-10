@@ -194,7 +194,12 @@ PROMPT;
 
         return <<<BLOCK
 
-Use "artisan_command" only when the fix requires running a server maintenance command.
+Use "artisan_command" only when the fix requires running a server maintenance command,
+or when staff ask for read-only operational data (e.g. certificate KPI counts for a date range).
+For certificate KPI / dashboard / semester statistics requests listing Organiser, Excellence,
+and Super Organiser counts between two dates, use case_type "artisan_command" with
+"artisan_command_name": "support:certificate-kpi-report" and artisan_args
+{"start":"<start date>","end":"<end date>","--json":true}. Dates may be YYYY-MM-DD or DD.MM.YYYY.
 Prefer an allowlisted command and put its name in "artisan_command_name" with values in "artisan_args"
 (keys = argument/option names, e.g. {"email":"user@example.com","--firstname":"Ada"}).
 Allowlisted commands:
