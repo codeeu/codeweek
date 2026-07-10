@@ -3,6 +3,7 @@
 namespace App\Services\Support\Agents;
 
 use App\Models\Support\SupportCase;
+use App\Services\Support\CertificateKpiRequestParser;
 use App\Services\Support\SupportEmailChangeRequestParser;
 use App\Services\Support\SupportProfileRequestParser;
 use App\Services\Support\SupportRoleRequestParser;
@@ -15,6 +16,7 @@ class TriageAgentService
         private readonly SupportEmailChangeRequestParser $emailChangeParser,
         private readonly CursorCliTriageProvider $aiProvider,
         private readonly SupportRoleRequestParser $roleParser,
+        private readonly CertificateKpiRequestParser $certificateKpiParser,
     ) {
     }
 
@@ -62,6 +64,7 @@ class TriageAgentService
         $profile = $this->profileParser->parse($rawText);
         $emailChange = $this->emailChangeParser->parse($rawText);
         $roleRequest = $this->roleParser->parse($rawText);
+        $certificateKpi = $this->certificateKpiParser->parse($rawText);
         $hasEmailChangeRequest = $emailChange['from_email'] !== null && $emailChange['to_email'] !== null;
         $hasRoleAddRequest = $roleRequest['role'] !== null
             && $roleRequest['operation'] === 'add'
@@ -103,6 +106,9 @@ class TriageAgentService
         } elseif (Str::contains($text, ['missing event', 'events missing'])) {
             $caseType = 'missing_events';
             $runbook = 'missing_events';
+        } elseif ($certificateKpi['looks_like_kpi_request'] && $certificateKpi['start'] && $certificateKpi['end']) {
+            $caseType = 'artisan_command';
+            $runbook = 'certificate_kpi_report';
         } elseif (Str::contains($text, ['certificate', 'cert'])) {
             $caseType = 'certificate_issue';
             $runbook = 'missing_certificate';
@@ -129,6 +135,9 @@ class TriageAgentService
         }
         if ($caseType === 'email_change') {
             $risk = 'medium';
+        }
+        if ($caseType === 'artisan_command' && $runbook === 'certificate_kpi_report') {
+            $risk = 'low';
         }
         if ($hasRoleRequest && $this->roleLooksPrivileged((string) $roleRequest['role'])) {
             $risk = 'high';
@@ -165,6 +174,17 @@ class TriageAgentService
             'change_summary' => null,
             'change_area' => null,
             'cursor_prompt' => null,
+            'artisan_command_name' => ($caseType === 'artisan_command' && $runbook === 'certificate_kpi_report')
+                ? 'support:certificate-kpi-report'
+                : null,
+            'artisan_args' => ($caseType === 'artisan_command' && $runbook === 'certificate_kpi_report')
+                ? [
+                    'start' => (string) $certificateKpi['start'],
+                    'end' => (string) $certificateKpi['end'],
+                    '--json' => true,
+                ]
+                : [],
+            'artisan_raw_command' => null,
             'triage_source' => 'heuristic',
         ];
     }
