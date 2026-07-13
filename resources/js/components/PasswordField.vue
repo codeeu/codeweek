@@ -8,6 +8,7 @@
       :type="type"
       :defaultValue="value"
       :required="required"
+      maxlength="72"
     />
     <div
       class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer"
