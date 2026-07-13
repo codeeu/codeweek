@@ -39,6 +39,7 @@ class AppServiceProvider extends ServiceProvider
                 ->mixedCase()
                 ->numbers()
                 ->symbols()
+                ->max(72)
                 ->uncompromised();
         });
 
