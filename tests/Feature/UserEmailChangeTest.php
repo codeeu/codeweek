@@ -23,11 +23,20 @@ final class UserEmailChangeTest extends TestCase
             'provider' => null,
             'password' => bcrypt('correct-password'),
             'email_verified_at' => now(),
+            'privacy' => 1,
         ]);
 
         $this->signIn($user);
 
+        $profileResponse = $this->get(route('profile'));
+        $profileResponse->assertOk();
+        $this->assertStringContainsString('no-store', (string) $profileResponse->headers->get('Cache-Control'));
+
+        preg_match('/name="_token" value="([^"]+)"/', $profileResponse->getContent(), $matches);
+        $this->assertNotEmpty($matches[1] ?? null);
+
         $response = $this->post(route('user.email-change.request'), [
+            '_token' => $matches[1],
             'new_email' => 'new@example.com',
             'current_password' => 'correct-password',
         ]);
@@ -101,6 +110,32 @@ final class UserEmailChangeTest extends TestCase
         $user->refresh();
         $this->assertNull($user->pending_email);
         $this->assertNull($user->pending_email_token);
+    }
+
+    public function test_user_can_resend_pending_confirmation_email(): void
+    {
+        Mail::fake();
+
+        $user = User::factory()->create([
+            'email' => 'old@example.com',
+            'pending_email' => 'new@example.com',
+            'pending_email_token' => hash('sha256', 'old-token'),
+            'pending_email_requested_at' => now()->subHour(),
+            'email_verified_at' => now(),
+        ]);
+
+        $this->signIn($user);
+
+        $response = $this->post(route('user.email-change.resend'));
+
+        $response->assertRedirect();
+        $response->assertSessionHas('email_change_status');
+
+        Mail::assertQueued(PendingEmailChangeConfirmation::class, function ($mail) {
+            return $mail->hasTo('new@example.com');
+        });
+
+        Mail::assertNotQueued(PendingEmailChangeNotification::class);
     }
 
     public function test_profile_update_still_cannot_change_login_email_directly(): void
