@@ -3,14 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Services\SocialUserLoginService;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Str;
 use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
@@ -40,8 +39,9 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct(
+        private readonly SocialUserLoginService $socialUserLoginService,
+    ) {
         $this->middleware('guest')->except('logout');
     }
 
@@ -83,10 +83,7 @@ class LoginController extends Controller
      */
     public function loginUser($provider, $socialUser)
     {
-        $user = \App\User::where(['email' => $socialUser->getEmail()])->first();
-
         if (is_null($socialUser->getEmail())) {
-            //        if ($socialUser->getEmail() == 'alainvd@gmail.com'){
             Log::info('Null email detected');
             Log::info(print_r($socialUser, true));
             $admin = config('codeweek.administrator');
@@ -94,30 +91,8 @@ class LoginController extends Controller
             abort(500);
         }
 
-        if ($user == null) {
-            //Create user
-            $user = \App\User::create(
-                [
-                    'email' => $socialUser->getEmail(),
-                    //'avatar' => $socialUser->getAvatar(),
-                    'password' => bcrypt(Str::random()),
-                    'firstname' => ($socialUser->getName()) ? $socialUser->getName() : $socialUser->getNickName(),
-                    'lastname' => '',
-                    'username' => ($socialUser->getNickName()) ? $socialUser->getNickName() : '',
-                    'provider' => $provider,
-                    'magic_key' => random_int(1000000, 2000000) * random_int(1000, 2000),
-                    'email_verified_at' => Carbon::now()
-                ]);
+        $user = $this->socialUserLoginService->resolveOrCreateUser($provider, $socialUser);
 
-        } else {
-            //update user
-            $user->provider = $provider;
-            $user->updated_at = Carbon::now();
-            $user->email_verified_at = Carbon::now();
-            $user->save();
-        }
-
-        //login with user
         Auth::login($user, true);
     }
 }
