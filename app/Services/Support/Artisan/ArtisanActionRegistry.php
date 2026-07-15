@@ -63,6 +63,20 @@ class ArtisanActionRegistry
                     '--json' => ['type' => 'flag'],
                 ],
             ],
+            'support:event-participation-code-update' => [
+                'description' => 'Change Code Week 4 All participation code on scoped events.',
+                'is_write' => true,
+                'supports_dry_run' => true,
+                'arguments' => [
+                    'old_code' => ['type' => 'participation_code', 'required' => true],
+                    'new_code' => ['type' => 'participation_code', 'required' => true],
+                ],
+                'options' => [
+                    '--year' => ['type' => 'year'],
+                    '--month' => ['type' => 'month'],
+                    '--json' => ['type' => 'flag'],
+                ],
+            ],
         ];
     }
 
@@ -107,6 +121,9 @@ class ArtisanActionRegistry
                 || (bool) preg_match('/^\d{1,2}[.\/\-]\d{1,2}[.\/\-]\d{4}$/', trim($value)),
             // Event codes / identifiers: letters, digits, dot, dash, underscore.
             'token' => (bool) preg_match('/^[A-Za-z0-9._-]{1,64}$/', trim($value)),
+            'participation_code' => (bool) preg_match('/^cw\d{2}-[A-Za-z0-9]+$/', trim($value)),
+            'year' => (bool) preg_match('/^(20\d{2}|2100)$/', trim($value)),
+            'month' => (bool) preg_match('/^([1-9]|1[0-2])$/', trim($value)),
             // Names: no shell metacharacters or control chars.
             'name' => (bool) preg_match('/^[^\x00-\x1f;|&$`<>\\\\"\']{1,80}$/u', trim($value)),
             default => false,

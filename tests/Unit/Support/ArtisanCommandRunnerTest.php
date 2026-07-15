@@ -51,6 +51,26 @@ final class ArtisanCommandRunnerTest extends TestCase
         );
     }
 
+    public function test_registry_command_builds_validated_tokens_for_participation_code_update(): void
+    {
+        $plan = $this->runner->plan('support:event-participation-code-update', [
+            'old_code' => 'cw25-E6CDg',
+            'new_code' => 'cw26-wNc6o',
+            '--year' => '2026',
+            '--month' => '6',
+            '--json' => true,
+        ]);
+
+        $this->assertTrue($plan['ok']);
+        $this->assertSame('registry', $plan['result']['mode']);
+        $this->assertTrue($plan['result']['is_write']);
+        $this->assertTrue($plan['result']['supports_dry_run']);
+        $this->assertSame(
+            ['support:event-participation-code-update', 'cw25-E6CDg', 'cw26-wNc6o', '--year=2026', '--month=6', '--json'],
+            $plan['result']['tokens']
+        );
+    }
+
     public function test_registry_command_builds_validated_tokens_for_user_restore(): void
     {
         $plan = $this->runner->plan('support:user-restore', ['email' => 'user@example.com', '--json' => true]);

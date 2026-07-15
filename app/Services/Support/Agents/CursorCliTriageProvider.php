@@ -200,6 +200,11 @@ For certificate KPI / dashboard / semester statistics requests listing Organiser
 and Super Organiser counts between two dates, use case_type "artisan_command" with
 "artisan_command_name": "support:certificate-kpi-report" and artisan_args
 {"start":"<start date>","end":"<end date>","--json":true}. Dates may be YYYY-MM-DD or DD.MM.YYYY.
+For requests to swap a Code Week 4 All participation code on activities (e.g. change cw25-XXXX
+to cw26-YYYY for events registered in June 2026), use case_type "artisan_command" with
+"artisan_command_name": "support:event-participation-code-update" and artisan_args
+{"old_code":"cw25-OLD","new_code":"cw26-NEW","--year":"2026","--month":"6","--json":true}.
+Always include --year; include --month when the request scopes to a specific month.
 Prefer an allowlisted command and put its name in "artisan_command_name" with values in "artisan_args"
 (keys = argument/option names, e.g. {"email":"user@example.com","--firstname":"Ada"}).
 Allowlisted commands:
