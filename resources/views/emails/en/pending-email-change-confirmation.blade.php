@@ -9,6 +9,10 @@ Click the button below to confirm this change. This link expires in 48 hours.
 Confirm new login email
 @endcomponent
 
+If the button does not work, copy and paste this link into your browser:
+
+{{ $confirmUrl }}
+
 If you did not request this change, you can ignore this email.
 
 Thanks,<br>
