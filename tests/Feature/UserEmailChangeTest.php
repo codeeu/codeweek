@@ -138,6 +138,33 @@ final class UserEmailChangeTest extends TestCase
         Mail::assertNotSent(PendingEmailChangeNotification::class);
     }
 
+    public function test_user_can_confirm_pending_change_from_profile(): void
+    {
+        $user = User::factory()->create([
+            'email' => 'old@example.com',
+            'email_display' => 'old@example.com',
+            'provider' => null,
+            'password' => bcrypt('correct-password'),
+            'pending_email' => 'new@example.com',
+            'pending_email_token' => hash('sha256', 'pending-token'),
+            'pending_email_requested_at' => now(),
+            'email_verified_at' => now(),
+        ]);
+
+        $this->signIn($user);
+
+        $response = $this->post(route('user.email-change.confirm-here'), [
+            'confirm_password' => 'correct-password',
+        ]);
+
+        $response->assertRedirect(route('profile'));
+        $response->assertSessionHas('flash');
+
+        $user->refresh();
+        $this->assertSame('new@example.com', $user->email);
+        $this->assertNull($user->pending_email);
+    }
+
     public function test_profile_update_still_cannot_change_login_email_directly(): void
     {
         $user = User::factory()->create([

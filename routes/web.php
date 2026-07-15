@@ -500,6 +500,9 @@ Route::post('user/email-change/cancel', [UserEmailChangeController::class, 'canc
 Route::post('user/email-change/resend', [UserEmailChangeController::class, 'resend'])
     ->name('user.email-change.resend')
     ->middleware(['auth', 'throttle:6,1']);
+Route::post('user/email-change/confirm-here', [UserEmailChangeController::class, 'confirmHere'])
+    ->name('user.email-change.confirm-here')
+    ->middleware(['auth', 'throttle:6,1']);
 Route::get('email/change/confirm/{user}/{token}', [UserEmailChangeController::class, 'confirm'])
     ->name('user.email-change.confirm')
     ->middleware('signed');
