@@ -66,6 +66,7 @@ use App\Http\Controllers\ToolkitsController;
 use App\Http\Controllers\TrainingController;
 use App\Http\Controllers\UnsubscribeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserEmailChangeController;
 use App\Http\Controllers\VolunteerController;
 use App\Http\Controllers\ConsentController;
 use App\Http\Controllers\HomeSlideLocaleOverridesController;
@@ -490,6 +491,15 @@ Route::get('/scoreboard', [ScoreboardController::class, 'index'])->name('scorebo
 Route::patch('user', [UserController::class, 'update'])
     ->name('user.update')
     ->middleware('auth');
+Route::post('user/email-change', [UserEmailChangeController::class, 'request'])
+    ->name('user.email-change.request')
+    ->middleware(['auth', 'throttle:6,1']);
+Route::post('user/email-change/cancel', [UserEmailChangeController::class, 'cancel'])
+    ->name('user.email-change.cancel')
+    ->middleware('auth');
+Route::get('email/change/confirm/{user}/{token}', [UserEmailChangeController::class, 'confirm'])
+    ->name('user.email-change.confirm')
+    ->middleware('signed');
 Route::get('view/{event}/{slug}', [EventController::class, 'show'])->name('view_event');
 
 Route::get('/my/reportable', [ReportController::class, 'list'])
