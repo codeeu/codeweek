@@ -74,7 +74,7 @@
                         <p class="mb-4 text-base text-slate-500">
                             A separate notice was sent to {{ $profileUser->email }} — that email does not contain the confirmation link.
                         </p>
-                        <div class="flex flex-col tablet:flex-row gap-4">
+                        <div class="flex flex-col tablet:flex-row gap-4 mb-6">
                             <form method="POST" action="{{ route('user.email-change.resend') }}">
                                 {{ csrf_field() }}
                                 <button type="submit" class="bg-dark-blue text-white rounded-full py-2.5 px-6 font-semibold text-base">
@@ -85,6 +85,29 @@
                                 {{ csrf_field() }}
                                 <button type="submit" class="text-dark-blue underline font-medium py-2.5">
                                     Cancel pending change
+                                </button>
+                            </form>
+                        </div>
+                        <div class="border-t border-dark-blue-200 pt-4">
+                            <p class="mb-3 font-medium text-dark-blue">Can't find the email at {{ $profileUser->pending_email }}?</p>
+                            <p class="mb-4 text-base text-slate-500">
+                                If you can access that inbox elsewhere (for example a shared team mailbox), check there first.
+                                Otherwise, while you are signed in here, you can confirm the change on this page.
+                            </p>
+                            <form method="POST" action="{{ route('user.email-change.confirm-here') }}">
+                                {{ csrf_field() }}
+                                @if (empty($profileUser->provider))
+                                    <div class="mb-3">
+                                        <label class="block text-lg text-slate-500 mb-2" for="confirm_password">Current password *</label>
+                                        <input id="confirm_password" type="password" name="confirm_password"
+                                               class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600"
+                                               required autocomplete="current-password">
+                                        @component('components.validation-errors', ['field'=>'confirm_password'])@endcomponent
+                                    </div>
+                                @endif
+                                <button type="submit"
+                                        class="bg-primary hover:bg-hover-orange duration-300 text-[#20262C] rounded-full py-2.5 px-6 font-semibold text-base">
+                                    Confirm change to {{ $profileUser->pending_email }}
                                 </button>
                             </form>
                         </div>

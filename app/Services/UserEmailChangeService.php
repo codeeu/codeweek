@@ -89,6 +89,44 @@ class UserEmailChangeService
         return ['status' => 'confirmation_resent'];
     }
 
+    /**
+     * Confirm a pending change while logged in (fallback when the new inbox does not receive mail).
+     *
+     * @throws ValidationException
+     */
+    public function confirmPendingForAuthenticatedUser(User $user, ?string $password): User
+    {
+        $pendingEmail = SupportEmailAddress::normalize((string) ($user->pending_email ?? ''));
+        if ($pendingEmail === null || $user->pending_email_token === null) {
+            throw ValidationException::withMessages([
+                'pending_email' => 'There is no pending email change to confirm.',
+            ]);
+        }
+
+        if ($this->requiresPassword($user)) {
+            if ($password === null || $password === '' || ! Hash::check($password, (string) $user->password)) {
+                throw ValidationException::withMessages([
+                    'confirm_password' => 'Your current password is incorrect.',
+                ]);
+            }
+        }
+
+        if ($this->emailInUseByAnotherUser($pendingEmail, (int) $user->id)) {
+            $this->cancelPending($user);
+
+            throw ValidationException::withMessages([
+                'new_email' => 'That email address is already in use on another CodeWeek account.',
+            ]);
+        }
+
+        return DB::transaction(function () use ($user, $pendingEmail) {
+            $oldEmail = SupportEmailAddress::normalize((string) ($user->email ?? ''));
+            $this->applyEmailChange($user, $oldEmail, $pendingEmail);
+
+            return $user->fresh();
+        });
+    }
+
     private function issuePendingToken(User $user): string
     {
         $token = Str::random(64);

@@ -77,4 +77,24 @@ class UserEmailChangeController extends Controller
             'We sent another confirmation link to '.$user->fresh()->pending_email.'. Check that inbox (and spam folder).',
         );
     }
+
+    public function confirmHere(Request $request): RedirectResponse
+    {
+        $user = $request->user();
+
+        $validated = $request->validate([
+            'confirm_password' => $this->emailChangeService->requiresPassword($user)
+                ? 'required|string|max:72'
+                : 'nullable|string|max:72',
+        ]);
+
+        $updatedUser = $this->emailChangeService->confirmPendingForAuthenticatedUser(
+            $user,
+            $validated['confirm_password'] ?? null,
+        );
+
+        return redirect()
+            ->route('profile')
+            ->with('flash', 'Your login email has been updated to '.$updatedUser->email.'.');
+    }
 }
