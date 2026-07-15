@@ -43,6 +43,73 @@
                 <h2 class="text-dark-blue text-2xl font-medium tablet:text-4xl font-['Montserrat'] mb-6 tablet:mb-10">
                     Your details
                 </h2>
+
+                <div class="bg-white px-5 py-8 rounded-xl tablet:px-24 tablet:py-10 tablet:rounded-3xl text-xl mb-6">
+                    <div class="mb-1">
+                        <label class="block text-xl text-slate-500 mb-2" for="id_email">Login email *</label>
+                        <input id="id_email" type="email"
+                               class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600 mb-3"
+                               placeholder="@lang('base.email')"
+                               value="{{ $profileUser->email }}" readonly>
+                        <p class="text-base text-slate-500 mb-3">
+                            Used to sign in and receive certificates and activity notifications.
+                        </p>
+                    </div>
+                    @if (session('email_change_status'))
+                        <div class="mb-4 text-dark-blue border-[#b8e6f2] bg-[#e8f8fc] px-4 py-3 rounded-lg text-base">
+                            {{ session('email_change_status') }}
+                        </div>
+                    @endif
+                    @if ($profileUser->pending_email)
+                        <div class="mb-4 border-2 border-solid border-dark-blue-200 rounded-xl px-5 py-4 text-base text-slate-600">
+                            <p class="mb-3">
+                                Waiting for confirmation at <strong>{{ $profileUser->pending_email }}</strong>.
+                                Check that inbox for a confirmation link (valid for 48 hours).
+                            </p>
+                            <form method="POST" action="{{ route('user.email-change.cancel') }}">
+                                @csrf
+                                <button type="submit" class="text-dark-blue underline font-medium">
+                                    Cancel pending change
+                                </button>
+                            </form>
+                        </div>
+                    @else
+                        <details class="mb-3 border-2 border-solid border-dark-blue-200 rounded-xl px-5 py-4">
+                            <summary class="cursor-pointer text-dark-blue font-medium text-lg">
+                                Change login email
+                            </summary>
+                            <form method="POST" action="{{ route('user.email-change.request') }}" class="mt-4">
+                                @csrf
+                                <div class="mb-3">
+                                    <label class="block text-lg text-slate-500 mb-2" for="new_email">New login email *</label>
+                                    <input id="new_email" type="email" name="new_email"
+                                           class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600"
+                                           value="{{ old('new_email') }}" required>
+                                    @component('components.validation-errors', ['field'=>'new_email'])@endcomponent
+                                </div>
+                                @if (empty($profileUser->provider))
+                                    <div class="mb-3">
+                                        <label class="block text-lg text-slate-500 mb-2" for="current_password">Current password *</label>
+                                        <input id="current_password" type="password" name="current_password"
+                                               class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600"
+                                               required autocomplete="current-password">
+                                        @component('components.validation-errors', ['field'=>'current_password'])@endcomponent
+                                    </div>
+                                @else
+                                    <p class="mb-3 text-base text-slate-500">
+                                        We will email your current address to let you know about this change.
+                                        You can keep signing in with {{ ucfirst($profileUser->provider) }} after the update.
+                                    </p>
+                                @endif
+                                <button type="submit"
+                                        class="bg-dark-blue text-white rounded-full py-2.5 px-6 font-semibold text-base">
+                                    Send confirmation email
+                                </button>
+                            </form>
+                        </details>
+                    @endif
+                </div>
+
                 <form method="POST" action="{{ route('user.update') }}" class="bg-white px-5 py-8 rounded-xl tablet:px-24 tablet:py-16 tablet:rounded-3xl text-xl">
                     @if ($errors->any())
                         <div class="mb-4 text-[ff526c] border-[#ffa7b4] bg-[#ffe5e9] px-3 py-2 rounded-lg">
@@ -82,72 +149,6 @@
                         <div class="errors">
                             @component('components.validation-errors', ['field'=>'lastname'])@endcomponent
                         </div>
-                    </div>
-
-                    <div class="mb-1">
-                        <div>
-                            <label class="block text-xl text-slate-500 mb-2" for="id_email">Login email *</label>
-                            <input id="id_email" type="email"
-                                   class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600 mb-3"
-                                   placeholder="@lang('base.email')"
-                                   value="{{$profileUser->email}}" readonly>
-                            <p class="text-base text-slate-500 mb-3">
-                                Used to sign in and receive certificates and activity notifications.
-                            </p>
-                        </div>
-                        @if (session('email_change_status'))
-                            <div class="mb-4 text-dark-blue border-[#b8e6f2] bg-[#e8f8fc] px-4 py-3 rounded-lg text-base">
-                                {{ session('email_change_status') }}
-                            </div>
-                        @endif
-                        @if ($profileUser->pending_email)
-                            <div class="mb-4 border-2 border-solid border-dark-blue-200 rounded-xl px-5 py-4 text-base text-slate-600">
-                                <p class="mb-3">
-                                    Waiting for confirmation at <strong>{{ $profileUser->pending_email }}</strong>.
-                                    Check that inbox for a confirmation link (valid for 48 hours).
-                                </p>
-                                <form method="POST" action="{{ route('user.email-change.cancel') }}">
-                                    @csrf
-                                    <button type="submit" class="text-dark-blue underline font-medium">
-                                        Cancel pending change
-                                    </button>
-                                </form>
-                            </div>
-                        @else
-                            <details class="mb-3 border-2 border-solid border-dark-blue-200 rounded-xl px-5 py-4">
-                                <summary class="cursor-pointer text-dark-blue font-medium text-lg">
-                                    Change login email
-                                </summary>
-                                <form method="POST" action="{{ route('user.email-change.request') }}" class="mt-4">
-                                    @csrf
-                                    <div class="mb-3">
-                                        <label class="block text-lg text-slate-500 mb-2" for="new_email">New login email *</label>
-                                        <input id="new_email" type="email" name="new_email"
-                                               class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600"
-                                               value="{{ old('new_email') }}" required>
-                                        @component('components.validation-errors', ['field'=>'new_email'])@endcomponent
-                                    </div>
-                                    @if (empty($profileUser->provider))
-                                        <div class="mb-3">
-                                            <label class="block text-lg text-slate-500 mb-2" for="current_password">Current password *</label>
-                                            <input id="current_password" type="password" name="current_password"
-                                                   class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600"
-                                                   required autocomplete="current-password">
-                                            @component('components.validation-errors', ['field'=>'current_password'])@endcomponent
-                                        </div>
-                                    @else
-                                        <p class="mb-3 text-base text-slate-500">
-                                            We will email your current address to let you know about this change.
-                                            You can keep signing in with {{ ucfirst($profileUser->provider) }} after the update.
-                                        </p>
-                                    @endif
-                                    <button type="submit"
-                                            class="bg-dark-blue text-white rounded-full py-2.5 px-6 font-semibold text-base">
-                                        Send confirmation email
-                                    </button>
-                                </form>
-                            </details>
-                        @endif
                     </div>
 
                     <div class="mb-1">
@@ -305,6 +306,7 @@
                                 name="privacy"
                                 value="agreed"
                                 class="w-8 h-8 text-slate-600 border-2 border-dark-blue-200 rounded"
+                                {{ $profileUser->privacy ? 'checked' : '' }}
                             >
                             <label for="privacy-agreement" class="text-base font-normal text-gray-700 cursor-pointer">
                                 Agree to <a href="{{route('privacy-contact-points')}}" target="_blank" rel="noreferer noopener" class="text-dark-blue underline font-semibold">Privacy Policy</a>.
