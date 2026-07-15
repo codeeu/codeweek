@@ -66,4 +66,15 @@ class UserEmailChangeController extends Controller
 
         return back()->with('email_change_status', 'Your pending email change has been cancelled.');
     }
+
+    public function resend(Request $request): RedirectResponse
+    {
+        $user = $request->user();
+        $this->emailChangeService->resendConfirmation($user);
+
+        return back()->with(
+            'email_change_status',
+            'We sent another confirmation link to '.$user->fresh()->pending_email.'. Check that inbox (and spam folder).',
+        );
+    }
 }

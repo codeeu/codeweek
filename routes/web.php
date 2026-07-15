@@ -497,6 +497,9 @@ Route::post('user/email-change', [UserEmailChangeController::class, 'request'])
 Route::post('user/email-change/cancel', [UserEmailChangeController::class, 'cancel'])
     ->name('user.email-change.cancel')
     ->middleware('auth');
+Route::post('user/email-change/resend', [UserEmailChangeController::class, 'resend'])
+    ->name('user.email-change.resend')
+    ->middleware(['auth', 'throttle:6,1']);
 Route::get('email/change/confirm/{user}/{token}', [UserEmailChangeController::class, 'confirm'])
     ->name('user.email-change.confirm')
     ->middleware('signed');
@@ -733,7 +736,9 @@ Route::get('/featured-activities', [OnlineEventsController::class, 'calendar'])-
 Route::get('/profile', function () {
     $data = ['profileUser' => Auth()->user()];
 
-    return view('profile', $data);
+    return response()
+        ->view('profile', $data)
+        ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
 })
     ->name('profile')
     ->middleware(['auth','verified']);
