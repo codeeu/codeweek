@@ -54,13 +54,52 @@ class UserEmailChangeService
             }
         }
 
-        $token = Str::random(64);
-
         $user->pending_email = $newEmail;
+        $token = $this->issuePendingToken($user);
+        $this->dispatchConfirmationEmail($user, $newEmail, $token);
+        $this->sendChangeNotification($user, $newEmail, $currentEmail);
+
+        return ['status' => 'confirmation_sent'];
+    }
+
+    /**
+     * @return array{status: string}
+     */
+    public function resendConfirmation(User $user): array
+    {
+        $pendingEmail = SupportEmailAddress::normalize((string) ($user->pending_email ?? ''));
+        if ($pendingEmail === null || $user->pending_email_token === null) {
+            throw ValidationException::withMessages([
+                'pending_email' => 'There is no pending email change to confirm.',
+            ]);
+        }
+
+        if ($this->emailInUseByAnotherUser($pendingEmail, (int) $user->id)) {
+            $this->cancelPending($user);
+
+            throw ValidationException::withMessages([
+                'new_email' => 'That email address is already in use on another CodeWeek account.',
+            ]);
+        }
+
+        $token = $this->issuePendingToken($user);
+        $this->dispatchConfirmationEmail($user->fresh(), $pendingEmail, $token);
+
+        return ['status' => 'confirmation_resent'];
+    }
+
+    private function issuePendingToken(User $user): string
+    {
+        $token = Str::random(64);
         $user->pending_email_token = hash('sha256', $token);
         $user->pending_email_requested_at = now();
         $user->save();
 
+        return $token;
+    }
+
+    private function dispatchConfirmationEmail(User $user, string $newEmail, string $token): void
+    {
         $confirmUrl = URL::temporarySignedRoute(
             'user.email-change.confirm',
             now()->addHours(48),
@@ -68,12 +107,15 @@ class UserEmailChangeService
         );
 
         Mail::to($newEmail)->queue(new PendingEmailChangeConfirmation($user, $confirmUrl));
+    }
 
-        if ($currentEmail !== null) {
-            Mail::to($currentEmail)->queue(new PendingEmailChangeNotification($user, $newEmail));
+    private function sendChangeNotification(User $user, string $newEmail, ?string $currentEmail): void
+    {
+        if ($currentEmail === null) {
+            return;
         }
 
-        return ['status' => 'confirmation_sent'];
+        Mail::to($currentEmail)->queue(new PendingEmailChangeNotification($user, $newEmail));
     }
 
     public function cancelPending(User $user): void
