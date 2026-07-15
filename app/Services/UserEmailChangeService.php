@@ -9,6 +9,7 @@ use App\Services\Support\SupportEmailAddress;
 use App\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
@@ -106,7 +107,7 @@ class UserEmailChangeService
             ['user' => $user->id, 'token' => $token],
         );
 
-        Mail::to($newEmail)->queue(new PendingEmailChangeConfirmation($user, $confirmUrl));
+        $this->deliverNow($newEmail, new PendingEmailChangeConfirmation($user, $confirmUrl), 'confirmation');
     }
 
     private function sendChangeNotification(User $user, string $newEmail, ?string $currentEmail): void
@@ -115,7 +116,25 @@ class UserEmailChangeService
             return;
         }
 
-        Mail::to($currentEmail)->queue(new PendingEmailChangeNotification($user, $newEmail));
+        $this->deliverNow($currentEmail, new PendingEmailChangeNotification($user, $newEmail), 'notification');
+    }
+
+    private function deliverNow(string $email, PendingEmailChangeConfirmation|PendingEmailChangeNotification $mailable, string $type): void
+    {
+        try {
+            Mail::to($email)->send($mailable);
+        } catch (\Throwable $exception) {
+            Log::error('Failed to send login email change message.', [
+                'type' => $type,
+                'recipient' => $email,
+                'user_id' => $mailable->user->id ?? null,
+                'message' => $exception->getMessage(),
+            ]);
+
+            throw ValidationException::withMessages([
+                $type === 'confirmation' ? 'new_email' : 'email' => 'We could not send the email right now. Please try again in a few minutes or contact info@codeweek.eu.',
+            ]);
+        }
     }
 
     public function cancelPending(User $user): void
