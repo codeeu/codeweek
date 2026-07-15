@@ -4,6 +4,7 @@ namespace App\Services\Support\Agents;
 
 use App\Models\Support\SupportCase;
 use App\Services\Support\CertificateKpiRequestParser;
+use App\Services\Support\EventParticipationCodeRequestParser;
 use App\Services\Support\SupportEmailChangeRequestParser;
 use App\Services\Support\SupportProfileRequestParser;
 use App\Services\Support\SupportRoleRequestParser;
@@ -17,6 +18,7 @@ class TriageAgentService
         private readonly CursorCliTriageProvider $aiProvider,
         private readonly SupportRoleRequestParser $roleParser,
         private readonly CertificateKpiRequestParser $certificateKpiParser,
+        private readonly EventParticipationCodeRequestParser $participationCodeParser,
     ) {
     }
 
@@ -65,6 +67,7 @@ class TriageAgentService
         $emailChange = $this->emailChangeParser->parse($rawText);
         $roleRequest = $this->roleParser->parse($rawText);
         $certificateKpi = $this->certificateKpiParser->parse($rawText);
+        $participationCode = $this->participationCodeParser->parse($rawText);
         $hasEmailChangeRequest = $emailChange['from_email'] !== null && $emailChange['to_email'] !== null;
         $hasRoleAddRequest = $roleRequest['role'] !== null
             && $roleRequest['operation'] === 'add'
@@ -106,6 +109,12 @@ class TriageAgentService
         } elseif (Str::contains($text, ['missing event', 'events missing'])) {
             $caseType = 'missing_events';
             $runbook = 'missing_events';
+        } elseif ($participationCode['looks_like_code_change_request']
+            && $participationCode['old_code']
+            && $participationCode['new_code']
+            && $participationCode['year']) {
+            $caseType = 'artisan_command';
+            $runbook = 'event_participation_code_update';
         } elseif ($certificateKpi['looks_like_kpi_request'] && $certificateKpi['start'] && $certificateKpi['end']) {
             $caseType = 'artisan_command';
             $runbook = 'certificate_kpi_report';
@@ -138,6 +147,9 @@ class TriageAgentService
         }
         if ($caseType === 'artisan_command' && $runbook === 'certificate_kpi_report') {
             $risk = 'low';
+        }
+        if ($caseType === 'artisan_command' && $runbook === 'event_participation_code_update') {
+            $risk = 'medium';
         }
         if ($hasRoleRequest && $this->roleLooksPrivileged((string) $roleRequest['role'])) {
             $risk = 'high';
@@ -174,16 +186,16 @@ class TriageAgentService
             'change_summary' => null,
             'change_area' => null,
             'cursor_prompt' => null,
-            'artisan_command_name' => ($caseType === 'artisan_command' && $runbook === 'certificate_kpi_report')
-                ? 'support:certificate-kpi-report'
-                : null,
-            'artisan_args' => ($caseType === 'artisan_command' && $runbook === 'certificate_kpi_report')
-                ? [
-                    'start' => (string) $certificateKpi['start'],
-                    'end' => (string) $certificateKpi['end'],
-                    '--json' => true,
-                ]
-                : [],
+            'artisan_command_name' => match ($runbook) {
+                'certificate_kpi_report' => 'support:certificate-kpi-report',
+                'event_participation_code_update' => 'support:event-participation-code-update',
+                default => null,
+            },
+            'artisan_args' => $this->artisanArgsForRunbook(
+                $runbook,
+                $certificateKpi,
+                $participationCode,
+            ),
             'artisan_raw_command' => null,
             'triage_source' => 'heuristic',
         ];
@@ -192,6 +204,38 @@ class TriageAgentService
     private function roleLooksPrivileged(string $roleName): bool
     {
         return (bool) preg_match('/\b(admin|administrator|super|owner|root|staff)\b/i', $roleName);
+    }
+
+    /**
+     * @param  array<string, mixed>  $certificateKpi
+     * @param  array<string, mixed>  $participationCode
+     * @return array<string, mixed>
+     */
+    private function artisanArgsForRunbook(string $runbook, array $certificateKpi, array $participationCode): array
+    {
+        if ($runbook === 'certificate_kpi_report') {
+            return [
+                'start' => (string) $certificateKpi['start'],
+                'end' => (string) $certificateKpi['end'],
+                '--json' => true,
+            ];
+        }
+
+        if ($runbook === 'event_participation_code_update') {
+            $args = [
+                'old_code' => (string) $participationCode['old_code'],
+                'new_code' => (string) $participationCode['new_code'],
+                '--year' => (string) $participationCode['year'],
+                '--json' => true,
+            ];
+            if ($participationCode['month'] !== null) {
+                $args['--month'] = (string) $participationCode['month'];
+            }
+
+            return $args;
+        }
+
+        return [];
     }
 
     private function extractFirstEmail(string $text): ?string
