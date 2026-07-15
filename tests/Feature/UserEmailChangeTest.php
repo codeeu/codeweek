@@ -47,11 +47,11 @@ final class UserEmailChangeTest extends TestCase
         $user->refresh();
         $this->assertSame('new@example.com', $user->pending_email);
 
-        Mail::assertQueued(PendingEmailChangeConfirmation::class, function ($mail) {
+        Mail::assertSent(PendingEmailChangeConfirmation::class, function ($mail) {
             return $mail->hasTo('new@example.com');
         });
 
-        Mail::assertQueued(PendingEmailChangeNotification::class, function ($mail) {
+        Mail::assertSent(PendingEmailChangeNotification::class, function ($mail) {
             return $mail->hasTo('old@example.com');
         });
     }
@@ -131,11 +131,11 @@ final class UserEmailChangeTest extends TestCase
         $response->assertRedirect();
         $response->assertSessionHas('email_change_status');
 
-        Mail::assertQueued(PendingEmailChangeConfirmation::class, function ($mail) {
+        Mail::assertSent(PendingEmailChangeConfirmation::class, function ($mail) {
             return $mail->hasTo('new@example.com');
         });
 
-        Mail::assertNotQueued(PendingEmailChangeNotification::class);
+        Mail::assertNotSent(PendingEmailChangeNotification::class);
     }
 
     public function test_profile_update_still_cannot_change_login_email_directly(): void
