@@ -125,7 +125,8 @@ def first_image_filename(image: str) -> str:
 
 
 def parse_workbook(xlsx_path: Path) -> list[dict]:
-    wb = openpyxl.load_workbook(xlsx_path, read_only=True)
+    # Must not use read_only/values_only — third-party Link cells store the real URL as a hyperlink.
+    wb = openpyxl.load_workbook(xlsx_path, data_only=False)
     rows_out: list[dict] = []
 
     for sheet_name in wb.sheetnames:
@@ -136,24 +137,31 @@ def parse_workbook(xlsx_path: Path) -> list[dict]:
         # Resource sheets: row 2 is an English group blurb (no language); data from row 3.
         # Third-party sheet: data starts at row 2.
         start_row = 2 if is_third_party else 3
-        for row in ws.iter_rows(min_row=start_row, values_only=True):
-            if not any(c is not None and str(c).strip() for c in row):
+        for row_idx, row in enumerate(ws.iter_rows(min_row=start_row), start=start_row):
+            values = [c.value for c in row]
+            if not any(c is not None and str(c).strip() for c in values):
                 continue
 
-            name = normalize_cell(row[2] if len(row) > 2 else "")
-            link_raw = normalize_cell(row[3] if len(row) > 3 else "")
+            name = normalize_cell(values[2] if len(values) > 2 else "")
+            link_raw = normalize_cell(values[3] if len(values) > 3 else "")
             if not name:
                 continue
 
+            link_cell = row[3] if len(row) > 3 else None
+            if link_cell is not None and link_cell.hyperlink and link_cell.hyperlink.target:
+                target = str(link_cell.hyperlink.target).strip()
+                if target.startswith("http://") or target.startswith("https://"):
+                    link_raw = target
+
             if is_third_party:
-                lang = normalize_cell(row[11] if len(row) > 11 else "")
+                lang = normalize_cell(values[11] if len(values) > 11 else "")
             else:
-                lang = normalize_cell(row[1] if len(row) > 1 else "")
+                lang = normalize_cell(values[1] if len(values) > 1 else "")
                 if not lang or lang.lower() == "language":
                     continue
 
             import_link, source_url = link_to_filename(link_raw)
-            image_raw = normalize_cell(row[12] if len(row) > 12 else "")
+            image_raw = normalize_cell(values[12] if len(values) > 12 else "")
             image = first_image_filename(image_raw)
             if image_raw.startswith("http") and not image:
                 image = image_raw.split(";")[0].strip()
@@ -162,14 +170,14 @@ def parse_workbook(xlsx_path: Path) -> list[dict]:
                 {
                     "name_of_the_resource": name,
                     "link": import_link,
-                    "description": normalize_cell(row[4] if len(row) > 4 else ""),
-                    "filters_type": normalize_cell(row[5] if len(row) > 5 else ""),
-                    "filters_target_audience": normalize_cell(row[6] if len(row) > 6 else ""),
-                    "filters_level_of_difficulty": normalize_cell(row[7] if len(row) > 7 else ""),
-                    "filters_programming_language": normalize_cell(row[7 + 1] if len(row) > 7 + 1 else ""),
-                    "filters_subject": normalize_cell(row[8 + 1] if len(row) > 8 + 1 else ""),
-                    "filters_topics": normalize_cell(row[9 + 1] if len(row) > 9 + 1 else ""),
-                    "filters_language": lang if not is_third_party else normalize_cell(row[11] if len(row) > 11 else ""),
+                    "description": normalize_cell(values[4] if len(values) > 4 else ""),
+                    "filters_type": normalize_cell(values[5] if len(values) > 5 else ""),
+                    "filters_target_audience": normalize_cell(values[6] if len(values) > 6 else ""),
+                    "filters_level_of_difficulty": normalize_cell(values[7] if len(values) > 7 else ""),
+                    "filters_programming_language": normalize_cell(values[8] if len(values) > 8 else ""),
+                    "filters_subject": normalize_cell(values[9] if len(values) > 9 else ""),
+                    "filters_topics": normalize_cell(values[10] if len(values) > 10 else ""),
+                    "filters_language": lang if not is_third_party else normalize_cell(values[11] if len(values) > 11 else ""),
                     "category": "",
                     "group_name": group if not is_third_party else "Third party resources",
                     "image": image,

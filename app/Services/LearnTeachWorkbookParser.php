@@ -82,6 +82,13 @@ class LearnTeachWorkbookParser
                 }
 
                 $link = $cells[4] ?? '';
+                $linkCell = $worksheet->getCell([4, $rowNum]);
+                if ($linkCell->hasHyperlink()) {
+                    $target = trim((string) $linkCell->getHyperlink()->getUrl());
+                    if ($target !== '' && (str_starts_with($target, 'http://') || str_starts_with($target, 'https://'))) {
+                        $link = $target;
+                    }
+                }
                 $image = $this->normalizeImage($cells[13] ?? '');
 
                 $rows[] = [
