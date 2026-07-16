@@ -474,7 +474,9 @@ export default {
     };
 
     const onSubmit = (isPagination = false) => {
-      if (!isPagination) {
+      // Multiselect @select/@remove pass the option object as the first arg.
+      // Only treat an explicit `true` as pagination so filters always reset to page 1.
+      if (isPagination !== true) {
         pagination.current_page = 1;
       }
       resources.value = [];
