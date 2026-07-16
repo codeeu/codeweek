@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Imports\ResourcesImport;
 use App\Imports\ResourcesPreviewImport;
-use App\Services\LearnTeachWorkbookParser;
 use App\Services\ResourcesImportResult;
 use App\Services\ResourcesUploadValidator;
 use Illuminate\Http\RedirectResponse;
@@ -15,7 +14,6 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Maatwebsite\Excel\Facades\Excel;
-use ZipArchive;
 
 class ResourcesImportController extends Controller
 {
@@ -40,7 +38,7 @@ class ResourcesImportController extends Controller
             'file' => [
                 'required',
                 'file',
-                'max:51200',
+                'max:10240',
                 function ($attribute, $value, $fail) {
                     if ($value) {
                         $ext = strtolower($value->getClientOriginalExtension());
@@ -54,12 +52,10 @@ class ResourcesImportController extends Controller
                     }
                 },
             ],
-            'assets_zip' => ['nullable', 'file', 'mimes:zip', 'max:512000'],
             'focus' => ['nullable', 'boolean'],
         ], [
             'file.required' => 'Please select a file to upload.',
-            'file.max' => 'The file may not be greater than 50 MB.',
-            'assets_zip.max' => 'The assets ZIP may not be greater than 500 MB.',
+            'file.max' => 'The file may not be greater than 10 MB.',
         ]);
 
         $file = $request->file('file');
@@ -88,28 +84,13 @@ class ResourcesImportController extends Controller
         $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS]);
 
         $path = $file->storeAs('temp', 'resources_import_'.time().'.'.$extension, $tempDisk);
-        $absolutePath = Storage::disk($tempDisk)->path($path);
-        $assetsDir = null;
-
-        if ($request->hasFile('assets_zip')) {
-            try {
-                $assetsDir = $this->extractAssetsZip($request->file('assets_zip'), $tempDisk);
-            } catch (\Throwable $e) {
-                Storage::disk($tempDisk)->delete($path);
-
-                return redirect()->route('admin.resources-import.index')
-                    ->withErrors(['assets_zip' => 'Could not extract assets ZIP: '.$e->getMessage()])
-                    ->withInput();
-            }
-        }
 
         try {
-            $rows = $this->parseUploadedMetadata($absolutePath, $path, $extension, $tempDisk);
+            $import = new ResourcesPreviewImport;
+            Excel::import($import, $path, $tempDisk);
+            $rows = $import->data;
         } catch (\Throwable $e) {
             Storage::disk($tempDisk)->delete($path);
-            if ($assetsDir) {
-                Storage::disk($tempDisk)->deleteDirectory($assetsDir);
-            }
 
             return redirect()->route('admin.resources-import.index')
                 ->withErrors(['file' => 'Could not parse file: '.$e->getMessage()])
@@ -119,9 +100,6 @@ class ResourcesImportController extends Controller
         $headerCheck = ResourcesUploadValidator::validateRequiredColumnsFromRows($rows);
         if (! $headerCheck['valid']) {
             Storage::disk($tempDisk)->delete($path);
-            if ($assetsDir) {
-                Storage::disk($tempDisk)->deleteDirectory($assetsDir);
-            }
 
             return redirect()->route('admin.resources-import.index')
                 ->withErrors(['file' => 'Missing required column(s): '.implode(', ', $headerCheck['missing']).'. Please add a header row with at least "name_of_the_resource".'])
@@ -129,9 +107,6 @@ class ResourcesImportController extends Controller
         }
         if (empty($rows)) {
             Storage::disk($tempDisk)->delete($path);
-            if ($assetsDir) {
-                Storage::disk($tempDisk)->deleteDirectory($assetsDir);
-            }
 
             return redirect()->route('admin.resources-import.index')
                 ->withErrors(['file' => 'The file has no data rows.'])
@@ -148,7 +123,6 @@ class ResourcesImportController extends Controller
             'path' => $path,
             'disk' => $tempDisk,
             'focus' => $focus,
-            'assets_dir' => $assetsDir,
         ], now()->addHours(1));
         $request->session()->put('resources_import_token', $importToken);
 
@@ -198,7 +172,6 @@ class ResourcesImportController extends Controller
     {
         $path = null;
         $focus = false;
-        $assetsDir = null;
         $tempDisk = config('filesystems.resources_import_temp_disk', 'local');
 
         $token = $request->input('import_token');
@@ -208,7 +181,6 @@ class ResourcesImportController extends Controller
                 $path = $cached['path'];
                 $tempDisk = $cached['disk'] ?? $tempDisk;
                 $focus = (bool) ($cached['focus'] ?? false);
-                $assetsDir = $cached['assets_dir'] ?? null;
             }
         }
 
@@ -294,15 +266,10 @@ class ResourcesImportController extends Controller
 
         try {
             $result = new ResourcesImportResult;
-            $imagesDir = $assetsDir ? Storage::disk($tempDisk)->path($assetsDir.'/images') : null;
-            $pdfsDir = $assetsDir ? Storage::disk($tempDisk)->path($assetsDir.'/links') : null;
-            $import = new ResourcesImport($imagesDir, $pdfsDir, $focus, $overrides, $result, $filenameMode, $batchTimestamp, $customSuffix);
+            $import = new ResourcesImport(null, null, $focus, $overrides, $result, $filenameMode, $batchTimestamp, $customSuffix);
             Excel::import($import, $path, $tempDisk);
 
             Storage::disk($tempDisk)->delete($path);
-            if ($assetsDir) {
-                Storage::disk($tempDisk)->deleteDirectory($assetsDir);
-            }
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS, 'resources_import_token']);
             if (is_string($token = $request->input('import_token')) && $token !== '') {
                 Cache::forget('resources_import_' . $token);
@@ -316,9 +283,6 @@ class ResourcesImportController extends Controller
         } catch (\Throwable $e) {
             if (Storage::disk($tempDisk)->exists($path)) {
                 Storage::disk($tempDisk)->delete($path);
-            }
-            if ($assetsDir) {
-                Storage::disk($tempDisk)->deleteDirectory($assetsDir);
             }
             $request->session()->forget([self::SESSION_FILE_PATH, self::SESSION_ROWS, self::SESSION_FOCUS, 'resources_import_token']);
             if (is_string($token = $request->input('import_token')) && $token !== '') {
@@ -349,49 +313,5 @@ class ResourcesImportController extends Controller
             'updated' => $updated ?? [],
             'failures' => $failures ?? [],
         ]);
-    }
-
-    /**
-     * @return array<int, array<string, mixed>>
-     */
-    private function parseUploadedMetadata(string $absolutePath, string &$storedPath, string $extension, string $disk): array
-    {
-        if (in_array($extension, ['xlsx', 'xls'], true) && LearnTeachWorkbookParser::looksLikeLearnTeachWorkbook($absolutePath)) {
-            $parser = new LearnTeachWorkbookParser;
-            $rows = $parser->parse($absolutePath);
-            $csvPath = 'temp/resources_import_'.time().'.csv';
-            $parser->writeCsv($rows, Storage::disk($disk)->path($csvPath));
-            Storage::disk($disk)->delete($storedPath);
-            $storedPath = $csvPath;
-
-            return $rows;
-        }
-
-        $import = new ResourcesPreviewImport;
-        Excel::import($import, $storedPath, $disk);
-
-        return $import->data;
-    }
-
-    private function extractAssetsZip(\Illuminate\Http\UploadedFile $zipFile, string $disk): string
-    {
-        $assetsDir = 'temp/learn_teach_assets_'.time();
-        Storage::disk($disk)->makeDirectory($assetsDir);
-        $targetPath = Storage::disk($disk)->path($assetsDir);
-
-        $zip = new ZipArchive;
-        $opened = $zip->open($zipFile->getRealPath());
-        if ($opened !== true) {
-            throw new \RuntimeException('Invalid ZIP archive.');
-        }
-
-        if (! $zip->extractTo($targetPath)) {
-            $zip->close();
-            throw new \RuntimeException('ZIP extraction failed.');
-        }
-
-        $zip->close();
-
-        return $assetsDir;
     }
 }
