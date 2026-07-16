@@ -10,7 +10,6 @@ use App\ResourceProgrammingLanguage;
 use App\ResourceSubject;
 use App\ResourceCategory;
 use App\ResourceLanguage;
-use App\Services\SharePointAssetFetcher;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
@@ -207,7 +206,7 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         $imageValue = trim((string) ($row['image'] ?? ''));
         if ($imageValue !== '') {
             if (str_starts_with($imageValue, 'http://') || str_starts_with($imageValue, 'https://')) {
-                $thumbnail = $this->uploadRemoteImage($imageValue, $row, $rowIndex) ?? $imageValue;
+                $thumbnail = $imageValue;
             } elseif ($this->imagesDir) {
                 $localPath = $this->imagesDir . DIRECTORY_SEPARATOR . $imageValue;
                 if (file_exists($localPath)) {
@@ -229,10 +228,7 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         }
 
         $pdfLink = null;
-        $linkValue = trim((string) ($row['link'] ?? ''));
-        if ($linkValue !== '' && $this->isHttpUrl($linkValue)) {
-            $pdfLink = $this->uploadRemotePdf($linkValue, $row, $rowIndex);
-        } elseif ($linkValue !== '' && $this->pdfsDir) {
+        if (!empty($row['link']) && stripos($row['link'], 'http://') !== 0 && stripos($row['link'], 'https://') !== 0 && $this->pdfsDir) {
             $groupName = !empty($row['group_name']) ? trim($row['group_name']) : '';
             $groupSlug = $groupName ? Str::slug($groupName) : 'default';
 
@@ -408,65 +404,5 @@ class ResourcesImport extends DefaultValueBinder implements ToModel, WithCustomV
         $item->languages()->sync(array_unique($languageIds));
 
         return $item;
-    }
-
-    protected function isHttpUrl(string $value): bool
-    {
-        return str_starts_with($value, 'http://') || str_starts_with($value, 'https://');
-    }
-
-    protected function uploadRemotePdf(string $url, array $row, int $rowIndex): ?string
-    {
-        /** @var SharePointAssetFetcher $fetcher */
-        $fetcher = app(SharePointAssetFetcher::class);
-        if (! $fetcher->isSharePointUrl($url) || ! $fetcher->looksLikePdfUrl($url)) {
-            return null;
-        }
-
-        $bytes = $fetcher->fetch($url);
-        if ($bytes === null || ! str_starts_with($bytes, '%PDF')) {
-            return null;
-        }
-
-        $groupName = ! empty($row['group_name']) ? trim((string) $row['group_name']) : '';
-        $groupSlug = $groupName ? Str::slug($groupName) : 'default';
-        $baseSlug = Str::slug(pathinfo(parse_url($url, PHP_URL_PATH) ?? 'resource', PATHINFO_FILENAME) ?: 'resource');
-        $basename = $this->filenameMode === 'preserve'
-            ? $this->preserveModeBasename(basename(parse_url($url, PHP_URL_PATH) ?: 'resource.pdf'))
-            : $this->buildStoredBasename($baseSlug, 'pdf', $row, $rowIndex, false);
-        $storagePath = $groupSlug.'/'.$basename;
-        Storage::disk($this->disk)->put($storagePath, $bytes);
-
-        return Storage::disk($this->disk)->url($storagePath);
-    }
-
-    protected function uploadRemoteImage(string $url, array $row, int $rowIndex): ?string
-    {
-        /** @var SharePointAssetFetcher $fetcher */
-        $fetcher = app(SharePointAssetFetcher::class);
-        if (! $this->isHttpUrl($url)) {
-            return null;
-        }
-
-        $bytes = $fetcher->fetch($url);
-        if ($bytes === null || str_starts_with($bytes, '<')) {
-            return null;
-        }
-
-        $path = parse_url($url, PHP_URL_PATH);
-        $filename = is_string($path) && $path !== '' ? basename($path) : 'thumbnail.jpg';
-        $ext = pathinfo($filename, PATHINFO_EXTENSION) ?: 'jpg';
-        $basename = $this->filenameMode === 'preserve'
-            ? $this->preserveModeBasename($filename)
-            : $this->buildStoredBasename(
-                Str::slug($row['name_of_the_resource'] ?? 'resource'),
-                $ext,
-                $row,
-                $rowIndex,
-                true
-            );
-        Storage::disk($this->disk)->put($basename, $bytes);
-
-        return Storage::disk($this->disk)->url($basename);
     }
 }

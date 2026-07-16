@@ -8,12 +8,7 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            <p class="mb-4">Upload the Learn &amp; Teach metadata workbook (multi-sheet Excel is supported) and optionally a ZIP of PDFs/images. Click <strong>Verify</strong> to parse and preview rows, then <strong>Import</strong> to publish resources to S3 and the Learn &amp; Teach page.</p>
-            <ul class="mb-4 text-sm text-gray-700 list-disc list-inside space-y-1">
-                <li><strong>Localized PDF resources:</strong> upload a ZIP with <code>links/&lt;group name&gt;/file.pdf</code> and <code>images/thumbnail.png</code>, or rely on SharePoint PDF URLs in the Link column (server must be able to access SharePoint).</li>
-                <li><strong>Third-party resources:</strong> Link must be a full <code>https://...</code> URL. These publish as external links and already open in a new tab on the site.</li>
-                <li><strong>S3/AWS:</strong> no extra setup in this form — imports use the existing <code>RESOURCES_BUCKET</code> / AWS credentials in <code>.env</code> on the server.</li>
-            </ul>
+            <p class="mb-4">Upload an Excel or CSV file with resource data (same format as the <code>resources:import</code> command). Click <strong>Verify</strong> to parse the file and see a preview. You can then edit the <strong>Image</strong> URL per row before clicking <strong>Import</strong>.</p>
 
             @if (session('info'))
                 <div class="mb-4 p-4 rounded bg-blue-50 border border-blue-200 text-blue-800">
@@ -51,15 +46,9 @@
                             <label for="file" class="block font-medium mb-1">Excel / CSV file <span class="text-red-600">*</span></label>
                             <input type="file" name="file" id="file" accept=".csv,.xlsx,.xls" required
                                    class="block w-full max-w-md" aria-required="true">
-                            <p class="text-sm text-gray-600 mt-1">Supports the multi-sheet Learn &amp; Teach workbook (one tab per resource group + Third party resources). Max 50 MB.</p>
+                            <p class="text-sm text-gray-600 mt-1">Required column: <code>name_of_the_resource</code>. Optional: link, description, image, filters_type, filters_target_audience, filters_level_of_difficulty, filters_programming_language, filters_subjects, filters_topics, filters_language, category, group_name, <code>s3_suffix</code> (or <code>file_suffix</code>) per row for file naming. Max 10 MB.</p>
+                            <p class="text-sm text-gray-600 mt-1">After verify, the preview step lets you choose <strong>batch</strong> / <strong>stable</strong> / <strong>preserve</strong> naming or a <strong>custom suffix</strong>. On the server: <code>php artisan resources:export-s3-urls --output=storage/app/resources_s3_urls.csv</code> then rename local PDFs/images to match <code>pdf_basename</code> / <code>thumb_basename</code> and import with <code>--preserve-filenames</code>. Example header: <code>docs/resources/resources-s3-urls-export.example.csv</code>. See <code>resources:import --help</code>.</p>
                             <p id="file-required-hint" class="text-sm text-amber-600 mt-1 hidden">Please select a file first, then click Verify.</p>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="assets_zip" class="block font-medium mb-1">Assets ZIP (optional)</label>
-                            <input type="file" name="assets_zip" id="assets_zip" accept=".zip"
-                                   class="block w-full max-w-md">
-                            <p class="text-sm text-gray-600 mt-1">ZIP layout: <code>links/Binary Number Challenge/ALBANIAN_01 ...pdf</code> and <code>images/Binary number challenge.png</code>. Use this if you do not have SharePoint synced locally. Max 500 MB.</p>
                         </div>
 
                         <div class="codeweek-form-button-container">
