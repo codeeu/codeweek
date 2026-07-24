@@ -287,51 +287,44 @@ class TrainingResource extends Model
             return $section;
         }
 
-        // Collapse any existing Key one-pagers title variants (h2 / strong / Trix wrappers)
-        // into a single h2, then place the locale note immediately after it.
-        $titlePattern = '/(?:<(?:div|p)[^>]*>\s*)?(?:<h2[^>]*(?:\bid=(["\'])key-one-pagers\1)?[^>]*>\s*Key one-pagers\s*<\/h2>|(?:<(?:strong|b)>\s*)Key one-pagers(?:\s*<\/(?:strong|b)>))(?:\s*<\/(?:div|p)>)?/iu';
+        $section = $this->stripKeyOnePagersTitleVariants($section);
+        // Remove any previously injected note copies so we add exactly one.
+        $section = $this->stripInjectedKeyOnePagersNotes($section);
+        $section = preg_replace('/<(?:div|p)[^>]*>\s*(?:<br\s*\/?>|\s)*<\/(?:div|p)>/iu', '', $section) ?? $section;
 
-        if (preg_match($titlePattern, $section) === 1) {
-            $replaced = false;
-            $section = preg_replace_callback($titlePattern, function (array $matches) use ($headingHtml, $noteHtml, &$replaced) {
-                if ($replaced) {
-                    return '';
-                }
-                $replaced = true;
-
-                return $headingHtml.$noteHtml;
-            }, $section) ?? $section;
-
-            // If the note was already injected via placeholder before the title, drop the extra copy.
-            return $this->dedupeKeyOnePagersNote($section, $noteHtml);
-        }
-
-        if (! str_contains($section, $noteHtml) && ! str_contains($section, '[[key_one_pagers_locale_note]]')) {
-            return $headingHtml.$noteHtml.$section;
-        }
-
-        return $headingHtml.$section;
+        return $headingHtml.$noteHtml.ltrim($section);
     }
 
-    protected function dedupeKeyOnePagersNote(string $section, string $noteHtml): string
+    /**
+     * Remove h2/strong/Trix title-only "Key one-pagers" blocks (including &lt;br&gt; inside).
+     */
+    protected function stripKeyOnePagersTitleVariants(string $html): string
     {
-        $pos = strpos($section, $noteHtml);
-        if ($pos === false) {
-            return $section;
+        $patterns = [
+            // <h2 id="key-one-pagers">Key one-pagers</h2> or plain h2
+            '/<h2[^>]*>\s*Key one-pagers\s*<\/h2>/iu',
+            // <div>/<p> wrappers around strong/b title, allowing <br> inside
+            '/<(?:div|p)[^>]*>\s*<(?:strong|b)[^>]*>\s*Key one-pagers(?:\s|<br\s*\/?>)*<\/(?:strong|b)>\s*<\/(?:div|p)>/iu',
+            // bare <strong>Key one-pagers<br></strong>
+            '/<(?:strong|b)[^>]*>\s*Key one-pagers(?:\s|<br\s*\/?>)*<\/(?:strong|b)>/iu',
+        ];
+
+        foreach ($patterns as $pattern) {
+            $html = preg_replace($pattern, '', $html) ?? $html;
         }
 
-        $afterFirst = substr($section, $pos + strlen($noteHtml));
-        if (! str_contains($afterFirst, $noteHtml)) {
-            return $section;
-        }
-
-        return substr($section, 0, $pos + strlen($noteHtml)).str_replace($noteHtml, '', $afterFirst);
+        return $html;
     }
 
-    protected function hasKeyOnePagersHeading(string $html): bool
+    /**
+     * Remove earlier auto-injected locale note spans (English or translated).
+     */
+    protected function stripInjectedKeyOnePagersNotes(string $html): string
     {
-        return preg_match('/<h2[^>]*\bid=(["\'])key-one-pagers\1[^>]*>/is', $html) === 1
-            || preg_match('/<h2[^>]*>\s*Key one-pagers\s*<\/h2>/is', $html) === 1
-            || preg_match('/<(?:strong|b)>\s*Key one-pagers\s*<\/(?:strong|b)>/is', $html) === 1;
+        return preg_replace(
+            '/(?:<em>\s*)?<span class="block mb-4[^"]*"[^>]*>.*?<\/span>(?:\s*<\/em>)?/ius',
+            '',
+            $html
+        ) ?? $html;
     }
 }
