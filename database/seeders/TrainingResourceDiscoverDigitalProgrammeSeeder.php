@@ -47,6 +47,7 @@ HTML,
                 'body_image_alt' => 'Discover Digital Programme roadmap',
                 'pdf_links_section' => <<<HTML
 <h2 id="key-one-pagers">Key one-pagers</h2>
+[[key_one_pagers_locale_note]]
 <p>These documents summarise the main operational parts of the toolkit.</p>
 <ul>
   <li><a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/files/Essential_Preparation_for_STEM_Engagement+Activities.pdf" target="_blank" rel="noopener noreferrer">Essential Preparation for STEM Engagement Activities</a></li>
