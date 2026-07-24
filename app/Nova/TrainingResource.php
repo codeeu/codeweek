@@ -70,7 +70,7 @@ class TrainingResource extends Resource
             )
                 ->nullable()
                 ->hideFromIndex()
-                ->help('Leave empty to keep the default English PDF links. Use the toolbar to add links (select text → link), lists, and headings. For Discover Digital, the Key one-pagers intro sentence is added automatically in the visitor’s language.')
+                ->help('Leave empty to keep the default English PDF links. Prefer pasting only the Key one-pagers links here; the Detailed supporting information block stays English until you include a translated version. Use the toolbar to add links.')
                 ->resolveUsing(function () use ($locale) {
                     $overrides = $this->resource->locale_overrides ?? [];
 
