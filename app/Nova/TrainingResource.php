@@ -64,14 +64,13 @@ class TrainingResource extends Resource
                 continue;
             }
 
-            $pdfTranslationFields[] = Textarea::make(
+            $pdfTranslationFields[] = Trix::make(
                 'PDF links ('.strtoupper($locale).')',
                 'locale_'.$locale.'_pdf_links_section'
             )
                 ->nullable()
-                ->rows(10)
                 ->hideFromIndex()
-                ->help('Leave empty to keep the default English PDF links for this language. Paste the full HTML (same structure as PDF links section) with translated file URLs after uploading to S3.')
+                ->help('Leave empty to keep the default English PDF links. Use the toolbar to add links (select text → link), lists, and headings. Include [[key_one_pagers_locale_note]] if you want the translated intro sentence.')
                 ->resolveUsing(function () use ($locale) {
                     $overrides = $this->resource->locale_overrides ?? [];
 
@@ -84,7 +83,7 @@ class TrainingResource extends Resource
                     }
 
                     $value = $request->get($requestAttribute);
-                    if ($value === null || trim((string) $value) === '') {
+                    if ($value === null || trim(strip_tags((string) $value)) === '') {
                         unset($overrides[$locale]['pdf_links_section']);
                     } else {
                         $overrides[$locale]['pdf_links_section'] = $value;
