@@ -132,14 +132,7 @@
 
                 @if(!empty($trainingResource->pdf_links_section) || $trainingResource->hasPdfLinksOverrideForLocale())
                     @php
-                        $pdfLinksSection = $trainingResource->pdfLinksSectionForLocale();
-                        if (str_contains($pdfLinksSection, '[[key_one_pagers_locale_note]]')) {
-                            $pdfLinksSection = str_replace(
-                                '[[key_one_pagers_locale_note]]',
-                                '<span class="block mb-4">'.e(__('training.discover_digital_key_one_pagers_note')).'</span>',
-                                $pdfLinksSection
-                            );
-                        }
+                        $pdfLinksSection = $trainingResource->renderedPdfLinksSectionForLocale();
                     @endphp
                     @if($pdfLinksSection !== '')
                         <div class="{{ $pdfClass }}">
