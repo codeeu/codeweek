@@ -30,6 +30,7 @@ class TrainingResource extends Model
         'body_image_alt',
         'content',
         'pdf_links_section',
+        'locale_overrides',
         'contacts_section',
         'register_box_section',
         'about_box_section',
@@ -55,6 +56,7 @@ class TrainingResource extends Model
         'active' => 'boolean',
         'position' => 'integer',
         'anchor_offset' => 'integer',
+        'locale_overrides' => 'array',
     ];
 
     public function scopeActive($query)
@@ -159,5 +161,59 @@ class TrainingResource extends Model
         }
 
         return null;
+    }
+
+    /**
+     * Resolve PDF links HTML for the active (or given) locale.
+     *
+     * Priority:
+     * 1. Full locale override of pdf_links_section, if present
+     * 2. Default pdf_links_section with optional per-URL replacements
+     * 3. Default pdf_links_section
+     */
+    public function pdfLinksSectionForLocale(?string $locale = null): string
+    {
+        $locale = $locale ?? app()->getLocale();
+        $overrides = $this->locale_overrides ?? [];
+        $localeOverrides = is_array($overrides[$locale] ?? null) ? $overrides[$locale] : [];
+
+        if (! empty($localeOverrides['pdf_links_section']) && is_string($localeOverrides['pdf_links_section'])) {
+            return $localeOverrides['pdf_links_section'];
+        }
+
+        $section = (string) ($this->pdf_links_section ?? '');
+        $replacements = $localeOverrides['pdf_link_replacements'] ?? null;
+
+        if (! is_array($replacements) || $replacements === [] || $section === '') {
+            return $section;
+        }
+
+        foreach ($replacements as $from => $to) {
+            if (! is_string($from) || ! is_string($to) || $from === '' || $to === '') {
+                continue;
+            }
+
+            $section = str_replace($from, $to, $section);
+        }
+
+        return $section;
+    }
+
+    /**
+     * Whether the given locale has dedicated PDF-link content (full section or URL map).
+     */
+    public function hasPdfLinksOverrideForLocale(?string $locale = null): bool
+    {
+        $locale = $locale ?? app()->getLocale();
+        $overrides = $this->locale_overrides ?? [];
+        $localeOverrides = is_array($overrides[$locale] ?? null) ? $overrides[$locale] : [];
+
+        if (! empty($localeOverrides['pdf_links_section']) && is_string($localeOverrides['pdf_links_section'])) {
+            return true;
+        }
+
+        $replacements = $localeOverrides['pdf_link_replacements'] ?? null;
+
+        return is_array($replacements) && $replacements !== [];
     }
 }
