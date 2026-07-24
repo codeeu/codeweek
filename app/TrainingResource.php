@@ -276,10 +276,15 @@ class TrainingResource extends Model
             return '';
         }
 
-        $noteHtml = '<span class="block mb-4">'.e(__('training.discover_digital_key_one_pagers_note')).'</span>';
+        $noteHtml = '<span class="block mb-4 font-semibold"><strong>'.e(__('training.discover_digital_key_one_pagers_note')).'</strong></span>';
 
         if (str_contains($section, '[[key_one_pagers_locale_note]]')) {
-            return str_replace('[[key_one_pagers_locale_note]]', $noteHtml, $section);
+            $section = str_replace('[[key_one_pagers_locale_note]]', $noteHtml, $section);
+            if ($this->slug === 'discover-digital-programme' && ! $this->hasKeyOnePagersHeading($section)) {
+                $section = '<h2 id="key-one-pagers">Key one-pagers</h2>'.$section;
+            }
+
+            return $section;
         }
 
         // Discover Digital: inject the note even when locale overrides omit the placeholder.
@@ -299,10 +304,15 @@ class TrainingResource extends Model
             }
         }
 
-        if (! str_contains(mb_strtolower($section), 'key one-pagers')) {
-            return '<h2 id="key-one-pagers">Key one-pagers</h2>'.$noteHtml.$section;
-        }
+        // Always restore the heading when missing. Do not use a plain-text search for
+        // "key one-pagers" — the supporting-detail paragraph also mentions that phrase.
+        return '<h2 id="key-one-pagers">Key one-pagers</h2>'.$noteHtml.$section;
+    }
 
-        return $noteHtml.$section;
+    protected function hasKeyOnePagersHeading(string $html): bool
+    {
+        return preg_match('/<h2[^>]*\bid=(["\'])key-one-pagers\1[^>]*>/is', $html) === 1
+            || preg_match('/<h2[^>]*>\s*Key one-pagers\s*<\/h2>/is', $html) === 1
+            || preg_match('/(?:<div[^>]*>\s*)?<strong>\s*Key one-pagers\s*<\/strong>/is', $html) === 1;
     }
 }
