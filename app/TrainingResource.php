@@ -277,42 +277,61 @@ class TrainingResource extends Model
         }
 
         $noteHtml = '<span class="block mb-4 font-semibold"><strong>'.e(__('training.discover_digital_key_one_pagers_note')).'</strong></span>';
+        $headingHtml = '<h2 id="key-one-pagers">Key one-pagers</h2>';
 
         if (str_contains($section, '[[key_one_pagers_locale_note]]')) {
             $section = str_replace('[[key_one_pagers_locale_note]]', $noteHtml, $section);
-            if ($this->slug === 'discover-digital-programme' && ! $this->hasKeyOnePagersHeading($section)) {
-                $section = '<h2 id="key-one-pagers">Key one-pagers</h2>'.$section;
-            }
-
-            return $section;
         }
 
-        // Discover Digital: inject the note even when locale overrides omit the placeholder.
         if ($this->slug !== 'discover-digital-programme') {
             return $section;
         }
 
-        $headingPatterns = [
-            '/(<h2[^>]*\bid=(["\'])key-one-pagers\2[^>]*>.*?<\/h2>)/is',
-            '/(<h2[^>]*>\s*Key one-pagers\s*<\/h2>)/is',
-            '/((?:<div[^>]*>\s*)?<strong>\s*Key one-pagers\s*<\/strong>(?:\s*<\/div>)?)/is',
-        ];
+        // Collapse any existing Key one-pagers title variants (h2 / strong / Trix wrappers)
+        // into a single h2, then place the locale note immediately after it.
+        $titlePattern = '/(?:<(?:div|p)[^>]*>\s*)?(?:<h2[^>]*(?:\bid=(["\'])key-one-pagers\1)?[^>]*>\s*Key one-pagers\s*<\/h2>|(?:<(?:strong|b)>\s*)Key one-pagers(?:\s*<\/(?:strong|b)>))(?:\s*<\/(?:div|p)>)?/iu';
 
-        foreach ($headingPatterns as $pattern) {
-            if (preg_match($pattern, $section) === 1) {
-                return preg_replace($pattern, '$1'.$noteHtml, $section, 1) ?? $section;
-            }
+        if (preg_match($titlePattern, $section) === 1) {
+            $replaced = false;
+            $section = preg_replace_callback($titlePattern, function (array $matches) use ($headingHtml, $noteHtml, &$replaced) {
+                if ($replaced) {
+                    return '';
+                }
+                $replaced = true;
+
+                return $headingHtml.$noteHtml;
+            }, $section) ?? $section;
+
+            // If the note was already injected via placeholder before the title, drop the extra copy.
+            return $this->dedupeKeyOnePagersNote($section, $noteHtml);
         }
 
-        // Always restore the heading when missing. Do not use a plain-text search for
-        // "key one-pagers" — the supporting-detail paragraph also mentions that phrase.
-        return '<h2 id="key-one-pagers">Key one-pagers</h2>'.$noteHtml.$section;
+        if (! str_contains($section, $noteHtml) && ! str_contains($section, '[[key_one_pagers_locale_note]]')) {
+            return $headingHtml.$noteHtml.$section;
+        }
+
+        return $headingHtml.$section;
+    }
+
+    protected function dedupeKeyOnePagersNote(string $section, string $noteHtml): string
+    {
+        $pos = strpos($section, $noteHtml);
+        if ($pos === false) {
+            return $section;
+        }
+
+        $afterFirst = substr($section, $pos + strlen($noteHtml));
+        if (! str_contains($afterFirst, $noteHtml)) {
+            return $section;
+        }
+
+        return substr($section, 0, $pos + strlen($noteHtml)).str_replace($noteHtml, '', $afterFirst);
     }
 
     protected function hasKeyOnePagersHeading(string $html): bool
     {
         return preg_match('/<h2[^>]*\bid=(["\'])key-one-pagers\1[^>]*>/is', $html) === 1
             || preg_match('/<h2[^>]*>\s*Key one-pagers\s*<\/h2>/is', $html) === 1
-            || preg_match('/(?:<div[^>]*>\s*)?<strong>\s*Key one-pagers\s*<\/strong>/is', $html) === 1;
+            || preg_match('/<(?:strong|b)>\s*Key one-pagers\s*<\/(?:strong|b)>/is', $html) === 1;
     }
 }
