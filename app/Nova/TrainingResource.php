@@ -14,6 +14,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Panel;
 
 class TrainingResource extends Resource
 {
@@ -40,9 +41,64 @@ class TrainingResource extends Resource
         return true;
     }
 
+    private static function localesSorted(): array
+    {
+        $locales = config('app.locales', ['en']);
+        if (is_string($locales)) {
+            $locales = array_map('trim', explode(',', $locales));
+        }
+        $locales = array_values(array_filter($locales));
+        if ($locales === []) {
+            $locales = ['en'];
+        }
+        sort($locales);
+
+        return $locales;
+    }
+
     public function fields(Request $request): array
     {
-        return [
+        $pdfTranslationFields = [];
+        foreach (self::localesSorted() as $locale) {
+            if ($locale === 'en') {
+                continue;
+            }
+
+            $pdfTranslationFields[] = Textarea::make(
+                'PDF links ('.strtoupper($locale).')',
+                'locale_'.$locale.'_pdf_links_section'
+            )
+                ->nullable()
+                ->rows(10)
+                ->hideFromIndex()
+                ->help('Leave empty to keep the default English PDF links for this language. Paste the full HTML (same structure as PDF links section) with translated file URLs after uploading to S3.')
+                ->resolveUsing(function () use ($locale) {
+                    $overrides = $this->resource->locale_overrides ?? [];
+
+                    return $overrides[$locale]['pdf_links_section'] ?? '';
+                })
+                ->fillUsing(function ($request, $model, $attribute, $requestAttribute) use ($locale) {
+                    $overrides = $model->locale_overrides ?? [];
+                    if (! isset($overrides[$locale]) || ! is_array($overrides[$locale])) {
+                        $overrides[$locale] = [];
+                    }
+
+                    $value = $request->get($requestAttribute);
+                    if ($value === null || trim((string) $value) === '') {
+                        unset($overrides[$locale]['pdf_links_section']);
+                    } else {
+                        $overrides[$locale]['pdf_links_section'] = $value;
+                    }
+
+                    if ($overrides[$locale] === []) {
+                        unset($overrides[$locale]);
+                    }
+
+                    $model->locale_overrides = $overrides === [] ? null : $overrides;
+                });
+        }
+
+        $fields = [
             ID::make()->sortable(),
 
             Text::make('Slug', 'slug')
@@ -135,7 +191,7 @@ class TrainingResource extends Resource
 
             Trix::make('PDF links section', 'pdf_links_section')
                 ->nullable()
-                ->help('Optional area for numbered downloadable resources (e.g. 1-6 links).'),
+                ->help('Default (English) downloadable resources. For other languages, use the “Translated PDF links” panel below. Use [[key_one_pagers_locale_note]] for the locale-aware intro sentence.'),
 
             Trix::make('Contacts section', 'contacts_section')
                 ->nullable()
@@ -248,6 +304,15 @@ class TrainingResource extends Resource
             Boolean::make('Published', 'active')
                 ->help('Turn off to keep this page hidden publicly. Preview URL still works.'),
         ];
+
+        if ($pdfTranslationFields !== []) {
+            $fields[] = Panel::make('Translated PDF links', $pdfTranslationFields)
+                ->help('Only fill languages that have translated files. When the site language switches, that language’s links are shown if present; otherwise visitors keep the default English links.')
+                ->collapsable()
+                ->collapsedByDefault();
+        }
+
+        return $fields;
     }
 
     public static function indexQuery(NovaRequest $request, $query)
