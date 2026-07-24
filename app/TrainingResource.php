@@ -216,4 +216,44 @@ class TrainingResource extends Model
 
         return is_array($replacements) && $replacements !== [];
     }
+
+    /**
+     * PDF links HTML with the locale-aware Key one-pagers note applied.
+     */
+    public function renderedPdfLinksSectionForLocale(?string $locale = null): string
+    {
+        $section = $this->pdfLinksSectionForLocale($locale);
+        if ($section === '') {
+            return '';
+        }
+
+        $noteHtml = '<span class="block mb-4">'.e(__('training.discover_digital_key_one_pagers_note')).'</span>';
+
+        if (str_contains($section, '[[key_one_pagers_locale_note]]')) {
+            return str_replace('[[key_one_pagers_locale_note]]', $noteHtml, $section);
+        }
+
+        // Discover Digital: inject the note even when locale overrides omit the placeholder.
+        if ($this->slug !== 'discover-digital-programme') {
+            return $section;
+        }
+
+        $headingPatterns = [
+            '/(<h2[^>]*\bid=(["\'])key-one-pagers\2[^>]*>.*?<\/h2>)/is',
+            '/(<h2[^>]*>\s*Key one-pagers\s*<\/h2>)/is',
+            '/((?:<div[^>]*>\s*)?<strong>\s*Key one-pagers\s*<\/strong>(?:\s*<\/div>)?)/is',
+        ];
+
+        foreach ($headingPatterns as $pattern) {
+            if (preg_match($pattern, $section) === 1) {
+                return preg_replace($pattern, '$1'.$noteHtml, $section, 1) ?? $section;
+            }
+        }
+
+        if (! str_contains(mb_strtolower($section), 'key one-pagers')) {
+            return '<h2 id="key-one-pagers">Key one-pagers</h2>'.$noteHtml.$section;
+        }
+
+        return $noteHtml.$section;
+    }
 }
