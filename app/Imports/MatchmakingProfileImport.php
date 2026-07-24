@@ -750,17 +750,11 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
             $trimmedOrgName = trim($organisationName);
             $lowerOrgName = mb_strtolower($trimmedOrgName);
             
-            // First try with type constraint
+            // Match organisations only against organisation profiles.
+            // Volunteers often share organisation_name (e.g. CityLab) and must not be overwritten.
             $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_ORGANISATION)
                 ->whereRaw('LOWER(TRIM(COALESCE(organisation_name, \'\'))) = ?', [$lowerOrgName])
                 ->first();
-            
-            // If not found, try without type constraint (in case type was set incorrectly)
-            if (!$existingProfile) {
-                $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(COALESCE(organisation_name, \'\'))) = ?', [$lowerOrgName])
-                    ->whereNotNull('organisation_name')
-                    ->first();
-            }
             
             // Log for debugging
             if ($existingProfile) {
@@ -784,17 +778,9 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
                 $trimmedEmail = trim($email);
                 $lowerEmail = mb_strtolower($trimmedEmail);
 
-                // First try with type constraint
                 $existingProfile = MatchmakingProfile::where('type', MatchmakingProfile::TYPE_VOLUNTEER)
                     ->whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
                     ->first();
-
-                // If not found, try without type constraint (in case type was set incorrectly)
-                if (!$existingProfile) {
-                    $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(email)) = ?', [$lowerEmail])
-                        ->whereNotNull('email')
-                        ->first();
-                }
 
                 // Log for debugging
                 if ($existingProfile) {
@@ -822,13 +808,6 @@ class MatchmakingProfileImport extends DefaultValueBinder implements ToModel, Wi
                         ->whereRaw('LOWER(TRIM(first_name)) = ?', [$first])
                         ->whereRaw('LOWER(TRIM(last_name)) = ?', [$last])
                         ->first();
-
-                    // If not found, try without type constraint (in case type was set incorrectly)
-                    if (!$existingProfile) {
-                        $existingProfile = MatchmakingProfile::whereRaw('LOWER(TRIM(first_name)) = ?', [$first])
-                            ->whereRaw('LOWER(TRIM(last_name)) = ?', [$last])
-                            ->first();
-                    }
 
                     if ($existingProfile) {
                         Log::info('[MatchmakingProfileImport] Found existing volunteer by name', [
