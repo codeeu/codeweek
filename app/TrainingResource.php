@@ -168,6 +168,7 @@ class TrainingResource extends Model
      *
      * Priority:
      * 1. Full locale override of pdf_links_section, if present
+     *    (English "supporting detail" block is kept when the override omits it)
      * 2. Default pdf_links_section with optional per-URL replacements
      * 3. Default pdf_links_section
      */
@@ -176,12 +177,16 @@ class TrainingResource extends Model
         $locale = $locale ?? app()->getLocale();
         $overrides = $this->locale_overrides ?? [];
         $localeOverrides = is_array($overrides[$locale] ?? null) ? $overrides[$locale] : [];
+        $defaultSection = (string) ($this->pdf_links_section ?? '');
 
         if (! empty($localeOverrides['pdf_links_section']) && is_string($localeOverrides['pdf_links_section'])) {
-            return $localeOverrides['pdf_links_section'];
+            return $this->mergeSupportingDetailFromDefault(
+                $localeOverrides['pdf_links_section'],
+                $defaultSection
+            );
         }
 
-        $section = (string) ($this->pdf_links_section ?? '');
+        $section = $defaultSection;
         $replacements = $localeOverrides['pdf_link_replacements'] ?? null;
 
         if (! is_array($replacements) || $replacements === [] || $section === '') {
@@ -197,6 +202,50 @@ class TrainingResource extends Model
         }
 
         return $section;
+    }
+
+    /**
+     * Append the default supporting-detail block when a locale override only has Key one-pagers.
+     */
+    protected function mergeSupportingDetailFromDefault(string $localeSection, string $defaultSection): string
+    {
+        if ($defaultSection === '' || $this->containsSupportingDetailSection($localeSection)) {
+            return $localeSection;
+        }
+
+        $supporting = $this->extractSupportingDetailSection($defaultSection);
+        if ($supporting === '') {
+            return $localeSection;
+        }
+
+        return rtrim($localeSection)."\n".$supporting;
+    }
+
+    protected function containsSupportingDetailSection(string $html): bool
+    {
+        if (preg_match('/<(?:h2|h3|strong)\b[^>]*>\s*(?:Useful detail info|Detailed supporting information)\s*<\/(?:h2|h3|strong)>/is', $html) === 1) {
+            return true;
+        }
+
+        // Heuristic: Register of Processing Activities only appears in the supporting list.
+        return str_contains($html, 'Register of Processing Activities');
+    }
+
+    protected function extractSupportingDetailSection(string $html): string
+    {
+        if (preg_match('/((?:<div[^>]*>\s*)?<(?:h2|h3|strong)\b[^>]*>\s*(?:Useful detail info|Detailed supporting information)\s*<\/(?:h2|h3|strong)>.*)$/is', $html, $matches) === 1) {
+            return trim($matches[1]);
+        }
+
+        if (preg_match_all('/<h2\b[^>]*>.*?<\/h2>/is', $html, $headings, PREG_OFFSET_CAPTURE) === false) {
+            return '';
+        }
+
+        if (count($headings[0]) < 2) {
+            return '';
+        }
+
+        return trim(substr($html, $headings[0][1][1]));
     }
 
     /**
