@@ -442,9 +442,3 @@ body:not(.new-layout) {
       height: 220px;
     }
   }
-
-// Reveal the document once this stylesheet has applied.
-// Paired with the inline hide in layout/anti-fouc.blade.php to prevent FOUC.
-html {
-  visibility: visible;
-}
