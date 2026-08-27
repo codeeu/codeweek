@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="{{App::getLocale()}}" class="no-js">
 <head>
-    @include('layout.analytics')
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -12,6 +11,8 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
+    @include('layout.anti-fouc')
+    @vite(['resources/assets/sass/app.scss', 'resources/js/app.js'])
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
     <link href="{{asset('css/fonts.css')}}" media="screen" rel="stylesheet"/>
@@ -19,11 +20,7 @@
     @stack('extra-css')
 
     @yield('extra-css')
-
-
-    {{--    @vite('resources/css/app.css')--}}
-    @vite(['resources/assets/sass/app.scss', 'resources/js/app.js'])
-    {{--    @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+    @include('layout.analytics')
 
 
 
