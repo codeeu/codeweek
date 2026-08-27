@@ -1,10 +1,10 @@
 {{--
-  Hide only the bits that dump unstyled on first paint (dropdowns / mobile clones).
-  Do not hide the document — that also hid the header menu.
+  Hide dropdown panels only. Superfish adds .sub-menu to the top-level <li>s,
+  so a bare .sub-menu { display:none } hides the whole header nav.
 --}}
 <style>
     .hide { display: none !important; }
-    .sub-menu,
+    ul.sub-menu,
     .menu-dropdown { display: none; }
     [x-cloak] { display: none !important; }
     @@media (min-width: 1280px) {
