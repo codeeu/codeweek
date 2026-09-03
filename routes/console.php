@@ -22,12 +22,8 @@ Schedule::command('notify:administrators')->hourlyAt(30);
 
 Schedule::command('rss:meetandcode')->hourlyAt(5);
 
-// Keep legacy per-city German feeds (no-op while they return [] / 404).
-Schedule::command('api:germany')->hourlyAt(10);
-
-// New central codeweek.de export (single URL). Uses source_ref "codeweek-de:{uid}"
-// so it does not overwrite legacy "berlin:{uid}" / "hamburg:{uid}" events.
-Schedule::command('api:germany-central --import')->hourlyAt(15);
+// Central codeweek.de export only (legacy per-city feeds retired by Datenfreunde).
+Schedule::command('api:germany-central --import')->hourlyAt(10);
 
 Schedule::command('magic:key')->hourlyAt(13);
 
