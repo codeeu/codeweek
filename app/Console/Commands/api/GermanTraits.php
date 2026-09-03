@@ -66,6 +66,8 @@ trait GermanTraits
                     'themes'   => trim(implode(',', \Illuminate\Support\Arr::pluck($item['themes'] ?? [], 'identifier'))),
                     'audience' => trim(implode(',', \Illuminate\Support\Arr::pluck($item['audience'] ?? [], 'identifier'))),
 
+                    'leading_teacher_tag' => trim((string) ($item['leading_teacher_tag'] ?? '')) ?: null,
+
                     'last_updated_at' => now(),
                 ];
 
@@ -167,6 +169,9 @@ trait GermanTraits
                     'language'      => 'de',
                     'codeweek_for_all_participation_code' => "cw-$city",
                     'mass_added_for' => 'API codeweek_de',
+                    'leading_teacher_tag' => ! empty(trim((string) ($this->leading_teacher_tag ?? '')))
+                        ? trim((string) $this->leading_teacher_tag)
+                        : null,
                     // minimal linkage
                     'source_ref'     => $sourceRef,
                     'source_synced_at'=> now(),
@@ -212,6 +217,11 @@ trait GermanTraits
 
             if (empty($event->location) && !empty($this->location)) {
                 $dirty['location'] = (string)$this->location;
+            }
+
+            $leadingTeacherTag = trim((string) ($this->leading_teacher_tag ?? ''));
+            if ($leadingTeacherTag !== '' && $event->leading_teacher_tag !== $leadingTeacherTag) {
+                $dirty['leading_teacher_tag'] = $leadingTeacherTag;
             }
 
             if (!empty($dirty)) {
