@@ -24,7 +24,11 @@ class CommunityController extends Controller
             ->where('avatar_path', '<>', 'images/default-avatar.png')
             ->paginate(10);
 
-        $teachers = User::role('leading teacher')->where('approved', 1)->with('city')->get();
+        $teachers = User::role('leading teacher')
+            ->where('approved', 1)
+            ->filter($filters)
+            ->with(['city', 'expertises'])
+            ->get();
 
         $countries = Country::withCoordinators();
 
@@ -33,6 +37,7 @@ class CommunityController extends Controller
             'countries' => $countries,
             'teachers' => $teachers,
             'country_iso' => request()->get('country_iso'),
+            'default_avatar' => asset('images/default.png'),
         ]);
     }
 }

@@ -342,6 +342,34 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     /**
+     * Public avatar URL for community pages. Falls back to a local placeholder
+     * when the stored path is empty or a known default (S3 defaults are often inaccessible).
+     */
+    public function communityAvatarUrl(?string $fallback = null): string
+    {
+        $fallback = $fallback ?: asset('images/default.png');
+        $raw = $this->attributes['avatar_path'] ?? null;
+
+        if ($raw === null || trim((string) $raw) === '') {
+            return $fallback;
+        }
+
+        $normalized = strtolower(trim((string) $raw));
+        $defaults = [
+            'avatars/default_avatar.png',
+            'avatars/default.png',
+            'images/default-avatar.png',
+            'images/default.png',
+        ];
+
+        if (in_array($normalized, $defaults, true)) {
+            return $fallback;
+        }
+
+        return $this->avatar_path;
+    }
+
+    /**
      * Get the path to the user's avatar.
      *
      * @param string $avatar
