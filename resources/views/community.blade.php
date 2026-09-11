@@ -246,9 +246,10 @@
                     <div class="relative z-50 flex h-full gap-8 max-sm:w-full"
                          role="article" aria-labelledby="profile-name">
                        <img
-                            class="object-cover w-32 h-32"
-                            src="{{ $ambassador->avatar_path ?? asset('images/default.png') }}"
+                            class="object-cover w-32 h-32 bg-[#E8EDF6]"
+                            src="{{ $ambassador->communityAvatarUrl(asset('images/default.png')) }}"
                             alt="{{ $ambassador->fullName() }}"
+                            onerror="this.onerror=null;this.src='{{ asset('images/default.png') }}';"
                             >
                         <div class="flex flex-col justify-between flex-1">
                             <div class="flex flex-col gap-1 mt-1">
@@ -571,6 +572,7 @@
             var markers = {};
             var selectedMarker = null;
             var allTeachers = [];
+            var defaultAvatar = @json($default_avatar ?? asset('images/default.png'));
 
             // Function to populate teacher information in the right sidebar
             function populateTeacherInfo(teachers, city = null) {
@@ -642,9 +644,10 @@
                                     </a>
                                 </div>
                             </div>
-                            ${ teacher.avatar_path 
-                                ? `<img src="${teacher.avatar_path}" alt="Avatar" class="flex-shrink-0 object-cover w-[88px] h-[88px] border-2 border-[#DBECF0] border-solid rounded-full">`
-                                : '' }
+                            <img src="${teacher.avatar_path || defaultAvatar}"
+                                 alt=""
+                                 class="flex-shrink-0 object-cover w-[88px] h-[88px] border-2 border-[#DBECF0] border-solid rounded-full bg-[#E8EDF6]"
+                                 onerror="this.onerror=null;this.src=defaultAvatar;">
                         </li>
                     `;
                 });
@@ -709,21 +712,21 @@
                 mymap.setView([centerInfo.latitude, centerInfo.longitude], centerInfo.zoom);
             });
 
-            // Populate the global teachers array from PHP data
+            // Populate the global teachers array from PHP data (already filtered by country)
             @foreach ($teachers->groupBy('city_id') as $cityId => $teachersInCity)
                 @foreach ($teachersInCity as $teacher)
                     allTeachers.push({
-                        firstname: "{{ $teacher->firstname }}",
-                        lastname: "{{ $teacher->lastname }}",
-                        email: "{{ $teacher->email }}",
-                        country_iso: "{{ $teacher->country_iso }}",
-                        twitter: "{{ $teacher->twitter }}",
-                        website: "{{ $teacher->website }}",
+                        firstname: @json($teacher->firstname),
+                        lastname: @json($teacher->lastname),
+                        email: @json($teacher->email),
+                        country_iso: @json($teacher->country_iso),
+                        twitter: @json($teacher->twitter),
+                        website: @json($teacher->website),
                         bio: @json($teacher->bio),
-                        avatar_path: "{{ $teacher->avatar_path }}",
-                        city: "{{ $teacher->city->city ?? 'N/A' }}",
-                        latitude: "{{ $teacher->city->latitude ?? '' }}",
-                        longitude: "{{ $teacher->city->longitude ?? '' }}",
+                        avatar_path: @json($teacher->communityAvatarUrl($default_avatar)),
+                        city: @json($teacher->city->city ?? 'N/A'),
+                        latitude: @json($teacher->city->latitude ?? ''),
+                        longitude: @json($teacher->city->longitude ?? ''),
                         expertises: @json($teacher->expertises->pluck('name')->toArray())
                     });
                 @endforeach
@@ -758,15 +761,15 @@
                     var teacherList = [
                         @foreach ($teachersInCity as $teacher)
                             {
-                                firstname: "{{ $teacher->firstname }}",
-                                lastname: "{{ $teacher->lastname }}",
-                                email: "{{ $teacher->email }}",
-                                country_iso: "{{ $teacher->country_iso }}",
-                                twitter: "{{ $teacher->twitter }}",
-                                website: "{{ $teacher->website }}",
+                                firstname: @json($teacher->firstname),
+                                lastname: @json($teacher->lastname),
+                                email: @json($teacher->email),
+                                country_iso: @json($teacher->country_iso),
+                                twitter: @json($teacher->twitter),
+                                website: @json($teacher->website),
                                 bio: @json($teacher->bio),
-                                avatar_path: "{{ $teacher->avatar_path }}",
-                                city: "{{ $teacher->city->city ?? 'N/A' }}",
+                                avatar_path: @json($teacher->communityAvatarUrl($default_avatar)),
+                                city: @json($teacher->city->city ?? 'N/A'),
                                 expertises: @json($teacher->expertises->pluck('name')->toArray())
                             },
                         @endforeach
