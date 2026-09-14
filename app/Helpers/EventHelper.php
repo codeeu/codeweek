@@ -154,10 +154,9 @@ class EventHelper
         $events = Event::where([
             'activity_type' => 'open-online',
             'status' => 'APPROVED',
-            'highlighted_status' => 'FEATURED',
         ])
-            ->where('start_date', '>=', \Carbon\Carbon::now()->subDays(15))->where('end_date', '>=', \Illuminate\Support\Carbon::now())
-//            ->where('start_date', '>=', Carbon::now()->subDays(30))
+            ->where('start_date', '>=', Carbon::now()->subDays(15))
+            ->where('end_date', '>=', Carbon::now())
             ->orderBy('start_date')
             ->get();
 
