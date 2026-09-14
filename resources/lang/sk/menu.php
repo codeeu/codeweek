@@ -51,7 +51,7 @@ return [
     'coding@home' => 'Kódovanie@Domov',
     'values' => 'Naše hodnoty',
     'online_events' => 'Online aktivity',
-    'featured_activities' => 'Vybrané aktivity',
+    'featured_activities' => 'Online aktivity',
     'codeweek2020' => 'Ročník 2020',
     'register_activity' => 'Registruj aktivitu',
     'select_language' => 'Vyberte jazyk',

@@ -52,7 +52,7 @@ return [
     'coding@home' => 'Koodaus@Kotiin',
     'values' => 'Meidän arvomme',
     'online_events' => 'Online-toiminta',
-    'featured_activities' => 'Avoimet aktiviteetit',
+    'featured_activities' => 'Online-toiminta',
     'codeweek2020' => 'Versio 2020',
     'register_activity' => 'Rekisteröi toiminta',
     'select_language' => 'Valitse kieli',

@@ -52,7 +52,7 @@ return [
     'coding@home' => 'Κωδικοποίηση@Σπίτι',
     'values' => 'Oι αξίες μας',
     'online_events' => 'Διαδικτυακές Δραστηριότητες',
-    'featured_activities' => 'Επιλεγμένες Δραστηριότητες',
+    'featured_activities' => 'Διαδικτυακές Δραστηριότητες',
     'codeweek2020' => 'Διοργάνωση 2020',
     'register_activity' => 'Καταχώρηση Δραστηριότητας',
     'select_language' => 'Επιλέξτε γλώσσα',

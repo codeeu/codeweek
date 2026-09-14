@@ -80,7 +80,7 @@
                         <img src="/images/arrow-right-icon.svg" class="menu-title-icon" />
                       </li>
                       <li><a class="cookweek-link hover-underline" href="{{route('events_map')}}">@lang('menu.map')</a></li>
-                      <li><a class="cookweek-link hover-underline" href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
+                      <li><a class="cookweek-link hover-underline" href="{{route('online_activities')}}">@lang('menu.featured_activities')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
                       <li><a class="cookweek-link hover-underline" href="{{route('guide')}}">@lang('menu.guide_on_activities')</a></li>
