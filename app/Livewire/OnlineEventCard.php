@@ -37,7 +37,8 @@ class OnlineEventCard extends Component
         $this->authorize('promote', $this->event);
         Log::info('going to promote');
 
-        return $this->event->promote();
+        $this->event->promote();
+        $this->event->refresh();
     }
 
     public function feature()
@@ -45,7 +46,8 @@ class OnlineEventCard extends Component
         $this->authorize('feature', $this->event);
         Log::info('going to feature');
 
-        return $this->event->feature();
+        $this->event->feature();
+        $this->event->refresh();
     }
 
     public function setLanguage($language)
