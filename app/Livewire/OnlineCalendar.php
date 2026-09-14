@@ -18,7 +18,7 @@ class OnlineCalendar extends Component
 
     public $selectedMonth;
 
-    public $selectedDate;
+    public $selectedDate = 'all';
 
     public $months = [];
 
@@ -26,8 +26,7 @@ class OnlineCalendar extends Component
     {
         $this->selectedYear = Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
-        $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
-        // Default to all languages so the list is not silently reduced/restored by locale.
+        $this->selectedDate = 'all';
         $this->selectedLanguage = '';
 
         $this->months = $this->baseQuery()
@@ -48,13 +47,6 @@ class OnlineCalendar extends Component
             })
             ->values()
             ->toArray();
-
-        if (! empty($this->months)) {
-            $parts = explode('/', $this->months[0]['id']);
-            $this->selectedMonth = (int) $parts[0];
-            $this->selectedYear = (int) ($parts[1] ?? $this->selectedYear);
-            $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
-        }
     }
 
     public function updatedSelectedDate(): void
@@ -69,15 +61,18 @@ class OnlineCalendar extends Component
 
     public function render()
     {
-        $parts = explode('/', (string) $this->selectedDate);
-        $this->selectedMonth = (int) ($parts[0] ?: $this->selectedMonth);
-        $this->selectedYear = (int) ($parts[1] ?? $this->selectedYear);
+        $query = $this->baseQuery()->orderBy('start_date');
 
-        $events = $this->baseQuery()
-            ->whereMonth('start_date', $this->selectedMonth)
-            ->whereYear('start_date', $this->selectedYear)
-            ->orderBy('start_date')
-            ->get();
+        if ($this->selectedDate && $this->selectedDate !== 'all') {
+            $parts = explode('/', (string) $this->selectedDate);
+            $this->selectedMonth = (int) ($parts[0] ?: $this->selectedMonth);
+            $this->selectedYear = (int) ($parts[1] ?? $this->selectedYear);
+
+            $query->whereMonth('start_date', $this->selectedMonth)
+                ->whereYear('start_date', $this->selectedYear);
+        }
+
+        $events = $query->get();
 
         $events->each(function ($event) {
             $event->title = str_limit($event->title, 50);
@@ -113,13 +108,17 @@ class OnlineCalendar extends Component
             ->toArray();
 
         $totalUpcoming = $this->baseQuery()->count();
+        $monthLabel = $this->selectedDate === 'all' || ! $this->selectedDate
+            ? 'all upcoming months'
+            : Carbon::createFromDate($this->selectedYear, $this->selectedMonth, 1)->format('F Y');
 
         return view('livewire.online-calendar', [
             'countryNames' => $this->getCountryNamesFromEvents($events),
             'languages' => $languages,
-            'filteredEvents' => $filteredEvents->paginate(50),
+            'filteredEvents' => $filteredEvents->paginate(24),
             'totalUpcoming' => $totalUpcoming,
             'visibleCount' => $filteredEvents->count(),
+            'monthLabel' => $monthLabel,
         ]);
     }
 
