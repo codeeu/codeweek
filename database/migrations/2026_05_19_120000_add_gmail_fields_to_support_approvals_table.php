@@ -52,6 +52,15 @@ return new class extends Migration {
             return;
         }
 
+        // SQLite refuses to drop a column while an index still references it.
+        foreach (['gmail_thread_id', 'gmail_message_id', 'notify_email'] as $column) {
+            if (Schema::hasColumn('support_approvals', $column)) {
+                Schema::table('support_approvals', function (Blueprint $table) use ($column) {
+                    $table->dropIndex('support_approvals_'.$column.'_index');
+                });
+            }
+        }
+
         Schema::table('support_approvals', function (Blueprint $table) {
             $columns = array_filter([
                 Schema::hasColumn('support_approvals', 'gmail_thread_id') ? 'gmail_thread_id' : null,

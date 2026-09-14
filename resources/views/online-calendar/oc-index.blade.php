@@ -49,9 +49,15 @@
             </div>
         </div>
     </section>
+</section>
+@endsection
 
+{{-- Rendered outside <main id="app"> on purpose. Vue mounts there with the runtime
+     compiler, which clears the container and rebuilds every node from the server HTML,
+     discarding Livewire's event listeners so the filters stop responding. --}}
+@section('non-vue-content')
+<section class="font-['Blinker'] overflow-hidden">
     @livewire('online-calendar')
-
 </section>
 @endsection
 
