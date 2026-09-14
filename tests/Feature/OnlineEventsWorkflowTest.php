@@ -257,6 +257,45 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
+    public function featured_activities_month_filter_only_shows_events_for_selected_month(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $october = Carbon::now()->addYear()->month(10)->startOfMonth();
+        $november = Carbon::now()->addYear()->month(11)->startOfMonth();
+
+        $octoberEvent = \App\Event::factory()->create([
+            'start_date' => $october->copy()->addDays(5),
+            'end_date' => $october->copy()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'language' => ['de'],
+            'title' => 'October Open Online Unique',
+        ]);
+
+        $novemberEvent = \App\Event::factory()->create([
+            'start_date' => $november->copy()->addDays(5),
+            'end_date' => $november->copy()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'language' => ['fr'],
+            'title' => 'November Open Online Unique',
+        ]);
+
+        \Livewire\Livewire::test(\App\Livewire\OnlineCalendar::class)
+            ->set('selectedDate', '10/'.$october->year)
+            ->assertSee($octoberEvent->title)
+            ->assertDontSee($novemberEvent->title)
+            ->set('selectedDate', '11/'.$november->year)
+            ->assertSee($novemberEvent->title)
+            ->assertDontSee($octoberEvent->title)
+            ->set('selectedLanguage', 'fr')
+            ->assertSee($novemberEvent->title)
+            ->set('selectedLanguage', 'de')
+            ->assertDontSee($novemberEvent->title);
+    }
+
+    #[Test]
     public function promoted_event_creates_notification_for_administrators(): void
     {
         $this->seed('RolesAndPermissionsSeeder');

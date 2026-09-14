@@ -7,25 +7,33 @@
                     Month
                 </label>
                 <div class="dropdown-datepicker relative">
-                    <img src="/images/educational-resources/fi_calendar.svg" class="absolute top-1/2 left-4 -translate-y-1/2 z-[999]" />
-                    <select-field
+                    <img src="/images/educational-resources/fi_calendar.svg" class="absolute top-1/2 left-4 -translate-y-1/2 z-10 pointer-events-none" />
+                    <select
+                        id="selectedDate"
                         wire:model.live="selectedDate"
-                        v-model="selectedDate"
-                        placeholder="Select month"
-                        :options="{{ json_encode($months) }}"
-                    ></select-field>
+                        class="w-full appearance-none rounded-full border border-slate-200 bg-white py-3 pl-12 pr-10 text-slate-500 font-semibold focus:outline-none focus:ring-2 focus:ring-[#1C4DA1]"
+                    >
+                        @forelse($months as $month)
+                            <option value="{{ $month['id'] }}">{{ $month['name'] }}</option>
+                        @empty
+                            <option value="{{ $selectedDate }}">Select month</option>
+                        @endforelse
+                    </select>
                 </div>
             </div>
             <div class="w-full md:w-[260px]">
-                <label class="block text-default text-slate-500 mb-2" for="language">
+                <label class="block text-default text-slate-500 mb-2" for="selectedLanguage">
                     Language
                 </label>
-                <select-field
+                <select
+                    id="selectedLanguage"
                     wire:model.live="selectedLanguage"
-                    v-model="selectedLanguage"
-                    placeholder="Select language"
-                    :options="{{ json_encode($languages) }}"
-                ></select-field>
+                    class="w-full appearance-none rounded-full border border-slate-200 bg-white py-3 px-4 text-slate-500 font-semibold focus:outline-none focus:ring-2 focus:ring-[#1C4DA1]"
+                >
+                    @foreach($languages as $language)
+                        <option value="{{ $language['id'] }}">{{ $language['name'] }}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
     </div>
