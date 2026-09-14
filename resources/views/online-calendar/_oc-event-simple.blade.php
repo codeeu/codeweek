@@ -13,13 +13,11 @@
         </div>
 
         <div class="flex gap-2 flex-wrap mb-2">
-            @if($event->language)
-                @foreach($event->languages as $language)
-                    <span class="flex items-center gap-2 py-1 px-3 text-sm font-semibold rounded-full whitespace-nowrap leading-4 bg-light-blue-100 text-slate-500">
-                        {{__("base.languages.{$language}")}}
-                    </span>
-                @endforeach
-            @endif
+            @foreach($event->display_languages as $language)
+                <span class="flex items-center gap-2 py-1 px-3 text-sm font-semibold rounded-full whitespace-nowrap leading-4 bg-light-blue-100 text-slate-500">
+                    {{__("base.languages.{$language}")}}
+                </span>
+            @endforeach
         </div>
 
 

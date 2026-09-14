@@ -1,4 +1,3 @@
-
 <section class="bg-light-blue">
     <div class="py-10 flex md:justify-center codeweek-container">
         <div class="flex flex-col md:flex-row gap-4 w-full md:w-fit">
@@ -37,13 +36,13 @@
         </div>
     </div>
 
-    <section class="relative w-full pt-10 md:pt-32">
-        <div class="absolute top-0 w-full h-64 bg-yellow-50 md:hidden" style="clip-path: ellipse(100% 90% at 50% 90%)" ></div>
-        <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(75% 90% at 50% 90%)" ></div>
-        <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(70% 90% at 50% 90%)" ></div>
-        <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden xl:block" style="clip-path: ellipse(65% 90% at 50% 90%)" ></div>
+    <div class="relative w-full pt-10 md:pt-32">
+        <div class="absolute top-0 w-full h-64 bg-yellow-50 md:hidden" style="clip-path: ellipse(100% 90% at 50% 90%)"></div>
+        <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden md:block lg:hidden" style="clip-path: ellipse(75% 90% at 50% 90%)"></div>
+        <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(70% 90% at 50% 90%)"></div>
+        <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden xl:block" style="clip-path: ellipse(65% 90% at 50% 90%)"></div>
         <div class="bg-yellow-50">
-            <div class="codeweek-container-lg relative pt-10 pb-16 md:pb-28" wire:key="calendar-{{ $selectedDate }}-{{ $selectedLanguage }}-{{ $filteredEvents->currentPage() }}">
+            <div class="codeweek-container-lg relative pt-10 pb-16 md:pb-28">
                 <p class="text-center text-slate-500 text-lg mb-8">
                     Showing {{ $visibleCount }} of {{ $totalUpcoming }} upcoming open online activities
                     for {{ $monthLabel }}
