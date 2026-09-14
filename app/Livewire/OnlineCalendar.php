@@ -90,7 +90,7 @@ class OnlineCalendar extends Component
         $languages = $this->baseQuery()
             ->get(['language'])
             ->flatMap(function ($event) {
-                return $this->normalizedLanguagesForEvent($event);
+                return $event->display_languages;
             })
             ->unique()
             ->sort()
@@ -134,81 +134,13 @@ class OnlineCalendar extends Component
 
     private function eventMatchesLanguage($event, string $selectedLanguage): bool
     {
-        $selected = $this->normalizeLanguageCode($selectedLanguage);
+        $selected = Event::normalizeLanguageCode($selectedLanguage);
 
         if ($selected === null) {
             return false;
         }
 
-        return in_array($selected, $this->normalizedLanguagesForEvent($event), true);
-    }
-
-    private function normalizedLanguagesForEvent($event): array
-    {
-        $raw = $event->languages ?? $event->language ?? [];
-
-        if (is_string($raw)) {
-            $trimmed = trim($raw);
-            if ($trimmed === '') {
-                return [];
-            }
-
-            if (str_starts_with($trimmed, '[')) {
-                $decoded = json_decode($trimmed, true);
-                $raw = is_array($decoded) ? $decoded : preg_split('/\s*,\s*/', $trimmed);
-            } else {
-                $raw = preg_split('/\s*,\s*/', $trimmed);
-            }
-        }
-
-        if (! is_array($raw)) {
-            $raw = [$raw];
-        }
-
-        return collect($raw)
-            ->map(fn ($language) => $this->normalizeLanguageCode(is_string($language) ? $language : null))
-            ->filter()
-            ->unique()
-            ->values()
-            ->all();
-    }
-
-    private function normalizeLanguageCode(?string $code): ?string
-    {
-        if ($code === null) {
-            return null;
-        }
-
-        $code = strtolower(trim($code));
-        $code = trim($code, "\"'[] ");
-
-        if ($code === '') {
-            return null;
-        }
-
-        $aliases = [
-            'eng' => 'en',
-            'deu' => 'de',
-            'ger' => 'de',
-            'fra' => 'fr',
-            'fre' => 'fr',
-            'spa' => 'es',
-            'ita' => 'it',
-            'nld' => 'nl',
-            'dut' => 'nl',
-            'pol' => 'pl',
-            'tur' => 'tr',
-            'ell' => 'el',
-            'gre' => 'el',
-        ];
-
-        $code = $aliases[$code] ?? $code;
-
-        if (! trans()->has('base.languages.'.$code)) {
-            return null;
-        }
-
-        return $code;
+        return in_array($selected, $event->display_languages, true);
     }
 
     private function getCountryNamesFromEvents($events)

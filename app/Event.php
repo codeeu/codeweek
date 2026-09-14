@@ -139,6 +139,61 @@ class Event extends Model
         return $this->language;
     }
 
+    /**
+     * Language codes that have a translation, so views never print raw keys
+     * such as "base.languages.eng" for legacy 3-letter codes.
+     */
+    public function getDisplayLanguagesAttribute(): array
+    {
+        $raw = $this->languages ?? [];
+
+        if (is_string($raw)) {
+            $raw = str_starts_with(trim($raw), '[')
+                ? (json_decode($raw, true) ?: [])
+                : explode(',', $raw);
+        }
+
+        return collect(is_array($raw) ? $raw : [$raw])
+            ->map(fn ($language) => self::normalizeLanguageCode(is_string($language) ? $language : null))
+            ->filter()
+            ->unique()
+            ->values()
+            ->all();
+    }
+
+    public static function normalizeLanguageCode(?string $code): ?string
+    {
+        if ($code === null) {
+            return null;
+        }
+
+        $code = strtolower(trim($code, " \t\n\r\0\x0B\"'[]"));
+
+        if ($code === '') {
+            return null;
+        }
+
+        $aliases = [
+            'eng' => 'en',
+            'deu' => 'de',
+            'ger' => 'de',
+            'fra' => 'fr',
+            'fre' => 'fr',
+            'spa' => 'es',
+            'ita' => 'it',
+            'nld' => 'nl',
+            'dut' => 'nl',
+            'pol' => 'pl',
+            'tur' => 'tr',
+            'ell' => 'el',
+            'gre' => 'el',
+        ];
+
+        $code = $aliases[$code] ?? $code;
+
+        return trans()->has('base.languages.'.$code) ? $code : null;
+    }
+
     public function getUrlAttribute() {
         if (!empty($this->slug)) {
             return route('view_event', [
