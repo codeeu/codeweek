@@ -257,6 +257,28 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
+    public function featured_activities_calendar_renders_outside_the_vue_root(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $html = $this->get('/featured-activities')->assertStatus(200)->getContent();
+
+        $nonVueStart = strpos($html, '<main id="non-vue"');
+        $component = strpos($html, 'wire:snapshot');
+
+        $this->assertNotFalse($nonVueStart, 'Layout should expose the non-vue region.');
+        $this->assertNotFalse($component, 'Calendar component should render.');
+
+        // Vue mounts on <main id="app"> with the runtime compiler, which clears the
+        // container and rebuilds every node, stripping Livewire's event listeners.
+        $this->assertGreaterThan(
+            $nonVueStart,
+            $component,
+            'The calendar must render inside <main id="non-vue">, otherwise Vue destroys its Livewire bindings and the filters stop responding.'
+        );
+    }
+
+    #[Test]
     public function featured_activities_month_filter_only_shows_events_for_selected_month(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
