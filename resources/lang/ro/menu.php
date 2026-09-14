@@ -52,7 +52,7 @@ return [
     'coding@home' => 'Codare@Acasă',
     'values' => 'Valorile noastre',
     'online_events' => 'Activități online',
-    'featured_activities' => 'Activități prevăzute',
+    'featured_activities' => 'Activități online',
     'codeweek2020' => 'Ediția 2020',
     'register_activity' => 'Înregistrează o activitate',
     'select_language' => 'Selectați limba',

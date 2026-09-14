@@ -52,7 +52,7 @@ return [
     'coding@home' => 'Kodning@Hjem',
     'values' => 'Vores værdier',
     'online_events' => 'Online aktiviteter',
-    'featured_activities' => 'Fremhævede aktiviteter',
+    'featured_activities' => 'Online aktiviteter',
     'codeweek2020' => '2020 udgaven',
     'register_activity' => 'Registrer aktivitet',
     'select_language' => 'Vælg sprog',

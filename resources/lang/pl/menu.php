@@ -51,7 +51,7 @@ return [
     'coding@home' => 'Kodowanie w domu',
     'values' => 'Nasze wartości',
     'online_events' => 'Aktywności online',
-    'featured_activities' => 'Polecane zajęcia',
+    'featured_activities' => 'Aktywności online',
     'codeweek2020' => 'Edycja 2020',
     'register_activity' => 'Zarejestruj aktywność',
     'select_language' => 'Wybierz język',

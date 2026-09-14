@@ -55,7 +55,7 @@ return [
     'coding@home' => 'Coding@Home',
     'values' => 'Our values',
     'online_events' => 'Online Activities',
-    'featured_activities' => 'Featured Online Activities',
+    'featured_activities' => 'Online Activities',
     'codeweek2020' => '2020 Edition',
     'register_activity' => 'Register activity',
     'select_language' => 'Select language',
