@@ -95,10 +95,7 @@ class OnlineCalendar extends Component
         $languages = $this->baseQuery()
             ->get(['language'])
             ->flatMap(function ($event) {
-                return $event->languages ?? [];
-            })
-            ->filter(function ($language) {
-                return ! empty($language);
+                return $this->normalizedLanguagesForEvent($event);
             })
             ->unique()
             ->sort()
@@ -106,7 +103,7 @@ class OnlineCalendar extends Component
             ->map(function ($language) {
                 return [
                     'id' => $language,
-                    'name' => __("base.languages.{$language}"),
+                    'name' => __('base.languages.'.$language),
                 ];
             })
             ->prepend([
@@ -115,10 +112,14 @@ class OnlineCalendar extends Component
             ])
             ->toArray();
 
+        $totalUpcoming = $this->baseQuery()->count();
+
         return view('livewire.online-calendar', [
             'countryNames' => $this->getCountryNamesFromEvents($events),
             'languages' => $languages,
             'filteredEvents' => $filteredEvents->paginate(50),
+            'totalUpcoming' => $totalUpcoming,
+            'visibleCount' => $filteredEvents->count(),
         ]);
     }
 
@@ -134,17 +135,81 @@ class OnlineCalendar extends Component
 
     private function eventMatchesLanguage($event, string $selectedLanguage): bool
     {
-        $languages = $event->languages ?? [];
+        $selected = $this->normalizeLanguageCode($selectedLanguage);
 
-        if (! is_array($languages)) {
-            return strtolower((string) $languages) === strtolower($selectedLanguage);
+        if ($selected === null) {
+            return false;
         }
 
-        $normalized = array_map(static function ($language) {
-            return strtolower((string) $language);
-        }, $languages);
+        return in_array($selected, $this->normalizedLanguagesForEvent($event), true);
+    }
 
-        return in_array(strtolower($selectedLanguage), $normalized, true);
+    private function normalizedLanguagesForEvent($event): array
+    {
+        $raw = $event->languages ?? $event->language ?? [];
+
+        if (is_string($raw)) {
+            $trimmed = trim($raw);
+            if ($trimmed === '') {
+                return [];
+            }
+
+            if (str_starts_with($trimmed, '[')) {
+                $decoded = json_decode($trimmed, true);
+                $raw = is_array($decoded) ? $decoded : preg_split('/\s*,\s*/', $trimmed);
+            } else {
+                $raw = preg_split('/\s*,\s*/', $trimmed);
+            }
+        }
+
+        if (! is_array($raw)) {
+            $raw = [$raw];
+        }
+
+        return collect($raw)
+            ->map(fn ($language) => $this->normalizeLanguageCode(is_string($language) ? $language : null))
+            ->filter()
+            ->unique()
+            ->values()
+            ->all();
+    }
+
+    private function normalizeLanguageCode(?string $code): ?string
+    {
+        if ($code === null) {
+            return null;
+        }
+
+        $code = strtolower(trim($code));
+        $code = trim($code, "\"'[] ");
+
+        if ($code === '') {
+            return null;
+        }
+
+        $aliases = [
+            'eng' => 'en',
+            'deu' => 'de',
+            'ger' => 'de',
+            'fra' => 'fr',
+            'fre' => 'fr',
+            'spa' => 'es',
+            'ita' => 'it',
+            'nld' => 'nl',
+            'dut' => 'nl',
+            'pol' => 'pl',
+            'tur' => 'tr',
+            'ell' => 'el',
+            'gre' => 'el',
+        ];
+
+        $code = $aliases[$code] ?? $code;
+
+        if (! trans()->has('base.languages.'.$code)) {
+            return null;
+        }
+
+        return $code;
     }
 
     private function getCountryNamesFromEvents($events)
