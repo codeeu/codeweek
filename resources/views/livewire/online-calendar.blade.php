@@ -46,6 +46,10 @@
                     <div>
                         {{ $filteredEvents->links('vendor.pagination') }}
                     </div>
+                @else
+                    <p class="text-center text-slate-500 text-xl py-16">
+                        @lang('snippets.no-featured-activities')
+                    </p>
                 @endif
             </div>
         </div>
