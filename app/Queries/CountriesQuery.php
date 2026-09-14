@@ -54,7 +54,7 @@ class CountriesQuery
             ->select('events.country_iso as iso', 'countries.name', DB::raw('count(events.id) as total'), DB::raw('MIN(events.start_date) as start_date'))
             ->join('countries', 'events.country_iso', '=', 'countries.iso')
             ->where('events.status', '=', 'APPROVED')
-            ->where('events.highlighted_status', '=', $highlighted_status)
+            ->where('events.highlighted_status', '=', strtoupper($highlighted_status))
             ->whereNull('events.deleted_at')
             ->where('events.activity_type', 'open-online')
             ->where('events.start_date', '>=', Carbon::now()->subDays(15))
