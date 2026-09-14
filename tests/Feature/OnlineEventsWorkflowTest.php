@@ -213,24 +213,47 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
-    public function featured_activities_page_shows_featured_online_events_in_future_years(): void
+    public function featured_activities_page_shows_all_upcoming_open_online_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
         $nextYear = Carbon::now()->addYear();
 
-        $featuredEvent = \App\Event::factory()->create([
+        $openOnlineEvent = \App\Event::factory()->create([
             'start_date' => $nextYear->copy()->startOfMonth()->addDays(5),
             'end_date' => $nextYear->copy()->startOfMonth()->addDays(6),
             'status' => 'APPROVED',
             'activity_type' => 'open-online',
-            'highlighted_status' => 'FEATURED',
+            'highlighted_status' => 'NONE',
             'language' => ['en'],
+            'title' => 'Open Online Test Activity XYZ',
+        ]);
+
+        $inviteOnlyEvent = \App\Event::factory()->create([
+            'start_date' => $nextYear->copy()->startOfMonth()->addDays(5),
+            'end_date' => $nextYear->copy()->startOfMonth()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'invite-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Invite Only Should Stay Hidden',
+        ]);
+
+        $pendingEvent = \App\Event::factory()->create([
+            'start_date' => $nextYear->copy()->startOfMonth()->addDays(5),
+            'end_date' => $nextYear->copy()->startOfMonth()->addDays(6),
+            'status' => 'PENDING',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Pending Open Online Hidden',
         ]);
 
         $this->get('/featured-activities')
             ->assertStatus(200)
-            ->assertSee($featuredEvent->title);
+            ->assertSee($openOnlineEvent->title)
+            ->assertDontSee($inviteOnlyEvent->title)
+            ->assertDontSee($pendingEvent->title);
     }
 
     #[Test]
