@@ -4,9 +4,7 @@ namespace App\Livewire;
 
 use App\Country;
 use App\Event;
-use App\Queries\CountriesQuery;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\App;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -14,11 +12,7 @@ class OnlineCalendar extends Component
 {
     use WithPagination;
 
-    public $events;
-
-    private $filteredEvents;
-
-    public $selectedLanguage;
+    public $selectedLanguage = '';
 
     public $selectedYear;
 
@@ -26,21 +20,15 @@ class OnlineCalendar extends Component
 
     public $selectedDate;
 
-    public $months;
-
-    public $listeners = ['eventsUpdated' => 'render'];
-
-    private $whereClause = [
-        'activity_type' => 'open-online',
-        'status' => 'APPROVED',
-    ];
+    public $months = [];
 
     public function mount()
     {
-        $this->selectedLanguage = strtolower(App::getLocale());
         $this->selectedYear = Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
         $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
+        // Default to all languages so the list is not silently reduced/restored by locale.
+        $this->selectedLanguage = '';
 
         $this->months = $this->baseQuery()
             ->orderBy('start_date')
@@ -69,40 +57,43 @@ class OnlineCalendar extends Component
         }
     }
 
+    public function updatedSelectedDate(): void
+    {
+        $this->resetPage();
+    }
+
+    public function updatedSelectedLanguage(): void
+    {
+        $this->resetPage();
+    }
+
     public function render()
     {
         $parts = explode('/', (string) $this->selectedDate);
         $this->selectedMonth = (int) ($parts[0] ?: $this->selectedMonth);
         $this->selectedYear = (int) ($parts[1] ?? $this->selectedYear);
 
-        $this->events = $this->baseQuery()
+        $events = $this->baseQuery()
             ->whereMonth('start_date', $this->selectedMonth)
             ->whereYear('start_date', $this->selectedYear)
             ->orderBy('start_date')
             ->get();
 
-        $this->events->map(function ($event) {
+        $events->each(function ($event) {
             $event->title = str_limit($event->title, 50);
             $event->start_date = Carbon::parse($event->start_date);
         });
 
-        if ($this->selectedLanguage !== '') {
-            $this->filteredEvents = $this->events->filter(function ($event) {
-                return $this->eventMatchesLanguage($event, $this->selectedLanguage);
-            });
-
-            if ($this->filteredEvents->isEmpty()) {
-                $this->filteredEvents = $this->events;
-            }
+        if ($this->selectedLanguage !== '' && $this->selectedLanguage !== null) {
+            $filteredEvents = $events->filter(function ($event) {
+                return $this->eventMatchesLanguage($event, (string) $this->selectedLanguage);
+            })->values();
         } else {
-            $this->filteredEvents = $this->events;
+            $filteredEvents = $events;
         }
 
-        $countries = CountriesQuery::withOnlineEvents('NONE');
-
-        $countryNames = $this->getCountryNamesFromEvents($this->events);
-
-        $languages = $this->events
+        $languages = $this->baseQuery()
+            ->get(['language'])
             ->flatMap(function ($event) {
                 return $event->languages ?? [];
             })
@@ -110,6 +101,7 @@ class OnlineCalendar extends Component
                 return ! empty($language);
             })
             ->unique()
+            ->sort()
             ->values()
             ->map(function ($language) {
                 return [
@@ -124,16 +116,18 @@ class OnlineCalendar extends Component
             ->toArray();
 
         return view('livewire.online-calendar', [
-            'countries' => $countries,
-            'countryNames' => $countryNames,
+            'countryNames' => $this->getCountryNamesFromEvents($events),
             'languages' => $languages,
-            'filteredEvents' => $this->filteredEvents->paginate(50),
+            'filteredEvents' => $filteredEvents->paginate(50),
         ]);
     }
 
     private function baseQuery()
     {
-        return Event::where($this->whereClause)
+        return Event::where([
+            'activity_type' => 'open-online',
+            'status' => 'APPROVED',
+        ])
             ->where('start_date', '>=', Carbon::now()->firstOfMonth())
             ->where('end_date', '>=', Carbon::now());
     }
@@ -143,16 +137,16 @@ class OnlineCalendar extends Component
         $languages = $event->languages ?? [];
 
         if (! is_array($languages)) {
-            return $languages == $selectedLanguage;
+            return strtolower((string) $languages) === strtolower($selectedLanguage);
         }
 
-        return in_array($selectedLanguage, $languages, true)
-            || in_array(strtolower($selectedLanguage), array_map('strtolower', $languages), true);
+        $normalized = array_map(static function ($language) {
+            return strtolower((string) $language);
+        }, $languages);
+
+        return in_array(strtolower($selectedLanguage), $normalized, true);
     }
 
-    /**
-     * @return mixed
-     */
     private function getCountryNamesFromEvents($events)
     {
         $country_codes = $events
@@ -161,10 +155,9 @@ class OnlineCalendar extends Component
             ->all();
 
         $countriesObjects = Country::whereIn('iso', $country_codes)->get();
-        $countryNames = $countriesObjects->mapWithKeys(function ($item) {
+
+        return $countriesObjects->mapWithKeys(function ($item) {
             return [$item['iso'] => __('countries.'.$item['name'])];
         });
-
-        return $countryNames;
     }
 }
