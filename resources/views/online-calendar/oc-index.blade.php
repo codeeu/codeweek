@@ -3,15 +3,15 @@
 @php
     $list = [
       (object) ['label' => 'Activities & Events', 'href' => '/add'],
-      (object) ['label' => 'Featured activities', 'href' => ''],
+      (object) ['label' => 'Online Activities', 'href' => ''],
     ];
 @endphp
 @section('layout.breadcrumb')
     @include('layout.breadcrumb', ['list' => $list])
 @endsection
 
-@section('title', 'Featured Coding Activities – Join Exciting Code Week Events')
-@section('description', 'Discover and participate in featured coding activities from EU Code Week. Find engaging projects and workshops near you!')
+@section('title', 'Online Activities – Join Exciting Code Week Events')
+@section('description', 'Discover and join upcoming EU Code Week online activities that welcome participants. Filter by language and month to find one that suits you!')
 
 @include('components.tailwind')
 @include('components.livewire')
@@ -27,7 +27,7 @@
                 <div class="home-activity codeweek-container-lg flex flex-col md:flex-row md:items-center duration-1000 gap-28 md:gap-4 xl:gap-28">
                     <div class="px-6 py-10 md:px-14 md:py-[4.5rem] bg-white rounded-[32px] z-10 relative">
                         <h2 class="text-dark-blue text-[30px] md:text-[60px] leading-9 md:leading-[72px] font-normal font-['Montserrat'] mb-4 max-md:max-w-full max-w-[530px]">
-                            Featured activities
+                            Online Activities
                         </h2>
                         <p class="text-xl font-normal md:text-2xl leading-8 text-slate-500 p-0 mb-0 max-md:max-w-full max-w-[637px]">
                             @lang('snippets.featured-activities')

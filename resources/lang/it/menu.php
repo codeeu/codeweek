@@ -51,7 +51,7 @@ return [
     'coding@home' => 'Codifica@Casa',
     'values' => 'Nostri valori',
      'online_events' => 'Attività online',
-    'featured_activities' => 'Attività in evidenza',
+    'featured_activities' => 'Attività online',
     'codeweek2020' => 'Edizione 2020',
     'register_activity' => "Registra un'attività",
     'select_language' => 'Seleziona la lingua',

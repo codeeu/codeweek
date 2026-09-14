@@ -52,7 +52,7 @@ return [
     'coding@home' => 'Programmieren zu Hause',
     'values' => 'Unsere Werte',
     'online_events' => 'Online-Aktivitäten',
-    'featured_activities' => 'Hervorgehobene Aktivitäten',
+    'featured_activities' => 'Online-Aktivitäten',
     'codeweek2020' => 'Ausgabe 2020',
     'register_activity' => 'Aktivität hinzufügen',
     'select_language' => 'Sprache auswählen',
