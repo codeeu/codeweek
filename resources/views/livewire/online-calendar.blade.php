@@ -45,6 +45,12 @@
         <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden xl:block" style="clip-path: ellipse(65% 90% at 50% 90%)" ></div>
         <div class="bg-yellow-50">
             <div class="codeweek-container-lg relative pt-10 pb-16 md:pb-28">
+                <p class="text-center text-slate-500 text-lg mb-8">
+                    Showing {{ $visibleCount }} of {{ $totalUpcoming }} upcoming open online activities
+                    @if($selectedDate)
+                        for {{ \Carbon\Carbon::createFromDate($selectedYear, $selectedMonth, 1)->format('F Y') }}
+                    @endif
+                </p>
                 @if(count($filteredEvents) > 0)
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-10">
                         @foreach($filteredEvents as $event)
