@@ -51,7 +51,7 @@ return [
     'coding@home' => 'Kodning@Hem',
     'values' => 'Våra värderingar',
     'online_events' => 'Onlineaktiviteter',
-    'featured_activities' => 'Utvalda aktiviteter',
+    'featured_activities' => 'Onlineaktiviteter',
     'codeweek2020' => '2020-upplagan',
     'register_activity' => 'Registrera aktivitet',
     'select_language' => 'Välj språk',

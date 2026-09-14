@@ -51,7 +51,7 @@ return [
     'coding@home' => 'Kodavimas@Pradžia',
     'values' => 'Mūsų principai',
     'online_events' => 'Veikla internete',
-    'featured_activities' => 'Rodoma veikla',
+    'featured_activities' => 'Veikla internete',
     'codeweek2020' => '2020 m. laida',
     'register_activity' => 'Užsiregistruoti veiklą',
     'select_language' => 'Pasirinkite kalbą',

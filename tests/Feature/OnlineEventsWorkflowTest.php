@@ -213,7 +213,7 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
-    public function featured_activities_page_shows_all_upcoming_open_online_events(): void
+    public function online_activities_page_shows_all_upcoming_open_online_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -249,7 +249,7 @@ final class OnlineEventsWorkflowTest extends TestCase
             'title' => 'Pending Open Online Hidden',
         ]);
 
-        $this->get('/featured-activities')
+        $this->get('/online-activities')
             ->assertStatus(200)
             ->assertSee($openOnlineEvent->title)
             ->assertDontSee($inviteOnlyEvent->title)
@@ -257,11 +257,11 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
-    public function featured_activities_calendar_renders_outside_the_vue_root(): void
+    public function online_activities_calendar_renders_outside_the_vue_root(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $html = $this->get('/featured-activities')->assertStatus(200)->getContent();
+        $html = $this->get('/online-activities')->assertStatus(200)->getContent();
 
         $nonVueStart = strpos($html, '<main id="non-vue"');
         $component = strpos($html, 'wire:snapshot');
@@ -279,7 +279,7 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
-    public function featured_activities_month_filter_only_shows_events_for_selected_month(): void
+    public function online_activities_month_filter_only_shows_events_for_selected_month(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -318,7 +318,7 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
-    public function featured_activities_page_lists_activities_already_under_way(): void
+    public function online_activities_page_lists_activities_already_under_way(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -342,7 +342,7 @@ final class OnlineEventsWorkflowTest extends TestCase
             'title' => 'Already Finished Open Online Activity',
         ]);
 
-        $this->get('/featured-activities')
+        $this->get('/online-activities')
             ->assertStatus(200)
             ->assertSee($ongoing->title)
             ->assertDontSee($finished->title);
@@ -380,6 +380,14 @@ final class OnlineEventsWorkflowTest extends TestCase
             $monthIds,
             'The month filter should not offer a past month just because an ongoing activity started then.'
         );
+    }
+
+    #[Test]
+    public function the_old_featured_activities_url_redirects_to_online_activities(): void
+    {
+        $this->get('/featured-activities')
+            ->assertStatus(301)
+            ->assertRedirect('/online-activities');
     }
 
     #[Test]

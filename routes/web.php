@@ -732,9 +732,10 @@ Route::get(
     [Codeweek4AllController::class, 'detail']
 )->name('codeweek4all_details');
 
-Route::get('/featured-activities', [OnlineEventsController::class, 'calendar'])->name(
-    'featured_activities'
+Route::get('/online-activities', [OnlineEventsController::class, 'calendar'])->name(
+    'online_activities'
 );
+Route::permanentRedirect('/featured-activities', '/online-activities');
 
 Route::get('/profile', function () {
     $data = ['profileUser' => Auth()->user()];

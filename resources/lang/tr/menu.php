@@ -54,7 +54,7 @@ return [
     'coding@home' => 'Coding@Home',
     'values' => 'Değerlerimiz',
     'online_events' => 'Çevrim içi Etkinlikler',
-    'featured_activities' => 'Öne Çıkan Etkinlikler',
+    'featured_activities' => 'Çevrim içi Etkinlikler',
     'codeweek2020' => '2020 Sürümü',
     'register_activity' => 'Etkinlik Kaydet',
     'select_language' => 'Dil seçin',
