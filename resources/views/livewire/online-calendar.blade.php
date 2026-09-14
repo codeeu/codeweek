@@ -13,11 +13,10 @@
                         wire:model.live="selectedDate"
                         class="w-full appearance-none rounded-full border border-slate-200 bg-white py-3 pl-12 pr-10 text-slate-500 font-semibold focus:outline-none focus:ring-2 focus:ring-[#1C4DA1]"
                     >
-                        @forelse($months as $month)
+                        <option value="all">All months</option>
+                        @foreach($months as $month)
                             <option value="{{ $month['id'] }}">{{ $month['name'] }}</option>
-                        @empty
-                            <option value="{{ $selectedDate }}">Select month</option>
-                        @endforelse
+                        @endforeach
                     </select>
                 </div>
             </div>
@@ -44,20 +43,20 @@
         <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden lg:block xl:hidden" style="clip-path: ellipse(70% 90% at 50% 90%)" ></div>
         <div class="absolute top-0 w-full h-64 bg-yellow-50 hidden xl:block" style="clip-path: ellipse(65% 90% at 50% 90%)" ></div>
         <div class="bg-yellow-50">
-            <div class="codeweek-container-lg relative pt-10 pb-16 md:pb-28">
+            <div class="codeweek-container-lg relative pt-10 pb-16 md:pb-28" wire:key="calendar-{{ $selectedDate }}-{{ $selectedLanguage }}-{{ $filteredEvents->currentPage() }}">
                 <p class="text-center text-slate-500 text-lg mb-8">
                     Showing {{ $visibleCount }} of {{ $totalUpcoming }} upcoming open online activities
-                    @if($selectedDate)
-                        for {{ \Carbon\Carbon::createFromDate($selectedYear, $selectedMonth, 1)->format('F Y') }}
-                    @endif
+                    for {{ $monthLabel }}
                 </p>
                 @if(count($filteredEvents) > 0)
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-10">
                         @foreach($filteredEvents as $event)
-                            @include('online-calendar._oc-event-simple')
+                            <div wire:key="event-{{ $event->id }}">
+                                @include('online-calendar._oc-event-simple')
+                            </div>
                         @endforeach
                     </div>
-                    <div>
+                    <div class="mt-10">
                         {{ $filteredEvents->links('vendor.pagination') }}
                     </div>
                 @else

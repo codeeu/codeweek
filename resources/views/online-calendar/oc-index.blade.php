@@ -16,7 +16,8 @@
 @include('components.tailwind')
 @include('components.livewire')
 
-@include('components.alpine')
+{{-- Do not include Alpine v2 here. Livewire 3 already ships Alpine v3;
+     loading Alpine v2 breaks Livewire DOM updates (filters appear to do nothing). --}}
 
 @section('content')
 <section id="codeweek-digital-girls" class="font-['Blinker'] overflow-hidden">
