@@ -33,16 +33,14 @@ class OnlineCalendar extends Component
             ->orderBy('start_date')
             ->get(['start_date'])
             ->groupBy(function ($event) {
-                $date = Carbon::parse($event->start_date);
-
-                return $date->month.'/'.$date->year;
+                return $this->effectiveStart($event->start_date)->format('n/Y');
             })
             ->map(function ($group, $id) {
-                $date = Carbon::parse($group->first()->start_date);
+                [$month, $year] = explode('/', $id);
 
                 return [
                     'id' => $id,
-                    'name' => $date->format('F').' '.$date->year,
+                    'name' => Carbon::createFromDate((int) $year, (int) $month, 1)->format('F Y'),
                 ];
             })
             ->values()
@@ -68,11 +66,22 @@ class OnlineCalendar extends Component
             $this->selectedMonth = (int) ($parts[0] ?: $this->selectedMonth);
             $this->selectedYear = (int) ($parts[1] ?? $this->selectedYear);
 
-            $query->whereMonth('start_date', $this->selectedMonth)
-                ->whereYear('start_date', $this->selectedYear);
+            $monthStart = Carbon::createFromDate($this->selectedYear, $this->selectedMonth, 1)->startOfMonth();
+
+            $query->where(function ($monthQuery) use ($monthStart) {
+                $monthQuery->whereBetween('start_date', [$monthStart, $monthStart->copy()->endOfMonth()]);
+
+                if ($monthStart->isSameMonth(Carbon::now())) {
+                    $monthQuery->orWhere('start_date', '<', $monthStart);
+                }
+            });
         }
 
-        $events = $query->get();
+        $events = $query->get()
+            ->sortBy(function ($event) {
+                return $this->effectiveStart($event->start_date)->getTimestamp();
+            })
+            ->values();
 
         $events->each(function ($event) {
             $event->title = str_limit($event->title, 50);
@@ -124,12 +133,24 @@ class OnlineCalendar extends Component
 
     private function baseQuery()
     {
+        // Only the end date gates the list: an activity that began earlier but has not
+        // finished is still open to participants.
         return Event::where([
             'activity_type' => 'open-online',
             'status' => 'APPROVED',
-        ])
-            ->where('start_date', '>=', Carbon::now()->firstOfMonth())
-            ->where('end_date', '>=', Carbon::now());
+        ])->where('end_date', '>=', Carbon::now());
+    }
+
+    /**
+     * Activities already under way are listed under the current month rather than the
+     * month they originally started in, which may be long past.
+     */
+    private function effectiveStart($startDate): Carbon
+    {
+        $start = Carbon::parse($startDate);
+        $currentMonth = Carbon::now()->firstOfMonth();
+
+        return $start->lessThan($currentMonth) ? $currentMonth : $start;
     }
 
     private function eventMatchesLanguage($event, string $selectedLanguage): bool
