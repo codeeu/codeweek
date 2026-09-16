@@ -78,7 +78,7 @@ The `composer-test.json` swap is the part to remember. It exists to strip the No
 
 CI triggers on pushes and pull requests for both `master` and `dev`. It previously only ran for `master`, so pull requests into `dev` ran no tests at all.
 
-Two tests fail on `master` for reasons unrelated to any recent change: `UserRestoreServiceTest` and `CommunityAmbassadorFilteringTest`, the latter because `database/factories/CityFactory.php` is still in the pre-Laravel-8 `$factory->define()` format. Everything else passes. Fix or quarantine these, because a suite that is normally red is a suite nobody reads.
+The suite is green. It was not when this handover started — two tests failed and five files were silently skipped — so if you see red, it is something you changed rather than inherited noise. Keep it that way: a suite that is normally red is a suite nobody reads. [11](11-testing-and-local-dev.md)
 
 An abandoned Travis configuration targeting PHP 7.3 has been removed, along with `.env.travis`. GitHub Actions is the only pipeline.
 

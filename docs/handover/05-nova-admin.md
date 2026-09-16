@@ -124,7 +124,7 @@ Ten actions in [app/Nova/Actions/](../../app/Nova/Actions).
 | Action | Attached to | Effect |
 |--------|-------------|--------|
 | `ApproveEvent` | `Event` | Calls `$model->approve()` — sets status and emails the organiser |
-| `RejectEvent` | `Event` | Calls `$model->reject()`. **No message field** — see below |
+| `RejectEvent` | `Event` | Calls `$model->reject($reason)` with a required reason — see below |
 | `BulkUploadMediaFiles` | `MediaUpload` | Multi-file upload to S3 |
 | `ExportHomeSlideLocaleOverrides` | `HomeSlide` | CSV export of slide translations |
 | `ImportHomeSlideLocaleOverrides` | `HomeSlide` | CSV import of slide translations |
@@ -132,11 +132,23 @@ Ten actions in [app/Nova/Actions/](../../app/Nova/Actions).
 | `ImportMatchmakingProfiles` | `MatchmakingProfile` | Bulk profile import |
 | `ApproveSupportApproval` | `SupportApproval` | Support copilot workflow |
 | `RejectSupportApproval` | `SupportApproval` | Support copilot workflow |
-### Rejecting through Nova loses the reason
+### Rejecting through Nova
 
-`RejectEvent` exposes no fields, so the `Moderation` record it creates has an empty `message`. The organiser gets a rejection with no explanation. The legacy Blade moderation screens at `/pending` and `/review` do capture a reason.
+`RejectEvent` used to expose no fields at all, so the `Moderation` record it wrote had an empty `message` and the organiser received a rejection email with no explanation, while the Blade screens at `/pending` and `/review` captured a reason. Ambassadors use both paths, so the two behaved differently for no reason anyone had chosen.
 
-**Guidance for ambassadors: use `/pending` and `/review` to reject, not Nova.** Or fix the action to include a message field. Either way, decide and communicate it, because right now the two paths behave differently and ambassadors use both.
+The action now requires a reason:
+
+```33:39:app/Nova/Actions/RejectEvent.php
+    public function fields(NovaRequest $request): array
+    {
+        return [
+            Textarea::make('Rejection reason', 'rejectionText')
+                ->rules('required', 'string', 'max:2000')
+                ->help('Sent to the organiser in the rejection email and stored on the activity.'),
+        ];
+```
+
+One difference remains, and it is not fixable in the action: **editing the Status field directly on the Event resource bypasses `approve()` and `reject()` entirely**, so no email is sent and no moderation record is written. Use the actions, not the dropdown. [14](14-accounts-and-moderation.md)
 
 ## Filters
 

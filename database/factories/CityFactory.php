@@ -1,13 +1,24 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\City::class, function () {
-    return [
-        'id' => $this->faker->numberBetween(1234567890, 9999999999),
-        'city' => $this->faker->city(),
-        'country' => $this->faker->country(),
-        'country_iso' => $this->faker->countryCode(),
-        'longitude' => $this->faker->longitude(),
-        'latitude' => $this->faker->latitude(),
-    ];
-});
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class CityFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'city' => $this->faker->city(),
+            'country' => $this->faker->country(),
+            'country_iso' => $this->faker->countryCode(),
+            'longitude' => $this->faker->longitude(),
+            'latitude' => $this->faker->latitude(),
+        ];
+    }
+}

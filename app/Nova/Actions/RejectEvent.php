@@ -8,6 +8,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Collection;
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Fields\ActionFields;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class RejectEvent extends Action
@@ -22,7 +23,7 @@ class RejectEvent extends Action
     public function handle(ActionFields $fields, Collection $models)
     {
         foreach ($models as $model) {
-            $model->reject();
+            $model->reject($fields->rejectionText);
         }
     }
 
@@ -31,6 +32,10 @@ class RejectEvent extends Action
      */
     public function fields(NovaRequest $request): array
     {
-        return [];
+        return [
+            Textarea::make('Rejection reason', 'rejectionText')
+                ->rules('required', 'string', 'max:2000')
+                ->help('Sent to the organiser in the rejection email and stored on the activity.'),
+        ];
     }
 }

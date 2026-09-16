@@ -66,4 +66,5 @@ return [
     'bring_codeweek_to_your_students' => 'Wassal il-Ġimgħa tal-Ikkowdjar lill-istudenti tiegħek',
     'or' => 'jew',
     'newsletter' => 'Bullettin',
+    'city_required_for_community_map' => 'Select your city so that you appear on the community map. Leading teachers without a city are not shown there.',
 ];

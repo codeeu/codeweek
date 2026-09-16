@@ -46,6 +46,25 @@ class LeadingTeachersTable extends DataTableComponent
                     }
                 }),
 
+            SelectFilter::make('City')
+                ->setFilterPillTitle('City')
+                ->setFilterPillValues([
+                    'missing' => 'Not set',
+                    'set' => 'Set',
+                ])
+                ->options([
+                    '' => 'All',
+                    'missing' => 'Not set',
+                    'set' => 'Set',
+                ])
+                ->filter(function(Builder $builder, string $value) {
+                    if ($value === 'missing') {
+                        $builder->whereNull('city_id');
+                    } elseif ($value === 'set') {
+                        $builder->whereNotNull('city_id');
+                    }
+                }),
+
         ];
     }
 
@@ -101,6 +120,9 @@ class LeadingTeachersTable extends DataTableComponent
                 ->searchable(),
             Column::make('Country','country_iso')
                 ->sortable(),
+            Column::make('City', 'city.city')
+                ->sortable()
+                ->searchable(),
             Column::make('email')
                 ->sortable()
                 ->searchable(),

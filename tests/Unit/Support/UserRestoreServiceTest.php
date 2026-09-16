@@ -39,6 +39,10 @@ class UserRestoreServiceTest extends TestCase
 
     public function test_user_restore_execute_restores_user(): void
     {
+        // Writes are refused while support_gmail.dry_run is on unless the call
+        // arrives via an approved email reply. Model a live configuration here.
+        config(['support_gmail.dry_run' => false]);
+
         /** @var User $u */
         $u = User::factory()->create(['email' => 'user2@example.com']);
         $u->delete();

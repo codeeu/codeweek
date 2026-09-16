@@ -224,7 +224,7 @@ Notes:
 
 ## Roles and permissions
 
-Managed by `spatie/laravel-permission`. Seeded across four seeders.
+Managed by `spatie/laravel-permission`. Seeded across four seeders. This section covers what the roles *are*; [14](14-accounts-and-moderation.md) covers how somebody gets one and what each role can actually do.
 
 From [database/seeders/RolesAndPermissionsSeeder.php](../../database/seeders/RolesAndPermissionsSeeder.php):
 
