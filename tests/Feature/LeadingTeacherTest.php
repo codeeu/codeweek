@@ -37,7 +37,7 @@ final class LeadingTeacherTest extends TestCase
 
         $this->assertFalse($user->leadingTeacher);
 
-        $city = create(\App\City::class, ['id' => 1004436363, 'city' => 'FooBarCity']);
+        $city = \App\City::factory()->create(['id' => 1004436363, 'city' => 'FooBarCity']);
         $level1 = create(\App\ResourceLevel::class, ['id' => 80, 'teach' => true]);
         $level2 = create(\App\ResourceLevel::class, ['id' => 85, 'teach' => true]);
         $subject1 = \App\ResourceSubject::factory()->create(['id' => 511]);

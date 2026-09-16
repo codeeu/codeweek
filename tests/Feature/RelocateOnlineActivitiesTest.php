@@ -3,12 +3,13 @@
 namespace Tests\Feature;
 
 use App\Event;
+use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-final class RelocateOnlineActivities extends TestCase
+final class RelocateOnlineActivitiesTest extends TestCase
 {
     use DatabaseMigrations;
 
