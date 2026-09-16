@@ -111,9 +111,10 @@ class Ambassador extends Resource
 
         //return $query->where('country_iso', "=", $request->user()->country_iso);
 
-        return $query->join('model_has_roles', 'users.id', '=', 'model_has_roles.model_id')
-            ->where('model_has_roles.role_id', '=', 4)
-            ->select('users.*');
-
+        // Matched by role name, not id: the previous `role_id = 4` only held while
+        // the seeders had run in their original order.
+        return $query->whereHas('roles', function ($roles) {
+            $roles->where('name', 'ambassador');
+        });
     }
 }
