@@ -34,10 +34,11 @@ Specifically:
 | 11 | [11-testing-and-local-dev.md](11-testing-and-local-dev.md) | Running the test suite and getting a local environment up. |
 | 12 | [12-risks-and-known-issues.md](12-risks-and-known-issues.md) | What is still open, behaviour with sharp edges, and a record of what was already fixed. |
 | 13 | [13-visual-tour.md](13-visual-tour.md) | Screenshots of every major screen, each mapped to the route and controller behind it. |
+| 14 | [14-accounts-and-moderation.md](14-accounts-and-moderation.md) | Registration, profiles, roles, and who approves what. Includes the diagnosis for "why am I not on the community page?". |
 
 ## Single-file PDF
 
-These chapters can be built into one printable document — roughly 120 pages, with a clickable table of contents, rendered diagrams, and the screenshot tour:
+These chapters can be built into one printable document — roughly 134 pages, with a clickable table of contents, rendered diagrams, and the screenshot tour:
 
 ```bash
 python3 docs/handover/_pdf/build.py
@@ -45,13 +46,13 @@ python3 docs/handover/_pdf/build.py
 
 It writes `docs/handover/codeweek-technical-handover.pdf`. You need `pandoc` and Google Chrome installed, plus an internet connection at build time (the Mermaid renderer is loaded from a CDN).
 
-The PDF is **deliberately not committed** — it is a 7 MB build artefact and this folder is meant to stay text. The markdown files are the source of truth. Regenerate the PDF when you need a copy to hand to someone.
+The PDF is **deliberately not committed** — it is a 7.6 MB build artefact and this folder is meant to stay text. The markdown files are the source of truth. Regenerate the PDF when you need a copy to hand to someone.
 
 ## If you only read three pages
 
 1. [00-access-checklist.md](00-access-checklist.md) — you will be blocked without this.
 2. [02-environments-and-deployment.md](02-environments-and-deployment.md) — the single most misunderstood part of this repo. The Kubernetes manifests at the repo root are **local development only**; production runs on Laravel Forge.
-3. [12-risks-and-known-issues.md](12-risks-and-known-issues.md) — several things are hardcoded to the outgoing team and will lock you out on day one until changed.
+3. [12-risks-and-known-issues.md](12-risks-and-known-issues.md) — the handful of things that still need your credentials, starting with `CERTIFICATE_ADMIN_EMAILS`, which locks you out of certificates until it is set.
 
 ## Ten-minute orientation
 

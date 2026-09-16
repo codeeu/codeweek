@@ -71,7 +71,10 @@ final class OnlineEventsWorkflowTest extends TestCase
 
         $this->signIn($ambassador);
 
-        $onlineEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(15), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        // 14 rather than 15 days: the query window is `start_date >= now()->subDays(15)`,
+        // evaluated a moment after this line, so an exactly-15-day-old fixture falls
+        // outside the window whenever the clock ticks a second in between.
+        $onlineEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(14), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $tooOldOnlineEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(45), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $pastEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(10), 'end_date' => Carbon::now()->subDays(10), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
 

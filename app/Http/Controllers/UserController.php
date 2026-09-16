@@ -23,7 +23,7 @@ class UserController extends Controller
             'lastname' => 'required|string',
             'privacy' => 'required',
             'receive_emails' => 'required',
-            'country_iso' => 'nullable|exists:countries,iso',
+            'country_iso' => 'required|exists:countries,iso',
             'city_id' => 'nullable|exists:cities,id',
             'twitter' => 'nullable',
             'website' => 'nullable',

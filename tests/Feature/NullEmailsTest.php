@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Mail;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-final class NullEmails extends TestCase
+final class NullEmailsTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -22,15 +22,15 @@ final class NullEmails extends TestCase
         $user1 = \App\User::factory()->create(['email' => 'foo@bar']);
         $user2 = \App\User::factory()->create(['email' => 'xyz@bar']);
 
-        \App\Event::factory()->create([
+        \App\Event::factory()->count(6)->create([
             'creator_id' => $nullUser->id,
             'user_email' => 'foo@bar',
-        ], 6);
+        ]);
 
-        \App\Event::factory()->create([
+        \App\Event::factory()->count(6)->create([
             'creator_id' => $nullUser->id,
             'user_email' => 'xyz@bar',
-        ], 6);
+        ]);
 
         $emails = EventHelper::getDistinctEmailsWithUsersHavingNullEmail();
 
@@ -62,9 +62,9 @@ final class NullEmails extends TestCase
         $user1 = \App\User::factory()->create(['email' => 'foo@bar', 'id' => 100]);
 
         $this->assertEquals(count($user1->events), 0);
-        \App\Event::factory()->create([
+        \App\Event::factory()->count(10)->create([
             'user_email' => 'foo@bar',
-        ], 10);
+        ]);
 
         EventHelper::reassignActivities($user1);
 

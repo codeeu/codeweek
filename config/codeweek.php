@@ -24,4 +24,16 @@ return [
         'CONTACT_FORM_RECIPIENT_EMAIL',
         env('ADMIN_EMAIL', 'admin@codeweek.test')
     ),
+
+    // Pending-job count above which queue:monitor fires QueueBusy. Raise it if
+    // October traffic makes the alert noisy rather than switching the alert off.
+    'queue_busy_threshold' => (int) env('QUEUE_BUSY_THRESHOLD', 100),
+
+    // Who may use /admin/certificate-backend/*. Comma-separated list of email
+    // addresses; no role grants access. This used to be a single hardcoded
+    // address in the middleware, which locked out everyone else.
+    'certificate_admin_emails' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env('CERTIFICATE_ADMIN_EMAILS', ''))
+    ))),
 ];

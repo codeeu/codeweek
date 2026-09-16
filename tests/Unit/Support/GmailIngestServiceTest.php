@@ -177,7 +177,7 @@ final class GmailIngestServiceTest extends TestCase
                             'approve1',
                             't-approve',
                             'Re: [CW-SUPPORT #20] Support copilot - dry run review',
-                            'bernard@matrixinternet.ie',
+                            'support@matrixinternet.ie',
                             "APPROVE\n",
                         ),
                     ],

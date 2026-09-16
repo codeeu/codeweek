@@ -17,11 +17,11 @@ class ResourceEditorRoleSeeder extends Seeder
         app()['cache']->forget('spatie.permission.cache');
 
         // create permissions
-        Permission::create(['name' => 'moderate resource']);
+        Permission::firstOrCreate(['name' => 'moderate resource']);
 
         // create roles and assign created permissions
 
-        $role = Role::create(['name' => 'resource editor']);
+        $role = Role::firstOrCreate(['name' => 'resource editor']);
         $role->givePermissionTo(['moderate resource']);
 
     }

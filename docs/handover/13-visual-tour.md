@@ -40,6 +40,8 @@ The ambassador and community directory. `/ambassadors` redirects here, so do not
 
 ![`GET /community` — `CommunityController@index`](assets/07-community.jpg)
 
+This page generates more support tickets than any other, because the two halves of it hide people for entirely different reasons: ambassadors need a bio and an avatar, leading teachers need approval and a city. Both fail silently. [14](14-accounts-and-moderation.md) walks through the diagnosis.
+
 ### Matchmaking tool
 
 Connects volunteers offering digital-skills help with schools and organisations asking for it. It has its own spreadsheet template download at `/matchmaking-tool/download/template`, which is a useful reminder that this feature has a bulk path as well as a form.
@@ -93,6 +95,8 @@ Any route behind `auth` redirects here. Four social providers are wired through 
 Remember that `CheckConsent` middleware runs on every web request: a signed-in user without a recorded GDPR consent is bounced to `/consent` before they can use the site. If you are testing as a seeded user and every page redirects, this is why.
 
 ![The shared login and register screen. `/leading-teachers/list`, `/certificates` and `/participation` all land here when signed out](assets/09-login-gate.jpg)
+
+For what happens after this screen — what a new account actually contains, what the profile form requires, and how someone becomes an ambassador or leading teacher — see [14](14-accounts-and-moderation.md).
 
 ## Certificates
 

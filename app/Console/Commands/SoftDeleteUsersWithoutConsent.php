@@ -6,6 +6,7 @@ use App\Jobs\ProcessUserDeletion;
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class SoftDeleteUsersWithoutConsent extends Command
 {
@@ -17,20 +18,19 @@ class SoftDeleteUsersWithoutConsent extends Command
         $this->info('Creating or verifying legacy user...');
 
         // Create legacy user if it doesn't exist
-        User::firstOrCreate(
+        $legacyUser = User::firstOrCreate(
             ['id' => 1000000],
             [
                 'firstname' => 'Codeweek Legacy User',
                 'lastname' => 'Codeweek Legacy',
                 'username' => 'codeweek-legacy',
-                'password' => Hash::make('some-secure-password-' . time()),
+                'password' => Hash::make(Str::random(40)),
                 'email' => 'legacy@codeweek.eu',
                 'country_iso' => 'BE',
-                'remember_token' => '5Pb4APP0CkOmQFzDtR960OlkdreLev2tvfUiywDawyJOmKDvFb3bmOAWlUL6',
+                'remember_token' => Str::random(60),
                 'privacy' => 1,
                 'email_display' => 'legacy@codeweek.eu',
                 'receive_emails' => 0,
-                'approved' => 1,
                 'magic_key' => 2520090911,
                 'consent_given_at' => now(),
                 'future_consent_given_at' => now(),
@@ -39,6 +39,12 @@ class SoftDeleteUsersWithoutConsent extends Command
                 'updated_at' => now()
             ]
         );
+
+        // 'approved' is guarded against mass assignment, so set it explicitly.
+        if (! $legacyUser->approved) {
+            $legacyUser->approved = 1;
+            $legacyUser->save();
+        }
 
         $this->info('Starting to process users without consent...');
 

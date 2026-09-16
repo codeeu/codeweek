@@ -262,13 +262,18 @@
                         </select>
                     </div>
                     <div class="errors">
-                        @component('components.validation-errors', ['field'=>'country'])@endcomponent
+                        @component('components.validation-errors', ['field'=>'country_iso'])@endcomponent
                     </div>
                 </div>
 
                 <div class="mb-1">
                     <div>
                         <label class="block text-xl text-slate-500 mb-2" for="id_city">City</label>
+                        @if ($profileUser->hasRole('leading teacher') && is_null($profileUser->city_id))
+                            <p class="bg-yellow-100 border-2 border-solid border-yellow-400 rounded-2xl text-slate-700 px-4 py-3 mb-3">
+                                @lang('base.city_required_for_community_map')
+                            </p>
+                        @endif
                         <select id="id_city"
                                 name="city_id"
                                 class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600 mb-3">

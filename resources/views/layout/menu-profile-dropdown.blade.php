@@ -81,7 +81,7 @@
 </li>
 @endrole
 
-@if(auth()->user()->email === 'bernard@matrixinternet.ie')
+@if(in_array(strtolower((string) auth()->user()->email), array_map('strtolower', config('codeweek.certificate_admin_emails', [])), true))
 <li>
     <img src="/images/user_menu_certificates.svg" class="icon">
     <a class="cookweek-link hover-underline" href="{{ route('certificate_backend.index') }}">

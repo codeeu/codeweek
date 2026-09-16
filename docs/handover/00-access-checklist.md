@@ -97,13 +97,17 @@ Ask for a `super admin` account on both environments.
 
 ### Day-one blocker you must resolve
 
-The certificate administration area at `/admin/certificate-backend/*` is gated on a **single hardcoded email address** belonging to the outgoing team:
+The certificate administration area at `/admin/certificate-backend/*` is not governed by roles at all. It reads an explicit allowlist of email addresses from the environment, and it **fails closed**:
 
-```11:11:app/Http/Middleware/EnsureSuperCertificateAdmin.php
-    private const ALLOWED_EMAIL = 'bernard@matrixinternet.ie';
+```19:23:app/Http/Middleware/EnsureSuperCertificateAdmin.php
+        if (empty($allowed)) {
+            Log::warning('Certificate backend access denied: CERTIFICATE_ADMIN_EMAILS is not set.');
+
+            abort(403, 'The certificate administrator list is not configured. Set CERTIFICATE_ADMIN_EMAILS.');
+        }
 ```
 
-No role will get you in. This constant has to be changed (ideally replaced with a role or permission check) before you can operate the certificate tooling at all. The same address is also the fallback recipient for the contact form in `app/Http/Controllers/ContactFormController.php`. Both are listed in [12](12-risks-and-known-issues.md).
+So until somebody sets `CERTIFICATE_ADMIN_EMAILS` in Forge, **nobody can operate certificates** — not even a super admin. Add your own address to it on both environments as part of getting set up, and confirm you can load `/admin/certificate-backend`. This used to be a single hardcoded address belonging to the outgoing team; see [12](12-risks-and-known-issues.md).
 
 ## 9. A note on server addresses in git history
 
