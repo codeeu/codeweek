@@ -17,7 +17,10 @@
             }
         }
         </style>
-@section('content')
+{{-- Must use non-vue-content: Vue mounts on #app and re-renders its DOM, which
+     detaches Livewire's bound elements and leaves unbound clones. Filter tabs
+     then look clickable but never fire wire:click / filterChanged. --}}
+@section('non-vue-content')
     <section id="codeweek-sponsors-page" class="font-['Blinker'] overflow-hidden">
        <section class="flex overflow-hidden relative flex-col bg-violet-gradient">
             <div class="relative w-full transition-all">
