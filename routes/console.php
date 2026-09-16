@@ -43,6 +43,12 @@ Schedule::command('app:sync-blogs')->dailyAt('1:00');
 
 Schedule::command('events:generate-recurring')->dailyAt('01:00');
 
+// Fires Laravel's QueueBusy event when the backlog exceeds the threshold, which
+// App\Listeners\AlertOnBusyQueue turns into a log line and a Sentry message.
+// Nothing else watches the queue, so removing this makes a stalled worker silent.
+Schedule::command('queue:monitor default --max='.config('codeweek.queue_busy_threshold'))
+    ->everyFiveMinutes();
+
 // Support Gmail copilot: ingest tickets by subject (codeweek-support), run dry-run, email for APPROVE.
 $supportGmailPoll = Schedule::command('support:gmail:poll --max=10')
     ->when(fn () => (bool) config('support_gmail.enabled'));
