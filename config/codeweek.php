@@ -24,4 +24,8 @@ return [
         'CONTACT_FORM_RECIPIENT_EMAIL',
         env('ADMIN_EMAIL', 'admin@codeweek.test')
     ),
+
+    // Pending-job count above which queue:monitor fires QueueBusy. Raise it if
+    // October traffic makes the alert noisy rather than switching the alert off.
+    'queue_busy_threshold' => (int) env('QUEUE_BUSY_THRESHOLD', 100),
 ];
