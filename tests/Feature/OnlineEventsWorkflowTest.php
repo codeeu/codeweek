@@ -321,67 +321,86 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
-    public function online_activities_page_lists_activities_already_under_way(): void
+    public function online_activities_page_excludes_activities_that_already_started(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ongoing = \App\Event::factory()->create([
-            'start_date' => Carbon::now()->subMonths(4),
-            'end_date' => Carbon::now()->addMonths(6),
+        // Reported by the community: activities dated 2020-2022 were on the page because
+        // they carry an end date years in the future.
+        $staleStartDate = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->subYears(5),
+            'end_date' => Carbon::now()->addYear(),
             'status' => 'APPROVED',
             'activity_type' => 'open-online',
             'highlighted_status' => 'NONE',
             'language' => ['en'],
-            'title' => 'Still Running Open Online Activity',
+            'title' => 'Started Years Ago Ends Far Away',
         ]);
 
-        $finished = \App\Event::factory()->create([
-            'start_date' => Carbon::now()->subMonths(4),
-            'end_date' => Carbon::now()->subMonth(),
+        $startedThisMonth = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->startOfMonth(),
+            'end_date' => Carbon::now()->addMonths(2),
             'status' => 'APPROVED',
             'activity_type' => 'open-online',
             'highlighted_status' => 'NONE',
             'language' => ['en'],
-            'title' => 'Already Finished Open Online Activity',
+            'title' => 'Started Earlier This Month',
+        ]);
+
+        $upcoming = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->addWeek(),
+            'end_date' => Carbon::now()->addWeek()->addDay(),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Genuinely Upcoming Activity',
         ]);
 
         $this->get('/online-activities')
             ->assertStatus(200)
-            ->assertSee($ongoing->title)
-            ->assertDontSee($finished->title);
+            ->assertSee($upcoming->title)
+            ->assertDontSee($staleStartDate->title)
+            ->assertDontSee($startedThisMonth->title);
     }
 
     #[Test]
-    public function activities_already_under_way_are_listed_under_the_current_month(): void
+    public function the_month_filter_only_offers_months_that_are_still_to_come(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $startedFourMonthsAgo = Carbon::now()->subMonths(4);
+        $pastStart = Carbon::now()->subYears(5);
 
-        $ongoing = \App\Event::factory()->create([
-            'start_date' => $startedFourMonthsAgo,
-            'end_date' => Carbon::now()->addMonths(6),
+        \App\Event::factory()->create([
+            'start_date' => $pastStart,
+            'end_date' => Carbon::now()->addYear(),
             'status' => 'APPROVED',
             'activity_type' => 'open-online',
             'highlighted_status' => 'NONE',
             'language' => ['en'],
-            'title' => 'Ongoing Grouped Under Current Month',
+            'title' => 'Stale Start Date Activity',
         ]);
 
-        $now = Carbon::now();
+        $nextMonth = Carbon::now()->addMonthNoOverflow()->startOfMonth();
 
-        \Livewire\Livewire::test(\App\Livewire\OnlineCalendar::class)
-            ->set('selectedDate', $now->month.'/'.$now->year)
-            ->assertSee($ongoing->title);
+        \App\Event::factory()->create([
+            'start_date' => $nextMonth->copy()->addDays(3),
+            'end_date' => $nextMonth->copy()->addDays(4),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Next Month Activity',
+        ]);
 
         $monthIds = collect(\Livewire\Livewire::test(\App\Livewire\OnlineCalendar::class)->get('months'))
             ->pluck('id');
 
-        $this->assertContains($now->month.'/'.$now->year, $monthIds);
+        $this->assertContains($nextMonth->month.'/'.$nextMonth->year, $monthIds);
         $this->assertNotContains(
-            $startedFourMonthsAgo->month.'/'.$startedFourMonthsAgo->year,
+            $pastStart->month.'/'.$pastStart->year,
             $monthIds,
-            'The month filter should not offer a past month just because an ongoing activity started then.'
+            'A past month must not appear in the filter just because an activity carries a far-off end date.'
         );
     }
 
