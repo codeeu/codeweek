@@ -1,6 +1,6 @@
 # 12 — Risks and known issues
 
-Grouped by what you need to do about it: actions that need access or credentials we cannot use on your behalf, behaviour you must understand before touching imports or certificates, and a set of gaps left open deliberately. A record of what was fixed is at the end, so references to it elsewhere make sense.
+Grouped by what you need to do about it: actions that need access or credentials we cannot use on your behalf, behaviour you must understand before touching imports or certificates, and a set of gaps left open deliberately.
 
 ## Actions that need your credentials
 
@@ -88,39 +88,6 @@ The column list is pinned by `tests/Unit/BulkEventUploadColumnContractTest.php`,
 **Navigational debt.** Of 151 files in `app/Console/Commands/`, only about twenty are scheduled or operationally relevant; the rest are partner-specific importers and historical backfills that will never run again. `app/Console/Commands/excel/` is the obvious first candidate for a cleanup pass. `relocate` and `relocate:country` are genuinely different commands — the first repositions online activities stuck at `0,0`, the second re-geocodes activities sitting on a country centroid — and the second is scheduled every two minutes, so confirm with `php artisan schedule:list` on the server that the frequency is still wanted. Many long-lived branches are named after dates or import batches (`bulk_11_11_25`, `2-sept-imports`, `coderdojo-import-april`), so do not assume an unfamiliar branch is active.
 
 **Documentation.** `docs/internal/` is gitignored and holds sample payloads, partner spreadsheets and past import reports — genuinely useful reference material that must be transferred **outside git**. One inherited document, `WP5 CodeWeek IT System Merged v0.5.md`, states that geocoding uses Nominatim; it does not, the code calls the ArcGIS World GeocodeServer through `GeocodeController`. Worth knowing if that document is circulated to stakeholders.
-
-## What was fixed
-
-The test suite is green. Listed so that references elsewhere make sense, and so nobody re-reports them.
-
-### Security and access
-
-- **The certificate backend was gated on one hardcoded personal email address**, with no role granting access, so a new super admin got a 403 and could not operate certificates at all. It is now an environment-driven allowlist that fails closed, covered by `tests/Feature/CertificateBackendAccessTest.php`.
-- **Any ambassador could reject any country's activities.** `EventController@reject` called `$this->authorize()` inside a `try` with an empty `catch`, so the country check was defeated while the identical check on `approve` was enforced. The exception is no longer swallowed, and two tests pin in-country and out-of-country behaviour.
-- **`users.approved` was mass-assignable**, so any future `update($request->all())` could have published or hidden a leading teacher. Now guarded.
-- **A hardcoded `remember_token` and a predictable password** were used when creating the legacy placeholder user in `SoftDeleteUsersWithoutConsent`. Both are now random.
-- **Turnstile bot protection never ran.** The code read `TURNSTILE_SECRET_KEY` while deployed environments set `TURNSTILE_SECRET`, so verification was wrapped in a truthiness check on an always-null variable and the CAPTCHA response was validated as `nullable`. The widget rendered, so it looked healthy. Both names now resolve through `config/codeweek.php`.
-- **`.env.example` shipped a real `APP_KEY`** plus live S3 bucket names, used the ignored `QUEUE_DRIVER` name instead of `QUEUE_CONNECTION`, and omitted about forty variables the application reads. Blanked, renamed, and filled in by name.
-- **Committed debris deleted**: `cookies.txt` (a curl cookie jar with a live session cookie for meet-and-code.org), `texput.log`, `changed_files.txt`, `differences.diff`, `bom.json`, `phpunit.xml.bak`, `tailwind.js`, `server.php`, the LaTeX compile leftovers in `resources/latex/`, and the abandoned Travis configuration. `.gitignore` now covers the recurring ones.
-
-### Correctness
-
-- **Every ambassador saw only France** in the Nova `Country` resource, which was leftover debug code. Now scoped to the ambassador's own `country_iso`.
-- **`Ambassador` filtered on `model_has_roles.role_id = 4`**, which only held while the seeders had run in their original order. Now matched by role name.
-- **Rejecting from Nova told the organiser nothing.** The action called `reject()` with no argument, writing an empty moderation message and emailing a rejection with no reason, while the Blade screens at `/pending` and `/review` captured one. The action now has a required reason field.
-- **The contact form fell back to the outgoing team's address** when `CONTACT_FORM_RECIPIENT_EMAIL` was unset. It now falls back to `ADMIN_EMAIL`.
-- **Country was optional on the profile despite the form marking it required**, and the error block beneath it was bound to a field name that does not exist, so the validation message could never appear. Both fixed.
-- **`certificate:preflight` defaulted to `--edition=2025`**, so a bare run silently checked the wrong year. Now defaults to the current year.
-- **A scheduled command that did not exist**, `app:export-search-data-to-json`, failed nightly at 02:00. Removed.
-- **`ResourceEditorRoleSeeder` threw on any re-run**, because it used `Permission::create` and `Role::create` for a role the main seeder already creates. Now idempotent.
-- **Dead code deleted**: the two `nova-components/` packages that were never installed, `PromoteAmbassador`, the unattached `UserStatus` filter, the unrouted `ImporterController`, and the `/map` route whose only view include was a zero-byte file.
-
-### Visibility and operations
-
-- **Leading teachers with no city were invisible on `/community`** with nothing to tell them why. The community map groups teachers by `city_id` and skips any group whose city has no coordinates, so they were rendered nowhere at all. Their profile now warns them, and the leading-teachers admin list has a City column and a **Not set** filter so an admin can find and chase them. [14](14-accounts-and-moderation.md)
-- **Nothing alerted on a backed-up queue.** `queue:monitor` was not scheduled and no listener for Laravel's `QueueBusy` event existed, so a stalled worker during October was noticed by a human wondering why activities were not appearing. `queue:monitor` now runs every five minutes against a configurable threshold, and `App\Listeners\AlertOnBusyQueue` logs and reports to Sentry. [10](10-scheduled-jobs-and-runbooks.md)
-- **CI ran only for `master`**, so pull requests into `dev` ran no tests. Both branches now trigger.
-- **The suite had two failing tests, one flake, and five files that never ran.** `CityFactory` was still in pre-Laravel-8 format, and `UserRestoreServiceTest` never disabled the `support_gmail.dry_run` guard that refuses writes. `OnlineEventsWorkflowTest` failed about one run in four because its fixture sat exactly on the query's fifteen-day boundary. The five files in `tests/Feature/` that lacked the `Test.php` suffix were repaired — they had drifted against the factory API — and renamed, so they now run. [11](11-testing-and-local-dev.md)
 
 ## Suggested order of work
 
