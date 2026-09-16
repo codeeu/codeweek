@@ -153,20 +153,22 @@ zip -r learn-teach-assets.zip links images
 
 ### 2. Test on DEV first
 
-Servers (Forge):
+Servers (Forge). Host addresses are in the credentials vault — do not commit them here.
+
+> **Security note:** earlier revisions of this file contained the real dev and live IP addresses, and they remain in this public repository's git history. Redacting the file does not undo that. The actual mitigations are rotating the `forge` SSH keys and restricting SSH ingress at the AWS security group. See [docs/handover/12-risks-and-known-issues.md](../handover/12-risks-and-known-issues.md).
 
 | Env | SSH | App dir |
 |-----|-----|---------|
-| **DEV** | `ssh -i ~/.ssh/id_rsa forge@35.156.58.10` | `cd dev.codeweek.eu` |
-| **Live** | `ssh -i ~/.ssh/id_rsa forge@3.68.107.5` | `cd codeweek.eu` |
+| **DEV** | `ssh -i ~/.ssh/id_rsa forge@<dev-host>` | `cd dev.codeweek.eu` |
+| **Live** | `ssh -i ~/.ssh/id_rsa forge@<live-host>` | `cd codeweek.eu` |
 
 ```bash
 # From your laptop: upload package
 scp -i ~/.ssh/id_rsa metadata.csv learn-teach-assets.zip \
-  forge@35.156.58.10:/home/forge/dev.codeweek.eu/storage/app/learn-teach-upload-2026/
+  forge@<dev-host>:/home/forge/dev.codeweek.eu/storage/app/learn-teach-upload-2026/
 
 # On DEV — unzip + import in the SAME session
-ssh -i ~/.ssh/id_rsa forge@35.156.58.10
+ssh -i ~/.ssh/id_rsa forge@<dev-host>
 cd /home/forge/dev.codeweek.eu
 cd storage/app/learn-teach-upload-2026 && unzip -o -q learn-teach-assets.zip
 cd /home/forge/dev.codeweek.eu

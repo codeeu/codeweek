@@ -228,7 +228,7 @@
         // Turnstile will call this once rendered
         window.turnstileCallback = function () {
             turnstile.render('.cf-turnstile', {
-                sitekey: '{{ env('TURNSTILE_SITEKEY') }}',
+                sitekey: '{{ config('codeweek.turnstile_sitekey') }}',
                 callback: function (token) {
                     captchaInput.value = token;
                     validateForm(); // ensure button re-validates once CAPTCHA succeeds

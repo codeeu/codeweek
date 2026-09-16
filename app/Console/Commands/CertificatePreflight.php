@@ -9,7 +9,7 @@ use Illuminate\Console\Command;
 class CertificatePreflight extends Command
 {
     protected $signature = 'certificate:preflight
-                            {--edition=2025 : Target edition year}
+                            {--edition= : Target edition year (defaults to the current year)}
                             {--type=all : excellence|super-organiser|all}
                             {--limit=0 : Max records to test (0 = all)}
                             {--batch-size=500 : Process in batches; 0 = single run}
@@ -22,7 +22,7 @@ class CertificatePreflight extends Command
 
     public function handle(): int
     {
-        $edition = (int) $this->option('edition');
+        $edition = (int) ($this->option('edition') ?: date('Y'));
         $typeOption = strtolower(trim((string) $this->option('type')));
         $limit = max(0, (int) $this->option('limit'));
         $batchSize = max(0, (int) $this->option('batch-size'));

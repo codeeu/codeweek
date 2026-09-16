@@ -3,9 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "build-analytics": "cd nova-components/Analytics && npm run dev",
-        "build-analytics-prod": "cd nova-components/Analytics && npm run prod"
+        "build": "vite build"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.10",

@@ -32,3 +32,16 @@ vite.config.js
 resources/excel/example.xlsx
 resources/ai-agent-plans/*
 /docs/internal/
+
+# pdflatex writes personalised .tex files and its logs into resources/latex at
+# runtime. Only the templates belong in git.
+resources/latex/*.aux
+resources/latex/*.log
+/texput.log
+
+# Debugging leftovers that have been committed by accident before
+cookies.txt
+changed_files.txt
+differences.diff
+/bom.json
+/phpunit.xml.bak
