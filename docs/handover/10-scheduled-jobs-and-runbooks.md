@@ -21,9 +21,10 @@ php artisan schedule:list
 | Hourly :13 | `magic:key` | Regenerates user `magic_key` tokens for unsubscribe links | [04](04-domain-model.md) |
 | Hourly :15 | `api:germany-central --import` | The live German import | [07](07-partner-feeds-and-apis.md) |
 | Hourly :30 | `notify:administrators` | Emails admins about activities awaiting attention | |
-| Hourly :30 | `relocate` | Fixes activities with missing or bad coordinates | |
+| Hourly :30 | `relocate` | Repositions online activities stuck at `0,0` | |
 | Hourly :33 | `certificate:issues` | Detects certificates with generation problems | [08](08-certificates.md) |
-| Every 2 min | `relocate:country` | Country-level coordinate repair | |
+| Every 5 min | `queue:monitor default` | Fires the queue backlog alert. See below | |
+| Every 2 min | `relocate:country` | Re-geocodes activities sitting on a country centroid | |
 | Every minute | `support:gmail:poll --max=10` | Support mailbox ingest. **Only if `support_gmail.enabled`** | |
 | Every minute | `support:ai:poll-agents` | Support copilot agent polling. **Only if both support AI flags are on** | |
 | Daily 01:00 | `app:sync-blogs` | Pulls WordPress posts into the `blogs` table | [09](09-wordpress-blog.md) |
@@ -41,13 +42,27 @@ The schedule used to contain `app:export-search-data-to-json` at 02:00 daily. No
 
 Worth noting as a pattern: a permanently failing schedule entry trains everyone to ignore scheduler errors, which is how a real failure goes unnoticed. If you add a `Schedule::command()` line, confirm it appears in `php artisan schedule:list` and actually runs.
 
-### Two entries with a name collision worth double-checking
+### Two similarly named entries, worth not confusing
 
-`relocate` (hourly at :30) and `relocate:country` (every two minutes) both resolve to `app/Console/Commands/RelocateCountry.php`. Confirm on the server with `php artisan schedule:list` which signature each actually binds to, and whether running a geocoding repair **every two minutes** is still intended.
+`relocate` and `relocate:country` look like the same command and are not. `relocate` (hourly at :30, `app/Console/Commands/Relocate.php`) repositions online activities stuck at `0,0`. `relocate:country` (**every two minutes**, `app/Console/Commands/RelocateCountry.php`) re-geocodes activities sitting exactly on a country centroid. Confirm with `php artisan schedule:list` on the server, and ask whether a geocoding repair every two minutes is still intended — it is by far the most frequent entry in the schedule.
+
+### Queue monitoring
+
+```46:50:routes/console.php
+// Fires Laravel's QueueBusy event when the backlog exceeds the threshold, which
+// App\Listeners\AlertOnBusyQueue turns into a log line and a Sentry message.
+// Nothing else watches the queue, so removing this makes a stalled worker silent.
+Schedule::command('queue:monitor default --max='.config('codeweek.queue_busy_threshold'))
+    ->everyFiveMinutes();
+```
+
+`queue:monitor` does not alert by itself — it only dispatches Laravel's `QueueBusy` event when the backlog exceeds `--max`. `App\Listeners\AlertOnBusyQueue` is what turns that into something you see, via `Log::error()` and a Sentry message. The threshold comes from `QUEUE_BUSY_THRESHOLD` and defaults to 100.
+
+If October traffic makes this noisy, **raise the threshold rather than removing the entry** — nothing else watches the queue, and a stalled worker is otherwise only noticed by someone wondering why activities have stopped appearing.
 
 ### Support subsystem entries are conditional
 
-```47:48:routes/console.php
+```53:54:routes/console.php
 $supportGmailPoll = Schedule::command('support:gmail:poll --max=10')
     ->when(fn () => (bool) config('support_gmail.enabled'));
 ```
@@ -174,7 +189,7 @@ Roughly a quarter of the year's visits land in October — October 2024 recorded
 A fortnight beforehand:
 
 - [ ] Confirm the schedule is registered: `php artisan schedule:list`.
-- [ ] Confirm queue workers are alive and draining. See the note below — **`queue:monitor` needs arguments and will not alert anyone on its own.**
+- [ ] Confirm queue workers are alive and draining, and that the queue alert reaches you — see [Checking the queue properly](#checking-the-queue-properly). Deliberately trigger it once so you know what the alert looks like before you need to recognise it.
 - [ ] Check for a backlog of failures: `php artisan queue:failed`. Clear anything stale before the spike so October failures are visible.
 - [ ] Confirm the German central import is succeeding: `php artisan api:germany-central`. **Dry-run is the default**; it only writes when you add `--import`, so this is safe to run against live.
 - [ ] Verify the database backup by restoring one. Backups are not configured in this repository — there is no `spatie/laravel-backup` — so they are managed in Forge/AWS. The commitment is nightly database and weekly file backups with restore tests.
@@ -195,10 +210,16 @@ php artisan tinker --execute="echo config('queue.default');"
 php artisan queue:monitor database:default   # or redis:default, matching the above
 ```
 
-Two caveats that make this weaker than it looks:
+Two things to understand about what this does and does not tell you:
 
-- `queue:monitor` only **dispatches a `QueueBusy` event** when a queue exceeds `--max`. There is no listener for that event anywhere in this application, so nothing is emailed or alerted. Run interactively and read the table, or register a listener if you want real alerting.
+- `queue:monitor` only **dispatches a `QueueBusy` event** when a queue exceeds `--max`; the command itself alerts nobody. `App\Listeners\AlertOnBusyQueue` is what turns that event into a `Log::error()` line and a Sentry message, and the scheduled entry above is what runs the check every five minutes. All three pieces are needed — remove any one and a stalled worker goes silent again.
 - No job in this codebase calls `onQueue()`, so everything sits on the single default queue. There is no Horizon either. Worker health is therefore a Forge question, not an application one — check the daemon status in Forge alongside the commands above.
+
+To prove the alerting path end to end without waiting for a real backlog, fire the event by hand and confirm it reaches Sentry:
+
+```bash
+php artisan tinker --execute="event(new Illuminate\Queue\Events\QueueBusy(config('queue.default'), 'default', 9999));"
+```
 
 A useful one-liner for confirming the effective drivers on a host:
 

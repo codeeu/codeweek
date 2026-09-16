@@ -204,13 +204,17 @@ A dedicated batch operations UI at `/admin/certificate-backend/*`, handled by `C
 
 Batch progress is tracked in the cache with a 24-hour TTL.
 
-**This area is gated on a single hardcoded email address**, not a role:
+**This area is gated on an explicit email allowlist**, not a role:
 
-```11:11:app/Http/Middleware/EnsureSuperCertificateAdmin.php
-    private const ALLOWED_EMAIL = 'bernard@matrixinternet.ie';
+```25:29:app/Http/Middleware/EnsureSuperCertificateAdmin.php
+        $email = $request->user()?->email;
+
+        if ($email === null || ! in_array(strtolower($email), array_map('strtolower', $allowed), true)) {
+            abort(403, 'Access denied. This area is restricted to the certificate administrator.');
+        }
 ```
 
-A new developer, even as super admin, gets a 403. **Change this constant before the first certificate run** — ideally replacing it with a role or permission check. See [00](00-access-checklist.md) and [12](12-risks-and-known-issues.md).
+The list comes from `CERTIFICATE_ADMIN_EMAILS`, comma-separated, and the comparison is case-insensitive. **Being a super admin grants nothing here.** If the variable is unset the middleware denies everyone and says so in the 403, so `Set CERTIFICATE_ADMIN_EMAILS` in a browser is your diagnosis. **Set it before the first certificate run.** See [00](00-access-checklist.md) and [12](12-risks-and-known-issues.md).
 
 ## Artisan commands
 
