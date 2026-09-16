@@ -1,0 +1,33 @@
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  // Render the Mermaid diagrams before Chrome prints. Chrome's
+  // --virtual-time-budget waits for this to settle.
+  window.addEventListener('DOMContentLoaded', function () {
+    if (typeof mermaid === 'undefined') {
+      document.querySelectorAll('.mermaid-wrap').forEach(function (el) {
+        el.innerHTML = '<p style="color:#8a6114;font-size:9pt">' +
+          'Diagram could not be rendered (mermaid.js unavailable at build time).</p>';
+      });
+      return;
+    }
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'base',
+      securityLevel: 'loose',
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' },
+      themeVariables: {
+        fontFamily: 'Helvetica Neue, Arial, sans-serif',
+        fontSize: '15px',
+        primaryColor: '#eef3fb',
+        primaryBorderColor: '#1b4f9c',
+        primaryTextColor: '#16202c',
+        lineColor: '#5b6b7c',
+        secondaryColor: '#f7f9fb',
+        tertiaryColor: '#ffffff'
+      }
+    });
+    mermaid.run({ querySelector: '.mermaid' })
+      .then(function () { window.__mermaidDone = true; })
+      .catch(function (e) { console.error(e); window.__mermaidDone = true; });
+  });
+</script>

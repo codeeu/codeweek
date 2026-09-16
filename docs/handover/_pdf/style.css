@@ -1,0 +1,401 @@
+/* Print styling for the combined Code Week technical handover PDF. */
+
+@page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+}
+
+:root {
+    --ink: #16202c;
+    --muted: #5b6b7c;
+    --rule: #dde4ec;
+    --accent: #1b4f9c;
+    --accent-soft: #eef3fb;
+    --warn-bg: #fff6e8;
+    --warn-edge: #e0a33a;
+}
+
+html {
+    font-size: 10.5pt;
+}
+
+body {
+    font-family: "Charter", "Georgia", "Iowan Old Style", serif;
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* ---------- cover ---------- */
+
+.cover {
+    height: 247mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    page-break-after: always;
+    border-top: 10px solid var(--accent);
+}
+
+.cover .eyebrow {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 9pt;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.cover h1 {
+    font-size: 34pt;
+    line-height: 1.1;
+    margin: 0.35em 0 0.2em;
+    border: 0;
+    padding: 0;
+}
+
+.cover .sub {
+    font-size: 13pt;
+    color: var(--muted);
+    margin: 0 0 2.4em;
+    max-width: 30em;
+}
+
+.cover dl {
+    display: grid;
+    grid-template-columns: 8.5em 1fr;
+    row-gap: 0.45em;
+    font-size: 10pt;
+    margin: 0;
+    border-top: 1px solid var(--rule);
+    padding-top: 1.2em;
+    max-width: 34em;
+}
+
+.cover dt {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 8pt;
+    color: var(--muted);
+    padding-top: 0.25em;
+}
+
+.cover dd {
+    margin: 0;
+}
+
+.cover .notice {
+    margin-top: 2.2em;
+    background: var(--warn-bg);
+    border-left: 4px solid var(--warn-edge);
+    padding: 0.8em 1em;
+    font-size: 9.5pt;
+    max-width: 34em;
+}
+
+/* ---------- table of contents ---------- */
+
+#TOC {
+    page-break-after: always;
+    padding-top: 0.5em;
+}
+
+#TOC::before {
+    content: "Contents";
+    display: block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 19pt;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+    color: var(--accent);
+}
+
+#TOC ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#TOC > ul > li {
+    margin: 0.55em 0;
+    font-weight: 600;
+    font-size: 11pt;
+    border-bottom: 1px dotted var(--rule);
+    padding-bottom: 0.4em;
+}
+
+#TOC ul ul {
+    margin: 0.3em 0 0.5em 1.1em;
+    columns: 2;
+    column-gap: 2em;
+}
+
+#TOC ul ul li {
+    font-weight: 400;
+    font-size: 9pt;
+    color: var(--muted);
+    margin: 0.12em 0;
+    break-inside: avoid;
+}
+
+#TOC a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---------- headings ---------- */
+
+h1.chapter {
+    page-break-before: always;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 22pt;
+    color: #fff;
+    background: var(--accent);
+    padding: 0.55em 0.7em;
+    margin: 0 0 1.1em;
+    border-radius: 3px;
+}
+
+h2, h3, h4, h5 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--accent);
+    page-break-after: avoid;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: 15pt;
+    margin: 1.7em 0 0.6em;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid var(--rule);
+}
+
+h3 {
+    font-size: 12pt;
+    margin: 1.3em 0 0.45em;
+}
+
+h4 {
+    font-size: 10.5pt;
+    margin: 1.1em 0 0.4em;
+    color: var(--ink);
+}
+
+p, li {
+    orphans: 2;
+    widows: 2;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+strong {
+    color: #0d1a27;
+}
+
+/* ---------- tables ---------- */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0 1.3em;
+    font-size: 9pt;
+    page-break-inside: avoid;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 9pt;
+    color: var(--muted);
+    padding-bottom: 0.35em;
+}
+
+th {
+    background: var(--accent-soft);
+    text-align: left;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--rule);
+}
+
+th, td {
+    padding: 0.42em 0.6em;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule);
+}
+
+tbody tr:nth-child(even) {
+    background: #fafbfd;
+}
+
+/* ---------- code ---------- */
+
+code {
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 0.85em;
+    background: #f3f5f8;
+    padding: 0.1em 0.32em;
+    border-radius: 3px;
+}
+
+pre {
+    background: #f7f9fb;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    padding: 0.75em 0.9em;
+    overflow-x: auto;
+    font-size: 8.4pt;
+    line-height: 1.45;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    font-size: inherit;
+}
+
+/* captioned citation of real repository code */
+.coderef {
+    margin: 1em 0 1.3em;
+    page-break-inside: avoid;
+}
+
+.coderef > p:first-child {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    background: var(--accent);
+    color: #fff;
+    margin: 0;
+    padding: 0.35em 0.7em;
+    border-radius: 3px 3px 0 0;
+}
+
+.coderef > p:first-child a,
+.coderef > p:first-child code {
+    color: #fff;
+    background: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.coderef-lines {
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.coderef pre {
+    margin-top: 0;
+    border-radius: 0 0 3px 3px;
+    border-left-width: 1px;
+}
+
+/* ---------- mermaid ---------- */
+
+.mermaid-wrap {
+    margin: 1.2em 0 1.5em;
+    padding: 1em;
+    background: #fbfcfe;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    text-align: center;
+    page-break-inside: avoid;
+}
+
+.mermaid svg {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* ---------- screenshots ---------- */
+
+figure {
+    margin: 1.2em 0 1.5em;
+    page-break-inside: avoid;
+    text-align: center;
+}
+
+figure img,
+p > img {
+    max-width: 100%;
+    max-height: 200mm;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(20, 35, 55, 0.12);
+}
+
+figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.5pt;
+    color: var(--muted);
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+/* placeholder for screens we could not capture without credentials */
+.shot-missing {
+    border: 1.5px dashed var(--warn-edge);
+    background: var(--warn-bg);
+    border-radius: 4px;
+    padding: 1.1em 1.2em;
+    margin: 1.2em 0;
+    font-size: 9.5pt;
+    page-break-inside: avoid;
+}
+
+.shot-missing::before {
+    content: "Screenshot not captured";
+    display: block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 7.5pt;
+    font-weight: 700;
+    color: #8a6114;
+    margin-bottom: 0.35em;
+}
+
+blockquote {
+    margin: 1em 0;
+    padding: 0.6em 1em;
+    border-left: 3px solid var(--warn-edge);
+    background: var(--warn-bg);
+    font-style: normal;
+}
+
+blockquote p {
+    margin: 0.3em 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 1.8em 0;
+}
+
+ul, ol {
+    padding-left: 1.3em;
+}
+
+li {
+    margin: 0.22em 0;
+}
+
+/* task-list checkboxes in the access checklist */
+input[type="checkbox"] {
+    margin-right: 0.4em;
+}

@@ -1,0 +1,157 @@
+# 13 — Visual tour
+
+A screen-by-screen walk through the platform, so you can connect what a user sees to the code that serves it. Every caption names the route and the controller or view responsible.
+
+Screenshots were taken from the live site at 1920×1080. They will drift as content changes; treat the route and controller names as the durable part.
+
+> **Why some screens are missing.** Everything behind `/nova`, `/admin/*`, `/certificates` and `/participation` needs a privileged account. Those sections below describe the screen and point at the code instead of showing it. Once you have credentials from the [access checklist](00-access-checklist.md), walk them yourself — it is the fastest way to understand the admin surface.
+
+## The public site
+
+### Homepage
+
+The seasonal landing page. Much of it is editable content rather than hardcoded markup: home slides are a Nova resource, and the countdown, statistics and featured activities are pulled live. Note the subdomain parameter on the route — country subdomains are a supported entry point.
+
+![`GET /` — a closure in `routes/web.php` that resolves the subdomain and renders the home view](assets/01-home.jpg)
+
+### Activity search and map
+
+The busiest page on the site, and the one most worth understanding first. The Leaflet map (Mapbox and OpenStreetMap tiles) and the filter form below it share the same query layer, `app/Filters/EventFilters.php`. There is no external search index: filtering is plain MySQL, using `JSON_CONTAINS` against JSON columns for themes and audiences. Map data selects only the columns the map needs, groups by country, and is cached for 300 seconds.
+
+![`GET /events` — `SearchController@search`, route name `events_map`](assets/02-activities-search.jpg)
+
+> **There used to be a second, broken map at `/map`.** `MapController@index` rendered a view whose only include was a zero-byte file, so the page returned 200 with an empty `<main>` and — because `layout/simple.blade.php` has its `@vite()` calls commented out — no stylesheets either. Nothing linked to it. The route, controller and views have been deleted. The map above, on `/events`, is the real one and is untouched.
+
+### Online activities calendar
+
+Online activities are ordinary activities flagged `activity_type = 'online'`, presented on a calendar rather than a map.
+
+![`GET /online-activities` — `OnlineEventsController@calendar`](assets/04-online-activities.jpg)
+
+### Learn & Teach resource catalogue
+
+The teaching resource library. Resources are a separate model from activities, with their own taxonomy pivots, and are filtered by `app/Filters/ResourceFilters.php`. Resource PDFs live in the second S3 bucket. This catalogue is populated by the importer described in [06 — Bulk uploads and imports](06-bulk-uploads-and-imports.md).
+
+![`GET /resources/learn-and-teach` — `ResourcesController@all`, route name `resources_all`](assets/05-learn-and-teach.jpg)
+
+### Community
+
+The ambassador and community directory. `/ambassadors` redirects here, so do not be surprised when both URLs render the same page.
+
+![`GET /community` — `CommunityController@index`](assets/07-community.jpg)
+
+### Matchmaking tool
+
+Connects volunteers offering digital-skills help with schools and organisations asking for it. It has its own spreadsheet template download at `/matchmaking-tool/download/template`, which is a useful reminder that this feature has a bulk path as well as a form.
+
+![`GET /matchmaking-tool` — `MatchMakingToolController@index`](assets/10-matchmaking-tool.jpg)
+
+### Code Week 4 All
+
+Served by the generic static page controller, which resolves the route name to a Blade view. Several campaign pages work this way, so adding a new static page usually means adding a route plus a view and no controller code.
+
+![`GET /codeweek4all` — `StaticPageController@static`](assets/11-codeweek4all.jpg)
+
+### Scoreboard
+
+Country rankings by activities per head of population, with a year selector. The totals here are a good smoke test after an import run: if a partner feed has double-inserted, it shows up on this page first.
+
+![`GET /scoreboard` — `ScoreboardController@index`](assets/12-scoreboard.jpg)
+
+### Grassroots Grants
+
+![`GET /grassroots-grants` — `GrassrootsGrantsController@show`](assets/13-grassroots-grants.jpg)
+
+### Challenges
+
+Worth a look because of how it is routed: `Route::view('/challenges', '2021.challenges')`. It is a static Blade view under a year-named directory, with no controller. There is a family of these dated campaign views in `resources/views/`, and they are effectively frozen content.
+
+![`GET /challenges` — `Route::view()` straight to `resources/views/2021/challenges.blade.php`](assets/14-challenges.jpg)
+
+### Hackathons
+
+![`GET /hackathons` — `HackathonsController@index`](assets/15-hackathons.jpg)
+
+### Online courses
+
+![`GET /online-courses` — `OnlineCoursesController@index`](assets/16-online-courses.jpg)
+
+### Podcasts
+
+The podcast list also backs an outbound RSS feed, generated by `spatie/laravel-feed`. See [07 — Partner feeds and APIs](07-partner-feeds-and-apis.md).
+
+![`GET /podcasts` — `PodcastsController@index`](assets/17-podcasts.jpg)
+
+### About
+
+![`GET /about` — `StaticPageController@static`](assets/18-about.jpg)
+
+## Accounts and the authentication gate
+
+Any route behind `auth` redirects here. Four social providers are wired through Laravel Socialite alongside email and password, so a user record may have no password at all — keep that in mind when writing anything that touches credentials.
+
+Remember that `CheckConsent` middleware runs on every web request: a signed-in user without a recorded GDPR consent is bounced to `/consent` before they can use the site. If you are testing as a seeded user and every page redirects, this is why.
+
+![The shared login and register screen. `/leading-teachers/list`, `/certificates` and `/participation` all land here when signed out](assets/09-login-gate.jpg)
+
+## Certificates
+
+Four certificate types are generated as real PDFs by `pdflatex` from the templates in `resources/latex/`, then stored on S3. [08 — Certificates](08-certificates.md) covers the pipeline, the TeX Live dependencies and the annual rollover in full.
+
+The screens involved, none of which can be captured without a privileged account:
+
+| Screen | Route | Served by | Who can reach it |
+|---|---|---|---|
+| My certificates | `GET /certificates` | `CertificateController@list` | Any signed-in user |
+| Participation certificate | `GET /participation` | `ParticipationController@show` | Signed in **and** email verified |
+| Excellence report | `GET /certificates/excellence/{edition}` | `ExcellenceController@report` | Signed in |
+| Super Organiser report | `GET /certificates/super-organiser/{edition}` | `SuperOrganiserController@report` | Signed in |
+| Certificate admin | `GET /admin/certificates` | `AdminController@certificates` | Role-gated admin group |
+| Certificate backend | `/admin/certificate-backend/*` | Excellence and Super Organiser generation and sending | **One hardcoded email address** |
+
+> **The certificate backend will lock you out on day one.** `EnsureSuperCertificateAdmin` permits a single hardcoded address belonging to the outgoing team. Changing it is a prerequisite for operating certificates at all, and it is the first item in [12 — Risks and known issues](12-risks-and-known-issues.md).
+
+## Administration
+
+### Nova
+
+The main back office is Laravel Nova 4. Access is controlled by the gate defined in `app/Providers/NovaServiceProvider.php`, and resources are registered explicitly rather than auto-discovered — so a new Nova resource that does not appear in the sidebar is usually just unregistered. [05 — Nova admin](05-nova-admin.md) has the full resource inventory.
+
+![`GET /nova` — the Nova login screen, the only part of the back office visible without an account](assets/21-nova-login.jpg)
+
+### Bespoke admin screens
+
+Several administrative tools predate Nova or outgrew it, and live as ordinary Blade screens under `/admin/*` behind `auth` plus `role:super admin`. These are the ones you will use most in October:
+
+| Screen | Route | Covered in |
+|---|---|---|
+| Bulk activity upload | `/admin/bulk-upload` | [06](06-bulk-uploads-and-imports.md) |
+| Bulk user changes | `/admin/bulk-user-changes` | [06](06-bulk-uploads-and-imports.md) |
+| Resources import | `/admin/resources-import` | [06](06-bulk-uploads-and-imports.md) |
+| Certificate generation | `/admin/certificates` | [08](08-certificates.md) |
+
+Each follows the same three-step shape — upload, preview, import — with a queued job doing the work and a report at the end. Read the bulk upload chapter before running any of them against live data; the column contract is strict and the preview step is the only safety net.
+
+## The blog
+
+A separate WordPress installation, not part of this Laravel application. Posts are mirrored into the `blogs` table nightly by `app:sync-blogs` over the WordPress REST API, which is how blog content appears in global search on the Laravel side. Editing happens in WordPress; the Laravel copy is read-only. See [09 — The WordPress blog](09-wordpress-blog.md).
+
+![[codeweek.eu/blog](https://codeweek.eu/blog/) — a WordPress install behind the same domain](assets/19-wordpress-blog.jpg)
+
+## Environments and source
+
+### Dev site
+
+`dev.codeweek.eu` is the staging environment, deployed from the development branch through Laravel Forge. It has its own database and its own S3 configuration, and it is the only place to rehearse an import or a certificate run. [02 — Environments and deployment](02-environments-and-deployment.md) covers the deploy sequence.
+
+![[dev.codeweek.eu](https://dev.codeweek.eu/) — the staging environment](assets/20-dev-site.jpg)
+
+### Repository
+
+![[github.com/codeeu/codeweek](https://github.com/codeeu/codeweek) — the public repository. Note that it is public: see the secret-handling rules in the [README](README.md)](assets/24-github-repo.jpg)
+
+### Partner-facing import guide
+
+The public wiki page national partners are pointed at when they want their events to appear on codeweek.eu. Its column list must stay in step with `REQUIRED_COLUMNS` in `app/Services/BulkEventUploadValidator.php` — they have drifted apart before. [07 — Partner feeds and APIs](07-partner-feeds-and-apis.md) explains the relationship.
+
+![[Publish your events into Codeweek](https://github.com/codeeu/codeweek/wiki/Publish-your-events-into-Codeweek) — the partner-facing wiki guide](assets/23-partner-wiki-guide.jpg)
