@@ -39,7 +39,7 @@ If you are changing the filter layer, switch to it locally and run the suite aga
 
 ## Test layout
 
-102 test files.
+111 test files.
 
 | Location | Contents |
 |----------|----------|
@@ -73,17 +73,36 @@ Every test inherits setup that is worth knowing about, because it changes what y
 - `Mail::fake()` is global — assert with `Mail::assertQueued()` rather than expecting real delivery.
 - A `signIn($user)` helper creates and authenticates a user in one call.
 
-### Five test files that never run
+### Two factory systems, side by side
 
-These are in `tests/Feature/` but lack the `Test.php` suffix, so PHPUnit ignores them:
+`database/factories/` contains **both** styles of Laravel factory, and which one you can use depends on the model:
 
-- `GermanImports.php`
-- `GermanUsersCreation.php`
-- `RelocateCenteredActivities.php`
-- `RelocateOnlineActivities.php`
-- `NullEmails.php`
+- **Modern class factories** (`class CountryFactory extends Factory`, resolved by `Model::factory()`). Seventeen models use these.
+- **Legacy closure factories** (`$factory->define(App\Podcast::class, ...)`), which only work because `laravel/legacy-factories` is still installed. These are reached through the global `factory()` helper, or the `create()` and `make()` wrappers in `tests/utilities/functions.php`. Fourteen models still use these.
 
-They look like tests and will show up when you grep, but they are dead weight. Some are probably worth reviving by renaming — the German import ones in particular, given [07](07-partner-feeds-and-apis.md) — but check they still pass before trusting them.
+So `Podcast::factory()` fails with *"Class Database\Factories\PodcastFactory not found"*, while `create(\App\Country::class)` fails with *"Unable to locate factory for [App\Country]"*. Check which style a model has before writing a test against it, and if you convert one, convert its call sites in the same commit.
+
+`City` was converted from legacy to modern as part of this handover, because a community test needed `City::factory()`. Converting the remaining fourteen would be a reasonable tidy-up, but do it one model at a time and update the `create(...)` call sites with it.
+
+### Five files that used to be skipped
+
+`GermanImports`, `GermanUsersCreation`, `RelocateCenteredActivities`, `RelocateOnlineActivities` and `NullEmails` were in `tests/Feature/` without the `Test.php` suffix, so PHPUnit ignored them. They have been repaired and renamed, and now run.
+
+What they had drifted against is worth knowing, because the same drift is waiting in any old test you revive:
+
+- `->create([...], 6)` used to mean "make six". The modern API is `->count(6)->create([...])`, and passing an integer as the second argument now throws a `TypeError` about `$parent`.
+- Two of them called `User::factory()` without importing `App\User`, which fails as `Class "Tests\Feature\User" not found`.
+- `GermanImports` asserted that `cw22-leipzig`, `cw22-dresden` and `cw22-thueringen` count as imported, but those cities are no longer in `ImporterHelper::getGermanCities()`. Rather than add them back and change what `Event::imported()` matches, the test now iterates that helper, so the list stays the single source of truth.
+
+The lesson for the other thirteen legacy factories and anything else you exhume: a test that has not run for years is asserting the contract of a codebase that no longer exists. Read what it claims before you trust a green tick.
+
+### One flake, and why it mattered
+
+`OnlineEventsWorkflowTest` failed roughly one run in four, which is the worst possible failure rate — often enough to erode trust in the suite, rarely enough that re-running makes it go away.
+
+The cause is worth internalising because the pattern is everywhere in this codebase. `OnlineEventsQuery` selects activities with `start_date >= Carbon::now()->subDays(15)`, and the test created its fixture at **exactly** `Carbon::now()->subDays(15)`. The two `now()` calls happen milliseconds apart, so whenever the clock ticked a second between them the fixture fell a second outside its own window.
+
+Several queries use this fifteen-day window — `OnlineEventsQuery`, `CountriesQuery::withOnlineEvents()` and `EventHelper::getOnlineEvents()`. If you write a test against any of them, **put the fixture a day inside the boundary, not on it.** If you genuinely need to test the boundary, freeze time with `Carbon::setTestNow()` rather than relying on two clock reads agreeing.
 
 ## What the suite does not cover
 

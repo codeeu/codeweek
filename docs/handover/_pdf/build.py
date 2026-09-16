@@ -37,6 +37,7 @@ CHAPTERS = [
     ("11", "11-testing-and-local-dev.md"),
     ("12", "12-risks-and-known-issues.md"),
     ("13", "13-visual-tour.md"),
+    ("14", "14-accounts-and-moderation.md"),
 ]
 
 SLUG_BY_FILE = {fname: f"chapter-{cid}" for cid, fname in CHAPTERS}

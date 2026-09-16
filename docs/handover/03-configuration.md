@@ -307,6 +307,26 @@ return [
 
 Note that `blog_url` defaults to the live blog. On a dev or local environment the blog sync command will therefore pull from **production** unless `BLOG_URL` is set explicitly. See [09](09-wordpress-blog.md).
 
+Three more entries live further down the same file and are easy to miss:
+
+| Key | Variable | Notes |
+|-----|----------|-------|
+| `contact_form_recipient` | `CONTACT_FORM_RECIPIENT_EMAIL` | Falls back to `ADMIN_EMAIL` |
+| `queue_busy_threshold` | `QUEUE_BUSY_THRESHOLD` | Pending jobs above which the queue alert fires. Default 100. See [10](10-scheduled-jobs-and-runbooks.md) |
+| `certificate_admin_emails` | `CERTIFICATE_ADMIN_EMAILS` | Comma-separated allowlist for the certificate backend. **Blank means nobody has access** |
+
+`certificate_admin_emails` is the one to set before anything else:
+
+```32:38:config/codeweek.php
+    // Who may use /admin/certificate-backend/*. Comma-separated list of email
+    // addresses; no role grants access. This used to be a single hardcoded
+    // address in the middleware, which locked out everyone else.
+    'certificate_admin_emails' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env('CERTIFICATE_ADMIN_EMAILS', ''))
+    ))),
+```
+
 ## Locales
 
 `LOCALES` currently lists 27 codes:
