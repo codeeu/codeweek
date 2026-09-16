@@ -32,7 +32,7 @@ Specifically:
 | 09 | [09-wordpress-blog.md](09-wordpress-blog.md) | The WordPress blog and how it syncs into the Laravel site. |
 | 10 | [10-scheduled-jobs-and-runbooks.md](10-scheduled-jobs-and-runbooks.md) | The cron schedule, the queue, and step-by-step runbooks. |
 | 11 | [11-testing-and-local-dev.md](11-testing-and-local-dev.md) | Running the test suite and getting a local environment up. |
-| 12 | [12-risks-and-known-issues.md](12-risks-and-known-issues.md) | What is still open, behaviour with sharp edges, and a record of what was already fixed. |
+| 12 | [12-risks-and-known-issues.md](12-risks-and-known-issues.md) | What is still open, and behaviour with sharp edges. |
 | 13 | [13-visual-tour.md](13-visual-tour.md) | Screenshots of every major screen, each mapped to the route and controller behind it. |
 | 14 | [14-accounts-and-moderation.md](14-accounts-and-moderation.md) | Registration, profiles, roles, and who approves what. Includes the diagnosis for "why am I not on the community page?". |
 
