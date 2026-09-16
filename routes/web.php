@@ -44,7 +44,6 @@ use App\Http\Controllers\LeadingTeachersReport;
 use App\Http\Controllers\LeadingTeachersSignup;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\MailTemplateController;
-use App\Http\Controllers\MapController;
 use App\Http\Controllers\MatchMakingToolController;
 use App\Http\Controllers\OnlineCoursesController;
 use App\Http\Controllers\OnlineEventsController;
@@ -445,7 +444,6 @@ Route::view(
 )->name('codingathome-turning-code-into-pictures');
 
 Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware('auth');
-Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
 Route::get('/resources', [ResourcesController::class, 'all'])->name('resources');
 Route::get('/resources/learn-and-teach', [ResourcesController::class, 'all'])->name('resources_all');
