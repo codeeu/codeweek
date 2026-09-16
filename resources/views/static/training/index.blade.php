@@ -4,8 +4,8 @@
     $dynamicResults = ($dynamicTrainingResources ?? collect())->map(function ($resource) {
         return [
             'image' => $resource->resolved_card_image,
-            'title' => $resource->card_title,
-            'author' => $resource->card_author,
+            'title' => $resource->forLocale('card_title'),
+            'author' => $resource->forLocale('card_author'),
             'link' => '/training/' . $resource->slug,
             'is_translated' => false,
         ];
@@ -16,14 +16,9 @@
       (object) ['label' => 'Training', 'href' => ''],
     ];
 
+    // CodyColor Kit is not listed here: it is a Nova-managed training resource
+    // and is rendered from $dynamicResults above.
     $results = [
-         [
-            'image' => '/img/learning/cody-color-kit.png',
-            'title' => 'training.lessons.0.title',
-            'author' => 'training.lessons.0.author',
-            'link' => '/training/cody-color-kit',
-            'is_translated' => true,
-        ],
          [
             'image' => '/img/learning/coding-without-computers.png',
             'title' => 'training.lessons.1.title',

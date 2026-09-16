@@ -36,4 +36,12 @@ return [
         'trim',
         explode(',', (string) env('CERTIFICATE_ADMIN_EMAILS', ''))
     ))),
+
+    // Languages that get a full page-content translation panel on Nova training
+    // resources. Kept short on purpose: one panel per locale times ~13 fields
+    // would put hundreds of fields in a single Nova form.
+    'training_translation_locales' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env('TRAINING_TRANSLATION_LOCALES', 'it'))
+    ))),
 ];
