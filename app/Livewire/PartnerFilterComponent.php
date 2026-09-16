@@ -12,8 +12,9 @@ class PartnerFilterComponent extends Component
     // This function will be triggered when a filter is selected
     public function selectFilter($filter)
     {
-        $this->selectedFilter = $filter; // Update the filter
-        $this->dispatch('filterChanged', filter: $filter); // Dispatch an event in Livewire v3
+        $this->selectedFilter = $filter;
+        $this->dispatch('filterChanged', filter: $filter)
+            ->to(PartnerContentComponent::class);
     }
 
     public function render()
