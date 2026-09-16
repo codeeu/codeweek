@@ -33,7 +33,7 @@ class OnlineCalendar extends Component
             ->orderBy('start_date')
             ->get(['start_date'])
             ->groupBy(function ($event) {
-                return $this->effectiveStart($event->start_date)->format('n/Y');
+                return Carbon::parse($event->start_date)->format('n/Y');
             })
             ->map(function ($group, $id) {
                 [$month, $year] = explode('/', $id);
@@ -68,20 +68,10 @@ class OnlineCalendar extends Component
 
             $monthStart = Carbon::createFromDate($this->selectedYear, $this->selectedMonth, 1)->startOfMonth();
 
-            $query->where(function ($monthQuery) use ($monthStart) {
-                $monthQuery->whereBetween('start_date', [$monthStart, $monthStart->copy()->endOfMonth()]);
-
-                if ($monthStart->isSameMonth(Carbon::now())) {
-                    $monthQuery->orWhere('start_date', '<', $monthStart);
-                }
-            });
+            $query->whereBetween('start_date', [$monthStart, $monthStart->copy()->endOfMonth()]);
         }
 
-        $events = $query->get()
-            ->sortBy(function ($event) {
-                return $this->effectiveStart($event->start_date)->getTimestamp();
-            })
-            ->values();
+        $events = $query->get();
 
         $events->each(function ($event) {
             $event->title = str_limit($event->title, 50);
@@ -133,24 +123,12 @@ class OnlineCalendar extends Component
 
     private function baseQuery()
     {
-        // Only the end date gates the list: an activity that began earlier but has not
-        // finished is still open to participants.
+        // The start date alone decides what is upcoming. Gating on the end date instead
+        // surfaced activities starting in 2020-2022 that carry an end date years away.
         return Event::where([
             'activity_type' => 'open-online',
             'status' => 'APPROVED',
-        ])->where('end_date', '>=', Carbon::now());
-    }
-
-    /**
-     * Activities already under way are listed under the current month rather than the
-     * month they originally started in, which may be long past.
-     */
-    private function effectiveStart($startDate): Carbon
-    {
-        $start = Carbon::parse($startDate);
-        $currentMonth = Carbon::now()->firstOfMonth();
-
-        return $start->lessThan($currentMonth) ? $currentMonth : $start;
+        ])->where('start_date', '>=', Carbon::today());
     }
 
     private function eventMatchesLanguage($event, string $selectedLanguage): bool
