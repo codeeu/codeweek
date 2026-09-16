@@ -13,4 +13,15 @@ return [
     'EEDUCATION_CLIENTID' => env('EEDUCATION_CLIENTID', null),
     'LOCALES' => env('LOCALES', null),
     'blog_url' => env('BLOG_URL', 'https://codeweek.eu/blog'),
+
+    // Cloudflare Turnstile. Deployed environments set TURNSTILE_SECRET, while the
+    // code used to read TURNSTILE_SECRET_KEY, which silently disabled verification.
+    // Both names are accepted so neither spelling can turn the CAPTCHA off.
+    'turnstile_sitekey' => env('TURNSTILE_SITEKEY', env('TURNSTILE_SITE_KEY')),
+    'turnstile_secret' => env('TURNSTILE_SECRET_KEY', env('TURNSTILE_SECRET')),
+
+    'contact_form_recipient' => env(
+        'CONTACT_FORM_RECIPIENT_EMAIL',
+        env('ADMIN_EMAIL', 'admin@codeweek.test')
+    ),
 ];

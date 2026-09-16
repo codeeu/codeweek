@@ -40,7 +40,6 @@ Schedule::command('certificate:issues')->hourlyAt(33);
 //Schedule::command('certificates:fix')->everyFiveMinutes();
 
 Schedule::command('app:sync-blogs')->dailyAt('1:00');
-Schedule::command('app:export-search-data-to-json')->dailyAt('2:00');
 
 Schedule::command('events:generate-recurring')->dailyAt('01:00');
 
