@@ -10,7 +10,7 @@ final class SupportProfileRequestParserTest extends TestCase
     public function test_parses_labelled_profile_fields(): void
     {
         $text = <<<'TEXT'
-        Email: bernard@matrixinternet.ie
+        Email: organiser@example.com
         Current first name: Bernard Hanna
         Current last name: Last Name
         Requested first name: Bernard
@@ -19,7 +19,7 @@ final class SupportProfileRequestParserTest extends TestCase
 
         $parsed = (new SupportProfileRequestParser())->parse($text);
 
-        $this->assertSame('bernard@matrixinternet.ie', $parsed['email']);
+        $this->assertSame('organiser@example.com', $parsed['email']);
         $this->assertSame('Bernard', $parsed['firstname']);
         $this->assertSame('Hanna', $parsed['lastname']);
     }
@@ -53,7 +53,7 @@ final class SupportProfileRequestParserTest extends TestCase
     public function test_parses_hanna_to_hannaa_request_without_bleeding_lines(): void
     {
         $text = <<<'TEXT'
-        Email: bernard@matrixinternet.ie
+        Email: organiser@example.com
 
         Current first name: Bernard
         Current last name: Hanna
@@ -66,7 +66,7 @@ final class SupportProfileRequestParserTest extends TestCase
 
         $parsed = (new SupportProfileRequestParser())->parse($text);
 
-        $this->assertSame('bernard@matrixinternet.ie', $parsed['email']);
+        $this->assertSame('organiser@example.com', $parsed['email']);
         $this->assertSame('Bernard', $parsed['firstname']);
         $this->assertSame('Hannaa', $parsed['lastname']);
     }
