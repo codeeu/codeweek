@@ -107,7 +107,9 @@ class User extends Authenticatable implements MustVerifyEmail
      */
 
 
-    protected $guarded = [];
+    // 'approved' controls whether a leading teacher is listed publicly, so it must
+    // never be settable from request data. Set it explicitly instead of mass-assigning.
+    protected $guarded = ['approved'];
 
     /**
      * The attributes that should be hidden for arrays.
