@@ -253,10 +253,6 @@ Route::get('/grassroots-grants-preview', [\App\Http\Controllers\GrassrootsGrants
 //Static training pages
 Route::get('/training', [TrainingController::class, 'index'])->name('training.index');
 Route::get(
-    '/training/cody-color-kit',
-    [StaticPageController::class, 'static']
-)->name('training.module-0');
-Route::get(
     '/training/coding-without-computers',
     [StaticPageController::class, 'static']
 )->name('training.module-1');
@@ -685,7 +681,8 @@ Route::middleware(['auth', 'role:super admin'])->group(function () {
 
 });
 
-// Certificate backend: Excellence & Super Organiser cert generation/sending (bernard@matrixinternet.ie only)
+// Certificate backend: Excellence & Super Organiser cert generation/sending.
+// Access is the CERTIFICATE_ADMIN_EMAILS allowlist, not a role - see EnsureSuperCertificateAdmin.
 Route::middleware(['auth', 'super.certificate.admin'])->prefix('admin/certificate-backend')->name('certificate_backend.')->group(function () {
     Route::get('/', [CertificateBackendController::class, 'index'])->name('index');
     Route::get('/list', [CertificateBackendController::class, 'listRecipients'])->name('list');
