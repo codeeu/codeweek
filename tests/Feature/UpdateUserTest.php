@@ -17,6 +17,7 @@ final class UpdateUserTest extends TestCase
 
         $this->signIn($user);
         $belgium = \App\Country::factory()->create(['iso' => 'BE']);
+        \App\Country::factory()->create(['iso' => 'FR']);
 
         $this->patch('user', [
             'firstname' => 'Changed firstname',
@@ -25,7 +26,7 @@ final class UpdateUserTest extends TestCase
             'bio' => 'Changed Bio',
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
-            'country_iso' => null,
+            'country_iso' => 'FR',
             'privacy' => 1,
             'receive_emails' => 0,
         ]);
@@ -36,7 +37,7 @@ final class UpdateUserTest extends TestCase
             $this->assertEquals('Changed Bio', $user->bio);
             $this->assertEquals('Changed Twitter', $user->twitter);
             $this->assertEquals('Changed Website', $user->website);
-            $this->assertNull($user->country_iso);
+            $this->assertEquals('FR', $user->country_iso);
             $this->assertEquals(1, $user->privacy);
             $this->assertEquals('new@email.com', $user->email_display);
             $this->assertEquals(0, $user->receive_emails);
@@ -60,6 +61,26 @@ final class UpdateUserTest extends TestCase
             $this->assertEquals(1, $user->receive_emails);
 
         });
+    }
+
+    #[Test]
+    public function a_profile_update_requires_a_country(): void
+    {
+        $user = \App\User::factory()->create(['country_iso' => 'BE']);
+        \App\Country::factory()->create(['iso' => 'BE']);
+
+        $this->signIn($user);
+
+        $this->patch('user', [
+            'firstname' => 'Changed firstname',
+            'lastname' => 'Changed lastname',
+            'country_iso' => null,
+            'privacy' => 1,
+            'receive_emails' => 0,
+        ])->assertSessionHasErrors('country_iso');
+
+        $this->assertEquals('BE', $user->fresh()->country_iso);
+        $this->assertNotEquals('Changed firstname', $user->fresh()->firstname);
     }
 
     #[Test]
