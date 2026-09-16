@@ -7,7 +7,6 @@ use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
 use App\Queries\PendingEventsQuery;
 use App\User;
-use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -231,10 +230,7 @@ class EventController extends Controller
     {
         $rejectionText = $request->get('rejectionText', null);
 
-        try {
-            $this->authorize('approve', $event);
-        } catch (AuthorizationException $e) {
-        }
+        $this->authorize('approve', $event);
 
         $event->reject($rejectionText);
     }
