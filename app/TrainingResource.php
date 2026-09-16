@@ -10,6 +10,35 @@ class TrainingResource extends Model
 {
     use HasFactory;
 
+    /**
+     * Fields that can be translated per locale through locale_overrides.
+     *
+     * pdf_links_section is deliberately absent: it has its own resolution path
+     * in pdfLinksSectionForLocale(), which merges the English supporting-detail
+     * block and applies per-URL replacements.
+     */
+    public const TRANSLATABLE_FIELDS = [
+        'card_title',
+        'card_author',
+        'page_title',
+        'hero_author',
+        'hero_button_text',
+        'hero_secondary_button_text',
+        'intro',
+        'highlight_box',
+        'content',
+        'body_image_alt',
+        'video_script_text',
+        'contacts_section',
+        'register_box_section',
+        'about_box_section',
+        'button_text',
+        'secondary_button_text',
+        'third_button_text',
+        'meta_title',
+        'meta_description',
+    ];
+
     protected $fillable = [
         'slug',
         'card_title',
@@ -106,6 +135,39 @@ class TrainingResource extends Model
         }
 
         return $slug;
+    }
+
+    /**
+     * Value of a translatable field for the active (or given) locale.
+     *
+     * Falls back to the default (English) attribute per field, so a partly
+     * translated locale never renders blank sections.
+     */
+    public function forLocale(string $field, ?string $locale = null): ?string
+    {
+        $default = $this->getAttribute($field);
+
+        if (! in_array($field, self::TRANSLATABLE_FIELDS, true)) {
+            return $default;
+        }
+
+        $locale = $locale ?? app()->getLocale();
+        $overrides = $this->locale_overrides ?? [];
+        $value = $overrides[$locale][$field] ?? null;
+
+        if (! is_string($value) || $this->isBlankHtml($value)) {
+            return $default;
+        }
+
+        return $value;
+    }
+
+    /**
+     * Trix stores an emptied editor as markup like "<div><br></div>".
+     */
+    protected function isBlankHtml(string $value): bool
+    {
+        return trim(strip_tags($value)) === '' && ! str_contains($value, '<img');
     }
 
     public function getResolvedCardImageAttribute(): string

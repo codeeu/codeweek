@@ -1,14 +1,20 @@
 @extends('layout.new_base')
 
 @php
+    // Translated value for the active locale, falling back to English per field.
+    $t = fn (string $field) => $trainingResource->forLocale($field);
+
+    $localisedIntro = $t('intro');
+    $localisedContent = $t('content');
+
     $fallbackDescription = \Illuminate\Support\Str::limit(
-        trim(strip_tags(($trainingResource->intro ?? '') . ' ' . ($trainingResource->content ?? ''))),
+        trim(strip_tags(($localisedIntro ?? '') . ' ' . ($localisedContent ?? ''))),
         160
     );
 
-    $displayTitle = $trainingResource->page_title ?: $trainingResource->card_title ?: 'Training';
-    $pageTitle = $trainingResource->meta_title ?: ($displayTitle . ' – EU Code Week');
-    $pageDescription = $trainingResource->meta_description ?: $fallbackDescription;
+    $displayTitle = $t('page_title') ?: $t('card_title') ?: 'Training';
+    $pageTitle = $t('meta_title') ?: ($displayTitle . ' – EU Code Week');
+    $pageDescription = $t('meta_description') ?: $fallbackDescription;
 
     $introClass = "text-[#20262C] font-normal text-lg md:text-xl p-0 mb-6 [&_p]:p-0 [&_p]:mb-6 [&_a]:text-dark-blue [&_a]:hover:underline";
     $contentClass = "text-[#333E48] font-normal text-lg md:text-xl p-0 mb-6 min-w-0 [&_p]:p-0 [&_p]:mb-6 [&_h2]:text-dark-blue [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:leading-[44px] [&_h2]:font-medium [&_h2]:font-['Montserrat'] [&_h2]:mb-4 [&_h3]:text-dark-blue [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-medium [&_h3]:font-['Montserrat'] [&_h3]:mb-4 [&_ul]:pl-8 [&_ul]:m-0 [&_ul]:mb-6 [&_ul]:list-disc [&_ol]:pl-8 [&_ol]:m-0 [&_ol]:mb-6 [&_ol]:list-decimal [&_li]:p-0 [&_li]:text-lg [&_li]:font-normal [&_li]:leading-7 [&_li]:text-default [&_a]:text-dark-blue [&_a]:hover:underline [&_a]:break-words [&_img]:max-w-full [&_img]:w-auto [&_img]:h-auto [&_img]:my-8 [&_img]:mx-auto [&_img]:block [&_svg]:max-w-full [&_svg]:h-auto [&_svg]:block";
@@ -24,7 +30,7 @@
         return \Illuminate\Support\Str::startsWith($url, ['http://', 'https://', '//']);
     };
 
-    $renderedContent = $trainingResource->content ?? '';
+    $renderedContent = $localisedContent ?? '';
     $roadmapEmbedUrl = trim((string) ($trainingResource->roadmap_pdf_embed_url ?? ''));
     $roadmapEmbedKind = strtolower(trim((string) ($trainingResource->roadmap_embed_kind ?? 'pdf')));
     if (! in_array($roadmapEmbedKind, ['pdf', 'svg', 'image', 'none'], true)) {
@@ -76,25 +82,25 @@
         @endif
 
         @include('codingathome.banner', [
-            'author' => $trainingResource->hero_author,
+            'author' => $t('hero_author'),
             'title' => $displayTitle,
-            'primaryButtonText' => $trainingResource->hero_button_text,
+            'primaryButtonText' => $t('hero_button_text'),
             'primaryButtonUrl' => $trainingResource->hero_button_url,
-            'secondaryButtonText' => $trainingResource->hero_secondary_button_text,
+            'secondaryButtonText' => $t('hero_secondary_button_text'),
             'secondaryButtonUrl' => $trainingResource->hero_secondary_button_url,
         ])
 
         <section class="relative z-10">
             <div class="relative z-10 py-10 codeweek-container-lg">
-                @if(!empty($trainingResource->highlight_box))
+                @if(!empty($t('highlight_box')))
                     <div class="text-[#6B7280] font-normal text-sm md:text-base p-4 bg-gray-50 rounded mb-6 [&_p]:p-0 [&_p]:mb-3 [&_p]:text-[#20262C] [&_p]:font-normal [&_p]:text-lg [&_p]:md:text-xl [&_p:last-child]:mb-0 [&_strong]:font-semibold [&_a]:text-dark-blue [&_a]:hover:underline">
-                        {!! $trainingResource->highlight_box !!}
+                        {!! $t('highlight_box') !!}
                     </div>
                 @endif
 
-                @if(!empty($trainingResource->intro))
+                @if(!empty($localisedIntro))
                     <div class="{{ $introClass }}">
-                        {!! $trainingResource->intro !!}
+                        {!! $localisedIntro !!}
                     </div>
                 @endif
 
@@ -111,14 +117,14 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {{ $trainingResource->video_script_text ?: 'Download the video script' }}
+                        {{ $t('video_script_text') ?: 'Download the video script' }}
                     </a>
                 @endif
 
                 @if(!empty($trainingResource->resolved_body_image))
                     <img
                         src="{{ $trainingResource->resolved_body_image }}"
-                        alt="{{ $trainingResource->body_image_alt ?: $displayTitle }}"
+                        alt="{{ $t('body_image_alt') ?: $displayTitle }}"
                         class="mb-12 w-full h-full max-h-[630px] object-contain"
                         style="max-height: 630px;"
                     />
@@ -141,18 +147,18 @@
                     @endif
                 @endif
 
-                @if(!empty($trainingResource->contacts_section))
+                @if(!empty($t('contacts_section')))
                     <div class="{{ $contactsClass }}">
-                        {!! $trainingResource->contacts_section !!}
+                        {!! $t('contacts_section') !!}
                     </div>
                 @endif
 
-                @if(!empty($trainingResource->register_box_section))
+                @if(!empty($t('register_box_section')))
                     <div class="p-6 mb-8 bg-blue-50 border-l-4 border-dark-blue">
                         <div class="{{ $registerClass }}">
-                            {!! $trainingResource->register_box_section !!}
+                            {!! $t('register_box_section') !!}
                         </div>
-                        @if(!empty($trainingResource->third_button_text) && !empty($trainingResource->third_button_url))
+                        @if(!empty($t('third_button_text')) && !empty($trainingResource->third_button_url))
                             <div class="mt-5">
                                 <a
                                     class="inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
@@ -162,30 +168,30 @@
                                         rel="noopener noreferrer"
                                     @endif
                                 >
-                                    {{ $trainingResource->third_button_text }}
+                                    {{ $t('third_button_text') }}
                                 </a>
                             </div>
                         @endif
                     </div>
                 @endif
 
-                @if(!empty($trainingResource->about_box_section))
+                @if(!empty($t('about_box_section')))
                     <div class="w-full bg-light-blue rounded-lg p-6 flex flex-col md:flex-row text-['Blinker'] gap-2 mb-8">
                         <img class="min-w-8 min-h-8" src="/images/icon_info.svg" alt="Info" />
                         <div class="{{ $aboutBoxClass }}">
-                            {!! $trainingResource->about_box_section !!}
+                            {!! $t('about_box_section') !!}
                         </div>
                     </div>
                 @endif
 
                 @if(
-                    (!empty($trainingResource->button_text) && !empty($trainingResource->button_url))
-                    || (!empty($trainingResource->secondary_button_text) && !empty($trainingResource->secondary_button_url))
+                    (!empty($t('button_text')) && !empty($trainingResource->button_url))
+                    || (!empty($t('secondary_button_text')) && !empty($trainingResource->secondary_button_url))
                 )
                     <div class="mt-12 mb-4">
                         <h2 class="text-dark-blue text-2xl md:text-3xl leading-[44px] font-medium font-['Montserrat'] mb-5">Toolkit access</h2>
                         <div class="flex flex-wrap gap-4 items-center">
-                            @if(!empty($trainingResource->button_text) && !empty($trainingResource->button_url))
+                            @if(!empty($t('button_text')) && !empty($trainingResource->button_url))
                                 <a
                                     class="inline-block bg-[#F95C22] rounded-full py-2.5 px-6 font-['Blinker'] hover:bg-hover-orange duration-300 text-base font-semibold leading-7 text-black normal-case"
                                     href="{{ $trainingResource->button_url }}"
@@ -194,10 +200,10 @@
                                         rel="noopener noreferrer"
                                     @endif
                                 >
-                                    {{ $trainingResource->button_text }}
+                                    {{ $t('button_text') }}
                                 </a>
                             @endif
-                            @if(!empty($trainingResource->secondary_button_text) && !empty($trainingResource->secondary_button_url))
+                            @if(!empty($t('secondary_button_text')) && !empty($trainingResource->secondary_button_url))
                                 <a
                                     class="inline-block rounded-full py-2.5 px-6 border border-[#1C4DA1] text-[#1C4DA1] font-['Blinker'] text-base font-semibold leading-7 normal-case hover:bg-[#1C4DA1] hover:text-white duration-300"
                                     href="{{ $trainingResource->secondary_button_url }}"
@@ -206,7 +212,7 @@
                                         rel="noopener noreferrer"
                                     @endif
                                 >
-                                    {{ $trainingResource->secondary_button_text }}
+                                    {{ $t('secondary_button_text') }}
                                 </a>
                             @endif
                         </div>
