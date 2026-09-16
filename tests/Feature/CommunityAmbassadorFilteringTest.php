@@ -77,6 +77,7 @@ class CommunityAmbassadorFilteringTest extends TestCase
 
         $res->assertSee('Dovile', false);
         $res->assertDontSee('Marie', false);
-        $res->assertSee(asset('images/default.png'), false);
+        // The teacher payload is emitted through @json, which escapes forward slashes.
+        $res->assertSee(str_replace('/', '\/', asset('images/default.png')), false);
     }
 }

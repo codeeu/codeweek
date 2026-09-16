@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
-final class GermanUsersCreation extends TestCase
+final class GermanUsersCreationTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -16,9 +16,9 @@ final class GermanUsersCreation extends TestCase
     public function it_should_create_user_and_change_owner(): void
     {
 
-        $events = \App\Event::factory()->create(['user_email' => 'foo@bar.com', 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-baden'], 10);
-        $events = \App\Event::factory()->create(['user_email' => 'foo@bar.com', 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-bonn'], 7);
-        $events = \App\Event::factory()->create(['user_email' => 'foo@bar.com', 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-hamburg'], 9);
+        $events = \App\Event::factory()->count(10)->create(['user_email' => 'foo@bar.com', 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-baden']);
+        $events = \App\Event::factory()->count(7)->create(['user_email' => 'foo@bar.com', 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-bonn']);
+        $events = \App\Event::factory()->count(9)->create(['user_email' => 'foo@bar.com', 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-hamburg']);
 
         $this->assertEmpty(User::where('email', '=', 'foo@bar.com')->get());
 
@@ -36,7 +36,7 @@ final class GermanUsersCreation extends TestCase
     {
 
         $user = \App\User::factory()->create(['email' => 'foo@bar.com']);
-        $events = \App\Event::factory()->create(['user_email' => 'foo@bar.com', 'creator_id' => 555, 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-baden'], 10);
+        $events = \App\Event::factory()->count(10)->create(['user_email' => 'foo@bar.com', 'creator_id' => 555, 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-baden']);
 
         $this->assertNotEmpty(Event::where('creator_id', 555)->get());
         $this->assertEmpty(Event::where('creator_id', $user->id)->get());
