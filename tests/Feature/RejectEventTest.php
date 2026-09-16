@@ -45,6 +45,41 @@ final class RejectEventTest extends TestCase
     }
 
     #[Test]
+    public function ambassador_can_reject_an_event_in_their_own_country(): void
+    {
+        $this->withExceptionHandling();
+
+        $ambassador = \App\User::factory()->create(['country_iso' => 'BE']);
+        $ambassador->assignRole('ambassador');
+
+        $this->signIn($ambassador);
+
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'BE']);
+
+        $this->post(route('event.reject', $event))->assertOk();
+
+        $this->assertEquals('REJECTED', $event->fresh()->status);
+    }
+
+    #[Test]
+    public function ambassador_cannot_reject_an_event_in_another_country(): void
+    {
+        $this->withExceptionHandling();
+
+        $ambassador = \App\User::factory()->create(['country_iso' => 'BE']);
+        $ambassador->assignRole('ambassador');
+
+        $this->signIn($ambassador);
+
+        $event = \App\Event::factory()->create(['status' => 'PENDING', 'country_iso' => 'FR']);
+
+        $this->post(route('event.reject', $event))->assertForbidden();
+
+        $this->assertEquals('PENDING', $event->fresh()->status);
+        $this->assertCount(0, $event->moderations()->get());
+    }
+
+    #[Test]
     public function email_should_be_sent_to_event_email_when_event_is_rejected(): void
     {
 
