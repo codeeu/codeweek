@@ -12,9 +12,9 @@
                         wire:model.live="selectedDate"
                         class="w-full appearance-none rounded-full border border-slate-200 bg-white py-3 pl-12 pr-10 text-slate-500 font-semibold focus:outline-none focus:ring-2 focus:ring-[#1C4DA1]"
                     >
-                        <option value="all">All months</option>
+                        <option value="all" @selected($selectedDate === 'all')>All months</option>
                         @foreach($months as $month)
-                            <option value="{{ $month['id'] }}">{{ $month['name'] }}</option>
+                            <option value="{{ $month['id'] }}" @selected($month['id'] === $selectedDate)>{{ $month['name'] }}</option>
                         @endforeach
                     </select>
                 </div>
@@ -29,7 +29,7 @@
                     class="w-full appearance-none rounded-full border border-slate-200 bg-white py-3 px-4 text-slate-500 font-semibold focus:outline-none focus:ring-2 focus:ring-[#1C4DA1]"
                 >
                     @foreach($languages as $language)
-                        <option value="{{ $language['id'] }}">{{ $language['name'] }}</option>
+                        <option value="{{ $language['id'] }}" @selected($language['id'] === $selectedLanguage)>{{ $language['name'] }}</option>
                     @endforeach
                 </select>
             </div>
