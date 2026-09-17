@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Country;
 use App\Event;
 use Carbon\Carbon;
+use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -12,12 +13,16 @@ class OnlineCalendar extends Component
 {
     use WithPagination;
 
+    // The pagination links are ordinary hrefs, so every page change is a fresh request.
+    // Both filters have to travel in the URL or the new page comes back unfiltered.
+    #[Url(as: 'language')]
     public $selectedLanguage = '';
 
     public $selectedYear;
 
     public $selectedMonth;
 
+    #[Url(as: 'month')]
     public $selectedDate = 'all';
 
     public $months = [];
@@ -26,8 +31,6 @@ class OnlineCalendar extends Component
     {
         $this->selectedYear = Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
-        $this->selectedDate = 'all';
-        $this->selectedLanguage = '';
 
         $this->months = $this->baseQuery()
             ->orderBy('start_date')
@@ -114,10 +117,22 @@ class OnlineCalendar extends Component
         return view('livewire.online-calendar', [
             'countryNames' => $this->getCountryNamesFromEvents($events),
             'languages' => $languages,
-            'filteredEvents' => $filteredEvents->paginate(24),
+            'filteredEvents' => $filteredEvents->paginate(24)->appends($this->activeFilters()),
             'totalUpcoming' => $totalUpcoming,
             'visibleCount' => $filteredEvents->count(),
             'monthLabel' => $monthLabel,
+        ]);
+    }
+
+    /**
+     * The active filters under the names they use in the URL, so that the page links
+     * rebuilt by the paginator carry them over.
+     */
+    private function activeFilters(): array
+    {
+        return array_filter([
+            'language' => $this->selectedLanguage,
+            'month' => $this->selectedDate === 'all' ? null : $this->selectedDate,
         ]);
     }
 
