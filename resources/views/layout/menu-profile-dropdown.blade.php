@@ -32,7 +32,7 @@
 @role('super admin')
 <li>
     <img src="/images/user_menu_volunteers.svg" class="icon">
-    <a class="cookweek-link hover-underline" href="{{route('promoted_events')}}">
+    <a class="cookweek-link hover-underline" href="{{route('admin.online-events')}}">
         @lang('menu.online_events')
     </a>
 </li>
