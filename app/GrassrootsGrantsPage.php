@@ -37,6 +37,27 @@ class GrassrootsGrantsPage extends Model
         return $this->hubs()->where('active', true);
     }
 
+    public function withoutExcludedEvidence(): self
+    {
+        $this->loadMissing([
+            'activeHubs.activeProjects.links',
+            'activeHubs.activeProjects.images',
+        ]);
+
+        $this->activeHubs->each(function (GrassrootsGrantsHub $hub): void {
+            $hub->activeProjects->each(function (GrassrootsGrantsProject $project): void {
+                $project->setRelation(
+                    'images',
+                    $project->images
+                        ->reject(fn (GrassrootsGrantsProjectImage $image): bool => $image->isExcludedFromPublic())
+                        ->values()
+                );
+            });
+        });
+
+        return $this;
+    }
+
     public static function config(): self
     {
         $page = self::first();

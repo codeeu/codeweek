@@ -9,6 +9,20 @@ class GrassrootsGrantsProjectImage extends Model
 {
     protected $table = 'grassroots_grants_project_images';
 
+    /**
+     * Internal grant reports that must not appear on the public grassroots grants page.
+     *
+     * @var list<string>
+     */
+    public const EXCLUDED_PUBLIC_FILENAMES = [
+        'Pazin City Library_Final narrative report in English.pdf',
+        'Article about workshops_My first code.pdf',
+        'BETA_Evidence of conducted workshops.pdf',
+        'BETA_Final narrative report in English.pdf',
+        'BETA_Narrative report with evidence.pdf',
+        'HROBOS_Final narrative report with evidence.pdf',
+    ];
+
     protected $fillable = [
         'project_id',
         'url',
@@ -60,5 +74,32 @@ class GrassrootsGrantsProjectImage extends Model
     public function isPdf(): bool
     {
         return $this->file_type === 'pdf' || str_ends_with(strtolower($this->url), '.pdf');
+    }
+
+    public function isExcludedFromPublic(): bool
+    {
+        return self::urlIsExcludedFromPublic((string) $this->url);
+    }
+
+    public static function urlIsExcludedFromPublic(string $url): bool
+    {
+        $path = parse_url($url, PHP_URL_PATH) ?: $url;
+        $filename = rawurldecode(basename($path));
+
+        return in_array($filename, self::EXCLUDED_PUBLIC_FILENAMES, true);
+    }
+
+    public static function purgeExcludedFromPublic(): int
+    {
+        $ids = self::query()
+            ->pluck('url', 'id')
+            ->filter(fn ($url): bool => self::urlIsExcludedFromPublic((string) $url))
+            ->keys();
+
+        if ($ids->isEmpty()) {
+            return 0;
+        }
+
+        return self::query()->whereIn('id', $ids->all())->delete();
     }
 }

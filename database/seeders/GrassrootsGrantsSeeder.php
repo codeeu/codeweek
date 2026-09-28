@@ -18,14 +18,7 @@ class GrassrootsGrantsSeeder extends Seeder
      *
      * @var list<string>
      */
-    public const EXCLUDED_EVIDENCE_FILES = [
-        'Pazin City Library_Final narrative report in English.pdf',
-        'Article about workshops_My first code.pdf',
-        'BETA_Evidence of conducted workshops.pdf',
-        'BETA_Final narrative report in English.pdf',
-        'BETA_Narrative report with evidence.pdf',
-        'HROBOS_Final narrative report with evidence.pdf',
-    ];
+    public const EXCLUDED_EVIDENCE_FILES = GrassrootsGrantsProjectImage::EXCLUDED_PUBLIC_FILENAMES;
 
     public function run(): void
     {
@@ -109,7 +102,7 @@ class GrassrootsGrantsSeeder extends Seeder
 
         $position = 0;
         foreach ($finder as $file) {
-            if (in_array($file->getFilename(), self::EXCLUDED_EVIDENCE_FILES, true)) {
+            if (in_array($file->getFilename(), GrassrootsGrantsProjectImage::EXCLUDED_PUBLIC_FILENAMES, true)) {
                 continue;
             }
 

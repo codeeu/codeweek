@@ -32,9 +32,6 @@ class GrassrootsGrantsController extends Controller
 
     private function loadPage(): GrassrootsGrantsPage
     {
-        return GrassrootsGrantsPage::config()->load([
-            'activeHubs.activeProjects.links',
-            'activeHubs.activeProjects.images',
-        ]);
+        return GrassrootsGrantsPage::config()->withoutExcludedEvidence();
     }
 }
