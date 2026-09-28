@@ -48,11 +48,21 @@
         margin-top: 1.5rem;
     }
 
+    .grants-gallery > * {
+        min-width: 0;
+    }
+
     .grants-gallery img {
         width: 100%;
         height: 160px;
         object-fit: cover;
         border-radius: 12px;
+    }
+
+    .grants-gallery a {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        hyphens: auto;
     }
 </style>
 
@@ -214,8 +224,8 @@
                                                         <div class="grants-gallery">
                                                             @foreach($project->images as $image)
                                                                 @if($image->isPdf())
-                                                                    <a href="{{ $image->resolvedUrl() }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-4 bg-[#E8EDF6] rounded-xl text-dark-blue font-semibold text-sm text-center min-h-[160px]">
-                                                                        PDF: {{ basename($image->url) }}
+                                                                    <a href="{{ $image->resolvedUrl() }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center p-4 bg-[#E8EDF6] rounded-xl text-dark-blue font-semibold text-sm text-center min-h-[160px] min-w-0">
+                                                                        PDF: {{ basename(rawurldecode($image->url)) }}
                                                                     </a>
                                                                 @else
                                                                     <img src="{{ $image->resolvedUrl() }}" alt="{{ $image->alt ?: $project->title }}" loading="lazy" />
