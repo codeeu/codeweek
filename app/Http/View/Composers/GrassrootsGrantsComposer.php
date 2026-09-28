@@ -16,11 +16,6 @@ class GrassrootsGrantsComposer
             return;
         }
 
-        $page = GrassrootsGrantsPage::config()->load([
-            'activeHubs.activeProjects.links',
-            'activeHubs.activeProjects.images',
-        ]);
-
-        $view->with('page', $page);
+        $view->with('page', GrassrootsGrantsPage::config()->withoutExcludedEvidence());
     }
 }
