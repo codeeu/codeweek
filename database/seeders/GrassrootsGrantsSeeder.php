@@ -13,6 +13,20 @@ use Symfony\Component\Finder\Finder;
 
 class GrassrootsGrantsSeeder extends Seeder
 {
+    /**
+     * Internal grant reports that must not be published with project evidence.
+     *
+     * @var list<string>
+     */
+    public const EXCLUDED_EVIDENCE_FILES = [
+        'Pazin City Library_Final narrative report in English.pdf',
+        'Article about workshops_My first code.pdf',
+        'BETA_Evidence of conducted workshops.pdf',
+        'BETA_Final narrative report in English.pdf',
+        'BETA_Narrative report with evidence.pdf',
+        'HROBOS_Final narrative report with evidence.pdf',
+    ];
+
     public function run(): void
     {
         if (! Schema::hasTable('grassroots_grants_page')) {
@@ -95,6 +109,10 @@ class GrassrootsGrantsSeeder extends Seeder
 
         $position = 0;
         foreach ($finder as $file) {
+            if (in_array($file->getFilename(), self::EXCLUDED_EVIDENCE_FILES, true)) {
+                continue;
+            }
+
             $url = '/images/grants/'.$hubFolder.'/'.$projectFolder.'/'.$file->getFilename();
 
             $extension = strtolower($file->getExtension());
