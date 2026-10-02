@@ -17,7 +17,8 @@ class GermanyCentral extends Command
     protected $signature = 'api:germany-central
                             {--url=https://events.codeweek.de/api/v1/export/ : Central DE export URL}
                             {--limit=0 : Limit number of items (0 = all)}
-                            {--import : Persist events (default is dry-run only)}';
+                            {--import : Persist events (default is dry-run only)}
+                            {--no-delete : Skip soft-deleting events missing from the export}';
 
     protected $description = 'Validate (and optionally import) the central codeweek.de event export';
 
@@ -28,6 +29,7 @@ class GermanyCentral extends Command
         $url = (string) $this->option('url');
         $limit = (int) $this->option('limit');
         $doImport = (bool) $this->option('import');
+        $skipDelete = (bool) $this->option('no-delete');
 
         $this->info("Fetching: {$url}");
         $this->info($doImport ? 'Mode: IMPORT (writes to DB)' : 'Mode: DRY-RUN (no DB writes)');
@@ -61,6 +63,9 @@ class GermanyCentral extends Command
             return self::FAILURE;
         }
 
+        // Collect feed uids from the full payload before any --limit slice.
+        $seenSourceRefs = $this->collectSeenSourceRefs($json);
+
         $items = $json;
         if ($limit > 0) {
             $items = array_slice($items, 0, $limit);
@@ -71,6 +76,8 @@ class GermanyCentral extends Command
         $updated = 0;
         $skipped = 0;
         $failed = 0;
+        $deleted = 0;
+        $wouldDelete = 0;
         $issues = [];
         $withTags = 0;
         $withLeadingTeacher = 0;
@@ -134,6 +141,21 @@ class GermanyCentral extends Command
         $bar->finish();
         $this->newLine(2);
 
+        // Soft-delete previously imported DE events that disappeared from the export.
+        // Skip when --limit is set (partial feed) or feed is empty (likely API failure).
+        $deleteStats = $this->reconcileMissingEvents(
+            $seenSourceRefs,
+            $doImport,
+            $skipDelete,
+            $limit,
+            count($json)
+        );
+        $deleted = $deleteStats['deleted'];
+        $wouldDelete = $deleteStats['would_delete'];
+        if ($deleteStats['skipped_reason'] !== null) {
+            $this->warn('Deletion sync skipped: '.$deleteStats['skipped_reason']);
+        }
+
         $this->table(
             ['Metric', 'Value'],
             [
@@ -142,6 +164,7 @@ class GermanyCentral extends Command
                 ['Valid', $ok],
                 ['Created', $doImport ? $created : 'n/a'],
                 ['Updated', $doImport ? $updated : 'n/a'],
+                ['Soft-deleted (missing from feed)', $doImport ? $deleted : $wouldDelete.' (would delete)'],
                 ['Skipped (validation)', $skipped],
                 ['Failed (save)', $doImport ? $failed : 'n/a'],
                 ['With tags', $withTags],
@@ -162,6 +185,86 @@ class GermanyCentral extends Command
         }
 
         return ($skipped > 0 || $failed > 0) ? self::FAILURE : self::SUCCESS;
+    }
+
+    /**
+     * @param  array<int, mixed>  $items
+     * @return array<int, string>
+     */
+    private function collectSeenSourceRefs(array $items): array
+    {
+        $refs = [];
+        foreach ($items as $item) {
+            if (! is_array($item) || ! isset($item['uid']) || ! is_numeric($item['uid'])) {
+                continue;
+            }
+            $refs[] = self::FEED_KEY.':'.(int) $item['uid'];
+        }
+
+        return array_values(array_unique($refs));
+    }
+
+    /**
+     * Soft-delete codeweek-de events that are no longer present in the export.
+     *
+     * @param  array<int, string>  $seenSourceRefs
+     * @return array{deleted: int, would_delete: int, skipped_reason: ?string}
+     */
+    private function reconcileMissingEvents(
+        array $seenSourceRefs,
+        bool $doImport,
+        bool $skipDelete,
+        int $limit,
+        int $fullFeedCount
+    ): array {
+        $result = ['deleted' => 0, 'would_delete' => 0, 'skipped_reason' => null];
+
+        if ($skipDelete) {
+            $result['skipped_reason'] = '--no-delete flag set';
+
+            return $result;
+        }
+
+        if ($limit > 0) {
+            $result['skipped_reason'] = '--limit is set (partial feed would incorrectly delete other events)';
+
+            return $result;
+        }
+
+        if ($fullFeedCount === 0 || $seenSourceRefs === []) {
+            $result['skipped_reason'] = 'export was empty — refusing to delete all imported German events';
+
+            return $result;
+        }
+
+        $query = Event::query()
+            ->where('source_ref', 'like', self::FEED_KEY.':%')
+            ->whereNotIn('source_ref', $seenSourceRefs);
+
+        $result['would_delete'] = (int) $query->count();
+
+        if (! $doImport) {
+            return $result;
+        }
+
+        if ($result['would_delete'] === 0) {
+            return $result;
+        }
+
+        // Soft-delete in chunks to avoid huge IN lists / long locks.
+        $result['deleted'] = 0;
+        Event::query()
+            ->where('source_ref', 'like', self::FEED_KEY.':%')
+            ->whereNotIn('source_ref', $seenSourceRefs)
+            ->orderBy('id')
+            ->chunkById(200, function ($events) use (&$result) {
+                foreach ($events as $event) {
+                    $event->delete();
+                    $result['deleted']++;
+                }
+            });
+
+        return $result;
     }
 
     private function validateItem(array $item): array
@@ -302,7 +405,7 @@ class GermanyCentral extends Command
         $attrs = $this->mapAttrs($item, $user->id ?: $fallbackCreatorId);
         $attrs['creator_id'] = $user->id;
 
-        $event = Event::where('source_ref', $sourceRef)->first();
+        $event = Event::withTrashed()->where('source_ref', $sourceRef)->first();
         $created = false;
 
         if (! $event) {
@@ -313,6 +416,9 @@ class GermanyCentral extends Command
             $event->updated = now();
             $event->save();
         } else {
+            if ($event->trashed()) {
+                $event->restore();
+            }
             $attrs['updated'] = now();
             // Keep existing picture if incoming is empty
             if (empty($attrs['picture']) && ! empty($event->picture)) {
