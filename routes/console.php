@@ -23,6 +23,7 @@ Schedule::command('notify:administrators')->hourlyAt(30);
 Schedule::command('rss:meetandcode')->hourlyAt(5);
 
 // Central codeweek.de export only (legacy per-city feeds retired by Datenfreunde).
+// Soft-deletes codeweek-de:{uid} events that disappear from the export.
 Schedule::command('api:germany-central --import')->hourlyAt(10);
 
 Schedule::command('magic:key')->hourlyAt(13);
