@@ -76,12 +76,38 @@ class BulkEventUploadController extends Controller
                 ->withInput();
         }
 
-        $tempDisk = $this->tempDisk();
-        $path = $file->storeAs(
-            'temp/bulk-events',
-            'bulk_events_'.time().'_'.Str::random(8).'.'.$extension,
-            ['disk' => $tempDisk, 'visibility' => 'private']
-        );
+        $tempDisk = BulkEventUploadCache::tempDisk();
+        $path = 'temp/bulk-events/bulk_events_'.time().'_'.Str::random(8).'.'.$extension;
+
+        try {
+            $stored = Storage::disk($tempDisk)->put(
+                $path,
+                $file->get(),
+                ['visibility' => 'private']
+            );
+        } catch (\Throwable $e) {
+            Log::error('Bulk event upload: failed to store temp file', [
+                'disk' => $tempDisk,
+                'path' => $path,
+                'error' => $e->getMessage(),
+            ]);
+
+            return redirect()->route('admin.bulk-upload.index')
+                ->withErrors(['file' => 'Could not store upload on '.$tempDisk.': '.$e->getMessage()])
+                ->withInput();
+        }
+
+        if ($stored === false || ! Storage::disk($tempDisk)->exists($path)) {
+            Log::error('Bulk event upload: temp file missing immediately after store', [
+                'disk' => $tempDisk,
+                'path' => $path,
+                'stored' => $stored,
+            ]);
+
+            return redirect()->route('admin.bulk-upload.index')
+                ->withErrors(['file' => 'Could not store upload on shared disk ('.$tempDisk.'). Check AWS credentials / BULK_UPLOAD_TEMP_DISK.'])
+                ->withInput();
+        }
 
         $headerCheck = BulkEventUploadValidator::validateRequiredColumns($path, $tempDisk);
         if (isset($headerCheck['error'])) {
@@ -188,16 +214,22 @@ class BulkEventUploadController extends Controller
         }
 
         $path = (string) ($payload['path'] ?? '');
-        $disk = (string) ($payload['disk'] ?? $this->tempDisk());
+        $disk = BulkEventUploadCache::tempDisk($payload['disk'] ?? null);
+
         if ($path === '' || ! Storage::disk($disk)->exists($path)) {
             Log::warning('Bulk event import: temp file missing', [
                 'token' => $token,
                 'disk' => $disk,
+                'cached_disk' => $payload['disk'] ?? null,
                 'path' => $path,
             ]);
 
             return redirect()->route('admin.bulk-upload.index')
-                ->withErrors(['import' => 'Uploaded file no longer available. Please upload again.']);
+                ->withErrors(['import' => 'Uploaded file no longer available (disk: '.$disk.'). Please upload again.']);
+        }
+
+        if (($payload['disk'] ?? null) !== $disk) {
+            BulkEventUploadCache::merge($token, ['disk' => $disk]);
         }
 
         BulkEventUploadCache::merge($token, [
@@ -236,15 +268,5 @@ class BulkEventUploadController extends Controller
 
         return redirect()->route('admin.bulk-upload.index')
             ->with('info', 'Report no longer available. Run an import to see a new report.');
-    }
-
-    /**
-     * Shared temp disk (Amazon S3). `local` is not shared across web nodes.
-     */
-    private function tempDisk(): string
-    {
-        $disk = (string) config('filesystems.bulk_upload_temp_disk', 's3');
-
-        return $disk !== '' ? $disk : 's3';
     }
 }

@@ -25,6 +25,26 @@ final class BulkEventUploadCache
     }
 
     /**
+     * Shared temp disk for validate → import. Never use `local` on deployed apps
+     * (Forge may still set BULK_UPLOAD_TEMP_DISK=local from the old example).
+     */
+    public static function tempDisk(?string $cachedDisk = null): string
+    {
+        $configured = (string) ($cachedDisk ?: config('filesystems.bulk_upload_temp_disk', 's3'));
+        $cloud = (string) config('filesystems.cloud', 's3');
+
+        if (app()->environment('local', 'testing')) {
+            return $configured !== '' ? $configured : 'local';
+        }
+
+        if ($configured === '' || $configured === 'local') {
+            return $cloud !== '' ? $cloud : 's3';
+        }
+
+        return $configured;
+    }
+
+    /**
      * @return array<string, mixed>|null
      */
     public static function get(string $token): ?array
