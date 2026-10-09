@@ -5,9 +5,26 @@ return [
     'cloud' => env('FILESYSTEM_CLOUD', 's3'),
 
     'resources_import_temp_disk' => env('RESOURCES_IMPORT_TEMP_DISK', 'local'),
-    'bulk_upload_temp_disk' => env('BULK_UPLOAD_TEMP_DISK', 'local'),
+
+    // Shared Amazon S3 (or FILESYSTEM_CLOUD). `local` breaks multi-server:
+    // validate stores on one node, import hits another → file missing.
+    'bulk_upload_temp_disk' => env('BULK_UPLOAD_TEMP_DISK', 's3'),
 
     'disks' => [
+        'local' => [
+            'driver' => 'local',
+            'root' => storage_path('app'),
+            'throw' => false,
+        ],
+
+        'public' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         'latex' => [
             'driver' => 'local',
             'root'   => resource_path('latex'),
