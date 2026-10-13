@@ -75,7 +75,7 @@
         @endif
 
         <section>
-            <img class="w-full h-auto lg:h-[520px] object-cover" src="{{$event->picture_detail_path()}}"/>
+            <img class="w-full h-auto max-h-[500px] object-cover" src="{{$event->picture_detail_path()}}"/>
         </section>
 
         @canany(['edit', 'delete'], $event)
