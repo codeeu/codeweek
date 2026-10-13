@@ -250,20 +250,29 @@ final class EventsAPITest extends TestCase
             'end_date' => Carbon::now()->setYear(2022),
         ]);
 
+        $centralFeedEvent = \App\Event::factory()->create([
+            'title' => 'Central Feed Event',
+            'status' => 'APPROVED',
+            'country_iso' => 'DE',
+            'codeweek_for_all_participation_code' => 'cw-codeweek-de',
+            'source_ref' => 'codeweek-de:11461',
+            'mass_added_for' => 'API codeweek_de',
+            'end_date' => Carbon::now()->setYear(2022),
+        ]);
+
         $response = $this->json(
             'GET',
             '/api/events/germany?year=2022',
         );
 
         $data = $response->decodeResponseJson()['data'];
+        $byTitle = collect($data)->keyBy('title');
 
-        $this->assertCount(2, $data);
+        $this->assertCount(3, $data);
 
-        $this->assertEquals('Good Event', $data[0]['title']);
-        $this->assertEquals('Imported Event', $data[1]['title']);
-
-        $this->assertFalse($data[0]['imported_from_german_feeds']);
-        $this->assertTrue($data[1]['imported_from_german_feeds']);
+        $this->assertFalse($byTitle['Good Event']['imported_from_german_feeds']);
+        $this->assertTrue($byTitle['Imported Event']['imported_from_german_feeds']);
+        $this->assertTrue($byTitle['Central Feed Event']['imported_from_german_feeds']);
     }
 
     #[Test]
