@@ -259,9 +259,24 @@ class Event extends Model
 
     public function imported()
     {
+        // Central codeweek.de export (api:germany-central).
+        if (Str::startsWith((string) $this->source_ref, 'codeweek-de:')) {
+            return true;
+        }
+
+        if ((string) $this->mass_added_for === 'API codeweek_de') {
+            return true;
+        }
+
+        $code = (string) $this->codeweek_for_all_participation_code;
+        if ($code !== '' && Str::contains($code, 'codeweek-de')) {
+            return true;
+        }
+
+        // Legacy per-city feeds used codes like cw22-bonn / cw-hamburg.
         $germanCities = ImporterHelper::getGermanCities();
 
-        return Str::contains($this->codeweek_for_all_participation_code, $germanCities);
+        return $code !== '' && Str::contains($code, $germanCities);
     }
 
     public function picture_path()
