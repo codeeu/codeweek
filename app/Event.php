@@ -416,6 +416,11 @@ class Event extends Model
     {
         $data = ['status' => 'APPROVED', 'approved_by' => auth()->user()->id];
 
+        // Imported/Nova-created events can reach approval without a code, and the email prints it verbatim.
+        if (empty($this->codeweek_for_all_participation_code)) {
+            $data['codeweek_for_all_participation_code'] = 'cw'.now()->format('y').'-'.Str::random(5);
+        }
+
         $this->update($data);
 
         if (! empty($this->user_email)) {
