@@ -194,4 +194,31 @@ final class ApproveEventTest extends TestCase
             ->assertSee('moderate-event');
 
     }
+
+    #[Test]
+    public function approving_event_without_participation_code_generates_one_for_the_email(): void
+    {
+        $this->withExceptionHandling();
+
+        Mail::fake();
+
+        $superadmin = \App\User::factory()->create();
+        $superadmin->assignRole('super admin');
+
+        $this->signIn($superadmin);
+
+        $event = \App\Event::factory()->create([
+            'status' => 'PENDING',
+            'user_email' => 'foo@bar.com',
+            'codeweek_for_all_participation_code' => null,
+        ]);
+
+        $event->approve();
+
+        $event = $event->fresh();
+        $code = (string) $event->codeweek_for_all_participation_code;
+
+        $this->assertMatchesRegularExpression('/^cw\d{2}-[A-Za-z0-9]+$/', $code);
+        $this->assertStringContainsString($code, (new EventApproved($event, $event->owner))->render());
+    }
 }
