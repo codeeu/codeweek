@@ -84,7 +84,7 @@
                             <password-field id="password_confirmation" name="password_confirmation" required />
                         </div>
                         <div class="text-error-200 font-semibold mt-2">
-                            @component('components.validation-errors', ['field'=>'password'])@endcomponent
+                            @component('components.validation-errors', ['field'=>'password_confirmation'])@endcomponent
                         </div>
                     </div>
                     <div>
