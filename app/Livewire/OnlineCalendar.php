@@ -41,46 +41,46 @@ class OnlineCalendar extends Component
         $this->selectedLanguage = strtolower(App::getLocale());
         $this->selectedYear = Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
+        $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
 
-        $byMonths = Event::selectRaw(
-            'year(start_date) year, month(start_date) month, monthname(start_date) monthname, count(*) data'
-        )
-            ->where($this->whereClause)
-            ->where('start_date', '>=', \Carbon\Carbon::now()->firstOfMonth())
-            ->groupBy('year', 'month','monthname')
-            ->orderBy('year', 'asc')
-            ->orderBy('month', 'asc')
-            ->get();
-    
-        // Format months as objects
-        $this->months = $byMonths->map(function ($result) {
-            return [
-                'id' => $result->month.'/'.$result->year,
-                'name' => $result->monthname.' '.$result->year
-            ];
-        })->toArray();
-    
-        // Update logic for accessing first item
-        if (!empty($this->months)) {
-            $firstMonthId = $this->months[0]['id'];
-            $parts = explode('/', $firstMonthId);
-            if ($parts[0] !== $this->selectedMonth) {
-                $this->selectedMonth = $parts[0];
-            }
+        $this->months = Event::where($this->whereClause)
+            ->where('start_date', '>=', Carbon::now()->firstOfMonth())
+            ->orderBy('start_date')
+            ->get(['start_date'])
+            ->groupBy(function ($event) {
+                $date = Carbon::parse($event->start_date);
+
+                return $date->month.'/'.$date->year;
+            })
+            ->map(function ($group, $id) {
+                $date = Carbon::parse($group->first()->start_date);
+
+                return [
+                    'id' => $id,
+                    'name' => $date->format('F').' '.$date->year,
+                ];
+            })
+            ->values()
+            ->toArray();
+
+        if (! empty($this->months)) {
+            $parts = explode('/', $this->months[0]['id']);
+            $this->selectedMonth = (int) $parts[0];
+            $this->selectedYear = (int) ($parts[1] ?? $this->selectedYear);
             $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
         }
     }
 
     public function render()
     {
-        $parts = explode('/', $this->selectedDate);
-        $this->selectedMonth = $parts[0];
-        $this->selectedYear = $parts[1] ?? null;
+        $parts = explode('/', (string) $this->selectedDate);
+        $this->selectedMonth = (int) ($parts[0] ?: $this->selectedMonth);
+        $this->selectedYear = (int) ($parts[1] ?? $this->selectedYear);
 
         $this->events = Event::where($this->whereClause)
             ->whereMonth('start_date', $this->selectedMonth)
             ->whereYear('start_date', $this->selectedYear)
-            ->where('start_date', '>=', \Carbon\Carbon::now()->firstOfMonth())
+            ->where('start_date', '>=', Carbon::now()->firstOfMonth())
             ->orderBy('start_date')
             ->get();
 
