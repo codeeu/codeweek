@@ -829,6 +829,7 @@ Route::prefix('2021/challenges')->group($challenges);
 Route::prefix('challenges')->group($challenges);
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
+Route::view('/map', 'map.index')->name('map');
 
 Route::get(
     'leading-teachers-document',
