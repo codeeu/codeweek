@@ -1,0 +1,7 @@
+
+In Auth.php line 93:
+                                                                               
+  In order to use the Auth::routes() method, please install the laravel/ui pa  
+  ckage.                                                                       
+                                                                               
+
