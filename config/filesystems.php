@@ -62,6 +62,7 @@ return [
             'bucket' => env('RESOURCES_BUCKET'),
             'url' => env('RESOURCES_URL'),
             'visibility' => 'public',
+            'throw' => true,
         ],
     ],
 
