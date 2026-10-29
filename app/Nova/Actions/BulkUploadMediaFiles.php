@@ -64,7 +64,7 @@ class BulkUploadMediaFiles extends Action
             $safeBaseName = Str::slug($baseName) ?: 'upload-file';
             $destination = 'nova/uploads/' . now()->format('Y/m');
             $finalFileName = $safeBaseName . '-' . Str::random(8) . '.' . $extension;
-            $storedPath = $file->storeAs($destination, $finalFileName, 'resources');
+            $storedPath = $file->storeAs($destination, $finalFileName, 's3');
 
             if (!$storedPath) {
                 $skipped++;
@@ -74,7 +74,7 @@ class BulkUploadMediaFiles extends Action
             MediaUpload::create([
                 'title' => trim(str_replace(['-', '_'], ' ', $baseName)),
                 'file_path' => $storedPath,
-                'disk' => 'resources',
+                'disk' => 's3',
             ]);
 
             $uploaded++;
