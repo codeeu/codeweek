@@ -47,12 +47,12 @@ class MediaUpload extends Resource
             })->onlyOnIndex(),
 
             File::make('File', 'file_path')
-                ->disk('resources')
+                ->disk('s3')
                 ->path('nova/uploads')
                 ->prunable()
                 ->creationRules('required')
                 ->rules('required', 'max:51200', 'mimes:jpg,jpeg,png,gif,webp,svg,pdf,doc,docx,ppt,pptx,xls,xlsx,txt')
-                ->help('Uploads directly to S3 disk "resources" under folder "nova/uploads".'),
+                ->help('Uploads to the main S3 disk under folder "nova/uploads".'),
 
             Text::make('URL', function () {
                 return $this->renderUrlWithCopy($this->resolved_url);
