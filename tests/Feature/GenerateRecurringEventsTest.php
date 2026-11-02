@@ -81,6 +81,29 @@ class GenerateRecurringEventsTest extends TestCase
     }
 
     #[Test]
+    public function generated_occurrences_are_not_eligible_to_spawn_more_recurrence(): void
+    {
+        $parent = $this->makeWeeklyParent();
+
+        Artisan::call('events:generate-recurring');
+
+        $child = Event::query()
+            ->where('source_ref', 'like', 'parent:'.$parent->id.':%')
+            ->first();
+
+        $this->assertNotNull($child);
+        $this->assertNull($child->recurring_event);
+        $this->assertNull($child->recurring_type);
+
+        Artisan::call('events:generate-recurring');
+
+        $this->assertSame(
+            1,
+            Event::query()->where('source_ref', 'like', 'parent:'.$parent->id.':%')->count()
+        );
+    }
+
+    #[Test]
     public function running_twice_does_not_duplicate_the_same_occurrence(): void
     {
         $parent = $this->makeWeeklyParent();
