@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Event;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -45,6 +46,10 @@ class GenerateRecurringEvents extends Command
             ->where('status', 'APPROVED')
             ->whereIn('recurring_event', Event::RECURRING_EVENTS)
             ->where('end_date', '>=', $now)
+            ->where(function ($query) {
+                $query->whereNull('source_ref')->orWhere('source_ref', '');
+            })
+            ->whereIn('creator_id', User::query()->select('id'))
             ->orderBy('start_date')
             ->get();
 
@@ -94,6 +99,8 @@ class GenerateRecurringEvents extends Command
                 $newEventData['end_date'] = $nextStart->copy()->addSeconds($durationSeconds);
                 $newEventData['source_ref'] = $sourceRef;
                 $newEventData['status'] = $event->status;
+                $newEventData['recurring_event'] = null;
+                $newEventData['recurring_type'] = null;
 
                 if ($dryRun) {
                     $this->line("\nWould create event for '{$event->title}' on {$nextStart->toDateTimeString()}");
