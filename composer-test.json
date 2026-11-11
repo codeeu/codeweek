@@ -89,7 +89,15 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "audit": {
+            "ignore": {
+                "PKSA-d5tc-s1qs-h781": "Laravel 11 has no fix; needs framework 12.69+",
+                "PKSA-m5cs-t1y6-qpcs": "Laravel 11 has no fix; needs framework 12.61.1+",
+                "PKSA-3r5d-mb8f-1qw9": "Laravel 11 has no fix; needs framework 12.60+",
+                "PKSA-mdq4-51ck-6kdq": "Laravel 11 has no fix; needs framework 12.60+"
+            }
+        }
     },
     "repositories": [
         {
