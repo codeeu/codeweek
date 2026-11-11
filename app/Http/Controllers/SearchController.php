@@ -82,6 +82,9 @@ class SearchController extends Controller
 
     protected function transformEventsForMap(EventFilters $filters)
     {
+        // Same FPM 128M ceiling as /api/event/list — raise before building/caching markers.
+        ini_set('memory_limit', '512M');
+
         $flattened = Arr::flatten($filters->getFilters());
         $filtered = array_filter($flattened, fn($v) => $v !== null && $v !== '');
         $composed_key = 'map_' . implode(',', $filtered);
@@ -96,8 +99,8 @@ class SearchController extends Controller
                 ->filter($filters)
                 ->cursor()
                 ->each(function ($event) use (&$grouped) {
-                    $transformed = app(\App\Http\Transformers\EventTransformer::class)->transform($event);
-                    $country = $transformed['country'] ?? 'unknown';
+                    $transformed = $this->eventTransformer->transform($event);
+                    $country = strtoupper(trim((string) ($transformed['country'] ?? 'unknown')));
                     $grouped[$country][] = $transformed;
                 });
 
