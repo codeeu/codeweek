@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\NotReservedEmailDomain;
 use App\Rules\validAudience;
 use App\Rules\validTheme;
 use Illuminate\Foundation\Http\FormRequest;
@@ -45,7 +46,7 @@ class EventRequest extends FormRequest
             'ages' => 'required',
             'is_extracurricular_event' => 'required|boolean',
             'country_iso' => 'required|exists:countries,iso',
-            'user_email' => 'required',
+            'user_email' => ['required', 'email', 'max:255', new NotReservedEmailDomain],
             'organizer_type' => 'required',
             'leading_teacher_tag' => 'nullable',
 
@@ -82,6 +83,7 @@ class EventRequest extends FormRequest
             'event_url.url' => 'The activity\'s web page address should be a valid URL.',
             'event_url.required' => 'The activity\'s web page is required for online activities.',
             'user_email.required' => 'Please enter a valid email address.',
+            'user_email.email' => 'Please enter a valid email address.',
         ];
     }
 
