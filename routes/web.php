@@ -28,6 +28,7 @@ use App\Http\Controllers\BulkEventUploadController;
 use App\Http\Controllers\BulkUserChangesController;
 use App\Http\Controllers\ResourcesImportController;
 use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\CityController;
 use App\Http\Controllers\Codeweek4AllController;
 use App\Http\Controllers\CodingAtHomeController;
 use App\Http\Controllers\ContactFormController;
@@ -566,6 +567,7 @@ Route::delete(
     [Api\UserAvatarController::class, 'delete']
 )->middleware('auth');
 
+Route::get('api/cities', [CityController::class, 'index'])->name('api.cities');
 Route::get('api/event/list', [Api\EventsController::class, 'list'])->name('event_list');
 Route::get('api/event/detail', [Api\EventsController::class, 'detail'])->name(
     'event_list'
