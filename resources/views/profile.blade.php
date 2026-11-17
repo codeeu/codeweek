@@ -276,6 +276,7 @@
                         @endif
                         <select id="id_city"
                                 name="city_id"
+                                data-cities-url="{{ url('/api/cities') }}"
                                 class="border-2 border-solid border-dark-blue-200 w-full rounded-full h-12 px-4 appearance-none text-slate-600 mb-3">
                             <option value=""></option>
                             @foreach ($cities as $city)
