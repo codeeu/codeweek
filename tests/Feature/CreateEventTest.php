@@ -217,6 +217,13 @@ final class CreateEventTest extends TestCase
     }
 
     #[Test]
+    public function event_rejects_reserved_test_email_domains(): void
+    {
+        $this->publishEvent(['user_email' => 'cwprobe@cwprobe.invalid'])
+            ->assertSessionHasErrors('user_email');
+    }
+
+    #[Test]
     public function event_should_get_valid_slug(): void
     {
         $this->withExceptionHandling();
