@@ -83,7 +83,7 @@
                             <p class="p-0 mb-4 font-normal text-slate-500 text-default md:text-xl">
                                 Let us know here:
                             </p>
-                            <a href="https://forms.office.com/e/504a5CUbUm" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-8 font-['Blinker'] hover:bg-hover-orange duration-300">
+                            <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=5CuLjS4MEEuNQp7xCYeonzlHopfIG_1FkoQreqDgpARUNzlGQUxGS0RNUDRYUUkySFVMSlBKTkxKMC4u&route=shorturl" target="_blank" class="flex justify-center w-fit bg-[#F95C22] rounded-full py-2.5 px-8 font-['Blinker'] hover:bg-hover-orange duration-300">
                                 <span
                                     class="text-base font-semibold leading-7 text-black normal-case whitespace-nowrap"
                                 >
