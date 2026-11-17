@@ -3,77 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\City;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class CityController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * List cities for a country (profile city dropdown).
      */
-    public function index()
+    public function index(Request $request): JsonResponse
     {
-        //
-    }
+        $validated = $request->validate([
+            'country_iso' => 'required|string|size:2',
+        ]);
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+        $cities = City::query()
+            ->where('country_iso', strtoupper($validated['country_iso']))
+            ->select(['id', 'city', 'country_iso'])
+            ->orderBy('city')
+            ->get();
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function show(City $city)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(City $city)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, City $city)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(City $city)
-    {
-        //
+        return response()->json($cities);
     }
 }
