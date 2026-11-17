@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Rules\NotReservedEmailDomain;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
@@ -20,7 +21,7 @@ class ContactFormController extends Controller
         $validated = $request->validate([
             'first_name' => 'required|string|max:255',
             'last_name'  => 'required|string|max:255',
-            'email'      => 'required|email|max:255',
+            'email'      => ['required', 'email', 'max:255', new NotReservedEmailDomain],
             'phone'      => 'nullable|string|max:50',
             'subject'    => 'required|string',
             'message'    => 'required|string',
