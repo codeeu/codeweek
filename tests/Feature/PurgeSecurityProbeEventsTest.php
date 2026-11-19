@@ -26,6 +26,15 @@ final class PurgeSecurityProbeEventsTest extends TestCase
             'creator_id' => $probeUser->id,
         ]);
 
+        $gmailProbeUser = User::factory()->create(['email' => 'cwprobe.intake154639@gmail.com']);
+        $gmailProbeEvent = Event::factory()->create([
+            'title' => 'CW Defaults Check',
+            'user_email' => 'cwprobe.intake154639@gmail.com',
+            'description' => 'Benign.',
+            'status' => 'PENDING',
+            'creator_id' => $gmailProbeUser->id,
+        ]);
+
         $realEvent = Event::factory()->create([
             'title' => 'Real Belgium coding club',
             'user_email' => 'teacher@school.be',
@@ -38,8 +47,10 @@ final class PurgeSecurityProbeEventsTest extends TestCase
             ->assertSuccessful();
 
         $this->assertSoftDeleted($probeEvent);
+        $this->assertSoftDeleted($gmailProbeEvent);
         $this->assertDatabaseHas('events', ['id' => $realEvent->id, 'deleted_at' => null]);
         $this->assertSoftDeleted($probeUser);
+        $this->assertSoftDeleted($gmailProbeUser);
         $this->assertDatabaseHas('users', ['id' => $realUser->id, 'deleted_at' => null]);
     }
 }
