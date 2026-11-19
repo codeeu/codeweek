@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Rules\NotReservedEmailDomain;
+use App\Rules\NotSecurityProbeContent;
 use App\Rules\validAudience;
 use App\Rules\validTheme;
 use Illuminate\Foundation\Http\FormRequest;
@@ -30,8 +31,8 @@ class EventRequest extends FormRequest
 
         return [
             'activity_type' => 'required',
-            'title' => 'required|min:5',
-            'description' => 'required|min:5',
+            'title' => ['required', 'min:5', new NotSecurityProbeContent],
+            'description' => ['required', 'min:5', new NotSecurityProbeContent],
             'organizer' => 'required',
             'duration' => 'required',
             'location' => 'required_unless:activity_type,open-online,invite-online',
