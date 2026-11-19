@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Event;
 use App\Rules\NotReservedEmailDomain;
+use App\Rules\NotSecurityProbeContent;
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Builder;
@@ -11,8 +12,8 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * Soft-delete leftover security/probe test activities and their probe users.
  *
- * Matches reserved test email TLDs (.invalid, .test, .example, .localhost)
- * and known CW probe title/description markers from authorized testing.
+ * Matches reserved test email TLDs (.invalid, .test, .example, .localhost),
+ * cwprobe* organiser emails, and known CW probe title/description markers.
  *
  * Usage:
  *  php artisan events:purge-security-probes
@@ -23,9 +24,9 @@ class PurgeSecurityProbeEvents extends Command
 {
     protected $signature = 'events:purge-security-probes
         {--delete : Soft-delete matched events (default: dry-run)}
-        {--users : Also soft-delete users whose email uses a reserved test domain}';
+        {--users : Also soft-delete users whose email uses a reserved test domain or cwprobe* local-part}';
 
-    protected $description = 'Soft-delete security/probe test activities (and optionally probe users) that use reserved .invalid/.test email domains.';
+    protected $description = 'Soft-delete security/probe test activities (and optionally probe users).';
 
     public function handle(): int
     {
@@ -72,11 +73,7 @@ class PurgeSecurityProbeEvents extends Command
         }
 
         if ($purgeUsers) {
-            $usersQuery = User::query()->where(function (Builder $query): void {
-                foreach (NotReservedEmailDomain::RESERVED_TLDS as $tld) {
-                    $query->orWhere('email', 'like', '%.'.$tld);
-                }
-            });
+            $usersQuery = $this->probeUsersQuery();
 
             $userCount = (clone $usersQuery)->count();
             $this->info("Matched probe users: {$userCount}");
@@ -99,13 +96,30 @@ class PurgeSecurityProbeEvents extends Command
                 $query->orWhere('user_email', 'like', '%.'.$tld);
             }
 
-            $query->orWhere('title', 'like', 'CW Probe%')
-                ->orWhere('title', 'like', 'CW pending probe%')
-                ->orWhere('title', 'like', 'CW marker test%')
-                ->orWhere('title', 'like', 'CW Probe Create%')
-                ->orWhere('description', 'like', '%authorized security testing%')
-                ->orWhere('description', 'like', '%cwmark benign%')
-                ->orWhere('description', 'like', '%Benign baseline description for tester probe%');
+            foreach (NotReservedEmailDomain::PROBE_LOCAL_PREFIXES as $prefix) {
+                $query->orWhere('user_email', 'like', $prefix.'%@%');
+            }
+
+            foreach (NotSecurityProbeContent::TITLE_PREFIXES as $prefix) {
+                $query->orWhere('title', 'like', $prefix.'%');
+            }
+
+            foreach (NotSecurityProbeContent::DESCRIPTION_NEEDLES as $needle) {
+                $query->orWhere('description', 'like', '%'.$needle.'%');
+            }
+        });
+    }
+
+    private function probeUsersQuery(): Builder
+    {
+        return User::query()->where(function (Builder $query): void {
+            foreach (NotReservedEmailDomain::RESERVED_TLDS as $tld) {
+                $query->orWhere('email', 'like', '%.'.$tld);
+            }
+
+            foreach (NotReservedEmailDomain::PROBE_LOCAL_PREFIXES as $prefix) {
+                $query->orWhere('email', 'like', $prefix.'%@%');
+            }
         });
     }
 }

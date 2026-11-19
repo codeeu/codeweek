@@ -224,6 +224,20 @@ final class CreateEventTest extends TestCase
     }
 
     #[Test]
+    public function event_rejects_cwprobe_gmail_addresses(): void
+    {
+        $this->publishEvent(['user_email' => 'cwprobe.intake154639@gmail.com'])
+            ->assertSessionHasErrors('user_email');
+    }
+
+    #[Test]
+    public function event_rejects_security_probe_titles(): void
+    {
+        $this->publishEvent(['title' => 'CW Probe PathTraversal PATCH'])
+            ->assertSessionHasErrors('title');
+    }
+
+    #[Test]
     public function event_should_get_valid_slug(): void
     {
         $this->withExceptionHandling();

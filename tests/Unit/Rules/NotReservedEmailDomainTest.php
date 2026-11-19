@@ -46,6 +46,8 @@ final class NotReservedEmailDomainTest extends TestCase
             ['user@something.test'],
             ['user@foo.example'],
             ['user@localhost'],
+            ['cwprobe.intake154639@gmail.com'],
+            ['CWPROBE@school.be'],
         ];
     }
 
@@ -56,6 +58,7 @@ final class NotReservedEmailDomainTest extends TestCase
             ['organiser@codeweek.eu'],
             ['person@example.com'],
             ['person@gmail.com'],
+            ['notcwprobe@gmail.com'],
         ];
     }
 }
