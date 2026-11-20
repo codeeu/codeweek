@@ -37,13 +37,11 @@
             <div class="mb-4">
                 <div class="border-b border-gray-200">
                     <nav class="-mb-px flex">
-                        @role('activities admin')
                             @include('online-calendar.admin._tab', [
                                 'targetParam'=>'online/list',
                                 'route'=>'admin.online-events',
                                 'title'=>'All Online Activities'
                             ])
-                        @endrole
                             @include('online-calendar.admin._tab', [
                                 'targetParam'=>'online/promoted',
                                 'route'=>'promoted_events',

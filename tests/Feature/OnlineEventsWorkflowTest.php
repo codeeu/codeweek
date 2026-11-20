@@ -165,6 +165,75 @@ final class OnlineEventsWorkflowTest extends TestCase
     }
 
     #[Test]
+    public function super_admins_can_feature_events_from_the_online_list(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $superadmin = \App\User::factory()->create();
+        $superadmin->assignRole('super admin');
+
+        $this->signIn($superadmin);
+
+        $onlineEvent = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->addDay(),
+            'end_date' => Carbon::now()->addDays(2),
+            'country_iso' => $superadmin->country->iso,
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+        ]);
+
+        $response = $this->get('/online/list')
+            ->assertSee($onlineEvent->title)
+            ->assertSee('All Online Activities')
+            ->assertSee('Accept as Featured Activity');
+
+        $response->assertStatus(200);
+
+        $onlineEvent->feature();
+
+        $this->assertEquals('FEATURED', $onlineEvent->fresh()->highlighted_status);
+
+        $this->get('/online/featured')
+            ->assertSee($onlineEvent->title);
+    }
+
+    #[Test]
+    public function super_admin_menu_links_to_all_online_activities(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $superadmin = \App\User::factory()->create();
+        $superadmin->assignRole('super admin');
+
+        $this->signIn($superadmin);
+
+        $this->get('/')
+            ->assertSee(route('admin.online-events'), false);
+    }
+
+    #[Test]
+    public function featured_activities_page_shows_featured_online_events_in_future_years(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $nextYear = Carbon::now()->addYear();
+
+        $featuredEvent = \App\Event::factory()->create([
+            'start_date' => $nextYear->copy()->startOfMonth()->addDays(5),
+            'end_date' => $nextYear->copy()->startOfMonth()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'FEATURED',
+            'language' => ['en'],
+        ]);
+
+        $this->get('/featured-activities')
+            ->assertStatus(200)
+            ->assertSee($featuredEvent->title);
+    }
+
+    #[Test]
     public function promoted_event_creates_notification_for_administrators(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
