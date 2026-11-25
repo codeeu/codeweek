@@ -56,18 +56,28 @@
                         url: baseURL + "&singleLine=" + item.name + "&magicKey=" + item.magicKey + "&outFields=Country",
                         success: function (res) {
                             var candidate = res.candidates[0];
+                            if (!candidate || !candidate.location) {
+                              return;
+                            }
                             me.geoposition = [candidate.location.y, candidate.location.x];
                             if (window.map){
                               map.setView(me.geoposition,16);
                             }
-                            var countryIso2 = me.findCountry(candidate.attributes.Country).iso2;
-                            $("#id_country").val(countryIso2);
+                            // ArcGIS returns blank Country for disputed regions (e.g. Kosovo).
+                            var countryIso2 = me.findCountry(candidate.attributes && candidate.attributes.Country);
+                            if (countryIso2) {
+                              $("#id_country").val(countryIso2);
+                            }
                         }
                     });
                 }
             },
             findCountry(iso3) {
-                return allCountries.find(country => country.iso3 === iso3);
+                if (!iso3) {
+                    return undefined;
+                }
+                var match = allCountries.find(country => country.iso3 === iso3);
+                return match ? match.iso2 : undefined;
             },
             getLabel (item) {
                 if (item && item.name) {

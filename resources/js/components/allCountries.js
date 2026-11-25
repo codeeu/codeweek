@@ -244,6 +244,7 @@ const allCountries = [
     ["VI","VIR"],
     ["WF","WLF"],
     ["EH","ESH"],
+    ["XK","XKX"],
     ["YE","YEM"],
     ["ZM","ZMB"],
     ["ZW","ZWE"],

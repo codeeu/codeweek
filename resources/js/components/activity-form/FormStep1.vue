@@ -150,8 +150,14 @@ export default {
     
     const handleLocationChange = ({ location, geoposition, country_iso }) => {
       props.formValues.location = location || '';
-      props.formValues.geoposition = geoposition;
-      props.formValues.country_iso = country_iso;
+      // Only update fields that the geocoder actually resolved. Blank ArcGIS Country
+      // (e.g. Kosovo) must not clear a country the user already selected.
+      if (geoposition !== undefined) {
+        props.formValues.geoposition = geoposition;
+      }
+      if (country_iso !== undefined) {
+        props.formValues.country_iso = country_iso;
+      }
       props.formValues.locationSelected = true;
       props.formValues.locationDirty = true;
     };

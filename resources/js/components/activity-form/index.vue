@@ -354,7 +354,12 @@ export default {
         activity_format: values.activity_format?.join(','),
         activity_type: values.activity_type,
         location: values.location,
-        geoposition: values.geoposition?.join(',') || [],
+        // Empty array becomes [] and makes EventsQuery explode() 500 — send null instead.
+        geoposition: Array.isArray(values.geoposition) && values.geoposition.length
+          ? values.geoposition.join(',')
+          : (typeof values.geoposition === 'string' && values.geoposition
+            ? values.geoposition
+            : null),
         duration: values.duration,
         start_date: values.start_date,
         end_date: values.end_date,
@@ -400,7 +405,16 @@ export default {
         }
         handleMoveStep(4);
       } catch (error) {
-        errors.value = error.response?.data?.errors;
+        errors.value = error.response?.data?.errors || {};
+        // Surface non-validation failures (e.g. 500) instead of silently jumping to step 1.
+        if (!error.response?.data?.errors) {
+          errors.value = {
+            title: [
+              error.response?.data?.message
+                || 'Something went wrong while saving. Please try again, or clear the address and leave it empty for online activities.',
+            ],
+          };
+        }
         step.value = 1;
       }
       finally {
