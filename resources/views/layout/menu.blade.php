@@ -188,8 +188,8 @@
                                   <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">Teaching and Training Resources</div>
                                   <div><a class="cookweek-link hover-underline !px-0" href="{{route('resources_all')}}">@lang('menu.learn')</a></div>
                                   <div><a class="cookweek-link hover-underline !px-0" href="{{route('toolkits')}}">@lang('menu.toolkits')</a></div>
-                                  <div><a class="cookweek-link hover-underline !px-0" href="https://forms.gle/enVmsPvNyYo7yEuT6" target="_blank" rel="noopener">Share your own lessons</a></div>
-                                  <div><a class="cookweek-link hover-underline !px-0" href="https://forms.gle/pZz9issG45B9131n9" target="_blank" rel="noopener">Share your feedback</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="https://forms.gle/pZz9issG45B9131n9" target="_blank" rel="noopener">Share your own lessons</a></div>
+                                  <div><a class="cookweek-link hover-underline !px-0" href="https://forms.gle/enVmsPvNyYo7yEuT6" target="_blank" rel="noopener">Share your feedback</a></div>
                               </div>
                               <div class="flex flex-col flex-grow gap-4 max-xl:w-full">
                                   <div class="hidden xl:block text-[#20262C] font-semibold text-lg whitespace-nowrap">Career &amp; Inspiration</div>
