@@ -44,12 +44,20 @@ class EventsQuery
             $request['geoposition'] = '0,0';
         }
 
-        if (is_null($request['geoposition'])) {
-            $request['geoposition'] = '0,0';
+        // Frontend may send [] / '' when address autocomplete failed to resolve coords
+        // (e.g. ArcGIS blank Country for Kosovo). Treat those as missing.
+        $geoposition = $request['geoposition'] ?? null;
+        if (is_array($geoposition)) {
+            $geoposition = implode(',', array_filter($geoposition, static fn ($v) => $v !== null && $v !== ''));
         }
+        if (! is_string($geoposition) || ! preg_match('/^-?\d+(\.\d+)?\s*,\s*-?\d+(\.\d+)?$/', trim($geoposition))) {
+            $geoposition = '0,0';
+        }
+        $request['geoposition'] = $geoposition;
 
-        $request['latitude'] = explode(',', $request['geoposition'])[0];
-        $request['longitude'] = explode(',', $request['geoposition'])[1];
+        [$latitude, $longitude] = array_map('trim', explode(',', $request['geoposition'], 2));
+        $request['latitude'] = $latitude;
+        $request['longitude'] = $longitude;
 
         if (empty($request['codeweek_for_all_participation_code'])) {
             $codeweek_4_all_generated_code = 'cw'.Carbon::now()->format('y').'-'.str_random(5);
