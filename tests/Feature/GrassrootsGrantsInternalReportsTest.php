@@ -31,9 +31,30 @@ final class GrassrootsGrantsInternalReportsTest extends TestCase
     }
 
     #[Test]
+    public function round_pages_are_seeded_with_slugs_and_round_two_stays_in_preview(): void
+    {
+        $this->seed(GrassrootsGrantsSeeder::class);
+
+        $round1 = GrassrootsGrantsPage::query()->where('slug', GrassrootsGrantsPage::SLUG_ROUND_1)->first();
+        $round2 = GrassrootsGrantsPage::query()->where('slug', GrassrootsGrantsPage::SLUG_ROUND_2)->first();
+
+        $this->assertNotNull($round1);
+        $this->assertNotNull($round2);
+        $this->assertFalse($round1->is_preview_mode);
+        $this->assertTrue($round2->is_preview_mode);
+
+        $this->get(route('grassroots-grants'))->assertOk()->assertSee('JA Europe', false);
+        $this->get(route('grassroots-grants.round-2'))->assertNotFound();
+
+        $preview = $this->get($round2->previewSignedUrl());
+        $preview->assertOk()->assertSee('Round 2 of Grants', false);
+    }
+
+    #[Test]
     public function stale_internal_report_links_are_hidden_from_the_page(): void
     {
         $page = GrassrootsGrantsPage::create([
+            'slug' => GrassrootsGrantsPage::SLUG_ROUND_1,
             'is_preview_mode' => false,
             'hero_title' => 'Grassroots Grants',
             'round_title' => 'Round 1',

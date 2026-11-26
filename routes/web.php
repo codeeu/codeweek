@@ -251,6 +251,11 @@ Route::get('/grassroots-grants', [\App\Http\Controllers\GrassrootsGrantsControll
 Route::get('/grassroots-grants-preview', [\App\Http\Controllers\GrassrootsGrantsController::class, 'preview'])
      ->middleware('signed')
      ->name('grassroots-grants.preview');
+Route::get('/grassroots-grants/round-2', [\App\Http\Controllers\GrassrootsGrantsController::class, 'showRound2'])
+     ->name('grassroots-grants.round-2');
+Route::get('/grassroots-grants/round-2-preview', [\App\Http\Controllers\GrassrootsGrantsController::class, 'previewRound2'])
+     ->middleware('signed')
+     ->name('grassroots-grants.round-2.preview');
 //Static training pages
 Route::get('/training', [TrainingController::class, 'index'])->name('training.index');
 Route::get(

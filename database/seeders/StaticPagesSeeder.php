@@ -139,7 +139,7 @@ class StaticPagesSeeder extends Seeder
                 'path' => '/grassroots-grants',
             ],
             [
-                'name' => 'Grassroots Grants',
+                'name' => 'Grassroots Grants – Round 1',
                 'description' => 'EU Code Week Round 1 grassroots grant projects, impact statistics, and funded initiatives across Europe.',
                 'unique_identifier' => 'grassroots-grants',
                 'path' => '/grassroots-grants',
@@ -148,6 +148,27 @@ class StaticPagesSeeder extends Seeder
                 'meta_title' => 'EU Code Week Grants for Grassroots – Round 1',
                 'meta_description' => 'Discover EU Code Week Round 1 grassroots grant projects, impact, and funded initiatives across Europe.',
                 'meta_keywords' => 'EU Code Week, grassroots grants, funding, coding projects',
+                'category' => 'General',
+                'link_type' => 'internal_link',
+                'is_searchable' => false,
+            ]
+        );
+
+        StaticPage::updateOrCreate(
+            [
+                'language' => 'en',
+                'path' => '/grassroots-grants/round-2',
+            ],
+            [
+                'name' => 'Grassroots Grants – Round 2',
+                'description' => 'EU Code Week Round 2 grassroots grant projects, impact statistics, and funded initiatives across Europe.',
+                'unique_identifier' => 'grassroots-grants-round-2',
+                'path' => '/grassroots-grants/round-2',
+                'keywords' => ['Grassroots Grants', 'Round 2', 'EU Code Week', 'Funding', 'Projects'],
+                'thumbnail' => '/images/contact-us.png',
+                'meta_title' => 'EU Code Week Grants for Grassroots – Round 2',
+                'meta_description' => 'Discover EU Code Week Round 2 grassroots grant projects, impact, and funded initiatives across Europe.',
+                'meta_keywords' => 'EU Code Week, grassroots grants, round 2, funding, coding projects',
                 'category' => 'General',
                 'link_type' => 'internal_link',
                 'is_searchable' => false,

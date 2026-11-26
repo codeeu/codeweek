@@ -1,10 +1,13 @@
 @extends('layout.new_base')
 
 @php
-    $pageTitle = $page?->meta_title ?: 'Grassroots Grants – EU Code Week';
-    $pageDescription = $page?->meta_description ?: 'EU Code Week Round 1 grassroots grant projects and impact across Europe.';
+    $isRound2 = ($page?->slug ?? '') === \App\GrassrootsGrantsPage::SLUG_ROUND_2;
+    $pageTitle = $page?->meta_title ?: ($isRound2 ? 'Grassroots Grants – Round 2 – EU Code Week' : 'Grassroots Grants – Round 1 – EU Code Week');
+    $pageDescription = $page?->meta_description ?: ($isRound2
+        ? 'EU Code Week Round 2 grassroots grant projects and impact across Europe.'
+        : 'EU Code Week Round 1 grassroots grant projects and impact across Europe.');
     $list = [
-        (object) ['label' => 'Grassroots Grants', 'href' => ''],
+        (object) ['label' => $isRound2 ? 'Grassroots Grants – Round 2' : 'Grassroots Grants – Round 1', 'href' => ''],
     ];
 @endphp
 

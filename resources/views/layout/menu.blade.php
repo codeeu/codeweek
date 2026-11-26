@@ -242,7 +242,24 @@
                   </a>
                   <ul class="sub-menu">
                       <li class="xl:hidden"><a class="cookweek-link hover-underline" href="{{ route('community') }}">@lang('community.titles.0')</a></li>
-                      <li><a class="cookweek-link hover-underline" href="{{ route('grassroots-grants') }}">@lang('menu.grassroots_grants')</a></li>
+                      @php
+                          $menuGrassrootsRound1 = null;
+                          $menuGrassrootsRound2 = null;
+                          if (\Illuminate\Support\Facades\Schema::hasTable('grassroots_grants_page')) {
+                              $menuGrassrootsRound1 = \App\GrassrootsGrantsPage::query()
+                                  ->where('slug', \App\GrassrootsGrantsPage::SLUG_ROUND_1)
+                                  ->first();
+                              $menuGrassrootsRound2 = \App\GrassrootsGrantsPage::query()
+                                  ->where('slug', \App\GrassrootsGrantsPage::SLUG_ROUND_2)
+                                  ->first();
+                          }
+                      @endphp
+                      @if(! $menuGrassrootsRound1 || ! $menuGrassrootsRound1->is_preview_mode)
+                          <li><a class="cookweek-link hover-underline" href="{{ route('grassroots-grants') }}">@lang('menu.grassroots_grants_round_1')</a></li>
+                      @endif
+                      @if($menuGrassrootsRound2 && ! $menuGrassrootsRound2->is_preview_mode)
+                          <li><a class="cookweek-link hover-underline" href="{{ route('grassroots-grants.round-2') }}">@lang('menu.grassroots_grants_round_2')</a></li>
+                      @endif
                   </ul>
               </li>
 
