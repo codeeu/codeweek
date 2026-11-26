@@ -19,16 +19,45 @@ final class EventsHelperTest extends TestCase
     #[Test]
     public function it_should_get_upcoming_online_events(): void
     {
-        //Good ones
-        \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(), 'highlighted_status' => 'FEATURED']);
-        \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
+        // Good ones: approved open-online and still upcoming (featured flag not required)
+        \App\Event::factory()->create([
+            'activity_type' => 'open-online',
+            'status' => 'APPROVED',
+            'start_date' => Carbon::now()->addDay(),
+            'end_date' => Carbon::now()->addDays(2),
+            'highlighted_status' => 'NONE',
+        ]);
+        \App\Event::factory()->create([
+            'activity_type' => 'open-online',
+            'status' => 'APPROVED',
+            'start_date' => Carbon::now()->addDays(10),
+            'end_date' => Carbon::now()->addDays(11),
+            'highlighted_status' => 'FEATURED',
+        ]);
 
-        //Bad ones
-        \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->subDays(10)]);
+        // Bad ones
+        \App\Event::factory()->create([
+            'activity_type' => 'open-online',
+            'status' => 'APPROVED',
+            'start_date' => Carbon::now()->subDays(20),
+            'end_date' => Carbon::now()->addDays(10),
+        ]);
+        \App\Event::factory()->create([
+            'activity_type' => 'open-online',
+            'status' => 'APPROVED',
+            'start_date' => Carbon::now()->subDays(5),
+            'end_date' => Carbon::now()->subDay(),
+        ]);
         \App\Event::factory()->create(['activity_type' => 'open-closed', 'status' => 'APPROVED']);
         \App\Event::factory()->create(['activity_type' => 'open-online', 'status' => 'PENDING']);
         \App\Event::factory()->create(['activity_type' => 'open-offline', 'status' => 'APPROVED']);
-        \App\Event::factory()->create(['activity_type' => 'invite -online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
+        \App\Event::factory()->create([
+            'activity_type' => 'invite-online',
+            'status' => 'APPROVED',
+            'start_date' => Carbon::now()->addDays(10),
+            'end_date' => Carbon::now()->addDays(11),
+            'highlighted_status' => 'FEATURED',
+        ]);
 
         $events = EventHelper::getOnlineEvents();
         $this->assertCount(2, $events);

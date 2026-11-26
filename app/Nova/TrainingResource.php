@@ -56,6 +56,97 @@ class TrainingResource extends Resource
         return $locales;
     }
 
+    /**
+     * Locales offered in the "Translated page content" panel.
+     */
+    private static function pageTranslationLocales(): array
+    {
+        $configured = config('codeweek.training_translation_locales', ['it']);
+        if (is_string($configured)) {
+            $configured = array_map('trim', explode(',', $configured));
+        }
+
+        $available = self::localesSorted();
+
+        return array_values(array_filter(
+            (array) $configured,
+            fn ($locale) => $locale !== 'en' && in_array($locale, $available, true)
+        ));
+    }
+
+    /**
+     * Build one translation field, stored under locale_overrides[$locale][$field].
+     */
+    private function translationField(string $locale, string $field, string $label, string $type)
+    {
+        $novaField = match ($type) {
+            'trix' => Trix::make($label.' ('.strtoupper($locale).')', 'locale_'.$locale.'_'.$field),
+            'textarea' => Textarea::make($label.' ('.strtoupper($locale).')', 'locale_'.$locale.'_'.$field),
+            default => Text::make($label.' ('.strtoupper($locale).')', 'locale_'.$locale.'_'.$field),
+        };
+
+        return $novaField
+            ->nullable()
+            ->hideFromIndex()
+            ->resolveUsing(function () use ($locale, $field) {
+                $overrides = $this->resource->locale_overrides ?? [];
+
+                return $overrides[$locale][$field] ?? '';
+            })
+            ->fillUsing(function ($request, $model, $attribute, $requestAttribute) use ($locale, $field) {
+                $overrides = $model->locale_overrides ?? [];
+                if (! isset($overrides[$locale]) || ! is_array($overrides[$locale])) {
+                    $overrides[$locale] = [];
+                }
+
+                $value = $request->get($requestAttribute);
+                if ($value === null || trim(strip_tags((string) $value)) === '') {
+                    unset($overrides[$locale][$field]);
+                } else {
+                    $overrides[$locale][$field] = $value;
+                }
+
+                if ($overrides[$locale] === []) {
+                    unset($overrides[$locale]);
+                }
+
+                $model->locale_overrides = $overrides === [] ? null : $overrides;
+            });
+    }
+
+    /**
+     * Full-page translation fields for one locale, mirroring the English field types.
+     */
+    private function pageTranslationFieldsFor(string $locale): array
+    {
+        $definitions = [
+            ['card_title', 'Card title', 'text'],
+            ['card_author', 'Card author', 'text'],
+            ['page_title', 'Page title', 'text'],
+            ['hero_author', 'Hero author', 'text'],
+            ['hero_button_text', 'Hero button text', 'text'],
+            ['hero_secondary_button_text', 'Hero secondary button text', 'text'],
+            ['highlight_box', 'Highlight box', 'trix'],
+            ['intro', 'Intro', 'trix'],
+            ['content', 'Content', 'trix'],
+            ['body_image_alt', 'Body image alt text', 'text'],
+            ['video_script_text', 'Video script link text', 'text'],
+            ['contacts_section', 'Contacts section', 'trix'],
+            ['register_box_section', 'Register box section', 'trix'],
+            ['about_box_section', 'About box section', 'trix'],
+            ['button_text', 'Button text', 'text'],
+            ['secondary_button_text', 'Secondary button text', 'text'],
+            ['third_button_text', 'Third button text', 'text'],
+            ['meta_title', 'Meta title', 'text'],
+            ['meta_description', 'Meta description', 'textarea'],
+        ];
+
+        return array_map(
+            fn (array $definition) => $this->translationField($locale, ...$definition),
+            $definitions
+        );
+    }
+
     public function fields(Request $request): array
     {
         $pdfTranslationFields = [];
@@ -64,14 +155,13 @@ class TrainingResource extends Resource
                 continue;
             }
 
-            $pdfTranslationFields[] = Textarea::make(
+            $pdfTranslationFields[] = Trix::make(
                 'PDF links ('.strtoupper($locale).')',
                 'locale_'.$locale.'_pdf_links_section'
             )
                 ->nullable()
-                ->rows(10)
                 ->hideFromIndex()
-                ->help('Leave empty to keep the default English PDF links for this language. Paste the full HTML (same structure as PDF links section) with translated file URLs after uploading to S3.')
+                ->help('Leave empty to keep the default English PDF links. Prefer pasting only the Key one-pagers links here; the Detailed supporting information block stays English until you include a translated version. Use the toolbar to add links.')
                 ->resolveUsing(function () use ($locale) {
                     $overrides = $this->resource->locale_overrides ?? [];
 
@@ -84,7 +174,7 @@ class TrainingResource extends Resource
                     }
 
                     $value = $request->get($requestAttribute);
-                    if ($value === null || trim((string) $value) === '') {
+                    if ($value === null || trim(strip_tags((string) $value)) === '') {
                         unset($overrides[$locale]['pdf_links_section']);
                     } else {
                         $overrides[$locale]['pdf_links_section'] = $value;
@@ -308,6 +398,16 @@ class TrainingResource extends Resource
         if ($pdfTranslationFields !== []) {
             $fields[] = Panel::make('Translated PDF links', $pdfTranslationFields)
                 ->help('Only fill languages that have translated files. When the site language switches, that language’s links are shown if present; otherwise visitors keep the default English links.')
+                ->collapsable()
+                ->collapsedByDefault();
+        }
+
+        foreach (self::pageTranslationLocales() as $locale) {
+            $fields[] = Panel::make(
+                'Translated page content ('.strtoupper($locale).')',
+                $this->pageTranslationFieldsFor($locale)
+            )
+                ->help('Full page translation for '.strtoupper($locale).'. Any field left empty falls back to the English version above, so a partly translated page never renders blank. PDF download links live in the “Translated PDF links” panel.')
                 ->collapsable()
                 ->collapsedByDefault();
         }

@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Event;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -15,7 +16,9 @@ use Illuminate\Support\Facades\Log;
  * and whose next occurrence does not exceed end_date.
  *
  * Clones event data and related pivot tables (themes, tags, audiences).
- * Stores reference in `source_ref` as "parent:{event_id}" for traceability.
+ * Stores reference in `source_ref` as "parent:{event_id}:{Y-m-d}" so each
+ * occurrence is unique — `events.source_ref` has a unique index, and the old
+ * bare "parent:{event_id}" form could only ever store one child per parent.
  *
  * Options:
  *  --dry-run : simulate generation without DB writes.
@@ -43,11 +46,16 @@ class GenerateRecurringEvents extends Command
             ->where('status', 'APPROVED')
             ->whereIn('recurring_event', Event::RECURRING_EVENTS)
             ->where('end_date', '>=', $now)
+            ->where(function ($query) {
+                $query->whereNull('source_ref')->orWhere('source_ref', '');
+            })
+            ->whereIn('creator_id', User::query()->select('id'))
             ->orderBy('start_date')
             ->get();
 
         if ($events->isEmpty()) {
             $this->info('No eligible recurring events found.');
+
             return self::SUCCESS;
         }
 
@@ -64,31 +72,35 @@ class GenerateRecurringEvents extends Command
                 // Skip if next start exceeds event's end_date
                 if ($nextStart->gt($event->end_date)) {
                     $bar->advance();
+
                     continue;
                 }
 
-                // Avoid duplicates: check for same parent + same next date
-                $exists = Event::query()
-                    ->where('source_ref', 'parent:' . $event->id)
-                    ->whereDate('start_date', $nextStart->toDateString())
-                    ->exists();
+                if (! $dryRun) {
+                    $this->rekeyLegacyChild($event);
+                }
 
-                if ($exists) {
+                $sourceRef = $this->occurrenceSourceRef($event->id, $nextStart);
+
+                if ($this->occurrenceExists($event->id, $nextStart, $sourceRef)) {
                     $bar->advance();
+
                     continue;
                 }
 
                 // Clone event data
                 $newEventData = $event->replicate([
-                    'id', 'created_at', 'updated_at'
+                    'id', 'created_at', 'updated_at',
                 ])->toArray();
 
                 $durationSeconds = Carbon::parse($event->end_date)->diffInSeconds(Carbon::parse($event->start_date));
 
                 $newEventData['start_date'] = $nextStart;
                 $newEventData['end_date'] = $nextStart->copy()->addSeconds($durationSeconds);
-                $newEventData['source_ref'] = 'parent:' . $event->id;
+                $newEventData['source_ref'] = $sourceRef;
                 $newEventData['status'] = $event->status;
+                $newEventData['recurring_event'] = null;
+                $newEventData['recurring_type'] = null;
 
                 if ($dryRun) {
                     $this->line("\nWould create event for '{$event->title}' on {$nextStart->toDateTimeString()}");
@@ -144,5 +156,43 @@ class GenerateRecurringEvents extends Command
         }
 
         return $next;
+    }
+
+    private function occurrenceSourceRef(int $parentId, Carbon $start): string
+    {
+        return sprintf('parent:%d:%s', $parentId, $start->toDateString());
+    }
+
+    private function occurrenceExists(int $parentId, Carbon $start, string $sourceRef): bool
+    {
+        return Event::query()
+            ->where(function ($query) use ($parentId, $sourceRef) {
+                $query->where('source_ref', $sourceRef)
+                    ->orWhere('source_ref', 'parent:'.$parentId)
+                    ->orWhere('source_ref', 'like', 'parent:'.$parentId.':%');
+            })
+            ->whereDate('start_date', $start->toDateString())
+            ->exists();
+    }
+
+    /**
+     * Older runs wrote a single "parent:{id}" child. That value is unique, so it
+     * blocks every later occurrence. Rewrite it to the dated form once.
+     */
+    private function rekeyLegacyChild(Event $event): void
+    {
+        $legacy = Event::query()
+            ->where('source_ref', 'parent:'.$event->id)
+            ->first();
+
+        if ($legacy === null) {
+            return;
+        }
+
+        $legacy->source_ref = $this->occurrenceSourceRef(
+            $event->id,
+            Carbon::parse($legacy->start_date)
+        );
+        $legacy->save();
     }
 }

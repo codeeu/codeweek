@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Country;
 use App\Mail\PendingEmailChangeConfirmation;
 use App\Mail\PendingEmailChangeNotification;
 use App\User;
@@ -172,6 +173,8 @@ final class UserEmailChangeTest extends TestCase
             'email_verified_at' => now(),
         ]);
 
+        $country = Country::factory()->create(['iso' => 'BE']);
+
         $this->signIn($user);
 
         $this->patch(route('user.update'), [
@@ -179,8 +182,9 @@ final class UserEmailChangeTest extends TestCase
             'lastname' => $user->lastname,
             'privacy' => 1,
             'receive_emails' => 1,
+            'country_iso' => $country->iso,
             'email' => 'hacked@example.com',
-        ]);
+        ])->assertSessionHasNoErrors();
 
         $this->assertSame('old@example.com', $user->fresh()->email);
     }

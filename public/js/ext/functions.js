@@ -2154,59 +2154,69 @@ var SEMICOLON = SEMICOLON || {};
             var $country = $('#id_country');
             var $city = $('#id_city');
             if (!$country.length || !$city.length) return;
-            
-            if (!$city.data('originalHtml')) {
-                $city.data('originalHtml', $city.html());
+
+            var citiesUrl = $city.data('cities-url') || '/api/cities';
+            var cache = {};
+            var requestSeq = 0;
+
+            function emptyOption() {
+                return $('<option></option>').attr('value', '');
             }
-          
-            function getAllOptions() {
-                var html = $city.data('originalHtml') || '';
-                var $tmp = $('<select>' + html + '</select>');
-                return $tmp.find('option');
+
+            function fillCities(cities, prev) {
+                $city.empty().append(emptyOption());
+                $.each(cities, function (_, row) {
+                    $city.append(
+                        $('<option></option>')
+                            .attr('value', row.id)
+                            .attr('data-country', row.country_iso || '')
+                            .text(row.city)
+                    );
+                });
+                if (prev && $city.find('option[value="' + prev + '"]').length) {
+                    $city.val(prev);
+                } else {
+                    $city.val('');
+                }
             }
-          
+
             function applyCityFilter() {
                 var iso = ($country.val() || '').toUpperCase();
                 var prev = $city.val();
-                var $all = getAllOptions();
 
                 if (!iso) {
-                    $city.html($all.clone());
-                    if ($city.find('option[value="'+ prev +'"]').length) $city.val(prev);
+                    $city.empty().append(emptyOption());
                     return;
                 }
-            
-                var $empty = $all.first().clone();
-                var $filtered = $all.filter(function (i, opt) {
-                    if (i === 0) return false;
-                    var dc = (opt.getAttribute('data-country') || '').toUpperCase();
-                    return dc === iso;
-                });
-                
-                $city.empty().append($empty).append($filtered.clone());
-                
-                if ($city.find('option[value="'+ prev +'"]').length) {
-                    $city.val(prev);
-                } else {
-                    $city.val(''); // reset
+
+                if (cache[iso]) {
+                    fillCities(cache[iso], prev);
+                    return;
                 }
+
+                var seq = ++requestSeq;
+                $.getJSON(citiesUrl, { country_iso: iso })
+                    .done(function (cities) {
+                        if (seq !== requestSeq) return;
+                        cache[iso] = cities || [];
+                        fillCities(cache[iso], prev);
+                    })
+                    .fail(function () {
+                        if (seq !== requestSeq) return;
+                        // Keep any server-rendered options for the current country.
+                        var $kept = $city.find('option').filter(function () {
+                            var dc = ($(this).attr('data-country') || '').toUpperCase();
+                            return !this.value || dc === iso;
+                        });
+                        $city.empty().append(emptyOption()).append($kept.filter('[value!=""]'));
+                        if (prev && $city.find('option[value="' + prev + '"]').length) {
+                            $city.val(prev);
+                        } else {
+                            $city.val('');
+                        }
+                    });
             }
-            
-            (function autoSelectCountryFromCity() {
-                if ($country.val()) return;
-                var $sel = getAllOptions().filter(function(i, opt){
-                    return opt.value && opt.selected;
-                }).first();
-                if ($sel.length) {
-                    var dc = ($sel.attr('data-country') || '').toUpperCase();
-                    if (dc) {
-                    var $opt = $country.find('option[value="'+ dc +'"]');
-                    if ($opt.length) $country.val(dc);
-                    }
-                }
-            })();
-          
-            // bind & run
+
             $country.off('change.cityfilter').on('change.cityfilter', applyCityFilter);
             applyCityFilter();
         },

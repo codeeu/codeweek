@@ -51,7 +51,7 @@ return [
     'coding@home' => 'Kodēšana@Home',
     'values' => 'Mūsu vērtības',
     'online_events' => 'Tiešsaistes aktivitātes',
-    'featured_activities' => 'Rodoma veikla',
+    'featured_activities' => 'Tiešsaistes aktivitātes',
     'codeweek2020' => '2020 m. laida',
     'register_activity' => 'Reģistrēt aktivitāti',
     'select_language' => 'Izvēlieties valodu',

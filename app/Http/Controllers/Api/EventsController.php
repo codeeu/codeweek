@@ -33,30 +33,58 @@ class EventsController extends Controller
 
         public function list(Request $request)
         {
+            // Map payload is ~150k lean rows; PHP 8.4 FPM defaults to 128M and OOMs
+            // while hydrating Eloquent models or writing the Redis cache blob.
+            ini_set('memory_limit', '512M');
+
             $year = $request->input('year')
                 ? $request->input('year')
                 : Carbon::now()->year;
 
-            if (Cache::has('events'.$year)) {
-                $events = Cache::get('events'.$year);
+            $cacheKey = 'events'.$year;
+
+            if (Cache::has($cacheKey)) {
+                $events = Cache::get($cacheKey);
             } else {
-                $events = Event::getByYear($year);
+                $grouped = [];
 
-                $events = $this->eventTransformer->transformCollection($events);
+                Event::query()
+                    ->select('id', 'geoposition', 'country_iso')
+                    ->where('status', 'APPROVED')
+                    ->whereNotNull('geoposition')
+                    ->where('geoposition', '!=', '')
+                    ->where('start_date', '>', Carbon::createFromDate($year, 1, 1))
+                    ->when(
+                        (int) $year !== (int) Carbon::now()->year,
+                        fn ($query) => $query->where(
+                            'end_date',
+                            '<',
+                            Carbon::createFromDate($year, 12, 31)
+                        ),
+                        // Keep prior behaviour: compare against "now", not the integer year
+                        // (end_date >= 2026 cast almost every row through and blew memory).
+                        fn ($query) => $query->where(
+                            'end_date',
+                            '>=',
+                            Carbon::now('Europe/Brussels')
+                        )
+                    )
+                    ->cursor()
+                    ->each(function ($event) use (&$grouped) {
+                        $country = strtoupper(trim((string) $event->country_iso));
+                        $grouped[$country][] = [
+                            'id' => $event->id,
+                            'geoposition' => $event->geoposition,
+                            'country' => $country,
+                        ];
+                    });
 
-                // FIX: group by UPPERCASE country
-                $events = $events->groupBy(function ($event) {
-                    return strtoupper(trim($event['country']));
-                });
+                $events = collect($grouped);
 
-                if ($year == Carbon::now()->year) {
-                    Cache::add(
-                        'events'.$year,
-                        $events,
-                        300
-                    );
+                if ((int) $year === (int) Carbon::now()->year) {
+                    Cache::put($cacheKey, $events, 300);
                 } else {
-                    Cache::forever('events'.$year, $events);
+                    Cache::forever($cacheKey, $events);
                 }
             }
 

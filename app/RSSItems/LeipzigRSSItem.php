@@ -28,6 +28,7 @@ class LeipzigRSSItem extends Model
         'audience',
         'themes',
         'tags',
+        'leading_teacher_tag',
         'last_updated_at',
     ];
 

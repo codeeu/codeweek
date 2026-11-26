@@ -55,40 +55,60 @@ export default {
     });
 
     const itemSelected = (selectedItem) => {
-      emit('onChange', { location: selectedItem?.name || '' });
-
-      if (selectedItem && selectedItem.name && selectedItem.magicKey) {
-        const baseURL = "/api/proxy/geocode"; // Update to your Laravel endpoint
-        axios.get(baseURL, {
-          params: {
-            singleLine: selectedItem.name,
-            magicKey: selectedItem.magicKey
-          }
-        }).then(response => {
-          const candidate = response.data.candidates[0];
-          localGeoposition.value = [candidate.location.y, candidate.location.x];
-          if (window.map) {
-            window.map.setView([candidate.location.y, candidate.location.x], 16);
-          }
-          const countryIso2 = findCountry(candidate.attributes.Country).iso2;
-
-          emit('onChange', {
-            location: selectedItem?.name || '',
-            geoposition: [candidate.location.y, candidate.location.x],
-            country_iso: countryIso2 || '',
-          });
-
-          if (document.getElementById('id_country')) {
-            document.getElementById('id_country').value = countryIso2;
-          }
-        }).catch(error => {
-          console.error('Error:', error);
-        });
+      if (!selectedItem?.name) {
+        return;
       }
+
+      // Location text only — do not clear country/geoposition before geocode resolves.
+      // ArcGIS returns blank Country for disputed regions (e.g. Kosovo); that must not wipe the form.
+      emit('onChange', { location: selectedItem.name });
+
+      if (!selectedItem.magicKey) {
+        return;
+      }
+
+      const baseURL = "/api/proxy/geocode";
+      axios.get(baseURL, {
+        params: {
+          singleLine: selectedItem.name,
+          magicKey: selectedItem.magicKey
+        }
+      }).then(response => {
+        const candidate = response.data?.candidates?.[0];
+        if (!candidate?.location) {
+          return;
+        }
+
+        const geoposition = [candidate.location.y, candidate.location.x];
+        localGeoposition.value = geoposition;
+        if (window.map) {
+          window.map.setView(geoposition, 16);
+        }
+
+        const countryIso2 = findCountry(candidate.attributes?.Country)?.iso2;
+        const payload = {
+          location: selectedItem.name,
+          geoposition,
+        };
+        if (countryIso2) {
+          payload.country_iso = countryIso2;
+        }
+
+        emit('onChange', payload);
+
+        if (countryIso2 && document.getElementById('id_country')) {
+          document.getElementById('id_country').value = countryIso2;
+        }
+      }).catch(error => {
+        console.error('Error:', error);
+      });
     };
 
 
     const findCountry = (iso3) => {
+      if (!iso3) {
+        return undefined;
+      }
       return allCountries.find(country => country.iso3 === iso3);
     };
 

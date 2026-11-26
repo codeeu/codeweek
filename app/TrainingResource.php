@@ -10,6 +10,35 @@ class TrainingResource extends Model
 {
     use HasFactory;
 
+    /**
+     * Fields that can be translated per locale through locale_overrides.
+     *
+     * pdf_links_section is deliberately absent: it has its own resolution path
+     * in pdfLinksSectionForLocale(), which merges the English supporting-detail
+     * block and applies per-URL replacements.
+     */
+    public const TRANSLATABLE_FIELDS = [
+        'card_title',
+        'card_author',
+        'page_title',
+        'hero_author',
+        'hero_button_text',
+        'hero_secondary_button_text',
+        'intro',
+        'highlight_box',
+        'content',
+        'body_image_alt',
+        'video_script_text',
+        'contacts_section',
+        'register_box_section',
+        'about_box_section',
+        'button_text',
+        'secondary_button_text',
+        'third_button_text',
+        'meta_title',
+        'meta_description',
+    ];
+
     protected $fillable = [
         'slug',
         'card_title',
@@ -108,6 +137,39 @@ class TrainingResource extends Model
         return $slug;
     }
 
+    /**
+     * Value of a translatable field for the active (or given) locale.
+     *
+     * Falls back to the default (English) attribute per field, so a partly
+     * translated locale never renders blank sections.
+     */
+    public function forLocale(string $field, ?string $locale = null): ?string
+    {
+        $default = $this->getAttribute($field);
+
+        if (! in_array($field, self::TRANSLATABLE_FIELDS, true)) {
+            return $default;
+        }
+
+        $locale = $locale ?? app()->getLocale();
+        $overrides = $this->locale_overrides ?? [];
+        $value = $overrides[$locale][$field] ?? null;
+
+        if (! is_string($value) || $this->isBlankHtml($value)) {
+            return $default;
+        }
+
+        return $value;
+    }
+
+    /**
+     * Trix stores an emptied editor as markup like "<div><br></div>".
+     */
+    protected function isBlankHtml(string $value): bool
+    {
+        return trim(strip_tags($value)) === '' && ! str_contains($value, '<img');
+    }
+
     public function getResolvedCardImageAttribute(): string
     {
         $image = trim((string) $this->card_image);
@@ -168,6 +230,7 @@ class TrainingResource extends Model
      *
      * Priority:
      * 1. Full locale override of pdf_links_section, if present
+     *    (English "supporting detail" block is kept when the override omits it)
      * 2. Default pdf_links_section with optional per-URL replacements
      * 3. Default pdf_links_section
      */
@@ -176,12 +239,16 @@ class TrainingResource extends Model
         $locale = $locale ?? app()->getLocale();
         $overrides = $this->locale_overrides ?? [];
         $localeOverrides = is_array($overrides[$locale] ?? null) ? $overrides[$locale] : [];
+        $defaultSection = (string) ($this->pdf_links_section ?? '');
 
         if (! empty($localeOverrides['pdf_links_section']) && is_string($localeOverrides['pdf_links_section'])) {
-            return $localeOverrides['pdf_links_section'];
+            return $this->mergeSupportingDetailFromDefault(
+                $localeOverrides['pdf_links_section'],
+                $defaultSection
+            );
         }
 
-        $section = (string) ($this->pdf_links_section ?? '');
+        $section = $defaultSection;
         $replacements = $localeOverrides['pdf_link_replacements'] ?? null;
 
         if (! is_array($replacements) || $replacements === [] || $section === '') {
@@ -200,6 +267,50 @@ class TrainingResource extends Model
     }
 
     /**
+     * Append the default supporting-detail block when a locale override only has Key one-pagers.
+     */
+    protected function mergeSupportingDetailFromDefault(string $localeSection, string $defaultSection): string
+    {
+        if ($defaultSection === '' || $this->containsSupportingDetailSection($localeSection)) {
+            return $localeSection;
+        }
+
+        $supporting = $this->extractSupportingDetailSection($defaultSection);
+        if ($supporting === '') {
+            return $localeSection;
+        }
+
+        return rtrim($localeSection)."\n".$supporting;
+    }
+
+    protected function containsSupportingDetailSection(string $html): bool
+    {
+        if (preg_match('/<(?:h2|h3|strong)\b[^>]*>\s*(?:Useful detail info|Detailed supporting information)\s*<\/(?:h2|h3|strong)>/is', $html) === 1) {
+            return true;
+        }
+
+        // Heuristic: Register of Processing Activities only appears in the supporting list.
+        return str_contains($html, 'Register of Processing Activities');
+    }
+
+    protected function extractSupportingDetailSection(string $html): string
+    {
+        if (preg_match('/((?:<div[^>]*>\s*)?<(?:h2|h3|strong)\b[^>]*>\s*(?:Useful detail info|Detailed supporting information)\s*<\/(?:h2|h3|strong)>.*)$/is', $html, $matches) === 1) {
+            return trim($matches[1]);
+        }
+
+        if (preg_match_all('/<h2\b[^>]*>.*?<\/h2>/is', $html, $headings, PREG_OFFSET_CAPTURE) === false) {
+            return '';
+        }
+
+        if (count($headings[0]) < 2) {
+            return '';
+        }
+
+        return trim(substr($html, $headings[0][1][1]));
+    }
+
+    /**
      * Whether the given locale has dedicated PDF-link content (full section or URL map).
      */
     public function hasPdfLinksOverrideForLocale(?string $locale = null): bool
@@ -215,5 +326,67 @@ class TrainingResource extends Model
         $replacements = $localeOverrides['pdf_link_replacements'] ?? null;
 
         return is_array($replacements) && $replacements !== [];
+    }
+
+    /**
+     * PDF links HTML with the locale-aware Key one-pagers note applied.
+     */
+    public function renderedPdfLinksSectionForLocale(?string $locale = null): string
+    {
+        $section = $this->pdfLinksSectionForLocale($locale);
+        if ($section === '') {
+            return '';
+        }
+
+        $noteHtml = '<span class="block mb-4 font-semibold"><strong>'.e(__('training.discover_digital_key_one_pagers_note')).'</strong></span>';
+        $headingHtml = '<h2 id="key-one-pagers">Key one-pagers</h2>';
+
+        if (str_contains($section, '[[key_one_pagers_locale_note]]')) {
+            $section = str_replace('[[key_one_pagers_locale_note]]', $noteHtml, $section);
+        }
+
+        if ($this->slug !== 'discover-digital-programme') {
+            return $section;
+        }
+
+        $section = $this->stripKeyOnePagersTitleVariants($section);
+        // Remove any previously injected note copies so we add exactly one.
+        $section = $this->stripInjectedKeyOnePagersNotes($section);
+        $section = preg_replace('/<(?:div|p)[^>]*>\s*(?:<br\s*\/?>|\s)*<\/(?:div|p)>/iu', '', $section) ?? $section;
+
+        return $headingHtml.$noteHtml.ltrim($section);
+    }
+
+    /**
+     * Remove h2/strong/Trix title-only "Key one-pagers" blocks (including &lt;br&gt; inside).
+     */
+    protected function stripKeyOnePagersTitleVariants(string $html): string
+    {
+        $patterns = [
+            // <h2 id="key-one-pagers">Key one-pagers</h2> or plain h2
+            '/<h2[^>]*>\s*Key one-pagers\s*<\/h2>/iu',
+            // <div>/<p> wrappers around strong/b title, allowing <br> inside
+            '/<(?:div|p)[^>]*>\s*<(?:strong|b)[^>]*>\s*Key one-pagers(?:\s|<br\s*\/?>)*<\/(?:strong|b)>\s*<\/(?:div|p)>/iu',
+            // bare <strong>Key one-pagers<br></strong>
+            '/<(?:strong|b)[^>]*>\s*Key one-pagers(?:\s|<br\s*\/?>)*<\/(?:strong|b)>/iu',
+        ];
+
+        foreach ($patterns as $pattern) {
+            $html = preg_replace($pattern, '', $html) ?? $html;
+        }
+
+        return $html;
+    }
+
+    /**
+     * Remove earlier auto-injected locale note spans (English or translated).
+     */
+    protected function stripInjectedKeyOnePagersNotes(string $html): string
+    {
+        return preg_replace(
+            '/(?:<em>\s*)?<span class="block mb-4[^"]*"[^>]*>.*?<\/span>(?:\s*<\/em>)?/ius',
+            '',
+            $html
+        ) ?? $html;
     }
 }

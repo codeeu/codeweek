@@ -35,7 +35,7 @@ class ValidateBulkEventUploadJob implements ShouldQueue
         }
 
         $path = (string) ($payload['path'] ?? '');
-        $disk = (string) ($payload['disk'] ?? 'local');
+        $disk = BulkEventUploadCache::tempDisk($payload['disk'] ?? null);
         $defaultCreatorEmail = $payload['default_creator_email'] ?? null;
 
         if ($path === '' || ! Storage::disk($disk)->exists($path)) {

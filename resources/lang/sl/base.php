@@ -67,4 +67,5 @@ return [
     'bring_codeweek_to_your_students' => 'Predstavite teden programiranja svojim učencem',
     'or' => 'ali',
     'newsletter' => 'E-novice',
+    'city_required_for_community_map' => 'Select your city so that you appear on the community map. Leading teachers without a city are not shown there.',
 ];

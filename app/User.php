@@ -107,7 +107,9 @@ class User extends Authenticatable implements MustVerifyEmail
      */
 
 
-    protected $guarded = [];
+    // 'approved' controls whether a leading teacher is listed publicly, so it must
+    // never be settable from request data. Set it explicitly instead of mass-assigning.
+    protected $guarded = ['approved'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -339,6 +341,34 @@ class User extends Authenticatable implements MustVerifyEmail
             $avatar = 'avatars/default_avatar.png';
         }
         return Storage::disk('s3')->url($avatar);
+    }
+
+    /**
+     * Public avatar URL for community pages. Falls back to a local placeholder
+     * when the stored path is empty or a known default (S3 defaults are often inaccessible).
+     */
+    public function communityAvatarUrl(?string $fallback = null): string
+    {
+        $fallback = $fallback ?: asset('images/default.png');
+        $raw = $this->attributes['avatar_path'] ?? null;
+
+        if ($raw === null || trim((string) $raw) === '') {
+            return $fallback;
+        }
+
+        $normalized = strtolower(trim((string) $raw));
+        $defaults = [
+            'avatars/default_avatar.png',
+            'avatars/default.png',
+            'images/default-avatar.png',
+            'images/default.png',
+        ];
+
+        if (in_array($normalized, $defaults, true)) {
+            return $fallback;
+        }
+
+        return $this->avatar_path;
     }
 
     /**

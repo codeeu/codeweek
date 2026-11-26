@@ -34,10 +34,10 @@ class SchoolsController extends Controller
                 ],
                 'button' => [
                     'show' => true,
-                    'label' => __('schools.2.button.label'),
-                    'link' => '/add',
+                    'label' => 'View map',
+                    'link' => 'https://codeweek.eu/events?page=1&year=2026',
                 ],
-                'map' => true,
+                'map' => false,
             ], [
                 'title1' => __('schools.3.title1'),
                 'title2' => __('schools.3.title2'),

@@ -99,9 +99,9 @@ class Country extends Resource
 
         if ($request->user()->isAmbassador()) {
             return $query
-                ->where('iso', '=', 'FR');
-
+                ->where('iso', '=', $request->user()->country_iso);
         }
 
+        return $query;
     }
 }

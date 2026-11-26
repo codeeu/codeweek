@@ -71,7 +71,10 @@ final class OnlineEventsWorkflowTest extends TestCase
 
         $this->signIn($ambassador);
 
-        $onlineEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(15), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        // 14 rather than 15 days: the query window is `start_date >= now()->subDays(15)`,
+        // evaluated a moment after this line, so an exactly-15-day-old fixture falls
+        // outside the window whenever the clock ticks a second in between.
+        $onlineEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(14), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $tooOldOnlineEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(45), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $pastEventInCountry = \App\Event::factory()->create(['start_date' => Carbon::now()->subDays(10), 'end_date' => Carbon::now()->subDays(10), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
 
@@ -162,6 +165,251 @@ final class OnlineEventsWorkflowTest extends TestCase
 
         $this->assertNotEquals('FEATURED', $onlineEventInCountry->fresh()->highlighted_status);
 
+    }
+
+    #[Test]
+    public function super_admins_can_feature_events_from_the_online_list(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $superadmin = \App\User::factory()->create();
+        $superadmin->assignRole('super admin');
+
+        $this->signIn($superadmin);
+
+        $onlineEvent = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->addDay(),
+            'end_date' => Carbon::now()->addDays(2),
+            'country_iso' => $superadmin->country->iso,
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+        ]);
+
+        $response = $this->get('/online/list')
+            ->assertSee($onlineEvent->title)
+            ->assertSee('All Online Activities')
+            ->assertSee('Accept as Featured Activity');
+
+        $response->assertStatus(200);
+
+        $onlineEvent->feature();
+
+        $this->assertEquals('FEATURED', $onlineEvent->fresh()->highlighted_status);
+
+        $this->get('/online/featured')
+            ->assertSee($onlineEvent->title);
+    }
+
+    #[Test]
+    public function super_admin_menu_links_to_all_online_activities(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $superadmin = \App\User::factory()->create();
+        $superadmin->assignRole('super admin');
+
+        $this->signIn($superadmin);
+
+        $this->get('/')
+            ->assertSee(route('admin.online-events'), false);
+    }
+
+    #[Test]
+    public function online_activities_page_shows_all_upcoming_open_online_events(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $nextYear = Carbon::now()->addYear();
+
+        $openOnlineEvent = \App\Event::factory()->create([
+            'start_date' => $nextYear->copy()->startOfMonth()->addDays(5),
+            'end_date' => $nextYear->copy()->startOfMonth()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Open Online Test Activity XYZ',
+        ]);
+
+        $inviteOnlyEvent = \App\Event::factory()->create([
+            'start_date' => $nextYear->copy()->startOfMonth()->addDays(5),
+            'end_date' => $nextYear->copy()->startOfMonth()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'invite-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Invite Only Should Stay Hidden',
+        ]);
+
+        $pendingEvent = \App\Event::factory()->create([
+            'start_date' => $nextYear->copy()->startOfMonth()->addDays(5),
+            'end_date' => $nextYear->copy()->startOfMonth()->addDays(6),
+            'status' => 'PENDING',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Pending Open Online Hidden',
+        ]);
+
+        $this->get('/online-activities')
+            ->assertStatus(200)
+            ->assertSee($openOnlineEvent->title)
+            ->assertDontSee($inviteOnlyEvent->title)
+            ->assertDontSee($pendingEvent->title);
+    }
+
+    #[Test]
+    public function online_activities_calendar_renders_outside_the_vue_root(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $html = $this->get('/online-activities')->assertStatus(200)->getContent();
+
+        $nonVueStart = strpos($html, '<main id="non-vue"');
+        $component = strpos($html, 'wire:snapshot');
+
+        $this->assertNotFalse($nonVueStart, 'Layout should expose the non-vue region.');
+        $this->assertNotFalse($component, 'Calendar component should render.');
+
+        // Vue mounts on <main id="app"> with the runtime compiler, which clears the
+        // container and rebuilds every node, stripping Livewire's event listeners.
+        $this->assertGreaterThan(
+            $nonVueStart,
+            $component,
+            'The calendar must render inside <main id="non-vue">, otherwise Vue destroys its Livewire bindings and the filters stop responding.'
+        );
+    }
+
+    #[Test]
+    public function online_activities_month_filter_only_shows_events_for_selected_month(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $october = Carbon::now()->addYear()->month(10)->startOfMonth();
+        $november = Carbon::now()->addYear()->month(11)->startOfMonth();
+
+        $octoberEvent = \App\Event::factory()->create([
+            'start_date' => $october->copy()->addDays(5),
+            'end_date' => $october->copy()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'language' => ['de'],
+            'title' => 'October Open Online Unique',
+        ]);
+
+        $novemberEvent = \App\Event::factory()->create([
+            'start_date' => $november->copy()->addDays(5),
+            'end_date' => $november->copy()->addDays(6),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'language' => ['fr'],
+            'title' => 'November Open Online Unique',
+        ]);
+
+        \Livewire\Livewire::test(\App\Livewire\OnlineCalendar::class)
+            ->set('selectedDate', '10/'.$october->year)
+            ->assertSee($octoberEvent->title)
+            ->assertDontSee($novemberEvent->title)
+            ->set('selectedDate', '11/'.$november->year)
+            ->assertSee($novemberEvent->title)
+            ->assertDontSee($octoberEvent->title)
+            ->set('selectedLanguage', 'fr')
+            ->assertSee($novemberEvent->title)
+            ->set('selectedLanguage', 'de')
+            ->assertDontSee($novemberEvent->title);
+    }
+
+    #[Test]
+    public function online_activities_page_excludes_activities_that_already_started(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        // Reported by the community: activities dated 2020-2022 were on the page because
+        // they carry an end date years in the future.
+        $staleStartDate = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->subYears(5),
+            'end_date' => Carbon::now()->addYear(),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Started Years Ago Ends Far Away',
+        ]);
+
+        $startedThisMonth = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->startOfMonth(),
+            'end_date' => Carbon::now()->addMonths(2),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Started Earlier This Month',
+        ]);
+
+        $upcoming = \App\Event::factory()->create([
+            'start_date' => Carbon::now()->addWeek(),
+            'end_date' => Carbon::now()->addWeek()->addDay(),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Genuinely Upcoming Activity',
+        ]);
+
+        $this->get('/online-activities')
+            ->assertStatus(200)
+            ->assertSee($upcoming->title)
+            ->assertDontSee($staleStartDate->title)
+            ->assertDontSee($startedThisMonth->title);
+    }
+
+    #[Test]
+    public function the_month_filter_only_offers_months_that_are_still_to_come(): void
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $pastStart = Carbon::now()->subYears(5);
+
+        \App\Event::factory()->create([
+            'start_date' => $pastStart,
+            'end_date' => Carbon::now()->addYear(),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Stale Start Date Activity',
+        ]);
+
+        $nextMonth = Carbon::now()->addMonthNoOverflow()->startOfMonth();
+
+        \App\Event::factory()->create([
+            'start_date' => $nextMonth->copy()->addDays(3),
+            'end_date' => $nextMonth->copy()->addDays(4),
+            'status' => 'APPROVED',
+            'activity_type' => 'open-online',
+            'highlighted_status' => 'NONE',
+            'language' => ['en'],
+            'title' => 'Next Month Activity',
+        ]);
+
+        $monthIds = collect(\Livewire\Livewire::test(\App\Livewire\OnlineCalendar::class)->get('months'))
+            ->pluck('id');
+
+        $this->assertContains($nextMonth->month.'/'.$nextMonth->year, $monthIds);
+        $this->assertNotContains(
+            $pastStart->month.'/'.$pastStart->year,
+            $monthIds,
+            'A past month must not appear in the filter just because an activity carries a far-off end date.'
+        );
+    }
+
+    #[Test]
+    public function the_old_featured_activities_url_redirects_to_online_activities(): void
+    {
+        $this->get('/featured-activities')
+            ->assertStatus(301)
+            ->assertRedirect('/online-activities');
     }
 
     #[Test]

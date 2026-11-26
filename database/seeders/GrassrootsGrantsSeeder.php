@@ -13,6 +13,13 @@ use Symfony\Component\Finder\Finder;
 
 class GrassrootsGrantsSeeder extends Seeder
 {
+    /**
+     * Internal grant reports that must not be published with project evidence.
+     *
+     * @var list<string>
+     */
+    public const EXCLUDED_EVIDENCE_FILES = GrassrootsGrantsProjectImage::EXCLUDED_PUBLIC_FILENAMES;
+
     public function run(): void
     {
         if (! Schema::hasTable('grassroots_grants_page')) {
@@ -104,6 +111,10 @@ class GrassrootsGrantsSeeder extends Seeder
 
         $position = 0;
         foreach ($finder as $file) {
+            if (in_array($file->getFilename(), GrassrootsGrantsProjectImage::EXCLUDED_PUBLIC_FILENAMES, true)) {
+                continue;
+            }
+
             $url = '/images/grants/'.$hubFolder.'/'.$projectFolder.'/'.$file->getFilename();
 
             $extension = strtolower($file->getExtension());

@@ -22,7 +22,9 @@ Schedule::command('notify:administrators')->hourlyAt(30);
 
 Schedule::command('rss:meetandcode')->hourlyAt(5);
 
-Schedule::command('api:germany')->hourlyAt(10);
+// Central codeweek.de export only (legacy per-city feeds retired by Datenfreunde).
+// Soft-deletes codeweek-de:{uid} events that disappear from the export.
+Schedule::command('api:germany-central --import')->hourlyAt(10);
 
 Schedule::command('magic:key')->hourlyAt(13);
 
@@ -35,9 +37,14 @@ Schedule::command('certificate:issues')->hourlyAt(33);
 //Schedule::command('certificates:fix')->everyFiveMinutes();
 
 Schedule::command('app:sync-blogs')->dailyAt('1:00');
-Schedule::command('app:export-search-data-to-json')->dailyAt('2:00');
 
 Schedule::command('events:generate-recurring')->dailyAt('01:00');
+
+// Fires Laravel's QueueBusy event when the backlog exceeds the threshold, which
+// App\Listeners\AlertOnBusyQueue turns into a log line and a Sentry message.
+// Nothing else watches the queue, so removing this makes a stalled worker silent.
+Schedule::command('queue:monitor default --max='.config('codeweek.queue_busy_threshold'))
+    ->everyFiveMinutes();
 
 // Support Gmail copilot: ingest tickets by subject (codeweek-support), run dry-run, email for APPROVE.
 $supportGmailPoll = Schedule::command('support:gmail:poll --max=10')

@@ -114,12 +114,18 @@ class AppServiceProvider extends ServiceProvider
 
             $activeCountries = Country::query()->orderBy('name')->get();
 
-            $cities = City::query()
-                    ->whereIn('country_iso', $activeCountries->pluck('iso'))
+            // Preload cities for the signed-in user's country only. Other countries are
+            // loaded on demand via /api/cities (cityFilter JS). Do not reuse
+            // $supportedCountries here — that list is for community hub copy and omits
+            // countries like Albania that still need a working city dropdown.
+            $countryIso = optional(auth()->user())->country_iso;
+            $cities = $countryIso
+                ? City::query()
+                    ->where('country_iso', $countryIso)
                     ->select(['id', 'city', 'country_iso'])
-                    ->orderBy('country_iso')
                     ->orderBy('city')
-                    ->get();
+                    ->get()
+                : collect();
 
             $view->with('cities', $cities);
             $view->with('active_countries', $activeCountries);

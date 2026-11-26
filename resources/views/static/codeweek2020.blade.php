@@ -30,7 +30,7 @@
                 <h2>@lang('cw2020.online-activities.title')</h2>
                 <div>
                     @lang('cw2020.online-activities.subtitle.0')
-                    <a href="{{route("featured_activities")}}">@lang('cw2020.online-activities.subtitle.1')</a> @lang('cw2020.online-activities.subtitle.2').
+                    <a href="{{route("online_activities")}}">@lang('cw2020.online-activities.subtitle.1')</a> @lang('cw2020.online-activities.subtitle.2').
                 </div>
                 <h3>
                     @lang('cw2020.online-activities.section1.title')
@@ -51,7 +51,7 @@
                 </h3>
                 <div>
                     @lang('cw2020.online-activities.section3.content.0')
-                    <a href="{{route("featured_activities")}}">@lang('cw2020.online-activities.section3.content.1')</a> @lang('cw2020.online-activities.section3.content.2')!
+                    <a href="{{route("online_activities")}}">@lang('cw2020.online-activities.section3.content.1')</a> @lang('cw2020.online-activities.section3.content.2')!
                 </div>
 
             </div>

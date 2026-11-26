@@ -13,4 +13,35 @@ return [
     'EEDUCATION_CLIENTID' => env('EEDUCATION_CLIENTID', null),
     'LOCALES' => env('LOCALES', null),
     'blog_url' => env('BLOG_URL', 'https://codeweek.eu/blog'),
+
+    // Cloudflare Turnstile. Deployed environments set TURNSTILE_SECRET, while the
+    // code used to read TURNSTILE_SECRET_KEY, which silently disabled verification.
+    // Both names are accepted so neither spelling can turn the CAPTCHA off.
+    'turnstile_sitekey' => env('TURNSTILE_SITEKEY', env('TURNSTILE_SITE_KEY')),
+    'turnstile_secret' => env('TURNSTILE_SECRET_KEY', env('TURNSTILE_SECRET')),
+
+    'contact_form_recipient' => env(
+        'CONTACT_FORM_RECIPIENT_EMAIL',
+        env('ADMIN_EMAIL', 'admin@codeweek.test')
+    ),
+
+    // Pending-job count above which queue:monitor fires QueueBusy. Raise it if
+    // October traffic makes the alert noisy rather than switching the alert off.
+    'queue_busy_threshold' => (int) env('QUEUE_BUSY_THRESHOLD', 100),
+
+    // Who may use /admin/certificate-backend/*. Comma-separated list of email
+    // addresses; no role grants access. This used to be a single hardcoded
+    // address in the middleware, which locked out everyone else.
+    'certificate_admin_emails' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env('CERTIFICATE_ADMIN_EMAILS', ''))
+    ))),
+
+    // Languages that get a full page-content translation panel on Nova training
+    // resources. Kept short on purpose: one panel per locale times ~13 fields
+    // would put hundreds of fields in a single Nova form.
+    'training_translation_locales' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env('TRAINING_TRANSLATION_LOCALES', 'it'))
+    ))),
 ];

@@ -139,6 +139,61 @@ class Event extends Model
         return $this->language;
     }
 
+    /**
+     * Language codes that have a translation, so views never print raw keys
+     * such as "base.languages.eng" for legacy 3-letter codes.
+     */
+    public function getDisplayLanguagesAttribute(): array
+    {
+        $raw = $this->languages ?? [];
+
+        if (is_string($raw)) {
+            $raw = str_starts_with(trim($raw), '[')
+                ? (json_decode($raw, true) ?: [])
+                : explode(',', $raw);
+        }
+
+        return collect(is_array($raw) ? $raw : [$raw])
+            ->map(fn ($language) => self::normalizeLanguageCode(is_string($language) ? $language : null))
+            ->filter()
+            ->unique()
+            ->values()
+            ->all();
+    }
+
+    public static function normalizeLanguageCode(?string $code): ?string
+    {
+        if ($code === null) {
+            return null;
+        }
+
+        $code = strtolower(trim($code, " \t\n\r\0\x0B\"'[]"));
+
+        if ($code === '') {
+            return null;
+        }
+
+        $aliases = [
+            'eng' => 'en',
+            'deu' => 'de',
+            'ger' => 'de',
+            'fra' => 'fr',
+            'fre' => 'fr',
+            'spa' => 'es',
+            'ita' => 'it',
+            'nld' => 'nl',
+            'dut' => 'nl',
+            'pol' => 'pl',
+            'tur' => 'tr',
+            'ell' => 'el',
+            'gre' => 'el',
+        ];
+
+        $code = $aliases[$code] ?? $code;
+
+        return trans()->has('base.languages.'.$code) ? $code : null;
+    }
+
     public function getUrlAttribute() {
         if (!empty($this->slug)) {
             return route('view_event', [
@@ -204,9 +259,24 @@ class Event extends Model
 
     public function imported()
     {
+        // Central codeweek.de export (api:germany-central).
+        if (Str::startsWith((string) $this->source_ref, 'codeweek-de:')) {
+            return true;
+        }
+
+        if ((string) $this->mass_added_for === 'API codeweek_de') {
+            return true;
+        }
+
+        $code = (string) $this->codeweek_for_all_participation_code;
+        if ($code !== '' && Str::contains($code, 'codeweek-de')) {
+            return true;
+        }
+
+        // Legacy per-city feeds used codes like cw22-bonn / cw-hamburg.
         $germanCities = ImporterHelper::getGermanCities();
 
-        return Str::contains($this->codeweek_for_all_participation_code, $germanCities);
+        return $code !== '' && Str::contains($code, $germanCities);
     }
 
     public function picture_path()
@@ -345,6 +415,11 @@ class Event extends Model
     public function approve()
     {
         $data = ['status' => 'APPROVED', 'approved_by' => auth()->user()->id];
+
+        // Imported/Nova-created events can reach approval without a code, and the email prints it verbatim.
+        if (empty($this->codeweek_for_all_participation_code)) {
+            $data['codeweek_for_all_participation_code'] = 'cw'.now()->format('y').'-'.Str::random(5);
+        }
 
         $this->update($data);
 

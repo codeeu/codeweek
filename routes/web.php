@@ -28,6 +28,7 @@ use App\Http\Controllers\BulkEventUploadController;
 use App\Http\Controllers\BulkUserChangesController;
 use App\Http\Controllers\ResourcesImportController;
 use App\Http\Controllers\CertificateController;
+use App\Http\Controllers\CityController;
 use App\Http\Controllers\Codeweek4AllController;
 use App\Http\Controllers\CodingAtHomeController;
 use App\Http\Controllers\ContactFormController;
@@ -44,7 +45,6 @@ use App\Http\Controllers\LeadingTeachersReport;
 use App\Http\Controllers\LeadingTeachersSignup;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\MailTemplateController;
-use App\Http\Controllers\MapController;
 use App\Http\Controllers\MatchMakingToolController;
 use App\Http\Controllers\OnlineCoursesController;
 use App\Http\Controllers\OnlineEventsController;
@@ -259,10 +259,6 @@ Route::get('/grassroots-grants/round-2-preview', [\App\Http\Controllers\Grassroo
 //Static training pages
 Route::get('/training', [TrainingController::class, 'index'])->name('training.index');
 Route::get(
-    '/training/cody-color-kit',
-    [StaticPageController::class, 'static']
-)->name('training.module-0');
-Route::get(
     '/training/coding-without-computers',
     [StaticPageController::class, 'static']
 )->name('training.module-1');
@@ -450,7 +446,6 @@ Route::view(
 )->name('codingathome-turning-code-into-pictures');
 
 Route::get('/add', [EventController::class, 'create'])->name('create_event')->middleware('auth');
-Route::get('/map', [MapController::class, 'index'])->name('map');
 //Route::get('/resources', 'ResourcesPageController@index')->name('resources');
 Route::get('/resources', [ResourcesController::class, 'all'])->name('resources');
 Route::get('/resources/learn-and-teach', [ResourcesController::class, 'all'])->name('resources_all');
@@ -577,6 +572,7 @@ Route::delete(
     [Api\UserAvatarController::class, 'delete']
 )->middleware('auth');
 
+Route::get('api/cities', [CityController::class, 'index'])->name('api.cities');
 Route::get('api/event/list', [Api\EventsController::class, 'list'])->name('event_list');
 Route::get('api/event/detail', [Api\EventsController::class, 'detail'])->name(
     'event_list'
@@ -692,7 +688,8 @@ Route::middleware(['auth', 'role:super admin'])->group(function () {
 
 });
 
-// Certificate backend: Excellence & Super Organiser cert generation/sending (bernard@matrixinternet.ie only)
+// Certificate backend: Excellence & Super Organiser cert generation/sending.
+// Access is the CERTIFICATE_ADMIN_EMAILS allowlist, not a role - see EnsureSuperCertificateAdmin.
 Route::middleware(['auth', 'super.certificate.admin'])->prefix('admin/certificate-backend')->name('certificate_backend.')->group(function () {
     Route::get('/', [CertificateBackendController::class, 'index'])->name('index');
     Route::get('/list', [CertificateBackendController::class, 'listRecipients'])->name('list');
@@ -737,9 +734,10 @@ Route::get(
     [Codeweek4AllController::class, 'detail']
 )->name('codeweek4all_details');
 
-Route::get('/featured-activities', [OnlineEventsController::class, 'calendar'])->name(
-    'featured_activities'
+Route::get('/online-activities', [OnlineEventsController::class, 'calendar'])->name(
+    'online_activities'
 );
+Route::permanentRedirect('/featured-activities', '/online-activities');
 
 Route::get('/profile', function () {
     $data = ['profileUser' => Auth()->user()];
@@ -838,6 +836,7 @@ Route::prefix('2021/challenges')->group($challenges);
 Route::prefix('challenges')->group($challenges);
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
+Route::view('/map', 'map.index')->name('map');
 
 Route::get(
     'leading-teachers-document',
