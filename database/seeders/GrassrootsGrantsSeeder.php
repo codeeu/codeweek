@@ -19,24 +19,33 @@ class GrassrootsGrantsSeeder extends Seeder
             return;
         }
 
-        $data = require database_path('seeders/data/grassroots_grants_round1.php');
+        $this->clearExisting();
 
-        $page = GrassrootsGrantsPage::query()->first();
-        if ($page) {
-            GrassrootsGrantsProjectImage::query()->delete();
-            GrassrootsGrantsProjectLink::query()->delete();
-            GrassrootsGrantsProject::query()->delete();
-            GrassrootsGrantsHub::query()->delete();
-            $page->delete();
-        }
+        $this->seedRound(require database_path('seeders/data/grassroots_grants_round1.php'));
+        $this->seedRound(require database_path('seeders/data/grassroots_grants_round2.php'));
+    }
 
+    private function clearExisting(): void
+    {
+        GrassrootsGrantsProjectImage::query()->delete();
+        GrassrootsGrantsProjectLink::query()->delete();
+        GrassrootsGrantsProject::query()->delete();
+        GrassrootsGrantsHub::query()->delete();
+        GrassrootsGrantsPage::query()->delete();
+    }
+
+    /**
+     * @param  array{page: array<string, mixed>, hubs: list<array<string, mixed>>}  $data
+     */
+    private function seedRound(array $data): void
+    {
         $page = GrassrootsGrantsPage::create($data['page']);
 
         foreach ($data['hubs'] as $position => $hubData) {
             $projects = $hubData['projects'] ?? [];
             unset($hubData['projects']);
 
-            $hub = GrassrootsGrantsPage::find($page->id)->hubs()->create(array_merge($hubData, [
+            $hub = $page->hubs()->create(array_merge($hubData, [
                 'position' => $position,
                 'active' => true,
             ]));
@@ -99,6 +108,11 @@ class GrassrootsGrantsSeeder extends Seeder
 
             $extension = strtolower($file->getExtension());
             $fileType = $extension === 'pdf' ? 'pdf' : 'image';
+
+            // Skip non-image/non-pdf assets (docx etc.) from gallery.
+            if (! in_array($extension, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'pdf'], true)) {
+                continue;
+            }
 
             $project->images()->create([
                 'url' => $url,

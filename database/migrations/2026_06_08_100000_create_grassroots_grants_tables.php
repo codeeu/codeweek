@@ -11,6 +11,7 @@ return new class extends Migration
         if (! Schema::hasTable('grassroots_grants_page')) {
             Schema::create('grassroots_grants_page', function (Blueprint $table) {
                 $table->id();
+                $table->string('slug')->unique()->nullable();
                 $table->boolean('is_preview_mode')->default(true);
                 $table->string('hero_title')->nullable();
                 $table->text('hero_subtitle')->nullable();

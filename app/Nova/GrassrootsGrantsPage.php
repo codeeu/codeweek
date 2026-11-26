@@ -17,7 +17,7 @@ class GrassrootsGrantsPage extends Resource
 
     public static $model = \App\GrassrootsGrantsPage::class;
 
-    public static $title = 'hero_title';
+    public static $title = 'round_title';
 
     public static $priority = 5;
 
@@ -43,7 +43,7 @@ class GrassrootsGrantsPage extends Resource
 
     public static function indexQuery(NovaRequest $request, $query)
     {
-        return $query->where('id', 1);
+        return $query->orderBy('slug');
     }
 
     public function fields(Request $request): array
@@ -51,9 +51,13 @@ class GrassrootsGrantsPage extends Resource
         return [
             ID::make()->onlyOnForms(),
 
+            Text::make('Slug', 'slug')
+                ->readonly()
+                ->help('round-1 or round-2. Seeded pages only — creation is disabled.'),
+
             Panel::make('Publishing', [
                 Boolean::make('Preview mode', 'is_preview_mode')
-                    ->help('When enabled, /grassroots-grants returns 404 and only the signed preview URL below works. The footer link stays hidden until preview mode is off.'),
+                    ->help('When enabled, the public URL returns 404 and only the signed preview URL below works. Menu/footer links stay hidden until preview mode is off.'),
                 Text::make('Preview URL', function () {
                     if (! $this->resource?->exists) {
                         return 'Save first to generate preview URL.';
@@ -81,7 +85,7 @@ class GrassrootsGrantsPage extends Resource
                 Text::make('Meta description', 'meta_description')->nullable(),
             ])->collapsable()->collapsedByDefault(),
 
-            Panel::make('Round 1 overview', [
+            Panel::make('Round overview', [
                 Text::make('Round title', 'round_title')->nullable(),
                 Trix::make('Overview intro', 'overview_intro')->nullable(),
                 Trix::make('Common activity types', 'overview_activity_types')->nullable(),
