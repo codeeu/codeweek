@@ -91,14 +91,25 @@
                             <a href="/faqs" class="cookweek-link hover-underline">FAQs</a>
                         </li>
                         @php
-                            $grassrootsGrantsPage = null;
+                            $grassrootsRound1 = null;
+                            $grassrootsRound2 = null;
                             if (\Illuminate\Support\Facades\Schema::hasTable('grassroots_grants_page')) {
-                                $grassrootsGrantsPage = \App\GrassrootsGrantsPage::query()->first();
+                                $grassrootsRound1 = \App\GrassrootsGrantsPage::query()
+                                    ->where('slug', \App\GrassrootsGrantsPage::SLUG_ROUND_1)
+                                    ->first();
+                                $grassrootsRound2 = \App\GrassrootsGrantsPage::query()
+                                    ->where('slug', \App\GrassrootsGrantsPage::SLUG_ROUND_2)
+                                    ->first();
                             }
                         @endphp
-                        @if($grassrootsGrantsPage && ! $grassrootsGrantsPage->is_preview_mode)
+                        @if($grassrootsRound1 && ! $grassrootsRound1->is_preview_mode)
                             <li class="mb-4">
-                                <a href="{{ route('grassroots-grants') }}" class="cookweek-link hover-underline">Grassroots Grants</a>
+                                <a href="{{ route('grassroots-grants') }}" class="cookweek-link hover-underline">@lang('menu.grassroots_grants_round_1')</a>
+                            </li>
+                        @endif
+                        @if($grassrootsRound2 && ! $grassrootsRound2->is_preview_mode)
+                            <li class="mb-4">
+                                <a href="{{ route('grassroots-grants.round-2') }}" class="cookweek-link hover-underline">@lang('menu.grassroots_grants_round_2')</a>
                             </li>
                         @endif
                         <li class="mb-4">

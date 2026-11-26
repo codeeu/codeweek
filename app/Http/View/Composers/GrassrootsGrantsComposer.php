@@ -10,17 +10,16 @@ class GrassrootsGrantsComposer
 {
     public function compose(View $view): void
     {
+        if ($view->offsetExists('page') && $view->offsetGet('page') !== null) {
+            return;
+        }
+
         if (! Schema::hasTable('grassroots_grants_page')) {
             $view->with('page', null);
 
             return;
         }
 
-        $page = GrassrootsGrantsPage::config()->load([
-            'activeHubs.activeProjects.links',
-            'activeHubs.activeProjects.images',
-        ]);
-
-        $view->with('page', $page);
+        $view->with('page', GrassrootsGrantsPage::forSlug(GrassrootsGrantsPage::SLUG_ROUND_1)->withoutExcludedEvidence());
     }
 }

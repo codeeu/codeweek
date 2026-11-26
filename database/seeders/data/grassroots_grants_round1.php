@@ -2,21 +2,22 @@
 
 return [
     'page' => [
+        'slug' => 'round-1',
         'hero_title' => 'EU Code Week Grants for Grassroots',
         'hero_subtitle' => 'Round 1 of Grants',
         'hero_image' => '/images/contact-us.png',
         'meta_title' => 'EU Code Week Grants for Grassroots – Round 1',
-        'meta_description' => 'Round 1 supported 53 grassroots projects across 16 hubs, reaching 9,348 young people and engaging 1,048 educators through 534 Code Week activities.',
+        'meta_description' => 'Round 1 supported 56 grassroots projects through 17 hubs, reaching at least 12,565 young people and engaging at least 1,214 educators across 24 countries.',
         'round_title' => 'Round 1 of Grants',
         'overview_intro' => '<ul>'
-            . '<li><strong>Projects implemented:</strong> 53 projects across 16 hubs</li>'
-            . '<li><strong>Countries of implementation:</strong> Albania, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, France, Germany, Greece, Italy, Latvia, Luxembourg, Netherlands, Romania, Slovakia, Slovenia, Spain, Switzerland, Türkiye, Ukraine (21 countries)</li>'
-            . '<li><strong>Total young people reached:</strong> 9,348 participants</li>'
-            . '<li><strong>Gender of participants:</strong> Approx. 4,520 male; Approx. 4,828 female</li>'
-            . '<li><strong>Educators engaged:</strong> 1,048 teachers, educators, mentors, facilitators, and trainers</li>'
-            . '<li><strong>Activities delivered on the Code Week platform:</strong> 534 activities, workshops, trainings, festivals, coding events, and community sessions</li>'
-            . '<li><strong>Project durations:</strong> Most projects implemented between May – December 2025, with several extending into early 2026</li>'
-            . '<li><strong>Projects targeting underserved groups:</strong> 19 out of 53 projects</li>'
+            . '<li><strong>Projects implemented:</strong> 56 projects funded through 17 hubs, including 3 projects funded directly by JA Europe</li>'
+            . '<li><strong>Countries of implementation:</strong> Albania, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, France, Germany, Greece, Hungary, Italy, Latvia, Lithuania, Luxembourg, Netherlands, North Macedonia, Romania, Slovakia, Slovenia, Spain, Switzerland, Türkiye, Ukraine (24 countries)</li>'
+            . '<li><strong>Total young people reached:</strong> at least 12,565 reported participant engagements, plus additional participation in Hungary reported across several potentially overlapping activities</li>'
+            . '<li><strong>Gender of participants:</strong> Approx. 6,057 male; Approx. 6,319 female</li>'
+            . '<li><strong>Educators engaged:</strong> at least 1,214 teachers, educators, mentors, facilitators, trainers, Leading Teachers and Ambassadors, plus additional educators engaged through the Hungary project</li>'
+            . '<li><strong>Activities delivered:</strong> at least 829 reported activities, workshops, trainings, mentoring and community sessions, hackathons, festivals, coding events and digital resources, plus additional activities delivered in Hungary</li>'
+            . '<li><strong>Project durations:</strong> Most projects were implemented between May and December 2025, with several extending into the first half of 2026</li>'
+            . '<li><strong>Projects targeting underserved groups:</strong> 22 out of 56 projects</li>'
             . '</ul>',
         'overview_activity_types' => '<ul>'
             . '<li>Coding workshops using Scratch, micro:bit, Arduino, LEGO robotics, Makey Makey, and AI tools</li>'
@@ -29,7 +30,7 @@ return [
             . '<li>Inclusive and assistive technology projects for learners with disabilities and neurodivergent learners</li>'
             . '</ul>',
         'overview_underserved' => '<p>Projects supported underserved and underrepresented groups including girls in STEM, refugees, children affected by war, students in rural and low-access regions, learners with disabilities and visual impairments, neurodivergent learners, and communities with limited access to digital education opportunities. Activities focused on improving digital inclusion, confidence, creativity, computational thinking, media literacy, and equitable access to STEM and coding education across Europe.</p>',
-        'is_preview_mode' => true,
+        'is_preview_mode' => false,
     ],
     'hubs' => [
         [
@@ -1032,6 +1033,71 @@ return [
             'status_message' => '<p>The small grants call was not launched in the Nordic region during the implementation period. As a result, no projects were funded under Round 1 in these countries.</p>',
             'image_folder' => null,
             'projects' => [],
+        ],
+        [
+            'title' => 'JA Europe',
+            'hub_status' => 'active',
+            'projects_funded' => 3,
+            'participants_reached' => 3217,
+            'educators_engaged' => 166,
+            'activities_on_platform' => 295,
+            'overview' => '<p><strong>Countries:</strong> North Macedonia, Lithuania and Hungary</p>'
+                .'<p><strong>Reported participant reach:</strong> at least 3,217 engagements from North Macedonia and Lithuania, plus additional participation across Hungary\'s conferences, competitions, webinars, school activities and flashmobs</p>'
+                .'<p><strong>Education professionals engaged:</strong> at least 166 through the North Macedonia and Lithuania projects, plus additional educators reached in Hungary</p>'
+                .'<p><strong>Reported activities:</strong> at least 295 activities and structured outputs from North Macedonia and Lithuania, plus additional activities delivered in Hungary</p>'
+                .'<p>JA Europe directly funded three international grassroots projects that used national and network-based approaches to strengthen coding, AI literacy, educator capacity, inclusion and the sustainability of EU Code Week communities. Because the beneficiaries used different reporting methods, the figures below retain each project\'s original reporting basis and avoid combining potentially overlapping participation in Hungary.</p>',
+            'underserved_focus' => null,
+            'status_message' => null,
+            'image_folder' => 'JA Europe',
+            'projects' => [
+                [
+                    'title' => 'Code for the Future - AI and Digital Skills Hub',
+                    'organisation' => 'Association for Education "Edu Skills" - Kriva Palanka',
+                    'location' => '10 schools across North Macedonia',
+                    'participants' => 'approximately 3,000 student participations',
+                    'educators' => '148',
+                    'activities' => 'more than 280',
+                    'description' => '<p>A national-scale initiative combining 10 practice-oriented teacher workshops, classroom coding and digital-content activities, school mini-hackathons under the theme "The Heritage Code", a panel discussion on artificial intelligence and education, and a final recognition event. The project created a network of Teacher Experts and recognised active Code Week schools, while expanding access to coding and AI activities in both urban areas and smaller communities.</p>'
+                        .'<p><strong>Gender and inclusion:</strong> Approximately 1,470 student participations were by girls and 1,530 by boys. Activities required no prior advanced coding knowledge and prioritised learners with limited previous access to coding, AI and specialised STEM opportunities.</p>',
+                    'underserved_focus' => null,
+                    'image_folder' => 'Code for the Future - AI and Digital Skills Hub',
+                    'links' => [
+                        'https://codeweek.eu/blog/code-future-ai-digital-skills-north-macedonia/',
+                        'https://padlet.com/educationskillsedu/code-for-future-ai-and-digital-skills-hub-pv0tqcmvs3z07tu9?lang=en',
+                    ],
+                ],
+                [
+                    'title' => 'Code4Lithuania: Digital Skills and Inclusion for All',
+                    'organisation' => 'Association "Langas į ateitį"',
+                    'location' => 'Garliava, Lentvaris, Vilnius, Kėdainiai and nationwide, Lithuania',
+                    'participants' => '189 children in community sessions plus 28 hackathon registrations',
+                    'educators' => '16 Leading Teachers and 2 EU Code Week Ambassadors',
+                    'activities' => null,
+                    'description' => '<p>The project organised 11 coding and online-safety sessions for pre-primary groups, nine mentoring meetings for the national Code Week community, and a national hackathon in which five teams developed digital solutions to societal challenges. It also produced three ICT career videos featuring women in technology and concluded with a national community meeting focused on sustainability and future cooperation.</p>'
+                        .'<p><strong>Gender and inclusion:</strong> Women represented 75% of hackathon registrations and the winning team consisted entirely of female students. The project also promoted inclusive early-years digital learning through libraries and educational institutions.</p>',
+                    'underserved_focus' => null,
+                    'image_folder' => 'Code4Lithuania Digital Skills and Inclusion for All',
+                    'links' => [
+                        'https://codeweek.eu/blog/code-week-lithuania-digital-generation/',
+                        'https://codeweek.eu/view/1438904/buk-saugus-internete-garliava',
+                    ],
+                ],
+                [
+                    'title' => 'Code Week Hungary 2025-2026',
+                    'organisation' => 'Hungarian Interchurch Aid for Educational Foundation',
+                    'location' => 'Budapest, Somogy County and other locations across Hungary',
+                    'participants' => 'participation across conferences, competitions, webinars, school activities and flashmobs (categories may overlap)',
+                    'educators' => null,
+                    'activities' => null,
+                    'description' => '<p>The programme supported the 4th Code Week Hungary Conference, the Code Week 2025 school competition and special awards, four educator webinars, Code Week activities for disadvantaged children, nationwide flashmob calls, the Code Week Junior Cup, a Code Week special award within Digital Project Week, and the Robotics and Coding in Early Childhood Conference. Reported figures included 120 conference participants, 100 disadvantaged children in five locations, approximately 150 students from 12 schools in the Junior Cup online round, and approximately 280–420 students from 14 schools in flashmobs.</p>',
+                    'underserved_focus' => 'The project delivered dedicated coding and robotics activities for 100 disadvantaged children across Lakócsa, Görgeteg, Somogyfajsz, Kaposvár and Homokszentgyörgy. It also recognised inclusive digital teaching for children with visual impairments and multiple learning needs.',
+                    'image_folder' => 'Code Week Hungary 2025-2026',
+                    'links' => [
+                        'https://www.codeweekhungary.hu/',
+                        'https://www.youtube.com/@codeweekhungary',
+                    ],
+                ],
+            ],
         ],
     ],
 ];
