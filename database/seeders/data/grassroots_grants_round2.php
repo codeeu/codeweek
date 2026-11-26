@@ -9,26 +9,8 @@ return [
         'meta_title' => 'EU Code Week Grants for Grassroots – Round 2',
         'meta_description' => 'Round 2 supported 68 grassroots projects across 17 hubs, reaching 36,901 young people and engaging 1,421 educators through 430 Code Week activities.',
         'round_title' => 'Round 2 of Grants',
-        'overview_intro' => '<ul>'
-            . '<li><strong>Projects implemented:</strong> 68 projects across 17 hubs</li>'
-            . '<li><strong>Countries of implementation:</strong> Albania, Bulgaria, Croatia, Cyprus, France, Germany, Greece, Ireland, Italy, Latvia, Malta, Poland, Romania, Slovakia, Spain, Türkiye, Ukraine (17 countries)</li>'
-            . '<li><strong>Total young people reached:</strong> 36,901 participants</li>'
-            . '<li><strong>Gender of participants:</strong> Approx. 18,463 male; Approx. 18,438 female</li>'
-            . '<li><strong>Educators engaged:</strong> 1,421 teachers, educators, mentors, facilitators, and trainers</li>'
-            . '<li><strong>Activities delivered on the Code Week platform:</strong> 430 activities, workshops, trainings, festivals, coding events, and community sessions</li>'
-            . '<li><strong>Project durations:</strong> Most projects were implemented between February and July 2026, with several extending into September 2026</li>'
-            . '<li><strong>Projects targeting underserved groups:</strong> 23 out of 68 projects</li>'
-            . '</ul>',
-        'overview_activity_types' => '<ul>'
-            . '<li>Coding workshops using Scratch, ScratchJr, micro:bit, Arduino, LEGO robotics, Makey Makey, Python, and AI tools</li>'
-            . '<li>Robotics, physical computing, sensors, IoT, and STEM laboratories</li>'
-            . '<li>AI literacy, cybersecurity, media literacy, and responsible technology activities</li>'
-            . '<li>3D printing, game design, creative coding, digital storytelling, and digital fabrication workshops</li>'
-            . '<li>Hackathons, coding festivals, public exhibitions, school showcases, and community events</li>'
-            . '<li>Teacher training, peer mentoring, family learning, and classroom integration activities</li>'
-            . '<li>Environmental education, sustainability, cultural heritage, and community-focused STEAM activities</li>'
-            . '<li>Inclusive initiatives for girls in STEM, displaced learners, rural communities, migrant-background students, and learners with disabilities or special educational needs</li>'
-            . '</ul>',
+        'overview_intro' => '<ul><li><strong>Projects implemented:</strong> 68 projects across 17 hubs</li><li><strong>Countries of implementation:</strong> Albania, Bulgaria, Croatia, Cyprus, France, Germany, Greece, Ireland, Italy, Latvia, Malta, Poland, Romania, Slovakia, Spain, Türkiye, Ukraine (17 countries)</li><li><strong>Total young people reached:</strong> 36,901 participants</li><li><strong>Gender of participants:</strong> Approx. 18,463 male; Approx. 18,438 female</li><li><strong>Educators engaged:</strong> 1,421 teachers, educators, mentors, facilitators, and trainers</li><li><strong>Activities delivered on the Code Week platform:</strong> 430 activities, workshops, trainings, festivals, coding events, and community sessions</li><li><strong>Project durations:</strong> Most projects were implemented between February and July 2026, with several extending into September 2026</li><li><strong>Projects targeting underserved groups:</strong> 23 out of 68 projects</li></ul>',
+        'overview_activity_types' => '<ul><li>Coding workshops using Scratch, ScratchJr, micro:bit, Arduino, LEGO robotics, Makey Makey, Python, and AI tools</li><li>Robotics, physical computing, sensors, IoT, and STEM laboratories</li><li>AI literacy, cybersecurity, media literacy, and responsible technology activities</li><li>3D printing, game design, creative coding, digital storytelling, and digital fabrication workshops</li><li>Hackathons, coding festivals, public exhibitions, school showcases, and community events</li><li>Teacher training, peer mentoring, family learning, and classroom integration activities</li><li>Environmental education, sustainability, cultural heritage, and community-focused STEAM activities</li><li>Inclusive initiatives for girls in STEM, displaced learners, rural communities, migrant-background students, and learners with disabilities or special educational needs</li></ul>',
         'overview_underserved' => '<p>Projects supported underserved and underrepresented groups including girls in STEM, internally displaced learners, students in rural and low-access regions, learners with disabilities and special educational needs, migrant-background learners, and young people facing educational or livelihood barriers. Activities focused on improving digital inclusion, confidence, creativity, computational thinking, and equitable access to STEM and coding education across Europe.</p>',
         'is_preview_mode' => true,
     ],
@@ -98,6 +80,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Hands-On Programming for the Protection of the Loggerhead Sea Turtle in the Gulf of Rethymno (Απτικός Προγραμματισμός γι',
                     'links' => [
+                        'https://codeweek.eu/view/1392317/aptikos-proghrammatismos-ghia-tin-prostasia-tis-caretta-caretta-ston-kolpo-toy-rethymnoy',
                     ],
                 ],
                 [
@@ -111,6 +94,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Code & Create Creative Programming and Educational Robotics in Elementary School (Code & Create Δημιουργικός προγραμματι',
                     'links' => [
+                        'https://openlessons.gr/',
                     ],
                 ],
                 [
@@ -209,6 +193,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'RoboLab Code & Create',
                     'links' => [
+                        'https://elsruse.eu/%D0%BA%D0%BB%D1%83%D0%B1-%D1%80%D0%BE%D0%B1%D0%BE%D0%BB%D0%B0%D0%B1-code-create-%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%B8-%D1%81%D0%B2%D0%BE%D0%B8%D1%82%D0%B5-%D0%BF/',
                     ],
                 ],
                 [
@@ -222,6 +207,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => '“Tail-Bot Adventures Digital Literacy for Smart Kids”',
                     'links' => [
+                        'https://www.dg156.com/%d0%b4%d0%b3156-%d1%81%d1%82%d0%b0%d1%80%d1%82%d0%b8%d1%80%d0%b0-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82-%d0%bf%d0%be-eu-code-week/',
                     ],
                 ],
                 [
@@ -235,6 +221,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Code & Create Think. Create. Inspire',
                     'links' => [
+                        'https://pleven-dnes.com/code-create-evropeiska-sedmica-na-programiraneto-2026/',
                     ],
                 ],
                 [
@@ -248,6 +235,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'SENDOV TECH PATHFINDERS An Integrated Model for Digital Leadership',
                     'links' => [
+                        'https://www.facebook.com/PGKMKS?locale=bg_BG',
                     ],
                 ],
             ],
@@ -275,6 +263,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => '“Girls code meitenes programmē”',
                     'links' => [
+                        'https://digital-skills-jobs.europa.eu/en/latest/news/girls-code-it-better-latvia',
                     ],
                 ],
                 [
@@ -288,6 +277,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'The First Steps of Young Programmers in the Digital World',
                     'links' => [
+                        'https://digital-skills-jobs.europa.eu/en/latest/news/first-steps-young-programmers-project-latvia',
                     ],
                 ],
                 [
@@ -301,6 +291,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Day of AI – Latvia',
                     'links' => [
+                        'https://digital-skills-jobs.europa.eu/en/latest/news/273-schools-and-over-27-500-students-participate-day-ai-latvia',
                     ],
                 ],
                 [
@@ -314,6 +305,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'LEGO Education SPIKE Essential Training for Students and Teachers',
                     'links' => [
+                        'https://eprasmes.lv/article/nosledzies-projekts-lego-education-spike-essential-apguve-skoleniem-un-skolotajiem/',
                     ],
                 ],
                 [
@@ -327,6 +319,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Development of digital skills using robotics',
                     'links' => [
+                        'https://eprasmes.lv/article/nosledzies-projekts-digitalo-prasmju-attistiba-izmantojot-robotiku/',
                     ],
                 ],
                 [
@@ -340,6 +333,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => '“Code Connects Generations – Programming and Robotics for the Whole Community”',
                     'links' => [
+                        'https://eprasmes.lv/article/nosledzies-projekts-kods-savieno-paaudzes-programmesana-un-robotika-visai-kopienai/',
                     ],
                 ],
             ],
@@ -367,6 +361,7 @@ return [
                     'underserved_focus' => 'The project targeted young people from diverse educational contexts, including students with different learning needs and those at risk of digital exclusion, particularly in relation to access to emerging technologies such as artificial intelligence.',
                     'image_folder' => '“V.I.D.I.A – Voces Inclusivas y Digitales con Inteligencia Artificial”',
                     'links' => [
+                        'https://proyectovidia.com/implementacion-de-los-talleres/',
                     ],
                 ],
             ],
@@ -394,6 +389,7 @@ return [
                     'underserved_focus' => 'children who have moved (internally displaced persons)',
                     'image_folder' => 'Activities to promote programming, computational thinking, and digital skills among students of the I.Pulyuy Lyceum of t',
                     'links' => [
+                        'https://www.facebook.com/share/p/1BkYo8rVL8/',
                     ],
                 ],
                 [
@@ -488,6 +484,7 @@ return [
                     'underserved_focus' => 'children who have moved (internally displaced persons)',
                     'image_folder' => 'Vashkivtsi Smart Lab Programming and 3D Modeling Workshop',
                     'links' => [
+                        'https://www.facebook.com/share/p/18nLtTaWdF/',
                     ],
                 ],
                 [
@@ -563,6 +560,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'From Dot to Program',
                     'links' => [
+                        'https://from-dot-to-program.my.canva.site/',
                     ],
                 ],
                 [
@@ -687,6 +685,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Bebras Bytes',
                     'links' => [
+                        'https://www.youtube.com/@computationalthinkingmalta',
                     ],
                 ],
                 [
@@ -732,6 +731,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'RO2D2 Code & Build Lab',
                     'links' => [
+                        'https://www.ro2d2team.com/en/',
                     ],
                 ],
                 [
@@ -838,6 +838,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'STEAM Builders – Strengthening Engineering and Digital Skills for Children, Young People and Educators',
                     'links' => [
+                        'https://www.facebook.com/profile.php?id=100013273629472',
                     ],
                 ],
                 [
@@ -911,6 +912,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'From Algorithm to Creation An Integrated Computational Thinking and Robotics Programme for Primary School',
                     'links' => [
+                        'https://dim-pelendrilem.schools.ac.cy/index.php?id=scholikes',
                     ],
                 ],
                 [
@@ -924,6 +926,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'G.R.E.E.N. Minds, Smart Codes Growing Responsible Environmental Education Network through Programming & Robotics',
                     'links' => [
+                        'https://dim-mathiatis-lef.schools.ac.cy/index.php?id=green-minds-smart-codes',
                     ],
                 ],
             ],
@@ -951,6 +954,7 @@ return [
                     'underserved_focus' => 'Low Access to Education, Poor Education Outcomes, Low Access to Livelihoods​, Poor Livelihood Outcomes',
                     'image_folder' => 'Girls in Coding Mini Academy',
                     'links' => [
+                        'https://codeweek.eu/view/1432217/dekleta-v-programiranju-mini-academy',
                     ],
                 ],
                 [
@@ -1177,6 +1181,7 @@ return [
                     'underserved_focus' => 'Low Access to Education, Poor Education Outcomes, Low Access to Livelihoods​, Poor Livelihood Outcomes',
                     'image_folder' => '„Productive Coding“ Produktionsschule trifft Programmieren',
                     'links' => [
+                        'https://www.produktionsschulen-mv.de/coding-monat-in-der-produktionsschule-rugen-neue-perspektiven-durch-digitale-kompetenzen',
                     ],
                 ],
             ],
@@ -1217,6 +1222,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Smart Fashion',
                     'links' => [
+                        'https://zsklastor.edupage.org/',
                     ],
                 ],
                 [
@@ -1230,6 +1236,7 @@ return [
                     'underserved_focus' => null,
                     'image_folder' => 'Dotykáče - rozšírenie umelecko-vzdelávacieho programu pre ZŠ a SŠ',
                     'links' => [
+                        'https://dotykace.com/main/',
                     ],
                 ],
             ],
@@ -1284,6 +1291,7 @@ return [
                     'underserved_focus' => 'Regional/Non-Capital Schools: Schools from outside the capital city (e.g., Vinica, Kavadarci, Tetovo) were included to expand STEM access across different regions of North Macedonia.',
                     'image_folder' => 'Innovate4Europe',
                     'links' => [
+                        'https://www.innovationlab.mk/codeweek-povik-mentori/',
                     ],
                 ],
             ],
